@@ -29,7 +29,7 @@ h1,h2,h3,h4{color:var(--navy);font-family:var(--disp)}
 .nav{position:sticky;top:0;z-index:30;gap:20px;height:60px;padding:env(safe-area-inset-top,0) max(20px,calc((100vw - 1280px)/2)) 0;background:var(--frost);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .logo{width:auto;height:auto;border-radius:0;background:none;transform:none;display:flex;align-items:center;gap:10px;font:600 1.15rem var(--disp);color:var(--navy)}
 .logo svg{width:30px;height:30px;padding:6px;border-radius:8px;background:var(--mark);transform:none;stroke:#fff;flex:none}
-.logo::after{content:"Patholo_zee";white-space:nowrap}
+.logo::after{content:"Patholo_zzee";white-space:nowrap}
 .nav .links{margin:0 auto 0 8px;gap:2px;height:100%;font-size:.9rem}
 .nav .links a{display:flex;align-items:center;gap:6px;padding:0 12px;color:var(--muted);font-weight:500;border-bottom:2px solid transparent;margin-bottom:-1px;text-decoration:none}
 .nav .links a:hover{color:var(--navy);text-decoration:none}

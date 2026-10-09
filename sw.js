@@ -1,11 +1,11 @@
-/* Service worker for Patholo_zee.
+/* Service worker for Patholo_zzee.
    - Everything below is saved on first visit, so the site opens instantly and works offline.
    - Pages and files are served from the saved copy first, then quietly refreshed in the
      background, so an updated index.html appears the next time the app is opened.
    - Your bookmarks, notes and progress are stored by the page itself (localStorage);
      this file never touches them.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v5';
+const VERSION = 'pathviva-zzee-v6';
 
 const CORE = [
   'index.html',

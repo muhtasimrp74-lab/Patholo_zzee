@@ -1,4 +1,4 @@
-# Patholo_zee
+# Patholo_zzee
 
 Offline-capable study site: **189 Systemic Pathology viva questions** (NMC order, Robbins 11th).
 
