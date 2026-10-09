@@ -597,14 +597,15 @@ h2,h3.sub,.part-h,.dc,.pc{margin-left:0;margin-right:0}
 @media(min-width:1001px) and (max-width:1340px){.nav .links a{padding:0 8px}.nav .links{margin-left:0}}
 @media(min-width:1001px) and (max-width:1120px){.nav .links a{padding:0 6px;font-size:.84rem}}
 /* ---- linear progress bars (replace rings) ---- */
-.ring,.topic .ring,.ring.big,.ring.pp{position:relative;display:block;width:100%;height:22px;margin:12px 0 0;border-radius:99px;background:var(--line);overflow:hidden;font:700 11px/22px var(--body);text-align:left;color:#fff;box-sizing:border-box;top:auto;right:auto;place-items:initial}
-.ring::before{content:"";position:absolute;left:0;top:0;bottom:0;width:max(calc(var(--p,0)*1%),5.4em);border-radius:99px;background:radial-gradient(circle at calc(100% - 10px) 50%,#fff 0 3.5px,rgba(255,255,255,.35) 4px 6.5px,transparent 7px),linear-gradient(90deg,#1769e0,#12a3b4 55%,#f08a24);box-shadow:inset 0 1px 0 rgba(255,255,255,.25)}
-.ring{padding-left:10px;isolation:isolate}.ring::before{z-index:-1}
-.topic .ring{grid-column:1/-1;justify-self:stretch;align-self:end}
-#dash .dc>div[style*=flex]{flex-direction:column!important;align-items:stretch!important;gap:8px!important}
+.ring,.topic .ring,.ring.big,.ring.pp{position:relative;display:block;width:100%;height:22px;margin:12px 0 0;border-radius:99px;background:color-mix(in srgb,var(--line) 85%,#2563eb 15%);overflow:hidden;font:700 11px/22px var(--body);text-align:right;padding:0 10px;color:var(--text);box-sizing:border-box;top:auto;right:auto;place-items:initial;isolation:isolate}
+.ring::before{content:"";position:absolute;z-index:-1;left:0;top:0;bottom:0;width:calc(var(--p,0)*1%);border-radius:99px;background:radial-gradient(circle at calc(100% - 9px) 50%,#fff 0 3px,rgba(255,255,255,.4) 3.5px 6px,transparent 6.5px),linear-gradient(90deg,#7db4fb,#2f7bf0 55%,#1747b8)}
+.ring.z::before{display:none}
+.ring.hi{text-align:left;color:#fff}
 .ring.big{height:28px;font-size:13px;line-height:28px;margin:0;min-width:160px}
 .topic h3{padding-right:0}
-#dash .dc .ring.big{width:100%}
+.topic{align-content:space-between!important}
+.topic .ring{grid-column:1/-1;justify-self:stretch;align-self:end}
+#dash .dc>div[style*=flex]{flex-direction:column!important;align-items:stretch!important;gap:8px!important}
 </style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0c131f" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
@@ -1250,6 +1251,9 @@ if(t){if(t.classList.contains('card')){t.classList.add('hl');if(document.body.cl
 addEventListener('hashchange',route);
 try{if(localStorage.getItem('vivaQuiz'))setQuiz(true)}catch(e){}
 route();
+
+function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parseFloat(r.style.getPropertyValue('--p'))||0;r.classList.toggle('hi',v>=82);r.classList.toggle('z',v<=0)})}
+(function(){const p0=prog;prog=function(){p0();updRings()}})();updRings();
 const r=document.getElementById('res'),g=document.getElementById('gq');
 function show(){const q=g.value.trim().toLowerCase(),T=q.match(/[a-z0-9']+/g)||[];
 let m=IX.map(x=>{let s=0,hs=[];for(const t of T){let k=0;if(x.t.includes(t)){k=3;hs.push(t)}else{const f=t.length>3&&x.w.find(w=>lev(t,w)<=(t.length>6?2:1));if(f){k=2;hs.push(f)}else if(x.a.toLowerCase().includes(t)){k=1;hs.push(t)}}if(!k){s=-1;break}s+=k}return{x,s,hs}}).filter(o=>!T.length||o.s>0);
