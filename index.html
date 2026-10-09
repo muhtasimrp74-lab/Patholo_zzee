@@ -323,6 +323,11 @@ main,main.wide{padding-left:var(--gut);padding-right:var(--gut)}
 @media(min-width:1001px) and (max-width:1180px){.nav .links a{padding:0 8px;font-size:.85rem}.cn{display:none}.nav{gap:12px}}
 
 /* ===== Questions page: collapsible questions, answers on demand ===== */
+.qmode{display:inline-flex;gap:4px;padding:4px;margin:4px 0 12px;border-radius:12px;background:var(--soft);border:1px solid var(--line2)}
+.qmode button{height:38px;padding:0 20px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:600 .9rem var(--body);cursor:pointer}
+.qmode button[aria-selected=true]{background:var(--panel);color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.qm-q .qi-a,.qm-q .chv,.qm-q #qexp,.qm-q #qcol{display:none!important}.qm-q .qi-h{cursor:default}
+#qexp,#qcol{}
 .qtools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:4px 0 18px}
 .qtools input{flex:1;min-width:200px;height:42px;padding:0 16px;border:1px solid var(--line2);border-radius:99px;background:var(--panel);color:var(--text);font-size:.92rem}
 .qtools input:focus{outline:0!important;border-color:var(--blue);box-shadow:0 0 0 3px rgba(23,105,224,.15)}
@@ -1025,7 +1030,7 @@ const QMETA={"parts": [["gp", "General Pathology", "A"], ["hm", "Haematology", "
 /* Questions page: collapsible list + advanced filter panel.
    Filters: status, type (viva / written), section (part), card (A-box / B-box, or one specific card), sort, jump to topic.
    QMETA (injected by build.py) = {parts:[[key,name,letter]], partOf:{topicId:partKey}, type:{questionId:'W'}} */
-const QV=mkView('questions','Questions','Questions','Only the questions. Tap one to reveal its answer, tap again to hide it.');
+const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');
 (function(){
 const chev='<svg class="chv" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
 const IC={x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
@@ -1046,6 +1051,7 @@ const qi=d=>`<div class="qi" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+
 const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${items.map(qi).join('')}</div></section>`;
 
 QV.innerHTML='<div class="qwrap"><aside id="qf" aria-label="Filters"></aside><div class="qmain">'
++'<div class="qmode" role="tablist" aria-label="View"><button type="button" role="tab" id="qmQ" data-m="q">Questions</button><button type="button" role="tab" id="qmA" data-m="qa">Q&amp;A</button></div>'
 +'<div class="qtools"><input id="qfilter" type="search" placeholder="Filter questions…" aria-label="Filter questions">'
 +'<button class="qb qfbtn" id="qfopen" type="button" aria-expanded="false" aria-controls="qf">'+IC.filter+'<span>Filters</span><i id="qfn" hidden></i></button>'
 +'<button class="qb" id="qexp" type="button">Expand all</button><button class="qb" id="qcol" type="button">Collapse all</button></div>'
@@ -1139,13 +1145,19 @@ function open1(i,open){fill(i);i.querySelector('.qi-h').setAttribute('aria-expan
 function sync(){QV.querySelectorAll('.qi').forEach(lbl);run()}
 QV.querySelectorAll('.qi').forEach(lbl);
 QV.addEventListener('click',e=>{
- const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;open1(i,h.getAttribute('aria-expanded')!=='true');return}
+ const h=e.target.closest('.qi-h');if(h){if(QM==='q')return;const i=h.parentNode;open1(i,h.getAttribute('aria-expanded')!=='true');return}
  const s=e.target.closest('.qs-h');if(s){const o=s.getAttribute('aria-expanded')!=='true';s.setAttribute('aria-expanded',o);s.nextElementSibling.hidden=!o;return}
  const b=e.target.closest('.qlearn');if(b){const i=b.closest('.qi'),id=i.dataset.id,k=S.learned.indexOf(id);k<0?(S.learned.push(id),touch()):S.learned.splice(k,1);save();
   QV.querySelectorAll('.qi[data-id="'+id+'"]').forEach(lbl);const c=document.getElementById(id);if(c)paint(c);counts();panel()}});
 const vis=()=>$q('qflat').hidden?$q('qlist'):$q('qflat');
 $q('qexp').onclick=()=>{const v=vis();v.querySelectorAll('.qs:not([hidden])').forEach(s=>{s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false});v.querySelectorAll('.qi:not([hidden])').forEach(i=>open1(i,true))};
 $q('qcol').onclick=()=>QV.querySelectorAll('.qi').forEach(i=>open1(i,false));
+let QM=(S.pref&&S.pref.qmode)==='qa'?'qa':'q';
+function setMode(m){QM=m;S.pref=S.pref||{};S.pref.qmode=m;save();const w=QV.querySelector('.qmain');w.classList.toggle('qm-q',m==='q');
+$q('qmQ').setAttribute('aria-selected',m==='q');$q('qmA').setAttribute('aria-selected',m==='qa');
+QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',true);x.querySelector('.qs-b').hidden=false});
+QV.querySelectorAll('.qi').forEach(i=>open1(i,m==='qa'));const L=QV.querySelector('.lede,p');if(L&&/Switch between|Showing/.test(L.textContent))L.textContent=m==='q'?'Showing questions only.':'Showing every question with its answer.'}
+$q('qmQ').onclick=()=>setMode('q');$q('qmA').onclick=()=>setMode('qa');setMode(QM);
 $q('qfilter').addEventListener('input',e=>{F.q=e.target.value.trim().toLowerCase();run()});
 run();
 })();
