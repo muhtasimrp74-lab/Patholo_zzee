@@ -43,4 +43,43 @@ def TB(head, rows):
 #  ]),
 #  ('H1', 'Anaemias', 'hm', [('A3', 'Classify anaemia.', P('Anaemia', 'Reduction in haemoglobin below normal.'))]),
 # ]
-TOPICS = []
+# ---------------------------------------------------------------------------------------------
+# GENERAL PATHOLOGY - written questions, read from gp_written.txt (the list as you send it).
+#   * To ADD questions: add lines to gp_written.txt under the right heading (or a new heading, see HEADINGS), then rebuild.
+#   * To ADD ANSWERS: put them in ANSWERS below, keyed by the question text exactly as in gp_written.txt
+#     (without the "(DU-..)" tag and stars), e.g.  'Define necrosis.': P('Necrosis', '...') + UL([...])
+#   * Until an answer exists, the question shows "Answer to be added."
+import os, re as _re
+HEADINGS = {  # heading in gp_written.txt -> (topic id, topic name)
+    'CELL INJURY & FREE RADICALS': ('G1', 'Cell Injury and Free Radicals'),
+    'NECROSIS': ('G2', 'Necrosis'),
+    'APOPTOSIS': ('G3', 'Apoptosis'),
+    'HYPERTROPHY, HYPERPLASIA, ATROPHY AND METAPLASIA': ('G4', 'Hypertrophy, Hyperplasia and Atrophy'),
+    'METAPLASIA': ('G5', 'Metaplasia'),
+    'PATHOLOGICAL CALCIFICATION': ('G6', 'Pathological Calcification'),
+}
+ANSWERS = {}
+
+def _gp_topics():
+    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gp_written.txt')
+    order, topics, cur, n = [], {}, None, 0
+    for raw in open(src, encoding='utf8'):
+        line = raw.strip()
+        if not line or line == 'GENERAL PATHOLOGY':
+            continue
+        if line in HEADINGS:
+            cur = HEADINGS[line]
+            if cur[0] not in topics:
+                topics[cur[0]] = (cur[1], []); order.append(cur[0])
+            continue
+        assert cur, 'question before any heading: ' + line
+        m = _re.match(r'^(.*?)\s*\(((?:DU|BSMMU)[^)]*)\)\s*(\u2b50*)\s*$', line)
+        q, ref, stars = (m.group(1), m.group(2), m.group(3)) if m else (line.rstrip('\u2b50 ').strip(), '', '')
+        n += 1
+        body = ANSWERS.get(q) or '<p>Answer to be added.</p>'
+        if ref:
+            body += '<div class="sh"><strong class="lbl">Asked in</strong></div><p>%s</p>' % esc(ref)
+        topics[cur[0]][1].append(('W%d' % n, q + (' ' + stars if stars else ''), body, 'W'))
+    return [(t, topics[t][0], 'gp', topics[t][1]) for t in order]
+
+TOPICS = _gp_topics()

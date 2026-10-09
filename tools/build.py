@@ -48,14 +48,14 @@ views = ''
 for tid in [t for t in order if t not in old_cards]:
     qs, arts = new_views[tid]
     pl = [p for p in PARTS if tid in p[3]][0]
-    h = head.replace('id="v-01"', 'id="v-%s"' % tid).replace('Blood Vessels | Systemic Pathology Viva', '%s | Patholo_zzee' % names[tid])
+    h = re.sub(r'<select class="jump".*?</select>', lambda m: jump(tid), head, flags=re.S).replace('id="v-01"', 'id="v-%s"' % tid).replace('Blood Vessels | Systemic Pathology Viva', '%s | Patholo_zzee' % names[tid])
     h = h.replace('All topics</a> / 01', 'All topics</a> / %s' % tid).replace('<h1>Blood Vessels</h1>', '<h1>%s</h1>' % names[tid])
     h = h.replace('6 questions, in the same order as the NMC viva list.', '%d questions · Part %s, %s.' % (len(qs), pl[0], pl[1]))
     views += h + '<main>' + arts + '<p class="none">No question matches your search.</p>' + pager(tid) + '</main></div>'
 for _t in old_cards:  # prev/next links of the original topics follow the full book order
     s = re.sub(r'(id="v-%s".*?)<div class="pager">.*?</div>' % _t, lambda m, _t=_t: m.group(1) + pager(_t), s, count=1, flags=re.S)
 s = s.replace('<div class="view" id="v-bookmarks"', views + '<div class="view" id="v-bookmarks"', 1)
-s = re.sub(r'<select class="jump".*?</select>', lambda m: jump(re.search(r'<option value="(\d\d)" selected', m.group()).group(1)), s, flags=re.S)
+s = re.sub(r'<select class="jump".*?</select>', lambda m: jump(re.search(r'<option value="([^"]+)" selected', m.group()).group(1)), s, flags=re.S)
 s = s.replace('"Histopathology Practical"]];', '"Histopathology Practical"]' + ''.join(', ' + json.dumps(d, ensure_ascii=False) for d in new_data) + '];', 1)
 
 def qn(c): return int(re.search(r'(\d+) questions', c).group(1))
@@ -149,9 +149,9 @@ s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='
 H1 = '<h1>Viva Prep —<br>Read.<br>Recall. Answer.</h1>'
 assert H1 in s
 s = s.replace('<a href="#/topics">Topics</a>', '<a href="#/topics">Topics</a><a href="#/questions">Questions</a>')
-s = s.replace(H1, '<p class="eyebrow">NMC viva list · Robbins 11th</p><h1>Systemic Pathology<em>Read. Recall. Answer.</em></h1>', 1)
+s = s.replace(H1, '<p class="eyebrow">NMC viva list · Robbins 11th</p><h1>Pathology<em>Read. Recall. Answer.</em></h1>', 1)
 s = s.replace('<b>Systemic Pathology Viva Questions with Answers.</b> ', '', 1)
-STATS = '<div class="stats"><div><b>%d</b><span>Viva questions</span></div><div><b>%d</b><span>Systemic topics</span></div><div><b>NMC</b><span>Question order</span></div><div><b>11th</b><span>Robbins edition</span></div></div>' % (total, len(order))
+STATS = '<div class="stats"><div><b>%d</b><span>Questions</span></div><div><b>%d</b><span>Topics</span></div><div><b>NMC</b><span>Question order</span></div><div><b>11th</b><span>Robbins edition</span></div></div>' % (total, len(order))
 T = '<ul id="res"></ul></div></div></div></div><main'
 assert T in s
 s = s.replace(T, '<ul id="res"></ul></div></div></div>' + STATS + '</div><main', 1)
@@ -197,7 +197,7 @@ TR_OLD = 'Blood Vessels</a></div></div><div class="phones">'
 assert TR_OLD in s
 s = s.replace(TR_OLD, 'Blood Vessels</a></div><p class="trust"><span>Works offline</span><span>Private, stays on your device</span><span>No sign-up</span></p></div><div class="phones">', 1)
 SITE = 'https://muhtasimrp74-lab.github.io/Patholo_zzee/'
-DESC = '%d pathology viva questions with answers, in NMC order (Robbins 11th). Practice mode, bookmarks, notes and handwriting. Works offline.' % total
+DESC = '%d pathology questions (viva and written), in NMC order (Robbins 11th). Practice mode, bookmarks, notes and handwriting. Works offline.' % total
 META = ('<meta name="description" content="%s"><link rel="canonical" href="%s">'
  '<meta property="og:type" content="website"><meta property="og:site_name" content="Patholo_zzee">'
  '<meta property="og:title" content="Patholo_zzee: Pathology Viva Questions"><meta property="og:description" content="%s">'
@@ -208,6 +208,8 @@ META = ('<meta name="description" content="%s"><link rel="canonical" href="%s">'
  '<meta name="twitter:description" content="%s"><meta name="twitter:image" content="%sicons/og-image.png">') % (DESC, SITE, DESC, SITE, SITE, DESC, SITE)
 s = s.replace('<meta name="referrer" content="no-referrer">', '<meta name="referrer" content="no-referrer">' + META, 1)
 assert 'og:image' in s
+import ui_patch
+s = ui_patch.patch(s)
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
 os.remove(os.path.join(HERE, '_stage.html'))
 print('wrote index.html', len(s))
