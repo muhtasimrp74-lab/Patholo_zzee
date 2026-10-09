@@ -48,7 +48,7 @@ views = ''
 for tid in [t for t in order if t not in old_cards]:
     qs, arts = new_views[tid]
     pl = [p for p in PARTS if tid in p[3]][0]
-    h = head.replace('id="v-01"', 'id="v-%s"' % tid).replace('Blood Vessels | Systemic Pathology Viva', '%s | Patholo_zee' % names[tid])
+    h = head.replace('id="v-01"', 'id="v-%s"' % tid).replace('Blood Vessels | Systemic Pathology Viva', '%s | Patholo_zzee' % names[tid])
     h = h.replace('All topics</a> / 01', 'All topics</a> / %s' % tid).replace('<h1>Blood Vessels</h1>', '<h1>%s</h1>' % names[tid])
     h = h.replace('6 questions, in the same order as the NMC viva list.', '%d questions · Part %s, %s.' % (len(qs), pl[0], pl[1]))
     views += h + '<main>' + arts + '<p class="none">No question matches your search.</p>' + pager(tid) + '</main></div>'
@@ -169,11 +169,11 @@ _C_OLD = "document.querySelectorAll('[data-c]').forEach(e=>{const k=e.dataset.c;
 assert _C_OLD in s
 s = s.replace(_C_OLD, "document.querySelectorAll('[data-c=bm],[data-c=fav],[data-c=notes]').forEach(e=>{const k=e.dataset.c;", 1)
 # the page's own JS rewrites every .logo's innerHTML at load; keep the wordmark through that
-s, _n = re.subn(r"(\.logo'\)\.forEach\(l=>l\.innerHTML='<svg.*?</svg>)'", lambda m: m.group(1) + '<span class="wm">Patholo<i>_zee</i></span>\'', s, count=1, flags=re.S)
+s, _n = re.subn(r"(\.logo'\)\.forEach\(l=>l\.innerHTML='<svg.*?</svg>)'", lambda m: m.group(1) + '<span class="wm">Patholo<i>_zzee</i></span>\'', s, count=1, flags=re.S)
 assert _n == 1
-# ---- site name: Patholo_zee everywhere the visitor can see it
-for _old, _new in (('Systemic Pathology Viva Questions with Answers', 'Patholo_zee'), ('Systemic Pathology Viva', 'Patholo_zee'),
-                   ("'viva-backup-'", "'patholo_zee-backup-'")):
+# ---- site name: Patholo_zzee everywhere the visitor can see it
+for _old, _new in (('Systemic Pathology Viva Questions with Answers', 'Patholo_zzee'), ('Systemic Pathology Viva', 'Patholo_zzee'),
+                   ("'viva-backup-'", "'patholo_zzee-backup-'")):
     assert _old in s, _old
     s = s.replace(_old, _new)
 # ---- A-box / B-box card chips, card page wording
@@ -191,20 +191,20 @@ assert _OLDE in s
 s = s.replace(_OLDE, "<small>${esc(d[4])}</small></a></div>`).join('')||'<p class=\"none\" style=\"display:block\">No questions on this card yet.</p>'}\nfunction pSetup", 1)
 
 # ---- premium polish: wordmark, trust line, social meta
-s, nlogo = re.subn(r'(<a class="logo"[^>]*>.*?</svg>)</a>', lambda m: m.group(1) + '<span class="wm">Patholo<i>_zee</i></span></a>', s, flags=re.S)
+s, nlogo = re.subn(r'(<a class="logo"[^>]*>.*?</svg>)</a>', lambda m: m.group(1) + '<span class="wm">Patholo<i>_zzee</i></span></a>', s, flags=re.S)
 assert nlogo >= 1
 TR_OLD = 'Blood Vessels</a></div></div><div class="phones">'
 assert TR_OLD in s
 s = s.replace(TR_OLD, 'Blood Vessels</a></div><p class="trust"><span>Works offline</span><span>Private, stays on your device</span><span>No sign-up</span></p></div><div class="phones">', 1)
-SITE = 'https://muhtasimrp74-lab.github.io/Patholo_zee/'
+SITE = 'https://muhtasimrp74-lab.github.io/Patholo_zzee/'
 DESC = '%d pathology viva questions with answers, in NMC order (Robbins 11th). Practice mode, bookmarks, notes and handwriting. Works offline.' % total
 META = ('<meta name="description" content="%s"><link rel="canonical" href="%s">'
- '<meta property="og:type" content="website"><meta property="og:site_name" content="Patholo_zee">'
- '<meta property="og:title" content="Patholo_zee: Pathology Viva Questions"><meta property="og:description" content="%s">'
+ '<meta property="og:type" content="website"><meta property="og:site_name" content="Patholo_zzee">'
+ '<meta property="og:title" content="Patholo_zzee: Pathology Viva Questions"><meta property="og:description" content="%s">'
  '<meta property="og:url" content="%s"><meta property="og:image" content="%sicons/og-image.png">'
  '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
- '<meta property="og:image:alt" content="Patholo_zee. Pathology viva questions. Read. Recall. Answer.">'
- '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Patholo_zee: Pathology Viva Questions">'
+ '<meta property="og:image:alt" content="Patholo_zzee. Pathology viva questions. Read. Recall. Answer.">'
+ '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Patholo_zzee: Pathology Viva Questions">'
  '<meta name="twitter:description" content="%s"><meta name="twitter:image" content="%sicons/og-image.png">') % (DESC, SITE, DESC, SITE, SITE, DESC, SITE)
 s = s.replace('<meta name="referrer" content="no-referrer">', '<meta name="referrer" content="no-referrer">' + META, 1)
 assert 'og:image' in s
