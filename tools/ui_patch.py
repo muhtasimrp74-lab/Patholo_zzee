@@ -13,6 +13,11 @@ QCSS = r'''.qmode{display:inline-flex;gap:4px;padding:4px;margin:4px 0 12px;bord
 .qm-q .qi-a,.qm-q .chv,.qm-q #qexp,.qm-q #qcol{display:none!important}.qm-q .qi-h{cursor:default}
 #qexp,#qcol{}
 '''
+XM = r'''.code:empty{display:none}
+.empty[hidden]{display:none!important}
+.xm{display:block;margin-top:3px;font:600 .74rem/1.3 var(--body);color:var(--muted);letter-spacing:.01em}
+.card header{flex-wrap:wrap}.card header .xm{flex-basis:100%;margin:2px 0 0}
+'''
 RINGS = r'''/* ---- linear progress bars (replace rings) ---- */
 .ring,.topic .ring,.ring.big,.ring.pp{position:relative;display:block;width:100%;height:22px;margin:12px 0 0;border-radius:99px;background:color-mix(in srgb,var(--line) 85%,#2563eb 15%);overflow:hidden;font:700 11px/22px var(--body);text-align:right;padding:0 10px;color:var(--text);box-sizing:border-box;top:auto;right:auto;place-items:initial;isolation:isolate}
 .ring::before{content:"";position:absolute;z-index:-1;left:0;top:0;bottom:0;width:calc(var(--p,0)*1%);border-radius:99px;background:radial-gradient(circle at calc(100% - 9px) 50%,#fff 0 3px,rgba(255,255,255,.4) 3.5px 6px,transparent 6.5px),linear-gradient(90deg,#7db4fb,#2f7bf0 55%,#1747b8)}
@@ -54,9 +59,11 @@ window.setQMode=setMode;setMode(QM);""")
     s = _rep(s, a, """function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');const v=document.getElementById('v-'+(p[0]==='qa'?'questions':p[0]))||document.getElementById('v-home');
 if(v.id==='v-questions'&&window.setQMode){const qa=p[0]==='qa';setQMode(qa?'qa':'q');const h=v.querySelector('h1'),l=v.querySelector('.lede'),c=v.querySelector('.crumb');if(h)h.textContent=qa?'Q&A':'Questions';if(l)l.textContent=qa?'Every question with its full answer.':'Just the questions. Test yourself, then check the answers in Q&A.';v.dataset.title=(qa?'Q&A':'Questions')+' | Patholo_zzee'}""")
     s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD)
+    s = s.replace('<small>${esc(d[4])} · ${d[0]}</small>', '<small>${esc(d[4])}${d[0]?\' · \'+d[0]:\'\'}</small>')
+    s = s.replace('${qd[0]} · ${esc(qd[4])}', '${qd[0]?qd[0]+\' · \':\'\'}${esc(qd[4])}')
     # CSS
     k = s.index('.qtools{display:flex;')
     s = s[:k] + QCSS + s[k:]
     k = s.rindex('</style>')
-    s = s[:k] + RINGS + s[k:]
+    s = s[:k] + XM + RINGS + s[k:]
     return s

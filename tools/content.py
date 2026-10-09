@@ -62,7 +62,7 @@ ANSWERS = {}
 
 def _gp_topics():
     src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gp_written.txt')
-    order, topics, cur, n = [], {}, None, 0
+    order, topics, cur = [], {}, None
     for raw in open(src, encoding='utf8'):
         line = raw.strip()
         if not line or line == 'GENERAL PATHOLOGY':
@@ -75,11 +75,9 @@ def _gp_topics():
         assert cur, 'question before any heading: ' + line
         m = _re.match(r'^(.*?)\s*\(((?:DU|BSMMU)[^)]*)\)\s*(\u2b50*)\s*$', line)
         q, ref, stars = (m.group(1), m.group(2), m.group(3)) if m else (line.rstrip('\u2b50 ').strip(), '', '')
-        n += 1
         body = ANSWERS.get(q) or '<p>Answer to be added.</p>'
-        if ref:
-            body += '<div class="sh"><strong class="lbl">Asked in</strong></div><p>%s</p>' % esc(ref)
-        topics[cur[0]][1].append(('W%d' % n, q + (' ' + stars if stars else ''), body, 'W'))
+        # written questions have no A/B card code (those belong to the viva board): code is left blank
+        topics[cur[0]][1].append(('', q, body, 'W', len(stars), ref))
     return [(t, topics[t][0], 'gp', topics[t][1]) for t in order]
 
 TOPICS = _gp_topics()
