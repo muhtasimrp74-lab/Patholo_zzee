@@ -19,7 +19,7 @@ names = {k: re.search(r'<h3>(.*?)</h3>', v).group(1) for k, v in old_cards.items
 short = dict(re.findall(r'<option value="(\d\d)"[^>]*>\d\d  (.*?)</option>', re.search(r'<select class="jump".*?</select>', s, re.S).group()))
 
 n = len(re.findall(r'id="q\d+"', s)); base_n = n
-new_data, new_views, written = [], {}, {}
+new_data, new_views, written, exam = [], {}, {}, {}
 for tid, tname, part, qs in content.TOPICS:
     names[tid] = e(tname); short[tid] = e(tname)
     arts = []
@@ -27,8 +27,12 @@ for tid, tname, part, qs in content.TOPICS:
         code, q, ans = item[:3]
         n += 1
         if len(item) > 3 and item[3] == 'W': written['q%d' % n] = 'W'
+        stars, refs = (item[4], item[5]) if len(item) > 5 else (0, '')
+        if stars or refs:
+            exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)})]
+        xm = ('<span class="xm">%s%s</span>' % ('\u2b50' * stars, (' \u00b7 ' if stars and refs else '') + e(refs))) if (stars or refs) else ''
         new_data.append([code, q, tid, 'q%d' % n, tname])
-        arts.append('<article class="card" id="q%d"><header tabindex="0"><span class="code">%s</span><h4>%s</h4></header><div class="ans">%s</div></article>' % (n, code, e(q), ans))
+        arts.append('<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ('<span class="code">%s</span>' % code) if code else '', e(q), xm, ans))
     new_views[tid] = (qs, ''.join(arts))
 total = n
 order = [t for p in PARTS for t in p[3]]  # book order: Part A, B, C
@@ -84,7 +88,7 @@ s = s.replace("function imp(f){if(!f)return;f.text().then(t=>{try{const o=JSON.p
 assert 'Ink.load' in s and 'Ink.dump' in s and 'localeCompare(b))' in s
 
 
-QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written}
+QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam}
 QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
 
 PART_JS = "const PART_OF=%s;\n" % json.dumps(PART_OF) + r"""(function(){const p=prog;prog=function(){p();const L=new Set(S.learned),T={},N={};DATA.forEach(d=>{const k=PART_OF[d[2]];N[k]=(N[k]||0)+1;if(L.has(d[3]))T[k]=(T[k]||0)+1});document.querySelectorAll('[data-pp]').forEach(r=>{const k=r.dataset.pp,c=N[k]?Math.round(100*(T[k]||0)/N[k]):0;r.style.setProperty('--p',c);r.textContent=c+'%'})};prog();
