@@ -5,7 +5,7 @@
    - Your bookmarks, notes and progress are stored by the page itself (localStorage);
      this file never touches them.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v19';
+const VERSION = 'pathviva-zzee-v20';
 
 const CORE = [
   'index.html',
@@ -28,7 +28,18 @@ const CORE = [
   'fonts/inter-latin-600-normal.woff2',
   'fonts/inter-greek-400-normal.woff2',
   'fonts/inter-greek-500-normal.woff2',
-  'fonts/inter-greek-600-normal.woff2'
+  'fonts/inter-greek-600-normal.woff2',
+  'fonts/instrument-serif-latin-400-normal.woff2',
+  'fonts/instrument-serif-latin-400-italic.woff2',
+  'fonts/newsreader-latin-500-normal.woff2',
+  'fonts/newsreader-latin-500-italic.woff2',
+  'fonts/newsreader-latin-600-normal.woff2',
+  'fonts/hanken-grotesk-latin-400-normal.woff2',
+  'fonts/hanken-grotesk-latin-500-normal.woff2',
+  'fonts/hanken-grotesk-latin-600-normal.woff2',
+  'fonts/hanken-grotesk-latin-700-normal.woff2',
+  'fonts/caveat-latin-500-normal.woff2',
+  'fonts/caveat-latin-700-normal.woff2'
 ];
 
 self.addEventListener('install', event => {

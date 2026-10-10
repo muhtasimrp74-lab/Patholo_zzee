@@ -3,7 +3,7 @@
    stored per question in IndexedDB (on this device only). It is anchored to the answer box: x as a
    fraction of its width, y in pixels, and re-scaled if the text size or width changes. */
 const Ink=(function(){
-const DBN='pathviva-ink',ST='ink',PEN=['#e5383b','#3a86ff','#2fbf71','#b388ff'],HL=['#ffd60a','#7ee081','#ff8fab','#4cc9f0'],
+const DBN='pathviva-ink',ST='ink',PEN=['#C4573A','#7B8D5E','#A0638F','#C8913A'],HL=['#F0C75E','#B5C792','#EBA79A','#D8B8A0'],
 PS=[2,3.5,6],HS=[10,16,26];
 let db=null,cache={},timers={},tool='pen',pc=0,hc=0,sz=1,sel=null,live=null,cur=null,last=null,undo=[],redo=[],raf=0,on=false,mem=false;
 const fsNow=()=>+(S.pref&&S.pref.fs)||1;
@@ -23,8 +23,8 @@ function bbox(o,idx,w,k){let a=1e9,b=1e9,c=-1e9,d=-1e9;idx.forEach(i=>{const s=o
 function paint(ans){const card=ans.closest('.card');if(!card)return;const id=card.id,o=cache[id],mine=(sel&&sel.id===id)||(live&&live.id===id),c=canvas(ans,!!(o&&o.strokes.length)||mine);if(!c)return;
 const w=ans.clientWidth,h=ans.clientHeight;if(!w||!h)return;const d=Math.min(2,window.devicePixelRatio||1),W=Math.round(w*d),H=Math.round(h*d);if(c.width!==W||c.height!==H){c.width=W;c.height=H}
 const g=c.getContext('2d');g.setTransform(d,0,0,d,0,0);g.clearRect(0,0,w,h);if(o&&o.strokes.length){const k=kf(o,w),L=o.strokes.filter(s=>s.t==='h').concat(o.strokes.filter(s=>s.t!=='h'));g.save();L.forEach(s=>line(g,s,o,k,w));g.restore()}
-if(o&&sel&&sel.id===id){const k=kf(o,w),b=bbox(o,sel.idx,w,k);if(b){g.save();g.setLineDash([6,4]);g.lineWidth=1.5;g.strokeStyle='#3a86ff';g.strokeRect(b[0],b[1],b[2]-b[0],b[3]-b[1]);g.restore()}}
-if(live&&live.id===id&&live.mode==='lasso'){g.save();g.setLineDash([5,4]);g.lineWidth=1.5;g.strokeStyle='#3a86ff';g.beginPath();live.pts.forEach((q,i)=>i?g.lineTo(q[0],q[1]):g.moveTo(q[0],q[1]));g.stroke();g.restore()}
+if(o&&sel&&sel.id===id){const k=kf(o,w),b=bbox(o,sel.idx,w,k);if(b){g.save();g.setLineDash([6,4]);g.lineWidth=1.5;g.strokeStyle='#A95F45';g.strokeRect(b[0],b[1],b[2]-b[0],b[3]-b[1]);g.restore()}}
+if(live&&live.id===id&&live.mode==='lasso'){g.save();g.setLineDash([5,4]);g.lineWidth=1.5;g.strokeStyle='#A95F45';g.beginPath();live.pts.forEach((q,i)=>i?g.lineTo(q[0],q[1]):g.moveTo(q[0],q[1]));g.stroke();g.restore()}
 if(live&&live.id===id&&(live.mode==='pen'||live.mode==='hl')){const st=mk(live),f=fsNow();g.save();line(g,{t:st.t,c:st.c,s:st.s,p:live.pts.flatMap(q=>[q[0]/w,q[1]])},{fs:f,w:w},1,w);g.restore()}}
 const ro=new ResizeObserver(es=>es.forEach(e=>paint(e.target)));
 const sched=ans=>{if(raf)return;raf=requestAnimationFrame(()=>{raf=0;paint(ans)})};
