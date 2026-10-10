@@ -1,9 +1,9 @@
 /* ===== filter chips on every topic page ===== */
 (function(){
-const FILT=[['all','All'],['imp','★ Important'],['fav','Favourites'],['bm','Bookmarked'],['note','With note'],['nl','Not learned'],['l','Learned']];
+const FILT=[['all','All'],['imp','Important'],['fav','Favourites'],['bm','Bookmarked'],['note','With note'],['nl','Not learned'],['l','Learned']];
 const has=(c,id)=>Array.isArray(c)?c.includes(id):!!(c&&c[id]);
 function test(k,card){const id=card.id;
- if(k==='imp')return !!card.querySelector('.xm')&&/⭐/.test(card.querySelector('.xm').textContent);
+ if(k==='imp')return !!card.querySelector('.xm .imp');
  if(k==='fav')return has(S.fav,id);if(k==='bm')return has(S.bm,id);if(k==='note')return has(S.notes,id)&&String(S.notes[id]).trim()!=='';
  if(k==='l')return has(S.learned,id);if(k==='nl')return !has(S.learned,id);return true}
 function apply(v){const k=v.dataset.tf||'all';let n=0;

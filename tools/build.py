@@ -13,6 +13,35 @@ PARTS = [(L, N, K, SYS if K == 'sys' else [t[0] for t in content.TOPICS if t[2] 
 PART_OF = {t: p[2] for p in PARTS for t in p[3]}
 e = lambda t: html.escape(t, quote=False)
 
+# ---- exam meta (importance stars + exam-year chips) ----
+import math
+def _star(on):
+    return '<svg class="zs %s" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#zz-star"/></svg>' % ('on' if on else 'off')
+def xm_html(stars, refs, tag='span'):
+    """Importance as 3 custom stars (filled = importance) and each exam year as its own chip."""
+    parts = []
+    if stars:
+        parts.append('<span class="imp" role="img" aria-label="Importance: %d of 3">%s</span>' % (stars, ''.join(_star(i < stars) for i in range(3))))
+    last = None
+    for tok in [t.strip() for t in (refs or '').split(',') if t.strip()]:
+        m = re.match(r'^([A-Za-z]+)-(.+)$', tok)
+        if m:
+            if m.group(1) != last:
+                parts.append('<span class="ex-k">%s</span>' % e(m.group(1)))
+                last = m.group(1)
+            tok = m.group(2)
+        parts.append('<span class="ex-y">%s</span>' % e(tok))
+    return '<%s class="xm">%s</%s>' % (tag, ''.join(parts), tag) if parts else ''
+_pts = []
+for _k in range(10):
+    _a = -math.pi / 2 + _k * math.pi / 5; _r = 8.4 if _k % 2 == 0 else 3.9
+    _pts.append('%.2f %.2f' % (12 + _r * math.cos(_a), 12.8 + _r * math.sin(_a)))
+_STAR_D = 'M' + ' L'.join(_pts) + 'Z'
+STAR_SPRITE = ('<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>'
+    '<linearGradient id="zz-star-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EDBFA3"/><stop offset=".55" stop-color="#C77F5F"/><stop offset="1" stop-color="#97523C"/></linearGradient>'
+    '<symbol id="zz-star" viewBox="0 0 24 24" overflow="visible"><path d="%s" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>'
+    '<path d="M9.4 8.7 L11.1 5.9" fill="none" stroke="#fff" stroke-width="1.1" stroke-linecap="round" style="opacity:var(--zhl,0)"/></symbol></defs></svg>') % _STAR_D
+
 old_grid = re.search(r'<h2 id="topics">.*?(?=</main></div><div class="view" id="v-01")', s, re.S).group()
 old_cards = {m.group(1): m.group(0) for m in re.finditer(r'<a class="topic" href="#/(\d\d)">.*?</a>', old_grid, re.S)}
 names = {k: re.search(r'<h3>(.*?)</h3>', v).group(1) for k, v in old_cards.items()}
@@ -31,7 +60,7 @@ for tid, tname, part, qs in content.TOPICS:
         stars, refs = (item[4], item[5]) if len(item) > 5 else (0, '')
         if stars or refs:
             exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)})]
-        xm = ('<span class="xm">%s%s</span>' % ('\u2b50' * stars, (' \u00b7 ' if stars and refs else '') + e(refs))) if (stars or refs) else ''
+        xm = xm_html(stars, refs)
         new_data.append([code, q, tid, 'q%d' % n, tname])
         arts.append('<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ('<span class="code">%s</span>' % code) if code else '', e(q), xm, ans))
     new_views[tid] = (qs, ''.join(arts))
@@ -232,6 +261,8 @@ for _t in OLD_CH:  # breadcrumb of the original topic pages: show the Robbins ch
     s = re.sub(r'(id="v-%s".{0,1500}?All topics</a> / )%s' % (_t, _t), lambda m, _t=_t: m.group(1) + NO(_t), s, count=1, flags=re.S)
 import ui_patch
 s = ui_patch.patch(s)
+assert '</head><body>' in s
+s = s.replace('</head><body>', '</head><body>' + STAR_SPRITE, 1)
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
 os.remove(os.path.join(HERE, '_stage.html'))
 print('wrote index.html', len(s))
