@@ -41,7 +41,7 @@
 .tbi{margin:0 0 14px;padding:0 4px}
 .tb,.tbi{font:400 1.05rem/1.75 Charter,'Iowan Old Style','Palatino Linotype',Georgia,serif;color:var(--text)}
 .tb p,.tbi p{margin:.95rem 0 0;overflow-wrap:break-word}
-.tb b,.tbi b{font-weight:700;color:var(--navy);background:linear-gradient(transparent 60%,color-mix(in srgb,var(--amber,#f2b36b) 42%,transparent) 60%);padding:0 .06em;border-radius:2px}
+.tb b,.tbi b{font-weight:700;color:var(--navy);background:none;text-decoration:none}
 .tb i,.tbi i{color:var(--muted)}
 .tb h3,.tbi h3{display:flex;gap:9px;align-items:center;margin:1.7rem 0 0;font:700 .98rem/1.35 var(--body);color:var(--lbl)}.tb h3:before,.tbi h3:before{content:"";flex:none;width:4px;height:1.05em;border-radius:3px;background:var(--blue)}
 .tb ul,.tb ol,.tbi ul{margin:.8rem 0 0;padding:0;list-style:none}.tb ol{counter-reset:o}
@@ -77,3 +77,15 @@
 .tbsum{margin:1.4rem 0 12px;padding:18px 20px;border-radius:18px;background:var(--g-mist,var(--soft));border:1px solid var(--line)}
 .tbsum-t{margin-bottom:6px;color:var(--lbl);font:700 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase}.tbsum p{margin:0;font:400 1.02rem/1.7 Charter,Georgia,serif;color:var(--text)}
 .tb ol.tbrefs{margin:.8rem 0 0}.tb ol.tbrefs li{font:400 .88rem/1.55 var(--body);color:var(--muted);padding-left:1.8rem}
+
+/* contents: read down, then the next column */
+.tbtoc ol,.tbtoc ol.tbtoc-o{display:block;list-style:none;margin:0;padding:0;columns:2 270px;column-gap:30px}
+.tbtoc ol>li{margin:0;padding:0;break-inside:auto}
+.tbtoc ol.tbtoc-o>li>a{padding:7px 8px;font-weight:600;color:var(--navy)}
+.tbtoc-o ul{display:block;list-style:none;margin:0 0 6px;padding:0}
+.tbtoc-o ul li{break-inside:avoid}
+.tbtoc-o ul a{display:block;padding:4px 8px 4px 40px;font:500 .82rem/1.35 var(--body);color:var(--muted);border-radius:8px}
+.tbtoc-o li.l4 a{padding-left:58px;font-size:.78rem;opacity:.9}
+.tbtoc a{cursor:pointer;text-decoration:none}.tbtoc a:hover,.tbtoc a:focus-visible{background:var(--soft);color:var(--navy);outline:none}
+.tb b,.tb h5,.tb a,.tbi b{text-decoration:none}
+@media(max-width:560px){.tbtoc ol,.tbtoc ol.tbtoc-o{columns:1}}
