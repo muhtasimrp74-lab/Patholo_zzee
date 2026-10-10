@@ -43,6 +43,7 @@ const QAV=mkView('qa','Q&A','Q&A','Pick a chapter. It opens a page with every qu
 HOMEJS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'home.js'),encoding='utf8').read()
 TFJS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'topicfilter.js'),encoding='utf8').read()
 HOMECSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'home.css'),encoding='utf8').read()
+CARDCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'cardpolish.css'),encoding='utf8').read()
 
 def patch(s):
     # navigation: no Topics button; separate Questions and Q&A buttons
@@ -77,5 +78,5 @@ if(v.id==='v-questions'&&window.setQMode){setQMode('q')}""")
     k = s.index('.qtools{display:flex;')
     s = s[:k] + QCSS + s[k:]
     k = s.rindex('</style>')
-    s = s[:k] + XM + RINGS + HOMECSS + s[k:]
+    s = s[:k] + XM + RINGS + HOMECSS + CARDCSS + s[k:]
     return s

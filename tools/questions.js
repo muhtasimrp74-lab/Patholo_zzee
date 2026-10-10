@@ -9,7 +9,11 @@ const IC={x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 
  reset:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v5h5"/></svg>'};
 const PARTS=QMETA.parts,PO=QMETA.partOf,TY=QMETA.type;
 const EX=QMETA.exam||{},st=d=>(EX[d[3]]||[0])[0],yrs=d=>(EX[d[3]]||[0,'',[]])[2],YEARS=[...new Set(Object.values(EX).flatMap(x=>x[2]))].sort((a,b)=>b-a),HASEX=Object.keys(EX).length>0;
-const xm=d=>{const e=EX[d[3]],t=(TREE[d[3]]||[])[2],o=[];if(t)o.push(esc(t));if(e&&e[0])o.push('\u2b50'.repeat(e[0]));if(e&&e[1])o.push(esc(e[1]));return o.length?`<small class="xm">${o.join(' \u00b7 ')}</small>`:''};
+const star=on=>`<svg class="zs ${on?'on':'off'}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#zz-star"/></svg>`;
+const impH=n=>`<span class="imp" role="img" aria-label="Importance: ${n} of 3">${[0,1,2].map(i=>star(i<n)).join('')}</span>`;
+const xm=d=>{const e=EX[d[3]],t=(TREE[d[3]]||[])[2],o=[];if(t)o.push(`<span class="xs">${esc(t)}</span>`);if(e&&e[0])o.push(impH(e[0]));
+ if(e&&e[1]){let last=null;e[1].split(',').map(x=>x.trim()).filter(Boolean).forEach(tok=>{const m=/^([A-Za-z]+)-(.+)$/.exec(tok);if(m){if(m[1]!==last){o.push(`<span class="ex-k">${esc(m[1])}</span>`);last=m[1]}tok=m[2]}o.push(`<span class="ex-y">${esc(tok)}</span>`)})}
+ return o.length?`<small class="xm">${o.join('')}</small>`:''};
 const pk=d=>PO[d[2]]||'',ty=d=>TY[d[3]]||'V',cardOf=c=>{const m=/^([A-Z]+)(\d+)$/.exec(c);return m?[m[1],+m[2]]:[c,0]};
 const letter=d=>cardOf(d[0])[0];
 const cardCmp=(a,b)=>{const x=cardOf(a),y=cardOf(b);return x[0].localeCompare(y[0])||x[1]-y[1]};
@@ -60,7 +64,7 @@ function panel(){
  qf.innerHTML=`<div class="qf-head"><b>Filters</b><span class="sp"></span><button type="button" class="qf-clr" data-k="reset"${n?'':' disabled'}>${IC.reset}<span>Clear all</span>${n?`<i>${n}</i>`:''}</button><button type="button" class="qf-x" data-k="close" aria-label="Close filters">${IC.x}</button></div><div class="qf-body">`
  +`<h4>Status</h4><div class="qfr">${SHOW.map(([v,l])=>chip('show',v,l,v==='all'?!F.show.length:has('show',v),cnt(STAT[v],'show'))).join('')}</div>`
  +`<h4>Type</h4><div class="qseg">${[['V','Viva'],['W','Written']].map(([v,l])=>`<button type="button" class="${has('type',v)?'on':''}" data-k="type" data-v="${v}" aria-pressed="${has('type',v)}">${l}<i>${cnt(d=>ty(d)===v,'type')}</i></button>`).join('')}</div>`
- +(HASEX?`<h4>Importance</h4><div class="qfr">${[1,2,3].map(n=>chip('stars',n,'\u2b50'.repeat(n),has('stars',n),cnt(d=>st(d)===n,'stars'))).join('')}</div>`
+ +(HASEX?`<h4>Importance</h4><div class="qfr">${[1,2,3].map(n=>chip('stars',n,'<span class="imp" aria-label="'+n+(n>1?' stars':' star')+'">'+[0,1,2].map(i=>star(i<n)).join('')+'</span>',has('stars',n),cnt(d=>st(d)===n,'stars'))).join('')}</div>`
  +`<h4>Exam year</h4><div class="qfr">${YEARS.map(y=>chip('year',y,y,has('year',y),cnt(d=>yrs(d).includes(y),'year'))).join('')}</div>`:'')
  +`<h4>Section</h4><div class="qfr">${PARTS.map(p=>chip('part',p[0],p[1],has('part',p[0]),cnt(d=>pk(d)===p[0],'part'))).join('')}</div>`
  +`<h4>Card</h4><div class="qfr">${LETTERS.map(l=>chip('letter',l,l+'-box',has('letter',l),cnt(d=>letter(d)===l,'card'))).join('')}</div>`
@@ -78,7 +82,7 @@ function actChips(){const o=[];
  F.part.forEach(v=>o.push([PARTS.find(p=>p[0]===v)[1],'part',v]));
  F.letter.forEach(v=>o.push([v+'-box','letter',v]));
  F.card.forEach(v=>o.push(['Card '+v,'card',v]));
- F.stars.forEach(v=>o.push(['\u2b50'.repeat(v),'stars',v]));
+ F.stars.forEach(v=>o.push([v+(v>1?' stars':' star'),'stars',v]));
  F.year.forEach(v=>o.push(['Year '+v,'year',v]));
  F.topic.forEach(v=>o.push([tname(v),'topic',v]));
  if(F.sort!=='book')o.push(['By card number','sort','book']);
