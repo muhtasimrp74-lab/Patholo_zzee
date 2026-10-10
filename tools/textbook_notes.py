@@ -44,7 +44,7 @@ def notes(h, mark=True, cap=7):
             pr = 0 if (i == 0 and DEFN.search(plain)) else 1 if STRONG.search(plain) else 2 if (WEAK.search(plain) and len(h2) > 520) else None
             if pr is not None and (best is None or pr < best[0]): best = (pr, i)
         if best:
-            sents[best[1]] = '<mark class="tbl">%s</mark>' % sents[best[1]]
+            sents[best[1]] = '<mark class="tbhl">%s</mark>' % sents[best[1]]
             h2 = ' '.join(sents).replace('\x00', '.')
         return h2
     return h2
