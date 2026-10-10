@@ -12,7 +12,7 @@ const EX=QMETA.exam||{},st=d=>(EX[d[3]]||[0])[0],yrs=d=>(EX[d[3]]||[0,'',[]])[2]
 const star=on=>`<svg class="zs ${on?'on':'off'}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#zz-star"/></svg>`;
 const impH=n=>`<span class="imp" role="img" aria-label="Importance: ${n} of 3">${[0,1,2].map(i=>star(i<n)).join('')}</span>`;
 const xm=d=>{const e=EX[d[3]],t=(TREE[d[3]]||[])[2],o=[];if(t)o.push(`<span class="xs">${esc(t)}</span>`);if(e&&e[0])o.push(impH(e[0]));
- if(e&&e[1]){let last=null;e[1].split(',').map(x=>x.trim()).filter(Boolean).forEach(tok=>{const m=/^([A-Za-z]+)-(.+)$/.exec(tok);if(m){if(m[1]!==last){o.push(`<span class="ex-k">${esc(m[1])}</span>`);last=m[1]}tok=m[2]}o.push(`<span class="ex-y">${esc(tok)}</span>`)})}
+ if(e&&e[1]){let last=null;e[1].split(',').map(x=>x.trim()).filter(Boolean).forEach(tok=>{const m=/^([A-Za-z]+)-(.+)$/.exec(tok);if(m){last=m[1];tok=m[2]}o.push(last?`<span class="ex-y"><b class="ex-p">${esc(last)}</b>${esc(tok)}</span>`:`<span class="ex-y">${esc(tok)}</span>`)})}
  return o.length?`<small class="xm">${o.join('')}</small>`:''};
 const pk=d=>PO[d[2]]||'',ty=d=>TY[d[3]]||'V',cardOf=c=>{const m=/^([A-Z]+)(\d+)$/.exec(c);return m?[m[1],+m[2]]:[c,0]};
 const letter=d=>cardOf(d[0])[0];

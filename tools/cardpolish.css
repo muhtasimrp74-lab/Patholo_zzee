@@ -20,7 +20,7 @@
 .card header .code{margin-top:1px}
 
 /* shared gutter for the rest of the card */
-.card .acts{padding:2px var(--gx) 14px}
+.card .acts{padding:12px var(--gx) 14px}
 .card .rel{padding:0 var(--gx) 18px}
 
 /* exam meta row: importance + exam years */
@@ -31,7 +31,8 @@
 .xm .imp,.xm .ex-k,.xm .ex-y{display:inline-flex;align-items:center;height:26px;box-sizing:border-box;border-radius:999px;white-space:nowrap;
  background-image:var(--spec);background-color:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:var(--glass-in),var(--ring)}
 .xm .imp{gap:2px;padding:0 9px}
-.xm .ex-y{padding:0 11px;color:var(--text)}
+.xm .ex-y{padding:0 11px;color:var(--text);gap:5px}
+.xm .ex-p{font-weight:700;letter-spacing:.04em;color:var(--clay)}
 .xm .ex-k{padding:0 10px;margin-right:2px;font-weight:700;letter-spacing:.04em;color:var(--clay);
  background-color:color-mix(in srgb,var(--clay) 12%,var(--glass-strong))}
 
@@ -47,9 +48,11 @@
 .qfc.on .imp .zs.on{--zhl:0}
 
 @media(prefers-color-scheme:dark){
+ :root:not([data-theme=light]) .xm .ex-p{color:var(--clay3)}
  :root:not([data-theme=light]) .xm .ex-k{color:var(--clay3);background-color:color-mix(in srgb,var(--clay3) 16%,var(--glass-strong))}
  :root:not([data-theme=light]) .zs.on{filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.45))}
 }
+:root[data-theme=dark] .xm .ex-p{color:var(--clay3)}
 :root[data-theme=dark] .xm .ex-k{color:var(--clay3);background-color:color-mix(in srgb,var(--clay3) 16%,var(--glass-strong))}
 :root[data-theme=dark] .zs.on{filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.45))}
 
