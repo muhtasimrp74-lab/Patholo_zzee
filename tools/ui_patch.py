@@ -21,8 +21,8 @@ XM = r'''.qsub{margin:14px 4px 6px;font:700 .74rem var(--body);letter-spacing:.0
 .card header{flex-wrap:wrap}.card header .xm{flex-basis:100%;margin:2px 0 0}
 '''
 RINGS = r'''/* ---- linear progress bars (replace rings) ---- */
-.ring,.topic .ring,.ring.big,.ring.pp{position:relative;display:block;width:100%;height:22px;margin:12px 0 0;border-radius:99px;background:color-mix(in srgb,var(--line) 85%,#2563eb 15%);overflow:hidden;font:700 11px/22px var(--body);text-align:right;padding:0 10px;color:var(--text);box-sizing:border-box;top:auto;right:auto;place-items:initial;isolation:isolate}
-.ring::before{content:"";position:absolute;z-index:-1;left:0;top:0;bottom:0;width:calc(var(--p,0)*1%);border-radius:99px;background:radial-gradient(circle at calc(100% - 9px) 50%,#fff 0 3px,rgba(255,255,255,.4) 3.5px 6px,transparent 6.5px),linear-gradient(90deg,#7db4fb,#2f7bf0 55%,#1747b8)}
+.ring,.topic .ring,.ring.big,.ring.pp{position:relative;display:block;width:100%;height:22px;margin:12px 0 0;border-radius:99px;background:color-mix(in srgb,var(--line) 85%,var(--blue) 15%);overflow:hidden;font:700 11px/22px var(--body);text-align:right;padding:0 10px;color:var(--text);box-sizing:border-box;top:auto;right:auto;place-items:initial;isolation:isolate}
+.ring::before{content:"";position:absolute;z-index:-1;left:0;top:0;bottom:0;width:calc(var(--p,0)*1%);border-radius:99px;background:radial-gradient(circle at calc(100% - 9px) 50%,#fff 0 3px,rgba(255,255,255,.4) 3.5px 6px,transparent 6.5px),linear-gradient(90deg,var(--blue),var(--cobalt))}
 .ring.z::before{display:none}
 .ring.hi{text-align:left;color:#fff}
 .ring.big{height:28px;font-size:13px;line-height:28px;margin:0;min-width:160px}
