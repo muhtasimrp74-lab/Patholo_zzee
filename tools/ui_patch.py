@@ -36,6 +36,13 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 (function(){const p0=prog;prog=function(){p0();updRings()}})();updRings();
 '''
 
+QAJS = r"""
+const QAV=mkView('qa','Q&A','Q&A','Pick a chapter. It opens a page with every question in it and the full answers.');
+(function(){const H=document.getElementById('v-home'),ch=document.getElementById('pchips');QAV.append(ch);H.querySelectorAll('section.part').forEach(x=>QAV.append(x))})();
+"""
+HOMEJS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'home.js'),encoding='utf8').read()
+HOMECSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'home.css'),encoding='utf8').read()
+
 def patch(s):
     # navigation: no Topics button; separate Questions and Q&A buttons
     s = _rep(s, '<a href="#/topics">Topics</a><a href="#/questions">Questions</a>', '<a href="#/questions">Questions</a><a href="#/qa">Q&amp;A</a>', 0)
@@ -48,6 +55,8 @@ def patch(s):
     # Questions page modes
     s = _rep(s, "const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');" if "Switch between" in s else "const QV=mkView('questions','Questions','Questions','Only the questions. Tap one to reveal its answer, tap again to hide it.');",
              "const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');")
+    qv = "const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');"
+    s = _rep(s, qv, qv + QAJS)
     s = _rep(s, "const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;", "const h=e.target.closest('.qi-h');if(h){if(QM==='q')return;const i=h.parentNode;")
     a = "$q('qcol').onclick=()=>QV.querySelectorAll('.qi').forEach(i=>open1(i,false));"
     s = _rep(s, a, a + """
@@ -58,14 +67,14 @@ QV.querySelectorAll('.qi').forEach(i=>open1(i,m==='qa'))}
 window.setQMode=setMode;setMode(QM);""")
     s = _rep(s, "if(/^#\\/questions/.test(location.hash))sync()", "if(/^#\\/(questions|qa)/.test(location.hash))sync()")
     a = "function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');"
-    s = _rep(s, a, """function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');const v=document.getElementById('v-'+(p[0]==='qa'?'questions':p[0]))||document.getElementById('v-home');
-if(v.id==='v-questions'&&window.setQMode){const qa=p[0]==='qa';setQMode(qa?'qa':'q');const h=v.querySelector('h1'),l=v.querySelector('.lede'),c=v.querySelector('.crumb');if(h)h.textContent=qa?'Q&A':'Questions';if(l)l.textContent=qa?'Every question with its full answer.':'Just the questions. Test yourself, then check the answers in Q&A.';v.dataset.title=(qa?'Q&A':'Questions')+' | Patholo_zzee'}""")
-    s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD)
+    s = _rep(s, a, """function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');if(p[0]==='topics')p[0]='qa';const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');
+if(v.id==='v-questions'&&window.setQMode){setQMode('q')}""")
+    s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD + HOMEJS + "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n")
     s = s.replace('<small>${esc(d[4])} · ${d[0]}</small>', '<small>${esc(d[4])}${d[0]?\' · \'+d[0]:\'\'}</small>')
     s = s.replace('${qd[0]} · ${esc(qd[4])}', '${qd[0]?qd[0]+\' · \':\'\'}${esc(qd[4])}')
     # CSS
     k = s.index('.qtools{display:flex;')
     s = s[:k] + QCSS + s[k:]
     k = s.rindex('</style>')
-    s = s[:k] + XM + RINGS + s[k:]
+    s = s[:k] + XM + RINGS + HOMECSS + s[k:]
     return s

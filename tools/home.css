@@ -1,0 +1,47 @@
+/* ---- new home (cream / serif) ---- */
+#v-home.nh-on>.hero,#v-home.nh-on>main,#v-home.nh-on>.stats{display:none}
+#nh{--bg:#f6f1e7;--pn:#fffdf8;--tx:#1d1a16;--mu:#6b645a;--ln:#ddd4c3;--ac:#a8431f;--bl:#2563eb;--bl2:#60a5fa;--dk:#1f1d1a;
+ background:var(--bg);color:var(--tx);min-height:100vh;font:calc(16px*var(--fs,1))/1.5 Georgia,"Iowan Old Style","Times New Roman",serif;padding-bottom:110px}
+:root[data-theme=dark] #nh{--bg:#14120f;--pn:#1d1a16;--tx:#f1ebdf;--mu:#a69d8e;--ln:#3a352d;--ac:#e0845a;--dk:#0c0b09}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) #nh{--bg:#14120f;--pn:#1d1a16;--tx:#f1ebdf;--mu:#a69d8e;--ln:#3a352d;--ac:#e0845a;--dk:#0c0b09}}
+#nh a{color:inherit;text-decoration:none}#nh button{font:inherit}
+.nh-bar{position:sticky;top:0;z-index:30;display:flex;gap:.6em;align-items:center;flex-wrap:wrap;padding:.6em 1em;background:var(--bg);border-bottom:1px solid var(--ln)}
+.nh-btn,.nh-t button{border:1px solid var(--ln);background:var(--pn);color:var(--tx);border-radius:.5em;padding:.45em .8em;cursor:pointer;font-size:.9em}
+.nh-s{position:relative;flex:1;min-width:150px}.nh-s input{width:100%;box-sizing:border-box;padding:.55em .9em;border:1px solid var(--ln);border-radius:.5em;background:var(--pn);color:var(--tx);font:inherit;font-size:.9em}
+#nhr{position:absolute;left:0;right:0;top:110%;margin:0;padding:.3em;list-style:none;background:var(--pn);border:1px solid var(--ln);border-radius:.6em;box-shadow:0 12px 30px rgba(0,0,0,.18);max-height:60vh;overflow:auto}
+#nhr a{display:block;padding:.5em .6em;border-radius:.4em;font-size:.9em}#nhr a:hover{background:var(--bg)}#nhr small{display:block;color:var(--mu)}#nhr .none{padding:.6em;color:var(--mu)}
+.nh-t{display:flex;align-items:center;gap:.3em;color:var(--mu);font-size:.85em}
+.nh-toc{position:sticky;top:3.4em;z-index:29;margin:0 1em;max-height:60vh;overflow:auto;background:var(--pn);border:1px solid var(--ln);border-radius:.6em;padding:.4em;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.nh-toc a{display:block;padding:.45em .6em;border-radius:.4em;font-size:.92em}.nh-toc a:hover{background:var(--bg)}.nh-toc b{color:var(--ac);margin-right:.4em}
+.nh-w{max-width:1080px;margin:0 auto;padding:0 1.2em}
+.nh-hero{padding:2.4em 0 1.4em}.nh-eb,.nh-k{font:700 .72em system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin:0 0 .8em}
+.nh-hero h1{margin:0;font:700 clamp(2.6em,8vw,4.6em)/1 Georgia,"Iowan Old Style",serif;letter-spacing:-.02em}.nh-hero h1 em{display:block;font-weight:400;color:var(--ac);font-size:.55em;margin-top:.25em}
+.nh-lede{max-width:44em;color:var(--mu);margin:1.1em 0 0}
+.nh-top{display:grid;grid-template-columns:1.5fr 1fr;gap:1.2em;margin:1em 0}
+@media(max-width:820px){.nh-top{grid-template-columns:1fr}}
+.nh-start{background:var(--dk);color:#f1ebdf;border-radius:1em;padding:1.6em}.nh-start .nh-k{color:#e0845a}
+.nh-crumb{font:.8em system-ui,sans-serif;color:#b9b1a2;margin:0 0 .6em}.nh-start h2{margin:0 0 1.2em;font:400 1.5em/1.3 Georgia,serif}
+.nh-b{display:flex;flex-wrap:wrap;gap:.6em}.nh-b a{border:1px solid #6a6458;border-radius:.5em;padding:.6em 1em;font:600 .85em system-ui,sans-serif;color:#f1ebdf}
+.nh-b a.nh-go{background:#f1ebdf;color:#1f1d1a;border-color:#f1ebdf}
+.nh-prog{background:var(--pn);border:1px solid var(--ln);border-radius:1em;padding:1.4em}
+.nh-pc{font:700 3.4em/1 Georgia,serif}.nh-pc small{font-size:.4em;color:var(--mu)}.nh-mu{color:var(--mu);font-size:.88em;margin:.4em 0}
+.nh-bar2{height:.55em;border-radius:99px;background:color-mix(in srgb,var(--ln) 80%,#2563eb 20%);overflow:hidden;margin:.6em 0}
+.nh-bar2 i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#93c5fd,#2563eb,#1e3a8a)}
+.nh-g{display:grid;grid-template-columns:1fr 1fr;gap:.6em;margin-top:.8em}.nh-g div{border:1px solid var(--ln);border-radius:.6em;padding:.6em .8em;font:.78em system-ui,sans-serif;color:var(--mu)}.nh-g b{display:block;font:700 1.7em Georgia,serif;color:var(--tx)}
+.nh-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.8em;margin:1.2em 0}
+@media(max-width:700px){.nh-row{grid-template-columns:1fr 1fr}}
+.nh-row a{background:var(--pn);border:1px solid var(--ln);border-radius:.8em;padding:1em}.nh-row b{display:block;font:700 1.8em Georgia,serif}.nh-row span{font:.8em system-ui,sans-serif;color:var(--mu)}
+.nh-row a.nh-rr{display:flex;align-items:center;justify-content:center;background:var(--ac);color:#fff!important;font:700 .95em system-ui,sans-serif;border-color:var(--ac)}
+.nh-h{font:700 1.5em Georgia,serif;margin:2em 0 .6em;border-top:1px solid var(--ln);padding-top:.8em}
+.nh-leg{font:.78em system-ui,sans-serif;color:var(--mu)}.nh-leg i{display:inline-block;width:.9em;height:.9em;border-radius:.2em;vertical-align:-.1em;margin:0 .3em 0 .8em}.nh-leg i:first-child{margin-left:0}
+.nh-mr{display:flex;gap:.8em;align-items:flex-start;margin:.5em 0}.nh-mr>span{flex:0 0 4.5em;font:.78em system-ui,sans-serif;color:var(--mu);padding-top:.2em}.nh-mr>div{display:flex;flex-wrap:wrap;gap:.25em}
+.s,.nh-leg i{border:1px solid var(--ln);background:var(--pn)}.s{width:1.1em;height:1.1em;border-radius:.2em;display:block}
+.s.r,.nh-leg i.r{background:#2563eb;border-color:#2563eb}.s.d,.nh-leg i.d{background:#e0a830;border-color:#e0a830}.s.f,.nh-leg i.f{background:#b4452a;border-color:#b4452a}
+.s.m,.nh-leg i.m{border-style:dashed;background:transparent;border-color:var(--mu)}.s.fl,.nh-leg i.fl{box-shadow:0 0 0 2px var(--tx)}
+.nh-ch{display:flex;gap:1.2em;padding:1.2em 0;border-top:1px solid var(--ln)}.nh-n{flex:0 0 2.2em;font:400 2.6em/1 Georgia,serif;color:var(--ac)}.nh-cb{flex:1;min-width:0}
+.nh-cb h4{margin:0;font:700 1.25em Georgia,serif}.nh-cb h4 a:hover{text-decoration:underline}
+.nh-cb ul{list-style:none;margin:.6em 0 0;padding:0}.nh-cb li a,.nh-cb li.no{display:flex;align-items:baseline;gap:.4em;padding:.25em 0;font-size:.92em}
+.nh-cb li u{flex:1;border-bottom:1px dotted var(--mu);text-decoration:none;min-width:1em}.nh-cb li em{font:.85em system-ui,sans-serif;color:var(--mu);font-style:normal}.nh-cb li.no{color:var(--mu);font-style:italic}.nh-cb li.no em{font-family:Georgia,serif;font-style:italic}
+.nh-cb li a:hover span{text-decoration:underline}
+.nh-rec{list-style:none;margin:0;padding:0}.nh-rec li{padding:.7em 0;border-bottom:1px solid var(--ln)}.nh-rec span{display:block;font:.8em system-ui,sans-serif;color:var(--mu)}
+.nh-f{margin-top:3em;padding-top:1.2em;border-top:1px solid var(--ln);color:var(--mu);font:.85em system-ui,sans-serif}.nh-f a{text-decoration:underline!important}
