@@ -43,15 +43,7 @@ CSS = r'''
 '''
 
 JS = r'''
-/* ---- MCQs + Menu pages ---- */
-const MCQS=__MCQS__;
-{const M=mkView('mcqs','MCQs','MCQs','Pick the best answer. Tap an option to check it.');
- const esc2=t=>String(t).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
- if(!MCQS.length){M.innerHTML='<div class="mempty"><b>MCQs are coming soon</b>Questions will appear here once they are added.</div>'}
- else{let done=0,right=0;M.innerHTML='<p class="mscore" id="mscore"></p>'+MCQS.map((q,i)=>`<div class="mq" data-i="${i}">${q.t?`<p class="mt">${esc2(q.t)}</p>`:''}<h4>${i+1}. ${esc2(q.q)}</h4>${q.o.map((o,j)=>`<button type="button" class="mo" data-j="${j}">${'ABCDE'[j]||j+1}. ${esc2(o)}</button>`).join('')}<div class="me" hidden>${q.e?esc2(q.e):''}</div></div>`).join('');
-  const sc=()=>{M.querySelector('#mscore').textContent=done?`Score: ${right} / ${done} answered`:`${MCQS.length} questions`};sc();
-  M.addEventListener('click',e=>{const b=e.target.closest('.mo');if(!b)return;const c=b.closest('.mq');if(c.dataset.d)return;c.dataset.d=1;const q=MCQS[+c.dataset.i],j=+b.dataset.j;
-   c.querySelectorAll('.mo').forEach((x,k)=>{if(k===q.a)x.classList.add('ok')});if(j!==q.a)b.classList.add('no');else right++;done++;if(q.e)c.querySelector('.me').hidden=false;sc()})}}
+/* ---- Menu page ---- */
 {const X=mkView('menu','Menu','Menu','Everything else lives here.');
  X.innerHTML=`<p class="mh">Study</p><div class="mgrid"><a class="mtile" href="#/practice">Practice</a><a class="mtile" href="#/howto">How to read</a></div>
 <p class="mh">Saved</p><div class="mgrid"><a class="mtile" href="#/bookmarks">Bookmarks<span class="cn" data-c="bm">0</span></a><a class="mtile" href="#/favourites">Favourites<span class="cn" data-c="fav">0</span></a><a class="mtile" href="#/notes">Notes<span class="cn" data-c="notes">0</span></a></div>
@@ -77,7 +69,8 @@ def patch(s):
     _need(s, HL_OLD); s = s.replace(HL_OLD, HL_NEW, 1)
     s = re.sub(r'<div class="dact">.*?</div>\n', '', s, count=1, flags=re.S)   # Practice / backup buttons moved to Menu
     data = json.load(open(os.path.join(HERE, 'mcqs.json'), encoding='utf8'))
+    mcq_js = 'const MCQDATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n' + open(os.path.join(HERE, 'mcq.js'), encoding='utf8').read() + '\n'
     A = "const views=[...document.querySelectorAll('.view')]"
-    _need(s, A); s = s.replace(A, JS.replace('__MCQS__', json.dumps(data, ensure_ascii=False)) + open(os.path.join(HERE, 'textbook.js'), encoding='utf8').read() + A, 1)
-    s = s.replace('</style>', CSS + open(os.path.join(HERE, 'textbook.css'), encoding='utf8').read() + '</style>', 1)
+    _need(s, A); s = s.replace(A, JS + mcq_js + open(os.path.join(HERE, 'textbook.js'), encoding='utf8').read() + A, 1)
+    s = s.replace('</style>', CSS + open(os.path.join(HERE, 'textbook.css'), encoding='utf8').read() + open(os.path.join(HERE, 'mcq.css'), encoding='utf8').read() + '</style>', 1)
     return s
