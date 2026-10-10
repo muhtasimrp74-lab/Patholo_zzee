@@ -94,7 +94,7 @@ function apply(){
  $q('qnone').hidden=!!hit.length;
  $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
  $q('qact').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
- const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;applyQA(hit,n)}
+ const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;applyQA(hit,n);applyViews(hit,n)}
 function run(){apply();panel()}
 function set(k,v){
  const tg=(a,x)=>{const i=a.indexOf(String(x));i<0?a.push(String(x)):a.splice(i,1)};
@@ -127,14 +127,44 @@ function applyQA(hit,n){if(!A)return;
  $q('qsum2').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
  $q('qact2').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
  const b=$q('qfn2');b.hidden=!n;b.textContent=n}
-function place(){if(!A)return;const into=/^#\/qa/.test(location.hash)?$q('qawrap'):QV.querySelector('.qwrap');if(qf.parentNode!==into)into.prepend(qf)}
+function place(){const h=location.hash,inQ=/^#\/questions/.test(h),inA=!!A&&/^#\/qa/.test(h);
+ const into=inQ?QV.querySelector('.qwrap'):inA?$q('qawrap'):document.body;
+ qf.classList.toggle('dr',!(inQ||inA));if(qf.parentNode!==into)(into===document.body?into.appendChild(qf):into.prepend(qf))}
 if(A){$q('qact2').addEventListener('click',e=>{const b=e.target.closest('[data-x]');if(!b)return;const k=b.dataset.k,v=b.dataset.v;if(ON.includes(k))F[k]=F[k].filter(x=>x!==String(v));else F[k]=v;run()});
  $q('qclr2').onclick=()=>set('reset');
- $q('qfopen2').onclick=()=>openF(!document.body.classList.contains('qf-open'));
- addEventListener('hashchange',()=>{place();if(/^#\/qa/.test(location.hash))run()});place()}
+ $q('qfopen2').onclick=()=>openF(!document.body.classList.contains('qf-open'))}
+
+/* ---------- every other page (topic pages, bookmarks, favourites, notes, home) uses the same filters through a drawer ---------- */
+function applyViews(hit,n){const ok=new Set(hit.map(d=>d[3])),act=n>0;
+ document.querySelectorAll('.view').forEach(v=>{
+  const cards=v.querySelectorAll('article.card[id^=q]');
+  if(cards.length){let k=0;cards.forEach(c=>{const o=!act||ok.has(c.id);c.classList.toggle('tf-hide',!o);if(o)k++});
+   let e=v.querySelector('.tf-empty');
+   if(act&&!k){if(!e){e=document.createElement('p');e.className='tf-empty';e.textContent='No question on this page matches the filters.';const r=v.querySelector('.tf-row');r&&r.after(e)}}else if(e)e.remove()}
+  v.querySelectorAll('[data-list] .row').forEach(r=>{const a=r.querySelector('a'),id=a&&a.getAttribute('href').split('/').pop();r.classList.toggle('tf-hide',act&&!ok.has(id))});
+  v.querySelectorAll('.nh-map a.s').forEach(a=>{const id=a.getAttribute('href').split('/').pop();a.classList.toggle('tf-dim',act&&!ok.has(id))})});
+ const chips=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
+ document.querySelectorAll('.qsum-x').forEach(x=>x.textContent=act?hit.length+' of '+DATA.length+' questions match':'');
+ document.querySelectorAll('.qact-x').forEach(x=>x.innerHTML=chips);
+ document.querySelectorAll('.qfn-x').forEach(i=>{i.hidden=!n;i.textContent=n})}
+function mountBars(){document.querySelectorAll('.view').forEach(v=>{
+ if(v.id==='v-questions'||v.id==='v-qa'||v.id==='v-home'||v.querySelector('.qfb-x'))return;
+ let anchor=v.querySelector('.bar'),before=false;
+ if(!anchor){anchor=v.querySelector('[data-list]');before=true}
+ if(!anchor||!(v.querySelector('article.card[id^=q]')||v.querySelector('[data-list]')))return;
+ const html='<div class="tf-row"><button class="qb qfbtn qfb-x" type="button" aria-expanded="false" aria-controls="qf">'+IC.filter+'<span>Filters</span><i class="qfn-x" hidden></i></button><span class="qsum-x tf-n" aria-live="polite"></span><span class="qact-x qact"></span></div>';
+ anchor.insertAdjacentHTML(before?'beforebegin':'afterend',html)})}
+document.addEventListener('click',e=>{
+ if(e.target.closest('.qfb-x'))return openF(!document.body.classList.contains('qf-open'));
+ const x=e.target.closest('.qact-x [data-x]');if(x){const k=x.dataset.k,v=x.dataset.v;if(ON.includes(k))F[k]=F[k].filter(y=>y!==String(v));else F[k]=v;run();return}
+ if(e.target.closest('.act,.qlearn'))setTimeout(()=>{if(nAct())apply()},90)});
+mountBars();place();
+addEventListener('hashchange',()=>{place();apply()});
+window.qfApply=()=>{if(nAct())apply()};
+if(typeof render==='function'){const r0=render;render=function(k){r0(k);if(nAct())apply()}}
 
 /* drawer (tablet) / bottom sheet (phone) / docked sidebar (wide) */
-function openF(o){document.body.classList.toggle('qf-open',o);$q('qfopen').setAttribute('aria-expanded',o);if(o)setTimeout(()=>{const f=qf.querySelector('.qf-x');f&&f.offsetParent&&f.focus()},60);else if(document.activeElement&&qf.contains(document.activeElement))$q('qfopen').focus()}
+function openF(o){document.body.classList.toggle('qf-open',o);document.querySelectorAll('.qfb-x,#qfopen,#qfopen2').forEach(b=>b.setAttribute('aria-expanded',o));if(o)setTimeout(()=>{const f=qf.querySelector('.qf-x');f&&f.offsetParent&&f.focus()},60);else if(document.activeElement&&qf.contains(document.activeElement))$q('qfopen').focus()}
 $q('qfopen').onclick=()=>openF(!document.body.classList.contains('qf-open'));
 $q('qscrim').onclick=()=>openF(false);
 addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('qf-open'))openF(false)});

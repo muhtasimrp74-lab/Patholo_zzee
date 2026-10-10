@@ -686,6 +686,31 @@ html #tools{background:color-mix(in srgb,var(--panel) 88%,transparent)}
 .tf-hide{display:none!important}
 @media(max-width:640px){.tf-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.tf-c{flex:none}}
 @media print{.tf-row,.tf-empty{display:none!important}}
+
+/* ===== Shared filters on every page: drawer mode + responsive search bar ===== */
+.tf-dim{opacity:.18}
+.tf-row .qfb-x{height:36px;padding:0 14px}
+.tf-row .qsum-x:empty{display:none}
+.tf-row .qact{display:contents}
+.nh-btn i{font:600 11px var(--body);font-style:normal;min-width:18px;height:18px;padding:0 5px;border-radius:99px;background:var(--btn);color:#fff;display:inline-grid;place-items:center;margin-left:4px}
+.nh-btn i[hidden]{display:none}
+@media(min-width:1100px){
+ #qf.dr{position:fixed;z-index:120;top:0;bottom:0;left:0;width:360px;max-height:none;border:0;border-radius:0 18px 18px 0;transform:translateX(-102%);visibility:hidden;box-shadow:none;transition:transform .3s var(--ease),visibility 0s linear .3s}
+ body.qf-open #qf.dr{transform:none;visibility:visible;box-shadow:0 0 60px rgba(11,31,58,.3);transition:transform .3s var(--ease),visibility 0s}
+ #qf.dr .qf-x{display:inline-grid!important}#qf.dr .qf-foot{display:block!important}
+ .qfb-x{display:inline-flex!important}
+ #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.45);opacity:0;pointer-events:none;transition:opacity .25s}
+ body.qf-open #qscrim{opacity:1;pointer-events:auto}body.qf-open{overflow:hidden}
+}
+@media(max-width:640px){#qf.dr{top:auto;right:0;width:100%;max-height:86dvh;border-radius:20px 20px 0 0;transform:translateY(104%)}body.qf-open #qf.dr{transform:none}}
+/* search + chapter picker: wrap onto two rows instead of squeezing */
+.bar-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.bar-in .tq,.bar-in input{flex:1 1 280px;min-width:0}
+.bar-in .jump,.bar-in .dd,.bar-in .db{flex:1 1 240px;min-width:0;max-width:100%}
+.bar-in .db{width:100%}
+@media(max-width:700px){.bar-in .tq,.bar-in input,.bar-in .jump,.bar-in .dd,.bar-in .db{flex-basis:100%}}
+.tf-row{position:relative;z-index:1}
+html #qf{background:var(--panel);-webkit-backdrop-filter:none;backdrop-filter:none}
 .qsub{margin:14px 4px 6px;font:700 .74rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--lbl)}
 .qsub[hidden]{display:none}
 .code:empty{display:none}
@@ -1307,7 +1332,7 @@ function apply(){
  $q('qnone').hidden=!!hit.length;
  $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
  $q('qact').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
- const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;applyQA(hit,n)}
+ const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;applyQA(hit,n);applyViews(hit,n)}
 function run(){apply();panel()}
 function set(k,v){
  const tg=(a,x)=>{const i=a.indexOf(String(x));i<0?a.push(String(x)):a.splice(i,1)};
@@ -1340,14 +1365,44 @@ function applyQA(hit,n){if(!A)return;
  $q('qsum2').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
  $q('qact2').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
  const b=$q('qfn2');b.hidden=!n;b.textContent=n}
-function place(){if(!A)return;const into=/^#\/qa/.test(location.hash)?$q('qawrap'):QV.querySelector('.qwrap');if(qf.parentNode!==into)into.prepend(qf)}
+function place(){const h=location.hash,inQ=/^#\/questions/.test(h),inA=!!A&&/^#\/qa/.test(h);
+ const into=inQ?QV.querySelector('.qwrap'):inA?$q('qawrap'):document.body;
+ qf.classList.toggle('dr',!(inQ||inA));if(qf.parentNode!==into)(into===document.body?into.appendChild(qf):into.prepend(qf))}
 if(A){$q('qact2').addEventListener('click',e=>{const b=e.target.closest('[data-x]');if(!b)return;const k=b.dataset.k,v=b.dataset.v;if(ON.includes(k))F[k]=F[k].filter(x=>x!==String(v));else F[k]=v;run()});
  $q('qclr2').onclick=()=>set('reset');
- $q('qfopen2').onclick=()=>openF(!document.body.classList.contains('qf-open'));
- addEventListener('hashchange',()=>{place();if(/^#\/qa/.test(location.hash))run()});place()}
+ $q('qfopen2').onclick=()=>openF(!document.body.classList.contains('qf-open'))}
+
+/* ---------- every other page (topic pages, bookmarks, favourites, notes, home) uses the same filters through a drawer ---------- */
+function applyViews(hit,n){const ok=new Set(hit.map(d=>d[3])),act=n>0;
+ document.querySelectorAll('.view').forEach(v=>{
+  const cards=v.querySelectorAll('article.card[id^=q]');
+  if(cards.length){let k=0;cards.forEach(c=>{const o=!act||ok.has(c.id);c.classList.toggle('tf-hide',!o);if(o)k++});
+   let e=v.querySelector('.tf-empty');
+   if(act&&!k){if(!e){e=document.createElement('p');e.className='tf-empty';e.textContent='No question on this page matches the filters.';const r=v.querySelector('.tf-row');r&&r.after(e)}}else if(e)e.remove()}
+  v.querySelectorAll('[data-list] .row').forEach(r=>{const a=r.querySelector('a'),id=a&&a.getAttribute('href').split('/').pop();r.classList.toggle('tf-hide',act&&!ok.has(id))});
+  v.querySelectorAll('.nh-map a.s').forEach(a=>{const id=a.getAttribute('href').split('/').pop();a.classList.toggle('tf-dim',act&&!ok.has(id))})});
+ const chips=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
+ document.querySelectorAll('.qsum-x').forEach(x=>x.textContent=act?hit.length+' of '+DATA.length+' questions match':'');
+ document.querySelectorAll('.qact-x').forEach(x=>x.innerHTML=chips);
+ document.querySelectorAll('.qfn-x').forEach(i=>{i.hidden=!n;i.textContent=n})}
+function mountBars(){document.querySelectorAll('.view').forEach(v=>{
+ if(v.id==='v-questions'||v.id==='v-qa'||v.id==='v-home'||v.querySelector('.qfb-x'))return;
+ let anchor=v.querySelector('.bar'),before=false;
+ if(!anchor){anchor=v.querySelector('[data-list]');before=true}
+ if(!anchor||!(v.querySelector('article.card[id^=q]')||v.querySelector('[data-list]')))return;
+ const html='<div class="tf-row"><button class="qb qfbtn qfb-x" type="button" aria-expanded="false" aria-controls="qf">'+IC.filter+'<span>Filters</span><i class="qfn-x" hidden></i></button><span class="qsum-x tf-n" aria-live="polite"></span><span class="qact-x qact"></span></div>';
+ anchor.insertAdjacentHTML(before?'beforebegin':'afterend',html)})}
+document.addEventListener('click',e=>{
+ if(e.target.closest('.qfb-x'))return openF(!document.body.classList.contains('qf-open'));
+ const x=e.target.closest('.qact-x [data-x]');if(x){const k=x.dataset.k,v=x.dataset.v;if(ON.includes(k))F[k]=F[k].filter(y=>y!==String(v));else F[k]=v;run();return}
+ if(e.target.closest('.act,.qlearn'))setTimeout(()=>{if(nAct())apply()},90)});
+mountBars();place();
+addEventListener('hashchange',()=>{place();apply()});
+window.qfApply=()=>{if(nAct())apply()};
+if(typeof render==='function'){const r0=render;render=function(k){r0(k);if(nAct())apply()}}
 
 /* drawer (tablet) / bottom sheet (phone) / docked sidebar (wide) */
-function openF(o){document.body.classList.toggle('qf-open',o);$q('qfopen').setAttribute('aria-expanded',o);if(o)setTimeout(()=>{const f=qf.querySelector('.qf-x');f&&f.offsetParent&&f.focus()},60);else if(document.activeElement&&qf.contains(document.activeElement))$q('qfopen').focus()}
+function openF(o){document.body.classList.toggle('qf-open',o);document.querySelectorAll('.qfb-x,#qfopen,#qfopen2').forEach(b=>b.setAttribute('aria-expanded',o));if(o)setTimeout(()=>{const f=qf.querySelector('.qf-x');f&&f.offsetParent&&f.focus()},60);else if(document.activeElement&&qf.contains(document.activeElement))$q('qfopen').focus()}
 $q('qfopen').onclick=()=>openF(!document.body.classList.contains('qf-open'));
 $q('qscrim').onclick=()=>openF(false);
 addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('qf-open'))openF(false)});
@@ -1486,7 +1541,7 @@ function render(){
  const due=Object.values(S.sr).filter(o=>o.d<=now).length,mist=Object.values(S.sr).filter(o=>o.b===0).length;
  const nxt=ORDER.find(d=>!L.has(d[3]));
  const fs=Math.round(100*((S.pref&&S.pref.fs)||1));
- let h='<div class="nh-bar"><button class="nh-btn" id="nhc" aria-expanded="false">☰ Contents</button><div class="nh-s"><input id="nhq" type="search" placeholder="Search questions and answers" aria-label="Search questions"><ul id="nhr" hidden></ul></div><div class="nh-t"><button data-t="fm" aria-label="Smaller text">A−</button><span>'+fs+'%</span><button data-t="fp" aria-label="Larger text">A+</button><button data-t="theme" aria-label="Dark mode">◐</button></div></div>';
+ let h='<div class="nh-bar"><button class="nh-btn" id="nhc" aria-expanded="false">☰ Contents</button><div class="nh-s"><input id="nhq" type="search" placeholder="Search questions and answers" aria-label="Search questions"><ul id="nhr" hidden></ul></div><button class="nh-btn qfb-x" type="button" aria-expanded="false" aria-controls="qf">Filters <i class="qfn-x" hidden></i></button><div class="nh-t"><button data-t="fm" aria-label="Smaller text">A−</button><span>'+fs+'%</span><button data-t="fp" aria-label="Larger text">A+</button><button data-t="theme" aria-label="Dark mode">◐</button></div></div>';
  h+='<div class="nh-toc" id="nhtoc" hidden>'+CH.map(c=>byCh[c[0]]?'<a href="#" data-go="nhch'+c[0]+'"><b>'+esc2(c[2])+'</b> '+esc2(c[1])+'</a>':'').join('')+'</div>';
  h+='<div class="nh-w"><header class="nh-hero"><p class="nh-eb">NMC viva list · Robbins &amp; Cotran 11th edition</p><h1>Pathology<em>Read. Recall. Answer.</em></h1><p class="nh-lede">Every viva and written question arranged by Robbins chapter, sub-chapter and topic. Read an answer, mark it, and the dashboard shows what is left, what is due and what you keep forgetting. Works offline; your progress stays on this device.</p></header>';
  h+='<section class="nh-top"><div class="nh-start"><p class="nh-k">START HERE</p>';
@@ -1506,7 +1561,7 @@ function render(){
  h+=rec.length?'<ul class="nh-rec">'+rec.map(d=>'<li><a href="#/'+d[2]+'/'+d[3]+'">'+esc2(d[1])+'</a><span>'+esc2(CH[cidx[(TR[d[3]]||[])[0]]]?CH[cidx[TR[d[3]][0]]][1]:d[4])+'</span></li>').join('')+'</ul>':'<p class="nh-mu">Nothing yet. Questions you open will appear here.</p>';
  h+='</section><footer class="nh-f"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href="#/questions">Questions</a> · <a href="#/qa">Q&amp;A</a> · <a href="#/notes">Notes</a> · <a href="#/howto">How to read</a></footer></div>';
  const q=document.getElementById('nhq'),keep=q?q.value:'',foc=q&&document.activeElement===q;
- wrap.innerHTML=h;const nq=document.getElementById('nhq');if(keep){nq.value=keep;if(foc)nq.focus()}
+ wrap.innerHTML=h;window.qfApply&&window.qfApply();const nq=document.getElementById('nhq');if(keep){nq.value=keep;if(foc)nq.focus()}
 }
 wrap.addEventListener('click',e=>{
  const g=e.target.closest('[data-go]');if(g){e.preventDefault();const t=document.getElementById(g.dataset.go);document.getElementById('nhtoc').hidden=true;t&&t.scrollIntoView({behavior:'smooth',block:'start'});return}
@@ -1519,27 +1574,6 @@ wrap.addEventListener('input',e=>{if(e.target.id!=='nhq')return;const v=e.target
  const m=ORDER.filter(d=>d[1].toLowerCase().includes(v)||d[4].toLowerCase().includes(v)).slice(0,8);
  r.innerHTML=m.length?m.map(d=>'<li><a href="#/'+d[2]+'/'+d[3]+'">'+esc2(d[1])+'<small>'+esc2(d[4])+'</small></a></li>').join(''):'<li class="none">No match</li>';r.hidden=false});
 window.nhRender=render;render();
-})();
-
-/* ===== filter chips on every topic page ===== */
-(function(){
-const FILT=[['all','All'],['imp','★ Important'],['fav','Favourites'],['bm','Bookmarked'],['note','With note'],['nl','Not learned'],['l','Learned']];
-const has=(c,id)=>Array.isArray(c)?c.includes(id):!!(c&&c[id]);
-function test(k,card){const id=card.id;
- if(k==='imp')return !!card.querySelector('.xm')&&/⭐/.test(card.querySelector('.xm').textContent);
- if(k==='fav')return has(S.fav,id);if(k==='bm')return has(S.bm,id);if(k==='note')return has(S.notes,id)&&String(S.notes[id]).trim()!=='';
- if(k==='l')return has(S.learned,id);if(k==='nl')return !has(S.learned,id);return true}
-function apply(v){const k=v.dataset.tf||'all';let n=0;
- v.querySelectorAll('article.card[id^=q]').forEach(c=>{const ok=test(k,c);c.classList.toggle('tf-hide',!ok);if(ok)n++});
- const m=v.querySelector('.tf-n');if(m)m.textContent=k==='all'?'':n+' shown';
- let e=v.querySelector('.tf-empty');if(k!=='all'&&!n){if(!e){e=document.createElement('p');e.className='tf-empty';e.textContent='No questions match this filter.';v.querySelector('.tf-row').after(e)}}else if(e)e.remove()}
-document.querySelectorAll('.view').forEach(v=>{const bar=v.querySelector('.bar');if(!bar||!v.querySelector('article.card[id^=q]'))return;
- const row=document.createElement('div');row.className='tf-row';row.setAttribute('role','group');row.setAttribute('aria-label','Filter questions');
- row.innerHTML=FILT.map((f,i)=>'<button type="button" class="tf-c" data-k="'+f[0]+'" aria-pressed="'+(i===0)+'">'+f[1]+'</button>').join('')+'<span class="tf-n"></span>';
- bar.after(row);
- row.addEventListener('click',e=>{const b=e.target.closest('.tf-c');if(!b)return;v.dataset.tf=b.dataset.k;row.querySelectorAll('.tf-c').forEach(x=>x.setAttribute('aria-pressed',x===b));apply(v)});
- v.addEventListener('click',()=>setTimeout(()=>{if(v.dataset.tf&&v.dataset.tf!=='all')apply(v)},60));
-});
 })();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();

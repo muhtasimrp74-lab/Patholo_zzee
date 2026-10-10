@@ -70,7 +70,7 @@ window.setQMode=setMode;setMode(QM);""")
     a = "function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');"
     s = _rep(s, a, """function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');if(p[0]==='topics')p[0]='qa';const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');
 if(v.id==='v-questions'&&window.setQMode){setQMode('q')}""")
-    s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD + HOMEJS + "\n" + TFJS + "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n")
+    s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD + HOMEJS + "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n")
     s = s.replace('<small>${esc(d[4])} · ${d[0]}</small>', '<small>${esc(d[4])}${d[0]?\' · \'+d[0]:\'\'}</small>')
     s = s.replace('${qd[0]} · ${esc(qd[4])}', '${qd[0]?qd[0]+\' · \':\'\'}${esc(qd[4])}')
     # CSS
