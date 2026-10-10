@@ -111,8 +111,6 @@ mark{background:#E9C9A8;color:var(--plum)}
 :root[data-theme=dark]{--b100:#3a2a25;--b200:#4a403b;--b300:#6b5a52;--b400:#B9AD9C;--b500:#D18A70;--b600:#D18A70;--b700:#D18A70;--b800:#E3B29C;--b900:#F3EBDD;--teal:#E3B29C}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--b100:#3a2a25;--b200:#4a403b;--b300:#6b5a52;--b400:#B9AD9C;--b500:#D18A70;--b600:#D18A70;--b700:#D18A70;--b800:#E3B29C;--b900:#F3EBDD;--teal:#E3B29C}}
 h1 em{background:linear-gradient(100deg,var(--clay),var(--clay3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-@font-face{font-family:"Instrument Serif";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/instrument-serif-latin-400-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:"Instrument Serif";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/instrument-serif-latin-400-italic.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Newsreader";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/newsreader-latin-500-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Newsreader";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/newsreader-latin-500-italic.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Newsreader";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/newsreader-latin-600-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -188,3 +186,27 @@ h3.sub{font-size:1.65rem;letter-spacing:-.005em}.part-h h3{font-size:1.55rem}
 #ink .sw button[aria-pressed=true]{border-color:var(--bg);box-shadow:0 0 0 2.5px var(--clay2),0 3px 8px rgba(33,25,31,.3);background:var(--c);color:inherit}
 body.inking .card .ans{outline:1px dashed color-mix(in srgb,var(--clay) 45%,transparent);outline-offset:-1px;background:color-mix(in srgb,var(--clay) 4%,transparent)}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.nav,.bar,#bnav,#tools,.toast,.dp,.ph,.stats,#ink{background-color:var(--panel)}}
+@font-face{font-family:"DM Serif Display";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"DM Serif Display";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/dm-serif-display-latin-400-italic.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* ===== v3: sturdier fonts (replaces thin, condensed Instrument Serif) ===== */
+:root{--disp:"DM Serif Display","Fraunces",Georgia,"Times New Roman",serif}
+h1{font-size:clamp(2.6rem,6.4vw,4.5rem);line-height:1.04;letter-spacing:-.012em}
+.small h1{font-size:clamp(2.1rem,4.6vw,3.1rem)}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.15;letter-spacing:-.008em}
+h3.sub{font-size:1.45rem}.part-h h3{font-size:1.35rem}
+.stats b{font-size:2.2rem}.dc .big{font-size:2.6rem}.topic .no{font-size:1.65rem}.qs-h .no{font-size:1.4rem}.qs-h b{font-size:1.15rem}
+.wm{font-size:1.32rem;letter-spacing:-.005em}.logo{font-size:1.32rem}
+h1 em{font-size:.66em;font-weight:700}
+/* Reading serif: heavier and a touch larger so questions never look thin */
+.card h4,.qi-h .qt,.pager a,.dc a.q{font-family:var(--read);font-weight:600;letter-spacing:0}
+.card h4,.qi-h .qt{font-size:1.14rem;line-height:1.4}
+.pager a{font-size:1.08rem}
+.ans strong.lbl{font-weight:600}
+/* Start-here and other card titles that used the display face */
+#nh h3,#nh .nh-q,#nh .nh-qt{font-family:var(--read);font-weight:600}
+/* Handwriting slightly bolder and larger for legibility */
+.note textarea,.nt{font-weight:700;font-size:1.3rem}
+.kp::before{font-weight:700;font-size:1.3rem}
+.empty b,.toast b{font-weight:700;font-size:1.55rem}
+.eyebrow{font-weight:700;font-size:1.3rem}
