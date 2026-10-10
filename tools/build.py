@@ -189,7 +189,7 @@ _C_OLD = "document.querySelectorAll('[data-c]').forEach(e=>{const k=e.dataset.c;
 assert _C_OLD in s
 s = s.replace(_C_OLD, "document.querySelectorAll('[data-c=bm],[data-c=fav],[data-c=notes]').forEach(e=>{const k=e.dataset.c;", 1)
 # the page's own JS rewrites every .logo's innerHTML at load; keep the wordmark through that
-s, _n = re.subn(r"(\.logo'\)\.forEach\(l=>l\.innerHTML='<svg.*?</svg>)'", lambda m: m.group(1) + '<span class="wm">Patholo<i>_zzee</i></span>\'', s, count=1, flags=re.S)
+s, _n = re.subn(r"(\.logo'\)\.forEach\(l=>l\.innerHTML='<img[^>]*>)'", lambda m: m.group(1) + '<span class="wm">Patholo<i>_zzee</i></span>\'', s, count=1, flags=re.S)
 assert _n == 1
 # ---- site name: Patholo_zzee everywhere the visitor can see it
 for _old, _new in (('Systemic Pathology Viva Questions with Answers', 'Patholo_zzee'), ('Systemic Pathology Viva', 'Patholo_zzee'),
@@ -211,7 +211,7 @@ assert _OLDE in s
 s = s.replace(_OLDE, "<small>${esc(d[4])}</small></a></div>`).join('')||'<p class=\"none\" style=\"display:block\">No questions on this card yet.</p>'}\nfunction pSetup", 1)
 
 # ---- premium polish: wordmark, trust line, social meta
-s, nlogo = re.subn(r'(<a class="logo"[^>]*>.*?</svg>)</a>', lambda m: m.group(1) + '<span class="wm">Patholo<i>_zzee</i></span></a>', s, flags=re.S)
+s, nlogo = re.subn(r'(<a class="logo"[^>]*><img[^>]*>)</a>', lambda m: m.group(1) + '<span class="wm">Patholo<i>_zzee</i></span></a>', s, flags=re.S)
 assert nlogo >= 1
 TR_OLD = 'Blood Vessels</a></div></div><div class="phones">'
 assert TR_OLD in s

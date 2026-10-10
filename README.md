@@ -20,3 +20,6 @@ The 15 systemic topics live in `tools/src/index.base.html`; General Pathology (a
 
 ## Fonts
 All self-hosted in `fonts/` (works offline): DM Serif Display (headings), Newsreader (question text), Hanken Grotesk (body), Caveat (handwriting accents), Inter Greek (Greek letters).
+
+## Logo
+Vector logo traced from the brand artwork: `tools/logo/` holds the paths, and `python3 tools/make_logo.py` regenerates `icons/logo.svg`, `favicon.svg`, all PNG icons (favicon, apple-touch, 192/512, maskable) and the share image `og-image.png`. It needs `fonttools`, `brotli` and `playwright`.
