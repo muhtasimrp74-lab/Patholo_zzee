@@ -5,7 +5,7 @@
    - Your bookmarks, notes and progress are stored by the page itself (localStorage);
      this file never touches them.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v35';
+const VERSION = 'pathviva-zzee-v36';
 
 const CORE = [
   'index.html',
