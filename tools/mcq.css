@@ -150,6 +150,7 @@ body.mx-live #v-mcqs .hero{display:none}
 .mx-bars i{height:6px}.mx-bars em{font-style:normal;color:var(--muted);text-align:right}
 @media(max-width:560px){.mx-bars>div{grid-template-columns:minmax(0,1fr) 60px 40px}}
 /* reading */
+.mx-sel{flex:1 1 220px;min-width:0;min-height:36px;padding:0 10px;border-radius:11px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:600 .82rem var(--body)}
 .mx-rbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;background:var(--bg);border-bottom:1px solid var(--line);margin-bottom:6px}
 .mx-rbar>span{flex:1;color:var(--muted);font:600 .84rem var(--body)}
 .mx-rt{margin:26px 4px 8px;font:500 1.35rem/1.2 var(--disp);color:var(--navy)}.mx-rt small{display:block;margin-top:3px;font:600 .74rem var(--body);color:var(--lbl);letter-spacing:.05em;text-transform:uppercase}
