@@ -22,7 +22,7 @@ function render(){
  const due=Object.values(S.sr).filter(o=>o.d<=now).length,mist=Object.values(S.sr).filter(o=>o.b===0).length;
  const nxt=ORDER.find(d=>!L.has(d[3]));
  const fs=Math.round(100*((S.pref&&S.pref.fs)||1));
- let h='<div class="nh-bar"><button class="nh-btn" id="nhc" aria-expanded="false">☰ Contents</button><div class="nh-s"><input id="nhq" type="search" placeholder="Search questions and answers" aria-label="Search questions"><ul id="nhr" hidden></ul></div><div class="nh-t"><button data-t="fm" aria-label="Smaller text">A−</button><span>'+fs+'%</span><button data-t="fp" aria-label="Larger text">A+</button><button data-t="theme" aria-label="Dark mode">◐</button></div></div>';
+ let h='<div class="nh-bar"><button class="nh-btn" id="nhc" aria-expanded="false">☰ Contents</button><div class="nh-s"><input id="nhq" type="search" placeholder="Search questions and answers" aria-label="Search questions"><ul id="nhr" hidden></ul></div><button class="nh-btn qfb-x" type="button" aria-expanded="false" aria-controls="qf">Filters <i class="qfn-x" hidden></i></button><div class="nh-t"><button data-t="fm" aria-label="Smaller text">A−</button><span>'+fs+'%</span><button data-t="fp" aria-label="Larger text">A+</button><button data-t="theme" aria-label="Dark mode">◐</button></div></div>';
  h+='<div class="nh-toc" id="nhtoc" hidden>'+CH.map(c=>byCh[c[0]]?'<a href="#" data-go="nhch'+c[0]+'"><b>'+esc2(c[2])+'</b> '+esc2(c[1])+'</a>':'').join('')+'</div>';
  h+='<div class="nh-w"><header class="nh-hero"><p class="nh-eb">NMC viva list · Robbins &amp; Cotran 11th edition</p><h1>Pathology<em>Read. Recall. Answer.</em></h1><p class="nh-lede">Every viva and written question arranged by Robbins chapter, sub-chapter and topic. Read an answer, mark it, and the dashboard shows what is left, what is due and what you keep forgetting. Works offline; your progress stays on this device.</p></header>';
  h+='<section class="nh-top"><div class="nh-start"><p class="nh-k">START HERE</p>';
@@ -42,7 +42,7 @@ function render(){
  h+=rec.length?'<ul class="nh-rec">'+rec.map(d=>'<li><a href="#/'+d[2]+'/'+d[3]+'">'+esc2(d[1])+'</a><span>'+esc2(CH[cidx[(TR[d[3]]||[])[0]]]?CH[cidx[TR[d[3]][0]]][1]:d[4])+'</span></li>').join('')+'</ul>':'<p class="nh-mu">Nothing yet. Questions you open will appear here.</p>';
  h+='</section><footer class="nh-f"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href="#/questions">Questions</a> · <a href="#/qa">Q&amp;A</a> · <a href="#/notes">Notes</a> · <a href="#/howto">How to read</a></footer></div>';
  const q=document.getElementById('nhq'),keep=q?q.value:'',foc=q&&document.activeElement===q;
- wrap.innerHTML=h;const nq=document.getElementById('nhq');if(keep){nq.value=keep;if(foc)nq.focus()}
+ wrap.innerHTML=h;window.qfApply&&window.qfApply();const nq=document.getElementById('nhq');if(keep){nq.value=keep;if(foc)nq.focus()}
 }
 wrap.addEventListener('click',e=>{
  const g=e.target.closest('[data-go]');if(g){e.preventDefault();const t=document.getElementById(g.dataset.go);document.getElementById('nhtoc').hidden=true;t&&t.scrollIntoView({behavior:'smooth',block:'start'});return}

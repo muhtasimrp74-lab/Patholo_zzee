@@ -545,3 +545,28 @@ html #tools{background:color-mix(in srgb,var(--panel) 88%,transparent)}
 .tf-hide{display:none!important}
 @media(max-width:640px){.tf-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.tf-c{flex:none}}
 @media print{.tf-row,.tf-empty{display:none!important}}
+
+/* ===== Shared filters on every page: drawer mode + responsive search bar ===== */
+.tf-dim{opacity:.18}
+.tf-row .qfb-x{height:36px;padding:0 14px}
+.tf-row .qsum-x:empty{display:none}
+.tf-row .qact{display:contents}
+.nh-btn i{font:600 11px var(--body);font-style:normal;min-width:18px;height:18px;padding:0 5px;border-radius:99px;background:var(--btn);color:#fff;display:inline-grid;place-items:center;margin-left:4px}
+.nh-btn i[hidden]{display:none}
+@media(min-width:1100px){
+ #qf.dr{position:fixed;z-index:120;top:0;bottom:0;left:0;width:360px;max-height:none;border:0;border-radius:0 18px 18px 0;transform:translateX(-102%);visibility:hidden;box-shadow:none;transition:transform .3s var(--ease),visibility 0s linear .3s}
+ body.qf-open #qf.dr{transform:none;visibility:visible;box-shadow:0 0 60px rgba(11,31,58,.3);transition:transform .3s var(--ease),visibility 0s}
+ #qf.dr .qf-x{display:inline-grid!important}#qf.dr .qf-foot{display:block!important}
+ .qfb-x{display:inline-flex!important}
+ #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.45);opacity:0;pointer-events:none;transition:opacity .25s}
+ body.qf-open #qscrim{opacity:1;pointer-events:auto}body.qf-open{overflow:hidden}
+}
+@media(max-width:640px){#qf.dr{top:auto;right:0;width:100%;max-height:86dvh;border-radius:20px 20px 0 0;transform:translateY(104%)}body.qf-open #qf.dr{transform:none}}
+/* search + chapter picker: wrap onto two rows instead of squeezing */
+.bar-in{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.bar-in .tq,.bar-in input{flex:1 1 280px;min-width:0}
+.bar-in .jump,.bar-in .dd,.bar-in .db{flex:1 1 240px;min-width:0;max-width:100%}
+.bar-in .db{width:100%}
+@media(max-width:700px){.bar-in .tq,.bar-in input,.bar-in .jump,.bar-in .dd,.bar-in .db{flex-basis:100%}}
+.tf-row{position:relative;z-index:1}
+html #qf{background:var(--panel);-webkit-backdrop-filter:none;backdrop-filter:none}
