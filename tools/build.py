@@ -261,6 +261,8 @@ for _t in OLD_CH:  # breadcrumb of the original topic pages: show the Robbins ch
     s = re.sub(r'(id="v-%s".{0,1500}?All topics</a> / )%s' % (_t, _t), lambda m, _t=_t: m.group(1) + NO(_t), s, count=1, flags=re.S)
 import ui_patch
 s = ui_patch.patch(s)
+import nav_patch
+s = nav_patch.patch(s)
 assert '</head><body>' in s
 s = s.replace('</head><body>', '</head><body>' + STAR_SPRITE, 1)
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
