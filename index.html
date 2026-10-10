@@ -596,6 +596,21 @@ h2,h3.sub,.part-h,.dc,.pc{margin-left:0;margin-right:0}
 .nav .links a{white-space:nowrap}
 @media(min-width:1001px) and (max-width:1340px){.nav .links a{padding:0 8px}.nav .links{margin-left:0}}
 @media(min-width:1001px) and (max-width:1120px){.nav .links a{padding:0 6px;font-size:.84rem}}
+
+/* ===== Text size (A− / A+) scales the whole page; the nav, bottom bar and floating toolbar stay fixed ===== */
+html{font-size:calc(100%*var(--fs,1))}
+body{font-size:1rem}
+.ans{font-size:.97rem}
+html .nav .links{font-size:14.4px}
+html .nav .links a{font-size:inherit}
+@media(min-width:1001px) and (max-width:1120px){html .nav .links{font-size:13.4px}}
+html .cn{font-size:11px}
+html .wm{font-size:19.5px}
+html .pill,html .nav .pill{font-size:14px;display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 18px;min-width:120px;white-space:nowrap;line-height:1}
+html #bnav a{font-size:10.5px}
+html #tools button{font-size:12px}
+html .nav{height:60px}
+html .bar input,html .bar select,html .qtools input,html .nh-s input,html .db{font-size:.92rem}
 .qsub{margin:14px 4px 6px;font:700 .74rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--lbl)}
 .qsub[hidden]{display:none}
 .code:empty{display:none}
