@@ -1152,7 +1152,7 @@ h1 em{font-size:.66em;font-weight:700}
 .tbi{margin:0 0 14px;padding:0 4px}
 .tb,.tbi{font:400 1.05rem/1.75 Charter,'Iowan Old Style','Palatino Linotype',Georgia,serif;color:var(--text)}
 .tb p,.tbi p{margin:.95rem 0 0;overflow-wrap:break-word}
-.tb b,.tbi b{font-weight:700;color:var(--navy);background:linear-gradient(transparent 60%,color-mix(in srgb,var(--amber,#f2b36b) 42%,transparent) 60%);padding:0 .06em;border-radius:2px}
+.tb b,.tbi b{font-weight:700;color:var(--navy);background:none;text-decoration:none}
 .tb i,.tbi i{color:var(--muted)}
 .tb h3,.tbi h3{display:flex;gap:9px;align-items:center;margin:1.7rem 0 0;font:700 .98rem/1.35 var(--body);color:var(--lbl)}.tb h3:before,.tbi h3:before{content:"";flex:none;width:4px;height:1.05em;border-radius:3px;background:var(--blue)}
 .tb ul,.tb ol,.tbi ul{margin:.8rem 0 0;padding:0;list-style:none}.tb ol{counter-reset:o}
@@ -1188,6 +1188,18 @@ h1 em{font-size:.66em;font-weight:700}
 .tbsum{margin:1.4rem 0 12px;padding:18px 20px;border-radius:18px;background:var(--g-mist,var(--soft));border:1px solid var(--line)}
 .tbsum-t{margin-bottom:6px;color:var(--lbl);font:700 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase}.tbsum p{margin:0;font:400 1.02rem/1.7 Charter,Georgia,serif;color:var(--text)}
 .tb ol.tbrefs{margin:.8rem 0 0}.tb ol.tbrefs li{font:400 .88rem/1.55 var(--body);color:var(--muted);padding-left:1.8rem}
+
+/* contents: read down, then the next column */
+.tbtoc ol,.tbtoc ol.tbtoc-o{display:block;list-style:none;margin:0;padding:0;columns:2 270px;column-gap:30px}
+.tbtoc ol>li{margin:0;padding:0;break-inside:auto}
+.tbtoc ol.tbtoc-o>li>a{padding:7px 8px;font-weight:600;color:var(--navy)}
+.tbtoc-o ul{display:block;list-style:none;margin:0 0 6px;padding:0}
+.tbtoc-o ul li{break-inside:avoid}
+.tbtoc-o ul a{display:block;padding:4px 8px 4px 40px;font:500 .82rem/1.35 var(--body);color:var(--muted);border-radius:8px}
+.tbtoc-o li.l4 a{padding-left:58px;font-size:.78rem;opacity:.9}
+.tbtoc a{cursor:pointer;text-decoration:none}.tbtoc a:hover,.tbtoc a:focus-visible{background:var(--soft);color:var(--navy);outline:none}
+.tb b,.tb h5,.tb a,.tbi b{text-decoration:none}
+@media(max-width:560px){.tbtoc ol,.tbtoc ol.tbtoc-o{columns:1}}
 </style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1C1A19" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F3EBDD" media="(prefers-color-scheme: light)">
@@ -1930,7 +1942,7 @@ const MCQS=[];
   else if(a=e.target.closest('[data-all]')){const o=a.dataset.all==='1';T.querySelectorAll('.tbs').forEach(s=>tog(s,!o));a.dataset.all=o?'0':'1';a.textContent=o?'Expand all':'Collapse all'}
   else if(a=e.target.closest('[data-done]')){const D=J('tbDone'),k=a.dataset.done;if(D[k])delete D[k];else D[k]=1;W('tbDone',D);a.setAttribute('aria-pressed',!!D[k]);a.textContent=D[k]?'✓ Read':'Mark as read'}
   else if(a=e.target.closest('.tbs-h'))tog(a.parentElement)});
- T.addEventListener('keydown',e=>{const h=e.target.closest&&e.target.closest('.tbs-h');if(h&&(e.key==='Enter'||e.key===' ')){e.preventDefault();tog(h.parentElement)}});
+ T.addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const g=e.target.closest&&e.target.closest('[data-go]');if(g){e.preventDefault();g.click();return}const h=e.target.closest&&e.target.closest('.tbs-h');if(h){e.preventDefault();tog(h.parentElement)}});
  addEventListener('hashchange',tb);setTimeout(tb,0)}
 const views=[...document.querySelectorAll('.view')],btns=[...document.querySelectorAll('.quizbtn')];
 document.querySelectorAll('.card').forEach(c=>c._t=(c.querySelector('header').textContent+' '+c.querySelector('.ans').textContent).toLowerCase());

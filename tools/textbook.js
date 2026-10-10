@@ -30,5 +30,5 @@
   else if(a=e.target.closest('[data-all]')){const o=a.dataset.all==='1';T.querySelectorAll('.tbs').forEach(s=>tog(s,!o));a.dataset.all=o?'0':'1';a.textContent=o?'Expand all':'Collapse all'}
   else if(a=e.target.closest('[data-done]')){const D=J('tbDone'),k=a.dataset.done;if(D[k])delete D[k];else D[k]=1;W('tbDone',D);a.setAttribute('aria-pressed',!!D[k]);a.textContent=D[k]?'✓ Read':'Mark as read'}
   else if(a=e.target.closest('.tbs-h'))tog(a.parentElement)});
- T.addEventListener('keydown',e=>{const h=e.target.closest&&e.target.closest('.tbs-h');if(h&&(e.key==='Enter'||e.key===' ')){e.preventDefault();tog(h.parentElement)}});
+ T.addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const g=e.target.closest&&e.target.closest('[data-go]');if(g){e.preventDefault();g.click();return}const h=e.target.closest&&e.target.closest('.tbs-h');if(h){e.preventDefault();tog(h.parentElement)}});
  addEventListener('hashchange',tb);setTimeout(tb,0)}

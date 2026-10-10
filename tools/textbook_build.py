@@ -111,7 +111,7 @@ def build(ch):
             out.append('<section class="tbs tbs-k tbs-%s%s" data-a="%d"><h2 class="tbs-h" role="button" tabindex="0" aria-expanded="%s">%s<span class="tbs-c"></span></h2><div class="tbs-b tb">%s</div></section>' % (s['k'], ' shut' if shut else '', sid, 'false' if shut else 'true', head, body))
     nav = ''
     if len(toc) > 1:
-        nav = '<nav class="tbtoc"><div class="tbtoc-t"><b>In this chapter</b><span>%d sections</span><button type="button" data-all="1">Collapse all</button></div><ol>%s</ol></nav>' % (len(toc), ''.join('<li><a href="javascript:void 0" data-go="%d"><span>%s</span>%s</a></li>' % (a, b, html.escape(c)) for a, b, c in toc))
+        nav = '<nav class="tbtoc"><div class="tbtoc-t"><b>In this chapter</b><span>%d sections</span><button type="button" data-all="1">Collapse all</button></div><ol>%s</ol></nav>' % (len(toc), ''.join('<li><a role="button" tabindex="0" data-go="%d"><span>%s</span>%s</a></li>' % (a, b, html.escape(c)) for a, b, c in toc))
     words = sum(len(re.sub(r'\*', '', b.get('md', '')).split()) for b in ch['blocks'] if b['t'] in ('p', 'li', 'ol'))
     return nav + '\n'.join(out), {'figs': nfig, 'tables': ntab, 'sections': n, 'min': max(1, round(words / 230))}
 
@@ -131,7 +131,7 @@ def rnodes(nodes, st):
         if k == 'p': o.append('<p>%s</p>' % inline(nd[1]))
         elif k in ('h3', 'h4', 'h5'):
             a = ''
-            if k == 'h3': st['a'] += 1; a = ' data-a="a%d"' % st['a']; st['toc'].append(('a%d' % st['a'], 'sub', nd[1]))
+            if k in ('h3', 'h4'): st['a'] += 1; a = ' data-a="a%d"' % st['a']; st['toc'].append(('a%d' % st['a'], k, nd[1]))
             o.append('<%s%s>%s</%s>' % (k, a, inline(nd[1]), k))
         elif k == 'ul': o.append(_list('ul', nd[1]))
         elif k == 'ol': o.append(_list('ol', nd[1]))
@@ -157,7 +157,7 @@ def build_curated(mod):
         if sc['t'] is None: out.append('<div class="tbi">%s</div>' % body); continue
         n += 1; sid = 's%d' % n
         refs = sc['t'] in ('Selected Readings', 'Acknowledgment')
-        toc.append((sid, '%02d' % n if not refs else '↗', sc['t'], [(a, t) for a, k, t in st['toc'] if k == 'sub']))
+        toc.append((sid, '%02d' % n if not refs else '↗', sc['t'], [(a, k, t) for a, k, t in st['toc']]))
         st['toc'] = []
         head = '<span class="tbs-n">%s</span><span class="tbs-t">%s</span>' % ('%02d' % n if not refs else '↗', html.escape(sc['t']))
         out.append('<section class="tbs%s" data-a="%s"><h2 class="tbs-h" role="button" tabindex="0" aria-expanded="%s">%s<span class="tbs-c"></span></h2><div class="tbs-b tb">%s</div></section>' % (' shut' if refs else '', sid, 'false' if refs else 'true', head, body))
@@ -165,8 +165,8 @@ def build_curated(mod):
         pass
     items = ''
     for sid, num, t, subs in toc:
-        items += '<li><a href="javascript:void 0" data-go="%s"><span>%s</span>%s</a>' % (sid, num, html.escape(t))
-        if subs: items += '<ul>%s</ul>' % ''.join('<li><a href="javascript:void 0" data-go="%s">%s</a></li>' % (a, html.escape(x)) for a, x in subs)
+        items += '<li><a role="button" tabindex="0" data-go="%s"><span>%s</span>%s</a>' % (sid, num, html.escape(t))
+        if subs: items += '<ul>%s</ul>' % ''.join('<li class="%s"><a role="button" tabindex="0" data-go="%s">%s</a></li>' % ('l3' if k == 'h3' else 'l4', a, html.escape(x)) for a, k, x in subs)
         items += '</li>'
     nav = '<nav class="tbtoc"><div class="tbtoc-t"><b>In this chapter</b><span>%d sections</span><button type="button" data-all="1">Collapse all</button></div><ol class="tbtoc-o">%s</ol></nav>' % (n, items)
     text = re.sub(r'<[^>]+>', ' ', '\n'.join(out)); words = len(text.split())
