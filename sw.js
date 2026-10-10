@@ -5,7 +5,7 @@
    - Your bookmarks, notes and progress are stored by the page itself (localStorage);
      this file never touches them.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v21';
+const VERSION = 'pathviva-zzee-v22';
 
 const CORE = [
   'index.html',
@@ -19,19 +19,11 @@ const CORE = [
   'icons/icon-512.png',
   'icons/icon-maskable-192.png',
   'icons/icon-maskable-512.png',
-  'fonts/fraunces-latin-400-normal.woff2',
-  'fonts/fraunces-latin-500-normal.woff2',
-  'fonts/fraunces-latin-600-normal.woff2',
-  'fonts/fraunces-latin-400-italic.woff2',
   'fonts/inter-latin-400-normal.woff2',
-  'fonts/inter-latin-500-normal.woff2',
-  'fonts/inter-latin-600-normal.woff2',
   'fonts/inter-greek-400-normal.woff2',
   'fonts/inter-greek-500-normal.woff2',
   'fonts/inter-greek-600-normal.woff2',
   'fonts/dm-serif-display-latin-400-normal.woff2',
-  'fonts/dm-serif-display-latin-400-italic.woff2',
-  'fonts/newsreader-latin-500-normal.woff2',
   'fonts/newsreader-latin-500-italic.woff2',
   'fonts/newsreader-latin-600-normal.woff2',
   'fonts/hanken-grotesk-latin-400-normal.woff2',

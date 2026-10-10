@@ -1,6 +1,6 @@
 # Patholo_zzee
 
-Offline-capable study site: **189 Systemic Pathology viva questions** (NMC order, Robbins 11th).
+Offline-capable study site: **257 pathology questions** (189 viva + 68 written; General Pathology and 15 Systemic topics, NMC order, Robbins 11th). Haematology is next.
 
 Features: search, practice (spaced-repetition flashcards and timed viva), quiz mode, bookmarks, favourites, notes, learned-progress per topic and per part, focus mode, dark/light theme, text size, handwriting ink (pen, highlighter, eraser, lasso) on every answer, backup/restore of all your data (including ink), installable and works offline.
 
@@ -15,4 +15,8 @@ Your data stays on your device (localStorage + IndexedDB). Nothing is sent anywh
 Netlify also works: import the repo, no build command, publish directory `.` (`_headers` adds security headers).
 
 ## Editing content
-The 15 systemic topics live in `tools/src/index.base.html` (`tools/content.py` is empty; add extra topics there if needed). After editing, run `python3 tools/build.py` to regenerate `index.html`. When you change any site file, bump `VERSION` in `sw.js` so installed copies refresh.
+The 15 systemic topics live in `tools/src/index.base.html`; General Pathology (and any new topics) live in `tools/content.py`. Styling is layered: base CSS in `index.base.html`, then `tools/theme.css`, then `tools/premium.css` (palette, fonts, glass; edit the tokens at the top of `premium.css` to retheme). After editing, run `python3 tools/build.py` to regenerate `index.html`. When you change any site file, bump `VERSION` in `sw.js` so installed copies refresh.
+
+
+## Fonts
+All self-hosted in `fonts/` (works offline): DM Serif Display (headings), Newsreader (question text), Hanken Grotesk (body), Caveat (handwriting accents), Inter Greek (Greek letters).
