@@ -44,40 +44,48 @@ def TB(head, rows):
 #  ('H1', 'Anaemias', 'hm', [('A3', 'Classify anaemia.', P('Anaemia', 'Reduction in haemoglobin below normal.'))]),
 # ]
 # ---------------------------------------------------------------------------------------------
-# GENERAL PATHOLOGY - written questions, read from gp_written.txt (the list as you send it).
-#   * To ADD questions: add lines to gp_written.txt under the right heading (or a new heading, see HEADINGS), then rebuild.
-#   * To ADD ANSWERS: put them in ANSWERS below, keyed by the question text exactly as in gp_written.txt
+# GENERAL PATHOLOGY - written questions, read from gp_written.txt, grouped the way Robbins groups them.
+#   gp_written.txt format (one heading per level, then the question lines):
+#       # CHAPTER 2 | Cell Injury, Cell Death, and Adaptations     <- Robbins chapter number | title
+#       ## Necrosis                                                 <- sub-chapter (section heading in the chapter)
+#       ### Fat necrosis                                            <- topic
+#       Why does fat necrosis occur in acute pancreatitis? (DU-11Ju) ⭐
+#   * To ADD questions: append lines at the END of gp_written.txt (so existing question numbers never move),
+#     under a heading line you repeat, e.g. "## Necrosis" and "### Fat necrosis". New chapters just need a "# CHAPTER n | title" line.
+#   * To ADD ANSWERS: put them in ANSWERS below, keyed by the question text exactly as written in the file
 #     (without the "(DU-..)" tag and stars), e.g.  'Define necrosis.': P('Necrosis', '...') + UL([...])
 #   * Until an answer exists, the question shows "Answer to be added."
 import os, re as _re
-HEADINGS = {  # heading in gp_written.txt -> (topic id, topic name)
-    'CELL INJURY & FREE RADICALS': ('G1', 'Cell Injury and Free Radicals'),
-    'NECROSIS': ('G2', 'Necrosis'),
-    'APOPTOSIS': ('G3', 'Apoptosis'),
-    'HYPERTROPHY, HYPERPLASIA, ATROPHY AND METAPLASIA': ('G4', 'Hypertrophy, Hyperplasia and Atrophy'),
-    'METAPLASIA': ('G5', 'Metaplasia'),
-    'PATHOLOGICAL CALCIFICATION': ('G6', 'Pathological Calcification'),
-}
 ANSWERS = {}
+GP_CHAPTERS = {}   # chapter number -> (title, [sub-chapters in order of appearance])
 
 def _gp_topics():
     src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gp_written.txt')
-    order, topics, cur = [], {}, None
+    ch = sub = topic = None
+    out, order = {}, []
     for raw in open(src, encoding='utf8'):
         line = raw.strip()
-        if not line or line == 'GENERAL PATHOLOGY':
+        if not line:
             continue
-        if line in HEADINGS:
-            cur = HEADINGS[line]
-            if cur[0] not in topics:
-                topics[cur[0]] = (cur[1], []); order.append(cur[0])
+        if line.startswith('###'):
+            topic = line[3:].strip(); continue
+        if line.startswith('##'):
+            sub = line[2:].strip(); topic = None
+            if sub not in GP_CHAPTERS[ch][1]: GP_CHAPTERS[ch][1].append(sub)
             continue
-        assert cur, 'question before any heading: ' + line
+        if line.startswith('#'):
+            m = _re.match(r'^#\s*CHAPTER\s+(\d+)\s*\|\s*(.+)$', line)
+            assert m, 'bad chapter heading: ' + line
+            ch = int(m.group(1)); sub = topic = None
+            GP_CHAPTERS.setdefault(ch, (m.group(2).strip(), []))
+            if ch not in out: out[ch] = []; order.append(ch)
+            continue
+        assert ch and sub, 'question before a chapter and sub-chapter heading: ' + line
         m = _re.match(r'^(.*?)\s*\(((?:DU|BSMMU)[^)]*)\)\s*(\u2b50*)\s*$', line)
         q, ref, stars = (m.group(1), m.group(2), m.group(3)) if m else (line.rstrip('\u2b50 ').strip(), '', '')
         body = ANSWERS.get(q) or '<p>Answer to be added.</p>'
         # written questions have no A/B card code (those belong to the viva board): code is left blank
-        topics[cur[0]][1].append(('', q, body, 'W', len(stars), ref))
-    return [(t, topics[t][0], 'gp', topics[t][1]) for t in order]
+        out[ch].append(('', q, body, 'W', len(stars), ref, (ch, sub, topic or sub)))
+    return [('c%d' % c, GP_CHAPTERS[c][0], 'gp', out[c]) for c in order]
 
 TOPICS = _gp_topics()

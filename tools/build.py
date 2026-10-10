@@ -2,7 +2,7 @@
 """Builds ../index.html from src/index.base.html (original 15 systemic topics) + content.py (GP and HM topics)."""
 import re, json, html, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-import content
+import content, robbins_map
 s = open(os.path.join(HERE, 'src/index.base.html'), encoding='utf8').read()
 
 # Parts, in book order. General Pathology and Haematology are filled from content.TOPICS (see content.py);
@@ -19,7 +19,7 @@ names = {k: re.search(r'<h3>(.*?)</h3>', v).group(1) for k, v in old_cards.items
 short = dict(re.findall(r'<option value="(\d\d)"[^>]*>\d\d  (.*?)</option>', re.search(r'<select class="jump".*?</select>', s, re.S).group()))
 
 n = len(re.findall(r'id="q\d+"', s)); base_n = n
-new_data, new_views, written, exam = [], {}, {}, {}
+new_data, new_views, written, exam, tree_gp = [], {}, {}, {}, {}
 for tid, tname, part, qs in content.TOPICS:
     names[tid] = e(tname); short[tid] = e(tname)
     arts = []
@@ -27,6 +27,7 @@ for tid, tname, part, qs in content.TOPICS:
         code, q, ans = item[:3]
         n += 1
         if len(item) > 3 and item[3] == 'W': written['q%d' % n] = 'W'
+        if len(item) > 6: tree_gp['q%d' % n] = list(item[6])
         stars, refs = (item[4], item[5]) if len(item) > 5 else (0, '')
         if stars or refs:
             exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)})]
@@ -37,8 +38,22 @@ for tid, tname, part, qs in content.TOPICS:
 total = n
 order = [t for p in PARTS for t in p[3]]  # book order: Part A, B, C
 
+# Robbins chapter labels shown instead of the internal topic ids (01..15, c2 ...)
+OLD_CH = {'01': 11, '02': 12, '03': 13, '04': 15, '05': 17, '06': 18, '07': '20\u201321', '08': 21, '09': 22, '10': 24, '11': 25, '12': 26, '13': 28, '14': 29, '15': 'P'}
+def NO(t):
+    c = OLD_CH.get(t)
+    if c is None and t.startswith('c') and t[1:].isdigit(): c = int(t[1:])
+    return 'Practical' if c == 'P' else 'Ch %s' % c
+CHAP = {c: (v[0], list(v[1])) for c, v in robbins_map.CHAPTERS.items()}
+for c, (t, subs) in content.GP_CHAPTERS.items():
+    CHAP.setdefault(c, (t, []))
+    CHAP[c][1].extend(x for x in subs if x not in CHAP[c][1])
+CH_ORDER = sorted((c for c in CHAP if c != 'P')) + ['P']
+TREE = {k: list(v) for k, v in robbins_map.SYS.items()}
+TREE.update(tree_gp)
+
 def jump(cur):
-    return '<select class="jump" aria-label="Jump to topic">' + ''.join('<option value="%s"%s>%s  %s</option>' % (t, ' selected' if t == cur else '', t, short[t]) for t in order) + '</select>'
+    return '<select class="jump" aria-label="Jump to topic">' + ''.join('<option value="%s"%s>%s  %s</option>' % (t, ' selected' if t == cur else '', NO(t), short[t]) for t in order) + '</select>'
 
 v01 = re.search(r'<div class="view" id="v-01".*?(?=<div class="view" id="v-02")', s, re.S).group()
 head = v01[:v01.index('<main>')]
@@ -53,7 +68,7 @@ for tid in [t for t in order if t not in old_cards]:
     qs, arts = new_views[tid]
     pl = [p for p in PARTS if tid in p[3]][0]
     h = re.sub(r'<select class="jump".*?</select>', lambda m: jump(tid), head, flags=re.S).replace('id="v-01"', 'id="v-%s"' % tid).replace('Blood Vessels | Systemic Pathology Viva', '%s | Patholo_zzee' % names[tid])
-    h = h.replace('All topics</a> / 01', 'All topics</a> / %s' % tid).replace('<h1>Blood Vessels</h1>', '<h1>%s</h1>' % names[tid])
+    h = h.replace('All topics</a> / 01', 'All topics</a> / %s' % NO(tid)).replace('<h1>Blood Vessels</h1>', '<h1>%s</h1>' % names[tid])
     h = h.replace('6 questions, in the same order as the NMC viva list.', '%d questions · Part %s, %s.' % (len(qs), pl[0], pl[1]))
     views += h + '<main>' + arts + '<p class="none">No question matches your search.</p>' + pager(tid) + '</main></div>'
 for _t in old_cards:  # prev/next links of the original topics follow the full book order
@@ -67,7 +82,8 @@ def card(tid):
     if tid in old_cards: c = old_cards[tid]
     else:
         qs = new_views[tid][0]
-        c = '<a class="topic" href="#/%s"><span class="no">%s</span><h3>%s</h3><p>%s</p><span class="cnt">%d questions</span></a>' % (tid, tid, names[tid], e('; '.join(q[1][:50] + ('…' if len(q[1]) > 50 else '') for q in qs[:2])), len(qs))
+        c = '<a class="topic" href="#/%s"><span class="no">%s</span><h3>%s</h3><p>%s</p><span class="cnt">%d questions</span></a>' % (tid, NO(tid), names[tid], e('; '.join(q[1][:50] + ('…' if len(q[1]) > 50 else '') for q in qs[:2])), len(qs))
+    c = re.sub(r'<span class="no">[^<]*</span>', '<span class="no">%s</span>' % NO(tid), c, count=1)
     return c.replace('<a class="topic"', '<a class="topic" data-n="%d"' % qn(c), 1)
 secs = ''
 for letter, pname, key, tids in sorted(PARTS, key=lambda p: not p[3]):  # parts that have questions first; empty ones follow
@@ -88,7 +104,7 @@ s = s.replace("function imp(f){if(!f)return;f.text().then(t=>{try{const o=JSON.p
 assert 'Ink.load' in s and 'Ink.dump' in s and 'localeCompare(b))' in s
 
 
-QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam}
+QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1]] for c in CH_ORDER]}
 QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
 
 PART_JS = "const PART_OF=%s;\n" % json.dumps(PART_OF) + r"""(function(){const p=prog;prog=function(){p();const L=new Set(S.learned),T={},N={};DATA.forEach(d=>{const k=PART_OF[d[2]];N[k]=(N[k]||0)+1;if(L.has(d[3]))T[k]=(T[k]||0)+1});document.querySelectorAll('[data-pp]').forEach(r=>{const k=r.dataset.pp,c=N[k]?Math.round(100*(T[k]||0)/N[k]):0;r.style.setProperty('--p',c);r.textContent=c+'%'})};prog();
@@ -212,6 +228,8 @@ META = ('<meta name="description" content="%s"><link rel="canonical" href="%s">'
  '<meta name="twitter:description" content="%s"><meta name="twitter:image" content="%sicons/og-image.png">') % (DESC, SITE, DESC, SITE, SITE, DESC, SITE)
 s = s.replace('<meta name="referrer" content="no-referrer">', '<meta name="referrer" content="no-referrer">' + META, 1)
 assert 'og:image' in s
+for _t in OLD_CH:  # breadcrumb of the original topic pages: show the Robbins chapter, not 01..15
+    s = re.sub(r'(id="v-%s".{0,1500}?All topics</a> / )%s' % (_t, _t), lambda m, _t=_t: m.group(1) + NO(_t), s, count=1, flags=re.S)
 import ui_patch
 s = ui_patch.patch(s)
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
