@@ -2,7 +2,8 @@
 """Textbook (Robbins, cleaned): tools/textbook_src/chNN.json (robbins-clean-v1) -> ../textbook/chNN.html + index.json.
 Sections become collapsible panels; KEY CONCEPTS / Morphology / Clinical / Pathogenesis get their own panel styles
 (see tools/textbook.css, tools/textbook.js). Run: python3 tools/textbook_build.py  (then bump VERSION in sw.js)"""
-import json, glob, os, re, html
+import json, glob, os, re, html, sys, importlib
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'curate'))
 HERE = os.path.dirname(os.path.abspath(__file__)); SRC = os.path.join(HERE, 'textbook_src'); OUT = os.path.join(HERE, '..', 'textbook')
 MINOR = {'and', 'of', 'the', 'in', 'to', 'for', 'with', 'a', 'an', 'on', 'or', 'by', 'at', 'as', 'from'}
 IC_FIG = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg>'
@@ -102,21 +103,80 @@ def build(ch):
         if s['k'] == 'main':
             n += 1; toc.append((sid, '%02d' % n, s['t']))
             head = '<span class="tbs-n">%02d</span><span class="tbs-t">%s</span>' % (n, html.escape(s['t']))
-            out.append('<section class="tbs" data-s="%d"><h2 class="tbs-h" role="button" tabindex="0" aria-expanded="true">%s<span class="tbs-c"></span></h2><div class="tbs-b tb">%s</div></section>' % (sid, head, body))
+            out.append('<section class="tbs" data-a="%d"><h2 class="tbs-h" role="button" tabindex="0" aria-expanded="true">%s<span class="tbs-c"></span></h2><div class="tbs-b tb">%s</div></section>' % (sid, head, body))
         else:
             shut = s['k'] == 'refs'
             if shut: toc.append((sid, '↗', s['t'].title() if s['t'] else 'References'))
             head = '<span class="tbs-tag">%s</span>' % TAG[s['k']]
-            out.append('<section class="tbs tbs-k tbs-%s%s" data-s="%d"><h2 class="tbs-h" role="button" tabindex="0" aria-expanded="%s">%s<span class="tbs-c"></span></h2><div class="tbs-b tb">%s</div></section>' % (s['k'], ' shut' if shut else '', sid, 'false' if shut else 'true', head, body))
+            out.append('<section class="tbs tbs-k tbs-%s%s" data-a="%d"><h2 class="tbs-h" role="button" tabindex="0" aria-expanded="%s">%s<span class="tbs-c"></span></h2><div class="tbs-b tb">%s</div></section>' % (s['k'], ' shut' if shut else '', sid, 'false' if shut else 'true', head, body))
     nav = ''
     if len(toc) > 1:
         nav = '<nav class="tbtoc"><div class="tbtoc-t"><b>In this chapter</b><span>%d sections</span><button type="button" data-all="1">Collapse all</button></div><ol>%s</ol></nav>' % (len(toc), ''.join('<li><a href="javascript:void 0" data-go="%d"><span>%s</span>%s</a></li>' % (a, b, html.escape(c)) for a, b, c in toc))
     words = sum(len(re.sub(r'\*', '', b.get('md', '')).split()) for b in ch['blocks'] if b['t'] in ('p', 'li', 'ol'))
     return nav + '\n'.join(out), {'figs': nfig, 'tables': ntab, 'sections': n, 'min': max(1, round(words / 230))}
 
+# ---------------------------------------------------------------- curated chapters (tools/curate/chNN.py -> NODES)
+def _tbl(n, title, rows, note):
+    body = ''
+    if rows: body += '<div class="tbt-s"><table>' + ''.join('<tr>%s</tr>' % ''.join(('<th>%s</th>' if k == 0 else '<td>%s</td>') % inline(c or '') for c in r) for k, r in enumerate(rows)) + '</table></div>'
+    if note: body += '<div class="tbt-n">%s</div>' % inline(note)
+    return '<div class="tbt"><div class="tbt-h">%s<span class="tbt-no">Table %s</span><span class="tbt-ti">%s</span></div>%s</div>' % (IC_TAB, n, inline(title), body)
+def _fig(n, c):
+    return '<figure class="tbf"><div class="tbf-h">%s<b>Figure %s</b></div><figcaption>%s</figcaption></figure>' % (IC_FIG, n, inline(c))
+def _list(tag, items): return '<%s>%s</%s>' % (tag, ''.join('<li>%s</li>' % inline(x) for x in items), tag)
+def rnodes(nodes, st):
+    o = []
+    for nd in nodes:
+        k = nd[0]
+        if k == 'p': o.append('<p>%s</p>' % inline(nd[1]))
+        elif k in ('h3', 'h4', 'h5'):
+            a = ''
+            if k == 'h3': st['a'] += 1; a = ' data-a="a%d"' % st['a']; st['toc'].append(('a%d' % st['a'], 'sub', nd[1]))
+            o.append('<%s%s>%s</%s>' % (k, a, inline(nd[1]), k))
+        elif k == 'ul': o.append(_list('ul', nd[1]))
+        elif k == 'ol': o.append(_list('ol', nd[1]))
+        elif k == 'fig': st['f'] += 1; o.append(_fig(nd[1], nd[2]))
+        elif k == 'tab': st['t'] += 1; o.append(_tbl(nd[1], nd[2], nd[3], nd[4]))
+        elif k == 'morph': o.append('<div class="tbm"><div class="tbm-t">Morphology</div>%s</div>' % rnodes(nd[1], st))
+        elif k == 'sum': o.append('<aside class="tbsum"><div class="tbsum-t">Chapter summary</div><p>%s</p></aside>' % inline(nd[1]))
+        elif k == 'refs': o.append('<ol class="tbrefs">%s</ol>' % ''.join('<li>%s</li>' % inline(x) for x in nd[1]))
+        elif k == 'kc':
+            g = ''.join(('<h4>%s</h4>' % inline(h) if h else '') + _list('ul', its) for h, its in nd[1])
+            o.append('<aside class="tbkc"><div class="tbkc-t">%s<span>Key concepts</span></div>%s</aside>' % (IC_KEY, g))
+    return '\n'.join(o)
+def build_curated(mod):
+    st = {'a': 0, 'f': 0, 't': 0, 'toc': []}; secs = []; cur = None
+    for nd in mod.NODES:
+        if nd[0] == 'h2': cur = {'t': nd[1], 'n': []}; secs.append(cur)
+        else:
+            if cur is None: cur = {'t': None, 'n': []}; secs.append(cur)
+            cur['n'].append(nd)
+    out = []; n = 0; toc = []; words = 0
+    for sc in secs:
+        body = rnodes(sc['n'], st)
+        if sc['t'] is None: out.append('<div class="tbi">%s</div>' % body); continue
+        n += 1; sid = 's%d' % n
+        refs = sc['t'] in ('Selected Readings', 'Acknowledgment')
+        toc.append((sid, '%02d' % n if not refs else '↗', sc['t'], [(a, t) for a, k, t in st['toc'] if k == 'sub']))
+        st['toc'] = []
+        head = '<span class="tbs-n">%s</span><span class="tbs-t">%s</span>' % ('%02d' % n if not refs else '↗', html.escape(sc['t']))
+        out.append('<section class="tbs%s" data-a="%s"><h2 class="tbs-h" role="button" tabindex="0" aria-expanded="%s">%s<span class="tbs-c"></span></h2><div class="tbs-b tb">%s</div></section>' % (' shut' if refs else '', sid, 'false' if refs else 'true', head, body))
+    for nd in mod.NODES:
+        pass
+    items = ''
+    for sid, num, t, subs in toc:
+        items += '<li><a href="javascript:void 0" data-go="%s"><span>%s</span>%s</a>' % (sid, num, html.escape(t))
+        if subs: items += '<ul>%s</ul>' % ''.join('<li><a href="javascript:void 0" data-go="%s">%s</a></li>' % (a, html.escape(x)) for a, x in subs)
+        items += '</li>'
+    nav = '<nav class="tbtoc"><div class="tbtoc-t"><b>In this chapter</b><span>%d sections</span><button type="button" data-all="1">Collapse all</button></div><ol class="tbtoc-o">%s</ol></nav>' % (n, items)
+    text = re.sub(r'<[^>]+>', ' ', '\n'.join(out)); words = len(text.split())
+    return nav + '\n'.join(out), {'figs': st['f'], 'tables': st['t'], 'sections': n, 'min': max(1, round(words / 230))}
+
 os.makedirs(OUT, exist_ok=True); idx = []
 for f in sorted(glob.glob(os.path.join(SRC, 'ch*.json'))):
-    ch = json.load(open(f, encoding='utf8')); key = os.path.basename(f)[:-5]; h, meta = build(ch)
+    ch = json.load(open(f, encoding='utf8')); key = os.path.basename(f)[:-5]
+    if os.path.exists(os.path.join(HERE, 'curate', key + '.py')): h, meta = build_curated(importlib.import_module(key)); print('curated:', key, meta)
+    else: h, meta = build(ch)
     open(os.path.join(OUT, key + '.html'), 'w', encoding='utf8').write(h)
     idx.append(dict(id=key, n=ch['chapter_number'], title=ch['title'], pages=ch.get('book_pages'), **meta))
 json.dump({'title': 'Robbins Pathologic Basis of Disease', 'chapters': idx}, open(os.path.join(OUT, 'index.json'), 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
