@@ -165,7 +165,7 @@ body.inking .card .ans{outline:1px dashed var(--line);outline-offset:-1px}
 @media print{#ink{display:none}}
 """
 s = re.sub(r'@font-face\{font-family:"(?:Plus Jakarta Sans|Source Sans 3)".*?\}\n?', '', s)
-s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='utf8').read() + '</style>', 1)
+s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='utf8').read() + open(os.path.join(HERE, 'premium.css'), encoding='utf8').read() + '</style>', 1)
 H1 = '<h1>Viva Prep —<br>Read.<br>Recall. Answer.</h1>'
 assert H1 in s
 s = s.replace('<a href="#/topics">Topics</a>', '<a href="#/topics">Topics</a><a href="#/questions">Questions</a>')
@@ -178,7 +178,7 @@ s = s.replace(T, '<ul id="res"></ul></div></div></div>' + STATS + '</div><main',
 NAV_OLD = re.search(r'<nav id="bnav">.*?</nav>', s, re.S)
 assert NAV_OLD
 s = s.replace(NAV_OLD.group(), '<nav id="bnav" aria-label="Main"><a href="#/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Home</a><a href="#/topics"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg>Topics</a><a href="#/questions"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1 1-1.1 1.8M12 17h.01"/></svg>Questions</a><a href="#/practice"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>Practice</a><a href="#/bookmarks"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>Bookmarks</a><a href="#/notes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16zM13 7l4 4"/></svg>Notes</a></nav>', 1)
-s = s.replace('content="#000000" media', 'content="#0c131f" media').replace('content="#f7f4f2" media', 'content="#f7f6f2" media')
+s = s.replace('content="#000000" media', 'content="#1C1A19" media').replace('content="#f7f4f2" media', 'content="#F3EBDD" media')
 CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"><meta name=\"referrer\" content=\"no-referrer\">"
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
 s = s.replace("<script>\nif ('serviceWorker'", '<script src="ink.js"></script>\n<script>\nif (\'serviceWorker\'', 1)
