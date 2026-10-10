@@ -1362,11 +1362,30 @@ body.mx-live #v-mcqs .hero{display:none}
 .mx-sel{flex:1 1 220px;min-width:0;min-height:36px;padding:0 10px;border-radius:11px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:600 .82rem var(--body)}
 .mx-rbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;background:var(--bg);border-bottom:1px solid var(--line);margin-bottom:6px}
 .mx-rbar>span{flex:1;color:var(--muted);font:600 .84rem var(--body)}
+.mx-rbar .dd{flex:1 1 200px;min-width:0}
+.mx-rbar .db{min-height:36px;padding:0 14px 0 16px;font:600 .82rem var(--body)}
+.mx-fb{display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:0 14px;border-radius:99px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:600 .82rem var(--body);cursor:pointer}
+.mx-fb svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.mx-fb em{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:99px;background:var(--clay);color:#fff;font:700 .7rem var(--body);font-style:normal}
+.mx-fb[aria-expanded=true]{border-color:var(--clay);background:var(--accbg);color:var(--lbl)}
+.mx-fb:focus-visible,.mx-sw:focus-visible,.mx-x:focus-visible{outline:2px solid var(--clay);outline-offset:2px}
+.mx-sw{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0 2px;border:0;background:none;color:var(--text);font:600 .8rem var(--body);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mx-sw i{position:relative;flex:none;width:38px;height:22px;border-radius:99px;background:var(--line2);transition:background .18s}
+.mx-sw i::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.3);transition:transform .2s cubic-bezier(.3,.7,.4,1)}
+.mx-sw[aria-checked=true] i{background:var(--clay)}.mx-sw[aria-checked=true] i::after{transform:translateX(16px)}
+.mx-sw:disabled{opacity:.45;cursor:default}
+.mx-rf{margin:8px 0 12px;padding:16px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.mx-rfh{display:flex;align-items:center;justify-content:space-between;margin:0 2px 12px;font:600 .95rem var(--body);color:var(--text)}
+.mx-rf .mx-fs{margin-top:16px}
+.mx-link:disabled{opacity:.4;cursor:default}
+.mx-af{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+.mx-x{display:inline-flex;align-items:center;gap:6px;min-height:30px;padding:0 10px 0 12px;border-radius:99px;border:1px solid var(--clay);background:var(--accbg);color:var(--lbl);font:600 .76rem var(--body);cursor:pointer}
+.mx-x svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round}
 .mx-rt{margin:26px 4px 8px;font:500 1.35rem/1.2 var(--disp);color:var(--navy)}.mx-rt small{display:block;margin-top:3px;font:600 .74rem var(--body);color:var(--lbl);letter-spacing:.05em;text-transform:uppercase}
 .mx-card.read{padding-top:34px}.mx-qn{position:absolute;top:12px;left:18px;font:600 .74rem var(--body);color:var(--muted)}
 .mx-more{display:flex;gap:14px;align-items:center;justify-content:center;margin:18px 0}
 @media(max-width:420px){.mx-hero .mx-kv span{min-width:0}.mx-hero .mx-kv b{font-size:1.15rem}}
-@media(prefers-reduced-motion:reduce){.mx *{transition:none!important}}
+@media(prefers-reduced-motion:reduce){.mx *,.mx-sw i::after{transition:none!important}}
 @media print{.mx-act,.mx-top,.mx-rbar,.mx-bm{display:none!important}}
 </style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1C1A19" media="(prefers-color-scheme: dark)">
@@ -2265,22 +2284,48 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
   M.querySelectorAll('.mx-go button').forEach(b=>b.disabled=!hits.length);saveF()}
 
  /* ---------- reading mode ---------- */
- let readCh=-1;
+ let readCh=-1,readTp=new Set(),readTpCh=null,readFo=false;
+ const STL={new:'Not attempted',wrong:'Missed last time',right:'Answered right',bm:'Bookmarked',key:'Has a key note'},
+  TGL={rel:'Relevant',du:'DU',oth:'Other past papers (May / Nov)'},SRCL={P:'Past papers',N:'Practice bank'},TYL=['SBA','True / False'];
+ const lblOf=(f,v)=>f==='tp'?tn({c:+String(v).split('.')[0],t:+String(v).split('.')[1]}):f==='ty'?TYL[v]:f==='src'?SRCL[v]:f==='tg'?TGL[v]:f==='st'?STL[v]:v;
  function reading(){
+  const ae=document.activeElement,keep=ae&&ae.id==='mx-rq'?ae.selectionStart:-1;
   const all=matches(),cnt={};all.forEach(q=>cnt[q.c]=(cnt[q.c]||0)+1);
   const present=Object.keys(cnt).map(Number).sort((x,y)=>x-y);
   if(readCh!==-2&&!present.includes(readCh))readCh=present.length?present[0]:-2;
-  const whole=readCh===-2&&present.length>0||false;
-  const hits=readCh>=0?all.filter(q=>q.c===readCh):all,sh=readCh>=0?hits:hits.slice(0,readN);let last=-1,out='';
+  if(readTpCh!==readCh){readTp.clear();readTpCh=readCh}
+  const inScope=q=>readCh<0||(q.c===readCh&&(!readTp.size||readTp.has(q.t)));
+  const hits=readCh>=0?all.filter(inScope):all,sh=readCh>=0?hits:hits.slice(0,readN);let last=-1,out='';
   sh.forEach((q,i)=>{const g=tk(q);if(g!==last){last=g;out+=`<h3 class="mx-rt">${E(CH[q.c][0])}<small>${E(tn(q))}</small></h3>`}
    out+=`<article class="mx-card read" data-h="${q.h}"><div class="mx-qn">${i+1}</div>${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3><div class="mx-opts">${body(q,{fb:readOpt.show,lock:true,notes:readOpt.notes,st:true})}</div>${readOpt.show?bareAns(q):''}</article>`});
+  /* live facet counts, scoped to what is being read and to the other active filters */
+  const T={};['ty','tg','src','pp','st'].forEach(f=>{const c={};Q.forEach((q,i)=>{if(!inScope(q)||!pass(q,i,f))return;
+   if(f==='ty')c[q.y]=(c[q.y]||0)+1;else if(f==='src')c[q.s]=(c[q.s]||0)+1;else if(f==='tg')c[tagOf(q)]=(c[tagOf(q)]||0)+1;
+   else if(f==='pp')(q.g||[]).forEach(g=>c[g]=(c[g]||0)+1);else stOf(q).forEach(g=>c[g]=(c[g]||0)+1)});T[f]=c});
+  const tcnt={};if(readCh>=0)Q.forEach((q,i)=>{if(q.c===readCh&&pass(q,i))tcnt[q.t]=(tcnt[q.t]||0)+1});
+  const rchip=(f,v,label)=>{const on=F[f].has(f==='ty'?+v:v),n=T[f][v]||0;return `<label class="mx-f${!n&&!on?' zero':''}"><input type="checkbox" data-f="${f}" data-v="${E(v)}"${on?' checked':''}><span>${label}</span><em>${n}</em></label>`};
+  const tchip=t=>{const on=readTp.has(t),n=tcnt[t]||0;return `<label class="mx-f${!n&&!on?' zero':''}"><input type="checkbox" data-rt="${t}"${on?' checked':''}><span>${E(CH[readCh][1][t])}</span><em>${n}</em></label>`};
+  const act=[];FKEYS.forEach(f=>[...F[f]].forEach(v=>act.push([f,v,lblOf(f,v)])));
+  readTp.forEach(t=>act.push(['rt',t,CH[readCh][1][t]]));if(F.txt)act.push(['txt','','\u201C'+F.txt+'\u201D']);
+  const strip=act.length?`<div class="mx-af">${act.map(([f,v,l])=>`<button type="button" class="mx-x" data-a="rx" data-xf="${f}" data-xv="${E(v)}" aria-label="Remove filter ${E(l)}">${E(l)}${ic.x}</button>`).join('')}</div>`:'';
+  const panel=readFo?`<div class="mx-rf" id="mx-rf"><div class="mx-rfh"><b>Filter questions</b><button type="button" class="mx-link" data-a="rclr"${act.length?'':' disabled'}>Clear all</button></div>
+   <label class="mx-search"><input type="search" id="mx-rq" placeholder="Search question text" value="${E(F.txt)}" autocomplete="off"></label>
+   ${readCh>=0&&CH[readCh][1].length>1?`<div class="mx-fs"><p class="mx-fh">Topic in this chapter</p><div class="mx-fc">${CH[readCh][1].map((_,t)=>tchip(t)).join('')}</div></div>`:''}
+   <div class="mx-fs"><p class="mx-fh">Question type</p><div class="mx-fc">${rchip('ty','0','SBA')}${rchip('ty','1','True / False')}</div></div>
+   <div class="mx-fs"><p class="mx-fh">Relevant or DU</p><div class="mx-fc">${rchip('tg','rel','Relevant')}${rchip('tg','du','DU')}${rchip('tg','oth','Other past papers (May / Nov)')}</div></div>
+   <div class="mx-fs"><p class="mx-fh">Source</p><div class="mx-fc">${rchip('src','P','Past papers')}${rchip('src','N','Practice bank')}</div></div>
+   <div class="mx-fs"><p class="mx-fh">Past paper</p><div class="mx-fc">${PAPERS.map(g=>rchip('pp',g,E(g))).join('')}</div></div>
+   <div class="mx-fs"><p class="mx-fh">Your progress</p><div class="mx-fc">${Object.keys(STL).map(k=>rchip('st',k,STL[k])).join('')}</div></div></div>`:'';
   const pi=present.indexOf(readCh),pv=pi>0?present[pi-1]:null,nx=pi>=0&&pi<present.length-1?present[pi+1]:null;
-  const sel=`<select class="mx-sel" id="mx-rc" aria-label="Chapter"><option value="-2" ${readCh===-2?'selected':''}>All chapters (${all.length})</option>${present.map(c=>`<option value="${c}" ${c===readCh?'selected':''}>${c+1}. ${E(CH[c][0])} (${cnt[c]})</option>`).join('')}</select>`;
+  const sel=`<select class="mx-sel" id="mx-rc" aria-label="Chapter"><option value="-2" ${readCh===-2?'selected':''}>All chapters (${all.length})</option>${present.map(c=>`<option value="${c}" ${c===readCh?'selected':''}>${c+1} ${E(CH[c][0])} (${cnt[c]})</option>`).join('')}</select>`;
   const pager=readCh>=0?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="rch" data-c="${pv}" ${pv===null?'disabled':''}>‹ Previous chapter</button><button type="button" class="mx-btn" data-a="rch" data-c="${nx}" ${nx===null?'disabled':''}>Next chapter ›</button></div>`:'';
-  M.innerHTML=`<div class="mx-rbar"><button type="button" class="mx-link" data-a="custom">‹ Filters</button>${sel}<div class="mx-seg sm"><button type="button" data-a="rshow" aria-pressed="${readOpt.show}">Answers</button><button type="button" data-a="rnotes" aria-pressed="${readOpt.notes}">Notes</button></div><button type="button" class="mx-btn sm" data-a="goprac">Practise ${readCh>=0?'this chapter':'these'}</button></div>
-   <p class="mx-note">${hits.length} questions${readCh>=0?' in this chapter':''}</p>
-   ${all.length?out:'<div class="mempty"><b>No questions match</b>Change the filters to see more.</div>'}
-   ${readCh<0&&hits.length>readN?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="more">Show ${Math.min(30,hits.length-readN)} more</button><button type="button" class="mx-link" data-a="moreall">Show all ${hits.length}</button></div>`:''}${pager}`}
+  M.innerHTML=`<div class="mx-rbar"><button type="button" class="mx-link" data-a="custom">‹ Custom set</button>${sel}<button type="button" class="mx-fb" data-a="rfilt" aria-expanded="${readFo}" aria-controls="mx-rf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16l-6 8v6l-4-2v-4z"/></svg>Filter${act.length?`<em>${act.length}</em>`:''}</button><button type="button" role="switch" class="mx-sw" data-a="rshow" aria-checked="${readOpt.show}"><i></i><span>Answers</span></button><button type="button" role="switch" class="mx-sw" data-a="rnotes" aria-checked="${readOpt.notes&&readOpt.show}"${readOpt.show?'':' disabled'}><i></i><span>Notes</span></button><button type="button" class="mx-btn sm" data-a="goprac">Practise ${readCh>=0?'this chapter':'these'}</button></div>
+   ${panel}${strip}
+   <p class="mx-note">${hits.length} question${hits.length===1?'':'s'}${readCh>=0?' in this chapter':''}${act.length?' · filtered':''}</p>
+   ${sh.length?out:'<div class="mempty"><b>No questions match</b>Change the filters to see more.</div>'}
+   ${readCh<0&&hits.length>readN?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="more">Show ${Math.min(30,hits.length-readN)} more</button><button type="button" class="mx-link" data-a="moreall">Show all ${hits.length}</button></div>`:''}${pager}`;
+  const rc=M.querySelector('#mx-rc');if(rc)dd(rc);
+  if(keep>=0){const si=M.querySelector('#mx-rq');if(si){si.focus();try{si.setSelectionRange(keep,keep)}catch(e){}}}}
 
  /* ---------- events ---------- */
  function setF(f,v,on){if(f==='ch'){CH[v][1].forEach((_,t)=>{const k=v+'.'+t;on?F.tp.add(k):F.tp.delete(k)})}else{const x=f==='ty'?+v:v;on?F[f].add(x):F[f].delete(x)}}
@@ -2295,24 +2340,27 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    case 'quick':reset();start(shuf(Q.filter(q=>!(P()[q.h]&&P()[q.h].r)).map(q=>q.h)).slice(0,10),{scope:'Quick 10'});break;
    case 'custom':nav('custom');break;
    case 'mock':{const ids=shuf(Q.filter(q=>!q.y).map(q=>q.h)).slice(0,5).concat(shuf(Q.filter(q=>q.y).map(q=>q.h)).slice(0,15));start(shuf(ids),{mode:'exam',limit:1800,scope:'Mock paper'});break}
-   case 'read':reset();readN=30;readCh=-1;saveF();nav('read');break;
+   case 'read':reset();readN=30;readTp.clear();readCh=-1;saveF();nav('read');break;
    case 'mist':start(shuf(Q.filter(q=>{const x=P()[q.h];return x&&x.n&&!x.r}).map(q=>q.h)),{scope:'Missed questions'});break;
    case 'saved':start(shuf(ST().bm.filter(h=>BY[h])),{scope:'Bookmarks'});break;
    case 'resume':sess=ST().sess;if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
    case 'topic':start(topicIds(+b.dataset.c,+b.dataset.t).slice(0,25),{scope:CH[b.dataset.c][1][b.dataset.t]});break;
    case 'chap':start(topicIds(+b.dataset.c).slice(0,25),{scope:CH[b.dataset.c][0]});break;
-   case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;readCh=-1;nav('read');break;
-   case 'chapread':reset();setF('ch',b.dataset.c,true);saveF();readN=30;readCh=+b.dataset.c;nav('read');break;
+   case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;readTp.clear();readCh=-1;nav('read');break;
+   case 'chapread':reset();setF('ch',b.dataset.c,true);saveF();readN=30;readTp.clear();readCh=+b.dataset.c;nav('read');break;
    case 'paper':{const g=b.dataset.g;start(Q.filter(q=>(q.g||[]).includes(g)).map(q=>q.h),{mode:'exam',limit:1800,scope:'Paper '+g});break}
    case 'resetp':if(confirm('Clear all MCQ answers, bookmarks and history on this device?')){const m=ST();m.p={};m.bm=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
    case 'tg':{const d=b.closest('.mx-chd2');b.setAttribute('aria-expanded',d.classList.toggle('open'));break}
    case 'clear':reset();document.getElementById('mx-q').value='';refresh();break;
    case 'gostart':{const ids=pickSet();O.mode=O.mode||'practice';const n=ids.length;saveF();start(ids,{mode:O.mode,limit:lim(n),scope:'Custom practice'});break}
-   case 'goread':readN=30;readCh=-1;nav('read');break;
-   case 'goprac':{const ids=matches().filter(q=>readCh<0||q.c===readCh).map(q=>q.h);start(O.shuffle?shuf(ids):ids,{scope:'Custom practice'});break}
+   case 'goread':readN=30;readTp.clear();readCh=-1;nav('read');break;
+   case 'goprac':{const ids=matches().filter(q=>readCh<0||(q.c===readCh&&(!readTp.size||readTp.has(q.t)))).map(q=>q.h);start(O.shuffle?shuf(ids):ids,{scope:'Custom practice'});break}
    case 'rch':if(b.dataset.c!=='null'){readCh=+b.dataset.c;reading();window.scrollTo(0,0)}break;
    case 'more':readN+=30;reading();break;
    case 'moreall':readN=1e9;reading();break;
+   case 'rfilt':readFo=!readFo;reading();break;
+   case 'rclr':reset();readTp.clear();saveF();reading();break;
+   case 'rx':{const f=b.dataset.xf,v=b.dataset.xv;if(f==='txt'){F.txt=''}else if(f==='rt'){readTp.delete(+v)}else{F[f].delete(f==='ty'?+v:v)}saveF();reading();break}
    case 'rshow':readOpt.show=!readOpt.show;reading();break;
    case 'rnotes':readOpt.notes=!readOpt.notes;reading();break;
    case 'bm':{const m=ST(),h=b.dataset.h,i=m.bm.indexOf(h);i<0?m.bm.push(h):m.bm.splice(i,1);save();b.setAttribute('aria-pressed',i<0);break}
@@ -2330,8 +2378,8 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    case 'rev':review(b.dataset.i);break;
    case 'retry':{const l=ST().last;const ids=l.ids.filter(h=>!ok(BY[h],l.ans[h]));start(shuf(ids),{scope:'Retry missed'});break}
    case 'home':nav();break}});
- M.addEventListener('change',e=>{const i=e.target;if(i.id==='mx-rc'){readCh=+i.value;reading();window.scrollTo(0,0);return}if(!i.dataset.f)return;setF(i.dataset.f,i.dataset.v,i.checked);refresh()});
- M.addEventListener('input',e=>{if(e.target.id==='mx-q'){F.txt=e.target.value.trim().toLowerCase();refresh()}});
+ M.addEventListener('change',e=>{const i=e.target;if(i.id==='mx-rc'){readCh=+i.value;reading();window.scrollTo(0,0);return}if(i.dataset.rt!==undefined){const t=+i.dataset.rt;i.checked?readTp.add(t):readTp.delete(t);reading();return}if(!i.dataset.f)return;setF(i.dataset.f,i.dataset.v,i.checked);if(V.dataset.mx==='read'){saveF();reading()}else refresh()});
+ let rqT=0;M.addEventListener('input',e=>{if(e.target.id==='mx-q'){F.txt=e.target.value.trim().toLowerCase();refresh()}else if(e.target.id==='mx-rq'){F.txt=e.target.value.trim().toLowerCase();clearTimeout(rqT);rqT=setTimeout(()=>{saveF();reading()},180)}});
  addEventListener('keydown',e=>{if(!sess||document.body.classList.contains('mx-live')===false||/INPUT|TEXTAREA/.test(e.target.tagName))return;
   const q=BY[sess.ids[sess.i]],rv=sess.review,exam=sess.mode==='exam'&&!rv,k=e.key;
   if(k==='ArrowRight'){step(1)}else if(k==='ArrowLeft'){step(-1)}
