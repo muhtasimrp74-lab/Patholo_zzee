@@ -3,7 +3,8 @@
 Sections become collapsible panels; KEY CONCEPTS / Morphology / Clinical / Pathogenesis get their own panel styles
 (see tools/textbook.css, tools/textbook.js). Run: python3 tools/textbook_build.py  (then bump VERSION in sw.js)"""
 import json, glob, os, re, html, sys, importlib
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'curate'))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'curate')); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from textbook_notes import notes
 HERE = os.path.dirname(os.path.abspath(__file__)); SRC = os.path.join(HERE, 'textbook_src'); OUT = os.path.join(HERE, '..', 'textbook')
 MINOR = {'and', 'of', 'the', 'in', 'to', 'for', 'with', 'a', 'an', 'on', 'or', 'by', 'at', 'as', 'from'}
 IC_FIG = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg>'
@@ -72,10 +73,10 @@ def render(blocks):
         if t in ('li', 'ol'):
             tag = 'ul' if t == 'li' else 'ol'
             if st['mode'] != tag: close(); add('<ul>' if tag == 'ul' else '<ol start="%d">' % b.get('n', 1)); st['mode'] = tag
-            add('<li>%s</li>' % inline(b['md'])); continue
+            add('<li>%s</li>' % notes(inline(b['md']))); continue
         close()
         if t == 'h': add('<h3>%s%s</h3>' % (pgm(b), inline(b['md'])))
-        elif t == 'p': add('<p>%s%s</p>' % (pgm(b), inline(b['md'])))
+        elif t == 'p': add('<p>%s%s</p>' % (pgm(b), notes(inline(b['md']))))
         elif t == 'fig':
             nfig += 1; m = re.match(r'\*\*(Fig\.?\s*[\w.]+)\*\*\s*(.*)', b['md'], re.S)
             head, body = (m.group(1).replace('Fig.', 'Fig').replace('Fig ', 'Figure '), m.group(2)) if m else ('Figure', b['md'])
@@ -123,12 +124,12 @@ def _tbl(n, title, rows, note):
     return '<div class="tbt"><div class="tbt-h">%s<span class="tbt-no">Table %s</span><span class="tbt-ti">%s</span></div>%s</div>' % (IC_TAB, n, inline(title), body)
 def _fig(n, c):
     return '<figure class="tbf"><div class="tbf-h">%s<b>Figure %s</b></div><figcaption>%s</figcaption></figure>' % (IC_FIG, n, inline(c))
-def _list(tag, items): return '<%s>%s</%s>' % (tag, ''.join('<li>%s</li>' % inline(x) for x in items), tag)
+def _list(tag, items, mk=True): return '<%s>%s</%s>' % (tag, ''.join('<li>%s</li>' % notes(inline(x), mk) for x in items), tag)
 def rnodes(nodes, st):
     o = []
     for nd in nodes:
         k = nd[0]
-        if k == 'p': o.append('<p>%s</p>' % inline(nd[1]))
+        if k == 'p': o.append('<p>%s</p>' % notes(inline(nd[1])))
         elif k in ('h3', 'h4', 'h5'):
             a = ''
             if k in ('h3', 'h4'): st['a'] += 1; a = ' data-a="a%d"' % st['a']; st['toc'].append(('a%d' % st['a'], k, nd[1]))
@@ -141,7 +142,7 @@ def rnodes(nodes, st):
         elif k == 'sum': o.append('<aside class="tbsum"><div class="tbsum-t">Chapter summary</div><p>%s</p></aside>' % inline(nd[1]))
         elif k == 'refs': o.append('<ol class="tbrefs">%s</ol>' % ''.join('<li>%s</li>' % inline(x) for x in nd[1]))
         elif k == 'kc':
-            g = ''.join(('<h4>%s</h4>' % inline(h) if h else '') + _list('ul', its) for h, its in nd[1])
+            g = ''.join(('<h4>%s</h4>' % inline(h) if h else '') + _list('ul', its, False) for h, its in nd[1])
             o.append('<aside class="tbkc"><div class="tbkc-t">%s<span>Key concepts</span></div>%s</aside>' % (IC_KEY, g))
     return '\n'.join(o)
 def build_curated(mod):
