@@ -94,7 +94,7 @@ function apply(){
  $q('qnone').hidden=!!hit.length;
  $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
  $q('qact').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
- const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n}
+ const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;applyQA(hit,n)}
 function run(){apply();panel()}
 function set(k,v){
  const tg=(a,x)=>{const i=a.indexOf(String(x));i<0?a.push(String(x)):a.splice(i,1)};
@@ -110,6 +110,28 @@ function set(k,v){
 qf.addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b||b.disabled)return;if(b.dataset.k==='close')return openF(false);set(b.dataset.k,b.dataset.v)});
 $q('qact').addEventListener('click',e=>{const b=e.target.closest('[data-x]');if(!b)return;const k=b.dataset.k,v=b.dataset.v;if(ON.includes(k))F[k]=F[k].filter(x=>x!==String(v));else F[k]=v;run()});
 $q('qclr').onclick=()=>set('reset');
+
+/* ---------- Q&A tab shares the same filters ---------- */
+const A=typeof QAV!=='undefined'?QAV:null;
+if(A){const main=document.createElement('div');main.className='qmain';while(A.firstChild)main.appendChild(A.firstChild);
+ const wrap=document.createElement('div');wrap.className='qwrap';wrap.id='qawrap';wrap.append(main);A.append(wrap);
+ main.insertAdjacentHTML('afterbegin','<div class="qtools"><button class="qb qfbtn" id="qfopen2" type="button" aria-expanded="false" aria-controls="qf">'+IC.filter+'<span>Filters</span><i id="qfn2" hidden></i></button></div><div class="qsum"><span id="qsum2" aria-live="polite"></span><span id="qact2" class="qact"></span></div><div class="empty" id="qanone" hidden><b>No chapter matches</b><p>Nothing fits all the filters you have set. Remove one or clear them all.</p><button class="pill" id="qclr2" type="button">Clear all filters</button></div>');
+ document.body.appendChild($q('qscrim'));}
+function applyQA(hit,n){if(!A)return;
+ const per={};hit.forEach(d=>per[d[2]]=(per[d[2]]||0)+1);const act=n>0;let shown=0;
+ A.querySelectorAll('a.topic').forEach(a=>{const t=(a.getAttribute('href')||'').replace('#/',''),c=a.querySelector('.cnt');
+  if(c&&!c.dataset.o)c.dataset.o=c.textContent;const tot=DATA.filter(d=>d[2]===t).length,k=per[t]||0;
+  a.hidden=act&&!k;if(!a.hidden)shown++;if(c)c.textContent=act?k+' of '+tot+' questions':c.dataset.o});
+ A.querySelectorAll('section.part').forEach(sec=>{const cards=sec.querySelectorAll('a.topic');sec.hidden=act&&(!cards.length||![...cards].some(a=>!a.hidden))});
+ $q('qanone').hidden=!(act&&!shown);
+ $q('qsum2').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
+ $q('qact2').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
+ const b=$q('qfn2');b.hidden=!n;b.textContent=n}
+function place(){if(!A)return;const into=/^#\/qa/.test(location.hash)?$q('qawrap'):QV.querySelector('.qwrap');if(qf.parentNode!==into)into.prepend(qf)}
+if(A){$q('qact2').addEventListener('click',e=>{const b=e.target.closest('[data-x]');if(!b)return;const k=b.dataset.k,v=b.dataset.v;if(ON.includes(k))F[k]=F[k].filter(x=>x!==String(v));else F[k]=v;run()});
+ $q('qclr2').onclick=()=>set('reset');
+ $q('qfopen2').onclick=()=>openF(!document.body.classList.contains('qf-open'));
+ addEventListener('hashchange',()=>{place();if(/^#\/qa/.test(location.hash))run()});place()}
 
 /* drawer (tablet) / bottom sheet (phone) / docked sidebar (wide) */
 function openF(o){document.body.classList.toggle('qf-open',o);$q('qfopen').setAttribute('aria-expanded',o);if(o)setTimeout(()=>{const f=qf.querySelector('.qf-x');f&&f.offsetParent&&f.focus()},60);else if(document.activeElement&&qf.contains(document.activeElement))$q('qfopen').focus()}
