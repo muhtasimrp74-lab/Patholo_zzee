@@ -26,11 +26,11 @@ def xm_html(stars, refs, tag='span'):
     for tok in [t.strip() for t in (refs or '').split(',') if t.strip()]:
         m = re.match(r'^([A-Za-z]+)-(.+)$', tok)
         if m:
-            if m.group(1) != last:
-                parts.append('<span class="ex-k">%s</span>' % e(m.group(1)))
-                last = m.group(1)
-            tok = m.group(2)
-        parts.append('<span class="ex-y">%s</span>' % e(tok))
+            last, tok = m.group(1), m.group(2)
+        if last:
+            parts.append('<span class="ex-y"><b class="ex-p">%s</b>%s</span>' % (e(last), e(tok)))
+        else:
+            parts.append('<span class="ex-y">%s</span>' % e(tok))
     return '<%s class="xm">%s</%s>' % (tag, ''.join(parts), tag) if parts else ''
 _pts = []
 for _k in range(10):
