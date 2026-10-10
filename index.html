@@ -673,6 +673,19 @@ section.part[data-part=hm] .topic .no{color:var(--rose)}
 .s.r,.nh-leg i.r{background:var(--b500);border-color:var(--b500)}
 .s.d,.nh-leg i.d{background:var(--gold);border-color:var(--gold)}
 .pill:focus-visible,.blk:focus-visible{outline-color:var(--b300)!important}
+
+/* ===== Opaque dropdowns/popovers (glass made them unreadable) + topic filter chips ===== */
+html .dp,html #nhr,html .nh-toc,html .qddl{background:var(--panel);-webkit-backdrop-filter:none;backdrop-filter:none;border-color:var(--line2);box-shadow:var(--sh2)}
+html #tools{background:color-mix(in srgb,var(--panel) 88%,transparent)}
+.tf-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;max-width:var(--w);margin:14px auto 0;padding:0 max(var(--gut),env(safe-area-inset-left,0px))}
+.tf-c{height:34px;padding:0 14px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--navy);font:500 .82rem var(--body);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.tf-c:hover{border-color:var(--b400)}
+.tf-c[aria-pressed=true]{background:linear-gradient(180deg,var(--b500),var(--b700));border-color:var(--b700);color:#fff}
+.tf-n{font:500 .8rem var(--body);color:var(--muted);margin-left:4px}
+.tf-empty{max-width:var(--w);margin:14px auto;padding:0 max(var(--gut),env(safe-area-inset-left,0px));color:var(--muted)}
+.tf-hide{display:none!important}
+@media(max-width:640px){.tf-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.tf-c{flex:none}}
+@media print{.tf-row,.tf-empty{display:none!important}}
 .qsub{margin:14px 4px 6px;font:700 .74rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--lbl)}
 .qsub[hidden]{display:none}
 .code:empty{display:none}
@@ -1484,6 +1497,27 @@ wrap.addEventListener('input',e=>{if(e.target.id!=='nhq')return;const v=e.target
  const m=ORDER.filter(d=>d[1].toLowerCase().includes(v)||d[4].toLowerCase().includes(v)).slice(0,8);
  r.innerHTML=m.length?m.map(d=>'<li><a href="#/'+d[2]+'/'+d[3]+'">'+esc2(d[1])+'<small>'+esc2(d[4])+'</small></a></li>').join(''):'<li class="none">No match</li>';r.hidden=false});
 window.nhRender=render;render();
+})();
+
+/* ===== filter chips on every topic page ===== */
+(function(){
+const FILT=[['all','All'],['imp','★ Important'],['fav','Favourites'],['bm','Bookmarked'],['note','With note'],['nl','Not learned'],['l','Learned']];
+const has=(c,id)=>Array.isArray(c)?c.includes(id):!!(c&&c[id]);
+function test(k,card){const id=card.id;
+ if(k==='imp')return !!card.querySelector('.xm')&&/⭐/.test(card.querySelector('.xm').textContent);
+ if(k==='fav')return has(S.fav,id);if(k==='bm')return has(S.bm,id);if(k==='note')return has(S.notes,id)&&String(S.notes[id]).trim()!=='';
+ if(k==='l')return has(S.learned,id);if(k==='nl')return !has(S.learned,id);return true}
+function apply(v){const k=v.dataset.tf||'all';let n=0;
+ v.querySelectorAll('article.card[id^=q]').forEach(c=>{const ok=test(k,c);c.classList.toggle('tf-hide',!ok);if(ok)n++});
+ const m=v.querySelector('.tf-n');if(m)m.textContent=k==='all'?'':n+' shown';
+ let e=v.querySelector('.tf-empty');if(k!=='all'&&!n){if(!e){e=document.createElement('p');e.className='tf-empty';e.textContent='No questions match this filter.';v.querySelector('.tf-row').after(e)}}else if(e)e.remove()}
+document.querySelectorAll('.view').forEach(v=>{const bar=v.querySelector('.bar');if(!bar||!v.querySelector('article.card[id^=q]'))return;
+ const row=document.createElement('div');row.className='tf-row';row.setAttribute('role','group');row.setAttribute('aria-label','Filter questions');
+ row.innerHTML=FILT.map((f,i)=>'<button type="button" class="tf-c" data-k="'+f[0]+'" aria-pressed="'+(i===0)+'">'+f[1]+'</button>').join('')+'<span class="tf-n"></span>';
+ bar.after(row);
+ row.addEventListener('click',e=>{const b=e.target.closest('.tf-c');if(!b)return;v.dataset.tf=b.dataset.k;row.querySelectorAll('.tf-c').forEach(x=>x.setAttribute('aria-pressed',x===b));apply(v)});
+ v.addEventListener('click',()=>setTimeout(()=>{if(v.dataset.tf&&v.dataset.tf!=='all')apply(v)},60));
+});
 })();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
