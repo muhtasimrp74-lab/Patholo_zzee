@@ -1359,6 +1359,7 @@ body.mx-live #v-mcqs .hero{display:none}
 .mx-bars i{height:6px}.mx-bars em{font-style:normal;color:var(--muted);text-align:right}
 @media(max-width:560px){.mx-bars>div{grid-template-columns:minmax(0,1fr) 60px 40px}}
 /* reading */
+.mx-sel{flex:1 1 220px;min-width:0;min-height:36px;padding:0 10px;border-radius:11px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:600 .82rem var(--body)}
 .mx-rbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;background:var(--bg);border-bottom:1px solid var(--line);margin-bottom:6px}
 .mx-rbar>span{flex:1;color:var(--muted);font:600 .84rem var(--body)}
 .mx-rt{margin:26px 4px 8px;font:500 1.35rem/1.2 var(--disp);color:var(--navy)}.mx-rt small{display:block;margin-top:3px;font:600 .74rem var(--body);color:var(--lbl);letter-spacing:.05em;text-transform:uppercase}
@@ -2092,13 +2093,14 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
  const stOf=q=>{const p=P()[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(ST().bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');return a};
 
  /* ---------- filters ---------- */
- const emptyF=()=>({tp:new Set(),ty:new Set(),src:new Set(),pp:new Set(),st:new Set(),txt:''});
+ const emptyF=()=>({tp:new Set(),ty:new Set(),src:new Set(),tg:new Set(),pp:new Set(),st:new Set(),txt:''});
  let F=emptyF(),O={n:20,shuffle:true,mode:'practice',tpq:0};
- try{const f=ST().f;if(f){F.tp=new Set(f.tp);F.ty=new Set(f.ty);F.src=new Set(f.src);F.pp=new Set(f.pp);F.st=new Set(f.st);F.txt=f.txt||''}Object.assign(O,ST().o)}catch(e){}
- const saveF=()=>{const m=ST();m.f={tp:[...F.tp],ty:[...F.ty],src:[...F.src],pp:[...F.pp],st:[...F.st],txt:F.txt};m.o=O;save()};
+ try{const f=ST().f;if(f){F.tp=new Set(f.tp);F.ty=new Set(f.ty);F.src=new Set(f.src);F.tg=new Set(f.tg||[]);F.pp=new Set(f.pp);F.st=new Set(f.st);F.txt=f.txt||''}Object.assign(O,ST().o)}catch(e){}
+ const saveF=()=>{const m=ST();m.f={tp:[...F.tp],ty:[...F.ty],src:[...F.src],tg:[...F.tg],pp:[...F.pp],st:[...F.st],txt:F.txt};m.o=O;save()};
  const TXT=Q.map(q=>(q.q+' '+q.o.join(' ')+' '+tn(q)).toLowerCase());
- const FKEYS=['tp','ty','src','pp','st'];
- const hit=(q,f,v)=>f==='tp'?tk(q)===v:f==='ty'?q.y===+v:f==='src'?q.s===v:f==='pp'?(q.g||[]).includes(v):stOf(q).includes(v);
+ const FKEYS=['tp','ty','src','tg','pp','st'];
+ const isDU=q=>(q.g||[]).some(g=>g.startsWith('DU-')),tagOf=q=>q.s==='N'?'rel':isDU(q)?'du':'oth';
+ const hit=(q,f,v)=>f==='tp'?tk(q)===v:f==='ty'?q.y===+v:f==='src'?q.s===v:f==='tg'?tagOf(q)===v:f==='pp'?(q.g||[]).includes(v):stOf(q).includes(v);
  const pass=(q,i,skip)=>{for(const f of FKEYS){if(f===skip||!F[f].size)continue;let m=false;for(const v of F[f])if(hit(q,f,f==='ty'?+v:v)){m=true;break}if(!m)return false}
   return !F.txt||TXT[i].includes(F.txt)};
  const matches=()=>Q.filter((q,i)=>pass(q,i));
@@ -2235,6 +2237,7 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    <label class="mx-search"><input type="search" id="mx-q" placeholder="Search question text" value="${E(F.txt)}" autocomplete="off"></label>
    <div class="mx-fs"><p class="mx-fh">Chapter and topic</p><div class="mx-chl">${CH.map((c,ci)=>`<div class="mx-chd2${[...F.tp].some(k=>k.split('.')[0]==ci)?' open':''}"><div class="mx-chh"><label class="mx-f ch"><input type="checkbox" data-f="ch" data-v="${ci}"><span>${E(c[0])}</span><em></em></label><button type="button" class="mx-tg" data-a="tg" aria-label="Show topics in ${E(c[0])}" aria-expanded="false">${ic.go}</button></div><div class="mx-tpl">${c[1].map((t,ti)=>chip('tp',ci+'.'+ti,E(t))).join('')}</div></div>`).join('')}</div></div>
    <div class="mx-fs"><p class="mx-fh">Question type</p><div class="mx-fc">${chip('ty','0','SBA')}${chip('ty','1','True / False')}</div></div>
+   <div class="mx-fs"><p class="mx-fh">Relevant or DU</p><div class="mx-fc">${chip('tg','rel','Relevant')}${chip('tg','du','DU')}${chip('tg','oth','Other past papers (May / Nov)')}</div></div>
    <div class="mx-fs"><p class="mx-fh">Source</p><div class="mx-fc">${chip('src','P','Past papers')}${chip('src','N','Practice bank')}</div></div>
    <div class="mx-fs"><p class="mx-fh">Past paper</p><div class="mx-fc">${PAPERS.map(g=>chip('pp',g,E(g))).join('')}</div></div>
    <div class="mx-fs"><p class="mx-fh">Your progress</p><div class="mx-fc">${Object.keys(stL).map(k=>chip('st',k,stL[k])).join('')}</div></div></div>
@@ -2248,7 +2251,7 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
   refresh();window.scrollTo(0,0)}
  function refresh(){
   const L0={};FKEYS.forEach(f=>L0[f]=Q.filter((q,i)=>pass(q,i,f)));
-  const tally=(f)=>{const c={};L0[f].forEach(q=>{if(f==='tp')c[tk(q)]=(c[tk(q)]||0)+1;else if(f==='ty')c[q.y]=(c[q.y]||0)+1;else if(f==='src')c[q.s]=(c[q.s]||0)+1;else if(f==='pp')(q.g||[]).forEach(g=>c[g]=(c[g]||0)+1);else stOf(q).forEach(g=>c[g]=(c[g]||0)+1)});return c};
+  const tally=(f)=>{const c={};L0[f].forEach(q=>{if(f==='tp')c[tk(q)]=(c[tk(q)]||0)+1;else if(f==='ty')c[q.y]=(c[q.y]||0)+1;else if(f==='src')c[q.s]=(c[q.s]||0)+1;else if(f==='tg')c[tagOf(q)]=(c[tagOf(q)]||0)+1;else if(f==='pp')(q.g||[]).forEach(g=>c[g]=(c[g]||0)+1);else stOf(q).forEach(g=>c[g]=(c[g]||0)+1)});return c};
   const T={};FKEYS.forEach(f=>T[f]=tally(f));
   M.querySelectorAll('input[data-f]').forEach(i=>{const f=i.dataset.f,v=i.dataset.v;let n,on,part=false;
    if(f==='ch'){const keys=CH[v][1].map((_,t)=>v+'.'+t);n=keys.reduce((a,k)=>a+(T.tp[k]||0),0);const k=keys.filter(x=>F.tp.has(x)).length;on=k===keys.length;part=k>0&&!on}
@@ -2262,13 +2265,22 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
   M.querySelectorAll('.mx-go button').forEach(b=>b.disabled=!hits.length);saveF()}
 
  /* ---------- reading mode ---------- */
+ let readCh=-1;
  function reading(){
-  const hits=matches(),sh=hits.slice(0,readN);let last=-1,out='';
+  const all=matches(),cnt={};all.forEach(q=>cnt[q.c]=(cnt[q.c]||0)+1);
+  const present=Object.keys(cnt).map(Number).sort((x,y)=>x-y);
+  if(readCh!==-2&&!present.includes(readCh))readCh=present.length?present[0]:-2;
+  const whole=readCh===-2&&present.length>0||false;
+  const hits=readCh>=0?all.filter(q=>q.c===readCh):all,sh=readCh>=0?hits:hits.slice(0,readN);let last=-1,out='';
   sh.forEach((q,i)=>{const g=tk(q);if(g!==last){last=g;out+=`<h3 class="mx-rt">${E(CH[q.c][0])}<small>${E(tn(q))}</small></h3>`}
    out+=`<article class="mx-card read" data-h="${q.h}"><div class="mx-qn">${i+1}</div>${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3><div class="mx-opts">${body(q,{fb:readOpt.show,lock:true,notes:readOpt.notes,st:true})}</div>${readOpt.show?bareAns(q):''}</article>`});
-  M.innerHTML=`<div class="mx-rbar"><button type="button" class="mx-link" data-a="custom">‹ Filters</button><span>${hits.length} questions</span><div class="mx-seg sm"><button type="button" data-a="rshow" aria-pressed="${readOpt.show}">Answers</button><button type="button" data-a="rnotes" aria-pressed="${readOpt.notes}">Notes</button></div><button type="button" class="mx-btn sm" data-a="goprac">Practise these</button></div>
-   ${hits.length?out:'<div class="mempty"><b>No questions match</b>Change the filters to see more.</div>'}
-   ${hits.length>readN?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="more">Show ${Math.min(30,hits.length-readN)} more</button><button type="button" class="mx-link" data-a="moreall">Show all ${hits.length}</button></div>`:''}`}
+  const pi=present.indexOf(readCh),pv=pi>0?present[pi-1]:null,nx=pi>=0&&pi<present.length-1?present[pi+1]:null;
+  const sel=`<select class="mx-sel" id="mx-rc" aria-label="Chapter"><option value="-2" ${readCh===-2?'selected':''}>All chapters (${all.length})</option>${present.map(c=>`<option value="${c}" ${c===readCh?'selected':''}>${c+1}. ${E(CH[c][0])} (${cnt[c]})</option>`).join('')}</select>`;
+  const pager=readCh>=0?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="rch" data-c="${pv}" ${pv===null?'disabled':''}>‹ Previous chapter</button><button type="button" class="mx-btn" data-a="rch" data-c="${nx}" ${nx===null?'disabled':''}>Next chapter ›</button></div>`:'';
+  M.innerHTML=`<div class="mx-rbar"><button type="button" class="mx-link" data-a="custom">‹ Filters</button>${sel}<div class="mx-seg sm"><button type="button" data-a="rshow" aria-pressed="${readOpt.show}">Answers</button><button type="button" data-a="rnotes" aria-pressed="${readOpt.notes}">Notes</button></div><button type="button" class="mx-btn sm" data-a="goprac">Practise ${readCh>=0?'this chapter':'these'}</button></div>
+   <p class="mx-note">${hits.length} questions${readCh>=0?' in this chapter':''}</p>
+   ${all.length?out:'<div class="mempty"><b>No questions match</b>Change the filters to see more.</div>'}
+   ${readCh<0&&hits.length>readN?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="more">Show ${Math.min(30,hits.length-readN)} more</button><button type="button" class="mx-link" data-a="moreall">Show all ${hits.length}</button></div>`:''}${pager}`}
 
  /* ---------- events ---------- */
  function setF(f,v,on){if(f==='ch'){CH[v][1].forEach((_,t)=>{const k=v+'.'+t;on?F.tp.add(k):F.tp.delete(k)})}else{const x=f==='ty'?+v:v;on?F[f].add(x):F[f].delete(x)}}
@@ -2283,21 +2295,22 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    case 'quick':reset();start(shuf(Q.filter(q=>!(P()[q.h]&&P()[q.h].r)).map(q=>q.h)).slice(0,10),{scope:'Quick 10'});break;
    case 'custom':nav('custom');break;
    case 'mock':{const ids=shuf(Q.filter(q=>!q.y).map(q=>q.h)).slice(0,5).concat(shuf(Q.filter(q=>q.y).map(q=>q.h)).slice(0,15));start(shuf(ids),{mode:'exam',limit:1800,scope:'Mock paper'});break}
-   case 'read':reset();readN=30;saveF();nav('read');break;
+   case 'read':reset();readN=30;readCh=-1;saveF();nav('read');break;
    case 'mist':start(shuf(Q.filter(q=>{const x=P()[q.h];return x&&x.n&&!x.r}).map(q=>q.h)),{scope:'Missed questions'});break;
    case 'saved':start(shuf(ST().bm.filter(h=>BY[h])),{scope:'Bookmarks'});break;
    case 'resume':sess=ST().sess;if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
    case 'topic':start(topicIds(+b.dataset.c,+b.dataset.t).slice(0,25),{scope:CH[b.dataset.c][1][b.dataset.t]});break;
    case 'chap':start(topicIds(+b.dataset.c).slice(0,25),{scope:CH[b.dataset.c][0]});break;
-   case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;nav('read');break;
-   case 'chapread':reset();setF('ch',b.dataset.c,true);saveF();readN=30;nav('read');break;
+   case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;readCh=-1;nav('read');break;
+   case 'chapread':reset();setF('ch',b.dataset.c,true);saveF();readN=30;readCh=+b.dataset.c;nav('read');break;
    case 'paper':{const g=b.dataset.g;start(Q.filter(q=>(q.g||[]).includes(g)).map(q=>q.h),{mode:'exam',limit:1800,scope:'Paper '+g});break}
    case 'resetp':if(confirm('Clear all MCQ answers, bookmarks and history on this device?')){const m=ST();m.p={};m.bm=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
    case 'tg':{const d=b.closest('.mx-chd2');b.setAttribute('aria-expanded',d.classList.toggle('open'));break}
    case 'clear':reset();document.getElementById('mx-q').value='';refresh();break;
    case 'gostart':{const ids=pickSet();O.mode=O.mode||'practice';const n=ids.length;saveF();start(ids,{mode:O.mode,limit:lim(n),scope:'Custom practice'});break}
-   case 'goread':readN=30;nav('read');break;
-   case 'goprac':{const ids=matches().map(q=>q.h);start(O.shuffle?shuf(ids):ids,{scope:'Custom practice'});break}
+   case 'goread':readN=30;readCh=-1;nav('read');break;
+   case 'goprac':{const ids=matches().filter(q=>readCh<0||q.c===readCh).map(q=>q.h);start(O.shuffle?shuf(ids):ids,{scope:'Custom practice'});break}
+   case 'rch':if(b.dataset.c!=='null'){readCh=+b.dataset.c;reading();window.scrollTo(0,0)}break;
    case 'more':readN+=30;reading();break;
    case 'moreall':readN=1e9;reading();break;
    case 'rshow':readOpt.show=!readOpt.show;reading();break;
@@ -2317,7 +2330,7 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    case 'rev':review(b.dataset.i);break;
    case 'retry':{const l=ST().last;const ids=l.ids.filter(h=>!ok(BY[h],l.ans[h]));start(shuf(ids),{scope:'Retry missed'});break}
    case 'home':nav();break}});
- M.addEventListener('change',e=>{const i=e.target;if(!i.dataset.f)return;setF(i.dataset.f,i.dataset.v,i.checked);refresh()});
+ M.addEventListener('change',e=>{const i=e.target;if(i.id==='mx-rc'){readCh=+i.value;reading();window.scrollTo(0,0);return}if(!i.dataset.f)return;setF(i.dataset.f,i.dataset.v,i.checked);refresh()});
  M.addEventListener('input',e=>{if(e.target.id==='mx-q'){F.txt=e.target.value.trim().toLowerCase();refresh()}});
  addEventListener('keydown',e=>{if(!sess||document.body.classList.contains('mx-live')===false||/INPUT|TEXTAREA/.test(e.target.tagName))return;
   const q=BY[sess.ids[sess.i]],rv=sess.review,exam=sess.mode==='exam'&&!rv,k=e.key;
