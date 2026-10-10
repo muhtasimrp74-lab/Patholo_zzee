@@ -18,6 +18,9 @@ Netlify also works: import the repo, no build command, publish directory `.` (`_
 The 15 systemic topics live in `tools/src/index.base.html`; General Pathology (and any new topics) live in `tools/content.py`. Styling is layered: base CSS in `index.base.html`, then `tools/theme.css`, then `tools/premium.css` (palette, fonts, glass; edit the tokens at the top of `premium.css` to retheme). After editing, run `python3 tools/build.py` to regenerate `index.html`. When you change any site file, bump `VERSION` in `sw.js` so installed copies refresh.
 
 
+## Textbook
+The **Textbook** tab (bottom bar) reads the cleaned Robbins chapters from `textbook/` (loaded on demand, cached for offline). Sources are in `tools/textbook_src/chNN.json`; regenerate with `python3 tools/textbook_build.py`, then bump `VERSION` in `sw.js`.
+
 ## Fonts
 All self-hosted in `fonts/` (works offline): DM Serif Display (headings), Newsreader (question text), Hanken Grotesk (body), Caveat (handwriting accents), Inter Greek (Greek letters).
 
