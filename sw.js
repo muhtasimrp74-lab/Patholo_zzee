@@ -5,7 +5,7 @@
    - Your bookmarks, notes and progress are stored by the page itself (localStorage);
      this file never touches them.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v9';
+const VERSION = 'pathviva-zzee-v10';
 
 const CORE = [
   'index.html',
@@ -54,6 +54,20 @@ self.addEventListener('fetch', event => {
 
   const isPage = req.mode === 'navigate';
   const key = isPage ? 'index.html' : req;
+  if (isPage) {  // pages: newest copy first (so a new deploy shows up straight away); saved copy only when offline
+    event.respondWith((async () => {
+      const cache = await caches.open(VERSION);
+      try {
+        const res = await fetch(req, { cache: 'no-cache' });
+        if (res && res.status === 200 && res.type === 'basic') cache.put(key, res.clone()).catch(() => {});
+        return res;
+      } catch (e) {
+        const saved = await cache.match(key, { ignoreSearch: true });
+        return saved || new Response('You are offline and this file has not been saved yet.', { status: 503, statusText: 'Offline', headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+      }
+    })());
+    return;
+  }
 
   event.respondWith((async () => {
     const cache = await caches.open(VERSION);

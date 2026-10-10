@@ -39,14 +39,15 @@ QV.innerHTML='<div class="qwrap"><aside id="qf" aria-label="Filters"></aside><di
 const $q=id=>document.getElementById(id),qf=$q('qf');
 
 /* ---------- state ---------- */
-const F={show:'all',type:'',part:'',letter:'',card:'',stars:'',year:'',sort:'book',topic:'',q:''};
+const F={show:[],type:[],part:[],letter:[],card:[],stars:[],year:[],sort:'book',topic:[],q:''};
+const has=(k,v)=>F[k].includes(String(v)),ON=['show','type','part','letter','card','stars','year','topic'];
 let FO=false,DD=false;
 const STAT={all:()=>true,fav:d=>S.fav.includes(d[3]),bm:d=>S.bm.includes(d[3]),note:d=>!!S.notes[d[3]],done:d=>S.learned.includes(d[3]),todo:d=>!S.learned.includes(d[3])};
 const txt=d=>{const c=document.getElementById(d[3]);return c&&c._t?c._t:(d[1]+' '+d[4]+' '+d[0]).toLowerCase()};
-const pass=(d,skip)=>(skip==='show'||STAT[F.show](d))&&(skip==='type'||!F.type||ty(d)===F.type)&&(skip==='part'||!F.part||pk(d)===F.part)
- &&(skip==='card'||((!F.letter||letter(d)===F.letter)&&(!F.card||d[0]===F.card)))&&(skip==='stars'||!F.stars||st(d)==F.stars)&&(skip==='year'||!F.year||yrs(d).includes(+F.year))&&(skip==='topic'||!F.topic||String(chOf(d))===F.topic)&&(!F.q||txt(d).includes(F.q));
+const pass=(d,skip)=>(skip==='show'||!F.show.length||F.show.some(v=>STAT[v](d)))&&(skip==='type'||!F.type.length||F.type.includes(ty(d)))&&(skip==='part'||!F.part.length||F.part.includes(pk(d)))
+ &&(skip==='card'||((!F.letter.length||F.letter.includes(letter(d)))&&(!F.card.length||F.card.includes(d[0]))))&&(skip==='stars'||!F.stars.length||F.stars.includes(String(st(d))))&&(skip==='year'||!F.year.length||yrs(d).some(y=>F.year.includes(String(y))))&&(skip==='topic'||!F.topic.length||F.topic.includes(String(chOf(d))))&&(!F.q||txt(d).includes(F.q));
 const cnt=(fn,skip)=>DATA.filter(d=>pass(d,skip)&&fn(d)).length;
-const nAct=()=>(F.show!=='all')+!!F.type+!!F.part+!!F.letter+!!F.card+!!F.stars+!!F.year+(F.sort!=='book')+!!F.topic;
+const nAct=()=>ON.reduce((a,k)=>a+F[k].length,0)+(F.sort!=='book');
 const SHOW=[['all','All'],['fav','Favourites'],['bm','Bookmarked'],['note','With note'],['done','Learned'],['todo','Not learned']];
 const tname=t=>CHI[t]?CHI[t][2]+' \u00b7 '+CHI[t][1]:t;
 
@@ -55,31 +56,31 @@ const chip=(k,v,lb,on,c)=>`<button type="button" class="qfc${on?' on':''}${c===0
 function panel(){
  const a=document.activeElement,keep=a&&qf.contains(a)&&a.dataset.k?[a.dataset.k,a.dataset.v]:null;
  const n=nAct()+!!F.q,tot=DATA.filter(d=>pass(d)).length;
- const codes=CODES.filter(c=>!F.letter||cardOf(c)[0]===F.letter),cardCnt=c=>cnt(d=>d[0]===c,'card');
+ const codes=CODES.filter(c=>!F.letter.length||F.letter.includes(cardOf(c)[0])),cardCnt=c=>cnt(d=>d[0]===c,'card');
  qf.innerHTML=`<div class="qf-head"><b>Filters</b><span class="sp"></span><button type="button" class="qf-clr" data-k="reset"${n?'':' disabled'}>${IC.reset}<span>Clear all</span>${n?`<i>${n}</i>`:''}</button><button type="button" class="qf-x" data-k="close" aria-label="Close filters">${IC.x}</button></div><div class="qf-body">`
- +`<h4>Status</h4><div class="qfr">${SHOW.map(([v,l])=>chip('show',v,l,F.show===v,cnt(STAT[v],'show'))).join('')}</div>`
- +`<h4>Type</h4><div class="qseg">${[['V','Viva'],['W','Written']].map(([v,l])=>`<button type="button" class="${F.type===v?'on':''}" data-k="type" data-v="${v}" aria-pressed="${F.type===v}">${l}<i>${cnt(d=>ty(d)===v,'type')}</i></button>`).join('')}</div>`
- +(HASEX?`<h4>Importance</h4><div class="qfr">${[1,2,3].map(n=>chip('stars',n,'\u2b50'.repeat(n),F.stars==n,cnt(d=>st(d)===n,'stars'))).join('')}</div>`
- +`<h4>Exam year</h4><div class="qfr">${YEARS.map(y=>chip('year',y,y,F.year==y,cnt(d=>yrs(d).includes(y),'year'))).join('')}</div>`:'')
- +`<h4>Section</h4><div class="qfr">${PARTS.map(p=>chip('part',p[0],p[1],F.part===p[0],cnt(d=>pk(d)===p[0],'part'))).join('')}</div>`
- +`<h4>Card</h4><div class="qfr">${LETTERS.map(l=>chip('letter',l,l+'-box',F.letter===l,cnt(d=>letter(d)===l,'card'))).join('')}</div>`
- +`<h4>Specific card</h4><div class="qdd"><button type="button" class="qddb${DD?' o':''}${F.card?' has':''}" data-k="dd" aria-expanded="${DD}">${F.card?esc(F.card):'Any card'}${chev}</button>${DD?`<div class="qddl"><button type="button" class="${F.card?'':'on'}" data-k="card" data-v="">Any card</button>${codes.map(c=>`<button type="button" class="${F.card===c?'on':''}" data-k="card" data-v="${c}">${c}<span>${cardCnt(c)}</span></button>`).join('')}</div>`:''}</div>`
+ +`<h4>Status</h4><div class="qfr">${SHOW.map(([v,l])=>chip('show',v,l,v==='all'?!F.show.length:has('show',v),cnt(STAT[v],'show'))).join('')}</div>`
+ +`<h4>Type</h4><div class="qseg">${[['V','Viva'],['W','Written']].map(([v,l])=>`<button type="button" class="${has('type',v)?'on':''}" data-k="type" data-v="${v}" aria-pressed="${has('type',v)}">${l}<i>${cnt(d=>ty(d)===v,'type')}</i></button>`).join('')}</div>`
+ +(HASEX?`<h4>Importance</h4><div class="qfr">${[1,2,3].map(n=>chip('stars',n,'\u2b50'.repeat(n),has('stars',n),cnt(d=>st(d)===n,'stars'))).join('')}</div>`
+ +`<h4>Exam year</h4><div class="qfr">${YEARS.map(y=>chip('year',y,y,has('year',y),cnt(d=>yrs(d).includes(y),'year'))).join('')}</div>`:'')
+ +`<h4>Section</h4><div class="qfr">${PARTS.map(p=>chip('part',p[0],p[1],has('part',p[0]),cnt(d=>pk(d)===p[0],'part'))).join('')}</div>`
+ +`<h4>Card</h4><div class="qfr">${LETTERS.map(l=>chip('letter',l,l+'-box',has('letter',l),cnt(d=>letter(d)===l,'card'))).join('')}</div>`
+ +`<h4>Specific card</h4><div class="qdd"><button type="button" class="qddb${DD?' o':''}${F.card.length?' has':''}" data-k="dd" aria-expanded="${DD}">${F.card.length?esc(F.card.join(', ')):'Any card'}${chev}</button>${DD?`<div class="qddl"><button type="button" class="${F.card.length?'':'on'}" data-k="card" data-v="">Any card</button>${codes.map(c=>`<button type="button" class="${has('card',c)?'on':''}" data-k="card" data-v="${c}">${c}<span>${cardCnt(c)}</span></button>`).join('')}</div>`:''}</div>`
  +`<h4>Sort</h4><div class="qseg">${[['book','Book order'],['card','Card number']].map(([v,l])=>`<button type="button" class="${F.sort===v?'on':''}" data-k="sort" data-v="${v}" aria-pressed="${F.sort===v}">${l}</button>`).join('')}</div>`
- +`<div class="qfd"><button type="button" class="qfd-h" data-k="fo" aria-expanded="${FO||!!F.topic}">Chapter${chev}</button>${FO||F.topic?`<div class="qfd-b">${tids.filter(t=>cnt(d=>String(chOf(d))===String(t),'topic')>0).map(t=>`<button type="button" class="qti${F.topic===String(t)?' on':''}" data-k="topic" data-v="${t}"><b>${esc(CHI[t][2]+' \u00b7 '+CHI[t][1])}</b><span>${cnt(d=>String(chOf(d))===String(t),'topic')}</span></button>`).join('')}</div>`:''}</div>`
+ +`<div class="qfd"><button type="button" class="qfd-h" data-k="fo" aria-expanded="${FO||!!F.topic.length}">Chapter${chev}</button>${FO||F.topic.length?`<div class="qfd-b">${tids.filter(t=>cnt(d=>String(chOf(d))===String(t),'topic')>0).map(t=>`<button type="button" class="qti${has('topic',t)?' on':''}" data-k="topic" data-v="${t}"><b>${esc(CHI[t][2]+' \u00b7 '+CHI[t][1])}</b><span>${cnt(d=>String(chOf(d))===String(t),'topic')}</span></button>`).join('')}</div>`:''}</div>`
  +`</div><div class="qf-foot"><button type="button" class="gb" data-k="close">Show ${tot} question${tot===1?'':'s'}</button></div>`;
  if(keep){const b=qf.querySelector(`[data-k="${keep[0]}"][data-v="${keep[1]}"]`);b&&b.focus()}
 }
 
 /* ---------- list ---------- */
 function actChips(){const o=[];
- if(F.show!=='all')o.push([SHOW.find(s=>s[0]===F.show)[1],'show','all']);
- if(F.type)o.push([F.type==='W'?'Written':'Viva','type','']);
- if(F.part)o.push([PARTS.find(p=>p[0]===F.part)[1],'part','']);
- if(F.letter)o.push([F.letter+'-box','letter','']);
- if(F.card)o.push(['Card '+F.card,'card','']);
- if(F.stars)o.push(['\u2b50'.repeat(F.stars),'stars','']);
- if(F.year)o.push(['Year '+F.year,'year','']);
- if(F.topic)o.push([tname(F.topic),'topic','']);
+ F.show.forEach(v=>o.push([SHOW.find(s=>s[0]===v)[1],'show',v]));
+ F.type.forEach(v=>o.push([v==='W'?'Written':'Viva','type',v]));
+ F.part.forEach(v=>o.push([PARTS.find(p=>p[0]===v)[1],'part',v]));
+ F.letter.forEach(v=>o.push([v+'-box','letter',v]));
+ F.card.forEach(v=>o.push(['Card '+v,'card',v]));
+ F.stars.forEach(v=>o.push(['\u2b50'.repeat(v),'stars',v]));
+ F.year.forEach(v=>o.push(['Year '+v,'year',v]));
+ F.topic.forEach(v=>o.push([tname(v),'topic',v]));
  if(F.sort!=='book')o.push(['By card number','sort','book']);
  return o}
 function apply(){
@@ -96,21 +97,18 @@ function apply(){
  const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n}
 function run(){apply();panel()}
 function set(k,v){
- if(k==='show')F.show=v;
- else if(k==='type')F.type=F.type===v?'':v;
- else if(k==='part')F.part=F.part===v?'':v;
- else if(k==='letter'){F.letter=F.letter===v?'':v;if(F.letter&&F.card&&cardOf(F.card)[0]!==F.letter)F.card=''}
- else if(k==='card'){F.card=v;if(v)F.letter=cardOf(v)[0];DD=false}
- else if(k==='stars')F.stars=F.stars==v?'':String(v);
- else if(k==='year')F.year=F.year==v?'':String(v);
+ const tg=(a,x)=>{const i=a.indexOf(String(x));i<0?a.push(String(x)):a.splice(i,1)};
+ if(k==='show'){v==='all'?F.show=[]:tg(F.show,v)}
+ else if(k==='type'||k==='part'||k==='stars'||k==='year'||k==='topic')tg(F[k],v);
+ else if(k==='letter'){tg(F.letter,v);if(F.letter.length)F.card=F.card.filter(c=>F.letter.includes(cardOf(c)[0]))}
+ else if(k==='card'){v===''?F.card=[]:tg(F.card,v)}
  else if(k==='sort')F.sort=v;
- else if(k==='topic')F.topic=F.topic===v?'':v;
  else if(k==='dd')DD=!DD;
  else if(k==='fo')FO=!FO;
- else if(k==='reset'){Object.assign(F,{show:'all',type:'',part:'',letter:'',card:'',stars:'',year:'',sort:'book',topic:'',q:''});$q('qfilter').value='';DD=false}
+ else if(k==='reset'){ON.forEach(x=>F[x]=[]);Object.assign(F,{sort:'book',q:''});$q('qfilter').value='';DD=false}
  run()}
 qf.addEventListener('click',e=>{const b=e.target.closest('[data-k]');if(!b||b.disabled)return;if(b.dataset.k==='close')return openF(false);set(b.dataset.k,b.dataset.v)});
-$q('qact').addEventListener('click',e=>{const b=e.target.closest('[data-x]');if(!b)return;const k=b.dataset.k;if(k==='type'||k==='part'||k==='letter'||k==='topic'||k==='stars'||k==='year')F[k]='';else if(k==='card')F.card='';else F[k]=b.dataset.v;run()});
+$q('qact').addEventListener('click',e=>{const b=e.target.closest('[data-x]');if(!b)return;const k=b.dataset.k,v=b.dataset.v;if(ON.includes(k))F[k]=F[k].filter(x=>x!==String(v));else F[k]=v;run()});
 $q('qclr').onclick=()=>set('reset');
 
 /* drawer (tablet) / bottom sheet (phone) / docked sidebar (wide) */
