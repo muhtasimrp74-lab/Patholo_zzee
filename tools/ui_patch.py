@@ -13,7 +13,9 @@ QCSS = r'''.qmode{display:inline-flex;gap:4px;padding:4px;margin:4px 0 12px;bord
 .qm-q .qi-a,.qm-q .chv,.qm-q #qexp,.qm-q #qcol{display:none!important}.qm-q .qi-h{cursor:default}
 #qexp,#qcol{}
 '''
-XM = r'''.code:empty{display:none}
+XM = r'''.qsub{margin:14px 4px 6px;font:700 .74rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--lbl)}
+.qsub[hidden]{display:none}
+.code:empty{display:none}
 .empty[hidden]{display:none!important}
 .xm{display:block;margin-top:3px;font:600 .74rem/1.3 var(--body);color:var(--muted);letter-spacing:.01em}
 .card header{flex-wrap:wrap}.card header .xm{flex-basis:100%;margin:2px 0 0}
