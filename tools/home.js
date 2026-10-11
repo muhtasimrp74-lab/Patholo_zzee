@@ -88,10 +88,10 @@ function render(){
  const pace=days>0?Math.ceil((tot-read)/days):0;
 
  /* ---------- hero ---------- */
- let h='<div class="nh-w"><header class="nh-hero"><p class="nh-eb">NMC viva list · Robbins &amp; Cotran 11th edition</p><h1>Pathology<em>Read. Recall. Answer.</em></h1>';
+ let h='<div class="nh-w"><header class="nh-hero"><p class="nh-eb">NMC viva list · Robbins 11th</p><h1>Pathology viva &amp; written<em>Read. Recall. Answer.</em></h1>';
  h+='<div class="nh-chips"><span class="nh-chip'+(doneToday?' on':'')+'"><b>'+sn+'</b> day streak'+(doneToday?' · done today':sn?' · study today to keep it':'')+'</span>';
- h+='<span class="nh-chip"><b>'+tot+'</b> viva &amp; written</span><span class="nh-chip"><b>'+mq.tot+'</b> MCQs</span>';
- h+=(TBI?'<span class="nh-chip"><b>'+tbN+'</b> textbook chapters</span>':'')+'</div></header>';
+ h+='<span class="nh-chip"><b>'+tot+'</b> questions</span>';
+ h+='</div></header>';
 
  /* ---------- start here + overall progress ---------- */
  h+='<section class="nh-top"><div class="nh-start"><p class="nh-k">START HERE</p>';

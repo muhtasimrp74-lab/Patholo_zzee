@@ -38,7 +38,7 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 '''
 
 QAJS = r"""
-const QAV=mkView('qa','Q&A','Q&A','Pick a chapter. It opens a page with every question in it and the full answers.');
+const QAV=mkView('qa','Chapters','Chapters','Pick a chapter to study viva and written questions together, with full answers. For one flat list to drill, use Questions.');
 (function(){const H=document.getElementById('v-home'),ch=document.getElementById('pchips');QAV.append(ch);H.querySelectorAll('section.part').forEach(x=>QAV.append(x))})();
 
 (function(){
@@ -46,7 +46,7 @@ const TYW=QMETA.type||{},esc3=t=>String(t).replace(/[&<>"]/g,m=>({'&':'&amp;','<
 const by={};DATA.forEach(d=>(by[d[2]]=by[d[2]]||[]).push(d));
 const kind=d=>TYW[d[3]]==='B'?'b':TYW[d[3]]==='W'?'w':'v';
 const hero=document.createElement('section');hero.className='qa-hero';
-hero.innerHTML='<div class="qa-top"><div><p class="qa-k">Q&amp;A</p><h2>Every chapter, every question</h2><p class="qa-s">Viva and written questions sit together on each chapter page, in Robbins order, with full answers.</p></div><a class="qa-go" id="qa-next" href="#/">Continue</a></div><div class="qa-stats" id="qa-stats"></div><label class="qa-sr"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="search" id="qa-q" placeholder="Search chapters or questions" aria-label="Search chapters or questions" autocomplete="off"></label><div class="qa-res" id="qa-res" hidden></div>';
+hero.innerHTML='<div class="qa-top"><div><p class="qa-k">Chapters</p><h2>Every chapter, every question</h2><p class="qa-s">Viva and written questions sit together on each chapter page, in Robbins order, with full answers.</p></div><a class="qa-go" id="qa-next" href="#/">Continue</a></div><div class="qa-stats" id="qa-stats"></div><label class="qa-sr"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="search" id="qa-q" placeholder="Search chapters or questions" aria-label="Search chapters or questions" autocomplete="off"></label><div class="qa-res" id="qa-res" hidden></div>';
 QAV.insertBefore(hero,QAV.querySelector('#pchips')||QAV.firstChild);
 const cards=[...QAV.querySelectorAll('a.topic')];
 function upd(){
@@ -75,12 +75,12 @@ CARDCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__
 
 def patch(s):
     # navigation: no Topics button; separate Questions and Q&A buttons
-    s = _rep(s, '<a href="#/topics">Topics</a><a href="#/questions">Questions</a>', '<a href="#/questions">Questions</a><a href="#/qa">Q&amp;A</a>', 0)
+    s = _rep(s, '<a href="#/topics">Topics</a><a href="#/questions">Questions</a>', '<a href="#/questions">Questions</a><a href="#/qa">Chapters</a>', 0)
     s = _rep(s, """l.querySelector('a[href="#/topics"]').insertAdjacentHTML('afterend'""", """l.querySelector('a[href="#/qa"]').insertAdjacentHTML('afterend'""")
     t = '<a href="#/topics"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg>Topics</a>'
     s = _rep(s, t, '')
     q = '<a href="#/questions"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1 1-1.1 1.8M12 17h.01"/></svg>Questions</a>'
-    s = _rep(s, q, q + '<a href="#/qa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v12H9l-4 4zM9 8h6M9 12h4"/></svg>Q&amp;A</a>')
+    s = _rep(s, q, q + '<a href="#/qa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v12H9l-4 4zM9 8h6M9 12h4"/></svg>Chapters</a>')
     s = _rep(s, 'grid-template-columns:repeat(5,1fr)', 'grid-template-columns:repeat(6,1fr)', 0)
     # Questions page modes
     s = _rep(s, "const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');" if "Tap a question to read its answer right here" in s else "const QV=mkView('questions','Questions','Questions','Only the questions. Tap one to reveal its answer, tap again to hide it.');",
