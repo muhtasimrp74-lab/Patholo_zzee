@@ -80,10 +80,16 @@ document.querySelector('#tools [data-t="ink"]').addEventListener('click',()=>set
 document.addEventListener('pointerdown',down,{passive:false});
 addEventListener('keydown',e=>{if(!on||!(e.ctrlKey||e.metaKey)||e.key.toLowerCase()!=='z'||e.target.matches('input,textarea,select'))return;e.preventDefault();step(!e.shiftKey)});
 sync()}
-async function init(){await loadAll();build();Object.keys(cache).forEach(id=>{const a=ansOf(id);if(a){canvas(a,true);paint(a)}else delete cache[id]})}
+/* Handwriting made on a question that was later merged into another one (QALIAS) is moved to the surviving question.
+   If both have ink, the surviving question's ink wins and the other copy is left untouched in storage (nothing is deleted). */
+function migrate(){if(typeof QALIAS==='undefined')return;for(const id in QALIAS){const o=cache[id],t=QALIAS[id];if(!o||id===t)continue;if(!cache[t]){cache[t]=Object.assign({},o,{id:t});delete cache[id];persist(t);persist(id)}else console.warn('[ink] both '+id+' and '+t+' have handwriting; kept '+t+', left '+id+' in storage')}}
+function remap(obj){const out={};if(!obj||typeof obj!=='object')return out;const al=typeof QALIAS!=='undefined'?QALIAS:{};for(const id in obj)if(!(id in al))out[id]=obj[id];for(const id in obj)if(id in al&&!out[al[id]])out[al[id]]=obj[id];return out}
+async function init(){await loadAll();migrate();build();Object.keys(cache).forEach(id=>{const a=ansOf(id);if(a){canvas(a,true);paint(a)}else delete cache[id]})}
 function clean(obj){const out={};if(!obj||typeof obj!=='object')return out;for(const id in obj){const o=obj[id];if(!/^q\d+$/.test(id)||!BY[id]||!o||!(o.w>0)||!(o.fs>0)||!Array.isArray(o.strokes))continue;
 const ss=o.strokes.filter(s=>s&&(s.t==='p'||s.t==='h')&&/^#[0-9a-f]{6}$/i.test(s.c)&&s.s>=.5&&s.s<=80&&Array.isArray(s.p)&&s.p.length>=2&&s.p.length%2===0&&s.p.length<=40000&&s.p.every(Number.isFinite)).map(s=>({t:s.t,c:s.c,s:+s.s,p:s.p.slice()}));
 if(ss.length)out[id]={id,w:+o.w,fs:+o.fs,strokes:ss}}return out}
 return{init,dump(){const d={};for(const id in cache)if(cache[id].strokes.length)d[id]={w:cache[id].w,fs:cache[id].fs,strokes:cache[id].strokes};return d},
-async load(obj){const c=clean(obj);try{const st=await store('readwrite');st.clear();Object.values(c).forEach(o=>st.put(o));await new Promise(r=>{st.transaction.oncomplete=r;st.transaction.onerror=r})}catch(e){}cache=c}}})();
+async load(obj){const c=clean(remap(obj));if(!window.indexedDB){cache=c;return}
+const st=await store('readwrite');st.clear();Object.values(c).forEach(o=>st.put(o));
+await new Promise((res,rej)=>{st.transaction.oncomplete=res;st.transaction.onerror=st.transaction.onabort=()=>rej(st.transaction.error||new Error('ink write failed'))});cache=c}}})();
 Ink.init();

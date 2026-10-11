@@ -171,3 +171,6 @@ window.nhRender=render;render();
  addEventListener('resize',go);addEventListener('hashchange',()=>{go();setTimeout(go,120)});addEventListener('load',go);
  new MutationObserver(go).observe(T,{childList:true});
  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(go);go()})();
+
+/* Offline diagnostics: run  cacheDiag()  in the browser console to see what is saved for offline use. */
+window.cacheDiag=async()=>{try{const out={};for(const k of (await caches.keys()).filter(k=>k.startsWith('pathviva-'))){const c=await caches.open(k),d=await c.match('diag.json');out[k]={entries:(await c.keys()).length,textbook:d?await d.json():'not run yet'}}return out}catch(e){return{error:String(e)}}};

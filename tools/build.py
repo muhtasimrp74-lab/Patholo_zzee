@@ -210,12 +210,29 @@ s = s.replace('<small>Browse</small>15 topics', '<small>Browse</small>%d topics'
 
 s = s.replace("sort((a,b)=>a.slice(1)-b.slice(1))", "sort((a,b)=>(a.slice(1)-b.slice(1))||a.localeCompare(b))", 1)
 s = s.replace("new Blob([JSON.stringify(S,null,1)]", "new Blob([JSON.stringify(Object.assign({},S,{ink:(typeof Ink!=='undefined'?Ink.dump():{})}),null,1)]", 1)
+NEWIMP = r"""function vbk(o){const ob=x=>x&&typeof x==='object'&&!Array.isArray(x),ar=x=>Array.isArray(x),ids=x=>ar(x)&&x.length<=20000&&x.every(i=>typeof i==='string'&&i.length<=40);
+if(!ob(o)||!ids(o.bm))return null;const r={bm:o.bm};
+for(const k of['fav','learned'])if(k in o){if(!ids(o[k]))return null;r[k]=o[k]}
+if('notes' in o){if(!ob(o.notes)||!Object.values(o.notes).every(v=>typeof v==='string'&&v.length<50000))return null;r.notes=o.notes}
+for(const k of['sr','pref'])if(k in o){if(!ob(o[k]))return null;r[k]=o[k]}
+if('streak' in o){if(!ob(o.streak)||typeof o.streak.n!=='number'||typeof o.streak.last!=='string')return null;r.streak=o.streak}
+if('recent' in o){if(!ar(o.recent))return null;r.recent=o.recent}
+if('mcq' in o){const m=o.mcq;if(!ob(m))return null;for(const k of['p','o','rd','nt','day'])if(k in m&&!ob(m[k]))return null;for(const k of['bm','hist','rv'])if(k in m&&!ar(m[k]))return null;r.mcq=m}
+return r}
+function imp(f){if(!f)return;f.text().then(async t=>{let o,r=null;try{o=JSON.parse(t);r=vbk(o)}catch(e){}if(!r){alert('That file is not a valid backup. Nothing was changed.');return}
+const ink=o.ink;if(ink!==undefined&&!(ink&&typeof ink==='object'&&!Array.isArray(ink))){alert('The handwriting data in that backup is not valid. Nothing was changed.');return}
+let prev=null;try{prev=localStorage.getItem('vivaState')}catch(e){}
+try{if(prev!==null)localStorage.setItem('vivaStatePrev',prev)}catch(e){}
+try{localStorage.setItem('vivaState',JSON.stringify(Object.assign({},S,r)))}catch(e){alert('Could not save the restored data (storage full?). Nothing was changed.');return}
+if(ink&&typeof Ink!=='undefined'){try{await Ink.load(ink)}catch(e){try{if(prev===null)localStorage.removeItem('vivaState');else localStorage.setItem('vivaState',prev)}catch(e2){}alert('The handwriting in that backup could not be restored, so the restore was cancelled. Your notes and progress were not changed.');return}}
+Object.assign(S,r);save();location.reload()})}"""
 s = s.replace("function imp(f){if(!f)return;f.text().then(t=>{try{const o=JSON.parse(t);if(!o||!Array.isArray(o.bm))throw 0;Object.assign(S,o);save();location.reload()}catch(e){alert('That file is not a valid backup.')}})}",
- "function imp(f){if(!f)return;f.text().then(async t=>{let o;try{o=JSON.parse(t);if(!o||!Array.isArray(o.bm))throw 0}catch(e){alert('That file is not a valid backup.');return}const ink=o.ink;delete o.ink;Object.assign(S,o);save();if(ink&&typeof Ink!=='undefined')await Ink.load(ink);location.reload()})}", 1)
+ NEWIMP, 1)
 _MIG = "const QALIAS=%s;(function(){let ch=0;const mv=(a,x,y)=>{const i=a.indexOf(x);if(i<0)return;a.splice(i,1);if(!a.includes(y))a.push(y);ch=1};for(const x in QALIAS){const y=QALIAS[x];['fav','bm','learned'].forEach(k=>{if(Array.isArray(S[k]))mv(S[k],x,y)});if(S.notes&&S.notes[x]!=null){S.notes[y]=S.notes[y]?S.notes[y]+'\\n'+S.notes[x]:S.notes[x];delete S.notes[x];ch=1}if(S.sr&&S.sr[x]){if(!S.sr[y])S.sr[y]=S.sr[x];delete S.sr[x];ch=1}}if(ch)try{localStorage.setItem('vivaState',JSON.stringify(S))}catch(e){}})();" % json.dumps(ALIAS)
 _k0 = "try{S=Object.assign(S,JSON.parse(localStorage.getItem('vivaState')||'{}'))}catch(e){}"
 assert _k0 in s
-s = s.replace(_k0, _k0 + _MIG, 1)
+_SAFE = r"""try{const raw=localStorage.getItem('vivaState')||'{}',o=JSON.parse(raw),ty=x=>Array.isArray(x)?'a':x===null?'n':typeof x;let bad=ty(o)!=='object';if(!bad)for(const k in o){if(k==='__proto__')continue;if(k in S&&ty(o[k])!==ty(S[k])){bad=1;continue}S[k]=o[k]}if(bad)try{localStorage.setItem('vivaStateCorrupt',raw)}catch(e){}}catch(e){}"""
+s = s.replace(_k0, _SAFE + _MIG, 1)
 assert 'Ink.load' in s and 'Ink.dump' in s and 'localeCompare(b))' in s
 
 

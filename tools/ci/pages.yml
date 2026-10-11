@@ -1,0 +1,68 @@
+name: Build, test and deploy to GitHub Pages
+# index.html is GENERATED from tools/ (build.py). CI rebuilds it from source, fails if the committed copy is stale,
+# runs the test-suite, validates the output folder, and only then deploys that freshly built folder.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Install test tooling
+        run: |
+          python -m pip install --upgrade pip playwright
+          python -m playwright install --with-deps chromium
+      - name: Build index.html from source
+        run: python tools/build.py
+      - name: Fail if the committed index.html is stale
+        run: git diff --exit-code -- index.html || (echo "::error::index.html in the repo differs from a fresh build. Run 'python3 tools/build.py' and commit it." && exit 1)
+      - name: Run tests
+        run: python -m unittest discover -s tools/tests -v
+      - name: Assemble site folder
+        run: |
+          mkdir _site
+          cp -r index.html ink.js sw.js manifest.json icons fonts textbook _site/
+      - name: Validate the site folder
+        run: |
+          python - <<'PY'
+          import os, re, json, filecmp, sys
+          s = open('sw.js', encoding='utf8').read()
+          core = re.findall(r"'([^']+)'", re.search(r'const CORE = \[(.*?)\];', s, re.S).group(1))
+          missing = [f for f in core if not os.path.exists('_site/' + f)] + ['textbook/ch%02d.html' % i for i in range(1, 30) if not os.path.exists('_site/textbook/ch%02d.html' % i)]
+          assert not missing, 'missing from _site: %s' % missing
+          assert filecmp.cmp('index.html', '_site/index.html', shallow=False), 'index.html mismatch'
+          assert os.path.getsize('_site/index.html') > 1_000_000, 'index.html suspiciously small'
+          json.load(open('_site/manifest.json', encoding='utf8'))
+          print('site folder OK:', sum(len(f) for _, _, f in os.walk('_site')), 'files')
+          PY
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+        with: { enablement: true }
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with: { path: _site }
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
