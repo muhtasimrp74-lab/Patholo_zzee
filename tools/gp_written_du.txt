@@ -1,0 +1,709 @@
+# DU written questions (Robbins 11th order). Same format as gp_written.txt; loaded by content.py _du_written().
+# CHAPTER 3 | Inflammation and Repair
+## Acute inflammation
+Define inflammation. (DU-06M) ⭐
+What are the differences between acute and chronic inflammation? (DU-no yr) ⭐
+What are the cardinal signs of acute inflammation? (DU-26M, 13Ja, 12Ja) ⭐⭐⭐
+Explain: "Inflammation is a protective response but may be potentially harmful." (DU-03S) ⭐
+What are the components of acute inflammation? (DU-08Ju, 07Ju) ⭐⭐
+What are the vascular events in acute inflammation? (DU-14Ju, 12Ja, 08Ju) ⭐⭐⭐
+What chemical mediators are responsible for the vascular events/features of acute inflammation? (DU-26M, 14Ju, 13Ja, 10Ja) ⭐⭐⭐⭐
+What are the cellular events of acute inflammation? (DU-23N) ⭐
+Describe the morphological patterns of acute inflammation. (DU-08Ju) ⭐
+What is chemotaxis? (DU-11Ja) ⭐
+What are the steps of leukocyte extravasation? (DU-09Ju) ⭐
+List the molecules and cytokines involved in inflammation. (DU-11Ju) ⭐
+Write the functions of vasoactive amines. (DU-10Ja) ⭐
+State the consequences of complement activation. (DU-09Ja) ⭐
+## Clinical (SEQ) – acute inflammation
+Which chemical mediators are responsible for pain and swelling? (DU-22N, 19Nov, 22M, 17Nov, 12Ju) ⭐⭐⭐⭐⭐
+A 15y girl has pain, redness, swelling of forearm after trauma. What is the likely diagnosis? (DU-24M) ⭐
+Same girl: why does the swelling occur? (DU-24M) ⭐
+A 9y girl has a red, painful arm swelling with raised local temperature. What is the likely diagnosis? (DU-22N) ⭐
+A 10y boy has pain and swelling in the right inguinal region for 7 days. What is the likely diagnosis? (DU-22M, 17Nov) ⭐⭐
+A 7y boy has sudden red painful thigh swelling with raised local temperature. What is your probable diagnosis? (DU-12Ju) ⭐
+A 10y boy has fever, local swelling and pain. What is your provisional diagnosis? (DU-10Ju) ⭐
+How will you confirm this diagnosis (10y boy, fever, local swelling)? (DU-10Ju) ⭐
+## Phagocytosis
+Define phagocytosis. (DU-25N, 19N) ⭐⭐
+Name the cells causing phagocytosis. (DU-19Nov) ⭐
+What are the steps/mechanism of phagocytosis? (DU-25N, 24N, 23N, 22N, 19Nov, 18Nov, 17Nov, 12Ju, 08Ju, 08Ja, 07Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Write the mechanism of oxygen-dependent microbial killing (role of oxygen in phagocytic killing). (DU-23N, 22M, 18Nov, 17Nov, 16Ju, 12Ju) ⭐⭐⭐⭐⭐⭐
+Write a short note on opsonin. (DU-06Ja, 04Ja) ⭐⭐
+## Granulomatous inflammation
+Write a short note on granulomatous inflammation. (DU-17Ja) ⭐
+Mention the types/etiological classification of granuloma with examples. (DU-25M, 24M, 22N, 16Ja, 08Ju) ⭐⭐⭐⭐⭐
+Define granuloma with an example. (DU-26M, 24M, 22N, 20N, 20Ju, 13Ju) ⭐⭐⭐⭐⭐⭐
+Draw and label a tubercular (typical) granuloma. (DU-25M, 24M, 22N) ⭐⭐⭐
+How does immune granuloma form? (DU-26M, 20N, 20Ju, 17M, 13Ju, 07Ju) ⭐⭐⭐⭐⭐⭐
+Give the immunopathogenesis of TB granuloma. (DU-03Ja) ⭐
+What are the systemic effects of inflammation? (DU-07Ju) ⭐
+## Wound healing
+What do you mean by regeneration and repair? (DU-21M, 19M) ⭐⭐
+What is healing? (DU-08Ju, 07Ja) ⭐⭐
+What is angiogenesis? (DU-15Ju, 07Ju) ⭐⭐
+Mention the factors influencing/delaying wound healing. (DU-26M, 21M, 19M, 18M, 17Ja, 15Ju) ⭐⭐⭐⭐⭐⭐
+Mention the complications of wound healing. (DU-21M, 19M, 18M, 17M, 17Ja, 15Ju, 14Ja) ⭐⭐⭐⭐⭐⭐⭐
+Mention the sequential steps of healing by first intention (primary union). (DU-24N, 08Ju, 07Ja) ⭐⭐⭐
+What is granulation tissue? (DU-26M, 24N, 11Ju, 06Ja) ⭐⭐⭐⭐
+Write a short note on keloid. (DU-09Ju) ⭐
+A 30y African-American lady has a raised scar larger than the incision, recurring after excision. What is your probable diagnosis? (DU-17M) ⭐
+# CHAPTER 4 | Hemodynamic Disorders, Thromboembolic Disease, and Shock
+## Edema
+Define edema. (DU-16Ja, 14Ja, 08Ju, 07Ja, 06S) ⭐⭐⭐⭐⭐
+State the pathophysiologic categories / classify edema. (DU-16Ja, 07Ja, 06S) ⭐⭐⭐
+Give in brief the mechanisms of edema formation. (DU-08Ju) ⭐
+Explain the mechanism of edema in nephrotic syndrome. (DU-16Ja) ⭐
+Write the mechanism of edema in nephritic syndrome. (DU-14Ja) ⭐
+What is anasarca? (DU-14Ja) ⭐
+How does edema due to cardiac failure develop? (DU-07Ju, 07Ja) ⭐⭐
+## Thrombosis
+Describe briefly the role of platelets in normal haemostasis. (DU-04M) ⭐
+What are the antithrombotic properties of endothelial cells? (DU-07Ja) ⭐
+What is thrombosis? (DU-17M, 11Ju, 09Ja) ⭐⭐⭐
+Discuss the role of endothelial injury in thrombus formation. (DU-18M, 10Ja) ⭐⭐
+How does altered blood flow cause thrombosis? (DU-18M, 17M) ⭐⭐
+Write down the pathogenesis of venous thrombus. (DU-16Ju) ⭐
+What is Virchow's triad of thrombogenesis? (DU-26M, 24N, 23N, 22N, 21M, 19M, 18M, 17Nov, 14Ju, 13Ja, 10Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Mention the causes of hypercoagulability of blood. (DU-26M) ⭐
+Give the fate of a thrombus. (DU-07Ju) ⭐
+## Embolism
+Classify emboli on the basis of their composition. (DU-03S) ⭐
+Write in short the pathogenesis/effects of systemic embolism. (DU-04M) ⭐
+Write a short note on embolism / emboli. (DU-19Nov, 18Nov) ⭐⭐
+Write a short note on pulmonary embolism. (DU-08Ju) ⭐
+Write a short note on fat embolism. (DU-05S) ⭐
+Write a short note on air embolism. (DU-16Ja) ⭐
+A 38y male with femur fracture develops chest pain, cough and haemoptysis after 2 weeks. What is the most likely diagnosis? (DU-16Ju) ⭐
+Same patient: what is the cause of this complication? (DU-16Ju) ⭐
+## Infarction
+What are the factors that influence formation of infarct? (DU-16Ju, 12Ju) ⭐⭐
+Write a short note on red infarct / red and white infarct. (DU-25M, 22M, 17Ja, 15Ja) ⭐⭐⭐⭐
+What types of infarct are seen in heart and lungs? (DU-12Ju) ⭐
+## Shock
+Define shock. (DU-25N, 20N, 20Ju, 09Ju, 08Ju, 07Ju) ⭐⭐⭐⭐⭐⭐
+What are the types of shock? (DU-20N, 20Ju) ⭐⭐
+What is anaphylactic shock? (DU-15Ja) ⭐
+Name the stages of shock. (DU-25N, 16Ju, 15Ja, 10Ju) ⭐⭐⭐⭐
+Write a short note on hemorrhagic shock (pathophysiology of severe hemorrhage after RTA). (DU-20N, 20Ju, 10Ju) ⭐⭐⭐
+Write the pathogenesis/mechanism of septic shock. (DU-25N, 20N, 20Ju, 13Ju, 09Ju, 08Ju, 07Ju) ⭐⭐⭐⭐⭐⭐⭐
+A 40y male lost consciousness with cold clammy skin after severe bleeding in RTA. What is your probable diagnosis? (DU-25M) ⭐
+Same patient: what complications may occur? (DU-25M) ⭐
+A 25y male has high fever, sore throat, gum/mandibular swelling after tooth extraction, then collapses with feeble pulse and unrecordable BP. What is your clinical diagnosis? (DU-18Nov) ⭐
+Same patient: what may be the etiology? (DU-18Nov) ⭐
+# CHAPTER 5 | Genes and Human Diseases
+## DU written questions
+What is mutation? (DU-03S, 19M) ⭐⭐
+What are the cytogenetic disorders? (DU-08Ju) ⭐
+Write a short note on Down's syndrome. (DU-25M, 21M, 12Ja) ⭐⭐⭐
+What are the features of autosomal dominant inheritance? (DU-13Ju, 11Ja, 10Ju, 09Ja) ⭐⭐⭐⭐
+What are the main features of X-linked recessive inheritance? (DU-14Ju) ⭐
+Write a short note on autosomal recessive inheritance. (DU-08Ja) ⭐
+Write a short note on Barr body. (DU-23N, 11Ju) ⭐⭐
+Write a short note on karyotype / karyotyping. (DU-17M, 12Ju) ⭐⭐
+A girl has flat facial profile, stunted growth, mental retardation (± simian crease). What is your probable diagnosis? (DU-25N, 12Ja) ⭐⭐
+Same patient: how will you diagnose / what is the karyotype? (DU-25N, 12Ja) ⭐⭐
+An adolescent girl has primary amenorrhoea, webbed neck, broad chest, underdeveloped breasts. What is the likely diagnosis? (DU-20N, 20Ju, 18M) ⭐⭐⭐
+Same patient: what is the karyotype? (DU-20N, 20Ju, 18M) ⭐⭐⭐
+# CHAPTER 6 | Diseases of the Immune System
+## DU written questions
+What is anaphylactic reaction? (DU-08Ju) ⭐
+Give various examples of anaphylactic reactions. (DU-08Ju) ⭐
+Write a short note on MHC. (DU-08Ju, 07Ju) ⭐⭐
+Write a short note on autoimmune disease. (DU-07Ja) ⭐
+A 30y lady has diffuse thyroid enlargement, exophthalmos, high T3/T4. What immunological mechanisms contribute to its development? (DU-12Ja) ⭐
+# CHAPTER 7 | Neoplasia
+## Basic terms & features
+Define neoplasia with example. (DU-24N) ⭐
+Define dysplasia. (DU-19M, 13Ju) ⭐⭐
+Mention the clinical importance of dysplasia. (DU-13Ju) ⭐
+Write down the features of dysplasia. (DU-16Ju) ⭐
+How does dysplasia differ from anaplasia? (DU-07Ja) ⭐
+Define anaplasia. (DU-26M, 24M, 20N, 20Ju, 09Ja) ⭐⭐⭐⭐⭐
+What are the features of anaplasia (anaplastic cell)? (DU-26M, 25M, 24M, 22M, 17Nov, 16Ju, 06Ja) ⭐⭐⭐⭐⭐⭐⭐
+What is carcinoma in situ (and locally malignant tumour)? (DU-17Ja, 15Ja) ⭐⭐
+What are the characteristics of a malignant tumour/cell? (DU-13Ja, 12Ja, 11Ju) ⭐⭐⭐
+Mention the characteristics of a benign neoplasm. (DU-22N) ⭐
+Give the differences between benign and malignant tumour. (DU-20N, 20Ju, 14Ja) ⭐⭐⭐
+What do you mean by tumour grading and staging? Mention basis and importance. (DU-26M, 25M, 19Nov, 17Ja, 15Ja, 14Ja, 12Ju, 11Ju, 09Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## Spread
+Define metastasis (short note). (DU-25N, 10Ja, 09Ju) ⭐⭐⭐
+Mention the routes/pathways of spread of a malignant tumour. (DU-25N, 24M, 22M, 19Nov, 17Nov, 17Ja, 16Ju, 14Ju, 13Ja, 12Ja, 09Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+How does a malignant tumour spread through the hematogenous route? (DU-18Nov, 17M, 14Ju) ⭐⭐⭐
+Describe in short the mechanism of invasion and metastasis. (DU-08Ju) ⭐
+## Carcinogenesis
+What do you mean by oncogene? (DU-08Ja, 06M, 04S) ⭐⭐⭐
+What are the carcinogenic agents? (DU-11Ja) ⭐
+Give in short what you know about viral oncogenesis (oncogenic virus). (DU-16Ja, 14Ja, 09Ja, 08Ju) ⭐⭐⭐⭐
+Name the oncogenic viruses/microbes with associated cancers. (DU-21M, 19M, 11Ja, 08Ja) ⭐⭐⭐⭐
+How does a cell become malignant? (DU-13Ju) ⭐
+Write about the role of genes in tumourigenesis. (DU-13Ju) ⭐
+Write a short note on tumour suppressor genes. (DU-08Ju) ⭐
+Write a short note on tumour angiogenesis. (DU-10Ju) ⭐
+Write a short note on tumour heterogeneity. (DU-04M) ⭐
+What is a precancerous condition/lesion? (DU-18M, 12Ju) ⭐⭐
+Enumerate common cancers in males and females of the Bangladeshi population. (DU-18M) ⭐
+Briefly state the role of environmental factors in cancer development. (DU-18M) ⭐
+Write a short note on teratoma. (DU-17Nov, 16Ja, 15Ja, 14Ja) ⭐⭐⭐⭐
+## Laboratory diagnosis
+How will you diagnose a tumour in the laboratory? (DU-25N, 24N, 23N, 22N, 21M, 19M, 12Ju) ⭐⭐⭐⭐⭐⭐⭐
+Write a short note on tumour markers (definition, examples, utility). (DU-25N, 24N, 24M, 23N, 15Ja, 12Ja, 11Ja) ⭐⭐⭐⭐⭐⭐⭐
+What techniques of cytology are used in tumour diagnosis? (DU-13Ju) ⭐
+Write a short note on exfoliative cytology. (DU-05M) ⭐
+Write a short note on FNAC. (DU-18M) ⭐
+Why is clinical data important for accurate histopathologic diagnosis? (DU-17M) ⭐
+What is frozen section? (DU-17M) ⭐
+Mention the uses/indications of frozen section. (DU-17M, 17Nov) ⭐⭐
+What are the common fixatives used for histo- and cytopathological examination? (DU-17Nov) ⭐
+Write about the role of IHC in tumour diagnosis. (DU-25N) ⭐
+Name the childhood tumours (short note). (DU-20N, 20Ju, 18Nov, 17M, 13Ja) ⭐⭐⭐⭐⭐
+# CHAPTER 9 | Environmental and Nutritional Diseases
+## DU written questions
+Write a short note on environmental pollution. (DU-no yr) ⭐
+Write a short note on protein energy malnutrition (PEM). (DU-22M, 19Nov, 17Nov) ⭐⭐⭐
+Write a short note on kwashiorkor. (DU-10Ja) ⭐
+Write a short note on deficiency of zinc. (DU-08Ju) ⭐
+Write a short note on beriberi. (DU-13Ja, 10Ju) ⭐⭐
+What are the dietary sources of vitamin A? (DU-08Ju) ⭐
+What are the clinical manifestations of vitamin A deficiency? (DU-08Ju) ⭐
+# CHAPTER 11 | Blood Vessels
+## DU written questions
+Define arteriosclerosis. (DU-07Ja) ⭐
+What are the types of arteriosclerosis? (DU-07Ja) ⭐
+Define atherosclerosis (short note). (DU-26M, 25M, 22M, 18M, 06Ja) ⭐⭐⭐⭐⭐
+Draw and label a typical atheroma / give the morphology of an atheromatous plaque. (DU-26M, 23N, 17Nov) ⭐⭐⭐
+Name the blood vessels most frequently involved by atherosclerosis, with clinical consequences (common sites). (DU-23N, 18M) ⭐⭐
+What are the complications of atherosclerosis / atheromatous plaque? (DU-23N, 17M, 07Ju, 06S, 05Ja) ⭐⭐⭐⭐⭐
+What are the risk factors of atherosclerosis? (DU-25M, 22M, 18M, 17M, 08Ju, 07Ju, 05Ja) ⭐⭐⭐⭐⭐⭐⭐
+Write in short the pathogenesis of atherosclerosis. (DU-25M, 22M) ⭐⭐
+Write a short note on angina pectoris. (DU-21M) ⭐
+# CHAPTER 12 | The Heart
+## Ischemic heart disease / MI
+Define ischemic heart disease. (DU-25N) ⭐
+Write down the types of ischemic heart disease. (DU-25N, 24M, 22N, 20N, 20Ju, 19Nov, 12Ja) ⭐⭐⭐⭐⭐⭐⭐
+What is myocardial infarction? (DU-07Ju) ⭐
+What are the risk factors of ischemic heart disease/MI? (DU-13Ja, 12Ja) ⭐⭐
+Describe the pathogenesis of myocardial infarction. (DU-25N, 20N, 20Ju, 19Nov) ⭐⭐⭐⭐
+Mention the complications/consequences of myocardial infarction. (DU-25N, 24M, 22N, 20N, 20Ju, 19Nov, 14Ja, 12Ja, 09Ju, 03Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Write the morphological changes in myocardial infarction. (DU-07Ja) ⭐
+Give the laboratory diagnosis of MI. (DU-07Ju) ⭐
+What are the cardiac markers/enzymes of MI (with change over time)? (DU-24M, 22N, 20N, 20Ju, 19M, 16Ja, 14Ju, 13Ja, 08Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Why is troponin the best indicator for MI? (DU-08Ja, 06Ja) ⭐⭐
+## Clinical questions
+A 70y man has long-standing hypertension. What type of adaptive change may occur in his heart? (DU-24N) ⭐
+Same: mention physiological conditions where this change can occur. (DU-24N) ⭐
+A patient has severe central chest pain, sweating, ± syncope. What is the probable diagnosis? (DU-21M, 19M, 17Nov, 12Ja, 11Ja) ⭐⭐⭐⭐⭐
+Same: what investigations/expected biochemical findings confirm it? (DU-21M, 19M, 17Nov, 12Ja, 11Ja) ⭐⭐⭐⭐⭐
+## Rheumatic fever & infective endocarditis
+What are the criteria for diagnosis of rheumatic fever? (DU-12Ju) ⭐
+Give the pathogenesis of rheumatic fever. (DU-15Ja, 12Ja) ⭐⭐
+Which valves are commonly involved in rheumatic fever? (DU-15Ja) ⭐
+What are the complications of rheumatic fever? (DU-15Ja, 11Ju) ⭐⭐
+Write a short note on Aschoff nodule (myocardial changes, giant cell). (DU-14Ju, 06M, 05Ja) ⭐⭐⭐
+A child has fever, migratory large-joint pain after sore throat. What is your provisional diagnosis? (DU-25N, 14Ju) ⭐⭐
+Same: how will you diagnose the case? (DU-25N) ⭐
+What is subacute infective endocarditis? (DU-11Ju) ⭐
+What is vegetation? (DU-26M, 19M) ⭐⭐
+Write the types/classification of infective endocarditis with infective agents. (DU-26M, 19M) ⭐⭐
+Give the pathogenesis of infective endocarditis. (DU-19M) ⭐
+Mention the complications of infective endocarditis. (DU-19M) ⭐
+# CHAPTER 13 | Diseases of White Blood Cells, Lymph Nodes, Spleen, and Thymus
+## WBC abnormalities
+Define neutrophilia. (DU-26M) ⭐
+Name four important causes of neutrophilic leukocytosis. (DU-26M) ⭐
+Write a short note on neutropenia. (DU-09Ja) ⭐
+Write a short note on leukopenia. (DU-07Ju) ⭐
+Write a short note on eosinophilia. (DU-10Ja, 06Ja) ⭐⭐
+Define lymphocytosis. (DU-07Ja) ⭐
+What are the causes of lymphocytosis? (DU-07Ja) ⭐
+## Leukaemia
+Define leukaemia. (DU-26M, 25M, 22N, 20N, 20Ju, 19M, 18M) ⭐⭐⭐⭐⭐⭐⭐
+Classify (acute) leukaemia. (DU-24N, 21M, 17Nov) ⭐⭐⭐
+What is the etiology of leukaemia? (DU-24M, 22N) ⭐⭐
+Classify AML (FAB classification). (DU-17M, 08Ja) ⭐⭐
+What are the common presentations of acute leukaemia/AML? (DU-10Ja, 07Ja) ⭐⭐
+How will you diagnose a case of acute leukaemia in the laboratory? (DU-24M, 22N, 17M, 11Ju, 10Ja, 09Ja, 07Ju) ⭐⭐⭐⭐⭐⭐⭐
+A child has severe pallor, sore throat, bleeding, lymphadenopathy, blasts in PBF. What is the probable diagnosis? (DU-17M, 11Ju, 10Ja) ⭐⭐⭐
+A 20y male has multiple painless cervical/axillary lymph nodes. What is your provisional diagnosis? (DU-no yr) ⭐
+Same: what tests can you do on the lymph nodes? (DU-no yr) ⭐
+Give the blood picture and bone marrow findings of AML. (DU-19Nov, 17Nov, 16Ju, 14Ja) ⭐⭐⭐⭐
+How will you differentiate myeloblast from lymphoblast? (DU-25M, 16Ju, 14Ja, 12Ja) ⭐⭐⭐⭐
+Write down the clinical presentation of ALL. (DU-25N) ⭐
+Give the laboratory diagnosis/bone marrow findings of ALL. (DU-25N, 25M, 15Ja, 08Ju) ⭐⭐⭐⭐
+Give the blood picture of ALL. (DU-no yr) ⭐
+Write a short note on blast crisis. (DU-24N, 22M, 17M, 17Ja, 16Ja, 15Ja, 13Ju) ⭐⭐⭐⭐⭐⭐⭐
+Define chronic leukaemia. (DU-03Ja) ⭐
+Give the clinical manifestations of chronic granulocytic leukaemia. (DU-07Ju) ⭐
+Give the laboratory diagnosis (blood/bone marrow) of chronic myeloid leukaemia. (DU-26M, 24N, 21M, 20N, 20Ju, 19M, 18M, 17M, 14Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+What is Philadelphia chromosome? (DU-26M, 20N, 20Ju, 18M, 05Ja) ⭐⭐⭐⭐⭐
+## Leukaemoid reaction, sub-leukaemic, MPD, myeloma
+Define leukaemoid reaction / write a short note (incl. blood picture). (DU-25N, 25M, 23N, 22M, 16Ju, 13Ja, 12Ja, 11Ja, 09Ju, 09Ja, 08Ja, 06Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+What are the types of leukaemoid reaction with example? (DU-25N, 22M) ⭐⭐
+Write a short note on leukoerythroblastic blood picture. (DU-19M, 12Ju) ⭐⭐
+Write the differences between leukaemoid reaction and leukaemia. (DU-22M, 14Ju, 13Ja, 09Ja) ⭐⭐⭐⭐
+What do you mean by sub-leukaemic leukaemia (marrow picture)? (DU-11Ju, 09Ju, 08Ju) ⭐⭐⭐
+How will you differentiate sub-leukaemic leukaemia from aplastic anemia? (DU-13Ju, 12Ju) ⭐⭐
+What are myeloproliferative disorders? (DU-05Ja, 04M, 03S) ⭐⭐⭐
+Write a short note on polycythaemia rubra vera. (DU-06M, 04M) ⭐⭐
+What is paraproteinaemia? (DU-23N, 13Ju, 10Ja) ⭐⭐⭐
+Give 4 common causes of paraproteinaemia. (DU-10Ja) ⭐
+How will you diagnose a case of multiple myeloma? (DU-25N, 23N, 21M, 19M, 16Ju, 12Ju, 06S) ⭐⭐⭐⭐⭐⭐⭐
+Give the bone marrow findings of multiple myeloma. (DU-10Ja) ⭐
+Why is ESR sky-high in multiple myeloma? (DU-23N) ⭐
+An elderly patient has low back/bone pain, punched-out lesions, sky-high ESR. What is your probable diagnosis? (DU-25N, 21M, 19M, 16Ju, 15Ja, 12Ju) ⭐⭐⭐⭐⭐⭐
+Write a short note on Bence-Jones protein and its detection in urine. (DU-14Ju, 13Ja, 10Ju) ⭐⭐⭐
+## Lymph node / lymphoma
+Write down the causes of generalized lymphadenopathy. (DU-25N, 22N, 18Nov, 17Nov, 16Ju, 12Ja, 07Ja) ⭐⭐⭐⭐⭐⭐⭐
+What are the causes of cervical lymphadenopathy? (DU-05M) ⭐
+Give the WHO classification of Hodgkin lymphoma. (DU-17M, 14Ju, 13Ja, 11Ja) ⭐⭐⭐⭐
+Describe in brief the morphological features of Hodgkin's disease. (DU-05M) ⭐
+Describe the Reed-Sternberg cell and its variants. (DU-25N, 24N, 22M, 20N, 20Ju, 18Nov, 17Nov, 17M, 17Ja, 16Ja, 16Ju, 14Ju, 12Ju, 11Ja, 09Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Write a short note on Hodgkin's lymphoma. (DU-19Nov) ⭐
+Write a short note on nodular sclerosis variety of Hodgkin's disease. (DU-09Ju) ⭐
+How does Hodgkin lymphoma differ from non-Hodgkin lymphoma? (DU-18Nov, 17Nov, 17M, 16Ju, 14Ju, 13Ja, 12Ja, 11Ja, 07Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+# CHAPTER 14 | Red Blood Cell and Bleeding Disorders
+## Haemopoiesis & marrow
+Write the developmental stages of RBC. (DU-14Ju) ⭐
+What are the essential nutrients for haemopoiesis? (DU-14Ju, 08Ju) ⭐⭐
+What is reticulocyte? (DU-09Ja) ⭐
+Mention the cells in the steps of granulopoiesis. (DU-19Nov) ⭐
+How can bone marrow be examined? (DU-24N, 08Ju) ⭐⭐
+What are the indications of bone marrow examination/aspiration? (DU-26M, 19M, 18Nov, 16Ju, 15Ja, 13Ju, 09Ju) ⭐⭐⭐⭐⭐⭐⭐
+Name the white cell disorders for which bone marrow aspiration is done. (DU-09Ju) ⭐
+Mention the site of marrow puncture in a child below 2 years. (DU-09Ja) ⭐
+What is trephine biopsy? (DU-19Nov, 16Ju, 11Ja, 09Ja) ⭐⭐⭐⭐
+What is dry tap? (DU-26M, 19M) ⭐⭐
+What is blood tap? (DU-18Nov) ⭐
+Mention 4 conditions where dry tap is frequent. (DU-11Ja, 09Ja) ⭐⭐
+Write down the causes of marrow aplasia. (DU-11Ju) ⭐
+What information can you get from a stained PBF? (DU-25N) ⭐
+## ESR, iron, indices
+Define ESR / write a short note on ESR. (DU-24M, 21M, 17Ja, 16Ja, 14Ja, 10Ju) ⭐⭐⭐⭐⭐⭐
+Mention the major physiological factors affecting ESR. (DU-08Ja) ⭐
+How do changes in blood components influence ESR? (DU-10Ju) ⭐
+What are the iron profile tests? (DU-19M, 17Ja) ⭐⭐
+Enumerate the laboratory methods of assessing iron stores. (DU-07Ja) ⭐
+Define PCV. (DU-10Ju) ⭐
+Name the red cell (absolute) indices with values. (DU-25N, 25M, 22N, 20N, 20Ju, 13Ja, 09Ju) ⭐⭐⭐⭐⭐⭐⭐
+Write a short note on MCV. (DU-05M) ⭐
+Name the changes of absolute values in iron deficiency anemia. (DU-09Ju) ⭐
+## Anemia – general
+What is anemia? (DU-07Ju, 06M) ⭐⭐
+Write the morphological/red-cell-indices classification of anemia with examples. (DU-26M, 24N, 23N, 22N, 21M, 18Nov, 17Nov, 17M, 16Ja, 15Ja, 13Ja, 08Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Write a short note on investigations for morphological classification of anemia. (DU-14Ju) ⭐
+Define polycythemia. (DU-13Ju) ⭐
+## Microcytic & iron deficiency anemia
+What are the causes of microcytic hypochromic anemia? (DU-19M, 17Ja, 12Ja, 10Ja) ⭐⭐⭐⭐
+How can the causes of microcytic anemia be differentiated by laboratory investigation? (DU-10Ja) ⭐
+Enumerate the causes of iron deficiency anemia. (DU-21M) ⭐
+Why is iron deficiency the most common anemia in infancy and childhood? (DU-07Ja) ⭐
+Give the changes in iron deficiency anemia. (DU-17Ja) ⭐
+Give the laboratory diagnosis/blood picture of iron deficiency anemia. (DU-26M, 25M, 24N, 23N, 22N, 21M, 17Nov, 16Ja, 15Ja, 08Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+A pregnant lady has weakness, exertional dyspnoea, pale conjunctivae, smooth tongue. What is your probable diagnosis? (DU-25M) ⭐
+A 50y male with bleeding peptic ulcer has Hb 9 g%. What morphological type of anemia do you expect on blood film? (DU-13Ja) ⭐
+Same patient: what will be his iron profile? (DU-13Ja) ⭐
+## Thalassemia
+Name the normal (and abnormal) haemoglobins. (DU-22M, 20N, 20Ju, 12Ju, 11Ju) ⭐⭐⭐⭐⭐
+Define thalassemia. (DU-25N, 20N, 20Ju, 17Ja, 07Ja) ⭐⭐⭐⭐⭐
+How is thalassemia classified? (DU-20N, 20Ju, 07Ja) ⭐⭐⭐
+Write a short note on hemoglobinopathy. (DU-25M, 18Nov, 17Ja) ⭐⭐⭐
+Write the genetic basis of β-thalassemia major. (DU-19M) ⭐
+Give the laboratory diagnosis of thalassemia/β-thalassemia major. (DU-25N, 22M, 20N, 20Ju, 19M, 17M, 17Ja, 16Ju, 14Ju, 13Ju, 12Ja, 11Ju, 10Ju, 08Ju, 06S) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+A child has severe anemia, mongoloid face, hepatosplenomegaly, repeated transfusions, target cells. What is your probable diagnosis? (DU-24N, 23N, 22N, 19Nov, 18Nov, 17Nov, 11Ja, 10Ja, 08Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Same child: how will you confirm the diagnosis? (DU-24N, 23N, 22N, 19Nov, 18Nov, 17Nov, 11Ja, 10Ja, 08Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+## Macrocytic & pernicious anemia
+Define macrocytic anemia. (DU-24M) ⭐
+Classify macrocytic anemia with example. (DU-24M) ⭐
+Mention the causes of macrocytosis/macrocytic anemia. (DU-18Nov, 11Ja) ⭐⭐
+Write the laboratory investigation/blood picture of megaloblastic anemia. (DU-25M, 24M, 18Nov, 12Ju) ⭐⭐⭐⭐
+What is megaloblast? (DU-25M) ⭐
+Write a short note on megaloblastic anemia. (DU-04S) ⭐
+Write a short note on Schilling test. (DU-11Ja) ⭐
+What is pernicious anemia? (DU-12Ju) ⭐
+A patient after partial gastrectomy has pallor, weakness, neuropathy/paresthesia. What is your provisional diagnosis? (DU-16Ja, 14Ju, 13Ju) ⭐⭐⭐
+Same: what is the cause? (DU-13Ju) ⭐
+Same: what is the hematological profile / how will you confirm? (DU-16Ja, 14Ju) ⭐⭐
+## Pancytopenia & aplastic anemia
+What is pancytopenia? (DU-25N, 24M, 22M, 20N, 20Ju, 19Nov, 18M, 16Ja, 14Ja, 12Ja, 10Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Write down the important causes of pancytopenia. (DU-25N, 20N, 20Ju, 19Nov, 18M, 16Ja, 14Ja, 12Ja, 10Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+What are the clinical presentations of pancytopenia? (DU-07Ju) ⭐
+How will you diagnose/investigate a case of pancytopenia? (DU-10Ju, 07Ju, 07Ja, 05M) ⭐⭐⭐⭐
+Give the laboratory diagnosis of aplastic anemia (PBF and bone marrow findings). (DU-20N, 20Ju, 19Nov, 18M, 16Ja, 14Ja, 12Ja, 11Ju) ⭐⭐⭐⭐⭐⭐⭐⭐
+A boy of 11y has Hb 2 g, WBC 500/cmm, platelets 12000/cmm. What is the probable diagnosis? (DU-12Ja) ⭐
+## Haemolytic anemia
+Classify haemolytic anemia. (DU-06Ja, 05Ja, 04M) ⭐⭐⭐
+Compare and contrast warm antibody and cold antibody. (DU-08Ja) ⭐
+Narrate the features of haemolysis found in PBF. (DU-12Ju) ⭐
+Write down the general evidence/laboratory features of haemolysis. (DU-12Ju, 09Ja) ⭐⭐
+Write down the evidence of intravascular haemolysis. (DU-21M) ⭐
+Write a short note on Coombs' test (direct). (DU-23N, 20N, 20Ju, 19M, 12Ja, 08Ja, 05Ja) ⭐⭐⭐⭐⭐⭐⭐
+What do you mean by haemolytic disease of newborn? (DU-18M) ⭐
+## Bleeding disorders
+Define hemorrhagic disorders with example. (DU-24N) ⭐
+Classify bleeding (haemorrhagic) disorders. (DU-26M, 25N, 22M, 17Nov, 16Ja, 14Ja) ⭐⭐⭐⭐⭐⭐
+What are the causes of haemorrhagic disorders? (DU-03M) ⭐
+What screening tests are done for bleeding disorders (with interpretation)? (DU-26M, 23N, 22N, 21M, 19Nov, 18Nov, 17M, 16Ju, 13Ju, 12Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Give the normal findings and expected changes in ITP, hemophilia and DIC. (DU-18Nov, 17M) ⭐⭐
+Define thrombocytopenia. (DU-26M, 25M) ⭐⭐
+What are the causes of thrombocytopenia? (DU-26M, 25M, 11Ja) ⭐⭐⭐
+Discuss in short the pathogenesis of ITP. (DU-24M) ⭐
+Give the blood and bone marrow picture of ITP. (DU-25M, 19M, 18Nov) ⭐⭐⭐
+Write a short note on ITP. (DU-13Ja, 09Ja, 08Ja) ⭐⭐⭐
+How is ITP diagnosed in the laboratory? (DU-24M, 22M, 20N, 20Ju, 18M, 17Nov, 16Ju, 15Ja, 14Ja, 12Ja, 11Ja, 09Ju, 07Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+A child has purpuric rash/gum bleeding, thrombocytopenia, normocellular marrow with active megakaryopoiesis. What is the likely diagnosis? (DU-20N, 20Ju, 18M, 09Ju) ⭐⭐⭐⭐
+What are the causes of gum bleeding? (DU-23N) ⭐
+Why is APTT prolonged in hemophilia? (DU-23N) ⭐
+Give the laboratory diagnosis of DIC. (DU-24N) ⭐
+What do you mean by coagulation disorders? (DU-08Ju) ⭐
+Classify coagulation disorders. (DU-22N, 15Ja, 11Ju) ⭐⭐⭐
+Write a short note on von Willebrand disease. (DU-10Ju) ⭐
+Write a short note on hemophilia (A) / its characteristic features. (DU-24N, 22N, 12Ju, 10Ja, 07Ja) ⭐⭐⭐⭐⭐
+Why is hemophilia called an X-linked recessive disorder? (DU-19Nov) ⭐
+Give the laboratory diagnosis/findings of hemophilia. (DU-26M, 24M, 22M, 19Nov, 17Ja, 16Ja, 14Ja, 11Ja, 09Ja, 08Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+A boy has hemarthrosis after a small fall; maternal uncle bled after tooth extraction. What is your provisional diagnosis? (DU-26M, 24M, 22M, 17Ja, 14Ja) ⭐⭐⭐⭐⭐
+Same: what type of disease is it? (DU-26M) ⭐
+Describe the pathogenesis of DIC. (DU-25N, 18M, 09Ju) ⭐⭐⭐
+Explain why bleeding occurs in DIC. (DU-09Ja) ⭐
+## Blood grouping & transfusion
+Name the blood groups with their antigens. (DU-14Ju) ⭐
+What are the commonly used blood products? (DU-17Ja, 14Ju) ⭐⭐
+What are the indications of blood transfusion? (DU-17Ja, 15Ja, 13Ju, 08Ju) ⭐⭐⭐⭐
+Why is cross matching essential for blood transfusion? (DU-08Ja) ⭐
+What are the hazards/complications of blood transfusion? (DU-22N, 14Ja, 13Ja, 08Ju) ⭐⭐⭐⭐
+Write a short note on mismatched blood transfusion (adverse effects). (DU-21M, 19Nov, 18Nov) ⭐⭐⭐
+Name the immediate blood transfusion reactions. (DU-14Ja) ⭐
+What is hemolytic transfusion reaction? (DU-07Ju) ⭐
+Mention the diseases transmitted by blood transfusion. (DU-18M, 17Ja) ⭐⭐
+Write a short note on Rh-incompatibility. (DU-13Ju, 11Ju, 04Ja, 03Ja) ⭐⭐⭐⭐
+Mention 4 important hematological changes of stored blood. (DU-08Ja) ⭐
+Write a short note on preservation of blood. (DU-10Ju) ⭐
+Name the commonly used anticoagulants with advantages (incl. those in blood bag). (DU-21M, 14Ju, 13Ja, 08Ja) ⭐⭐⭐⭐
+# CHAPTER 15 | The Lung
+## DU written questions
+What do you mean by chronic obstructive and restrictive lung diseases? (DU-18M) ⭐
+Define emphysema. (DU-25N, 24N, 18M) ⭐⭐⭐
+Classify emphysema. (DU-25N, 24N, 18M) ⭐⭐⭐
+Write down the pathogenesis of emphysema. (DU-24N, 18M) ⭐⭐
+What is pneumonia? (DU-25M, 19M, 17Nov, 10Ju) ⭐⭐⭐⭐
+Give the types of pneumonia. (DU-21M) ⭐
+Discuss the pathogenesis of lobar pneumonia. (DU-06Ja) ⭐
+What are the stages of lobar pneumonia? (DU-25M, 21M, 19M, 17Nov, 10Ju) ⭐⭐⭐⭐⭐
+Discuss the morphology of lobar pneumonia. (DU-06S, 06Ja) ⭐⭐
+Write the complications of pneumonia. (DU-25M, 21M) ⭐⭐
+What are the differences between bronchopneumonia and lobar pneumonia? (DU-17Nov, 10Ju) ⭐⭐
+Name the etiologic agents of pneumonia. (DU-19M) ⭐
+What investigations are done to diagnose a case of pneumonia? (DU-19M) ⭐
+Write a short note on COPD. (DU-13Ju) ⭐
+What are Ghon's focus and Ghon's complex? (DU-17M, 14Ja, 13Ja) ⭐⭐⭐
+What are the sites of primary and secondary tuberculosis in lung? (DU-14Ja) ⭐
+What are the fates of primary tuberculosis of lung? (DU-14Ja) ⭐
+Give in short the pathogenesis of pulmonary tuberculosis. (DU-06M) ⭐
+Define miliary tuberculosis. (DU-09Ja) ⭐
+Discuss the pathological characteristics of secondary pulmonary TB. (DU-09Ja) ⭐
+Write a short note on Mantoux test/tuberculin test. (DU-07Ju) ⭐
+A patient has cough, evening rise of temperature, weight loss (± cervical lymphadenopathy, apical opacity). What is your probable diagnosis? (DU-26M, 24M, 22M, 17Ja, 13Ja) ⭐⭐⭐⭐⭐
+Same: what laboratory investigations/tests (incl. on lymph node) confirm it? (DU-26M, 24M, 22M, 17Ja, 13Ja) ⭐⭐⭐⭐⭐
+Same (27y with hemoptysis): what microscopic findings do you expect? (DU-13Ja) ⭐
+Write a short note on lung abscess. (DU-19Nov) ⭐
+Classify tumours of lung (WHO classification of bronchogenic carcinoma). (DU-20N, 20Ju, 18Nov, 16Ju) ⭐⭐⭐⭐
+Write down briefly the morphology of small cell carcinoma of lung. (DU-08Ja) ⭐
+How will you diagnose/investigate a case of bronchogenic carcinoma? (DU-20N, 20Ju, 18Nov, 14Ju, 12Ja, 11Ja) ⭐⭐⭐⭐⭐⭐
+A smoker has cough, hemoptysis, chest mass/opacity, supraclavicular or cervical node. What is the most likely diagnosis? (DU-14Ju, 12Ja, 11Ja) ⭐⭐⭐
+# CHAPTER 17 | The Gastrointestinal Tract
+## DU written questions
+List four congenital anomalies of GIT. (DU-17M) ⭐
+What are the ulcerative lesions/different ulcers of GIT? (DU-25M, 23N, 22N, 21M, 18Nov, 17Nov, 17Ja) ⭐⭐⭐⭐⭐⭐⭐
+What is peptic ulcer disease (PUD)? (DU-26M, 24M, 19Nov, 17Nov, 14Ja, 13Ja, 11Ja, 07Ja) ⭐⭐⭐⭐⭐⭐⭐⭐
+Mention the common site of PUD. (DU-26M, 17Nov, 15Ja, 14Ja) ⭐⭐⭐⭐
+Write down the predisposing factors for peptic ulcer. (DU-25M, 21M, 18Nov) ⭐⭐⭐
+Write in short about the pathogenesis of PUD. (DU-24M, 22N) ⭐⭐
+Explain: H. pylori does not invade the tissues but can cause peptic ulcer. (DU-08Ju) ⭐
+How will you differentiate a benign gastric ulcer from a malignant ulcer? (DU-25M, 23N, 21M, 19Nov, 18Nov, 17Nov, 15Ja) ⭐⭐⭐⭐⭐⭐⭐
+Write the microscopic features/morphology of peptic ulcer. (DU-14Ja, 13Ja, 09Ju) ⭐⭐⭐
+Mention the complications of PUD. (DU-26M, 24M, 23N, 22N, 19Nov, 15Ja, 14Ja, 13Ja, 11Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+What is Barrett esophagus? (DU-08Ju, 06S, 06Ja) ⭐⭐⭐
+Mention the clinical importance of Barrett esophagus. (DU-08Ju) ⭐
+Write a short note on GIST. (DU-20N, 20Ju) ⭐⭐
+Write a short note on villous adenoma. (DU-16Ju) ⭐
+Write a short note on Hirschsprung disease. (DU-12Ju) ⭐
+Write a short note on carcinoid tumour. (DU-03Ja) ⭐
+Define polyp. (DU-25N, 13Ju) ⭐⭐
+Write down the types/names of GI polyps. (DU-25N, 13Ju) ⭐⭐
+Mention the polyps having malignant potential. (DU-25N) ⭐
+List five causes of malabsorption syndrome. (DU-16Ja, 14Ju) ⭐⭐
+What is inflammatory bowel disease? (DU-11Ju) ⭐
+Mention three important features of Crohn disease. (DU-17Ja) ⭐
+Name the inflammatory bowel diseases. (DU-26M, 24N) ⭐⭐
+Give the differences between Crohn's disease and ulcerative colitis. (DU-26M, 24N, 17Nov, 17M, 17Ja, 16Ja, 14Ju, 13Ju, 11Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+A patient with long-standing PUD has repeated/prolonged vomiting. What will be his electrolyte and acid-base status? (DU-24M, 16Ju, 10Ju, 09Ju, 08Ja, 07Ja) ⭐⭐⭐⭐⭐⭐
+Same (40y): what test confirms it in the laboratory? (DU-24M) ⭐
+Same (55y): what is the likely diagnosis of his present illness? (DU-16Ju) ⭐
+A 30y man has epigastric pain after meals and at late night with nausea, vomiting. What is the likely diagnosis? (DU-no yr) ⭐
+Same: what complications can occur? (DU-no yr) ⭐
+A young male has acute abdominal pain, vomiting, fever, RIF tenderness, neutrophilic leukocytosis. What is your diagnosis? (DU-26M, 19Nov, 15Ja) ⭐⭐⭐
+Same: write down the possible complications. (DU-26M, 19Nov) ⭐⭐
+Same: what do you expect in the histopathology after operation? (DU-15Ja) ⭐
+Write a short note on occult blood test. (DU-10Ja, 06S) ⭐⭐
+What is pleocytosis? (DU-10Ju) ⭐
+# CHAPTER 18 | Liver and Gallbladder
+## Cirrhosis
+Define cirrhosis of liver. (DU-25N, 24N, 22M, 17M, 13Ju, 12Ja) ⭐⭐⭐⭐⭐⭐
+Name the etiology of cirrhosis. (DU-24N, 18M, 16Ju, 15Ja, 13Ju, 10Ja, 07Ja) ⭐⭐⭐⭐⭐⭐⭐
+Write the etiopathogenesis of cirrhosis. (DU-25N) ⭐
+What are the complications of cirrhosis? (DU-25N, 24N, 12Ja) ⭐⭐⭐
+How is ascites formed in cirrhosis of liver? (DU-22M, 18M, 16Ju, 12Ja, 09Ja) ⭐⭐⭐⭐⭐
+Write the mechanism of cirrhotic death. (DU-10Ja) ⭐
+A male has jaundice, gynaecomastia, testicular atrophy/abdominal distension, ascites. What is the likely diagnosis? (DU-15Ja, 12Ja) ⭐⭐
+Same (40y): name the liver function tests expected to be altered. (DU-12Ja) ⭐
+What is hepatic encephalopathy? (DU-18M, 16Ju) ⭐⭐
+Enumerate the important causes of ascites. (DU-21M) ⭐
+## Hepatitis, HCC, gallbladder
+Name common pathological conditions of hepatomegaly. (DU-04M) ⭐
+Name the hepatotropic viruses. (DU-26M) ⭐
+Discuss the clinical outcomes of hepatitis B virus infection. (DU-26M) ⭐
+Mention the microscopic features of liver in acute and chronic viral hepatitis. (DU-17M) ⭐
+What alterations occur in liver function tests in acute viral hepatitis / chronic liver disease? (DU-17M, 11Ja) ⭐⭐
+Write down the etiology of hepatocellular carcinoma. (DU-07Ja) ⭐
+A 30y male with recent blood transfusion has jaundice, weakness. What are the possible fates/outcomes of such a case? (DU-20N, 20Ju, 19Nov) ⭐⭐⭐
+Same (with anorexia, high SGPT): what is the provisional diagnosis? (DU-19Nov) ⭐
+A 59y male with HBV history has hepatomegaly, SOL in right lobe on USG. How will you proceed to diagnose? (DU-08Ju) ⭐
+Same: what are your expected findings? (DU-08Ju) ⭐
+Give an outline of the spectrum of liver diseases associated with alcohol abuse. (DU-10Ju) ⭐
+What are the factors that favour stone formation within gallbladder? (DU-09Ja) ⭐
+## Liver function tests
+What are the liver function tests (names, normal values; short note)? (DU-25N, 24M, 22M, 19M, 18Nov, 17Ja, 15Ja, 13Ja, 11Ja, 09Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Name synthetic liver function tests. (DU-26M) ⭐
+Name two causes of raised prothrombin time. (DU-22M, 17Ja) ⭐⭐
+Why is prothrombin time more specific than total protein estimation? (DU-09Ja) ⭐
+## Jaundice
+What is jaundice? (DU-17Nov, 16Ja, 08Ju) ⭐⭐⭐
+Classify jaundice. (DU-05Ja) ⭐
+Give the differences between hemolytic and obstructive jaundice. (DU-14Ja) ⭐
+What is physiological jaundice? (DU-14Ja) ⭐
+Mention 2 important causes of obstructive jaundice. (DU-07Ju) ⭐
+What enzymes are elevated in hepatocellular and obstructive jaundice (AST, ALT, ALP interpretation)? (DU-21M, 13Ja) ⭐⭐
+Give the urinary findings of obstructive jaundice. (DU-21M, 16Ja) ⭐⭐
+What is acholuric jaundice? (DU-10Ja) ⭐
+How will you differentiate hemolytic, hepatocellular and obstructive jaundice biochemically? (DU-25M, 23N, 17Nov, 15Ja, 14Ju, 10Ja, 08Ju) ⭐⭐⭐⭐⭐⭐⭐
+How will you investigate a case of hemolytic jaundice? (DU-08Ju) ⭐
+Write a short note on obstructive jaundice. (DU-13Ju) ⭐
+Write a short note on unconjugated hyperbilirubinemia. (DU-12Ja) ⭐
+Write a short note on kernicterus. (DU-11Ju) ⭐
+A patient has jaundice, pruritus, bulky pale stool, raised ALP / gallstones with palpable gallbladder. What type of jaundice is this? (DU-25M, 14Ju) ⭐⭐
+# CHAPTER 20 | The Kidney
+## Glomerular diseases
+Classify glomerular disease. (DU-26M) ⭐
+Name the primary glomerular diseases. (DU-19Nov, 11Ju) ⭐⭐
+What is nephrotic syndrome? (DU-26M, 17Ja, 12Ju, 08Ja) ⭐⭐⭐⭐
+What are the causes of nephrotic syndrome? (DU-17M, 12Ju) ⭐⭐
+Write a short note on nephrotic syndrome. (DU-24N, 15Ja) ⭐⭐
+What are the urinary/biochemical findings of nephrotic syndrome? (DU-26M, 18M, 16Ju, 14Ju, 12Ja, 10Ju, 06Ja) ⭐⭐⭐⭐⭐⭐⭐
+How will you investigate/diagnose a case of nephrotic syndrome? (DU-04Ja, 03Ja) ⭐⭐
+What is nephritic syndrome (AGN)? (DU-26N, 22M, 20N, 20Ju, 09Ja, 08Ja) ⭐⭐⭐⭐⭐⭐
+Write down the pathogenesis of acute post-streptococcal glomerulonephritis. (DU-25N, 22M, 20N, 20Ju, 19N, 17Ja, 12Ja, 09Ja) ⭐⭐⭐⭐⭐⭐⭐⭐
+What are the urinary findings of acute glomerulonephritis? (DU-25N, 25M, 23N, 22M, 20N, 20Ju, 19Nov, 18M, 18Nov, 17Nov, 16Ja, 16Ju, 14Ja, 14Ju, 12Ja, 11Ju, 10Ja, 10Ju, 06Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Mention the complications of acute glomerulonephritis. (DU-11Ju) ⭐
+Write the laboratory investigations to differentiate AGN from nephrotic syndrome. (DU-17M) ⭐
+A child has oliguria, cocoa-coloured urine, periorbital puffiness after sore throat/skin infection. What is the probable diagnosis? (DU-25M, 23N, 18Nov, 17Nov, 14Ja, 10Ja) ⭐⭐⭐⭐⭐⭐
+## Renal failure, tumours, UTI
+List the causes of acute renal failure. (DU-no yr) ⭐
+A 6y girl has watery stool then cessation of micturition. What is the most likely mechanism? (DU-08Ja) ⭐
+Classify tumours of kidney. (DU-10Ja) ⭐
+Write down the morphology of renal cell carcinoma (short note). (DU-10Ja) ⭐
+Write a short note on Wilms' tumour/nephroblastoma. (DU-06M) ⭐
+A male has haematuria, loin pain, palpable lumbar mass. What is the likely diagnosis? (DU-18M, 09Ju) ⭐⭐
+Same: what are the histologic types of this lesion? (DU-18M) ⭐
+Same: how will you confirm it? (DU-09Ju) ⭐
+Why is UTI more common in females? (DU-09Ju) ⭐
+What is recurrent UTI? (DU-09Ju) ⭐
+Write the importance of recurrent UTI. (DU-09Ju) ⭐
+What is pyelonephritis? (DU-11Ja) ⭐
+Describe the pathogenesis of ascending infection in pyelonephritis. (DU-11Ja) ⭐
+What are the complications of acute pyelonephritis? (DU-11Ja) ⭐
+## Renal function tests & urine
+Give the normal serum concentration of uric acid. (DU-03Ja) ⭐
+Give the normal serum albumin value. (DU-11Ja) ⭐
+Give the normal serum urea value. (DU-11Ja) ⭐
+Give the normal serum creatinine value. (DU-11Ja) ⭐
+Name the important renal function tests with interpretation and normal values. (DU-26M, 24N, 24M, 22M, 16Ju, 14Ja, 12Ju, 12Ja, 10Ju, 09Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Name the routine tests/investigations done on urine. (DU-26M, 24N, 13Ja) ⭐⭐⭐
+What do you mean by renal clearance test? (DU-07Ju) ⭐
+Write about the causes of uremia. (DU-15Ja) ⭐
+What do you mean by massive proteinuria? (DU-25M, 24M, 14Ja, 11Ja, 06S) ⭐⭐⭐⭐⭐
+What are the causes of massive proteinuria? (DU-22N, 13Ja, 11Ju, 09Ja, 07Ju) ⭐⭐⭐⭐⭐
+Name the tests we do for proteinuria. (DU-09Ju) ⭐
+What are the causes of proteinuria? (DU-no yr) ⭐
+How do you perform the heat coagulation test of urine? (DU-05M, 03M) ⭐⭐
+Mention the chemical examinations done in urine with their principles. (DU-16Ju, 13Ju, 08Ju) ⭐⭐⭐
+What is microalbumin? Write its importance. (DU-09Ju) ⭐
+What are the reducing substances/agents found in urine? (DU-22N, 14Ju, 05Ja) ⭐⭐⭐
+How do you perform Benedict's test and interpret it? (DU-23N, 21M, 03S) ⭐⭐⭐
+Why is serum creatinine more specific than blood urea? (DU-14Ja, 12Ju, 08Ja, 07Ju) ⭐⭐⭐⭐
+Give the clinical importance of serum creatinine. (DU-11Ja, 10Ja, 10Ju) ⭐⭐⭐
+State the clinical significance of raised serum uric acid. (DU-10Ju, 10Ja, 08Ja, 03Ja) ⭐⭐⭐⭐
+Name the causes of hyperuricaemia. (DU-08Ja) ⭐
+What is renal glycosuria? (DU-26M, 24N, 11Ja) ⭐⭐⭐
+Why is sugar present in renal glycosuria? (DU-23N) ⭐
+Write a short note on haematuria. (DU-19Nov, 08Ju) ⭐⭐
+Enumerate the important causes of haematuria. (DU-24M, 16Ju, 13Ju, 08Ju) ⭐⭐⭐⭐
+Write a short note on microscopic haematuria. (DU-12Ju) ⭐
+Define oliguria. (DU-18M, 14Ju) ⭐⭐
+Mention the causes of oliguria. (DU-18M, 14Ju) ⭐⭐
+# CHAPTER 21 | The Lower Urinary Tract and Male Genital System
+## Testis, prostate, infertility
+Classify testicular (germ cell) tumours. (DU-25N, 24M, 22N, 21M, 19M, 17M, 17Ja, 15Ja, 09Ja, 08Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Name the testicular tumour markers. (DU-16Ju, 14Ja, 13Ju, 12Ju) ⭐⭐⭐⭐
+Mention the uses of testicular tumour markers. (DU-13Ju) ⭐
+Name the tumour associated with increased beta-hCG. (DU-14Ja) ⭐
+Write down the morphology of seminoma (short note). (DU-25M, 22N, 12Ja, 11Ja, 09Ju) ⭐⭐⭐⭐⭐
+How does seminoma differ from non-seminomatous germ cell tumour? (DU-19M, 17Ja, 15Ja, 13Ju, 12Ju) ⭐⭐⭐⭐⭐
+How will you investigate a case of testicular mass/tumour in the laboratory? (DU-24M, 21M, 16Ju, 10Ju) ⭐⭐⭐⭐
+A 30y man has painless testicular swelling. What is your provisional diagnosis? (DU-10Ju) ⭐
+What is cryptorchidism? (DU-25N, 19M, 11Ju) ⭐⭐⭐
+Write a short note on benign prostatic hyperplasia (70y male with prostatism: likely diagnosis). (DU-18M, 04M) ⭐⭐
+Mention the important diagnostic workup for BPH. (DU-18M) ⭐
+What are the common hormones done in male and female to evaluate infertility? (DU-13Ju) ⭐
+How will you investigate a case of male infertility in the laboratory? (DU-17M) ⭐
+## Semen analysis
+Mention the indications of semen analysis. (DU-24N, 21M, 19M, 18Nov, 17Ja, 16Ja, 15Ja, 14Ja, 12Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+How is semen collected? (DU-19M, 18Nov, 15Ja) ⭐⭐⭐
+Mention the normal findings of semen. (DU-19M, 18Nov, 17Ja, 16Ja, 15Ja, 14Ja, 12Ja) ⭐⭐⭐⭐⭐⭐⭐
+What is oligospermia? (DU-24N, 16Ja, 14Ja) ⭐⭐⭐
+What is azoospermia? (DU-24N) ⭐
+Write down the causes of azoospermia. (DU-24N, 19M, 18Nov, 17Ja, 15Ja) ⭐⭐⭐⭐⭐
+Write a short note on semen analysis. (DU-13Ja, 10Ju, 09Ju, 09Ja, 08Ja, 07Ja) ⭐⭐⭐⭐⭐⭐
+# CHAPTER 22 | The Female Genital Tract
+## DU written questions
+Write down the risk factors for carcinoma of cervix. (DU-no yr) ⭐
+Describe briefly the pathogenesis of carcinoma cervix. (DU-07Ju) ⭐
+State the role of HPV in causing carcinoma of cervix. (DU-25N, 19M) ⭐⭐
+What is CIN? (DU-25N, 19M, 08Ja) ⭐⭐⭐
+Mention the diagnostic tools of cervical cancer. (DU-19M) ⭐
+Write a short note on Pap smear. (DU-18Nov) ⭐
+Write a short note on endometriosis. (DU-07Ja, 06Ja) ⭐⭐
+What is dermoid cyst of ovary? Describe its morphology. (DU-26M, 25M, 24M, 22M, 11Ju, 10Ja, 06Ja) ⭐⭐⭐⭐⭐⭐⭐
+Classify ovarian tumours. (DU-14Ja, 06Ja) ⭐⭐
+Classify germ cell tumours of ovary. (DU-26M) ⭐
+Classify the surface epithelial tumours of ovary. (DU-16Ja) ⭐
+List the tumour markers associated with ovarian tumour. (DU-16Ja, 14Ja) ⭐⭐
+A female has PV bleeding/discharge, contact bleeding, an ulcerated/friable/fungating cervical growth. What is the likely diagnosis? (DU-26M, 24N, 23N, 22N, 21M, 20N, 20Ju, 19Nov, 13Ju, 11Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Same: what do you expect in histopathology? (DU-22N, 21M, 13Ju) ⭐⭐⭐
+Same: name the microbial agent/oncogenic virus associated with it. (DU-26M, 22N, 21M, 13Ju) ⭐⭐⭐⭐
+Same: how will you confirm it / which investigations are needed? (DU-24N, 23N, 20N, 20Ju, 19Nov, 11Ja) ⭐⭐⭐⭐⭐⭐
+A 60y woman has postmenopausal bleeding with thick endometrium on USG. What is the provisional diagnosis? (DU-17M, 16Ju) ⭐⭐
+Same: how can you confirm it? (DU-17M, 16Ju) ⭐⭐
+# CHAPTER 23 | The Breast
+## DU written questions
+Name inflammatory lesions of breast. (DU-26M) ⭐
+Classify breast tumour/carcinoma. (DU-25M, 23N, 19Nov, 14Ju, 07Ju) ⭐⭐⭐⭐⭐
+Write down the molecular classification of breast cancer. (DU-25N) ⭐
+What are the causes of breast lump? (DU-26M, 08Ju) ⭐⭐
+What are the risk factors of breast carcinoma? (DU-08Ju) ⭐
+What are the prognostic (and predictive) factors of breast cancer? (DU-25M, 23N, 19Nov, 16Ju, 14Ju) ⭐⭐⭐⭐⭐
+What is the role of ER, PR and HER-2 neu in breast cancer? (DU-23N) ⭐
+Give the morphology of fibroadenoma of breast. (DU-03M) ⭐
+Short note on Paget's disease of nipple. (DU-04S) ⭐
+A woman has a hard, firm breast lump fixed to tissue (± skin dimpling). What is your likely diagnosis? (DU-13Ja, 11Ju) ⭐⭐
+Same: what investigations would you perform? (DU-13Ja, 11Ju) ⭐⭐
+# CHAPTER 24 | The Endocrine System
+## Thyroid
+Enumerate the tumours of thyroid. (DU-07Ju) ⭐
+Name the malignant tumours of thyroid. (DU-07Ja) ⭐
+Mention four important causes of hypothyroidism. (DU-25N) ⭐
+What is goitre? (DU-17Nov) ⭐
+What are the causes of goitre? (DU-18M, 17Nov) ⭐⭐
+Give the etiopathogenesis of multinodular goitre. (DU-18M) ⭐
+Write a short note on papillary carcinoma of thyroid (microscopic morphology). (DU-17Nov, 12Ja) ⭐⭐
+Write in short the pathogenesis of Hashimoto's thyroiditis. (DU-25N, 18Nov, 11Ja) ⭐⭐⭐
+What are the expected laboratory findings in Hashimoto's thyroiditis? (DU-06Ja) ⭐
+How will you differentiate papillary carcinoma from follicular carcinoma of thyroid? (DU-07Ju) ⭐
+A 30y lady has diffuse thyroid enlargement with exophthalmos. What is your clinical diagnosis (Graves' disease)? (DU-19M, 14Ju, 13Ju, 12Ja, 12Ju, 08Ju) ⭐⭐⭐⭐⭐⭐
+Same: what will be the status of thyroid hormone level? (DU-13Ju) ⭐
+## Diabetes mellitus
+Define diabetes mellitus. (DU-26M, 25M, 22M, 17Nov) ⭐⭐⭐⭐
+How is diabetes mellitus classified? (DU-25M, 22M, 18Nov, 17Nov, 17M, 17Ja, 14Ju) ⭐⭐⭐⭐⭐⭐⭐
+Mention the difference between type-I and type-II DM. (DU-25N, 18M) ⭐⭐
+Give the WHO (diagnostic) criteria of diabetes mellitus. (DU-23N, 20N, 20Ju, 19Nov, 14Ju) ⭐⭐⭐⭐⭐
+Define gestational DM. (DU-09Ja) ⭐
+What are the clinical features of a diabetic patient? (DU-03Ja) ⭐
+What is OGTT? Write its procedure, indications and interpretation. (DU-24M, 22N, 21M, 18Nov, 17M, 15Ja, 13Ju, 11Ja) ⭐⭐⭐⭐⭐⭐⭐⭐
+What is the normal fasting blood glucose level? (DU-15Ja) ⭐
+What is impaired glucose tolerance (IGT)? (DU-15Ja, 12Ja) ⭐⭐
+Draw different types of diabetic curves. (DU-09Ja) ⭐
+What is HbA1c (glycosylated haemoglobin)? (DU-25N, 20N, 20Ju, 16Ju, 04M) ⭐⭐⭐⭐⭐
+What is hyperglycaemia? (DU-12Ju) ⭐
+Mention the important causes of hyperglycaemia. (DU-05M) ⭐
+What is hyperglycaemia sine glycosuria? Why is sugar absent in urine? (DU-22N, 21M, 09Ju, 08Ju) ⭐⭐⭐⭐
+Write the complications of diabetes mellitus (macro- and microvascular). (DU-26M, 25M, 22M, 20N, 20Ju, 19Nov, 18Nov, 18M, 17Nov, 17M, 17Ja, 15Ja, 13Ju, 12Ju) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+What are ketone bodies (ketonuria)? (DU-16Ju, 11Ju, 10Ja) ⭐⭐⭐
+Write a short note on ketoacidosis / discuss the pathogenesis of DKA. (DU-26M, 24N, 23N, 19M, 17Ja, 11Ju, 12Ju) ⭐⭐⭐⭐⭐⭐⭐
+A 48y diabetic became unconscious after chest infection with musty odour in breath. What may be the likely urine finding? (DU-12Ju) ⭐
+A 58y obese male has weight loss, FBS 6.6, RBS 10.0 mmol/L, raised lipids. What is the diagnosis? (DU-11Ju) ⭐
+Same: how will you investigate the case? (DU-11Ju) ⭐
+# CHAPTER 25 | The Skin
+## DU written questions
+Write a short note on basal cell carcinoma. (DU-10Ju, 08Ju) ⭐⭐
+Write a short note on nevus. (DU-03S) ⭐
+A 70y male has a black ulcerated lesion of right great toe for 6 months, spreading rapidly. What is the differential diagnosis? (DU-17Ja) ⭐
+Same: how will you confirm the disease? (DU-17Ja) ⭐
+# CHAPTER 26 | Bones, Joints, and Soft Tissue Tumors
+## DU written questions
+What is osteomyelitis? (DU-25N, 20N, 20Ju, 19M, 18M, 10Ju) ⭐⭐⭐⭐⭐⭐
+Name the different types of osteomyelitis. (DU-25N, 20N, 20Ju) ⭐⭐⭐
+What are its predisposing factors, etiologic agents and causes? (DU-19M, 18M) ⭐⭐
+Give the morphology of pyogenic osteomyelitis. (DU-21M, 19M, 18M, 16Ju) ⭐⭐⭐⭐
+Write the pathogenesis (aetiopathogenesis) of (chronic) osteomyelitis. (DU-25M, 10Ju) ⭐⭐
+Write a short note on chronic osteomyelitis. (DU-22N, 14Ju, 13Ju, 10Ju) ⭐⭐⭐⭐
+Write the complications of (chronic) osteomyelitis. (DU-25M, 20N, 20Ju) ⭐⭐⭐
+Name the bone-forming tumours / classify bone tumours. (DU-25N, 09Ju) ⭐⭐
+Write in brief about the morphology of osteosarcoma. (DU-25N, 09Ju, 09Ja, 07Ju) ⭐⭐⭐⭐
+Write a short note on Pott's disease. (DU-19Nov) ⭐
+Write a short note on Ewing's sarcoma. (DU-17Ja, 05Ja) ⭐⭐
+Write a short note on giant cell tumour of bone. (DU-24M, 23N) ⭐⭐
+Name 2 systemic diseases that affect joints. (DU-09Ja) ⭐
+A 16y boy has severe left tibial pain, high fever, TLC 18000, periosteal thickening on X-ray. What is your clinical diagnosis? (DU-18Nov) ⭐
+Same: how would you confirm it? (DU-18Nov) ⭐
+# CHAPTER 28 | The Central Nervous System
+## DU written questions
+Write a short note on peculiarities of CNS neoplasm. (DU-23N) ⭐
+Write a short note on meningioma. (DU-07Ja) ⭐
+Write down the indications of CSF examination. (DU-24M, 22M, 19Nov, 18M, 09Ju) ⭐⭐⭐⭐⭐
+What is meningitis? What are the types? (DU-26M, 20N, 20Ju) ⭐⭐⭐
+What are the causes of neonatal meningitis? (DU-23N) ⭐
+Mention the CSF findings of different types of meningitis. (DU-26M, 10Ju) ⭐⭐
+Give the differences in CSF findings between pyogenic, tubercular and viral meningitis. (DU-23N, 22M, 20N, 20Ju, 19Nov, 18M, 16Ju, 14Ju, 13Ju, 12Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Why is glucose reduced in pyogenic meningitis? (DU-26M, 23N) ⭐⭐
+Why is CSF appearance turbid in pyogenic meningitis? (DU-24M) ⭐
+A patient has high fever, neck rigidity/pain, ± purpuric rash, leukocytosis. What is your clinical diagnosis? (DU-25N, 24N, 22N, 21M, 17M, 17Ja, 16Ja, 15Ja) ⭐⭐⭐⭐⭐⭐⭐⭐
+Same: what investigations/CSF findings will confirm it? (DU-25N, 24N, 22N, 21M, 19Nov, 17M, 17Ja, 16Ja, 15Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐
+# CHAPTER 30 | Clinical Biochemistry (not in Robbins)
+## Acid–base & electrolytes
+Give the normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻. (DU-16Ja, 15Ja, 05Ja, 03S) ⭐⭐⭐⭐
+What is the normal pH of blood and urine? (DU-12Ju) ⭐
+What do you mean by metabolic acidosis? (DU-22N, 22M, 18Nov, 11Ja) ⭐⭐⭐⭐
+What are the causes of metabolic acidosis? (DU-18Nov, 17M, 16Ja, 12Ju, 11Ja) ⭐⭐⭐⭐⭐
+What is metabolic alkalosis? (DU-18Nov, 09Ja, 07Ju) ⭐⭐⭐
+What conditions may lead to metabolic alkalosis? Give the biochemical changes. (DU-04M) ⭐
+Write a short note on respiratory acidosis. (DU-20N, 20Ju) ⭐⭐
+A 10y boy has severe diarrhoea. What changes do you expect in his electrolyte and acid-base status? (DU-18Nov, 10Ja) ⭐⭐
+A 25y man in shock after RTA passed 40 ml urine in 24 h. What will be his acid-base and electrolyte status? (DU-09Ja) ⭐
+Write the clinical importance of serum calcium. (DU-10Ja) ⭐
+## Enzymes
+What are the indications of enzymes of clinical importance? (DU-24N, 23N, 21M) ⭐⭐⭐
+Give the clinical importance of ALT. (DU-10Ju, 10Ja, 08Ja) ⭐⭐⭐
+Give the clinical importance of AST. (DU-10Ju, 10Ja, 08Ja) ⭐⭐⭐
+Give the clinical importance of LDH. (DU-10Ju) ⭐
+Give the clinical importance of PSA. (DU-10Ju, 10Ja, 08Ja) ⭐⭐⭐
+Give the clinical importance of serum amylase. (DU-11Ja, 11Ju, 10Ja, 08Ju, 08Ja) ⭐⭐⭐⭐⭐
+Give the clinical importance of acid phosphatase. (DU-11Ju, 05M) ⭐⭐
+Give the clinical importance of CK-MB. (DU-11Ju) ⭐
+Give the clinical importance of alpha-fetoprotein. (DU-20N, 20Ju, 11Ju) ⭐⭐⭐
+Give the clinical importance of creatine kinase. (DU-05S) ⭐
+## Lipid profile
+What is lipid profile? What are its components and normal range? (DU-25M, 23N, 22N, 21M, 18Nov, 17M, 17Ja, 14Ja, 13Ja, 11Ja, 07Ja) ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+What are the fractions of lipid? (DU-07Ja) ⭐
+Write a short note on lipoprotein. (DU-12Ju) ⭐
+Why is HDL good cholesterol and LDL harmful (which fraction is better)? (DU-23N, 22N, 08Ja, 07Ja) ⭐⭐⭐⭐
+How will you diagnose a case of dyslipidaemia? (DU-22N, 11Ju) ⭐⭐
+## Body fluids
+Name the body fluids usually examined in clinical pathology. (DU-24M, 21M, 16Ju, 14Ju, 13Ju, 12Ja, 10Ju, 09Ja) ⭐⭐⭐⭐⭐⭐⭐⭐

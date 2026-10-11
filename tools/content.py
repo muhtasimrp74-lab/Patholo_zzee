@@ -87,6 +87,7 @@ def _gp_topics():
         # written questions have no A/B card code (those belong to the viva board): code is left blank
         out[ch].append(('', q, body, 'W', len(stars), ref, (ch, sub, topic or sub)))
     _box_viva(out, order)
+    _du_written(out, order)
     order.sort()   # book order (Part A: chapters 2-24, Part B: 13-14)
     return [('c%d' % c, GP_CHAPTERS[c][0], 'hm' if c in HM_CHAPTERS else 'gp', out[c]) for c in order]
 
@@ -136,5 +137,35 @@ def _box_viva(out, order):
         else:
             q = body; ans = ANSWERS.get(q) or '<p>%s</p>' % BOX_NOTE
         out[ch].append((code, q, ans, 'V', stars, '', (ch, sub, topic or sub), {'boxes': bx, 'hl': hl}))
+
+# ---------------------------------------------------------------------------------------------
+# DU WRITTEN QUESTIONS (gp_written_du.txt) - same line format as gp_written.txt, every question tagged (DU-..).
+#   Items carry a 9th element ('late') so build.py numbers them AFTER the written and box-viva questions:
+#   bookmarks, notes and progress already saved on the live site never move. To add more DU questions, append
+#   them to gp_written_du.txt (new ones at the end of the file).
+def _du_written(out, order):
+    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gp_written_du.txt')
+    if not os.path.exists(src): return
+    ch = sub = topic = None
+    for raw in open(src, encoding='utf8'):
+        line = raw.strip()
+        if not line: continue
+        if line.startswith('###'): topic = line[3:].strip(); continue
+        if line.startswith('##'):
+            sub = line[2:].strip(); topic = None
+            if sub not in GP_CHAPTERS[ch][1]: GP_CHAPTERS[ch][1].append(sub)
+            continue
+        if line.startswith('#'):
+            m = _re.match(r'^#\s*CHAPTER\s+(\d+)\s*\|\s*(.+)$', line)
+            if not m: continue          # plain comment line
+            ch = int(m.group(1)); sub = topic = None
+            GP_CHAPTERS.setdefault(ch, (m.group(2).strip(), []))
+            if ch not in out: out[ch] = []; order.append(ch)
+            continue
+        m = _re.match(r'^(.*?)\s*\(((?:DU|BSMMU)[^)]*)\)\s*(\u2b50*)\s*$', line)
+        assert m, 'bad DU line: ' + line
+        q, ref, stars = m.group(1), m.group(2), m.group(3)
+        body = ANSWERS.get(q) or '<p>Answer to be added.</p>'
+        out[ch].append(('', q, body, 'W', len(stars), ref, (ch, sub, topic or sub), {}, 'late'))
 
 TOPICS = _gp_topics()
