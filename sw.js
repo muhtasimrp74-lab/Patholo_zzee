@@ -7,7 +7,7 @@
    - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v66';
+const VERSION = 'pathviva-zzee-v67';
 
 const CORE = [
   'index.html',
@@ -24,6 +24,8 @@ const CORE = [
   'icons/hero-lab.webp',
   'icons/hero-lab-900.webp',
   'icons/hero-lab-m.webp',
+  'icons/footer-banner.webp',
+  'icons/footer-banner-900.webp',
   'icons/pb-questions.webp',
   'icons/pb-questions-900.webp',
   'icons/pb-chapters.webp',
