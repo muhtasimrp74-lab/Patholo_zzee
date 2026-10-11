@@ -88,6 +88,7 @@ def _gp_topics():
         out[ch].append(('', q, body, 'W', len(stars), ref, (ch, sub, topic or sub)))
     _box_viva(out, order)
     _du_written(out, order)
+    _merge_dups(out)
     order.sort()   # book order (Part A: chapters 2-24, Part B: 13-14)
     return [('c%d' % c, GP_CHAPTERS[c][0], 'hm' if c in HM_CHAPTERS else 'gp', out[c]) for c in order]
 
@@ -166,6 +167,63 @@ def _du_written(out, order):
         assert m, 'bad DU line: ' + line
         q, ref, stars = m.group(1), m.group(2), m.group(3)
         body = ANSWERS.get(q) or '<p>Answer to be added.</p>'
-        out[ch].append(('', q, body, 'W', len(stars), ref, (ch, sub, topic or sub), {}, 'late'))
+        out[ch].append(('', q, body, 'W', len(stars), ref, (ch, sub, topic or sub), {}, 2))
+
+# ---------------------------------------------------------------------------------------------
+# SAME QUESTION ON BOTH LISTS. A question asked in the written papers (DU) and also on the box-viva cards is shown ONCE:
+#   one card carrying the A-card tags AND the (DU-..) exam tags, stars added together, type 'B' (shows under Viva and Written).
+#   Matching is done by dupmerge.py (same kind of question about the same subject, inside one chapter).
+#   Ids never move: every member keeps its place in the numbering; the one with the lowest id survives, the others are listed
+#   in DROPPED (build.py skips them and writes ALIAS so notes/bookmarks saved on a dropped id follow the survivor).
+import dupmerge
+DROPPED = set()   # (topic id 'c3', index in that topic's list)
+ALIAS = {}        # (topic id, dropped index) -> (topic id, surviving index)
+def _combine_refs(refs):
+    by, order = {}, []
+    for r in refs:
+        last = None
+        for tok in [t.strip() for t in (r or '').split(',') if t.strip()]:
+            m = _re.match(r'^([A-Za-z]+)-(.+)$', tok)
+            if m: last, tok = m.group(1), m.group(2)
+            last = last or 'DU'
+            if last not in by: by[last] = []; order.append(last)
+            if tok not in by[last]: by[last].append(tok)
+    return ', '.join('%s-%s' % (k, ', '.join(by[k])) for k in order)
+def _plain(t): return _re.sub(r'[^a-z0-9]+', ' ', t.lower()).strip()
+def _merge_dups(out):
+    for ch, items in out.items():
+        info = []
+        for i, it in enumerate(items):
+            box = len(it) == 8 and ' \u2014 ' not in it[1]
+            written = (len(it) == 7) or (len(it) > 8 and it[7] == {})
+            rank = 0 if len(it) == 7 else (1 if len(it) == 8 else it[8])
+            info.append((i, it, box, written, rank, dupmerge.key(it[1]) if (box or written) else None))
+        done = set()
+        for a in range(len(info)):
+            if a in done or info[a][5] is None: continue
+            grp = [a] + [b for b in range(a + 1, len(info)) if b not in done and info[b][5] is not None and dupmerge.same(info[a][5], info[b][5])]
+            ws = [info[x] for x in grp if info[x][3]]; bs = [info[x] for x in grp if info[x][2]]
+            if not ws or not bs: continue
+            done.update(grp)
+            mem = sorted(info[x] for x in grp)           # by (index...) ; survivor = lowest (rank, index)
+            surv = min(mem, key=lambda m: (m[4], m[0]))
+            main = max(ws, key=lambda m: (m[1][4], -m[0]))[1]          # the written wording, most-asked first
+            bx = [b for m in bs for b in m[1][7]['boxes']]
+            hl = any(m[1][7]['hl'] for m in bs)
+            code = ' '.join(sorted({c for m in bs for c in m[1][0].split()}, key=lambda c: int(c[1:]) if c[1:].isdigit() else 0))
+            stars = sum(m[1][4] for m in ws) + sum(m[1][4] for m in bs)
+            refs = _combine_refs([m[1][5] for m in ws])
+            others = []
+            for m in mem:
+                t = m[1][1]
+                if _plain(t) != _plain(main[1]) and all(_plain(t) != _plain(o) for o in others): others.append(t)
+            body = main[2]
+            if others: body = '<p><em>Also asked as:</em> ' + '; '.join(esc(o) for o in others) + '</p>' + body
+            merged = (code, main[1], body, 'B', stars, refs, tuple(bs[0][1][6]), {'boxes': bx, 'hl': hl}, surv[4])
+            items[surv[0]] = merged
+            for m in mem:
+                if m[0] != surv[0]:
+                    DROPPED.add(('c%d' % ch, m[0])); ALIAS[('c%d' % ch, m[0])] = ('c%d' % ch, surv[0])
 
 TOPICS = _gp_topics()
+TOPICS_IDX = {t[0]: i for i, t in enumerate(TOPICS)}

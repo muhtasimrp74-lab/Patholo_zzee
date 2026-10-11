@@ -8,7 +8,7 @@ const cidx={};CH.forEach((c,i)=>cidx[c[0]]=i);
 const ORDER=DATA.filter(d=>TR[d[3]]).slice().sort((a,b)=>cidx[TR[a[3]][0]]-cidx[TR[b[3]][0]]||(+a[3].slice(1))-(+b[3].slice(1)));
 const NUM={};ORDER.forEach((d,i)=>NUM[d[3]]=i+1);
 const byCh={};ORDER.forEach(d=>(byCh[TR[d[3]][0]]=byCh[TR[d[3]][0]]||[]).push(d));
-const isW=d=>TYW[d[3]]==='W';
+const isW=d=>TYW[d[3]]==='W',isB=d=>TYW[d[3]]==='B',kind=d=>isB(d)?'Written + Viva':isW(d)?'Written':'Viva';
 const stars=d=>(EX[d[3]]||[0])[0]||0;
 const years=d=>(EX[d[3]]||[0,'',[]])[2]||[];
 function pageOf(c){const a=byCh[c];if(!a)return null;const n={};a.forEach(d=>n[d[2]]=(n[d[2]]||0)+1);return Object.keys(n).sort((x,y)=>n[y]-n[x])[0]}
@@ -72,7 +72,7 @@ function render(){
  const read=ORDER.filter(d=>L.has(d[3])).length,pc=pct(read,tot);
  const due=Object.values(S.sr).filter(o=>o.d<=now).length,mist=Object.values(S.sr).filter(o=>o.b===0).length;
  const nxt=ORDER.find(d=>!L.has(d[3]));
- const VQ=ORDER.filter(d=>!isW(d)),WQ=ORDER.filter(isW);
+ const VQ=ORDER.filter(d=>!isW(d)),WQ=ORDER.filter(d=>isW(d)||isB(d));
  const vr=VQ.filter(d=>L.has(d[3])).length,wr=WQ.filter(d=>L.has(d[3])).length;
  const nextV=VQ.find(d=>!L.has(d[3])),nextW=WQ.find(d=>!L.has(d[3]));
  const hy=ORDER.filter(d=>!L.has(d[3])&&stars(d)>=3).sort((a,b)=>stars(b)-stars(a)||NUM[a[3]]-NUM[b[3]]);
@@ -95,7 +95,7 @@ function render(){
 
  /* ---------- start here + overall progress ---------- */
  h+='<section class="nh-top"><div class="nh-start"><p class="nh-k">START HERE</p>';
- if(nxt){const t=TR[nxt[3]];h+='<p class="nh-crumb">Q.'+NUM[nxt[3]]+' · '+(isW(nxt)?'Written':'Viva')+' · '+esc2(CH[cidx[t[0]]][1])+' → '+esc2(t[1])+'</p><h2>'+esc2(nxt[1])+'</h2><div class="nh-b"><a class="nh-go" href="'+lnk(nxt)+'">'+(read?'Continue studying':'Begin studying')+'</a><a href="#/questions">Browse all questions</a><a href="#" id="nhrnd">Random unread</a></div>'}
+ if(nxt){const t=TR[nxt[3]];h+='<p class="nh-crumb">Q.'+NUM[nxt[3]]+' · '+kind(nxt)+' · '+esc2(CH[cidx[t[0]]][1])+' → '+esc2(t[1])+'</p><h2>'+esc2(nxt[1])+'</h2><div class="nh-b"><a class="nh-go" href="'+lnk(nxt)+'">'+(read?'Continue studying':'Begin studying')+'</a><a href="#/questions">Browse all questions</a><a href="#" id="nhrnd">Random unread</a></div>'}
  else h+='<h2>Every question has been read.</h2><div class="nh-b"><a class="nh-go" href="#/practice">Rapid Recall</a><a href="#/questions">Browse all questions</a></div>';
  h+='</div><div class="nh-prog"><p class="nh-k">OVERALL PROGRESS</p><div class="nh-pc">'+pc+'<small>%</small></div>'+bar(pc)+'<p class="nh-mu">'+read+' / '+tot+' questions read</p>';
  h+='<div class="nh-split"><div><span>Viva</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'</div><div><span>Written</span><b>'+wr+'<small> / '+WQ.length+'</small></b>'+bar(pct(wr,WQ.length))+'</div></div></div></section>';
@@ -130,7 +130,7 @@ function render(){
  /* ---------- high-yield + weak spots ---------- */
  const chW=CH.map((c,i)=>{const a=byCh[c[0]]||[],r=a.filter(d=>L.has(d[3])).length;return {c,i,n:a.length,r,p:pct(r,a.length)}}).filter(x=>x.n>=5).sort((x,y)=>x.p-y.p||y.n-x.n).slice(0,4);
  h+='<section class="nh-2"><div class="nh-card nh-prog"><h3 class="nh-h2">High-yield, not read yet</h3><p class="nh-mu">Asked often or marked most important. '+hyRead+' of '+hyAll.length+' read.</p>';
- h+=hy.length?'<ul class="nh-hy">'+hy.slice(0,6).map(d=>{const y=years(d);return '<li><a href="'+lnk(d)+'"><span>'+esc2(d[1])+'</span><small><b>★ '+stars(d)+'</b>'+(y.length?' · '+y.slice(-3).reverse().join(', '):'')+' · '+(isW(d)?'Written':'Viva')+'</small></a></li>'}).join('')+'</ul>':'<p class="nh-mu">All high-yield questions are read. Use Rapid Recall to keep them fresh.</p>';
+ h+=hy.length?'<ul class="nh-hy">'+hy.slice(0,6).map(d=>{const y=years(d);return '<li><a href="'+lnk(d)+'"><span>'+esc2(d[1])+'</span><small><b>★ '+stars(d)+'</b>'+(y.length?' · '+y.slice(-3).reverse().join(', '):'')+' · '+kind(d)+'</small></a></li>'}).join('')+'</ul>':'<p class="nh-mu">All high-yield questions are read. Use Rapid Recall to keep them fresh.</p>';
  h+='</div><div class="nh-card nh-prog"><h3 class="nh-h2">Where to focus next</h3>';
  if(mq.weak.length)h+='<p class="nh-k nh-k2">Weakest MCQ topics</p><ul class="nh-wk">'+mq.weak.map(o=>'<li><a href="#/mcqs"><span>'+esc2(MCQDATA.ch[o.c][1][o.t])+'</span><em class="'+(o.a<50?'bad':o.a<70?'warn':'')+'">'+o.a+'%</em></a></li>').join('')+'</ul>';
  h+='<p class="nh-k nh-k2">Least-covered viva chapters</p><ul class="nh-wk">'+chW.map(x=>{const pg=pageOf(x.c[0]);return '<li><a href="'+(pg?'#/'+pg:'#/qa')+'"><span>'+esc2(x.c[1])+'</span><em>'+x.r+'/'+x.n+'</em></a></li>'}).join('')+'</ul></div></section>';
