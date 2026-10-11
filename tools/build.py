@@ -10,7 +10,7 @@ s = open(os.path.join(HERE, 'src/index.base.html'), encoding='utf8').read()
 # while a part has no topics the site shows a tidy "coming soon" panel for it.
 SYS = ['%02d' % i for i in range(1, 16)]
 PART_DEFS = [('A', 'General Pathology', 'gp'), ('B', 'Haematology', 'hm'), ('C', 'Systemic Pathology', 'sys')]
-PARTS = [(L, N, K, SYS if K == 'sys' else [t[0] for t in content.TOPICS if t[2] == K]) for L, N, K in PART_DEFS]
+PARTS = [(L, N, K, (SYS + [t[0] for t in content.TOPICS if t[2] == K]) if K == 'sys' else [t[0] for t in content.TOPICS if t[2] == K]) for L, N, K in PART_DEFS]
 PART_OF = {t: p[2] for p in PARTS for t in p[3]}
 e = lambda t: html.escape(t, quote=False)
 
