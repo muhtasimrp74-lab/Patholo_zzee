@@ -207,7 +207,8 @@
   M.innerHTML=`<div class="mx-rbar"><button type="button" class="mx-link" data-a="custom">‹ Filters</button>${sel}<div class="mx-seg sm"><button type="button" data-a="rshow" aria-pressed="${readOpt.show}">Answers</button><button type="button" data-a="rnotes" aria-pressed="${readOpt.notes}">Notes</button></div><button type="button" class="mx-btn sm" data-a="goprac">Practise ${readCh>=0?'this chapter':'these'}</button></div>
    <p class="mx-note">${hits.length} questions${readCh>=0?' in this chapter':''}</p>
    ${all.length?out:'<div class="mempty"><b>No questions match</b>Change the filters to see more.</div>'}
-   ${readCh<0&&hits.length>readN?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="more">Show ${Math.min(30,hits.length-readN)} more</button><button type="button" class="mx-link" data-a="moreall">Show all ${hits.length}</button></div>`:''}${pager}`}
+   ${readCh<0&&hits.length>readN?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="more">Show ${Math.min(30,hits.length-readN)} more</button><button type="button" class="mx-link" data-a="moreall">Show all ${hits.length}</button></div>`:''}${pager}`;
+  M.querySelectorAll('select.mx-sel').forEach(dd)}
 
  /* ---------- events ---------- */
  function setF(f,v,on){if(f==='ch'){CH[v][1].forEach((_,t)=>{const k=v+'.'+t;on?F.tp.add(k):F.tp.delete(k)})}else{const x=f==='ty'?+v:v;on?F[f].add(x):F[f].delete(x)}}
