@@ -560,7 +560,7 @@ h2,h3.sub,.part-h,.dc,.pc{margin-left:0;margin-right:0}
 @media(max-width:1099px){
  #qf{position:fixed;z-index:120;top:0;bottom:0;left:0;width:min(360px,90vw);transform:translateX(-102%);transition:transform .3s var(--ease);border-radius:0 18px 18px 0;box-shadow:0 0 60px rgba(11,31,58,.3);padding-top:env(safe-area-inset-top,0px)}
  .qf-x{display:inline-grid}.qf-foot{display:block}
- #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.45);opacity:0;pointer-events:none;transition:opacity .25s}
+ #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.32);opacity:0;pointer-events:none;transition:opacity .25s}
  body.qf-open #qf{transform:none}
  body.qf-open #qscrim{opacity:1;pointer-events:auto}
  body.qf-open{overflow:hidden}
@@ -694,7 +694,7 @@ html #tools{background:color-mix(in srgb,var(--panel) 88%,transparent)}
  body.qf-open #qf.dr{transform:none;visibility:visible;box-shadow:0 0 60px rgba(11,31,58,.3);transition:transform .3s var(--ease),visibility 0s}
  #qf.dr .qf-x{display:inline-grid!important}#qf.dr .qf-foot{display:block!important}
  .qfb-x{display:inline-flex!important}
- #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.45);opacity:0;pointer-events:none;transition:opacity .25s}
+ #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.32);opacity:0;pointer-events:none;transition:opacity .25s}
  body.qf-open #qscrim{opacity:1;pointer-events:auto}body.qf-open{overflow:hidden}
 }
 @media(max-width:640px){#qf.dr{top:auto;right:0;width:100%;max-height:86dvh;border-radius:20px 20px 0 0;transform:translateY(104%)}body.qf-open #qf.dr{transform:none}}
@@ -1372,7 +1372,7 @@ body.calm .xm,body.calm .acts{opacity:.9}
 
 /* ---- Smoother page transitions (views fade and glide in; skipped for reduced motion) ---- */
 @keyframes zzin{from{opacity:.6}to{opacity:1}}
-.view:not([hidden]){animation:zzin .16s ease-out both}
+.view:not([hidden]){animation:zzin .16s ease-out}
 html.zz-still .view:not([hidden]){animation:none}
 @media(prefers-reduced-motion:reduce){.view:not([hidden]){animation:none}}
 .card.open .ans{animation:zzfade .28s ease both}
@@ -1427,7 +1427,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
 .zz-spark{position:fixed;z-index:90;width:7px;height:7px;margin:-3.5px;border-radius:50%;pointer-events:none;background:var(--c,var(--lbl));animation:zzspark .7s cubic-bezier(.2,.7,.3,1) forwards}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
-.qi-a:not([hidden]),.qs-b:not([hidden]){animation:rise .2s ease-out both}
+.qi-a:not([hidden]),.qs-b:not([hidden]){animation:rise .2s ease-out}
 #bnav a[aria-current],#bnav a.on{transition:transform .3s cubic-bezier(.2,1.5,.4,1)}
 #bnav a[aria-current] svg,#bnav a.on svg{animation:zzbob .5s cubic-bezier(.2,1.5,.4,1)}
 @keyframes zzbob{0%{transform:translateY(4px) scale(.85)}60%{transform:translateY(-3px) scale(1.12)}100%{transform:none}}
