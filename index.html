@@ -1067,6 +1067,11 @@ h1 em{font-size:.66em;font-weight:700}
 .nh-wk em{font:600 .85rem var(--body);font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums}
 .nh-wk em.bad{color:var(--bad)}.nh-wk em.warn{color:var(--warn)}
 
+
+/* keep grid cards inside the screen on narrow phones (long single-line text must not stretch the column) */
+#nh .nh-plan>*,#nh .nh-2>*,#nh .nh-top>*,#nh .nh-tr>*{min-width:0}
+@media(max-width:820px){#nh .nh-plan,#nh .nh-2,#nh .nh-top{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){#nh .nh-tr{grid-template-columns:minmax(0,1fr)}}
 /* ===== Question card polish =====
    One gutter shared by header, buttons, answer and related row; a soft header wash that fades into the
    card instead of ending in a hard edge; a floating accent bar that is not clipped by the corner;
@@ -1472,6 +1477,14 @@ html{-webkit-tap-highlight-color:transparent;text-size-adjust:100%}
 html a,html button,html summary,html .qi-h,html .card header{touch-action:manipulation}
 html .card,html .qi,html .topic,html .row{transition-property:box-shadow,border-color,transform,opacity}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ---- reading tools (Ink / Theme / A- / A+ / Focus / Print): live in the top bar, between the logo and "Start revising" (position set by home.js) ---- */
+html body #tools{position:fixed;top:12px;bottom:auto;left:auto;right:12px;transform:none;z-index:32;display:flex;flex-wrap:nowrap;padding:2px;gap:0;border-radius:12px;box-shadow:none;overflow-x:auto;scrollbar-width:none}
+html body #tools::-webkit-scrollbar{display:none}
+html body #tools button{flex:none;white-space:nowrap;padding:6px 10px;font-size:12px}
+@media(max-width:700px){html body #tools button{padding:5px 5px;font-size:10.5px}}
+@media(max-width:520px){html body #tools{right:8px}html body #tools button{padding:5px 3px;font-size:10px}html body .nav .pill{padding-left:12px;padding-right:12px;font-size:.78rem}}
+@media print{html body #tools{display:none!important}}
 </style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1C1A19" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F3EBDD" media="(prefers-color-scheme: light)">
@@ -2675,6 +2688,17 @@ wrap.addEventListener('change',e=>{
 });
 window.nhRender=render;render();
 })();
+
+/* ---- put the reading tools (Ink / Theme / A- / A+ / Focus / Print) in the top bar: right next to "Start revising", inside the free space after the logo ---- */
+(function(){const T=document.getElementById('tools');if(!T)return;let q=0;
+ function place(){q=0;const n=[...document.querySelectorAll('.nav')].find(x=>x.offsetParent!==null);if(!n)return;
+  const lg=n.querySelector('.logo'),pl=n.querySelector('.pill');if(!lg||!pl)return;
+  const l=lg.getBoundingClientRect(),p=pl.getBoundingClientRect();
+  T.style.right=Math.max(4,Math.round(innerWidth-p.left+10))+'px';T.style.maxWidth=Math.max(80,Math.round(p.left-10-l.right-10))+'px'}
+ const go=()=>{if(!q)q=requestAnimationFrame(place)};
+ addEventListener('resize',go);addEventListener('hashchange',()=>{go();setTimeout(go,120)});addEventListener('load',go);
+ new MutationObserver(go).observe(T,{childList:true});
+ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(go);go()})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
 const r=document.getElementById('res'),g=document.getElementById('gq');

@@ -133,3 +133,14 @@ wrap.addEventListener('change',e=>{
 });
 window.nhRender=render;render();
 })();
+
+/* ---- put the reading tools (Ink / Theme / A- / A+ / Focus / Print) in the top bar: right next to "Start revising", inside the free space after the logo ---- */
+(function(){const T=document.getElementById('tools');if(!T)return;let q=0;
+ function place(){q=0;const n=[...document.querySelectorAll('.nav')].find(x=>x.offsetParent!==null);if(!n)return;
+  const lg=n.querySelector('.logo'),pl=n.querySelector('.pill');if(!lg||!pl)return;
+  const l=lg.getBoundingClientRect(),p=pl.getBoundingClientRect();
+  T.style.right=Math.max(4,Math.round(innerWidth-p.left+10))+'px';T.style.maxWidth=Math.max(80,Math.round(p.left-10-l.right-10))+'px'}
+ const go=()=>{if(!q)q=requestAnimationFrame(place)};
+ addEventListener('resize',go);addEventListener('hashchange',()=>{go();setTimeout(go,120)});addEventListener('load',go);
+ new MutationObserver(go).observe(T,{childList:true});
+ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(go);go()})();
