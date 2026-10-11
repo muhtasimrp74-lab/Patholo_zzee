@@ -713,6 +713,8 @@ html #qf{background:var(--panel);-webkit-backdrop-filter:none;backdrop-filter:no
 h4.tsub{margin:22px 0 8px}
 .qtop[hidden],.tsub.hide{display:none}
 
+.qf-scope{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:var(--chip);font:500 .8rem var(--body);color:var(--muted)}.qf-scope b{color:var(--text)}
+
 /* ===== Premium palette + iOS glass layer (warm cream / terracotta / sage) ===== */
 :root{
  --cream:#F3EBDD;--ivory:#F7F2E8;--plum:#21191F;--char:#1C1A19;--clay:#8F4F39;--clay2:#A95F45;--clay3:#D18A70;
@@ -2005,7 +2007,11 @@ const has=(k,v)=>F[k].includes(String(v)),ON=['show','type','part','letter','car
 let FO=false,DD=false;
 const STAT={all:()=>true,fav:d=>S.fav.includes(d[3]),bm:d=>S.bm.includes(d[3]),note:d=>!!S.notes[d[3]],done:d=>S.learned.includes(d[3]),todo:d=>!S.learned.includes(d[3])};
 const txt=d=>{const c=document.getElementById(d[3]);return c&&c._t?c._t:(d[1]+' '+d[4]+' '+d[0]).toLowerCase()};
-const pass=(d,skip)=>(skip==='show'||!F.show.length||F.show.some(v=>STAT[v](d)))&&(skip==='type'||!F.type.length||F.type.some(v=>ty(d)===v||ty(d)==='B'))&&(skip==='part'||!F.part.length||F.part.includes(pk(d)))
+/* when a single topic page is open, filters and counts cover that topic only */
+const TIDS=new Set(DATA.map(d=>d[2]));let _h=null,_sc=null;
+const SC=()=>{if(location.hash!==_h){_h=location.hash;const m=/^#\/([^\/?]+)/.exec(_h);_sc=m&&TIDS.has(m[1])?m[1]:null}return _sc};
+const scN=()=>SC()?DATA.filter(d=>d[2]===SC()).length:DATA.length;
+const pass=(d,skip)=>(!SC()||d[2]===SC())&&(skip==='show'||!F.show.length||F.show.some(v=>STAT[v](d)))&&(skip==='type'||!F.type.length||F.type.some(v=>ty(d)===v||ty(d)==='B'))&&(skip==='part'||!F.part.length||F.part.includes(pk(d)))
  &&(skip==='card'||((!F.letter.length||F.letter.some(l=>hasL(d,l)))&&(!F.card.length||cds(d).some(c=>F.card.includes(c)))))&&(skip==='stars'||!F.stars.length||F.stars.includes(String(st(d))))&&(skip==='year'||!F.year.length||yrs(d).some(y=>F.year.includes(String(y))))&&(skip==='topic'||!F.topic.length||F.topic.includes(String(chOf(d))))&&(!F.q||txt(d).includes(F.q));
 const cnt=(fn,skip)=>DATA.filter(d=>pass(d,skip)&&fn(d)).length;
 const nAct=()=>ON.reduce((a,k)=>a+F[k].length,0)+(F.sort!=='book');
@@ -2018,16 +2024,16 @@ function panel(){
  const a=document.activeElement,keep=a&&qf.contains(a)&&a.dataset.k?[a.dataset.k,a.dataset.v]:null;
  const n=nAct()+!!F.q,tot=DATA.filter(d=>pass(d)).length;
  const codes=CODES.filter(c=>!F.letter.length||F.letter.includes(cardOf(c)[0])),cardCnt=c=>cnt(d=>cds(d).includes(c),'card');
- qf.innerHTML=`<div class="qf-head"><b>Filters</b><span class="sp"></span><button type="button" class="qf-clr" data-k="reset"${n?'':' disabled'}>${IC.reset}<span>Clear all</span>${n?`<i>${n}</i>`:''}</button><button type="button" class="qf-x" data-k="close" aria-label="Close filters">${IC.x}</button></div><div class="qf-body">`
+ qf.innerHTML=`<div class="qf-head"><b>Filters</b><span class="sp"></span><button type="button" class="qf-clr" data-k="reset"${n?'':' disabled'}>${IC.reset}<span>Clear all</span>${n?`<i>${n}</i>`:''}</button><button type="button" class="qf-x" data-k="close" aria-label="Close filters">${IC.x}</button></div><div class="qf-body">`+(SC()?`<p class="qf-scope">Only in this topic: <b>${esc((DATA.find(d=>d[2]===SC())||[])[4]||'')}</b></p>`:'')
  +`<h4>Status</h4><div class="qfr">${SHOW.map(([v,l])=>chip('show',v,l,v==='all'?!F.show.length:has('show',v),cnt(STAT[v],'show'))).join('')}</div>`
  +`<h4>Type</h4><div class="qseg">${[['V','Viva'],['W','Written']].map(([v,l])=>`<button type="button" class="${has('type',v)?'on':''}" data-k="type" data-v="${v}" aria-pressed="${has('type',v)}">${l}<i>${cnt(d=>ty(d)===v||ty(d)==='B','type')}</i></button>`).join('')}</div>`
  +(HASEX?`<h4>Importance</h4><div class="qfr">${Array.from({length:MAXST},(_,i)=>i+1).map(n=>chip('stars',n,'<span class="imp'+(n>3?' num':'')+'" aria-label="'+n+(n>1?' stars':' star')+'">'+(n>3?star(1)+'<b>'+n+'</b>':Array.from({length:3},(_,i)=>star(i<n)).join(''))+'</span>',has('stars',n),cnt(d=>st(d)===n,'stars'))).join('')}</div>`
  +`<h4>Exam year</h4><div class="qfr">${YEARS.map(y=>chip('year',y,y,has('year',y),cnt(d=>yrs(d).includes(y),'year'))).join('')}</div>`:'')
- +`<h4>Section</h4><div class="qfr">${PARTS.map(p=>chip('part',p[0],p[1],has('part',p[0]),cnt(d=>pk(d)===p[0],'part'))).join('')}</div>`
+ +(SC()?'':`<h4>Section</h4><div class="qfr">${PARTS.map(p=>chip('part',p[0],p[1],has('part',p[0]),cnt(d=>pk(d)===p[0],'part'))).join('')}</div>`)
  +`<h4>Card</h4><div class="qfr">${LETTERS.map(l=>chip('letter',l,l+'-box',has('letter',l),cnt(d=>hasL(d,l),'card'))).join('')}</div>`
  +`<h4>Specific card</h4><div class="qdd"><button type="button" class="qddb${DD?' o':''}${F.card.length?' has':''}" data-k="dd" aria-expanded="${DD}">${F.card.length?esc(F.card.join(', ')):'Any card'}${chev}</button>${DD?`<div class="qddl"><button type="button" class="${F.card.length?'':'on'}" data-k="card" data-v="">Any card</button>${codes.map(c=>`<button type="button" class="${has('card',c)?'on':''}" data-k="card" data-v="${c}">${c}<span>${cardCnt(c)}</span></button>`).join('')}</div>`:''}</div>`
  +`<h4>Sort</h4><div class="qseg">${[['book','Book order'],['card','Card number']].map(([v,l])=>`<button type="button" class="${F.sort===v?'on':''}" data-k="sort" data-v="${v}" aria-pressed="${F.sort===v}">${l}</button>`).join('')}</div>`
- +`<div class="qfd"><button type="button" class="qfd-h" data-k="fo" aria-expanded="${FO||!!F.topic.length}">Chapter${chev}</button>${FO||F.topic.length?`<div class="qfd-b">${tids.filter(t=>cnt(d=>String(chOf(d))===String(t),'topic')>0).map(t=>`<button type="button" class="qti${has('topic',t)?' on':''}" data-k="topic" data-v="${t}"><b>${esc(CHI[t][2]+' \u00b7 '+CHI[t][1])}</b><span>${cnt(d=>String(chOf(d))===String(t),'topic')}</span></button>`).join('')}</div>`:''}</div>`
+ +(SC()?'':`<div class="qfd"><button type="button" class="qfd-h" data-k="fo" aria-expanded="${FO||!!F.topic.length}">Chapter${chev}</button>${FO||F.topic.length?`<div class="qfd-b">${tids.filter(t=>cnt(d=>String(chOf(d))===String(t),'topic')>0).map(t=>`<button type="button" class="qti${has('topic',t)?' on':''}" data-k="topic" data-v="${t}"><b>${esc(CHI[t][2]+' \u00b7 '+CHI[t][1])}</b><span>${cnt(d=>String(chOf(d))===String(t),'topic')}</span></button>`).join('')}</div>`:''}</div>`)
  +`</div><div class="qf-foot"><button type="button" class="gb" data-k="close">Show ${tot} question${tot===1?'':'s'}</button></div>`;
  if(keep){const b=qf.querySelector(`[data-k="${keep[0]}"][data-v="${keep[1]}"]`);b&&b.focus()}
 }
@@ -2105,7 +2111,7 @@ function applyViews(hit,n){const ok=new Set(hit.map(d=>d[3])),act=n>0;
   v.querySelectorAll('[data-list] .row').forEach(r=>{const a=r.querySelector('a'),id=a&&a.getAttribute('href').split('/').pop();r.classList.toggle('tf-hide',act&&!ok.has(id))});
   v.querySelectorAll('.nh-map a.s').forEach(a=>{const id=a.getAttribute('href').split('/').pop();a.classList.toggle('tf-dim',act&&!ok.has(id))})});
  const chips=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
- document.querySelectorAll('.qsum-x').forEach(x=>x.textContent=act?hit.length+' of '+DATA.length+' questions match':'');
+ document.querySelectorAll('.qsum-x').forEach(x=>x.textContent=act?hit.length+' of '+scN()+' questions match':'');
  document.querySelectorAll('.qact-x').forEach(x=>x.innerHTML=chips);
  document.querySelectorAll('.qfn-x').forEach(i=>{i.hidden=!n;i.textContent=n})}
 function mountBars(){document.querySelectorAll('.view').forEach(v=>{
@@ -2120,7 +2126,7 @@ document.addEventListener('click',e=>{
  const x=e.target.closest('.qact-x [data-x]');if(x){const k=x.dataset.k,v=x.dataset.v;if(ON.includes(k))F[k]=F[k].filter(y=>y!==String(v));else F[k]=v;run();return}
  if(e.target.closest('.act,.qlearn'))setTimeout(()=>{if(nAct())apply()},90)});
 mountBars();place();
-addEventListener('hashchange',()=>{place();apply()});
+addEventListener('hashchange',()=>{place();run()});
 window.qfApply=()=>{if(nAct())apply()};
 if(typeof render==='function'){const r0=render;render=function(k){r0(k);if(nAct())apply()}}
 

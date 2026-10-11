@@ -570,3 +570,5 @@ html #qf{background:var(--panel);-webkit-backdrop-filter:none;backdrop-filter:no
 .qtop::before,h4.tsub::before{content:"\25B8\00a0"}
 h4.tsub{margin:22px 0 8px}
 .qtop[hidden],.tsub.hide{display:none}
+
+.qf-scope{margin:0 0 10px;padding:8px 12px;border-radius:12px;background:var(--chip);font:500 .8rem var(--body);color:var(--muted)}.qf-scope b{color:var(--text)}
