@@ -320,7 +320,8 @@ main,main.wide{padding-left:var(--gut);padding-right:var(--gut)}
 .qmode{display:inline-flex;gap:4px;padding:4px;margin:4px 0 12px;border-radius:12px;background:var(--soft);border:1px solid var(--line2)}
 .qmode button{height:38px;padding:0 20px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:600 .9rem var(--body);cursor:pointer}
 .qmode button[aria-selected=true]{background:var(--panel);color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,.12)}
-.qm-q .qi-a,.qm-q .chv,.qm-q #qexp,.qm-q #qcol{display:none!important}.qm-q .qi-h{cursor:default}
+.qgo{flex:none;align-self:center;margin-left:auto;padding:7px 13px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--lbl);font:600 .78rem var(--body);white-space:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.qgo:hover{background:var(--accbg);border-color:var(--lbl)}
 #qexp,#qcol{}
 .qtools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:4px 0 18px}
 .qtools input{flex:1;min-width:200px;height:42px;padding:0 16px;border:1px solid var(--line2);border-radius:99px;background:var(--panel);color:var(--text);font-size:.92rem}
@@ -1918,7 +1919,7 @@ const QMETA={"parts": [["gp", "General Pathology", "A"], ["hm", "Haematology", "
 /* Questions page: collapsible list + advanced filter panel.
    Filters: status, type (viva / written), section (part), card (A-box / B-box, or one specific card), sort, jump to topic.
    QMETA (injected by build.py) = {parts:[[key,name,letter]], partOf:{topicId:partKey}, type:{questionId:'W'}} */
-const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');
+const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');
 const QAV=mkView('qa','Q&A','Q&A','Pick a chapter. It opens a page with every question in it and the full answers.');
 (function(){const H=document.getElementById('v-home'),ch=document.getElementById('pchips');QAV.append(ch);H.querySelectorAll('section.part').forEach(x=>QAV.append(x))})();
 
@@ -1950,7 +1951,7 @@ const BOOK={};let bi=0;tids.forEach(t=>g[t].forEach(d=>BOOK[d[3]]=bi++));
 const LETTERS=[...new Set(['A','B'].concat(DATA.flatMap(letter).filter(Boolean)))].sort();
 const CODES=[...new Set(DATA.flatMap(cds))].sort(cardCmp);
 
-const qi=d=>`<div class="qi" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}${xm(d)}</span>${ty(d)==='W'?'<span class="tg">Written</span>':''}${chev}</button><div class="qi-a" hidden></div></div>`;
+const qi=d=>`<div class="qi" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}${xm(d)}</span>${ty(d)==='W'?'<span class="tg">Written</span>':''}<span class="qgo" role="link" tabindex="0" data-go="#/${d[2]}/${d[3]}" aria-label="Open answer on its own page">Answer ›</span>${chev}</button><div class="qi-a" hidden></div></div>`;
 const secC=c=>{const it=g[c],ci=CHI[c];let last=null,h='';it.forEach(d=>{const sb=subOf(d);if(sb!==last){h+=`<h5 class="qsub" data-sub="${esc(sb)}">${esc(sb)}</h5>`;last=sb}h+=qi(d)});
  return `<section class="qs" data-t="${c}"><button class="qs-h" type="button" aria-expanded="true"><span class="no">${esc(ci[2])}</span><b>${esc(ci[1])}</b><span class="cnt">${it.length}</span>${chev}</button><div class="qs-b">${h}</div></section>`};
 const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${items.map(qi).join('')}</div></section>`;
@@ -2105,8 +2106,9 @@ function lbl(i){const on=S.learned.includes(i.dataset.id),b=i.querySelector('.ql
 function open1(i,open){fill(i);i.querySelector('.qi-h').setAttribute('aria-expanded',open);i.querySelector('.qi-a').hidden=!open;i.classList.toggle('o',open)}
 function sync(){QV.querySelectorAll('.qi').forEach(lbl);run()}
 QV.querySelectorAll('.qi').forEach(lbl);
+QV.addEventListener('keydown',e=>{const g=e.target.closest&&e.target.closest('.qgo');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();location.hash=g.dataset.go}});
 QV.addEventListener('click',e=>{
- const h=e.target.closest('.qi-h');if(h){if(QM==='q')return;const i=h.parentNode;open1(i,h.getAttribute('aria-expanded')!=='true');return}
+ const g=e.target.closest('.qgo');if(g){e.preventDefault();location.hash=g.dataset.go;return}const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;open1(i,h.getAttribute('aria-expanded')!=='true');return}
  const s=e.target.closest('.qs-h');if(s){const o=s.getAttribute('aria-expanded')!=='true';s.setAttribute('aria-expanded',o);s.nextElementSibling.hidden=!o;return}
  const b=e.target.closest('.qlearn');if(b){const i=b.closest('.qi'),id=i.dataset.id,k=S.learned.indexOf(id);k<0?(S.learned.push(id),touch()):S.learned.splice(k,1);save();
   QV.querySelectorAll('.qi[data-id="'+id+'"]').forEach(lbl);const c=document.getElementById(id);if(c)paint(c);counts();panel()}});

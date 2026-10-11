@@ -10,7 +10,8 @@ def _rep(s, old, new, count=1):
 QCSS = r'''.qmode{display:inline-flex;gap:4px;padding:4px;margin:4px 0 12px;border-radius:12px;background:var(--soft);border:1px solid var(--line2)}
 .qmode button{height:38px;padding:0 20px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:600 .9rem var(--body);cursor:pointer}
 .qmode button[aria-selected=true]{background:var(--panel);color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,.12)}
-.qm-q .qi-a,.qm-q .chv,.qm-q #qexp,.qm-q #qcol{display:none!important}.qm-q .qi-h{cursor:default}
+.qgo{flex:none;align-self:center;margin-left:auto;padding:7px 13px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--lbl);font:600 .78rem var(--body);white-space:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.qgo:hover{background:var(--accbg);border-color:var(--lbl)}
 #qexp,#qcol{}
 '''
 XM = r'''.qsub{margin:14px 4px 6px;font:700 .74rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--lbl)}
@@ -55,11 +56,11 @@ def patch(s):
     s = _rep(s, q, q + '<a href="#/qa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v12H9l-4 4zM9 8h6M9 12h4"/></svg>Q&amp;A</a>')
     s = _rep(s, 'grid-template-columns:repeat(5,1fr)', 'grid-template-columns:repeat(6,1fr)', 0)
     # Questions page modes
-    s = _rep(s, "const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');" if "Switch between" in s else "const QV=mkView('questions','Questions','Questions','Only the questions. Tap one to reveal its answer, tap again to hide it.');",
-             "const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');")
-    qv = "const QV=mkView('questions','Questions','Questions','Switch between a clean list of questions and the full questions with answers.');"
+    s = _rep(s, "const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');" if "Tap a question to read its answer right here" in s else "const QV=mkView('questions','Questions','Questions','Only the questions. Tap one to reveal its answer, tap again to hide it.');",
+             "const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');")
+    qv = "const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');"
     s = _rep(s, qv, qv + QAJS)
-    s = _rep(s, "const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;", "const h=e.target.closest('.qi-h');if(h){if(QM==='q')return;const i=h.parentNode;")
+    s = _rep(s, "const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;", "const g=e.target.closest('.qgo');if(g){e.preventDefault();location.hash=g.dataset.go;return}const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;")
     a = "$q('qcol').onclick=()=>QV.querySelectorAll('.qi').forEach(i=>open1(i,false));"
     s = _rep(s, a, a + """
 let QM='q';
