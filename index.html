@@ -1219,6 +1219,40 @@ h1 em{font-size:.66em;font-weight:700}
 @media(max-width:1000px){.pb-in .hero-in{max-width:58%}.pb-act{margin-top:16px}.pb-btn{padding:0 16px}.pb-btn.pb-p{padding:0 20px}}
 @media(max-width:640px){.pb-in .hero-in{max-width:none}.pb-act{margin-top:18px}.pb-btn.pb-p{width:100%;justify-content:center}.pb-btn{flex:1 1 auto;justify-content:center}}
 @media(min-width:1001px){.pb-act{width:max-content;max-width:min(620px,calc(100vw - 2*var(--gut)))}}
+
+/* ---- site footer ---- */
+.sf{margin-top:56px;padding:0;text-align:left;font-size:inherit;background:#120a08;color:#D8CDBD}
+.nh-f{display:none}
+.sf-hero{position:relative;overflow:hidden;background:#120a08}
+.sf-hero picture,.sf-hero img{display:block;width:100%;height:auto}
+.sf-hero::before{content:"";position:absolute;left:0;right:0;top:0;height:46px;z-index:1;background:linear-gradient(180deg,#120a08,rgba(18,10,8,0));pointer-events:none}
+.sf-credit{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-52%);text-align:center;width:min(40%,560px)}
+.sf-credit p{margin:0}
+.sf-k{font:600 .72rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:#D18A70}
+.sf-name{margin:6px 0 8px!important;font:500 clamp(1.5rem,2.8vw,2.3rem)/1.1 var(--disp);color:#F7F2E8;letter-spacing:-.01em}
+.sf-sub{font:400 clamp(.9rem,1.25vw,1.05rem)/1.5 var(--body);color:#D8CDBD}
+.sf-main{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;max-width:var(--w);margin:0 auto;padding:36px var(--gut) 28px}
+.sf-logo{margin:0 0 10px;font:500 1.5rem var(--disp);color:#F7F2E8}
+.sf-about{margin:0;max-width:44ch;font-size:.92rem;line-height:1.6;color:#B9AD9C}
+.sf-col{display:flex;flex-direction:column;gap:2px}
+.sf-col h2{margin:0 0 8px;font:600 .74rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#D18A70}
+.sf-col a{display:inline-block;padding:6px 0;min-height:32px;color:#D8CDBD;text-decoration:none;font-size:.95rem}
+.sf-col a:hover{color:#FFFFFF;text-decoration:underline}
+.sf a:focus-visible,.sf-top:focus-visible{outline:2px solid #F7F2E8;outline-offset:3px;border-radius:4px}
+.sf-bot{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:var(--w);margin:0 auto;padding:18px var(--gut) 34px;border-top:1px solid rgba(247,242,232,.14)}
+.sf-legal{margin:0;max-width:78ch;font-size:.8rem;line-height:1.6;color:#B9AD9C}
+.sf-top{appearance:none;cursor:pointer;flex:none;min-height:44px;padding:0 18px;border-radius:12px;border:1px solid rgba(247,242,232,.38);background:transparent;color:#F7F2E8;font:600 .88rem var(--body)}
+.sf-top:hover{background:rgba(247,242,232,.12)}
+@media(max-width:900px){.sf-main{grid-template-columns:1fr 1fr}.sf-brand{grid-column:1/-1}.sf-credit{width:44%}}
+@media(max-width:720px){
+ .sf{margin-top:40px}
+ .sf-credit{position:static;transform:none;width:auto;padding:4px var(--gut) 8px;text-align:left}
+ .sf-name{font-size:1.7rem}
+ .sf-main{gap:28px 20px;padding-top:22px}
+ .sf-bot{flex-direction:column;align-items:flex-start;gap:16px;padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+ .sf-top{width:100%}
+}
+@media print{.sf{display:none}}
 /* ===== Question card polish =====
    One gutter shared by header, buttons, answer and related row; a soft header wash that fades into the
    card instead of ending in a hard edge; a floating accent bar that is not clipped by the corner;
@@ -3158,6 +3192,39 @@ function apply(){
  }
 }
 apply();addEventListener('load',apply);addEventListener('hashchange',apply);
+})();
+
+/* ===== site footer (all pages): artwork banner with credits, site links, notes. Replaces the old one-word footer. ===== */
+(function(){
+const L=(h,t)=>{const a=document.createElement('a');a.href=h;a.textContent=t;return a};
+const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e};
+function col(title,links){const d=el('nav','sf-col');d.setAttribute('aria-label',title);d.appendChild(el('h2','',title));links.forEach(x=>d.appendChild(L(x[0],x[1])));return d}
+function build(){
+ if(document.querySelector('footer.sf'))return;
+ const f=el('footer','sf');
+ const hero=el('div','sf-hero');
+ hero.innerHTML='<picture><source media="(max-width:720px)" srcset="icons/footer-banner-900.webp" width="900" height="223"><img src="icons/footer-banner.webp" width="1600" height="397" alt="" loading="lazy" decoding="async"></picture>';
+ const cr=el('div','sf-credit');
+ cr.appendChild(el('p','sf-k','Created by'));cr.appendChild(el('p','sf-name','Muhtasim Ahmed'));
+ cr.appendChild(el('p','sf-sub','Netrokona Medical College'));cr.appendChild(el('p','sf-sub','Session 2022-23'));
+ hero.appendChild(cr);f.appendChild(hero);
+ const m=el('div','sf-main');
+ const b=el('div','sf-brand');b.appendChild(el('p','sf-logo','Patholo_zzee'));
+ b.appendChild(el('p','sf-about','Pathology viva, written and MCQ revision with full answers, built around the NMC viva list and Robbins 11th edition. Chapters you open are saved for offline reading.'));
+ m.appendChild(b);
+ m.appendChild(col('Study',[['#/','Home'],['#/questions','Questions'],['#/qa','Chapters'],['#/practice','Practice'],['#/mcqs','MCQs'],['#/textbook','Textbook']]));
+ m.appendChild(col('Your space',[['#/bookmarks','Bookmarks'],['#/favourites','Favourites'],['#/notes','Notes'],['#/menu','Menu and backup'],['#/howto','How to read']]));
+ f.appendChild(m);
+ const bt=el('div','sf-bot');
+ const p=el('p','sf-legal');p.textContent='\u00A9 '+new Date().getFullYear()+' Muhtasim Ahmed. For exam revision only; not medical or clinical advice, so check against your prescribed textbooks. Robbins and Cotran Pathologic Basis of Disease belongs to its authors and publisher, and this site is not affiliated with them or with the NMC.';
+ bt.appendChild(p);
+ const up=el('button','sf-top','Back to top \u2191');up.type='button';
+ up.addEventListener('click',()=>{const rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;window.scrollTo({top:0,behavior:rm?'auto':'smooth'})});
+ bt.appendChild(up);f.appendChild(bt);
+ const old=document.querySelector('body > footer');
+ if(old)old.replaceWith(f);else{const v=[...document.querySelectorAll('body > .view')].pop();if(v)v.after(f);else document.body.appendChild(f)}
+}
+build();addEventListener('load',build);
 })();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
