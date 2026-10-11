@@ -1333,6 +1333,83 @@ html #bnav{left:0;right:0;bottom:0;border-radius:0;border:0;border-top:1px solid
 /* many stars -> one star and a number */
 .imp.num{gap:4px}.imp.num b{font-weight:700;font-size:12.5px;line-height:1;font-variant-numeric:tabular-nums;color:inherit}
 .qfc .imp.num b{font-size:12px}
+/* ===== polish: sepia theme, calm reading mode, type badges, page transitions, read aloud, loading placeholders ===== */
+
+/* ---- Sepia "paper" theme: a warm, low-glare variant of the light theme (data-theme=light + data-tone=sepia) ---- */
+:root[data-theme=light][data-tone=sepia]{
+ --bg:#EFE2C4;--panel:#F6EBD0;--line:#DAC7A0;--line2:#C9B287;--text:#3A2E1C;--muted:#65532F;--navy:#3A2E1C;
+ --chip:#EADBB6;--soft:#EADBB6;--accbg:#E6D3A9;--infobg:#ECDDB8;--amber:#6E4413;--amberbg:#E8D4A6;
+ --frost:rgba(246,235,208,.66);--glass:rgba(246,235,208,.78);--glass-strong:rgba(246,235,208,.92);--glass-bd:rgba(255,248,226,.8);
+ --glass-in:inset 0 1px 0 rgba(255,248,226,.9),inset 0 -1px 0 rgba(110,68,19,.10);
+ --g-mist:linear-gradient(160deg,#F6EBD0,#E8D8B2);
+ --qtint:linear-gradient(135deg,rgba(201,150,102,.30),rgba(246,235,208,.45) 62%,rgba(123,128,104,.14));
+ --qtint-open:linear-gradient(135deg,rgba(201,150,102,.44),rgba(246,235,208,.50) 62%,rgba(123,128,104,.20));
+ --b100:#E6D3A9;--b200:#D6C193;--b300:#C4AC7C;--b400:#B09A6C;--b800:#5E3322;
+ color-scheme:light}
+:root[data-theme=light][data-tone=sepia] body{background-color:var(--bg);background-image:
+ radial-gradient(60vmax 50vmax at 8% -5%,rgba(214,160,100,.26),transparent 60%),
+ radial-gradient(55vmax 45vmax at 105% 20%,rgba(150,140,90,.20),transparent 60%),
+ radial-gradient(50vmax 40vmax at 40% 110%,rgba(190,160,110,.28),transparent 60%)}
+:root[data-theme=light][data-tone=sepia] .card,:root[data-theme=light][data-tone=sepia] .qi,:root[data-theme=light][data-tone=sepia] .topic{background-color:var(--panel)}
+
+/* ---- Colour-coded question types (viva / written / both); colours follow the active theme ---- */
+.tg.k-v,.tg.k-w,.tg.k-b{border:1px solid transparent}
+.tg.k-v{background:color-mix(in srgb,var(--lbl) 14%,var(--panel));color:var(--lbl);border-color:color-mix(in srgb,var(--lbl) 28%,transparent)}
+.tg.k-w{background:color-mix(in srgb,var(--ok) 18%,var(--panel));color:var(--ok);border-color:color-mix(in srgb,var(--ok) 34%,transparent)}
+.tg.k-b{background:color-mix(in srgb,var(--amber) 16%,var(--panel));color:var(--amber);border-color:color-mix(in srgb,var(--amber) 32%,transparent)}
+:root[data-theme=light] .tg.k-w{color:#4d5340}
+.card>header .tg{margin-left:auto;align-self:flex-start;margin-top:3px}
+.qi[data-k=w]>.qi-h{box-shadow:inset 3px 0 0 var(--ok)}
+.qi[data-k=b]>.qi-h{box-shadow:inset 3px 0 0 var(--amber)}
+
+/* ---- Calmer reading mode: shorter lines, more air, softer contrast for answers and the textbook ---- */
+body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{max-width:68ch;margin-left:auto;margin-right:auto;line-height:1.9;letter-spacing:.006em;word-spacing:.02em;hyphens:auto;-webkit-hyphens:auto}
+body.calm .card .ans p,body.calm .qi-a p,body.calm #tbbody p{margin-block:0 1.05em}
+body.calm .card .ans li,body.calm .qi-a li,body.calm #tbbody li{margin-block:.35em}
+body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{color:color-mix(in srgb,var(--text) 90%,var(--bg))}
+body.calm .card .ans{padding-left:max(var(--gx,18px),4%);padding-right:max(var(--gx,18px),4%)}
+body.calm .xm,body.calm .acts{opacity:.9}
+
+/* ---- Smoother page transitions (views fade and glide in; skipped for reduced motion) ---- */
+@keyframes zzin{from{opacity:0;transform:translateY(12px) scale(.995);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
+.view:not([hidden]){animation:zzin .38s cubic-bezier(.22,.8,.3,1) both}
+html.zz-still .view:not([hidden]){animation:none}
+@media(prefers-reduced-motion:reduce){.view:not([hidden]){animation:none}}
+.card.open .ans{animation:zzfade .28s ease both}
+@keyframes zzfade{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.card.open .ans{animation:none}}
+
+/* ---- Read aloud ---- */
+#tools button[data-t=listen][aria-pressed=true]{background:var(--lbl);color:var(--bg)}
+#tools button[data-t=calm][aria-pressed=true]{background:var(--soft);color:var(--lbl);box-shadow:inset 0 0 0 1px var(--lbl)}
+#zz-listen{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(132px + env(safe-area-inset-bottom,0px));z-index:45;display:flex;align-items:center;gap:10px;max-width:calc(100vw - 24px);padding:8px 10px 8px 14px;border-radius:18px;background:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:var(--sh2);font:600 12.5px var(--body);color:var(--text);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5)}
+#zz-listen[hidden]{display:none}
+#zz-listen .eq{display:inline-flex;gap:2px;align-items:flex-end;height:14px}
+#zz-listen .eq i{width:3px;background:var(--lbl);border-radius:2px;height:5px;animation:zzeq 1s ease-in-out infinite}
+#zz-listen .eq i:nth-child(2){animation-delay:.2s}#zz-listen .eq i:nth-child(3){animation-delay:.4s}
+#zz-listen.paused .eq i{animation-play-state:paused}
+@keyframes zzeq{0%,100%{height:4px}50%{height:14px}}
+@media(prefers-reduced-motion:reduce){#zz-listen .eq i{animation:none}}
+#zz-listen button{background:none;border:0;color:var(--text);font:600 12px var(--body);padding:6px 10px;border-radius:999px;cursor:pointer}
+#zz-listen button:hover{background:var(--chip)}
+#zz-listen select{font:600 12px var(--body);color:var(--text);background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:4px 6px}
+.zz-reading{outline:2px solid color-mix(in srgb,var(--lbl) 55%,transparent);outline-offset:3px;border-radius:12px}
+
+/* ---- Loading placeholders (textbook chapters) ---- */
+.zsk{display:flex;flex-direction:column;gap:12px;padding:6px 2px 24px}
+.zsk i{display:block;height:13px;border-radius:7px;background:linear-gradient(90deg,var(--chip) 0%,color-mix(in srgb,var(--chip) 55%,var(--panel)) 40%,var(--chip) 80%);background-size:220% 100%;animation:zzsk 1.3s ease-in-out infinite}
+.zsk i.h{height:30px;width:58%;border-radius:9px;margin-bottom:6px}.zsk i.xs{width:34%;height:10px}
+.zsk i.s{width:72%}.zsk i.b{height:92px;border-radius:12px;margin:6px 0}
+.zsk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}.zsk-grid i{height:78px;border-radius:14px}
+@keyframes zzsk{0%{background-position:120% 0}100%{background-position:-100% 0}}
+@media(prefers-reduced-motion:reduce){.zsk i{animation:none}}
+
+/* ---- Print: always plain paper ---- */
+@media print{
+ :root[data-theme=light][data-tone=sepia]{--bg:#fff;--panel:#fff;--text:#000}
+ :root[data-theme=light][data-tone=sepia] body{background:#fff!important;background-image:none!important}
+ body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{max-width:none;line-height:1.5}
+ #zz-listen,.zsk{display:none!important}}
 
 /* ===== main panel: Home / Questions / Q&A / MCQs / Menu ===== */
 @media(max-width:1000px){#bnav{grid-template-columns:repeat(6,1fr)}}
@@ -1764,7 +1841,7 @@ html body #tools button{flex:none;white-space:nowrap;padding:6px 10px;font-size:
 @media(max-width:700px){html body #tools button{padding:5px 5px;font-size:10.5px}}
 @media(max-width:520px){html body #tools{right:8px}html body #tools button{padding:5px 3px;font-size:10px}html body .nav .pill{padding-left:12px;padding-right:12px;font-size:.78rem}}
 @media print{html body #tools{display:none!important}}
-</style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme}catch(e){}</script><link rel="manifest" href="manifest.json">
+</style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme;if(p.theme==='light'&&p.tone==='sepia')document.documentElement.dataset.tone='sepia'}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1C1A19" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F3EBDD" media="(prefers-color-scheme: light)">
 <meta name="mobile-web-app-capable" content="yes">
@@ -2271,7 +2348,8 @@ const BOOK={};let bi=0;tids.forEach(t=>g[t].forEach(d=>BOOK[d[3]]=bi++));
 const LETTERS=[...new Set(['A','B'].concat(DATA.flatMap(letter).filter(Boolean)))].sort();
 const CODES=[...new Set(DATA.flatMap(cds))].sort(cardCmp);
 
-const qi=d=>`<div class="qi" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}${xm(d)}</span>${ty(d)==='W'?'<span class="tg">Written</span>':ty(d)==='B'?'<span class="tg">Written + Viva</span>':''}<span class="qgo" role="link" tabindex="0" data-go="#/${d[2]}/${d[3]}" aria-label="Open answer on its own page">Answer ›</span>${chev}</button><div class="qi-a" hidden></div></div>`;
+const KT={v:'Viva',w:'Written',b:'Written + Viva'},kt=d=>ty(d)==='B'?'b':ty(d)==='W'?'w':'v';
+const qi=d=>`<div class="qi" data-k="${kt(d)}" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}${xm(d)}</span><span class="tg k-${kt(d)}">${KT[kt(d)]}</span><span class="qgo" role="link" tabindex="0" data-go="#/${d[2]}/${d[3]}" aria-label="Open answer on its own page">Answer ›</span>${chev}</button><div class="qi-a" hidden></div></div>`;
 const secC=c=>{const it=g[c],ci=CHI[c];let last=null,lt=null,h='';const nt={};it.forEach(d=>(nt[subOf(d)]=nt[subOf(d)]||new Set()).add(topOf(d)));it.forEach(d=>{const sb=subOf(d),tp=topOf(d);if(sb!==last){h+=`<h5 class="qsub" data-sub="${esc(sb)}">${esc(sb)}</h5>`;last=sb;lt=null}if(nt[sb].size>1&&tp!==lt){h+=`<h6 class="qtop" data-top="${esc(tp)}">${esc(tp)}</h6>`;lt=tp}h+=qi(d)});
  return `<section class="qs" data-t="${c}"><button class="qs-h" type="button" aria-expanded="true"><span class="no">${esc(ci[2])}</span><b>${esc(ci[1])}</b><span class="cnt">${it.length}</span>${chev}</button><div class="qs-b">${h}</div></section>`};
 const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${items.map(qi).join('')}</div></section>`;
@@ -2862,6 +2940,7 @@ function home(){
 /* ---- Textbook (Robbins) ---- */
 {const T=mkView('textbook','Textbook','Textbook','Robbins Pathologic Basis of Disease, chapter by chapter. Key concepts and morphology are set apart; chapters you open are saved for offline reading.');
  const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const SKB='<div class="zsk" role="status" aria-label="Loading chapter"><i class="h"></i><i class="xs"></i><i></i><i></i><i class="s"></i><i class="b"></i><i></i><i class="s"></i><i></i><i class="xs"></i><i></i><i class="s"></i></div>',SKH='<div class="zsk" role="status" aria-label="Loading textbook"><i class="h"></i><i class="xs"></i><div class="zsk-grid">'+'<i></i>'.repeat(6)+'</div></div>';
  let IDX=null,tok=0,cur=null,tkr=0,hf='all',hq='',lf=0,rf=0;
  const J=(k)=>{try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(e){return {}}},W=(k,o)=>{try{localStorage.setItem(k,JSON.stringify(o))}catch(e){}};
  const P=document.body.appendChild(Object.assign(document.createElement('div'),{id:'tbprog',innerHTML:'<i></i>'}));
@@ -2935,13 +3014,14 @@ function home(){
   paint();document.title='Textbook | Patholo_zzee'}
 
  async function tb(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='textbook'){cur=null;onScroll();return}const my=++tok;cur=null;T.classList.remove('tbreading');onScroll();
+  if(!IDX)T.innerHTML=p[1]?SKB:SKH;
   try{if(!IDX){const r=await fetch('textbook/index.json');if(!r.ok)throw 0;IDX=await r.json()}}
   catch(e){if(my===tok)T.innerHTML='<div class="mempty"><b>Textbook unavailable</b>Open it once while online; chapters you read are then saved for offline use.</div>';return}
   if(my!==tok)return;const C=IDX.chapters,i=C.findIndex(x=>x.id===p[1]),D=J('tbDone');
   if(i<0){home();return}
   const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');try{localStorage.setItem('tbLast',c.id)}catch(e){}
   const bar=`<div class="tbbar"><a href="${pv?'#/textbook/'+pv.id:'#/textbook'}" ${pv?'':'aria-disabled="true"'}>‹ ${pv?'Ch '+pv.n:'Previous'}</a><a href="#/textbook">All chapters</a><a href="${nx?'#/textbook/'+nx.id:'#/textbook'}" ${nx?'':'aria-disabled="true"'}>${nx?'Ch '+nx.n:'Next'} ›</a></div>`;
-  T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody"><div class="tbi"><p>Loading…</p></div></div>`+bar;
+  T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
   T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);
   try{const r=await fetch('textbook/'+c.id+'.html');if(!r.ok)throw 0;const h=await r.text();if(my!==tok)return;T.querySelector('#tbbody').innerHTML=h;
    const s=J('tbPos')[c.id];if(s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}
@@ -3281,6 +3361,97 @@ const NAME={},TOT={};DATA.forEach(d=>{NAME[d[2]]=d[4];TOT[d[2]]=(TOT[d[2]]||0)+1
 function done(){const L=new Set(S.learned),c={};DATA.forEach(d=>{if(L.has(d[3]))c[d[2]]=(c[d[2]]||0)+1});return new Set(Object.keys(TOT).filter(t=>c[t]===TOT[t]))}
 let prev=null;const p0=prog;prog=function(){p0();const now=done();if(prev){const fresh=[...now].filter(t=>!prev.has(t));if(fresh.length){burst();say(now.size===Object.keys(TOT).length?'<b>Every topic complete.</b> Outstanding work.':'<b>Topic complete</b><br>'+NAME[fresh[0]])}}prev=now};prog();
 })();
+</script>
+<script>
+/* polish.js - sepia theme, calm reading mode, type badges on cards, read aloud.
+   Runs inside the page after the main script, so it shares S (saved state) and save(). Every feature is wrapped so one failure cannot break the others. */
+(function(){
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const root=document.documentElement,pref=()=>{try{S.pref=S.pref||{};return S.pref}catch(e){return {}}},persist=()=>{try{save()}catch(e){}};
+const tools=document.getElementById('tools');
+
+/* ---------- 1. Theme: Light > Sepia > Dark ---------- */
+function themeNow(){const t=root.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':root.dataset.tone==='sepia'?'sepia':'light'}
+function applyTheme(n){if(n==='dark'){root.dataset.theme='dark';delete root.dataset.tone}else{root.dataset.theme='light';if(n==='sepia')root.dataset.tone='sepia';else delete root.dataset.tone}
+ const m=n==='sepia'?'#EFE2C4':null;if(m)$$('meta[name=theme-color]').forEach(x=>{if(!x.dataset.o)x.dataset.o=x.content;x.content=m;x.removeAttribute('media')});
+ else $$('meta[name=theme-color][data-o]').forEach(x=>{x.content=x.dataset.o});label()}
+function label(){const b=tools&&$('[data-t=theme]',tools);if(b){const n=themeNow();b.textContent=n==='sepia'?'Sepia':n==='dark'?'Dark':'Light';b.title='Theme: Light, Sepia or Dark (tap to change)'}}
+try{
+ if(tools){
+  tools.addEventListener('click',e=>{const b=e.target.closest('button[data-t=theme]');if(!b)return;e.stopPropagation();
+   const n={light:'sepia',sepia:'dark',dark:'light'}[themeNow()];applyTheme(n);const p=pref();p.theme=n==='dark'?'dark':'light';if(n==='sepia')p.tone='sepia';else delete p.tone;persist()},true);
+  const p=pref();if(p.theme==='light'&&p.tone==='sepia')applyTheme('sepia');else{if(p.tone&&!(p.theme==='light'))delete p.tone;label()}
+ }
+}catch(e){}
+
+/* ---------- 2. Calm reading mode + tool buttons ---------- */
+try{
+ if(tools){
+  const pr=$('[data-t=print]',tools);
+  const calm=document.createElement('button');calm.type='button';calm.dataset.t='calm';calm.textContent='Calm';calm.title='Calmer reading: shorter lines, more space';
+  const li=document.createElement('button');li.type='button';li.dataset.t='listen';li.textContent='Listen';li.title='Read the open answer aloud';li.setAttribute('aria-pressed','false');
+  calm.setAttribute('aria-pressed',!!pref().calm);
+  pr?(tools.insertBefore(calm,pr),tools.insertBefore(li,pr)):(tools.append(calm),tools.append(li));
+  document.body.classList.toggle('calm',!!pref().calm);
+  tools.addEventListener('click',e=>{const b=e.target.closest('button[data-t=calm]');if(!b)return;e.stopPropagation();
+   const on=document.body.classList.toggle('calm');b.setAttribute('aria-pressed',on);pref().calm=on;persist()},true);
+  if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined')li.hidden=true;
+ }
+}catch(e){}
+
+/* ---------- 3. Colour-coded type badge on every card page ---------- */
+try{
+ const T=(typeof QMETA!=='undefined'&&QMETA.type)||{},N={v:'Viva',w:'Written',b:'Written + Viva'};
+ $$('.card').forEach(c=>{const t=T[c.id],k=t==='W'?'w':t==='B'?'b':'v';c.dataset.k=k;const h=$('header',c);if(!h||$('.tg',h))return;
+  const s=document.createElement('span');s.className='tg k-'+k;s.textContent=N[k];h.append(s)});
+}catch(e){}
+
+/* ---------- 4. Read aloud ---------- */
+try{
+ if(!('speechSynthesis' in window))throw 0;
+ const syn=window.speechSynthesis;let q=[],i=0,gen=0,active=null,paused=false,bar=null;
+ const SUB=[[/→|->|⟶/g,', then '],[/↑/g,' increased '],[/↓/g,' decreased '],[/≥/g,' at least '],[/≤/g,' at most '],[/&/g,' and '],[/%/g,' percent'],[/\bvs\.?\b/gi,'versus'],[/\be\.g\./gi,'for example'],[/\bi\.e\./gi,'that is'],[/[★⭐•·▪●◦]/g,' '],[/[()\[\]]/g,', '],[/\s+([,.;:])/g,'$1'],[/,\s*,+/g,','],[/,\s*([.!?;:])/g,'$1'],[/\s+/g,' ']];
+ const clean=t=>{SUB.forEach(([a,b])=>{t=t.replace(a,b)});return t.trim()};
+ const NOREAD='.acts,.rel,.note,.xm,.act,.tbbar,.tbch-m,.zsk,.ink,.sh,canvas,svg,button';
+ function textOf(el,fromView){const out=[];
+  $$('h1,h2,h3,h4,h5,h6,p,li,tr,dt,dd,blockquote,figcaption',el).forEach(b=>{
+   if(b.closest(NOREAD))return;
+   if(b.matches('p,dt,dd,blockquote')&&b.closest('li,td,th'))return;      /* read once, through its list item / table row */
+   if(b.matches('li')&&b.closest('td,th'))return;
+   if(fromView&&b.getBoundingClientRect().bottom<110)return;
+   let t;
+   if(b.matches('tr'))t=$$('th,td',b).map(c=>c.textContent.trim()).filter(Boolean).join(', ');
+   else t=[...b.childNodes].filter(n=>!(n.nodeType===1&&(n.matches('ul,ol,table')||n.matches(NOREAD)))).map(n=>n.textContent).join('');
+   t=clean(t);if(t.length>1)out.push(/[.!?:;]$/.test(t)?t:t+'.')});
+  return out.length?out:(fromView?[]:[clean(el.textContent)].filter(Boolean))}
+ function chunk(parts){const r=[];parts.forEach(p=>{let ss;try{ss=p.split(/(?<=[.!?;:])\s+(?=[A-Z0-9])/)}catch(e){ss=[p]}let cur='';
+   ss.forEach(s=>{if(s.length>220){if(cur){r.push(cur);cur=''}let c='';s.split(/,\s+/).forEach(w=>{if((c+w).length>190&&c){r.push(c);c=w}else c=c?c+', '+w:w});if(c)r.push(c);return}
+    if((cur+' '+s).length>200&&cur){r.push(cur);cur=s}else cur=cur?cur+' '+s:s});if(cur)r.push(cur)});return r}
+ function target(){const v=$('.view:not([hidden])');if(!v)return null;
+  if(v.id==='v-textbook'){const b=$('#tbbody',v);if(b&&b.textContent.trim().length>40)return {el:b,from:true}}
+  const o=$('.card.open',v)||$('.qi.o .qi-a',v);if(o)return {el:$('.ans',o)||o,title:$('h4',o)&&$('h4',o).textContent,mark:o};
+  const c=typeof cur==='function'?cur(v):null;if(c)return {el:$('.ans',c)||c,title:$('h4',c)&&$('h4',c).textContent,mark:c};return null}
+ const voice=()=>{const vs=syn.getVoices();return vs.find(x=>/^en[-_](GB|IN|AU)/i.test(x.lang)&&x.localService)||vs.find(x=>/^en/i.test(x.lang))||null};
+ function ui(on){const b=$('[data-t=listen]',tools);if(b){b.setAttribute('aria-pressed',on);b.textContent=on?'Stop':'Listen'}
+  if(!bar){bar=document.createElement('div');bar.id='zz-listen';bar.hidden=true;bar.setAttribute('role','group');bar.setAttribute('aria-label','Read aloud');
+   bar.innerHTML='<span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span>Reading aloud</span><button type="button" data-l="pp">Pause</button><select aria-label="Speed"><option value="0.85">0.85x</option><option value="1">1x</option><option value="1.15">1.15x</option><option value="1.3">1.3x</option><option value="1.5">1.5x</option></select><button type="button" data-l="st">Stop</button>';
+   document.body.append(bar);const sel=$('select',bar);sel.value=String(pref().rate||1);if(sel.value!==String(pref().rate||1))sel.value='1';
+   sel.onchange=()=>{pref().rate=+sel.value;persist();if(active&&!paused){const k=i;speakFrom(k)}};
+   bar.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.l==='st')stop();else if(b.dataset.l==='pp'){if(paused){paused=false;syn.resume();b.textContent='Pause';bar.classList.remove('paused')}else{paused=true;syn.pause();b.textContent='Resume';bar.classList.add('paused')}}}}
+  bar.hidden=!on}
+ function stop(){gen++;q=[];active&&active.mark&&active.mark.classList.remove('zz-reading');active=null;paused=false;try{syn.cancel()}catch(e){}ui(false);if(bar){const p=$('[data-l=pp]',bar);p&&(p.textContent='Pause');bar.classList.remove('paused')}}
+ function speakFrom(k){const g=++gen;try{syn.cancel()}catch(e){}i=k;setTimeout(()=>{if(g!==gen)return;next(g)},70)}
+ function next(g){if(g!==gen)return;if(i>=q.length){stop();return}const u=new SpeechSynthesisUtterance(q[i]),v=voice();if(v){u.voice=v;u.lang=v.lang}else u.lang='en-GB';u.rate=pref().rate||1;
+  u.onend=()=>{if(g===gen){i++;next(g)}};u.onerror=e=>{if(g!==gen)return;if(e&&(e.error==='canceled'||e.error==='interrupted'))return;i++;next(g)};syn.speak(u)}
+ function start(){const t=target();if(!t){alert('Open an answer first, then tap Listen.');return}
+  let parts=textOf(t.el,!!t.from);if(t.title){const h=clean(t.title);parts=[/[.!?]$/.test(h)?h:h+'.'].concat(parts)}
+  q=chunk(parts);if(!q.length){alert('There is nothing to read here.');return}
+  gen++;active=t;t.mark&&t.mark.classList.add('zz-reading');ui(true);paused=false;speakFrom(0)}
+ tools.addEventListener('click',e=>{const b=e.target.closest('button[data-t=listen]');if(!b)return;e.stopPropagation();active?stop():start()},true);
+ addEventListener('hashchange',()=>{if(active)stop()});addEventListener('pagehide',()=>{try{syn.cancel()}catch(e){}});
+}catch(e){}
+})();
+
 </script>
 <script src="ink.js"></script>
 <script>

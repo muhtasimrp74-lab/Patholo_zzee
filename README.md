@@ -2,7 +2,7 @@
 
 Offline-capable study site: **1,310 pathology questions** (189 systemic viva, 68 written, 629 DU written, 507 box-viva; 83 questions that were on both the written and box-viva lists are merged into one questions on the A-cards A1–A10 for General Pathology and Haematology; NMC order, Robbins 11th).
 
-Features: search, practice (spaced-repetition flashcards and timed viva), quiz mode, bookmarks, favourites, notes, learned-progress per topic and per part, focus mode, dark/light theme, text size, handwriting ink (pen, highlighter, eraser, lasso) on every answer, backup/restore of all your data (including ink), installable and works offline.
+Features: search, practice (spaced-repetition flashcards and timed viva), quiz mode, bookmarks, favourites, notes, learned-progress per topic and per part, focus mode, light/sepia/dark theme, calm reading mode, read aloud, colour-coded question types (viva, written, both), text size, handwriting ink (pen, highlighter, eraser, lasso) on every answer, backup/restore of all your data (including ink), installable and works offline.
 
 Your data stays on your device (localStorage + IndexedDB). Nothing is sent anywhere.
 

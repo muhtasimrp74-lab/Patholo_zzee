@@ -313,8 +313,10 @@ s = s.replace(NAV_OLD.group(), '<nav id="bnav" aria-label="Main"><a href="#/"><s
 s = s.replace('content="#000000" media', 'content="#1C1A19" media').replace('content="#f7f4f2" media', 'content="#F3EBDD" media')
 CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"><meta name=\"referrer\" content=\"no-referrer\">"
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
-s = s.replace("<script>\nif ('serviceWorker'", '<script src="ink.js"></script>\n<script>\nif (\'serviceWorker\'', 1)
-assert 'src="ink.js"' in s and 'Content-Security-Policy' in s
+POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read()
+assert '</script>' not in POLISH_JS
+s = s.replace("<script>\nif ('serviceWorker'", '<script>\n' + POLISH_JS + '\n</script>\n<script src="ink.js"></script>\n<script>\nif (\'serviceWorker\'', 1)
+assert 'src="ink.js"' in s and 'Content-Security-Policy' in s and 'zz-listen' in s
 
 # fix: counts() also matched dashboard elements with data-c="0".."3" and threw on S["0"].length
 _C_OLD = "document.querySelectorAll('[data-c]').forEach(e=>{const k=e.dataset.c;"

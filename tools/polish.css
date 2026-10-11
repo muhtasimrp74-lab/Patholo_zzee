@@ -1,0 +1,77 @@
+/* ===== polish: sepia theme, calm reading mode, type badges, page transitions, read aloud, loading placeholders ===== */
+
+/* ---- Sepia "paper" theme: a warm, low-glare variant of the light theme (data-theme=light + data-tone=sepia) ---- */
+:root[data-theme=light][data-tone=sepia]{
+ --bg:#EFE2C4;--panel:#F6EBD0;--line:#DAC7A0;--line2:#C9B287;--text:#3A2E1C;--muted:#65532F;--navy:#3A2E1C;
+ --chip:#EADBB6;--soft:#EADBB6;--accbg:#E6D3A9;--infobg:#ECDDB8;--amber:#6E4413;--amberbg:#E8D4A6;
+ --frost:rgba(246,235,208,.66);--glass:rgba(246,235,208,.78);--glass-strong:rgba(246,235,208,.92);--glass-bd:rgba(255,248,226,.8);
+ --glass-in:inset 0 1px 0 rgba(255,248,226,.9),inset 0 -1px 0 rgba(110,68,19,.10);
+ --g-mist:linear-gradient(160deg,#F6EBD0,#E8D8B2);
+ --qtint:linear-gradient(135deg,rgba(201,150,102,.30),rgba(246,235,208,.45) 62%,rgba(123,128,104,.14));
+ --qtint-open:linear-gradient(135deg,rgba(201,150,102,.44),rgba(246,235,208,.50) 62%,rgba(123,128,104,.20));
+ --b100:#E6D3A9;--b200:#D6C193;--b300:#C4AC7C;--b400:#B09A6C;--b800:#5E3322;
+ color-scheme:light}
+:root[data-theme=light][data-tone=sepia] body{background-color:var(--bg);background-image:
+ radial-gradient(60vmax 50vmax at 8% -5%,rgba(214,160,100,.26),transparent 60%),
+ radial-gradient(55vmax 45vmax at 105% 20%,rgba(150,140,90,.20),transparent 60%),
+ radial-gradient(50vmax 40vmax at 40% 110%,rgba(190,160,110,.28),transparent 60%)}
+:root[data-theme=light][data-tone=sepia] .card,:root[data-theme=light][data-tone=sepia] .qi,:root[data-theme=light][data-tone=sepia] .topic{background-color:var(--panel)}
+
+/* ---- Colour-coded question types (viva / written / both); colours follow the active theme ---- */
+.tg.k-v,.tg.k-w,.tg.k-b{border:1px solid transparent}
+.tg.k-v{background:color-mix(in srgb,var(--lbl) 14%,var(--panel));color:var(--lbl);border-color:color-mix(in srgb,var(--lbl) 28%,transparent)}
+.tg.k-w{background:color-mix(in srgb,var(--ok) 18%,var(--panel));color:var(--ok);border-color:color-mix(in srgb,var(--ok) 34%,transparent)}
+.tg.k-b{background:color-mix(in srgb,var(--amber) 16%,var(--panel));color:var(--amber);border-color:color-mix(in srgb,var(--amber) 32%,transparent)}
+:root[data-theme=light] .tg.k-w{color:#4d5340}
+.card>header .tg{margin-left:auto;align-self:flex-start;margin-top:3px}
+.qi[data-k=w]>.qi-h{box-shadow:inset 3px 0 0 var(--ok)}
+.qi[data-k=b]>.qi-h{box-shadow:inset 3px 0 0 var(--amber)}
+
+/* ---- Calmer reading mode: shorter lines, more air, softer contrast for answers and the textbook ---- */
+body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{max-width:68ch;margin-left:auto;margin-right:auto;line-height:1.9;letter-spacing:.006em;word-spacing:.02em;hyphens:auto;-webkit-hyphens:auto}
+body.calm .card .ans p,body.calm .qi-a p,body.calm #tbbody p{margin-block:0 1.05em}
+body.calm .card .ans li,body.calm .qi-a li,body.calm #tbbody li{margin-block:.35em}
+body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{color:color-mix(in srgb,var(--text) 90%,var(--bg))}
+body.calm .card .ans{padding-left:max(var(--gx,18px),4%);padding-right:max(var(--gx,18px),4%)}
+body.calm .xm,body.calm .acts{opacity:.9}
+
+/* ---- Smoother page transitions (views fade and glide in; skipped for reduced motion) ---- */
+@keyframes zzin{from{opacity:0;transform:translateY(12px) scale(.995);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
+.view:not([hidden]){animation:zzin .38s cubic-bezier(.22,.8,.3,1) both}
+html.zz-still .view:not([hidden]){animation:none}
+@media(prefers-reduced-motion:reduce){.view:not([hidden]){animation:none}}
+.card.open .ans{animation:zzfade .28s ease both}
+@keyframes zzfade{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.card.open .ans{animation:none}}
+
+/* ---- Read aloud ---- */
+#tools button[data-t=listen][aria-pressed=true]{background:var(--lbl);color:var(--bg)}
+#tools button[data-t=calm][aria-pressed=true]{background:var(--soft);color:var(--lbl);box-shadow:inset 0 0 0 1px var(--lbl)}
+#zz-listen{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(132px + env(safe-area-inset-bottom,0px));z-index:45;display:flex;align-items:center;gap:10px;max-width:calc(100vw - 24px);padding:8px 10px 8px 14px;border-radius:18px;background:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:var(--sh2);font:600 12.5px var(--body);color:var(--text);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5)}
+#zz-listen[hidden]{display:none}
+#zz-listen .eq{display:inline-flex;gap:2px;align-items:flex-end;height:14px}
+#zz-listen .eq i{width:3px;background:var(--lbl);border-radius:2px;height:5px;animation:zzeq 1s ease-in-out infinite}
+#zz-listen .eq i:nth-child(2){animation-delay:.2s}#zz-listen .eq i:nth-child(3){animation-delay:.4s}
+#zz-listen.paused .eq i{animation-play-state:paused}
+@keyframes zzeq{0%,100%{height:4px}50%{height:14px}}
+@media(prefers-reduced-motion:reduce){#zz-listen .eq i{animation:none}}
+#zz-listen button{background:none;border:0;color:var(--text);font:600 12px var(--body);padding:6px 10px;border-radius:999px;cursor:pointer}
+#zz-listen button:hover{background:var(--chip)}
+#zz-listen select{font:600 12px var(--body);color:var(--text);background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:4px 6px}
+.zz-reading{outline:2px solid color-mix(in srgb,var(--lbl) 55%,transparent);outline-offset:3px;border-radius:12px}
+
+/* ---- Loading placeholders (textbook chapters) ---- */
+.zsk{display:flex;flex-direction:column;gap:12px;padding:6px 2px 24px}
+.zsk i{display:block;height:13px;border-radius:7px;background:linear-gradient(90deg,var(--chip) 0%,color-mix(in srgb,var(--chip) 55%,var(--panel)) 40%,var(--chip) 80%);background-size:220% 100%;animation:zzsk 1.3s ease-in-out infinite}
+.zsk i.h{height:30px;width:58%;border-radius:9px;margin-bottom:6px}.zsk i.xs{width:34%;height:10px}
+.zsk i.s{width:72%}.zsk i.b{height:92px;border-radius:12px;margin:6px 0}
+.zsk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}.zsk-grid i{height:78px;border-radius:14px}
+@keyframes zzsk{0%{background-position:120% 0}100%{background-position:-100% 0}}
+@media(prefers-reduced-motion:reduce){.zsk i{animation:none}}
+
+/* ---- Print: always plain paper ---- */
+@media print{
+ :root[data-theme=light][data-tone=sepia]{--bg:#fff;--panel:#fff;--text:#000}
+ :root[data-theme=light][data-tone=sepia] body{background:#fff!important;background-image:none!important}
+ body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{max-width:none;line-height:1.5}
+ #zz-listen,.zsk{display:none!important}}
