@@ -418,7 +418,7 @@ h2,h3.sub,.part-h,.dc,.pc{margin-left:0;margin-right:0}
 @media(max-width:1099px){
  #qf{position:fixed;z-index:120;top:0;bottom:0;left:0;width:min(360px,90vw);transform:translateX(-102%);transition:transform .3s var(--ease);border-radius:0 18px 18px 0;box-shadow:0 0 60px rgba(11,31,58,.3);padding-top:env(safe-area-inset-top,0px)}
  .qf-x{display:inline-grid}.qf-foot{display:block}
- #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.45);opacity:0;pointer-events:none;transition:opacity .25s}
+ #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.32);opacity:0;pointer-events:none;transition:opacity .25s}
  body.qf-open #qf{transform:none}
  body.qf-open #qscrim{opacity:1;pointer-events:auto}
  body.qf-open{overflow:hidden}
@@ -552,7 +552,7 @@ html #tools{background:color-mix(in srgb,var(--panel) 88%,transparent)}
  body.qf-open #qf.dr{transform:none;visibility:visible;box-shadow:0 0 60px rgba(11,31,58,.3);transition:transform .3s var(--ease),visibility 0s}
  #qf.dr .qf-x{display:inline-grid!important}#qf.dr .qf-foot{display:block!important}
  .qfb-x{display:inline-flex!important}
- #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.45);opacity:0;pointer-events:none;transition:opacity .25s}
+ #qscrim{display:block;position:fixed;inset:0;z-index:110;background:rgba(8,16,30,.32);opacity:0;pointer-events:none;transition:opacity .25s}
  body.qf-open #qscrim{opacity:1;pointer-events:auto}body.qf-open{overflow:hidden}
 }
 @media(max-width:640px){#qf.dr{top:auto;right:0;width:100%;max-height:86dvh;border-radius:20px 20px 0 0;transform:translateY(104%)}body.qf-open #qf.dr{transform:none}}

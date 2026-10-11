@@ -22,7 +22,7 @@ const V=()=>({w:innerWidth,h:innerHeight});
 function target(){const s=SEL[i];if(!s)return null;const e=document.querySelector('.view:not([hidden]) '+s)||document.querySelector(s);if(!e||!e.getClientRects().length)return null;return e}
 function clampBox(x,y){const v=V(),w=box.offsetWidth,h=box.offsetHeight;return [Math.max(8,Math.min(v.w-w-8,x)),Math.max(8,Math.min(v.h-h-8,y))]}
 function place(r){lastRect=r;const v=V(),w=box.offsetWidth,h=box.offsetHeight;let x,y;
- if(moved&&pos){[x,y]=clampBox(pos[0],pos[1])}
+ if(moved&&pos&&!(r&&(()=>{const c=clampBox(pos[0],pos[1]);return c[0]<r.right+8&&c[0]+w>r.left-8&&c[1]<r.bottom+8&&c[1]+h>r.top-8})())){[x,y]=clampBox(pos[0],pos[1])}
  else if(!r){x=(v.w-w)/2;y=v.h-h-Math.max(16,v.h*.08);if(v.w>v.h&&v.h<520){x=v.w-w-16;y=(v.h-h)/2}}
  else if(v.w>v.h&&v.h<520){const mid=r.left+r.width/2;x=mid>v.w/2?16:v.w-w-16;y=(v.h-h)/2}
  else{x=Math.min(Math.max(8,r.left+r.width/2-w/2),v.w-w-8);y=(r.top+r.height/2>v.h/2)?Math.max(8,r.top-h-26):Math.min(v.h-h-8,r.bottom+26);
@@ -44,9 +44,9 @@ function apply(r,mode){if(!fx)return;const v=V(),sp=fx.querySelector('.sp'),fl=f
 function fill(){const s=ST[i];box.querySelector('.tt-n').textContent='Step '+(i+1)+' / '+ST.length;box.querySelector('b').textContent=s[0];box.querySelector('p').textContent=s[1];box.querySelector('.pg i').style.width=Math.round((i+1)/ST.length*100)+'%';
  box.querySelector('[data-a=b]').disabled=!i;box.querySelector('[data-a=n]').textContent=i===ST.length-1?'Done':'Next'}
 /* One step: fade the text out, let the new page render and any scroll finish, then move everything once. */
-function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));const s=ST[i],my=++tok;busy=true;
+function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));if(!first)moved=false;const s=ST[i],my=++tok;busy=true;
  const nav=location.hash!==s[2]&&!(s[2]==='#/'&&(location.hash===''||location.hash==='#'));
- if(nav)location.hash=s[2];
+ if(nav){document.documentElement.classList.add('zz-still');location.hash=s[2]}
  if(first)fill();else box.classList.add('sw');
  const t0=performance.now(),minT=first?0:nav?260:160,fixedBar=['#bnav','#tools'].includes(SEL[i]);let lastK='',stable=0,scrolled=false;
  (function wait(){if(my!==tok||!box)return;const el=performance.now()-t0,e=target();
@@ -57,7 +57,7 @@ function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));const s=ST[i],my=++
   requestAnimationFrame(wait)})()}
 /* keeps the spotlight glued to its target while the person scrolls */
 function loop(){if(!fx)return;if(!busy){const r=rectOf(),k=keyOf(r);if(k!==lastR)apply(r,'t')}requestAnimationFrame(loop)}
-function end(){tok++;busy=false;clearTimeout(glT);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
+function end(){tok++;busy=false;document.documentElement.classList.remove('zz-still');clearTimeout(glT);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
 function onR(){if(!fx||!box)return;box.classList.add('dg');const r=rectOf();apply(r,'t');place(r);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 function key(e){if(e.key==='Escape'){end()}else if(e.key==='ArrowRight'){e.stopPropagation();e.preventDefault();i<ST.length-1?show(i+1):end()}else if(e.key==='ArrowLeft'){e.stopPropagation();e.preventDefault();show(i-1)}}
 function drag(e){const g=e.target.closest('[data-g]');if(!g||e.button>0)return;const m=box.getBoundingClientRect(),dx=e.clientX-m.left,dy=e.clientY-m.top;g.setPointerCapture&&g.setPointerCapture(e.pointerId);box.classList.add('dg');

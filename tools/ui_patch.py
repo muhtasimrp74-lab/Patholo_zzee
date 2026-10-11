@@ -96,11 +96,11 @@ def patch(s):
     a = "$q('qcol').onclick=()=>QV.querySelectorAll('.qi').forEach(i=>open1(i,false));"
     s = _rep(s, a, a + """
 let QM='q';
-function setMode(m){QM=m;S.pref=S.pref||{};const w=QV.querySelector('.qmain');w.classList.toggle('qm-q',m==='q');
+function setMode(m){if(m===QM&&m==='q'&&setMode._d&&!QV.querySelector('.qi.o'))return;setMode._d=1;QM=m;S.pref=S.pref||{};const w=QV.querySelector('.qmain');w.classList.toggle('qm-q',m==='q');
 QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',true);x.querySelector('.qs-b').hidden=false});
 QV.querySelectorAll('.qi').forEach(i=>open1(i,m==='qa'))}
 window.setQMode=setMode;setMode(QM);
-const colAll=()=>QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',false);x.querySelector('.qs-b').hidden=true});window.qColAll=colAll;colAll();""")
+const colAll=()=>QV.querySelectorAll('.qs-h[aria-expanded="true"]').forEach(h=>{h.setAttribute('aria-expanded',false);h.nextElementSibling.hidden=true});addEventListener('beforeprint',()=>QV.querySelectorAll('.qi').forEach(fill));window.qColAll=colAll;colAll();""")
     s = _rep(s, "if(/^#\\/questions/.test(location.hash))sync()", "if(/^#\\/(questions|qa)/.test(location.hash))sync()")
     a = "function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');"
     s = _rep(s, a, """function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');if(p[0]==='topics')p[0]='qa';const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');

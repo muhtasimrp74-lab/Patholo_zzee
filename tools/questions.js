@@ -205,7 +205,7 @@ function fill(i){const a=i.querySelector('.qi-a');if(a.dataset.f)return;a.datase
  a.innerHTML='<div class="ans">'+c.querySelector('.ans').innerHTML+'</div><div class="qa-f"><button class="qlearn" type="button"></button><a href="#/'+d[2]+'/'+id+'">Open in topic page</a></div>';
  a.querySelectorAll('canvas').forEach(x=>x.remove());lbl(i)}
 function lbl(i){const on=S.learned.includes(i.dataset.id),b=i.querySelector('.qlearn');i.classList.toggle('dn',on);if(b){b.setAttribute('aria-pressed',on);b.textContent=on?'Learned ✓':'Mark as learned'}}
-function open1(i,open){fill(i);i.querySelector('.qi-h').setAttribute('aria-expanded',open);i.querySelector('.qi-a').hidden=!open;i.classList.toggle('o',open)}
+function open1(i,open){if(open)fill(i);i.querySelector('.qi-h').setAttribute('aria-expanded',open);i.querySelector('.qi-a').hidden=!open;i.classList.toggle('o',open)}
 function sync(){QV.querySelectorAll('.qi').forEach(lbl);run()}
 QV.querySelectorAll('.qi').forEach(lbl);
 QV.addEventListener('keydown',e=>{const g=e.target.closest&&e.target.closest('.qgo');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();location.hash=g.dataset.go}});
