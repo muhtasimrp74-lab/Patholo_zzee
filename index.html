@@ -1412,6 +1412,42 @@ body.mx-live #v-mcqs .hero{display:none}
 @media(max-width:420px){.mx-hero .mx-kv span{min-width:0}.mx-hero .mx-kv b{font-size:1.15rem}}
 @media(prefers-reduced-motion:reduce){.mx *{transition:none!important}}
 @media print{.mx-act,.mx-top,.mx-rbar,.mx-bm{display:none!important}}
+
+/* ---- MCQ home upgrade: dashboard, suggestion, stacked bars ---- */
+.mx{--mx-ok:#4d8a5f;--mx-no:#b9503f}
+.mx-dash{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:0 0 10px}
+@media(max-width:700px){.mx-dash{grid-template-columns:1fr}}
+.mx-acc,.mx-day{padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--panel);box-shadow:var(--sh1,none)}
+.mx-eb{margin:0 0 6px;font:700 .72rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--lbl)}
+.mx-pc{font:500 3rem/1 var(--disp);color:var(--navy);font-variant-numeric:lining-nums tabular-nums}.mx-pc small{font-size:.4em;color:var(--muted)}
+.mx-st{display:flex;height:10px;border-radius:99px;background:var(--soft);overflow:hidden;margin:14px 0 10px}
+.mx-st u{display:block;height:100%;text-decoration:none;transition:width .35s}
+.mx-st u.r{background:var(--mx-ok)}.mx-st u.w{background:var(--mx-no)}
+.mx-st.g u.r{background:linear-gradient(90deg,var(--blue),var(--clay))}
+.mx-st.sm{position:absolute;left:16px;right:16px;bottom:8px;height:5px;margin:0}
+.mx-leg{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 14px;font:500 .78rem var(--body);color:var(--muted)}
+.mx-leg i{display:inline-block;width:.7em;height:.7em;border-radius:50%;background:var(--soft);border:1px solid var(--line2);margin-right:6px;vertical-align:-.05em}
+.mx-leg i.r{background:var(--mx-ok);border-color:var(--mx-ok)}.mx-leg i.w{background:var(--mx-no);border-color:var(--mx-no)}
+.mx-dash .mx-kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.mx-kv small{font:400 .6em var(--body);color:var(--muted)}
+.mx-sub2{margin:0 0 12px;color:var(--muted);font:.84rem/1.45 var(--body)}
+.mx-goal{display:flex;align-items:center;gap:6px}
+.mx-goal span{margin-right:4px;font:600 .74rem var(--body);color:var(--muted)}
+.mx-goal button{min-width:44px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:600 .85rem var(--body);cursor:pointer}
+.mx-goal button[aria-pressed=true]{background:var(--btn);border-color:var(--btn);color:#fff}
+.mx-about{margin:6px 4px 14px;color:var(--muted);font:.84rem/1.45 var(--body)}
+.mx-next{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;margin:0 0 6px;padding:16px 18px;border:1px solid var(--clay);border-radius:18px;background:color-mix(in srgb,var(--clay) 9%,var(--panel));color:var(--text);text-align:left;cursor:pointer;font:400 .86rem/1.45 var(--body)}
+.mx-next:hover{background:color-mix(in srgb,var(--clay) 15%,var(--panel))}
+.mx-next small{display:block;font:700 .68rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--lbl);margin-bottom:3px}
+.mx-next b{display:block;font:600 1.05rem/1.3 var(--body);color:var(--navy);margin-bottom:2px}
+.mx-next svg{flex:none;width:20px;height:20px;fill:none;stroke:var(--lbl);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.mx-tile{position:relative;border-left-width:4px}
+.mx-tile.t1{border-left-color:var(--blue)}.mx-tile.t2{border-left-color:var(--clay)}.mx-tile.t3{border-left-color:var(--cobalt,var(--blue))}
+.mx-tile.t4{border-left-color:var(--mx-ok)}.mx-tile.t5{border-left-color:var(--mx-no)}.mx-tile.t6{border-left-color:var(--lbl)}
+.mx-tile b em{margin-left:8px;padding:1px 8px;border-radius:99px;background:var(--soft);color:var(--lbl);font:700 .72rem var(--body);font-style:normal;vertical-align:.1em}
+.mx-weak small{color:var(--muted);font:500 .74rem var(--body)}
+.mx-paper.done{border-color:color-mix(in srgb,var(--mx-ok) 55%,var(--line))}
+.mx-paper.done b::after{content:" ✓";color:var(--mx-ok)}
 /* ================= PERFORMANCE (smooth 90/120 Hz scrolling on tablets) =================
    1. The page backdrop was painted with background-attachment:fixed, which repaints the whole screen on every scroll frame.
       It now lives on one fixed, GPU-composited layer instead (same look).
@@ -2279,26 +2315,45 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
 
  /* ---------- home ---------- */
  function stats(){const p=P();let att=0,right=0,wrong=0;Q.forEach(q=>{const x=p[q.h];if(x&&x.n){att++;x.r?right++:wrong++}});return{att,right,wrong}}
- function home(){
-  const m=ST(),s=stats(),n=Q.length,pct=n?Math.round(s.att/n*100):0,acc=s.att?Math.round(s.right/s.att*100):0;
-  const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length?sv:null;
-  const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=P()[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
+function home(){
+  const m=ST(),p=P(),n=Q.length;
+  let att=0,right=0,wrong=0;const ty=[[0,0],[0,0]];
+  Q.forEach(q=>{const x=p[q.h];if(!x||!x.n)return;att++;ty[q.y][0]++;if(x.r){right++;ty[q.y][1]++}else wrong++});
+  const left=n-att,acc=att?Math.round(right/att*100):0,sba=ty[0][0]?Math.round(ty[0][1]/ty[0][0]*100):null,tf=ty[1][0]?Math.round(ty[1][1]/ty[1][0]*100):null;
+  const goal=m.goal||20,td=m.day.d===today()?m.day.n:0,gp=Math.min(100,Math.round(td/goal*100));
+  const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length&&!sv.review?sv:null;
+  const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=p[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
    return{ci,name:c[0],t,n:t.reduce((x,y)=>x+y.n,0),a:t.reduce((x,y)=>x+y.a,0),r:t.reduce((x,y)=>x+y.r,0)}});
   const weak=byC.flatMap(c=>c.t.map(t=>({...t,ci:c.ci}))).filter(t=>t.a>=3&&t.r/t.a<.7).sort((a,b)=>a.r/a.a-b.r/b.a).slice(0,4);
-  const tile=(a,t,sub,x)=>`<button type="button" class="mx-tile" data-a="${a}" ${x||''}><b>${t}</b><small>${sub}</small></button>`;
-  const pp=PAPERS.map(g=>{const qs=Q.filter(q=>(q.g||[]).includes(g)),h=m.hist.find(x=>x.scope==='Paper '+g);return `<button type="button" class="mx-paper" data-a="paper" data-g="${E(g)}"><b>${E(g)}</b><small>${qs.length} questions${h?` · last ${Math.round(h.ok/h.n*100)}%`:''}</small></button>`}).join('');
-  M.innerHTML=`<section class="mx-hero"><div><p class="mx-big"><b>${n}</b> questions</p><p class="mx-sub">${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False</p></div>
-    <div class="mx-meter"><i style="--w:${pct}%"></i></div>
-    <div class="mx-kv"><span><b>${s.att}</b>attempted</span><span><b>${s.att?acc+'%':'–'}</b>answered right</span><span><b>${s.wrong}</b>to revisit</span><span><b>${m.day.d===today()?m.day.n:0}</b>today</span></div></section>
+  const tile=(a,t,sub,x,cls,badge)=>`<button type="button" class="mx-tile ${cls||''}" data-a="${a}" ${x||''}><b>${t}${badge?`<em>${badge}</em>`:''}</b><small>${sub}</small></button>`;
+  const best=g=>{let r=null;m.hist.forEach(h=>{if(h.scope==='Paper '+g&&h.n){const v=Math.round(h.ok/h.n*100);if(r===null||v>r)r=v}});return r};
+  const pp=PAPERS.map(g=>{const qs=Q.filter(q=>(q.g||[]).includes(g)),bs=best(g);return `<button type="button" class="mx-paper${bs!==null?' done':''}" data-a="paper" data-g="${E(g)}"><b>${E(g)}</b><small>${qs.length} questions${bs!==null?` · best ${bs}%`:''}</small></button>`}).join('');
+  /* one suggestion for what to do next */
+  let nx=null;
+  if(wrong>=5)nx=['mist','','','Redo your missed questions',wrong+' questions you got wrong last time. Fixing these is the fastest way to gain marks.'];
+  else if(weak.length)nx=['topic',weak[0].ci,weak[0].ti,'Strengthen '+E(weak[0].name),Math.round(weak[0].r/weak[0].a*100)+'% right so far. A short set will lift it.'];
+  else if(!att)nx=['quick','','','Start with Quick 10','Ten mixed questions, answer shown after each. A good way to find your level.'];
+  else nx=['mock','','','Sit a mock paper','20 questions in 30 minutes, marked at the end.'];
+  const seg=(r,w)=>`<span class="mx-st" role="img" aria-label="${right} right, ${wrong} missed, ${left} not tried"><u class="r" style="width:${r}%"></u><u class="w" style="width:${w}%"></u></span>`;
+  M.innerHTML=`<section class="mx-dash"><div class="mx-acc"><p class="mx-eb">Your accuracy</p><div class="mx-pc">${att?acc:'–'}<small>${att?'%':''}</small></div>${seg(n?right/n*100:0,n?wrong/n*100:0)}
+    <p class="mx-leg"><span><i class="r"></i>${right} right</span><span><i class="w"></i>${wrong} missed</span><span><i></i>${left} not tried</span></p>
+    <div class="mx-kv"><span><b>${att}<small> / ${n}</small></b>attempted</span><span><b>${sba===null?'–':sba+'%'}</b>SBA right</span><span><b>${tf===null?'–':tf+'%'}</b>True / False right</span></div></div>
+   <div class="mx-day"><p class="mx-eb">Today</p><div class="mx-pc">${td}<small> / ${goal}</small></div><span class="mx-st g"><u class="r" style="width:${gp}%"></u></span>
+    <p class="mx-sub2">${td>=goal?'Daily goal reached. Anything more is a bonus.':(goal-td)+' more to reach today\'s goal.'}</p>
+    <div class="mx-goal" role="group" aria-label="Daily goal"><span>Goal</span>${[10,20,30,50].map(v=>`<button type="button" data-a="goal" data-v="${v}" aria-pressed="${v===goal}">${v}</button>`).join('')}</div></div></section>
+   <p class="mx-about">${n} questions · ${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False</p>
    ${svv?`<button type="button" class="mx-resume" data-a="resume"><span><small>Pick up where you left off</small>${E(svv.scope)} · question ${svv.i+1} of ${svv.ids.length}</span>${ic.go}</button>`:''}
-   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each')}${tile('custom','Custom practice','Pick topics, type, paper, status')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end')}${tile('read','Reading mode','All questions with the answers shown')}${tile('mist','Missed questions','Redo what you got wrong',s.wrong?'':'disabled')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled')}</div>
-   ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
-   <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span><i style="--w:${(c.a/c.n*100).toFixed(0)}%"></i></summary>
+   <button type="button" class="mx-next" data-a="${nx[0]}" ${nx[1]!==''?`data-c="${nx[1]}" data-t="${nx[2]}"`:''}><span><small>Suggested next</small><b>${nx[3]}</b>${nx[4]}</span>${ic.go}</button>
+   <p class="mx-h">Practise</p>
+   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Missed questions','Redo what you got wrong',wrong?'':'disabled','t5',wrong||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}</div>
+   ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><small>${t.r}/${t.a}</small><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
+   <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span>${seg2(c)}</summary>
     <div class="mx-tps">${c.t.map(t=>`<div class="mx-tp"><span>${E(t.name)}<small>${t.n} · ${t.a?Math.round(t.r/t.a*100)+'% right':'new'}</small></span><button type="button" data-a="topic" data-c="${c.ci}" data-t="${t.ti}">Practise</button><button type="button" data-a="topicread" data-c="${c.ci}" data-t="${t.ti}">Read</button></div>`).join('')}
     <div class="mx-tp all"><span>Whole chapter</span><button type="button" data-a="chap" data-c="${c.ci}">Practise</button><button type="button" data-a="chapread" data-c="${c.ci}">Read</button></div></div></details>`).join('')}</div>
-   <p class="mx-h">Past papers</p><p class="mx-note">Each paper is 20 questions from one sitting. Sit it as a timed exam.</p><div class="mx-papers">${pp}</div>
+   <p class="mx-h">Past papers</p><p class="mx-note">Each paper is 20 questions from one sitting. Sit it as a timed exam. Your best score is shown once you have sat one.</p><div class="mx-papers">${pp}</div>
    ${m.hist.length?`<p class="mx-h">Recent sessions</p><div class="mx-hist">${m.hist.slice(0,5).map(h=>`<div><span>${E(h.scope)}<small>${new Date(h.ts).toLocaleDateString('en-GB',{day:'numeric',month:'short'})} · ${h.mode==='exam'?'timed':'practice'} · ${fmt(h.el)}</small></span><b>${h.ok}/${h.n}</b></div>`).join('')}</div>`:''}
-   <div class="mx-foot"><button type="button" class="mx-link" data-a="resetp">Reset MCQ progress</button></div>`}
+   <div class="mx-foot"><button type="button" class="mx-link" data-a="resetp">Reset MCQ progress</button></div>`;
+  function seg2(c){const r=c.n?c.r/c.n*100:0,w=c.n?(c.a-c.r)/c.n*100:0;return `<span class="mx-st sm"><u class="r" style="width:${r}%"></u><u class="w" style="width:${w}%"></u></span>`}}
 
  /* ---------- custom practice (faceted filter) ---------- */
  function chip(f,v,label,x){return `<label class="mx-f"><input type="checkbox" data-f="${f}" data-v="${E(v)}"><span>${label}</span><em></em></label>`}
@@ -2369,6 +2424,7 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    case 'read':reset();readN=30;readCh=-1;saveF();nav('read');break;
    case 'mist':start(shuf(Q.filter(q=>{const x=P()[q.h];return x&&x.n&&!x.r}).map(q=>q.h)),{scope:'Missed questions'});break;
    case 'saved':start(shuf(ST().bm.filter(h=>BY[h])),{scope:'Bookmarks'});break;
+   case 'goal':{const m=ST();m.goal=+b.dataset.v;save();home();break}
    case 'resume':sess=ST().sess;if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
    case 'topic':start(topicIds(+b.dataset.c,+b.dataset.t).slice(0,25),{scope:CH[b.dataset.c][1][b.dataset.t]});break;
    case 'chap':start(topicIds(+b.dataset.c).slice(0,25),{scope:CH[b.dataset.c][0]});break;
