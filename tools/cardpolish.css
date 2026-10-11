@@ -63,3 +63,7 @@
  .xm .ex-y{padding:0 10px}
 }
 @media print{.card header::before{display:none}.xm .imp,.xm .ex-k,.xm .ex-y{box-shadow:none;background:none;border-color:#bbb}}
+
+/* many stars -> one star and a number */
+.imp.num{gap:4px}.imp.num b{font-weight:700;font-size:12.5px;line-height:1;font-variant-numeric:tabular-nums;color:inherit}
+.qfc .imp.num b{font-size:12px}
