@@ -4,8 +4,10 @@
      background, so an updated index.html appears the next time the app is opened.
    - Your bookmarks, notes and progress are stored by the page itself (localStorage);
      this file never touches them.
+   - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
+     so the whole site (questions, MCQs, textbook) works with no connection at all.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v41';
+const VERSION = 'pathviva-zzee-v42';
 
 const CORE = [
   'index.html',
@@ -45,8 +47,24 @@ self.addEventListener('activate', event => {
     caches.keys()
       .then(keys => Promise.all(keys.filter(k => k.startsWith('pathviva-') && k !== VERSION).map(k => caches.delete(k))))
       .then(() => self.clients.claim())
+      .then(precacheBook)
   );
 });
+
+/* Save the textbook (index + 29 chapters) so it opens offline even if never visited. Failures are ignored and retried next update. */
+async function precacheBook() {
+  try {
+    const cache = await caches.open(VERSION);
+    const files = ['textbook/index.json'];
+    for (let i = 1; i <= 29; i++) files.push('textbook/ch' + String(i).padStart(2, '0') + '.html');
+    files.push('icons/logo.svg');
+    const todo = [];
+    for (const f of files) if (!(await cache.match(f))) todo.push(f);
+    for (let i = 0; i < todo.length; i += 3) {
+      await Promise.all(todo.slice(i, i + 3).map(f => fetch(f).then(r => (r && r.status === 200) ? cache.put(f, r) : null).catch(() => null)));
+    }
+  } catch (e) {}
+}
 
 self.addEventListener('fetch', event => {
   const req = event.request;
@@ -57,17 +75,21 @@ self.addEventListener('fetch', event => {
 
   const isPage = req.mode === 'navigate';
   const key = isPage ? 'index.html' : req;
-  if (isPage) {  // pages: newest copy first (so a new deploy shows up straight away); saved copy only when offline
+  if (isPage) {  // pages: newest copy when the network answers quickly; the saved copy instantly when offline or slow
     event.respondWith((async () => {
       const cache = await caches.open(VERSION);
-      try {
-        const res = await fetch(req, { cache: 'no-cache' });
+      const saved = await cache.match(key, { ignoreSearch: true });
+      const net = fetch(req, { cache: 'no-cache' }).then(res => {
         if (res && res.status === 200 && res.type === 'basic') cache.put(key, res.clone()).catch(() => {});
         return res;
-      } catch (e) {
-        const saved = await cache.match(key, { ignoreSearch: true });
-        return saved || new Response('You are offline and this file has not been saved yet.', { status: 503, statusText: 'Offline', headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+      });
+      if (!saved) {
+        try { return await net; } catch (e) {
+          return new Response('You are offline and this file has not been saved yet.', { status: 503, statusText: 'Offline', headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+        }
       }
+      event.waitUntil(net.catch(() => null));
+      return Promise.race([net.catch(() => saved), new Promise(r => setTimeout(() => r(saved), 2500))]);
     })());
     return;
   }
