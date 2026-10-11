@@ -94,11 +94,12 @@ let QM='q';
 function setMode(m){QM=m;S.pref=S.pref||{};const w=QV.querySelector('.qmain');w.classList.toggle('qm-q',m==='q');
 QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',true);x.querySelector('.qs-b').hidden=false});
 QV.querySelectorAll('.qi').forEach(i=>open1(i,m==='qa'))}
-window.setQMode=setMode;setMode(QM);""")
+window.setQMode=setMode;setMode(QM);
+const colAll=()=>QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',false);x.querySelector('.qs-b').hidden=true});window.qColAll=colAll;colAll();""")
     s = _rep(s, "if(/^#\\/questions/.test(location.hash))sync()", "if(/^#\\/(questions|qa)/.test(location.hash))sync()")
     a = "function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');"
     s = _rep(s, a, """function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');if(p[0]==='topics')p[0]='qa';const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');
-if(v.id==='v-questions'&&window.setQMode){setQMode('q')}""")
+if(v.id==='v-questions'&&window.setQMode){setQMode('q');if(!window.__qa&&window.qColAll)qColAll()}""")
     s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD + HOMEJS + "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n")
     s = s.replace('<small>${esc(d[4])} · ${d[0]}</small>', '<small>${esc(d[4])}${d[0]?\' · \'+d[0]:\'\'}</small>')
     s = s.replace('${qd[0]} · ${esc(qd[4])}', '${qd[0]?qd[0]+\' · \':\'\'}${esc(qd[4])}')

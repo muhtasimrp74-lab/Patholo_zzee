@@ -2199,6 +2199,7 @@ function apply(){
   fl.innerHTML=Object.keys(grp).sort((a,b)=>(!a)-(!b)||cardCmp(a,b)).map(c=>sec(c||'W',c?'Card '+c:'Written questions (no card)',grp[c],'data-c="'+c+'"')).join('');fl.querySelectorAll('.qi').forEach(lbl)}
  else{list.querySelectorAll('.qi').forEach(i=>i.hidden=!ok.has(i.dataset.id));
   list.querySelectorAll('.qsub,.qtop').forEach(h=>{const t=h.classList.contains('qtop');let n=h.nextElementSibling,v=false;while(n&&!n.classList.contains('qsub')&&!(t&&n.classList.contains('qtop'))){if(n.classList.contains('qi')&&!n.hidden)v=true;n=n.nextElementSibling}h.hidden=!v});
+  if(!act&&window.__qa!==false&&window.qColAll)window.qColAll();window.__qa=!!act;
   list.querySelectorAll('.qs').forEach(s=>{const v=s.querySelectorAll('.qi:not([hidden])').length;s.hidden=!v;if(act&&v){s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false}})}
  $q('qnone').hidden=!!hit.length;
  $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
@@ -2317,6 +2318,7 @@ function setMode(m){QM=m;S.pref=S.pref||{};const w=QV.querySelector('.qmain');w.
 QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',true);x.querySelector('.qs-b').hidden=false});
 QV.querySelectorAll('.qi').forEach(i=>open1(i,m==='qa'))}
 window.setQMode=setMode;setMode(QM);
+const colAll=()=>QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',false);x.querySelector('.qs-b').hidden=true});window.qColAll=colAll;colAll();
 $q('qfilter').addEventListener('input',e=>{F.q=e.target.value.trim().toLowerCase();run()});
 run();
 })();
@@ -2825,7 +2827,7 @@ const flip=h=>{if(document.body.classList.contains('quiz'))h.parentElement.class
 document.addEventListener('click',e=>{const h=e.target.closest('.card header');if(h)flip(h)});
 document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.card header')){e.preventDefault();flip(e.target)}});
 function route(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]==='topics')p[0]='qa';const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');
-if(v.id==='v-questions'&&window.setQMode){setQMode('q')}
+if(v.id==='v-questions'&&window.setQMode){setQMode('q');if(!window.__qa&&window.qColAll)qColAll()}
 views.forEach(x=>x.hidden=x!==v);document.title=v.dataset.title;
 document.querySelectorAll('.card.hl').forEach(c=>c.classList.remove('hl'));
 if(COLL[p[0]])render(COLL[p[0]]);hook(p);
