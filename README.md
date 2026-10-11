@@ -59,6 +59,6 @@ You can also edit `tools/answers.md` directly on github.com from your phone. Qui
 
 **Adding questions:** append new questions at the END of a topic list in `content.py`; ids are positional, so inserting in the middle shifts every later id (the test fails if that happens). After a deliberate, reviewed change run `python3 tools/build.py && python3 tools/tests/gen_manifests.py` and bump `VERSION` in `sw.js` first.
 
-**To switch on the CI gate**, replace `.github/workflows/pages.yml` with `tools/ci/pages.yml` (edit it on github.com; a token needs the *Workflows* permission to push workflow files). That workflow builds from source, fails if the committed `index.html` is stale, runs the tests, validates the site folder, and deploys that freshly built folder only if everything passed. Pull requests run the checks without deploying.
+GitHub Actions (`.github/workflows/pages.yml`; a copy is kept in `tools/ci/pages.yml`) builds from source, fails if the committed `index.html` is stale, runs the tests, validates the site folder, and deploys that freshly built folder only if everything passed. Pull requests run the checks without deploying.
 
 **Safety nets for your data:** a restore is validated before anything is changed; the previous data is kept in `localStorage.vivaStatePrev`; unreadable saved data is kept in `vivaStateCorrupt` instead of being overwritten. In the browser console, `cacheDiag()` shows what is saved for offline use.
