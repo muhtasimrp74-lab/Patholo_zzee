@@ -1,6 +1,6 @@
 # Patholo_zzee
 
-Offline-capable study site: **1,393 pathology questions** (189 systemic viva, 68 written, 629 DU written, 507 box-viva questions on the A-cards A1–A10 for General Pathology and Haematology; NMC order, Robbins 11th).
+Offline-capable study site: **1,310 pathology questions** (189 systemic viva, 68 written, 629 DU written, 507 box-viva; 83 questions that were on both the written and box-viva lists are merged into one questions on the A-cards A1–A10 for General Pathology and Haematology; NMC order, Robbins 11th).
 
 Features: search, practice (spaced-repetition flashcards and timed viva), quiz mode, bookmarks, favourites, notes, learned-progress per topic and per part, focus mode, dark/light theme, text size, handwriting ink (pen, highlighter, eraser, lasso) on every answer, backup/restore of all your data (including ink), installable and works offline.
 
@@ -41,3 +41,6 @@ General Pathology and Haematology box-viva questions live on the A-cards. Source
 
 ## DU written questions
 `tools/gp_written_du.txt` holds 629 past DU written questions (Robbins 11th order, chapters 3-28 plus a Clinical Biochemistry group), each tagged `(DU-…)` with its exam sittings and star count. Same line format as `gp_written.txt`. They are numbered after all existing questions so saved bookmarks and notes never move. Add answers in `ANSWERS` in `tools/content.py`, keyed by the question text. Then `python3 tools/build.py` and bump `VERSION` in `sw.js`.
+
+### Questions on both lists are merged
+If the same question is on the DU written list and the box-viva cards (same kind of question about the same subject, in the same chapter; matched by `tools/dupmerge.py`), the site shows it once: the A-card tags and the `DU-…` exam tags together, stars added, filed under both Viva and Written. Every question keeps its numbering; a card that was merged away is listed in `QMETA.alias` and notes, bookmarks and progress saved on it move to the surviving card on next load (handwriting ink does not move). To stop two questions merging, reword one in its source file.

@@ -57,7 +57,7 @@ new_data, new_views, written, exam, tree_gp = [], {}, {}, {}, {}
 # question ids: the original written questions keep their numbers; box-viva questions (item[7]) are numbered after them,
 # so bookmarks, notes and progress saved on the live site never move.
 QID, _k = {}, n
-def _rank(it): return 2 if len(it) > 8 else (1 if len(it) > 7 else 0)   # written, then box viva, then DU written
+def _rank(it): return it[8] if len(it) > 8 else (1 if len(it) > 7 else 0)   # 0 written, 1 box viva, 2 DU written (merged items keep their survivor's rank)
 for _pass in (0, 1, 2):
     for _ti, _t in enumerate(content.TOPICS):
         for _ii, _it in enumerate(_t[3]):
@@ -66,22 +66,26 @@ for _pass in (0, 1, 2):
 for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
     names[tid] = e(tname); short[tid] = e(tname)
     arts = []
+    live = []
     for _ii, item in enumerate(qs):
+        if (tid, _ii) in content.DROPPED: continue      # same question as another card: shown once there
+        live.append(item)
         code, q, ans = item[:3]
         n = QID[(_ti, _ii)]
-        if len(item) > 3 and item[3] == 'W': written['q%d' % n] = 'W'
+        if len(item) > 3 and item[3] in ('W', 'B'): written['q%d' % n] = item[3]
         if len(item) > 6: tree_gp['q%d' % n] = list(item[6])
         stars, refs = (item[4], item[5]) if len(item) > 5 else (0, '')
         ex = item[7] if len(item) > 7 else {}
         if ex:
-            exam['q%d' % n] = [stars, '', [], ex['boxes'], 1 if ex['hl'] else 0]
+            exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)}), ex['boxes'], 1 if ex['hl'] else 0]
         elif stars or refs:
             exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)})]
         xm = xm_html(stars, refs, boxes=ex.get('boxes'), hl=ex.get('hl'))
         new_data.append([code, q, tid, 'q%d' % n, tname])
         arts.append('<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ''.join('<span class="code">%s</span>' % c for c in code.split()), e(q), xm, ans))
-    new_views[tid] = (qs, ''.join(arts))
-total = max(QID.values())
+    new_views[tid] = (live, ''.join(arts))
+total = max(QID.values()) - len(content.DROPPED)
+ALIAS = {'q%d' % QID[(content.TOPICS_IDX[a[0]], a[1])]: 'q%d' % QID[(content.TOPICS_IDX[b[0]], b[1])] for a, b in content.ALIAS.items()}
 order = [t for p in PARTS for t in p[3]]  # book order: Part A, B, C
 
 # Robbins chapter labels shown instead of the internal topic ids (01..15, c2 ...)
@@ -147,10 +151,14 @@ s = s.replace("sort((a,b)=>a.slice(1)-b.slice(1))", "sort((a,b)=>(a.slice(1)-b.s
 s = s.replace("new Blob([JSON.stringify(S,null,1)]", "new Blob([JSON.stringify(Object.assign({},S,{ink:(typeof Ink!=='undefined'?Ink.dump():{})}),null,1)]", 1)
 s = s.replace("function imp(f){if(!f)return;f.text().then(t=>{try{const o=JSON.parse(t);if(!o||!Array.isArray(o.bm))throw 0;Object.assign(S,o);save();location.reload()}catch(e){alert('That file is not a valid backup.')}})}",
  "function imp(f){if(!f)return;f.text().then(async t=>{let o;try{o=JSON.parse(t);if(!o||!Array.isArray(o.bm))throw 0}catch(e){alert('That file is not a valid backup.');return}const ink=o.ink;delete o.ink;Object.assign(S,o);save();if(ink&&typeof Ink!=='undefined')await Ink.load(ink);location.reload()})}", 1)
+_MIG = "const QALIAS=%s;(function(){let ch=0;const mv=(a,x,y)=>{const i=a.indexOf(x);if(i<0)return;a.splice(i,1);if(!a.includes(y))a.push(y);ch=1};for(const x in QALIAS){const y=QALIAS[x];['fav','bm','learned'].forEach(k=>{if(Array.isArray(S[k]))mv(S[k],x,y)});if(S.notes&&S.notes[x]!=null){S.notes[y]=S.notes[y]?S.notes[y]+'\\n'+S.notes[x]:S.notes[x];delete S.notes[x];ch=1}if(S.sr&&S.sr[x]){if(!S.sr[y])S.sr[y]=S.sr[x];delete S.sr[x];ch=1}}if(ch)try{localStorage.setItem('vivaState',JSON.stringify(S))}catch(e){}})();" % json.dumps(ALIAS)
+_k0 = "try{S=Object.assign(S,JSON.parse(localStorage.getItem('vivaState')||'{}'))}catch(e){}"
+assert _k0 in s
+s = s.replace(_k0, _k0 + _MIG, 1)
 assert 'Ink.load' in s and 'Ink.dump' in s and 'localeCompare(b))' in s
 
 
-QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1]] for c in CH_ORDER]}
+QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1]] for c in CH_ORDER]}
 QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
 
 PART_JS = "const PART_OF=%s;\n" % json.dumps(PART_OF) + r"""(function(){const p=prog;prog=function(){p();const L=new Set(S.learned),T={},N={};DATA.forEach(d=>{const k=PART_OF[d[2]];N[k]=(N[k]||0)+1;if(L.has(d[3]))T[k]=(T[k]||0)+1});document.querySelectorAll('[data-pp]').forEach(r=>{const k=r.dataset.pp,c=N[k]?Math.round(100*(T[k]||0)/N[k]):0;r.style.setProperty('--p',c);r.textContent=c+'%'})};prog();
