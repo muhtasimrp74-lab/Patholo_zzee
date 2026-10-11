@@ -22,7 +22,7 @@ def xm_html(stars, refs, tag='span', boxes=None, hl=False):
     and for box-viva questions each A-card with the question numbers as printed."""
     parts = []
     if stars:
-        parts.append('<span class="imp" role="img" aria-label="%s">%s</span>' % (('Asked %d time%s' % (stars, '' if stars == 1 else 's')) if boxes else ('Importance: %d of 3' % stars), ''.join(_star(i < stars) for i in range(max(3, stars)))))
+        parts.append('<span class="imp" role="img" aria-label="%s">%s</span>' % (('Asked %d time%s' % (stars, '' if stars == 1 else 's')) if (boxes or stars > 3) else ('Importance: %d of 3' % stars), ''.join(_star(i < stars) for i in range(max(3, stars)))))
     for c, lab in (boxes or []):
         parts.append('<span class="ex-y"><b class="ex-p">%s</b>%s</span>' % (e(c), e(lab) if lab else ''))
     if hl:
@@ -57,10 +57,11 @@ new_data, new_views, written, exam, tree_gp = [], {}, {}, {}, {}
 # question ids: the original written questions keep their numbers; box-viva questions (item[7]) are numbered after them,
 # so bookmarks, notes and progress saved on the live site never move.
 QID, _k = {}, n
-for _pass in (False, True):
+def _rank(it): return 2 if len(it) > 8 else (1 if len(it) > 7 else 0)   # written, then box viva, then DU written
+for _pass in (0, 1, 2):
     for _ti, _t in enumerate(content.TOPICS):
         for _ii, _it in enumerate(_t[3]):
-            if (len(_it) > 7) == _pass:
+            if _rank(_it) == _pass:
                 _k += 1; QID[(_ti, _ii)] = _k
 for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
     names[tid] = e(tname); short[tid] = e(tname)
@@ -88,7 +89,7 @@ OLD_CH = {'01': 11, '02': 12, '03': 13, '04': 15, '05': 17, '06': 18, '07': '20\
 def NO(t):
     c = OLD_CH.get(t)
     if c is None and t.startswith('c') and t[1:].isdigit(): c = int(t[1:])
-    return 'Practical' if c == 'P' else 'Ch %s' % c
+    return 'Practical' if c == 'P' else ('Biochem' if c == 30 else 'Ch %s' % c)
 CHAP = {c: (v[0], list(v[1])) for c, v in robbins_map.CHAPTERS.items()}
 for c, (t, subs) in content.GP_CHAPTERS.items():
     CHAP.setdefault(c, (t, []))
