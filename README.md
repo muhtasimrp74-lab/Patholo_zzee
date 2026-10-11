@@ -1,6 +1,6 @@
 # Patholo_zzee
 
-Offline-capable study site: **257 pathology questions** (189 viva + 68 written; General Pathology and 15 Systemic topics, NMC order, Robbins 11th). Haematology is next.
+Offline-capable study site: **764 pathology questions** (189 systemic viva, 68 written, 507 box-viva questions on the A-cards A1–A10 for General Pathology and Haematology; NMC order, Robbins 11th).
 
 Features: search, practice (spaced-repetition flashcards and timed viva), quiz mode, bookmarks, favourites, notes, learned-progress per topic and per part, focus mode, dark/light theme, text size, handwriting ink (pen, highlighter, eraser, lasso) on every answer, backup/restore of all your data (including ink), installable and works offline.
 
@@ -34,3 +34,7 @@ All self-hosted in `fonts/` (works offline): DM Serif Display (headings), Newsre
 
 ## Logo
 Vector logo traced from the brand artwork: `tools/logo/` holds the paths, and `python3 tools/make_logo.py` regenerates `icons/logo.svg`, `favicon.svg`, all PNG icons (favicon, apple-touch, 192/512, maskable) and the share image `og-image.png`. It needs `fonttools`, `brotli` and `playwright`.
+
+
+## Box viva (A-cards A1–A10)
+General Pathology and Haematology box-viva questions live on the A-cards. Source list: `tools/box_src/General_Pathology_Box_Viva_Robbins_Index.md`; run `python3 tools/boxviva_parse.py` to regenerate `tools/box_viva.txt` (Robbins chapter > sub-chapter > topic, with the card/question numbers as printed and ⭐ = times asked), then `python3 tools/build.py` and bump `VERSION` in `sw.js`. A question asked on several cards carries all of them (it appears on each card page). Clinical cases are one question each, with their asks listed. New box-viva questions are numbered after the existing ones, so saved bookmarks and notes never move. Add answers in `ANSWERS` in `tools/content.py`, keyed by the question text.
