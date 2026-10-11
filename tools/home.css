@@ -144,3 +144,25 @@
 .nh-hms span{display:flex;flex-direction:column;font:500 .74rem var(--body);color:var(--muted)}
 .nh-hms b{font:500 1.4rem/1.2 var(--disp);color:var(--navy);font-variant-numeric:lining-nums}
 .nh-hmk{margin:0;font:500 .72rem var(--body);color:var(--muted)}
+
+/* ===== Q&A home ===== */
+.qa-hero{max-width:var(--w);margin:18px auto 6px;padding:20px var(--gut);border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:var(--sh1),var(--hi)}
+.qa-top{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.qa-k{font:700 .72rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+.qa-hero h2{font:500 1.6rem/1.15 var(--disp);color:var(--navy);margin:4px 0}
+.qa-s{margin:0;color:var(--muted);font-size:.88rem;max-width:46ch}
+.qa-go{padding:10px 16px;border-radius:99px;background:var(--b600,#1769e0);color:#fff;font:600 .85rem var(--body);text-decoration:none;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.qa-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(86px,1fr));gap:10px;margin:16px 0}
+.qa-stats div{padding:10px 12px;border-radius:12px;background:var(--g-mist);border:1px solid var(--line)}
+.qa-stats b{display:block;font:500 1.5rem/1.1 var(--disp);color:var(--navy);font-variant-numeric:lining-nums}
+.qa-stats span{font-size:.74rem;color:var(--muted)}
+.qa-sr{display:flex;align-items:center;gap:8px;padding:0 12px;border:1px solid var(--line2,var(--line));border-radius:12px;background:var(--bg,transparent)}
+.qa-sr svg{width:18px;height:18px;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round;flex:none}
+.qa-sr input{flex:1;min-width:0;border:0;background:none;outline:0;padding:12px 0;font:inherit;color:var(--navy)}
+.qa-res{margin-top:10px}.qa-res p{margin:4px 0;font-size:.8rem;color:var(--muted)}
+.qa-res ul{list-style:none;margin:0;padding:0}.qa-res a{display:flex;flex-direction:column;gap:2px;padding:9px 4px;border-top:1px solid var(--line);text-decoration:none;color:var(--navy);font-size:.88rem}
+.qa-res em{font-style:normal;font-size:.72rem;color:var(--muted)}
+.topic .qa-mini{grid-column:1/-1;display:block;margin-top:8px}
+.qa-mini i{display:block;height:5px;border-radius:9px;background:color-mix(in srgb,var(--line) 85%,var(--blue) 15%);overflow:hidden}
+.qa-mini u{display:block;height:100%;background:var(--blue);border-radius:9px}
+.qa-mini small{display:block;margin-top:5px;font-size:.72rem;color:var(--muted)}
