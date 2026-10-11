@@ -564,3 +564,9 @@ html #tools{background:color-mix(in srgb,var(--panel) 88%,transparent)}
 @media(max-width:700px){.bar-in .tq,.bar-in input,.bar-in .jump,.bar-in .dd,.bar-in .db{flex-basis:100%}}
 .tf-row{position:relative;z-index:1}
 html #qf{background:var(--panel);-webkit-backdrop-filter:none;backdrop-filter:none}
+
+/* Robbins topic headings under a heading: Questions tab (.qtop) and chapter pages (.tsub) */
+.qtop,h4.tsub{margin:12px 6px 2px;font:600 .74rem var(--body);letter-spacing:.03em;color:var(--muted)}
+.qtop::before,h4.tsub::before{content:"\25B8\00a0"}
+h4.tsub{margin:22px 0 8px}
+.qtop[hidden],.tsub.hide{display:none}

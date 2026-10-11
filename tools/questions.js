@@ -21,17 +21,17 @@ const pk=d=>PO[d[2]]||'',ty=d=>TY[d[3]]||'V',cardOf=c=>{const m=/^([A-Z]+)(\d+)$
 const cds=d=>d[0]?d[0].split(' '):[],letter=d=>cds(d).map(c=>cardOf(c)[0]),hasL=(d,l)=>letter(d).includes(l);
 const cardCmp=(a,b)=>{const x=cardOf(a),y=cardOf(b);return x[0].localeCompare(y[0])||x[1]-y[1]};
 const pidx=k=>{const i=PARTS.findIndex(p=>p[0]===k);return i<0?99:i};
-const TREE=QMETA.tree||{},CHS=QMETA.chapters||[],chOf=d=>(TREE[d[3]]||['?'])[0],subOf=d=>(TREE[d[3]]||[0,''])[1];
+const TREE=QMETA.tree||{},CHS=QMETA.chapters||[],chOf=d=>(TREE[d[3]]||['?'])[0],subOf=d=>(TREE[d[3]]||[0,''])[1],topOf=d=>(TREE[d[3]]||[0,'',''])[2];
 const g={};DATA.forEach(d=>(g[chOf(d)]=g[chOf(d)]||[]).push(d));
 const CHI={};CHS.forEach((c,i)=>CHI[c[0]]=c);
 const tids=CHS.map(c=>c[0]).filter(c=>g[c]);
-tids.forEach(c=>{const subs=CHI[c][3];g[c].sort((a,b)=>subs.indexOf(subOf(a))-subs.indexOf(subOf(b)))});
+tids.forEach(c=>{const subs=CHI[c][3],tp=CHI[c][4]||{},ti=d=>{const i=(tp[subOf(d)]||[]).indexOf(topOf(d));return i<0?999:i};g[c].sort((a,b)=>subs.indexOf(subOf(a))-subs.indexOf(subOf(b))||ti(a)-ti(b))});
 const BOOK={};let bi=0;tids.forEach(t=>g[t].forEach(d=>BOOK[d[3]]=bi++));
 const LETTERS=[...new Set(['A','B'].concat(DATA.flatMap(letter).filter(Boolean)))].sort();
 const CODES=[...new Set(DATA.flatMap(cds))].sort(cardCmp);
 
 const qi=d=>`<div class="qi" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}${xm(d)}</span>${ty(d)==='W'?'<span class="tg">Written</span>':ty(d)==='B'?'<span class="tg">Written + Viva</span>':''}<span class="qgo" role="link" tabindex="0" data-go="#/${d[2]}/${d[3]}" aria-label="Open answer on its own page">Answer ›</span>${chev}</button><div class="qi-a" hidden></div></div>`;
-const secC=c=>{const it=g[c],ci=CHI[c];let last=null,h='';it.forEach(d=>{const sb=subOf(d);if(sb!==last){h+=`<h5 class="qsub" data-sub="${esc(sb)}">${esc(sb)}</h5>`;last=sb}h+=qi(d)});
+const secC=c=>{const it=g[c],ci=CHI[c];let last=null,lt=null,h='';const nt={};it.forEach(d=>(nt[subOf(d)]=nt[subOf(d)]||new Set()).add(topOf(d)));it.forEach(d=>{const sb=subOf(d),tp=topOf(d);if(sb!==last){h+=`<h5 class="qsub" data-sub="${esc(sb)}">${esc(sb)}</h5>`;last=sb;lt=null}if(nt[sb].size>1&&tp!==lt){h+=`<h6 class="qtop" data-top="${esc(tp)}">${esc(tp)}</h6>`;lt=tp}h+=qi(d)});
  return `<section class="qs" data-t="${c}"><button class="qs-h" type="button" aria-expanded="true"><span class="no">${esc(ci[2])}</span><b>${esc(ci[1])}</b><span class="cnt">${it.length}</span>${chev}</button><div class="qs-b">${h}</div></section>`};
 const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${items.map(qi).join('')}</div></section>`;
 
@@ -96,7 +96,7 @@ function apply(){
  if(flat){const grp={};hit.slice().sort((x,y)=>cardCmp(cds(x)[0]||'',cds(y)[0]||'')||BOOK[x[3]]-BOOK[y[3]]).forEach(d=>(cds(d).length?cds(d):['']).forEach(c=>(grp[c]=grp[c]||[]).push(d)));
   fl.innerHTML=Object.keys(grp).sort((a,b)=>(!a)-(!b)||cardCmp(a,b)).map(c=>sec(c||'W',c?'Card '+c:'Written questions (no card)',grp[c],'data-c="'+c+'"')).join('');fl.querySelectorAll('.qi').forEach(lbl)}
  else{list.querySelectorAll('.qi').forEach(i=>i.hidden=!ok.has(i.dataset.id));
-  list.querySelectorAll('.qsub').forEach(h=>{let n=h.nextElementSibling,v=false;while(n&&!n.classList.contains('qsub')){if(!n.hidden)v=true;n=n.nextElementSibling}h.hidden=!v});
+  list.querySelectorAll('.qsub,.qtop').forEach(h=>{const t=h.classList.contains('qtop');let n=h.nextElementSibling,v=false;while(n&&!n.classList.contains('qsub')&&!(t&&n.classList.contains('qtop'))){if(n.classList.contains('qi')&&!n.hidden)v=true;n=n.nextElementSibling}h.hidden=!v});
   list.querySelectorAll('.qs').forEach(s=>{const v=s.querySelectorAll('.qi:not([hidden])').length;s.hidden=!v;if(act&&v){s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false}})}
  $q('qnone').hidden=!!hit.length;
  $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
