@@ -1,27 +1,26 @@
-/* ---- cinematic banners on Questions / Chapters / MCQs / Textbook / Menu (images: icons/pb-*.webp) ---- */
-  .pb{position:relative;height:min(56.25vw,640px);min-height:380px;background:#1C1A19;color:#F7F2E8;overflow:hidden}
+
+/* ---- cinematic banners on Questions / Chapters / MCQs / Textbook / Menu: same ratios as the homepage banner (images: icons/pb-*.webp) ---- */
+.pb{position:relative;height:clamp(420px,32vw,500px);background:#1C1A19;color:#F7F2E8;overflow:hidden}
 .pb-pic{position:absolute;inset:0}
-.pb-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,26,25,.9) 0,rgba(28,26,25,.72) 34%,rgba(28,26,25,0) 62%)}
+.pb-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,26,25,.8) 0,rgba(28,26,25,.5) 30%,rgba(28,26,25,0) 56%)}
+.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(90deg,rgba(18,16,16,.94) 0,rgba(18,16,16,.84) 28%,rgba(18,16,16,.5) 44%,rgba(18,16,16,0) 62%)}
 .pb-pic picture,.pb-pic img{display:block;width:100%;height:100%}
-.pb-pic img{object-fit:cover;object-position:var(--px,50%) var(--py,40%)}
-  .pb[data-pb=questions]{--py:90%}.pb[data-pb=chapters]{--py:90%}.pb[data-pb=mcqs]{--py:80%}.pb[data-pb=textbook]{--py:55%}.pb[data-pb=menu]{--py:60%}
+.pb-pic img{object-fit:cover;object-position:var(--px,50%) var(--py,17%)}
+.pb[data-pb=questions]{--py:49%}.pb[data-pb=chapters]{--py:55%}.pb[data-pb=mcqs]{--py:42%}.pb[data-pb=textbook]{--py:30%}.pb[data-pb=menu]{--py:43%}
 .pb-in{position:relative;z-index:1;height:100%;max-width:var(--w);margin:0 auto;display:flex;align-items:center}
-.pb[data-pb=textbook] .pb-in .hero-in{max-width:min(500px,42%)}
-.pb-in .hero-in{display:block;width:100%;max-width:min(520px,48%);margin:0;padding:0 var(--gut);grid-template-columns:1fr}
+.pb-in .hero-in{display:block;width:100%;max-width:min(470px,46%);margin:0;padding:0 var(--gut);grid-template-columns:1fr}
 .pb-in .hero-in::before{display:none}
 .pb-in .crumb,.pb-in .crumb a{color:#D18A70}.pb-in .crumb a:hover{color:#F7F2E8}
-.pb-in h1{margin:4px 0 10px;font-size:clamp(2rem,3.4vw,2.9rem);line-height:1.08;color:#F7F2E8}
-.pb-in .lede{margin:0;max-width:42ch;font-size:.98rem;line-height:1.55;color:#D8CDBD}
-@media(max-width:1000px){.pb{height:56.25vw;min-height:0}.pb-in .hero-in,.pb[data-pb=textbook] .pb-in .hero-in{max-width:56%}.pb-in .lede{font-size:.92rem}.pb-in h1{font-size:clamp(1.6rem,4.6vw,2.2rem)}}
+.pb-in h1{margin:4px 0 14px;font-size:clamp(1.9rem,3.2vw,2.75rem);line-height:1.1;color:#F7F2E8}
+.pb-in .lede{margin:0;max-width:40ch;font-size:1.02rem;line-height:1.55;color:#D8CDBD}
+@media(max-width:1000px){.pb{height:clamp(360px,46vw,420px)}.pb-in .hero-in{max-width:50%}}
 @media(max-width:640px){
  .pb{height:auto}
- .pb-pic{position:relative;height:56.25vw}
- .pb-pic::after{background:linear-gradient(180deg,rgba(28,26,25,0) 55%,#1C1A19 100%)}
- .pb-in{height:auto;display:block;padding:2px 0 22px}
- .pb-in .hero-in,.pb[data-pb=textbook] .pb-in .hero-in{max-width:none;padding:0 var(--gut)}
- .pb-in h1{font-size:clamp(1.8rem,8vw,2.2rem)}
- .pb-in .lede{max-width:none;font-size:.9rem}
+ .pb-pic{position:relative;height:min(78vw,340px)}
+ .pb-pic::after,.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(180deg,rgba(28,26,25,0) 55%,#1C1A19 100%)}
+ .pb[data-pb=questions],.pb[data-pb=chapters],.pb[data-pb=mcqs]{--px:100%}.pb[data-pb=textbook]{--px:55%}.pb[data-pb=menu]{--px:50%}
+ .pb-in{height:auto;display:block;padding:4px 0 30px}
+ .pb-in .hero-in{max-width:none;padding:0 var(--gut)}
+ .pb-in h1{font-size:clamp(1.7rem,7.4vw,2.1rem)}
+ .pb-in .lede{max-width:none;font-size:.95rem}
 }
-.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(90deg,rgba(18,16,16,.96) 0,rgba(18,16,16,.88) 28%,rgba(18,16,16,.55) 46%,rgba(18,16,16,0) 66%)}
-@media(max-width:1000px){.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(90deg,rgba(18,16,16,.96) 0,rgba(18,16,16,.85) 34%,rgba(18,16,16,.45) 56%,rgba(18,16,16,0) 76%)}}
-@media(max-width:640px){.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(180deg,rgba(28,26,25,0) 55%,#1C1A19 100%)}}
