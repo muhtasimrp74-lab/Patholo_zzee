@@ -36,8 +36,8 @@ body.calm .card .ans{padding-left:max(var(--gx,18px),4%);padding-right:max(var(-
 body.calm .xm,body.calm .acts{opacity:.9}
 
 /* ---- Smoother page transitions (views fade and glide in; skipped for reduced motion) ---- */
-@keyframes zzin{from{opacity:0;transform:translateY(12px) scale(.995);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
-.view:not([hidden]){animation:zzin .38s cubic-bezier(.22,.8,.3,1) both}
+@keyframes zzin{from{opacity:.6}to{opacity:1}}
+.view:not([hidden]){animation:zzin .16s ease-out}
 html.zz-still .view:not([hidden]){animation:none}
 @media(prefers-reduced-motion:reduce){.view:not([hidden]){animation:none}}
 .card.open .ans{animation:zzfade .28s ease both}
@@ -92,7 +92,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
 .zz-spark{position:fixed;z-index:90;width:7px;height:7px;margin:-3.5px;border-radius:50%;pointer-events:none;background:var(--c,var(--lbl));animation:zzspark .7s cubic-bezier(.2,.7,.3,1) forwards}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
-.qi-a:not([hidden]),.qs-b:not([hidden]){animation:zzin .3s cubic-bezier(.22,.8,.3,1) both}
+.qi-a:not([hidden]),.qs-b:not([hidden]){animation:rise .2s ease-out}
 #bnav a[aria-current],#bnav a.on{transition:transform .3s cubic-bezier(.2,1.5,.4,1)}
 #bnav a[aria-current] svg,#bnav a.on svg{animation:zzbob .5s cubic-bezier(.2,1.5,.4,1)}
 @keyframes zzbob{0%{transform:translateY(4px) scale(.85)}60%{transform:translateY(-3px) scale(1.12)}100%{transform:none}}
@@ -102,7 +102,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 
 /* ---- Tutorial v2: spotlight, glass card (draggable), pointing hand ---- */
 #zz-tut-fx{position:fixed;inset:0;z-index:68;pointer-events:none}
-#zz-tut-fx .fl{position:fixed;inset:0;background:rgba(18,12,10,.28);-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px);opacity:0;transition:opacity .45s ease}
+#zz-tut-fx .fl{position:fixed;inset:0;background:rgba(18,12,10,.3);opacity:0;transition:opacity .3s ease;pointer-events:none}
 #zz-tut-fx .sp{position:fixed;border-radius:16px;border:2px solid rgba(255,255,255,.95);box-shadow:0 0 0 100vmax rgba(18,12,10,.38);will-change:left,top,width,height}
 #zz-tut-fx.gl .sp{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),width .65s cubic-bezier(.45,0,.15,1),height .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}
 #zz-tut-fx.gl .hd{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}

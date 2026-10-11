@@ -384,6 +384,8 @@ BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
 s = s.replace('</head><body>', BOOT_HEAD + '</head><body>', 1)
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
+import re as _re
+s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
 os.remove(os.path.join(HERE, '_stage.html'))
 print('wrote index.html', len(s))
