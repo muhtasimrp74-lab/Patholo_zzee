@@ -5,19 +5,22 @@
  const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const BY={};Q.forEach(q=>BY[q.h]=q);
  const L='ABCDE',PAPERS=['May 2026','Nov 2025','May 2025','DU-24N','DU-24M','DU-23N','DU-23M','DU-22N','DU-22M','DU-21M','DU-20N/M','DU-19Nov'];
- const ST=()=>{const m=S.mcq=S.mcq&&typeof S.mcq==='object'?S.mcq:{};m.p=m.p||{};m.bm=m.bm||[];m.hist=m.hist||[];m.o=m.o||{};m.day=m.day||{d:'',n:0};return m};
+ const ST=()=>{const m=S.mcq=S.mcq&&typeof S.mcq==='object'?S.mcq:{};m.p=m.p||{};m.bm=m.bm||[];m.hist=m.hist||[];m.o=m.o||{};m.day=m.day||{d:'',n:0};m.rd=m.rd&&typeof m.rd==='object'&&!Array.isArray(m.rd)?m.rd:{};m.rv=Array.isArray(m.rv)?m.rv:[];m.nt=m.nt&&typeof m.nt==='object'&&!Array.isArray(m.nt)?m.nt:{};return m};
  const P=()=>ST().p, tn=q=>CH[q.c][1][q.t], tk=q=>q.c+'.'+q.t;
  const ok=(q,a)=>q.y?Array.isArray(a)&&a.length===5&&a.every((v,j)=>v===q.a[j]):a===q.a;
  const fmt=s=>{s=Math.max(0,Math.round(s));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return(h?h+':'+String(m).padStart(2,'0'):m)+':'+String(x).padStart(2,'0')};
  const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
  const today=()=>new Date().toLocaleDateString('en-CA');
  const ic={bm:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-4-6 4V5a1 1 0 0 1 1-1z"/></svg>',
+  ok:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.2 9.5"/></svg>',
+  note:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8.5 9h7M8.5 13h7M8.5 17h4"/></svg>',
+  rev:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3L20 9M20 4v5h-5M20 12a8 8 0 0 1-14 5.3L4 15M4 20v-5h5"/></svg>',
   x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
   grid:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>',
   go:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'};
  const record=(q,good)=>{const m=ST(),p=m.p[q.h]=m.p[q.h]||{n:0,k:0};p.n++;if(good)p.k++;p.r=good?1:0;p.ts=Date.now();
   if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;window.actLog&&window.actLog(1);save()};
- const stOf=q=>{const p=P()[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(ST().bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');return a};
+ const stOf=q=>{const m=ST(),p=m.p[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(m.bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');a.push(m.rd[q.h]?'read':'unread');if(m.rv.includes(q.h))a.push('rev');if(m.nt[q.h])a.push('nt');return a};
 
  /* ---------- filters ---------- */
  const emptyF=()=>({tp:new Set(),ty:new Set(),src:new Set(),tg:new Set(),pp:new Set(),st:new Set(),txt:''});
@@ -53,6 +56,13 @@
  /* ---------- question card ---------- */
  const metaRow=(q,x)=>`<div class="mx-meta"><span class="mx-chip c">${E(tn(q))}</span><span class="mx-chip">${q.y?'T / F':'SBA'}</span>${(q.g||[]).map(g=>`<span class="mx-chip p">${E(g)}</span>`).join('')}${x||''}</div>`;
  const bmBtn=q=>`<button type="button" class="mx-bm" data-a="bm" data-h="${q.h}" aria-pressed="${ST().bm.includes(q.h)}" aria-label="Bookmark">${ic.bm}</button>`;
+ /* per-question tools: mark as read, my note, revise later (stored in S.mcq.rd / .nt / .rv) */
+ const nOpen=new Set();let ntT=0;
+ const noteBox=q=>nOpen.has(q.h)?`<div class="mx-nbox"><label for="nt-${q.h}">My note</label><textarea class="mx-nt" id="nt-${q.h}" data-h="${q.h}" rows="3" placeholder="Write a note for this question (a mnemonic, why you got it wrong...)">${E(ST().nt[q.h]||'')}</textarea><small>Saved on this device and included in your backup</small></div>`:'';
+ const qaRow=q=>{const m=ST(),h=q.h,rd=!!m.rd[h],rv=m.rv.includes(h),nt=!!m.nt[h];
+  return `<div class="mx-qa" role="group" aria-label="Question tools"><button type="button" class="mx-qb mx-qb-rd" data-a="rd" data-h="${h}" aria-pressed="${rd}">${ic.ok}<span>${rd?'Read':'Mark as read'}</span></button><button type="button" class="mx-qb mx-qb-nt${nt?' has':''}" data-a="nt" data-h="${h}" aria-expanded="${nOpen.has(h)}">${ic.note}<span>Notes</span></button><button type="button" class="mx-qb mx-qb-rv" data-a="rv" data-h="${h}" aria-pressed="${rv}">${ic.rev}<span>${rv?'In revise list':'Revise later'}</span></button></div>${noteBox(q)}`};
+ const saveNote=(h,v)=>{clearTimeout(ntT);const m=ST();if(v.trim())m.nt[h]=v;else delete m.nt[h];save();
+  M.querySelectorAll('.mx-qb-nt[data-h="'+h+'"]').forEach(x=>x.classList.toggle('has',!!m.nt[h]))};
  function body(q,o){ // o: ans, fb, lock, notes
   const fb=o.fb,a=o.ans,nt=o.notes!==false;let h='';
   const warn=j=>q.w&&q.w[j]?`<small class="mx-w">Note on the key: ${E(q.w[j])}</small>`:'';
@@ -88,7 +98,7 @@
    <div class="mx-pg"><span>${rv?'Review':E(s.scope)} · ${s.i+1} of ${n}</span><i style="--w:${((s.i+1)/n*100).toFixed(1)}%"></i></div>${tm}
    <button type="button" class="mx-ib" data-a="pal" aria-label="Question list">${ic.grid}</button></div>
    <article class="mx-card" data-h="${q.h}">${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3>${q.y?'<p class="mx-hint">Mark each statement True or False.</p>':''}
-   <div class="mx-opts">${body(q,{ans:a,fb,lock,notes:true})}</div>${fb?verdict+bareAns(q):''}</article>
+   <div class="mx-opts">${body(q,{ans:a,fb,lock,notes:true})}</div>${fb?verdict+bareAns(q):''}${qaRow(q)}</article>
    <div class="mx-act">${act}</div><div class="mx-pal" id="mx-pal" hidden></div></div>`;
   if(!rv)startTimer();window.scrollTo(0,0)}
  function startTimer(){clearInterval(tid);if(!sess||sess.review)return;tid=setInterval(()=>{if(!sess){clearInterval(tid);return}
@@ -141,6 +151,7 @@ function home(){
   Q.forEach(q=>{const x=p[q.h];if(!x||!x.n)return;att++;ty[q.y][0]++;if(x.r){right++;ty[q.y][1]++}else wrong++});
   const left=n-att,acc=att?Math.round(right/att*100):0,sba=ty[0][0]?Math.round(ty[0][1]/ty[0][0]*100):null,tf=ty[1][0]?Math.round(ty[1][1]/ty[1][0]*100):null;
   const goal=m.goal||20,td=m.day.d===today()?m.day.n:0,gp=Math.min(100,Math.round(td/goal*100));
+  const nRev=m.rv.filter(h=>BY[h]).length,nNt=Object.keys(m.nt).filter(h=>BY[h]).length,nRd=Object.keys(m.rd).filter(h=>BY[h]).length;
   const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length&&!sv.review?sv:null;
   const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=p[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
    return{ci,name:c[0],t,n:t.reduce((x,y)=>x+y.n,0),a:t.reduce((x,y)=>x+y.a,0),r:t.reduce((x,y)=>x+y.r,0)}});
@@ -161,11 +172,11 @@ function home(){
    <div class="mx-day"><p class="mx-eb">Today</p><div class="mx-pc">${td}<small> / ${goal}</small></div><span class="mx-st g"><u class="r" style="width:${gp}%"></u></span>
     <p class="mx-sub2">${td>=goal?'Daily goal reached. Anything more is a bonus.':(goal-td)+' more to reach today\'s goal.'}</p>
     <div class="mx-goal" role="group" aria-label="Daily goal"><span>Goal</span>${[10,20,30,50].map(v=>`<button type="button" data-a="goal" data-v="${v}" aria-pressed="${v===goal}">${v}</button>`).join('')}</div></div></section>
-   <p class="mx-about">${n} questions · ${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False</p>
+   <p class="mx-about">${n} questions · ${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False${nRd?` · ${nRd} marked as read`:''}</p>
    ${svv?`<button type="button" class="mx-resume" data-a="resume"><span><small>Pick up where you left off</small>${E(svv.scope)} · question ${svv.i+1} of ${svv.ids.length}</span>${ic.go}</button>`:''}
    <button type="button" class="mx-next" data-a="${nx[0]}" ${nx[1]!==''?`data-c="${nx[1]}" data-t="${nx[2]}"`:''}><span><small>Suggested next</small><b>${nx[3]}</b>${nx[4]}</span>${ic.go}</button>
    <p class="mx-h">Practise</p>
-   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Missed questions','Redo what you got wrong',wrong?'':'disabled','t5',wrong||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}</div>
+   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Missed questions','Redo what you got wrong',wrong?'':'disabled','t5',wrong||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}${tile('revl','Revise later',nRev?'Questions you flagged to come back to':'Flag questions with Revise later',nRev?'':'disabled','t7',nRev||'')}${tile('mynotes','My notes',nNt?'Read every question you wrote a note on':'Add notes under any question',nNt?'':'disabled','t8',nNt||'')}</div>
    ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><small>${t.r}/${t.a}</small><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
    <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span>${seg2(c)}</summary>
     <div class="mx-tps">${c.t.map(t=>`<div class="mx-tp"><span>${E(t.name)}<small>${t.n} · ${t.a?Math.round(t.r/t.a*100)+'% right':'new'}</small></span><button type="button" data-a="topic" data-c="${c.ci}" data-t="${t.ti}">Practise</button><button type="button" data-a="topicread" data-c="${c.ci}" data-t="${t.ti}">Read</button></div>`).join('')}
@@ -178,7 +189,7 @@ function home(){
  /* ---------- custom practice (faceted filter) ---------- */
  function chip(f,v,label,x){return `<label class="mx-f"><input type="checkbox" data-f="${f}" data-v="${E(v)}"><span>${label}</span><em></em></label>`}
  function builder(){
-  const stL={new:'Not attempted',wrong:'Missed last time',right:'Answered right',bm:'Bookmarked',key:'Has a key note'};
+  const stL={new:'Not attempted',wrong:'Missed last time',right:'Answered right',bm:'Bookmarked',rev:'Revise later',read:'Marked as read',unread:'Not marked as read',nt:'Has my note',key:'Has a key note'};
   M.innerHTML=`<div class="mx-bld"><div class="mx-fl">
    <label class="mx-search"><input type="search" id="mx-q" placeholder="Search question text" value="${E(F.txt)}" autocomplete="off"></label>
    <div class="mx-fs"><p class="mx-fh">Chapter and topic</p><div class="mx-chl">${CH.map((c,ci)=>`<div class="mx-chd2${[...F.tp].some(k=>k.split('.')[0]==ci)?' open':''}"><div class="mx-chh"><label class="mx-f ch"><input type="checkbox" data-f="ch" data-v="${ci}"><span>${E(c[0])}</span><em></em></label><button type="button" class="mx-tg" data-a="tg" aria-label="Show topics in ${E(c[0])}" aria-expanded="false">${ic.go}</button></div><div class="mx-tpl">${c[1].map((t,ti)=>chip('tp',ci+'.'+ti,E(t))).join('')}</div></div>`).join('')}</div></div>
@@ -218,8 +229,9 @@ function home(){
   if(readCh!==-2&&!present.includes(readCh))readCh=present.length?present[0]:-2;
   const whole=readCh===-2&&present.length>0||false;
   const hits=readCh>=0?all.filter(q=>q.c===readCh):all,sh=readCh>=0?hits:hits.slice(0,readN);let last=-1,out='';
+  sh.forEach(q=>{if(ST().nt[q.h])nOpen.add(q.h)});   /* questions you have written a note on show it while reading */
   sh.forEach((q,i)=>{const g=tk(q);if(g!==last){last=g;out+=`<h3 class="mx-rt">${E(CH[q.c][0])}<small>${E(tn(q))}</small></h3>`}
-   out+=`<article class="mx-card read" data-h="${q.h}"><div class="mx-qn">${i+1}</div>${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3><div class="mx-opts">${body(q,{fb:readOpt.show,lock:true,notes:readOpt.notes,st:true})}</div>${readOpt.show?bareAns(q):''}</article>`});
+   out+=`<article class="mx-card read" data-h="${q.h}"><div class="mx-qn">${i+1}</div>${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3><div class="mx-opts">${body(q,{fb:readOpt.show,lock:true,notes:readOpt.notes,st:true})}</div>${readOpt.show?bareAns(q):''}${qaRow(q)}</article>`});
   const pi=present.indexOf(readCh),pv=pi>0?present[pi-1]:null,nx=pi>=0&&pi<present.length-1?present[pi+1]:null;
   const sel=`<select class="mx-sel" id="mx-rc" aria-label="Chapter"><option value="-2" ${readCh===-2?'selected':''}>All chapters (${all.length})</option>${present.map(c=>`<option value="${c}" ${c===readCh?'selected':''}>${c+1}. ${E(CH[c][0])} (${cnt[c]})</option>`).join('')}</select>`;
   const pager=readCh>=0?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="rch" data-c="${pv}" ${pv===null?'disabled':''}>‹ Previous chapter</button><button type="button" class="mx-btn" data-a="rch" data-c="${nx}" ${nx===null?'disabled':''}>Next chapter ›</button></div>`:'';
@@ -244,6 +256,14 @@ function home(){
    case 'read':reset();readN=30;readCh=-1;saveF();nav('read');break;
    case 'mist':start(shuf(Q.filter(q=>{const x=P()[q.h];return x&&x.n&&!x.r}).map(q=>q.h)),{scope:'Missed questions'});break;
    case 'saved':start(shuf(ST().bm.filter(h=>BY[h])),{scope:'Bookmarks'});break;
+   case 'revl':start(shuf(ST().rv.filter(h=>BY[h])),{scope:'Revise later'});break;
+   case 'mynotes':reset();F.st.add('nt');saveF();readN=30;readCh=-1;nav('read');break;
+   case 'rd':{const m=ST(),h=b.dataset.h,on=!m.rd[h];if(on)m.rd[h]=1;else delete m.rd[h];save();b.setAttribute('aria-pressed',on);b.lastChild.textContent=on?'Read':'Mark as read';break}
+   case 'rv':{const m=ST(),h=b.dataset.h,i=m.rv.indexOf(h);if(i<0)m.rv.push(h);else m.rv.splice(i,1);save();b.setAttribute('aria-pressed',i<0);b.lastChild.textContent=i<0?'In revise list':'Revise later';break}
+   case 'nt':{const h=b.dataset.h,card=b.closest('.mx-card'),bx=card.querySelector('.mx-nbox');
+    if(bx){const t=bx.querySelector('textarea');if(t)saveNote(h,t.value);bx.remove();nOpen.delete(h);b.setAttribute('aria-expanded','false')}
+    else{nOpen.add(h);card.insertAdjacentHTML('beforeend',noteBox(BY[h]));b.setAttribute('aria-expanded','true');const t=card.querySelector('.mx-nt');if(t)t.focus()}
+    break}
    case 'goal':{const m=ST();m.goal=+b.dataset.v;save();home();break}
    case 'resume':sess=ST().sess;if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
    case 'topic':start(topicIds(+b.dataset.c,+b.dataset.t).slice(0,25),{scope:CH[b.dataset.c][1][b.dataset.t]});break;
@@ -251,7 +271,7 @@ function home(){
    case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;readCh=-1;nav('read');break;
    case 'chapread':reset();setF('ch',b.dataset.c,true);saveF();readN=30;readCh=+b.dataset.c;nav('read');break;
    case 'paper':{const g=b.dataset.g;start(Q.filter(q=>(q.g||[]).includes(g)).map(q=>q.h),{mode:'exam',limit:1800,scope:'Paper '+g});break}
-   case 'resetp':if(confirm('Clear all MCQ answers, bookmarks and history on this device?')){const m=ST();m.p={};m.bm=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
+   case 'resetp':if(confirm('Clear all MCQ answers, bookmarks, read and revise-later marks and history on this device? Your notes are kept.')){const m=ST();m.p={};m.bm=[];m.rd={};m.rv=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
    case 'tg':{const d=b.closest('.mx-chd2');b.setAttribute('aria-expanded',d.classList.toggle('open'));break}
    case 'clear':reset();document.getElementById('mx-q').value='';refresh();break;
    case 'gostart':{const ids=pickSet();O.mode=O.mode||'practice';const n=ids.length;saveF();start(ids,{mode:O.mode,limit:lim(n),scope:'Custom practice'});break}
@@ -278,8 +298,10 @@ function home(){
    case 'retry':{const l=ST().last;const ids=l.ids.filter(h=>!ok(BY[h],l.ans[h]));start(shuf(ids),{scope:'Retry missed'});break}
    case 'home':nav();break}});
  M.addEventListener('change',e=>{const i=e.target;if(i.id==='mx-rc'){readCh=+i.value;reading();window.scrollTo(0,0);return}if(!i.dataset.f)return;setF(i.dataset.f,i.dataset.v,i.checked);refresh()});
- M.addEventListener('input',e=>{if(e.target.id==='mx-q'){F.txt=e.target.value.trim().toLowerCase();refresh()}});
- addEventListener('keydown',e=>{if(!sess||document.body.classList.contains('mx-live')===false||/INPUT|TEXTAREA/.test(e.target.tagName))return;
+ M.addEventListener('input',e=>{const t=e.target;if(t.id==='mx-q'){F.txt=t.value.trim().toLowerCase();refresh()}
+  else if(t.classList&&t.classList.contains('mx-nt')){const h=t.dataset.h,v=t.value;clearTimeout(ntT);ntT=setTimeout(()=>saveNote(h,v),400)}});
+ M.addEventListener('focusout',e=>{const t=e.target;if(t.classList&&t.classList.contains('mx-nt'))saveNote(t.dataset.h,t.value)});
+ addEventListener('keydown',e=>{if(!sess||document.body.classList.contains('mx-live')===false||/INPUT|TEXTAREA/.test(e.target.tagName)||(e.target.closest&&e.target.closest('.mx-qa')))return;
   const q=BY[sess.ids[sess.i]],rv=sess.review,exam=sess.mode==='exam'&&!rv,k=e.key;
   if(k==='ArrowRight'){step(1)}else if(k==='ArrowLeft'){step(-1)}
   else if(!q.y&&/^[a-eA-E]$/.test(k)){if(!rv)setAns(q,'abcde'.indexOf(k.toLowerCase()))}
