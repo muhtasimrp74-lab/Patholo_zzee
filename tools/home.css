@@ -175,3 +175,21 @@
 .qprog i{flex:1;height:5px;border-radius:9px;background:color-mix(in srgb,var(--line) 85%,var(--blue) 15%);overflow:hidden}
 .qprog u{display:block;height:100%;width:0;background:var(--blue);border-radius:9px;transition:width .3s}
 .qprog span{font-size:.76rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ===== UI polish: touch targets, readable text, nav clearance, calmer home hero ===== */
+@media(max-width:1000px){
+ #tools{display:none!important}body.focus #tools{display:flex!important}
+ body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
+}
+.crumb a,.bar-in a,.nav .links a,.rel a,.chips a,.chips button,.qfc,.qk,.qb,.qseg button,.qf-clr,.qf-x,.qddb,.qfd-h,.topic,.pill{min-height:44px}
+.crumb a,.rel a,.chips a,.chips button,.qfc,.qk,.qb,.qseg button,.qf-clr,.qf-x{display:inline-flex;align-items:center;justify-content:center}
+.crumb a{padding:0 6px}
+.qfc,.chips a,.chips button{padding-top:0;padding-bottom:0}
+.qfr,.chips{gap:8px}
+.xm,.xm *,.ex-y,.ex-p,.xs,.qfc i,.cnt,.nh-k,.nh-tk,.tsub,.qprog span,.qa-mini small,th{font-size:max(12px,.75rem)}
+.tsub,.qsub{font-size:.8rem;letter-spacing:.02em}
+.nh-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.nh-chip{white-space:nowrap}
+.nh-eb{letter-spacing:.08em}
+#nh .nh-b a:not(.nh-go){border-color:transparent;text-decoration:underline;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center;padding:0 10px}
+#nh .nh-b a.nh-go{min-height:48px;display:inline-flex;align-items:center}
+.act span,.act.sh span,#bnav a,.qf-body h4,table th,h4.tsub,.tw th{font-size:12px!important}

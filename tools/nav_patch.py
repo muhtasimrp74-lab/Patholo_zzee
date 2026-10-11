@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Main panel = Home, Questions, Q&A, MCQs, Menu. Everything else lives on the Menu page.
+"""Main panel = Home, Questions, Chapters, MCQs, Menu. Everything else lives on the Menu page.
 Adds the MCQs page (questions come from tools/mcqs.json) and the Menu page. build.py calls patch(s) last."""
 import re, os, json
 
@@ -14,9 +14,9 @@ ICON = {
 }
 def _a(href, ic, label):
     return '<a href="#/%s"><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg>%s</a>' % (href, ICON[ic], label)
-BNAV = ('<nav id="bnav" aria-label="Main">' + _a('', 'home', 'Home') + _a('questions', 'q', 'Questions') + _a('qa', 'qa', 'Q&amp;A')
+BNAV = ('<nav id="bnav" aria-label="Main">' + _a('', 'home', 'Home') + _a('questions', 'q', 'Questions') + _a('qa', 'qa', 'Chapters')
         + _a('mcqs', 'mcq', 'MCQs') + _a('textbook', 'book', 'Textbook') + _a('menu', 'menu', 'Menu') + '</nav>')
-LINKS = ('<div class="links"><a href="#/">Home</a><a href="#/questions">Questions</a><a href="#/qa">Q&amp;A</a>'
+LINKS = ('<div class="links"><a href="#/">Home</a><a href="#/questions">Questions</a><a href="#/qa">Chapters</a>'
          '<a href="#/mcqs">MCQs</a><a href="#/textbook">Textbook</a><a href="#/menu">Menu</a></div>')
 
 CSS = r'''
@@ -47,7 +47,7 @@ JS = r'''
 {const X=mkView('menu','Menu','Menu','Everything else lives here.');
  X.innerHTML=`<p class="mh">Study</p><div class="mgrid"><a class="mtile" href="#/practice">Practice</a><a class="mtile" href="#/howto">How to read</a></div>
 <p class="mh">Saved</p><div class="mgrid"><a class="mtile" href="#/bookmarks">Bookmarks<span class="cn" data-c="bm">0</span></a><a class="mtile" href="#/favourites">Favourites<span class="cn" data-c="fav">0</span></a><a class="mtile" href="#/notes">Notes<span class="cn" data-c="notes">0</span></a></div>
-<p class="mh">Display</p><div class="mgrid"><button type="button" class="mtile" id="mq-quiz">Quiz mode</button><button type="button" class="mtile" data-tt="theme">Theme</button><button type="button" class="mtile" data-tt="fm">Smaller text</button><button type="button" class="mtile" data-tt="fp">Larger text</button><button type="button" class="mtile" data-tt="focus">Focus</button><button type="button" class="mtile" data-tt="print">Print</button></div>
+<p class="mh">Display</p><div class="mgrid"><button type="button" class="mtile" id="mq-quiz">Quiz mode</button><button type="button" class="mtile" data-tt="ink">Ink (handwriting)</button><button type="button" class="mtile" data-tt="theme">Theme</button><button type="button" class="mtile" data-tt="fm">Smaller text</button><button type="button" class="mtile" data-tt="fp">Larger text</button><button type="button" class="mtile" data-tt="focus">Focus</button><button type="button" class="mtile" data-tt="print">Print</button></div>
 <p class="mh">Your data</p><div class="mgrid"><button type="button" class="mtile" onclick="exp()">Export backup</button><label class="mtile">Import backup<input type="file" accept=".json" hidden onchange="imp(this.files[0])"></label></div>`;
  X.querySelectorAll('[data-tt]').forEach(b=>b.onclick=()=>{const t=document.querySelector('#tools [data-t="'+b.dataset.tt+'"]');if(t)t.click()});
  const qb=X.querySelector('#mq-quiz'),qs=()=>{qb.textContent=document.body.classList.contains('quiz')?'Quiz mode: on':'Quiz mode: off'};qs();
