@@ -90,7 +90,7 @@ def _gp_topics():
     _du_written(out, order)
     _merge_dups(out)
     order.sort()   # book order (Part A: chapters 2-24, Part B: 13-14)
-    return [('c%d' % c, GP_CHAPTERS[c][0], 'hm' if c in HM_CHAPTERS else 'gp', out[c]) for c in order]
+    return [('c%d' % c, GP_CHAPTERS[c][0], 'hm' if c in HM_CHAPTERS else ('sys' if c in SYS_CHAPTERS else 'gp'), out[c]) for c in order]
 
 # ---------------------------------------------------------------------------------------------
 # BOX VIVA (A-cards A1-A10: General Pathology + Haematology) - read from box_viva.txt, which is generated from the
@@ -99,6 +99,8 @@ def _gp_topics():
 #   numbers as printed. They are appended AFTER the written questions, so existing question ids never move.
 #   Answers: put them in ANSWERS above, keyed by the question text exactly as written in box_viva.txt.
 HM_CHAPTERS = {13, 14}
+# Robbins systemic chapters (Blood Vessels .. CNS) belong to Part C, Systemic Pathology; chapters 2-9 and Clinical Biochemistry stay in Part A.
+SYS_CHAPTERS = {11, 12, 15, 17, 18, 20, 21, 22, 23, 24, 25, 26, 28}
 BOX_NOTE = 'Answer to be added.'
 def _box_viva(out, order):
     src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'box_viva.txt')
