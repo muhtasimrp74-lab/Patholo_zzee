@@ -36,6 +36,32 @@ function mcqStats(){
  return {tot:Q.length,att,n,k,acc:pct(k,n),weak,td,sv,bm:(M.bm||[]).length,papers:12}
 }
 
+/* ---- study activity log (one count per day) + heatmap ---- */
+window.actLog=function(n){try{const t=dstr(Date.now());S.act=S.act&&typeof S.act==='object'?S.act:{};S.act[t]=(S.act[t]||0)+(n||1);save()}catch(e){}};
+try{const t0=touch;touch=function(){window.actLog(1);return t0.apply(this,arguments)}}catch(e){}
+function actMap(){
+ const m=Object.assign({},S.act||{}),d={};
+ try{const P=(S.mcq&&S.mcq.p)||{};Object.keys(P).forEach(h=>{const x=P[h];if(x&&x.ts){const k=dstr(x.ts);d[k]=(d[k]||0)+1}})}catch(e){}
+ Object.keys(d).forEach(k=>{m[k]=Math.max(m[k]||0,d[k])});return m}
+const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function heat(){
+ const A=actMap(),W=innerWidth<520?16:22,tdy=dstr(Date.now()),base=new Date(tdy+'T12:00:00').getTime(),dw=new Date(base).getDay();
+ const first=base-dw*DAY-(W-1)*7*DAY,lv=n=>!n?0:n<5?1:n<10?2:n<20?3:4;
+ let cells='',mon='',tot=0,act=0,wk=0,lastM=-1;const ml=[];
+ for(let w=0;w<W;w++){
+  const d0=new Date(first+w*7*DAY);
+  if(d0.getMonth()!==lastM&&(w===0||d0.getDate()<=7)){ml.push([w,MON[d0.getMonth()]]);lastM=d0.getMonth()}
+  for(let d=0;d<7;d++){const t=first+(w*7+d)*DAY,k=dstr(t);
+   if(t>base+DAY/2){cells+='<i class="hm x"></i>';continue}
+   const n=A[k]||0;tot+=n;if(n)act++;if(w===W-1)wk+=n;
+   cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short'})+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
+ ml.forEach((x,i)=>{if(!ml[i+1]||ml[i+1][0]-x[0]>=3)mon+='<span style="grid-column:'+(x[0]+1)+'">'+x[1]+'</span>'});
+ /* longest run of consecutive active days, all time */
+ const ks=Object.keys(A).filter(k=>A[k]>0).sort();let best=0,run=0,prev=null;
+ ks.forEach(k=>{const t=new Date(k+'T12:00:00').getTime();run=prev!==null&&Math.round((t-prev)/DAY)===1?run+1:1;prev=t;if(run>best)best=run});
+ return '<section class="nh-hmc nh-prog" style="--w:'+W+'"><p class="nh-k">STUDY ACTIVITY</p><div class="nh-hmw"><div class="nh-hml"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class="nh-hmb"><div class="nh-hmm">'+mon+'</div><div class="nh-hmg" role="img" aria-label="Study activity over the last '+W+' weeks">'+cells+'</div></div></div>'
+  +'<div class="nh-hmf"><div class="nh-hms"><span><b>'+act+'</b>active days</span><span><b>'+wk+'</b>this week</span><span><b>'+best+'</b>longest run</span><span><b>'+tot+'</b>actions</span></div><p class="nh-hmk">Less <i class="hm l0"></i><i class="hm l1"></i><i class="hm l2"></i><i class="hm l3"></i><i class="hm l4"></i> More</p></div></section>'}
+
 const wrap=document.createElement('div');wrap.id='nh';H.append(wrap);
 H.classList.add('nh-on');
 
@@ -89,6 +115,7 @@ function render(){
  else h+='<p class="nh-mu">Set your exam date and the home page works out how many questions to read each day.</p>';
  h+='<label class="nh-dt"><span>Exam date</span><input type="date" id="nhex" value="'+(exam||'')+'" min="'+tdy+'"></label>'+(exam?'<button type="button" class="nh-lk" id="nhexc">Clear date</button>':'')+'</div></section>';
 
+ h+=heat();
  /* ---------- study tracks ---------- */
  h+='<section><h3 class="nh-h nh-h0">Study tracks</h3><div class="nh-tr">';
  h+='<a class="nh-t4 nh-prog" href="'+(nextV?lnk(nextV):'#/questions')+'"><span class="nh-tk">Viva questions</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'<span class="nh-ts">'+(VQ.length-vr)+' unread · A- and B-cards plus systemic</span><em>'+(vr?'Continue':'Start')+' →</em></a>';

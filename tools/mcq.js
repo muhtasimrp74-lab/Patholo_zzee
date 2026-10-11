@@ -16,7 +16,7 @@
   grid:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>',
   go:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'};
  const record=(q,good)=>{const m=ST(),p=m.p[q.h]=m.p[q.h]||{n:0,k:0};p.n++;if(good)p.k++;p.r=good?1:0;p.ts=Date.now();
-  if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;save()};
+  if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;window.actLog&&window.actLog(1);save()};
  const stOf=q=>{const p=P()[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(ST().bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');return a};
 
  /* ---------- filters ---------- */

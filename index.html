@@ -1073,6 +1073,29 @@ h1 em{font-size:.66em;font-weight:700}
 #nh .nh-plan>*,#nh .nh-2>*,#nh .nh-top>*,#nh .nh-tr>*{min-width:0}
 @media(max-width:820px){#nh .nh-plan,#nh .nh-2,#nh .nh-top{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:520px){#nh .nh-tr{grid-template-columns:minmax(0,1fr)}}
+
+/* ---- study activity heatmap ---- */
+.nh-hmc{margin:16px 0;--c:clamp(11px,calc((100vw - 150px)/var(--w) - 3px),22px)}
+.nh-hmw{display:flex;gap:8px;align-items:flex-start;margin-top:8px}
+.nh-hml{display:grid;grid-template-rows:repeat(7,var(--c));gap:3px;margin-top:18px;font:500 .64rem/var(--c) var(--body);color:var(--muted)}
+.nh-hml span:nth-child(1){grid-row:2}.nh-hml span:nth-child(2){grid-row:4}.nh-hml span:nth-child(3){grid-row:6}
+.nh-hmb{min-width:0;overflow:hidden}
+.nh-hmm{display:grid;grid-template-columns:repeat(var(--w),var(--c));gap:3px;height:16px;font:500 .64rem/16px var(--body);color:var(--muted)}
+.nh-hmm span{white-space:nowrap}
+.nh-hmg{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,var(--c));grid-template-columns:repeat(var(--w),var(--c));gap:3px;margin-top:2px}
+.hm{display:block;width:var(--c);height:var(--c);border-radius:max(2px,calc(var(--c)*.22));background:var(--trk)}
+.nh-hmk .hm{display:inline-block;width:11px;height:11px;vertical-align:-1px;margin:0 2px}
+.hm.x{background:transparent}
+.hm.l1{background:color-mix(in srgb,var(--blue) 28%,var(--trk))}
+.hm.l2{background:color-mix(in srgb,var(--blue) 52%,var(--trk))}
+.hm.l3{background:color-mix(in srgb,var(--blue) 76%,var(--trk))}
+.hm.l4{background:var(--blue)}
+.hm.td{outline:2px solid var(--navy);outline-offset:1px}
+.nh-hmf{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;margin-top:14px}
+.nh-hms{display:flex;flex-wrap:wrap;gap:6px 22px}
+.nh-hms span{display:flex;flex-direction:column;font:500 .74rem var(--body);color:var(--muted)}
+.nh-hms b{font:500 1.4rem/1.2 var(--disp);color:var(--navy);font-variant-numeric:lining-nums}
+.nh-hmk{margin:0;font:500 .72rem var(--body);color:var(--muted)}
 /* ===== Question card polish =====
    One gutter shared by header, buttons, answer and related row; a soft header wash that fades into the
    card instead of ending in a hard edge; a floating accent bar that is not clipped by the corner;
@@ -2211,7 +2234,7 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
   grid:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>',
   go:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'};
  const record=(q,good)=>{const m=ST(),p=m.p[q.h]=m.p[q.h]||{n:0,k:0};p.n++;if(good)p.k++;p.r=good?1:0;p.ts=Date.now();
-  if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;save()};
+  if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;window.actLog&&window.actLog(1);save()};
  const stOf=q=>{const p=P()[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(ST().bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');return a};
 
  /* ---------- filters ---------- */
@@ -2593,6 +2616,32 @@ function mcqStats(){
  return {tot:Q.length,att,n,k,acc:pct(k,n),weak,td,sv,bm:(M.bm||[]).length,papers:12}
 }
 
+/* ---- study activity log (one count per day) + heatmap ---- */
+window.actLog=function(n){try{const t=dstr(Date.now());S.act=S.act&&typeof S.act==='object'?S.act:{};S.act[t]=(S.act[t]||0)+(n||1);save()}catch(e){}};
+try{const t0=touch;touch=function(){window.actLog(1);return t0.apply(this,arguments)}}catch(e){}
+function actMap(){
+ const m=Object.assign({},S.act||{}),d={};
+ try{const P=(S.mcq&&S.mcq.p)||{};Object.keys(P).forEach(h=>{const x=P[h];if(x&&x.ts){const k=dstr(x.ts);d[k]=(d[k]||0)+1}})}catch(e){}
+ Object.keys(d).forEach(k=>{m[k]=Math.max(m[k]||0,d[k])});return m}
+const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function heat(){
+ const A=actMap(),W=innerWidth<520?16:22,tdy=dstr(Date.now()),base=new Date(tdy+'T12:00:00').getTime(),dw=new Date(base).getDay();
+ const first=base-dw*DAY-(W-1)*7*DAY,lv=n=>!n?0:n<5?1:n<10?2:n<20?3:4;
+ let cells='',mon='',tot=0,act=0,wk=0,lastM=-1;const ml=[];
+ for(let w=0;w<W;w++){
+  const d0=new Date(first+w*7*DAY);
+  if(d0.getMonth()!==lastM&&(w===0||d0.getDate()<=7)){ml.push([w,MON[d0.getMonth()]]);lastM=d0.getMonth()}
+  for(let d=0;d<7;d++){const t=first+(w*7+d)*DAY,k=dstr(t);
+   if(t>base+DAY/2){cells+='<i class="hm x"></i>';continue}
+   const n=A[k]||0;tot+=n;if(n)act++;if(w===W-1)wk+=n;
+   cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short'})+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
+ ml.forEach((x,i)=>{if(!ml[i+1]||ml[i+1][0]-x[0]>=3)mon+='<span style="grid-column:'+(x[0]+1)+'">'+x[1]+'</span>'});
+ /* longest run of consecutive active days, all time */
+ const ks=Object.keys(A).filter(k=>A[k]>0).sort();let best=0,run=0,prev=null;
+ ks.forEach(k=>{const t=new Date(k+'T12:00:00').getTime();run=prev!==null&&Math.round((t-prev)/DAY)===1?run+1:1;prev=t;if(run>best)best=run});
+ return '<section class="nh-hmc nh-prog" style="--w:'+W+'"><p class="nh-k">STUDY ACTIVITY</p><div class="nh-hmw"><div class="nh-hml"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class="nh-hmb"><div class="nh-hmm">'+mon+'</div><div class="nh-hmg" role="img" aria-label="Study activity over the last '+W+' weeks">'+cells+'</div></div></div>'
+  +'<div class="nh-hmf"><div class="nh-hms"><span><b>'+act+'</b>active days</span><span><b>'+wk+'</b>this week</span><span><b>'+best+'</b>longest run</span><span><b>'+tot+'</b>actions</span></div><p class="nh-hmk">Less <i class="hm l0"></i><i class="hm l1"></i><i class="hm l2"></i><i class="hm l3"></i><i class="hm l4"></i> More</p></div></section>'}
+
 const wrap=document.createElement('div');wrap.id='nh';H.append(wrap);
 H.classList.add('nh-on');
 
@@ -2646,6 +2695,7 @@ function render(){
  else h+='<p class="nh-mu">Set your exam date and the home page works out how many questions to read each day.</p>';
  h+='<label class="nh-dt"><span>Exam date</span><input type="date" id="nhex" value="'+(exam||'')+'" min="'+tdy+'"></label>'+(exam?'<button type="button" class="nh-lk" id="nhexc">Clear date</button>':'')+'</div></section>';
 
+ h+=heat();
  /* ---------- study tracks ---------- */
  h+='<section><h3 class="nh-h nh-h0">Study tracks</h3><div class="nh-tr">';
  h+='<a class="nh-t4 nh-prog" href="'+(nextV?lnk(nextV):'#/questions')+'"><span class="nh-tk">Viva questions</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'<span class="nh-ts">'+(VQ.length-vr)+' unread · A- and B-cards plus systemic</span><em>'+(vr?'Continue':'Start')+' →</em></a>';
