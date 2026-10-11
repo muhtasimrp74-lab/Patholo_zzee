@@ -116,3 +116,8 @@
 .nh-wk em{font:600 .85rem var(--body);font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums}
 .nh-wk em.bad{color:var(--bad)}.nh-wk em.warn{color:var(--warn)}
 
+
+/* keep grid cards inside the screen on narrow phones (long single-line text must not stretch the column) */
+#nh .nh-plan>*,#nh .nh-2>*,#nh .nh-top>*,#nh .nh-tr>*{min-width:0}
+@media(max-width:820px){#nh .nh-plan,#nh .nh-2,#nh .nh-top{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){#nh .nh-tr{grid-template-columns:minmax(0,1fr)}}
