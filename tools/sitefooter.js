@@ -32,5 +32,7 @@ function build(){
 build();addEventListener('load',build);
 /* keep the footer's bottom padding equal to the real height of the fixed bottom bar */
 function bh(){const n=document.getElementById('bnav');if(n&&n.offsetHeight)document.documentElement.style.setProperty('--bn-h',n.offsetHeight+'px')}
-bh();addEventListener('load',bh);addEventListener('resize',bh);
+bh();addEventListener('load',bh);addEventListener('resize',bh);addEventListener('orientationchange',bh);
+if(window.ResizeObserver){const n=document.getElementById('bnav');if(n)new ResizeObserver(bh).observe(n)}
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(bh);
 })();
