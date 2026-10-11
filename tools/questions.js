@@ -39,6 +39,7 @@ QV.innerHTML='<div class="qwrap"><aside id="qf" aria-label="Filters"></aside><di
 +'<div class="qtools"><input id="qfilter" type="search" placeholder="Filter questions…" aria-label="Filter questions">'
 +'<button class="qb qfbtn" id="qfopen" type="button" aria-expanded="false" aria-controls="qf">'+IC.filter+'<span>Filters</span><i id="qfn" hidden></i></button>'
 +'<button class="qb" id="qexp" type="button">Expand all</button><button class="qb" id="qcol" type="button">Collapse all</button></div>'
++'<div class="qquick" id="qquick"></div><div class="qprog"><i><u id="qpu"></u></i><span id="qpt"></span><button class="qb" id="qrnd" type="button">Random question</button></div>'
 +'<div class="qsum"><span id="qsum" aria-live="polite"></span><span id="qact" class="qact"></span></div>'
 +'<div id="qlist">'+tids.map(secC).join('')+'</div><div id="qflat" hidden></div>'
 +'<div class="empty" id="qnone" hidden><b>No question matches</b><p>Nothing fits all the filters you have set. Remove one or clear them all.</p><button class="pill" id="qclr" type="button">Clear all filters</button></div>'
@@ -105,8 +106,24 @@ function apply(){
  $q('qnone').hidden=!!hit.length;
  $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
  $q('qact').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
- const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;applyQA(hit,n);applyViews(hit,n)}
+ const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;quick(hit);applyQA(hit,n);applyViews(hit,n)}
 function run(){apply();panel()}
+/* ---------- quick filters, progress, random question ---------- */
+const QK=[['type','V','Viva'],['type','W','Written'],['stars','H','High-yield'],['show','todo','Not learned'],['show','bm','Bookmarked']];
+const HY=()=>Array.from({length:MAXST-2},(_,i)=>String(i+3));
+const qon=(k,v)=>v==='H'?HY().every(x=>F.stars.includes(x)):F[k].includes(v);
+function quick(hit){
+ const el=$q('qquick');if(!el)return;
+ el.innerHTML=QK.filter(x=>x[1]!=='H'||HASEX).map(x=>`<button type="button" class="qk${qon(x[0],x[1])?' on':''}" data-qk="${x[0]}" data-qv="${x[1]}" aria-pressed="${qon(x[0],x[1])}">${x[2]}</button>`).join('');
+ const L=new Set(S.learned||[]),r=hit.filter(d=>L.has(d[3])).length;
+ $q('qpu').style.width=Math.round(100*r/Math.max(hit.length,1))+'%';$q('qpt').textContent=r+' of '+hit.length+' learned';
+}
+$q('qquick').addEventListener('click',e=>{const b=e.target.closest('[data-qk]');if(!b)return;const k=b.dataset.qk,v=b.dataset.qv;
+ if(v==='H'){const on=qon(k,v);F.stars=on?F.stars.filter(x=>!HY().includes(x)):[...new Set([...F.stars,...HY()])];run()}else set(k,v)});
+$q('qrnd').onclick=()=>{const L=new Set(S.learned||[]),vis=[...QV.querySelectorAll('#qlist .qi:not([hidden]),#qflat .qi:not([hidden])')],pool=vis.filter(i=>!L.has(i.dataset.id)),a=pool.length?pool:vis;if(!a.length)return;
+ const i=a[Math.floor(Math.random()*a.length)],s=i.closest('.qs');if(s){const h=s.querySelector('.qs-h');h&&h.setAttribute('aria-expanded',true);const bd=s.querySelector('.qs-b');bd&&(bd.hidden=false)}
+ const h=i.querySelector('.qi-h');if(h&&h.getAttribute('aria-expanded')!=='true')h.click();i.scrollIntoView({behavior:'smooth',block:'center'})};
+
 function set(k,v){
  const tg=(a,x)=>{const i=a.indexOf(String(x));i<0?a.push(String(x)):a.splice(i,1)};
  if(k==='show'){v==='all'?F.show=[]:tg(F.show,v)}
