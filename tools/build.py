@@ -22,7 +22,7 @@ def xm_html(stars, refs, tag='span', boxes=None, hl=False):
     and for box-viva questions each A-card with the question numbers as printed."""
     parts = []
     if stars:
-        parts.append('<span class="imp" role="img" aria-label="%s">%s</span>' % (('Asked %d time%s' % (stars, '' if stars == 1 else 's')) if (boxes or stars > 3) else ('Importance: %d of 3' % stars), ''.join(_star(i < stars) for i in range(max(3, stars)))))
+        parts.append('<span class="imp%s" role="img" aria-label="%s">%s</span>' % (' num' if stars > 3 else '', ('Asked %d time%s' % (stars, '' if stars == 1 else 's')) if (boxes or stars > 3) else ('Importance: %d of 3' % stars), (_star(True) + '<b>%d</b>' % stars) if stars > 3 else ''.join(_star(i < stars) for i in range(3))))
     for c, lab in (boxes or []):
         parts.append('<span class="ex-y"><b class="ex-p">%s</b>%s</span>' % (e(c), e(lab) if lab else ''))
     if hl:
