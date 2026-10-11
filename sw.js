@@ -7,7 +7,7 @@
    - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v60';
+const VERSION = 'pathviva-zzee-v61';
 
 const CORE = [
   'index.html',
@@ -39,6 +39,7 @@ const CORE = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(VERSION).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())
+      .catch(err => { console.error('[sw] install failed; the previous version stays active:', err); throw err; })
   );
 });
 
@@ -60,10 +61,13 @@ async function precacheBook() {
     files.push('icons/logo.svg');
     const todo = [];
     for (const f of files) if (!(await cache.match(f))) todo.push(f);
+    const missing = [];
     for (let i = 0; i < todo.length; i += 3) {
-      await Promise.all(todo.slice(i, i + 3).map(f => fetch(f).then(r => (r && r.status === 200) ? cache.put(f, r) : null).catch(() => null)));
+      await Promise.all(todo.slice(i, i + 3).map(f => fetch(f).then(r => { if (r && r.status === 200) return cache.put(f, r); missing.push(f); }).catch(() => { missing.push(f); })));
     }
-  } catch (e) {}
+    if (missing.length) console.warn('[sw] not saved for offline yet (retried on next update):', missing);
+    await cache.put('diag.json', new Response(JSON.stringify({ version: VERSION, at: Date.now(), expected: files.length, missing }), { headers: { 'Content-Type': 'application/json' } }));
+  } catch (e) { console.warn('[sw] textbook caching failed:', e); }
 }
 
 self.addEventListener('fetch', event => {

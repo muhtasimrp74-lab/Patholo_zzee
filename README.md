@@ -53,3 +53,12 @@ If the same question is on the DU written list and the box-viva cards (same kind
 2. Write the answer under its `## <exact question>` heading in `tools/answers.md` (markdown: bold, bullets, numbered lists, tables).
 3. Push. The deploy workflow rebuilds the site and refreshes the cache itself; locally run `python3 tools/build.py`. A heading that matches no question is reported in the build log.
 You can also edit `tools/answers.md` directly on github.com from your phone. Quick personal notes and handwriting stay available in the app (Notes, Ink).
+
+## Tests and deployment
+`python3 -m unittest discover -s tools/tests -v` rebuilds the site and checks: build is clean/deterministic and the committed `index.html` is not stale; unique question ids; ids never move to a different question (positional ids!); duplicate merges are reviewed; MCQ/textbook/manifest schemas; service-worker files; backup import/export (malformed files rejected, failed restore rolls back, round-trip, merged-question migration of progress, notes and handwriting); corrupt saved data; hostile backup values. Browser tests need `pip install playwright && playwright install chromium`.
+
+**Adding questions:** append new questions at the END of a topic list in `content.py`; ids are positional, so inserting in the middle shifts every later id (the test fails if that happens). After a deliberate, reviewed change run `python3 tools/build.py && python3 tools/tests/gen_manifests.py` and bump `VERSION` in `sw.js` first.
+
+**To switch on the CI gate**, replace `.github/workflows/pages.yml` with `tools/ci/pages.yml` (edit it on github.com; a token needs the *Workflows* permission to push workflow files). That workflow builds from source, fails if the committed `index.html` is stale, runs the tests, validates the site folder, and deploys that freshly built folder only if everything passed. Pull requests run the checks without deploying.
+
+**Safety nets for your data:** a restore is validated before anything is changed; the previous data is kept in `localStorage.vivaStatePrev`; unreadable saved data is kept in `vivaStateCorrupt` instead of being overwritten. In the browser console, `cacheDiag()` shows what is saved for offline use.
