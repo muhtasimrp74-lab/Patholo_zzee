@@ -181,6 +181,18 @@ class Browser(unittest.TestCase):
             self.assertTrue(r[2], w); self.assertLess(r[1], h, 'CTA below the fold at %d' % w)
             if w >= 1000: self.assertTrue(420 <= r[0] <= 500, r[0])
             pg.close()
+    def test_tab_banners_present_load_and_do_not_overflow(self):
+        tabs = {'questions': 'Questions', 'qa': 'Chapters', 'mcqs': 'MCQs', 'textbook': 'Textbook', 'menu': 'Menu'}
+        for w, h in ((1440, 900), (820, 1000), (390, 844)):
+            pg = self.b.new_page(viewport={'width': w, 'height': h}); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
+            for r, t in tabs.items():
+                pg.goto(URL + '#/' + r); pg.wait_for_timeout(500)
+                self.assertEqual(pg.locator('#v-%s .pb' % r).count(), 1, r)
+                self.assertGreater(pg.evaluate("()=>document.querySelector('#v-%s .pb img').naturalWidth" % r), 0, 'banner image failed: ' + r)
+                self.assertEqual(pg.locator('#v-%s h1:visible' % r).count(), 1, r); self.assertEqual(pg.inner_text('#v-%s h1' % r).strip(), t)
+                self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'overflow %s at %d' % (r, w))
+            pg.goto(URL + '#/05'); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.pb:visible').count(), 0, 'banner leaked onto a topic page')
+            self.assertEqual(errs, []); pg.close()
     def test_questions_default_collapsed_and_filters(self):
         pg = self.page('#/questions'); pg.wait_for_timeout(300)
         self.assertEqual(pg.eval_on_selector_all('#qlist .qs-h', 'e=>e.filter(x=>x.getAttribute("aria-expanded")==="true").length'), 0)
