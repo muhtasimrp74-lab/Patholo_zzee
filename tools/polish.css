@@ -132,3 +132,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 @media(max-height:520px){#zz-tut{width:min(340px,46vw)}#zz-tut b{font-size:19px}#zz-tut p{font-size:.84rem;margin-bottom:8px}#zz-tut .gr{padding-top:6px}}
 @media(prefers-reduced-motion:reduce){#zz-tut-fx .sp:after,#zz-tut-fx .hd svg,#zz-tut-fx .hd i{animation:none}#zz-tut-fx *{transition:none!important}}
 @media print{#zz-tut,#zz-tut-fx{display:none}}
+
+/* keyboard focus ring everywhere + high-contrast support */
+html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.qs-h):focus-visible{outline:2px solid var(--lbl,#8F4F39);outline-offset:2px}
+@media(prefers-contrast:more){:root{--line:currentColor;--line2:currentColor}html .card,html .qi,html .topic,html .row,html #qf,html #zz-tut{border-color:currentColor}#qscrim{background:rgba(0,0,0,.6)}}

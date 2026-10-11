@@ -57,20 +57,20 @@ function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));if(!first)moved=fal
   requestAnimationFrame(wait)})()}
 /* keeps the spotlight glued to its target while the person scrolls */
 function loop(){if(!fx)return;if(!busy){const r=rectOf(),k=keyOf(r);if(k!==lastR)apply(r,'t')}requestAnimationFrame(loop)}
-function end(){tok++;busy=false;document.documentElement.classList.remove('zz-still');clearTimeout(glT);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
+function end(){tok++;busy=false;document.documentElement.classList.remove('zz-still');try{ret&&ret.focus&&ret.focus({preventScroll:true})}catch(e){}clearTimeout(glT);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
 function onR(){if(!fx||!box)return;box.classList.add('dg');const r=rectOf();apply(r,'t');place(r);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 function key(e){if(e.key==='Escape'){end()}else if(e.key==='ArrowRight'){e.stopPropagation();e.preventDefault();i<ST.length-1?show(i+1):end()}else if(e.key==='ArrowLeft'){e.stopPropagation();e.preventDefault();show(i-1)}}
 function drag(e){const g=e.target.closest('[data-g]');if(!g||e.button>0)return;const m=box.getBoundingClientRect(),dx=e.clientX-m.left,dy=e.clientY-m.top;g.setPointerCapture&&g.setPointerCapture(e.pointerId);box.classList.add('dg');
  const mv=ev=>{const p=clampBox(ev.clientX-dx,ev.clientY-dy);pos=p;moved=true;box.style.transform='translate('+Math.round(p[0])+'px,'+Math.round(p[1])+'px)'};
  const up=()=>{box.classList.remove('dg');g.removeEventListener('pointermove',mv);g.removeEventListener('pointerup',up);g.removeEventListener('pointercancel',up)};
  g.addEventListener('pointermove',mv);g.addEventListener('pointerup',up);g.addEventListener('pointercancel',up);e.preventDefault()}
-function start(){if(box)return;moved=false;pos=null;
+let ret=null;function start(){if(box)return;ret=document.activeElement;moved=false;pos=null;
  fx=document.createElement('div');fx.id='zz-tut-fx';fx.innerHTML='<i class="fl"></i><i class="sp" style="opacity:0"></i><div class="hd" style="opacity:0">'+HAND+'<i></i></div>';document.body.append(fx);
  box=document.createElement('div');box.id='zz-tut';box.className='dg';box.setAttribute('role','dialog');box.setAttribute('aria-label','Site tutorial');
  box.innerHTML='<div class="gr" data-g="1"><span class="tt-n"></span></div><div class="bd"><b></b><p></p></div><div class="pg"><i></i></div><div class="tt-b"><button type="button" data-a="x">Skip</button><span></span><button type="button" data-a="b">Back</button><button type="button" class="pri" data-a="n">Next</button></div>';document.body.append(box);
  box.onclick=e=>{const a=e.target.dataset.a;if(a==='n')i<ST.length-1?show(i+1):end();else if(a==='b')show(i-1);else if(a==='x')end()};
  box.addEventListener('pointerdown',drag);
- addEventListener('keydown',key,true);addEventListener('resize',onR);addEventListener('orientationchange',onR);show(0,true);requestAnimationFrame(loop);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
+ addEventListener('keydown',key,true);addEventListener('resize',onR);addEventListener('orientationchange',onR);show(0,true);try{box.querySelector('[data-a=n]').focus({preventScroll:true})}catch(e){}requestAnimationFrame(loop);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 window.zzTutorial=start;
 const g=$('#v-menu .mgrid');
 if(g){const b=document.createElement('button');b.type='button';b.className='mtile';b.id='tut-open';b.textContent='Tutorial';b.onclick=start;g.prepend(b)}
