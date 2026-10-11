@@ -72,5 +72,5 @@ def patch(s):
     mcq_js = 'const MCQDATA=' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n' + open(os.path.join(HERE, 'mcq.js'), encoding='utf8').read() + '\n'
     A = "const views=[...document.querySelectorAll('.view')]"
     _need(s, A); s = s.replace(A, JS + mcq_js + open(os.path.join(HERE, 'textbook.js'), encoding='utf8').read() + A, 1)
-    s = s.replace('</style>', CSS + open(os.path.join(HERE, 'textbook.css'), encoding='utf8').read() + open(os.path.join(HERE, 'mcq.css'), encoding='utf8').read() + '</style>', 1)
+    s = s.replace('</style>', CSS + open(os.path.join(HERE, 'textbook.css'), encoding='utf8').read() + open(os.path.join(HERE, 'mcq.css'), encoding='utf8').read() + open(os.path.join(HERE, 'perf.css'), encoding='utf8').read() + '</style>', 1)
     return s
