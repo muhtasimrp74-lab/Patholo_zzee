@@ -2543,7 +2543,7 @@ let prev=null;const p0=prog;prog=function(){p0();const now=done();if(prev){const
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    navigator.serviceWorker.register('./sw.js').catch(() => {}); try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}
   });
 }
 </script>
