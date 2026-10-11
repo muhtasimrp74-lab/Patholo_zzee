@@ -193,3 +193,30 @@
 #nh .nh-b a:not(.nh-go){border-color:transparent;text-decoration:underline;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center;padding:0 10px}
 #nh .nh-b a.nh-go{min-height:48px;display:inline-flex;align-items:center}
 .act span,.act.sh span,#bnav a,.qf-body h4,table th,h4.tsub,.tw th{font-size:12px!important}
+
+/* ---- homepage hero banner (home only; photo is local: icons/hero-lab*.webp) ---- */
+.nh-banner{position:relative;height:clamp(420px,32vw,500px);background:#1C1A19;color:#F7F2E8;overflow:hidden}
+.nh-bn-pic{position:absolute;inset:0}
+.nh-bn-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,26,25,.8) 0,rgba(28,26,25,.5) 30%,rgba(28,26,25,0) 56%)}
+.nh-bn-pic picture,.nh-bn-pic img{display:block;width:100%;height:100%}
+.nh-bn-pic img{object-fit:cover;object-position:50% 17%}
+.nh-bn-in{position:relative;z-index:1;height:100%;max-width:var(--w);margin:0 auto;padding:0 max(var(--gut),env(safe-area-inset-left,0px));display:flex;align-items:center}
+.nh-bn-t{max-width:min(470px,46%)}
+.nh-banner .nh-eb{color:#D18A70;margin-bottom:12px}
+.nh-banner h1{margin:0 0 14px;font:500 clamp(1.9rem,3.2vw,2.75rem)/1.1 var(--disp);letter-spacing:-.02em;color:#F7F2E8}
+.nh-bn-s{margin:0 0 26px;max-width:40ch;font-size:1.02rem;line-height:1.55;color:#D8CDBD}
+#nh a.nh-bn-cta{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border-radius:12px;background:#8F4F39;color:#FFFFFF;font:600 .98rem var(--body);transition:background .15s}
+#nh a.nh-bn-cta:hover{background:#A95F45}
+#nh a.nh-bn-cta:focus-visible{outline:2px solid #F7F2E8;outline-offset:3px}
+.nh-hero-s{padding:22px 0 8px}
+@media(max-width:1000px){.nh-banner{height:clamp(360px,46vw,420px)}.nh-bn-pic img{object-position:50% 15%}.nh-bn-t{max-width:50%}}
+@media(max-width:640px){
+ .nh-banner{height:auto}
+ .nh-bn-pic{position:relative;height:min(78vw,340px)}
+ .nh-bn-pic::after{background:linear-gradient(180deg,rgba(28,26,25,0) 55%,#1C1A19 100%)}
+ .nh-bn-pic img{object-position:50% 12%}
+ .nh-bn-in{height:auto;padding-top:4px;padding-bottom:30px}
+ .nh-bn-t{max-width:none}
+ .nh-banner h1{font-size:clamp(1.7rem,7.4vw,2.1rem)}
+ #nh a.nh-bn-cta{width:100%;justify-content:center}
+}
