@@ -1180,34 +1180,33 @@ h1 em{font-size:.66em;font-weight:700}
  .nh-banner h1{font-size:clamp(1.7rem,7.4vw,2.1rem)}
  #nh a.nh-bn-cta{width:100%;justify-content:center}
 }
-
 /* ---- cinematic banners on Questions / Chapters / MCQs / Textbook / Menu (images: icons/pb-*.webp) ---- */
-.pb{position:relative;height:clamp(260px,23.5vw,340px);background:#1C1A19;color:#F7F2E8;overflow:hidden}
+  .pb{position:relative;height:min(56.25vw,640px);min-height:380px;background:#1C1A19;color:#F7F2E8;overflow:hidden}
 .pb-pic{position:absolute;inset:0}
 .pb-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,26,25,.9) 0,rgba(28,26,25,.72) 34%,rgba(28,26,25,0) 62%)}
 .pb-pic picture,.pb-pic img{display:block;width:100%;height:100%}
 .pb-pic img{object-fit:cover;object-position:var(--px,50%) var(--py,40%)}
-.pb[data-pb=questions]{--py:28%;--px:50%}.pb[data-pb=chapters]{--py:42%}.pb[data-pb=mcqs]{--py:42%}.pb[data-pb=textbook]{--py:30%}.pb[data-pb=menu]{--py:36%}.pb-art{height:clamp(320px,29vw,420px)}
-.pb-art .pb-pic::after{display:none}
+  .pb[data-pb=questions]{--py:90%}.pb[data-pb=chapters]{--py:90%}.pb[data-pb=mcqs]{--py:80%}.pb[data-pb=textbook]{--py:55%}.pb[data-pb=menu]{--py:60%}
 .pb-in{position:relative;z-index:1;height:100%;max-width:var(--w);margin:0 auto;display:flex;align-items:center}
+.pb[data-pb=textbook] .pb-in .hero-in{max-width:min(500px,42%)}
 .pb-in .hero-in{display:block;width:100%;max-width:min(520px,48%);margin:0;padding:0 var(--gut);grid-template-columns:1fr}
 .pb-in .hero-in::before{display:none}
 .pb-in .crumb,.pb-in .crumb a{color:#D18A70}.pb-in .crumb a:hover{color:#F7F2E8}
 .pb-in h1{margin:4px 0 10px;font-size:clamp(2rem,3.4vw,2.9rem);line-height:1.08;color:#F7F2E8}
 .pb-in .lede{margin:0;max-width:42ch;font-size:.98rem;line-height:1.55;color:#D8CDBD}
-@media(max-width:1000px){.pb{height:clamp(240px,34vw,300px)}.pb-art{height:clamp(260px,44vw,360px)}.pb-in .hero-in{max-width:56%}.pb-in .lede{font-size:.92rem}}
+@media(max-width:1000px){.pb{height:56.25vw;min-height:0}.pb-in .hero-in,.pb[data-pb=textbook] .pb-in .hero-in{max-width:56%}.pb-in .lede{font-size:.92rem}.pb-in h1{font-size:clamp(1.6rem,4.6vw,2.2rem)}}
 @media(max-width:640px){
- .pb,.pb-art{height:auto}
- .pb-pic{position:relative;height:min(62vw,300px)}
- .pb-pic::after{background:linear-gradient(180deg,rgba(28,26,25,0) 50%,#1C1A19 100%)}
- .pb[data-pb=questions],.pb[data-pb=chapters],.pb[data-pb=mcqs]{--px:100%}.pb[data-pb=textbook]{--px:55%}
+ .pb{height:auto}
+ .pb-pic{position:relative;height:56.25vw}
+ .pb-pic::after{background:linear-gradient(180deg,rgba(28,26,25,0) 55%,#1C1A19 100%)}
  .pb-in{height:auto;display:block;padding:2px 0 22px}
- .pb-in .hero-in{max-width:none;padding:0 var(--gut)}
+ .pb-in .hero-in,.pb[data-pb=textbook] .pb-in .hero-in{max-width:none;padding:0 var(--gut)}
  .pb-in h1{font-size:clamp(1.8rem,8vw,2.2rem)}
  .pb-in .lede{max-width:none;font-size:.9rem}
 }
-/* textbook: the artwork already carries the book title, so its text stays beneath the image */
-.pb-art+.hero-in{margin-top:6px}
+.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(90deg,rgba(18,16,16,.96) 0,rgba(18,16,16,.88) 28%,rgba(18,16,16,.55) 46%,rgba(18,16,16,0) 66%)}
+@media(max-width:1000px){.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(90deg,rgba(18,16,16,.96) 0,rgba(18,16,16,.85) 34%,rgba(18,16,16,.45) 56%,rgba(18,16,16,0) 76%)}}
+@media(max-width:640px){.pb[data-pb=textbook] .pb-pic::after{background:linear-gradient(180deg,rgba(28,26,25,0) 55%,#1C1A19 100%)}}
 /* ===== Question card polish =====
    One gutter shared by header, buttons, answer and related row; a soft header wash that fades into the
    card instead of ending in a hard edge; a floating accent bar that is not clipped by the corner;
@@ -3107,17 +3106,16 @@ window.cacheDiag=async()=>{try{const out={};for(const k of (await caches.keys())
 
 /* ===== cinematic banners for Questions / Chapters / MCQs / Textbook / Menu (idempotent; runs now, on load and on route change) ===== */
 (function(){
-const SET={questions:1,qa:'chapters',mcqs:1,textbook:'art',menu:1};
+const SET={questions:1,qa:'chapters',mcqs:1,textbook:1,menu:1};
 const IMG={questions:'questions',qa:'chapters',mcqs:'mcqs',textbook:'textbook',menu:'menu'};
 function apply(){
  for(const id in SET){
   const v=document.getElementById('v-'+id);if(!v||v.querySelector('.pb'))continue;
   const hi=v.querySelector('.hero-in');if(!hi)continue;
-  const k=IMG[id],art=SET[id]==='art';
-  const s=document.createElement('section');s.className='pb'+(art?' pb-art':'');s.dataset.pb=k;
+  const k=IMG[id];
+  const s=document.createElement('section');s.className='pb';s.dataset.pb=k;
   s.innerHTML='<div class="pb-pic"><picture><source media="(max-width:1000px)" srcset="icons/pb-'+k+'-900.webp" width="900" height="506"><img src="icons/pb-'+k+'.webp" width="1672" height="940" alt="" decoding="async"></picture></div>';
-  if(art){hi.before(s)}
-  else{const w=document.createElement('div');w.className='pb-in';hi.before(s);s.appendChild(w);w.appendChild(hi)}
+  const w=document.createElement('div');w.className='pb-in';hi.before(s);s.appendChild(w);w.appendChild(hi);
  }
 }
 apply();addEventListener('load',apply);addEventListener('hashchange',apply);
