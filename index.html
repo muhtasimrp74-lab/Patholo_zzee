@@ -1292,6 +1292,67 @@ mark.tbhl{display:inline;background:color-mix(in srgb,#fcd34d 30%,transparent);c
 .nohl b.n{font-weight:inherit;color:inherit}.nohl mark.tbhl{background:none;padding:0;margin:0}
 .tbacts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.tbacts .tbdone{margin-top:0}
 .tbdone[data-hl][aria-pressed=true]{background:var(--accbg);border-color:color-mix(in srgb,var(--blue) 40%,var(--line));color:var(--navy)}
+
+/* ===== Textbook home: stats, continue card, search + filters, parts ===== */
+.tbhero{padding:26px 24px 22px;border-radius:26px;background:linear-gradient(135deg,color-mix(in srgb,var(--blue) 9%,var(--panel)),var(--g-mist,var(--panel)) 60%)}
+.tbhero h2{font-size:clamp(1.7rem,5.4vw,2.6rem);max-width:92%}
+.tbhero p{max-width:46ch}
+.tbstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:2px 0 16px}
+.tbstats div{padding:12px 14px;border-radius:16px;background:color-mix(in srgb,var(--panel) 82%,transparent);border:1px solid var(--line)}
+.tbstats b{display:block;font:500 1.55rem/1.1 var(--disp);color:var(--navy);font-variant-numeric:tabular-nums}.tbstats b small{font:600 .8rem var(--body);color:var(--muted)}
+.tbstats span{display:block;margin-top:3px;color:var(--muted);font:600 .72rem var(--body);letter-spacing:.04em}
+.tbmeter{height:10px}
+.tbmeter.sm{height:5px;flex:none;width:100%;order:3}
+.tbcont{padding:16px 20px;border-radius:18px;background:linear-gradient(135deg,var(--btn),color-mix(in srgb,var(--btn) 72%,#000));box-shadow:0 6px 18px color-mix(in srgb,var(--btn) 28%,transparent);transition:transform .15s,box-shadow .15s}
+.tbcont:hover{transform:translateY(-1px);box-shadow:0 10px 24px color-mix(in srgb,var(--btn) 34%,transparent)}
+.tbcont-t{flex:1;min-width:0}.tbcont-t small{text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:.66rem}
+.tbcont-go{flex:none;font:700 1.05rem var(--body);white-space:nowrap}
+.tbcont .tbpb{background:rgba(255,255,255,.25);margin-top:9px}.tbcont .tbpb i{background:#fff}
+.tbpb{display:block;height:4px;margin-top:7px;border-radius:99px;background:var(--soft);overflow:hidden}
+.tbpb i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--blue),var(--clay,#8F4F39))}
+.tbtools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 6px}
+.tbsearch{position:relative;flex:1 1 240px;min-width:0}
+.tbsearch svg{position:absolute;left:14px;top:50%;width:18px;height:18px;margin-top:-9px;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round;pointer-events:none}
+.tbsearch input{width:100%;box-sizing:border-box;height:44px;padding:0 14px 0 42px;border:1px solid var(--line2);border-radius:14px;background:var(--panel);color:var(--text);font:500 .92rem var(--body)}
+.tbsearch input:focus{outline:2px solid var(--lbl);outline-offset:1px}
+.tbfil{display:flex;flex-wrap:wrap;gap:6px}
+.tbfil button{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:0 13px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--muted);font:600 .8rem var(--body);cursor:pointer}
+.tbfil button em{font:700 .7rem var(--body);font-style:normal;padding:1px 7px;border-radius:99px;background:var(--soft);color:var(--muted)}
+.tbfil button[aria-pressed=true]{background:var(--btn);border-color:var(--btn);color:#fff}.tbfil button[aria-pressed=true] em{background:rgba(255,255,255,.22);color:#fff}
+.tbpart{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:26px 2px 0}
+.tbpart-t{display:flex;align-items:baseline;gap:10px;flex:1;min-width:0}.tbpart-t b{font:500 1.25rem var(--disp);color:var(--navy)}
+.tbpart-k{font:700 .68rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--lbl)}
+.tbpart-c{color:var(--muted);font:600 .76rem var(--body)}
+.tbpart+.tbl{margin-top:12px}
+.tbtile{align-items:center;min-height:76px;border-radius:18px}
+.tbtile .n{width:46px;height:46px;border-radius:14px;font-size:1.3rem}
+.tbt-x{flex:1;min-width:0}.tbt-x b{font-size:.95rem}
+.tbtile .tbst{flex:none;align-self:flex-start;margin-top:2px;font:700 .72rem var(--body);color:var(--lbl)}
+.tbtile.done .tbst{color:var(--ok,#2e8b57)}
+.tbtile.prog{border-color:color-mix(in srgb,var(--blue) 40%,var(--line))}
+.tbtile.prog .n{background:var(--blue);color:#fff}
+.tbtile.done{background:color-mix(in srgb,var(--ok,#2e8b57) 5%,var(--panel))}
+@media(max-width:560px){.tbhero{padding:20px 16px 18px}.tbstats{gap:8px}.tbstats div{padding:10px 11px}.tbstats b{font-size:1.3rem}.tbl{grid-template-columns:1fr}.tbfil button{padding:0 11px}}
+
+/* ===== Chapter scroll bar: draggable, section marks, % while moving ===== */
+#tbsc{position:fixed;right:3px;top:70px;bottom:16px;width:26px;z-index:45;display:flex;flex-direction:column;align-items:center;gap:6px;pointer-events:none}
+#tbsc[hidden]{display:none}
+@media(max-width:1000px){#tbsc{top:66px;bottom:78px}}
+.tbsc-up{pointer-events:auto;flex:none;display:grid;place-items:center;width:26px;height:26px;padding:0;border-radius:50%;border:1px solid var(--line2);background:var(--panel);color:var(--muted);cursor:pointer}
+.tbsc-up:hover{color:var(--navy);border-color:var(--blue)}
+.tbsc-up svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.tbsc-track{pointer-events:auto;position:relative;flex:1;width:26px;min-height:60px;touch-action:none;cursor:pointer;outline:none;-webkit-tap-highlight-color:transparent}
+.tbsc-track:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:4px;margin-left:-2px;border-radius:99px;background:var(--line);transition:width .15s,margin .15s}
+.tbsc-ticks{position:absolute;inset:0;pointer-events:none}
+.tbsc-ticks u{position:absolute;left:50%;width:8px;height:2px;margin-left:-4px;border-radius:2px;background:var(--line2);text-decoration:none}
+.tbsc-thumb{position:absolute;left:50%;top:0;width:6px;margin-left:-3px;border-radius:99px;background:var(--muted);opacity:.6;will-change:transform;transition:width .15s,margin .15s,opacity .15s,background .15s}
+.tbsc-track:hover:before,.drag .tbsc-track:before,.tbsc-track:focus-visible:before{width:8px;margin-left:-4px}
+.tbsc-track:hover .tbsc-thumb,.drag .tbsc-thumb,.tbsc-track:focus-visible .tbsc-thumb{width:10px;margin-left:-5px;opacity:1;background:var(--lbl)}
+.tbsc-pct{position:absolute;right:32px;top:0;padding:3px 9px;border-radius:99px;background:var(--btn);color:#fff;font:700 .72rem var(--body);font-variant-numeric:tabular-nums;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .2s}
+#tbsc.show .tbsc-pct,#tbsc.drag .tbsc-pct,.tbsc-track:hover .tbsc-pct{opacity:1}
+#tbsc.show .tbsc-thumb{opacity:.9}
+@media(max-width:1000px){.tbreading{padding-right:16px}}
+@media print{#tbsc,#tbprog{display:none!important}}
 /* ===== MCQs ===== */
 .mx{--mx-ok:#4d8a5f;--mx-no:#b9503f;--mx-okbg:color-mix(in srgb,var(--mx-ok) 16%,var(--panel));--mx-nobg:color-mix(in srgb,var(--mx-no) 14%,var(--panel));--mx-r:16px}
 .mx button{font-family:var(--body);-webkit-tap-highlight-color:transparent}
@@ -1489,6 +1550,28 @@ body.mx-live #v-mcqs .hero{display:none}
 .mx-weak small{color:var(--muted);font:500 .74rem var(--body)}
 .mx-paper.done{border-color:color-mix(in srgb,var(--mx-ok) 55%,var(--line))}
 .mx-paper.done b::after{content:" ✓";color:var(--mx-ok)}
+
+/* ---- per-question tools: mark as read, notes, revise later ---- */
+.mx-tile.t7{border-left-color:var(--clay)}.mx-tile.t8{border-left-color:var(--blue)}
+.mx-qa{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding-top:14px;border-top:1px dashed var(--line)}
+.mx-qb{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:0 15px 0 11px;border-radius:99px;border:1px solid var(--line2,var(--line));background:var(--panel);color:var(--muted);font:600 .8rem var(--body);cursor:pointer;transition:border-color .15s,background .15s,color .15s;-webkit-tap-highlight-color:transparent}
+.mx-qb svg{flex:none;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.mx-qb:hover{border-color:var(--clay);color:var(--navy)}
+.mx-qb:focus-visible{outline:2px solid var(--lbl);outline-offset:2px}
+.mx-qb-rd[aria-pressed=true]{background:var(--mx-okbg);border-color:var(--mx-ok);color:var(--mx-ok)}
+.mx-qb-rd[aria-pressed=true] svg{fill:var(--mx-ok);stroke:#fff}
+.mx-qb-rv[aria-pressed=true]{background:color-mix(in srgb,var(--clay) 13%,var(--panel));border-color:var(--clay);color:var(--clay)}
+.mx-qb-nt[aria-expanded=true]{border-color:var(--blue);color:var(--lbl);background:var(--accbg)}
+.mx-qb-nt.has{border-color:var(--blue);color:var(--lbl)}
+.mx-qb-nt.has:after{content:"";width:7px;height:7px;margin-left:1px;border-radius:50%;background:var(--clay)}
+.mx-nbox{margin:12px 0 0;padding:12px 14px 10px;border:1px solid color-mix(in srgb,var(--blue) 30%,var(--line));border-radius:14px;background:var(--accbg)}
+.mx-nbox label{display:block;margin:0 0 6px;color:var(--lbl);font:700 .7rem var(--body);letter-spacing:.12em;text-transform:uppercase}
+.mx-nbox textarea{display:block;width:100%;min-height:78px;resize:vertical;box-sizing:border-box;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);font:400 .95rem/1.55 var(--body)}
+.mx-nbox textarea:focus{outline:2px solid var(--lbl);outline-offset:1px}
+.mx-nbox small{display:block;margin-top:6px;color:var(--muted);font:500 .72rem var(--body)}
+@media(pointer:coarse){.mx-qb{min-height:44px}}
+@media(max-width:420px){.mx-qa{gap:6px}.mx-qb{padding:0 12px 0 9px;font-size:.76rem}}
+@media print{.mx-qa{display:none!important}.mx-nbox{border:1px solid #999;background:none}}
 /* ================= PERFORMANCE (smooth 90/120 Hz scrolling on tablets) =================
    1. The page backdrop was painted with background-attachment:fixed, which repaints the whole screen on every scroll frame.
       It now lives on one fixed, GPU-composited layer instead (same look).
@@ -2239,19 +2322,22 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
  const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const BY={};Q.forEach(q=>BY[q.h]=q);
  const L='ABCDE',PAPERS=['May 2026','Nov 2025','May 2025','DU-24N','DU-24M','DU-23N','DU-23M','DU-22N','DU-22M','DU-21M','DU-20N/M','DU-19Nov'];
- const ST=()=>{const m=S.mcq=S.mcq&&typeof S.mcq==='object'?S.mcq:{};m.p=m.p||{};m.bm=m.bm||[];m.hist=m.hist||[];m.o=m.o||{};m.day=m.day||{d:'',n:0};return m};
+ const ST=()=>{const m=S.mcq=S.mcq&&typeof S.mcq==='object'?S.mcq:{};m.p=m.p||{};m.bm=m.bm||[];m.hist=m.hist||[];m.o=m.o||{};m.day=m.day||{d:'',n:0};m.rd=m.rd&&typeof m.rd==='object'&&!Array.isArray(m.rd)?m.rd:{};m.rv=Array.isArray(m.rv)?m.rv:[];m.nt=m.nt&&typeof m.nt==='object'&&!Array.isArray(m.nt)?m.nt:{};return m};
  const P=()=>ST().p, tn=q=>CH[q.c][1][q.t], tk=q=>q.c+'.'+q.t;
  const ok=(q,a)=>q.y?Array.isArray(a)&&a.length===5&&a.every((v,j)=>v===q.a[j]):a===q.a;
  const fmt=s=>{s=Math.max(0,Math.round(s));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return(h?h+':'+String(m).padStart(2,'0'):m)+':'+String(x).padStart(2,'0')};
  const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
  const today=()=>new Date().toLocaleDateString('en-CA');
  const ic={bm:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-4-6 4V5a1 1 0 0 1 1-1z"/></svg>',
+  ok:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.2 9.5"/></svg>',
+  note:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8.5 9h7M8.5 13h7M8.5 17h4"/></svg>',
+  rev:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3L20 9M20 4v5h-5M20 12a8 8 0 0 1-14 5.3L4 15M4 20v-5h5"/></svg>',
   x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
   grid:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>',
   go:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'};
  const record=(q,good)=>{const m=ST(),p=m.p[q.h]=m.p[q.h]||{n:0,k:0};p.n++;if(good)p.k++;p.r=good?1:0;p.ts=Date.now();
   if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;window.actLog&&window.actLog(1);save()};
- const stOf=q=>{const p=P()[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(ST().bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');return a};
+ const stOf=q=>{const m=ST(),p=m.p[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(m.bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');a.push(m.rd[q.h]?'read':'unread');if(m.rv.includes(q.h))a.push('rev');if(m.nt[q.h])a.push('nt');return a};
 
  /* ---------- filters ---------- */
  const emptyF=()=>({tp:new Set(),ty:new Set(),src:new Set(),tg:new Set(),pp:new Set(),st:new Set(),txt:''});
@@ -2287,6 +2373,13 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
  /* ---------- question card ---------- */
  const metaRow=(q,x)=>`<div class="mx-meta"><span class="mx-chip c">${E(tn(q))}</span><span class="mx-chip">${q.y?'T / F':'SBA'}</span>${(q.g||[]).map(g=>`<span class="mx-chip p">${E(g)}</span>`).join('')}${x||''}</div>`;
  const bmBtn=q=>`<button type="button" class="mx-bm" data-a="bm" data-h="${q.h}" aria-pressed="${ST().bm.includes(q.h)}" aria-label="Bookmark">${ic.bm}</button>`;
+ /* per-question tools: mark as read, my note, revise later (stored in S.mcq.rd / .nt / .rv) */
+ const nOpen=new Set();let ntT=0;
+ const noteBox=q=>nOpen.has(q.h)?`<div class="mx-nbox"><label for="nt-${q.h}">My note</label><textarea class="mx-nt" id="nt-${q.h}" data-h="${q.h}" rows="3" placeholder="Write a note for this question (a mnemonic, why you got it wrong...)">${E(ST().nt[q.h]||'')}</textarea><small>Saved on this device and included in your backup</small></div>`:'';
+ const qaRow=q=>{const m=ST(),h=q.h,rd=!!m.rd[h],rv=m.rv.includes(h),nt=!!m.nt[h];
+  return `<div class="mx-qa" role="group" aria-label="Question tools"><button type="button" class="mx-qb mx-qb-rd" data-a="rd" data-h="${h}" aria-pressed="${rd}">${ic.ok}<span>${rd?'Read':'Mark as read'}</span></button><button type="button" class="mx-qb mx-qb-nt${nt?' has':''}" data-a="nt" data-h="${h}" aria-expanded="${nOpen.has(h)}">${ic.note}<span>Notes</span></button><button type="button" class="mx-qb mx-qb-rv" data-a="rv" data-h="${h}" aria-pressed="${rv}">${ic.rev}<span>${rv?'In revise list':'Revise later'}</span></button></div>${noteBox(q)}`};
+ const saveNote=(h,v)=>{clearTimeout(ntT);const m=ST();if(v.trim())m.nt[h]=v;else delete m.nt[h];save();
+  M.querySelectorAll('.mx-qb-nt[data-h="'+h+'"]').forEach(x=>x.classList.toggle('has',!!m.nt[h]))};
  function body(q,o){ // o: ans, fb, lock, notes
   const fb=o.fb,a=o.ans,nt=o.notes!==false;let h='';
   const warn=j=>q.w&&q.w[j]?`<small class="mx-w">Note on the key: ${E(q.w[j])}</small>`:'';
@@ -2322,7 +2415,7 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    <div class="mx-pg"><span>${rv?'Review':E(s.scope)} · ${s.i+1} of ${n}</span><i style="--w:${((s.i+1)/n*100).toFixed(1)}%"></i></div>${tm}
    <button type="button" class="mx-ib" data-a="pal" aria-label="Question list">${ic.grid}</button></div>
    <article class="mx-card" data-h="${q.h}">${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3>${q.y?'<p class="mx-hint">Mark each statement True or False.</p>':''}
-   <div class="mx-opts">${body(q,{ans:a,fb,lock,notes:true})}</div>${fb?verdict+bareAns(q):''}</article>
+   <div class="mx-opts">${body(q,{ans:a,fb,lock,notes:true})}</div>${fb?verdict+bareAns(q):''}${qaRow(q)}</article>
    <div class="mx-act">${act}</div><div class="mx-pal" id="mx-pal" hidden></div></div>`;
   if(!rv)startTimer();window.scrollTo(0,0)}
  function startTimer(){clearInterval(tid);if(!sess||sess.review)return;tid=setInterval(()=>{if(!sess){clearInterval(tid);return}
@@ -2375,6 +2468,7 @@ function home(){
   Q.forEach(q=>{const x=p[q.h];if(!x||!x.n)return;att++;ty[q.y][0]++;if(x.r){right++;ty[q.y][1]++}else wrong++});
   const left=n-att,acc=att?Math.round(right/att*100):0,sba=ty[0][0]?Math.round(ty[0][1]/ty[0][0]*100):null,tf=ty[1][0]?Math.round(ty[1][1]/ty[1][0]*100):null;
   const goal=m.goal||20,td=m.day.d===today()?m.day.n:0,gp=Math.min(100,Math.round(td/goal*100));
+  const nRev=m.rv.filter(h=>BY[h]).length,nNt=Object.keys(m.nt).filter(h=>BY[h]).length,nRd=Object.keys(m.rd).filter(h=>BY[h]).length;
   const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length&&!sv.review?sv:null;
   const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=p[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
    return{ci,name:c[0],t,n:t.reduce((x,y)=>x+y.n,0),a:t.reduce((x,y)=>x+y.a,0),r:t.reduce((x,y)=>x+y.r,0)}});
@@ -2395,11 +2489,11 @@ function home(){
    <div class="mx-day"><p class="mx-eb">Today</p><div class="mx-pc">${td}<small> / ${goal}</small></div><span class="mx-st g"><u class="r" style="width:${gp}%"></u></span>
     <p class="mx-sub2">${td>=goal?'Daily goal reached. Anything more is a bonus.':(goal-td)+' more to reach today\'s goal.'}</p>
     <div class="mx-goal" role="group" aria-label="Daily goal"><span>Goal</span>${[10,20,30,50].map(v=>`<button type="button" data-a="goal" data-v="${v}" aria-pressed="${v===goal}">${v}</button>`).join('')}</div></div></section>
-   <p class="mx-about">${n} questions · ${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False</p>
+   <p class="mx-about">${n} questions · ${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False${nRd?` · ${nRd} marked as read`:''}</p>
    ${svv?`<button type="button" class="mx-resume" data-a="resume"><span><small>Pick up where you left off</small>${E(svv.scope)} · question ${svv.i+1} of ${svv.ids.length}</span>${ic.go}</button>`:''}
    <button type="button" class="mx-next" data-a="${nx[0]}" ${nx[1]!==''?`data-c="${nx[1]}" data-t="${nx[2]}"`:''}><span><small>Suggested next</small><b>${nx[3]}</b>${nx[4]}</span>${ic.go}</button>
    <p class="mx-h">Practise</p>
-   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Missed questions','Redo what you got wrong',wrong?'':'disabled','t5',wrong||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}</div>
+   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Missed questions','Redo what you got wrong',wrong?'':'disabled','t5',wrong||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}${tile('revl','Revise later',nRev?'Questions you flagged to come back to':'Flag questions with Revise later',nRev?'':'disabled','t7',nRev||'')}${tile('mynotes','My notes',nNt?'Read every question you wrote a note on':'Add notes under any question',nNt?'':'disabled','t8',nNt||'')}</div>
    ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><small>${t.r}/${t.a}</small><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
    <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span>${seg2(c)}</summary>
     <div class="mx-tps">${c.t.map(t=>`<div class="mx-tp"><span>${E(t.name)}<small>${t.n} · ${t.a?Math.round(t.r/t.a*100)+'% right':'new'}</small></span><button type="button" data-a="topic" data-c="${c.ci}" data-t="${t.ti}">Practise</button><button type="button" data-a="topicread" data-c="${c.ci}" data-t="${t.ti}">Read</button></div>`).join('')}
@@ -2412,7 +2506,7 @@ function home(){
  /* ---------- custom practice (faceted filter) ---------- */
  function chip(f,v,label,x){return `<label class="mx-f"><input type="checkbox" data-f="${f}" data-v="${E(v)}"><span>${label}</span><em></em></label>`}
  function builder(){
-  const stL={new:'Not attempted',wrong:'Missed last time',right:'Answered right',bm:'Bookmarked',key:'Has a key note'};
+  const stL={new:'Not attempted',wrong:'Missed last time',right:'Answered right',bm:'Bookmarked',rev:'Revise later',read:'Marked as read',unread:'Not marked as read',nt:'Has my note',key:'Has a key note'};
   M.innerHTML=`<div class="mx-bld"><div class="mx-fl">
    <label class="mx-search"><input type="search" id="mx-q" placeholder="Search question text" value="${E(F.txt)}" autocomplete="off"></label>
    <div class="mx-fs"><p class="mx-fh">Chapter and topic</p><div class="mx-chl">${CH.map((c,ci)=>`<div class="mx-chd2${[...F.tp].some(k=>k.split('.')[0]==ci)?' open':''}"><div class="mx-chh"><label class="mx-f ch"><input type="checkbox" data-f="ch" data-v="${ci}"><span>${E(c[0])}</span><em></em></label><button type="button" class="mx-tg" data-a="tg" aria-label="Show topics in ${E(c[0])}" aria-expanded="false">${ic.go}</button></div><div class="mx-tpl">${c[1].map((t,ti)=>chip('tp',ci+'.'+ti,E(t))).join('')}</div></div>`).join('')}</div></div>
@@ -2452,8 +2546,9 @@ function home(){
   if(readCh!==-2&&!present.includes(readCh))readCh=present.length?present[0]:-2;
   const whole=readCh===-2&&present.length>0||false;
   const hits=readCh>=0?all.filter(q=>q.c===readCh):all,sh=readCh>=0?hits:hits.slice(0,readN);let last=-1,out='';
+  sh.forEach(q=>{if(ST().nt[q.h])nOpen.add(q.h)});   /* questions you have written a note on show it while reading */
   sh.forEach((q,i)=>{const g=tk(q);if(g!==last){last=g;out+=`<h3 class="mx-rt">${E(CH[q.c][0])}<small>${E(tn(q))}</small></h3>`}
-   out+=`<article class="mx-card read" data-h="${q.h}"><div class="mx-qn">${i+1}</div>${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3><div class="mx-opts">${body(q,{fb:readOpt.show,lock:true,notes:readOpt.notes,st:true})}</div>${readOpt.show?bareAns(q):''}</article>`});
+   out+=`<article class="mx-card read" data-h="${q.h}"><div class="mx-qn">${i+1}</div>${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3><div class="mx-opts">${body(q,{fb:readOpt.show,lock:true,notes:readOpt.notes,st:true})}</div>${readOpt.show?bareAns(q):''}${qaRow(q)}</article>`});
   const pi=present.indexOf(readCh),pv=pi>0?present[pi-1]:null,nx=pi>=0&&pi<present.length-1?present[pi+1]:null;
   const sel=`<select class="mx-sel" id="mx-rc" aria-label="Chapter"><option value="-2" ${readCh===-2?'selected':''}>All chapters (${all.length})</option>${present.map(c=>`<option value="${c}" ${c===readCh?'selected':''}>${c+1}. ${E(CH[c][0])} (${cnt[c]})</option>`).join('')}</select>`;
   const pager=readCh>=0?`<div class="mx-more"><button type="button" class="mx-btn ghost" data-a="rch" data-c="${pv}" ${pv===null?'disabled':''}>‹ Previous chapter</button><button type="button" class="mx-btn" data-a="rch" data-c="${nx}" ${nx===null?'disabled':''}>Next chapter ›</button></div>`:'';
@@ -2478,6 +2573,14 @@ function home(){
    case 'read':reset();readN=30;readCh=-1;saveF();nav('read');break;
    case 'mist':start(shuf(Q.filter(q=>{const x=P()[q.h];return x&&x.n&&!x.r}).map(q=>q.h)),{scope:'Missed questions'});break;
    case 'saved':start(shuf(ST().bm.filter(h=>BY[h])),{scope:'Bookmarks'});break;
+   case 'revl':start(shuf(ST().rv.filter(h=>BY[h])),{scope:'Revise later'});break;
+   case 'mynotes':reset();F.st.add('nt');saveF();readN=30;readCh=-1;nav('read');break;
+   case 'rd':{const m=ST(),h=b.dataset.h,on=!m.rd[h];if(on)m.rd[h]=1;else delete m.rd[h];save();b.setAttribute('aria-pressed',on);b.lastChild.textContent=on?'Read':'Mark as read';break}
+   case 'rv':{const m=ST(),h=b.dataset.h,i=m.rv.indexOf(h);if(i<0)m.rv.push(h);else m.rv.splice(i,1);save();b.setAttribute('aria-pressed',i<0);b.lastChild.textContent=i<0?'In revise list':'Revise later';break}
+   case 'nt':{const h=b.dataset.h,card=b.closest('.mx-card'),bx=card.querySelector('.mx-nbox');
+    if(bx){const t=bx.querySelector('textarea');if(t)saveNote(h,t.value);bx.remove();nOpen.delete(h);b.setAttribute('aria-expanded','false')}
+    else{nOpen.add(h);card.insertAdjacentHTML('beforeend',noteBox(BY[h]));b.setAttribute('aria-expanded','true');const t=card.querySelector('.mx-nt');if(t)t.focus()}
+    break}
    case 'goal':{const m=ST();m.goal=+b.dataset.v;save();home();break}
    case 'resume':sess=ST().sess;if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
    case 'topic':start(topicIds(+b.dataset.c,+b.dataset.t).slice(0,25),{scope:CH[b.dataset.c][1][b.dataset.t]});break;
@@ -2485,7 +2588,7 @@ function home(){
    case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;readCh=-1;nav('read');break;
    case 'chapread':reset();setF('ch',b.dataset.c,true);saveF();readN=30;readCh=+b.dataset.c;nav('read');break;
    case 'paper':{const g=b.dataset.g;start(Q.filter(q=>(q.g||[]).includes(g)).map(q=>q.h),{mode:'exam',limit:1800,scope:'Paper '+g});break}
-   case 'resetp':if(confirm('Clear all MCQ answers, bookmarks and history on this device?')){const m=ST();m.p={};m.bm=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
+   case 'resetp':if(confirm('Clear all MCQ answers, bookmarks, read and revise-later marks and history on this device? Your notes are kept.')){const m=ST();m.p={};m.bm=[];m.rd={};m.rv=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
    case 'tg':{const d=b.closest('.mx-chd2');b.setAttribute('aria-expanded',d.classList.toggle('open'));break}
    case 'clear':reset();document.getElementById('mx-q').value='';refresh();break;
    case 'gostart':{const ids=pickSet();O.mode=O.mode||'practice';const n=ids.length;saveF();start(ids,{mode:O.mode,limit:lim(n),scope:'Custom practice'});break}
@@ -2512,8 +2615,10 @@ function home(){
    case 'retry':{const l=ST().last;const ids=l.ids.filter(h=>!ok(BY[h],l.ans[h]));start(shuf(ids),{scope:'Retry missed'});break}
    case 'home':nav();break}});
  M.addEventListener('change',e=>{const i=e.target;if(i.id==='mx-rc'){readCh=+i.value;reading();window.scrollTo(0,0);return}if(!i.dataset.f)return;setF(i.dataset.f,i.dataset.v,i.checked);refresh()});
- M.addEventListener('input',e=>{if(e.target.id==='mx-q'){F.txt=e.target.value.trim().toLowerCase();refresh()}});
- addEventListener('keydown',e=>{if(!sess||document.body.classList.contains('mx-live')===false||/INPUT|TEXTAREA/.test(e.target.tagName))return;
+ M.addEventListener('input',e=>{const t=e.target;if(t.id==='mx-q'){F.txt=t.value.trim().toLowerCase();refresh()}
+  else if(t.classList&&t.classList.contains('mx-nt')){const h=t.dataset.h,v=t.value;clearTimeout(ntT);ntT=setTimeout(()=>saveNote(h,v),400)}});
+ M.addEventListener('focusout',e=>{const t=e.target;if(t.classList&&t.classList.contains('mx-nt'))saveNote(t.dataset.h,t.value)});
+ addEventListener('keydown',e=>{if(!sess||document.body.classList.contains('mx-live')===false||/INPUT|TEXTAREA/.test(e.target.tagName)||(e.target.closest&&e.target.closest('.mx-qa')))return;
   const q=BY[sess.ids[sess.i]],rv=sess.review,exam=sess.mode==='exam'&&!rv,k=e.key;
   if(k==='ArrowRight'){step(1)}else if(k==='ArrowLeft'){step(-1)}
   else if(!q.y&&/^[a-eA-E]$/.test(k)){if(!rv)setAns(q,'abcde'.indexOf(k.toLowerCase()))}
@@ -2536,28 +2641,89 @@ function home(){
 /* ---- Textbook (Robbins) ---- */
 {const T=mkView('textbook','Textbook','Textbook','Robbins Pathologic Basis of Disease, chapter by chapter. Key concepts and morphology are set apart; chapters you open are saved for offline reading.');
  const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- let IDX=null,tok=0,cur=null,tkr=0;
+ let IDX=null,tok=0,cur=null,tkr=0,hf='all',hq='',lf=0,rf=0;
  const J=(k)=>{try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(e){return {}}},W=(k,o)=>{try{localStorage.setItem(k,JSON.stringify(o))}catch(e){}};
  const P=document.body.appendChild(Object.assign(document.createElement('div'),{id:'tbprog',innerHTML:'<i></i>'}));
  const GR=[['Part A','General pathology',n=>n<=10],['Part B','Haematology',n=>n===13||n===14],['Part C','Systemic pathology',()=>true]];
- const tile=(c,d)=>`<a class="tbtile${d[c.id]?' done':''}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span><b>${E(c.title)}</b><small>${c.pages?'pp. '+c.pages[0]+'–'+c.pages[1]+' · ':''}~${c.min} min</small></span><span class="ck"></span></a>`;
- function onScroll(){if(!cur){P.style.display='none';return}const h=document.documentElement.scrollHeight-innerHeight,r=h>0?Math.min(1,Math.max(0,scrollY/h)):0;P.style.display='block';P.firstChild.style.width=(r*100)+'%';clearTimeout(tkr);tkr=setTimeout(()=>{if(cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o)}},400)}
+ const fmtMin=m=>m>=60?Math.floor(m/60)+'h'+(m%60?' '+(m%60)+'m':''):m+'m';
+ const stat=(c,D,Po)=>D[c.id]?'done':(Po[c.id]>.02&&Po[c.id]<.97?'prog':'new');
+ const tile=(c,D,Po)=>{const s=stat(c,D,Po),pc=Math.round((Po[c.id]||0)*100);
+  return `<a class="tbtile ${s}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span class="tbt-x"><b>${E(c.title)}</b><small>${c.pages?'pp. '+c.pages[0]+'–'+c.pages[1]+' · ':''}~${fmtMin(c.min)}${c.figs?' · '+c.figs+' figures':''}</small>${s==='prog'?`<span class="tbpb" role="img" aria-label="${pc}% read"><i style="width:${pc}%"></i></span>`:''}</span><span class="tbst">${s==='done'?'✓ Read':s==='prog'?pc+'%':''}</span></a>`};
+
+ /* ---------- scroll bar inside a chapter (draggable, with section marks) ---------- */
+ const SB=document.body.appendChild(Object.assign(document.createElement('div'),{id:'tbsc',hidden:true,innerHTML:'<button type="button" class="tbsc-up" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg></button><div class="tbsc-track" role="scrollbar" aria-orientation="vertical" aria-label="Scroll through this chapter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><span class="tbsc-ticks"></span><i class="tbsc-thumb"></i><b class="tbsc-pct">0%</b></div>'}));
+ const TR=SB.querySelector('.tbsc-track'),TH=SB.querySelector('.tbsc-thumb'),TP=SB.querySelector('.tbsc-pct'),TK=SB.querySelector('.tbsc-ticks'),UP=SB.querySelector('.tbsc-up');
+ let drag=null,pt=0;
+ const span=()=>Math.max(0,document.documentElement.scrollHeight-innerHeight);
+ function layout(ticks){
+  if(!cur){SB.hidden=true;return}
+  const H=document.documentElement.scrollHeight,vh=innerHeight,sp=span();
+  if(sp<80){SB.hidden=true;return}
+  SB.hidden=false;
+  const tl=TR.clientHeight;if(!tl)return;
+  const th=Math.max(40,Math.min(tl,tl*vh/H)),r=Math.min(1,Math.max(0,scrollY/sp)),y=r*(tl-th);
+  TH.style.height=th+'px';TH.style.transform='translateY('+y+'px)';
+  TP.textContent=Math.round(r*100)+'%';TP.style.transform='translateY('+(y+th/2)+'px) translateY(-50%)';
+  TR.setAttribute('aria-valuenow',Math.round(r*100));
+  if(ticks)TK.innerHTML=[...T.querySelectorAll('.tbs')].map(s=>{const t=s.querySelector('.tbs-t'),q=Math.min(1,(s.getBoundingClientRect().top+scrollY)/sp);
+   return `<u style="top:${(q*(tl-th)+th/2-1).toFixed(1)}px" title="${E(t?t.textContent.trim():'')}"></u>`}).join('')}
+ const jump=(clientY,grab)=>{const rc=TR.getBoundingClientRect(),avail=rc.height-TH.offsetHeight;if(avail<=0)return;
+  scrollTo({top:Math.min(1,Math.max(0,(clientY-rc.top-grab)/avail))*span(),behavior:'instant'})};
+ TR.addEventListener('pointerdown',e=>{e.preventDefault();const rc=TH.getBoundingClientRect(),onT=e.clientY>=rc.top&&e.clientY<=rc.bottom;
+  drag={grab:onT?e.clientY-rc.top:TH.offsetHeight/2};try{TR.setPointerCapture(e.pointerId)}catch(x){}
+  SB.classList.add('drag');if(!onT)jump(e.clientY,drag.grab);TR.focus({preventScroll:true})});
+ TR.addEventListener('pointermove',e=>{if(drag)jump(e.clientY,drag.grab)});
+ ['pointerup','pointercancel'].forEach(t=>TR.addEventListener(t,()=>{drag=null;SB.classList.remove('drag')}));
+ TR.addEventListener('keydown',e=>{const k=e.key,s=innerHeight*.9;let y=null;
+  if(k==='ArrowDown')y=scrollY+80;else if(k==='ArrowUp')y=scrollY-80;else if(k==='PageDown')y=scrollY+s;else if(k==='PageUp')y=scrollY-s;else if(k==='Home')y=0;else if(k==='End')y=span();
+  if(y!==null){e.preventDefault();scrollTo({top:Math.max(0,Math.min(span(),y)),behavior:'instant'})}});
+ UP.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+ if(window.ResizeObserver)new ResizeObserver(()=>{cancelAnimationFrame(rf);rf=requestAnimationFrame(()=>layout(true))}).observe(T);
+ addEventListener('resize',()=>{cancelAnimationFrame(rf);rf=requestAnimationFrame(()=>layout(true))});
+
+ function onScroll(){if(!cur){P.style.display='none';layout();return}const h=document.documentElement.scrollHeight-innerHeight,r=h>0?Math.min(1,Math.max(0,scrollY/h)):0;P.style.display='block';P.firstChild.style.width=(r*100)+'%';
+  if(!lf)lf=requestAnimationFrame(()=>{lf=0;layout()});
+  SB.classList.add('show');clearTimeout(pt);pt=setTimeout(()=>SB.classList.remove('show'),1000);
+  clearTimeout(tkr);tkr=setTimeout(()=>{if(cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o)}},400)}
  addEventListener('scroll',onScroll,{passive:true});
- async function tb(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='textbook'){cur=null;onScroll();return}const my=++tok;cur=null;onScroll();
+
+ /* ---------- home: progress, continue card, search + filters, chapters by part ---------- */
+ function paint(){const g=document.getElementById('tbgrid');if(!g||!IDX)return;
+  const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos'),q=hq.trim().toLowerCase().replace(/^ch(apter)?\s*/,'');
+  const ok=c=>{const s=stat(c,D,Po);if(hf==='prog'&&s!=='prog')return false;if(hf==='unread'&&s==='done')return false;if(hf==='read'&&s!=='done')return false;
+   return !q||c.title.toLowerCase().includes(q)||String(c.n)===q};
+  let out='';
+  GR.forEach((gp,gi)=>{const all=C.filter(c=>GR.findIndex(x=>x[2](c.n))===gi),cs=all.filter(ok);if(!cs.length)return;const nd=all.filter(c=>D[c.id]).length;
+   out+=`<div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd/all.length*100)}%"></i></div></div><div class="tbl">${cs.map(c=>tile(c,D,Po)).join('')}</div>`});
+  g.innerHTML=out||'<div class="mempty"><b>No chapters match</b>Try a different word, or switch the filter back to All.</div>'}
+ function home(){const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos');
+  const nd=C.filter(c=>D[c.id]).length,ip=C.filter(c=>stat(c,D,Po)==='prog').length,left=C.filter(c=>!D[c.id]).reduce((a,c)=>a+c.min,0),pct=Math.round(nd/C.length*100);
+  let last=null;try{last=localStorage.getItem('tbLast')}catch(e){}
+  let l=C.find(x=>x.id===last),lab='Continue reading';
+  if(l&&D[l.id]){const i=C.indexOf(l);l=C.slice(i+1).find(x=>!D[x.id])||C.find(x=>!D[x.id])||null;lab='Up next'}
+  else if(!l){l=C.find(x=>!D[x.id])||null;lab='Start reading'}
+  else if(!(Po[l.id]>.02))lab='Start reading';
+  const lp=l?Math.round((Po[l.id]||0)*100):0,sh=lab==='Continue reading'&&lp>0;
+  const fl=[['all','All',C.length],['prog','In progress',ip],['unread','Unread',C.length-nd],['read','Read',nd]];
+  T.innerHTML=`<div class="tbhero" data-n="R"><div class="tbeyebrow">Robbins · 11th edition</div><h2>${E(IDX.title)}</h2><p>${C.length} chapters, cleaned for reading and linked to your question bank.</p>
+   <div class="tbstats"><div><b>${nd}<small> / ${C.length}</small></b><span>chapters read</span></div><div><b>${ip}</b><span>in progress</span></div><div><b>${left?fmtMin(left):'Done'}</b><span>${left?'reading left':'everything read'}</span></div></div>
+   <div class="tbmeter" role="img" aria-label="${pct}% of chapters read"><i style="width:${pct}%"></i></div><small>${pct}% complete</small></div>`
+   +(l?`<a class="tbcont" href="#/textbook/${l.id}"><span class="tbcont-t"><small>${lab}</small>Ch ${l.n} · ${E(l.title)}${sh?`<span class="tbpb" role="img" aria-label="${lp}% read"><i style="width:${lp}%"></i></span>`:''}</span><span class="tbcont-go">${sh?lp+'% ':''}›</span></a>`:'')
+   +`<div class="tbtools"><label class="tbsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="tbq" type="search" placeholder="Search chapters, e.g. inflammation or 5" value="${E(hq)}" autocomplete="off" aria-label="Search chapters"></label>
+   <div class="tbfil" role="group" aria-label="Filter chapters">${fl.map(f=>`<button type="button" data-tbf="${f[0]}" aria-pressed="${hf===f[0]}">${f[1]}<em>${f[2]}</em></button>`).join('')}</div></div><div id="tbgrid"></div>`;
+  paint();document.title='Textbook | Patholo_zzee'}
+
+ async function tb(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='textbook'){cur=null;onScroll();return}const my=++tok;cur=null;T.classList.remove('tbreading');onScroll();
   try{if(!IDX){const r=await fetch('textbook/index.json');if(!r.ok)throw 0;IDX=await r.json()}}
   catch(e){if(my===tok)T.innerHTML='<div class="mempty"><b>Textbook unavailable</b>Open it once while online; chapters you read are then saved for offline use.</div>';return}
   if(my!==tok)return;const C=IDX.chapters,i=C.findIndex(x=>x.id===p[1]),D=J('tbDone');
-  if(i<0){const nd=C.filter(c=>D[c.id]).length,l=C.find(x=>x.id===(()=>{try{return localStorage.getItem('tbLast')}catch(e){return null}})());
-   T.innerHTML=`<div class="tbhero" data-n="R"><div class="tbeyebrow">Robbins · 11th edition</div><h2>${E(IDX.title)}</h2><p>${C.length} chapters, cleaned for reading and linked to your question bank.</p><div class="tbmeter"><i style="width:${Math.round(nd/C.length*100)}%"></i></div><small>${nd} of ${C.length} chapters read</small></div>`
-    +(l?`<a class="tbcont" href="#/textbook/${l.id}"><span><small>Continue reading</small>Ch ${l.n} · ${E(l.title)}</span><span>›</span></a>`:'')
-    +GR.map((g,gi)=>{const cs=C.filter(c=>GR.findIndex(x=>x[2](c.n))===gi);return cs.length?`<p class="mh">${g[0]} · ${g[1]}</p><div class="tbl">${cs.map(c=>tile(c,D)).join('')}</div>`:''}).join('');
-   document.title='Textbook | Patholo_zzee';return}
-  const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;try{localStorage.setItem('tbLast',c.id)}catch(e){}
+  if(i<0){home();return}
+  const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');try{localStorage.setItem('tbLast',c.id)}catch(e){}
   const bar=`<div class="tbbar"><a href="${pv?'#/textbook/'+pv.id:'#/textbook'}" ${pv?'':'aria-disabled="true"'}>‹ ${pv?'Ch '+pv.n:'Previous'}</a><a href="#/textbook">All chapters</a><a href="${nx?'#/textbook/'+nx.id:'#/textbook'}" ${nx?'':'aria-disabled="true"'}>${nx?'Ch '+nx.n:'Next'} ›</a></div>`;
   T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody"><div class="tbi"><p>Loading…</p></div></div>`+bar;
   T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);
   try{const r=await fetch('textbook/'+c.id+'.html');if(!r.ok)throw 0;const h=await r.text();if(my!==tok)return;T.querySelector('#tbbody').innerHTML=h;
-   const s=J('tbPos')[c.id];if(s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll()}
+   const s=J('tbPos')[c.id];if(s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}
   catch(e){if(my===tok)T.querySelector('#tbbody').innerHTML='<div class="mempty"><b>Chapter not available offline yet</b>Connect once to download it.</div>'}}
  const tog=(s,open)=>{const h=s.querySelector('.tbs-h');open=open===undefined?s.classList.contains('shut'):open;s.classList.toggle('shut',!open);h.setAttribute('aria-expanded',open)};
  T.addEventListener('click',e=>{let a;
@@ -2565,7 +2731,9 @@ function home(){
   else if(a=e.target.closest('[data-all]')){const o=a.dataset.all==='1';T.querySelectorAll('.tbs').forEach(s=>tog(s,!o));a.dataset.all=o?'0':'1';a.textContent=o?'Expand all':'Collapse all'}
   else if(a=e.target.closest('[data-hl]')){const S=J('tbSet');S.off=!S.off;W('tbSet',S);T.classList.toggle('nohl',!!S.off);a.setAttribute('aria-pressed',!S.off)}
   else if(a=e.target.closest('[data-done]')){const D=J('tbDone'),k=a.dataset.done;if(D[k])delete D[k];else D[k]=1;W('tbDone',D);a.setAttribute('aria-pressed',!!D[k]);a.textContent=D[k]?'✓ Read':'Mark as read'}
+  else if(a=e.target.closest('[data-tbf]')){hf=a.dataset.tbf;T.querySelectorAll('[data-tbf]').forEach(x=>x.setAttribute('aria-pressed',x===a));paint()}
   else if(a=e.target.closest('.tbs-h'))tog(a.parentElement)});
+ T.addEventListener('input',e=>{if(e.target.id==='tbq'){hq=e.target.value;paint()}});
  T.addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const g=e.target.closest&&e.target.closest('[data-go]');if(g){e.preventDefault();g.click();return}const h=e.target.closest&&e.target.closest('.tbs-h');if(h){e.preventDefault();tog(h.parentElement)}});
  addEventListener('hashchange',tb);setTimeout(tb,0)}
 const views=[...document.querySelectorAll('.view')],btns=[...document.querySelectorAll('.quizbtn')];
