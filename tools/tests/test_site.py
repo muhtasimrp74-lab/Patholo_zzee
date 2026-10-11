@@ -165,6 +165,22 @@ class Browser(unittest.TestCase):
                       "mcq": {"p": {P: {"n": 1}}, "bm": [P], "hist": [P], "o": {P: P}, "day": {"d": P, "n": 0}, "rd": {P: 1}, "rv": [P], "nt": {P: P}}})
         for h in ('#/', '#/qa', '#/questions', '#/menu', '#/mcqs', '#/practice', '#/05', '#/textbook'): pg.goto(URL + h); pg.wait_for_timeout(350)
         self.assertIsNone(pg.evaluate("()=>window.__x ?? null"), 'script from backup data executed')
+    def test_home_banner_only_on_home_and_cta_works(self):
+        pg = self.page(); pg.wait_for_timeout(300)
+        self.assertEqual(pg.locator('.nh-banner').count(), 1); self.assertEqual(pg.locator('#v-home h1:visible').count(), 1)
+        self.assertGreater(pg.evaluate("()=>document.querySelector('.nh-banner img').naturalWidth"), 0, 'hero image failed to load')
+        self.assertEqual(pg.get_attribute('.nh-bn-cta', 'href'), '#/qa'); pg.click('.nh-bn-cta'); pg.wait_for_timeout(500)
+        self.assertEqual(pg.evaluate('location.hash'), '#/qa'); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0)
+        for h in ('#/questions', '#/05', '#/mcqs', '#/textbook', '#/menu'): pg.goto(URL + h); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0, h)
+        self.assertEqual(self.errs, [])
+    def test_home_banner_responsive_no_overflow(self):
+        for w, h in ((1440, 900), (820, 1100), (390, 844), (360, 740)):
+            pg = self.b.new_page(viewport={'width': w, 'height': h}); pg.goto(URL + '#/'); pg.wait_for_timeout(700)
+            self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'horizontal overflow at %d' % w)
+            r = pg.evaluate("()=>{const b=document.querySelector('.nh-banner').getBoundingClientRect(),c=document.querySelector('.nh-bn-cta').getBoundingClientRect();return [b.height,c.bottom,c.right<=innerWidth]}")
+            self.assertTrue(r[2], w); self.assertLess(r[1], h, 'CTA below the fold at %d' % w)
+            if w >= 1000: self.assertTrue(420 <= r[0] <= 500, r[0])
+            pg.close()
     def test_questions_default_collapsed_and_filters(self):
         pg = self.page('#/questions'); pg.wait_for_timeout(300)
         self.assertEqual(pg.eval_on_selector_all('#qlist .qs-h', 'e=>e.filter(x=>x.getAttribute("aria-expanded")==="true").length'), 0)
