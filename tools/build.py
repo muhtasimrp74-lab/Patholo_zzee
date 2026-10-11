@@ -373,6 +373,15 @@ import nav_patch
 s = nav_patch.patch(s)
 assert '</head><body>' in s
 s = s.replace('</head><body>', '</head><body>' + STAR_SPRITE, 1)
+# ---- no flash of the old markup: the page's static HTML is rewritten by the big script at the end, so keep the
+# body hidden (background stays the theme colour) until that script has built the UI. A failsafe timer reveals it
+# anyway if something goes wrong; without JavaScript the class is never added, so the page stays visible.
+BOOT_HEAD = ('<style id="zz-boot-css">html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F3EBDD)}</style>'
+             '<script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script>')
+BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script>'
+assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
+s = s.replace('</head><body>', BOOT_HEAD + '</head><body>', 1)
+s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
 os.remove(os.path.join(HERE, '_stage.html'))
 print('wrote index.html', len(s))
