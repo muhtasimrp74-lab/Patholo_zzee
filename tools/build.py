@@ -9,8 +9,12 @@ s = open(os.path.join(HERE, 'src/index.base.html'), encoding='utf8').read()
 # Parts, in book order. General Pathology and Haematology are filled from content.TOPICS (see content.py);
 # while a part has no topics the site shows a tidy "coming soon" panel for it.
 SYS = ['%02d' % i for i in range(1, 16)]
+# Written chapters that share a Robbins chapter with an original viva topic are shown on ONE page (same as General Pathology):
+MERGE = {'01': 'c11', '02': 'c12', '04': 'c15', '05': 'c17', '06': 'c18', '07': 'c20', '08': 'c21', '09': 'c22', '10': 'c24', '11': 'c25', '12': 'c26', '13': 'c28'}
+MERGE_REV = {v: k for k, v in MERGE.items()}
+SYS_ORDER = SYS[:9] + ['c23'] + SYS[9:]
 PART_DEFS = [('A', 'General Pathology', 'gp'), ('B', 'Haematology', 'hm'), ('C', 'Systemic Pathology', 'sys')]
-PARTS = [(L, N, K, (SYS + [t[0] for t in content.TOPICS if t[2] == K]) if K == 'sys' else [t[0] for t in content.TOPICS if t[2] == K]) for L, N, K in PART_DEFS]
+PARTS = [(L, N, K, (SYS_ORDER + [t[0] for t in content.TOPICS if t[2] == K and t[0] not in MERGE_REV and t[0] not in SYS_ORDER]) if K == 'sys' else [t[0] for t in content.TOPICS if t[2] == K]) for L, N, K in PART_DEFS]
 PART_OF = {t: p[2] for p in PARTS for t in p[3]}
 e = lambda t: html.escape(t, quote=False)
 
@@ -55,6 +59,7 @@ short = dict(re.findall(r'<option value="(\d\d)"[^>]*>\d\d  (.*?)</option>', re.
 
 n = len(re.findall(r'id="q\d+"', s)); base_n = n
 new_data, new_views, written, exam, tree_gp = [], {}, {}, {}, {}
+RAW = {}
 # question ids: the original written questions keep their numbers; box-viva questions (item[7]) are numbered after them,
 # so bookmarks, notes and progress saved on the live site never move.
 QID, _k = {}, n
@@ -92,16 +97,17 @@ for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
         elif stars or refs:
             exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)})]
         xm = xm_html(stars, refs, boxes=ex.get('boxes'), hl=ex.get('hl'))
-        new_data.append([code, q, tid, 'q%d' % n, tname])
+        new_data.append([code, q, MERGE_REV.get(tid, tid), 'q%d' % n, html.unescape(names[MERGE_REV[tid]]) if tid in MERGE_REV else tname])
         arts.append((pl, _ii, '<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ''.join('<span class="code">%s</span>' % c for c in code.split()), e(q), xm, ans)))
-    # Robbins order on the chapter page: heading (h3) > topic (h4, only when the heading has several topics) > questions
-    _own = int(tid[1:]) if tid[1:].isdigit() else None
+    RAW[tid] = (live, arts)
+RAW_OWN = {}
+def render(arts, _own):
     def _key(a):
         pl_, ii_ = a[0], a[1]
         if not pl_: return (2, 999, 999, ii_)
         so, to = RO.sub_order(pl_[0]), RO.topic_order(pl_[0], pl_[1])
         return (0 if pl_[0] == _own else 1, so.index(pl_[1]) if pl_[1] in so else 500, to.index(pl_[2]) if pl_[2] in to else 500, ii_)
-    arts.sort(key=_key)
+    arts = sorted(arts, key=_key)
     _multi = {}
     for a in arts:
         if a[0]: _multi.setdefault((a[0][0], a[0][1]), set()).add(a[0][2])
@@ -111,7 +117,9 @@ for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
             if (pl_[0], pl_[1]) != _ls: _out.append('<h3 class="sub">%s</h3>' % e(pl_[1])); _ls = (pl_[0], pl_[1]); _lt = None
             if len(_multi[_ls]) > 1 and pl_[2] != _lt: _out.append('<h4 class="tsub">%s</h4>' % e(pl_[2])); _lt = pl_[2]
         _out.append(h_)
-    new_views[tid] = (live, ''.join(_out))
+    return ''.join(_out)
+for tid, (live, arts) in RAW.items():
+    new_views[tid] = (live, render(arts, int(tid[1:]) if tid[1:].isdigit() else None))
 total = max(QID.values()) - len(content.DROPPED)
 ALIAS = {'q%d' % QID[(content.TOPICS_IDX[a[0]], a[1])]: 'q%d' % QID[(content.TOPICS_IDX[b[0]], b[1])] for a, b in content.ALIAS.items()}
 order = [t for p in PARTS for t in p[3]]  # book order: Part A, B, C
@@ -140,6 +148,18 @@ if UNPLACED: print('UNPLACED questions (add a rule in robbins_outline.py):', UNP
 
 def jump(cur):
     return '<select class="jump" aria-label="Jump to topic">' + ''.join('<option value="%s"%s>%s  %s</option>' % (t, ' selected' if t == cur else '', NO(t), short[t]) for t in order) + '</select>'
+
+# ---- merge pass: original viva topic + written chapter of the same Robbins chapter -> one page (viva and written together)
+_RM = {k: RO.norm(*v) for k, v in robbins_map.SYS.items()}
+for _old, _ct in MERGE.items():
+    _vm = re.search(r'<div class="view" id="v-%s".*?(?=<div class="view" id="v-)' % _old, s, re.S); _vt = _vm.group()
+    _i, _j = _vt.index('<main>') + 6, _vt.index('<p class="none">')
+    _ol = [(_RM[m.group(1)], int(m.group(1)[1:]) - 1000, m.group(0)) for m in re.finditer(r'<article class="card" id="(q\d+)">.*?</article>', _vt[_i:_j], re.S)]
+    _live, _ar = RAW[_ct]; _tot = len(_ol) + len(_live)
+    _nv = _vt[:_i] + render(_ol + _ar, int(OLD_CH[_old].split('\u2013')[0]) if isinstance(OLD_CH[_old], str) else OLD_CH[_old]) + _vt[_j:]
+    _nv = re.sub(r'\d+ questions, in the same order as the NMC viva list\.', '%d questions · viva and written, in Robbins order.' % _tot, _nv)
+    s = s.replace(_vt, _nv, 1)
+    old_cards[_old] = re.sub(r'\d+ questions</span>', '%d questions</span>' % _tot, old_cards[_old])
 
 v01 = re.search(r'<div class="view" id="v-01".*?(?=<div class="view" id="v-02")', s, re.S).group()
 head = v01[:v01.index('<main>')]
