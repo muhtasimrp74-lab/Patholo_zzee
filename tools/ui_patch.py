@@ -70,6 +70,8 @@ upd();addEventListener('hashchange',()=>{if(/^#\/qa/.test(location.hash))upd()})
 """
 HOMEJS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'home.js'),encoding='utf8').read()
 TFJS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'topicfilter.js'),encoding='utf8').read()
+PBJS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'pagebanner.js'),encoding='utf8').read()
+PBCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'pagebanner.css'),encoding='utf8').read()
 HOMECSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'home.css'),encoding='utf8').read()
 CARDCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'cardpolish.css'),encoding='utf8').read()
 
@@ -100,12 +102,12 @@ const colAll=()=>QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h')
     a = "function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');"
     s = _rep(s, a, """function route(){const p=location.hash.replace(/^#\\/?/,'').split('/');if(p[0]==='topics')p[0]='qa';const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');
 if(v.id==='v-questions'&&window.setQMode){setQMode('q');if(!window.__qa&&window.qColAll)qColAll()}""")
-    s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD + HOMEJS + "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n")
+    s = _rep(s, "\nroute();\n", "\nroute();\n" + UPD + HOMEJS + PBJS + "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n")
     s = s.replace('<small>${esc(d[4])} · ${d[0]}</small>', '<small>${esc(d[4])}${d[0]?\' · \'+d[0]:\'\'}</small>')
     s = s.replace('${qd[0]} · ${esc(qd[4])}', '${qd[0]?qd[0]+\' · \':\'\'}${esc(qd[4])}')
     # CSS
     k = s.index('.qtools{display:flex;')
     s = s[:k] + QCSS + s[k:]
     k = s.rindex('</style>')
-    s = s[:k] + XM + RINGS + HOMECSS + CARDCSS + s[k:]
+    s = s[:k] + XM + RINGS + HOMECSS + PBCSS + CARDCSS + s[k:]
     return s
