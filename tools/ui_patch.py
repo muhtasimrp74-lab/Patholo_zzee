@@ -76,6 +76,7 @@ SFJS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'
 SFCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'sitefooter.css'),encoding='utf8').read()
 HOMECSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'home.css'),encoding='utf8').read()
 CARDCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'cardpolish.css'),encoding='utf8').read()
+POLISHCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file__),'polish.css'),encoding='utf8').read()
 
 def patch(s):
     # navigation: no Topics button; separate Questions and Q&A buttons
@@ -111,5 +112,5 @@ if(v.id==='v-questions'&&window.setQMode){setQMode('q');if(!window.__qa&&window.
     k = s.index('.qtools{display:flex;')
     s = s[:k] + QCSS + s[k:]
     k = s.rindex('</style>')
-    s = s[:k] + XM + RINGS + HOMECSS + PBCSS + SFCSS + CARDCSS + s[k:]
+    s = s[:k] + XM + RINGS + HOMECSS + PBCSS + SFCSS + CARDCSS + POLISHCSS + s[k:]
     return s
