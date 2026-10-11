@@ -30,4 +30,7 @@ function build(){
  if(old)old.replaceWith(f);else{const v=[...document.querySelectorAll('body > .view')].pop();if(v)v.after(f);else document.body.appendChild(f)}
 }
 build();addEventListener('load',build);
+/* keep the footer's bottom padding equal to the real height of the fixed bottom bar */
+function bh(){const n=document.getElementById('bnav');if(n&&n.offsetHeight)document.documentElement.style.setProperty('--bn-h',n.offsetHeight+'px')}
+bh();addEventListener('load',bh);addEventListener('resize',bh);
 })();

@@ -1249,10 +1249,15 @@ h1 em{font-size:.66em;font-weight:700}
  .sf-credit{position:static;transform:none;width:auto;padding:4px var(--gut) 8px;text-align:left}
  .sf-name{font-size:1.7rem}
  .sf-main{gap:28px 20px;padding-top:22px}
- .sf-bot{flex-direction:column;align-items:flex-start;gap:16px;padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+ .sf-bot{flex-direction:column;align-items:flex-start;gap:16px}
  .sf-top{width:100%}
 }
 @media print{.sf{display:none}}
+
+/* bottom bar: glass, attached to the bottom edge (not floating); no spare space under the footer */
+html body{padding-bottom:0}
+html #bnav{left:0;right:0;bottom:0;border-radius:0;border:0;border-top:1px solid var(--glass-bd);padding:4px max(6px,env(safe-area-inset-left)) max(4px,env(safe-area-inset-bottom,0px));box-shadow:0 -8px 28px rgba(33,25,31,.12);background-color:color-mix(in srgb,var(--bg) 58%,transparent);-webkit-backdrop-filter:blur(22px) saturate(180%);backdrop-filter:blur(22px) saturate(180%)}
+@media(max-width:720px){html .sf-bot{padding-bottom:calc(var(--bn-h,60px) + 14px)}html #tools{bottom:calc(var(--bn-h,60px) + 10px)}}
 /* ===== Question card polish =====
    One gutter shared by header, buttons, answer and related row; a soft header wash that fades into the
    card instead of ending in a hard edge; a floating accent bar that is not clipped by the corner;
@@ -3225,6 +3230,9 @@ function build(){
  if(old)old.replaceWith(f);else{const v=[...document.querySelectorAll('body > .view')].pop();if(v)v.after(f);else document.body.appendChild(f)}
 }
 build();addEventListener('load',build);
+/* keep the footer's bottom padding equal to the real height of the fixed bottom bar */
+function bh(){const n=document.getElementById('bnav');if(n&&n.offsetHeight)document.documentElement.style.setProperty('--bn-h',n.offsetHeight+'px')}
+bh();addEventListener('load',bh);addEventListener('resize',bh);
 })();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
