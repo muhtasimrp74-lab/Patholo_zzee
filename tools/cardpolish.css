@@ -33,6 +33,7 @@
 .xm .imp{gap:2px;padding:0 9px}
 .xm .ex-y{padding:0 11px;color:var(--text);gap:5px}
 .xm .ex-p{font-weight:700;letter-spacing:.04em;color:var(--clay)}
+.xm .ex-hl{font-weight:600;background-color:color-mix(in srgb,#e8b923 24%,var(--glass-strong));border-color:color-mix(in srgb,#b8860b 45%,var(--glass-bd))}
 .xm .ex-k{padding:0 10px;margin-right:2px;font-weight:700;letter-spacing:.04em;color:var(--clay);
  background-color:color-mix(in srgb,var(--clay) 12%,var(--glass-strong))}
 

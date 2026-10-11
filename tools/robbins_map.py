@@ -6,10 +6,10 @@ SYS: question id (q1..q189, the original viva questions) -> (chapter, sub-chapte
 General Pathology questions get their placement from the headings in gp_written.txt."""
 
 CHAPTERS = {
- 2:  ('Cell Injury, Cell Death, and Adaptations', ['Cellular Adaptations to Stress', 'Cell Injury: Causes and Morphology', 'Mechanisms of Cell Injury', 'Necrosis', 'Apoptosis', 'Pathologic Calcification']),
+ 2:  ('Cell Injury, Cell Death, and Adaptations', ['Cellular Adaptations to Stress', 'Cellular Aging', 'Cell Injury: Causes and Morphology', 'Mechanisms of Cell Injury', 'Necrosis', 'Apoptosis', 'Intracellular Accumulations', 'Pathologic Calcification']),
  11: ('Blood Vessels', ['Hypertensive Vascular Disease', 'Arteriosclerosis', 'Vasculitis', 'Tumors of Blood Vessels']),
  12: ('The Heart', ['Congenital Heart Disease', 'Ischemic Heart Disease', 'Valvular Heart Disease', 'Cardiomyopathies', 'Pericardial Disease']),
- 13: ('Diseases of White Blood Cells, Lymph Nodes, Spleen, and Thymus', ['Lymph Node Disorders', 'Lymphoid Neoplasms']),
+ 13: ('Diseases of White Blood Cells, Lymph Nodes, Spleen, and Thymus', ['Reactive Leukocyte Disorders', 'Leukaemias', 'Myeloproliferative and Myelodysplastic Disorders', 'Spleen and Hypersplenism', 'Plasma Cell Disorders', 'Lymph Node Disorders', 'Lymphoid Neoplasms']),
  15: ('The Lung', ['Obstructive Lung Diseases', 'Chronic Interstitial (Restrictive) Lung Diseases', 'Pulmonary Infections', 'Lung Tumors']),
  17: ('The Gastrointestinal Tract', ['Congenital Anomalies', 'Esophagus', 'Stomach', 'Small and Large Intestines', 'Appendix']),
  18: ('Liver and Gallbladder', ['Cirrhosis', 'Portal Hypertension', 'Viral Hepatitis', 'Gallbladder']),

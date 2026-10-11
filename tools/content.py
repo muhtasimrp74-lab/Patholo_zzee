@@ -86,6 +86,55 @@ def _gp_topics():
         body = ANSWERS.get(q) or '<p>Answer to be added.</p>'
         # written questions have no A/B card code (those belong to the viva board): code is left blank
         out[ch].append(('', q, body, 'W', len(stars), ref, (ch, sub, topic or sub)))
-    return [('c%d' % c, GP_CHAPTERS[c][0], 'gp', out[c]) for c in order]
+    _box_viva(out, order)
+    order.sort()   # book order (Part A: chapters 2-24, Part B: 13-14)
+    return [('c%d' % c, GP_CHAPTERS[c][0], 'hm' if c in HM_CHAPTERS else 'gp', out[c]) for c in order]
+
+# ---------------------------------------------------------------------------------------------
+# BOX VIVA (A-cards A1-A10: General Pathology + Haematology) - read from box_viva.txt, which is generated from the
+# box viva list by  python3 tools/boxviva_parse.py  (see that file for the line format).
+#   Every question carries the A-card(s) it was printed on, how many times it was asked (stars) and the question
+#   numbers as printed. They are appended AFTER the written questions, so existing question ids never move.
+#   Answers: put them in ANSWERS above, keyed by the question text exactly as written in box_viva.txt.
+HM_CHAPTERS = {13, 14}
+BOX_NOTE = 'Answer to be added.'
+def _box_viva(out, order):
+    src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'box_viva.txt')
+    if not os.path.exists(src): return
+    ch = sub = topic = None
+    for raw in open(src, encoding='utf8'):
+        line = raw.strip()
+        if not line: continue
+        if line.startswith('###'): topic = line[3:].strip(); continue
+        if line.startswith('##'):
+            sub = line[2:].strip(); topic = None
+            if sub not in GP_CHAPTERS[ch][1]: GP_CHAPTERS[ch][1].append(sub)
+            continue
+        if line.startswith('#'):
+            m = _re.match(r'^#\s*CHAPTER\s+(\d+)\s*\|\s*(.+)$', line)
+            if not m: continue          # plain comment line
+            ch = int(m.group(1)); sub = topic = None
+            GP_CHAPTERS.setdefault(ch, (m.group(2).strip(), []))
+            if ch not in out: out[ch] = []; order.append(ch)
+            continue
+        hl = line.endswith('\U0001F58D')
+        if hl: line = line[:-1].rstrip()
+        m = _re.match(r'^(.*?)\s*\{([^}]*)\}\s*(\u2b50*)\s*$', line)
+        assert m, 'bad box viva line: ' + line
+        body, boxes, stars = m.group(1), m.group(2), len(m.group(3))
+        bx = []   # [[card code, 'Q13, Q15'], ...] in box order
+        for part in boxes.split(';'):
+            mm = _re.match(r'^\s*A-(\d+)\s*(.*)$', part)
+            assert mm, 'bad box tag: ' + line
+            bx.append(['A' + mm.group(1), mm.group(2).strip()])
+        code = ' '.join(sorted({b[0] for b in bx}, key=lambda c: int(c[1:])))
+        if body.startswith('@ '):
+            title, asks, var = [x.strip() for x in body[2:].split('::')]
+            q = title + ' \u2014 ' + ' '.join(asks.split(' | '))
+            ans = '<p>%s</p>' % BOX_NOTE
+            ans = ('<p><strong class="lbl">Case:</strong> %s</p>' % esc(title)) + '<div class="sh"><strong class="lbl">Questions on this case</strong></div>' + UL(asks.split(' | ')) + ((P('As printed', var)) if var else '') + '<p>%s</p>' % BOX_NOTE
+        else:
+            q = body; ans = ANSWERS.get(q) or '<p>%s</p>' % BOX_NOTE
+        out[ch].append((code, q, ans, 'V', stars, '', (ch, sub, topic or sub), {'boxes': bx, 'hl': hl}))
 
 TOPICS = _gp_topics()

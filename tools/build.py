@@ -17,11 +17,16 @@ e = lambda t: html.escape(t, quote=False)
 import math
 def _star(on):
     return '<svg class="zs %s" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#zz-star"/></svg>' % ('on' if on else 'off')
-def xm_html(stars, refs, tag='span'):
-    """Importance as 3 custom stars (filled = importance) and each exam year as its own chip."""
+def xm_html(stars, refs, tag='span', boxes=None, hl=False):
+    """Importance as custom stars (filled = importance, or times asked on the A-cards; at least 3 slots), each exam year as its own chip,
+    and for box-viva questions each A-card with the question numbers as printed."""
     parts = []
     if stars:
-        parts.append('<span class="imp" role="img" aria-label="Importance: %d of 3">%s</span>' % (stars, ''.join(_star(i < stars) for i in range(3))))
+        parts.append('<span class="imp" role="img" aria-label="%s">%s</span>' % (('Asked %d time%s' % (stars, '' if stars == 1 else 's')) if boxes else ('Importance: %d of 3' % stars), ''.join(_star(i < stars) for i in range(max(3, stars)))))
+    for c, lab in (boxes or []):
+        parts.append('<span class="ex-y"><b class="ex-p">%s</b>%s</span>' % (e(c), e(lab) if lab else ''))
+    if hl:
+        parts.append('<span class="ex-y ex-hl">Highlighted</span>')
     last = None
     for tok in [t.strip() for t in (refs or '').split(',') if t.strip()]:
         m = re.match(r'^([A-Za-z]+)-(.+)$', tok)
@@ -49,22 +54,33 @@ short = dict(re.findall(r'<option value="(\d\d)"[^>]*>\d\d  (.*?)</option>', re.
 
 n = len(re.findall(r'id="q\d+"', s)); base_n = n
 new_data, new_views, written, exam, tree_gp = [], {}, {}, {}, {}
-for tid, tname, part, qs in content.TOPICS:
+# question ids: the original written questions keep their numbers; box-viva questions (item[7]) are numbered after them,
+# so bookmarks, notes and progress saved on the live site never move.
+QID, _k = {}, n
+for _pass in (False, True):
+    for _ti, _t in enumerate(content.TOPICS):
+        for _ii, _it in enumerate(_t[3]):
+            if (len(_it) > 7) == _pass:
+                _k += 1; QID[(_ti, _ii)] = _k
+for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
     names[tid] = e(tname); short[tid] = e(tname)
     arts = []
-    for item in qs:
+    for _ii, item in enumerate(qs):
         code, q, ans = item[:3]
-        n += 1
+        n = QID[(_ti, _ii)]
         if len(item) > 3 and item[3] == 'W': written['q%d' % n] = 'W'
         if len(item) > 6: tree_gp['q%d' % n] = list(item[6])
         stars, refs = (item[4], item[5]) if len(item) > 5 else (0, '')
-        if stars or refs:
+        ex = item[7] if len(item) > 7 else {}
+        if ex:
+            exam['q%d' % n] = [stars, '', [], ex['boxes'], 1 if ex['hl'] else 0]
+        elif stars or refs:
             exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)})]
-        xm = xm_html(stars, refs)
+        xm = xm_html(stars, refs, boxes=ex.get('boxes'), hl=ex.get('hl'))
         new_data.append([code, q, tid, 'q%d' % n, tname])
-        arts.append('<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ('<span class="code">%s</span>' % code) if code else '', e(q), xm, ans))
+        arts.append('<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ''.join('<span class="code">%s</span>' % c for c in code.split()), e(q), xm, ans))
     new_views[tid] = (qs, ''.join(arts))
-total = n
+total = max(QID.values())
 order = [t for p in PARTS for t in p[3]]  # book order: Part A, B, C
 
 # Robbins chapter labels shown instead of the internal topic ids (01..15, c2 ...)
@@ -143,7 +159,7 @@ ch.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.f)f=
 """
 
 UX_JS = r"""
-function cardRows(){const by={A:[],B:[]};DATA.forEach(d=>{const m=/^([AB])\d+$/.exec(d[0]);if(m&&!by[m[1]].includes(d[0]))by[m[1]].push(d[0])});
+function cardRows(){const by={A:[],B:[]};DATA.forEach(d=>d[0].split(' ').forEach(c=>{const m=/^([AB])\d+$/.exec(c);if(m&&!by[m[1]].includes(c))by[m[1]].push(c)}));
 return ['A','B'].map(L=>{const a=by[L].sort((x,y)=>x.slice(1)-y.slice(1));return '<div class="chips" style="padding:0;margin:0 0 12px;max-width:none;flex-wrap:wrap"><span class="mu" style="align-self:center">'+L+'-box cards:</span>'+(a.length?a.map(c=>'<a href="#/b/'+c+'">'+c+'</a>').join(''):'<span class="soon-t">coming soon</span>')+'</div>'}).join('')}
 const EMPTY_UI={bm:['No bookmarks yet','<path d="M6 3h12v18l-6-4-6 4z"/>'],fav:['No favourites yet','<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>'],notes:['No notes yet','<path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/>']};
 function emptyHTML(k){const u=EMPTY_UI[k]||EMPTY_UI.bm;return '<div class="empty"><svg viewBox="0 0 24 24" aria-hidden="true">'+u[1]+'</svg><b>'+u[0]+'</b><p>'+EMPTY[k].replace(/^No [a-z]+ yet\. /,'')+'</p><a class="pill" href="#/topics">Browse topics</a></div>'}
@@ -259,6 +275,11 @@ s = s.replace('<meta name="referrer" content="no-referrer">', '<meta name="refer
 assert 'og:image' in s
 for _t in OLD_CH:  # breadcrumb of the original topic pages: show the Robbins chapter, not 01..15
     s = re.sub(r'(id="v-%s".{0,1500}?All topics</a> / )%s' % (_t, _t), lambda m, _t=_t: m.group(1) + NO(_t), s, count=1, flags=re.S)
+for _a, _b in (("BS=[...new Set(DATA.map(d=>d[0]))]", "BS=[...new Set(DATA.flatMap(d=>d[0].split(' ')).filter(Boolean))]"),
+               ("DATA.filter(d=>d[0]===b).map(d=>`<div class=\"row nb\">", "DATA.filter(d=>d[0].split(' ').includes(b)).map(d=>`<div class=\"row nb\">"),
+               ("DATA.filter(d=>(!b||d[0]===b)&&", "DATA.filter(d=>(!b||d[0].split(' ').includes(b))&&")):
+    assert _a in s, _a
+    s = s.replace(_a, _b, 1)
 import ui_patch
 s = ui_patch.patch(s)
 import nav_patch

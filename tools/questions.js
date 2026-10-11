@@ -10,12 +10,15 @@ const IC={x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 
 const PARTS=QMETA.parts,PO=QMETA.partOf,TY=QMETA.type;
 const EX=QMETA.exam||{},st=d=>(EX[d[3]]||[0])[0],yrs=d=>(EX[d[3]]||[0,'',[]])[2],YEARS=[...new Set(Object.values(EX).flatMap(x=>x[2]))].sort((a,b)=>b-a),HASEX=Object.keys(EX).length>0;
 const star=on=>`<svg class="zs ${on?'on':'off'}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#zz-star"/></svg>`;
-const impH=n=>`<span class="imp" role="img" aria-label="Importance: ${n} of 3">${[0,1,2].map(i=>star(i<n)).join('')}</span>`;
-const xm=d=>{const e=EX[d[3]],t=(TREE[d[3]]||[])[2],o=[];if(t)o.push(`<span class="xs">${esc(t)}</span>`);if(e&&e[0])o.push(impH(e[0]));
+const impH=(n,box)=>`<span class="imp" role="img" aria-label="${box?'Asked '+n+(n>1?' times':' time'):'Importance: '+n+' of 3'}">${Array.from({length:Math.max(3,n)},(_,i)=>star(i<n)).join('')}</span>`;
+const MAXST=Math.max(3,...Object.values(EX).map(x=>x[0]||0));
+const xm=d=>{const e=EX[d[3]],t=(TREE[d[3]]||[])[2],o=[];if(t)o.push(`<span class="xs">${esc(t)}</span>`);if(e&&e[0])o.push(impH(e[0],!!e[3]));
+ if(e&&e[3])e[3].forEach(b=>o.push(`<span class="ex-y"><b class="ex-p">${esc(b[0])}</b>${esc(b[1])}</span>`));
+ if(e&&e[4])o.push('<span class="ex-y ex-hl">Highlighted</span>');
  if(e&&e[1]){let last=null;e[1].split(',').map(x=>x.trim()).filter(Boolean).forEach(tok=>{const m=/^([A-Za-z]+)-(.+)$/.exec(tok);if(m){last=m[1];tok=m[2]}o.push(last?`<span class="ex-y"><b class="ex-p">${esc(last)}</b>${esc(tok)}</span>`:`<span class="ex-y">${esc(tok)}</span>`)})}
  return o.length?`<small class="xm">${o.join('')}</small>`:''};
 const pk=d=>PO[d[2]]||'',ty=d=>TY[d[3]]||'V',cardOf=c=>{const m=/^([A-Z]+)(\d+)$/.exec(c);return m?[m[1],+m[2]]:[c,0]};
-const letter=d=>cardOf(d[0])[0];
+const cds=d=>d[0]?d[0].split(' '):[],letter=d=>cds(d).map(c=>cardOf(c)[0]),hasL=(d,l)=>letter(d).includes(l);
 const cardCmp=(a,b)=>{const x=cardOf(a),y=cardOf(b);return x[0].localeCompare(y[0])||x[1]-y[1]};
 const pidx=k=>{const i=PARTS.findIndex(p=>p[0]===k);return i<0?99:i};
 const TREE=QMETA.tree||{},CHS=QMETA.chapters||[],chOf=d=>(TREE[d[3]]||['?'])[0],subOf=d=>(TREE[d[3]]||[0,''])[1];
@@ -24,10 +27,10 @@ const CHI={};CHS.forEach((c,i)=>CHI[c[0]]=c);
 const tids=CHS.map(c=>c[0]).filter(c=>g[c]);
 tids.forEach(c=>{const subs=CHI[c][3];g[c].sort((a,b)=>subs.indexOf(subOf(a))-subs.indexOf(subOf(b)))});
 const BOOK={};let bi=0;tids.forEach(t=>g[t].forEach(d=>BOOK[d[3]]=bi++));
-const LETTERS=[...new Set(['A','B'].concat(DATA.map(letter).filter(Boolean)))].sort();
-const CODES=[...new Set(DATA.map(d=>d[0]).filter(Boolean))].sort(cardCmp);
+const LETTERS=[...new Set(['A','B'].concat(DATA.flatMap(letter).filter(Boolean)))].sort();
+const CODES=[...new Set(DATA.flatMap(cds))].sort(cardCmp);
 
-const qi=d=>`<div class="qi" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${d[0]?`<span class="code">${d[0]}</span>`:''}<span class="qt">${esc(d[1])}${xm(d)}</span>${ty(d)==='W'?'<span class="tg">Written</span>':''}${chev}</button><div class="qi-a" hidden></div></div>`;
+const qi=d=>`<div class="qi" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}${xm(d)}</span>${ty(d)==='W'?'<span class="tg">Written</span>':''}${chev}</button><div class="qi-a" hidden></div></div>`;
 const secC=c=>{const it=g[c],ci=CHI[c];let last=null,h='';it.forEach(d=>{const sb=subOf(d);if(sb!==last){h+=`<h5 class="qsub" data-sub="${esc(sb)}">${esc(sb)}</h5>`;last=sb}h+=qi(d)});
  return `<section class="qs" data-t="${c}"><button class="qs-h" type="button" aria-expanded="true"><span class="no">${esc(ci[2])}</span><b>${esc(ci[1])}</b><span class="cnt">${it.length}</span>${chev}</button><div class="qs-b">${h}</div></section>`};
 const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${items.map(qi).join('')}</div></section>`;
@@ -49,7 +52,7 @@ let FO=false,DD=false;
 const STAT={all:()=>true,fav:d=>S.fav.includes(d[3]),bm:d=>S.bm.includes(d[3]),note:d=>!!S.notes[d[3]],done:d=>S.learned.includes(d[3]),todo:d=>!S.learned.includes(d[3])};
 const txt=d=>{const c=document.getElementById(d[3]);return c&&c._t?c._t:(d[1]+' '+d[4]+' '+d[0]).toLowerCase()};
 const pass=(d,skip)=>(skip==='show'||!F.show.length||F.show.some(v=>STAT[v](d)))&&(skip==='type'||!F.type.length||F.type.includes(ty(d)))&&(skip==='part'||!F.part.length||F.part.includes(pk(d)))
- &&(skip==='card'||((!F.letter.length||F.letter.includes(letter(d)))&&(!F.card.length||F.card.includes(d[0]))))&&(skip==='stars'||!F.stars.length||F.stars.includes(String(st(d))))&&(skip==='year'||!F.year.length||yrs(d).some(y=>F.year.includes(String(y))))&&(skip==='topic'||!F.topic.length||F.topic.includes(String(chOf(d))))&&(!F.q||txt(d).includes(F.q));
+ &&(skip==='card'||((!F.letter.length||F.letter.some(l=>hasL(d,l)))&&(!F.card.length||cds(d).some(c=>F.card.includes(c)))))&&(skip==='stars'||!F.stars.length||F.stars.includes(String(st(d))))&&(skip==='year'||!F.year.length||yrs(d).some(y=>F.year.includes(String(y))))&&(skip==='topic'||!F.topic.length||F.topic.includes(String(chOf(d))))&&(!F.q||txt(d).includes(F.q));
 const cnt=(fn,skip)=>DATA.filter(d=>pass(d,skip)&&fn(d)).length;
 const nAct=()=>ON.reduce((a,k)=>a+F[k].length,0)+(F.sort!=='book');
 const SHOW=[['all','All'],['fav','Favourites'],['bm','Bookmarked'],['note','With note'],['done','Learned'],['todo','Not learned']];
@@ -60,14 +63,14 @@ const chip=(k,v,lb,on,c)=>`<button type="button" class="qfc${on?' on':''}${c===0
 function panel(){
  const a=document.activeElement,keep=a&&qf.contains(a)&&a.dataset.k?[a.dataset.k,a.dataset.v]:null;
  const n=nAct()+!!F.q,tot=DATA.filter(d=>pass(d)).length;
- const codes=CODES.filter(c=>!F.letter.length||F.letter.includes(cardOf(c)[0])),cardCnt=c=>cnt(d=>d[0]===c,'card');
+ const codes=CODES.filter(c=>!F.letter.length||F.letter.includes(cardOf(c)[0])),cardCnt=c=>cnt(d=>cds(d).includes(c),'card');
  qf.innerHTML=`<div class="qf-head"><b>Filters</b><span class="sp"></span><button type="button" class="qf-clr" data-k="reset"${n?'':' disabled'}>${IC.reset}<span>Clear all</span>${n?`<i>${n}</i>`:''}</button><button type="button" class="qf-x" data-k="close" aria-label="Close filters">${IC.x}</button></div><div class="qf-body">`
  +`<h4>Status</h4><div class="qfr">${SHOW.map(([v,l])=>chip('show',v,l,v==='all'?!F.show.length:has('show',v),cnt(STAT[v],'show'))).join('')}</div>`
  +`<h4>Type</h4><div class="qseg">${[['V','Viva'],['W','Written']].map(([v,l])=>`<button type="button" class="${has('type',v)?'on':''}" data-k="type" data-v="${v}" aria-pressed="${has('type',v)}">${l}<i>${cnt(d=>ty(d)===v,'type')}</i></button>`).join('')}</div>`
- +(HASEX?`<h4>Importance</h4><div class="qfr">${[1,2,3].map(n=>chip('stars',n,'<span class="imp" aria-label="'+n+(n>1?' stars':' star')+'">'+[0,1,2].map(i=>star(i<n)).join('')+'</span>',has('stars',n),cnt(d=>st(d)===n,'stars'))).join('')}</div>`
+ +(HASEX?`<h4>Importance</h4><div class="qfr">${Array.from({length:MAXST},(_,i)=>i+1).map(n=>chip('stars',n,'<span class="imp" aria-label="'+n+(n>1?' stars':' star')+'">'+Array.from({length:Math.max(3,n)},(_,i)=>star(i<n)).join('')+'</span>',has('stars',n),cnt(d=>st(d)===n,'stars'))).join('')}</div>`
  +`<h4>Exam year</h4><div class="qfr">${YEARS.map(y=>chip('year',y,y,has('year',y),cnt(d=>yrs(d).includes(y),'year'))).join('')}</div>`:'')
  +`<h4>Section</h4><div class="qfr">${PARTS.map(p=>chip('part',p[0],p[1],has('part',p[0]),cnt(d=>pk(d)===p[0],'part'))).join('')}</div>`
- +`<h4>Card</h4><div class="qfr">${LETTERS.map(l=>chip('letter',l,l+'-box',has('letter',l),cnt(d=>letter(d)===l,'card'))).join('')}</div>`
+ +`<h4>Card</h4><div class="qfr">${LETTERS.map(l=>chip('letter',l,l+'-box',has('letter',l),cnt(d=>hasL(d,l),'card'))).join('')}</div>`
  +`<h4>Specific card</h4><div class="qdd"><button type="button" class="qddb${DD?' o':''}${F.card.length?' has':''}" data-k="dd" aria-expanded="${DD}">${F.card.length?esc(F.card.join(', ')):'Any card'}${chev}</button>${DD?`<div class="qddl"><button type="button" class="${F.card.length?'':'on'}" data-k="card" data-v="">Any card</button>${codes.map(c=>`<button type="button" class="${has('card',c)?'on':''}" data-k="card" data-v="${c}">${c}<span>${cardCnt(c)}</span></button>`).join('')}</div>`:''}</div>`
  +`<h4>Sort</h4><div class="qseg">${[['book','Book order'],['card','Card number']].map(([v,l])=>`<button type="button" class="${F.sort===v?'on':''}" data-k="sort" data-v="${v}" aria-pressed="${F.sort===v}">${l}</button>`).join('')}</div>`
  +`<div class="qfd"><button type="button" class="qfd-h" data-k="fo" aria-expanded="${FO||!!F.topic.length}">Chapter${chev}</button>${FO||F.topic.length?`<div class="qfd-b">${tids.filter(t=>cnt(d=>String(chOf(d))===String(t),'topic')>0).map(t=>`<button type="button" class="qti${has('topic',t)?' on':''}" data-k="topic" data-v="${t}"><b>${esc(CHI[t][2]+' \u00b7 '+CHI[t][1])}</b><span>${cnt(d=>String(chOf(d))===String(t),'topic')}</span></button>`).join('')}</div>`:''}</div>`
@@ -90,7 +93,7 @@ function actChips(){const o=[];
 function apply(){
  const flat=F.sort==='card',act=nAct()||F.q,hit=DATA.filter(d=>pass(d)),ok=new Set(hit.map(d=>d[3])),list=$q('qlist'),fl=$q('qflat');
  list.hidden=flat;fl.hidden=!flat;
- if(flat){const grp={};hit.slice().sort((x,y)=>cardCmp(x[0],y[0])||BOOK[x[3]]-BOOK[y[3]]).forEach(d=>(grp[d[0]]=grp[d[0]]||[]).push(d));
+ if(flat){const grp={};hit.slice().sort((x,y)=>cardCmp(cds(x)[0]||'',cds(y)[0]||'')||BOOK[x[3]]-BOOK[y[3]]).forEach(d=>(cds(d).length?cds(d):['']).forEach(c=>(grp[c]=grp[c]||[]).push(d)));
   fl.innerHTML=Object.keys(grp).sort((a,b)=>(!a)-(!b)||cardCmp(a,b)).map(c=>sec(c||'W',c?'Card '+c:'Written questions (no card)',grp[c],'data-c="'+c+'"')).join('');fl.querySelectorAll('.qi').forEach(lbl)}
  else{list.querySelectorAll('.qi').forEach(i=>i.hidden=!ok.has(i.dataset.id));
   list.querySelectorAll('.qsub').forEach(h=>{let n=h.nextElementSibling,v=false;while(n&&!n.classList.contains('qsub')){if(!n.hidden)v=true;n=n.nextElementSibling}h.hidden=!v});
