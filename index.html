@@ -73,7 +73,7 @@ footer{text-align:center;color:var(--muted);font-size:13px;padding:0 20px 40px}
 .view[hidden]{display:none}.card.hl{border-color:var(--orange)}.card,.sub{scroll-margin-top:130px}#topics,#howto{scroll-margin-top:20px}
 :root[data-theme=dark]{--bg:#000;--panel:#0e0e10;--line:#26262b;--text:#f5f5f7;--muted:#a3a3ad;--lbl:#ff7a59;--chip:#17171a}
 :root[data-theme=light]{--bg:#f7f4f2;--panel:#fff;--line:#e5e0dc;--text:#141414;--muted:#5f5a55;--lbl:#c9281d;--chip:#fff}
-.view:not([hidden]){animation:vin .35s ease}@keyframes vin{from{opacity:0;transform:translateY(8px)}}
+.view:not([hidden]){animation:vin .16s ease-out}@keyframes vin{from{opacity:.6}}
 .nav,.hero-in{position:relative;z-index:1}.hero{isolation:isolate}
 #v-home .hero::after{content:"";position:absolute;inset:-30%;z-index:0;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(40% 40% at 30% 60%,rgba(255,120,40,.5),transparent 70%),radial-gradient(35% 35% at 70% 30%,rgba(194,24,91,.45),transparent 70%);animation:drift 14s ease-in-out infinite alternate}
 @keyframes drift{to{transform:translate(12%,-8%) rotate(25deg) scale(1.15)}}
@@ -1371,8 +1371,8 @@ body.calm .card .ans{padding-left:max(var(--gx,18px),4%);padding-right:max(var(-
 body.calm .xm,body.calm .acts{opacity:.9}
 
 /* ---- Smoother page transitions (views fade and glide in; skipped for reduced motion) ---- */
-@keyframes zzin{from{opacity:0;transform:translateY(12px) scale(.995);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
-.view:not([hidden]){animation:zzin .38s cubic-bezier(.22,.8,.3,1) both}
+@keyframes zzin{from{opacity:.6}to{opacity:1}}
+.view:not([hidden]){animation:zzin .16s ease-out both}
 html.zz-still .view:not([hidden]){animation:none}
 @media(prefers-reduced-motion:reduce){.view:not([hidden]){animation:none}}
 .card.open .ans{animation:zzfade .28s ease both}
@@ -1427,7 +1427,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
 .zz-spark{position:fixed;z-index:90;width:7px;height:7px;margin:-3.5px;border-radius:50%;pointer-events:none;background:var(--c,var(--lbl));animation:zzspark .7s cubic-bezier(.2,.7,.3,1) forwards}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
-.qi-a:not([hidden]),.qs-b:not([hidden]){animation:zzin .3s cubic-bezier(.22,.8,.3,1) both}
+.qi-a:not([hidden]),.qs-b:not([hidden]){animation:rise .2s ease-out both}
 #bnav a[aria-current],#bnav a.on{transition:transform .3s cubic-bezier(.2,1.5,.4,1)}
 #bnav a[aria-current] svg,#bnav a.on svg{animation:zzbob .5s cubic-bezier(.2,1.5,.4,1)}
 @keyframes zzbob{0%{transform:translateY(4px) scale(.85)}60%{transform:translateY(-3px) scale(1.12)}100%{transform:none}}
@@ -1437,7 +1437,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 
 /* ---- Tutorial v2: spotlight, glass card (draggable), pointing hand ---- */
 #zz-tut-fx{position:fixed;inset:0;z-index:68;pointer-events:none}
-#zz-tut-fx .fl{position:fixed;inset:0;background:rgba(18,12,10,.28);-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px);opacity:0;transition:opacity .45s ease}
+#zz-tut-fx .fl{position:fixed;inset:0;background:rgba(18,12,10,.3);opacity:0;transition:opacity .3s ease;pointer-events:none}
 #zz-tut-fx .sp{position:fixed;border-radius:16px;border:2px solid rgba(255,255,255,.95);box-shadow:0 0 0 100vmax rgba(18,12,10,.38);will-change:left,top,width,height}
 #zz-tut-fx.gl .sp{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),width .65s cubic-bezier(.45,0,.15,1),height .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}
 #zz-tut-fx.gl .hd{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}
@@ -2580,7 +2580,7 @@ function fill(i){const a=i.querySelector('.qi-a');if(a.dataset.f)return;a.datase
  a.innerHTML='<div class="ans">'+c.querySelector('.ans').innerHTML+'</div><div class="qa-f"><button class="qlearn" type="button"></button><a href="#/'+d[2]+'/'+id+'">Open in topic page</a></div>';
  a.querySelectorAll('canvas').forEach(x=>x.remove());lbl(i)}
 function lbl(i){const on=S.learned.includes(i.dataset.id),b=i.querySelector('.qlearn');i.classList.toggle('dn',on);if(b){b.setAttribute('aria-pressed',on);b.textContent=on?'Learned ✓':'Mark as learned'}}
-function open1(i,open){fill(i);i.querySelector('.qi-h').setAttribute('aria-expanded',open);i.querySelector('.qi-a').hidden=!open;i.classList.toggle('o',open)}
+function open1(i,open){if(open)fill(i);i.querySelector('.qi-h').setAttribute('aria-expanded',open);i.querySelector('.qi-a').hidden=!open;i.classList.toggle('o',open)}
 function sync(){QV.querySelectorAll('.qi').forEach(lbl);run()}
 QV.querySelectorAll('.qi').forEach(lbl);
 QV.addEventListener('keydown',e=>{const g=e.target.closest&&e.target.closest('.qgo');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();location.hash=g.dataset.go}});
@@ -2593,11 +2593,11 @@ const vis=()=>$q('qflat').hidden?$q('qlist'):$q('qflat');
 $q('qexp').onclick=()=>{const v=vis();v.querySelectorAll('.qs:not([hidden])').forEach(s=>{s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false});v.querySelectorAll('.qi:not([hidden])').forEach(i=>open1(i,true))};
 $q('qcol').onclick=()=>QV.querySelectorAll('.qi').forEach(i=>open1(i,false));
 let QM='q';
-function setMode(m){QM=m;S.pref=S.pref||{};const w=QV.querySelector('.qmain');w.classList.toggle('qm-q',m==='q');
+function setMode(m){if(m===QM&&m==='q'&&setMode._d&&!QV.querySelector('.qi.o'))return;setMode._d=1;QM=m;S.pref=S.pref||{};const w=QV.querySelector('.qmain');w.classList.toggle('qm-q',m==='q');
 QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',true);x.querySelector('.qs-b').hidden=false});
 QV.querySelectorAll('.qi').forEach(i=>open1(i,m==='qa'))}
 window.setQMode=setMode;setMode(QM);
-const colAll=()=>QV.querySelectorAll('.qs').forEach(x=>{x.querySelector('.qs-h').setAttribute('aria-expanded',false);x.querySelector('.qs-b').hidden=true});window.qColAll=colAll;colAll();
+const colAll=()=>QV.querySelectorAll('.qs-h[aria-expanded="true"]').forEach(h=>{h.setAttribute('aria-expanded',false);h.nextElementSibling.hidden=true});addEventListener('beforeprint',()=>QV.querySelectorAll('.qi').forEach(fill));window.qColAll=colAll;colAll();
 $q('qfilter').addEventListener('input',e=>{F.q=e.target.value.trim().toLowerCase();run()});
 run();
 })();
@@ -3113,7 +3113,7 @@ views.forEach(x=>x.hidden=x!==v);document.title=v.dataset.title;
 document.querySelectorAll('.card.hl').forEach(c=>c.classList.remove('hl'));
 if(COLL[p[0]])render(COLL[p[0]]);hook(p);
 const t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');
-if(t){if(t.classList.contains('card')){t.classList.add('hl');if(document.body.classList.contains('quiz'))t.classList.add('open')}t.scrollIntoView()}else window.scrollTo(0,0)}
+if(t){if(t.classList.contains('card')){t.classList.add('hl');if(document.body.classList.contains('quiz'))t.classList.add('open')}t.scrollIntoView({behavior:'instant',block:'start'})}else window.scrollTo({top:0,left:0,behavior:'instant'})}
 addEventListener('hashchange',route);
 try{if(localStorage.getItem('vivaQuiz'))setQuiz(true)}catch(e){}
 route();
@@ -3557,7 +3557,7 @@ function fill(){const s=ST[i];box.querySelector('.tt-n').textContent='Step '+(i+
 /* One step: fade the text out, let the new page render and any scroll finish, then move everything once. */
 function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));const s=ST[i],my=++tok;busy=true;
  const nav=location.hash!==s[2]&&!(s[2]==='#/'&&(location.hash===''||location.hash==='#'));
- if(nav)location.hash=s[2];
+ if(nav){document.documentElement.classList.add('zz-still');location.hash=s[2]}
  if(first)fill();else box.classList.add('sw');
  const t0=performance.now(),minT=first?0:nav?260:160,fixedBar=['#bnav','#tools'].includes(SEL[i]);let lastK='',stable=0,scrolled=false;
  (function wait(){if(my!==tok||!box)return;const el=performance.now()-t0,e=target();
@@ -3568,7 +3568,7 @@ function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));const s=ST[i],my=++
   requestAnimationFrame(wait)})()}
 /* keeps the spotlight glued to its target while the person scrolls */
 function loop(){if(!fx)return;if(!busy){const r=rectOf(),k=keyOf(r);if(k!==lastR)apply(r,'t')}requestAnimationFrame(loop)}
-function end(){tok++;busy=false;clearTimeout(glT);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
+function end(){tok++;busy=false;document.documentElement.classList.remove('zz-still');clearTimeout(glT);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
 function onR(){if(!fx||!box)return;box.classList.add('dg');const r=rectOf();apply(r,'t');place(r);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 function key(e){if(e.key==='Escape'){end()}else if(e.key==='ArrowRight'){e.stopPropagation();e.preventDefault();i<ST.length-1?show(i+1):end()}else if(e.key==='ArrowLeft'){e.stopPropagation();e.preventDefault();show(i-1)}}
 function drag(e){const g=e.target.closest('[data-g]');if(!g||e.button>0)return;const m=box.getBoundingClientRect(),dx=e.clientX-m.left,dy=e.clientY-m.top;g.setPointerCapture&&g.setPointerCapture(e.pointerId);box.classList.add('dg');
