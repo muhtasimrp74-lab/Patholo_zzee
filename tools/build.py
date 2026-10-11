@@ -284,6 +284,9 @@ import ui_patch
 s = ui_patch.patch(s)
 import nav_patch
 s = nav_patch.patch(s)
+# subtopic headings + jump bar + chapter picker (tools/subnav.js, tools/subnav.css); last, so its CSS wins
+_i = s.rfind('</style>'); s = s[:_i] + open(os.path.join(HERE, 'subnav.css'), encoding='utf8').read() + s[_i:]
+_i = s.rfind('</script>'); s = s[:_i] + '\n' + open(os.path.join(HERE, 'subnav.js'), encoding='utf8').read() + s[_i:]
 assert '</head><body>' in s
 s = s.replace('</head><body>', '</head><body>' + STAR_SPRITE, 1)
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
