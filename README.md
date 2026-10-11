@@ -29,6 +29,9 @@ Sources are in `tools/mcq_src/`; run `python3 tools/mcq_parse.py` to regenerate 
 ## Textbook
 The **Textbook** tab (bottom bar) reads the cleaned Robbins chapters from `textbook/` (loaded on demand, cached for offline). Sources are in `tools/textbook_src/chNN.json`; regenerate with `python3 tools/textbook_build.py`, then bump `VERSION` in `sw.js`.
 
+## Robbins order of the questions
+Inside every chapter the questions are grouped as **heading > topic > questions**, in the order Robbins teaches them (Questions tab and each chapter page). The outline and the keyword rules that place each DU written question live in `tools/robbins_outline.py`: edit it to rename or reorder a heading/topic or to move a question, then run `python3 tools/build.py` and bump `VERSION` in `sw.js`. A "Same ..." follow-up always sits under the question before it. Question numbers never change, so saved bookmarks, notes and progress are not affected.
+
 ## Fonts
 All self-hosted in `fonts/` (works offline): DM Serif Display (headings), Newsreader (question text), Hanken Grotesk (body), Caveat (handwriting accents), Inter Greek (Greek letters).
 

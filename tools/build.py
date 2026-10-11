@@ -2,7 +2,8 @@
 """Builds ../index.html from src/index.base.html (original 15 systemic topics) + content.py (GP and HM topics)."""
 import re, json, html, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-import content, robbins_map
+import content, robbins_map, robbins_outline as RO
+UNPLACED = []
 s = open(os.path.join(HERE, 'src/index.base.html'), encoding='utf8').read()
 
 # Parts, in book order. General Pathology and Haematology are filled from content.TOPICS (see content.py);
@@ -67,13 +68,23 @@ for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
     names[tid] = e(tname); short[tid] = e(tname)
     arts = []
     live = []
+    _prev = None
     for _ii, item in enumerate(qs):
         if (tid, _ii) in content.DROPPED: continue      # same question as another card: shown once there
         live.append(item)
         code, q, ans = item[:3]
         n = QID[(_ti, _ii)]
         if len(item) > 3 and item[3] in ('W', 'B'): written['q%d' % n] = item[3]
-        if len(item) > 6: tree_gp['q%d' % n] = list(item[6])
+        pl = None
+        if len(item) > 6:
+            pl = tuple(item[6])
+            if _rank(item) == 2:                      # DU written question: place it under the Robbins heading/topic it belongs to
+                pp = RO.place_du(int(tid[1:]), q, pl[1], _prev)
+                if pp: pl = pp
+                else: UNPLACED.append((tid, q))
+                _prev = pl
+            pl = RO.norm(*pl)
+            tree_gp['q%d' % n] = list(pl)
         stars, refs = (item[4], item[5]) if len(item) > 5 else (0, '')
         ex = item[7] if len(item) > 7 else {}
         if ex:
@@ -82,8 +93,25 @@ for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
             exam['q%d' % n] = [stars, refs, sorted({2000 + int(y) for y in re.findall(r'(?<!\d)(\d{2})(?!\d)', refs)})]
         xm = xm_html(stars, refs, boxes=ex.get('boxes'), hl=ex.get('hl'))
         new_data.append([code, q, tid, 'q%d' % n, tname])
-        arts.append('<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ''.join('<span class="code">%s</span>' % c for c in code.split()), e(q), xm, ans))
-    new_views[tid] = (live, ''.join(arts))
+        arts.append((pl, _ii, '<article class="card" id="q%d"><header tabindex="0">%s<h4>%s</h4>%s</header><div class="ans">%s</div></article>' % (n, ''.join('<span class="code">%s</span>' % c for c in code.split()), e(q), xm, ans)))
+    # Robbins order on the chapter page: heading (h3) > topic (h4, only when the heading has several topics) > questions
+    _own = int(tid[1:]) if tid[1:].isdigit() else None
+    def _key(a):
+        pl_, ii_ = a[0], a[1]
+        if not pl_: return (2, 999, 999, ii_)
+        so, to = RO.sub_order(pl_[0]), RO.topic_order(pl_[0], pl_[1])
+        return (0 if pl_[0] == _own else 1, so.index(pl_[1]) if pl_[1] in so else 500, to.index(pl_[2]) if pl_[2] in to else 500, ii_)
+    arts.sort(key=_key)
+    _multi = {}
+    for a in arts:
+        if a[0]: _multi.setdefault((a[0][0], a[0][1]), set()).add(a[0][2])
+    _out, _ls, _lt = [], None, None
+    for pl_, ii_, h_ in arts:
+        if pl_:
+            if (pl_[0], pl_[1]) != _ls: _out.append('<h3 class="sub">%s</h3>' % e(pl_[1])); _ls = (pl_[0], pl_[1]); _lt = None
+            if len(_multi[_ls]) > 1 and pl_[2] != _lt: _out.append('<h4 class="tsub">%s</h4>' % e(pl_[2])); _lt = pl_[2]
+        _out.append(h_)
+    new_views[tid] = (live, ''.join(_out))
 total = max(QID.values()) - len(content.DROPPED)
 ALIAS = {'q%d' % QID[(content.TOPICS_IDX[a[0]], a[1])]: 'q%d' % QID[(content.TOPICS_IDX[b[0]], b[1])] for a, b in content.ALIAS.items()}
 order = [t for p in PARTS for t in p[3]]  # book order: Part A, B, C
@@ -99,8 +127,16 @@ for c, (t, subs) in content.GP_CHAPTERS.items():
     CHAP.setdefault(c, (t, []))
     CHAP[c][1].extend(x for x in subs if x not in CHAP[c][1])
 CH_ORDER = sorted((c for c in CHAP if c != 'P')) + ['P']
-TREE = {k: list(v) for k, v in robbins_map.SYS.items()}
+TREE = {k: list(RO.norm(*v)) for k, v in robbins_map.SYS.items()}
 TREE.update(tree_gp)
+# headings in Robbins order (robbins_outline.py); any heading that is not listed there goes after the listed ones
+for _c in list(CHAP):
+    _o = RO.sub_order(_c)
+    if _o: CHAP[_c] = (CHAP[_c][0], list(_o))
+for _q, (_c, _s, _t) in TREE.items():
+    if _s not in CHAP[_c][1]: CHAP[_c][1].append(_s); print('heading not in outline:', _c, _s)
+    elif _t not in RO.topic_order(_c, _s) and RO.OUT.get(_c): print('topic not in outline:', _c, _s, '|', _t)
+if UNPLACED: print('UNPLACED questions (add a rule in robbins_outline.py):', UNPLACED)
 
 def jump(cur):
     return '<select class="jump" aria-label="Jump to topic">' + ''.join('<option value="%s"%s>%s  %s</option>' % (t, ' selected' if t == cur else '', NO(t), short[t]) for t in order) + '</select>'
@@ -123,6 +159,8 @@ for tid in [t for t in order if t not in old_cards]:
     views += h + '<main>' + arts + '<p class="none">No question matches your search.</p>' + pager(tid) + '</main></div>'
 for _t in old_cards:  # prev/next links of the original topics follow the full book order
     s = re.sub(r'(id="v-%s".*?)<div class="pager">.*?</div>' % _t, lambda m, _t=_t: m.group(1) + pager(_t), s, count=1, flags=re.S)
+assert "v.querySelectorAll('.sub').forEach(h=>{let e=h.nextElementSibling,vis=false;while(e&&e.classList.contains('card')){if(!e.classList.contains('hide'))vis=true;e=e.nextElementSibling}h.classList.toggle('hide',!vis)});" in s
+s = s.replace("v.querySelectorAll('.sub').forEach(h=>{let e=h.nextElementSibling,vis=false;while(e&&e.classList.contains('card')){if(!e.classList.contains('hide'))vis=true;e=e.nextElementSibling}h.classList.toggle('hide',!vis)});", "v.querySelectorAll('.sub,.tsub').forEach(h=>{const t=h.classList.contains('tsub');let e=h.nextElementSibling,vis=false;while(e&&!e.classList.contains('sub')&&!(t&&e.classList.contains('tsub'))){if(e.classList.contains('card')&&!e.classList.contains('hide'))vis=true;e=e.nextElementSibling}h.classList.toggle('hide',!vis)});", 1)
 s = s.replace('<div class="view" id="v-bookmarks"', views + '<div class="view" id="v-bookmarks"', 1)
 s = re.sub(r'<select class="jump".*?</select>', lambda m: jump(re.search(r'<option value="([^"]+)" selected', m.group()).group(1)), s, flags=re.S)
 s = s.replace('"Histopathology Practical"]];', '"Histopathology Practical"]' + ''.join(', ' + json.dumps(d, ensure_ascii=False) for d in new_data) + '];', 1)
@@ -158,7 +196,7 @@ s = s.replace(_k0, _k0 + _MIG, 1)
 assert 'Ink.load' in s and 'Ink.dump' in s and 'localeCompare(b))' in s
 
 
-QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1]] for c in CH_ORDER]}
+QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1], {s_: RO.topic_order(c, s_) for s_ in CHAP[c][1]}] for c in CH_ORDER]}
 QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
 
 PART_JS = "const PART_OF=%s;\n" % json.dumps(PART_OF) + r"""(function(){const p=prog;prog=function(){p();const L=new Set(S.learned),T={},N={};DATA.forEach(d=>{const k=PART_OF[d[2]];N[k]=(N[k]||0)+1;if(L.has(d[3]))T[k]=(T[k]||0)+1});document.querySelectorAll('[data-pp]').forEach(r=>{const k=r.dataset.pp,c=N[k]?Math.round(100*(T[k]||0)/N[k]):0;r.style.setProperty('--p',c);r.textContent=c+'%'})};prog();
