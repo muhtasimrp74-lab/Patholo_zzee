@@ -1369,6 +1369,30 @@ body.mx-live #v-mcqs .hero{display:none}
 @media(max-width:420px){.mx-hero .mx-kv span{min-width:0}.mx-hero .mx-kv b{font-size:1.15rem}}
 @media(prefers-reduced-motion:reduce){.mx *{transition:none!important}}
 @media print{.mx-act,.mx-top,.mx-rbar,.mx-bm{display:none!important}}
+/* ================= PERFORMANCE (smooth 90/120 Hz scrolling on tablets) =================
+   1. The page backdrop was painted with background-attachment:fixed, which repaints the whole screen on every scroll frame.
+      It now lives on one fixed, GPU-composited layer instead (same look).
+   2. Hundreds of cards each had their own backdrop-filter blur; that is the single most expensive thing a browser can paint.
+      Repeated items now use a plain translucent surface; only the few fixed bars keep the blur (and on touch screens, none).
+   3. Off-screen cards are skipped by the browser (content-visibility) until they scroll near the screen. */
+html body{background-image:none!important;background-attachment:scroll!important}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;transform:translateZ(0);backface-visibility:hidden;background-repeat:no-repeat}
+body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(209,138,112,.28),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(123,128,104,.24),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(185,173,156,.30),transparent 60%)}
+:root[data-theme=dark] body::before,:root:not([data-theme=light]) body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(169,95,69,.22),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(111,117,96,.18),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(143,79,57,.12),transparent 60%)}
+:root[data-theme=light] body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(209,138,112,.28),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(123,128,104,.24),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(185,173,156,.30),transparent 60%)}
+html .topic,html .card,html .qi,html .row,html .qs-h,html .part-h,html .dc,html .pc,html .empty,html .stats,html .ph,html .soon,html .nh-prog,
+html .nh-row a,html .nh-g div,html .pager a,html .card header,html .qi-h,html .qb,html .act,html .qlearn,html .qf-clr,html .gb.ghost,html .blk+.blk{-webkit-backdrop-filter:none;backdrop-filter:none}
+html .card,html .qi,html .row,html .topic{content-visibility:auto;contain-intrinsic-size:auto 150px}
+html .card.open,html .card:target,html .qi.o{content-visibility:visible}
+html .nav,html .bar,html .nh-bar,html #bnav,html #tools,html .toast,html .mx-top{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+@media (hover:none),(pointer:coarse){
+ html .nav,html .bar,html .nh-bar,html #bnav,html #tools,html .toast,html .mx-top,html .dp,html #nhr,html .nh-toc,html .qddl,html #ink{-webkit-backdrop-filter:none;backdrop-filter:none;background-color:var(--panel)}
+ html #v-home .hero::after{animation:none;mix-blend-mode:normal}
+}
+html{-webkit-tap-highlight-color:transparent;text-size-adjust:100%}
+html a,html button,html summary,html .qi-h,html .card header{touch-action:manipulation}
+html .card,html .qi,html .topic,html .row{transition-property:box-shadow,border-color,transform,opacity}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1C1A19" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F3EBDD" media="(prefers-color-scheme: light)">
