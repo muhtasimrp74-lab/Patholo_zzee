@@ -102,6 +102,7 @@ function apply(){
   fl.innerHTML=Object.keys(grp).sort((a,b)=>(!a)-(!b)||cardCmp(a,b)).map(c=>sec(c||'W',c?'Card '+c:'Written questions (no card)',grp[c],'data-c="'+c+'"')).join('');fl.querySelectorAll('.qi').forEach(lbl)}
  else{list.querySelectorAll('.qi').forEach(i=>i.hidden=!ok.has(i.dataset.id));
   list.querySelectorAll('.qsub,.qtop').forEach(h=>{const t=h.classList.contains('qtop');let n=h.nextElementSibling,v=false;while(n&&!n.classList.contains('qsub')&&!(t&&n.classList.contains('qtop'))){if(n.classList.contains('qi')&&!n.hidden)v=true;n=n.nextElementSibling}h.hidden=!v});
+  if(!act&&window.__qa!==false&&window.qColAll)window.qColAll();window.__qa=!!act;
   list.querySelectorAll('.qs').forEach(s=>{const v=s.querySelectorAll('.qi:not([hidden])').length;s.hidden=!v;if(act&&v){s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false}})}
  $q('qnone').hidden=!!hit.length;
  $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
