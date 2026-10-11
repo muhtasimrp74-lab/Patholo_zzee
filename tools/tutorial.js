@@ -17,7 +17,7 @@ const ST=[
 /* selectors: spotlight target per step (first match inside the visible page, else anywhere) */
 const SEL={1:'#bnav',2:'.qtools',4:'.card>header',5:'#tools',6:'[data-tt=ink]',10:'[href="#/bookmarks"]',11:'[onclick="exp()"]'};
 const HAND='<svg viewBox="0 0 24 24"><path d="M9.2 11.2V5.4a1.6 1.6 0 0 1 3.2 0v5.2l4.4.9a2 2 0 0 1 1.6 2.3l-.7 4.2a3.3 3.3 0 0 1-3.2 2.8H10a3 3 0 0 1-2.4-1.2l-3-3.8a1.5 1.5 0 0 1 2.2-2l1.4 1.5z" fill="#fff" stroke="#241a14" stroke-width="1.3" stroke-linejoin="round"/></svg>';
-let i=0,box=null,fx=null,tg=null,tm=null,pos=null,moved=false,lastR='',lastRect=null;
+let i=0,box=null,fx=null,pos=null,moved=false,lastR='',lastRect=null,tok=0,busy=false,glT=0;
 const V=()=>({w:innerWidth,h:innerHeight});
 function target(){const s=SEL[i];if(!s)return null;const e=document.querySelector('.view:not([hidden]) '+s)||document.querySelector(s);if(!e||!e.getClientRects().length)return null;return e}
 function clampBox(x,y){const v=V(),w=box.offsetWidth,h=box.offsetHeight;return [Math.max(8,Math.min(v.w-w-8,x)),Math.max(8,Math.min(v.h-h-8,y))]}
@@ -28,22 +28,37 @@ function place(r){lastRect=r;const v=V(),w=box.offsetWidth,h=box.offsetHeight;le
  else{x=Math.min(Math.max(8,r.left+r.width/2-w/2),v.w-w-8);y=(r.top+r.height/2>v.h/2)?Math.max(8,r.top-h-26):Math.min(v.h-h-8,r.bottom+26);
   if(y+h>r.top-10&&y<r.bottom+10){y=(r.top>v.h-r.bottom)?8:v.h-h-8}}
  [x,y]=clampBox(x,y);box.style.transform='translate('+Math.round(x)+'px,'+Math.round(y)+'px)'}
-function paint(){if(!fx)return;const v=V(),e=target(),sp=fx.querySelector('.sp'),fl=fx.querySelector('.fl'),hd=fx.querySelector('.hd');let r=null;
- if(e){const b=e.getBoundingClientRect(),t=Math.max(b.top,0),bt=Math.min(b.bottom,v.h),l=Math.max(b.left,0),rt=Math.min(b.right,v.w);if(bt-t>8&&rt-l>8)r={left:l-6,top:t-6,width:rt-l+12,height:bt-t+12,right:rt+6,bottom:bt+6}}
- const key=r?[r.left,r.top,r.width,r.height,v.w,v.h].map(Math.round).join():'n'+v.w+v.h;
- if(key!==lastR){lastR=key;
-  if(r){sp.style.cssText='opacity:1;left:'+r.left+'px;top:'+r.top+'px;width:'+r.width+'px;height:'+r.height+'px';fl.style.opacity=0;
-   const below=r.bottom<v.h-70,hx=Math.min(v.w-40,Math.max(30,r.left+r.width*.6));hd.className='hd'+(below?'':' up');hd.style.cssText='opacity:1;left:'+hx+'px;top:'+(below?r.bottom-2:r.top-40)+'px'}
-  else{sp.style.opacity=0;hd.style.opacity=0;fl.style.opacity=1}
-  place(r)}}
+/* spotlight rectangle of the current target, clipped to the screen (null = no target) */
+function rectOf(){const v=V(),e=target();if(!e)return null;const b=e.getBoundingClientRect(),t=Math.max(b.top,0),bt=Math.min(b.bottom,v.h),l=Math.max(b.left,0),rt=Math.min(b.right,v.w);
+ if(bt-t>8&&rt-l>8)return{left:l-6,top:t-6,width:rt-l+12,height:bt-t+12,right:rt+6,bottom:bt+6};return null}
+const keyOf=r=>r?[r.left,r.top,r.width,r.height].map(Math.round).join():'n';
+/* mode g = glide to a new step (spotlight, hand and card move together), t = follow the page while it scrolls (instant, no lag) */
+function apply(r,mode){if(!fx)return;const v=V(),sp=fx.querySelector('.sp'),fl=fx.querySelector('.fl'),hd=fx.querySelector('.hd');lastR=keyOf(r);
+ fx.classList.toggle('gl',mode==='g');clearTimeout(glT);if(mode==='g')glT=setTimeout(()=>fx&&fx.classList.remove('gl'),800);
+ if(r){const hidden=sp.style.opacity!=='1';
+  /* first appearance: appear in place and fade in instead of flying in from the old spot */
+  sp.style.transition=hd.style.transition=hidden?'opacity .45s ease':'';
+  sp.style.opacity=1;sp.style.left=r.left+'px';sp.style.top=r.top+'px';sp.style.width=r.width+'px';sp.style.height=r.height+'px';fl.style.opacity=0;
+  const below=r.bottom<v.h-70,hx=Math.min(v.w-40,Math.max(30,r.left+r.width*.6));hd.classList.toggle('up',!below);hd.style.opacity=1;hd.style.left=hx+'px';hd.style.top=(below?r.bottom-2:r.top-40)+'px'}
+ else{sp.style.transition=hd.style.transition='';sp.style.opacity=0;hd.style.opacity=0;fl.style.opacity=1}}
 function fill(){const s=ST[i];box.querySelector('.tt-n').textContent='Step '+(i+1)+' / '+ST.length;box.querySelector('b').textContent=s[0];box.querySelector('p').textContent=s[1];box.querySelector('.pg i').style.width=Math.round((i+1)/ST.length*100)+'%';
  box.querySelector('[data-a=b]').disabled=!i;box.querySelector('[data-a=n]').textContent=i===ST.length-1?'Done':'Next'}
-function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));const s=ST[i];lastR='';
- if(location.hash!==s[2]&&!(s[2]==='#/'&&(location.hash===''||location.hash==='#')))location.hash=s[2];
- if(first)fill();else{box.classList.add('sw');setTimeout(()=>{if(box){fill();box.classList.remove('sw');place(lastRect)}},170)}
- setTimeout(()=>{const e=target();if(e&&!['#bnav','#tools'].includes(SEL[i])){const b=e.getBoundingClientRect();if(b.top<80||b.bottom>V().h-80)e.scrollIntoView({block:'center',behavior:'smooth'})}paint()},300);paint()}
-function end(){clearInterval(tm);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
-function onR(){lastR='';setTimeout(paint,120);setTimeout(()=>{lastR='';paint()},450)}
+/* One step: fade the text out, let the new page render and any scroll finish, then move everything once. */
+function show(n,first){i=Math.max(0,Math.min(ST.length-1,n));const s=ST[i],my=++tok;busy=true;
+ const nav=location.hash!==s[2]&&!(s[2]==='#/'&&(location.hash===''||location.hash==='#'));
+ if(nav)location.hash=s[2];
+ if(first)fill();else box.classList.add('sw');
+ const t0=performance.now(),minT=first?0:nav?260:160,fixedBar=['#bnav','#tools'].includes(SEL[i]);let lastK='',stable=0,scrolled=false;
+ (function wait(){if(my!==tok||!box)return;const el=performance.now()-t0,e=target();
+  if(e&&!scrolled&&el>=minT){scrolled=true;if(!fixedBar){const b=e.getBoundingClientRect();if(b.top<80||b.bottom>V().h-80){e.scrollIntoView({block:'center',behavior:'smooth'});stable=0}}}
+  const r=rectOf(),k=keyOf(r);stable=k===lastK?stable+1:0;lastK=k;
+  const ready=!SEL[i]||r||el>1000;
+  if(el>=minT&&ready&&(stable>=4||el>1200)){fill();apply(r,'g');place(r);box.classList.remove('sw');busy=false;return}
+  requestAnimationFrame(wait)})()}
+/* keeps the spotlight glued to its target while the person scrolls */
+function loop(){if(!fx)return;if(!busy){const r=rectOf(),k=keyOf(r);if(k!==lastR)apply(r,'t')}requestAnimationFrame(loop)}
+function end(){tok++;busy=false;clearTimeout(glT);fx&&fx.remove();box&&box.remove();fx=box=null;removeEventListener('keydown',key,true);removeEventListener('resize',onR);removeEventListener('orientationchange',onR);try{S.pref=S.pref||{};S.pref.tut=1;save()}catch(e){}}
+function onR(){if(!fx||!box)return;box.classList.add('dg');const r=rectOf();apply(r,'t');place(r);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 function key(e){if(e.key==='Escape'){end()}else if(e.key==='ArrowRight'){e.stopPropagation();e.preventDefault();i<ST.length-1?show(i+1):end()}else if(e.key==='ArrowLeft'){e.stopPropagation();e.preventDefault();show(i-1)}}
 function drag(e){const g=e.target.closest('[data-g]');if(!g||e.button>0)return;const m=box.getBoundingClientRect(),dx=e.clientX-m.left,dy=e.clientY-m.top;g.setPointerCapture&&g.setPointerCapture(e.pointerId);box.classList.add('dg');
  const mv=ev=>{const p=clampBox(ev.clientX-dx,ev.clientY-dy);pos=p;moved=true;box.style.transform='translate('+Math.round(p[0])+'px,'+Math.round(p[1])+'px)'};
@@ -55,7 +70,7 @@ function start(){if(box)return;moved=false;pos=null;
  box.innerHTML='<div class="gr" data-g="1"><span class="tt-n"></span></div><div class="bd"><b></b><p></p></div><div class="pg"><i></i></div><div class="tt-b"><button type="button" data-a="x">Skip</button><span></span><button type="button" data-a="b">Back</button><button type="button" class="pri" data-a="n">Next</button></div>';document.body.append(box);
  box.onclick=e=>{const a=e.target.dataset.a;if(a==='n')i<ST.length-1?show(i+1):end();else if(a==='b')show(i-1);else if(a==='x')end()};
  box.addEventListener('pointerdown',drag);
- addEventListener('keydown',key,true);addEventListener('resize',onR);addEventListener('orientationchange',onR);tm=setInterval(paint,120);show(0,true);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
+ addEventListener('keydown',key,true);addEventListener('resize',onR);addEventListener('orientationchange',onR);show(0,true);requestAnimationFrame(loop);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 window.zzTutorial=start;
 const g=$('#v-menu .mgrid');
 if(g){const b=document.createElement('button');b.type='button';b.className='mtile';b.id='tut-open';b.textContent='Tutorial';b.onclick=start;g.prepend(b)}
