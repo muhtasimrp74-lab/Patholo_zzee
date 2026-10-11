@@ -4,6 +4,9 @@ import re, json, html, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import content, robbins_map, robbins_outline as RO
 UNPLACED = []
+_all_q = {it[1] for t in content.TOPICS for it in t[3]}
+for _k in content.ANSWERS:
+    if _k not in _all_q: print('answers.md: no question matches heading ->', _k[:80])
 s = open(os.path.join(HERE, 'src/index.base.html'), encoding='utf8').read()
 
 # Parts, in book order. General Pathology and Haematology are filled from content.TOPICS (see content.py);

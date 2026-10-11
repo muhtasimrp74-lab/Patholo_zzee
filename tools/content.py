@@ -57,6 +57,32 @@ def TB(head, rows):
 #   * Until an answer exists, the question shows "Answer to be added."
 import os, re as _re
 ANSWERS = {}
+# ---- answers.md: one "## <exact question text>" heading per question, then the answer in simple markdown ----
+def _md(t):
+    import html as _h
+    inl = lambda s: _re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', _h.escape(s, quote=False))
+    out, blocks = [], _re.split(r'\n\s*\n', t.strip())
+    for blk in blocks:
+        ls = [l.rstrip() for l in blk.split('\n') if l.strip()]
+        if not ls: continue
+        if all(l.lstrip().startswith(('- ', '* ')) for l in ls):
+            out.append('<ul>' + ''.join('<li>%s</li>' % inl(l.lstrip()[2:]) for l in ls) + '</ul>')
+        elif all(_re.match(r'\d+[.)] ', l.lstrip()) for l in ls):
+            out.append('<ol>' + ''.join('<li>%s</li>' % inl(_re.sub(r'^\d+[.)] ', '', l.lstrip())) for l in ls) + '</ol>')
+        elif all(l.lstrip().startswith('|') for l in ls):
+            rows = [[c.strip() for c in l.strip().strip('|').split('|')] for l in ls if not _re.match(r'^[\s|:-]+$', l)]
+            th = ''.join('<th>%s</th>' % inl(c) for c in rows[0])
+            out.append('<div class="tw"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (th, ''.join('<tr>' + ''.join('<td>%s</td>' % inl(c) for c in r) + '</tr>' for r in rows[1:])))
+        else:
+            p = inl(' '.join(l.strip() for l in ls))
+            p = _re.sub(r'^<strong>([^<]+:)</strong>', r'<strong class="lbl">\1</strong>', p)
+            out.append('<p>%s</p>' % p)
+    return ''.join(out)
+_AMD = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'answers.md')
+if os.path.exists(_AMD):
+    for _sec in _re.split(r'(?m)^## ', open(_AMD, encoding='utf8').read())[1:]:
+        _q, _, _body = _sec.partition('\n')
+        if _body.strip(): ANSWERS[_q.strip()] = _md(_body)
 GP_CHAPTERS = {}   # chapter number -> (title, [sub-chapters in order of appearance])
 
 def _gp_topics():

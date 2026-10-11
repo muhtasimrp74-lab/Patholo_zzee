@@ -47,3 +47,9 @@ General Pathology and Haematology box-viva questions live on the A-cards. Source
 
 ### Questions on both lists are merged
 If the same question is on the DU written list and the box-viva cards (same kind of question about the same subject, in the same chapter; matched by `tools/dupmerge.py`), the site shows it once: the A-card tags and the `DU-…` exam tags together, stars added, filed under both Viva and Written. Every question keeps its numbering; a card that was merged away is listed in `QMETA.alias` and notes, bookmarks and progress saved on it move to the surviving card on next load (handwriting ink does not move). To stop two questions merging, reword one in its source file.
+
+## Adding answers (one at a time)
+1. `python3 tools/find.py <words>` lists matching questions (`[ no answer ]` = still empty). `--add 3` appends a blank block for result 3 to `tools/answers.md`.
+2. Write the answer under its `## <exact question>` heading in `tools/answers.md` (markdown: bold, bullets, numbered lists, tables).
+3. Push. The deploy workflow rebuilds the site and refreshes the cache itself; locally run `python3 tools/build.py`. A heading that matches no question is reported in the build log.
+You can also edit `tools/answers.md` directly on github.com from your phone. Quick personal notes and handwriting stay available in the app (Notes, Ink).
