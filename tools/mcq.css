@@ -159,3 +159,10 @@ body.mx-live #v-mcqs .hero{display:none}
 @media(max-width:420px){.mx-hero .mx-kv span{min-width:0}.mx-hero .mx-kv b{font-size:1.15rem}}
 @media(prefers-reduced-motion:reduce){.mx *{transition:none!important}}
 @media print{.mx-act,.mx-top,.mx-rbar,.mx-bm{display:none!important}}
+
+/* themed dropdown for the chapter select (replaces the native Android popup) */
+.mx-rbar .dd{flex:1 1 220px;min-width:0;max-width:none}
+.mx-rbar .db{min-height:40px;font-weight:600;font-size:.88rem}
+.mx-rbar .dp{left:0;right:auto;width:max(100%,min(92vw,420px))}
+.mx-rbar .do{align-items:flex-start;white-space:normal}
+@media(max-width:700px){.mx-rbar .dd{flex-basis:100%}.mx-rbar .dp{width:100%}}
