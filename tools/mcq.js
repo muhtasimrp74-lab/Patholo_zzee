@@ -135,26 +135,45 @@
 
  /* ---------- home ---------- */
  function stats(){const p=P();let att=0,right=0,wrong=0;Q.forEach(q=>{const x=p[q.h];if(x&&x.n){att++;x.r?right++:wrong++}});return{att,right,wrong}}
- function home(){
-  const m=ST(),s=stats(),n=Q.length,pct=n?Math.round(s.att/n*100):0,acc=s.att?Math.round(s.right/s.att*100):0;
-  const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length?sv:null;
-  const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=P()[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
+function home(){
+  const m=ST(),p=P(),n=Q.length;
+  let att=0,right=0,wrong=0;const ty=[[0,0],[0,0]];
+  Q.forEach(q=>{const x=p[q.h];if(!x||!x.n)return;att++;ty[q.y][0]++;if(x.r){right++;ty[q.y][1]++}else wrong++});
+  const left=n-att,acc=att?Math.round(right/att*100):0,sba=ty[0][0]?Math.round(ty[0][1]/ty[0][0]*100):null,tf=ty[1][0]?Math.round(ty[1][1]/ty[1][0]*100):null;
+  const goal=m.goal||20,td=m.day.d===today()?m.day.n:0,gp=Math.min(100,Math.round(td/goal*100));
+  const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length&&!sv.review?sv:null;
+  const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=p[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
    return{ci,name:c[0],t,n:t.reduce((x,y)=>x+y.n,0),a:t.reduce((x,y)=>x+y.a,0),r:t.reduce((x,y)=>x+y.r,0)}});
   const weak=byC.flatMap(c=>c.t.map(t=>({...t,ci:c.ci}))).filter(t=>t.a>=3&&t.r/t.a<.7).sort((a,b)=>a.r/a.a-b.r/b.a).slice(0,4);
-  const tile=(a,t,sub,x)=>`<button type="button" class="mx-tile" data-a="${a}" ${x||''}><b>${t}</b><small>${sub}</small></button>`;
-  const pp=PAPERS.map(g=>{const qs=Q.filter(q=>(q.g||[]).includes(g)),h=m.hist.find(x=>x.scope==='Paper '+g);return `<button type="button" class="mx-paper" data-a="paper" data-g="${E(g)}"><b>${E(g)}</b><small>${qs.length} questions${h?` · last ${Math.round(h.ok/h.n*100)}%`:''}</small></button>`}).join('');
-  M.innerHTML=`<section class="mx-hero"><div><p class="mx-big"><b>${n}</b> questions</p><p class="mx-sub">${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False</p></div>
-    <div class="mx-meter"><i style="--w:${pct}%"></i></div>
-    <div class="mx-kv"><span><b>${s.att}</b>attempted</span><span><b>${s.att?acc+'%':'–'}</b>answered right</span><span><b>${s.wrong}</b>to revisit</span><span><b>${m.day.d===today()?m.day.n:0}</b>today</span></div></section>
+  const tile=(a,t,sub,x,cls,badge)=>`<button type="button" class="mx-tile ${cls||''}" data-a="${a}" ${x||''}><b>${t}${badge?`<em>${badge}</em>`:''}</b><small>${sub}</small></button>`;
+  const best=g=>{let r=null;m.hist.forEach(h=>{if(h.scope==='Paper '+g&&h.n){const v=Math.round(h.ok/h.n*100);if(r===null||v>r)r=v}});return r};
+  const pp=PAPERS.map(g=>{const qs=Q.filter(q=>(q.g||[]).includes(g)),bs=best(g);return `<button type="button" class="mx-paper${bs!==null?' done':''}" data-a="paper" data-g="${E(g)}"><b>${E(g)}</b><small>${qs.length} questions${bs!==null?` · best ${bs}%`:''}</small></button>`}).join('');
+  /* one suggestion for what to do next */
+  let nx=null;
+  if(wrong>=5)nx=['mist','','','Redo your missed questions',wrong+' questions you got wrong last time. Fixing these is the fastest way to gain marks.'];
+  else if(weak.length)nx=['topic',weak[0].ci,weak[0].ti,'Strengthen '+E(weak[0].name),Math.round(weak[0].r/weak[0].a*100)+'% right so far. A short set will lift it.'];
+  else if(!att)nx=['quick','','','Start with Quick 10','Ten mixed questions, answer shown after each. A good way to find your level.'];
+  else nx=['mock','','','Sit a mock paper','20 questions in 30 minutes, marked at the end.'];
+  const seg=(r,w)=>`<span class="mx-st" role="img" aria-label="${right} right, ${wrong} missed, ${left} not tried"><u class="r" style="width:${r}%"></u><u class="w" style="width:${w}%"></u></span>`;
+  M.innerHTML=`<section class="mx-dash"><div class="mx-acc"><p class="mx-eb">Your accuracy</p><div class="mx-pc">${att?acc:'–'}<small>${att?'%':''}</small></div>${seg(n?right/n*100:0,n?wrong/n*100:0)}
+    <p class="mx-leg"><span><i class="r"></i>${right} right</span><span><i class="w"></i>${wrong} missed</span><span><i></i>${left} not tried</span></p>
+    <div class="mx-kv"><span><b>${att}<small> / ${n}</small></b>attempted</span><span><b>${sba===null?'–':sba+'%'}</b>SBA right</span><span><b>${tf===null?'–':tf+'%'}</b>True / False right</span></div></div>
+   <div class="mx-day"><p class="mx-eb">Today</p><div class="mx-pc">${td}<small> / ${goal}</small></div><span class="mx-st g"><u class="r" style="width:${gp}%"></u></span>
+    <p class="mx-sub2">${td>=goal?'Daily goal reached. Anything more is a bonus.':(goal-td)+' more to reach today\'s goal.'}</p>
+    <div class="mx-goal" role="group" aria-label="Daily goal"><span>Goal</span>${[10,20,30,50].map(v=>`<button type="button" data-a="goal" data-v="${v}" aria-pressed="${v===goal}">${v}</button>`).join('')}</div></div></section>
+   <p class="mx-about">${n} questions · ${Q.filter(q=>q.s==='P').length} from past papers · ${Q.filter(q=>q.s==='N').length} practice bank · ${Q.filter(q=>!q.y).length} SBA · ${Q.filter(q=>q.y).length} True / False</p>
    ${svv?`<button type="button" class="mx-resume" data-a="resume"><span><small>Pick up where you left off</small>${E(svv.scope)} · question ${svv.i+1} of ${svv.ids.length}</span>${ic.go}</button>`:''}
-   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each')}${tile('custom','Custom practice','Pick topics, type, paper, status')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end')}${tile('read','Reading mode','All questions with the answers shown')}${tile('mist','Missed questions','Redo what you got wrong',s.wrong?'':'disabled')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled')}</div>
-   ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
-   <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span><i style="--w:${(c.a/c.n*100).toFixed(0)}%"></i></summary>
+   <button type="button" class="mx-next" data-a="${nx[0]}" ${nx[1]!==''?`data-c="${nx[1]}" data-t="${nx[2]}"`:''}><span><small>Suggested next</small><b>${nx[3]}</b>${nx[4]}</span>${ic.go}</button>
+   <p class="mx-h">Practise</p>
+   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Missed questions','Redo what you got wrong',wrong?'':'disabled','t5',wrong||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}</div>
+   ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><small>${t.r}/${t.a}</small><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
+   <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span>${seg2(c)}</summary>
     <div class="mx-tps">${c.t.map(t=>`<div class="mx-tp"><span>${E(t.name)}<small>${t.n} · ${t.a?Math.round(t.r/t.a*100)+'% right':'new'}</small></span><button type="button" data-a="topic" data-c="${c.ci}" data-t="${t.ti}">Practise</button><button type="button" data-a="topicread" data-c="${c.ci}" data-t="${t.ti}">Read</button></div>`).join('')}
     <div class="mx-tp all"><span>Whole chapter</span><button type="button" data-a="chap" data-c="${c.ci}">Practise</button><button type="button" data-a="chapread" data-c="${c.ci}">Read</button></div></div></details>`).join('')}</div>
-   <p class="mx-h">Past papers</p><p class="mx-note">Each paper is 20 questions from one sitting. Sit it as a timed exam.</p><div class="mx-papers">${pp}</div>
+   <p class="mx-h">Past papers</p><p class="mx-note">Each paper is 20 questions from one sitting. Sit it as a timed exam. Your best score is shown once you have sat one.</p><div class="mx-papers">${pp}</div>
    ${m.hist.length?`<p class="mx-h">Recent sessions</p><div class="mx-hist">${m.hist.slice(0,5).map(h=>`<div><span>${E(h.scope)}<small>${new Date(h.ts).toLocaleDateString('en-GB',{day:'numeric',month:'short'})} · ${h.mode==='exam'?'timed':'practice'} · ${fmt(h.el)}</small></span><b>${h.ok}/${h.n}</b></div>`).join('')}</div>`:''}
-   <div class="mx-foot"><button type="button" class="mx-link" data-a="resetp">Reset MCQ progress</button></div>`}
+   <div class="mx-foot"><button type="button" class="mx-link" data-a="resetp">Reset MCQ progress</button></div>`;
+  function seg2(c){const r=c.n?c.r/c.n*100:0,w=c.n?(c.a-c.r)/c.n*100:0;return `<span class="mx-st sm"><u class="r" style="width:${r}%"></u><u class="w" style="width:${w}%"></u></span>`}}
 
  /* ---------- custom practice (faceted filter) ---------- */
  function chip(f,v,label,x){return `<label class="mx-f"><input type="checkbox" data-f="${f}" data-v="${E(v)}"><span>${label}</span><em></em></label>`}
@@ -225,6 +244,7 @@
    case 'read':reset();readN=30;readCh=-1;saveF();nav('read');break;
    case 'mist':start(shuf(Q.filter(q=>{const x=P()[q.h];return x&&x.n&&!x.r}).map(q=>q.h)),{scope:'Missed questions'});break;
    case 'saved':start(shuf(ST().bm.filter(h=>BY[h])),{scope:'Bookmarks'});break;
+   case 'goal':{const m=ST();m.goal=+b.dataset.v;save();home();break}
    case 'resume':sess=ST().sess;if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
    case 'topic':start(topicIds(+b.dataset.c,+b.dataset.t).slice(0,25),{scope:CH[b.dataset.c][1][b.dataset.t]});break;
    case 'chap':start(topicIds(+b.dataset.c).slice(0,25),{scope:CH[b.dataset.c][0]});break;
