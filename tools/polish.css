@@ -75,3 +75,15 @@ html.zz-still .view:not([hidden]){animation:none}
  :root[data-theme=light][data-tone=sepia] body{background:#fff!important;background-image:none!important}
  body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{max-width:none;line-height:1.5}
  #zz-listen,.zsk{display:none!important}}
+
+/* ---- Tutorial ---- */
+#zz-tut{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(150px + env(safe-area-inset-bottom,0px));z-index:70;width:min(440px,calc(100vw - 24px));padding:16px 18px 14px;border-radius:20px;background:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:var(--sh2);color:var(--text);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);animation:zzin .3s ease both}
+#zz-tut .tt-n{font:600 11px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--lbl)}
+#zz-tut b{display:block;font:400 22px var(--disp);margin:4px 0 6px}#zz-tut p{margin:0 0 12px;font-size:.92rem;line-height:1.55;color:var(--muted)}
+#zz-tut .tt-dots{display:flex;gap:5px;margin-bottom:12px}#zz-tut .tt-dots i{width:6px;height:6px;border-radius:50%;background:var(--line2)}#zz-tut .tt-dots i.on{background:var(--lbl);width:16px;border-radius:3px}
+#zz-tut .tt-b{display:flex;gap:8px;align-items:center}#zz-tut .tt-b span{flex:1}
+#zz-tut button{font:600 13px var(--body);padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--text);cursor:pointer}
+#zz-tut button.pri{background:var(--btn);border-color:transparent;color:#fff}#zz-tut button[disabled]{opacity:.4;cursor:default}
+#zz-tut button[data-a=x]{background:none;border-color:transparent;color:var(--muted)}
+.zz-tut-hi{outline:3px solid var(--lbl)!important;outline-offset:3px;border-radius:14px;transition:outline-color .3s}
+@media print{#zz-tut{display:none}}
