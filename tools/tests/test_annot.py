@@ -157,6 +157,20 @@ class AnnotBrowser(unittest.TestCase):
         d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), len(marks))
         r = rects()[0][0]; pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[r[0] + 3, r[1] + r[3] / 2], [r[0] + 20, r[1] + r[3] / 2]], type='mouse')
         self.assertEqual(self.objs(pg, cid), len(marks) - 1, 'eraser removes a highlighted span it touches'); self.assertEqual(self.errs, [])
+    def test_text_notes_type_edit_wrap_undo_erase_and_backup(self):
+        pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='tx'}")
+        tap = lambda x, y: (pg.evaluate("""([s,x,y])=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),mk=n=>new PointerEvent(n,{pointerId:5,pointerType:'mouse',isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+y,buttons:n==='pointerdown'?1:0,button:0});h.dispatchEvent(mk('pointerdown'));document.dispatchEvent(mk('pointerup'))}""", [sel, x, y]), pg.wait_for_timeout(150))
+        tap(60, 50); self.assertEqual(pg.locator('.an-tx').count(), 1); pg.fill('.an-tx', 'Remember: ' + 'long note ' * 30); pg.evaluate("()=>document.activeElement.blur()"); pg.wait_for_timeout(200)
+        o = pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,o.x.length,Object.keys(o.q).join()])", 'q:' + cid); self.assertEqual(o, [['text', 'box', len(('Remember: ' + 'long note ' * 30).rstrip()), 'x,y']])
+        lay = pg.evaluate("k=>{const L=Annot._debug.layer(k),o=Annot._debug.docs()[k].objs[0],t=Annot._debug.textLayout(L,o);return [t.lines.length,t.x+t.w,L.host.clientWidth]}", 'q:' + cid); self.assertGreater(lay[0], 1, 'long text wraps'); self.assertLessEqual(lay[1], lay[2] + 1)
+        tap(62, 52); self.assertEqual(pg.input_value('.an-tx').startswith('Remember'), True); pg.fill('.an-tx', 'Edited'); pg.evaluate("()=>document.activeElement.blur()"); pg.wait_for_timeout(200)
+        self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>o.x)", 'q:' + cid), ['Edited']); pg.keyboard.press('Control+z')
+        self.assertTrue(pg.evaluate("k=>Annot._debug.docs()[k].objs[0].x.startsWith('Remember')", 'q:' + cid), 'undo restores the previous text'); pg.keyboard.press('Control+Shift+z')
+        tap(62, 52); pg.fill('.an-tx', ''); pg.evaluate("()=>document.activeElement.blur()"); pg.wait_for_timeout(200); self.assertEqual(self.objs(pg, cid), 0, 'emptying a note deletes it'); pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 1)
+        tap(300, 200); pg.keyboard.press('Escape'); pg.wait_for_timeout(100); self.assertEqual(self.objs(pg, cid), 1, 'Escape discards a new note')
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), 1)
+        r = pg.evaluate("k=>{const L=Annot._debug.layer(k),o=Annot._debug.docs()[k].objs[0],t=Annot._debug.textLayout(L,o);return [t.x,t.y,t.h]}", 'q:' + cid)
+        pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[r[0] + 2, r[1] + r[2] / 2], [r[0] + 14, r[1] + r[2] / 2]], type='mouse'); self.assertEqual(self.objs(pg, cid), 0, 'eraser removes a text note'); self.assertEqual(self.errs, [])
     def test_wet_stroke_benchmark_has_no_long_frames(self):
         pg = self.page(); cid, sel = self.open_card(pg)
         r = pg.evaluate("""async s=>{const h=document.querySelector(s),b=h.getBoundingClientRect(),mk=(n,x,y)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,clientX:b.left+x,clientY:b.top+y,pressure:.5,buttons:1});
