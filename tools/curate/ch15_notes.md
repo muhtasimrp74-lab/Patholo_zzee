@@ -7,3 +7,5 @@ Built with the shared engine + `tools/curate/ch15.py`. Text comes from `tools/te
 1. Tables 15.1, 15.2, 15.5, 15.7, 15.9 and 15.12 had no rows in the source: caption-only; leftover entries may appear as plain text near them.
 2. Headings lost in extraction, so their boxes sit under the nearest heading: Atelectasis/Pulmonary Edema subtypes, Pneumoconioses subtypes (coal workers' pneumoconiosis, silicosis, asbestos-related disease), Tuberculosis and other chronic pneumonias, the individual carcinoma types (adenocarcinoma, squamous cell, small cell), Pleural effusion subtypes.
 3. Asthma and sarcoidosis figure captions may start mid-sentence "(A) ..." after a split.
+
+**Verified (second pass):** the added heading "Bronchiectasis" was placed above its Pathogenesis heading, which left the Bronchiectasis intro paragraph and its causes list under Asthma. Moved to before the intro paragraph (source block 185). The heading text itself comes from the Robbins outline, not from the source.

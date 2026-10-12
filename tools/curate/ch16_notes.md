@@ -8,3 +8,5 @@ Built with the shared engine + `tools/curate/ch16.py`. Text comes from `tools/te
 2. The Key Concepts for Salivary Glands: the Acinic cell carcinoma bullet starts with "…" because its first words were lost; no key-concept bullet exists in the source for Adenoid cystic carcinoma.
 3. Headings lost in extraction (their boxes sit under the nearest heading): Dental caries, aphthous ulcers, leukoplakia/erythroplakia, Pleomorphic adenoma, oral cancer subtypes.
 4. Fig 16.x "(A) Nasal polyps..." caption starts as its own paragraph.
+
+**Verified (second pass):** added headings "Oral Cavity" (h2, before the source heading INFLAMMATORY/REACTIVE LESIONS, right after Periodontitis) and "Tumors of the Nose and Nasopharynx" (replaces the duplicated source heading NASOPHARYNX that precedes the tumor intro) sit in the right places; wording comes from the Robbins outline. Also promoted lost heading "Aphthous Ulcers (Canker Sores)" (h4). Still open: acinic cell carcinoma key-concept text begins with an ellipsis (first words lost), no Adenoid cystic bullet, other lost headings (dental caries, leukoplakia, pleomorphic adenoma).
