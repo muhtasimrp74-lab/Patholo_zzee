@@ -324,6 +324,68 @@ class AnnotBrowser(unittest.TestCase):
         ok = pg.evaluate("k=>{const bl=Annot._debug.blocks(k);return Annot._debug.docs()[k].objs.every(o=>o.a.b==null||bl.includes(o.a.b))}", k2); self.assertTrue(ok, 're-anchored to the target answer text')
         px = pg.evaluate("k=>{const L=Annot._debug.layer(k);return Annot._debug.docs()[k].objs.map(o=>!!(o.t==='stroke'?Annot._debug.px(k,Annot._debug.docs()[k].objs.indexOf(o)):Annot._debug.shapeOf(L,o)||o.q))}", k2); self.assertTrue(all(px))
         d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertEqual(self.errs, [])
+    def mcq_page(self, read=False):
+        pg = self.b.new_page(viewport={'width': 1024, 'height': 900}); self.errs = []; self.dialogs = []
+        pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
+        pg.goto(URL + '#/mcqs'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('[data-a=quick]' if not read else '[data-a=read]')
+        pg.click('[data-a=quick]' if not read else '[data-a=read]'); pg.wait_for_selector('article.mx-card[data-h]'); pg.wait_for_timeout(300); return pg
+    def mx_draw(self, pg, pts, **o): pg.evaluate(DRAW, ['article.mx-card', pts, o]); pg.wait_for_timeout(120)
+    def mx_state(self, pg): return pg.evaluate("()=>JSON.stringify(S.mcq)")
+    def opt_center(self, pg, j):
+        return pg.evaluate("j=>{const c=document.querySelector('article.mx-card'),cr=c.getBoundingClientRect(),b=[...c.querySelectorAll('.mx-opts [data-j]')].find(x=>x.dataset.j==j),r=(b.closest('.mx-s')||b).getBoundingClientRect();return [r.left-cr.left+r.width/2,r.top-cr.top+r.height/2]}", j)
+
+    def test_mcq_ink_is_rerender_proof_and_never_selects_an_answer(self):
+        pg = self.mcq_page(); h = pg.evaluate("()=>document.querySelector('article.mx-card').dataset.h"); k = 'm:' + h; pg.evaluate("()=>{Annot._debug.setOn(true);Annot.state().tool='pen'}")
+        before = self.mx_state(pg); c = self.opt_center(pg, 0)
+        self.mx_draw(pg, [[c[0] - 80, c[1]], [c[0], c[1] + 6], [c[0] + 80, c[1]]], type='mouse'); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.length", k), 1, 'a stroke over the options draws')
+        self.assertEqual(self.mx_state(pg), before, 'drawing over an option never selects it')
+        pg.click('.mx-opts [data-a=pick]' if pg.locator('.mx-opts [data-a=pick]').count() else '.mx-opts [data-a=tf]'); pg.wait_for_timeout(200)
+        self.assertEqual(self.mx_state(pg), before, 'a tap on an option while annotating does not answer'); self.assertEqual(pg.locator('.mx-o.ok,.mx-o.no').count(), 0)
+        pg.evaluate("()=>Annot._debug.setOn(false)")
+        # same-frame repaint: record, inside the render task itself, whether the fresh card already holds ink pixels
+        pg.evaluate("""()=>{window.__flick=[];const r=document.getElementById('v-mcqs')||document.querySelector('[id^=v-mcq]');new MutationObserver(()=>{const c=document.querySelector('article.mx-card canvas.an-c.ink');let n=0;if(c){const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i]){n++;break}}window.__flick.push(c?n:-1)}).observe(r,{childList:true,subtree:true})}""")
+        if pg.locator('.mx-opts [data-a=pick]').count(): pg.click('.mx-opts [data-a=pick] >> nth=0')
+        else: pg.click('.mx-opts [data-a=tf] >> nth=0')
+        pg.wait_for_timeout(300); self.assertNotEqual(self.mx_state(pg), before, 'with annotate off a tap answers exactly as before')
+        fl = pg.evaluate("()=>window.__flick"); self.assertTrue(fl and all(v == 1 for v in fl), 'ink is already painted when the re-rendered card first appears: %r' % fl)
+        self.assertTrue(pg.evaluate("k=>Annot._debug.layer(k).host.isConnected&&Annot._debug.layer(k).host===document.querySelector('article.mx-card')", k))
+        # navigating away and back keeps it; an unknown key (h changed) is never dropped
+        pg.evaluate("async()=>{const d=Annot.dump();d.docs['m:deadbeef']={rev:1,upd:1,objs:[{i:'z1',t:'stroke',k:'ball',c:'k',w:2,a:{b:null},g:'AAAA'}]};await Annot.load(d)}")
+        self.assertIn('m:deadbeef', pg.evaluate("()=>Object.keys(Annot.dump().docs)")); self.assertEqual(self.errs, [])
+    def test_mcq_option_marks_cross_tick_question_confidence(self):
+        pg = self.mcq_page(); h = pg.evaluate("()=>document.querySelector('article.mx-card').dataset.h"); k = 'm:' + h; pg.evaluate("()=>{Annot._debug.setOn(true);Annot.state().tool='om'}")
+        before = self.mx_state(pg); marks = lambda: pg.evaluate("k=>(Annot._debug.docs()[k]||{objs:[]}).objs.map(o=>[o.k,o.a.b,(o.q||{}).v||0])", k)
+        tap = lambda j: (pg.evaluate(DRAW, ['article.mx-card', [self.opt_center(pg, j)] * 2, {'type': 'mouse'}]), pg.wait_for_timeout(150))
+        tap(0); self.assertEqual(marks(), [['tick', 'o0', 0]]); tap(0); self.assertEqual(marks(), [['ask', 'o0', 0]]); tap(0); self.assertEqual(marks(), [])
+        c = self.opt_center(pg, 1); pg.evaluate("""([c])=>{const h=document.querySelector('article.mx-card'),r=h.getBoundingClientRect(),mk=(n,b)=>new PointerEvent(n,{pointerId:9,pointerType:'mouse',isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+c[0],clientY:r.top+c[1],buttons:b,button:0});h.dispatchEvent(mk('pointerdown',1));window.__up=()=>document.dispatchEvent(mk('pointerup',0))}""", [c])
+        pg.wait_for_timeout(650); pg.evaluate("()=>window.__up()"); self.assertEqual(marks(), [['cross', 'o1', 0]], 'press and hold crosses an option out')
+        pg.evaluate(DRAW, ['article.mx-card', [[self.opt_center(pg, 2)[0] - 60, self.opt_center(pg, 2)[1]], [self.opt_center(pg, 2)[0] + 20, self.opt_center(pg, 2)[1] + 2], [self.opt_center(pg, 2)[0] + 80, self.opt_center(pg, 2)[1]]], {'type': 'mouse'}]); pg.wait_for_timeout(150)
+        self.assertEqual(sorted(m[:2] for m in marks()), [['cross', 'o1'], ['cross', 'o2']], 'a horizontal swipe crosses an option out')
+        stem = pg.evaluate("()=>{const c=document.querySelector('article.mx-card'),cr=c.getBoundingClientRect(),r=c.querySelector(':scope>h3').getBoundingClientRect();return [r.left-cr.left+20,r.top-cr.top+r.height/2]}")
+        for want in (1, 2, 3, 0):
+            pg.evaluate(DRAW, ['article.mx-card', [stem, stem], {'type': 'mouse'}]); pg.wait_for_timeout(120); conf = [m for m in marks() if m[0] == 'conf']; self.assertEqual(conf[0][2] if conf else 0, want)
+        self.assertEqual(self.mx_state(pg), before, 'marks never touch the quiz state'); self.assertEqual(pg.locator('.mx-o.ok,.mx-o.no,.mx-ans').count(), 0, 'marks never reveal the answer')
+        [pg.keyboard.press('Control+z') for _ in range(4)]; self.assertEqual(sorted(m[:2] for m in marks()), [['cross', 'o1'], ['cross', 'o2']], 'four undos unwind the four confidence changes'); pg.keyboard.press('Control+Shift+z'); self.assertEqual([m for m in marks() if m[0] == 'conf'][0][2], 1)
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertIn(k, d['docs'])
+        self.assertTrue(pg.evaluate("()=>{const c=document.querySelector('article.mx-card canvas.an-c.ink');const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false}"), 'marks are painted')
+        pg.evaluate("()=>Annot._debug.setOn(false)"); self.assertEqual(self.errs, [])
+    def test_mcq_entry_button_in_live_sessions_hide_switch_and_reading_mode(self):
+        pg = self.mcq_page(); self.assertTrue(pg.locator('#an-fab-on').is_visible()); self.assertFalse(pg.locator('#tools').is_visible(), '#tools is hidden in live sessions, so the floating button is the way in')
+        pg.click('#an-fab-on'); self.assertTrue(pg.evaluate("()=>document.body.classList.contains('an-on')")); self.assertTrue(pg.locator('#an-bar').is_visible())
+        pg.evaluate("()=>{Annot.state().tool='pen'}"); h = pg.evaluate("()=>document.querySelector('article.mx-card').dataset.h"); c = self.opt_center(pg, 0); self.mx_draw(pg, [[c[0] - 60, c[1]], [c[0] + 60, c[1] + 5]], type='mouse')
+        vis = lambda: pg.evaluate("()=>getComputedStyle(document.querySelector('article.mx-card canvas.an-c.ink')).display"); self.assertEqual(vis(), 'block'); pg.click('#an-fab-eye'); self.assertEqual(vis(), 'none'); pg.click('#an-fab-eye'); self.assertEqual(vis(), 'block')
+        pg.close(); pg = self.mcq_page(read=True); self.assertTrue(pg.locator('article.mx-card.read').count() >= 1); pg.evaluate("()=>{Annot._debug.setOn(true);Annot.state().tool='pen'}")
+        self.mx_draw(pg, [[30, 30], [120, 40], [200, 30]], type='mouse'); h2 = pg.evaluate("()=>document.querySelector('article.mx-card.read').dataset.h"); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.length", 'm:' + h2), 1); self.assertEqual(self.errs, [])
+    def test_mcq_ink_survives_exam_timer_and_next_previous(self):
+        pg = self.b.new_page(viewport={'width': 1024, 'height': 900}); self.errs = []; pg.on('pageerror', lambda e: self.errs.append(str(e)))
+        pg.goto(URL + '#/mcqs'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('[data-a=mock]'); pg.click('[data-a=mock]'); pg.wait_for_selector('article.mx-card[data-h]'); pg.wait_for_timeout(300)
+        h = pg.evaluate("()=>document.querySelector('article.mx-card').dataset.h"); pg.evaluate("()=>{Annot._debug.setOn(true);Annot.state().tool='pen';window.__card=document.querySelector('article.mx-card')}")
+        c = self.opt_center(pg, 0); self.mx_draw(pg, [[c[0] - 70, c[1]], [c[0], c[1] + 8], [c[0] + 70, c[1]]], type='mouse'); t0 = pg.inner_text('#mx-timer'); pg.wait_for_timeout(2300)
+        self.assertNotEqual(pg.inner_text('#mx-timer'), t0, 'the exam timer is running'); self.assertTrue(pg.evaluate("()=>window.__card===document.querySelector('article.mx-card')&&window.__card.querySelector('canvas.an-c.ink')!==null"), 'the timer does not rebuild the card')
+        pg.evaluate("()=>Annot._debug.setOn(false)"); pg.click('[data-a=next]'); pg.wait_for_timeout(300); h2 = pg.evaluate("()=>document.querySelector('article.mx-card').dataset.h"); self.assertNotEqual(h, h2)
+        pg.click('[data-a=prev]'); pg.wait_for_timeout(300); self.assertEqual(pg.evaluate("()=>document.querySelector('article.mx-card').dataset.h"), h)
+        self.assertTrue(pg.evaluate("()=>{const c=document.querySelector('article.mx-card canvas.an-c.ink');const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false}"), 'ink is back after Previous')
+        self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.length", 'm:' + h), 1); self.assertEqual(self.errs, [])
     def test_wet_stroke_benchmark_has_no_long_frames(self):
         pg = self.page(); cid, sel = self.open_card(pg)
         r = pg.evaluate("""async s=>{const h=document.querySelector(s),b=h.getBoundingClientRect(),mk=(n,x,y)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,clientX:b.left+x,clientY:b.top+y,pressure:.5,buttons:1});
