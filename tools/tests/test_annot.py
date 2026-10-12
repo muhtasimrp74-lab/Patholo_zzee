@@ -171,6 +171,27 @@ class AnnotBrowser(unittest.TestCase):
         d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), 1)
         r = pg.evaluate("k=>{const L=Annot._debug.layer(k),o=Annot._debug.docs()[k].objs[0],t=Annot._debug.textLayout(L,o);return [t.x,t.y,t.h]}", 'q:' + cid)
         pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[r[0] + 2, r[1] + r[2] / 2], [r[0] + 14, r[1] + r[2] / 2]], type='mouse'); self.assertEqual(self.objs(pg, cid), 0, 'eraser removes a text note'); self.assertEqual(self.errs, [])
+    def test_select_move_resize_duplicate_delete_with_undo(self):
+        pg = self.page(); cid, sel = self.open_card(pg); k = 'q:' + cid
+        self.draw(pg, sel, wave(20, 30, 60, 6, 10), type='pen'); pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'shape',shape:'rect'})}"); self.draw(pg, sel, [[320, 40], [400, 100]], type='mouse')
+        pg.evaluate("()=>{Annot.state().tool='sel'}"); sync = lambda: (pg.wait_for_timeout(120))
+        first = lambda: pg.evaluate("k=>Annot._debug.px(k,0)[0]", k)
+        self.draw(pg, sel, [[5, 5], [450, 5], [450, 150], [5, 150], [5, 6]], type='mouse'); sync(); self.assertEqual(len(pg.evaluate("()=>Annot._debug.sel()")), 2, 'lasso selects both')
+        bb = pg.evaluate("()=>Annot._debug.selBB()"); x0 = first(); cx, cy = (bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2
+        self.draw(pg, sel, [[cx, cy], [cx + 20, cy + 10], [cx + 40, cy + 25]], type='mouse'); sync(); x1 = first()
+        self.assertAlmostEqual(x1[0] - x0[0], 40, delta=1.5); self.assertAlmostEqual(x1[1] - x0[1], 25, delta=1.5)
+        pg.keyboard.press('Control+z'); sync(); xu = first(); self.assertAlmostEqual(xu[0], x0[0], delta=.6); self.assertAlmostEqual(xu[1], x0[1], delta=.6); pg.keyboard.press('Control+Shift+z'); sync()
+        pg.keyboard.press('Control+z'); sync(); bb = pg.evaluate("()=>Annot._debug.selBB()"); w0 = bb[2] - bb[0]
+        self.draw(pg, sel, [[bb[2] + 4, bb[3] + 4], [(bb[0] + bb[2]) / 2 + 80, (bb[1] + bb[3]) / 2 + 30], [bb[0] + (bb[2] - bb[0]) / 2, bb[1] + (bb[3] - bb[1]) / 2]], type='mouse'); sync()
+        bb2 = pg.evaluate("()=>Annot._debug.selBB()"); self.assertLess(bb2[2] - bb2[0], w0 * .75, 'dragging a corner inward shrinks the selection')
+        pg.keyboard.press('Control+z'); sync(); bb3 = pg.evaluate("()=>Annot._debug.selBB()"); self.assertAlmostEqual(bb3[2] - bb3[0], w0, delta=2)
+        pg.click('#an-selbar [data-a=seldup]'); sync(); self.assertEqual(self.objs(pg, cid), 4); self.assertEqual(len(pg.evaluate("()=>Annot._debug.sel()")), 2); pg.keyboard.press('Control+z'); sync(); self.assertEqual(self.objs(pg, cid), 2)
+        self.draw(pg, sel, [[5, 5], [450, 5], [450, 150], [5, 150], [5, 6]], type='mouse'); sync(); pg.keyboard.press('Delete'); sync(); self.assertEqual(self.objs(pg, cid), 0)
+        pg.keyboard.press('Control+z'); sync(); self.assertEqual(self.objs(pg, cid), 2)
+        b = pg.evaluate("k=>Annot._debug.px(k,0)[0]", k)
+        self.draw(pg, sel, [[b[0] + 1, b[1] + 1], [b[0] + 1, b[1] + 1]], type='mouse'); sync(); self.assertEqual(pg.evaluate("k=>Annot._debug.sel().length&&Annot._debug.docs()[k].objs.filter(o=>Annot._debug.sel().includes(o.i)).map(o=>o.t)", k), ['stroke'], 'tapping a stroke selects just it')
+        self.draw(pg, sel, [[600, 300], [601, 300]], type='mouse'); sync(); self.assertEqual(pg.evaluate("()=>Annot._debug.sel()"), [], 'tapping empty space deselects')
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertEqual(self.errs, [])
     def test_wet_stroke_benchmark_has_no_long_frames(self):
         pg = self.page(); cid, sel = self.open_card(pg)
         r = pg.evaluate("""async s=>{const h=document.querySelector(s),b=h.getBoundingClientRect(),mk=(n,x,y)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,clientX:b.left+x,clientY:b.top+y,pressure:.5,buttons:1});
