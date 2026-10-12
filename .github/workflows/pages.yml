@@ -33,7 +33,7 @@ jobs:
       - name: Assemble site folder
         run: |
           mkdir _site
-          cp -r index.html ink.js sw.js manifest.json icons fonts textbook _site/
+          cp -r index.html annot sw.js manifest.json icons fonts textbook _site/
       - name: Validate the site folder
         run: |
           python - <<'PY'
