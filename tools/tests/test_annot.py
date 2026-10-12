@@ -141,6 +141,22 @@ class AnnotBrowser(unittest.TestCase):
         pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), 5)
         pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[300, 20], [300, 60]], type='mouse'); self.assertEqual(self.objs(pg, cid), 4, 'eraser removes a shape it crosses')
         pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 5); self.assertEqual(self.errs, [])
+    def test_text_highlight_follows_text_erases_undoes_and_survives_backup(self):
+        pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='hi'}")
+        pick = """s=>{const h=document.querySelector(s),bs=[...h.querySelectorAll('p,li')].filter(b=>!b.querySelector('p,li')&&b.textContent.trim().length>40);const a=bs[0],b=bs[1],w=el=>{const t=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n=t.nextNode();while(n&&n.nodeValue.trim().length<12)n=t.nextNode();return n};
+          const n1=w(a),n2=w(b);getSelection().setBaseAndExtent(n1,0,n2,Math.min(10,n2.nodeValue.length));document.dispatchEvent(new PointerEvent('pointerup',{bubbles:true}))}"""
+        pg.evaluate(pick, sel); pg.wait_for_timeout(300)
+        marks = pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,o.q.s,o.q.e])", 'q:' + cid); self.assertGreaterEqual(len(marks), 2); self.assertTrue(all(m[0] == 'mark' and m[3] > m[2] for m in marks))
+        self.assertTrue(pg.evaluate("()=>getSelection().isCollapsed"), 'selection is cleared after highlighting')
+        rects = lambda: pg.evaluate("k=>{const L=Annot._debug.layer(k),d=Annot._debug.docs()[k];return d.objs.map(o=>Annot._debug.markRects(L,o))}", 'q:' + cid)
+        r0 = rects(); self.assertTrue(all(len(r) > 0 for r in r0))
+        for fs in (1.3, 1):
+            pg.evaluate("f=>{document.documentElement.style.setProperty('--fs',f);S.pref=S.pref||{};S.pref.fs=f}", fs); pg.wait_for_timeout(250)
+            ok = pg.evaluate("""k=>{const L=Annot._debug.layer(k),d=Annot._debug.docs()[k],hr=L.host.getBoundingClientRect();return d.objs.every(o=>{const el=[...L.host.querySelectorAll('p,li')].find(()=>true),rs=Annot._debug.markRects(L,o);return rs&&rs.length>0&&rs.every(r=>r[2]>0&&r[3]>0)})}""", 'q:' + cid); self.assertTrue(ok, fs)
+        pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 0, 'one undo removes the whole multi-block highlight'); pg.keyboard.press('Control+Shift+z'); self.assertEqual(self.objs(pg, cid), len(marks))
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), len(marks))
+        r = rects()[0][0]; pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[r[0] + 3, r[1] + r[3] / 2], [r[0] + 20, r[1] + r[3] / 2]], type='mouse')
+        self.assertEqual(self.objs(pg, cid), len(marks) - 1, 'eraser removes a highlighted span it touches'); self.assertEqual(self.errs, [])
     def test_wet_stroke_benchmark_has_no_long_frames(self):
         pg = self.page(); cid, sel = self.open_card(pg)
         r = pg.evaluate("""async s=>{const h=document.querySelector(s),b=h.getBoundingClientRect(),mk=(n,x,y)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,clientX:b.left+x,clientY:b.top+y,pressure:.5,buttons:1});
