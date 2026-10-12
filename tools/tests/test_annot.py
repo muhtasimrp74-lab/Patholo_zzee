@@ -192,6 +192,66 @@ class AnnotBrowser(unittest.TestCase):
         self.draw(pg, sel, [[b[0] + 1, b[1] + 1], [b[0] + 1, b[1] + 1]], type='mouse'); sync(); self.assertEqual(pg.evaluate("k=>Annot._debug.sel().length&&Annot._debug.docs()[k].objs.filter(o=>Annot._debug.sel().includes(o.i)).map(o=>o.t)", k), ['stroke'], 'tapping a stroke selects just it')
         self.draw(pg, sel, [[600, 300], [601, 300]], type='mouse'); sync(); self.assertEqual(pg.evaluate("()=>Annot._debug.sel()"), [], 'tapping empty space deselects')
         d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertEqual(self.errs, [])
+    def tap(self, pg, sel, x, y, typ='mouse'):
+        pg.evaluate("""([s,x,y,t])=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),mk=n=>new PointerEvent(n,{pointerId:7,pointerType:t,isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+y,buttons:n==='pointerdown'?1:0,button:0});h.dispatchEvent(mk('pointerdown'));document.dispatchEvent(mk('pointerup'))}""", [sel, x, y, typ]); pg.wait_for_timeout(150)
+    def kinds(self, pg, cid): return pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>o.t+':'+o.k)", 'q:' + cid)
+    def test_stickers_place_draw_move_erase_undo_and_backup(self):
+        pg = self.page(); cid, sel = self.open_card(pg); k = 'q:' + cid
+        for i, kind in enumerate(('star', 'exam', 'ask', 'tick', 'cross', 'bulb')):
+            pg.evaluate("kd=>{Object.assign(Annot.state(),{tool:'st',stk:kd})}", kind); self.tap(pg, sel, 40 + i * 52, 60)
+        self.assertEqual(self.kinds(pg, cid), ['sticker:' + x for x in ('star', 'exam', 'ask', 'tick', 'cross', 'bulb')])
+        inked = pg.evaluate("k=>{const L=Annot._debug.layer(k),g=L.ink.getContext('2d'),d=g.getImageData(0,0,L.ink.width,L.ink.height).data;let n=0;for(let i=3;i<d.length;i+=4)if(d[i])n++;return n}", k); self.assertGreater(inked, 200, 'stickers are painted')
+        pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 5); pg.keyboard.press('Control+Shift+z'); self.assertEqual(self.objs(pg, cid), 6)
+        # the select tool can grab and move a sticker (tap to select, drag inside its box), and the move is undoable
+        q0 = pg.evaluate("k=>JSON.stringify(Annot._debug.docs()[k].objs[0].q)", k); pg.evaluate("()=>{Annot.state().tool='sel'}"); self.tap(pg, sel, 40, 60)
+        self.draw(pg, sel, [[40, 60], [60, 90], [90, 120]], type='mouse'); q1 = pg.evaluate("k=>JSON.stringify(Annot._debug.docs()[k].objs[0].q)", k); self.assertNotEqual(q0, q1)
+        pg.keyboard.press('Control+z'); self.assertEqual(pg.evaluate("k=>JSON.stringify(Annot._debug.docs()[k].objs[0].q)", k), q0)
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), 6)
+        evil = json.loads(json.dumps(d)); evil['docs'][k]['objs'][0]['k'] = 'evil'; self.assertIsNone(pg.evaluate("d=>Annot.validate(d)", evil))
+        pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[30, 60], [400, 60]], type='mouse'); self.assertEqual(self.objs(pg, cid), 0, 'eraser removes stickers'); self.assertEqual(self.errs, [])
+    def test_sticky_notes_type_edit_delete_undo_and_work_with_annotate_off(self):
+        pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='nt'}"); self.tap(pg, sel, 80, 70)
+        self.assertEqual(pg.locator('.an-sticky').count(), 1); pg.fill('.an-sticky textarea', 'Mnemonic: <img src=x onerror=window.__x=1>'); pg.click('.an-sticky button:has-text("Done")'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,o.x])", 'q:' + cid), [['note', 'pin', 'Mnemonic: <img src=x onerror=window.__x=1>']]); self.assertEqual(pg.locator('.an-pin').count(), 1)
+        self.assertIn('Mnemonic', pg.get_attribute('.an-pin', 'aria-label')); self.assertIsNone(pg.evaluate("()=>window.__x ?? null")); self.assertEqual(pg.locator('.an-sticky').count(), 0)
+        pg.evaluate("()=>Annot._debug.setOn(false)"); pg.click('.an-pin'); self.assertEqual(pg.locator('.an-sticky').count(), 1, 'a pin opens even when annotate is off')
+        pg.fill('.an-sticky textarea', 'Edited'); pg.click('.an-sticky button:has-text("Done")'); pg.wait_for_timeout(100); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs[0].x", 'q:' + cid), 'Edited')
+        pg.evaluate("()=>Annot._debug.setOn(true)"); pg.keyboard.press('Control+z'); self.assertTrue(pg.evaluate("k=>Annot._debug.docs()[k].objs[0].x.startsWith('Mnemonic')", 'q:' + cid), 'undo restores the text'); pg.keyboard.press('Control+Shift+z')
+        pg.click('.an-pin'); pg.click('.an-sticky button:has-text("Delete")'); pg.wait_for_timeout(100); self.assertEqual(self.objs(pg, cid), 0); self.assertEqual(pg.locator('.an-pin').count(), 0); pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 1); self.assertEqual(pg.locator('.an-pin').count(), 1)
+        self.tap(pg, sel, 300, 40); self.assertEqual(pg.locator('.an-sticky').count(), 1); pg.keyboard.press('Escape'); self.assertEqual(self.objs(pg, cid), 1, 'Escape discards a new note')
+        pg.evaluate("()=>{Annot.state().tool='sel'}"); self.tap(pg, sel, 80, 70); pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[60, 70], [110, 70]], type='mouse'); self.assertEqual(self.objs(pg, cid), 0, 'eraser removes a sticky note'); self.assertEqual(self.errs, [])
+    def test_laser_pointer_leaves_a_fading_trail_and_saves_nothing(self):
+        pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='ls'}")
+        px = "k=>{const L=Annot._debug.layer(k);if(!L||!L.wet)return 0;const g=L.wet.getContext('2d'),d=g.getImageData(0,0,L.wet.width,L.wet.height).data;let n=0;for(let i=3;i<d.length;i+=4)if(d[i])n++;return n}"
+        pg.evaluate("""s=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),mk=(n,x,y,b)=>new PointerEvent(n,{pointerId:9,pointerType:'pen',isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+y,pressure:.5,buttons:b});
+            window.__lz=()=>{h.dispatchEvent(mk('pointerdown',40,50,1));for(let i=1;i<30;i++)document.dispatchEvent(mk('pointermove',40+i*8,50+Math.sin(i/3)*20,1))};window.__lzUp=()=>document.dispatchEvent(mk('pointerup',280,50,0))}""", sel)
+        pg.evaluate("()=>window.__lz()"); pg.wait_for_timeout(120); self.assertGreater(pg.evaluate(px, 'q:' + cid), 100, 'trail is visible while drawing'); pg.evaluate("()=>window.__lzUp()")
+        pg.wait_for_timeout(1500); self.assertEqual(pg.evaluate(px, 'q:' + cid), 0, 'trail fades away completely'); self.assertEqual(self.objs(pg, cid), 0); self.assertEqual(pg.evaluate("()=>Annot._debug.dirty().length"), 0); self.assertEqual(pg.evaluate("k=>Annot._debug.undoDepth(k)", 'q:' + cid), 0); self.assertEqual(self.errs, [])
+    def test_favourite_presets_apply_save_and_persist(self):
+        pg = self.page(); cid, sel = self.open_card(pg); self.assertEqual(pg.evaluate("()=>Annot.state().pre.length"), 5)
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'pen',pen:'fnt',col:'r'});Annot.state().sizes.fnt=5}"); pg.click('#an-bar [data-a=fav]'); self.assertEqual(pg.locator('.an-pop[data-for=fav] .an-fv').count(), 5)
+        pg.click('.an-pop[data-for=fav] .an-fv >> nth=0', modifiers=['Shift']); self.assertEqual(pg.evaluate("()=>JSON.stringify(Annot.state().pre[0])"), json.dumps({"t": "pen", "p": "fnt", "c": "r", "z": 5}, separators=(',', ':')))
+        pg.evaluate("()=>{Annot.state().tool='er'}"); pg.click('.an-pop[data-for=fav] .an-fv >> nth=3'); self.assertEqual(pg.evaluate("()=>[Annot.state().tool,Annot.state().hlc]"), ['hl', 'y']); self.assertEqual(pg.locator('.an-pop[data-for=fav]').count(), 0)
+        pg.click('#an-bar [data-a=fav]'); pg.click('.an-pop[data-for=fav] .an-fv >> nth=0'); self.assertEqual(pg.evaluate("()=>[Annot.state().tool,Annot.state().pen,Annot.state().col]"), ['pen', 'fnt', 'r'])
+        self.draw(pg, sel); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs[0].k", 'q:' + cid), 'fnt')
+        pg.wait_for_timeout(700); pg.reload(); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(200); self.assertEqual(pg.evaluate("()=>[Annot.state().pre[0].p,Annot.state().pre[0].c]"), ['fnt', 'r'], 'presets survive a reload'); self.assertEqual(self.errs, [])
+    def test_two_finger_tap_undoes_three_finger_tap_redoes_and_can_be_switched_off(self):
+        pg = self.page(); cid, sel = self.open_card(pg)
+        for _ in range(3): self.draw(pg, sel)
+        FING = """([s,n])=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),mk=(t,i)=>new PointerEvent(t,{pointerId:20+i,pointerType:'touch',isPrimary:i===0,bubbles:true,cancelable:true,clientX:r.left+60+i*40,clientY:r.top+60,buttons:t==='pointerdown'?1:0,button:0});
+            for(let i=0;i<n;i++)h.dispatchEvent(mk('pointerdown',i));for(let i=0;i<n;i++)document.dispatchEvent(mk('pointerup',i))}"""
+        pg.evaluate(FING, [sel, 2]); pg.wait_for_timeout(150); self.assertEqual(self.objs(pg, cid), 2, 'two-finger tap = undo (the half-started finger stroke is not saved)')
+        pg.evaluate(FING, [sel, 3]); pg.wait_for_timeout(150); self.assertEqual(self.objs(pg, cid), 3, 'three-finger tap = redo')
+        pg.evaluate("()=>{Annot.state().gest=false}"); pg.evaluate(FING, [sel, 2]); pg.wait_for_timeout(150); self.assertEqual(self.objs(pg, cid), 3, 'gestures can be switched off'); self.assertEqual(self.errs, [])
+    def test_stylus_eraser_end_and_barrel_button(self):
+        pg = self.page(); cid, sel = self.open_card(pg); self.draw(pg, sel, [[30, 60], [250, 60]]); self.assertEqual(self.objs(pg, cid), 1)
+        BTN = """([s,pts,b])=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),mk=(n,q,bb)=>new PointerEvent(n,{pointerId:4,pointerType:'pen',isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+q[0],clientY:r.top+q[1],pressure:.5,buttons:bb,button:0});
+            h.dispatchEvent(mk('pointerdown',pts[0],b));pts.slice(1).forEach(q=>document.dispatchEvent(mk('pointermove',q,b)));document.dispatchEvent(mk('pointerup',pts[pts.length-1],0))}"""
+        pg.evaluate(BTN, [sel, [[20, 60], [260, 60]], 1 | 32]); pg.wait_for_timeout(120); self.assertEqual(self.objs(pg, cid), 0, 'buttons&32 (eraser) erases while held, though the pen tool is active'); self.assertEqual(pg.evaluate("()=>Annot.state().tool"), 'pen')
+        pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 1)
+        pg.evaluate("()=>{Annot.state().barrel='hl'}"); pg.evaluate(BTN, [sel, [[30, 120], [220, 120]], 1 | 2]); pg.wait_for_timeout(120); self.assertEqual(self.kinds(pg, cid), ['stroke:ball', 'stroke:hl'], 'barrel button = marker while held')
+        pg.evaluate("()=>{Annot.state().barrel='off'}"); pg.evaluate(BTN, [sel, [[30, 160], [220, 160]], 1 | 2]); pg.wait_for_timeout(120); self.assertEqual(self.kinds(pg, cid)[-1], 'stroke:ball', 'barrel button can be switched off')
+        pg.evaluate("()=>{Annot.state().barrel='er'}"); pg.evaluate(BTN, [sel, [[20, 160], [260, 160]], 1 | 2]); pg.wait_for_timeout(120); self.assertEqual(self.objs(pg, cid), 2, 'barrel button can erase'); self.assertEqual(self.errs, [])
     def test_wet_stroke_benchmark_has_no_long_frames(self):
         pg = self.page(); cid, sel = self.open_card(pg)
         r = pg.evaluate("""async s=>{const h=document.querySelector(s),b=h.getBoundingClientRect(),mk=(n,x,y)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,clientX:b.left+x,clientY:b.top+y,pressure:.5,buttons:1});
