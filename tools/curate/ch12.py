@@ -19,6 +19,26 @@ for b in SRC:
         rows = [[C(c or '') for c in r] for r in (b.get('rows') or [])]
         TABLES[b['id']] = (re.sub(r'^TABLE\s+[\d.]+\s*', '', C(b.get('caption', ''))), rows, C(b.get('note') or '') if rows else 'Table content was lost in the source extraction; its leftover entries appear in the text below.')
 DROP = set(); OVR = {}
+import tabfix   # rebuild empty tables from the leftover source blocks (heading -> first cell, items -> second cell)
+for _id, _a, _b, _hdr, _cut, _note in (
+        ('12.12', 659, 676, ['Category', 'Causes'], [' HIV, Human immunodeficiency virus.'], 'HIV, Human immunodeficiency virus.'),
+        ('12.13', 708, 726, ['Category', 'Causes'], [], '')):
+    _rows, _d = tabfix.rebuild(SRC, C, _a, _b, _hdr, cut=_cut)
+    TABLES[_id] = (TABLES[_id][0], _rows, _note); DROP |= _d
+# 12.11: heading block 555 ("Diseases") is the end of the caption; block 595 starts with the last table item, the rest of it is text
+_rows, _d = tabfix.rebuild(SRC, C, 556, 594, ['Category', 'Conditions'])
+_rows[-1][1] += '; Posttransplant rejection'
+TABLES['12.11'] = (TABLES['12.11'][0] + ' Diseases', _rows, ''); DROP |= _d | {555}
+OVR[595] = [('ul', [M(595)[len('Posttransplant rejection'):].strip()])]
+# 12.9 (Duke criteria): 483 ("Endocarditis") ends the caption; 497 carries the footnotes after the last item; 498 is the source line
+_t497 = M(497); _item, _foot = _t497.split(' aJaneway', 1)
+_rows, _d = tabfix.rebuild(SRC, C, 484, 496, ['Criteria', 'Features'], ashead={486})
+_rows[-1][1] += '; ' + _item.strip()   # last Minor item sits in the footnote block
+TABLES['12.9'] = (TABLES['12.9'][0] + ' Endocarditis', _rows, 'aJaneway' + _foot + ' ' + M(498).replace('*', ''))
+DROP |= _d | {483, 497, 498}
+# 12.7: only part of the table survived (first rows lost); rebuilt from what is there
+_rows, _d = tabfix.rebuild(SRC, C, 396, 400, ['Category', 'Disorders'])
+TABLES['12.7'] = (TABLES['12.7'][0], _rows, 'Partial table: the first rows were lost in the source extraction.'); DROP |= _d
 NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=[], OVR=OVR, DROP=DROP, TABLES=TABLES)
 def _post(nodes):
     out = []; last = None   # last text node index in out
