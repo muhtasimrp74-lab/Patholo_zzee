@@ -18,6 +18,17 @@ for b in SRC:
 DROP = [6, 7, 8, 9, 33, 34, 56, 57, 160, 167, 171, 198, 214, 263, 264, 265, 266, 277, 292, 293, 294, 295, 296, 297, 298, 299, 310, 311, 316, 318, 320, 335]
 DROP = set(DROP)
 OVR = {}
+# opening: block 1 is two columns interleaved (intro + "worms vs humans" text) plus margin words.  Cut at anchors, reorder, delete margin words.
+_t = M(1); _P = lambda a: _t.index(a)
+_J0 = _t[:_P('humans. What')].strip()                                   # "of disease that are emphasized ... book." (tail of the intro; its lead is lost)
+_S1 = _t[_P('humans. What'):_P('The sequencing')]; _S2 = _t[_P('The sequencing'):_P('proteins are recognizable')]
+_S3 = _t[_P('proteins are recognizable'):_P('The answer is not')]; _S4 = _t[_P('The answer is not'):_P('THE GENOME')]
+_S5 = _t[_P('(so-called'):_P('over 85%')]; _S6 = _t[_P('over 85%'):]
+for _x in (' However,', ' that while'): assert _x in _S2; _S2 = _S2.replace(_x, '', 1)
+_S6 = _S6.replace(' burgeoning', '').replace('It follows proteins', 'It follows that while proteins')
+_A = re.sub(r'\s+', ' ', _S2 + ' … ' + _J0.replace(' the these book', ' the book')).strip()
+_B = re.sub(r'\s+', ' ', '… ' + _S3 + ' ' + _S1.replace('? much of', '? Much of') + ' ' + _S5 + ' ' + _S4 + ' ' + _S6 + ' ' + M(2).replace('apparthe ently', 'apparently')).strip()
+OVR[1] = [('p', _A), ('p', _B)]; OVR[2] = []
 NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=[], OVR=OVR, DROP=DROP, TABLES=TABLES)
 def _post(nodes):
     out = []; last = None   # last text node index in out
