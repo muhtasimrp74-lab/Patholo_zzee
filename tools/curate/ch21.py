@@ -23,6 +23,18 @@ for b in SRC:
         TABLES[b['id']] = (re.sub(r'^TABLE\s+[\d.]+\s*', '', C(b.get('caption', ''))), rows, C(b.get('note') or '') if rows else 'Table content was lost in the source extraction; its leftover entries may appear in the text.')
 DROP = set()
 OVR = {}
+# opening: block 2 is the bladder/ureter intro interleaved with margin words; block 1 ("propria. If urine flow...") is its continuation.
+# Margin words are moved back to their sentences / deleted (no new words).
+_t = M(2)
+for _a, _b in [('(except the The terminal portion)', '(except the terminal portion)'), ('type of transitional called', 'type of transitional epithelium called'),
+               ('layers of with oval', 'layers of cells with oval'), ('the urecells ters', 'the ureters'), ('with abundant This epithelium', 'with abundant cytoplasm. This epithelium'),
+               ('the floor of cytoplasm. the bladder', 'the floor of the bladder'), ('beneath which ing a pouch is', 'beneath which is'), ('creat - (cystocele)', 'creating a pouch (cystocele)'),
+               ('retroperitoneum. epithelium Retroperitoneal', 'retroperitoneum. Retroperitoneal'), ('), dle since', '), since')]:
+    assert _a in _t, _a; _t = _t.replace(_a, _b)
+_blad, _rest = part(_t, ' ureters lie throughout')
+_ur = part(_rest, ' In middle-aged')[0]
+OVR[2] = [('p', _blad + ' ' + M(1)), ('p', 'The ureters lie throughout' + _ur), ('p', 'In middle-aged' + part(_rest, ' In middle-aged')[1])]
+OVR[1] = []
 NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=[], OVR=OVR, DROP=DROP, TABLES=TABLES)
 def _post(nodes):
     out = []; last = None   # last text node index in out

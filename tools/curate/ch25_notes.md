@@ -6,3 +6,5 @@ Built with the shared engine + `tools/curate/ch25.py`. Text comes from `tools/te
 2. Heading depth is approximate: sub-topics that Robbins nests (e.g. congenital anomalies under a section) may appear as separate top-level sections; the real hierarchy was not recoverable from the source (only 2 heading levels exist).
 3. Headings lost in extraction have no label, so their Morphology/Clinical Features boxes sit under the nearest heading. A few stray diagram labels may remain as headings or short paragraphs.
 4. Figure captions may start or end mid-sentence where text was split across a page.
+
+**Second pass:** the opening no longer breaks mid-word ("Ru - • dolph" -> "Rudolph") and the margin label "• Dendritic" no longer turns the paragraph into a bullet. The paragraph still contains margin glossary words (e.g. "a tough,", "Mela - nin is") that could not be separated safely.

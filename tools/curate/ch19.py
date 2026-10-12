@@ -19,6 +19,24 @@ for b in SRC:
         TABLES[b['id']] = (re.sub(r'^TABLE\s+[\d.]+\s*', '', C(b.get('caption', ''))), rows, C(b.get('note') or '') if rows else 'Table content was lost in the source extraction; its leftover entries may appear in the text.')
 DROP = set()
 OVR = {}
+# opening: block 1 continues the head of block 4 ("The adult pancreas is a transversely oriented retroperitoneal organ" + "extending from the C-loop...");
+# margin words / stray label fragments are deleted, the pancreas divisum text becomes its own sub-section.
+def _dl(t, *pairs):
+    for a, b in pairs:
+        assert a in t, a; t = t.replace(a, b)
+    return re.sub(r'\s+', ' ', t).strip()
+_t4 = M(4); _h4, _b4 = part(_t4, ' divisum is the most common')
+_i1 = _dl(M(1), ('Pancreas Divisum ', ''), ('the Pancreas spleen', 'the spleen'), (' to the papilla of Vater,', ''), ('(F i g. 1 9. 1 A)', '(Fig. 19.1A)'), (' 1 9 contain', ' contain'), (' systems including', ' including'), (' proteolytic of cleavage', ' proteolytic cleavage'), (' with pancreas divisum', ''), (' bud, is a band-like ring of normal pancreatic tissue that completely', ''), (' tis. It cell clusters', ' cell clusters'))
+OVR[1] = [('p', _h4 + ' ' + _i1)]
+# embryology / ectopic text: the lost heading "Ectopic Pancreas" and "in pancreatic anatomy." sit inside the Annular Pancreas paragraph (block 6)
+_t6 = M(6); _ann, _emb = part(_t6, ' Ectopic Pancreas in pancreatic anatomy. ')
+_emb = _emb.strip()
+_t3 = _dl(M(3), (' a subset', ''))
+_t3a, _t3b = part(_t3, ' Pancreatic tissue that is aberrantly')
+OVR[3] = [('p', _emb), ('p', _t3a.strip() + ' in pancreatic anatomy.'), ('h3', 'Ectopic Pancreas'), ('p', 'Pancreatic tissue that is aberrantly' + _t3b)]
+OVR[6] = [('p', _ann.strip().replace('ventral pancreatic encircles', 'ventral pancreatic bud, is a band-like ring of normal pancreatic tissue that completely encircles').replace('one-third cases are asymptomatic. In of cases,', 'one-third of cases are asymptomatic. In … cases,'))]
+_b4 = _dl('divisum is the most common' + _b4, ('pan - Greek creas', 'pancreas'), ('F i g.. 1 A', 'Fig. 19.1A'), ('(F i g. 1 9. 1 B)', '(Fig. 19.1B)'), ('pancreatihas been', 'pancreatitis. It has been'), ('secrethe tions', 'secretions'))
+OVR[4] = [('h3', 'Pancreas Divisum'), ('p', 'Pancreas ' + _b4)]
 NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=[], OVR=OVR, DROP=DROP, TABLES=TABLES)
 def _post(nodes):
     out = []; last = None   # last text node index in out
