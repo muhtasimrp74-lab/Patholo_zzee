@@ -114,7 +114,7 @@ class Browser(unittest.TestCase):
     def imp(self, pg, obj):
         pg.evaluate("t=>imp(new File([t],'b.json'))", obj if isinstance(obj, str) else json.dumps(obj)); pg.wait_for_timeout(900); self.ready(pg)
     def ready(self, pg):
-        pg.wait_for_function("()=>document.readyState==='complete'&&typeof Ink==='object'"); pg.wait_for_timeout(500)
+        pg.wait_for_function("()=>document.readyState==='complete'&&typeof Annot==='object'&&Annot.isReady()"); pg.wait_for_timeout(500)
     def state(self, pg): return pg.evaluate("()=>localStorage.vivaState")
     def test_pages_load_without_errors(self):
         pg = self.page()
@@ -134,7 +134,7 @@ class Browser(unittest.TestCase):
         self.assertEqual(pg.evaluate("()=>localStorage.vivaStatePrev"), before)
     def test_backup_round_trip(self):
         pg = self.page(); pg.evaluate("()=>{S.bm=['q3'];S.fav=['q4'];S.learned=['q5'];S.notes={q3:'<b>x</b>'};S.streak={n:3,last:'2026-10-11'};save()}")
-        dump = pg.evaluate("()=>JSON.parse(JSON.stringify(Object.assign({},S,{ink:Ink.dump()})))")
+        dump = pg.evaluate("()=>JSON.parse(JSON.stringify(Object.assign({},S,{annot:Annot.dump()})))")
         pg.evaluate("()=>{S.bm=[];S.fav=[];S.learned=[];S.notes={};save()}"); self.imp(pg, dump)
         s = json.loads(self.state(pg)); self.assertEqual((s['bm'], s['fav'], s['learned'], s['notes'], s['streak']), (['q3'], ['q4'], ['q5'], {'q3': '<b>x</b>'}, {'n': 3, 'last': '2026-10-11'}))
     def test_corrupt_saved_state_does_not_break_the_page(self):
@@ -156,9 +156,9 @@ class Browser(unittest.TestCase):
         al = json.loads(re.search(r'const QALIAS=(\{.*?\});', rd('index.html')).group(1)); a, b = next(iter(al.items())); stroke = {'t': 'p', 'c': '#C4573A', 's': 2, 'p': [1, 1, 5, 5]}
         pg = self.page()
         pg.evaluate("""([a,st])=>new Promise(r=>{const q=indexedDB.open('pathviva-ink',1);q.onsuccess=()=>{const t=q.result.transaction('ink','readwrite');t.objectStore('ink').put({id:a,w:600,fs:1,strokes:[st]});t.oncomplete=r}})""", [a, stroke])
-        pg.reload(); self.ready(pg); self.assertEqual(list(pg.evaluate("()=>Ink.dump()")), [b])
+        pg.reload(); self.ready(pg); self.assertEqual(list(pg.evaluate("()=>Ink.dump().docs")), ['q:' + b])
         pg.evaluate("()=>Ink.load({})"); pg.wait_for_timeout(300); self.imp(pg, {"bm": [], "ink": {a: {"w": 600, "fs": 1, "strokes": [stroke]}}})
-        self.assertEqual(list(pg.evaluate("()=>Ink.dump()")), [b]); self.assertEqual(self.errs, [])
+        self.assertEqual(list(pg.evaluate("()=>Ink.dump().docs")), ['q:' + b]); self.assertEqual(self.errs, [])
     def test_hostile_backup_values_never_execute(self):
         pg = self.page(); P = XSS
         self.imp(pg, {"bm": [P], "fav": [P], "learned": [P], "notes": {P: P}, "sr": {P: {"d": 1}}, "recent": [P, {"a": P}], "pref": {"x": P}, "streak": {"n": 1, "last": P},

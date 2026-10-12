@@ -295,7 +295,7 @@ a,button,.topic,.card header,.qi-h,.qs-h{-webkit-tap-highlight-color:transparent
 @media print{
  @page{margin:16mm}
  html,body{background:#fff!important;color:#000!important;font-size:11pt}body::before,.hero-in::before{display:none}
- .nav,#bnav,#tools,#ink,.bar,.chips,.acts,.note,.rel,.pager,.phones,.btns,.stats,.trust,.howto,.qtools,.toast,.cf,.qlearn,.qa-f a,.jump,.ring{display:none!important}
+ .nav,#bnav,#tools,.bar,.chips,.acts,.note,.rel,.pager,.phones,.btns,.stats,.trust,.howto,.qtools,.toast,.cf,.qlearn,.qa-f a,.jump,.ring{display:none!important}
  .hero-in{display:block;padding:0 0 8px}h1{font-size:22pt}
  .quiz .card:not(.open) .ans,.card .ans,.qi-a{display:block!important}.qi-a[hidden]{display:block!important}.qs-b[hidden]{display:grid!important}
  .card,.qi{box-shadow:none!important;border:1px solid #bbb;border-left:3px solid #1769e0;break-inside:avoid;margin:0 0 10px}

@@ -8,12 +8,12 @@ const ST=[
 ['Chapters','Questions grouped by Robbins chapter, then heading and topic. The ring shows how much of a chapter you have learned.','#/qa',''],
 ['An answer page','The first line is what you say first. Below are the parts in the order the examiner asks. Under each card: Learned, Bookmark, Favourite, Note and Share. Keys: B bookmarks, L marks learned.','#/01','.card'],
 ['Reading tools','The floating bar changes theme (Light, Sepia, Dark), text size, Focus, Calm reading, Listen (reads the answer aloud), Print, and steps to the previous or next question (arrow keys also work).','#/01','#tools'],
-['Handwriting (Ink)','Menu > Ink lets you write, highlight and erase on any answer with a pen or finger. It is saved on your device and included in backups.','#/menu',''],
+['Annotate','Tap Annotate to write, highlight and erase on any answer with a pen or finger. Ink follows the text when you change the text size, is saved on your device and is included in backups.','#/menu',''],
 ['Practice','Flashcards with spaced repetition, a timed viva mode and quiz mode. Press Space to show the answer, then 1, 2 or 3 to rate it Easy, Medium or Hard.','#/practice',''],
 ['MCQs','884 questions: 12 past papers, mock exams, quick 10-question sets and custom practice. Your mistakes are collected so you can retry them.','#/mcqs',''],
 ['Textbook','The Robbins chapters, cleaned for reading. Key concepts are highlighted, sections fold, your place is remembered, and chapters you open work offline.','#/textbook',''],
 ['Your space','Bookmarks, Favourites and Notes collect what you save. The Home page shows progress, your daily plan, streak and the topics to focus on next.','#/menu',''],
-['Backup and offline','Everything stays on your device. Menu > Export backup saves progress, notes and ink to a file; Import restores it. The site works offline once opened, and can be installed to your home screen.','#/menu','']];
+['Backup and offline','Everything stays on your device. Menu > Export backup saves progress, notes and handwriting to a file; Import restores it. The site works offline once opened, and can be installed to your home screen.','#/menu','']];
 /* selectors: spotlight target per step (first match inside the visible page, else anywhere) */
 const SEL={1:'#bnav',2:'.qtools',4:'.card>header',5:'#tools',6:'[data-tt=ink]',10:'[href="#/bookmarks"]',11:'[onclick="exp()"]'};
 const HAND='<svg viewBox="0 0 24 24"><path d="M9.2 11.2V5.4a1.6 1.6 0 0 1 3.2 0v5.2l4.4.9a2 2 0 0 1 1.6 2.3l-.7 4.2a3.3 3.3 0 0 1-3.2 2.8H10a3 3 0 0 1-2.4-1.2l-3-3.8a1.5 1.5 0 0 1 2.2-2l1.4 1.5z" fill="#fff" stroke="#241a14" stroke-width="1.3" stroke-linejoin="round"/></svg>';

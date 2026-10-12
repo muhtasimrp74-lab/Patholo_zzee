@@ -1,0 +1,54 @@
+/* Annotations v2 - layers, touch strategy, floating toolbar. Uses the site's theme variables. */
+.card .ans{position:relative}
+.an-c{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+.an-c.hl{z-index:1;mix-blend-mode:multiply}
+.an-c.ink,.an-c.wet{z-index:2}
+:root[data-theme=dark] .an-c.hl{mix-blend-mode:normal;opacity:.5}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .an-c.hl{mix-blend-mode:normal;opacity:.5}}
+body.an-hidden .an-c{display:none}
+/* Touch strategy: a drawing tool lets a finger draw (pinch-zoom still works). In "pen only" mode the finger keeps its
+   normal scrolling; a stylus is kept from scrolling by the touchstart handler (touchType) and by the hover class below. */
+body.an-on.an-pf:not(.an-t-hand) .an-host{touch-action:pinch-zoom}
+body.an-on.an-po:not(.an-t-hand) .an-host{touch-action:pan-x pan-y pinch-zoom}
+body.an-on.an-pen-near:not(.an-t-hand) .an-host{touch-action:none}
+body.an-on:not(.an-t-hand) .an-host{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+body.an-on.an-t-pen .an-host,body.an-on.an-t-hl .an-host{cursor:crosshair}
+body.an-on.an-t-er .an-host{cursor:cell}
+body.an-on .an-host{outline:1px dashed color-mix(in srgb,var(--clay,#c4573a) 40%,transparent);outline-offset:-1px}
+/* toolbar */
+#an-bar,#an-pill{position:fixed;z-index:60;left:50%;top:auto;bottom:calc(76px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:2px;max-width:calc(100vw - 16px);padding:6px 8px;border-radius:26px;
+ background:var(--glass-strong,var(--panel,#fff));color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 14px 40px rgba(33,25,31,.28);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:opacity .2s,transform .2s;touch-action:none}
+#an-bar{transform:translateX(-50%);flex-wrap:wrap;justify-content:center}
+#an-bar[style*="left"]{transform:none}#an-pill[style*="left"]{transform:none}
+#an-pill{transform:translateX(-50%);padding:6px 12px;gap:6px;cursor:pointer;min-height:44px}
+#an-bar[hidden],#an-pill[hidden],.an-pop[hidden]{display:none}
+#an-pill i{width:14px;height:14px;border-radius:50%;box-shadow:0 0 0 1.5px var(--text,#222) inset}
+body.an-drawing #an-bar,body.an-drawing #an-pill{opacity:.25;pointer-events:none}
+#an-bar button,.an-pop button{font:600 12.5px var(--body,system-ui,sans-serif);color:inherit;background:none;border:0;cursor:pointer}
+#an-bar>button{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:0;transition:background .15s,color .15s}
+#an-bar>button:hover:not(:disabled){background:color-mix(in srgb,var(--clay,#c4573a) 14%,transparent)}
+#an-bar>button:disabled{opacity:.35;cursor:default}
+#an-bar>button[aria-pressed=true]{background:var(--g-pulse,var(--clay,#c4573a));color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 4px 12px rgba(143,79,57,.35)}
+#an-bar>button[data-a=eye][aria-pressed=true],#an-bar>button[data-a=done]{background:none;box-shadow:none;color:var(--lbl,inherit)}
+#an-bar>button[data-a=done]{color:var(--sage2,#52663a)}
+#an-bar .an-grip{cursor:grab;color:var(--muted,#888);touch-action:none}
+#an-bar .an-sep{width:1px;height:26px;background:var(--line2,var(--line,#ddd));margin:0 4px}
+#an-bar .an-sw{width:44px;height:44px;border-radius:50%;background:none;position:relative}
+#an-bar .an-sw::after{content:"";position:absolute;inset:10px;border-radius:50%;background:var(--c,#222);box-shadow:0 0 0 2px var(--panel,#fff),0 0 0 3.5px var(--text,#222)}
+#an-bar svg,#an-pill svg{display:block;pointer-events:none}
+.an-pop{position:fixed;z-index:61;width:min(300px,calc(100vw - 16px));padding:12px;border-radius:18px;background:var(--glass-strong,var(--panel,#fff));color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 14px 40px rgba(33,25,31,.3);display:grid;gap:10px;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.an-pop .an-seg{display:flex;gap:4px;background:color-mix(in srgb,var(--text,#222) 7%,transparent);border-radius:999px;padding:3px}
+.an-pop .an-seg button{flex:1;min-height:36px;border-radius:999px;padding:0 8px}
+.an-pop .an-seg button[aria-pressed=true]{background:var(--panel,#fff);box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.an-pop .an-cols{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.an-pop .an-cols button{width:36px;height:36px;border-radius:50%;background:var(--c);box-shadow:0 0 0 1px rgba(33,25,31,.25)}
+.an-pop .an-cols button[aria-pressed=true]{box-shadow:0 0 0 2.5px var(--panel,#fff),0 0 0 4.5px var(--text,#222)}
+.an-pop .an-cols input[type=color]{width:36px;height:36px;border:0;padding:0;background:none;border-radius:50%}
+.an-pop .an-row{display:grid;grid-template-columns:84px 1fr;gap:8px;align-items:center;font-size:12.5px}
+.an-pop input[type=range]{width:100%;min-height:36px}
+.an-pop canvas{width:100%;height:36px}
+.an-note{position:fixed;z-index:62;left:50%;transform:translateX(-50%);bottom:calc(150px + env(safe-area-inset-bottom,0px));display:flex;gap:10px;align-items:center;max-width:min(520px,calc(100vw - 16px));padding:10px 14px;border-radius:16px;background:var(--panel,#fff);color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 10px 30px rgba(0,0,0,.3);font:500 13px/1.4 var(--body,system-ui)}
+.an-note button{min-height:44px;padding:0 12px;border-radius:999px;border:1px solid var(--line,#ccc);background:none;color:var(--lbl,inherit);font:600 12.5px var(--body,system-ui);cursor:pointer}
+@media(prefers-reduced-motion:reduce){#an-bar,#an-pill{transition:none}}
+@media(prefers-contrast:more){#an-bar,#an-pill,.an-pop,.an-note{border:2px solid currentColor;-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--panel,#fff)}}
+@media print{#an-bar,#an-pill,.an-pop,.an-note{display:none!important}.an-c.hl{mix-blend-mode:multiply;opacity:1}body.an-hidden .an-c{display:block}}

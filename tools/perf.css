@@ -15,7 +15,7 @@ html .card,html .qi,html .row,html .topic{content-visibility:auto;contain-intrin
 html .card.open,html .card:target,html .qi.o{content-visibility:visible}
 html .nav,html .bar,html .nh-bar,html #bnav,html #tools,html .toast,html .mx-top{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
 @media (hover:none),(pointer:coarse){
- html .nav,html .bar,html .nh-bar,html #bnav,html #tools,html .toast,html .mx-top,html .dp,html #nhr,html .nh-toc,html .qddl,html #ink{-webkit-backdrop-filter:none;backdrop-filter:none;background-color:var(--panel)}
+ html .nav,html .bar,html .nh-bar,html #bnav,html #tools,html .toast,html .mx-top,html .dp,html #nhr,html .nh-toc,html .qddl{-webkit-backdrop-filter:none;backdrop-filter:none;background-color:var(--panel)}
  html #v-home .hero::after{animation:none;mix-blend-mode:normal}
 }
 html{-webkit-tap-highlight-color:transparent;text-size-adjust:100%}

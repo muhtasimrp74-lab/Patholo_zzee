@@ -5,7 +5,7 @@ const HIT='button,a,.act,.topic,.dc,.pc,.qi-h,.card>header,.tbtile,.mtile,.nh-ro
 let last=0;
 function rm(e){setTimeout(()=>e.remove(),800)}
 document.addEventListener('pointerdown',e=>{if(e.button>0||!e.target.closest(HIT))return;const n=performance.now();if(n-last<60)return;last=n;
- if(document.body.classList.contains('inking'))return;
+ if(document.body.classList.contains('an-on'))return;
  const d=document.createElement('i');d.className='zz-tap';d.style.left=e.clientX+'px';d.style.top=e.clientY+'px';document.body.append(d);rm(d)},{passive:true});
 document.addEventListener('click',e=>{const a=e.target.closest('.act');if(!a)return;a.classList.remove('pop');void a.offsetWidth;a.classList.add('pop');setTimeout(()=>a.classList.remove('pop'),520);
  const k=a.dataset.k,c=a.closest('.card');if(!c||!['learned','bm','fav'].includes(k))return;let on=false;try{on=S[k].includes(c.id)}catch(e){}if(!on)return;
