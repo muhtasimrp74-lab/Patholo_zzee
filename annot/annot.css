@@ -92,3 +92,14 @@ body.an-on.an-t-st .an-host,body.an-on.an-t-nt .an-host{cursor:copy}body.an-on.a
 @media(prefers-contrast:more){#an-selpop{border:2px solid currentColor;background:var(--panel,#fff)}}
 @media print{#an-selpop{display:none!important}}
 #an-selbar button[hidden]{display:none}
+
+/* MCQ adapter */
+#an-fab{position:fixed;z-index:59;right:12px;bottom:calc(150px + env(safe-area-inset-bottom,0px));display:none;flex-direction:column;gap:8px;align-items:flex-end}
+body.mx-live #an-fab{display:flex}
+body.an-left #an-fab{right:auto;left:12px;align-items:flex-start}
+#an-fab button{min-height:44px;min-width:44px;border-radius:999px;border:1px solid var(--line,#ddd);background:var(--glass-strong,var(--panel,#fff));color:var(--text,#222);box-shadow:0 8px 24px rgba(33,25,31,.25);display:inline-flex;gap:6px;align-items:center;justify-content:center;padding:0 14px;font:600 13px var(--body,system-ui,sans-serif);cursor:pointer}
+#an-fab button[aria-pressed=true]{background:var(--clay,#c4573a);color:#fff;border-color:transparent}
+#an-fab #an-fab-eye{padding:0;width:44px}
+body.an-on.an-t-om .mx-card .mx-o,body.an-on.an-t-om .mx-card .mx-s,body.an-on.an-t-om .mx-card h3{cursor:pointer;-webkit-user-select:none;user-select:none}
+body.an-on .mx-card .mx-opts{-webkit-user-select:none;user-select:none}
+@media print{#an-fab{display:none!important}}
