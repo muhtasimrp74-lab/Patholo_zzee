@@ -8,12 +8,13 @@
 body.an-hidden .an-c{display:none}
 /* Touch strategy: a drawing tool lets a finger draw (pinch-zoom still works). In "pen only" mode the finger keeps its
    normal scrolling; a stylus is kept from scrolling by the touchstart handler (touchType) and by the hover class below. */
-body.an-on.an-pf:not(.an-t-hand) .an-host{touch-action:pinch-zoom}
-body.an-on.an-po:not(.an-t-hand) .an-host{touch-action:pan-x pan-y pinch-zoom}
-body.an-on.an-pen-near:not(.an-t-hand) .an-host{touch-action:none}
-body.an-on:not(.an-t-hand) .an-host{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+body.an-on.an-pf:not(.an-t-hand):not(.an-t-hi) .an-host{touch-action:pinch-zoom}
+body.an-on.an-po:not(.an-t-hand):not(.an-t-hi) .an-host{touch-action:pan-x pan-y pinch-zoom}
+body.an-on.an-pen-near:not(.an-t-hand):not(.an-t-hi) .an-host{touch-action:none}
+body.an-on:not(.an-t-hand):not(.an-t-hi) .an-host{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 body.an-on.an-t-pen .an-host,body.an-on.an-t-hl .an-host,body.an-on.an-t-shape .an-host{cursor:crosshair}
 body.an-on.an-t-er .an-host{cursor:cell}
+body.an-on.an-t-hi .an-host{cursor:text}
 body.an-on .an-host{outline:1px dashed color-mix(in srgb,var(--clay,#c4573a) 40%,transparent);outline-offset:-1px}
 /* toolbar */
 #an-bar,#an-pill{position:fixed;z-index:60;left:50%;top:auto;bottom:calc(76px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:2px;max-width:calc(100vw - 16px);padding:6px 8px;border-radius:26px;
