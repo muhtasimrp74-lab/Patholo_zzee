@@ -62,3 +62,20 @@ body.an-drawing #an-bar,body.an-drawing #an-pill{opacity:.25;pointer-events:none
 #an-selbar button:hover{background:color-mix(in srgb,var(--clay,#c4573a) 14%,transparent)}
 #an-selbar button[data-a=seldel]{color:var(--lbl,#a33)}
 @media print{#an-selbar{display:none!important}}
+
+/* stickers, sticky notes, favourites */
+.an-pin{position:absolute;z-index:4;width:26px;height:26px;padding:0;border:1.5px solid color-mix(in srgb,var(--c,#c4573a) 70%,#000);border-radius:7px 7px 7px 2px;background:color-mix(in srgb,var(--c,#c4573a) 22%,var(--panel,#fff));color:var(--text,#222);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(33,25,31,.25)}
+.an-pin svg{width:16px;height:16px}.an-pin[hidden]{display:none}
+.an-pin:focus-visible,.an-fv:focus-visible{outline:2px solid var(--lbl,#a33);outline-offset:2px}
+body.an-hidden .an-pin,body.an-hidden .an-sticky{display:none}
+.an-sticky{position:absolute;z-index:5;width:220px;max-width:calc(100% - 8px);padding:8px;border-radius:12px;background:color-mix(in srgb,var(--accbg,#f3e6a8) 85%,var(--panel,#fff));color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 10px 26px rgba(33,25,31,.3);display:grid;gap:6px}
+.an-sticky textarea{width:100%;box-sizing:border-box;resize:vertical;min-height:70px;padding:6px 8px;border:1px solid var(--line,#ccc);border-radius:8px;background:var(--panel,#fff);color:inherit;font:inherit;font-size:14px}
+.an-srow{display:flex;gap:4px;justify-content:flex-end}
+.an-srow button{min-height:44px;padding:0 12px;border:0;border-radius:999px;background:none;color:var(--lbl,inherit);font:600 12.5px var(--body,system-ui);cursor:pointer}
+.an-srow button:hover{background:color-mix(in srgb,var(--clay,#c4573a) 14%,transparent)}
+.an-pop .an-stks button{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
+.an-pop .an-stks svg{width:22px;height:22px}
+.an-pop .an-fav{gap:6px}.an-pop .an-cols .an-fv{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--c);color:#fff;mix-blend-mode:normal;box-shadow:0 0 0 1px rgba(33,25,31,.25)}
+.an-pop .an-hint{margin:0;font-size:12px;color:var(--muted,#777)}
+body.an-on.an-t-st .an-host,body.an-on.an-t-nt .an-host{cursor:copy}body.an-on.an-t-ls .an-host{cursor:none}
+@media print{.an-pin{box-shadow:none}.an-sticky{display:none!important}}
