@@ -209,7 +209,7 @@ s = s.replace(old_grid, '<h2 id="topics">Topics<small>%d questions</small></h2>%
 s = s.replace('<small>Browse</small>15 topics', '<small>Browse</small>%d topics' % len(order))
 
 s = s.replace("sort((a,b)=>a.slice(1)-b.slice(1))", "sort((a,b)=>(a.slice(1)-b.slice(1))||a.localeCompare(b))", 1)
-s = s.replace("new Blob([JSON.stringify(S,null,1)]", "new Blob([JSON.stringify(Object.assign({},S,{ink:(typeof Ink!=='undefined'?Ink.dump():{})}),null,1)]", 1)
+s = s.replace("new Blob([JSON.stringify(S,null,1)]", "new Blob([JSON.stringify(Object.assign({},S,{annot:(typeof Annot!=='undefined'?Annot.dump(true):undefined)}),null,1)]", 1)
 NEWIMP = r"""function vbk(o){const ob=x=>x&&typeof x==='object'&&!Array.isArray(x),ar=x=>Array.isArray(x),ids=x=>ar(x)&&x.length<=20000&&x.every(i=>typeof i==='string'&&i.length<=40);
 if(!ob(o)||!ids(o.bm))return null;const r={bm:o.bm};
 for(const k of['fav','learned'])if(k in o){if(!ids(o[k]))return null;r[k]=o[k]}
@@ -220,11 +220,12 @@ if('recent' in o){if(!ar(o.recent))return null;r.recent=o.recent}
 if('mcq' in o){const m=o.mcq;if(!ob(m))return null;for(const k of['p','o','rd','nt','day'])if(k in m&&!ob(m[k]))return null;for(const k of['bm','hist','rv'])if(k in m&&!ar(m[k]))return null;r.mcq=m}
 return r}
 function imp(f){if(!f)return;f.text().then(async t=>{let o,r=null;try{o=JSON.parse(t);r=vbk(o)}catch(e){}if(!r){alert('That file is not a valid backup. Nothing was changed.');return}
-const ink=o.ink;if(ink!==undefined&&!(ink&&typeof ink==='object'&&!Array.isArray(ink))){alert('The handwriting data in that backup is not valid. Nothing was changed.');return}
+const ink=o.ink,ann=o.annot;if(ink!==undefined&&!(ink&&typeof ink==='object'&&!Array.isArray(ink))){alert('The handwriting data in that backup is not valid. Nothing was changed.');return}
+if(ann!==undefined&&!(typeof Annot!=='undefined'&&Annot.validate(ann))){alert('The handwriting data in that backup is not valid. Nothing was changed.');return}
 let prev=null;try{prev=localStorage.getItem('vivaState')}catch(e){}
 try{if(prev!==null)localStorage.setItem('vivaStatePrev',prev)}catch(e){}
 try{localStorage.setItem('vivaState',JSON.stringify(Object.assign({},S,r)))}catch(e){alert('Could not save the restored data (storage full?). Nothing was changed.');return}
-if(ink&&typeof Ink!=='undefined'){try{await Ink.load(ink)}catch(e){try{if(prev===null)localStorage.removeItem('vivaState');else localStorage.setItem('vivaState',prev)}catch(e2){}alert('The handwriting in that backup could not be restored, so the restore was cancelled. Your notes and progress were not changed.');return}}
+if((ann!==undefined||ink)&&typeof Ink!=='undefined'){try{if(ann!==undefined)await Annot.load(ann);else await Ink.load(ink)}catch(e){try{if(prev===null)localStorage.removeItem('vivaState');else localStorage.setItem('vivaState',prev)}catch(e2){}alert('The handwriting in that backup could not be restored, so the restore was cancelled. Your notes and progress were not changed.');return}}
 Object.assign(S,r);save();location.reload()})}"""
 s = s.replace("function imp(f){if(!f)return;f.text().then(t=>{try{const o=JSON.parse(t);if(!o||!Array.isArray(o.bm))throw 0;Object.assign(S,o);save();location.reload()}catch(e){alert('That file is not a valid backup.')}})}",
  NEWIMP, 1)
@@ -233,7 +234,7 @@ _k0 = "try{S=Object.assign(S,JSON.parse(localStorage.getItem('vivaState')||'{}')
 assert _k0 in s
 _SAFE = r"""try{const raw=localStorage.getItem('vivaState')||'{}',o=JSON.parse(raw),ty=x=>Array.isArray(x)?'a':x===null?'n':typeof x;let bad=ty(o)!=='object';if(!bad)for(const k in o){if(k==='__proto__')continue;if(k in S&&ty(o[k])!==ty(S[k])){bad=1;continue}S[k]=o[k]}if(bad)try{localStorage.setItem('vivaStateCorrupt',raw)}catch(e){}}catch(e){}"""
 s = s.replace(_k0, _SAFE + _MIG, 1)
-assert 'Ink.load' in s and 'Ink.dump' in s and 'localeCompare(b))' in s
+assert 'Annot.load' in s and 'Annot.dump' in s and 'localeCompare(b))' in s
 
 
 QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1], {s_: RO.topic_order(c, s_) for s_ in CHAP[c][1]}] for c in CH_ORDER]}
@@ -285,16 +286,6 @@ CSS = r"""
 .chips button[aria-pressed=true]{border-color:var(--orange);color:var(--lbl)}
 section.part{margin:0 0 30px}.part-h{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:8px 0 14px}.part-h h3{margin:0;font:800 20px var(--disp)}.part-h .mu{color:var(--muted);font-size:13px;flex:1}
 .ring.pp{width:46px;height:46px;font-size:11px}
-.card .ans{position:relative}canvas.ink{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:2}
-#ink{position:fixed;left:50%;transform:translateX(-50%);bottom:70px;z-index:40;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:4px;max-width:calc(100vw - 20px);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:6px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
-#ink[hidden]{display:none}#ink button{background:none;border:0;color:var(--text);font:600 12px var(--body);padding:7px 10px;border-radius:999px;cursor:pointer}
-#ink button:hover:not(:disabled){background:var(--chip)}#ink button:disabled{opacity:.35;cursor:default}#ink button[aria-pressed=true]{background:var(--chip);color:var(--lbl);box-shadow:inset 0 0 0 1px var(--lbl)}
-#ink .done{color:var(--lbl)}#ink .sep{width:1px;height:22px;background:var(--line);margin:0 4px}
-#ink .sw button{width:22px;height:22px;padding:0;border-radius:50%;background:var(--c);border:2px solid transparent;margin:0 2px}#ink .sw button[aria-pressed=true]{border-color:var(--text);box-shadow:none;background:var(--c)}
-#ink .zs button{padding:7px 8px}
-body.inking.ink-pen .card .ans,body.inking.ink-hl .card .ans,body.inking.ink-er .card .ans,body.inking.ink-lasso .card .ans{touch-action:none;-webkit-user-select:none;user-select:none;cursor:crosshair}
-body.inking .card .ans{outline:1px dashed var(--line);outline-offset:-1px}
-@media print{#ink{display:none}}
 """
 s = re.sub(r'@font-face\{font-family:"(?:Plus Jakarta Sans|Source Sans 3)".*?\}\n?', '', s)
 s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='utf8').read() + open(os.path.join(HERE, 'premium.css'), encoding='utf8').read() + '</style>', 1)
@@ -315,8 +306,10 @@ CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
 POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'tutorial.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'motion.js'), encoding='utf8').read()
 assert '</script>' not in POLISH_JS
-s = s.replace("<script>\nif ('serviceWorker'", '<script>\n' + POLISH_JS + '\n</script>\n<script src="ink.js"></script>\n<script>\nif (\'serviceWorker\'', 1)
-assert 'src="ink.js"' in s and 'Content-Security-Policy' in s and 'zz-listen' in s
+s = s.replace("<script>\nif ('serviceWorker'", '<script>\n' + POLISH_JS + '\n</script>\n<script src="annot/annot.js"></script>\n<script>\nif (\'serviceWorker\'', 1)
+assert s.count('</head>') == 1
+s = s.replace('</head>', '<link rel="stylesheet" href="annot/annot.css"></head>', 1)
+assert 'src="annot/annot.js"' in s and 'annot/annot.css' in s and 'Content-Security-Policy' in s and 'zz-listen' in s
 
 # fix: counts() also matched dashboard elements with data-c="0".."3" and threw on S["0"].length
 _C_OLD = "document.querySelectorAll('[data-c]').forEach(e=>{const k=e.dataset.c;"
