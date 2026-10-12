@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import auto
 KEY = 'ch11'
 RUN = [r'\s*(?:\b\d{3}\s+)?CHAPTER\s*[1₁][1₁]\s+Blood Vessels(?:\s+\d{3}\b)?\s*']
-FIX = [('pool- ing', 'pooling')]
+FIX = [('pool- ing', 'pooling'), ('narrrowed', 'narrowed')]
 SRC, C, M, cap, part = auto.helpers(KEY, RUN, FIX)
 _H = [
  ('Vascular Structure and Function', 'Vascular Structure and Function', 2), ('VASCULAR ANOMALIES', 'Vascular Anomalies', 2), ('VASCULAR WALL RESPONSE TO INJURY', 'Vascular Wall Response to Injury', 2),
@@ -36,12 +36,25 @@ for b in SRC:
 for _k in ('11.2', '11.3', '11.5'):
     if not TABLES[_k][1]: TABLES[_k] = (TABLES[_k][0], [], 'Table content was lost in the source extraction; see the surrounding text.')
 _h, _t = auto.runin(M(191)) if hasattr(auto, 'runin') else re.match(r'^(.{3,90}?)\.\s+(.*)$', M(191), re.S).groups()
-OVR = {330: [('h3', 'Giant Cell (Temporal) Arteritis'), ('h4', 'Pathogenesis')], 348: [('h3', 'Polyarteritis Nodosa'), ('h4', 'Pathogenesis')],
+OVR = {330: [('h3', 'Giant Cell (Temporal) Arteritis'), ('h4', 'Pathogenesis')], 348: [('h4', 'Pathogenesis')],
        191: [('h4', _h.replace('**', '')), ('p', _t)], 212: [('h3', 'Consequences of Atherosclerotic Disease'), ('h4', 'Atherosclerotic Stenosis')]}
 DROP = {4, 305, 217, 216, 219, 227, 229, 67, 68, 462, 463, 464, 465}
 OVR[139] = [('p', M(139).replace('Genetic variation Family history Increasing age Male sex ', '', 1))]
 OVR[71] = [('p', M(71).replace('Pregnancy-induced (preeclampsia) ', '', 1))]
-NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=[], OVR=OVR, DROP=DROP, TABLES=TABLES)
+def _ri(i, head, lv):   # split a run-in subheading ("Head. Body...") out of source block i by cutting only
+    t = M(i).replace('**', ''); a, b = part(t, head + '.')
+    return ([('p', a)] if a else []) + [('h%d' % lv, head), ('p', b)]
+OVR[347] = _ri(347, 'Thromboangiitis Obliterans (Buerger Disease)', 3)
+OVR[355] = _ri(355, 'Polyarteritis Nodosa', 3)
+OVR[365] = _ri(365, 'Kawasaki Disease', 3)
+OVR[386] = _ri(386, 'Microscopic Polyangiitis', 4)
+OVR[392] = _ri(392, 'Granulomatosis With Polyangiitis', 4)
+# block 353: Buerger text interleaved with the tail of the Fig 11.24 caption -> cut the caption tail out
+_a, _r = part(M(353), ' autopsy of the patient'); _tail, _rest = part(' autopsy of the patient' + _r, ' rest—')
+OVR[353] = [('p', _a.rsplit(' at', 1)[0] + ' at rest—' + _rest.lstrip())]
+FIGFIX = {'11.24': cap(354) + ' ' + _tail.strip()}
+OVR[360] = [('p', M(360) + ' ' + M(361).replace('**Fig. 11.26**', 'Fig. 11.26'))]; OVR[361] = []   # paragraph split by a caption: join
+NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=[], OVR=OVR, DROP=DROP, TABLES=TABLES, FIGFIX=FIGFIX)
 def _post(nodes):
     out = []; last = None   # last text node index in out
     for nd in nodes:
