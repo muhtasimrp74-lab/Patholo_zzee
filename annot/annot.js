@@ -306,6 +306,6 @@ const API={ready,isReady:()=>isReady,dump,load,validate,flush,fromLegacy,state:(
  _debug:{docs:()=>St.docs,layer:k=>{const h=hostById(k.slice(2));return h&&layers.get(h)},px:(k,i)=>{const L=API._debug.layer(k);return L&&pxOf(L,St.docs[k].objs[i])},blocks:k=>{const h=hostById(k.slice(2));return blocksOf(h).list.map(b=>b.id)},setOn,P,color:c=>col(c),undoDepth:k=>(St.undo[k]||[]).length,dirty:()=>[...St.dirty],mem:()=>St.mem,legacy:readLegacy}};
 window.Annot=API;
 window.Ink={ready,dump:()=>dump(),async load(obj){if(obj&&obj.v===1&&obj.docs)return load(obj);
-  const map={};if(obj&&typeof obj==='object')for(const id in obj){const o=obj[id];if(/^q\d+$/.test(id)&&(typeof BY==='undefined'||BY[id])&&o&&typeof o==='object')map[id]=o}
+  const map={};if(obj&&typeof obj==='object')for(const id in obj){const o=obj[id];const t=alias()[id]||id;if(/^q\d+$/.test(id)&&(typeof BY==='undefined'||BY[t])&&o&&typeof o==='object')map[id]=o}
   const docs=fromLegacy(map),p={v:1,docs:{}};for(const k in docs)p.docs[k]=docs[k];return load(p)}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();

@@ -155,7 +155,7 @@ class Browser(unittest.TestCase):
     def test_ink_follows_merged_question_on_load_and_import(self):
         al = json.loads(re.search(r'const QALIAS=(\{.*?\});', rd('index.html')).group(1)); a, b = next(iter(al.items())); stroke = {'t': 'p', 'c': '#C4573A', 's': 2, 'p': [1, 1, 5, 5]}
         pg = self.page()
-        pg.evaluate("""([a,st])=>new Promise(r=>{const q=indexedDB.open('pathviva-ink',1);q.onsuccess=()=>{const t=q.result.transaction('ink','readwrite');t.objectStore('ink').put({id:a,w:600,fs:1,strokes:[st]});t.oncomplete=r}})""", [a, stroke])
+        pg.evaluate("""([a,st])=>new Promise(r=>{const q=indexedDB.open('pathviva-ink',1);q.onupgradeneeded=()=>q.result.createObjectStore('ink',{keyPath:'id'});q.onsuccess=()=>{const t=q.result.transaction('ink','readwrite');t.objectStore('ink').put({id:a,w:600,fs:1,strokes:[st]});t.oncomplete=r}})""", [a, stroke])
         pg.reload(); self.ready(pg); self.assertEqual(list(pg.evaluate("()=>Ink.dump().docs")), ['q:' + b])
         pg.evaluate("()=>Ink.load({})"); pg.wait_for_timeout(300); self.imp(pg, {"bm": [], "ink": {a: {"w": 600, "fs": 1, "strokes": [stroke]}}})
         self.assertEqual(list(pg.evaluate("()=>Ink.dump().docs")), ['q:' + b]); self.assertEqual(self.errs, [])
