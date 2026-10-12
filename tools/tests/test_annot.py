@@ -145,7 +145,8 @@ class AnnotBrowser(unittest.TestCase):
         pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='hi'}")
         pick = """s=>{const h=document.querySelector(s),bs=[...h.querySelectorAll('p,li')].filter(b=>!b.querySelector('p,li')&&b.textContent.trim().length>40);const a=bs[0],b=bs[1],w=el=>{const t=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n=t.nextNode();while(n&&n.nodeValue.trim().length<12)n=t.nextNode();return n};
           const n1=w(a),n2=w(b);getSelection().setBaseAndExtent(n1,0,n2,Math.min(10,n2.nodeValue.length));document.dispatchEvent(new PointerEvent('pointerup',{bubbles:true}))}"""
-        pg.evaluate(pick, sel); pg.wait_for_timeout(300)
+        pg.evaluate(pick, sel); pg.wait_for_timeout(300); self.assertEqual(self.objs(pg, cid), 0, 'selecting only offers the style popover'); self.assertEqual(pg.locator('#an-selpop:visible').count(), 1); self.assertEqual(pg.locator('#an-selpop .an-spb').count(), 4); self.assertEqual(pg.locator('#an-selpop .an-sps').count(), 6)
+        pg.click('#an-selpop [aria-label=Highlight]'); pg.wait_for_timeout(200)
         marks = pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,o.q.s,o.q.e])", 'q:' + cid); self.assertGreaterEqual(len(marks), 2); self.assertTrue(all(m[0] == 'mark' and m[3] > m[2] for m in marks))
         self.assertTrue(pg.evaluate("()=>getSelection().isCollapsed"), 'selection is cleared after highlighting')
         rects = lambda: pg.evaluate("k=>{const L=Annot._debug.layer(k),d=Annot._debug.docs()[k];return d.objs.map(o=>Annot._debug.markRects(L,o))}", 'q:' + cid)
@@ -252,6 +253,77 @@ class AnnotBrowser(unittest.TestCase):
         pg.evaluate("()=>{Annot.state().barrel='hl'}"); pg.evaluate(BTN, [sel, [[30, 120], [220, 120]], 1 | 2]); pg.wait_for_timeout(120); self.assertEqual(self.kinds(pg, cid), ['stroke:ball', 'stroke:hl'], 'barrel button = marker while held')
         pg.evaluate("()=>{Annot.state().barrel='off'}"); pg.evaluate(BTN, [sel, [[30, 160], [220, 160]], 1 | 2]); pg.wait_for_timeout(120); self.assertEqual(self.kinds(pg, cid)[-1], 'stroke:ball', 'barrel button can be switched off')
         pg.evaluate("()=>{Annot.state().barrel='er'}"); pg.evaluate(BTN, [sel, [[20, 160], [260, 160]], 1 | 2]); pg.wait_for_timeout(120); self.assertEqual(self.objs(pg, cid), 2, 'barrel button can erase'); self.assertEqual(self.errs, [])
+    def test_precise_eraser_splits_strokes_highlights_only_filter_and_undo(self):
+        pg = self.page(); cid, sel = self.open_card(pg); k = 'q:' + cid; pg.evaluate("()=>{Annot.state().mode='pf'}")
+        self.draw(pg, sel, [[30, 60, .5], [90, 60, .5], [150, 60, .5], [210, 60, .5], [270, 60, .5]]); self.assertEqual(self.objs(pg, cid), 1)
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'er',erm:'precise'})}"); self.draw(pg, sel, [[140, 50], [160, 70]], type='mouse')
+        self.assertEqual(self.objs(pg, cid), 2, 'rubbing the middle leaves two pieces'); self.assertEqual(self.kinds(pg, cid), ['stroke:ball', 'stroke:ball'])
+        pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 1, 'one undo restores the whole stroke'); pg.keyboard.press('Control+Shift+z'); self.assertEqual(self.objs(pg, cid), 2)
+        pg.keyboard.press('Control+z')
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'hl',pen:'ball'})}"); self.draw(pg, sel, [[30, 62], [270, 62]])
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'er',erm:'stroke',erf:'hl'})}"); self.draw(pg, sel, [[20, 62], [280, 62]], type='mouse')
+        self.assertEqual(self.kinds(pg, cid), ['stroke:ball'], 'highlights-only eraser removes the highlighter but not the ink')
+        pg.evaluate("()=>{Annot.state().erf='all'}"); self.draw(pg, sel, [[20, 62], [280, 62]], type='mouse'); self.assertEqual(self.objs(pg, cid), 0)
+        pg.evaluate("()=>{Object.assign(Annot.state(),{erm:'stroke',erf:'all'})}")
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertEqual(self.errs, [])
+    def test_text_marks_underline_strike_squiggle_in_six_colours(self):
+        pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='hi'}"); k = 'q:' + cid
+        pick = """s=>{const h=document.querySelector(s),b=[...h.querySelectorAll('p,li')].find(b=>!b.querySelector('p,li')&&b.textContent.trim().length>40),t=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n=t.nextNode();while(n&&n.nodeValue.trim().length<12)n=t.nextNode();getSelection().setBaseAndExtent(n,0,n,Math.min(14,n.nodeValue.length));document.dispatchEvent(new PointerEvent('pointerup',{bubbles:true}))}"""
+        for i, (lab, kind) in enumerate((('Underline', 'u'), ('Strikethrough', 's'), ('Squiggle', 'sq'), ('Highlight', 'hi'))):
+            pg.evaluate(pick, sel); pg.wait_for_timeout(250); pg.click('#an-selpop .an-sps >> nth=%d' % (i + 1)); self.assertEqual(self.objs(pg, cid), 2 * i + 1, 'a colour tap applies the last used style')
+            pg.evaluate(pick, sel); pg.wait_for_timeout(250); pg.click('#an-selpop [aria-label=%s]' % lab); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.at(-1).k", k), kind)
+            pg.evaluate("()=>{const s=Annot.state();s.mk='hi'}")
+        self.assertEqual(self.objs(pg, cid), 8); self.assertGreaterEqual(len(set(pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>o.c)", k))), 4, 'the six colours are all selectable')
+        ink = pg.evaluate("k=>{const L=Annot._debug.layer(k),g=L.ink.getContext('2d'),d=g.getImageData(0,0,L.ink.width,L.ink.height).data;let n=0;for(let i=3;i<d.length;i+=4)if(d[i])n++;return n}", k); self.assertGreater(ink, 50, 'underline/strike/squiggle lines are painted')
+        for fs in (1.3, 1): pg.evaluate("f=>{document.documentElement.style.setProperty('--fs',f);S.pref=S.pref||{};S.pref.fs=f}", fs); pg.wait_for_timeout(250); self.assertTrue(pg.evaluate("k=>{const L=Annot._debug.layer(k);return Annot._debug.docs()[k].objs.every(o=>(Annot._debug.markRects(L,o)||[]).length>0)}", k), fs)
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), 8)
+        pg.evaluate(pick, sel); pg.wait_for_timeout(250); self.assertEqual(pg.locator('#an-selpop:visible').count(), 1); pg.keyboard.press('Escape'); self.assertEqual(pg.locator('#an-selpop:visible').count(), 0); self.assertEqual(self.errs, [])
+    def test_text_selection_and_copy_still_work_when_annotate_is_off(self):
+        pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>Annot._debug.setOn(false)")
+        txt = pg.evaluate("s=>{const h=document.querySelector(s),b=h.querySelector('p');const r=document.createRange();r.selectNodeContents(b);getSelection().removeAllRanges();getSelection().addRange(r);return getSelection().toString()}", sel)
+        self.assertGreater(len(txt.strip()), 10); self.assertEqual(pg.locator('#an-selpop:visible').count(), 0); self.assertNotEqual(pg.evaluate("s=>getComputedStyle(document.querySelector(s)).userSelect", sel), 'none')
+    def test_triangle_brace_15_degree_snap_and_draw_and_hold(self):
+        import math
+        pg = self.page(); cid, sel = self.open_card(pg); k = 'q:' + cid
+        for kind in ('tri', 'brace'):
+            pg.evaluate("kd=>{Object.assign(Annot.state(),{tool:'shape',shape:kd})}", kind); self.draw(pg, sel, [[40, 40], [160, 110]], type='mouse')
+        self.assertEqual(self.kinds(pg, cid), ['shape:tri', 'shape:brace'])
+        polys = pg.evaluate("k=>{const L=Annot._debug.layer(k),d=Annot._debug.docs()[k];return d.objs.map(o=>Annot._debug.shapeOf(L,o).map(p=>p.length))}", k); self.assertEqual(polys[0], [4]); self.assertGreater(polys[1][0], 20)
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'shape',shape:'line'})}"); a = 14 * math.pi / 180; self.draw(pg, sel, [[60, 150], [60 + 100 * math.cos(a), 150 + 100 * math.sin(a)]], type='mouse')
+        q = pg.evaluate("k=>{const o=Annot._debug.docs()[k].objs.at(-1).q,W=Annot._debug.layer(k).host.clientWidth;return {x1:o.x1/4000*W,y1:o.y1/10,x2:o.x2/4000*W,y2:o.y2/10}}", k); self.assertAlmostEqual(math.degrees(math.atan2(q['y2'] - q['y1'], q['x2'] - q['x1'])), 15, delta=.6, msg='lines snap to 15 degree steps')
+        HOLD = """async ([s,pts,ms,type])=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),mk=(n,q,b)=>new PointerEvent(n,{pointerId:6,pointerType:type,isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+q[0],clientY:r.top+q[1],pressure:.5,buttons:b,button:0});
+            h.dispatchEvent(mk('pointerdown',pts[0],1));for(const q of pts.slice(1))document.dispatchEvent(mk('pointermove',q,1));await new Promise(r=>setTimeout(r,ms));document.dispatchEvent(mk('pointerup',pts.at(-1),0))}"""
+        circle = [[200 + 60 * math.cos(t / 40 * 6.283) + (t % 3), 120 + 45 * math.sin(t / 40 * 6.283) + (t % 2)] for t in range(41)]
+        def seg(a, b, n=12): return [[a[0] + (b[0] - a[0]) * i / n + (i % 2), a[1] + (b[1] - a[1]) * i / n + (i % 3) * .6] for i in range(n)]
+        tri = seg([300, 200], [380, 200]) + seg([380, 200], [340, 130]) + seg([340, 130], [300, 200]) + [[301, 201]]
+        rect = seg([40, 240], [160, 240]) + seg([160, 240], [160, 300]) + seg([160, 300], [40, 300]) + seg([40, 300], [40, 241]) + [[41, 241]]
+        line = seg([200, 260], [380, 270], 20)
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'pen',snap:true})}")
+        for pts, want in ((circle, 'ellipse'), (tri, 'tri'), (rect, 'rect'), (line, 'line')):
+            pg.evaluate(HOLD, [sel, pts, 750, 'pen']); pg.wait_for_timeout(120); self.assertEqual(pg.evaluate("k=>{const o=Annot._debug.docs()[k].objs.at(-1);return o.t==='shape'?o.k:o.t}", k), want, want)
+        n = self.objs(pg, cid); pg.evaluate(HOLD, [sel, circle, 100, 'pen']); pg.wait_for_timeout(120); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.at(-1).t", k), 'stroke', 'no hold = a normal stroke'); self.assertEqual(self.objs(pg, cid), n + 1)
+        pg.evaluate("()=>{Annot.state().snap=false}"); pg.evaluate(HOLD, [sel, circle, 750, 'pen']); pg.wait_for_timeout(120); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.at(-1).t", k), 'stroke', 'hold-to-snap can be switched off')
+        pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), n + 1)
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertEqual(self.errs, [])
+    def test_lasso_recolour_width_rotate_and_copy_paste_across_answers(self):
+        pg = self.page(); cid, sel = self.open_card(pg); k = 'q:' + cid; sync = lambda: pg.wait_for_timeout(120)
+        self.draw(pg, sel, wave(20, 30, 60, 6, 10), type='pen'); pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'shape',shape:'rect'})}"); self.draw(pg, sel, [[320, 40], [400, 100]], type='mouse')
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'st',stk:'star'})}"); self.tap(pg, sel, 250, 120); pg.evaluate("()=>{Annot.state().tool='sel'}")
+        lasso = lambda: (self.draw(pg, sel, [[5, 5], [470, 5], [470, 170], [5, 170], [5, 6]], type='mouse'), sync())
+        lasso(); self.assertEqual(len(pg.evaluate("()=>Annot._debug.sel()")), 3)
+        objs = lambda: pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>({t:o.t,c:o.c,w:o.w,r:(o.q&&o.q.r)||0,g:o.g||null}))", k)
+        before = objs(); pg.click('#an-selbar [data-a=selcol]'); pg.click('.an-pop[data-for=selcol] .an-cols button >> nth=2'); sync(); after = objs(); self.assertTrue(all(o['c'] == 'r' for o in after), 'recolour applies to every selected mark'); pg.keyboard.press('Control+z'); sync(); self.assertEqual([o['c'] for o in objs()], [o['c'] for o in before])
+        pg.click('#an-selbar [data-a=selthick]'); sync(); self.assertTrue(all(a['w'] > b['w'] for a, b in zip(objs(), before)), 'thicker'); pg.keyboard.press('Control+z'); sync(); self.assertEqual([o['w'] for o in objs()], [o['w'] for o in before])
+        pg.click('#an-selbar [data-a=selrotr]'); sync(); r = objs(); self.assertAlmostEqual(r[1]['r'], 262, delta=2, msg='box turns 15 degrees'); self.assertAlmostEqual(r[2]['r'], 262, delta=2, msg='sticker turns 15 degrees'); self.assertNotEqual(r[0]['g'], before[0]['g'], 'stroke points rotate')
+        pg.click('#an-selbar [data-a=selrotl]'); sync(); self.assertEqual(objs()[1]['r'], 0); pg.keyboard.press('Control+z'); sync(); pg.keyboard.press('Control+z'); sync(); self.assertEqual(objs()[1]['r'], 0)
+        for _ in range(2): pg.click('#an-selbar [data-a=selcopy]'); self.assertEqual(pg.evaluate("()=>Annot._debug.clip()"), 3)
+        pg.click('#an-selbar [data-a=selpaste]'); sync(); self.assertEqual(self.objs(pg, cid), 6, 'paste adds copies, undoable'); pg.keyboard.press('Control+z'); sync(); self.assertEqual(self.objs(pg, cid), 3)
+        cid2, sel2 = self.open_card(pg, 1); k2 = 'q:' + cid2; pg.evaluate("()=>{Annot.state().tool='sel'}"); self.draw(pg, sel2, [[200, 180], [201, 180]], type='mouse'); sync()
+        self.assertEqual(pg.locator('#an-selbar [data-a=selpaste]:visible').count(), 1, 'tapping empty space offers Paste'); pg.click('#an-selbar [data-a=selpaste]'); sync()
+        self.assertEqual(self.objs(pg, cid2), 3, 'copied marks land in the other answer')
+        ok = pg.evaluate("k=>{const bl=Annot._debug.blocks(k);return Annot._debug.docs()[k].objs.every(o=>o.a.b==null||bl.includes(o.a.b))}", k2); self.assertTrue(ok, 're-anchored to the target answer text')
+        px = pg.evaluate("k=>{const L=Annot._debug.layer(k);return Annot._debug.docs()[k].objs.map(o=>!!(o.t==='stroke'?Annot._debug.px(k,Annot._debug.docs()[k].objs.indexOf(o)):Annot._debug.shapeOf(L,o)||o.q))}", k2); self.assertTrue(all(px))
+        d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertEqual(self.errs, [])
     def test_wet_stroke_benchmark_has_no_long_frames(self):
         pg = self.page(); cid, sel = self.open_card(pg)
         r = pg.evaluate("""async s=>{const h=document.querySelector(s),b=h.getBoundingClientRect(),mk=(n,x,y)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,clientX:b.left+x,clientY:b.top+y,pressure:.5,buttons:1});
