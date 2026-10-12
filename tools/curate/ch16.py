@@ -17,7 +17,7 @@ for b in SRC:
         rows = [[C(c or '') for c in r] for r in (b.get('rows') or [])]
         TABLES[b['id']] = (re.sub(r'^TABLE\s+[\d.]+\s*', '', C(b.get('caption', ''))), rows, C(b.get('note') or '') if rows else 'Table content was lost in the source extraction; see the text.')
 DROP = {4} | set(range(234, 241))
-OVR = {12: [('h2', 'Oral Cavity'), ('h3', 'Inflammatory/Reactive Lesions')], 113: [('h3', 'Tumors of the Nose and Nasopharynx')]}
+OVR = {12: [('h2', 'Oral Cavity'), ('h3', 'Inflammatory/Reactive Lesions')], 113: [('h3', 'Tumors of the Nose and Nasopharynx')], 13: [('h4', 'Aphthous Ulcers (Canker Sores)')]}
 
 _t234, _t236, _t238, _t239 = M(234), M(236), M(238), M(239)
 _mu = _t234.split(' organized in sheets')[0]

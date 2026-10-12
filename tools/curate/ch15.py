@@ -20,7 +20,7 @@ for b in SRC:
         rows = [[C(c or '') for c in r] for r in (b.get('rows') or [])]
         TABLES[b['id']] = (re.sub(r'^TABLE\s+[\d.]+\s*', '', C(b.get('caption', ''))), rows, C(b.get('note') or '') if rows else 'Table content was lost in the source extraction; its leftover entries appear in the text.')
 DROP = {9, 45, 71, 75, 77}
-OVR = {192: [('h3', 'Bronchiectasis'), ('h4', 'Pathogenesis')]}
+OVR = {185: [('h3', 'Bronchiectasis'), ('p', M(185))], 192: [('h4', 'Pathogenesis')]}   # heading belongs before the Bronchiectasis intro (block 185), not before its Pathogenesis
 NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=[], OVR=OVR, DROP=DROP, TABLES=TABLES)
 def _post(nodes):
     out = []; last = None   # last text node index in out
