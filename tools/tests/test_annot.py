@@ -128,6 +128,19 @@ class AnnotBrowser(unittest.TestCase):
         self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('.an-pop,#an-bar')].length>0"), True)
         self.assertNotEqual(pg.evaluate("()=>Annot._debug.color('k')"), pg.evaluate("()=>{document.documentElement.dataset.theme='light';return Annot._debug.color('k')}"))
         bb = pg.evaluate("()=>{const b=document.querySelector('#an-bar').getBoundingClientRect(),n=document.querySelector('#bnav');return [b.bottom,n&&n.offsetParent?n.getBoundingClientRect().top:9999]}"); self.assertLessEqual(bb[0], bb[1] + 1, 'toolbar never overlaps #bnav')
+    def test_shapes_draw_snap_erase_undo_and_survive_backup(self):
+        pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='shape'}")
+        for k in ('line', 'arrow', 'rect', 'ellipse'):
+            pg.evaluate("k=>{Annot.state().shape=k}", k); n = self.objs(pg, cid); self.draw(pg, sel, [[40, 40], [120, 100], [200, 103]], type='mouse'); self.assertEqual(self.objs(pg, cid), n + 1, k)
+        got = pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,Object.keys(o.q).sort().join()])", 'q:' + cid)
+        self.assertEqual(got, [['shape', k, 'x1,x2,y1,y2'] for k in ('line', 'arrow', 'rect', 'ellipse')])
+        pg.evaluate("()=>{Annot.state().shape='line'}"); self.draw(pg, sel, [[300, 40], [420, 43]], type='mouse')   # ~1.4 degrees: snaps flat
+        q = pg.evaluate("k=>{const o=Annot._debug.docs()[k].objs.at(-1);return o.q}", 'q:' + cid); self.assertEqual(q['y1'], q['y2'])
+        self.draw(pg, sel, [[10, 10], [12, 11]], type='mouse'); self.assertEqual(self.objs(pg, cid), 5, 'a tiny drag is not a shape')
+        d = pg.evaluate("()=>Annot.dump()"); self.assertEqual(pg.evaluate("d=>!!Annot.validate(d)", d), True)
+        pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), 5)
+        pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[300, 20], [300, 60]], type='mouse'); self.assertEqual(self.objs(pg, cid), 4, 'eraser removes a shape it crosses')
+        pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 5); self.assertEqual(self.errs, [])
     def test_wet_stroke_benchmark_has_no_long_frames(self):
         pg = self.page(); cid, sel = self.open_card(pg)
         r = pg.evaluate("""async s=>{const h=document.querySelector(s),b=h.getBoundingClientRect(),mk=(n,x,y)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,clientX:b.left+x,clientY:b.top+y,pressure:.5,buttons:1});
