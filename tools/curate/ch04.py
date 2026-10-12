@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import auto
 KEY = 'ch04'
 RUN = [r'\s*(?:\b\d{3}\s+)?CHAPTER\s*[4₄]\s+Hemodynamic Disorders, Thromboembolic Disease, and Shock(?:\s+\d{3}\b)?\s*']
-FIX = [('atrial fibrilation', 'atrial fibrillation'), ('thrombo-philia', 'thrombophilia'), ('a₂-plasmin', 'α₂-plasmin'), ('b₂-glycoprotein', 'β₂-glycoprotein'), ('pool- ing', 'pooling')]
+FIX = [('atrial fibrilation', 'atrial fibrillation'), ('thrombo-philia', 'thrombophilia'), ('a₂-plasmin', 'α₂-plasmin'), ('b₂-glycoprotein', 'β₂-glycoprotein'), ('pool- ing', 'pooling'), ('fac- tor', 'factor'), ('criti- cal', 'critical'), ('com- promised', 'compromised'), ('hypopro- teinemia', 'hypoproteinemia'), ('organ- ism', 'organism')]
 SRC, C, M, cap, part = auto.helpers(KEY, RUN, FIX)
 def strip(i, *junk):
     s = M(i)
@@ -45,16 +45,49 @@ DROP |= set(range(343, 361)) | {100, 87}
 _a96 = part(M(96), ' The major regulator of NO')[0]
 OVR[96] = [('ul', [_a96 + ' The major regulator of NO ' + M(100)])]
 OVR[124] = [('p', '…where the high rates' + part(M(124), 'where the high rates')[1])]
+import colsplit, tabfix
+# ---- thrombin activities (block 86): diagram-label words deleted, then the thrombin text (col A) and the Fig 4.7 caption tail (col B) are separated by cutting
 _t = M(86)
-for _j in ['Inactive factor II (prothrombin) ', 'he- Active factor IIa mostasis', ' Active Inactive Activated (thrombin) bin’s', ' coagulation coagulation factor X', ' factor factor (Xa)', ' (enzyme) (substrate)', 'criti- Fibrinogen Fibrin cal', 'covalently cross- tor II']:
-    pass
-_a = part(_t, ' • Conversion of fibrinogen')[0]
-_a = _a.replace(' coagulation coagulation factor X', '').replace('Inactive factor II (prothrombin) ', '').replace('of he- Active factor IIa mostasis', 'of hemostasis').replace('throm- Active Inactive Activated (thrombin) bin’s', 'thrombin’s')
-_b = 'Conversion of fibrinogen' + part(_t, ' • Conversion of fibrinogen')[1]
-_b = part(_b, ' tor II (prothrombin)')[0]
-for _x, _y in [(' coagulation coagulation factor X', ''), (' factor factor (Xa)', ''), (' (enzyme) (substrate)', ' (enzyme)'), ('criti- Fibrinogen Fibrin cal cofactors', 'critical cofactors'), ('covalently cross-', 'covalently cross-links fibrin.')]:
-    _b = _b.replace(_x, _y)
-OVR[86] = [('p', re.sub(r'\s+', ' ', _a).strip()), ('ul', [re.sub(r'\s+', ' ', _b).strip()])]
-OVR[88] = [('fig', '4.7', 'Conversion of factor X to factor Xa, which in turn converts factor II (prothrombin) to factor IIa (thrombin).'), ('fig', '4.8', cap(88))]
+for _j in ['Inactive factor II (prothrombin) ', ' Active factor IIa ', ' Active Inactive Activated (thrombin) ', ' coagulation coagulation factor X ', ' factor factor (Xa) ', ' (enzyme) (substrate) ', ' Fibrinogen Fibrin ', ' Platelet Neutrophil aggregation adhesion and degranulation muscle cells activation']:
+    assert _j.strip() in _t, _j; _t = _t.replace(_j, ' ')
+_A, _B = colsplit.split(_t, ['tor II (prothrombin)', '• Platelet activation', 'reaction complex consists', 'tion and aggregation', 'on a platelet phospholipid', 'linking platelet function', 'components together', '• Proinflammatory effects', 'tor Xa becomes', 'cells, endothelium', 'coagulation cascade, converting', 'these receptors by thrombin', '(IIa) using factor Va', 'tory effects that contribute'])
+_tail87 = M(87).split(' fac- ')[1]                                  # "links fibrin." = end of the first bullet
+_A = _A.replace('cross- •', 'cross-' + _tail87 + ' •')
+_intro, *_bul = [x.strip() for x in _A.split(' • ')]
+OVR[86] = [('p', _intro), ('ul', _bul)]
+OVR[87] = []
+OVR[88] = [('fig', '4.7', C(M(87).split(' fac- ')[0].replace('**Fig. 4.7** ', '') + ' fac- ' + _B)), ('fig', '4.8', cap(88))]
+# ---- Fig 4.1 / Fig 4.2 captions (block 10) and the right-hand text column of block 11
+_c10a, _c10b = colsplit.split(M(10), [' Fig. 4.2 ', ' mally,', ' malnutrition,', ' is little net movement'])
+_c11a, _c11b = colsplit.split(M(11), ['synthesis or increased loss', 'drostatic pressure', ' mon causes', ' the extravasation', ' synthesis occurs', ' of the excess fluid', ' Chapter 18)'])
+OVR[10] = [('fig', '4.1', re.sub(r'^\*\*Fig\. 4\.1\*\*\s*', '', _c10a) + ' ' + _c11a), ('fig', '4.2', re.sub(r'^Fig\. 4\.2\s*', '', _c10b))]
+OVR[11] = []
+_lab13 = ['Increased Hydrostatic Pressure', 'Impaired Venous Return', 'Congestive **heart failure**', 'Constrictive **pericarditis**', 'Ascites (liver cirrhosis)']
+_t13 = M(13)
+for _j in _lab13: assert _j.replace('**', '') in _t13.replace('**', ''), _j; _t13 = _t13.replace(_j, ' ') if _j in _t13 else _t13.replace(_j.replace('**', ''), ' ')
+_t13 = re.sub(r'\s+', ' ', _t13).strip()
+_cap12 = SRC[12]['caption'].split('Edema ', 1)[1]                    # "capillaries. Regardless of cause ... leads" is the tail of the paragraph, caught in the table caption
+_pre8 = 'Under ' + part(M(8), ' inadequate')[0].replace('Reduced Plasma Osmotic Pressure ', '', 1) + ' inadequate'
+OVR[8] = [('h3', 'Reduced Plasma Osmotic Pressure'), ('p', re.sub(r'\s+', ' ', _pre8 + ' ' + _c11b + ' ' + C(_cap12) + ' … ' + _t13))]
+OVR[13] = []
+DROP -= {8, 14, 17}   # these blocks are now rebuilt through OVR (headings / paragraph)
+OVR[14] = [('h3', 'Sodium and Water Retention')]
+OVR[17] = [('h3', 'Lymphatic Obstruction')]
+OVR[19] = [('p', strip(19, 'Increased renin-angiotensin-aldosterone secretion', 'Acute inflammation', 'Chronic inflammation', 'Angiogenesis', 'Inflammation', 'Modified from Leaf A, Cotran RS. Renal Pathophysiology. 3rd ed. Oxford Uni-', 'versity Press; ¹⁹⁸⁵:¹⁴⁶.'))]
+for _k in (15, 19):   # hyphenated line breaks that were separated by deleted table-cell text
+    OVR[_k] = [('p', OVR[_k][0][1].replace('com- promised', 'compromised').replace('hypopro- teinemia', 'hypoproteinemia').replace('organ- ism', 'organism'))]
+# Table 4.1: the cell labels survive as fragments in blocks 13-19 (they were previously deleted from the text); assemble them
+_src = ' '.join(M(i) for i in range(13, 20)).replace('**', '')
+_row = lambda h, items: [h, '; '.join(items)]
+_T41 = [['Category', 'Examples'],
+  _row('Increased Hydrostatic Pressure: Impaired Venous Return', ['Congestive heart failure', 'Constrictive pericarditis', 'Ascites (liver cirrhosis)', 'Thrombosis', 'External pressure (e.g., mass)', 'Lower extremity inactivity with prolonged dependency']),
+  _row('Arteriolar Dilation', ['Heat', 'Neurohumoral dysregulation']),
+  _row('Reduced Plasma Osmotic Pressure (Hypoproteinemia)', ['Protein-losing glomerulopathies (nephrotic syndrome)', 'Liver cirrhosis', 'Malnutrition', 'Protein-losing gastroenteropathy']),
+  _row('Sodium Retention', ['Excessive salt intake with renal insufficiency', 'Increased tubular reabsorption of sodium', 'Renal hypoperfusion', 'Increased renin-angiotensin-aldosterone secretion']),
+  _row('Lymphatic Obstruction', ['Inflammatory', 'Neoplastic', 'Postsurgical', 'Postirradiation']),
+  _row('Inflammation', ['Acute inflammation', 'Chronic inflammation', 'Angiogenesis'])]
+for _r in _T41[1:]:
+    for _x in _r[1].split('; '): assert _x in _src, _x           # every cell must come from the source text
+TABLES['4.1'] = ('Pathophysiologic Categories of Edema', _T41, 'Modified from Leaf A, Cotran RS. Renal Pathophysiology. 3rd ed. Oxford University Press; 1985:146. "Venous obstruction or compression" row label was lost in extraction.')
 NODES = auto.make(KEY, RUN, FIX, HEADS, RUNIN=RUNIN, OVR=OVR, DROP=DROP, TABLES=TABLES, CONT=())
 TITLE = 'Hemodynamic Disorders, Thromboembolic Disease, and Shock'
