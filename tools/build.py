@@ -249,8 +249,8 @@ ch.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.f)f=
 UX_JS = r"""
 function cardRows(){const by={A:[],B:[]};DATA.forEach(d=>d[0].split(' ').forEach(c=>{const m=/^([AB])\d+$/.exec(c);if(m&&!by[m[1]].includes(c))by[m[1]].push(c)}));
 return ['A','B'].map(L=>{const a=by[L].sort((x,y)=>x.slice(1)-y.slice(1));return '<div class="chips" style="padding:0;margin:0 0 12px;max-width:none;flex-wrap:wrap"><span class="mu" style="align-self:center">'+L+'-box cards:</span>'+(a.length?a.map(c=>'<a href="#/b/'+c+'">'+c+'</a>').join(''):'<span class="soon-t">coming soon</span>')+'</div>'}).join('')}
-const EMPTY_UI={bm:['No bookmarks yet','<path d="M6 3h12v18l-6-4-6 4z"/>'],fav:['No favourites yet','<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>'],notes:['No notes yet','<path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/>']};
-function emptyHTML(k){const u=EMPTY_UI[k]||EMPTY_UI.bm;return '<div class="empty"><svg viewBox="0 0 24 24" aria-hidden="true">'+u[1]+'</svg><b>'+u[0]+'</b><p>'+EMPTY[k].replace(/^No [a-z]+ yet\. /,'')+'</p><a class="pill" href="#/topics">Browse topics</a></div>'}
+function emptyHTML(k){const EMPTY_UI={bm:['No bookmarks yet','<path d="M6 3h12v18l-6-4-6 4z"/>'],fav:['No favourites yet','<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>'],notes:['No notes yet','<path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/>']};
+const u=EMPTY_UI[k]||EMPTY_UI.bm;return '<div class="empty"><svg viewBox="0 0 24 24" aria-hidden="true">'+u[1]+'</svg><b>'+u[0]+'</b><p>'+EMPTY[k].replace(/^No [a-z]+ yet\. /,'')+'</p><a class="pill" href="#/topics">Browse topics</a></div>'}
 (function(){
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 /* reveal on scroll (skips anything already on screen) */
