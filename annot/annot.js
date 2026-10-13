@@ -630,7 +630,7 @@ function buildUi(){
  grip.addEventListener('pointermove',e=>{if(dr)place(e.clientX-dr.x,e.clientY-dr.y,false)});const end=()=>{if(dr){dr=null;const r=bar.getBoundingClientRect();const dk=dockOf(r);if(dk){P.dock=dk;P.pos=null;setting('dock',dk);setting('pos',null);place()}else{P.dock=null;setting('dock',null);P.pos=[Math.round(r.left),Math.round(r.top)];setting('pos',P.pos)}}};
  grip.addEventListener('pointerup',end);grip.addEventListener('pointercancel',end);
  addEventListener('resize',()=>place());
- const tl=$('#tools');if(tl&&!$('[data-t=ink]',tl)){const b=document.createElement('button');b.type='button';b.dataset.t='ink';b.setAttribute('aria-pressed','false');b.textContent='Annotate';b.title='Write, highlight and erase on answers';b.addEventListener('click',()=>setOn(!P.on));tl.insertBefore(b,tl.firstChild)}
+ const tl=$('#tools');if(tl&&!$('[data-t=ink]',tl)){const b=document.createElement('button');b.type='button';b.dataset.t='ink';b.setAttribute('aria-pressed','false');b.textContent='Annotate';b.setAttribute('aria-label','Annotate');b.title='Annotate: write, highlight and erase on answers';b.addEventListener('click',()=>setOn(!P.on));tl.insertBefore(b,tl.firstChild)}
  sync()}
 /* dropping the toolbar near the top or bottom edge snaps it to a dock: left, centre or right. Elsewhere it stays where it is put. */
 function dockOf(r){const nav=$('#bnav'),nb=nav&&nav.offsetParent!==null?nav.getBoundingClientRect().height:0;let v;if(r.top<90)v='t';else if(innerHeight-nb-r.bottom<90)v='b';else return null;const cx=r.left+r.width/2;return v+(r.left<48&&r.right<innerWidth-48?'l':r.right>innerWidth-48&&r.left>48?'r':r.left<48&&r.right>innerWidth-48?(cx<innerWidth/2?'l':'r'):'c')}

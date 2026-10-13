@@ -178,7 +178,6 @@
 
 /* ===== UI polish: touch targets, readable text, nav clearance, calmer home hero ===== */
 @media(max-width:1000px){
- #tools{display:none!important}body.focus #tools{display:flex!important}
  body{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
 }
 .crumb a,.bar-in a,.nav .links a,.rel a,.chips a,.chips button,.qfc,.qk,.qb,.qseg button,.qf-clr,.qf-x,.qddb,.qfd-h,.topic,.pill{min-height:44px}
