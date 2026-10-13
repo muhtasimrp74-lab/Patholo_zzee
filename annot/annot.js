@@ -94,7 +94,7 @@ function validate(p){if(!p||typeof p!=='object'||Array.isArray(p)||p.v!==1||!p.d
  for(const k of ks){if(!KEYRE.test(k))return null;const d=p.docs[k];if(!d||typeof d!=='object'||Array.isArray(d)||!Array.isArray(d.objs)||d.objs.length>MAX.objs)return null;
   const ids=new Set(),objs=[];for(const o of d.objs){const c=cleanObj(o);if(!c||ids.has(c.i))return null;ids.add(c.i);objs.push(c);bytes+=(c.g?c.g.length:0)+(c.x?c.x.length:0)+60}
   all+=objs.length;if(all>MAX.all||bytes>MAX.bytes)return null;
-  const ws=d.ws===undefined?undefined:cleanWs(d.ws);if(d.ws!==undefined&&!ws)return null;out.docs[k]={k,v:2,rev:num(d.rev,0,1e9)?d.rev|0:0,upd:num(d.upd,0,4e12)?d.upd:0,objs};if(ws&&!k.startsWith('t:'))out.docs[k].ws=ws}
+  const ws=d.ws==null?undefined:cleanWs(d.ws);if(d.ws!=null&&!ws)return null;out.docs[k]={k,v:2,rev:num(d.rev,0,1e9)?d.rev|0:0,upd:num(d.upd,0,4e12)?d.upd:0,objs};if(ws&&!k.startsWith('t:'))out.docs[k].ws=ws}
  return out}
 
 /* ---------- legacy ink (pathviva-ink) -> v2 docs. Read-only. ---------- */
@@ -827,7 +827,7 @@ function settings(opener){const s=openSheet('an-set','Annotation settings',opene
 async function tip(force){if(!St.db&&!force)return;try{if(!force&&(await metaGet('tipped'))===1)return;await metaPut('tipped',1);if($('.an-tip'))return;const n=mk('div','an-note an-tip');n.setAttribute('role','status');n.append(mk('span',null,'Tip: tap a tool again for its options. The list button shows every annotation here, and the cog holds pen-only mode and left-handed mode.'),mkb('Got it',()=>n.remove()));document.body.append(n);setTimeout(()=>n.remove(),15000)}catch(e){}}
 function rove(cur){if(!bar)return;const bs=[...bar.querySelectorAll(':scope>button')];if(!bs.length)return;if(!cur||!bs.includes(cur))cur=bar.querySelector(':scope>[data-a][aria-pressed=true]:not([data-a=eye])')||bs[0];bs.forEach(b=>{b.tabIndex=b===cur?0:-1})}
 /* ---------- public API ---------- */
-function dump(mark){const docs={};for(const k in St.docs){const d=St.docs[k];if(d.objs.length||d.ws)docs[k]={rev:d.rev||0,upd:d.upd||0,ws:d.ws,objs:JSON.parse(JSON.stringify(d.objs.map(o=>{const c=Object.assign({},o);delete c.orphan;delete c.editing;delete c.anim;return c})))}}if(mark){St.meta.sinceBackup=0;metaPut('sinceBackup',0)}return{v:1,docs}}
+function dump(mark){const docs={};for(const k in St.docs){const d=St.docs[k];if(d.objs.length||d.ws)docs[k]={rev:d.rev||0,upd:d.upd||0,...(d.ws?{ws:d.ws}:{}),objs:JSON.parse(JSON.stringify(d.objs.map(o=>{const c=Object.assign({},o);delete c.orphan;delete c.editing;delete c.anim;return c})))}}if(mark){St.meta.sinceBackup=0;metaPut('sinceBackup',0)}return{v:1,docs}}
 async function load(payload){const v=validate(payload);if(!v)throw new Error('invalid annotation data');const docs=Object.create(null);for(const k in v.docs)if(v.docs[k].objs.length||v.docs[k].ws)docs[k]=v.docs[k];
  if(!St.db){Object.keys(St.docs).forEach(k=>delete St.docs[k]);Object.assign(St.docs,docs);repaintAll();return}
  const prev=dump(),tx=St.db.transaction(['docs','meta'],'readwrite');tx.objectStore('meta').put({k:'prev',v:{at:Date.now(),data:prev}});const os=tx.objectStore('docs');os.clear();Object.values(docs).forEach(d=>os.put(d));await txd(tx);
