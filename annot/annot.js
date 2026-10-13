@@ -634,9 +634,9 @@ function buildUi(){
  sync()}
 /* dropping the toolbar near the top or bottom edge snaps it to a dock: left, centre or right. Elsewhere it stays where it is put. */
 function dockOf(r){const nav=$('#bnav'),nb=nav&&nav.offsetParent!==null?nav.getBoundingClientRect().height:0;let v;if(r.top<90)v='t';else if(innerHeight-nb-r.bottom<90)v='b';else return null;const cx=r.left+r.width/2;return v+(r.left<48&&r.right<innerWidth-48?'l':r.right>innerWidth-48&&r.left>48?'r':r.left<48&&r.right>innerWidth-48?(cx<innerWidth/2?'l':'r'):'c')}
-function place(x,y,save){const el=P.mini?$('#an-pill'):bar,r=el.getBoundingClientRect(),nav=$('#bnav'),nb=nav&&nav.offsetParent!==null?nav.getBoundingClientRect().height:0,m=8;
+let an_bh='';function place(x,y,save){if(!P.on&&!save)return;const el=P.mini?$('#an-pill'):bar,r=el.getBoundingClientRect(),nav=$('#bnav'),nb=nav&&nav.offsetParent!==null?nav.getBoundingClientRect().height:0,m=8;
  if(x==null){const p=P.pos;if(p){x=p[0];y=p[1]}else{const dk=P.dock||(P.lh?'bl':'bc'),cs=getComputedStyle(document.documentElement),sab=parseFloat(cs.getPropertyValue('--sab'))||0,sat=parseFloat(cs.getPropertyValue('--sat'))||0;x=dk[1]==='l'?8:dk[1]==='r'?innerWidth-r.width-8:(innerWidth-r.width)/2;y=dk[0]==='t'?12+sat:innerHeight-r.height-nb-14-sab}}
- document.documentElement.style.setProperty('--an-bh',Math.round(r.height)+'px');const maxY=innerHeight-r.height-nb-m;x=clamp(x,m,Math.max(m,innerWidth-r.width-m));y=clamp(y,m,Math.max(m,maxY));
+ {const bh=Math.round(r.height)+'px';if(an_bh!==bh){an_bh=bh;document.documentElement.style.setProperty('--an-bh',bh)}}const maxY=innerHeight-r.height-nb-m;x=clamp(x,m,Math.max(m,innerWidth-r.width-m));y=clamp(y,m,Math.max(m,maxY));
  el.style.left=x+'px';el.style.top=y+'px';el.style.bottom='auto';if(save){P.pos=[Math.round(x),Math.round(y)];setting('pos',P.pos)}}
 function togglePop(id){if(pop&&pop.dataset.for===id){closePop();return}closePop();pop=document.createElement('div');pop.className='an-pop';pop.dataset.for=id;pop.setAttribute('role','dialog');pop.setAttribute('aria-label','Tool options');
  const row=(t,el)=>{const r=document.createElement('div');r.className='an-row';const l=document.createElement('span');l.textContent=t;r.append(l,el);return r};
@@ -720,7 +720,7 @@ document.addEventListener('keydown',e=>{if(!P.on||e.target.closest&&e.target.clo
  if(P.tool==='sel'&&clip&&(e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='v'){e.preventDefault();pasteClip();return}
  if(e.ctrlKey||e.metaKey||e.altKey)return;const m={p:'pen',h:'hl',t:'hi',s:'shape',x:'tx',k:'st',n:'nt',j:'ls',m:'om',l:'sel',e:'er',v:'hand'}[e.key.toLowerCase()];if(m){P.tool=m;setting('tool',m);closePop();sync();if(document.body.classList.contains('mx-live'))e.stopPropagation()}
  else if(e.key==='['||e.key===']'){const k=P.tool==='hl'?'hl':P.tool==='er'?'er':P.pen;P.sizes[k]=clamp(P.sizes[k]+(e.key===']'?1:-1),1,60);setting('sizes',P.sizes)}else if(e.key==='Escape')closePop()});
-new MutationObserver(()=>{repaintAll();sync()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme','data-tone']});
+new MutationObserver(()=>{repaintAll();if(P.on)sync()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme','data-tone']});
 matchMedia('(prefers-color-scheme:dark)').addEventListener&&matchMedia('(prefers-color-scheme:dark)').addEventListener('change',()=>repaintAll());
 new MutationObserver(()=>repaintAll()).observe(document.documentElement,{attributes:true,attributeFilter:['style','class']});
 addEventListener('beforeprint',()=>{printing=true;layers.forEach(L=>paint(L))});addEventListener('afterprint',()=>{printing=false;repaintAll()});
