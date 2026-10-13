@@ -217,7 +217,7 @@ if('notes' in o){if(!ob(o.notes)||!Object.values(o.notes).every(v=>typeof v==='s
 for(const k of['sr','pref'])if(k in o){if(!ob(o[k]))return null;r[k]=o[k]}
 if('streak' in o){if(!ob(o.streak)||typeof o.streak.n!=='number'||typeof o.streak.last!=='string')return null;r.streak=o.streak}
 if('recent' in o){if(!ar(o.recent))return null;r.recent=o.recent}
-if('mcq' in o){const m=o.mcq;if(!ob(m))return null;for(const k of['p','o','rd','nt','day'])if(k in m&&!ob(m[k]))return null;for(const k of['bm','hist','rv'])if(k in m&&!ar(m[k]))return null;r.mcq=m}
+if('mcq' in o){const m=o.mcq;if(!ob(m))return null;for(const k of['p','o','rd','nt','day'])if(k in m&&!ob(m[k]))return null;for(const k of['bm','hist','rv','ms'])if(k in m&&!ar(m[k]))return null;r.mcq=m}
 return r}
 function imp(f){if(!f)return;f.text().then(async t=>{let o,r=null;try{o=JSON.parse(t);r=vbk(o)}catch(e){}if(!r){alert('That file is not a valid backup. Nothing was changed.');return}
 const ink=o.ink,ann=o.annot;if(ink!==undefined&&!(ink&&typeof ink==='object'&&!Array.isArray(ink))){alert('The handwriting data in that backup is not valid. Nothing was changed.');return}

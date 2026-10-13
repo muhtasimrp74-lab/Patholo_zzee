@@ -217,3 +217,53 @@ body.mx-live #v-mcqs .hero{display:none}
 @media(pointer:coarse){.mx-qb{min-height:44px}}
 @media(max-width:420px){.mx-qa{gap:6px}.mx-qb{padding:0 12px 0 9px;font-size:.76rem}}
 @media print{.mx-qa{display:none!important}.mx-nbox{border:1px solid #999;background:none}}
+/* ===== v2: notes box, themed controls, session UI, in-place lists ===== */
+/* note box: full width under the buttons, left aligned */
+.card .acts .note,.acts .note{flex:0 0 100%;width:100%;max-width:100%;order:99;margin:6px 0 0;text-align:left;justify-self:stretch}
+.acts .note textarea{display:block;width:100%;min-height:96px;box-sizing:border-box;text-align:left}
+.mx-nbox{text-align:left;width:100%;box-sizing:border-box}
+/* in-place removal on Bookmarks / Favourites / Notes pages */
+.row.gone{opacity:.55}.row.gone a{text-decoration:line-through;text-decoration-thickness:1px}
+.row.gone .rm{opacity:1;border-color:var(--clay);color:var(--lbl)}
+/* themed form controls (no browser-default look) */
+select,.mx-sel,.jump,#pb,#pm,#pp,#pt{-webkit-appearance:none;appearance:none;padding-right:38px!important;cursor:pointer;
+ background-color:var(--panel);background-repeat:no-repeat;background-position:right 14px center;background-size:12px 8px;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1.5l5 5 5-5' fill='none' stroke='%238a4b36' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+ border:1px solid var(--line);border-radius:12px;color:var(--text);transition:border-color .15s,box-shadow .15s}
+select:hover{border-color:var(--clay)}select:focus-visible{outline:none;border-color:var(--clay);box-shadow:0 0 0 3px color-mix(in srgb,var(--clay) 25%,transparent)}
+select option{background:var(--panel);color:var(--text)}
+input[type=date]{-webkit-appearance:none;appearance:none;min-height:40px;padding:0 12px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--text);font-family:var(--body)}
+input[type=date]::-webkit-calendar-picker-indicator{opacity:.6;cursor:pointer}
+input[type=checkbox]:not(.mx-f input),input[type=radio]:not(.mx-f input){-webkit-appearance:none;appearance:none;position:relative;width:44px;height:26px;border-radius:99px;border:1px solid var(--line);background:var(--soft);cursor:pointer;vertical-align:middle;transition:background .18s,border-color .18s}
+input[type=checkbox]:not(.mx-f input)::after,input[type=radio]:not(.mx-f input)::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--panel);box-shadow:0 1px 3px rgba(40,20,10,.35);transition:transform .18s}
+input[type=checkbox]:not(.mx-f input):checked,input[type=radio]:not(.mx-f input):checked{background:var(--btn);border-color:var(--btn)}
+input[type=checkbox]:not(.mx-f input):checked::after,input[type=radio]:not(.mx-f input):checked::after{transform:translateX(18px)}
+input[type=checkbox]:not(.mx-f input):focus-visible,input[type=radio]:not(.mx-f input):focus-visible{outline:2px solid var(--clay);outline-offset:2px}
+input[type=range]{-webkit-appearance:none;appearance:none;height:6px;border-radius:99px;background:var(--soft);border:1px solid var(--line)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--btn);border:2px solid var(--panel);box-shadow:0 1px 4px rgba(40,20,10,.4)}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--btn);border:2px solid var(--panel)}
+.mx-sel{flex:1 1 220px}
+/* session: mode badge, question strip, counters, flag, sticky bar */
+.mx-mode{display:inline-block;margin-right:8px;padding:2px 9px;border-radius:99px;font:700 .64rem var(--body);font-style:normal;letter-spacing:.1em;text-transform:uppercase;vertical-align:1px;background:var(--accbg);color:var(--lbl);border:1px solid color-mix(in srgb,var(--clay) 35%,var(--line))}
+.mx-mode.m-mock,.mx-mode.m-test{background:var(--btn);border-color:var(--btn);color:#fff}
+.mx-mode.m-review{background:var(--soft);color:var(--muted);border-color:var(--line)}
+.mx-strip{display:flex;gap:6px;overflow-x:auto;padding:4px 2px 10px;margin:0 -2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.mx-strip::-webkit-scrollbar{display:none}
+.mx-strip button{position:relative;flex:none;min-width:34px;height:34px;padding:0 6px;border-radius:10px;border:1.5px solid var(--line);background:var(--panel);color:var(--muted);font:600 .78rem var(--body);cursor:pointer;transition:transform .12s,background .15s}
+.mx-strip button.an{background:var(--accbg);border-color:var(--clay);color:var(--lbl)}
+.mx-strip button.ok{background:var(--mx-okbg);border-color:var(--mx-ok);color:var(--mx-ok)}
+.mx-strip button.no{background:var(--mx-nobg);border-color:var(--mx-no);color:var(--mx-no)}
+.mx-strip button.cur{background:var(--btn);border-color:var(--btn);color:#fff;transform:translateY(-1px)}
+.mx-strip button.fg::after,.mx-pal-g button.fg::after{content:"";position:absolute;top:-3px;right:-3px;width:10px;height:10px;border-radius:50%;background:#d9822b;border:2px solid var(--bg)}
+.mx-pal-g button{position:relative}
+.mx-cnt{margin:0 0 10px;color:var(--muted);font:500 .8rem var(--body)}.mx-cnt b{color:var(--navy)}
+.mx-bm.mx-fg svg{fill:none}.mx-bm.mx-fg[aria-pressed=true]{color:#d9822b}.mx-bm.mx-fg[aria-pressed=true] svg{fill:currentColor}
+.mx-bm.mx-fg{right:54px}.mx-meta:has(.mx-fg){padding-right:96px}
+.mx-leg2{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 14px;color:var(--muted);font:500 .75rem var(--body)}
+.mx-leg2 span{display:inline-flex;align-items:center;gap:6px}.mx-leg2 i{width:12px;height:12px;border-radius:4px;border:1.5px solid var(--line);background:var(--soft)}
+.mx-leg2 i.an{background:var(--accbg);border-color:var(--clay)}.mx-leg2 i.un{border-style:dashed}.mx-leg2 i.fg{border-radius:50%;background:#d9822b;border-color:#d9822b}
+.mx-act{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.mx-qb-ms[aria-pressed=true]{background:var(--mx-nobg);border-color:var(--mx-no);color:var(--mx-no)}
+.mx-qb-ms[aria-pressed=false]{opacity:.85}
+.mx-card{transition:box-shadow .2s}
+@media(min-width:900px){.mx-run{max-width:760px;margin-inline:auto}}

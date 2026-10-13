@@ -535,7 +535,7 @@ if(!ids.length){box.innerHTML=`<p class="none" style="display:block">${EMPTY[k]}
 ids.forEach(id=>{const d=BY[id];if(!d)return;const row=document.createElement('div');row.className='row';const a=document.createElement('a');a.href=`#/${d[2]}/${id}`;
 a.innerHTML='<span class="code"></span><span class="t"></span><small></small>';a.children[0].textContent=d[0];a.children[1].textContent=d[1];a.children[2].textContent=d[4];row.append(a);
 if(k==='notes'){const p=document.createElement('p');p.className='nt';p.textContent=S.notes[id];row.append(p)}
-const x=document.createElement('button');x.className='rm';x.textContent='Remove';x.onclick=()=>{k==='notes'?delete S.notes[id]:S[k].splice(S[k].indexOf(id),1);save();paint(document.getElementById(id));counts();render(k)};
+const x=document.createElement('button');x.className='rm';x.textContent='Remove';const pos=k==='notes'?-1:S[k].indexOf(id),txt=k==='notes'?S.notes[id]:'';x.setAttribute('aria-pressed','false');x.onclick=()=>{const gone=row.classList.toggle('gone');if(gone){k==='notes'?delete S.notes[id]:S[k].splice(Math.max(0,S[k].indexOf(id)),1)}else{k==='notes'?S.notes[id]=txt:S[k].includes(id)||S[k].splice(Math.min(pos,S[k].length),0,id)}x.textContent=gone?'Add back':'Remove';x.setAttribute('aria-pressed',gone);save();const cd=document.getElementById(id);if(cd)paint(cd);counts()};
 row.append(x);box.append(row)})}
 
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;'),DAY=864e5,IV=[0,2,4,8,16,30],dstr=t=>{const d=new Date(t),y=d.getFullYear(),m=d.getMonth()+1,k=d.getDate();return y+'-'+(m<10?'0':'')+m+'-'+(k<10?'0':'')+k},
