@@ -55,7 +55,7 @@ const STAT={all:()=>true,fav:d=>S.fav.includes(d[3]),bm:d=>S.bm.includes(d[3]),n
 const txt=d=>{const c=document.getElementById(d[3]);return c&&c._t?c._t:(d[1]+' '+d[4]+' '+d[0]).toLowerCase()};
 /* when a single topic page is open, filters and counts cover that topic only */
 const TIDS=new Set(DATA.map(d=>d[2]));let _h=null,_sc=null;
-const SC=()=>{if(location.hash!==_h){_h=location.hash;const m=/^#\/([^\/?]+)/.exec(_h);_sc=m&&TIDS.has(m[1])?m[1]:null}return _sc};
+let _v=false;const SC=()=>{if(!_v){_v=true;Promise.resolve().then(()=>{_v=false});if(location.hash!==_h){_h=location.hash;const m=/^#\/([^\/?]+)/.exec(_h);_sc=m&&TIDS.has(m[1])?m[1]:null}}return _sc};
 const scN=()=>SC()?DATA.filter(d=>d[2]===SC()).length:DATA.length;
 const pass=(d,skip)=>(!SC()||d[2]===SC())&&(skip==='show'||!F.show.length||F.show.some(v=>STAT[v](d)))&&(skip==='type'||!F.type.length||F.type.some(v=>ty(d)===v||ty(d)==='B'))&&(skip==='part'||!F.part.length||F.part.includes(pk(d)))
  &&(skip==='card'||((!F.letter.length||F.letter.some(l=>hasL(d,l)))&&(!F.card.length||cds(d).some(c=>F.card.includes(c)))))&&(skip==='stars'||!F.stars.length||F.stars.includes(String(st(d))))&&(skip==='year'||!F.year.length||yrs(d).some(y=>F.year.includes(String(y))))&&(skip==='topic'||!F.topic.length||F.topic.includes(String(chOf(d))))&&(!F.q||txt(d).includes(F.q));

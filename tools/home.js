@@ -12,7 +12,7 @@ const isW=d=>TYW[d[3]]==='W',isB=d=>TYW[d[3]]==='B',kind=d=>isB(d)?'Written + Vi
 const stars=d=>(EX[d[3]]||[0])[0]||0;
 const years=d=>(EX[d[3]]||[0,'',[]])[2]||[];
 function pageOf(c){const a=byCh[c];if(!a)return null;const n={};a.forEach(d=>n[d[2]]=(n[d[2]]||0)+1);return Object.keys(n).sort((x,y)=>n[y]-n[x])[0]}
-const missing=id=>{const e=document.querySelector('#'+id+' .ans');return !!e&&/Answer to be added/.test(e.textContent)};
+let MISS=null;const missing=id=>{if(!MISS){MISS=new Set();document.querySelectorAll('.card').forEach(c=>{const e=c.querySelector('.ans');if(e&&/Answer to be added/.test(e.textContent))MISS.add(c.id)})}return MISS.has(id)};
 function esc2(t){return String(t).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
 const pct=(a,b)=>b?Math.round(100*a/b):0;
 const lnk=d=>'#/'+d[2]+'/'+d[3];
@@ -54,7 +54,7 @@ function heat(){
   for(let d=0;d<7;d++){const t=first+(w*7+d)*DAY,k=dstr(t);
    if(t>base+DAY/2){cells+='<i class="hm x"></i>';continue}
    const n=A[k]||0;tot+=n;if(n)act++;if(w===W-1)wk+=n;
-   cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short'})+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
+   cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+(()=>{const q=new Date(t);return q.getDate()+' '+MON[q.getMonth()]})()+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
  ml.forEach((x,i)=>{if(!ml[i+1]||ml[i+1][0]-x[0]>=3)mon+='<span style="grid-column:'+(x[0]+1)+'">'+x[1]+'</span>'});
  /* longest run of consecutive active days, all time */
  const ks=Object.keys(A).filter(k=>A[k]>0).sort();let best=0,run=0,prev=null;
@@ -159,7 +159,7 @@ wrap.addEventListener('click',e=>{
 wrap.addEventListener('change',e=>{
  if(e.target.id==='nhex'){S.pref=S.pref||{};if(e.target.value)S.pref.exam=e.target.value;else delete S.pref.exam;save();render()}
 });
-window.nhRender=render;render();
+window.nhRender=(function(){let q=0;return function(){if(q)return;q=1;requestAnimationFrame(function(){q=0;render()})}})();render();
 })();
 
 /* ---- put the reading tools (Ink / Theme / A- / A+ / Focus / Print) in the top bar: right next to "Start revising", inside the free space after the logo ---- */
