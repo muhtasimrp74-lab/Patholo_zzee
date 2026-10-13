@@ -733,6 +733,12 @@ document.addEventListener('pointermove',e=>{const o=gt.n.get(e.pointerId);if(o&&
 const gEnd=e=>{if(e.pointerType!=='touch'||!gt.n.has(e.pointerId))return;gt.n.delete(e.pointerId);if(gt.n.size)return;
  if(P.on&&P.gest&&e.type==='pointerup'&&!gt.moved&&performance.now()-gt.t0<380&&!(document.activeElement&&document.activeElement.matches&&document.activeElement.matches('textarea,input'))){if(gt.max===2)step(true);else if(gt.max===3)step(false)}gt.max=0};
 document.addEventListener('pointerup',gEnd,true);document.addEventListener('pointercancel',gEnd,true);
+/* two fingers moving together scroll the page (touch-action keeps pinch-zoom native but blocks two-finger pan while a drawing tool is on) */
+{let pan=null;const cur=new Map();const mid=()=>{const v=[...cur.values()];return{x:(v[0][0]+v[1][0])/2,y:(v[0][1]+v[1][1])/2,d:Math.hypot(v[0][0]-v[1][0],v[0][1]-v[1][1])}};
+document.addEventListener('pointermove',e=>{if(e.pointerType!=='touch'||!gt.n.has(e.pointerId)||!P.on||P.mode!=='pf')return;cur.set(e.pointerId,[e.clientX,e.clientY]);
+ if(gt.n.size!==2||cur.size<2){pan=null;return}const m=mid();if(!pan){pan=m;return}
+ if(Math.abs(m.d-pan.d)<10&&(!window.visualViewport||visualViewport.scale<=1.02)){const dy=pan.y-m.y,dx=pan.x-m.x;if(dx||dy)scrollBy(dx,dy)}pan=m},true);
+const rs=e=>{if(e.pointerType==='touch'){cur.delete(e.pointerId);pan=null}};document.addEventListener('pointerup',rs,true);document.addEventListener('pointercancel',rs,true)}
 /* ---------- gentle nudges: install on iOS, back up after lots of new work ---------- */
 let nud=0;async function nudges(){if(nud||!St.db)return;nud=1;try{const ios=/iP(ad|hone|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1),sa=navigator.standalone||matchMedia('(display-mode:standalone)').matches;
  St.meta.sinceBackup=(St.meta.sinceBackup||0)+1;let msg=null;
