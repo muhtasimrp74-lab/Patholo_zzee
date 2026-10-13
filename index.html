@@ -1895,6 +1895,11 @@ html body #tools button[data-t=listen][aria-pressed=true]{--ic:url("data:image/s
 @media(max-width:520px){html body #tools{padding:2px 1px}html body #tools button[data-t]:not(.fb){width:25px;height:32px}html body #tools button[data-t]:not(.fb)::before{width:17px;height:17px;margin:-8.5px 0 0 -8.5px}html body .nav .pill{min-width:0;padding-left:11px;padding-right:11px;font-size:.76rem;white-space:nowrap}}
 @media(max-width:380px){html body #tools button[data-t]:not(.fb){width:22px}html body #tools button[data-t]:not(.fb)::before{width:16px;height:16px;margin:-8px 0 0 -8px}}
 html body .nav{height:calc(60px + env(safe-area-inset-top,0px))}
+/* ---- touch screens: repeated cards drop soft shadows and gradient sheens (they are re-rasterised constantly while scrolling) ---- */
+@media (hover:none),(pointer:coarse){
+ html body :is(.topic,.card,.qi,.row,.dc,.pc,.part-h,.qs-h,.ph,.stats,.empty,.nh-prog,.nh-row a,.nh-g div,.pager a,.qlearn,.qb,.act,.qf-clr,.gb.ghost){box-shadow:none!important;background-image:none!important;text-shadow:none!important}
+ html body #v-home .hero::before,html body #v-home .hero::after{display:none}
+}
 @media print{html body #tools{display:none!important}}
 </style><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(localStorage.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme;if(p.theme==='light'&&p.tone==='sepia')document.documentElement.dataset.tone='sepia'}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1C1A19" media="(prefers-color-scheme: dark)">
@@ -3509,15 +3514,6 @@ try{
  addEventListener('hashchange',()=>{if(active)stop()});addEventListener('pagehide',()=>{try{syn.cancel()}catch(e){}});
 }catch(e){}
 })();
-
-/* ---- full screen: hides the phone's status bar (battery, time, network) and the browser bars. Browsers only allow this from a tap, so it
-   starts on the first tap of each visit; leaving full screen (swipe / back gesture) is respected until the page is reloaded. ---- */
-(function(){const de=document.documentElement;if(!de.requestFullscreen||matchMedia('(display-mode: fullscreen)').matches)return;
- let tried=false,declined=false;
- function enter(e){if(tried||declined||document.fullscreenElement||(e&&e.key==='Escape'))return;tried=true;
-  try{const r=de.requestFullscreen({navigationUI:'hide'});r&&r.catch&&r.catch(()=>{tried=false})}catch(x){tried=false}}
- document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&tried)declined=true});
- ['pointerup','touchend','keydown'].forEach(n=>addEventListener(n,enter,{capture:true,passive:true}))})();
 
 /* tutorial.js - guided tour of the whole site, opened from Menu > Study > Tutorial */
 (function(){try{

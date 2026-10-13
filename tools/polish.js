@@ -86,12 +86,3 @@ try{
  addEventListener('hashchange',()=>{if(active)stop()});addEventListener('pagehide',()=>{try{syn.cancel()}catch(e){}});
 }catch(e){}
 })();
-
-/* ---- full screen: hides the phone's status bar (battery, time, network) and the browser bars. Browsers only allow this from a tap, so it
-   starts on the first tap of each visit; leaving full screen (swipe / back gesture) is respected until the page is reloaded. ---- */
-(function(){const de=document.documentElement;if(!de.requestFullscreen||matchMedia('(display-mode: fullscreen)').matches)return;
- let tried=false,declined=false;
- function enter(e){if(tried||declined||document.fullscreenElement||(e&&e.key==='Escape'))return;tried=true;
-  try{const r=de.requestFullscreen({navigationUI:'hide'});r&&r.catch&&r.catch(()=>{tried=false})}catch(x){tried=false}}
- document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&tried)declined=true});
- ['pointerup','touchend','keydown'].forEach(n=>addEventListener(n,enter,{capture:true,passive:true}))})();

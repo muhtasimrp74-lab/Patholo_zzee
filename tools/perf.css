@@ -46,4 +46,9 @@ html body #tools button[data-t=listen][aria-pressed=true]{--ic:url("data:image/s
 @media(max-width:520px){html body #tools{padding:2px 1px}html body #tools button[data-t]:not(.fb){width:25px;height:32px}html body #tools button[data-t]:not(.fb)::before{width:17px;height:17px;margin:-8.5px 0 0 -8.5px}html body .nav .pill{min-width:0;padding-left:11px;padding-right:11px;font-size:.76rem;white-space:nowrap}}
 @media(max-width:380px){html body #tools button[data-t]:not(.fb){width:22px}html body #tools button[data-t]:not(.fb)::before{width:16px;height:16px;margin:-8px 0 0 -8px}}
 html body .nav{height:calc(60px + env(safe-area-inset-top,0px))}
+/* ---- touch screens: repeated cards drop soft shadows and gradient sheens (they are re-rasterised constantly while scrolling) ---- */
+@media (hover:none),(pointer:coarse){
+ html body :is(.topic,.card,.qi,.row,.dc,.pc,.part-h,.qs-h,.ph,.stats,.empty,.nh-prog,.nh-row a,.nh-g div,.pager a,.qlearn,.qb,.act,.qf-clr,.gb.ghost){box-shadow:none!important;background-image:none!important;text-shadow:none!important}
+ html body #v-home .hero::before,html body #v-home .hero::after{display:none}
+}
 @media print{html body #tools{display:none!important}}
