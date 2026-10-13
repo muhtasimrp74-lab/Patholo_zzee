@@ -34,15 +34,24 @@ const BLK='p,li,table,figure,aside,blockquote,h1,h2,h3,h4,h5,pre',BL=new WeakMap
 function fnv(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return(h>>>0).toString(16).padStart(8,'0')}
 function mxBlocks(host){const list=[],map=new Map(),st=host.querySelector(':scope > h3');if(st){list.push({el:st,id:'s'});map.set('s',st)}
  host.querySelectorAll('.mx-opts [data-j]').forEach(b=>{const id='o'+b.dataset.j;if(!/^o[0-4]$/.test(id)||map.has(id))return;const el=b.closest('.mx-s')||b;list.push({el,id});map.set(id,el)});return{sig:'mx',list,map}}
-function blocksOf(host){if(host.matches&&host.matches(MXS))return mxBlocks(host);const sig=host.childElementCount+':'+host.textContent.length;let c=BL.get(host);if(c&&c.sig===sig)return c;
+/* textbook: ids are the build-time data-b attributes (stable hash of the block's text, counted over the whole chapter) */
+function tbBlocks(host){let c=BL.get(host);if(c&&c.sig==='tb')return c;const list=[],map=new Map();
+ host.querySelectorAll('[data-b]').forEach(el=>{const id=el.getAttribute('data-b');if(!/^[0-9a-f]{8}(\.\d{1,5})?$/.test(id)||map.has(id))return;list.push({el,id,cont:!!el.querySelector('[data-b]')});map.set(id,el)});
+ c={sig:'tb',list,map};BL.set(host,c);return c}
+function tbNearest(host,x,y){const hr=host.getBoundingClientRect(),cx=hr.left+clamp(x,2,Math.max(2,hr.width-2)),cy=hr.top+y,seen=new Set();let best=null,bd=1e9,ba=1e12;
+ for(const dy of[0,-5,5,-12,12,-26,26,-52,52,-100,100]){const py=cy+dy;if(py<1||py>=innerHeight-1)continue;const e=document.elementFromPoint(cx,py),el=e&&e.closest&&e.closest('[data-b]');if(!el||seen.has(el)||!host.contains(el))continue;seen.add(el);
+  const r=el.getBoundingClientRect(),l=r.left-hr.left,t=r.top-hr.top,ddx=Math.max(l-x,0,x-(l+r.width)),ddy=Math.max(t-y,0,y-(t+r.height)),d=Math.hypot(ddx,ddy),ar=r.width*r.height;
+  if(d<bd-.01||(Math.abs(d-bd)<=.01&&ar<ba)){best={el,id:el.getAttribute('data-b')};bd=d;ba=ar}}
+ return best&&bd<=40?best:null}
+function blocksOf(host){if(host.matches&&host.matches(TBH))return tbBlocks(host);if(host.matches&&host.matches(MXS))return mxBlocks(host);const sig=host.childElementCount+':'+host.textContent.length;let c=BL.get(host);if(c&&c.sig===sig)return c;
  const list=[],map=new Map(),seen={};
  host.querySelectorAll(BLK).forEach(el=>{const tb=el.closest('table');if(tb&&tb!==el)return;if(el.tagName==='P'&&el.closest('li'))return;
   const t=(el.textContent||'').replace(/\s+/g,' ').trim().toLowerCase()||('<'+el.tagName+'>'),h=fnv(t),n=seen[h]=(seen[h]||0)+1,id=n>1?h+'.'+(n-1):h;list.push({el,id});map.set(id,el)});
  c={sig,list,map};BL.set(host,c);return c}
-function nearest(host,x,y){const hr=host.getBoundingClientRect();let best=null,bd=1e9,ba=1e12;
+function nearest(host,x,y){if(host.matches&&host.matches(TBH)){const q=tbNearest(host,x,y);if(q)return q}const hr=host.getBoundingClientRect();let best=null,bd=1e9,ba=1e12;
  for(const b of blocksOf(host).list){const r=b.el.getBoundingClientRect();if(!r.width&&!r.height)continue;const l=r.left-hr.left,t=r.top-hr.top,dx=Math.max(l-x,0,x-(l+r.width)),dy=Math.max(t-y,0,y-(t+r.height)),d=Math.hypot(dx,dy),ar=r.width*r.height;
   if(d<bd-.01||(Math.abs(d-bd)<=.01&&ar<ba)){best=b;bd=d;ba=ar}}return best}
-function origin(host,a,hr){if(!a||!a.b)return{x:0,y:0};const el=blocksOf(host).map.get(a.b);if(!el)return null;const r=el.getBoundingClientRect(),h=hr||host.getBoundingClientRect();return{x:r.left-h.left,y:r.top-h.top}}
+function origin(host,a,hr){if(!a||!a.b)return{x:0,y:0};const el=blocksOf(host).map.get(a.b);if(!el)return null;const r=el.getBoundingClientRect(),h=hr||host.getBoundingClientRect();if(!r.width&&!r.height&&host.matches&&host.matches(TBH))return null;return{x:r.left-h.left,y:r.top-h.top}}
 
 /* ---------- storage ---------- */
 const St={db:null,docs:Object.create(null),dirty:new Set(),timer:0,mem:false,warned:false,meta:{},undo:Object.create(null),redo:Object.create(null)};
@@ -52,7 +61,9 @@ const txd=tx=>new Promise((res,rej)=>{tx.oncomplete=()=>res();tx.onerror=tx.onab
 function openDb(){return new Promise((res,rej)=>{if(!window.indexedDB)return rej(new Error('no indexedDB'));const r=indexedDB.open(DBN,1);
  r.onupgradeneeded=()=>{r.result.createObjectStore('docs',{keyPath:'k'});r.result.createObjectStore('meta',{keyPath:'k'})};r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
 function warn(){if(St.warned)return;St.warned=true;try{alert('Handwriting could not be saved on this device (storage full or blocked). Your marks are still on screen until you leave this page. Use Menu > Export backup now to keep a copy.')}catch(e){}}
-function touch(k,quiet){const d=St.docs[k];if(!d)return;d.rev=(d.rev||0)+1;d.upd=Date.now();St.dirty.add(k);clearTimeout(St.timer);St.timer=setTimeout(flush,300);quiet||nudges()}
+const snip=t=>t.replace(/\s+/g,' ').trim().slice(0,100);
+function fillSnip(k,d){const h=hostByKey(k);if(!h)return;const m=blocksOf(h).map;for(const o of d.objs){const a=o.a;if(a&&a.b&&!a.t){const el=m.get(a.b);if(el)a.t=snip(el.textContent)}}}
+function touch(k,quiet){const d=St.docs[k];if(!d)return;if(k[0]==='t')fillSnip(k,d);d.rev=(d.rev||0)+1;d.upd=Date.now();St.dirty.add(k);clearTimeout(St.timer);St.timer=setTimeout(flush,300);quiet||nudges()}
 async function flush(){clearTimeout(St.timer);if(!St.dirty.size)return;const keys=[...St.dirty];St.dirty.clear();
  if(!St.db){St.mem=true;warn();return}
  try{const tx=St.db.transaction('docs','readwrite'),os=tx.objectStore('docs');
@@ -70,6 +81,7 @@ function cleanObj(o){if(!o||typeof o!=='object'||Array.isArray(o))return null;
  const a=o.a;if(!a||typeof a!=='object'||Array.isArray(a))return null;let an={};
  if(a.b!=null){if(typeof a.b!=='string'||!/^([0-9a-f]{8}(\.\d{1,5})?|s|o[0-4])$/.test(a.b))return null;an.b=a.b}else an.b=null;
  if(a.h!=null){if(a.h!==1)return null;an.h=1}
+ if(a.t!=null){if(typeof a.t!=='string'||a.t.length>120)return null;an.t=a.t}
  const r={i:o.i,t:o.t,k:o.k,c:o.c,w:+o.w,a:an};
  if(o.g!==undefined){if(typeof o.g!=='string'||o.g.length>MAX.g||!/^[A-Za-z0-9+/]*={0,2}$/.test(o.g))return null;r.g=o.g}
  if(o.al!==undefined){if(!num(o.al,.05,1))return null;r.al=+o.al}
@@ -110,7 +122,7 @@ async function init(){try{St.db=await openDb();const all=await rq(St.db.transact
   St.meta.set=(await metaGet('settings'))||{};await migrate()}catch(e){St.mem=true}
  try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
  applySettings(St.meta.set);St.meta.sinceBackup=+(await metaGet('sinceBackup'))||0;buildUi();mxInit();for(const k in St.docs){const h=hostByKey(k);h&&layerOf(h,k)}
- isReady=true;readyRes();document.dispatchEvent(new Event('annot-ready'))}
+ isReady=true;readyRes();document.dispatchEvent(new Event('annot-ready'));tbAttach()}
 
 /* ---------- settings (persisted, validated on read) ---------- */
 const DEFPRE=[{t:'pen',p:'ball',c:'k',z:2.2},{t:'pen',p:'fnt',c:'b',z:3.2},{t:'pen',p:'pencil',c:'r',z:3},{t:'hl',c:'y',z:14},{t:'pen',p:'ball',c:'g',z:2.2}];
@@ -125,21 +137,24 @@ function applySettings(s){if(!s||typeof s!=='object')return;const pick=(k,ok)=>{
 
 /* ---------- layers (one per answer) ---------- */
 const layers=new Map();let active=null;
-const MXS='article.mx-card[data-h]';
-const hostByKey=k=>{if(!k)return null;if(k.startsWith('q:')){const id=k.slice(2),c=document.getElementById(id);return c&&/^q\d+$/.test(id)?c.querySelector('.ans'):null}if(k.startsWith('m:')&&/^m:[0-9a-f]{8}$/.test(k))return document.querySelector('article.mx-card[data-h="'+k.slice(2)+'"]');return null};
+const MXS='article.mx-card[data-h]',TBH='#tbbody[data-ch]';
+const hostByKey=k=>{if(!k)return null;if(k.startsWith('q:')){const id=k.slice(2),c=document.getElementById(id);return c&&/^q\d+$/.test(id)?c.querySelector('.ans'):null}if(k.startsWith('m:')&&/^m:[0-9a-f]{8}$/.test(k))return document.querySelector('article.mx-card[data-h="'+k.slice(2)+'"]');if(/^t:ch\d{2}$/.test(k)){const h=document.querySelector(TBH);return h&&h.dataset.ch===k.slice(2)?h:null}return null};
 const hostById=id=>hostByKey('q:'+id);
-const keyOf=h=>{if(h.matches&&h.matches(MXS)){const x=h.dataset.h;return /^[0-9a-f]{8}$/.test(x)?'m:'+x:null}const c=h.closest('.card');return c&&/^q\d+$/.test(c.id)?'q:'+c.id:null};
-const hostOf=t=>{const h=t&&t.closest&&t.closest('.card .ans,'+MXS);return h&&keyOf(h)?h:null};
+const keyOf=h=>{if(h.matches&&h.matches(TBH)){const x=h.dataset.ch;return /^ch\d{2}$/.test(x)?'t:'+x:null}if(h.matches&&h.matches(MXS)){const x=h.dataset.h;return /^[0-9a-f]{8}$/.test(x)?'m:'+x:null}const c=h.closest('.card');return c&&/^q\d+$/.test(c.id)?'q:'+c.id:null};
+const hostOf=t=>{const h=t&&t.closest&&t.closest('.card .ans,'+MXS+','+TBH);return h&&keyOf(h)?h:null};
 const ro=new ResizeObserver(es=>es.forEach(e=>{const L=layers.get(e.target);L&&sched(L)}));
 function layerOf(host,key,make){let L=layers.get(host);if(L)return L;key=key||keyOf(host);if(!key)return null;
- L={host,key,hl:null,ink:null,wet:null,raf:0,fresh:true};layers.set(host,L);host.classList.add('an-host');ro.observe(host);sched(L);return L}
-function cv(L,cls){let c=L[cls];if(!c){c=document.createElement('canvas');c.className='an-c '+cls;c.setAttribute('aria-hidden','true');L.host.append(c);L[cls]=c}return c}
-function size(c,w,h){const d=Math.min(2,window.devicePixelRatio||1),k=Math.min(d,Math.sqrt(16e6/(w*h)),4096/Math.max(w,h)),W=Math.max(1,Math.round(w*k)),H=Math.max(1,Math.round(h*k));if(c.width!==W||c.height!==H){c.width=W;c.height=H}const g=c.getContext('2d');g.setTransform(W/w,0,0,H/h,0,0);return g}
+ L={host,key,hl:null,ink:null,wet:null,raf:0,fresh:true,tb:!!(host.matches&&host.matches(TBH)),win:null};layers.set(host,L);host.classList.add('an-host');ro.observe(host);sched(L);return L}
+function cv(L,cls){let c=L[cls];if(!c){c=document.createElement('canvas');c.className='an-c '+cls;c.setAttribute('aria-hidden','true');c._L=L;L.host.append(c);L[cls]=c}return c}
+function size(c,w,h){const wn=c._L&&c._L.win;let oy=0;{const tp=wn?wn.y+'px':'',ht=wn?wn.h+'px':'';if(wn){oy=wn.y;h=wn.h}if(c.style.top!==tp)c.style.top=tp;if(c.style.height!==ht)c.style.height=ht}
+ const d=Math.min(2,window.devicePixelRatio||1),k=Math.min(d,Math.sqrt(16e6/(w*h)),4096/Math.max(w,h)),W=Math.max(1,Math.round(w*k)),H=Math.max(1,Math.round(h*k));if(c.width!==W||c.height!==H){c.width=W;c.height=H}const g=c.getContext('2d');g.setTransform(W/w,0,0,H/h,0,-oy*H/h);return g}
 const sched=L=>{if(L.raf)return;L.raf=requestAnimationFrame(()=>{L.raf=0;paint(L);if(sel&&sel.L===L)showSel()})};
 const docOf=k=>St.docs[k];
 function pxOf(L,o,hr){const host=L.host,W=host.clientWidth,f=fsNow(),a=o.a;let ox=0,oy=0;
  if(a.h){/* migrated, not yet anchored to a block */}else{const org=origin(host,a,hr);if(!org)return null;ox=org.x;oy=org.y}
- return dec(o.g||'').map(q=>a.h?[q[0]/REF*W,q[1]/YU*800*f*f/W,q[2]/100]:[ox+q[0]/REF*W,oy+q[1]/YU*f,q[2]/100])}
+ let c=o._pc;if(!c||c.W!==W||c.f!==f||c.h!==!!a.h||c.g!==o.g){const rel=dec(o.g||'').map(q=>a.h?[q[0]/REF*W,q[1]/YU*800*f*f/W,q[2]/100]:[q[0]/REF*W,q[1]/YU*f,q[2]/100]);let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;rel.forEach(q=>{if(q[0]<x0)x0=q[0];if(q[0]>x1)x1=q[0];if(q[1]<y0)y0=q[1];if(q[1]>y1)y1=q[1]});
+  c={W,f,h:!!a.h,g:o.g,rel,bb:rel.length?[x0,y0,x1,y1]:null};Object.defineProperty(o,'_pc',{value:c,writable:true,configurable:true,enumerable:false})}
+ return c.rel.map(q=>[ox+q[0],oy+q[1],q[2]])}
 function adopt(L,d){const host=L.host,W=host.clientWidth;if(!W)return;let ch=0,hr=host.getBoundingClientRect();
  d.objs.forEach(o=>{if(!o.a.h||!o.g)return;const pts=pxOf(L,o,hr);if(!pts||!pts.length)return;const bl=nearest(host,pts[0][0],pts[0][1]);if(!bl)return;
   const org=origin(host,{b:bl.id},hr),f=fsNow();o.g=enc(pts.map(p=>[Math.round((p[0]-org.x)/W*REF),Math.round((p[1]-org.y)/f*YU),Math.round(p[2]*100)]));o.a={b:bl.id};o.w=+(o.w);ch=1});
@@ -182,11 +197,13 @@ function markRects(L,o,hr){const el=blocksOf(L.host).map.get(o.a.b);if(!el||!o.q
 function offIn(el,node,off){const r=document.createRange();r.selectNodeContents(el);r.setEnd(node,off);return r.toString().length}
 let selT=0,mkPend=null,selPop=null;
 function hideSelPop(){mkPend=null;if(selPop)selPop.hidden=true}
+function tbSlice(bo,rg){const f=n=>{const e=n.nodeType===1?n:n.parentElement;return e&&e.closest&&e.closest('[data-b]')},a=f(rg.startContainer),b=f(rg.endContainer),L=bo.list;let i=a?L.findIndex(x=>x.el===a):0,j=b?L.findIndex(x=>x.el===b):L.length-1;if(i<0)i=0;if(j<i)j=L.length-1;return L.slice(Math.max(0,i-1),Math.min(L.length,j+2))}
+function quoteOf(el,s,e){const tx=el.textContent;return{t:tx.slice(s,e).slice(0,300),p:tx.slice(Math.max(0,s-24),s),n:tx.slice(e,e+24)}}
 function takeSelection(){const sel=getSelection();if(!P.on||P.tool!=='hi'||!sel||sel.isCollapsed||!sel.rangeCount){if(!selPop||!selPop.contains(document.activeElement))hideSelPop();return}const rg=sel.getRangeAt(0),ce=rg.commonAncestorContainer,host=hostOf(ce.nodeType===1?ce:ce.parentElement);if(!host)return;
- const L=layerOf(host);if(!L)return;const list=blocksOf(host).list,objs=[];
- list.forEach(b=>{if(list.some(c=>c!==b&&b.el.contains(c.el)))return;if(!rg.intersectsNode(b.el))return;const len=b.el.textContent.length,
+ const L=layerOf(host);if(!L)return;const bo=blocksOf(host),list=L.tb?tbSlice(bo,rg):bo.list,objs=[];
+ list.forEach(b=>{if(b.cont!==undefined?b.cont:list.some(c=>c!==b&&b.el.contains(c.el)))return;if(!rg.intersectsNode(b.el))return;const len=b.el.textContent.length,
   s=b.el.contains(rg.startContainer)?offIn(b.el,rg.startContainer,rg.startOffset):0,e=b.el.contains(rg.endContainer)?offIn(b.el,rg.endContainer,rg.endOffset):len;
-  if(e-s>=1&&e>s&&!(rg.toString().trim()===''))objs.push({i:ID(),t:'mark',k:'hi',c:P.hlc,w:1,a:{b:b.id},q:{s,e}})});
+  if(e-s>=1&&e>s&&!(rg.toString().trim()===''))objs.push({i:ID(),t:'mark',k:'hi',c:P.hlc,w:1,a:{b:b.id},q:L.tb?Object.assign({s,e},quoteOf(b.el,s,e)):{s,e}})});
  if(!objs.length){hideSelPop();return}mkPend={L,objs};showSelPop(rg.getBoundingClientRect())}
 /* the style popover that appears at a text selection: highlight / underline / strikethrough / squiggle, in 6 colours */
 const MKL={hi:'Highlight',u:'Underline',s:'Strikethrough',sq:'Squiggle'};
@@ -201,7 +218,9 @@ document.addEventListener('pointerup',e=>{if(P.on&&P.tool==='hi'&&!(e.target.clo
 document.addEventListener('selectionchange',()=>{if(!P.on||P.tool!=='hi'){return}clearTimeout(selT);selT=setTimeout(takeSelection,450)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&selPop&&!selPop.hidden){hideSelPop()}});
 function lineCol(c){const h=col(c,true);if(themeNow()==='dark'||!/^#[0-9a-f]{6}$/i.test(h))return h;const n=parseInt(h.slice(1),16);return'#'+[16,8,0].map(sh=>Math.round(((n>>sh)&255)*.66).toString(16).padStart(2,'0')).join('')}
-function drawMark(gh,gi,o,rs){if(o.k==='hi'||!MKL[o.k]){gh.fillStyle=col(o.c,true);rs.forEach(r=>gh.fillRect(r[0]-1,r[1]+1,r[2]+2,r[3]-2));return}
+function drawMark(gh,gi,o,rs,tb){if(o.k==='hi'||!MKL[o.k]){gh.fillStyle=col(o.c,true);rs.forEach(r=>gh.fillRect(r[0]-1,r[1]+1,r[2]+2,r[3]-2));
+  /* textbook: a crisp marker edge under the fill keeps your highlights distinct from the book's own soft key-term highlighting */
+  if(tb){gi.save();gi.fillStyle=lineCol(o.c);rs.forEach(r=>gi.fillRect(r[0]-1,r[1]+r[3]-2,r[2]+2,2));gi.restore()}return}
  gi.save();gi.strokeStyle=lineCol(o.c);gi.lineWidth=Math.max(1.6,2*fsNow());gi.lineCap='round';gi.lineJoin='round';
  rs.forEach(r=>{gi.beginPath();if(o.k==='u'){const y=r[1]+r[3]-1;gi.moveTo(r[0],y);gi.lineTo(r[0]+r[2],y)}else if(o.k==='s'){const y=r[1]+r[3]*.55;gi.moveTo(r[0],y);gi.lineTo(r[0]+r[2],y)}
   else{const y=r[1]+r[3]-2,a=Math.max(1.4,r[3]*.07),st=Math.max(3,r[3]*.17);gi.moveTo(r[0],y);let up=true;for(let x=r[0]+st;x<r[0]+r[2]+st;x+=st){gi.lineTo(Math.min(x,r[0]+r[2]),y+(up?-a:a));up=!up}}gi.stroke()});gi.restore()}
@@ -257,25 +276,31 @@ const STKL={star:'Important',exam:'Asked in exam',ask:'Question',tick:'Correct',
 for(const k in STK)STKP[k]=new Path2D(STK[k]);
 function drawSticker(g,k,x,y,sz,color,rot){const p=STKP[k]||STKP.star;g.save();g.translate(x,y);if(rot)g.rotate(rot);g.translate(-sz/2,-sz/2);g.scale(sz/24,sz/24);g.lineWidth=1.9;g.lineJoin='round';g.lineCap='round';g.strokeStyle=color;
  if(k==='star'||k==='bulb'||k==='exam'){g.globalAlpha=k==='exam'?.14:.35;g.fillStyle=color;g.fill(p);g.globalAlpha=1}g.stroke(p);g.restore()}
-function stkPos(L,o,hr){const org=origin(L.host,o.a,hr);if(!org||!o.q)return null;const W=L.host.clientWidth,f=fsNow();return{x:org.x+o.q.x/REF*W,y:org.y+o.q.y/YU*f,s:o.w*f,r:(o.q.r||0)/1000}}
+function stkPos(L,o,hr){const org=origin(L.host,o.a,hr);if(!org||!o.q)return null;const W=L.host.clientWidth,f=fsNow();if(L.tb&&o.t==='note'&&o.q.m)return{x:W+(gutterOn(L)?40:-18),y:org.y+o.q.y/YU*f,s:o.w*f,r:0};return{x:org.x+o.q.x/REF*W,y:org.y+o.q.y/YU*f,s:o.w*f,r:(o.q.r||0)/1000}}
 function stkRects(L,o,hr){const p=stkPos(L,o,hr);if(!p)return null;const z=o.t==='note'?PIN:p.s;return[[p.x-z/2,p.y-z/2,z,z]]}
 function anchorAt(host,x,y,hr){const W=host.clientWidth,f=fsNow(),bl=nearest(host,x,y),org=bl?origin(host,{b:bl.id},hr):{x:0,y:0};return{b:bl?bl.id:null,q:{x:Math.round((x-org.x)/W*REF),y:Math.round((y-org.y)/f*YU)}}}
 function placeSticker(host,cx,cy){const L=layerOf(host);if(!L)return;const hr=host.getBoundingClientRect(),an=anchorAt(host,cx-hr.left,cy-hr.top,hr);active=L.key;
  commit(L,{i:ID(),t:'sticker',k:P.stk,c:P.col,w:+(P.sizes.st/fsNow()).toFixed(3),a:{b:an.b},q:an.q})}
 /* a sticky note is a small pin (a real button, so it works with a keyboard and with annotate switched off) that expands into an editor */
-function syncPins(L,d,hr){const host=L.host,have=new Map(),seen=new Set();host.querySelectorAll(':scope>.an-pin').forEach(b=>have.set(b.dataset.i,b));
- (d?d.objs:[]).forEach(o=>{if(o.t!=='note')return;seen.add(o.i);const p=stkPos(L,o,hr);let b=have.get(o.i);
+const gutterOn=L=>!!(L.tb&&innerWidth>=768&&L.host.classList.contains('an-gut'));
+function syncPins(L,d,hr){const host=L.host,have=new Map(),seen=new Set(),mns=[],gut=gutterOn(L);host.querySelectorAll(':scope>.an-pin,:scope>.an-mn').forEach(b=>have.set(b.dataset.i,b));
+ (d?d.objs:[]).forEach(o=>{if(o.t!=='note')return;if(L.tb&&!tbNear(L,o,hr,innerHeight))return;seen.add(o.i);const p=stkPos(L,o,hr);let b=have.get(o.i);
   if(!p){if(b)b.hidden=true;o.orphan=true;return}o.orphan=false;
-  if(!b){b=document.createElement('button');b.type='button';b.className='an-pin';b.dataset.i=o.i;b.append(svg('nt'));host.append(b);b.addEventListener('click',()=>openNote(L,b.dataset.i))}
-  b.hidden=false;b.style.left=(p.x-PIN/2)+'px';b.style.top=(p.y-PIN/2)+'px';b.style.setProperty('--c',col(o.c));b.setAttribute('aria-label','Sticky note: '+(o.x||'empty').slice(0,80))});
- have.forEach((b,i)=>{if(!seen.has(i))b.remove()})}
+  const mn=!!(gut&&o.q&&o.q.m);if(b&&b.classList.contains('an-mn')!==mn){b.remove();b=null}
+  if(!b){if(mn){b=document.createElement('div');b.className='an-mn';b.setAttribute('role','button');b.tabIndex=0;const bb=b;b.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();openNote(L,bb.dataset.i)}})}else{b=document.createElement('button');b.type='button';b.className='an-pin';b.append(svg('nt'))}
+   b.dataset.i=o.i;host.append(b);const bb=b;b.addEventListener('click',()=>openNote(L,bb.dataset.i))}
+  b.hidden=false;b.style.setProperty('--c',col(o.c));
+  if(mn){if(b.textContent!==(o.x||''))b.textContent=o.x||'';b.style.left='';b.style.top=(p.y-6)+'px';b._y=p.y-6;b.setAttribute('aria-label','Margin note: '+(o.x||'empty').slice(0,80));mns.push(b)}
+  else{b.style.left=(p.x-PIN/2)+'px';b.style.top=(p.y-PIN/2)+'px';b.setAttribute('aria-label','Sticky note: '+(o.x||'empty').slice(0,80))}});
+ have.forEach((b,i)=>{if(!seen.has(i))b.remove()});
+ let y=-1e9;mns.sort((a,b)=>a._y-b._y).forEach(b=>{const t=Math.max(b._y,y);b.style.top=t+'px';y=t+b.offsetHeight+6})}
 let nted=null;
 function closeNote(save){if(!nted)return;const{L,el,ta,id,pos}=nted;nted=null;const v=ta.value.replace(/\s+$/,'').slice(0,MAX.txt);el.remove();const d=docOf(L.key),old=id&&d?d.objs.find(o=>o.i===id):null;
  if(!save){sched(L);return}
  if(old){if(v===old.x){sched(L);return}const i=d.objs.indexOf(old);if(!v){d.objs.splice(i,1);pushOp(L.key,{t:'del',items:[{i,o:old}]})}else{const n=Object.assign({},old,{x:v});d.objs[i]=n;pushOp(L.key,{t:'rep',old,n})}touch(L.key);sched(L);sync();return}
  if(!v){sched(L);return}commit(L,{i:ID(),t:'note',k:'pin',c:P.col,w:1,a:{b:pos.b},x:v,q:pos.q})}
 function openNote(L,id,at){if(nted&&nted.L===L&&nted.id===id&&id){closeNote(true);return}closeNote(true);const host=L.host,hr=host.getBoundingClientRect(),d=docOf(L.key),old=id&&d?d.objs.find(o=>o.i===id):null;let x,y,pos=null;
- if(old){const p=stkPos(L,old,hr);if(!p)return;x=p.x;y=p.y}else{x=at.x;y=at.y;pos=anchorAt(host,x,y,hr)}
+ if(old){const p=stkPos(L,old,hr);if(!p)return;x=p.x;y=p.y}else{x=at.x;y=at.y;pos=anchorAt(host,x,y,hr);if(L.tb&&innerWidth>=768){pos.q.m=1;pos.q.x=0}}
  active=L.key;const el=document.createElement('div');el.className='an-sticky';el.setAttribute('role','dialog');el.setAttribute('aria-label','Sticky note');
  const ta=document.createElement('textarea');ta.rows=4;ta.maxLength=MAX.txt;ta.value=old?old.x:'';ta.setAttribute('aria-label','Note text');ta.placeholder='Write a note...';
  const bt=(t,fn)=>{const b=document.createElement('button');b.type='button';b.textContent=t;b.addEventListener('click',fn);return b},row=document.createElement('div');row.className='an-srow';
@@ -386,19 +411,57 @@ function paintOpt(L,o,g,hr){const el=blocksOf(L.host).map.get(o.a.b);if(!el){o.o
   if(o.k==='tick'){g.beginPath();g.moveTo(s*.27,s*.53);g.lineTo(s*.43,s*.69);g.lineTo(s*.74,s*.32);g.stroke()}else{g.font='700 '+s*.72+'px system-ui,sans-serif';g.textAlign='center';g.textBaseline='middle';g.fillText('?',s/2,s/2+1)}if(pop<1)sched(L);else delete o.anim}
  else if(o.k==='conf'){const v=clamp(+(o.q&&o.q.v)||1,1,3),t=CONFL[v],ff='600 '+11.5*Math.max(1,f)+'px system-ui,sans-serif';g.font=ff;const w=g.measureText(t).width+30*Math.max(1,f),h=22*Math.max(1,f),x=bx+b.width-w-4,y=by-2;g.fillStyle=CONFC[v];g.beginPath();g.roundRect?g.roundRect(x,y,w,h,h/2):g.rect(x,y,w,h);g.fill();g.fillStyle='#fff';g.beginPath();g.moveTo(x+9,y+5);g.lineTo(x+9,y+h-5);g.moveTo(x+9,y+5);g.lineTo(x+18,y+8.5);g.lineTo(x+9,y+12);g.strokeStyle='#fff';g.lineWidth=1.6;g.stroke();g.textAlign='left';g.textBaseline='middle';g.fillText(t,x+23*Math.max(1,f)*.9,y+h/2+.5)}
  g.restore()}
-function paint(L){const host=L.host,d=docOf(L.key),w=host.clientWidth,h=host.clientHeight;if(!w||!h){return}
+/* textbook: one layer per chapter; the canvases only cover the visible part of the chapter plus about a screen either side, and are
+   moved/repainted as the page scrolls, so a long chapter never needs a canvas the size of the whole chapter. */
+function tbWin(L){const host=L.host,H=host.clientHeight,vh=innerHeight,vt=-host.getBoundingClientRect().top,vb=vt+vh,m=clamp((2800-vh)/2,.25*vh,.8*vh),n0=Math.max(0,vt-.2*vh),n1=Math.min(H,vb+.2*vh),w=L.win;
+ if(w&&w.H===H&&w.y<=n0+.5&&w.y+w.h>=n1-.5)return false;const y0=Math.max(0,Math.floor(vt-m)),y1=Math.min(H,Math.ceil(vb+m));L.win={y:y0,h:Math.max(1,y1-y0),H};return true}
+function tbFree(L){['hl','ink','wet'].forEach(k=>{const c=L[k];if(c&&c.width>1){c.width=c.height=1}});L.win=null;L.host.querySelectorAll(':scope>.an-pin,:scope>.an-mn').forEach(b=>b.remove())}
+function tbGut(L){const d=docOf(L.key),want=innerWidth>=768&&!!((P.on&&P.tool==='nt')||(d&&d.objs.some(o=>o.t==='note'&&o.q&&o.q.m)));if(L.host.classList.contains('an-gut')!==want){L.host.classList.toggle('an-gut',want);return true}return false}
+function tbNear(L,o,hr,pad){const el=blocksOf(L.host).map.get(o.a&&o.a.b);if(!el)return false;const r=el.getBoundingClientRect();if(!r.width&&!r.height)return false;const w=L.win;if(!w)return true;const top=r.top-hr.top,bot=top+r.height,wy=w.y-(pad||0),we=w.y+w.h+(pad||0);
+ if(o.t==='mark')return bot>wy&&top<we;const c=o._pc;if(c&&c.bb&&!(pad))return top+c.bb[1]-24<we&&top+c.bb[3]+24>wy;return bot+800>wy&&top-800<we}
+function tbAfter(L){const d=docOf(L.key);if(!d)return;const m=blocksOf(L.host).map;for(const o of d.objs){const x=!!(o.a&&o.a.b&&!m.has(o.a.b));if(x!==!!o.orphan)o.orphan=x}}
+function paint(L){paint0(L);if(L.tb)tbAfter(L)}
+function paint0(L){if(L.tb)tbGut(L);const host=L.host,d=docOf(L.key),w=host.clientWidth,h=host.clientHeight;if(!w||!h){if(L.tb)tbFree(L);return}
+ if(L.tb)tbWin(L);
  if(d&&d.objs.some(o=>o.a.h))adopt(L,d);
  syncPins(L,d,host.getBoundingClientRect());
  const has=d&&d.objs.length;if(!has&&!L.ink&&!L.hl)return;const gh=size(cv(L,'hl'),w,h),gi=size(cv(L,'ink'),w,h);gh.clearRect(0,0,w,h);gi.clearRect(0,0,w,h);
  if(!has)return;const hr=host.getBoundingClientRect();
- for(const o of d.objs){if(o.editing)continue;if(o.t==='text'){const tl=textLayout(L,o,hr);o.orphan=!tl;if(tl){gi.save();gi.font=tl.fz+'px '+tl.ff;gi.fillStyle=col(o.c);gi.textBaseline='top';tl.lines.forEach((l,i)=>gi.fillText(l,tl.x,tl.y+i*tl.lh));gi.restore()}continue}
+ for(const o of d.objs){if(o.editing)continue;if(L.tb&&!tbNear(L,o,hr))continue;if(o.t==='text'){const tl=textLayout(L,o,hr);o.orphan=!tl;if(tl){gi.save();gi.font=tl.fz+'px '+tl.ff;gi.fillStyle=col(o.c);gi.textBaseline='top';tl.lines.forEach((l,i)=>gi.fillText(l,tl.x,tl.y+i*tl.lh));gi.restore()}continue}
   if(o.t==='mark'&&OPTK.includes(o.k)){paintOpt(L,o,gi,hr);continue}
-  if(o.t==='mark'){const rs=markRects(L,o,hr);o.orphan=!rs;if(rs)drawMark(gh,gi,o,rs);continue}
+  if(o.t==='mark'){const rs=markRects(L,o,hr);o.orphan=!rs;if(rs)drawMark(gh,gi,o,rs,L.tb);continue}
   if(o.t==='sticker'){const sp=stkPos(L,o,hr);o.orphan=!sp;if(sp)drawSticker(gi,o.k,sp.x,sp.y,sp.s,col(o.c),sp.r);continue}
   if(o.t==='shape'){const ps=shapeOf(L,o,hr);o.orphan=!ps;ps&&ps.forEach(pl=>drawStroke(gi,pl,'ball',col(o.c),o.w,o.al,null));continue}
   if(o.t!=='stroke')continue;const pts=pxOf(L,o,hr);if(!pts||!pts.length){o.orphan=!pts;continue}o.orphan=false;
   if(o.k==='hl')drawStroke(gh,pts,'hl',col(o.c,true),o.w,o.al,null);else drawStroke(gi,pts,o.k,col(o.c),o.w,o.al,null)}}
 const repaintAll=()=>layers.forEach(sched);
+const normT=t=>t.replace(/\s+/g,' ').trim().toLowerCase();
+function findQuote(tx,q){const t=q.t;if(!t)return null;let best=null,i=-1,n=0;const p=q.p||'',nx=q.n||'';
+ while((i=tx.indexOf(t,i+1))>=0&&n++<60){let sc=0;for(let k=1;k<=p.length&&k<=i;k++){if(tx[i-k]!==p[p.length-k])break;sc++}for(let k=0;k<nx.length&&i+t.length+k<tx.length;k++){if(tx[i+t.length+k]!==nx[k])break;sc++}if(!best||sc>best[2])best=[i,i+t.length,sc]}return best}
+function simBlock(sn,el){const a=new Set(sn.toLowerCase().split(/\s+/).filter(Boolean)),bw=normT(el.textContent).slice(0,sn.length+12).split(/\s+/).filter(Boolean),b=new Set(bw);if(!a.size||!b.size)return 0;let n=0;a.forEach(w=>{if(b.has(w))n++});return n/(a.size+b.size-n)}
+/* textbook: an object whose block id is gone (the text was edited) is moved to the block that now holds its quote / opening words;
+   if nothing matches well it stays where it is, flagged "detached" (o.orphan), and is never deleted */
+function reanchor(L){const d=docOf(L.key);if(!d||!L.tb)return 0;const bo=blocksOf(L.host),map=bo.map;let ch=0;
+ for(const o of d.objs){const a=o.a;if(!a||a.b==null)continue;const q=o.q,hasQ=o.t==='mark'&&q&&typeof q.t==='string'&&q.t;
+  if(hasQ){const el=map.get(a.b);if(el){const tx=el.textContent;if(tx.substr(q.s|0,q.t.length)===q.t)continue;const r=findQuote(tx,q);if(r&&(r[2]>0||tx.indexOf(q.t)===tx.lastIndexOf(q.t))){q.s=r[0];q.e=r[1];ch=1;continue}}}
+  else if(map.has(a.b))continue;
+  if(hasQ){const ctx=(q.p||'').length+(q.n||'').length,need=Math.min(10,ctx);let best=null,second=-1;
+   for(const b of bo.list){const r=findQuote(b.el.textContent,q);if(!r)continue;if(!best||r[2]>best[3]){if(best)second=best[3];best=[b.id,r[0],r[1],r[2]]}else if(r[2]>second)second=r[2]}
+   if(best&&best[3]>=need&&(q.t.length>=12||best[3]>=ctx)&&best[3]>second){o.a={b:best[0]};q.s=best[1];q.e=best[2];ch=1}}
+  else if(a.t){let best=null,bs=0,sec=0;for(const b of bo.list){if(b.cont)continue;const sc=simBlock(a.t,b.el);if(sc>bs){sec=bs;bs=sc;best=b}else if(sc>sec)sec=sc}
+   if(best&&bs>=.6&&bs>sec+.1){o.a={b:best.id};ch=1}}}
+ if(ch)touch(L.key,1);return ch}
+function orphans(k){const d=docOf(k),h=hostByKey(k),m=h&&h.matches(TBH)?blocksOf(h).map:null;if(m&&d)d.objs.forEach(o=>{o.orphan=!!(o.a&&o.a.b&&!m.has(o.a.b))});return d?d.objs.filter(o=>o.orphan).map(o=>({i:o.i,t:o.t,k:o.k,quote:(o.q&&o.q.t)||o.x||(o.a&&o.a.t)||''})):[]}
+function reattach(k,id,blockId){const d=docOf(k),h=hostByKey(k),o=d&&d.objs.find(x=>x.i===id);if(!o||!h||!blocksOf(h).map.has(blockId))return false;const n=Object.assign({},o,{a:{b:blockId}});if(n.q&&n.q.t){const r=findQuote(blocksOf(h).map.get(blockId).textContent,n.q);if(r)n.q=Object.assign({},n.q,{s:r[0],e:r[1]})}
+ d.objs[d.objs.indexOf(o)]=n;pushOp(k,{t:'rep',old:o,n});active=k;touch(k);const L=layers.get(h);L&&sched(L);sync();return true}
+/* ---------- textbook adapter: one layer per open chapter (#tbbody[data-ch]), re-attached when textbook.js renders a chapter ---------- */
+function tbAttach(){if(!isReady){ready.then(tbAttach);return}
+ layers.forEach((L,h)=>{if(!h.isConnected){layers.delete(h);try{ro.unobserve(h)}catch(e){}}});
+ const h=document.querySelector(TBH),on=!!(h&&h.getClientRects().length);document.body.classList.toggle('an-tb',on);
+ if(!h)return;const k=keyOf(h);if(!k)return;if(!layers.has(h))BL.delete(h);const L=layerOf(h,k);if(!L)return;if(!L.rean){L.rean=1;reanchor(L)}sched(L);sync()}
+let tbRaf=0;const tbScroll=()=>{if(tbRaf)return;tbRaf=requestAnimationFrame(()=>{tbRaf=0;layers.forEach(L=>{if(L.tb&&L.host.isConnected&&L.host.clientWidth&&tbWin(L))sched(L)})})};
+addEventListener('scroll',tbScroll,{passive:true});addEventListener('resize',()=>{tbScroll();layers.forEach(L=>L.tb&&sched(L))});addEventListener('hashchange',()=>setTimeout(tbAttach,80));
+document.addEventListener('click',e=>{if(!P.on||P.tool==='hand')return;const t=e.target;if(t.closest&&t.closest(TBH+' .tbs-h')){e.preventDefault();e.stopPropagation()}},true);
 /* ---------- input ---------- */
 let live=null,lastPen=0,drawing=false;
 const penRecent=()=>performance.now()-lastPen<1200;
@@ -441,7 +504,7 @@ function recognise(pts){const n=pts.length;if(n<6)return null;let a=1e9,b=1e9,c=
  if(V.length===4){const an=(p,q,r)=>{const x1=p[0]-q[0],y1=p[1]-q[1],x2=r[0]-q[0],y2=r[1]-q[1],m=Math.hypot(x1,y1)*Math.hypot(x2,y2);return m?Math.acos(clamp((x1*x2+y1*y2)/m,-1,1))*180/Math.PI:0};
   const ok=V.every((q,i)=>{const g=an(V[(i+3)%4],q,V[(i+1)%4]);return g>62&&g<118});if(ok){const e0=Math.atan2(V[1][1]-V[0][1],V[1][0]-V[0][0])*180/Math.PI,m=((e0%90)+90)%90;if(m<14||m>76)return box('rect')}}
  return err<.14?box('ellipse'):null}
-function onDown(e){if(!P.on||!e.isPrimary||P.tool==='hand'||P.tool==='hi'||(e.pointerType==='mouse'&&e.button!==0))return;const host=hostOf(e.target);if(!host)return;if(P.tool==='om'){if(host.matches(MXS)&&!e.target.closest('.mx-meta,.mx-qa,.mx-nbox'))omDown(e,host);return}if(e.target.closest&&e.target.closest('.an-tx,.an-pin,.an-sticky,'+MXS+' .mx-meta,'+MXS+' .mx-qa,'+MXS+' .mx-nbox'))return;
+function onDown(e){if(!P.on||!e.isPrimary||P.tool==='hand'||P.tool==='hi'||(e.pointerType==='mouse'&&e.button!==0))return;const host=hostOf(e.target);if(!host)return;if(P.tool==='om'){if(host.matches(MXS)&&!e.target.closest('.mx-meta,.mx-qa,.mx-nbox'))omDown(e,host);return}if(e.target.closest&&e.target.closest('.an-tx,.an-pin,.an-mn,.an-sticky,'+TBH+' .tbtoc,'+MXS+' .mx-meta,'+MXS+' .mx-qa,'+MXS+' .mx-nbox'))return;
  if(e.pointerType==='pen'){lastPen=performance.now();offerPenOnly()}
  if(e.pointerType==='touch'&&(P.mode==='po'||penRecent()))return;
  if(P.tool==='tx'){txPend={host,x:e.clientX,y:e.clientY};return}
@@ -587,9 +650,9 @@ function sync(){if(!bar)return;{const f=$('#an-fab-on'),e2=$('#an-fab-eye');if(f
  const e=bar.querySelector('[data-a=eye]');e.replaceChildren(svg(P.hide?'eyeoff':'eye'));e.setAttribute('aria-pressed',!!P.hide);
  const sw=bar.querySelector('.an-sw');sw.style.setProperty('--c',col(HLT()?P.hlc:P.col,HLT()));sw.hidden=P.tool==='hand'||P.tool==='ls';
  pill.querySelector('i').style.background=col(HLT()?P.hlc:P.col,HLT());pill.firstChild.replaceWith(svg(P.tool in IC?P.tool:'pen'));
- const tb=$('#tools [data-t=ink]');tb&&tb.setAttribute('aria-pressed',on);
+ const tb=$('#tools [data-t=ink]');tb&&tb.setAttribute('aria-pressed',on);layers.forEach(L=>{if(L.tb)sched(L)});
  requestAnimationFrame(()=>place())}
-function setOn(v){closeText(true);P.on=v;if(!v){closePop();if(live)onUp({pointerId:live.pid,type:'pointercancel'})}else{document.querySelectorAll('.card .ans,'+MXS).forEach(h=>layerOf(h))}sync()}
+function setOn(v){closeText(true);P.on=v;if(!v){closePop();if(live)onUp({pointerId:live.pid,type:'pointercancel'})}else{document.querySelectorAll('.card .ans,'+MXS+','+TBH).forEach(h=>layerOf(h))}sync()}
 /* ---------- finger scroll vs stylus (touch-action strategy lives in annot.css; this closes the gap for styluses that scroll) ---------- */
 document.addEventListener('touchstart',e=>{if(!P.on||P.tool==='hand'||P.tool==='hi'||!hostOf(e.target))return;for(const t of e.changedTouches)if(t.touchType==='stylus'&&e.cancelable){e.preventDefault();return}},{passive:false});
 document.addEventListener('pointerdown',onDown,{passive:false,capture:true});
@@ -626,9 +689,9 @@ function dump(mark){const docs={};for(const k in St.docs){const d=St.docs[k];if(
 async function load(payload){const v=validate(payload);if(!v)throw new Error('invalid annotation data');const docs=Object.create(null);for(const k in v.docs)if(v.docs[k].objs.length)docs[k]=v.docs[k];
  if(!St.db){Object.keys(St.docs).forEach(k=>delete St.docs[k]);Object.assign(St.docs,docs);repaintAll();return}
  const prev=dump(),tx=St.db.transaction(['docs','meta'],'readwrite');tx.objectStore('meta').put({k:'prev',v:{at:Date.now(),data:prev}});const os=tx.objectStore('docs');os.clear();Object.values(docs).forEach(d=>os.put(d));await txd(tx);
- Object.keys(St.docs).forEach(k=>delete St.docs[k]);Object.assign(St.docs,docs);St.dirty.clear();St.undo=Object.create(null);St.redo=Object.create(null);for(const k in docs){const h=hostByKey(k);h&&layerOf(h,k)}repaintAll();sync()}
-const API={ready,isReady:()=>isReady,dump,load,validate,flush,fromLegacy,state:()=>P,
- _debug:{sel:()=>sel?[...sel.ids]:[],clip:()=>clip?clip.objs.length:0,shapeOf:(L,o)=>shapeOf(L,o,L.host.getBoundingClientRect()),selBB,textLayout:(L,o)=>textLayout(L,o,L.host.getBoundingClientRect()),markRects:(L,o)=>markRects(L,o,L.host.getBoundingClientRect()),docs:()=>St.docs,layer:k=>{const h=hostByKey(k);return h&&layers.get(h)},px:(k,i)=>{const L=API._debug.layer(k);return L&&pxOf(L,St.docs[k].objs[i])},blocks:k=>{const h=hostByKey(k);return blocksOf(h).list.map(b=>b.id)},setOn,P,color:c=>col(c),undoDepth:k=>(St.undo[k]||[]).length,dirty:()=>[...St.dirty],mem:()=>St.mem,legacy:readLegacy}};
+ Object.keys(St.docs).forEach(k=>delete St.docs[k]);Object.assign(St.docs,docs);St.dirty.clear();St.undo=Object.create(null);St.redo=Object.create(null);for(const k in docs){const h=hostByKey(k);h&&layerOf(h,k)}layers.forEach(L=>{if(L.tb)reanchor(L)});repaintAll();sync()}
+const API={ready,isReady:()=>isReady,dump,load,validate,flush,fromLegacy,state:()=>P,tbAttach,orphans,reattach,reanchor:k=>{const h=hostByKey(k),L=h&&layers.get(h);return L?reanchor(L):0},
+ _debug:{paintMs:k=>{const h=hostByKey(k),L=h&&layers.get(h);if(!L)return -1;const t=performance.now();paint(L);return performance.now()-t},win:k=>{const h=hostByKey(k),L=h&&layers.get(h);return L&&L.win},canvases:()=>document.querySelectorAll('canvas.an-c').length,sel:()=>sel?[...sel.ids]:[],clip:()=>clip?clip.objs.length:0,shapeOf:(L,o)=>shapeOf(L,o,L.host.getBoundingClientRect()),selBB,textLayout:(L,o)=>textLayout(L,o,L.host.getBoundingClientRect()),markRects:(L,o)=>markRects(L,o,L.host.getBoundingClientRect()),docs:()=>St.docs,layer:k=>{const h=hostByKey(k);return h&&layers.get(h)},px:(k,i)=>{const L=API._debug.layer(k);return L&&pxOf(L,St.docs[k].objs[i])},blocks:k=>{const h=hostByKey(k);return blocksOf(h).list.map(b=>b.id)},setOn,P,color:c=>col(c),undoDepth:k=>(St.undo[k]||[]).length,dirty:()=>[...St.dirty],mem:()=>St.mem,legacy:readLegacy}};
 window.Annot=API;
 window.Ink={ready,dump:()=>dump(),async load(obj){if(obj&&obj.v===1&&obj.docs)return load(obj);
   const map={};if(obj&&typeof obj==='object')for(const id in obj){const o=obj[id];const t=alias()[id]||id;if(/^q\d+$/.test(id)&&(typeof BY==='undefined'||BY[t])&&o&&typeof o==='object')map[id]=o}

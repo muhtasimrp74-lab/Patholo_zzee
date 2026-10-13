@@ -103,3 +103,18 @@ body.an-left #an-fab{right:auto;left:12px;align-items:flex-start}
 body.an-on.an-t-om .mx-card .mx-o,body.an-on.an-t-om .mx-card .mx-s,body.an-on.an-t-om .mx-card h3{cursor:pointer;-webkit-user-select:none;user-select:none}
 body.an-on .mx-card .mx-opts{-webkit-user-select:none;user-select:none}
 @media print{#an-fab{display:none!important}}
+
+/* ---- Textbook adapter: chapter host, margin gutter, entry button ---- */
+#tbbody.an-host{position:relative}
+body.an-tb #an-fab{display:flex;right:46px;bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+body.an-tb.an-left #an-fab{right:auto;left:12px}
+#tbbody.an-gut{margin-right:var(--an-gut,224px)}
+.an-mn{position:absolute;z-index:3;left:calc(100% + 12px);width:calc(var(--an-gut,224px) - 30px);box-sizing:border-box;padding:7px 10px;border-radius:4px 10px 10px 4px;border-left:3px solid var(--c,#c4573a);
+ background:color-mix(in srgb,var(--c,#c4573a) 14%,var(--panel,#fff));color:var(--text,#222);font:500 12.5px/1.38 var(--body,system-ui,sans-serif);cursor:pointer;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;line-clamp:5;overflow:hidden;overflow-wrap:anywhere;white-space:pre-wrap;min-height:30px}
+.an-mn:empty::before{content:"Empty note";opacity:.6}
+.an-mn:focus-visible{outline:2px solid var(--lbl,#a33);outline-offset:2px}
+.an-mn[hidden]{display:none}
+body.an-hidden .an-mn{display:none}
+@media(max-width:767px){#tbbody.an-gut{margin-right:0}.an-mn{display:none}}
+@media(prefers-contrast:more){.an-mn{border:2px solid currentColor;background:var(--panel,#fff)}}
+@media print{.an-mn{box-shadow:none;break-inside:avoid}}

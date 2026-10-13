@@ -173,11 +173,51 @@ def build_curated(mod):
     text = re.sub(r'<[^>]+>', ' ', '\n'.join(out)); words = len(text.split())
     return nav + '\n'.join(out), {'figs': st['f'], 'tables': st['t'], 'sections': n, 'min': max(1, round(words / 230))}
 
+# ---------------------------------------------------------------- stable block ids (data-b), used by the annotation system
+# id = 8-hex FNV-1a of the block's normalised text (+ ".N" for the Nth repeat in the chapter). Same text -> same id, so ids survive
+# rebuilds that do not change the text. Same formula as annot/annot.js blocksOf(), but counted over the whole chapter.
+BLOCK_TAGS = {'p', 'li', 'table', 'figure', 'aside', 'h3', 'h4', 'h5'}
+VOID_TAGS = {'br', 'hr', 'img', 'input', 'meta', 'link', 'area', 'base', 'col', 'embed', 'source', 'track', 'wbr'}
+def fnv1a(s):
+    h = 2166136261; b = s.encode('utf-16-le')
+    for i in range(0, len(b), 2): h = ((h ^ (b[i] | b[i + 1] << 8)) * 16777619) & 0xFFFFFFFF
+    return '%08x' % h
+def add_block_ids(h):
+    toks = re.split(r'(<[^>]+>)', h); stack = []; found = []   # found: (token index, tag, text)
+    for i, t in enumerate(toks):
+        if i % 2 == 0:
+            if t:
+                u = html.unescape(t)
+                for e in stack:
+                    if e[3]: e[2].append(u)
+            continue
+        m = re.match(r'<(/?)([A-Za-z][A-Za-z0-9]*)', t)
+        if not m: continue
+        close, name = m.group(1) == '/', m.group(2).lower()
+        if close:
+            while stack:
+                e = stack.pop()
+                if e[0] == name:
+                    if e[4]: found.append((e[1], name, ''.join(e[2])))
+                    break
+            continue
+        if name in VOID_TAGS or t.endswith('/>'): continue
+        intable = any(e[0] == 'table' for e in stack); inli = any(e[0] == 'li' for e in stack)
+        want = name in BLOCK_TAGS and not intable and not (name == 'p' and inli)
+        stack.append([name, i, [], True, want])
+    found.sort(); seen = {}
+    for i, name, text in found:
+        norm = re.sub(r'\s+', ' ', text).strip().lower() or '<%s>' % name.upper()
+        hh = fnv1a(norm); seen[hh] = seen.get(hh, 0) + 1
+        toks[i] = toks[i][:-1] + ' data-b="%s">' % (hh if seen[hh] == 1 else '%s.%d' % (hh, seen[hh] - 1))
+    return ''.join(toks)
+
 os.makedirs(OUT, exist_ok=True); idx = []
 for f in sorted(glob.glob(os.path.join(SRC, 'ch*.json'))):
     ch = json.load(open(f, encoding='utf8')); key = os.path.basename(f)[:-5]
     if os.path.exists(os.path.join(HERE, 'curate', key + '.py')): h, meta = build_curated(importlib.import_module(key)); print('curated:', key, meta)
     else: h, meta = build(ch)
+    h = add_block_ids(h)
     open(os.path.join(OUT, key + '.html'), 'w', encoding='utf8').write(h)
     idx.append(dict(id=key, n=ch['chapter_number'], title=ch['title'], pages=ch.get('book_pages'), **meta))
 json.dump({'title': 'Robbins Pathologic Basis of Disease', 'chapters': idx}, open(os.path.join(OUT, 'index.json'), 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
