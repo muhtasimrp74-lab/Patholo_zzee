@@ -3452,7 +3452,7 @@ try{
  const syn=window.speechSynthesis;let q=[],i=0,gen=0,active=null,paused=false,bar=null;
  const SUB=[[/→|->|⟶/g,', then '],[/↑/g,' increased '],[/↓/g,' decreased '],[/≥/g,' at least '],[/≤/g,' at most '],[/&/g,' and '],[/%/g,' percent'],[/\bvs\.?\b/gi,'versus'],[/\be\.g\./gi,'for example'],[/\bi\.e\./gi,'that is'],[/[★⭐•·▪●◦]/g,' '],[/[()\[\]]/g,', '],[/\s+([,.;:])/g,'$1'],[/,\s*,+/g,','],[/,\s*([.!?;:])/g,'$1'],[/\s+/g,' ']];
  const clean=t=>{SUB.forEach(([a,b])=>{t=t.replace(a,b)});return t.trim()};
- const NOREAD='.acts,.rel,.note,.xm,.act,.tbbar,.tbch-m,.zsk,.ink,.an-c,.an-pop,.an-note,.an-sticky,.an-pin,.an-tx,.an-sheet,.an-cnt,.an-mn,#an-fab,#an-bar,#an-pill,.sh,canvas,svg,button';
+ const NOREAD='.acts,.rel,.note,.xm,.act,.tbbar,.tbch-m,.zsk,.ink,.an-c,.an-pop,.an-note,.an-sticky,.an-pin,.an-tx,.an-sheet,.an-cnt,.an-ws,.an-wsb,.an-wsadd,.an-cp,.an-mn,#an-fab,#an-bar,#an-pill,.sh,canvas,svg,button';
  function textOf(el,fromView){const out=[];
   $$('h1,h2,h3,h4,h5,h6,p,li,tr,dt,dd,blockquote,figcaption',el).forEach(b=>{
    if(b.closest(NOREAD))return;
