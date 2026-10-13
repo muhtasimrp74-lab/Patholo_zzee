@@ -17,7 +17,6 @@ body.an-on.an-t-er .an-host{cursor:cell}
 body.an-on.an-t-sel .an-host{cursor:default}
 body.an-on.an-t-hi .an-host,body.an-on.an-t-tx .an-host{cursor:text}
 .an-tx{position:absolute;z-index:3;box-sizing:content-box;min-width:80px;padding:2px 4px;margin:-3px 0 0 -5px;border:1.5px dashed var(--clay,#c4573a);border-radius:6px;background:color-mix(in srgb,var(--panel,#fff) 82%,transparent);font-family:inherit;line-height:1.35;resize:none;overflow:hidden;outline:none;-webkit-user-select:text;user-select:text;touch-action:auto}
-body.an-on .an-host{outline:1px dashed color-mix(in srgb,var(--clay,#c4573a) 40%,transparent);outline-offset:-1px}
 /* toolbar */
 #an-bar,#an-pill{position:fixed;z-index:60;left:50%;top:auto;bottom:calc(76px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:2px;max-width:calc(100vw - 16px);padding:6px 8px;border-radius:26px;
  background:var(--glass-strong,var(--panel,#fff));color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 14px 40px rgba(33,25,31,.28);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);transition:opacity .2s,transform .2s;touch-action:none}
