@@ -10,7 +10,7 @@ function themeNow(){const t=root.dataset.theme||(matchMedia('(prefers-color-sche
 function applyTheme(n){if(n==='dark'){root.dataset.theme='dark';delete root.dataset.tone}else{root.dataset.theme='light';if(n==='sepia')root.dataset.tone='sepia';else delete root.dataset.tone}
  const m=n==='sepia'?'#EFE2C4':null;if(m)$$('meta[name=theme-color]').forEach(x=>{if(!x.dataset.o)x.dataset.o=x.content;x.content=m;x.removeAttribute('media')});
  else $$('meta[name=theme-color][data-o]').forEach(x=>{x.content=x.dataset.o});label()}
-function label(){const b=tools&&$('[data-t=theme]',tools);if(b){const n=themeNow();b.textContent=n==='sepia'?'Sepia':n==='dark'?'Dark':'Light';b.title='Theme: Light, Sepia or Dark (tap to change)'}}
+function label(){const b=tools&&$('[data-t=theme]',tools);if(b){const n=themeNow();b.textContent=n==='sepia'?'Sepia':n==='dark'?'Dark':'Light';b.dataset.th=n;b.setAttribute('aria-label','Theme: '+b.textContent+' (tap to change)');b.title='Theme: Light, Sepia or Dark (tap to change)'}}
 try{
  if(tools){
   tools.addEventListener('click',e=>{const b=e.target.closest('button[data-t=theme]');if(!b)return;e.stopPropagation();
@@ -23,8 +23,8 @@ try{
 try{
  if(tools){
   const pr=$('[data-t=print]',tools);
-  const calm=document.createElement('button');calm.type='button';calm.dataset.t='calm';calm.textContent='Calm';calm.title='Calmer reading: shorter lines, more space';
-  const li=document.createElement('button');li.type='button';li.dataset.t='listen';li.textContent='Listen';li.title='Read the open answer aloud';li.setAttribute('aria-pressed','false');
+  const calm=document.createElement('button');calm.type='button';calm.dataset.t='calm';calm.textContent='Calm';calm.title='Calmer reading: shorter lines, more space';calm.setAttribute('aria-label','Calm reading');
+  const li=document.createElement('button');li.type='button';li.dataset.t='listen';li.textContent='Listen';li.title='Read the open answer aloud';li.setAttribute('aria-label','Listen');li.setAttribute('aria-pressed','false');
   calm.setAttribute('aria-pressed',!!pref().calm);
   pr?(tools.insertBefore(calm,pr),tools.insertBefore(li,pr)):(tools.append(calm),tools.append(li));
   document.body.classList.toggle('calm',!!pref().calm);
@@ -67,7 +67,7 @@ try{
   const o=$('.card.open',v)||$('.qi.o .qi-a',v);if(o)return {el:$('.ans',o)||o,title:$('h4',o)&&$('h4',o).textContent,mark:o};
   const c=typeof cur==='function'?cur(v):null;if(c)return {el:$('.ans',c)||c,title:$('h4',c)&&$('h4',c).textContent,mark:c};return null}
  const voice=()=>{const vs=syn.getVoices();return vs.find(x=>/^en[-_](GB|IN|AU)/i.test(x.lang)&&x.localService)||vs.find(x=>/^en/i.test(x.lang))||null};
- function ui(on){const b=$('[data-t=listen]',tools);if(b){b.setAttribute('aria-pressed',on);b.textContent=on?'Stop':'Listen'}
+ function ui(on){const b=$('[data-t=listen]',tools);if(b){b.setAttribute('aria-pressed',on);b.textContent=on?'Stop':'Listen';b.setAttribute('aria-label',on?'Stop listening':'Listen')}
   if(!bar){bar=document.createElement('div');bar.id='zz-listen';bar.hidden=true;bar.setAttribute('role','group');bar.setAttribute('aria-label','Read aloud');
    bar.innerHTML='<span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span>Reading aloud</span><button type="button" data-l="pp">Pause</button><select aria-label="Speed"><option value="0.85">0.85x</option><option value="1">1x</option><option value="1.15">1.15x</option><option value="1.3">1.3x</option><option value="1.5">1.5x</option></select><button type="button" data-l="st">Stop</button>';
    document.body.append(bar);const sel=$('select',bar);sel.value=String(pref().rate||1);if(sel.value!==String(pref().rate||1))sel.value='1';
