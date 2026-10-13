@@ -118,3 +118,29 @@ body.an-hidden .an-mn{display:none}
 @media(max-width:767px){#tbbody.an-gut{margin-right:0}.an-mn{display:none}}
 @media(prefers-contrast:more){.an-mn{border:2px solid currentColor;background:var(--panel,#fff)}}
 @media print{.an-mn{box-shadow:none;break-inside:avoid}}
+/* phase 5: annotations panel, settings sheet, section badges, flash */
+.an-sheet{position:fixed;z-index:63;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));top:calc(12px + env(safe-area-inset-top,0px));width:min(400px,calc(100vw - 24px));max-height:calc(100% - 24px);overflow:auto;display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:20px;background:var(--glass-strong,var(--panel,#fff));color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 18px 50px rgba(33,25,31,.35);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);overscroll-behavior:contain}
+body.an-left .an-sheet{right:auto;left:12px}
+.an-sh-h{display:flex;align-items:center;justify-content:space-between;gap:10px}.an-sh-h h2{margin:0;font:700 17px var(--body,system-ui,sans-serif)}
+.an-sheet button,.an-sheet select,.an-sheet input[type=search]{font:600 13px var(--body,system-ui,sans-serif);color:inherit;min-height:44px;border-radius:12px;border:1px solid var(--line,#ccc);background:var(--panel,#fff);padding:0 12px}
+.an-sheet button{cursor:pointer}.an-sheet button[aria-pressed=true]{background:var(--clay,#c4573a);color:#fff;border-color:transparent}
+.an-sh-f{display:grid;gap:8px}.an-sh-f input{width:100%;box-sizing:border-box}.an-sh-f select{width:100%}
+.an-sh-s{margin:0;font:500 12.5px/1.45 var(--body,system-ui,sans-serif);color:var(--muted,#666)}
+.an-sheet .an-seg{display:flex;gap:6px;flex-wrap:wrap}.an-sheet .an-row{display:flex;align-items:center;justify-content:space-between;gap:10px;font:600 13px var(--body,system-ui,sans-serif)}.an-sheet .an-row input[type=range]{flex:1;min-width:90px}
+.an-list{list-style:none;margin:0;padding:0;display:grid;gap:8px;overflow:auto;min-height:60px}
+.an-it{display:grid;grid-template-columns:18px 1fr auto;gap:10px;align-items:start;padding:10px;border:1px solid var(--line,#ddd);border-radius:14px;background:var(--panel,#fff)}
+.an-it .an-dot{width:16px;height:16px;border-radius:50%;background:var(--c,#222);margin-top:3px;box-shadow:0 0 0 1px var(--line,#aaa)}
+.an-mid{display:grid;gap:2px;min-width:0}.an-mid b{font:700 13px var(--body,system-ui,sans-serif)}.an-q{font:500 13px/1.4 var(--body,system-ui,sans-serif);overflow-wrap:anywhere}.an-mid small{color:var(--muted,#777)}
+.an-det{font-style:normal;font:700 11px var(--body,system-ui,sans-serif);color:var(--clay,#c4573a);text-transform:uppercase;letter-spacing:.04em}
+.an-act{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.an-act button{min-width:44px}
+.an-empty{padding:14px;color:var(--muted,#666);font:500 13px/1.45 var(--body,system-ui,sans-serif)}
+.an-sh-b{display:flex;gap:8px;flex-wrap:wrap}
+.an-cnt{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;margin-left:8px;border-radius:999px;background:var(--clay,#c4573a);color:#fff;font:700 12px/1 var(--body,system-ui,sans-serif);vertical-align:middle;flex:none}
+.an-flash{animation:anFlash 1.6s ease-out 1;outline:3px solid var(--clay,#c4573a);outline-offset:3px;border-radius:6px}
+@keyframes anFlash{0%{outline-color:var(--clay,#c4573a);background:color-mix(in srgb,var(--clay,#c4573a) 22%,transparent)}100%{outline-color:transparent;background:transparent}}
+#an-fab #an-fab-list{padding:0;width:44px}
+.an-pick{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+@media(max-width:767px){.an-sheet,body.an-left .an-sheet{left:8px;right:8px;width:auto;top:auto;max-height:78%;bottom:calc(8px + env(safe-area-inset-bottom,0px))}}
+@media(prefers-reduced-motion:reduce){.an-flash{animation:none}}
+@media(prefers-contrast:more){.an-sheet{border:2px solid currentColor;-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--panel,#fff)}.an-it{border-width:2px}}
+@media print{.an-sheet,.an-pick,.an-tip{display:none!important}.an-cnt{display:none!important}.an-flash{animation:none;outline:0;background:none}}
