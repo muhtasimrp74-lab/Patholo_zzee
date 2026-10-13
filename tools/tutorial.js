@@ -8,7 +8,7 @@ const ST=[
 ['Chapters','Questions grouped by Robbins chapter, then heading and topic. The ring shows how much of a chapter you have learned.','#/qa',''],
 ['An answer page','The first line is what you say first. Below are the parts in the order the examiner asks. Under each card: Learned, Bookmark, Favourite, Note and Share. Keys: B bookmarks, L marks learned.','#/01','.card'],
 ['Reading tools','The floating bar changes theme (Light, Sepia, Dark), text size, Focus, Calm reading, Listen (reads the answer aloud), Print, and steps to the previous or next question (arrow keys also work).','#/01','#tools'],
-['Annotate','Tap Annotate to write, highlight and erase on any answer with a pen or finger. Ink follows the text when you change the text size, is saved on your device and is included in backups.','#/menu',''],
+['Annotate','Tap Annotate on an answer, an MCQ or a textbook chapter to write, highlight text, add notes and erase with a pen or finger. Marks follow the text when you change the text size. The list button finds, jumps to and deletes them; the cog holds pen-only and left-handed modes. Everything is saved on your device and is included in backups.','#/menu',''],
 ['Practice','Flashcards with spaced repetition, a timed viva mode and quiz mode. Press Space to show the answer, then 1, 2 or 3 to rate it Easy, Medium or Hard.','#/practice',''],
 ['MCQs','884 questions: 12 past papers, mock exams, quick 10-question sets and custom practice. Your mistakes are collected so you can retry them.','#/mcqs',''],
 ['Textbook','The Robbins chapters, cleaned for reading. Key concepts are highlighted, sections fold, your place is remembered, and chapters you open work offline.','#/textbook',''],
