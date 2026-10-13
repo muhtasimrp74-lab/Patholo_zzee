@@ -5,7 +5,8 @@
  const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const BY={};Q.forEach(q=>BY[q.h]=q);
  const L='ABCDE',PAPERS=['May 2026','Nov 2025','May 2025','DU-24N','DU-24M','DU-23N','DU-23M','DU-22N','DU-22M','DU-21M','DU-20N/M','DU-19Nov'];
- const ST=()=>{const m=S.mcq=S.mcq&&typeof S.mcq==='object'?S.mcq:{};m.p=m.p||{};m.bm=m.bm||[];m.hist=m.hist||[];m.o=m.o||{};m.day=m.day||{d:'',n:0};m.rd=m.rd&&typeof m.rd==='object'&&!Array.isArray(m.rd)?m.rd:{};m.rv=Array.isArray(m.rv)?m.rv:[];m.nt=m.nt&&typeof m.nt==='object'&&!Array.isArray(m.nt)?m.nt:{};return m};
+ const ST=()=>{const m=S.mcq=S.mcq&&typeof S.mcq==='object'?S.mcq:{};m.p=m.p||{};m.bm=m.bm||[];m.hist=m.hist||[];m.o=m.o||{};m.day=m.day||{d:'',n:0};m.rd=m.rd&&typeof m.rd==='object'&&!Array.isArray(m.rd)?m.rd:{};m.rv=Array.isArray(m.rv)?m.rv:[];m.nt=m.nt&&typeof m.nt==='object'&&!Array.isArray(m.nt)?m.nt:{};m.ms=Array.isArray(m.ms)?m.ms:[];
+  if(!m.msInit){m.msInit=1;Object.keys(m.p).forEach(h=>{const x=m.p[h];if(x&&x.n>(x.k||0)&&!m.ms.includes(h))m.ms.push(h)})}return m};
  const P=()=>ST().p, tn=q=>CH[q.c][1][q.t], tk=q=>q.c+'.'+q.t;
  const ok=(q,a)=>q.y?Array.isArray(a)&&a.length===5&&a.every((v,j)=>v===q.a[j]):a===q.a;
  const fmt=s=>{s=Math.max(0,Math.round(s));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return(h?h+':'+String(m).padStart(2,'0'):m)+':'+String(x).padStart(2,'0')};
@@ -18,9 +19,9 @@
   x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
   grid:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>',
   go:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'};
- const record=(q,good)=>{const m=ST(),p=m.p[q.h]=m.p[q.h]||{n:0,k:0};p.n++;if(good)p.k++;p.r=good?1:0;p.ts=Date.now();
+ const record=(q,good)=>{const m=ST(),p=m.p[q.h]=m.p[q.h]||{n:0,k:0};p.n++;if(good)p.k++;p.r=good?1:0;p.ts=Date.now();if(!good&&!m.ms.includes(q.h))m.ms.push(q.h);
   if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;window.actLog&&window.actLog(1);save()};
- const stOf=q=>{const m=ST(),p=m.p[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(m.bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');a.push(m.rd[q.h]?'read':'unread');if(m.rv.includes(q.h))a.push('rev');if(m.nt[q.h])a.push('nt');return a};
+ const stOf=q=>{const m=ST(),p=m.p[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(m.bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');a.push(m.rd[q.h]?'read':'unread');if(m.rv.includes(q.h))a.push('rev');if(m.nt[q.h])a.push('nt');if(m.ms.includes(q.h))a.push('ms');return a};
 
  /* ---------- filters ---------- */
  const emptyF=()=>({tp:new Set(),ty:new Set(),src:new Set(),tg:new Set(),pp:new Set(),st:new Set(),txt:''});
@@ -42,7 +43,7 @@
  const elapsed=()=>sess?(sess.paused?sess.el:(Date.now()-sess.t0)/1000):0;
  const nav=h=>{const t='#/mcqs'+(h?'/'+h:'');if(location.hash===t)mq();else location.hash=t};
  function start(ids,o){o=o||{};if(!ids.length)return;
-  sess={ids,i:0,ans:{},chk:{},mode:o.mode||'practice',t0:Date.now(),el:0,limit:o.limit||0,scope:o.scope||'Practice',n:ids.length};persist();nav('run')}
+  sess={ids,i:0,ans:{},chk:{},mode:o.mode||'practice',t0:Date.now(),el:0,limit:o.limit||0,scope:o.scope||'Practice',n:ids.length,fl:{}};persist();nav('run')}
  const pickSet=()=>{let a=matches();if(O.shuffle)a=shuf(a);if(O.n>0)a=a.slice(0,O.n);return a.map(q=>q.h)};
  const lim=(n)=>O.tpq?n*O.tpq:0;
  const answered=(q,s)=>{const a=s.ans[q.h];return q.y?Array.isArray(a)&&a.some(v=>v>=0):a!==undefined};
@@ -59,8 +60,8 @@
  /* per-question tools: mark as read, my note, revise later (stored in S.mcq.rd / .nt / .rv) */
  const nOpen=new Set();let ntT=0;
  const noteBox=q=>nOpen.has(q.h)?`<div class="mx-nbox"><label for="nt-${q.h}">My note</label><textarea class="mx-nt" id="nt-${q.h}" data-h="${q.h}" rows="3" placeholder="Write a note for this question (a mnemonic, why you got it wrong...)">${E(ST().nt[q.h]||'')}</textarea><small>Saved on this device and included in your backup</small></div>`:'';
- const qaRow=q=>{const m=ST(),h=q.h,rd=!!m.rd[h],rv=m.rv.includes(h),nt=!!m.nt[h];
-  return `<div class="mx-qa" role="group" aria-label="Question tools"><button type="button" class="mx-qb mx-qb-rd" data-a="rd" data-h="${h}" aria-pressed="${rd}">${ic.ok}<span>${rd?'Read':'Mark as read'}</span></button><button type="button" class="mx-qb mx-qb-nt${nt?' has':''}" data-a="nt" data-h="${h}" aria-expanded="${nOpen.has(h)}">${ic.note}<span>Notes</span></button><button type="button" class="mx-qb mx-qb-rv" data-a="rv" data-h="${h}" aria-pressed="${rv}">${ic.rev}<span>${rv?'In revise list':'Revise later'}</span></button></div>${noteBox(q)}`};
+ const qaRow=q=>{const m=ST(),h=q.h,rd=!!m.rd[h],rv=m.rv.includes(h),nt=!!m.nt[h],ms=m.ms.includes(h);
+  return `<div class="mx-qa" role="group" aria-label="Question tools"><button type="button" class="mx-qb mx-qb-rd" data-a="rd" data-h="${h}" aria-pressed="${rd}">${ic.ok}<span>${rd?'Read':'Mark as read'}</span></button><button type="button" class="mx-qb mx-qb-nt${nt?' has':''}" data-a="nt" data-h="${h}" aria-expanded="${nOpen.has(h)}">${ic.note}<span>Notes</span></button><button type="button" class="mx-qb mx-qb-rv" data-a="rv" data-h="${h}" aria-pressed="${rv}">${ic.rev}<span>${rv?'In revise list':'Revise later'}</span></button>${ms||(m.p[h]&&m.p[h].n)?`<button type="button" class="mx-qb mx-qb-ms" data-a="ms" data-h="${h}" aria-pressed="${ms}">${ic.x}<span>${ms?'In mistake bank, tap to remove':'Add to mistake bank'}</span></button>`:''}</div>${noteBox(q)}`};
  const saveNote=(h,v)=>{clearTimeout(ntT);const m=ST();if(v.trim())m.nt[h]=v;else delete m.nt[h];save();
   M.querySelectorAll('.mx-qb-nt[data-h="'+h+'"]').forEach(x=>x.classList.toggle('has',!!m.nt[h]))};
  function body(q,o){ // o: ans, fb, lock, notes
@@ -80,8 +81,10 @@
  const bareAns=q=>q.e||q.y?'':`<p class="mx-ans">Answer: <b>${L[q.a]}</b>. ${E(q.o[q.a])}</p>`;
 
  /* ---------- run / review ---------- */
+ let _ri='';
+ function cntHtml(s){const n=s.ids.length,nA=s.ids.filter(h=>answered(BY[h],s)).length,f=Object.keys(s.fl||{}).length;return `<b>${nA}</b> of ${n} answered${f?` &nbsp; <b>${f}</b> flagged`:''}`}
  function runView(review){
-  const s=sess;if(!s){nav();return}
+  const s=sess;if(!s){nav();return}const _y=window.scrollY,_k=s.i+(review||s.review?'r':'p');
   const q=BY[s.ids[s.i]],n=s.ids.length,rv=!!review||s.review,exam=s.mode==='exam'&&!rv;
   const fb=rv||(!exam&&!!s.chk[q.h]),lock=rv||(!exam&&!!s.chk[q.h]);
   const a=s.ans[q.h],good=fb&&ok(q,a);
@@ -93,14 +96,17 @@
    :fb?`<button type="button" class="mx-btn ghost" data-a="prev" ${s.i?'':'disabled'}>Previous</button><button type="button" class="mx-btn" data-a="${last?'finish':'next'}">${last?'See results':'Next'}</button>`
    :q.y?`<button type="button" class="mx-btn ghost" data-a="prev" ${s.i?'':'disabled'}>Previous</button><button type="button" class="mx-btn" data-a="check">Check answer</button>`
    :`<button type="button" class="mx-btn ghost" data-a="prev" ${s.i?'':'disabled'}>Previous</button><button type="button" class="mx-btn ghost" data-a="skip">Skip</button>`;
+  const fl=s.fl||{},mode=rv?'Review':exam?(s.limit?'Mock exam':'Test'):'Practice';
+  const strip=s.ids.map((h,i)=>{const qq=BY[h],an=answered(qq,s);let c='';if(rv||(!exam&&s.chk[h]))c=ok(qq,s.ans[h])?'ok':an?'no':'un';else if(an)c='an';if(fl[h])c+=' fg';if(i===s.i)c+=' cur';return `<button type="button" class="${c.trim()}" data-a="jump" data-i="${i}" aria-label="Question ${i+1}">${i+1}</button>`}).join('');
   const tm=!rv&&s.limit?`<span class="mx-timer" id="mx-timer" aria-live="off">${fmt(s.limit-elapsed())}</span>`:(!rv?`<span class="mx-timer" id="mx-timer">${fmt(elapsed())}</span>`:'');
   M.innerHTML=`<div class="mx-run"><div class="mx-top"><button type="button" class="mx-ib" data-a="exit" aria-label="${rv?'Close review':'Exit session'}">${ic.x}</button>
-   <div class="mx-pg"><span>${rv?'Review':E(s.scope)} · ${s.i+1} of ${n}</span><i style="--w:${((s.i+1)/n*100).toFixed(1)}%"></i></div>${tm}
+   <div class="mx-pg"><span><em class="mx-mode m-${mode.split(' ')[0].toLowerCase()}">${mode}</em>${E(s.scope)} · ${s.i+1} of ${n}</span><i style="--w:${((s.i+1)/n*100).toFixed(1)}%"></i></div>${tm}
    <button type="button" class="mx-ib" data-a="pal" aria-label="Question list">${ic.grid}</button></div>
-   <article class="mx-card" data-h="${q.h}">${metaRow(q,bmBtn(q))}<h3>${E(q.q)}</h3>${q.y?'<p class="mx-hint">Mark each statement True or False.</p>':''}
+   <div class="mx-strip" role="group" aria-label="Questions">${strip}</div>${exam||s.limit?`<p class="mx-cnt">${cntHtml(s)}</p>`:''}
+   <article class="mx-card" data-h="${q.h}">${metaRow(q,(rv?'':`<button type="button" class="mx-bm mx-fg" data-a="flag" aria-pressed="${!!fl[q.h]}" aria-label="Flag for review" title="Flag to come back to (F)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4M6 5h11l-2 4 2 4H6"/></svg></button>`)+bmBtn(q))}<h3>${E(q.q)}</h3>${q.y?'<p class="mx-hint">Mark each statement True or False.</p>':''}
    <div class="mx-opts">${body(q,{ans:a,fb,lock,notes:true})}</div>${fb?verdict+bareAns(q):''}${qaRow(q)}</article>
    <div class="mx-act">${act}</div><div class="mx-pal" id="mx-pal" hidden></div></div>`;
-  if(!rv)startTimer();window.scrollTo(0,0)}
+  if(!rv)startTimer();if(_ri===_k)window.scrollTo(0,_y);else window.scrollTo(0,0);_ri=_k;const cu=M.querySelector('.mx-strip .cur');if(cu&&cu.scrollIntoView)cu.scrollIntoView({inline:'center',block:'nearest'})}
  function startTimer(){clearInterval(tid);if(!sess||sess.review)return;tid=setInterval(()=>{if(!sess){clearInterval(tid);return}
   const e=elapsed(),t=document.getElementById('mx-timer');if(sess.limit&&e>=sess.limit){finish();return}
   if(t){t.textContent=sess.limit?fmt(sess.limit-e):fmt(e);t.classList.toggle('low',!!sess.limit&&sess.limit-e<60)}
@@ -111,8 +117,8 @@
   el.innerHTML=`<div class="mx-pal-in" role="dialog" aria-label="Question list"><div class="mx-pal-h"><b>Questions</b><button type="button" class="mx-ib" data-a="pal" aria-label="Close">${ic.x}</button></div><div class="mx-pal-g">`+
    s.ids.map((h,i)=>{const q=BY[h],an=answered(q,s);let c='';
     if(rv||(!exam&&s.chk[h]))c=ok(q,s.ans[h])?'ok':an?'no':'un';else if(an)c='an';
-    return `<button type="button" class="${c}${i===s.i?' cur':''}" data-a="jump" data-i="${i}">${i+1}</button>`}).join('')+
-   `</div>${rv?'':`<button type="button" class="mx-btn" data-a="finish">${exam?'Finish exam':'Finish and see results'}</button>`}</div>`;
+    if(s.fl&&s.fl[h])c+=' fg';return `<button type="button" class="${c}${i===s.i?' cur':''}" data-a="jump" data-i="${i}">${i+1}</button>`}).join('')+
+   `</div><p class="mx-leg2"><span><i class="an"></i>Answered</span><span><i class="un"></i>Not answered</span><span><i class="fg"></i>Flagged</span></p>${rv?'':`<button type="button" class="mx-btn" data-a="finish">${exam?'Finish exam':'Finish and see results'}</button>`}</div>`;
   el.hidden=false}
  function setAns(q,j,v){const s=sess;if(!s||s.review)return;const exam=s.mode==='exam';if(!exam&&s.chk[q.h])return;
   if(!q.y){s.ans[q.h]=j;if(!exam){s.chk[q.h]=1;record(q,ok(q,j))}}
@@ -121,7 +127,7 @@
  function check(){const s=sess,q=BY[s.ids[s.i]];if(s.chk[q.h])return;const a=s.ans[q.h]=s.ans[q.h]||[-1,-1,-1,-1,-1];s.chk[q.h]=1;record(q,ok(q,a));persist();runView()}
  const step=d=>{const s=sess;s.i=Math.min(s.ids.length-1,Math.max(0,s.i+d));persist();runView()};
  function tryFinish(){const s=sess;const un=s.ids.filter(h=>!answered(BY[h],s)).length;
-  if(un&&s.mode==='exam'&&!confirm(un+' question'+(un>1?'s are':' is')+' unanswered. Finish anyway?'))return;finish()}
+  const fg=Object.keys(s.fl||{}).length;if((un||fg)&&s.mode==='exam'&&!confirm((un?un+' question'+(un>1?'s are':' is')+' unanswered':'')+(un&&fg?' and ':'')+(fg?fg+' flagged for review':'')+'. Finish anyway?'))return;finish()}
 
  /* ---------- results ---------- */
  function result(){
@@ -151,7 +157,7 @@ function home(){
   Q.forEach(q=>{const x=p[q.h];if(!x||!x.n)return;att++;ty[q.y][0]++;if(x.r){right++;ty[q.y][1]++}else wrong++});
   const left=n-att,acc=att?Math.round(right/att*100):0,sba=ty[0][0]?Math.round(ty[0][1]/ty[0][0]*100):null,tf=ty[1][0]?Math.round(ty[1][1]/ty[1][0]*100):null;
   const goal=m.goal||20,td=m.day.d===today()?m.day.n:0,gp=Math.min(100,Math.round(td/goal*100));
-  const nRev=m.rv.filter(h=>BY[h]).length,nNt=Object.keys(m.nt).filter(h=>BY[h]).length,nRd=Object.keys(m.rd).filter(h=>BY[h]).length;
+  const nMs=m.ms.filter(h=>BY[h]).length,nRev=m.rv.filter(h=>BY[h]).length,nNt=Object.keys(m.nt).filter(h=>BY[h]).length,nRd=Object.keys(m.rd).filter(h=>BY[h]).length;
   const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length&&!sv.review?sv:null;
   const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=p[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
    return{ci,name:c[0],t,n:t.reduce((x,y)=>x+y.n,0),a:t.reduce((x,y)=>x+y.a,0),r:t.reduce((x,y)=>x+y.r,0)}});
@@ -161,7 +167,7 @@ function home(){
   const pp=PAPERS.map(g=>{const qs=Q.filter(q=>(q.g||[]).includes(g)),bs=best(g);return `<button type="button" class="mx-paper${bs!==null?' done':''}" data-a="paper" data-g="${E(g)}"><b>${E(g)}</b><small>${qs.length} questions${bs!==null?` · best ${bs}%`:''}</small></button>`}).join('');
   /* one suggestion for what to do next */
   let nx=null;
-  if(wrong>=5)nx=['mist','','','Redo your missed questions',wrong+' questions you got wrong last time. Fixing these is the fastest way to gain marks.'];
+  if(nMs>=5)nx=['mist','','','Redo your mistake bank',nMs+' questions you have got wrong stay here until you remove them. Fixing these is the fastest way to gain marks.'];
   else if(weak.length)nx=['topic',weak[0].ci,weak[0].ti,'Strengthen '+E(weak[0].name),Math.round(weak[0].r/weak[0].a*100)+'% right so far. A short set will lift it.'];
   else if(!att)nx=['quick','','','Start with Quick 10','Ten mixed questions, answer shown after each. A good way to find your level.'];
   else nx=['mock','','','Sit a mock paper','20 questions in 30 minutes, marked at the end.'];
@@ -176,7 +182,7 @@ function home(){
    ${svv?`<button type="button" class="mx-resume" data-a="resume"><span><small>Pick up where you left off</small>${E(svv.scope)} · question ${svv.i+1} of ${svv.ids.length}</span>${ic.go}</button>`:''}
    <button type="button" class="mx-next" data-a="${nx[0]}" ${nx[1]!==''?`data-c="${nx[1]}" data-t="${nx[2]}"`:''}><span><small>Suggested next</small><b>${nx[3]}</b>${nx[4]}</span>${ic.go}</button>
    <p class="mx-h">Practise</p>
-   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Missed questions','Redo what you got wrong',wrong?'':'disabled','t5',wrong||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}${tile('revl','Revise later',nRev?'Questions you flagged to come back to':'Flag questions with Revise later',nRev?'':'disabled','t7',nRev||'')}${tile('mynotes','My notes',nNt?'Read every question you wrote a note on':'Add notes under any question',nNt?'':'disabled','t8',nNt||'')}</div>
+   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Mistake bank','Every question you got wrong, kept until you remove it',nMs?'':'disabled','t5',nMs||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}${tile('revl','Revise later',nRev?'Questions you flagged to come back to':'Flag questions with Revise later',nRev?'':'disabled','t7',nRev||'')}${tile('mynotes','My notes',nNt?'Read every question you wrote a note on':'Add notes under any question',nNt?'':'disabled','t8',nNt||'')}</div>
    ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><small>${t.r}/${t.a}</small><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
    <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span>${seg2(c)}</summary>
     <div class="mx-tps">${c.t.map(t=>`<div class="mx-tp"><span>${E(t.name)}<small>${t.n} · ${t.a?Math.round(t.r/t.a*100)+'% right':'new'}</small></span><button type="button" data-a="topic" data-c="${c.ci}" data-t="${t.ti}">Practise</button><button type="button" data-a="topicread" data-c="${c.ci}" data-t="${t.ti}">Read</button></div>`).join('')}
@@ -189,7 +195,7 @@ function home(){
  /* ---------- custom practice (faceted filter) ---------- */
  function chip(f,v,label,x){return `<label class="mx-f"><input type="checkbox" data-f="${f}" data-v="${E(v)}"><span>${label}</span><em></em></label>`}
  function builder(){
-  const stL={new:'Not attempted',wrong:'Missed last time',right:'Answered right',bm:'Bookmarked',rev:'Revise later',read:'Marked as read',unread:'Not marked as read',nt:'Has my note',key:'Has a key note'};
+  const stL={new:'Not attempted',ms:'In my mistake bank',wrong:'Missed last time',right:'Answered right',bm:'Bookmarked',rev:'Revise later',read:'Marked as read',unread:'Not marked as read',nt:'Has my note',key:'Has a key note'};
   M.innerHTML=`<div class="mx-bld"><div class="mx-fl">
    <label class="mx-search"><input type="search" id="mx-q" placeholder="Search question text" value="${E(F.txt)}" autocomplete="off"></label>
    <div class="mx-fs"><p class="mx-fh">Chapter and topic</p><div class="mx-chl">${CH.map((c,ci)=>`<div class="mx-chd2${[...F.tp].some(k=>k.split('.')[0]==ci)?' open':''}"><div class="mx-chh"><label class="mx-f ch"><input type="checkbox" data-f="ch" data-v="${ci}"><span>${E(c[0])}</span><em></em></label><button type="button" class="mx-tg" data-a="tg" aria-label="Show topics in ${E(c[0])}" aria-expanded="false">${ic.go}</button></div><div class="mx-tpl">${c[1].map((t,ti)=>chip('tp',ci+'.'+ti,E(t))).join('')}</div></div>`).join('')}</div></div>
@@ -254,7 +260,9 @@ function home(){
    case 'custom':nav('custom');break;
    case 'mock':{const ids=shuf(Q.filter(q=>!q.y).map(q=>q.h)).slice(0,5).concat(shuf(Q.filter(q=>q.y).map(q=>q.h)).slice(0,15));start(shuf(ids),{mode:'exam',limit:1800,scope:'Mock paper'});break}
    case 'read':reset();readN=30;readCh=-1;saveF();nav('read');break;
-   case 'mist':start(shuf(Q.filter(q=>{const x=P()[q.h];return x&&x.n&&!x.r}).map(q=>q.h)),{scope:'Missed questions'});break;
+   case 'mist':start(shuf(ST().ms.filter(h=>BY[h])),{scope:'Mistake bank'});break;
+   case 'ms':{const m=ST(),h=b.dataset.h,i=m.ms.indexOf(h);i<0?m.ms.push(h):m.ms.splice(i,1);save();b.setAttribute('aria-pressed',i<0);b.lastChild.textContent=i<0?'In mistake bank, tap to remove':'Add to mistake bank';break}
+   case 'flag':{const s=sess;if(!s||s.review)break;s.fl=s.fl||{};const h=s.ids[s.i];s.fl[h]?delete s.fl[h]:s.fl[h]=1;persist();b.setAttribute('aria-pressed',!!s.fl[h]);const st=M.querySelector('.mx-strip [data-i="'+s.i+'"]');if(st)st.classList.toggle('fg',!!s.fl[h]);const c=M.querySelector('.mx-cnt');if(c)c.innerHTML=cntHtml(s);break}
    case 'saved':start(shuf(ST().bm.filter(h=>BY[h])),{scope:'Bookmarks'});break;
    case 'revl':start(shuf(ST().rv.filter(h=>BY[h])),{scope:'Revise later'});break;
    case 'mynotes':reset();F.st.add('nt');saveF();readN=30;readCh=-1;nav('read');break;
@@ -271,7 +279,7 @@ function home(){
    case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;readCh=-1;nav('read');break;
    case 'chapread':reset();setF('ch',b.dataset.c,true);saveF();readN=30;readCh=+b.dataset.c;nav('read');break;
    case 'paper':{const g=b.dataset.g;start(Q.filter(q=>(q.g||[]).includes(g)).map(q=>q.h),{mode:'exam',limit:1800,scope:'Paper '+g});break}
-   case 'resetp':if(confirm('Clear all MCQ answers, bookmarks, read and revise-later marks and history on this device? Your notes are kept.')){const m=ST();m.p={};m.bm=[];m.rd={};m.rv=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
+   case 'resetp':if(confirm('Clear all MCQ answers, bookmarks, mistake bank, read and revise-later marks and history on this device? Your notes are kept.')){const m=ST();m.p={};m.bm=[];m.rd={};m.rv=[];m.ms=[];m.hist=[];m.sess=null;m.last=null;m.day={d:'',n:0};save();home()}break;
    case 'tg':{const d=b.closest('.mx-chd2');b.setAttribute('aria-expanded',d.classList.toggle('open'));break}
    case 'clear':reset();document.getElementById('mx-q').value='';refresh();break;
    case 'gostart':{const ids=pickSet();O.mode=O.mode||'practice';const n=ids.length;saveF();start(ids,{mode:O.mode,limit:lim(n),scope:'Custom practice'});break}
@@ -306,7 +314,8 @@ function home(){
   if(k==='ArrowRight'){step(1)}else if(k==='ArrowLeft'){step(-1)}
   else if(!q.y&&/^[a-eA-E]$/.test(k)){if(!rv)setAns(q,'abcde'.indexOf(k.toLowerCase()))}
   else if(k==='Enter'){const bt=M.querySelector('.mx-act .mx-btn:not(.ghost):not([disabled])');if(bt)bt.click()}
-  else if(k==='b'||k==='B'){const bt=M.querySelector('.mx-bm');if(bt)bt.click()}});
+  else if(k==='b'||k==='B'){const bt=M.querySelector('.mx-bm:not(.mx-fg)');if(bt)bt.click()}
+  else if((k==='f'||k==='F')&&!rv){const bt=M.querySelector('.mx-fg');if(bt)bt.click()}});
 
  /* ---------- router ---------- */
  function leave(){clearInterval(tid);if(sess&&!sess.review){persist();sess=null}document.body.classList.remove('mx-live')}
