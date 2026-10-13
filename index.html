@@ -2319,7 +2319,7 @@ if(k==='notes'){const p=document.createElement('p');p.className='nt';p.textConte
 const x=document.createElement('button');x.className='rm';x.textContent='Remove';x.onclick=()=>{k==='notes'?delete S.notes[id]:S[k].splice(S[k].indexOf(id),1);save();paint(document.getElementById(id));counts();render(k)};
 row.append(x);box.append(row)})}
 
-const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;'),DAY=864e5,IV=[0,2,4,8,16,30],dstr=t=>new Date(t).toLocaleDateString('en-CA'),
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;'),DAY=864e5,IV=[0,2,4,8,16,30],dstr=t=>{const d=new Date(t),y=d.getFullYear(),m=d.getMonth()+1,k=d.getDate();return y+'-'+(m<10?'0':'')+m+'-'+(k<10?'0':'')+k},
 BS=[...new Set(DATA.flatMap(d=>d[0].split(' ')).filter(Boolean))].sort((a,b)=>(a.slice(1)-b.slice(1))||a.localeCompare(b)),
 IMAGES={/* add your own pictures, e.g. q8:{src:'fallot.jpg',cap:'Tetralogy of Fallot'} */};
 S.pref=S.pref||{};document.documentElement.style.setProperty('--fs',S.pref.fs||1);if(S.pref.focus)document.body.classList.add('focus');
@@ -2444,7 +2444,7 @@ const STAT={all:()=>true,fav:d=>S.fav.includes(d[3]),bm:d=>S.bm.includes(d[3]),n
 const txt=d=>{const c=document.getElementById(d[3]);return c&&c._t?c._t:(d[1]+' '+d[4]+' '+d[0]).toLowerCase()};
 /* when a single topic page is open, filters and counts cover that topic only */
 const TIDS=new Set(DATA.map(d=>d[2]));let _h=null,_sc=null;
-const SC=()=>{if(location.hash!==_h){_h=location.hash;const m=/^#\/([^\/?]+)/.exec(_h);_sc=m&&TIDS.has(m[1])?m[1]:null}return _sc};
+let _v=false;const SC=()=>{if(!_v){_v=true;Promise.resolve().then(()=>{_v=false});if(location.hash!==_h){_h=location.hash;const m=/^#\/([^\/?]+)/.exec(_h);_sc=m&&TIDS.has(m[1])?m[1]:null}}return _sc};
 const scN=()=>SC()?DATA.filter(d=>d[2]===SC()).length:DATA.length;
 const pass=(d,skip)=>(!SC()||d[2]===SC())&&(skip==='show'||!F.show.length||F.show.some(v=>STAT[v](d)))&&(skip==='type'||!F.type.length||F.type.some(v=>ty(d)===v||ty(d)==='B'))&&(skip==='part'||!F.part.length||F.part.includes(pk(d)))
  &&(skip==='card'||((!F.letter.length||F.letter.some(l=>hasL(d,l)))&&(!F.card.length||cds(d).some(c=>F.card.includes(c)))))&&(skip==='stars'||!F.stars.length||F.stars.includes(String(st(d))))&&(skip==='year'||!F.year.length||yrs(d).some(y=>F.year.includes(String(y))))&&(skip==='topic'||!F.topic.length||F.topic.includes(String(chOf(d))))&&(!F.q||txt(d).includes(F.q));
@@ -2655,12 +2655,12 @@ addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey||e.target.match
 if(k==='/'){e.preventDefault();(v.querySelector('.tq')||document.getElementById('gq')).focus()}else if(k==='arrowright')step(1);else if(k==='arrowleft')step(-1);
 else if(k==='b'||k==='l'){const c=cur(v);c&&c.querySelector(`.act[data-k="${k==='b'?'bm':'learned'}"]`).click()}
 else if(v.id==='v-practice'&&PR){const m={' ':'show',1:'e',2:'m',3:'h'}[k],b=m&&P.querySelector(`[data-r="${m}"]`);if(b){e.preventDefault();b.click()}}});
-(function(){const V={},df={},W={},N=DATA.length;DATA.forEach(d=>{const t={};(document.getElementById(d[3]).textContent.toLowerCase().match(/[a-z]{6,}/g)||[]).forEach(w=>t[w]=(t[w]||0)+1);V[d[3]]=t;Object.keys(t).forEach(w=>df[w]=(df[w]||0)+1)});
+(window.requestIdleCallback||function(f){setTimeout(f,200)})(function(){const V={},df={},W={},N=DATA.length;DATA.forEach(d=>{const t={};(document.getElementById(d[3]).textContent.toLowerCase().match(/[a-z]{6,}/g)||[]).forEach(w=>t[w]=(t[w]||0)+1);V[d[3]]=t;Object.keys(t).forEach(w=>df[w]=(df[w]||0)+1)});
 for(const id in V){let s=0;W[id]={};for(const w in V[id]){const x=(1+Math.log(V[id][w]))*Math.log(N/df[w]);W[id][w]=x;s+=x*x}s=Math.sqrt(s)||1;for(const w in W[id])W[id][w]/=s}
 const post={};DATA.forEach((d,i)=>{const a=W[d[3]];for(const w in a)if(a[w])(post[w]||(post[w]=[])).push(i,a[w])});
 DATA.forEach((d,i)=>{const a=W[d[3]],sc=new Float64Array(N);for(const w in a){const aw=a[w],pl=post[w];for(let k=0;k<pl.length;k+=2)sc[pl[k]]+=aw*pl[k+1]}
 const r=[];for(let j=0;j<N;j++)if(j!==i&&sc[j]>.1)r.push([sc[j],DATA[j]]);r.sort((x,y)=>y[0]-x[0]);r.length=Math.min(r.length,3);
-if(r.length)document.getElementById(d[3]).insertAdjacentHTML('beforeend','<div class="rel"><b>Related</b>'+r.map(x=>`<a href="#/${x[1][2]}/${x[1][3]}">${esc(x[1][1].split(/[.?]/)[0].slice(0,60))}</a>`).join('')+'</div>')})})();
+if(r.length)document.getElementById(d[3]).insertAdjacentHTML('beforeend','<div class="rel"><b>Related</b>'+r.map(x=>`<a href="#/${x[1][2]}/${x[1][3]}">${esc(x[1][1].split(/[.?]/)[0].slice(0,60))}</a>`).join('')+'</div>')})});
 document.querySelectorAll('.card').forEach(c=>{const a=c.querySelector('.ans'),p=a.firstElementChild;if(p&&p.tagName==='P'){const s=document.createElement('span');s.className='kp';while(p.firstChild&&p.firstChild.nodeName!=='BR')s.append(p.firstChild);if(p.firstChild)p.firstChild.remove();p.before(s);if(!p.textContent.trim())p.remove()}
 const im=IMAGES[c.id];if(im){const h=`<figure class="fig"><img src="${im.src}" alt="${im.cap}" loading="lazy"><figcaption>${im.cap}</figcaption></figure>`,k=a.querySelector('.kp');k?k.insertAdjacentHTML('afterend',h):a.insertAdjacentHTML('afterbegin',h)}});
 
@@ -3150,7 +3150,7 @@ const isW=d=>TYW[d[3]]==='W',isB=d=>TYW[d[3]]==='B',kind=d=>isB(d)?'Written + Vi
 const stars=d=>(EX[d[3]]||[0])[0]||0;
 const years=d=>(EX[d[3]]||[0,'',[]])[2]||[];
 function pageOf(c){const a=byCh[c];if(!a)return null;const n={};a.forEach(d=>n[d[2]]=(n[d[2]]||0)+1);return Object.keys(n).sort((x,y)=>n[y]-n[x])[0]}
-const missing=id=>{const e=document.querySelector('#'+id+' .ans');return !!e&&/Answer to be added/.test(e.textContent)};
+let MISS=null;const missing=id=>{if(!MISS){MISS=new Set();document.querySelectorAll('.card').forEach(c=>{const e=c.querySelector('.ans');if(e&&/Answer to be added/.test(e.textContent))MISS.add(c.id)})}return MISS.has(id)};
 function esc2(t){return String(t).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
 const pct=(a,b)=>b?Math.round(100*a/b):0;
 const lnk=d=>'#/'+d[2]+'/'+d[3];
@@ -3192,7 +3192,7 @@ function heat(){
   for(let d=0;d<7;d++){const t=first+(w*7+d)*DAY,k=dstr(t);
    if(t>base+DAY/2){cells+='<i class="hm x"></i>';continue}
    const n=A[k]||0;tot+=n;if(n)act++;if(w===W-1)wk+=n;
-   cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short'})+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
+   cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+(()=>{const q=new Date(t);return q.getDate()+' '+MON[q.getMonth()]})()+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
  ml.forEach((x,i)=>{if(!ml[i+1]||ml[i+1][0]-x[0]>=3)mon+='<span style="grid-column:'+(x[0]+1)+'">'+x[1]+'</span>'});
  /* longest run of consecutive active days, all time */
  const ks=Object.keys(A).filter(k=>A[k]>0).sort();let best=0,run=0,prev=null;
@@ -3297,7 +3297,7 @@ wrap.addEventListener('click',e=>{
 wrap.addEventListener('change',e=>{
  if(e.target.id==='nhex'){S.pref=S.pref||{};if(e.target.value)S.pref.exam=e.target.value;else delete S.pref.exam;save();render()}
 });
-window.nhRender=render;render();
+window.nhRender=(function(){let q=0;return function(){if(q)return;q=1;requestAnimationFrame(function(){q=0;render()})}})();render();
 })();
 
 /* ---- put the reading tools (Ink / Theme / A- / A+ / Focus / Print) in the top bar: right next to "Start revising", inside the free space after the logo ---- */
