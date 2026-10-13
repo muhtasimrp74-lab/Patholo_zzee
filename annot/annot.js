@@ -146,7 +146,10 @@ const ro=new ResizeObserver(es=>es.forEach(e=>{const L=layers.get(e.target);L&&s
 function layerOf(host,key,make){let L=layers.get(host);if(L)return L;key=key||keyOf(host);if(!key)return null;
  L={host,key,hl:null,ink:null,wet:null,raf:0,fresh:true,tb:!!(host.matches&&host.matches(TBH)),win:null};layers.set(host,L);host.classList.add('an-host');ro.observe(host);sched(L);return L}
 function cv(L,cls){let c=L[cls];if(!c){c=document.createElement('canvas');c.className='an-c '+cls;c.setAttribute('aria-hidden','true');c._L=L;L.host.append(c);L[cls]=c}return c}
-function size(c,w,h){const wn=c._L&&c._L.win;let oy=0;{const tp=wn?wn.y+'px':'',ht=wn?wn.h+'px':'';if(wn){oy=wn.y;h=wn.h}if(c.style.top!==tp)c.style.top=tp;if(c.style.height!==ht)c.style.height=ht}
+function size(c,w,h){const wn=c._L&&c._L.win;let oy=0;{let tp='',ht='';if(wn){oy=wn.y;h=wn.h;
+  /* the live-stroke canvas only needs the visible screen: redrawing a screen-sized layer each frame is far cheaper than the whole window */
+  if(c===c._L.wet){const hh=c._L.host,y=Math.max(0,Math.floor(-hh.getBoundingClientRect().top));oy=y;h=Math.max(1,Math.min(Math.ceil(innerHeight),hh.clientHeight-y))}
+  tp=oy+'px';ht=h+'px'}if(c.style.top!==tp)c.style.top=tp;if(c.style.height!==ht)c.style.height=ht}
  const d=Math.min(2,window.devicePixelRatio||1),k=Math.min(d,Math.sqrt(16e6/(w*h)),4096/Math.max(w,h)),W=Math.max(1,Math.round(w*k)),H=Math.max(1,Math.round(h*k));if(c.width!==W||c.height!==H){c.width=W;c.height=H}const g=c.getContext('2d');g.setTransform(W/w,0,0,H/h,0,-oy*H/h);return g}
 const sched=L=>{if(L.raf)return;L.raf=requestAnimationFrame(()=>{L.raf=0;paint(L);if(sel&&sel.L===L)showSel()})};
 const docOf=k=>St.docs[k];
