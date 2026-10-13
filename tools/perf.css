@@ -24,7 +24,7 @@ html .card,html .qi,html .topic,html .row{transition-property:box-shadow,border-
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 /* ---- reading tools (Ink / Theme / A- / A+ / Focus / Print): live in the top bar, between the logo and "Start revising" (position set by home.js) ---- */
-html body #tools{position:fixed;top:12px;bottom:auto;left:auto;right:12px;transform:none;z-index:32;display:flex;flex-wrap:nowrap;padding:2px;gap:0;border-radius:12px;box-shadow:none;overflow-x:auto;scrollbar-width:none}
+html body #tools{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));bottom:auto;left:auto;right:12px;transform:none;z-index:32;display:flex;flex-wrap:nowrap;padding:2px;gap:0;border-radius:12px;box-shadow:none;overflow-x:auto;scrollbar-width:none}
 html body #tools::-webkit-scrollbar{display:none}
 html body #tools button{flex:none;white-space:nowrap;padding:6px 10px;font-size:12px}
 @media(max-width:700px){html body #tools button{padding:5px 5px;font-size:10.5px}}
@@ -45,4 +45,5 @@ html body #tools button[data-t=theme]{--ic:url("data:image/svg+xml,%3Csvg xmlns=
 html body #tools button[data-t=listen][aria-pressed=true]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Crect x=%226%22 y=%226%22 width=%2212%22 height=%2212%22 rx=%222%22 fill=%22black%22/%3E%3C/svg%3E")}
 @media(max-width:520px){html body #tools{padding:2px 1px}html body #tools button[data-t]:not(.fb){width:25px;height:32px}html body #tools button[data-t]:not(.fb)::before{width:17px;height:17px;margin:-8.5px 0 0 -8.5px}html body .nav .pill{min-width:0;padding-left:11px;padding-right:11px;font-size:.76rem;white-space:nowrap}}
 @media(max-width:380px){html body #tools button[data-t]:not(.fb){width:22px}html body #tools button[data-t]:not(.fb)::before{width:16px;height:16px;margin:-8px 0 0 -8px}}
+html body .nav{height:calc(60px + env(safe-area-inset-top,0px))}
 @media print{html body #tools{display:none!important}}

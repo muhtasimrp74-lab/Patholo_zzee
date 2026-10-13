@@ -708,7 +708,7 @@ function sync(){if(!bar)return;layers.forEach(L=>{if(!L.tb)wsEnsure(L)});{const 
  pill.querySelector('i').style.background=col(HLT()?P.hlc:P.col,HLT());pill.firstChild.replaceWith(svg(P.tool in IC?P.tool:'pen'));
  const tb=$('#tools [data-t=ink]');tb&&tb.setAttribute('aria-pressed',on);layers.forEach(L=>{if(L.tb)sched(L)});
  rove(bar.contains(document.activeElement)?document.activeElement:null);requestAnimationFrame(()=>place())}
-function setOn(v){closeText(true);P.on=v;if(!v){closePop();if(live)onUp({pointerId:live.pid,type:'pointercancel'})}else{document.querySelectorAll('.card .ans,'+MXS+','+TBH).forEach(h=>layerOf(h));tip()}sync()}
+function setOn(v){closeText(true);P.on=v;if(!v){closePop();if(live)onUp({pointerId:live.pid,type:'pointercancel'})}else{const vv=[...document.querySelectorAll('.view')].filter(v=>getComputedStyle(v).display!=='none');(vv.length?vv:[document]).forEach(r=>r.querySelectorAll('.card .ans,'+MXS+','+TBH).forEach(h=>layerOf(h)));tip()}sync()}
 /* ---------- finger scroll vs stylus (touch-action strategy lives in annot.css; this closes the gap for styluses that scroll) ---------- */
 document.addEventListener('touchstart',e=>{if(!P.on||P.tool==='hand'||P.tool==='hi'||!hostOf(e.target))return;for(const t of e.changedTouches)if(t.touchType==='stylus'&&e.cancelable){e.preventDefault();return}},{passive:false});
 document.addEventListener('pointerdown',onDown,{passive:false,capture:true});
