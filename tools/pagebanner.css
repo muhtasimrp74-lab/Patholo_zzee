@@ -37,3 +37,7 @@
 @media(max-width:1000px){.pb-in .hero-in{max-width:58%}.pb-act{margin-top:16px}.pb-btn{padding:0 16px}.pb-btn.pb-p{padding:0 20px}}
 @media(max-width:640px){.pb-in .hero-in{max-width:none}.pb-act{margin-top:18px}.pb-btn.pb-p{width:100%;justify-content:center}.pb-btn{flex:1 1 auto;justify-content:center}}
 @media(min-width:1001px){.pb-act{width:max-content;max-width:min(620px,calc(100vw - 2*var(--gut)))}}
+
+/* roomier banner: content never touches the edges */
+@media(min-width:641px){.pb{height:auto;min-height:clamp(360px,46vw,420px)}.pb-in{height:auto;min-height:inherit;padding-block:48px;box-sizing:border-box}}
+@media(min-width:1001px){.pb{min-height:clamp(420px,32vw,500px)}}

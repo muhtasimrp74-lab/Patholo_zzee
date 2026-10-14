@@ -1197,6 +1197,10 @@ h1 em{font-size:.66em;font-weight:700}
 @media(max-width:640px){.pb-in .hero-in{max-width:none}.pb-act{margin-top:18px}.pb-btn.pb-p{width:100%;justify-content:center}.pb-btn{flex:1 1 auto;justify-content:center}}
 @media(min-width:1001px){.pb-act{width:max-content;max-width:min(620px,calc(100vw - 2*var(--gut)))}}
 
+/* roomier banner: content never touches the edges */
+@media(min-width:641px){.pb{height:auto;min-height:clamp(360px,46vw,420px)}.pb-in{height:auto;min-height:inherit;padding-block:48px;box-sizing:border-box}}
+@media(min-width:1001px){.pb{min-height:clamp(420px,32vw,500px)}}
+
 /* ---- site footer ---- */
 .sf{margin-top:56px;padding:0;text-align:left;font-size:inherit;background:#120a08;color:#D8CDBD}
 .nh-f{display:none}
@@ -1399,8 +1403,8 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
  .topic:hover:active,.dc:hover:active,.pc:hover:active,.tbtile:hover:active,.mtile:hover:active,.pager a:hover:active{transform:translateY(-1px) scale(.985)}
  #bnav a:hover,.chips button:hover,.qchip:hover{transform:translateY(-2px)}
  #tools button:hover{transform:translateY(-2px)}}
-.act.pop svg{animation:zzpop .42s cubic-bezier(.2,1.4,.4,1)}.act svg{transform-origin:50% 50%}.zz-tap,.zz-spark{will-change:transform,opacity}
-@keyframes zzpop{0%{transform:scale(1)}35%{transform:scale(1.25) rotate(-6deg)}70%{transform:scale(.95)}100%{transform:scale(1)}}
+.act.pop svg{animation:zzpop .3s ease-out}.act svg{transform-origin:50% 50%}.zz-tap,.zz-spark{will-change:transform,opacity}
+@keyframes zzpop{0%{transform:scale(1)}45%{transform:scale(1.14)}100%{transform:scale(1)}}
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
 .zz-spark{position:fixed;z-index:90;width:7px;height:7px;margin:-3.5px;border-radius:50%;pointer-events:none;background:var(--c,var(--lbl));animation:zzspark .7s cubic-bezier(.2,.7,.3,1) forwards}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
@@ -3300,7 +3304,7 @@ function render(){
  const pace=days>0?Math.ceil((tot-read)/days):0;
 
  /* ---------- hero ---------- */
- let h='<section class="nh-banner" aria-labelledby="nh-h1"><div class="nh-bn-pic"><picture><source media="(max-width:640px)" srcset="icons/hero-lab-m.webp" width="600" height="671"><source media="(max-width:1000px)" srcset="icons/hero-lab-900.webp" width="900" height="506"><img src="icons/hero-lab.webp" width="1672" height="940" alt="" fetchpriority="high" decoding="async"></picture></div><div class="nh-bn-in"><div class="nh-bn-t"><p class="nh-eb">NMC viva list · Robbins 11th</p><h1 id="nh-h1">Pathology learning for viva and written exams</h1><p class="nh-bn-s">Patholo_zzee brings '+tot+' questions with answers, MCQs and the Robbins textbook together. Read. Recall. Answer.</p><a class="nh-bn-cta" href="#/qa">Explore Pathology</a></div></div></section>';
+ let h='<section class="nh-banner" aria-labelledby="nh-h1"><div class="nh-bn-pic"><picture><source media="(max-width:640px)" srcset="icons/hero-lab-m.webp" width="600" height="671"><img src="icons/hero-lab.webp" width="1672" height="940" alt="" fetchpriority="high" decoding="async"></picture></div><div class="nh-bn-in"><div class="nh-bn-t"><p class="nh-eb">NMC viva list · Robbins 11th</p><h1 id="nh-h1">Pathology learning for viva and written exams</h1><p class="nh-bn-s">Patholo_zzee brings '+tot+' questions with answers, MCQs and the Robbins textbook together. Read. Recall. Answer.</p><a class="nh-bn-cta" href="#/qa">Explore Pathology</a></div></div></section>';
  h+='<div class="nh-w"><header class="nh-hero nh-hero-s">';
  h+='<div class="nh-chips"><span class="nh-chip'+(doneToday?' on':'')+'"><b>'+sn+'</b> day streak'+(doneToday?' · done today':sn?' · study today to keep it':'')+'</span>';
  h+='<span class="nh-chip"><b>'+tot+'</b> questions</span>';
@@ -3419,7 +3423,7 @@ function apply(){
   const hi=v.querySelector('.hero-in');if(!hi)continue;
   const k=IMG[id];
   const s=document.createElement('section');s.className='pb';s.dataset.pb=k;
-  s.innerHTML='<div class="pb-pic"><picture><source media="(max-width:1000px)" srcset="icons/pb-'+k+'-900.webp" width="900" height="506"><img src="icons/pb-'+k+'.webp" width="1672" height="940" alt="" decoding="async"></picture></div>';
+  s.innerHTML='<div class="pb-pic"><img src="icons/pb-'+k+'.webp" srcset="icons/pb-'+k+'-900.webp 900w,icons/pb-'+k+'.webp 1672w" sizes="(max-width:640px) 140vw,100vw" width="1672" height="940" alt="" decoding="async"></div>';
   const w=document.createElement('div');w.className='pb-in';hi.before(s);s.appendChild(w);w.appendChild(hi);
   build(id,hi.firstElementChild||hi);
  }
@@ -3678,13 +3682,10 @@ if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
 const HIT='button,a,.act,.topic,.dc,.pc,.qi-h,.card>header,.tbtile,.mtile,.nh-row a,summary,label.mtile';
 let last=0;
 function rm(e){setTimeout(()=>e.remove(),800)}
-document.addEventListener('pointerdown',e=>{if(e.button>0||!e.target.closest(HIT))return;const n=performance.now();if(n-last<60)return;last=n;
+document.addEventListener('pointerdown',e=>{if(e.button>0||!e.target.closest(HIT)||e.target.closest('.act'))return;const n=performance.now();if(n-last<60)return;last=n;
  if(document.body.classList.contains('an-on'))return;
  const d=document.createElement('i');d.className='zz-tap';d.style.left=e.clientX+'px';d.style.top=e.clientY+'px';document.body.append(d);rm(d)},{passive:true});
-document.addEventListener('click',e=>{const a=e.target.closest('.act');if(!a)return;a.classList.remove('pop');requestAnimationFrame(()=>{a.classList.add('pop');setTimeout(()=>a.classList.remove('pop'),460)});
- const k=a.dataset.k,c=a.closest('.card');if(!c||!['learned','bm','fav'].includes(k))return;let on=false;try{on=S[k].includes(c.id)}catch(e){}if(!on)return;
- const r=a.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2,col={learned:'var(--ok)',bm:'var(--lbl)',fav:'var(--clay2,var(--lbl))'}[k];
- for(let i=0;i<5;i++){const s=document.createElement('i'),t=(i/5)*Math.PI*2+Math.random()*.5,d=18+Math.random()*16;s.className='zz-spark';s.style.cssText='left:'+x+'px;top:'+y+'px;--c:'+col+';--dx:'+Math.cos(t)*d+'px;--dy:'+Math.sin(t)*d+'px';document.body.append(s);rm(s)}},false);
+document.addEventListener('click',e=>{const a=e.target.closest('.act');if(!a)return;a.classList.remove('pop');requestAnimationFrame(()=>{a.classList.add('pop');setTimeout(()=>a.classList.remove('pop'),460)});},false);
 }catch(e){}})();
 
 </script>

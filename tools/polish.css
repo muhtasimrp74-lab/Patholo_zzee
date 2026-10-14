@@ -87,8 +87,8 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
  .topic:hover:active,.dc:hover:active,.pc:hover:active,.tbtile:hover:active,.mtile:hover:active,.pager a:hover:active{transform:translateY(-1px) scale(.985)}
  #bnav a:hover,.chips button:hover,.qchip:hover{transform:translateY(-2px)}
  #tools button:hover{transform:translateY(-2px)}}
-.act.pop svg{animation:zzpop .42s cubic-bezier(.2,1.4,.4,1)}.act svg{transform-origin:50% 50%}.zz-tap,.zz-spark{will-change:transform,opacity}
-@keyframes zzpop{0%{transform:scale(1)}35%{transform:scale(1.25) rotate(-6deg)}70%{transform:scale(.95)}100%{transform:scale(1)}}
+.act.pop svg{animation:zzpop .3s ease-out}.act svg{transform-origin:50% 50%}.zz-tap,.zz-spark{will-change:transform,opacity}
+@keyframes zzpop{0%{transform:scale(1)}45%{transform:scale(1.14)}100%{transform:scale(1)}}
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
 .zz-spark{position:fixed;z-index:90;width:7px;height:7px;margin:-3.5px;border-radius:50%;pointer-events:none;background:var(--c,var(--lbl));animation:zzspark .7s cubic-bezier(.2,.7,.3,1) forwards}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
