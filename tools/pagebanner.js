@@ -35,7 +35,7 @@ function apply(){
   const hi=v.querySelector('.hero-in');if(!hi)continue;
   const k=IMG[id];
   const s=document.createElement('section');s.className='pb';s.dataset.pb=k;
-  s.innerHTML='<div class="pb-pic"><picture><source media="(max-width:1000px)" srcset="icons/pb-'+k+'-900.webp" width="900" height="506"><img src="icons/pb-'+k+'.webp" width="1672" height="940" alt="" decoding="async"></picture></div>';
+  s.innerHTML='<div class="pb-pic"><img src="icons/pb-'+k+'.webp" srcset="icons/pb-'+k+'-900.webp 900w,icons/pb-'+k+'.webp 1672w" sizes="(max-width:640px) 140vw,100vw" width="1672" height="940" alt="" decoding="async"></div>';
   const w=document.createElement('div');w.className='pb-in';hi.before(s);s.appendChild(w);w.appendChild(hi);
   build(id,hi.firstElementChild||hi);
  }
