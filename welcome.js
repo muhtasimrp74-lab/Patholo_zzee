@@ -41,4 +41,28 @@ window.addEventListener('load',function(){idle(function(){
   for(var i=1;i<=29;i++)(function(n){var u='textbook/ch'+(n<10?'0':'')+n+'.html';idle(function(){fetch(u,{cache:'force-cache'}).catch(function(){})})})(i);
   document.querySelectorAll('img').forEach(function(im){if(im.decode)im.decode().catch(function(){})});
 })});
+
+/* pre-draw: on wide screens, once idle, switch the current page's off-screen sections to "fully rendered" in small time-boxed batches, so nothing pops in while scrolling */
+(function(){
+var SEL='.card,.qi,.row,.topic,.nh-ch,.nh-mr',gen=0;
+function run(){
+  var g=++gen;
+  if(innerWidth<700)return;
+  try{if(navigator.connection&&navigator.connection.saveData)return}catch(e){}
+  var v=document.querySelector('.view:not([hidden])');if(!v)return;
+  var list=Array.prototype.slice.call(v.querySelectorAll(SEL)).filter(function(e){return !e.dataset.zzp});
+  var i=0;
+  function step(dl){
+    if(g!==gen)return;
+    while(i<list.length&&(dl&&dl.timeRemaining?dl.timeRemaining()>6:true)){
+      for(var k=0;k<12&&i<list.length;k++,i++){list[i].style.contentVisibility='visible';list[i].dataset.zzp='1'}
+      if(!dl||!dl.timeRemaining)break;
+    }
+    if(i<list.length)(window.requestIdleCallback||function(c){setTimeout(c,60)})(step,{timeout:800});
+  }
+  (window.requestIdleCallback||function(c){setTimeout(c,300)})(step,{timeout:1500});
+}
+window.addEventListener('load',function(){setTimeout(run,1800)});
+window.addEventListener('hashchange',function(){setTimeout(run,900)});
+})();
 })();
