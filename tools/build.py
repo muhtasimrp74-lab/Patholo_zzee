@@ -371,7 +371,14 @@ s = s.replace('</head><body>', '</head><body>' + STAR_SPRITE, 1)
 # ---- no flash of the old markup: the page's static HTML is rewritten by the big script at the end, so keep the
 # body hidden (background stays the theme colour) until that script has built the UI. A failsafe timer reveals it
 # anyway if something goes wrong; without JavaScript the class is never added, so the page stays visible.
-BOOT_HEAD = ('<style id="zz-boot-css">html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F3EBDD)}</style>'
+BOOT_HEAD = ('<style id="zz-perf">@media (min-width:700px){
+/* big screens: drop per-item blur, cheaper bars, no repainting fixed background */
+.card header,.qi-h,.card,.qi,.row,.topic,.dc,.pc,.ph,.part-h,.qs-h,.empty,.nh-row a,.nh-g div,.nh-prog,.dp,#nhr,.nh-toc,.qddl,.stats,.pager a{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.nav,.bar,.nh-bar,#bnav,#tools,.toast,.mx-top{-webkit-backdrop-filter:blur(10px)!important;backdrop-filter:blur(10px)!important}
+body{background:var(--bg)!important;background-attachment:scroll!important}
+body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:var(--mesh);transform:translateZ(0)}
+body::before{mix-blend-mode:normal!important;opacity:.025!important}
+.card,.qi,.row,.topic{will-change:auto}}</style><style id="zz-boot-css">html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F3EBDD)}</style>'
              '<script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script>')
 BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script>'
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
