@@ -213,7 +213,7 @@ QV.addEventListener('click',e=>{
  const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;open1(i,h.getAttribute('aria-expanded')!=='true');return}
  const s=e.target.closest('.qs-h');if(s){const o=s.getAttribute('aria-expanded')!=='true';s.setAttribute('aria-expanded',o);s.nextElementSibling.hidden=!o;return}
  const b=e.target.closest('.qlearn');if(b){const i=b.closest('.qi'),id=i.dataset.id,k=S.learned.indexOf(id);k<0?(S.learned.push(id),touch()):S.learned.splice(k,1);save();
-  QV.querySelectorAll('.qi[data-id="'+id+'"]').forEach(lbl);const c=document.getElementById(id);if(c)paint(c);counts();panel()}});
+  QV.querySelectorAll('.qi[data-id="'+id+'"]').forEach(lbl);const c=document.getElementById(id);if(c)paintCard(c);counts();panel()}});
 const vis=()=>$q('qflat').hidden?$q('qlist'):$q('qflat');
 $q('qexp').onclick=()=>{const v=vis();v.querySelectorAll('.qs:not([hidden])').forEach(s=>{s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false});v.querySelectorAll('.qi:not([hidden])').forEach(i=>open1(i,true))};
 $q('qcol').onclick=()=>QV.querySelectorAll('.qi').forEach(i=>open1(i,false));

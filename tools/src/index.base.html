@@ -519,17 +519,18 @@ const EMPTY={bm:'No bookmarks yet. Use the Bookmark button under any question.',
 let S={fav:[],bm:[],notes:{},learned:[],sr:{},streak:{n:0,last:''},recent:[],pref:{}};try{S=Object.assign(S,JSON.parse(localStorage.getItem('vivaState')||'{}'))}catch(e){}
 const save=()=>{try{localStorage.setItem('vivaState',JSON.stringify(S))}catch(e){if(!window.__qw){window.__qw=1;alert('Could not save your progress: browser storage is full or blocked. Use Menu > Export backup now.')}}};
 const IC={learned:'<path d="M20 6L9 17l-5-5"/>',fav:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/>',bm:'<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>',notes:'<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>'};
-const LB={fav:'Favourite',bm:'Bookmark',notes:'Note',learned:'Learned'};
+const LB={fav:'Favourite',bm:'Bookmark',notes:'Add note',learned:'Mark as learned'};
+const LB2={fav:'Favourited',bm:'Bookmarked',notes:'Note saved',learned:'Learned \u2713'};
 function counts(){prog();document.querySelectorAll('[data-c]').forEach(e=>{const k=e.dataset.c;e.textContent=k==='notes'?Object.keys(S.notes).length:S[k].length})}
-function paint(c){['fav','bm','notes','learned'].forEach(k=>{const on=k==='notes'?!!S.notes[c.id]:S[k].includes(c.id);c.querySelector(`.act[data-k="${k}"]`).setAttribute('aria-pressed',on)});const t=c.querySelector('textarea');if(t!==document.activeElement)t.value=S.notes[c.id]||''}
+function paintCard(c){['fav','bm','notes','learned'].forEach(k=>{const on=k==='notes'?!!S.notes[c.id]:S[k].includes(c.id),bt=c.querySelector(`.act[data-k="${k}"]`);bt.setAttribute('aria-pressed',on);const sp=bt.querySelector('span');if(sp)sp.textContent=on?LB2[k]:LB[k]});const t=c.querySelector('textarea');if(t!==document.activeElement)t.value=S.notes[c.id]||''}
 document.querySelectorAll('.card').forEach(c=>{const a=document.createElement('div');a.className='acts';
 a.innerHTML=['fav','bm','notes','learned'].map(k=>`<button class="act" data-k="${k}" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true">${IC[k]}</svg><span>${LB[k]}</span></button>`).join('')+'<button class="act sh"><svg viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M16 6l-4-4-4 4M12 2v13"/></svg><span>Share</span></button><div class="note" hidden><textarea rows="3" placeholder="Write your note here…" aria-label="Note"></textarea></div>';
-c.querySelector('header').after(a);paint(c);if(S.notes[c.id])a.querySelector('.note').hidden=false});
+c.querySelector('header').after(a);paintCard(c);if(S.notes[c.id])a.querySelector('.note').hidden=false});
 counts();
 document.addEventListener('click',e=>{const b=e.target.closest('.act');if(!b||b.classList.contains('sh'))return;const c=b.closest('.card'),k=b.dataset.k;
 if(k==='notes'){const n=c.querySelector('.note');n.hidden=!n.hidden;if(!n.hidden)n.querySelector('textarea').focus();return}
-const i=S[k].indexOf(c.id);i<0?S[k].push(c.id):S[k].splice(i,1);if(k==='learned'&&i<0)touch();save();paint(c);counts()});
-document.addEventListener('input',e=>{const t=e.target.closest('.note textarea');if(!t)return;const c=t.closest('.card'),v=t.value.trim();v?S.notes[c.id]=t.value:delete S.notes[c.id];save();paint(c);counts()});
+const i=S[k].indexOf(c.id);i<0?S[k].push(c.id):S[k].splice(i,1);if(k==='learned'&&i<0)touch();save();paintCard(c);counts()});
+document.addEventListener('input',e=>{const t=e.target.closest('.note textarea');if(!t)return;const c=t.closest('.card'),v=t.value.trim();v?S.notes[c.id]=t.value:delete S.notes[c.id];save();paintCard(c);counts()});
 function render(k){const box=document.querySelector(`[data-list="${k}"]`);box.replaceChildren();const ids=k==='notes'?Object.keys(S.notes):S[k];
 if(!ids.length){box.innerHTML=`<p class="none" style="display:block">${EMPTY[k]}</p>`;return}
 ids.forEach(id=>{const d=BY[id];if(!d)return;const row=document.createElement('div');row.className='row';const a=document.createElement('a');a.href=`#/${d[2]}/${id}`;
@@ -601,7 +602,7 @@ else if(v.id==='v-practice'&&PR){const m={' ':'show',1:'e',2:'m',3:'h'}[k],b=m&&
 (window.requestIdleCallback||function(f){setTimeout(f,200)})(function(){const V={},df={},W={},N=DATA.length;DATA.forEach(d=>{const t={};(document.getElementById(d[3]).textContent.toLowerCase().match(/[a-z]{6,}/g)||[]).forEach(w=>t[w]=(t[w]||0)+1);V[d[3]]=t;Object.keys(t).forEach(w=>df[w]=(df[w]||0)+1)});
 for(const id in V){let s=0;W[id]={};for(const w in V[id]){const x=(1+Math.log(V[id][w]))*Math.log(N/df[w]);W[id][w]=x;s+=x*x}s=Math.sqrt(s)||1;for(const w in W[id])W[id][w]/=s}
 const post={};DATA.forEach((d,i)=>{const a=W[d[3]];for(const w in a)if(a[w])(post[w]||(post[w]=[])).push(i,a[w])});
-DATA.forEach((d,i)=>{const a=W[d[3]],sc=new Float64Array(N);for(const w in a){const aw=a[w],pl=post[w];for(let k=0;k<pl.length;k+=2)sc[pl[k]]+=aw*pl[k+1]}
+DATA.forEach((d,i)=>{const a=W[d[3]],sc=new Float64Array(N);for(const w in a){const aw=a[w],pl=post[w];if(!pl)continue;for(let k=0;k<pl.length;k+=2)sc[pl[k]]+=aw*pl[k+1]}
 const r=[];for(let j=0;j<N;j++)if(j!==i&&sc[j]>.1)r.push([sc[j],DATA[j]]);r.sort((x,y)=>y[0]-x[0]);r.length=Math.min(r.length,3);
 if(r.length)document.getElementById(d[3]).insertAdjacentHTML('beforeend','<div class="rel"><b>Related</b>'+r.map(x=>`<a href="#/${x[1][2]}/${x[1][3]}">${esc(x[1][1].split(/[.?]/)[0].slice(0,60))}</a>`).join('')+'</div>')})});
 document.querySelectorAll('.card').forEach(c=>{const a=c.querySelector('.ans'),p=a.firstElementChild;if(p&&p.tagName==='P'){const s=document.createElement('span');s.className='kp';while(p.firstChild&&p.firstChild.nodeName!=='BR')s.append(p.firstChild);if(p.firstChild)p.firstChild.remove();p.before(s);if(!p.textContent.trim())p.remove()}
