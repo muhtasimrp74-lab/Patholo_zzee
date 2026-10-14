@@ -1975,7 +1975,37 @@ html #v-home .nh-mr{content-visibility:auto;contain-intrinsic-size:auto 60px}
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Patholo_zzee">
-<link rel="stylesheet" href="annot/annot.css"><style id="zz-perf">@media (min-width:700px){
+<style id="zz-motion-css">/* ===== premium motion layer: one easing curve, two durations, transform/opacity only ===== */
+:root{--zz-ease:cubic-bezier(.2,.7,.2,1);--zz-fast:.15s;--zz-med:.3s}
+button,.pill,.act,#bnav a,.mtile,.chips button,.qfbtn,.qchip,.pager a,.topic,.dc,.pc,.tbtile,.qi-h,.card>header,.nh-row a{transition:transform var(--zz-fast) var(--zz-ease),box-shadow var(--zz-med) var(--zz-ease),background-color var(--zz-fast) ease,border-color var(--zz-fast) ease,color var(--zz-fast) ease}
+@media(prefers-reduced-motion:no-preference){
+/* 2. pages settle in: short fade + small upward slide (backwards fill, so no leftover transform) */
+@keyframes zzview{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.view:not([hidden]){animation:zzview var(--zz-med) var(--zz-ease) backwards}
+html.zz-still .view:not([hidden]){animation:none}
+/* 3. first few list items arrive one after another */
+@keyframes zzrise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(-n+8){animation:zzrise .4s var(--zz-ease) backwards}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(2){animation-delay:.03s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(3){animation-delay:.06s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(4){animation-delay:.09s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(5){animation-delay:.12s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(6){animation-delay:.15s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(7){animation-delay:.18s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(8){animation-delay:.21s}
+/* 4. answers are animated by script (height + fade); drop the old fixed slide so they don't fight */
+.qi-a:not([hidden]),.qs-b:not([hidden]){animation:none}
+/* 6. progress bars fill smoothly */
+.nh-bar2 i{transition:width .8s var(--zz-ease)}
+/* 7. header gains a hairline shadow only once the page has scrolled */
+.nav{transition:box-shadow var(--zz-med) var(--zz-ease)}
+html:not(.zz-scrolled) .nav{box-shadow:none}
+html.zz-scrolled .nav{box-shadow:0 1px 0 var(--line),0 10px 28px -14px rgba(0,0,0,.22)}
+/* 8. banner photo drifts a little slower than the page (desktop only, switched on by script) */
+html.zz-par .pb-pic img,html.zz-par .nh-bn-pic img{transform:translate3d(0,var(--zzp,0px),0) scale(1.1);will-change:transform}
+}
+/* 5. chapter-grid placeholder reuses the existing shimmer */
+</style><link rel="stylesheet" href="annot/annot.css"><style id="zz-perf">@media (min-width:700px){
 /* big screens: drop per-item blur, cheaper bars, no repainting fixed background */
 .card header,.qi-h,.card,.qi,.row,.topic,.dc,.pc,.ph,.part-h,.qs-h,.empty,.nh-row a,.nh-g div,.nh-prog,.dp,#nhr,.nh-toc,.qddl,.stats,.pager a{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 .nav,.bar,.nh-bar,#bnav,#tools,.toast,.mx-top{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background-color:color-mix(in srgb,var(--bg) 94%,transparent)!important}
@@ -3687,6 +3717,81 @@ document.addEventListener('pointerdown',e=>{if(e.button>0||!e.target.closest(HIT
  const d=document.createElement('i');d.className='zz-tap';d.style.left=e.clientX+'px';d.style.top=e.clientY+'px';document.body.append(d);rm(d)},{passive:true});
 document.addEventListener('click',e=>{const a=e.target.closest('.act');if(!a)return;a.classList.remove('pop');requestAnimationFrame(()=>{a.classList.add('pop');setTimeout(()=>a.classList.remove('pop'),460)});},false);
 }catch(e){}})();
+
+</script>
+<script>
+/* ===== premium motion layer (see zzmotion.css). Everything here is skipped when the device asks for reduced motion. ===== */
+(function(){
+try{
+if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+const de=document.documentElement,EASE='cubic-bezier(.2,.7,.2,1)';
+/* 4. answers open/close with a height + fade instead of snapping */
+let skip=false;
+document.addEventListener('click',e=>{
+ if(skip){skip=false;return}
+ const h=e.target.closest&&e.target.closest('.qi-h');if(!h)return;
+ const a=h.parentElement&&h.parentElement.querySelector('.qi-a');if(!a)return;
+ if(h.getAttribute('aria-expanded')==='true'){
+  const hh=a.offsetHeight;if(!hh)return;
+  e.stopImmediatePropagation();e.preventDefault();
+  a.style.overflow='hidden';
+  const an=a.animate([{height:hh+'px',opacity:1},{height:'0px',opacity:0}],{duration:220,easing:EASE});
+  an.onfinish=an.oncancel=()=>{a.style.overflow='';skip=true;h.click()};
+ }else{
+  requestAnimationFrame(()=>{if(a.hidden)return;const hh=a.scrollHeight;if(!hh)return;
+   a.style.overflow='hidden';
+   const an=a.animate([{height:'0px',opacity:0},{height:hh+'px',opacity:1}],{duration:280,easing:EASE});
+   an.onfinish=an.oncancel=()=>{a.style.overflow=''}});
+ }
+},true);
+/* 9. a tiny tick when something is marked learned */
+document.addEventListener('click',e=>{
+ const b=e.target.closest&&e.target.closest('.act[data-k=learned],.qlearn');if(!b||!navigator.vibrate)return;
+ setTimeout(()=>{if(b.getAttribute('aria-pressed')==='true')navigator.vibrate(10)},30);
+},true);
+/* 7. header shadow after scrolling */
+let sc=false;
+const onS=()=>{sc=false;de.classList.toggle('zz-scrolled',scrollY>8)};
+addEventListener('scroll',()=>{if(!sc){sc=true;requestAnimationFrame(onS)}},{passive:true});onS();
+/* 8. gentle banner parallax, desktop only */
+if(matchMedia('(min-width:641px) and (hover:hover)').matches){
+ de.classList.add('zz-par');let pf=false;
+ const par=()=>{pf=false;const img=document.querySelector('.view:not([hidden]) .pb-pic img,.view:not([hidden]) .nh-bn-pic img');if(!img)return;
+  const t=img.parentElement.getBoundingClientRect().top;img.style.setProperty('--zzp',Math.max(0,Math.min(18,-t*.12)).toFixed(1)+'px')};
+ addEventListener('scroll',()=>{if(!pf){pf=true;requestAnimationFrame(par)}},{passive:true});
+}
+/* 6. numbers count up and bars fill the first time they come into view (once per visit) */
+const done=new Set(),seen=new WeakSet();
+const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(en=>{
+ if(!en.isIntersecting)return;io.unobserve(en.target);const el=en.target;
+ if(el.matches('.nh-bar2 i')){const w=el.dataset.zw;el.style.width=w}
+ else count(el)}),{threshold:.3}):null;
+function count(el){
+ let n=null;for(const c of el.childNodes)if(c.nodeType===3&&/\d/.test(c.data)){n=c;break}
+ if(!n)return;const m=n.data.match(/^(\s*)([\d,]+(?:\.\d+)?)(.*)$/s);if(!m)return;
+ const raw=m[2],val=parseFloat(raw.replace(/,/g,'')),dec=(raw.split('.')[1]||'').length,comma=raw.includes(',');
+ if(!isFinite(val)||val<=0||val>1e6)return;
+ const t0=performance.now(),D=700;
+ const fmt=v=>comma?v.toLocaleString('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec}):v.toFixed(dec);
+ const step=t=>{const p=Math.min(1,(t-t0)/D),v=val*(1-Math.pow(1-p,3));n.data=m[1]+fmt(v)+m[3];if(p<1)requestAnimationFrame(step)};
+ n.data=m[1]+fmt(0)+m[3];requestAnimationFrame(step)}
+function scan(){
+ if(!io)return;
+ const root=document.querySelector('.view:not([hidden])');if(!root)return;
+ root.querySelectorAll('.nh-pc,.stats b,.dc .big,.nh-bar2 i').forEach((el,i)=>{
+  if(seen.has(el))return;seen.add(el);
+  const key=(el.className||el.tagName)+'|'+i+'|'+location.hash.split('/')[1];
+  if(done.has(key))return;done.add(key);
+  if(el.matches('.nh-bar2 i')){el.dataset.zw=el.style.width;el.style.width='0%'}
+  io.observe(el)})}
+addEventListener('hashchange',()=>{setTimeout(scan,60);setTimeout(scan,500)});
+setTimeout(scan,700);setTimeout(scan,1800);
+/* 5. shimmer placeholder while the textbook chapter list loads */
+const tv=document.getElementById('v-textbook');
+if(tv)new MutationObserver(()=>{const g=document.getElementById('tbgrid');
+ if(g&&!g.firstChild)g.innerHTML='<div class="zsk zsk-grid" role="status" aria-label="Loading chapters">'+'<i></i>'.repeat(9)+'</div>'}).observe(tv,{childList:true,subtree:true});
+}catch(e){}
+})();
 
 </script>
 <script src="annot/annot.js"></script>

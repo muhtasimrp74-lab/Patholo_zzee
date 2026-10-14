@@ -1,0 +1,30 @@
+/* ===== premium motion layer: one easing curve, two durations, transform/opacity only ===== */
+:root{--zz-ease:cubic-bezier(.2,.7,.2,1);--zz-fast:.15s;--zz-med:.3s}
+button,.pill,.act,#bnav a,.mtile,.chips button,.qfbtn,.qchip,.pager a,.topic,.dc,.pc,.tbtile,.qi-h,.card>header,.nh-row a{transition:transform var(--zz-fast) var(--zz-ease),box-shadow var(--zz-med) var(--zz-ease),background-color var(--zz-fast) ease,border-color var(--zz-fast) ease,color var(--zz-fast) ease}
+@media(prefers-reduced-motion:no-preference){
+/* 2. pages settle in: short fade + small upward slide (backwards fill, so no leftover transform) */
+@keyframes zzview{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.view:not([hidden]){animation:zzview var(--zz-med) var(--zz-ease) backwards}
+html.zz-still .view:not([hidden]){animation:none}
+/* 3. first few list items arrive one after another */
+@keyframes zzrise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(-n+8){animation:zzrise .4s var(--zz-ease) backwards}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(2){animation-delay:.03s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(3){animation-delay:.06s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(4){animation-delay:.09s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(5){animation-delay:.12s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(6){animation-delay:.15s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(7){animation-delay:.18s}
+.view:not([hidden]) :is(.topic,.row,.tbtile,.mtile,.dc,.pc):nth-child(8){animation-delay:.21s}
+/* 4. answers are animated by script (height + fade); drop the old fixed slide so they don't fight */
+.qi-a:not([hidden]),.qs-b:not([hidden]){animation:none}
+/* 6. progress bars fill smoothly */
+.nh-bar2 i{transition:width .8s var(--zz-ease)}
+/* 7. header gains a hairline shadow only once the page has scrolled */
+.nav{transition:box-shadow var(--zz-med) var(--zz-ease)}
+html:not(.zz-scrolled) .nav{box-shadow:none}
+html.zz-scrolled .nav{box-shadow:0 1px 0 var(--line),0 10px 28px -14px rgba(0,0,0,.22)}
+/* 8. banner photo drifts a little slower than the page (desktop only, switched on by script) */
+html.zz-par .pb-pic img,html.zz-par .nh-bn-pic img{transform:translate3d(0,var(--zzp,0px),0) scale(1.1);will-change:transform}
+}
+/* 5. chapter-grid placeholder reuses the existing shimmer */
