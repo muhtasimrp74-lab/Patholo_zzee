@@ -1948,7 +1948,11 @@ html body .nav{height:calc(60px + env(safe-area-inset-top,0px))}
 @media (hover:none),(pointer:coarse){
  html body :is(.topic,.card,.qi,.row,.dc,.pc,.part-h,.qs-h,.ph,.stats,.empty,.nh-prog,.nh-row a,.nh-g div,.pager a,.qlearn,.qb,.act,.qf-clr,.gb.ghost){box-shadow:none!important;background-image:none!important;text-shadow:none!important}
  html body #v-home .hero::before,html body #v-home .hero::after{display:none}
+ html body .act[aria-pressed=true]{background-color:var(--clay2,#8f4f39)!important;background-image:none!important;color:#fff!important;border-color:transparent!important}
+ html body .act[data-k=learned][aria-pressed=true]{background-color:var(--sage2,#52663a)!important}
+ html body .act[aria-pressed=true] svg{color:#fff}
 }
+ @media(max-width:640px){html body .act span{font-size:.62rem!important;letter-spacing:0!important;overflow:visible!important;text-overflow:clip!important;white-space:nowrap;max-width:none!important}}
 /* ---- smooth scrolling: a full-screen blend-mode layer and blurred panels make every scroll frame re-composite the whole screen ---- */
 html body::before{mix-blend-mode:normal!important}
 @media (hover:none),(pointer:coarse){
