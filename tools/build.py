@@ -306,7 +306,7 @@ CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
 POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'tutorial.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'motion.js'), encoding='utf8').read()
 assert '</script>' not in POLISH_JS
-s = s.replace("<script>\nif ('serviceWorker'", '<script>\n' + POLISH_JS + '\n</script>\n<script src="annot/annot.js"></script>\n<script>\nif (\'serviceWorker\'', 1)
+s = s.replace("<script>\nif ('serviceWorker'", '<script>\n' + POLISH_JS + '\n</script>\n<script src="annot/annot.js"></script>\n<script src="welcome.js" defer></script>\n<script>\nif (\'serviceWorker\'', 1)
 assert s.count('</head>') == 1
 s = s.replace('</head>', '<link rel="stylesheet" href="annot/annot.css"></head>', 1)
 assert 'src="annot/annot.js"' in s and 'annot/annot.css' in s and 'Content-Security-Policy' in s and 'zz-listen' in s
