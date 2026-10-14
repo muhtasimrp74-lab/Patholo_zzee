@@ -15,7 +15,7 @@
 .card header::before{content:"";position:absolute;left:0;top:16px;bottom:14px;width:3px;border-radius:0 3px 3px 0;
  background:linear-gradient(180deg,var(--clay2),var(--clay3));transition:width .18s}
 .card header:hover::before{width:4px}
-.card.dn header::before,.card:has(.act[data-k=learned][aria-pressed=true]) header::before{background:linear-gradient(180deg,var(--sage),color-mix(in srgb,var(--sage) 60%,var(--sand)))}
+.card.dn header::before{background:linear-gradient(180deg,var(--sage),color-mix(in srgb,var(--sage) 60%,var(--sand)))}
 .card h4{flex:1 1 12rem;min-width:0}
 .card header .code{margin-top:1px}
 

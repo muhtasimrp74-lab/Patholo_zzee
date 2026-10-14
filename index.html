@@ -1258,7 +1258,7 @@ html #bnav{left:0;right:0;bottom:0;border-radius:0;border:0;border-top:1px solid
 .card header::before{content:"";position:absolute;left:0;top:16px;bottom:14px;width:3px;border-radius:0 3px 3px 0;
  background:linear-gradient(180deg,var(--clay2),var(--clay3));transition:width .18s}
 .card header:hover::before{width:4px}
-.card.dn header::before,.card:has(.act[data-k=learned][aria-pressed=true]) header::before{background:linear-gradient(180deg,var(--sage),color-mix(in srgb,var(--sage) 60%,var(--sand)))}
+.card.dn header::before{background:linear-gradient(180deg,var(--sage),color-mix(in srgb,var(--sage) 60%,var(--sand)))}
 .card h4{flex:1 1 12rem;min-width:0}
 .card header .code{margin-top:1px}
 
@@ -1399,8 +1399,8 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
  .topic:hover:active,.dc:hover:active,.pc:hover:active,.tbtile:hover:active,.mtile:hover:active,.pager a:hover:active{transform:translateY(-1px) scale(.985)}
  #bnav a:hover,.chips button:hover,.qchip:hover{transform:translateY(-2px)}
  #tools button:hover{transform:translateY(-2px)}}
-.act.pop svg,.act.pop{animation:zzpop .5s cubic-bezier(.2,1.6,.4,1)}
-@keyframes zzpop{0%{transform:scale(1)}35%{transform:scale(1.28) rotate(-6deg)}70%{transform:scale(.94)}100%{transform:scale(1)}}
+.act.pop svg{animation:zzpop .42s cubic-bezier(.2,1.4,.4,1)}.act svg{transform-origin:50% 50%}.zz-tap,.zz-spark{will-change:transform,opacity}
+@keyframes zzpop{0%{transform:scale(1)}35%{transform:scale(1.25) rotate(-6deg)}70%{transform:scale(.95)}100%{transform:scale(1)}}
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
 .zz-spark{position:fixed;z-index:90;width:7px;height:7px;margin:-3.5px;border-radius:50%;pointer-events:none;background:var(--c,var(--lbl));animation:zzspark .7s cubic-bezier(.2,.7,.3,1) forwards}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
@@ -1408,7 +1408,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 #bnav a[aria-current],#bnav a.on{transition:transform .3s cubic-bezier(.2,1.5,.4,1)}
 #bnav a[aria-current] svg,#bnav a.on svg{animation:zzbob .5s cubic-bezier(.2,1.5,.4,1)}
 @keyframes zzbob{0%{transform:translateY(4px) scale(.85)}60%{transform:translateY(-3px) scale(1.12)}100%{transform:none}}
-@media(prefers-reduced-motion:reduce){.zz-tap,.zz-spark{display:none}.act.pop,.act.pop svg,#bnav a svg{animation:none}
+@media(prefers-reduced-motion:reduce){.zz-tap,.zz-spark{display:none}.act.pop svg,#bnav a svg{animation:none}
  .topic:hover,.dc:hover,.pc:hover,.tbtile:hover,.mtile:hover,.pager a:hover,#bnav a:hover,#tools button:hover{transform:none}
  button:active,.pill:active,.act:active,.topic:active{transform:none}}
 
@@ -1959,6 +1959,7 @@ html body::before{mix-blend-mode:normal!important}
  html body .hero-in::before{display:none!important}
  html body :is(.howto,.hero,.hero-in,.stats,.nh-bar,.nh-toc,.dp,.dc,.pc,.toast,.part-h,.qs-h,#nhr,#qf){-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
  html body :is(.nh-row a,.nh-g div,.nh-map *,.nh-chs *,.topic,.card,.qi,.row,.act,.qb,.pager a){transition:none!important}
+ html body .act{transition:background-color .22s ease,color .22s ease,transform .14s ease!important}
 }
 /* ---- home: the chapter list (~930 nodes, 8,500px) and question map (~1,300 tiles) are drawn only when near the screen; "auto" remembers real sizes once seen ---- */
 html #v-home .nh-ch{content-visibility:auto;contain-intrinsic-size:auto 320px}
@@ -2365,14 +2366,14 @@ const IC={learned:'<path d="M20 6L9 17l-5-5"/>',fav:'<path d="M20.8 4.6a5.5 5.5 
 const LB={fav:'Favourite',bm:'Bookmark',notes:'Add note',learned:'Mark as learned'};
 const LB2={fav:'Favourited',bm:'Bookmarked',notes:'Note saved',learned:'Learned \u2713'};
 function counts(){prog();document.querySelectorAll('[data-c=bm],[data-c=fav],[data-c=notes]').forEach(e=>{const k=e.dataset.c;e.textContent=k==='notes'?Object.keys(S.notes).length:S[k].length})}
-function paintCard(c){['fav','bm','notes','learned'].forEach(k=>{const on=k==='notes'?!!S.notes[c.id]:S[k].includes(c.id),bt=c.querySelector(`.act[data-k="${k}"]`);bt.setAttribute('aria-pressed',on);const sp=bt.querySelector('span');if(sp)sp.textContent=on?LB2[k]:LB[k]});const t=c.querySelector('textarea');if(t!==document.activeElement)t.value=S.notes[c.id]||''}
+function paintCard(c){['fav','bm','notes','learned'].forEach(k=>{const on=k==='notes'?!!S.notes[c.id]:S[k].includes(c.id),bt=c.querySelector(`.act[data-k="${k}"]`);bt.setAttribute('aria-pressed',on);const sp=bt.querySelector('span');if(sp)sp.textContent=on?LB2[k]:LB[k]});c.classList.toggle('dn',S.learned.includes(c.id));const t=c.querySelector('textarea');if(t!==document.activeElement)t.value=S.notes[c.id]||''}
 document.querySelectorAll('.card').forEach(c=>{const a=document.createElement('div');a.className='acts';
 a.innerHTML=['fav','bm','notes','learned'].map(k=>`<button type="button" class="act" data-k="${k}" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true">${IC[k]}</svg><span>${LB[k]}</span></button>`).join('')+'<button type="button" class="act sh"><svg viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M16 6l-4-4-4 4M12 2v13"/></svg><span>Share</span></button><div class="note" hidden><textarea rows="3" placeholder="Write your note here…" aria-label="Note"></textarea></div>';
 c.querySelector('header').after(a);paintCard(c);if(S.notes[c.id])a.querySelector('.note').hidden=false});
 counts();
 document.addEventListener('click',e=>{const b=e.target.closest('.act');if(!b||b.classList.contains('sh'))return;const c=b.closest('.card'),k=b.dataset.k;
 if(k==='notes'){const n=c.querySelector('.note');n.hidden=!n.hidden;if(!n.hidden)n.querySelector('textarea').focus();return}
-const i=S[k].indexOf(c.id);i<0?S[k].push(c.id):S[k].splice(i,1);if(k==='learned'&&i<0)touch();save();paintCard(c);counts()});
+const i=S[k].indexOf(c.id);i<0?S[k].push(c.id):S[k].splice(i,1);paintCard(c);requestAnimationFrame(()=>setTimeout(()=>{if(k==='learned'&&i<0)touch();save();counts()},0))});
 document.addEventListener('input',e=>{const t=e.target.closest('.note textarea');if(!t)return;const c=t.closest('.card'),v=t.value.trim();v?S.notes[c.id]=t.value:delete S.notes[c.id];save();paintCard(c);counts()});
 function render(k){const box=document.querySelector(`[data-list="${k}"]`);box.replaceChildren();const ids=k==='notes'?Object.keys(S.notes):S[k];
 if(!ids.length){box.innerHTML=`${emptyHTML(k)}`;return}
@@ -3680,10 +3681,10 @@ function rm(e){setTimeout(()=>e.remove(),800)}
 document.addEventListener('pointerdown',e=>{if(e.button>0||!e.target.closest(HIT))return;const n=performance.now();if(n-last<60)return;last=n;
  if(document.body.classList.contains('an-on'))return;
  const d=document.createElement('i');d.className='zz-tap';d.style.left=e.clientX+'px';d.style.top=e.clientY+'px';document.body.append(d);rm(d)},{passive:true});
-document.addEventListener('click',e=>{const a=e.target.closest('.act');if(!a)return;a.classList.remove('pop');void a.offsetWidth;a.classList.add('pop');setTimeout(()=>a.classList.remove('pop'),520);
+document.addEventListener('click',e=>{const a=e.target.closest('.act');if(!a)return;a.classList.remove('pop');requestAnimationFrame(()=>{a.classList.add('pop');setTimeout(()=>a.classList.remove('pop'),460)});
  const k=a.dataset.k,c=a.closest('.card');if(!c||!['learned','bm','fav'].includes(k))return;let on=false;try{on=S[k].includes(c.id)}catch(e){}if(!on)return;
  const r=a.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2,col={learned:'var(--ok)',bm:'var(--lbl)',fav:'var(--clay2,var(--lbl))'}[k];
- for(let i=0;i<7;i++){const s=document.createElement('i'),t=(i/7)*Math.PI*2+Math.random()*.5,d=18+Math.random()*16;s.className='zz-spark';s.style.cssText='left:'+x+'px;top:'+y+'px;--c:'+col+';--dx:'+Math.cos(t)*d+'px;--dy:'+Math.sin(t)*d+'px';document.body.append(s);rm(s)}},false);
+ for(let i=0;i<5;i++){const s=document.createElement('i'),t=(i/5)*Math.PI*2+Math.random()*.5,d=18+Math.random()*16;s.className='zz-spark';s.style.cssText='left:'+x+'px;top:'+y+'px;--c:'+col+';--dx:'+Math.cos(t)*d+'px;--dy:'+Math.sin(t)*d+'px';document.body.append(s);rm(s)}},false);
 }catch(e){}})();
 
 </script>

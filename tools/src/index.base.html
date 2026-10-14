@@ -522,14 +522,14 @@ const IC={learned:'<path d="M20 6L9 17l-5-5"/>',fav:'<path d="M20.8 4.6a5.5 5.5 
 const LB={fav:'Favourite',bm:'Bookmark',notes:'Add note',learned:'Mark as learned'};
 const LB2={fav:'Favourited',bm:'Bookmarked',notes:'Note saved',learned:'Learned \u2713'};
 function counts(){prog();document.querySelectorAll('[data-c]').forEach(e=>{const k=e.dataset.c;e.textContent=k==='notes'?Object.keys(S.notes).length:S[k].length})}
-function paintCard(c){['fav','bm','notes','learned'].forEach(k=>{const on=k==='notes'?!!S.notes[c.id]:S[k].includes(c.id),bt=c.querySelector(`.act[data-k="${k}"]`);bt.setAttribute('aria-pressed',on);const sp=bt.querySelector('span');if(sp)sp.textContent=on?LB2[k]:LB[k]});const t=c.querySelector('textarea');if(t!==document.activeElement)t.value=S.notes[c.id]||''}
+function paintCard(c){['fav','bm','notes','learned'].forEach(k=>{const on=k==='notes'?!!S.notes[c.id]:S[k].includes(c.id),bt=c.querySelector(`.act[data-k="${k}"]`);bt.setAttribute('aria-pressed',on);const sp=bt.querySelector('span');if(sp)sp.textContent=on?LB2[k]:LB[k]});c.classList.toggle('dn',S.learned.includes(c.id));const t=c.querySelector('textarea');if(t!==document.activeElement)t.value=S.notes[c.id]||''}
 document.querySelectorAll('.card').forEach(c=>{const a=document.createElement('div');a.className='acts';
 a.innerHTML=['fav','bm','notes','learned'].map(k=>`<button class="act" data-k="${k}" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true">${IC[k]}</svg><span>${LB[k]}</span></button>`).join('')+'<button class="act sh"><svg viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M16 6l-4-4-4 4M12 2v13"/></svg><span>Share</span></button><div class="note" hidden><textarea rows="3" placeholder="Write your note here…" aria-label="Note"></textarea></div>';
 c.querySelector('header').after(a);paintCard(c);if(S.notes[c.id])a.querySelector('.note').hidden=false});
 counts();
 document.addEventListener('click',e=>{const b=e.target.closest('.act');if(!b||b.classList.contains('sh'))return;const c=b.closest('.card'),k=b.dataset.k;
 if(k==='notes'){const n=c.querySelector('.note');n.hidden=!n.hidden;if(!n.hidden)n.querySelector('textarea').focus();return}
-const i=S[k].indexOf(c.id);i<0?S[k].push(c.id):S[k].splice(i,1);if(k==='learned'&&i<0)touch();save();paintCard(c);counts()});
+const i=S[k].indexOf(c.id);i<0?S[k].push(c.id):S[k].splice(i,1);paintCard(c);requestAnimationFrame(()=>setTimeout(()=>{if(k==='learned'&&i<0)touch();save();counts()},0))});
 document.addEventListener('input',e=>{const t=e.target.closest('.note textarea');if(!t)return;const c=t.closest('.card'),v=t.value.trim();v?S.notes[c.id]=t.value:delete S.notes[c.id];save();paintCard(c);counts()});
 function render(k){const box=document.querySelector(`[data-list="${k}"]`);box.replaceChildren();const ids=k==='notes'?Object.keys(S.notes):S[k];
 if(!ids.length){box.innerHTML=`<p class="none" style="display:block">${EMPTY[k]}</p>`;return}
