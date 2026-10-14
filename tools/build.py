@@ -374,7 +374,9 @@ s = s.replace('</head><body>', '</head><body>' + STAR_SPRITE, 1)
 BOOT_HEAD = ('<style id="zz-perf">@media (min-width:700px){
 /* big screens: drop per-item blur, cheaper bars, no repainting fixed background */
 .card header,.qi-h,.card,.qi,.row,.topic,.dc,.pc,.ph,.part-h,.qs-h,.empty,.nh-row a,.nh-g div,.nh-prog,.dp,#nhr,.nh-toc,.qddl,.stats,.pager a{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
-.nav,.bar,.nh-bar,#bnav,#tools,.toast,.mx-top{-webkit-backdrop-filter:blur(10px)!important;backdrop-filter:blur(10px)!important}
+.nav,.bar,.nh-bar,#bnav,#tools,.toast,.mx-top{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background-color:color-mix(in srgb,var(--bg) 94%,transparent)!important}
+.nav,#bnav,#tools{will-change:transform}
+#v-home .nh-ch{contain-intrinsic-size:auto 361px}
 body{background:var(--bg)!important;background-attachment:scroll!important}
 body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:var(--mesh);transform:translateZ(0)}
 body::before{mix-blend-mode:normal!important;opacity:.025!important}
