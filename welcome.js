@@ -65,4 +65,38 @@ function run(){
 window.addEventListener('load',function(){setTimeout(run,1800)});
 window.addEventListener('hashchange',function(){setTimeout(run,900)});
 })();
+
+/* personal touch: once a name is saved, each page's header gets a short line addressed to the owner */
+(function(){
+function nm(){try{return (localStorage.getItem('zzName')||'').trim().slice(0,40)}catch(e){return ''}}
+function st(){try{return JSON.parse(localStorage.getItem('vivaState')||'{}')||{}}catch(e){return {}}}
+function acc(S){var P=(S.mcq&&S.mcq.p)||{},n=0,k=0;Object.keys(P).forEach(function(h){var x=P[h];if(x&&x.n){n+=x.n;k+=x.k||0}});return {n:n,a:n?Math.round(100*k/n):0}}
+function line(id,N,S){
+  var l=(S.learned||[]).length,n=S.streak&&S.streak.n||0,m=acc(S);
+  if(id==='v-home')return n>1?N+', you’re on a '+n+'-day streak. Let’s keep it going.':l?N+', '+l+' questions learned so far. Let’s add more.':N+', let’s start your first revision.';
+  if(id==='v-menu')return N+', everything of yours lives here.';
+  if(id==='v-mcqs')return m.n?N+', your accuracy is '+m.a+'% over '+m.n+' answers. '+(m.a>=70?'Strong work!':'Every attempt makes it stronger.'):N+', answer a few MCQs and I’ll track your accuracy.';
+  if(id==='v-practice')return N+', ready to test yourself?';
+  if(id==='v-textbook')return N+', pick up your reading wherever you like.';
+  if(id==='v-questions')return N+', 1,310 questions are ready when you are.';
+  if(id==='v-bookmarks')return N+', these are the questions you wanted to come back to.';
+  if(id==='v-favourites')return N+', your favourites, all in one place.';
+  if(id==='v-notes')return N+', your own words, saved on this device.';
+  if(/^v-(c?\d+)$/.test(id))return N+', one question at a time — you’ve got this.';
+  return '';
+}
+function css(){if(document.getElementById('zz-hi-css'))return;var t=document.createElement('style');t.id='zz-hi-css';t.textContent='.zz-hi{margin:8px 0 0;font:600 .95rem/1.4 var(--body,system-ui,sans-serif);color:var(--clay2,#a95f45)}';document.head.appendChild(t)}
+function apply(){
+  document.querySelectorAll('.zz-hi').forEach(function(e){e.remove()});
+  var N=nm();if(!N)return;
+  var v=document.querySelector('.view:not([hidden])');if(!v)return;
+  var t=line(v.id,N,st());if(!t)return;
+  var a=v.querySelector('.lede')||v.querySelector('h1');if(!a)return;
+  css();var p=document.createElement('p');p.className='zz-hi';p.textContent=t;a.insertAdjacentElement('afterend',p);
+}
+window.zzPersonalise=apply;
+function later(){apply();setTimeout(apply,400);setTimeout(apply,1500)}
+window.addEventListener('load',later);window.addEventListener('hashchange',later);
+document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('.zz-wd button'))setTimeout(apply,500)},true);
+})();
 })();
