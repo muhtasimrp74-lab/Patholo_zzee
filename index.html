@@ -3250,14 +3250,15 @@ function actMap(){
  Object.keys(d).forEach(k=>{m[k]=Math.max(m[k]||0,d[k])});return m}
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function heat(){
- const A=actMap(),W=innerWidth<520?16:22,tdy=dstr(Date.now()),base=new Date(tdy+'T12:00:00').getTime(),dw=new Date(base).getDay();
- const first=base-dw*DAY-(W-1)*7*DAY,lv=n=>!n?0:n<5?1:n<10?2:n<20?3:4;
+ const A=actMap(),tdy=dstr(Date.now()),base=new Date(tdy+'T12:00:00').getTime(),dw=new Date(base).getDay();
+ /* the grid starts at the week of 1 Oct 2026 and runs forward (at least 12 weeks wide) */
+ const s0=new Date('2026-10-01T12:00:00').getTime(),first=s0-new Date(s0).getDay()*DAY,W=Math.max(12,Math.ceil((base-first)/DAY/7)+1),lv=n=>!n?0:n<5?1:n<10?2:n<20?3:4;
  let cells='',mon='',tot=0,act=0,wk=0,lastM=-1;const ml=[];
  for(let w=0;w<W;w++){
   const d0=new Date(first+w*7*DAY);
   if(d0.getMonth()!==lastM&&(w===0||d0.getDate()<=7)){ml.push([w,MON[d0.getMonth()]]);lastM=d0.getMonth()}
   for(let d=0;d<7;d++){const t=first+(w*7+d)*DAY,k=dstr(t);
-   if(t>base+DAY/2){cells+='<i class="hm x"></i>';continue}
+   if(t>base+DAY/2||t<s0-DAY/2){cells+='<i class="hm x"></i>';continue}
    const n=A[k]||0;tot+=n;if(n)act++;if(w===W-1)wk+=n;
    cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+(()=>{const q=new Date(t);return q.getDate()+' '+MON[q.getMonth()]})()+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
  ml.forEach((x,i)=>{if(!ml[i+1]||ml[i+1][0]-x[0]>=3)mon+='<span style="grid-column:'+(x[0]+1)+'">'+x[1]+'</span>'});
