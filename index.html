@@ -3341,12 +3341,7 @@ function render(){
  if(mq.weak.length)h+='<p class="nh-k nh-k2">Weakest MCQ topics</p><ul class="nh-wk">'+mq.weak.map(o=>'<li><a href="#/mcqs"><span>'+esc2(MCQDATA.ch[o.c][1][o.t])+'</span><em class="'+(o.a<50?'bad':o.a<70?'warn':'')+'">'+o.a+'%</em></a></li>').join('')+'</ul>';
  h+='<p class="nh-k nh-k2">Least-covered viva chapters</p><ul class="nh-wk">'+chW.map(x=>{const pg=pageOf(x.c[0]);return '<li><a href="'+(pg?'#/'+pg:'#/qa')+'"><span>'+esc2(x.c[1])+'</span><em>'+x.r+'/'+x.n+'</em></a></li>'}).join('')+'</ul></div></section>';
 
- /* ---------- question map ---------- */
- h+='<section><h3 class="nh-h">Question map</h3><p class="nh-leg"><i class="u"></i>Unread <i class="r"></i>Read <i class="d"></i>Due for review <i class="f"></i>Forgot <i class="m"></i>Missing answer <i class="u fl"></i>Flagged</p><div class="nh-map">';
- CH.forEach(c=>{const a=byCh[c[0]];if(!a)return;h+='<div class="nh-mr"><span>'+esc2(c[2])+'</span><div>'+a.map(d=>'<a class="s '+st(d[3],L,now)+(BM.has(d[3])?' fl':'')+'" href="'+lnk(d)+'" title="Q.'+NUM[d[3]]+' '+(isW(d)?'[Written] ':'')+esc2(d[1])+'"></a>').join('')+'</div></div>'});
-
- /* ---------- chapter progress ---------- */
- h+='</div></section><section><h3 class="nh-h">Topics and progress</h3><div class="nh-chs">';
+ h+='<section><h3 class="nh-h">Topics and progress</h3><div class="nh-chs">';
  CH.forEach((c,i)=>{const a=byCh[c[0]]||[],pg=pageOf(c[0]),r=a.filter(d=>L.has(d[3])).length,p=pct(r,a.length);
   h+='<article class="nh-ch" id="nhch'+c[0]+'"><div class="nh-n">'+String(i+1).padStart(2,'0')+'</div><div class="nh-cb"><h4>'+(pg?'<a href="#/'+pg+'">'+esc2(c[1])+'</a>':esc2(c[1]))+'</h4><p class="nh-mu">'+esc2(c[2])+' · '+r+' / '+a.length+' read · '+p+'%</p>'+bar(p)+'<ul>';
   c[3].forEach(sn=>{const q=a.filter(d=>TR[d[3]][1]===sn);if(q.length){const rr=q.filter(d=>L.has(d[3])).length;h+='<li><a href="'+lnk(q[0])+'"><span>'+esc2(sn)+'</span><u></u><em>'+rr+'/'+q.length+'</em></a></li>'}else h+='<li class="no"><span>'+esc2(sn)+'</span><u></u><em>no questions</em></li>'});
