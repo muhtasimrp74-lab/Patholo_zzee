@@ -395,3 +395,5 @@ print('wrote index.html', len(s))
 # re-apply viva-style answer emphasis (idempotent; wording is never changed)
 import subprocess, sys
 subprocess.run([sys.executable, os.path.join(HERE, 'format_answers.py')], check=True)
+# merge any numbered lists split into one <ol> per item (idempotent)
+subprocess.run([sys.executable, os.path.join(HERE, 'fix_numbering.py')], check=True)
