@@ -397,3 +397,5 @@ import subprocess, sys
 subprocess.run([sys.executable, os.path.join(HERE, 'format_answers.py')], check=True)
 # merge any numbered lists split into one <ol> per item (idempotent)
 subprocess.run([sys.executable, os.path.join(HERE, 'fix_numbering.py')], check=True)
+# denser human-style bold/italic (idempotent; wording never changes)
+subprocess.run([sys.executable, os.path.join(HERE, 'format_answers2.py')], check=True)
