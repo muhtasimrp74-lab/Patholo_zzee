@@ -7,3 +7,5 @@
 .ans li{margin:.3em 0;line-height:1.6}
 .ans li>strong:first-child{color:var(--navy)}
 .ans ul,.ans ol{margin:.4em 0 .9em}
+/* left-aligned (ragged right) reads best on narrow screens; justified makes uneven word gaps with long medical terms */
+.ans p,.ans li,.ans td,.ans th{text-align:left;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
