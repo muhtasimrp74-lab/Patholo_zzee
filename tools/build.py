@@ -401,3 +401,4 @@ subprocess.run([sys.executable, os.path.join(HERE, 'fix_numbering.py')], check=T
 subprocess.run([sys.executable, os.path.join(HERE, 'format_answers2.py')], check=True)
 # prose-style emphasis: sentence labels, section words, italic synonyms/hedges (idempotent; wording never changes)
 subprocess.run([sys.executable, os.path.join(HERE, 'format_answers3.py')], check=True)
+subprocess.run([sys.executable, os.path.join(HERE, 'split_semicolons.py')], check=True)   # semicolon lists -> separate lines (idempotent)
