@@ -2,7 +2,7 @@
 
 ## Define and classify cellular adaptation with examples.
 
-**Say this first:** Adaptations are reversible changes in the size, number, phenotype, metabolic activity or functions of cells in response to changes in their environment.
+Adaptations are reversible changes in the size, number, phenotype, metabolic activity or functions of cells in response to changes in their environment.
 
 The four types are hypertrophy (↑ cell size), hyperplasia (↑ cell number), atrophy (↓ cell size/number) and metaplasia (change of cell phenotype). If the stress is removed, the cell returns to its original state.
 
@@ -50,12 +50,12 @@ A cellular adaptive change is a reversible alteration in the size, number, pheno
 
 ## Define cellular adaptation.
 
-**Say this first:** Adaptations are reversible changes in the size, number, phenotype, metabolic activity or functions of cells in response to changes in their environment.
+Adaptations are reversible changes in the size, number, phenotype, metabolic activity or functions of cells in response to changes in their environment.
 
 
 ## Examples of each type of cellular adaptation.
 
-**Say this first:** Hypertrophy – cardiac muscle in hypertension, gravid uterus; hyperplasia – endometrium under oestrogen, prostate in BPH, liver regeneration; atrophy – disuse of limb muscle, brain in old age; metaplasia – bronchial epithelium of smokers, Barrett oesophagus.
+Hypertrophy – cardiac muscle in hypertension, gravid uterus; hyperplasia – endometrium under oestrogen, prostate in BPH, liver regeneration; atrophy – disuse of limb muscle, brain in old age; metaplasia – bronchial epithelium of smokers, Barrett oesophagus.
 
 | Adaptation | Physiologic | Pathologic |
 |---|---|---|
@@ -158,7 +158,7 @@ Physiologic : compensation after liver donation or resection; marrow can raise r
 
 ## Mention the important differences between hypertrophy and hyperplasia.
 
-**Say this first:** Hypertrophy is an increase in the size of cells (no new cells; extra intracellular structural components) typical of non-dividing cells such as myocardium; hyperplasia is an increase in the number of cells and needs cells able to divide. They often coexist, e.g., in the pregnant uterus and in the breast.
+Hypertrophy is an increase in the size of cells (no new cells; extra intracellular structural components) typical of non-dividing cells such as myocardium; hyperplasia is an increase in the number of cells and needs cells able to divide. They often coexist, e.g., in the pregnant uterus and in the breast.
 
 | Feature | Hypertrophy | Hyperplasia |
 |---|---|---|
@@ -189,7 +189,7 @@ Physiologic : compensation after liver donation or resection; marrow can raise r
 
 ## Define hyperplasia.
 
-**Say this first:** Hyperplasia is an increase in the number of cells in an organ or tissue in response to a stimulus.
+Hyperplasia is an increase in the number of cells in an organ or tissue in response to a stimulus.
 
 - It can occur only in tissues containing cells capable of dividing, and may be physiologic or pathologic.
 - Often accompanies hypertrophy and may be triggered by the same stimuli.
@@ -198,7 +198,7 @@ Physiologic : compensation after liver donation or resection; marrow can raise r
 
 ## Causes of hyperplasia.
 
-**Say this first:** Hyperplasia is caused by hormones and growth factors (physiologic: increased functional need, compensation after damage; pathologic: excessive/inappropriate hormonal stimulation) and by certain viral infections (papillomavirus).
+Hyperplasia is caused by hormones and growth factors (physiologic: increased functional need, compensation after damage; pathologic: excessive/inappropriate hormonal stimulation) and by certain viral infections (papillomavirus).
 
 | Type | Cause | Example |
 |---|---|---|
@@ -210,7 +210,7 @@ Physiologic : compensation after liver donation or resection; marrow can raise r
 
 ## Clinical importance of hyperplasia.
 
-**Say this first:** Pathologic hyperplasia is not itself cancer but is fertile soil for it, it causes symptoms through excess function or bulk, and it is controlled and reversible when the stimulus is removed.
+Pathologic hyperplasia is not itself cancer but is fertile soil for it, it causes symptoms through excess function or bulk, and it is controlled and reversible when the stimulus is removed.
 
 - Fertile soil for cancer — increased cell division raises the risk of acquiring genetic aberrations that drive unrestrained proliferation. Pathologic hyperplasia is not cancer, but cancer may arise in it: endometrial hyperplasia → increased risk of endometrial carcinoma.
 - Diagnostic/therapeutic implication: identifying the driving hormone (e.g., unopposed oestrogen) allows treatment that reverses the hyperplasia.
@@ -225,7 +225,7 @@ Physiologic : compensation after liver donation or resection; marrow can raise r
 
 ## Define atrophy with examples.
 
-**Say this first:** Atrophy is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
+Atrophy is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
 
 It can be physiologic (e.g., notochord, thyroglossal duct) or pathologic (e.g., disuse atrophy of muscle, senile brain atrophy).
 
@@ -250,7 +250,7 @@ It can be physiologic (e.g., notochord, thyroglossal duct) or pathologic (e.g., 
 
 ## Why does atrophy of the brain occur in elderly people?
 
-**Say this first:** In late adult life the brain undergoes progressive senile atrophy mainly because of reduced blood supply from atherosclerosis (chronic ischaemia). Loss of brain substance narrows the gyri and widens the sulci.
+In late adult life the brain undergoes progressive senile atrophy mainly because of reduced blood supply from atherosclerosis (chronic ischaemia). Loss of brain substance narrows the gyri and widens the sulci.
 
 - Diminished blood supply — a gradual fall in blood supply (chronic ischaemia) from slowly developing arterial occlusive disease causes atrophy; in the elderly brain this is mainly due to atherosclerosis (Fig. 2.27: 82-year-old man with atherosclerotic cerebrovascular disease).
 - Cellular adaptation: cells shrink and lose organelles to match metabolic demand to the reduced supply; if ischaemia progresses, cells die, often by apoptosis.
@@ -261,7 +261,7 @@ It can be physiologic (e.g., notochord, thyroglossal duct) or pathologic (e.g., 
 
 ## What are the causes of atrophy?
 
-**Say this first:** Atrophy may be physiologic (embryonic structures) or pathologic. Pathologic causes: decreased workload (disuse), loss of innervation, diminished blood supply, inadequate nutrition, loss of endocrine stimulation, and pressure.
+Atrophy may be physiologic (embryonic structures) or pathologic. Pathologic causes: decreased workload (disuse), loss of innervation, diminished blood supply, inadequate nutrition, loss of endocrine stimulation, and pressure.
 
 | Cause | Mechanism / Example |
 |---|---|
@@ -289,14 +289,14 @@ Atrophy results from decreased protein synthesis and increased protein degradati
 
 ## Why does pathological atrophy occur?
 
-**Say this first:** Pathologic atrophy occurs because the cell's supply of nutrients, blood, nerve or hormonal stimulation, or workload falls (or pressure acts on it); the cell shrinks to bring its metabolic demand into balance with the reduced supply, through ↓ protein synthesis and ↑ protein degradation.
+Pathologic atrophy occurs because the cell's supply of nutrients, blood, nerve or hormonal stimulation, or workload falls (or pressure acts on it); the cell shrinks to bring its metabolic demand into balance with the reduced supply, through ↓ protein synthesis and ↑ protein degradation.
 
 - Causes: disuse, denervation, chronic ischaemia, malnutrition/cachexia, loss of endocrine stimulation, pressure.
 
 
 ## Mechanism of atrophy of a cell or organ.
 
-**Say this first:** Atrophy results from decreased protein synthesis and increased protein degradation (ubiquitin–proteasome pathway), with increased autophagy; cell size and organelles are reduced to reach a new, lower steady state.
+Atrophy results from decreased protein synthesis and increased protein degradation (ubiquitin–proteasome pathway), with increased autophagy; cell size and organelles are reduced to reach a new, lower steady state.
 
 - Initial response: decrease in cell size and organelles (fewer mitochondria, myofilaments, less rough ER in muscle) → balances metabolic demand with reduced supply, nutrition or trophic stimulation.
 - ↓ protein synthesis: loss of trophic signals. ↑ proteolysis: ubiquitin ligases activated by nutrient deficiency and disuse → proteasomal degradation.
@@ -307,7 +307,7 @@ Atrophy results from decreased protein synthesis and increased protein degradati
 
 ## Define metaplasia and give two examples.
 
-**Say this first:** Metaplasia is a reversible change in which one differentiated cell type (epithelial or mesenchymal) is replaced by another cell type.
+Metaplasia is a reversible change in which one differentiated cell type (epithelial or mesenchymal) is replaced by another cell type.
 
 It often represents an adaptive response in which a stress-sensitive cell type is replaced by one better able to withstand the adverse environment. Examples: columnar → squamous metaplasia of bronchial epithelium in smokers; squamous → columnar (intestinal) metaplasia in Barrett oesophagus.
 
@@ -386,7 +386,7 @@ Hence the change "comes with a price" and is usually undesirable.
 
 ## Causes of metaplasia.
 
-**Say this first:** Metaplasia is caused by persistent stress or chronic irritation — smoking, vitamin A deficiency or excess, stones/pressure in ducts, reflux of gastric acid — acting through cytokines, growth factors and matrix signals on tissue stem cells.
+Metaplasia is caused by persistent stress or chronic irritation — smoking, vitamin A deficiency or excess, stones/pressure in ducts, reflux of gastric acid — acting through cytokines, growth factors and matrix signals on tissue stem cells.
 
 | Cause | Metaplasia |
 |---|---|
@@ -399,7 +399,7 @@ Hence the change "comes with a price" and is usually undesirable.
 
 ## Important sites of epithelial metaplasia.
 
-**Say this first:** Trachea and bronchi (smokers), cornea and respiratory epithelium (vitamin A deficiency), excretory ducts of salivary glands, pancreas and bile ducts (stones), and the lower oesophagus (Barrett).
+Trachea and bronchi (smokers), cornea and respiratory epithelium (vitamin A deficiency), excretory ducts of salivary glands, pancreas and bile ducts (stones), and the lower oesophagus (Barrett).
 
 - Columnar → squamous: respiratory tract; cornea; salivary, pancreatic and biliary ducts.
 - Squamous → columnar: oesophagus (Barrett).
@@ -408,7 +408,7 @@ Hence the change "comes with a price" and is usually undesirable.
 
 ## Classify metaplasia with examples.
 
-**Say this first:** Metaplasia is classified as epithelial (columnar → squamous, or squamous → columnar) and connective tissue (mesenchymal) types.
+Metaplasia is classified as epithelial (columnar → squamous, or squamous → columnar) and connective tissue (mesenchymal) types.
 
 | Class | Subtype | Example |
 |---|---|---|
@@ -419,7 +419,7 @@ Hence the change "comes with a price" and is usually undesirable.
 
 ## Bad consequence / clinical importance of metaplasia.
 
-**Say this first:** Epithelial metaplasia loses protective functions (mucus secretion, ciliary action) and, if the stimulus persists, may undergo malignant transformation — squamous cell carcinoma in the lung, adenocarcinoma in Barrett oesophagus.
+Epithelial metaplasia loses protective functions (mucus secretion, ciliary action) and, if the stimulus persists, may undergo malignant transformation — squamous cell carcinoma in the lung, adenocarcinoma in Barrett oesophagus.
 
 - Increased infection risk in the respiratory tract.
 - Corneal metaplasia (vitamin A deficiency) impairs vision.
@@ -428,9 +428,7 @@ Hence the change "comes with a price" and is usually undesirable.
 
 ## Differences between metaplasia and dysplasia.
 
-The comparison below draws on the chapter for metaplasia and on for dysplasia.
-
-**Say this first:** Metaplasia is a reversible, orderly replacement of one mature cell type by another (adaptive); dysplasia is disordered, atypical cellular growth with loss of uniformity and architectural orientation, a preneoplastic change. Metaplasia may predispose to dysplasia and then cancer.
+Metaplasia is a reversible, orderly replacement of one mature cell type by another (adaptive); dysplasia is disordered, atypical cellular growth with loss of uniformity and architectural orientation, a preneoplastic change. Metaplasia may predispose to dysplasia and then cancer.
 
 | Feature | Metaplasia | Dysplasia |
 |---|---|---|
@@ -443,7 +441,7 @@ The comparison below draws on the chapter for metaplasia and on for dysplasia.
 
 ## Define dysplasia.
 
-**Say this first:** Dysplasia literally means "disordered growth"; it is encountered principally in epithelial cells and is recognised by pleomorphism, large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio, architectural disarray with loss of orderly differentiation, and increased mitotic figures that are seen throughout the epithelium rather than confined to the basal layer.
+Dysplasia literally means "disordered growth"; it is encountered principally in epithelial cells and is recognised by pleomorphism, large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio, architectural disarray with loss of orderly differentiation, and increased mitotic figures that are seen throughout the epithelium rather than confined to the basal layer.
 
 **Explanation**
 
@@ -463,7 +461,7 @@ Dysplasia is a precursor of malignant transformation, but progression to cancer 
 
 ## What do you mean by cell injury?
 
-**Say this first:** Cell injury is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations affecting essential functions. It is reversible up to a point; if the stimulus is persistent or severe the cell suffers irreversible injury and dies.
+Cell injury is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations affecting essential functions. It is reversible up to a point; if the stimulus is persistent or severe the cell suffers irreversible injury and dies.
 
 **Complete explanation**
 
@@ -475,7 +473,7 @@ Dysplasia is a precursor of malignant transformation, but progression to cancer 
 
 ## What are the causes of cell injury?
 
-**Say this first:** Causes of cell injury are oxygen deprivation (hypoxia), physical agents, chemical agents and drugs, infectious agents, immunologic reactions, genetic abnormalities and nutritional imbalances.
+Causes of cell injury are oxygen deprivation (hypoxia), physical agents, chemical agents and drugs, infectious agents, immunologic reactions, genetic abnormalities and nutritional imbalances.
 
 | Cause | Details / examples |
 |---|---|
@@ -490,7 +488,7 @@ Dysplasia is a precursor of malignant transformation, but progression to cancer 
 
 ## What are the types of cell injury?
 
-**Say this first:** Cell injury is of two types — reversible (cell can recover when the stimulus is removed) and irreversible (progresses to cell death by necrosis or apoptosis).
+Cell injury is of two types — reversible (cell can recover when the stimulus is removed) and irreversible (progresses to cell death by necrosis or apoptosis).
 
 | Feature | Reversible injury | Irreversible injury |
 |---|---|---|
@@ -504,7 +502,7 @@ Cell death itself occurs by necrosis and apoptosis, with further regulated pathw
 
 ## Responses of cells to injurious stimuli.
 
-**Say this first:** Cells respond to stress and injury by adaptation (hypertrophy, hyperplasia, atrophy, metaplasia), reversible injury, or irreversible injury leading to cell death (necrosis or apoptosis); persistent metabolic derangement may also cause intracellular accumulations and pathologic calcification.
+Cells respond to stress and injury by adaptation (hypertrophy, hyperplasia, atrophy, metaplasia), reversible injury, or irreversible injury leading to cell death (necrosis or apoptosis); persistent metabolic derangement may also cause intracellular accumulations and pathologic calcification.
 
 | Response | Features |
 |---|---|
@@ -519,7 +517,7 @@ The response depends on the nature, duration and severity of the injury and on t
 
 ## Mention the types of reversible cell injury.
 
-**Say this first:** The two consistent forms of reversible cell injury are cellular swelling (hydropic change/vacuolar degeneration) and fatty change.
+The two consistent forms of reversible cell injury are cellular swelling (hydropic change/vacuolar degeneration) and fatty change.
 
 - Cellular swelling: earliest manifestation of almost all forms of injury; due to water influx following failure of the ATP-dependent Na⁺–K⁺ pump.
 - Fatty change: accumulation of triglyceride-filled lipid vacuoles in cells involved in lipid metabolism (liver); toxic injury disrupts metabolic pathways.
@@ -528,7 +526,7 @@ The response depends on the nature, duration and severity of the injury and on t
 
 ## Write down the morphological types of cell injury.
 
-**Say this first:** Morphologically, cell injury is reversible (cellular swelling and fatty change) or irreversible (cell death: necrosis and apoptosis).
+Morphologically, cell injury is reversible (cellular swelling and fatty change) or irreversible (cell death: necrosis and apoptosis).
 
 | Category | Morphologic type | Key features |
 |---|---|---|
@@ -590,7 +588,7 @@ Mechanistic basis: ATP depletion → failure of Na⁺–K⁺ pump → influx of 
 
 ## Features of reversible cell injury.
 
-**Say this first:** Reversible injury shows cellular swelling, fatty change, plasma membrane blebbing with loss of microvilli, mitochondrial swelling, dilation of the ER, detachment of ribosomes, clumping of nuclear chromatin and cytoplasmic eosinophilia (from RNA loss).
+Reversible injury shows cellular swelling, fatty change, plasma membrane blebbing with loss of microvilli, mitochondrial swelling, dilation of the ER, detachment of ribosomes, clumping of nuclear chromatin and cytoplasmic eosinophilia (from RNA loss).
 
 - Cause of swelling: failure of ATP-dependent Na⁺–K⁺ pump from ATP depletion (oxygen deficiency or mitochondrial damage).
 - Correctable if the damaging stimulus is removed.
@@ -599,7 +597,7 @@ Mechanistic basis: ATP depletion → failure of Na⁺–K⁺ pump → influx of 
 
 ## Changes that occur in a cell in cellular swelling.
 
-**Say this first:** Cellular swelling results from water influx after failure of the ATP-dependent Na⁺–K⁺ pump; the cell and organelles swell, the ER is distended into clear vacuoles (hydropic change), and the cytoplasm becomes more eosinophilic.
+Cellular swelling results from water influx after failure of the ATP-dependent Na⁺–K⁺ pump; the cell and organelles swell, the ER is distended into clear vacuoles (hydropic change), and the cytoplasm becomes more eosinophilic.
 
 Sequence: ↓ O₂ → ↓ oxidative phosphorylation → ↓ ATP → ↓ Na⁺,K⁺-ATPase activity → Na⁺ enters, K⁺ falls → net solute gain → osmotic water accumulation → cell swelling and ER dilation.
 
@@ -608,7 +606,7 @@ Changes: plasma membrane blebbing/loss of microvilli; mitochondrial swelling; ER
 
 ## Features of irreversible cell injury.
 
-**Say this first:** Irreversible injury is characterised by the inability to reverse mitochondrial dysfunction (no oxidative phosphorylation/ATP) and profound disturbances of membrane function, leading to cell death (necrosis or apoptosis).
+Irreversible injury is characterised by the inability to reverse mitochondrial dysfunction (no oxidative phosphorylation/ATP) and profound disturbances of membrane function, leading to cell death (necrosis or apoptosis).
 
 - Cytoplasm: marked eosinophilia, glassy/vacuolated "moth-eaten" appearance, myelin figures.
 - Nucleus: karyolysis, pyknosis, karyorrhexis.
@@ -619,7 +617,7 @@ Changes: plasma membrane blebbing/loss of microvilli; mitochondrial swelling; ER
 
 ## Morphological changes that occur in a necrosed cell.
 
-**Say this first:** A necrosed cell shows increased eosinophilia, a glassy or vacuolated ("moth-eaten") cytoplasm, myelin figures, and nuclear changes — karyolysis, pyknosis or karyorrhexis, with disruption of plasma and organelle membranes.
+A necrosed cell shows increased eosinophilia, a glassy or vacuolated ("moth-eaten") cytoplasm, myelin figures, and nuclear changes — karyolysis, pyknosis or karyorrhexis, with disruption of plasma and organelle membranes.
 
 | Compartment | Changes |
 |---|---|
@@ -672,7 +670,7 @@ The "point of no return" is largely undefined, but two phenomena consistently ch
 
 ## How is depletion of ATP associated with hypoxic cell injury?
 
-**Say this first:** Hypoxia stops oxidative phosphorylation in mitochondria, so ATP falls; this fails the Na⁺–K⁺ pump (cell swelling), forces anaerobic glycolysis (glycogen depletion, lactic acid, ↓ pH), causes ribosome detachment and ↓ protein synthesis, and ultimately damage to mitochondrial/lysosomal membranes → necrosis.
+Hypoxia stops oxidative phosphorylation in mitochondria, so ATP falls; this fails the Na⁺–K⁺ pump (cell swelling), forces anaerobic glycolysis (glycogen depletion, lactic acid, ↓ pH), causes ribosome detachment and ↓ protein synthesis, and ultimately damage to mitochondrial/lysosomal membranes → necrosis.
 
 **Complete explanation**
 
@@ -684,7 +682,7 @@ The "point of no return" is largely undefined, but two phenomena consistently ch
 
 ## Names of free radicals.
 
-**Say this first:** The principal free radicals in cell injury are superoxide anion (O₂•⁻), hydrogen peroxide (H₂O₂), hydroxyl radical (•OH) and peroxynitrite (ONOO⁻); others include nitric oxide (NO) and the drug-derived •CCl₃.
+The principal free radicals in cell injury are superoxide anion (O₂•⁻), hydrogen peroxide (H₂O₂), hydroxyl radical (•OH) and peroxynitrite (ONOO⁻); others include nitric oxide (NO) and the drug-derived •CCl₃.
 
 | Species | Origin | Inactivation | Effect |
 |---|---|---|---|
@@ -696,7 +694,7 @@ The "point of no return" is largely undefined, but two phenomena consistently ch
 
 ## Name the antioxidants.
 
-**Say this first:** Vitamins E, A and C (ascorbic acid), glutathione, metal-binding proteins (transferrin, ferritin, lactoferrin, ceruloplasmin), and enzymes catalase, superoxide dismutase (SOD) and glutathione peroxidase.
+Vitamins E, A and C (ascorbic acid), glutathione, metal-binding proteins (transferrin, ferritin, lactoferrin, ceruloplasmin), and enzymes catalase, superoxide dismutase (SOD) and glutathione peroxidase.
 
 | Group | Examples |
 |---|---|
@@ -707,7 +705,7 @@ The "point of no return" is largely undefined, but two phenomena consistently ch
 
 ## Enzymes activated by increased intracellular calcium.
 
-**Say this first:** Phospholipases, proteases, endonucleases and ATPases.
+Phospholipases, proteases, endonucleases and ATPases.
 
 | Enzyme | Effect |
 |---|---|
@@ -863,7 +861,7 @@ Contrast: in apoptosis the membrane stays intact and "eat me" signals ensure rap
 
 ## Define necrosis.
 
-**Say this first:** Necrosis is a pathologic process in which cellular membranes are destroyed, enzymes and other constituents leak out, and local inflammation is induced to clear the damaged cells.
+Necrosis is a pathologic process in which cellular membranes are destroyed, enzymes and other constituents leak out, and local inflammation is induced to clear the damaged cells.
 
 **Complete explanation**
 
@@ -953,7 +951,7 @@ Necrosis of tissues has several distinct patterns that give clues to the underly
 
 ## How will you differentiate between liquefactive and coagulative necrosis?
 
-**Say this first:** In coagulative necrosis the tissue architecture is preserved for days and the tissue is firm (denatured proteins and enzymes block proteolysis) — typical of ischaemic infarcts in all organs except the brain; in liquefactive necrosis the dead cells are digested into a viscous liquid — typical of focal bacterial/fungal infections (pus) and hypoxic brain injury.
+In coagulative necrosis the tissue architecture is preserved for days and the tissue is firm (denatured proteins and enzymes block proteolysis) — typical of ischaemic infarcts in all organs except the brain; in liquefactive necrosis the dead cells are digested into a viscous liquid — typical of focal bacterial/fungal infections (pus) and hypoxic brain injury.
 
 | Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
@@ -970,7 +968,7 @@ Necrosis of tissues has several distinct patterns that give clues to the underly
 
 ## Classify necrosis.
 
-**Say this first:** Necrosis is classified morphologically (tissue patterns) into coagulative, liquefactive, gangrenous, caseous, fat and fibrinoid necrosis.
+Necrosis is classified morphologically (tissue patterns) into coagulative, liquefactive, gangrenous, caseous, fat and fibrinoid necrosis.
 
 | Class | Basis |
 |---|---|
@@ -986,7 +984,7 @@ Regulated forms of necrotic death: necroptosis, pyroptosis, ferroptosis.
 
 ## Examples of each type of necrosis.
 
-**Say this first:** Coagulative – myocardial/kidney infarct; liquefactive – abscess, brain infarct; gangrenous – ischaemic lower limb; caseous – tuberculosis; fat – acute pancreatitis; fibrinoid – immune-complex arteritis.
+Coagulative – myocardial/kidney infarct; liquefactive – abscess, brain infarct; gangrenous – ischaemic lower limb; caseous – tuberculosis; fat – acute pancreatitis; fibrinoid – immune-complex arteritis.
 
 | Type | Examples |
 |---|---|
@@ -1000,7 +998,7 @@ Regulated forms of necrotic death: necroptosis, pyroptosis, ferroptosis.
 
 ## Morphology of coagulative necrosis.
 
-**Say this first:** In coagulative necrosis the architecture of the dead tissue is preserved for some days; the tissue is firm, and cells appear intensely eosinophilic with indistinct or reddish nuclei (loss of nuclei); later, leukocytes infiltrate and clear the debris.
+In coagulative necrosis the architecture of the dead tissue is preserved for some days; the tissue is firm, and cells appear intensely eosinophilic with indistinct or reddish nuclei (loss of nuclei); later, leukocytes infiltrate and clear the debris.
 
 - Mechanism: injury denatures structural proteins and enzymes, blocking proteolysis.
 - Gross: firm, pale/yellow; kidney infarct is wedge-shaped.
@@ -1010,7 +1008,7 @@ Regulated forms of necrotic death: necroptosis, pyroptosis, ferroptosis.
 
 ## Example of coagulative necrosis.
 
-**Say this first:** The classic example is an infarct — e.g., myocardial infarction or a wedge-shaped kidney infarct caused by arterial obstruction.
+The classic example is an infarct — e.g., myocardial infarction or a wedge-shaped kidney infarct caused by arterial obstruction.
 
 - A localised area of coagulative necrosis is called an infarct.
 - Ischaemia from vessel obstruction produces coagulative necrosis in all organs except the brain.
@@ -1018,7 +1016,7 @@ Regulated forms of necrotic death: necroptosis, pyroptosis, ferroptosis.
 
 ## Common examples of liquefactive necrosis.
 
-**Say this first:** Bacterial abscesses (focal bacterial infections, pus), occasional fungal infections, and hypoxic/ischaemic infarcts of the brain.
+Bacterial abscesses (focal bacterial infections, pus), occasional fungal infections, and hypoxic/ischaemic infarcts of the brain.
 
 - Microbes stimulate leukocyte accumulation and enzyme release → digestion → pus (creamy yellow).
 - CNS hypoxic cell death is liquefactive for unknown reasons.
@@ -1027,7 +1025,7 @@ Regulated forms of necrotic death: necroptosis, pyroptosis, ferroptosis.
 
 ## Differences between coagulative and caseous necrosis.
 
-**Say this first:** Coagulative necrosis retains the tissue architecture (ghost outlines) and is caused by ischaemia; caseous necrosis shows complete loss of architecture — a friable white "cheese-like" structureless debris enclosed by a granuloma, typically in tuberculosis.
+Coagulative necrosis retains the tissue architecture (ghost outlines) and is caused by ischaemia; caseous necrosis shows complete loss of architecture — a friable white "cheese-like" structureless debris enclosed by a granuloma, typically in tuberculosis.
 
 | Feature | Coagulative | Caseous |
 |---|---|---|
@@ -1043,7 +1041,7 @@ Regulated forms of necrotic death: necroptosis, pyroptosis, ferroptosis.
 
 ## What do you mean by gangrenous necrosis?
 
-**Say this first:** Gangrenous necrosis is not a specific pattern of cell death but a clinical term for a part, usually the lower limb, that has lost its blood supply and undergone necrosis (typically coagulative) involving multiple tissue planes; superimposed bacterial infection adds liquefactive change, producing wet gangrene.
+Gangrenous necrosis is not a specific pattern of cell death but a clinical term for a part, usually the lower limb, that has lost its blood supply and undergone necrosis (typically coagulative) involving multiple tissue planes; superimposed bacterial infection adds liquefactive change, producing wet gangrene.
 
 **Types**
 
@@ -1180,7 +1178,7 @@ Others: accumulation of misfolded proteins (ER stress); pathologic atrophy after
 
 ## Write short note on: Apoptosis
 
-**Say this first:** Apoptosis is a regulated, energy-dependent form of cell death induced by a tightly controlled suicide program in which caspases degrade DNA and proteins; the cell shrinks and breaks into membrane-bound apoptotic bodies that are rapidly phagocytosed, so there is no inflammation. It occurs in physiologic and pathologic settings and proceeds via the mitochondrial (intrinsic) and death receptor (extrinsic) pathways.
+Apoptosis is a regulated, energy-dependent form of cell death induced by a tightly controlled suicide program in which caspases degrade DNA and proteins; the cell shrinks and breaks into membrane-bound apoptotic bodies that are rapidly phagocytosed, so there is no inflammation. It occurs in physiologic and pathologic settings and proceeds via the mitochondrial (intrinsic) and death receptor (extrinsic) pathways.
 
 1. Definition and history. Cells destined to die activate intrinsic enzymes that degrade DNA and nuclear and cytoplasmic proteins; fragments (apoptotic bodies) contain cytoplasm and nucleus; the membrane remains intact but surface components alter to produce "find me" and "eat me" signals. Recognised in 1972 (Greek: "falling off"); programmed cell death (controlled by few genes, required in embryogenesis) refers to developmental apoptosis.
 
@@ -1205,7 +1203,7 @@ Others: accumulation of misfolded proteins (ER stress); pathologic atrophy after
 
 ## What are the causes of apoptosis?
 
-**Say this first:** Apoptosis occurs in physiologic situations (development, hormone withdrawal, cell turnover, lymphocyte selection) and in pathologic conditions (DNA damage, accumulation of misfolded proteins, viral infections/CTL killing, and duct-obstruction atrophy).
+Apoptosis occurs in physiologic situations (development, hormone withdrawal, cell turnover, lymphocyte selection) and in pathologic conditions (DNA damage, accumulation of misfolded proteins, viral infections/CTL killing, and duct-obstruction atrophy).
 
 | Context | Causes |
 |---|---|
@@ -1216,7 +1214,7 @@ Others: accumulation of misfolded proteins (ER stress); pathologic atrophy after
 
 ## Write down the differences between necrosis and apoptosis.
 
-**Say this first:** Necrosis is a pathologic, passive death with cell swelling, membrane rupture, leakage of contents and inflammation; apoptosis is a regulated, caspase-mediated death with cell shrinkage, intact membrane, apoptotic bodies and no inflammation (Table 2.2).
+Necrosis is a pathologic, passive death with cell swelling, membrane rupture, leakage of contents and inflammation; apoptosis is a regulated, caspase-mediated death with cell shrinkage, intact membrane, apoptotic bodies and no inflammation (Table 2.2).
 
 | Feature | Necrosis | Apoptosis |
 |---|---|---|
@@ -1237,7 +1235,7 @@ Table 2.2 rows:. Distinction is not always absolute: some necrosis is geneticall
 
 ## Examples of pathological apoptosis.
 
-**Say this first:** DNA damage (radiation, anticancer drugs), accumulation of misfolded proteins (ER stress), viral infections (adenovirus, HIV, viral hepatitis), CTL-mediated killing (tumour cells, graft rejection, GVHD) and atrophy after duct obstruction.
+DNA damage (radiation, anticancer drugs), accumulation of misfolded proteins (ER stress), viral infections (adenovirus, HIV, viral hepatitis), CTL-mediated killing (tumour cells, graft rejection, GVHD) and atrophy after duct obstruction.
 
 - DNA damage → p53 → mitochondrial pathway if repair fails.
 - Misfolded-protein diseases: α₁-antitrypsin deficiency (hepatocyte apoptosis), Alzheimer disease, Creutzfeldt-Jakob disease.
@@ -1246,7 +1244,7 @@ Table 2.2 rows:. Distinction is not always absolute: some necrosis is geneticall
 
 ## Morphological changes in an apoptotic cell.
 
-**Say this first:** The apoptotic cell shows cell shrinkage, chromatin condensation, formation of cytoplasmic blebs and apoptotic bodies, and phagocytosis by macrophages.
+The apoptotic cell shows cell shrinkage, chromatin condensation, formation of cytoplasmic blebs and apoptotic bodies, and phagocytosis by macrophages.
 
 1. Cell shrinkage — dense eosinophilic cytoplasm, tightly packed organelles (contrast with swelling in necrosis).
 
@@ -1261,7 +1259,7 @@ Table 2.2 rows:. Distinction is not always absolute: some necrosis is geneticall
 
 ## Nuclear changes in apoptosis.
 
-**Say this first:** Chromatin condensation (peripheral crescents, uniformly dense mass; pyknosis) followed by nuclear fragmentation (karyorrhexis) with DNA cleavage into nucleosome-size fragments.
+Chromatin condensation (peripheral crescents, uniformly dense mass; pyknosis) followed by nuclear fragmentation (karyorrhexis) with DNA cleavage into nucleosome-size fragments.
 
 - Chromatin aggregates peripherally under the nuclear membrane into dense masses; the nucleus may break up into two or more fragments (Fig. 2.15B).
 - Mechanism: executioner caspases cleave an inhibitor of a DNase, activating it → DNA degradation; caspases also proteolyse nuclear matrix components → nuclear fragmentation.
@@ -1323,7 +1321,7 @@ Note: the word "usually" matters — necroptosis and pyroptosis are caspase-inde
 
 ## What do you mean by intracellular accumulation?
 
-**Say this first:** Intracellular accumulations are abnormal deposits of substances in cells — in the cytoplasm, organelles (typically lysosomes) or nucleus — that arise from metabolic derangements and may be harmless or cause further injury; the substances may be made by the cell or come from elsewhere.
+Intracellular accumulations are abnormal deposits of substances in cells — in the cytoplasm, organelles (typically lysosomes) or nucleus — that arise from metabolic derangements and may be harmless or cause further injury; the substances may be made by the cell or come from elsewhere.
 
 Four main mechanisms
 
@@ -1340,7 +1338,7 @@ Four main mechanisms
 
 ## Examples of intracellular accumulation.
 
-**Say this first:** Lipids (triglycerides – fatty liver; cholesterol – atherosclerosis, xanthoma), proteins (reabsorption droplets, Russell bodies, alcoholic hyaline, α₁-antitrypsin), glycogen (diabetes, glycogen storage diseases) and pigments (carbon, lipofuscin, melanin, haemosiderin).
+Lipids (triglycerides – fatty liver; cholesterol – atherosclerosis, xanthoma), proteins (reabsorption droplets, Russell bodies, alcoholic hyaline, α₁-antitrypsin), glycogen (diabetes, glycogen storage diseases) and pigments (carbon, lipofuscin, melanin, haemosiderin).
 
 | Substance | Examples |
 |---|---|
@@ -1352,7 +1350,7 @@ Four main mechanisms
 
 ## Define fatty change.
 
-**Say this first:** Fatty change (steatosis) is the abnormal accumulation of triglycerides within parenchymal cells, most often seen in the liver, but also in heart, muscle and kidney; it is a reversible injury.
+Fatty change (steatosis) is the abnormal accumulation of triglycerides within parenchymal cells, most often seen in the liver, but also in heart, muscle and kidney; it is a reversible injury.
 
 - Appears as clear (fat) vacuoles; the nucleus is squeezed into a displaced rim of cytoplasm (Fig. 2.30).
 - Results when toxic injury disrupts metabolic pathways, causing rapid accumulation of triglyceride-filled vacuoles.
@@ -1360,7 +1358,7 @@ Four main mechanisms
 
 ## Causes of fatty change of the liver.
 
-**Say this first:** Alcohol (excessive use) and nonalcoholic fatty liver disease (NAFLD: obesity, diabetes) are the commonest; others: toxins, protein malnutrition, diabetes mellitus, obesity and anoxia.
+Alcohol (excessive use) and nonalcoholic fatty liver disease (NAFLD: obesity, diabetes) are the commonest; others: toxins, protein malnutrition, diabetes mellitus, obesity and anoxia.
 
 | Cause | Note |
 |---|---|
@@ -1375,7 +1373,7 @@ Mechanisms: ↑ fatty-acid delivery, ↓ fatty-acid oxidation, ↑ triglyceride 
 
 ## Alcohol abuse with massive hepatomegaly; liver biopsy shows fat droplets in hepatocytes — Diagnosis? Future consequence?
 
-**Say this first:** The diagnosis is alcoholic fatty liver (hepatic steatosis) — reversible fatty change due to alcohol. With continued drinking it may progress to alcoholic hepatitis, fibrosis and cirrhosis.
+The diagnosis is alcoholic fatty liver (hepatic steatosis) — reversible fatty change due to alcohol. With continued drinking it may progress to alcoholic hepatitis, fibrosis and cirrhosis.
 
 **Explanation**
 
@@ -1386,12 +1384,12 @@ Mechanisms: ↑ fatty-acid delivery, ↓ fatty-acid oxidation, ↑ triglyceride 
 
 ## Define hyaline change.
 
-**Say this first:** Hyaline change is a descriptive histologic term for any alteration, within cells or extracellular space, that gives a homogeneous, glassy, pink appearance on H&E; it is not a specific pattern of accumulation or marker of cell injury.
+Hyaline change is a descriptive histologic term for any alteration, within cells or extracellular space, that gives a homogeneous, glassy, pink appearance on H&E; it is not a specific pattern of accumulation or marker of cell injury.
 
 
 ## Examples of hyaline change.
 
-**Say this first:** Intracellular: protein reabsorption droplets in renal tubules, Russell bodies, alcoholic hyaline; extracellular: hyalinised collagen in old scars and arteriolar hyalinosis in hypertension and diabetes.
+Intracellular: protein reabsorption droplets in renal tubules, Russell bodies, alcoholic hyaline; extracellular: hyalinised collagen in old scars and arteriolar hyalinosis in hypertension and diabetes.
 
 | Site | Example |
 |---|---|
@@ -1424,7 +1422,7 @@ Pathologic calcification is the abnormal tissue deposition of calcium salts, tog
 
 ## Write down the difference between dystrophic and metastatic calcification.
 
-**Say this first:** Dystrophic calcification is calcium deposition in dead or dying tissue with normal serum calcium; metastatic calcification is deposition in normal tissues caused by hypercalcaemia.
+Dystrophic calcification is calcium deposition in dead or dying tissue with normal serum calcium; metastatic calcification is deposition in normal tissues caused by hypercalcaemia.
 
 | Feature | Dystrophic | Metastatic |
 |---|---|---|
@@ -1440,7 +1438,7 @@ Pathologic calcification is the abnormal tissue deposition of calcium salts, tog
 
 ## Sites of dystrophic calcification.
 
-**Say this first:** Areas of necrosis (coagulative, caseous, liquefactive, fat necrosis), atheromas of advanced atherosclerosis, and ageing or damaged heart valves.
+Areas of necrosis (coagulative, caseous, liquefactive, fat necrosis), atheromas of advanced atherosclerosis, and ageing or damaged heart valves.
 
 - Tuberculous lymph nodes (may become "stone"); fat necrosis of pancreatitis (calcium soaps).
 - Psammoma bodies in papillary cancers (e.g., thyroid); asbestos bodies in lung.
@@ -1448,7 +1446,7 @@ Pathologic calcification is the abnormal tissue deposition of calcium salts, tog
 
 ## Common sites of metastatic calcification.
 
-**Say this first:** Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins.
+Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins.
 
 - Reason: all excrete acid and have an internal alkaline compartment, predisposing to calcification.
 - Massive deposits: lungs (radiographic changes, respiratory compromise) and kidney (nephrocalcinosis → renal damage).
@@ -1474,7 +1472,7 @@ Dystrophic calcification is the local deposition of calcium salts in dying (necr
 
 ## Define inflammation.
 
-**Say this first:** Inflammation is the protective response of vascularised tissues to infection and tissue damage, in which circulating leukocytes, plasma proteins and other host-defence molecules are delivered to the site of injury so that the cause of cell injury and its consequences can be eliminated and repair can begin.
+Inflammation is the protective response of vascularised tissues to infection and tissue damage, in which circulating leukocytes, plasma proteins and other host-defence molecules are delivered to the site of injury so that the cause of cell injury and its consequences can be eliminated and repair can begin.
 
 Inflammation is a response of vascularised tissue. Its purpose is to bring the cells and molecules of host defence (phagocytic leukocytes, antibodies and complement proteins) out of the circulation, where they normally rest in an inactive state, and into the tissue where microbes, toxins or necrotic cells are located. It is therefore essential for survival: without inflammation infections would go unchecked, wounds would never heal and injured tissues would remain permanent festering sores. It is not itself a disease but a stereotyped response to injury, as John Hunter recognised in 1793. The suffix -itis attached to the name of an organ denotes inflammation at that site (appendicitis, meningitis, conjunctivitis).
 
@@ -1485,7 +1483,7 @@ The same mechanisms that destroy microbes can injure normal tissue. Inflammation
 
 ## Types of inflammation.
 
-**Say this first:** Inflammation is of two basic types, acute and chronic. Acute inflammation is rapid in onset, short in duration and neutrophil-predominant; chronic inflammation is prolonged, mononuclear-cell-predominant and accompanied by tissue destruction and fibrosis. Granulomatous inflammation is a special pattern of chronic inflammation.
+Inflammation is of two basic types, acute and chronic. Acute inflammation is rapid in onset, short in duration and neutrophil-predominant; chronic inflammation is prolonged, mononuclear-cell-predominant and accompanied by tissue destruction and fibrosis. Granulomatous inflammation is a special pattern of chronic inflammation.
 
 The distinction between acute and chronic inflammation was originally based on duration, but they are now known to differ in kinetics, dominant cell type, mediators and degree of tissue injury. Acute inflammation develops within minutes to hours, lasts hours to a few days, and is characterised by exudation of fluid and plasma proteins (oedema) and emigration of leukocytes, predominantly neutrophils. Chronic inflammation lasts weeks to months or longer; inflammation, tissue destruction and attempted repair proceed side by side, and the infiltrate is composed of macrophages, lymphocytes and plasma cells. It may follow acute inflammation when the stimulus persists, or it may begin insidiously without a preceding acute phase, as in tuberculosis, rheumatoid arthritis or silicosis. A transitional or "subacute" stage with mixed neutrophilic and mononuclear infiltrates is often recognised clinically.
 
@@ -1502,7 +1500,7 @@ Within each type, descriptive patterns are recognised on the basis of morphology
 
 ## Examples of each type of inflammation.
 
-**Say this first:** Acute inflammation is exemplified by acute appendicitis, bacterial pneumonia, acute meningitis and a skin abscess; chronic inflammation by tuberculosis, chronic osteomyelitis, rheumatoid arthritis and chronic peptic ulcer; and granulomatous inflammation by tuberculosis, leprosy, sarcoidosis and Crohn disease.
+Acute inflammation is exemplified by acute appendicitis, bacterial pneumonia, acute meningitis and a skin abscess; chronic inflammation by tuberculosis, chronic osteomyelitis, rheumatoid arthritis and chronic peptic ulcer; and granulomatous inflammation by tuberculosis, leprosy, sarcoidosis and Crohn disease.
 
 Acute inflammation arises in response to agents that are readily eliminated, such as many bacteria and fungi, necrotic cells, and physical or chemical injury. Typical examples are acute appendicitis (suppurative inflammation), acute bacterial pneumonia and bronchopneumonia, acute pyogenic meningitis, a staphylococcal abscess or boil, acute pharyngitis and tonsillitis, a thermal burn or sunburn blister (serous inflammation), fibrinous pericarditis or pleuritis, and the early inflammatory reaction to myocardial infarction.
 
@@ -1513,7 +1511,7 @@ Granulomatous inflammation, a distinctive form of chronic inflammation, is seen 
 
 ## Causes of inflammation.
 
-**Say this first:** Inflammation is caused by infections and microbial toxins, tissue necrosis from any cause, foreign bodies, trauma and physical or chemical agents, and immune (hypersensitivity) reactions.
+Inflammation is caused by infections and microbial toxins, tissue necrosis from any cause, foreign bodies, trauma and physical or chemical agents, and immune (hypersensitivity) reactions.
 
 Inflammatory reactions are triggered by a variety of stimuli, which are recognised by sentinel cells and circulating proteins.
 
@@ -1530,7 +1528,7 @@ Additional causes include hypoxia, which can itself trigger mediator release, an
 
 ## What are the cardinal signs of acute inflammation?
 
-**Say this first:** The cardinal signs of acute inflammation are rubor (redness), calor (heat), tumour (swelling) and dolor (pain), first listed by Celsus; Virchow added a fifth, functio laesa (loss of function).
+The cardinal signs of acute inflammation are rubor (redness), calor (heat), tumour (swelling) and dolor (pain), first listed by Celsus; Virchow added a fifth, functio laesa (loss of function).
 
 Celsus, a Roman writer of the first century CE, described the four cardinal signs in his treatise De Medicina, and the fifth sign was added by Rudolf Virchow in the nineteenth century. They are the clinical expression of the vascular and cellular reactions of acute inflammation and are the hallmarks of the acute response.
 
@@ -1547,7 +1545,7 @@ The increased blood flow and increased permeability together account for redness
 
 ## How/why does rubor (redness) occur?
 
-**Say this first:** Rubor occurs because of vasodilation: histamine and other mediators dilate arterioles and postcapillary venules, the increased blood flow brings more oxygenated red cells into the area, and later slowing of flow with engorgement of small vessels adds to the redness.
+Rubor occurs because of vasodilation: histamine and other mediators dilate arterioles and postcapillary venules, the increased blood flow brings more oxygenated red cells into the area, and later slowing of flow with engorgement of small vessels adds to the redness.
 
 Vasodilation is among the earliest manifestations of acute inflammation. It is induced by several mediators acting on vascular smooth muscle, notably histamine (and also prostaglandins such as PGI₂, PGE₂ and PGD₂, nitric oxide, and anaphylatoxins that release histamine from mast cells). Histamine dilates arterioles; the vasodilation involves chiefly the arterioles and postcapillary venules and opens up the capillary beds, which causes active hyperaemia, that is, increased arterial blood flow to the part. The tissue becomes red because of the increased delivery of oxygenated blood.
 
@@ -1556,21 +1554,21 @@ As vasodilation continues and permeability increases, protein-rich fluid leaves 
 
 ## How does calor (heat) occur?
 
-**Say this first:** Calor results from the increased blood flow through the dilated vessels of the inflamed area, which delivers warm blood from the core of the body to the affected part; systemic fever from endogenous pyrogens adds to the effect.
+Calor results from the increased blood flow through the dilated vessels of the inflamed area, which delivers warm blood from the core of the body to the affected part; systemic fever from endogenous pyrogens adds to the effect.
 
 Dilatation of arterioles and the opening of capillary beds under the influence of histamine and other mediators increase the volume of blood flowing through the inflamed region. Because the blood comes from the warmer core of the body, the temperature of the affected tissue rises toward core temperature. The effect is obvious in superficial tissues such as the skin, particularly of the extremities, which are normally cooler than the core; it is not perceptible in deeply placed organs that already operate at core temperature. In addition, the endogenous pyrogens IL-1 and TNF, acting through prostaglandin E₂ in the hypothalamus, reset the temperature set point and cause systemic fever when the inflammation is substantial, so the patient as a whole may be febrile.
 
 
 ## Why does swelling develop in inflammation?
 
-**Say this first:** Swelling in inflammation is mainly due to inflammatory oedema: increased permeability of postcapillary venules allows protein-rich fluid to escape into the extravascular tissue, and the accumulation of inflammatory cells and fibrin adds to the bulk.
+Swelling in inflammation is mainly due to inflammatory oedema: increased permeability of postcapillary venules allows protein-rich fluid to escape into the extravascular tissue, and the accumulation of inflammatory cells and fibrin adds to the bulk.
 
 Several events act together. First, arteriolar dilation raises the hydrostatic pressure within the capillary bed. Second, and most important, mediators such as histamine, bradykinin and leukotrienes cause contraction of endothelial cells and open interendothelial gaps in postcapillary venules, while more severe injury causes endothelial necrosis and detachment; the vessel wall then becomes permeable to plasma proteins. The loss of protein from the plasma and its accumulation in the interstitium abolish the normal osmotic gradient that retains water within vessels, so fluid pours into the tissue. The result is an exudate, defined as an extravascular fluid with a high protein concentration. Third, lymphatic vessels attempt to drain the fluid and their flow increases, but when the rate of leakage exceeds drainage, fluid accumulates and the tissue swells. Finally, emigrated leukocytes, fibrin and, in purulent inflammation, pus further expand the inflamed tissue. In confined spaces such as the cranium or larynx, this swelling can be dangerous.
 
 
 ## What are the components of acute inflammation?
 
-**Say this first:** Acute inflammation has three major components: dilation of small vessels leading to increased blood flow, increased permeability of the microvasculature allowing plasma proteins and leukocytes to leave the circulation, and emigration of leukocytes from the microcirculation with their accumulation and activation at the site of injury.
+Acute inflammation has three major components: dilation of small vessels leading to increased blood flow, increased permeability of the microvasculature allowing plasma proteins and leukocytes to leave the circulation, and emigration of leukocytes from the microcirculation with their accumulation and activation at the site of injury.
 
 When a host encounters a microbe or dead cells, resident phagocytes try to eliminate them, while sentinel cells recognise the agent and liberate cytokines, lipid mediators and vasoactive amines. These mediators act on neighbouring small vessels and set in motion the three components of the response.
 
@@ -1583,28 +1581,28 @@ The participants are therefore blood vessels, leukocytes and plasma proteins. Th
 
 ## Hallmark of acute inflammation.
 
-**Say this first:** The hallmark of acute inflammation is increased vascular permeability of postcapillary venules, leading to exudation of protein-rich fluid (oedema) and the emigration of leukocytes, predominantly neutrophils, into the tissue.
+The hallmark of acute inflammation is increased vascular permeability of postcapillary venules, leading to exudation of protein-rich fluid (oedema) and the emigration of leukocytes, predominantly neutrophils, into the tissue.
 
 Robbins identifies the increased permeability of postcapillary venules as a hallmark of acute inflammation, because it underlies the exudate, which implies that an inflammatory process has increased vessel permeability. Together with dilation of small vessels and accumulation of leukocytes and fluid in the extravascular tissue, these are the morphological hallmarks of acute inflammatory reactions. Clinically, the hallmarks are the cardinal signs: rubor, calor, tumour and dolor, with loss of function. The characteristic cell of acute inflammation is the neutrophil, which predominates in the infiltrate during the first 6 to 24 hours.
 
 
 ## Name the acute inflammatory cells.
 
-**Say this first:** The principal cells of acute inflammation are the neutrophils, followed within 24 to 48 hours by monocytes and macrophages; mast cells and tissue macrophages act as sentinel cells, and eosinophils and lymphocytes predominate in particular settings.
+The principal cells of acute inflammation are the neutrophils, followed within 24 to 48 hours by monocytes and macrophages; mast cells and tissue macrophages act as sentinel cells, and eosinophils and lymphocytes predominate in particular settings.
 
 Neutrophils are the first and most numerous leukocytes to arrive and predominate during the first 6 to 24 hours; they are more numerous than other leukocytes, respond more rapidly to chemokines and attach more firmly to endothelial P- and E-selectin. They are short lived and die by apoptosis within a few days. Monocytes arrive later, are replaced in tissues by macrophages and become the dominant population after about 48 hours. Tissue-resident sentinel cells (macrophages, dendritic cells and mast cells) recognise the offending agent and release the first mediators. Platelets, endothelial cells and epithelial cells also produce mediators. Eosinophils predominate in helminthic infections and allergic reactions; lymphocytes may be the first cells to arrive in viral infections; and in some infections, for example with Pseudomonas, neutrophils continue to be recruited for several days. Th17 lymphocytes contribute to acute inflammation through IL-17, which induces chemokines that recruit neutrophils.
 
 
 ## Name the chronic inflammatory cells.
 
-**Say this first:** The cells of chronic inflammation are macrophages (the dominant cell), lymphocytes, plasma cells, eosinophils and mast cells, with fibroblasts taking part in repair; epithelioid cells and giant cells appear in granulomatous inflammation.
+The cells of chronic inflammation are macrophages (the dominant cell), lymphocytes, plasma cells, eosinophils and mast cells, with fibroblasts taking part in repair; epithelioid cells and giant cells appear in granulomatous inflammation.
 
 Chronic inflammation is characterised by infiltration with mononuclear cells. Macrophages are the central cell, derived from blood monocytes and tissue-resident precursors. T lymphocytes (Th1, Th2 and Th17 subsets) and B lymphocytes with antibody-secreting plasma cells amplify and sustain the reaction, and they may organise into lymphoid follicles (tertiary lymphoid structures). Eosinophils are prominent in Th2-mediated reactions such as parasitic infection and allergy. Mast cells participate in both acute and chronic reactions through IgE-FcεRI-mediated degranulation and cytokine secretion. Neutrophils may persist in some chronic reactions, for example in chronic osteomyelitis and in smoking-related lung injury. In granulomas, activated macrophages become epithelioid cells and fuse to form multinucleate giant cells. Fibroblasts and endothelial cells proliferate as part of the attempted repair.
 
 
 ## What are the differences between acute and chronic inflammation?
 
-**Say this first:** Acute inflammation is rapid in onset, lasts hours to days, is characterised by oedema and neutrophil infiltration, and usually ends in resolution; chronic inflammation is of long duration, is characterised by mononuclear cells, tissue destruction and fibrosis, and arises from persistent agents or immune reactions.
+Acute inflammation is rapid in onset, lasts hours to days, is characterised by oedema and neutrophil infiltration, and usually ends in resolution; chronic inflammation is of long duration, is characterised by mononuclear cells, tissue destruction and fibrosis, and arises from persistent agents or immune reactions.
 
 The distinction was originally based on duration, but the two forms differ in several respects.
 
@@ -1647,7 +1645,7 @@ The clinical use of anti-inflammatory drugs (NSAIDs, corticosteroids, anti-TNF a
 
 ## Vascular changes / reactions of blood vessels in acute inflammation.
 
-**Say this first:** The vascular reactions of acute inflammation are changes in blood flow and vessel caliber (vasodilation with increased flow, then slowing and stasis) and increased vascular permeability that lets protein-rich fluid and leukocytes leave the circulation; the escape of fluid is called exudation.
+The vascular reactions of acute inflammation are changes in blood flow and vessel caliber (vasodilation with increased flow, then slowing and stasis) and increased vascular permeability that lets protein-rich fluid and leukocytes leave the circulation; the escape of fluid is called exudation.
 
 These changes are designed to maximise the movement of plasma proteins and leukocytes out of the circulation and into the site of infection or injury.
 
@@ -1660,7 +1658,7 @@ These changes are designed to maximise the movement of plasma proteins and leuko
 
 ## How does increased vascular permeability / vascular leakage occur in acute inflammation?
 
-**Say this first:** Increased vascular permeability occurs mainly in postcapillary venules, chiefly by chemically induced contraction of endothelial cells that opens interendothelial gaps, and also by direct or leukocyte-dependent endothelial injury with necrosis and detachment of endothelial cells.
+Increased vascular permeability occurs mainly in postcapillary venules, chiefly by chemically induced contraction of endothelial cells that opens interendothelial gaps, and also by direct or leukocyte-dependent endothelial injury with necrosis and detachment of endothelial cells.
 
 Several mechanisms are responsible, and all probably contribute in varying degrees to most inflammatory stimuli.
 
@@ -1673,7 +1671,7 @@ At different stages of a thermal burn, leakage results from chemically mediated 
 
 ## How does edema (exudative edema) occur in acute inflammation?
 
-**Say this first:** Exudative oedema occurs because inflammatory mediators increase the permeability of postcapillary venules, so protein-rich fluid leaves the vessels; the loss of plasma protein removes the osmotic force that holds water in the vessels, and the fluid accumulates in the interstitium faster than lymphatics can drain it.
+Exudative oedema occurs because inflammatory mediators increase the permeability of postcapillary venules, so protein-rich fluid leaves the vessels; the loss of plasma protein removes the osmotic force that holds water in the vessels, and the fluid accumulates in the interstitium faster than lymphatics can drain it.
 
 In normal tissue, fluid movement across the capillary wall is governed by Starling forces. The hydrostatic pressure of about 32 mm Hg at the arterial end of a capillary bed and 12 mm Hg at the venous end tends to push fluid out, while the colloid osmotic pressure, which is approximately 25 mm Hg, holds fluid in; the net flow is almost nil, and the small quantity that escapes is returned through the lymphatics.
 
@@ -1709,7 +1707,7 @@ The principal mediators responsible are histamine and serotonin, bradykinin, pro
 
 ## Steps of cellular events in acute inflammation.
 
-**Say this first:** The cellular events of acute inflammation are leukocyte recruitment (margination, rolling, adhesion and transmigration), chemotaxis to the site of injury, leukocyte activation with phagocytosis and intracellular killing of the offending agent, and finally termination of the response.
+The cellular events of acute inflammation are leukocyte recruitment (margination, rolling, adhesion and transmigration), chemotaxis to the site of injury, leukocyte activation with phagocytosis and intracellular killing of the offending agent, and finally termination of the response.
 
 After the vascular changes, leukocytes, principally neutrophils, are recruited from the blood to the extravascular site, where they eliminate the offending agent.
 
@@ -1724,7 +1722,7 @@ Neutrophils predominate in the first 6 to 24 hours and are replaced by monocytes
 
 ## Steps of the journey of leucocytes from the vessel lumen to the tissue space.
 
-**Say this first:** The journey of leukocytes from lumen to tissue is a multistep process: margination, rolling (selectins), firm adhesion (integrins), transmigration or diapedesis through the endothelium (PECAM-1/CD31), penetration of the basement membrane, and chemotaxis in the tissue.
+The journey of leukocytes from lumen to tissue is a multistep process: margination, rolling (selectins), firm adhesion (integrins), transmigration or diapedesis through the endothelium (PECAM-1/CD31), penetration of the basement membrane, and chemotaxis in the tissue.
 
 The process is controlled by adhesion molecules and cytokines, and has three phases: events in the lumen, migration across the vessel wall, and migration in the tissue.
 
@@ -1738,7 +1736,7 @@ The process is controlled by adhesion molecules and cytokines, and has three pha
 
 ## What is chemotaxis?
 
-**Say this first:** Chemotaxis is the movement of leukocytes in the tissues toward the site of injury after they exit the circulation; it is defined as locomotion along a chemical gradient, mediated by chemoattractants that bind specific G protein-coupled receptors on the leukocyte surface.
+Chemotaxis is the movement of leukocytes in the tissues toward the site of injury after they exit the circulation; it is defined as locomotion along a chemical gradient, mediated by chemoattractants that bind specific G protein-coupled receptors on the leukocyte surface.
 
 After leaving the circulation, leukocytes move in tissue toward the injury by chemotaxis. Both exogenous and endogenous substances act as chemoattractants:
 
@@ -1752,7 +1750,7 @@ The nature of the infiltrate depends on the stimulus and on its age: neutrophils
 
 ## Name the chemotactic substances.
 
-**Say this first:** Chemotactic substances include exogenous bacterial products such as N-formylmethionine peptides, and endogenous chemoattractants: chemokines such as IL-8, complement fragment C5a, and leukotriene B₄.
+Chemotactic substances include exogenous bacterial products such as N-formylmethionine peptides, and endogenous chemoattractants: chemokines such as IL-8, complement fragment C5a, and leukotriene B₄.
 
 | Group | Examples | Cells attracted |
 |---|---|---|
@@ -1804,7 +1802,7 @@ Genetic deficiencies in leukocyte adhesion molecules result in increased suscept
 
 ## What are phagocytes?
 
-**Say this first:** Phagocytes are cells capable of ingesting and destroying microbes, dead cells and foreign particles; the two professional phagocytes are neutrophils and macrophages.
+Phagocytes are cells capable of ingesting and destroying microbes, dead cells and foreign particles; the two professional phagocytes are neutrophils and macrophages.
 
 Neutrophils (polymorphonuclear leukocytes, or "microphages") are the first phagocytes recruited to acute inflammation and are short-lived. Macrophages, derived from circulating monocytes or from embryonic yolk-sac and foetal liver precursors, are the long-lived "macrophages" of the mononuclear phagocyte system. The two cell types share phagocytosis, migration through vessels and chemotaxis, but differ in several respects:
 
@@ -1824,7 +1822,7 @@ Eosinophils and dendritic cells have limited phagocytic functions. Phagocytes re
 
 ## Organs where cells of the MPS are found.
 
-**Say this first:** Cells of the mononuclear phagocyte system are found in the liver as Kupffer cells, in the spleen and lymph nodes as sinus histiocytes, in the central nervous system as microglia, in the lungs as alveolar macrophages, and diffusely in connective tissues.
+Cells of the mononuclear phagocyte system are found in the liver as Kupffer cells, in the spleen and lymph nodes as sinus histiocytes, in the central nervous system as microglia, in the lungs as alveolar macrophages, and diffusely in connective tissues.
 
 The mononuclear phagocyte system, an older (and inaccurate) name for which is the reticuloendothelial system, consists of monocytes and tissue macrophages. Macrophages are diffusely scattered in most connective tissue and are present in specific locations in organs:
 
@@ -1845,14 +1843,14 @@ Microglia, Kupffer cells and alveolar macrophages arise from yolk-sac or foetal 
 
 ## Define phagocytosis.
 
-**Say this first:** Phagocytosis is the process by which phagocytic cells, mainly neutrophils and macrophages, recognise, engulf and destroy microbes, dead cells and other particulate material by enclosing them in a membrane-bound vesicle (phagosome) that fuses with lysosomes.
+Phagocytosis is the process by which phagocytic cells, mainly neutrophils and macrophages, recognise, engulf and destroy microbes, dead cells and other particulate material by enclosing them in a membrane-bound vesicle (phagosome) that fuses with lysosomes.
 
 Phagocytosis was discovered by Elie Metchnikoff in the 1880s, who observed the ingestion of rose thorns by amoebocytes of starfish larvae and of bacteria by mammalian leukocytes. It is, together with intracellular killing, the most important functional response of activated leukocytes for destroying microbes and removing necrotic tissue. It involves three sequential steps: (1) recognition and attachment of the particle to the leukocyte, (2) engulfment with formation of a phagocytic vacuole, and (3) killing of the microbe and degradation of the ingested material in the phagolysosome. The efficiency of the process is greatly enhanced by opsonins (IgG, C3b and plasma lectins) for which phagocytes express high-affinity receptors. Killing depends on reactive oxygen species, reactive nitrogen species and lysosomal enzymes, all of which are sequestered within the phagolysosome to protect the phagocyte itself.
 
 
 ## Three sequential steps of phagocytosis.
 
-**Say this first:** The three sequential steps of phagocytosis are recognition and attachment of the particle to the phagocyte, engulfment with formation of a phagocytic vacuole, and killing and degradation of the ingested material.
+The three sequential steps of phagocytosis are recognition and attachment of the particle to the phagocyte, engulfment with formation of a phagocytic vacuole, and killing and degradation of the ingested material.
 
 1. **Recognition and attachment.** Phagocytes bind particles through receptors: the mannose receptor (a lectin binding terminal mannose and fucose of microbial glycoproteins and glycolipids, but not host molecules, which end in sialic acid), scavenger receptors, and macrophage integrins such as MAC-1. Binding is greatly enhanced by opsonins, which are IgG antibodies, the complement fragment C3b (and iC3b), and plasma lectins such as mannose-binding lectin and collectins, recognised by Fc receptors, complement receptors and lectin receptors.
 2. **Engulfment.** After binding, cytoplasmic extensions flow around the particle and the plasma membrane pinches off to form an intracellular vesicle, the phagosome. This involves actin polymerisation and membrane remodelling. The phagosome fuses with a lysosomal granule to form a phagolysosome, into which the lysosomal contents are discharged.
@@ -1861,7 +1859,7 @@ Phagocytosis was discovered by Elie Metchnikoff in the 1880s, who observed the i
 
 ## How is phagocytosed material degraded?
 
-**Say this first:** Phagocytosed material is degraded in the phagolysosome by reactive oxygen species generated by phagocyte oxidase and myeloperoxidase, by reactive nitrogen species derived from nitric oxide, and by lysosomal enzymes and antimicrobial proteins.
+Phagocytosed material is degraded in the phagolysosome by reactive oxygen species generated by phagocyte oxidase and myeloperoxidase, by reactive nitrogen species derived from nitric oxide, and by lysosomal enzymes and antimicrobial proteins.
 
 Killing and digestion are most efficient after phagocyte activation, and all the lethal mechanisms are normally sequestered in lysosomes, so that the cell's cytoplasm and nucleus are protected.
 
@@ -1872,7 +1870,7 @@ Killing and digestion are most efficient after phagocyte activation, and all the
 
 ## Outline of the oxygen-dependent mechanism of bacterial killing.
 
-**Say this first:** In the oxygen-dependent mechanism, activated phagocytes assemble NADPH oxidase, which converts oxygen to superoxide in the respiratory burst; superoxide is converted to hydrogen peroxide, and myeloperoxidase converts H₂O₂ with chloride to hypochlorite, which kills the bacterium.
+In the oxygen-dependent mechanism, activated phagocytes assemble NADPH oxidase, which converts oxygen to superoxide in the respiratory burst; superoxide is converted to hydrogen peroxide, and myeloperoxidase converts H₂O₂ with chloride to hypochlorite, which kills the bacterium.
 
 Activation of the phagocyte causes the cytosolic components of phagocyte oxidase to translocate to the phagosomal membrane, where they assemble with the membrane components. The assembled enzyme oxidises NADPH and reduces molecular oxygen to superoxide anion (O₂•⁻), accompanied by a burst of oxygen consumption (the respiratory burst) in neutrophils. Superoxide dismutes, mostly spontaneously, to H₂O₂. H₂O₂ alone is not an efficient killer, but azurophil granules fuse with the phagosome and deliver myeloperoxidase, which in the presence of a halide such as chloride converts H₂O₂ to hypochlorite (ClO⁻). This kills microbes by halogenation of cell constituents and by oxidation of proteins and lipids (lipid peroxidation). H₂O₂ is also converted to hydroxyl radical. Inherited deficiency of phagocyte oxidase components causes chronic granulomatous disease, with recurrent infection.
 
@@ -1953,7 +1951,7 @@ Opsonins are molecules that coat microbes or other particles and make them more 
 
 ## Name the chemical mediators of inflammation.
 
-**Say this first:** The chemical mediators of inflammation are either cell-derived (vasoactive amines such as histamine and serotonin, arachidonic acid metabolites, platelet-activating factor, cytokines and chemokines, reactive oxygen species, nitric oxide, lysosomal enzymes, neuropeptides) or plasma-derived (the complement system, kinins and the coagulation system).
+The chemical mediators of inflammation are either cell-derived (vasoactive amines such as histamine and serotonin, arachidonic acid metabolites, platelet-activating factor, cytokines and chemokines, reactive oxygen species, nitric oxide, lysosomal enzymes, neuropeptides) or plasma-derived (the complement system, kinins and the coagulation system).
 
 The most important mediators of acute inflammation are vasoactive amines, lipid products (prostaglandins and leukotrienes), cytokines including chemokines, and products of complement activation.
 
@@ -1975,7 +1973,7 @@ The most important mediators of acute inflammation are vasoactive amines, lipid 
 
 ## General principles of action of chemical mediators.
 
-**Say this first:** Mediators are produced only in response to offending stimuli, are either cell-derived or plasma-derived, usually act briefly, and can stimulate the release of other mediators, with considerable redundancy in their actions.
+Mediators are produced only in response to offending stimuli, are either cell-derived or plasma-derived, usually act briefly, and can stimulate the release of other mediators, with considerable redundancy in their actions.
 
 1. The vascular and cellular reactions are triggered by soluble factors that are produced by cells or derived from plasma proteins, and are generated or activated in response to the inflammatory stimulus.
 2. **Cell-derived mediators** are sequestered in intracellular granules and rapidly secreted by exocytosis (for example histamine in mast cell granules), or synthesised de novo (prostaglandins, leukotrienes, cytokines). The main producers are sentinel cells (macrophages, dendritic cells, mast cells), but platelets, neutrophils, endothelium and epithelia may also elaborate them.
@@ -1989,7 +1987,7 @@ The most important mediators of acute inflammation are vasoactive amines, lipid 
 
 ## Principal actions of arachidonic acid metabolites.
 
-**Say this first:** Arachidonic acid metabolites (eicosanoids) are produced by cyclooxygenases (prostaglandins and thromboxane) and lipoxygenases (leukotrienes and lipoxins); prostaglandins cause vasodilation, pain and fever, leukotrienes cause chemotaxis, increased permeability and bronchospasm, and lipoxins inhibit inflammation.
+Arachidonic acid metabolites (eicosanoids) are produced by cyclooxygenases (prostaglandins and thromboxane) and lipoxygenases (leukotrienes and lipoxins); prostaglandins cause vasodilation, pain and fever, leukotrienes cause chemotaxis, increased permeability and bronchospasm, and lipoxins inhibit inflammation.
 
 Arachidonic acid (AA), a 20-carbon polyunsaturated fatty acid, is released from membrane phospholipids by phospholipase A₂ in response to mechanical, chemical or physical stimuli or mediators such as C5a. It is metabolised along two pathways.
 
@@ -2009,7 +2007,7 @@ COX-1 is constitutive (gastric cytoprotection, renal function), while COX-2 is i
 
 ## Name some important cytokines in inflammation.
 
-**Say this first:** The important cytokines in acute inflammation are TNF, IL-1, IL-6, chemokines such as IL-8, and IL-17; in chronic inflammation IL-12 and IFN-γ are prominent, and IL-10 and TGF-β are anti-inflammatory.
+The important cytokines in acute inflammation are TNF, IL-1, IL-6, chemokines such as IL-8, and IL-17; in chronic inflammation IL-12 and IFN-γ are prominent, and IL-10 and TGF-β are anti-inflammatory.
 
 | Cytokine | Principal sources | Principal actions in inflammation |
 |---|---|---|
@@ -2026,7 +2024,7 @@ COX-1 is constitutive (gastric cytoprotection, renal function), while COX-2 is i
 
 ## Write the functions of vasoactive amines.
 
-**Say this first:** The vasoactive amines are histamine and serotonin; they are preformed and stored in cells, so they are among the first mediators released, and they cause vasodilation and increased vascular permeability, with histamine the principal mediator of the immediate transient phase of increased permeability.
+The vasoactive amines are histamine and serotonin; they are preformed and stored in cells, so they are among the first mediators released, and they cause vasodilation and increased vascular permeability, with histamine the principal mediator of the immediate transient phase of increased permeability.
 
 **Sources.** Histamine is richest in mast cells located in connective tissue adjacent to blood vessels, and is also found in basophils and platelets. Serotonin (5-hydroxytryptamine) is present in platelets and in neuroendocrine cells such as those in the gastrointestinal tract, where its primary function is as a neurotransmitter.
 
@@ -2044,7 +2042,7 @@ COX-1 is constitutive (gastric cytoprotection, renal function), while COX-2 is i
 
 ## How is the complement system activated?
 
-**Say this first:** The complement system is activated by three pathways, classical (antigen-bound IgM or IgG), alternative (microbial surfaces without antibody) and lectin (mannose-binding lectin), all of which converge on C3 convertase, which cleaves C3 into C3a and C3b; C3b leads to C5 convertase, and the late components form the membrane attack complex.
+The complement system is activated by three pathways, classical (antigen-bound IgM or IgG), alternative (microbial surfaces without antibody) and lectin (mannose-binding lectin), all of which converge on C3 convertase, which cleaves C3 into C3a and C3b; C3b leads to C5 convertase, and the late components form the membrane attack complex.
 
 The complement system consists of more than 20 plasma proteins, some numbered C1 to C9, present as inactive precursors and activated in an enzymatic cascade capable of great amplification. The critical step is proteolysis of C3, the most abundant component.
 
@@ -2150,7 +2148,7 @@ Activation of the complement system through the classical, alternative or lectin
 
 ## Morphological types / patterns of acute inflammation.
 
-**Say this first:** The morphological patterns of acute inflammation are serous, fibrinous, purulent (suppurative, including abscess) and ulcerative inflammation.
+The morphological patterns of acute inflammation are serous, fibrinous, purulent (suppurative, including abscess) and ulcerative inflammation.
 
 The morphological hallmarks of acute inflammation are dilation of small blood vessels and accumulation of leukocytes and fluid in the extravascular tissue, but special patterns are superimposed depending on the severity of the reaction, its aetiology and the tissue involved. Recognising these patterns often provides clues to the underlying cause.
 
@@ -2166,7 +2164,7 @@ Other descriptive terms used in practice include catarrhal (mucous), pseudomembr
 
 ## One example of each morphological type.
 
-**Say this first:** Serous inflammation is exemplified by a skin blister from a burn; fibrinous inflammation by fibrinous pericarditis; purulent inflammation by acute appendicitis or an abscess; and ulcerative inflammation by a peptic ulcer.
+Serous inflammation is exemplified by a skin blister from a burn; fibrinous inflammation by fibrinous pericarditis; purulent inflammation by acute appendicitis or an abscess; and ulcerative inflammation by a peptic ulcer.
 
 - **Serous:** a skin blister due to a burn or viral infection, with fluid accumulating beneath the epidermis; effusions in the pleural, pericardial or peritoneal cavity from irritation.
 - **Fibrinous:** fibrinous pericarditis (bread-and-butter appearance), fibrinous pleuritis, and meningitis; the lining of body cavities is characteristically involved.
@@ -2176,14 +2174,14 @@ Other descriptive terms used in practice include catarrhal (mucous), pseudomembr
 
 ## What is an ulcer?
 
-**Say this first:** An ulcer is a local defect or excavation of the surface of an organ or tissue, produced by the sloughing of inflamed necrotic tissue.
+An ulcer is a local defect or excavation of the surface of an organ or tissue, produced by the sloughing of inflamed necrotic tissue.
 
 Ulceration can occur only when tissue necrosis and resultant inflammation exist on or near a surface. It is most common in (1) the mucosa of the mouth, stomach, intestines and genitourinary tract, and (2) the skin and subcutaneous tissue of the lower extremities in individuals with disorders that predispose to vascular insufficiency, such as diabetes, sickle cell anaemia and peripheral vascular disease. Ulcers are best exemplified by peptic ulcer of the stomach or duodenum, in which acute and chronic inflammation coexist: in the acute stage there is intense polymorphonuclear infiltration and vascular dilation at the margins of the defect, and with chronicity the margins and base develop fibroblastic proliferation, scarring, and accumulation of lymphocytes, macrophages and plasma cells. An ulcer may be considered as a discontinuity in an epithelium with underlying acute and chronic inflammation. Chronic ulcers of the leg include venous, arterial, diabetic ulcers and pressure sores.
 
 
 ## Define abscess.
 
-**Say this first:** Abscesses are localised collections of pus caused by suppuration buried in a tissue, an organ, or a confined space; they are produced by seeding of pyogenic bacteria into a tissue.
+Abscesses are localised collections of pus caused by suppuration buried in a tissue, an organ, or a confined space; they are produced by seeding of pyogenic bacteria into a tissue.
 
 Pus is an exudate of neutrophils, the liquefied debris of necrotic cells, and oedema fluid. It is produced when infection with pyogenic bacteria, such as staphylococci, causes liquefactive necrosis. The abscess has a central liquefied region composed of necrotic leukocytes and tissue cells, a zone of preserved neutrophils around this focus, and, outside this, vascular dilation with parenchymal and fibroblastic proliferation indicating chronic inflammation and repair. In time the abscess may be walled off by a fibrous capsule (pyogenic membrane) and ultimately replaced by connective tissue. The fate of an abscess includes rupture and drainage with healing, formation of a sinus or fistula, spread, or chronic abscess formation with scarring and, occasionally, calcification. Abscesses are treated by drainage and antibiotics, since antibiotics penetrate the avascular pus poorly.
 
@@ -2203,7 +2201,7 @@ The morphological hallmarks of acute inflammation are dilation of small vessels 
 
 ## Beneficial effects of acute inflammation.
 
-**Say this first:** Acute inflammation is beneficial because it delivers leukocytes, antibodies, complement and fibrin to the site of injury, dilutes toxins, destroys microbes and necrotic tissue, and initiates repair.
+Acute inflammation is beneficial because it delivers leukocytes, antibodies, complement and fibrin to the site of injury, dilutes toxins, destroys microbes and necrotic tissue, and initiates repair.
 
 - **Dilution of toxins** by oedema fluid, and delivery of plasma proteins (antibodies, complement, clotting factors) to the injured site.
 - **Fibrin formation**, which forms a meshwork that traps microbes, limits spread and provides a scaffold for repair.
@@ -2217,7 +2215,7 @@ Without inflammation, infections would go unchecked and wounds would never heal.
 
 ## Harmful effects of acute inflammation.
 
-**Say this first:** The harmful effects of acute inflammation include tissue damage from leukocyte enzymes and oxygen radicals, swelling of vital structures in confined spaces, scarring and adhesions, fluid loss, and systemic effects such as septic shock.
+The harmful effects of acute inflammation include tissue damage from leukocyte enzymes and oxygen radicals, swelling of vital structures in confined spaces, scarring and adhesions, fluid loss, and systemic effects such as septic shock.
 
 - **Digestion and injury of normal tissue** by lysosomal enzymes and reactive oxygen species of leukocytes released into the extracellular space.
 - **Swelling in vital or confined areas:** oedema of the epiglottis may obstruct the airway; brain oedema in meningitis may raise intracranial pressure and cause herniation.
@@ -2230,7 +2228,7 @@ Without inflammation, infections would go unchecked and wounds would never heal.
 
 ## Outcomes of acute inflammation.
 
-**Say this first:** Acute inflammation has three possible outcomes: complete resolution, healing by connective tissue replacement (scarring or fibrosis), or progression to chronic inflammation.
+Acute inflammation has three possible outcomes: complete resolution, healing by connective tissue replacement (scarring or fibrosis), or progression to chronic inflammation.
 
 1. **Complete resolution.** The site is restored to normal. This is the usual outcome when injury is limited or short-lived, there has been little tissue destruction, and the damaged parenchymal cells can regenerate.
 2. **Healing by connective tissue replacement (scarring/fibrosis).** This follows substantial tissue destruction, injury to tissues incapable of regeneration, or abundant fibrin exudation in tissue or serous cavities that cannot be adequately cleared. Connective tissue grows into the area of damage or exudate and converts it into a mass of fibrous tissue, a process called organisation.
@@ -2241,7 +2239,7 @@ Abscess formation is a pattern of purulent inflammation that may drain, heal by 
 
 ## How does (complete) resolution occur?
 
-**Say this first:** Complete resolution occurs when the injurious agent is removed, mediators are neutralised and leukocyte emigration stops, macrophages clear debris and microbes, lymphatics reabsorb oedema fluid, and the damaged tissue regenerates.
+Complete resolution occurs when the injurious agent is removed, mediators are neutralised and leukocyte emigration stops, macrophages clear debris and microbes, lymphatics reabsorb oedema fluid, and the damaged tissue regenerates.
 
 Resolution is favoured when the injury is limited or brief, tissue destruction is slight, and the parenchymal cells are capable of regeneration (labile and stable cells). The sequence is as follows:
 
@@ -2256,7 +2254,7 @@ Resolution is favoured when the injury is limited or brief, tissue destruction i
 
 ## What are the systemic effects of inflammation?
 
-**Say this first:** The systemic effects of inflammation, mediated by cytokines (TNF, IL-1, IL-6), include fever, leukocytosis, the acute-phase response with elevated acute-phase proteins such as CRP, and, in severe infection, septic shock.
+The systemic effects of inflammation, mediated by cytokines (TNF, IL-1, IL-6), include fever, leukocytosis, the acute-phase response with elevated acute-phase proteins such as CRP, and, in severe infection, septic shock.
 
 Even localised inflammation is associated with cytokine-induced systemic reactions, as anyone who has had influenza will recognise.
 
@@ -2273,7 +2271,7 @@ Even localised inflammation is associated with cytokine-induced systemic reactio
 
 ## Common investigations usually done in inflammatory conditions.
 
-**Say this first:** The common investigations in inflammation are a complete blood count with differential leukocyte count, ESR and C-reactive protein, culture and Gram stain of pus or blood, and, where needed, imaging and histopathology.
+The common investigations in inflammation are a complete blood count with differential leukocyte count, ESR and C-reactive protein, culture and Gram stain of pus or blood, and, where needed, imaging and histopathology.
 
 The tests reflect the systemic response and identify the cause:
 
@@ -2291,14 +2289,14 @@ The tests reflect the systemic response and identify the cause:
 
 ## Define chronic inflammation.
 
-**Say this first:** Chronic inflammation is a prolonged host response to persistent stimuli, in which inflammation, tissue injury and attempts at repair coexist.
+Chronic inflammation is a prolonged host response to persistent stimuli, in which inflammation, tissue injury and attempts at repair coexist.
 
 It may follow acute inflammation or may begin insidiously, as a prolonged response without a preceding acute reaction. It is a response to agents that are difficult to eradicate, such as tubercle bacilli, certain viruses, fungi and parasites, and to self antigens and environmental antigens. It is characterised by infiltration with mononuclear cells (macrophages, lymphocytes and plasma cells), tissue destruction induced by the persistent agent or the inflammatory cells, and attempts at healing by connective tissue replacement through angiogenesis and fibrosis.
 
 
 ## Causes of chronic inflammation.
 
-**Say this first:** Chronic inflammation arises from persistent infections by organisms difficult to eradicate, immune-mediated diseases (autoimmune and allergic), prolonged exposure to toxic agents, and unresolved acute inflammation.
+Chronic inflammation arises from persistent infections by organisms difficult to eradicate, immune-mediated diseases (autoimmune and allergic), prolonged exposure to toxic agents, and unresolved acute inflammation.
 
 1. **Persistent infections** by microorganisms that are difficult to eradicate, such as mycobacteria and certain viruses, fungi and parasites. These often evoke a T-lymphocyte reaction, delayed-type hypersensitivity, and sometimes a granulomatous reaction. Unresolved acute inflammation, such as a lung abscess following bacterial pneumonia, may evolve into chronic inflammation.
 2. **Hypersensitivity (immune-mediated) diseases**, in which immune responses develop against the individual's own tissues (autoimmune diseases such as rheumatoid arthritis and multiple sclerosis), against microbes in an unregulated way (inflammatory bowel disease), or against common environmental substances (bronchial asthma). Repeated bouts of inflammation produce mixed acute and chronic patterns, with fibrosis in the late stage.
@@ -2309,7 +2307,7 @@ Foreign bodies that persist impede healing by perpetuating chronic inflammation.
 
 ## Morphological features of chronic inflammation.
 
-**Say this first:** Chronic inflammation shows infiltration by mononuclear cells (macrophages, lymphocytes, plasma cells), tissue destruction, and attempts at healing by angiogenesis and fibrosis.
+Chronic inflammation shows infiltration by mononuclear cells (macrophages, lymphocytes, plasma cells), tissue destruction, and attempts at healing by angiogenesis and fibrosis.
 
 In contrast to acute inflammation, which is manifested by vascular changes, oedema and neutrophilic infiltration, chronic inflammation is characterised by:
 
@@ -2322,7 +2320,7 @@ Granulomatous inflammation, with epithelioid cells, giant cells and often necros
 
 ## Common examples of chronic inflammation.
 
-**Say this first:** Common examples of chronic inflammation are tuberculosis, leprosy, chronic osteomyelitis, rheumatoid arthritis, chronic peptic ulcer, inflammatory bowel disease, silicosis and atherosclerosis.
+Common examples of chronic inflammation are tuberculosis, leprosy, chronic osteomyelitis, rheumatoid arthritis, chronic peptic ulcer, inflammatory bowel disease, silicosis and atherosclerosis.
 
 - **Chronic infections:** tuberculosis, leprosy, syphilis, chronic osteomyelitis, chronic lung abscess, chronic viral hepatitis, fungal infections.
 - **Immune-mediated:** rheumatoid arthritis, multiple sclerosis, Hashimoto thyroiditis, Crohn disease and ulcerative colitis, bronchial asthma (chronic form), psoriasis.
@@ -2333,7 +2331,7 @@ Granulomatous inflammation, with epithelioid cells, giant cells and often necros
 
 ## Macrophage is the central cell of chronic inflammation / role of macrophage in chronic inflammation.
 
-**Say this first:** The macrophage is the dominant cell of chronic inflammation because it phagocytoses microbes and dead tissue, secretes cytokines and growth factors, presents antigen to T cells and interacts with them in a self-perpetuating cycle, and initiates repair and fibrosis, but the same products cause tissue destruction.
+The macrophage is the dominant cell of chronic inflammation because it phagocytoses microbes and dead tissue, secretes cytokines and growth factors, presents antigen to T cells and interacts with them in a self-perpetuating cycle, and initiates repair and fibrosis, but the same products cause tissue destruction.
 
 **Origin.** Macrophages are tissue cells derived from bone-marrow haematopoietic stem cells (via blood monocytes, which have a half-life of about 1 day) in postnatal life and, for tissue-resident populations such as Kupffer cells, microglia and alveolar macrophages, from yolk-sac and foetal liver progenitors in embryonic life. Tissue macrophages live months to years. In inflammation monocytes emigrate early, and within 48 hours may predominate. Macrophage accumulation persists through continuous recruitment and local proliferation.
 
@@ -2359,7 +2357,7 @@ In reality most reactions contain both types, and intermediate phenotypes exist.
 
 ## Define granuloma with an example.
 
-**Say this first:** A granuloma is a focal collection of activated macrophages (epithelioid cells), usually with a surrounding collar of lymphocytes and often with multinucleate giant cells and sometimes central necrosis, formed as a cellular attempt to contain an agent that is difficult to eradicate; the classic example is the tubercle of tuberculosis.
+A granuloma is a focal collection of activated macrophages (epithelioid cells), usually with a surrounding collar of lymphocytes and often with multinucleate giant cells and sometimes central necrosis, formed as a cellular attempt to contain an agent that is difficult to eradicate; the classic example is the tubercle of tuberculosis.
 
 Granulomatous inflammation is a form of chronic inflammation characterised by collections of activated macrophages, often with T lymphocytes, and sometimes associated with necrosis. The name derives from the granular macroscopic appearance of the foci. It represents an attempt to wall off an offending agent that is resistant to eradication, and involves strong activation of macrophages and T lymphocytes, which can injure normal tissue.
 
@@ -2370,7 +2368,7 @@ Granulomatous inflammation is a form of chronic inflammation characterised by co
 
 ## How is a granuloma formed?
 
-**Say this first:** A granuloma forms when a persistent antigen or inert foreign body cannot be eliminated; in immune granulomas, antigen-presenting macrophages activate CD4⁺ T cells, which secrete IFN-γ that further activates macrophages, transforming them into epithelioid cells and giant cells.
+A granuloma forms when a persistent antigen or inert foreign body cannot be eliminated; in immune granulomas, antigen-presenting macrophages activate CD4⁺ T cells, which secrete IFN-γ that further activates macrophages, transforming them into epithelioid cells and giant cells.
 
 1. A persistent microbe or other chronic stimulus is engulfed by macrophages and dendritic cells, which present its antigens to T cells.
 2. Macrophages secrete IL-12 (and other cytokines), which drives Th1 differentiation.
@@ -2384,7 +2382,7 @@ In foreign-body granulomas, macrophages cannot ingest a large inert particle (ta
 
 ## Types of granuloma.
 
-**Say this first:** There are two types of granuloma: foreign-body granulomas, which form around inert material without T-cell involvement, and immune granulomas, which result from persistent T cell-mediated immune responses.
+There are two types of granuloma: foreign-body granulomas, which form around inert material without T-cell involvement, and immune granulomas, which result from persistent T cell-mediated immune responses.
 
 | | Foreign-body granuloma | Immune granuloma |
 |---|---|---|
@@ -2397,7 +2395,7 @@ Granulomas are also divided morphologically into caseating (tuberculosis) and no
 
 ## Examples of granulomatous inflammation.
 
-**Say this first:** Examples of granulomatous inflammation are tuberculosis, leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease, as well as foreign-body reactions and schistosomiasis.
+Examples of granulomatous inflammation are tuberculosis, leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease, as well as foreign-body reactions and schistosomiasis.
 
 | Disease | Aetiology | Tissue reaction |
 |---|---|---|
@@ -2415,7 +2413,7 @@ Tuberculosis should always be excluded when granulomas are seen.
 
 ## Morphological features of chronic granulomatous inflammation.
 
-**Say this first:** Chronic granulomatous inflammation shows aggregates of epithelioid macrophages with multinucleate giant cells, surrounded by a collar of lymphocytes and sometimes a rim of fibroblasts, with central caseous necrosis in tuberculosis.
+Chronic granulomatous inflammation shows aggregates of epithelioid macrophages with multinucleate giant cells, surrounded by a collar of lymphocytes and sometimes a rim of fibroblasts, with central caseous necrosis in tuberculosis.
 
 - **Grossly,** the foci are granular; caseous necrosis has a granular, cheesy appearance.
 - **Epithelioid cells:** activated macrophages with pink granular cytoplasm and indistinct cell boundaries.
@@ -2516,14 +2514,14 @@ The same immune response that controls the infection causes tissue destruction t
 
 ## Define a giant cell.
 
-**Say this first:** A giant cell is a large multinucleate cell; inflammatory giant cells are formed by the fusion of activated macrophages in granulomatous inflammation.
+A giant cell is a large multinucleate cell; inflammatory giant cells are formed by the fusion of activated macrophages in granulomatous inflammation.
 
 They are seen in granulomas and contain a large mass of cytoplasm and many nuclei. Langhans giant cells, 40 to 50 μm across, derive from the fusion of multiple activated macrophages. Other physiological multinucleate cells include osteoclasts and syncytiotrophoblast, and giant cells may be seen in some tumours, but the term "inflammatory giant cell" refers to those derived from macrophages.
 
 
 ## Names / types of inflammatory giant cells with examples.
 
-**Say this first:** The main inflammatory giant cells are the Langhans type, with nuclei arranged at the periphery in a horseshoe, seen in tuberculosis, and the foreign-body type, with randomly scattered nuclei, seen in foreign-body granulomas; Touton giant cells are seen in lipid-rich lesions.
+The main inflammatory giant cells are the Langhans type, with nuclei arranged at the periphery in a horseshoe, seen in tuberculosis, and the foreign-body type, with randomly scattered nuclei, seen in foreign-body granulomas; Touton giant cells are seen in lipid-rich lesions.
 
 | Type | Nuclear arrangement | Examples |
 |---|---|---|
@@ -2536,7 +2534,7 @@ They are seen in granulomas and contain a large mass of cytoplasm and many nucle
 
 ## How are inflammatory giant cells formed?
 
-**Say this first:** Inflammatory giant cells form by fusion of multiple activated macrophages (epithelioid cells) under the influence of cytokines, in response to persistent stimuli that cannot be phagocytosed.
+Inflammatory giant cells form by fusion of multiple activated macrophages (epithelioid cells) under the influence of cytokines, in response to persistent stimuli that cannot be phagocytosed.
 
 Monocytes recruited to a site of chronic inflammation differentiate into macrophages, which, when strongly and persistently activated by IFN-γ from Th1 cells (or by other cytokines such as IL-4 and IL-13 in foreign-body reactions), become epithelioid cells with abundant cytoplasm. Some of these cells fuse, through membrane fusion proteins, to form multinucleate giant cells. The stimulus is a large indigestible particle or a persistent microbe (frustrated phagocytosis), which the macrophage cannot engulf singly. The nuclei result from fusion of cells, not from nuclear division without cytokinesis. The giant cell has a large mass of cytoplasm and many nuclei, and in foreign-body granulomas the foreign material may be seen within the giant cell. In tuberculosis the peripheral arrangement of nuclei gives the Langhans pattern; in foreign-body reactions the nuclei are randomly distributed.
 
@@ -2547,21 +2545,21 @@ Monocytes recruited to a site of chronic inflammation differentiate into macroph
 
 ## Define regeneration.
 
-**Say this first:** Regeneration is the process by which some tissues replace the damaged components and essentially return to a normal state, by proliferation of surviving cells or from tissue stem cells.
+Regeneration is the process by which some tissues replace the damaged components and essentially return to a normal state, by proliferation of surviving cells or from tissue stem cells.
 
 Some tissues can replace the damaged components and essentially return to a normal state. Regeneration may occur by proliferation of differentiated cells that survive the injury and retain the capacity to proliferate, such as hepatocytes in the liver, or, particularly in the epithelia of the skin and intestines, by tissue stem cells and their progenitors, which live in specialised niches. It is driven by growth factors and depends critically on the integrity of the extracellular matrix. Regeneration occurs readily in labile tissues (as long as the stem cell pool is preserved) and in stable tissues (the liver being the model), but mammals have a limited capacity to regenerate most organs.
 
 
 ## Define repair.
 
-**Say this first:** Repair, also called healing, is the restoration of tissue architecture and function after injury, which occurs by regeneration of the parenchymal cells and by scarring, the deposition of connective tissue.
+Repair, also called healing, is the restoration of tissue architecture and function after injury, which occurs by regeneration of the parenchymal cells and by scarring, the deposition of connective tissue.
 
 Repair is the response that follows inflammation, and the inflammatory response to microbes and injured tissue sets repair in motion. If the injured tissue is incapable of regeneration, or if the supporting framework is damaged, repair occurs by laying down fibrous tissue (scar). A fibrous scar is not normal tissue, but it usually gives enough structural stability for the tissue to function. In most injuries both regeneration and scarring contribute in varying degrees. Both processes involve cell proliferation and close interactions between cells and extracellular matrix.
 
 
 ## What is healing?
 
-**Say this first:** Healing is the body's response to injury in which damaged tissue is restored by regeneration of surviving cells and by filling of the defect with connective tissue (scar), so as to restore the integrity and function of the tissue; by convention "repair" is used for parenchyma and connective tissue and "healing" for surface epithelia, but the terms are used interchangeably.
+Healing is the body's response to injury in which damaged tissue is restored by regeneration of surviving cells and by filling of the defect with connective tissue (scar), so as to restore the integrity and function of the tissue; by convention "repair" is used for parenchyma and connective tissue and "healing" for surface epithelia, but the terms are used interchangeably.
 
 Healing is critical to survival. The sequence in skin wounds, which is the best-studied model, includes:
 
@@ -2574,7 +2572,7 @@ Wounds heal by first intention (primary union) if clean and approximated, with e
 
 ## Types of cells on the basis of regenerating capability, with examples.
 
-**Say this first:** On the basis of regenerative capacity, cells are divided into labile (continuously dividing), stable (quiescent) and permanent (non-dividing) cells.
+On the basis of regenerative capacity, cells are divided into labile (continuously dividing), stable (quiescent) and permanent (non-dividing) cells.
 
 | Type | Behaviour | Examples |
 |---|---|---|
@@ -2600,7 +2598,7 @@ Wounds heal by first intention (primary union) if clean and approximated, with e
 
 ## What is granulation tissue?
 
-**Say this first:** Granulation tissue is formed by migration and proliferation of fibroblasts and deposition of loose connective tissue, together with new thin-walled vessels and interspersed mononuclear leukocytes, during healing; it is not to be confused with a granuloma.
+Granulation tissue is formed by migration and proliferation of fibroblasts and deposition of loose connective tissue, together with new thin-walled vessels and interspersed mononuclear leukocytes, during healing; it is not to be confused with a granuloma.
 
 Granulation tissue is formed by migration and proliferation of fibroblasts and deposition of loose connective tissue, together with the new vessels and interspersed mononuclear leukocytes. The name derives from the pink, soft, granular gross appearance, as seen beneath the scab of a skin wound. The amount formed depends on the size of the defect and the intensity of inflammation.
 
@@ -2615,7 +2613,7 @@ Granulation tissue is formed by migration and proliferation of fibroblasts and d
 
 ## Morphological features of granulation tissue.
 
-**Say this first:** Grossly granulation tissue is pink, soft and granular, and microscopically it shows proliferating fibroblasts and delicate new capillaries in a loose, oedematous matrix with macrophages and other inflammatory cells.
+Grossly granulation tissue is pink, soft and granular, and microscopically it shows proliferating fibroblasts and delicate new capillaries in a loose, oedematous matrix with macrophages and other inflammatory cells.
 
 **Gross:** pink to red, soft, moist, granular surface ("granules" correspond to loops of new capillaries), friable and bleeds easily; painless because it has no nerve fibres; seen beneath a scab or in the floor of an ulcer.
 
@@ -2630,14 +2628,14 @@ Granulation tissue is formed by migration and proliferation of fibroblasts and d
 
 ## Define wound healing.
 
-**Say this first:** Wound healing is the complex, orderly process by which an injured tissue, most commonly skin, repairs itself through haemostasis and inflammation, cell proliferation with granulation tissue formation, and deposition and remodelling of connective tissue.
+Wound healing is the complex, orderly process by which an injured tissue, most commonly skin, repairs itself through haemostasis and inflammation, cell proliferation with granulation tissue formation, and deposition and remodelling of connective tissue.
 
 Skin wound healing illustrates the principles of repair by regeneration and scarring because it can be observed and defined precisely. The main phases are inflammation, formation of granulation tissue (epithelial migration, angiogenesis, fibroblast proliferation), and extracellular matrix remodelling. It is orchestrated by growth factors and cytokines from platelets, macrophages and other cells, and the final result is a fibrous scar covered by epithelium. Healing may occur by primary or secondary union.
 
 
 ## Classify wound healing.
 
-**Say this first:** Skin wound healing is classified into healing by first intention (primary union) and healing by second intention (secondary union), according to the extent of tissue injury and the dominant mechanism of healing.
+Skin wound healing is classified into healing by first intention (primary union) and healing by second intention (secondary union), according to the extent of tissue injury and the dominant mechanism of healing.
 
 | Feature | First intention (primary union) | Second intention (secondary union) |
 |---|---|---|
@@ -2655,7 +2653,7 @@ Third intention (delayed primary closure) refers to closure of a wound by suturi
 
 ## Factors that influence wound healing / tissue repair.
 
-**Say this first:** Wound healing is influenced by local and systemic factors: infection, diabetes, glucocorticoids, nutritional deficiency (protein and vitamin C), ageing, poor perfusion, mechanical factors, foreign bodies, and the type and location of the injury.
+Wound healing is influenced by local and systemic factors: infection, diabetes, glucocorticoids, nutritional deficiency (protein and vitamin C), ageing, poor perfusion, mechanical factors, foreign bodies, and the type and location of the injury.
 
 Variables that modify repair may be extrinsic or intrinsic to the injured tissue, and local or systemic:
 
@@ -2673,7 +2671,7 @@ Variables that modify repair may be extrinsic or intrinsic to the injured tissue
 
 ## Mention the complications of wound healing.
 
-**Say this first:** The complications of wound healing include defective healing (chronic wounds, infection, dehiscence), excessive scarring (hypertrophic scar, keloid, exuberant granulation), and contracture; other complications are haematoma, adhesions, fistula or sinus, traumatic neuroma, implantation cyst and malignant change.
+The complications of wound healing include defective healing (chronic wounds, infection, dehiscence), excessive scarring (hypertrophic scar, keloid, exuberant granulation), and contracture; other complications are haematoma, adhesions, fistula or sinus, traumatic neuroma, implantation cyst and malignant change.
 
 Complications of tissue repair can arise from abnormalities in any of the basic components of the process: deficient scar formation, excessive formation of the repair components, and formation of contractures.
 
@@ -2701,7 +2699,7 @@ Complications of tissue repair can arise from abnormalities in any of the basic 
 
 ## How does diabetes mellitus impair wound healing?
 
-**Say this first:** Diabetes impairs wound healing by causing vascular disease with ischaemia, neuropathy, increased susceptibility to infection from defective leukocyte function, and impaired growth-factor-driven angiogenesis and collagen synthesis.
+Diabetes impairs wound healing by causing vascular disease with ischaemia, neuropathy, increased susceptibility to infection from defective leukocyte function, and impaired growth-factor-driven angiogenesis and collagen synthesis.
 
 Diabetes is a metabolic disease that compromises tissue repair for many reasons and is one of the most important systemic causes of abnormal wound healing. The mechanisms are:
 
@@ -2714,7 +2712,7 @@ Diabetes is a metabolic disease that compromises tissue repair for many reasons 
 
 ## What is angiogenesis?
 
-**Say this first:** Angiogenesis is the formation of new blood vessels, which in tumours takes the form of neoangiogenesis, the sprouting of new vessels from pre-existing capillaries; it is essential for tumour growth beyond 1 to 2 mm in diameter.
+Angiogenesis is the formation of new blood vessels, which in tumours takes the form of neoangiogenesis, the sprouting of new vessels from pre-existing capillaries; it is essential for tumour growth beyond 1 to 2 mm in diameter.
 
 A solid tumour, even if it carries all the genetic aberrations required for malignant transformation, cannot enlarge beyond 1 to 2 mm unless it can induce a blood supply, since this distance is the maximum across which oxygen, nutrients and waste products can diffuse from existing vessels. Early in their development most tumours do not induce angiogenesis and remain small or in situ, possibly for years, until an "angiogenic switch" terminates this stage of quiescence. Angiogenesis is controlled by a balance between angiogenesis promoters and inhibitors, and in tumours this balance is tilted in favour of the promoters. Angiogenesis is therefore an essential requirement for malignancy.
 
@@ -2803,7 +2801,7 @@ The scar is raised and extends beyond the boundaries of the original incision, w
 
 ## Painful, red, warm swelling (leg in a 15-year-old girl) / pain and swelling in the right inguinal region of a 10-year-old boy for 7 days — Likely diagnosis? Chemical mediators responsible for the signs (pain and swelling)?
 
-**Say this first:** This is acute inflammation, most probably an acute suppurative infection (cellulitis or abscess of the leg, and acute lymphadenitis with possible abscess in the inguinal region), with pain due to prostaglandins, bradykinin and substance P, and swelling due to histamine, bradykinin, leukotrienes and other permeability-increasing mediators.
+This is acute inflammation, most probably an acute suppurative infection (cellulitis or abscess of the leg, and acute lymphadenitis with possible abscess in the inguinal region), with pain due to prostaglandins, bradykinin and substance P, and swelling due to histamine, bradykinin, leukotrienes and other permeability-increasing mediators.
 
 **Diagnosis.** A painful, red, warm swelling is the combination of the cardinal signs of acute inflammation: dolor, rubor, calor and tumour. In the 15-year-old girl, with a swollen leg, the likely diagnosis is acute pyogenic inflammation (cellulitis or an early abscess) due to bacterial infection, usually staphylococcal or streptococcal, through a break in the skin. In the 10-year-old boy with a 7-day painful inguinal swelling, the likely diagnosis is acute (suppurative) lymphadenitis of the inguinal lymph nodes, secondary to infection in the lower limb, perineum or genitalia, which may progress to abscess; the inflamed nodes are enlarged because of hyperplasia of lymphoid follicles and increased numbers of lymphocytes and macrophages, and red streaks of lymphangitis may be visible. An obstructed or strangulated inguinal hernia and acute osteomyelitis would be considered in the differential diagnosis.
 
@@ -2815,7 +2813,7 @@ The scar is raised and extends beyond the boundaries of the original incision, w
 
 ## 8-year-old boy with right iliac fossa pain for 2 days / 15-year-old boy with RIF pain, rebound tenderness and fever — Most probable diagnosis? Expected histological findings? Positive haematological findings expected?
 
-**Say this first:** The most probable diagnosis is acute appendicitis; histology shows neutrophilic infiltration of the muscularis propria with mucosal ulceration and a fibrinopurulent serosal exudate, and the blood shows neutrophilic leukocytosis with a shift to the left.
+The most probable diagnosis is acute appendicitis; histology shows neutrophilic infiltration of the muscularis propria with mucosal ulceration and a fibrinopurulent serosal exudate, and the blood shows neutrophilic leukocytosis with a shift to the left.
 
 **Diagnosis.** Pain in the right iliac fossa for a day or two, with rebound tenderness (peritoneal irritation) and fever in a child or adolescent, indicates acute appendicitis, the classic example of acute suppurative inflammation. It is usually initiated by luminal obstruction (fecalith, lymphoid hyperplasia) with bacterial invasion.
 
@@ -2826,28 +2824,28 @@ The scar is raised and extends beyond the boundaries of the original incision, w
 
 ## Discharging sinus in the shin of the leg with radiological involucrum (sclerosis) — Most probable diagnosis?
 
-**Say this first:** The most probable diagnosis is chronic suppurative osteomyelitis of the tibia, in which a sinus discharges pus from infected necrotic bone (sequestrum) surrounded by a sheath of new bone (involucrum).
+The most probable diagnosis is chronic suppurative osteomyelitis of the tibia, in which a sinus discharges pus from infected necrotic bone (sequestrum) surrounded by a sheath of new bone (involucrum).
 
 Pyogenic osteomyelitis, usually staphylococcal and often haematogenous, begins as acute suppuration in the metaphysis. If untreated or inadequately treated, necrotic bone (sequestrum) forms within the pus; the periosteum lays down new reactive bone around it (involucrum), which appears radiologically as sclerosis; and pus tracks through gaps in the involucrum (cloacae) to the skin as a discharging sinus. Chronic bacterial infection of bone shows a persistent neutrophilic exudate for months, along with chronic inflammatory cells (lymphocytes, plasma cells, macrophages), granulation tissue and fibrosis. The shin (tibia) is a common site. Tuberculous osteomyelitis is a differential diagnosis. Management requires removal of sequestrum and antibiotics, and complications include pathological fracture, secondary amyloidosis and, rarely, squamous cell carcinoma in the sinus tract.
 
 
 ## Non-healing ulcer on the chest wall; scraping cytology shows epithelioid cells and Langhans-type giant cells — Most probable diagnosis?
 
-**Say this first:** The most probable diagnosis is tuberculosis, in the form of a tuberculous (granulomatous) ulcer of the chest wall, because epithelioid cells and Langhans giant cells indicate a granulomatous inflammation, of which tuberculosis is the prototype.
+The most probable diagnosis is tuberculosis, in the form of a tuberculous (granulomatous) ulcer of the chest wall, because epithelioid cells and Langhans giant cells indicate a granulomatous inflammation, of which tuberculosis is the prototype.
 
 The finding of epithelioid cells and Langhans-type giant cells indicates granulomatous inflammation, and tuberculosis should always be excluded as the cause when granulomas are identified. A chronic non-healing ulcer on the chest wall suggests cutaneous tuberculosis (scrofuloderma from underlying rib or lymph node disease, with a cold abscess breaking down through the skin). Confirmation requires acid-fast stain (Ziehl-Neelsen) of the smear, culture, PCR, and histology demonstrating caseating granulomas, together with chest radiography and Mantoux or interferon-gamma release assays. Other causes of granulomatous ulcers (fungal infection, leprosy, sarcoidosis) must be considered.
 
 
 ## 50-year-old woman with gum lesion (fibroblast proliferation and angiogenesis), long history of betel nut chewing — What type of inflammation occurs? What might be the complication?
 
-**Say this first:** Chronic inflammation with repair by granulation tissue and fibrosis is occurring because of persistent irritation by betel nut, and the important complications are submucous fibrosis and malignant transformation to oral squamous cell carcinoma.
+Chronic inflammation with repair by granulation tissue and fibrosis is occurring because of persistent irritation by betel nut, and the important complications are submucous fibrosis and malignant transformation to oral squamous cell carcinoma.
 
 Fibroblast proliferation with angiogenesis (granulation tissue) is the hallmark of the repair phase accompanying chronic inflammation. Chronic inflammation is characterised by mononuclear cell infiltration, tissue destruction and healing by angiogenesis and fibrosis, and occurs through prolonged exposure to a toxic agent, here betel nut and its additives (areca nut alkaloids, tobacco, lime). Continued injury and repair lead to excessive collagen deposition (oral submucous fibrosis with trismus), epithelial dysplasia and leukoplakia, and the complication of greatest importance is oral squamous cell carcinoma. Chronic inflammation is also a setting for persistent ulceration. Biopsy is required to exclude dysplasia or carcinoma.
 
 
 ## Raised/fleshy scar or mass at a surgical incision site, recurring after excision — Most probable diagnosis?
 
-**Say this first:** The most probable diagnosis is a keloid, an exuberant scar caused by excessive collagen deposition that extends beyond the boundaries of the original wound, does not regress, and recurs after excision.
+The most probable diagnosis is a keloid, an exuberant scar caused by excessive collagen deposition that extends beyond the boundaries of the original wound, does not regress, and recurs after excision.
 
 A raised scar at an incision site that recurs after excision indicates keloid rather than hypertrophic scar. Hypertrophic scars contain abundant myofibroblasts and excess collagen but remain within the boundary of the wound and tend to regress over several months; keloids grow beyond the boundary of the wound, do not regress and recur. Keloid formation seems to be an individual predisposition (higher in dark-skinned people), and microscopically shows thick hyalinised collagen bundles in the dermis. TGF-β-driven fibroblast activity and an imbalance between collagen synthesis and degradation underlie it. Rarely, a recurring exuberant fibroblastic proliferation after incision or trauma may represent a desmoid (aggressive fibromatosis), a benign neoplasm, which also recurs after excision; histology distinguishes them. Treatment is intralesional steroids, pressure or silicone, or excision with adjuvant radiotherapy or steroids.
 
@@ -2906,7 +2904,7 @@ Confirmation rests on demonstrating acute inflammation and identifying the causa
 
 ## Define edema.
 
-**Say this first:** Oedema is the accumulation of excess fluid in the interstitial tissue spaces, resulting from a net movement of water from the vasculature into the extravascular space; when the fluid collects in a body cavity it is called an effusion.
+Oedema is the accumulation of excess fluid in the interstitial tissue spaces, resulting from a net movement of water from the vasculature into the extravascular space; when the fluid collects in a body cavity it is called an effusion.
 
 Under normal conditions, as blood passes through capillary beds, plasma proteins are retained within the vasculature, and there is little net movement of water and electrolytes into the tissues. The tendency of vascular hydrostatic pressure to push water and salts out of capillaries into the interstitium is nearly balanced by the plasma colloid osmotic pressure, which pulls them back. There is a small net movement of fluid into the interstitium, which drains into lymphatic vessels and returns to the bloodstream through the thoracic duct, keeping the tissues "dry". Elevated hydrostatic pressure or diminished colloid osmotic pressure disrupts this balance. If the net rate of fluid efflux exceeds the capacity of lymphatic drainage, fluid accumulates.
 
@@ -2919,7 +2917,7 @@ Clinically, subcutaneous oedema signals possible cardiac or renal disease and im
 
 ## Important causes of edema formation.
 
-**Say this first:** The important causes of oedema are increased hydrostatic pressure (for example heart failure), reduced plasma osmotic pressure from hypoalbuminaemia (nephrotic syndrome, cirrhosis, malnutrition), increased vascular permeability (inflammation), lymphatic obstruction, and sodium and water retention.
+The important causes of oedema are increased hydrostatic pressure (for example heart failure), reduced plasma osmotic pressure from hypoalbuminaemia (nephrotic syndrome, cirrhosis, malnutrition), increased vascular permeability (inflammation), lymphatic obstruction, and sodium and water retention.
 
 | Category | Examples |
 |---|---|
@@ -2932,21 +2930,21 @@ Clinically, subcutaneous oedema signals possible cardiac or renal disease and im
 
 ## What is anasarca?
 
-**Say this first:** Anasarca is severe, generalised oedema with widespread, profound swelling of the subcutaneous tissues, often accompanied by effusions in the body cavities.
+Anasarca is severe, generalised oedema with widespread, profound swelling of the subcutaneous tissues, often accompanied by effusions in the body cavities.
 
 It is the generalised form of oedema in which fluid accumulates diffusely in the subcutaneous tissues and all serous cavities (ascites, pleural and pericardial effusions). It occurs when the mechanisms of oedema are severe and systemic, most typically in nephrotic syndrome (massive proteinuria and hypoalbuminaemia, with secondary salt and water retention), severe congestive heart failure, advanced cirrhosis with hypoalbuminaemia, and severe protein malnutrition (kwashiorkor). The face and eyelids (loose connective tissue) swell, and the dependent parts show pitting oedema. Pulmonary oedema may be present. The pathogenesis involves a fall in plasma oncotic pressure or a rise in venous pressure, together with renal retention of sodium and water through activation of the renin-angiotensin-aldosterone axis.
 
 
 ## What is effusion?
 
-**Say this first:** An effusion is the accumulation of excess fluid in a body cavity, such as the pleural, pericardial or peritoneal cavity; it may be an exudate or a transudate.
+An effusion is the accumulation of excess fluid in a body cavity, such as the pleural, pericardial or peritoneal cavity; it may be an exudate or a transudate.
 
 When oedema fluid involves a serosal surface, fluid accumulates within the adjacent body cavity as an effusion. Effusions involving the pleural cavity are called hydrothorax, the pericardial cavity hydropericardium, and the peritoneal cavity hydroperitoneum or ascites. Transudative effusions are typically protein-poor, translucent and straw-coloured; an exception is chylous effusion (peritoneal effusion due to lymphatic blockage), which is milky from lipids absorbed from the gut. Exudative effusions are protein-rich and often cloudy due to white cells; if pus is present, the term empyema is used (pleural), and blood in the cavity is haemothorax or haemopericardium. Effusions occur in inflammatory and in noninflammatory conditions (heart failure, liver failure, renal disease, malnutrition). Pleural effusions may compress the lung and compromise gas exchange, and ascites is prone to bacterial seeding (spontaneous bacterial peritonitis).
 
 
 ## Diseases where edema occurs due to increased hydrostatic pressure.
 
-**Say this first:** Oedema from increased hydrostatic pressure occurs in diseases that impair venous return, chiefly congestive heart failure, constrictive pericarditis, cirrhosis with portal hypertension, deep vein thrombosis and venous obstruction.
+Oedema from increased hydrostatic pressure occurs in diseases that impair venous return, chiefly congestive heart failure, constrictive pericarditis, cirrhosis with portal hypertension, deep vein thrombosis and venous obstruction.
 
 Increases in hydrostatic pressure are mainly caused by disorders that impair venous return. If the impairment is localised, for example deep vein thrombosis in a lower extremity, the oedema is confined to the affected part; conditions leading to systemic venous hypertension are associated with widespread oedema. Examples:
 
@@ -3021,7 +3019,7 @@ Oedema in congestive heart failure results from increased hydrostatic pressure d
 
 ## Important diseases where transudates occur.
 
-**Say this first:** Transudates occur in noninflammatory conditions such as congestive heart failure, cirrhosis of the liver, nephrotic syndrome and protein malnutrition.
+Transudates occur in noninflammatory conditions such as congestive heart failure, cirrhosis of the liver, nephrotic syndrome and protein malnutrition.
 
 Noninflammatory oedema and effusions, which are protein-poor transudates, occur in many disorders:
 
@@ -3035,7 +3033,7 @@ Noninflammatory oedema and effusions, which are protein-poor transudates, occur 
 
 ## How are exudates and transudates formed?
 
-**Say this first:** An exudate forms in inflammation because increased vascular permeability allows protein-rich fluid to leak from vessels, whereas a transudate forms from increased hydrostatic pressure or decreased colloid osmotic pressure without any increase in vascular permeability.
+An exudate forms in inflammation because increased vascular permeability allows protein-rich fluid to leak from vessels, whereas a transudate forms from increased hydrostatic pressure or decreased colloid osmotic pressure without any increase in vascular permeability.
 
 At the arterial end of a capillary, hydrostatic pressure is about 32 mm Hg and at the venous end about 12 mm Hg; the mean colloid osmotic pressure is about 25 mm Hg, equal to the mean capillary pressure, so the net flow is nearly nil.
 
@@ -3045,14 +3043,14 @@ At the arterial end of a capillary, hydrostatic pressure is about 32 mm Hg and a
 
 ## Define exudate and transudate.
 
-**Say this first:** An exudate is an extravascular fluid with a high protein concentration, which may contain cellular debris or cells and implies increased vascular permeability due to inflammation; a transudate is a low-protein, essentially cell-free ultrafiltrate of plasma that forms without increased vascular permeability.
+An exudate is an extravascular fluid with a high protein concentration, which may contain cellular debris or cells and implies increased vascular permeability due to inflammation; a transudate is a low-protein, essentially cell-free ultrafiltrate of plasma that forms without increased vascular permeability.
 
 An **exudate** is an inflammatory extravascular fluid with high protein concentration (above about 3 g/dL), specific gravity above 1.020, containing cellular debris and often leukocytes and sometimes red cells; its presence implies increased permeability of small blood vessels. A special exudate is pus, rich in neutrophils, dead cell debris and often microbes. A **transudate** is a fluid with low protein content (mostly albumin; below about 3 g/dL), specific gravity below 1.012, and little or no cellular material, produced by osmotic or hydrostatic imbalance across an intact vessel wall. Both are forms of oedema when they accumulate in tissue or serous cavities.
 
 
 ## Differences between exudate and transudate.
 
-**Say this first:** An exudate is protein-rich, cellular, cloudy, and arises from increased vascular permeability in inflammation; a transudate is protein-poor, nearly cell-free, clear, and arises from hydrostatic or osmotic imbalance.
+An exudate is protein-rich, cellular, cloudy, and arises from increased vascular permeability in inflammation; a transudate is protein-poor, nearly cell-free, clear, and arises from hydrostatic or osmotic imbalance.
 
 | Feature | Exudate | Transudate |
 |---|---|---|
@@ -3070,7 +3068,7 @@ An **exudate** is an inflammatory extravascular fluid with high protein concentr
 
 ## Name the body fluids commonly examined in the laboratory.
 
-**Say this first:** The body fluids commonly examined in the laboratory include blood, urine, cerebrospinal fluid, pleural, peritoneal (ascitic) and pericardial fluids, synovial fluid, semen and sputum.
+The body fluids commonly examined in the laboratory include blood, urine, cerebrospinal fluid, pleural, peritoneal (ascitic) and pericardial fluids, synovial fluid, semen and sputum.
 
 | Fluid | Common indication |
 |---|---|
@@ -3086,7 +3084,7 @@ An **exudate** is an inflammatory extravascular fluid with high protein concentr
 
 ## Tests performed for examination of body fluid.
 
-**Say this first:** Body fluid examination comprises physical, chemical, cytological and microbiological tests, to distinguish transudate from exudate and to determine the cause.
+Body fluid examination comprises physical, chemical, cytological and microbiological tests, to distinguish transudate from exudate and to determine the cause.
 
 1. **Physical examination:** volume, colour, turbidity or clarity (clear, cloudy, bloody, purulent, chylous), odour, clotting, viscosity (synovial fluid), specific gravity.
 2. **Chemical examination:** protein (total, and fluid-to-serum ratio), glucose (low in infection, tuberculosis, rheumatoid arthritis), lactate dehydrogenase (LDH), amylase (pancreatitis, oesophageal rupture), cholesterol and triglycerides (chylous effusion), pH, adenosine deaminase (tuberculosis), and in ascites the serum-ascites albumin gradient (above 1.1 g/dL indicates portal hypertension). Light's criteria separate pleural exudate (fluid/serum protein above 0.5, fluid/serum LDH above 0.6, or pleural LDH above two-thirds the upper normal serum value) from transudate.
@@ -3101,21 +3099,21 @@ An **exudate** is an inflammatory extravascular fluid with high protein concentr
 
 ## What is hyperemia?
 
-**Say this first:** Hyperaemia is an active process in which arteriolar dilation increases blood flow to a tissue, making it red (erythema) because of increased delivery of oxygenated blood.
+Hyperaemia is an active process in which arteriolar dilation increases blood flow to a tissue, making it red (erythema) because of increased delivery of oxygenated blood.
 
 It is seen at sites of inflammation and in skeletal muscle during exercise; other examples are blushing, the flushing of the skin in fever or in a warm environment, and menopausal hot flushes. It is physiological in exercising muscle, the gastrointestinal tract after a meal and the skin during heat, and pathological in inflammation. The tissue is warm and red, and the blood flowing through is oxygenated, not deoxygenated; venous outflow is not impaired.
 
 
 ## What is congestion?
 
-**Say this first:** Congestion is a passive process resulting from reduced venous outflow of blood from a tissue; the tissue becomes blue-red (cyanosis) from accumulation of deoxygenated haemoglobin.
+Congestion is a passive process resulting from reduced venous outflow of blood from a tissue; the tissue becomes blue-red (cyanosis) from accumulation of deoxygenated haemoglobin.
 
 Congestion may be systemic, as in cardiac failure, or localised, as in isolated venous obstruction. Congested tissues are dusky and blue-red, cool, and oedematous because of the increased hydrostatic pressure. In long-standing chronic passive congestion, chronic hypoxia may result in ischaemic tissue injury and scarring (fibrosis). Capillary rupture can produce small haemorrhagic foci, and breakdown of extravasated red cells leaves clusters of haemosiderin-laden macrophages. Acute pulmonary congestion shows engorged alveolar capillaries, septal oedema and focal intra-alveolar haemorrhage; chronic pulmonary congestion shows thickened fibrotic septa and haemosiderin-laden macrophages ("heart failure cells"). In the liver, acute congestion distends the central vein and sinusoids, and chronic passive congestion yields the "nutmeg liver" with red-brown, slightly depressed centrilobular areas against the tan, uncongested periportal zones, with centrilobular haemorrhage and necrosis.
 
 
 ## Differences between hyperemia and congestion.
 
-**Say this first:** Hyperaemia is an active process of increased arterial inflow producing a red, warm tissue, whereas congestion is a passive process of reduced venous outflow producing a blue-red, cyanotic tissue.
+Hyperaemia is an active process of increased arterial inflow producing a red, warm tissue, whereas congestion is a passive process of reduced venous outflow producing a blue-red, cyanotic tissue.
 
 | Feature | Hyperaemia | Congestion |
 |---|---|---|
@@ -3131,7 +3129,7 @@ Congestion may be systemic, as in cardiac failure, or localised, as in isolated 
 
 ## Common examples of each.
 
-**Say this first:** Examples of hyperaemia are the redness of acute inflammation and exercising muscle; examples of congestion are chronic passive congestion of the lung and liver in heart failure.
+Examples of hyperaemia are the redness of acute inflammation and exercising muscle; examples of congestion are chronic passive congestion of the lung and liver in heart failure.
 
 - **Hyperaemia (physiological):** skeletal muscle during exercise, blushing, skin in a hot environment, gastrointestinal mucosa after a meal. **(Pathological):** acute inflammation (erythema), fever.
 - **Congestion (systemic):** left heart failure producing chronic pulmonary congestion with brown induration (heart failure cells) and right heart failure producing nutmeg liver, splenomegaly and peripheral oedema. **(Localised):** deep vein thrombosis causing a swollen, cyanotic limb, hepatic venous obstruction (Budd-Chiari syndrome), portal vein obstruction, strangulated hernia or torsion of testis.
@@ -3176,14 +3174,14 @@ With injury or activation (by inflammatory cytokines, microbes, haemodynamic str
 
 ## Define thrombus.
 
-**Say this first:** A thrombus is a solid mass formed in the living circulation, within an intact blood vessel or the chambers of the heart, from the components of blood (platelets, fibrin, red cells and leukocytes).
+A thrombus is a solid mass formed in the living circulation, within an intact blood vessel or the chambers of the heart, from the components of blood (platelets, fibrin, red cells and leukocytes).
 
 Haemostasis is the process by which blood clots form at sites of vascular injury; in thrombotic disorders, blood clots (thrombi) form within intact vessels or within the heart chambers. A thrombus is thus an inappropriate, pathological haemostatic plug. It is attached to the vessel wall at its point of origin, and usually shows laminations (lines of Zahn). The process is called thrombosis. A thrombus differs from a clot formed in a test tube or after death in that it forms in flowing blood during life.
 
 
 ## Virchow's triad.
 
-**Say this first:** Virchow's triad consists of the three primary abnormalities that lead to thrombosis: endothelial injury, abnormal blood flow (stasis or turbulence), and hypercoagulability of the blood.
+Virchow's triad consists of the three primary abnormalities that lead to thrombosis: endothelial injury, abnormal blood flow (stasis or turbulence), and hypercoagulability of the blood.
 
 - **Endothelial injury** is the dominant influence and can by itself lead to thrombosis (for example over ulcerated atherosclerotic plaques, damaged heart valves, or after endothelial activation by hypertension, toxins, inflammation and metabolic products).
 - **Stasis or turbulence of blood flow** contributes to arterial and cardiac thrombosis (turbulence) and to venous thrombosis (stasis).
@@ -3194,21 +3192,21 @@ The three factors may act independently or together, and endothelial injury can 
 
 ## Why does prolonged bed rest result in pulmonary embolism?
 
-**Say this first:** Prolonged bed rest causes stasis of blood in the deep veins of the legs, because lack of muscle contraction removes the milking action on the veins, so deep vein thrombi form, and fragments of these thrombi break off, travel to the right heart and lodge in the pulmonary arteries as emboli.
+Prolonged bed rest causes stasis of blood in the deep veins of the legs, because lack of muscle contraction removes the milking action on the veins, so deep vein thrombi form, and fragments of these thrombi break off, travel to the right heart and lodge in the pulmonary arteries as emboli.
 
 Bed rest and immobilisation reduce the pumping action of the leg muscles, which normally propels blood toward the heart; blood in the deep veins of the calf and thigh becomes stagnant (stasis), and stasis is a major contributor to venous thrombosis. Stasis allows platelets to contact endothelium, prevents washout and dilution of activated clotting factors, and promotes endothelial activation. The underlying illness, surgery, trauma or heart failure that caused the bed rest often adds hypercoagulability and endothelial injury (Virchow triad). Deep vein thrombosis at or above the knee (popliteal, femoral, iliac veins) is serious because such thrombi readily embolise; they are often asymptomatic, so that approximately 50% of DVTs are recognised only after embolisation. The propagating portion of a venous thrombus is poorly attached and may fragment; the fragments are carried through progressively larger veins and the right side of the heart to impact in the pulmonary arterial tree. About 70% to 80% of pulmonary emboli arise from leg DVT.
 
 
 ## What are mural thrombi?
 
-**Say this first:** Mural thrombi are thrombi that form in the heart chambers or in the aortic lumen and are attached to the wall without completely occluding the lumen.
+Mural thrombi are thrombi that form in the heart chambers or in the aortic lumen and are attached to the wall without completely occluding the lumen.
 
 They arise where there is abnormal myocardial contraction (arrhythmias such as atrial fibrillation, dilated cardiomyopathy, myocardial infarction with dyskinetic myocardium) or endomyocardial injury (myocarditis, catheter trauma), and, in the aorta, over ulcerated atherosclerotic plaques and in aneurysmal dilations, where turbulence and stasis exist. Left ventricular thrombi overlie infarcts, and atrial thrombi form in dilated, fibrillating left atria (rheumatic mitral stenosis). They are laminated and friable, and are prone to embolisation, a common source of systemic emboli (80% of systemic emboli arise from intracardiac mural thrombi); the brain, kidneys and spleen are particularly likely targets.
 
 
 ## Differences between thrombus and post-mortem clot.
 
-**Say this first:** A thrombus forms in life, is firm, dry and attached to the vessel wall, with lines of Zahn; a postmortem clot forms after death, is soft and gelatinous, shows a dark red lower portion and a yellow "chicken fat" upper portion, and is not attached to the wall.
+A thrombus forms in life, is firm, dry and attached to the vessel wall, with lines of Zahn; a postmortem clot forms after death, is soft and gelatinous, shows a dark red lower portion and a yellow "chicken fat" upper portion, and is not attached to the wall.
 
 | Feature | Thrombus (antemortem) | Postmortem clot |
 |---|---|---|
@@ -3350,14 +3348,14 @@ Other possibilities include **infection** of the thrombus in bacteraemia, which 
 
 ## Define embolus.
 
-**Say this first:** An embolus is a detached intravascular solid, liquid or gaseous mass that is carried by the blood from its point of origin to a distant site, where it often obstructs blood flow and causes tissue dysfunction or infarction.
+An embolus is a detached intravascular solid, liquid or gaseous mass that is carried by the blood from its point of origin to a distant site, where it often obstructs blood flow and causes tissue dysfunction or infarction.
 
 Most emboli are dislodged thrombi, hence the term thromboembolism. Rare emboli are composed of fat droplets, air or nitrogen bubbles, atherosclerotic debris (cholesterol emboli), tumour fragments, bone marrow or foreign bodies. Emboli travel through the blood until they encounter vessels too small to permit passage, and cause partial or complete vascular occlusion. The consequences depend on the size and position of the lodged embolus and on the vascular bed involved.
 
 
 ## Classify embolus.
 
-**Say this first:** Emboli are classified on the basis of their composition as thromboemboli (the commonest), fat, air or gas, amniotic fluid, atheromatous (cholesterol), tumour, bone marrow, and foreign body emboli; by site as pulmonary (venous) or systemic (arterial), with paradoxical embolism as a special type.
+Emboli are classified on the basis of their composition as thromboemboli (the commonest), fat, air or gas, amniotic fluid, atheromatous (cholesterol), tumour, bone marrow, and foreign body emboli; by site as pulmonary (venous) or systemic (arterial), with paradoxical embolism as a special type.
 
 | Basis | Types |
 |---|---|
@@ -3370,7 +3368,7 @@ Most emboli are dislodged thrombi, hence the term thromboembolism. Rare emboli a
 
 ## Examples of each type of embolus.
 
-**Say this first:** The commonest example is pulmonary thromboembolism from deep vein thrombosis; other examples are fat embolism after long bone fracture, air embolism after neck vein injury, nitrogen embolism in divers, amniotic fluid embolism in labour, and tumour emboli in renal cell carcinoma.
+The commonest example is pulmonary thromboembolism from deep vein thrombosis; other examples are fat embolism after long bone fracture, air embolism after neck vein injury, nitrogen embolism in divers, amniotic fluid embolism in labour, and tumour emboli in renal cell carcinoma.
 
 | Type | Example |
 |---|---|
@@ -3388,7 +3386,7 @@ Most emboli are dislodged thrombi, hence the term thromboembolism. Rare emboli a
 
 ## Common sources of emboli.
 
-**Say this first:** The commonest source of emboli is thrombus: deep vein thrombosis of the legs for pulmonary emboli, and cardiac mural thrombi (after myocardial infarction or in atrial fibrillation) for systemic emboli.
+The commonest source of emboli is thrombus: deep vein thrombosis of the legs for pulmonary emboli, and cardiac mural thrombi (after myocardial infarction or in atrial fibrillation) for systemic emboli.
 
 - **Pulmonary emboli:** 70% to 80% originate from deep vein thrombosis of the legs (popliteal, femoral and iliac veins); pelvic veins and upper limb veins are less common sources.
 - **Systemic emboli:** 80% arise from intracardiac mural thrombi, two-thirds of which are associated with left ventricular wall infarcts and one-fourth with left atrial dilation and fibrillation (as in rheumatic mitral stenosis). The remainder come from aortic aneurysms, atherosclerotic plaques, valvular vegetations, or venous thrombi (paradoxical emboli); 10% to 15% are of unknown origin.
@@ -3396,7 +3394,7 @@ Most emboli are dislodged thrombi, hence the term thromboembolism. Rare emboli a
 
 ## Other sources of emboli.
 
-**Say this first:** Other sources are fractures of long bones (fat and marrow), sudden decompression (nitrogen), intravenous procedures and trauma (air), obstetric tears (amniotic fluid), atherosclerotic plaques (cholesterol), tumours, and foreign bodies.
+Other sources are fractures of long bones (fat and marrow), sudden decompression (nitrogen), intravenous procedures and trauma (air), obstetric tears (amniotic fluid), atherosclerotic plaques (cholesterol), tumours, and foreign bodies.
 
 - **Fat and bone marrow:** fractures of long bones, soft tissue trauma, burns, rarely orthopaedic procedures.
 - **Air:** neck and chest wall injuries, intravenous lines, surgery in a sitting position, obstetric and laparoscopic procedures, mechanical ventilation.
@@ -3410,14 +3408,14 @@ Most emboli are dislodged thrombi, hence the term thromboembolism. Rare emboli a
 
 ## How does fat embolism occur?
 
-**Say this first:** Fat embolism occurs when trauma, usually fracture of long bones, ruptures the vascular sinusoids or small venules of the marrow, allowing droplets of marrow fat (sometimes with haematopoietic marrow) to enter the venous circulation and travel to the lungs.
+Fat embolism occurs when trauma, usually fracture of long bones, ruptures the vascular sinusoids or small venules of the marrow, allowing droplets of marrow fat (sometimes with haematopoietic marrow) to enter the venous circulation and travel to the lungs.
 
 Fat embolism is the presence of microscopic fat globules, sometimes with haematopoietic bone marrow, in the vasculature, typically after fractures of long bones or, rarely, in soft tissue trauma and burns. It is common, occurring in about 90% of individuals with severe skeletal injuries, but only a minority have the clinical fat embolism syndrome. The injury ruptures vascular sinusoids or small venules in the marrow, allowing marrow and adipose tissue to herniate into the vascular space and travel to the lung. Small globules may pass through pulmonary capillaries to reach the systemic circulation (brain, kidney, skin). The embolic fat also causes biochemical injury, because free fatty acids released from the globules damage endothelium.
 
 
 ## What is fat embolism syndrome?
 
-**Say this first:** Fat embolism syndrome is the symptomatic condition seen in a minority of patients with fat embolism, characterised by pulmonary insufficiency, neurological symptoms, anaemia and thrombocytopenia, with a petechial rash, appearing 1 to 3 days after injury and fatal in 5% to 15% of cases.
+Fat embolism syndrome is the symptomatic condition seen in a minority of patients with fat embolism, characterised by pulmonary insufficiency, neurological symptoms, anaemia and thrombocytopenia, with a petechial rash, appearing 1 to 3 days after injury and fatal in 5% to 15% of cases.
 
 Typically, 1 to 3 days after injury, there is sudden onset of tachypnoea, dyspnoea and tachycardia, with irritability and restlessness that may progress to delirium or coma. Thrombocytopenia is attributed to platelet adhesion to fat globules and aggregation or splenic sequestration, and anaemia to red cell aggregation or haemolysis. A diffuse petechial rash (20% to 50%) is a useful diagnostic clue.
 
@@ -3428,7 +3426,7 @@ Typically, 1 to 3 days after injury, there is sudden onset of tachypnoea, dyspno
 
 ## What is decompression sickness / caisson disease?
 
-**Say this first:** Decompression sickness is a form of gas embolism caused by sudden decrease in atmospheric pressure, in which nitrogen dissolved in blood and tissues at high pressure comes out of solution as bubbles; caisson disease is the chronic form, in which persistent gas emboli in bone cause multiple foci of ischaemic necrosis.
+Decompression sickness is a form of gas embolism caused by sudden decrease in atmospheric pressure, in which nitrogen dissolved in blood and tissues at high pressure comes out of solution as bubbles; caisson disease is the chronic form, in which persistent gas emboli in bone cause multiple foci of ischaemic necrosis.
 
 Scuba and deep-sea divers, underwater construction workers and people in unpressurised aircraft who ascend rapidly are at risk. When air is breathed at high pressure, increased amounts of gas (especially nitrogen) dissolve in blood and tissues; with too rapid ascent, nitrogen comes out of solution as bubbles.
 
@@ -3442,14 +3440,14 @@ Small intravascular bubbles also evoke inflammatory and thrombogenic responses. 
 
 ## How much air is needed to produce a clinical effect?
 
-**Say this first:** More than about 100 mL of air is needed to produce a clinical effect in the pulmonary circulation, and 300 to 500 mL introduced over several seconds may be fatal.
+More than about 100 mL of air is needed to produce a clinical effect in the pulmonary circulation, and 300 to 500 mL introduced over several seconds may be fatal.
 
 A large volume of air, generally more than 100 mL, is necessary to produce a clinical effect in the pulmonary circulation; this volume can inadvertently be introduced during obstetric or laparoscopic procedures, or through chest wall injury. Air in the pulmonary vasculature not only blocks perfusion of downstream regions but also induces an intense inflammatory response with release of cytokines that may injure the alveoli. Air embolism requires communication between the vasculature and outside air and a negative pressure gradient that sucks in air; in the cerebral circulation much smaller volumes can be dangerous.
 
 
 ## Clinical effects of caisson disease.
 
-**Say this first:** The clinical effects of decompression sickness and caisson disease are the bends (painful joints and muscles), the chokes (respiratory distress with pulmonary oedema and haemorrhage), neurological manifestations, and, in the chronic form, ischaemic bone necrosis, especially of the femoral heads, tibia and humeri.
+The clinical effects of decompression sickness and caisson disease are the bends (painful joints and muscles), the chokes (respiratory distress with pulmonary oedema and haemorrhage), neurological manifestations, and, in the chronic form, ischaemic bone necrosis, especially of the femoral heads, tibia and humeri.
 
 - **Acute decompression sickness:** rapid bubble formation in muscles and tissues around joints causes the painful bends; bubbles in the lungs cause oedema, haemorrhage and focal atelectasis or emphysema, leading to respiratory distress (the chokes); bubbles in the central nervous system cause headache, memory loss, ataxia, visual disturbances and the sudden onset of coma; even small bubbles cause inflammatory and thrombogenic responses.
 - **Chronic (caisson disease):** persistence of gas emboli in the skeletal system causes multiple foci of ischaemic (avascular) necrosis, most commonly of the femoral heads, tibia and humeri, leading to joint pain and degenerative arthritis.
@@ -3458,7 +3456,7 @@ A large volume of air, generally more than 100 mL, is necessary to produce a cli
 
 ## Why is amniotic fluid embolism so dangerous?
 
-**Say this first:** Amniotic fluid embolism is dangerous because, although rare, it has a mortality up to 60%, and the morbidity arises less from mechanical obstruction than from activation of coagulation and the innate immune system with release of vasoactive substances, causing sudden pulmonary hypertension, shock, DIC and neurological injury.
+Amniotic fluid embolism is dangerous because, although rare, it has a mortality up to 60%, and the morbidity arises less from mechanical obstruction than from activation of coagulation and the innate immune system with release of vasoactive substances, causing sudden pulmonary hypertension, shock, DIC and neurological injury.
 
 It is the fifth most common cause of maternal mortality worldwide (about 10% of maternal deaths in the United States) and occurs in about 2 to 6 per 100,000 deliveries; about half of survivors have permanent neurologic dysfunction. Amniotic fluid or foetal tissue enters the maternal circulation through a tear in the placental membranes or rupture of uterine veins.
 
@@ -3473,7 +3471,7 @@ At autopsy, squamous cells shed from foetal skin, lanugo hair, fat from vernix c
 
 ## Sources of pulmonary embolism.
 
-**Say this first:** Pulmonary emboli originate in 70% to 80% of cases from deep vein thrombosis of the leg veins (popliteal, femoral, iliac), and less commonly from pelvic and upper limb veins, the right heart, and non-thrombotic emboli.
+Pulmonary emboli originate in 70% to 80% of cases from deep vein thrombosis of the leg veins (popliteal, femoral, iliac), and less commonly from pelvic and upper limb veins, the right heart, and non-thrombotic emboli.
 
 - **Deep veins of the lower limbs** at or above the knee, the source of the great majority.
 - Other venous sources: periprostatic and ovarian/periuterine (pelvic) venous plexuses, upper limb veins (especially with central catheters), inferior vena cava.
@@ -3485,7 +3483,7 @@ The risk factors are the same as for DVT: immobilisation, surgery, trauma, malig
 
 ## Clinical consequences of pulmonary embolism.
 
-**Say this first:** The consequences of pulmonary embolism depend on the size of the embolus and the vessel blocked: most are silent, but a large embolus causes sudden death or acute right heart failure, medium-sized emboli may cause haemorrhage or infarction, and multiple emboli over time cause pulmonary hypertension.
+The consequences of pulmonary embolism depend on the size of the embolus and the vessel blocked: most are silent, but a large embolus causes sudden death or acute right heart failure, medium-sized emboli may cause haemorrhage or infarction, and multiple emboli over time cause pulmonary hypertension.
 
 - **Silent emboli:** 60% to 80% are clinically silent because they are small; they become organised and incorporated into the vessel wall, sometimes leaving a delicate fibrous web.
 - **Massive embolism:** obstruction of 60% or more of the pulmonary circulation (large embolus, or saddle embolus at the bifurcation) causes sudden death, acute right heart failure (cor pulmonale) or cardiovascular collapse.
@@ -3497,7 +3495,7 @@ The risk factors are the same as for DVT: immobilisation, surgery, trauma, malig
 
 ## Fate of pulmonary embolism.
 
-**Say this first:** A pulmonary embolus may cause sudden death, or be lysed, or become organised and incorporated into the vessel wall; patients are at high risk of recurrent emboli.
+A pulmonary embolus may cause sudden death, or be lysed, or become organised and incorporated into the vessel wall; patients are at high risk of recurrent emboli.
 
 The embolus may (1) cause immediate death or acute right heart failure when large; (2) fragment and move into smaller branches; (3) be dissolved by fibrinolysis; (4) become organised, with ingrowth of endothelial cells, smooth muscle cells and fibroblasts, and be incorporated into the vessel wall, sometimes leaving a bridging fibrous web; (5) cause haemorrhage or infarction, which heals by scarring; (6) recur, because the patient who has had one embolus is at high risk for more, leading to pulmonary hypertension and right ventricular failure. The source thrombus in the leg may remain and re-embolise unless treated with anticoagulation.
 
@@ -3593,7 +3591,7 @@ Systemic (arterial) thromboembolism refers to emboli that enter the arterial cir
 
 ## Male (30 or 38 years) hospitalised for femur fracture; after two weeks sudden chest pain, cough and haemoptysis — Most probable diagnosis? Cause of this complication?
 
-**Say this first:** The most probable diagnosis is pulmonary thromboembolism with pulmonary infarction, caused by a thrombus from deep vein thrombosis of the leg veins that developed because of immobilisation and trauma and embolised to the lung.
+The most probable diagnosis is pulmonary thromboembolism with pulmonary infarction, caused by a thrombus from deep vein thrombosis of the leg veins that developed because of immobilisation and trauma and embolised to the lung.
 
 **Diagnosis.** Sudden chest pain, cough and haemoptysis in a patient immobilised in hospital for a femoral fracture indicate pulmonary embolism with infarction. The delay of two weeks favours thromboembolism; fat embolism syndrome would present 1 to 3 days after injury with respiratory distress, neurological signs, thrombocytopenia and a petechial rash.
 
@@ -3622,14 +3620,14 @@ The thrombus forms in the deep veins (popliteal, femoral, iliac) and extends tow
 
 ## What is an infarct?
 
-**Say this first:** An infarct is an area of ischaemic necrosis caused by occlusion of either the arterial supply or the venous drainage of a tissue.
+An infarct is an area of ischaemic necrosis caused by occlusion of either the arterial supply or the venous drainage of a tissue.
 
 Infarction is a common and extremely important cause of clinical illness. Roughly 40% of all deaths in the United States are caused by cardiovascular disease, and most of these are attributable to myocardial or cerebral infarction; pulmonary infarction is a common complication in many clinical settings, bowel infarction is frequently fatal, and ischaemic necrosis of the extremities (gangrene) is a serious problem in diabetic patients. Most infarcts are due to arterial thrombosis or embolism. The characteristic histological change is coagulative necrosis (liquefactive necrosis in the brain), and most infarcts are eventually replaced by scar. Infarcts are classified as red (haemorrhagic) or white (anaemic), and as bland or septic.
 
 
 ## Underlying causes of infarction.
 
-**Say this first:** Infarction is most commonly caused by arterial thrombosis or arterial embolism; less common causes are local vasospasm, haemorrhage into an atheromatous plaque, extrinsic compression, torsion of a vessel, and venous occlusion.
+Infarction is most commonly caused by arterial thrombosis or arterial embolism; less common causes are local vasospasm, haemorrhage into an atheromatous plaque, extrinsic compression, torsion of a vessel, and venous occlusion.
 
 - **Arterial thrombosis** (commonly on an atherosclerotic plaque, as in coronary and cerebral arteries) and **arterial embolism** underlie most infarctions.
 - **Local vasospasm**, **haemorrhage into an atheromatous plaque**, and **extrinsic compression of a vessel** (for example by a tumour).
@@ -3641,14 +3639,14 @@ Infarction is a common and extremely important cause of clinical illness. Roughl
 
 ## Sites where white infarct occurs.
 
-**Say this first:** White (anaemic) infarcts occur with arterial occlusion in solid organs with end-arterial circulation and dense tissue, namely the heart, spleen and kidney.
+White (anaemic) infarcts occur with arterial occlusion in solid organs with end-arterial circulation and dense tissue, namely the heart, spleen and kidney.
 
 White infarcts occur where arterial occlusion affects solid organs with end-arterial circulation (heart, spleen, kidney) and where tissue density limits the seepage of blood from adjoining capillary beds into the necrotic area. The brain also develops pale infarcts, which undergo liquefactive necrosis. With time such infarcts become progressively paler and more sharply demarcated, and are eventually replaced by a scar (the remote renal infarct is a depressed fibrous scar).
 
 
 ## Factors that influence the development of an infarct.
 
-**Say this first:** Whether vascular occlusion causes infarction depends on the anatomy of the vascular supply, the rate of occlusion, the vulnerability of the tissue to hypoxia, and the oxygen content of the blood.
+Whether vascular occlusion causes infarction depends on the anatomy of the vascular supply, the rate of occlusion, the vulnerability of the tissue to hypoxia, and the oxygen content of the blood.
 
 1. **Anatomy of the vascular supply.** The availability of an alternative blood supply is the most important determinant. The lungs (pulmonary and bronchial arteries), the liver (hepatic artery and portal vein), and the hand and forearm (radial and ulnar arteries) are relatively resistant; renal and splenic circulations are end-arterial, so obstruction generally causes tissue death.
 2. **Rate of occlusion.** Slowly developing occlusions are less likely to cause infarction because collateral pathways of perfusion have time to develop (for example interarteriolar anastomoses between coronary arteries).
@@ -3658,7 +3656,7 @@ White infarcts occur where arterial occlusion affects solid organs with end-arte
 
 ## Organs where red infarct occurs, and why.
 
-**Say this first:** Red (haemorrhagic) infarcts occur in the lung, small intestine, testis and ovary, and brain in some circumstances, because of venous occlusion, dual circulation, loose spongy tissue, previous congestion, or reperfusion.
+Red (haemorrhagic) infarcts occur in the lung, small intestine, testis and ovary, and brain in some circumstances, because of venous occlusion, dual circulation, loose spongy tissue, previous congestion, or reperfusion.
 
 Red infarcts occur:
 
@@ -3714,7 +3712,7 @@ Vascular occlusion may have effects ranging from virtually nothing to tissue nec
 
 ## What are the types of shock?
 
-**Say this first:** The three major types of shock are cardiogenic, hypovolaemic and septic shock; less commonly shock occurs in neurogenic and anaphylactic forms, in which acute vasodilation causes hypotension.
+The three major types of shock are cardiogenic, hypovolaemic and septic shock; less commonly shock occurs in neurogenic and anaphylactic forms, in which acute vasodilation causes hypotension.
 
 Shock is a state of circulatory failure that impairs tissue perfusion and leads to cellular hypoxia. Its causes fall into three general categories:
 
@@ -3731,21 +3729,21 @@ SIRS (systemic inflammatory response syndrome) is a sepsis-like state triggered 
 
 ## What type of shock occurs in severe burn?
 
-**Say this first:** Severe burns cause hypovolaemic shock, due to massive loss of plasma and fluid from the burned surface.
+Severe burns cause hypovolaemic shock, due to massive loss of plasma and fluid from the burned surface.
 
 Thermal injury of the skin produces direct endothelial damage and increased vascular permeability, with outpouring of protein-rich plasma into the tissues and loss of fluid by evaporation and exudation from the burned surface; this causes inadequate blood and plasma volume and low cardiac output. Burn patients may subsequently develop septic shock from infection of the burn wound, and SIRS may complicate burns.
 
 
 ## Why do the skin become cool and pale in the early non-progressive phase of shock?
 
-**Say this first:** In the early non-progressive phase, reflex neurohumoral mechanisms (baroreceptor reflex, catecholamines, ADH, renin-angiotensin-aldosterone axis, sympathetic stimulation) cause cutaneous vasoconstriction, which shunts blood from the skin to vital organs such as the heart and brain, making the skin cool and pale.
+In the early non-progressive phase, reflex neurohumoral mechanisms (baroreceptor reflex, catecholamines, ADH, renin-angiotensin-aldosterone axis, sympathetic stimulation) cause cutaneous vasoconstriction, which shunts blood from the skin to vital organs such as the heart and brain, making the skin cool and pale.
 
 In this stage the reflex compensatory mechanisms maintain cardiac output and blood pressure. The net effect is tachycardia, peripheral vasoconstriction and renal fluid conservation. Cutaneous vasoconstriction produces the characteristic "shocky" skin coolness and pallor (in the cold, clammy skin). Coronary and cerebral vessels are less sensitive to sympathetic signals and maintain relatively normal caliber, flow and oxygen delivery, so blood is shunted away from the skin to the vital organs. In septic shock, the skin may initially be warm and flushed because of cutaneous vasodilation.
 
 
 ## Changes that occur in the progressive phase of shock.
 
-**Say this first:** The progressive phase is characterised by widespread tissue hypoxia, with a switch to anaerobic glycolysis, lactic acidosis, loss of vasomotor tone and pooling of blood in the microcirculation, worsening cardiac output, endothelial injury with DIC, and onset of failure of vital organs.
+The progressive phase is characterised by widespread tissue hypoxia, with a switch to anaerobic glycolysis, lactic acidosis, loss of vasomotor tone and pooling of blood in the microcirculation, worsening cardiac output, endothelial injury with DIC, and onset of failure of vital organs.
 
 If the underlying causes are not corrected, shock passes to the progressive phase:
 
@@ -3859,7 +3857,7 @@ Predisposing factors include poor oral hygiene, poorly controlled diabetes, immu
 
 ## Normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻.
 
-**Say this first:** The normal serum values are sodium 135 to 145 mmol/L, potassium 3.5 to 5.0 mmol/L, chloride 98 to 106 mmol/L and bicarbonate 22 to 28 mmol/L.
+The normal serum values are sodium 135 to 145 mmol/L, potassium 3.5 to 5.0 mmol/L, chloride 98 to 106 mmol/L and bicarbonate 22 to 28 mmol/L.
 
 | Electrolyte | Normal serum level (adult) |
 |---|---|
@@ -3874,14 +3872,14 @@ The anion gap, calculated as Na⁺ − (Cl⁻ + HCO₃⁻), is normally about 8 
 
 ## What is hyponatraemia?
 
-**Say this first:** Hyponatraemia is a serum sodium concentration below 135 mmol/L, which usually reflects an excess of water relative to sodium and is a state of hypo-osmolality.
+Hyponatraemia is a serum sodium concentration below 135 mmol/L, which usually reflects an excess of water relative to sodium and is a state of hypo-osmolality.
 
 Because sodium is the principal extracellular cation and determinant of plasma osmolality, hyponatraemia causes water to move into cells, producing cellular swelling. The brain is most vulnerable, and cerebral oedema produces headache, nausea, lethargy, confusion, seizures and coma, especially when the fall is acute and severe (below about 120 mmol/L). Chronic hyponatraemia is often better tolerated, and too rapid correction risks osmotic demyelination (central pontine myelinolysis). It is classified as hypovolaemic, euvolaemic or hypervolaemic according to the volume status. Pseudohyponatraemia (hyperlipidaemia, hyperproteinaemia) and hypertonic hyponatraemia (hyperglycaemia) must be distinguished.
 
 
 ## Causes of hyponatraemia.
 
-**Say this first:** The causes of hyponatraemia are classified by volume status: loss of sodium and water (diuretics, vomiting, diarrhoea, adrenal insufficiency), water retention with normal volume (SIADH, hypothyroidism, polydipsia), and oedematous states (heart failure, cirrhosis, nephrotic syndrome, renal failure).
+The causes of hyponatraemia are classified by volume status: loss of sodium and water (diuretics, vomiting, diarrhoea, adrenal insufficiency), water retention with normal volume (SIADH, hypothyroidism, polydipsia), and oedematous states (heart failure, cirrhosis, nephrotic syndrome, renal failure).
 
 | Volume status | Causes |
 |---|---|
@@ -3893,14 +3891,14 @@ Because sodium is the principal extracellular cation and determinant of plasma o
 
 ## What is hypernatraemia?
 
-**Say this first:** Hypernatraemia is a serum sodium concentration above 145 mmol/L, which indicates a deficit of water relative to sodium and always represents a hyperosmolar state.
+Hypernatraemia is a serum sodium concentration above 145 mmol/L, which indicates a deficit of water relative to sodium and always represents a hyperosmolar state.
 
 The raised osmolality draws water out of cells, causing cellular shrinkage; in the brain this may tear bridging veins and cause intracranial haemorrhage. The clinical features are thirst, irritability, weakness, restlessness, muscle twitching, confusion, seizures and coma. The condition occurs in patients who cannot respond to thirst (infants, elderly, unconscious), or who have excessive water loss. Correction should be gradual to avoid cerebral oedema.
 
 
 ## Causes of hypernatraemia.
 
-**Say this first:** The causes of hypernatraemia are pure water loss (diabetes insipidus, fever, sweating, inadequate intake), loss of hypotonic fluids (vomiting, diarrhoea, osmotic diuresis, burns), and, less commonly, sodium excess (hypertonic saline, sodium bicarbonate, mineralocorticoid excess).
+The causes of hypernatraemia are pure water loss (diabetes insipidus, fever, sweating, inadequate intake), loss of hypotonic fluids (vomiting, diarrhoea, osmotic diuresis, burns), and, less commonly, sodium excess (hypertonic saline, sodium bicarbonate, mineralocorticoid excess).
 
 | Mechanism | Causes |
 |---|---|
@@ -3911,14 +3909,14 @@ The raised osmolality draws water out of cells, causing cellular shrinkage; in t
 
 ## What is hypokalaemia?
 
-**Say this first:** Hypokalaemia is a serum potassium concentration below 3.5 mmol/L.
+Hypokalaemia is a serum potassium concentration below 3.5 mmol/L.
 
 It is a common electrolyte disturbance, and its clinical importance is in cardiac and neuromuscular effects. Features are muscle weakness and cramps, paralysis in severe cases (below 2.5 mmol/L), constipation and paralytic ileus, polyuria from nephrogenic diabetes insipidus, rhabdomyolysis, metabolic alkalosis, and cardiac arrhythmias. The ECG shows flattened T waves, ST depression, prominent U waves and prolonged QT interval; arrhythmias are particularly dangerous in patients taking digoxin. Hypokalaemia is often associated with hypomagnesaemia.
 
 
 ## Causes of hypokalaemia.
 
-**Say this first:** The causes of hypokalaemia are inadequate intake, excessive loss through the gut or kidneys (vomiting, diarrhoea, diuretics, hyperaldosteronism), and shift of potassium into cells (insulin, β-agonists, alkalosis).
+The causes of hypokalaemia are inadequate intake, excessive loss through the gut or kidneys (vomiting, diarrhoea, diuretics, hyperaldosteronism), and shift of potassium into cells (insulin, β-agonists, alkalosis).
 
 | Mechanism | Causes |
 |---|---|
@@ -3931,14 +3929,14 @@ It is a common electrolyte disturbance, and its clinical importance is in cardia
 
 ## What is hyperkalaemia?
 
-**Say this first:** Hyperkalaemia is a serum potassium concentration above 5.0 to 5.5 mmol/L, and is dangerous because it can cause fatal cardiac arrhythmias.
+Hyperkalaemia is a serum potassium concentration above 5.0 to 5.5 mmol/L, and is dangerous because it can cause fatal cardiac arrhythmias.
 
 Clinical features include muscle weakness and paralysis, paraesthesia, nausea, and, most importantly, cardiac conduction abnormalities. The ECG progresses from tall peaked T waves, to prolonged PR interval and loss of P waves, widened QRS complex, sine-wave pattern, ventricular fibrillation and asystole. It is a medical emergency when the potassium is above about 6.5 mmol/L or ECG changes are present. Treatment includes intravenous calcium gluconate to stabilise the myocardium, insulin with glucose, β-agonists, sodium bicarbonate, potassium-binding resins, loop diuretics and dialysis. Pseudohyperkalaemia from haemolysis of the specimen should be excluded.
 
 
 ## Causes of hyperkalaemia.
 
-**Say this first:** The causes of hyperkalaemia are reduced renal excretion (renal failure, adrenal insufficiency, potassium-sparing drugs), shift of potassium out of cells (acidosis, tissue breakdown), and excessive intake; pseudohyperkalaemia from haemolysis must be excluded.
+The causes of hyperkalaemia are reduced renal excretion (renal failure, adrenal insufficiency, potassium-sparing drugs), shift of potassium out of cells (acidosis, tissue breakdown), and excessive intake; pseudohyperkalaemia from haemolysis must be excluded.
 
 | Mechanism | Causes |
 |---|---|
@@ -3951,14 +3949,14 @@ Clinical features include muscle weakness and paralysis, paraesthesia, nausea, a
 
 ## What is hypocalcaemia?
 
-**Say this first:** Hypocalcaemia is a serum total calcium concentration below about 8.5 mg/dL (2.1 mmol/L), corrected for the serum albumin, or a low ionised calcium; it causes neuromuscular irritability and tetany.
+Hypocalcaemia is a serum total calcium concentration below about 8.5 mg/dL (2.1 mmol/L), corrected for the serum albumin, or a low ionised calcium; it causes neuromuscular irritability and tetany.
 
 Features include perioral and fingertip paraesthesias, muscle cramps, carpopedal spasm and tetany, laryngospasm, seizures, positive Chvostek sign (facial twitching on tapping the facial nerve) and Trousseau sign (carpal spasm with a blood pressure cuff), prolonged QT interval and arrhythmias, and in chronic cases cataracts, dry skin and basal ganglia calcification. Because about half of calcium is bound to albumin, a low albumin lowers total calcium without lowering the ionised fraction (pseudohypocalcaemia).
 
 
 ## Causes of hypocalcaemia.
 
-**Say this first:** The causes of hypocalcaemia are hypoparathyroidism, vitamin D deficiency, chronic renal failure, hypomagnesaemia, acute pancreatitis and massive transfusion; hypoalbuminaemia causes a spurious fall.
+The causes of hypocalcaemia are hypoparathyroidism, vitamin D deficiency, chronic renal failure, hypomagnesaemia, acute pancreatitis and massive transfusion; hypoalbuminaemia causes a spurious fall.
 
 | Cause | Mechanism |
 |---|---|
@@ -3973,14 +3971,14 @@ Features include perioral and fingertip paraesthesias, muscle cramps, carpopedal
 
 ## What is hypercalcaemia?
 
-**Say this first:** Hypercalcaemia is a serum total calcium concentration above about 10.5 mg/dL (2.6 mmol/L), corrected for albumin, and its commonest causes are primary hyperparathyroidism and malignancy.
+Hypercalcaemia is a serum total calcium concentration above about 10.5 mg/dL (2.6 mmol/L), corrected for albumin, and its commonest causes are primary hyperparathyroidism and malignancy.
 
 Clinical features are summarised as "stones, bones, groans and psychic moans": renal stones, polyuria with nephrogenic diabetes insipidus and dehydration, nephrocalcinosis, bone pain and fractures, abdominal pain, constipation, nausea, peptic ulcer and pancreatitis, fatigue, depression, confusion and coma, shortened QT interval, and arrhythmias. Metastatic calcification of soft tissues may occur. Severe hypercalcaemia is a medical emergency.
 
 
 ## Causes of hypercalcaemia.
 
-**Say this first:** The causes of hypercalcaemia are primary hyperparathyroidism and malignancy (bone metastases and tumours that produce PTH-related protein), which account for most cases, followed by vitamin D excess, granulomatous disease, drugs and immobilisation.
+The causes of hypercalcaemia are primary hyperparathyroidism and malignancy (bone metastases and tumours that produce PTH-related protein), which account for most cases, followed by vitamin D excess, granulomatous disease, drugs and immobilisation.
 
 | Group | Causes |
 |---|---|
@@ -3993,14 +3991,14 @@ Clinical features are summarised as "stones, bones, groans and psychic moans": r
 
 ## What is metabolic acidosis?
 
-**Say this first:** Metabolic acidosis is an acid-base disorder in which a primary fall in plasma bicarbonate lowers the blood pH below 7.35, caused by gain of acid or loss of bicarbonate, and compensated by hyperventilation.
+Metabolic acidosis is an acid-base disorder in which a primary fall in plasma bicarbonate lowers the blood pH below 7.35, caused by gain of acid or loss of bicarbonate, and compensated by hyperventilation.
 
 The arterial blood gas shows a low pH, a low HCO₃⁻ (below 22 mmol/L) and a compensatory fall in PCO₂. It is classified by the anion gap into high anion gap (accumulation of unmeasured acids) and normal anion gap (hyperchloraemic, from bicarbonate loss) types. The respiratory compensation produces deep, rapid, sighing breathing (Kussmaul respiration). Other features are hypotension, peripheral vasodilation, hyperkalaemia (potassium shifts out of cells), cardiac arrhythmias, reduced cardiac contractility, confusion, stupor and coma.
 
 
 ## Causes of metabolic acidosis.
 
-**Say this first:** The causes of metabolic acidosis are divided into high anion gap (lactic acidosis, diabetic ketoacidosis, renal failure, poisoning by salicylates, methanol and ethylene glycol) and normal anion gap (diarrhoea, renal tubular acidosis, acetazolamide, ureteral diversion).
+The causes of metabolic acidosis are divided into high anion gap (lactic acidosis, diabetic ketoacidosis, renal failure, poisoning by salicylates, methanol and ethylene glycol) and normal anion gap (diarrhoea, renal tubular acidosis, acetazolamide, ureteral diversion).
 
 | Type | Causes |
 |---|---|
@@ -4010,7 +4008,7 @@ The arterial blood gas shows a low pH, a low HCO₃⁻ (below 22 mmol/L) and a c
 
 ## What is metabolic alkalosis?
 
-**Say this first:** Metabolic alkalosis is an acid–base disorder in which a primary rise in plasma bicarbonate (HCO₃⁻ above 28 mmol/L) raises the blood pH above 7.45, caused by loss of acid or gain of alkali, and compensated by hypoventilation.
+Metabolic alkalosis is an acid–base disorder in which a primary rise in plasma bicarbonate (HCO₃⁻ above 28 mmol/L) raises the blood pH above 7.45, caused by loss of acid or gain of alkali, and compensated by hypoventilation.
 
 **Compensation.** Hypoventilation raises PCO₂; this is limited by hypoxia, so compensation is incomplete. The kidney normally excretes excess bicarbonate, so metabolic alkalosis persists only when renal bicarbonate excretion is impaired, as in volume depletion, chloride depletion and potassium depletion.
 
@@ -4025,7 +4023,7 @@ The arterial blood gas shows a high pH, high HCO₃⁻ (above 28 mmol/L) and com
 
 ## Causes of metabolic alkalosis.
 
-**Say this first:** The causes of metabolic alkalosis are loss of gastric acid (vomiting, nasogastric suction), diuretic therapy, mineralocorticoid excess, severe potassium depletion, and ingestion or administration of alkali.
+The causes of metabolic alkalosis are loss of gastric acid (vomiting, nasogastric suction), diuretic therapy, mineralocorticoid excess, severe potassium depletion, and ingestion or administration of alkali.
 
 | Type | Causes |
 |---|---|
@@ -4036,7 +4034,7 @@ The arterial blood gas shows a high pH, high HCO₃⁻ (above 28 mmol/L) and com
 
 ## Define gene.
 
-**Say this first:** A gene is a segment of DNA that carries the coded information for making a specific functional product, usually a polypeptide and sometimes a functional RNA. It is the basic physical and functional unit of heredity.
+A gene is a segment of DNA that carries the coded information for making a specific functional product, usually a polypeptide and sometimes a functional RNA. It is the basic physical and functional unit of heredity.
 
 The human genome contains about 3 billion base pairs distributed over 23 pairs of chromosomes and about 20,000 protein-coding genes. Exons make up only about 1.5% of the genome. A typical protein-coding gene has these parts:
 
@@ -4050,7 +4048,7 @@ Transcription produces a pre-mRNA, splicing yields mature mRNA, and translation 
 
 ## What is mutation?
 
-**Say this first:** A mutation is a permanent change in the DNA sequence. If it occurs in germ cells it can be passed to offspring and cause inherited disease; if it occurs in somatic cells it is not transmitted and cannot cause hereditary disease.
+A mutation is a permanent change in the DNA sequence. If it occurs in germ cells it can be passed to offspring and cause inherited disease; if it occurs in somatic cells it is not transmitted and cannot cause hereditary disease.
 
 Germline mutations are present in every cell of the offspring and are the basis of hereditary disorders. Somatic mutations are restricted to a cell and its progeny. They drive cancer, produce clonal expansions such as clonal haematopoiesis of indeterminate potential, and, when they arise early in development, give rise to mosaic overgrowth syndromes. Mutations arise from errors in DNA replication or repair, or from mutagens such as ionising radiation, ultraviolet light and chemicals. A common DNA variant present in more than 1% of the population is called a polymorphism rather than a mutation. Polymorphisms rarely cause disease on their own but contribute additively to complex multigenic disorders.
 
@@ -4067,7 +4065,7 @@ Mutations interfere with gene function at every level. Deletions and promoter mu
 
 ## Types of mutation.
 
-**Say this first:** Mutations are classified into point mutations, which include missense, nonsense and silent changes, mutations of noncoding sequences, deletions and insertions (in-frame or frameshift), structural alterations of genes, and trinucleotide-repeat expansions.
+Mutations are classified into point mutations, which include missense, nonsense and silent changes, mutations of noncoding sequences, deletions and insertions (in-frame or frameshift), structural alterations of genes, and trinucleotide-repeat expansions.
 
 | Type | Nature | Consequence | Example |
 |---|---|---|---|
@@ -4085,7 +4083,7 @@ Mutations can also be classed functionally as loss of function or gain of functi
 
 ## Two examples of point mutation.
 
-**Say this first:** Sickle cell anaemia is a missense point mutation in the β-globin gene, and β-thalassaemia, in some patients, is a nonsense point mutation in the same gene.
+Sickle cell anaemia is a missense point mutation in the β-globin gene, and β-thalassaemia, in some patients, is a nonsense point mutation in the same gene.
 
 In sickle cell anaemia, a single base substitution changes the sixth codon of the β-globin chain from GAG (glutamic acid) to GUG (valine) in mRNA. This is a nonconservative missense mutation. The substitution promotes polymerisation of deoxygenated haemoglobin S, which distorts red cells and causes haemolysis and vascular occlusion.
 
@@ -4094,7 +4092,7 @@ In the nonsense form of β-thalassaemia, a point mutation changes the codon for 
 
 ## Genetic vs hereditary vs familial vs congenital disorder (differences).
 
-**Say this first:** A genetic disorder is caused by an abnormality of the genome. A hereditary disorder is a genetic disorder transmitted through the germline from generation to generation. A familial disorder is one that clusters in families, and a congenital disorder is simply present at birth.
+A genetic disorder is caused by an abnormality of the genome. A hereditary disorder is a genetic disorder transmitted through the germline from generation to generation. A familial disorder is one that clusters in families, and a congenital disorder is simply present at birth.
 
 | Term | Meaning | Key point |
 |---|---|---|
@@ -4108,7 +4106,7 @@ Not all genetic diseases are congenital. Huntington disease, for example, is her
 
 ## Classify genetic disorders.
 
-**Say this first:** Genetic disorders are classified into single-gene (Mendelian) disorders, chromosomal disorders, complex multigenic (multifactorial) disorders, single-gene disorders with nonclassic inheritance, and conditions caused by somatic mosaicism.
+Genetic disorders are classified into single-gene (Mendelian) disorders, chromosomal disorders, complex multigenic (multifactorial) disorders, single-gene disorders with nonclassic inheritance, and conditions caused by somatic mosaicism.
 
 1. **Single-gene (monogenic, Mendelian) disorders.** Mutations of large effect with high penetrance follow Mendelian patterns.
 
@@ -4131,7 +4129,7 @@ Not all genetic diseases are congenital. Huntington disease, for example, is her
 
 ## One example of each type of genetic disorder.
 
-**Say this first:** Familial hypercholesterolaemia or Marfan syndrome for autosomal dominant, cystic fibrosis or Tay-Sachs disease for autosomal recessive, Duchenne muscular dystrophy or haemophilia A for X-linked recessive, Down syndrome for chromosomal, type 2 diabetes mellitus for multifactorial, fragile X syndrome for trinucleotide-repeat, and Prader-Willi syndrome for imprinting.
+Familial hypercholesterolaemia or Marfan syndrome for autosomal dominant, cystic fibrosis or Tay-Sachs disease for autosomal recessive, Duchenne muscular dystrophy or haemophilia A for X-linked recessive, Down syndrome for chromosomal, type 2 diabetes mellitus for multifactorial, fragile X syndrome for trinucleotide-repeat, and Prader-Willi syndrome for imprinting.
 
 | Type | Example |
 |---|---|
@@ -4154,7 +4152,7 @@ Not all genetic diseases are congenital. Huntington disease, for example, is her
 
 ## Transmission patterns of single-gene disorders.
 
-**Say this first:** Single-gene disorders follow one of three Mendelian patterns of inheritance: autosomal dominant, autosomal recessive, or X-linked.
+Single-gene disorders follow one of three Mendelian patterns of inheritance: autosomal dominant, autosomal recessive, or X-linked.
 
 **Autosomal dominant** disorders manifest in the heterozygous state. One parent of an affected person is usually affected, males and females are equally affected, and either sex can transmit the disorder. Each child of an affected parent has a 50% risk. Exceptions are:
 
@@ -4192,7 +4190,7 @@ Related concepts are pleiotropism (one mutation, many effects, as in sickle cell
 
 ## Criteria of autosomal dominant disorders.
 
-**Say this first:** The disorder is expressed in the heterozygous state, so an affected person usually has an affected parent, males and females are equally affected, both sexes transmit it, and each child of an affected parent has a 50% chance of inheriting it.
+The disorder is expressed in the heterozygous state, so an affected person usually has an affected parent, males and females are equally affected, both sexes transmit it, and each child of an affected parent has a 50% chance of inheriting it.
 
 The criteria are as follows:
 
@@ -4212,7 +4210,7 @@ The criteria are as follows:
 
 ## Two examples of autosomal dominant disorders.
 
-**Say this first:** Marfan syndrome, caused by mutations in the fibrillin-1 gene, and familial hypercholesterolaemia, caused by mutations in the LDL receptor gene.
+Marfan syndrome, caused by mutations in the fibrillin-1 gene, and familial hypercholesterolaemia, caused by mutations in the LDL receptor gene.
 
 **Marfan syndrome.** This is a connective tissue disorder with a prevalence of about 1 in 5000. About 75% of cases are familial and the rest arise from new mutations. Mutations in FBN1 (15q21.1) cause abnormal fibrillin-1, the main component of the extracellular matrix microfibrils that scaffold elastin. Most mutations are missense and act through a dominant negative effect; in 10–15% the mechanism is haploinsufficiency. Defective microfibrils also release excess TGF-β, which explains features such as bone overgrowth, myxoid mitral valves and aortic wall degeneration. The clinical picture comprises:
 
@@ -4225,7 +4223,7 @@ The criteria are as follows:
 
 ## Criteria of autosomal recessive disorders.
 
-**Say this first:** Both alleles of an autosomal gene must be mutated for the disease to appear, so the parents are usually unaffected carriers, the trait skips generations, and each sibling has a one in four chance of being affected.
+Both alleles of an autosomal gene must be mutated for the disease to appear, so the parents are usually unaffected carriers, the trait skips generations, and each sibling has a one in four chance of being affected.
 
 The criteria are as follows:
 
@@ -4240,7 +4238,7 @@ The criteria are as follows:
 
 ## Two examples of autosomal recessive disorders.
 
-**Say this first:** Tay-Sachs disease, a lysosomal storage disease, and phenylketonuria, an inborn error of amino acid metabolism.
+Tay-Sachs disease, a lysosomal storage disease, and phenylketonuria, an inborn error of amino acid metabolism.
 
 **Tay-Sachs disease.** This is GM2 gangliosidosis caused by deficiency of the α-subunit of β-hexosaminidase A (HEXA gene). It is common in Ashkenazi Jews, who have a carrier rate of about 1 in 30. GM2 ganglioside accumulates in neurons, which become ballooned with distended lysosomes. Electron microscopy shows whorled, "onion-skin" lysosomal membranes. Infants are normal at birth but from about 6 months show relentless motor and mental deterioration, flaccidity and blindness. A cherry-red spot in the macula is characteristic though not pathognomonic. Death occurs at 2–3 years. Carrier detection and antenatal diagnosis are possible by enzyme assay and DNA analysis.
 
@@ -4306,7 +4304,7 @@ Examples. Cystic fibrosis, phenylketonuria, galactosaemia, homocystinuria, lysos
 
 ## Types of chromosomal disorders.
 
-**Say this first:** Chromosomal disorders are of two types, numerical and structural, and each can involve autosomes or sex chromosomes.
+Chromosomal disorders are of two types, numerical and structural, and each can involve autosomes or sex chromosomes.
 
 Numerical abnormalities. The normal complement is 46 chromosomes, which is euploid (an exact multiple of the haploid number, 23). A complement that is not an exact multiple of 23 is aneuploidy. The usual causes are nondisjunction in meiosis or mitosis and anaphase lag. Nondisjunction in gametogenesis produces gametes with n+1 or n−1 chromosomes, which after fertilisation give trisomic (2n+1) or monosomic (2n−1) zygotes. Examples are trisomy 21, 18 and 13, Turner syndrome (45,X) and Klinefelter syndrome (47,XXY).
 
@@ -4317,7 +4315,7 @@ Mosaicism. Mitotic errors in early development give two or more cell lines with 
 
 ## Examples of chromosomal / cytogenetic disorders.
 
-**Say this first:** Down syndrome, Edwards syndrome, Patau syndrome, Turner syndrome, Klinefelter syndrome and 22q11.2 deletion syndrome.
+Down syndrome, Edwards syndrome, Patau syndrome, Turner syndrome, Klinefelter syndrome and 22q11.2 deletion syndrome.
 
 | Category | Disorder | Chromosomal abnormality |
 |---|---|---|
@@ -4333,7 +4331,7 @@ Trisomies 18 and 13 usually result from meiotic nondisjunction and are associate
 
 ## Classic karyotype of trisomy 21.
 
-**Say this first:** The classic karyotype is 47,XX,+21 in a female and 47,XY,+21 in a male, with three copies of chromosome 21.
+The classic karyotype is 47,XX,+21 in a female and 47,XY,+21 in a male, with three copies of chromosome 21.
 
 The karyotype is written as the total number of chromosomes, then the sex chromosomes, then the abnormality. About 95% of Down syndrome patients have this free trisomy 21, caused by meiotic nondisjunction (maternal in origin in about 95% of cases). The parents have normal karyotypes. The other forms are:
 
@@ -4343,14 +4341,14 @@ The karyotype is written as the total number of chromosomes, then the sex chromo
 
 ## Disorders associated with alteration in the number of chromosomes.
 
-**Say this first:** These are the aneuploidies, mainly trisomy 21 (Down syndrome), trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome), monosomy X (Turner syndrome) and 47,XXY (Klinefelter syndrome).
+These are the aneuploidies, mainly trisomy 21 (Down syndrome), trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome), monosomy X (Turner syndrome) and 47,XXY (Klinefelter syndrome).
 
 An abnormal number of chromosomes, not a multiple of 23, is aneuploidy, and its usual causes are nondisjunction and anaphase lag. Monosomy of an autosome usually causes too much loss of genetic information to permit live birth. Several autosomal trisomies permit survival, although except for trisomy 21 they produce severe malformations and early death. Sex chromosome numerical abnormalities are far better tolerated, because only one X chromosome is active (lyonisation) and the Y chromosome carries little genetic material. Mosaic forms, for example 45,X/47,XXX, arise by nondisjunction in early mitotic divisions.
 
 
 ## Complications of Down syndrome.
 
-**Say this first:** The main complications are congenital heart disease, gastrointestinal atresias, increased risk of leukaemia, early Alzheimer disease, and immune abnormalities with serious infections and thyroid autoimmunity.
+The main complications are congenital heart disease, gastrointestinal atresias, increased risk of leukaemia, early Alzheimer disease, and immune abnormalities with serious infections and thyroid autoimmunity.
 
 - **Congenital heart disease** is present in about 40% of patients. Atrioventricular septal defects account for 43%, ventricular septal defects 32%, atrial septal defects 19% and tetralogy of Fallot 6%. Cardiac problems cause most deaths in infancy and early childhood.
 - **Gastrointestinal malformations** include atresia of the oesophagus and small bowel.
@@ -4364,7 +4362,7 @@ Improved care has increased longevity, and the median age at death is now about 
 
 ## Structural alterations of chromosomes in cytogenetic disorders.
 
-**Say this first:** Structural alterations include translocations (balanced reciprocal and Robertsonian), deletions, inversions, isochromosomes and ring chromosomes. They result from chromosome breakage followed by loss or rearrangement of material.
+Structural alterations include translocations (balanced reciprocal and Robertsonian), deletions, inversions, isochromosomes and ring chromosomes. They result from chromosome breakage followed by loss or rearrangement of material.
 
 To be visible by routine banding, about 2–4 million base pairs must be involved. FISH detects changes as small as kilobases.
 
@@ -4379,7 +4377,7 @@ To be visible by routine banding, about 2–4 million base pairs must be involve
 
 ## What do you mean by karyotype?
 
-**Say this first:** A karyotype is the complete chromosome complement of an individual's cells, displayed as an arrangement of the chromosomes in pairs by decreasing length, followed by the sex chromosomes. Karyotyping is the study of chromosomes.
+A karyotype is the complete chromosome complement of an individual's cells, displayed as an arrangement of the chromosomes in pairs by decreasing length, followed by the sex chromosomes. Karyotyping is the study of chromosomes.
 
 Dividing cells are arrested in metaphase with mitotic spindle inhibitors (colchicine derivatives) and stained. In the metaphase spread each chromosome shows two chromatids joined at the centromere. The chromosomes are arranged by length, and the sex chromosomes are placed last. The most useful method is Giemsa (G) banding, which produces alternating light and dark bands specific to each chromosome. Standard G banding resolves about 400–800 bands per haploid set, and prophase preparations up to about 1500. The short arm is designated p and the long arm q, and each arm is divided into regions, bands and sub-bands numbered from the centromere outward (Xp21.2).
 
@@ -4388,7 +4386,7 @@ The normal karyotypes are 46,XX and 46,XY. Notation lists the total number, the 
 
 ## Normal genotype of a male and a female.
 
-**Say this first:** The normal male has 46,XY and the normal female has 46,XX. Each has 22 pairs of autosomes plus two sex chromosomes.
+The normal male has 46,XY and the normal female has 46,XX. Each has 22 pairs of autosomes plus two sex chromosomes.
 
 Strictly, these are the chromosomal complement (karyotype) rather than the genotype. Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and two sex chromosomes, XX in females and XY in males. Gametes are haploid, with 23 chromosomes. A single Y chromosome determines the male sex, through the SRY gene on its short arm, whatever the number of X chromosomes. In females one X is inactivated, giving the Barr body.
 
@@ -4459,7 +4457,7 @@ Clinical significance. The number of Barr bodies equals the number of X chromoso
 
 ## 10-year-old boy with very low IQ, flat facial profile, single palmar crease, stunted growth — Probable genetic diagnosis? Haematological malignancy that may occur in future?
 
-**Say this first:** The probable diagnosis is Down syndrome, trisomy 21, and the haematological malignancy he is at risk of is acute leukaemia, particularly acute lymphoblastic leukaemia and also acute myeloid leukaemia.
+The probable diagnosis is Down syndrome, trisomy 21, and the haematological malignancy he is at risk of is acute leukaemia, particularly acute lymphoblastic leukaemia and also acute myeloid leukaemia.
 
 Diagnosis. Intellectual disability, a flat facial profile and stunted growth with a single palmar (simian) crease are characteristic of Down syndrome. It is confirmed by karyotyping, which usually shows 47,XY,+21 (about 95%). A translocation or mosaic karyotype is possible, and the type matters for genetic counseling.
 
@@ -4468,7 +4466,7 @@ Malignancy. Children with Down syndrome have a 20-fold higher risk of precursor 
 
 ## Adolescent girl with primary amenorrhoea, webbing of neck, broad chest, underdeveloped breasts — Likely diagnosis? Karyotype?
 
-**Say this first:** The likely diagnosis is Turner syndrome, and the classic karyotype is 45,X.
+The likely diagnosis is Turner syndrome, and the classic karyotype is 45,X.
 
 Turner syndrome results from complete or partial monosomy of the X chromosome and is characterised by hypogonadism in phenotypic females. Turner syndrome is the single most important cause of primary amenorrhoea (about a third of cases). The ovaries are reduced to atrophic fibrous "streak" ovaries, so there is little breast development, infantile genitalia and sparse pubic hair. Associated features are short stature, neck webbing, a low posterior hairline, a shield-like broad chest with widely spaced nipples, cubitus valgus, and cardiovascular malformations (preductal coarctation of the aorta, bicuspid aortic valve).
 
@@ -4520,7 +4518,7 @@ The karyotype is determined by G-banded karyotyping of peripheral blood. Because
 
 ## Outline of laboratory diagnosis of genetic disorders.
 
-**Say this first:** Laboratory diagnosis rests on cytogenetic analysis (karyotyping, FISH, microarrays), molecular genetic testing (PCR-based methods, DNA sequencing including next-generation sequencing, linkage analysis, methylation analysis), and, for metabolic disorders, enzyme and biochemical assays. The test is chosen according to the type of lesion suspected.
+Laboratory diagnosis rests on cytogenetic analysis (karyotyping, FISH, microarrays), molecular genetic testing (PCR-based methods, DNA sequencing including next-generation sequencing, linkage analysis, methylation analysis), and, for metabolic disorders, enzyme and biochemical assays. The test is chosen according to the type of lesion suspected.
 
 The first step is clinical assessment and family history, followed by selection of the test according to the likely genetic alteration, from single-base substitutions to loss or gain of entire chromosomes. Markers may be constitutional (present in every cell, as with CFTR mutations) or somatic (restricted to a tissue or tumour), and this determines the sample.
 
@@ -4547,7 +4545,7 @@ Prenatal testing is indicated by advanced maternal age, a parent with a balanced
 
 ## Samples used for (prenatal and postnatal) diagnosis of genetic disorders.
 
-**Say this first:** Prenatal diagnosis uses amniotic fluid, chorionic villi, foetal cord blood and, for screening, maternal blood with cell-free foetal DNA. Postnatal diagnosis is usually done on peripheral blood, with other tissues used as needed.
+Prenatal diagnosis uses amniotic fluid, chorionic villi, foetal cord blood and, for screening, maternal blood with cell-free foetal DNA. Postnatal diagnosis is usually done on peripheral blood, with other tissues used as needed.
 
 Prenatal samples.
 
@@ -4592,7 +4590,7 @@ Limitations. Abnormalities smaller than about 2–4 million base pairs are not v
 
 ## Define immunity.
 
-**Say this first:** Immunity is the protection of the body against infectious pathogens, achieved through the coordinated action of cells and molecules of the immune system.
+Immunity is the protection of the body against infectious pathogens, achieved through the coordinated action of cells and molecules of the immune system.
 
 This is the classic definition. In its broader sense, immunity includes host reactions against cancers (tumour immunity), tissue transplants and even self antigens (autoimmunity). The mechanisms fall into two categories. Innate immunity (natural or native) consists of intrinsic mechanisms that are always present and react immediately, forming the first line of defence: epithelial barriers, phagocytes (neutrophils and macrophages), dendritic cells, natural killer cells and other innate lymphoid cells, and plasma proteins including complement. Adaptive immunity (acquired or specific) is stimulated by exposure to microbes and other foreign substances. It develops more slowly but is more powerful, and is mediated by lymphocytes with memory. By convention, "immune response" usually refers to adaptive immunity.
 
@@ -4601,7 +4599,7 @@ Immunity can fail by being deficient (immunodeficiency), excessive or harmful (h
 
 ## Types of immunity.
 
-**Say this first:** Immunity is of two main types, innate (natural) and adaptive (acquired). Adaptive immunity is further divided into humoral (antibody-mediated) and cell-mediated immunity.
+Immunity is of two main types, innate (natural) and adaptive (acquired). Adaptive immunity is further divided into humoral (antibody-mediated) and cell-mediated immunity.
 
 | Feature | Innate immunity | Adaptive immunity |
 |---|---|---|
@@ -4647,14 +4645,14 @@ Functions and clinical significance.
 
 ## Define hypersensitivity.
 
-**Say this first:** Hypersensitivity is an excessive or harmful immune reaction to an antigen, resulting in tissue injury and disease, usually in a previously sensitised individual.
+Hypersensitivity is an excessive or harmful immune reaction to an antigen, resulting in tissue injury and disease, usually in a previously sensitised individual.
 
 Individuals previously exposed to an antigen are said to be sensitised and show detectable reactions on re-exposure. Hypersensitivity may be provoked by exogenous antigens (dust, pollen, foods, drugs, microbes, chemicals), producing allergy, or by self antigens, producing autoimmune disease. It results from an imbalance between the effector mechanisms of the immune response and the control mechanisms that limit them, often a failure of normal regulation. The mechanisms of injury are the same as the normal effector mechanisms of defence, but they are excessive, poorly controlled or misdirected. Susceptibility is often associated with the inheritance of HLA and non-HLA susceptibility genes.
 
 
 ## Classify hypersensitivity.
 
-**Say this first:** Hypersensitivity reactions are classified by mechanism into four types: type I (immediate, IgE-mediated), type II (antibody-mediated), type III (immune complex–mediated) and type IV (T cell–mediated, delayed).
+Hypersensitivity reactions are classified by mechanism into four types: type I (immediate, IgE-mediated), type II (antibody-mediated), type III (immune complex–mediated) and type IV (T cell–mediated, delayed).
 
 | Type | Mechanism | Lesion | Examples |
 |---|---|---|---|
@@ -4668,7 +4666,7 @@ Multiple mechanisms may operate in one disease.
 
 ## Example of each type of hypersensitivity.
 
-**Say this first:** Type I: anaphylaxis or atopic asthma. Type II: autoimmune haemolytic anaemia or Goodpasture syndrome. Type III: SLE or serum sickness. Type IV: contact dermatitis or the tuberculin reaction.
+Type I: anaphylaxis or atopic asthma. Type II: autoimmune haemolytic anaemia or Goodpasture syndrome. Type III: SLE or serum sickness. Type IV: contact dermatitis or the tuberculin reaction.
 
 - **Type I:** systemic anaphylaxis (drugs, bee sting, peanuts), allergic rhinitis (hay fever), atopic bronchial asthma, urticaria, atopic dermatitis, food allergy.
 - **Type II:**
@@ -4681,7 +4679,7 @@ Multiple mechanisms may operate in one disease.
 
 ## Mechanism of type 2 hypersensitivity.
 
-**Say this first:** In type II hypersensitivity, IgG or IgM antibodies bind to antigens on cell surfaces or in the extracellular matrix and cause injury by opsonisation and phagocytosis, complement-mediated lysis, inflammation, or interference with cell function.
+In type II hypersensitivity, IgG or IgM antibodies bind to antigens on cell surfaces or in the extracellular matrix and cause injury by opsonisation and phagocytosis, complement-mediated lysis, inflammation, or interference with cell function.
 
 The antigen may be a normal self antigen or an exogenous substance, such as a drug or microbial protein, bound to the cell or matrix. The mechanisms are:
 
@@ -4724,7 +4722,7 @@ The local forms of immediate hypersensitivity are related reactions of the same 
 
 ## What do you mean by autoimmunity?
 
-**Say this first:** Autoimmunity is an immune reaction against the body's own (self) antigens, resulting from a failure of self-tolerance, which can lead to autoimmune disease.
+Autoimmunity is an immune reaction against the body's own (self) antigens, resulting from a failure of self-tolerance, which can lead to autoimmune disease.
 
 Autoimmune diseases are estimated to affect about 5–8% of the population of the United States and their incidence is increasing. Immunologic tolerance is unresponsiveness to an antigen induced by exposure of lymphocytes to it. Central tolerance eliminates self-reactive lymphocytes in the thymus (negative selection, with AIRE-dependent expression of tissue antigens) and bone marrow (receptor editing or deletion). Peripheral tolerance operates through anergy, suppression by regulatory T cells (FOXP3⁺, CD25⁺), deletion by apoptosis, and sequestration of antigens in immune-privileged sites.
 
@@ -4733,7 +4731,7 @@ Autoimmunity arises from inherited susceptibility genes (notably HLA alleles, an
 
 ## What do you mean by immunodeficiency?
 
-**Say this first:** Immunodeficiency is a state of defective immune function, in which the body cannot adequately defend itself, and it manifests as increased susceptibility to infections and certain cancers.
+Immunodeficiency is a state of defective immune function, in which the body cannot adequately defend itself, and it manifests as increased susceptibility to infections and certain cancers.
 
 Immunodeficiency diseases are divided into:
 
@@ -4743,7 +4741,7 @@ Immunodeficiency diseases are divided into:
 
 ## Name some autoimmune diseases.
 
-**Say this first:** Examples are systemic lupus erythematosus, rheumatoid arthritis, type 1 diabetes mellitus, multiple sclerosis, Graves disease, myasthenia gravis, autoimmune haemolytic anaemia, pernicious anaemia and Goodpasture syndrome.
+Examples are systemic lupus erythematosus, rheumatoid arthritis, type 1 diabetes mellitus, multiple sclerosis, Graves disease, myasthenia gravis, autoimmune haemolytic anaemia, pernicious anaemia and Goodpasture syndrome.
 
 Systemic (generalised): systemic lupus erythematosus, rheumatoid arthritis, Sjögren syndrome, systemic sclerosis (scleroderma), inflammatory myopathies (polymyositis, dermatomyositis), polyarteritis nodosa and other vasculitides, mixed connective tissue disease.
 
@@ -4789,7 +4787,7 @@ The clinical picture is that of Graves disease, an organ-specific autoimmune dis
 
 ## What is amyloidosis?
 
-**Say this first:** Amyloidosis is a generic term for disorders in which proteins with the propensity to aggregate form fibrils and deposit in extracellular tissues, causing tissue damage and functional compromise. The deposits stain with Congo red and show apple-green birefringence under polarised light.
+Amyloidosis is a generic term for disorders in which proteins with the propensity to aggregate form fibrils and deposit in extracellular tissues, causing tissue damage and functional compromise. The deposits stain with Congo red and show apple-green birefringence under polarised light.
 
 Nature of amyloid. Amyloid is not a single chemical entity. More than 40 different proteins can form amyloid, but all deposits have a uniform physical organisation. By electron microscopy they are continuous, nonbranching fibrils 8–10 nm in diameter, composed of β-pleated sheet protofilaments, which explains the Congo red staining. About 95% of the deposit is fibril protein and 5% is serum amyloid P component and glycoproteins, including proteoglycans and glycosaminoglycans. The name "amyloid" (starch-like) is a historical misnomer.
 
@@ -4819,7 +4817,7 @@ Prognosis. Generalised amyloidosis has a poor prognosis. Median survival in AL a
 
 ## Define neoplasia / neoplasm.
 
-**Say this first:** A neoplasm is a disorder of cell growth that is triggered by acquired, or less commonly inherited, mutations affecting a single cell and its clonal progeny. The mutations give the neoplastic cells a growth advantage, so that they proliferate excessively, independently of the physiologic signals and controls that regulate normal tissue growth, and they continue to do so even after the stimulus that provoked the change has been withdrawn.
+A neoplasm is a disorder of cell growth that is triggered by acquired, or less commonly inherited, mutations affecting a single cell and its clonal progeny. The mutations give the neoplastic cells a growth advantage, so that they proliferate excessively, independently of the physiologic signals and controls that regulate normal tissue growth, and they continue to do so even after the stimulus that provoked the change has been withdrawn.
 
 Neoplasia literally means "new growth", and the collection of cells and stroma that make up a new growth is called a neoplasm. The word tumour originally meant the swelling caused by inflammation, but it is now used as a synonym for neoplasm, and oncology (Greek oncos, tumour) is the study of tumours. Because physicians find it difficult to define a neoplasm precisely, the classical definition of Willis is still widely quoted: an abnormal mass of tissue whose growth exceeds, and is uncoordinated with, that of the normal tissues and persists in the same excessive manner after cessation of the stimulus that evoked the change. The modern molecular definition places the emphasis on the cause of this behaviour, namely mutations that alter the function of genes controlling proliferation, survival and genomic integrity (proto-oncogenes, tumour suppressor genes, apoptosis-regulating genes and DNA repair genes).
 
@@ -4830,7 +4828,7 @@ Neoplasms are broadly divided into benign tumours, which remain localised, and m
 
 ## Differences between hyperplasia and neoplasia.
 
-**Say this first:** Hyperplasia is a controlled, reversible, polyclonal increase in the number of cells in response to a stimulus and it regresses when the stimulus is removed, whereas neoplasia is an autonomous, monoclonal proliferation caused by acquired mutations that persists after the stimulus has gone and does not regress.
+Hyperplasia is a controlled, reversible, polyclonal increase in the number of cells in response to a stimulus and it regresses when the stimulus is removed, whereas neoplasia is an autonomous, monoclonal proliferation caused by acquired mutations that persists after the stimulus has gone and does not regress.
 
 Hyperplasia is a physiologic or pathologic response in which normal cells respond to hormones or growth factors by dividing more often; the cells stay under the regulatory control of the signals that evoke them, and the proliferation therefore stops when the signals stop. Neoplasia arises when a single cell acquires mutations that free it from this control, and its clonal descendants proliferate without regard to physiologic signals.
 
@@ -4851,7 +4849,7 @@ Pathologic hyperplasia, particularly when caused by sustained trophic stimulatio
 
 ## Types of neoplasm.
 
-**Say this first:** Neoplasms are classified by their behaviour into benign and malignant tumours, and by their histogenesis, that is, by the cell or tissue from which they arise, into epithelial, mesenchymal (connective tissue), haematopoietic, mixed and germ cell tumours.
+Neoplasms are classified by their behaviour into benign and malignant tumours, and by their histogenesis, that is, by the cell or tissue from which they arise, into epithelial, mesenchymal (connective tissue), haematopoietic, mixed and germ cell tumours.
 
 **By behaviour.** Benign tumours remain localised at their site of origin, grow as cohesive expansile masses, are usually well differentiated and are generally amenable to surgical removal, so that the patient usually survives. Malignant tumours, collectively called cancers, invade and destroy adjacent structures and can spread (metastasise) to distant sites. Some tumours, such as basal cell carcinoma of the skin and gliomas, are locally invasive but only rarely metastasise, which illustrates that invasiveness and metastasis are separable properties.
 
@@ -4870,7 +4868,7 @@ In addition, non-neoplastic lesions with misleading names (hamartoma and chorist
 
 ## Two examples of each type of neoplasm.
 
-**Say this first:** A benign epithelial tumour is an adenoma or papilloma and its malignant counterpart is a carcinoma such as squamous cell carcinoma or adenocarcinoma; a benign mesenchymal tumour is a lipoma or leiomyoma and its malignant counterpart is a sarcoma such as osteosarcoma or liposarcoma; blood-forming cells give rise to leukaemias and lymphomas; and the mixed tumours are exemplified by pleomorphic adenoma and teratoma.
+A benign epithelial tumour is an adenoma or papilloma and its malignant counterpart is a carcinoma such as squamous cell carcinoma or adenocarcinoma; a benign mesenchymal tumour is a lipoma or leiomyoma and its malignant counterpart is a sarcoma such as osteosarcoma or liposarcoma; blood-forming cells give rise to leukaemias and lymphomas; and the mixed tumours are exemplified by pleomorphic adenoma and teratoma.
 
 | Tissue of origin | Benign (examples) | Malignant (examples) |
 |---|---|---|
@@ -4901,14 +4899,14 @@ In addition, non-neoplastic lesions with misleading names (hamartoma and chorist
 
 ## What is cancer?
 
-**Say this first:** Cancer is the common term for a malignant neoplasm, that is, a tumour whose cells can invade and destroy adjacent tissues and spread to distant sites by metastasis.
+Cancer is the common term for a malignant neoplasm, that is, a tumour whose cells can invade and destroy adjacent tissues and spread to distant sites by metastasis.
 
 The word is derived from the Latin for crab, because malignant tumours tend to adhere to any tissue they seize on in an obstinate manner, like a crab. Cancer is not a single disease but a collection of disorders with widely different pathogeneses, natural histories and responses to treatment; some, such as Hodgkin lymphoma, are highly curable, while others, such as pancreatic adenocarcinoma, are almost invariably fatal. In biologic terms, a cancer is a clonal expansion of a cell that has acquired a series of driver mutations and epigenetic changes in proto-oncogenes, tumour suppressor genes, apoptosis-regulating genes and DNA repair genes, and that has consequently acquired the hallmarks of cancer: self-sufficiency in growth signals, insensitivity to growth inhibition, altered cellular metabolism, evasion of apoptosis, limitless replicative potential, sustained angiogenesis, the ability to invade and metastasise, and the ability to evade the host immune response. Cancer is the second leading cause of death in the United States, exceeded only by cardiovascular disease. The designation "malignant" always raises a red flag, although not every cancer pursues a lethal course, since some are found early enough for surgical excision and others respond well to drugs, antibodies or cellular therapies.
 
 
 ## What is carcinoma?
 
-**Say this first:** A carcinoma is a malignant neoplasm of epithelial cell origin.
+A carcinoma is a malignant neoplasm of epithelial cell origin.
 
 Carcinomas may arise from epithelium derived from any of the three germ layers (for example, squamous carcinoma of the skin from ectoderm, renal cell carcinoma from mesoderm-derived tubular epithelium and adenocarcinoma of the gastrointestinal tract from endoderm). They are qualified according to the pattern of growth or the cell they resemble. In squamous cell carcinoma the tumour cells resemble stratified squamous epithelium and often make keratin, whereas in adenocarcinoma the neoplastic epithelial cells grow in a glandular pattern. Other examples are transitional (urothelial) cell carcinoma, basal cell carcinoma, hepatocellular carcinoma and renal cell carcinoma. When the tissue or organ of origin can be identified it is added as a descriptor, as in bronchogenic squamous cell carcinoma. In about 2% of cases the cells are so primitive that their origin cannot be determined and the tumour is called an undifferentiated malignant neoplasm; immunohistochemical staining for cytokeratins is then used to establish epithelial origin.
 
@@ -4917,28 +4915,28 @@ Carcinomas are the commonest form of cancer in adults, and the carcinomas of the
 
 ## What is sarcoma?
 
-**Say this first:** A sarcoma is a malignant tumour arising from mesenchymal tissue, such as connective tissue, fat, cartilage, bone, muscle and blood vessels.
+A sarcoma is a malignant tumour arising from mesenchymal tissue, such as connective tissue, fat, cartilage, bone, muscle and blood vessels.
 
 The name comes from the Greek sar, meaning fleshy, because sarcomas typically have little connective tissue stroma and so present as soft, fleshy tumours on cut section. They are named by attaching the suffix "-sarcoma" to the cell type that they resemble, for example fibrosarcoma, liposarcoma, chondrosarcoma, osteogenic sarcoma, leiomyosarcoma, rhabdomyosarcoma and angiosarcoma. Sarcomas are much less common than carcinomas in adults but form a significant proportion of malignant tumours in children and young adults. They tend to spread by the haematogenous route, although they may sometimes use the lymphatic channels. Several sarcomas are characterised by specific translocations, for instance the t(11;22)(q24;q12) of Ewing sarcoma, which are useful for diagnosis.
 
 
 ## Common examples of carcinoma.
 
-**Say this first:** The common carcinomas are squamous cell carcinoma, adenocarcinoma, basal cell carcinoma and transitional cell (urothelial) carcinoma, and by organ the carcinomas of the lung, breast, prostate, colon and rectum, stomach, cervix and liver are the most frequent.
+The common carcinomas are squamous cell carcinoma, adenocarcinoma, basal cell carcinoma and transitional cell (urothelial) carcinoma, and by organ the carcinomas of the lung, breast, prostate, colon and rectum, stomach, cervix and liver are the most frequent.
 
 Examples by type and site include squamous cell carcinoma of the skin, oral cavity, oesophagus, larynx, lung and uterine cervix; adenocarcinoma of the colon, stomach, pancreas, breast, prostate, endometrium and lung; basal cell carcinoma of the skin; transitional cell carcinoma of the urinary bladder; hepatocellular carcinoma of the liver; renal cell carcinoma of the kidney; bronchogenic carcinoma of the lung; serous and mucinous cystadenocarcinomas of the ovary; and choriocarcinoma of the placenta and embryonal carcinoma of the testis among the germ cell group.
 
 
 ## Common examples of sarcoma.
 
-**Say this first:** Common sarcomas are fibrosarcoma, liposarcoma, chondrosarcoma, osteosarcoma, leiomyosarcoma, rhabdomyosarcoma and angiosarcoma.
+Common sarcomas are fibrosarcoma, liposarcoma, chondrosarcoma, osteosarcoma, leiomyosarcoma, rhabdomyosarcoma and angiosarcoma.
 
 These tumours arise from fibrous tissue, fat, cartilage, bone, smooth muscle, skeletal muscle and blood vessels respectively. Additional examples are lymphangiosarcoma (lymph vessels), Ewing sarcoma (a small round blue cell tumour of bone and soft tissue in children and young adults) and Kaposi sarcoma, a vascular tumour associated with human herpesvirus 8 (HHV8) infection and immunodeficiency. Osteosarcoma is the commonest primary malignant bone tumour in adolescents, rhabdomyosarcoma is one of the common soft tissue sarcomas of childhood and leiomyosarcoma may arise in the uterus, gastrointestinal tract and retroperitoneum.
 
 
 ## What is a hamartoma?
 
-**Say this first:** A hamartoma is a disorganised mass composed of mature cells indigenous to the tissue in which it arises.
+A hamartoma is a disorganised mass composed of mature cells indigenous to the tissue in which it arises.
 
 It was long regarded as a developmental malformation rather than a true tumour, but most hamartomas have been found to carry clonal chromosomal aberrations acquired through somatic mutation, and they are therefore now considered benign neoplasms. The mass is made up of the same cell types that are normally present at the site but they are arranged in a haphazard way and in abnormal proportions. A familiar example is the pulmonary hamartoma, a "coin lesion" on chest imaging that is composed of disorganised cartilage, fat, connective tissue and bronchial epithelium. The polyps of Peutz–Jeghers syndrome, which is caused by germline loss-of-function mutations of the STK11 tumour suppressor gene, are also hamartomatous.
 
@@ -4947,7 +4945,7 @@ A **choristoma** is different: it is a heterotopic (misplaced) rest of normal ti
 
 ## Write a short note on teratoma.
 
-**Say this first:** A teratoma is a germ cell tumour composed of mature or immature tissues derived from more than one germ layer, and sometimes from all three, which arises from totipotential germ cells; the commonest example is the cystic teratoma (dermoid cyst) of the ovary.
+A teratoma is a germ cell tumour composed of mature or immature tissues derived from more than one germ layer, and sometimes from all three, which arises from totipotential germ cells; the commonest example is the cystic teratoma (dermoid cyst) of the ovary.
 
 **Definition and origin.** Most neoplasms, including mixed tumours, are composed of cells from a single germ layer. Teratoma is the exception. It originates from totipotential germ cells that are normally present in the ovary and testis and are sometimes found in abnormal midline embryonic rests, such as the sacrococcygeal region, mediastinum, retroperitoneum and pineal region. Because these cells can differentiate into any cell type of the body, the tumours contain, in a haphazard fashion, tissues such as skin, hair, sebaceous glands, teeth, bone, cartilage, muscle, fat, nerve, respiratory and gastrointestinal epithelium and even thyroid tissue.
 
@@ -5041,7 +5039,7 @@ Of all these criteria, invasion and metastasis are the most reliable discriminat
 
 ## What do you mean by differentiation?
 
-**Say this first:** Differentiation refers to the extent to which the neoplastic parenchymal cells resemble the corresponding normal parenchymal cells, both morphologically and functionally; lack of differentiation is called anaplasia.
+Differentiation refers to the extent to which the neoplastic parenchymal cells resemble the corresponding normal parenchymal cells, both morphologically and functionally; lack of differentiation is called anaplasia.
 
 Differentiation is the single most useful concept in the morphologic assessment of a tumour, because it links the appearance of the tumour cells to their likely behaviour. Benign tumours are, as a rule, well differentiated. The cells of a lipoma, for example, may so closely resemble normal adipocytes that the lesion can be recognised as a tumour only because the cells have grown into a discrete mass, and a follicular adenoma of the thyroid is made up of normal-looking colloid-filled follicles. Malignant tumours range from well differentiated, through moderately differentiated, to poorly differentiated or undifferentiated (anaplastic). In a well-differentiated adenocarcinoma of the thyroid the cells still form follicles, and some squamous cell carcinomas contain cells that look identical to normal squamous epithelium and produce keratin pearls; in a moderately differentiated adenocarcinoma of the colon, gland formation is still present but the glands are irregular in shape and size; in an anaplastic tumour the cells have lost almost all resemblance to the tissue of origin.
 
@@ -5050,7 +5048,7 @@ Differentiation has a functional as well as a morphologic dimension. Well-differ
 
 ## Define anaplasia.
 
-**Say this first:** Anaplasia means lack of differentiation. It is the failure of neoplastic cells to resemble their normal counterparts, in form or in function, and in its fully developed state it is a morphologic hallmark of malignancy.
+Anaplasia means lack of differentiation. It is the failure of neoplastic cells to resemble their normal counterparts, in form or in function, and in its fully developed state it is a morphologic hallmark of malignancy.
 
 The word is derived from the Greek for "to form backward", reflecting the old belief that cancer cells were mature cells that had undergone "dedifferentiation". It is now generally held that most cancers arise from tissue stem cells or from progenitor cells whose maturation is arrested, although in some tumours mature cells may revert to a stem-like state through lineage plasticity. Whatever the origin, the cancer cell fails to complete the program of maturation that characterises the normal cell of that lineage.
 
@@ -5059,7 +5057,7 @@ Anaplasia exists in degrees. Tumours range from well differentiated, in which th
 
 ## What are the features of anaplasia (anaplastic cell)?
 
-**Say this first:** The cardinal features of anaplasia are pleomorphism, abnormal nuclear morphology (hyperchromatic, enlarged, irregular nuclei with a high nuclear-to-cytoplasmic ratio and prominent nucleoli), numerous and atypical mitoses, loss of polarity, and tumour giant cells, usually accompanied by areas of ischaemic necrosis and loss of specialised function.
+The cardinal features of anaplasia are pleomorphism, abnormal nuclear morphology (hyperchromatic, enlarged, irregular nuclei with a high nuclear-to-cytoplasmic ratio and prominent nucleoli), numerous and atypical mitoses, loss of polarity, and tumour giant cells, usually accompanied by areas of ischaemic necrosis and loss of specialised function.
 
 1. **Pleomorphism.** There is variation in the size and shape of both cells and nuclei. Cells within the same tumour are not uniform but range from small, primitive-looking cells to tumour giant cells many times larger than their neighbours.
 2. **Tumour giant cells.** Some possess a single huge, bizarre nucleus, whereas others have two or more large hyperchromatic nuclei. They must not be confused with Langhans or foreign body giant cells, which derive from macrophages and contain many small, normal-appearing nuclei.
@@ -5072,9 +5070,7 @@ Anaplasia exists in degrees. Tumours range from well differentiated, in which th
 
 ## Types of dysplasia.
 
-**
-
-**Say this first:** Epithelial dysplasia is graded as mild, moderate or severe according to the proportion of the epithelial thickness that shows disordered maturation, and in practice these are condensed into low-grade and high-grade dysplasia; severe dysplasia involving the full thickness is carcinoma in situ.
+Epithelial dysplasia is graded as mild, moderate or severe according to the proportion of the epithelial thickness that shows disordered maturation, and in practice these are condensed into low-grade and high-grade dysplasia; severe dysplasia involving the full thickness is carcinoma in situ.
 
 **By grade.** In mild dysplasia the cytologic and architectural abnormalities are confined to the lower third of the epithelium, in moderate dysplasia they involve up to two-thirds, and in severe dysplasia they extend through more than two-thirds up to the full thickness, at which point the lesion merges with carcinoma in situ. This is exemplified in the uterine cervix by cervical intraepithelial neoplasia (CIN) grades 1 to 3, which correspond to low-grade and high-grade squamous intraepithelial lesions. Mild dysplasia may regress when the cause is removed, whereas severe dysplasia carries a high probability of progression to invasive cancer.
 
@@ -5085,7 +5081,7 @@ Anaplasia exists in degrees. Tumours range from well differentiated, in which th
 
 ## What is carcinoma in situ (and locally malignant tumour)?
 
-**Say this first:** Carcinoma in situ is a cancer that has not yet invaded: the epithelium shows severe dysplasia involving its full thickness, with all the cytologic features of malignancy, but the basement membrane is intact and there is no penetration into the underlying stroma. A locally malignant tumour is one that invades and destroys surrounding tissue but rarely or never metastasises, as exemplified by basal cell carcinoma of the skin and gliomas of the central nervous system.
+Carcinoma in situ is a cancer that has not yet invaded: the epithelium shows severe dysplasia involving its full thickness, with all the cytologic features of malignancy, but the basement membrane is intact and there is no penetration into the underlying stroma. A locally malignant tumour is one that invades and destroys surrounding tissue but rarely or never metastasises, as exemplified by basal cell carcinoma of the skin and gliomas of the central nervous system.
 
 **Carcinoma in situ.** When dysplasia is severe and involves the entire thickness of the epithelium but the lesion does not penetrate the basement membrane, it is called carcinoma in situ. Microscopically the epithelium is replaced by atypical cells showing no orderly differentiation, marked nuclear and cellular pleomorphism and numerous mitotic figures extending toward the surface, while the basement membrane remains intact and there is no tumour in the subepithelial stroma. Carcinoma in situ is seen in the skin, breast, bladder and uterine cervix. In situ cancers display all the cytologic features of malignancy, and unless treated they have a high probability of progression to invasive cancer. Because the lesion has not breached the basement membrane, it has no access to lymphatics and blood vessels and cannot metastasise, and so complete excision or ablation is curative. This is why detection of precursor lesions by Pap smear has been so effective in reducing cervical cancer mortality. An in situ carcinoma may persist for years before becoming invasive, the interval reflecting the time required for the accumulation of the further mutations and epigenetic changes needed for a fully malignant phenotype.
 
@@ -5094,7 +5090,7 @@ Anaplasia exists in degrees. Tumours range from well differentiated, in which th
 
 ## Two examples of carcinoma in situ.
 
-**Say this first:** Two examples are carcinoma in situ of the uterine cervix (squamous CIN 3) and ductal carcinoma in situ of the breast.
+Two examples are carcinoma in situ of the uterine cervix (squamous CIN 3) and ductal carcinoma in situ of the breast.
 
 Carcinoma in situ is also encountered in the skin (Bowen disease, a squamous carcinoma in situ) and in the urinary bladder (urothelial carcinoma in situ), and in the cervix it often precedes invasive squamous cell carcinoma by years.
 
@@ -5158,7 +5154,7 @@ Both terms describe disturbances of differentiation, and the cytologic features 
 
 ## Define metastasis (short note).
 
-**Say this first:** Metastasis is the spread of a primary tumour to physically discontinuous sites, and it unequivocally marks a tumour as malignant.
+Metastasis is the spread of a primary tumour to physically discontinuous sites, and it unequivocally marks a tumour as malignant.
 
 Metastasis is the process whereby cells separate from the primary tumour, are carried to a distant site and there establish a secondary growth of the same histologic type. It is made possible by the invasiveness of cancers, which allows them to penetrate blood vessels, lymphatics and body cavities. All malignant tumours can metastasise, but some do so very infrequently; gliomas and basal cell carcinomas, for example, invade early but rarely metastasise, which shows that invasiveness and metastasis are separable properties. Leukaemias and lymphomas are a special case. Because they are derived from cells that normally circulate, they are often disseminated at diagnosis and are always considered malignant, unlike the solid tumours.
 
@@ -5167,7 +5163,7 @@ About 30% of solid tumours (excluding skin cancers other than melanoma) present 
 
 ## Mention the routes/pathways of spread of a malignant tumour.
 
-**Say this first:** A malignant tumour spreads by direct local invasion of adjacent tissues, and its dissemination to distant sites occurs by three pathways: seeding of body cavities and surfaces, lymphatic spread and haematogenous spread. Iatrogenic implantation on surgical instruments is a rare additional route.
+A malignant tumour spreads by direct local invasion of adjacent tissues, and its dissemination to distant sites occurs by three pathways: seeding of body cavities and surfaces, lymphatic spread and haematogenous spread. Iatrogenic implantation on surgical instruments is a rare additional route.
 
 **1. Local invasion (direct extension).** Cancer cells infiltrate and destroy contiguous tissues, penetrating the wall of an organ and crossing anatomic boundaries, and may eventually fungate through the skin. This is the first step in all other forms of spread.
 
@@ -5180,28 +5176,28 @@ About 30% of solid tumours (excluding skin cancers other than melanoma) present 
 
 ## Common organs where metastasis occurs.
 
-**Say this first:** The commonest sites of haematogenous metastasis are the liver and the lungs, followed by the bones and brain, and the adrenal glands are also frequently involved; regional lymph nodes are the commonest site of lymphatic metastasis.
+The commonest sites of haematogenous metastasis are the liver and the lungs, followed by the bones and brain, and the adrenal glands are also frequently involved; regional lymph nodes are the commonest site of lymphatic metastasis.
 
 The liver and lungs are involved most often because their capillary beds act as filters for the blood carried by the portal vein and by the vena cavae. The pattern is also influenced by the site of the primary tumour and by tissue tropism. Colonic carcinomas metastasise to the liver, the first organ downstream of the tumour; carcinomas of the prostate and breast preferentially spread to bone; lung carcinomas tend to involve the adrenals and brain; neuroblastoma spreads to liver and bones; and melanoma of the eye has a remarkable tendency to spread to the liver. Some tissues, such as skeletal muscle and spleen, are rarely the site of metastasis despite a rich blood supply, and are regarded as nonpermissive.
 
 
 ## Carcinomas that prefer haematogenous spread.
 
-**Say this first:** Although carcinomas spread initially by lymphatics, renal cell carcinoma, hepatocellular carcinoma, follicular carcinoma of the thyroid and choriocarcinoma are the classic examples that prefer the haematogenous route.
+Although carcinomas spread initially by lymphatics, renal cell carcinoma, hepatocellular carcinoma, follicular carcinoma of the thyroid and choriocarcinoma are the classic examples that prefer the haematogenous route.
 
 Renal cell carcinoma has a characteristic propensity to invade the renal vein and to grow as a snake-like column up the inferior vena cava, sometimes reaching the right atrium, and hepatocellular carcinoma invades the portal and hepatic venous radicles and grows into the main venous channels. Follicular carcinoma of the thyroid typically spreads to the lungs and bones and choriocarcinoma spreads early to the lungs, brain and vagina. Carcinomas of the prostate and thyroid, which lie near the vertebral column, may also embolise through the paravertebral venous plexus to vertebrae, and prostatic carcinoma spreads preferentially to bone. Bronchogenic carcinoma is another carcinoma that metastasises widely through the blood, to the brain, adrenals, liver and bone. Sarcomas, as a group, are the tumours that typically spread haematogenously.
 
 
 ## What is invasion?
 
-**Say this first:** Invasion is the progressive infiltration and destruction of the surrounding normal tissue by malignant cells, which do not respect anatomic boundaries; it is a hallmark of malignancy and a prerequisite for distant spread.
+Invasion is the progressive infiltration and destruction of the surrounding normal tissue by malignant cells, which do not respect anatomic boundaries; it is a hallmark of malignancy and a prerequisite for distant spread.
 
 Invasion is an active process by which cancer cells breach the basement membrane, traverse the interstitial connective tissue and penetrate the walls of vessels. In contrast, nearly all benign tumours grow as cohesive, expansile masses that remain localised, compress their surroundings and usually develop a rim of compressed fibrous tissue (capsule), which makes them discrete, movable and easily removed. Malignant tumours are generally poorly demarcated and lack well-defined cleavage planes. A slowly expanding cancer may develop a pseudocapsule, but careful histologic examination almost always reveals tumour cells extending through it into the adjacent tissue. Next to metastasis, invasiveness is the most reliable discriminator between malignant and benign tumours. Its practical implication is that complete surgical removal of a cancer is difficult, and even if a tumour appears well circumscribed, a wide margin of apparently normal tissue must be removed.
 
 
 ## Steps of invasion.
 
-**Say this first:** Invasion of the extracellular matrix proceeds in four steps: loosening of tumour cell–tumour cell contacts, degradation of the extracellular matrix, attachment to novel (remodeled) matrix components, and migration of the tumour cells.
+Invasion of the extracellular matrix proceeds in four steps: loosening of tumour cell–tumour cell contacts, degradation of the extracellular matrix, attachment to novel (remodeled) matrix components, and migration of the tumour cells.
 
 1. **Loosening of intercellular contacts.** Normal epithelial cells are held together by adhesion molecules, notably E-cadherin. In several carcinomas E-cadherin function is lost by mutation, and in many others its expression is silenced through epithelial–mesenchymal transition (EMT), which is controlled by the transcription factors SNAIL and TWIST, and in which epithelial markers fall and mesenchymal markers such as vimentin rise, favouring a migratory phenotype.
 2. **Degradation of the basement membrane and interstitial matrix.** Tumour cells, and stromal cells stimulated by them, secrete proteases, including matrix metalloproteinases (MMP2 and MMP9, which cleave type IV collagen), cathepsin D and urokinase plasminogen activator, while the concentration of metalloproteinase inhibitors is reduced. Proteolysis also releases growth factors stored in the matrix, such as VEGF, and generates fragments that are chemotactic, angiogenic and growth-promoting.
@@ -5241,7 +5237,7 @@ The process is inefficient and complex, and no single "metastasis gene" has been
 
 ## Fundamental cellular changes considered hallmarks of cancer.
 
-**Say this first:** All cancers display eight fundamental changes in cell physiology, the hallmarks of cancer: self-sufficiency in growth signals, insensitivity to growth-inhibitory signals, altered cellular metabolism, evasion of apoptosis, limitless replicative potential, sustained angiogenesis, the ability to invade and metastasise, and the ability to evade the host immune response. Genomic instability and tumour-promoting inflammation are enabling characteristics that accelerate their acquisition.
+All cancers display eight fundamental changes in cell physiology, the hallmarks of cancer: self-sufficiency in growth signals, insensitivity to growth-inhibitory signals, altered cellular metabolism, evasion of apoptosis, limitless replicative potential, sustained angiogenesis, the ability to invade and metastasise, and the ability to evade the host immune response. Genomic instability and tumour-promoting inflammation are enabling characteristics that accelerate their acquisition.
 
 | Hallmark | Basis |
 |---|---|
@@ -5259,7 +5255,7 @@ The process is inefficient and complex, and no single "metastasis gene" has been
 
 ## Four principal classes of genes that cause cancer after mutation.
 
-**Say this first:** The principal targets of cancer-causing mutations are four classes of genes: growth-promoting proto-oncogenes, growth-inhibiting tumour suppressor genes, genes that regulate programmed cell death (apoptosis), and genes that are responsible for DNA repair.
+The principal targets of cancer-causing mutations are four classes of genes: growth-promoting proto-oncogenes, growth-inhibiting tumour suppressor genes, genes that regulate programmed cell death (apoptosis), and genes that are responsible for DNA repair.
 
 - **Proto-oncogenes** are converted to oncogenes by gain-of-function mutations; because the mutant protein is constitutively active, one mutant allele suffices, and oncogenes are therefore dominant.
 - **Tumour suppressor genes** are disabled by loss-of-function mutations, and in most instances both alleles must be damaged, so that they behave in a recessive fashion (a state of haploinsufficiency is an exception, in which loss of one allele is enough).
@@ -5269,7 +5265,7 @@ The process is inefficient and complex, and no single "metastasis gene" has been
 
 ## Examples of oncogenes and tumour suppressor genes.
 
-**Say this first:** Examples of oncogenes are RAS, MYC, ERBB2 (HER2), ABL and BRAF, and examples of tumour suppressor genes are RB, TP53, APC, NF1, PTEN, VHL and BRCA1/2.
+Examples of oncogenes are RAS, MYC, ERBB2 (HER2), ABL and BRAF, and examples of tumour suppressor genes are RB, TP53, APC, NF1, PTEN, VHL and BRCA1/2.
 
 | Oncogene | Activation | Associated tumour |
 |---|---|---|
@@ -5307,21 +5303,21 @@ The process is inefficient and complex, and no single "metastasis gene" has been
 
 ## What is Li-Fraumeni syndrome?
 
-**Say this first:** Li-Fraumeni syndrome is an autosomal dominant cancer predisposition syndrome caused by inheritance of one mutated copy of the TP53 tumour suppressor gene.
+Li-Fraumeni syndrome is an autosomal dominant cancer predisposition syndrome caused by inheritance of one mutated copy of the TP53 tumour suppressor gene.
 
 The affected individual carries the first hit in every cell, so that only one further somatic hit in the remaining normal allele is required to abrogate p53 function. Such persons have a 25-fold greater chance of developing a malignant tumour by the age of 50 than the general population. In contrast to the narrow spectrum seen with germline RB mutations, the spectrum of tumours is broad; the most common are sarcomas, breast cancers, leukaemias, brain tumours and carcinomas of the adrenal cortex. The patients tend to develop cancer at younger ages and are more likely to have multiple primary tumours of different types. The syndrome illustrates the central position of p53, the "guardian of the genome", which is the most commonly mutated gene in human cancers, with loss-of-function mutations present in more than 50% of them, usually as somatic mutations of both alleles.
 
 
 ## Which factor induces angiogenesis?
 
-**Say this first:** Vascular endothelial growth factor (VEGF) is the principal factor that induces tumour angiogenesis, and its production is driven mainly by hypoxia through the transcription factor HIF1α; basic fibroblast growth factor (bFGF) also contributes.
+Vascular endothelial growth factor (VEGF) is the principal factor that induces tumour angiogenesis, and its production is driven mainly by hypoxia through the transcription factor HIF1α; basic fibroblast growth factor (bFGF) also contributes.
 
 Hypoxia stabilises HIF1α, which activates transcription of VEGF and bFGF and creates an angiogenic gradient that stimulates endothelial proliferation and guides new vessels towards the tumour. Gain-of-function mutations of RAS and MYC upregulate VEGF, while loss of p53 removes thrombospondin-1, an inhibitor, and releases the suppression of VEGF. Loss of VHL function stabilises HIF1α even under normal oxygen tension. VEGF is also supplied by infiltrating macrophages and other stromal cells, and the antibody bevacizumab, which neutralises VEGF, is used in the treatment of several cancers.
 
 
 ## How does angiogenesis affect tumour growth?
 
-**Say this first:** Angiogenesis supplies the tumour with oxygen and nutrients and removes waste, allowing it to grow beyond 1 to 2 mm, and it also provides tumour cells with access to the circulation, thereby promoting metastasis.
+Angiogenesis supplies the tumour with oxygen and nutrients and removes waste, allowing it to grow beyond 1 to 2 mm, and it also provides tumour cells with access to the circulation, thereby promoting metastasis.
 
 1. **Growth.** Neovascularisation permits growth beyond the diffusion limit. Without it, tumours stay small or in situ in a dormant state.
 2. **Paracrine stimulation.** Proliferating endothelial cells secrete growth factors, such as insulin-like growth factors and PDGF, which stimulate the growth of adjacent tumour cells.
@@ -5331,7 +5327,7 @@ Hypoxia stabilises HIF1α, which activates transcription of VEGF and bFGF and cr
 
 ## Cells involved in the anti-tumour immune mechanism.
 
-**Say this first:** The principal effector cells of antitumour immunity are CD8⁺ cytotoxic T lymphocytes, aided by dendritic cells, CD4⁺ helper T cells, natural killer cells and activated macrophages.
+The principal effector cells of antitumour immunity are CD8⁺ cytotoxic T lymphocytes, aided by dendritic cells, CD4⁺ helper T cells, natural killer cells and activated macrophages.
 
 - **CD8⁺ cytotoxic T lymphocytes (CTLs)** are the main mediators. They recognise tumour neoantigens (from mutated genes, viral proteins, or overexpressed and aberrantly expressed proteins) presented on MHC class I molecules, and kill tumour cells directly and serially.
 - **Dendritic cells** ingest tumour cells or antigens and present them in draining lymph nodes, with costimulation, to initiate the CTL response.
@@ -5344,7 +5340,7 @@ Antibodies against tumour cells have little demonstrated protective role. The su
 
 ## What are the carcinogenic agents?
 
-**Say this first:** Carcinogenic agents fall into three principal groups: chemicals, radiant energy (ultraviolet and ionising radiation) and microbial agents (oncogenic viruses and certain bacteria and parasites). All of them cause cancer by producing genetic damage or by stimulating the proliferation of cells that have been damaged.
+Carcinogenic agents fall into three principal groups: chemicals, radiant energy (ultraviolet and ionising radiation) and microbial agents (oncogenic viruses and certain bacteria and parasites). All of them cause cancer by producing genetic damage or by stimulating the proliferation of cells that have been damaged.
 
 **1. Chemical carcinogens.** Many hundreds of chemicals are carcinogenic in animals. All initiating chemical carcinogens are highly reactive electrophiles that damage DNA. Direct-acting agents need no metabolic conversion and include alkylating and acylating agents, such as the anticancer drugs cyclophosphamide, chlorambucil and the nitrosoureas, which may themselves cause second cancers, usually acute myeloid leukaemia. Indirect-acting agents (procarcinogens) require metabolic conversion to ultimate carcinogens, usually by cytochrome P-450 monooxygenases, and include polycyclic aromatic hydrocarbons such as benzo[a]pyrene (in tobacco smoke, soot, and broiled or smoked meats), aromatic amines and azo dyes, the mould product aflatoxin B₁, and nitrosamines. Occupational carcinogens include asbestos, vinyl chloride, benzene, arsenic, nickel and chromium. Substances that stimulate proliferation of initiated cells (promoters), such as oestrogens, act in concert.
 
@@ -5357,7 +5353,7 @@ Chronic inflammation, hormones and tissue injury with regenerative proliferation
 
 ## Types of chemical carcinogens.
 
-**Say this first:** Chemical carcinogens are classified as direct-acting agents, which do not need metabolic activation, and indirect-acting agents (procarcinogens), which require conversion into ultimate carcinogens; tumour promoters form a third group, which stimulate proliferation of initiated cells but are not themselves carcinogenic.
+Chemical carcinogens are classified as direct-acting agents, which do not need metabolic activation, and indirect-acting agents (procarcinogens), which require conversion into ultimate carcinogens; tumour promoters form a third group, which stimulate proliferation of initiated cells but are not themselves carcinogenic.
 
 | Type | Features | Examples |
 |---|---|---|
@@ -5370,28 +5366,28 @@ Other chemical agents include metals and natural products: arsenic, nickel and c
 
 ## Steps of carcinogenesis.
 
-**Say this first:** Chemical carcinogenesis proceeds in stages: initiation, in which a cell sustains permanent DNA damage; promotion, in which the initiated cell is driven to proliferate and expand clonally; and progression, in which further mutations accumulate in the proliferating cells until a fully malignant clone emerges.
+Chemical carcinogenesis proceeds in stages: initiation, in which a cell sustains permanent DNA damage; promotion, in which the initiated cell is driven to proliferate and expand clonally; and progression, in which further mutations accumulate in the proliferating cells until a fully malignant clone emerges.
 
 Initiation is rapid and irreversible and results from exposure to a sufficient dose of a carcinogen. Promotion by itself does not produce tumours, but induces tumours to arise from initiated cells, and it must follow initiation, not precede it. Driven to proliferate, subclones of the initiated cells acquire additional mutations, and eventually a cancerous clone possessing all the hallmarks emerges, which then continues to evolve under Darwinian selection (tumour progression). At the molecular level, carcinogenesis is a multistep process in which a series of complementary driver mutations in proto-oncogenes, tumour suppressor genes, apoptosis-regulating genes and DNA repair genes accumulate over time. The colon adenoma–carcinoma sequence shows this stepwise pattern, with early mutations in APC and late mutations in TP53.
 
 
 ## What do you mean by initiation?
 
-**Say this first:** Initiation is the first step of carcinogenesis, in which exposure of a cell to a sufficient dose of a carcinogenic agent causes permanent DNA damage (mutation), rendering the cell and its progeny susceptible to subsequent neoplastic transformation.
+Initiation is the first step of carcinogenesis, in which exposure of a cell to a sufficient dose of a carcinogenic agent causes permanent DNA damage (mutation), rendering the cell and its progeny susceptible to subsequent neoplastic transformation.
 
 Initiating agents are highly reactive electrophiles that react with nucleophilic atoms of DNA, and cause nonlethal damage that is repaired in an error-prone fashion, so that the mutation is fixed and transmitted to daughter cells. The process is irreversible and rapid. An initiated cell is not yet neoplastic and does not form a tumour by itself, since additional events are needed. Initiation does not target particular genes exclusively; mutations occur throughout the genome, and cells that by chance sustain damage to the "usual suspects", such as RAS and TP53, gain a selective advantage. In the molecular scheme, the first driver mutation that starts a cell on the path to malignancy is the initiating mutation, which is maintained in all cells of the subsequent cancer.
 
 
 ## What do you mean by promotion?
 
-**Say this first:** Promotion is the second step of carcinogenesis, in which agents called promoters stimulate the proliferation and clonal expansion of initiated cells, so that tumours arise; promoters are not tumourigenic by themselves.
+Promotion is the second step of carcinogenesis, in which agents called promoters stimulate the proliferation and clonal expansion of initiated cells, so that tumours arise; promoters are not tumourigenic by themselves.
 
 Promoters do not damage DNA directly, and do not affect cells that have not been initiated. By driving the initiated cells to divide, they cause clonal expansion of a preneoplastic population and increase the chance that these cells will sustain additional mutations, culminating in a cancerous clone with all the hallmark characteristics. Promotion in its early stage is reversible, in contrast to initiation. Many factors that contribute to human cancer act as promoters because they stimulate proliferation, for example unopposed oestrogenic stimulation of the endometrium and breast, and the chronic inflammation and regenerative proliferation associated with tissue repair and fibrosis, as in inflammatory bowel disease, chronic hepatitis and Barrett oesophagus. Environmental irritants such as airborne particulate matter probably promote cancer by fostering the outgrowth of cells bearing oncogenic mutations. The phorbol esters are the classic experimental promoters on mouse skin.
 
 
 ## Examples of chronic inflammation that cause risk of cancer.
 
-**Say this first:** Examples include chronic hepatitis B or C leading to hepatocellular carcinoma, Helicobacter pylori gastritis leading to gastric carcinoma and MALT lymphoma, inflammatory bowel disease leading to colorectal carcinoma, and Barrett oesophagus leading to oesophageal adenocarcinoma.
+Examples include chronic hepatitis B or C leading to hepatocellular carcinoma, Helicobacter pylori gastritis leading to gastric carcinoma and MALT lymphoma, inflammatory bowel disease leading to colorectal carcinoma, and Barrett oesophagus leading to oesophageal adenocarcinoma.
 
 Virchow proposed a link between chronic inflammation and cancer in 1863. The associations include:
 
@@ -5416,7 +5412,7 @@ Inflammation promotes cancer through compensatory proliferation of cells that re
 
 ## Oncogenic infective agents (viruses/bacteria) and the cancers they produce.
 
-**Say this first:** The oncogenic microbes include HPV (cervical and anogenital squamous carcinoma), EBV (Burkitt lymphoma, nasopharyngeal carcinoma), HBV and HCV (hepatocellular carcinoma), HTLV-1 (adult T-cell leukaemia/lymphoma), HHV8 (Kaposi sarcoma), Merkel cell polyomavirus (Merkel cell carcinoma), and the bacterium Helicobacter pylori (gastric adenocarcinoma and MALT lymphoma).
+The oncogenic microbes include HPV (cervical and anogenital squamous carcinoma), EBV (Burkitt lymphoma, nasopharyngeal carcinoma), HBV and HCV (hepatocellular carcinoma), HTLV-1 (adult T-cell leukaemia/lymphoma), HHV8 (Kaposi sarcoma), Merkel cell polyomavirus (Merkel cell carcinoma), and the bacterium Helicobacter pylori (gastric adenocarcinoma and MALT lymphoma).
 
 | Agent | Type | Associated cancers |
 |---|---|---|
@@ -5614,7 +5610,7 @@ What these have in common is increased cellular replication, which creates a "fe
 
 ## Clinical features of tumour.
 
-**Say this first:** The clinical effects of a tumour depend chiefly on its location and behaviour and include local effects (mass effect, pressure and obstruction, ulceration, bleeding and infection), hormonal effects, cancer cachexia and paraneoplastic syndromes, in addition to the effects of metastasis.
+The clinical effects of a tumour depend chiefly on its location and behaviour and include local effects (mass effect, pressure and obstruction, ulceration, bleeding and infection), hormonal effects, cancer cachexia and paraneoplastic syndromes, in addition to the effects of metastasis.
 
 Any tumour, even a benign one, may cause morbidity and mortality, although malignant tumours are naturally more threatening.
 
@@ -5631,14 +5627,14 @@ Any tumour, even a benign one, may cause morbidity and mortality, although malig
 
 ## What is cancer cachexia?
 
-**Say this first:** Cancer cachexia is a hypercatabolic state defined by a loss of muscle mass, with or without loss of fat, that cannot be explained by diminished food intake.
+Cancer cachexia is a hypercatabolic state defined by a loss of muscle mass, with or without loss of fat, that cannot be explained by diminished food intake.
 
 It occurs in about 50% of cancer patients, most commonly in those with advanced cancers of the gastrointestinal tract, pancreas and lung, and is responsible for about 30% of cancer deaths. Clinically it is a highly debilitating condition characterised by extreme weight loss, fatigue, muscle atrophy, anaemia, anorexia and oedema, and death is generally the consequence of atrophy of the diaphragm and other respiratory muscles. In contrast to simple starvation, in which the body conserves lean tissue, there is loss of skeletal muscle protein, and the patient does not respond adequately to nutritional supplementation. Inflammatory cytokines act directly on skeletal muscle cells and increase degradation of the major structural proteins, such as myosin heavy chain, through ubiquitination followed by proteasomal proteolysis. Similar cachectic states can occur in patients without cancer, as in chronic disseminated infections and AIDS.
 
 
 ## Factors that influence cancer cachexia.
 
-**Say this first:** The precise cause of cancer cachexia is not known, but the main factors are inflammatory cytokines, notably tumour necrosis factor (TNF), interleukin-1 (IL-1) and interleukin-6 (IL-6), together with growth differentiation factor-15 (GDF-15), anorexia, and the altered metabolism of the host and tumour.
+The precise cause of cancer cachexia is not known, but the main factors are inflammatory cytokines, notably tumour necrosis factor (TNF), interleukin-1 (IL-1) and interleukin-6 (IL-6), together with growth differentiation factor-15 (GDF-15), anorexia, and the altered metabolism of the host and tumour.
 
 - **Inflammatory cytokines (TNF, IL-1, IL-6).** They are produced by the tumour and by host immune cells. Administration of any of them to mice induces cachexia, and tumour-bearing mice lacking the TNF receptor are protected. Cachexia in patients correlates with higher levels of inflammatory cytokines, and they stimulate proteolysis of skeletal muscle through the ubiquitin–proteasome pathway.
 - **GDF-15.** A protein secreted by tumour cells and macrophages, it binds to the receptor GFRAL in the brainstem and suppresses appetite. Inhibitors of GDF-15 and GFRAL block cachexia in animal models, and GDF-15 inhibitors have suppressed cachexia in early clinical trials.
@@ -5651,19 +5647,19 @@ Therapies directed against individual cytokines, such as TNF, have not been effe
 
 ## Define paraneoplastic syndrome.
 
-**Say this first:** Paraneoplastic syndromes are symptom complexes in individuals with cancer that cannot be explained by tumour spread or by release of hormones that are indigenous to the tumour's cell of origin.
+Paraneoplastic syndromes are symptom complexes in individuals with cancer that cannot be explained by tumour spread or by release of hormones that are indigenous to the tumour's cell of origin.
 
 They are caused by substances produced by the tumour, such as hormones, hormone-like peptides, cytokines or immune mediators, or by immune reactions to the tumour. They are important to recognise for three reasons. First, they may be the earliest manifestation of an occult neoplasm. Second, in affected patients they can cause significant clinical problems and may even be lethal. Third, they may mimic metastatic disease and therefore confound treatment.
 
 
 ## Incidence of paraneoplastic syndrome in cancer patients.
 
-**Say this first:** Paraneoplastic syndromes occur in about 10% of persons with cancer.
+Paraneoplastic syndromes occur in about 10% of persons with cancer.
 
 
 ## Paraneoplastic syndromes with examples of associated cancers.
 
-**Say this first:** The commonest paraneoplastic syndromes are the endocrinopathies, such as Cushing syndrome and hypercalcaemia, followed by neuromuscular, dermatologic, osseous and vascular or haematologic syndromes, each associated with particular cancers; for example, small cell carcinoma of the lung causes Cushing syndrome, and squamous cell carcinoma of the lung causes hypercalcaemia.
+The commonest paraneoplastic syndromes are the endocrinopathies, such as Cushing syndrome and hypercalcaemia, followed by neuromuscular, dermatologic, osseous and vascular or haematologic syndromes, each associated with particular cancers; for example, small cell carcinoma of the lung causes Cushing syndrome, and squamous cell carcinoma of the lung causes hypercalcaemia.
 
 | Syndrome | Associated cancer | Mechanism |
 |---|---|---|
@@ -5695,21 +5691,21 @@ Cushing syndrome is the commonest paraneoplastic endocrinopathy, about 50% of ca
 
 ## Grading of cancer.
 
-**Say this first:** Grading of a cancer is the assessment of its probable aggressiveness on the basis of the degree of differentiation of the tumour cells and, in some cancers, the number of mitoses or architectural features.
+Grading of a cancer is the assessment of its probable aggressiveness on the basis of the degree of differentiation of the tumour cells and, in some cancers, the number of mitoses or architectural features.
 
 Grading schemes have evolved for each type of malignancy and generally range from two categories (low grade and high grade) to four (grades I to IV, from well differentiated to poorly differentiated or undifferentiated). The criteria differ among tumours, but all attempt to judge the extent to which tumour cells resemble or fail to resemble their normal counterparts, on the premise that behaviour and differentiation are related, so that poorly differentiated tumours behave more aggressively. Grading is determined by the pathologist's microscopic examination, and the correlation between histologic appearance and biologic behaviour is less than perfect. To avoid spurious quantification, tumours are often characterised in descriptive terms, such as well-differentiated, mucin-secreting adenocarcinoma of the stomach, or poorly differentiated pancreatic adenocarcinoma.
 
 
 ## Staging of cancer.
 
-**Say this first:** Staging expresses the extent of spread of a cancer in the body, on the basis of the size of the primary lesion, the extent of spread to regional lymph nodes, and the presence or absence of blood-borne (distant) metastases.
+Staging expresses the extent of spread of a cancer in the body, on the basis of the size of the primary lesion, the extent of spread to regional lymph nodes, and the presence or absence of blood-borne (distant) metastases.
 
 Staging of solid cancers is determined by surgical exploration, imaging and pathologic examination of the resected specimen. The major system is the American Joint Committee on Cancer (AJCC) TNM system. It is of greater clinical value than histologic grading, since the stage is the most important determinant of prognosis and of the choice of treatment. Molecular features provide additional prognostic information that is independent of anatomic staging, and the AJCC includes molecular characterisation in the standard work-up of early breast cancers.
 
 
 ## What do you mean by TNM staging?
 
-**Say this first:** TNM staging is the system of the American Joint Committee on Cancer in which T denotes the primary tumour, N regional lymph node involvement, and M distant metastases.
+TNM staging is the system of the American Joint Committee on Cancer in which T denotes the primary tumour, N regional lymph node involvement, and M distant metastases.
 
 - **T (primary tumour):** characterised as T1 to T4 according to increasing size or local extent, with the details varying by organ. Carcinoma in situ is designated Tis (T0 in some texts), and Tx means that the primary cannot be assessed.
 - **N (regional lymph nodes):** N0 means no nodal involvement, and N1 to N3 denote involvement of an increasing number and range of nodes.
@@ -5720,7 +5716,7 @@ The combination of T, N and M categories is grouped into stages (stage 0 for in 
 
 ## Name the childhood tumours (short note).
 
-**Say this first:** The commonest childhood cancers are acute lymphoblastic leukaemia and tumours of the central nervous system, followed by the so-called small round blue cell tumours: neuroblastoma, Wilms tumour, retinoblastoma and rhabdomyosarcoma, with Ewing sarcoma, osteosarcoma, hepatoblastoma and germ cell tumours also seen.
+The commonest childhood cancers are acute lymphoblastic leukaemia and tumours of the central nervous system, followed by the so-called small round blue cell tumours: neuroblastoma, Wilms tumour, retinoblastoma and rhabdomyosarcoma, with Ewing sarcoma, osteosarcoma, hepatoblastoma and germ cell tumours also seen.
 
 Cancer accounts for about 10% of all deaths in children younger than 15 years in the United States, second only to accidents. Neoplasms of the central nervous system and acute leukaemia together cause approximately 60% of childhood cancer deaths. The types of cancer in children differ from those in adults. Paediatric cancers are more likely to be caused by inherited mutations, particularly in tumour suppressor genes, and are much less likely to stem from exposure to environmental carcinogens, and so carcinomas, which are frequently caused by carcinogens and are the most common tumours in adults, are very rare in children.
 
@@ -5766,8 +5762,6 @@ Methods to quantify the probable clinical aggressiveness of a neoplasm (grade) a
 
 ## Enumerate common cancers in males and females of the Bangladeshi population.
 
-**
-
 The commonly diagnosed cancers in Bangladesh differ by sex and reflect the main risk factors in the country, which are tobacco (smoked and smokeless, including betel quid), infections such as HPV and hepatitis B, arsenic exposure and diet. The rank order differs between the cancer estimates of the International Agency for Research on Cancer (GLOBOCAN), hospital-based registries and population-based registries, but the leading sites are consistent.
 
 | | Males | Females |
@@ -5784,7 +5778,7 @@ In the recent estimates for Bangladesh, oesophageal, lung, stomach, and lip and 
 
 ## Outline / methods of laboratory diagnosis of tumour.
 
-**Say this first:** The laboratory diagnosis of a tumour rests on histologic examination of tissue (biopsy, excision, frozen section) and cytologic methods (exfoliative cytology and fine-needle aspiration), supplemented by immunohistochemistry, flow cytometry, molecular and cytogenetic techniques, and the assay of tumour markers.
+The laboratory diagnosis of a tumour rests on histologic examination of tissue (biopsy, excision, frozen section) and cytologic methods (exfoliative cytology and fine-needle aspiration), supplemented by immunohistochemistry, flow cytometry, molecular and cytogenetic techniques, and the assay of tumour markers.
 
 1. **Histopathology.** Excisional or incisional biopsy and resection specimens, fixed in formalin and examined on haematoxylin and eosin–stained sections; frozen section for rapid intraoperative diagnosis.
 2. **Cytology.** Fine-needle aspiration of palpable or image-guided lesions, and exfoliative cytology (cervical Pap smear, urine, sputum, effusions, cerebrospinal fluid, bronchial washings).
@@ -5797,7 +5791,7 @@ In the recent estimates for Bangladesh, oesophageal, lung, stomach, and lip and 
 
 ## Organs where FNAC can be easily/commonly done.
 
-**Say this first:** FNAC is most easily done in readily palpable lesions of the breast, thyroid, lymph nodes and salivary glands; with imaging guidance it can also be used for deep-seated lesions such as the lung, liver, pancreas and pelvic lymph nodes.
+FNAC is most easily done in readily palpable lesions of the breast, thyroid, lymph nodes and salivary glands; with imaging guidance it can also be used for deep-seated lesions such as the lung, liver, pancreas and pelvic lymph nodes.
 
 - **Palpable organs:** breast, thyroid, lymph nodes (cervical, axillary, inguinal), salivary glands, soft tissue swellings and subcutaneous lumps, skin lesions, and superficial bone lesions.
 - **Image-guided (ultrasound, CT or endoscopic ultrasound):** lung and mediastinum, liver, pancreas, kidney, prostate, retroperitoneal and pelvic lymph nodes, and other intra-abdominal masses.
@@ -5805,18 +5799,14 @@ In the recent estimates for Bangladesh, oesophageal, lung, stomach, and lip and 
 
 ## What do you mean by biopsy?
 
-**
-
-**Say this first:** A biopsy is the removal of a sample of tissue, or of an entire lesion, from a living patient for microscopic examination, in order to establish a diagnosis.
+A biopsy is the removal of a sample of tissue, or of an entire lesion, from a living patient for microscopic examination, in order to establish a diagnosis.
 
 The term is derived from the Greek bios, life, and opsis, vision. It is the most important means of confirming a clinical diagnosis of tumour, and permits not only the distinction between benign and malignant disease but also typing, grading and, with ancillary tests, the assessment of prognostic and predictive markers. The usefulness of a biopsy depends on the specimen being adequate, representative and properly preserved. When the whole lesion cannot be excised, the site for biopsy must be chosen with care, because the periphery of a mass may not be representative and the centre may be largely necrotic. The specimen should be promptly immersed in a fixative, usually formalin, and a portion may be reserved for other studies such as cytogenetics, flow cytometry and molecular diagnostics. The pathologist also needs the relevant clinical information.
 
 
 ## Types of biopsy.
 
-**
-
-**Say this first:** The principal types of biopsy are excisional biopsy, incisional biopsy, needle biopsy (core and fine-needle aspiration), punch biopsy, and endoscopic biopsy.
+The principal types of biopsy are excisional biopsy, incisional biopsy, needle biopsy (core and fine-needle aspiration), punch biopsy, and endoscopic biopsy.
 
 | Type | Description | Example |
 |---|---|---|
@@ -5835,7 +5825,7 @@ The term is derived from the Greek bios, life, and opsis, vision. It is the most
 
 ## Name 5 tumour markers with associated tumours.
 
-**Say this first:** Five commonly used tumour markers are prostate-specific antigen (prostatic adenocarcinoma), carcinoembryonic antigen (carcinomas of the colon, pancreas, stomach and breast), alpha-fetoprotein (hepatocellular carcinoma and yolk sac tumours), human chorionic gonadotropin (choriocarcinoma and testicular germ cell tumours), and CA-125 (ovarian carcinoma).
+Five commonly used tumour markers are prostate-specific antigen (prostatic adenocarcinoma), carcinoembryonic antigen (carcinomas of the colon, pancreas, stomach and breast), alpha-fetoprotein (hepatocellular carcinoma and yolk sac tumours), human chorionic gonadotropin (choriocarcinoma and testicular germ cell tumours), and CA-125 (ovarian carcinoma).
 
 | Marker | Associated tumour |
 |---|---|
@@ -6025,7 +6015,7 @@ Immunohistochemistry (IHC) entails the staining of tissue sections with antibodi
 
 ## 45-year-old man with hard neck mass and hoarseness of voice for 3 months — Clinical diagnosis? Tests to evaluate the mass?
 
-**Say this first:** This is a malignant neoplasm of the neck until proved otherwise. The most likely clinical diagnosis is carcinoma of the thyroid, such as papillary or anaplastic carcinoma, that has invaded the recurrent laryngeal nerve, and the differential diagnosis is squamous cell carcinoma of the larynx or hypopharynx with metastasis to a cervical lymph node, or a lymphoma. I would confirm it by FNAC and histology, with laryngoscopy and imaging for the extent.
+This is a malignant neoplasm of the neck until proved otherwise. The most likely clinical diagnosis is carcinoma of the thyroid, such as papillary or anaplastic carcinoma, that has invaded the recurrent laryngeal nerve, and the differential diagnosis is squamous cell carcinoma of the larynx or hypopharynx with metastasis to a cervical lymph node, or a lymphoma. I would confirm it by FNAC and histology, with laryngoscopy and imaging for the extent.
 
 **Reasoning.** A hard, relatively fixed mass in a middle-aged man that has progressed over months suggests a malignant neoplasm, since benign lesions are usually soft, slow growing, and movable. Hoarseness of voice indicates involvement of the larynx or of the recurrent laryngeal nerve, producing vocal cord paralysis, and it points to a locally invasive tumour. A thyroid swelling moves with deglutition, whereas a lymph node mass is usually lateral and does not, which helps to separate a thyroid primary from nodal disease. A history of smoking and alcohol, dysphagia, haemoptysis, a previous history of irradiation to the neck, or a family history of thyroid cancer would help to distinguish the possibilities.
 
@@ -6042,7 +6032,7 @@ Immunohistochemistry (IHC) entails the staining of tissue sections with antibodi
 
 ## 60-year-old man with fungating, ulcerated growth on the leg for 6 months, fixed to the underlying surface — Probable diagnosis? How can you diagnose the case?
 
-**Say this first:** The probable diagnosis is squamous cell carcinoma of the skin of the leg, possibly arising in a chronic ulcer or scar (Marjolin ulcer). The diagnosis is made by a biopsy from the edge of the lesion for histopathology, with assessment of the regional lymph nodes and of the extent of invasion.
+The probable diagnosis is squamous cell carcinoma of the skin of the leg, possibly arising in a chronic ulcer or scar (Marjolin ulcer). The diagnosis is made by a biopsy from the edge of the lesion for histopathology, with assessment of the regional lymph nodes and of the extent of invasion.
 
 **Reasoning.** A fungating, ulcerated growth that is fixed to the underlying tissue in an older man indicates a locally invasive malignant tumour, which has penetrated through the skin and into the deeper structures. Squamous cell carcinoma is the commonest such malignancy. Predisposing factors are chronic sun exposure, a long-standing ulcer, scar, burn or sinus (as in chronic osteomyelitis, which is in the list of chronic inflammatory conditions that predispose to cancer), radiation, and arsenic exposure. The differential diagnosis includes basal cell carcinoma (locally invasive but only rarely metastasising, and more common on the face), amelanotic melanoma, a soft tissue sarcoma that has ulcerated, and Kaposi sarcoma.
 
@@ -6057,7 +6047,7 @@ Immunohistochemistry (IHC) entails the staining of tissue sections with antibodi
 
 ## 70-year-old man with blackish pigmented lesion on the right foot for 4 months and new right inguinal lymphadenopathy — Probable diagnosis? How can you diagnose the case?
 
-**Say this first:** The probable diagnosis is malignant melanoma of the skin of the foot, with metastasis to the right inguinal lymph nodes. The diagnosis is confirmed by excisional biopsy of the lesion for histology with immunohistochemistry, and FNAC or biopsy of the lymph node, followed by staging.
+The probable diagnosis is malignant melanoma of the skin of the foot, with metastasis to the right inguinal lymph nodes. The diagnosis is confirmed by excisional biopsy of the lesion for histology with immunohistochemistry, and FNAC or biopsy of the lymph node, followed by staging.
 
 **Reasoning.** A recently evolving blackish pigmented lesion in an older person strongly suggests melanoma, a malignant tumour of melanocytes, and the new, enlarged regional lymph nodes in the drainage area of the foot (inguinal) point to lymphatic metastasis. Acral lentiginous melanoma of the sole and foot is not primarily related to sun exposure, and it is the commonest type in Asian and African populations. The differential diagnosis includes a benign nevus, seborrheic keratosis, pigmented basal cell carcinoma, and a haematoma beneath the nail or skin, and reactive lymphadenopathy from infection of the foot, which may enlarge the nodes without metastasis; this can be settled only by microscopic examination.
 
@@ -6073,7 +6063,7 @@ Immunohistochemistry (IHC) entails the staining of tissue sections with antibodi
 
 ## Common types of environmental hazards and diseases.
 
-**Say this first:** Environmental diseases are conditions caused by exposure to harmful chemical or physical agents in the ambient, workplace and personal environment. The main groups are air pollution, toxic metals, occupational and agricultural exposures, tobacco and alcohol, drugs, physical agents such as heat, radiation and electricity, and nutritional disorders.
+Environmental diseases are conditions caused by exposure to harmful chemical or physical agents in the ambient, workplace and personal environment. The main groups are air pollution, toxic metals, occupational and agricultural exposures, tobacco and alcohol, drugs, physical agents such as heat, radiation and electricity, and nutritional disorders.
 
 Xenobiotics are foreign chemicals in air, water, food and soil that enter the body by inhalation, ingestion or skin contact. They may be excreted in urine, feces or expired air, or accumulate in bone, fat, brain and other tissues. They are converted into nontoxic products or activated into toxic ones by the two-phase reaction system that involves the cytochrome P-450 enzymes.
 
@@ -6093,7 +6083,7 @@ Climate change and health disparities increasingly influence the distribution of
 
 ## Sources of lead poisoning.
 
-**Say this first:** The main sources are lead-containing paint and dust in old housing, contaminated drinking water and soil, leaded gasoline and automobile exhaust, and occupational exposure in mining, foundries, battery manufacture and spray painting.
+The main sources are lead-containing paint and dust in old housing, contaminated drinking water and soil, leaded gasoline and automobile exhaust, and occupational exposure in mining, foundries, battery manufacture and spray painting.
 
 For most of the twentieth century the major environmental sources were lead-containing house paints and gasoline. Lead was banned from gasoline in the United States in 1996, but it remains a hazard, particularly for children. The sources can be grouped as follows:
 
@@ -6106,7 +6096,7 @@ Children are particularly vulnerable. They absorb more ingested lead than adults
 
 ## Important pathologic features of lead poisoning.
 
-**Say this first:** Lead binds sulfhydryl groups and interferes with calcium metabolism, and its major targets are the bone marrow and blood, the nervous system, the gastrointestinal tract and the kidneys. The characteristic findings are microcytic hypochromic anaemia with basophilic stippling, lead lines in bone and gums, encephalopathy in children, peripheral neuropathy in adults, lead colic and proximal tubular damage.
+Lead binds sulfhydryl groups and interferes with calcium metabolism, and its major targets are the bone marrow and blood, the nervous system, the gastrointestinal tract and the kidneys. The characteristic findings are microcytic hypochromic anaemia with basophilic stippling, lead lines in bone and gums, encephalopathy in children, peripheral neuropathy in adults, lead colic and proximal tubular damage.
 
 Most absorbed lead (80–85%) is deposited in newly forming bone and teeth, where it competes with calcium, binds phosphate and has a half-life of 20–30 years. The remainder lies in blood and soft tissues.
 
@@ -6121,7 +6111,7 @@ Diagnosis. It requires suspicion: neurologic change in a child, or unexplained m
 
 ## Sources of arsenic.
 
-**Say this first:** Arsenic occurs naturally in soil and groundwater and is also released from mining and smelting, and from wood preservatives, herbicides and other agricultural products. Arsenic-contaminated drinking water is the most important source of exposure in Bangladesh.
+Arsenic occurs naturally in soil and groundwater and is also released from mining and smelting, and from wood preservatives, herbicides and other agricultural products. Arsenic-contaminated drinking water is the most important source of exposure in Bangladesh.
 
 - **Natural sources:** arsenic is found in soils and water. High concentrations of inorganic arsenic are present in groundwater in countries such as Bangladesh, Chile and China. About 40 million people in Bangladesh drink arsenic-contaminated water, which makes this one of the greatest environmental cancer risks recognised.
 - **Industrial and agricultural:** release from mines and smelting industries, wood preservatives, herbicides and other agricultural products.
@@ -6133,7 +6123,7 @@ The trivalent compounds (arsenic trioxide, sodium arsenite and arsenic trichlori
 
 ## Toxic effects of arsenic on the body.
 
-**Say this first:** Arsenic interferes with cellular metabolism, particularly mitochondrial oxidative phosphorylation, and its toxicity falls mainly on the gastrointestinal tract, nervous system, skin and heart. Chronic exposure causes characteristic skin lesions and cancers of the skin, lung and bladder.
+Arsenic interferes with cellular metabolism, particularly mitochondrial oxidative phosphorylation, and its toxicity falls mainly on the gastrointestinal tract, nervous system, skin and heart. Chronic exposure causes characteristic skin lesions and cancers of the skin, lung and bladder.
 
 Trivalent arsenic can replace phosphate in oxidative phosphorylation, and it also binds sulfhydryl groups and disturbs a variety of proteins.
 
@@ -6146,7 +6136,7 @@ Trivalent arsenic can replace phosphate in oxidative phosphorylation, and it als
 
 ## Diseases associated with occupational exposure.
 
-**Say this first:** Occupational exposure causes diseases of the lung (pneumoconioses, cancer, chronic obstructive disease), nervous system, kidney, blood, skin and liver, and cancers such as bladder cancer, leukaemia and liver angiosarcoma.
+Occupational exposure causes diseases of the lung (pneumoconioses, cancer, chronic obstructive disease), nervous system, kidney, blood, skin and liver, and cancers such as bladder cancer, leukaemia and liver angiosarcoma.
 
 More than 10 million occupational injuries occur each year in the United States, and about 65,000 people die from occupational injuries and illness. Most deaths result from toxic exposures that cause cancer, lung disease and other fatal conditions.
 
@@ -6194,7 +6184,7 @@ Effects. Respiratory disease, cardiovascular disease and cancer predominate. Air
 
 ## Health hazards due to tobacco smoking.
 
-**Say this first:** Smoking is the most readily preventable cause of death. It causes lung cancer and cancers of many other organs, chronic obstructive pulmonary disease, atherosclerosis with myocardial infarction and stroke, and harm to the developing foetus, and it harms nonsmokers through second-hand smoke.
+Smoking is the most readily preventable cause of death. It causes lung cancer and cancers of many other organs, chronic obstructive pulmonary disease, atherosclerosis with myocardial infarction and stroke, and harm to the developing foetus, and it harms nonsmokers through second-hand smoke.
 
 Tobacco smoke contains about 7000 chemicals, more than 60 of which are carcinogens. The harmful constituents include tar, polycyclic aromatic hydrocarbons, benzo[a]pyrene and nitrosamines (carcinogenesis), nicotine (addiction, ganglionic stimulation, tumour promotion), phenol (tumour promotion and mucosal irritation), carbon monoxide (impaired oxygen transport) and formaldehyde and nitrogen oxides (ciliary toxicity and mucosal irritation). Nicotine acts on nicotinic receptors and releases catecholamines, so it raises heart rate, blood pressure and cardiac output. Harm increases with the amount smoked, measured in pack-years.
 
@@ -6212,7 +6202,7 @@ Smoking cessation lowers cardiovascular risk within a few years, but the excess 
 
 ## Organs where carcinomas may develop due to the carcinogenic effect of tobacco.
 
-**Say this first:** Tobacco causes carcinomas of the lung, oral cavity, pharynx, larynx, oesophagus, stomach, pancreas, liver, colon, kidney, bladder and cervix, and some leukaemias. Lung cancer is the commonest, and about 90% of lung cancers occur in smokers.
+Tobacco causes carcinomas of the lung, oral cavity, pharynx, larynx, oesophagus, stomach, pancreas, liver, colon, kidney, bladder and cervix, and some leukaemias. Lung cancer is the commonest, and about 90% of lung cancers occur in smokers.
 
 | Organ | Suspected carcinogen |
 |---|---|
@@ -6228,7 +6218,7 @@ The carcinogens in smoke are metabolised by cytochrome P-450 enzymes to electrop
 
 ## Adverse effects of alcohol abuse on health.
 
-**Say this first:** Alcohol abuse injures the liver (fatty change, alcoholic hepatitis, cirrhosis), gastrointestinal tract, nervous system, heart and pancreas, causes foetal alcohol syndrome and malnutrition, and increases the risk of cancer of the oral cavity, oesophagus, larynx, liver and breast.
+Alcohol abuse injures the liver (fatty change, alcoholic hepatitis, cirrhosis), gastrointestinal tract, nervous system, heart and pancreas, causes foetal alcohol syndrome and malnutrition, and increases the risk of cancer of the oral cavity, oesophagus, larynx, liver and breast.
 
 Metabolism. Ethanol is oxidised to acetaldehyde by alcohol dehydrogenase (main route), the microsomal CYP2E1 system and catalase (about 5%), and acetaldehyde is converted to acetate by aldehyde dehydrogenase. The toxic effects stem from acetaldehyde, from the fall in NAD and rise in NADH (which causes hepatic fat accumulation and lactic acidosis), and from reactive oxygen species and gut-derived endotoxin that stimulate TNF release from Kupffer cells. About 50% of Asians carry the ALDH2*2 variant, which is dominant negative, and heterozygotes who drink have a higher risk of oesophageal cancer.
 
@@ -6252,7 +6242,7 @@ Chronic effects.
 
 ## Effects of radiation on various organs of the body.
 
-**Say this first:** Ionising radiation damages DNA directly and through free radicals, so rapidly dividing tissues such as bone marrow, lymphoid tissue, the gastrointestinal mucosa and gonads are most sensitive. It also causes vascular damage, fibrosis and cancer.
+Ionising radiation damages DNA directly and through free radicals, so rapidly dividing tissues such as bone marrow, lymphoid tissue, the gastrointestinal mucosa and gonads are most sensitive. It also causes vascular damage, fibrosis and cancer.
 
 Radiation injures cells by radiolysis of water, which generates reactive oxygen species, and by direct damage to DNA, especially double-strand breaks. Repair by nonhomologous end joining can leave deletions, translocations and inversions. Cells may die, fail to divide, or survive with mutations, leading to carcinogenesis and teratogenesis. Nondividing cells such as neurons and muscle are relatively resistant.
 
@@ -6274,7 +6264,7 @@ Late effects. Fibrosis, and an increased risk of cancer (leukaemia, thyroid, bre
 
 ## Classify burn on the basis of degree.
 
-**Say this first:** Burns are classified by depth into superficial (first degree), partial-thickness (second degree) and full-thickness (third degree) burns, with deeper injury to muscle and bone sometimes called fourth degree.
+Burns are classified by depth into superficial (first degree), partial-thickness (second degree) and full-thickness (third degree) burns, with deeper injury to muscle and bone sometimes called fourth degree.
 
 | Classification | Former term | Depth | Appearance and symptoms |
 |---|---|---|---|
@@ -6288,7 +6278,7 @@ Histologically the devitalised tissue shows coagulative necrosis, with an inflam
 
 ## Factors that influence the severity of burn injury.
 
-**Say this first:** The severity of a burn depends on its depth, the percentage of body surface involved, internal injury from inhaling hot or toxic fumes, and the promptness and effectiveness of treatment, especially fluid and electrolyte management and control of infection.
+The severity of a burn depends on its depth, the percentage of body surface involved, internal injury from inhaling hot or toxic fumes, and the promptness and effectiveness of treatment, especially fluid and electrolyte management and control of infection.
 
 - **Depth** of the burn.
 - **Percentage of the body surface involved.** In burns of more than 20% of body surface, a systemic inflammatory response shifts fluid rapidly into the interstitium, causing shock and generalised oedema, including pulmonary oedema. When more than 40% is burned, the resting metabolic rate doubles.
@@ -6304,7 +6294,7 @@ The three most serious complications are shock, sepsis and respiratory insuffici
 
 ## Causes of malnutrition.
 
-**Say this first:** Malnutrition is primary when the diet lacks protein, calories, vitamins or minerals, and secondary when the diet is adequate but absorption, utilisation, storage or need is disturbed. The main causes are poverty, acute and chronic illness, alcohol use disorder, ignorance, self-imposed restriction and gastrointestinal disease.
+Malnutrition is primary when the diet lacks protein, calories, vitamins or minerals, and secondary when the diet is adequate but absorption, utilisation, storage or need is disturbed. The main causes are poverty, acute and chronic illness, alcohol use disorder, ignorance, self-imposed restriction and gastrointestinal disease.
 
 An adequate diet supplies energy as carbohydrates, fats and proteins, amino acids and fatty acids as building blocks, and vitamins and minerals as coenzymes, hormones and structural components. In **primary malnutrition** one or more of these is missing from the diet. In **secondary malnutrition** the cause is malabsorption, impaired utilisation or storage, excess loss or increased need.
 
@@ -6318,7 +6308,7 @@ An adequate diet supplies energy as carbohydrates, fats and proteins, amino acid
 
 ## Common nutritional disorders of Bangladesh.
 
-**Say this first:** The commonest nutritional disorders in Bangladesh are protein-energy malnutrition (stunting, wasting and underweight in children), and deficiencies of iron, vitamin A, iodine, zinc and vitamin D, with obesity emerging as a problem of urban populations.
+The commonest nutritional disorders in Bangladesh are protein-energy malnutrition (stunting, wasting and underweight in children), and deficiencies of iron, vitamin A, iodine, zinc and vitamin D, with obesity emerging as a problem of urban populations.
 
 - **Protein-energy malnutrition.** The Bangladesh Demographic and Health Survey 2022 found stunting in about 24% of children under five (down from 31% in 2017–18), underweight in about 22%, and wasting in about 11%, which was higher than the 8% of the previous survey. Stunting reflects chronic malnutrition in utero and in early childhood. Marasmus is more frequent than classic kwashiorkor.
 - **Iron deficiency anaemia.** Common in women of reproductive age, pregnant women, adolescent girls and young children, caused by an inadequate diet, blood loss and hookworm infestation.
@@ -6332,7 +6322,7 @@ An adequate diet supplies energy as carbohydrates, fats and proteins, amino acid
 
 ## What is PEM?
 
-**Say this first:** Protein-energy malnutrition, now called severe acute malnutrition, is a spectrum of clinical syndromes resulting from a dietary intake of protein and calories that is inadequate for the body's needs. Its two ends are marasmus and kwashiorkor.
+Protein-energy malnutrition, now called severe acute malnutrition, is a spectrum of clinical syndromes resulting from a dietary intake of protein and calories that is inadequate for the body's needs. Its two ends are marasmus and kwashiorkor.
 
 Severe acute malnutrition is a life-threatening wasting disorder of children caused by poor nutrient intake or repeated illness. It is defined by a mid-upper arm circumference below 115 mm, weight-for-height three standard deviations below normal, or bilateral pitting oedema of the lower limbs. About 45 million children under five suffered from wasting in 2022, 13.6 million of them severely, and more than three-quarters of children with severe wasting live in Asia. Stunting, which results from malnutrition in utero and in early childhood, affects over 20% of children under five.
 
@@ -6341,7 +6331,7 @@ There are two functionally distinct protein compartments: the somatic compartmen
 
 ## Causes of PEM.
 
-**Say this first:** PEM is caused by inadequate intake of protein and calories because of poverty, early weaning, ignorance and infections, or by secondary causes such as malabsorption, chronic disease and excess protein loss.
+PEM is caused by inadequate intake of protein and calories because of poverty, early weaning, ignorance and infections, or by secondary causes such as malabsorption, chronic disease and excess protein loss.
 
 - **Primary causes (inadequate dietary intake).** Poverty, food shortage from crop failure, drought, war and political upheaval, and ignorance about the nutritional needs of infants. Kwashiorkor typically follows early weaning onto an almost entirely carbohydrate diet, and marasmus follows severe deficiency of total calories. Recurrent illness, particularly diarrhoea and infections, lowers appetite and increases losses and requirements.
 - **Secondary causes.**
@@ -6354,7 +6344,7 @@ There are two functionally distinct protein compartments: the somatic compartmen
 
 ## Differences between marasmus and kwashiorkor.
 
-**Say this first:** Marasmus is caused by severe deficiency of total calories and shows emaciation with loss of muscle and fat but little oedema. Kwashiorkor is caused by relatively greater deficiency of protein than calories and shows generalised oedema, fatty liver and skin changes.
+Marasmus is caused by severe deficiency of total calories and shows emaciation with loss of muscle and fat but little oedema. Kwashiorkor is caused by relatively greater deficiency of protein than calories and shows generalised oedema, fatty liver and skin changes.
 
 | Feature | Marasmus | Kwashiorkor |
 |---|---|---|
@@ -6378,7 +6368,7 @@ Both may show anaemia, vitamin deficiencies and infections, and the two forms ov
 
 ## Sources of vitamin A.
 
-**Say this first:** Preformed vitamin A comes from animal foods such as liver, fish, eggs, milk and butter, and provitamin A carotenoids come from yellow and leafy green vegetables such as carrots, squash and spinach.
+Preformed vitamin A comes from animal foods such as liver, fish, eggs, milk and butter, and provitamin A carotenoids come from yellow and leafy green vegetables such as carrots, squash and spinach.
 
 - **Animal sources (preformed vitamin A, retinol):** liver, fish and fish liver oils, eggs, milk, butter and other dairy products.
 - **Plant sources (carotenoids):** yellow and leafy green vegetables such as carrots, squash and spinach, and yellow-orange fruits. β-Carotene is the most important carotenoid and is converted efficiently to retinol in the intestine. Carotenoids supply about 30% of the vitamin A in human diets.
@@ -6388,7 +6378,7 @@ The recommended dietary allowance is expressed in retinol equivalents to account
 
 ## Effects of vitamin A deficiency.
 
-**Say this first:** Vitamin A deficiency causes night blindness and xerophthalmia with eventual blindness, squamous metaplasia and keratinisation of epithelia, and immune deficiency with increased mortality from infections such as measles.
+Vitamin A deficiency causes night blindness and xerophthalmia with eventual blindness, squamous metaplasia and keratinisation of epithelia, and immune deficiency with increased mortality from infections such as measles.
 
 Vitamin A is a component of visual pigment (rhodopsin in rods, iodopsins in cones), regulates differentiation of epithelia through retinoic acid receptors, and supports immunity.
 
@@ -6400,7 +6390,7 @@ Vitamin A is a component of visual pigment (rhodopsin in rods, iodopsins in cone
 
 ## What is rickets?
 
-**Say this first:** Rickets is a disease of growing children in which deficiency of vitamin D, or disturbed calcium and phosphate metabolism, causes defective mineralisation of bone and epiphyseal cartilage, producing soft deformed bones. The counterpart in adults is osteomalacia.
+Rickets is a disease of growing children in which deficiency of vitamin D, or disturbed calcium and phosphate metabolism, causes defective mineralisation of bone and epiphyseal cartilage, producing soft deformed bones. The counterpart in adults is osteomalacia.
 
 Pathogenesis. Vitamin D, formed in the skin from 7-dehydrocholesterol under UVB light and hydroxylated in the liver and then in the kidney to 1,25-dihydroxyvitamin D, promotes intestinal absorption of calcium and phosphate and mineralisation of bone. In deficiency, low calcium raises parathyroid hormone, which restores serum calcium by bone resorption and renal calcium retention but also wastes phosphate in the urine. Hypophosphataemia persists and bone mineralisation fails, leaving an excess of unmineralised matrix.
 
@@ -6413,7 +6403,7 @@ Clinical features. In infants the head and chest suffer the greatest stress: cra
 
 ## Effects of vitamin D deficiency.
 
-**Say this first:** Vitamin D deficiency causes rickets in children and osteomalacia in adults, with hypocalcaemia that may lead to tetany, and secondary hyperparathyroidism. In older people milder deficiency increases bone loss and hip fractures.
+Vitamin D deficiency causes rickets in children and osteomalacia in adults, with hypocalcaemia that may lead to tetany, and secondary hyperparathyroidism. In older people milder deficiency increases bone loss and hip fractures.
 
 - **Rickets** in growing children, with the skeletal deformities described above.
 - **Osteomalacia** in adults. The remodeling of bone is deranged, and newly formed osteoid is inadequately mineralised, so there is a thick layer of persistent pink osteoid around the basophilic mineralised trabeculae. Bone contours are preserved, but the bone is weak and prone to fractures and microfractures, especially of vertebral bodies and femoral necks.
@@ -6425,7 +6415,7 @@ Clinical features. In infants the head and chest suffer the greatest stress: cra
 
 ## Why is zinc important for the body?
 
-**Say this first:** Zinc is an essential trace element that is a component of many enzymes, so it is needed for growth, cell division, immunity, wound healing, taste, reproduction and normal skin and gut function.
+Zinc is an essential trace element that is a component of many enzymes, so it is needed for growth, cell division, immunity, wound healing, taste, reproduction and normal skin and gut function.
 
 - **Enzyme cofactor.** Zinc is needed by more than 300 enzymes, including carbonic anhydrase, alcohol dehydrogenase, alkaline phosphatase, copper-zinc superoxide dismutase (antioxidant defence), and DNA and RNA polymerases (cell division and growth).
 - **Gene regulation.** The zinc-finger structure of many transcription factors, including nuclear hormone receptors, depends on zinc.
@@ -6437,7 +6427,7 @@ Clinical features. In infants the head and chest suffer the greatest stress: cra
 
 ## How does zinc deficiency develop?
 
-**Say this first:** Zinc deficiency develops from inadequate intake, as in artificial diets without supplementation, from interference with absorption by other dietary constituents, or from an inborn error of metabolism.
+Zinc deficiency develops from inadequate intake, as in artificial diets without supplementation, from interference with absorption by other dietary constituents, or from an inborn error of metabolism.
 
 Three bases of deficiency are recognised: inadequate supplementation in artificial diets (for example total parenteral nutrition), interference with absorption by other dietary constituents, and an inborn error of metabolism. In more detail:
 
@@ -6450,7 +6440,7 @@ Three bases of deficiency are recognised: inadequate supplementation in artifici
 
 ## Clinical features of zinc deficiency.
 
-**Say this first:** The features are a rash around the eyes, mouth, nose and anus (acrodermatitis enteropathica), anorexia and diarrhoea, growth retardation, depressed mental function, poor wound healing, impaired immunity, impaired night vision and infertility.
+The features are a rash around the eyes, mouth, nose and anus (acrodermatitis enteropathica), anorexia and diarrhoea, growth retardation, depressed mental function, poor wound healing, impaired immunity, impaired night vision and infertility.
 
 - **Skin:** a vesiculobullous and pustular rash around the eyes, mouth, nose and anus, in acrodermatitis enteropathica, and also on the extremities.
 - **Gastrointestinal:** anorexia and diarrhoea, with loss of taste.
@@ -6464,7 +6454,7 @@ Three bases of deficiency are recognised: inadequate supplementation in artifici
 
 ## Diseases that may occur as a consequence of obesity.
 
-**Say this first:** Obesity, particularly central obesity, predisposes to insulin resistance and type 2 diabetes, hypertension, dyslipidaemia, coronary artery disease, fatty liver disease, gallstones, sleep apnoea, osteoarthritis and several cancers.
+Obesity, particularly central obesity, predisposes to insulin resistance and type 2 diabetes, hypertension, dyslipidaemia, coronary artery disease, fatty liver disease, gallstones, sleep apnoea, osteoarthritis and several cancers.
 
 Obesity is defined by a body mass index above 30 kg/m², with overweight at 25–30 kg/m². Central (visceral) obesity carries a much higher risk than subcutaneous fat, and is the centre of the metabolic syndrome: abnormal glucose and lipid metabolism, hypertension and a proinflammatory state, driven in part by free fatty acids that activate the inflammasome and stimulate IL-1.
 
@@ -6591,7 +6581,7 @@ Diagnosis and treatment. Low plasma or serum zinc (with low alkaline phosphatase
 
 ## How does dietary habit influence the development of cancer?
 
-**Say this first:** Diet may influence cancer through exogenous carcinogens in food, endogenous synthesis of carcinogens from dietary components, lack of protective factors, and obesity. Although geographic and migration studies show that diet affects cancer incidence, no particular diet has been proven to cause or prevent cancer.
+Diet may influence cancer through exogenous carcinogens in food, endogenous synthesis of carcinogens from dietary components, lack of protective factors, and obesity. Although geographic and migration studies show that diet affects cancer incidence, no particular diet has been proven to cause or prevent cancer.
 
 The incidence of specific cancers varies up to 100-fold between regions and changes with diet. For example, colon cancer was negligible in Japanese men aged 55–60 fifty years ago and is now more frequent than in men of the same age in the United Kingdom, and it increased progressively as Japanese migrated to Hawaii and the mainland United States. Three aspects of diet are of major concern.
 
@@ -6752,7 +6742,7 @@ Organisation of subclinical thrombi on disrupted plaques is also an important me
 
 ## How does dietary habit influence the development of atherosclerosis?
 
-**Say this first:** Diet influences atherosclerosis mainly through its effect on blood lipids and on associated conditions such as obesity, hypertension and diabetes. A diet that raises LDL cholesterol (rich in cholesterol, saturated fat and trans fats) promotes atherosclerosis, whereas omega-3 fatty acids from fish are protective. Excess salt aggravates hypertension, and excess calories cause obesity, insulin resistance and diabetes.
+Diet influences atherosclerosis mainly through its effect on blood lipids and on associated conditions such as obesity, hypertension and diabetes. A diet that raises LDL cholesterol (rich in cholesterol, saturated fat and trans fats) promotes atherosclerosis, whereas omega-3 fatty acids from fish are protective. Excess salt aggravates hypertension, and excess calories cause obesity, insulin resistance and diabetes.
 
 **Cholesterol and LDL.** Hypercholesterolaemia is sufficient on its own to initiate lesions, and the dominant lipids in plaques are cholesterol and cholesterol esters. Epidemiologic data show a strong correlation between the severity of atherosclerosis and plasma total and LDL cholesterol, and lowering cholesterol by diet or drugs slows progression, causes regression of some plaques and reduces cardiovascular events. In Robbins' account the contribution of most dietary fats is now regarded as minor, but diets that raise LDL (high in saturated animal fat and cholesterol) remain adverse in practice.
 
@@ -6913,7 +6903,7 @@ Its limitations are that small "troponin leaks" occur in heart failure, pulmonar
 
 ## 50-year-old man with severe central chest pain and sweating followed by transient unconsciousness — Likely diagnosis? Laboratory investigations to confirm that diagnosis?
 
-**Say this first:** The likely diagnosis is acute myocardial infarction, with the transient unconsciousness (syncope) most probably due to an arrhythmia such as ventricular tachycardia, heart block or asystole, or to hypotension from acute pump failure. It is confirmed by a raised cardiac troponin (with CK-MB), along with typical ECG changes.
+The likely diagnosis is acute myocardial infarction, with the transient unconsciousness (syncope) most probably due to an arrhythmia such as ventricular tachycardia, heart block or asystole, or to hypotension from acute pump failure. It is confirmed by a raised cardiac troponin (with CK-MB), along with typical ECG changes.
 
 Severe central chest pain with diaphoresis is the classic presentation of acute MI. Syncope in this setting suggests a complication, the commonest being a ventricular arrhythmia (arrhythmias occur in about 90% of patients and are maximal in the first hour), or conduction block in a posterior (inferior) infarct, or hypotension from extensive myocardial damage with cardiogenic shock. Aortic dissection and massive pulmonary embolism, which can also present with pain and syncope, must be considered.
 
@@ -7112,7 +7102,7 @@ Arrhythmias, invasion of the myocardium and systemic embolisation bode particula
 
 ## What is granulopoiesis?
 
-**Say this first:** Granulopoiesis is the orderly proliferation and maturation of marrow progenitor cells into mature granulocytes—neutrophils, eosinophils and basophils—under the control of colony-stimulating factors.
+Granulopoiesis is the orderly proliferation and maturation of marrow progenitor cells into mature granulocytes—neutrophils, eosinophils and basophils—under the control of colony-stimulating factors.
 
 All blood cells arise from pluripotent haematopoietic stem cells (HSCs), which have the twin properties of pluripotency and self-renewal. A stem cell gives rise to a multipotent progenitor, then to a myeloid-committed progenitor, and ultimately to a granulocyte–macrophage colony-forming unit (CFU-GM). This cell has lost the ability to self-renew and is committed to the granulocytic and monocytic pathways; from it arise the morphologically recognizable precursors, beginning with the myeloblast. Along this road the cells proliferate rapidly while differentiating, and the lineage-specific growth factors tune the output. KIT ligand and FLT3 ligand act on very early progenitors, whereas G-CSF and GM-CSF act on committed myeloid progenitors, G-CSF being the principal driver of neutrophil production, and IL-5 preferentially stimulates eosinophils.
 
@@ -7123,7 +7113,7 @@ Disordered granulopoiesis underlies several important conditions: reduced or ine
 
 ## Stages of the granulocytic series.
 
-**Say this first:** The granulocytic series runs from myeloblast to promyelocyte, myelocyte, metamyelocyte, band form and finally the segmented granulocyte; the cells up to the myelocyte can divide, and from the metamyelocyte onward they only mature.
+The granulocytic series runs from myeloblast to promyelocyte, myelocyte, metamyelocyte, band form and finally the segmented granulocyte; the cells up to the myelocyte can divide, and from the metamyelocyte onward they only mature.
 
 The morphological stages, in order of maturation, are summarised below.
 
@@ -7187,7 +7177,7 @@ Other recognised causes include metabolic derangements (diabetic ketoacidosis, u
 
 ## What do you mean by leucocytosis?
 
-**Say this first:** Leucocytosis is an increase in the total number of circulating white blood cells above the upper limit of the reference range, which in adults is about 10,800 per µL.
+Leucocytosis is an increase in the total number of circulating white blood cells above the upper limit of the reference range, which in adults is about 10,800 per µL.
 
 It is one of the commonest reactions to inflammatory states and is usually a physiologic response of the marrow to a need for more effector cells. Because the total count is made up of several cell types, leukocytosis is further designated by the cell type that is increased: **neutrophilia**, **eosinophilia**, **basophilia**, **monocytosis** and **lymphocytosis**. These tend to occur in different clinical settings because different growth factors and cytokines are produced in response to different stimuli; for example, IL-5 mainly stimulates eosinophil production, whereas G-CSF induces neutrophilia.
 
@@ -7196,7 +7186,7 @@ Leukocytosis may be **reactive** or **neoplastic**. Reactive leukocytosis result
 
 ## Causes of neutrophilia.
 
-**Say this first:** The commonest cause of neutrophilia is acute bacterial infection, but it also occurs in sterile inflammation and tissue necrosis, with drugs and physiologic stress, in metabolic disorders, and in myeloproliferative neoplasms.
+The commonest cause of neutrophilia is acute bacterial infection, but it also occurs in sterile inflammation and tissue necrosis, with drugs and physiologic stress, in metabolic disorders, and in myeloproliferative neoplasms.
 
 Neutrophilia may be classified by mechanism and cause.
 
@@ -7212,7 +7202,7 @@ Among infections, pyogenic bacteria (staphylococci, streptococci, pneumococci, g
 
 ## Causes of eosinophilia.
 
-**Say this first:** The commonest causes of eosinophilia are allergic disorders such as asthma and hay fever, and parasitic infestations; other causes are drug reactions, certain malignancies like Hodgkin lymphoma, autoimmune disorders, and primary eosinophilic neoplasms.
+The commonest causes of eosinophilia are allergic disorders such as asthma and hay fever, and parasitic infestations; other causes are drug reactions, certain malignancies like Hodgkin lymphoma, autoimmune disorders, and primary eosinophilic neoplasms.
 
 Eosinophilia reflects increased IL-5–driven production and is conveniently classified into reactive (secondary) and clonal (primary) forms.
 
@@ -7229,7 +7219,7 @@ Eosinophilia reflects increased IL-5–driven production and is conveniently cla
 
 ## What is Loeffler syndrome?
 
-**Say this first:** Löffler syndrome is a transient, self-limited pulmonary eosinophilic infiltration—simple pulmonary eosinophilia—with peripheral blood eosinophilia, caused most commonly by the lung phase of larval migration of Ascaris lumbricoides.
+Löffler syndrome is a transient, self-limited pulmonary eosinophilic infiltration—simple pulmonary eosinophilia—with peripheral blood eosinophilia, caused most commonly by the lung phase of larval migration of Ascaris lumbricoides.
 
 After ingestion of ascaris eggs, the larvae hatch in the intestine, penetrate the mucosa, travel through the portal and systemic circulation to the lungs, break into the alveoli, and ascend the bronchial tree to be swallowed and mature in the gut. During the pulmonary passage, 1 to 2 weeks after infection, the host mounts a hypersensitivity (Th2, IL-5–mediated) response, producing an eosinophil-rich alveolar infiltrate. Similar syndromes occur with hookworm (Ancylostoma, Necator) and Strongyloides larvae, and with some drugs (nitrofurantoin, sulfonamides, penicillins, methotrexate).
 
@@ -7238,7 +7228,7 @@ The patient has dry cough, wheeze, breathlessness, low-grade fever and sometimes
 
 ## Define lymphocytosis.
 
-**Say this first:** Lymphocytosis is an increase in the absolute lymphocyte count above the upper limit of the reference range for age—in adults, more than about 4,000 per µL (4 × 10³/µL).
+Lymphocytosis is an increase in the absolute lymphocyte count above the upper limit of the reference range for age—in adults, more than about 4,000 per µL (4 × 10³/µL).
 
 The reference range for lymphocytes in the adult is 1.2 to 3.4 × 10³/µL, and a sustained count above about 4 × 10³/µL is regarded as lymphocytosis. Children normally have higher values, so the cut-off varies with age: lymphocytes are the predominant leukocyte in infancy and early childhood, and counts of up to 9–10 × 10³/µL may be normal in young infants. It is essential to evaluate the **absolute** rather than the **relative** count: a relative lymphocytosis (an increased percentage of lymphocytes) can occur simply because of neutropenia, whereas absolute lymphocytosis implies a true increase in lymphocyte numbers.
 
@@ -7247,7 +7237,7 @@ Lymphocytosis may be **reactive (polyclonal)** or **neoplastic (monoclonal)**. R
 
 ## What are the causes of lymphocytosis?
 
-**Say this first:** Lymphocytosis is caused by viral infections such as infectious mononucleosis, by certain bacterial infections like pertussis and tuberculosis, by chronic immunologic stimulation, and by lymphoid neoplasms, chiefly chronic lymphocytic leukaemia.
+Lymphocytosis is caused by viral infections such as infectious mononucleosis, by certain bacterial infections like pertussis and tuberculosis, by chronic immunologic stimulation, and by lymphoid neoplasms, chiefly chronic lymphocytic leukaemia.
 
 **Reactive (polyclonal) lymphocytosis**
 
@@ -7267,7 +7257,7 @@ The distinction between reactive and neoplastic lymphocytosis rests on morpholog
 
 ## Write a short note on leukopenia.
 
-**Say this first:** Leukopenia is a reduction in the total circulating white cell count below the lower reference limit, in adults about 4,000 per µL; it is usually due to neutropenia, and lymphopenia is the next most common cause.
+Leukopenia is a reduction in the total circulating white cell count below the lower reference limit, in adults about 4,000 per µL; it is usually due to neutropenia, and lymphopenia is the next most common cause.
 
 **Definition and types.** Leukopenia is a decrease in the number of circulating white cells. A low count most commonly results from reduced numbers of neutrophils (neutropenia, granulocytopenia). Lymphopenia is less common, and monocytopenia, eosinopenia and basopenia are of little clinical consequence.
 
@@ -7284,7 +7274,7 @@ The distinction between reactive and neoplastic lymphocytosis rests on morpholog
 
 ## Write a short note on neutropenia.
 
-**Say this first:** Neutropenia is a reduction in the absolute neutrophil count in the blood below about 1,500 per µL; it carries a risk of serious bacterial and fungal infection, which rises steeply when the count falls below 500 per µL.
+Neutropenia is a reduction in the absolute neutrophil count in the blood below about 1,500 per µL; it carries a risk of serious bacterial and fungal infection, which rises steeply when the count falls below 500 per µL.
 
 **Definition.** Neutropenia is a reduction in the number of circulating neutrophils. It is graded as mild (1.0–1.5 × 10³/µL), moderate (0.5–1.0 × 10³/µL) and severe (below 0.5 × 10³/µL). Agranulocytosis denotes a marked reduction, usually to fewer than 100 per µL, and is a serious, often life-threatening condition.
 
@@ -7302,7 +7292,7 @@ Drug toxicity is the most common cause of agranulocytosis. Alkylating agents and
 
 ## What is agranulocytosis?
 
-**Say this first:** Agranulocytosis is a marked reduction in the number of circulating neutrophils, usually to fewer than 100 per µL (clinically, below 500 per µL), which makes the individual highly susceptible to overwhelming bacterial and fungal infection.
+Agranulocytosis is a marked reduction in the number of circulating neutrophils, usually to fewer than 100 per µL (clinically, below 500 per µL), which makes the individual highly susceptible to overwhelming bacterial and fungal infection.
 
 Agranulocytosis is the extreme end of neutropenia. It results either from failure of production by the marrow or from accelerated destruction, and the most common cause is drug toxicity. Cytotoxic drugs (alkylating agents, antimetabolites) produce it in a predictable, dose-related manner, with concurrent suppression of red cell and platelet production, whereas idiosyncratic agranulocytosis may follow exposure to antithyroid drugs, sulfonamides, phenothiazines such as chlorpromazine, anticonvulsants, anti-inflammatory drugs, antibiotics and diuretics; some drugs act by direct toxicity to marrow precursors and others by antibody-mediated destruction of neutrophils. The marrow is hypocellular when precursors are suppressed or destroyed, with few cells beyond the myeloblast and promyelocyte stage ("maturation arrest").
 
@@ -7311,7 +7301,7 @@ The patient develops sudden fever, chills, severe sore throat and prostration. N
 
 ## Important causes of leucopenia, neutropenia and agranulocytosis.
 
-**Say this first:** Leucopenia is most often due to neutropenia, and the important causes are drugs, marrow failure or infiltration, ineffective haematopoiesis, immune destruction, splenic sequestration, and severe infection; agranulocytosis is most often drug-induced.
+Leucopenia is most often due to neutropenia, and the important causes are drugs, marrow failure or infiltration, ineffective haematopoiesis, immune destruction, splenic sequestration, and severe infection; agranulocytosis is most often drug-induced.
 
 | Mechanism | Causes |
 |---|---|
@@ -7328,7 +7318,7 @@ Lymphopenia, in turn, is caused by congenital immunodeficiency, advanced HIV inf
 
 ## Define leukaemoid reaction / write a short note (incl. blood picture).
 
-**Say this first:** A leukaemoid reaction is a reactive, non-neoplastic leukocytosis—usually above 50,000 per µL—with a shift to the left and the appearance of immature cells in the peripheral blood, so that it mimics leukaemia, but it is caused by an underlying disorder such as severe infection and regresses when the cause is removed.
+A leukaemoid reaction is a reactive, non-neoplastic leukocytosis—usually above 50,000 per µL—with a shift to the left and the appearance of immature cells in the peripheral blood, so that it mimics leukaemia, but it is caused by an underlying disorder such as severe infection and regresses when the cause is removed.
 
 **Definition.** The leukaemoid reaction is a marked, exaggerated reactive leukocytosis in which many immature white cells appear in the peripheral blood, mimicking a leukaemia, particularly myeloid leukaemia. It is a physiologic over-response of the marrow, driven by cytokines and colony-stimulating factors, to a severe stimulus. The white cell count commonly exceeds 50,000 per µL, although some authorities accept a lower threshold of about 30,000 per µL. By definition the cells are polyclonal and not neoplastic, and the leukocytosis subsides after the cause is treated.
 
@@ -7353,7 +7343,7 @@ Lymphopenia, in turn, is caused by congenital immunodeficiency, advanced HIV inf
 
 ## What is subleukaemic leukaemia?
 
-**Say this first:** Subleukaemic leukaemia is a leukaemia in which the total white cell count is normal or only modestly raised, and few or no blasts are seen in the peripheral blood, although the bone marrow is heavily infiltrated by leukaemic cells.
+Subleukaemic leukaemia is a leukaemia in which the total white cell count is normal or only modestly raised, and few or no blasts are seen in the peripheral blood, although the bone marrow is heavily infiltrated by leukaemic cells.
 
 The terms leukaemic, subleukaemic and aleukaemic describe the peripheral blood findings in leukaemia. In the **leukaemic** form the white cell count is high and blasts are abundant in the blood. In **subleukaemic** leukaemia the leukocyte count is normal or only slightly increased and blasts are scanty. In **aleukaemic** leukaemia the count is low, with pancytopenia and no blasts in the blood. As Robbins notes, the number of leukaemic cells in the blood in acute myeloid leukaemia is highly variable; blasts may exceed 100,000 per µL, but are below 10,000 per µL in about half of patients, and occasionally blasts are entirely absent from the blood (aleukaemic leukaemia). For this reason a bone marrow examination is essential to exclude acute leukaemia in a pancytopenic patient.
 
@@ -7362,7 +7352,7 @@ The significance of the subleukaemic and aleukaemic states is diagnostic. Becaus
 
 ## Write the differences between leukaemoid reaction and leukaemia.
 
-**Say this first:** In a leukaemoid reaction the cause is an underlying infection or inflammation, the picture is a graded left shift with toxic granulation and a high LAP score, and there is no Philadelphia chromosome; in leukaemia, the proliferation is a clonal neoplasm, with abnormal cells, a low LAP score in CML, and a characteristic cytogenetic abnormality.
+In a leukaemoid reaction the cause is an underlying infection or inflammation, the picture is a graded left shift with toxic granulation and a high LAP score, and there is no Philadelphia chromosome; in leukaemia, the proliferation is a clonal neoplasm, with abnormal cells, a low LAP score in CML, and a characteristic cytogenetic abnormality.
 
 The comparison most often asked is with chronic myeloid leukaemia (CML), the leukaemia with which a neutrophilic leukaemoid reaction is most easily confused.
 
@@ -7387,7 +7377,7 @@ The distinction from **acute leukaemia** is made by the presence of a leukaemic 
 
 ## Differences between leukaemoid reaction and subleukaemic acute leukaemia.
 
-**Say this first:** In a leukaemoid reaction the white cell count is high with orderly maturation, toxic changes and a high LAP score, and the marrow is normal apart from hyperplasia; in subleukaemic acute leukaemia the count is normal or low, blasts are few but present in the blood, there is cytopenia, and the marrow is replaced by blasts.
+In a leukaemoid reaction the white cell count is high with orderly maturation, toxic changes and a high LAP score, and the marrow is normal apart from hyperplasia; in subleukaemic acute leukaemia the count is normal or low, blasts are few but present in the blood, there is cytopenia, and the marrow is replaced by blasts.
 
 | Feature | Leukaemoid reaction | Subleukaemic acute leukaemia |
 |---|---|---|
@@ -7405,7 +7395,7 @@ The distinction from **acute leukaemia** is made by the presence of a leukaemic 
 
 ## Write a short note on leukoerythroblastic blood picture.
 
-**Say this first:** A leukoerythroblastic blood picture is the presence in the peripheral blood of immature granulocytic precursors together with nucleated red blood cells, usually with teardrop-shaped red cells, indicating that the marrow has been disturbed or infiltrated so that immature cells are released prematurely.
+A leukoerythroblastic blood picture is the presence in the peripheral blood of immature granulocytic precursors together with nucleated red blood cells, usually with teardrop-shaped red cells, indicating that the marrow has been disturbed or infiltrated so that immature cells are released prematurely.
 
 **Definition.** Leukoerythroblastosis is a peripheral blood picture in which nucleated red cell precursors (normoblasts) and early granulocytic precursors (myelocytes, metamyelocytes, and sometimes promyelocytes and a few blasts) appear together. In Robbins' account, processes that distort the marrow architecture, such as deposits of metastatic cancer or granulomatous disorders, cause the abnormal release of immature precursors into the peripheral blood. The marrow normally keeps these cells in the haematopoietic compartment, and it is thought that destruction of the sinusoidal and stromal organisation by infiltration or fibrosis allows premature egress; extramedullary haematopoietic sites in the spleen and liver contribute immature cells as well.
 
@@ -7418,7 +7408,7 @@ The distinction from **acute leukaemia** is made by the presence of a leukaemic 
 
 ## Causes of leukoerythroblastic blood picture.
 
-**Say this first:** The common causes of a leukoerythroblastic picture are marrow infiltration by metastatic carcinoma or haematologic malignancy, myelofibrosis, granulomatous disease such as tuberculosis, and severe stress on the marrow from haemolysis, haemorrhage or sepsis.
+The common causes of a leukoerythroblastic picture are marrow infiltration by metastatic carcinoma or haematologic malignancy, myelofibrosis, granulomatous disease such as tuberculosis, and severe stress on the marrow from haemolysis, haemorrhage or sepsis.
 
 | Category | Examples |
 |---|---|
@@ -7450,7 +7440,7 @@ Leukaemoid reaction is a reactive increase in white cell count with immature for
 
 ## What do you mean by lymphadenopathy?
 
-**Say this first:** Lymphadenopathy means enlargement of lymph nodes, whether localised to one region or generalised, produced by reactive hyperplasia, infection, infiltration by neoplastic cells, or accumulation of storage material.
+Lymphadenopathy means enlargement of lymph nodes, whether localised to one region or generalised, produced by reactive hyperplasia, infection, infiltration by neoplastic cells, or accumulation of storage material.
 
 Lymph nodes are discrete encapsulated structures with separate B-cell zones (follicles) and T-cell zones (paracortex), richly invested with phagocytes and antigen-presenting cells. After antigenic stimulation the primary follicles enlarge and develop pale-staining germinal centres, and the paracortical T-cell zones may undergo hyperplasia; consequently, adult lymph nodes are almost never truly "resting," and one must distinguish changes due to past exposure from those of present disease. A node is generally regarded as abnormally enlarged when it exceeds about 1 cm in diameter.
 
@@ -7459,7 +7449,7 @@ The causes of nodal enlargement fall into four mechanistic groups: (1) **reactiv
 
 ## Common causes of lymphadenopathy.
 
-**Say this first:** Common causes of lymphadenopathy are infections, which are the most frequent, followed by reactive and immunologic disorders, lymphoid and other neoplasms, and drug reactions.
+Common causes of lymphadenopathy are infections, which are the most frequent, followed by reactive and immunologic disorders, lymphoid and other neoplasms, and drug reactions.
 
 **Infections.** Acute and chronic nonspecific lymphadenitis arising from local bacterial infection (in the neck from the teeth, tonsils and throat; in the axilla and groin from the extremities; in the mesentery from appendicitis and other gut inflammation); viral infections (infectious mononucleosis, cytomegalovirus, HIV, rubella, measles, adenovirus), particularly in children; tuberculosis; syphilis; brucellosis; cat-scratch disease; toxoplasmosis; fungal infections.
 
@@ -7474,7 +7464,7 @@ The pattern of involvement is a useful clue: regional nodes enlarged by the infe
 
 ## Common causes of lymphadenitis.
 
-**Say this first:** Lymphadenitis is inflammation of lymph nodes and is classified as acute nonspecific, chronic nonspecific, and specific (granulomatous or distinctive) lymphadenitis according to the cause and the histologic pattern.
+Lymphadenitis is inflammation of lymph nodes and is classified as acute nonspecific, chronic nonspecific, and specific (granulomatous or distinctive) lymphadenitis according to the cause and the histologic pattern.
 
 **Acute nonspecific lymphadenitis** results from microbes or their products draining into the node. In the cervical region the source is most often infection of the teeth or tonsils; in the axillary and inguinal regions, infections of the extremities. Mesenteric lymphadenitis occurs in acute appendicitis, in self-limiting viral infections, and with Yersinia and other enteric pathogens. Systemic viral infections (especially in children) and bacteraemia may produce generalised acute lymphadenopathy. Pyogenic organisms such as staphylococci and streptococci are the usual agents.
 
@@ -7489,7 +7479,7 @@ The pattern of involvement is a useful clue: regional nodes enlarged by the infe
 
 ## Morphological features of chronic non-specific lymphadenitis / reactive hyperplasia.
 
-**Say this first:** Chronic nonspecific lymphadenitis shows one or more patterns within the same node—follicular hyperplasia, paracortical hyperplasia and sinus histiocytosis—and the nodes are enlarged but usually painless.
+Chronic nonspecific lymphadenitis shows one or more patterns within the same node—follicular hyperplasia, paracortical hyperplasia and sinus histiocytosis—and the nodes are enlarged but usually painless.
 
 A wide variety of chronic immunologic stimuli produce chronic nonspecific lymphadenitis, and several different patterns of change are seen, often in the same node.
 
@@ -7571,7 +7561,7 @@ Leukaemia, like all cancers, arises from acquired genetic alterations in haemato
 
 ## Define leukaemia.
 
-**Say this first:** Leukaemia is a malignant clonal neoplasm of haematopoietic progenitor cells that arises in the bone marrow, replaces normal marrow elements, and usually spills into the peripheral blood, with infiltration of the spleen, liver, lymph nodes and other organs.
+Leukaemia is a malignant clonal neoplasm of haematopoietic progenitor cells that arises in the bone marrow, replaces normal marrow elements, and usually spills into the peripheral blood, with infiltration of the spleen, liver, lymph nodes and other organs.
 
 Neoplasms that present with widespread involvement of the bone marrow, and usually but not always the peripheral blood, are called leukaemias, whereas proliferations of white cells that typically present as discrete tissue masses are called lymphomas. The distinction is a matter of the usual tissue distribution at presentation, and is not absolute: many lymphomas have leukaemic presentations or evolve to leukaemia, and some leukaemias arise as soft tissue masses (e.g., myeloid sarcoma) without detectable marrow disease.
 
@@ -7582,7 +7572,7 @@ Leukaemias are classified according to **(1) the clinical course and degree of m
 
 ## Classify (acute) leukaemia.
 
-**Say this first:** Acute leukaemia is classified by the lineage of the blast cell into acute lymphoblastic leukaemia and acute myeloid leukaemia, each further subdivided by morphology (FAB) or by genetic and immunophenotypic features (WHO).
+Acute leukaemia is classified by the lineage of the blast cell into acute lymphoblastic leukaemia and acute myeloid leukaemia, each further subdivided by morphology (FAB) or by genetic and immunophenotypic features (WHO).
 
 Leukaemias in general are first divided into acute and chronic types and then by lineage, as shown below.
 
@@ -7613,7 +7603,7 @@ The distinction between ALL and AML is of practical importance because the thera
 
 ## FAB classification of AML.
 
-**Say this first:** The French–American–British classification divides AML into M0 to M7 on the basis of the morphology and cytochemistry of the blasts, requiring 30% or more blasts in the marrow.
+The French–American–British classification divides AML into M0 to M7 on the basis of the morphology and cytochemistry of the blasts, requiring 30% or more blasts in the marrow.
 
 | FAB type | Name | Salient features |
 |---|---|---|
@@ -7631,7 +7621,7 @@ The FAB scheme has been superseded by the WHO classification, which incorporates
 
 ## WHO classification of AML.
 
-**Say this first:** The WHO classification divides AML into two categories—AML with specific recurrent genetic aberrations, and AML defined by differentiation in the absence of such aberrations—which reflects the growing role of genetics in prognosis and therapy.
+The WHO classification divides AML into two categories—AML with specific recurrent genetic aberrations, and AML defined by differentiation in the absence of such aberrations—which reflects the growing role of genetics in prognosis and therapy.
 
 Generally the diagnosis of AML requires 20% or more blasts in the marrow or blood, but the WHO allows the diagnosis with fewer than 20% blasts if any of the defining genetic aberrations is present.
 
@@ -7663,7 +7653,7 @@ Other categories include therapy-related myeloid neoplasms, myeloid proliferatio
 
 ## Clinical presentation of acute leukaemia.
 
-**Say this first:** Acute leukaemia has an abrupt, stormy onset, within days to a few weeks, with features of bone marrow failure—anaemia, infection and bleeding—together with signs of infiltration of bone, lymph nodes, spleen, liver, CNS and other tissues.
+Acute leukaemia has an abrupt, stormy onset, within days to a few weeks, with features of bone marrow failure—anaemia, infection and bleeding—together with signs of infiltration of bone, lymph nodes, spleen, liver, CNS and other tissues.
 
 **1. Features of marrow failure (due to replacement of normal haematopoiesis by blasts and suppression by cytokines).**
 
@@ -7682,7 +7672,7 @@ Other categories include therapy-related myeloid neoplasms, myeloid proliferatio
 
 ## How will you diagnose a case of acute leukaemia in the laboratory?
 
-**Say this first:** I would diagnose acute leukaemia by a complete blood count and peripheral smear showing blasts and cytopenias, confirm it by bone marrow aspirate and biopsy showing 20% or more blasts, and then determine the lineage with cytochemistry, flow cytometric immunophenotyping, and cytogenetic and molecular studies.
+I would diagnose acute leukaemia by a complete blood count and peripheral smear showing blasts and cytopenias, confirm it by bone marrow aspirate and biopsy showing 20% or more blasts, and then determine the lineage with cytochemistry, flow cytometric immunophenotyping, and cytogenetic and molecular studies.
 
 **1. Complete blood count and peripheral smear.** There is normocytic normochromic anaemia and thrombocytopenia, and neutropenia in most. The total white cell count is variable: raised in about half, but normal or low in the subleukaemic and aleukaemic forms. The smear usually shows circulating blasts with a gap between the blasts and the mature cells (hiatus leukaemicus). Auer rods favour AML. Reticulocytes are reduced.
 
@@ -7699,7 +7689,7 @@ Other categories include therapy-related myeloid neoplasms, myeloid proliferatio
 
 ## Differences between AML and ALL (including by PBF).
 
-**Say this first:** AML occurs mostly in adults and ALL mostly in children; the blasts of AML are larger, with prominent nucleoli, cytoplasmic granules and Auer rods and are MPO-positive, whereas those of ALL are smaller, with condensed chromatin, scanty agranular cytoplasm, and are MPO-negative and TdT-positive.
+AML occurs mostly in adults and ALL mostly in children; the blasts of AML are larger, with prominent nucleoli, cytoplasmic granules and Auer rods and are MPO-positive, whereas those of ALL are smaller, with condensed chromatin, scanty agranular cytoplasm, and are MPO-negative and TdT-positive.
 
 | Feature | AML | ALL |
 |---|---|---|
@@ -7719,7 +7709,7 @@ Other categories include therapy-related myeloid neoplasms, myeloid proliferatio
 
 ## Laboratory diagnosis of AML.
 
-**Say this first:** The diagnosis of AML rests on finding 20% or more myeloid blasts in the marrow—or fewer if a defining genetic abnormality is present—confirmed by myeloperoxidase positivity or myeloid antigens on flow cytometry, and classified by cytogenetic and molecular studies.
+The diagnosis of AML rests on finding 20% or more myeloid blasts in the marrow—or fewer if a defining genetic abnormality is present—confirmed by myeloperoxidase positivity or myeloid antigens on flow cytometry, and classified by cytogenetic and molecular studies.
 
 **Peripheral blood.** There is normocytic anaemia, thrombocytopenia and often neutropenia. The leukocyte count is variable, being above 100,000 per µL in some patients and below 10,000 per µL in about half; occasionally blasts are absent from the blood altogether (aleukaemic leukaemia). The smear shows myeloblasts with delicate chromatin, two to four nucleoli and fine azurophilic granules, and many show **Auer rods**—distinctive needle-like azurophilic granules—which are particularly numerous in acute promyelocytic leukaemia.
 
@@ -7736,7 +7726,7 @@ Other categories include therapy-related myeloid neoplasms, myeloid proliferatio
 
 ## Why is infection common in acute leukaemia?
 
-**Say this first:** Infection is common in acute leukaemia because replacement of the marrow by blasts causes profound neutropenia, the leukaemic cells and the therapy impair the function of the remaining immune cells, and the patient's mucosal and skin barriers are compromised.
+Infection is common in acute leukaemia because replacement of the marrow by blasts causes profound neutropenia, the leukaemic cells and the therapy impair the function of the remaining immune cells, and the patient's mucosal and skin barriers are compromised.
 
 1. **Neutropenia.** The proliferating blasts replace and suppress normal granulocytic progenitors, so the absolute neutrophil count is low, and the risk of serious infection rises steeply as the neutrophil count falls below 500 per µL. The few neutrophils present may also be functionally defective.
 2. **Functional immune defects.** Monocyte and macrophage function is impaired. In lymphoid leukaemias there is also defective humoral and cell-mediated immunity, with hypogammaglobulinaemia.
@@ -7872,7 +7862,7 @@ In a minority the count is not raised and blasts are scanty or absent (aleukaemi
 
 ## How will you differentiate myeloblast from lymphoblast?
 
-**Say this first:** Myeloblasts are larger cells with delicate chromatin, two to four prominent nucleoli, more abundant cytoplasm with azurophilic granules and sometimes Auer rods, and are myeloperoxidase positive; lymphoblasts are smaller, with condensed chromatin, inconspicuous nucleoli and scanty agranular cytoplasm, and are MPO negative, PAS positive and TdT positive.
+Myeloblasts are larger cells with delicate chromatin, two to four prominent nucleoli, more abundant cytoplasm with azurophilic granules and sometimes Auer rods, and are myeloperoxidase positive; lymphoblasts are smaller, with condensed chromatin, inconspicuous nucleoli and scanty agranular cytoplasm, and are MPO negative, PAS positive and TdT positive.
 
 Morphologically, immature "blast" forms of different lineages look alike and can only be identified definitively with lineage-specific antibodies and histochemical stains. Compared with myeloblasts, lymphoblasts have more condensed chromatin, less conspicuous nucleoli, and smaller amounts of cytoplasm that usually lacks granules. These morphologic distinctions are not absolute.
 
@@ -7895,7 +7885,7 @@ The diagnosis of AML is therefore confirmed by stains for myeloid-specific antig
 
 ## What is Philadelphia chromosome?
 
-**Say this first:** The Philadelphia chromosome is an abnormally short chromosome 22 produced by the reciprocal translocation t(9;22)(q34;q11), which creates the BCR::ABL1 fusion gene encoding a constitutively active tyrosine kinase; it is the hallmark of chronic myeloid leukaemia.
+The Philadelphia chromosome is an abnormally short chromosome 22 produced by the reciprocal translocation t(9;22)(q34;q11), which creates the BCR::ABL1 fusion gene encoding a constitutively active tyrosine kinase; it is the hallmark of chronic myeloid leukaemia.
 
 **Description.** It was discovered in 1960 in Philadelphia and was the first consistent chromosomal abnormality shown to be associated with a human cancer. In the reciprocal (9;22)(q34;q11) translocation, a portion of the ABL1 gene from chromosome 9 is joined to the BCR gene on chromosome 22. The shortened derivative chromosome 22 (22q−) is the Philadelphia chromosome (Ph); the reciprocal product on chromosome 9 carries the remainder of the exchange. The fusion gene BCR::ABL1 lies on the Philadelphia chromosome.
 
@@ -7906,7 +7896,7 @@ The diagnosis of AML is therefore confirmed by stains for myeloid-specific antig
 
 ## Importance of the Philadelphia chromosome.
 
-**Say this first:** The Philadelphia chromosome is important because it establishes the diagnosis of chronic myeloid leukaemia, distinguishes it from other myeloproliferative neoplasms and from leukaemoid reactions, identifies the target of imatinib-type therapy, and is used to monitor response and relapse.
+The Philadelphia chromosome is important because it establishes the diagnosis of chronic myeloid leukaemia, distinguishes it from other myeloproliferative neoplasms and from leukaemoid reactions, identifies the target of imatinib-type therapy, and is used to monitor response and relapse.
 
 1. **Diagnostic.** Demonstration of the Philadelphia chromosome or of the BCR::ABL1 fusion by FISH or PCR is the defining criterion of CML. It differentiates CML from the other myeloproliferative neoplasms (polycythaemia vera, essential thrombocythaemia, primary myelofibrosis), which are BCR::ABL1-negative and associated with JAK2, CALR or MPL mutations, and from leukaemoid reactions, in which it is absent.
 2. **Pathogenetic.** It was the first example of a specific chromosomal translocation causing cancer by producing a constitutively active tyrosine kinase and demonstrates the concept of oncogene addiction.
@@ -7917,7 +7907,7 @@ The diagnosis of AML is therefore confirmed by stains for myeloid-specific antig
 
 ## What do you mean by blast crisis / blastic transformation?
 
-**Say this first:** Blast crisis, or blastic transformation, is the terminal phase of chronic myeloid leukaemia in which the disease transforms into an acute leukaemia, with 20% or more blasts in the blood or marrow, and is refractory to treatment.
+Blast crisis, or blastic transformation, is the terminal phase of chronic myeloid leukaemia in which the disease transforms into an acute leukaemia, with 20% or more blasts in the blood or marrow, and is refractory to treatment.
 
 The natural history of untreated CML is slow progression, with a median survival of about 3 years in the pre-imatinib era. After an average of 3 years in the chronic phase, about 50% of patients enter an accelerated phase marked by increasing anaemia and thrombocytopenia, sometimes with rising basophilia and additional clonal cytogenetic abnormalities (trisomy 8, isochromosome 17q, duplication of the Ph chromosome). Within 6 to 12 months the accelerated phase ends in a picture that resembles acute leukaemia, the blast crisis. In the other 50% blast crisis occurs abruptly.
 
@@ -7926,7 +7916,7 @@ In about 70% of cases the blasts are myeloid (myeloid blast crisis), and in most
 
 ## Laboratory diagnosis of CGL/CML.
 
-**Say this first:** Chronic myeloid leukaemia is diagnosed by a high white cell count with a full spectrum of granulocytic maturation, basophilia and a low LAP score, a hypercellular marrow with granulocytic hyperplasia, and demonstration of the Philadelphia chromosome or BCR::ABL1 fusion gene.
+Chronic myeloid leukaemia is diagnosed by a high white cell count with a full spectrum of granulocytic maturation, basophilia and a low LAP score, a hypercellular marrow with granulocytic hyperplasia, and demonstration of the Philadelphia chromosome or BCR::ABL1 fusion gene.
 
 1. **Blood count and smear.** Leukocytosis, often exceeding 100,000 per µL, composed of neutrophils, bands, metamyelocytes, myelocytes, eosinophils and basophils (a "myelocyte bulge"); blasts usually below 10% of cells; absolute basophilia; platelets often increased, sometimes markedly; mild to moderate normocytic anaemia.
 2. **Leukocyte alkaline phosphatase (LAP) score:** characteristically low or absent in CML, in contrast to leukaemoid reaction.
@@ -7938,7 +7928,7 @@ In about 70% of cases the blasts are myeloid (myeloid blast crisis), and in most
 
 ## Why is the prognosis of blast crisis worse than classical CGL?
 
-**Say this first:** The prognosis of blast crisis is worse because the cells have acquired additional genetic lesions that block differentiation and make them genomically unstable and resistant to BCR-ABL inhibitors and to chemotherapy, and the marrow is overrun by immature blasts.
+The prognosis of blast crisis is worse because the cells have acquired additional genetic lesions that block differentiation and make them genomically unstable and resistant to BCR-ABL inhibitors and to chemotherapy, and the marrow is overrun by immature blasts.
 
 In the chronic phase the BCR::ABL1 kinase drives proliferation but does not prevent differentiation, so the cells mature and function relatively normally, and BCR-ABL inhibitors control the disease. In blast crisis the genome has evolved: clonal evolution adds cytogenetic abnormalities (trisomy 8, isochromosome 17q, a second Philadelphia chromosome) and mutations in TP53, RUNX1 and other tumour suppressors; in lymphoid crisis, Ikaros mutations block differentiation. The result is a maturation arrest, with accumulation of rapidly dividing blasts that have the properties of an acute leukaemia and stem cell–like self-renewal. These blasts frequently harbor BCR::ABL1 kinase domain mutations or kinase-independent survival pathways and therefore resist tyrosine kinase inhibitors, and they respond poorly and only briefly to conventional chemotherapy. As in other acute leukaemias, replacement of the marrow produces severe anaemia, neutropenia and thrombocytopenia, with fatal infection and haemorrhage. Transplantation is possible only in a few patients who achieve a second chronic phase, and survival is typically measured in months.
 
@@ -7992,7 +7982,7 @@ CML is best differentiated from other myeloproliferative neoplasms by detection 
 
 ## Laboratory diagnosis of CLL.
 
-**Say this first:** Chronic lymphocytic leukaemia is diagnosed by a sustained absolute lymphocytosis of more than 5,000 per µL composed of small mature lymphocytes with smudge cells, confirmed by flow cytometry showing a CD5, CD19, CD20 (weak), CD23 positive monoclonal B-cell population.
+Chronic lymphocytic leukaemia is diagnosed by a sustained absolute lymphocytosis of more than 5,000 per µL composed of small mature lymphocytes with smudge cells, confirmed by flow cytometry showing a CD5, CD19, CD20 (weak), CD23 positive monoclonal B-cell population.
 
 1. **Blood count and smear.** An absolute lymphocyte count above 5,000/mm³ (counts exceeding 200,000/mm³ in heavy tumour burden); the smear is flooded with small round lymphocytes with condensed chromatin and scant cytoplasm; characteristically disrupted cells (**smudge cells**) are present; occasional prolymphocytes. Anaemia and thrombocytopenia occur in advanced disease or from autoimmune haemolysis (10–15% have autoimmune haemolytic anaemia or thrombocytopenia); the Coombs test may be positive.
 2. **Immunophenotyping (essential).** The cells express the pan-B cell markers CD19 and CD20 (weak), together with **CD5** and **CD23**, low-level surface immunoglobulin (IgM or IgM and IgD) restricted to a single light chain, and high-level BCL2; CD79b and FMC7 are weak or negative, helping to distinguish CLL from mantle cell lymphoma, which is CD5-positive but CD23-negative and cyclin D1 positive.
@@ -8008,7 +7998,7 @@ CML is best differentiated from other myeloproliferative neoplasms by detection 
 
 ## Classify lymphoma.
 
-**Say this first:** Lymphomas are classified into Hodgkin and non-Hodgkin lymphoma; the non-Hodgkin lymphomas are classified by the WHO according to the cell of origin and the stage of differentiation as B-cell, T-cell and NK-cell neoplasms.
+Lymphomas are classified into Hodgkin and non-Hodgkin lymphoma; the non-Hodgkin lymphomas are classified by the WHO according to the cell of origin and the stage of differentiation as B-cell, T-cell and NK-cell neoplasms.
 
 Within the large group of lymphomas, Hodgkin lymphoma is segregated from the other forms, which constitute the non-Hodgkin lymphomas (NHLs), because Hodgkin lymphoma has distinctive pathologic features and is treated in a unique fashion. The current WHO scheme uses morphologic, immunophenotypic, genotypic and clinical features to sort the lymphoid neoplasms into five categories according to the cell of origin: precursor B-cell neoplasms, peripheral B-cell neoplasms, precursor T-cell neoplasms, peripheral T-cell and NK-cell neoplasms, and Hodgkin lymphomas. The scheme is summarised below.
 
@@ -8025,7 +8015,7 @@ The terms leukaemia and lymphoma merely reflect the usual tissue distribution at
 
 ## Differences between Hodgkin and non-Hodgkin lymphoma.
 
-**Say this first:** Hodgkin lymphoma is characterised by Reed-Sternberg cells in a reactive background, localised axial nodal origin and contiguous orderly spread, while non-Hodgkin lymphoma shows a monotonous population of neoplastic lymphoid cells, multiple peripheral nodes, frequent extranodal involvement and noncontiguous spread.
+Hodgkin lymphoma is characterised by Reed-Sternberg cells in a reactive background, localised axial nodal origin and contiguous orderly spread, while non-Hodgkin lymphoma shows a monotonous population of neoplastic lymphoid cells, multiple peripheral nodes, frequent extranodal involvement and noncontiguous spread.
 
 | Feature | Hodgkin lymphoma | Non-Hodgkin lymphoma |
 |---|---|---|
@@ -8046,7 +8036,7 @@ In Hodgkin lymphoma, spread follows a stereotyped sequence (nodal disease first,
 
 ## What do you know about Reed-Sternberg cells?
 
-**Say this first:** Reed-Sternberg cells are large neoplastic B-cell–derived cells with bilobed or multilobed nuclei and prominent inclusion-like nucleoli that are the diagnostic hallmark of Hodgkin lymphoma; they are CD15 and CD30 positive and are surrounded by a dense reactive infiltrate.
+Reed-Sternberg cells are large neoplastic B-cell–derived cells with bilobed or multilobed nuclei and prominent inclusion-like nucleoli that are the diagnostic hallmark of Hodgkin lymphoma; they are CD15 and CD30 positive and are surrounded by a dense reactive infiltrate.
 
 Reed-Sternberg cells are the neoplastic element of Hodgkin lymphoma; their identification, in the proper cellular background, is essential for the diagnosis. The cell is large (45 µm), with abundant cytoplasm, and has a multilobed or two (mirror-image) nuclei, each with a large inclusion-like nucleolus about the size of a small lymphocyte (5–7 µm), giving the "owl-eye" appearance. Variants are the mononuclear (Hodgkin) cell, the lacunar cell of nodular sclerosis, the lymphohistiocytic ("popcorn") cell of nodular lymphocyte predominant type, and the mummified cell.
 
@@ -8057,7 +8047,7 @@ Immunophenotype of classic R-S cells: CD15⁺, CD30⁺, PAX5 weak⁺, CD45⁻, C
 
 ## Classification of Hodgkin's lymphoma.
 
-**Say this first:** Hodgkin lymphoma is classified by WHO into classic Hodgkin lymphoma, with four subtypes—nodular sclerosis, mixed cellularity, lymphocyte-rich and lymphocyte-depleted—and nodular lymphocyte predominant Hodgkin lymphoma; the older Rye classification recognised lymphocyte predominance, nodular sclerosis, mixed cellularity and lymphocyte depletion.
+Hodgkin lymphoma is classified by WHO into classic Hodgkin lymphoma, with four subtypes—nodular sclerosis, mixed cellularity, lymphocyte-rich and lymphocyte-depleted—and nodular lymphocyte predominant Hodgkin lymphoma; the older Rye classification recognised lymphocyte predominance, nodular sclerosis, mixed cellularity and lymphocyte depletion.
 
 **WHO classification**
 
@@ -8076,7 +8066,7 @@ Immunophenotype of classic R-S cells: CD15⁺, CD30⁺, PAX5 weak⁺, CD45⁻, C
 
 ## How will you proceed to diagnose a case of lymphoma?
 
-**Say this first:** Lymphoid neoplasia can be suspected from the clinical features, but histologic examination of an excised lymph node or other involved tissue, supplemented by immunophenotyping and genetic studies, is required for diagnosis; this is followed by staging.
+Lymphoid neoplasia can be suspected from the clinical features, but histologic examination of an excised lymph node or other involved tissue, supplemented by immunophenotyping and genetic studies, is required for diagnosis; this is followed by staging.
 
 **1. Clinical evaluation.** Painless, persistent, progressive lymphadenopathy (often more than 2 cm), possibly with hepatosplenomegaly; B symptoms (fever, night sweats, weight loss); pruritus; symptoms from extranodal sites (gastric, skin, brain, mediastinal mass); examination of all node groups, Waldeyer ring, liver and spleen.
 
@@ -8238,7 +8228,7 @@ Hodgkin lymphoma (HL) is segregated from the non-Hodgkin lymphomas (NHLs) becaus
 
 ## What is paraproteinaemia?
 
-**Say this first:** Paraproteinaemia, or monoclonal gammopathy, is the presence in the blood or urine of a homogeneous monoclonal immunoglobulin or immunoglobulin fragment—the M component or paraprotein—secreted by a single clone of plasma cells or B lymphocytes.
+Paraproteinaemia, or monoclonal gammopathy, is the presence in the blood or urine of a homogeneous monoclonal immunoglobulin or immunoglobulin fragment—the M component or paraprotein—secreted by a single clone of plasma cells or B lymphocytes.
 
 Plasma cell neoplasms and related B-cell proliferations virtually always secrete monoclonal immunoglobulin or immunoglobulin fragments, which serve as tumour markers and often have pathologic consequences. A monoclonal immunoglobulin identified in the blood is referred to as an **M component**, in reference to myeloma. Complete M components have molecular weights of 160,000 or more and are therefore restricted to plasma and extracellular fluid, being excluded from the urine in the absence of glomerular damage. Neoplastic plasma cells, however, often synthesise excess light chains along with complete immunoglobulin, occasionally only light chains, and rarely only heavy chains. In most patients, the level of free light chains in the blood is elevated and markedly skewed toward one light chain (κ or λ); because free light chains are small, they are excreted in the urine as **Bence Jones proteins**.
 
@@ -8247,7 +8237,7 @@ The paraprotein appears on serum protein electrophoresis as a sharp, narrow band
 
 ## Give 4 common causes of paraproteinaemia.
 
-**Say this first:** The four commonest causes of paraproteinaemia are monoclonal gammopathy of undetermined significance, multiple myeloma, Waldenström macroglobulinaemia, and AL amyloidosis.
+The four commonest causes of paraproteinaemia are monoclonal gammopathy of undetermined significance, multiple myeloma, Waldenström macroglobulinaemia, and AL amyloidosis.
 
 1. **Monoclonal gammopathy of undetermined significance (MGUS)** is the most common plasma cell disorder, occurring in about 3% of persons over 50 and 5% of those over 70. The M protein is below 3 g/dL, there are no symptoms, and about 1% a year progress to myeloma or another symptomatic plasma cell neoplasm.
 2. **Multiple myeloma**, the most important plasma cell neoplasm, usually has more than 3 g/dL of serum immunoglobulin and/or Bence Jones protein in the urine, with lytic bone lesions, hypercalcaemia, renal failure and anaemia.
@@ -8259,14 +8249,14 @@ Other causes include smoldering myeloma, solitary plasmacytoma, heavy-chain dise
 
 ## What is myeloma?
 
-**Say this first:** Multiple myeloma, or plasma cell myeloma, is a malignant clonal proliferation of plasma cells in the bone marrow, characterised by lytic bone lesions, hypercalcaemia, renal failure, anaemia, and a monoclonal immunoglobulin in serum and/or urine with suppression of normal humoral immunity.
+Multiple myeloma, or plasma cell myeloma, is a malignant clonal proliferation of plasma cells in the bone marrow, characterised by lytic bone lesions, hypercalcaemia, renal failure, anaemia, and a monoclonal immunoglobulin in serum and/or urine with suppression of normal humoral immunity.
 
 Multiple myeloma is a plasma cell neoplasm commonly associated with lytic bone lesions, hypercalcaemia, renal failure and acquired immune abnormalities. The disease is chiefly one of older adults, with a peak age at onset of 65 to 70 years, and is more common in males and in persons of African descent. It causes about 1% of cancer deaths in Western countries and accounts for the largest share of deaths from plasma cell neoplasms. The neoplastic cells are post–germinal centre plasma cells with frequent translocations involving the IGH locus on 14q32 (to cyclin D1 and D3 genes and others) and deletions of 13q and 17p, with dependence on IL-6 and the marrow stroma. Bony disease dominates, but the disease can spread late to lymph nodes and extranodal sites. Variants include solitary plasmacytoma, smoldering myeloma and plasma cell leukaemia. The diagnosis requires clonal marrow plasma cells with myeloma-defining events (CRAB criteria: hypercalcaemia, renal dysfunction, anaemia and bone lesions).
 
 
 ## Pathophysiological and biochemical features of myeloma.
 
-**Say this first:** The pathophysiology of myeloma stems from plasma cell growth in the marrow and bone, from the excess monoclonal immunoglobulin and light chains with abnormal physicochemical properties, and from suppression of normal immunoglobulin production; biochemically there is an M spike, Bence Jones proteinuria, hypercalcaemia and renal impairment.
+The pathophysiology of myeloma stems from plasma cell growth in the marrow and bone, from the excess monoclonal immunoglobulin and light chains with abnormal physicochemical properties, and from suppression of normal immunoglobulin production; biochemically there is an M spike, Bence Jones proteinuria, hypercalcaemia and renal impairment.
 
 **A. Pathophysiology**
 
@@ -8289,7 +8279,7 @@ Multiple myeloma is a plasma cell neoplasm commonly associated with lytic bone l
 
 ## Laboratory diagnosis of myeloma.
 
-**Say this first:** Myeloma is diagnosed by demonstrating clonal plasma cells in the bone marrow, a monoclonal protein in the serum and/or urine on electrophoresis and immunofixation, and evidence of end-organ damage by the CRAB criteria—hypercalcaemia, renal dysfunction, anaemia and lytic bone lesions.
+Myeloma is diagnosed by demonstrating clonal plasma cells in the bone marrow, a monoclonal protein in the serum and/or urine on electrophoresis and immunofixation, and evidence of end-organ damage by the CRAB criteria—hypercalcaemia, renal dysfunction, anaemia and lytic bone lesions.
 
 1. **Blood count and smear.** Normocytic normochromic anaemia, **rouleaux formation** (red cells stacked in linear arrays), markedly raised ESR, sometimes leukopenia or thrombocytopenia; plasma cells in the blood in plasma cell leukaemia.
 2. **Serum and urine protein studies.** Serum protein electrophoresis shows an M spike; immunofixation identifies the heavy-chain class and the light-chain type; quantitative immunoglobulins show suppression of the uninvolved immunoglobulins; serum free light chain assay and ratio; urine protein electrophoresis and immunofixation for Bence Jones protein (24-hour urine). Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urinary Bence Jones protein; in 99% there is an M protein in serum or urine. About 20% have only free light chains and about 1% are nonsecretory, so absence of M protein does not exclude the diagnosis.
@@ -8302,7 +8292,7 @@ Multiple myeloma is a plasma cell neoplasm commonly associated with lytic bone l
 
 ## What is Bence-Jones protein?
 
-**Say this first:** Bence Jones protein consists of monoclonal free immunoglobulin light chains (κ or λ) that are small enough to be filtered by the glomerulus and excreted in the urine; it is found in multiple myeloma and other plasma cell neoplasms.
+Bence Jones protein consists of monoclonal free immunoglobulin light chains (κ or λ) that are small enough to be filtered by the glomerulus and excreted in the urine; it is found in multiple myeloma and other plasma cell neoplasms.
 
 Neoplastic plasma cells often synthesise an excess of light chains relative to heavy chains. Because free light chains are small (molecular weight about 22,000 for monomers and 44,000 for dimers), they pass through the glomerular filter and are excreted in the urine, where they are called Bence Jones proteins; the intact immunoglobulin (160,000 or more) is retained in the circulation unless there is glomerular damage. The proteins were described by Henry Bence Jones in 1847.
 
@@ -8311,7 +8301,7 @@ Neoplastic plasma cells often synthesise an excess of light chains relative to h
 
 ## Classify immunoproliferative disorders.
 
-**Say this first:** Immunoproliferative disorders, which are proliferations of immunoglobulin-producing B-cell and plasma cell clones, are classified as plasma cell dyscrasias—multiple myeloma and its variants, MGUS, Waldenström macroglobulinaemia, heavy-chain diseases and AL amyloidosis—and the secretory B-cell lymphomas.
+Immunoproliferative disorders, which are proliferations of immunoglobulin-producing B-cell and plasma cell clones, are classified as plasma cell dyscrasias—multiple myeloma and its variants, MGUS, Waldenström macroglobulinaemia, heavy-chain diseases and AL amyloidosis—and the secretory B-cell lymphomas.
 
 **I. Plasma cell neoplasms and related disorders (monoclonal gammopathies)**
 
@@ -8329,7 +8319,7 @@ Neoplastic plasma cells often synthesise an excess of light chains relative to h
 
 ## Waldenström's macroglobulinaemia (in short).
 
-**Say this first:** Waldenström macroglobulinaemia is a syndrome of hyperviscosity caused by high levels of monoclonal IgM secreted by a lymphoplasmacytic lymphoma in older adults, without lytic bone lesions.
+Waldenström macroglobulinaemia is a syndrome of hyperviscosity caused by high levels of monoclonal IgM secreted by a lymphoplasmacytic lymphoma in older adults, without lytic bone lesions.
 
 **Definition and pathogenesis.** Waldenström macroglobulinaemia is a syndrome in which high levels of IgM lead to symptoms related to hyperviscosity of the blood. It occurs in older adults (sixth to seventh decade), most commonly in association with **lymphoplasmacytic lymphoma**, a B-cell neoplasm that resembles CLL/SLL but in which a substantial fraction of tumour cells undergo terminal differentiation into plasma cells. Virtually all cases harbor acquired mutations in MYD88, an adaptor protein that activates NF-κB and promotes tumour growth and survival.
 
@@ -8411,7 +8401,7 @@ The probable diagnosis is **multiple myeloma** (plasma cell myeloma).
 
 ## What do you know about myelodysplastic syndrome?
 
-**Say this first:** Myelodysplastic syndrome, now called myelodysplastic neoplasm, is a group of clonal stem cell disorders characterised by ineffective and dysplastic haematopoiesis, producing peripheral cytopenias with a hypercellular marrow, and carrying a high risk of transformation to acute myeloid leukaemia.
+Myelodysplastic syndrome, now called myelodysplastic neoplasm, is a group of clonal stem cell disorders characterised by ineffective and dysplastic haematopoiesis, producing peripheral cytopenias with a hypercellular marrow, and carrying a high risk of transformation to acute myeloid leukaemia.
 
 **Definition.** The term myelodysplastic neoplasm (MDS) refers to a group of clonal stem cell disorders in which the bone marrow is partly or wholly replaced by the clonal progeny of a neoplastic multipotent stem cell that retains the capacity to differentiate, but does so in an ineffective and disordered fashion. Because the "birthing process" of blood cells is defective, patients have peripheral blood cytopenias of varying severity. MDS may be primary (idiopathic) or therapy-related (t-MDS), appearing 2 to 8 years after genotoxic exposure (alkylating agents, radiation).
 
@@ -8424,7 +8414,7 @@ The probable diagnosis is **multiple myeloma** (plasma cell myeloma).
 
 ## What are myeloproliferative disorders?
 
-**Say this first:** Myeloproliferative neoplasms are clonal disorders of haematopoietic stem or progenitor cells in which there is increased production of one or more mature myeloid elements—red cells, granulocytes or platelets—driven by constitutively activated tyrosine kinases, leading to high blood counts, splenomegaly, and a tendency to transform to marrow fibrosis or acute leukaemia.
+Myeloproliferative neoplasms are clonal disorders of haematopoietic stem or progenitor cells in which there is increased production of one or more mature myeloid elements—red cells, granulocytes or platelets—driven by constitutively activated tyrosine kinases, leading to high blood counts, splenomegaly, and a tendency to transform to marrow fibrosis or acute leukaemia.
 
 **Definition and pathogenesis.** The common pathogenic feature of the myeloproliferative neoplasms (MPNs) is the presence of mutated, constitutively activated tyrosine kinases or other acquired aberrations in signalling pathways that lead to growth factor independence. Haematopoietic growth factors act on normal progenitors by binding to surface receptors and activating tyrosine kinases, which turn on pathways that promote growth and survival. The mutated kinases circumvent these controls, and because they do not impair differentiation, the usual result is an increase in one or more mature blood elements. Most MPNs originate in multipotent myeloid progenitors, while others arise in pluripotent stem cells.
 
@@ -8451,7 +8441,7 @@ There is considerable clinical and morphologic overlap among MPNs, and they are 
 
 ## Classify myeloproliferative disorder.
 
-**Say this first:** Myeloproliferative neoplasms are classified, on the basis of clinical, laboratory and molecular criteria, into chronic myeloid leukaemia (BCR::ABL1-positive) and the BCR::ABL1-negative group of polycythaemia vera, essential thrombocythaemia and primary myelofibrosis, plus rarer entities.
+Myeloproliferative neoplasms are classified, on the basis of clinical, laboratory and molecular criteria, into chronic myeloid leukaemia (BCR::ABL1-positive) and the BCR::ABL1-negative group of polycythaemia vera, essential thrombocythaemia and primary myelofibrosis, plus rarer entities.
 
 | Group | Entities | Driver mutation |
 |---|---|---|
@@ -8469,7 +8459,7 @@ Related myeloid neoplasms are acute myeloid leukaemia and myelodysplastic neopla
 
 ## What do you mean by polycythaemia?
 
-**Say this first:** Polycythaemia is an increase in the haemoglobin concentration, haematocrit and red cell count above the normal range; it may be relative, due to a reduced plasma volume, or absolute, due to a true increase in red cell mass, which is either primary (polycythaemia vera) or secondary.
+Polycythaemia is an increase in the haemoglobin concentration, haematocrit and red cell count above the normal range; it may be relative, due to a reduced plasma volume, or absolute, due to a true increase in red cell mass, which is either primary (polycythaemia vera) or secondary.
 
 In men, polycythaemia is a haemoglobin above about 16.5 g/dL or a haematocrit above 49% (in women, above 16.0 g/dL or 48%).
 
@@ -8486,7 +8476,7 @@ Distinguishing among these categories is the first step in evaluating polycythae
 
 ## Clinical features of polycythaemia.
 
-**Say this first:** The clinical features of polycythaemia, taking polycythaemia vera as the prototype, arise from the increased red cell mass and blood viscosity—plethora, headache, dizziness and hypertension—together with thrombosis and bleeding, pruritus, peptic ulceration, gout and splenomegaly.
+The clinical features of polycythaemia, taking polycythaemia vera as the prototype, arise from the increased red cell mass and blood viscosity—plethora, headache, dizziness and hypertension—together with thrombosis and bleeding, pruritus, peptic ulceration, gout and splenomegaly.
 
 PV is uncommon (1 to 3 per 100,000 a year), usually appears insidiously in adults of late middle age, and most symptoms relate to the increased red cell mass and haematocrit; total blood volume is also increased.
 
@@ -8501,7 +8491,7 @@ PV is uncommon (1 to 3 per 100,000 a year), usually appears insidiously in adult
 
 ## Differences between polycythaemia vera and secondary polycythaemia.
 
-**Say this first:** In polycythaemia vera the erythropoietin level is low, JAK2 is mutated, and there is a panmyelosis with splenomegaly, whereas in secondary polycythaemia the erythropoietin level is high, JAK2 is normal, and only red cells are increased in response to hypoxia or an erythropoietin-secreting tumour.
+In polycythaemia vera the erythropoietin level is low, JAK2 is mutated, and there is a panmyelosis with splenomegaly, whereas in secondary polycythaemia the erythropoietin level is high, JAK2 is normal, and only red cells are increased in response to hypoxia or an erythropoietin-secreting tumour.
 
 | Feature | Polycythaemia vera | Secondary polycythaemia |
 |---|---|---|
@@ -8521,7 +8511,7 @@ PV is uncommon (1 to 3 per 100,000 a year), usually appears insidiously in adult
 
 ## Laboratory diagnosis of polycythaemia.
 
-**Say this first:** The laboratory work-up first confirms a true absolute erythrocytosis by haemoglobin and haematocrit, then separates polycythaemia vera from secondary causes by serum erythropoietin and JAK2 mutation testing, supported by marrow examination.
+The laboratory work-up first confirms a true absolute erythrocytosis by haemoglobin and haematocrit, then separates polycythaemia vera from secondary causes by serum erythropoietin and JAK2 mutation testing, supported by marrow examination.
 
 **1. Complete blood count and smear.** Haemoglobin above 16 g/dL (above 16.5 in men), haematocrit above 49% (48% in women), often 55% or more in PV; raised red cell count; leukocytosis (12,000–50,000/µL) and thrombocytosis (often above 500,000/µL) with large or abnormal platelets, basophilia, and increased red cell mass. Note that chronic bleeding with iron deficiency may suppress erythropoiesis enough to bring the haematocrit into the normal range.
 
@@ -8540,7 +8530,7 @@ PV is uncommon (1 to 3 per 100,000 a year), usually appears insidiously in adult
 
 ## Non-CML myeloproliferative disorders.
 
-**Say this first:** The non-CML myeloproliferative neoplasms, also called the Philadelphia chromosome–negative or classic MPNs, are polycythaemia vera, essential thrombocythaemia and primary myelofibrosis, which are driven by JAK2, CALR or MPL mutations.
+The non-CML myeloproliferative neoplasms, also called the Philadelphia chromosome–negative or classic MPNs, are polycythaemia vera, essential thrombocythaemia and primary myelofibrosis, which are driven by JAK2, CALR or MPL mutations.
 
 The BCR::ABL1 fusion distinguishes CML from all other myeloproliferative neoplasms. The BCR::ABL1-negative group comprises the following.
 
@@ -8555,7 +8545,7 @@ Less common examples are chronic neutrophilic leukaemia (CSF3R), chronic eosinop
 
 ## WHO diagnostic criteria for polycythaemia vera.
 
-**Say this first:** The WHO criteria for polycythaemia vera require either all three major criteria, or the first two major criteria plus the minor criterion; the major criteria are raised haemoglobin or haematocrit, a hypercellular marrow with trilineage growth, and the JAK2 V617F or exon 12 mutation, and the minor criterion is a subnormal serum erythropoietin.
+The WHO criteria for polycythaemia vera require either all three major criteria, or the first two major criteria plus the minor criterion; the major criteria are raised haemoglobin or haematocrit, a hypercellular marrow with trilineage growth, and the JAK2 V617F or exon 12 mutation, and the minor criterion is a subnormal serum erythropoietin.
 
 **Major criteria**
 
@@ -8572,14 +8562,14 @@ Less common examples are chronic neutrophilic leukaemia (CSF3R), chronic eosinop
 
 ## Define myelofibrosis.
 
-**Say this first:** Myelofibrosis is a disorder in which the bone marrow is progressively replaced by fibrous tissue, leading to cytopenias, extramedullary haematopoiesis with splenomegaly, and a leukoerythroblastic blood picture.
+Myelofibrosis is a disorder in which the bone marrow is progressively replaced by fibrous tissue, leading to cytopenias, extramedullary haematopoiesis with splenomegaly, and a leukoerythroblastic blood picture.
 
 The hallmark of primary myelofibrosis is the development of obliterative marrow fibrosis. The replacement of the marrow by fibrous tissue reduces bone marrow haematopoiesis, leading to cytopenias and extensive extramedullary haematopoiesis, principally in the spleen, liver and lymph nodes. The fibroblasts are non-neoplastic; the fibrosis is caused by inappropriate release of fibrogenic factors, platelet-derived growth factor and TGF-β, from neoplastic megakaryocytes. TGF-β also promotes collagen deposition and angiogenesis. The disease may arise as a primary myeloproliferative neoplasm (about 90% have JAK2, CALR or MPL mutations), or the same histologic picture may represent the spent phase of polycythaemia vera, essential thrombocythaemia or CML, or result from other marrow-injuring processes (secondary myelofibrosis).
 
 
 ## Laboratory diagnosis of myelofibrosis.
 
-**Say this first:** Myelofibrosis is suspected from anaemia with a leukoerythroblastic blood picture and teardrop red cells in a patient with splenomegaly, and is confirmed by a bone marrow biopsy showing fibrosis with atypical megakaryocytes and by the finding of a JAK2, CALR or MPL mutation.
+Myelofibrosis is suspected from anaemia with a leukoerythroblastic blood picture and teardrop red cells in a patient with splenomegaly, and is confirmed by a bone marrow biopsy showing fibrosis with atypical megakaryocytes and by the finding of a JAK2, CALR or MPL mutation.
 
 **Peripheral blood**
 
@@ -8600,7 +8590,7 @@ The hallmark of primary myelofibrosis is the development of obliterative marrow 
 
 ## Types of myelofibrosis.
 
-**Say this first:** Myelofibrosis is of two types: primary (idiopathic) myelofibrosis, a myeloproliferative neoplasm, and secondary myelofibrosis, which follows other myeloproliferative neoplasms or other marrow-injuring diseases.
+Myelofibrosis is of two types: primary (idiopathic) myelofibrosis, a myeloproliferative neoplasm, and secondary myelofibrosis, which follows other myeloproliferative neoplasms or other marrow-injuring diseases.
 
 **1. Primary myelofibrosis (chronic idiopathic myelofibrosis, agnogenic myeloid metaplasia).** A myeloproliferative neoplasm in which about 90% of cases have activating JAK2, CALR or MPL mutations. It occurs mostly after 60 years of age and passes through a prefibrotic (early) phase of marrow hypercellularity with atypical megakaryocytes and an overt fibrotic phase with marrow fibrosis, massive splenomegaly and cytopenias.
 
@@ -8616,7 +8606,7 @@ It is not clear whether primary myelofibrosis is truly distinct from polycythaem
 
 ## Conditions associated with secondary myelofibrosis.
 
-**Say this first:** Secondary myelofibrosis occurs in other myeloproliferative neoplasms, in marrow infiltration by tumour or granulomas, in other haematologic malignancies, and with toxic, infectious and autoimmune injury to the marrow.
+Secondary myelofibrosis occurs in other myeloproliferative neoplasms, in marrow infiltration by tumour or granulomas, in other haematologic malignancies, and with toxic, infectious and autoimmune injury to the marrow.
 
 | Category | Conditions |
 |---|---|
@@ -8633,7 +8623,7 @@ Marrow fibrosis in these settings arises from the inappropriate release of fibro
 
 ## Essential thrombocythaemia (in short).
 
-**Say this first:** Essential thrombocythaemia is a myeloproliferative neoplasm characterised by a sustained, marked increase in platelet number, driven by JAK2, CALR or MPL mutations, with thrombosis and bleeding as the main complications, and without polycythaemia or marrow fibrosis.
+Essential thrombocythaemia is a myeloproliferative neoplasm characterised by a sustained, marked increase in platelet number, driven by JAK2, CALR or MPL mutations, with thrombosis and bleeding as the main complications, and without polycythaemia or marrow fibrosis.
 
 **Definition and pathogenesis.** Essential thrombocythaemia (ET) is associated with diverse mutations that increase JAK-STAT signalling and mimic constitutive growth factor receptor signalling. Over 90% of cases have activating mutations in JAK2 (approximately 50–60%), MPL (5–10%), the thrombopoietin receptor, or CALR (calreticulin, approximately 25–35%). The mutated CALR proteins are secreted and bind and activate the thrombopoietin receptor, an oncogenic autocrine loop. Constitutive signalling renders the progenitors thrombopoietin-independent.
 
@@ -8704,7 +8694,7 @@ The aspirate in aplastic anaemia is typically dilute and haemodilute, and the tr
 
 ## Causes of hypersplenism.
 
-**Say this first:** Hypersplenism is enlargement of the spleen with cytopenias caused by increased sequestration and destruction of blood cells, and it complicates any cause of splenomegaly, the commonest being portal hypertension from cirrhosis, haematologic disorders such as haemolytic anaemias and myeloproliferative neoplasms, lymphomas and chronic infections.
+Hypersplenism is enlargement of the spleen with cytopenias caused by increased sequestration and destruction of blood cells, and it complicates any cause of splenomegaly, the commonest being portal hypertension from cirrhosis, haematologic disorders such as haemolytic anaemias and myeloproliferative neoplasms, lymphomas and chronic infections.
 
 Hypersplenism is a syndrome characterised by anaemia, leukopenia and/or thrombocytopenia in the presence of splenomegaly. The probable cause of the cytopenias is increased sequestration of formed elements with enhanced phagocytosis by splenic macrophages. The normal spleen holds 30% to 40% of the platelet mass, and with splenomegaly up to 80% to 90% may be sequestered in the red pulp. In congestive splenomegaly, the increased portal pressure causes collagen deposition in the sinusoidal basement membranes and slows the flow of blood from the cords to the sinusoids, prolonging exposure of the blood cells to macrophages. An expanded plasma volume contributes by dilution.
 
@@ -8723,7 +8713,7 @@ Hypersplenism is a syndrome characterised by anaemia, leukopenia and/or thromboc
 
 ## Causes of splenomegaly.
 
-**Say this first:** Splenomegaly results from infections, congestion from portal hypertension, haematologic and lymphoid disorders, immunologic and inflammatory diseases, storage diseases and neoplasms; the spleen is involved secondarily in all systemic inflammations, generalised haematopoietic disorders and many metabolic disturbances.
+Splenomegaly results from infections, congestion from portal hypertension, haematologic and lymphoid disorders, immunologic and inflammatory diseases, storage diseases and neoplasms; the spleen is involved secondarily in all systemic inflammations, generalised haematopoietic disorders and many metabolic disturbances.
 
 Splenomegaly is the major manifestation of splenic disorders, which are only rarely primary. When sufficiently enlarged, the spleen causes a dragging sensation in the left upper quadrant, discomfort after eating from pressure on the stomach, and may produce hypersplenism. Disorders associated with splenomegaly are as follows.
 
@@ -8742,7 +8732,7 @@ Splenomegaly is the major manifestation of splenic disorders, which are only rar
 
 ## Diagnostic criteria of hypersplenism.
 
-**Say this first:** The classical diagnostic criteria of hypersplenism are splenomegaly, one or more cytopenias in the blood with a normocellular or hypercellular marrow, and correction of the cytopenias after splenectomy; evidence of increased splenic sequestration supports the diagnosis.
+The classical diagnostic criteria of hypersplenism are splenomegaly, one or more cytopenias in the blood with a normocellular or hypercellular marrow, and correction of the cytopenias after splenectomy; evidence of increased splenic sequestration supports the diagnosis.
 
 1. **Splenomegaly.** Clinically or by imaging.
 2. **Cytopenia of one or more cell lines**—anaemia, leukopenia (neutropenia), thrombocytopenia, or pancytopenia. Robbins describes hypersplenism as a syndrome characterised by anaemia, leukopenia and/or thrombocytopenia.
@@ -8757,7 +8747,7 @@ Splenomegaly is the major manifestation of splenic disorders, which are only rar
 
 ## Elderly man (55 or 65 years) with bone/back pain, punched-out skull lesions or osteolytic lesions, high ESR, vertebral fracture — Most probable diagnosis? How will you establish / confirm the diagnosis?
 
-**Say this first:** The most probable diagnosis is multiple myeloma, and I would confirm it with serum and urine protein electrophoresis and immunofixation to show a monoclonal protein, a bone marrow aspirate and biopsy showing clonal plasma cells, and tests for the CRAB features—calcium, creatinine, haemoglobin—and skeletal imaging.
+The most probable diagnosis is multiple myeloma, and I would confirm it with serum and urine protein electrophoresis and immunofixation to show a monoclonal protein, a bone marrow aspirate and biopsy showing clonal plasma cells, and tests for the CRAB features—calcium, creatinine, haemoglobin—and skeletal imaging.
 
 **Diagnosis.** The age (peak 65 to 70 years), bone and back pain, punched-out lytic lesions of the skull (1 to 4 cm, sharply demarcated), pathologic vertebral fracture and markedly raised ESR (from rouleaux formation due to the M protein) are characteristic of **multiple myeloma**. The lesions are destructive plasma cell tumours resulting from increased osteoclast activity (MIP-1α) and inhibition of osteoblasts (Wnt inhibitors), and involve the axial skeleton in decreasing order of frequency: vertebral column, ribs, skull, pelvis and femur.
 
@@ -8775,7 +8765,7 @@ Splenomegaly is the major manifestation of splenic disorders, which are only rar
 
 ## 40-year-old man with massive splenomegaly and total WBC count 2,50,000/cu.mm — Diagnosis?
 
-**Say this first:** This is most probably chronic myeloid leukaemia in the chronic phase, and I would confirm it by peripheral smear, marrow examination and demonstration of the Philadelphia chromosome or BCR::ABL1 fusion gene.
+This is most probably chronic myeloid leukaemia in the chronic phase, and I would confirm it by peripheral smear, marrow examination and demonstration of the Philadelphia chromosome or BCR::ABL1 fusion gene.
 
 **Reasoning.** A middle-aged adult (peak incidence in the fifth to sixth decades) with a very high white cell count, well above 100,000/µL, and **massive splenomegaly** from extensive extramedullary haematopoiesis, is the typical presentation of CML. The onset is insidious, with fatigue, weight loss, anorexia and a dragging sensation in the left upper quadrant, and occasionally acute pain from splenic infarction.
 
@@ -8794,7 +8784,7 @@ Splenomegaly is the major manifestation of splenic disorders, which are only rar
 
 ## 10-year-old boy with weakness, fever, joint pain and gum bleeding — Clinical diagnosis? Expected PBF findings?
 
-**Say this first:** This is most likely acute leukaemia—acute lymphoblastic leukaemia being the commonest in a child—and the peripheral blood film would show anaemia, thrombocytopenia and circulating blasts.
+This is most likely acute leukaemia—acute lymphoblastic leukaemia being the commonest in a child—and the peripheral blood film would show anaemia, thrombocytopenia and circulating blasts.
 
 **Clinical diagnosis.** The combination of weakness (anaemia), fever (neutropenia with infection, or the disease itself), joint and bone pain (marrow expansion and subperiosteal infiltration by leukaemic cells) and gum bleeding (thrombocytopenia) in a child suggests **acute leukaemia**: the stormy onset over days to weeks, the marrow failure triad and the bone pain are characteristic. ALL is the most common cancer of children and is more likely (peak at about 3 years, with a second adolescent peak for T-ALL), but AML can present identically; prominent **gum hypertrophy** and bleeding would suggest AML with monocytic differentiation. Other features sought are lymphadenopathy, hepatosplenomegaly, testicular enlargement, mediastinal mass and CNS signs.
 
@@ -8813,7 +8803,7 @@ Splenomegaly is the major manifestation of splenic disorders, which are only rar
 
 ## What is haemopoiesis?
 
-**Say this first:** Haemopoiesis is the continuous, regulated process by which all the cellular elements of blood (red cells, white cells and platelets) are produced from a small population of self-renewing pluripotent haemopoietic stem cells.
+Haemopoiesis is the continuous, regulated process by which all the cellular elements of blood (red cells, white cells and platelets) are produced from a small population of self-renewing pluripotent haemopoietic stem cells.
 
 Haemopoietic stem cells (HSCs) reside in specialised niches of the bone marrow. They have two cardinal properties: self-renewal, which preserves the stem cell pool, and multipotent differentiation, which gives rise to progressively committed progenitors. The first major branch separates a common myeloid progenitor (the CFU-GEMM, giving rise to erythroid, granulocytic, monocytic and megakaryocytic lineages) from a common lymphoid progenitor (giving rise to B cells, T cells and NK cells). Committed progenitors such as the burst-forming unit–erythroid (BFU-E) and colony-forming unit–erythroid (CFU-E) then differentiate into recognisable precursors that mature into the cells found in the circulation.
 
@@ -8822,7 +8812,7 @@ Haemopoiesis is controlled by the marrow microenvironment (stromal cells, extrac
 
 ## Sites of normal haemopoiesis.
 
-**Say this first:** Haemopoiesis moves between sites during development: the yolk sac in early foetal life, then the liver and spleen, then the bone marrow, which is the sole site of haemopoiesis after birth and throughout normal adult life.
+Haemopoiesis moves between sites during development: the yolk sac in early foetal life, then the liver and spleen, then the bone marrow, which is the sole site of haemopoiesis after birth and throughout normal adult life.
 
 The sites change with age as follows.
 
@@ -8839,7 +8829,7 @@ Lymphocytes additionally mature and proliferate in the thymus, lymph nodes, sple
 
 ## Where does extramedullary haemopoiesis occur?
 
-**Say this first:** Extramedullary haemopoiesis is blood cell formation outside the bone marrow, occurring mainly in the liver and spleen and also in the lymph nodes, when the marrow cannot meet the demand or has been replaced or damaged.
+Extramedullary haemopoiesis is blood cell formation outside the bone marrow, occurring mainly in the liver and spleen and also in the lymph nodes, when the marrow cannot meet the demand or has been replaced or damaged.
 
 In the foetus the liver and spleen are the normal sites. In postnatal life they can resume this function whenever there is marked, sustained erythropoietic drive or marrow failure. The conditions in which it appears include severe chronic haemolytic anaemias, particularly β-thalassaemia major (where ineffective erythropoiesis produces massive erythroid expansion and the spleen may reach 1500 g), and sickle cell disease; myelofibrosis and the spent phase of myeloproliferative neoplasms; myelophthisic anaemia due to metastatic cancer or granulomatous disease; and, rarely, severe megaloblastic anaemia. The liver, spleen and lymph nodes are enlarged, and in extreme cases extraosseous masses develop in the thorax (paravertebral), abdomen and pelvis. Because the foci release immature cells prematurely, the blood film shows nucleated red cells and immature granulocytes (a leukoerythroblastic picture), and teardrop cells appear when the marrow is fibrotic.
 
@@ -8898,7 +8888,7 @@ Dividing cells (myeloblast to myelocyte) form the mitotic pool, and the nondivid
 
 ## Information you can get from a stained peripheral blood film.
 
-**Say this first:** A stained peripheral blood film gives direct information on the size, shape, colour and inclusions of red cells, the differential count and morphology of white cells, the number and morphology of platelets, and the presence of abnormal cells or parasites, and it is the single most useful starting point for diagnosing a haematological disorder.
+A stained peripheral blood film gives direct information on the size, shape, colour and inclusions of red cells, the differential count and morphology of white cells, the number and morphology of platelets, and the presence of abnormal cells or parasites, and it is the single most useful starting point for diagnosing a haematological disorder.
 
 Red cells: size (normocytic, microcytic, macrocytic) and variation in size (anisocytosis); degree of haemoglobinisation (normochromic or hypochromic) and polychromasia (young cells, reticulocytosis); shape and variation in shape (poikilocytosis), including spherocytes, elliptocytes, target cells, sickle cells, teardrop cells, schistocytes (fragmented cells that point to microangiopathic or mechanical haemolysis), bite cells and burr cells; inclusions such as basophilic stippling, Howell-Jolly bodies (as in asplenia), Pappenheimer bodies, and Heinz bodies (with supravital stain); rouleaux formation and agglutination; and circulating nucleated red cells. Together with the red cell indices, these features allow classification of the anaemia and often point to the cause.
 
@@ -8911,7 +8901,7 @@ Parasites and other findings: malaria parasites, microfilariae, babesia and tryp
 
 ## What are red cell indices?
 
-**Say this first:** Red cell indices are calculated or measured values that describe the average size, haemoglobin content and haemoglobin concentration of red cells, together with the variation in their size, and they are used to classify anaemias.
+Red cell indices are calculated or measured values that describe the average size, haemoglobin content and haemoglobin concentration of red cells, together with the variation in their size, and they are used to classify anaemias.
 
 They are derived from three primary measurements: the haemoglobin concentration (Hb), the red cell count (RBC) and the haematocrit or packed cell volume (Hct/PCV); modern analysers measure the MCV and RBC directly and calculate the Hct.
 
@@ -8925,14 +8915,14 @@ Reference ranges vary among laboratories, and the range of the laboratory issuin
 
 ## Importance of red cell indices.
 
-**Say this first:** Red cell indices allow the morphological classification of anaemia into microcytic hypochromic, normocytic normochromic and macrocytic types, which narrows the differential diagnosis and directs further investigation.
+Red cell indices allow the morphological classification of anaemia into microcytic hypochromic, normocytic normochromic and macrocytic types, which narrows the differential diagnosis and directs further investigation.
 
 Their value lies in the following. The MCV and MCH classify anaemia: a low MCV and MCH (microcytic hypochromic) point to disorders of haemoglobin synthesis, namely iron deficiency, thalassaemia, anaemia of chronic inflammation and sideroblastic anaemia; a normal MCV (normocytic, normochromic) is seen in acute blood loss, most haemolytic anaemias, aplastic anaemia, renal failure and many chronic diseases; and a high MCV (macrocytic) is seen in megaloblastic anaemia and in nonmegaloblastic causes such as liver disease, alcohol excess, hypothyroidism and reticulocytosis. The RDW separates conditions with uniform red cells (such as thalassaemia trait, where the RDW is relatively normal) from those with heterogeneous populations (iron deficiency, where it is raised, and mixed deficiencies). The MCHC is raised in hereditary spherocytosis because of cellular dehydration, a useful clue, and in cold agglutinin disease as an artefact. The indices help to monitor response to treatment, for example the appearance of a normocytic population in a patient with iron deficiency who is responding to iron, and may reveal a problem before anaemia develops. A simple derived index, the Mentzer index (MCV ÷ RBC count), is below 13 in thalassaemia trait and above 13 in iron deficiency.
 
 
 ## Normal haemoglobin level in different age groups / influence of age and sex on Hb estimation.
 
-**Say this first:** The normal haemoglobin is about 13.6 to 17.2 g/dL in adult males and 12.0 to 15.0 g/dL in adult females, and it is high at birth, falls to a nadir in infancy, and then rises gradually to adult values at puberty, where the sex difference appears.
+The normal haemoglobin is about 13.6 to 17.2 g/dL in adult males and 12.0 to 15.0 g/dL in adult females, and it is high at birth, falls to a nadir in infancy, and then rises gradually to adult values at puberty, where the sex difference appears.
 
 Approximate reference values (laboratory-specific) are:
 
@@ -9077,7 +9067,7 @@ Limitations: the MCV is an average and can be normal when microcytic and macrocy
 
 ## Indications of bone marrow biopsy / aspiration / examination.
 
-**Say this first:** Bone marrow examination is indicated to investigate unexplained abnormalities of the peripheral blood, particularly cytopenias, to diagnose and stage haematological malignancies, and to detect marrow infiltration and certain infections or storage diseases.
+Bone marrow examination is indicated to investigate unexplained abnormalities of the peripheral blood, particularly cytopenias, to diagnose and stage haematological malignancies, and to detect marrow infiltration and certain infections or storage diseases.
 
 The main indications are:
 
@@ -9093,7 +9083,7 @@ The main indications are:
 
 ## How is trephine biopsy done?
 
-**Say this first:** Trephine biopsy is performed by inserting a wide-bore Jamshidi needle through the posterior iliac crest under local anaesthesia and removing a core of bone and marrow, which is then fixed, decalcified and sectioned.
+Trephine biopsy is performed by inserting a wide-bore Jamshidi needle through the posterior iliac crest under local anaesthesia and removing a core of bone and marrow, which is then fixed, decalcified and sectioned.
 
 After explaining the procedure and obtaining informed consent, the patient is placed in the lateral or prone position. The site, usually the posterior superior iliac spine, is cleaned and draped, and local anaesthetic is infiltrated down to the periosteum. A small skin incision is made and the biopsy needle, with its stylet locked in place, is advanced through the soft tissue to the cortex. The stylet is removed, and the needle is advanced with a gentle rotating (clockwise-anticlockwise) movement for about 2 cm into the marrow cavity. The needle is rotated several times to cut the base of the core and then withdrawn, and the core is expelled with a probe through the back of the needle. A core at least 1.5 to 2 cm long is needed for adequate evaluation. Firm pressure is applied until bleeding stops and a dressing is placed.
 
@@ -9102,7 +9092,7 @@ When both procedures are done, the aspirate is taken first and the trephine seco
 
 ## What do you mean by blood tap and dry tap?
 
-**Say this first:** A dry tap is a failure to obtain any marrow cells on aspiration despite a correctly performed procedure, while a blood tap is an aspirate that is diluted with or consists mainly of peripheral blood and so is unsuitable for assessing the marrow.
+A dry tap is a failure to obtain any marrow cells on aspiration despite a correctly performed procedure, while a blood tap is an aspirate that is diluted with or consists mainly of peripheral blood and so is unsuitable for assessing the marrow.
 
 A **dry tap** means that no marrow can be aspirated even though the needle is correctly placed. It points to a marrow in which the cells are packed so tightly or entangled in fibres that they cannot be sucked out, or to an almost empty marrow. The common causes are myelofibrosis, aplastic anaemia (the marrow is replaced by fat, a "dry tap" being typical, so that aplasia is best assessed on trephine biopsy), hairy cell leukaemia, packed marrow in acute leukaemia and lymphoma, and marrow infiltration by metastatic carcinoma. A technical failure, such as the needle not being in the marrow cavity, must be excluded. A trephine biopsy should always follow.
 
@@ -9195,7 +9185,7 @@ Others include chronic myeloid leukaemia and polycythaemia vera with marrow fibr
 
 ## What is anemia?
 
-**Say this first:** Anaemia is a reduction in the total circulating red cell mass below normal limits, which in practice is diagnosed by a haemoglobin concentration or haematocrit below the reference range for the age and sex of the patient, and which leads to reduced oxygen-carrying capacity of the blood and tissue hypoxia.
+Anaemia is a reduction in the total circulating red cell mass below normal limits, which in practice is diagnosed by a haemoglobin concentration or haematocrit below the reference range for the age and sex of the patient, and which leads to reduced oxygen-carrying capacity of the blood and tissue hypoxia.
 
 Because direct measurement of the red cell mass is not easy, anaemia is diagnosed from reductions in the haemoglobin concentration and the haematocrit, which correlate with the red cell mass except when the plasma volume is altered by fluid retention (as in pregnancy, causing a dilutional fall) or dehydration (which masks anaemia). The working thresholds are a haemoglobin below 13 g/dL in men, below 12 g/dL in nonpregnant women and below 11 g/dL in pregnant women and young children (Robbins reference ranges: males 13.6 to 17.2 g/dL, females 12.0 to 15.0 g/dL).
 
@@ -9204,7 +9194,7 @@ Anaemia may result from blood loss, increased red cell destruction (haemolysis) 
 
 ## Morphological types of anaemia.
 
-**Say this first:** On the basis of red cell size and haemoglobin content, anaemia is classified morphologically into microcytic hypochromic, normocytic normochromic and macrocytic types.
+On the basis of red cell size and haemoglobin content, anaemia is classified morphologically into microcytic hypochromic, normocytic normochromic and macrocytic types.
 
 The classification rests on the red cell indices (MCV, MCH, MCHC) and the peripheral blood film.
 
@@ -9219,7 +9209,7 @@ A fourth, "dimorphic" pattern, with two populations of red cells (for example, c
 
 ## Examples of each morphological type.
 
-**Say this first:** Iron deficiency and thalassaemia are the commonest microcytic hypochromic anaemias, acute blood loss and most haemolytic anaemias are normocytic normochromic, and megaloblastic anaemia due to B₁₂ or folate deficiency is the classical macrocytic anaemia.
+Iron deficiency and thalassaemia are the commonest microcytic hypochromic anaemias, acute blood loss and most haemolytic anaemias are normocytic normochromic, and megaloblastic anaemia due to B₁₂ or folate deficiency is the classical macrocytic anaemia.
 
 - **Microcytic hypochromic:** iron deficiency anaemia (the most common), thalassaemia syndromes (α and β), anaemia of chronic inflammation (often normocytic but may be slightly microcytic and hypochromic), sideroblastic anaemia, lead poisoning, and the rare iron-refractory iron deficiency anaemia from TMPRSS6 mutations.
 - **Normocytic normochromic:** acute blood loss, haemolytic anaemias (hereditary spherocytosis, G6PD deficiency, sickle cell disease, autoimmune haemolytic anaemia, microangiopathic haemolysis), aplastic anaemia (usually slightly macrocytic), pure red cell aplasia, anaemia of chronic inflammation, anaemia of renal failure, endocrine disorders (such as hypothyroidism), marrow infiltration (myelophthisic anaemia) and the dilutional anaemia of pregnancy.
@@ -9228,7 +9218,7 @@ A fourth, "dimorphic" pattern, with two populations of red cells (for example, c
 
 ## Pathophysiological categories of anaemia.
 
-**Say this first:** Anaemia is classified by mechanism into three broad groups: blood loss, increased red cell destruction (haemolysis), and decreased red cell production.
+Anaemia is classified by mechanism into three broad groups: blood loss, increased red cell destruction (haemolysis), and decreased red cell production.
 
 | Mechanism | Subtypes and examples |
 |---|---|
@@ -9239,7 +9229,7 @@ A fourth, "dimorphic" pattern, with two populations of red cells (for example, c
 
 ## Causes of anaemia.
 
-**Say this first:** The causes of anaemia are blood loss, increased destruction of red cells, and decreased production of red cells, and in many patients more than one mechanism contributes.
+The causes of anaemia are blood loss, increased destruction of red cells, and decreased production of red cells, and in many patients more than one mechanism contributes.
 
 Blood loss. Acute haemorrhage (trauma, surgery, obstetric haemorrhage) produces a normocytic anaemia once the blood volume has been restored by shift of interstitial fluid. Chronic blood loss (peptic ulcer, gastrointestinal malignancy, haemorrhoids, hookworm infestation, menorrhagia) depletes iron stores and leads to iron deficiency anaemia.
 
@@ -9252,7 +9242,7 @@ Dilutional. Expansion of plasma volume in pregnancy and in splenomegaly lowers t
 
 ## How will you investigate a case of anaemia?
 
-**Say this first:** I would take a detailed history and examine the patient, confirm anaemia and classify it morphologically with a complete blood count, red cell indices, reticulocyte count and peripheral blood film, and then perform specific tests directed by the type of anaemia to determine the underlying cause.
+I would take a detailed history and examine the patient, confirm anaemia and classify it morphologically with a complete blood count, red cell indices, reticulocyte count and peripheral blood film, and then perform specific tests directed by the type of anaemia to determine the underlying cause.
 
 History and examination. Duration and tempo, diet, drugs (NSAIDs, anticonvulsants, antimalarials), alcohol, bleeding (gastrointestinal, menstrual, urinary), pregnancy, previous surgery (gastrectomy, ileal resection), family history and ethnic origin, and symptoms of the underlying cause. Examination looks for pallor, jaundice, glossitis, koilonychia, neurological signs, lymphadenopathy, hepatosplenomegaly and bone tenderness.
 
@@ -9310,7 +9300,7 @@ It is classified as **relative**, when there is haemoconcentration from reduced 
 
 ## Causes of iron deficiency anaemia.
 
-**Say this first:** Iron deficiency anaemia results from a negative iron balance, which arises from dietary lack, impaired absorption, increased requirement, or chronic blood loss, with chronic blood loss being the commonest cause in developed countries.
+Iron deficiency anaemia results from a negative iron balance, which arises from dietary lack, impaired absorption, increased requirement, or chronic blood loss, with chronic blood loss being the commonest cause in developed countries.
 
 Normal iron balance depends on absorbing about 1 mg of iron daily to replace the 1 to 2 mg lost in shed epithelial cells, since there is no regulated pathway of excretion. The causes are as follows.
 
@@ -9324,7 +9314,7 @@ Rarely, iron-refractory iron deficiency anaemia occurs from TMPRSS6 mutations th
 
 ## Causes of IDA in relation to different age groups.
 
-**Say this first:** The cause of iron deficiency varies with age: inadequate intake and rapid growth in infants and children, increased demands and menstrual loss in adolescent girls and women of reproductive age, and chronic gastrointestinal blood loss in adult men and postmenopausal women.
+The cause of iron deficiency varies with age: inadequate intake and rapid growth in infants and children, increased demands and menstrual loss in adolescent girls and women of reproductive age, and chronic gastrointestinal blood loss in adult men and postmenopausal women.
 
 | Age group | Principal causes |
 |---|---|
@@ -9339,28 +9329,28 @@ Rarely, iron-refractory iron deficiency anaemia occurs from TMPRSS6 mutations th
 
 ## Causes of IDA in adult males.
 
-**Say this first:** In an adult male, iron deficiency is almost always due to chronic gastrointestinal blood loss until proven otherwise, because dietary lack is rare and men have no physiological iron losses other than the minimal obligatory ones.
+In an adult male, iron deficiency is almost always due to chronic gastrointestinal blood loss until proven otherwise, because dietary lack is rare and men have no physiological iron losses other than the minimal obligatory ones.
 
 The average Western diet provides more than enough iron for men, so dietary insufficiency is rarely responsible. The sources of occult bleeding to be investigated include peptic ulcer disease and erosive gastritis (aspirin or NSAID use), carcinoma of the stomach, caecum or colon, oesophagitis, hiatus hernia, oesophageal varices, angiodysplasia, haemorrhoids, inflammatory bowel disease, and, in endemic regions such as Bangladesh, hookworm infestation (Ancylostoma duodenale, Necator americanus). Less commonly, malabsorption (coeliac disease), previous gastrectomy, urinary tract bleeding (haematuria) and frequent blood donation are responsible. To ascribe iron deficiency prematurely to another cause risks missing a gastrointestinal cancer or other bleeding lesion, and an alert clinician who investigates unexplained iron deficiency anaemia may thereby save a life.
 
 
 ## Causes of IDA in post-menopausal women.
 
-**Say this first:** After the menopause, menstrual loss and pregnancy are no longer relevant, so iron deficiency anaemia in a postmenopausal woman must be attributed to gastrointestinal blood loss until proven otherwise.
+After the menopause, menstrual loss and pregnancy are no longer relevant, so iron deficiency anaemia in a postmenopausal woman must be attributed to gastrointestinal blood loss until proven otherwise.
 
 The same causes as in adult males therefore apply: bleeding peptic ulcer, erosive gastritis from NSAIDs or aspirin, gastric and colorectal carcinoma, angiodysplasia, haemorrhoids and hookworm infestation. Further contributory causes are impaired absorption (atrophic gastritis with achlorhydria, coeliac disease, previous gastrectomy), inadequate diet (older women who eat little meat because of limited income or poor dentition), and rarely postmenopausal vaginal bleeding from uterine or cervical neoplasm or haematuria. Postmenopausal bleeding itself must be investigated gynaecologically. Because the loss may be occult, endoscopy of the upper and lower gastrointestinal tract is usually required.
 
 
 ## Causes of IDA in infants and children.
 
-**Say this first:** Iron deficiency in infants and children is mostly due to the combination of high iron requirements for growth and inadequate dietary iron, and in endemic areas to chronic blood loss from intestinal parasites.
+Iron deficiency in infants and children is mostly due to the combination of high iron requirements for growth and inadequate dietary iron, and in endemic areas to chronic blood loss from intestinal parasites.
 
 Newborns have iron stores that last about 4 to 6 months, after which the infant depends on dietary iron. Human breast milk contains only about 0.3 mg/L of iron (although it is well absorbed), and cow's milk contains about twice as much but with poor bioavailability; it may also cause occult intestinal blood loss in infants. Prolonged milk feeding without iron-rich complementary foods leads to deficiency. Prematurity, twin birth, maternal iron deficiency and early cord clamping reduce the endowment of iron at birth, and the rapid growth in infancy, early childhood and adolescence increases requirements, particularly in adolescent girls after menarche. Hookworm and other parasitic infestations are a major cause of chronic gastrointestinal loss in low-resource countries, and malabsorption (coeliac disease, giardiasis), Meckel diverticulum, polyps and recurrent infections contribute. Iron deficiency in children impairs growth, cognition and development.
 
 
 ## Important laboratory findings in IDA.
 
-**Say this first:** The laboratory findings of iron deficiency anaemia are a hypochromic microcytic anaemia with low serum iron and ferritin, raised total iron-binding capacity and low transferrin saturation, and absent stainable iron in the bone marrow.
+The laboratory findings of iron deficiency anaemia are a hypochromic microcytic anaemia with low serum iron and ferritin, raised total iron-binding capacity and low transferrin saturation, and absent stainable iron in the bone marrow.
 
 Blood count. Haemoglobin and haematocrit are reduced, usually moderately; MCV, MCH and MCHC are reduced, and the RDW is raised. The red cell count is less reduced than the haemoglobin. The reticulocyte count is low or normal, and thrombocytosis is common in those with bleeding. White cells are normal.
 
@@ -9375,7 +9365,7 @@ Response to therapy. Oral iron produces a reticulocyte response in 5 to 7 days, 
 
 ## Biochemical tests done for IDA.
 
-**Say this first:** The biochemical tests for iron deficiency are serum iron, total iron-binding capacity, transferrin saturation and serum ferritin, with serum ferritin being the single best test of body iron stores.
+The biochemical tests for iron deficiency are serum iron, total iron-binding capacity, transferrin saturation and serum ferritin, with serum ferritin being the single best test of body iron stores.
 
 | Test | Result in IDA | Remarks |
 |---|---|---|
@@ -9392,7 +9382,7 @@ Stool examination for occult blood and ova of hookworm, and endoscopy, are used 
 
 ## Who are more susceptible to IDA, and why?
 
-**Say this first:** Iron deficiency is more common in infants and toddlers, adolescent girls, women of childbearing age, especially during pregnancy, the elderly and the poor, because in these groups iron demand is high, stores are limited or dietary iron is inadequate.
+Iron deficiency is more common in infants and toddlers, adolescent girls, women of childbearing age, especially during pregnancy, the elderly and the poor, because in these groups iron demand is high, stores are limited or dietary iron is inadequate.
 
 - **Infants and toddlers:** breast and cow's milk contain little bioavailable iron, and rapid growth increases requirements.
 - **Adolescent girls and females of reproductive age:** monthly menstrual loss and, in adolescents, rapid growth. Total body iron in females is only about 2.5 g compared with 6 g in males.
@@ -9404,7 +9394,7 @@ Stool examination for occult blood and ova of hookworm, and endoscopy, are used 
 
 ## Why is the prognosis of aplastic anaemia worse than IDA?
 
-**Say this first:** Iron deficiency anaemia has an identifiable and correctable cause and responds quickly to iron replacement, whereas aplastic anaemia is a failure of the haemopoietic stem cell compartment that causes pancytopenia, with a risk of fatal infection and bleeding, and often needs transplantation or immunosuppression.
+Iron deficiency anaemia has an identifiable and correctable cause and responds quickly to iron replacement, whereas aplastic anaemia is a failure of the haemopoietic stem cell compartment that causes pancytopenia, with a risk of fatal infection and bleeding, and often needs transplantation or immunosuppression.
 
 In iron deficiency, the marrow is healthy and has the capacity to respond once iron is supplied and the cause (blood loss, dietary lack) is corrected. Oral iron produces a reticulocyte response in 5 to 7 days with normalisation of the blood count, and the anaemia carries no direct risk to life.
 
@@ -9413,14 +9403,14 @@ Aplastic anaemia involves loss of all haemopoietic lineages. Anaemia is accompan
 
 ## Differential diagnosis of microcytic hypochromic anaemia.
 
-**Say this first:** The differential diagnosis of a microcytic hypochromic anaemia is iron deficiency anaemia, thalassaemia (trait or major), anaemia of chronic inflammation, and sideroblastic anaemia, with lead poisoning as a rarer cause.
+The differential diagnosis of a microcytic hypochromic anaemia is iron deficiency anaemia, thalassaemia (trait or major), anaemia of chronic inflammation, and sideroblastic anaemia, with lead poisoning as a rarer cause.
 
 Iron deficiency is the most common, and is characterised by low ferritin, high TIBC and absent marrow iron. Thalassaemia trait is suspected when the microcytosis is out of proportion to the mild anaemia, the red cell count is raised, the RDW is normal, the film shows target cells and basophilic stippling, and iron studies are normal; the diagnosis is confirmed by haemoglobin electrophoresis, with a raised HbA₂ (4% to 8%) in β-thalassaemia trait. Anaemia of chronic inflammation, which is typically normocytic but may be slightly microcytic, is characterised by low serum iron with low TIBC, normal or raised ferritin, and increased storage iron in marrow macrophages, reflecting hepcidin-mediated iron sequestration. Sideroblastic anaemia (hereditary, or acquired from alcohol, isoniazid, lead and myelodysplasia) shows high serum iron and ferritin, with ringed sideroblasts in the marrow. Rare causes include iron-refractory iron deficiency anaemia (TMPRSS6 mutation) and copper deficiency.
 
 
 ## How will you differentiate the causes of microcytic hypochromic anaemia?
 
-**Say this first:** I would differentiate them with the iron profile and haemoglobin electrophoresis: iron deficiency shows low iron, high TIBC and low ferritin; anaemia of chronic inflammation shows low iron, low TIBC and normal or high ferritin; thalassaemia trait shows normal iron studies with raised HbA₂; and sideroblastic anaemia shows high iron and ringed sideroblasts.
+I would differentiate them with the iron profile and haemoglobin electrophoresis: iron deficiency shows low iron, high TIBC and low ferritin; anaemia of chronic inflammation shows low iron, low TIBC and normal or high ferritin; thalassaemia trait shows normal iron studies with raised HbA₂; and sideroblastic anaemia shows high iron and ringed sideroblasts.
 
 | Feature | Iron deficiency | Thalassaemia trait | Chronic inflammation | Sideroblastic anaemia |
 |---|---|---|---|---|
@@ -9561,14 +9551,14 @@ The iron profile will be that of iron deficiency:
 
 ## Define macrocytic anemia.
 
-**Say this first:** Macrocytic anaemia is an anaemia in which the red cells are larger than normal, with a mean cell volume above the upper limit of the reference range, that is, above about 96 to 100 fL.
+Macrocytic anaemia is an anaemia in which the red cells are larger than normal, with a mean cell volume above the upper limit of the reference range, that is, above about 96 to 100 fL.
 
 The enlarged red cells are produced by different mechanisms. In megaloblastic anaemia, impaired DNA synthesis from deficiency of vitamin B₁₂ or folate delays nuclear maturation, while cytoplasmic maturation and haemoglobinisation proceed normally, resulting in large precursors (megaloblasts) and large oval red cells (macro-ovalocytes). In non-megaloblastic macrocytosis the cells are large and round, because of increased red cell membrane lipid (as in liver disease and alcohol excess), or the presence of many reticulocytes, which are larger than mature cells. Because macrocytes are larger and contain ample haemoglobin, the MCH is raised, but the MCHC is normal.
 
 
 ## Classify macrocytic anemia with example.
 
-**Say this first:** Macrocytic anaemias are classified into megaloblastic anaemias, caused by impaired DNA synthesis, and non-megaloblastic (normoblastic) macrocytic anaemias, in which the marrow erythroid precursors are normoblastic.
+Macrocytic anaemias are classified into megaloblastic anaemias, caused by impaired DNA synthesis, and non-megaloblastic (normoblastic) macrocytic anaemias, in which the marrow erythroid precursors are normoblastic.
 
 | Class | Causes and examples |
 |---|---|
@@ -9578,7 +9568,7 @@ The enlarged red cells are produced by different mechanisms. In megaloblastic an
 
 ## Causes of normoblastic macrocytic anaemia.
 
-**Say this first:** The commonest causes of normoblastic macrocytosis are alcohol excess, chronic liver disease, hypothyroidism, reticulocytosis in haemolysis or haemorrhage, and myelodysplastic neoplasms, in which the red cells are large but the marrow shows normal nuclear maturation.
+The commonest causes of normoblastic macrocytosis are alcohol excess, chronic liver disease, hypothyroidism, reticulocytosis in haemolysis or haemorrhage, and myelodysplastic neoplasms, in which the red cells are large but the marrow shows normal nuclear maturation.
 
 1. Alcohol use disorder (a direct toxic effect on erythropoiesis, independent of folate deficiency).
 2. Hepatocellular disease of toxic, infectious or cirrhotic aetiology, in which lipid abnormalities allow red cell membranes to acquire phospholipid and cholesterol and thereby increase cell size, producing round macrocytes and target cells.
@@ -9592,7 +9582,7 @@ The enlarged red cells are produced by different mechanisms. In megaloblastic an
 
 ## Write a short note on megaloblastic anemia.
 
-**Say this first:** Megaloblastic anaemia is a macrocytic anaemia caused by impaired DNA synthesis, most often from deficiency of vitamin B₁₂ or folate, and characterised by abnormally large erythroid precursors (megaloblasts), ineffective haemopoiesis, macro-ovalocytes and, usually, pancytopenia.
+Megaloblastic anaemia is a macrocytic anaemia caused by impaired DNA synthesis, most often from deficiency of vitamin B₁₂ or folate, and characterised by abnormally large erythroid precursors (megaloblasts), ineffective haemopoiesis, macro-ovalocytes and, usually, pancytopenia.
 
 **Pathogenesis.** Vitamin B₁₂ and folic acid are cofactors required for the synthesis of thymidine (dTMP), one of the four bases of DNA. Deficiency or impaired metabolism produces defective nuclear maturation because of deranged or inadequate DNA synthesis, with a delay or block in cell division, while RNA and protein synthesis, and therefore cytoplasmic maturation and haemoglobinisation, proceed normally. This results in nuclear-cytoplasmic asynchrony. Because DNA synthesis is impaired in all proliferating cells, the changes affect red cell, granulocyte and megakaryocyte precursors and the epithelium of the gastrointestinal tract. Most precursors die by apoptosis in the marrow (ineffective haemopoiesis), producing pancytopenia, together with a mild degree of haemolysis.
 
@@ -9607,7 +9597,7 @@ The enlarged red cells are produced by different mechanisms. In megaloblastic an
 
 ## How can you differentiate megaloblastic anaemia from other macrocytic anaemias?
 
-**Say this first:** Megaloblastic anaemia is differentiated from other macrocytic anaemias by the presence of oval macrocytes and hypersegmented neutrophils on the film, megaloblasts with open chromatin in a hypercellular marrow, pancytopenia, and low serum B₁₂ or folate.
+Megaloblastic anaemia is differentiated from other macrocytic anaemias by the presence of oval macrocytes and hypersegmented neutrophils on the film, megaloblasts with open chromatin in a hypercellular marrow, pancytopenia, and low serum B₁₂ or folate.
 
 | Feature | Megaloblastic anaemia | Non-megaloblastic macrocytic anaemia (liver disease, alcohol, hypothyroidism) |
 |---|---|---|
@@ -9624,7 +9614,7 @@ The enlarged red cells are produced by different mechanisms. In megaloblastic an
 
 ## How can you diagnose a case of megaloblastic anaemia?
 
-**Say this first:** The diagnosis is made by recognising the macrocytic anaemia with macro-ovalocytes and hypersegmented neutrophils on the blood film, confirming megaloblastic erythropoiesis in the bone marrow if necessary, and demonstrating low serum vitamin B₁₂ or folate, then determining the cause.
+The diagnosis is made by recognising the macrocytic anaemia with macro-ovalocytes and hypersegmented neutrophils on the blood film, confirming megaloblastic erythropoiesis in the bone marrow if necessary, and demonstrating low serum vitamin B₁₂ or folate, then determining the cause.
 
 1. **Clinical features:** insidious pallor, lemon-yellow tinge, sore tongue, and neurological symptoms (paraesthesiae, ataxia) in B₁₂ deficiency; history of diet, alcohol, drugs, gastric or ileal surgery.
 2. **Blood count:** moderate to severe macrocytic anaemia with MCV usually above 100 fL (often 110 to 140 fL), low reticulocyte count, and leukopenia and thrombocytopenia in severe cases.
@@ -9636,7 +9626,7 @@ The enlarged red cells are produced by different mechanisms. In megaloblastic an
 
 ## Causes of folate deficiency.
 
-**Say this first:** Folate deficiency is caused by decreased intake, increased requirements, or impaired utilisation, with decreased intake in poor diets and in people with alcohol use disorder being the commonest.
+Folate deficiency is caused by decreased intake, increased requirements, or impaired utilisation, with decreased intake in poor diets and in people with alcohol use disorder being the commonest.
 
 1. **Decreased intake:** nutritionally inadequate diet in the poor, the very old, and people with chronic alcohol use disorder; overcooked food (boiling, steaming or frying for 5 to 10 minutes destroys up to 95% of the folate); and impaired absorption, such as in tropical sprue, coeliac disease and infiltrative small intestinal disease (lymphoma). Phenytoin and oral contraceptives interfere with absorption.
 2. **Increased requirement:** pregnancy, lactation, infancy, hyperactive haemopoiesis (chronic haemolytic anaemia, for example sickle cell disease and thalassaemia), disseminated cancer, exfoliative skin disease and dialysis.
@@ -9645,14 +9635,14 @@ The enlarged red cells are produced by different mechanisms. In megaloblastic an
 
 ## Why is folate deficiency more common than vitamin B12 deficiency?
 
-**Say this first:** Folate deficiency is more common because the body stores of folate are small and last only weeks to months, whereas the stores of vitamin B₁₂ in the liver last for several years, and folate is also more easily destroyed in food and more dependent on diet.
+Folate deficiency is more common because the body stores of folate are small and last only weeks to months, whereas the stores of vitamin B₁₂ in the liver last for several years, and folate is also more easily destroyed in food and more dependent on diet.
 
 The daily requirement of vitamin B₁₂ is only 2 to 3 µg, and a diet that includes animal products contains much more, building hepatic stores that last for years, even when absorption fails. Therefore a patient with pernicious anaemia may take years to become anaemic. The folate stores are modest, and deficiency may arise within weeks to months if intake is inadequate. Folate is also heat-labile (cooking destroys up to 95%) and is mainly found in fresh green vegetables, and the demands of pregnancy, infancy and chronic haemolysis readily exceed the supply. Its absorption is easily impaired by alcohol, drugs and small intestinal disease. Vitamin B₁₂ deficiency in contrast generally results from malabsorption, because dietary intake is rarely deficient except in strict vegans.
 
 
 ## Causes of vitamin B12 deficiency.
 
-**Say this first:** Vitamin B₁₂ deficiency is nearly always due to impaired absorption, most often from autoimmune gastritis in pernicious anaemia, and rarely from a deficient diet.
+Vitamin B₁₂ deficiency is nearly always due to impaired absorption, most often from autoimmune gastritis in pernicious anaemia, and rarely from a deficient diet.
 
 1. **Inadequate intake:** strict vegetarian or vegan and macrobiotic diets (plants contain little cobalamin).
 2. **Impaired gastric production of intrinsic factor or release of B₁₂:** pernicious anaemia (autoimmune atrophic gastritis); gastrectomy; achlorhydria with loss of pepsin in older adults (food-bound B₁₂ is not released).
@@ -9665,7 +9655,7 @@ The daily requirement of vitamin B₁₂ is only 2 to 3 µg, and a diet that inc
 
 ## Cardinal manifestations of vitamin B12 deficiency.
 
-**Say this first:** The cardinal manifestations are megaloblastic anaemia, glossitis and other gastrointestinal changes, and neurological damage, notably subacute combined degeneration of the spinal cord.
+The cardinal manifestations are megaloblastic anaemia, glossitis and other gastrointestinal changes, and neurological damage, notably subacute combined degeneration of the spinal cord.
 
 Haematological. Insidious, often severe, macrocytic anaemia with pancytopenia, caused by ineffective haemopoiesis; pallor with a lemon-yellow tinge from mild jaundice (ineffective erythropoiesis and haemolysis).
 
@@ -9678,21 +9668,21 @@ Biochemical. Raised plasma and urine methylmalonic acid and homocysteine.
 
 ## What is pernicious anemia?
 
-**Say this first:** Pernicious anaemia is a megaloblastic anaemia caused by vitamin B₁₂ deficiency resulting from autoimmune atrophic gastritis, which destroys the parietal cells and impairs the production of intrinsic factor required for B₁₂ absorption.
+Pernicious anaemia is a megaloblastic anaemia caused by vitamin B₁₂ deficiency resulting from autoimmune atrophic gastritis, which destroys the parietal cells and impairs the production of intrinsic factor required for B₁₂ absorption.
 
 It is a disease of older adults (median age at diagnosis about 60 years, rare under 30), more prevalent in Scandinavian and Northern European populations but occurring in all groups. A genetic predisposition is suspected, and it is associated with other autoimmune diseases, particularly autoimmune thyroiditis and adrenalitis. The onset is insidious, so that anaemia is often severe at presentation. Hypochlorhydria and loss of intrinsic factor lead to malabsorption of B₁₂ which, once the hepatic stores (adequate for years) are exhausted, produces megaloblastic anaemia, glossitis and neurological damage (subacute combined degeneration of the cord). Antibodies to intrinsic factor are highly specific. Treatment is lifelong parenteral (or high-dose oral) B₁₂, which corrects the anaemia and halts or reverses the neuropathy, but does not reverse the gastric atrophy, so that the risk of gastric carcinoma persists.
 
 
 ## Main pathogenesis of pernicious anaemia.
 
-**Say this first:** Pernicious anaemia results from an autoimmune attack on the gastric mucosa, driven by autoreactive T cells, which causes chronic atrophic gastritis with loss of parietal cells and intrinsic factor and therefore failure of vitamin B₁₂ absorption.
+Pernicious anaemia results from an autoimmune attack on the gastric mucosa, driven by autoreactive T cells, which causes chronic atrophic gastritis with loss of parietal cells and intrinsic factor and therefore failure of vitamin B₁₂ absorption.
 
 An autoreactive T-cell response appears to initiate gastric mucosal injury and triggers the formation of autoantibodies, which are of diagnostic utility but are not thought to be the primary cause of the gastric pathology. Three types of antibodies are found: type I (in about 75% of patients) blocks the binding of B₁₂ to intrinsic factor; type II blocks the binding of the intrinsic factor–B₁₂ complex to its ileal receptor, cubilin; and type III (in 85% to 90%, but not specific) recognises the gastric proton pump of parietal cells. Histologically there is chronic atrophic gastritis of the fundus with loss of parietal and chief cells, lymphocytic and plasma cell infiltrate, and intestinal metaplasia. When the mass of intrinsic factor–secreting cells falls below a critical threshold and hepatic B₁₂ stores have been exhausted, defective DNA synthesis leads to megaloblastic anaemia. The B₁₂ deficiency reduces the availability of tetrahydrofolate (folate "trapped" as N⁵-methyl-FH₄), so that thymidylate synthesis falls.
 
 
 ## How can you diagnose a case of pernicious anaemia?
 
-**Say this first:** The diagnosis of pernicious anaemia is based on a moderate to severe megaloblastic anaemia with hypersegmented neutrophils, a low serum vitamin B₁₂, raised serum homocysteine and methylmalonic acid, and serum antibodies to intrinsic factor, confirmed by a reticulocyte response to parenteral B₁₂.
+The diagnosis of pernicious anaemia is based on a moderate to severe megaloblastic anaemia with hypersegmented neutrophils, a low serum vitamin B₁₂, raised serum homocysteine and methylmalonic acid, and serum antibodies to intrinsic factor, confirmed by a reticulocyte response to parenteral B₁₂.
 
 1. **Blood:** macrocytic anaemia (MCV often above 110 fL), macro-ovalocytes, leukopenia with hypersegmented neutrophils, low reticulocyte count, and thrombocytopenia.
 2. **Bone marrow:** hypercellular marrow with megaloblasts (not essential in a classic case).
@@ -9793,21 +9783,21 @@ The cause is loss of intrinsic factor. After gastrectomy (total or, more slowly,
 
 ## Define haemolytic anaemia.
 
-**Say this first:** Haemolytic anaemia is an anaemia caused by premature destruction of red cells, with a shortened red cell lifespan of less than the normal 120 days, which the marrow cannot fully compensate by increased erythropoiesis.
+Haemolytic anaemia is an anaemia caused by premature destruction of red cells, with a shortened red cell lifespan of less than the normal 120 days, which the marrow cannot fully compensate by increased erythropoiesis.
 
 Haemolytic anaemias share three features: a red cell life span shorter than 120 days; elevated erythropoietin levels with a compensatory increase in erythropoiesis, seen as reticulocytosis and erythroid hyperplasia of the marrow; and accumulation of the products of haemoglobin degradation. Destruction may be extravascular, within macrophages of the spleen, liver and marrow (the great majority), or intravascular, within the circulation, and the two differ in their clinical and laboratory features. Anaemia develops when the rate of destruction exceeds the marrow's capacity to compensate, which can be up to six to eight times the normal rate; when compensation is complete, haemolysis may occur without anaemia (compensated haemolytic state).
 
 
 ## What do you mean by premature destruction of RBC?
 
-**Say this first:** Premature destruction of red cells means the removal of red cells from the circulation before the end of their normal lifespan of 120 days, by phagocytosis (extravascular) or lysis in the circulation (intravascular).
+Premature destruction of red cells means the removal of red cells from the circulation before the end of their normal lifespan of 120 days, by phagocytosis (extravascular) or lysis in the circulation (intravascular).
 
 Normally, senescent red cells are removed by macrophages, triggered by age-dependent changes in red cell surface proteins. In haemolytic states, red cells are removed earlier because they are less deformable (spherocytes, sickled cells, cells with Heinz bodies or antibody coating) and cannot pass through the splenic cords into the sinusoids, so that they are sequestered and phagocytosed; or because they are directly lysed in the circulation by complement (the membrane attack complex, as in PNH and ABO-incompatible transfusion), mechanical injury (prosthetic valves, microangiopathy), parasites (falciparum malaria) or toxins (clostridial lecithinase). In hereditary spherocytosis, for example, the lifespan is shortened to 10 to 20 days on average.
 
 
 ## Outline classification of haemolytic anaemia.
 
-**Say this first:** Haemolytic anaemias are classified as inherited or acquired, or by the site of the defect into intracorpuscular (intrinsic to the red cell) and extracorpuscular (extrinsic) causes.
+Haemolytic anaemias are classified as inherited or acquired, or by the site of the defect into intracorpuscular (intrinsic to the red cell) and extracorpuscular (extrinsic) causes.
 
 | Category | Examples |
 |---|---|
@@ -9818,14 +9808,14 @@ Normally, senescent red cells are removed by macrophages, triggered by age-depen
 
 ## Common examples of congenital haemolytic anaemias.
 
-**Say this first:** The common congenital haemolytic anaemias are hereditary spherocytosis, G6PD deficiency, pyruvate kinase deficiency, thalassaemia and sickle cell disease.
+The common congenital haemolytic anaemias are hereditary spherocytosis, G6PD deficiency, pyruvate kinase deficiency, thalassaemia and sickle cell disease.
 
 They fall into three groups by defect: membrane (hereditary spherocytosis, hereditary elliptocytosis, hereditary stomatocytosis); enzyme (G6PD deficiency in the hexose monophosphate shunt and pyruvate kinase deficiency in glycolysis); and haemoglobin (sickle cell disease and other haemoglobinopathies such as HbC, HbE and unstable haemoglobins, and the thalassaemia syndromes). In Bangladesh and the Indian subcontinent, β-thalassaemia and HbE-β-thalassaemia are the most common, followed by G6PD deficiency and hereditary spherocytosis; sickle cell disease is much less common than in Africa.
 
 
 ## Haemolytic anaemias due to extracorpuscular defect.
 
-**Say this first:** Extracorpuscular haemolytic anaemias are those in which the red cells are normal but are destroyed by an abnormality outside the cell, such as antibodies, mechanical injury, infections, toxins or hypersplenism.
+Extracorpuscular haemolytic anaemias are those in which the red cells are normal but are destroyed by an abnormality outside the cell, such as antibodies, mechanical injury, infections, toxins or hypersplenism.
 
 1. **Immune:** autoimmune haemolytic anaemia (warm IgG, cold agglutinin IgM, paroxysmal cold haemoglobinuria); drug-induced (penicillin and cephalosporins as haptens, α-methyldopa as tolerance-breaking); alloimmune (haemolytic disease of the newborn, incompatible blood transfusion).
 2. **Mechanical or traumatic:** microangiopathic haemolytic anaemia in DIC, TTP, HUS, malignant hypertension and disseminated cancer; prosthetic or damaged cardiac valves; march haemoglobinuria (repetitive trauma such as marathon running or bongo drumming).
@@ -9837,14 +9827,14 @@ They fall into three groups by defect: membrane (hereditary spherocytosis, hered
 
 ## Why does jaundice occur in haemolytic anaemia?
 
-**Say this first:** Jaundice occurs because the increased breakdown of red cells releases more haem, which mononuclear phagocytes convert to unconjugated bilirubin faster than the liver can conjugate and excrete it, producing an acholuric (unconjugated) hyperbilirubinaemia.
+Jaundice occurs because the increased breakdown of red cells releases more haem, which mononuclear phagocytes convert to unconjugated bilirubin faster than the liver can conjugate and excrete it, producing an acholuric (unconjugated) hyperbilirubinaemia.
 
 Haem from phagocytosed or lysed red cells is metabolised in macrophages (and, in intravascular haemolysis, from haemoglobin–haptoglobin complexes) to biliverdin and then unconjugated bilirubin. The excess unconjugated bilirubin, bound to albumin, is not water soluble and therefore is not excreted in the urine, which explains why the jaundice is "acholuric". When the liver is normal, its reserve capacity prevents severe jaundice (usually the bilirubin is below 4 to 5 mg/dL), and the degree depends on the functional capacity of the liver and the rate of haemolysis. The excess bilirubin excreted into bile leads to increased urinary and faecal urobilinogen and stercobilin (dark stools), and to pigment gallstones. In neonates, the immature hepatic conjugation can cause severe jaundice (kernicterus) in haemolytic disease of the newborn.
 
 
 ## Evidence of increased haemoglobin breakdown.
 
-**Say this first:** The evidence of increased haemoglobin breakdown includes unconjugated hyperbilirubinaemia and jaundice, raised urinary urobilinogen and faecal stercobilinogen, reduced serum haptoglobin, raised LDH, and, in intravascular haemolysis, haemoglobinaemia, haemoglobinuria and haemosiderinuria.
+The evidence of increased haemoglobin breakdown includes unconjugated hyperbilirubinaemia and jaundice, raised urinary urobilinogen and faecal stercobilinogen, reduced serum haptoglobin, raised LDH, and, in intravascular haemolysis, haemoglobinaemia, haemoglobinuria and haemosiderinuria.
 
 - **Serum:** raised unconjugated bilirubin; low or absent haptoglobin (a₂-globulin that binds free haemoglobin and is consumed); raised lactate dehydrogenase; free plasma haemoglobin and methaemalbumin in intravascular haemolysis.
 - **Urine:** increased urobilinogen (urine bilirubin is absent, since unconjugated bilirubin is not filtered); haemoglobinuria and haemosiderinuria in intravascular haemolysis, since renal tubular cells reabsorb haemoglobin and shed iron-laden cells.
@@ -9855,7 +9845,7 @@ Haem from phagocytosed or lysed red cells is metabolised in macrophages (and, in
 
 ## Evidence of compensatory erythroid hyperplasia.
 
-**Say this first:** The evidence of compensatory erythroid hyperplasia is reticulocytosis and polychromasia in the peripheral blood, nucleated red cells in the film, and a hypercellular marrow with erythroid hyperplasia and a reversed myeloid-to-erythroid ratio.
+The evidence of compensatory erythroid hyperplasia is reticulocytosis and polychromasia in the peripheral blood, nucleated red cells in the film, and a hypercellular marrow with erythroid hyperplasia and a reversed myeloid-to-erythroid ratio.
 
 Anaemia and tissue hypoxia stimulate erythropoietin production, which expands the erythroid progenitor pool. The consequences are:
 
@@ -9868,7 +9858,7 @@ Anaemia and tissue hypoxia stimulate erythropoietin production, which expands th
 
 ## Evidence of haemolysis in PBF.
 
-**Say this first:** The peripheral blood film in haemolysis shows polychromasia and reticulocytosis reflecting increased marrow activity, along with nucleated red cells and abnormal red cell shapes specific to the cause, such as spherocytes, sickle cells, schistocytes, bite cells and target cells.
+The peripheral blood film in haemolysis shows polychromasia and reticulocytosis reflecting increased marrow activity, along with nucleated red cells and abnormal red cell shapes specific to the cause, such as spherocytes, sickle cells, schistocytes, bite cells and target cells.
 
 Features of increased erythropoiesis (common to all). Polychromatic macrocytes (reticulocytes, confirmed with supravital stain), nucleated red cells (normoblasts), basophilic stippling, Howell-Jolly bodies and anisocytosis. A mild neutrophil leukocytosis and thrombocytosis may be present.
 
@@ -9885,7 +9875,7 @@ Features pointing to the cause.
 
 ## Conditions where nucleated RBCs are seen in PBF.
 
-**Say this first:** Nucleated red cells appear in the peripheral blood when the marrow is under intense erythropoietic stress or is distorted by disease, and so they are seen in severe haemolytic anaemias, thalassaemia major, marrow infiltration and myelofibrosis.
+Nucleated red cells appear in the peripheral blood when the marrow is under intense erythropoietic stress or is distorted by disease, and so they are seen in severe haemolytic anaemias, thalassaemia major, marrow infiltration and myelofibrosis.
 
 1. **Haemolytic anaemias:** especially haemolytic disease of the newborn, sickle cell disease, thalassaemia major (poorly haemoglobinised nucleated cells from "stress" erythropoiesis and extramedullary sites) and autoimmune haemolytic anaemia.
 2. **Severe haemorrhage** and other states of hypoxia.
@@ -9898,14 +9888,14 @@ Features pointing to the cause.
 
 ## What is autoimmune haemolytic anaemia (AIHA)?
 
-**Say this first:** Autoimmune haemolytic anaemia is a haemolytic anaemia caused by autoantibodies directed against the patient's own red cell antigens, which cause premature destruction of red cells, and it is diagnosed by a positive direct Coombs test.
+Autoimmune haemolytic anaemia is a haemolytic anaemia caused by autoantibodies directed against the patient's own red cell antigens, which cause premature destruction of red cells, and it is diagnosed by a positive direct Coombs test.
 
 The disorder is preferably called immunohaemolytic anaemia, since in some cases the immune reaction is initiated by a drug. It is classified by the characteristics of the antibody into the warm antibody type (IgG, active at 37°C, about 80% of cases), the cold agglutinin type (IgM, active below 37°C, 15% to 20%) and the cold haemolysin type (IgG, paroxysmal cold haemoglobinuria, rare). Warm antibody haemolysis is mostly extravascular: IgG-coated red cells are partially phagocytosed by splenic macrophages through Fc receptors, losing membrane and becoming spherocytes, which are then sequestered in the spleen. The clinical features are anaemia, jaundice and moderate splenomegaly. Treatment involves removal of the cause, corticosteroids and other immunosuppressants, and splenectomy.
 
 
 ## Causes of AIHA.
 
-**Say this first:** About half of AIHA cases are idiopathic (primary), and the others are secondary to autoimmune disorders such as lupus, lymphoid neoplasms, infections or drugs.
+About half of AIHA cases are idiopathic (primary), and the others are secondary to autoimmune disorders such as lupus, lymphoid neoplasms, infections or drugs.
 
 Warm antibody type (IgG). Idiopathic (about 50%); secondary to other autoimmune disorders (particularly systemic lupus erythematosus), lymphoid neoplasms (chronic lymphocytic leukaemia, lymphomas) and drugs. The drug-induced forms are of two kinds: antigenic drugs such as penicillin and cephalosporins, which bind to the red cell membrane and create a new antigenic determinant (haemolysis occurs 1 to 2 weeks after therapy begins, usually after large intravenous doses), and tolerance-breaking drugs such as α-methyldopa, which induces autoantibodies against Rh antigens (about 10% of patients have a positive Coombs test and about 1% develop haemolysis).
 
@@ -10035,7 +10025,7 @@ The consequences are anaemia, compensatory erythroid hyperplasia and extramedull
 
 ## Normal types of haemoglobin.
 
-**Say this first:** The normal haemoglobins are HbA (α₂β₂), which constitutes about 95% to 98% of adult haemoglobin, HbA₂ (α₂δ₂) at about 2.5%, and foetal haemoglobin HbF (α₂γ₂), which predominates in the foetus and is below 1% in adults.
+The normal haemoglobins are HbA (α₂β₂), which constitutes about 95% to 98% of adult haemoglobin, HbA₂ (α₂δ₂) at about 2.5%, and foetal haemoglobin HbF (α₂γ₂), which predominates in the foetus and is below 1% in adults.
 
 Haemoglobin is a tetrameric protein composed of two pairs of globin chains, each with its own haem group. The α-globin genes lie on chromosome 16 (two genes per haploid genome, four per cell), and the β-like genes (β, δ, γ, ε) on chromosome 11.
 
@@ -10051,7 +10041,7 @@ HbF, which has a higher oxygen affinity than HbA and inhibits the polymerisation
 
 ## Name / classify congenital haemolytic anaemias due to defect in haemoglobin.
 
-**Say this first:** Congenital haemolytic anaemias due to a defect in haemoglobin are classified into the thalassaemia syndromes, in which globin chain synthesis is deficient (a quantitative defect), and the haemoglobinopathies, in which a structurally abnormal globin is produced (a qualitative defect).
+Congenital haemolytic anaemias due to a defect in haemoglobin are classified into the thalassaemia syndromes, in which globin chain synthesis is deficient (a quantitative defect), and the haemoglobinopathies, in which a structurally abnormal globin is produced (a qualitative defect).
 
 1. **Quantitative defects of globin synthesis:** α-thalassaemia and β-thalassaemia (and δβ-thalassaemia and hereditary persistence of foetal haemoglobin as related conditions).
 2. **Qualitative defects (structural haemoglobin variants, haemoglobinopathies):**
@@ -10066,14 +10056,14 @@ HbF, which has a higher oxygen affinity than HbA and inhibits the polymerisation
 
 ## Define haemoglobinopathies.
 
-**Say this first:** Haemoglobinopathies are inherited disorders caused by mutations in the globin genes that produce structurally abnormal haemoglobin molecules, as opposed to thalassaemia, in which the globin chains are structurally normal but synthesised in reduced amounts.
+Haemoglobinopathies are inherited disorders caused by mutations in the globin genes that produce structurally abnormal haemoglobin molecules, as opposed to thalassaemia, in which the globin chains are structurally normal but synthesised in reduced amounts.
 
 Several hundred haemoglobinopathies caused by mutations in globin genes are known, most of which are clinically silent. Only a few, namely sickle cell disease (HbS, in which a missense mutation replaces glutamic acid by valine at position 6 of the β-chain), and variants such as HbC (glutamic acid replaced by lysine) and HbE, are common enough to be of major clinical significance. The abnormal physicochemical properties of the variant haemoglobin cause polymerisation, instability, altered oxygen affinity or reduced solubility, leading to haemolysis and other consequences.
 
 
 ## Examples of haemoglobinopathies.
 
-**Say this first:** The commonest examples are sickle cell disease (HbS), haemoglobin C disease, haemoglobin E disease, haemoglobin D, unstable haemoglobins and M haemoglobins.
+The commonest examples are sickle cell disease (HbS), haemoglobin C disease, haemoglobin E disease, haemoglobin D, unstable haemoglobins and M haemoglobins.
 
 - **HbS (sickle cell disease and trait):** β⁶ Glu→Val; polymerises on deoxygenation.
 - **HbC:** β⁶ Glu→Lys; mild haemolytic anaemia with target cells; compound HbSC heterozygotes have a symptomatic disorder, somewhat milder than sickle cell disease.
@@ -10121,14 +10111,14 @@ Haemoglobinopathies are inherited disorders caused by mutations in globin genes 
 
 ## Define thalassemia.
 
-**Say this first:** Thalassaemia is a genetically heterogeneous group of inherited disorders caused by germline mutations that decrease the synthesis of either α-globin or β-globin chains, leading to anaemia, tissue hypoxia and red cell haemolysis from the imbalance in globin chain synthesis.
+Thalassaemia is a genetically heterogeneous group of inherited disorders caused by germline mutations that decrease the synthesis of either α-globin or β-globin chains, leading to anaemia, tissue hypoxia and red cell haemolysis from the imbalance in globin chain synthesis.
 
 The two α chains of HbA are encoded by an identical pair of α-globin genes on chromosome 16, and the β chains by a single β-globin gene on chromosome 11. β-Thalassaemia is caused by deficient synthesis of β chains and α-thalassaemia by deficient synthesis of α chains. The haematological consequences of reduced synthesis of one chain stem not only from haemoglobin deficiency (hypochromic microcytic red cells with reduced oxygen carrying capacity) but also from the relative excess of the other chain, particularly in β-thalassaemia. Unpaired α chains precipitate in red cell precursors, causing membrane damage, apoptosis of precursors (ineffective erythropoiesis) and extravascular haemolysis of the released red cells. Thalassaemia is among the most common inherited disorders of humans, and its distribution (Mediterranean, Middle East, Africa, Indian subcontinent and Southeast Asia) parallels that of malaria, from which heterozygous carriers are protected.
 
 
 ## How is thalassemia classified?
 
-**Say this first:** Thalassaemia is classified genetically into β-thalassaemia and α-thalassaemia according to the globin chain affected, and clinically into major, intermedia and minor (or trait) forms according to severity (Table 14.3).
+Thalassaemia is classified genetically into β-thalassaemia and α-thalassaemia according to the globin chain affected, and clinically into major, intermedia and minor (or trait) forms according to severity (Table 14.3).
 
 | Syndrome | Genotype | Clinical features | Molecular genetics |
 |---|---|---|---|
@@ -10147,7 +10137,7 @@ The two α chains of HbA are encoded by an identical pair of α-globin genes on 
 
 ## Clinical features of thalassaemia.
 
-**Say this first:** The clinical features of β-thalassaemia major are severe anaemia from 6 to 9 months of age, growth retardation, hepatosplenomegaly, skeletal deformities with a mongoloid facies from marrow expansion, and iron overload, in contrast to the symptomless anaemia of the trait.
+The clinical features of β-thalassaemia major are severe anaemia from 6 to 9 months of age, growth retardation, hepatosplenomegaly, skeletal deformities with a mongoloid facies from marrow expansion, and iron overload, in contrast to the symptomless anaemia of the trait.
 
 β-Thalassaemia major. Anaemia appears 6 to 9 months after birth as haemoglobin synthesis switches from HbF to HbA; untransfused haemoglobin is 3 to 6 g/dL. Features include pallor and mild jaundice, failure to thrive and growth retardation, marked hepatosplenomegaly caused by extramedullary haemopoiesis and phagocyte hyperplasia (spleen up to 1500 g), and the characteristic skeletal changes caused by expansion of the marrow: frontal and parietal bossing, prominent cheekbones and maxillary hypertrophy ("chipmunk" or mongoloid facies), and a "crew-cut" skull radiograph. Metabolically active erythroid progenitors cause cachexia. Excess iron, from increased gastrointestinal absorption (low hepcidin because of erythroferrone) and from transfusions, damages the heart (the main cause of death), liver, pancreas (diabetes) and other endocrine glands. Complications include gallstones, leg ulcers, and infections.
 
@@ -10158,7 +10148,7 @@ The two α chains of HbA are encoded by an identical pair of α-globin genes on 
 
 ## Type of mutation in beta thalassaemia.
 
-**Say this first:** β-Thalassaemia is caused mostly by point mutations in the β-globin gene that disrupt splicing, transcription, or translation, and they are classified as β⁰ (absent synthesis) or β⁺ (reduced synthesis).
+β-Thalassaemia is caused mostly by point mutations in the β-globin gene that disrupt splicing, transcription, or translation, and they are classified as β⁰ (absent synthesis) or β⁺ (reduced synthesis).
 
 More than 100 causative mutations have been described, falling into three major classes:
 
@@ -10171,7 +10161,7 @@ By contrast, α-thalassaemia is caused mainly by deletions of α-globin genes.
 
 ## Laboratory diagnosis of thalassaemia.
 
-**Say this first:** Thalassaemia is diagnosed by the finding of a hypochromic microcytic anaemia with target cells on the blood film, normal iron studies, and confirmation by haemoglobin electrophoresis or HPLC showing raised HbF and absent or reduced HbA in β-thalassaemia major, or raised HbA₂ in β-thalassaemia trait.
+Thalassaemia is diagnosed by the finding of a hypochromic microcytic anaemia with target cells on the blood film, normal iron studies, and confirmation by haemoglobin electrophoresis or HPLC showing raised HbF and absent or reduced HbA in β-thalassaemia major, or raised HbA₂ in β-thalassaemia trait.
 
 Blood count. Haemoglobin 3 to 6 g/dL (untransfused β-thalassaemia major); markedly reduced MCV and MCH; red cell count relatively high; RDW normal in trait, raised in major. Reticulocytes are elevated, though lower than expected for the degree of anaemia because of ineffective erythropoiesis.
 
@@ -10186,14 +10176,14 @@ Other. Bone marrow: erythroid hyperplasia (not needed); DNA analysis for the mut
 
 ## PBF findings of thalassaemia major.
 
-**Say this first:** The film in β-thalassaemia major shows severe hypochromic microcytic anaemia with marked anisopoikilocytosis, numerous target cells, basophilic stippling, fragmented cells and many nucleated red cells.
+The film in β-thalassaemia major shows severe hypochromic microcytic anaemia with marked anisopoikilocytosis, numerous target cells, basophilic stippling, fragmented cells and many nucleated red cells.
 
 Blood smears show severe red cell abnormalities: marked variation in size (anisocytosis) and shape (poikilocytosis), microcytosis and hypochromia. Target cells (so called because haemoglobin collects in the centre of the cell), basophilic stippling and fragmented red cells are common. Variable numbers of poorly haemoglobinised nucleated red cell precursors (normoblasts) are seen in the peripheral blood, owing to "stress" erythropoiesis and abnormal release of precursors from sites of extramedullary haemopoiesis, the count increasing after splenectomy. The reticulocyte count is elevated but lower than expected for the severity of anaemia because of ineffective erythropoiesis. Inclusions of aggregated α chains are efficiently removed by the spleen and not easily seen. Tear-drop cells and Howell-Jolly bodies (after splenectomy) may be seen.
 
 
 ## Confirmatory test for thalassaemia.
 
-**Say this first:** The confirmatory test for thalassaemia is haemoglobin electrophoresis or high-performance liquid chromatography (HPLC), which shows raised HbF and absent or reduced HbA in β-thalassaemia major, and raised HbA₂ in β-thalassaemia trait.
+The confirmatory test for thalassaemia is haemoglobin electrophoresis or high-performance liquid chromatography (HPLC), which shows raised HbF and absent or reduced HbA in β-thalassaemia major, and raised HbA₂ in β-thalassaemia trait.
 
 In β-thalassaemia major the major red cell haemoglobin is HbF, markedly elevated, and HbA is absent (β⁰/β⁰) or present in small amounts (β⁺ genotypes). In β-thalassaemia minor, HbA₂ (α₂δ₂) is increased to 4% to 8% of the total haemoglobin (normal 2.5% ± 0.3%), reflecting an elevated ratio of δ-chain to β-chain synthesis; HbF is normal or slightly increased. In HbH disease, HbH (β₄) and Hb Barts are demonstrable. α-Thalassaemia trait is diagnosed by exclusion (normal HbA₂, microcytosis) and by DNA analysis (gene deletion studies by multiplex PCR). Molecular analysis of DNA provides definitive diagnosis and permits prenatal diagnosis. Iron deficiency should be excluded, since it may reduce HbA₂ and mask the diagnosis of trait.
 
@@ -10249,14 +10239,14 @@ The diagnosis is confirmed by the following investigations.
 
 ## Which type of abnormal haemoglobin is found in sickle cell anaemia?
 
-**Say this first:** The abnormal haemoglobin in sickle cell anaemia is haemoglobin S (HbS), which results from a point mutation in the β-globin gene that replaces glutamic acid with valine at position 6 of the β-chain.
+The abnormal haemoglobin in sickle cell anaemia is haemoglobin S (HbS), which results from a point mutation in the β-globin gene that replaces glutamic acid with valine at position 6 of the β-chain.
 
 In the homozygous state, almost all the haemoglobin of the red cell is HbS (α₂βˢ₂), with a variable amount of HbF and no HbA. The substitution of a charged glutamate by a hydrophobic valine allows deoxygenated HbS molecules to polymerise into long needlelike fibres, which distort the red cell into a sickle or holly-leaf shape. In heterozygotes (sickle cell trait), about 40% of the haemoglobin is HbS and the rest HbA, which interferes with polymerisation, so the trait is largely asymptomatic. In compound heterozygotes for HbS and HbC (HbSC disease), 50% of the haemoglobin is HbS, giving a symptomatic but somewhat milder disease.
 
 
 ## Clinical features of sickle cell anaemia.
 
-**Say this first:** Sickle cell anaemia presents with chronic haemolytic anaemia and jaundice, punctuated by painful vaso-occlusive crises, and is complicated by splenic autoinfarction, increased susceptibility to infection with encapsulated organisms, and chronic organ damage.
+Sickle cell anaemia presents with chronic haemolytic anaemia and jaundice, punctuated by painful vaso-occlusive crises, and is complicated by splenic autoinfarction, increased susceptibility to infection with encapsulated organisms, and chronic organ damage.
 
 Infants are protected by HbF and become symptomatic at about 5 to 6 months of age.
 
@@ -10280,14 +10270,14 @@ Other. Leg ulcers in adults, hyposthenuria and renal papillary necrosis, growth 
 
 ## How does leg ulcer occur in sickle cell anaemia?
 
-**Say this first:** Leg ulcers in sickle cell anaemia result from chronic vascular stasis and microvascular occlusion by sickled red cells in the subcutaneous tissues of the lower limb, leading to ischaemia and skin breakdown, usually after minor trauma.
+Leg ulcers in sickle cell anaemia result from chronic vascular stasis and microvascular occlusion by sickled red cells in the subcutaneous tissues of the lower limb, leading to ischaemia and skin breakdown, usually after minor trauma.
 
 The skin over the ankles and lower legs has a sluggish circulation, with high venous pressure and slow transit times, which favours deoxygenation, polymerisation of HbS and sickling. Sticky sickled cells, with raised adhesion molecules, adhere to the endothelium and arrest in the microcirculation, which is further compromised by endothelial dysfunction from depletion of nitric oxide by free haemoglobin released in haemolysis (leading to vasoconstriction), inflammation and thrombosis. The resulting ischaemic damage and chronic hypoxia (aggravated by anaemia) impair healing, so minor trauma produces an ulcer. Vascular stagnation in subcutaneous tissues leads to leg ulcers in adult patients, but the complication is rare in children. The ulcers are typically painful, heal slowly and recur.
 
 
 ## Laboratory diagnosis of sickle cell anaemia.
 
-**Say this first:** Sickle cell anaemia is diagnosed by the finding of a normocytic haemolytic anaemia with irreversibly sickled cells on the film, demonstration of sickle haemoglobin by a sickling or solubility test, and confirmation by haemoglobin electrophoresis or HPLC.
+Sickle cell anaemia is diagnosed by the finding of a normocytic haemolytic anaemia with irreversibly sickled cells on the film, demonstration of sickle haemoglobin by a sickling or solubility test, and confirmation by haemoglobin electrophoresis or HPLC.
 
 1. **Blood count:** haemoglobin 6 to 9 g/dL (low), normocytic normochromic; reticulocytosis; neutrophil leukocytosis and thrombocytosis.
 2. **Blood film:** variable numbers of irreversibly sickled cells, target cells (from dehydration), polychromasia, nucleated red cells and Howell-Jolly bodies (autosplenectomy).
@@ -10304,14 +10294,14 @@ The skin over the ankles and lower legs has a sluggish circulation, with high ve
 
 ## What is pancytopenia?
 
-**Say this first:** Pancytopenia is the simultaneous reduction of all three formed elements of blood, namely anaemia, leukopenia (particularly neutropenia) and thrombocytopenia, and it is a laboratory finding that reflects a number of different underlying disorders rather than a diagnosis in itself.
+Pancytopenia is the simultaneous reduction of all three formed elements of blood, namely anaemia, leukopenia (particularly neutropenia) and thrombocytopenia, and it is a laboratory finding that reflects a number of different underlying disorders rather than a diagnosis in itself.
 
 Typical working criteria are haemoglobin below the reference range (often below 10 g/dL), a total leukocyte count below 4 × 10⁹/L and a platelet count below 150 × 10⁹/L (frequently below 100 × 10⁹/L). The reduction may result from decreased production in the marrow (aplastic anaemia, marrow infiltration, megaloblastic anaemia, myelodysplasia), from increased peripheral destruction or sequestration (hypersplenism), or from a combination of these mechanisms. The clinical consequences correspond to the deficiency of each cell line: anaemia produces weakness, pallor and dyspnoea; neutropenia produces frequent and persistent infections, fever and prostration; and thrombocytopenia produces petechiae, ecchymoses and mucosal bleeding. Aplastic anaemia is the prototype of a disorder with pancytopenia and a hypocellular marrow, whereas in leukaemia, myelodysplasia, megaloblastic anaemia and marrow infiltration, the marrow is usually hypercellular or infiltrated.
 
 
 ## Write down the important causes of pancytopenia.
 
-**Say this first:** The important causes of pancytopenia are marrow failure as in aplastic anaemia, marrow infiltration by leukaemia, lymphoma, myeloma or metastatic cancer, megaloblastic anaemia, myelodysplastic neoplasms, and hypersplenism.
+The important causes of pancytopenia are marrow failure as in aplastic anaemia, marrow infiltration by leukaemia, lymphoma, myeloma or metastatic cancer, megaloblastic anaemia, myelodysplastic neoplasms, and hypersplenism.
 
 **A. Decreased marrow production, with a hypocellular marrow**
 
@@ -10335,7 +10325,7 @@ Typical working criteria are haemoglobin below the reference range (often below 
 
 ## How will you diagnose/investigate a case of pancytopenia?
 
-**Say this first:** I would confirm pancytopenia with a complete blood count and a peripheral blood film, then examine the bone marrow by aspiration and trephine biopsy, which is the decisive investigation, and look for the underlying cause with directed tests.
+I would confirm pancytopenia with a complete blood count and a peripheral blood film, then examine the bone marrow by aspiration and trephine biopsy, which is the decisive investigation, and look for the underlying cause with directed tests.
 
 1. **History and examination.** Exposure to drugs, chemicals, radiation, preceding viral illness, diet and alcohol, family history (Fanconi anaemia: short stature, thumb and radial anomalies, skin pigmentation); symptoms of anaemia, infection and bleeding; and enlargement of the spleen, liver or lymph nodes. Splenomegaly characteristically is absent in aplastic anaemia, and its presence should lead to question that diagnosis.
 2. **Blood count and film.** Degree of cytopenia and indices (normocytic or macrocytic red cells, low reticulocyte count); search the film for blasts, dysplastic cells, nucleated red cells, hypersegmented neutrophils, teardrop cells, or parasites.
@@ -10345,7 +10335,7 @@ Typical working criteria are haemoglobin below the reference range (often below 
 
 ## Blood and bone marrow picture of aplastic anaemia.
 
-**Say this first:** Aplastic anaemia shows pancytopenia in the blood, with normocytic or slightly macrocytic normochromic red cells and a low reticulocyte count, and a markedly hypocellular marrow in which haemopoietic cells are largely replaced by fat.
+Aplastic anaemia shows pancytopenia in the blood, with normocytic or slightly macrocytic normochromic red cells and a low reticulocyte count, and a markedly hypocellular marrow in which haemopoietic cells are largely replaced by fat.
 
 Blood. Anaemia, leukopenia (particularly granulocytopenia with relative lymphocytosis) and thrombocytopenia. The red cells are usually slightly macrocytic and normochromic; reticulocytopenia is the rule. There are no abnormal or immature cells, and no nucleated red cells or teardrop cells. The ESR is raised.
 
@@ -10354,21 +10344,21 @@ Bone marrow. The marrow is markedly hypocellular, largely devoid of haemopoietic
 
 ## Why does pancytopenia occur in acute leukaemia?
 
-**Say this first:** Pancytopenia in acute leukaemia occurs because the proliferating leukaemic blasts replace and suppress the normal haemopoietic cells in the marrow, so that production of red cells, normal granulocytes and platelets all fail.
+Pancytopenia in acute leukaemia occurs because the proliferating leukaemic blasts replace and suppress the normal haemopoietic cells in the marrow, so that production of red cells, normal granulocytes and platelets all fail.
 
 The neoplastic cells accumulate in the marrow, crowd out and displace normal haemopoietic precursors and the supporting stroma, and produce inhibitory cytokines and factors that suppress normal stem cell proliferation and differentiation. The result is anaemia, neutropenia (despite a possibly high total white cell count made up of blasts) and thrombocytopenia. These are responsible for the presenting manifestations of acute leukaemia: fatigue and pallor, recurrent infections and fever, and bleeding (petechiae, epistaxis, gum bleeding), with additional platelet consumption in DIC in acute promyelocytic leukaemia. In "aleukaemic" or subleukaemic leukaemia the peripheral count shows pancytopenia with few or no circulating blasts, which may mimic aplastic anaemia, and the distinction depends on the marrow. Treatment with chemotherapy further depresses the marrow.
 
 
 ## Why does pancytopenia occur in some cases of splenomegaly?
 
-**Say this first:** Pancytopenia in splenomegaly is due to hypersplenism, in which the enlarged spleen sequesters and destroys blood cells and expands the plasma volume, so that all cell counts fall while the marrow is normal or hyperplastic.
+Pancytopenia in splenomegaly is due to hypersplenism, in which the enlarged spleen sequesters and destroys blood cells and expands the plasma volume, so that all cell counts fall while the marrow is normal or hyperplastic.
 
 The red pulp of an enlarged spleen sequesters a large fraction of the circulating cells: the spleen normally holds 30% to 35% of the body's platelets, but this can rise to 80% to 90% when the spleen is enlarged. Red cells and granulocytes are similarly pooled, and these cells are exposed to prolonged contact with macrophages, which phagocytose and destroy them (the splenic environment is also hostile to metabolism: low glucose and low pH). In addition, splenic enlargement expands the plasma volume, causing a dilutional fall of the haemoglobin. The marrow is normocellular or hyperplastic as it responds to peripheral destruction, a point that distinguishes this from marrow failure. The criteria of hypersplenism are cytopenia, splenomegaly, a cellular marrow and correction after splenectomy. Examples are portal hypertension from cirrhosis, myelofibrosis, Gaucher disease, lymphomas, Felty syndrome, malaria and kala-azar.
 
 
 ## How will you differentiate aplastic anaemia from subleukaemic acute leukaemia in the laboratory?
 
-**Say this first:** The distinction rests on the bone marrow: aplastic anaemia has a hypocellular fatty marrow without blasts, whereas subleukaemic acute leukaemia has a hypercellular marrow packed with leukaemic blasts, even though both show pancytopenia with few or no blasts in the blood.
+The distinction rests on the bone marrow: aplastic anaemia has a hypocellular fatty marrow without blasts, whereas subleukaemic acute leukaemia has a hypercellular marrow packed with leukaemic blasts, even though both show pancytopenia with few or no blasts in the blood.
 
 | Feature | Aplastic anaemia | Subleukaemic (aleukaemic) acute leukaemia |
 |---|---|---|
@@ -10442,14 +10432,14 @@ The principal differentials are aleukaemic acute leukaemia, myelodysplastic neop
 
 ## Define hemorrhagic disorders with example.
 
-**Say this first:** Haemorrhagic disorders (haemorrhagic diatheses) are conditions characterised by abnormal or excessive bleeding, spontaneously or after minor trauma, due to defects in the blood vessel wall, in platelets, or in the coagulation system, alone or in combination.
+Haemorrhagic disorders (haemorrhagic diatheses) are conditions characterised by abnormal or excessive bleeding, spontaneously or after minor trauma, due to defects in the blood vessel wall, in platelets, or in the coagulation system, alone or in combination.
 
 Haemostasis depends on the integrity of the vessel wall, adequate numbers and function of platelets, and the coagulation cascade with its regulating fibrinolytic system. Failure of any component produces bleeding, with a characteristic pattern. Examples are: vessel wall disorders (scurvy, hereditary haemorrhagic telangiectasia, Henoch-Schönlein purpura); platelet disorders (immune thrombocytopenic purpura, aplastic anaemia, Glanzmann thrombasthenia, aspirin effect); and coagulation disorders (haemophilia A and B, von Willebrand disease, vitamin K deficiency, liver disease and disseminated intravascular coagulation).
 
 
 ## Classify haemorrhagic disorder.
 
-**Say this first:** Haemorrhagic disorders are classified according to the component of haemostasis that is defective into vascular, platelet and coagulation disorders.
+Haemorrhagic disorders are classified according to the component of haemostasis that is defective into vascular, platelet and coagulation disorders.
 
 | Group | Subtypes and examples |
 |---|---|
@@ -10461,7 +10451,7 @@ Haemostasis depends on the integrity of the vessel wall, adequate numbers and fu
 
 ## Approach to diagnosing a patient with a bleeding disorder.
 
-**Say this first:** I would approach the patient by taking a detailed bleeding history, noting the site and pattern of the bleeding, examining for petechiae or haematomas and signs of an underlying disease, and then performing screening tests (platelet count, PT and PTT) followed by specific tests.
+I would approach the patient by taking a detailed bleeding history, noting the site and pattern of the bleeding, examining for petechiae or haematomas and signs of an underlying disease, and then performing screening tests (platelet count, PT and PTT) followed by specific tests.
 
 History. Age at onset, the pattern (spontaneous or after trauma, surgery, dental extraction), sites of bleeding, family history (X-linked inheritance in haemophilia, autosomal dominant in von Willebrand disease), drugs (aspirin, NSAIDs, warfarin, heparin, antibiotics), alcohol, liver or renal disease, and menstrual history.
 
@@ -10474,7 +10464,7 @@ Specific tests. Mixing studies, factor assays (VIII, IX), von Willebrand factor 
 
 ## What are the causes of haemorrhagic disorders?
 
-**Say this first:** The causes of haemorrhagic disorders are increased fragility of vessels, platelet deficiency or dysfunction, and derangement of coagulation, alone or in combination.
+The causes of haemorrhagic disorders are increased fragility of vessels, platelet deficiency or dysfunction, and derangement of coagulation, alone or in combination.
 
 1. **Vessel wall abnormalities:** infections (meningococcaemia, other septicaemias, infective endocarditis, rickettsioses) causing vasculitis or DIC; drug reactions (immune-complex hypersensitivity vasculitis); scurvy and Ehlers-Danlos syndrome (collagen defects); acquired fragility in older adults and Cushing syndrome; Henoch-Schönlein purpura; hereditary haemorrhagic telangiectasia; and perivascular amyloidosis. The platelet count and the PT and PTT are normal.
 2. **Platelet disorders:**
@@ -10490,14 +10480,14 @@ Specific tests. Mixing studies, factor assays (VIII, IX), von Willebrand factor 
 
 ## What do you mean by coagulation disorders?
 
-**Say this first:** Coagulation disorders are bleeding disorders caused by a quantitative or qualitative deficiency of one or more of the plasma clotting factors, or by the presence of inhibitors, resulting in defective fibrin clot formation.
+Coagulation disorders are bleeding disorders caused by a quantitative or qualitative deficiency of one or more of the plasma clotting factors, or by the presence of inhibitors, resulting in defective fibrin clot formation.
 
 Bleeding due to coagulation factor deficiencies commonly manifests as large post-traumatic ecchymoses or haematomas, or prolonged bleeding from a laceration or after a surgical procedure; bleeding often occurs in the gastrointestinal and urinary tracts and in weight-bearing joints (haemarthrosis). Petechiae are absent, unlike in thrombocytopenia. Typical stories include the patient who oozes blood for days after a tooth extraction or who develops haemarthrosis after minor stress on a knee joint. Hereditary deficiencies typically affect a single clotting factor (haemophilia A, factor VIII; haemophilia B, factor IX; von Willebrand disease). Acquired deficiencies usually involve multiple factors, from decreased synthesis (vitamin K deficiency, liver disease), consumption (DIC), or inhibitors, such as autoantibodies to factor VIII or heparin and warfarin therapy.
 
 
 ## Classify coagulation disorders.
 
-**Say this first:** Coagulation disorders are classified as inherited or acquired, depending on whether the factor deficiency is genetic or arises from another disease or from drugs.
+Coagulation disorders are classified as inherited or acquired, depending on whether the factor deficiency is genetic or arises from another disease or from drugs.
 
 **A. Inherited (hereditary) coagulation disorders**
 
@@ -10516,21 +10506,21 @@ Bleeding due to coagulation factor deficiencies commonly manifests as large post
 
 ## What is bleeding time?
 
-**Say this first:** Bleeding time is the time taken for bleeding to stop from a standardised skin puncture or incision, and it measures the function of platelets and their interaction with the vessel wall, that is, the primary haemostatic plug.
+Bleeding time is the time taken for bleeding to stop from a standardised skin puncture or incision, and it measures the function of platelets and their interaction with the vessel wall, that is, the primary haemostatic plug.
 
 In the Duke method a small puncture is made in the earlobe or fingertip, and blood is blotted every 30 seconds until bleeding stops; in the Ivy method a sphygmomanometer cuff is inflated to 40 mmHg on the forearm and a puncture or standardised incision (template method) is made. The bleeding time is prolonged in thrombocytopenia, qualitative platelet defects (Glanzmann thrombasthenia, Bernard-Soulier syndrome, aspirin), von Willebrand disease and some vascular disorders, and it is normal in coagulation factor deficiencies such as haemophilia. It is time-consuming, hard to standardise and an unreliable predictor of surgical bleeding, so the older bleeding time test has been discarded in many centres and replaced by platelet function analysis.
 
 
 ## What is clotting time?
 
-**Say this first:** Clotting time is the time taken for freshly drawn venous whole blood to clot in a glass tube under standard conditions, and it is a crude test of the overall intrinsic coagulation pathway.
+Clotting time is the time taken for freshly drawn venous whole blood to clot in a glass tube under standard conditions, and it is a crude test of the overall intrinsic coagulation pathway.
 
 In the Lee-White method, 2 mL of venous blood is drawn into a clean glass tube at 37°C, and the tube is tilted every 30 seconds until the blood no longer flows; the elapsed time is the clotting time. It is prolonged when there is a marked deficiency of factors of the intrinsic and common pathways (factors VIII, IX, XI, XII, X, V, II) or fibrinogen, in the presence of heparin, and in DIC; it is insensitive and normal in mild deficiencies (factor levels must fall below about 1% to 5% for it to be prolonged), and for this reason it has been superseded by the PTT, which is more sensitive and standardised. It is normal in thrombocytopenia and vascular disorders.
 
 
 ## Normal limits of bleeding time and clotting time.
 
-**Say this first:** The normal bleeding time is about 2 to 7 minutes by the Duke and Ivy methods, and the normal whole blood clotting time is about 4 to 10 minutes by the Lee-White method.
+The normal bleeding time is about 2 to 7 minutes by the Duke and Ivy methods, and the normal whole blood clotting time is about 4 to 10 minutes by the Lee-White method.
 
 | Test | Method | Normal range |
 |---|---|---|
@@ -10544,7 +10534,7 @@ Reference ranges vary with the method and the laboratory. Related tests have the
 
 ## Tests / screening tests / investigations for bleeding (haemorrhagic) disorders.
 
-**Say this first:** The screening tests for bleeding disorders are the platelet count, the prothrombin time (PT) and the partial thromboplastin time (PTT), supplemented by the bleeding time or platelet function tests, thrombin time and fibrinogen, and followed by specific tests according to the abnormality.
+The screening tests for bleeding disorders are the platelet count, the prothrombin time (PT) and the partial thromboplastin time (PTT), supplemented by the bleeding time or platelet function tests, thrombin time and fibrinogen, and followed by specific tests according to the abnormality.
 
 1. **Platelet count and peripheral blood film** (150 to 350 × 10³/µL; confirm abnormal counts by film, since platelet clumping causes spurious thrombocytopenia).
 2. **Prothrombin time (PT):** tests the extrinsic and common pathways (factors V, VII, X, prothrombin and fibrinogen); prolonged in vitamin K deficiency, warfarin therapy, liver disease and DIC.
@@ -10558,14 +10548,14 @@ Reference ranges vary with the method and the laboratory. Related tests have the
 
 ## Two causes of raised prothrombin time.
 
-**Say this first:** Two important causes of a raised prothrombin time are vitamin K deficiency (or oral warfarin therapy) and severe liver disease.
+Two important causes of a raised prothrombin time are vitamin K deficiency (or oral warfarin therapy) and severe liver disease.
 
 The PT assesses the extrinsic and common pathways, and it is prolonged by deficiency or dysfunction of factors V, VII, X, prothrombin and fibrinogen. Warfarin inhibits the vitamin K-dependent γ-carboxylation of factors II, VII, IX and X (and proteins C and S), and the PT, which is sensitive to the short-lived factor VII, is the test used to monitor therapy (expressed as the INR). Vitamin K deficiency occurs in obstructive jaundice, malabsorption and with antibiotic therapy. In liver disease, there is reduced synthesis of nearly all coagulation factors. The prolongation of vitamin K deficiency is corrected by parenteral vitamin K, whereas that of hepatocellular failure is not. Other causes are DIC (consumption), factor VII deficiency, and a lack of fibrinogen.
 
 
 ## Normal findings in ITP, haemophilia and DIC in haemorrhagic screening tests.
 
-**Say this first:** In ITP only the platelet count (and bleeding time) is abnormal, in haemophilia only the PTT is prolonged, and in DIC the platelet count is low and the PT, PTT and thrombin time are all prolonged with low fibrinogen and raised D-dimers.
+In ITP only the platelet count (and bleeding time) is abnormal, in haemophilia only the PTT is prolonged, and in DIC the platelet count is low and the PT, PTT and thrombin time are all prolonged with low fibrinogen and raised D-dimers.
 
 | Test | ITP | Haemophilia A / B | DIC |
 |---|---|---|---|
@@ -10583,14 +10573,14 @@ The normal findings in each disorder are the tests that remain normal, which are
 
 ## What is von Willebrand factor?
 
-**Say this first:** Von Willebrand factor (vWF) is a large multimeric plasma glycoprotein, synthesised by endothelial cells and megakaryocytes, that promotes the adhesion of platelets to the subendothelial matrix and stabilises coagulation factor VIII in the circulation.
+Von Willebrand factor (vWF) is a large multimeric plasma glycoprotein, synthesised by endothelial cells and megakaryocytes, that promotes the adhesion of platelets to the subendothelial matrix and stabilises coagulation factor VIII in the circulation.
 
 vWF is made by endothelial cells and by megakaryocytes, which are the source of the vWF in platelet α-granules. Secreted into the circulation, it exists as multimers containing up to 100 subunits, which can exceed 20 × 10⁶ daltons in mass; some is deposited in the subendothelial matrix. The largest multimers are the most active. Factor VIII circulates bound to vWF, which increases its half-life from about 2.4 to 12 hours. vWF is cleaved and regulated by the metalloprotease ADAMTS13; deficiency of the latter causes thrombotic thrombocytopenic purpura. Its deficiency or dysfunction causes von Willebrand disease, the commonest inherited bleeding disorder.
 
 
 ## Functions of von Willebrand factor.
 
-**Say this first:** The two main functions of vWF are to mediate platelet adhesion to the subendothelial matrix at sites of vascular injury, and to carry and stabilise factor VIII in the plasma.
+The two main functions of vWF are to mediate platelet adhesion to the subendothelial matrix at sites of vascular injury, and to carry and stabilise factor VIII in the plasma.
 
 1. **Platelet adhesion:** the most important haemostatic function. It forms a bridge between platelet glycoprotein Ib/IX and subendothelial components such as collagen, anchoring platelets to the injured vessel wall.
 2. **Platelet aggregation:** vWF can promote aggregation by binding to activated glycoprotein IIb/IIIa integrins, which is particularly important under high shear stress, as in small vessels.
@@ -10602,21 +10592,21 @@ Function is measured by the ristocetin cofactor (agglutination) assay: ristoceti
 
 ## Why are both bleeding time and clotting time prolonged in von Willebrand disease?
 
-**Say this first:** Both are prolonged because vWF has a double function: it is required for platelet adhesion (so its deficiency prolongs the bleeding time) and it stabilises factor VIII (so its deficiency lowers factor VIII and impairs the intrinsic pathway, prolonging the clotting time and PTT).
+Both are prolonged because vWF has a double function: it is required for platelet adhesion (so its deficiency prolongs the bleeding time) and it stabilises factor VIII (so its deficiency lowers factor VIII and impairs the intrinsic pathway, prolonging the clotting time and PTT).
 
 The platelet count in von Willebrand disease is normal, but platelet function is defective, because without vWF platelets cannot adhere normally to the exposed subendothelium; the primary haemostatic plug forms slowly and the bleeding time is prolonged. The ristocetin cofactor activity is reduced. In the plasma, vWF binds factor VIII and protects it from degradation, so a deficiency of vWF decreases the stability of factor VIII, whose level falls (very markedly in type 3), which prolongs the PTT. The whole-blood clotting time, a crude test, is prolonged only when the factor VIII level is markedly reduced, as in severe type 3 disease; in most patients with mild type 1 disease it is normal, and the PTT may be only borderline. The PT is normal.
 
 
 ## What is haemophilia?
 
-**Say this first:** Haemophilia is a group of X-linked recessive inherited bleeding disorders caused by deficiency of coagulation factor VIII (haemophilia A) or factor IX (haemophilia B), characterised by haemarthroses and bleeding into soft tissues after minor trauma.
+Haemophilia is a group of X-linked recessive inherited bleeding disorders caused by deficiency of coagulation factor VIII (haemophilia A) or factor IX (haemophilia B), characterised by haemarthroses and bleeding into soft tissues after minor trauma.
 
 Haemophilia A, the most common hereditary disease associated with life-threatening bleeding, results from mutations in the gene encoding factor VIII, an essential cofactor for factor IX in the activation of factor X. It is inherited as an X-linked recessive trait and therefore affects males, and rarely females. Haemophilia B (Christmas disease) results from mutations of the gene encoding factor IX and is clinically indistinguishable. The severity correlates with the factor level: below 1% of normal is severe, 2% to 5% moderately severe and 6% to 50% mild. The clinical features are easy bruising, massive haemorrhage after trauma or surgery and "spontaneous" bleeds in joints (haemarthroses leading to disabling deformity) and muscles; petechiae are absent. The PTT is prolonged and the PT is normal.
 
 
 ## Classify haemophilia.
 
-**Say this first:** Haemophilia is classified by the factor deficient into haemophilia A (factor VIII), haemophilia B (factor IX) and, less commonly, haemophilia C (factor XI), and by severity according to the residual factor activity.
+Haemophilia is classified by the factor deficient into haemophilia A (factor VIII), haemophilia B (factor IX) and, less commonly, haemophilia C (factor XI), and by severity according to the residual factor activity.
 
 | Basis | Classification |
 |---|---|
@@ -10629,7 +10619,7 @@ Von Willebrand disease, though it also lowers factor VIII, is classified separat
 
 ## Give the laboratory diagnosis/findings of hemophilia.
 
-**Say this first:** The laboratory hallmark of haemophilia is a prolonged partial thromboplastin time (PTT) with a normal prothrombin time, platelet count and bleeding time, and the diagnosis is confirmed by a specific assay showing reduced factor VIII (haemophilia A) or factor IX (haemophilia B).
+The laboratory hallmark of haemophilia is a prolonged partial thromboplastin time (PTT) with a normal prothrombin time, platelet count and bleeding time, and the diagnosis is confirmed by a specific assay showing reduced factor VIII (haemophilia A) or factor IX (haemophilia B).
 
 1. **Screening tests (haemostatic profile).**
 
@@ -10647,14 +10637,14 @@ Von Willebrand disease, though it also lowers factor VIII, is classified separat
 
 ## What do you mean by DIC?
 
-**Say this first:** Disseminated intravascular coagulation (DIC) is an acute, subacute or chronic thrombohaemorrhagic disorder characterised by excessive activation of coagulation factors and the formation of thrombi in the microvasculature; consumption of platelets and clotting factors and secondary fibrinolysis lead to both organ ischaemia and bleeding.
+Disseminated intravascular coagulation (DIC) is an acute, subacute or chronic thrombohaemorrhagic disorder characterised by excessive activation of coagulation factors and the formation of thrombi in the microvasculature; consumption of platelets and clotting factors and secondary fibrinolysis lead to both organ ischaemia and bleeding.
 
 DIC is not a primary disease but a secondary complication of a variety of disorders. It may be acute, subacute or chronic, and the coagulopathy is sometimes localised to a specific organ. Two major mechanisms trigger it: release of tissue factor or other procoagulants into the circulation, and widespread endothelial injury. The thrombotic diathesis consumes platelets, fibrin and coagulation factors and, secondarily, activates fibrinolysis. The commonest associations are obstetric complications, malignant neoplasms, sepsis and major trauma. The consequences are microvascular thrombosis with ischaemia and microangiopathic haemolytic anaemia, and a bleeding diathesis from the consumption of platelets and factors and the effects of fibrin degradation products.
 
 
 ## Give the laboratory diagnosis of DIC.
 
-**Say this first:** The laboratory diagnosis of DIC rests on thrombocytopenia, prolonged PT and PTT, low fibrinogen and raised fibrin degradation products, particularly D-dimers, in a patient with a recognised predisposing condition.
+The laboratory diagnosis of DIC rests on thrombocytopenia, prolonged PT and PTT, low fibrinogen and raised fibrin degradation products, particularly D-dimers, in a patient with a recognised predisposing condition.
 
 | Test | Finding in DIC | Basis |
 |---|---|---|
@@ -10673,7 +10663,7 @@ The diagnosis is based on clinical observation of the predisposing disorder toge
 
 ## Write a short note on ITP.
 
-**Say this first:** Immune thrombocytopenic purpura (ITP) is a bleeding disorder caused by autoantibody-mediated destruction of platelets, in which the spleen is the major site of platelet removal, and which presents with isolated thrombocytopenia and mucocutaneous bleeding with a normal PT and PTT.
+Immune thrombocytopenic purpura (ITP) is a bleeding disorder caused by autoantibody-mediated destruction of platelets, in which the spleen is the major site of platelet removal, and which presents with isolated thrombocytopenia and mucocutaneous bleeding with a normal PT and PTT.
 
 **Types.** Chronic ITP, mainly in adult women under 40 (female-to-male ratio 3:1), and acute ITP, mainly in children. It is primary (idiopathic) when no cause is found, or secondary to systemic lupus erythematosus, HIV infection, or B-cell neoplasms such as CLL. The diagnosis of primary ITP is made after secondary causes are excluded.
 
@@ -10688,14 +10678,14 @@ The diagnosis is based on clinical observation of the predisposing disorder toge
 
 ## How are platelets destroyed in peripheral blood in ITP?
 
-**Say this first:** In ITP, IgG autoantibodies bind to platelet membrane glycoproteins and opsonise the platelets, which are then recognised through Fc receptors and phagocytosed by macrophages of the spleen, so that the platelet life span is shortened from 7 to 10 days to a few hours.
+In ITP, IgG autoantibodies bind to platelet membrane glycoproteins and opsonise the platelets, which are then recognised through Fc receptors and phagocytosed by macrophages of the spleen, so that the platelet life span is shortened from 7 to 10 days to a few hours.
 
 Autoantibodies against platelet glycoproteins IIb/IIIa or Ib/IX can be demonstrated in the plasma and bound to the platelet surface in about 80% of patients. As in autoimmune haemolytic anaemia, the antiplatelet antibodies, mostly IgG, act as opsonins recognised by IgG Fc receptors on phagocytes, leading to increased platelet destruction. The thrombocytopenia is usually markedly improved by splenectomy, which shows that the spleen is the principal site of removal of opsonised platelets, and may also remove a source of autoantibody (the splenic red pulp is rich in plasma cells). The antibodies may also bind and damage megakaryocytes, so that platelet production falls and exacerbates the thrombocytopenia. The marrow compensates with an increase in megakaryocytes, many of which are immature, and by releasing large platelets.
 
 
 ## How is ITP diagnosed in the laboratory?
 
-**Say this first:** ITP is diagnosed in the laboratory by the finding of isolated thrombocytopenia with large platelets on the blood film, normal PT and PTT, and a bone marrow with normal or increased megakaryocytes, after the exclusion of other causes of thrombocytopenia.
+ITP is diagnosed in the laboratory by the finding of isolated thrombocytopenia with large platelets on the blood film, normal PT and PTT, and a bone marrow with normal or increased megakaryocytes, after the exclusion of other causes of thrombocytopenia.
 
 1. **Blood count and film.** A low platelet count (below 150,000/µL; spontaneous bleeding when below 20,000/µL), with normal haemoglobin and white cell count (unless there has been blood loss), unless there is associated autoimmune haemolysis (Evans syndrome). The film shows reduced platelets with large platelets (megathrombocytes), which are a sign of accelerated thrombopoiesis; platelet clumping and spurious thrombocytopenia must be excluded.
 2. **Coagulation screening.** Prothrombin time and partial thromboplastin time are normal (as is the thrombin time and fibrinogen); the bleeding time is prolonged.
@@ -10706,7 +10696,7 @@ Autoantibodies against platelet glycoproteins IIb/IIIa or Ib/IX can be demonstra
 
 ## What are the causes of thrombocytopenia?
 
-**Say this first:** The causes of thrombocytopenia fall into four categories: decreased platelet production, decreased platelet survival, sequestration, and dilution.
+The causes of thrombocytopenia fall into four categories: decreased platelet production, decreased platelet survival, sequestration, and dilution.
 
 1. **Decreased production**
 
@@ -10928,7 +10918,7 @@ The result is spontaneous bleeding from multiple sites (skin petechiae and ecchy
 
 ## Classify blood groups.
 
-**Say this first:** Blood groups are classified according to the antigenic systems on the red cell surface, of which the ABO and Rh systems are by far the most important in transfusion practice, and many minor systems also exist.
+Blood groups are classified according to the antigenic systems on the red cell surface, of which the ABO and Rh systems are by far the most important in transfusion practice, and many minor systems also exist.
 
 A blood group system is a set of red cell membrane antigens controlled by alleles at a single genetic locus (or by closely linked loci). Over 30 systems are recognised.
 
@@ -10940,7 +10930,7 @@ A blood group system is a set of red cell membrane antigens controlled by allele
 
 ## Name the ABO and Rh blood groups with their agglutinins.
 
-**Say this first:** The ABO groups are A, B, AB and O; each person has the agglutinin (antibody) against the ABO antigen that he lacks, so group A has anti-B, group B has anti-A, group AB has neither and group O has both; the Rh groups are Rh-positive and Rh-negative, and anti-D appears only after sensitisation.
+The ABO groups are A, B, AB and O; each person has the agglutinin (antibody) against the ABO antigen that he lacks, so group A has anti-B, group B has anti-A, group AB has neither and group O has both; the Rh groups are Rh-positive and Rh-negative, and anti-D appears only after sensitisation.
 
 | Blood group | Antigen on red cells | Naturally occurring agglutinins (antibodies) in plasma |
 |---|---|---|
@@ -10956,14 +10946,14 @@ The natural anti-A and anti-B antibodies are chiefly IgM, preformed (probably in
 
 ## What do you mean by cross matching?
 
-**Say this first:** Cross-matching is the laboratory test, performed before transfusion, in which the recipient's serum is mixed with the donor's red cells (and the reverse) to confirm that the donor blood is compatible with the recipient and will not be destroyed by the recipient's antibodies.
+Cross-matching is the laboratory test, performed before transfusion, in which the recipient's serum is mixed with the donor's red cells (and the reverse) to confirm that the donor blood is compatible with the recipient and will not be destroyed by the recipient's antibodies.
 
 It is the final safeguard in the compatibility testing, after the ABO and Rh grouping of donor and recipient and the screening of the recipient's serum for unexpected (irregular) antibodies. In the **major cross-match**, the recipient's serum is mixed with the donor's red cells; agglutination or haemolysis indicates that the recipient has antibodies against the donor cells and the unit is incompatible. In the **minor cross-match**, the donor's plasma is mixed with the recipient's red cells (largely replaced by antibody screening of donors). A compatible cross-match shows no agglutination or haemolysis in any phase.
 
 
 ## How is cross matching performed?
 
-**Say this first:** Cross-matching is performed by mixing recipient serum with a suspension of donor red cells and testing for agglutination or haemolysis in successive phases, namely saline at room temperature, incubation at 37°C in albumin or low-ionic-strength solution, and finally the antiglobulin (Coombs) phase.
+Cross-matching is performed by mixing recipient serum with a suspension of donor red cells and testing for agglutination or haemolysis in successive phases, namely saline at room temperature, incubation at 37°C in albumin or low-ionic-strength solution, and finally the antiglobulin (Coombs) phase.
 
 1. **Preliminary steps:** ABO and Rh grouping of the recipient (forward grouping with anti-A and anti-B sera, and reverse grouping with known A and B cells) and of the donor unit; the recipient's serum is screened for irregular antibodies.
 2. **Preparation:** the recipient's serum is separated from a freshly drawn clotted sample; a 2% to 5% suspension of donor red cells in saline is made from a segment of the donor bag.
@@ -10979,14 +10969,14 @@ It is the final safeguard in the compatibility testing, after the ABO and Rh gro
 
 ## Why is cross matching essential for blood transfusion?
 
-**Say this first:** Cross-matching is essential to prevent a haemolytic transfusion reaction, because it detects incompatibility, including that caused by unexpected antibodies and clerical or labelling errors, which grouping alone may miss.
+Cross-matching is essential to prevent a haemolytic transfusion reaction, because it detects incompatibility, including that caused by unexpected antibodies and clerical or labelling errors, which grouping alone may miss.
 
 ABO grouping and Rh typing of donor and recipient do not exclude all incompatibilities. The recipient may carry irregular alloantibodies, formed after previous transfusions or pregnancy, against minor red cell antigens (Kell, Duffy, Kidd, Rh variants), and such antibodies, usually IgG, can cause delayed or even severe haemolysis. Cross-matching also provides a final check against errors of patient identification or sample labelling, the commonest cause of ABO-incompatible transfusion. Acute haemolytic reactions occur when preformed, high-affinity "natural" IgM antibodies against A or B antigens bind to donor red cells and fix complement, producing complement-mediated intravascular haemolysis and haemoglobinuria, with fever, shaking chills and flank pain; in severe cases there is DIC, shock, acute renal failure and occasionally death. Cross-matching thus protects the patient from these life-threatening complications, and avoids wasting scarce blood by transfusing cells that will be rapidly destroyed.
 
 
 ## Mention 4 important hematological changes of stored blood.
 
-**Say this first:** The important changes in stored blood, collectively called the storage lesion, are a fall in pH, a rise in plasma potassium, depletion of 2,3-DPG and ATP in the red cells, and loss of the viability of platelets, white cells and labile coagulation factors.
+The important changes in stored blood, collectively called the storage lesion, are a fall in pH, a rise in plasma potassium, depletion of 2,3-DPG and ATP in the red cells, and loss of the viability of platelets, white cells and labile coagulation factors.
 
 1. **Fall in pH (acidosis):** continued glycolysis produces lactic and pyruvic acids, and the pH of stored blood falls from about 7.1 to 6.5 over 3 weeks.
 2. **Rise in plasma potassium:** potassium leaks from red cells because the Na⁺/K⁺ pump fails in the cold, causing high plasma potassium (up to 20 to 30 mmol/L at 3 weeks), which may be hazardous in massive transfusion, neonates or renal failure.
@@ -10997,7 +10987,7 @@ ABO grouping and Rh typing of donor and recipient do not exclude all incompatibi
 
 ## What are the indications of blood transfusion?
 
-**Say this first:** Blood transfusion is indicated to restore oxygen-carrying capacity or blood volume in acute haemorrhage and severe symptomatic anaemia, and to replace platelets or coagulation factors when these are deficient and bleeding is present or likely.
+Blood transfusion is indicated to restore oxygen-carrying capacity or blood volume in acute haemorrhage and severe symptomatic anaemia, and to replace platelets or coagulation factors when these are deficient and bleeding is present or likely.
 
 **Red cells (whole blood or packed red cells)**
 
@@ -11023,7 +11013,7 @@ Transfusion is not indicated for anaemia that can be corrected with haematinics 
 
 ## Blood components used in transfusion.
 
-**Say this first:** Whole blood is separated into components so that each patient receives only what is needed: red cell concentrates, platelet concentrates, fresh frozen plasma, cryoprecipitate and others.
+Whole blood is separated into components so that each patient receives only what is needed: red cell concentrates, platelet concentrates, fresh frozen plasma, cryoprecipitate and others.
 
 | Component | Contents and use |
 |---|---|
@@ -11041,7 +11031,7 @@ Transfusion is not indicated for anaemia that can be corrected with haematinics 
 
 ## Screening tests for safe blood transfusion / diseases for which blood must be screened.
 
-**Say this first:** Every unit of donor blood must be screened for transfusion-transmissible infections, namely HIV, hepatitis B, hepatitis C, syphilis and malaria, in addition to ABO and Rh grouping and antibody screening.
+Every unit of donor blood must be screened for transfusion-transmissible infections, namely HIV, hepatitis B, hepatitis C, syphilis and malaria, in addition to ABO and Rh grouping and antibody screening.
 
 1. **Infection screening (mandatory):** HIV-1 and HIV-2 (antibody/antigen combination assay, and nucleic acid testing where available); hepatitis B surface antigen (HBsAg); hepatitis C antibody (anti-HCV); syphilis (VDRL/RPR with TPHA or treponemal assay); malaria parasite (film or rapid antigen test, in endemic areas).
 2. **Additional tests, according to regional policy:** anti-HBc, nucleic acid testing for HIV, HCV and HBV, CMV antibodies (for neonates and immunocompromised patients), HTLV-I/II, West Nile virus, Trypanosoma cruzi (Chagas disease), and babesia in endemic areas.
@@ -11052,7 +11042,7 @@ Safety is also assured by donor selection (history and examination, haemoglobin 
 
 ## Contraindications of blood transfusion.
 
-**Say this first:** There are no absolute contraindications to transfusion in life-threatening haemorrhage, but transfusion is relatively contraindicated when the anaemia can be corrected with specific haematinic therapy, and special precautions are required in patients at risk of volume overload or of severe reactions.
+There are no absolute contraindications to transfusion in life-threatening haemorrhage, but transfusion is relatively contraindicated when the anaemia can be corrected with specific haematinic therapy, and special precautions are required in patients at risk of volume overload or of severe reactions.
 
 1. **Anaemia correctable by specific therapy:** iron, vitamin B₁₂ or folate deficiency, in a patient who is stable, since transfusion carries risks and these patients respond to specific therapy.
 2. **Cardiac failure, pulmonary oedema, severe chronic anaemia with hypervolaemia and renal failure:** risk of circulatory overload; if transfusion is essential, packed cells given slowly with a diuretic.
@@ -11065,7 +11055,7 @@ Safety is also assured by donor selection (history and examination, haemoglobin 
 
 ## Mention the diseases transmitted by blood transfusion.
 
-**Say this first:** The principal diseases transmitted by blood transfusion are viral infections (HIV, hepatitis B and C), syphilis, malaria and bacterial contamination, and they are the reason all donor blood is screened.
+The principal diseases transmitted by blood transfusion are viral infections (HIV, hepatitis B and C), syphilis, malaria and bacterial contamination, and they are the reason all donor blood is screened.
 
 Virtually any infectious agent can be transmitted through blood products, but bacterial and viral infections are the dominant culprits.
 
@@ -11077,7 +11067,7 @@ Virtually any infectious agent can be transmitted through blood products, but ba
 
 ## Hazards / immediate and delayed complications of blood transfusion.
 
-**Say this first:** The complications of blood transfusion are divided into immediate (acute) reactions, most of which are immunological, such as febrile, allergic and haemolytic reactions and TRALI, and delayed complications, such as delayed haemolysis, infections, iron overload and alloimmunisation.
+The complications of blood transfusion are divided into immediate (acute) reactions, most of which are immunological, such as febrile, allergic and haemolytic reactions and TRALI, and delayed complications, such as delayed haemolysis, infections, iron overload and alloimmunisation.
 
 **Immediate (within 24 hours)**
 
@@ -11098,7 +11088,7 @@ Virtually any infectious agent can be transmitted through blood products, but ba
 
 ## Write a short note on Rh-incompatibility.
 
-**Say this first:** Rh incompatibility arises when an Rh-negative mother carrying an Rh-positive foetus becomes sensitised to the D antigen and produces IgG anti-D that crosses the placenta and destroys foetal red cells, causing haemolytic disease of the newborn.
+Rh incompatibility arises when an Rh-negative mother carrying an Rh-positive foetus becomes sensitised to the D antigen and produces IgG anti-D that crosses the placenta and destroys foetal red cells, causing haemolytic disease of the newborn.
 
 **Pathogenesis.** The mother lacks the D antigen (Rh-negative), whereas the foetus has inherited it from the father (Rh-positive). During pregnancy, and particularly at delivery, foetal red cells enter the maternal circulation (fetomaternal haemorrhage); sensitisation may also occur following miscarriage, abortion, ectopic pregnancy, amniocentesis or mismatched transfusion. The mother produces first IgM and then IgG anti-D, which crosses the placenta in later pregnancies, so the first Rh-positive child is usually unaffected, and the severity increases with each subsequent Rh-positive pregnancy. The IgG-coated foetal red cells are destroyed by macrophages of the spleen and liver (extravascular haemolysis).
 
@@ -11109,7 +11099,7 @@ Virtually any infectious agent can be transmitted through blood products, but ba
 
 ## Complications of mismatched blood transfusion.
 
-**Say this first:** Transfusion of mismatched (ABO-incompatible) blood causes an acute haemolytic transfusion reaction, in which preformed IgM antibodies fix complement and cause intravascular haemolysis, which can lead to shock, disseminated intravascular coagulation and acute renal failure.
+Transfusion of mismatched (ABO-incompatible) blood causes an acute haemolytic transfusion reaction, in which preformed IgM antibodies fix complement and cause intravascular haemolysis, which can lead to shock, disseminated intravascular coagulation and acute renal failure.
 
 Preexisting high-affinity "natural" IgM antibodies, usually against the polysaccharide antigens A or B, bind to the transfused red cells and rapidly induce complement-mediated lysis, intravascular haemolysis and haemoglobinuria. Fever, shaking chills and flank pain appear rapidly (within minutes), accompanied by facial flushing, chest pain, nausea, hypotension and oozing from puncture sites. The signs and symptoms are due to complement activation and release of cytokines rather than to intravascular haemolysis itself. The direct Coombs test is typically positive unless all donor cells have lysed. In severe cases the process rapidly progresses to DIC, shock, acute renal failure (from hypotension, free haemoglobin and microthrombi) and occasionally death. Jaundice and a fall in haemoglobin follow. Delayed haemolytic reactions, in contrast, are caused by IgG antibodies to antigens such as Rh, Kell and Kidd to which the patient was previously sensitised, producing extravascular haemolysis, a positive direct Coombs test, a low haptoglobin and raised LDH, 3 to 14 days after transfusion.
 
@@ -11118,14 +11108,14 @@ Management is to stop the transfusion immediately, keep the intravenous line ope
 
 ## What is an anticoagulant?
 
-**Say this first:** An anticoagulant is a substance that prevents or delays the clotting of blood, either in vitro, for collection and storage of blood samples, or in vivo, for the prevention and treatment of thrombosis.
+An anticoagulant is a substance that prevents or delays the clotting of blood, either in vitro, for collection and storage of blood samples, or in vivo, for the prevention and treatment of thrombosis.
 
 In vitro (laboratory) anticoagulants act mainly by binding or precipitating calcium ions (EDTA, citrate, oxalate) or by inhibiting thrombin and factor Xa through antithrombin (heparin), thereby interrupting the coagulation cascade, which is calcium-dependent. In vivo (therapeutic) anticoagulants include heparin and low-molecular-weight heparins (which potentiate antithrombin), warfarin (a vitamin K antagonist that blocks γ-carboxylation of factors II, VII, IX and X), and direct oral anticoagulants (thrombin and factor Xa inhibitors).
 
 
 ## Enumerate anticoagulants used in the laboratory.
 
-**Say this first:** The commonly used laboratory anticoagulants are EDTA, trisodium citrate, heparin and double oxalate, and for storing blood, acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose-adenine (CPDA-1).
+The commonly used laboratory anticoagulants are EDTA, trisodium citrate, heparin and double oxalate, and for storing blood, acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose-adenine (CPDA-1).
 
 1. **EDTA (ethylenediaminetetraacetic acid, K₂ or K₃ salts):** 1.5 mg/mL of blood; for complete blood counts and blood films.
 2. **Trisodium citrate:** 3.2% (or 3.8%) in the ratio 1 part to 9 parts of blood for coagulation tests (PT, PTT) and 1 to 4 for ESR (Westergren).
@@ -11137,7 +11127,7 @@ In vitro (laboratory) anticoagulants act mainly by binding or precipitating calc
 
 ## Merits and demerits of anticoagulants.
 
-**Say this first:** Each laboratory anticoagulant has its own merits and demerits, so the choice depends on the test: EDTA is best for cell counting and morphology, citrate for coagulation tests and ESR, heparin for functional and cytogenetic studies, and oxalate for PCV.
+Each laboratory anticoagulant has its own merits and demerits, so the choice depends on the test: EDTA is best for cell counting and morphology, citrate for coagulation tests and ESR, heparin for functional and cytogenetic studies, and oxalate for PCV.
 
 | Anticoagulant | Merits | Demerits |
 |---|---|---|
@@ -11291,7 +11281,7 @@ Older solutions are acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose (
 
 ## DIC picture after delivery or induced abortion — Probable diagnosis? Tests / laboratory investigations to establish it (with results)?
 
-**Say this first:** The probable diagnosis is disseminated intravascular coagulation (DIC) as a complication of an obstetric event, because after delivery or an induced (especially septic) abortion, release of procoagulants and endothelial injury trigger systemic coagulation with a bleeding diathesis; it is established by thrombocytopenia, prolonged PT, PTT and thrombin time, low fibrinogen and raised D-dimers.
+The probable diagnosis is disseminated intravascular coagulation (DIC) as a complication of an obstetric event, because after delivery or an induced (especially septic) abortion, release of procoagulants and endothelial injury trigger systemic coagulation with a bleeding diathesis; it is established by thrombocytopenia, prolonged PT, PTT and thrombin time, low fibrinogen and raised D-dimers.
 
 DIC is most associated with obstetric complications, malignancy, sepsis and major trauma. In obstetric conditions, procoagulants derived from the placenta, a dead retained foetus or amniotic fluid enter the circulation (abruptio placentae, amniotic fluid embolism, retained products, pre-eclampsia, septic abortion with endotoxaemia). The onset can be fulminant, and acute DIC of this type is dominated by a bleeding diathesis: oozing from the uterus, venepuncture and wound sites, haematuria and petechiae, with shock, oliguria or acute renal failure, dyspnoea, and neurological changes.
 
@@ -11315,7 +11305,7 @@ Treatment consists of removing the cause (evacuation of the uterus, delivery of 
 
 ## Child with severe anaemia, mongoloid facies, splenomegaly/hepatosplenomegaly ± jaundice, short stature, microcytic hypochromic picture with target cells/normoblasts/fragmented cells — Probable / provisional diagnosis? How will you confirm it?
 
-**Say this first:** The probable diagnosis is β-thalassaemia major, and it is confirmed by haemoglobin electrophoresis or HPLC, which shows markedly raised HbF with absent or markedly reduced HbA, supported by studies of the parents showing the β-thalassaemia trait.
+The probable diagnosis is β-thalassaemia major, and it is confirmed by haemoglobin electrophoresis or HPLC, which shows markedly raised HbF with absent or markedly reduced HbA, supported by studies of the parents showing the β-thalassaemia trait.
 
 The anaemia presents from 6 to 9 months of age as the HbF to HbA switch occurs, with severe transfusion-dependent anaemia (untransfused haemoglobin 3 to 6 g/dL). The mongoloid ("chipmunk") facies results from marrow expansion in the facial bones, which erodes cortical bone and induces new bone formation, creating the "crew-cut" skull appearance on radiographs. Hepatosplenomegaly is due to extramedullary haemopoiesis and splenic phagocyte hyperplasia, jaundice from haemolysis and short stature from chronic hypoxia, cachexia and endocrine damage from iron overload. The blood film shows microcytic hypochromic cells, anisopoikilocytosis, target cells, fragmented cells, basophilic stippling and numerous nucleated red cells.
 
@@ -11332,7 +11322,7 @@ HbE-β-thalassaemia, which is common in Bangladesh, can present identically and 
 
 ## 9-year-old / 7-year-old girl with sudden purpuric rash, thrombocytopenia, normocellular marrow with active megakaryopoiesis — Likely diagnosis? Further investigations for confirmation?
 
-**Say this first:** The likely diagnosis is acute immune thrombocytopenic purpura (ITP), a self-limited, antibody-mediated destruction of platelets that follows a viral illness in childhood, confirmed by excluding other causes of thrombocytopenia.
+The likely diagnosis is acute immune thrombocytopenic purpura (ITP), a self-limited, antibody-mediated destruction of platelets that follows a viral illness in childhood, confirmed by excluding other causes of thrombocytopenia.
 
 Acute ITP is mainly a disease of childhood, occurring with equal frequency in both sexes; symptoms appear abruptly, often 1 to 2 weeks after a self-limited viral illness, which appears to trigger the development of antiplatelet autoantibodies. IgG antibody binding to platelet glycoproteins IIb/IIIa or Ib/IX opsonises the platelets for removal by splenic macrophages. A normocellular marrow with active megakaryopoiesis shows that platelet production is intact and the thrombocytopenia is due to peripheral destruction. The disease is self-limited, usually resolving within 6 months; in about 20% of children it persists as chronic ITP.
 
@@ -11347,7 +11337,7 @@ Acute ITP is mainly a disease of childhood, occurring with equal frequency in bo
 
 ## 10-year-old boy with history of gum bleeding — Probable causes?
 
-**Say this first:** Gum bleeding in a 10-year-old boy may result from local gingival disease or from a systemic bleeding disorder, the important systemic causes being thrombocytopenia (ITP, acute leukaemia, aplastic anaemia), coagulation disorders (haemophilia, von Willebrand disease) and vitamin deficiencies.
+Gum bleeding in a 10-year-old boy may result from local gingival disease or from a systemic bleeding disorder, the important systemic causes being thrombocytopenia (ITP, acute leukaemia, aplastic anaemia), coagulation disorders (haemophilia, von Willebrand disease) and vitamin deficiencies.
 
 1. **Local causes:** gingivitis and periodontal disease from poor oral hygiene, dental caries, trauma.
 2. **Platelet disorders:** acute immune thrombocytopenic purpura (the commonest systemic cause in this age group, with abrupt onset of purpura after a viral illness); platelet function defects such as Glanzmann thrombasthenia and drug effects (aspirin).
@@ -11360,7 +11350,7 @@ Investigation begins with a blood count and film, platelet count, PT and PTT, wi
 
 ## Boy with haemarthrosis, family history through maternal uncle (or excessive bleeding after tooth extraction / spontaneous bleeding) — Provisional diagnosis? How to confirm / which test helps?
 
-**Say this first:** The provisional diagnosis is haemophilia A (factor VIII deficiency), an X-linked recessive disorder transmitted through the mother's family, and it is confirmed by a prolonged PTT with a normal PT, platelet count and bleeding time, followed by a factor VIII assay.
+The provisional diagnosis is haemophilia A (factor VIII deficiency), an X-linked recessive disorder transmitted through the mother's family, and it is confirmed by a prolonged PTT with a normal PT, platelet count and bleeding time, followed by a factor VIII assay.
 
 Haemarthrosis after minimal trauma is the classic presentation of a coagulation factor deficiency, and a history of excessive bleeding after tooth extraction in a maternal uncle fits X-linked recessive transmission, in which the mother is an obligate carrier. Haemophilia B (Christmas disease), which is clinically identical, must be distinguished by factor assay. Petechiae are characteristically absent.
 
@@ -11374,7 +11364,7 @@ Haemarthrosis after minimal trauma is the classic presentation of a coagulation 
 
 ## 25-year-old woman, 7 months pregnant, with anaemia — Probable causes? How will you confirm the case?
 
-**Say this first:** Anaemia at 7 months of pregnancy is most commonly due to iron deficiency, followed by folate deficiency (megaloblastic anaemia) and physiological haemodilution, and I would confirm the cause with a blood count, film, iron studies and folate and B₁₂ levels.
+Anaemia at 7 months of pregnancy is most commonly due to iron deficiency, followed by folate deficiency (megaloblastic anaemia) and physiological haemodilution, and I would confirm the cause with a blood count, film, iron studies and folate and B₁₂ levels.
 
 **Probable causes.**
 
@@ -11395,7 +11385,7 @@ Haemarthrosis after minimal trauma is the classic presentation of a coagulation 
 
 ## Ataxic gait, glossitis/weakness, anaemia/palpitation with history of partial gastrectomy — Most probable haematological diagnosis?
 
-**Say this first:** The most probable haematological diagnosis is megaloblastic anaemia due to vitamin B₁₂ deficiency following partial gastrectomy, with neurological involvement from subacute combined degeneration of the spinal cord.
+The most probable haematological diagnosis is megaloblastic anaemia due to vitamin B₁₂ deficiency following partial gastrectomy, with neurological involvement from subacute combined degeneration of the spinal cord.
 
 Gastrectomy removes the parietal cells that secrete intrinsic factor (and acid and pepsin needed to free dietary B₁₂), so B₁₂ cannot be absorbed in the ileum; once the hepatic stores, which last several years, are exhausted, megaloblastic anaemia develops. The anaemia accounts for the weakness and palpitation, glossitis is characteristic (smooth, sore, beefy-red tongue from epithelial megaloblastic change), and the ataxic gait results from demyelination of the dorsal and lateral columns of the spinal cord (sensory ataxia, loss of vibration and position sense, paraesthesiae, and sometimes spastic paraparesis).
 
@@ -13807,7 +13797,7 @@ Tissue diagnosis by endometrial biopsy or curettage. Hysteroscopy for direction.
 
 ## Classify ovarian tumours.
 
-**Say this first:** Ovarian tumours are classified by origin into surface epithelial-stromal, germ cell, sex cord-stromal and metastatic tumours.
+Ovarian tumours are classified by origin into surface epithelial-stromal, germ cell, sex cord-stromal and metastatic tumours.
 
 | Origin | Tumours |
 |---|---|
@@ -14017,7 +14007,7 @@ Staging: AJCC 8th edition anatomic stage (TNM) plus prognostic stage (grade, ER,
 
 ## 20-year-old woman with a free, movable breast lump — Probable diagnosis? Investigations to diagnose the case?
 
-**Say this first:** Fibroadenoma. It is the commonest benign breast tumour, typical at 20-30 years, presenting as a firm, rubbery, mobile, well-circumscribed lump. It is hormone-responsive.
+Fibroadenoma. It is the commonest benign breast tumour, typical at 20-30 years, presenting as a firm, rubbery, mobile, well-circumscribed lump. It is hormone-responsive.
 
 **Investigations (triple assessment)**
 
@@ -14279,14 +14269,14 @@ The normal curve rises to a peak at 30–60 minutes and returns to the fasting l
 
 ## What is HbA1c (glycosylated haemoglobin)?
 
-**Say this first:** HbA1c is glycated haemoglobin, formed by non-enzymatic attachment of glucose to the β-chain of haemoglobin A. It reflects mean blood glucose over the previous 8–12 weeks, and is used both to diagnose diabetes (6.5% or more) and to monitor long-term control (target below 7%).
+HbA1c is glycated haemoglobin, formed by non-enzymatic attachment of glucose to the β-chain of haemoglobin A. It reflects mean blood glucose over the previous 8–12 weeks, and is used both to diagnose diabetes (6.5% or more) and to monitor long-term control (target below 7%).
 
 **Complete explanation:** Glycation proceeds continuously and irreversibly over the 120-day lifespan of the red cell, so that the HbA1c percentage is proportional to the average glucose exposure, weighted to the most recent month. Unlike a blood glucose it does not need fasting and is unaffected by day-to-day variation. Interpretation: below 5.7% normal; 5.7–6.4% prediabetes; 6.5% or more diabetes. Clinically, a lower HbA1c is associated with a reduced risk of retinopathy, nephropathy and neuropathy. Falsely low values occur in haemolytic anaemia, blood loss and recent transfusion, and falsely high or unreliable values in iron deficiency and some haemoglobinopathies. Continuous glucose monitoring has introduced "time in range" as an additional measure.
 
 
 ## Importance of HbA1c.
 
-**Say this first:** The importance of HbA1c is that it gives an objective index of average glycaemia over two to three months, which makes it the best single test for assessing long-term control and the risk of complications; it is also an accepted diagnostic criterion for diabetes.
+The importance of HbA1c is that it gives an objective index of average glycaemia over two to three months, which makes it the best single test for assessing long-term control and the risk of complications; it is also an accepted diagnostic criterion for diabetes.
 
 **Complete explanation:** Its value rests on four uses. First, monitoring control: it shows whether treatment has been effective over the preceding months, independent of the day's meal or fast. Second, predicting complications: large trials have shown that sustained glycaemic control, with HbA1c maintained below 7%, reduces microvascular complications. Third, diagnosis and screening: 6.5% or more diagnoses diabetes and 5.7–6.4% identifies prediabetes. Fourth, it serves to separate transient stress hyperglycaemia from established diabetes, since a normal HbA1c in a hyperglycaemic patient suggests a short-lived rise. Its limitations are the effects of anaemia, haemoglobinopathy, transfusion and renal failure.
 
