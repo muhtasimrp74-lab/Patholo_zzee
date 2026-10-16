@@ -1638,11 +1638,6 @@ Inflammation is a defensive response of vascularised tissues whose purpose is to
 
 The clinical use of anti-inflammatory drugs (NSAIDs, corticosteroids, anti-TNF agents) rests on this duality, and their major drawback is that suppression of harmful inflammation also compromises host defence, as seen in the susceptibility of anti-TNF-treated patients to mycobacterial infection.
 
-**Acute Inflammation: Vascular Events**
-
-**Vascular changes and permeability**
-
-
 ## Vascular changes / reactions of blood vessels in acute inflammation.
 
 The vascular reactions of acute inflammation are changes in blood flow and vessel caliber (vasodilation with increased flow, then slowing and stasis) and increased vascular permeability that lets protein-rich fluid and leukocytes leave the circulation; the escape of fluid is called exudation.
@@ -1699,11 +1694,6 @@ The vascular events of acute inflammation consist of alterations in blood flow a
 **5. Lymphatic response.** Lymph flow increases and drains the oedema fluid, microbes and cell debris; lymphatic vessels and draining lymph nodes may become inflamed (lymphangitis, lymphadenitis), producing red streaks and tender enlargement of the nodes.
 
 The principal mediators responsible are histamine and serotonin, bradykinin, prostaglandins, leukotrienes C₄, D₄ and E₄, PAF, and the anaphylatoxins C3a and C5a; TNF and IL-1 cause endothelial activation. Vascular leakage ends when the damaged vessels have thrombosed or been repaired, or when mediators have decayed. The loss of fluid can be life-threatening in severe burns.
-
-**Acute Inflammation: Cellular Events**
-
-**Leukocyte recruitment and chemotaxis**
-
 
 ## Steps of cellular events in acute inflammation.
 
@@ -1944,11 +1934,6 @@ Opsonins are molecules that coat microbes or other particles and make them more 
 
 **Significance.** Opsonisation is the mechanism by which adaptive immunity (antibodies) and innate immunity (complement, lectins) direct phagocytes against microbes. Deficiencies of antibody or complement (and, clinically, absence of the spleen) predispose to infections with encapsulated bacteria. Opsonin-coated microbes are also recognised by macrophages through opsonin-independent receptors such as the mannose and scavenger receptors, but with lower efficiency.
 
-**Chemical Mediators of Inflammation**
-
-**Chemical mediators**
-
-
 ## Name the chemical mediators of inflammation.
 
 The chemical mediators of inflammation are either cell-derived (vasoactive amines such as histamine and serotonin, arachidonic acid metabolites, platelet-activating factor, cytokines and chemokines, reactive oxygen species, nitric oxide, lysosomal enzymes, neuropeptides) or plasma-derived (the complement system, kinins and the coagulation system).
@@ -2141,11 +2126,6 @@ Activation of the complement system through the classical, alternative or lectin
 | Pain | Prostaglandins, bradykinin, substance P |
 | Swelling (increased permeability) | Histamine and serotonin, C3a and C5a, leukotrienes C₄/D₄/E₄ |
 
-**Morphology, Outcomes and Systemic Effects**
-
-**Morphological patterns**
-
-
 ## Morphological types / patterns of acute inflammation.
 
 The morphological patterns of acute inflammation are serous, fibrinous, purulent (suppurative, including abscess) and ulcerative inflammation.
@@ -2281,11 +2261,6 @@ The tests reflect the systemic response and identify the cause:
 - **Imaging:** ultrasonography, radiography, CT or MRI to locate an abscess or involved bone.
 - **Cytology and histopathology:** fine-needle aspiration or biopsy to demonstrate the type of inflammation (suppurative, granulomatous), with special stains for organisms.
 - **Immunological tests** (autoantibodies, immunoglobulins) when immune-mediated disease is suspected.
-
-**Chronic and Granulomatous Inflammation**
-
-**Chronic inflammation**
-
 
 ## Define chronic inflammation.
 
@@ -2538,11 +2513,6 @@ Inflammatory giant cells form by fusion of multiple activated macrophages (epith
 
 Monocytes recruited to a site of chronic inflammation differentiate into macrophages, which, when strongly and persistently activated by IFN-γ from Th1 cells (or by other cytokines such as IL-4 and IL-13 in foreign-body reactions), become epithelioid cells with abundant cytoplasm. Some of these cells fuse, through membrane fusion proteins, to form multinucleate giant cells. The stimulus is a large indigestible particle or a persistent microbe (frustrated phagocytosis), which the macrophage cannot engulf singly. The nuclei result from fusion of cells, not from nuclear division without cytokinesis. The giant cell has a large mass of cytoplasm and many nuclei, and in foreign-body granulomas the foreign material may be seen within the giant cell. In tuberculosis the peripheral arrangement of nuclei gives the Langhans pattern; in foreign-body reactions the nuclei are randomly distributed.
 
-**Tissue Repair and Wound Healing**
-
-**Regeneration and repair**
-
-
 ## Define regeneration.
 
 Regeneration is the process by which some tissues replace the damaged components and essentially return to a normal state, by proliferation of surviving cells or from tissue stem cells.
@@ -2794,11 +2764,6 @@ The probable diagnosis is **keloid**.
 
 The scar is raised and extends beyond the boundaries of the original incision, which distinguishes keloid from hypertrophic scar (confined to the wound margins and tending to regress over several months). Recurrence after excision and an individual predisposition, seen especially in dark-skinned people, are characteristic. Keloids result from excessive production of collagen (an imbalance in the repair process with excess ECM deposition, with TGF-β and fibroblast overactivity). Histology shows thick, hyalinised, eosinophilic collagen bundles in the dermis. The condition is benign but cosmetically disfiguring, and may be itchy or tender. Treatment is by intralesional steroids, silicone, pressure, cryotherapy, or excision combined with adjuvant radiotherapy or steroids.
 
-**Clinical Scenarios**
-
-**Inflammation cases**
-
-
 ## Painful, red, warm swelling (leg in a 15-year-old girl) / pain and swelling in the right inguinal region of a 10-year-old boy for 7 days — Likely diagnosis? Chemical mediators responsible for the signs (pain and swelling)?
 
 This is acute inflammation, most probably an acute suppurative infection (cellulitis or abscess of the leg, and acute lymphadenitis with possible abscess in the inguinal region), with pain due to prostaglandins, bradykinin and substance P, and swelling due to histamine, bradykinin, leukotrienes and other permeability-increasing mediators.
@@ -2896,11 +2861,6 @@ Confirmation rests on demonstrating acute inflammation and identifying the causa
 **Ch 4 · Haemodynamic Disorders, Thromboembolic Disease, and Shock**
 
 95 questions
-
-**Oedema and Effusions**
-
-**Oedema**
-
 
 ## Define edema.
 
@@ -3092,11 +3052,6 @@ Body fluid examination comprises physical, chemical, cytological and microbiolog
 4. **Microbiological examination:** Gram stain, acid-fast stain, culture and sensitivity, PCR, fungal stains, India ink for cryptococcus (CSF).
 5. **Immunological and other tests:** tumour markers (CEA), rheumatoid factor, antinuclear antibody, serology.
 
-**Hyperaemia and Congestion**
-
-**Hyperaemia and congestion**
-
-
 ## What is hyperemia?
 
 Hyperaemia is an active process in which arteriolar dilation increases blood flow to a tissue, making it red (erythema) because of increased delivery of oxygenated blood.
@@ -3134,11 +3089,6 @@ Examples of hyperaemia are the redness of acute inflammation and exercising musc
 - **Hyperaemia (physiological):** skeletal muscle during exercise, blushing, skin in a hot environment, gastrointestinal mucosa after a meal. **(Pathological):** acute inflammation (erythema), fever.
 - **Congestion (systemic):** left heart failure producing chronic pulmonary congestion with brown induration (heart failure cells) and right heart failure producing nutmeg liver, splenomegaly and peripheral oedema. **(Localised):** deep vein thrombosis causing a swollen, cyanotic limb, hepatic venous obstruction (Budd-Chiari syndrome), portal vein obstruction, strangulated hernia or torsion of testis.
 
-**Thrombosis**
-
-**Normal haemostasis**
-
-
 ## Describe briefly the role of platelets in normal haemostasis.
 
 Platelets are disk-shaped, anucleate cell fragments shed from megakaryocytes. They form the primary haemostatic plug that initially seals vascular defects and provide a phospholipid surface that binds and concentrates activated coagulation factors. Their function depends on glycoprotein receptors, a contractile cytoskeleton, and two types of granules: α-granules (P-selectin on the membrane; fibrinogen, factors V and XI, vWF, fibronectin, platelet factor 4, PDGF and TGF-β) and dense (δ) granules (ADP, ATP, ionised calcium, serotonin, epinephrine).
@@ -3168,9 +3118,6 @@ The balance between antithrombotic and prothrombotic activities of endothelium d
 **3. Fibrinolytic effects.** Endothelial cells synthesise **tissue plasminogen activator (t-PA)**, which converts plasminogen to plasmin, to degrade fibrin.
 
 With injury or activation (by inflammatory cytokines, microbes, haemodynamic stress), the endothelium loses these properties: thrombomodulin, protein C and TFPI are downregulated, t-PA falls, and plasminogen activator inhibitors (PAI) rise, shifting the balance toward thrombosis.
-
-**Thrombosis**
-
 
 ## Define thrombus.
 
@@ -3340,11 +3287,6 @@ If a patient survives the initial thrombosis, over days to weeks the thrombus un
 4. **Organisation and recanalisation.** Older thrombi are invaded by endothelial cells, smooth muscle cells and fibroblasts, forming granulation tissue, and capillary channels form that re-establish the continuity of the lumen to a variable degree. With remodelling, only a fibrous lump may remain, incorporated in the vessel wall.
 
 Other possibilities include **infection** of the thrombus in bacteraemia, which may erode the vessel wall and produce a mycotic aneurysm; enzymatic digestion of the centre of the thrombus by lysosomal enzymes of trapped leukocytes; and calcification (phlebolith).
-
-**Embolism**
-
-**Embolism**
-
 
 ## Define embolus.
 
@@ -3613,11 +3555,6 @@ The cause is **deep vein thrombosis (DVT) of the leg veins**, with detachment of
 
 The thrombus forms in the deep veins (popliteal, femoral, iliac) and extends toward the heart; its poorly attached propagating portion fragments and is carried through the right heart into the pulmonary arterial circulation, causing embolic obstruction, haemorrhage and infarction. About 70% to 80% of pulmonary emboli arise in this way, and DVT is often asymptomatic until embolisation occurs.
 
-**Infarction**
-
-**Infarction**
-
-
 ## What is an infarct?
 
 An infarct is an area of ischaemic necrosis caused by occlusion of either the arterial supply or the venous drainage of a tissue.
@@ -3704,11 +3641,6 @@ Vascular occlusion may have effects ranging from virtually nothing to tissue nec
 **Heart: white (anaemic) infarct.** Myocardial infarction results from occlusion of a coronary artery (usually by thrombosis on an atherosclerotic plaque). The heart is a solid organ with end-arterial type supply, so the arterial occlusion produces a pale (white) infarct, in which tissue density limits seepage of blood into the necrotic area. Histologically it is coagulative necrosis, which takes 4 to 12 hours to be visible (cardiac myocytes die after 20 to 30 minutes of ischaemia), with neutrophilic infiltration at the margins within 1 to 2 days and eventual replacement by a fibrous scar. Reperfusion (angioplasty, thrombolysis) may make the infarct haemorrhagic (red). The infarct may be subendocardial or transmural.
 
 **Lung: red (haemorrhagic) infarct.** Pulmonary infarcts result from occlusion of small peripheral branches of the pulmonary artery, usually by emboli, and are haemorrhagic (red) because the lung is a loose spongy tissue with dual (pulmonary and bronchial) circulation, so blood flowing from the bronchial arteries collects in the necrotic zone, and because pulmonary congestion is often present. They are wedge-shaped with the base on the pleural surface, which may be covered by fibrinous exudate (pleuritic pain), and cause haemoptysis. Pulmonary infarction is uncommon with embolic occlusion of medium arteries because of the bronchial supply, unless the bronchial circulation is compromised (left heart failure).
-
-**Shock**
-
-**Shock**
-
 
 ## What are the types of shock?
 
@@ -3849,11 +3781,6 @@ The aetiology is **bacterial infection** introduced at tooth extraction into the
 - Oral anaerobes (Peptostreptococcus, Prevotella, Fusobacterium, Bacteroides), often with mixed flora, and gram-negative bacilli whose **endotoxin (LPS)** triggers TLR-mediated cytokine release.
 
 Predisposing factors include poor oral hygiene, poorly controlled diabetes, immunosuppression and non-sterile technique. The microbial constituents (endotoxin, enterotoxin B, M protein) engage Toll-like receptors on macrophages, neutrophils, dendritic cells and endothelium, and trigger the inflammatory cascade of sepsis.
-
-**Fluid, Electrolyte and Acid–Base Disorders**
-
-**Normal serum electrolytes**
-
 
 ## Normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻.
 
@@ -4145,11 +4072,6 @@ Familial hypercholesterolaemia or Marfan syndrome for autosomal dominant, cystic
 | Genomic imprinting | Prader-Willi syndrome, Angelman syndrome |
 | Somatic mosaicism | PIK3CA-related overgrowth spectrum |
 
-**Single-Gene Disorders**
-
-**Transmission patterns**
-
-
 ## Transmission patterns of single-gene disorders.
 
 Single-gene disorders follow one of three Mendelian patterns of inheritance: autosomal dominant, autosomal recessive, or X-linked.
@@ -4296,11 +4218,6 @@ Distinguishing features from autosomal dominant disease. Expression is more unif
 Molecular basis. Many of the mutated genes encode enzymes. A heterozygote with half of the enzyme activity functions normally, so loss of both copies is required for disease. Almost all inborn errors of metabolism follow this pattern.
 
 Examples. Cystic fibrosis, phenylketonuria, galactosaemia, homocystinuria, lysosomal storage diseases (Tay-Sachs and Gaucher disease), glycogen storage diseases, α1-antitrypsin deficiency, Wilson disease, haemochromatosis, sickle cell anaemia, thalassaemias, congenital adrenal hyperplasia, alkaptonuria, Friedreich ataxia and spinal muscular atrophy.
-
-**Cytogenetic Disorders**
-
-**Chromosomal disorders**
-
 
 ## Types of chromosomal disorders.
 
@@ -4511,11 +4428,6 @@ Three types of karyotypic abnormality are seen in Turner syndrome:
 
 The karyotype is determined by G-banded karyotyping of peripheral blood. Because the Y chromosome carries a risk of gonadoblastoma, 45,X/46,XY mosaicism should be excluded, by FISH if needed.
 
-**Laboratory Diagnosis of Genetic Disorders**
-
-**Laboratory diagnosis**
-
-
 ## Outline of laboratory diagnosis of genetic disorders.
 
 Laboratory diagnosis rests on cytogenetic analysis (karyotyping, FISH, microarrays), molecular genetic testing (PCR-based methods, DNA sequencing including next-generation sequencing, linkage analysis, methylation analysis), and, for metabolic disorders, enzyme and biochemical assays. The test is chosen according to the type of lesion suspected.
@@ -4582,11 +4494,6 @@ Limitations. Abnormalities smaller than about 2–4 million base pairs are not v
 
 **Ch 6 · Diseases of the Immune System**
 15 questions
-
-**Immunity and Hypersensitivity**
-
-**Immunity**
-
 
 ## Define immunity.
 
@@ -4715,11 +4622,6 @@ Anaphylactic reactions can be triggered by a wide range of substances, in hospit
 
 The local forms of immediate hypersensitivity are related reactions of the same mechanism: urticaria, allergic rhinitis, conjunctivitis, atopic asthma, atopic dermatitis and food allergy gastroenteritis.
 
-**Autoimmunity and Immunodeficiency**
-
-**Autoimmunity and immunodeficiency**
-
-
 ## What do you mean by autoimmunity?
 
 Autoimmunity is an immune reaction against the body's own (self) antigens, resulting from a failure of self-tolerance, which can lead to autoimmune disease.
@@ -4779,11 +4681,6 @@ The clinical picture is that of Graves disease, an organ-specific autoimmune dis
 2. **Thyroid-stimulating autoantibodies.** B cells secrete IgG antibodies against the TSH receptor on thyroid follicular cells. These antibodies bind and activate the receptor in the absence of TSH, stimulating cAMP signalling. This produces hyperplasia and hypertrophy of the epithelium (diffuse goiter) and unregulated synthesis and release of T3 and T4, so TSH is suppressed. This is an antibody-mediated functional derangement without cell destruction, and complement is not required. Other antibodies, such as TSH-binding inhibitory immunoglobulins and thyroid growth–stimulating antibodies, may modify the picture.
 3. **Exophthalmos.** Orbital fibroblasts and adipocytes express the TSH receptor, and probably the IGF-1 receptor. Autoantibodies and autoreactive T cells, and cytokines such as IFN-γ, TNF and IL-1, stimulate fibroblast proliferation, hyaluronan (glycosaminoglycan) deposition and adipogenesis. Together with lymphocytic infiltration, this causes oedema and swelling of the orbital contents and extraocular muscles and forward displacement of the globe. The same mechanism produces pretibial myxoedema in some patients.
 4. **Associated autoimmunity.** Patients have an increased risk of other autoimmune diseases (type 1 diabetes, pernicious anaemia, Addison disease), reflecting shared susceptibility genes.
-
-**Amyloidosis**
-
-**Amyloidosis**
-
 
 ## What is amyloidosis?
 
@@ -4969,11 +4866,6 @@ A neoplasm consists of the proliferating neoplastic cells (the parenchyma) and a
 
 Examples. A **lipoma** is a benign neoplasm of fat cells that closely resembles normal adipose tissue, grows as a discrete encapsulated mass and does not metastasise. An **adenoma** of the colon is a benign epithelial neoplasm that forms glandular structures and often presents as a polyp. A **colonic adenocarcinoma** is the corresponding malignant neoplasm, in which irregular glands invade the muscular layer of the colon wall and may metastasise to regional lymph nodes and the liver.
 
-**Differentiation, Anaplasia and Dysplasia**
-
-**Benign vs malignant tumours**
-
-
 ## What are the characteristics of a malignant tumour/cell?
 
 Malignant tumours differ from benign ones in the structure and behaviour of their cells, in their pattern of growth and in their capacity to invade and metastasise. Their characteristics can be considered under the following headings.
@@ -5147,11 +5039,6 @@ Both terms describe disturbances of differentiation, and the cytologic features 
 | Extent of atypia | Graded mild to severe; severe full-thickness change is carcinoma in situ | Graded from well to poorly differentiated; most pronounced in undifferentiated cancers |
 | Significance | Marks an increased risk of cancer and is used for screening | Predicts aggressive behaviour and forms the basis of grading |
 
-**Invasion and Metastasis**
-
-**Invasion and metastasis**
-
-
 ## Define metastasis (short note).
 
 Metastasis is the spread of a primary tumour to physically discontinuous sites, and it unequivocally marks a tumour as malignant.
@@ -5229,11 +5116,6 @@ Invasion and metastasis are the major causes of cancer-related morbidity and mor
 **Phase 2: vascular dissemination, homing and colonisation.** In the circulation, tumour cells, often as emboli aggregated with platelets, must survive shear forces and immune attack. They arrest in capillary beds, extravasate, and colonise the new site. The site of metastasis is determined by the anatomy of venous and lymphatic drainage, by tissue tropism related to adhesion molecules and chemokine receptors, and by the compatibility of the tissue as "soil" for the tumour "seed". Many metastatic cells then remain dormant before they grow, and successful colonisation requires them to alter the resident stromal cells so that the site becomes habitable.
 
 The process is inefficient and complex, and no single "metastasis gene" has been identified; the metastatic phenotype probably requires the accumulation of multiple complementary genetic and epigenetic alterations.
-
-**Carcinogenesis and Tumour Biology**
-
-**Carcinogenesis**
-
 
 ## Fundamental cellular changes considered hallmarks of cancer.
 
@@ -5603,11 +5485,6 @@ A **precancerous condition** is a generalised state, not a discrete lesion, that
 
 What these have in common is increased cellular replication, which creates a "fertile soil" for malignant tumours, as proliferating cells are most at risk for the somatic mutations that drive carcinogenesis. Not all precancerous lesions progress to cancer, and many can be reversed by removing the cause. Their recognition is the basis of cancer screening and prevention, as in the Pap smear for cervical cancer, colonoscopic polypectomy, and surveillance of Barrett oesophagus.
 
-**Clinical Aspects of Neoplasia**
-
-**Clinical aspects**
-
-
 ## Clinical features of tumour.
 
 The clinical effects of a tumour depend chiefly on its location and behaviour and include local effects (mass effect, pressure and obstruction, ulceration, bleeding and infection), hormonal effects, cancer cachexia and paraneoplastic syndromes, in addition to the effects of metastasis.
@@ -5770,11 +5647,6 @@ The commonly diagnosed cancers in Bangladesh differ by sex and reflect the main 
 | Others | Larynx, colorectum, liver, prostate, lymphomas | Ovary, thyroid, colorectum |
 
 In the recent estimates for Bangladesh, oesophageal, lung, stomach, and lip and oral cavity cancers account for most cancers in men, and in women the cervix and breast head the list, followed by oesophagus, lung and stomach. In hospital-based series from the major centres, breast cancer is the commonest cancer among women, and lung and head and neck cancers (oral cavity, larynx, hypopharynx) dominate in men. Tobacco-related cancers (lung, oral, oesophageal and laryngeal) dominate in men, while cervical cancer, which is preventable by HPV vaccination and screening, and breast cancer are the leading cancers in women.
-
-**Laboratory Diagnosis of Tumours**
-
-**Laboratory diagnosis**
-
 
 ## Outline / methods of laboratory diagnosis of tumour.
 
@@ -6008,11 +5880,6 @@ Immunohistochemistry (IHC) entails the staining of tissue sections with antibodi
 
 **Limitations.** IHC results depend on fixation and technique, and the antibody panels must be interpreted with appropriate controls, since no marker is completely specific. It complements, but does not replace, morphologic assessment. Flow cytometry has the advantage over IHC of assessing multiple antigens simultaneously on individual cells in suspension, mainly in haematologic tumours.
 
-**Clinical Scenarios**
-
-**Tumour cases**
-
-
 ## 45-year-old man with hard neck mass and hoarseness of voice for 3 months — Clinical diagnosis? Tests to evaluate the mass?
 
 This is a malignant neoplasm of the neck until proved otherwise. The most likely clinical diagnosis is carcinoma of the thyroid, such as papillary or anaplastic carcinoma, that has invaded the recurrent laryngeal nerve, and the differential diagnosis is squamous cell carcinoma of the larynx or hypopharynx with metastasis to a cervical lymph node, or a lymphoma. I would confirm it by FNAC and histology, with laryngoscopy and imaging for the extent.
@@ -6177,11 +6044,6 @@ Water and soil pollution. Toxic metals (lead in water pipes, arsenic in groundwa
 
 Effects. Respiratory disease, cardiovascular disease and cancer predominate. Air pollution is a major cause of morbidity and mortality, especially in people with existing cardiac or pulmonary disease, and systemic inflammation may mediate some extrapulmonary effects. Climate change and social disadvantage increase vulnerability.
 
-**Tobacco and Alcohol**
-
-**Tobacco and alcohol**
-
-
 ## Health hazards due to tobacco smoking.
 
 Smoking is the most readily preventable cause of death. It causes lung cancer and cancers of many other organs, chronic obstructive pulmonary disease, atherosclerosis with myocardial infarction and stroke, and harm to the developing foetus, and it harms nonsmokers through second-hand smoke.
@@ -6235,11 +6097,6 @@ Chronic effects.
 - **Cancer:** oral cavity, oesophagus, larynx and liver, and breast in females even with low to moderate intake. The risk is multiplied by smoking.
 - **Nutrition:** ethanol provides empty calories and displaces food, and malnutrition and deficiencies of thiamine, pyridoxine, folate and vitamin A are common.
 
-**Physical Injury: Burns and Radiation**
-
-**Burns and radiation**
-
-
 ## Effects of radiation on various organs of the body.
 
 Ionising radiation damages DNA directly and through free radicals, so rapidly dividing tissues such as bone marrow, lymphoid tissue, the gastrointestinal mucosa and gonads are most sensitive. It also causes vascular damage, fibrosis and cancer.
@@ -6286,11 +6143,6 @@ The severity of a burn depends on its depth, the percentage of body surface invo
 - **Promptness and efficacy of therapy.** Fluid and electrolyte management, nutritional support for the hypermetabolic state, early excision and grafting, and prevention of wound infection. Virtually all burns become colonised, most often by Pseudomonas aeruginosa, MRSA and Candida, and burn sepsis can lead to pneumonia, septic shock, renal failure and ARDS.
 
 The three most serious complications are shock, sepsis and respiratory insufficiency. Age at the extremes, the site (face, hands, perineum) and coexisting illness also affect outcome. Survivors may develop hypertrophic scars and itching.
-
-**Nutritional Diseases**
-
-**Nutritional disorders**
-
 
 ## Causes of malnutrition.
 
@@ -6574,11 +6426,6 @@ Clinical features.
 
 Diagnosis and treatment. Low plasma or serum zinc (with low alkaline phosphatase) in a patient with the appropriate setting, and response to zinc supplementation. Zinc supplements are given with oral rehydration therapy to reduce diarrhoeal illness in children, and acrodermatitis enteropathica needs lifelong zinc.
 
-**Diet and Systemic Disease**
-
-**Diet and cancer**
-
-
 ## How does dietary habit influence the development of cancer?
 
 Diet may influence cancer through exogenous carcinogens in food, endogenous synthesis of carcinogens from dietary components, lack of protective factors, and obesity. Although geographic and migration studies show that diet affects cancer incidence, no particular diet has been proven to cause or prevent cancer.
@@ -6754,11 +6601,6 @@ Diet influences atherosclerosis mainly through its effect on blood lipids and on
 
 **Indirect effects.** Heavy salt intake is strongly linked to hypertension, itself a major risk factor. Overnutrition produces obesity and the metabolic syndrome (central obesity, insulin resistance, dyslipidaemia, hypertension, hypercoagulability and a proinflammatory state) and type 2 diabetes. Diabetes induces hypercholesterolaemia and markedly increases atherosclerosis. Westernisation of diet explains the rising rates of coronary disease in lower-resource countries. Dietary and pharmacologic cholesterol lowering (statins, which also reduce plaque inflammation) is therefore a cornerstone of prevention.
 
-**Vasculitis**
-
-**Types of vasculitis**
-
-
 ## Define ischemic heart disease.
 
 Ischaemic heart disease (IHD) is a group of related clinical syndromes resulting from myocardial ischaemia, which is an imbalance between the supply of oxygenated blood to the myocardium (perfusion) and the cardiac demand for it. Ischaemia reduces oxygenation and ATP generation and also impairs delivery of nutrients and removal of metabolic wastes, so that it is tolerated less well than hypoxaemia alone. In more than 90% of cases the cause is reduced coronary flow from obstructive atherosclerosis of the epicardial coronary arteries, for which reason IHD is often called coronary artery disease. It usually reflects decades of silent progression of atherosclerosis, which begins in childhood or adolescence.
@@ -6931,11 +6773,6 @@ Confirmation is by the ECG and cardiac biomarkers, supported by imaging.
 
 **Other investigations.** The ECG shows ST-segment elevation in STEMI (ST depression or T-wave changes in NSTEMI), followed by T-wave inversion and Q waves. Echocardiography shows regional wall-motion abnormality and reduced ejection fraction, and coronary angiography shows the occluded vessel.
 
-**Hypertensive Heart Disease**
-
-**Hypertensive heart disease (case)**
-
-
 ## A 70y man has long-standing hypertension. What type of adaptive change may occur in his heart?
 
 The adaptive change is concentric left ventricular hypertrophy (systemic hypertensive heart disease). Chronic pressure overload increases wall stress, and the myocytes respond by increasing in size (cellular hypertrophy) with synthesis of new sarcomeres assembled in parallel to the long axis of the cell, so that the ventricular wall thickens concentrically while the cavity is initially not dilated. The heart weight rises disproportionately (it may exceed 500 g) and the wall thickness may exceed 2 cm. Hypertrophic myocytes show increased transverse diameter, enlarged hyperchromatic nuclei and often interstitial and perivascular fibrosis.
@@ -6952,11 +6789,6 @@ Cardiac hypertrophy can also be a physiologic adaptation to a sustained increase
 3. **Growth and manual labour.** Hypertrophic growth of the heart in normal development of the child and adolescent, and in heavy physical work.
 
 The distinguishing feature of physiologic hypertrophy is that it is reversible, with preserved or improved function and normal capillary supply, whereas pathologic hypertrophy (pressure or volume overload) is associated with fibrosis, a relatively inadequate blood supply and a tendency to failure.
-
-**Valvular Heart Disease**
-
-**Rheumatic fever**
-
 
 ## What are the criteria for diagnosis of rheumatic fever?
 
@@ -7094,11 +6926,6 @@ The complications of infective endocarditis generally begin within the first few
 4. Septic: sepsis, and metastatic abscesses.
 
 Arrhythmias, invasion of the myocardium and systemic embolisation bode particularly ill. Untreated IE is generally fatal. With 6 or more weeks of antibiotics and/or valve replacement the cure rate is about 98% for low-virulence organisms, 60–90% for enterococci and S. aureus, and only about 50% for gram-negative bacilli or fungi.
-
-**Cardiomyopathies**
-
-**Types of cardiomyopathy**
-
 
 ## What is granulopoiesis?
 
@@ -7433,11 +7260,6 @@ Leukaemoid reaction is a reactive increase in white cell count with immature for
 | **Leukoerythroblastic (myelophthisic)** | Immature granulocytes and nucleated red cells, teardrop cells | Marrow infiltration by metastatic carcinoma, granulomatous disease, myelofibrosis |
 | **Plasmacytic (rare)** | Increased plasma cells in blood | Infections such as rubella, serum sickness, and collagen vascular disease |
 
-**Lymph Node Disorders**
-
-**Lymphadenopathy and lymphadenitis**
-
-
 ## What do you mean by lymphadenopathy?
 
 Lymphadenopathy means enlargement of lymph nodes, whether localised to one region or generalised, produced by reactive hyperplasia, infection, infiltration by neoplastic cells, or accumulation of storage material.
@@ -7534,11 +7356,6 @@ The cervical lymph nodes drain the scalp, face, oral cavity, pharynx, larynx, th
 Sarcoidosis, connective tissue disease, drug hypersensitivity, Kikuchi–Fujimoto disease, Kimura disease, Rosai–Dorfman disease and Castleman disease.
 
 Hard, fixed, painless, rapidly enlarging nodes in a middle-aged or elderly smoker suggest metastasis; soft, tender nodes with fever suggest acute infection; and a firm rubbery painless mass in a young person with or without B symptoms suggests lymphoma.
-
-**Leukaemias**
-
-**Leukaemia: definition and classification**
-
 
 ## What is the etiology of leukaemia?
 
@@ -7991,11 +7808,6 @@ Chronic lymphocytic leukaemia is diagnosed by a sustained absolute lymphocytosis
 5. **Cytogenetics and molecular studies (prognostic).** FISH for del(13q14.3) (favourable if isolated), trisomy 12, del(11q) and del(17p) (TP53; unfavourable); TP53 and NOTCH1 mutation; immunoglobulin heavy chain variable gene (IGHV) mutation status (unmutated is unfavourable); ZAP-70 and CD38 expression.
 6. **Other tests.** Serum immunoglobulins (hypogammaglobulinaemia), direct antiglobulin test, LDH, β₂-microglobulin, and clinical staging by the Rai or Binet system.
 
-**Lymphoid Neoplasms**
-
-**Hodgkin and non-Hodgkin lymphoma**
-
-
 ## Classify lymphoma.
 
 Lymphomas are classified into Hodgkin and non-Hodgkin lymphoma; the non-Hodgkin lymphomas are classified by the WHO according to the cell of origin and the stage of differentiation as B-cell, T-cell and NK-cell neoplasms.
@@ -8221,11 +8033,6 @@ Hodgkin lymphoma (HL) is segregated from the non-Hodgkin lymphomas (NHLs) becaus
 | **Staging** | Highly informative for prognosis and therapy | Less useful, since widely disseminated early |
 | **Prognosis** | Curable in most (stage I–IIA about 90%) | Varies with type from indolent to highly aggressive |
 
-**Plasma Cell Disorders**
-
-**Myeloma and paraproteinaemia**
-
-
 ## What is paraproteinaemia?
 
 Paraproteinaemia, or monoclonal gammopathy, is the presence in the blood or urine of a homogeneous monoclonal immunoglobulin or immunoglobulin fragment—the M component or paraprotein—secreted by a single clone of plasma cells or B lymphocytes.
@@ -8393,11 +8200,6 @@ The probable diagnosis is **multiple myeloma** (plasma cell myeloma).
 3. **Urine protein electrophoresis** of a concentrated 24-hour specimen shows a sharp monoclonal band.
 4. **Immunofixation electrophoresis (definitive).** It identifies the protein as κ or λ free light chain and confirms its monoclonality.
 5. **Serum free light chain assay** (κ/λ ratio) is the most sensitive test and is also used in monitoring.
-
-**Myeloproliferative and Myelodysplastic Disorders**
-
-**Myeloproliferative disorders**
-
 
 ## What do you know about myelodysplastic syndrome?
 
@@ -8687,11 +8489,6 @@ The aspirate in aplastic anaemia is typically dilute and haemodilute, and the tr
 
 **Treatment and prognosis.** Untreated, death from bleeding or thrombosis occurs within months. Maintaining the haematocrit at nearly normal levels by phlebotomy with low-dose aspirin extends median survival to about 10 years; cytoreduction (hydroxyurea) in high-risk patients; JAK2 inhibitors (ruxolitinib) for the spent phase.
 
-**Spleen and Hypersplenism**
-
-**Splenomegaly and hypersplenism**
-
-
 ## Causes of hypersplenism.
 
 Hypersplenism is enlargement of the spleen with cytopenias caused by increased sequestration and destruction of blood cells, and it complicates any cause of splenomegaly, the commonest being portal hypertension from cirrhosis, haematologic disorders such as haemolytic anaemias and myeloproliferative neoplasms, lymphomas and chronic infections.
@@ -8739,11 +8536,6 @@ The classical diagnostic criteria of hypersplenism are splenomegaly, one or more
 3. **Normal or hyperplastic (cellular) bone marrow** with normal or increased precursors, reflecting a compensatory response to peripheral destruction, with no other cause of cytopenia (such as marrow failure, infiltration or drug effect).
 4. **Evidence of increased destruction or pooling.** Shortened survival of red cells or platelets, with increased splenic uptake demonstrated by radioisotope studies (⁵¹Cr-labelled red cells or ¹¹¹In-labelled platelets, with excess counting over the spleen), and increased plasma volume; reticulocytosis if haemolysis is present.
 5. **Response to splenectomy.** Correction of cytopenias after removal of the spleen. This is retrospective but diagnostic; splenectomy is reserved for severe cases as it increases the risk of overwhelming sepsis by encapsulated bacteria (pneumococci, meningococci, Haemophilus influenzae), so asplenic patients must be vaccinated.
-
-**Clinical Scenarios**
-
-**Leukocyte and plasma cell cases**
-
 
 ## Elderly man (55 or 65 years) with bone/back pain, punched-out skull lesions or osteolytic lesions, high ESR, vertebral fracture — Most probable diagnosis? How will you establish / confirm the diagnosis?
 
@@ -9178,11 +8970,6 @@ Dry taps are frequent in the following conditions:
 
 Others include chronic myeloid leukaemia and polycythaemia vera with marrow fibrosis and Gaucher disease.
 
-**Anaemia: General**
-
-**Classification and investigation**
-
-
 ## What is anemia?
 
 Anaemia is a reduction in the total circulating red cell mass below normal limits, which in practice is diagnosed by a haemoglobin concentration or haematocrit below the reference range for the age and sex of the patient, and which leads to reduced oxygen-carrying capacity of the blood and tissue hypoxia.
@@ -9292,11 +9079,6 @@ According to these results, anaemia is typed as microcytic hypochromic, normocyt
 Polycythaemia denotes an abnormally high number of circulating red cells, usually with a corresponding rise in haemoglobin concentration and haematocrit (for example, haemoglobin above 16.5 g/dL in men and 16.0 g/dL in women, or haematocrit above 49% and 48%, respectively).
 
 It is classified as **relative**, when there is haemoconcentration from reduced plasma volume (dehydration due to water deprivation, prolonged vomiting or diarrhoea, or diuretic excess) with a normal red cell mass, and **absolute**, when the total red cell mass is increased. Absolute polycythaemia is **primary** when it results from an intrinsic abnormality of haemopoietic precursors, the most common cause being polycythaemia vera, a myeloproliferative neoplasm with mutations (most often JAK2) that cause erythropoietin-independent growth of red cell progenitors, and rarely familial erythropoietin receptor mutations. It is **secondary** when it is a response to raised erythropoietin, which may be appropriate (chronic hypoxia: high altitude, chronic lung disease, cyanotic heart disease, smoking, haemoglobin variants with high oxygen affinity, Chuvash polycythaemia from VHL mutations stabilising HIF) or inappropriate (erythropoietin-secreting tumours such as renal cell carcinoma, hepatocellular carcinoma and cerebellar haemangioblastoma).
-
-**Iron Deficiency and Microcytic Anaemia**
-
-**Iron deficiency anaemia**
-
 
 ## Causes of iron deficiency anaemia.
 
@@ -9544,11 +9326,6 @@ The iron profile will be that of iron deficiency:
 - **Soluble transferrin receptor:** raised.
 - **Marrow iron:** absent on Prussian blue staining (if examined).
 
-**Megaloblastic and Macrocytic Anaemia**
-
-**Megaloblastic anaemia**
-
-
 ## Define macrocytic anemia.
 
 Macrocytic anaemia is an anaemia in which the red cells are larger than normal, with a mean cell volume above the upper limit of the reference range, that is, above about 96 to 100 fL.
@@ -9775,11 +9552,6 @@ The cause is loss of intrinsic factor. After gastrectomy (total or, more slowly,
 - Raised LDH and unconjugated bilirubin.
 
 **Confirmation.** Serum vitamin B₁₂ is low (below about 200 pg/mL), with raised serum homocysteine and methylmalonic acid; serum folate is normal or raised. The absorption defect can be demonstrated by the Schilling test, with correction on adding intrinsic factor, though it is rarely used now. Antibodies to intrinsic factor are generally absent, which distinguishes this from pernicious anaemia. The diagnosis is further supported by a brisk reticulocyte response, beginning about 5 days after parenteral B₁₂ treatment. Concomitant iron deficiency should be sought with iron studies, because the combination gives a dimorphic picture.
-
-**Haemolytic Anaemias**
-
-**Haemolytic anaemia**
-
 
 ## Define haemolytic anaemia.
 
@@ -10017,11 +9789,6 @@ Haemolytic disease of the newborn (HDN, erythroblastosis fetalis) is a haemolyti
 The most important is Rh (D) incompatibility, in which an Rh-negative mother who has been sensitised to D antigen (usually at delivery of a previous Rh-positive infant, or by miscarriage, amniocentesis or transfusion) forms anti-D IgG, which crosses the placenta in a subsequent pregnancy and coats the red cells of an Rh-positive foetus, causing extravascular haemolysis in the spleen and liver. ABO incompatibility (mother group O, infant group A or B) is more common but milder, and may affect the first pregnancy because natural anti-A and anti-B IgG exist.
 
 The consequences are anaemia, compensatory erythroid hyperplasia and extramedullary haemopoiesis with hepatosplenomegaly, and nucleated red cells in the blood (hence erythroblastosis); jaundice from unconjugated hyperbilirubinaemia in the first 24 hours, which may cause kernicterus; and, in the severe form, hydrops fetalis with generalised oedema, ascites, cardiac failure and foetal death. The direct Coombs test on the infant's cells is positive. Prevention is by giving anti-D immunoglobulin to Rh-negative mothers at 28 weeks and within 72 hours after delivery of an Rh-positive infant; treatment includes phototherapy, exchange transfusion and intrauterine transfusion.
-
-**Haemoglobinopathies and Thalassaemia**
-
-**Haemoglobinopathies**
-
 
 ## Normal types of haemoglobin.
 
@@ -10287,11 +10054,6 @@ Sickle cell anaemia is diagnosed by the finding of a normocytic haemolytic anaem
 6. **Biochemical evidence of haemolysis:** raised unconjugated bilirubin and LDH, low haptoglobin.
 7. **Others:** DNA analysis, prenatal diagnosis (amniocentesis, chorionic villus sampling), and routine newborn screening using heel-stick samples.
 
-**Aplastic Anaemia and Pancytopenia**
-
-**Pancytopenia**
-
-
 ## What is pancytopenia?
 
 Pancytopenia is the simultaneous reduction of all three formed elements of blood, namely anaemia, leukopenia (particularly neutropenia) and thrombocytopenia, and it is a laboratory finding that reflects a number of different underlying disorders rather than a diagnosis in itself.
@@ -10424,11 +10186,6 @@ The clinical presentation of pancytopenia reflects the deficiency of each cell l
 The probable diagnosis is **severe aplastic anaemia**. The picture is of profound pancytopenia: a haemoglobin of 2 g/dL, a total white cell count of 500 per cubic millimetre (neutrophils probably well below 200, therefore very severe disease) and a platelet count of 12,000 per cubic millimetre (below the 20,000 threshold for severe disease). This degree of marrow failure causes progressive weakness and pallor, persistent infections or fever, and petechial bleeding. In an 11-year-old, the possible causes are idiopathic (most likely), drug or viral-associated, and inherited, notably Fanconi anaemia.
 
 The principal differentials are aleukaemic acute leukaemia, myelodysplastic neoplasm and megaloblastic anaemia, which are distinguished by bone marrow examination. Confirmation requires a bone marrow trephine biopsy showing a markedly hypocellular marrow with fat replacement (cellularity below 25%), with no blasts, fibrosis or infiltrate, and a low reticulocyte count. Chromosomal breakage tests for Fanconi anaemia, PNH flow cytometry and viral serology complete the evaluation. Treatment is stem cell transplantation from an HLA-matched sibling if available (5-year survival above 75%), or immunosuppressive therapy with antithymocyte globulin and cyclosporine, with supportive care.
-
-**Bleeding and Coagulation Disorders**
-
-**Bleeding disorders**
-
 
 ## Define hemorrhagic disorders with example.
 
@@ -10911,11 +10668,6 @@ Bleeding in DIC is a consequence of widespread intravascular coagulation, which 
 
 The result is spontaneous bleeding from multiple sites (skin petechiae and ecchymoses, mucosal and wound oozing, gastrointestinal, urinary, intracranial bleeding). In acute DIC with obstetric complications or major trauma the bleeding diathesis dominates, whereas chronic DIC such as occurs in cancer patients tends to present with thrombotic complications.
 
-**Blood Groups, Transfusion and Anticoagulants**
-
-**Transfusion and anticoagulants**
-
-
 ## Classify blood groups.
 
 Blood groups are classified according to the antigenic systems on the red cell surface, of which the ABO and Rh systems are by far the most important in transfusion practice, and many minor systems also exist.
@@ -11274,11 +11026,6 @@ Older solutions are acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose (
 | CPDA-1 | Adenine supports ATP regeneration; extends storage to 35 days; most widely used in blood bags |
 | SAGM and other additive solutions | Allow plasma removal for other products; red cells stored for 42 days with good viability |
 
-**Clinical Scenarios**
-
-**Haematology cases**
-
-
 ## DIC picture after delivery or induced abortion — Probable diagnosis? Tests / laboratory investigations to establish it (with results)?
 
 The probable diagnosis is disseminated intravascular coagulation (DIC) as a complication of an obstetric event, because after delivery or an induced (especially septic) abortion, release of procoagulants and endothelial injury trigger systemic coagulation with a bleeding diathesis; it is established by thrombocytopenia, prolonged PT, PTT and thrombin time, low fibrinogen and raised D-dimers.
@@ -11449,11 +11196,6 @@ Clinically significant emphysema is largely confined to smokers and patients wit
 **Clinical features.** COPD presents insidiously, usually in smokers of 40 pack-years or more, with progressive exertional dyspnoea and chronic cough with sputum, which is worse in the morning, with exacerbations from infection. Spirometry shows FEV₁/FVC below 0.7. Patients range from "pink puffers" (emphysema-predominant: barrel chest, pursed-lip breathing, weight loss, low diffusing capacity, near-normal blood gases) to "blue bloaters" (bronchitis-predominant: productive cough, hypoxaemia, hypercapnia, cyanosis and cor pulmonale).
 
 **Complications and management.** Pulmonary hypertension and cor pulmonale, respiratory failure with superimposed infection, and pneumothorax from ruptured blebs. Treatment includes smoking cessation, bronchodilators with inhaled corticosteroids, oxygen therapy, antibiotics for exacerbations, bullectomy, lung volume reduction and transplantation. Prevention of smoking is the best hope.
-
-**Chronic Interstitial (Restrictive) Lung Diseases**
-
-**Interstitial lung disease**
-
 
 ## What is pneumonia?
 
@@ -11703,11 +11445,6 @@ The expected microscopic finding in the lung (or in a lymph node) is the **casea
 
 In sputum smears or in bronchial lavage fluid, AFB are seen. In a cavitary lesion there may be a thick fibrous wall lined by caseous material, and vessels crossing the cavity or an aneurysm of a pulmonary artery branch (Rasmussen aneurysm) may explain the haemoptysis. Confluent tubercles produce larger caseous zones.
 
-**Lung Tumours**
-
-**Bronchogenic carcinoma**
-
-
 ## Classify tumours of lung (WHO classification of bronchogenic carcinoma).
 
 Of lung tumours, 90–95% are carcinomas, about 5% are carcinoid tumours, and 2–5% are mesenchymal and other tumours. The histologic classification of malignant epithelial tumours of the lung (WHO, as summarised in Robbins Table 15.9) is as follows.
@@ -11930,11 +11667,6 @@ Gastrointestinal stromal tumour is the commonest mesenchymal tumour of the abdom
 
 **Clinical behaviour.** Symptoms are abdominal pain, a mass, gastrointestinal bleeding, anaemia, or obstruction; many are found incidentally. The malignant potential depends on tumour size, mitotic rate, and site (small intestinal tumours behave worse than gastric tumours); metastases are to the liver and peritoneum, and lymph node spread is rare. Treatment is surgical resection, and unresectable or metastatic disease responds to tyrosine kinase inhibitors such as imatinib.
 
-**Congenital Anomalies**
-
-**Meckel diverticulum, Hirschsprung disease**
-
-
 ## List four congenital anomalies of GIT.
 
 1. Meckel diverticulum
@@ -11952,11 +11684,6 @@ Hirschsprung disease (congenital aganglionic megacolon) is a functional obstruct
 **Morphology.** The rectum is always affected, and the lesion extends proximally for a variable distance: short-segment (rectosigmoid), the commoner pattern, and long-segment disease. The aganglionic segment appears normal or contracted, whereas the proximal innervated colon is dilated and hypertrophic (megacolon), may be perforated, and may show shallow ulcers. Histology shows absence of ganglion cells with hypertrophic nerve bundles; intraoperative frozen section confirms ganglion cells at the anastomotic site.
 
 **Clinical features.** Failure to pass meconium in the first postnatal days, followed by abdominal distention, constipation, and bilious vomiting. Complications are enterocolitis (in about 25% of cases), electrolyte disturbance, perforation, and peritonitis. Treatment is resection of the aganglionic segment and anastomosis of the normal colon to the rectum. Acquired megacolon (Chagas disease, obstruction, ulcerative colitis) differs because ganglion cells are present, except in Chagas disease.
-
-**Small and Large Intestines**
-
-**Malabsorption**
-
 
 ## List five causes of malabsorption syndrome.
 
@@ -12095,11 +11822,6 @@ The possible complications of acute appendicitis are:
 
 The histological diagnosis of acute appendicitis rests on **neutrophilic infiltration of the muscularis propria**. Neutrophils infiltrate the mucosa, submucosa, and muscularis propria, usually with mucosal ulceration and neutrophils within the lumen, which often contains pus (acute suppurative appendicitis). The wall is congested and oedematous, with dilated vessels and sometimes thrombosis; the serosa may show a fibrinopurulent exudate (periappendicitis). In more advanced cases there is transmural necrosis with haemorrhage and green-black discoloration (acute gangrenous appendicitis), which may perforate and form an abscess. A fecalith may be found in the lumen, and the appendix is grossly swollen, red, and tense, with a dull serosa covered by exudate.
 
-**Laboratory Tests of the GIT**
-
-**Occult blood test**
-
-
 ## Write a short note on occult blood test.
 
 Occult (hidden) blood in the stool is blood present in such small amount that it is not visible to the naked eye or by colour changes in the stool. The test detects bleeding from the gastrointestinal tract, and its main use is in screening for colorectal neoplasia and in the investigation of unexplained iron deficiency anaemia.
@@ -12113,13 +11835,6 @@ Occult (hidden) blood in the stool is blood present in such small amount that it
 **Procedure.** Stool samples from three consecutive days are tested (guaiac) after avoiding red meat, peroxidase-rich vegetables, and vitamin C for 3 days (false positives and negatives), as well as aspirin and NSAIDs, which may cause bleeding.
 
 **Interpretation.** A positive test indicates bleeding, in the absence of visible blood, from oesophagitis, peptic ulcer, gastritis, carcinoma of the stomach or colon, colorectal adenomas (large adenomas bleed), inflammatory bowel disease, angiodysplasia, hookworm infestation, haemorrhoids, and drugs. A positive result calls for colonoscopy (and upper endoscopy where indicated). A negative result does not exclude disease, since bleeding from polyps and tumours is intermittent.
-
-**Ch 18 · Liver and Gallbladder**
-
-**Jaundice and Hyperbilirubinaemia**
-
-**Jaundice**
-
 
 ## What is jaundice?
 
@@ -12268,11 +11983,6 @@ This is **obstructive (posthepatic, cholestatic, or surgical) jaundice**. Jaundi
 
 When the gallbladder is palpable, the cause must be considered carefully: according to Courvoisier's law, a palpable, nontender gallbladder with jaundice suggests malignant obstruction (pancreatic head or ampullary cancer), because a gallbladder with chronic stones is usually fibrotic and contracted and cannot distend, whereas a tender palpable gallbladder suggests acute cholecystitis or mucocele with stone impaction. Investigation is by ultrasonography, CT, MRCP, or ERCP.
 
-**Liver Function and Hepatomegaly**
-
-**Liver function tests**
-
-
 ## What are the liver function tests (names, normal values; short note)?
 
 Liver function tests are a group of blood tests that assess hepatocellular injury, cholestasis, and the synthetic and excretory capacity of the liver. Reference ranges vary between laboratories.
@@ -12334,11 +12044,6 @@ Hepatomegaly may result from the following groups of conditions.
 | Neoplasms | Hepatocellular carcinoma and metastatic carcinoma (massive nodular hepatomegaly), haemangioma |
 | Infiltrative and storage disorders | Amyloidosis, haemochromatosis, Wilson disease, glycogen storage disease, Gaucher disease, sarcoidosis |
 | Haematological | Leukaemias, lymphomas, myeloproliferative disorders, thalassaemia, sickle cell disease with extramedullary haematopoiesis |
-
-**Viral Hepatitis**
-
-**Hepatitis B and hepatotropic viruses**
-
 
 ## Name the hepatotropic viruses.
 
@@ -12421,11 +12126,6 @@ A jaundiced young adult with a recent history of blood transfusion most probably
 
 The provisional diagnosis is **acute viral hepatitis**, most likely hepatitis B (or C) acquired through the blood transfusion. The prodromal anorexia, malaise, and jaundice, with a markedly raised serum alanine aminotransferase (SGPT), indicate hepatocellular injury. It is confirmed by serology (HBsAg and anti-HBc IgM; anti-HCV and HCV RNA; anti-HAV IgM and anti-HEV IgM to exclude other viruses), liver function tests, and prothrombin time; a liver biopsy is not required in acute disease.
 
-**Alcoholic Liver Disease**
-
-**Alcohol and the liver**
-
-
 ## Give an outline of the spectrum of liver diseases associated with alcohol abuse.
 
 Alcohol-associated liver disease has three distinctive, overlapping forms: hepatic steatosis, alcoholic (alcohol-associated) steatohepatitis, and fibrosis leading to cirrhosis. Short-term ingestion of about 80 g of alcohol per day produces mild reversible steatosis, the risk of severe injury becomes significant at 80 g or more per day, and 160 g or more daily for 10 to 20 years is frequently associated with severe injury; only 10% to 15% of persons with alcohol use disorder develop cirrhosis. Women are more susceptible, and genetic factors, iron overload, and HBV or HCV infection modify the risk. The injury begins in the centrilobular (zone 3) region.
@@ -12439,11 +12139,6 @@ Alcohol-associated liver disease has three distinctive, overlapping forms: hepat
 **Pathogenesis.** Alcohol is metabolised by alcohol dehydrogenase to acetaldehyde (generating NADH, which promotes lipogenesis and suppresses fatty acid oxidation), and by CYP2E1, which generates reactive oxygen species. Acetaldehyde forms protein adducts and induces lipid peroxidation. Gut-derived endotoxin activates Kupffer cells through TLR4, with release of cytokines, and stellate cell activation causes fibrosis.
 
 **Prognosis.** The 5-year survival approaches 90% in abstainers without jaundice, ascites, or haematemesis but falls to 50% to 60% in those who continue to drink; the death is due to hepatic coma, gastrointestinal haemorrhage, infection, hepatorenal syndrome, or hepatocellular carcinoma.
-
-**Cirrhosis**
-
-**Cirrhosis: types and aetiology**
-
 
 ## Define cirrhosis of liver.
 
@@ -12563,11 +12258,6 @@ Hepatic encephalopathy is a spectrum of potentially reversible neuropsychiatric 
 
 **Management.** Correction of precipitating factors, lactulose and rifaximin to reduce ammonia production and absorption, and protein-appropriate nutrition; liver transplantation in refractory cases.
 
-**Portal Hypertension**
-
-**Ascites**
-
-
 ## Enumerate the important causes of ascites.
 
 The important causes of ascites are:
@@ -12580,11 +12270,6 @@ The important causes of ascites are:
 6. **Malignancy**: metastatic disease of the liver and peritoneum, and ovarian tumours (Meigs syndrome).
 7. **Pancreatic disease** (pancreatic ascites) and lymphatic obstruction (chylous ascites).
 8. Myxoedema.
-
-**Tumours of the Liver**
-
-**Hepatocellular carcinoma**
-
 
 ## Write down the etiology of hepatocellular carcinoma.
 
@@ -12627,11 +12312,6 @@ A 59-year-old man with chronic hepatitis B and a space-occupying lesion in the r
 **Microscopic.** Well and moderately differentiated tumours resemble normal hepatocytes, growing as thick trabeculae (more than 3 cells thick), pseudoglandular structures with bile plugs, or sheets; the poorly differentiated tumours show marked atypia. Precursors are dysplastic nodules in a cirrhotic liver (large and small cell change). The fibrolamellar variant (adolescents and young adults, normal AFP) shows large polygonal oncocytic cells, prominent nucleoli, and lamellar collagen bundles.
 
 **Spread.** Haematogenous metastasis (lung, bone) late; lymph node spread in fewer than 5%. The 5-year survival is about 30% for localised disease and 5% to 10% with extrahepatic spread.
-
-**Gallbladder**
-
-**Gallstones**
-
 
 ## What are the factors that favour stone formation within gallbladder?
 
@@ -12908,9 +12588,6 @@ The complications of acute pyelonephritis are:
 5. **Acute kidney injury**, especially when papillary necrosis or obstruction supervenes.
 6. **Chronic pyelonephritis**, with coarse scarring, calyceal deformity, hypertension and progressive renal insufficiency, after recurrent or persistent infection; some patients later develop secondary focal segmental glomerulosclerosis.
 
-**Acute Kidney Injury**
-
-
 ## List the causes of acute renal failure.
 
 Acute kidney injury (acute renal failure) is a rapid decline in GFR over hours to days with retention of urea and creatinine and dysregulation of fluid and electrolyte balance. Its causes are classified as prerenal, intrinsic renal and postrenal.
@@ -12941,9 +12618,6 @@ The most likely mechanism is **acute tubular injury (acute tubular necrosis) of 
 The proximal tubular cells, with their high metabolic rate and oxygen consumption, are particularly sensitive to ischaemia. Ischaemia causes loss of cell polarity as Na⁺/K⁺-ATPase redistributes to the luminal surface, so that sodium delivery to the distal tubule rises and incites afferent arteriolar vasoconstriction through tubuloglomerular feedback. Renin–angiotensin activation and endothelial injury, with increased endothelin and reduced nitric oxide and prostacyclin, add to intrarenal vasoconstriction. Injured cells slough into the lumen and form casts that obstruct the tubule, while the filtrate leaks back through the damaged epithelium into the interstitium. All of these factors lower GFR, causing oliguria and then anuria, as in this child.
 
 In a child with diarrhoea followed by cessation of micturition, haemolytic uraemic syndrome from Shiga-like toxin–producing E. coli is an important consideration, but it usually follows bloody diarrhoea and is accompanied by microangiopathic haemolytic anaemia and thrombocytopenia.
-
-**Cystic Diseases of the Kidney**
-
 
 ## Write down the morphology of renal cell carcinoma (short note).
 
@@ -13020,9 +12694,6 @@ Tumours of the kidney are classified as follows.
 
 **Prognosis.** With nephrectomy, combination chemotherapy and, when indicated, radiotherapy, over 90% of children with the favourable histology are cured; anaplastic tumours respond less well.
 
-**Clinical Manifestations of Renal Disease: Haematuria**
-
-
 ## Write a short note on haematuria.
 
 **Definition.** Haematuria is the presence of an abnormal number of red blood cells in the urine. It may be macroscopic (gross), when the urine is visibly coloured, or microscopic, when red cells are found only on dipstick testing or microscopy of the sediment (conventionally three or more red cells per high-power field).
@@ -13074,9 +12745,6 @@ Microscopic haematuria is the presence of red blood cells in the urine in excess
 The first step is to determine its source. Dysmorphic red cells, red cell casts and accompanying proteinuria indicate a glomerular origin; uniformly shaped red cells without casts indicate bleeding from the urinary tract. Glomerular causes include IgA nephropathy, thin basement membrane disease, Alport syndrome and mild or resolving glomerulonephritis, which typically present as isolated urinary abnormalities. Non-glomerular causes include calculi, infection, tumours, polycystic disease, benign prostatic hyperplasia, and sickle cell trait.
 
 The evaluation comprises urine microscopy, culture and cytology, serum creatinine, assessment of proteinuria, ultrasonography and further imaging, cystoscopy in patients at risk of urothelial malignancy, particularly older adults and smokers, and renal biopsy when a glomerular cause is suspected. Microscopic haematuria is often asymptomatic, but it can be the only early sign of serious disease such as bladder or renal cancer, or of progressive glomerular disease, and it should never be dismissed without evaluation.
-
-**Clinical Manifestations of Renal Disease: Proteinuria**
-
 
 ## What do you mean by massive proteinuria?
 
@@ -13165,9 +12833,6 @@ Proteinuria is the excretion of more than 150 mg of protein in the urine per day
 4. Early identification allows intervention — strict glycaemic and blood pressure control and renin–angiotensin system blockade — that slows progression to overt nephropathy and renal failure.
 
 It is best measured as the albumin–creatinine ratio on a first morning urine, and a positive result should be confirmed on repeat samples, since fever, exercise, urinary infection and menstruation can cause transient elevation.
-
-**Clinical Manifestations of Renal Disease: Renal Function Tests**
-
 
 ## Give the normal serum concentration of uric acid.
 
@@ -13314,9 +12979,6 @@ Sugar appears in the urine in renal glycosuria because of a defect in the tubula
 
 In renal glycosuria the transport capacity is reduced or the threshold is lowered, because of defective or deficient cotransporters, so the tubules cannot reabsorb all the filtered glucose even at a normal plasma concentration, and the surplus is excreted in the urine.
 
-**Clinical Manifestations of Renal Disease: Urine Examination**
-
-
 ## Name the routine tests/investigations done on urine.
 
 The routine examination of urine comprises the following.
@@ -13402,9 +13064,6 @@ The causes of oliguria are grouped as prerenal, renal and postrenal.
 - Benign prostatic hyperplasia, prostate or bladder tumours, urethral stricture, neurogenic bladder
 
 **Physiological:** reduced fluid intake or excessive sweating.
-
-**Clinical Manifestations of Renal Disease: Bence Jones Protein**
-
 
 ## Classify testicular (germ cell) tumours.
 
@@ -13513,9 +13172,6 @@ Descent occurs in two phases: a transabdominal phase, controlled by Müllerian-i
 
 **Management.** Most inguinal testes descend spontaneously in the first year; if not, orchiopexy is performed, preferably at 6–12 months of age, before histological changes develop.
 
-**Prostate**
-
-
 ## Write a short note on benign prostatic hyperplasia (70y male with prostatism: likely diagnosis).
 
 Benign prostatic hyperplasia (nodular hyperplasia) is the commonest benign prostatic disease in men older than 50 years. About 30% of men in this age group have moderate to severe symptoms, and histological evidence is found in up to 90% of men by 80 years. It is not a premalignant lesion.
@@ -13541,9 +13197,6 @@ The diagnostic workup for benign prostatic hyperplasia comprises:
 6. **Uroflowmetry** (reduced peak flow rate) and measurement of **post-void residual** urine volume.
 7. **Ultrasonography** of the kidneys and bladder, and transrectal ultrasound, to measure prostatic size and to detect hydronephrosis, bladder wall thickening, diverticula and stones.
 8. **Cystoscopy and urodynamic studies** where indicated, and **biopsy** if the PSA is elevated or a nodule is palpable.
-
-**Male Infertility**
-
 
 ## What are the common hormones done in male and female to evaluate infertility?
 
@@ -13571,9 +13224,6 @@ Male infertility is investigated in the laboratory as follows.
 4. **Genetic tests:** karyotype (Klinefelter syndrome, 47,XXY), Y chromosome microdeletion analysis (AZF regions) in severe oligospermia and azoospermia, and CFTR mutation testing in congenital absence of the vas deferens.
 5. **Testicular biopsy**, in azoospermia, to distinguish obstructive from non-obstructive causes (histology showing normal spermatogenesis, maturation arrest or Sertoli cell–only pattern) and for sperm retrieval.
 6. **Imaging:** scrotal ultrasonography (varicocele, testicular size, masses) and transrectal ultrasonography (ejaculatory duct obstruction).
-
-**Semen Analysis**
-
 
 ## Mention the indications of semen analysis.
 
@@ -14166,9 +13816,6 @@ The diagnosis rests on nuclear features, not architecture, so that follicular va
 | Spread | Lymphatic, to cervical nodes | Haematogenous (bone, lung, liver); nodes uncommonly involved |
 | Prognosis | 10-year survival over 95% | Good if minimally invasive; widely invasive disease carries about 50% 10-year mortality |
 
-**Thyroid Disease and Tumours (Viva)**
-
-
 ## Define diabetes mellitus.
 
 **Diabetes mellitus** is a group of metabolic disorders characterised by chronic hyperglycaemia resulting from defects in insulin secretion, insulin action or both, and associated with disturbances of carbohydrate, fat and protein metabolism. The sustained hyperglycaemia leads to long-term damage of the eyes, kidneys, nerves, heart and blood vessels.
@@ -14367,9 +14014,6 @@ Investigation of this patient:
 3. **Complication and risk assessment:** lipid profile, serum creatinine and urea, electrolytes, liver function tests (MASLD), ECG, blood pressure measurement and fundoscopy.
 4. **Other:** thyroid function if weight loss is unexplained, and tests to exclude a pancreatic cause (amylase, imaging) and secondary diabetes.
 
-**Terminology and Normal Skin**
-
-
 ## Write a short note on basal cell carcinoma.
 
 Basal cell carcinoma is a locally invasive malignant epithelial tumour that arises from the basal cells of the epidermis and hair follicles. It is the commonest human cancer and the commonest malignant tumour of the skin in fair-skinned people. It occurs in older adults, predominantly on the sun-exposed skin of the face, and its development is closely linked to cumulative ultraviolet exposure, which damages DNA, with consequent mutation of TP53 and of the Hedgehog pathway gene PTCH1. Predisposing factors include fair skin, xeroderma pigmentosum, chronic arsenic ingestion, ionising radiation, immunosuppression and the inherited basal cell naevus (Gorlin) syndrome.
@@ -14417,9 +14061,6 @@ The diagnosis of malignant melanoma is confirmed histologically.
 4. **Regional lymph nodes:** FNAC or biopsy of an enlarged inguinal node to confirm metastasis, or sentinel lymph node biopsy for clinically negative nodes.
 5. **Staging investigations:** chest X-ray or CT, ultrasonography or CT of the abdomen and groin, and PET-CT or MRI brain in advanced disease; serum LDH.
 6. **Molecular testing** for BRAF V600 (and KIT in acral melanoma) when advanced disease is treated with targeted therapy.
-
-**Osteomyelitis**
-
 
 ## What is osteomyelitis?
 
@@ -14548,9 +14189,6 @@ Morphology. Tuberculous infection begins in the vertebral body, often in the ant
 
 Clinical features and complications. The patient has back pain, stiffness, constitutional symptoms of tuberculosis, and a spinal deformity. Compression of the spinal cord by the abscess, granulation tissue or collapsed vertebrae leads to **paraplegia** (Pott paraplegia). Diagnosis is made by radiology (destruction of vertebral bodies with disc space narrowing and paravertebral shadow), by CT or MRI, and by biopsy and culture or PCR for tubercle bacilli. Treatment is with antituberculous chemotherapy and, if necessary, surgical decompression and stabilisation.
 
-**Bone Tumours**
-
-
 ## Name the bone-forming tumours / classify bone tumours.
 
 Bone tumours are classified according to the tissue they form.
@@ -14611,15 +14249,9 @@ Radiology. An eccentric, purely lytic, expansile lesion with a "soap-bubble" app
 
 Behaviour. Pain and swelling near a joint, sometimes a pathological fracture. The tumour recurs in 40 to 60% of cases after curettage; rarely it metastasises to the lungs. It is treated by curettage with adjuvant therapy, wide excision for aggressive tumours, and denosumab for unresectable disease.
 
-**Joint Diseases**
-
-
 ## Name 2 systemic diseases that affect joints.
 
 Two important systemic diseases that affect the joints are **rheumatoid arthritis** and **systemic lupus erythematosus**. Rheumatoid arthritis is a chronic autoimmune inflammatory disease that affects the synovium of small and large joints symmetrically, producing synovitis, pannus formation and destruction of cartilage and bone, in addition to systemic features such as rheumatoid nodules and vasculitis. Systemic lupus erythematosus is an autoimmune disease of multiple organs in which a non-erosive, deforming arthritis commonly affects the small joints of the hands. Other examples include gout, ankylosing spondylitis and psoriatic arthritis.
-
-**Soft Tissue Tumours**
-
 
 ## What is meningitis? What are the types?
 
@@ -14710,9 +14342,6 @@ The diagnosis is confirmed by examining the cerebrospinal fluid, obtained by lum
 3. **Blood tests:** total and differential leukocyte count (neutrophil leukocytosis), C-reactive protein, procalcitonin, blood glucose for comparison with CSF glucose, coagulation profile when meningococcaemia is suspected.
 4. **Imaging** (CT or MRI) if complications such as hydrocephalus, abscess or infarction are suspected.
 
-**CSF Examination**
-
-
 ## What is pleocytosis?
 
 Pleocytosis is an increase in the number of cells in the cerebrospinal fluid above the normal value, which is up to 5 lymphocytes (mononuclear cells) per microlitre in adults. It reflects meningeal or parenchymal inflammation or the presence of tumour cells. The predominant cell type indicates the cause. A neutrophilic pleocytosis characterises acute bacterial meningitis; a lymphocytic pleocytosis is seen in viral, tuberculous, fungal and partially treated bacterial meningitis; eosinophils appear in parasitic infections; and malignant cells are seen in carcinomatous or leukaemic meningitis.
@@ -14732,9 +14361,6 @@ The indications for examination of CSF are as follows.
 8. **Therapeutic and diagnostic uses:** intrathecal chemotherapy or antibiotics, spinal anaesthesia, and myelography.
 
 Lumbar puncture is contraindicated when there is raised intracranial pressure with a mass lesion, a bleeding disorder, or infection at the puncture site.
-
-**Tumours**
-
 
 ## Write a short note on peculiarities of CNS neoplasm.
 
@@ -14762,9 +14388,6 @@ Gross. A firm, rounded or lobulated, well-demarcated tumour attached to the dura
 Microscopic. Several patterns exist: the meningothelial type with syncytial whorls of cells; the fibroblastic type with spindle cells; the transitional type with both; and the psammomatous type with calcified whorls forming psammoma bodies. Cells have uniform oval nuclei with intranuclear pseudo-inclusions and express epithelial membrane antigen. Most are WHO grade 1; atypical (grade 2) and anaplastic (grade 3) meningiomas show greater mitotic activity and brain invasion and recur frequently.
 
 Clinical features. Headache, seizures or progressive focal deficits through compression of the adjacent brain; radiologically a dural-based enhancing mass with a "dural tail". The treatment is surgical excision, with radiotherapy for atypical tumours.
-
-**Lens**
-
 
 ## Give the normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻.
 
