@@ -2858,10 +2858,6 @@ Confirmation rests on demonstrating acute inflammation and identifying the causa
 5. **Imaging**: ultrasound to demonstrate a fluid collection or abscess; radiography, CT or MRI if bone is involved.
 6. Special stains and cultures (acid-fast) if tuberculosis is suspected.
 
-**Ch 4 · Haemodynamic Disorders, Thromboembolic Disease, and Shock**
-
-95 questions
-
 ## Define edema.
 
 Oedema is the accumulation of excess fluid in the interstitial tissue spaces, resulting from a net movement of water from the vasculature into the extravascular space; when the fluid collects in a body cavity it is called an effusion.
