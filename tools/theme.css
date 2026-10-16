@@ -217,7 +217,7 @@ body{font-feature-settings:"lnum","tnum" 0;-webkit-font-smoothing:antialiased;te
 h1{letter-spacing:-.03em}h2,h3,h4{letter-spacing:-.015em;text-wrap:balance}
 .lede,.ans p,.ans li{text-wrap:pretty}
 .ans{line-height:1.72}
-.ans p,.ans li,.lede{max-width:68ch}
+.lede{max-width:68ch}.ans p,.ans li{max-width:none}
 .ans p{margin:0 0 .85em}.ans ul,.ans ol{margin:.4em 0 .9em}.ans li{margin:.3em 0}
 .lede{line-height:1.7}
 h2{margin-top:56px}
