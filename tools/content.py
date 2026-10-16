@@ -62,21 +62,39 @@ def _md(t):
     import html as _h
     inl = lambda s: _re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', _h.escape(s, quote=False))
     out, blocks = [], _re.split(r'\n\s*\n', t.strip())
+    cur = [None]   # open numbered list: {'items': [html...], 'start': n, 'last': n}; stays open across nested bullet blocks
+    def flush():
+        c = cur[0]
+        if c:
+            out.append('<ol%s>' % ('' if c['start'] == 1 else ' start="%d"' % c['start']) + ''.join('<li>%s</li>' % i for i in c['items']) + '</ol>')
+            cur[0] = None
     for blk in blocks:
         ls = [l.rstrip() for l in blk.split('\n') if l.strip()]
         if not ls: continue
         if all(l.lstrip().startswith(('- ', '* ')) for l in ls):
-            out.append('<ul>' + ''.join('<li>%s</li>' % inl(l.lstrip()[2:]) for l in ls) + '</ul>')
+            ul = '<ul>' + ''.join('<li>%s</li>' % inl(l.lstrip()[2:]) for l in ls) + '</ul>'
+            if cur[0]: cur[0]['items'][-1] += ul      # bullets under a numbered item -> nested, numbering continues after
+            else: out.append(ul)
         elif all(_re.match(r'\d+[.)] ', l.lstrip()) for l in ls):
-            out.append('<ol>' + ''.join('<li>%s</li>' % inl(_re.sub(r'^\d+[.)] ', '', l.lstrip())) for l in ls) + '</ol>')
-        elif all(l.lstrip().startswith('|') for l in ls):
-            rows = [[c.strip() for c in l.strip().strip('|').split('|')] for l in ls if not _re.match(r'^[\s|:-]+$', l)]
-            th = ''.join('<th>%s</th>' % inl(c) for c in rows[0])
-            out.append('<div class="tw"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (th, ''.join('<tr>' + ''.join('<td>%s</td>' % inl(c) for c in r) + '</tr>' for r in rows[1:])))
+            for l in ls:
+                n = int(_re.match(r'(\d+)', l.lstrip()).group(1))
+                c = cur[0]
+                if c and n == c['last'] + 1:
+                    c['last'] = n
+                else:
+                    flush(); c = cur[0] = {'items': [], 'start': n, 'last': n}
+                c['items'].append(inl(_re.sub(r'^\d+[.)] ', '', l.lstrip())))
         else:
-            p = inl(' '.join(l.strip() for l in ls))
-            p = _re.sub(r'^<strong>([^<]+:)</strong>', r'<strong class="lbl">\1</strong>', p)
-            out.append('<p>%s</p>' % p)
+            flush()
+            if all(l.lstrip().startswith('|') for l in ls):
+                rows = [[c.strip() for c in l.strip().strip('|').split('|')] for l in ls if not _re.match(r'^[\s|:-]+$', l)]
+                th = ''.join('<th>%s</th>' % inl(c) for c in rows[0])
+                out.append('<div class="tw"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (th, ''.join('<tr>' + ''.join('<td>%s</td>' % inl(c) for c in r) + '</tr>' for r in rows[1:])))
+            else:
+                p = inl(' '.join(l.strip() for l in ls))
+                p = _re.sub(r'^<strong>([^<]+:)</strong>', r'<strong class="lbl">\1</strong>', p)
+                out.append('<p>%s</p>' % p)
+    flush()
     return ''.join(out)
 _AMD = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'answers.md')
 if os.path.exists(_AMD):
