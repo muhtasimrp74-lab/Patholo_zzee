@@ -1,0 +1,9 @@
+/* viva-style answer emphasis (generated markup from format_answers.py) */
+.ans p{margin:0 0 .85em;line-height:1.7}
+.ans strong{font-weight:700;color:var(--navy)}
+.ans em{font-style:italic;color:inherit}
+.ans strong.rh{display:inline-block;margin-right:.35em;color:var(--blue);font-weight:700}
+.ans h4.sub{margin:1.15em 0 .45em;padding-bottom:.25em;font:700 .8rem var(--body);letter-spacing:.07em;text-transform:uppercase;color:var(--blue);border-bottom:1px solid var(--line)}
+.ans li{margin:.3em 0;line-height:1.6}
+.ans li>strong:first-child{color:var(--navy)}
+.ans ul,.ans ol{margin:.4em 0 .9em}
