@@ -358,18 +358,17 @@ Metaplasia does not result from a change in phenotype of an already differentiat
 
 ## Give four examples of squamous metaplasia.
 
-1. Trachea and bronchi of habitual smokers — ciliated columnar → stratified squamous epithelium.
+Squamous metaplasia is the replacement of another epithelium by stratified squamous epithelium. It is the most common epithelial metaplasia (columnar to squamous; Fig. 2.28). Examples:
 
-2. Vitamin A (retinoic acid) deficiency — respiratory epithelium and the cornea (xerophthalmia effect on vision).
-
-3. Salivary gland excretory ducts with stones (normally secretory columnar).
-
-4. Pancreatic or bile ducts with stones — irritation and pressure.
+1. **Respiratory tract in smokers:** the normal ciliated columnar epithelial cells of the trachea and bronchi are replaced by stratified squamous epithelium in response to chronic irritation.
+2. **Vitamin A (retinoic acid) deficiency:** squamous metaplasia of the respiratory epithelium and of the cornea, the latter with highly deleterious effects on vision.
+3. **Stones in the excretory ducts of the salivary glands:** the normally secretory columnar epithelium undergoes squamous metaplasia from irritation and pressure.
+4. **Stones in the pancreatic or bile ducts:** the same mechanism.
 
 
 ## Write down the type of metaplasia in Barrett's esophagus.
 
-Epithelial metaplasia of the squamous → columnar type — the normal stratified squamous epithelium of the lower oesophagus is replaced by intestinal-like columnar (glandular) cells under the influence of refluxed gastric acid.
+The metaplasia in Barrett oesophagus is **epithelial metaplasia of the squamous to columnar type**. The normal stratified squamous epithelium of the lower oesophagus is replaced by intestinal-like columnar (glandular) cells under the influence of refluxed gastric acid (chronic gastro-oesophageal reflux).
 
 - Cancers arising here are typically gland-forming adenocarcinomas.
 - Goblet cells identify intestinal metaplasia.
@@ -444,7 +443,22 @@ The comparison below draws on the chapter for metaplasia and on for dysplasia.
 
 ## Define dysplasia.
 
-Dysplasia literally means "disordered growth". It is a premalignant alteration of epithelium, encountered principally in epithelial cells, in which the cells show variable degrees of cytologic atypia and the epithelium shows loss of the normal architectural orderliness and of orderly maturation. The dysplastic cells exhibit pleomorphism and often contain large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio, and mitotic figures are increased in number and may be seen at levels of the epithelium above the basal layer. The lesion does not invade the basement membrane. Dysplasia is a precursor of malignant transformation, but progression to cancer is not inevitable, and with removal of the inciting cause a dysplasia of moderate severity may be completely reversible. When dysplasia is severe and involves the full thickness of the epithelium it is called carcinoma in situ.
+**Say this first:** Dysplasia literally means "disordered growth"; it is encountered principally in epithelial cells and is recognised by pleomorphism, large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio, architectural disarray with loss of orderly differentiation, and increased mitotic figures that are seen throughout the epithelium rather than confined to the basal layer.
+
+**Explanation**
+
+Dysplasia literally means "disordered growth". It is encountered principally in epithelial cells and is a premalignant alteration in which the cells show variable cytologic atypia and the epithelium shows architectural disarray with loss of orderly differentiation.
+
+**Features**
+
+- Cells: considerable pleomorphism; large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio.
+- Epithelium: in dysplastic squamous epithelium the normal progressive maturation from tall basal cells to flattened surface squames fails in part or entirely, with replacement by basal-like cells with hyperchromatic nuclei.
+- Mitoses: increased in number and seen throughout the epithelium rather than only in the basal layer.
+- The lesion does not penetrate the basement membrane.
+
+**Significance**
+
+Dysplasia is a precursor of malignant transformation, but progression to cancer is not inevitable, and with removal of the inciting cause a dysplasia of moderate severity may be completely reversible. When dysplasia is severe and involves the full thickness of the epithelium it is called carcinoma in situ.
 
 
 ## What do you mean by cell injury?
@@ -1096,9 +1110,7 @@ Provisional diagnosis: Acute pancreatitis (alcohol-related), with fat necrosis o
 
 ## What type of necrosis will be observed in compression/peritoneum in acute pancreatitis?
 
-(The wording "compression/peritoneum" appears garbled; it is read here as "pancreas/peritoneum.")
-
-Fat necrosis (enzymatic fat necrosis).
+Fat necrosis (enzymatic fat necrosis), in the pancreas and the peritoneal fat.
 
 - Seen as grossly visible chalky-white areas (fat saponification) in the pancreas, mesentery/peritoneal fat (Fig. 2.13).
 - Histology: shadowy outlines of necrotic fat cells, basophilic calcium deposits and an inflammatory reaction.
@@ -1390,13 +1402,14 @@ Mechanisms: ↑ fatty-acid delivery, ↓ fatty-acid oxidation, ↑ triglyceride 
 
 ## Define pathological calcification.
 
-Pathologic calcification is the abnormal tissue deposition of calcium salts, together with smaller amounts of iron, magnesium and other mineral salts.
+Pathologic calcification is the abnormal tissue deposition of calcium salts, together with smaller amounts of iron, magnesium and other mineral salts. There are two forms.
 
-**Two forms**
+**1. Dystrophic calcification.** Deposition occurs locally in dying or dead tissue, despite normal serum calcium and in the absence of any derangement in calcium metabolism.
 
-1. Dystrophic calcification — local deposition in dying tissues, with normal serum calcium and no derangement in calcium metabolism.
+- Sites: areas of coagulative, caseous or liquefactive necrosis, foci of enzymatic fat necrosis, the atheromas of advanced atherosclerosis, and aging or damaged heart valves (Fig. 2.34), e.g. calcific aortic stenosis. A tuberculous lymph node may be virtually converted to stone.
+- Morphology: fine white granules or clumps, gritty on cutting; with H&E the salts are basophilic, amorphous and granular, intracellular, extracellular or both. Heterotopic bone may form in the focus.
 
-2. Metastatic calcification — deposition in otherwise normal tissues, almost always due to hypercalcaemia.
+**2. Metastatic calcification.** Deposition in otherwise normal tissues, almost always due to hypercalcaemia from disturbed calcium metabolism. The four principal causes of hypercalcaemia are: (1) increased parathyroid hormone (hyperparathyroidism, or PTH-related protein from malignant tumours); (2) bone resorption (multiple myeloma, diffuse skeletal metastases, Paget disease, immobilisation); (3) vitamin D–related disorders (vitamin D intoxication, sarcoidosis); and (4) renal failure with phosphate retention and secondary hyperparathyroidism.
 
 
 ## Write short note on: Pathological calcification
@@ -1443,7 +1456,10 @@ Pathologic calcification is the abnormal tissue deposition of calcium salts, tog
 
 ## Define dystrophic calcification.
 
-Dystrophic calcification is the local deposition of calcium salts in dying (necrotic) or damaged tissue, occurring despite normal serum calcium levels and in the absence of derangements in calcium metabolism.
+Dystrophic calcification is the local deposition of calcium salts in dying (necrotic) or damaged tissue; it occurs despite normal serum calcium levels and in the absence of derangements in calcium metabolism. In contrast, metastatic calcification affects normal tissues in hypercalcaemia.
+
+- Sites: areas of coagulative, caseous or liquefactive necrosis, foci of enzymatic fat necrosis, the atheromas of advanced atherosclerosis, and aging or damaged heart valves (Fig. 2.34), e.g. calcific aortic stenosis. A tuberculous lymph node may be virtually converted to stone.
+- Morphology: fine white granules or clumps, gritty on cutting; with H&E the salts are basophilic, amorphous and granular, intracellular, extracellular or both. Heterotopic bone may form in the focus.
 
 
 ## Write short note on: Dystrophic calcification
@@ -2698,7 +2714,11 @@ Diabetes is a metabolic disease that compromises tissue repair for many reasons 
 
 ## What is angiogenesis?
 
-Angiogenesis is the process of development of new blood vessels from existing ones. It is critical in healing at sites of injury (granulation tissue), in the development of collateral circulation at sites of ischaemia, and in allowing tumours to grow beyond the constraints of their original blood supply. Therapies to promote it (for example to improve blood flow in a heart with coronary atherosclerosis) or inhibit it (to impede tumour growth or pathologic vessel growth in diabetic retinopathy) have been developed.
+**Say this first:** Angiogenesis is the formation of new blood vessels, which in tumours takes the form of neoangiogenesis, the sprouting of new vessels from pre-existing capillaries; it is essential for tumour growth beyond 1 to 2 mm in diameter.
+
+A solid tumour, even if it carries all the genetic aberrations required for malignant transformation, cannot enlarge beyond 1 to 2 mm unless it can induce a blood supply, since this distance is the maximum across which oxygen, nutrients and waste products can diffuse from existing vessels. Early in their development most tumours do not induce angiogenesis and remain small or in situ, possibly for years, until an "angiogenic switch" terminates this stage of quiescence. Angiogenesis is controlled by a balance between angiogenesis promoters and inhibitors, and in tumours this balance is tilted in favour of the promoters. Angiogenesis is therefore an essential requirement for malignancy.
+
+Angiogenesis is also critical in healing at sites of injury and in the development of collateral circulation at sites of ischaemia.
 
 **Steps.** In tissue repair angiogenesis occurs mainly by sprouting:
 
@@ -3990,7 +4010,15 @@ The arterial blood gas shows a low pH, a low HCO₃⁻ (below 22 mmol/L) and a c
 
 ## What is metabolic alkalosis?
 
-**Say this first:** Metabolic alkalosis is an acid-base disorder in which a primary rise in plasma bicarbonate raises the blood pH above 7.45, caused by loss of acid or gain of alkali, and compensated by hypoventilation.
+**Say this first:** Metabolic alkalosis is an acid–base disorder in which a primary rise in plasma bicarbonate (HCO₃⁻ above 28 mmol/L) raises the blood pH above 7.45, caused by loss of acid or gain of alkali, and compensated by hypoventilation.
+
+**Compensation.** Hypoventilation raises PCO₂; this is limited by hypoxia, so compensation is incomplete. The kidney normally excretes excess bicarbonate, so metabolic alkalosis persists only when renal bicarbonate excretion is impaired, as in volume depletion, chloride depletion and potassium depletion.
+
+**Classification and causes**
+
+- Chloride-responsive (urine chloride low): vomiting, nasogastric suction, gastric outlet obstruction, diuretic therapy.
+- Chloride-resistant (urine chloride high): primary hyperaldosteronism, Cushing syndrome, severe potassium depletion.
+- Alkali gain: excess bicarbonate or antacid intake.
 
 The arterial blood gas shows a high pH, high HCO₃⁻ (above 28 mmol/L) and compensatory rise in PCO₂. Alkalosis reduces the ionised calcium by increasing its binding to albumin, causing tetany, paraesthesias, muscle cramps and seizures; it also causes hypokalaemia (potassium shifts into cells and is lost in urine), hypoventilation, confusion, arrhythmias and, if severe, coma. It is maintained by volume depletion, chloride depletion and hypokalaemia, and is classified as chloride-responsive (urine chloride low) or chloride-resistant (urine chloride high).
 
@@ -12992,7 +13020,7 @@ Tumours of the kidney are classified as follows.
 
 **Definition.** Wilms tumour (nephroblastoma) is the commonest primary renal tumour of childhood, arising from embryonal renal precursor cells (the metanephric blastema); most cases occur between 2 and 5 years of age.
 
-**Genetics.** Most cases are sporadic, but three groups of congenital malformation syndromes carry an increased risk. The WT1 gene on chromosome 11p13 is involved in the **WAGR syndrome** (Wilms tumour, aniridia, genital anomalies, intellectual disability) through deletion, and in the **Denys–Drash syndrome** (gonadal dysgenesis, early renal failure from diffuse mesangial sclerosis) through dominant-negative missense mutations. **Beckwith–Wioedemann syndrome** (organomegaly, macroglossia, hemihypertrophy) is associated with abnormal imprinting of the 11p15.5 locus and overexpression of IGF2. Mutations of CTNNB1 (β-catenin) and WTX are found in some sporadic tumours. Precursor lesions called nephrogenic rests are frequently found in the adjacent kidney.
+**Genetics.** Most cases are sporadic, but three groups of congenital malformation syndromes carry an increased risk. The WT1 gene on chromosome 11p13 is involved in the **WAGR syndrome** (Wilms tumour, aniridia, genital anomalies, intellectual disability) through deletion, and in the **Denys–Drash syndrome** (gonadal dysgenesis, early renal failure from diffuse mesangial sclerosis) through dominant-negative missense mutations. **Beckwith–Wiedemann syndrome** (organomegaly, macroglossia, hemihypertrophy) is associated with abnormal imprinting of the 11p15.5 locus and overexpression of IGF2. Mutations of CTNNB1 (β-catenin) and WTX are found in some sporadic tumours. Precursor lesions called nephrogenic rests are frequently found in the adjacent kidney.
 
 **Gross appearance.** A large, solitary, well-circumscribed tumour with a pushing margin, sharply demarcated from the compressed renal tissue; the cut surface is soft, homogeneous and tan to gray, sometimes with cysts, haemorrhage and necrosis. It may extend into the renal vein.
 
@@ -13690,7 +13718,16 @@ Obstructive azoospermia is suggested by a normal FSH, normal-sized testes and no
 
 ## State the role of HPV in causing carcinoma of cervix.
 
-HPV is the main cause. Nearly all precursors and carcinomas involve one of 15 high-risk types. E6 and E7 are the oncoproteins (see Q1278). Low-risk types (6, 11) cause condylomas and have weak E6/E7 activity. HPV alone is not enough, since few infected women develop cancer. The nonavalent vaccine covers types 6, 11, 16, 18, 31, 33, 45, 52 and 58.
+Human papillomavirus (HPV) is the main cause of carcinoma of the cervix. Nearly all precursor lesions and carcinomas involve one of about 15 high-risk types (mainly 16 and 18), whereas low-risk types (6, 11) cause condylomas and have weak E6/E7 activity.
+
+**Mechanism.** The carcinogenic ability of HPV depends on the viral E6 and E7 proteins, which interfere with the tumour suppressor proteins p53 and RB, respectively.
+
+- Viral replication occurs in maturing squamous cells, which are normally arrested in G₁; HPV drives them through the cell cycle to use the host DNA synthesis machinery.
+- E7 promotes proteasomal degradation of RB and inhibits the cyclin-dependent kinase inhibitors p21 and p27, enhancing cell cycle progression.
+- E6 promotes degradation of p53, impairing DNA-damage-induced cell cycle arrest and apoptosis.
+- In most cancers the viral DNA is integrated into the host genome, which increases E6 and E7 expression and may dysregulate nearby oncogenes such as MYC; in precursor lesions and condylomas it is episomal.
+
+HPV alone is not enough: only a few infected women develop cancer, so co-factors (smoking, immune compromise, multiparity, other infections) contribute. The nonavalent vaccine covers types 6, 11, 16, 18, 31, 33, 45, 52 and 58 (see Q1278).
 
 
 ## What is CIN?
@@ -14747,7 +14784,7 @@ The normal serum (plasma) levels are:
 |---|---|
 | Sodium (Na⁺) | 135–145 mmol/L |
 | Potassium (K⁺) | 3.5–5.0 mmol/L |
-| Chloride (Cl⁻) | 98–107 mmol/L |
+| Chloride (Cl⁻) | 98–106 mmol/L |
 | Bicarbonate (HCO₃⁻) | 22–28 mmol/L |
 
 Sodium is the major extracellular cation and determines plasma osmolality; potassium is the major intracellular cation; chloride and bicarbonate are the major extracellular anions. The anion gap, Na⁺ − (Cl⁻ + HCO₃⁻), is normally about 8–12 mmol/L.
