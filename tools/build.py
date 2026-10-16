@@ -391,3 +391,7 @@ s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)
 open(os.path.join(HERE, '..', 'index.html'), 'w', encoding='utf8').write(s)
 os.remove(os.path.join(HERE, '_stage.html'))
 print('wrote index.html', len(s))
+
+# re-apply viva-style answer emphasis (idempotent; wording is never changed)
+import subprocess, sys
+subprocess.run([sys.executable, os.path.join(HERE, 'format_answers.py')], check=True)
