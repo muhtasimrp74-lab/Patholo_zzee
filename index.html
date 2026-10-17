@@ -2451,10 +2451,12 @@ counts();dash();
    leave=()=>{try{if(fsOn())(document.exitFullscreen||document.webkitExitFullscreen).call(document)}catch(e){}},
    want=()=>{try{return localStorage.getItem('zz-fs')!=='0'}catch(e){return true}},
    setWant=v=>{try{localStorage.setItem('zz-fs',v?'1':'0')}catch(e){}};
+  const app=matchMedia('(display-mode: fullscreen)').matches;/* installed app launched fullscreen by its manifest: already fullscreen from the first frame */
+  if(app){fb.textContent='Fullscreen: on (app)';fb.disabled=true}
   fb.onclick=e=>{e.stopPropagation();if(fsOn()){setWant(false);leave()}else{setWant(true);enter()}};
-  ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,fs));
+  ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,()=>{if(!app)fs()}));
   /* browsers only allow fullscreen after a tap, so the app goes fullscreen on the first tap of each visit (unless switched off here) */
-  if(want()){const once=()=>{removeEventListener('pointerup',once,true);removeEventListener('keydown',once,true);if(want())enter()};addEventListener('pointerup',once,true);addEventListener('keydown',once,true)}
+  if(want()&&!app){const once=()=>{removeEventListener('pointerup',once,true);removeEventListener('keydown',once,true);if(want())enter()};addEventListener('pointerup',once,true);addEventListener('keydown',once,true)}
   qb.parentNode.appendChild(fb)}
  const rb=document.createElement('button');rb.type='button';rb.className='mtile';rb.id='mq-flat';
  const rf=()=>{rb.textContent=de.classList.contains('zz-flat')?'Reduce effects: on':'Reduce effects: off'};
