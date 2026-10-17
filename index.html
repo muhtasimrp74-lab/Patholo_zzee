@@ -2015,7 +2015,7 @@ html.zz-par .pb-pic img,html.zz-par .nh-bn-pic img{transform:translate3d(0,var(-
 body{background:var(--bg)!important;background-attachment:scroll!important}
 body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:var(--mesh);transform:translateZ(0)}
 body::before{mix-blend-mode:normal!important;opacity:.025!important}
-.card,.qi,.row,.topic{will-change:auto}}</style><style id="zz-boot-css">html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F8F3EE)}</style><script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script><style id="zz-soft">/* ===== Soft UI: neumorphic content + glass only on floating bars (loaded LAST) =====
+.card,.qi,.row,.topic{will-change:auto}}</style><style id="zz-boot-css">@keyframes zzspin{to{transform:rotate(360deg)}}html.zz-boot::after{content:"";position:fixed;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:3px solid rgba(122,31,54,.18);border-top-color:#7A1F36;animation:zzspin .8s linear infinite}html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F8F3EE)}</style><script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script><style id="zz-soft">/* ===== Soft UI: neumorphic content + glass only on floating bars (loaded LAST) =====
    Cards/buttons/tiles = soft raised surfaces (two cheap shadows, no blur). Pressed/active = sunk in.
    Blur stays only on the top bar, bottom nav, toasts and popups. "Reduce effects" (Menu > Display) or
    prefers-reduced-transparency turns blur and the raised look off. */
@@ -3173,14 +3173,17 @@ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(bh);
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
 const r=document.getElementById('res'),g=document.getElementById('gq');
 function show(){const q=g.value.trim().toLowerCase(),T=q.match(/[a-z0-9']+/g)||[];
-let m=IX.map(x=>{let s=0,hs=[];for(const t of T){let k=0;if(x.t.includes(t)){k=3;hs.push(t)}else{const f=t.length>3&&x.w.find(w=>lev(t,w)<=(t.length>6?2:1));if(f){k=2;hs.push(f)}else if(x.a.toLowerCase().includes(t)){k=1;hs.push(t)}}if(!k){s=-1;break}s+=k}return{x,s,hs}}).filter(o=>!T.length||o.s>0);
+let m=getIX().map(x=>{let s=0,hs=[];for(const t of T){let k=0;if(x.t.includes(t)){k=3;hs.push(t)}else{const f=t.length>3&&x.w.find(w=>lev(t,w)<=(t.length>6?2:1));if(f){k=2;hs.push(f)}else if(x.a.toLowerCase().includes(t)){k=1;hs.push(t)}}if(!k){s=-1;break}s+=k}return{x,s,hs}}).filter(o=>!T.length||o.s>0);
 if(T.length)m.sort((a,b)=>b.s-a.s||a.x.n-b.x.n);const tot=m.length;document.getElementById('rc').textContent=T.length?tot+' of '+DATA.length:DATA.length+' questions';
 r.innerHTML=m.length?m.map(({x,hs})=>{const d=x.d,i=hs.length?x.a.toLowerCase().indexOf(hs[0]):-1,sn=T.length?(i>=0?'…'+x.a.slice(Math.max(0,i-40),i+90)+'…':x.a.slice(0,110)+'…'):'';
 return `<li><a href="#/${d[2]}/${d[3]}"><span class="num">${x.n}</span><span class="rq">${hl(d[1],hs)}</span><small>${esc(d[4])}${d[0]?' · '+d[0]:''}</small>${sn?`<em class="sn">${hl(sn,hs)}</em>`:''}</a></li>`}).join(''):'<li class="e">No question found.</li>'}
 const lev=(a,b)=>{let p=[...Array(b.length+1).keys()];for(let i=1;i<=a.length;i++){const c=[i];for(let j=1;j<=b.length;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]!==b[j-1]));p=c}return p[b.length]},
 hl=(s,hs)=>{s=esc(s);return hs.length?s.replace(new RegExp('('+hs.map(h=>h.replace(/[^a-z0-9]/g,'\\$&')).join('|')+')','gi'),'<mark>$1</mark>'):s},
-IX=DATA.map((d,n)=>{const t=(d[1]+' '+d[4]).toLowerCase();return{d,n:n+1,t,w:[...new Set(t.match(/[a-z0-9']+/g))],a:(()=>{const e=document.getElementById(d[3]).querySelector('.ans').cloneNode(true);e.querySelectorAll('td,th,li,p,tr,h4,.kp').forEach(n=>n.append(' '));return e.textContent.replace(/\s+/g,' ').trim()})()}});
-g.addEventListener('input',show);show();
+getIX=()=>getIX.c||(getIX.c=DATA.map((d,n)=>{const t=(d[1]+' '+d[4]).toLowerCase();return{d,n:n+1,t,w:[...new Set(t.match(/[a-z0-9']+/g))],a:(()=>{const e=document.getElementById(d[3]).querySelector('.ans').cloneNode(true);e.querySelectorAll('td,th,li,p,tr,h4,.kp').forEach(n=>n.append(' '));return e.textContent.replace(/\s+/g,' ').trim()})()}}));
+g.addEventListener('input',show);
+/* the search index touches every card, so build it when the browser is idle (or when search is opened), not during load */
+addEventListener('hashchange',()=>{if(/^#\/search/.test(location.hash))show()});
+if(/^#\/search/.test(location.hash))show();else (window.requestIdleCallback||setTimeout)(show,{timeout:6000});
 
 const PART_OF={"c2": "gp", "c3": "gp", "c4": "gp", "c5": "gp", "c6": "gp", "c7": "gp", "c9": "gp", "c30": "gp", "c13": "hm", "c14": "hm", "01": "sys", "02": "sys", "03": "sys", "04": "sys", "05": "sys", "06": "sys", "07": "sys", "08": "sys", "09": "sys", "c23": "sys", "10": "sys", "11": "sys", "12": "sys", "13": "sys", "14": "sys", "15": "sys"};
 (function(){const p=prog;prog=function(){p();const L=new Set(S.learned),T={},N={};DATA.forEach(d=>{const k=PART_OF[d[2]];N[k]=(N[k]||0)+1;if(L.has(d[3]))T[k]=(T[k]||0)+1});document.querySelectorAll('[data-pp]').forEach(r=>{const k=r.dataset.pp,c=N[k]?Math.round(100*(T[k]||0)/N[k]):0;r.style.setProperty('--p',c);r.textContent=c+'%'})};prog();

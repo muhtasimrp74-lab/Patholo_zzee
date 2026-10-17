@@ -380,7 +380,7 @@ BOOT_HEAD = ('''<style id="zz-perf">@media (min-width:700px){
 body{background:var(--bg)!important;background-attachment:scroll!important}
 body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:var(--mesh);transform:translateZ(0)}
 body::before{mix-blend-mode:normal!important;opacity:.025!important}
-.card,.qi,.row,.topic{will-change:auto}}</style><style id="zz-boot-css">html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F8F3EE)}</style>'''
+.card,.qi,.row,.topic{will-change:auto}}</style><style id="zz-boot-css">@keyframes zzspin{to{transform:rotate(360deg)}}html.zz-boot::after{content:"";position:fixed;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:3px solid rgba(122,31,54,.18);border-top-color:#7A1F36;animation:zzspin .8s linear infinite}html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F8F3EE)}</style>'''
              '<script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script>')
 BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script>'
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
