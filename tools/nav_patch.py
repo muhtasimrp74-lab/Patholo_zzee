@@ -58,7 +58,12 @@ JS = r'''
  if(de.requestFullscreen||de.webkitRequestFullscreen){fs();
   fb.onclick=()=>{try{if(fsOn()){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}else{(de.requestFullscreen||de.webkitRequestFullscreen).call(de)}}catch(e){}};
   ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,fs));
-  qb.parentNode.appendChild(fb)}}
+  qb.parentNode.appendChild(fb)}
+ const rb=document.createElement('button');rb.type='button';rb.className='mtile';rb.id='mq-flat';
+ const rf=()=>{rb.textContent=de.classList.contains('zz-flat')?'Reduce effects: on':'Reduce effects: off'};
+ try{if(localStorage.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
+ rf();rb.onclick=()=>{de.classList.toggle('zz-flat');try{localStorage.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}rf()};
+ qb.parentNode.appendChild(rb)}
 '''
 
 HL_OLD = "document.querySelectorAll('#bnav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#/'+(p[0]||'')));"

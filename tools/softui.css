@@ -1,0 +1,23 @@
+/* ===== Soft UI: neumorphic content + glass only on floating bars (loaded LAST) =====
+   Cards/buttons/tiles = soft raised surfaces (two cheap shadows, no blur). Pressed/active = sunk in.
+   Blur stays only on the top bar, bottom nav, toasts and popups. "Reduce effects" (Menu > Display) or
+   prefers-reduced-transparency turns blur and the raised look off. */
+:root{--nm-l:rgba(255,255,255,.92);--nm-d:rgba(122,31,54,.17);
+ --nm-out:7px 7px 16px var(--nm-d),-6px -6px 14px var(--nm-l);
+ --nm-sm:4px 4px 9px var(--nm-d),-3px -3px 8px var(--nm-l);
+ --nm-in:inset 3px 3px 7px var(--nm-d),inset -3px -3px 7px var(--nm-l)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--nm-l:rgba(255,255,255,.05);--nm-d:rgba(0,0,0,.52)}}
+:root[data-theme=dark]{--nm-l:rgba(255,255,255,.05);--nm-d:rgba(0,0,0,.52)}
+@media (max-width:700px){:root{--nm-out:4px 4px 10px var(--nm-d),-3px -3px 9px var(--nm-l);--nm-sm:3px 3px 7px var(--nm-d),-2px -2px 6px var(--nm-l);--nm-in:inset 2px 2px 5px var(--nm-d),inset -2px -2px 5px var(--nm-l)}}
+html body :is(.topic,.card,.qi,.row,.mq,.stats,.howto){background-image:none;background-color:var(--panel);border-color:transparent;box-shadow:var(--nm-out)}
+html body .card.open,html body .card:target{box-shadow:var(--nm-out)}
+html body :is(.qb,.act,.qlearn,.qf-clr,.mtile,.chip,.gb.ghost,.blk+.blk,.pager a:not(.nx)){background-image:none;background-color:var(--panel);color:var(--text);border-color:transparent;box-shadow:var(--nm-sm);transition:box-shadow .15s ease,transform .15s ease}
+html body :is(.qb,.act,.qlearn,.qf-clr,.mtile,.chip,.gb.ghost,.pager a):active{box-shadow:var(--nm-in);transform:translateY(1px)}
+html body :is(.act,.qb,.qlearn)[aria-pressed=true]{box-shadow:var(--nm-in)}
+html body :is(.pill,.blk,.gb,.pager a.nx):not(.ghost){box-shadow:var(--nm-sm),inset 0 1px 0 rgba(255,255,255,.25)}
+html body :is(input[type=search],input[type=text],input:not([type]),textarea,select){background-color:var(--bg);background-image:none;border-color:transparent;box-shadow:var(--nm-in)}
+html body #bnav a.on{box-shadow:var(--nm-in)}
+/* Reduce effects: no blur, flat soft shadows */
+html.zz-flat body :is(.topic,.card,.qi,.row,.mq,.stats,.howto,.qb,.act,.qlearn,.qf-clr,.mtile,.chip,.gb,.pill,.blk,.pager a){box-shadow:var(--sh1)!important;transition:none!important}
+html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh-toc){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background-color:var(--panel)!important}
+@media (prefers-reduced-transparency:reduce){html body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh-toc){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background-color:var(--panel)!important}}
