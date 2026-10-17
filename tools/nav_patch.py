@@ -51,7 +51,14 @@ JS = r'''
 <p class="mh">Your data</p><div class="mgrid"><button type="button" class="mtile" onclick="exp()">Export backup</button><label class="mtile">Import backup<input type="file" accept=".json" hidden onchange="imp(this.files[0])"></label></div>`;
  X.querySelectorAll('[data-tt]').forEach(b=>b.onclick=()=>{const t=document.querySelector('#tools [data-t="'+b.dataset.tt+'"]');if(t)t.click()});
  const qb=X.querySelector('#mq-quiz'),qs=()=>{qb.textContent=document.body.classList.contains('quiz')?'Quiz mode: on':'Quiz mode: off'};qs();
- qb.onclick=()=>{setQuiz(!document.body.classList.contains('quiz'),true);qs()}}
+ qb.onclick=()=>{setQuiz(!document.body.classList.contains('quiz'),true);qs()};
+ const fb=document.createElement('button');fb.type='button';fb.className='mtile';fb.id='mq-fs';
+ const de=document.documentElement,fsOn=()=>document.fullscreenElement||document.webkitFullscreenElement,
+  fs=()=>{fb.textContent=fsOn()?'Fullscreen: on':'Fullscreen: off'};
+ if(de.requestFullscreen||de.webkitRequestFullscreen){fs();
+  fb.onclick=()=>{try{if(fsOn()){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}else{(de.requestFullscreen||de.webkitRequestFullscreen).call(de)}}catch(e){}};
+  ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,fs));
+  qb.parentNode.appendChild(fb)}}
 '''
 
 HL_OLD = "document.querySelectorAll('#bnav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#/'+(p[0]||'')));"
