@@ -2,51 +2,27 @@
 
 ## Define and classify cellular adaptation with examples.
 
-Adaptations are reversible changes in the size, number, phenotype, metabolic activity or functions of cells in response to changes in their environment.
+**Definition:** Adaptations are reversible changes in the size, number, phenotype, metabolic activity or functions of cells in response to changes in their environment.
 
-The four types are hypertrophy (↑ cell size), hyperplasia (↑ cell number), atrophy (↓ cell size/number) and metaplasia (change of cell phenotype). If the stress is removed, the cell returns to its original state.
-
-**Definition**
-
-Adaptations are reversible changes in the size, number, phenotype, metabolic activity or function of cells in response to changes in their environment.
-
-**Concept**
-
-- Adaptation → reversible injury → irreversible injury → cell death are stages of progressive impairment (Fig. 2.1), but they do not always occur sequentially (e.g., sudden complete coronary occlusion causes irreversible injury without prior adaptation).
-- Adapted cells are more vulnerable: a hypertrophied heart has higher metabolic demand and is more susceptible to ischaemic injury.
-- Cell-stress response pathways (integrated stress response, unfolded protein response, autophagy) protect cells acutely and promote adaptation over longer periods.
-
-**Classification with examples**
-
-| Type | Basis | Physiologic example | Pathologic example |
+| Type | Definition | Physiologic example | Pathologic example |
 |---|---|---|---|
-| Hypertrophy | ↑ size of cells → ↑ organ size (no new cells) | Gravid uterus (smooth muscle, oestrogen); skeletal muscle of bodybuilders | LV myocardium in hypertension/valvular disease |
-| Hyperplasia | ↑ number of cells (needs dividing cells/stem cells) | Breast epithelium at puberty/pregnancy; liver regeneration after partial hepatectomy; bone marrow red-cell progenitors in bleeding/haemolysis | Endometrial hyperplasia (excess oestrogen); benign prostatic hyperplasia; HPV warts |
-| Atrophy | ↓ size (and number) of cells → ↓ organ size | Notochord and thyroglossal duct in foetal development | Disuse, denervation, chronic ischaemia (senile brain), malnutrition, loss of endocrine stimulation, pressure |
-| Metaplasia | Replacement of one differentiated cell type by another | Squamous metaplasia of endocervix at the transformation zone | Columnar→squamous in smoker's bronchus; squamous→columnar in Barrett oesophagus; bone in muscle (myositis ossificans) |
-
-Key point: Cells capable of division may show both hyperplasia and hypertrophy; non-dividing cells (cardiac myocytes) increase mass by hypertrophy only.
-
+| **Hypertrophy** | Increase in the size of cells, which increases the size of the organ; no new cells | Gravid uterus (smooth muscle, oestrogen); skeletal muscle of bodybuilders | Heart in pressure overload from hypertension or valvular disease |
+| **Hyperplasia** | Increase in the number of cells in an organ or tissue | Breast glandular epithelium at puberty and pregnancy; liver regeneration after partial hepatectomy; bone marrow red cell progenitors after bleeding or haemolysis | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
+| **Atrophy** | Reduction in the size of an organ or tissue due to a decrease in cell size and number | Notochord and thyroglossal duct in the foetus | Disuse, denervation, diminished blood supply, inadequate nutrition, loss of endocrine stimulation, pressure |
+| **Metaplasia** | Reversible change in which one differentiated cell type is replaced by another | None given | Columnar to squamous in the bronchus of a smoker; squamous to columnar in Barrett oesophagus; bone formation in muscle (myositis ossificans) |
 
 ## What do you mean by cellular adaptive change?
 
-A cellular adaptive change is a reversible alteration in the size, number, phenotype, metabolic activity or function of cells that arises in response to changes in their environment — either physiologic demands (pregnancy, increased workload, hormones) or mild/persistent pathologic stimuli — and which creates a new, altered steady state that lets the cell survive and keep functioning.
-
-- Forms: hypertrophy, hyperplasia, atrophy, metaplasia.
-- Reversibility: if the stress is eliminated, the cell can return to its original state without harmful consequences.
-- Limit: when the stress exceeds the adaptive capacity or is severe/persistent, adaptation fails and cell injury follows (e.g., cardiac hypertrophy → heart failure).
-- Interrelations: adaptive changes may coexist (hypertrophy + hyperplasia) and may be a fertile soil for malignant change (pathologic hyperplasia, epithelial metaplasia).
-
+Adaptations are reversible functional and structural responses to changes in physiologic states (for example pregnancy) and some pathologic stimuli, during which new but altered steady states are achieved, allowing the cell to survive and continue to function.
 
 ## Write down the name of adaptive changes with an example.
 
-| Adaptive change | Physiologic example | Pathologic example |
-|---|---|---|
-| Hypertrophy | Gravid uterus (smooth muscle, oestrogen); skeletal muscle of bodybuilders | LV myocardium in hypertension/valvular disease |
-| Hyperplasia | Breast epithelium at puberty/pregnancy; liver regeneration after partial hepatectomy; bone marrow red-cell progenitors in bleeding/haemolysis | Endometrial hyperplasia (excess oestrogen); benign prostatic hyperplasia; HPV warts |
-| Atrophy | Notochord and thyroglossal duct in foetal development | Disuse, denervation, chronic ischaemia (senile brain), malnutrition, loss of endocrine stimulation, pressure |
-| Metaplasia | Squamous metaplasia of endocervix at the transformation zone | Columnar→squamous in smoker's bronchus; squamous→columnar in Barrett oesophagus; bone in muscle (myositis ossificans) |
-
+| Adaptive change | Example |
+|---|---|
+| **Hypertrophy** | Enlargement of the heart in hypertension or valvular disease; gravid uterus |
+| **Hyperplasia** | Endometrial hyperplasia from excess oestrogen; proliferation of breast glandular epithelium at puberty and pregnancy |
+| **Atrophy** | Skeletal muscle in a limb immobilised in a plaster cast; atrophy of the brain in late adult life |
+| **Metaplasia** | Replacement of ciliated columnar epithelium of the bronchus by squamous epithelium in a cigarette smoker |
 
 ## Define cellular adaptation.
 
@@ -67,125 +43,88 @@ Hypertrophy – cardiac muscle in hypertension, gravid uterus; hyperplasia – e
 
 ## A 40-year-old man presented with high blood pressure for a prolonged period. What will be the effect on the myocardium? State its interpretation.
 
-Effect on the myocardium: Hypertrophy of the cardiac muscle fibres — the left ventricular wall becomes thickened (concentric LV hypertrophy) with increased heart weight, because each myocyte enlarges; no new cells are formed.
+**Effect:** **hypertrophy** of the myocardium, that is, enlargement of the heart in response to pressure overload from hypertension.
 
 **Interpretation**
 
-1. Type of change: pathologic hypertrophy, a cellular adaptation to chronic pressure overload (greater mechanical effort against raised systemic resistance).
-
-2. Why hypertrophy and not hyperplasia: cardiac myocytes have only limited capacity for division and respond to increased demand by synthesising more protein and adding myofilaments, raising the force each myocyte can generate.
-
-3. Mechanism (Fig. 2.26): mechanical sensors detect increased load → signalling (PI3K/AKT, mainly physiologic; G-protein–coupled receptor pathways, mainly pathologic) → growth factors (TGF-β, IGF-1, FGF) and vasoactive agents (α-adrenergic agonists, endothelin-1, angiotensin II) → transcription factors GATA4, NFAT, MEF2 → ↑ contractile protein genes. There is also a switch to foetal gene isoforms (α- to β-myosin heavy chain; ↑ atrial natriuretic factor).
-
-4. Initially beneficial, later harmful: early on, function improves; with time the adaptation fails — degradation and loss of myofibrillar elements, and in extreme cases myocyte death → cardiac failure. The hypertrophied heart also has higher metabolic needs and is more vulnerable to ischaemia.
-
-5. Clinical message: adaptation can progress to injury if the stress is not relieved → control the blood pressure.
-
+- It is **pathologic hypertrophy**, an adaptation to increased workload.
+- Cardiac muscle cells have only a limited capacity for division, so they respond mainly by hypertrophy.
+- The cells synthesise more protein and increase the number of myofilaments per cell, so each myocyte generates more force.
+- There are no new cells, only larger cells.
+- Initially the hypertrophy improves function.
+- Over time the adaptation often fails and sets the stage for **heart failure**.
+- Beyond a limit there is degradation and loss of myofibrillar contractile elements, and in extreme cases myocyte death.
 
 ## A 70-year-old male has a blood pressure of 150/90 mm of Hg. If this condition remains untreated for years, what type of cellular adaptation will occur?
 
-Answer: Hypertrophy (pathologic hypertrophy of the left ventricular myocardium).
+**Hypertrophy** of the myocardium (pathologic hypertrophy).
 
-- Chronic pressure overload (hypertension) is the classic cause of pathologic hypertrophy of the heart; the myocytes are non-dividing, so they enlarge (↑ protein synthesis, ↑ myofilaments) rather than multiply.
-- Gross effect: thickened LV wall (Fig. 2.2).
-- If untreated for years, the hypertrophy eventually decompensates (loss of contractile elements, myocyte death) → heart failure.
-- Related change in long-standing hypertension: hyaline change of arteriolar walls, especially in the kidney.
-
+- It is caused by pressure overload from hypertension.
+- Cardiac muscle cells do not divide readily, so they increase in size by synthesising more protein and more myofilaments.
+- Initially it improves function, but over time it often fails and leads to heart failure.
 
 ## Describe the causes and clinical importance of hypertrophy.
 
-Definition: Increase in the size of cells resulting in increased organ size is called hypertrophy.
-
-The organ has no new cells, only larger cells, due to synthesis and assembly of additional intracellular structural components.
-
 **Causes**
 
-| Category | Stimulus | Examples |
-|---|---|---|
-| Increased functional demand (workload) — most common stimulus in skeletal and cardiac muscle | Pressure/volume overload; exercise | LVH in hypertension or valvular disease (pathologic); bodybuilders' muscles (physiologic) |
-| Hormonal / growth-factor stimulation | Oestrogen signalling via oestrogen receptors | Gravid uterus — smooth muscle hypertrophy (physiologic) |
-| Combined hypertrophy + hyperplasia | Hormones in dividing cell populations | Breast at puberty/pregnancy |
-
-Hypertrophy is physiologic (increased demand, hormones, growth factors) or pathologic.
+- Increased functional demand.
+- Stimulation by hormones and growth factors.
+- Physiologic example: the uterus in pregnancy, stimulated by oestrogen signalling through oestrogen receptors.
+- Physiologic example: skeletal muscle of bodybuilders, from increased demand.
+- Pathologic example: increased workload on cardiac and skeletal muscle, most commonly pressure overload of the heart from hypertension or valvular disease.
 
 **Clinical importance**
 
-1. Physiologic hypertrophy is beneficial — greater strength and work capacity (muscle) and functional uterine growth in pregnancy.
-
-2. Cardiac hypertrophy: compensatory then maladaptive — improves function initially but "over time this adaptation often fails," setting the stage for heart failure and other heart disease.
-
-3. Regressive changes at the limit — loss of myofibrillar contractile elements and, in extreme cases, myocyte death.
-
-4. Higher metabolic demand → hypertrophied myocardium is more susceptible to ischaemic injury.
-
-5. Biological markers/effects — foetal gene re-expression (β-myosin heavy chain; slower, more economical contraction) and ↑ ANF (promotes natriuresis, ↓ blood volume and pressure, thereby reducing load).
-
-6. Reversible if the stimulus is removed — the clinical basis for treating hypertension/valve disease early.
-
+- Initially cardiac hypertrophy improves function.
+- Over time the adaptation often fails and sets the stage for **heart failure** and other significant forms of heart disease.
+- Beyond a certain limit the enlarged muscle mass cannot cope with the burden, and regressive changes occur in the myocardial fibres.
+- The most important regressive change is degradation and loss of myofibrillar contractile elements, and in extreme cases myocyte death.
+- It shows how an adaptation to stress can progress to significant cell injury if the stress is not relieved.
+- The hypertrophied heart has increased metabolic demand, so it is more susceptible to injury.
 
 ## What is the clinical significance of pathological hyperplasia?
 
-1. Fertile soil for cancer — increased cell division raises the risk of acquiring genetic aberrations that drive unrestrained proliferation. Pathologic hyperplasia is not cancer, but cancer may arise in it: endometrial hyperplasia → increased risk of endometrial carcinoma.
-
-2. Diagnostic/therapeutic implication: identifying the driving hormone (e.g., unopposed oestrogen) allows treatment that reverses the hyperplasia.
-
-3. Produces symptoms through excess function or bulk
-
-- Endometrial hyperplasia (relative/absolute oestrogen excess) is a common cause of abnormal uterine bleeding.
-- Benign prostatic hyperplasia (androgen-driven) — causes urethral compression and urinary obstruction.
-
-4. Controlled and potentially reversible — it regresses or stabilises when the hormonal/growth-factor stimulus is removed.
-
-5. Virus-induced hyperplasia — papillomaviruses produce factors that interfere with host proliferation-regulating proteins, causing warts and mucosal lesions; some are cancer precursors.
-
-Physiologic : compensation after liver donation or resection; marrow can raise red-cell output up to eightfold.
-
+- Most pathologic hyperplasia is caused by excessive or inappropriate actions of hormones or growth factors on target cells.
+- The process remains controlled, and it can regress or stabilise if the stimulation is eliminated.
+- The increased cell division raises the risk of genetic aberrations that can drive unrestrained proliferation, so pathologic hyperplasia is a **fertile soil** in which cancer may arise.
+- **Endometrial hyperplasia** is caused by an absolute or relative excess of oestrogen. It is a common cause of abnormal uterine bleeding and carries an increased risk of endometrial cancer.
+- **Benign prostatic hyperplasia** is a response to androgen stimulation.
+- Papillomaviruses cause hyperplastic skin warts and mucosal lesions, and some of these are precursors to cancer.
 
 ## Give the difference between hyperplasia and neoplasia.
 
 | Feature | Hyperplasia | Neoplasia |
 |---|---|---|
-| Definition | ↑ number of cells in an organ or tissue in response to a stimulus | Neoplasia means new growth |
-| Nature | Adaptation | Uncoordinated proliferation |
-| Stimulus | Needs an external stimulus (hormone, growth factor, injury) | Autonomous; stimulus not required or pathological stimulus from carcinogens |
-| Regression | Regresses/stabilises when stimulus removed | Does not regress; persists |
-| Control | Controlled process | Unregulated, due to genetic mutations |
-| Cells | Normal mature cells; capable of dividing; stem cells may contribute | Clonal, genetically altered cells; may be pleomorphic/atypical |
-| Function | Usually purposeful (↑ functional capacity/compensation) | No useful purpose; may be functional or not |
-| Behaviour | Never metastasises | Malignant tumours invade and metastasise |
-| Cancer relationship | Pathologic hyperplasia may be a precursor (fertile soil) | Is the cancer/tumour itself |
+| Definition | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by acquired or, less commonly, inherited mutations |
+| Cells involved | Mature cells and, in some cases, tissue stem cells | A single cell and its clonal progeny |
+| Driving factor | Growth factors and hormones | Mutations that alter gene function and give the cells a growth advantage |
+| Growth control | Remains controlled; can regress or stabilise if the stimulation is eliminated | Excessive proliferation independent of physiologic growth signals and controls |
 
+Pathologic hyperplasia is distinct from cancer, but it is a fertile soil in which cancer may arise.
 
 ## Mention the important differences between hypertrophy and hyperplasia.
 
-Hypertrophy is an increase in the size of cells (no new cells; extra intracellular structural components) typical of non-dividing cells such as myocardium; hyperplasia is an increase in the number of cells and needs cells able to divide. They often coexist, e.g., in the pregnant uterus and in the breast.
-
 | Feature | Hypertrophy | Hyperplasia |
 |---|---|---|
-| Definition | Increase in the size of individual cells, resulting in enlargement of the affected organ or tissue. | Increase in the number of cells in an organ or tissue in response to a stimulus. |
-| Basic change | ↑ Cell size | ↑ Cell number |
-| Mechanism | Increased synthesis and assembly of structural components and proteins. | Growth-factor–driven proliferation of mature cells, sometimes with increased output from tissue stem cells. |
-| Nature of stimulus | Mainly increased mechanical workload or hormonal stimulation; growth factors may also contribute. | Mainly hormonal or growth-factor stimulation; may also occur as a compensatory response to tissue damage or resection. |
-| Types of cells involved | Predominantly non-dividing cells, such as cardiac and skeletal muscle cells; also occurs in cells capable of division. | Cells capable of division, particularly labile and stable cells, such as epithelial cells, hepatocytes and bone marrow cells. |
-| Mitosis | Not required; enlargement occurs without an increase in cell number. | Occurs through cell proliferation and division. |
-| Physiological examples | Enlargement of uterine smooth muscle during pregnancy; skeletal muscle enlargement in bodybuilders. | Breast enlargement at puberty and during pregnancy; compensatory liver regeneration after partial hepatectomy. |
-| Pathological examples | Left ventricular hypertrophy in hypertension; skeletal muscle hypertrophy in response to increased workload. | Endometrial hyperplasia, benign prostatic hyperplasia (BPH) and virus-induced warts. |
+| Definition | Increase in the size of cells, which increases the size of the organ | Increase in the number of cells in an organ or tissue in response to a stimulus |
+| New cells | None; just larger cells, from synthesis and assembly of additional intracellular structural components | New cells are formed |
+| Cells involved | Occurs in tissues with limited proliferative capacity; non-dividing cells such as myocardial fibres increase mass by hypertrophy only | Can take place only if the tissue contains cells capable of dividing, or abundant tissue stem cells |
+| Mechanism | Increased cellular protein production, from growth factors and direct effects of mechanical force | Growth factor-driven proliferation of mature cells and, in some cases, increased output of new cells from tissue stem cells |
+| Physiologic example | Gravid uterus; skeletal muscle of bodybuilders | Breast epithelium at puberty and pregnancy; liver regeneration; bone marrow |
+| Pathologic example | Heart in hypertension or valvular disease | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
 
+The two frequently occur together and may be triggered by the same stimuli.
 
 ## Discuss how hyperplasia differs from neoplasia.
 
 | Feature | Hyperplasia | Neoplasia |
 |---|---|---|
-| Definition | ↑ number of cells in an organ or tissue in response to a stimulus | Neoplasia means new growth |
-| Nature | Adaptation | Uncoordinated proliferation |
-| Stimulus | Needs an external stimulus (hormone, growth factor, injury) | Autonomous; stimulus not required or pathological stimulus from carcinogens |
-| Regression | Regresses/stabilises when stimulus removed | Does not regress; persists |
-| Control | Controlled process | Unregulated, due to genetic mutations |
-| Cells | Normal mature cells; capable of dividing; stem cells may contribute | Clonal, genetically altered cells; may be pleomorphic/atypical |
-| Function | Usually purposeful (↑ functional capacity/compensation) | No useful purpose; may be functional or not |
-| Behaviour | Never metastasises | Malignant tumours invade and metastasise |
-| Cancer relationship | Pathologic hyperplasia may be a precursor (fertile soil) | Is the cancer/tumour itself |
+| Definition | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by acquired or, less commonly, inherited mutations |
+| Cells involved | Mature cells and, in some cases, tissue stem cells | A single cell and its clonal progeny |
+| Driving factor | Growth factors and hormones | Mutations that alter gene function and give the cells a growth advantage |
+| Growth control | Remains controlled; can regress or stabilise if the stimulation is eliminated | Excessive proliferation independent of physiologic growth signals and controls |
 
+Pathologic hyperplasia is distinct from cancer, but it is a fertile soil in which cancer may arise.
 
 ## Define hyperplasia.
 
@@ -227,65 +166,47 @@ Physiologic : compensation after liver donation or resection; marrow can raise r
 
 Atrophy is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
 
-It can be physiologic (e.g., notochord, thyroglossal duct) or pathologic (e.g., disuse atrophy of muscle, senile brain atrophy).
+**Physiologic:** notochord and thyroglossal duct in foetal development.
 
-**Causes and Examples**
+**Pathologic**
 
-- Physiologic atrophy: common in normal development — notochord and thyroglossal duct. Also uterine involution after delivery.
-- Pathologic atrophy (examples):
-
-| Cause | Example |
-|---|---|
-| Decreased workload | Muscle wasting in a plaster cast/bed rest; disuse osteoporosis |
-| Loss of innervation | Atrophy of muscle fibres after nerve damage |
-| Diminished blood supply | Senile brain atrophy from atherosclerosis |
-| Inadequate nutrition | Marasmus, cachexia (cancer, chronic inflammation; TNF) |
-| Loss of endocrine stimulation | Post-menopausal atrophy of endometrium, vagina, breast; prostate after castration |
-| Pressure | Tissue around an enlarging benign tumour |
-
-- Early atrophic cells have diminished function but little cell death; prolonged ischaemic atrophy may end in irreversible injury and death, often by apoptosis.
-
-- Morphology: fewer mitochondria, myofilaments and rough ER; autophagic vacuoles and residual bodies (lipofuscin) cause brown atrophy.
-
+- Disuse atrophy of skeletal muscle in a limb immobilised in a plaster cast or in bed rest.
+- Denervation atrophy of muscle after nerve damage.
+- Senile atrophy of the brain from reduced blood supply due to atherosclerosis.
+- Muscle wasting (cachexia) in profound protein-calorie malnutrition.
+- Atrophy of the endometrium, vaginal epithelium and breast after menopause; atrophy of the prostate after castration.
+- Atrophy of surrounding tissue from pressure of an enlarging benign tumour.
 
 ## Why does atrophy of the brain occur in elderly people?
 
-In late adult life the brain undergoes progressive senile atrophy mainly because of reduced blood supply from atherosclerosis (chronic ischaemia). Loss of brain substance narrows the gyri and widens the sulci.
-
-- Diminished blood supply — a gradual fall in blood supply (chronic ischaemia) from slowly developing arterial occlusive disease causes atrophy; in the elderly brain this is mainly due to atherosclerosis (Fig. 2.27: 82-year-old man with atherosclerotic cerebrovascular disease).
-- Cellular adaptation: cells shrink and lose organelles to match metabolic demand to the reduced supply; if ischaemia progresses, cells die, often by apoptosis.
-- Mechanism: ↓ protein synthesis, ↑ protein degradation (ubiquitin–proteasome) and ↑ autophagy.
-- Contributing factors: reduced trophic stimulation and general cellular ageing mechanisms (DNA damage, defective protein homeostasis, senescence); accumulation of lipofuscin ("wear-and-tear" pigment) in ageing cells; neurodegenerative disease (e.g., Alzheimer disease).
-- Gross: narrowed gyri, widened sulci, reduced brain weight.
-
+- In late adult life the brain may undergo progressive atrophy, mainly because of reduced blood supply.
+- The reduced blood supply is a result of **atherosclerosis**, a gradual decrease in blood supply (chronic ischaemia) from slowly developing arterial occlusive disease.
+- This is called **senile atrophy**.
+- Loss of brain substance narrows the gyri and widens the sulci.
 
 ## What are the causes of atrophy?
 
-Atrophy may be physiologic (embryonic structures) or pathologic. Pathologic causes: decreased workload (disuse), loss of innervation, diminished blood supply, inadequate nutrition, loss of endocrine stimulation, and pressure.
+**Physiologic:** common during normal development; the notochord and thyroglossal duct undergo atrophy in foetal life.
 
-| Cause | Mechanism / Example |
-|---|---|
-| Decreased workload (disuse) | Fracture in cast, bed rest → rapid skeletal muscle atrophy; initially reversible; prolonged disuse → fibre loss (apoptosis) and disuse osteoporosis |
-| Loss of innervation (denervation) | Muscle metabolism and function depend on nerve supply; nerve damage → atrophy of supplied fibres |
-| Diminished blood supply | Chronic ischaemia from slowly developing arterial disease; senile brain atrophy |
-| Inadequate nutrition | Protein-calorie malnutrition (marasmus) → muscle proteins used as energy → cachexia; also in chronic inflammation/cancer (TNF) |
-| Loss of endocrine stimulation | Post-menopausal atrophy of endometrium, vaginal epithelium, breast; prostate after chemical/surgical castration |
-| Pressure | Compression from enlarging benign tumour (probably ischaemic) |
-| Physiologic | Notochord, thyroglossal duct |
+**Pathologic**
 
+1. **Decreased workload (disuse atrophy):** immobilisation in a plaster cast or complete bed rest. Prolonged disuse also reduces the number of muscle fibres, by apoptosis, and may cause disuse osteoporosis.
+2. **Loss of innervation (denervation atrophy):** damage to the nerves causes atrophy of the muscle fibres they supply.
+3. **Diminished blood supply:** chronic ischaemia from slowly developing arterial occlusive disease, for example senile atrophy of the brain.
+4. **Inadequate nutrition:** profound protein-calorie malnutrition (marasmus) causes muscle wasting (cachexia); cachexia is also seen in chronic inflammatory diseases and cancer, where TNF is thought to be responsible.
+5. **Loss of endocrine stimulation:** loss of oestrogen after menopause causes atrophy of the endometrium, vaginal epithelium and breast; the prostate atrophies after chemical or surgical castration.
+6. **Pressure:** tissue compression for any length of time, probably through ischaemia from compromised blood supply.
 
 ## Give in short the mechanism of atrophy.
 
-Atrophy results from decreased protein synthesis and increased protein degradation in cells.
-
-1. ↓ Synthesis: reduced trophic signals (growth-receptor signals that enhance nutrient uptake and mRNA translation).
-
-2. ↑ Degradation: mainly by the ubiquitin–proteasome pathway; nutrient deficiency and disuse activate ubiquitin ligases that tag proteins for proteasomal destruction (also responsible for cancer cachexia proteolysis).
-
-3. ↑ Autophagy: more autophagic vacuoles; indigestible debris persists as residual bodies (lipofuscin → brown atrophy).
-
-4. Result: smaller cells with fewer organelles → new equilibrium between metabolic demand and reduced supply/stimulation; apoptosis adds to cell loss in severe or hormone-withdrawal atrophy.
-
+- Atrophy results from decreased protein synthesis and increased protein degradation.
+- Protein synthesis decreases because of reduced trophic signals, which normally enhance nutrient uptake and mRNA translation.
+- Protein degradation occurs mainly by the **ubiquitin-proteasome pathway**.
+- Nutrient deficiency and disuse activate ubiquitin ligases, which attach ubiquitin to cellular proteins and target them for degradation in proteasomes.
+- The same pathway is thought to cause accelerated proteolysis in catabolic conditions such as cancer-related cachexia.
+- There is often increased **autophagy**, with more autophagic vacuoles.
+- Cell debris that resists digestion persists as residual bodies, such as lipofuscin granules, which give a brown discolouration (brown atrophy).
+- The initial response is a decrease in cell size and organelles, which brings metabolic demand into balance with the lower supply and gives a new equilibrium.
 
 ## Why does pathological atrophy occur?
 
@@ -309,80 +230,75 @@ Atrophy results from decreased protein synthesis and increased protein degradati
 
 Metaplasia is a reversible change in which one differentiated cell type (epithelial or mesenchymal) is replaced by another cell type.
 
-It often represents an adaptive response in which a stress-sensitive cell type is replaced by one better able to withstand the adverse environment. Examples: columnar → squamous metaplasia of bronchial epithelium in smokers; squamous → columnar (intestinal) metaplasia in Barrett oesophagus.
+**Examples**
 
-- Most common epithelial metaplasia: columnar → squamous (respiratory tract under chronic irritation; vitamin A deficiency; duct stones).
-- Squamous → columnar: Barrett oesophagus (reflux of gastric acid).
-- Connective tissue metaplasia: cartilage, bone or fat in tissues that normally lack them, e.g., myositis ossificans; not clearly adaptive and not associated with increased cancer risk.
-
+1. Columnar to squamous: replacement of the ciliated columnar epithelium of the trachea and bronchi by stratified squamous epithelium in a habitual cigarette smoker.
+2. Squamous to columnar: Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells under the influence of refluxed gastric acid).
 
 ## Write about the mechanism of metaplasia and give examples.
 
 **Mechanism**
 
-Metaplasia does not result from a change in phenotype of an already differentiated cell. It results from either (a) reprogramming of local tissue stem cells or (b) colonisation by differentiated cell populations from adjacent sites.
-
-- The change is stimulated by signals from cytokines, growth factors and extracellular matrix components in the cellular environment; these promote expression of genes that drive stem cells along a specific differentiation pathway.
-- Transcription factor link: vitamin A (retinoic acid) deficiency or excess can cause metaplasia; retinoic acid acts through nuclear retinoid receptors to influence differentiation of stem-cell–derived progenitors.
+- Metaplasia does not result from a change in the phenotype of an already differentiated cell.
+- It results from reprogramming of local tissue stem cells, or from colonisation by differentiated cell populations from adjacent sites.
+- The change is stimulated by signals from cytokines, growth factors and extracellular matrix components in the cells' environment.
+- In stem cell reprogramming, these stimuli promote the expression of genes that drive cells toward a specific differentiation pathway.
+- Vitamin A (retinoic acid) deficiency or excess can cause metaplasia, because retinoic acid regulates gene transcription directly through nuclear retinoid receptors.
 
 **Examples**
 
-| Type of metaplasia | Examples |
-|---|---|
-| Columnar → squamous | Bronchi/trachea in smokers; vitamin A deficiency (respiratory epithelium, cornea); stones in salivary, pancreatic or bile ducts |
-| Squamous → columnar | Barrett oesophagus |
-| Connective tissue | Bone formation in muscle (myositis ossificans) after haemorrhage |
-
+- Columnar to squamous: bronchus of a smoker; respiratory epithelium and cornea in vitamin A deficiency; ducts of the salivary glands, pancreas or bile ducts with stones.
+- Squamous to columnar: Barrett oesophagus (squamous epithelium of the oesophagus replaced by intestinal-like columnar cells).
+- Connective tissue: bone formation in muscle after intramuscular haemorrhage (myositis ossificans).
 
 ## What are the merits and demerits of metaplasia?
 
-| Merits | Demerits |
-|---|---|
-| Replaces a fragile, stress-sensitive epithelium with a hardier one better able to withstand the adverse environment; e.g., rugged stratified squamous epithelium survives where specialised columnar epithelium might succumb (smoke, stones, reflux). | 1. Loss of protective functions — in the respiratory tract, mucus secretion and ciliary action (mucociliary clearance) are lost, predisposing to infection. 2. Persisting predisposing influences can initiate malignant transformation in the metaplastic epithelium: squamous cell carcinoma in the lung; adenocarcinoma in Barrett oesophagus. 3. Epithelial metaplasia is therefore "in most circumstances an undesirable change." 4. Vitamin A deficiency-related corneal metaplasia highly deleterious to vision. 5. Mesenchymal metaplasia (myositis ossificans) is not adaptive and not associated with cancer risk. |
+**Merit**
 
+- A cell type sensitive to a particular stress is replaced by another that is better able to withstand the adverse environment.
+- Rugged stratified squamous epithelium can survive where fragile specialised columnar epithelium might succumb.
+
+**Demerits**
+
+- Important protective mechanisms are lost, for example mucus secretion and ciliary action of the columnar epithelium in the respiratory tract.
+- Epithelial metaplasia is in most circumstances an undesirable change.
+- If the predisposing influences persist, they can initiate malignant transformation in the metaplastic epithelium.
+- Squamous cell carcinoma arising in squamous metaplasia of the lung is an example.
+- In Barrett oesophagus the cancers that arise are typically gland-forming adenocarcinomas.
 
 ## Mention the clinical importance of metaplasia.
 
-1. Predisposition to cancer — chronic persistence of the stimulus can lead to malignant transformation: squamous carcinoma in bronchial squamous metaplasia; adenocarcinoma in Barrett oesophagus.
-
-2. Loss of function — mucus secretion and ciliary clearance are lost in squamous-metaplastic respiratory epithelium → infection risk.
-
-3. Marker of the underlying cause/stress — smoking, vitamin A deficiency, duct stones, gastro-oesophageal reflux.
-
-4. Reversible when the stimulus is removed, giving a preventive opportunity (smoking cessation, reflux control).
-
-5. Connective tissue metaplasia (myositis ossificans) — local bone formation after haemorrhage; no cancer risk.
-
-6. Ocular: squamous metaplasia in vitamin A deficiency damages the cornea.
-
+- Epithelial metaplasia in most circumstances represents an undesirable change.
+- The epithelium becomes more durable, but protective mechanisms against infection, mucus secretion and ciliary action, are lost.
+- Persistent influences can initiate **malignant transformation** in the metaplastic epithelium.
+- Squamous cell carcinoma develops in areas of the lung where columnar epithelium has been replaced by squamous epithelium.
+- In Barrett oesophagus the cancers that arise are typically gland-forming **adenocarcinomas**.
+- Vitamin A deficiency causes squamous metaplasia of the cornea, with highly deleterious effects on vision.
+- Connective tissue metaplasia, such as myositis ossificans, is not associated with increased cancer risk.
 
 ## Give four examples of squamous metaplasia.
 
-Squamous metaplasia is the replacement of another epithelium by stratified squamous epithelium. It is the most common epithelial metaplasia (columnar to squamous; Fig. 2.28). Examples:
-
-1. **Respiratory tract in smokers:** the normal ciliated columnar epithelial cells of the trachea and bronchi are replaced by stratified squamous epithelium in response to chronic irritation.
-2. **Vitamin A (retinoic acid) deficiency:** squamous metaplasia of the respiratory epithelium and of the cornea, the latter with highly deleterious effects on vision.
-3. **Stones in the excretory ducts of the salivary glands:** the normally secretory columnar epithelium undergoes squamous metaplasia from irritation and pressure.
-4. **Stones in the pancreatic or bile ducts:** the same mechanism.
-
+1. Trachea and bronchi of a habitual cigarette smoker, where ciliated columnar cells are replaced by stratified squamous cells.
+2. Respiratory epithelium in vitamin A (retinoic acid) deficiency.
+3. Cornea in vitamin A deficiency.
+4. Excretory ducts of the salivary glands, pancreas or bile ducts, in the presence of stones.
 
 ## Write down the type of metaplasia in Barrett's esophagus.
 
-The metaplasia in Barrett oesophagus is **epithelial metaplasia of the squamous to columnar type**. The normal stratified squamous epithelium of the lower oesophagus is replaced by intestinal-like columnar (glandular) cells under the influence of refluxed gastric acid (chronic gastro-oesophageal reflux).
-
-- Cancers arising here are typically gland-forming adenocarcinomas.
-- Goblet cells identify intestinal metaplasia.
-
+**Squamous to columnar** metaplasia: the oesophageal squamous epithelium is replaced by intestinal-like columnar cells under the influence of refluxed gastric acid.
 
 ## Why is metaplasia called a double-edged sword / epithelial metaplasia is a double-edged sword?
 
-**Because it has both a protective benefit and harmful consequences**
+**Benefit**
 
-- Beneficial edge: the new epithelium is more durable — stratified squamous epithelium survives chronic irritation (smoke, stones, acid) where fragile specialised columnar epithelium might not.
-- Harmful edge: the protective mechanisms of the original epithelium (mucus secretion, ciliary action) are lost, increasing infection risk; and if the stimulus persists the metaplastic epithelium may undergo malignant transformation (squamous carcinoma of lung; adenocarcinoma in Barrett oesophagus).
+- The cell type sensitive to the stress is replaced by one better able to withstand the adverse environment.
+- Rugged stratified squamous epithelium can survive where fragile columnar epithelium might succumb.
 
-Hence the change "comes with a price" and is usually undesirable.
+**Price**
 
+- Protection against infection is lost, namely mucus secretion and ciliary action of the columnar epithelium.
+- If the influences that predispose to metaplasia persist, they can initiate malignant transformation.
+- Squamous cell carcinoma in areas of squamous metaplasia of the lung is an example.
 
 ## Causes of metaplasia.
 
@@ -461,44 +377,22 @@ Dysplasia is a precursor of malignant transformation, but progression to cancer 
 
 ## What do you mean by cell injury?
 
-Cell injury is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations affecting essential functions. It is reversible up to a point; if the stimulus is persistent or severe the cell suffers irreversible injury and dies.
-
-**Complete explanation**
-
-- Normal cell (homeostasis) → mild/transient stress → adaptation; injurious stimulus → reversible injury → irreversible injury → cell death (necrosis or apoptosis) (Fig. 2.1).
-- Adaptation, reversible injury and cell death are stages of progressive impairment, though not always sequential.
-- The response depends on the nature, duration and severity of the injury, and on the type, state and adaptability of the cell (e.g., skeletal muscle can be rested when ischaemic; cardiac muscle cannot).
-- All stresses act first at the molecular/biochemical level; morphologic change lags behind (minutes–hours for ultrastructure; hours–days for light microscopy/gross).
-
+Cell injury is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations that affect essential cellular functions. It is reversible up to a point, but if the injurious stimulus is persistent or severe, the cell suffers irreversible injury and ultimately undergoes cell death.
 
 ## What are the causes of cell injury?
 
-Causes of cell injury are oxygen deprivation (hypoxia), physical agents, chemical agents and drugs, infectious agents, immunologic reactions, genetic abnormalities and nutritional imbalances.
-
-| Cause | Details / examples |
-|---|---|
-| Oxygen deprivation (hypoxia) | Most important and common. Causes: ischaemia (reduced blood flow), inadequate oxygenation of blood (cardiorespiratory failure), ↓ oxygen-carrying capacity (anaemia, carbon monoxide poisoning, severe blood loss). Response depends on severity: cells may adapt (atrophy with narrowed artery), be injured or die. |
-| Physical agents | Mechanical trauma, extremes of temperature (burns, deep cold), sudden changes in atmospheric pressure, radiation, electric shock. |
-| Chemical agents and drugs | Glucose or salt in hypertonic concentration; oxygen at high concentration; poisons (arsenic, cyanide, mercury); pollutants, pesticides, asbestos, carbon monoxide, alcohol, cocaine, therapeutic drugs. |
-| Infectious agents | Viruses, rickettsiae, bacteria, fungi, parasites (tapeworms). |
-| Immunologic reactions | Autoimmune reactions to self-antigens; immune reactions to external agents (viruses, environmental substances). |
-| Genetic abnormalities | Extra chromosome (Down syndrome) or single base substitution (sickle cell anaemia); deficient protein function (enzyme defects), accumulation of damaged DNA or misfolded proteins; polymorphisms alter susceptibility. |
-| Nutritional imbalances | Protein-calorie deficiency, vitamin deficiencies, anorexia nervosa; nutritional excess (obesity → diabetes, cancer; high-lipid diet → atherosclerosis). |
-
+1. **Oxygen deprivation (hypoxia):** a deficiency of oxygen that reduces aerobic oxidative respiration; causes are reduced blood flow (ischaemia), inadequate oxygenation of the blood from cardiorespiratory failure, and decreased oxygen-carrying capacity, as in anaemia, carbon monoxide poisoning and severe blood loss.
+2. **Physical agents:** mechanical trauma, extremes of temperature (burns and deep cold), sudden changes in atmospheric pressure, radiation and electric shock.
+3. **Chemical agents and drugs:** hypertonic glucose or salt, high concentrations of oxygen, poisons such as arsenic, cyanide and mercury, pollutants, pesticides, carbon monoxide, asbestos, alcohol, cocaine and therapeutic drugs.
+4. **Infectious agents:** viruses, rickettsiae, bacteria, fungi, parasites and tapeworms.
+5. **Immunologic reactions:** reactions to endogenous self-antigens cause autoimmune diseases; reactions to external agents such as viruses and environmental substances also cause injury.
+6. **Genetic abnormalities:** an extra chromosome, as in Down syndrome, or a single base pair substitution, as in sickle cell anaemia; they injure cells through deficient protein function, or through accumulation of damaged DNA or misfolded proteins.
+7. **Nutritional imbalances:** protein-calorie deficiency, vitamin deficiencies, anorexia nervosa, and nutritional excess such as obesity and diets high in certain lipids.
 
 ## What are the types of cell injury?
 
-Cell injury is of two types — reversible (cell can recover when the stimulus is removed) and irreversible (progresses to cell death by necrosis or apoptosis).
-
-| Feature | Reversible injury | Irreversible injury |
-|---|---|---|
-| Stimulus | Mild/transient | Persistent or severe |
-| Outcome | Return to normal if stimulus removed | Cell death (necrosis, apoptosis) |
-| Morphology | Cell swelling (hydropic change), fatty change, membrane blebbing, eosinophilia | Necrosis (nuclear pyknosis/karyorrhexis/karyolysis, membrane rupture) or apoptosis |
-| Hallmark | ATP depletion with Na⁺ pump failure → water influx | Inability to reverse mitochondrial dysfunction and profound membrane dysfunction |
-
-Cell death itself occurs by necrosis and apoptosis, with further regulated pathways (necroptosis, pyroptosis, ferroptosis).
-
+1. **Reversible cell injury:** functional and structural alterations in early stages or mild forms of injury, which are correctable if the damaging stimulus is removed.
+2. **Irreversible cell injury:** persistent or severe injury, in which the cell passes the point of no return and undergoes cell death, either by necrosis or by apoptosis.
 
 ## Responses of cells to injurious stimuli.
 
@@ -517,74 +411,69 @@ The response depends on the nature, duration and severity of the injury and on t
 
 ## Mention the types of reversible cell injury.
 
-The two consistent forms of reversible cell injury are cellular swelling (hydropic change/vacuolar degeneration) and fatty change.
-
-- Cellular swelling: earliest manifestation of almost all forms of injury; due to water influx following failure of the ATP-dependent Na⁺–K⁺ pump.
-- Fatty change: accumulation of triglyceride-filled lipid vacuoles in cells involved in lipid metabolism (liver); toxic injury disrupts metabolic pathways.
-- Accompanying alterations: plasma membrane blebbing, detachment of ribosomes from ER, clumping of nuclear chromatin, mitochondrial swelling, myelin figures, eosinophilia.
-
+1. **Cellular swelling:** the earliest manifestation of almost all forms of cell injury; it results from influx of water.
+2. **Fatty change:** occurs in organs actively involved in lipid metabolism, such as the liver; toxic injury disrupts metabolic pathways and leads to rapid accumulation of triglyceride-filled lipid vacuoles.
 
 ## Write down the morphological types of cell injury.
 
-Morphologically, cell injury is reversible (cellular swelling and fatty change) or irreversible (cell death: necrosis and apoptosis).
+**Reversible injury**
 
-| Category | Morphologic type | Key features |
-|---|---|---|
-| Reversible | Cellular swelling (hydropic change/vacuolar degeneration) | Pallor, ↑ turgor and weight of organ; clear cytoplasmic vacuoles (dilated ER); eosinophilia |
-| Reversible | Fatty change | Triglyceride vacuoles in hepatocytes, myocytes etc. |
-| Irreversible | Necrosis | Cell swelling, ↑ eosinophilia, nuclear pyknosis/karyorrhexis/karyolysis, membrane breakdown, inflammation |
-| Irreversible | Apoptosis | Cell shrinkage, chromatin condensation, blebs and apoptotic bodies, phagocytosis without inflammation |
+- Cellular swelling (hydropic change or vacuolar degeneration).
+- Fatty change.
 
+**Irreversible injury (cell death)**
+
+- Necrosis.
+- Apoptosis.
 
 ## Write down the morphological types of irreversible cell injury.
 
-Irreversible injury ends in cell death, which shows two principal morphologic types:
+1. **Necrosis**, which shows six tissue patterns:
 
-1. Necrosis (Table 2.2) — cellular swelling, loss of membrane integrity, enzymatic digestion, inflammation. At the tissue level necrosis has patterns: coagulative, liquefactive, gangrenous, caseous, fat and fibrinoid.
+- Coagulative.
+- Liquefactive.
+- Gangrenous.
+- Caseous.
+- Fat necrosis.
+- Fibrinoid.
 
-- Nuclear changes: karyolysis (fading of basophilia), pyknosis (shrinkage, increased basophilia), karyorrhexis (fragmentation).
-
-2. Apoptosis (Table 2.2) — cell shrinkage, chromatin condensation, cytoplasmic blebs, apoptotic bodies, phagocytosis; no inflammation.
-
-Other regulated forms: necroptosis (resembles necrosis morphologically), pyroptosis, ferroptosis.
-
+2. **Apoptosis.**
 
 ## Mention the morphological pattern of cell death.
 
-| Pattern | Morphology |
-|---|---|
-| Necrosis | Cell swelling; eosinophilic, glassy/vacuolated cytoplasm; nuclear karyolysis/pyknosis/karyorrhexis; ruptured membranes; myelin figures; inflammation |
-| Necrosis — tissue patterns | Coagulative, liquefactive, gangrenous, caseous, fat, fibrinoid |
-| Apoptosis | Cell shrinkage with dense eosinophilic cytoplasm; chromatin condensation/fragmentation; membrane blebs; apoptotic bodies; phagocytosis; no inflammation |
-| Necroptosis | Necrosis-like (ATP loss, swelling, ROS, membrane rupture) but genetically regulated, caspase-independent |
-| Pyroptosis | Lytic cell death with gasdermin D pores and IL-1β release |
-| Ferroptosis | Iron-dependent lipid peroxidation; loss of mitochondrial cristae |
+There are two principal types of cell death, **necrosis** and **apoptosis**.
 
+**Patterns of tissue necrosis**
+
+- Coagulative.
+- Liquefactive.
+- Gangrenous.
+- Caseous.
+- Fat necrosis.
+- Fibrinoid.
+
+**Other forms of cell death**
+
+- **Necroptosis:** resembles necrosis morphologically but is genetically controlled, like apoptosis.
+- **Pyroptosis:** lytic death of microbe-infected cells with release of inflammatory mediators such as IL-1.
+- **Ferroptosis:** iron-dependent cell death induced by lipid peroxidation.
 
 ## What are the morphological changes in reversible cell injury?
 
-Gross: when many cells are involved — pallor, increased turgor, increased weight of the organ.
-
 **Light microscopy**
 
-- Cellular swelling (earliest manifestation) with small clear cytoplasmic vacuoles representing distended, pinched-off segments of ER — hydropic change / vacuolar degeneration.
-- Increased eosinophilia of cytoplasm (loss of RNA, which binds haematoxylin).
-- Fatty change in organs involved in lipid metabolism (liver).
+- Cellular swelling, which causes pallor, increased turgor and increased weight of the organ.
+- Small clear vacuoles in the cytoplasm, which are distended and pinched-off segments of the ER; this is called hydropic change or vacuolar degeneration.
+- Eosinophilia of the cytoplasm on H&E because of loss of RNA; it becomes more pronounced as injury progresses toward necrosis.
+- Fatty change in organs involved in lipid metabolism, such as the liver.
 
 **Electron microscopy**
 
-1. Plasma membrane: blebbing, blunting, loss of microvilli.
-
-2. Mitochondria: swelling and small amorphous densities.
-
-3. Myelin figures (phospholipids from damaged membranes) in cytosol.
-
-4. Dilation of ER with detachment of polysomes/ribosomes.
-
-5. Nuclear alterations: disaggregation of granular and fibrillar elements, clumping of chromatin.
-
-Mechanistic basis: ATP depletion → failure of Na⁺–K⁺ pump → influx of Na⁺ and water.
-
+1. Plasma membrane alterations: blebbing, blunting and loss of microvilli.
+2. Mitochondrial swelling, with small amorphous densities.
+3. Myelin figures in the cytosol, composed of phospholipids from damaged cellular membranes.
+4. Dilation of the ER, with detachment of polysomes.
+5. Nuclear alterations, with disaggregation of granular and fibrillar elements.
 
 ## Features of reversible cell injury.
 
@@ -628,45 +517,26 @@ A necrosed cell shows increased eosinophilia, a glassy or vacuolated ("moth-eate
 
 ## Describe in brief the sequence of events in ischemic injury.
 
-Ischaemia vs hypoxia: in hypoxia blood flow is maintained so anaerobic glycolysis can continue; in ischaemia delivery of glycolytic substrates also fails and metabolites accumulate → ischaemia causes more rapid and severe injury than hypoxia.
-
-Sequence
-
-1. ↓ O₂ tension → oxidative phosphorylation fails → ATP falls, AMP rises.
-
-2. Na⁺–K⁺ pump fails → Na⁺ and water enter → cell and ER swelling (reversible).
-
-3. Altered energy metabolism: ↑ AMP stimulates phosphorylase and phosphofructokinase → ↑ glycogenolysis/glycolysis → glycogen depleted, lactic acid and inorganic phosphate accumulate → ↓ intracellular pH → ↓ enzyme activity.
-
-4. Prolonged ATP depletion → ribosome detachment, polysome dissociation, ↓ protein synthesis, ↑ misfolded proteins.
-
-5. Ca²⁺ influx (stores and plasma membrane) → mitochondrial permeability transition pore opens, enzyme activation (phospholipases, proteases, endonucleases, ATPases).
-
-6. ROS formation (incomplete oxidative phosphorylation) → membrane/DNA/protein damage.
-
-7. Irreversible damage to mitochondrial and lysosomal membranes, plasma membrane → necrosis; cytochrome c leakage may also trigger apoptosis.
-
-Protective response: HIF-1 promotes angiogenesis, survival pathways and glycolysis; no reliable therapy yet; transient hypothermia helps in brain/spinal injury.
-
+1. Intracellular oxygen tension falls, oxidative phosphorylation fails and ATP generation decreases.
+2. A fall in ATP with a rise in AMP stimulates phosphorylase and phosphofructokinase, which increase glycogenolysis and glycolysis; glycogen stores are rapidly depleted.
+3. Anaerobic glycolysis produces lactic acid and inorganic phosphates, which lower the intracellular pH and reduce the activity of many cytosolic enzymes.
+4. The sodium-potassium ATPase of the plasma membrane fails. Sodium and water enter the cell and potassium falls, causing cell and ER swelling. This stage is reversible.
+5. With prolonged ATP depletion, ribosomes detach from the rough ER and polysomes dissociate, so protein synthesis falls, and protein misfolding may increase.
+6. The mitochondrial permeability transition pore opens, membrane potential is lost and ATP depletion progresses.
+7. Severe or prolonged ischaemia causes severe mitochondrial swelling, calcium influx into mitochondria and the cell, and rupture of lysosomes and the plasma membrane.
+8. The cell dies by necrosis, and by apoptosis through release of cytochrome c from mitochondria.
 
 ## Write down the mechanism of irreversible cell injury.
 
-The "point of no return" is largely undefined, but two phenomena consistently characterise irreversibility: (1) inability to reverse mitochondrial dysfunction (loss of oxidative phosphorylation and ATP) even after the injury resolves, and (2) profound disturbances in membrane function.
+- The point of no return, at which damage becomes irreversible, is still largely undefined.
+- Two phenomena consistently characterise irreversibility.
 
-**Contributing mechanisms**
+1. Inability to reverse mitochondrial dysfunction, that is lack of oxidative phosphorylation and ATP generation, even after the original injury resolves.
+2. Profound disturbances in membrane function.
 
-1. Mitochondrial damage and ATP depletion — opening of the mitochondrial permeability transition pore (loss of membrane potential) → failure of oxidative phosphorylation and progressive ATP depletion → necrosis. ATP at 5–10% of normal causes widespread failure of cell systems.
-
-2. Calcium overload — Ca²⁺ accumulation in mitochondria (MPTP opening) and activation of phospholipases, proteases, endonucleases and ATPases.
-
-3. Membrane damage — phospholipid breakdown (free fatty acids, lysophospholipids, acyl carnitine), ↓ phospholipid synthesis, lipid peroxidation by ROS, cytoskeletal damage → plasma membrane leakage; lysosomal membrane rupture releases hydrolases that digest the cell.
-
-4. ROS — lipid peroxidation, protein oxidation, DNA lesions.
-
-5. DNA damage and misfolded proteins — if irreparable, p53/UPR trigger apoptosis via the mitochondrial pathway.
-
-6. Result: necrosis (membrane failure, enzymatic digestion, leakage) and/or apoptosis (cytochrome c release).
-
+- Mitochondrial damage opens the permeability transition pore, with loss of membrane potential and progressive ATP depletion that culminates in necrosis.
+- Injury to lysosomal membranes lets lysosomal enzymes enter the cytoplasm and digest the cell, which is the enzymatic dissolution characteristic of necrosis.
+- Severe mitochondrial damage with ATP depletion, and rupture of lysosomal and plasma membranes, are typically associated with necrosis.
 
 ## How is depletion of ATP associated with hypoxic cell injury?
 
@@ -719,145 +589,119 @@ Also, Ca²⁺ accumulation in mitochondria opens the mitochondrial permeability 
 
 ## Discuss the role of calcium in cell injury.
 
-- Normal state: Ca²⁺ is a second messenger. Cytosolic free Ca²⁺ is kept very low (≈0.1 µmol/L, versus ≈1.3 mmol/L extracellularly — unit reconstructed from OCR), and most intracellular Ca²⁺ is sequestered in mitochondria and ER.
-- In injury: ischaemia and certain toxins cause an excessive rise in cytosolic Ca²⁺ — first from release of intracellular stores, later from influx across the plasma membrane. Calcium depletion protects cultured cells from injury.
+**Normal state**
 
-**Mechanisms of damage**
+- Calcium ions normally serve as second messengers in several signalling pathways.
+- Cytosolic free calcium is kept at very low concentration, less than 0.1 μmol, compared with extracellular levels of 1.3 mmol.
+- Most intracellular calcium is sequestered in mitochondria and the ER.
 
-1. Mitochondria: Ca²⁺ accumulation opens the permeability transition pore → loss of membrane potential → failure of ATP generation.
+**In injury**
 
-2. Enzyme activation: phospholipases (membrane damage), proteases (membrane and cytoskeleton), endonucleases (DNA/chromatin fragmentation), ATPases (hasten ATP depletion).
-
-3. May also trigger apoptosis.
-
-- Reperfusion: Ca²⁺ overload worsens on reperfusion because of cell membrane damage and ROS injury to the sarcoplasmic reticulum.
-- The significance of these mechanisms in vivo is not fully established.
-
+- Ischaemia and certain toxins cause an excessive increase in cytosolic calcium.
+- Calcium depletion protects cultured cells from injury by a variety of harmful stimuli.
+- Accumulation of calcium in mitochondria opens the mitochondrial permeability transition pore, with failure of ATP generation.
+- Increased cytosolic calcium activates phospholipases, proteases, endonucleases and ATPases.
+- Calcium influx may also trigger apoptosis.
 
 ## Discuss the sources and possible consequences of increased cytosolic calcium in cell injury.
 
-**Sources**
+**Sources of increased cytosolic calcium**
 
-1. Release from intracellular stores — mitochondria and ER (early).
-
-2. Increased influx across the plasma membrane (later; membrane damage, ischaemia, toxins).
-
-3. On reperfusion: influx via damaged membranes and ROS-injured sarcoplasmic reticulum.
+- Initially, release from intracellular stores, which are the mitochondria and the ER.
+- Later, increased influx across the plasma membrane.
 
 **Consequences**
 
-| Target | Consequence |
-|---|---|
-| Mitochondria | MPTP opening → ↓ membrane potential → failure of oxidative phosphorylation → ATP depletion |
-| Phospholipases | Membrane damage |
-| Proteases | Membrane and cytoskeletal damage (cytoskeleton detachment) |
-| Endonucleases | Nuclear damage — DNA/chromatin fragmentation |
-| ATPases | Faster ATP depletion |
-| Overall | Necrosis; apoptosis may be triggered |
-
+- Accumulation of calcium in mitochondria opens the mitochondrial permeability transition pore, with failure of ATP generation.
+- Activation of **phospholipases**, which cause membrane damage.
+- Activation of **proteases**, which break down membrane and cytoskeletal proteins.
+- Activation of **endonucleases**, which cause DNA and chromatin fragmentation.
+- Activation of **ATPases**, which hastens ATP depletion.
+- Calcium influx may also trigger apoptosis.
 
 ## How are free radicals initiated?
 
-Free radical: chemical species with a single unpaired electron in an outer orbit; highly reactive and autocatalytic.
-
-Generation (Fig. 2.22)
-
-1. Redox reactions in normal metabolism — partial reduction of O₂ yields O₂•⁻ (1 electron), H₂O₂ (2) and •OH (3) in ER, cytosol, mitochondria, peroxisomes, lysosomes.
-
-2. Absorption of radiant energy (UV, x-rays) — ionising radiation hydrolyses water into •OH and H•.
-
-3. Respiratory burst of activated leukocytes — NADPH oxidase; xanthine oxidase generates O₂•⁻. Defects → chronic granulomatous disease.
-
-4. Enzymatic metabolism of exogenous chemicals/drugs — e.g., CCl₄ → •CCl₃.
-
-5. Transition metals (iron, copper) — Fenton reaction: H₂O₂ + Fe²⁺ → Fe³⁺ + •OH + OH⁻; O₂•⁻ helps reduce Fe³⁺ to Fe²⁺.
-
-6. Nitric oxide — acts as a free radical; forms peroxynitrite (ONOO⁻).
-
+1. **Normal redox reactions of metabolism:** during respiration, oxygen is reduced by four electrons to give two water molecules. Partially reduced intermediates form in small amounts: superoxide anion (one electron), hydrogen peroxide (two electrons) and hydroxyl radical (three electrons).
+2. **Absorption of radiant energy:** for example ultraviolet light and X-rays; ionising radiation can hydrolyse water into hydroxyl and hydrogen free radicals.
+3. **Bursts of ROS in activated leukocytes during inflammation:** produced by the plasma membrane complex NADPH oxidase; some intracellular oxidases such as xanthine oxidase also generate superoxide anion. Defective leukocyte superoxide production causes chronic granulomatous disease.
+4. **Enzymatic metabolism of exogenous chemicals or drugs:** for example carbon tetrachloride generates the CCl3 radical.
+5. **Transition metals such as iron and copper:** they donate or accept free electrons and catalyse free radical formation, as in the Fenton reaction (hydrogen peroxide plus ferrous iron gives ferric iron, hydroxyl radical and hydroxide).
+6. **Nitric oxide:** generated by endothelial cells, macrophages, neurons and other cells, it can act as a free radical and can be converted to the highly reactive peroxynitrite anion, nitrogen dioxide and nitrite.
 
 ## What are the effects of free radicals on cells?
 
-**Three particularly relevant reactions**
-
-1. Lipid peroxidation of membranes — attack on double bonds of unsaturated fatty acids → unstable peroxides → autocatalytic propagation → extensive membrane damage.
-
-2. Oxidative modification of proteins — oxidation of amino-acid side chains, covalent protein–protein cross-links (disulfide bonds), backbone oxidation; damaged enzyme active sites, altered structural proteins, enhanced degradation of misfolded proteins.
-
-3. DNA lesions — single- and double-strand breaks, cross-linking, adducts → implicated in ageing and malignant transformation.
-
-Other effects: injury ranges from necrosis to apoptosis; at controlled low levels ROS serve physiologic signalling roles. Free radicals are implicated in chemical/radiation injury, reperfusion injury, ageing and microbial killing.
-
+1. **Lipid peroxidation in membranes:** free radicals attack the double bonds of unsaturated fatty acids in plasma and organellar membranes. This yields unstable peroxides, and an autocatalytic chain reaction (propagation) causes extensive membrane damage.
+2. **Oxidative modification of proteins:** oxidation of amino acid side chains, formation of covalent protein-protein cross-links such as disulphide bonds, and oxidation of the protein backbone. This can damage enzyme active sites, disrupt the shape of structural proteins and enhance proteasomal degradation of misfolded proteins.
+3. **Lesions in DNA:** single- and double-strand breaks, cross-linking of strands and formation of adducts. Oxidative DNA damage is implicated in cell ageing and in malignant transformation.
+4. Free radicals can also trigger **apoptosis**, as well as necrosis.
 
 ## Write short note on: Free radical
 
-Definition: Chemical species with a single unpaired electron in an outer orbit; they attack and modify adjacent molecules (proteins, lipids, carbohydrates, nucleic acids). ROS are oxygen-derived free radicals; excess production or decreased scavenging = oxidative stress.
+**Definition:** free radicals are chemical species that have a single unpaired electron in an outer orbit. They attack and modify adjacent molecules such as proteins, lipids, carbohydrates and nucleic acids. Some reactions are autocatalytic, which propagates the chain of damage.
 
-Important free radicals: O₂•⁻, H₂O₂, •OH (most reactive), ONOO⁻ (Table 2.3).
+**Generation**
 
-Generation: normal respiration, radiation, leukocyte oxidative burst, drug metabolism (CCl₄ → •CCl₃), Fenton reaction, NO.
+- Normal redox reactions of metabolism.
+- Absorption of radiant energy.
+- Bursts of ROS in activated leukocytes.
+- Metabolism of exogenous chemicals or drugs.
+- Transition metals such as iron and copper.
+- Nitric oxide.
 
-Removal: spontaneous decay; antioxidants (vitamins E, A, C, glutathione); metal-binding proteins (transferrin, ferritin, lactoferrin, ceruloplasmin); enzymes catalase, SOD, glutathione peroxidase.
+**Principal reactive oxygen species**
 
-Pathologic effects: lipid peroxidation, protein oxidation, DNA damage → necrosis or apoptosis.
+- Superoxide anion, hydrogen peroxide, hydroxyl radical and peroxynitrite.
+- The hydroxyl radical is the most reactive oxygen-derived free radical and is the principal ROS damaging lipids, proteins and DNA.
 
-Role in disease: chemical and radiation injury, ischaemia–reperfusion injury, cellular ageing, microbial killing, cancer, Alzheimer disease. Lipofuscin is the telltale of free-radical injury/lipid peroxidation.
+**Removal**
 
+- Antioxidants block free radical formation or scavenge free radicals: vitamins E and A, ascorbic acid and glutathione.
+- Iron and copper are bound to storage and transport proteins (transferrin, ferritin, lactoferrin, ceruloplasmin).
+- **Catalase** in peroxisomes decomposes hydrogen peroxide.
+- **Superoxide dismutase** converts superoxide anion to hydrogen peroxide; manganese-SOD is in mitochondria and copper-zinc-SOD is in the cytoplasm.
+- **Glutathione peroxidase** breaks down free radicals; the ratio of oxidised to reduced glutathione reflects the oxidative state of the cell.
+
+**Effects**
+
+- Lipid peroxidation of membranes.
+- Oxidative modification of proteins.
+- Lesions in DNA.
+- Triggering of apoptosis.
+
+**Clinical relevance**
+
+- Oxidative stress, meaning excess free radicals from increased production or decreased scavenging, is implicated in chemical and radiation injury, ischaemia-reperfusion injury, cellular ageing and microbial killing by phagocytes.
+- It is also implicated in cancer and degenerative diseases such as Alzheimer disease.
 
 ## Describe the biochemical mechanism leading to cell membrane damage.
 
-Early loss of selective membrane permeability is a consistent feature of most forms of cell injury (except apoptosis). In ischaemia it results from ATP depletion and calcium-mediated phospholipase activation; membranes may also be damaged directly by bacterial toxins, viral proteins, lytic complement components and physical/chemical agents.
+Early loss of selective membrane permeability, leading to overt membrane damage, is a consistent feature of most forms of cell injury except apoptosis. In ischaemic cells it results from ATP depletion and calcium-mediated activation of phospholipases. The plasma membrane can also be damaged directly by bacterial toxins, viral proteins, lytic complement components and physical and chemical agents.
 
-Biochemical mechanisms (Fig. 2.21)
-
-| Mechanism | Details |
-|---|---|
-| ROS → lipid peroxidation | Free radicals attack unsaturated fatty acids (autocatalytic chain reaction) |
-| ↓ Phospholipid synthesis | Defective mitochondrial function or hypoxia → ↓ ATP → energy-dependent biosynthesis fails; affects all membranes including mitochondria |
-| ↑ Phospholipid breakdown | Ca²⁺-activated phospholipases → free fatty acids, acyl carnitine, lysophospholipids, which have detergent effect, insert into the bilayer and alter permeability |
-| Cytoskeletal abnormalities | Ca²⁺-activated proteases damage anchors between membrane and cytoskeleton; with cell swelling (esp. myocardium) the membrane detaches and ruptures |
-
-Consequences: leaky plasma membrane (loss of ions, enzymes, metabolites), lysosomal enzyme release, mitochondrial damage → necrosis.
-
+1. **Reactive oxygen species:** oxygen free radicals injure membranes by lipid peroxidation.
+2. **Decreased phospholipid synthesis:** defective mitochondrial function or hypoxia reduces ATP production and thus the energy-dependent synthesis of phospholipids, which affects all cellular membranes including those of mitochondria.
+3. **Increased phospholipid breakdown:** raised cytosolic and mitochondrial calcium activates calcium-dependent phospholipases. The breakdown products are unesterified free fatty acids, acyl carnitine and lysophospholipids, which have a detergent effect on membranes and may change permeability.
+4. **Cytoskeletal abnormalities:** proteases activated by cytosolic calcium damage the filaments that anchor the plasma membrane to the cell interior. With cell swelling, especially in myocardial cells, the membrane detaches from the cytoskeleton and is susceptible to stretching and rupture.
 
 ## What is reperfusion injury?
 
-Reperfusion injury is the paradoxical exacerbation of cell injury, with loss of additional viable cells, when blood flow is restored to ischaemic tissue — tissue is lost in addition to cells irreversibly damaged by the ischaemia itself. Restoring flow promotes recovery of reversibly injured cells but can also cause cell death.
-
-- Clinically important in myocardial and cerebral infarction after therapies that restore blood flow.
-- Proposed explanation: new damaging processes are set in motion during reperfusion.
-
+Restoration of blood flow to ischaemic tissues can promote recovery of reversibly injured cells, but it can also paradoxically exacerbate cell injury and cause cell death. Reperfused tissues may lose viable cells in addition to those irreversibly damaged by the ischaemia; this process is called ischaemia-reperfusion injury.
 
 ## Discuss the mechanism of reperfusion injury.
 
-New damage during reperfusion kills cells that might otherwise have recovered. Mechanisms:
+New damaging processes are set in motion during reperfusion, which kill cells that might otherwise have recovered.
 
-1. Oxidative stress — reoxygenation increases generation of reactive oxygen and nitrogen species (incomplete oxygen reduction in leukocytes, damaged endothelial and parenchymal cells); antioxidant defences were compromised during ischaemia.
-
-2. Intracellular calcium overload — starts during ischaemia; worsened on reperfusion by influx through damaged membranes and ROS injury to sarcoplasmic reticulum → MPTP opening → ATP depletion.
-
-3. Inflammation — danger signals from dead cells, cytokines from resident macrophages, upregulated adhesion molecules → neutrophil recruitment → more injury (blocking cytokines/adhesion molecules reduces damage experimentally).
-
-4. Complement activation — IgM antibodies deposited in ischaemic tissue bind complement when flow resumes → ↑ injury and inflammation.
-
-Reperfused infarcted myocardium often shows haemorrhage and contraction-band necrosis.
-
+1. **Oxidative stress:** reoxygenation increases generation of reactive oxygen and nitrogen species, from incomplete reduction of oxygen in leukocytes and in damaged endothelial and parenchymal cells. Antioxidant defences compromised during ischaemia sensitise the cells to free radical damage.
+2. **Intracellular calcium overload:** it begins during acute ischaemia and is worsened during reperfusion by calcium influx through damaged cell membranes and ROS-mediated injury to the sarcoplasmic reticulum. It favours opening of the mitochondrial permeability transition pore, with ATP depletion and further injury.
+3. **Inflammation:** danger signals from dead cells, cytokines from resident macrophages and increased adhesion molecules on hypoxic parenchymal and endothelial cells recruit neutrophils, which cause additional tissue injury.
+4. **Complement activation:** some IgM antibodies deposit in ischaemic tissues; when blood flow resumes, complement binds to them and is activated, which worsens cell injury and inflammation.
 
 ## Why does inflammation occur in necrosis?
 
-Necrosis is a pathologic, unregulated form of death in which the plasma membrane is disrupted, so cellular contents leak into the extracellular space, where they elicit a host (inflammatory) reaction that clears "the scene of the accident."
-
-**Steps**
-
-1. Severe membrane damage → lysosomal enzymes enter the cytoplasm and digest the cell; cell contents leak out through the damaged plasma membrane.
-
-2. Leaked molecules called damage-associated molecular patterns (DAMPs) — e.g., ATP (from damaged mitochondria), uric acid (breakdown product of DNA) and many others normally confined within healthy cells — signal severe injury.
-
-3. DAMPs are recognised by receptors on macrophages and most other cell types, triggering phagocytosis of debris and production of cytokines that induce inflammation.
-
-4. Inflammatory cells release more proteolytic enzymes; phagocytosis + enzymatic digestion normally clear the necrotic cells.
-
-Contrast: in apoptosis the membrane stays intact and "eat me" signals ensure rapid clearance, so there is no inflammation.
-
+- Severe membrane damage lets cellular contents leak through the damaged plasma membrane into the extracellular space, where they elicit a host reaction, which is inflammation.
+- Some substances released from injured cells are called **damage-associated molecular patterns (DAMPs)**: ATP from damaged mitochondria, uric acid (a breakdown product of DNA), and many other molecules normally confined within healthy cells.
+- Receptors on macrophages and most other cell types recognise these molecules.
+- This triggers phagocytosis of the debris and production of cytokines that induce inflammation.
+- Inflammatory cells produce more proteolytic enzymes, and phagocytosis with enzymatic digestion usually clears the necrotic cells.
 
 ## Define necrosis.
 
@@ -866,93 +710,61 @@ Necrosis is a pathologic process in which **cellular membranes are destroyed**, 
 
 **Cytoplasmic changes**
 
-- Increased eosinophilia on H&E (loss of cytoplasmic RNA + accumulation of denatured proteins binding eosin).
-- Glassy homogeneous appearance (loss of glycogen particles).
-- Vacuolated, "moth-eaten" cytoplasm once enzymes digest organelles.
-- Myelin figures — whorled phospholipid precipitates; phagocytosed or degraded to fatty acids, which may calcify.
-- EM: discontinuities in plasma and organelle membranes; marked mitochondrial dilation with large amorphous densities; intracytoplasmic myelin figures; amorphous debris; fluffy aggregates of denatured protein.
+- Increased eosinophilia on H&E, from loss of cytoplasmic RNA and accumulation of denatured cytoplasmic proteins that bind eosin.
+- Glassy homogeneous appearance, mainly from loss of glycogen particles.
+- Vacuolated, moth-eaten cytoplasm once enzymes have digested the organelles.
+- Myelin figures, which are large whorled phospholipid precipitates; they are phagocytosed or degraded to fatty acids, which may calcify.
+- On electron microscopy: discontinuities in plasma and organelle membranes, marked dilation of mitochondria with large amorphous densities, intracytoplasmic myelin figures, amorphous debris, and aggregates of fluffy material representing denatured protein.
 
-**Nuclear changes — three patterns, all due to DNA breakdown**
+**Nuclear changes**
 
-| Pattern | Description |
-|---|---|
-| Karyolysis | Fading of chromatin basophilia (loss of DNA from endonuclease digestion) |
-| Pyknosis | Nuclear shrinkage; chromatin condenses into dense basophilic mass (also seen in apoptosis) |
-| Karyorrhexis | Pyknotic nucleus fragments |
+1. **Karyolysis:** fading of chromatin basophilia, from enzymatic degradation of DNA by endonucleases.
+2. **Pyknosis:** nuclear shrinkage with increased basophilia; the chromatin condenses into a dense, shrunken basophilic mass.
+3. **Karyorrhexis:** fragmentation of the pyknotic nucleus.
 
-With time (1–2 days) the nucleus disappears completely.
-
+After 1 or 2 days the nucleus of the necrotic cell disappears totally.
 
 ## Mention the basic types of necrosis with examples.
 
 | Type | Example |
 |---|---|
-| Coagulative | Infarcts of kidney, heart (myocardial infarct), spleen — ischaemia in all organs except brain |
-| Liquefactive | Abscess (focal bacterial/fungal infection); hypoxic/ischaemic infarct of brain |
-| Gangrenous | Lower limb that has lost blood supply (dry); with superimposed infection → wet gangrene |
-| Caseous | Tuberculosis (lung) |
-| Fat necrosis | Acute pancreatitis — peritoneal and pancreatic fat |
-| Fibrinoid | Immune-complex vasculitis in arterial walls |
-
+| **Coagulative** | Infarct, for example wedge-shaped infarct of the kidney, from vessel obstruction in any organ except the brain |
+| **Liquefactive** | Focal bacterial or occasionally fungal infection with pus; hypoxic infarct of the brain |
+| **Gangrenous** | Lower leg that has lost its blood supply; wet gangrene when bacterial infection is added |
+| **Caseous** | Tuberculosis of the lung |
+| **Fat necrosis** | Acute pancreatitis, with chalky-white fat saponification in the peritoneum and mesentery |
+| **Fibrinoid** | Immune complex deposition in the walls of arteries |
 
 ## Describe the morphological types of necrosis.
 
-Necrosis of tissues has several distinct patterns that give clues to the underlying cause (terms are somewhat dated but widely used).
+Necrosis of tissues has several morphologically distinct patterns, which give clues to the underlying cause.
 
-1. Coagulative necrosis
-
-- Architecture of dead tissue preserved for at least some days; firm texture. Injury denatures structural proteins and enzymes, blocking proteolysis; intensely eosinophilic cells with indistinct/reddish nuclei persist for days to weeks, then are broken down by lysosomal enzymes of infiltrating leukocytes and removed by phagocytosis.
-- Caused by ischaemia from vessel obstruction, in all organs except the brain; localised area = infarct.
-
-2. Liquefactive necrosis
-
-- Digestion of dead cells → viscous liquid. Seen in focal bacterial (occasionally fungal) infections, because microbes attract leukocytes whose enzymes are liberated; creamy-yellow pus. Hypoxic death of CNS cells is liquefactive (reason unknown).
-
-3. Gangrenous necrosis
-
-- Clinical term for a limb (usually lower leg) that has lost blood supply and undergone necrosis (typically coagulative) over multiple tissue planes; superimposed bacterial infection adds liquefaction = wet gangrene.
-
-4. Caseous necrosis
-
-- Seen mostly in tuberculous infection; friable, white "cheese-like" area. Microscopically a structureless collection of fragmented/lysed cells and amorphous granular debris enclosed within a granuloma (epithelioid macrophages).
-
-5. Fat necrosis
-
-- Focal fat destruction by activated pancreatic lipases in acute pancreatitis: enzymes leak from acinar cells, liquefy fat-cell membranes, triglycerides are split into fatty acids that combine with calcium → chalky-white saponification. Histology: shadowy outlines of necrotic fat cells, basophilic calcium deposits, inflammation.
-
-6. Fibrinoid necrosis
-
-- Special form of vascular damage in immune reactions; antigen–antibody complexes deposited in arterial walls with leaked plasma proteins give a bright pink, amorphous "fibrin-like" appearance on H&E.
-
+1. **Coagulative necrosis:** architecture of the dead tissue is preserved for at least some days and the tissue is firm. Injury denatures structural proteins and enzymes, which blocks proteolysis. Intensely eosinophilic cells with indistinct or reddish nuclei persist for days or weeks. It follows ischaemia from vessel obstruction in all organs except the brain, and a localised area is an infarct.
+2. **Liquefactive necrosis:** digestion of the dead cells turns the tissue into a viscous liquid. It occurs in focal bacterial or occasionally fungal infections, where microbes attract leukocytes that liberate enzymes; the creamy yellow material is pus. Hypoxic death of cells in the central nervous system is often liquefactive.
+3. **Gangrenous necrosis:** not a specific pattern, but a clinical term for a limb, generally the lower leg, that has lost its blood supply and shows necrosis, typically coagulative, involving multiple tissue planes. Added bacterial infection increases liquefaction and gives wet gangrene.
+4. **Caseous necrosis:** seen most often in tuberculous infection. The area is friable, white and cheese-like. Microscopically it is a structureless collection of fragmented or lysed cells and amorphous granular debris, enclosed within epithelioid macrophages, which is a granuloma.
+5. **Fat necrosis:** focal destruction of fat from release of activated pancreatic lipases in acute pancreatitis. Enzymes liquefy fat cell membranes, triglycerides are split, and the fatty acids combine with calcium to form chalky-white areas (fat saponification). Histology shows shadowy outlines of necrotic fat cells, basophilic calcium deposits and inflammation.
+6. **Fibrinoid necrosis:** special form of vascular damage in immune reactions. Antigen-antibody complexes deposited in arterial walls, with leaked plasma proteins, give a bright pink amorphous appearance on H&E.
 
 ## Describe the naked eye features of different types of necrosis.
 
-| Type | Gross (naked-eye) features |
+| Type | Naked eye features |
 |---|---|
-| Coagulative | Firm texture; opaque, pale/yellow area; kidney infarct is wedge-shaped (yellow) (Fig. 2.10A); myocardial infarct appears as unstained pale area with TTC stain (Fig. 2.2). |
-| Liquefactive | Tissue transformed into a viscous liquid; pus is creamy yellow; brain infarct shows dissolution of tissue (Fig. 2.11). |
-| Gangrenous | Necrotic limb with involvement of multiple tissue planes; with infection, wet gangrene shows liquefaction. Dry gangrene: black, shrunken, mummified with a line of demarcation. |
-| Caseous | Friable, white "cheese-like"; yellow-white cheesy debris (Fig. 2.12). |
-| Fat necrosis | Grossly visible chalky-white areas (calcium soaps) in the pancreas and mesentery/peritoneum (Fig. 2.13). |
-| Fibrinoid | Not recognised grossly; seen microscopically as bright pink amorphous wall deposits. |
-
+| **Coagulative** | Firm texture; kidney infarct is wedge-shaped and yellow |
+| **Liquefactive** | Tissue transformed into a viscous liquid; pus is creamy yellow; brain infarct shows dissolution of tissue |
+| **Gangrenous** | Necrosis of a limb, generally the lower leg, involving multiple tissue planes; liquefaction in wet gangrene |
+| **Caseous** | Friable, white and cheese-like; yellow-white cheesy debris in tuberculous lung |
+| **Fat necrosis** | Grossly visible chalky-white areas of fat saponification, for example in the mesentery |
+| **Fibrinoid** | No gross feature is described; on H&E it is a bright pink amorphous area in the arterial wall |
 
 ## How will you differentiate between liquefactive and coagulative necrosis?
 
-In coagulative necrosis the tissue architecture is preserved for days and the tissue is firm (denatured proteins and enzymes block proteolysis) — typical of ischaemic infarcts in all organs except the brain; in liquefactive necrosis the dead cells are digested into a viscous liquid — typical of focal bacterial/fungal infections (pus) and hypoxic brain injury.
-
 | Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
-| Basic change | Denaturation of structural proteins and enzymes; proteolysis blocked | Digestion of dead cells by hydrolytic enzymes |
-| Architecture | Preserved for at least some days | Lost; tissue becomes liquid |
-| Consistency | Firm | Viscous liquid/semi-liquid; creamy yellow pus |
-| Typical cause | Ischaemia (vessel obstruction) | Focal bacterial/fungal infection; hypoxic CNS injury |
-| Site | All solid organs except brain (heart, kidney, spleen) | Abscesses; brain infarcts |
-| Microscopy | Eosinophilic cells with indistinct or reddish nuclei; ghost outlines; later leukocyte infiltration | Amorphous debris; many neutrophils; cystic space |
-| Enzymes | Later lysosomal enzymes of infiltrating leukocytes | Leukocyte enzymes liberated early |
-| Examples | Kidney infarct (wedge-shaped), myocardial infarct | Abscess, brain infarct |
-| Page | | |
-
+| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leukocytes, which liberate enzymes that digest the cells |
+| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
 
 ## Classify necrosis.
 
@@ -1046,49 +858,44 @@ Gangrenous necrosis is not a specific pattern of cell death but a clinical term 
 
 ## What is ischemic necrosis?
 
-Ischaemic necrosis is coagulative necrosis resulting from ischaemia — reduced blood flow, usually due to mechanical arterial obstruction — in which the architecture of the dead tissue is preserved for some days. A localised area is called an infarct.
+Ischaemia caused by obstruction in a vessel leads to coagulative necrosis of the supplied tissue in all organs except the brain. A localised area of coagulative necrosis is called an infarct.
 
-- Occurs in all organs except the brain, where ischaemic necrosis is liquefactive.
-- Mechanism: loss of O₂ and glycolytic substrates → ATP depletion → Na⁺ pump failure, swelling, Ca²⁺ influx, membrane damage → necrosis.
-- Examples: myocardial infarction, kidney infarct.
-- Ischaemia causes more rapid and severe injury than hypoxia.
-
+In the central nervous system, hypoxic death of cells often shows liquefactive necrosis.
 
 ## How do coagulative necrosis and liquefactive necrosis differ?
 
-| Aspect | Coagulative necrosis | Liquefactive necrosis |
+| Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
-| Underlying process | Denaturation of structural proteins and enzymes; proteolysis blocked | Digestion of dead cells by hydrolytic enzymes |
-| Result | Firm tissue with preserved architecture for days | Viscous liquid |
-| Cause | Ischaemia from vascular obstruction | Focal bacterial/fungal infection (leukocyte enzymes) and hypoxic CNS injury |
-| Tissues | All organs except brain | Abscess; brain |
-| Clearance | Slow; leukocyte lysosomal enzymes after days–weeks | Rapid digestion with pus formation |
-| Examples | Kidney infarct | Brain infarct, abscess |
-
+| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leukocytes, which liberate enzymes that digest the cells |
+| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
 
 ## What are the morphological differences between coagulation necrosis and liquefactive necrosis?
 
-| Morphology | Coagulative necrosis | Liquefactive necrosis |
+| Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
-| Gross | Firm, pale/yellow; wedge-shaped infarct in kidney | Soft, semi-fluid/viscous; creamy-yellow pus; cavitation or dissolution of brain tissue |
-| Microscopic architecture | Preserved cellular outlines ("ghost cells") | Lost; amorphous, liquefied debris |
-| Cells and nuclei | Intensely eosinophilic cells; indistinct or reddish nuclei; loss of nuclei | Dissolved cells; many neutrophils; nuclear debris |
-| Inflammatory infiltrate | Leukocytes at periphery/between necrotic cells, later | Abundant leukocytes (pus) |
-| Duration | Persists days–weeks | Rapid breakdown |
-
+| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leukocytes, which liberate enzymes that digest the cells |
+| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
 
 ## Give the morphology of caseation necrosis.
 
-Gross: friable, white (yellow-white) "cheese-like" necrotic area (Fig. 2.12: tuberculosis of the lung with a large area of caseous necrosis containing yellow-white cheesy debris).
+**Naked eye**
 
-Microscopy: a structureless collection of fragmented or lysed cells and amorphous granular debris, enclosed within a distinctive collection of macrophages called epithelioid cells; this appearance is characteristic of a granuloma.
+- Friable, white, cheese-like area; the word caseous means cheese-like.
+- Yellow-white cheesy debris, seen for example in tuberculosis of the lung.
 
-**Other points**
+**Microscopy**
 
-- Most often in foci of tuberculous infection.
-- Architecture completely obliterated (contrast with coagulative necrosis).
-- May calcify (dystrophic calcification; a tuberculous lymph node may be converted to stone).
+- Structureless collection of fragmented or lysed cells and amorphous granular debris.
+- It is enclosed within a distinctive collection of macrophages called epithelioid cells.
+- This appearance is characteristic of a **granuloma**.
 
+**Setting**
+
+- Seen most often in foci of tuberculous infection.
 
 ## A 50-year-old, chronic alcoholic man was admitted with central acute abdominal pain radiating to the back. His serum amylase was 12000 U/L (normal < 300 U/L). What will be your provisional diagnosis?
 
@@ -14728,3 +14535,8 @@ The body fluids usually examined in clinical pathology are:
 8. **Sputum** (for tuberculosis and malignant cells).
 9. **Gastric juice, bile, and duodenal aspirate.**
 10. **Others:** bone marrow aspirate, breast milk, vaginal and cervical secretions, and fluid from cysts and abscesses.
+
+## Define atrophy.
+
+Atrophy is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
+

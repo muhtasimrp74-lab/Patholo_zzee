@@ -42,41 +42,6 @@
 "post": "<li><strong>Retinopathy:</strong> non-pr"
 },
 {
-"old": "Nuclear changes</strong>: karyolysis (<em>",
-"new": "Nuclear changes:</strong> karyolysis (<em>",
-"nth": 0,
-"pre": "eous, fat and fibrinoid.<ul><li><strong>",
-"post": "fading of basophilia</em>), pyknosis (sh"
-},
-{
-"old": ".<ul><li><strong>Reperfusion</strong>: Ca²⁺ overload worsens on reperfusion because of cell membrane damage and <strong>",
-"new": ".</li></ol><ul><li><strong>Reperfusion:</strong> Ca²⁺ overload worsens on reperfusion because of cell membrane damage and <strong>",
-"nth": 0,
-"pre": "rong>May also trigger apoptosis</strong>",
-"post": "ROS</strong> injury to the sarcoplasmic "
-},
-{
-"old": "</li></ol>",
-"new": "",
-"nth": 0,
-"pre": "em>not</em> fully established.</li></ul>",
-"post": "<!--fa3--><!--fa2--><!--fa1--></div></ar"
-},
-{
-"old": "Fibrinoid necrosis<ul>",
-"new": "Fibrinoid necrosis</li></ol><ul>",
-"nth": 0,
-"pre": "posits, inflammation.</li></ul></li><li>",
-"post": "<li>Special form of vascular damage in i"
-},
-{
-"old": "</li></ol>",
-"new": "",
-"nth": 0,
-"pre": "e\"</em> appearance on H&amp;E.</li></ul>",
-"post": "<!--fa3--><!--fa2--><!--fa1--></div></ar"
-},
-{
 "old": "Fat necrosis (<em>enzymatic fat necrosis</em>), in the pancreas and the peritoneal fat.</p>",
 "new": "(The wording <em>\"compression/peritoneum\"</em> appears garbled<br>it is read here as <em>\"pancreas/peritoneum.\"</em>)</p><p>Fat necrosis (<em>enzymatic fat necrosis</em>).</p>",
 "nth": 0,
