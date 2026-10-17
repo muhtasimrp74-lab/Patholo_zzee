@@ -899,119 +899,140 @@ In the central nervous system, hypoxic death of cells often shows liquefactive n
 
 ## A 50-year-old, chronic alcoholic man was admitted with central acute abdominal pain radiating to the back. His serum amylase was 12000 U/L (normal < 300 U/L). What will be your provisional diagnosis?
 
-Provisional diagnosis: Acute pancreatitis (alcohol-related), with fat necrosis of peripancreatic and peritoneal fat.
+**Acute pancreatitis**, with alcohol as the likely cause.
 
-- Clinical basis: severe epigastric/central pain radiating to the back, history of chronic alcohol use (a leading cause, with gallstones), and markedly raised serum amylase (and lipase) indicating leak of pancreatic enzymes from injured acinar cells.
-- Chapter link: acute pancreatitis is the "calamitous abdominal emergency" in which activated pancreatic lipases released into the pancreas and peritoneal cavity cause fat necrosis with chalky-white saponified foci.
-- Necroptosis has also been implicated in acute pancreatitis.
-- Complication clue: calcium saponification can cause hypocalcaemia.
-
+- Biliary tract disease and alcoholism account for approximately 80% of cases of acute pancreatitis.
+- Abdominal pain is the cardinal manifestation. It is constant, intense and referred to the upper or middle back.
+- Elevated plasma levels of amylase and lipase, released from the damaged pancreatic acinar cells, support the diagnosis.
 
 ## What type of necrosis will be observed in compression/peritoneum in acute pancreatitis?
 
-Fat necrosis (enzymatic fat necrosis), in the pancreas and the peritoneal fat.
+**Fat necrosis.**
 
-- Seen as grossly visible chalky-white areas (fat saponification) in the pancreas, mesentery/peritoneal fat (Fig. 2.13).
-- Histology: shadowy outlines of necrotic fat cells, basophilic calcium deposits and an inflammatory reaction.
-- The pancreatic parenchyma itself also undergoes necrosis of acinar tissue; traumatic fat necrosis of the breast is another site of fat necrosis.
-
+- Activated pancreatic lipases are released into the substance of the pancreas and the peritoneal cavity, causing focal areas of fat destruction.
+- Fat saponification produces grossly visible **chalky-white areas**, for example in the mesentery.
+- On histology the necrotic areas show shadowy outlines of necrotic fat cells, basophilic calcium deposits and an inflammatory reaction.
 
 ## Why does fat necrosis occur in acute pancreatitis?
 
-Because activated pancreatic enzymes leak out of damaged acinar cells and digest fat.
-
-**Mechanism**
-
-1. Pancreatic enzymes escape from damaged acinar cells into the pancreas and peritoneal cavity.
-
+1. Pancreatic enzymes leak out of damaged acinar cells.
 2. They liquefy the membranes of fat cells in the peritoneum.
-
-3. Triglyceride esters released from fat cells are split by pancreatic lipases into fatty acids.
-
-4. Fatty acids combine with calcium to form insoluble calcium soaps (fat saponification) → chalky-white deposits that let the surgeon/pathologist identify the underlying disorder.
-
+3. Triglyceride esters are released from the fat cells and are split by pancreatic lipases.
+4. Fatty acids are generated that combine with calcium to produce grossly visible chalky-white areas, called **fat saponification**.
 
 ## What is the significance of apoptosis?
 
-Apoptosis is a regulated, caspase-mediated suicide program that eliminates unwanted or irreparably damaged cells with the least possible host reaction.
+Apoptosis is a regulated mechanism of cell death that serves to eliminate unwanted and irreparably damaged cells, with the least possible host reaction.
 
 **Physiologic significance**
 
-- Removal of supernumerary cells during development (programmed cell death; involution of primordial structures, tissue remodeling) and required for normal embryogenesis.
-- Maintenance of cell number (homeostasis) — humans turn over about 1 million cells per second; e.g., intestinal crypt epithelium.
-- Involution of hormone-dependent tissues after hormone withdrawal (menstrual endometrium, follicular atresia in menopause, lactating breast after weaning).
-- Immune system: eliminates lymphocytes that fail to produce functional antigen receptors, self-reactive lymphocytes (prevents autoimmunity), neutrophils and lymphocytes that have served their purpose.
+- It eliminates cells that are no longer needed, such as supernumerary cells during development, and is required for normal embryogenesis.
+- It maintains a constant number of cells in tissues. Humans turn over almost 1 million cells per second.
+- It brings about involution of hormone-dependent tissues on hormone withdrawal.
+- It eliminates lymphocytes that fail to produce functional antigen receptors and potentially harmful self-reactive lymphocytes, which prevents immune reactions against one's own tissues.
+- It removes host cells that have served their useful purpose, such as neutrophils in an acute inflammatory response.
 
 **Pathologic significance**
 
-- Eliminates cells injured beyond repair without eliciting inflammation, limiting collateral damage.
-- Protects against cancer — DNA-damaged cells that cannot be repaired are killed via p53 → mitochondrial pathway; p53 mutations that disable this are associated with many cancers.
-- Host defence: CTLs induce apoptosis of virus-infected and tumour cells.
-- Contributes to disease: viral infections, graft-versus-host disease, transplant rejection, pathologic atrophy after duct obstruction, and misfolded-protein diseases (ER stress).
-- Dysregulation — e.g., BCL2 overexpression in B-cell lymphomas (too little apoptosis).
-
+- It eliminates cells that are injured beyond repair without eliciting a host reaction, which limits collateral tissue damage.
+- When DNA damage cannot be corrected by repair mechanisms, the cell triggers apoptosis. This has a protective effect, because it prevents the survival of cells with DNA mutations that can lead to malignant transformation.
+- p53 triggers apoptosis by the mitochondrial pathway if DNA repair fails. Mutations in p53 that interfere with this are associated with numerous cancers.
+- Cytotoxic T lymphocytes induce apoptosis of virus-infected cells, in an attempt to eliminate reservoirs of infection, and kill tumour cells.
+- The same CTL-mediated mechanism causes cellular rejection of transplants and tissue damage in graft-versus-host disease.
 
 ## Give examples of apoptosis in physiological conditions.
 
-1. Embryogenesis — removal of supernumerary cells, involution of primordial structures (programmed cell death).
-
-2. Hormone-dependent involution — endometrial cell breakdown in menstrual cycle; ovarian follicular atresia in menopause; regression of the lactating breast after weaning.
-
-3. Cell turnover in proliferating populations, e.g., intestinal crypt epithelium.
-
-4. Elimination of lymphocytes lacking functional antigen receptors (immature lymphocytes in bone marrow and thymus; germinal-centre B cells).
-
-5. Elimination of self-reactive lymphocytes.
-
-6. Death of cells that have served their purpose — neutrophils in acute inflammation; lymphocytes at the end of an immune response.
-
-All because cells are deprived of survival signals (growth factors, matrix interactions) or receive pro-apoptotic signals.
-
+1. Removal of supernumerary cells during development, with involution of primordial structures and remodelling of maturing tissues.
+2. Involution of hormone-dependent tissues on hormone withdrawal: endometrial cell breakdown during the menstrual cycle, ovarian follicular atresia in menopause and regression of the lactating breast after weaning.
+3. Cell turnover in proliferating cell populations, such as epithelial cells in intestinal crypts.
+4. Elimination of lymphocytes that fail to produce functional antigen receptors: immature lymphocytes in the bone marrow and thymus and germinal centre B cells.
+5. Elimination of potentially harmful self-reactive lymphocytes.
+6. Death of host cells that have served their useful purpose: neutrophils in an acute inflammatory response and lymphocytes at the end of an immune response.
 
 ## Give two examples of apoptosis in pathological conditions.
 
-1. DNA damage — radiation and cytotoxic anticancer drugs damage DNA directly or via free radicals; if unrepairable, the cell triggers apoptosis (protective against malignant transformation).
-
-2. Viral infections / CTL-mediated killing — apoptosis induced by the virus itself (adenovirus, HIV) or by the host immune response (viral hepatitis); CTLs kill infected cells, tumour cells, and cause graft rejection and GVHD.
-
-Others: accumulation of misfolded proteins (ER stress); pathologic atrophy after duct obstruction (pancreas, parotid, kidney).
-
+1. **DNA damage:** radiation and cytotoxic anticancer drugs damage DNA, either directly or through production of free radicals. If repair mechanisms cannot correct the damage, the cell triggers apoptosis, which has a protective effect by preventing the survival of cells with DNA mutations that can lead to malignant transformation.
+2. **Viral infections:** apoptosis is induced by the virus itself, as in adenovirus and HIV infections, or by the host immune response, as in viral hepatitis. Cytotoxic T lymphocytes specific for viral proteins induce apoptosis of infected cells to eliminate reservoirs of infection.
 
 ## Write short note on: Apoptosis
 
-Apoptosis is a regulated, energy-dependent form of cell death induced by a tightly controlled suicide program in which caspases degrade DNA and proteins; the cell shrinks and breaks into membrane-bound apoptotic bodies that are rapidly phagocytosed, so there is no inflammation. It occurs in physiologic and pathologic settings and proceeds via the mitochondrial (intrinsic) and death receptor (extrinsic) pathways.
+**Definition:** **Apoptosis** is a type of cell death that is induced by a tightly regulated suicide programme in which cells destined to die activate intrinsic enzymes that degrade cellular DNA and nuclear and cytoplasmic proteins.
 
-1. Definition and history. Cells destined to die activate intrinsic enzymes that degrade DNA and nuclear and cytoplasmic proteins; fragments (apoptotic bodies) contain cytoplasm and nucleus; the membrane remains intact but surface components alter to produce "find me" and "eat me" signals. Recognised in 1972 (Greek: "falling off"); programmed cell death (controlled by few genes, required in embryogenesis) refers to developmental apoptosis.
+- Apoptotic cells break up into plasma membrane-bound fragments, called apoptotic bodies, which contain portions of the cytoplasm and nucleus.
+- The dead cell and its fragments are rapidly devoured before the contents leak out, so apoptosis does not elicit an inflammatory reaction.
 
-2. Causes. Physiologic (development, hormone withdrawal, turnover, lymphocyte selection) and pathologic (DNA damage, misfolded proteins, infections, CTL killing, duct-obstruction atrophy).
+**Causes**
 
-3. Morphology. Cell shrinkage, dense eosinophilic cytoplasm; chromatin condensation (most characteristic); membrane blebs and apoptotic bodies; phagocytosis.
+Physiologic situations
 
-4. Mechanism. Caspases (cysteine proteases cleaving after aspartate; proenzymes) — initiation phase and execution phase.
+- Removal of supernumerary cells during development (programmed cell death).
+- Involution of hormone-dependent tissues on hormone withdrawal, such as endometrial cell breakdown during the menstrual cycle, ovarian follicular atresia in menopause and regression of the lactating breast after weaning.
+- Cell turnover in proliferating cell populations, such as epithelial cells in intestinal crypts.
+- Elimination of lymphocytes that fail to produce functional antigen receptors.
+- Elimination of potentially harmful self-reactive lymphocytes.
+- Death of host cells that have served their useful purpose, such as neutrophils in an acute inflammatory response and lymphocytes at the end of an immune response.
 
-| Pathway | Trigger | Key molecules | Initiator caspase |
-|---|---|---|---|
-| Mitochondrial (intrinsic) — most physiologic/pathologic apoptosis | Loss of survival signals, DNA damage, ER stress | BH3-only proteins → BAX/BAK; anti-apoptotic BCL2, BCL-XL, MCL1; cytochrome c + APAF-1 = apoptosome; Smac/DIABLO inhibit IAPs | Caspase-9 |
-| Death receptor (extrinsic) | FasL–Fas, TNF–TNFR1 | Death domain, FADD; inhibited by FLIP | Caspase-8 (and 10) |
-| Execution | Convergence | Caspase-3, -6 → DNase activation; nuclear matrix proteolysis | — |
+Pathologic conditions
 
-****
+- DNA damage, from radiation and cytotoxic anticancer drugs.
+- Accumulation of misfolded proteins, with ER stress.
+- Infections, particularly viral infections.
+- Killing by cytotoxic T lymphocytes (CTLs) of virus-infected cells and tumour cells, cellular rejection of transplants and graft-versus-host disease.
+- Pathologic atrophy of parenchymal organs after duct obstruction, as in the pancreas, parotid gland and kidney.
 
-5. Removal. Phosphatidylserine flips to the outer leaflet; soluble recruitment factors; C1q/antibody coating → efferocytosis; macrophages make fewer proinflammatory cytokines.
+**Pathogenesis**
 
-6. Significance. See Q247. Contrast with necrosis: see Q251.
+- Apoptosis results from activation of **caspases**, proteases that have a cysteine in their active site and cleave proteins after aspartic residues.
+- Caspases exist as inactive proenzymes and must be cleaved to become active.
+- In the initiation phase some caspases become active and unleash a cascade of other caspases. In the execution phase the terminal caspases trigger cellular fragmentation and demise.
+- Two pathways converge on caspase activation: the mitochondrial pathway and the death receptor pathway.
 
+**Mitochondrial (intrinsic) pathway**
+
+- It is responsible for apoptosis in most physiologic and pathologic situations.
+- Loss of survival signals, DNA damage and ER stress upregulate the BH3-only proteins, which activate **BAX** and **BAK** and block the anti-apoptotic proteins BCL2 and BCL-XL.
+- Increased permeability of the outer mitochondrial membrane releases **cytochrome c** into the cytoplasm.
+- Cytochrome c binds **APAF-1** to form the **apoptosome**, which activates **caspase-9**.
+- Active caspase-9 activates other pro-caspases, such as caspase-3.
+
+**Death receptor (extrinsic) pathway**
+
+- Death receptors belong to the TNF receptor family and have a cytoplasmic death domain. The best known are **TNFR1** and **Fas (CD95)**.
+- Fas ligand binds Fas, and the adaptor protein **FADD** binds inactive **caspase-8** (or caspase-10), which is cleaved to its active form.
+- Active caspase-8 initiates the same executioner caspase sequence as the mitochondrial pathway.
+
+**Execution phase and removal**
+
+- Executioner caspases, caspase-3 and caspase-6, cleave an inhibitor of a DNase, so DNA degradation begins, and they proteolyse the nuclear matrix, which causes nuclear fragmentation.
+- Phosphatidylserine flips to the outer layer of the plasma membrane, and apoptotic bodies are coated with natural antibodies and complement proteins, notably C1q. These are the "eat me" signals for phagocytes.
+
+**Morphology**
+
+1. **Cell shrinkage:** the cell is reduced in size, the cytoplasm is dense and eosinophilic, and the organelles are more tightly packed.
+2. **Chromatin condensation:** the most characteristic feature. The chromatin aggregates peripherally under the nuclear membrane into dense masses, and the nucleus may break up into two or more fragments.
+3. **Formation of cytoplasmic blebs and apoptotic bodies:** extensive surface membrane blebbing is followed by fragmentation into membrane-bound apoptotic bodies.
+4. **Phagocytosis** of apoptotic cells or cell bodies, usually by macrophages. On H&E the apoptotic cell is a round or oval mass of intensely eosinophilic cytoplasm with fragments of dense nuclear chromatin.
 
 ## What are the causes of apoptosis?
 
-Apoptosis occurs in physiologic situations (development, hormone withdrawal, cell turnover, lymphocyte selection) and in pathologic conditions (DNA damage, accumulation of misfolded proteins, viral infections/CTL killing, and duct-obstruction atrophy).
+**Physiologic situations**
 
-| Context | Causes |
-|---|---|
-| Physiologic | Removal of supernumerary cells in development; involution of hormone-dependent tissues; cell turnover; elimination of non-functional and self-reactive lymphocytes; death of used-up neutrophils/lymphocytes |
-| Pathologic | DNA damage (radiation, cytotoxic drugs); misfolded proteins/ER stress; viral infection (virus or host CTL); CTL killing of tumour cells, transplant rejection, GVHD; atrophy after duct obstruction |
-| Cellular triggers | Deprivation of survival signals (growth factors, matrix); pro-apoptotic signals from other cells or environment; loss of survival signals, DNA damage, ER stress → mitochondrial pathway; death-receptor ligation (Fas, TNF) → extrinsic pathway |
+- Removal of supernumerary cells (in excess of the required number) during development. Cell death is critical for involution of primordial structures and remodelling of maturing tissues.
+- Involution of hormone-dependent tissues on hormone withdrawal, such as endometrial cell breakdown during the menstrual cycle, ovarian follicular atresia in menopause and regression of the lactating breast after weaning.
+- Cell turnover in proliferating cell populations, such as epithelial cells in intestinal crypts, to maintain constant cell numbers (homeostasis).
+- Elimination of lymphocytes that fail to produce functional antigen receptors, such as immature lymphocytes in the bone marrow and thymus and germinal centre B cells.
+- Elimination of potentially harmful self-reactive lymphocytes, to prevent immune reactions against one's own tissues.
+- Death of host cells that have served their useful purpose, such as neutrophils in an acute inflammatory response and lymphocytes at the end of an immune response.
 
+In all of these situations, cells undergo apoptosis because they are deprived of necessary survival signals, such as growth factors and interactions with the extracellular matrix, or they receive pro-apoptotic signals from other cells or the surrounding environment.
+
+**Pathologic conditions**
+
+- **DNA damage:** radiation and cytotoxic anticancer drugs can damage DNA, either directly or through production of free radicals.
+- **Accumulation of misfolded proteins:** cell death triggered by improperly folded intracellular proteins and the subsequent ER stress response.
+- **Infections**, particularly viral infections, because of the virus itself (as in adenovirus and HIV infections) or the host immune response (as in viral hepatitis).
+- Killing by **cytotoxic T lymphocytes**, which is responsible for killing tumour cells, cellular rejection of transplants and tissue damage in graft-versus-host disease.
+- Pathologic atrophy in parenchymal organs after duct obstruction, such as occurs in the pancreas, parotid gland and kidney.
 
 ## Write down the differences between necrosis and apoptosis.
 
@@ -1129,20 +1150,14 @@ Chromatin condensation (peripheral crescents, uniformly dense mass; pyknosis) fo
 - Macrophages that ingest apoptotic cells make fewer proinflammatory cytokines, which limits inflammation.
 ## Why does inflammation usually not occur in apoptosis?
 
-1. Plasma membrane remains intact — cellular contents are not released (unlike necrosis, where DAMPs leak out).
-
-2. Apoptotic bodies break cells into "bite-sized" fragments for phagocytes.
-
-3. "Find me" and "eat me" signals — phosphatidylserine flips to the outer leaflet, soluble recruitment factors, macrophage-derived binding proteins, natural antibodies and complement C1q coating.
-
-4. Efferocytosis is so efficient that dead cells often disappear within minutes, before membrane integrity is lost.
-
-5. Macrophages that engulf apoptotic cells make fewer proinflammatory cytokines, limiting inflammation even with extensive apoptosis.
-
-6. Apoptosis is "surgical" cell death without collateral damage.
-
-Note: the word "usually" matters — necroptosis and pyroptosis are caspase-independent/lytic and release cell contents, causing inflammation.
-
+- The plasma membrane remains intact, but its surface components are altered to produce "find me" and "eat me" signals for phagocytes.
+- Apoptotic bodies break the cell up into "bite-sized" fragments that are edible for phagocytes.
+- The dead cell and its fragments are rapidly devoured before the contents leak out.
+- **Phosphatidylserine** flips from the inner leaflet of the plasma membrane to the outer layer, where it is recognised by several macrophage receptors.
+- Dying cells secrete soluble factors that recruit phagocytes, and macrophages produce proteins that bind to apoptotic cells but not to live cells.
+- Apoptotic bodies may be coated with natural antibodies and proteins of the complement system, notably **C1q**.
+- This phagocytosis is called **efferocytosis**. It is so efficient that dead cells disappear, often within minutes, without leaving a trace.
+- Production of proinflammatory cytokines is reduced in macrophages that have ingested apoptotic cells, which limits inflammatory reactions even in the face of extensive apoptosis.
 
 ## What do you mean by intracellular accumulation?
 
@@ -1225,41 +1240,51 @@ Intracellular: protein reabsorption droplets in renal tubules, Russell bodies, a
 
 ## Define pathological calcification.
 
-Pathologic calcification is the abnormal tissue deposition of calcium salts, together with smaller amounts of iron, magnesium and other mineral salts. There are two forms.
-
-**1. Dystrophic calcification.** Deposition occurs locally in dying or dead tissue, despite normal serum calcium and in the absence of any derangement in calcium metabolism.
-
-- Sites: areas of coagulative, caseous or liquefactive necrosis, foci of enzymatic fat necrosis, the atheromas of advanced atherosclerosis, and aging or damaged heart valves (Fig. 2.34), e.g. calcific aortic stenosis. A tuberculous lymph node may be virtually converted to stone.
-- Morphology: fine white granules or clumps, gritty on cutting; with H&E the salts are basophilic, amorphous and granular, intracellular, extracellular or both. Heterotopic bone may form in the focus.
-
-**2. Metastatic calcification.** Deposition in otherwise normal tissues, almost always due to hypercalcaemia from disturbed calcium metabolism. The four principal causes of hypercalcaemia are: (1) increased parathyroid hormone (hyperparathyroidism, or PTH-related protein from malignant tumours); (2) bone resorption (multiple myeloma, diffuse skeletal metastases, Paget disease, immobilisation); (3) vitamin D–related disorders (vitamin D intoxication, sarcoidosis); and (4) renal failure with phosphate retention and secondary hyperparathyroidism.
-
+**Pathologic calcification** is the abnormal tissue deposition of calcium salts, together with smaller amounts of iron, magnesium, and other mineral salts.
 
 ## Write short note on: Pathological calcification
 
-- Definition: abnormal deposition of calcium salts (plus iron, magnesium and other minerals) in tissues.
-- Types: dystrophic and metastatic (see Q257).
-- Dystrophic: areas of necrosis (coagulative, caseous, liquefactive, fat necrosis), advanced atheromas, ageing/damaged heart valves; serum calcium normal.
-- Metastatic: hypercalcaemia (↑ PTH/PTHrP, bone destruction, vitamin D disorders, renal failure); sites: gastric mucosa, kidneys, lungs, systemic arteries, pulmonary veins.
-- Morphology: fine white granules/clumps, gritty; H&E basophilic, amorphous, granular; intra- and/or extracellular; heterotopic bone may form; psammoma bodies (lamellated); asbestos bodies.
-- Clinical significance: dystrophic calcification may be a telltale of old injury but is often a cause of organ dysfunction (calcific valvular disease, atherosclerosis); metastatic deposits usually asymptomatic but massive lung or kidney involvement (nephrocalcinosis) can cause dysfunction.
+**Definition:** **Pathologic calcification** is the abnormal tissue deposition of calcium salts, together with smaller amounts of iron, magnesium, and other mineral salts.
 
+**Types and causes**
+
+- **Dystrophic calcification:** deposition occurs locally in dying tissues. It occurs despite normal serum levels of calcium and in the absence of derangements in calcium metabolism.
+- **Metastatic calcification:** deposition of calcium salts in otherwise normal tissues. It almost always results from **hypercalcaemia** secondary to some disturbance in calcium metabolism.
+
+Four principal causes of hypercalcaemia
+
+1. Increased secretion of parathyroid hormone with bone resorption, as in hyperparathyroidism due to parathyroid tumours and ectopic secretion of parathyroid hormone-related protein by malignant tumours.
+2. Resorption of bone tissue, secondary to primary tumours of bone marrow (for example multiple myeloma), diffuse skeletal metastasis (for example breast cancer), accelerated bone turnover (for example Paget disease, a disorder of accelerated bone turnover) or immobilisation.
+3. Vitamin D-related disorders: vitamin D intoxication, sarcoidosis (in which macrophages activate a vitamin D precursor) and idiopathic hypercalcaemia of infancy (Williams syndrome, with abnormal sensitivity to vitamin D).
+4. Renal failure, which causes retention of phosphate and leads to secondary hyperparathyroidism.
+
+**Sites**
+
+- Dystrophic: areas of coagulative, caseous or liquefactive necrosis, foci of enzymatic necrosis of fat, the atheromas of advanced atherosclerosis, and aging or damaged heart valves.
+- Metastatic: interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins. All of these tissues excrete acid and have an internal alkaline compartment.
+
+**Morphology**
+
+- Macroscopically the calcium salts appear as fine, white granules or clumps, often felt as gritty deposits. A tuberculous lymph node may be virtually converted to stone.
+- On H&E the calcium salts have a basophilic, amorphous granular, sometimes clumped appearance. They can be intracellular, extracellular or in both locations.
+- Heterotopic bone may form in the focus of calcification.
+- In metastatic calcification the salts resemble those of dystrophic calcification, as noncrystalline amorphous deposits or hydroxyapatite crystals.
+
+**Clinical significance**
+
+- Dystrophic calcification may simply be a telltale sign of previous cell injury, but it is often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis.
+- Metastatic calcification usually causes no clinical dysfunction. Massive involvement of the lungs produces respiratory compromise, and massive deposits in the kidney (nephrocalcinosis) may in time cause renal damage.
 
 ## Write down the difference between dystrophic and metastatic calcification.
 
-Dystrophic calcification is calcium deposition in dead or dying tissue with normal serum calcium; metastatic calcification is deposition in normal tissues caused by hypercalcaemia.
-
-| Feature | Dystrophic | Metastatic |
+| Feature | Dystrophic calcification | Metastatic calcification |
 |---|---|---|
-| Tissue | Dying/necrotic or damaged tissue | Normal tissue |
-| Serum calcium | Normal; no derangement of Ca metabolism | Raised (hypercalcaemia); usually from disturbed Ca metabolism |
-| Cause | Local tissue injury/necrosis | PTH excess/PTHrP, bone resorption, vitamin D disorders, renal failure |
-| Sites | Necrotic foci, atheromas, ageing/damaged valves, TB lymph nodes | Gastric mucosa, kidneys, lungs, systemic arteries, pulmonary veins (acid-excreting tissues with alkaline compartment) |
-| Clinical effect | Often causes organ dysfunction | Usually none; massive lung/kidney involvement may impair function |
-| Morphology | Same — basophilic amorphous granules / hydroxyapatite | Same |
-
-****
-
+| Tissue involved | Dying tissues | Otherwise normal tissues |
+| Serum calcium | Normal; no derangement of calcium metabolism | Hypercalcaemia, secondary to some disturbance in calcium metabolism |
+| Cause | Necrotic cells and cellular debris that are not promptly destroyed and reabsorbed provide a nidus for deposition of calcium salts | Increased parathyroid hormone secretion; resorption of bone tissue; vitamin D-related disorders; renal failure with retention of phosphate |
+| Sites | Areas of coagulative, caseous or liquefactive necrosis; foci of enzymatic necrosis of fat; atheromas of advanced atherosclerosis; aging or damaged heart valves; tuberculous lymph node | Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins, which all excrete acid and have an internal alkaline compartment |
+| Morphology | Fine white granules or clumps, gritty; basophilic, amorphous and granular on H&E | Resembles dystrophic calcification; noncrystalline amorphous deposits or hydroxyapatite crystals |
+| Clinical effect | Often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis | Usually no clinical dysfunction; massive lung involvement causes respiratory compromise and massive kidney deposits (nephrocalcinosis) may cause renal damage |
 
 ## Sites of dystrophic calcification.
 
@@ -1279,21 +1304,38 @@ Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries an
 
 ## Define dystrophic calcification.
 
-Dystrophic calcification is the local deposition of calcium salts in dying (necrotic) or damaged tissue; it occurs despite normal serum calcium levels and in the absence of derangements in calcium metabolism. In contrast, metastatic calcification affects normal tissues in hypercalcaemia.
-
-- Sites: areas of coagulative, caseous or liquefactive necrosis, foci of enzymatic fat necrosis, the atheromas of advanced atherosclerosis, and aging or damaged heart valves (Fig. 2.34), e.g. calcific aortic stenosis. A tuberculous lymph node may be virtually converted to stone.
-- Morphology: fine white granules or clumps, gritty on cutting; with H&E the salts are basophilic, amorphous and granular, intracellular, extracellular or both. Heterotopic bone may form in the focus.
-
+**Dystrophic calcification** is the deposition of calcium salts locally in dying tissues. It occurs despite normal serum levels of calcium and in the absence of derangements in calcium metabolism.
 
 ## Write short note on: Dystrophic calcification
 
-- Definition: local deposition of calcium salts in dying tissue with normal serum calcium.
-- Sites: areas of necrosis of any type (coagulative, caseous, liquefactive, fat); advanced atheromas; ageing or damaged heart valves (e.g., calcific aortic stenosis, Fig. 2.34); tuberculous lymph nodes.
-- Gross: fine white granules or clumps, often gritty.
-- Microscopy (H&E): basophilic, amorphous, granular, sometimes clumped; intracellular, extracellular or both; heterotopic bone may form; single necrotic cells can become seed crystals with lamellated psammoma bodies (papillary thyroid cancer); asbestos bodies.
-- Significance: telltale of previous cell injury but often a cause of organ dysfunction (valves, atherosclerosis).
-- Fate of necrotic debris: if not promptly removed, it becomes a nidus for calcification.
+**Definition:** **Dystrophic calcification** is the deposition of calcium salts locally in dying tissues. It occurs despite normal serum levels of calcium and in the absence of derangements in calcium metabolism.
 
+**Pathogenesis**
+
+- If necrotic cells and cellular debris are not promptly destroyed and reabsorbed, they provide a nidus for the deposition of calcium salts and other minerals, and tend to become calcified.
+- Single necrotic cells may constitute seed crystals that become encrusted by the mineral deposits.
+
+**Sites**
+
+- Areas of necrosis, whether of coagulative, caseous or liquefactive type.
+- Foci of enzymatic necrosis of fat.
+- Atheromas of advanced atherosclerosis, where calcification is almost always present.
+- Aging or damaged heart valves, as in calcific aortic stenosis.
+- Tuberculous lymph node, which may be virtually converted to stone.
+
+**Morphology**
+
+- Macroscopically: fine, white granules or clumps, often felt as gritty deposits.
+- On H&E: basophilic, amorphous granular, sometimes clumped calcium salts, intracellular, extracellular or in both locations.
+- Heterotopic bone may form in the focus of calcification.
+- Progressive acquisition of outer layers creates lamellated configurations called **psammoma bodies**, which are seen in some papillary cancers, for example of the thyroid.
+- In asbestosis, calcium and iron salts gather about long slender spicules of asbestos in the lung, creating beaded dumbbell forms known as **asbestos bodies**.
+
+**Clinical significance**
+
+- It may simply be a telltale sign of previous cell injury.
+- It is often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis.
+- Serum calcium is normal.
 
 ## Define inflammation.
 
@@ -14539,4 +14581,8 @@ The body fluids usually examined in clinical pathology are:
 ## Define atrophy.
 
 Atrophy is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
+
+## What do you mean by apoptosis?
+
+**Apoptosis** is a type of cell death that is induced by a tightly regulated suicide programme in which cells destined to die activate intrinsic enzymes that degrade cellular DNA and nuclear and cytoplasmic proteins.
 

@@ -42,20 +42,6 @@
 "post": "<li><strong>Retinopathy:</strong> non-pr"
 },
 {
-"old": "Fat necrosis (<em>enzymatic fat necrosis</em>), in the pancreas and the peritoneal fat.</p>",
-"new": "(The wording <em>\"compression/peritoneum\"</em> appears garbled<br>it is read here as <em>\"pancreas/peritoneum.\"</em>)</p><p>Fat necrosis (<em>enzymatic fat necrosis</em>).</p>",
-"nth": 0,
-"pre": "pan></span></header><div class=\"ans\"><p>",
-"post": "<ul><li>Seen as grossly visible chalky-w"
-},
-{
-"old": "<ol start=\"5\">",
-"new": "<ol>",
-"nth": 0,
-"pre": "td><td>—</td></tr></tbody></table></div>",
-"post": "<li><strong>Removal</strong>. Phosphatid"
-},
-{
 "old": "E a round/oval mass of intensely eosinophilic cytoplasm with dense nuclear fragments.<ul>",
 "new": "E a round/oval mass of intensely eosinophilic cytoplasm with dense nuclear fragments.</li></ol><ul>",
 "nth": 0,
