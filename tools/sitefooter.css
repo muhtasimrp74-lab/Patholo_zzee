@@ -1,27 +1,27 @@
 
 /* ---- site footer ---- */
-.sf{margin-top:56px;padding:0;text-align:left;font-size:inherit;background:#120a08;color:#D8CDBD}
+.sf{margin-top:56px;padding:0;text-align:left;font-size:inherit;background:#12080b;color:#E8D9E3}
 .nh-f{display:none}
-.sf-hero{position:relative;overflow:hidden;background:#120a08}
+.sf-hero{position:relative;overflow:hidden;background:#12080b}
 .sf-hero picture,.sf-hero img{display:block;width:100%;height:auto}
-.sf-hero::before{content:"";position:absolute;left:0;right:0;top:0;height:46px;z-index:1;background:linear-gradient(180deg,#120a08,rgba(18,10,8,0));pointer-events:none}
+.sf-hero::before{content:"";position:absolute;left:0;right:0;top:0;height:46px;z-index:1;background:linear-gradient(180deg,#12080b,rgba(18,8,11,0));pointer-events:none}
 .sf-credit{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-52%);text-align:center;width:min(40%,560px)}
 .sf-credit p{margin:0}
-.sf-k{font:600 .72rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:#D18A70}
-.sf-name{margin:6px 0 8px!important;font:500 clamp(1.5rem,2.8vw,2.3rem)/1.1 var(--disp);color:#F7F2E8;letter-spacing:-.01em}
-.sf-sub{font:400 clamp(.9rem,1.25vw,1.05rem)/1.5 var(--body);color:#D8CDBD}
+.sf-k{font:600 .72rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:#D98FA8}
+.sf-name{margin:6px 0 8px!important;font:500 clamp(1.5rem,2.8vw,2.3rem)/1.1 var(--disp);color:#FFFDFA;letter-spacing:-.01em}
+.sf-sub{font:400 clamp(.9rem,1.25vw,1.05rem)/1.5 var(--body);color:#E8D9E3}
 .sf-main{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;max-width:var(--w);margin:0 auto;padding:36px var(--gut) 28px}
-.sf-logo{margin:0 0 10px;font:500 1.5rem var(--disp);color:#F7F2E8}
-.sf-about{margin:0;max-width:44ch;font-size:.92rem;line-height:1.6;color:#B9AD9C}
+.sf-logo{margin:0 0 10px;font:500 1.5rem var(--disp);color:#FFFDFA}
+.sf-about{margin:0;max-width:44ch;font-size:.92rem;line-height:1.6;color:#BBA3B3}
 .sf-col{display:flex;flex-direction:column;gap:2px}
-.sf-col h2{margin:0 0 8px;font:600 .74rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#D18A70}
-.sf-col a{display:inline-block;padding:6px 0;min-height:32px;color:#D8CDBD;text-decoration:none;font-size:.95rem}
+.sf-col h2{margin:0 0 8px;font:600 .74rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#D98FA8}
+.sf-col a{display:inline-block;padding:6px 0;min-height:32px;color:#E8D9E3;text-decoration:none;font-size:.95rem}
 .sf-col a:hover{color:#FFFFFF;text-decoration:underline}
-.sf a:focus-visible,.sf-top:focus-visible{outline:2px solid #F7F2E8;outline-offset:3px;border-radius:4px}
-.sf-bot{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:var(--w);margin:0 auto;padding:18px var(--gut) 34px;border-top:1px solid rgba(247,242,232,.14)}
-.sf-legal{margin:0;max-width:78ch;font-size:.8rem;line-height:1.6;color:#B9AD9C}
-.sf-top{appearance:none;cursor:pointer;flex:none;min-height:44px;padding:0 18px;border-radius:12px;border:1px solid rgba(247,242,232,.38);background:transparent;color:#F7F2E8;font:600 .88rem var(--body)}
-.sf-top:hover{background:rgba(247,242,232,.12)}
+.sf a:focus-visible,.sf-top:focus-visible{outline:2px solid #FFFDFA;outline-offset:3px;border-radius:4px}
+.sf-bot{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:var(--w);margin:0 auto;padding:18px var(--gut) 34px;border-top:1px solid rgba(255,253,250,.14)}
+.sf-legal{margin:0;max-width:78ch;font-size:.8rem;line-height:1.6;color:#BBA3B3}
+.sf-top{appearance:none;cursor:pointer;flex:none;min-height:44px;padding:0 18px;border-radius:12px;border:1px solid rgba(255,253,250,.38);background:transparent;color:#FFFDFA;font:600 .88rem var(--body)}
+.sf-top:hover{background:rgba(255,253,250,.12)}
 @media(max-width:900px){.sf-main{grid-template-columns:1fr 1fr}.sf-brand{grid-column:1/-1}.sf-credit{width:44%}}
 @media(max-width:720px){
  .sf{margin-top:40px}
@@ -38,7 +38,7 @@ html body{padding-bottom:0}
 html #bnav{left:0;right:0;bottom:0;border-radius:0;border:0;border-top:1px solid rgba(255,255,255,.55);padding:4px max(6px,env(safe-area-inset-left)) max(4px,env(safe-area-inset-bottom,0px));
  background-color:color-mix(in srgb,var(--bg) 58%,transparent)!important;background-image:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,.04))!important;
  -webkit-backdrop-filter:blur(26px) saturate(190%) brightness(1.04)!important;backdrop-filter:blur(26px) saturate(190%) brightness(1.04)!important;
- box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 -10px 30px rgba(33,25,31,.14)}
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 -10px 30px rgba(42,22,39,.14)}
 @media (hover:none),(pointer:coarse){html #bnav{background-color:color-mix(in srgb,var(--bg) 58%,transparent)!important;-webkit-backdrop-filter:blur(26px) saturate(190%) brightness(1.04)!important;backdrop-filter:blur(26px) saturate(190%) brightness(1.04)!important}}
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){html #bnav{background-color:var(--panel)!important}}
 /* the bottom bar shows at 1000px and below (phones AND tablets): the page ends exactly at the bar's top edge, so the footer's last line sits on the bar's top line and scrolling stops there */

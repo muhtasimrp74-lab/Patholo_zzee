@@ -16,7 +16,7 @@ const ST=[
 ['Backup and offline','Everything stays on your device. Menu > Export backup saves progress, notes and handwriting to a file; Import restores it. The site works offline once opened, and can be installed to your home screen.','#/menu','']];
 /* selectors: spotlight target per step (first match inside the visible page, else anywhere) */
 const SEL={1:'#bnav',2:'.qtools',4:'.card>header',5:'#tools',6:'[data-tt=ink]',10:'[href="#/bookmarks"]',11:'[onclick="exp()"]'};
-const HAND='<svg viewBox="0 0 24 24"><path d="M9.2 11.2V5.4a1.6 1.6 0 0 1 3.2 0v5.2l4.4.9a2 2 0 0 1 1.6 2.3l-.7 4.2a3.3 3.3 0 0 1-3.2 2.8H10a3 3 0 0 1-2.4-1.2l-3-3.8a1.5 1.5 0 0 1 2.2-2l1.4 1.5z" fill="#fff" stroke="#241a14" stroke-width="1.3" stroke-linejoin="round"/></svg>';
+const HAND='<svg viewBox="0 0 24 24"><path d="M9.2 11.2V5.4a1.6 1.6 0 0 1 3.2 0v5.2l4.4.9a2 2 0 0 1 1.6 2.3l-.7 4.2a3.3 3.3 0 0 1-3.2 2.8H10a3 3 0 0 1-2.4-1.2l-3-3.8a1.5 1.5 0 0 1 2.2-2l1.4 1.5z" fill="#fff" stroke="#241418" stroke-width="1.3" stroke-linejoin="round"/></svg>';
 let i=0,box=null,fx=null,pos=null,moved=false,lastR='',lastRect=null,tok=0,busy=false,glT=0;
 const V=()=>({w:innerWidth,h:innerHeight});
 function target(){const s=SEL[i];if(!s)return null;const e=document.querySelector('.view:not([hidden]) '+s)||document.querySelector(s);if(!e||!e.getClientRects().length)return null;return e}
