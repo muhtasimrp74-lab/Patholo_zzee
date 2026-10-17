@@ -861,19 +861,7 @@ Contrast: in apoptosis the membrane stays intact and "eat me" signals ensure rap
 
 ## Define necrosis.
 
-Necrosis is a pathologic process in which cellular membranes are destroyed, enzymes and other constituents leak out, and local inflammation is induced to clear the damaged cells.
-
-**Complete explanation**
-
-- Causes: loss of oxygen supply (ischaemia), microbial toxins, burns and other chemical/physical injury, and leakage of active proteases from cells (e.g., pancreatitis). All lead to irreparable damage of numerous cellular components.
-- Historical concept: "accidental" cell death in which so many cellular components are damaged that the cell falls apart; however, some forms are genetically controlled (necroptosis).
-- Mechanism: severe mitochondrial damage with ATP depletion; rupture of lysosomal and plasma membranes.
-- Morphology: eosinophilia; nuclear pyknosis/karyorrhexis/karyolysis; membrane breakdown; myelin figures.
-- Tissue patterns: coagulative, liquefactive, gangrenous, caseous, fat, fibrinoid.
-- Clinical relevance: leakage of tissue-specific proteins into blood gives biomarkers — cardiac troponins (detectable as early as 2 h after myocardial necrosis), alkaline phosphatase isoform (bile duct), transaminases (hepatocytes).
-- Fate: usually removed by enzymatic digestion and phagocytosis; if not, it becomes calcified (dystrophic calcification).
-
-
+Necrosis is a pathologic process in which **cellular membranes are destroyed**, enzymes and other constituents leak out, and **local inflammation** is induced to clear the damaged cells.
 ## Give the cytoplasmic and nuclear morphological changes of a necrosed cell.
 
 **Cytoplasmic changes**
@@ -968,20 +956,14 @@ In coagulative necrosis the tissue architecture is preserved for days and the ti
 
 ## Classify necrosis.
 
-Necrosis is classified morphologically (tissue patterns) into coagulative, liquefactive, gangrenous, caseous, fat and fibrinoid necrosis.
-
-| Class | Basis |
-|---|---|
-| Coagulative | Preserved architecture; ischaemia |
-| Liquefactive | Enzymatic digestion; infection, CNS |
-| Gangrenous | Clinical term; limb ischaemia ± infection (dry/wet) |
-| Caseous | Cheese-like; tuberculosis/granulomas |
-| Fat | Lipase-mediated; pancreatitis |
-| Fibrinoid | Immune-complex vascular injury |
-
-Regulated forms of necrotic death: necroptosis, pyroptosis, ferroptosis.
-
-
+| Type | Features | Typical setting |
+|---|---|---|
+| **Coagulative** | Architecture of the dead tissue is preserved for at least some days; firm texture; injury denatures structural proteins and enzymes, which blocks proteolysis | Ischaemia from vessel obstruction, in all organs except the brain; a localised area is called an **infarct** |
+| **Liquefactive** | Digestion of the dead cells; tissue becomes a viscous liquid; necrotic material is creamy yellow and is called **pus** | Focal bacterial or, occasionally, fungal infections; hypoxic death of cells in the central nervous system |
+| **Gangrenous** | Not a specific pattern of cell death; clinical term; necrosis, typically coagulative, involving multiple tissue planes; added bacterial infection gives more liquefactive necrosis, called **wet gangrene** | Limb, generally the lower leg, that has lost its blood supply |
+| **Caseous** | Friable, white, cheese-like; structureless collection of fragmented or lysed cells and amorphous granular debris, enclosed within epithelioid macrophages (a **granuloma**) | Tuberculous infection |
+| **Fat necrosis** | Focal destruction of fat by activated pancreatic lipases; released fatty acids combine with calcium to give chalky-white areas (**fat saponification**); histology shows shadowy outlines of necrotic fat cells, basophilic calcium deposits and inflammation | Acute pancreatitis |
+| **Fibrinoid** | Special form of vascular damage; antigen-antibody complexes deposited in arterial walls, with leaked plasma proteins, give a bright pink amorphous appearance on H&E | Immune reactions involving blood vessels |
 ## Examples of each type of necrosis.
 
 Coagulative – myocardial/kidney infarct; liquefactive – abscess, brain infarct; gangrenous – ischaemic lower limb; caseous – tuberculosis; fat – acute pancreatitis; fibrinoid – immune-complex arteritis.
@@ -998,14 +980,26 @@ Coagulative – myocardial/kidney infarct; liquefactive – abscess, brain infar
 
 ## Morphology of coagulative necrosis.
 
-In coagulative necrosis the architecture of the dead tissue is preserved for some days; the tissue is firm, and cells appear intensely eosinophilic with indistinct or reddish nuclei (loss of nuclei); later, leukocytes infiltrate and clear the debris.
+**Gross**
 
-- Mechanism: injury denatures structural proteins and enzymes, blocking proteolysis.
-- Gross: firm, pale/yellow; kidney infarct is wedge-shaped.
-- Microscopy: preserved cellular outlines, loss of nuclei, inflammatory infiltrate at the edge of the infarct (Fig. 2.10B).
-- Fate: breakdown by lysosomal enzymes of infiltrating leukocytes; phagocytosis; possible dystrophic calcification.
+- Firm texture.
+- Architecture of the dead tissue is preserved for at least some days.
+- Kidney infarct is wedge-shaped and yellow.
 
+**Microscopy**
 
+- Intensely **eosinophilic** cells with indistinct or reddish nuclei persist for days or weeks.
+- Preserved cellular outlines with **loss of nuclei**.
+- Inflammatory infiltrate at the edge of the infarct.
+
+**Mechanism of persistence**
+
+- Injury denatures structural proteins and also enzymes, which blocks proteolysis of the dead cells.
+
+**Fate**
+
+- Necrotic cells are broken down by lysosomal enzymes from infiltrating leukocytes.
+- The same leukocytes remove the debris by phagocytosis.
 ## Example of coagulative necrosis.
 
 The classic example is an infarct — e.g., myocardial infarction or a wedge-shaped kidney infarct caused by arterial obstruction.
@@ -1214,25 +1208,16 @@ Apoptosis occurs in physiologic situations (development, hormone withdrawal, cel
 
 ## Write down the differences between necrosis and apoptosis.
 
-Necrosis is a pathologic, passive death with cell swelling, membrane rupture, leakage of contents and inflammation; apoptosis is a regulated, caspase-mediated death with cell shrinkage, intact membrane, apoptotic bodies and no inflammation (Table 2.2).
-
 | Feature | Necrosis | Apoptosis |
 |---|---|---|
 | Cell size | Enlarged (swelling) | Reduced (shrinkage) |
-| Nucleus | Pyknosis, karyorrhexis, karyolysis | Fragmentation into nucleosome-size fragments; peripheral chromatin condensation |
-| Plasma membrane | Disrupted | Intact; altered structure (lipid orientation, phosphatidylserine flip) |
-| Cellular contents | Enzymatic digestion; may leak out | Intact; released in apoptotic bodies |
+| Nucleus | Pyknosis, karyorrhexis, karyolysis | Fragmentation into nucleosome-size fragments |
+| Plasma membrane | Disrupted | Intact; altered structure, especially orientation of lipids |
+| Cellular contents | Enzymatic digestion; may leak out of the cell | Intact; may be released in apoptotic bodies |
 | Adjacent inflammation | Frequent | No |
-| Role | Usually pathologic (culmination of irreversible injury) | Often physiologic; may be pathologic (esp. DNA damage) |
-| Regulation | Passive/unregulated (except necroptosis) | Regulated by defined molecular pathways |
-| Mechanism | ATP depletion, membrane damage, lysosomal enzyme release | Caspase activation (intrinsic/extrinsic) |
-| Clearance | Phagocytosis by inflammatory cells | Efferocytosis by macrophages |
-| Cytoplasm | Eosinophilic, vacuolated, glassy | Dense, eosinophilic |
-| Examples | Infarct, burns, toxins | Embryogenesis, viral hepatitis, DNA damage |
-
-Table 2.2 rows:. Distinction is not always absolute: some necrosis is genetically controlled (necroptosis), and apoptosis may progress to necrosis.
-
-
+| Physiologic or pathologic role | Usually pathologic (culmination of irreversible cell injury) | Often physiologic, a means of eliminating unwanted cells; may be pathologic after some forms of cell injury, especially DNA damage |
+| Regulation | Historically thought of as accidental cell death | Regulated cell death, mediated by defined molecular pathways |
+| Cytoplasm | Eosinophilic, glassy and homogeneous; vacuolated and moth-eaten once organelles are digested | Dense and eosinophilic |
 ## Examples of pathological apoptosis.
 
 DNA damage (radiation, anticancer drugs), accumulation of misfolded proteins (ER stress), viral infections (adenovirus, HIV, viral hepatitis), CTL-mediated killing (tumour cells, graft rejection, GVHD) and atrophy after duct obstruction.
@@ -1269,39 +1254,72 @@ Chromatin condensation (peripheral crescents, uniformly dense mass; pyknosis) fo
 
 ## Give the pathogenesis of apoptosis.
 
-Apoptosis results from activation of caspases, which exist as inactive proenzymes and are cleaved to active forms. There is an initiation phase (initiator caspases activate a cascade) and an execution phase (terminal caspases cause fragmentation); regulation depends on balance between pro- and anti-apoptotic proteins.
+**General mechanism**
 
-A. Mitochondrial (intrinsic) pathway — responsible for most apoptosis
+- Apoptosis results from activation of **caspases**, proteases that have a cysteine in their active site and cleave proteins after aspartic residues.
+- Caspases exist as inactive proenzymes and must be cleaved to become active.
+- Active caspases are therefore a marker of apoptosis.
+- **Initiation phase:** some caspases become catalytically active and unleash a cascade of other caspases.
+- **Execution phase:** the terminal caspases trigger cellular fragmentation and demise.
+- Regulation depends on a balance between pro-apoptotic and anti-apoptotic proteins.
+- Two pathways converge on caspase activation: the mitochondrial pathway and the death receptor pathway.
 
-1. Triggers: loss of survival signals (growth factor withdrawal), DNA damage, ER stress/misfolded proteins.
+**Mitochondrial (intrinsic) pathway**
 
-2. These activate BH3-only proteins (BAD, BIM, BID, Puma, Noxa), which bind and block anti-apoptotic BCL2/BCL-XL/MCL1 and activate BAX and BAK.
+- It is responsible for apoptosis in most physiologic and pathologic situations.
 
-3. BAX/BAK oligomerise in the outer mitochondrial membrane → increased permeability → cytochrome c and other proteins (e.g., Smac/DIABLO) leak into the cytosol.
+1. Increased permeability of the outer mitochondrial membrane releases pro-apoptotic molecules, such as **cytochrome c**, into the cytoplasm.
 
-4. Cytochrome c + APAF-1 → apoptosome → activates caspase-9.
+2. The **BCL2 family** controls the integrity of the outer membrane. It has three groups.
 
-5. Smac/DIABLO neutralises IAPs (inhibitors of apoptosis), permitting the caspase cascade.
+- Anti-apoptotic: BCL2, BCL-XL and MCL1, which keep the membrane impermeable and prevent leakage of cytochrome c.
+- Pro-apoptotic: **BAX** and **BAK**, which on activation oligomerise in the outer membrane and enhance its permeability.
+- Regulated initiators: the BH3-only proteins BAD, BIM, BID, Puma and Noxa, which respond to cellular stress and damage.
 
-B. Death receptor (extrinsic) pathway
+3. Loss of survival signals such as growth factors, DNA damage, or ER stress from misfolded proteins upregulates the BH3-only proteins.
 
-1. Ligand (FasL, TNF) binds Fas (CD95)/TNFR1, which have a cytoplasmic death domain.
+4. BH3-only proteins activate BAX and BAK, and also bind and block BCL2 and BCL-XL.
 
-2. Receptor clustering recruits adaptor FADD → binds pro-caspase-8 (or -10) → autocatalytic activation.
+5. Synthesis of BCL2 and BCL-XL declines, because it depends on survival signals.
 
-3. Inhibited by FLIP. FasL is expressed on self-reactive T cells and some CTLs.
+6. Cytochrome c binds **APAF-1** to form the **apoptosome**.
 
-4. Cross-talk: in hepatocytes and pancreatic β cells caspase-8 cleaves BID, feeding into the mitochondrial pathway.
+7. The apoptosome binds **caspase-9**, the critical initiator caspase of this pathway, and promotes its autocatalytic cleavage.
 
-C. Execution phase
+8. Active caspase-9 activates other pro-caspases, such as caspase-3.
 
-- Caspase-9 and caspase-8/10 → executioner caspases-3 and -6 → cleave an inhibitor of DNase (DNase activated → DNA degradation), proteolyse nuclear matrix and cytoskeleton → nuclear fragmentation, blebs, apoptotic bodies.
+9. **Smac/DIABLO** enter the cytoplasm and neutralise the inhibitors of apoptosis (**IAPs**), which permits the caspase cascade.
 
-D. Removal of dead cells
+**Death receptor (extrinsic) pathway**
 
-- Phosphatidylserine flips to the outer membrane leaflet; soluble factors recruit phagocytes; C1q and natural antibodies coat apoptotic bodies → "eat me" signals → efferocytosis, with reduced proinflammatory cytokines.
+1. Death receptors belong to the **TNF receptor family** and have a cytoplasmic **death domain**. The best known are **TNFR1** and **Fas (CD95)**.
 
+2. Fas ligand (FasL) is expressed on T cells that recognise self-antigens, which eliminates self-reactive lymphocytes, and on some cytotoxic T lymphocytes that kill virus-infected and tumour cells.
 
+3. FasL binds Fas and brings three or more Fas molecules together. Their death domains form a binding site for the adaptor protein **FADD**.
+
+4. FADD binds inactive **caspase-8** (or caspase-10), which undergoes autocatalytic cleavage to the active form.
+
+5. Active caspase-8 initiates the same executioner caspase sequence as the mitochondrial pathway.
+
+6. **FLIP** inhibits the pathway by binding pro-caspase-8 and blocking FADD binding. Some viruses and normal cells produce FLIP.
+
+7. In hepatocytes and pancreatic beta cells, caspase-8 cleaves and activates the BH3-only protein **BID**, which feeds into the mitochondrial pathway.
+
+**Execution phase**
+
+- Caspase-9 (mitochondrial pathway) and caspase-8 and caspase-10 (death receptor pathway) activate the executioner caspases, caspase-3 and caspase-6.
+- Executioner caspases cleave an inhibitor of a DNase, so the DNase becomes active and DNA degradation begins.
+- They also proteolyse the nuclear matrix, which causes nuclear fragmentation.
+
+**Removal of dead cells**
+
+- Apoptotic bodies are bite-sized fragments that phagocytes can engulf.
+- **Phosphatidylserine** flips from the inner to the outer leaflet of the plasma membrane, where macrophage receptors recognise it.
+- Dying cells secrete soluble factors that recruit phagocytes.
+- Apoptotic bodies are coated with natural antibodies and complement proteins, notably **C1q**.
+- These are the "eat me" signals, and the phagocytosis is called **efferocytosis**.
+- Macrophages that ingest apoptotic cells make fewer proinflammatory cytokines, which limits inflammation.
 ## Why does inflammation usually not occur in apoptosis?
 
 1. Plasma membrane remains intact — cellular contents are not released (unlike necrosis, where DAMPs leak out).
