@@ -319,45 +319,30 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 
 ## Bad consequence / clinical importance of metaplasia.
 
-Epithelial metaplasia loses protective functions (mucus secretion, ciliary action) and, if the stimulus persists, may undergo malignant transformation — squamous cell carcinoma in the lung, adenocarcinoma in Barrett oesophagus.
-
-- Increased infection risk in the respiratory tract.
-- Corneal metaplasia (vitamin A deficiency) impairs vision.
-- Connective tissue metaplasia carries no increased cancer risk.
-
+- Epithelial metaplasia in most circumstances represents an undesirable change.
+- The epithelium becomes more durable, but protective mechanisms against infection, mucus secretion and ciliary action, are lost.
+- Persistent influences can initiate **malignant transformation** in the metaplastic epithelium.
+- Squamous cell carcinoma develops in areas of the lung where columnar epithelium has been replaced by squamous epithelium.
+- In Barrett oesophagus the cancers that arise are typically gland-forming **adenocarcinomas**.
+- Vitamin A deficiency causes squamous metaplasia of the cornea, with highly deleterious effects on vision.
+- Connective tissue metaplasia, such as myositis ossificans, is not associated with increased cancer risk.
 
 ## Differences between metaplasia and dysplasia.
 
-Metaplasia is a reversible, orderly replacement of one mature cell type by another (adaptive); dysplasia is disordered, atypical cellular growth with loss of uniformity and architectural orientation, a preneoplastic change. Metaplasia may predispose to dysplasia and then cancer.
-
 | Feature | Metaplasia | Dysplasia |
 |---|---|---|
-| Nature | Adaptive replacement by another differentiated cell type | Disordered growth with cytologic atypia |
-| Cells | Mature, normal-looking cells of a different type | Pleomorphism, hyperchromatic nuclei, high N:C ratio, ↑ mitoses, loss of polarity |
-| Reversibility | Reversible if stimulus removed | Mild forms may regress; severe forms progress |
-| Cancer relationship | Increased risk if stimulus persists (epithelial) | Direct precursor of carcinoma |
-| Example | Barrett metaplasia | Barrett with dysplasia; cervical intraepithelial neoplasia |
-
+| Meaning | Replacement of one cell type with another; a reversible change | Literally "disordered growth" |
+| Nature | Adaptation to chronic injury | Premalignant change |
+| Setting | Nearly always found in association with tissue damage, repair and regeneration | Often occurs in metaplastic epithelium, but not all metaplastic epithelium is dysplastic |
+| Cells | The new cell type is better suited to withstand a noxious chronic environmental exposure | Considerable pleomorphism; large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio; mitotic figures increased and seen throughout the epithelium instead of only in the basal layer |
+| Architecture | Orderly | Architectural disarray and loss of orderly differentiation |
+| Reversibility | Reversible | With removal of inciting causes, moderately severe dysplasia may be completely reversible; progression to cancer is not inevitable |
+| Relation to cancer | Persistent influences can initiate malignant transformation in the metaplastic epithelium | Precursor to malignant transformation; when severe and involving the full thickness of the epithelium without penetrating the basement membrane it is carcinoma in situ |
+| Examples | Barrett oesophagus (oesophageal squamous epithelium replaced by glandular epithelium); squamous metaplasia of bronchial epithelium in tobacco smokers | In the cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of cancer |
 
 ## Define dysplasia.
 
-Dysplasia literally means "disordered growth"; it is encountered principally in epithelial cells and is recognised by pleomorphism, large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio, architectural disarray with loss of orderly differentiation, and increased mitotic figures that are seen throughout the epithelium rather than confined to the basal layer.
-
-**Explanation**
-
-Dysplasia literally means "disordered growth". It is encountered principally in epithelial cells and is a premalignant alteration in which the cells show variable cytologic atypia and the epithelium shows architectural disarray with loss of orderly differentiation.
-
-**Features**
-
-- Cells: considerable pleomorphism; large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio.
-- Epithelium: in dysplastic squamous epithelium the normal progressive maturation from tall basal cells to flattened surface squames fails in part or entirely, with replacement by basal-like cells with hyperchromatic nuclei.
-- Mitoses: increased in number and seen throughout the epithelium rather than only in the basal layer.
-- The lesion does not penetrate the basement membrane.
-
-**Significance**
-
-Dysplasia is a precursor of malignant transformation, but progression to cancer is not inevitable, and with removal of the inciting cause a dysplasia of moderate severity may be completely reversible. When dysplasia is severe and involves the full thickness of the epithelium it is called carcinoma in situ.
-
+**Dysplasia** is a term that literally means "disordered growth". It is encountered principally in epithelial cells.
 
 ## What do you mean by cell injury?
 
@@ -380,18 +365,16 @@ Cell injury is the sequence of events that follows when the limits of adaptive r
 
 ## Responses of cells to injurious stimuli.
 
-Cells respond to stress and injury by adaptation (hypertrophy, hyperplasia, atrophy, metaplasia), reversible injury, or irreversible injury leading to cell death (necrosis or apoptosis); persistent metabolic derangement may also cause intracellular accumulations and pathologic calcification.
-
 | Response | Features |
 |---|---|
-| Adaptation | Reversible change in size, number, phenotype or function; new steady state |
-| Reversible injury | Swelling, fatty change, blebbing; correctable |
-| Irreversible injury / death | Necrosis (pathologic) or apoptosis (regulated) |
-| Accumulations / calcification | Proteins, lipids, carbohydrates, pigments; calcium at sites of death |
-| Molecular response pathways | Integrated stress response, unfolded protein response (ER stress), autophagy: protective early but can trigger cell death if stress is unmitigated |
+| **Adaptation** | Reversible functional and structural responses to changes in physiologic states and some pathologic stimuli, in which new but altered steady states are achieved, allowing the cell to survive and continue to function; hypertrophy, hyperplasia, atrophy and metaplasia |
+| **Reversible cell injury** | Functional and structural alterations in early stages or mild forms of injury, which are correctable if the damaging stimulus is removed |
+| **Irreversible cell injury and cell death** | Persistent or severe injury, in which the cell passes the point of no return; the two principal pathways are necrosis and apoptosis, with necroptosis, pyroptosis and ferroptosis as additional pathways |
+| **Other changes** | Intracellular accumulations from metabolic derangements and chronic injury; pathologic calcification at sites of cell death; cellular ageing |
 
-The response depends on the nature, duration and severity of the injury and on the type and adaptability of the cell.
-
+- Adaptation, reversible injury and cell death represent stages of progressive impairment following different types of insults, but they do not always occur sequentially.
+- The response depends on the nature of the injury, its duration and its severity.
+- The consequences depend on the type, state and adaptability of the injured cell.
 
 ## Mention the types of reversible cell injury.
 
@@ -461,43 +444,78 @@ There are two principal types of cell death, **necrosis** and **apoptosis**.
 
 ## Features of reversible cell injury.
 
-Reversible injury shows cellular swelling, fatty change, plasma membrane blebbing with loss of microvilli, mitochondrial swelling, dilation of the ER, detachment of ribosomes, clumping of nuclear chromatin and cytoplasmic eosinophilia (from RNA loss).
+**Light microscopy**
 
-- Cause of swelling: failure of ATP-dependent Na⁺–K⁺ pump from ATP depletion (oxygen deficiency or mitochondrial damage).
-- Correctable if the damaging stimulus is removed.
-- Gross: pallor, ↑ turgor, ↑ weight.
+- Cellular swelling, which causes pallor, increased turgor and increased weight of the organ.
+- Small clear vacuoles in the cytoplasm, which are distended and pinched-off segments of the ER; this is called hydropic change or vacuolar degeneration.
+- Eosinophilia of the cytoplasm on H&E because of loss of RNA; it becomes more pronounced as injury progresses toward necrosis.
+- Fatty change in organs involved in lipid metabolism, such as the liver.
 
+**Electron microscopy**
+
+1. Plasma membrane alterations: blebbing, blunting and loss of microvilli.
+2. Mitochondrial swelling, with small amorphous densities.
+3. Myelin figures in the cytosol, composed of phospholipids from damaged cellular membranes.
+4. Dilation of the ER, with detachment of polysomes.
+5. Nuclear alterations, with disaggregation of granular and fibrillar elements.
 
 ## Changes that occur in a cell in cellular swelling.
 
-Cellular swelling results from water influx after failure of the ATP-dependent Na⁺–K⁺ pump; the cell and organelles swell, the ER is distended into clear vacuoles (hydropic change), and the cytoplasm becomes more eosinophilic.
+**How it develops**
 
-Sequence: ↓ O₂ → ↓ oxidative phosphorylation → ↓ ATP → ↓ Na⁺,K⁺-ATPase activity → Na⁺ enters, K⁺ falls → net solute gain → osmotic water accumulation → cell swelling and ER dilation.
+1. Oxygen deficiency interferes with mitochondrial oxidative phosphorylation, or the mitochondria are damaged by radiation or toxins, and ATP is depleted.
+2. The ATP-dependent sodium-potassium pump of the plasma membrane fails.
+3. Sodium enters and accumulates inside the cell, and the potassium concentration falls.
+4. The net solute gain results in osmotically driven water accumulation, which leads to cell swelling and dilation of the ER.
 
-Changes: plasma membrane blebbing/loss of microvilli; mitochondrial swelling; ER dilation with polysome detachment; chromatin clumping; clear vacuoles; ↑ eosinophilia; organ pallor, turgor and weight.
+**Changes seen**
 
+- Cellular swelling is the earliest manifestation of almost all forms of injury to cells.
+- When it affects many cells it causes pallor, increased turgor and increased weight of the affected organ.
+- Small clear vacuoles appear within the cytoplasm. They are distended and pinched-off segments of the ER, and the pattern is called **hydropic change** or **vacuolar degeneration**.
+- The cytoplasm appears red (eosinophilic) on H&E because of loss of RNA.
+- There is generalised swelling of the cell and its organelles, blebbing of the plasma membrane, detachment of ribosomes from the ER and clumping of nuclear chromatin.
+- The change is reversible, but in myocardial ischaemia it may progress to irreversibility within 1 or 2 hours.
 
 ## Features of irreversible cell injury.
 
-Irreversible injury is characterised by the inability to reverse mitochondrial dysfunction (no oxidative phosphorylation/ATP) and profound disturbances of membrane function, leading to cell death (necrosis or apoptosis).
+- Persistent or excessive injury causes cells to pass the "point of no return" into irreversible injury and cell death. This point is still largely undefined.
 
-- Cytoplasm: marked eosinophilia, glassy/vacuolated "moth-eaten" appearance, myelin figures.
-- Nucleus: karyolysis, pyknosis, karyorrhexis.
-- EM: discontinuities in plasma and organelle membranes; marked mitochondrial dilation with large amorphous densities (calcium, protein); debris; fluffy denatured protein.
-- Lysosomal membrane rupture → enzymatic digestion.
-- Light-microscopic evidence of death appears 4–12 h after ischaemia; reversible swelling may become irreversible within 1–2 h.
+**Two phenomena consistently characterise irreversibility**
 
+1. Inability to reverse mitochondrial dysfunction, that is lack of oxidative phosphorylation and ATP generation, even after resolution of the original injury.
+2. Profound disturbances in membrane function. Injury to lysosomal membranes results in the enzymatic dissolution of the cell that is characteristic of necrosis.
+
+**Morphology**
+
+- Eosinophilia.
+- Nuclear shrinkage, fragmentation and dissolution.
+- Breakdown of plasma membrane and organellar membranes.
+- Abundant myelin figures.
+- Leakage and enzymatic digestion of cellular contents.
+- Unmistakable light microscopic evidence of cell death may not be seen until 4 to 12 hours after onset of ischaemia.
+
+**Cell death**
+
+- Different injurious stimuli induce death mainly by necrosis and apoptosis.
 
 ## Morphological changes that occur in a necrosed cell.
 
-A necrosed cell shows increased eosinophilia, a glassy or vacuolated ("moth-eaten") cytoplasm, myelin figures, and nuclear changes — karyolysis, pyknosis or karyorrhexis, with disruption of plasma and organelle membranes.
+**Cytoplasmic changes**
 
-| Compartment | Changes |
-|---|---|
-| Cytoplasm | Eosinophilia (loss of RNA + denatured proteins binding eosin); glassy homogeneous look (loss of glycogen); vacuolated, moth-eaten after organelle digestion; myelin figures |
-| Nucleus | Karyolysis – fading of basophilia (endonuclease DNA degradation); pyknosis – shrinkage, dense basophilic mass; karyorrhexis – fragmentation; nucleus disappears in 1–2 days |
-| Membranes (EM) | Discontinuities in plasma and organelle membranes; swollen mitochondria with amorphous densities; amorphous debris |
+- Increased eosinophilia on H&E, from loss of cytoplasmic RNA and accumulation of denatured cytoplasmic proteins that bind eosin.
+- Glassy homogeneous appearance, mainly from loss of glycogen particles.
+- Vacuolated, moth-eaten cytoplasm once enzymes have digested the organelles.
+- Myelin figures, which are large whorled phospholipid precipitates; they are phagocytosed or degraded to fatty acids, which may calcify.
+- On electron microscopy: discontinuities in plasma and organelle membranes, marked dilation of mitochondria with large amorphous densities, intracytoplasmic myelin figures, amorphous debris, and aggregates of fluffy material representing denatured protein.
 
+**Nuclear changes**
+
+1. **Karyolysis:** fading of chromatin basophilia, from enzymatic degradation of DNA by endonucleases.
+2. **Pyknosis:** nuclear shrinkage with increased basophilia; the chromatin condenses into a dense, shrunken basophilic mass.
+3. **Karyorrhexis:** fragmentation of the pyknotic nucleus.
+
+After 1 or 2 days the nucleus of the necrotic cell disappears totally.
 
 ## Describe in brief the sequence of events in ischemic injury.
 
@@ -14612,4 +14630,75 @@ The two frequently occur together and may be triggered by the same stimuli.
 ## Define metaplasia.
 
 **Metaplasia** is a reversible change in which one differentiated cell type (epithelial or mesenchymal) is replaced by another cell type.
+
+## What do you mean by cellular aging?
+
+**Cellular ageing** is the result of a progressive decline in cellular function and viability caused by genetic abnormalities and the accumulation of cellular and molecular damage due to the effects of exposure to exogenous influences.
+
+## How does cellular aging occur?
+
+Cellular ageing results from a combination of accumulating cellular damage (for example by free radicals), reduced capacity to divide (replicative senescence), reduced ability to repair damaged DNA, and defective protein homeostasis.
+
+1. **Accumulation of DNA damage**
+
+- Exogenous (physical, chemical and biologic) agents and endogenous factors such as ROS threaten the integrity of nuclear and mitochondrial DNA. Most damage is repaired, but some persists and accumulates as cells age.
+- The average haematopoietic stem cell suffers 14 new mutations per year.
+- Werner syndrome (a premature ageing syndrome) is caused by a defective DNA helicase, which leads to rapid accumulation of chromosomal damage.
+- In Bloom syndrome and ataxia-telangiectasia the mutated genes encode proteins involved in repairing double-strand breaks in DNA, and patients show some manifestations of ageing at an increased rate.
+
+2. **Replicative senescence:** all normal cells have a limited capacity for replication, and after a fixed number of divisions they become arrested in a terminally nondividing state.
+
+- **Telomere attrition:** when somatic cells replicate, a small section of the telomere is not duplicated, so telomeres become progressively shorter. The chromosome ends are then seen as broken DNA, which signals cell cycle arrest.
+- Telomere length is maintained by **telomerase**, which is expressed in germ cells, present at low levels in stem cells and absent in most somatic tissues. In immortalised cancer cells telomerase is usually reactivated.
+- **Activation of tumour suppressor genes:** particularly the CDKN2A locus. Expression of its product p16 (INK4a) correlates with chronological age. By controlling G1 to S phase progression it pushes cells along the senescence pathway.
+
+3. **Defective protein homeostasis**
+
+- Normal folding of proteins (mediated by chaperones) and degradation of misfolded, damaged or unneeded proteins by the autophagy-lysosome and ubiquitin-proteasome systems are both impaired with ageing.
+- Mutant mice deficient in heat shock protein chaperones age rapidly, and those that overexpress such chaperones are long lived.
+- Rapamycin, which inhibits the mTOR pathway, increases the life span of middle-aged mice.
+- Misfolded proteins may accumulate and trigger apoptosis.
+
+4. **Dysregulated nutrient sensing:** caloric restriction increases life span in all eukaryotic species in which it has been tested.
+
+- Caloric restriction is proposed to increase longevity by reducing the signalling intensity of the insulin and IGF-1 pathways and by increasing sirtuins.
+- **Sirtuins** are NAD-dependent protein deacetylases. They promote the expression of genes that increase longevity: they inhibit metabolic activity, reduce apoptosis, stimulate protein folding and counteract the harmful effects of oxygen free radicals. Sirtuin-6 also promotes genomic integrity by activating DNA repair enzymes.
+
+5. **Persistent inflammation** is also among the best described mechanisms that promote cellular ageing.
+
+## Define cell injury.
+
+Cell injury is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations that affect essential cellular functions. It is reversible up to a point, but if the injurious stimulus is persistent or severe, the cell suffers irreversible injury and ultimately undergoes cell death.
+
+## Classify cell injury.
+
+1. **Reversible cell injury:** functional and structural alterations in early stages or mild forms of injury, which are correctable if the damaging stimulus is removed.
+2. **Irreversible cell injury:** persistent or severe injury, in which the cell passes the point of no return and undergoes cell death, either by necrosis or by apoptosis.
+
+## Causes of cell injury.
+
+1. **Oxygen deprivation (hypoxia):** a deficiency of oxygen that reduces aerobic oxidative respiration; causes are reduced blood flow (ischaemia), inadequate oxygenation of the blood from cardiorespiratory failure, and decreased oxygen-carrying capacity, as in anaemia, carbon monoxide poisoning and severe blood loss.
+2. **Physical agents:** mechanical trauma, extremes of temperature (burns and deep cold), sudden changes in atmospheric pressure, radiation and electric shock.
+3. **Chemical agents and drugs:** hypertonic glucose or salt, high concentrations of oxygen, poisons such as arsenic, cyanide and mercury, pollutants, pesticides, carbon monoxide, asbestos, alcohol, cocaine and therapeutic drugs.
+4. **Infectious agents:** viruses, rickettsiae, bacteria, fungi, parasites and tapeworms.
+5. **Immunologic reactions:** reactions to endogenous self-antigens cause autoimmune diseases; reactions to external agents such as viruses and environmental substances also cause injury.
+6. **Genetic abnormalities:** an extra chromosome, as in Down syndrome, or a single base pair substitution, as in sickle cell anaemia; they injure cells through deficient protein function, or through accumulation of damaged DNA or misfolded proteins.
+7. **Nutritional imbalances:** protein-calorie deficiency, vitamin deficiencies, anorexia nervosa, and nutritional excess such as obesity and diets high in certain lipids.
+
+## Types of reversible cell injury.
+
+1. **Cellular swelling:** the earliest manifestation of almost all forms of cell injury; it results from influx of water.
+2. **Fatty change:** occurs in organs actively involved in lipid metabolism, such as the liver; toxic injury disrupts metabolic pathways and leads to rapid accumulation of triglyceride-filled lipid vacuoles.
+
+## Morphological types of cell injury.
+
+**Reversible injury**
+
+- Cellular swelling (hydropic change or vacuolar degeneration).
+- Fatty change.
+
+**Irreversible injury (cell death)**
+
+- Necrosis.
+- Apoptosis.
 
