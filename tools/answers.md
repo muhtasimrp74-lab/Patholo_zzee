@@ -26,20 +26,16 @@ Adaptations are reversible functional and structural responses to changes in phy
 
 ## Define cellular adaptation.
 
-Adaptations are reversible changes in the size, number, phenotype, metabolic activity or functions of cells in response to changes in their environment.
-
+Adaptations are reversible changes in the size, number, phenotype, metabolic activity, or functions of cells in response to changes in their environment.
 
 ## Examples of each type of cellular adaptation.
 
-Hypertrophy – cardiac muscle in hypertension, gravid uterus; hyperplasia – endometrium under oestrogen, prostate in BPH, liver regeneration; atrophy – disuse of limb muscle, brain in old age; metaplasia – bronchial epithelium of smokers, Barrett oesophagus.
-
-| Adaptation | Physiologic | Pathologic |
+| Type | Physiologic example | Pathologic example |
 |---|---|---|
-| Hypertrophy | Uterus in pregnancy; muscle of weight-lifters | LV hypertrophy in hypertension, aortic valve disease |
-| Hyperplasia | Breast at puberty/pregnancy; liver regrowth; marrow after haemorrhage (up to ~8-fold ↑ red cell production) | Endometrial hyperplasia; BPH; skin warts (papillomavirus) |
-| Atrophy | Embryonic notochord, thyroglossal duct | Disuse (cast), denervation, ischaemia (senile brain), cachexia/malnutrition, post-menopausal endometrium, castrated prostate, pressure from a tumour |
-| Metaplasia | Endocervical transformation zone | Smoker's bronchus, vitamin A deficiency (respiratory epithelium, cornea), duct stones, Barrett oesophagus, myositis ossificans |
-
+| **Hypertrophy** | Uterus in pregnancy (smooth muscle, stimulated by oestrogen); skeletal muscle of bodybuilders | Enlargement of the heart from pressure overload, usually due to hypertension or valvular disease |
+| **Hyperplasia** | Glandular epithelium of the female breast at puberty and during pregnancy; liver regeneration after donation of one lobe; bone marrow after acute bleeding or haemolysis | Endometrial hyperplasia (excess oestrogen); benign prostatic hyperplasia (androgens); skin warts and mucosal lesions due to papillomaviruses |
+| **Atrophy** | Notochord and thyroglossal duct during foetal development | Disuse (limb in a plaster cast, bed rest); denervation; senile atrophy of the brain from reduced blood supply; cachexia in protein-calorie malnutrition; endometrium, vaginal epithelium and breast after menopause; prostate after castration; pressure from an enlarging benign tumour |
+| **Metaplasia** | None given | Columnar to squamous in the trachea and bronchi of a smoker and in vitamin A deficiency; squamous to columnar in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells); bone formation in muscle (myositis ossificans) |
 
 ## A 40-year-old man presented with high blood pressure for a prolonged period. What will be the effect on the myocardium? State its interpretation.
 
@@ -128,39 +124,31 @@ Pathologic hyperplasia is distinct from cancer, but it is a fertile soil in whic
 
 ## Define hyperplasia.
 
-Hyperplasia is an increase in the number of cells in an organ or tissue in response to a stimulus.
-
-- It can occur only in tissues containing cells capable of dividing, and may be physiologic or pathologic.
-- Often accompanies hypertrophy and may be triggered by the same stimuli.
-- Result of growth-factor–driven proliferation of mature cells and, in some cases, increased output of new cells from tissue stem cells.
-
+**Hyperplasia** is an increase in the number of cells in an organ or tissue in response to a stimulus.
 
 ## Causes of hyperplasia.
 
-Hyperplasia is caused by hormones and growth factors (physiologic: increased functional need, compensation after damage; pathologic: excessive/inappropriate hormonal stimulation) and by certain viral infections (papillomavirus).
+**Physiologic hyperplasia**, due to hormones or growth factors
 
-| Type | Cause | Example |
-|---|---|---|
-| Physiologic – hormonal | Need to ↑ functional capacity of hormone-sensitive organs | Breast epithelium at puberty/pregnancy, Pregnant uterus |
-| Physiologic – compensatory | Damage or resection | Liver regeneration after partial hepatectomy or unilateral hepatectomy; marrow response to haemorrhage/haemolysis via erythropoietin |
-| Pathologic – hormonal | Excess/inappropriate hormone or growth factor | Endometrial hyperplasia (↑ oestrogen relative to progesterone); BPH (androgens) |
-| Pathologic – viral | Viral factors interfere with host growth-regulating proteins | HPV warts and mucosal lesions |
+- Need to increase the functional capacity of hormone-sensitive organs, as in proliferation of the glandular epithelium of the female breast at puberty and during pregnancy.
+- Need for a compensatory increase after damage or resection, as in liver regeneration after donation of one lobe.
+- Bone marrow response to acute bleeding or premature breakdown of red cells (haemolysis): erythropoietin stimulates the growth of red cell progenitors, and red cell production can increase as much as eightfold.
 
+**Pathologic hyperplasia**
+
+- Excessive or inappropriate actions of hormones or growth factors acting on target cells.
+- Endometrial hyperplasia: the balance between oestrogen and progesterone is disturbed, with an absolute or relative increase in oestrogen.
+- Benign prostatic hyperplasia: hormonal stimulation by androgens.
+- Viral infections, such as papillomaviruses, which cause skin warts and several mucosal lesions. The viruses make factors that interfere with host proteins that regulate cell proliferation.
 
 ## Clinical importance of hyperplasia.
 
-Pathologic hyperplasia is not itself cancer but is fertile soil for it, it causes symptoms through excess function or bulk, and it is controlled and reversible when the stimulus is removed.
-
-- Fertile soil for cancer — increased cell division raises the risk of acquiring genetic aberrations that drive unrestrained proliferation. Pathologic hyperplasia is not cancer, but cancer may arise in it: endometrial hyperplasia → increased risk of endometrial carcinoma.
-- Diagnostic/therapeutic implication: identifying the driving hormone (e.g., unopposed oestrogen) allows treatment that reverses the hyperplasia.
-- Produces symptoms through excess function or bulk
-- Endometrial hyperplasia (relative/absolute oestrogen excess) is a common cause of abnormal uterine bleeding.
-- Benign prostatic hyperplasia (androgen-driven) — causes urethral compression and urinary obstruction.
-- Controlled and potentially reversible — it regresses or stabilises when the hormonal/growth-factor stimulus is removed.
-- Virus-induced hyperplasia — papillomaviruses produce factors that interfere with host proliferation-regulating proteins, causing warts and mucosal lesions; some are cancer precursors.
-
-Physiologic : compensation after liver donation or resection; marrow can raise red-cell output up to eightfold.
-
+- Pathologic hyperplasia is abnormal, but the process remains controlled, and the hyperplasia can regress or stabilise if the hormonal stimulation is eliminated.
+- Endometrial hyperplasia is a common cause of abnormal uterine bleeding.
+- The increased cell division elevates the risk of acquiring genetic aberrations that can drive unrestrained proliferation and give rise to cancer.
+- Although hyperplasia is distinct from cancer, pathologic hyperplasia constitutes a **fertile soil** in which cancerous proliferations may eventually arise.
+- Patients with hyperplasia of the endometrium are at increased risk of developing endometrial cancer.
+- Some virally induced proliferations, such as papillomavirus warts and mucosal lesions, are also precursors to cancer.
 
 ## Define atrophy with examples.
 
@@ -210,21 +198,27 @@ Atrophy is a reduction in the size of an organ or tissue due to a decrease in ce
 
 ## Why does pathological atrophy occur?
 
-Pathologic atrophy occurs because the cell's supply of nutrients, blood, nerve or hormonal stimulation, or workload falls (or pressure acts on it); the cell shrinks to bring its metabolic demand into balance with the reduced supply, through ↓ protein synthesis and ↑ protein degradation.
+1. Decreased workload (disuse), as in a limb immobilised in a plaster cast or complete bed rest.
+2. Loss of innervation (denervation).
+3. Diminished blood supply (chronic ischaemia), as in senile atrophy of the brain from atherosclerosis.
+4. Inadequate nutrition, as in profound protein-calorie malnutrition.
+5. Loss of endocrine stimulation, as after menopause or castration.
+6. Pressure, from tissue compression.
 
-- Causes: disuse, denervation, chronic ischaemia, malnutrition/cachexia, loss of endocrine stimulation, pressure.
-
+The fundamental cellular change is a decrease in cell size and organelles. This brings the cell's metabolic demands into balance with the lower levels of blood supply, nutrition or trophic stimulation, and a new equilibrium is achieved.
 
 ## Mechanism of atrophy of a cell or organ.
 
-Atrophy results from decreased protein synthesis and increased protein degradation (ubiquitin–proteasome pathway), with increased autophagy; cell size and organelles are reduced to reach a new, lower steady state.
-
-- Initial response: decrease in cell size and organelles (fewer mitochondria, myofilaments, less rough ER in muscle) → balances metabolic demand with reduced supply, nutrition or trophic stimulation.
-- ↓ protein synthesis: loss of trophic signals. ↑ proteolysis: ubiquitin ligases activated by nutrient deficiency and disuse → proteasomal degradation.
-- Autophagy: autophagic vacuoles ↑; indigestible residual bodies (lipofuscin) → brown atrophy.
-- Cell loss at the organ level: apoptosis contributes (prolonged disuse, hormone withdrawal, duct obstruction in pancreas/parotid/kidney).
-- Early: diminished function but minimal cell death; late: possible irreversible injury.
-
+- Atrophy results from **decreased protein synthesis** and **increased protein degradation**.
+- Protein synthesis decreases because of reduced trophic signals, such as those produced by growth receptors, which enhance uptake of nutrients and increase mRNA translation.
+- Protein degradation occurs mainly by the **ubiquitin-proteasome pathway**. Nutrient deficiency and disuse may activate ubiquitin ligases, which attach ubiquitin to cellular proteins and target them for degradation in proteasomes.
+- The same pathway is thought to be responsible for the accelerated proteolysis in catabolic conditions, including cancer-related cachexia.
+- Atrophy is often accompanied by increased **autophagy**, with increased numbers of autophagic vacuoles.
+- Cell debris that resists digestion persists in the cytoplasm as membrane-bound residual bodies, for example lipofuscin granules, which impart a brown discolouration to the tissue (brown atrophy).
+- The initial response is a decrease in cell size and organelles, which may reduce the metabolic needs of the cell enough to permit its survival. In atrophic muscle the cells contain fewer mitochondria and myofilaments and a reduced amount of rough ER.
+- A new equilibrium is achieved between the cell's metabolic demands and the lower levels of blood supply, nutrition or trophic stimulation.
+- Early in the process, atrophic cells have diminished function but cell death is minimal.
+- Atrophy caused by gradually reduced blood supply may progress to irreversible injury and cell death, often by apoptosis. Apoptosis also contributes to the atrophy of endocrine organs after hormone withdrawal.
 
 ## Define metaplasia and give two examples.
 
@@ -302,36 +296,26 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 
 ## Causes of metaplasia.
 
-Metaplasia is caused by persistent stress or chronic irritation — smoking, vitamin A deficiency or excess, stones/pressure in ducts, reflux of gastric acid — acting through cytokines, growth factors and matrix signals on tissue stem cells.
-
-| Cause | Metaplasia |
-|---|---|
-| Chronic irritation (cigarette smoke) | Respiratory columnar → squamous |
-| Vitamin A (retinoic acid) deficiency/excess | Squamous metaplasia of respiratory epithelium and cornea |
-| Stones / pressure in excretory ducts | Squamous metaplasia of salivary, pancreatic, bile ducts |
-| Gastric acid reflux | Barrett oesophagus |
-| Intramuscular haemorrhage / tissue injury | Myositis ossificans |
-
+- **Chronic irritation of the respiratory tract:** in the habitual cigarette smoker, the ciliated columnar epithelial cells of the trachea and bronchi are often replaced by stratified squamous epithelial cells.
+- **Vitamin A (retinoic acid) deficiency:** it induces squamous metaplasia in the respiratory epithelium and in the cornea. Vitamin A deficiency or excess may cause metaplasia, because retinoic acid regulates gene transcription directly through nuclear retinoid receptors.
+- **Stones in the excretory ducts** of the salivary glands, pancreas or bile ducts: irritation and pressure effects lead to squamous metaplasia.
+- **Refluxed gastric acid:** in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells).
+- **Intramuscular haemorrhage:** bone formation in muscle (myositis ossificans) may follow. Connective tissue metaplasia may be a result of cell or tissue injury.
 
 ## Important sites of epithelial metaplasia.
 
-Trachea and bronchi (smokers), cornea and respiratory epithelium (vitamin A deficiency), excretory ducts of salivary glands, pancreas and bile ducts (stones), and the lower oesophagus (Barrett).
-
-- Columnar → squamous: respiratory tract; cornea; salivary, pancreatic and biliary ducts.
-- Squamous → columnar: oesophagus (Barrett).
-- Other sites: endocervix (transformation zone), urinary bladder, stomach (intestinal metaplasia in chronic gastritis).
-
+- Trachea and bronchi of a habitual cigarette smoker: ciliated columnar epithelium replaced by stratified squamous epithelium.
+- Respiratory epithelium and cornea in vitamin A deficiency: squamous metaplasia.
+- Excretory ducts of the salivary glands, pancreas or bile ducts, in the presence of stones: squamous metaplasia.
+- Oesophagus, in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells): squamous to columnar metaplasia.
 
 ## Classify metaplasia with examples.
 
-Metaplasia is classified as epithelial (columnar → squamous, or squamous → columnar) and connective tissue (mesenchymal) types.
-
-| Class | Subtype | Example |
+| Class | Type | Example |
 |---|---|---|
-| Epithelial | Columnar → squamous (commonest) | Smoker's bronchus; vitamin A deficiency; duct stones |
-| Epithelial | Squamous → columnar | Barrett oesophagus |
-| Connective tissue (mesenchymal) | Formation of cartilage, bone or fat where normally absent | Myositis ossificans |
-
+| Epithelial | Columnar to squamous (the most common) | Trachea and bronchi of a smoker; respiratory epithelium and cornea in vitamin A deficiency; ducts of the salivary glands, pancreas or bile ducts with stones |
+| Epithelial | Squamous to columnar | Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells) |
+| Connective tissue | Formation of cartilage, bone or adipose cells in tissues that normally do not contain these elements | Bone formation in muscle after intramuscular haemorrhage (myositis ossificans) |
 
 ## Bad consequence / clinical importance of metaplasia.
 
@@ -14585,4 +14569,47 @@ Atrophy is a reduction in the size of an organ or tissue due to a decrease in ce
 ## What do you mean by apoptosis?
 
 **Apoptosis** is a type of cell death that is induced by a tightly regulated suicide programme in which cells destined to die activate intrinsic enzymes that degrade cellular DNA and nuclear and cytoplasmic proteins.
+
+## Types / classification of cellular adaptation.
+
+| Type | Change in the cell |
+|---|---|
+| **Hypertrophy** | Increase in the size and functional activity of cells |
+| **Hyperplasia** | Increase in cell number |
+| **Atrophy** | Decrease in the size and metabolic activity of cells |
+| **Metaplasia** | Change in the phenotype of cells |
+
+## What is atrophy?
+
+**Atrophy** is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
+
+## Causes of atrophy with examples.
+
+**Physiologic:** common during normal development. The notochord and thyroglossal duct undergo atrophy during foetal development.
+
+**Pathologic**
+
+1. **Decreased workload (disuse atrophy):** skeletal muscle atrophy follows when a fractured bone is immobilised in a plaster cast or a patient is restricted to complete bed rest. With more prolonged disuse the fibres decrease in number, due to apoptosis, as well as in size, and increased bone resorption may lead to disuse osteoporosis.
+2. **Loss of innervation (denervation atrophy):** damage to the nerves leads to atrophy of the muscle fibres supplied by those nerves.
+3. **Diminished blood supply:** a gradual decrease in blood supply (chronic ischaemia) from slowly developing arterial occlusive disease. In late adult life the brain may undergo progressive atrophy, mainly because of reduced blood supply from atherosclerosis. This is called **senile atrophy**.
+4. **Inadequate nutrition:** profound protein-calorie malnutrition (marasmus) leads to marked muscle wasting (cachexia). Cachexia is also seen in chronic inflammatory diseases and cancer, where chronic overproduction of TNF is thought to be responsible.
+5. **Loss of endocrine stimulation:** loss of oestrogen stimulation after menopause causes atrophy of the endometrium, vaginal epithelium and breast. The prostate atrophies after chemical or surgical castration.
+6. **Pressure:** tissue compression for any length of time can cause atrophy. An enlarging benign tumour can cause atrophy in the surrounding uninvolved tissues, probably from ischaemic changes caused by compromise of the blood supply.
+
+## Differences between hypertrophy and hyperplasia.
+
+| Feature | Hypertrophy | Hyperplasia |
+|---|---|---|
+| Definition | Increase in the size of cells, which increases the size of the organ | Increase in the number of cells in an organ or tissue in response to a stimulus |
+| New cells | None; just larger cells, from synthesis and assembly of additional intracellular structural components | New cells are formed |
+| Cells involved | Occurs in tissues with limited proliferative capacity; non-dividing cells such as myocardial fibres increase mass by hypertrophy only | Can take place only if the tissue contains cells capable of dividing, or abundant tissue stem cells |
+| Mechanism | Increased cellular protein production, from growth factors and direct effects of mechanical force | Growth factor-driven proliferation of mature cells and, in some cases, increased output of new cells from tissue stem cells |
+| Physiologic example | Gravid uterus; skeletal muscle of bodybuilders | Breast epithelium at puberty and pregnancy; liver regeneration; bone marrow |
+| Pathologic example | Heart in hypertension or valvular disease | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
+
+The two frequently occur together and may be triggered by the same stimuli.
+
+## Define metaplasia.
+
+**Metaplasia** is a reversible change in which one differentiated cell type (epithelial or mesenchymal) is replaced by another cell type.
 
