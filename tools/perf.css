@@ -6,9 +6,9 @@
    3. Off-screen cards are skipped by the browser (content-visibility) until they scroll near the screen. */
 html body{background-image:none!important;background-attachment:scroll!important}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;transform:translateZ(0);backface-visibility:hidden;background-repeat:no-repeat}
-body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(209,138,112,.28),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(123,128,104,.24),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(185,173,156,.30),transparent 60%)}
-:root[data-theme=dark] body::before,:root:not([data-theme=light]) body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(169,95,69,.22),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(111,117,96,.18),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(143,79,57,.12),transparent 60%)}
-:root[data-theme=light] body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(209,138,112,.28),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(123,128,104,.24),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(185,173,156,.30),transparent 60%)}
+body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(217,143,168,.28),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(107,45,92,.24),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(240,203,215,.30),transparent 60%)}
+:root[data-theme=dark] body::before,:root:not([data-theme=light]) body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(147,48,74,.22),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(126,52,112,.18),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(122,31,54,.12),transparent 60%)}
+:root[data-theme=light] body::before{background-image:radial-gradient(60vmax 50vmax at 8% -5%,rgba(217,143,168,.28),transparent 60%),radial-gradient(55vmax 45vmax at 105% 20%,rgba(107,45,92,.24),transparent 60%),radial-gradient(50vmax 40vmax at 40% 110%,rgba(240,203,215,.30),transparent 60%)}
 html .topic,html .card,html .qi,html .row,html .qs-h,html .part-h,html .dc,html .pc,html .empty,html .stats,html .ph,html .soon,html .nh-prog,
 html .nh-row a,html .nh-g div,html .pager a,html .card header,html .qi-h,html .qb,html .act,html .qlearn,html .qf-clr,html .gb.ghost,html .blk+.blk{-webkit-backdrop-filter:none;backdrop-filter:none}
 html .card,html .qi,html .row,html .topic{content-visibility:auto;contain-intrinsic-size:auto 150px}
@@ -50,7 +50,7 @@ html body .nav{height:calc(60px + env(safe-area-inset-top,0px))}
 @media (hover:none),(pointer:coarse){
  html body :is(.topic,.card,.qi,.row,.dc,.pc,.part-h,.qs-h,.ph,.stats,.empty,.nh-prog,.nh-row a,.nh-g div,.pager a,.qlearn,.qb,.act,.qf-clr,.gb.ghost){box-shadow:none!important;background-image:none!important;text-shadow:none!important}
  html body #v-home .hero::before,html body #v-home .hero::after{display:none}
- html body .act[aria-pressed=true]{background-color:var(--clay2,#8f4f39)!important;background-image:none!important;color:#fff!important;border-color:transparent!important}
+ html body .act[aria-pressed=true]{background-color:var(--burgundy2,#7A1F36)!important;background-image:none!important;color:#fff!important;border-color:transparent!important}
  html body .act[data-k=learned][aria-pressed=true]{background-color:var(--sage2,#52663a)!important}
  html body .act[aria-pressed=true] svg{color:#fff}
 }

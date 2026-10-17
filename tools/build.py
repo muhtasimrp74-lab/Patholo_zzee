@@ -51,7 +51,7 @@ for _k in range(10):
     _pts.append('%.2f %.2f' % (12 + _r * math.cos(_a), 12.8 + _r * math.sin(_a)))
 _STAR_D = 'M' + ' L'.join(_pts) + 'Z'
 STAR_SPRITE = ('<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>'
-    '<linearGradient id="zz-star-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EDBFA3"/><stop offset=".55" stop-color="#C77F5F"/><stop offset="1" stop-color="#97523C"/></linearGradient>'
+    '<linearGradient id="zz-star-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E9A5BB"/><stop offset=".55" stop-color="#B4506F"/><stop offset="1" stop-color="#7A1F36"/></linearGradient>'
     '<symbol id="zz-star" viewBox="0 0 24 24" overflow="visible"><path d="%s" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>'
     '<path d="M9.4 8.7 L11.1 5.9" fill="none" stroke="#fff" stroke-width="1.1" stroke-linecap="round" style="opacity:var(--zhl,0)"/></symbol></defs></svg>') % _STAR_D
 
@@ -262,7 +262,7 @@ document.querySelectorAll('.stats b').forEach(el=>{const v=+el.textContent;if(!v
 /* topic-complete celebration */
 const toast=document.createElement('div');toast.className='toast';toast.setAttribute('role','status');toast.setAttribute('aria-live','polite');document.body.appendChild(toast);let tt;
 function say(h){toast.innerHTML='<span class="tk"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>'+h+'</span>';toast.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('on'),3600)}
-function burst(){if(RM)return;const cs=['#1769e0','#2bb3d6','#0f7a4a','#f2b36b','#8fb3f2'];for(let i=0;i<26;i++){const e=document.createElement('i');e.className='cf';const a=(Math.random()*160+10)*Math.PI/180,d=120+Math.random()*180;e.style.cssText='--c:'+cs[i%5]+';--x:'+(Math.cos(a)*d*(Math.random()<.5?-1:1)).toFixed(0)+'px;--y:'+(-Math.sin(a)*d).toFixed(0)+'px;--r:'+((Math.random()*720-360)|0)+'deg';document.body.appendChild(e);setTimeout(()=>e.remove(),1400)}}
+function burst(){if(RM)return;const cs=['#7A1F36','#D98FA8','#0f7a4a','#6B2D5C','#E9A5BB'];for(let i=0;i<26;i++){const e=document.createElement('i');e.className='cf';const a=(Math.random()*160+10)*Math.PI/180,d=120+Math.random()*180;e.style.cssText='--c:'+cs[i%5]+';--x:'+(Math.cos(a)*d*(Math.random()<.5?-1:1)).toFixed(0)+'px;--y:'+(-Math.sin(a)*d).toFixed(0)+'px;--r:'+((Math.random()*720-360)|0)+'deg';document.body.appendChild(e);setTimeout(()=>e.remove(),1400)}}
 const NAME={},TOT={};DATA.forEach(d=>{NAME[d[2]]=d[4];TOT[d[2]]=(TOT[d[2]]||0)+1});
 function done(){const L=new Set(S.learned),c={};DATA.forEach(d=>{if(L.has(d[3]))c[d[2]]=(c[d[2]]||0)+1});return new Set(Object.keys(TOT).filter(t=>c[t]===TOT[t]))}
 let prev=null;const p0=prog;prog=function(){p0();const now=done();if(prev){const fresh=[...now].filter(t=>!prev.has(t));if(fresh.length){burst();say(now.size===Object.keys(TOT).length?'<b>Every topic complete.</b> Outstanding work.':'<b>Topic complete</b><br>'+NAME[fresh[0]])}}prev=now};prog();
@@ -301,7 +301,7 @@ s = s.replace(T, '<ul id="res"></ul></div></div></div>' + STATS + '</div><main',
 NAV_OLD = re.search(r'<nav id="bnav">.*?</nav>', s, re.S)
 assert NAV_OLD
 s = s.replace(NAV_OLD.group(), '<nav id="bnav" aria-label="Main"><a href="#/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Home</a><a href="#/topics"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg>Topics</a><a href="#/questions"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1 1-1.1 1.8M12 17h.01"/></svg>Questions</a><a href="#/practice"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>Practice</a><a href="#/bookmarks"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>Bookmarks</a><a href="#/notes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16zM13 7l4 4"/></svg>Notes</a></nav>', 1)
-s = s.replace('content="#000000" media', 'content="#1C1A19" media').replace('content="#f7f4f2" media', 'content="#F3EBDD" media')
+s = s.replace('content="#000000" media', 'content="#1C1219" media').replace('content="#f7f4f2" media', 'content="#F8F3EE" media')
 CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"><meta name=\"referrer\" content=\"no-referrer\">"
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
 POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'tutorial.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'motion.js'), encoding='utf8').read()
@@ -380,7 +380,7 @@ BOOT_HEAD = ('''<style id="zz-perf">@media (min-width:700px){
 body{background:var(--bg)!important;background-attachment:scroll!important}
 body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:var(--mesh);transform:translateZ(0)}
 body::before{mix-blend-mode:normal!important;opacity:.025!important}
-.card,.qi,.row,.topic{will-change:auto}}</style><style id="zz-boot-css">html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F3EBDD)}</style>'''
+.card,.qi,.row,.topic{will-change:auto}}</style><style id="zz-boot-css">html.zz-boot body{visibility:hidden}html.zz-boot{background:var(--bg,#F8F3EE)}</style>'''
              '<script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script>')
 BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script>'
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
