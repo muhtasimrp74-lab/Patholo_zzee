@@ -2,30 +2,29 @@
 
 /* ---- Sepia "paper" theme: a warm, low-glare variant of the light theme (data-theme=light + data-tone=sepia) ---- */
 :root[data-theme=light][data-tone=sepia]{
- --bg:#EFE2C4;--panel:#F6EBD0;--line:#DAC7A0;--line2:#C9B287;--text:#3A2E1C;--muted:#65532F;--navy:#3A2E1C;
- --chip:#EADBB6;--soft:#EADBB6;--accbg:#E6D3A9;--infobg:#ECDDB8;--amber:#6E4413;--amberbg:#E8D4A6;
- --frost:rgba(246,235,208,.66);--glass:rgba(246,235,208,.78);--glass-strong:rgba(246,235,208,.92);--glass-bd:rgba(255,248,226,.8);
- --glass-in:inset 0 1px 0 rgba(255,248,226,.9),inset 0 -1px 0 rgba(110,68,19,.10);
- --g-mist:linear-gradient(160deg,#F6EBD0,#E8D8B2);
- --qtint:linear-gradient(135deg,rgba(201,150,102,.30),rgba(246,235,208,.45) 62%,rgba(123,128,104,.14));
- --qtint-open:linear-gradient(135deg,rgba(201,150,102,.44),rgba(246,235,208,.50) 62%,rgba(123,128,104,.20));
- --b100:#E6D3A9;--b200:#D6C193;--b300:#C4AC7C;--b400:#B09A6C;--b800:#5E3322;
+ --bg:#EFDDD6;--panel:#F7EAE4;--line:#DDC2BC;--line2:#CDAFA9;--text:#3A2230;--muted:#6A4F5C;--navy:#3A2230;
+ --chip:#E8D1CB;--soft:#E8D1CB;--accbg:#E6CCC9;--infobg:#ECD8D2;--amber:#6E3B2E;--amberbg:#EBD3CB;
+ --frost:rgba(247,234,228,.66);--glass:rgba(247,234,228,.78);--glass-strong:rgba(247,234,228,.92);--glass-bd:rgba(255,246,242,.8);
+ --glass-in:inset 0 1px 0 rgba(255,246,242,.9),inset 0 -1px 0 rgba(122,31,54,.08);
+ --g-mist:linear-gradient(160deg,#F7EAE4,#E8D3CC);
+ --qtint:linear-gradient(135deg,rgba(217,143,168,.30),rgba(247,234,228,.45) 62%,rgba(107,45,92,.14));
+ --qtint-open:linear-gradient(135deg,rgba(217,143,168,.44),rgba(247,234,228,.50) 62%,rgba(107,45,92,.20));
+ --b100:#E6CCC9;--b200:#DDC2BC;--b300:#CDAFA9;--b400:#B3949C;--b800:#5A1428;
  color-scheme:light}
 :root[data-theme=light][data-tone=sepia] body{background-color:var(--bg);background-image:
- radial-gradient(60vmax 50vmax at 8% -5%,rgba(214,160,100,.26),transparent 60%),
- radial-gradient(55vmax 45vmax at 105% 20%,rgba(150,140,90,.20),transparent 60%),
- radial-gradient(50vmax 40vmax at 40% 110%,rgba(190,160,110,.28),transparent 60%)}
+ radial-gradient(60vmax 50vmax at 8% -5%,rgba(217,143,168,.30),transparent 60%),
+ radial-gradient(55vmax 45vmax at 105% 20%,rgba(107,45,92,.14),transparent 60%),
+ radial-gradient(50vmax 40vmax at 40% 110%,rgba(240,203,215,.40),transparent 60%)}
 :root[data-theme=light][data-tone=sepia] .card,:root[data-theme=light][data-tone=sepia] .qi,:root[data-theme=light][data-tone=sepia] .topic{background-color:var(--panel)}
 
 /* ---- Colour-coded question types (viva / written / both); colours follow the active theme ---- */
 .tg.k-v,.tg.k-w,.tg.k-b{border:1px solid transparent}
-.tg.k-v{background:color-mix(in srgb,var(--lbl) 14%,var(--panel));color:var(--lbl);border-color:color-mix(in srgb,var(--lbl) 28%,transparent)}
-.tg.k-w{background:color-mix(in srgb,var(--ok) 18%,var(--panel));color:var(--ok);border-color:color-mix(in srgb,var(--ok) 34%,transparent)}
-.tg.k-b{background:color-mix(in srgb,var(--amber) 16%,var(--panel));color:var(--amber);border-color:color-mix(in srgb,var(--amber) 32%,transparent)}
-:root[data-theme=light] .tg.k-w{color:#4d5340}
+.tg.k-v{background:color-mix(in srgb,var(--tv) 14%,var(--panel));color:var(--tv);border-color:color-mix(in srgb,var(--tv) 30%,transparent)}
+.tg.k-w{background:color-mix(in srgb,var(--tw) 14%,var(--panel));color:var(--tw);border-color:color-mix(in srgb,var(--tw) 30%,transparent)}
+.tg.k-b{background:linear-gradient(100deg,color-mix(in srgb,var(--tv) 16%,var(--panel)),color-mix(in srgb,var(--tw) 16%,var(--panel)));color:var(--tw);border-color:color-mix(in srgb,var(--tw) 30%,transparent)}
 .card>header .tg{margin-left:auto;align-self:flex-start;margin-top:3px}
-.qi[data-k=w]>.qi-h{box-shadow:inset 3px 0 0 var(--ok)}
-.qi[data-k=b]>.qi-h{box-shadow:inset 3px 0 0 var(--amber)}
+.qi[data-k=w]>.qi-h{box-shadow:inset 3px 0 0 var(--tw)}
+.qi[data-k=b]>.qi-h{box-shadow:inset 3px 0 0 var(--rosy)}
 
 /* ---- Calmer reading mode: shorter lines, more air, softer contrast for answers and the textbook ---- */
 body.calm .card .ans,body.calm .qi-a,body.calm #tbbody{max-width:68ch;margin-left:auto;margin-right:auto;line-height:1.9;letter-spacing:.006em;word-spacing:.02em;hyphens:auto;-webkit-hyphens:auto}
@@ -102,8 +101,8 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 
 /* ---- Tutorial v2: spotlight, glass card (draggable), pointing hand ---- */
 #zz-tut-fx{position:fixed;inset:0;z-index:68;pointer-events:none}
-#zz-tut-fx .fl{position:fixed;inset:0;background:rgba(18,12,10,.3);opacity:0;transition:opacity .3s ease;pointer-events:none}
-#zz-tut-fx .sp{position:fixed;border-radius:16px;border:2px solid rgba(255,255,255,.95);box-shadow:0 0 0 100vmax rgba(18,12,10,.38);will-change:left,top,width,height}
+#zz-tut-fx .fl{position:fixed;inset:0;background:rgba(18,10,12,.3);opacity:0;transition:opacity .3s ease;pointer-events:none}
+#zz-tut-fx .sp{position:fixed;border-radius:16px;border:2px solid rgba(255,255,255,.95);box-shadow:0 0 0 100vmax rgba(18,10,12,.38);will-change:left,top,width,height}
 #zz-tut-fx.gl .sp{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),width .65s cubic-bezier(.45,0,.15,1),height .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}
 #zz-tut-fx.gl .hd{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}
 #zz-tut-fx .sp:after{content:"";position:absolute;inset:-5px;border-radius:20px;box-shadow:0 0 22px 4px color-mix(in srgb,var(--lbl) 55%,transparent);animation:zzrg 2s ease-in-out infinite}
@@ -124,15 +123,15 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 #zz-tut .bd{padding:2px 18px 0}
 #zz-tut b{display:block;font:400 23px/1.15 var(--disp);margin:2px 0 6px}
 #zz-tut p{margin:0 0 12px;font-size:.92rem;line-height:1.55;color:var(--muted)}
-#zz-tut .pg{height:4px;margin:0 18px 12px;border-radius:2px;background:var(--line)}#zz-tut .pg i{display:block;height:100%;border-radius:2px;background:linear-gradient(90deg,var(--clay2,var(--lbl)),var(--lbl));transition:width .35s ease}
+#zz-tut .pg{height:4px;margin:0 18px 12px;border-radius:2px;background:var(--line)}#zz-tut .pg i{display:block;height:100%;border-radius:2px;background:linear-gradient(90deg,var(--burgundy2,var(--lbl)),var(--lbl));transition:width .35s ease}
 #zz-tut .tt-b{display:flex;gap:8px;align-items:center;padding:0 18px}#zz-tut .tt-b span{flex:1}
 #zz-tut button{font:600 13px var(--body);padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--text);cursor:pointer}
-#zz-tut button.pri{background:linear-gradient(180deg,var(--clay2,var(--btn)),var(--btn));border-color:transparent;color:#fff;box-shadow:0 6px 16px color-mix(in srgb,var(--btn) 40%,transparent)}
+#zz-tut button.pri{background:linear-gradient(180deg,var(--burgundy2,var(--btn)),var(--btn));border-color:transparent;color:#fff;box-shadow:0 6px 16px color-mix(in srgb,var(--btn) 40%,transparent)}
 #zz-tut button[disabled]{opacity:.4;cursor:default}#zz-tut button[data-a=x]{background:none;border-color:transparent;color:var(--muted)}
 @media(max-height:520px){#zz-tut{width:min(340px,46vw)}#zz-tut b{font-size:19px}#zz-tut p{font-size:.84rem;margin-bottom:8px}#zz-tut .gr{padding-top:6px}}
 @media(prefers-reduced-motion:reduce){#zz-tut-fx .sp:after,#zz-tut-fx .hd svg,#zz-tut-fx .hd i{animation:none}#zz-tut-fx *{transition:none!important}}
 @media print{#zz-tut,#zz-tut-fx{display:none}}
 
 /* keyboard focus ring everywhere + high-contrast support */
-html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.qs-h):focus-visible{outline:2px solid var(--lbl,#8F4F39);outline-offset:2px}
+html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.qs-h):focus-visible{outline:2px solid var(--lbl,#7A1F36);outline-offset:2px}
 @media(prefers-contrast:more){:root{--line:currentColor;--line2:currentColor}html .card,html .qi,html .topic,html .row,html #qf,html #zz-tut{border-color:currentColor}#qscrim{background:rgba(0,0,0,.6)}}
