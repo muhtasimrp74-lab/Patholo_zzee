@@ -384,7 +384,8 @@ body::before{mix-blend-mode:normal!important;opacity:.025!important}
              '<script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script>')
 BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script>'
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
-s = s.replace('</head><body>', BOOT_HEAD + '</head><body>', 1)
+SOFT = '<style id="zz-soft">' + open(os.path.join(HERE, 'softui.css'), encoding='utf8').read() + '</style>'
+s = s.replace('</head><body>', BOOT_HEAD + SOFT + '</head><body>', 1)
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 import re as _re
 s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)
