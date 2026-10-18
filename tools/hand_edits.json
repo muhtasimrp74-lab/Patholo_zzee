@@ -42,20 +42,6 @@
 "post": "<li><strong>Retinopathy:</strong> non-pr"
 },
 {
-"old": " degrade or transport — e.g., carbon, silica.<ul>",
-"new": " degrade or transport — e.g., carbon, silica.</li></ol><ul>",
-"nth": 0,
-"pre": "enous substance the cell <em>cannot</em>",
-"post": "<li><strong>Often reversible if the over"
-},
-{
-"old": "</li></ol>",
-"new": "",
-"nth": 0,
-"pre": "in inherited storage diseases.</li></ul>",
-"post": "<!--fa3--><!--fa2--><!--fa1--></div></ar"
-},
-{
 "old": " is the formation of new blood vessels, which in tumours takes the form of neoangiogenesis, the sprouting of new vessels from pre-existing capillaries. it is essential for tumour growth beyond 1 to <strong>2 mm</strong> in diameter.</p><p>A solid tumour, even if it carries all the genetic aberrations required for malignant transformation, <em>cannot</em> enlarge beyond 1 to 2 mm <em>unless</em> it can induce a blood supply, since this distance is the maximum across which oxygen, nutrients and waste products can diffuse from existing vessels. Early in their development most tumours do <em>not</em> induce angiogenesis and remain small or <em>in situ</em>, possibly for years, until an <em>\"angiogenic switch\"</em> terminates this stage of quiescence.</p><p>Angiogenesis is controlled by a balance between angiogenesis promoters and inhibitors, and in tumours this balance is tilted in favour of the promoters. Angiogenesis is therefore an essential requirement for malignancy.</p><p>Angiogenesis is also critical in healing at sites of injury and in the development of collateral circulation at sites of ischaemia.</p>",
 "new": " is the process of development of new blood vessels from existing ones. It is critical in healing at sites of injury (<em>granulation tissue</em>), in the development of collateral circulation at sites of ischaemia, and in allowing tumours to grow beyond the constraints of their original blood supply. Therapies to promote it (for example to improve blood flow in a heart with coronary atherosclerosis) or inhibit it (to impede tumour growth or pathologic vessel growth in diabetic retinopathy) have been developed.</p>",
 "nth": 0,
