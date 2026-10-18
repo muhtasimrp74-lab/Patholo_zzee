@@ -8170,115 +8170,131 @@ The iron profile will be that of iron deficiency:
 
 ## Write a short note on megaloblastic anemia.
 
-Megaloblastic anaemia is a macrocytic anaemia caused by impaired DNA synthesis, most often from deficiency of vitamin B₁₂ or folate, and characterised by abnormally large erythroid precursors (megaloblasts), ineffective haemopoiesis, macro-ovalocytes and, usually, pancytopenia.
+**Definition**
 
-**Pathogenesis.** Vitamin B₁₂ and folic acid are cofactors required for the synthesis of thymidine (dTMP), one of the four bases of DNA. Deficiency or impaired metabolism produces defective nuclear maturation because of deranged or inadequate DNA synthesis, with a delay or block in cell division, while RNA and protein synthesis, and therefore cytoplasmic maturation and haemoglobinisation, proceed normally. This results in nuclear-cytoplasmic asynchrony. Because DNA synthesis is impaired in all proliferating cells, the changes affect red cell, granulocyte and megakaryocyte precursors and the epithelium of the gastrointestinal tract. Most precursors die by apoptosis in the marrow (ineffective haemopoiesis), producing pancytopenia, together with a mild degree of haemolysis.
+The common theme among the various causes of megaloblastic anaemia is an impairment of DNA synthesis that leads to ineffective haematopoiesis and distinctive morphological changes, including abnormally large erythroid precursors and red cells.
 
-**Causes.** Vitamin B₁₂ deficiency (pernicious anaemia and other causes of malabsorption); folate deficiency (poor diet, alcoholism, malabsorption, increased demand, drugs); and drugs that inhibit DNA synthesis (methotrexate, cytotoxic agents).
+**Aetiology and pathogenesis**
 
-**Blood film and marrow.** Macro-ovalocytes, anisopoikilocytosis, hypersegmented neutrophils (five or more lobes), low reticulocytes; hypercellular marrow with megaloblasts having fine, open chromatin, giant metamyelocytes and bizarre megakaryocytes.
+- **Vitamin B12 and folic acid** are cofactors required for the synthesis of thymidine, one of the four bases found in DNA.
+- A deficiency of these vitamins, or impairment of their metabolism, results in defective nuclear maturation due to deranged or inadequate DNA synthesis, with a delay or block in cell division.
+- The two principal subtypes are **pernicious anaemia** (the major form of vitamin B12 deficiency anaemia) and **folate deficiency anaemia**.
+- Other causes: ileal resection or disease, fish tapeworm infestation, bacterial overgrowth in blind loops, and metabolic inhibitors of DNA synthesis or folate metabolism such as **methotrexate**.
+- The derangement in DNA synthesis causes most precursors to undergo **apoptosis** in the marrow (ineffective haematopoiesis) and leads to pancytopenia. A mild degree of red cell haemolysis of uncertain aetiology adds to the anaemia.
 
-**Clinical features.** Insidious anaemia, mild jaundice (lemon-yellow tint), glossitis, and, in B₁₂ deficiency only, neurological damage (subacute combined degeneration of the spinal cord).
+**Morphology**
 
-**Diagnosis and treatment.** Low serum B₁₂ or folate, raised homocysteine (and methylmalonic acid in B₁₂ deficiency), raised LDH and indirect bilirubin, and an outpouring of reticulocytes about 5 days after specific treatment. B₁₂ deficiency must be excluded before giving folate, since folate may worsen neurological damage.
+- Blood: **macro-ovalocytes** (macrocytic and oval red cells) are highly characteristic; most lack central pallor and appear hyperchromic, but the mean cell haemoglobin concentration is not raised.
+- Marked anisocytosis and poikilocytosis; **low reticulocyte count**; nucleated red cell progenitors occasionally appear when anaemia is severe.
+- Neutrophils are larger than normal with **nuclear hypersegmentation**, five or more lobules instead of the normal three to four.
+- Marrow: markedly hypercellular, with megaloblastic changes at all stages of erythroid development.
+- Promegaloblasts are large, with deeply basophilic cytoplasm, prominent nucleoli and fine nuclear chromatin; the nucleus keeps its fine chromatin instead of developing the clumped pyknotic chromatin of normoblasts, while cytoplasmic maturation proceeds normally (**nuclear-to-cytoplasmic asynchrony**).
+- Granulocytic precursors show **giant metamyelocytes** and band forms; megakaryocytes may be abnormally large with bizarre multilobate nuclei.
 
+**Clinical features and complications**
+
+- Pernicious anaemia is insidious and the anaemia is often quite severe by the time it comes to medical attention.
+- Vitamin B12 deficiency produces central nervous system lesions: demyelination of the dorsal and lateral spinal tracts, giving spastic paraparesis, sensory ataxia and severe paraesthesias of the lower limbs. Folate deficiency does not cause neurological changes.
+- Folate given to a patient with vitamin B12 deficiency corrects the anaemia but does not prevent, and may worsen, the neurological deficit.
 
 ## How can you differentiate megaloblastic anaemia from other macrocytic anaemias?
 
-Megaloblastic anaemia is differentiated from other macrocytic anaemias by the presence of oval macrocytes and hypersegmented neutrophils on the film, megaloblasts with open chromatin in a hypercellular marrow, pancytopenia, and low serum B₁₂ or folate.
-
-| Feature | Megaloblastic anaemia | Non-megaloblastic macrocytic anaemia (liver disease, alcohol, hypothyroidism) |
+| Feature | Megaloblastic anaemia | Aplastic anaemia (slightly macrocytic) |
 |---|---|---|
-| MCV | Often markedly raised (above 110 fL) | Mildly raised (100–110 fL) |
-| Red cell shape | Oval macrocytes (macro-ovalocytes), anisopoikilocytosis | Round macrocytes, target cells |
-| Neutrophils | Hypersegmented (five or more lobes) | Normal |
-| Reticulocytes | Low | Normal or high (haemolysis, bleeding) |
-| White cells and platelets | Often reduced (pancytopenia) | Usually normal |
-| Bone marrow | Hypercellular, megaloblasts (nuclear-cytoplasmic asynchrony), giant metamyelocytes | Normoblastic |
-| Serum LDH, indirect bilirubin | Raised (ineffective erythropoiesis) | Usually normal |
-| Serum B₁₂/folate | Low | Normal |
-| Homocysteine and methylmalonic acid | Raised (homocysteine in both; MMA in B₁₂ deficiency) | Normal |
-
+| Red cells | Macro-ovalocytes; marked anisocytosis and poikilocytosis | Usually slightly macrocytic and normochromic |
+| Neutrophils | Larger than normal, with five or more nuclear lobules (hypersegmentation) | Neutropenia |
+| Reticulocytes | Low | Reticulocytopenia is the rule |
+| Marrow cellularity | Markedly hypercellular | Markedly hypocellular, largely fat cells |
+| Marrow cells | Megaloblasts with nuclear-to-cytoplasmic asynchrony; giant metamyelocytes; large megakaryocytes | Largely devoid of haematopoietic cells; "dry tap" on aspiration |
+| Cause | Impaired DNA synthesis from vitamin B12 or folate deficiency | Chronic primary haematopoietic failure |
 
 ## How can you diagnose a case of megaloblastic anaemia?
 
-The diagnosis is made by recognising the macrocytic anaemia with macro-ovalocytes and hypersegmented neutrophils on the blood film, confirming megaloblastic erythropoiesis in the bone marrow if necessary, and demonstrating low serum vitamin B₁₂ or folate, then determining the cause.
-
-1. **Clinical features:** insidious pallor, lemon-yellow tinge, sore tongue, and neurological symptoms (paraesthesiae, ataxia) in B₁₂ deficiency; history of diet, alcohol, drugs, gastric or ileal surgery.
-2. **Blood count:** moderate to severe macrocytic anaemia with MCV usually above 100 fL (often 110 to 140 fL), low reticulocyte count, and leukopenia and thrombocytopenia in severe cases.
-3. **Blood film:** macro-ovalocytes, anisopoikilocytosis, hypersegmented neutrophils, occasional nucleated red cells.
-4. **Bone marrow:** hypercellular, with megaloblasts at all stages of erythroid development, delayed nuclear maturation, giant metamyelocytes and bands, and large megakaryocytes with multilobate nuclei.
-5. **Biochemistry:** raised LDH and unconjugated bilirubin; serum B₁₂ or serum and red cell folate; raised homocysteine (both deficiencies) and methylmalonic acid (B₁₂ deficiency only).
-6. **Cause:** antibodies to intrinsic factor and parietal cells for pernicious anaemia, and tests of malabsorption; response to specific therapy with a reticulocyte peak at about 5 to 7 days.
-
+1. **Peripheral blood:** macro-ovalocytes, marked anisocytosis and poikilocytosis, low reticulocyte count, and neutrophils with five or more nuclear lobules.
+2. **Bone marrow:** markedly hypercellular, with megaloblasts at all stages, nuclear-to-cytoplasmic asynchrony, giant metamyelocytes and band forms, and large megakaryocytes with bizarre nuclei.
+3. **Find the cause by the vitamin level:**
+   - Vitamin B12 deficiency: low serum vitamin B12; raised serum homocysteine and methylmalonic acid; serum antibodies to intrinsic factor, which are highly specific for pernicious anaemia.
+   - Folate deficiency: decreased serum or red cell folate; homocysteine raised but methylmalonate normal; no neurological changes.
+4. **Response to treatment:** an outpouring of reticulocytes and a rise in haematocrit beginning about 5 days after parenteral vitamin B12 confirms vitamin B12 deficiency.
+5. Vitamin B12 deficiency must be excluded before starting folate, because folate does not prevent the neurological deficit.
 
 ## Causes of folate deficiency.
 
-Folate deficiency is caused by decreased intake, increased requirements, or impaired utilisation, with decreased intake in poor diets and in people with alcohol use disorder being the commonest.
+The three major causes are decreased intake, increased requirements and impaired utilisation.
 
-1. **Decreased intake:** nutritionally inadequate diet in the poor, the very old, and people with chronic alcohol use disorder; overcooked food (boiling, steaming or frying for 5 to 10 minutes destroys up to 95% of the folate); and impaired absorption, such as in tropical sprue, coeliac disease and infiltrative small intestinal disease (lymphoma). Phenytoin and oral contraceptives interfere with absorption.
-2. **Increased requirement:** pregnancy, lactation, infancy, hyperactive haemopoiesis (chronic haemolytic anaemia, for example sickle cell disease and thalassaemia), disseminated cancer, exfoliative skin disease and dialysis.
-3. **Impaired utilisation:** folate antagonists such as methotrexate (which inhibit dihydrofolate reductase), trimethoprim, and inborn errors of folate metabolism; in alcohol use disorder, liver disease with trapping of folate in the liver, urinary loss and disordered metabolism.
-
+1. **Decreased intake**
+   - Nutritionally inadequate diet, most frequently in chronic alcohol use disorder, the indigent and the very old; in alcohol use disorder with cirrhosis, trapping of folate in the liver, excessive urinary loss and disordered folate metabolism are also implicated.
+   - Impaired intestinal absorption: malabsorption syndromes such as sprue, and infiltrative diseases of the small intestine such as lymphoma.
+   - Drugs that interfere with absorption: the anticonvulsant **phenytoin** and oral contraceptives.
+2. **Increased requirements:** pregnancy, infancy, hyperactive haematopoiesis (for example chronic haemolytic anaemia) and disseminated cancer.
+3. **Impaired utilisation:** folic acid antagonists such as **methotrexate** inhibit dihydrofolate reductase and lead to a deficiency of tetrahydrofolic acid. Many chemotherapeutic drugs that damage DNA or inhibit DNA synthesis also cause megaloblastic changes.
 
 ## Why is folate deficiency more common than vitamin B12 deficiency?
 
-Folate deficiency is more common because the body stores of folate are small and last only weeks to months, whereas the stores of vitamin B₁₂ in the liver last for several years, and folate is also more easily destroyed in food and more dependent on diet.
+Folate
 
-The daily requirement of vitamin B₁₂ is only 2 to 3 µg, and a diet that includes animal products contains much more, building hepatic stores that last for years, even when absorption fails. Therefore a patient with pernicious anaemia may take years to become anaemic. The folate stores are modest, and deficiency may arise within weeks to months if intake is inadequate. Folate is also heat-labile (cooking destroys up to 95%) and is mainly found in fresh green vegetables, and the demands of pregnancy, infancy and chronic haemolysis readily exceed the supply. Its absorption is easily impaired by alcohol, drugs and small intestinal disease. Vitamin B₁₂ deficiency in contrast generally results from malabsorption, because dietary intake is rarely deficient except in strict vegans.
+- The body's reserves of folate are relatively modest, and a deficiency can arise within weeks to months if intake is inadequate.
+- Folic acid in food is largely folylpolyglutamates, which are sensitive to heat; boiling, steaming or frying for 5 to 10 minutes destroys up to 95% of the folate content.
+- Requirements rise in pregnancy, infancy, hyperactive haematopoiesis and disseminated cancer, so normal intake becomes inadequate.
+- Alcohol use disorder, malabsorption, and drugs such as phenytoin, oral contraceptives and methotrexate all cause deficiency.
 
+Vitamin B12
+
+- The daily requirement is only 2 to 3 µg.
+- A diet that includes animal products contains significantly more than the minimal daily requirement and builds intrahepatic stores sufficient to last several years.
+- Only strictly vegetarian or macrobiotic diets, which contain little cobalamin, fail to provide enough.
 
 ## Causes of vitamin B12 deficiency.
 
-Vitamin B₁₂ deficiency is nearly always due to impaired absorption, most often from autoimmune gastritis in pernicious anaemia, and rarely from a deficient diet.
-
-1. **Inadequate intake:** strict vegetarian or vegan and macrobiotic diets (plants contain little cobalamin).
-2. **Impaired gastric production of intrinsic factor or release of B₁₂:** pernicious anaemia (autoimmune atrophic gastritis); gastrectomy; achlorhydria with loss of pepsin in older adults (food-bound B₁₂ is not released).
-3. **Pancreatic insufficiency:** failure to release B₁₂ from haptocorrin.
-4. **Ileal disease:** resection, Crohn disease or ileitis, tropical sprue, and Imerslund-Gräsbeck syndrome (cubilin defects).
-5. **Competition for B₁₂:** fish tapeworm (Diphyllobothrium latum) infestation and bacterial overgrowth in blind loops and diverticula.
-6. **Increased demand:** pregnancy, hyperthyroidism, disseminated cancer, chronic infection.
-7. **Inactivation or drugs:** recreational nitrous oxide use, which oxidises and inactivates B₁₂; metformin and proton pump inhibitors cause mild deficiency in some.
-
+1. **Decreased intake:** strictly vegetarian or macrobiotic diets, because plants and vegetables contain little cobalamin.
+2. **Impaired absorption**
+   - **Pernicious anaemia:** autoimmune gastritis impairing the production of intrinsic factor.
+   - **Gastrectomy:** intrinsic factor is lost.
+   - Achlorhydria and loss of pepsin secretion, in some older adults: vitamin B12 is not readily released from food proteins.
+   - Insufficiency of the exocrine pancreas: vitamin B12 cannot be released from haptocorrin-vitamin B12 complexes.
+   - Ileal resection, ileitis or diffuse ileal disease, including diffuse intestinal disease such as lymphoma and systemic sclerosis.
+   - Competitive parasitic uptake: fish tapeworm, acquired by eating raw fish.
+   - Bacterial overgrowth in blind loops and diverticula of the bowel.
+3. **Increased requirement:** pregnancy, hyperthyroidism, disseminated cancer and chronic infection produce a relative deficiency even with normal absorption.
+4. Recreational use of **nitrous oxide** oxidises and inactivates vitamin B12.
 
 ## Cardinal manifestations of vitamin B12 deficiency.
 
-The cardinal manifestations are megaloblastic anaemia, glossitis and other gastrointestinal changes, and neurological damage, notably subacute combined degeneration of the spinal cord.
-
-Haematological. Insidious, often severe, macrocytic anaemia with pancytopenia, caused by ineffective haemopoiesis; pallor with a lemon-yellow tinge from mild jaundice (ineffective erythropoiesis and haemolysis).
-
-Gastrointestinal. A smooth, sore, shiny "beefy red" tongue (atrophic glossitis), anorexia, weight loss and diarrhoea or other epithelial dysfunction due to megaloblastic change in the rapidly dividing mucosal cells. In pernicious anaemia, there is autoimmune gastric atrophy with intestinalisation, and a raised risk of gastric carcinoma.
-
-Neurological. Demyelination of the dorsal and lateral columns of the spinal cord, sometimes followed by axonal loss (subacute combined degeneration), causing symmetrical paraesthesiae, loss of vibration and position sense, sensory ataxia and spastic paraparesis; peripheral neuropathy, optic neuropathy, and psychiatric changes such as irritability and memory loss. These may occur without anaemia and are not corrected (and may be worsened) by folate.
-
-Biochemical. Raised plasma and urine methylmalonic acid and homocysteine.
-
+1. **Megaloblastic anaemia:** moderate to severe, insidious, with leukopenia and hypersegmented granulocytes; the anaemia is often quite severe when the patient presents.
+2. **Neurological lesions:** found in about three-quarters of cases of florid pernicious anaemia, and can occur without overt haematological findings.
+   - Demyelination of the dorsal and lateral spinal tracts, sometimes followed by loss of axons.
+   - Spastic paraparesis, sensory ataxia and severe paraesthesias in the lower limbs.
+   - Less frequently, degenerative changes in the ganglia of the posterior roots and in peripheral nerves.
+3. **Gastrointestinal changes in pernicious anaemia:** atrophic glossitis (a shiny, glazed, "beefy" tongue) and chronic atrophic gastritis, with an increased risk of gastric carcinoma.
+4. Raised plasma and urine **methylmalonic acid** and raised serum homocysteine.
 
 ## What is pernicious anemia?
 
-Pernicious anaemia is a megaloblastic anaemia caused by vitamin B₁₂ deficiency resulting from autoimmune atrophic gastritis, which destroys the parietal cells and impairs the production of intrinsic factor required for B₁₂ absorption.
-
-It is a disease of older adults (median age at diagnosis about 60 years, rare under 30), more prevalent in Scandinavian and Northern European populations but occurring in all groups. A genetic predisposition is suspected, and it is associated with other autoimmune diseases, particularly autoimmune thyroiditis and adrenalitis. The onset is insidious, so that anaemia is often severe at presentation. Hypochlorhydria and loss of intrinsic factor lead to malabsorption of B₁₂ which, once the hepatic stores (adequate for years) are exhausted, produces megaloblastic anaemia, glossitis and neurological damage (subacute combined degeneration of the cord). Antibodies to intrinsic factor are highly specific. Treatment is lifelong parenteral (or high-dose oral) B₁₂, which corrects the anaemia and halts or reverses the neuropathy, but does not reverse the gastric atrophy, so that the risk of gastric carcinoma persists.
-
+**Pernicious anaemia** is a specific form of megaloblastic anaemia caused by an autoimmune gastritis that impairs the production of intrinsic factor, which is required for vitamin B12 uptake from the gut.
 
 ## Main pathogenesis of pernicious anaemia.
 
-Pernicious anaemia results from an autoimmune attack on the gastric mucosa, driven by autoreactive T cells, which causes chronic atrophic gastritis with loss of parietal cells and intrinsic factor and therefore failure of vitamin B₁₂ absorption.
-
-An autoreactive T-cell response appears to initiate gastric mucosal injury and triggers the formation of autoantibodies, which are of diagnostic utility but are not thought to be the primary cause of the gastric pathology. Three types of antibodies are found: type I (in about 75% of patients) blocks the binding of B₁₂ to intrinsic factor; type II blocks the binding of the intrinsic factor–B₁₂ complex to its ileal receptor, cubilin; and type III (in 85% to 90%, but not specific) recognises the gastric proton pump of parietal cells. Histologically there is chronic atrophic gastritis of the fundus with loss of parietal and chief cells, lymphocytic and plasma cell infiltrate, and intestinal metaplasia. When the mass of intrinsic factor–secreting cells falls below a critical threshold and hepatic B₁₂ stores have been exhausted, defective DNA synthesis leads to megaloblastic anaemia. The B₁₂ deficiency reduces the availability of tetrahydrofolate (folate "trapped" as N⁵-methyl-FH₄), so that thymidylate synthesis falls.
-
+- Pernicious anaemia is believed to result from an **autoimmune attack on the gastric mucosa**, producing chronic atrophic gastritis with loss of parietal cells, a prominent infiltrate of lymphocytes and plasma cells, and megaloblastic changes in mucosal cells.
+- Three types of autoantibody are present in many, but not all, patients:
+  - **Type I** (about 75%): blocks the binding of vitamin B12 to intrinsic factor.
+  - **Type II:** blocks binding of the intrinsic factor-vitamin B12 complex to cubilin, preventing intestinal absorption.
+  - **Type III** (85% to 90%): recognises the alpha and beta subunits of the gastric proton pump; it is not specific, being found in as many as 50% of older adults with idiopathic chronic gastritis.
+- Type I and type II antibodies are found in plasma and gastric juice.
+- Autoantibodies are of diagnostic use but are not thought to be the primary cause of the gastric pathology; an **autoreactive T-cell response** initiates the gastric mucosal injury and triggers the formation of autoantibodies.
+- When the mass of intrinsic factor-secreting cells falls below a threshold and stored vitamin B12 is depleted, anaemia develops.
+- It is associated with other autoimmune disorders, particularly autoimmune thyroiditis and adrenalitis.
 
 ## How can you diagnose a case of pernicious anaemia?
 
-The diagnosis of pernicious anaemia is based on a moderate to severe megaloblastic anaemia with hypersegmented neutrophils, a low serum vitamin B₁₂, raised serum homocysteine and methylmalonic acid, and serum antibodies to intrinsic factor, confirmed by a reticulocyte response to parenteral B₁₂.
+The diagnosis is based on:
 
-1. **Blood:** macrocytic anaemia (MCV often above 110 fL), macro-ovalocytes, leukopenia with hypersegmented neutrophils, low reticulocyte count, and thrombocytopenia.
-2. **Bone marrow:** hypercellular marrow with megaloblasts (not essential in a classic case).
-3. **Serum:** low vitamin B₁₂ (below about 200 pg/mL); elevated homocysteine and methylmalonic acid; raised LDH and unconjugated bilirubin.
-4. **Immunology:** antibodies to intrinsic factor (highly specific for pernicious anaemia) and, less specifically, to parietal cells; raised serum gastrin and low pepsinogen I.
-5. **Gastric changes:** achlorhydria (histamine-fast), and endoscopic biopsy showing atrophic gastritis.
-6. **Response to therapy:** an outpouring of reticulocytes and a rise in haematocrit beginning about 5 days after parenteral B₁₂; historically, the Schilling test showed correction of B₁₂ absorption on adding intrinsic factor.
+1. A moderate to severe **megaloblastic anaemia**.
+2. **Leukopenia with hypersegmented granulocytes.**
+3. Low serum vitamin B12.
+4. Raised serum levels of homocysteine and methylmalonic acid.
+5. **Serum antibodies to intrinsic factor**, which are highly specific for pernicious anaemia.
 
+The diagnosis is confirmed by an outpouring of reticulocytes and a rise in haematocrit beginning about 5 days after parenteral administration of vitamin B12.
 
 ## Mention the causes of macrocytosis/macrocytic anemia.
 
