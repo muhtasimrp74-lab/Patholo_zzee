@@ -325,3 +325,12 @@ Questions: hypersplenism criteria, paraproteinaemia, causes of paraproteinaemia,
 - Bence Jones: heat test and other urine methods left out (not in textbook); the eponym is not explained in the textbook.
 - Myeloma vignette (index 45): the textbook does not mention ESR; it states that high M protein makes red cells form rouleaux, which is what the answer uses.
 - Lymphadenopathy causes: the StatPearls list was only partly readable; items beyond it come from the textbook lymphadenitis text.
+
+### Session 10, batch 2 (indices 19 to 41)
+Questions: CML and acute leukaemia vignettes, neutrophilia, eosinophilia, aetiology of leukaemia, AML (FAB), acute leukaemia presentation and laboratory diagnosis, lymphoma vignettes, blast crisis, chronic leukaemia, CML clinical features, leukaemoid reaction types, subleukaemic leukaemia versus aplastic anaemia, polycythaemia rubra vera.
+- Several answers reuse the text already written for the same topic in session 9 (neutrophilia causes, FAB classification, acute leukaemia presentation, acute leukaemia and AML laboratory diagnosis, blast crisis, CML laboratory diagnosis, subleukaemic leukaemia); ALL clinical presentation and ALL blood and marrow picture use the shared acute leukaemia answers, as the textbook gives them together.
+- Neutrophilia: the textbook has no separate definition; the answer defines it from the leukocytosis text and gives the reference range from Table 13.1.
+- Aetiology of leukaemia: radiation, benzene and other environmental agents are not named in the textbook, so they are left out.
+- Chronic leukaemia: the textbook has no separate definition; the answer uses the leukaemia definition and names the two chronic types.
+- Types of leukaemoid reaction: the textbook mentions only the neutrophilic and the lymphoid (viral) pictures.
+- Subleukaemic versus aplastic anaemia: rows kept only where the textbook gives both sides.
