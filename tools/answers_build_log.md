@@ -124,3 +124,26 @@ The six case cards take their visible answer from tools/answers_by_id.json, so t
 - tools/hand_edits.json: three hunks removed (the old angiogenesis answer text no longer exists). 31 remain.
 - Progress file lists 225 questions done. SW version v141. tools/tests/sw_version.json regenerated.
 - Site tests: 98 run. test_site passed after the version bump. Browser annotation tests (test_annot, test_annot_p5, test_annot_p6, test_annot_tb) had 5 failures and 6 errors that do not touch answer text; they were not compared with a clean checkout.
+
+## Session 6, Chapter 4 electrolyte and acid-base answers (outside sources)
+
+The site textbook (ch04.json) has no section on electrolytes or acid-base disorders, so these 17 answers use outside sources.
+
+| Question | Source | URL |
+|---|---|---|
+| Normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻. | Sodium 135 to 145, potassium 3.7 to 5.2 and chloride 98 to 107 mEq/L from MedlinePlus (NIH) blood tests; bicarbonate 21 to 28 mEq/L from StatPearls "Metabolic Acidosis" | https://medlineplus.gov/ency/article/003481.htm ; https://medlineplus.gov/ency/article/003484.htm ; https://medlineplus.gov/ency/article/003485.htm ; https://www.statpearls.com/point-of-care/17095 |
+| What is hypokalaemia? / Causes of hypokalaemia. | StatPearls "Hypokalemia" | https://www.ncbi.nlm.nih.gov/books/NBK482465/ |
+| What is hyperkalaemia? / Causes of hyperkalaemia. | StatPearls "Hyperkalemia" | https://www.ncbi.nlm.nih.gov/books/NBK470284/ |
+| What is hyponatraemia? / Causes of hyponatraemia. | StatPearls "Hyponatremia" | https://www.statpearls.com/ArticleLibrary/viewarticle/23274 |
+| What is hypernatraemia? / Causes of hypernatraemia. | StatPearls "Hypernatremia" | https://www.ncbi.nlm.nih.gov/books/NBK441960/ |
+| What is hypocalcaemia? / Causes of hypocalcaemia. | StatPearls "Hypocalcemia" | https://www.ncbi.nlm.nih.gov/books/NBK430912/ |
+| What is hypercalcaemia? / Causes of hypercalcaemia. | StatPearls "Hypercalcemia" | https://statpearls.com/point-of-care/23158 |
+| What is metabolic acidosis? / Causes of metabolic acidosis. | StatPearls "Metabolic Acidosis" | https://www.statpearls.com/point-of-care/17095 |
+| What is metabolic alkalosis? / Causes of metabolic alkalosis. | StatPearls "Physiology, Metabolic Alkalosis" (definition and urine-chloride classification); StatPearls "Alkalosis" (specific causes by mechanism) | https://www.statpearls.com/point-of-care/17360 ; https://www.statpearls.com/point-of-care/31504 |
+
+### Points left out or needing a decision (electrolytes)
+- The sources differ slightly on normal ranges and cut-offs: StatPearls gives the lower limit of normal potassium as 3.5 mmol/L (used in the hypokalaemia definition) whereas MedlinePlus gives 3.7 to 5.2 mEq/L (used in the normal-levels table); StatPearls gives hyperkalaemia as above 5.0 to 5.5 mEq/L; StatPearls defines metabolic acidosis as serum bicarbonate below 24 mEq/L but gives the normal range as 21 to 28 mEq/L. Each figure is quoted as its source states it.
+- Hypocalcaemia and hypercalcaemia definitions: the StatPearls hypocalcaemia article gives one defining sentence (used); the hypercalcaemia article states only the normal range, so the definition is "above the normal range of approximately 8.9 to 10.1 mg/dL".
+- Severity grades (hypokalaemia mild, moderate, severe; hypercalcaemia mild, moderate, crisis) and the normal calcium ranges for the hypocalcaemia article were left out of the "What is" answers under rule 1 (definition only).
+- Eponyms in these lists (Conn, Liddle, Gitelman, Bartter, Fanconi, Cushing, Addison, DiGeorge, CHARGE, APECED, MELAS) are given as the sources give them; the sources do not explain their meanings, so no meaning was added except Conn syndrome (primary hyperaldosteronism), which the source itself states.
+- The hypocalcaemia source's ionised and corrected calcium values, the hyperkalaemia and hyponatraemia drug lists beyond those quoted, and respiratory alkalosis causes were not used.

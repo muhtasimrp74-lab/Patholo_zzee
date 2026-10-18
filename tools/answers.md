@@ -3223,180 +3223,256 @@ Predisposing factors include poor oral hygiene, poorly controlled diabetes, immu
 
 ## Normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻.
 
-The normal serum values are sodium 135 to 145 mmol/L, potassium 3.5 to 5.0 mmol/L, chloride 98 to 106 mmol/L and bicarbonate 22 to 28 mmol/L.
-
-| Electrolyte | Normal serum level (adult) |
+| Electrolyte | Normal serum level |
 |---|---|
-| Sodium (Na⁺) | 135 to 145 mmol/L (mEq/L) |
-| Potassium (K⁺) | 3.5 to 5.0 mmol/L |
-| Chloride (Cl⁻) | 98 to 106 mmol/L |
-| Bicarbonate (HCO₃⁻) | 22 to 28 mmol/L |
-| Calcium (total) | 8.5 to 10.5 mg/dL (2.1 to 2.6 mmol/L) |
-
-The anion gap, calculated as Na⁺ − (Cl⁻ + HCO₃⁻), is normally about 8 to 12 mmol/L. Reference ranges vary slightly between laboratories.
-
+| Sodium (Na⁺) | 135 to 145 mEq/L |
+| Potassium (K⁺) | 3.7 to 5.2 mEq/L |
+| Chloride (Cl⁻) | 98 to 107 mEq/L |
+| Bicarbonate (HCO₃⁻) | 21 to 28 mEq/L |
 
 ## What is hyponatraemia?
 
-Hyponatraemia is a serum sodium concentration below 135 mmol/L, which usually reflects an excess of water relative to sodium and is a state of hypo-osmolality.
-
-Because sodium is the principal extracellular cation and determinant of plasma osmolality, hyponatraemia causes water to move into cells, producing cellular swelling. The brain is most vulnerable, and cerebral oedema produces headache, nausea, lethargy, confusion, seizures and coma, especially when the fall is acute and severe (below about 120 mmol/L). Chronic hyponatraemia is often better tolerated, and too rapid correction risks osmotic demyelination (central pontine myelinolysis). It is classified as hypovolaemic, euvolaemic or hypervolaemic according to the volume status. Pseudohyponatraemia (hyperlipidaemia, hyperproteinaemia) and hypertonic hyponatraemia (hyperglycaemia) must be distinguished.
-
+**Hyponatraemia** is a serum sodium concentration of less than 135 mEq/L. The cut-off can vary to a small extent in different laboratories.
 
 ## Causes of hyponatraemia.
 
-The causes of hyponatraemia are classified by volume status: loss of sodium and water (diuretics, vomiting, diarrhoea, adrenal insufficiency), water retention with normal volume (SIADH, hypothyroidism, polydipsia), and oedematous states (heart failure, cirrhosis, nephrotic syndrome, renal failure).
+**Hypovolaemic hyponatraemia** (total body water decreases less than total body sodium)
 
-| Volume status | Causes |
-|---|---|
-| **Hypovolemic** (loss of Na⁺ greater than water) | Renal: thiazide and loop diuretics, adrenal insufficiency (Addison disease), salt-losing nephropathy, osmotic diuresis. Extrarenal: vomiting, diarrhoea, sweating, burns, third spacing |
-| **Euvolemic** | Syndrome of inappropriate ADH secretion (SIADH: small cell carcinoma of lung, CNS disease, drugs, pulmonary disease), hypothyroidism, glucocorticoid deficiency, primary polydipsia, beer potomania, postoperative |
-| **Hypervolemic** (water retention greater than sodium) | Congestive heart failure, cirrhosis, nephrotic syndrome, acute or chronic renal failure |
-| **Spurious or redistributive** | Pseudohyponatraemia (severe hyperlipidaemia, hyperproteinaemia), hyperglycaemia, mannitol |
+- Gastrointestinal fluid loss (diarrhoea or vomiting)
+- Third spacing of fluids (pancreatitis, hypoalbuminaemia, small bowel obstruction)
+- Diuretics
+- Osmotic diuresis (glucose, mannitol)
+- Salt-wasting nephropathies
+- Cerebral salt-wasting syndrome (urinary salt wasting, possibly caused by increased brain natriuretic peptide)
+- Mineralocorticoid deficiency
 
+**Hypervolaemic hyponatraemia** (total body water increases more than total body sodium)
+
+- Renal causes: acute renal failure, chronic renal failure and nephrotic syndrome
+- Extrarenal causes: congestive heart failure and cirrhosis
+- Iatrogenic causes
+
+**Euvolaemic hyponatraemia** (total body water increases with stable total body sodium)
+
+- Syndrome of inappropriate antidiuretic hormone secretion (SIADH)
+- Addison disease
+- Hypothyroidism
+- High fluid intake, as in primary polydipsia or potomania
+- Medical testing related to excessive fluids, such as colonoscopy or cardiac catheterisation
+- Iatrogenic causes
+- Drugs: vasopressin analogues such as desmopressin and oxytocin; medications that stimulate vasopressin release or potentiate its effects; medications that impair urinary dilution, such as thiazide diuretics; medications such as carbamazepine or its analogues; illicit drugs such as methylenedioxymethamphetamine (MDMA or ecstasy)
 
 ## What is hypernatraemia?
 
-Hypernatraemia is a serum sodium concentration above 145 mmol/L, which indicates a deficit of water relative to sodium and always represents a hyperosmolar state.
-
-The raised osmolality draws water out of cells, causing cellular shrinkage; in the brain this may tear bridging veins and cause intracranial haemorrhage. The clinical features are thirst, irritability, weakness, restlessness, muscle twitching, confusion, seizures and coma. The condition occurs in patients who cannot respond to thirst (infants, elderly, unconscious), or who have excessive water loss. Correction should be gradual to avoid cerebral oedema.
-
+**Hypernatraemia** is a serum sodium concentration of greater than 145 mEq/L.
 
 ## Causes of hypernatraemia.
 
-The causes of hypernatraemia are pure water loss (diabetes insipidus, fever, sweating, inadequate intake), loss of hypotonic fluids (vomiting, diarrhoea, osmotic diuresis, burns), and, less commonly, sodium excess (hypertonic saline, sodium bicarbonate, mineralocorticoid excess).
+The basic mechanisms are water deficit and excess solute. Total body water loss relative to solute loss is the most common reason.
 
-| Mechanism | Causes |
-|---|---|
-| **Water loss without sodium** | Central or nephrogenic diabetes insipidus; insensible loss (fever, burns, sweating, hyperventilation); inadequate water intake (elderly, infants, unconscious patients, no access to water) |
-| **Hypotonic fluid loss** | Osmotic diuresis (hyperglycaemia, mannitol, urea), diarrhoea and vomiting, loop diuretics |
-| **Sodium gain** | Administration of hypertonic saline or sodium bicarbonate, salt poisoning, primary hyperaldosteronism and Cushing syndrome (mild) |
+**Combined water and solute loss, extrarenal**
 
+- Gastroenteritis, vomiting, prolonged nasogastric drainage and burns
+- Excessive sweating from exercise, fever or high heat exposure
+
+**Renal losses**
+
+- Intrinsic renal disease, post-obstructive diuresis, and osmotic or loop diuretics
+- Osmotic diuresis from hyperglycaemia or mannitol
+
+**Free water loss**
+
+- Central diabetes insipidus, from inadequate ADH production: idiopathic, head trauma, cranial neoplasm and pituitary infiltrative diseases such as sarcoidosis and histiocytosis
+- Nephrogenic diabetes insipidus, from tubular unresponsiveness to ADH: X-linked inherited pattern and medications including lithium, foscarnet and demeclocycline
+- Increased insensible loss
+
+**Inadequate fluid intake**
+
+- Breastfed babies, child or elder abuse, and patients with an impaired thirst response
+
+**Excess sodium**
+
+- Iatrogenic causes, improper formula mixing, excess sodium bicarbonate ingestion, salt tablet poisoning, hyperaldosteronism and seawater drowning
 
 ## What is hypokalaemia?
 
-Hypokalaemia is a serum potassium concentration below 3.5 mmol/L.
-
-It is a common electrolyte disturbance, and its clinical importance is in cardiac and neuromuscular effects. Features are muscle weakness and cramps, paralysis in severe cases (below 2.5 mmol/L), constipation and paralytic ileus, polyuria from nephrogenic diabetes insipidus, rhabdomyolysis, metabolic alkalosis, and cardiac arrhythmias. The ECG shows flattened T waves, ST depression, prominent U waves and prolonged QT interval; arrhythmias are particularly dangerous in patients taking digoxin. Hypokalaemia is often associated with hypomagnesaemia.
-
+**Hypokalaemia** is a serum potassium level below the acceptable lower limit of normal, which is 3.5 mmol/L.
 
 ## Causes of hypokalaemia.
 
-The causes of hypokalaemia are inadequate intake, excessive loss through the gut or kidneys (vomiting, diarrhoea, diuretics, hyperaldosteronism), and shift of potassium into cells (insulin, β-agonists, alkalosis).
+**Decreased potassium intake**
 
-| Mechanism | Causes |
-|---|---|
-| **Decreased intake** | Starvation, anorexia, alcoholism, potassium-poor intravenous fluids |
-| **Gastrointestinal loss** | Vomiting and nasogastric suction (also causes renal loss through alkalosis), diarrhoea, laxative abuse, villous adenoma |
-| **Renal loss** | Diuretics (loop and thiazide), primary hyperaldosteronism (Conn syndrome), Cushing syndrome, renal tubular acidosis, Bartter and Gitelman syndromes, hypomagnesaemia, amphotericin B, osmotic diuresis |
-| **Transcellular shift** | Insulin, β₂-agonists, metabolic alkalosis, thyrotoxic or familial periodic paralysis, rapid cell growth (treatment of megaloblastic anaemia) |
-| **Other** | Excess sweating; dialysis |
+- Poor nutrition or restrictive diets
+- Eating disorders
 
+**Increased intracellular uptake**
+
+- Insulin injection
+- Inhaled β-adrenergic agents
+
+**Increased potassium losses**
+
+- Heavy sweating
+- Loop diuretic use
+- Diarrhoea
+- Vomiting
+- Other gastrointestinal losses: tumours, infections, intestinal obstruction, bowel diversion, cancer therapy, chronic laxative abuse, clay (bentonite) ingestion, malabsorption and sodium polystyrene sulfonate
+
+**Renal disorders**
+
+- Chloride-responsive metabolic alkalosis (chloride loss from vomiting or nasogastric suction)
+- Chloride-resistant metabolic alkalosis from mineralocorticoid excess: Conn syndrome (primary hyperaldosteronism), congenital adrenal hyperplasia (11-β or 17-α-hydroxylase deficiency), renin-secreting tumours, ectopic ACTH syndrome, Cushing disease or syndrome, hereditary glucocorticoid-responsive aldosteronism, hypertensive emergency and malignant hypertension, renovascular hypertension (renal artery stenosis) and vasculitis
+- Genetic conditions: Liddle syndrome, syndrome of apparent mineralocorticoid excess, Gitelman syndrome and Bartter syndrome
+- Other renal conditions: Fanconi syndrome, renal tubular acidosis (especially type 1), hypomagnesaemia, uncontrolled diabetes mellitus and ureterosigmoidostomy
 
 ## What is hyperkalaemia?
 
-Hyperkalaemia is a serum potassium concentration above 5.0 to 5.5 mmol/L, and is dangerous because it can cause fatal cardiac arrhythmias.
-
-Clinical features include muscle weakness and paralysis, paraesthesia, nausea, and, most importantly, cardiac conduction abnormalities. The ECG progresses from tall peaked T waves, to prolonged PR interval and loss of P waves, widened QRS complex, sine-wave pattern, ventricular fibrillation and asystole. It is a medical emergency when the potassium is above about 6.5 mmol/L or ECG changes are present. Treatment includes intravenous calcium gluconate to stabilise the myocardium, insulin with glucose, β-agonists, sodium bicarbonate, potassium-binding resins, loop diuretics and dialysis. Pseudohyperkalaemia from haemolysis of the specimen should be excluded.
-
+**Hyperkalaemia** is a serum or plasma potassium level exceeding the upper limit of normal, typically greater than 5.0 to 5.5 mEq/L.
 
 ## Causes of hyperkalaemia.
 
-The causes of hyperkalaemia are reduced renal excretion (renal failure, adrenal insufficiency, potassium-sparing drugs), shift of potassium out of cells (acidosis, tissue breakdown), and excessive intake; pseudohyperkalaemia from haemolysis must be excluded.
+**Pseudohyperkalaemia**
 
-| Mechanism | Causes |
-|---|---|
-| **Decreased renal excretion** | Acute and chronic renal failure (most common), adrenal insufficiency (Addison disease), hypoaldosteronism, potassium-sparing diuretics (spironolactone), ACE inhibitors, angiotensin receptor blockers, NSAIDs, heparin, trimethoprim |
-| **Transcellular shift** | Metabolic acidosis, insulin deficiency, β-blockers, digoxin toxicity, hyperosmolality, periodic paralysis |
-| **Tissue breakdown (release)** | Rhabdomyolysis, crush injury, burns, tumour lysis syndrome, massive haemolysis, gastrointestinal haemorrhage |
-| **Increased intake** | Potassium supplements, rapid transfusion of stored blood, potassium-containing salt substitutes |
-| **Artefact** | Pseudohyperkalaemia from haemolysis in vitro, thrombocytosis, leukocytosis |
+- Haemolysis during specimen collection, which is more likely with a syringe than a vacuum device, prolonged tourniquet use and excessive fist-pumping
+- Leukocytosis or thrombocytosis, which can falsely raise the measured potassium
 
+**Increased potassium intake**
+
+- Excessive dietary potassium, which matters mainly when kidney function is impaired
+- Intravenous sources: potassium-containing fluids, total parenteral nutrition, potassium-rich medications and massive blood transfusions
+
+**Intracellular potassium shifts**
+
+- Cellular injury from rhabdomyolysis (including crush injury, excessive exercise and haemolytic processes)
+- Metabolic acidosis, including acidosis from low effective arterial blood volume due to sepsis or dehydration
+- Insulin deficiency, as in diabetic ketoacidosis
+- Succinylcholine, particularly in people with upregulated receptors from subacute neuromuscular disease
+- Tumour lysis syndrome
+- Hyperkalaemic periodic paralysis
+
+**Impaired potassium excretion**
+
+- Acute and chronic kidney disease
+- Acute volume depletion from dehydration or haemorrhage
+- Reduced effective circulating volume from congestive heart failure or cirrhosis
+- Tubular dysfunction, including aldosterone deficiency or insensitivity
 
 ## What is hypocalcaemia?
 
-Hypocalcaemia is a serum total calcium concentration below about 8.5 mg/dL (2.1 mmol/L), corrected for the serum albumin, or a low ionised calcium; it causes neuromuscular irritability and tetany.
-
-Features include perioral and fingertip paraesthesias, muscle cramps, carpopedal spasm and tetany, laryngospasm, seizures, positive Chvostek sign (facial twitching on tapping the facial nerve) and Trousseau sign (carpal spasm with a blood pressure cuff), prolonged QT interval and arrhythmias, and in chronic cases cataracts, dry skin and basal ganglia calcification. Because about half of calcium is bound to albumin, a low albumin lowers total calcium without lowering the ionised fraction (pseudohypocalcaemia).
-
+**Hypocalcaemia** is an electrolyte disorder characterised by abnormally low serum calcium levels.
 
 ## Causes of hypocalcaemia.
 
-The causes of hypocalcaemia are hypoparathyroidism, vitamin D deficiency, chronic renal failure, hypomagnesaemia, acute pancreatitis and massive transfusion; hypoalbuminaemia causes a spurious fall.
+**Parathyroid hormone deficiency**
 
-| Cause | Mechanism |
-|---|---|
-| **Hypoparathyroidism** | Post-thyroidectomy or parathyroidectomy, autoimmune, DiGeorge syndrome, radiation; pseudohypoparathyroidism (end-organ resistance) |
-| **Vitamin D deficiency or resistance** | Malnutrition, malabsorption, lack of sunlight, rickets and osteomalacia, liver disease, anticonvulsants |
-| **Chronic renal failure** | Impaired activation of vitamin D, phosphate retention |
-| **Hypomagnesaemia** | Impaired PTH secretion and action |
-| **Acute pancreatitis** | Saponification of calcium in fat necrosis |
-| **Others** | Massive blood transfusion (citrate binding), hyperphosphataemia, rhabdomyolysis, bisphosphonates, osteoblastic metastases, sepsis, "hungry bone" syndrome |
-| **Spurious** | Hypoalbuminaemia (low total but normal ionised calcium) |
+- Destruction of the parathyroid glands, postsurgical or autoimmune; postsurgical hypoparathyroidism accounts for about 75% of hypoparathyroidism cases
+- Abnormal regulation of PTH production and secretion
+- Abnormal parathyroid development, including DiGeorge syndrome, CHARGE syndrome, gracile bone dysplasia, MELAS and medium-chain acyl-CoA dehydrogenase deficiency
+- Hungry bone syndrome after parathyroid surgery in severe hyperparathyroidism
+- Autoimmune hypoparathyroidism, including APECED
+- Rare gland destruction from granulomatous disease, haemochromatosis, Wilson disease, amyloidosis, aluminium-containing phosphate binders, irradiation, HIV infiltration, nivolumab and L-asparaginase
 
+**High parathyroid hormone levels**
+
+- Vitamin D deficiency (intake or malabsorption, limited sun exposure, liver or kidney disease, impaired activation)
+- Chronic kidney disease
+- Pseudohypoparathyroidism
+
+**Pharmacological causes**
+
+- Bisphosphonates and denosumab
+- Cinacalcet
+- Cisplatin, through hypomagnesaemia
+- Foscarnet
+
+**Other causes**
+
+- Pseudohypocalcaemia from hypoalbuminaemia
+- Acid-base disturbances
+- Acute pancreatitis
+- Severe sepsis, critical illness and trauma, including COVID-19
+- Massive blood transfusion, through citrate binding
+- Hypomagnesaemia and hypermagnesaemia
+- Acute hyperphosphataemia
+- Pregnancy
+- Neonatal hypocalcaemia
+- Osteoblastic metastasis
 
 ## What is hypercalcaemia?
 
-Hypercalcaemia is a serum total calcium concentration above about 10.5 mg/dL (2.6 mmol/L), corrected for albumin, and its commonest causes are primary hyperparathyroidism and malignancy.
-
-Clinical features are summarised as "stones, bones, groans and psychic moans": renal stones, polyuria with nephrogenic diabetes insipidus and dehydration, nephrocalcinosis, bone pain and fractures, abdominal pain, constipation, nausea, peptic ulcer and pancreatitis, fatigue, depression, confusion and coma, shortened QT interval, and arrhythmias. Metastatic calcification of soft tissues may occur. Severe hypercalcaemia is a medical emergency.
-
+**Hypercalcaemia** is a serum calcium level above the normal range, which is approximately 8.9 to 10.1 mg/dL but varies with the laboratory.
 
 ## Causes of hypercalcaemia.
 
-The causes of hypercalcaemia are primary hyperparathyroidism and malignancy (bone metastases and tumours that produce PTH-related protein), which account for most cases, followed by vitamin D excess, granulomatous disease, drugs and immobilisation.
+**Parathyroid hormone-mediated**
 
-| Group | Causes |
-|---|---|
-| **PTH-mediated** | Primary hyperparathyroidism (adenoma, hyperplasia, carcinoma); familial hypocalciuric hypercalcaemia; lithium |
-| **Malignancy** | Osteolytic bone metastases (breast, lung), myeloma, humoral hypercalcaemia of malignancy (PTH-related protein from squamous cell carcinomas of lung and others), lymphoma (1,25-dihydroxyvitamin D) |
-| **Vitamin D-mediated** | Vitamin D intoxication, granulomatous diseases (sarcoidosis, tuberculosis) |
-| **Increased bone turnover** | Hyperthyroidism, immobilisation, Paget disease, vitamin A excess |
-| **Drugs and others** | Thiazide diuretics, milk-alkali syndrome, calcium supplements, adrenal insufficiency, acute renal failure (recovery of rhabdomyolysis) |
+- Primary hyperparathyroidism, typically from a parathyroid adenoma
+- Tertiary hyperparathyroidism, from parathyroid hyperplasia due to chronic overstimulation, most often in renal failure or after renal transplant
+- Familial hypocalciuric hypercalcaemia, from a calcium-sensing receptor loss-of-function mutation
+- Medications: lithium, teriparatide and abaloparatide
 
+**Non-parathyroid hormone-mediated**
+
+- Medication-induced: thiazide diuretics, excessive calcium carbonate (milk-alkali syndrome) and prolonged retinoic acid use
+- Hypercalcaemia of malignancy: tumour-produced parathyroid hormone-related protein, bone metastases, haematological malignancies (Hodgkin and non-Hodgkin lymphoma) and granulomatous diseases (sarcoidosis, tuberculosis)
+- Vitamin D toxicity: excess vitamin D or calcitriol supplementation, or excess vitamin D-fortified dairy
+- Endocrinopathies: hyperthyroidism, phaeochromocytoma and adrenal insufficiency
+- Hypercalcaemia of immobilisation
 
 ## What is metabolic acidosis?
 
-Metabolic acidosis is an acid-base disorder in which a primary fall in plasma bicarbonate lowers the blood pH below 7.35, caused by gain of acid or loss of bicarbonate, and compensated by hyperventilation.
-
-The arterial blood gas shows a low pH, a low HCO₃⁻ (below 22 mmol/L) and a compensatory fall in PCO₂. It is classified by the anion gap into high anion gap (accumulation of unmeasured acids) and normal anion gap (hyperchloraemic, from bicarbonate loss) types. The respiratory compensation produces deep, rapid, sighing breathing (Kussmaul respiration). Other features are hypotension, peripheral vasodilation, hyperkalaemia (potassium shifts out of cells), cardiac arrhythmias, reduced cardiac contractility, confusion, stupor and coma.
-
+**Metabolic acidosis** is characterised by an increase in the hydrogen ion concentration in the systemic circulation, resulting in a serum bicarbonate of less than 24 mEq/L.
 
 ## Causes of metabolic acidosis.
 
-The causes of metabolic acidosis are divided into high anion gap (lactic acidosis, diabetic ketoacidosis, renal failure, poisoning by salicylates, methanol and ethylene glycol) and normal anion gap (diarrhoea, renal tubular acidosis, acetazolamide, ureteral diversion).
+**Anion gap metabolic acidosis** (remembered by the mnemonic CAT MUDPILES)
 
-| Type | Causes |
-|---|---|
-| **High anion gap** (acid gain) | Lactic acidosis (shock, hypoxia, sepsis, metformin), diabetic ketoacidosis, alcoholic and starvation ketosis, renal failure (uraemia: retention of phosphates and sulfates), toxins (methanol, ethylene glycol, salicylates, paraldehyde, isoniazid and iron), rhabdomyolysis (mnemonic MUDPILES) |
-| **Normal anion gap** (hyperchloraemic; bicarbonate loss) | Diarrhoea and intestinal fistulae, renal tubular acidosis, carbonic anhydrase inhibitors (acetazolamide), ureterosigmoidostomy, early renal failure, hypoaldosteronism, excess saline infusion |
+- Cyanide and carbon monoxide poisoning
+- Arsenic
+- Toluene
+- Methanol and metformin
+- Uraemia
+- Diabetic ketoacidosis
+- Paraldehyde
+- Iron and isoniazid
+- Lactate (a consequence of a condition rather than a separate cause)
+- Ethylene glycol
+- Salicylates
 
+**Non-gap metabolic acidosis**
+
+- Main causes: diarrhoea and renal tubular acidosis
+- Rarer causes: Addison disease, ureterosigmoid or pancreatic fistulas, acetazolamide use, and hyperalimentation through the start of total parenteral nutrition
 
 ## What is metabolic alkalosis?
 
-Metabolic alkalosis is an acid–base disorder in which a primary rise in plasma bicarbonate (HCO₃⁻ above 28 mmol/L) raises the blood pH above 7.45, caused by loss of acid or gain of alkali, and compensated by hypoventilation.
-
-**Compensation.** Hypoventilation raises PCO₂; this is limited by hypoxia, so compensation is incomplete. The kidney normally excretes excess bicarbonate, so metabolic alkalosis persists only when renal bicarbonate excretion is impaired, as in volume depletion, chloride depletion and potassium depletion.
-
-**Classification and causes**
-
-- Chloride-responsive (urine chloride low): vomiting, nasogastric suction, gastric outlet obstruction, diuretic therapy.
-- Chloride-resistant (urine chloride high): primary hyperaldosteronism, Cushing syndrome, severe potassium depletion.
-- Alkali gain: excess bicarbonate or antacid intake.
-
-The arterial blood gas shows a high pH, high HCO₃⁻ (above 28 mmol/L) and compensatory rise in PCO₂. Alkalosis reduces the ionised calcium by increasing its binding to albumin, causing tetany, paraesthesias, muscle cramps and seizures; it also causes hypokalaemia (potassium shifts into cells and is lost in urine), hypoventilation, confusion, arrhythmias and, if severe, coma. It is maintained by volume depletion, chloride depletion and hypokalaemia, and is classified as chloride-responsive (urine chloride low) or chloride-resistant (urine chloride high).
-
+**Metabolic alkalosis** is a state in which the pH is elevated to greater than 7.45 because of a metabolic process, with an increase in serum bicarbonate.
 
 ## Causes of metabolic alkalosis.
 
-The causes of metabolic alkalosis are loss of gastric acid (vomiting, nasogastric suction), diuretic therapy, mineralocorticoid excess, severe potassium depletion, and ingestion or administration of alkali.
+**Chloride-responsive (urine chloride less than 10 mEq/L)**
 
-| Type | Causes |
-|---|---|
-| **Chloride-responsive** (urine chloride below 20 mmol/L) | Vomiting and nasogastric suction (loss of HCl), pyloric stenosis, diuretics (thiazide and loop; contraction alkalosis), post-hypercapnic state, villous adenoma, cystic fibrosis |
-| **Chloride-resistant** (urine chloride above 20 mmol/L) | Primary hyperaldosteronism (Conn syndrome), Cushing syndrome, Bartter and Gitelman syndromes, severe hypokalaemia, licorice ingestion, renal artery stenosis |
-| **Alkali administration** | Sodium bicarbonate, antacids (milk-alkali syndrome), citrate in massive blood transfusion, acetate |
+- Loss of hydrogen through the gastrointestinal tract
+- Congenital chloride diarrhoea syndrome
+- Contraction alkalosis
+- Diuretic therapy
+- Post-hypercapnia syndrome
+- Cystic fibrosis
+- Exogenous alkalotic agent use
 
+**Chloride-resistant (urine chloride greater than 20 mEq/L)**
+
+- Retention of bicarbonate
+- Shift of hydrogen into intracellular spaces
+- Hyperaldosteronism
+- Bartter syndrome
+- Gitelman syndrome
+
+**Specific causes by mechanism**
+
+- Excess loss of hydrogen ions: gastric lavage; excessive vomiting of gastric contents, including vomiting secondary to pyloric stenosis; chronic diarrhoea; congenital chloridorrhoea
+- Increased bicarbonate in the extracellular compartment: excess enteral bicarbonate or alkali intake (milk-alkali syndrome); increased parenteral citrate, acetate or lactate; large-volume transfusion of sodium citrate-anticoagulated fresh frozen plasma
+- Increased renal reabsorption of bicarbonate: primary hyperaldosteronism, renin-secreting tumours, renal artery stenosis, exogenous mineralocorticoids, congenital adrenal hyperplasia, Liddle syndrome, Cushing syndrome and Cushing disease
 
 ## Define gene.
 
