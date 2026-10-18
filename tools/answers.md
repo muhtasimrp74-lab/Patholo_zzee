@@ -12852,50 +12852,70 @@ The causes are classified by the **anion gap** (sodium minus the sum of chloride
 
 ## Write the clinical importance of serum calcium.
 
-Total serum calcium is normally 2.2–2.6 mmol/L (8.5–10.5 mg/dL); about 50% is ionised (physiologically active), 40% is bound to albumin and 10% is complexed with anions. It is regulated by parathyroid hormone, vitamin D and calcitonin.
+**Normal total serum calcium** is 2.12 to 2.62 mmol/L (8.5 to 10.5 mg/dL); **ionised calcium** is 1.16 to 1.31 mmol/L. About 40% is protein-bound (mainly to albumin and globulin), about 9% is chelated, and about 51% is free (ionised) and physiologically active. Over 99% of body calcium is in bone as hydroxyapatite. Total calcium is corrected for albumin by adding about 0.8 mg/dL for each 1 g/dL that albumin falls below 4 g/dL.
 
-**Clinical importance**
+**Hypercalcaemia**
 
-- Calcium is essential for bone and teeth mineralisation, neuromuscular excitability, muscle contraction (including cardiac), blood coagulation (factor IV), enzyme activation and hormone secretion.
-- **Hypercalcaemia:** primary hyperparathyroidism, malignancy (bone metastases, PTHrP), vitamin D excess, sarcoidosis, thiazides. Features: polyuria, constipation, nausea, renal stones, bone pain, confusion and shortened QT interval.
-- **Hypocalcaemia:** hypoparathyroidism, vitamin D deficiency, chronic renal failure, acute pancreatitis, hypomagnesaemia. Features: tetany, carpopedal spasm, paraesthesia, positive Chvostek and Trousseau signs, seizures and prolonged QT interval.
-- Serum calcium must be interpreted with serum albumin (corrected calcium), phosphate, alkaline phosphatase and PTH.
+- **Causes**: PTH-mediated (hyperparathyroidism); non-PTH-mediated: **malignancy** (the most common cause of rapidly progressive hypercalcaemia), granulomatous disorders, drugs, endocrinopathies and genetic causes
+- **Clinical features**: mild (below 11.5 mg/dL) is usually asymptomatic; above 11.5 mg/dL there is nausea, vomiting, confusion, headache, abdominal or flank pain, constipation, depression, weakness, myalgia, arthralgia, polyuria, polydipsia and nocturia; coma in severe cases
+- **Signs**: hypertension, bradycardia, hyperreflexia, tongue fasciculations
+- **ECG**: shortened QT interval, flattened or inverted T waves, J waves, prolonged PR and QRS intervals
 
+**Hypocalcaemia**
+
+- **Causes**: **hypoparathyroidism** (most often after thyroid, parathyroid or neck surgery; about 75% of cases), hungry bone syndrome after parathyroidectomy, **vitamin D deficiency**, chronic kidney disease, pseudohypoparathyroidism, hypomagnesaemia, acute pancreatitis, sepsis, massive blood transfusion (citrate binds calcium), drugs (bisphosphonates, denosumab, cinacalcet, cisplatin, foscarnet)
+- **Clinical features**: **tetany**, paraesthesia (perioral and distal), seizures, laryngospasm, QT prolongation with risk of arrhythmia, heart failure
+- **Signs**: **Chvostek sign** (facial twitch on tapping the facial nerve) and **Trousseau sign** (carpopedal spasm on inflating a cuff)
+- **Chronic**: dry skin, coarse hair, brittle nails, poor dentition, cataracts
+
+**Approach**
+
+- Hypocalcaemia: check albumin first to exclude factitious hypocalcaemia, then PTH, magnesium, vitamin D, phosphate, renal and liver function, and an ECG
+- Hypercalcaemia: confirm with albumin and ionised calcium, then PTH, renal function, TSH and electrolytes; if malignancy is suspected, look for lung, breast or kidney masses and for myeloma, lymphoma or leukaemia
 
 ## What are the indications of enzymes of clinical importance?
 
-Estimation of serum enzymes is used in clinical practice for:
+Serum enzymes are measured:
 
-1. **Diagnosis of disease:** e.g., ALT and AST in liver disease, CK-MB and troponin in myocardial infarction, amylase and lipase in acute pancreatitis, alkaline phosphatase in cholestasis and bone disease, acid phosphatase and PSA in prostate carcinoma.
-2. **Assessing the extent and prognosis** of tissue damage (e.g., peak level of CK-MB in infarct size).
-3. **Differential diagnosis** using isoenzyme patterns (e.g., LDH-1 in myocardial infarction, CK-MB for heart and CK-BB for brain).
-4. **Monitoring the course of disease and response to treatment**, and detecting recurrence (e.g., PSA after prostatectomy).
-5. **Screening of disease and assessment of drug toxicity** (e.g., raised transaminases with hepatotoxic drugs).
-6. **Timing of an event:** serial measurements show the time course of rise and fall after infarction.
+1. To **detect tissue damage**, because intracellular enzymes leak into the blood from damaged cells
+2. To **localise the site** of damage, showing which parts of the body are involved
+3. To **quantify the extent** of damage
+4. For **diagnosis, differential diagnosis, prognosis and early detection**, for example alanine aminotransferase (ALT) rises in viral hepatitis before jaundice appears
+5. To follow the **course of liver disease** and to check the hepatic origin of a raised alkaline phosphatase
+6. To evaluate **pancreatic and salivary gland disease**
+7. To monitor **organophosphate poisoning** and **hepatic synthetic capacity** (cholinesterase)
 
+Results are interpreted together with the history and clinical findings.
 
 ## Give the clinical importance of ALT.
 
-Alanine aminotransferase (ALT, formerly SGPT) catalyses the transfer of an amino group from alanine to α-ketoglutarate, forming pyruvate and glutamate. It is present in highest concentration in the **liver** (cytoplasm of hepatocytes), so it is the more specific enzyme for liver disease. Normal serum level is about 7–56 U/L.
+**Alanine aminotransferase** (ALT) is largely cytosolic and more liver-specific than aspartate aminotransferase (AST), so it is more specific for **hepatocellular injury** in most settings. Reference range is typically 4 to 36 IU/L; each laboratory sets its own.
 
-**Clinical importance**
+| Degree of rise above upper limit of normal | Causes |
+|---|---|
+| Borderline (less than 2 times) | Non-specific |
+| Mild (2 to 5 times) | MASLD and MASH (metabolic dysfunction-associated steatotic liver disease and steatohepatitis), chronic alcohol use, chronic hepatitis B or C, drugs (statins, NSAIDs, antiepileptics), early haemochromatosis, extrahepatic causes (muscle disorders, thyroid disease) |
+| Moderate (5 to 15 times) | Acute viral hepatitis, autoimmune hepatitis, drug-induced liver injury |
+| Severe (more than 15 times) | Acute hepatitis A, B or E, severe drug-induced injury, toxins (**Amanita phalloides**), ischaemic hepatitis |
+| Massive (more than 10,000 IU/L) | Paracetamol toxicity, profound ischaemic injury; rarely herpes simplex hepatitis |
 
-- **Markedly raised (above 10 times normal):** acute viral hepatitis (ALT usually exceeds AST), toxic or drug-induced hepatitis (paracetamol), and ischaemic hepatitis.
-- **Moderately raised:** chronic hepatitis, non-alcoholic fatty liver disease, cirrhosis and cholestasis.
-- AST/ALT ratio below 1 favours viral hepatitis and fatty liver; a ratio above 2 suggests alcoholic liver disease.
-- Used to monitor the course of hepatitis and the hepatotoxicity of drugs.
-
+- **ALT-predominant pattern**: viral hepatitis, steatohepatitis, acute Budd-Chiari syndrome, ischaemic hepatitis, autoimmune conditions, haemochromatosis, drugs and toxins, alpha-1 antitrypsin deficiency, Wilson disease, coeliac disease
+- The **pattern and trend** matter more than a single value
+- Mild elevations are often transient: up to 30% of asymptomatic elevations resolve within 3 weeks, so repeat testing is advised before an extensive work-up
+- The size of the rise does not reliably track histological severity or prognosis; in acute liver failure the aminotransferases can improve while synthetic function worsens
+- A **normal ALT does not exclude** MASLD or fibrosis
 
 ## Give the clinical importance of AST.
 
-Aspartate aminotransferase (AST, formerly SGOT) catalyses the transfer of an amino group from aspartate to α-ketoglutarate, forming oxaloacetate and glutamate. It is found in the cytoplasm and mitochondria of the **heart, liver, skeletal muscle, kidney and red cells**, so it is less specific for the liver than ALT. Normal serum level is about 10–40 U/L.
+**Aspartate aminotransferase** (AST) is found in liver, skeletal muscle, myocardium, kidney, brain, leucocytes and erythrocytes. It exists in cytosolic and mitochondrial forms, which explains its **extrahepatic elevations**. Reference range is typically 5 to 30 IU/L; each laboratory sets its own.
 
-**Clinical importance**
-
-- **Myocardial infarction:** rises 6–8 hours after onset, peaks at 24–48 hours and returns to normal in 4–7 days (now largely replaced by troponin).
-- **Liver disease:** raised in hepatitis, cirrhosis and obstructive jaundice. In alcoholic hepatitis the AST/ALT ratio exceeds 2.
-- Raised in skeletal muscle disease (muscular dystrophy, rhabdomyolysis), pulmonary embolism, haemolysis and acute pancreatitis.
-
+- **AST-predominant pattern**: alcohol-related liver disease, steatohepatitis, cirrhosis
+- **Non-hepatic causes of a raised AST**: haemolysis, myopathy, thyroid disease, exercise
+- An **AST to ALT ratio of 2 to 1 or greater** suggests chronic alcohol use
+- Degree of rise above the upper limit of normal: borderline, less than 2 times; mild, 2 to 5 times; moderate, 5 to 15 times; severe, more than 15 times; massive, more than 10,000 IU/L (paracetamol toxicity, profound ischaemic injury)
+- Alcoholic hepatitis usually causes a mild to moderate rise, rarely above 300 to 500 IU/L
+- The **pattern and trend** matter more than a single value; mild elevations are often transient
+- **Haemolysis falsely raises** AST; a persistent isolated rise may be **macro-AST**, which is benign
 
 ## Give the clinical importance of LDH.
 
@@ -12909,51 +12929,77 @@ Aspartate aminotransferase (AST, formerly SGOT) catalyses the transfer of an ami
 
 ## Give the clinical importance of PSA.
 
-Prostate-specific antigen (PSA) is a serine protease (kallikrein-3) produced by prostatic epithelial cells that liquefies semen. It is organ-specific but not cancer-specific. Normal serum level is below 4 ng/mL (age-specific ranges are used); in serum it is present as free PSA and as PSA bound to α1-antichymotrypsin.
+**Prostate-specific antigen** (PSA) is an enzyme made by prostatic epithelial cells. It is released as an inactive precursor, becomes active in the prostatic ducts and then enters the blood. In semen it breaks down the proteins that keep semen gel-like.
 
-**Clinical importance**
-
-- **Screening and early detection** of carcinoma of the prostate, together with digital rectal examination.
-- **Raised levels** occur in carcinoma of the prostate (often above 10 ng/mL), and also in benign prostatic hyperplasia, prostatitis, urinary retention and after catheterisation or prostatic massage.
-- A **low free-to-total PSA ratio** (below 10–15%) favours carcinoma over benign hyperplasia.
-- **Monitoring** response to treatment and detecting recurrence after prostatectomy (PSA should become undetectable) or radiotherapy.
-
+- **Normal**: a single upper limit of 4 ng/mL is commonly used; **age-specific limits** are 2.5 ng/mL (40 to 49 years), 3.5 ng/mL (50 to 59), 4.5 ng/mL (60 to 69) and 6.5 ng/mL (70 to 79)
+- A value of **4.0 ng/mL or more** is the consensus threshold for further evaluation
+- **Causes of a raised PSA**: prostate cancer, benign prostatic hyperplasia (up to 86% of cases), prostatitis, infection, inflammation, trauma, digital rectal examination, urological instrumentation, recent ejaculation, constipation
+- **Lowered by**: 5-alpha reductase inhibitors (by about 50% over 6 to 12 months), and possibly statins, NSAIDs, paracetamol and thiazides; obesity lowers PSA by dilution
+- **Free PSA**: the free to total ratio falls in malignancy; most useful when total PSA is 4 to 10 ng/mL; free PSA below 10% carries about a 50% cancer risk and above 25% carries below 10% risk
+- **PSA density** (total PSA divided by prostate volume): 0.15 or more is suspicious
+- **PSA velocity**: a rise above 0.75 ng/mL per year or 25% per year is suspicious; shorter doubling time is linked to higher mortality
+- **Screening**: by shared decision after discussing risks and benefits, with a digital rectal examination for an abnormal result
+- **Monitoring**: after radical prostatectomy any detectable PSA suggests remaining prostate tissue, and biochemical recurrence is two consecutive values above 0.2 ng/mL; after radiotherapy, biochemical recurrence is two values more than 2 ng/mL above the nadir
+- **Limitations**: highly sensitive but **non-specific**, because benign and malignant conditions both raise it; up to 91% of elevated results are not due to cancer; no value rules cancer in or out; it leads to overdiagnosis, overtreatment and unnecessary biopsies; very poorly differentiated, high-Gleason cancers may produce little or none
 
 ## Give the clinical importance of serum amylase.
 
-Amylase is an enzyme secreted by the pancreas and salivary glands that hydrolyses starch to maltose. Normal serum level is about 30–110 U/L (up to 220 U/L in some methods). It is excreted in urine because of its small size.
+**Amylase** is made mainly by the pancreas (acinar cells, P-type) and the salivary glands (S-type). Pancreatic amylase forms about 40 to 50% of total serum amylase in healthy adults. No international reference range exists; reported intervals run from about 20 to 300 U/L, and each laboratory sets its own.
 
-**Clinical importance**
+**Acute pancreatitis**
 
-- **Acute pancreatitis:** serum amylase rises within 2–12 hours, peaks at 12–72 hours and returns to normal within 3–5 days. A level above three times the upper limit of normal supports the diagnosis. Urinary amylase stays raised longer. Serum lipase is more specific and stays raised longer.
-- **Other causes of raised amylase:** mumps and salivary gland disease, perforated peptic ulcer, intestinal obstruction, ruptured ectopic pregnancy, renal failure and macroamylasaemia.
-- **Chronic pancreatitis and pancreatic carcinoma:** levels may be normal or low late in disease.
-- Amylase in peritoneal or pleural fluid helps to detect pancreatic leak.
+- Diagnosis needs at least 2 of 3: abdominal pain, amylase or lipase above **3 times** the upper reference limit, and characteristic imaging
+- Amylase above 3 times the upper limit strongly suggests acute pancreatitis; at this cut-off P-type amylase is over 90% specific
+- It often returns to normal within **3 to 5 days**
+- The level does **not predict severity** and does not track the course of the disease
+- **Lipase is preferred** because it is more specific and stays raised longer
+- A raised amylase with normal lipase suggests an extrapancreatic source or macroamylasaemia
+- Hypertriglyceridaemia can falsely lower amylase
 
+**Other causes of a raised amylase**
+
+- Pancreatic: chronic pancreatitis, pancreatic trauma
+- Salivary: gland trauma, surgery or radiation, alcoholism, vomiting in anorexia and bulimia
+- Abdominal: bowel obstruction, perforation, mesenteric infarction, appendicitis, peritonitis, cholecystitis, ruptured ectopic pregnancy
+- Reduced clearance: renal insufficiency, **macroamylasaemia**
+- Others: liver disease, diabetic ketoacidosis, pneumonia, cardiac surgery, burns, cerebral trauma, phaeochromocytoma, drugs
+- Amylase-producing tumours (lung, ovary, multiple myeloma)
+
+**Macroamylasaemia**: amylase binds to immunoglobulins (mainly IgA or IgG) to form large complexes that are poorly filtered by the kidney. An amylase to creatinine clearance ratio below 1% suggests it, and above 5% supports acute pancreatitis. It is usually benign.
+
+**Low amylase**: cystic fibrosis, chronic pancreatitis, diabetes, obesity, metabolic syndrome, chronic tobacco use; falsely low in tubes containing oxalate, citrate or EDTA.
 
 ## Give the clinical importance of acid phosphatase.
 
-Acid phosphatase is a lysosomal enzyme that hydrolyses phosphate esters at acid pH (about 5.0). It is found in the prostate (the richest source), red cells, platelets, liver, bone and spleen. Normal serum total level is about 2.5–12 U/L; the prostatic fraction is inhibited by L-tartrate (tartrate-labile).
+**Acid phosphatase** is secreted by prostate tissue (prostatic form), expressed by osteoclasts (bone form) and released in seminal fluid. Normal serum level is about 2 ng/mL or less.
 
-**Clinical importance**
+- **Prostatic** acid phosphatase is inhibited by tartrate (tartrate-sensitive)
+- **Bone** acid phosphatase is **tartrate-resistant** (TRAP), also called purple acid phosphatase
 
-- **Prostatic carcinoma:** the prostatic fraction is raised, especially when the tumour has metastasised beyond the capsule, and it was formerly used for diagnosis and monitoring; it has been largely replaced by PSA.
-- Raised in Paget disease of bone, metastatic bone disease and hyperparathyroidism (tartrate-resistant, from osteoclasts).
-- Raised in Gaucher disease (tartrate-resistant) and in haemolytic conditions, thrombocytosis and some leukaemias (hairy cell leukaemia shows tartrate-resistant acid phosphatase).
-- **Forensic importance:** high acid phosphatase in vaginal swabs identifies seminal fluid in rape cases.
+**Raised in**
 
+- **Prostate cancer**: about 95% of patients, especially with bone metastasis, because cancerous prostate tissue overexpresses the enzyme
+- **Bone resorption**: osteoporosis; bone metastases from several cancers raise TRAP
+- **Hairy cell leukaemia**: the leukaemic cells contain TRAP, which is sensitive and specific for this disease
+- **Gaucher disease**: TRAP is a marker when chitotriosidase is normal
+
+**Clinical significance**
+
+- It comes from several tissues, so it is **non-specific**; it is more useful for monitoring therapy and prognosis than for diagnosis
+- It was once the main serum marker for prostate cancer but has largely been **replaced by PSA**
+- It remains useful in **forensic work** to identify seminal fluid
+- TRAP is a candidate marker for bone resorption and for monitoring osteoporosis treatment
 
 ## Give the clinical importance of CK-MB.
 
-Creatine kinase (CK) exists as dimers of M and B subunits: CK-MM (skeletal muscle), CK-MB (mainly myocardium) and CK-BB (brain). CK-MB makes up 25–40% of the CK activity in heart muscle but less than 3% in skeletal muscle. Normal serum CK-MB is below 5% of total CK (below about 25 U/L).
+**Creatine kinase** (CK) has three isoenzymes built from M (muscle) and B (brain) subunits: **MM** (skeletal muscle), **MB** (heart) and **BB** (brain). Skeletal muscle is almost entirely MM; cardiac muscle has about 20 to 30% MB. In healthy people serum CK is mostly MM with small amounts of MB.
 
-**Clinical importance**
-
-- **Diagnosis of acute myocardial infarction:** CK-MB rises 3–6 hours after onset, peaks at 12–24 hours and returns to normal in 48–72 hours. Its short duration makes it useful for detecting **re-infarction**.
-- It is also used to estimate infarct size, and to assess reperfusion after thrombolysis (early, sharp peak).
-- Raised in myocarditis, cardiac surgery and cardioversion, and mildly in skeletal muscle injury.
-- Cardiac troponin T and I are now the preferred and more specific markers; CK-MB is used when troponin is unavailable.
-
+- **CK-MB is a more specific indicator of myocardial damage than total CK**
+- **Raised in**: myocardial infarction, myocarditis, some cardiac procedures
+- A CK-MB (CK-2) above about **6% of total CK** is significant in myocardial infarction
+- Total CK in myocardial infarction rises within about 12 hours, peaks at 24 to 36 hours and returns to normal after 48 to 72 hours
+- The **CK-MB2 to CK-MB1 isoform ratio** helps separate cardiac from non-cardiac sources: above 1.7 is diagnostic and 1.5 or more strongly suggests infarction; sampling is most useful 8 to 36 hours after onset of symptoms
+- **Troponin** is increasingly used instead, because CK is not heart-specific
 
 ## Give the clinical importance of alpha-fetoprotein.
 
@@ -14381,4 +14427,3 @@ Acute kidney injury can result from glomerular, interstitial, vascular or acute 
 - All are caused by **high-risk HPV**
 - It appears as a **fungating (exophytic)** or infiltrative mass
 - More than one-half of cases are found in females who did not attend regular screening
-
