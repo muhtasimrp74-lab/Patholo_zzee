@@ -277,3 +277,32 @@ Sources: the site textbook (Chapter 13; Chapter 15 and Chapter 8 for Loeffler sy
 - Eponyms: Kostmann syndrome is given by its feature (severe congenital neutropenia); Loeffler syndrome is explained in brackets; Dohle bodies are explained as patches of dilated endoplasmic reticulum.
 - Define leukaemia: the textbook sentence is used as printed in Chapter 13 (leukaemias are neoplasms that present with widespread involvement of the bone marrow and usually the blood).
 - AML versus ALL: the periodic acid-Schiff and Auer rod entries for the opposite cell are marked "not described" or "not a feature" where the textbook is silent.
+
+## Session 9, batch 2 (24 answers: Chapter 13 infection in acute leukaemia through causes of splenomegaly)
+
+Questions: infection in acute leukaemia, myeloblast versus lymphoblast, Philadelphia chromosome (what is, importance), blast crisis, laboratory diagnosis of CML and of CLL, why blast crisis has a worse prognosis, myelodysplastic syndrome, myeloproliferative disorders (what are, classify, non-CML), polycythaemia (define, clinical features, polycythaemia vera versus secondary, laboratory diagnosis, WHO criteria), myelofibrosis (define, laboratory diagnosis, types, conditions with secondary myelofibrosis), essential thrombocythaemia, causes of hypersplenism, causes of splenomegaly. None was previously empty.
+
+Sources: the site textbook (Chapter 13; Chapter 14 for the definition and classification of polycythaemia).
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| WHO diagnostic criteria for polycythaemia vera. | WHO 2016 criteria as tabulated in Clinical Lymphoma, Myeloma and Leukemia 2018 (PMC) and in Annals of Hematology 2020 (PMC) | https://pmc.ncbi.nlm.nih.gov/articles/PMC5915302/table/T1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC7782364/table/Tab2 |
+| Causes of hypersplenism. / Causes of splenomegaly. (infiltrative group only: sarcoidosis, amyloidosis, glycogen and lipid storage diseases, metastases) | StatPearls, Splenomegaly | https://www.statpearls.com/point-of-care/29386 |
+
+### Points left out or needing a decision
+- WHO polycythaemia vera criteria: the textbook gives none, so the WHO 2016 criteria are given. These were not checked against the 2022 (fifth edition) WHO classification; the page gives the 2016 criteria as published in the sources above. Please confirm which edition your examiners use.
+- Table 13.12 (disorders associated with splenomegaly) is empty in the textbook source file; only fragments (infections, infectious mononucleosis, non-Hodgkin lymphomas and lymphocytic leukaemias, multiple myeloma, myeloproliferative neoplasms, haemolytic anaemias) are readable. The splenomegaly and hypersplenism answers use these fragments, the congestive splenomegaly passage, the rupture passage (malaria, typhoid fever), the extramedullary haematopoiesis passage (thalassaemia) and the StatPearls infiltrative group.
+- Causes of hypersplenism: the textbook gives no separate list of causes; the answer states its definition and mechanism and lists the splenomegaly disorders.
+- Table 14.8 (classification of polycythaemia) is also mostly empty in the source file; the secondary causes are taken from its readable lines and the Chapter 14 paragraph.
+- Types of myelofibrosis and conditions with secondary myelofibrosis: the textbook names primary myelofibrosis and the spent phase of polycythaemia vera, essential thrombocythaemia and other myeloproliferative neoplasms; it does not list other causes of secondary marrow fibrosis, so none are given.
+- Why blast crisis has a worse prognosis: the textbook gives no comparative survival figures or stated reasons; the answer lists what it says about blast crisis (greatest threat to the patient, resembles acute leukaemia, new cytogenetic abnormalities, Ikaros mutations).
+- Laboratory diagnosis of CML: leukocyte alkaline phosphatase is not in the textbook for CML, so it is not listed (it is given in the leukaemoid reaction comparison table from the outside source).
+- Differences between polycythaemia vera and secondary polycythaemia: rows were kept only where the textbook gives both sides.
+- Philadelphia chromosome: the textbook does not explain the eponym; it is described by what it is (the 9;22 translocation).
+- Units: the white cell counts "/mL" in the textbook text are read as per microlitre (see batch 1).
+- Hand edits: tools/hand_edits.json hunks 7 and 8 were anchored to the old polycythaemia classification answer, which the rewrite of "What do you mean by polycythaemia?" replaced; the two stale hunks were dropped (as in earlier sessions).
+- Same text on purpose: the splenomegaly and hypersplenism answers share the congestive splenomegaly and infiltrative lists.
+
+### Housekeeping
+- Progress file lists 580 questions done (530 before this session, plus 26 in batch 1, plus 24 in batch 2). 555 remain.

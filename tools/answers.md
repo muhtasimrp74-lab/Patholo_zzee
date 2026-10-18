@@ -14398,3 +14398,271 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 4. **Immunophenotyping:** stains for myeloid-specific antigens confirm the diagnosis, since myeloblasts and lymphoblasts are hard to tell apart by morphology; blasts express CD34, CD33 and in part CD15, but not CD64. Megakaryocytic blasts are detected with antibodies such as GPIIb/IIIa.
 5. **Cytogenetics:** abnormalities are detected in 50% to 70% of cases with standard techniques and about 90% with high-resolution banding. Balanced translocations t(8;21), inv(16) and t(15;17) are typical of de novo AML in younger adults; deletions or monosomies of chromosomes 5 and 7 and p53 mutations follow DNA-damaging agents.
 6. **DNA sequencing** detects mutations such as NPM1.
+## Why is infection common in acute leukaemia?
+
+- Accumulation of neoplastic blasts in the bone marrow suppresses normal haematopoiesis by physical crowding, competition for growth factors and other poorly understood mechanisms.
+- This depresses marrow function, so **neutropenia** develops; fever reflects infections secondary to neutropenia.
+- Neutropenia leads to infections, which are often fulminant.
+- Infections are frequent in the oral cavity, skin, lungs, kidneys, urinary bladder and colon.
+- They are often caused by **opportunists** such as fungi, Pseudomonas and commensal organisms.
+
+## How will you differentiate myeloblast from lymphoblast?
+
+| Feature | Myeloblast | Lymphoblast |
+|---|---|---|
+| Nuclear chromatin | Delicate | More condensed |
+| Nucleoli | Two to four; prominent | Less conspicuous; small and sharply demarcated by a rim of condensed chromatin |
+| Cytoplasm | More voluminous; often fine peroxidase positive azurophilic granules | Smaller amount; scant basophilic; usually lacks granules |
+| Auer rods | Present in many cases | Not described |
+| Myeloperoxidase | Positive | Negative |
+| Periodic acid–Schiff | Not described | Often positive cytoplasmic material |
+| Terminal deoxynucleotidyl transferase (TdT) | Not described | Positive in more than 95% of cases; expressed only in pre-B and pre-T lymphoblasts |
+| Surface markers | CD34, CD33, CD15 | B lineage: CD19, CD10, PAX5. T lineage: CD1, CD2, CD5, CD7 |
+
+These morphological distinctions are not absolute. The definitive diagnosis relies on stains with antibodies specific for B-cell, T-cell and myeloid antigens.
+
+## What is Philadelphia chromosome?
+
+The **Philadelphia chromosome** (Ph) is the reciprocal (9;22)(q34;q11) translocation that creates the chimeric BCR::ABL gene, from portions of the BCR gene on chromosome 22 and the ABL gene on chromosome 9. It is present in more than 90% of cases of chronic myeloid leukaemia.
+
+## Importance of the Philadelphia chromosome.
+
+- It is the hallmark of **chronic myeloid leukaemia (CML)**, which is distinguished from other myeloproliferative neoplasms by the chimeric BCR::ABL gene.
+- BCR::ABL directs the synthesis of a **constitutively active BCR-ABL tyrosine kinase**, usually 210 kDa in size. The BCR part has a dimerisation domain that self-associates and activates the ABL kinase.
+- The kinase drives the RAS and JAK/STAT pathways, the same progrowth and prosurvival pathways turned on by haematopoietic growth factors. It preferentially drives proliferation of granulocytic and megakaryocytic progenitors and causes abnormal release of immature granulocytes from the marrow.
+- It shows that the **cell of origin is a pluripotent haematopoietic stem cell**.
+- Diagnosis: BCR::ABL detected by chromosomal analysis or PCR-based tests. In the remaining cases, where the fusion gene is formed by complex or cryptic rearrangements, it is detected by fluorescence in situ hybridisation (FISH) or PCR.
+- Treatment: BCR-ABL inhibitors give sustained haematological remissions in more than 90% of patients. Sensitive molecular tests monitor for recurrence.
+- BCR::ABL1 is also found in a subset of B-cell acute lymphoblastic leukaemia.
+
+## What do you mean by blast crisis / blastic transformation?
+
+- Blast crisis is the terminal event in CML, a picture resembling **acute leukaemia**.
+- About 50% of patients first enter an **accelerated phase** after a variable period averaging 3 years, with increasing anaemia and thrombocytopenia, sometimes a rise in basophils, and new cytogenetic abnormalities such as trisomy 8, isochromosome 17q or duplication of the Ph chromosome. Within 6 to 12 months this ends in blast crisis.
+- In the other 50%, blast crisis occurs abruptly without an accelerated phase.
+- In 70% of crises the blasts are myeloid (**myeloid blast crisis**); in most of the remainder they are of pre-B cell origin (**lymphoid blast crisis**). This is evidence that CML originates from a pluripotent stem cell with both myeloid and lymphoid potential.
+- In lymphoid blast crisis, 85% of cases have mutations that interfere with Ikaros, a transcription factor encoded by IKZF1.
+
+## Laboratory diagnosis of CGL/CML.
+
+1. **Peripheral blood**
+   - Leukocytosis, often exceeding 100,000 per microlitre, of neutrophils, band forms, metamyelocytes, myelocytes, eosinophils and basophils.
+   - Blasts usually less than 10% of circulating cells.
+   - Platelets usually increased, sometimes markedly.
+   - Mild to moderate anaemia.
+2. **Bone marrow**
+   - Markedly hypercellular, with massively increased maturing granulocytic precursors, usually with a raised proportion of eosinophils and basophils.
+   - Megakaryocytes increased, usually small and dysplastic.
+   - Erythroid progenitors normal or mildly decreased.
+   - Scattered **sea-blue histiocytes** (macrophages with abundant wrinkled green-blue cytoplasm).
+   - Increased reticulin; overt fibrosis is rare.
+3. **Molecular and cytogenetic tests:** the BCR::ABL fusion gene, with the Philadelphia chromosome t(9;22), detected by chromosomal analysis, FISH or PCR-based tests; this differentiates CML from other myeloproliferative neoplasms.
+
+## Why is the prognosis of blast crisis worse than classical CGL?
+
+- Untreated classical CML progresses slowly, with a median survival of about 3 years.
+- Blast crisis is the greatest threat to the patient.
+- It resembles acute leukaemia.
+- The accelerated phase brings additional clonal cytogenetic abnormalities: trisomy 8, isochromosome 17q, duplication of the Ph chromosome.
+- Lymphoid blast crisis has mutations in Ikaros in 85% of cases.
+- BCR-ABL inhibitors control blood counts and decrease the risk of transformation to the accelerated phase and blast crisis.
+
+## Laboratory diagnosis of CLL.
+
+1. **Peripheral blood**
+   - Absolute lymphocyte count more than 5000 per cubic millimetre (the diagnostic requirement for CLL).
+   - Variable numbers of small round lymphocytes with scant cytoplasm and condensed chromatin.
+   - **Smudge cells**, tumour cells disrupted in making smears.
+   - Leukocyte count highly variable; counts above 200,000 per cubic millimetre are sometimes seen.
+   - With autoimmune haemolytic anaemia, spherocytes; with marrow infiltration, nucleated red cells.
+2. **Lymph node:** diffuse effacement by small lymphocytes 6 to 12 mm in diameter with round to slightly irregular nuclei, condensed chromatin and scant cytoplasm. **Proliferation centres** of larger activated lymphocytes are pathognomonic. The bone marrow, spleen and liver are also involved.
+3. **Immunophenotype:** CD19, CD20, CD23 and CD5; low-level surface immunoglobulin, usually IgM, or IgM and IgD; high-level BCL2.
+4. **Cytogenetics:** deletions of 13q14.3, 11q and 17p, and trisomy 12; NOTCH1 mutations in 10% to 18%.
+5. **Prognostic markers:** deletions of 11q and 17p (involving TP53), lack of somatic hypermutation, ZAP-70 expression and NOTCH1 mutations indicate a worse outcome.
+6. A small monoclonal immunoglobulin spike is present in some patients; hypogammaglobulinaemia is common.
+
+## What do you know about myelodysplastic syndrome?
+
+**Definition:** myelodysplastic neoplasms (MDS, formerly myelodysplastic syndromes) are clonal stem cell disorders characterised by maturation defects that cause ineffective haematopoiesis and carry a high risk of transformation to AML. The marrow is partly or wholly replaced by the clonal progeny of a neoplastic multipotent stem cell that differentiates in an ineffective and disordered fashion, so patients have peripheral blood cytopenias. MDS may be primary (idiopathic) or secondary to previous genotoxic drug or radiation therapy (t-MDS), which usually appears 2 to 8 years after exposure.
+
+**Pathogenesis**
+
+- Driver mutations overlap partly with those of AML: **epigenetic factors** (DNA methylation, histone modifications, chromatin looping), **RNA splicing factors**, and **transcription factors** such as RUNX1 (mostly loss of function).
+- About 10% have loss-of-function TP53 mutations, with a complex karyotype and poor outcome.
+- Recurrent chromosomal abnormalities: monosomies 5 and 7, deletions of 5q, 7q and 20q, and trisomy 8. The region lost on 5q contains RPS14; loss of one copy produces ineffective erythropoiesis.
+
+**Morphology**
+
+- Marrow usually hypercellular; dysplastic differentiation of the erythroid, granulocytic, monocytic and megakaryocytic lineages.
+- Erythroid: **ring sideroblasts**, megaloblastoid maturation, nuclear budding.
+- Neutrophils: decreased secondary granules, toxic granulations, Döhle bodies, and **pseudo-Pelger-Hüet cells** (neutrophils with only two nuclear lobes).
+- Megakaryocytes with single nuclear lobes or multiple separate nuclei (pawn ball megakaryocytes).
+- Marrow blasts increased but less than 20%; blood blasts usually less than 10%.
+- Blood: pseudo-Pelger-Hüet cells, giant platelets, macrocytes, poikilocytes and relative or absolute monocytosis.
+
+**Clinical features and complications**
+
+- Mainly a disease of older adults; mean age of onset is 70 years; up to half are found incidentally on routine blood tests.
+- Symptoms are weakness, infections and haemorrhages from pancytopenia.
+- All forms can transform to AML, most frequently and rapidly in t-MDS.
+- Median survival in primary MDS ranges from less than 6 months to more than 5 years; in t-MDS it is only 4 to 8 months.
+- Worse outcomes are predicted by a higher blast count, more severe cytopenias and complex cytogenetics.
+
+## What are myeloproliferative disorders?
+
+**Myeloproliferative neoplasms** are myeloid neoplasms in which there is usually increased production of one or more types of blood cells. Their common pathogenic feature is mutated, constitutively activated tyrosine kinases, or other acquired aberrations in signalling pathways, that lead to growth factor independence. Differentiation is not impaired, so the usual result is an increase in mature blood elements.
+
+Common features:
+
+- Increased proliferative drive in the bone marrow.
+- Variable homing of neoplastic stem cells to secondary haematopoietic organs, producing extramedullary haematopoiesis.
+- Variable transformation to a spent phase with marrow fibrosis and peripheral blood cytopenias.
+- Variable transformation to acute leukaemia.
+
+## Classify myeloproliferative disorder.
+
+| Disorder | Mutation (frequency) |
+|---|---|
+| Chronic myeloid leukaemia | BCR::ABL fusion gene (100%) |
+| Polycythaemia vera | JAK2 mutations (more than 95%) |
+| Essential thrombocythaemia | JAK2 (50% to 60%), CALR (25% to 35%), MPL (5% to 10%) |
+| Primary myelofibrosis | JAK2 (50% to 60%), CALR (25% to 35%), MPL (5% to 10%) |
+| Systemic mastocytosis | KIT mutations (more than 90%) |
+| Chronic eosinophilic leukaemia | FIP1L1::PDGFRA fusion gene (common); PDE4DIP::PDGFRB fusion gene (rare) |
+| Myeloid/lymphoid neoplasms with eosinophilia and tyrosine kinase gene mutations | Fusion genes involving FGFR1, PDGFRA, PDGFRB or JAK2 (100%) |
+
+## What do you mean by polycythaemia?
+
+**Polycythaemia** denotes an abnormally high number of circulating red cells, usually with a corresponding increase in the haemoglobin level. It may be relative (when there is haemoconcentration due to decreased plasma volume) or absolute (when there is an increase in the total red cell mass).
+
+## Clinical features of polycythaemia.
+
+Clinical features of polycythaemia vera:
+
+- Insidious onset, usually in adults of late middle age.
+- Increased red cell mass, haematocrit and total blood volume cause abnormal blood flow, with distension of the low-pressure venous side.
+- Patients are **plethoric and cyanotic**, from stagnation and deoxygenation of blood in peripheral vessels.
+- Headache, dizziness, hypertension and gastrointestinal symptoms.
+- **Intense pruritus** and **peptic ulceration**, both possibly from histamine release by basophils.
+- **Hyperuricaemia** from high cell turnover; symptomatic secondary gout in 5% to 10%.
+- **Thrombosis:** about 25% first come to attention with deep venous thrombosis, myocardial infarction or stroke; hepatic vein thrombosis (Budd-Chiari syndrome, thrombosis of the hepatic veins) and portal or mesenteric vein thrombosis with bowel infarction.
+- **Bleeding:** minor haemorrhages (epistaxis, bleeding gums) are common; life-threatening haemorrhages occur in 5% to 10%.
+- Mild organomegaly, caused early in the course largely by congestion.
+
+## Differences between polycythaemia vera and secondary polycythaemia.
+
+| Feature | Polycythaemia vera | Secondary polycythaemia |
+|---|---|---|
+| Nature | Primary; myeloproliferative neoplasm with an intrinsic abnormality of haematopoietic precursors | Absolute polycythaemia from a response of red cell progenitors to raised erythropoietin |
+| Cause | Activating mutations in the tyrosine kinase JAK2 (more than 97% with a valine-to-phenylalanine change at residue 617) | Compensatory or pathologic increase in erythropoietin secretion: erythropoietin-secreting tumours (renal cell carcinoma, hepatocellular carcinoma, cerebellar haemangioblastoma), high oxygen affinity haemoglobin mutants, inherited defects that stabilise HIF-1α |
+| Serum erythropoietin | Low | High |
+| Erythropoietin dependence | Progenitors have markedly decreased requirements for erythropoietin and other growth factors | Red cell progenitors respond to erythropoietin |
+| Cell lines | Increased red cells, granulocytes and platelets (panmyelosis) | Red cells |
+
+## Laboratory diagnosis of polycythaemia.
+
+1. **Red cell parameters:** haemoglobin typically more than 16 g/dL; haematocrit often 55% or more. Chronic bleeding may cause iron deficiency, which can lower the haematocrit into the normal range.
+2. **White cell count** 12,000 to 50,000 per cubic millimetre; **platelet count** often more than 500,000 per cubic millimetre, with giant forms and defective aggregation on functional tests.
+3. **Peripheral blood:** increased basophils and abnormally large platelets.
+4. **Serum erythropoietin:** low in polycythaemia vera, high in secondary forms.
+5. **JAK2 mutation:** more than 97% have the valine-to-phenylalanine substitution at residue 617; other JAK2 mutations are found in most of the rest.
+6. **Bone marrow:** hypercellular with some residual fat; a subtle increase in red cell progenitors, usually with increased granulocytic precursors and megakaryocytes; a moderate to marked increase in reticulin fibres in about 10%.
+
+## Non-CML myeloproliferative disorders.
+
+| Disorder | Mutations | Features |
+|---|---|---|
+| **Polycythaemia vera** | JAK2 in more than 95% (more than 97% at residue 617) | Increased red cells, granulocytes and platelets; plethora, pruritus, thrombosis and bleeding; low serum erythropoietin; spent phase in 15% to 20% and transformation to AML in about 1% to 2% |
+| **Essential thrombocythaemia** | JAK2 (50% to 60%), CALR (about 30%), MPL (5% to 10%) | Raised platelet count with thrombosis or bleeding; no polycythaemia and no marrow fibrosis; erythromelalgia |
+| **Primary myelofibrosis** | JAK2, CALR or MPL in about 90% | Obliterative marrow fibrosis, leukoerythroblastosis, teardrop red cells, splenomegaly from extramedullary haematopoiesis |
+
+## WHO diagnostic criteria for polycythaemia vera.
+
+The WHO 2016 criteria. The diagnosis requires either all three major criteria, or the first two major criteria and the minor criterion.
+
+**Major criteria**
+
+1. **Haemoglobin** more than 16.5 g/dL in men or more than 16.0 g/dL in women, **or haematocrit** more than 49% in men or more than 48% in women, or red cell mass more than 25% above the mean normal predicted value.
+2. **Bone marrow biopsy** showing hypercellularity for age with trilineage growth (panmyelosis), including prominent erythroid, granulocytic and megakaryocytic proliferation with pleomorphic mature megakaryocytes.
+3. Presence of a **JAK2 V617F** or **JAK2 exon 12** mutation.
+
+**Minor criterion**
+
+- **Subnormal serum erythropoietin** level.
+
+Bone marrow biopsy may not be required in cases with sustained absolute erythrocytosis, with haemoglobin more than 18.5 g/dL in men (haematocrit more than 55.5%) or more than 16.5 g/dL in women (haematocrit more than 49.5%), if the third major criterion and the minor criterion are present.
+
+## Define myelofibrosis.
+
+The hallmark of **primary myelofibrosis** is the development of obliterative marrow fibrosis. The replacement of the marrow by fibrous tissue reduces bone marrow haematopoiesis, leading to cytopenias and extensive extramedullary haematopoiesis.
+
+## Laboratory diagnosis of myelofibrosis.
+
+1. **Peripheral blood**
+   - Moderate to severe **normochromic normocytic anaemia**.
+   - **Leukoerythroblastosis**: premature release of nucleated erythroid and early granulocyte progenitors.
+   - **Teardrop-shaped red cells** (dacryocytes).
+   - White cell count usually normal or mildly reduced, but may be markedly elevated (80,000 to 100,000 per microlitre) early in the course.
+   - Platelet count usually normal or elevated at diagnosis; thrombocytopenia may supervene as the disease progresses.
+   - Abnormally large platelets and basophilia, which are nonspecific.
+2. **Bone marrow biopsy** is essential for diagnosis, because the blood findings are not specific.
+   - Early: hypercellular, with increases in maturing cells of all lineages; large megakaryocytes with bulbous, hyperchromatic or cloud-like nuclei, abnormally clustered; minimal fibrosis.
+   - Later: hypocellular and diffusely fibrotic; clusters of atypical megakaryocytes; haematopoietic elements within dilated sinusoids; very late, conversion of the marrow space to bone (osteosclerosis).
+3. **Mutations:** about 90% have activating mutations of JAK2, CALR or MPL.
+
+## Types of myelofibrosis.
+
+1. **Primary myelofibrosis:** a myeloproliferative neoplasm whose hallmark is obliterative marrow fibrosis, with activating mutations of JAK2, CALR or MPL in about 90%.
+2. **Secondary myelofibrosis (spent phase):** the marrow fibrosis that develops late in other myeloproliferative neoplasms, such as polycythaemia vera and essential thrombocythaemia. The histological appearance is identical to primary myelofibrosis.
+
+## Conditions associated with secondary myelofibrosis.
+
+- **Polycythaemia vera:** the disease passes into a spent phase of obliterative marrow fibrosis with extensive extramedullary haematopoiesis, mainly in the spleen, in about 15% to 20% of patients after an average period of 10 years. Patients with two mutated copies of JAK2 progress at a greater rate.
+- **Essential thrombocythaemia:** a spent phase of marrow fibrosis supervenes uncommonly.
+- Other myeloproliferative neoplasms: variable transformation to a spent phase with marrow fibrosis and peripheral blood cytopenias; in chronic myeloid leukaemia overt marrow fibrosis is rare.
+
+## Essential thrombocythaemia (in short).
+
+**Definition:** a myeloproliferative neoplasm with an elevated platelet count, separated from polycythaemia vera and primary myelofibrosis by the absence of polycythaemia and marrow fibrosis respectively.
+
+**Pathogenesis**
+
+- Over 90% have activating mutations in **JAK2** (50% to 60%), **MPL** (5% to 10%) or **CALR** (about 30%).
+- Constitutive JAK2 or MPL signalling makes the progenitors thrombopoietin independent and leads to hyperproliferation.
+- Mutated CALR is secreted and binds and activates the thrombopoietin receptor, an oncogenic autocrine feedback loop.
+- In cases without a mutation, causes of reactive thrombocytosis, such as inflammatory disorders and iron deficiency, must be excluded.
+
+**Morphology**
+
+- Marrow cellularity usually only mildly increased; megakaryocytes markedly increased, including abnormally large forms; delicate reticulin fibrils, without overt fibrosis.
+- Blood: abnormally large platelets, often with mild leukocytosis.
+- Mild organomegaly in about 50% from extramedullary haematopoiesis.
+
+**Clinical features and complications**
+
+- Incidence 1 to 3 per 100,000 per year; usually past the age of 60 years.
+- **Thrombosis and haemorrhage** from platelet dysfunction: deep venous thrombosis, portal and hepatic vein thrombosis, myocardial infarction and abnormal bleeding.
+- Up to one-third have acquired von Willebrand disease.
+- **Erythromelalgia**, a throbbing and burning of hands and feet from occlusion of small arterioles by platelet aggregates.
+- Indolent; median survival 12 to 15 years; uncommonly a spent phase of marrow fibrosis or transformation to AML.
+
+## Causes of hypersplenism.
+
+**Hypersplenism** is a syndrome of splenomegaly with anaemia, leukopenia and/or thrombocytopenia. The probable cause of the cytopenias is increased sequestration of formed elements and the consequent enhanced phagocytosis by splenic macrophages.
+
+Causes are the disorders associated with splenomegaly:
+
+- **Congestive splenomegaly** from portal or splenic vein hypertension: cirrhosis (the main cause of massive congestive splenomegaly), the pipestem hepatic fibrosis of schistosomiasis, portal vein thrombosis, splenic vein thrombosis from tumours of the stomach or pancreas, and right-sided heart failure. In congestive splenomegaly, slowing of blood flow from the cords to the sinusoids prolongs exposure of blood cells to macrophages, resulting in excessive destruction.
+- **Infections:** blood-borne infections, particularly infective endocarditis, and infectious mononucleosis.
+- **Haematological:** non-Hodgkin lymphomas, lymphocytic leukaemias, multiple myeloma, myeloproliferative neoplasms and haemolytic anaemias.
+- **Infiltrative disorders:** sarcoidosis, amyloidosis, glycogen storage and lipid storage diseases, and metastases.
+
+## Causes of splenomegaly.
+
+1. **Infections:** nonspecific splenitis of any blood-borne infection, particularly infective endocarditis; infectious mononucleosis; malaria; typhoid fever.
+2. **Haematological disorders:** non-Hodgkin lymphomas and lymphocytic leukaemias; multiple myeloma; myeloproliferative neoplasms, such as chronic myeloid leukaemia and primary myelofibrosis, through extramedullary haematopoiesis; haemolytic anaemias and thalassaemia, through compensatory extramedullary haematopoiesis in severe chronic anaemia.
+3. **Congestion from venous outflow obstruction**
+   - Intrahepatic disorders retarding portal drainage: cirrhosis (the main cause of massive splenomegaly), schistosomiasis.
+   - Extrahepatic obstruction of the portal or splenic vein: portal vein thrombosis, pyelophlebitis (inflammation of the portal vein), thrombosis from tumours of the stomach or pancreas.
+   - Systemic venous congestion from right-sided heart failure, as in tricuspid or pulmonic valve disease and chronic cor pulmonale; the spleen rarely exceeds 500 g.
+4. **Infiltrative disorders:** sarcoidosis, amyloidosis, glycogen storage diseases, lipid storage diseases and metastases.
