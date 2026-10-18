@@ -537,3 +537,25 @@ Points left out:
 - Causes of acute renal failure: no list of prerenal causes is given in the textbook, so none is stated.
 - Hand-edit hunk 2 of tools/hand_edits.json (a typo edit on the old Wilms tumour answer) dropped because its anchor text was rewritten.
 - Session stopped after item 45 of 75 at the user's request; the session end checks (idempotent build, VERSION bump, manifests, unit tests) were not run.
+
+## Session 17, batches 1 and 2 (work-list questions 1 to 35 attempted; 25 written so far, Chapter 20)
+
+Sources: site textbook chapter 20 (tools/textbook_src/ch20.json) for pyelonephritis, renal cell carcinoma, nephrotic syndrome, uraemia and oliguria. Outside sources were needed for the laboratory questions (no textbook coverage).
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| What is recurrent UTI? (and the relapse and reinfection wording, prostatitis in men) | StatPearls, Recurrent Urinary Tract Infections | https://ncbi.nlm.nih.gov/books/NBK557479 |
+| Write the importance of recurrent UTI. (prostatitis point only) | StatPearls, Recurrent Urinary Tract Infections | https://ncbi.nlm.nih.gov/books/NBK557479 |
+| Give the normal serum concentration of uric acid. | Desideri et al., Eur Rev Med Pharmacol Sci, "Is it time to revise the normal range of serum uric acid levels?" | https://www.europeanreview.org/?p=7352 |
+| Give the normal serum albumin value. | WikEM, Albumin | https://es.wikem.org/wiki/Albumin |
+| Give the normal serum urea value; Give the normal serum creatinine value. | JoVE Science Education, renal function tests | https://www.jove.com/v/18487 |
+| Renal function tests; renal clearance; causes of uraemia (acute kidney injury causes, chronic kidney disease causes); tests and causes of proteinuria; routine urine tests; chemical examination of urine; microalbumin; serum creatinine versus urea; clinical importance of creatinine; oliguria (definition and causes) | StatPearls, Renal Function Tests (read via the mirror page) | https://dev3.statpearls.com/point-of-care/28359 |
+
+### Points left out
+- Same: how will you confirm it? (renal cell carcinoma): the textbook gives no diagnostic work-up (no ultrasonography, urine tests or biopsy), so only imaging detection and histological typing, which the textbook states, are given.
+- Serum urea: the textbook-grade source gives blood urea nitrogen only; no value for urea itself is given. Serum creatinine and urea ranges come from JoVE, which is an educational source rather than a standard pathology textbook; please confirm or supply a preferred reference.
+- Renal function tests: no normal value for cystatin C is given in the sources.
+- Chemical examination of urine: the specific chemical principle of each dipstick pad (for example enzyme reactions) is not given in the sources used, so it is not stated; only the dry-chemistry principle is.
+- Causes of uraemia: no list of chronic kidney disease causes beyond hypertension and diabetes is given in the sources.
+- Not yet written (no reliable source found yet, left for next session): heat coagulation test, reducing substances in urine, Benedict's test, hyperuricaemia causes and significance, renal glycosuria (two questions), haematuria (three questions).

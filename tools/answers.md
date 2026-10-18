@@ -11021,52 +11021,51 @@ The probable diagnosis is **acute poststreptococcal (postinfectious) glomerulone
 
 ## Why is UTI more common in females?
 
-Urinary tract infection is much more common in females than in males, except in infancy and in old age, for several reasons. The female urethra is short (about 4 cm), so bacteria colonising the introitus have only a short distance to travel to the bladder. The urethral opening lies close to the anus and the vagina, so it is readily colonised by coliform bacteria from the intestinal tract, which adhere to the urethral mucosa through P-fimbriae. Females lack the antibacterial properties of prostatic secretion, which protect the male urethra. Hormonal changes influence bacterial adherence to the mucosa; urethral trauma during sexual intercourse introduces organisms into the bladder. Pregnancy, with dilatation and hypotonia of the ureters, and postmenopausal oestrogen deficiency, which alters the vaginal and periurethral flora, add further risk. In males the incidence rises only in the first year of life, as a result of congenital anomalies, and again in old age, when prostatic hypertrophy and instrumentation promote infection.
+In the absence of instrumentation, urinary infections are much more common in females because of:
 
+1. Shorter urethra
+2. Absence of the antibacterial properties of prostatic fluid
+3. Hormonal changes affecting bacterial adherence to the mucosa
+4. Urethral trauma during sexual intercourse
 
 ## What is recurrent UTI?
 
-Recurrent urinary tract infection is the occurrence of repeated symptomatic episodes of infection after the initial infection has apparently been eradicated, conventionally two or more episodes in six months or three or more in one year. It is of two kinds. A relapse is recurrence with the same organism within about two weeks of treatment, indicating persistence of a focus of infection in the urinary tract, such as a stone, a scarred kidney or chronic bacterial prostatitis. A reinfection is recurrence with a different organism, or with the same species after an infection-free interval, indicating fresh entry of bacteria from the periurethral flora; it is more common in females.
+Two episodes of acute bacterial cystitis with symptoms within 6 months, or three episodes within 1 year.
 
+- **Relapse:** the same organism returns because it was incompletely eradicated; the interval between the two episodes is less than 2 weeks
+- **Reinfection:** a new infection after the previous one was wholly eradicated, with a different organism
+- More common in women; three-quarters are caused by Escherichia coli
 
 ## Write the importance of recurrent UTI.
 
-The importance of recurrent urinary tract infection lies in what it signifies and in what it may cause.
-
-1. **It indicates an underlying predisposing factor** that must be sought: urinary tract obstruction (stones, prostatic hyperplasia, strictures, tumours), vesicoureteral reflux, incomplete bladder emptying, neurogenic bladder, diabetes, or an instrumented or catheterised tract. Unless the cause is corrected, the infection will continue to recur.
-2. **Chronic pyelonephritis and reflux nephropathy.** Repeated episodes of acute pyelonephritis lead to coarse, irregular scarring of the kidney with calyceal deformity, especially at the poles, chiefly in children with reflux.
-3. **Renal damage and its consequences**: tubular dysfunction with polyuria and nocturia, hypertension, secondary focal segmental glomerulosclerosis with proteinuria, and progression to chronic kidney disease and end-stage kidney disease.
-4. **Stone formation.** Infection with urea-splitting organisms such as Proteus produces struvite stones, which in turn obstruct and perpetuate infection.
-5. **Acute complications** such as papillary necrosis, pyonephrosis, perinephric abscess and septicaemia, and considerable morbidity from repeated symptomatic episodes.
-
+- Recurrent infection is the setting in which **chronic pyelonephritis** develops: episodes of acute pyelonephritis recur because of predisposing factors such as **vesicoureteral reflux** and urinary tract obstruction
+- Recurrent episodes leave irregular **scars** on the cortical surface, with tubular atrophy, interstitial fibrosis and deformity of the underlying calyx and pelvis
+- Late presentation with gradual **renal insufficiency** and **hypertension**
+- Persistent bacteria or infection with new organisms after treatment, and repeated septicaemic episodes when obstruction, diabetes or immunodeficiency is present
+- Papillary necrosis may be superimposed and may lead to acute renal failure
+- Men with recurrent cystitis should be evaluated for prostatitis
 
 ## What is pyelonephritis?
 
-Pyelonephritis is inflammation of the kidney caused by infection, affecting the tubules, interstitium and renal pelvis. Acute pyelonephritis is a suppurative inflammation of the kidney, usually bacterial and associated with urinary tract infection, which reaches the kidney by the ascending route from the lower urinary tract (more commonly, with vesicoureteral reflux) or by the haematogenous route. Chronic pyelonephritis is chronic tubulointerstitial inflammation and scarring that involves the calyces and pelvis, resulting from recurrent infection in the presence of predisposing factors, chiefly reflux and obstruction.
-
+Inflammation caused by infection affecting the **tubules, interstitium and renal pelvis**.
 
 ## Describe the pathogenesis of ascending infection in pyelonephritis.
 
-Ascending infection is the commonest route by which bacteria reach the kidney. The normal bladder and bladder urine are sterile, so a series of alterations must occur.
-
-1. **Colonisation of the distal urethra and introitus** by coliform bacteria from the intestine. The degree of adherence depends on adhesins, particularly those on the P-fimbriae of the bacteria, which bind to receptors on the urothelial cells.
-2. **Entry into the bladder.** Organisms reach the bladder through the urethra, more easily in the female because of the short urethra and urethral trauma during intercourse, or through catheterisation and instrumentation.
-3. **Multiplication in the bladder.** Normally the organisms are cleared by voiding and by antibacterial mechanisms. When there is outflow obstruction (benign prostatic hyperplasia, tumours, calculi) or bladder dysfunction (neurogenic bladder in diabetes or spinal cord injury), emptying is incomplete and residual urine allows the bacteria to multiply unhindered.
-4. **Vesicoureteral reflux.** The normal ureteral insertion is a one-way valve. In reflux, caused most often by congenital shortness or absence of the intravesical portion of the ureter, or acquired from infection or persistent bladder atony, contaminated bladder urine is carried up the ureter to the renal pelvis, and residual urine again favours bacterial growth.
-5. **Intrarenal reflux.** Infected urine is propelled through the open ducts at the papillary tips deep into the renal parenchyma. It is most common in the upper and lower poles, where the papillae are flattened or concave rather than convex.
-6. **Parenchymal infection.** Bacteria enter the tubules and cause neutrophilic tubulitis and interstitial suppuration, with abscess formation. Glomeruli are relatively resistant. In the absence of vesicoureteral reflux, the infection usually stays localised in the bladder as cystitis.
-
+1. **Colonisation** of the distal urethra and introitus (in the female) by coliform bacteria, by adhesins on the P-fimbriae (pili) of bacteria that bind receptors on urothelial cells
+2. **Entry into the bladder** during urethral catheterisation or other instrumentation; long-term catheterisation carries a particular risk
+3. **Movement from the bladder to the kidney**, favoured by:
+   - **Urinary tract obstruction and stasis of urine:** residual urine lets bacteria multiply unhindered; seen with benign prostatic hypertrophy, tumours, calculi and neurogenic bladder (diabetes, spinal cord injury)
+   - **Vesicoureteral reflux:** an incompetent vesicoureteral valve lets bladder urine and bacteria ascend the ureter into the renal pelvis; usually due to congenital absence or shortening of the intravesical ureter, and present in about 30% of infants and children with urinary tract infection
+   - **Intrarenal reflux:** infected urine is propelled through open ducts at the papillary tips deep into the parenchyma, most often at the upper and lower poles where papillae are flat or concave
+- Without vesicoureteral reflux the infection usually stays in the bladder, causing cystitis and urethritis
 
 ## What are the complications of acute pyelonephritis?
 
-The complications of acute pyelonephritis are:
-
-1. **Papillary necrosis**, seen mainly in diabetics, in sickle cell disease and in those with urinary tract obstruction. It is usually bilateral; the tips or distal two-thirds of the pyramids show grey-white to yellow areas of ischaemic coagulative necrosis, and it may cause acute renal failure.
-2. **Pyonephrosis**, when total or almost complete obstruction, particularly high in the urinary tract, prevents drainage, so that pus fills the renal pelvis, calyces and ureter.
-3. **Perinephric abscess**, extension of the suppurative inflammation through the renal capsule into the perinephric tissue.
-4. **Septicaemia and bacteraemic shock** from gram-negative organisms, particularly in the presence of unrelieved obstruction, diabetes or immunodeficiency; repeated septicaemic episodes may occur.
-5. **Acute kidney injury**, especially when papillary necrosis or obstruction supervenes.
-6. **Chronic pyelonephritis**, with coarse scarring, calyceal deformity, hypertension and progressive renal insufficiency, after recurrent or persistent infection; some patients later develop secondary focal segmental glomerulosclerosis.
+1. **Papillary necrosis:** seen mainly in diabetics, sickle cell disease and urinary tract obstruction; coagulative necrosis of the tips or distal two-thirds of the pyramids; may lead to acute renal failure
+2. **Pyonephrosis:** total or almost complete obstruction, high in the urinary tract; pus fills the renal pelvis, calyces and ureter
+3. **Perinephric abscess:** suppurative inflammation extends through the renal capsule into the perinephric tissue
+- Repeated septicaemic episodes in the presence of unrelieved obstruction, diabetes or immunodeficiency
+- Healing leaves irregular cortical scars
 
 ## List the causes of acute renal failure.
 
@@ -11135,12 +11134,10 @@ The histological types of renal cell carcinoma are:
 
 ## Same: how will you confirm it?
 
-The tumour is confirmed by a combination of imaging and histopathology.
-
-1. **Imaging.** Ultrasonography detects a solid renal mass and differentiates it from a simple cyst, which has a smooth outline, is avascular and gives a fluid signal. Contrast-enhanced CT of the abdomen is the principal investigation, showing an enhancing mass and delineating its extent, renal vein and caval involvement and lymph nodes; MRI helps to assess venous extension. Chest imaging, and bone scan if indicated, search for metastases.
-2. **Histopathology.** The definitive diagnosis is made by microscopic examination of the tumour, usually the radical nephrectomy specimen, which establishes the histological type and grade; a needle biopsy is used in selected cases when surgery is not planned.
-3. **Supporting laboratory tests.** Urine microscopy for red cells, complete blood count (anaemia or, less commonly, polycythaemia), ESR, serum calcium and liver function tests, which may reflect paraneoplastic effects or metastases.
-
+- **Imaging:** computed tomography or magnetic resonance imaging detects the renal mass; many tumours are now found incidentally on these studies
+- **Histology:** the tumour is typed by its histologic, cytogenetic and genetic features
+  - Clear cell (70% to 80%), papillary (10% to 15%), chromophobe (5%), Xp11 translocation and collecting duct carcinoma
+- Spread is looked for: renal vein invasion with a column of tumour towards the inferior vena cava, and metastases to the lungs (more than 50%) and bones (33%)
 
 ## Classify tumours of kidney.
 
@@ -11228,60 +11225,31 @@ The evaluation comprises urine microscopy, culture and cytology, serum creatinin
 
 ## What do you mean by massive proteinuria?
 
-Massive proteinuria is the loss of **3.5 g or more of protein in the urine per 24 hours** (a lesser amount, adjusted for body size, in children). This is the "nephrotic-range" proteinuria that is the cardinal feature of nephrotic syndrome. It is caused by a marked increase in permeability of the glomerular filtration barrier, so that large amounts of albumin, and in some diseases globulins, escape into the urine. It is much more than the mild to moderate proteinuria (usually under 1–2 g/day) of nephritic syndrome and the minor protein excretion (less than 150 mg/day) of the normal individual. It leads to hypoalbuminaemia, oedema and hyperlipidaemia.
-
+Daily loss of **3.5 g or more of protein** in the urine (less in children), the feature of nephrotic syndrome.
 
 ## What are the causes of massive proteinuria?
 
-Massive proteinuria is caused by diseases that severely damage the glomerular filtration barrier.
+Massive proteinuria is caused by derangement of the glomerular capillary wall, which increases permeability to plasma proteins, as in nephrotic syndrome.
 
-**Primary glomerular diseases**
-
-- Minimal change disease (the commonest cause in children)
-- Membranous nephropathy (the commonest in older adults)
-- Focal segmental glomerulosclerosis
-- Membranoproliferative glomerulonephritis and dense deposit disease
-- IgA nephropathy and other proliferative glomerulonephritides, occasionally
-
-**Systemic diseases**
-
-- Diabetes mellitus (diabetic nephropathy)
-- Amyloidosis
-- Systemic lupus erythematosus
-- Multiple myeloma (light-chain deposition disease)
-
-**Drugs, infections and malignancy**
-
-- Drugs: NSAIDs, penicillamine, gold, captopril, heroin
-- Infections: malaria, syphilis, hepatitis B and C, HIV
-- Carcinoma and lymphoma
-
-**Other:** hereditary nephritis and congenital nephrotic syndrome, preeclampsia and, as a secondary process, glomerulosclerosis from loss of renal mass (reflux nephropathy, obesity).
-
+- **Primary glomerular lesions:** minimal change disease (most common in children), membranous nephropathy (most common in older adults), primary focal segmental glomerulosclerosis (all ages)
+- **Systemic causes:** diabetes, amyloidosis and systemic lupus erythematosus are the most frequent
+- Less common: membranoproliferative glomerulonephritis and IgA nephropathy
+- Secondary membranous nephropathy: drugs (penicillamine, captopril, gold, NSAIDs), carcinomas of lung and colon and melanoma, systemic lupus erythematosus, infections (chronic hepatitis B, hepatitis C, syphilis, schistosomiasis, malaria) and thyroiditis
 
 ## Name the tests we do for proteinuria.
 
-The tests for proteinuria are:
-
-1. **Dipstick (reagent strip) test** — based on the "protein error of indicators": albumin binds the indicator tetrabromophenol blue at an acid pH, changing its colour from yellow to green or blue. It is sensitive mainly to albumin and does not detect Bence Jones protein or low concentrations (microalbuminuria).
-2. **Heat coagulation test** (heat and acetic acid) — protein coagulates on boiling; persistence of turbidity after adding dilute acetic acid confirms protein.
-3. **Sulfosalicylic acid test** — acid precipitation of all proteins, including albumin, globulins and Bence Jones protein, producing turbidity.
-4. **Heller's nitric acid (ring) test** — a white ring of precipitated protein at the junction of urine layered over concentrated nitric acid.
-5. **Esbach's albuminometer** — semi-quantitative estimation of protein.
-6. **Quantitative tests** — 24-hour urinary protein; spot urine protein–creatinine ratio; urine albumin–creatinine ratio (for microalbuminuria).
-7. **Urine protein electrophoresis and immunofixation** — to characterise the protein, for example Bence Jones protein or glomerular versus tubular patterns.
-
+1. **Urine dipstick** for protein
+2. **24-hour urine protein** collection
+3. **Random urine protein to creatinine ratio**; an early morning sample is preferred as it represents the 24-hour sample
+4. **Urine albumin**, in a 24-hour collection or as an early morning or random albumin to creatinine ratio
 
 ## What are the causes of proteinuria?
 
-Proteinuria is the excretion of more than 150 mg of protein in the urine per day. Its causes are classified by mechanism.
-
-1. **Physiological (functional) proteinuria** — transient and benign: strenuous exercise, fever, emotional stress, pregnancy, exposure to cold; and orthostatic (postural) proteinuria in adolescents.
-2. **Glomerular proteinuria** — due to increased permeability of the filtration barrier: minimal change disease, membranous nephropathy, FSGS, proliferative glomerulonephritis, diabetic nephropathy, amyloidosis, lupus nephritis. It ranges from mild to massive, and may be selective or nonselective.
-3. **Tubular proteinuria** — low-molecular-weight proteins (β₂-microglobulin, retinol-binding protein) not reabsorbed by damaged proximal tubules: tubulointerstitial nephritis, pyelonephritis, acute tubular injury, Fanconi syndrome, heavy-metal toxicity, cystic kidney diseases. The amount is usually under 2 g/day.
-4. **Overflow proteinuria** — a raised plasma concentration of a low-molecular-weight protein exceeds tubular reabsorptive capacity: Bence Jones protein in multiple myeloma, myoglobin in rhabdomyolysis, haemoglobin in haemolysis, lysozyme in monocytic leukaemia.
-5. **Post-renal proteinuria** — protein added to urine in the lower tract from inflammation, calculi, tumours or prostatic disease.
-
+- **Glomerular proteinuria:** defect in permselectivity of the glomerular filtration barrier, as in glomerulonephritis and nephrotic syndrome
+- **Tubular proteinuria:** incomplete tubular reabsorption of protein, as in interstitial nephritis
+- **Overflow proteinuria:** increased plasma concentration of protein, as in multiple myeloma (Bence Jones protein) and myoglobinuria
+- Urinary tract inflammation or tumour
+- Conditions not related to renal disease: posture, fever, exercise, and urinary tract infection
 
 ## How do you perform the heat coagulation test of urine?
 
@@ -11303,120 +11271,80 @@ Proteinuria is the excretion of more than 150 mg of protein in the urine per day
 
 ## What is microalbumin? Write its importance.
 
-**Definition.** Microalbuminuria is the excretion of small amounts of albumin in the urine that are above the normal range but below the threshold of detection by the routine dipstick test or heat test, conventionally 30–300 mg per 24 hours (an albumin–creatinine ratio of about 30–300 mg/g) in an adult. The normal excretion is less than 30 mg/day; above 300 mg/day is overt (macroalbuminuria) proteinuria.
-
-**Importance**
-
-1. It is the **earliest detectable marker of diabetic nephropathy**, at a stage when the lesion is still potentially reversible; annual screening is therefore recommended in diabetic patients.
-2. It identifies patients with hypertension at risk of renal involvement, and it is an early indication of renal damage of other kinds.
-3. It is a marker of generalised **endothelial dysfunction** and of increased cardiovascular risk.
-4. Early identification allows intervention — strict glycaemic and blood pressure control and renin–angiotensin system blockade — that slows progression to overt nephropathy and renal failure.
-
-It is best measured as the albumin–creatinine ratio on a first morning urine, and a positive result should be confirmed on repeat samples, since fever, exercise, urinary infection and menstruation can cause transient elevation.
+- **Microalbumin** is an obsolete term, as there is no such biochemical molecule; it is now called **urine albumin**
+- Marker for the detection of incipient nephropathy in diabetics
+- Independent marker for cardiovascular disease, since it indicates increased endothelial permeability
+- Marker of chronic renal impairment
+- Measured in a 24-hour urine or as an early morning or random albumin to creatinine ratio
+- Albuminuria on two occasions, with urinary tract infection excluded, indicates glomerular dysfunction; albuminuria for 3 months or more indicates chronic kidney disease
 
 ## Give the normal serum concentration of uric acid.
 
-The normal serum uric acid concentration is approximately **3.5–7.2 mg/dL (about 210–430 µmol/L) in adult males** and **2.6–6.0 mg/dL (about 155–360 µmol/L) in adult females**; values are lower in children and in premenopausal women, and the reference range varies slightly with the method and the laboratory.
-
+- Adult men and postmenopausal women: **3.5 to 7.2 mg/dL**
+- Premenopausal women: **2.6 to 6.0 mg/dL**
 
 ## Give the normal serum albumin value.
 
-The normal serum albumin concentration is **3.5–5.0 g/dL (35–50 g/L)**, forming just over half of the total serum protein of 6.0–8.3 g/dL (60–83 g/L). A level below 3 g/dL is characteristic of nephrotic syndrome.
-
+**3.5 to 5.0 g/dL**
 
 ## Give the normal serum urea value.
 
-The normal serum (blood) urea concentration is approximately **15–40 mg/dL (2.5–6.5 mmol/L)**, corresponding to a blood urea nitrogen (BUN) of about **7–20 mg/dL**; urea is converted to BUN by multiplying by 0.47 (BUN × 2.14 gives urea). It is higher with a high protein diet and in the elderly.
-
+Blood urea nitrogen: **8 to 20 mg/dL**, with levels up to 23 mg/dL regarded as normal in those over 60 years.
 
 ## Give the normal serum creatinine value.
 
-The normal serum creatinine concentration is approximately **0.7–1.3 mg/dL (62–115 µmol/L) in adult males** and **0.6–1.1 mg/dL (53–97 µmol/L) in adult females**, the difference reflecting muscle mass; the value is lower in children.
-
+- Males: **0.6 to 1.2 mg/dL**
+- Females: **0.4 to 1.0 mg/dL**
 
 ## Name the important renal function tests with interpretation and normal values.
 
-Renal function tests assess glomerular filtration, tubular function and the integrity of the nephron. They are listed in the table below with interpretation.
-
-**A. Tests of glomerular function**
-
-| Test | Normal value | Interpretation |
-|---|---|---|
-| Serum creatinine | Males 0.7–1.3 mg/dL; females 0.6–1.1 mg/dL | Rises in reduced GFR; insensitive early, because it rises only when GFR has fallen by about 50%; depends on muscle mass |
-| Blood urea / BUN | Urea 15–40 mg/dL; BUN 7–20 mg/dL | Raised in azotaemia from any cause; also in prerenal states, high protein intake, GI bleeding, catabolic states; less specific than creatinine |
-| BUN : creatinine ratio | About 10–20 : 1 | Over 20 suggests prerenal azotaemia or obstruction; normal ratio in intrinsic renal disease |
-| Creatinine clearance (UV/P) | About 90–120 mL/min/1.73 m² | Estimates GFR; reduced in renal disease; overestimates GFR because of tubular creatinine secretion; requires a complete 24-hour collection |
-| Estimated GFR (CKD-EPI, MDRD) | ≥90 mL/min/1.73 m² | Calculated from serum creatinine, age and sex; staging of chronic kidney disease (below 60 for at least 3 months defines CKD; below 15 is kidney failure) |
-| Inulin clearance | About 125 mL/min | Gold standard for GFR; research use only |
-| Serum cystatin C | About 0.6–1.0 mg/L | Alternative marker of GFR; independent of muscle mass |
-
-**B. Tests of tubular function**
-
 | Test | Normal | Interpretation |
 |---|---|---|
-| Urine specific gravity | 1.003–1.030 | Fixed low specific gravity (about 1.010) indicates loss of concentrating ability; the earliest tubular defect in chronic tubulointerstitial disease and obstruction |
-| Urine osmolality; water deprivation test | Random 50–1200 mOsm/kg; over 800 mOsm/kg after water deprivation | Failure to concentrate indicates tubular dysfunction or diabetes insipidus |
-| Urinary acidification test | Urine pH below 5.3 after acid load | Failure indicates renal tubular acidosis |
-| Urine electrolytes and fractional excretion of sodium | FE_Na below 1% in prerenal states | Over 2% suggests acute tubular injury |
-
-**C. Other investigations**
-
-- Urinalysis: protein, red cells and casts, white cells, crystals, and albumin–creatinine ratio.
-- Serum electrolytes: Na⁺ 135–145 mmol/L, K⁺ 3.5–5.0 mmol/L, bicarbonate 22–28 mmol/L, calcium and phosphate, to assess the consequences of renal failure.
-- Imaging: ultrasonography for kidney size, echogenicity and obstruction; isotope renography; and biopsy where indicated.
-
+| **Glomerular filtration rate (GFR)** | 90 to 120 mL per minute in an adult male | The best overall indicator of glomerular function; less than 15 mL per minute is end-stage renal failure; a normal GFR does not exclude renal disease |
+| **Creatinine clearance** | Calculated from urinary creatinine, urine flow rate and plasma creatinine | Indicator of GFR; overestimates GFR by 10% to 20% because of tubular secretion; needs accurate timed urine collection |
+| **Serum creatinine** | Males 0.6 to 1.2 mg/dL; females 0.4 to 1.0 mg/dL | Raised when GFR falls or urine elimination is obstructed; a late marker, since about 50% of kidney function is lost before it rises |
+| **Blood urea nitrogen** | 8 to 20 mg/dL | Raised in acute and chronic renal impairment, but also in upper gastrointestinal bleeding, dehydration, catabolic states and high protein diet; rises earlier but is less accurate than creatinine |
+| **BUN to creatinine ratio** | Not applicable | About 20 to 1 in pre-renal disease; about 10 to 1 in intrinsic renal disease |
+| **Cystatin C** | Not given | Inversely related to GFR; not affected by age, muscle bulk or diet; more reliable than creatinine in early renal impairment |
+| **Urine albumin and protein** | Protein up to 150 mg per day; albumin to creatinine ratio less than 30 mg per g | Frank proteinuria is more than 300 mg per day; albumin to creatinine ratio of 30 to 300 mg per g (A2) and more than 300 mg per g (A3) are abnormal; albuminuria for 3 months or more indicates chronic kidney disease |
+| **Urine specific gravity and osmolality** | Specific gravity 1.003 to 1.030; osmolality more than 750 mOsmol per kg | Tests of tubular concentrating ability |
 
 ## What do you mean by renal clearance test?
 
-Renal clearance is the **volume of plasma from which a substance is completely removed by the kidneys per minute**. It is calculated as
-
-**C = (U × V) / P**
-
-where U is the urinary concentration of the substance, V is the urine flow rate in mL/min, and P is its plasma concentration.
-
-Different substances measure different aspects of renal function according to the way the kidney handles them. **Inulin**, which is filtered freely and neither secreted nor reabsorbed, gives the true glomerular filtration rate (about 125 mL/min). **Creatinine**, which is filtered and slightly secreted, is the practical clinical measure of GFR (creatinine clearance); it slightly overestimates GFR. **Urea** clearance, partly reabsorbed, underestimates GFR and is of historical interest. **Para-aminohippuric acid (PAH)**, which is removed almost completely from the plasma in a single pass, measures effective renal plasma flow.
-
-For creatinine clearance, a timed (usually 24-hour) urine collection and a plasma sample are needed. A reduced clearance indicates reduced GFR; incomplete collection is the commonest source of error. In practice, GFR is now usually estimated from serum creatinine with predictive equations, such as the CKD-EPI equation.
-
+- The rate in mL per minute at which a substance is removed from the plasma by the kidney
+- **Clearance** equals urinary concentration multiplied by urinary flow rate (volume per time), divided by plasma concentration
+- The **glomerular filtration rate** is the clearance of a substance that is freely filtered and neither reabsorbed nor secreted by the tubule
+  - Inulin clearance is the reference method; radioisotopes and iohexol are other exogenous markers
+  - **Creatinine clearance** is the most commonly used endogenous marker; it needs a 24-hour urine collection, or preferably an accurately timed collection of 5 to 8 hours, and is corrected for body surface area
+- Normal GFR in an adult male is 90 to 120 mL per minute
 
 ## Write about the causes of uremia.
 
-Uraemia is the clinical syndrome that develops when azotaemia (raised blood urea and creatinine) from a reduced GFR leads to symptoms and signs of retained nitrogenous waste, with metabolic and endocrine disturbances and involvement of the gastrointestinal tract, nerves and heart. Its causes are those of acute or chronic renal failure.
+Uraemia is azotaemia that has led to clinical signs and symptoms, so it arises from renal failure.
 
-**1. Prerenal causes** (hypoperfusion of the kidneys, without parenchymal damage initially): hypovolaemia from haemorrhage, burns, vomiting or diarrhoea; shock; congestive heart failure; and hypotension. If prolonged, they cause acute tubular injury.
-
-**2. Renal (intrinsic) causes**
-
-- Acute: acute tubular injury (ischaemic or nephrotoxic), acute glomerulonephritis and rapidly progressive glomerulonephritis, acute interstitial nephritis, acute pyelonephritis with papillary necrosis, thrombotic microangiopathies, bilateral cortical necrosis.
-- Chronic (leading to end-stage kidney disease): diabetic nephropathy, hypertensive nephrosclerosis, chronic glomerulonephritis, chronic pyelonephritis and reflux nephropathy, polycystic kidney disease, analgesic nephropathy, amyloidosis, lupus nephritis, and renal artery stenosis.
-
-**3. Postrenal causes** (obstruction to urine outflow): calculi, benign prostatic hyperplasia, carcinoma of the prostate, bladder or cervix, urethral strictures, and retroperitoneal fibrosis. Postrenal azotaemia is corrected if the obstruction is relieved.
-
+- **Acute kidney injury:** rapid decline in GFR over hours to days, from glomerular, interstitial, vascular or acute tubular injury
+  - Pre-renal causes: reduced blood flow to the kidneys, as in hypotensive and cardiogenic shock, dehydration and major blood loss
+  - Renal causes: nephrotoxic drugs and toxins, sepsis, myeloma, autoimmune and inflammatory disease, tubular damage
+  - Post-renal causes: blockage of the urinary tract by bladder, prostate or cervical cancer, large stones and blood clots
+- **Chronic kidney disease:** GFR persistently less than 60 mL per minute per 1.73 square metres for at least 3 months and/or persistent albuminuria; hypertension and diabetes are the most common causes worldwide
+- **End-stage kidney disease:** GFR less than 5% of normal, the terminal stage of uraemia
 
 ## Why is serum creatinine more specific than blood urea?
 
-Serum creatinine is more specific for renal function than blood urea because creatinine is handled by the body in a far more predictable manner.
-
-Creatinine is formed from creatine in muscle at a nearly constant rate, which is proportional to muscle mass, and is not influenced by diet, protein metabolism or hydration. It is freely filtered by the glomerulus, is not reabsorbed by the tubules, and is secreted in only small amounts, so that its serum concentration depends essentially on GFR.
-
-Urea, by contrast, is a product of protein catabolism whose production varies. It is increased by a high protein diet, gastrointestinal haemorrhage, catabolic states such as fever, trauma and corticosteroid therapy, and decreased by liver disease and a low protein diet. In addition, some 40–50% of filtered urea is reabsorbed passively by the tubules, and this fraction increases when urine flow is low, as in dehydration or heart failure. Blood urea therefore rises in prerenal conditions and from extrarenal causes even when the kidneys are structurally normal.
-
-Creatinine is thus a more reliable index of GFR, and a rising blood urea with normal creatinine points to an extrarenal cause. Its limitation is that it is insensitive in early renal disease, when the large reserve of the kidney maintains it within the normal range until GFR has fallen by about half.
-
+- Creatinine is the by-product of creatine phosphate in muscle and is produced at a constant rate
+- It is cleared from the blood almost entirely by the kidney
+- **Urea** is formed in the liver from protein metabolism and only about 85% is eliminated by the kidneys
+- Urea also rises in upper gastrointestinal bleeding, dehydration, catabolic states and high protein diet, and falls in starvation, low protein diet and severe liver disease
+- Serum creatinine is therefore the more accurate assessment of renal function, although urea rises earlier in renal disease
 
 ## Give the clinical importance of serum creatinine.
 
-The clinical importance of serum creatinine is as follows.
-
-1. It is the most widely used **index of glomerular filtration rate**: the serum level rises as GFR falls (inversely related), and it is used to calculate the estimated GFR.
-2. It is used to **diagnose and stage acute kidney injury and chronic kidney disease** (a rise above baseline defines acute injury; an eGFR below 60 mL/min/1.73 m² for 3 months defines CKD).
-3. It is used to **monitor the progression of renal disease** and the response to treatment, and to detect rejection of a renal allograft.
-4. It guides **dosing of drugs** cleared by the kidney and the safety of nephrotoxic agents and radiographic contrast.
-5. A raised level with a **BUN:creatinine ratio** above 20 suggests a prerenal cause, while a ratio of about 10–15 suggests intrinsic renal disease.
-6. A rising creatinine in a patient with obstruction indicates the need for urgent relief.
-
-A normal creatinine does not exclude early renal disease, and the level is affected by muscle mass, age and some drugs that block tubular secretion.
-
+- Raised when there is a significant reduction in GFR or when urine elimination is obstructed
+- A **late marker**: about 50% of kidney function is lost before the level rises
+- Used in the estimating equations for GFR (MDRD and CKD-EPI), which are superior to serum creatinine alone as they include age, gender and race
+- Used to stage chronic kidney disease and to define acute kidney injury
+- Used with BUN to give the BUN to creatinine ratio, which separates pre-renal from renal causes
+- Limitations: raised by high protein intake and increased muscle bulk; unreliable in the elderly, amputees and muscular dystrophy; falls in pregnancy
 
 ## State the clinical significance of raised serum uric acid.
 
@@ -11461,30 +11389,26 @@ In renal glycosuria the transport capacity is reduced or the threshold is lowere
 
 ## Name the routine tests/investigations done on urine.
 
-The routine examination of urine comprises the following.
-
-1. **Physical examination:** volume, colour, appearance (clear or turbid), odour, specific gravity (or osmolality), and reaction (pH).
-2. **Chemical examination:** protein, glucose (reducing substances), ketone bodies, bile salts and bile pigments (bilirubin), urobilinogen, and blood (haemoglobin), and by reagent strip also nitrite and leukocyte esterase.
-3. **Microscopic examination of the centrifuged sediment:** red cells, white cells, epithelial cells, casts (hyaline, granular, cellular, fatty and waxy), crystals, bacteria, yeasts and parasites such as Schistosoma haematobium.
-4. **Culture and sensitivity** of a midstream specimen when infection is suspected.
-
+1. **Physical examination:** colour and clarity
+   - Normal urine is straw-coloured; dark in dehydration; red in haematuria, porphyria or after beetroot; cloudy in pyuria
+   - Specific gravity, 1.003 to 1.030
+2. **Chemical examination** by dipstick: protein, glucose, blood, ketones, bilirubin, urobilinogen, nitrite and leucocyte esterase
+3. **Microscopic examination:** cells, casts, crystals and micro-organisms
+- A freshly voided midstream sample is best, as it is less likely to be contaminated by epithelial cells and commensal bacteria
 
 ## Mention the chemical examinations done in urine with their principles.
 
-| Test | Substance detected | Principle |
-|---|---|---|
-| Reagent strip (tetrabromophenol blue) | Protein (mainly albumin) | "Protein error of indicators": at constant acid pH, protein binds the indicator dye and changes its colour |
-| Heat and acetic acid test; sulfosalicylic acid test | Total protein | Coagulation by heat; precipitation by acid |
-| Benedict's test | Reducing substances | Reduction of cupric ions to coloured cuprous oxide in hot alkaline solution |
-| Glucose oxidase–peroxidase strip | Glucose (specific) | Glucose oxidase converts glucose to gluconic acid and hydrogen peroxide; peroxidase then oxidises a chromogen to a coloured product |
-| Rothera's test; nitroprusside strip | Ketone bodies (acetoacetate, acetone) | Reaction with sodium nitroprusside in alkaline solution gives a purple colour |
-| Fouchet's test; diazo strip | Bilirubin | Oxidation of bilirubin to green biliverdin by ferric chloride; or coupling with a diazonium salt |
-| Ehrlich's aldehyde test | Urobilinogen | Condensation with p-dimethylaminobenzaldehyde in acid gives a red colour |
-| Reagent strip with a chromogen | Blood (haemoglobin) | Pseudoperoxidase activity of haemoglobin oxidises the chromogen in the presence of peroxide |
-| Griess test (strip) | Nitrite (bacteriuria) | Nitrite from the reduction of nitrate by bacteria forms a diazonium compound that couples to give a pink azo dye |
-| Leukocyte esterase strip | Pyuria | Esterase from leukocytes hydrolyses an ester to give a product that reacts with a diazonium salt to form a purple colour |
-| Indicator papers; methyl red and bromothymol blue | pH | Colour change of indicator dyes |
+The urine dipstick uses **dry chemistry**: reagents impregnated on the paper change colour on contact with urine, and the colour is compared with a chart.
 
+| Analyte | Interpretation |
+|---|---|
+| **Protein** | Not detectable in healthy urine |
+| **Glucose** | Not detected in health; seen in diabetes mellitus, pregnancy and renal glycosuria, when the renal threshold of 180 mg/dL is lowered |
+| **Blood** | Detects the globin portion of haemoglobin, so cannot separate haemoglobin from myoglobin; ascorbic acid causes a falsely negative result |
+| **Ketones** | Present in fasting, severe vomiting and diabetic ketoacidosis; detects acetoacetate and acetone only |
+| **Bilirubin** | Not detected in normal urine; present in conjugated hyperbilirubinaemia |
+| **Urobilinogen** | May be present normally; absent in conjugated hyperbilirubinaemia, increased in pre-hepatic jaundice and haemolysis |
+| **Nitrite and leucocyte esterase** | Indicators of urinary tract infection; Enterobacteriaceae convert nitrate to nitrite |
 
 ## What are the reducing substances/agents found in urine?
 
@@ -11517,33 +11441,13 @@ A positive result indicates a reducing substance, not necessarily glucose, and s
 
 ## Define oliguria.
 
-Oliguria is a reduced urine output, defined as a urine volume of **less than 400 mL in 24 hours** in an adult (about 17 mL/hour), or in clinical practice less than 0.5 mL/kg of body weight per hour. Anuria is the virtual absence of urine, with less than about 100 mL/24 hours. The reduction in urine volume reflects a fall in GFR, and it is a prominent feature of severe acute kidney injury, in which the maintenance phase of acute tubular injury is characterised by urine output of 40–400 mL/day.
-
+Urine output of **less than 400 mL per day**.
 
 ## Mention the causes of oliguria.
 
-The causes of oliguria are grouped as prerenal, renal and postrenal.
-
-**Prerenal (reduced renal perfusion)**
-
-- Hypovolaemia from haemorrhage, severe vomiting or diarrhoea, burns, dehydration and excessive diuresis
-- Decreased cardiac output: shock, congestive heart failure, myocardial infarction
-- Sepsis, hepatorenal syndrome, and nephrotic syndrome with intravascular volume depletion
-
-**Renal (intrinsic)**
-
-- Acute tubular injury (ischaemic or nephrotoxic)
-- Acute glomerulonephritis and rapidly progressive glomerulonephritis
-- Acute interstitial nephritis and acute pyelonephritis
-- Vascular: thrombotic microangiopathy (HUS/TTP), renal artery or vein occlusion, bilateral cortical necrosis, malignant hypertension
-- Acute-on-chronic renal failure
-
-**Postrenal (obstruction)**
-
-- Bilateral ureteric calculi, blood clots, sloughed papillae
-- Benign prostatic hyperplasia, prostate or bladder tumours, urethral stricture, neurogenic bladder
-
-**Physiological:** reduced fluid intake or excessive sweating.
+- **Pre-renal:** reduced renal blood flow, as in hypotensive and cardiogenic shock, dehydration and major blood loss
+- **Renal:** acute tubular injury, nephrotoxic drugs, sepsis, myeloma, autoimmune disease; nephritic syndrome and rapidly progressive glomerulonephritis
+- **Post-renal:** blockage of the urinary tract; complete bilateral obstruction of rapid onset leads to oliguria or anuria
 
 ## Classify testicular (germ cell) tumours.
 
@@ -12750,7 +12654,7 @@ The types are:
 The causes of neonatal meningitis are organisms acquired from the maternal genital tract at or near delivery, or from the nursery environment.
 
 1. **Group B streptococci** (Streptococcus agalactiae) are the most common cause in developed countries.
-2. ***Escherichia coli***, especially the K1 capsular antigen strains, are the commonest gram-negative cause, together with other enteric bacilli: Klebsiella, Enterobacter, Citrobacter, Proteus and Pseudomonas.
+2. **Escherichia coli**, especially the K1 capsular antigen strains, are the commonest gram-negative cause, together with other enteric bacilli: Klebsiella, Enterobacter, Citrobacter, Proteus and Pseudomonas.
 3. ***Listeria monocytogenes***, acquired transplacentally or at birth.
 4. Staphylococcus aureus and coagulase-negative staphylococci, especially in premature infants with intravascular devices, shunts or neural tube defects.
 5. Haemophilus influenzae and other organisms, less commonly.
