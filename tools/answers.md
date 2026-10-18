@@ -14333,3 +14333,172 @@ Nephrotic syndrome is caused by a derangement of the glomerular capillary wall, 
 
 - **Infection**, especially staphylococcal and pneumococcal, probably from loss of immunoglobulins in the urine
 - **Thrombosis and thromboembolism**, partly from loss of antithrombin III in the urine; renal vein thrombosis is most often a consequence of this hypercoagulable state
+
+## What are the urinary/biochemical findings of nephrotic syndrome?
+
+- **Massive proteinuria:** 3.5 g or more per day (less in children); the largest proportion is albumin. Highly selective proteinuria is mostly low-molecular-weight proteins (albumin, transferrin); poorly selective proteinuria also contains higher-molecular-weight globulins
+- **Hypoalbuminaemia:** plasma albumin below 3 g/dL
+- **Hyperlipidaemia:** raised cholesterol, triglyceride, very-low-density lipoprotein, low-density lipoprotein, lipoprotein(a) and apoprotein; high-density lipoprotein is decreased in some patients
+- **Lipiduria:** lipid in the urine as free fat or as oval fat bodies
+- Loss of immunoglobulins and antithrombin III in the urine
+
+## How will you investigate/diagnose a case of nephrotic syndrome?
+
+1. **Urine:** proteinuria of 3.5 g or more per day; selectivity of the proteinuria; lipiduria (free fat, oval fat bodies)
+2. **Blood:** plasma albumin below 3 g/dL; serum lipids
+3. **Exclude secondary causes:** diabetes, amyloidosis and SLE are the most frequent systemic causes; also underlying malignant tumour, infection (hepatitis B, hepatitis C, syphilis) and drugs, because treating the cause can reverse the injury
+4. **Renal biopsy** with light microscopy, immunofluorescence and electron microscopy to identify the lesion:
+   - **Minimal change disease:** normal glomeruli on light microscopy; diffuse effacement of podocyte foot processes on electron microscopy, without deposits
+   - **Membranous nephropathy:** diffuse thickening of the capillary wall; granular IgG and C3 on immunofluorescence; subepithelial deposits on electron microscopy
+   - **Focal segmental glomerulosclerosis:** sclerosis of part of the capillary tuft in a subset of glomeruli
+
+## What is nephritic syndrome (AGN)?
+
+**Nephritic syndrome** is a clinical entity caused by inflammatory glomerular disease and dominated by the acute onset of grossly visible or microscopic **haematuria**, diminished GFR, mild to moderate **proteinuria** and **hypertension**. It is the classic presentation of acute poststreptococcal glomerulonephritis.
+
+## Write down the pathogenesis of acute post-streptococcal glomerulonephritis.
+
+1. Caused by **immune complexes** containing streptococcal antigens and specific antibodies
+2. Only certain strains of **group A beta-haemolytic streptococci** are nephritogenic; more than 90% of cases are traced to types 1, 4 and 12, identified by typing of the M protein of the cell wall
+3. **Streptococcal pyogenic exotoxin B (SpeB)** is the principal antigen in most cases and is localised to the "humplike" deposits
+4. The inciting antigens are first planted from the circulation in **subendothelial** locations of the glomerular capillary wall, leading to in situ formation of immune complexes that elicit an inflammatory response
+5. The complexes then dissociate, migrate across the GBM, and reform on the **subepithelial** side; deposition of circulating immune complexes may also contribute
+6. Leukocyte infiltration and proliferation of glomerular cells injure the capillary walls, allowing blood into the urine; the fall in GFR causes oliguria, fluid retention and azotemia
+7. Evidence for an immunologic basis:
+   - The latent period between infection and nephritis is compatible with the time needed to form antibodies and immune complexes
+   - Antistreptococcal antibody titres are raised in the great majority of patients
+   - Serum complement is low, from activation and consumption
+   - Granular immune deposits are present in the glomeruli
+
+## What are the urinary findings of acute glomerulonephritis?
+
+- **Haematuria:** smoky or cola-coloured urine; **dysmorphic red cells** or **red cell casts**
+- **Mild proteinuria**, usually less than 1 g/day
+- **Oliguria**
+
+## Mention the complications of acute glomerulonephritis.
+
+- **Acute:** oliguria, fluid retention, azotemia, hypertension
+- **Rapidly progressive glomerulonephritis**, in a small minority of children (perhaps less than 1%) who do not improve and become severely oliguric
+- **Chronic glomerulonephritis**, with or without recurrence of an active nephritic picture, in some of the remaining patients
+- Prolonged and persistent heavy proteinuria and abnormal GFR mark an unfavourable prognosis
+- **Adults:** only about 60% of sporadic cases recover promptly; in the rest there is persistent proteinuria, haematuria and hypertension, with progression to chronic glomerulonephritis or rapidly progressive glomerulonephritis in some
+
+## Write the laboratory investigations to differentiate AGN from nephrotic syndrome.
+
+| Feature | Acute glomerulonephritis (nephritic) | Nephrotic syndrome |
+|---|---|---|
+| **Proteinuria** | Subnephrotic, usually less than 1 g/day | Massive, 3.5 g or more per day |
+| **Urine sediment** | Dysmorphic red cells and red cell casts | Lipiduria: free fat and oval fat bodies |
+| **Blood** | Raised BUN and serum creatinine (azotemia) | Plasma albumin below 3 g/dL; raised cholesterol and triglyceride |
+
+- In acute poststreptococcal glomerulonephritis, antistreptococcal antibody titres are raised and the serum concentration of C3 and other complement components is low
+
+## A child has oliguria, cocoa-coloured urine, periorbital puffiness after sore throat/skin infection. What is the probable diagnosis?
+
+**Acute poststreptococcal glomerulonephritis** (nephritic syndrome).
+
+- It usually appears 1 to 4 weeks after a streptococcal infection of the pharynx or skin (impetigo), most often in children 6 to 10 years of age
+- The typical child abruptly develops malaise, fever, nausea, oliguria and haematuria (smoky or cola-coloured urine) 1 to 2 weeks after a sore throat
+- Periorbital oedema, mild to moderate hypertension, dysmorphic red cells or red cell casts and mild proteinuria are found
+- Raised antistreptococcal antibody titres and a low serum C3 support the diagnosis
+
+## List the causes of acute renal failure.
+
+Acute kidney injury can result from glomerular, interstitial, vascular or acute tubular injury.
+
+1. **Acute tubular injury**, the most common cause (about 50% of cases in hospitalised patients):
+   - **Ischaemic:** severe trauma, acute pancreatitis, or any period of inadequate blood flow with hypotension and shock
+   - **Nephrotoxic:** gentamicin, radiographic contrast agents, heavy metals (mercury), organic solvents (carbon tetrachloride)
+   - **Combined:** mismatched blood transfusions and other haemolytic crises causing haemoglobinuria; skeletal muscle injury causing myoglobinuria
+2. **Interstitial:**
+   - Pyelonephritis
+   - **Acute drug-induced interstitial nephritis:** synthetic penicillins (methicillin, ampicillin), rifampin, thiazide diuretics, NSAIDs, allopurinol, cimetidine, immune checkpoint inhibitors
+   - **Acute uric acid nephropathy:** precipitation of uric acid crystals in the collecting ducts, as in leukaemias or lymphomas treated with chemotherapy (tumour lysis syndrome)
+3. **Glomerular:** rapidly progressive glomerulonephritis
+4. **Vascular:** thrombotic microangiopathy (haemolytic uraemic syndrome and thrombotic thrombocytopenic purpura)
+
+## A 6y girl has watery stool then cessation of micturition. What is the most likely mechanism?
+
+**Typical (diarrhoea-positive) haemolytic uraemic syndrome:**
+
+1. Intestinal infection with an **E. coli** strain (most commonly O157:H7) that produces **Shiga-like toxin**
+2. The toxin activates endothelial cells, which increase leukocyte adhesion molecules and endothelin and decrease nitric oxide production; with cytokines such as TNF it may cause endothelial apoptosis
+3. **Endothelial injury** leads to platelet activation, thrombosis and vasoconstriction, producing **thrombotic microangiopathy**
+4. Thrombi in the glomerular capillaries and arterioles cause ischaemia and renal failure, with red cell haemolysis and consumptive thrombocytopenia
+
+## Classify tumours of kidney.
+
+| Type | Tumour | Notes |
+|---|---|---|
+| **Benign** | **Renal papillary adenoma** | Arises from tubular epithelium; less than 1.5 cm; trisomies 7 and 17 |
+| | **Angiomyolipoma** | Vessels, smooth muscle and fat; in 25% to 50% of patients with tuberous sclerosis |
+| | **Renal oncocytoma** | About 5% of renal neoplasms; arises from intercalated cells of collecting ducts |
+| **Malignant** | **Renal cell carcinoma** | Most common malignant tumour (85% of renal cancers in adults): clear cell, papillary, chromophobe, Xp11 translocation, collecting duct carcinoma |
+| | **Wilms tumour** (nephroblastoma) | Childhood |
+| | **Urothelial carcinoma** of the calyces and pelves | 5% to 10% of primary renal tumours |
+
+## Write down the morphology of renal cell carcinoma (short note).
+
+**Gross**
+
+- May arise in any part of the kidney, more commonly the poles
+- **Clear cell carcinoma:** usually a solitary unilateral lesion; bright **yellow-gray-white** spherical mass that distorts the kidney; the yellow colour is from lipid in tumour cells
+- Large areas of gray-white necrosis and foci of haemorrhage; margins usually sharply defined and confined within the renal capsule
+- May bulge into the calyces and pelvis and extend into the ureter
+- Strong tendency to invade the **renal vein**, growing as a solid column that may extend up the inferior vena cava to the right side of the heart
+
+**Microscopy**
+
+- **Clear cell:** rounded or polygonal cells with abundant clear or granular cytoplasm containing glycogen and lipid, in nested, tubular, solid or pseudopapillary patterns; delicate branching vasculature; cystic areas; larger tumours show hyalinisation; most are well differentiated, some show bizarre nuclei and giant cells
+- **Papillary:** may be multifocal and bilateral; typically haemorrhagic and cystic; cuboidal or low columnar cells in papillae; foamy histiocytes in the papillary cores; psammoma bodies may be present
+- **Chromophobe:** pale eosinophilic cells, often with a perinuclear halo, in solid sheets, with the largest cells around blood vessels
+- **Collecting duct carcinoma:** irregular channels lined by highly atypical epithelium with a hobnail pattern
+- **Sarcomatoid change** is infrequent in all types and carries a very poor prognosis
+
+## Write a short note on Wilms' tumour/nephroblastoma.
+
+**Definition.** **Wilms tumour** (nephroblastoma) is the most common primary renal tumour of childhood and the fourth most common paediatric malignancy. Peak incidence is 2 to 5 years of age, and 95% occur before 10 years. 5% to 10% involve both kidneys.
+
+**Aetiology and pathogenesis**
+
+| Syndrome | Features | Genetic basis | Risk |
+|---|---|---|---|
+| **WAGR syndrome** (Wilms tumour, aniridia, genitourinary anomalies, intellectual disability) | Aniridia and genitourinary anomalies | Germline deletion of 11p13, with the WT1 gene | About 33% |
+| **Denys-Drash syndrome** (gonadal dysgenesis and early-onset nephropathy) | Diffuse mesangial sclerosis leading to renal failure | Dominant-negative missense mutation of WT1 | About 90% |
+| **Beckwith-Wiedemann syndrome** (organomegaly, macroglossia, hemihypertrophy, omphalocele, adrenal cytomegaly) | Genomic imprinting disorder | 11p15.5 (WT2 locus); loss of imprinting or paternal disomy with overexpression of IGF2 | Increased |
+
+- Sporadic tumours account for 90%: beta-catenin gain-of-function mutations in about 10%; mutations of microRNA processing genes (DROSHA, DGCR8, DICER1) in 15% to 20% of tumours with predominantly blastemal histology
+- **TP53** mutation is associated with anaplasia and poor prognosis
+- **Nephrogenic rests** are precursor lesions
+
+**Morphology**
+
+- Large, solitary, well-circumscribed mass; soft, homogeneous and tan-gray on cut section, with foci of haemorrhage, cyst formation and necrosis; about 10% are bilateral or multicentric
+- Classic **triphasic** pattern: **blastemal** (sheets of small blue cells), **epithelial** (abortive tubules or glomeruli) and **stromal** (fibroblastic or myxoid, sometimes skeletal muscle) components
+- About 5% are **anaplastic**: large hyperchromatic pleomorphic nuclei and abnormal mitoses
+- Nephrogenic rests are found next to 25% to 40% of unilateral tumours and nearly 100% of bilateral tumours
+
+**Clinical features and complications**
+
+- Large abdominal mass, unilateral or extending across the midline into the pelvis; haematuria, abdominal pain, intestinal obstruction and hypertension; pulmonary metastases may be present at diagnosis
+- Cure rate is about 90%; anaplastic histology is the most critical adverse factor
+- Increased risk of second primary tumours (sarcomas, leukaemia, lymphoma, breast cancer), some from radiation therapy
+
+## A male has haematuria, loin pain, palpable lumbar mass. What is the likely diagnosis?
+
+**Renal cell carcinoma.**
+
+- The classic features are costovertebral pain, a palpable mass and haematuria, but all three are seen in only 10% of cases
+- Haematuria is the most reliable clue, but it is usually intermittent and may be microscopic
+- It occurs most often in the sixth and seventh decades, with a 2:1 male preponderance
+
+## Same: what are the histologic types of this lesion?
+
+| Type | Frequency | Features |
+|---|---|---|
+| **Clear cell** | 70% to 80% | Clear or granular cytoplasm in variably sized nests; deletion of chromosome 3 at band p25.3 (the VHL gene site) in 98% |
+| **Papillary** | 10% to 15% | Papillary, tubulopapillary or solid growth; trisomies 7 and 17; MET mutations in the familial form |
+| **Chromophobe** | 5% | Prominent cell membranes and pale eosinophilic cytoplasm with a perinuclear halo; arises from intercalated cells of collecting ducts; excellent prognosis |
+| **Xp11 translocation** (TFE3-rearranged) | Not given | Translocations of the TFE3 gene at Xp11.2; often in young patients |
+| **Collecting duct carcinoma** | About 1% or less | Malignant cells forming glands in a desmoplastic stroma in the medulla; medullary carcinoma is a similar tumour in patients with sickle cell trait |
