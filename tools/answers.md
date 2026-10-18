@@ -9031,175 +9031,140 @@ Bleeding commonly manifests as large post-traumatic ecchymoses or haematomas, or
 
 ## What is bleeding time?
 
-Bleeding time is the time taken for bleeding to stop from a standardised skin puncture or incision, and it measures the function of platelets and their interaction with the vessel wall, that is, the primary haemostatic plug.
+Bleeding time is a test of platelet function in which a standardised incision is made and the time taken for the bleeding to stop is measured.
 
-In the Duke method a small puncture is made in the earlobe or fingertip, and blood is blotted every 30 seconds until bleeding stops; in the Ivy method a sphygmomanometer cuff is inflated to 40 mmHg on the forearm and a puncture or standardised incision (template method) is made. The bleeding time is prolonged in thrombocytopenia, qualitative platelet defects (Glanzmann thrombasthenia, Bernard-Soulier syndrome, aspirin), von Willebrand disease and some vascular disorders, and it is normal in coagulation factor deficiencies such as haemophilia. It is time-consuming, hard to standardise and an unreliable predictor of surgical bleeding, so the older bleeding time test has been discarded in many centres and replaced by platelet function analysis.
+- **Ivy method:** the most common; a cuff on the arm is inflated to 40 mm of mercury, a standardised device makes a small cut on the inner forearm, and the blood is blotted every 2 minutes until bleeding stops.
+- **Duke method:** a lancet stab wound is made in a cleaned finger or earlobe, and timed in the same way.
 
+It is an older test, time-consuming and difficult to standardise, which has been discarded.
 
 ## What is clotting time?
 
-Clotting time is the time taken for freshly drawn venous whole blood to clot in a glass tube under standard conditions, and it is a crude test of the overall intrinsic coagulation pathway.
-
-In the Lee-White method, 2 mL of venous blood is drawn into a clean glass tube at 37°C, and the tube is tilted every 30 seconds until the blood no longer flows; the elapsed time is the clotting time. It is prolonged when there is a marked deficiency of factors of the intrinsic and common pathways (factors VIII, IX, XI, XII, X, V, II) or fibrinogen, in the presence of heparin, and in DIC; it is insensitive and normal in mild deficiencies (factor levels must fall below about 1% to 5% for it to be prolonged), and for this reason it has been superseded by the PTT, which is more sensitive and standardised. It is normal in thrombocytopenia and vascular disorders.
-
+Clotting time is the time taken for blood to clot in a glass tube, the clotting being triggered by contact with the glass surface. It reflects the integrity of the intrinsic clotting pathway.
 
 ## Normal limits of bleeding time and clotting time.
 
-The normal bleeding time is about 2 to 7 minutes by the Duke and Ivy methods, and the normal whole blood clotting time is about 4 to 10 minutes by the Lee-White method.
-
-| Test | Method | Normal range |
+| Test | Normal limit | Concerning (prolonged) |
 |---|---|---|
-| Bleeding time | Duke (earlobe/fingertip) | About 2–7 minutes (many laboratories accept up to 5 minutes) |
-| | Ivy (forearm, cuff at 40 mmHg) | About 2–7 minutes |
-| Clotting time | Lee-White (venous blood, glass tubes at 37°C) | About 4–10 minutes |
-| | Capillary tube method | About 3–7 minutes |
-
-Reference ranges vary with the method and the laboratory. Related tests have the normal ranges PT 11–15 seconds, PTT 25–40 seconds (compared with a control), and platelet count 150,000–350,000 per µL.
-
+| **Bleeding time, Duke method** | Under 3 minutes | Above 5 minutes |
+| **Bleeding time, Ivy method** | Under 8 minutes | Above 10 minutes |
+| **Clotting time** (whole blood, glass tube) | 9 to 15 minutes | Any defect in the intrinsic pathway prolongs it |
 
 ## Tests / screening tests / investigations for bleeding (haemorrhagic) disorders.
 
-The screening tests for bleeding disorders are the platelet count, the prothrombin time (PT) and the partial thromboplastin time (PTT), supplemented by the bleeding time or platelet function tests, thrombin time and fibrinogen, and followed by specific tests according to the abnormality.
-
-1. **Platelet count and peripheral blood film** (150 to 350 × 10³/µL; confirm abnormal counts by film, since platelet clumping causes spurious thrombocytopenia).
-2. **Prothrombin time (PT):** tests the extrinsic and common pathways (factors V, VII, X, prothrombin and fibrinogen); prolonged in vitamin K deficiency, warfarin therapy, liver disease and DIC.
-3. **Partial thromboplastin time (PTT/aPTT):** tests the intrinsic and common pathways (factors V, VIII, IX, X, XI, XII, prothrombin and fibrinogen); prolonged in haemophilia A and B, von Willebrand disease, heparin therapy, DIC, and with antiphospholipid antibodies.
-4. **Thrombin time and fibrinogen assay:** abnormalities of fibrinogen, heparin effect, and fibrin degradation products.
-5. **Tests of platelet function:** platelet aggregation studies (with ADP, collagen, epinephrine, ristocetin), von Willebrand factor antigen and activity (ristocetin cofactor), and the bleeding time (older, now largely discarded).
-6. **Specific factor assays** (factor VIII, IX and others), mixing studies to distinguish a factor deficiency (correction) from an inhibitor (no correction), and screening for circulating anticoagulants.
-7. **Fibrin degradation products and D-dimers** for DIC and fibrinolysis; clot retraction and clot solubility tests.
-8. **Bone marrow examination** for unexplained thrombocytopenia.
-
+1. **Prothrombin time (PT):** assesses the extrinsic and common coagulation pathways. Clotting of plasma after addition of tissue thromboplastin and calcium is measured in seconds. Prolonged by deficiency or dysfunction of factor V, factor VII, factor X, prothrombin or fibrinogen.
+2. **Partial thromboplastin time (PTT):** assesses the intrinsic and common pathways. Clotting of plasma after addition of kaolin, cephalin and calcium is measured in seconds. Prolonged by deficiency or dysfunction of factors V, VIII, IX, X, XI or XII, prothrombin or fibrinogen, or by interfering antiphospholipid antibodies.
+3. **Platelet count:** reference range 150,000 to 350,000 per µL, by an electronic particle counter; confirm abnormal counts on a peripheral blood film, as clumping can cause spurious thrombocytopenia.
+4. **Tests of platelet function:** platelet aggregation tests, and quantitative and qualitative tests of von Willebrand factor, including the **ristocetin agglutination test**.
+5. **Specific tests:** levels of specific clotting factors, fibrinogen, fibrin split products (particularly D-dimers) and circulating anticoagulants.
+6. **Bleeding time:** an older test, time-consuming and difficult to standardise, which has been discarded.
 
 ## Two causes of raised prothrombin time.
 
-Two important causes of a raised prothrombin time are vitamin K deficiency (or oral warfarin therapy) and severe liver disease.
+1. **Vitamin K deficiency:** impairs the synthesis of factors II, VII, IX and X.
+2. **Severe parenchymal liver disease:** inadequate synthesis of coagulation factors.
 
-The PT assesses the extrinsic and common pathways, and it is prolonged by deficiency or dysfunction of factors V, VII, X, prothrombin and fibrinogen. Warfarin inhibits the vitamin K-dependent γ-carboxylation of factors II, VII, IX and X (and proteins C and S), and the PT, which is sensitive to the short-lived factor VII, is the test used to monitor therapy (expressed as the INR). Vitamin K deficiency occurs in obstructive jaundice, malabsorption and with antibiotic therapy. In liver disease, there is reduced synthesis of nearly all coagulation factors. The prolongation of vitamin K deficiency is corrected by parenteral vitamin K, whereas that of hepatocellular failure is not. Other causes are DIC (consumption), factor VII deficiency, and a lack of fibrinogen.
-
+The prothrombin time is prolonged by deficiency or dysfunction of factor V, factor VII, factor X, prothrombin or fibrinogen.
 
 ## Normal findings in ITP, haemophilia and DIC in haemorrhagic screening tests.
 
-In ITP only the platelet count (and bleeding time) is abnormal, in haemophilia only the PTT is prolonged, and in DIC the platelet count is low and the PT, PTT and thrombin time are all prolonged with low fibrinogen and raised D-dimers.
-
-| Test | ITP | Haemophilia A / B | DIC |
-|---|---|---|---|
-| Platelet count | **Decreased** | Normal | **Decreased** |
-| Bleeding time | Prolonged | Normal | Prolonged |
-| Prothrombin time (PT) | Normal | Normal | **Prolonged** |
-| Partial thromboplastin time (PTT) | Normal | **Prolonged** | **Prolonged** |
-| Thrombin time | Normal | Normal | Prolonged |
-| Fibrinogen | Normal | Normal | **Decreased** |
-| Fibrin degradation products / D-dimer | Normal | Normal | **Increased** |
-| Clotting time | Normal | Prolonged | Prolonged |
-
-The normal findings in each disorder are the tests that remain normal, which are used to localise the defect.
-
+| Disorder | Normal | Abnormal |
+|---|---|---|
+| **Immune thrombocytopenic purpura** | PT and PTT | Low platelet count (isolated thrombocytopenia) |
+| **Haemophilia A and B** | PT | PTT prolonged |
+| **Disseminated intravascular coagulation** | None stated | Consumption of platelets, fibrin and coagulation factors, with fibrin degradation products from fibrinolysis |
 
 ## What is von Willebrand factor?
 
-Von Willebrand factor (vWF) is a large multimeric plasma glycoprotein, synthesised by endothelial cells and megakaryocytes, that promotes the adhesion of platelets to the subendothelial matrix and stabilises coagulation factor VIII in the circulation.
+Von Willebrand factor is a large protein that promotes the adhesion of platelets to subendothelial collagen and stabilises factor VIII.
 
-vWF is made by endothelial cells and by megakaryocytes, which are the source of the vWF in platelet α-granules. Secreted into the circulation, it exists as multimers containing up to 100 subunits, which can exceed 20 × 10⁶ daltons in mass; some is deposited in the subendothelial matrix. The largest multimers are the most active. Factor VIII circulates bound to vWF, which increases its half-life from about 2.4 to 12 hours. vWF is cleaved and regulated by the metalloprotease ADAMTS13; deficiency of the latter causes thrombotic thrombocytopenic purpura. Its deficiency or dysfunction causes von Willebrand disease, the commonest inherited bleeding disorder.
-
+- It is made by endothelial cells and by megakaryocytes, which are the source of the vWF in platelet alpha-granules.
+- It is secreted as multimers containing as many as 100 subunits, which can exceed 20 million daltons in molecular mass.
+- Some of the secreted vWF is deposited in the subendothelial matrix, ready to promote platelet adhesion if the endothelial lining is disrupted.
 
 ## Functions of von Willebrand factor.
 
-The two main functions of vWF are to mediate platelet adhesion to the subendothelial matrix at sites of vascular injury, and to carry and stabilise factor VIII in the plasma.
-
-1. **Platelet adhesion:** the most important haemostatic function. It forms a bridge between platelet glycoprotein Ib/IX and subendothelial components such as collagen, anchoring platelets to the injured vessel wall.
-2. **Platelet aggregation:** vWF can promote aggregation by binding to activated glycoprotein IIb/IIIa integrins, which is particularly important under high shear stress, as in small vessels.
-3. **Carrier of factor VIII:** binds and stabilises factor VIII, prolonging its half-life; deficiency of vWF thus lowers factor VIII levels and prolongs the PTT.
-4. It also interacts with collagen, heparin and other proteins involved in haemostasis.
-
-Function is measured by the ristocetin cofactor (agglutination) assay: ristocetin makes vWF multimers bind to platelet GpIb/IX, so that the clumping of normal formalin-fixed platelets reflects the vWF activity.
-
+1. **Promotes adhesion of platelets to the subendothelial matrix:** the most important hemostatic function; bridging interactions between platelet glycoprotein Ib/IX, vWF and matrix components such as collagen.
+2. **Promotes platelet aggregation** by binding to activated glycoprotein IIb/IIIa integrins, of particular importance under high shear stress, such as in small vessels.
+3. **Carries and stabilises factor VIII** in the circulation; the half-life of factor VIII rises from about 2.4 hours to about 12 hours.
+4. Interacts with other proteins involved in hemostasis, including collagen and heparin.
 
 ## Why are both bleeding time and clotting time prolonged in von Willebrand disease?
 
-Both are prolonged because vWF has a double function: it is required for platelet adhesion (so its deficiency prolongs the bleeding time) and it stabilises factor VIII (so its deficiency lowers factor VIII and impairs the intrinsic pathway, prolonging the clotting time and PTT).
-
-The platelet count in von Willebrand disease is normal, but platelet function is defective, because without vWF platelets cannot adhere normally to the exposed subendothelium; the primary haemostatic plug forms slowly and the bleeding time is prolonged. The ristocetin cofactor activity is reduced. In the plasma, vWF binds factor VIII and protects it from degradation, so a deficiency of vWF decreases the stability of factor VIII, whose level falls (very markedly in type 3), which prolongs the PTT. The whole-blood clotting time, a crude test, is prolonged only when the factor VIII level is markedly reduced, as in severe type 3 disease; in most patients with mild type 1 disease it is normal, and the PTT may be only borderline. The PT is normal.
-
+- **Bleeding time (platelet function):** vWF promotes the adhesion of platelets to the subendothelial matrix, so patients with von Willebrand disease have defects in platelet function despite normal platelet counts; the level of active vWF, measured as ristocetin cofactor activity, is reduced.
+- **Clotting time (intrinsic pathway):** vWF stabilises factor VIII in the circulation, so a deficiency of vWF lowers factor VIII; type 1 and type 3 disease are associated with a prolonged PTT.
 
 ## What is haemophilia?
 
-Haemophilia is a group of X-linked recessive inherited bleeding disorders caused by deficiency of coagulation factor VIII (haemophilia A) or factor IX (haemophilia B), characterised by haemarthroses and bleeding into soft tissues after minor trauma.
+**Haemophilia A** is the most common hereditary disease associated with life-threatening bleeding. It is caused by mutations in the gene encoding factor VIII, an essential cofactor for factor IX in the coagulation cascade, and is inherited as an X-linked recessive trait.
 
-Haemophilia A, the most common hereditary disease associated with life-threatening bleeding, results from mutations in the gene encoding factor VIII, an essential cofactor for factor IX in the activation of factor X. It is inherited as an X-linked recessive trait and therefore affects males, and rarely females. Haemophilia B (Christmas disease) results from mutations of the gene encoding factor IX and is clinically indistinguishable. The severity correlates with the factor level: below 1% of normal is severe, 2% to 5% moderately severe and 6% to 50% mild. The clinical features are easy bruising, massive haemorrhage after trauma or surgery and "spontaneous" bleeds in joints (haemarthroses leading to disabling deformity) and muscles; petechiae are absent. The PTT is prolonged and the PT is normal.
-
+**Haemophilia B** (Christmas disease) is an X-linked disorder caused by mutations in coagulation factor IX; it is clinically identical to haemophilia A.
 
 ## Classify haemophilia.
 
-Haemophilia is classified by the factor deficient into haemophilia A (factor VIII), haemophilia B (factor IX) and, less commonly, haemophilia C (factor XI), and by severity according to the residual factor activity.
+| Type | Deficient factor | Inheritance |
+|---|---|---|
+| **Haemophilia A** | Factor VIII | X-linked recessive |
+| **Haemophilia B** (Christmas disease) | Factor IX | X-linked recessive |
 
-| Basis | Classification |
+Haemophilia A is graded by the level of factor VIII activity:
+
+| Severity | Factor VIII activity |
 |---|---|
-| **By the deficient factor** | Haemophilia A (classic): factor VIII deficiency, about 80% to 85% of cases, X-linked recessive. Haemophilia B (Christmas disease): factor IX deficiency, about 15%, X-linked recessive. Haemophilia C: factor XI deficiency, autosomal (recessive), mild, most frequent in Ashkenazi Jews |
-| **By severity (factor activity)** | Severe: <1% of normal (spontaneous bleeding). Moderate: 1–5% (bleeding after minor trauma). Mild: 6–50% (bleeding after surgery or major trauma) |
-| **By inheritance** | X-linked recessive (A and B), autosomal (C); about 30% of patients with haemophilia A have no family history (new mutations) |
-
-Von Willebrand disease, though it also lowers factor VIII, is classified separately.
-
+| Severe | Less than 1% of normal |
+| Moderately severe | 2% to 5% of normal |
+| Mild | 6% to 50% of normal |
 
 ## Give the laboratory diagnosis/findings of hemophilia.
 
-The laboratory hallmark of haemophilia is a prolonged partial thromboplastin time (PTT) with a normal prothrombin time, platelet count and bleeding time, and the diagnosis is confirmed by a specific assay showing reduced factor VIII (haemophilia A) or factor IX (haemophilia B).
-
-1. **Screening tests (haemostatic profile).**
-
-- Platelet count: normal.
-- Bleeding time: normal (platelet function is intact).
-- Prothrombin time: normal (extrinsic pathway intact).
-- Partial thromboplastin time (aPTT): prolonged (the intrinsic pathway is defective); it corrects when the patient's plasma is mixed with normal plasma, excluding an inhibitor.
-- Whole-blood clotting time: prolonged in severe disease; thrombin time and fibrinogen normal.
-
-2. **Specific assays.** Factor VIII assay is reduced in haemophilia A (in severe disease below 1%), factor IX assay is reduced in haemophilia B; the level determines the severity. Von Willebrand factor antigen and ristocetin cofactor are normal in haemophilia A, which distinguishes it from von Willebrand disease. In a minority of patients with haemophilia A the factor VIII protein is present by immunoassay but nonfunctional.
-3. **Inhibitor screening.** The Bethesda assay for antibodies to factor VIII (about 15% of patients with severe disease after treatment) or factor IX.
-4. **Genetic studies.** Detection of the factor VIII intron 22 inversion (the commonest cause of severe disease) or other mutations, carrier detection and prenatal diagnosis by chorionic villus sampling.
-5. **Others.** Blood count may show anaemia after bleeding; joints show haemarthrosis, with radiographic changes.
-
+1. **Prolonged PTT** and **normal PT**, pointing to an abnormality of the intrinsic coagulation pathway.
+2. **Haemophilia A:** factor VIII-specific assays are required for diagnosis. Factor VIII function is measured by coagulation assays with mixtures of patient plasma and factor VIII-deficient plasma.
+3. In severe haemophilia A from point mutations that impair function, factor VIII protein levels may be normal by immunoassay.
+4. **Haemophilia B:** diagnosis is made by assay of factor IX levels; in about 15% of patients factor IX protein is present but nonfunctional.
+5. About 15% of patients with severe haemophilia A develop antibodies that bind and inhibit factor VIII after treatment with recombinant factor VIII.
 
 ## What do you mean by DIC?
 
-Disseminated intravascular coagulation (DIC) is an acute, subacute or chronic thrombohaemorrhagic disorder characterised by excessive activation of coagulation factors and the formation of thrombi in the microvasculature; consumption of platelets and clotting factors and secondary fibrinolysis lead to both organ ischaemia and bleeding.
+**Disseminated intravascular coagulation (DIC)** is an acute, subacute or chronic thrombohaemorrhagic disorder characterised by excessive activation of coagulation factors and the formation of thrombi in the microvasculature. It occurs as a secondary complication of many disorders.
 
-DIC is not a primary disease but a secondary complication of a variety of disorders. It may be acute, subacute or chronic, and the coagulopathy is sometimes localised to a specific organ. Two major mechanisms trigger it: release of tissue factor or other procoagulants into the circulation, and widespread endothelial injury. The thrombotic diathesis consumes platelets, fibrin and coagulation factors and, secondarily, activates fibrinolysis. The commonest associations are obstetric complications, malignant neoplasms, sepsis and major trauma. The consequences are microvascular thrombosis with ischaemia and microangiopathic haemolytic anaemia, and a bleeding diathesis from the consumption of platelets and factors and the effects of fibrin degradation products.
-
+The thrombotic diathesis leads to the consumption of platelets, fibrin and coagulation factors and, secondarily, activation of fibrinolysis.
 
 ## Give the laboratory diagnosis of DIC.
 
-The laboratory diagnosis of DIC rests on thrombocytopenia, prolonged PT and PTT, low fibrinogen and raised fibrin degradation products, particularly D-dimers, in a patient with a recognised predisposing condition.
+Diagnosis is based on clinical observation and laboratory studies:
 
-| Test | Finding in DIC | Basis |
-|---|---|---|
-| Platelet count | Decreased, and falling | Consumption in microthrombi |
-| Peripheral blood film | Schistocytes (fragmented red cells), helmet and triangular cells, burr cells | Microangiopathic haemolytic anaemia |
-| Prothrombin time | Prolonged | Consumption of factors V, VII, X, II, fibrinogen |
-| Partial thromboplastin time | Prolonged | Consumption of factors V, VIII, IX, X, XI |
-| Thrombin time | Prolonged | Hypofibrinogenaemia and FDPs |
-| Fibrinogen | Decreased (may be normal early, being an acute-phase reactant) | Consumption |
-| Fibrin degradation products and D-dimer | Markedly increased (D-dimer particularly specific for plasmin-cleaved cross-linked fibrin) | Fibrinolysis |
-| Factors V and VIII | Reduced | Consumption and plasmin digestion |
-| Antithrombin III, protein C | Reduced | Consumption |
-
-The diagnosis is based on clinical observation of the predisposing disorder together with these laboratory studies, including measurement of fibrinogen, platelets, PT and PTT, and fibrin degradation products, particularly D-dimers. Serial measurements are valuable, and scoring systems (ISTH DIC score) are used.
-
+1. **Fibrinogen level, platelet count, PT and PTT:** reflect the consumption of fibrinogen, platelets and clotting factors.
+2. **Fibrin degradation products, particularly D-dimers:** produced when plasmin cleaves fibrin during fibrinolysis.
+3. **Peripheral blood film:** fragmented red cells, from microangiopathic haemolytic anaemia.
 
 ## Write a short note on ITP.
 
-Immune thrombocytopenic purpura (ITP) is a bleeding disorder caused by autoantibody-mediated destruction of platelets, in which the spleen is the major site of platelet removal, and which presents with isolated thrombocytopenia and mucocutaneous bleeding with a normal PT and PTT.
+**Definition**
 
-**Types.** Chronic ITP, mainly in adult women under 40 (female-to-male ratio 3:1), and acute ITP, mainly in children. It is primary (idiopathic) when no cause is found, or secondary to systemic lupus erythematosus, HIV infection, or B-cell neoplasms such as CLL. The diagnosis of primary ITP is made after secondary causes are excluded.
+Chronic immune thrombocytopenic purpura is caused by autoantibody-mediated destruction of platelets. It is secondary when it occurs with predisposing conditions such as systemic lupus erythematosus, HIV infection and B-cell neoplasms like chronic lymphocytic leukaemia, and primary (idiopathic) when no risk factor is known; primary ITP is diagnosed only after secondary causes are excluded.
 
-**Pathogenesis.** IgG autoantibodies, most often directed against platelet membrane glycoproteins IIb/IIIa or Ib/IX, coat the platelets, which are opsonised and removed by splenic macrophages through Fc receptors; antibodies can also damage megakaryocytes, reducing platelet production.
+**Aetiology and pathogenesis**
 
-**Clinical features.** Insidious onset with petechiae (prominent in dependent areas), ecchymoses, easy bruising, epistaxis, gum bleeding, menorrhagia, melaena or haematuria; subarachnoid and intracerebral haemorrhage are rare but serious. Splenomegaly and lymphadenopathy are not features of primary disease.
+- Autoantibodies, most often against platelet membrane glycoproteins IIb/IIIa or Ib/IX, are found in the plasma and bound to platelets in about 80% of patients; most are IgG.
+- The antibodies act as opsonins, recognised by IgG Fc receptors on phagocytes, so platelets are destroyed; the spleen is the major site, and splenectomy markedly improves the thrombocytopenia.
+- Autoantibodies may also damage megakaryocytes, decreasing platelet production.
 
-**Laboratory findings.** Low platelet count, normal PT and PTT, large platelets (megathrombocytes), and normal or increased megakaryocytes in the marrow; the spleen is of normal size. Tests for platelet autoantibodies are not clinically useful; diagnosis is by exclusion.
+**Morphology**
 
-**Treatment.** Glucocorticoids (nearly all respond, but many relapse); splenectomy for severe disease (normalises platelet count in about two-thirds); intravenous immunoglobulin, rituximab and thrombopoietin-mimetics for refractory disease. **Acute ITP** follows a viral illness by 1 to 2 weeks, and is self-limited, resolving usually within 6 months.
+- Spleen of normal size, with congested sinusoids, enlarged follicles with prominent reactive germinal centres, and scattered megakaryocytes in the sinuses.
+- Marrow: modestly increased megakaryocytes, some immature with large, nonlobulated single nuclei.
+- Blood: unusually large platelets (megathrombocytes).
+- Petechial bleeds into skin and mucous membranes.
 
+**Clinical features and complications**
+
+- Most common in adult females younger than 40 years; female to male ratio 3 to 1; insidious onset.
+- Bleeding into skin and mucosal surfaces: petechiae in dependent areas, ecchymoses, easy bruising, nosebleeds, gingival bleeding, soft tissue haemorrhage, melaena, haematuria and excessive menstrual flow.
+- Subarachnoid and intracerebral haemorrhage are serious and sometimes fatal but rare in treated patients.
+- No splenomegaly or lymphadenopathy in primary disease.
+- Laboratory: low platelet count, normal or increased megakaryocytes, large platelets, normal PT and PTT.
+- Treatment: glucocorticoids, splenectomy (normalises the count in about two-thirds), intravenous immunoglobulin, rituximab and thrombopoietin mimetics.
+- **Acute ITP** is mainly a childhood disease, appearing abruptly 1 to 2 weeks after a viral illness and usually resolving spontaneously within 6 months.
 
 ## How are platelets destroyed in peripheral blood in ITP?
 
