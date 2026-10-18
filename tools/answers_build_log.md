@@ -334,3 +334,22 @@ Questions: CML and acute leukaemia vignettes, neutrophilia, eosinophilia, aetiol
 - Chronic leukaemia: the textbook has no separate definition; the answer uses the leukaemia definition and names the two chronic types.
 - Types of leukaemoid reaction: the textbook mentions only the neutrophilic and the lymphoid (viral) pictures.
 - Subleukaemic versus aplastic anaemia: rows kept only where the textbook gives both sides.
+
+### Session 10, batch 3 (remaining Chapter 13 and Chapter 14 questions)
+Questions: myeloma bone marrow and ESR, Bence Jones short note, generalised and cervical lymphadenopathy, Hodgkin morphology, Reed-Sternberg cell variants, Hodgkin short note, nodular sclerosis, haemopoiesis (define, sites, extramedullary), peripheral blood film, red cell indices (what, importance), normal haemoglobin, bone marrow indications, trephine biopsy, blood tap and dry tap, anaemia (define, morphological types, examples, pathophysiological categories, causes).
+
+| Question | Source | URL |
+|---|---|---|
+| Indications of bone marrow biopsy / aspiration / examination. | EBM Guidelines, Bone Marrow Examination (Duodecim) | https://download.skyscape.com/download/ota/lonestar/B4562E59-87F6-47FA-8F09-D67E1FE536CA/ebmgcvd.ed18/content/HTML/4/tn149.htm |
+| How is trephine biopsy done? | Hong Kong Medical Journal, bone marrow aspiration and biopsy (hkmj.org, vol 23 no 4); EBM Guidelines (above) | https://www.hkmj.org/system/files/hkmj-v23n4-hkmms.pdf |
+| What do you mean by blood tap and dry tap? | Indian J Pathol (Springer), dry tap study; Ayub Med Coll, dry tap | https://link.springer.com/article/10.1007/s12308-021-00450-y ; https://jamc.ayubmed.edu.pk/index.php/jamc/article/view/1083 |
+| Common causes of lymphadenopathy / generalised / cervical. | StatPearls, Lymphadenopathy and Adenopathy; Am Fam Physician 2016 | https://www.ncbi.nlm.nih.gov/books/NBK558918/ ; https://pubmed.ncbi.nlm.nih.gov/27929264/ |
+
+- Normal haemoglobin by age: the textbook gives only the adult male and female ranges; values for newborns and children are left out.
+- Haemopoiesis: the textbook has no separate definition; the answer uses its normal haematopoiesis text.
+- Peripheral blood film: the textbook has no list of what a film shows; the answer collects the findings it describes in different chapters.
+- Trephine biopsy: no step-by-step technique (positioning, needle size, anaesthesia, procedure) is given in a source found, so those steps are left out.
+- Bone marrow indications: the textbook names only some; the rest come from the EBM Guidelines page, which was only partly readable.
+- Blood tap: no source separates it from a dry tap, so both are described together.
+- ESR in myeloma: see batch 1; ESR itself is not in the textbook.
+- Examples of morphological types of anaemia: only those the textbook states are given.
