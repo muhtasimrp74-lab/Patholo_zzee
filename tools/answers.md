@@ -5074,201 +5074,203 @@ They are important to recognise because they:
 
 ## Grading of cancer.
 
-Grading of a cancer is the assessment of its probable aggressiveness on the basis of the degree of differentiation of the tumour cells and, in some cancers, the number of mitoses or architectural features.
+**Grading** of a cancer is based on the degree of differentiation of the tumour cells and, in some cancers, the number of mitoses or architectural features.
 
-Grading schemes have evolved for each type of malignancy and generally range from two categories (low grade and high grade) to four (grades I to IV, from well differentiated to poorly differentiated or undifferentiated). The criteria differ among tumours, but all attempt to judge the extent to which tumour cells resemble or fail to resemble their normal counterparts, on the premise that behaviour and differentiation are related, so that poorly differentiated tumours behave more aggressively. Grading is determined by the pathologist's microscopic examination, and the correlation between histologic appearance and biologic behaviour is less than perfect. To avoid spurious quantification, tumours are often characterised in descriptive terms, such as well-differentiated, mucin-secreting adenocarcinoma of the stomach, or poorly differentiated pancreatic adenocarcinoma.
-
+- Grading schemes have evolved for each type of malignancy and generally range from **two** categories (low grade and high grade) to **four**.
+- The criteria differ between tumours, but all attempt to judge the extent to which the tumour cells resemble or fail to resemble their normal counterparts.
+- It rests on the idea that behaviour and differentiation are related: poorly differentiated tumours behave more aggressively.
+- The correlation between histologic appearance and biologic behaviour is less than perfect. To avoid spurious quantification, a neoplasm is often described in words, for example **well-differentiated, mucin-secreting adenocarcinoma of the stomach** or **poorly differentiated pancreatic adenocarcinoma**.
 
 ## Staging of cancer.
 
-Staging expresses the extent of spread of a cancer in the body, on the basis of the size of the primary lesion, the extent of spread to regional lymph nodes, and the presence or absence of blood-borne (distant) metastases.
+**Staging** of solid cancers is based on the **size of the primary lesion**, whether it has **spread to regional lymph nodes**, and the presence or absence of **blood-borne (distant) metastases**.
 
-Staging of solid cancers is determined by surgical exploration, imaging and pathologic examination of the resected specimen. The major system is the American Joint Committee on Cancer (AJCC) TNM system. It is of greater clinical value than histologic grading, since the stage is the most important determinant of prognosis and of the choice of treatment. Molecular features provide additional prognostic information that is independent of anatomic staging, and the AJCC includes molecular characterisation in the standard work-up of early breast cancers.
-
+- It is determined by surgical exploration or imaging.
+- The major system in use is the **American Joint Committee on Cancer (AJCC)** staging, which uses the **TNM** system: T for primary tumour, N for regional lymph node involvement and M for metastases.
+- Staging is of greater clinical value than grading.
+- Molecular features of tumours give complementary prognostic information that is independent of anatomic staging. The AJCC has included molecular characterisation in the standard work-up of early breast cancers (T1–2, N0, M0).
 
 ## What do you mean by TNM staging?
 
-TNM staging is the system of the American Joint Committee on Cancer in which T denotes the primary tumour, N regional lymph node involvement, and M distant metastases.
+The **TNM system** is the staging system of the **American Joint Committee on Cancer (AJCC)**, which uses three letters: **T** for the primary tumour, **N** for regional lymph node involvement and **M** for metastases.
 
-- **T (primary tumour):** characterised as T1 to T4 according to increasing size or local extent, with the details varying by organ. Carcinoma in situ is designated Tis (T0 in some texts), and Tx means that the primary cannot be assessed.
-- **N (regional lymph nodes):** N0 means no nodal involvement, and N1 to N3 denote involvement of an increasing number and range of nodes.
-- **M (metastasis):** M0 signifies no distant metastases, and M1 (sometimes M2 in older schemes) indicates the presence of metastases and some judgment about their number.
+| Letter | Meaning |
+|---|---|
+| T0 | In situ lesion |
+| T1 to T4 | Primary lesion, characterised by increasing size |
+| N0 | No nodal involvement |
+| N1 to N3 | Involvement of an increasing number and range of nodes |
+| M0 | No distant metastases |
+| M1 (sometimes M2) | Metastases present, with some judgement as to their number |
 
-The combination of T, N and M categories is grouped into stages (stage 0 for in situ disease, and stages I to IV in order of increasing extent). The TNM staging varies for specific forms of cancer, but the general principles are the same. Clinical staging (before treatment, based on examination and imaging) is distinguished from pathologic staging (after surgical resection).
-
+TNM staging varies for specific forms of cancer, but these general principles apply.
 
 ## Name the childhood tumours (short note).
 
-The commonest childhood cancers are acute lymphoblastic leukaemia and tumours of the central nervous system, followed by the so-called small round blue cell tumours: neuroblastoma, Wilms tumour, retinoblastoma and rhabdomyosarcoma, with Ewing sarcoma, osteosarcoma, hepatoblastoma and germ cell tumours also seen.
+Only **2%** of all malignant tumours occur in infancy and childhood. Even so, cancer (including leukaemia) accounts for about **16%** of deaths in the United States in children aged 5 to 14 years, and only accidents cause significantly more deaths. Benign tumours are even more common than cancers.
 
-Cancer accounts for about 10% of all deaths in children younger than 15 years in the United States, second only to accidents. Neoplasms of the central nervous system and acute leukaemia together cause approximately 60% of childhood cancer deaths. The types of cancer in children differ from those in adults. Paediatric cancers are more likely to be caused by inherited mutations, particularly in tumour suppressor genes, and are much less likely to stem from exposure to environmental carcinogens, and so carcinomas, which are frequently caused by carcinogens and are the most common tumours in adults, are very rare in children.
+**Benign tumours and tumour-like lesions.** Virtually any tumour may occur in children, but three deserve special mention.
 
-| Tumour | Features |
-|---|---|
-| Acute lymphoblastic leukaemia | Commonest childhood malignancy; usually B-cell precursor type; wild-type TP53 and good response to therapy |
-| Brain tumours | Medulloblastoma, pilocytic astrocytoma, ependymoma, and brainstem glioma |
-| Neuroblastoma | Sympathetic ganglia and adrenal medulla; NMYC amplification indicates poor prognosis; spreads to liver and bones |
-| Wilms tumour (nephroblastoma) | Kidney; mixed tumour from renal anlage; WT1 |
-| Retinoblastoma | Eye; RB gene, the prototype of the two-hit hypothesis |
-| Rhabdomyosarcoma | Soft tissue sarcoma of striated muscle differentiation |
-| Ewing sarcoma | Bone and soft tissue; t(11;22) EWSR1::FLI1 |
-| Osteosarcoma | Primary bone cancer of adolescents; more frequent in hereditary retinoblastoma |
-| Hepatoblastoma | Liver |
-| Germ cell tumours | Sacrococcygeal teratoma, yolk sac tumour |
-| Lymphomas | Burkitt lymphoma, Hodgkin lymphoma |
+1. **Haemangiomas and vascular malformations.** These are the most common mass-forming lesions of infancy. Most occur in the skin, especially the face and scalp. Many regress spontaneously.
+2. **Fibrous tumours.** These include fibromatosis and infantile fibrosarcoma, which has an excellent prognosis despite looking like adult fibrosarcoma.
+3. **Teratomas.** Sacrococcygeal teratoma is the most common teratoma of childhood, accounting for 40% or more of cases.
 
+The most common solid neoplasms of childhood are **soft tissue tumours of mesenchymal origin**. In adults the commonest tumours are epithelial.
+
+**Malignant tumours.**
+
+- The most frequent childhood cancers arise in the **haematopoietic system, nervous tissue** (central and sympathetic nervous system, adrenal medulla and retina), **soft tissue, bone and kidney**. In adults the common sites are skin, lung, breast, prostate and colon.
+- **Leukaemia** is the most common childhood cancer. Because it is highly curable, brain tumours and leukaemia each account for about 25% of deaths.
+- Many malignant non-haematopoietic childhood tumours look primitive (embryonal), with sheets of small round cells. They are often named with the suffix **-blastoma**, for example nephroblastoma (**Wilms tumour**), hepatoblastoma and **neuroblastoma**.
+- Because of this appearance they are collectively called **small round blue cell tumours**: neuroblastoma, Wilms tumour, lymphoma, rhabdomyosarcoma, Ewing sarcoma, medulloblastoma and retinoblastoma.
+
+| 0–4 years | 5–9 years | 10–14 years |
+|---|---|---|
+| Leukaemia | Leukaemia | Renal cell carcinoma |
+| Retinoblastoma | Neuroblastoma | Hepatocellular carcinoma |
+| Neuroblastoma | Hepatocellular neoplasm | Soft tissue sarcomas |
+| Wilms tumour | Soft tissue sarcomas | Ewing sarcoma |
+| Hepatoblastoma | Ewing sarcoma | Osteogenic sarcoma |
+| Soft tissue sarcomas (especially rhabdomyosarcoma) | Central nervous system tumours | Lymphoma, including Hodgkin lymphoma |
+| Teratoma | Lymphoma | Thyroid carcinoma |
+| Central nervous system tumours | | |
+
+**Differences from adult cancers.**
+
+- Different incidence and type of tumour.
+- A frequent close relationship between abnormal development (teratogenesis) and tumour induction (oncogenesis).
+- Prevalence of underlying familial genetic aberrations.
+- A tendency of fetal and neonatal malignancies to regress or differentiate spontaneously.
+- Improved survival or cure of many childhood tumours, so attention now goes to the delayed effects of chemotherapy and radiation therapy, including second malignancies.
 
 ## What do you mean by tumour grading and staging? Mention basis and importance.
 
-Methods to quantify the probable clinical aggressiveness of a neoplasm (grade) and its apparent extent and spread (stage) are needed for accurate prognostication and for comparing the results of different treatments. The outcome of treating a well-differentiated thyroid adenocarcinoma that is localised to the gland will be very different from that of a highly anaplastic thyroid cancer that has invaded surrounding structures, and the two systems, differentiation (grade) and extent of spread (stage), serve as parameters of the clinical gravity of the disease.
+Methods to quantify the probable clinical aggressiveness of a neoplasm (**grade**) and its apparent extent and spread (**stage**) are needed for accurate prognostication and for comparing the results of different treatments.
 
-**Grading.** Grading is the pathologist's assessment of the degree of malignancy of a tumour on the basis of the level of differentiation of the tumour cells, that is, the extent to which they resemble or fail to resemble the normal counterpart, and in some cancers also on the number of mitoses and architectural features (for example, gland formation, nuclear pleomorphism and mitotic count in breast cancer, or the Gleason pattern in prostate cancer). Schemes range from two grades (low and high) to four (I to IV), and criteria vary with the tumour type. The premise is that behaviour and differentiation are related, so that poorly differentiated tumours behave more aggressively. Its limitation is that the correlation between histologic appearance and behaviour is imperfect, and it is subject to observer variation.
-
-**Staging.** Staging of solid cancers is based on the size of the primary lesion, spread to regional lymph nodes, and the presence or absence of blood-borne metastases. The major system is that of the American Joint Committee on Cancer (AJCC), the TNM system, where T denotes the primary tumour (T1 to T4 with increasing size; Tis for in situ), N the regional lymph node involvement (N0 to N3) and M the distant metastases (M0, M1). It is determined by clinical examination, imaging, surgical exploration, and pathologic examination of the resected specimen.
-
-| Feature | Grading | Staging |
+| | Grading | Staging |
 |---|---|---|
-| Basis | Cytologic and histologic appearance: differentiation, mitoses, architecture | Anatomic extent: size of primary, lymph node involvement, distant metastasis |
-| Determined by | Microscopic examination of biopsy or resection | Clinical examination, imaging, surgical exploration, histology of nodes |
-| Categories | Grades I–IV (well, moderately, poorly differentiated, undifferentiated) | TNM, stages 0–IV |
-| Reflects | Biologic aggressiveness | Extent of disease |
-| Clinical value | Useful | Of greater value than grading |
+| Basis | Degree of differentiation of the tumour cells and, in some cancers, the number of mitoses or architectural features | Size of the primary lesion, spread to regional lymph nodes, and presence or absence of blood-borne metastases |
+| Categories | Two (low and high grade) to four, depending on the tumour | AJCC **TNM** system: T1 to T4, N0 to N3, M0 and M1 |
+| How determined | Cytologic and histologic appearance | Surgical exploration or imaging |
+| Idea behind it | Behaviour and differentiation are related, so poorly differentiated tumours behave more aggressively | The extent of spread decides outlook and treatment |
 
 **Importance.**
 
-1. Prognosis: both predict survival, and stage is the more powerful predictor.
-2. Treatment planning: stage and grade determine whether the patient has surgery alone, adjuvant radiotherapy or chemotherapy, or palliative treatment.
-3. Comparison and evaluation of the results of different treatments across centres, and the standardisation of clinical trials.
-4. Communication among clinicians and the maintenance of cancer registries.
-5. Molecular features of tumours provide complementary prognostic information independent of anatomic stage, and they are being incorporated into the staging of some cancers, such as early breast cancer.
-
+1. Both are parameters of the **clinical gravity** of the disease. For example, a well-differentiated thyroid adenocarcinoma confined to the thyroid is treated with very different results from a highly anaplastic thyroid cancer that has invaded surrounding tissues.
+2. They allow the results of different treatments to be compared.
+3. Staging is of greater clinical value than grading.
+4. The correlation between histologic grade and biologic behaviour is imperfect, and molecular features add independent prognostic information.
 
 ## Enumerate common cancers in males and females of the Bangladeshi population.
 
-The commonly diagnosed cancers in Bangladesh differ by sex and reflect the main risk factors in the country, which are tobacco (smoked and smokeless, including betel quid), infections such as HPV and hepatitis B, arsenic exposure and diet. The rank order differs between the cancer estimates of the International Agency for Research on Cancer (GLOBOCAN), hospital-based registries and population-based registries, but the leading sites are consistent.
+The site textbook does not cover cancer in Bangladesh. This answer follows the IARC GLOBOCAN 2022 estimates as reported in Bangladesh (see the build log for sources).
 
-| | Males | Females |
-|---|---|---|
-| Common cancers, in approximate order of frequency | Oesophagus; lung; stomach; lip and oral cavity; hypopharynx and larynx (head and neck cancers) | Cervix uteri; breast; oesophagus; lung; stomach; also lip and oral cavity and thyroid in registry series |
-| Others | Larynx, colorectum, liver, prostate, lymphomas | Ovary, thyroid, colorectum |
+| Males | Females |
+|---|---|
+| Lung | Breast |
+| Lip and oral cavity | Cervix uteri |
+| Oesophagus | |
 
-In the recent estimates for Bangladesh, oesophageal, lung, stomach, and lip and oral cavity cancers account for most cancers in men, and in women the cervix and breast head the list, followed by oesophagus, lung and stomach. In hospital-based series from the major centres, breast cancer is the commonest cancer among women, and lung and head and neck cancers (oral cavity, larynx, hypopharynx) dominate in men. Tobacco-related cancers (lung, oral, oesophageal and laryngeal) dominate in men, while cervical cancer, which is preventable by HPV vaccination and screening, and breast cancer are the leading cancers in women.
+- Breast cancer and cervical cancer are the most common cancers in women.
+- Lung cancer and cancers of the lip and oral cavity are the most prevalent in men, with oesophageal cancer also among the most frequently diagnosed.
+- The order of the sites differs between sources.
 
 ## Outline / methods of laboratory diagnosis of tumour.
 
-The laboratory diagnosis of a tumour rests on histologic examination of tissue (biopsy, excision, frozen section) and cytologic methods (exfoliative cytology and fine-needle aspiration), supplemented by immunohistochemistry, flow cytometry, molecular and cytogenetic techniques, and the assay of tumour markers.
+The laboratory diagnosis of cancer is not difficult in most instances, because most neoplasms are easily placed at one of the two ends of the benign–malignant spectrum. Clinical data are invaluable, and the evaluation is only as good as the specimen, which must be **adequate, representative and properly preserved**.
 
-1. **Histopathology.** Excisional or incisional biopsy and resection specimens, fixed in formalin and examined on haematoxylin and eosin–stained sections; frozen section for rapid intraoperative diagnosis.
-2. **Cytology.** Fine-needle aspiration of palpable or image-guided lesions, and exfoliative cytology (cervical Pap smear, urine, sputum, effusions, cerebrospinal fluid, bronchial washings).
-3. **Immunohistochemistry.** Antibodies against lineage-specific antigens to classify undifferentiated tumours, determine the site of origin of metastases, and detect prognostic and predictive markers such as oestrogen and progesterone receptors and HER2.
-4. **Flow cytometry.** Quantitative detection of multiple antigens on cells in suspension, mainly for leukaemias and lymphomas.
-5. **Molecular diagnostics and cytogenetics.** Karyotyping, FISH, PCR (clonality testing and detection of translocations such as BCR::ABL and EWSR1::FLI1), and next-generation sequencing, including detection of minimal residual disease and hereditary predisposition, and guiding targeted therapy.
-6. **Tumour markers** in blood (PSA, CEA, AFP, hCG, CA-125), which are used mainly to monitor therapy and detect recurrence.
-7. **Liquid biopsy.** Circulating tumour cells and cell-free tumour DNA.
-
+1. **Sampling approaches.** Excision or biopsy, needle aspiration, and cytologic smears. The specimen is promptly placed in a fixative (usually formalin).
+2. **Frozen section.** A quick-frozen section allows histologic evaluation within minutes. It is used to determine the nature of a mass lesion, to check that the margins of an excised cancer are clear, and to decide what further studies are needed.
+3. **Fine-needle aspiration.** A small-bore needle aspirates cells and fluid, which are spread on a slide, stained and examined. It is useful for palpable lesions of the breast, thyroid and lymph nodes, and with imaging guidance for deep structures such as pelvic lymph nodes and the pancreas.
+4. **Cytologic smears.** Used most widely to screen for carcinoma of the cervix (Pap smear). Other specimens are urine, cerebrospinal fluid, pleural effusions and bronchial washes.
+5. **Immunohistochemistry.** Antibody staining of tissue sections to categorise undifferentiated tumours, find the site of origin of metastases, and detect molecules of prognostic or therapeutic value (for example oestrogen and progesterone receptors and HER2).
+6. **Flow cytometry.** Measures several cell characteristics on cells in suspension. It is used mainly for leukaemias and lymphomas.
+7. **Molecular diagnostics and cytogenetics.** Used for diagnosis, prognosis, detection of minimal residual disease, diagnosis of hereditary predisposition, and guiding targeted therapy.
+8. **Molecular profiling.** DNA sequencing, RNA profiling and DNA copy number arrays.
+9. **Tumour markers.** Blood tests such as PSA, CEA, AFP, HCG and CA-125.
+10. **Digital pathology.** Computer-assisted interpretation of digitised slides.
 
 ## Organs where FNAC can be easily/commonly done.
 
-FNAC is most easily done in readily palpable lesions of the breast, thyroid, lymph nodes and salivary glands; with imaging guidance it can also be used for deep-seated lesions such as the lung, liver, pancreas and pelvic lymph nodes.
+**Fine-needle aspiration** uses a small-bore needle to aspirate cells and fluid, which are spread on a slide, stained and examined.
 
-- **Palpable organs:** breast, thyroid, lymph nodes (cervical, axillary, inguinal), salivary glands, soft tissue swellings and subcutaneous lumps, skin lesions, and superficial bone lesions.
-- **Image-guided (ultrasound, CT or endoscopic ultrasound):** lung and mediastinum, liver, pancreas, kidney, prostate, retroperitoneal and pelvic lymph nodes, and other intra-abdominal masses.
+- **Readily palpable lesions:** breast, thyroid and lymph nodes.
+- **With imaging guidance:** deep-seated structures such as pelvic lymph nodes and the pancreas.
 
+It is less invasive and more quickly done than needle biopsy, and it avoids surgery and its risks. It can be confounded by sampling errors, but in experienced hands it is rapid and quite reliable.
 
 ## What do you mean by biopsy?
 
-A biopsy is the removal of a sample of tissue, or of an entire lesion, from a living patient for microscopic examination, in order to establish a diagnosis.
+A **biopsy** is the removal of a sample of tissue from a living patient for microscopic examination, to establish a diagnosis. (Outside source: the site textbook lists biopsy as a sampling approach but does not define it.)
 
-The term is derived from the Greek bios, life, and opsis, vision. It is the most important means of confirming a clinical diagnosis of tumour, and permits not only the distinction between benign and malignant disease but also typing, grading and, with ancillary tests, the assessment of prognostic and predictive markers. The usefulness of a biopsy depends on the specimen being adequate, representative and properly preserved. When the whole lesion cannot be excised, the site for biopsy must be chosen with care, because the periphery of a mass may not be representative and the centre may be largely necrotic. The specimen should be promptly immersed in a fixative, usually formalin, and a portion may be reserved for other studies such as cytogenetics, flow cytometry and molecular diagnostics. The pathologist also needs the relevant clinical information.
-
+- It is one of the sampling approaches for the diagnosis of tumours, along with needle aspiration and cytologic smears.
+- The specimen must be **adequate, representative and properly preserved**.
+- When the whole lesion cannot be excised, the site must be chosen with care, because the periphery of a mass may not be representative and the centre may be largely necrotic.
+- The specimen is promptly immersed in a fixative, usually formalin solution.
+- Part of the tissue may be set aside for other studies such as cytogenetics, flow cytometry and molecular diagnostics.
 
 ## Types of biopsy.
 
-The principal types of biopsy are excisional biopsy, incisional biopsy, needle biopsy (core and fine-needle aspiration), punch biopsy, and endoscopic biopsy.
+The site textbook names the sampling approaches (excision or biopsy, needle aspiration and cytologic smears) but does not classify biopsies. The types below come from an outside source (see the build log).
 
-| Type | Description | Example |
-|---|---|---|
-| Excisional biopsy | The entire lesion is removed, with a rim of normal tissue; diagnostic and therapeutic | Skin nevus or suspected melanoma, small breast lump, lymph node |
-| Incisional (wedge) biopsy | A representative part of a large lesion is removed | Large soft tissue mass, ulcerated tumour (taken from the edge, including normal tissue) |
-| Core (needle) biopsy | A cylinder of tissue is obtained with a cutting needle (Tru-Cut), often image-guided | Breast, liver, kidney, prostate, deep masses |
-| Fine-needle aspiration cytology | Cells aspirated with a fine needle, smeared and stained | Thyroid, breast, lymph node, salivary gland |
-| Punch biopsy | A circular punch removes a core of skin or mucosa | Skin lesions, cervix |
-| Endoscopic biopsy | Forceps biopsy via an endoscope | Gastrointestinal tract, bronchus, bladder, larynx |
-| Curettage | Scraping of tissue | Endometrium |
-| Bone marrow aspiration and trephine biopsy | Marrow from the iliac crest | Leukaemias, lymphomas, myeloma |
-| Frozen section (intraoperative) biopsy | Rapid diagnosis during surgery | Margins, nature of a mass |
-| Sentinel lymph node biopsy | First draining node examined for metastasis | Breast carcinoma, melanoma |
-| Liquid biopsy | Circulating tumour DNA or cells in blood | Monitoring of resistance in lung cancer |
-
+1. **Excisional biopsy.** The entire tumour is removed with some surrounding tissue.
+2. **Incisional biopsy.** Only a portion of the lesion is removed.
+3. **Punch biopsy.** Collects a deep sample of skin.
+4. **Needle biopsy.** Used for internal organs, lymph nodes or deep skin areas. It is of two kinds:
+   - **Fine-needle aspiration (FNA)** takes cells and fluid.
+   - **Core needle biopsy** uses a larger needle and removes a larger sample of tissue.
 
 ## Name 5 tumour markers with associated tumours.
-
-Five commonly used tumour markers are prostate-specific antigen (prostatic adenocarcinoma), carcinoembryonic antigen (carcinomas of the colon, pancreas, stomach and breast), alpha-fetoprotein (hepatocellular carcinoma and yolk sac tumours), human chorionic gonadotropin (choriocarcinoma and testicular germ cell tumours), and CA-125 (ovarian carcinoma).
 
 | Marker | Associated tumour |
 |---|---|
 | Prostate-specific antigen (PSA) | Prostatic adenocarcinoma |
 | Carcinoembryonic antigen (CEA) | Carcinomas of the colon, pancreas, stomach and breast |
-| Alpha-fetoprotein (AFP) | Hepatocellular carcinoma, yolk sac tumour, occasionally teratocarcinoma and embryonal carcinoma |
-| Human chorionic gonadotropin (hCG) | Choriocarcinoma, testicular germ cell tumours, hydatidiform mole |
-| CA-125 | Ovarian carcinoma |
-| Monoclonal immunoglobulin (M protein) | Multiple myeloma and other plasma cell tumours |
-| Calcitonin | Medullary carcinoma of the thyroid |
-| CA 19-9 | Pancreatic carcinoma |
-
+| Alpha-fetoprotein (AFP) | Hepatocellular carcinoma, yolk sac tumours, and occasionally teratocarcinomas and embryonal cell carcinomas |
+| Human chorionic gonadotropin (HCG) | Testicular tumours |
+| CA-125 | Ovarian tumours |
 
 ## How will you diagnose a tumour in the laboratory?
 
-Most neoplasms are easily placed at one of the two ends of the benign–malignant spectrum, but reactive changes in injured or healing tissue may resemble cancer, and in the gray zone even experts must proceed cautiously. The diagnosis of a tumour in the laboratory therefore involves a stepwise strategy, in which the clinician and the pathologist cooperate.
+The laboratory diagnosis of cancer is not difficult in most instances, because most neoplasms are easily placed at one of the two ends of the benign–malignant spectrum. Clinical data are invaluable, and the evaluation is only as good as the specimen, which must be **adequate, representative and properly preserved**.
 
-**1. Adequate specimen and clinical data.** The laboratory evaluation is only as good as the specimen, which must be adequate, representative and properly preserved. Clinical information (age, site, duration, imaging findings, history of radiation or previous treatment) is invaluable. Sampling can be by excision or biopsy, needle aspiration, or cytologic smear. The specimen is promptly placed in fixative (usually formalin), and a portion may be reserved for cytogenetics, flow cytometry and molecular studies.
-
-**2. Histopathology.** The fixed tissue is processed, embedded in paraffin and examined in haematoxylin and eosin–stained sections. The pathologist assesses architecture, cytologic atypia, differentiation, mitoses, necrosis, invasion of stroma, vessels and nerves, and surgical margins, and assigns a diagnosis and grade. Frozen section provides a diagnosis within minutes during surgery, to establish the nature of a mass, to assess the margins of an excised cancer, and to decide whether further studies are needed; it has limitations, and for definitive diagnosis permanent paraffin sections are awaited.
-
-**3. Cytology.**
-
-- Fine-needle aspiration of palpable or imaging-guided lesions (breast, thyroid, lymph node, pancreas), which is rapid, less invasive and reliable in experienced hands, although subject to sampling error.
-- Exfoliative cytology of cells shed into fluids or from surfaces: cervical Pap smear, urine, sputum, cerebrospinal fluid, effusions, bronchial washings. It distinguishes normal, dysplastic and malignant cells and recognises carcinoma in situ.
-
-**4. Immunohistochemistry.** It is used to determine the lineage of undifferentiated tumours (cytokeratin for carcinoma, desmin for muscle tumours, CD45 for haematopoietic neoplasms, SOX10 for melanoma), to identify the site of origin of metastases (PSA, thyroglobulin), and to detect prognostic and predictive markers (oestrogen and progesterone receptors, HER2, ALK).
-
-**5. Flow cytometry.** Multiparameter analysis of antigens on viable cells in suspension, chiefly in leukaemias and lymphomas.
-
-**6. Molecular and cytogenetic techniques.** These include PCR for clonality of lymphoid proliferations and for translocations, such as BCR::ABL in CML and (11;22) in Ewing sarcoma; FISH for gene amplification (ERBB2, NMYC) and translocations; karyotyping; DNA microarrays and next-generation sequencing for molecular classification, prognosis (NMYC amplification, TP53), minimal residual disease, hereditary predisposition (BRCA1/2, RET) and selection of targeted therapies (EGFR, ALK, BRAF, PML::RARA). Liquid biopsy of circulating tumour DNA can detect emerging resistance.
-
-**7. Tumour markers.** Serum markers (PSA, CEA, AFP, hCG, CA-125) lack the sensitivity and specificity to diagnose cancer, but they assist in detection and are useful in monitoring response to therapy and detecting recurrence.
-
-For the foreseeable future the most accurate diagnosis and assessment of prognosis will be reached by combining morphologic and molecular techniques.
-
+1. **Sampling approaches.** Excision or biopsy, needle aspiration, and cytologic smears. The specimen is promptly placed in a fixative (usually formalin).
+2. **Frozen section.** A quick-frozen section allows histologic evaluation within minutes. It is used to determine the nature of a mass lesion, to check that the margins of an excised cancer are clear, and to decide what further studies are needed.
+3. **Fine-needle aspiration.** A small-bore needle aspirates cells and fluid, which are spread on a slide, stained and examined. It is useful for palpable lesions of the breast, thyroid and lymph nodes, and with imaging guidance for deep structures such as pelvic lymph nodes and the pancreas.
+4. **Cytologic smears.** Used most widely to screen for carcinoma of the cervix (Pap smear). Other specimens are urine, cerebrospinal fluid, pleural effusions and bronchial washes.
+5. **Immunohistochemistry.** Antibody staining of tissue sections to categorise undifferentiated tumours, find the site of origin of metastases, and detect molecules of prognostic or therapeutic value (for example oestrogen and progesterone receptors and HER2).
+6. **Flow cytometry.** Measures several cell characteristics on cells in suspension. It is used mainly for leukaemias and lymphomas.
+7. **Molecular diagnostics and cytogenetics.** Used for diagnosis, prognosis, detection of minimal residual disease, diagnosis of hereditary predisposition, and guiding targeted therapy.
+8. **Molecular profiling.** DNA sequencing, RNA profiling and DNA copy number arrays.
+9. **Tumour markers.** Blood tests such as PSA, CEA, AFP, HCG and CA-125.
+10. **Digital pathology.** Computer-assisted interpretation of digitised slides.
 
 ## Write a short note on tumour markers (definition, examples, utility).
 
-**Definition.** Tumour markers are biochemical substances (enzymes, hormones, oncofoetal antigens, glycoproteins, immunoglobulins and other proteins) that are produced by tumour cells, or by the host in response to the tumour, and can be measured in the blood or other body fluids, as well as in tissue. Biochemical assays for such tumour-associated enzymes, hormones and other markers lack the sensitivity and specificity needed to diagnose cancer by themselves, but in concert with other tests they contribute to detection and are useful in follow-up.
+**Definition.** Tumour markers are proteins and other substances released by tumours into the serum, which can be measured in the blood. A host of markers have been described, but only a few have stood the test of time and proved clinically useful.
 
 **Examples.**
 
-| Marker | Tumour | Comment |
-|---|---|---|
-| PSA | Prostatic adenocarcinoma | Also raised in benign prostatic hyperplasia; no level excludes cancer |
-| CEA | Colon, pancreas, stomach, breast carcinoma | Raised in smokers, inflammatory conditions |
-| AFP | Hepatocellular carcinoma, yolk sac tumour, teratocarcinoma, embryonal carcinoma | Raised in cirrhosis, hepatitis and pregnancy |
-| hCG | Testicular germ cell tumours, choriocarcinoma | |
-| CA-125 | Ovarian carcinoma | Raised also in endometriosis, pelvic inflammation |
-| Monoclonal immunoglobulin | Multiple myeloma and other plasma cell tumours | |
-| Calcitonin | Medullary thyroid carcinoma | |
-| CA 19-9 | Pancreatic and biliary carcinoma | |
-| Catecholamines and metabolites | Pheochromocytoma, neuroblastoma | |
+| Marker | Associated tumour |
+|---|---|
+| Prostate-specific antigen (PSA) | Prostatic adenocarcinoma |
+| Carcinoembryonic antigen (CEA) | Carcinomas of the colon, pancreas, stomach and breast |
+| Alpha-fetoprotein (AFP) | Hepatocellular carcinoma, yolk sac tumours, and occasionally teratocarcinomas and embryonal cell carcinomas |
+| Human chorionic gonadotropin (HCG) | Testicular tumours |
+| CA-125 | Ovarian tumours |
+| Monoclonal immunoglobulin | Multiple myeloma and other secretory plasma cell tumours |
 
 **Utility.**
 
-1. Aid to diagnosis, in the right clinical setting (for example, AFP with imaging in suspected hepatocellular carcinoma, hCG and AFP in testicular masses).
-2. Monitoring response to therapy. After successful resection the marker disappears from the serum.
-3. Detection of recurrence. Persistence or reappearance of the marker almost always signifies residual or recurrent tumour, often before clinical or radiologic evidence.
-4. Prognosis and staging, since the marker level may reflect tumour burden.
-5. Screening, in a limited way only (PSA), and in high-risk groups (AFP with ultrasound for hepatocellular carcinoma in cirrhosis).
+1. **Follow-up.** The main use of CEA and AFP is to follow the response to therapy. With successful resection of the tumour these markers disappear from the serum, and their persistence or reappearance almost always signifies tumour still present. PSA is likewise used to monitor for recurrence after treatment.
+2. **Suspicion of cancer.** Prostatic carcinoma can be suspected when blood PSA is elevated.
 
-**Limitations.** Poor specificity, because levels are raised by many non-neoplastic conditions, and poor sensitivity, since normal levels do not exclude cancer, so that they are unsuitable for population screening. It has been difficult to find any single marker with sufficient specificity for screening, and it may be that such markers do not exist, since cancer results from multiple genetic and epigenetic events. A newer approach measures many markers simultaneously: driver mutations in cell-free tumour DNA ("liquid biopsy"), and circulating RNAs carried in exosomes.
+**Limitations.**
 
+- PSA is also raised in benign prostatic hyperplasia, and no PSA level excludes prostate cancer.
+- Serum CEA and AFP can be raised in a variety of non-neoplastic conditions.
+- Single markers lack the sensitivity and specificity to screen populations, so they are problematic as screening tests.
+- Tests that detect specific driver mutations in DNA from urine, blood or stool are being developed for early detection.
 
 ## What techniques of cytology are used in tumour diagnosis?
 
