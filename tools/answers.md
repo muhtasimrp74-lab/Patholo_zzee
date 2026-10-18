@@ -4141,30 +4141,23 @@ Adaptive immunity is of two types.
 
 ## Write a short note on MHC.
 
-The major histocompatibility complex (MHC) is a cluster of genes on chromosome 6 encoding the molecules that display peptide fragments of protein antigens for recognition by antigen-specific T cells. These were discovered as products of genes that evoke rejection of transplanted organs. In humans they are called human leukocyte antigens (HLA).
+- **Function.** MHC molecules display peptide fragments of protein antigens for recognition by antigen-specific T cells. They were discovered as products of genes that evoke rejection of transplanted organs, and the name derives from their role in determining tissue compatibility between individuals.
+- **HLA.** In humans the MHC molecules are called **human leukocyte antigens (HLA)**, because they were initially detected on leukocytes. The genes encoding them are clustered on a small segment of **chromosome 6**.
+- **Polymorphism.** The HLA system is highly polymorphic, with thousands of distinct MHC alleles in humans, so everyone's HLA alleles differ from those inherited by most other individuals. This is a formidable barrier in organ transplantation, because grafts exchanged between individuals other than identical twins are recognised as foreign and attacked by the immune system.
+- **Haplotype.** The combination of HLA alleles found on a single chromosome is called the HLA haplotype. Each haplotype is inherited as a block, with one set of HLA genes from each parent, so the chance that siblings will have the same MHC is **1 in 4**. This is why siblings are screened first as potential donors for kidney or haematopoietic stem cell transplantation.
 
-Polymorphism and inheritance. The HLA system is highly polymorphic, with thousands of alleles, so everyone except an identical twin differs in HLA type from most others. The combination of HLA alleles on one chromosome is the HLA haplotype. Each person inherits one haplotype from each parent as a block, and the chance that two siblings have identical MHC is 1 in 4. The polymorphism ensures that some individuals in a species can display any microbial peptide.
+| Feature | MHC class I | MHC class II |
+|---|---|---|
+| Genes | HLA-A, HLA-B and HLA-C | HLA-D region, with three subregions: HLA-DP, HLA-DQ and HLA-DR |
+| Structure | Heterodimer of a polymorphic α (heavy) chain, 44 kD, linked to a smaller nonpolymorphic protein, β₂-microglobulin, 12 kD | Heterodimer of a noncovalently associated α chain and β chain, both polymorphic |
+| Peptide-binding cleft | Formed by the α₁ and α₂ domains | Formed by the α₁ and β₁ domains |
+| Cells expressing it | All nucleated cells and platelets | Mainly cells that present ingested antigens and respond to T-cell help: macrophages, B lymphocytes and dendritic cells |
+| Peptides displayed | Derived from cytosolic proteins, including protein antigens of viruses and tumours; degraded in proteasomes and transported into the endoplasmic reticulum, where they bind newly synthesised class I molecules | Derived from extracellular microbes and proteins internalised into endosomes or lysosomes, where they are digested and associate with class II heterodimers |
+| Coreceptor | The nonpolymorphic α₃ domain binds **CD8**, so **CD8⁺ cytotoxic T lymphocytes** recognise the peptide only with class I (MHC class I restricted) | The β₂ domain binds **CD4**, so **CD4⁺ helper T cells** recognise the peptide only with class II (MHC class II restricted) |
 
-Class I molecules.
-
-- Encoded by HLA-A, HLA-B and HLA-C, and expressed on all nucleated cells and platelets.
-- Heterodimer of a polymorphic α (heavy) chain and the nonpolymorphic β2-microglobulin. The α1 and α2 domains form the peptide-binding groove.
-- Display peptides from cytosolic proteins (viral and tumour antigens), generated in proteasomes and loaded in the endoplasmic reticulum.
-- The α3 domain binds CD8, so CD8⁺ cytotoxic T cells are class I–restricted.
-
-Class II molecules.
-
-- Encoded in the HLA-D region (HLA-DP, -DQ, -DR), with polymorphic α and β chains. The α1 and β1 domains form the peptide cleft.
-- Expressed mainly on antigen-presenting cells (dendritic cells, macrophages, B cells).
-- Display peptides from extracellular microbes and proteins ingested into endosomes and lysosomes.
-- The β2 domain binds CD4, so CD4⁺ helper T cells are class II–restricted.
-
-Functions and clinical significance.
-
-1. T cells can detect intracellular and extracellular antigens only in the context of self MHC molecules.
-2. MHC polymorphism is the main barrier in transplantation and underlies graft rejection. Siblings are screened first as donors for kidney or stem cell transplants.
-3. HLA associations with disease. HLA genes make the greatest contribution to genetic susceptibility to autoimmunity: HLA-B27 with ankylosing spondylitis (relative risk 100–200), DRB1 "shared epitope" alleles with rheumatoid arthritis, DR3/DR4 haplotypes with type 1 diabetes, and DRB1*1501 with multiple sclerosis. Such alleles are not by themselves the cause of disease, and most HLA-B27 carriers never develop ankylosing spondylitis.
-
+- **Role in T-cell responses.** MHC molecules let T cells detect antigens that are inside cells (microbial and tumour antigens). By segregating cytosolic and internalised antigens, they ensure that the correct response is mounted: killing of cells harbouring cytosolic microbes and tumour antigens by cytotoxic T lymphocytes, and helper T cell–mediated antibody production and macrophage activation against extracellular and phagocytosed microbes.
+- **Immune response depends on the inherited MHC.** An individual mounts an immune response against a protein antigen only if that person inherits an MHC variant that can bind peptides derived from the antigen. For example, a person whose class II molecules bind a peptide from ragweed pollen is genetically prone to allergic reactions against ragweed, whereas an inherited capacity to bind a bacterial peptide may provide resistance to that infection.
+- **Disease associations.** Particular HLA alleles are associated with autoimmune and other diseases. The most striking association is between ankylosing spondylitis and **HLA-B27**, with a 100- to 200-fold greater chance of the disease. Most individuals who inherit HLA-B27 never develop it, so the allele is not, by itself, the cause of any disease.
 
 ## Define hypersensitivity.
 
@@ -4222,216 +4215,156 @@ Antibodies, most often IgG, react with antigens present on cell surfaces or in t
 
 ## What is anaphylactic reaction?
 
-Anaphylaxis is the systemic, life-threatening form of type I (immediate) hypersensitivity. It occurs in a previously sensitised individual on re-exposure to an antigen, and is characterised by vascular shock, widespread oedema and bronchospasm.
-
-Mechanism. Allergen exposure in an atopic or sensitised person triggers Th2 cells and follicular helper T cells, which secrete IL-4 and IL-13 and drive B-cell switching to IgE. IgE binds to FcεRI on mast cells and basophils. On re-exposure the multivalent antigen cross-links the bound IgE, and the mast cells degranulate and release preformed mediators (histamine, proteases, heparin) and newly synthesised ones (leukotrienes C₄ and D₄, prostaglandin D₂, platelet-activating factor, cytokines). Systemically, histamine and the leukotrienes cause widespread vasodilatation and increased vascular permeability, bronchospasm, and mucus secretion. In some cases mast cells may also be activated by non-IgE stimuli (complement C3a and C5a, drugs, physical factors), which produce similar anaphylactoid reactions. Extremely small doses can trigger it.
-
-Clinical picture. Within minutes of exposure there is itching, hives and erythema, followed shortly by bronchospasm and respiratory distress. Laryngeal oedema causes hoarseness and airway obstruction. Vomiting, abdominal cramps and diarrhoea follow, and the patient may go into shock and die within the hour. The absence of a prior history of allergy does not exclude it.
-
-Management. Immediate intramuscular epinephrine, with airway support, fluids, and antihistamines and corticosteroids as adjuncts. Because antihistamines act only on the immediate phase, epinephrine is the drug of first choice.
-
+Systemic **anaphylaxis** is characterised by **vascular shock**, widespread **oedema** and **bronchospasm**.
 
 ## Give various examples of anaphylactic reactions.
 
-Anaphylactic reactions can be triggered by a wide range of substances, in hospital or in the community:
+Systemic anaphylaxis occurs in sensitised individuals.
 
-- **Drugs:** penicillin and other β-lactam antibiotics are the commonest, and also sulfonamides and other antibiotics, aspirin and NSAIDs, and radiocontrast media (largely anaphylactoid).
-- **Foreign proteins and sera:** antisera and antivenoms (horse serum), antitoxins, and vaccine components.
-- **Hormones and enzymes:** insulin and other protein hormones, and therapeutic enzymes such as streptokinase and chymopapain.
-- **Polysaccharides:** for example, dextran.
-- **Foods:** peanuts, tree nuts, shellfish, fish, egg, milk. These can act in minute quantities, which is why some airlines stopped serving peanuts.
-- **Insect venom:** bee, wasp and hornet stings.
-- **Other:** latex, blood products (for example, in IgA-deficient patients), and nonatopic triggers such as exercise, cold and heat, in which mast cells are abnormally sensitive to nonimmune stimuli (20–30% of immediate hypersensitivity reactions).
+1. **In hospital**, after administration of:
 
-The local forms of immediate hypersensitivity are related reactions of the same mechanism: urticaria, allergic rhinitis, conjunctivitis, atopic asthma, atopic dermatitis and food allergy gastroenteritis.
+- foreign proteins, for example antisera
+- hormones
+- enzymes
+- polysaccharides
+- drugs, for example the antibiotic **penicillin**
+
+2. **In the community**, after exposure to:
+
+- food allergens, for example **peanuts** and **shellfish**
+- insect toxins, for example those in **bee venom**
+
+3. **Extremely small doses** of antigen may trigger it, for example the tiny amounts used in skin testing for allergies.
 
 ## What do you mean by autoimmunity?
 
-Autoimmunity is an immune reaction against the body's own (self) antigens, resulting from a failure of self-tolerance, which can lead to autoimmune disease.
-
-Autoimmune diseases are estimated to affect about 5–8% of the population of the United States and their incidence is increasing. Immunologic tolerance is unresponsiveness to an antigen induced by exposure of lymphocytes to it. Central tolerance eliminates self-reactive lymphocytes in the thymus (negative selection, with AIRE-dependent expression of tissue antigens) and bone marrow (receptor editing or deletion). Peripheral tolerance operates through anergy, suppression by regulatory T cells (FOXP3⁺, CD25⁺), deletion by apoptosis, and sequestration of antigens in immune-privileged sites.
-
-Autoimmunity arises from inherited susceptibility genes (notably HLA alleles, and non-HLA genes such as PTPN22, NOD2 and IL2RA) combined with environmental triggers such as infections (via costimulator upregulation or molecular mimicry), tissue injury and the microbiome. There is a female bias. Autoimmune diseases are chronic, often relapsing, and progressive, aided by epitope spreading. They range from organ-specific diseases (type 1 diabetes, multiple sclerosis) to systemic diseases (SLE).
-
+Immune reactions against self antigens are called **autoimmunity**. Autoimmunity results from the loss of **self tolerance**.
 
 ## What do you mean by immunodeficiency?
 
-Immunodeficiency is a state of defective immune function, in which the body cannot adequately defend itself, and it manifests as increased susceptibility to infections and certain cancers.
+**Immunodeficiency** diseases are divided into two groups:
 
-Immunodeficiency diseases are divided into:
+- **Primary (congenital) immunodeficiencies**, which are caused by single-gene defects. They are also called inborn errors of immunity.
+- **Secondary (acquired) immunodeficiencies**, which may arise as complications of cancers, infections or malnutrition, or as side effects of immunosuppression, irradiation or chemotherapy for cancer, graft rejection and other diseases.
 
-- **Primary (congenital) immunodeficiencies**, caused by single-gene defects ("inborn errors of immunity") affecting innate immunity (phagocytes, NK cells, complement) or adaptive immunity (B cells, T cells). Most are detected in infancy, between 6 months and 2 years, because of recurrent infections. Examples are X-linked agammaglobulinaemia (BTK mutation), X-linked SCID (common γ chain), adenosine deaminase deficiency, selective IgA deficiency, common variable immunodeficiency, X-linked hyper-IgM syndrome (CD40L), DiGeorge syndrome, Wiskott-Aldrich syndrome and ataxia telangiectasia.
-- **Secondary (acquired) immunodeficiencies**, which are more common and arise as complications of other conditions: HIV infection (AIDS, with depletion of CD4⁺ T cells), irradiation and chemotherapy, bone marrow involvement by cancer, malnutrition, splenectomy, and immunosuppressive drugs.
-
+Immunodeficiencies are manifested clinically by **increased infections**, which may be newly acquired or a reactivation of a latent infection.
 
 ## Name some autoimmune diseases.
 
-Examples are systemic lupus erythematosus, rheumatoid arthritis, type 1 diabetes mellitus, multiple sclerosis, Graves disease, myasthenia gravis, autoimmune haemolytic anaemia, pernicious anaemia and Goodpasture syndrome.
-
-Systemic (generalised): systemic lupus erythematosus, rheumatoid arthritis, Sjögren syndrome, systemic sclerosis (scleroderma), inflammatory myopathies (polymyositis, dermatomyositis), polyarteritis nodosa and other vasculitides, mixed connective tissue disease.
-
-Organ-specific, antibody-mediated: autoimmune haemolytic anaemia, autoimmune thrombocytopenic purpura, pernicious anaemia, myasthenia gravis, Graves disease, Goodpasture syndrome, pemphigus vulgaris.
-
-Organ-specific, T cell–mediated: type 1 diabetes mellitus, multiple sclerosis, Hashimoto thyroiditis.
-
-Postulated autoimmune (evidence weaker): inflammatory bowel disease (Crohn disease, ulcerative colitis), primary biliary cholangitis, autoimmune (chronic active) hepatitis.
-
+- **Diseases mediated by antibodies:** autoimmune haemolytic anaemia, autoimmune thrombocytopenia, pernicious anaemia, myasthenia gravis, Graves disease and Goodpasture syndrome.
+- **Diseases mediated by T cells:** type 1 diabetes mellitus, rheumatoid arthritis, multiple sclerosis, systemic sclerosis (scleroderma) and Sjögren syndrome.
+- **Systemic disease with a diversity of antibodies:** systemic lupus erythematosus.
+- **Diseases postulated to be autoimmune:** inflammatory bowel diseases (Crohn disease and ulcerative colitis), polyarteritis nodosa, inflammatory myopathies, primary biliary cholangitis and autoimmune (chronic active) hepatitis.
 
 ## Write a short note on autoimmune disease.
 
-Autoimmune diseases are disorders caused by immune responses against self antigens, which result from a loss of self-tolerance. They are estimated to affect 5–8% of the population in the United States, and their incidence is rising, particularly in highly resourced countries.
+**Definition.** Immune reactions against self antigens, called autoimmunity, are an important cause of numerous diseases. They are estimated to affect 5 to 8% of the population of the United States, and the incidence is increasing, especially in highly resourced countries. Autoimmunity results from the loss of self tolerance.
 
-Spectrum. The manifestations range from organ-specific disease (type 1 diabetes, with autoreactive T cells and antibodies against islet β cells; multiple sclerosis, with T cells against CNS myelin) to systemic disease (SLE, with antibodies to DNA, platelets, red cells and phospholipid-protein complexes). Goodpasture syndrome, with antibodies against basement membranes of kidney and lung, lies in between. The systemic diseases tend to involve blood vessels and connective tissue and are called collagen vascular or connective tissue diseases.
+**Spectrum.**
 
-Self-tolerance. Central tolerance deletes immature self-reactive T cells in the thymus (aided by AIRE) and B cells in the bone marrow (receptor editing), but it is imperfect. Peripheral tolerance silences escapees by anergy (lack of costimulation, CTLA-4, PD-1), suppression by FOXP3⁺ regulatory T cells, and apoptosis (Bim, Fas-FasL). Immune-privileged sites are sequestered from the immune system.
+- **Organ-specific disease.** In type 1 diabetes the autoreactive T cells and antibodies are specific for β cells of the pancreatic islets. In multiple sclerosis autoreactive T cells react against central nervous system myelin.
+- **Systemic disease.** The best example is **systemic lupus erythematosus**, in which a diversity of antibodies directed against DNA, platelets, red cells and protein-phospholipid complexes result in widespread lesions throughout the body. The systemic diseases tend to involve blood vessels and connective tissues and are often called collagen vascular diseases or connective tissue diseases.
+- **In between.** In Goodpasture syndrome, antibodies to basement membranes of lung and kidney induce lesions in these organs.
 
-Pathogenesis. Autoimmunity results from susceptibility genes together with environmental triggers.
+**Self tolerance.**
 
-- **Genes.** HLA alleles make the greatest contribution (HLA-B27 with ankylosing spondylitis). Non-HLA genes include PTPN22, NOD2, IL23R and IL2RA (CD25). Rare Mendelian defects (AIRE, FOXP3, FAS, CTLA4) cause autoimmunity.
-- **Infections and environment.** Infections can upregulate costimulators, cause molecular mimicry (rheumatic heart disease), and cause polyclonal B-cell activation; tissue injury can release or modify self antigens (UV light in lupus, smoking in rheumatoid arthritis).
-- **Other.** Abnormal display of self antigens, the microbiome and sex bias (female preponderance).
+- **Central tolerance.** Immature self-reactive T cells that recognise self antigens in the thymus are killed by apoptosis (negative selection, or clonal deletion); the protein **AIRE** stimulates expression of peripheral tissue–restricted self antigens in the thymus. Self-reactive B cells in the bone marrow undergo receptor editing, and if this does not occur they undergo apoptosis. Central tolerance is imperfect.
+- **Peripheral tolerance.** Self-reactive lymphocytes that escape are silenced by **anergy** (antigen presented without adequate costimulators), **suppression by regulatory T cells** (CD4⁺ cells expressing high levels of CD25 and the transcription factor FOXP3), **deletion by apoptosis**, and sequestration of antigens in immune-privileged sites such as the testis, eye and brain.
 
-Mechanisms of injury. These are the hypersensitivity mechanisms: autoantibodies (type II and III), and Th1 and Th17 cell–mediated inflammation and CTLs (type IV). Rheumatoid arthritis involves both.
+**Pathogenesis.** Autoimmunity arises from a combination of the inheritance of susceptibility genes and environmental triggers, such as infections and tissue damage, which promote the activation of self-reactive lymphocytes. The following abnormalities appear to contribute:
 
-Features. The disease is chronic, often relapsing and progressive, because the self antigens persist, and epitope spreading broadens the response. Diagnosis rests on clinical features and detection of autoantibodies (for example, ANA and anti-dsDNA in SLE).
+- **Defective tolerance or regulation:** clues come from rare inherited (Mendelian) autoimmune disorders, but it is still not known why self tolerance fails in most common autoimmune diseases.
+- **Abnormal display of self antigens:** increased expression and persistence of self antigens that are normally cleared, or structural changes that create neoantigens (new epitopes not expressed normally).
+- **Inflammation or an initial innate immune response:** microbes or cell injury may elicit local inflammatory reactions that trigger subsequent autoimmunity.
 
+**Susceptibility genes and environmental triggers.**
+
+- **HLA genes** make the greatest contribution among the susceptibility genes; the most striking association is between ankylosing spondylitis and HLA-B27. Many autoimmune diseases are associated with HLA class II alleles.
+- **Non-MHC genes** include PTPN22 (rheumatoid arthritis, type 1 diabetes), NOD2 (Crohn disease) and the IL-2 receptor gene CD25 (type 1 diabetes, multiple sclerosis). Single-gene defects in AIRE, CTLA4, PD1, FAS, FASL and IL2 and its receptor CD25 result in autoimmunity.
+- **Infections.** Infections upregulate costimulators on antigen-presenting cells, which may break anergy. Some microbes carry antigens that share amino acid sequences with self antigens (**molecular mimicry**), as in rheumatic heart disease. Viruses such as EBV and HIV cause polyclonal B-cell activation. Tissue injury releases and modifies self antigens, and infections induce cytokines that recruit potentially self-reactive lymphocytes.
+- **Other factors.** The gut and skin microbiome may influence the balance of effector and regulatory T cells.
+
+**Clinical features.** The manifestations are extremely varied. Detection of **autoantibodies** is the most widely used clinical test for autoimmune diseases.
 
 ## A 30y lady has diffuse thyroid enlargement, exophthalmos, high T3/T4. What immunological mechanisms contribute to its development?
 
-The clinical picture is that of Graves disease, an organ-specific autoimmune disease that is the prototype of type II hypersensitivity caused by stimulating antibodies.
+The features are those of **Graves disease**, an autoimmune disorder: hyperthyroidism with diffuse enlargement of the gland, and infiltrative ophthalmopathy with exophthalmos. It has a peak incidence between 20 and 50 years of age, and females are affected 5 to 10 times more frequently than males.
 
-1. **Loss of self-tolerance and genetic susceptibility.** The disease arises in genetically predisposed persons, with HLA-DR associations and polymorphisms in immune regulatory genes such as CTLA4 and PTPN22, which weaken the control of self-reactive T and B cells. Environmental triggers such as infection and smoking contribute, and there is a strong female preponderance. Self-reactive CD4⁺ helper T cells provide help to B cells in the thyroid, where lymphocytic infiltrates with germinal centres form.
-2. **Thyroid-stimulating autoantibodies.** B cells secrete IgG antibodies against the TSH receptor on thyroid follicular cells. These antibodies bind and activate the receptor in the absence of TSH, stimulating cAMP signalling. This produces hyperplasia and hypertrophy of the epithelium (diffuse goiter) and unregulated synthesis and release of T3 and T4, so TSH is suppressed. This is an antibody-mediated functional derangement without cell destruction, and complement is not required. Other antibodies, such as TSH-binding inhibitory immunoglobulins and thyroid growth–stimulating antibodies, may modify the picture.
-3. **Exophthalmos.** Orbital fibroblasts and adipocytes express the TSH receptor, and probably the IGF-1 receptor. Autoantibodies and autoreactive T cells, and cytokines such as IFN-γ, TNF and IL-1, stimulate fibroblast proliferation, hyaluronan (glycosaminoglycan) deposition and adipogenesis. Together with lymphocytic infiltration, this causes oedema and swelling of the orbital contents and extraocular muscles and forward displacement of the globe. The same mechanism produces pretibial myxoedema in some patients.
-4. **Associated autoimmunity.** Patients have an increased risk of other autoimmune diseases (type 1 diabetes, pernicious anaemia, Addison disease), reflecting shared susceptibility genes.
+1. **Autoantibodies against the TSH receptor.** Graves disease is characterised by the production of autoantibodies against multiple thyroid proteins, most importantly the **TSH receptor**. The most common antibody, **thyroid-stimulating immunoglobulin (TSI)**, is found in about 90% of patients and is almost never seen in other autoimmune diseases of the thyroid.
+2. **Antibody-mediated stimulation of cell function.** TSI binds to the TSH receptor and mimics its actions, stimulating adenyl cyclase and increasing the release of thyroid hormones, which explains the high T3 and T4. The thyroid epithelial cells are stimulated, leading to diffuse hypertrophy and hyperplasia and the enlarged gland. This is the converse of antibodies that block receptor function, as in myasthenia gravis.
+3. **Genetic susceptibility.** The concordance rate is 30 to 40% in monozygotic twins and less than 5% in dizygotic twins. Susceptibility is associated with polymorphisms in the immune-function genes CTLA4, PTPN22 and IL2RA, and variants in the TSH receptor gene (TSHR).
+4. **Exophthalmos.** Activated CD4⁺ helper T cells secrete cytokines that stimulate fibroblast proliferation and synthesis of extracellular matrix proteins (glycosaminoglycans), leading to progressive infiltration of the retro-orbital space. Protrusion of the eyeball is caused by an increase in the volume of retro-orbital connective tissue and extraocular muscles, for four reasons:
+
+- marked infiltration of connective tissue by mononuclear cells, predominantly T cells
+- inflammation, oedema and swelling of extraocular muscles
+- accumulation of hydrophilic glycosaminoglycans such as hyaluronic acid and chondroitin sulphate
+- increased numbers of adipocytes (fatty infiltration)
 
 ## What is amyloidosis?
 
-Amyloidosis is a generic term for disorders in which proteins with the propensity to aggregate form fibrils and deposit in extracellular tissues, causing tissue damage and functional compromise. The deposits stain with Congo red and show apple-green birefringence under polarised light.
+**Amyloidosis** is a generic term for disorders in which proteins with the propensity to aggregate form **fibrils** and deposit in extracellular tissues, causing tissue damage and functional compromise.
 
-Nature of amyloid. Amyloid is not a single chemical entity. More than 40 different proteins can form amyloid, but all deposits have a uniform physical organisation. By electron microscopy they are continuous, nonbranching fibrils 8–10 nm in diameter, composed of β-pleated sheet protofilaments, which explains the Congo red staining. About 95% of the deposit is fibril protein and 5% is serum amyloid P component and glycoproteins, including proteoglycans and glycosaminoglycans. The name "amyloid" (starch-like) is a historical misnomer.
-
-Pathogenesis. Normal proteins with an inherent tendency to misfold, produced in excess or inadequately cleared, or variant (mutant) proteins prone to misfolding, form oligomers and then aggregate into fibrils. Normally misfolded proteins are degraded by proteasomes or macrophages, and in amyloidosis these quality-control mechanisms fail.
-
-Classification.
-
-| Type | Fibril protein | Setting |
-|---|---|---|
-| **AL** (most common systemic form) | Immunoglobulin light chains (mainly λ) | Monoclonal plasma cell proliferation, including multiple myeloma (5–15% of cases) |
-| **AA** (reactive systemic) | Serum amyloid A (acute-phase protein, induced by IL-1 and IL-6) | Chronic inflammation: rheumatoid arthritis, inflammatory bowel disease, chronic infections, familial Mediterranean fever |
-| **ATTR** | Transthyretin | Wild-type in elderly men (cardiac); variant forms are autosomal dominant (familial polyneuropathy, cardiomyopathy) |
-| **Aβ** | Amyloid β from amyloid precursor protein | Alzheimer disease (brain) |
-| **Aβ2m** | β2-microglobulin | Long-term haemodialysis (joints, carpal tunnel syndrome) |
-| Endocrine | Hormone-derived proteins | Medullary carcinoma of the thyroid, islet amyloid in type 2 diabetes |
-
-Amyloidosis may be systemic or localised to one organ.
-
-Morphology. On H&E the deposit is amorphous, eosinophilic and hyaline, beginning between cells near basement membranes and eventually encroaching on and destroying them. Involved organs are enlarged, firm, waxy and gray. Diagnosis rests on Congo red staining, with apple-green (yellow-green) birefringence on polarisation.
-
-Clinical features. Early symptoms are nonspecific (weakness, weight loss). Renal involvement causes proteinuria and nephrotic syndrome, leading to renal failure. Cardiac amyloid produces restrictive cardiomyopathy, heart failure and arrhythmias. Gastrointestinal amyloid can cause malabsorption, and tongue deposition macroglossia. Vascular fragility produces bleeding, and AL amyloid can bind factor X. Peripheral and autonomic neuropathy occurs in familial forms.
-
-Diagnosis. Biopsy of kidney, rectum, gingiva or abdominal fat aspirate (specific but not sensitive), serum and urine protein electrophoresis and immunofixation in suspected AL amyloidosis, bone marrow examination for plasmacytosis, and serum amyloid P scintigraphy.
-
-Prognosis. Generalised amyloidosis has a poor prognosis. Median survival in AL amyloidosis is about 2 years from diagnosis and is worse with myeloma. Reactive amyloidosis does better if the underlying inflammation is controlled.
-
+These abnormal deposits are produced by the aggregation of proteins that are often misfolded (but are soluble in their normal folded configuration), forming oligomers and then large aggregates that coalesce into insoluble fibrils. The deposits bind a wide variety of proteoglycans and glycosaminoglycans, including heparan sulphate and dermatan sulphate, and plasma proteins, notably **serum amyloid P-component**. The charged sugar groups in these adsorbed proteins give the deposits staining characteristics that were thought to resemble starch (amylose). Therefore the deposits were called amyloid, a name that is firmly entrenched despite the realisation that the deposits are unrelated to starch.
 
 ## Define neoplasia / neoplasm.
 
-A neoplasm is a disorder of cell growth that is triggered by acquired, or less commonly inherited, mutations affecting a single cell and its clonal progeny. The mutations give the neoplastic cells a growth advantage, so that they proliferate excessively, independently of the physiologic signals and controls that regulate normal tissue growth, and they continue to do so even after the stimulus that provoked the change has been withdrawn.
+**Neoplasia** means "new growth", and the collection of cells and stroma composing new growths are referred to as **neoplasms**.
 
-Neoplasia literally means "new growth", and the collection of cells and stroma that make up a new growth is called a neoplasm. The word tumour originally meant the swelling caused by inflammation, but it is now used as a synonym for neoplasm, and oncology (Greek oncos, tumour) is the study of tumours. Because physicians find it difficult to define a neoplasm precisely, the classical definition of Willis is still widely quoted: an abnormal mass of tissue whose growth exceeds, and is uncoordinated with, that of the normal tissues and persists in the same excessive manner after cessation of the stimulus that evoked the change. The modern molecular definition places the emphasis on the cause of this behaviour, namely mutations that alter the function of genes controlling proliferation, survival and genomic integrity (proto-oncogenes, tumour suppressor genes, apoptosis-regulating genes and DNA repair genes).
-
-Every tumour has two basic components. The first is the **parenchyma**, made up of the neoplastic (transformed) cells, and the second is the **reactive stroma**, which consists of connective tissue, blood vessels and cells of the innate and adaptive immune system. The classification of a tumour and much of its biologic behaviour are determined by the parenchymal cells, but the growth and spread of the tumour depend critically on its stroma, which supplies the blood vessels and provides supporting and signalling interactions. When parenchymal cells stimulate the formation of abundant collagenous stroma the tumour is said to be desmoplastic, and some desmoplastic tumours, such as certain breast cancers, are stony hard (scirrhous). Tumours with scant stroma are soft and fleshy.
-
-Neoplasms are broadly divided into benign tumours, which remain localised, and malignant tumours (cancers), which invade adjacent tissues and metastasise.
-
+In the modern era, a neoplasm is defined as a disorder of **cell growth** that is triggered by **acquired** or, less commonly, **inherited mutations** affecting a single cell and its **clonal progeny**. These causative mutations alter the function of genes and give the neoplastic cells a growth advantage, resulting in excessive proliferation that is independent of physiologic growth signals and controls.
 
 ## Differences between hyperplasia and neoplasia.
 
-Hyperplasia is a controlled, reversible, polyclonal increase in the number of cells in response to a stimulus and it regresses when the stimulus is removed, whereas neoplasia is an autonomous, monoclonal proliferation caused by acquired mutations that persists after the stimulus has gone and does not regress.
-
-Hyperplasia is a physiologic or pathologic response in which normal cells respond to hormones or growth factors by dividing more often; the cells stay under the regulatory control of the signals that evoke them, and the proliferation therefore stops when the signals stop. Neoplasia arises when a single cell acquires mutations that free it from this control, and its clonal descendants proliferate without regard to physiologic signals.
-
 | Feature | Hyperplasia | Neoplasia |
 |---|---|---|
-| Nature | Increase in the number of cells of an organ or tissue in response to a stimulus | New growth arising from a mutated cell and its clonal progeny |
-| Stimulus | Physiologic (e.g., hormonal, compensatory) or pathologic (e.g., excess oestrogen, chronic irritation) | Acquired or inherited mutations in cancer-associated genes; no dependence on an external stimulus |
-| Clonality | Polyclonal | Monoclonal |
-| Dependence on stimulus | Dependent; growth is regulated by hormones or growth factors | Autonomous; growth is independent of normal physiologic controls |
-| Regression | Regresses when the stimulus is withdrawn | Persists and usually continues to grow after removal of the cause |
-| Cells | Normal, mature, orderly | May range from well differentiated to anaplastic |
-| Tissue organisation | Normal architecture is preserved | Architecture is disorganised and uncoordinated with the surrounding tissue |
-| Behaviour | Self-limited, never invades or metastasises | Benign tumours expand locally; malignant tumours invade and metastasise |
-| Examples | Endometrial hyperplasia, benign prostatic hyperplasia, compensatory regeneration of the liver | Adenoma, lipoma, carcinoma, sarcoma |
-
-Pathologic hyperplasia, particularly when caused by sustained trophic stimulation, can act as a fertile soil for neoplasia, because proliferating cells are at greatest risk of acquiring the somatic mutations that drive carcinogenesis. Endometrial hyperplasia caused by prolonged oestrogenic stimulation is the classic precursor of endometrial carcinoma.
-
+| Definition | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by mutations affecting a single cell and its clonal progeny |
+| Cause | Action of hormones or growth factors on target cells; in pathologic hyperplasia their excessive or inappropriate action | Acquired or, less commonly, inherited mutations that alter the function of genes |
+| Control of growth | The process remains controlled | Excessive proliferation that is independent of physiologic growth signals and controls |
+| Effect of removing the stimulus | Can regress or stabilise if the stimulus is eliminated | Proliferation is independent of physiologic growth signals |
+| Relation to cancer | Distinct from cancer, but pathologic hyperplasia is a fertile soil in which cancerous proliferations may arise, because increased cell division raises the risk of genetic aberrations | Neoplastic cells have a growth advantage; malignant neoplasms are cancers |
+| Example | Endometrial hyperplasia, benign prostatic hyperplasia | Benign and malignant tumours |
 
 ## Types of neoplasm.
 
-Neoplasms are classified by their behaviour into benign and malignant tumours, and by their histogenesis, that is, by the cell or tissue from which they arise, into epithelial, mesenchymal (connective tissue), haematopoietic, mixed and germ cell tumours.
+1. **Benign tumours** remain localised at their site of origin and are generally amenable to surgical removal. The suffix "-oma" is attached to the name of the cell type of origin, for example fibroma and chondroma.
 
-**By behaviour.** Benign tumours remain localised at their site of origin, grow as cohesive expansile masses, are usually well differentiated and are generally amenable to surgical removal, so that the patient usually survives. Malignant tumours, collectively called cancers, invade and destroy adjacent structures and can spread (metastasise) to distant sites. Some tumours, such as basal cell carcinoma of the skin and gliomas, are locally invasive but only rarely metastasise, which illustrates that invasiveness and metastasis are separable properties.
+- **Adenoma** is applied to benign epithelial neoplasms derived from glandular tissues.
+- **Papilloma** produces fingerlike or warty projections from epithelial surfaces.
+- **Cystadenoma** forms large cystic masses, such as in the ovary.
 
-**By histogenesis.**
+2. **Malignant tumours** can invade and destroy adjacent structures and spread to distant sites (metastasise). They are collectively called **cancers**.
 
-| Group | Benign | Malignant |
-|---|---|---|
-| Epithelial | Adenoma, papilloma, cystadenoma | Carcinoma (squamous cell carcinoma, adenocarcinoma, etc.) |
-| Mesenchymal (connective tissue, muscle, vessels) | Fibroma, lipoma, chondroma, leiomyoma, haemangioma | Sarcoma (fibrosarcoma, liposarcoma, osteosarcoma, leiomyosarcoma, etc.) |
-| Haematopoietic and lymphoid | — | Leukaemias and lymphomas |
-| Mixed tumours (more than one parenchymal cell line from a single clone) | Pleomorphic adenoma of the salivary gland | Malignant mixed tumour of the salivary gland, Wilms tumour |
-| Germ cell / totipotential cell tumours | Mature teratoma (dermoid cyst) | Immature teratoma, teratocarcinoma, seminoma |
+- **Sarcomas** arise in solid mesenchymal tissues, for example fibrosarcoma and chondrosarcoma.
+- **Leukaemias** arise from blood-forming cells, and **lymphomas** are tumours of lymphocytes or their precursors.
+- **Carcinomas** are malignant neoplasms of epithelial cell origin, for example squamous cell carcinoma and adenocarcinoma.
 
-In addition, non-neoplastic lesions with misleading names (hamartoma and choristoma) and several malignant tumours with benign-sounding names (lymphoma, melanoma, mesothelioma, seminoma) must be remembered.
-
+3. **Mixed tumours** show more than one line of differentiation, arising from a single neoplastic clone, for example **pleomorphic adenoma** (mixed tumour of the salivary gland).
+4. **Teratoma** contains mature or immature cells or tissues belonging to more than one germ cell layer, sometimes all three, and originates from totipotential germ cells.
 
 ## Two examples of each type of neoplasm.
 
-A benign epithelial tumour is an adenoma or papilloma and its malignant counterpart is a carcinoma such as squamous cell carcinoma or adenocarcinoma; a benign mesenchymal tumour is a lipoma or leiomyoma and its malignant counterpart is a sarcoma such as osteosarcoma or liposarcoma; blood-forming cells give rise to leukaemias and lymphomas; and the mixed tumours are exemplified by pleomorphic adenoma and teratoma.
-
-| Tissue of origin | Benign (examples) | Malignant (examples) |
+| Type | Benign | Malignant |
 |---|---|---|
-| Fibrous tissue | Fibroma | Fibrosarcoma |
-| Adipose tissue | Lipoma | Liposarcoma |
-| Cartilage | Chondroma | Chondrosarcoma |
-| Bone | Osteoma | Osteogenic sarcoma (osteosarcoma) |
-| Smooth muscle | Leiomyoma | Leiomyosarcoma |
-| Striated muscle | Rhabdomyoma | Rhabdomyosarcoma |
-| Blood vessels | Haemangioma | Angiosarcoma |
-| Lymph vessels | Lymphangioma | Lymphangiosarcoma |
-| Meninges | Meningioma | Invasive meningioma |
-| Haematopoietic cells | — | Leukaemias |
-| Lymphoid tissue | — | Lymphomas |
+| Connective tissue | Fibroma, lipoma | Fibrosarcoma, liposarcoma |
+| Cartilage and bone | Chondroma, osteoma | Chondrosarcoma, osteogenic sarcoma |
+| Blood vessels and lymph vessels | Haemangioma, lymphangioma | Angiosarcoma, lymphangiosarcoma |
+| Muscle | Leiomyoma, rhabdomyoma | Leiomyosarcoma, rhabdomyosarcoma |
+| Blood cell–forming tissues | None | Leukaemias, lymphomas |
 | Squamous epithelium | Squamous cell papilloma | Squamous cell carcinoma |
-| Basal cells of skin | — | Basal cell carcinoma |
-| Melanocytes | Nevus | Melanoma |
-| Glandular epithelium | Adenoma, papilloma, cystadenoma | Adenocarcinoma, papillary carcinoma, cystadenocarcinoma |
-| Urothelium | Transitional cell papilloma | Transitional cell carcinoma |
-| Liver | Hepatic adenoma | Hepatocellular carcinoma |
-| Kidney | Renal tubular adenoma | Renal cell carcinoma |
-| Placenta | Hydatidiform mole | Choriocarcinoma |
-| Testis | — | Seminoma, embryonal carcinoma |
-| Salivary gland (mixed tumour) | Pleomorphic adenoma | Malignant mixed tumour of salivary gland origin |
-| Totipotential germ cells | Mature teratoma (dermoid cyst) | Immature teratoma, teratocarcinoma |
-| Renal anlage | — | Wilms tumour |
-
+| Glandular epithelium | Adenoma, papilloma | Adenocarcinoma, cystadenocarcinoma |
+| Melanocytes | Naevus | Melanoma |
+| Kidney and liver | Renal tubular adenoma, hepatic adenoma | Renal cell carcinoma, hepatocellular carcinoma |
+| Mixed tumours | Pleomorphic adenoma | Malignant mixed tumour of salivary gland origin, Wilms tumour |
+| Totipotential cells | Mature teratoma (dermoid cyst) | Immature teratoma, teratocarcinoma |
 
 ## What is cancer?
 
-Cancer is the common term for a malignant neoplasm, that is, a tumour whose cells can invade and destroy adjacent tissues and spread to distant sites by metastasis.
-
-The word is derived from the Latin for crab, because malignant tumours tend to adhere to any tissue they seize on in an obstinate manner, like a crab. Cancer is not a single disease but a collection of disorders with widely different pathogeneses, natural histories and responses to treatment; some, such as Hodgkin lymphoma, are highly curable, while others, such as pancreatic adenocarcinoma, are almost invariably fatal. In biologic terms, a cancer is a clonal expansion of a cell that has acquired a series of driver mutations and epigenetic changes in proto-oncogenes, tumour suppressor genes, apoptosis-regulating genes and DNA repair genes, and that has consequently acquired the hallmarks of cancer: self-sufficiency in growth signals, insensitivity to growth inhibition, altered cellular metabolism, evasion of apoptosis, limitless replicative potential, sustained angiogenesis, the ability to invade and metastasise, and the ability to evade the host immune response. Cancer is the second leading cause of death in the United States, exceeded only by cardiovascular disease. The designation "malignant" always raises a red flag, although not every cancer pursues a lethal course, since some are found early enough for surgical excision and others respond well to drugs, antibodies or cellular therapies.
-
+**Malignant tumours** can invade and destroy adjacent structures and spread to distant sites (metastasise). Malignant tumours are collectively referred to as **cancers**, derived from the Latin word for crab, because they tend to adhere to any tissue that they seize on in an obstinate manner.
 
 ## What is carcinoma?
 
-A carcinoma is a malignant neoplasm of epithelial cell origin.
+Malignant neoplasms of **epithelial cell origin** are called **carcinomas**.
 
-Carcinomas may arise from epithelium derived from any of the three germ layers (for example, squamous carcinoma of the skin from ectoderm, renal cell carcinoma from mesoderm-derived tubular epithelium and adenocarcinoma of the gastrointestinal tract from endoderm). They are qualified according to the pattern of growth or the cell they resemble. In squamous cell carcinoma the tumour cells resemble stratified squamous epithelium and often make keratin, whereas in adenocarcinoma the neoplastic epithelial cells grow in a glandular pattern. Other examples are transitional (urothelial) cell carcinoma, basal cell carcinoma, hepatocellular carcinoma and renal cell carcinoma. When the tissue or organ of origin can be identified it is added as a descriptor, as in bronchogenic squamous cell carcinoma. In about 2% of cases the cells are so primitive that their origin cannot be determined and the tumour is called an undifferentiated malignant neoplasm; immunohistochemical staining for cytokeratins is then used to establish epithelial origin.
-
-Carcinomas are the commonest form of cancer in adults, and the carcinomas of the lung, breast, prostate and colorectum together account for more than half of cancer diagnoses and deaths in the United States. They develop through a sequence of premalignant change (dysplasia and carcinoma in situ) before they invade, and their initial dissemination is most commonly by the lymphatic route.
-
+Carcinomas may be further qualified. In **squamous cell carcinoma** the tumour cells resemble stratified squamous epithelium, whereas in **adenocarcinoma** the neoplastic epithelial cells grow in a glandular pattern. Sometimes the tissue or organ of origin is added as a descriptor, as in renal cell adenocarcinoma or bronchogenic squamous cell carcinoma.
 
 ## What is sarcoma?
 
