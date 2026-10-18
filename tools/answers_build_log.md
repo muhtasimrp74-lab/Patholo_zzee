@@ -440,3 +440,22 @@ Short note on Rh-incompatibility came wholly from the site textbook (Chapter 10,
 - Cross matching: the 37 degree incubation time was not found and is left out.
 - Anticoagulants: tube colour for oxalate/fluoride and ACD/CPD not found; oxalate and fluoride mechanism not stated in the sources.
 - Hand-edit hunk 13 of tools/hand_edits.json (cross-matching phases) dropped because its anchor text was rewritten (19 down to 18).
+
+## Session 15, batches 1 and 2 (34 answers: Chapter 17 congenital anomalies through pleocytosis)
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| A patient with long-standing PUD has repeated/prolonged vomiting. What will be his electrolyte and acid-base status? / Same (40y): what test confirms it in the laboratory? | EB Medicine FOAMed, Persistent Vomiting case (quotes StatPearls, Gastric Outlet Obstruction); K. Ravindranath, Laparoscopy in Gastric Outlet Obstruction due to PUD (dehydration, chloride response, endoscopy and barium); MRCEM Success review (electrolyte panel findings) | https://foamed.ebmedicine.net/general-emergency-medicine/clinical-cases/persistent-vomiting/ ; https://www.laparoscopyhospital.com/bookiages/chapter%2018.doc ; https://intermediate.mrcemsuccess.com/review/30506540/246488 |
+| Write a short note on occult blood test. | StatPearls, Fecal Occult Blood Test (definition, haem or haemoglobin detection, FIT, indications, 1.5 mL per day); FPnotebook (guaiac pseudoperoxidase turns blue, vitamin C); Microbe Online (causes, red meat) | https://ncbi.nlm.nih.gov/books/NBK537138/ ; https://fpnotebook.com/GI/Lab/FclOcltBld.htm ; https://microbeonline.com/fecal-occult-blood-test-principle-procedure-results/ |
+| What is pleocytosis? | Standard medical dictionaries as quoted on Wikipedia (increased cell count, particularly white cells, in a body fluid such as CSF); Altmeyers Encyclopedia and F1000 poster (more than 5 cells per microlitre in CSF); site textbook Chapters 27 and 28 for the lymphocytic and neutrophilic examples | https://en.wikipedia.org/wiki/Pleocytosis ; https://www.altmeyers.org/en/internal-medicine/pleocytosis-159120 |
+
+### Points left out or needing a decision
+- Owner to decide: the sources for vomiting alkalosis, occult blood and pleocytosis are not Robbins or StatPearls pages read in full (StatPearls was seen only as search snippet or quoted by another site); the pleocytosis definition rests on dictionary text quoted by Wikipedia.
+- Table 17.4 (complications of PUD) lost its row labels in the textbook JSON; haemorrhage, perforation and obstruction were assigned from the clinical-features paragraph and the row text (two-thirds of ulcer deaths and rarely first indication given to perforation; pyloric channel and crampy pain given to obstruction). The haemorrhage row text is missing, so no frequency is given. Please check against the printed book.
+- Define polyp: the textbook gives no formal definition; only its opening description (small elevations of the mucosa, sessile, pedunculated) is used.
+- Different ulcers of GIT: only ulcers named in Chapter 17 (peptic, stress, Curling, Cushing, viral oesophageal, Crohn, ulcerative colitis) are listed; typhoid and tuberculous ulcers were not verified in the chapter and are left out.
+- Hirschsprung enterocolitis frequency: the textbook figure lost its symbol (could be "about" or "less than" 25%), so it is left out.
+- Table 17.8 (Crohn versus ulcerative colitis) is missing from the textbook JSON; the differences table was built from the Crohn and ulcerative colitis text. Long-segment Barrett length (3 cm) also lost its sign and is written as "3 cm or more".
+- Short note on villous adenoma: the textbook treats villous adenoma only within colorectal adenomas, so no separate villous-specific data (for example the hypersecretory syndrome) are given.
+- Occult blood: sensitivity and specificity figures not given (sources vary).

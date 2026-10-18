@@ -10147,34 +10147,36 @@ Peptic ulcer disease (PUD) refers to **chronic mucosal ulceration** affecting th
 
 ## A patient with long-standing PUD has repeated/prolonged vomiting. What will be his electrolyte and acid-base status?
 
-Repeated, prolonged vomiting in a patient with long-standing peptic ulcer disease indicates gastric outlet obstruction from pyloric or duodenal scarring, and it produces **hypochloraemic, hypokalaemic metabolic alkalosis** with dehydration and hyponatraemia.
-
-Vomiting removes gastric juice, which is rich in hydrochloric acid, so the body loses H⁺ and Cl⁻; each H⁺ secreted into the stomach leaves a bicarbonate ion in the blood. Normally this bicarbonate is offset when acid reaches the duodenum and stimulates pancreatic bicarbonate secretion, but when the acid is vomited (or retained above an obstruction) this balancing step is lost, so plasma bicarbonate rises, giving metabolic alkalosis. Loss of fluid and sodium causes volume depletion, which stimulates the renin–angiotensin–aldosterone axis. Aldosterone promotes sodium (and bicarbonate) reabsorption in exchange for potassium and hydrogen ions, so renal potassium loss produces hypokalaemia and a paradoxical aciduria develops even though the systemic pH is alkaline. Hypokalaemia itself promotes hydrogen ion shift into cells and renal H⁺ secretion, aggravating the alkalosis. Compensatory hypoventilation raises PCO₂ modestly. The reduction in ionised calcium that accompanies alkalosis may precipitate tetany.
-
-The biochemical profile is therefore low serum Cl⁻ and K⁺, low or low-normal Na⁺, high bicarbonate, arterial pH above 7.45, with low urinary chloride in the early stage.
-
+- **Hypochloraemic, hypokalaemic metabolic alkalosis**
+- Persistent vomiting from gastric outlet obstruction (ulcers of the pyloric channel and first part of the duodenum) causes loss of gastric acid, leading to metabolic alkalosis
+- **Dehydration** accompanies continuous vomiting
+- The alkalosis responds to administration of chloride
 
 ## Same (40y): what test confirms it in the laboratory?
 
-The laboratory confirmation of the metabolic disturbance is by **measurement of serum electrolytes and arterial blood gas analysis**. Serum shows hypochloraemia, hypokalaemia, and raised bicarbonate (total CO₂), with hyponatraemia and a raised urea and creatinine from prerenal azotaemia; arterial blood gas shows a raised pH (above 7.45) with raised bicarbonate and a compensatory modest rise in PCO₂, and urinary chloride is low (less than 10 mEq/L), indicating a chloride-responsive alkalosis. The cause of the vomiting, gastric outlet obstruction, is confirmed by upper gastrointestinal endoscopy (with biopsy of any gastric lesion to exclude carcinoma), a barium meal, or a saline load (succussion splash) test.
-
+- **Serum electrolytes**: low chloride (hypochloraemia), low potassium (hypokalaemia), raised bicarbonate
+- **Arterial or venous blood gas analysis**: metabolic alkalosis
+- Cause of the vomiting: **upper endoscopy** (visualises the gastric outlet) and barium upper GI study (shows the site of obstruction)
 
 ## Same (55y): what is the likely diagnosis of his present illness?
 
-The likely diagnosis is **gastric outlet obstruction (pyloric stenosis) due to a chronic peptic ulcer**, caused by fibrous scarring and oedema of a pyloric channel or duodenal ulcer. Obstruction occurs in about 2% of ulcer patients and is most often associated with ulcers of the pyloric channel. The result is persistent, often projectile vomiting of undigested food, weight loss, dehydration, and hypochloraemic hypokalaemic metabolic alkalosis.
-
-Acquired pyloric stenosis in adults may also be caused by antral gastritis or by carcinoma of the distal stomach or the pancreas, which narrows the pyloric channel by fibrosis or infiltration; therefore, in a 55-year-old, endoscopy with biopsy is mandatory to exclude a malignant obstruction.
-
+- **Gastric outlet obstruction (acquired pyloric stenosis) due to chronic peptic ulcer** near the pylorus, with scarring
+- Peptic ulcer obstruction is most often associated with pyloric channel ulcers; it causes crampy abdominal pain and, rarely, total obstruction with intractable vomiting
+- Acquired pyloric stenosis in adults is also caused by antral gastritis, and by **carcinomas of the distal stomach and pancreas** that narrow the pyloric channel by fibrosis or malignant infiltration
 
 ## A 30y man has epigastric pain after meals and at late night with nausea, vomiting. What is the likely diagnosis?
 
-The likely diagnosis is **peptic ulcer disease, most probably a duodenal ulcer**. The characteristic pain is an epigastric burning or gnawing discomfort that occurs one to three hours after meals, is worse at night (typically between 11 p.m. and 2 a.m.), and is relieved by food or alkali; nausea, vomiting, bloating, and belching may accompany it. The disease is usually caused by H. pylori–induced antral gastritis with increased acid secretion, and NSAID use, smoking, and stress contribute. The diagnosis is confirmed by upper gastrointestinal endoscopy with biopsy and testing for H. pylori (rapid urease test, histology, urea breath test, stool antigen).
-
+- **Peptic ulcer disease** (duodenal ulcer)
+- Epigastric burning or aching pain, 1 to 3 hours after meals in the day, worse at night (usually between 11 p.m. and 2 a.m.), relieved by alkali or food
+- Nausea, vomiting, bloating, belching and weight loss
+- Most commonly due to chronic *H. pylori*-induced antral gastritis; the proximal duodenum is the most frequent site
 
 ## Same: what complications can occur?
 
-The complications are those of peptic ulcer disease: haemorrhage (haematemesis, melaena, iron deficiency anaemia), perforation with peritonitis, gastric outlet obstruction from scarring (with persistent vomiting and hypochloraemic metabolic alkalosis), penetration into the pancreas or adjacent organs, and intractable, recurrent pain. Malignant change is a concern only for gastric ulcers.
-
+1. **Haemorrhage** and **iron deficiency anaemia**
+2. **Perforation** into the peritoneal cavity
+3. **Obstruction** (pyloric channel ulcers): crampy pain, intractable vomiting
+- Penetrating ulcers: pain referred to the back, left upper quadrant or chest
 
 ## Write a short note on GIST.
 
@@ -10226,57 +10228,44 @@ The complications are those of peptic ulcer disease: haemorrhage (haematemesis, 
 
 ## List five causes of malabsorption syndrome.
 
-Malabsorption results from a defect in intraluminal digestion, terminal (brush-border) digestion, transepithelial transport, or lymphatic transport. Five important causes are:
-
-1. **Celiac disease** (gluten-sensitive enteropathy): villous atrophy from an immune reaction to gluten (terminal digestion and transepithelial transport).
-2. **Chronic pancreatitis and cystic fibrosis**: pancreatic exocrine insufficiency and defective intraluminal digestion.
-3. **Crohn disease** (and other extensive small-bowel or ileal disease, or resection): loss of absorptive surface and bile salt malabsorption.
-4. **Whipple disease**: infection with Tropheryma whipplei, with lymphatic obstruction by macrophages.
-5. **Infectious and parasitic enteritis** (for example giardiasis, environmental enteric dysfunction, tropical sprue) and **lactase (disaccharidase) deficiency**.
-
-Other causes include autoimmune enteropathy, abetalipoproteinaemia, bacterial overgrowth, bile salt deficiency (biliary obstruction), carcinoid syndrome, and graft-versus-host disease.
-
+1. **Pancreatic insufficiency** (chronic pancreatitis, **cystic fibrosis**)
+2. **Celiac disease** (gluten-sensitive enteropathy)
+3. **Crohn disease**
+4. Intestinal **graft-versus-host disease** after allogeneic haematopoietic stem cell transplantation
+5. **Whipple disease**
 
 ## What is inflammatory bowel disease?
 
-Inflammatory bowel disease is a chronic, relapsing inflammatory condition of the gastrointestinal tract comprising two related disorders, ulcerative colitis and Crohn disease. It results from a combination of abnormalities in immune regulation, host–microbial interactions (dysbiosis), and epithelial function in genetically susceptible individuals. Ulcerative colitis involves only the colon and rectum, is continuous, and is limited to the mucosa and submucosa. Crohn disease can involve any part of the gastrointestinal tract (most often the terminal ileum and colon), is segmental, and is typically transmural. IBD usually presents in the teenage years and early twenties, and manifests with diarrhoea, abdominal pain, and, in ulcerative colitis, bloody diarrhoea. Both carry extraintestinal manifestations and an increased risk of colorectal carcinoma. Cases that cannot be assigned to either entity are called indeterminate colitis.
-
+Inflammatory bowel disease (IBD) is a **chronic condition comprised of two disorders, ulcerative colitis and Crohn disease**.
 
 ## Mention three important features of Crohn disease.
 
-1. **Skip lesions**: segmental involvement, with multiple separate sharply delineated diseased segments, most often in the terminal ileum and colon, separated by normal bowel.
-2. **Transmural inflammation with noncaseating granulomas**: the full thickness of the wall is inflamed, and noncaseating granulomas are found in about 35% of cases, a hallmark of the disease.
-3. **Fissures, fistulas, and strictures**: deep linear ulcers with cobblestoning, a thickened wall with fibrosis causing strictures, fistula formation to other loops, bladder, or skin, and creeping fat on the serosa.
-
+1. **Skip lesions**: multiple, separate, sharply delineated areas of disease; most commonly the terminal ileum, ileocaecal valve and caecum
+2. **Transmural inflammation** with **noncaseating granulomas** (about 35% of cases) and a thickened, rubbery wall
+3. **Strictures, fissures and fistulae**; aphthous and linear ulcers give a **cobblestone** mucosa; **creeping fat**
 
 ## Name the inflammatory bowel diseases.
 
-The inflammatory bowel diseases are **Crohn disease** and **ulcerative colitis**. Cases showing features of both that cannot be classified are referred to as indeterminate colitis (up to 10% of patients).
-
+- **Crohn disease**
+- **Ulcerative colitis**
+- **Indeterminate colitis**: in up to 10% of IBD patients it is not possible to establish either diagnosis
 
 ## Give the differences between Crohn's disease and ulcerative colitis.
 
 | Feature | Crohn disease | Ulcerative colitis |
 |---|---|---|
-| Site | Any part of the GI tract, most often terminal ileum, ileocecal region, colon | Colon and rectum only |
-| Rectal involvement | Often spared | Always involved |
-| Distribution | Skip lesions, segmental | Continuous, extending proximally from the rectum |
-| Small intestine | Frequently involved | Spared (backwash ileitis in pancolitis only) |
-| Depth of inflammation | Transmural | Mucosa and superficial submucosa |
-| Gross appearance | Thick, rubbery wall; linear, serpentine ulcers; cobblestone mucosa; creeping fat | Red granular mucosa; broad-based ulcers; pseudopolyps; normal serosa; thin wall |
-| Strictures | Common | Rare |
-| Fistulas, fissures, abscesses | Common (including perianal disease) | Rare |
-| Granulomas | Present in about 35% (noncaseating) | Absent |
-| Crypt abscesses | Present | Present, usually more prominent |
-| Toxic megacolon | Rare | May occur in severe cases |
-| Malabsorption | Frequent with small bowel involvement | Rare |
-| Cancer risk | Increased with long-standing colonic disease | Increased, especially pancolitis after 8–10 years |
-| Serology | ASCA common; p-ANCA about 10% | p-ANCA about 75%; ASCA absent |
-| Smoking | Risk factor | Onset may follow cessation; may be protective |
-| Primary sclerosing cholangitis | Less common | Strongly associated (about 5%) |
-| Clinical presentation | Intermittent diarrhoea, pain, fever; may mimic appendicitis | Bloody diarrhoea with mucus, cramps relieved by defecation |
-| Surgery | Resection often recurs at anastomosis | Colectomy is potentially curative |
-
+| Distribution | Any area of the GI tract; most commonly terminal ileum, ileocaecal valve and caecum | Colon and rectum only; **always involves the rectum** |
+| Pattern | **Skip lesions** | **Continuous**, no skip lesions |
+| Depth | **Transmural** | Limited to mucosa and superficial submucosa |
+| Ulcers | Aphthous, then elongated serpentine ulcers; **cobblestone** mucosa | Ulcers along the long axis, not serpentine; **pseudopolyps** and mucosal bridges |
+| Wall | Thickened and rubbery; **creeping fat**; strictures common | Not thickened; serosa normal; strictures do not occur |
+| Fissures and fistulae | Present | Absent |
+| Granulomas | **Noncaseating granulomas** in about 35% | Absent |
+| Perforation | Common | Uncommon; only in toxic megacolon |
+| Small intestine | Involved (about 40% limited to small intestine) | Not affected; mild **backwash ileitis** in severe pancolitis |
+| Antibodies | Anti-*Saccharomyces cerevisiae* antibodies | **p-ANCA** in up to 75% (under 10% in Crohn disease) |
+| Smoking | Strong risk factor | Onset may follow smoking cessation |
+| Primary sclerosing cholangitis | Association much weaker | Association much stronger |
 
 ## Write a short note on villous adenoma.
 
@@ -10343,39 +10332,48 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 
 ## A young male has acute abdominal pain, vomiting, fever, RIF tenderness, neutrophilic leukocytosis. What is your diagnosis?
 
-The diagnosis is **acute appendicitis**. The pain typically begins in the periumbilical region and later localises to the right iliac fossa, with deep tenderness at McBurney point (two-thirds of the distance from the umbilicus to the right anterior superior iliac spine), nausea, vomiting, low-grade fever, and neutrophilic leukocytosis. It is initiated by increased intraluminal pressure, usually from obstruction by a fecalith or lymphoid hyperplasia, which compromises venous outflow and allows bacterial proliferation, ischaemia, and inflammation. Diagnosis is clinical, supported by ultrasonography or computed tomography, and confirmed histologically; treatment is appendectomy. Mesenteric lymphadenitis, Meckel diverticulitis, Crohn disease, acute salpingitis, and ectopic pregnancy must be considered.
-
+- **Acute appendicitis**
+- Periumbilical pain that localises to the right lower quadrant, then nausea, vomiting, low-grade fever
+- Deep tenderness at **McBurney point** (two-thirds of the distance from the umbilicus to the right anterior superior iliac spine)
+- Neutrophilic leukocytosis
+- Most common in adolescents and young adults; initiated by increased intraluminal pressure that compromises venous outflow, usually from a **faecalith**
 
 ## Same: write down the possible complications.
 
-The possible complications of acute appendicitis are:
-
-1. Gangrene and **perforation**, with release of fecal and purulent material into the peritoneal cavity.
-2. **Peritonitis**, localised or generalised.
-3. **Periappendicular abscess** and appendix mass (phlegmon), and subphrenic or pelvic abscess.
-4. **Pylephlebitis** (septic thrombophlebitis of the portal tributaries), **portal vein thrombosis**, and **liver abscess**.
-5. **Bacteraemia and septicaemia**.
-6. **Intestinal obstruction** from adhesions (paralytic ileus acutely, adhesive obstruction later).
-7. Wound infection and fecal fistula postoperatively.
-
+- **Perforation** and rupture with **suppurative peritonitis**
+- Focal abscesses in the wall (acute suppurative appendicitis); **gangrenous appendicitis**
+- **Pylephlebitis**
+- **Portal venous thrombosis**
+- **Liver abscess**
+- **Bacteraemia**
 
 ## Same: what do you expect in the histopathology after operation?
 
-The histological diagnosis of acute appendicitis rests on **neutrophilic infiltration of the muscularis propria**. Neutrophils infiltrate the mucosa, submucosa, and muscularis propria, usually with mucosal ulceration and neutrophils within the lumen, which often contains pus (acute suppurative appendicitis). The wall is congested and oedematous, with dilated vessels and sometimes thrombosis; the serosa may show a fibrinopurulent exudate (periappendicitis). In more advanced cases there is transmural necrosis with haemorrhage and green-black discoloration (acute gangrenous appendicitis), which may perforate and form an abscess. A fecalith may be found in the lumen, and the appendix is grossly swollen, red, and tense, with a dull serosa covered by exudate.
+- **Neutrophilic infiltration of the muscularis propria**: required for the diagnosis
+- Early: congested subserosal vessels, modest perivascular neutrophilic infiltrate in all layers; mucosal neutrophils and focal superficial ulceration are not specific
+- More severe: neutrophilic exudate with **serosal fibrinopurulent reaction**
+- **Acute suppurative appendicitis**: focal abscesses within the wall
+- **Acute gangrenous appendicitis**: ischaemia, haemorrhagic ulceration and gangrenous necrosis extending to the serosa, followed by rupture and suppurative peritonitis
 
 ## Write a short note on occult blood test.
 
-Occult (hidden) blood in the stool is blood present in such small amount that it is not visible to the naked eye or by colour changes in the stool. The test detects bleeding from the gastrointestinal tract, and its main use is in screening for colorectal neoplasia and in the investigation of unexplained iron deficiency anaemia.
+**Definition:** Test for **hidden (occult) blood in the stool**, blood not visible to the eye.
 
-**Principles.**
+**Principle**
+- Detects **haemoglobin or its breakdown products**; the most common method detects haem
+- **Guaiac test**: the pseudoperoxidase of haemoglobin converts guaiac to **blue**
+- **Faecal immunochemical test (FIT)**: uses antibodies to detect blood
 
-1. **Guaiac-based fecal occult blood test (gFOBT)**: the pseudoperoxidase activity of haem catalyses the oxidation of guaiac by hydrogen peroxide, producing a blue colour. It detects blood from any level of the gut, but is not specific for human blood.
-2. **Fecal immunochemical test (FIT)**: uses antibodies to human globin; it is specific for human blood, is more sensitive for lower gastrointestinal bleeding (globin is digested in the upper gut), and requires no dietary restrictions.
-3. Other methods are orthotolidine tests and quantitative fecal haem assays; stool DNA tests combined with FIT are also used.
+**Indications**
+- Anaemia, suspected gastrointestinal bleeding, **colon cancer screening**
 
-**Procedure.** Stool samples from three consecutive days are tested (guaiac) after avoiding red meat, peroxidase-rich vegetables, and vitamin C for 3 days (false positives and negatives), as well as aspirin and NSAIDs, which may cause bleeding.
+**Causes of a positive test**
+- Peptic ulcer, carcinoma, diverticulosis, large adenomas, gastric antral vascular ectasia
 
-**Interpretation.** A positive test indicates bleeding, in the absence of visible blood, from oesophagitis, peptic ulcer, gastritis, carcinoma of the stomach or colon, colorectal adenomas (large adenomas bleed), inflammatory bowel disease, angiodysplasia, hookworm infestation, haemorrhoids, and drugs. A positive result calls for colonoscopy (and upper endoscopy where indicated). A negative result does not exclude disease, since bleeding from polyps and tumours is intermittent.
+**Precautions**
+- Any source of blood gives a positive guaiac test, including bleeding haemorrhoids and menstruation
+- Avoid red meat and vitamin C before a guaiac test
+- Normal faecal blood loss can approach 1.5 mL per day
 
 ## What is jaundice?
 
@@ -12885,8 +12883,10 @@ The diagnosis is confirmed by examining the cerebrospinal fluid, obtained by lum
 
 ## What is pleocytosis?
 
-Pleocytosis is an increase in the number of cells in the cerebrospinal fluid above the normal value, which is up to 5 lymphocytes (mononuclear cells) per microlitre in adults. It reflects meningeal or parenchymal inflammation or the presence of tumour cells. The predominant cell type indicates the cause. A neutrophilic pleocytosis characterises acute bacterial meningitis; a lymphocytic pleocytosis is seen in viral, tuberculous, fungal and partially treated bacterial meningitis; eosinophils appear in parasitic infections; and malignant cells are seen in carcinomatous or leukaemic meningitis.
-
+- Pleocytosis is an **increased cell count**, particularly an increased white blood cell count, in a body fluid such as **cerebrospinal fluid**
+- In CSF it means more than 5 white cells per microlitre
+- **Lymphocytic pleocytosis**: aseptic meningitis
+- **Neutrophilic pleocytosis**: chemical meningitis
 
 ## Write down the indications of CSF examination.
 
