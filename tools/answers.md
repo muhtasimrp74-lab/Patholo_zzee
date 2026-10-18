@@ -1320,99 +1320,81 @@ Four principal causes of hypercalcaemia
 
 ## What are the cardinal signs of acute inflammation?
 
-The cardinal signs of acute inflammation are rubor (redness), calor (heat), tumour (swelling) and dolor (pain), first listed by Celsus; Virchow added a fifth, functio laesa (loss of function).
-
-Celsus, a Roman writer of the first century CE, described the four cardinal signs in his treatise De Medicina, and the fifth sign was added by Rudolf Virchow in the nineteenth century. They are the clinical expression of the vascular and cellular reactions of acute inflammation and are the hallmarks of the acute response.
-
-| Sign | Meaning | Mechanism |
+| Sign | Meaning | Cause |
 |---|---|---|
-| Rubor | Redness | Vasodilation of arterioles and postcapillary venules (mediated by histamine and other mediators) increases blood flow; later, slowing of flow and engorgement of small vessels with red cells (stasis/congestion) |
-| Calor | Heat | Increased flow of warm blood from the body core into the dilated vessels of the inflamed area; most evident in the skin and extremities; fever (IL-1, TNF, PGE₂) contributes systemically |
-| Tumour | Swelling | Increased vascular permeability of postcapillary venules with exudation of protein-rich fluid (inflammatory oedema), plus accumulation of leukocytes and fibrin |
-| Dolor | Pain | Prostaglandins (especially PGE₂, which sensitises nerve endings), bradykinin and substance P, together with tissue distension by oedema and injury to the tissue by leukocyte products |
-| Functio laesa | Loss of function | Result of pain, swelling and the underlying tissue damage |
+| ***Rubor*** | Redness | Increased blood flow, with engorgement of small vessels by slowly moving red cells |
+| ***Calor*** | Heat | Increased blood flow |
+| ***Tumor*** | Swelling | Increased blood flow and *oedema*, the accumulation of extravascular fluid (exudate) rich in plasma proteins |
+| ***Dolor*** | Pain | Tissue damage and the liberation of prostaglandins, neuropeptides and cytokines |
+| ***Functio laesa*** | Loss of function | Pain and injury to the tissues |
 
-The increased blood flow and increased permeability together account for redness, warmth and swelling. Leukocytes activated by the offending agent and by endogenous mediators may release toxic metabolites and proteases extracellularly, which damages tissue; this damage, together with the prostaglandins, neuropeptides and cytokines liberated, produces pain, and the pain and tissue injury produce loss of function.
-
+- The first four signs were listed by **Celsus** (a Roman writer of the first century CE).
+- The fifth sign, loss of function, was added by **Virchow** (the father of modern pathology).
 
 ## How/why does rubor (redness) occur?
 
-Rubor occurs because of vasodilation: histamine and other mediators dilate arterioles and postcapillary venules, the increased blood flow brings more oxygenated red cells into the area, and later slowing of flow with engorgement of small vessels adds to the redness.
-
-Vasodilation is among the earliest manifestations of acute inflammation. It is induced by several mediators acting on vascular smooth muscle, notably histamine (and also prostaglandins such as PGI₂, PGE₂ and PGD₂, nitric oxide, and anaphylatoxins that release histamine from mast cells). Histamine dilates arterioles; the vasodilation involves chiefly the arterioles and postcapillary venules and opens up the capillary beds, which causes active hyperaemia, that is, increased arterial blood flow to the part. The tissue becomes red because of the increased delivery of oxygenated blood.
-
-As vasodilation continues and permeability increases, protein-rich fluid leaves the vessels, the blood becomes more viscous and its flow slows (stasis), and red cells become concentrated in small vessels. These changes cause engorgement of small vessels with slowly moving red cells, which adds to the redness of the area and is seen histologically as vascular congestion. Redness in acute inflammation is therefore a combination of active hyperaemia followed by stasis and congestion.
-
+- ***Vasodilation*** is induced by several mediators, notably **histamine**, acting on vascular smooth muscle.
+- It involves mainly the postcapillary venules and results in increased blood flow, which causes redness (erythema) and heat at the site of inflammation.
+- Loss of fluid and increased vessel diameter slow the blood flow (**stasis**) and increase the concentration of red cells in small vessels.
+- The small vessels become engorged with slowly moving red cells, which causes redness of the inflamed area. This is seen histologically as **vascular congestion**.
 
 ## How does calor (heat) occur?
 
-Calor results from the increased blood flow through the dilated vessels of the inflamed area, which delivers warm blood from the core of the body to the affected part; systemic fever from endogenous pyrogens adds to the effect.
-
-Dilatation of arterioles and the opening of capillary beds under the influence of histamine and other mediators increase the volume of blood flowing through the inflamed region. Because the blood comes from the warmer core of the body, the temperature of the affected tissue rises toward core temperature. The effect is obvious in superficial tissues such as the skin, particularly of the extremities, which are normally cooler than the core; it is not perceptible in deeply placed organs that already operate at core temperature. In addition, the endogenous pyrogens IL-1 and TNF, acting through prostaglandin E₂ in the hypothalamus, reset the temperature set point and cause systemic fever when the inflammation is substantial, so the patient as a whole may be febrile.
-
+- Heat (calor) results from ***increased blood flow*** to the injured area.
+- Vasodilation, induced by mediators such as **histamine**, involves mainly the postcapillary venules.
+- The increased blood flow is the cause of heat and redness (erythema) at the site of inflammation.
 
 ## Why does swelling develop in inflammation?
 
-Swelling in inflammation is mainly due to inflammatory oedema: increased permeability of postcapillary venules allows protein-rich fluid to escape into the extravascular tissue, and the accumulation of inflammatory cells and fibrin adds to the bulk.
-
-Several events act together. First, arteriolar dilation raises the hydrostatic pressure within the capillary bed. Second, and most important, mediators such as histamine, bradykinin and leukotrienes cause contraction of endothelial cells and open interendothelial gaps in postcapillary venules, while more severe injury causes endothelial necrosis and detachment; the vessel wall then becomes permeable to plasma proteins. The loss of protein from the plasma and its accumulation in the interstitium abolish the normal osmotic gradient that retains water within vessels, so fluid pours into the tissue. The result is an exudate, defined as an extravascular fluid with a high protein concentration. Third, lymphatic vessels attempt to drain the fluid and their flow increases, but when the rate of leakage exceeds drainage, fluid accumulates and the tissue swells. Finally, emigrated leukocytes, fibrin and, in purulent inflammation, pus further expand the inflamed tissue. In confined spaces such as the cranium or larynx, this swelling can be dangerous.
-
+- Swelling (tumor) is caused by ***increased blood flow and oedema***.
+- Vasodilation is quickly followed by increased permeability of the microvasculature, with outpouring of protein-rich fluid into the extravascular tissues.
+- The escape of fluid, proteins and blood cells from the vascular system into the interstitial tissue is called **exudation**.
+- The extravascular fluid, rich in plasma proteins, is known as oedema.
+- Lymph flow is increased and helps to drain the oedema fluid that accumulates.
 
 ## What are the components of acute inflammation?
 
-Acute inflammation has three major components: dilation of small vessels leading to increased blood flow, increased permeability of the microvasculature allowing plasma proteins and leukocytes to leave the circulation, and emigration of leukocytes from the microcirculation with their accumulation and activation at the site of injury.
+1. **Dilation of small vessels**, leading to an increase in blood flow.
+2. **Increased permeability of the microvasculature**, enabling plasma proteins and leukocytes to leave the circulation.
+3. **Emigration of leukocytes** from the microcirculation, their accumulation in the focus of injury, and their activation to eliminate the offending agent.
 
-When a host encounters a microbe or dead cells, resident phagocytes try to eliminate them, while sentinel cells recognise the agent and liberate cytokines, lipid mediators and vasoactive amines. These mediators act on neighbouring small vessels and set in motion the three components of the response.
-
-1. **Vascular changes.** Vasodilation, mainly of postcapillary venules and arterioles, increases blood flow and causes heat and redness. It is followed by increased vascular permeability, with leakage of protein-rich fluid (exudation and oedema), which in turn causes slowing of blood flow (stasis), concentration of red cells and vascular congestion.
-2. **Cellular events.** As stasis develops, leukocytes, mainly neutrophils, marginate along the endothelium, roll, adhere firmly, transmigrate through interendothelial gaps and the basement membrane, and move to the site of injury along chemotactic gradients. At the site they are activated to phagocytose and kill microbes and clear necrotic debris.
-3. **Mediators and regulation.** The vascular and cellular changes are driven by chemical mediators (histamine, prostaglandins, leukotrienes, cytokines and chemokines, complement and kinins) derived from cells and plasma proteins. The reaction is terminated by the short half-lives of mediators, neutrophil apoptosis, and active anti-inflammatory signals such as lipoxins, TGF-β and IL-10.
-
-The participants are therefore blood vessels, leukocytes and plasma proteins. The outcome is resolution, healing with scar, or progression to chronic inflammation.
-
+- These form the two main components of inflammation: a vascular reaction and a cellular response, both activated by mediators derived from plasma proteins and various cells.
 
 ## Hallmark of acute inflammation.
 
-The hallmark of acute inflammation is increased vascular permeability of postcapillary venules, leading to exudation of protein-rich fluid (oedema) and the emigration of leukocytes, predominantly neutrophils, into the tissue.
-
-Robbins identifies the increased permeability of postcapillary venules as a hallmark of acute inflammation, because it underlies the exudate, which implies that an inflammatory process has increased vessel permeability. Together with dilation of small vessels and accumulation of leukocytes and fluid in the extravascular tissue, these are the morphological hallmarks of acute inflammatory reactions. Clinically, the hallmarks are the cardinal signs: rubor, calor, tumour and dolor, with loss of function. The characteristic cell of acute inflammation is the neutrophil, which predominates in the infiltrate during the first 6 to 24 hours.
-
+- Increased permeability of postcapillary venules is a ***hallmark of acute inflammation***.
+- The morphologic hallmarks are dilation of small blood vessels and accumulation of leukocytes and fluid in the extravascular tissue.
+- Acute inflammation is characterised by exudation of fluid and plasma proteins (oedema) and emigration of leukocytes, *predominantly neutrophils*.
 
 ## Name the acute inflammatory cells.
 
-The principal cells of acute inflammation are the neutrophils, followed within 24 to 48 hours by monocytes and macrophages; mast cells and tissue macrophages act as sentinel cells, and eosinophils and lymphocytes predominate in particular settings.
-
-Neutrophils are the first and most numerous leukocytes to arrive and predominate during the first 6 to 24 hours; they are more numerous than other leukocytes, respond more rapidly to chemokines and attach more firmly to endothelial P- and E-selectin. They are short lived and die by apoptosis within a few days. Monocytes arrive later, are replaced in tissues by macrophages and become the dominant population after about 48 hours. Tissue-resident sentinel cells (macrophages, dendritic cells and mast cells) recognise the offending agent and release the first mediators. Platelets, endothelial cells and epithelial cells also produce mediators. Eosinophils predominate in helminthic infections and allergic reactions; lymphocytes may be the first cells to arrive in viral infections; and in some infections, for example with Pseudomonas, neutrophils continue to be recruited for several days. Th17 lymphocytes contribute to acute inflammation through IL-17, which induces chemokines that recruit neutrophils.
-
+- **Neutrophils** and **macrophages** are the most important leukocytes, because they are capable of phagocytosis.
+- Neutrophils predominate in the infiltrate during the first 6 to 24 hours.
+- They are replaced by monocytes, which become macrophages, in 24 to 48 hours.
+- *Exceptions:* in *Pseudomonas* infections neutrophils dominate for several days, in viral infections lymphocytes may arrive first, and in helminthic infections and allergic reactions eosinophils may be the main cell type.
+- Some T lymphocytes, the Th17 cells that produce IL-17, also contribute to acute inflammation.
 
 ## Name the chronic inflammatory cells.
 
-The cells of chronic inflammation are macrophages (the dominant cell), lymphocytes, plasma cells, eosinophils and mast cells, with fibroblasts taking part in repair; epithelioid cells and giant cells appear in granulomatous inflammation.
-
-Chronic inflammation is characterised by infiltration with mononuclear cells. Macrophages are the central cell, derived from blood monocytes and tissue-resident precursors. T lymphocytes (Th1, Th2 and Th17 subsets) and B lymphocytes with antibody-secreting plasma cells amplify and sustain the reaction, and they may organise into lymphoid follicles (tertiary lymphoid structures). Eosinophils are prominent in Th2-mediated reactions such as parasitic infection and allergy. Mast cells participate in both acute and chronic reactions through IgE-FcεRI-mediated degranulation and cytokine secretion. Neutrophils may persist in some chronic reactions, for example in chronic osteomyelitis and in smoking-related lung injury. In granulomas, activated macrophages become epithelioid cells and fuse to form multinucleate giant cells. Fibroblasts and endothelial cells proliferate as part of the attempted repair.
-
+- ***Macrophages*** are the dominant cells in most chronic inflammatory reactions.
+- **Lymphocytes**, both T and B cells.
+- **Plasma cells**, the antibody-secreting cells derived from activated B lymphocytes.
+- **Eosinophils**, abundant in reactions mediated by Th2 cells, such as parasitic infections and some allergies.
+- **Mast cells**, widely distributed in connective tissues.
+- **Neutrophils**, which persist in many forms of chronic inflammation, for example in chronic bacterial infection of bone (osteomyelitis).
+- Activated macrophages may become **epithelioid cells** or fuse to form **giant cells**.
 
 ## What are the differences between acute and chronic inflammation?
 
-Acute inflammation is rapid in onset, lasts hours to days, is characterised by oedema and neutrophil infiltration, and usually ends in resolution; chronic inflammation is of long duration, is characterised by mononuclear cells, tissue destruction and fibrosis, and arises from persistent agents or immune reactions.
-
-The distinction was originally based on duration, but the two forms differ in several respects.
-
 | Feature | Acute inflammation | Chronic inflammation |
 |---|---|---|
-| Onset | Rapid, within minutes to hours | Insidious, or follows unresolved acute inflammation |
-| Duration | Short: hours to a few days | Long: weeks, months or years |
-| Offending agent | Readily eliminated: many bacteria and fungi, necrotic cells, physical and chemical injury | Difficult to eradicate: mycobacteria, some viruses, fungi, parasites; self and environmental antigens; toxic particles (silica) |
-| Dominant cells | Neutrophils, later monocytes | Macrophages, lymphocytes, plasma cells (mononuclear cells) |
-| Vascular changes | Prominent: vasodilation, exudation, oedema | Less prominent; angiogenesis is a feature of repair |
-| Tissue destruction | Usually limited and self-limited | Marked, caused by the persistent agent and by the inflammatory cells themselves |
-| Fibrosis | Absent or minimal | Prominent, with scarring |
-| Key mediators | Histamine, prostaglandins, leukotrienes, complement, kinins, TNF, IL-1, chemokines | IFN-γ, IL-12, IL-17, TNF and growth factors, maintained by a macrophage–T-cell feedback loop |
-| Local and systemic signs | Prominent cardinal signs, fever, neutrophilia | Less florid; weight loss, anaemia, lymphocytosis, raised acute-phase proteins |
-| Outcome | Resolution, scarring, or progression to chronicity | Fibrosis and loss of function; secondary amyloidosis; occasionally neoplasia |
-
-Chronic inflammation may follow acute inflammation or arise de novo, and in conditions such as peptic ulcer the two coexist.
-
+| Onset | Rapid; develops within minutes or hours | May follow acute inflammation or arise *de novo* |
+| Duration | Short, from several hours to a few days | Longer, weeks or months |
+| Agent | Offending agents that are readily eliminated, such as many bacteria and fungi, and dead cells | Agents that are difficult to eradicate: some bacteria (tubercle bacilli), viruses, fungi, self antigens, environmental antigens and toxic substances such as silica |
+| Principal cells | Neutrophils | Mononuclear cells: macrophages, lymphocytes and plasma cells |
+| Main features | Vascular changes and exudation of fluid and plasma proteins (oedema) | Infiltration with mononuclear cells, tissue destruction, and attempts at healing by angiogenesis and fibrosis |
+| Tissue injury | Often self-limited; if the stimulus is eliminated the reaction subsides and residual injury is repaired | More tissue destruction and scarring (fibrosis) |
+| Outcome | Resolution, healing by scarring, or progression to chronic inflammation | Coexisting inflammation, tissue injury and attempted repair by scarring |
 
 ## Explain: "Inflammation is a protective response but may be potentially harmful."
 
@@ -1432,16 +1414,13 @@ The clinical use of anti-inflammatory drugs (NSAIDs, corticosteroids, anti-TNF a
 
 ## Vascular changes / reactions of blood vessels in acute inflammation.
 
-The vascular reactions of acute inflammation are changes in blood flow and vessel caliber (vasodilation with increased flow, then slowing and stasis) and increased vascular permeability that lets protein-rich fluid and leukocytes leave the circulation; the escape of fluid is called exudation.
+1. **Vasodilation:** one of the earliest manifestations, involving mainly postcapillary venules and causing increased blood flow.
+2. **Increased permeability of the microvasculature:** outpouring of protein-rich fluid into the extravascular tissues.
+3. **Stasis:** loss of fluid and increased vessel diameter slow the blood flow and increase the concentration of red cells, with vascular congestion.
+4. **Leukocyte accumulation:** as stasis develops, leukocytes, principally neutrophils, accumulate along the endothelium. The endothelial cells are activated and express increased levels of adhesion molecules. Leukocytes then adhere and migrate into the interstitial tissue.
 
-These changes are designed to maximise the movement of plasma proteins and leukocytes out of the circulation and into the site of infection or injury.
-
-**Changes in vascular flow and caliber** begin early. A transient, inconstant vasoconstriction of arterioles may occur for a few seconds. This is followed by **vasodilation**, induced by histamine and other mediators acting on vascular smooth muscle, which involves mainly arterioles and postcapillary venules, opens new capillary beds and increases blood flow; this causes redness and heat. Vasodilation is quickly followed by increased permeability of the microvasculature, with outpouring of protein-rich fluid. The loss of fluid and the increased vessel diameter slow the blood flow (**stasis**) and increase the concentration of red cells in small vessels, producing vascular engorgement or congestion. With stasis, leukocytes, principally neutrophils, accumulate along the endothelium (margination); at the same time the endothelium is activated and expresses adhesion molecules, so that the leukocytes adhere and then migrate into the tissue.
-
-**Increased vascular permeability** occurs mainly in postcapillary venules and is the hallmark of acute inflammation. The mechanisms are endothelial cell contraction (immediate transient and delayed prolonged responses), endothelial injury with necrosis and detachment, and leukocyte-dependent endothelial injury. The escape of fluid, proteins and blood cells from the vascular system into the interstitial tissue is exudation; the fluid is an exudate with a high protein content, in contrast to a transudate, which is an ultrafiltrate of plasma with low protein content formed without increased permeability.
-
-**Lymphatics** also participate: lymph flow increases and drains the oedema fluid, microbes and debris; the lymphatics may become inflamed (lymphangitis), as may the regional lymph nodes (lymphadenitis).
-
+- The vascular reactions are designed to maximise the movement of plasma proteins and leukocytes out of the circulation and into the site of infection or injury.
+- Lymphatic vessels also take part. Lymph flow is increased and helps to drain oedema fluid, and the lymphatics and draining lymph nodes may become inflamed (lymphangitis and lymphadenitis).
 
 ## How does increased vascular permeability / vascular leakage occur in acute inflammation?
 
