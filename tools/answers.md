@@ -9733,380 +9733,314 @@ Excessive bleeding can result from increased fragility of vessels, platelet defi
 
 ## What do you mean by chronic obstructive and restrictive lung diseases?
 
-Chronic obstructive lung diseases are characterised by an increase in resistance to airflow caused by diffuse airway disease. They include chronic bronchitis, emphysema, bronchiectasis, asthma and small airways disease, and chronic bronchitis and emphysema together make up COPD. The primary physiologic abnormality is limitation of expiratory flow, with trapped air. Pulmonary function tests show reduced FEV₁ out of proportion to FVC, so the FEV₁/FVC ratio is below 0.7, with an increased residual volume and total lung capacity. Dyspnoea, wheezing, prolonged expiration and cough are typical.
-
-Chronic restrictive lung diseases are characterised by reduced expansion of the lung parenchyma and decreased total lung capacity. FEV₁ and FVC fall proportionately, so that the FEV₁/FVC ratio is normal or increased. They occur in two broad groups: (1) chest wall disorders such as severe obesity, pleural disease, kyphoscoliosis and neuromuscular diseases such as poliomyelitis, and (2) chronic interstitial and infiltrative diseases such as the pneumoconioses, idiopathic pulmonary fibrosis and sarcoidosis. Features are dyspnoea, tachypnoea, end-inspiratory crackles and eventual cyanosis without wheezing, with reduced diffusion capacity, lung volume and compliance.
-
-| Feature | Obstructive | Restrictive |
+| Feature | Obstructive lung disease | Restrictive lung disease |
 |---|---|---|
-| Basic defect | Increased airway resistance; airflow limitation | Reduced lung expansion; reduced compliance |
-| Total lung capacity | Normal or increased | Decreased |
-| FEV₁ | Markedly reduced | Reduced proportionately |
-| FEV₁/FVC | Below 0.7 | Normal or increased |
-| Examples | COPD, asthma, bronchiectasis | Interstitial fibrosis, pneumoconioses, obesity, kyphoscoliosis |
+| Definition | Increase in resistance to airflow due to diffuse airway disease, which may affect any level of the respiratory tract | Reduced expansion of lung parenchyma and decreased total lung capacity |
+| Pulmonary function tests | Decreased maximal airflow rates during forced expiration; FEV1 over FVC ratio of less than 0.7 | Decreased total lung capacity |
+| Examples | Chronic obstructive pulmonary disease (emphysema and chronic bronchitis), asthma, bronchiectasis | Diseases that reduce lung expansion, such as the fibrosing diseases |
 
+Chronic obstructive pulmonary disease is defined by the World Health Organization as a common, preventable and treatable disease characterised by persistent respiratory symptoms and airflow limitation due to airway or alveolar abnormalities caused by exposure to noxious particles or gases.
 
 ## Define emphysema.
 
-Emphysema is defined as irreversible enlargement of the airspaces distal to the terminal bronchiole, accompanied by destruction of the alveolar walls. It is a morphologic diagnosis in which loss of alveolar septa and capillary bed reduces the surface area for gas exchange and decreases elastic recoil of the lung. Fibrosis, which is not conspicuous in the airspace walls, is distinguished from the small airway fibrosis that contributes to obstruction. Together with chronic bronchitis it constitutes COPD, and it is closely linked to cigarette smoking and, in panacinar form, to α₁-antitrypsin deficiency.
-
+Emphysema is defined by irreversible enlargement of the airspaces distal to the terminal bronchiole, accompanied by destruction of alveolar walls.
 
 ## Classify emphysema.
 
-Emphysema is classified anatomically according to the part of the acinus (the terminal respiratory unit, a cluster of which forms a lobule) that is involved.
+Classified according to the anatomic distribution within the lobule, into four major types. Only the first two cause clinically significant airflow obstruction.
 
-1. **Centriacinar (centrilobular) emphysema**, the commonest (over 95% of clinically significant cases). The proximal part of the acinus, formed by respiratory bronchioles, is involved while distal alveoli are spared, so normal and emphysematous spaces coexist in the same acinus. It is more common and severe in the upper lobes (apical segments) and occurs in heavy smokers.
-2. **Panacinar (panlobular) emphysema.** The acini are uniformly enlarged from the respiratory bronchiole to the terminal blind alveoli. It is more severe at the lung bases and anterior margins and is associated with α₁-antitrypsin deficiency.
-3. **Distal acinar (paraseptal) emphysema.** The proximal acinus is normal and the distal part is involved, along the pleura and the lobular septa. It underlies many cases of spontaneous pneumothorax in young adults.
-4. **Irregular (paracicatricial) emphysema.** The acinus is irregularly involved and associated with scarring; it is usually clinically insignificant.
-
-Only the first two types cause clinically significant airflow obstruction. Related, non-COPD conditions are compensatory hyperinflation, obstructive overinflation, bullous emphysema and interstitial emphysema.
-
+| Type | Features |
+|---|---|
+| **Centriacinar (centrilobular)** | Most common; more than 95% of clinically significant cases; heavy smokers with COPD; central parts of the acini (respiratory bronchioles) affected, distal alveoli spared; upper lobes, particularly the apical segments |
+| **Panacinar (panlobular)** | Associated with alpha-1 antitrypsin deficiency and exacerbated by smoking; acini uniformly enlarged from respiratory bronchiole to terminal blind alveoli; lower zones and anterior margins of the lung, most severe at the bases |
+| **Distal acinar (paraseptal)** | Distal part of the acinus involved, proximal part normal; most striking adjacent to the pleura; underlies many cases of spontaneous pneumothorax in young adults; upper half of the lungs |
+| **Irregular (paracicatricial)** | Acinus irregularly involved; almost invariably associated with scarring; usually small foci and clinically insignificant |
 
 ## Write down the pathogenesis of emphysema.
 
-Clinically significant emphysema is largely confined to smokers and patients with α₁-antitrypsin deficiency. The pathogenesis involves the following mechanisms (Robbins Fig. 15.8).
+Clinically significant emphysema is largely confined to smokers and to patients with alpha-1 antitrypsin deficiency.
 
-1. **Toxic injury and inflammation.** Cigarette smoke and other noxious particles damage the respiratory epithelium and cause chronic inflammation. Leukotriene B₄, IL-8, TNF and other mediators from epithelial cells and macrophages recruit neutrophils and other inflammatory cells, amplify inflammation and induce structural changes.
-2. **Protease–antiprotease imbalance.** Proteases (especially neutrophil elastase) released from inflammatory and epithelial cells digest the connective tissue of the alveolar walls. In patients who develop emphysema there is a relative deficiency of protective antiproteases. α₁-Antitrypsin, encoded by the Pi locus on chromosome 14, is the major inhibitor of neutrophil elastase. About 1% of emphysema patients have this genetic deficiency, and the Z allele homozygote (ZZ) has very low serum levels, with over 80% developing symptomatic panacinar emphysema at an earlier age and with greater severity if they smoke. Smoking increases neutrophil influx and elastase release, and its oxidants inactivate α₁-antitrypsin.
-3. **Oxidative stress.** Tobacco smoke, damaged alveoli and inflammatory cells produce oxidants that cause tissue damage, endothelial dysfunction and inflammation. The NRF2 protective pathway normally limits this.
-4. **Infection.** It does not initiate tissue destruction but acutely exacerbates existing disease.
+1. **Toxic injury and inflammation:** cigarette smoke and other noxious particles damage the respiratory epithelium and cause inflammation, with parenchymal destruction; mediators such as leukotriene B4, interleukin-8 and TNF are increased.
+2. **Protease-antiprotease imbalance:** proteases released from inflammatory and epithelial cells break down connective tissue; there is a relative deficiency of protective antiproteases, in some cases genetic.
+3. **Oxidative stress:** oxidants from tobacco smoke, alveolar damage and inflammatory cells cause tissue damage, endothelial dysfunction and inflammation.
+4. **Infection:** not an initiating factor, but may acutely exacerbate existing disease.
 
-**Mechanism of airflow obstruction.** Small airways are normally held open by the elastic recoil of the surrounding alveolar parenchyma. Loss of elastic tissue reduces radial traction, so that respiratory bronchioles collapse during expiration, causing functional airflow obstruction and air trapping without mechanical blockage. Small airway inflammation and fibrosis also contribute.
+**Alpha-1 antitrypsin deficiency**
+- About 1% of patients with emphysema have this defect.
+- Alpha-1 antitrypsin is a major inhibitor of proteases, particularly neutrophil elastase; it is encoded by the Pi locus on chromosome 14.
+- More than 80% of ZZ individuals develop symptomatic panacinar emphysema, earlier and more severely if they smoke.
+- Injury that increases neutrophil influx releases proteases, which in the absence of alpha-1 antitrypsin digest elastic tissue excessively.
 
+**Airway obstruction.** Loss of elastic tissue around respiratory bronchioles reduces radial traction, so they collapse during expiration and cause functional airflow obstruction.
 
 ## Write a short note on COPD.
 
-**Definition.** COPD is defined by the WHO as "a common, preventable and treatable disease that is characterised by persistent respiratory symptoms and airflow limitation that is due to airway and/or alveolar abnormalities caused by exposure to noxious particles or gases." It is the fourth leading cause of death worldwide.
+**Definition.** A common, preventable and treatable disease characterised by persistent respiratory symptoms and airflow limitation due to airway or alveolar abnormalities caused by exposure to noxious particles or gases (World Health Organization).
 
-**Components.** It comprises emphysema (alveolar wall destruction with airspace enlargement) and chronic bronchitis (productive cough for at least 3 months in 2 successive years), with small airway disease, which commonly coexist because they share cigarette smoking as the major aetiologic factor.
+**Aetiology**
+- Heavy cigarette smoking: 35% to 50% of heavy smokers develop COPD, and about 80% of COPD is attributable to smoking.
+- Poor lung development early in life, environmental and occupational pollutants, airway hyperresponsiveness and certain genetic polymorphisms.
 
-**Risk factors.** About 80% of cases are attributable to smoking (35–50% of heavy smokers develop COPD). Others are air pollution and occupational exposures, poor early lung development, airway hyperresponsiveness and genetic factors such as α₁-antitrypsin deficiency.
+**Pathogenesis.** Emphysema and chronic bronchitis often occur together.
+- Emphysema: tissue destruction by elastases and oxidants released from inflammatory cells, particularly neutrophils, responding to tobacco smoke; protease-antiprotease imbalance.
+- Chronic bronchitis: mucus hypersecretion with enlargement of mucous glands and goblet cell increase; chronic inflammation with small airway fibrosis.
 
-**Pathogenesis.** Chronic inflammation from smoke exposure, protease–antiprotease imbalance, oxidative stress and (in bronchitis) mucus hypersecretion lead to alveolar destruction, loss of elastic recoil, small airway fibrosis and mucus plugging.
+**Morphology**
+- Emphysema: voluminous lungs, abnormally large alveoli separated by thin septa, loss of attachments to small airways, decreased capillary bed.
+- Chronic bronchitis: hyperaemia, swelling and oedema of the mucosa with mucinous or mucopurulent secretions; chronic inflammation, goblet cell hyperplasia, enlarged mucous glands; Reid index (normally 0.4) increased.
 
-**Clinical features.** COPD presents insidiously, usually in smokers of 40 pack-years or more, with progressive exertional dyspnoea and chronic cough with sputum, which is worse in the morning, with exacerbations from infection. Spirometry shows FEV₁/FVC below 0.7. Patients range from "pink puffers" (emphysema-predominant: barrel chest, pursed-lip breathing, weight loss, low diffusing capacity, near-normal blood gases) to "blue bloaters" (bronchitis-predominant: productive cough, hypoxaemia, hypercapnia, cyanosis and cor pulmonale).
+**Clinical features**
+- Usually a smoking history of 40 pack-years or more; insidious dyspnoea on exertion, chronic cough with sputum.
+- Spirometry: FEV1 over FVC ratio of less than 0.7.
+- Pink puffers (emphysema dominant) and blue bloaters (chronic bronchitis dominant, with hypercapnia, hypoxaemia and cyanosis).
 
-**Complications and management.** Pulmonary hypertension and cor pulmonale, respiratory failure with superimposed infection, and pneumothorax from ruptured blebs. Treatment includes smoking cessation, bronchodilators with inhaled corticosteroids, oxygen therapy, antibiotics for exacerbations, bullectomy, lung volume reduction and transplantation. Prevention of smoking is the best hope.
+**Complications.** Pulmonary hypertension, cor pulmonale and death due to heart failure; acute respiratory failure from superimposed infection; pneumothorax from rupture of subpleural blebs.
 
 ## What is pneumonia?
 
-Pneumonia is broadly defined as any infection of the lung parenchyma. In the usual bacterial form, invasion of the lung causes the alveoli to fill with an inflammatory exudate, producing consolidation ("solidification") of the pulmonary tissue. It develops when local pulmonary defences (cough reflex, mucociliary clearance, alveolar macrophages) are impaired or when systemic resistance is lowered by chronic disease, immunodeficiency, immunosuppressive therapy or leukopenia. The causative organisms may be bacteria, viruses, mycoplasmas, fungi or parasites. Pneumonia is classified by the aetiologic agent or, as no pathogen can be isolated in about half of cases, by the clinical setting (community-acquired, hospital-acquired, aspiration, necrotising pneumonia and lung abscess, chronic pneumonia, and pneumonia in the immunocompromised host), and anatomically as lobar pneumonia or bronchopneumonia. Respiratory infections account for 2.3% of all deaths in the United States.
-
+Pneumonia can be very broadly defined as any infection of the lung parenchyma.
 
 ## Give the types of pneumonia.
 
-Pneumonia can be classified in two ways.
+Classified by the etiologic agent or, if no pathogen can be isolated (about 50% of cases), by the clinical setting. Pneumonia arises in seven distinct clinical settings.
 
-**A. Anatomic (morphologic) classification of bacterial pneumonia:**
-
-1. Lobar pneumonia: consolidation of a large portion of a lobe or an entire lobe.
-2. Bronchopneumonia (lobular pneumonia): patchy consolidation of the lung, often multilobar and bilateral and basal.
-3. Interstitial (atypical) pneumonia: inflammation of the alveolar septa, in viral and mycoplasmal pneumonia.
-
-**B. Clinical settings (pneumonia syndromes) with their usual pathogens:**
-
-| Syndrome | Usual pathogens |
+| Type | Common pathogens |
 |---|---|
-| Community-acquired acute (bacterial) pneumonia | S. pneumoniae, H. influenzae, M. catarrhalis, S. aureus, K. pneumoniae, P. aeruginosa, Legionella |
-| Community-acquired atypical (viral and mycoplasmal) pneumonia | Mycoplasma, Chlamydophila, Coxiella, RSV, influenza, adenovirus, SARS-CoV-2 |
-| Healthcare-associated and hospital-acquired pneumonia | Gram-negative rods, MRSA, Pseudomonas |
-| Aspiration pneumonia | Anaerobic oral flora with aerobes (chemical plus bacterial) |
-| Necrotising pneumonia and lung abscess | Anaerobes, S. aureus, Klebsiella, S. pyogenes |
-| Chronic pneumonia | M. tuberculosis, atypical mycobacteria, Histoplasma, Coccidioides, Blastomyces |
-| Pneumonia in the immunocompromised host | CMV, Pneumocystis jirovecii, Aspergillus, Candida, Mycobacterium, Pseudomonas |
+| **Community-acquired acute pneumonia** | Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis, Staphylococcus aureus, Klebsiella pneumoniae, Pseudomonas, Legionella pneumophila |
+| **Community-acquired atypical pneumonia** | Mycoplasma pneumoniae, Chlamydia species, Coxiella burnetii; viruses (respiratory syncytial virus, parainfluenza virus, human metapneumovirus in children; influenza A and B in adults; adenovirus in military recruits) |
+| **Hospital-acquired pneumonia** | Gram-negative rods (Klebsiella, Serratia, Escherichia coli, Pseudomonas); Staphylococcus aureus, usually methicillin-resistant |
+| **Aspiration pneumonia** | Anaerobic oral flora (Bacteroides, Prevotella, Fusobacterium, Peptostreptococcus) mixed with aerobic bacteria |
+| **Chronic pneumonia** | Granulomatous: Mycobacterium tuberculosis, atypical mycobacteria, Histoplasma, Coccidioides, Blastomyces |
+| **Necrotising pneumonia and lung abscess** | Anaerobic bacteria, with or without mixed aerobic infection; Staphylococcus aureus, Klebsiella, Streptococcus pyogenes, type 3 pneumococcus |
+| **Pneumonia in the immunocompromised host** | Opportunistic agents in addition to the usual pathogens |
 
+By anatomic distribution, bacterial pneumonia is **lobular bronchopneumonia** or **lobar pneumonia**.
 
 ## Discuss the pathogenesis of lobar pneumonia.
 
-Lobar pneumonia, in which a whole lobe or a large part of it is consolidated, is typically caused by Streptococcus pneumoniae (pneumococcus), the commonest cause of community-acquired acute pneumonia, and less often by Klebsiella pneumoniae, S. aureus or H. influenzae. Its pathogenesis is as follows.
-
-1. Breach of host defences. Organisms, which may be part of the endogenous flora (pneumococci colonise the pharynx in about 20% of adults), reach the alveoli by inhalation or microaspiration when defences are impaired. Predisposing factors include a preceding viral infection, smoking or other injury to the mucociliary apparatus, suppression of the cough reflex (alcohol, anaesthesia, coma), pulmonary congestion and oedema, chronic disease, immunodeficiency, extremes of age and absent splenic function (encapsulated bacteria).
-2. Multiplication in the alveoli. The polysaccharide capsule of the pneumococcus resists phagocytosis, so that the organisms multiply in oedema fluid that accumulates in the alveoli. This fluid spreads the infection from alveolus to alveolus through the pores of Kohn and the canals of Lambert, and through the bronchi, so that a whole lobe is rapidly involved.
-3. Host inflammatory response. The bacteria and their products attract neutrophils, and increased vascular permeability allows exudation of fluid, red cells and fibrin into the alveoli (consolidation).
-4. Evolution and resolution. The alveolar exudate passes through the stages of congestion, red hepatisation and grey hepatisation. In an uncomplicated case macrophages digest the exudate, and normal lung architecture is restored (resolution). Antibiotics shorten this course, so that a treated patient may be afebrile 48–72 hours after therapy begins.
-
-If the exudate fails to resolve it may be organised by fibroblasts (carnification), and spread to the pleura gives pleuritis.
-
+- Pneumonia results when local defence mechanisms are impaired or systemic resistance is lowered.
+- Local defences are compromised by loss of the cough reflex, dysfunction of the mucociliary apparatus (cigarette smoke, viral disease), accumulation of secretions, impaired alveolar macrophage activity (alcohol, tobacco smoke, anoxia) and pulmonary congestion and oedema.
+- Streptococcus pneumoniae (pneumococcus) is the most common cause, and the inflammation is usually lobar.
+- Often a bacterial infection follows an upper respiratory tract viral infection.
+- Bacterial invasion of the lung parenchyma fills the alveoli with an inflammatory **exudate**, which causes consolidation of the pulmonary tissue.
+- Predisposing conditions: extremes of age, chronic diseases (congestive heart failure, COPD, diabetes), immune deficiencies, and decreased or absent splenic function, which puts the patient at risk of infection with encapsulated bacteria such as pneumococcus.
 
 ## What are the stages of lobar pneumonia?
 
-In lobar pneumonia four stages of the inflammatory response are classically described, and in the untreated patient they evolve over about 8–10 days.
-
-| Stage | Gross | Microscopy |
-|---|---|---|
-| **1. Congestion** (first 1–2 days) | Lung heavy, boggy, red | Vascular engorgement, intraalveolar oedema fluid with few neutrophils, and numerous bacteria |
-| **2. Red hepatisation** (days 2–4) | Lobe red, firm and airless with a liver-like consistency; fibrinous pleural reaction | Massive confluent exudation of neutrophils, red cells and fibrin filling the alveoli |
-| **3. Grey hepatisation** (days 4–8) | Grayish-brown, firm | Disintegration of red cells; persisting fibrinosuppurative exudate with abundant neutrophils; bacteria disappear |
-| **4. Resolution** (day 8 onward) | Lung returns to normal | Exudate is digested by enzymes into granular, semifluid debris that is resorbed, ingested by macrophages, expectorated, or organised by fibroblasts |
-
-Pleural fibrinous reaction (pleuritis) accompanies the early stages if the consolidation extends to the lung surface and may resolve or organise, leaving fibrous thickening or adhesions.
-
+1. **Congestion**
+2. **Red hepatization**
+3. **Gray hepatization**
+4. **Resolution**
 
 ## Discuss the morphology of lobar pneumonia.
 
-Lobar pneumonia is characterised by consolidation of a large portion of a lobe or of an entire lobe, which is frequently the lower lobe or the right lung. Its morphology evolves through four stages.
+1. **Congestion:** the lung is heavy, boggy and red; vascular engorgement, intra-alveolar oedema fluid with a few neutrophils, and numerous bacteria.
+2. **Red hepatization:** massive confluent exudation, with neutrophils, red cells and fibrin filling the alveolar spaces; the lobe is red, firm and airless, with a liver-like consistency.
+3. **Gray hepatization:** progressive disintegration of red cells with a persisting fibrinosuppurative exudate; the colour changes to grayish-brown.
+4. **Resolution:** the exudate is broken down by enzymatic digestion into granular, semifluid debris, which is resorbed, ingested by macrophages, expectorated or organised by fibroblasts.
 
-Stage of congestion. Grossly the lung is heavy, boggy and red. Microscopically there is vascular engorgement of alveolar capillaries, intraalveolar pale pink oedema fluid containing a few neutrophils, and numerous bacteria.
-
-Stage of red hepatisation. The lobe is red, firm, airless and liver-like on cut section, and the overlying pleura is covered by a fibrinous exudate. Microscopically the alveoli are packed with neutrophils, red cells and fibrin, and the septal capillaries are congested.
-
-Stage of grey hepatisation. The colour changes to grayish-brown from disintegration of red cells. The lobe remains firm and the cut surface is dry and granular. The alveoli contain a fibrinosuppurative exudate with fibrin strands crossing between alveoli through the pores of Kohn.
-
-Stage of resolution. The exudate is liquefied by enzymes, and the semifluid debris is resorbed, expectorated or ingested by macrophages. In some cases the exudate is organised by ingrowth of fibroblasts through the pores of Kohn, producing fibromyxoid masses. The pleura similarly either resolves or heals by fibrous thickening and adhesions.
-
-Complications on morphology: abscess formation (particularly pneumococcal and Klebsiella infections), empyema, and bacteraemic dissemination.
-
+The pleural fibrinous reaction (pleuritis) may resolve, but more often is organised, leaving fibrous thickening or permanent adhesions.
 
 ## Write the complications of pneumonia.
 
-The complications of pneumonia follow from tissue destruction, spread of infection and failure of resolution.
-
-1. **Tissue destruction and abscess formation.** Necrosis of lung parenchyma with cavitation, particularly with pneumococcal (type 3), Klebsiella and staphylococcal infection, and rarely gangrene of the lung.
-2. **Empyema.** Spread of infection to the pleural cavity produces an intrapleural fibrinosuppurative reaction (and pleural effusion), which may organise into pleural adhesions and fibrous thickening.
-3. **Organisation (carnification).** Failure of resolution, with organisation of the intraalveolar exudate by fibroblasts into fibrous tissue, leading to lung fibrosis.
-4. **Bacteraemic dissemination.** Haematogenous spread leads to infective endocarditis, pericarditis, meningitis, brain abscess, kidney and splenic abscesses and suppurative arthritis.
-5. **Respiratory failure and ARDS,** and sepsis with shock.
-6. **Bronchiectasis** and obliterative bronchiolitis after severe or recurrent infection (especially viral infection and necrotising pneumonia).
-
-Fewer than 10% of hospitalised patients with pneumonia now die, usually from a complication such as empyema, meningitis, endocarditis or pericarditis, or from a predisposing condition such as debility or alcoholism.
-
+1. Tissue destruction and necrosis, causing **abscess** formation, particularly common with pneumococcal or Klebsiella infections.
+2. Spread of infection to the pleural cavity, causing an intrapleural fibrinosuppurative reaction known as **empyema**.
+3. Bacteraemic dissemination to the heart valves, pericardium, brain, kidneys, spleen or joints, causing abscesses, endocarditis, meningitis or suppurative arthritis.
+4. Staphylococcal pneumonia has a high incidence of complications such as lung abscess and empyema.
+5. Deaths in treated patients result mostly from a complication such as empyema, meningitis, endocarditis or pericarditis, or from debility or chronic alcoholism.
 
 ## What are the differences between bronchopneumonia and lobar pneumonia?
 
-Bacterial pneumonia has two patterns of anatomic distribution, and the patterns may overlap, the same organism sometimes producing either depending on patient susceptibility.
-
-| Feature | Lobar pneumonia | Bronchopneumonia |
+| Feature | Bronchopneumonia | Lobar pneumonia |
 |---|---|---|
-| Definition | Consolidation of a large portion of a lobe or an entire lobe | Patchy consolidation around bronchi and bronchioles |
-| Usual organism | Streptococcus pneumoniae (also Klebsiella) | S. aureus, H. influenzae, Pseudomonas, E. coli, Klebsiella, streptococci |
-| Typical host | Healthy adults (community-acquired) | Infants, the elderly, debilitated and hospitalised patients; after viral illness |
-| Origin | Alveolar infection spreading through pores of Kohn | Begins in bronchi and bronchioles as bronchitis and spreads to adjacent alveoli |
-| Distribution | Usually unilateral, single lobe | Often multilobar, bilateral and basal |
-| Gross | Uniform, lobe-wide consolidation; four stages | Dry, granular, gray-red to yellow foci, poorly delimited at the margins; foci may become confluent |
-| Microscopy | Fibrin-rich exudate of neutrophils filling alveoli, in evolving stages | Neutrophil-rich exudate in bronchi, bronchioles and adjacent alveoli |
-| Radiology | Whole lobe opacity | Focal patchy opacities |
-| Course | Resolution usually complete | Resolution less predictable, with abscess more common |
+| Distribution | Patchy consolidation of the lung | Consolidation of a large portion of a lobe or an entire lobe |
+| Gross | Foci of acute suppurative inflammation; often multilobar, frequently bilateral and basal; slightly elevated, dry, granular, gray-red to yellow, poorly delimited at the margins | Lobe uniformly consolidated; four stages: congestion, red hepatization, gray hepatization and resolution |
+| Histology | Neutrophil-rich exudate filling the bronchi, bronchioles and adjacent alveolar spaces | Alveoli filled by neutrophils, red cells and fibrin |
+| Radiology | Focal opacities | Whole lobe radiopaque |
+| Common cause | Not given | Streptococcus pneumoniae (the inflammation is usually lobar) |
 
+The patterns overlap: patchy involvement may become confluent, and the same organism may produce either pattern.
 
 ## Name the etiologic agents of pneumonia.
 
-Pneumonia may be caused by a wide variety of organisms, and the likely pathogen depends on the clinical setting.
+**Bacteria**
+- Streptococcus pneumoniae (pneumococcus): most common cause of community-acquired acute pneumonia.
+- Haemophilus influenzae and Moraxella catarrhalis.
+- Staphylococcus aureus: secondary to viral respiratory illness; also hospital-acquired.
+- Klebsiella pneumoniae: chronic alcoholics and debilitated people.
+- Pseudomonas aeruginosa: cystic fibrosis, neutropenia, hospital-acquired.
+- Legionella pneumophila.
+- Mycoplasma pneumoniae, Chlamydia species, Coxiella burnetii.
+- Anaerobic oral flora: aspiration.
+- Mycobacterium tuberculosis: chronic granulomatous pneumonia.
 
-- **Bacteria:** Streptococcus pneumoniae (the commonest cause of community-acquired pneumonia), Haemophilus influenzae, Moraxella catarrhalis, Staphylococcus aureus, Klebsiella pneumoniae, Pseudomonas aeruginosa, Legionella pneumophila, Streptococcus pyogenes, Enterobacteriaceae (E. coli, Serratia), and anaerobes (Bacteroides, Fusobacterium, Prevotella, Peptostreptococcus) in aspiration.
-- **Atypical organisms:** Mycoplasma pneumoniae, Chlamydophila pneumoniae and C. psittaci, Coxiella burnetii.
-- **Viruses:** influenza A and B, RSV, parainfluenza, human metapneumovirus, adenovirus, rhinovirus, SARS-CoV-2, measles and varicella, and cytomegalovirus and herpesviruses in the immunocompromised.
-- **Mycobacteria:** Mycobacterium tuberculosis and atypical mycobacteria.
-- **Fungi:** Histoplasma, Coccidioides, Blastomyces, Pneumocystis jirovecii, Aspergillus, Candida, Cryptococcus.
-- **Others:** parasites (rarely).
+**Viruses**
+- Respiratory syncytial virus, parainfluenza virus and human metapneumovirus in children; influenza A and B in adults; adenovirus in military recruits; coronavirus.
 
+**Fungi**
+- Histoplasma, Coccidioides and Blastomyces in chronic pneumonia.
 
 ## What investigations are done to diagnose a case of pneumonia?
 
-The diagnosis rests on clinical features (abrupt fever, rigors, cough with mucopurulent or rusty sputum, pleuritic pain, consolidation signs) supported by imaging and identification of the organism.
-
-1. Chest radiograph: a whole-lobe opacity in lobar pneumonia, and focal patchy opacities in bronchopneumonia. CT chest where needed.
-2. Sputum examination: Gram stain (numerous neutrophils with lancet-shaped Gram-positive diplococci supports pneumococcal pneumonia; false positives occur because pneumococcus is part of the normal flora in 20% of adults), and culture with antibiotic sensitivity. Special stains and Xpert MTB/RIF for tuberculosis, and cytology if neoplasm is suspected.
-3. Blood: complete blood count (neutrophilic leukocytosis), ESR and CRP, procalcitonin, and blood cultures (positive in only 20–30% of pneumococcal cases early; more specific but less sensitive than sputum).
-4. Rapid and molecular tests: urinary antigen tests for pneumococcus and Legionella, PCR for Legionella, Mycoplasma and viruses (including SARS-CoV-2).
-5. Serology for atypical organisms.
-6. Invasive sampling in severe or nonresponding cases: bronchoscopy with bronchoalveolar lavage, protected brush specimens, transthoracic aspiration or lung biopsy.
-7. Pleural fluid analysis if effusion or empyema is present, and arterial blood gases to assess respiratory failure.
-
+1. **Gram-stained sputum:** numerous neutrophils containing gram-positive, lancet-shaped diplococci support pneumococcal pneumonia; false positives occur because S. pneumoniae is part of the endogenous flora in 20% of adults.
+2. **Blood culture:** more specific but less sensitive; only 20% to 30% are positive in the early phase of illness.
+3. **Culture and other assays:** often necessary to establish the diagnosis, since clinical and radiologic features do not clearly distinguish viral from bacterial infection.
+4. **Legionella:** polymerase chain reaction on sputum or Legionella antigen in the urine; culture is the gold standard but takes 3 to 5 days.
+5. **Chest imaging:** the whole lobe is radiopaque in lobar pneumonia and there are focal opacities in bronchopneumonia.
+6. Identification of the organism and its antibiotic sensitivity are the keystones of therapy.
 
 ## Write a short note on lung abscess.
 
-A lung abscess is a local suppurative process that produces necrosis of lung tissue, with a central cavity filled with pus.
+**Definition.** A local suppurative process that produces necrosis of lung tissue.
 
-**Aetiology and pathogenesis.** Almost any bacterial pathogen can produce an abscess, most commonly aerobic and anaerobic streptococci, S. aureus and gram-negative organisms. Mixed infections are frequent. Anaerobic oral organisms (Bacteroides, Fusobacterium, Peptococcus) are the exclusive isolates in about 60% of cases. The organisms reach the lung through the following mechanisms:
+**Aetiology and pathogenesis**
+- Any bacterial pathogen can produce an abscess; most commonly aerobic and anaerobic streptococci, S. aureus and gram-negative organisms. Anaerobic oral organisms (Bacteroides, Fusobacterium, Peptococcus) are the exclusive isolates in about 60% of cases.
+1. **Aspiration of infective material** (the most frequent cause): suppressed cough reflex (alcohol, opioids, coma, anaesthesia, seizures), severe dysphagia, protracted vomiting, poor dental hygiene.
+2. **Antecedent primary lung infection:** postpneumonic abscess, usually with S. aureus, K. pneumoniae and pneumococcus.
+3. **Septic embolism:** from thrombophlebitis or right-sided infective endocarditis.
+4. **Neoplasia:** postobstructive pneumonia.
+5. Miscellaneous: trauma, direct extension from adjacent suppurative infection, haematogenous seeding; some are primary cryptogenic.
 
-1. Aspiration of infective material (the commonest). Risk factors are suppressed cough reflex (alcohol, drugs, coma, anaesthesia, seizures), severe dysphagia, protracted vomiting and poor dental hygiene.
-2. Antecedent primary lung infection, particularly S. aureus, K. pneumoniae and pneumococcus pneumonia, especially in the immunosuppressed.
-3. Septic embolism from thrombophlebitis or right-sided infective endocarditis.
-4. Neoplasia: secondary infection distal to an obstructing bronchial tumour (postobstructive pneumonia).
-5. Miscellaneous causes: trauma, extension from oesophageal, spinal, subphrenic or pleural suppuration, haematogenous spread, and bronchiectasis. Some are cryptogenic.
+**Morphology**
+- From a few millimetres to cavities of 5 to 6 cm; single or multiple.
+- Aspiration abscesses are more common on the right and usually single; those from pneumonia or bronchiectasis are multiple and basal; septic emboli give multiple abscesses.
+- Suppurative destruction of lung parenchyma around a central cavity; a fibrous wall in chronic cases.
+- Continued infection gives fetid, green-black, multilocular cavities called gangrene of the lung.
 
-**Morphology.** Abscesses range from a few millimetres to cavities of 5–6 cm and may be single or multiple. Aspiration abscesses are commoner on the right (the more vertical right main bronchus) and are usually single, while those following pneumonia or bronchiectasis are multiple and basal, and septic embolic (pyaemic) abscesses are multiple and scattered. There is suppurative destruction of lung parenchyma within a central area of cavitation. The cavity may contain pus or, if it communicates with a bronchus, form an air-containing cavity with an air-fluid level. Superimposed saprophytic infection leads to fetid, green-black multilocular cavities (gangrene of the lung), and chronic abscesses acquire a fibrous wall.
+**Clinical features**
+- Cough, fever, and copious foul-smelling purulent or sanguineous sputum; chest pain, weight loss; clubbing.
+- Confirmed radiologically; in older individuals rule out underlying carcinoma, present in 10% to 15%.
 
-**Clinical features.** Cough with copious foul-smelling purulent or bloody sputum, fever, chest pain, weight loss and finger clubbing. The diagnosis is confirmed radiologically.
-
-**Complications.** Extension to the pleura (empyema), haemorrhage (haemoptysis), brain abscess or meningitis from septic emboli, and rarely AA amyloidosis. In older patients an underlying carcinoma is found in 10–15% of cases, so it must be excluded. Most abscesses resolve with antimicrobial therapy, leaving a scar.
-
+**Complications.** Extension into the pleural cavity, haemorrhage, brain abscess or meningitis from septic emboli, and rarely secondary (AA) amyloidosis.
 
 ## What are Ghon's focus and Ghon's complex?
 
-**Ghon focus.** This is the primary parenchymal lesion of tuberculosis in a previously unexposed individual. It is a 1–1.5 cm grey-white, well-circumscribed area of consolidation with central caseous necrosis, located in the subpleural region of the lung, usually in the lower part of the upper lobe or the upper part of the lower lobe. Microscopically it consists of caseating granulomas with epithelioid cells, Langhans giant cells and lymphocytes. The infection begins as a nonspecific exudative reaction before cell-mediated immunity develops.
-
-**Ghon complex.** The Ghon complex is the combination of the Ghon focus, the tuberculous lymphangitis draining the focus, and the enlarged, caseous regional hilar (tracheobronchial) lymph nodes. It is the characteristic lesion of primary TB. In most cases, after about 3 weeks, it heals with fibrosis and calcification (calcified lesions are visible radiologically and called the Ranke complex), and viable dormant bacilli may persist, with the potential for reactivation.
-
+- **Ghon focus:** a 1 to 1.5 cm area of gray-white inflammation with consolidation, in the lower part of the upper lobe or upper part of the lower lobe close to the pleura, in primary tuberculosis; its centre usually undergoes caseous necrosis.
+- **Ghon complex:** the combination of the parenchymal lung lesion (Ghon focus) and caseating involvement of the regional lymph nodes.
+- In about 95% of cases cell-mediated immunity controls the infection, and the Ghon complex undergoes progressive fibrosis, often followed by radiologically detectable calcification.
 
 ## What are the sites of primary and secondary tuberculosis in lung?
 
-Primary tuberculosis: the Ghon focus lies in the subpleural part of the lung, in the lower part of the upper lobe or the upper part of the lower lobe (the well-aerated midzone close to the pleura), usually single, with involvement of the hilar lymph nodes (Ghon complex).
-
-Secondary tuberculosis: the lesion localises to the apex of one or both upper lobes (the apical and posterior segments), probably because of the high oxygen tension and the relatively poor lymphatic drainage and blood supply of the apices. The initial focus is small (Assmann focus, about 1–3 cm), and the regional lymph nodes are typically spared early. The lesion may heal by fibrosis, or may enlarge, caseate and cavitate, with spread through bronchi to other parts of the lung.
-
+| Type | Site |
+|---|---|
+| **Primary tuberculosis** | Distal airspaces of the lower part of the upper lobe or the upper part of the lower lobe, usually close to the pleura |
+| **Secondary tuberculosis** | Apex of the upper lobes of one or both lungs; the initial lesion is within 1 to 2 cm of the apical pleura |
 
 ## What are the fates of primary tuberculosis of lung?
 
-The course of primary tuberculosis depends on the host's immune status. The possible fates are as follows.
-
-1. Healing (most common, about 95% in the immunocompetent): with development of cell-mediated immunity, the Ghon complex undergoes fibrosis and calcification (Ranke complex), and the infection is contained. Viable organisms may persist in the dormant lesion for years.
-2. Latent infection with later reactivation: dormant bacilli persist and may reactivate when immunity wanes, causing secondary tuberculosis.
-3. Progressive primary tuberculosis: in the immunocompromised and in some young children, the primary focus enlarges, with caseation and cavitation, and spreads, causing tuberculous bronchopneumonia, tuberculous pleurisy or empyema, and enlarged nodes that may compress bronchi.
-4. Lymphatic and haematogenous dissemination: spread via lymphatics to regional and distant nodes and haematogenous dissemination with miliary tuberculosis (and tuberculous meningitis, and tuberculosis of bone, kidney, adrenals and other organs).
-5. Bronchial spread: erosion of a caseous node into a bronchus, spreading to other segments, or erosion into a blood vessel, causing miliary spread.
-6. Complications of the nodes: bronchial obstruction with segmental collapse (middle lobe syndrome), and tuberculous lymphadenitis.
-
+1. **Healing:** in about 95% of cases cell-mediated immunity controls the infection; the Ghon complex undergoes fibrosis and calcification, and no lesions develop despite seeding of other organs.
+2. **Dormancy:** viable organisms may remain dormant in the lesion for decades and be reactivated if immune defences are lowered.
+3. **Progressive primary tuberculosis:** clinically significant disease develops in about 5% of newly infected people; it resembles acute bacterial pneumonia, with consolidation of the lobe, hilar lymphadenopathy and pleural effusion.
+4. **Dissemination:** lymphatic and haematogenous spread may cause tuberculous meningitis and miliary tuberculosis.
 
 ## Give in short the pathogenesis of pulmonary tuberculosis.
 
-1. **Infection.** Mycobacterium tuberculosis is transmitted through inhaled droplet nuclei from an infected person with active pulmonary disease. The organisms reach the alveoli and are engulfed by alveolar macrophages.
-2. **Early phase (first 3 weeks).** The bacilli resist killing by blocking phagosome–lysosome fusion (aided by the ESX-1 secretion system and cell wall components) and multiply within macrophages. They spread to hilar lymph nodes and through the blood (occult bacteraemia) to other organs, before specific immunity develops.
-3. **Development of cell-mediated immunity (after about 3 weeks).** Antigen presenting cells (macrophages and dendritic cells) present mycobacterial antigens to CD4⁺ T cells, and IL-12 drives a Th1 response. Th1 cells secrete IFN-γ, which activates macrophages to produce nitric oxide and to fuse phagosomes with lysosomes, and activated macrophages release TNF, which promotes granuloma formation.
-4. **Granuloma formation and caseation.** Activated macrophages become epithelioid cells and giant cells, and a granuloma forms. The delayed-type (type IV) hypersensitivity response kills infected macrophages and causes central caseous necrosis. The same response is responsible for the tuberculin skin test. Thus the immune response both contains the infection and causes tissue destruction.
-5. **Outcome.** In most persons the lesion is contained and heals (latent infection). With reduced immunity (HIV, malnutrition, age, steroids, TNF inhibitors, diabetes), reactivation (secondary TB) or progressive disease occurs. In secondary TB, a vigorous hypersensitivity response causes cavitation, and spread through the bronchial tree and blood.
-
+1. **Entry into macrophages:** M. tuberculosis is phagocytosed by alveolar macrophages through receptors such as mannose-binding lectin and complement receptor 3.
+2. **Replication in macrophages:** the bacterium blocks phagosome-lysosome fusion by recruiting coronin to the phagosome membrane, so it replicates unchecked; in the first 3 weeks bacteraemia seeds multiple sites.
+3. **Innate immunity:** lipoarabinomannan binds TLR2 and unmethylated CpG nucleotides bind TLR9.
+4. **Th1 response:** about 3 weeks after infection, dendritic cells carry antigen to lymph nodes; interleukin-12 and interleukin-18 drive differentiation of Th1 cells.
+5. **Macrophage activation:** Th1 cells produce interferon-gamma, which stimulates nitric oxide and reactive oxygen species, antimicrobial peptides and autophagy to kill the bacteria.
+6. **Granuloma and caseation:** activated macrophages become epithelioid histiocytes that form granulomas, with giant cells; if infection progresses, the immune response causes caseous necrosis. TNF recruits more monocytes.
+7. This response is largely effective, but causes tissue destruction; loss of T cell immunity is shown by tuberculin negativity in a previously positive person.
 
 ## Define miliary tuberculosis.
 
-Miliary tuberculosis is a form of disseminated tuberculosis in which tubercle bacilli spread through the bloodstream, usually from the erosion of a caseous focus into a vein or lymphatic channel, producing numerous tiny (about 2 mm, millet-seed size) yellow-white granulomatous foci in many organs. Pulmonary miliary TB results from spread through the pulmonary arteries, whereas spread through the systemic arteries affects the liver, spleen, kidneys, bone marrow, adrenals and meninges, and it may cause tuberculous meningitis. It can arise from either primary or secondary tuberculosis, particularly in infants, elderly and immunocompromised patients. The chest radiograph shows a fine uniform nodular pattern ("millet seeds" or "snowstorm"). It is a serious, potentially fatal form of the disease.
-
+Miliary pulmonary tuberculosis occurs when organisms draining through lymphatics enter the venous blood and circulate back to the lung; the lesions are microscopic or small visible foci (2 mm) of yellow-white consolidation, resembling millet seeds. Systemic miliary tuberculosis occurs when bacteria disseminate through the systemic arterial system.
 
 ## Discuss the pathological characteristics of secondary pulmonary TB.
 
-Secondary (postprimary or reactivation) tuberculosis arises in a previously sensitised host, either by reactivation of dormant bacilli from a primary focus or by exogenous reinfection.
+**Gross**
+- The initial lesion is a small focus of consolidation, less than 2 cm, within 1 to 2 cm of the apical pleura.
+- The focus is sharply circumscribed, firm, gray-white to yellow, with central caseation and peripheral fibrosis.
+- In immunocompetent people it becomes fibrously encapsulated, leaving fibrocalcific scars.
+- Progressive disease: the apical lesion expands, erodes into bronchi and vessels, and evacuates the caseous centre, leaving a ragged, irregular cavity poorly walled off by fibrous tissue; erosion of vessels causes haemoptysis.
+- Cavity erosion into an airway is an important source of spread.
 
-Site. The lesion is localised to the apex of one or both upper lobes (apical and posterior segments), where the oxygen tension is high. The regional lymph nodes are initially spared. Because of the pre-existing hypersensitivity, there is a rapid, vigorous tissue response that localises the infection but causes more tissue destruction.
+**Microscopy**
+- Coalescent tubercles with central caseation, epithelioid cells and multinucleated giant cells, within a fibroblastic rim with lymphocytes.
+- Acid-fast bacilli are found in early exudative and caseous phases, but are usually too few in late fibrocalcific stages.
 
-Gross morphology. The initial focus (Assmann focus) is a small, well-circumscribed, grey-white to yellow area of consolidation, less than 2–3 cm, within 1–2 cm of the apical pleura. The lesion may:
+**Differences from primary disease**
+- Because of preexisting hypersensitivity, the bacilli elicit a prompt tissue response that walls off the focus, so the regional lymph nodes are less prominently involved early.
+- Cavitation occurs readily if untreated.
 
-- heal by fibrosis and calcification (with dense scarring and retraction of the apex);
-- enlarge by confluence with surrounding foci, with a central caseous necrosis that erodes into a bronchus, evacuates and produces a cavity (fibrocaseous or cavitary TB), whose wall is lined by caseous material, with fibrous wall and often involvement of the pulmonary artery branches, which may rupture to cause haemoptysis;
-- spread through the airways, giving tuberculous bronchopneumonia, or erode vessels causing miliary TB;
-- cause pleural involvement (tuberculous pleuritis, empyema, pneumothorax), laryngeal TB (from infected sputum) and intestinal TB (swallowed sputum).
-
-Microscopy. Caseating granulomas with central caseous necrosis, epithelioid cells, Langhans giant cells, and a peripheral rim of lymphocytes and fibroblasts, with AFB on Ziehl-Neelsen stain. In immunosuppressed patients the granulomas are poorly formed, with numerous bacilli.
-
-Clinical features. Low-grade fever and evening rise of temperature, night sweats, weight loss, cough with sputum, haemoptysis, and amyloidosis in chronic cases.
-
+**Spread.** Along airways, lymphatics and vessels, giving miliary disease, pleural effusion, tuberculous empyema, obliterative fibrous pleuritis, and endobronchial, endotracheal and laryngeal tuberculosis.
 
 ## Write a short note on Mantoux test/tuberculin test.
 
-The Mantoux (tuberculin) test is an intradermal skin test that detects delayed-type (type IV) hypersensitivity to tubercular antigen, indicating sensitisation from prior infection or BCG vaccination.
+**Principle.** The tuberculin (purified protein derivative, or Mantoux) test is performed by intracutaneous injection of purified protein derivative of M. tuberculosis, which induces a visible and palpable induration that peaks in 48 to 72 hours.
 
-Method. A standard dose of 5 tuberculin units (0.1 mL) of purified protein derivative (PPD) is injected intradermally into the volar surface of the forearm, forming a wheal.
+**Interpretation**
+- A positive test signifies T cell mediated immunity to mycobacterial antigens, but does not differentiate between infection (current or past) and active disease.
+- False negative: certain viral infections, sarcoidosis, malnutrition, Hodgkin lymphoma, immunosuppression and active tuberculous disease.
+- False positive: infection by atypical mycobacteria, or prior BCG vaccination.
 
-Reaction. In a sensitised person, T cells in the skin release cytokines, and a localised induration (not erythema) develops. It is read after 48–72 hours, and the diameter of induration is measured transversely.
-
-Interpretation. An induration of 10 mm or more is generally regarded as positive (5 mm or more in HIV-infected and other immunosuppressed persons and close contacts, and 15 mm or more in persons without risk factors, though thresholds vary).
-
-- A positive test means that the person has been infected (or vaccinated), but it does not differentiate between active disease and latent infection.
-- False negatives: anergy from overwhelming disease (miliary TB), HIV infection, sarcoidosis, malnutrition, steroids and immunosuppressants, viral infections, and very early infection (before 2–10 weeks).
-- False positives: BCG vaccination and infection with atypical mycobacteria.
-
-Interferon-gamma release assays are an alternative that is not influenced by BCG.
-
+Interferon-gamma release assays are an in vitro alternative, with uncommon false positives.
 
 ## A patient has cough, evening rise of temperature, weight loss (± cervical lymphadenopathy, apical opacity). What is your probable diagnosis?
 
-The probable diagnosis is pulmonary tuberculosis (secondary or postprimary TB), possibly with tuberculous cervical lymphadenitis (scrofula). The chronic cough, evening rise of temperature (low-grade fever with night sweats) and weight loss form the classic constitutional picture of tuberculosis, and an apical opacity on chest radiography corresponds to the characteristic apical site of reactivation tuberculosis. Cervical lymphadenopathy suggests additional lymph node tuberculosis (lymphohaematogenous or contiguous spread from the tonsils), and haemoptysis suggests cavitation. The differential diagnosis includes bronchogenic carcinoma (particularly apical), lymphoma (cervical nodes and constitutional symptoms), sarcoidosis, lung abscess, fungal infection and HIV-related opportunistic infection.
+**Pulmonary tuberculosis**, most likely secondary (postprimary) tuberculosis.
 
+- Systemic symptoms: malaise, anorexia, weight loss and low grade fever that appears late each afternoon and then subsides, with night sweats.
+- Cough with sputum; haemoptysis in about one-half of cases.
+- Secondary pulmonary tuberculosis classically involves the apex of the upper lobes.
+- Cervical lymphadenopathy suggests tuberculous lymphadenitis (scrofula), the most frequent presentation of extrapulmonary tuberculosis.
 
 ## Same: what laboratory investigations/tests (incl. on lymph node) confirm it?
 
-**Confirmatory tests.**
-
-1. Sputum examination: three early-morning specimens for Ziehl-Neelsen (or fluorescent auramine) smear for acid-fast bacilli, which gives a rapid but only moderately sensitive result. Xpert MTB/RIF (nucleic acid amplification) detects the organism and rifampicin resistance within hours. Culture on Löwenstein-Jensen or liquid media (MGIT) is the gold standard and permits drug sensitivity testing (it takes 2–8 weeks).
-2. Lymph node: fine needle aspiration cytology (FNAC) or excision biopsy shows caseating epithelioid cell granulomas with Langhans giant cells, with AFB on Ziehl-Neelsen stain, and aspirate for Xpert MTB/RIF and culture. The aspirate is often caseous pus.
-3. Chest radiograph or CT: apical infiltrates, cavities, fibrosis, calcification.
-4. Mantoux test or IGRA: shows sensitisation (supportive).
-5. Blood: raised ESR, lymphocytosis, normocytic anaemia, HIV test.
-6. Bronchoscopy with washings and biopsy when sputum is not available or the diagnosis remains uncertain, and histology of other involved sites.
-
+1. **Acid-fast smears and cultures of sputum:** culture on solid media shows growth at 3 to 6 weeks, in liquid media within 2 weeks; culture is the gold standard and allows susceptibility testing.
+2. **Polymerase chain reaction:** rapid diagnosis, and detects rifampin resistance; as sensitive as culture in smear-positive samples.
+3. **Tuberculin skin test or interferon-gamma release assay:** shows T cell immunity, but does not distinguish infection from active disease.
+4. **Lymph node biopsy:** granulomas with caseation, enclosed within a fibroblastic rim, with multinucleated giant cells; acid-fast stain is indicated whenever granulomas are present, even without caseous necrosis.
 
 ## Same (27y with hemoptysis): what microscopic findings do you expect?
 
-The expected microscopic finding in the lung (or in a lymph node) is the **caseating tuberculous granuloma (tubercle)**, which has the following features:
-
-- A central area of **caseous necrosis**, which appears as amorphous, granular, structureless, eosinophilic material with no preserved tissue architecture.
-- Surrounding the necrosis, **epithelioid cells** (activated macrophages with pale, abundant granular pink cytoplasm and elongated, vesicular nuclei).
-- **Langhans-type multinucleated giant cells**, in which the nuclei are arranged in a horseshoe or peripheral ring.
-- A peripheral cuff of **lymphocytes** (mainly CD4⁺ T cells) with fibroblasts and fibrosis in older lesions.
-- **Acid-fast bacilli** (slender, beaded red rods) on Ziehl-Neelsen staining, particularly in the necrotic centre and in cavity walls.
-
-In sputum smears or in bronchial lavage fluid, AFB are seen. In a cavitary lesion there may be a thick fibrous wall lined by caseous material, and vessels crossing the cavity or an aneurysm of a pulmonary artery branch (Rasmussen aneurysm) may explain the haemoptysis. Confluent tubercles produce larger caseous zones.
+- Characteristic granulomatous inflammation with **caseating** and noncaseating **tubercles**.
+- Central granular caseation, surrounded by epithelioid cells and multinucleate giant cells.
+- Granulomas usually enclosed within a fibroblastic rim punctuated by lymphocytes.
+- Acid-fast bacilli can often be found in early exudative and caseous phases, but are usually too few in late fibrocalcific stages.
+- Immunocompromised people do not form the characteristic granulomas, and their macrophages contain many bacilli.
 
 ## Classify tumours of lung (WHO classification of bronchogenic carcinoma).
 
-Of lung tumours, 90–95% are carcinomas, about 5% are carcinoid tumours, and 2–5% are mesenchymal and other tumours. The histologic classification of malignant epithelial tumours of the lung (WHO, as summarised in Robbins Table 15.9) is as follows.
+| Category | Proportion |
+|---|---|
+| **Adenocarcinoma** (includes adenocarcinoma in situ, minimally invasive adenocarcinoma, and invasive types: lepidic, acinar, papillary, micropapillary, solid, mucinous, colloid, enteric-type, fetal) | 50% |
+| **Squamous cell carcinoma** | 20% |
+| **Small cell carcinoma** | 15% |
+| **Large cell carcinoma** | 2% |
+| **Other** (pleomorphic carcinoma, carcinosarcoma, pulmonary blastoma; salivary gland-type tumours such as adenoid cystic carcinoma, epithelial-myoepithelial carcinoma and mucoepidermoid carcinoma) | 13% |
 
-**1. Precursor lesions:** atypical adenomatous hyperplasia; adenocarcinoma in situ (3 cm or less, purely lepidic growth); squamous dysplasia and carcinoma in situ; diffuse idiopathic pulmonary neuroendocrine cell hyperplasia.
-
-**2. Adenocarcinoma.**
-
-- Minimally invasive adenocarcinoma (3 cm or less, lepidic predominant with invasion up to 5 mm; nonmucinous or mucinous).
-- Invasive nonmucinous adenocarcinoma: lepidic, acinar, papillary, micropapillary or solid pattern.
-- Invasive mucinous adenocarcinoma.
-- Colloid, foetal and enteric-type adenocarcinoma.
-
-**3. Squamous cell carcinoma** (keratinising, nonkeratinising, basaloid).
-
-**4. Adenosquamous carcinoma.**
-
-**5. Neuroendocrine tumours.**
-
-- Small cell carcinoma (and combined small cell carcinoma).
-- Large cell neuroendocrine carcinoma.
-- Carcinoid tumours: typical and atypical.
-
-**6. Large cell carcinoma** (undifferentiated).
-
-**7. Sarcomatoid carcinomas:** pleomorphic carcinoma, carcinosarcoma, pulmonary blastoma.
-
-**8. Others:** lymphoepithelioma-like carcinoma, NUT carcinoma, and salivary gland–type tumours (adenoid cystic carcinoma, mucoepidermoid carcinoma, epithelial-myoepithelial carcinoma).
-
-Clinically, the carcinomas are grouped into small cell lung carcinoma (treated mainly by chemotherapy) and non–small cell lung carcinoma (adenocarcinoma, squamous cell carcinoma, large cell carcinoma). Other lung neoplasms include mesenchymal tumours, lymphomas and metastatic tumours, which are the commonest malignant lung tumours overall.
-
+Lung cancers are broadly classified into small cell and non-small cell types. Combinations of squamous cell carcinoma and adenocarcinoma, or small cell and squamous cell carcinoma, occur in about 14% and 5% of patients.
 
 ## Write down briefly the morphology of small cell carcinoma of lung.
 
-Small cell carcinoma is a highly malignant neuroendocrine tumour that is virtually always related to smoking. It typically arises centrally from the major bronchi (hilar location), is grey-white and soft with extensive necrosis, and infiltrates the peribronchial tissue and mediastinal nodes early.
-
-Microscopy.
-
-- Relatively small cells (generally less than three times the diameter of a small resting lymphocyte, about 25 µm), round, oval or spindle-shaped, with **scant cytoplasm** and **ill-defined cell borders**.
-- Nuclei with **finely granular chromatin ("salt-and-pepper")** and **absent or inconspicuous nucleoli**, and prominent **nuclear molding**.
-- A **high mitotic rate**, and **extensive necrosis**.
-- **Azzopardi effect:** basophilic staining of vascular walls from encrustation by DNA released from necrotic tumour cells.
-- Crush artifact of the fragile cells is common in small biopsies.
-- Electron microscopy classically shows dense-core neurosecretory granules of about 100 nm. Immunohistochemistry is positive for chromogranin, synaptophysin and CD56, and shows a high Ki-67 index.
-- A combined variant is mixed with non–small cell elements.
-
-Genetics. Almost universal inactivation of TP53 and RB, loss of chromosome 3p and MYC amplification.
-
-Behaviour. Early metastasis, and it is the type most commonly associated with ectopic hormone production (ACTH causing Cushing syndrome, and ADH causing SIADH). It is highly sensitive to chemotherapy and radiation, but most patients relapse, with a median survival of about 10 months in advanced disease.
-
+- Relatively small cells with scant cytoplasm and ill-defined cell borders.
+- Finely granular nuclear chromatin (**salt and pepper** pattern), with absent or inconspicuous nucleoli.
+- Cells are round, oval or spindle-shaped, with prominent **nuclear molding**.
+- Smaller than three times the diameter of a small resting lymphocyte (about 25 µm).
+- Mitotic count is invariably high.
+- Necrosis is common and often extensive.
+- Basophilic staining of vascular walls from encrustation by DNA of necrotic tumour cells (**Azzopardi effect**).
+- Electron microscopy: dense-core neurosecretory granules, about 100 nm.
 
 ## How will you diagnose/investigate a case of bronchogenic carcinoma?
 
-The diagnosis of bronchogenic carcinoma depends on clinical suspicion (smoker, aged 55–75 with cough, haemoptysis, weight loss, chest pain and dyspnoea), imaging, and above all on tissue or cytologic diagnosis, followed by staging.
-
-1. **Imaging.** The chest radiograph shows a mass, hilar enlargement, lobar collapse, consolidation, cavitation or effusion. CT of the chest (and upper abdomen to include the liver and adrenals) defines the tumour, the nodes and invasion. Low-dose CT is used for screening high-risk individuals, though false-positive findings are frequent. PET-CT and MRI of the brain are used for staging.
-2. **Cytology.** Sputum cytology (three early morning samples), bronchial washings and brushings, and pleural fluid cytology. Atypical cells are shown in sputum even before the lesion is radiographically visible (squamous cell carcinoma in situ).
-3. **Tissue diagnosis.** Bronchoscopy with biopsy (central tumours), CT-guided percutaneous FNAC or core biopsy (peripheral tumours), endobronchial ultrasound–guided transbronchial needle aspiration of mediastinal nodes, mediastinoscopy, thoracoscopy, and biopsy or FNAC of an accessible metastatic site (supraclavicular or cervical node, liver).
-4. **Histologic typing and immunohistochemistry.** Adenocarcinoma is TTF-1 (and napsin A) positive; squamous cell carcinoma is p40 and p63 positive, with keratinisation; small cell carcinoma is positive for chromogranin, synaptophysin and CD56.
-5. **Molecular and predictive testing** of nonsquamous NSCLC: EGFR, ALK, ROS1, RET, MET and BRAF alterations, KRAS, and PD-L1 expression, to select targeted therapy and immunotherapy.
-6. **Staging** by the TNM system (size, nodal status, metastasis), assessing spread to hilar and mediastinal nodes, pleura, adrenals, liver, brain and bone.
-7. **Other tests.** Pulmonary function tests and performance status for fitness for surgery, serum calcium, sodium, liver function tests and alkaline phosphatase, and assessment of paraneoplastic features.
-
+1. **Sputum cytology:** keratinised squamous carcinoma cells with prominent hyperchromatic nuclei.
+2. **Biopsy:** including biopsy of tissues involved by metastatic disease.
+3. **Histology with immunohistochemistry:** TTF-1 in adenocarcinoma; p40 for squamous differentiation in poorly differentiated tumours.
+4. **Mutation testing in adenocarcinoma:** EGFR (about 15% of all cases) and KRAS (about 30% of adenocarcinomas).
+5. **Staging by TNM system:** by tumour size and involvement of thoracic structures.
+6. **Early detection:** low-dose computed tomography in high-risk individuals.
 
 ## A smoker has cough, hemoptysis, chest mass/opacity, supraclavicular or cervical node. What is the most likely diagnosis?
 
-The most likely diagnosis is bronchogenic carcinoma (primary lung cancer) with metastasis to supraclavicular or cervical lymph nodes. A heavy smoker presenting with persistent cough (the commonest symptom, in about 75%), haemoptysis (from tumour in the airway), weight loss and a pulmonary mass or opacity has lung cancer until proved otherwise. About 80% of lung cancers occur in current or recent smokers, with risk rising almost linearly with pack-years. The firm, enlarged supraclavicular or cervical node represents nodal metastasis (N3 disease in the TNM system, which indicates advanced stage), and lymph node involvement is present in more than half of cases at diagnosis.
+**Bronchogenic carcinoma (lung cancer).**
 
-A central (hilar) mass in a smoker is most often squamous cell carcinoma or small cell carcinoma, and a peripheral mass is more likely adenocarcinoma. The diagnosis is confirmed by FNAC of the node, which is the easiest way to obtain a tissue diagnosis, together with bronchoscopic or CT-guided biopsy, followed by immunohistochemistry and staging. Other features that may accompany it are those of local spread (hoarseness, dysphagia, superior vena cava syndrome, Horner syndrome in Pancoast tumour, pleural effusion) and paraneoplastic syndromes. Tuberculosis, lymphoma and metastasis from another primary are the differential diagnoses.
-
+- Cough, haemoptysis and weight loss are common presenting features; cough is the commonest (75%).
+- About 80% of lung cancers occur in active smokers.
+- Supraclavicular nodal involvement is N3 disease, and metastases to bronchial, tracheal and mediastinal nodes are found in most cases.
+- Confirm by sputum cytology and biopsy.
 
 ## What is Barrett esophagus?
 
