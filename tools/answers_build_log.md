@@ -459,3 +459,19 @@ Short note on Rh-incompatibility came wholly from the site textbook (Chapter 10,
 - Table 17.8 (Crohn versus ulcerative colitis) is missing from the textbook JSON; the differences table was built from the Crohn and ulcerative colitis text. Long-segment Barrett length (3 cm) also lost its sign and is written as "3 cm or more".
 - Short note on villous adenoma: the textbook treats villous adenoma only within colorectal adenomas, so no separate villous-specific data (for example the hypersecretory syndrome) are given.
 - Occult blood: sensitivity and specificity figures not given (sources vary).
+
+## Session 15, batch 3 (15 answers: Chapter 18 cirrhosis through liver function tests in viral hepatitis)
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| Name common pathological conditions of hepatomegaly. | MedlinePlus, Enlarged liver (list of causes); cross-checked against site textbook Chapter 18 | https://medlineplus.gov/ency/article/003275.htm |
+
+Ascites causes combine Chapter 18 (portal hypertension table text, 85% cirrhosis) with the site textbook Chapters 4 and 12 (hypoalbuminaemia, heart failure).
+
+### Points left out or needing a decision
+- Table 18.2 (portal hypertension) lost its row labels in the textbook JSON; the causes are taken from the paragraph above it, not the table.
+- Fig. 18.10 (outcomes of HBV infection with frequencies) is an image; frequencies are taken from the text only (two-thirds subclinical, 5% to 10% chronic, about 90% perinatal, 0.1% to 0.5% acute liver failure). No percentage for cirrhosis or hepatocellular carcinoma after chronic infection is given.
+- Etiology of cirrhosis: the textbook gives no single list; autoimmune, biliary and specific metabolic causes (Wilson disease, haemochromatosis) are left out because the chapter says these are often not accompanied by established cirrhosis or does not tie them to cirrhosis in the passage used.
+- Male case with gynaecomastia: the textbook does not link this to a specific cause (for example alcohol), so none is stated.
+- Liver function tests: the textbook (Table 18.1) gives direction of change only, no normal values.

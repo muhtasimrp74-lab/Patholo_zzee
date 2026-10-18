@@ -10571,82 +10571,60 @@ Prothrombin time is a more specific and sensitive indicator of hepatic synthetic
 
 ## Name common pathological conditions of hepatomegaly.
 
-Hepatomegaly may result from the following groups of conditions.
-
-| Mechanism | Examples |
-|---|---|
-| Inflammation and infection | Acute viral hepatitis, alcohol-associated hepatitis, liver abscess (pyogenic, amoebic), malaria, kala-azar, typhoid, hydatid cyst, schistosomiasis |
-| Fatty infiltration | Alcohol-associated fatty liver, metabolic dysfunction–associated steatotic liver disease, diabetes, obesity |
-| Congestion | Right-sided or congestive heart failure, constrictive pericarditis, Budd–Chiari syndrome |
-| Biliary obstruction | Extrahepatic obstruction (stones, tumour) and cholangitis |
-| Cirrhosis | Early cirrhosis (enlarged, nodular liver; later shrunken) |
-| Neoplasms | Hepatocellular carcinoma and metastatic carcinoma (massive nodular hepatomegaly), haemangioma |
-| Infiltrative and storage disorders | Amyloidosis, haemochromatosis, Wilson disease, glycogen storage disease, Gaucher disease, sarcoidosis |
-| Haematological | Leukaemias, lymphomas, myeloproliferative disorders, thalassaemia, sickle cell disease with extramedullary haematopoiesis |
+- **Hepatitis A, B and C**
+- **Alcohol use**
+- **Steatosis** (fatty liver)
+- **Cancer metastases** to the liver; **hepatocellular carcinoma**
+- **Congestive heart failure**
+- **Leukaemia**
+- **Primary biliary cholangitis** and **sclerosing cholangitis**
+- **Portal vein thrombosis**
+- **Sarcoidosis**
+- **Glycogen storage disease**
+- **Infectious mononucleosis**
+- **Niemann-Pick disease**; Reye syndrome; hereditary fructose intolerance
 
 ## Name the hepatotropic viruses.
 
-The hepatotropic viruses are **hepatitis A virus (HAV)**, **hepatitis B virus (HBV)**, **hepatitis C virus (HCV)**, **hepatitis D virus (HDV, the delta agent)**, and **hepatitis E virus (HEV)**. HAV and HEV are transmitted by the fecal–oral route and cause only acute disease (HEV may be chronic in the immunocompromised), while HBV, HCV, and HDV are transmitted parenterally and can cause chronic hepatitis. Nonhepatotropic viruses such as Epstein–Barr virus, cytomegalovirus, herpes simplex virus, adenovirus, and yellow fever virus may also involve the liver.
-
+- **Hepatitis A virus** (single-stranded RNA)
+- **Hepatitis B virus** (partially double-stranded DNA)
+- **Hepatitis C virus** (single-stranded RNA)
+- **Hepatitis D virus** (circular defective single-stranded RNA; needs hepatitis B for replication)
+- **Hepatitis E virus** (single-stranded RNA)
 
 ## Discuss the clinical outcomes of hepatitis B virus infection.
 
-The outcome of HBV infection depends on the age at exposure, the immune competence of the host, and co-infection with other agents. Cytotoxic CD8⁺ T cells directed against infected hepatocytes cause most of the injury, and a strong virus-specific CD4⁺ and CD8⁺ T-cell response is associated with resolution.
-
-**Acute infection.** After an incubation period of 4 to 26 weeks, acute infection is mild or subclinical in about two-thirds of adults and may present with anorexia, fever, jaundice, and right upper quadrant pain, with a preicteric, icteric, and convalescent phase. Most patients clear the virus, with disappearance of HBsAg within about 12 weeks (up to 24), and appearance of anti-HBs. Immune-complex phenomena such as glomerulonephritis and polyarteritis nodosa may occur.
-
-**Acute liver failure.** Occurs in about 0.1% to 0.5% of acutely infected individuals, within 4 to 8 weeks, with massive hepatic necrosis, encephalopathy, and coagulopathy; HDV co-infection increases the risk.
-
-**Chronic hepatitis.** Develops in 5% to 10% of adults, but in about 90% of infants infected at birth, with persistence of HBsAg and HBV DNA. Persistent HBeAg indicates continued replication and probable progression. Chronic hepatitis is defined as symptomatic, biochemical, or serologic evidence of continuing or relapsing disease for more than 6 months, or the presence of fibrosis. Progression to cirrhosis occurs over years (average about 8), with portal hypertension, liver failure, and decompensation.
-
-**Carrier state.** An individual who harbors the virus but has no symptoms; the "healthy carrier" has HBsAg and anti-HBe, normal aminotransferases, low HBV DNA, and no significant liver damage.
-
-**Hepatocellular carcinoma.** Chronic HBV infection, especially acquired perinatally, carries a high risk of HCC, through the integration of viral DNA, the transcriptional activation by HBx, and chronic injury and regeneration; it may arise in noncirrhotic liver.
-
-**HDV.** Co-infection causes acute hepatitis that is usually self-limited, while superinfection of a chronic carrier causes severe acute hepatitis or exacerbation, with chronic HDV in more than 80%, and accelerates progression to cirrhosis and HCC.
-
-Antiviral therapy (interferon, entecavir, tenofovir) slows progression, and vaccination prevents infection (protective anti-HBs in 95%).
-
+1. **Acute infection with recovery**: mild or subclinical in nearly two-thirds of adults; in most cases self-limited and resolves without treatment; anti-HBs appears and persists for life
+2. **Acute symptomatic hepatitis**: anorexia, fever, jaundice, upper right quadrant pain; immune complex phenomena such as **glomerulonephritis** and **polyarteritis nodosa**
+3. **Acute liver failure**: rare, about 0.1% to 0.5% of acutely infected, in 4 to 8 weeks
+4. **Chronic infection**: 5% to 10% of infected individuals; risk is inversely related to age and about 90% in infants infected at birth
+   - Chronic hepatitis, then **cirrhosis**
+   - **Hepatocellular carcinoma**; greatest risk in those infected at birth
+5. **Carrier state**: "healthy carrier" has HBsAg and anti-HBe without HBeAg, normal aminotransferases, low or undetectable HBV DNA and no significant liver injury
 
 ## Mention the microscopic features of liver in acute and chronic viral hepatitis.
 
-The microscopic changes in acute and chronic viral hepatitis due to the hepatotropic viruses are largely similar and overlap with those of autoimmune hepatitis, drug reactions, and Wilson disease.
-
-**Acute viral hepatitis.**
-
-1. Lobular and portal inflammation, predominantly lymphocytes, with variable plasma cells and eosinophils, and activation of Kupffer cells.
-2. Hepatocyte injury: ballooning degeneration (swelling with clear cytoplasm) and necrosis or apoptosis; apoptotic cells appear as shrunken, eosinophilic acidophil (Councilman) bodies; pigmented macrophages scavenge dead cell debris.
-3. In severe cases, confluent necrosis of groups of cells that may become bridging necrosis (connecting portal tracts to central veins or portal tracts to each other) and, with massive necrosis, panlobular necrosis and collapse of the reticulin framework.
-4. Cholestasis (bile plugs) may be present, and regeneration (binucleate hepatocytes, thickened plates) is evident.
-
-**Chronic viral hepatitis.**
-
-1. The defining feature is portal lymphocytic or lymphoplasmacytic inflammation with fibrosis; inflammatory cells cross the limiting plate and injure periportal hepatocytes (interface hepatitis, formerly piecemeal necrosis), with a variable degree of lobular inflammation.
-2. Fibrosis progresses from portal and periportal fibrosis to portoportal bridging fibrosis and finally cirrhosis.
-3. **Chronic hepatitis B**: "ground-glass" hepatocytes, with cytoplasm filled with HBsAg in swollen endoplasmic reticulum (confirmed by immunostaining for HBsAg and HBcAg).
-4. **Chronic hepatitis C**: prominent portal lymphoid aggregates or follicles, steatosis (marked with genotype 3), and focal bile duct injury.
-5. Biopsy is used to grade the inflammatory activity and stage the fibrosis.
-
+| | Acute viral hepatitis | Chronic viral hepatitis |
+|---|---|---|
+| Inflammation | Portal and **lobular** infiltrate, predominantly lymphocytes, with plasma cells and eosinophils | Portal **lymphocytic or lymphoplasmacytic** inflammation: the defining feature |
+| Hepatocyte injury | Necrosis or apoptosis (**acidophil bodies**); pigmented macrophages scavenge debris | **Interface activity**: inflammatory cells cross the limiting plate and injure periportal hepatocytes |
+| Severe cases | **Confluent necrosis**, panlobular necrosis, **bridging necrosis**; massive necrosis may cause liver failure | **Fibrosis**: portal and periportal, then portoportal bridging, then cirrhosis |
+| Specific features | None | Hepatitis B: **ground-glass hepatocytes** (endoplasmic reticulum filled with HBsAg). Hepatitis C: **portal lymphoid aggregates or follicles**, steatosis, focal bile duct injury |
 
 ## What alterations occur in liver function tests in acute viral hepatitis / chronic liver disease?
 
-**Acute viral hepatitis.**
+**Acute viral hepatitis**
+- Serum **transaminases** markedly elevated
+- **Jaundice** with raised bilirubin
+- In liver failure, falling transaminases with worsening jaundice and coagulopathy mean few viable hepatocytes remain
 
-- **Serum aminotransferases (ALT and AST)** are markedly raised (often several hundred to thousands of units per litre), and the rise precedes the jaundice; ALT is usually higher than AST. A fall in transaminases with worsening jaundice and coagulopathy is a sign of massive necrosis.
-- **Serum bilirubin** is raised (mixed conjugated and unconjugated), with bilirubinuria preceding the clinical jaundice; urinary urobilinogen is increased early.
-- **Alkaline phosphatase** is normal or only mildly raised (cholestatic features in some cases of hepatitis A).
-- **Prothrombin time** is prolonged in severe disease; this signifies a poor prognosis.
-- Serum albumin is usually normal because of its long half-life.
-
-**Chronic liver disease (chronic hepatitis and cirrhosis).**
-
-- Aminotransferases are mildly to moderately raised and fluctuate, and may be normal in cirrhosis.
-- **Serum albumin is reduced** (hypoalbuminaemia), while globulins are raised (hypergammaglobulinaemia), reversing the albumin:globulin ratio.
-- **Prothrombin time is prolonged**, and not corrected by vitamin K.
-- Serum bilirubin and alkaline phosphatase are variably raised, and ammonia may be raised.
-- Haematologic changes of hypersplenism: thrombocytopenia, leukopenia, and anaemia.
-- In advanced disease, hyponatraemia, hypokalaemia, and raised creatinine (hepatorenal syndrome).
-
+**Chronic hepatitis and chronic liver disease**
+- Persistently elevated **transaminases**, sometimes the only evidence of chronicity
+- **Prolonged prothrombin time**
+- **Hyperglobulinaemia**
+- **Hyperbilirubinaemia**
+- Mild elevation of **alkaline phosphatase**
+- Decreased serum **albumin** in impaired synthetic function; increased ammonia
 
 ## A 30y male with recent blood transfusion has jaundice, weakness. What are the possible fates/outcomes of such a case?
 
@@ -10681,134 +10659,97 @@ Alcohol-associated liver disease has three distinctive, overlapping forms: hepat
 
 ## Define cirrhosis of liver.
 
-Cirrhosis is a diffuse process involving the entire liver, characterised by the conversion of the normal lobular architecture into parenchymal nodules (usually regenerative) surrounded by dense bands of fibrous tissue, with a variable degree of vascular, often portosystemic, shunting. It is the end stage of chronic liver injury of many causes; the liver surface becomes bumpy with depressed scars and bulging nodules. The key features are the diffuse nature, the bridging fibrosis, the nodule formation, and the disruption of the vascular architecture, which causes portal hypertension and impairs hepatocellular function.
-
+Cirrhosis is a condition marked by **diffuse remodelling of the liver into parenchymal nodules** (often regenerative) **surrounded by fibrous bands** and a variable degree of **vascular (often portosystemic) shunting**.
 
 ## Name the etiology of cirrhosis.
 
-The aetiology of cirrhosis includes:
-
-1. Chronic viral hepatitis (B, B with D, and C)
-2. Alcohol-associated liver disease
-3. Metabolic dysfunction–associated steatohepatitis (MASH)
-4. Chronic biliary disease: primary biliary cholangitis, primary sclerosing cholangitis, chronic biliary obstruction, biliary atresia
-5. Autoimmune hepatitis
-6. Inherited metabolic disease: haemochromatosis, Wilson disease, α₁-antitrypsin deficiency
-7. Chronic hepatic venous congestion: Budd–Chiari syndrome, right-sided heart failure
-8. Drugs and toxins
-9. Chronic schistosomiasis
-10. Cryptogenic (unknown cause)
-
+- **Chronic hepatitis B**
+- **Chronic hepatitis C**
+- **Metabolic dysfunction-associated steatotic liver disease**
+- **Alcohol-associated liver disease**
+- Metabolic diseases
+- **Cryptogenic cirrhosis**: cirrhosis arising without any clear cause
 
 ## Write the etiopathogenesis of cirrhosis.
 
-Cirrhosis represents the common end point of repeated, prolonged hepatic injury, chronic inflammation, and the repair process, regardless of the underlying cause.
+**Aetiology:** chronic hepatitis B, chronic hepatitis C, metabolic dysfunction-associated steatotic liver disease, alcohol-associated liver disease, metabolic diseases; some cases are cryptogenic.
 
-**Aetiology.** The major causes are chronic viral hepatitis B and C, alcohol-associated liver disease, MASH, chronic biliary disease, autoimmune hepatitis, inherited metabolic diseases (haemochromatosis, Wilson disease, α₁-antitrypsin deficiency), venous outflow obstruction, and drugs.
-
-**Pathogenesis.**
-
-1. **Persistent hepatocellular injury and inflammation**: Hepatocyte death by necrosis or apoptosis, with an inflammatory response by Kupffer cells and lymphocytes, releases cytokines and growth factors (TGF-β, PDGF, TNF, IL-1) and reactive oxygen species.
-2. **Activation of hepatic stellate cells**: The stellate cells in the space of Disse, which normally store vitamin A, are activated by these mediators and by injury to the sinusoidal endothelium; they transform into myofibroblast-like cells that proliferate and synthesise large amounts of collagen types I and III and other matrix proteins. Portal fibroblasts and bone marrow–derived cells contribute.
-3. **Progressive fibrosis**: The fibrosis begins in portal tracts or around the central veins (depending on the disease), progresses to bridging septa that link portal tracts to each other or to central veins, and finally subdivides the parenchyma. Capillarisation of the sinusoids (deposition of matrix in the space of Disse and loss of endothelial fenestrae) impairs exchange between blood and hepatocytes.
-4. **Regeneration and nodule formation**: Surviving hepatocytes regenerate as nodules, isolated from their blood supply by fibrous septa, with a ductular reaction and stem-cell activation; the nodular architecture compresses the vessels.
-5. **Vascular derangement**: Distortion and obliteration of the hepatic and portal vessels, with arterioportal anastomoses and shunts, increases the resistance to portal flow (portal hypertension) and decreases the perfusion of hepatocytes (hepatic failure).
-6. **Failure of matrix degradation**: The balance between matrix metalloproteinases and their tissue inhibitors (TIMPs) shifts toward matrix accumulation. Early fibrosis may regress when the cause is removed, but established cirrhosis with vascular remodeling rarely reverses completely.
-
+**Pathogenesis**
+1. Persistent injury and inflammation activate the **hepatic stellate cell**, the principal cell of scar deposition; when quiescent it stores lipid, including vitamin A
+2. Stimuli for activation: inflammatory cytokines such as **TNF-alpha** from Kupffer cells and macrophages; altered interaction with extracellular matrix; toxins and reactive oxygen species
+3. Activated stellate cells become fibrogenic **myofibroblasts**, stimulated by platelet-derived growth factor and **TGF-beta**
+4. Extracellular matrix is deposited in the **space of Disse**, with loss of sinusoidal endothelial fenestration (**sinusoidal capillarisation**)
+5. Areas of hepatocyte loss are replaced by dense **fibrous septa** through collapse of the reticulin framework and collagen deposition by myofibroblasts
+6. Septa encircle surviving hepatocytes, which replicate and form **regenerative nodules**
+- If the injury stops (viral clearance, abstinence from alcohol), scarring stops and septa are broken down by metalloproteinases; vascular remodelling may persist, so portal hypertension may not resolve
 
 ## What are the complications of cirrhosis?
 
-About 40% of patients are asymptomatic until late. The complications result from portal hypertension and hepatocellular failure.
-
-**Portal hypertension and its consequences.**
-
-1. **Ascites**, which may be complicated by spontaneous bacterial peritonitis and hydrothorax.
-2. **Portosystemic shunts**: oesophagogastric varices (haemorrhage), haemorrhoids, caput medusae, and retroperitoneal collaterals.
-3. **Congestive splenomegaly** with hypersplenism (thrombocytopenia, leukopenia, anaemia).
-
-**Hepatic failure.**
-
-4. **Hepatic encephalopathy** and coma.
-5. **Coagulopathy** (bruising, bleeding, DIC).
-6. **Jaundice** and cholestasis with pruritus.
-7. **Hepatorenal syndrome**.
-8. **Hyperoestrogenism**: palmar erythema, spider angiomas, gynaecomastia, testicular atrophy, and hypogonadism.
-9. **Hypoalbuminaemia and oedema**; malnutrition and muscle wasting.
-10. **Pulmonary complications**: hepatopulmonary syndrome and portopulmonary hypertension.
-11. **Infections** (impaired Kupffer cell function and gut barrier loss).
-
-**Neoplastic.**
-
-12. **Hepatocellular carcinoma**, which develops in many cirrhotic livers (1% to 6% annually in alcohol-associated cirrhosis).
-
-**Others.** Portal vein thrombosis and acute-on-chronic liver failure.
-
+1. **Portal hypertension**, with its four major consequences: ascites, portosystemic venous shunts (oesophagogastric varices, haemorrhoids, caput medusae), congestive splenomegaly with hypersplenism, hepatic encephalopathy
+2. **Hepatic encephalopathy**
+3. **Coagulopathy** and **jaundice**
+4. **Hepatorenal syndrome**
+5. **Hepatopulmonary syndrome** and **portopulmonary hypertension**
+6. **Bacterial infections** (damage to the gut mucosal barrier and Kupffer cell dysfunction)
+7. **Hepatocellular carcinoma**
+8. Pruritus from persistent cholestasis
+9. Hyperoestrogenaemia: palmar erythema, spider angiomas; in males hypogonadism and gynaecomastia
 
 ## How is ascites formed in cirrhosis of liver?
 
-Ascites is the accumulation of excess fluid (usually serous, with less than 3 g/dL protein, and a serum-to-ascites albumin gradient of 1.1 g/dL or more) in the peritoneal cavity; cirrhosis causes 85% of cases, and it becomes clinically detectable when at least 500 mL has accumulated. Its pathogenesis is multifactorial:
-
-1. **Sinusoidal (portal) hypertension.** Raised hydrostatic pressure in the portal venous system and hepatic sinusoids increases the filtration of fluid into the space of Disse; the excess hepatic lymph (hepatic lymph flow can increase up to 20-fold) exceeds the capacity of the lymphatics and weeps from the surface of the liver into the peritoneal cavity. Increased splanchnic capillary pressure also adds to the transudation.
-2. **Hypoalbuminaemia.** Reduced hepatic synthesis of albumin lowers the plasma oncotic pressure, so fluid is retained in the interstitium and peritoneal cavity.
-3. **Splanchnic arterial vasodilation (nitric oxide–mediated) and hyperdynamic circulation.** Systemic arterial underfilling decreases the effective circulating volume and activates the renin–angiotensin–aldosterone system, sympathetic nervous system, and antidiuretic hormone, causing renal retention of sodium and water, which maintains and amplifies the ascites. Reduced hepatic inactivation of aldosterone contributes.
-4. **Increased hepatic and splanchnic lymph production** and renal sodium retention.
-
-The fluid may become infected (spontaneous bacterial peritonitis, with neutrophils in the fluid), and long-standing ascites may cause hydrothorax (usually right-sided) by passage through diaphragmatic lymphatics.
-
+- **Ascites** is accumulation of fluid in the peritoneal cavity; in 85% of cases it is caused by cirrhosis
+- Pathogenesis is complex:
+  - **Sinusoidal hypertension**
+  - **Hypoalbuminaemia**
+  - **Increased hepatic lymph flow**
+  - **Splanchnic vasodilation and hyperdynamic circulation**
+- Fluid is generally serous, with less than 3 g/dL of protein (largely albumin); clinically detectable when at least 500 mL has accumulated
+- Neutrophils in the fluid suggest infection; red cells point to possible disseminated intra-abdominal cancer
+- Long-standing ascites may produce right-sided hydrothorax through transdiaphragmatic lymphatics
 
 ## Write the mechanism of cirrhotic death.
 
-Death in cirrhosis results from the progressive loss of hepatocellular function and from the complications of portal hypertension. The common proximate causes are:
-
-1. **Hepatic failure with hepatic encephalopathy and coma**: failure of the liver to detoxify ammonia and other gut-derived toxins (and shunting of portal blood around the liver) leads to cerebral dysfunction and oedema, often precipitated by gastrointestinal bleeding, infection, electrolyte disturbance, or sedatives.
-2. **Massive haemorrhage from oesophagogastric varices**: about 40% of patients with advanced cirrhosis develop varices, and each bleeding episode carries a mortality of 15% to 30%; the blood load in the gut also precipitates encephalopathy.
-3. **Infections**: sepsis, spontaneous bacterial peritonitis, and pneumonia, caused by impaired Kupffer cell function, gut mucosal barrier damage, and immune dysfunction.
-4. **Hepatorenal syndrome**: renal failure due to splanchnic vasodilation, activation of the renin–angiotensin axis, and renal vasoconstriction.
-5. **Hepatocellular carcinoma**, developing in the cirrhotic liver.
-6. **Coagulopathy and multiorgan failure**, with acute-on-chronic liver failure precipitated by sepsis, drugs, or portal vein thrombosis.
-
+The common causes of death in cirrhosis are:
+1. **Hepatic encephalopathy**
+2. **Bleeding from oesophageal varices**: varices appear in about 40% of individuals with advanced cirrhosis and cause massive haematemesis and death in about half of those affected
+3. **Bacterial infections**, resulting from damage to the gut mucosal barrier and Kupffer cell dysfunction
+4. **Hepatocellular carcinoma**
+- Also: hepatorenal syndrome, coagulopathy
 
 ## A male has jaundice, gynaecomastia, testicular atrophy/abdominal distension, ascites. What is the likely diagnosis?
 
-The likely diagnosis is **cirrhosis of the liver (decompensated), with portal hypertension**, most commonly alcohol-associated or post-viral. Jaundice reflects hepatocellular failure, gynaecomastia and testicular atrophy result from hyperoestrogenaemia and hypogonadism due to impaired hepatic oestrogen metabolism, and the abdominal distension with ascites results from portal hypertension, hypoalbuminaemia, and renal salt and water retention. Palmar erythema, spider angiomas, caput medusae, splenomegaly, and hepatic encephalopathy may coexist. The diagnosis is established by liver function tests, ultrasonography, endoscopy, ascitic fluid analysis, and, where appropriate, liver biopsy.
-
+- **Cirrhosis of the liver** (chronic liver failure) with **portal hypertension**
+- Jaundice and ascites reflect liver failure and portal hypertension
+- Impaired oestrogen metabolism leads to **hyperoestrogenaemia**, which in males produces **hypogonadism (testicular atrophy) and gynaecomastia**; also palmar erythema and spider angiomas
 
 ## Same (40y): name the liver function tests expected to be altered.
 
-In cirrhosis the following liver function tests are expected to be altered:
-
-1. **Serum bilirubin** is raised (conjugated and unconjugated).
-2. **Aminotransferases (AST, ALT)** are mildly to moderately raised (AST greater than ALT in alcohol-associated disease), and may be normal in advanced disease.
-3. **Alkaline phosphatase and GGT** are variably raised.
-4. **Serum albumin** is reduced and **globulins** are raised, so the albumin:globulin ratio is reversed.
-5. **Prothrombin time (INR)** is prolonged and is not corrected by vitamin K.
-6. Serum ammonia may be raised, and cholesterol low in advanced disease.
-
+| Test | Expected change |
+|---|---|
+| Serum **bilirubin**, total and direct; urine bilirubin | Increased |
+| Serum **alkaline phosphatase**, **GGT** | Increased |
+| **AST**, **ALT**, LDH | Increased |
+| Serum **albumin** | Decreased |
+| **Prothrombin time** and PTT (fibrinogen, prothrombin, factors V, VII, IX, X) | Prolonged |
+| Serum **ammonia** | Increased |
 
 ## What is hepatic encephalopathy?
 
-Hepatic encephalopathy is a spectrum of potentially reversible neuropsychiatric disturbances of consciousness and behaviour, ranging from subtle changes in personality, sleep reversal, and confusion, through stupor, to deep coma and death, that complicates acute or chronic liver failure and portosystemic shunting.
-
-**Pathogenesis.** It is believed to be caused by elevated blood ammonia, which correlates with impaired neuronal function and cerebral oedema. The principal source of ammonia is the gastrointestinal tract, where it is produced by gut bacteria and by enterocytes during glutamine metabolism. Normally the ammonia travels in the portal vein to the liver, where it is converted to urea by the urea cycle; in severe liver disease, or when the portal blood bypasses the liver through shunts, this detoxification fails. In the brain, astrocytes metabolise ammonia to glutamine, which acts as an osmolyte and causes astrocyte swelling and cerebral oedema; ammonia also directly affects neurons and neurotransmission. Other contributors are false neurotransmitters, increased GABAergic tone, inflammation, and infection.
-
-**Clinical features.** Behavioural abnormalities, altered sleep rhythm, confusion, drowsiness, stupor, and coma; fluctuating neurological signs including rigidity and hyperreflexia; **asterixis** (flapping tremor: nonrhythmic rapid extension–flexion of the head and extremities, best seen with the arms outstretched and wrists dorsiflexed); fetor hepaticus; raised blood ammonia; and slowing of the electroencephalogram.
-
-**Precipitating factors.** Gastrointestinal haemorrhage, infection, constipation, electrolyte disturbance (hypokalaemia, alkalosis), a high-protein load, sedatives, diuretics, and renal failure.
-
-**Management.** Correction of precipitating factors, lactulose and rifaximin to reduce ammonia production and absorption, and protein-appropriate nutrition; liver transplantation in refractory cases.
+- A **spectrum of disturbances in consciousness**, ranging from subtle behavioural abnormalities, to marked confusion and stupor, to deep coma and death
+- Fluctuating neurological signs: rigidity, hyperreflexia, **asterixis** (nonrhythmic, rapid extension and flexion movements of head and extremities, best seen with arms extended and wrists dorsiflexed)
+- Believed to be caused by **elevated ammonia**, which correlates with impaired neuronal function and cerebral oedema
+- Principal source of ammonia: the gastrointestinal tract, produced by microorganisms and enterocytes during glutamine metabolism
+- Normally ammonia is carried in the portal vein to the liver and metabolised in the **urea cycle**; in severe liver disease this fails
+- Neurotoxicity: direct effects on neurons, and conversion to **glutamine** in astrocytes, which acts as an osmolyte and contributes to oedema
 
 ## Enumerate the important causes of ascites.
 
-The important causes of ascites are:
-
-1. **Cirrhosis of the liver** (commonest, 85% of cases), and other causes of portal hypertension: portal vein thrombosis, Budd–Chiari syndrome, and schistosomiasis.
-2. **Cardiac**: congestive cardiac failure and constrictive pericarditis.
-3. **Renal**: nephrotic syndrome and chronic kidney disease.
-4. **Hypoalbuminaemia** from malnutrition and protein-losing enteropathy.
-5. **Peritoneal disease**: tuberculous peritonitis, peritoneal carcinomatosis, and other causes of peritonitis.
-6. **Malignancy**: metastatic disease of the liver and peritoneum, and ovarian tumours (Meigs syndrome).
-7. **Pancreatic disease** (pancreatic ascites) and lymphatic obstruction (chylous ascites).
-8. Myxoedema.
+- **Cirrhosis of the liver**: 85% of cases
+- Other **portal hypertension**: prehepatic (portal vein thrombosis), intrahepatic (schistosomiasis, massive fatty change, sarcoidosis), posthepatic (right-sided heart failure, constrictive pericarditis, hepatic vein outflow obstruction)
+- **Congestive heart failure**
+- **Hypoalbuminaemia** (for example nephrotic syndrome)
+- **Disseminated intra-abdominal cancer**
+- Infection of the peritoneal fluid
 
 ## Write down the etiology of hepatocellular carcinoma.
 
