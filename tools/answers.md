@@ -6467,44 +6467,20 @@ Several patterns are often seen within the same node. The nodes are nontender be
 
 ## Write down the causes of generalized lymphadenopathy.
 
-Generalised lymphadenopathy, defined as enlargement of lymph nodes in two or more noncontiguous regions, indicates a systemic disorder in which nodes are enlarged by reactive hyperplasia, infiltration by inflammatory cells, infiltration by neoplastic cells, or accumulation of storage material. Its causes may be grouped as follows.
-
-| Category | Causes |
-|---|---|
-| **Viral infections** | Infectious mononucleosis (EBV), cytomegalovirus, HIV (persistent generalised lymphadenopathy and AIDS-related complex), rubella, measles, hepatitis B and C, adenovirus, dengue; acute generalised lymphadenopathy is common in children |
-| **Bacterial infections** | Tuberculosis, secondary syphilis, brucellosis, typhoid fever, plague, septicaemia, leprosy, cat-scratch disease, leptospirosis |
-| **Protozoal, fungal and other infections** | Toxoplasmosis, visceral leishmaniasis (kala-azar), lymphatic filariasis, trypanosomiasis, histoplasmosis, coccidioidomycosis |
-| **Lymphoid and haematologic neoplasms** | Hodgkin lymphoma, non-Hodgkin lymphomas (follicular, small lymphocytic, mantle cell, peripheral T-cell), chronic lymphocytic leukaemia, acute lymphoblastic leukaemia, hairy cell leukaemia, adult T-cell leukaemia/lymphoma, Langerhans cell histiocytosis |
-| **Autoimmune and connective tissue disorders** | Rheumatoid arthritis, systemic lupus erythematosus, adult-onset Still disease, Sjögren syndrome, dermatomyositis, mixed connective tissue disease, autoimmune lymphoproliferative syndrome |
-| **Drug reactions and serum sickness** | Phenytoin, carbamazepine, allopurinol, hydralazine, sulfonamides, penicillin |
-| **Granulomatous and lymphoproliferative disorders of uncertain nature** | Sarcoidosis, angioimmunoblastic T-cell lymphoma, Castleman disease, Kikuchi–Fujimoto disease, Rosai–Dorfman disease |
-| **Storage and metabolic disorders** | Gaucher disease, Niemann-Pick disease, amyloidosis, hyperthyroidism |
-| **Metastatic** | Widely disseminated carcinoma, melanoma (uncommon as a cause of generalised enlargement) |
-
-In children, infections and reactive hyperplasia predominate; in older adults, lymphoid neoplasms and tuberculosis must be excluded, and lymph node biopsy is required if the enlargement persists, is progressive, or is accompanied by systemic symptoms.
-
+- **Systemic viral infections**, particularly in children, and **bacteraemia.**
+- **Chronic lymphocytic leukaemia/small lymphocytic lymphoma**, in 50% to 60% of symptomatic patients.
+- **Follicular lymphoma**, **mantle cell lymphoma** and **peripheral T-cell lymphoma**, not otherwise specified.
+- **Acute lymphoblastic leukaemia**, from neoplastic infiltration.
+- **Tuberculosis** and other mycobacterial, fungal and parasitic infections (for example toxoplasmosis).
+- **Autoimmune disease.**
+- Generalised lymphadenopathy means nodes in 2 or more non-contiguous regions.
 
 ## What are the causes of cervical lymphadenopathy?
 
-The cervical lymph nodes drain the scalp, face, oral cavity, pharynx, larynx, thyroid, and by way of the supraclavicular nodes the thorax and abdomen, so cervical lymphadenopathy is the commonest site of nodal enlargement. The causes may be classified as follows.
-
-**1. Inflammatory (reactive and infective) causes**
-
-- Acute nonspecific lymphadenitis from infections of the teeth, tonsils, pharynx, ears, scalp and skin, usually staphylococcal or streptococcal. The nodes are swollen, tender and painful, and may suppurate with an abscess.
-- Chronic nonspecific lymphadenitis due to recurrent tonsillitis and dental infection, and reactive hyperplasia.
-- Viral infections: infectious mononucleosis, cytomegalovirus, adenovirus, HIV, rubella, mumps.
-- Specific infections: **tuberculosis** (scrofula), which is a very common cause in developing countries, with matted nodes, cold abscess and sinus formation; atypical mycobacteria; cat-scratch disease; toxoplasmosis; syphilis; actinomycosis.
-
-**2. Neoplastic causes**
-
-- Primary lymphoid neoplasms: Hodgkin lymphoma (commonly cervical, painless, rubbery nodes in young adults), non-Hodgkin lymphomas, and chronic and acute lymphoid leukaemias.
-- Metastatic carcinoma: squamous carcinoma from the oral cavity, tongue, tonsil, nasopharynx and larynx (upper and mid cervical nodes); papillary carcinoma of thyroid; carcinoma of the breast, lung, oesophagus, stomach (Virchow node in the left supraclavicular fossa), and unknown primaries.
-
-**3. Immunologic and miscellaneous causes**
-
-Sarcoidosis, connective tissue disease, drug hypersensitivity, Kikuchi–Fujimoto disease, Kimura disease, Rosai–Dorfman disease and Castleman disease.
-
-Hard, fixed, painless, rapidly enlarging nodes in a middle-aged or elderly smoker suggest metastasis; soft, tender nodes with fever suggest acute infection; and a firm rubbery painless mass in a young person with or without B symptoms suggests lymphoma.
+- **Acute nonspecific lymphadenitis** from infections of the teeth or tonsils.
+- Posterior cervical nodes: localised bacterial and viral infections, and lymphoma.
+- **Hodgkin lymphoma** and other lymphomas.
+- **Metastatic cancer**, including head and neck cancers.
 
 ## What is the etiology of leukaemia?
 
@@ -6966,67 +6942,59 @@ In the first four the Reed-Sternberg cells have a similar distinctive immunophen
 
 ## Describe in brief the morphological features of Hodgkin's disease.
 
-**Gross.** Involved lymph nodes are enlarged, initially discrete and rubbery, but with progression may become matted. The cut surface is homogeneous, grayish-white to pink and bulging, sometimes with areas of necrosis; in nodular sclerosis the capsule is thickened and the cut surface shows fibrous bands. The disease first involves a single node or chain (most often cervical, then mediastinal, para-aortic) and spreads in a stereotyped fashion to contiguous nodes, then the spleen, liver, bone marrow and other tissues. Involved spleen and liver show irregular tumour nodules, which resemble those seen in lymph nodes.
-
-**Microscopy.** The hallmark is the presence of **Reed-Sternberg cells and variants** scattered in a background of non-neoplastic inflammatory cells, which make up more than 90% of the tumour and usually effaces the normal architecture of the node.
-
-1. Diagnostic Reed-Sternberg cell: a large cell (45 µm) with abundant cytoplasm and a bilobed or multilobed nucleus, each lobe with a thin membrane, open chromatin and a large inclusion-like eosinophilic nucleolus about the size of a small lymphocyte ("owl-eye").
-2. Variants: mononuclear (Hodgkin) cells; lacunar cells (nodular sclerosis); L&H "popcorn" cells (lymphocyte predominance); mummified cells; pleomorphic cells (lymphocyte depletion).
-3. Background: small lymphocytes (mostly T cells), eosinophils, plasma cells, histiocytes, neutrophils and fibroblasts, in varying proportions that characterise each subtype.
-4. Subtypes: nodular sclerosis (collagen bands dividing the node into nodules, lacunar cells); mixed cellularity (diffuse polymorphous infiltrate, plentiful RS cells); lymphocyte-rich (lymphocyte predominance with classic RS cells); lymphocyte-depleted (few lymphocytes, many pleomorphic RS cells, sometimes diffuse fibrosis); nodular lymphocyte predominant (nodules of lymphocytes and histiocytes with L&H cells).
-5. Immunohistochemistry: classic RS cells are CD15⁺, CD30⁺, PAX5 weak⁺, CD45⁻; EBV is demonstrable in 30–40% of classic cases. L&H cells are CD20⁺, BCL6⁺, CD15⁻, CD30⁻.
-
+- **Reed-Sternberg cells** and variants (mononuclear, lacunar, lymphohistiocytic) in a background of nonneoplastic cells: reactive lymphocytes, macrophages and granulocytes, which make up more than 90% of the tumour cellularity.
+- Diagnostic Reed-Sternberg cells: large, with multiple nuclei or a multilobed nucleus, each lobe with a large inclusion-like nucleolus, and abundant cytoplasm.
+- **Nodular sclerosis:** lacunar cells; bands of collagen dividing the node into nodules.
+- **Mixed cellularity:** node diffusely effaced by T cells, eosinophils, plasma cells and macrophages, with plentiful Reed-Sternberg cells.
+- **Lymphocyte-rich:** reactive lymphocytes predominate; node diffusely effaced.
+- **Lymphocyte-depleted:** few lymphocytes, many Reed-Sternberg cells or pleomorphic variants.
+- **Nodular lymphocyte predominant:** nodules of small lymphocytes and macrophages; L&H (popcorn) cells; classic Reed-Sternberg cells usually absent.
+- Involvement of spleen, liver, bone marrow and other organs appears as irregular tumour nodules resembling those in the nodes.
 
 ## Describe the Reed-Sternberg cell and its variants.
 
-**Definition and significance.** The Reed-Sternberg (R-S) cell is the neoplastic giant cell of Hodgkin lymphoma. The identification of R-S cells and their variants in a background of non-neoplastic inflammatory cells is essential for the diagnosis. Molecular studies of single isolated R-S cells have revealed clonal immunoglobulin heavy-chain gene rearrangements and somatic hypermutation, establishing derivation from a germinal centre or post–germinal centre B cell; yet the R-S cells of classic Hodgkin lymphoma fail to express most B-cell–specific genes, including immunoglobulin genes, probably through widespread epigenetic reprogramming.
-
-**Morphology of the diagnostic (classical) R-S cell.** The cell is large, about 45 µm in diameter, with abundant, slightly basophilic to amphophilic cytoplasm. The nucleus is multilobed or the cell is binucleate, classically with two mirror-image nuclei or lobes. Each nucleus has a thin, distinct nuclear membrane, vesicular chromatin and a **large, inclusion-like, eosinophilic nucleolus** about the size of a small lymphocyte (5–7 µm), surrounded by a clear halo. The two nuclei with their huge nucleoli produce the "owl-eye" appearance.
-
-**Variants.**
-
-| Variant | Morphology | Association |
+| Cell | Features | Seen in |
 |---|---|---|
-| **Mononuclear (Hodgkin) cell** | Single nucleus with a large inclusion-like nucleolus | All classic types, particularly mixed cellularity |
-| **Lacunar cell** | Delicate, folded or multilobated nucleus; abundant pale cytoplasm retracts in formalin-fixed sections leaving a clear space (lacuna) | Nodular sclerosis |
-| **Lymphohistiocytic (L&H, popcorn) cell** | Polypoid, multilobed nucleus with inconspicuous nucleoli, fine chromatin, moderately abundant cytoplasm | Nodular lymphocyte predominant Hodgkin lymphoma |
-| **Mummified cell** | Shrunken, pyknotic nucleus and dense eosinophilic cytoplasm resulting from a peculiar form of cell death | Classic Hodgkin lymphoma |
-| **Pleomorphic/anaplastic (reticular) variants** | Bizarre, large cells with irregular, multiple nuclei | Lymphocyte-depleted (reticular) type |
+| **Diagnostic Reed-Sternberg cell** | Large cell, multiple nuclei or one nucleus with several lobes, each with a large inclusion-like nucleolus about the size of a small lymphocyte; abundant cytoplasm | Classic Hodgkin lymphoma |
+| **Mononuclear variant** | Single nucleus with a large inclusion-like nucleolus | Classic Hodgkin lymphoma |
+| **Lacunar cell** | Delicate, folded or multilobed nucleus; abundant pale cytoplasm that is disrupted in sectioning, leaving the nucleus in an empty space (lacuna) | Nodular sclerosis |
+| **Lymphohistiocytic (L&H) variant, popcorn cell** | Multilobed polypoid nucleus, inconspicuous nucleoli, moderately abundant cytoplasm; B-cell markers CD20 and BCL6, negative for CD15 and CD30 | Nodular lymphocyte predominant |
 
-**Immunophenotype.** Classic RS cells are positive for CD15 and CD30 and weakly for PAX5, and negative for CD45 (leukocyte common antigen), most other B-cell markers (CD20 negative or variable, CD79a negative) and T-cell markers. About 30–40% are EBV-positive (LMP-1). L&H cells in the lymphocyte predominant type are CD20⁺, CD45⁺, BCL6⁺ and CD15⁻, CD30⁻.
-
-**Pathogenic significance.** NF-κB activation (via EBV LMP-1, or loss-of-function mutations of IκB and TNFAIP3), REL copy number gains and gains of PD-L1 and PD-L2 on 9p contribute to survival and immune evasion. R-S cells secrete IL-5, IL-10, M-CSF and eotaxin, which attract the reactive eosinophils, lymphocytes and macrophages that make up more than 90% of the tumour mass.
-
-**Diagnostic caution.** Cells resembling R-S cells occur in infectious mononucleosis, solid tissue cancers and some non-Hodgkin lymphomas, so diagnosis depends on the characteristic cellular background and immunophenotype.
-
+In classic forms the cells die by shrinking and becoming pyknotic, called **mummification**.
 
 ## Write a short note on Hodgkin's lymphoma.
 
-**Definition and epidemiology.** Hodgkin lymphoma (HL) is a group of lymphoid neoplasms characterised by neoplastic Reed-Sternberg cells and variants surrounded by a large majority (over 90%) of reactive lymphocytes, macrophages, eosinophils and plasma cells. It accounts for 0.7% of cancers in the United States (about 9,000 cases a year), has a bimodal age distribution with peaks in young adults and in persons over 55, and is curable in most cases. It arises in a single node or chain of nodes and spreads in an orderly fashion to contiguous lymphoid tissues.
+**Definition:** a group of lymphoid neoplasms that differ from non-Hodgkin lymphoma. It arises in a single node or chain of nodes and spreads first to contiguous lymphoid tissues; the distinctive feature is the **Reed-Sternberg cell**, which induces reactive lymphocytes, macrophages and granulocytes that make up more than 90% of the tumour. Average age at diagnosis is 39, with a bimodal distribution, peaks in young adults and in adults older than 55.
 
-**Pathogenesis.** R-S cells derive from germinal centre or post–germinal centre B cells; NF-κB is constitutively activated (EBV LMP-1 in the 30–40% of EBV-positive cases; mutations in IκB and TNFAIP3 otherwise), REL is amplified, and PD-L1 and PD-L2 genes on 9p are increased, which suppress the antitumour T-cell response. R-S cells elaborate cytokines and chemokines that recruit the reactive infiltrate.
+**Pathogenesis**
 
-**Classification.** Classic HL (nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted) and nodular lymphocyte predominant HL.
+- Reed-Sternberg cells derive from germinal centre or post-germinal centre B cells.
+- **NF-κB activation**, through EBV latent membrane protein 1 or loss-of-function mutations in IκB or TNF-induced protein 3.
+- EBV in a subset of classic cases.
+- Gains of *REL* on chromosome 2p and of PD-L1 and PD-L2 genes on chromosome 9p.
+- Reed-Sternberg cells secrete cytokines (interleukin-5, interleukin-10, M-CSF) and chemokines that attract reactive cells; PD-L1 and PD-L2 make the host immune response ineffective.
 
-**Morphology.** R-S cells (binucleate or multilobed with huge eosinophilic nucleoli) and variants in a reactive background; classic RS cells CD15⁺, CD30⁺.
+**Morphology:** Reed-Sternberg cells and variants in a reactive background. WHO subtypes: nodular sclerosis (65% to 70%), mixed cellularity (20% to 25%), lymphocyte-rich, lymphocyte-depleted (less than 5%), and nodular lymphocyte predominant (about 5%).
 
-**Clinical features.** Painless lymphadenopathy, most often cervical, supraclavicular or mediastinal; splenomegaly later; constitutional (B) symptoms (fever, night sweats, weight loss), pruritus, and sometimes alcohol-induced pain in involved nodes. Disseminated disease and mixed cellularity or lymphocyte depletion are more likely to have systemic symptoms. Cutaneous anergy, caused by depressed cell-mediated immunity (IL-10 from R-S cells), is common. Spread follows a stereotyped sequence: nodal, splenic, hepatic, then marrow.
+**Clinical features**
 
-**Staging.** Ann Arbor classification (I to IV; A or B). The stage is the most important prognostic variable with modern treatment.
+- Painless lymphadenopathy.
+- Fever, night sweats and weight loss in stage III and IV disease, mixed cellularity and lymphocyte-depleted subtypes.
+- Cutaneous anergy from depressed cell-mediated immunity, from interleukin-10 suppressing Th1 responses.
+- Stereotyped spread: nodes, then spleen, then liver, then marrow and other tissues.
+- Stage is the most important prognostic variable; cure rate close to 90% in stages I and IIA.
 
-**Treatment and prognosis.** Combination chemotherapy with or without limited radiotherapy; stage I–IIA cure rates are about 90%, and 5-year disease-free survival in stages IVA and IVB is 60–70%. Second malignancies (lung, breast, melanoma, AML) arising after radiation and alkylating agents have prompted less genotoxic regimens. Immune checkpoint (PD-1) inhibitors produce sustained responses in almost 90% of refractory classic HL.
-
+**Complications of treatment:** second cancers after radiotherapy (lung cancer, melanoma, breast cancer) and acute myeloid leukaemia after alkylating agent chemotherapy.
 
 ## Write a short note on nodular sclerosis variety of Hodgkin's disease.
 
-Nodular sclerosis (NS) is the **most common form of Hodgkin lymphoma**, constituting 65% to 70% of cases. It is the one type that occurs with equal frequency in males and females.
-
-**Morphology.** The distinguishing features are (1) the presence of **lacunar variant Reed-Sternberg cells**, and (2) the deposition of **collagen in bands** that divide the involved lymph node into circumscribed nodules (the capsule is usually thickened). The fibrosis may be scant or abundant, and the bands are birefringent under polarised light. The lacunar cells have delicate, folded or multilobated nuclei and abundant pale cytoplasm that retracts during processing, leaving the nucleus in an empty space. The R-S cells lie in a polymorphous background of T cells, eosinophils, plasma cells and macrophages; diagnostic R-S cells are usually uncommon. Involvement of the spleen, liver, marrow and other organs may appear in due course as irregular tumour nodules resembling those in the lymph nodes.
-
-**Immunophenotype and genetics.** The R-S cells are positive for PAX5 (weak), CD15 and CD30, negative for CD45 and other B-cell and T-cell markers, and only uncommonly (usually) associated with EBV.
-
-**Clinical features.** NS has a propensity to involve the **lower cervical, supraclavicular and mediastinal lymph nodes** of adolescents and young adults, so it often presents as a mediastinal mass. It usually presents in stage I or II, with few systemic symptoms, and has an **excellent prognosis**.
-
+- Most common form of Hodgkin lymphoma, 65% to 70% of cases.
+- **Lacunar variant Reed-Sternberg cells**, with **collagen deposited in bands** that divide the node into circumscribed nodules; fibrosis may be scant or abundant.
+- Polymorphous background of T cells, eosinophils, plasma cells and macrophages; diagnostic Reed-Sternberg cells are usually uncommon.
+- Reed-Sternberg cells are positive for PAX5, CD15 and CD30, and negative for other B-cell markers, T-cell markers and CD45.
+- Uncommonly associated with EBV.
+- Equal in males and females; involves lower cervical, supraclavicular and mediastinal nodes of adolescents or young adults.
+- Prognosis is excellent.
 
 ## How does Hodgkin lymphoma differ from non-Hodgkin lymphoma?
 
@@ -7131,21 +7099,17 @@ Free light chains, made in excess by neoplastic plasma cells, are small and are 
 
 ## Give the bone marrow findings of multiple myeloma.
 
-Even away from overt tumour masses, the marrow contains an increased number of plasma cells, which usually constitute **more than 30% of the cellularity** (a diagnostic threshold of 10% clonal plasma cells is used in current criteria, together with a myeloma-defining event). They may infiltrate subtly or completely replace the normal marrow elements.
-
-**Cytologic features.** Like benign plasma cells, malignant plasma cells have an eccentrically placed nucleus and perinuclear clearing (hof) because of a prominent Golgi apparatus. The cells vary from relatively normal-appearing plasma cells, through plasmablasts with vesicular nuclear chromatin and a prominent single nucleolus, to bizarre, multinucleated cells. Dysregulated synthesis and secretion of immunoglobulin leads to intracellular accumulation of intact or partially degraded protein, producing variants: **flame cells** with fiery red cytoplasm, **Mott cells** with multiple grape-like cytoplasmic droplets, and cells containing other inclusions such as fibrils, crystalline rods and globules. The globular inclusions are called **Russell bodies** if cytoplasmic and **Dutcher bodies** if nuclear.
-
-**Other features.** The normal haematopoietic cells are reduced; erythrocytes show rouleaux in the marrow smear. The biopsy shows interstitial, nodular or diffuse (packed marrow) patterns, with bone destruction and lytic lesions consisting of soft, gelatinous red tumour masses. **Immunophenotype:** CD138 (syndecan-1)-positive, often CD56-positive, with cytoplasmic κ or λ light chain restriction. In advanced disease plasma cell infiltrates may be present in the spleen, liver, kidneys, lungs, lymph nodes and other soft tissues.
-
+- **Plasma cells increased**, usually more than 30% of the cellularity; they may infiltrate subtly or completely replace the normal marrow elements.
+- Malignant plasma cells have a perinuclear clearing from a prominent Golgi apparatus and an eccentrically placed nucleus.
+- Cytological forms range from relatively normal-looking plasma cells, plasmablasts with vesicular chromatin and a prominent single nucleolus, to bizarre multinucleated cells.
+- Cytoplasmic immunoglobulin accumulates in variants: **flame cells** with fiery red cytoplasm, **Mott cells** with grape-like cytoplasmic droplets, and cells with fibrils, crystalline rods and globules.
+- Globular inclusions are **Russell bodies** if cytoplasmic and **Dutcher bodies** if nuclear.
+- Immunophenotype: positive for CD138 and often CD56, with cytoplasmic kappa or lambda light chain.
 
 ## Why is ESR sky-high in multiple myeloma?
 
-The erythrocyte sedimentation rate depends mainly on the degree of **rouleaux formation**—the stacking of red cells like coins—because aggregates sediment faster than single cells. Normally red cells repel one another because of the negative charge (zeta potential) on their surface sialic acid residues, and this keeps them separated.
-
-In multiple myeloma the plasma contains large amounts of **monoclonal immunoglobulin (M protein)**. These large, asymmetric, positively charged proteins coat the red cell surface and neutralise its negative charge, so the cells lose their mutual repulsion and adhere in linear stacks. High M protein levels in the blood cause red cells to stick to one another in linear arrays on smears, a finding called rouleaux formation. This increases the rate of sedimentation of red cells in the Westergren tube to sometimes more than 100 mm in the first hour. Increased fibrinogen and acute-phase proteins from inflammation, and anaemia (fewer red cells per unit volume, which favours faster sedimentation), contribute additionally.
-
-Rouleaux formation is characteristic but not specific, since it may be seen in other conditions in which immunoglobulin levels are elevated, such as lupus erythematosus and early HIV infection.
-
+- High levels of M protein in the blood cause red cells to stick to one another in linear arrays on smears, called **rouleaux formation**.
+- Rouleaux formation is characteristic but not specific; it is also seen in other conditions with high immunoglobulin levels, such as lupus erythematosus and early HIV infection.
 
 ## An elderly patient has low back/bone pain, punched-out lesions, sky-high ESR. What is your probable diagnosis?
 
@@ -7157,17 +7121,19 @@ Rouleaux formation is characteristic but not specific, since it may be seen in o
 
 ## Write a short note on Bence-Jones protein and its detection in urine.
 
-**Nature.** Bence Jones protein consists of monoclonal free immunoglobulin light chains (κ or λ) produced in excess by neoplastic plasma cells. Because free light chains are small, they are filtered by the glomerulus and excreted in the urine, whereas intact immunoglobulin (molecular weight 160,000 or more) is not. They occur in most patients with multiple myeloma (more than 6 mg/dL of urinary Bence Jones protein is typical), in light-chain–only myeloma, and in Waldenström macroglobulinaemia, AL amyloidosis and light-chain deposition disease.
+**Definition:** free light chains made in excess by neoplastic plasma cells are small enough to be excreted in the urine, where they are called **Bence Jones proteins**.
 
-**Clinical significance.** Bence Jones proteins are toxic to renal tubular epithelial cells and form obstructing casts with Tamm-Horsfall protein (myeloma kidney); this is the single most important factor in the renal failure of myeloma. Certain light chains (λ6, λ3) cause AL amyloidosis. Their detection helps in diagnosis and in monitoring the response to therapy.
+**Detection**
 
-**Detection in urine.**
+- Light chains in the urine are found as an abnormal protein spike on **urine electrophoresis**, then characterised by **immunofixation**.
+- Most myelomas have more than 6 mg/dL of urine Bence Jones protein; light chains in the urine and/or increased immunoglobulin in the blood are found in 99% of patients.
+- About 20% of patients have only free light chains.
 
-1. **Heat test (classic).** An acidified urine sample (pH about 5, acetate buffer) is slowly heated. Bence Jones protein precipitates when heated to about 40–60 °C, redissolves partly or completely on boiling at 100 °C, and reappears on cooling to about 60 °C. The test is insensitive and subject to false results.
-2. **Sulfosalicylic acid or acid precipitation test.** Positive precipitation in a urine that is **negative on dipstick** suggests non-albumin protein, because dipsticks detect albumin principally and miss light chains.
-3. **Urine protein electrophoresis** of a concentrated 24-hour specimen shows a sharp monoclonal band.
-4. **Immunofixation electrophoresis (definitive).** It identifies the protein as κ or λ free light chain and confirms its monoclonality.
-5. **Serum free light chain assay** (κ/λ ratio) is the most sensitive test and is also used in monitoring.
+**Significance**
+
+- Bence Jones proteins are excreted by the kidney and contribute to **myeloma kidney**.
+- They are the most important factor in the renal failure seen in up to 50% of patients, being toxic to renal tubular epithelial cells.
+- Certain light chains (lambda 6 and lambda 3 families) cause AL amyloidosis.
 
 ## What do you know about myelodysplastic syndrome?
 
@@ -7526,36 +7492,31 @@ Bone marrow examination is essential to confirm the diagnosis.
 
 ## What is haemopoiesis?
 
-Haemopoiesis is the continuous, regulated process by which all the cellular elements of blood (red cells, white cells and platelets) are produced from a small population of self-renewing pluripotent haemopoietic stem cells.
+All formed elements of blood (red cells, granulocytes, monocytes, platelets and lymphocytes) have a common origin from **haematopoietic stem cells (HSCs)**, pluripotent cells at the apex of a hierarchy of bone marrow progenitors.
 
-Haemopoietic stem cells (HSCs) reside in specialised niches of the bone marrow. They have two cardinal properties: self-renewal, which preserves the stem cell pool, and multipotent differentiation, which gives rise to progressively committed progenitors. The first major branch separates a common myeloid progenitor (the CFU-GEMM, giving rise to erythroid, granulocytic, monocytic and megakaryocytic lineages) from a common lymphoid progenitor (giving rise to B cells, T cells and NK cells). Committed progenitors such as the burst-forming unit–erythroid (BFU-E) and colony-forming unit–erythroid (CFU-E) then differentiate into recognisable precursors that mature into the cells found in the circulation.
-
-Haemopoiesis is controlled by the marrow microenvironment (stromal cells, extracellular matrix, adhesion molecules) and by lineage-specific growth factors. Erythropoietin, produced by peritubular interstitial cells of the kidney in response to hypoxia, drives erythroid progenitors; G-CSF and GM-CSF drive granulocytic and monocytic development; thrombopoietin, made mainly in the liver, drives megakaryocytes and platelets; and stem cell factor, IL-3 and IL-6 act on early progenitors. The output is exquisitely matched to need: red cell production rises several-fold in haemolysis or after haemorrhage, and neutrophil production rises in infection. Failure of the process produces cytopenias (aplastic anaemia, marrow infiltration), while uncontrolled clonal proliferation produces leukaemias and myeloproliferative neoplasms.
-
+- HSCs have **pluripotency** (generating all mature blood cells) and **self-renewal**.
+- Progressive commitment gives early progenitors, then colony-forming units, then morphologically recognisable precursors such as myeloblasts, proerythroblasts and megakaryoblasts.
+- Short-term needs are regulated by **colony-stimulating factors** (erythropoietin, GM-CSF, G-CSF, thrombopoietin) acting on committed progenitors.
 
 ## Sites of normal haemopoiesis.
 
-Haemopoiesis moves between sites during development: the yolk sac in early foetal life, then the liver and spleen, then the bone marrow, which is the sole site of haemopoiesis after birth and throughout normal adult life.
-
-The sites change with age as follows.
-
-| Period | Site of haemopoiesis |
+| Period | Site |
 |---|---|
-| Embryonic (about 3 to 10 weeks) | Yolk sac (mesoblastic phase), producing primitive nucleated red cells with embryonic haemoglobins |
-| Foetal (about 6 weeks to birth) | Liver is the main site (peak at 3 to 6 months of gestation), with a contribution from the spleen, thymus and lymph nodes; the bone marrow takes over from about the fifth month |
-| Infancy and childhood | All marrow cavities (central and peripheral skeleton) contain red, haemopoietically active marrow |
-| From about 5 to 7 years onward | Red marrow in the shafts of long bones is progressively replaced by fat |
-| Adult | Red marrow is confined to the axial skeleton and proximal ends of long bones: vertebrae, ribs, sternum, skull, pelvis and the proximal femur and humerus |
-
-Lymphocytes additionally mature and proliferate in the thymus, lymph nodes, spleen and mucosa-associated lymphoid tissue, but their progenitors originate in the marrow. Fatty (yellow) marrow retains the capacity to revert to haemopoietic marrow when demand is sustained, as in chronic haemolysis.
-
+| Third week of embryonic life | Yolk sac; transient, mainly embryonic red cells |
+| Several weeks later | Definitive HSCs arise in the mesoderm of the intraembryonic aorta/gonad/mesonephros region |
+| Third month | Liver, the chief site until shortly before birth; HSCs also in the fetal placenta |
+| Fourth month onwards | Bone marrow |
+| Birth | Marrow throughout the skeleton is active; hepatic haematopoiesis dwindles |
+| After puberty | Restricted to the axial skeleton; in adults only about half of the marrow space is active |
 
 ## Where does extramedullary haemopoiesis occur?
 
-Extramedullary haemopoiesis is blood cell formation outside the bone marrow, occurring mainly in the liver and spleen and also in the lymph nodes, when the marrow cannot meet the demand or has been replaced or damaged.
+Extramedullary haematopoiesis occurs in the **spleen, liver and lymph nodes**, when circulating neoplastic or stressed stem cells settle there.
 
-In the foetus the liver and spleen are the normal sites. In postnatal life they can resume this function whenever there is marked, sustained erythropoietic drive or marrow failure. The conditions in which it appears include severe chronic haemolytic anaemias, particularly β-thalassaemia major (where ineffective erythropoiesis produces massive erythroid expansion and the spleen may reach 1500 g), and sickle cell disease; myelofibrosis and the spent phase of myeloproliferative neoplasms; myelophthisic anaemia due to metastatic cancer or granulomatous disease; and, rarely, severe megaloblastic anaemia. The liver, spleen and lymph nodes are enlarged, and in extreme cases extraosseous masses develop in the thorax (paravertebral), abdomen and pelvis. Because the foci release immature cells prematurely, the blood film shows nucleated red cells and immature granulocytes (a leukoerythroblastic picture), and teardrop cells appear when the marrow is fibrotic.
-
+- **Chronic myeloid leukaemia:** spleen greatly enlarged from extramedullary haematopoiesis; mild hepatomegaly and lymphadenopathy.
+- **Polycythaemia vera, spent phase:** spleen and liver, with prominent organomegaly.
+- **Primary myelofibrosis:** spleen, liver and lymph nodes, as marrow fibrosis displaces haematopoiesis.
+- **Severe beta-thalassaemia:** liver, spleen and lymph nodes; in extreme cases extraosseous masses in the thorax, abdomen and pelvis.
 
 ## Write the developmental stages of RBC.
 
@@ -7611,61 +7572,42 @@ Dividing cells (myeloblast to myelocyte) form the mitotic pool, and the nondivid
 
 ## Information you can get from a stained peripheral blood film.
 
-A stained peripheral blood film gives direct information on the size, shape, colour and inclusions of red cells, the differential count and morphology of white cells, the number and morphology of platelets, and the presence of abnormal cells or parasites, and it is the single most useful starting point for diagnosing a haematological disorder.
-
-Red cells: size (normocytic, microcytic, macrocytic) and variation in size (anisocytosis); degree of haemoglobinisation (normochromic or hypochromic) and polychromasia (young cells, reticulocytosis); shape and variation in shape (poikilocytosis), including spherocytes, elliptocytes, target cells, sickle cells, teardrop cells, schistocytes (fragmented cells that point to microangiopathic or mechanical haemolysis), bite cells and burr cells; inclusions such as basophilic stippling, Howell-Jolly bodies (as in asplenia), Pappenheimer bodies, and Heinz bodies (with supravital stain); rouleaux formation and agglutination; and circulating nucleated red cells. Together with the red cell indices, these features allow classification of the anaemia and often point to the cause.
-
-White cells: the differential count; morphology of neutrophils (hypersegmentation in megaloblastic anaemia, toxic granulation and Döhle bodies in sepsis, left shift); presence of immature cells, blasts or atypical lymphocytes; and smear cells in chronic lymphocytic leukaemia.
-
-Platelets: an estimate of number, which must be correlated with the electronic count since clumping causes spurious thrombocytopenia, and morphology such as giant platelets in accelerated thrombopoiesis.
-
-Parasites and other findings: malaria parasites, microfilariae, babesia and trypanosomes.
-
+- **Red cell size, colour and shape:** normocytic, microcytic or macrocytic; normochromic or hypochromic; red cell shape is assessed by visual inspection of the smear.
+- Examples of shape: spherocytes in hereditary spherocytosis, sickled cells in sickle cell anaemia, macro-ovalocytes in megaloblastic anaemia, hypochromic microcytic cells in iron deficiency.
+- **Reticulocytes:** larger, with blue-red polychromatophilic cytoplasm from RNA.
+- **Rouleaux formation:** red cells stuck in linear arrays, from high M protein.
+- **White cells:** toxic granulation, Döhle bodies and vacuoles in sepsis; immature granulocytes (leukaemoid reaction, chronic myeloid leukaemia); blasts in acute leukaemia; increased basophils.
+- **Platelets:** abnormally large platelets in polycythaemia vera.
 
 ## What are red cell indices?
 
-Red cell indices are calculated or measured values that describe the average size, haemoglobin content and haemoglobin concentration of red cells, together with the variation in their size, and they are used to classify anaemias.
+Red cell indices describe the red cells measured by special instrumentation.
 
-They are derived from three primary measurements: the haemoglobin concentration (Hb), the red cell count (RBC) and the haematocrit or packed cell volume (Hct/PCV); modern analysers measure the MCV and RBC directly and calculate the Hct.
-
-- **Mean cell volume (MCV):** the average volume of a red cell in femtolitres. MCV = Hct (%) × 10 ÷ RBC (× 10¹²/L). Reference range 82 to 96 fL.
-- **Mean cell haemoglobin (MCH):** the average mass of haemoglobin per red cell in picograms. MCH = Hb (g/dL) × 10 ÷ RBC (× 10¹²/L). Reference range 27 to 33 pg.
-- **Mean cell haemoglobin concentration (MCHC):** the average concentration of haemoglobin in a given volume of packed red cells, in g/dL. MCHC = Hb (g/dL) × 100 ÷ Hct (%). Reference range 33 to 37 g/dL.
-- **Red cell distribution width (RDW):** the coefficient of variation of red cell volume, a numerical expression of anisocytosis. Reference range 11.5% to 14.5%.
-
-Reference ranges vary among laboratories, and the range of the laboratory issuing the result should be used.
-
+| Index | Meaning | Adult reference range |
+|---|---|---|
+| **Mean cell volume (MCV)** | Average volume of a red cell, in femtolitres | 82 to 96 fL |
+| **Mean cell haemoglobin (MCH)** | Average haemoglobin content (mass) per red cell, in picograms | 27 to 33 pg |
+| **Mean cell haemoglobin concentration (MCHC)** | Average concentration of haemoglobin in a given volume of packed red cells, in g/dL | 33 to 37 g/dL |
+| **Red cell distribution width (RDW)** | Coefficient of variation of red cell volume | 11.5 to 14.5 |
 
 ## Importance of red cell indices.
 
-Red cell indices allow the morphological classification of anaemia into microcytic hypochromic, normocytic normochromic and macrocytic types, which narrows the differential diagnosis and directs further investigation.
-
-Their value lies in the following. The MCV and MCH classify anaemia: a low MCV and MCH (microcytic hypochromic) point to disorders of haemoglobin synthesis, namely iron deficiency, thalassaemia, anaemia of chronic inflammation and sideroblastic anaemia; a normal MCV (normocytic, normochromic) is seen in acute blood loss, most haemolytic anaemias, aplastic anaemia, renal failure and many chronic diseases; and a high MCV (macrocytic) is seen in megaloblastic anaemia and in nonmegaloblastic causes such as liver disease, alcohol excess, hypothyroidism and reticulocytosis. The RDW separates conditions with uniform red cells (such as thalassaemia trait, where the RDW is relatively normal) from those with heterogeneous populations (iron deficiency, where it is raised, and mixed deficiencies). The MCHC is raised in hereditary spherocytosis because of cellular dehydration, a useful clue, and in cold agglutinin disease as an artefact. The indices help to monitor response to treatment, for example the appearance of a normocytic population in a patient with iron deficiency who is responding to iron, and may reveal a problem before anaemia develops. A simple derived index, the Mentzer index (MCV ÷ RBC count), is below 13 in thalassaemia trait and above 13 in iron deficiency.
-
+- They are the most useful measurements in the **morphological classification of anaemia**, giving clues to the cause.
+- **MCV** classifies red cells as normocytic, microcytic or macrocytic; **MCH and MCHC** reflect haemoglobinisation, normochromic or hypochromic.
+- **Microcytic hypochromic anaemias** are caused by disorders of haemoglobin synthesis, for example iron deficiency and thalassaemia.
+- **Macrocytic anaemias** often stem from abnormalities that impair maturation of erythroid precursors in the marrow, for example megaloblastic anaemia.
+- **Normochromic normocytic anaemias** have diverse causes.
+- **RDW** reflects variation in red cell size (anisocytosis).
 
 ## Normal haemoglobin level in different age groups / influence of age and sex on Hb estimation.
 
-The normal haemoglobin is about 13.6 to 17.2 g/dL in adult males and 12.0 to 15.0 g/dL in adult females, and it is high at birth, falls to a nadir in infancy, and then rises gradually to adult values at puberty, where the sex difference appears.
-
-Approximate reference values (laboratory-specific) are:
-
 | Group | Haemoglobin (g/dL) |
 |---|---|
-| Cord blood / newborn | 14 to 20 (mean about 17 to 18) |
-| 2 to 3 months (physiological nadir) | 9.5 to 12.5 |
-| 6 months to 6 years | 11 to 14 |
-| 6 to 12 years | 11.5 to 15.5 |
-| Adult female | 12.0 to 15.0 |
 | Adult male | 13.6 to 17.2 |
+| Adult female | 12.0 to 15.0 |
 
-Factors influencing the value:
-
-- **Age:** the newborn has a high Hb with predominant foetal haemoglobin, produced in the hypoxic intrauterine environment; the postnatal fall (physiological anaemia of infancy) reflects the switch from foetal to adult haemoglobin, suppression of erythropoietin when oxygen supply improves, and shortened survival of foetal red cells. Values are slightly lower in the very old.
-- **Sex:** after puberty males have higher values because androgens stimulate erythropoietin production and erythropoiesis, while females lose iron in menstruation and have lower iron stores.
-- **Other factors:** altitude and smoking (raise Hb); pregnancy (physiological fall caused by plasma volume expansion, with anaemia defined as Hb below 11 g/dL); hydration and plasma volume changes, since Hb correlates with red cell mass only when plasma volume is normal; posture and time of day.
-
-For diagnosing anaemia the WHO uses thresholds of below 13 g/dL in men, below 12 g/dL in nonpregnant women and below 11 g/dL in pregnant women and young children.
-
+- Anaemia is usually diagnosed from reductions in haematocrit and haemoglobin concentration below the normal range.
+- Haemoglobin correlates with red cell mass except when plasma volume changes, as in fluid retention or dehydration.
 
 ## What information can you get from a stained PBF?
 
@@ -7790,37 +7732,28 @@ Limitations: the MCV is an average and can be normal when microcytic and macrocy
 
 ## Indications of bone marrow biopsy / aspiration / examination.
 
-Bone marrow examination is indicated to investigate unexplained abnormalities of the peripheral blood, particularly cytopenias, to diagnose and stage haematological malignancies, and to detect marrow infiltration and certain infections or storage diseases.
-
-The main indications are:
-
-1. **Unexplained cytopenias:** pancytopenia, unexplained anaemia, leukopenia or thrombocytopenia not explained by other tests, to distinguish aplastic anaemia (hypocellular marrow) from marrow replacement or ineffective haemopoiesis.
-2. **Suspected or known haematological malignancy:** acute leukaemia, chronic myeloid leukaemia, myelodysplastic neoplasms, myeloproliferative neoplasms and multiple myeloma; also for subclassification by cytochemistry, flow cytometry, cytogenetics and molecular tests, and for monitoring remission or relapse and minimal residual disease.
-3. **Staging of lymphomas** and detection of marrow infiltration by metastatic carcinomas, which gives a myelophthisic picture.
-4. **Megaloblastic anaemia** when the diagnosis is uncertain, and assessment of iron stores when other tests are inconclusive.
-5. **Infections:** visceral leishmaniasis (kala-azar), miliary tuberculosis, disseminated fungal infections, enteric fever and pyrexia of unknown origin, for culture and demonstration of organisms.
-6. **Storage disorders** such as Gaucher disease, and haemophagocytic lymphohistiocytosis.
-7. **Idiopathic thrombocytopenic purpura** in selected situations, mainly to exclude marrow failure or other primary marrow disease in older patients or before splenectomy, rather than for routine diagnosis.
-8. **Myelofibrosis and other conditions** where trephine biopsy is necessary because aspiration yields a dry tap.
-
+- **Leukaemias:** acute leukaemias in adults; essential to exclude acute leukaemia, aleukaemic leukaemia and myelodysplastic neoplasm in pancytopenic patients.
+- **Multiple myeloma** and **Waldenström macroglobulinaemia**: definitive diagnosis of myeloma requires bone marrow examination.
+- **Bone marrow metastases** and some storage diseases.
+- **Aplastic anaemia:** diagnosis rests on bone marrow biopsy.
+- Agranulocytosis, immune thrombocytopenic purpura and hypersplenism.
+- **Staging of Hodgkin lymphoma** (bone marrow biopsy).
+- **Trephine biopsy** is added when no marrow is aspirated despite repeated attempts (dry tap or blood tap), in bone marrow necrosis, metabolic bone disease and when looking for metastases.
 
 ## How is trephine biopsy done?
 
-Trephine biopsy is performed by inserting a wide-bore Jamshidi needle through the posterior iliac crest under local anaesthesia and removing a core of bone and marrow, which is then fixed, decalcified and sectioned.
-
-After explaining the procedure and obtaining informed consent, the patient is placed in the lateral or prone position. The site, usually the posterior superior iliac spine, is cleaned and draped, and local anaesthetic is infiltrated down to the periosteum. A small skin incision is made and the biopsy needle, with its stylet locked in place, is advanced through the soft tissue to the cortex. The stylet is removed, and the needle is advanced with a gentle rotating (clockwise-anticlockwise) movement for about 2 cm into the marrow cavity. The needle is rotated several times to cut the base of the core and then withdrawn, and the core is expelled with a probe through the back of the needle. A core at least 1.5 to 2 cm long is needed for adequate evaluation. Firm pressure is applied until bleeding stops and a dressing is placed.
-
-When both procedures are done, the aspirate is taken first and the trephine second, from a different site on the same bone. The core is used to make touch imprints, fixed in formalin or Zenker's solution, decalcified and processed. Sections are stained with haematoxylin and eosin, reticulin (for fibrosis), and Prussian blue where appropriate, and immunohistochemistry may be performed. Trephine biopsy gives information on cellularity, architecture, fibrosis, focal infiltrates and the megakaryocytes, which an aspirate cannot reliably provide.
-
+- **Trephine biopsy** takes a core of bone marrow with a long hollow needle; a guidewire pushes the specimen out from the sharp end, which avoids crushing the marrow.
+- The usual site in adults is the **posterior iliac crest**; aspiration is usually from the sternum or iliac crest.
+- Aspiration and trephine biopsy are complementary and together give a higher diagnostic yield.
+- It is used when aspiration fails (dry tap or blood tap); aplasia, for example, is best appreciated in marrow biopsies.
 
 ## What do you mean by blood tap and dry tap?
 
-A dry tap is a failure to obtain any marrow cells on aspiration despite a correctly performed procedure, while a blood tap is an aspirate that is diluted with or consists mainly of peripheral blood and so is unsuitable for assessing the marrow.
+**Dry tap or blood tap:** failure to obtain marrow particles on bone marrow aspiration; reported in 2.7% to 10% of aspirates.
 
-A **dry tap** means that no marrow can be aspirated even though the needle is correctly placed. It points to a marrow in which the cells are packed so tightly or entangled in fibres that they cannot be sucked out, or to an almost empty marrow. The common causes are myelofibrosis, aplastic anaemia (the marrow is replaced by fat, a "dry tap" being typical, so that aplasia is best assessed on trephine biopsy), hairy cell leukaemia, packed marrow in acute leukaemia and lymphoma, and marrow infiltration by metastatic carcinoma. A technical failure, such as the needle not being in the marrow cavity, must be excluded. A trephine biopsy should always follow.
-
-A **blood tap** (or "haemodiluted" aspirate) is one that is contaminated or diluted with peripheral blood, either because of a too-large volume being aspirated (more than 0.5 to 1 mL at a time), or because the marrow is very vascular. It shows no marrow particles (spicules), and the proportions of cells are not reliable. The procedure should be repeated from another site or with a smaller aspirate volume.
-
+- It is a red flag for underlying marrow pathology rather than only a failed procedure; in one series 93.7% had an underlying bone marrow pathology and 6.3% a faulty technique.
+- Causes include acute lymphoblastic leukaemia (commonest in children), non-Hodgkin lymphoma and metastatic tumours (commonest in the elderly), marrow fibrosis, and aplastic anaemia.
+- **The trephine biopsy must always be studied** in such cases.
 
 ## How can bone marrow be examined?
 
@@ -7903,60 +7836,59 @@ Others include chronic myeloid leukaemia and polycythaemia vera with marrow fibr
 
 ## What is anemia?
 
-Anaemia is a reduction in the total circulating red cell mass below normal limits, which in practice is diagnosed by a haemoglobin concentration or haematocrit below the reference range for the age and sex of the patient, and which leads to reduced oxygen-carrying capacity of the blood and tissue hypoxia.
-
-Because direct measurement of the red cell mass is not easy, anaemia is diagnosed from reductions in the haemoglobin concentration and the haematocrit, which correlate with the red cell mass except when the plasma volume is altered by fluid retention (as in pregnancy, causing a dilutional fall) or dehydration (which masks anaemia). The working thresholds are a haemoglobin below 13 g/dL in men, below 12 g/dL in nonpregnant women and below 11 g/dL in pregnant women and young children (Robbins reference ranges: males 13.6 to 17.2 g/dL, females 12.0 to 15.0 g/dL).
-
-Anaemia may result from blood loss, increased red cell destruction (haemolysis) or decreased red cell production (Table of mechanisms), and may be further described by red cell size (microcytic, normocytic, macrocytic), haemoglobinisation (hypochromic, normochromic) and shape. When severe enough, anaemia causes weakness, malaise, easy fatigability and dyspnoea on mild exertion; pallor; fatty change in the liver, myocardium and kidney; angina in patients with coronary disease; and headache, dimness of vision and faintness from central nervous system hypoxia. Acute massive blood loss additionally causes hypovolaemic shock, and in intravascular and extravascular haemolysis jaundice and splenomegaly appear respectively.
-
+**Anaemia** is a reduction of the total circulating red cell mass below normal limits.
 
 ## Morphological types of anaemia.
 
-On the basis of red cell size and haemoglobin content, anaemia is classified morphologically into microcytic hypochromic, normocytic normochromic and macrocytic types.
+1. **Microcytic hypochromic:** red cells small and with reduced haemoglobin.
+2. **Normocytic normochromic.**
+3. **Macrocytic:** red cells large.
 
-The classification rests on the red cell indices (MCV, MCH, MCHC) and the peripheral blood film.
-
-| Type | MCV | MCH / MCHC | Underlying defect |
-|---|---|---|---|
-| Microcytic hypochromic | Low (below 80 fL) | Low | Disorders of haemoglobin synthesis (iron, globin or haem) |
-| Normocytic normochromic | Normal (82–96 fL) | Normal | Acute blood loss, haemolysis, marrow failure, renal disease, many chronic diseases |
-| Macrocytic | High (above 96–100 fL) | MCH raised, MCHC normal | Impaired DNA synthesis (megaloblastic) or increased red cell membrane lipid / young cells (non-megaloblastic) |
-
-A fourth, "dimorphic" pattern, with two populations of red cells (for example, combined iron and B₁₂ deficiency or treated iron deficiency), is recognised by a raised RDW and a film showing both microcytic and macrocytic cells. Characteristic abnormalities of red cell shape on the film frequently give a further clue to the cause.
-
+Classification rests on red cell size (normocytic, microcytic, macrocytic), degree of haemoglobinisation shown by colour (normochromic, hypochromic), and shape.
 
 ## Examples of each morphological type.
 
-Iron deficiency and thalassaemia are the commonest microcytic hypochromic anaemias, acute blood loss and most haemolytic anaemias are normocytic normochromic, and megaloblastic anaemia due to B₁₂ or folate deficiency is the classical macrocytic anaemia.
-
-- **Microcytic hypochromic:** iron deficiency anaemia (the most common), thalassaemia syndromes (α and β), anaemia of chronic inflammation (often normocytic but may be slightly microcytic and hypochromic), sideroblastic anaemia, lead poisoning, and the rare iron-refractory iron deficiency anaemia from TMPRSS6 mutations.
-- **Normocytic normochromic:** acute blood loss, haemolytic anaemias (hereditary spherocytosis, G6PD deficiency, sickle cell disease, autoimmune haemolytic anaemia, microangiopathic haemolysis), aplastic anaemia (usually slightly macrocytic), pure red cell aplasia, anaemia of chronic inflammation, anaemia of renal failure, endocrine disorders (such as hypothyroidism), marrow infiltration (myelophthisic anaemia) and the dilutional anaemia of pregnancy.
-- **Macrocytic:** megaloblastic anaemias (vitamin B₁₂ deficiency including pernicious anaemia, folate deficiency, drugs interfering with DNA synthesis such as methotrexate); and non-megaloblastic causes, namely chronic liver disease, alcohol excess, hypothyroidism, myelodysplastic neoplasms, aplastic anaemia, and reticulocytosis in haemolysis or haemorrhage.
-
+| Morphological type | Examples |
+|---|---|
+| **Microcytic hypochromic** | Iron deficiency anaemia; thalassaemia |
+| **Macrocytic** | Megaloblastic anaemia from vitamin B12 and folate deficiency |
+| **Normocytic normochromic** | Acute blood loss; anaemia of chronic inflammation, whose cells may be normocytic and normochromic or slightly hypochromic and microcytic |
 
 ## Pathophysiological categories of anaemia.
 
-Anaemia is classified by mechanism into three broad groups: blood loss, increased red cell destruction (haemolysis), and decreased red cell production.
-
-| Mechanism | Subtypes and examples |
-|---|---|
-| Blood loss | Acute (trauma); chronic (gastrointestinal lesions, gynaecological disturbances, which usually lead to iron deficiency anaemia) |
-| Increased red cell destruction (haemolysis) | Inherited: membrane defects (hereditary spherocytosis, elliptocytosis); enzyme deficiencies (G6PD, pyruvate kinase); haemoglobin abnormalities (thalassaemia, sickle cell disease and other haemoglobinopathies). Acquired: paroxysmal nocturnal haemoglobinuria; antibody-mediated (immunohaemolytic anaemia, haemolytic disease of the newborn, transfusion reactions); mechanical trauma (microangiopathic haemolysis in DIC, HUS, TTP; defective cardiac valves); infections (malaria, babesiosis); toxic injury (clostridial sepsis, snake venom, lead); membrane lipid abnormalities; hypersplenism |
-| Decreased red cell production | Inherited: stem cell defects (Fanconi anaemia, telomerase defects); erythroblast maturation defects (thalassaemia). Nutritional: B₁₂ and folate deficiency (DNA synthesis), iron deficiency (haemoglobin synthesis). Other: erythropoietin deficiency (renal failure), immune-mediated progenitor injury (aplastic anaemia, pure red cell aplasia), inflammation-mediated iron sequestration (anaemia of chronic inflammation), primary haematopoietic neoplasms, space-occupying marrow lesions (myelophthisis), parvovirus B19 infection, endocrine and liver disease |
-
+1. **Blood loss**
+   - Acute: trauma.
+   - Chronic: gastrointestinal lesions, gynaecological disturbances.
+2. **Increased red cell destruction (haemolysis)**
+   - Inherited: membrane disorders, enzyme deficiencies, haemoglobin abnormalities.
+   - Acquired: paroxysmal nocturnal haemoglobinuria, antibody-mediated, mechanical trauma, infections of red cells, toxic injury, membrane lipid abnormalities, sequestration (hypersplenism).
+3. **Decreased red cell production**
+   - Inherited defects, nutritional deficiencies, erythropoietin deficiency, immune-mediated injury of progenitors, inflammation-mediated iron sequestration, primary haematopoietic neoplasms, space-occupying marrow lesions, infections of red cell progenitors, unknown mechanisms.
 
 ## Causes of anaemia.
 
-The causes of anaemia are blood loss, increased destruction of red cells, and decreased production of red cells, and in many patients more than one mechanism contributes.
-
-Blood loss. Acute haemorrhage (trauma, surgery, obstetric haemorrhage) produces a normocytic anaemia once the blood volume has been restored by shift of interstitial fluid. Chronic blood loss (peptic ulcer, gastrointestinal malignancy, haemorrhoids, hookworm infestation, menorrhagia) depletes iron stores and leads to iron deficiency anaemia.
-
-Increased destruction (haemolysis). The red cell lifespan is shortened below 120 days owing to intrinsic defects (hereditary spherocytosis, G6PD deficiency, pyruvate kinase deficiency, sickle cell disease, thalassaemia, PNH) or extrinsic factors (autoantibodies and alloantibodies, mechanical injury by prosthetic valves or microangiopathy, malaria, drugs, toxins and hypersplenism). Marrow compensation produces reticulocytosis, but anaemia develops when the destruction outpaces production.
-
-Decreased production. Deficiency of iron, vitamin B₁₂ or folate; marrow failure (aplastic anaemia, pure red cell aplasia, marrow replacement by leukaemia, lymphoma, metastases or granulomas); myelodysplastic neoplasms; decreased erythropoietin in chronic renal failure; chronic inflammation, infection and malignancy (inflammatory cytokines raise hepcidin and trap iron in macrophages); endocrine disorders (hypothyroidism); chronic liver disease; and drugs, toxins and radiation.
-
-Dilutional. Expansion of plasma volume in pregnancy and in splenomegaly lowers the haemoglobin concentration without a true fall in the red cell mass.
-
+| Mechanism | Specific examples |
+|---|---|
+| **Acute blood loss** | Trauma |
+| **Chronic blood loss** | Gastrointestinal tract lesions, gynaecological disturbances |
+| **Red cell membrane disorders** | Hereditary spherocytosis, hereditary elliptocytosis |
+| **Enzyme deficiencies** | G6PD deficiency, glutathione synthetase deficiency, pyruvate kinase deficiency, hexokinase deficiency |
+| **Haemoglobin abnormalities** | Thalassaemia syndromes; sickle cell disease, unstable haemoglobins |
+| **Acquired defects** | Paroxysmal nocturnal haemoglobinuria |
+| **Antibody-mediated destruction** | Haemolytic disease of the newborn, transfusion reactions, drug-induced, autoimmune disorders |
+| **Mechanical trauma** | Microangiopathic haemolytic anaemias (haemolytic uraemic syndrome, disseminated intravascular coagulation, thrombotic thrombocytopenic purpura); defective cardiac valves; repetitive physical trauma |
+| **Infections of red cells** | Malaria, babesiosis |
+| **Toxic or chemical injury** | Clostridial sepsis, snake venom, lead poisoning |
+| **Membrane lipid abnormalities** | Abetalipoproteinaemia, severe hepatocellular liver disease |
+| **Sequestration** | Hypersplenism |
+| **Stem cell depletion** | Fanconi anaemia, telomerase defects |
+| **Nutritional deficiencies** | Vitamin B12 and folate deficiency; iron deficiency |
+| **Erythropoietin deficiency** | Renal failure, anaemia of chronic inflammation |
+| **Immune-mediated injury of progenitors** | Aplastic anaemia, pure red cell aplasia |
+| **Primary haematopoietic neoplasms** | Acute leukaemia, myelodysplastic syndrome, myeloproliferative neoplasms |
+| **Space-occupying marrow lesions** | Metastatic neoplasms, granulomatous disease |
+| **Infections of red cell progenitors** | Parvovirus B19 infection |
+| **Unknown mechanisms** | Endocrine disorders, hepatocellular liver disease |
 
 ## How will you investigate a case of anaemia?
 
