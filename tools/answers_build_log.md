@@ -380,3 +380,4 @@ Questions: causes of IDA in infants and children, laboratory findings and bioche
 - Differentiating microcytic hypochromic anaemias: the textbook gives no iron indices for thalassaemia trait, shown as "not stated".
 - Normoblastic (nonmegaloblastic) macrocytic causes: only liver disease, aplastic anaemia and reticulocytosis are named; alcohol, hypothyroidism and drugs are left out.
 - Progress file lists 665 questions done; 470 remain.
+- sw.js VERSION bumped to v149 after batch 5; build and manifests regenerated; tests not run, at the owner's request.
