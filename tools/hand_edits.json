@@ -14,13 +14,6 @@
   "post": "<style id=\"zz-perf\">@media (min-width:70"
  },
  {
-  "old": "<ol start=\"4\">",
-  "new": "<ol>",
-  "nth": 0,
-  "pre": "/ol><h4 class=\"sub\">Hepatic failure</h4>",
-  "post": "<li><strong>Hepatic encephalopathy</stro"
- },
- {
   "old": "<ol start=\"12\">",
   "new": "<ol>",
   "nth": 0,
