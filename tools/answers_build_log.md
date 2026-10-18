@@ -476,3 +476,28 @@ Ascites causes combine Chapter 18 (portal hypertension table text, 85% cirrhosis
 - Male case with gynaecomastia: the textbook does not link this to a specific cause (for example alcohol), so none is stated.
 - Liver function tests: the textbook (Table 18.1) gives direction of change only, no normal values.
 - Hand-edit hunk 3 of tools/hand_edits.json (numbering fix before the Hepatic encephalopathy item in the old cirrhosis complications answer) dropped because its anchor text was rewritten (11 down to 10). Hunk 3 of the remaining 10 (numbering fix before the Hepatocellular carcinoma item in the same answer) also dropped (10 down to 9).
+
+## Session 16, Chapters 18 and 20 (work list items 1 to 75)
+
+### Batch 1 (Chapter 18: hepatocellular carcinoma to physiological jaundice)
+
+Sources: the site textbook (tools/textbook_src/ch18.json) for all answers. No answer in this batch was previously empty.
+
+Outside sources used:
+
+| Question | Source | URL |
+|---|---|---|
+| What are the liver function tests (names, normal values; short note)? | StatPearls, Liver Function Tests (reference ranges, test notes) | https://www.ncbi.nlm.nih.gov/books/NBK482489/ |
+| Name synthetic liver function tests. | StatPearls, Liver Function Tests (albumin and prothrombin time as synthetic tests) | https://www.ncbi.nlm.nih.gov/books/NBK482489/ |
+| Name two causes of raised prothrombin time. | Textbook for liver failure and cholestasis with vitamin K malabsorption; StatPearls (above) for vitamin K deficiency as a cause of prolonged prothrombin time | https://www.ncbi.nlm.nih.gov/books/NBK482489/ |
+| Why is prothrombin time more specific than total protein estimation? | StatPearls (above) for albumin being slow to change and nonspecific; textbook for hyperglobulinaemia in chronic hepatitis | https://www.ncbi.nlm.nih.gov/books/NBK482489/ |
+| Give the differences between hemolytic and obstructive jaundice. | MSD Manual Professional, Jaundice (laboratory pattern table: urine bilirubin, aminotransferases, alkaline phosphatase, GGT, bilirubin level) | https://www.msdmanuals.com/professional/hepatic-and-biliary-disorders/approach-to-the-patient-with-liver-disease/jaundice |
+
+Points left out:
+
+- Liver function tests: the textbook table of liver function tests (Table 18.1) has no cell text in the source file, so the reference ranges come from StatPearls only; the textbook adds the bilirubin range (0.3 to 1.2 mg/dL).
+- Half-lives of albumin and of clotting factors (for the prothrombin time question): not in the textbook or in the StatPearls page, so left out.
+- Hepatocellular carcinoma work-up: the textbook does not mention liver biopsy, so biopsy is left out.
+- Hepatocellular carcinoma etiology: HBx protein and driver mutations are left out as mechanism rather than etiology.
+- Haemolytic versus obstructive jaundice: urine urobilinogen and stool colour for haemolytic jaundice are not given in the textbook or in the MSD table, so these rows are left out.
+- Provisional diagnosis case: hepatitis A and E are not mentioned as differentials because the textbook ties the case to parenteral spread.
