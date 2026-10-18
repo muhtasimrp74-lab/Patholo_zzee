@@ -353,3 +353,13 @@ Questions: myeloma bone marrow and ESR, Bence Jones short note, generalised and 
 - Blood tap: no source separates it from a dry tap, so both are described together.
 - ESR in myeloma: see batch 1; ESR itself is not in the textbook.
 - Examples of morphological types of anaemia: only those the textbook states are given.
+
+### Session 10 housekeeping
+- Batch 1 rewrote 23 answers (indices 0 to 18 plus the shared texts for 42, 45, 49 and 54), not 18 as its heading says; batch 2 rewrote 23; batch 3 rewrote 24. Total 70, all from Chapter 13 (to the end of its list) and the start of Chapter 14 (anaemia introduction).
+- All 70 questions already had an answer, so none were previously empty.
+- Progress file lists 650 questions done (580 before this session, plus 70). 485 remain.
+
+### Session 10 end checks
+- build.py run twice: index.html byte-identical.
+- VERSION in sw.js bumped by 1; build.py, gen_manifests.py and build.py run again.
+- tools/tests/test_site.py not run this session, at the owner's request.
