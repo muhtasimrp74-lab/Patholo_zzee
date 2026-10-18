@@ -42,20 +42,6 @@
 "post": "<li><strong>Retinopathy:</strong> non-pr"
 },
 {
-"old": "E a round/oval mass of intensely eosinophilic cytoplasm with dense nuclear fragments.<ul>",
-"new": "E a round/oval mass of intensely eosinophilic cytoplasm with dense nuclear fragments.</li></ol><ul>",
-"nth": 0,
-"pre": "id ingestion by macrophages<br>on H&amp;",
-"post": "<li>Because of rapid clearance and absen"
-},
-{
-"old": "</li></ol>",
-"new": "",
-"nth": 0,
-"pre": " it is visible histologically.</li></ul>",
-"post": "<!--fa3--><!--fa2--><!--fa1--></div></ar"
-},
-{
 "old": " degrade or transport — e.g., carbon, silica.<ul>",
 "new": " degrade or transport — e.g., carbon, silica.</li></ol><ul>",
 "nth": 0,
