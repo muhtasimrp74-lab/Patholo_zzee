@@ -701,3 +701,25 @@ The site textbook does not cover Clinical Biochemistry, so all answers use outsi
 
 ### Housekeeping (batch 3)
 - tools/hand_edits.json: one hunk removed (the chloride 98 to 107 mmol/L fix in the old electrolytes answer; that text no longer exists). 6 remain.
+
+## Session 20, batch 1 (work-list questions 1 to 8, Chapter 30: calcium, enzymes, ALT, AST, PSA, amylase, acid phosphatase, CK-MB; outside sources)
+
+The site textbook does not cover Clinical Biochemistry, so all answers use outside sources. None of these answers were previously empty.
+
+| Question | Source | URL |
+|---|---|---|
+| Clinical importance of serum calcium | StatPearls "Hypocalcemia" (normal range, causes, features); StatPearls "Physiology, Calcium" (distribution, hypercalcaemia, diagnostic approach) | https://www.ncbi.nlm.nih.gov/books/NBK430912/ ; https://www.ncbi.nlm.nih.gov/books/NBK482128/ |
+| Indications of enzymes of clinical importance | Esani, Laboratory Medicine 2014 (detecting, localising, quantifying damage); "Clinical Enzymology" lecture document, NISCPR repository (remaining indications) | https://researchexperts.utmb.edu/en/publications/the-physiological-sources-of-clinical-significance-of-and-laborat/ ; https://nsdl.niscpr.res.in/bitstream/123456789/697/1/ClinicalEnzymology.pdf |
+| Clinical importance of ALT; of AST | StatPearls "Liver Function Tests" (AST and ALT) | https://www.ncbi.nlm.nih.gov/books/NBK482489/ |
+| Clinical importance of PSA | StatPearls "Prostate-Specific Antigen" (David and Leslie) | https://www.ncbi.nlm.nih.gov/books/NBK557495/ |
+| Clinical importance of serum amylase | StatPearls "Analytical and Clinical Perspectives on Amylase" | https://www.ncbi.nlm.nih.gov/books/NBK557738/ |
+| Clinical importance of acid phosphatase | StatPearls "Acid Phosphatase" | https://www.ncbi.nlm.nih.gov/books/NBK556039 |
+| Clinical importance of CK-MB | StatPearls "Creatine Phosphokinase" (Aujla, Zubair, Patel); NISCPR "Clinical Enzymology" (CK-2 above about 6% of total) | https://www.ncbi.nlm.nih.gov/books/NBK546624/ ; https://nsdl.niscpr.res.in/bitstream/123456789/697/1/ClinicalEnzymology.pdf |
+
+### Points left out and decisions needed
+- Serum calcium: the two StatPearls pages give slightly different total ranges (8.5 to 10.5 mg/dL on the hypocalcaemia page; 8.8 to 10.4 mg/dL on the physiology page). The hypocalcaemia page range (2.12 to 2.62 mmol/L) is used. The hypercalcaemia section in the sources is short, so other causes (for example vitamin D excess, thiazides, immobilisation) are left out because no source read states them.
+- Enzymes indications: the NISCPR lecture document is not a standard textbook. It supplies the indications beyond tissue damage (diagnosis, prognosis, liver course, pancreas and salivary glands, cholinesterase). Please decide whether it is acceptable or whether a textbook source should replace it.
+- CK-MB: the CK-2 above about 6% of total CK figure is from the same NISCPR document. The StatPearls page gives the timing for total CK only (rise 12 hours, peak 24 to 36 hours, normal in 48 to 72 hours), so no CK-MB-specific timing is stated.
+- PSA: the old description of PSA as kallikrein-3 and a serine protease is left out because the StatPearls page does not state it.
+- Amylase: no single normal range exists in the source, so only the reported spread (about 20 to 300 U/L) is given.
+- Acid phosphatase: Paget disease and multiple myeloma (from the NISCPR table) and the sipuleucel-T immunotherapy details are left out as not closely tied to the question.
