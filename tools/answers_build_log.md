@@ -248,3 +248,32 @@ Sources: the site textbook only (Chapter 12 The Heart, Chapter 11 for risk facto
 ### Housekeeping
 - Progress file lists 530 questions done. 605 remain.
 - Site tests were not run. VERSION in sw.js was bumped to v145.
+
+## Session 9, batch 1 (26 answers: Chapter 13 granulopoiesis through laboratory diagnosis of AML)
+
+Questions: granulopoiesis, stages of the granulocytic series, leucocytosis, neutrophilia, eosinophilia, Loeffler syndrome, lymphocytosis (define, causes), leukopenia, neutropenia, agranulocytosis, causes of leucopenia/neutropenia/agranulocytosis, leukaemoid reaction (short note, two comparison tables), subleukaemic leukaemia, leukoerythroblastic blood picture (two questions), define and classify leukaemia, FAB and WHO classification of AML, clinical presentation, laboratory diagnosis of acute leukaemia, AML versus ALL, laboratory diagnosis of AML. None of these was previously empty.
+
+Sources: the site textbook (Chapter 13; Chapter 15 and Chapter 8 for Loeffler syndrome).
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| What is granulopoiesis? | Inflammation Research review, figure legend on granulopoiesis (PMC) | https://pmc.ncbi.nlm.nih.gov/articles/PMC7829132/figure/f0001 |
+| Stages of the granulocytic series. | Pathology Outlines, Bone marrow nonneoplastic: neutrophil maturation; Open Education Alberta, Granulocytes and Granulocyte Maturation; Cancer Metastasis Reviews, neutrophil granulopoiesis figure (PMC) | https://www.pathologyoutlines.com/topic/bonemarrowneutrophilmaturation.html ; https://pressbooks.openeducationalberta.ca/mlsci/chapter/granulocyte-maturation/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC7802614/figure/Fig1 |
+| Define leukaemoid reaction / short note | Radiopaedia, Leukemoid reaction; Taylor and Francis, Leukemoid reaction (haematology reference); Hematopathology chapter, Table 26.5 (PMC) | https://radiopaedia.org/articles/leukemoid-reaction ; https://taylorandfrancis.com/knowledge/Medicine_and_healthcare/Hematology/Leukemoid_reaction ; https://pmc.ncbi.nlm.nih.gov/articles/PMC7151933/table/t0050 |
+| Differences between leukaemoid reaction and leukaemia; and subleukaemic acute leukaemia | same three sources as above | as above |
+| What is subleukaemic leukaemia? | Disease Ontology DOID:12965 | https://informatics.jax.org/disease/DOID:12965 |
+| FAB classification of AML. | IntechOpen chapter on FAB classification; SEER Training Modules, AML morphology | https://www.intechopen.com/chapters/25114 ; https://training.seer.cancer.gov/leukemia/abstract-code-stage/morphology/aml.html |
+
+### Points left out or needing a decision
+- The textbook has no definition of granulopoiesis, no stages of the granulocytic series, no FAB classification and no definition of subleukaemic leukaemia; those come from the outside sources above. The textbook gives only the lone term aleukaemic leukaemia (Chapter 13 AML morphology), which is added to the subleukaemic answer.
+- Define lymphocytosis: the textbook has no stand-alone definition; the wording is built from its list of the five principal types of leukocytosis.
+- Loeffler syndrome: Chapter 15 gives the cause and Chapter 8 the symptoms of the pulmonary form. Loeffler endomyocarditis (Chapter 12) is a different condition and was left out.
+- Units: the textbook text shows white cell counts as "/mL" (for example "100/mL", "100,000 cells/mL"). These are read as per microlitre, the clinical unit, and the figures are unchanged. The neutrophil threshold "500/mL3" is written as 500 per cubic millimetre.
+- WHO Table 13.10 text: the extraction shows ".3%", ".50%", ".20%" and ".80%"; these are read as "more than".
+- Leukaemoid reaction: the textbook only names it. The outside sources do not agree on the white cell threshold (Radiopaedia and the Taylor and Francis entry say more than 50,000 per microlitre; a Bern teaching page says more than 20 x 10^9 per litre). The 50,000 figure was used. Clinical features of leukaemoid reaction were left out because no standard source consulted gave them.
+- Comparison with leukaemia uses chronic myeloid leukaemia as the leukaemia, as the source table does; the leukaemic hiatus row refers to acute leukaemia.
+- Differences between leukaemoid reaction and subleukaemic acute leukaemia: no source gives a ready-made table, so it was assembled from the sources above; the Auer rod and blast percentage rows come from the textbook.
+- Eponyms: Kostmann syndrome is given by its feature (severe congenital neutropenia); Loeffler syndrome is explained in brackets; Dohle bodies are explained as patches of dilated endoplasmic reticulum.
+- Define leukaemia: the textbook sentence is used as printed in Chapter 13 (leukaemias are neoplasms that present with widespread involvement of the bone marrow and usually the blood).
+- AML versus ALL: the periodic acid-Schiff and Auer rod entries for the opposite cell are marked "not described" or "not a feature" where the textbook is silent.
