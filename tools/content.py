@@ -60,11 +60,10 @@ ANSWERS = {}
 # ---- answers.md: one "## <exact question text>" heading per question, then the answer in simple markdown ----
 def _md(t):
     import html as _h
-    def inl(s):   # ***bold italic***, **bold**, *italic* (italic only when the asterisks hug the words)
+    def inl(s):   # **bold** only (no italics anywhere in answer bodies)
         s = _h.escape(s, quote=False)
-        s = _re.sub(r'\*\*\*(.+?)\*\*\*', r'<strong><em>\1</em></strong>', s)
-        s = _re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
-        return _re.sub(r'(?<![\w*])\*(?![\s*])(.+?)(?<![\s*])\*(?![\w*])', r'<em>\1</em>', s)
+        s = _re.sub(r'\*\*\*(.+?)\*\*\*', r'<strong>\1</strong>', s)   # house rule: no italics inside answer bodies
+        return _re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
     out, blocks = [], _re.split(r'\n\s*\n', t.strip())
     cur = [None]   # open numbered list: {'items': [html...], 'start': n, 'last': n}; stays open across nested bullet blocks
     def flush():
@@ -268,7 +267,7 @@ def _merge_dups(out):
                 t = m[1][1]
                 if _plain(t) != _plain(main[1]) and all(_plain(t) != _plain(o) for o in others): others.append(t)
             body = main[2]
-            if others: body = '<p><em>Also asked as:</em> ' + '; '.join(esc(o) for o in others) + '</p>' + body
+            if others: body = '<p>Also asked as: ' + '; '.join(esc(o) for o in others) + '</p>' + body
             merged = (code, main[1], body, 'B', stars, refs, tuple(bs[0][1][6]), {'boxes': bx, 'hl': hl}, surv[4])
             items[surv[0]] = merged
             for m in mem:
