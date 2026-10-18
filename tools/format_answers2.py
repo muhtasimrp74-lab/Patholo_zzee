@@ -12,7 +12,7 @@ from format_answers import TOK, CARD, SKIP_OPEN, SUBJ, PREP
 R = os.path.join(HERE, '..')
 MARK2, MARK1 = '<!--fa2-->', '<!--fa1-->'
 B = lambda s: '<strong>%s</strong>' % s
-I = lambda s: '<em>%s</em>' % s
+I = lambda s: s   # house rule: no italics inside answer bodies (was <em>)
 
 CUES2 = re.compile(r'\b(hallmark|pathognomonic|gold standard|defining feature|key feature|cardinal feature|investigation of choice|'
     r'treatment of choice|drug of choice|first-line|first line|commonest cause|most common cause|leading cause|major cause|'

@@ -27,7 +27,7 @@ def map_text(html, fn):
     return ''.join(out)
 
 B = lambda s: '<strong>%s</strong>' % s
-I = lambda s: '<em>%s</em>' % s
+I = lambda s: s   # house rule: no italics inside answer bodies (was <em>)
 
 # ---------- vocab ----------
 GENERA = ('Mycobacterium|Staphylococcus|Streptococcus|Escherichia|Helicobacter|Salmonella|Shigella|Vibrio|Clostridium|'
