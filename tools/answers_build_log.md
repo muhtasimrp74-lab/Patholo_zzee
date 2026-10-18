@@ -147,3 +147,16 @@ The site textbook (ch04.json) has no section on electrolytes or acid-base disord
 - Severity grades (hypokalaemia mild, moderate, severe; hypercalcaemia mild, moderate, crisis) and the normal calcium ranges for the hypocalcaemia article were left out of the "What is" answers under rule 1 (definition only).
 - Eponyms in these lists (Conn, Liddle, Gitelman, Bartter, Fanconi, Cushing, Addison, DiGeorge, CHARGE, APECED, MELAS) are given as the sources give them; the sources do not explain their meanings, so no meaning was added except Conn syndrome (primary hyperaldosteronism), which the source itself states.
 - The hypocalcaemia source's ionised and corrected calcium values, the hyperkalaemia and hyponatraemia drug lists beyond those quoted, and respiratory alkalosis causes were not used.
+
+## Session 7 (Chapter 4 embolism to Chapter 7; 75 questions)
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| Define gene. | NCBI Bookshelf glossary entry "Gene" (the site textbook, Chapters 1 and 5, never defines a gene) | https://ncbi.nlm.nih.gov/books/NBK5191/def-item/gene |
+
+### Points left out or needing a decision (session 7)
+- "A 40y male lost consciousness with cold clammy skin after severe bleeding in RTA": the textbook gives no explanation of loss of consciousness in hypovolaemic shock, so none was added.
+- "Define gene": the NCBI glossary is not a pathology textbook, StatPearls or a WHO classification; please confirm it is acceptable.
+- "Write a short note on hemorrhagic shock": the textbook has no separate haemorrhagic shock section; the answer is built from the hypovolaemic shock, stages of shock, morphology and clinical features passages.
+- "Two examples of autosomal dominant disorders": Marfan syndrome and familial hypercholesterolaemia were chosen because the textbook states their inheritance as autosomal dominant in so many words; Table 5.1 (list of autosomal dominant disorders) is not in the site textbook source.
