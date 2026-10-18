@@ -542,52 +542,53 @@ After 1 or 2 days the nucleus of the necrotic cell disappears totally.
 
 ## How is depletion of ATP associated with hypoxic cell injury?
 
-Hypoxia stops oxidative phosphorylation in mitochondria, so ATP falls; this fails the Na⁺–K⁺ pump (cell swelling), forces anaerobic glycolysis (glycogen depletion, lactic acid, ↓ pH), causes ribosome detachment and ↓ protein synthesis, and ultimately damage to mitochondrial/lysosomal membranes → necrosis.
+- ATP is produced mainly by oxidative phosphorylation in the mitochondria, in which oxygen is reduced by the electron transport system. In far smaller amounts, ATP is also produced by glycolysis in the absence of oxygen.
+- ATP is required for virtually all synthetic and degradative processes within the cell, including membrane transport, protein synthesis, lipogenesis and phospholipid turnover. Depletion of ATP to 5% to 10% of normal levels has widespread effects on many critical cellular systems.
 
-**Complete explanation**
+**Sequence in hypoxic injury**
 
-- ATP is produced mainly by oxidative phosphorylation (reduces O₂ via electron transport) and, in far smaller amounts, by glycolysis (glucose or glycogen).
-- Causes of ATP depletion: ↓ O₂ and nutrients (ischaemia, hypoxia), mitochondrial damage, toxins (cyanide).
-- ATP is needed for membrane transport, protein synthesis, lipogenesis and phospholipid turnover; depletion to 5–10% of normal has widespread effects.
-- Consequences: Na⁺ pump failure → swelling, ER dilation; ↑ glycolysis with acidosis (↓ pH inhibits enzymes); ribosome detachment; ↑ protein misfolding; ROS formation; irreversible mitochondrial and lysosomal membrane damage → necrosis.
-
+1. Reduced supply of oxygen and nutrients, as in ischaemia and hypoxia, stops oxidative phosphorylation. ATP decreases and adenosine monophosphate increases.
+2. These changes stimulate phosphorylase and phosphofructokinase, which increase glycogenolysis and glycolysis. Glycogen stores are rapidly depleted.
+3. Anaerobic glycolysis leads to accumulation of lactic acid and inorganic phosphates. This reduces the intracellular pH and decreases the activity of many cytosolic enzymes.
+4. The sodium-potassium pump of the plasma membrane (Na+,K+-ATPase) is reduced. Sodium enters and accumulates inside the cell and potassium falls. Osmotically driven water accumulation leads to cell swelling and ER dilation.
+5. With prolonged ATP depletion, ribosomes detach from the rough ER and polysomes dissociate, so protein synthesis is reduced. Protein misfolding may increase.
+6. Mitochondrial damage opens the mitochondrial permeability transition pore, with loss of mitochondrial membrane potential, failure of oxidative phosphorylation and progressive ATP depletion that culminates in necrosis.
+7. Incomplete oxidative phosphorylation also leads to the formation of reactive oxygen species.
+8. Ultimately there is irreversible damage to mitochondrial and lysosomal membranes, and the cell undergoes necrosis.
 
 ## Names of free radicals.
 
-The principal free radicals in cell injury are superoxide anion (O₂•⁻), hydrogen peroxide (H₂O₂), hydroxyl radical (•OH) and peroxynitrite (ONOO⁻); others include nitric oxide (NO) and the drug-derived •CCl₃.
-
-| Species | Origin | Inactivation | Effect |
-|---|---|---|---|
-| O₂•⁻ (superoxide) | Incomplete reduction of O₂ in oxidative phosphorylation; phagocyte oxidase | SOD → H₂O₂ | Damages lipids, proteins, DNA near site |
-| H₂O₂ | SOD from O₂•⁻; peroxisomal oxidases | Catalase, glutathione peroxidase | Can act at a distance; converted to •OH, OCl⁻ |
-| •OH | Radiolysis of water; Fenton reaction (H₂O₂ + Fe²⁺ → Fe³⁺ + •OH + OH⁻) | None | Most reactive; main ROS damaging lipids, proteins, DNA |
-| ONOO⁻ | O₂•⁻ + NO | Peroxiredoxins | Damages lipids, proteins, DNA |
-
+- **Superoxide anion:** formed by transfer of one electron to oxygen.
+- **Hydrogen peroxide:** formed by transfer of two electrons.
+- **Hydroxyl radical:** formed by transfer of three electrons. It is the most reactive oxygen-derived free radical.
+- **Peroxynitrite anion:** produced by interaction of the superoxide anion and nitric oxide.
+- **Nitric oxide:** can act as a free radical.
+- The **CCl3 radical**, generated from carbon tetrachloride by enzymatic metabolism, is a free radical that is not a reactive oxygen species.
 
 ## Name the antioxidants.
 
-Vitamins E, A and C (ascorbic acid), glutathione, metal-binding proteins (transferrin, ferritin, lactoferrin, ceruloplasmin), and enzymes catalase, superoxide dismutase (SOD) and glutathione peroxidase.
+**Antioxidants that block free radical formation or scavenge free radicals**
 
-| Group | Examples |
-|---|---|
-| Non-enzymatic scavengers | Vitamin E, vitamin A (lipid-soluble), ascorbic acid, cytosolic glutathione |
-| Iron/copper-binding proteins | Transferrin, ferritin, lactoferrin, ceruloplasmin (keep metals from catalysing ROS formation) |
-| Enzymes | Catalase (peroxisomes; 2H₂O₂ → O₂ + 2H₂O); SOD (Mn-SOD mitochondrial, Cu-Zn-SOD cytoplasmic; O₂•⁻ → H₂O₂); glutathione peroxidase (H₂O₂ + 2GSH → GSSG + 2H₂O) |
+- Vitamins E and A, which are lipid-soluble.
+- Ascorbic acid.
+- Glutathione in the cytosol.
 
+**Storage and transport proteins that bind iron and copper**
+
+- Transferrin, ferritin, lactoferrin and ceruloplasmin.
+
+**Free radical-scavenging enzymes**
+
+- **Catalase**, present in peroxisomes, decomposes hydrogen peroxide.
+- **Superoxide dismutases (SODs)** convert the superoxide anion to hydrogen peroxide. Manganese-SOD is localised in mitochondria and copper-zinc-SOD is found in the cytoplasm.
+- **Glutathione peroxidase** catalyses free radical breakdown.
 
 ## Enzymes activated by increased intracellular calcium.
 
-Phospholipases, proteases, endonucleases and ATPases.
-
-| Enzyme | Effect |
-|---|---|
-| Phospholipases | Membrane phospholipid breakdown → membrane damage |
-| Proteases | Break down membrane and cytoskeletal proteins |
-| Endonucleases | DNA and chromatin fragmentation |
-| ATPases | Hasten ATP depletion |
-
-Also, Ca²⁺ accumulation in mitochondria opens the mitochondrial permeability transition pore.
-
+- **Phospholipases:** cause membrane damage.
+- **Proteases:** break down both membrane and cytoskeletal proteins.
+- **Endonucleases:** responsible for DNA and chromatin fragmentation.
+- **ATPases:** hasten ATP depletion.
 
 ## Discuss the role of calcium in cell injury.
 
@@ -780,17 +781,14 @@ Necrosis of tissues has several morphologically distinct patterns, which give cl
 | **Fibrinoid** | Special form of vascular damage; antigen-antibody complexes deposited in arterial walls, with leaked plasma proteins, give a bright pink amorphous appearance on H&E | Immune reactions involving blood vessels |
 ## Examples of each type of necrosis.
 
-Coagulative – myocardial/kidney infarct; liquefactive – abscess, brain infarct; gangrenous – ischaemic lower limb; caseous – tuberculosis; fat – acute pancreatitis; fibrinoid – immune-complex arteritis.
-
-| Type | Examples |
+| Type | Example |
 |---|---|
-| Coagulative | Kidney infarct (Fig. 2.10), myocardial infarct, other solid-organ infarcts |
-| Liquefactive | Bacterial abscess/pus; fungal infection; CNS hypoxic infarct (Fig. 2.11) |
-| Gangrenous | Lower limb after loss of blood supply; wet gangrene if infected |
-| Caseous | Pulmonary tuberculosis (Fig. 2.12) |
-| Fat | Acute pancreatitis — pancreas and peritoneal fat (Fig. 2.13) |
-| Fibrinoid | Arteries in immune reactions (antigen–antibody complexes) (Fig. 2.14) |
-
+| **Coagulative** | Infarct, for example wedge-shaped infarct of the kidney, from vessel obstruction in any organ except the brain |
+| **Liquefactive** | Focal bacterial or occasionally fungal infection with pus; hypoxic infarct of the brain |
+| **Gangrenous** | Lower leg that has lost its blood supply; wet gangrene when bacterial infection is added |
+| **Caseous** | Tuberculosis of the lung |
+| **Fat necrosis** | Acute pancreatitis, with chalky-white fat saponification in the peritoneum and mesentery |
+| **Fibrinoid** | Immune complex deposition in the walls of arteries |
 
 ## Morphology of coagulative necrosis.
 
@@ -816,47 +814,30 @@ Coagulative – myocardial/kidney infarct; liquefactive – abscess, brain infar
 - The same leukocytes remove the debris by phagocytosis.
 ## Example of coagulative necrosis.
 
-The classic example is an infarct — e.g., myocardial infarction or a wedge-shaped kidney infarct caused by arterial obstruction.
-
-- A localised area of coagulative necrosis is called an infarct.
-- Ischaemia from vessel obstruction produces coagulative necrosis in all organs except the brain.
-
+- The classic example is an **infarct**, a localised area of coagulative necrosis.
+- Ischaemia caused by obstruction in a vessel may lead to coagulative necrosis of the supplied tissue in all organs except the brain.
+- A wedge-shaped, yellow kidney infarct is an example.
+- A myocardial infarct is necrosis of a portion of the heart caused by death of many myocardial cells.
 
 ## Common examples of liquefactive necrosis.
 
-Bacterial abscesses (focal bacterial infections, pus), occasional fungal infections, and hypoxic/ischaemic infarcts of the brain.
-
-- Microbes stimulate leukocyte accumulation and enzyme release → digestion → pus (creamy yellow).
-- CNS hypoxic cell death is liquefactive for unknown reasons.
-- Wet gangrene includes a liquefactive component from bacterial and leukocyte enzymes.
-
+- Focal bacterial or, occasionally, fungal infections. Microbes stimulate the accumulation of leukocytes and the liberation of enzymes from these cells. The necrotic material is frequently creamy yellow because of the leukocytes and is called **pus**.
+- Hypoxic death of cells within the central nervous system, for example an infarct in the brain showing dissolution of the tissue. The reason is unknown.
+- Wet gangrene: when bacterial infection is superimposed on gangrenous necrosis, there is increased liquefactive necrosis because of the degradative enzymes in the bacteria and the attracted leukocytes.
 
 ## Differences between coagulative and caseous necrosis.
 
-Coagulative necrosis retains the tissue architecture (ghost outlines) and is caused by ischaemia; caseous necrosis shows complete loss of architecture — a friable white "cheese-like" structureless debris enclosed by a granuloma, typically in tuberculosis.
-
-| Feature | Coagulative | Caseous |
+| Feature | Coagulative necrosis | Caseous necrosis |
 |---|---|---|
-| Cause | Ischaemia (vessel obstruction) | Tuberculous (and other granulomatous) infection |
-| Gross | Firm, pale/yellow, wedge-shaped infarct | Friable, white/yellow, cheesy |
-| Architecture | Preserved (ghost outlines) | Obliterated; structureless granular debris |
-| Microscopy | Eosinophilic cells, indistinct nuclei; leukocytes at margin | Fragmented/lysed cells + amorphous granular debris within epithelioid-macrophage granuloma |
-| Inflammation | Neutrophil/leukocyte infiltrate | Granulomatous inflammation |
-| Example | Kidney/myocardial infarct | Pulmonary TB |
-
-****
-
+| Architecture | Architecture of the dead tissue is preserved for at least some days | Structureless collection of fragmented or lysed cells and amorphous granular debris |
+| Texture and colour | Firm; kidney infarct is wedge-shaped and yellow | Friable and white, cheese-like; yellow-white cheesy debris in tuberculosis of the lung |
+| Microscopy | Intensely eosinophilic cells with indistinct or reddish nuclei persist for days or weeks | Debris enclosed within a distinctive collection of macrophages called epithelioid cells, which is characteristic of a granuloma |
+| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis of the dead cells | Not given |
+| Setting | Ischaemia from obstruction of a vessel, in all organs except the brain; a localised area is an infarct | Encountered most often in foci of tuberculous infection |
 
 ## What do you mean by gangrenous necrosis?
 
-Gangrenous necrosis is not a specific pattern of cell death but a clinical term for a part, usually the lower limb, that has lost its blood supply and undergone necrosis (typically coagulative) involving multiple tissue planes; superimposed bacterial infection adds liquefactive change, producing wet gangrene.
-
-**Types**
-
-- Dry gangrene — ischaemic coagulative necrosis without significant infection. Dry, shrunken, black, with a line of demarcation.
-- Wet gangrene — bacterial superinfection → liquefaction from bacterial enzymes and attracted leukocytes.
-- Gas gangrene — Clostridium infection with gas production.
-
+**Gangrenous necrosis** is not a specific pattern of cell death, but the term is commonly used in clinical practice. It is usually applied to a limb, generally the lower leg, that has lost its blood supply and has undergone necrosis, typically coagulative necrosis, involving multiple tissue planes.
 
 ## What is ischemic necrosis?
 
@@ -1050,37 +1031,32 @@ In all of these situations, cells undergo apoptosis because they are deprived of
 | Cytoplasm | Eosinophilic, glassy and homogeneous; vacuolated and moth-eaten once organelles are digested | Dense and eosinophilic |
 ## Examples of pathological apoptosis.
 
-DNA damage (radiation, anticancer drugs), accumulation of misfolded proteins (ER stress), viral infections (adenovirus, HIV, viral hepatitis), CTL-mediated killing (tumour cells, graft rejection, GVHD) and atrophy after duct obstruction.
-
-- DNA damage → p53 → mitochondrial pathway if repair fails.
-- Misfolded-protein diseases: α₁-antitrypsin deficiency (hepatocyte apoptosis), Alzheimer disease, Creutzfeldt-Jakob disease.
-- Atrophy after duct obstruction of pancreas, parotid, kidney.
-
+1. **DNA damage:** radiation and cytotoxic anticancer drugs damage DNA, either directly or through production of free radicals.
+2. **Accumulation of misfolded proteins:** cell death is triggered by improperly folded intracellular proteins and the subsequent ER stress response.
+3. **Infections**, particularly viral infections: apoptosis is induced by the virus itself, as in adenovirus and HIV infections, or by the host immune response, as in viral hepatitis.
+4. **Killing by cytotoxic T lymphocytes:** the mechanism responsible for killing tumour cells, cellular rejection of transplants and tissue damage in graft-versus-host disease.
+5. **Pathologic atrophy** in parenchymal organs after duct obstruction, as in the pancreas, parotid gland and kidney.
 
 ## Morphological changes in an apoptotic cell.
 
-The apoptotic cell shows cell shrinkage, chromatin condensation, formation of cytoplasmic blebs and apoptotic bodies, and phagocytosis by macrophages.
+1. **Cell shrinkage:** cell size is reduced, the cytoplasm is dense and eosinophilic, and the organelles, although relatively normal, are more tightly packed. This contrasts with necrosis, in which an early feature is cell swelling.
+2. **Chromatin condensation:** the most characteristic feature. The chromatin aggregates peripherally, under the nuclear membrane, into dense masses of various shapes and sizes. The nucleus itself may break up into two or more fragments.
+3. **Formation of cytoplasmic blebs and apoptotic bodies:** the cell first shows extensive surface membrane blebbing, followed by fragmentation into membrane-bound apoptotic bodies composed of cytoplasm and tightly packed organelles, with or without nuclear fragments.
+4. **Phagocytosis** of apoptotic cells or cell bodies, usually by macrophages. The apoptotic bodies are rapidly ingested by phagocytes and degraded by their lysosomal enzymes.
 
-1. Cell shrinkage — dense eosinophilic cytoplasm, tightly packed organelles (contrast with swelling in necrosis).
-
-2. Chromatin condensation — most characteristic feature; peripheral aggregation under the nuclear membrane; the nucleus may break into fragments.
-
-3. Cytoplasmic blebs and apoptotic bodies — extensive membrane blebbing then fragmentation into membrane-bound bodies of cytoplasm ± nuclear fragments.
-
-4. Phagocytosis — rapid ingestion by macrophages; on H&E a round/oval mass of intensely eosinophilic cytoplasm with dense nuclear fragments.
-
-- Because of rapid clearance and absent inflammation, much apoptosis may occur before it is visible histologically.
-
+- On H&E the apoptotic cell appears as a round or oval mass of intensely eosinophilic cytoplasm with fragments of dense nuclear chromatin.
+- Because the cell shrinkage and formation of apoptotic bodies are rapid and the pieces are quickly cleared, considerable apoptosis may occur in tissues before it is apparent in histologic sections.
+- The absence of an inflammatory response can also make apoptosis difficult to detect by light microscopy.
 
 ## Nuclear changes in apoptosis.
 
-Chromatin condensation (peripheral crescents, uniformly dense mass; pyknosis) followed by nuclear fragmentation (karyorrhexis) with DNA cleavage into nucleosome-size fragments.
-
-- Chromatin aggregates peripherally under the nuclear membrane into dense masses; the nucleus may break up into two or more fragments (Fig. 2.15B).
-- Mechanism: executioner caspases cleave an inhibitor of a DNase, activating it → DNA degradation; caspases also proteolyse nuclear matrix components → nuclear fragmentation.
-- Pyknosis is shared with necrosis; karyolysis is characteristic of necrosis, not apoptosis.
-- Internucleosomal cleavage gives a "ladder" on gel electrophoresis.
-
+- **Chromatin condensation** is the most characteristic feature of apoptosis. The chromatin aggregates peripherally, under the nuclear membrane, into dense masses of various shapes and sizes.
+- On electron microscopy some nuclei show peripheral crescents of compacted chromatin, and others are uniformly dense or fragmented.
+- The nucleus itself may break up into two or more fragments.
+- **Pyknosis**, with nuclear shrinkage and increased basophilia, is also seen in apoptotic cell death.
+- The nucleus is fragmented into nucleosome-size fragments.
+- Executioner caspases cleave an inhibitor of a DNase, so the DNase becomes enzymatically active and DNA degradation commences.
+- Caspases also proteolyse structural components of the nuclear matrix, which promotes fragmentation of nuclei.
 
 ## Give the pathogenesis of apoptosis.
 
@@ -14701,4 +14677,38 @@ Cell injury is the sequence of events that follows when the limits of adaptive r
 
 - Necrosis.
 - Apoptosis.
+
+## Differences between coagulative and liquefactive necrosis.
+
+| Feature | Coagulative necrosis | Liquefactive necrosis |
+|---|---|---|
+| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leukocytes, which liberate enzymes that digest the cells |
+| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
+
+## Define apoptosis.
+
+**Apoptosis** is a type of cell death that is induced by a tightly regulated suicide programme in which cells destined to die activate intrinsic enzymes that degrade cellular DNA and nuclear and cytoplasmic proteins.
+
+## Causes of apoptosis.
+
+**Physiologic situations**
+
+- Removal of supernumerary cells (in excess of the required number) during development. Cell death is critical for involution of primordial structures and remodelling of maturing tissues.
+- Involution of hormone-dependent tissues on hormone withdrawal, such as endometrial cell breakdown during the menstrual cycle, ovarian follicular atresia in menopause and regression of the lactating breast after weaning.
+- Cell turnover in proliferating cell populations, such as epithelial cells in intestinal crypts, to maintain constant cell numbers (homeostasis).
+- Elimination of lymphocytes that fail to produce functional antigen receptors, such as immature lymphocytes in the bone marrow and thymus and germinal centre B cells.
+- Elimination of potentially harmful self-reactive lymphocytes, to prevent immune reactions against one's own tissues.
+- Death of host cells that have served their useful purpose, such as neutrophils in an acute inflammatory response and lymphocytes at the end of an immune response.
+
+In all of these situations, cells undergo apoptosis because they are deprived of necessary survival signals, such as growth factors and interactions with the extracellular matrix, or they receive pro-apoptotic signals from other cells or the surrounding environment.
+
+**Pathologic conditions**
+
+- **DNA damage:** radiation and cytotoxic anticancer drugs can damage DNA, either directly or through production of free radicals.
+- **Accumulation of misfolded proteins:** cell death triggered by improperly folded intracellular proteins and the subsequent ER stress response.
+- **Infections**, particularly viral infections, because of the virus itself (as in adenovirus and HIV infections) or the host immune response (as in viral hepatitis).
+- Killing by **cytotoxic T lymphocytes**, which is responsible for killing tumour cells, cellular rejection of transplants and tissue damage in graft-versus-host disease.
+- Pathologic atrophy in parenchymal organs after duct obstruction, such as occurs in the pancreas, parotid gland and kidney.
 
