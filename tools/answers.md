@@ -11376,16 +11376,17 @@ Hyperuricaemia results from overproduction of uric acid, reduced renal excretion
 
 ## What is renal glycosuria?
 
-Renal glycosuria is the excretion of glucose in the urine in the presence of a **normal blood glucose concentration**, caused by a reduced renal threshold for glucose, that is, by a defect in tubular reabsorption of glucose rather than by hyperglycaemia. The renal threshold for glucose is normally about 180 mg/dL; in renal glycosuria glucose appears in the urine at plasma levels below this value.
+Glycosuria is the presence of reducing sugars in the urine. **Renal glycosuria** is glucose in the urine with a normal blood glucose level, because of an isolated defect of glucose reabsorption in the proximal tubule of the nephron.
 
-It may be familial and benign, from mutations of the sodium–glucose cotransporter gene of the proximal tubule, or acquired, as in pregnancy, Fanconi syndrome and other proximal tubular diseases. The diagnosis rests on a persistently positive urine glucose with a normal fasting blood glucose and a normal glucose tolerance test; the glucose-oxidase test is positive.
-
+- It is often found as an incidental finding on routine urine testing in otherwise healthy people
+- **Familial renal glucosuria** is caused by mutation of the **SLC5A2** gene, which codes for the sodium-glucose cotransporter 2 (**SGLT2**)
 
 ## Why is sugar present in renal glycosuria?
 
-Sugar appears in the urine in renal glycosuria because of a defect in the tubular handling of glucose rather than an excess in the blood. Glucose is freely filtered at the glomerulus and is normally reabsorbed completely in the proximal convoluted tubule, by sodium–glucose cotransporters (SGLT2, and SGLT1 in the late segment) in the luminal membrane, so that none appears in the urine until the filtered load exceeds the tubular maximum, which occurs when the plasma level is above about 180 mg/dL, as in diabetes mellitus.
-
-In renal glycosuria the transport capacity is reduced or the threshold is lowered, because of defective or deficient cotransporters, so the tubules cannot reabsorb all the filtered glucose even at a normal plasma concentration, and the surplus is excreted in the urine.
+- Glucose is filtered at the glomerulus and is normally reabsorbed completely in the proximal tubule
+- In renal glycosuria the tubule cannot reabsorb the filtered glucose, so glucose appears in the urine although the **blood glucose is normal**
+- The usual cause is a mutation of the **SLC5A2** gene, which codes for the **SGLT2** transporter
+- Tubular absorption of glucose is also impaired in **Fanconi syndrome**, where phosphate and amino acids are lost as well
 
 ## Name the routine tests/investigations done on urine.
 
@@ -11571,139 +11572,96 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 
 **In the male**
 
-- **Follicle-stimulating hormone (FSH)** — raised in primary testicular failure (impaired spermatogenesis), low in hypogonadotropic hypogonadism, and normal in obstructive azoospermia.
-- **Luteinising hormone (LH)** and **testosterone** (total or free), reduced in hypogonadism.
-- **Prolactin**, to exclude hyperprolactinaemia in patients with low libido or low testosterone, and thyroid function tests where indicated.
+- **Serum total testosterone** (8 AM to 10 AM) and **follicle-stimulating hormone (FSH)** are the first tests
+- If testosterone is low, repeat total and free testosterone and add **luteinising hormone (LH)** and **prolactin**
+- Other pituitary hormones are checked when the picture suggests hypogonadotropic hypogonadism: free T4, morning cortisol and prolactin
 
-**In the female**
-
-- **FSH and LH** (on day 2–3 of the cycle) and **oestradiol**, to assess ovarian reserve and function; **anti-Müllerian hormone (AMH)** as a marker of ovarian reserve.
-- **Mid-luteal progesterone** (about day 21), to confirm ovulation.
-- **Prolactin** and **thyroid-stimulating hormone (TSH)**, since hyperprolactinaemia and thyroid disease cause anovulation.
-- **Testosterone, DHEAS and androstenedione** where polycystic ovary syndrome or hyperandrogenism is suspected.
-
+| Pattern | Meaning |
+|---|---|
+| Low testosterone, high FSH, high LH | Primary testicular failure |
+| Normal testosterone, normal LH, high FSH | Seminiferous tubule damage without Leydig cell dysfunction |
+| Low testosterone, low or normal FSH and LH | Hypogonadotropic hypogonadism; high prolactin suggests a prolactin-secreting tumour |
+| High testosterone, high LH, normal FSH | Partial androgen insensitivity |
 
 ## How will you investigate a case of male infertility in the laboratory?
 
-Male infertility is investigated in the laboratory as follows.
-
-1. **Semen analysis**, the cornerstone: volume, pH, liquefaction, sperm concentration and total number, motility, vitality and morphology, leukocytes; repeated on at least two samples several weeks apart, after 2–7 days of abstinence.
-2. **Additional semen tests:** antisperm antibodies (MAR or immunobead test); sperm function tests, including the hypo-osmotic swelling test and sperm DNA fragmentation; semen fructose (absent in congenital bilateral absence of the vas deferens and ejaculatory duct obstruction); semen culture; and examination of postejaculatory urine for sperm in suspected retrograde ejaculation.
-3. **Hormone assays:** FSH, LH, testosterone, and prolactin.
-4. **Genetic tests:** karyotype (Klinefelter syndrome, 47,XXY), Y chromosome microdeletion analysis (AZF regions) in severe oligospermia and azoospermia, and CFTR mutation testing in congenital absence of the vas deferens.
-5. **Testicular biopsy**, in azoospermia, to distinguish obstructive from non-obstructive causes (histology showing normal spermatogenesis, maturation arrest or Sertoli cell–only pattern) and for sperm retrieval.
-6. **Imaging:** scrotal ultrasonography (varicocele, testicular size, masses) and transrectal ultrasonography (ejaculatory duct obstruction).
+1. **Semen analysis:** volume, pH, liquefaction, viscosity, sperm number, motility, vitality and morphology
+2. **Post-ejaculation urine** for sperm when semen volume is low, to confirm retrograde ejaculation
+3. **Tests for sperm antibodies** when sperm agglutination is seen: mixed antiglobulin reaction test and immunobead test
+4. **Seminal markers:** fructose, zinc and neutral glucosidase
+5. **Peroxidase staining** and leukocyte markers on round cells; more than 1 million leukocytes per mL (**pyospermia**) needs a search for genital tract infection
+6. **Hormones:** serum total testosterone, FSH, LH and prolactin
+7. **Genetic tests:** karyotyping for Klinefelter syndrome and Y chromosome microdeletion; **CFTR** gene testing in congenital bilateral absence of the vas deferens
 
 ## Mention the indications of semen analysis.
 
-The indications for semen analysis are:
-
-1. **Infertility evaluation** — the main indication; semen analysis is the first investigation of the male partner when a couple fails to conceive after one year of regular unprotected intercourse.
-2. **After vasectomy**, to confirm the absence of spermatozoa (azoospermia), and after **vasectomy reversal**, to confirm the return of sperm.
-3. **Monitoring the response to treatment** of infertility or its causes, such as varicocele repair or hormonal therapy.
-4. **Assessment of testicular function** in endocrine, genetic and testicular disorders, and after **chemotherapy, radiotherapy, or exposure to toxins** that may impair spermatogenesis.
-5. **Selection of sperm donors** and assessment of semen before assisted reproduction (intrauterine insemination, in vitro fertilisation, intracytoplasmic sperm injection), and before cryopreservation.
-6. **Medicolegal purposes**, including investigation of sexual assault and disputed paternity.
-7. Investigation of suspected infection of the male genital tract and of retrograde ejaculation.
-
+- Assessment of **male factor infertility**
+- Planning of assisted fertilisation
 
 ## How is semen collected?
 
-Semen is collected by **masturbation** into a clean, sterile, wide-mouthed, non-toxic container, after an abstinence of 2 to 7 days. The entire ejaculate must be collected, since the first portion is rich in sperm, and no lubricants or soap may be used. The sample is best collected in a private room near the laboratory; if collected at home, it must be delivered within one hour, kept at body temperature and not cooled. The container is labelled with the patient's name, date and time of collection, and the abstinence period. When masturbation is not possible, semen may be collected during intercourse into a special non-spermicidal condom; ordinary latex condoms, which contain spermicidal agents, and coitus interruptus are unsuitable. Semen may be obtained by electroejaculation or surgically in patients who cannot ejaculate.
-
+1. Collected by the man by **masturbation**, at home or near the laboratory, after a minimum of 3 days and a maximum of 7 days of abstinence
+2. The **whole ejaculate** must be collected; any loss of the sample is reported to the laboratory
+3. Collected into a **clean, wide-mouthed container** that is nontoxic to spermatozoa and kept at 20 to 37 °C
+4. If masturbation is not possible, semen can be collected in a **nontoxic condom** during intercourse; latex condoms are not used because they affect sperm viability and motility
+5. Delivered to the laboratory **within 1 hour** of collection
+6. Two or three samples are advisable, because semen composition varies
 
 ## Mention the normal findings of semen.
 
-**Normal findings of semen** (WHO reference values; lower reference limits, 5th centile of fertile men)
+| Parameter | Lower reference limit |
+|---|---|
+| Volume | More than 1.5 mL |
+| pH | More than 7.2 |
+| Total sperm number | 39 million per ejaculate or more |
+| Normal forms (Tygerberg method) | More than 4% |
+| Vitality | More than 58% live sperm |
+| Progressive motility | More than 32% |
+| Total motility (progressive and nonprogressive) | More than 40% |
+| Agglutination | None |
+| Viscosity | Less than 2 cm after liquefaction |
 
-| Parameter | WHO 2010 (5th ed.) | WHO 2021 (6th ed.) |
-|---|---|---|
-| Volume | ≥1.5 mL | ≥1.4 mL |
-| pH | ≥7.2 | ≥7.2 |
-| Sperm concentration | ≥15 × 10⁶/mL | ≥16 × 10⁶/mL |
-| Total sperm number | ≥39 × 10⁶/ejaculate | ≥39 × 10⁶/ejaculate |
-| Total motility (progressive + non-progressive) | ≥40% | ≥42% |
-| Progressive motility | ≥32% | ≥30% |
-| Vitality (live sperm) | ≥58% | ≥54% |
-| Normal morphology (strict criteria) | ≥4% | ≥4% |
-| Leukocytes | <1 × 10⁶/mL | <1 × 10⁶/mL |
-
-**Macroscopic findings.** The semen is a homogeneous, grey-white opalescent fluid, which liquefies within 15 to 60 minutes at room temperature; the volume is usually 2–5 mL, and the reaction is slightly alkaline (pH 7.2–8.0).
-
-**Microscopic findings.** There is no significant agglutination of sperm, and only a few round cells.
-
-**Biochemical findings.** Fructose, from the seminal vesicles (at least 13 µmol/ejaculate), and zinc and neutral α-glucosidase, which indicate the function of the accessory glands and epididymis.
-
+- Seminal fructose more than 13 micromoles per ejaculate
+- Seminal zinc more than 2.4 micromoles per ejaculate
+- Seminal neutral glucosidase less than 20 milliunits per ejaculate
 
 ## What is oligospermia?
 
-Oligospermia (oligozoospermia) is a reduction in the number of spermatozoa in the ejaculate, in which the sperm concentration is below the lower reference limit, that is, below 16 million per mL (15 million per mL in the earlier WHO reference). It is a common cause of male infertility. It is graded as mild, moderate or severe according to the sperm concentration, and may be accompanied by reduced motility (asthenozoospermia) and abnormal morphology (teratozoospermia), a combination known as oligoasthenoteratozoospermia.
-
+**Oligospermia** (oligozoospermia) is semen with a reduced sperm concentration: less than 15 million per mL, or a total sperm count of less than 39 million.
 
 ## What is azoospermia?
 
-Azoospermia is the complete absence of spermatozoa in the ejaculate, confirmed by examination of the centrifuged pellet of the semen sample on at least two occasions. It is distinguished from **aspermia**, the absence of ejaculate (no semen), and from cryptozoospermia, in which sperm are found only in the centrifuged pellet. It is classified as obstructive (obstruction of the male genital ducts with normal spermatogenesis) or non-obstructive (testicular failure).
-
+**Azoospermia** is semen without spermatozoa. It is diagnosed only after the ejaculate has been **centrifuged** and the sperm pellet examined under the microscope.
 
 ## Write down the causes of azoospermia.
 
-The causes of azoospermia are:
-
-**1. Pretesticular (hypogonadotropic) causes** — failure of the hypothalamic–pituitary stimulation of the testis: Kallmann syndrome, pituitary tumours or hypopituitarism, hyperprolactinaemia, and the use of exogenous androgens or anabolic steroids.
-
-**2. Testicular causes (non-obstructive azoospermia)** — primary failure of spermatogenesis:
-
-- Genetic: Klinefelter syndrome (47,XXY), Y chromosome microdeletions
-- Cryptorchidism, mumps orchitis and other orchitis, testicular torsion and trauma
-- Chemotherapy, radiation, toxins
-- Sertoli cell–only syndrome and maturation arrest of spermatogenesis, and severe varicocele
-
-**3. Post-testicular causes (obstructive azoospermia)** — obstruction of the ducts:
-
-- Congenital bilateral absence of the vas deferens (associated with CFTR mutations)
-- Vasectomy, and obstruction of the epididymis by infection (gonorrhoea, tuberculosis, chlamydia)
-- Ejaculatory duct obstruction and surgical injury
-
-**4. Ejaculatory disorders** — retrograde ejaculation (diabetes, prostatic surgery, neuropathy) and failure of emission, which give aspermia or apparent azoospermia.
-
-Obstructive azoospermia is suggested by a normal FSH, normal-sized testes and normal spermatogenesis on biopsy; non-obstructive azoospermia by a raised FSH and small testes.
-
+1. **Hypothalamic-pituitary failure** (hypogonadotropic hypogonadism): other pituitary hormone deficiencies, prolactin-secreting tumour
+2. **Primary testicular failure:** Klinefelter syndrome, Y chromosome microdeletion, radiation or chemotherapy, testicular trauma, torsion of the testes, mumps
+3. **Obstruction of the genital tract:**
+   - Congenital bilateral absence of the vas deferens, often with **CFTR** mutations (cystic fibrosis)
+   - Ejaculatory duct obstruction from chlamydia, gonorrhoea, tuberculosis or vasectomy
+4. Transient azoospermia can follow toxic, environmental, infectious or iatrogenic insults
 
 ## Write a short note on semen analysis.
 
-**Definition.** Semen analysis is the laboratory examination of the ejaculate to assess male fertility and the function of the testes, epididymis and accessory sex glands.
+**Semen analysis** is the laboratory test used to evaluate male fertility. Semen is a mixture of spermatozoa from the testes, processed in the epididymides and mixed with secretions of the prostate, seminal vesicles and bulbourethral glands.
 
-**Indications.** Infertility evaluation, confirmation of vasectomy and its reversal, monitoring of treatment and of the effects of toxins and cancer therapy, donor screening and assisted reproduction, and medicolegal purposes.
+**Procedure**
 
-**Collection.** After 2–7 days of abstinence, the complete ejaculate is collected by masturbation into a clean, sterile, wide-mouthed container, kept at body temperature and examined within an hour; repeated samples are examined, because of the variability of semen.
+1. Liquefaction at 37 °C, which may take up to 60 minutes
+2. Measurement of volume, then pH
+3. Wet preparation for appearance, motility and agglutination; motility is tested within 1 hour of collection
+4. Vitality test, especially when sperm number is low
+5. Dilution and counting of sperm
+6. Smears for morphology
 
-**Macroscopic examination.** Volume, colour (grey-white, opalescent), pH, liquefaction time (complete within 60 minutes) and viscosity.
+**Interpretation**
 
-**Microscopic examination.**
-
-1. Sperm concentration and total number, counted in a haemocytometer (Neubauer chamber) after dilution.
-2. Motility, graded as progressive, non-progressive or immotile.
-3. Vitality, by eosin–nigrosin staining, when motility is poor.
-4. Morphology on a stained smear, using strict criteria.
-5. Other cells and findings: leukocytes, immature germ cells, red cells, agglutination.
-
-**Biochemical and additional tests.** Fructose, zinc and α-glucosidase; antisperm antibodies; sperm function tests; and DNA fragmentation.
-
-**Reference values (WHO).** Volume ≥1.4 mL, concentration ≥16 million/mL, total number ≥39 million, progressive motility ≥30%, total motility ≥42%, vitality ≥54% and normal forms ≥4% (WHO 2021); the 2010 values are volume ≥1.5 mL, concentration ≥15 million/mL, progressive motility ≥32%, total motility ≥40%, vitality ≥58%.
-
-**Terminology of abnormal results.**
-
-- Normozoospermia: all parameters within reference limits
-- Oligozoospermia: low sperm concentration
-- Asthenozoospermia: reduced sperm motility
-- Teratozoospermia: increased abnormal forms
-- Oligoasthenoteratozoospermia: all three abnormalities
-- Azoospermia: no sperm in the ejaculate; aspermia: no ejaculate
-- Necrozoospermia: low proportion of live sperm
-- Leukocytospermia: raised white cells in the semen
-
-**Significance.** Semen analysis is the first and the most important laboratory test in the evaluation of the infertile male. Results cannot by themselves predict fertility, since values fluctuate and overlap between fertile and infertile men, so abnormal results must be repeated and interpreted along with clinical findings and hormonal and other tests.
-
+- **Low volume** (less than 1.5 mL): incomplete collection, retrograde ejaculation, testosterone deficiency, ejaculatory duct obstruction or absent vas deferens and seminal vesicles
+- **Agglutination:** test for anti-sperm antibodies
+- **Many immotile and nonviable sperm:** epididymal pathology; immotile but viable sperm suggest a flagellar defect
+- **Abnormal morphology:** a problem of spermatogenesis
+- Abnormal results are repeated after 3 months, one full cycle of spermatogenesis
 
 ## Write down the risk factors for carcinoma of cervix.
 
