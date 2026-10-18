@@ -2870,34 +2870,24 @@ In 10% to 15% of systemic emboli the origin is unknown.
 
 ## Sources of pulmonary embolism.
 
-Pulmonary emboli originate in 70% to 80% of cases from deep vein thrombosis of the leg veins (popliteal, femoral, iliac), and less commonly from pelvic and upper limb veins, the right heart, and non-thrombotic emboli.
-
-- **Deep veins of the lower limbs** at or above the knee, the source of the great majority.
-- Other venous sources: periprostatic and ovarian/periuterine (pelvic) venous plexuses, upper limb veins (especially with central catheters), inferior vena cava.
-- Right atrial or ventricular mural thrombi (atrial fibrillation, right ventricular infarction), and right-sided valve vegetations.
-- Non-thrombotic emboli: fat and bone marrow (fractures), air, amniotic fluid, tumour (renal cell carcinoma), foreign material.
-
-The risk factors are the same as for DVT: immobilisation, surgery, trauma, malignancy, pregnancy, oral contraceptives, heart failure, and inherited thrombophilia.
-
+- Pulmonary emboli originate from **deep vein thrombosis**.
+- In 70% to 80% of cases, pulmonary embolism originates from **leg deep vein thrombosis**.
+- Deep vein thrombosis of one of the large leg veins at or above the knee (the popliteal, femoral and iliac veins) is considered serious because such thrombi more often embolise to the lungs.
 
 ## Clinical consequences of pulmonary embolism.
 
-The consequences of pulmonary embolism depend on the size of the embolus and the vessel blocked: most are silent, but a large embolus causes sudden death or acute right heart failure, medium-sized emboli may cause haemorrhage or infarction, and multiple emboli over time cause pulmonary hypertension.
-
-- **Silent emboli:** 60% to 80% are clinically silent because they are small; they become organised and incorporated into the vessel wall, sometimes leaving a delicate fibrous web.
-- **Massive embolism:** obstruction of 60% or more of the pulmonary circulation (large embolus, or saddle embolus at the bifurcation) causes sudden death, acute right heart failure (cor pulmonale) or cardiovascular collapse.
-- **Medium-sized arteries:** rupture of vessels can cause pulmonary haemorrhage, but infarction usually does not occur because of the dual supply from the bronchial arteries; if bronchial flow is compromised (left heart failure), infarction occurs.
-- **Small end-arteriolar branches:** often produce haemorrhage or infarction (wedge-shaped haemorrhagic infarct, with pleuritic chest pain, cough, dyspnoea and haemoptysis).
-- **Recurrent emboli:** pulmonary hypertension and right ventricular failure (chronic cor pulmonale).
-- **Paradoxical embolism:** if an interatrial or interventricular septal defect exists, the embolus can reach the systemic arterial circulation.
-
+- Most pulmonary emboli (60% to 80%) are clinically silent because they are small. With time they become organised and are incorporated into the vascular wall; in some cases, organisation of the thromboembolus leaves behind a delicate, bridging fibrous web.
+- **Sudden death, acute right-heart failure (cor pulmonale) or cardiovascular collapse** occurs when emboli obstruct 60% or more of the pulmonary circulation.
+- Embolic obstruction of **medium-sized arteries** with subsequent vascular rupture can result in pulmonary haemorrhage but usually does not cause pulmonary infarction. This is because the lung is supplied by both the pulmonary arteries and the bronchial arteries, and the intact bronchial circulation is usually sufficient to perfuse the affected area. If the bronchial arterial flow is compromised (for example by left-sided cardiac failure), infarction may occur.
+- Embolic obstruction of **small end-arteriolar pulmonary branches** often does produce haemorrhage or infarction.
+- Multiple emboli over time may cause **pulmonary hypertension and right ventricular failure**.
 
 ## Fate of pulmonary embolism.
 
-A pulmonary embolus may cause sudden death, or be lysed, or become organised and incorporated into the vessel wall; patients are at high risk of recurrent emboli.
-
-The embolus may (1) cause immediate death or acute right heart failure when large; (2) fragment and move into smaller branches; (3) be dissolved by fibrinolysis; (4) become organised, with ingrowth of endothelial cells, smooth muscle cells and fibroblasts, and be incorporated into the vessel wall, sometimes leaving a bridging fibrous web; (5) cause haemorrhage or infarction, which heals by scarring; (6) recur, because the patient who has had one embolus is at high risk for more, leading to pulmonary hypertension and right ventricular failure. The source thrombus in the leg may remain and re-embolise unless treated with anticoagulation.
-
+- Most pulmonary emboli are small and clinically silent. With time they become **organised** and are incorporated into the vascular wall, sometimes leaving behind a delicate, bridging fibrous web.
+- Emboli obstructing 60% or more of the pulmonary circulation cause sudden death, acute right-heart failure (cor pulmonale) or cardiovascular collapse. An estimated 20% of individuals with pulmonary embolism die before or shortly after a diagnosis is made.
+- Frequently there are multiple emboli, occurring sequentially or simultaneously as a shower of smaller emboli from a single large mass. The patient who has had one pulmonary embolism is at high risk for more.
+- Multiple emboli over time may cause pulmonary hypertension and right ventricular failure.
 
 ## Classify emboli on the basis of their composition.
 
@@ -2990,12 +2980,17 @@ Systemic (arterial) thromboembolism refers to emboli that enter the arterial cir
 
 ## Male (30 or 38 years) hospitalised for femur fracture; after two weeks sudden chest pain, cough and haemoptysis — Most probable diagnosis? Cause of this complication?
 
-The most probable diagnosis is pulmonary thromboembolism with pulmonary infarction, caused by a thrombus from deep vein thrombosis of the leg veins that developed because of immobilisation and trauma and embolised to the lung.
+**Most probable diagnosis**
 
-**Diagnosis.** Sudden chest pain, cough and haemoptysis in a patient immobilised in hospital for a femoral fracture indicate pulmonary embolism with infarction. The delay of two weeks favours thromboembolism; fat embolism syndrome would present 1 to 3 days after injury with respiratory distress, neurological signs, thrombocytopenia and a petechial rash.
+- **Pulmonary embolism**, with pulmonary haemorrhage or infarction.
+- Embolic obstruction of small end-arteriolar pulmonary branches often produces haemorrhage or infarction.
+- Fat embolism syndrome is less likely, because it typically begins 1 to 3 days after injury.
 
-**Cause.** The cause is deep vein thrombosis of the deep veins of the leg or pelvis. The trauma and fracture, together with immobilisation and bed rest, provide all three elements of Virchow's triad: endothelial injury and release of procoagulants from injured tissue and surgery (hypercoagulability), and stasis from immobility (loss of the muscle pump). A fragment of the thrombus detaches, travels through the venous system and the right heart and lodges in a branch of the pulmonary artery. Embolic obstruction of small end-arteriolar branches produces haemorrhage or a wedge-shaped haemorrhagic infarct, causing pleuritic pain and haemoptysis. Many DVTs are asymptomatic and recognised only after embolisation.
+**Cause of this complication**
 
+- **Deep vein thrombosis** of the leg, from which fragments of thrombus detach and are carried through progressively larger veins and the right side of the heart into the pulmonary arterial vasculature. In 70% to 80% of cases, pulmonary embolism originates from leg deep vein thrombosis.
+- Bed rest and immobilisation reduce the milking action of the leg muscles, resulting in stasis.
+- Trauma, surgery and burns not only immobilise a person but are also associated with vascular insults, procoagulant release from injured tissues, increased hepatic synthesis of coagulation factors and decreased t-PA production.
 
 ## A 38y male with femur fracture develops chest pain, cough and haemoptysis after 2 weeks. What is the most likely diagnosis?
 
@@ -3014,54 +3009,57 @@ The thrombus forms in the deep veins (popliteal, femoral, iliac) and extends tow
 
 ## What is an infarct?
 
-An infarct is an area of ischaemic necrosis caused by occlusion of either the arterial supply or the venous drainage of a tissue.
-
-Infarction is a common and extremely important cause of clinical illness. Roughly 40% of all deaths in the United States are caused by cardiovascular disease, and most of these are attributable to myocardial or cerebral infarction; pulmonary infarction is a common complication in many clinical settings, bowel infarction is frequently fatal, and ischaemic necrosis of the extremities (gangrene) is a serious problem in diabetic patients. Most infarcts are due to arterial thrombosis or embolism. The characteristic histological change is coagulative necrosis (liquefactive necrosis in the brain), and most infarcts are eventually replaced by scar. Infarcts are classified as red (haemorrhagic) or white (anaemic), and as bland or septic.
-
+An **infarct** is an area of ischaemic necrosis caused by occlusion of either the arterial supply or the venous drainage.
 
 ## Underlying causes of infarction.
 
-Infarction is most commonly caused by arterial thrombosis or arterial embolism; less common causes are local vasospasm, haemorrhage into an atheromatous plaque, extrinsic compression, torsion of a vessel, and venous occlusion.
+**Arterial obstruction**
 
-- **Arterial thrombosis** (commonly on an atherosclerotic plaque, as in coronary and cerebral arteries) and **arterial embolism** underlie most infarctions.
-- **Local vasospasm**, **haemorrhage into an atheromatous plaque**, and **extrinsic compression of a vessel** (for example by a tumour).
-- **Torsion of a vessel**, as in testicular or ovarian torsion and volvulus of the bowel; entrapment in a hernia sac.
-- **Traumatic vascular rupture**, and vascular compromise by oedema (anterior compartment syndrome of the leg).
-- **Venous thrombosis**: more often causes only congestion, since bypass channels open and permit outflow, but it can cause infarction in organs with a single efferent vein (testis, ovary).
-- Contributing factors are hypotension (shock), hypoxaemia, and sickle cell disease.
+- **Arterial thrombosis or arterial embolism** underlies most infarctions.
+- Less common causes: local vasospasm, haemorrhage into an atheromatous plaque, and extrinsic vessel compression (for example by tumour).
 
+**Other uncommon causes**
+
+- Torsion of a vessel (for example in testicular torsion or bowel volvulus).
+- Traumatic vascular rupture.
+- Vascular compromise by oedema (for example anterior compartment syndrome of the leg) or by entrapment in a hernia sac.
+
+**Venous thrombosis**
+
+- Venous thrombosis can cause infarction, but the more common outcome is just congestion, because bypass channels rapidly open and permit vascular outflow, which then improves arterial inflow.
+- Infarcts caused by venous thrombosis are more likely in organs with a single efferent vein, such as the testis and ovary.
 
 ## Sites where white infarct occurs.
 
-White (anaemic) infarcts occur with arterial occlusion in solid organs with end-arterial circulation and dense tissue, namely the heart, spleen and kidney.
+White infarcts occur with arterial occlusions in solid organs with end-arterial circulation, and where tissue density limits the seepage of blood from adjoining capillary beds into the necrotic area.
 
-White infarcts occur where arterial occlusion affects solid organs with end-arterial circulation (heart, spleen, kidney) and where tissue density limits the seepage of blood from adjoining capillary beds into the necrotic area. The brain also develops pale infarcts, which undergo liquefactive necrosis. With time such infarcts become progressively paler and more sharply demarcated, and are eventually replaced by a scar (the remote renal infarct is a depressed fibrous scar).
-
+- Heart
+- Spleen
+- Kidney
 
 ## Factors that influence the development of an infarct.
 
-Whether vascular occlusion causes infarction depends on the anatomy of the vascular supply, the rate of occlusion, the vulnerability of the tissue to hypoxia, and the oxygen content of the blood.
+1. **Anatomy of the vascular supply.** The availability of an alternative blood supply is the most important determinant of whether vessel occlusion will cause tissue damage.
 
-1. **Anatomy of the vascular supply.** The availability of an alternative blood supply is the most important determinant. The lungs (pulmonary and bronchial arteries), the liver (hepatic artery and portal vein), and the hand and forearm (radial and ulnar arteries) are relatively resistant; renal and splenic circulations are end-arterial, so obstruction generally causes tissue death.
-2. **Rate of occlusion.** Slowly developing occlusions are less likely to cause infarction because collateral pathways of perfusion have time to develop (for example interarteriolar anastomoses between coronary arteries).
-3. **Vulnerability of the tissue to hypoxia.** Neurons undergo irreversible damage after only 3 to 4 minutes of ischaemia; myocardial cells die after 20 to 30 minutes; fibroblasts remain viable after many hours.
-4. **Blood oxygen content (hypoxaemia).** Abnormally low oxygen content, whatever the cause, increases the likelihood and extent of infarction.
+- The lungs have a dual pulmonary and bronchial artery blood supply that protects against thromboembolism-induced infarction.
+- The liver, with its dual hepatic artery and portal vein circulation, and the hand and forearm, with their dual radial and ulnar arterial supply, are relatively resistant to infarction.
+- Renal and splenic circulations are end-arterial, and vascular obstruction generally causes tissue death.
 
+2. **Rate of occlusion.** Slowly developing occlusions are less likely to cause infarction because they provide time for development of collateral pathways of perfusion. For example, small interarteriolar anastomoses interconnect the three major coronary arteries; if one coronary artery is occluded slowly, flow within this collateral circulation may increase sufficiently to prevent infarction.
+3. **Tissue vulnerability to hypoxia.** Neurons undergo irreversible damage when deprived of their blood supply for only 3 to 4 minutes. Myocardial cells die after only 20 to 30 minutes of ischaemia. Fibroblasts within myocardium remain viable even after many hours of ischaemia.
+4. **Hypoxaemia.** Abnormally low blood oxygen content, regardless of cause, increases both the likelihood and extent of infarction.
 
 ## Organs where red infarct occurs, and why.
 
-Red (haemorrhagic) infarcts occur in the lung, small intestine, testis and ovary, and brain in some circumstances, because of venous occlusion, dual circulation, loose spongy tissue, previous congestion, or reperfusion.
+Red (haemorrhagic) infarcts occur:
 
-Red infarcts occur:
-
-1. With **venous occlusions** (testicular torsion, ovarian torsion).
-2. In **loose, spongy tissues** such as the lung, where blood can collect in the infarcted zone.
-3. In tissues with **dual circulations** (lung, small intestine), which allow blood from an unobstructed parallel supply to flow into the necrotic zone.
+1. With **venous occlusions**, for example testicular torsion.
+2. In **loose, spongy tissues**, for example the lung, where blood can collect in the infarcted zone.
+3. In tissues with **dual circulations**, for example the lung and small intestine, which allow blood to flow from an unobstructed parallel supply into a necrotic zone.
 4. In tissues **previously congested** by sluggish venous outflow.
-5. When **flow is re-established** to a site of previous arterial occlusion and necrosis (for example after angioplasty), including haemorrhagic transformation of cerebral infarcts.
+5. When **flow is reestablished** to a site of previous arterial occlusion and necrosis, for example following angioplasty of an arterial obstruction.
 
-The lung is the typical organ: haemorrhagic wedge-shaped infarcts are the rule. In the infarcted zone, extravasated red cells are phagocytosed by macrophages and converted into haemosiderin.
-
+In the lung, haemorrhagic infarcts are the rule.
 
 ## What are the factors that influence formation of infarct?
 
@@ -3101,49 +3099,33 @@ Vascular occlusion may have effects ranging from virtually nothing to tissue nec
 
 ## What are the types of shock?
 
-The three major types of shock are cardiogenic, hypovolaemic and septic shock; less commonly shock occurs in neurogenic and anaphylactic forms, in which acute vasodilation causes hypotension.
-
-Shock is a state of circulatory failure that impairs tissue perfusion and leads to cellular hypoxia. Its causes fall into three general categories:
-
-| Type | Clinical examples | Principal mechanisms |
+| Type of shock | Clinical example | Principal mechanisms |
 |---|---|---|
-| **Cardiogenic** | Myocardial infarction, ventricular rupture, arrhythmia, cardiac tamponade, pulmonary embolism | Failure of the myocardial pump from intrinsic myocardial damage, extrinsic compression, or obstruction to outflow; low cardiac output |
-| **Hypovolemic** | Haemorrhage, vomiting, diarrhoea, burns, trauma | Inadequate blood or plasma volume |
-| **Septic** | Overwhelming bacterial and fungal infections (also superantigens, toxic shock syndrome) | Activation of cytokine cascades, peripheral vasodilation and pooling of blood, endothelial activation and injury, leukocyte-induced damage, DIC |
-| **Neurogenic** | Spinal cord injury, anaesthesia | Loss of vascular tone, peripheral vasodilation |
-| **Anaphylactic** | IgE-mediated hypersensitivity (drugs, venoms, foods) | Systemic vasodilation and increased vascular permeability |
+| Cardiogenic | Myocardial infarction, ventricular rupture, arrhythmia, cardiac tamponade, pulmonary embolism | Failure of the myocardial pump resulting from intrinsic myocardial damage, extrinsic compression, or obstruction to outflow |
+| Hypovolaemic | Fluid loss (for example haemorrhage, vomiting, diarrhoea, burns or trauma) | Inadequate blood or plasma volume |
+| Septic | Overwhelming microbial infections (bacterial and fungal) | Activation of cytokine cascades; peripheral vasodilation and pooling of blood; endothelial activation and injury; leukocyte-induced damage; disseminated intravascular coagulation |
 
-SIRS (systemic inflammatory response syndrome) is a sepsis-like state triggered by non-infectious insults such as burns, trauma and pancreatitis. Sepsis is life-threatening organ dysfunction caused by a dysregulated host response to infection; septic shock is a subset with particularly profound circulatory, cellular and metabolic abnormalities and higher mortality.
-
+Less commonly, shock can occur in the setting of a spinal cord injury (**neurogenic shock**) or an IgE-mediated hypersensitivity reaction (**anaphylactic shock**). In both these forms of shock, acute vasodilation leads to hypotension and tissue hypoperfusion.
 
 ## What type of shock occurs in severe burn?
 
-Severe burns cause hypovolaemic shock, due to massive loss of plasma and fluid from the burned surface.
-
-Thermal injury of the skin produces direct endothelial damage and increased vascular permeability, with outpouring of protein-rich plasma into the tissues and loss of fluid by evaporation and exudation from the burned surface; this causes inadequate blood and plasma volume and low cardiac output. Burn patients may subsequently develop septic shock from infection of the burn wound, and SIRS may complicate burns.
-
+**Hypovolaemic shock.** It results from low cardiac output due to low blood volume, such as can occur with massive haemorrhage or fluid loss from severe burns.
 
 ## Why do the skin become cool and pale in the early non-progressive phase of shock?
 
-In the early non-progressive phase, reflex neurohumoral mechanisms (baroreceptor reflex, catecholamines, ADH, renin-angiotensin-aldosterone axis, sympathetic stimulation) cause cutaneous vasoconstriction, which shunts blood from the skin to vital organs such as the heart and brain, making the skin cool and pale.
-
-In this stage the reflex compensatory mechanisms maintain cardiac output and blood pressure. The net effect is tachycardia, peripheral vasoconstriction and renal fluid conservation. Cutaneous vasoconstriction produces the characteristic "shocky" skin coolness and pallor (in the cold, clammy skin). Coronary and cerebral vessels are less sensitive to sympathetic signals and maintain relatively normal caliber, flow and oxygen delivery, so blood is shunted away from the skin to the vital organs. In septic shock, the skin may initially be warm and flushed because of cutaneous vasodilation.
-
+1. In the early nonprogressive phase, neurohumoral mechanisms maintain cardiac output and blood pressure: baroreceptor reflexes, release of catecholamines and antidiuretic hormone, activation of the renin-angiotensin-aldosterone axis, and generalised sympathetic stimulation.
+2. The net effect is tachycardia, **peripheral vasoconstriction** and renal fluid conservation.
+3. **Cutaneous vasoconstriction** causes the characteristic "shocky" skin coolness and pallor.
+4. Coronary and cerebral vessels are less sensitive to sympathetic signals and maintain relatively normal calibre, blood flow and oxygen delivery. Blood is thus shunted away from the skin to the vital organs such as the heart and brain.
+5. Septic shock can initially cause cutaneous vasodilation, so the patient may present with warm, flushed skin.
 
 ## Changes that occur in the progressive phase of shock.
 
-The progressive phase is characterised by widespread tissue hypoxia, with a switch to anaerobic glycolysis, lactic acidosis, loss of vasomotor tone and pooling of blood in the microcirculation, worsening cardiac output, endothelial injury with DIC, and onset of failure of vital organs.
-
-If the underlying causes are not corrected, shock passes to the progressive phase:
-
-1. Persistent oxygen deficit changes intracellular aerobic respiration to **anaerobic glycolysis** with excessive production of lactic acid.
-2. The resultant **metabolic lactic acidosis** lowers the tissue pH and blunts the vasomotor response; **arterioles dilate** and blood begins to pool in the microcirculation.
-3. Peripheral pooling worsens cardiac output and exposes endothelial cells to **anoxic injury** with subsequent **DIC**.
-4. With widespread hypoxia, **vital organs fail**: the kidneys (oliguria), brain (confusion), heart (reduced contractility), lungs and gut.
-5. Hypotension worsens, the pulse is weak and rapid, and skin is cold, clammy and cyanotic.
-
-If untreated the process enters the irreversible stage, with lysosomal enzyme leakage, further myocardial depression (partly through NO), bacterial translocation from ischaemic gut, acute renal failure and death.
-
+1. The progressive stage is characterised by **tissue hypoperfusion** and onset of worsening circulatory and metabolic derangement, including acidosis.
+2. In the setting of persistent oxygen deficit, intracellular aerobic respiration is replaced by **anaerobic glycolysis** with excessive production of lactic acid.
+3. The resultant metabolic **lactic acidosis** lowers the tissue pH, which blunts the vasomotor response; arterioles dilate and blood begins to pool in the microcirculation.
+4. Peripheral pooling worsens the cardiac output and puts endothelial cells at risk for anoxic injury with subsequent **DIC**.
+5. With widespread tissue hypoxia, vital organs are affected and begin to fail.
 
 ## Define shock.
 
