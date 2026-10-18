@@ -643,3 +643,6 @@ Sources: site textbook chapter 24 (tools/textbook_src/ch24.json) for the thyroid
 - Fasting 6.6 mmol/L case: the textbook gives no diagnosis for values below the cut-offs other than prediabetes; the answer states this.
 - Thyroid: the sources do not list hypothyroidism causes as a table (lost in extraction); the four causes are from the running text. The textbook does not give a one-line definition of goitre; the answer states enlargement of the thyroid gland from the goitre section.
 - Follicular carcinoma prognosis and iodine association for papillary carcinoma are not given in the passages read; shown as "not stated" in the comparison table.
+
+### Housekeeping (batch 3)
+- tools/hand_edits.json: one hunk removed (the bold-tag fix inside the old diabetes complications answer; that text no longer exists). 7 remain.
