@@ -361,5 +361,5 @@ Questions: myeloma bone marrow and ESR, Bence Jones short note, generalised and 
 
 ### Session 10 end checks
 - build.py run twice: index.html byte-identical.
-- VERSION in sw.js bumped by 1; build.py, gen_manifests.py and build.py run again.
+- VERSION in sw.js bumped from v146 to v147; build.py, gen_manifests.py and build.py run again.
 - tools/tests/test_site.py not run this session, at the owner's request.
