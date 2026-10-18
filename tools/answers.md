@@ -11732,8 +11732,13 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 
 ## A female has PV bleeding/discharge, contact bleeding, an ulcerated/friable/fungating cervical growth. What is the likely diagnosis?
 
-Invasive carcinoma of the cervix, usually squamous cell carcinoma (~80%). Average age is 45-50 years.
+**Invasive carcinoma of the cervix**, most likely **squamous cell carcinoma**.
 
+- The average age is 45 to 50 years
+- Squamous cell carcinoma accounts for about 80% of cases; adenocarcinoma for about 15%
+- All are caused by **high-risk HPV**
+- It appears as a **fungating (exophytic)** or infiltrative mass
+- More than one-half of cases are found in females who did not attend regular screening
 
 ## Same: what do you expect in histopathology?
 
@@ -14468,13 +14473,3 @@ Acute kidney injury can result from glomerular, interstitial, vascular or acute 
 | **Chromophobe** | 5% | Prominent cell membranes and pale eosinophilic cytoplasm with a perinuclear halo; arises from intercalated cells of collecting ducts; excellent prognosis |
 | **Xp11 translocation** (TFE3-rearranged) | Not given | Translocations of the TFE3 gene at Xp11.2; often in young patients |
 | **Collecting duct carcinoma** | About 1% or less | Malignant cells forming glands in a desmoplastic stroma in the medulla; medullary carcinoma is a similar tumour in patients with sickle cell trait |
-
-## A female has PV bleeding/discharge, contact bleeding, an ulcerated/friable/fungating cervical growth. What is the provisional diagnosis?
-
-**Invasive carcinoma of the cervix**, most likely **squamous cell carcinoma**.
-
-- The average age is 45 to 50 years
-- Squamous cell carcinoma accounts for about 80% of cases; adenocarcinoma for about 15%
-- All are caused by **high-risk HPV**
-- It appears as a **fungating (exophytic)** or infiltrative mass
-- More than one-half of cases are found in females who did not attend regular screening
