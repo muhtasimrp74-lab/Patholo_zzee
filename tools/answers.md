@@ -3752,55 +3752,64 @@ Exceptions to these basic rules:
 
 ## What are the features of autosomal dominant inheritance?
 
-Autosomal dominant inheritance describes disorders that are expressed in the heterozygous state, so that a single mutant allele on an autosome is sufficient to produce the disease.
+- Manifested in the **heterozygous state**, so one parent of an index case is usually affected.
+- Both **males and females** are affected, and both can transmit the condition.
+- When an affected and an unaffected person reproduce, each child has **one chance in two** of inheriting the mutated allele and developing the disease.
 
-Pattern of transmission. One parent of an index case is usually affected, and the disease appears in successive generations (vertical transmission). Males and females are affected in equal proportions, and both sexes transmit it to either sex, including male-to-male transmission. When an affected person and an unaffected person have children, each child has a one in two chance of inheriting the mutant allele and developing the disease. Unaffected members of the family do not transmit the trait.
+Exceptions to these basic rules:
 
-Exceptions and modifiers.
-
-- A patient may have no affected parent if the disease results from a new germline mutation. This is more common when the disease reduces reproductive fitness, and it is associated with increased paternal age in achondroplasia (FGFR3) and Apert syndrome (FGFR2).
-- Incomplete penetrance means that some carriers are phenotypically normal. Penetrance is the percentage of carriers who express the trait.
-- Variable expressivity means that affected persons show differing severity. Neurofibromatosis type 1 ranges from pigmented skin spots to multiple tumours and skeletal deformities. Modifier genes and environment (for example, dietary lipids in heterozygous familial hypercholesterolaemia) are responsible.
-- Onset may be delayed until adult life, as in Huntington disease.
-
-Molecular basis. The mutated genes more often encode structural proteins, receptors or regulatory proteins than enzymes, because a half dose of an enzyme is usually sufficient. The mechanisms are:
-
-- **Haploinsufficiency:** the normal allele cannot compensate for the loss, as in LDL receptor mutations.
-- **Dominant negative effect:** the abnormal subunit interferes with assembly of multimeric proteins (collagen in osteogenesis imperfecta, fibrillin in Marfan syndrome).
-- **Gain of function:** increased activity or a new toxic function, as in the huntingtin protein of Huntington disease.
-
-Examples. These include Huntington disease, neurofibromatosis, myotonic dystrophy, tuberous sclerosis, polycystic kidney disease, familial adenomatous polyposis, hereditary spherocytosis, von Willebrand disease, Marfan syndrome, osteogenesis imperfecta, achondroplasia, familial hypercholesterolaemia and acute intermittent porphyria.
+- Patients may not have an affected parent if the condition is caused by a new (**de novo**) germline mutation.
+- If a disease markedly reduces reproductive fitness, more cases result from new mutations.
+- New mutations are known to have a propensity to occur in germ cells of relatively older fathers (for example mutations in FGFR2 and FGFR3, which cause Apert syndrome and achondroplasia).
+- **Incomplete penetrance:** some individuals inherit the mutant gene but are phenotypically normal; 50% penetrance indicates that 50% of those who carry the gene express the trait.
+- **Variable expressivity:** the trait is manifest in all individuals carrying the mutant gene but at differing degrees of severity, for example neurofibromatosis type 1.
+- The age at onset may be delayed, as in Huntington disease.
 
 
 ## What are the main features of X-linked recessive inheritance?
 
-X-linked recessive disorders are caused by mutant genes on the X chromosome that have no corresponding loci on the Y chromosome. Males have a single X and are therefore hemizygous, so one mutant allele is enough to cause disease. Females have a second, normal allele and are usually asymptomatic carriers.
-
-The main features are:
-
-1. The disease affects predominantly males. Females are carriers.
-2. There is no male-to-male transmission. An affected male does not transmit the disorder to his sons, who receive his Y chromosome, and all of his daughters are obligate carriers.
-3. A carrier female transmits the mutation to half of her sons, who are affected, and half of her daughters, who become carriers.
-4. The disease can skip generations through carrier females and can show the pattern of affected maternal uncles and nephews.
-5. Heterozygous females may show partial expression because of lyonisation. X inactivation is usually random, so a variable proportion of their cells expresses the mutant allele. In G6PD deficiency, females are susceptible to drug-induced haemolysis, though less severe than in males, depending on the proportion of defective red cells. If inactivation is skewed against the normal X, a female can be clinically affected.
-6. New mutations are common in lethal or severe disorders such as Duchenne muscular dystrophy.
-
-Examples. Duchenne muscular dystrophy, haemophilia A and B, G6PD deficiency, Lesch-Nyhan syndrome, X-linked agammaglobulinaemia, Wiskott-Aldrich syndrome, chronic granulomatous disease, nephrogenic diabetes insipidus and fragile X syndrome.
-
-X-linked dominant disorders are rarer. An affected father transmits the disease to all daughters and no sons, and an affected heterozygous mother transmits it to half her sons and half her daughters (vitamin D–resistant rickets, Alport syndrome). Rett syndrome (MECP2) affects girls, and the same mutations are lethal in males.
+- X-linked disorders are caused by abnormalities in genes on the X chromosome, so **males are affected** whereas **females are carriers**.
+- The X chromosome contains many genes without corresponding loci on the Y chromosome.
+- Females are asymptomatic **heterozygous carriers**; affected males are **hemizygous** for the X-linked mutant gene.
+- An affected male does **not transmit the disorder to his sons**, who inherit a paternal Y chromosome.
+- All the daughters of an affected male are **obligate carriers**.
+- Daughters of heterozygous women have one chance in two of being a carrier.
+- Sons of heterozygous women have one chance in two of inheriting the mutant allele and being affected.
+- Heterozygous females are generally unaffected because of their normal allele.
+- X inactivation in females results in mosaicism for cells in which the mutant X chromosome is active; the inactivation may be random or skewed to favour activity of the X chromosome with the wild-type allele.
+- Example: **glucose-6-phosphate dehydrogenase (G6PD) deficiency** is expressed principally in males, and the severity of the haemolytic reaction is almost always less in heterozygous women than in hemizygous men.
 
 
 ## Write a short note on autosomal recessive inheritance.
 
-Autosomal recessive disorders form the largest category of Mendelian diseases. The phenotype is expressed only when both alleles of an autosomal gene are mutated. The affected individual may be a homozygote, who inherits the same mutant allele from both parents, or a compound heterozygote, who inherits two different mutant alleles.
+**Definition**
 
-Pattern of inheritance. The parents are usually clinically normal heterozygous carriers, and the disease does not affect earlier generations (it "skips generations"), although siblings may be affected. Males and females are equally affected. If both parents are carriers, each child has a 25% chance of being affected, a 50% chance of being a carrier and a 25% chance of being normal. When the mutant allele is rare, the affected person is often the product of a consanguineous marriage. New mutations usually remain unrecognised for generations because the person with the new mutation is an asymptomatic carrier.
+- In autosomal recessive traits, both alleles of an autosomal gene must be mutated to produce a phenotypic manifestation.
+- They make up the largest category of Mendelian disorders.
 
-Distinguishing features from autosomal dominant disease. Expression is more uniform, complete penetrance is common, and onset is frequently early in life.
+**Features**
 
-Molecular basis. Many of the mutated genes encode enzymes. A heterozygote with half of the enzyme activity functions normally, so loss of both copies is required for disease. Almost all inborn errors of metabolism follow this pattern.
+- The trait does not usually affect the parents of the affected individual (they "skip generations"), but **siblings** may show the disease.
+- Siblings have **one chance in four** of having the trait; the recurrence risk is 25% for each birth.
+- Males and females are affected equally.
+- Affected individuals may be **compound heterozygotes**, inheriting two distinct loss-of-function mutations, or may inherit the same mutant allele both maternally and paternally.
+- If the mutation has a low allele frequency in the general population, the affected homozygous individual (proband) is very likely the product of a **consanguineous marriage**.
+- The expression of the defect tends to be more **uniform** than in autosomal dominant disorders.
+- **Complete penetrance** is common.
+- Onset is frequently **early in life**.
+- Several generations may pass before a descendant of a de novo mutation carrier has an affected child, because the individual with a new mutation is an asymptomatic heterozygote.
 
-Examples. Cystic fibrosis, phenylketonuria, galactosaemia, homocystinuria, lysosomal storage diseases (Tay-Sachs and Gaucher disease), glycogen storage diseases, α1-antitrypsin deficiency, Wilson disease, haemochromatosis, sickle cell anaemia, thalassaemias, congenital adrenal hyperplasia, alkaptonuria, Friedreich ataxia and spinal muscular atrophy.
+**Molecular basis**
+
+- Many of the mutated genes encode **enzymes**.
+- In heterozygote carriers, cells with half the usual complement of the enzyme function normally.
+- Autosomal recessive disorders include almost all inborn errors of metabolism.
+
+**Examples**
+
+- **Gaucher disease**, from mutations in the gene encoding glucocerebrosidase.
+- **Mucopolysaccharidoses**, all of which are autosomal recessive except Hunter syndrome.
+
 
 ## Types of chromosomal disorders.
 
@@ -3938,20 +3947,29 @@ Cytogenetic disorders may take the form of an abnormal number of chromosomes or 
 
 ## Write a short note on Barr body.
 
-The Barr body (X chromatin) is the inactive X chromosome, seen in the interphase nucleus of female cells as a small, darkly staining mass lying against the nuclear membrane.
+**Definition**
 
-Lyon hypothesis (1961).
+The inactive X chromosome can be seen in the interphase nucleus as a darkly staining small mass in contact with the nuclear membrane, known as the **Barr body**, or **X chromatin**.
 
-1. Only one X chromosome is genetically active.
-2. The other X, maternal or paternal, becomes heteropyknotic and inactive.
-3. Inactivation is random among the cells of the blastocyst, at about day 5.5 of embryonic life.
-4. The same X remains inactive in all descendants of each cell.
+**Lyon hypothesis** (Mary Lyon, 1961)
 
-A normal female is therefore a mosaic of two cell populations, one with an inactivated maternal X and the other with an inactivated paternal X. This provides dosage compensation, so females have the same dose of active X-linked genes as males.
+1. Only one of the X chromosomes is genetically active.
+2. The other X chromosome, of either maternal or paternal origin, undergoes **heteropyknosis** and is rendered inactive.
+3. Inactivation of either the maternal or the paternal X chromosome occurs at random among all the cells of the blastocyst on or about day 5.5 of embryonic life.
+4. Inactivation of the same X chromosome persists in all the cells derived from each precursor cell.
 
-Molecular basis. The X-inactivation centre produces the long noncoding RNA XIST, which coats the X chromosome from which it is transcribed and initiates silencing by chromatin modification and DNA methylation. XIST is switched off on the active X. A subset of genes, including those in the pseudoautosomal regions, escapes inactivation, which explains why monosomy X (Turner syndrome) is not harmless. The inactive X is reactivated in oogonia before meiosis, and both X chromosomes are needed for normal oogenesis.
+**Significance**
 
-Clinical significance. The number of Barr bodies equals the number of X chromosomes minus one. A normal female (46,XX) has one, a normal male none, Turner syndrome (45,X) none, Klinefelter syndrome (47,XXY) one, and 47,XXX two. Barr body counts in buccal smears historically provided a quick sex chromatin test, now replaced by karyotyping. Lyonisation also explains variable expression in heterozygous females for X-linked disease, as in G6PD deficiency.
+- The great preponderance of normal females are **mosaics**, with two populations of cells, one with an inactivated maternal X chromosome and the other with an inactivated paternal X chromosome.
+- This explains why females have the same dosage of X-linked active genes as males.
+- In XY males there is no X inactivation.
+
+**Molecular basis**
+
+- The long noncoding RNA **XIST** is retained in the nucleus, where it "coats" the X chromosome that it is transcribed from and initiates gene silencing by chromatin modification and DNA methylation.
+- XIST expression is switched off in the active X chromosome.
+- A subset of genes escape X inactivation: 30% of genes on Xp and 3% on Xq.
+- The pseudoautosomal regions at the tips of the X and Y chromosomes also escape X inactivation.
 
 
 ## 10-year-old boy with very low IQ, flat facial profile, single palmar crease, stunted growth — Probable genetic diagnosis? Haematological malignancy that may occur in future?
@@ -3985,41 +4003,43 @@ Clinical significance. The number of Barr bodies equals the number of X chromoso
 
 ## A girl has flat facial profile, stunted growth, mental retardation (± simian crease). What is your probable diagnosis?
 
-The probable diagnosis is Down syndrome (trisomy 21), the commonest chromosomal disorder and a leading cause of intellectual disability. The flat facial profile, oblique palpebral fissures and epicanthic folds, with stunted growth and intellectual disability, are characteristic. A simian palmar crease supports the diagnosis. Other expected findings are hypotonia and congenital heart disease (present in about 40%, most commonly an atrioventricular septal defect). Because Down syndrome has several cytogenetic forms (free trisomy 21 in about 95%, Robertsonian translocation in about 4%, mosaicism in about 1%), the karyotype is needed to identify the type and to counsel the family.
+The probable diagnosis is **Down syndrome (trisomy 21)**.
+
+- The diagnostic clinical features are flat facial profile, oblique palpebral fissures and epicanthic folds, usually evident even at birth.
+- Down syndrome is a leading cause of intellectual disability.
+- It is the most common chromosomal disorder.
 
 
 ## Same patient: how will you diagnose / what is the karyotype?
 
-Diagnosis. The diagnosis is made by cytogenetic analysis. Karyotyping of cultured peripheral blood lymphocytes, arrested in metaphase and G banded, demonstrates the chromosome complement. FISH with chromosome 21–specific probes shows three signals in metaphase or interphase nuclei and gives rapid confirmation. In pregnancy, cell-free foetal DNA screening in maternal blood detects the extra copy of chromosome 21, and a positive result is confirmed by karyotyping of chorionic villus or amniotic fluid cells. The patient should also be assessed clinically for the associated cardiac, thyroid and haematologic problems.
+**Karyotype**
 
-Karyotype. The commonest karyotype is free trisomy 21, 47,XX,+21 (about 95%), due to meiotic nondisjunction, usually maternal. The alternatives are translocation Down syndrome with 46 chromosomes, 46,XX,der(14;21)(q10;q10),+21 (about 4%), and mosaic Down syndrome, 46,XX/47,XX,+21 (about 1%). In translocation cases the parents' karyotypes must be examined for a balanced carrier, as in 45,XX,der(14;21)(q10;q10).
+- In approximately 95% of cases the karyotype is **trisomy 21**, with a chromosome count of 47 (47,XX,+21 in a girl).
+- In about 4% an extra copy of chromosome 21 derives from a Robertsonian translocation to another acrocentric chromosome (for example 22 or 14).
+- Approximately 1% are mosaics, with cells having 46 or 47 chromosomes.
+
+**Diagnosis**
+
+- Conventional **karyotyping** of cells demonstrates the extra chromosome 21.
+- **FISH** with chromosome 21-specific probes reveals the extra copy of chromosome 21.
+- Prenatally, next-generation sequencing of cell-free foetal DNA in maternal blood is a noninvasive screening test, and a positive screening test is confirmed by conventional karyotyping of cells obtained by chorionic villus sampling or amniocentesis.
 
 
 ## An adolescent girl has primary amenorrhoea, webbed neck, broad chest, underdeveloped breasts. What is the likely diagnosis?
 
-The likely diagnosis is Turner syndrome, which results from complete or partial monosomy of the X chromosome and is characterised by hypogonadism in phenotypic females. It affects about 1 in 2000–3000 live-born girls and is the most common sex chromosome abnormality in females.
+The likely diagnosis is **Turner syndrome**.
 
-Features. Failure of normal pubertal development, with infantile genitalia, poor breast development, little pubic hair and primary amenorrhoea, results from streak ovaries. In the foetus the ovaries develop normally up to about 18 weeks, but without the second X chromosome oocytes are lost rapidly and are gone by about 2 years of age, so that "menopause occurs before menarche". Turner syndrome is the single most important cause of primary amenorrhoea. Other features are:
-
-- Short stature, rarely exceeding 150 cm, from haploinsufficiency of the SHOX gene.
-- Webbing of the neck and a low posterior hairline, remnants of the cystic hygroma and lymphoedema of infancy.
-- A broad shield-like chest with widely spaced nipples, cubitus valgus and multiple pigmented nevi.
-- Cardiovascular malformations, mainly preductal coarctation of the aorta and bicuspid aortic valve, which are the most important cause of increased mortality, together with aortic root dilatation and a high risk of dissection.
-- Thyroid autoantibodies in about half, with hypothyroidism in many, and glucose intolerance, insulin resistance and obesity.
-- Mental status is usually normal, with subtle defects in visuospatial processing.
-
-Patients with Y chromosome sequences (5–10%) are at higher risk of gonadoblastoma.
+- It results from complete or partial monosomy of the X chromosome and is characterised by hypogonadism in phenotypic females.
+- Turner syndrome is the single most important cause of primary amenorrhoea, accounting for approximately one-third of the cases.
+- Typical features are short stature, webbing of the neck, cubitus valgus, cardiovascular malformations, amenorrhoea, lack of secondary sex characteristics and fibrotic (streak) ovaries.
 
 
 ## Same patient: what is the karyotype?
 
-Three types of karyotypic abnormality are seen in Turner syndrome:
+- Approximately 57% have a **45,X** karyotype, missing an entire X chromosome (the classic karyotype).
+- Approximately 14% have structural abnormalities of the X chromosome: an isochromosome of the long arm, 46,X,i(X)(q10); a ring chromosome, 46,X,r(X); or deletion of part of the short or long arm, 46,X,del(Xq) or 46,X,del(Xp).
+- Approximately 29% are mosaics with a 45,X cell population, for example 45,X/46,XX, 45,X/46,XY, 45,X/47,XXX or 45,X/46,X,i(X)(q10).
 
-- **Classic monosomy X, 45,X (about 57%).** The entire X chromosome is missing. In about 80% the retained X is maternal, implying an error in paternal gametogenesis.
-- **Structural abnormalities of X (about 14%).** These produce partial monosomy of X. In order of frequency: the isochromosome of the long arm, 46,X,i(X)(q10), with loss of the short arm; a ring chromosome, 46,X,r(X); and deletions of the short or long arm, 46,X,del(Xp) or 46,X,del(Xq).
-- **Mosaics (about 29%).** A 45,X cell line coexists with one or more other cell lines, for example 45,X/46,XX, 45,X/46,XY, 45,X/47,XXX or 45,X/46,X,i(X)(q10). With more sensitive methods mosaicism is found in a much higher proportion. Patients with a high proportion of 45,X cells have more severe changes. Those with 45,X/46,XX mosaicism may look nearly normal and present only with amenorrhoea.
-
-The karyotype is determined by G-banded karyotyping of peripheral blood. Because the Y chromosome carries a risk of gonadoblastoma, 45,X/46,XY mosaicism should be excluded, by FISH if needed.
 
 ## Outline of laboratory diagnosis of genetic disorders.
 
@@ -4063,47 +4083,60 @@ The karyotype is determined by G-banded karyotyping of peripheral blood. Because
 
 ## Write a short note on karyotype / karyotyping.
 
-The karyotype is the complete chromosomal complement of a cell, displayed as paired chromosomes arranged by length, followed by the sex chromosomes. Karyotyping, the study of chromosomes, is the basic tool of the cytogeneticist.
+**Definition**
 
-Procedure. Dividing cells (commonly cultured peripheral blood lymphocytes, amniocytes or chorionic villus cells) are arrested in metaphase with a mitotic spindle inhibitor such as a colchicine derivative, spread on a slide and stained. Each metaphase chromosome shows two chromatids joined at the centromere. The chromosomes are photographed, then arranged in pairs by size, centromere position and banding pattern.
+- The study of chromosomes, **karyotyping**, is the basic tool of the cytogeneticist.
+- A **karyotype** is obtained by arranging each pair of autosomes according to length, followed by the sex chromosomes.
 
-Banding. Giemsa (G) banding produces alternating light and dark bands that identify each chromosome. Standard resolution is 400–800 bands per haploid set, and prophase preparations give up to about 1500, permitting finer detection of breakpoints.
+**Procedure**
 
-Nomenclature. The total number of chromosomes is given first, then the sex chromosomes, then the abnormalities in numerical order. The short arm is p and the long arm q, with regions, bands and sub-bands numbered from the centromere outward. Examples are 46,XY (normal male), 47,XY,+21 (Down syndrome), 45,X (Turner syndrome), 47,XXY (Klinefelter syndrome) and 46,XX,t(2;5)(q31;p14) (balanced translocation).
+- Dividing cells are arrested in **metaphase** with mitotic spindle inhibitors (for example N-diacetyl-N-methylcolchicine) and the chromosomes are stained.
+- In a metaphase spread, each chromosome takes the form of two chromatids connected at the centromere.
+- The most useful staining method is the **Giemsa stain**, hence **G banding**; it shows distinctive patterns of alternating light and dark bands.
+- With standard G banding, approximately 400 to 800 bands per haploid set of chromosomes can be detected.
+- Obtaining the cells in prophase gives elongated chromosomes and as many as 1500 bands per karyotype.
+- This permits identification of each chromosome and roughly delineates breakpoints and other gross alterations.
 
-Uses. Karyotyping is used to diagnose Down, Turner and Klinefelter syndromes and other aneuploidies; to detect translocations in carriers with recurrent miscarriage or affected children; for prenatal diagnosis; and for acquired changes in tumours, such as the Philadelphia chromosome.
+**Normal karyotype**
 
-Limitations. Abnormalities smaller than about 2–4 million base pairs are not visible. Microdeletions such as 22q11.2 need FISH, and small copy number changes need microarrays. It also requires living, dividing cells and several days of culture.
+- Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and two sex chromosomes.
+- The normal complement is **46,XX** for females and **46,XY** for males.
 
-**Ch 6 · Diseases of the Immune System**
-15 questions
+**Notation**
+
+- The total number of chromosomes is given first, then the sex chromosome complement, then the abnormalities in ascending numerical order; a male with trisomy 21 is 47,XY,+21.
+- The short arm is designated **p** (petit) and the long arm **q**.
+- Each arm is divided into regions numbered from the centromere outward, and each region into bands and sub-bands; Xp21.2 is the short arm of the X chromosome, region 2, band 1, sub-band 2.
+
+**Limitations**
+
+- To be visible by routine banding, a structural change must involve approximately 2 to 4 million base pairs.
+- Fluorescence in situ hybridisation (FISH) has much higher resolution and can detect changes as small as kilobases.
+
 
 ## Define immunity.
 
-Immunity is the protection of the body against infectious pathogens, achieved through the coordinated action of cells and molecules of the immune system.
+The classic definition of **immunity** is protection from infectious pathogens.
 
-This is the classic definition. In its broader sense, immunity includes host reactions against cancers (tumour immunity), tissue transplants and even self antigens (autoimmunity). The mechanisms fall into two categories. Innate immunity (natural or native) consists of intrinsic mechanisms that are always present and react immediately, forming the first line of defence: epithelial barriers, phagocytes (neutrophils and macrophages), dendritic cells, natural killer cells and other innate lymphoid cells, and plasma proteins including complement. Adaptive immunity (acquired or specific) is stimulated by exposure to microbes and other foreign substances. It develops more slowly but is more powerful, and is mediated by lymphocytes with memory. By convention, "immune response" usually refers to adaptive immunity.
-
-Immunity can fail by being deficient (immunodeficiency), excessive or harmful (hypersensitivity), or directed against self (autoimmunity).
+Immunity in its broader sense includes host reactions against cancers (tumour immunity), tissue transplants, and even self antigens (autoimmunity).
 
 
 ## Types of immunity.
 
-Immunity is of two main types, innate (natural) and adaptive (acquired). Adaptive immunity is further divided into humoral (antibody-mediated) and cell-mediated immunity.
+The mechanisms of immunity fall into two broad categories.
 
 | Feature | Innate immunity | Adaptive immunity |
 |---|---|---|
-| Onset | Immediate (hours) | Slower (days) |
-| Specificity | Recognises common microbial and damage patterns (PAMPs, DAMPs) via pattern recognition receptors | Highly specific for individual antigens, via antigen receptors |
-| Memory | None or minimal | Present |
-| Components | Epithelial barriers, phagocytes, dendritic cells, NK cells, innate lymphoid cells, complement, acute-phase proteins | B and T lymphocytes |
+| Other names | Natural, or native, immunity | Acquired, or specific, immunity |
+| Nature | Intrinsic mechanisms poised to react immediately; the first line of defence | Mechanisms stimulated by exposure to microbes and other foreign substances |
+| Speed | Immediate | Develops more slowly but is even more powerful in combating infections |
+| Mediated by | Cells and molecules that recognise products of microbes and dead cells | Lymphocytes and their products, including antibodies |
+| Specificity and memory | Not specific for particular microbial antigens; little or no memory | Highly specific receptors for a vast array of antigens; immunologic memory |
 
-Adaptive immunity.
+Adaptive immunity is of two types.
 
-- **Humoral immunity** is mediated by B lymphocytes, which differentiate into plasma cells that secrete antibodies against extracellular microbes and toxins.
-- **Cell-mediated immunity** is mediated by T lymphocytes: CD4⁺ helper T cells (Th1, Th2, Th17, Tfh) and CD8⁺ cytotoxic T lymphocytes, which eliminate intracellular microbes and infected cells.
-
-Active and passive immunity. Active immunity results from the person's own immune response to an infection or vaccine and is long-lasting. Passive immunity is gained by transfer of preformed antibodies, from mother to foetus across the placenta or by injection of immunoglobulin, and is temporary.
+- **Humoral immunity** is mediated by B lymphocytes and their secreted products, antibodies (immunoglobulins), and protects against extracellular microbes and their toxins.
+- **Cell-mediated (cellular) immunity** is mediated by T lymphocytes and is responsible for defence against intracellular microbes and against cancers.
 
 
 ## Write a short note on MHC.
@@ -4135,49 +4168,56 @@ Functions and clinical significance.
 
 ## Define hypersensitivity.
 
-Hypersensitivity is an excessive or harmful immune reaction to an antigen, resulting in tissue injury and disease, usually in a previously sensitised individual.
+**Hypersensitivity** refers to injurious immune reactions, which are responsible for the pathology associated with immunologic diseases.
 
-Individuals previously exposed to an antigen are said to be sensitised and show detectable reactions on re-exposure. Hypersensitivity may be provoked by exogenous antigens (dust, pollen, foods, drugs, microbes, chemicals), producing allergy, or by self antigens, producing autoimmune disease. It results from an imbalance between the effector mechanisms of the immune response and the control mechanisms that limit them, often a failure of normal regulation. The mechanisms of injury are the same as the normal effector mechanisms of defence, but they are excessive, poorly controlled or misdirected. Susceptibility is often associated with the inheritance of HLA and non-HLA susceptibility genes.
+Hypersensitivity implies an excessive or harmful reaction to an antigen.
 
 
 ## Classify hypersensitivity.
 
-Hypersensitivity reactions are classified by mechanism into four types: type I (immediate, IgE-mediated), type II (antibody-mediated), type III (immune complex–mediated) and type IV (T cell–mediated, delayed).
+Hypersensitivity reactions are classified on the basis of the underlying immunologic mechanism.
 
-| Type | Mechanism | Lesion | Examples |
-|---|---|---|---|
-| **I, immediate** | Th2 response and IgE bound to mast cells. Antigen cross-links IgE and the mast cell releases histamine, proteases, leukotrienes, prostaglandins and cytokines. Late phase 2–24 hours later with eosinophil and neutrophil recruitment | Vasodilatation, oedema, bronchospasm, mucus secretion | Anaphylaxis, hay fever, atopic asthma, urticaria |
-| **II, antibody-mediated** | IgG or IgM against cell-surface or matrix antigens. Opsonisation and phagocytosis, complement-mediated lysis, ADCC, inflammation, or antireceptor functional effects | Cell lysis or depletion, inflammation | Autoimmune haemolytic anaemia, Goodpasture syndrome, myasthenia gravis, Graves disease |
-| **III, immune complex–mediated** | Antigen-antibody complexes deposit in tissues, activate complement and recruit neutrophils | Acute inflammation, necrotising vasculitis (fibrinoid necrosis) | SLE, serum sickness, Arthus reaction, some forms of glomerulonephritis |
-| **IV, cell-mediated** | CD4⁺ Th1 and Th17 cells (cytokine-mediated inflammation, macrophage activation) and CD8⁺ CTLs (direct killing) | Perivascular mononuclear infiltrates, granulomas, cell destruction | Contact dermatitis, tuberculin reaction, type 1 diabetes, multiple sclerosis |
-
-Multiple mechanisms may operate in one disease.
+| Type | Name | Mechanism of injury |
+|---|---|---|
+| **Type I** | Immediate hypersensitivity | Th2 cells, IgE antibodies, and mast cells and other leucocytes; mast cells release mediators that act on vessels and smooth muscle, and proinflammatory cytokines that recruit inflammatory cells |
+| **Type II** | Antibody-mediated disorders | Antibodies, usually IgG and rarely IgM, injure cells by promoting their phagocytosis or lysis, and injure tissues by inducing inflammation; antibodies may also interfere with cellular functions without tissue injury |
+| **Type III** | Immune complex-mediated disorders | Antibodies, typically IgG, bind antigens in the circulation or in tissues; the antigen-antibody complexes deposit in tissues and induce inflammation |
+| **Type IV** | Cell-mediated immune disorders | T lymphocytes (Th1 and Th17 cells and CD8 positive cytotoxic T lymphocytes) cause the tissue injury |
 
 
 ## Example of each type of hypersensitivity.
 
-Type I: anaphylaxis or atopic asthma. Type II: autoimmune haemolytic anaemia or Goodpasture syndrome. Type III: SLE or serum sickness. Type IV: contact dermatitis or the tuberculin reaction.
-
-- **Type I:** systemic anaphylaxis (drugs, bee sting, peanuts), allergic rhinitis (hay fever), atopic bronchial asthma, urticaria, atopic dermatitis, food allergy.
-- **Type II:**
-- Cell destruction: autoimmune haemolytic anaemia, autoimmune thrombocytopenic purpura, transfusion reactions, haemolytic disease of the newborn, drug-induced cytopenias.
-- Inflammation: Goodpasture syndrome, ANCA vasculitis, pemphigus vulgaris, acute rheumatic fever.
-- Functional derangement: myasthenia gravis (blocking acetylcholine receptor antibodies), Graves disease (stimulating TSH receptor antibodies), pernicious anaemia.
-- **Type III:** systemic lupus erythematosus, serum sickness, some forms of glomerulonephritis (poststreptococcal), polyarteritis nodosa, and the local Arthus reaction.
-- **Type IV:** contact dermatitis (poison ivy), tuberculin test and tuberculosis, granulomatous inflammation, type 1 diabetes, multiple sclerosis, rheumatoid arthritis, inflammatory bowel disease, graft rejection, and viral hepatitis (CTL-mediated).
+| Type | Examples |
+|---|---|
+| **Type I** | Systemic anaphylaxis (for example after penicillin, peanuts, shellfish or bee venom); local reactions such as urticaria, allergic rhinitis (hay fever), asthma, atopic dermatitis and food allergies |
+| **Type II** | Autoimmune haemolytic anaemia, thrombocytopenia and agranulocytosis; transfusion reactions; haemolytic disease of the foetus and newborn; some forms of glomerulonephritis; myasthenia gravis; pernicious anaemia; Graves disease |
+| **Type III** | Serum sickness (the prototype of systemic immune complex disease); systemic lupus erythematosus; the Arthus reaction (local immune complex disease) |
+| **Type IV** | Tuberculin reaction (the classic delayed-type hypersensitivity); contact dermatitis; rheumatoid arthritis; multiple sclerosis; inflammatory bowel disease; type 1 diabetes and viral hepatitis (CD8 positive cytotoxic T lymphocyte injury) |
 
 
 ## Mechanism of type 2 hypersensitivity.
 
-In type II hypersensitivity, IgG or IgM antibodies bind to antigens on cell surfaces or in the extracellular matrix and cause injury by opsonisation and phagocytosis, complement-mediated lysis, inflammation, or interference with cell function.
+Antibodies, most often IgG, react with antigens present on cell surfaces or in the extracellular matrix and cause disease by destroying these cells, triggering inflammation, or interfering with normal functions.
 
-The antigen may be a normal self antigen or an exogenous substance, such as a drug or microbial protein, bound to the cell or matrix. The mechanisms are:
+1. **Opsonisation and phagocytosis.**
 
-1. **Opsonisation and phagocytosis.** Cells coated with IgG are recognised by Fc receptors on phagocytes. IgM or IgG deposited on cells also activates complement by the classical pathway, generating C3b, which is recognised by complement receptors on macrophages and neutrophils. The result is phagocytosis and destruction of the cells, as in autoimmune haemolytic anaemia and thrombocytopenia.
-2. **Complement-mediated lysis.** Complement activation forms the membrane attack complex, which drills holes in the membrane and causes osmotic lysis.
-3. **Antibody-dependent cellular cytotoxicity (ADCC).** NK cells and macrophages bind the Fc portion of IgG on the target cell and kill it without phagocytosis. Its contribution to common diseases is uncertain.
-4. **Inflammation.** Antibody deposited in fixed tissues such as basement membranes activates complement, generating C5a (chemotactic) and C3a and C5a (anaphylatoxins that increase vascular permeability). Neutrophils and monocytes engage Fc and C3b receptors and release lysosomal enzymes and reactive oxygen species. This causes tissue injury in Goodpasture syndrome and some forms of glomerulonephritis.
-5. **Cellular dysfunction without injury.** Antibodies against receptors or other molecules impair or dysregulate function. In myasthenia gravis, antibodies to acetylcholine receptors block neuromuscular transmission. In Graves disease, antibodies stimulate the TSH receptor, causing hyperthyroidism. In pernicious anaemia, antibodies neutralise intrinsic factor.
+- Cells opsonised by IgG antibodies are recognised by phagocyte Fc receptors.
+- IgM or IgG antibodies on cell surfaces activate the complement system by the classical pathway; the cleavage product C3b is deposited on the cells and recognised by receptors on macrophages and neutrophils.
+- The net result is phagocytosis of the opsonised cells and their destruction inside the phagocytes.
+- Complement activation also forms the **membrane attack complex**, which "drills holes" through the lipid bilayer, causing osmotic lysis of the cells.
+- In **antibody-dependent cellular cytotoxicity (ADCC)**, cells coated with IgG are killed by NK cells and macrophages that bind through Fc receptors, and cell lysis proceeds without phagocytosis.
+
+2. **Inflammation.**
+
+- When antibodies deposit in fixed tissues, such as basement membranes and extracellular matrix, the resultant injury is due to inflammation.
+- The deposited antibodies activate complement, generating chemotactic agents (mainly C5a) and anaphylatoxins (C3a and C5a), which increase vascular permeability.
+- Leucocytes are activated by engagement of their C3b and Fc receptors, and release lysosomal enzymes (proteases) and reactive oxygen species that damage the tissues.
+
+3. **Cellular dysfunction.** Antibodies directed against cell surface receptors impair or dysregulate function without causing cell injury or inflammation.
+
+- In myasthenia gravis, antibodies against acetylcholine receptors block neuromuscular transmission.
+- In pernicious anaemia, antibodies block intrinsic factor.
+- In Graves disease, antibodies against the thyroid-stimulating hormone receptor stimulate the thyroid cells, resulting in hyperthyroidism.
 
 
 ## What is anaphylactic reaction?
