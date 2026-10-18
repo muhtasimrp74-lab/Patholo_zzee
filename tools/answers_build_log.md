@@ -363,3 +363,10 @@ Questions: myeloma bone marrow and ESR, Bence Jones short note, generalised and 
 - build.py run twice: index.html byte-identical.
 - VERSION in sw.js bumped from v146 to v147; build.py, gen_manifests.py and build.py run again.
 - tools/tests/test_site.py not run this session, at the owner's request.
+
+### Session 10, batch 4 (five further questions)
+Questions: investigation of anaemia, causes of iron deficiency anaemia (general, by age group, adult males, postmenopausal women).
+- All from the textbook (Chapter 14 iron deficiency anaemia, anaemia introduction and blood loss text); no outside source.
+- Investigation of anaemia: the textbook has no single investigation protocol; the answer collects the tests it names in different places.
+- Causes by age group: the textbook gives no table by age; the answer arranges its statements by group.
+- Progress file lists 655 questions done; 480 remain.
