@@ -723,3 +723,28 @@ The site textbook does not cover Clinical Biochemistry, so all answers use outsi
 - PSA: the old description of PSA as kallikrein-3 and a serine protease is left out because the StatPearls page does not state it.
 - Amylase: no single normal range exists in the source, so only the reported spread (about 20 to 300 U/L) is given.
 - Acid phosphatase: Paget disease and multiple myeloma (from the NISCPR table) and the sipuleucel-T immunotherapy details are left out as not closely tied to the question.
+
+## Session 20, batch 2 (work-list questions 9 to 16, Chapter 30: AFP, creatine kinase, lipids, lipoproteins, dyslipidaemia, body fluids; outside sources)
+
+The site textbook does not cover Clinical Biochemistry, so all answers use outside sources. None of these answers were previously empty.
+
+| Question | Source | URL |
+|---|---|---|
+| Clinical importance of alpha-fetoprotein | StatPearls "Alpha-Fetoprotein Analysis" | https://www.ncbi.nlm.nih.gov/books/NBK430750/ |
+| Clinical importance of creatine kinase | StatPearls "Creatine Phosphokinase" | https://www.ncbi.nlm.nih.gov/books/NBK546624/ |
+| Lipid profile, components and normal range | NCEP ATP III "At-a-Glance Summary" (classification and 9 to 12 hour fast); StatPearls "Cholesterol Levels" (components, Friedewald equation); StatPearls "Biochemistry, High Density Lipoprotein" (total cholesterol to HDL ratio, non-fasting use); Endotext "Approach to the Patient with Dyslipidemia" (non-HDL cholesterol, direct LDL) | https://hr.universityhealthsystem.com/secure/xwebdocs/Pharmacy/Pathways_and_Guidelines/Hyperlipidemia/06-National%20Cholesterol%20Education%20Program%20Adult%20Treatment%20Panel%20III%20%28At-A-Glance%20Summary%29.pdf ; https://dev2.statpearls.com/point-of-care/19466 ; https://www.ncbi.nlm.nih.gov/books/NBK549802/ ; https://www.endotext.org/wp-content/uploads/pdfs/approach-to-the-patient-with-dyslipidemia.pdf |
+| Fractions of lipid; short note on lipoprotein | StatPearls "Biochemistry, Lipoprotein Metabolism"; StatPearls "Biochemistry, High Density Lipoprotein" (apolipoprotein functions) | https://www.statpearls.com/point-of-care/732 ; https://www.ncbi.nlm.nih.gov/books/NBK549802/ |
+| HDL good and LDL harmful | StatPearls "Biochemistry, High Density Lipoprotein"; StatPearls "Biochemistry, Lipoprotein Metabolism"; StatPearls "Cholesterol Levels" | as above |
+| Diagnosis of dyslipidaemia | Endotext "Approach to the Patient with Dyslipidemia"; StatPearls "Cholesterol Levels" (secondary causes); NCEP ATP III summary (cut-offs); StatPearls "Pediatric Dyslipidemia" (examination signs only) | https://www.endotext.org/wp-content/uploads/pdfs/approach-to-the-patient-with-dyslipidemia.pdf ; https://dev2.statpearls.com/point-of-care/19466 ; https://www.statpearls.com/point-of-care/136349 |
+| Body fluids usually examined | ADLM "Pearls of Laboratory Medicine: Body Fluids" (2017) | https://myadlm.org/science-and-research/clinical-chemistry/clinical-chemistry-trainee-council/pearls-of-laboratory-medicine-in-english/2017/body-fluids |
+
+### Points left out and decisions needed
+- Body fluids: the only source read that lists the fluids is the ADLM page, which covers seven (cerebrospinal, pleural, pericardial, peritoneal, amniotic, synovial fluid and saliva). Blood, urine, stool, semen and sputum are not listed in any source read, so they are left out of this answer although the earlier answer included them. Please decide whether to add a source for them.
+- Lipid profile: the earlier VLDL range (2 to 30 mg/dL) and the VLDL cholesterol equals triglycerides divided by 5 rule are left out because no source read states them. The ATP III summary and StatPearls differ on fasting (9 to 12 hours versus 12 hours); the ATP III figure is used. Sex-specific HDL cut-offs (below 50 mg/dL in women, from the University of Washington laboratory guideline) are not used; the ATP III cut-off of below 40 mg/dL is given. The ATP III summary gives total cholesterol as "over 240"; it is written as 240 and above, the standard ATP III cut-off. Total cholesterol has no range on the StatPearls page.
+- Fractions of lipid: phospholipids and free fatty acids, listed in the earlier answer, are left out because no source read states them. Lipoprotein(a) is not described on the StatPearls lipoprotein page.
+- Dyslipidaemia diagnosis: the Endotext chapter does not describe examination signs, so xanthomas, xanthelasma and corneal arcus come from the StatPearls paediatric dyslipidaemia page. The earlier mention of tendon and eruptive xanthomas as linked to specific disorders, and of the creamy layer in standing serum, are left out (no source read). Repeating an abnormal test after 2 weeks to 3 months is from the paediatric page only, so it is left out.
+- Many NCBI Bookshelf pages returned a verification page, so some StatPearls pages (calcium, lipoprotein, lipid panel) were read through statpearls.com copies; their summaries should be spot-checked against NCBI if exact wording matters.
+- HDL: the HDL page does not compare HDL and LDL directly; the LDL column comes from the lipoprotein metabolism page.
+
+### Session 20 totals
+- All 16 questions remaining in the work list were rewritten (the work list was 16 questions, not 75, because 1120 of 1135 distinct questions were already done).
