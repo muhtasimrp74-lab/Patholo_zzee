@@ -525,3 +525,15 @@ Points left out:
 - Case with palpable gallbladder: the textbook does not describe a palpable gallbladder sign, so only the jaundice type and the cholestatic features are stated.
 - Names of the primary glomerular diseases: the list follows Table 20.5 (the table cells are partly garbled in the source file) plus C3 glomerulonephritis and fibrillary glomerulonephritis from the text.
 - Classification of glomerular disease: Table 20.2 (histologic classification) has no usable cell text in the source file, so the answer follows the text (primary and secondary) and Table 20.5.
+
+### Batch 3 (Chapter 20: nephrotic and nephritic syndromes, acute renal failure, kidney tumours)
+
+Sources: the site textbook only (Chapter 20, tools/textbook_src/ch20.json; Wilms tumour from Chapter 10). **No outside sources were used.** No answer in this batch was previously empty.
+
+Points left out:
+
+- Investigation of nephrotic syndrome: the textbook has no dedicated investigation passage; the answer is assembled from the pathophysiology, the exclusion of secondary causes, and the morphology of minimal change disease, membranous nephropathy and focal segmental glomerulosclerosis.
+- Xp11 translocation renal cell carcinoma: no frequency is given in the textbook.
+- Causes of acute renal failure: no list of prerenal causes is given in the textbook, so none is stated.
+- Hand-edit hunk 2 of tools/hand_edits.json (a typo edit on the old Wilms tumour answer) dropped because its anchor text was rewritten.
+- Session stopped after item 45 of 75 at the user's request; the session end checks (idempotent build, VERSION bump, manifests, unit tests) were not run.
