@@ -7593,123 +7593,113 @@ Red cell indices describe the red cells measured by special instrumentation.
 
 ## What information can you get from a stained PBF?
 
-A Romanowsky-stained peripheral blood film (PBF) provides morphological information on all three cell lines and is a cornerstone of haematological diagnosis.
+**Red cells**
 
-**Red cells.** The film shows size (microcytes, macrocytes, macro-ovalocytes) and anisocytosis; the degree of haemoglobinisation (hypochromia, with an enlarged zone of central pallor, or hyperchromic cells such as spherocytes that lack central pallor); polychromasia (reticulocytes); and poikilocytosis, with specific shapes that point to a diagnosis: spherocytes (hereditary spherocytosis, autoimmune haemolytic anaemia), elliptocytes and pencil cells (iron deficiency), target cells (thalassaemia, liver disease, haemoglobin C, post-splenectomy), sickle cells, teardrop cells (myelofibrosis, thalassaemia, myelophthisis), schistocytes (microangiopathic haemolysis, mechanical valves), bite cells and blister cells (G6PD deficiency) and burr cells. Inclusions include basophilic stippling (thalassaemia, lead poisoning), Howell-Jolly bodies (asplenia), Pappenheimer bodies and malarial parasites, and the film shows rouleaux and agglutination, and nucleated red cells.
+- **Size:** normocytic, microcytic or macrocytic; variation in size (anisocytosis).
+- **Haemoglobinisation:** normochromic or hypochromic; the zone of central pallor is enlarged in iron deficiency.
+- **Shape (poikilocytosis):** pencil cells in iron deficiency; target cells, basophilic stippling and fragmented cells in thalassaemia; macro-ovalocytes in megaloblastic anaemia; sickled cells; spherocytes.
+- **Reticulocytes:** larger, with blue-red polychromatophilic cytoplasm because of RNA.
+- **Nucleated red cell precursors** (normoblasts), in severe anaemia and thalassaemia.
 
-**White cells.** The differential count, hypersegmented neutrophils (five or more lobes) in megaloblastic anaemia, toxic changes in infection, left shift, myelocytes and blasts (leukaemia, leukoerythroblastosis), atypical lymphocytes (infectious mononucleosis), eosinophilia and basophilia.
+**White cells:** hypersegmented neutrophils with five or more nuclear lobules in megaloblastic anaemia.
 
-**Platelets.** Their number is estimated and morphology assessed (giant platelets, clumps), which serves to confirm or refute the automated platelet count.
-
-**Other information.** Haemoparasites (malaria, filaria, trypanosomes), and, in combination with indices and the reticulocyte count, a morphological classification of the anaemia and a lead to the cause of any cytopenia or leukocytosis.
+**Platelets:** large platelets (megathrombocytes) in immune thrombocytopenic purpura; confirms a low count, since clumping of platelets during automated counting can cause spurious thrombocytopenia.
 
 
 ## Define ESR / write a short note on ESR.
 
-**Definition.** The erythrocyte sedimentation rate (ESR) is the rate at which red cells settle out of anticoagulated blood in a vertical tube under the influence of gravity, measured as the length in millimetres of the clear plasma column above the red cells at the end of one hour.
+**Definition:** the erythrocyte sedimentation rate (ESR) is the rate at which red cells settle in a vertical tube of anticoagulated blood over one hour, measured in millimetres in the first hour.
 
-**Method.** The Westergren method is standard: venous blood is mixed with 3.8% (or 3.2%) sodium citrate in the ratio 4:1, drawn into a 200 mm long, 2.5 mm bore tube, held exactly vertical at room temperature and read after one hour. The Wintrobe method uses a shorter tube with undiluted EDTA blood, and automated methods are increasingly used.
+**Methods:** Westergren (most commonly used), modified Westergren, Wintrobe and micro-ESR.
 
-**Principle and mechanism.** Sedimentation occurs in three stages: an initial lag phase in which rouleaux form, a phase of rapid, constant-rate fall (decantation) and a final slow packing phase. The principal determinant is rouleaux formation, the stacking of red cells like coins. Normally red cells repel each other because of the negative surface charge (zeta potential). Positively charged acute-phase proteins, particularly fibrinogen, and immunoglobulins neutralise this charge, promoting rouleaux. Aggregates are heavier relative to their surface area and settle faster.
+**Principle**
 
-**Reference values (Westergren).** Males up to 15 mm/h and females up to 20 mm/h in the first hour, rising with age (an approximate upper limit is age ÷ 2 in men and (age + 10) ÷ 2 in women). It is very low in the newborn.
+- Red cells normally repel each other because of the negative charge on their surfaces and settle slowly.
+- Fibrinogen and immunoglobulins neutralise this repulsion and make the red cells aggregate into stacks called **rouleaux**, which are heavier and sediment faster.
+- ESR depends on the balance between factors that promote and factors that resist sedimentation.
 
-**Clinical significance.**
+**Phases of sedimentation:** rouleaux formation, rapid sedimentation at a constant rate, and packing of the rouleaux with slow sedimentation.
 
-- Raised: infections (tuberculosis, chronic infections), chronic inflammatory diseases (rheumatoid arthritis, giant cell arteritis, polymyalgia rheumatica), malignancy (especially multiple myeloma, where it may exceed 100 mm/h), anaemia, pregnancy, nephrotic syndrome, tissue necrosis such as myocardial infarction.
-- Low: polycythaemia, sickle cell disease, hereditary spherocytosis (cells cannot form rouleaux), congestive cardiac failure, hypofibrinogenaemia.
+**Technical requirements:** the tube must be held upright; tilting and higher temperature increase the rate; the sample should be set up within two hours of collection.
 
-The ESR is a nonspecific test, useful for screening and for monitoring disease activity of inflammatory conditions, and a normal ESR does not exclude disease.
+**Clinical significance**
+
+- A nonspecific test, a general index of disease activity, interpreted with the clinical findings.
+- Raised in infectious, inflammatory and malignant conditions that change plasma proteins; also raised in anaemia and pregnancy.
+- Low in polycythaemia, sickle cell anaemia and hereditary spherocytosis.
+- A normal or mildly raised ESR does not exclude significant disease.
 
 
 ## Mention the major physiological factors affecting ESR.
 
-The ESR is influenced by several physiological conditions in a healthy person.
-
-- **Age:** it is very low at birth (0 to 2 mm/h), rises through childhood and tends to rise gradually in older adults.
-- **Sex:** it is higher in women than men, partly because of the lower haematocrit and higher fibrinogen.
-- **Pregnancy:** the ESR begins to rise from about the third month, may reach 40 to 50 mm/h at term and returns to normal about four weeks after delivery, because of the increase in fibrinogen and globulins and the fall in haematocrit from plasma volume expansion.
-- **Menstruation:** a slight rise.
-- **Meals and exercise:** a mild, short-lived rise after a meal, and variation by time of day, with higher values in the afternoon than the morning.
-
-Technical factors that influence the value, though not physiological, include the temperature (higher at higher temperature), tilting of the tube (which increases the rate), the dilution of blood and the time between blood collection and the test (blood should be tested within 2 to 4 hours).
+1. **Age:** values increase slightly with age.
+2. **Sex.**
+3. **Pregnancy:** values rise, because of haemodilution and an increased fibrinogen to albumin ratio, which increases rouleaux formation.
+4. **Lifestyle:** obesity, smoking and physical activity.
 
 
 ## How do changes in blood components influence ESR?
 
-The ESR depends on the balance between factors that promote rouleaux formation and those that oppose it.
+**Plasma proteins**
 
-**Plasma factors.** Increased fibrinogen (the single most important factor) and other acute-phase reactants, and increased globulins, including immunoglobulins and paraproteins in myeloma and the polyclonal rise in chronic infection, neutralise the negative surface charge of red cells and increase rouleaux, raising the ESR. Hypercholesterolaemia also raises it. Albumin has the opposite effect, so hypoalbuminaemia accelerates sedimentation, while hypofibrinogenaemia (for example in afibrinogenaemia) lowers it.
+- **Increased fibrinogen** and **immunoglobulins** promote rouleaux formation and increase ESR.
+- **Albumin** retards sedimentation; hypoalbuminaemia permits faster sedimentation.
+- Removal of fibrinogen by defibrination decreases ESR.
 
-**Red cell factors.**
+**Red cells**
 
-- Number: in anaemia, the lower red cell mass means less interference between settling cells and relatively more plasma protein per cell, so the ESR rises; in polycythaemia it falls.
-- Shape: spherocytes, sickle cells, acanthocytes and other poikilocytes cannot form rouleaux, so the ESR is low in hereditary spherocytosis and sickle cell disease. Macrocytes settle faster because they have a smaller surface area-to-volume ratio, and microcytes slower.
-- Agglutination: in cold agglutinin disease the clumping of red cells may produce spurious values.
-
-**Other factors.** Bile salts and high plasma viscosity (lowering the rate) and a markedly raised white cell count (a small effect on the ESR) can also modify the result.
+- **Anaemia** increases ESR.
+- **Polycythaemia** decreases ESR.
+- **Sickle cells and spherocytes** cannot form rouleaux, so ESR is low in sickle cell anaemia and hereditary spherocytosis.
+- **Macrocytes** settle faster; **microcytes** settle more slowly.
 
 
 ## What are the iron profile tests?
 
-The iron profile (iron studies) assesses body iron status and distinguishes iron deficiency from other causes of microcytic anaemia. The tests are:
+| Test | Finding in iron deficiency |
+|---|---|
+| **Serum iron** | Low |
+| **Serum ferritin** | Low; below 12 µg/L |
+| **Total iron-binding capacity** (reflects transferrin) | High |
+| **Transferrin saturation** | Below 15% |
+| **Serum hepcidin** | Low, because reduced iron stores inhibit its synthesis |
 
-1. **Serum iron:** the iron bound to transferrin; it is low in iron deficiency and anaemia of chronic inflammation and high in iron overload and haemolysis. Reference values average about 120 µg/dL in males and 100 µg/dL in females and are subject to diurnal variation (highest in the morning).
-2. **Total iron-binding capacity (TIBC):** a measure of transferrin, the iron transport protein; it is raised in iron deficiency, as the liver increases transferrin synthesis, and reduced in chronic inflammation, malnutrition and iron overload.
-3. **Transferrin saturation:** serum iron ÷ TIBC × 100. Normally about one-third; below 15% in iron deficiency.
-4. **Serum ferritin:** the best single index of storage iron, since plasma ferritin correlates with body iron stores. It is below 12 µg/L in iron deficiency, and may reach several thousand in iron overload. As an acute-phase reactant it may be raised in inflammation, liver disease and malignancy, which can mask iron deficiency.
-5. **Additional tests:** soluble transferrin receptor (raised in iron deficiency, not influenced by inflammation), free erythrocyte protoporphyrin or zinc protoporphyrin (raised), reticulocyte haemoglobin content, hepcidin (low in iron deficiency, high in inflammation), and Prussian blue staining of the bone marrow for stainable iron, absent in iron deficiency.
-
-| Test | Iron deficiency | Chronic inflammation | β-Thalassaemia trait |
-|---|---|---|---|
-| Serum iron | Low | Low | Normal |
-| TIBC | High | Low/normal | Normal |
-| Transferrin saturation | Low (<15%) | Low/normal | Normal |
-| Ferritin | Low | Normal/high | Normal |
-| Marrow iron | Absent | Present (in macrophages) | Normal/increased |
+In health transferrin is about one-third saturated; serum iron averages 120 µg/dL in males and 100 µg/dL in females.
 
 
 ## Enumerate the laboratory methods of assessing iron stores.
 
-The methods for assessing body iron stores are as follows.
-
-1. **Serum ferritin:** the most practical and widely used noninvasive method, because plasma ferritin correlates with body iron stores; a level below 12 µg/L indicates depleted stores. It must be interpreted with caution in inflammation, infection, liver disease and malignancy.
-2. **Bone marrow iron:** Prussian blue (Perls) staining of an aspirate smear reveals haemosiderin in macrophages; absence of stainable iron is diagnostic of iron deficiency and increased iron is seen in iron overload and chronic inflammation. It has been considered the gold standard but is invasive.
-3. **Transferrin saturation, serum iron and TIBC:** these reflect iron supply to tissues, and are altered once stores are depleted.
-4. **Soluble transferrin receptor and zinc protoporphyrin:** indicate functional iron deficiency in erythropoiesis.
-5. **Liver biopsy or MRI:** quantitation of hepatic iron concentration in suspected iron overload (haemochromatosis, transfusional siderosis).
-6. **Desferrioxamine test and quantitative phlebotomy:** historical methods; urinary iron excretion after desferrioxamine, or the amount of iron removed by phlebotomy to depletion.
-7. **Therapeutic trial:** a reticulocyte response and rise in haemoglobin after oral iron supports iron deficiency.
+1. **Serum ferritin:** plasma ferritin generally correlates with body iron stores; below 12 µg/L in iron deficiency; values approaching 5000 µg/L in iron overload.
+2. **Bone marrow iron:** Prussian blue stain on smears of aspirated marrow; absence of stainable iron in macrophages is diagnostic of iron deficiency, and increased storage iron is seen in anaemia of chronic inflammation.
+3. **Serum iron and transferrin saturation:** fall as the storage pool is depleted, before anaemia appears.
 
 
 ## Define PCV.
 
-The packed cell volume (PCV), also called the haematocrit (Hct), is the ratio of the volume occupied by packed red cells to the total volume of whole blood, expressed as a percentage or as a fraction (L/L). It is a direct reflection of the red cell mass except where the plasma volume is altered by fluid retention or dehydration.
-
-It is measured by centrifuging anticoagulated blood in a capillary tube (microhaematocrit method, about 12,000 g for 5 minutes) or a Wintrobe tube, and reading the height of the red cell column relative to the whole column. Modern automated analysers calculate it (Hct = MCV × RBC ÷ 10). A small amount of plasma (about 1% to 3%) is trapped between the packed cells. Reference ranges (Robbins) are 39% to 49% in males and 33% to 43% in females. A rule of thumb is that the Hct is about three times the haemoglobin in g/dL. PCV is needed to calculate MCV and MCHC. It is reduced in anaemia and raised in polycythaemia and dehydration (relative polycythaemia).
+The packed cell volume (haematocrit) is the ratio of packed red cells to total blood volume.
 
 
 ## Name the red cell (absolute) indices with values.
 
-The absolute red cell indices (Wintrobe indices) are the mean cell volume, mean cell haemoglobin and mean cell haemoglobin concentration, derived from the haemoglobin, red cell count and haematocrit.
-
-| Index | Definition | Formula | Reference range |
-|---|---|---|---|
-| MCV (mean cell volume) | Average volume of a red cell | Hct (%) × 10 ÷ RBC (× 10¹²/L) | 82–96 fL |
-| MCH (mean cell haemoglobin) | Average haemoglobin mass per red cell | Hb (g/dL) × 10 ÷ RBC (× 10¹²/L) | 27–33 pg |
-| MCHC (mean cell haemoglobin concentration) | Average haemoglobin concentration in packed cells | Hb (g/dL) × 100 ÷ Hct (%) | 33–37 g/dL |
-| RDW (red cell distribution width) | Coefficient of variation of red cell volume | Automated | 11.5–14.5% |
-
-The MCV classifies anaemias as microcytic (below 82 fL), normocytic or macrocytic (above 96 fL), while the MCH and MCHC indicate hypochromia (low values) or, in the case of MCHC, spherocytosis (high value).
+| Index | Definition | Adult reference range |
+|---|---|---|
+| **Mean cell volume (MCV)** | Average volume of a red cell | 82 to 96 fL |
+| **Mean cell haemoglobin (MCH)** | Average content (mass) of haemoglobin per red cell | 27 to 33 pg |
+| **Mean cell haemoglobin concentration (MCHC)** | Average concentration of haemoglobin in a given volume of packed red cells | 33 to 37 g/dL |
+| **Red cell distribution width (RDW)** | Coefficient of variation of red cell volume | 11.5 to 14.5 |
 
 
 ## Write a short note on MCV.
 
-The mean cell volume (MCV) is the average volume of the red cells in a blood sample, expressed in femtolitres (fL; 10⁻¹⁵ L). The reference range for adults is 82 to 96 fL. It is measured directly by automated analysers (from the electrical impedance or light scatter produced by each cell) and can be calculated as MCV = Hct (%) × 10 ÷ red cell count (× 10¹²/L).
+**Definition:** the mean cell volume is the average volume of a red cell, expressed in femtolitres (fL).
 
-The MCV is the most useful of the indices in classifying anaemias. A low MCV (microcytosis) is found in iron deficiency, thalassaemia, anaemia of chronic inflammation (sometimes) and sideroblastic anaemia. A normal MCV is found in acute blood loss, most haemolytic anaemias, aplastic anaemia, renal failure, and in anaemias of chronic disease. A high MCV (macrocytosis) is found in megaloblastic anaemia (often more than 110 fL), alcohol excess, liver disease, hypothyroidism, myelodysplastic neoplasms, aplastic anaemia, drug therapy (hydroxyurea, zidovudine, methotrexate) and with marked reticulocytosis, since reticulocytes are larger than mature red cells.
+**Reference range:** 82 to 96 fL.
 
-Limitations: the MCV is an average and can be normal when microcytic and macrocytic populations coexist (as in combined iron and B₁₂ deficiency); the RDW and the blood film should be examined. MCV is falsely high with cold agglutinins and marked hyperglycaemia, and normally higher in newborns.
+**Use:** it classifies anaemia by red cell size.
+
+- **Microcytic** (low MCV): microcytic hypochromic anaemias are caused by disorders of haemoglobin synthesis, such as iron deficiency anaemia and thalassaemia.
+- **Normocytic:** for example acute blood loss.
+- **Macrocytic** (high MCV): macrocytic anaemias often stem from abnormalities that impair the maturation of erythroid precursors in the bone marrow, such as megaloblastic anaemia of vitamin B12 or folate deficiency.
 
 
 ## Indications of bone marrow biopsy / aspiration / examination.
@@ -7871,36 +7861,27 @@ Classification rests on red cell size (normocytic, microcytic, macrocytic), degr
 
 ## Write the morphological/red-cell-indices classification of anemia with examples.
 
-Anaemia is classified morphologically on the basis of the red cell indices, chiefly the MCV, MCH and MCHC, supported by examination of the blood film. This classification is clinically useful because the indices identify the underlying defect: disordered haemoglobin synthesis gives small pale cells, disordered DNA synthesis gives large cells, and a normal red cell phenotype points to blood loss, haemolysis, marrow failure or systemic disease.
+Anaemia is classified by red cell size (normocytic, microcytic, macrocytic), degree of haemoglobinisation shown by colour (normochromic, hypochromic) and shape.
 
-| Morphological type | Indices | Blood film | Causes (examples) |
-|---|---|---|---|
-| **Microcytic hypochromic** | MCV <80 fL; MCH <27 pg; MCHC <32 g/dL | Small, pale red cells with enlarged central pallor, pencil cells | Iron deficiency anaemia; thalassaemia syndromes; anaemia of chronic inflammation (some cases); sideroblastic anaemia; lead poisoning |
-| **Normocytic normochromic** | MCV 82–96 fL; MCH and MCHC normal | Cells of normal size and colour; polychromasia in haemolysis | Acute blood loss; haemolytic anaemias (hereditary spherocytosis, G6PD deficiency, sickle cell disease, immune haemolysis); aplastic anaemia; anaemia of chronic inflammation; renal failure; endocrine disease; marrow infiltration |
-| **Macrocytic** | MCV >96–100 fL; MCH raised; MCHC normal | Megaloblastic: macro-ovalocytes, hypersegmented neutrophils. Non-megaloblastic: round macrocytes | Megaloblastic: vitamin B₁₂ deficiency (pernicious anaemia), folate deficiency, drugs (methotrexate). Non-megaloblastic: chronic liver disease, alcoholism, hypothyroidism, myelodysplastic neoplasm, reticulocytosis |
-| **Dimorphic** | MCV may be normal; RDW raised | Two populations | Combined iron and B₁₂/folate deficiency; partially treated iron deficiency; sideroblastic anaemia |
-
-The red cell distribution width (RDW) adds a further dimension: it is raised when anisocytosis is marked (iron deficiency, megaloblastic anaemia) and normal or near normal in thalassaemia trait.
+| Type | Examples |
+|---|---|
+| **Microcytic hypochromic** (disorders of haemoglobin synthesis) | Iron deficiency anaemia; thalassaemia syndromes |
+| **Normocytic normochromic** (diverse aetiologies) | Acute blood loss; mild anaemia of hypothyroidism; anaemia of chronic inflammation (may also be slightly hypochromic and microcytic) |
+| **Macrocytic** (impaired maturation of erythroid precursors) | Megaloblastic anaemia of vitamin B12 or folate deficiency; aplastic anaemia (slightly macrocytic and normochromic) |
 
 
 ## Write a short note on investigations for morphological classification of anemia.
 
-The morphological classification of anaemia depends on a small set of laboratory tests performed on a venous blood sample.
-
-1. **Haemoglobin and haematocrit (PCV):** establish the presence and degree of anaemia.
-2. **Red cell count:** needed to calculate the indices.
-3. **Red cell indices:** MCV = PCV × 10 ÷ RBC; MCH = Hb × 10 ÷ RBC; MCHC = Hb × 100 ÷ PCV; and RDW. Modern automated analysers report these directly.
-4. **Peripheral blood film:** the examination of the size, shape and staining of red cells, white cell morphology and platelet number gives information that the indices cannot, for instance spherocytes, target cells, sickle cells, schistocytes, hypersegmented neutrophils and parasites.
-5. **Reticulocyte count:** an assessment of marrow response.
-
-According to these results, anaemia is typed as microcytic hypochromic, normocytic normochromic or macrocytic, and further investigations are chosen: iron studies and haemoglobin electrophoresis for microcytic anaemia; vitamin B₁₂, folate and bone marrow for macrocytic anaemia; and haemolysis screen, bone marrow, renal, hepatic and thyroid tests for normocytic anaemia.
+1. **Haemoglobin concentration and haematocrit:** reductions below the normal range establish anaemia.
+2. **Red cell indices:** mean cell volume, mean cell haemoglobin, mean cell haemoglobin concentration and red cell distribution width, determined by instrumentation; they classify size and haemoglobinisation.
+3. **Peripheral blood smear:** visual inspection for red cell shape and other morphology that points to specific causes.
+4. **Reticulocyte count:** reference range 0.5% to 1.5%.
 
 
 ## Define polycythemia.
 
-Polycythaemia denotes an abnormally high number of circulating red cells, usually with a corresponding rise in haemoglobin concentration and haematocrit (for example, haemoglobin above 16.5 g/dL in men and 16.0 g/dL in women, or haematocrit above 49% and 48%, respectively).
+**Polycythaemia** denotes an abnormally high number of circulating red cells, usually with a corresponding increase in the haemoglobin level. It may be relative (haemoconcentration from decreased plasma volume) or absolute (an increase in the total red cell mass).
 
-It is classified as **relative**, when there is haemoconcentration from reduced plasma volume (dehydration due to water deprivation, prolonged vomiting or diarrhoea, or diuretic excess) with a normal red cell mass, and **absolute**, when the total red cell mass is increased. Absolute polycythaemia is **primary** when it results from an intrinsic abnormality of haemopoietic precursors, the most common cause being polycythaemia vera, a myeloproliferative neoplasm with mutations (most often JAK2) that cause erythropoietin-independent growth of red cell progenitors, and rarely familial erythropoietin receptor mutations. It is **secondary** when it is a response to raised erythropoietin, which may be appropriate (chronic hypoxia: high altitude, chronic lung disease, cyanotic heart disease, smoking, haemoglobin variants with high oxygen affinity, Chuvash polycythaemia from VHL mutations stabilising HIF) or inappropriate (erythropoietin-secreting tumours such as renal cell carcinoma, hepatocellular carcinoma and cerebellar haemangioblastoma).
 
 ## Causes of iron deficiency anaemia.
 
@@ -8005,120 +7986,111 @@ Iron deficiency can result from:
 
 ## Name the changes of absolute values in iron deficiency anemia.
 
-In iron deficiency anaemia the absolute red cell indices change as follows: the **mean cell volume (MCV)** is reduced (below 80 fL), the **mean cell haemoglobin (MCH)** is reduced (below 27 pg), and the **mean cell haemoglobin concentration (MCHC)** is reduced (below 32 g/dL), reflecting microcytic hypochromic cells. The **red cell distribution width (RDW)** is raised because of marked anisocytosis. The haemoglobin and haematocrit are reduced, with the red cell count less severely reduced than the haemoglobin. The reticulocyte count is normal or low. The indices fall progressively, since in the early stage of iron depletion, before anaemia appears, the indices are normal.
+Iron deficiency anaemia gives a microcytic hypochromic anaemia:
+
+1. **Mean cell volume:** reduced.
+2. **Mean cell haemoglobin:** reduced.
+3. **Mean cell haemoglobin concentration:** reduced.
+
+Haemoglobin and haematocrit are depressed. Oral iron normalises the red cell indices.
 
 
 ## What are the causes of microcytic hypochromic anemia?
 
-Microcytic hypochromic anaemias are those in which defective synthesis of haemoglobin produces small, poorly haemoglobinised red cells. The synthesis of haemoglobin requires iron, haem and globin, and the causes may be grouped accordingly.
+Microcytic hypochromic anaemias are caused by disorders of haemoglobin synthesis.
 
-1. **Disorders of iron supply or utilisation**
-
-- Iron deficiency anaemia: chronic blood loss, dietary deficiency, malabsorption, increased requirements (the commonest cause).
-- Anaemia of chronic inflammation: cytokine (IL-6)-mediated hepcidin elevation sequesters iron in macrophages; the cells are normocytic or slightly microcytic.
-- Iron-refractory iron deficiency anaemia: TMPRSS6 mutations, with high hepcidin.
-
-2. **Disorders of globin synthesis**
-
-- Thalassaemia syndromes: β-thalassaemia (major, intermedia and minor) and α-thalassaemia (HbH disease, trait); and haemoglobin E and other thalassaemic haemoglobinopathies.
-
-3. **Disorders of haem synthesis**
-
-- Sideroblastic anaemias: hereditary (X-linked ALAS2 mutations), and acquired (myelodysplastic neoplasm, alcohol, isoniazid, chloramphenicol, copper deficiency).
-- Lead poisoning: inhibition of ALA dehydratase and ferrochelatase, with basophilic stippling.
+1. **Iron deficiency anaemia**, the commonest cause.
+2. **Thalassaemia syndromes.**
+3. **Anaemia of chronic inflammation:** the red cells may be normocytic and normochromic, or slightly hypochromic and microcytic.
+4. **TMPRSS6 mutations** (rare): high hepcidin, reduced iron absorption and failure to respond to iron therapy.
 
 
 ## How can the causes of microcytic anemia be differentiated by laboratory investigation?
 
-After confirming microcytosis with the red cell indices, the principal causes can be separated by the blood film, iron studies, haemoglobin analysis and marrow examination.
-
-| Investigation | Iron deficiency | β-Thalassaemia trait | Anaemia of chronic inflammation | Sideroblastic anaemia |
-|---|---|---|---|---|
-| RBC count | Reduced | Normal or high | Reduced | Reduced |
-| RDW | Increased | Normal | Normal | Increased |
-| Blood film | Hypochromia, pencil cells | Target cells, basophilic stippling | Normochromic or mildly hypochromic | Dimorphic |
-| Serum iron | Low | Normal | Low | High |
-| TIBC | High | Normal | Low | Normal |
-| Transferrin saturation | <15% | Normal | Low/normal | High |
-| Ferritin | Low | Normal | Normal/high | High |
-| Haemoglobin electrophoresis | Normal | HbA₂ 4–8% | Normal | Normal |
-| Marrow iron | Absent | Normal | Increased in macrophages | Ringed sideroblasts |
-
-In practice, iron studies come first. If they show iron deficiency, the cause is sought. If iron studies are normal in a microcytic patient, haemoglobin electrophoresis or HPLC is done to demonstrate the raised HbA₂ of β-thalassaemia trait (α-thalassaemia trait has a normal or low HbA₂ and is diagnosed by exclusion or DNA analysis), and marrow examination with Prussian blue staining is used if sideroblastic anaemia is suspected.
+| Feature | Iron deficiency | Anaemia of chronic inflammation | Thalassaemia trait |
+|---|---|---|---|
+| **Serum iron** | Low | Low | Iron deficiency excluded by serum iron, iron-binding capacity and ferritin |
+| **Total iron-binding capacity** | High | Reduced | |
+| **Serum ferritin** | Low | High | |
+| **Transferrin saturation** | Below 15% | | |
+| **Marrow macrophage iron** | Absent | Increased | |
+| **Haemoglobin electrophoresis** | | | HbA2 increased to 4% to 8% of total haemoglobin; HbF normal or slightly increased |
+| **Blood film** | Hypochromia, microcytosis, pencil cells | Normocytic normochromic, or slightly hypochromic and microcytic | Hypochromia, microcytosis, basophilic stippling, target cells |
 
 
 ## Enumerate the causes of iron deficiency anemia.
 
-Iron deficiency anaemia results from a negative iron balance for a prolonged time. The causes are:
-
-1. **Chronic blood loss** (the most common cause in developed societies): gastrointestinal (peptic ulcer, carcinoma, haemorrhoids, hookworm, NSAIDs, varices, inflammatory bowel disease), genital tract (menorrhagia, postpartum), urinary tract (haematuria), and frequent blood donation.
-2. **Inadequate dietary intake:** infants (low iron in milk), the impoverished, older adults, vegans, and populations dependent on cereal-based diets with poorly absorbable nonhaem iron.
-3. **Impaired absorption:** sprue, other fat malabsorption syndromes, chronic diarrhoea, gastrectomy and achlorhydria, and dietary inhibitors (tannates in tea, phytates, oxalates, carbonates, phosphates).
-4. **Increased requirement:** infancy, childhood and adolescence, pregnancy and lactation, and premenopausal females.
-5. **Rare:** iron-refractory iron deficiency anaemia (TMPRSS6 mutation) and chronic intravascular haemolysis with urinary iron loss (paroxysmal nocturnal haemoglobinuria).
+1. **Dietary lack:** infants, the impoverished, older adults and vegans (lack of haem iron).
+2. **Impaired absorption:** sprue, other causes of fat malabsorption (steatorrhoea), chronic diarrhoea, and gastrectomy (decreased acidity of the proximal duodenum and faster passage of gut contents).
+3. **Increased requirement:** growing infants, children and adolescents, and premenopausal females, particularly during pregnancy; multiple, closely spaced pregnancies carry exceptionally high risk.
+4. **Chronic blood loss:** external haemorrhage or bleeding into the gastrointestinal, urinary or genital tracts; the commonest cause in developed societies. In adult males and postmenopausal females, gastrointestinal blood loss must be assumed until proven otherwise.
 
 
 ## Why is iron deficiency the most common anemia in infancy and childhood?
 
-Iron deficiency is the most common anaemia in infancy and childhood because the requirement for iron is high and the supply is limited, so that stores, which are small at birth, are depleted early.
-
-The infant doubles the birth weight by about 5 months and triples it by one year, and the expansion of blood volume and the red cell mass, together with the growth of tissues, needs a large amount of iron. Iron stores accumulated in utero, mainly in the third trimester, last about 4 to 6 months; they are reduced in premature and low-birth-weight infants, twins, and infants of iron-deficient mothers. Milk is a poor source of iron: human breast milk contains only about 0.3 mg/L (although well absorbed) and cow's milk, which contains about twice as much, has poor bioavailability and may cause occult intestinal bleeding. Delayed introduction of iron-rich complementary foods therefore leads to a negative balance. In older children, continuing rapid growth, diets of poor iron content, recurrent infections and, in endemic areas, hookworm and other intestinal parasites cause continued deficiency. There is no regulated excretory pathway, so the only compensatory mechanism is increased absorption, which cannot meet the demand if intake is inadequate.
+1. **Very little iron in milk:** human breast milk provides only about 0.3 mg/L; cow's milk contains about twice as much, but its bioavailability is poor.
+2. **Increased requirement** in growing infants, children and adolescents.
 
 
 ## Give the changes in iron deficiency anemia.
 
-The changes in iron deficiency anaemia develop in stages as iron balance remains negative, and they involve the blood, the bone marrow and the tissues.
+**Stages**
 
-**Stages.** First, the storage pool is depleted: ferritin falls and marrow iron disappears, but the haemoglobin, serum iron and transferrin saturation remain normal. Second, as stores are exhausted, serum iron and transferrin saturation fall and TIBC rises, with increased erythroid activity but without anaemia. Third, frank anaemia appears with low serum iron, low ferritin and low transferrin saturation.
+1. Progressive depletion of iron stores first lowers serum iron and transferrin saturation without anaemia; marrow erythroid activity is increased.
+2. Anaemia appears only when stores are completely depleted, with low serum iron and ferritin and low transferrin saturation.
 
-**Blood.** Hypochromic microcytic anaemia: reduced Hb, PCV, MCV, MCH and MCHC; raised RDW; small pale red cells and pencil cells; reticulocytes normal or low; platelets often raised.
+**Bone marrow:** mild to moderate increase in erythroid progenitors; absence of stainable iron in macrophages.
 
-**Biochemical.** Serum iron low, TIBC raised, transferrin saturation below 15%, ferritin below 12 µg/L, hepcidin low.
+**Peripheral blood:** small (microcytic) and pale (hypochromic) red cells; enlarged zone of central pallor; pencil cells.
 
-**Bone marrow.** Mild to moderate erythroid hyperplasia with small, ragged normoblasts, and absence of stainable iron in macrophages.
-
-**Clinical and tissue changes.** Weakness, fatigue, pallor and dyspnoea; in long-standing deficiency, koilonychia, alopecia, atrophic glossitis and gastric mucosal atrophy, intestinal malabsorption, pica (including pagophagia), and in the rare Plummer-Vinson syndrome the triad of oesophageal webs, microcytic anaemia and atrophic glossitis.
+**Tissue changes in severe, long-standing deficiency:** koilonychia, alopecia, atrophic changes in the tongue and gastric mucosa, and intestinal malabsorption; pica, a craving for non-foodstuffs such as clay, or for ice (pagophagia). Oesophageal web with microcytic hypochromic anaemia and atrophic glossitis forms the triad of Plummer-Vinson syndrome.
 
 
 ## Give the laboratory diagnosis/blood picture of iron deficiency anemia.
 
-The diagnosis of iron deficiency anaemia rests on laboratory studies.
+**Blood picture**
 
-**1. Complete blood count.** Haemoglobin and haematocrit are depressed, usually to a moderate degree. The red cell count is relatively less reduced. MCV is below 80 fL, MCH below 27 pg and MCHC below 32 g/dL; the RDW is raised. The reticulocyte count is normal or low, platelets are often raised (reactive thrombocytosis), and white cell counts are normal.
+- Haemoglobin and haematocrit depressed, usually to a moderate degree.
+- Hypochromia, microcytosis and modest poikilocytosis; pencil cells.
 
-**2. Peripheral blood film.** Red cells are small (microcytic) and pale (hypochromic): the normal central pallor of about one-third of the cell diameter is enlarged and haemoglobin may be seen only in a narrow peripheral rim. There is anisocytosis and poikilocytosis with small elongated "pencil" cells; target cells may be present. Nucleated red cells are absent.
+**Iron studies**
 
-**3. Iron studies.** Serum iron is low, TIBC is raised (elevated transferrin), transferrin saturation is below 15%, and serum ferritin is below 12 µg/L. Serum hepcidin falls since reduced iron stores inhibit its synthesis. Soluble transferrin receptor and free erythrocyte protoporphyrin are raised.
+- Serum iron low.
+- Serum ferritin low.
+- Total iron-binding capacity high.
+- Transferrin saturation below 15%.
+- Serum hepcidin low.
 
-**4. Bone marrow (not routinely required).** A mild to moderate increase in erythroid progenitors, with micronormoblasts; absence of stainable iron in macrophages on Prussian blue staining is diagnostically significant.
+**Bone marrow:** mild to moderate increase in erythroid progenitors; absence of stainable iron in macrophages on Prussian blue stain of aspirated marrow.
 
-**5. Response to therapy.** Oral iron produces a reticulocyte increase in 5 to 7 days, followed by a steady rise in blood counts.
-
-**6. Search for the cause.** Stool for occult blood and for ova and parasites, upper and lower gastrointestinal endoscopy, and gynaecological and urinary evaluation.
+**Response to iron:** oral iron produces a rise in reticulocytes in about 5 to 7 days, followed by a steady increase in blood counts and normalisation of red cell indices.
 
 
 ## A pregnant lady has weakness, exertional dyspnoea, pale conjunctivae, smooth tongue. What is your probable diagnosis?
 
-The probable diagnosis is **iron deficiency anaemia of pregnancy**. Weakness, exertional dyspnoea and pallor of the conjunctivae are the nonspecific manifestations of anaemia, and the smooth tongue represents atrophic glossitis, which is caused by depletion of iron-containing enzymes in epithelial cells in established deficiency. Pregnancy is a state of markedly increased iron requirement (for the foetus, the placenta and the expansion of the maternal red cell mass), and many women, particularly those in low-resource countries with closely spaced pregnancies, enter pregnancy with limited stores. Folate deficiency (megaloblastic anaemia of pregnancy), which can also cause glossitis, is the main differential diagnosis, and a combined deficiency is common.
+**Probable diagnosis:** iron deficiency anaemia.
 
-Confirmation is by blood count (microcytic hypochromic anaemia with a raised RDW), blood film (pencil cells), low serum iron and ferritin with raised TIBC, and exclusion of folate and B₁₂ deficiency and haemoglobinopathy. Stool examination for hookworm should be done in endemic areas.
+- Increased requirement in pregnancy.
+- Weakness, malaise and dyspnoea on mild exertion are the general symptoms of anaemia.
+- Smooth tongue: atrophic changes in the tongue from depletion of iron-containing enzymes.
 
 
 ## A 50y male with bleeding peptic ulcer has Hb 9 g%. What morphological type of anemia do you expect on blood film?
 
-I expect a **microcytic hypochromic anaemia**, because the bleeding from a peptic ulcer in a middle-aged male is typically chronic or recurrent, and chronic blood loss gradually exhausts iron stores and produces iron deficiency. The film would show small, pale red cells with an enlarged central pallor, anisocytosis and pencil cells. If the haemorrhage were acute and massive, the anaemia would initially be normocytic and normochromic (since the red cells released into circulation are normal in size and colour), with reticulocytosis developing over the following days; the microcytic hypochromic picture develops later as iron stores are depleted.
+**Microcytic hypochromic anaemia** of iron deficiency.
+
+- Chronic blood loss, here gastrointestinal, depletes iron reserves and leads to iron deficiency anaemia.
+- Red cells are small and pale, with an enlarged zone of central pallor and pencil cells.
 
 
 ## Same patient: what will be his iron profile?
 
-The iron profile will be that of iron deficiency:
+1. Serum iron low.
+2. Serum ferritin low.
+3. Total iron-binding capacity high.
+4. Transferrin saturation below 15%.
+5. Absent stainable iron in marrow macrophages.
 
-- **Serum iron:** decreased.
-- **Total iron-binding capacity (TIBC):** increased, reflecting raised transferrin synthesis.
-- **Transferrin saturation:** reduced, below 15%.
-- **Serum ferritin:** reduced, below 12 µg/L, reflecting depleted stores.
-- **Soluble transferrin receptor:** raised.
-- **Marrow iron:** absent on Prussian blue staining (if examined).
 
 ## Define macrocytic anemia.
 
@@ -8267,87 +8239,85 @@ The diagnosis is confirmed by an outpouring of reticulocytes and a rise in haema
 
 ## Mention the causes of macrocytosis/macrocytic anemia.
 
-Macrocytosis (MCV above 100 fL) may occur with or without megaloblastic changes.
+**Megaloblastic**
 
-**Megaloblastic causes**
+1. **Vitamin B12 deficiency:** pernicious anaemia; gastrectomy (loss of intrinsic factor); achlorhydria; exocrine pancreatic insufficiency; ileal resection or disease; fish tapeworm; bacterial overgrowth in blind loops; increased demand (pregnancy, hyperthyroidism, disseminated cancer, chronic infection).
+2. **Folate deficiency:**
+   - Decreased intake: poor diet (alcohol use disorder, the indigent, the very old); malabsorption (sprue, lymphoma); drugs such as phenytoin and oral contraceptives.
+   - Increased requirement: pregnancy, infancy, chronic haemolytic anaemia, disseminated cancer.
+   - Impaired utilisation: folic acid antagonists such as methotrexate.
+3. **Drugs inhibiting DNA synthesis:** many chemotherapeutic drugs.
 
-- Vitamin B₁₂ deficiency: pernicious anaemia, gastrectomy, ileal disease or resection, fish tapeworm, bacterial overgrowth, strict vegan diet, nitrous oxide.
-- Folate deficiency: dietary lack, alcoholism, malabsorption, pregnancy and other increased demands, phenytoin and oral contraceptives.
-- Drugs impairing DNA synthesis: methotrexate, hydroxyurea, azathioprine, zidovudine, cytotoxic chemotherapy.
+**Nonmegaloblastic**
 
-**Non-megaloblastic causes**
-
-- Alcohol use disorder and chronic liver disease (round macrocytes from increased membrane lipid).
-- Hypothyroidism.
-- Reticulocytosis: haemolysis, acute haemorrhage, response to treatment.
-- Marrow disorders: myelodysplastic neoplasms, aplastic anaemia, myeloma and marrow infiltration.
-- Physiological: neonates, pregnancy.
-- Artefactual: cold agglutinins, marked hyperglycaemia, leukocytosis.
+- Anaemia of hepatocellular disease, from lipid abnormalities that add phospholipid and cholesterol to red cell membranes.
+- Aplastic anaemia, in which the red cells are usually slightly macrocytic.
 
 
 ## Write the laboratory investigation/blood picture of megaloblastic anemia.
 
-**Peripheral blood**
+**Blood**
 
-- Moderate to severe macrocytic anaemia: haemoglobin reduced, MCV raised (often 110 to 140 fL), MCH raised, MCHC normal; reticulocyte count low.
-- Film: red cells are macrocytic and oval (macro-ovalocytes), which, being large and well filled with haemoglobin, lack central pallor and appear hyperchromic; marked anisocytosis and poikilocytosis, teardrop and fragmented cells; sometimes nucleated red cells, basophilic stippling and Howell-Jolly bodies.
-- Neutrophils are larger than normal and hypersegmented, having five or more nuclear lobes.
-- In severe disease there is pancytopenia (leukopenia and thrombocytopenia, with sometimes large platelets).
+- Macrocytic, oval red cells (macro-ovalocytes), highly characteristic; mean cell haemoglobin concentration not raised.
+- Marked anisocytosis and poikilocytosis.
+- Low reticulocyte count.
+- Hypersegmented neutrophils, with five or more nuclear lobules.
+- Nucleated red cell progenitors occasionally, in severe anaemia.
+- Leukopenia and pancytopenia from ineffective haemopoiesis.
 
 **Bone marrow**
 
-- Hypercellular, because of increased numbers of precursors. Megaloblastic changes are seen at all stages of erythroid development: promegaloblasts are large with deeply basophilic cytoplasm, prominent nucleoli and fine nuclear chromatin; as cells mature, the nucleus keeps its finely distributed chromatin, instead of developing clumped, pyknotic chromatin, whereas cytoplasmic maturation and haemoglobinisation proceed normally (nuclear-cytoplasmic asynchrony).
-- Giant metamyelocytes and band forms; large megakaryocytes with bizarre, multilobate nuclei.
-- Increased iron stores, and increased cell death (ineffective haemopoiesis).
+- Markedly hypercellular.
+- Megaloblastic change at all stages of erythroid development; large promegaloblasts with deeply basophilic cytoplasm and fine nuclear chromatin; nuclear to cytoplasmic asynchrony.
+- Giant metamyelocytes and band forms; large megakaryocytes with bizarre multilobate nuclei.
 
 **Biochemical**
 
-- Serum B₁₂ low (in B₁₂ deficiency) or serum and red cell folate low (folate deficiency).
-- Raised unconjugated bilirubin and LDH (ineffective erythropoiesis and mild haemolysis).
-- Raised homocysteine in both deficiencies; raised methylmalonic acid in B₁₂ deficiency only.
-- Antibodies to intrinsic factor and parietal cells in pernicious anaemia.
+- Vitamin B12 deficiency: low serum vitamin B12; raised serum homocysteine and methylmalonic acid; antibodies to intrinsic factor in pernicious anaemia.
+- Folate deficiency: decreased serum or red cell folate; raised homocysteine; normal methylmalonate.
+- Reticulocyte outpouring and rise in haematocrit about 5 days after vitamin B12.
 
 
 ## What is megaloblast?
 
-A megaloblast is an abnormally large nucleated erythroid precursor, characteristic of megaloblastic anaemia, in which the nucleus shows delayed maturation relative to the cytoplasm. It results from impaired DNA synthesis due to deficiency of vitamin B₁₂ or folate. The nucleus retains a fine, open, finely distributed chromatin pattern, instead of developing the clumped pyknotic chromatin of the normal normoblast, while cytoplasmic maturation and haemoglobin accumulation proceed at a normal pace, producing nuclear-cytoplasmic asynchrony. The most primitive cells (promegaloblasts) are large and have deeply basophilic cytoplasm and prominent nucleoli. The megaloblast gives rise to the macro-ovalocyte in the peripheral blood, and the majority of megaloblasts die in the marrow by apoptosis (ineffective erythropoiesis). Similar changes appear in granulocytic precursors (giant metamyelocytes), megakaryocytes and the mucosal cells of the gastrointestinal tract.
+**Megaloblasts** are the enlarged, abnormal haemopoietic precursors of megaloblastic anaemia. The most primitive (promegaloblasts) are large, with deeply basophilic cytoplasm, prominent nucleoli and a fine nuclear chromatin; as they differentiate, the nucleus keeps its fine chromatin while haemoglobin accumulates normally in the cytoplasm, producing nuclear to cytoplasmic asynchrony.
 
 
 ## Write a short note on Schilling test.
 
-The Schilling test is a test of vitamin B₁₂ absorption used to determine the cause of B₁₂ deficiency, in particular to distinguish pernicious anaemia from other causes of malabsorption.
+The Schilling test finds the cause of vitamin B12 deficiency by measuring absorption of an oral dose of radiolabelled vitamin B12 as excretion in the urine.
 
-**Principle and procedure.** Radioactive (⁵⁷Co or ⁵⁸Co) cyanocobalamin is given orally to a fasting patient. An hour or two later, a large (1000 µg) intramuscular "flushing" dose of unlabelled B₁₂ is injected, which saturates the binding proteins and causes a proportion of the absorbed radioactive B₁₂ to be excreted in the urine. The urine is collected for 24 hours and its radioactivity measured.
+**Stage 1:** radiolabelled (cobalt) vitamin B12 is given by mouth, after an intramuscular dose of unlabelled vitamin B12 to saturate body stores; urine is collected for 24 hours. Less than 10% excreted indicates malabsorption.
 
-**Stages and interpretation.**
+**Stage 2:** the test is repeated with oral intrinsic factor.
 
-- Stage I: urinary excretion below 10% of the administered dose indicates malabsorption of B₁₂; normal excretion is above 10%.
-- Stage II: the test is repeated with oral intrinsic factor given with the radiolabelled B₁₂. Correction of excretion to normal indicates lack of intrinsic factor (pernicious anaemia or gastrectomy); persistent low excretion indicates ileal disease or malabsorption.
-- Stage III: repetition after a course of antibiotics, which corrects absorption in bacterial overgrowth; repetition after pancreatic enzymes corrects absorption in pancreatic insufficiency.
+- Normal excretion: lack of intrinsic factor, that is pernicious anaemia.
+- Persistently low excretion: malabsorption from another cause, for example ileal disease.
 
-The test is now rarely performed, because radioactive B₁₂ is not widely available; it has been replaced by serological testing for antibodies to intrinsic factor, serum gastrin and pepsinogen, and by methylmalonic acid and homocysteine levels.
+Many laboratories no longer perform it, because the radiolabelled test substances are no longer produced.
 
 
 ## A patient after partial gastrectomy has pallor, weakness, neuropathy/paresthesia. What is your provisional diagnosis?
 
-The provisional diagnosis is **megaloblastic anaemia due to vitamin B₁₂ deficiency** (a post-gastrectomy B₁₂ deficiency, clinically similar to pernicious anaemia). Pallor and weakness are the manifestations of anaemia, and neuropathy with paraesthesiae is the characteristic neurological complication of vitamin B₁₂ deficiency (demyelination of the dorsal and lateral columns of the spinal cord, subacute combined degeneration, and peripheral neuropathy), which is not seen with folate deficiency.
+**Provisional diagnosis:** megaloblastic anaemia from vitamin B12 deficiency.
+
+- Pallor and weakness: anaemia.
+- Neuropathy and paraesthesia: demyelination of the dorsal and lateral spinal tracts, producing severe paraesthesiae in the lower limbs, sensory ataxia and spastic paraparesis; also peripheral nerve change.
 
 
 ## Same: what is the cause?
 
-The cause is loss of intrinsic factor. After gastrectomy (total or, more slowly, partial) the parietal cells of the gastric fundus that secrete intrinsic factor are removed or reduced, so that the vitamin B₁₂–intrinsic factor complex cannot form and B₁₂ cannot be absorbed in the ileum through cubilin. Achlorhydria and loss of pepsin also impair the release of B₁₂ from food proteins, and bacterial overgrowth in the blind loop may compete for B₁₂. The deficiency becomes manifest only after a latent period of several years, since hepatic B₁₂ stores are sufficient for 2 to 4 years or more. Iron deficiency may coexist, because gastrectomy decreases iron absorption through loss of acid and rapid transit.
+With gastrectomy, **intrinsic factor is lost**, so vitamin B12 cannot be absorbed. Once stored vitamin B12 is depleted, anaemia develops.
 
 
 ## Same: what is the hematological profile / how will you confirm?
 
-**Haematological profile.**
+1. **Blood:** macro-ovalocytes, hypersegmented neutrophils, low reticulocyte count, leukopenia.
+2. **Marrow:** hypercellular, with megaloblastic change.
+3. **Serum vitamin B12:** low.
+4. **Homocysteine and methylmalonic acid:** raised.
+5. **Therapeutic response:** reticulocyte outpouring and rise in haematocrit about 5 days after parenteral vitamin B12.
 
-- Macrocytic anaemia: reduced haemoglobin, MCV often above 110 fL, raised MCH, normal MCHC, low reticulocyte count.
-- Blood film: macro-ovalocytes, anisopoikilocytosis, hypersegmented neutrophils; leukopenia and thrombocytopenia in severe cases.
-- Bone marrow: hypercellular with megaloblastic erythropoiesis, giant metamyelocytes and bizarre megakaryocytes.
-- Raised LDH and unconjugated bilirubin.
-
-**Confirmation.** Serum vitamin B₁₂ is low (below about 200 pg/mL), with raised serum homocysteine and methylmalonic acid; serum folate is normal or raised. The absorption defect can be demonstrated by the Schilling test, with correction on adding intrinsic factor, though it is rarely used now. Antibodies to intrinsic factor are generally absent, which distinguishes this from pernicious anaemia. The diagnosis is further supported by a brisk reticulocyte response, beginning about 5 days after parenteral B₁₂ treatment. Concomitant iron deficiency should be sought with iron studies, because the combination gives a dimorphic picture.
 
 ## Define haemolytic anaemia.
 
@@ -8607,37 +8577,44 @@ Haemoglobinopathies are disorders caused by mutations in globin genes that produ
 
 ## Name the normal (and abnormal) haemoglobins.
 
-**Normal haemoglobins.**
-
-- **Embryonic:** Gower 1 (ζ₂ε₂), Gower 2 (α₂ε₂), Portland (ζ₂γ₂).
-- **Foetal haemoglobin, HbF (α₂γ₂):** the main foetal haemoglobin; less than 1% in adults.
-- **Adult haemoglobin, HbA (α₂β₂):** about 95% to 98% of adult haemoglobin.
-- **HbA₂ (α₂δ₂):** about 2.5% (± 0.3%).
-
-**Abnormal haemoglobins.**
-
-- **Structural variants (haemoglobinopathies):** HbS (sickle haemoglobin), HbC, HbD, HbE, HbO-Arab, unstable haemoglobins (Hb Köln), M haemoglobins (HbM), and haemoglobins with altered oxygen affinity.
-- **Tetramers of unpaired chains in thalassaemia:** haemoglobin Barts (γ₄) in α-thalassaemia of the newborn and in hydrops fetalis; HbH (β₄) in HbH disease and older children and adults with α-thalassaemia; and excess free α chains in β-thalassaemia.
-- **Elevated HbF** in β-thalassaemia, hereditary persistence of foetal haemoglobin and sickle cell disease; elevated HbA₂ in β-thalassaemia trait.
-- **Derivative haemoglobins:** methaemoglobin, sulphaemoglobin, carboxyhaemoglobin, glycated haemoglobin (HbA₁c).
+| Type | Haemoglobin | Chain composition |
+|---|---|---|
+| **Normal** | HbA (mainly, in adult red cells) | α2β2 |
+| | HbA2 (small amounts; normally 2.5% plus or minus 0.3%) | α2δ2 |
+| | HbF (fetal haemoglobin) | α2γ2 |
+| **Abnormal** | HbS (sickle haemoglobin; valine replaces glutamate in β-globin) | α2βS2 |
+| | HbC | Variant haemoglobin common where HbS is found |
+| | HbH | Tetramer of β-globin chains (β4), in α-thalassaemia |
+| | Haemoglobin Barts | Tetramer of γ-globin chains (γ4), in α-thalassaemia |
+| | Unstable haemoglobins | Structurally abnormal globins |
 
 
 ## Write a short note on hemoglobinopathy.
 
-Haemoglobinopathies are inherited disorders caused by mutations in globin genes that produce structurally abnormal haemoglobin, in contrast to thalassaemias, which result from reduced synthesis of structurally normal globin chains. Several hundred are known, but only those associated with sickle cell disease are prevalent enough in the United States to merit extensive discussion; in South Asia HbE is equally important.
+**Definition:** inherited disorders caused by mutations in globin genes that produce structurally abnormal haemoglobin; several hundred are known. **Sickle cell disease** is the commonest and the one considered here.
 
-**Genetic basis.** Most variants result from a single amino acid substitution caused by a point mutation in the α- or β-globin gene. In sickle haemoglobin, a missense mutation in the β-globin gene replaces glutamic acid with valine at position 6; in HbC, glutamic acid is replaced by lysine.
+**Pathogenesis of sickle cell disease**
 
-**Classification by effect.**
+1. A missense mutation in the β-globin gene replaces glutamate with valine, producing HbS.
+2. Deoxygenated HbS stacks into polymers, turning the red cell cytosol into a viscous gel and then into needle-like fibres, which distort the cell into a sickle or holly-leaf shape.
+3. Repeated sickling damages the membrane; cells become dehydrated, dense and rigid, and finally irreversibly sickled; these are removed by mononuclear phagocytes (extravascular haemolysis), and fragile cells cause some intravascular haemolysis.
+4. Sickled cells are sticky, with increased adhesion molecules; microvascular occlusion is helped by inflammation and vasoconstriction, which slow the passage of red cells.
+5. Sickling is affected by HbS with other haemoglobins (HbA and HbF inhibit polymerisation), mean cell haemoglobin concentration, intracellular pH and transit time through microvascular beds.
 
-1. Polymerisation (HbS): sickle cell disease and trait.
-2. Reduced solubility and crystallisation (HbC and HbSC).
-3. Instability of haemoglobin (Heinz body anaemias).
-4. Altered oxygen affinity (polycythaemia or cyanosis).
-5. M haemoglobins (methaemoglobinaemia).
-6. Thalassaemic haemoglobinopathies (HbE, Hb Lepore).
+**Morphology**
 
-**Clinical significance.** The heterozygous state is usually asymptomatic (sickle cell trait, in about 8% to 10% of African Americans), and the homozygous or compound heterozygous state produces haemolytic anaemia and, in sickle cell disease, vaso-occlusive crises. The high prevalence in some populations results from the protective effect against falciparum malaria. Diagnosis is by haemoglobin electrophoresis or HPLC, solubility and sickling tests, and DNA analysis; prenatal diagnosis is possible, and newborn screening is routine in the United States.
+- Blood: irreversibly sickled cells, reticulocytosis, target cells; Howell-Jolly bodies from asplenia.
+- Hyperplastic marrow, with bone resorption and a "crewcut" skull on X-ray; extramedullary haemopoiesis.
+- Hyperbilirubinaemia and pigment gallstones.
+- Spleen: autoinfarcted remnant.
+
+**Clinical features**
+
+- Chronic haemolytic anaemia, microvascular occlusions and ischaemic tissue damage.
+- Chronic hypoxia: impaired growth and development; damage to spleen, heart, kidneys and lungs; hyposthenuria.
+- Increased susceptibility to infection with encapsulated organisms (Pneumococcus, Haemophilus influenzae, meningococcus), because of impaired splenic function.
+- Infants become symptomatic at 5 or 6 months, when HbF falls.
+- Diagnosis: irreversibly sickled cells and tests for sickle haemoglobin; treatment with hydroxyurea, which raises HbF.
 
 
 ## Define thalassemia.
@@ -8721,51 +8698,51 @@ The textbook names no single confirmatory test; the diagnostic tests it describe
 
 ## Write the genetic basis of β-thalassemia major.
 
-The β-globin chains of HbA are encoded by a single β-globin gene on chromosome 11. β-thalassaemia major is an autosomal recessive disorder, in which an individual inherits two defective β-globin alleles (homozygous or compound heterozygous), one from each carrier parent. Parents with the β-thalassaemia trait carry a 25% risk in each pregnancy of having an affected child, 50% of having a carrier child and 25% of having a normal child.
-
-The causative mutations are mostly point mutations (more than 100 have been identified, not gene deletions), which are of two functional categories: **β⁰ mutations**, with absent β-globin synthesis, and **β⁺ mutations**, with reduced but detectable synthesis. They fall into three major classes:
-
-1. Splicing mutations: the most common cause of β⁺-thalassaemia; those that destroy normal splice junctions cause β⁰-thalassaemia, and those that create an ectopic splice site within an intron cause β⁺-thalassaemia, since some normal splicing persists.
-2. Promoter region mutations: reduce transcription by 75% to 80% (β⁺).
-3. Chain terminator mutations: the most common cause of β⁰-thalassaemia; nonsense mutations that produce premature stop codons, or frameshift insertions and deletions, that block translation.
-
-Genotypes β⁰/β⁰, β⁺/β⁺ and β⁰/β⁺ generally produce β-thalassaemia major. Impaired β-globin synthesis results in anaemia through hypochromia from HbA deficiency and, more importantly, through excess unpaired α chains that precipitate within red cell precursors, causing membrane damage and apoptosis of 70% to 85% of precursors (ineffective erythropoiesis) and shortened survival of released red cells. The coexistence of α-thalassaemia reduces the globin chain imbalance and ameliorates the disease, whereas extra α-gene copies worsen it.
+- The β-globin chains are encoded by a single β-globin gene on **chromosome 11**.
+- β-Thalassaemia major results from two β-thalassaemia alleles: β+/β+, β+/β0 or β0/β0.
+- **β0 mutations:** absent β-globin synthesis. **β+ mutations:** reduced but detectable β-globin synthesis.
+- More than 100 causative mutations are known, mostly point mutations, in three classes:
+  1. **Splicing mutations:** the commonest cause of β+-thalassaemia; those destroying normal splice junctions cause β0-thalassaemia.
+  2. **Promoter region mutations:** reduce transcription by 75% to 80%; β+-thalassaemia.
+  3. **Chain terminator mutations:** the commonest cause of β0-thalassaemia; nonsense mutations with a premature stop codon, or frameshift insertions or deletions.
+- Consequence: unpaired α chains precipitate in red cell precursors, causing membrane damage and apoptosis (70% to 85% of precursors in severe disease), ineffective erythropoiesis and haemolysis.
 
 
 ## Give the laboratory diagnosis of thalassemia/β-thalassemia major.
 
-The laboratory diagnosis of β-thalassaemia major rests on the blood count and film, haemoglobin analysis, iron studies and, where necessary, molecular tests.
+**Blood**
 
-**1. Complete blood count.** Severe anaemia with haemoglobin typically 3 to 6 g/dL in untransfused patients; MCV, MCH and MCHC markedly reduced; red cell count relatively preserved; RDW raised; reticulocytes elevated but lower than expected for the anaemia (ineffective erythropoiesis); white cells and platelets raised or, with hypersplenism, reduced.
+- Haemoglobin 3 to 6 g/dL in untransfused patients.
+- Smear: anisocytosis, poikilocytosis, microcytosis and hypochromia; target cells, basophilic stippling and fragmented red cells; nucleated red cell precursors (normoblasts).
+- Reticulocyte count raised, but lower than expected for the degree of anaemia, because of ineffective erythropoiesis.
 
-**2. Peripheral blood film.** Severe hypochromia and microcytosis, with marked anisocytosis and poikilocytosis; many target cells, basophilic stippling, teardrop and fragmented red cells; and numerous nucleated red cells (normoblasts), reflecting stress erythropoiesis and extramedullary haemopoiesis. After splenectomy, Howell-Jolly bodies and more nucleated cells appear.
+**Haemoglobin analysis**
 
-**3. Haemoglobin analysis (confirmatory).** Electrophoresis or HPLC shows markedly raised HbF (30% to 90%), HbA absent (β⁰/β⁰) or markedly reduced (β⁺), and HbA₂ normal or slightly raised. Parental studies show β-thalassaemia trait, with raised HbA₂ (4% to 8%).
+- HbA absent (β0/β0) or present in small amounts (β+/β+ or β0/β+).
+- HbF markedly elevated and the major haemoglobin.
+- In β-thalassaemia trait (minor): HbA2 increased to 4% to 8% (normal 2.5% plus or minus 0.3%); HbF normal or slightly increased.
 
-**4. Iron studies.** Serum iron, transferrin saturation and ferritin are raised (iron overload from increased absorption and transfusions), unlike in iron deficiency.
-
-**5. Bone marrow.** Marked erythroid hyperplasia (not necessary for diagnosis), and Prussian blue staining shows abundant iron.
-
-**6. Other tests.** Unconjugated hyperbilirubinaemia and raised LDH; radiographs showing the "crew-cut" skull and widened medullary cavities; DNA analysis for the causative mutations, which allows prenatal diagnosis by chorionic villus sampling or amniocentesis; assessment of iron overload (ferritin, cardiac and hepatic T2* MRI) and endocrine function.
+**Other findings:** striking marrow expansion; "crewcut" appearance of the skull on X-ray; splenomegaly up to 1500 g; iron overload.
 
 
 ## A child has severe anemia, mongoloid face, hepatosplenomegaly, repeated transfusions, target cells. What is your probable diagnosis?
 
-The probable diagnosis is **β-thalassaemia major** (Cooley anaemia). The age of presentation (anaemia appearing from 6 to 9 months, as the HbF to HbA switch occurs), the severe transfusion-dependent anaemia, the mongoloid (chipmunk) facies due to expansion of the facial and skull marrow with frontal bossing and maxillary overgrowth, hepatosplenomegaly resulting from extramedullary haemopoiesis, and target cells on the blood film are characteristic. Haemoglobinopathies such as HbE-β-thalassaemia present similarly, and are common in Bangladesh.
+**Probable diagnosis:** β-thalassaemia major.
 
-The pathogenesis is a deficiency of β-globin chains with excess unpaired α chains, which precipitate in erythroid precursors and cause ineffective erythropoiesis and haemolysis. Iron overload from transfusions and increased intestinal absorption is the major long-term complication.
+- Anaemia appears 6 to 9 months after birth, as haemoglobin synthesis switches from HbF to HbA.
+- Marrow expansion in facial bones and skull alters the face.
+- Hepatosplenomegaly from extramedullary haemopoiesis.
+- Target cells on the blood smear.
+- Repeated transfusions are required, with the risk of iron overload.
 
 
 ## Same child: how will you confirm the diagnosis?
 
-The diagnosis is confirmed by the following investigations.
-
-1. **Complete blood count and peripheral blood film:** severe microcytic hypochromic anaemia (Hb often 3 to 6 g/dL, MCV and MCH very low), anisopoikilocytosis, target cells, basophilic stippling, fragmented cells and nucleated red cells; reticulocytosis lower than expected for the degree of anaemia.
-2. **Haemoglobin electrophoresis or HPLC (the confirmatory test):** markedly raised HbF, with absent or markedly reduced HbA; HbA₂ normal or raised. In HbE-β-thalassaemia, HbE is prominent.
-3. **Iron studies:** raised serum iron and ferritin with high transferrin saturation, excluding iron deficiency.
-4. **Family study:** both parents show a microcytic picture with raised HbA₂ (4% to 8%) of β-thalassaemia trait.
-5. **DNA analysis:** molecular identification of the β-globin mutations (also used for prenatal diagnosis).
-6. **Supportive:** raised unconjugated bilirubin and LDH, skull radiograph showing the "crew-cut" appearance, and ultrasound for hepatosplenomegaly.
+1. **Blood smear:** microcytosis, hypochromia, anisocytosis, poikilocytosis, target cells, basophilic stippling, fragmented cells and normoblasts.
+2. **Haemoglobin analysis:** HbA absent or reduced; HbF markedly elevated.
+3. **Reticulocyte count:** raised, but lower than expected.
+4. **X-ray of skull:** "crewcut" appearance.
+5. **Iron studies:** iron overload.
 
 
 ## Which type of abnormal haemoglobin is found in sickle cell anaemia?
@@ -8890,38 +8867,37 @@ Aplastic anaemia must be distinguished from "aleukaemic" leukaemia and myelodysp
 
 ## What are the clinical presentations of pancytopenia?
 
-The clinical presentation of pancytopenia reflects the deficiency of each cell line and the underlying disease. The onset is usually insidious.
+Pancytopenia, as seen in aplastic anaemia, presents according to the cell line affected:
 
-- **Anaemia:** progressive weakness, fatigue, pallor, dyspnoea on exertion, palpitations, headache, dizziness, and angina in those with coronary disease.
-- **Neutropenia:** frequent and persistent infections (mucocutaneous bacterial infections, oral ulcers, sore throat, pneumonia), or the sudden onset of chills, fever and prostration; fungal infections in prolonged neutropenia.
-- **Thrombocytopenia:** petechiae and ecchymoses, easy bruising, epistaxis, gum bleeding, menorrhagia, gastrointestinal bleeding, haematuria, and, most feared, intracranial haemorrhage.
-- **Signs of the underlying cause:** splenomegaly, hepatomegaly, lymphadenopathy, bone pain or sternal tenderness (leukaemia or infiltration), neurological signs and glossitis (megaloblastic anaemia), congenital anomalies and short stature (Fanconi anaemia), jaundice and cirrhosis (hypersplenism), and rash and arthritis (SLE). Splenomegaly is characteristically absent in aplastic anaemia.
+1. **Anaemia:** progressive weakness, pallor and dyspnoea.
+2. **Thrombocytopenia:** petechiae and ecchymoses.
+3. **Neutropenia:** frequent and persistent infections, or sudden chills, fever and prostration.
+
+Splenomegaly is characteristically absent; if present, the diagnosis of aplastic anaemia should be questioned.
 
 
 ## Give the laboratory diagnosis of aplastic anemia (PBF and bone marrow findings).
 
-**Peripheral blood.**
+**Peripheral blood**
 
-- Pancytopenia: anaemia (normocytic or slightly macrocytic, normochromic), granulocytopenia with relatively increased lymphocytes, and thrombocytopenia.
-- Reticulocytopenia (reticulocyte count usually below 1% and absolute count below 20 × 10⁹/L in severe disease).
-- Film: no immature cells, blasts, nucleated red cells or teardrop cells. Platelets are reduced and normal in size.
-- ESR is raised; serum iron raised with high transferrin saturation; erythropoietin raised.
+- Pancytopenia.
+- Red cells usually slightly macrocytic and normochromic.
+- Reticulocytopenia.
 
-**Bone marrow.**
+**Bone marrow**
 
-- The aspirate often yields little material (a "dry tap") or is haemodiluted; the aspirate shows fat, lymphocytes, plasma cells, mast cells and a few residual haemopoietic cells that appear normal.
-- Trephine biopsy is diagnostic: the marrow is markedly hypocellular and largely devoid of haemopoietic cells; often only fat cells, fibrous stroma and scattered lymphocytes and plasma cells remain. No leukaemic infiltrate, fibrosis or granuloma. Cellularity below 25% defines severe disease.
+- Markedly hypocellular, largely devoid of haemopoietic cells; only fat cells, fibrous stroma and scattered lymphocytes and plasma cells remain.
+- Aspirates often yield little material (dry tap), so aplasia is best appreciated in marrow biopsies.
 
-**Criteria of severity (severe aplastic anaemia).** Marrow cellularity below 25% (or 25% to 50% with fewer than 30% residual haemopoietic cells), with at least two of: neutrophils below 0.5 × 10⁹/L, platelets below 20 × 10⁹/L, reticulocytes below 20 × 10⁹/L; very severe if neutrophils are below 0.2 × 10⁹/L.
-
-**Further tests.** Flow cytometry for CD55 and CD59 (PNH clone), chromosomal breakage test for Fanconi anaemia, telomere length, cytogenetics (to exclude myelodysplasia), and viral serology.
+The diagnosis rests on bone marrow biopsy. It distinguishes aplastic anaemia from aleukaemic leukaemia and myelodysplastic neoplasm, which have hypercellular marrows filled with neoplastic progenitors.
 
 
 ## A boy of 11y has Hb 2 g, WBC 500/cmm, platelets 12000/cmm. What is the probable diagnosis?
 
-The probable diagnosis is **severe aplastic anaemia**. The picture is of profound pancytopenia: a haemoglobin of 2 g/dL, a total white cell count of 500 per cubic millimetre (neutrophils probably well below 200, therefore very severe disease) and a platelet count of 12,000 per cubic millimetre (below the 20,000 threshold for severe disease). This degree of marrow failure causes progressive weakness and pallor, persistent infections or fever, and petechial bleeding. In an 11-year-old, the possible causes are idiopathic (most likely), drug or viral-associated, and inherited, notably Fanconi anaemia.
+**Probable diagnosis:** aplastic anaemia, with pancytopenia affecting all three cell lines.
 
-The principal differentials are aleukaemic acute leukaemia, myelodysplastic neoplasm and megaloblastic anaemia, which are distinguished by bone marrow examination. Confirmation requires a bone marrow trephine biopsy showing a markedly hypocellular marrow with fat replacement (cellularity below 25%), with no blasts, fibrosis or infiltrate, and a low reticulocyte count. Chromosomal breakage tests for Fanconi anaemia, PNH flow cytometry and viral serology complete the evaluation. Treatment is stem cell transplantation from an HLA-matched sibling if available (5-year survival above 75%), or immunosuppressive therapy with antithymocyte globulin and cyclosporine, with supportive care.
+**Confirmation:** bone marrow biopsy showing a markedly hypocellular marrow; other causes of pancytopenia, such as aleukaemic leukaemia and myelodysplastic neoplasm, have hypercellular marrows.
+
 
 ## Define hemorrhagic disorders with example.
 
