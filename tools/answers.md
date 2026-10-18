@@ -2185,45 +2185,29 @@ A ***giant cell*** (multinucleate giant cell) is a large mass of cytoplasm conta
 3. The activated macrophages develop abundant cytoplasm and resemble epithelial cells (*epithelioid cells*).
 4. Some of these activated macrophages **fuse together**, forming a multinucleate giant cell with a large mass of cytoplasm and many nuclei.
 
-- In foreign body granulomas the material is too large to be phagocytosed by a single macrophage and does not stimulate a T cell response. The macrophages and giant cells line up along the surface of the foreign body.
+- In foreign body granulomas the material is large enough to preclude phagocytosis by macrophages and is not immunogenic, so there is no specific T cell response. The macrophages and giant cells line up along the surface of the foreign body.
 
 ## Define regeneration.
 
-Regeneration is the process by which some tissues replace the damaged components and essentially return to a normal state, by proliferation of surviving cells or from tissue stem cells.
-
-Some tissues can replace the damaged components and essentially return to a normal state. Regeneration may occur by proliferation of differentiated cells that survive the injury and retain the capacity to proliferate, such as hepatocytes in the liver, or, particularly in the epithelia of the skin and intestines, by tissue stem cells and their progenitors, which live in specialised niches. It is driven by growth factors and depends critically on the integrity of the extracellular matrix. Regeneration occurs readily in labile tissues (as long as the stem cell pool is preserved) and in stable tissues (the liver being the model), but mammals have a limited capacity to regenerate most organs.
-
+***Regeneration*** is the process by which some tissues replace the damaged components and essentially return to a normal state.
 
 ## Define repair.
 
-Repair, also called healing, is the restoration of tissue architecture and function after injury, which occurs by regeneration of the parenchymal cells and by scarring, the deposition of connective tissue.
-
-Repair is the response that follows inflammation, and the inflammatory response to microbes and injured tissue sets repair in motion. If the injured tissue is incapable of regeneration, or if the supporting framework is damaged, repair occurs by laying down fibrous tissue (scar). A fibrous scar is not normal tissue, but it usually gives enough structural stability for the tissue to function. In most injuries both regeneration and scarring contribute in varying degrees. Both processes involve cell proliferation and close interactions between cells and extracellular matrix.
-
+***Repair***, also called ***healing***, refers to the restoration of tissue architecture and function after an injury.
 
 ## What is healing?
 
-Healing is the body's response to injury in which damaged tissue is restored by regeneration of surviving cells and by filling of the defect with connective tissue (scar), so as to restore the integrity and function of the tissue; by convention "repair" is used for parenchyma and connective tissue and "healing" for surface epithelia, but the terms are used interchangeably.
-
-Healing is critical to survival. The sequence in skin wounds, which is the best-studied model, includes:
-
-1. **Haemostasis and inflammation.** Within minutes a platelet haemostatic plug and clot form; over 6 to 48 hours neutrophils and then monocytes clear the offending agents and debris.
-2. **Cell proliferation (up to about 10 days).** Epithelial cells migrate over the wound; endothelial cells proliferate to form new vessels (angiogenesis); fibroblasts migrate in and lay down collagen. Together with macrophages they form granulation tissue.
-3. **Deposition and remodelling of connective tissue.** Granulation tissue is replaced by collagen to form a stable fibrous scar, and remodelling by matrix metalloproteinases, balanced by their tissue inhibitors, increases tensile strength; scars contract through myofibroblasts.
-
-Wounds heal by first intention (primary union) if clean and approximated, with epithelial regeneration and minimal scarring, or by second intention (secondary union) if larger or infected, with granulation tissue, scarring and contraction. Healing can be impaired by infection, diabetes, malnutrition, steroids, poor perfusion and mechanical factors.
-
+***Repair***, also called ***healing***, refers to the restoration of tissue architecture and function after an injury.
 
 ## Types of cells on the basis of regenerating capability, with examples.
 
-On the basis of regenerative capacity, cells are divided into labile (continuously dividing), stable (quiescent) and permanent (non-dividing) cells.
+Tissues are divided into three groups, based on their intrinsic proliferative capacity.
 
-| Type | Behaviour | Examples |
+| Type | Features | Examples |
 |---|---|---|
-| Labile (continuously dividing) | Continuously lost and replaced by stem cells and mature cell proliferation; regenerate readily if the stem cell pool is preserved | Haematopoietic cells of marrow; surface epithelia (stratified squamous epithelium of skin, mouth, oesophagus, vagina, cervix; cuboidal epithelium of ducts; columnar epithelium of gastrointestinal tract, uterus, fallopian tubes; transitional epithelium of urinary tract) |
-| Stable (quiescent) | In G₀ with minimal proliferation normally, but divide in response to injury; limited regeneration except in liver | Parenchyma of liver, kidney, pancreas; endothelial cells, fibroblasts, smooth muscle cells |
-| Permanent | Terminally differentiated, non-proliferative after birth; repair by scarring | Most neurons, cardiac muscle cells; skeletal muscle (limited regeneration by satellite cells) |
-
+| ***Labile (continuously dividing) cells*** | Continuously lost and replaced by maturation from tissue stem cells and proliferation of mature cells. They regenerate readily after injury as long as the pool of stem cells is preserved. | Haematopoietic cells of the bone marrow; surface epithelia such as the stratified squamous epithelium of the skin, oral cavity, oesophagus, vagina and cervix; cuboidal epithelium of ducts of exocrine organs (salivary glands, pancreas, biliary tract); columnar epithelium of the gastrointestinal tract, uterus and fallopian tubes; transitional epithelium of the urinary tract |
+| ***Stable (quiescent) cells*** | In the G0 stage of the cell cycle with minimal proliferative activity normally, but they can divide in response to injury or loss of tissue mass. Apart from the liver, they have a limited capacity to regenerate. | Parenchyma of most solid organs (liver, kidney, pancreas); endothelial cells, fibroblasts and smooth muscle cells |
+| ***Permanent (nondividing) cells*** | Terminally differentiated and nonproliferative in postnatal life. Injury is irreversible and heals by scar. | Most neurons and cardiac muscle cells (skeletal muscle is usually classified here, but satellite cells give some regenerative capacity) |
 
 ## What do you mean by regeneration and repair?
 
@@ -2242,117 +2226,79 @@ On the basis of regenerative capacity, cells are divided into labile (continuous
 
 ## What is granulation tissue?
 
-Granulation tissue is formed by migration and proliferation of fibroblasts and deposition of loose connective tissue, together with new thin-walled vessels and interspersed mononuclear leukocytes, during healing; it is not to be confused with a granuloma.
-
-Granulation tissue is formed by migration and proliferation of fibroblasts and deposition of loose connective tissue, together with the new vessels and interspersed mononuclear leukocytes. The name derives from the pink, soft, granular gross appearance, as seen beneath the scab of a skin wound. The amount formed depends on the size of the defect and the intensity of inflammation.
-
-**Histology.** Proliferating fibroblasts and myofibroblasts; new, thin-walled, delicate capillaries (angiogenesis) with endothelial sprouts, perpendicular to the surface; loose, oedematous extracellular matrix; and inflammatory cells, mainly macrophages, with some lymphocytes, plasma cells and, early, neutrophils. Mature collagen is minimal at first.
-
-**Formation.** Macrophages (mainly of the M2 type) clear debris and release growth factors (PDGF, FGF-2, TGF-β) and VEGF, which stimulate fibroblast proliferation and angiogenesis.
-
-**Functions.** It fills the tissue defect, provides a scaffold and nutrients for repair, and is progressively replaced by collagen to form a scar with regression of vessels. Myofibroblasts bring about wound contraction.
-
-**Abnormalities.** Excessive granulation tissue protruding above the surrounding skin (exuberant granulation, "proud flesh") blocks re-epithelialisation and must be cauterised or excised.
-
+***Granulation tissue*** is the tissue formed by migration and proliferation of fibroblasts and deposition of loose connective tissue, together with the vessels and interspersed mononuclear leukocytes (not to be confused with granuloma).
 
 ## Morphological features of granulation tissue.
 
-Grossly granulation tissue is pink, soft and granular, and microscopically it shows proliferating fibroblasts and delicate new capillaries in a loose, oedematous matrix with macrophages and other inflammatory cells.
+**Gross appearance**
 
-**Gross:** pink to red, soft, moist, granular surface ("granules" correspond to loops of new capillaries), friable and bleeds easily; painless because it has no nerve fibres; seen beneath a scab or in the floor of an ulcer.
+- The term granulation tissue derives from its **pink, soft, granular** appearance, as seen beneath the scab of a skin wound.
 
-**Microscopic:**
+**Microscopic appearance**
 
-- Numerous new thin-walled capillaries lined by plump endothelial cells, often oriented perpendicular to the wound surface.
-- Proliferating fibroblasts (and myofibroblasts) in a loose extracellular matrix of fibronectin, proteoglycans and early (type III) collagen; mature collagen minimal (seen with trichrome stain).
-- Oedema.
-- Inflammatory cells, mainly macrophages, with lymphocytes, plasma cells and occasional neutrophils.
-- With time, more collagen is deposited, the number of vessels and cells decreases, and the tissue becomes a pale avascular scar.
+- ***Proliferation of fibroblasts*** and ***new thin-walled, delicate capillaries*** (angiogenesis), in a **loose extracellular matrix**.
+- Admixed inflammatory cells, mainly **macrophages**.
+- *Oedema* is seen, and little mature collagen is present at this stage.
 
+- Granulation tissue progressively fills the site of injury. The amount formed depends on the size of the tissue defect and the intensity of inflammation.
+- It is progressively replaced by collagen, and with maturation of the scar it changes from a highly vascular tissue into a pale, largely avascular scar.
 
 ## Define wound healing.
 
-Wound healing is the complex, orderly process by which an injured tissue, most commonly skin, repairs itself through haemostasis and inflammation, cell proliferation with granulation tissue formation, and deposition and remodelling of connective tissue.
-
-Skin wound healing illustrates the principles of repair by regeneration and scarring because it can be observed and defined precisely. The main phases are inflammation, formation of granulation tissue (epithelial migration, angiogenesis, fibroblast proliferation), and extracellular matrix remodelling. It is orchestrated by growth factors and cytokines from platelets, macrophages and other cells, and the final result is a fibrous scar covered by epithelium. Healing may occur by primary or secondary union.
-
+***Wound healing*** is the repair of tissue after an injury, that is, the restoration of tissue architecture and function. Healing of skin wounds shows both mechanisms of repair: regeneration, which restores normal cells, and scarring, the deposition of connective tissue.
 
 ## Classify wound healing.
 
-Skin wound healing is classified into healing by first intention (primary union) and healing by second intention (secondary union), according to the extent of tissue injury and the dominant mechanism of healing.
+Skin wound healing is classified into two types, depending on the extent of tissue injury and the dominant mechanism of healing.
 
-| Feature | First intention (primary union) | Second intention (secondary union) |
+| Feature | Healing by first intention (primary union) | Healing by second intention (secondary union) |
 |---|---|---|
-| Wound | Clean, uninfected, surgically incised with edges approximated (sutured) | Large, gaping wound with tissue loss, infected, or with wide edges |
-| Clot/necrosis | Minimal | Abundant fibrin clot and debris |
-| Inflammation | Mild | Intense |
-| Granulation tissue | Scanty | Abundant |
-| Mechanism | Mainly epithelial regeneration | Regeneration and scarring |
-| Wound contraction | Minimal | Marked (myofibroblasts) |
-| Scar | Thin | Large, may cause contracture |
-| Time | Short | Prolonged |
+| Type of wound | Well-apposed surgical incisions | Larger wounds, especially if infected |
+| Mechanism | Epithelial regeneration | Combination of regeneration and scarring |
+| Scarring | Minimal | More extensive scarring, with wound contraction |
 
-Third intention (delayed primary closure) refers to closure of a wound by suturing after infection has been controlled and the wound cleaned.
-
+- The steps in both types are inflammation, formation of granulation tissue and remodelling of the extracellular matrix (scar formation).
 
 ## Factors that influence wound healing / tissue repair.
 
-Wound healing is influenced by local and systemic factors: infection, diabetes, glucocorticoids, nutritional deficiency (protein and vitamin C), ageing, poor perfusion, mechanical factors, foreign bodies, and the type and location of the injury.
+Repair may be altered by factors that are **extrinsic** or **intrinsic** to the injured tissue, and **systemic** or **local**.
 
-Variables that modify repair may be extrinsic or intrinsic to the injured tissue, and local or systemic:
-
-- **Infection** is clinically one of the most important causes of delayed healing; it prolongs inflammation and increases local tissue injury.
-- **Diabetes** compromises repair in many ways and is one of the most important systemic causes of abnormal wound healing.
-- **Glucocorticoids** have anti-inflammatory effects and may weaken scars by inhibiting TGF-β production and fibrosis (this effect is sometimes desirable, as in corneal infection).
-- **Nutritional status:** protein deficiency and vitamin C deficiency inhibit collagen synthesis and retard healing.
-- **Ageing** reduces the capacity to heal.
-- **Mechanical factors:** excessive mobility interferes with apposition of wound edges (fractures, skin grafts); increased local pressure or torsion may pull wounds apart.
-- **Poor perfusion** from peripheral vascular disease, atherosclerosis, diabetes or obstructed venous drainage (varicose veins).
-- **Foreign bodies** (steel, glass, bone fragments) perpetuate chronic inflammation.
-- **Type and extent of tissue injury, and character of the tissue:** complete restoration occurs only in tissues of stable and labile cells; permanent cells result in scarring.
-- **Location:** inflammation in tissue spaces (pleura, peritoneum, synovium) produces large exudates; these may undergo resolution, or granulation tissue may grow in (organisation).
-
+1. ***Infection***: clinically one of the most important causes of delayed healing; it prolongs inflammation and may increase local tissue injury.
+2. ***Diabetes***: one of the most important systemic causes of abnormal wound healing.
+3. ***Nutritional status***: protein deficiency and vitamin C deficiency inhibit collagen synthesis and retard healing.
+4. ***Glucocorticoids (steroids)***: antiinflammatory; they may weaken the scar by inhibiting TGF-beta production and diminishing fibrosis.
+5. ***Ageing***: reduces the capacity to heal injured tissue.
+6. ***Mechanical factors***: excessive mobility prevents apposition of wound edges (fractures, skin grafts); increased local pressure or torsion may pull wounds apart.
+7. ***Poor perfusion***: peripheral vascular disease, arteriosclerosis, diabetes and obstructed venous drainage (varicose veins).
+8. ***Foreign bodies***: fragments of steel, glass or bone impede healing by perpetuating chronic inflammation.
+9. ***Type and extent of the injury and the tissue involved***: complete restoration occurs only in tissues of stable and labile cells; injury to tissues of permanent cells always results in scarring and some loss of function.
+10. ***Location of the injury***: inflammation in tissue spaces (pleural, peritoneal, synovial) produces extensive exudate. It may resolve by digestion and resorption, but with larger accumulations granulation tissue grows into the exudate and a scar forms (organisation).
 
 ## Mention the complications of wound healing.
 
-The complications of wound healing include defective healing (chronic wounds, infection, dehiscence), excessive scarring (hypertrophic scar, keloid, exuberant granulation), and contracture; other complications are haematoma, adhesions, fistula or sinus, traumatic neuroma, implantation cyst and malignant change.
+Complications of repair arise from abnormalities in any of the basic components of the process: *deficient scar formation*, *excessive formation of the repair components* and *formation of contractures*.
 
-Complications of tissue repair can arise from abnormalities in any of the basic components of the process: deficient scar formation, excessive formation of the repair components, and formation of contractures.
+1. ***Defective healing***
+2. ***Excessive scarring***
+3. ***Contracture***
 
-**1. Defects in healing (deficient repair)**
-
-- **Chronic wounds and ulcers**, caused by local and systemic factors:
-- Venous leg ulcers in elderly people with chronic venous hypertension (varicose veins, congestive heart failure), with haemosiderin deposition and chronic inflammation; they do not heal because of poor oxygen delivery.
-- Arterial ulcers from peripheral atherosclerosis, especially in diabetes: ischaemia causes atrophy and necrosis; they are painful.
-- Diabetic ulcers of the feet, due to vascular disease causing ischaemia, neuropathy and secondary infection; histologically epithelial ulceration with extensive granulation tissue.
-- Pressure sores from prolonged compression against bone with local ischaemia.
-- **Wound infection**, delaying healing and increasing tissue injury.
-- **Wound dehiscence** is reopening of a surgical incision, internally or externally; risk factors are obesity, malnutrition, infection, vascular insufficiency and mechanical factors (in abdominal wounds, vomiting and coughing). Evisceration and incisional hernia are associated complications.
-
-**2. Excessive formation of the components of repair**
-
-- **Hypertrophic scar:** a raised scar from excess collagen with abundant myofibroblasts, confined to the wound boundary, often after thermal or traumatic injury involving the deep dermis; tends to regress over several months.
-- **Keloid:** scar tissue growing beyond the boundaries of the original wound, which does not regress and recurs after excision; individual predisposition (more common in dark-skinned individuals).
-- **Exuberant granulation ("proud flesh"):** excess granulation tissue protruding above the skin and blocking re-epithelialisation; requires cautery or excision.
-- **Desmoid (aggressive fibromatosis):** rarely, exuberant fibroblastic proliferation after incisional scars or trauma that recurs after excision; a benign neoplasm.
-
-**3. Contracture.** Exaggeration of wound contraction causes deformity of the wound and surrounding tissues and compromises joint movement; particularly prone are the palms, soles and anterior thorax, notably after serious burns.
-
-**4. Other complications.** Haematoma or seroma formation; adhesions after peritoneal or pleural inflammation; fistula or sinus; epidermal implantation (inclusion) cyst; traumatic neuroma; changes in pigmentation; and malignant transformation in chronic scars or ulcers (Marjolin ulcer).
-
+- **Wound dehiscence:** a surgical incision reopens, internally or externally. Risk factors are obesity, malnutrition, infection, vascular insufficiency and mechanical factors; in abdominal wounds it can be precipitated by vomiting and coughing.
+- **Chronic wounds:** *venous leg ulcers* (chronic venous hypertension), *arterial ulcers* (atherosclerosis of peripheral arteries, especially in diabetes), *diabetic ulcers* (ischaemia, neuropathy and secondary infection) and *pressure sores* (prolonged compression of tissue against bone).
+- **Hypertrophic scar:** a raised scar from excess collagen, rich in myofibroblasts; it tends to regress over several months.
+- **Keloid:** scar tissue that grows beyond the boundaries of the original wound and does not regress; it seems to be an individual predisposition.
+- **Exuberant granulation (proud flesh):** excess granulation tissue protruding above the surrounding skin and blocking re-epithelialisation; it must be removed by cautery or surgical excision.
+- **Desmoids (aggressive fibromatoses):** rarely, exuberant proliferation of fibroblasts follows incisional scars or traumatic injury and may recur after excision.
+- **Contracture:** exaggerated wound contraction, leading to deformities of the wound and surrounding tissue. It occurs on the palms, soles and anterior thorax, and after serious burns it can compromise joint movement.
 
 ## How does diabetes mellitus impair wound healing?
 
-Diabetes impairs wound healing by causing vascular disease with ischaemia, neuropathy, increased susceptibility to infection from defective leukocyte function, and impaired growth-factor-driven angiogenesis and collagen synthesis.
+Diabetes is a metabolic disease that compromises tissue repair for many reasons and is one of the most important systemic causes of abnormal wound healing.
 
-Diabetes is a metabolic disease that compromises tissue repair for many reasons and is one of the most important systemic causes of abnormal wound healing. The mechanisms are:
+1. ***Poor perfusion***: diabetes causes *accelerated atherosclerosis* of the aorta and the large and medium arteries and *microangiopathy* (thickening of capillary basement membranes). The result is ischaemia, with poor delivery of oxygen and nutrients to the wound. Gangrene of the lower extremities is about 100 times more common in people with diabetes.
+2. ***Neuropathy***: distal symmetric polyneuropathy of the lower limbs, so injuries to the feet go unnoticed and the wounds are repeatedly traumatised.
+3. ***Infection***: patients have enhanced susceptibility to skin infections. Infection prolongs inflammation, increases local tissue injury and delays healing.
 
-- **Vascular disease.** Atherosclerosis of large vessels and microangiopathy (thickened basement membranes) reduce blood flow and oxygen delivery, causing ischaemia and poor healing.
-- **Neuropathy.** Loss of sensation, particularly in the feet, allows repeated unnoticed trauma and pressure; autonomic neuropathy reduces perfusion and sweating.
-- **Infection.** Hyperglycaemia impairs neutrophil function (chemotaxis, phagocytosis and killing), so infection is frequent and prolongs inflammation.
-- **Impaired repair responses.** Defective growth factor production and endothelial dysfunction reduce angiogenesis; fibroblast proliferation and collagen synthesis are decreased and ECM turnover abnormal, in part because of advanced glycation end-products.
-- **Consequence.** Diabetic ulcers, particularly of the feet, show tissue necrosis, chronic inflammation, failure to heal, and are a major cause of gangrene and amputation.
-
+- The outcome is the **diabetic ulcer** of the lower extremity, particularly the foot. There is tissue necrosis and failure to heal because of vascular disease causing ischaemia, neuropathy and secondary infection. Histologically there is epithelial ulceration with extensive granulation tissue in the underlying dermis.
 
 ## What is angiogenesis?
 
