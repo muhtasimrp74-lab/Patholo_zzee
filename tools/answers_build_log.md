@@ -613,3 +613,14 @@ None of these topics is in the site textbook, so every answer in this batch uses
 - Semen: the indications are only what StatPearls and the Urology Textbook state (male infertility assessment and planning assisted fertilisation); post-vasectomy checks were not found in the sources read, so they are not stated.
 - Haematuria short note: no textbook explanation of mechanism was found beyond the StatPearls pathophysiology paragraph; it is not repeated.
 - Hyperuricaemia causes: gout-related causes such as inborn enzyme defects, cell turnover states and cytotoxic therapy were not found in the snippets read, so they are not stated.
+
+## Session 18, batch 2 (work-list questions 20 to 30, Chapters 22 and 23)
+
+Sources: site textbook chapter 22 (cervix: ch22.json) and chapter 23 (breast: ch23.json). No outside sources were used. No answers in this batch were previously empty.
+
+### Points left out
+- Risk factors for breast carcinoma: Table 23.2 is not legible in the extracted file, so only the factors stated in the running text are given (sex, age, estrogen exposure, inheritance, family history, low physical activity, early pregnancy and breastfeeding as protective).
+- Breast lump causes: the textbook gives no single list; the answer is assembled from the symptoms section, the inflammatory and nonneoplastic sections and the tumour sections.
+- Hard breast lump, diagnosis: the textbook says malignant tumours "tend to be irregular"; the sentence is cut off in the file, so fixity to tissue is not stated. Skin dimpling is explained from the inflammatory carcinoma passage only.
+- Hard breast lump, investigations: core biopsy, FNAC, axillary ultrasound, chest, bone and liver imaging, Ki-67 and BRCA testing are not described in the textbook passages read, so they are not stated. Please decide whether an outside source (for example StatPearls "Breast Cancer") should be added.
+- Cervical carcinoma diagnosis: smoking, contact bleeding and discharge as clinical features are not in the passages read; only the textbook's gross appearance, age, histology and HPV link are stated.
