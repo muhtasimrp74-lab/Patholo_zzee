@@ -8481,21 +8481,20 @@ The textbook does not use the term; the causes in its classification that act on
 
 ## What is autoimmune haemolytic anaemia (AIHA)?
 
-Autoimmune haemolytic anaemia is a haemolytic anaemia caused by autoantibodies directed against the patient's own red cell antigens, which cause premature destruction of red cells, and it is diagnosed by a positive direct Coombs test.
-
-The disorder is preferably called immunohaemolytic anaemia, since in some cases the immune reaction is initiated by a drug. It is classified by the characteristics of the antibody into the warm antibody type (IgG, active at 37°C, about 80% of cases), the cold agglutinin type (IgM, active below 37°C, 15% to 20%) and the cold haemolysin type (IgG, paroxysmal cold haemoglobinuria, rare). Warm antibody haemolysis is mostly extravascular: IgG-coated red cells are partially phagocytosed by splenic macrophages through Fc receptors, losing membrane and becoming spherocytes, which are then sequestered in the spleen. The clinical features are anaemia, jaundice and moderate splenomegaly. Treatment involves removal of the cause, corticosteroids and other immunosuppressants, and splenectomy.
-
+Immunohaemolytic anaemia is caused by antibodies that recognise red cells and cause their premature destruction. Although these disorders are commonly referred to as autoimmune haemolytic anaemias, the designation immunohaemolytic anaemia is preferred because the immune reaction is initiated in some instances by an ingested drug.
 
 ## Causes of AIHA.
 
-About half of AIHA cases are idiopathic (primary), and the others are secondary to autoimmune disorders such as lupus, lymphoid neoplasms, infections or drugs.
+| Type | Antibody | Causes |
+|---|---|---|
+| **Warm antibody type** (about 80% of cases) | IgG (less commonly IgA), active at 37°C | About 50% idiopathic (primary). Secondary: autoimmune disorders (particularly systemic lupus erythematosus), drugs, lymphoid neoplasms |
+| **Cold agglutinin type** (15% to 20% of cases) | IgM, active below 37°C (binds at 0°C to 4°C) | Acute: mycoplasmal infection, infectious mononucleosis (also cytomegalovirus, influenza and HIV). Chronic: B-cell neoplasms or idiopathic |
+| **Cold haemolysin type** | IgG, active below 37°C (binds the P blood group antigen) | Rare; mainly in children following viral infections |
 
-Warm antibody type (IgG). Idiopathic (about 50%); secondary to other autoimmune disorders (particularly systemic lupus erythematosus), lymphoid neoplasms (chronic lymphocytic leukaemia, lymphomas) and drugs. The drug-induced forms are of two kinds: antigenic drugs such as penicillin and cephalosporins, which bind to the red cell membrane and create a new antigenic determinant (haemolysis occurs 1 to 2 weeks after therapy begins, usually after large intravenous doses), and tolerance-breaking drugs such as α-methyldopa, which induces autoantibodies against Rh antigens (about 10% of patients have a positive Coombs test and about 1% develop haemolysis).
+Drug-induced warm antibody type acts by two mechanisms:
 
-Cold agglutinin type (IgM). Acute and transient after Mycoplasma pneumoniae infection, infectious mononucleosis (EBV), CMV, influenza and HIV; chronic forms associated with B-cell neoplasms or idiopathic.
-
-Cold haemolysin type (IgG, Donath-Landsteiner). Rare, mainly in children after viral infections, and formerly in syphilis.
-
+- **Antigenic drugs**, for example penicillin and cephalosporins: the drug binds to the red cell membrane and creates a new antigenic determinant; haemolysis follows large intravenous doses, 1 to 2 weeks after therapy starts.
+- **Tolerance-breaking drugs**, of which **alpha-methyldopa** is the prototype: they lead to antibodies against red cell antigens, particularly Rh antigens; about 10% of patients develop autoantibodies and roughly 1% develop clinically significant haemolysis.
 
 ## Classify haemolytic anemia.
 
@@ -8613,54 +8612,29 @@ The consequences are anaemia, compensatory erythroid hyperplasia and extramedull
 
 ## Normal types of haemoglobin.
 
-The normal haemoglobins are HbA (α₂β₂), which constitutes about 95% to 98% of adult haemoglobin, HbA₂ (α₂δ₂) at about 2.5%, and foetal haemoglobin HbF (α₂γ₂), which predominates in the foetus and is below 1% in adults.
+Haemoglobin is a tetrameric protein composed of two pairs of globin chains, each with its own haem group.
 
-Haemoglobin is a tetrameric protein composed of two pairs of globin chains, each with its own haem group. The α-globin genes lie on chromosome 16 (two genes per haploid genome, four per cell), and the β-like genes (β, δ, γ, ε) on chromosome 11.
-
-| Haemoglobin | Chains | Level |
+| Type | Chains | Occurrence |
 |---|---|---|
-| HbA | α₂β₂ | 95–98% in adults |
-| HbA₂ | α₂δ₂ | 2.5 ± 0.3% |
-| HbF | α₂γ₂ | Main haemoglobin of the foetus, 70–80% at birth, falling to about 1% by one year |
-| Embryonic (Gower 1, Gower 2, Portland) | ζ₂ε₂, α₂ε₂, ζ₂γ₂ | Present in the first trimester |
-
-HbF, which has a higher oxygen affinity than HbA and inhibits the polymerisation of HbS, is the reason why infants with sickle cell disease become symptomatic only at 5 to 6 months of age.
-
+| **HbA** | Two alpha and two beta | The main haemoglobin of normal adult red cells |
+| **HbA2** | Two alpha and two delta | Small amounts; normal level 2.5% plus or minus 0.3% of total haemoglobin |
+| **HbF** (fetal haemoglobin) | Two alpha and two gamma | Small amounts in adults; the level normally falls in the first months after birth |
 
 ## Name / classify congenital haemolytic anaemias due to defect in haemoglobin.
 
-Congenital haemolytic anaemias due to a defect in haemoglobin are classified into the thalassaemia syndromes, in which globin chain synthesis is deficient (a quantitative defect), and the haemoglobinopathies, in which a structurally abnormal globin is produced (a qualitative defect).
-
-1. **Quantitative defects of globin synthesis:** α-thalassaemia and β-thalassaemia (and δβ-thalassaemia and hereditary persistence of foetal haemoglobin as related conditions).
-2. **Qualitative defects (structural haemoglobin variants, haemoglobinopathies):**
-
-- Sickle cell disease (HbS), HbC, HbD, HbE (which is also mildly thalassaemic).
-- Unstable haemoglobins (Heinz body haemolytic anaemias).
-- Haemoglobins with altered oxygen affinity (high affinity: polycythaemia; low affinity: cyanosis or anaemia).
-- M haemoglobins (methaemoglobinaemia).
-
-3. **Combined disorders:** HbS-β-thalassaemia, HbSC disease, HbE-β-thalassaemia.
-
+1. **Deficient globin synthesis:** thalassaemia syndromes, which are alpha-thalassaemia and beta-thalassaemia.
+2. **Structurally abnormal globins (haemoglobinopathies):** sickle cell disease and unstable haemoglobins.
 
 ## Define haemoglobinopathies.
 
-Haemoglobinopathies are inherited disorders caused by mutations in the globin genes that produce structurally abnormal haemoglobin molecules, as opposed to thalassaemia, in which the globin chains are structurally normal but synthesised in reduced amounts.
-
-Several hundred haemoglobinopathies caused by mutations in globin genes are known, most of which are clinically silent. Only a few, namely sickle cell disease (HbS, in which a missense mutation replaces glutamic acid by valine at position 6 of the β-chain), and variants such as HbC (glutamic acid replaced by lysine) and HbE, are common enough to be of major clinical significance. The abnormal physicochemical properties of the variant haemoglobin cause polymerisation, instability, altered oxygen affinity or reduced solubility, leading to haemolysis and other consequences.
-
+Haemoglobinopathies are disorders caused by mutations in globin genes that produce structurally abnormal globins. Several hundred are known.
 
 ## Examples of haemoglobinopathies.
 
-The commonest examples are sickle cell disease (HbS), haemoglobin C disease, haemoglobin E disease, haemoglobin D, unstable haemoglobins and M haemoglobins.
-
-- **HbS (sickle cell disease and trait):** β⁶ Glu→Val; polymerises on deoxygenation.
-- **HbC:** β⁶ Glu→Lys; mild haemolytic anaemia with target cells; compound HbSC heterozygotes have a symptomatic disorder, somewhat milder than sickle cell disease.
-- **HbE:** β²⁶ Glu→Lys; highly prevalent in Bangladesh, Thailand and Southeast Asia; mild microcytosis, and with β-thalassaemia gives HbE-β-thalassaemia, a major cause of transfusion-dependent anaemia in the region.
-- **HbD (Punjab), HbO-Arab** and others, mild in the heterozygous state.
-- **Unstable haemoglobins** (Hb Köln, Hb Zürich): Heinz body haemolytic anaemia.
-- **M haemoglobins:** the haem iron is stabilised in the ferric state, causing cyanosis (methaemoglobinaemia).
-- **High-oxygen-affinity variants:** cause familial polycythaemia (Hb Chesapeake).
-
+1. **Sickle cell disease:** a missense mutation in the beta-globin gene gives sickle haemoglobin (HbS).
+2. **HbSC disease:** the compound heterozygous state for HbS and HbC.
+3. **HbC:** a variant haemoglobin common in regions where HbS is found.
+4. **Unstable haemoglobins.**
 
 ## Name the normal (and abnormal) haemoglobins.
 
@@ -8699,82 +8673,82 @@ Haemoglobinopathies are inherited disorders caused by mutations in globin genes 
 
 ## Define thalassemia.
 
-Thalassaemia is a genetically heterogeneous group of inherited disorders caused by germline mutations that decrease the synthesis of either α-globin or β-globin chains, leading to anaemia, tissue hypoxia and red cell haemolysis from the imbalance in globin chain synthesis.
-
-The two α chains of HbA are encoded by an identical pair of α-globin genes on chromosome 16, and the β chains by a single β-globin gene on chromosome 11. β-Thalassaemia is caused by deficient synthesis of β chains and α-thalassaemia by deficient synthesis of α chains. The haematological consequences of reduced synthesis of one chain stem not only from haemoglobin deficiency (hypochromic microcytic red cells with reduced oxygen carrying capacity) but also from the relative excess of the other chain, particularly in β-thalassaemia. Unpaired α chains precipitate in red cell precursors, causing membrane damage, apoptosis of precursors (ineffective erythropoiesis) and extravascular haemolysis of the released red cells. Thalassaemia is among the most common inherited disorders of humans, and its distribution (Mediterranean, Middle East, Africa, Indian subcontinent and Southeast Asia) parallels that of malaria, from which heterozygous carriers are protected.
-
+Thalassaemia is a genetically heterogeneous disorder caused by germline mutations that decrease the synthesis of either alpha-globin or beta-globin, leading to anaemia, tissue hypoxia, and red cell haemolysis related to the imbalance in globin chain synthesis.
 
 ## How is thalassemia classified?
 
-Thalassaemia is classified genetically into β-thalassaemia and α-thalassaemia according to the globin chain affected, and clinically into major, intermedia and minor (or trait) forms according to severity (Table 14.3).
+Thalassaemia is classified by the globin chain that is deficient, and then by clinical severity.
 
-| Syndrome | Genotype | Clinical features | Molecular genetics |
-|---|---|---|---|
-| **β-Thalassaemia** | | | Mainly point mutations affecting transcription, splicing or translation of β-globin mRNA |
-| β-Thalassaemia major | β⁰/β⁰, β⁺/β⁺, β⁰/β⁺ | Severe, transfusion-dependent anaemia | |
-| β-Thalassaemia intermedia | Variable (milder β⁺/β⁺ or β⁺/β⁰; unusual heterozygotes) | Severe but not regularly transfusion-dependent | |
-| β-Thalassaemia minor (trait) | β⁰/β or β⁺/β | Asymptomatic, mild or absent anaemia, microcytosis | |
-| **α-Thalassaemia** | | | Mainly gene deletions |
-| Silent carrier | –α/αα (one gene deleted) | Asymptomatic; no abnormality or slight microcytosis | |
-| α-Thalassaemia trait | –/αα or –α/–α (two genes deleted) | Asymptomatic, like β-thalassaemia minor | |
-| HbH disease | –/–α (three genes deleted) | Moderately severe, resembling β-thalassaemia intermedia | |
-| Hydrops fetalis (α-thalassaemia major) | –/– (four genes deleted) | Lethal in utero without transfusions | |
-
-β⁰ mutations result in absent β-globin synthesis, and β⁺ mutations in reduced but detectable synthesis.
-
+| Syndrome | Genetic basis | Clinical features |
+|---|---|---|
+| **Beta-thalassaemia major** | Two beta-thalassaemia alleles (beta-zero or beta-plus) | Severe; requires blood transfusions |
+| **Beta-thalassaemia intermedia** | Milder variants of two defective alleles, and unusual heterozygous forms | Severe, but does not require regular blood transfusions |
+| **Beta-thalassaemia minor** (trait) | One beta-thalassaemia allele and one normal | Asymptomatic, with mild or absent anaemia; red cell abnormalities seen |
+| **Silent carrier** (alpha) | Deletion of one alpha-globin gene | Asymptomatic; no red cell abnormality |
+| **Alpha-thalassaemia trait** | Deletion of two alpha-globin genes | Asymptomatic, like beta-thalassaemia minor |
+| **Haemoglobin H disease** | Deletion of three alpha-globin genes | Severe; resembles beta-thalassaemia intermedia |
+| **Alpha-thalassaemia major** (hydrops fetalis) | Deletion of all four alpha-globin genes | Lethal in utero without transfusions |
 
 ## Clinical features of thalassaemia.
 
-The clinical features of β-thalassaemia major are severe anaemia from 6 to 9 months of age, growth retardation, hepatosplenomegaly, skeletal deformities with a mongoloid facies from marrow expansion, and iron overload, in contrast to the symptomless anaemia of the trait.
+**Beta-thalassaemia major**
 
-β-Thalassaemia major. Anaemia appears 6 to 9 months after birth as haemoglobin synthesis switches from HbF to HbA; untransfused haemoglobin is 3 to 6 g/dL. Features include pallor and mild jaundice, failure to thrive and growth retardation, marked hepatosplenomegaly caused by extramedullary haemopoiesis and phagocyte hyperplasia (spleen up to 1500 g), and the characteristic skeletal changes caused by expansion of the marrow: frontal and parietal bossing, prominent cheekbones and maxillary hypertrophy ("chipmunk" or mongoloid facies), and a "crew-cut" skull radiograph. Metabolically active erythroid progenitors cause cachexia. Excess iron, from increased gastrointestinal absorption (low hepcidin because of erythroferrone) and from transfusions, damages the heart (the main cause of death), liver, pancreas (diabetes) and other endocrine glands. Complications include gallstones, leg ulcers, and infections.
+- The anaemia manifests 6 to 9 months after birth, as haemoglobin synthesis switches from HbF to HbA; in untransfused patients haemoglobin is 3 to 6 g/dL.
+- Untreated children have growth retardation and die early from the effects of anaemia; severe cachexia occurs in untreated patients.
+- Hepatosplenomegaly from extramedullary haematopoiesis; the spleen may weigh as much as 1500 g.
+- Skeletal changes: expanding marrow erodes cortical bone, giving a "crewcut" skull on radiographs; in survivors the cheekbones and other bony prominences are enlarged and distorted.
+- **Iron overload** (haemosiderosis and secondary haemochromatosis) from increased gut absorption and repeated transfusions damages the heart, liver and pancreas; cardiac disease is an important cause of death.
+- With transfusions and iron chelation, survival into the third decade is possible.
 
-β-Thalassaemia minor. Asymptomatic with mild microcytic anaemia.
+**Beta-thalassaemia minor**
 
-α-Thalassaemia. Silent carriers and trait are asymptomatic; HbH disease causes a moderately severe anaemia with splenomegaly; hydrops fetalis causes severe pallor, oedema and hepatosplenomegaly, with intrauterine or neonatal death.
+- Usually asymptomatic; anaemia, if present, is mild.
 
+**Alpha-thalassaemia**
+
+- Silent carrier: asymptomatic, with slight microcytosis. Trait: small red cells, minimal or no anaemia, no abnormal physical signs.
+- **Haemoglobin H disease:** moderately severe anaemia; HbH has very high oxygen affinity, so tissue hypoxia is out of proportion to the haemoglobin level.
+- **Hydrops fetalis:** fetal distress by the third trimester, severe pallor, generalised oedema and massive hepatosplenomegaly; lifelong transfusion dependence in survivors.
 
 ## Type of mutation in beta thalassaemia.
 
-β-Thalassaemia is caused mostly by point mutations in the β-globin gene that disrupt splicing, transcription, or translation, and they are classified as β⁰ (absent synthesis) or β⁺ (reduced synthesis).
+Beta-thalassaemia is caused by more than 100 different mutations, mostly **point mutations**, of two kinds:
 
-More than 100 causative mutations have been described, falling into three major classes:
+- **Beta-zero mutations:** absent beta-globin synthesis.
+- **Beta-plus mutations:** reduced but detectable beta-globin synthesis.
 
-1. **Splicing mutations:** the most common cause of β⁺-thalassaemia. Mutations that destroy normal splice junctions completely prevent the formation of normal β-globin mRNA (β⁰). Others create an ectopic splice site within an intron; because the flanking normal splice site remains, both normal and abnormal splicing occur and some normal mRNA is made (β⁺).
-2. **Promoter region mutations:** reduce transcription by 75% to 80%, giving β⁺-thalassaemia.
-3. **Chain terminator mutations:** the most common cause of β⁰-thalassaemia; nonsense mutations that introduce a premature stop codon, or small insertions or deletions that shift the reading frame (frameshift), blocking translation.
+They fall into three major classes:
 
-By contrast, α-thalassaemia is caused mainly by deletions of α-globin genes.
-
+1. **Splicing mutations:** the most common cause of beta-plus thalassaemia. Some destroy normal RNA splice junctions and prevent production of normal beta-globin mRNA (beta-zero); others create an ectopic splice site within an intron, so that some normal mRNA is still made (beta-plus).
+2. **Promoter region mutations:** reduce transcription by 75% to 80%; associated with beta-plus thalassaemia.
+3. **Chain terminator mutations:** the most common cause of beta-zero thalassaemia; nonsense mutations that introduce a premature stop codon, or small insertions or deletions that shift the reading frame (frameshift mutations).
 
 ## Laboratory diagnosis of thalassaemia.
 
-Thalassaemia is diagnosed by the finding of a hypochromic microcytic anaemia with target cells on the blood film, normal iron studies, and confirmation by haemoglobin electrophoresis or HPLC showing raised HbF and absent or reduced HbA in β-thalassaemia major, or raised HbA₂ in β-thalassaemia trait.
-
-Blood count. Haemoglobin 3 to 6 g/dL (untransfused β-thalassaemia major); markedly reduced MCV and MCH; red cell count relatively high; RDW normal in trait, raised in major. Reticulocytes are elevated, though lower than expected for the degree of anaemia because of ineffective erythropoiesis.
-
-Blood film. Marked anisopoikilocytosis, microcytosis and hypochromia, target cells, basophilic stippling, fragmented red cells and nucleated red cells (normoblasts); inclusions of α chains are removed by the spleen and not seen.
-
-Iron studies. Normal or raised serum iron and ferritin (iron overload), which distinguishes it from iron deficiency.
-
-Haemoglobin analysis. Electrophoresis or HPLC: HbF markedly raised (30% to 90%) with absent (β⁰/β⁰) or reduced HbA in major; HbA₂ raised to 4% to 8% in β-thalassaemia trait (normal 2.5%), HbF normal or slightly raised.
-
-Other. Bone marrow: erythroid hyperplasia (not needed); DNA analysis for the mutation and for prenatal diagnosis; skull X-ray crew-cut appearance; family studies.
-
+1. **Peripheral blood:** anisocytosis, poikilocytosis, microcytosis and hypochromia; target cells, basophilic stippling and fragmented red cells; reticulocyte count elevated.
+2. **Haemoglobin electrophoresis**
+   - Beta-thalassaemia major: HbF markedly elevated; HbA completely absent (beta-zero/beta-zero) or present in small amounts.
+   - Beta-thalassaemia minor: HbA2 increased to 4% to 8% of total haemoglobin (normal 2.5% plus or minus 0.3%); HbF normal or occasionally slightly increased.
+   - Alpha-thalassaemia trait: HbA2 normal or low.
+3. **Exclude iron deficiency**, the most common cause of microcytic anaemia, by serum iron, total iron-binding capacity and serum ferritin; the raised HbA2 is useful in females of childbearing age, who are at high risk of iron deficiency.
+4. **Bone marrow:** mild erythroid hyperplasia in the minor form; striking expansion of haematopoietically active marrow in the major form.
+5. **Prenatal diagnosis** is possible by molecular analysis of DNA.
 
 ## PBF findings of thalassaemia major.
 
-The film in β-thalassaemia major shows severe hypochromic microcytic anaemia with marked anisopoikilocytosis, numerous target cells, basophilic stippling, fragmented cells and many nucleated red cells.
-
-Blood smears show severe red cell abnormalities: marked variation in size (anisocytosis) and shape (poikilocytosis), microcytosis and hypochromia. Target cells (so called because haemoglobin collects in the centre of the cell), basophilic stippling and fragmented red cells are common. Variable numbers of poorly haemoglobinised nucleated red cell precursors (normoblasts) are seen in the peripheral blood, owing to "stress" erythropoiesis and abnormal release of precursors from sites of extramedullary haemopoiesis, the count increasing after splenectomy. The reticulocyte count is elevated but lower than expected for the severity of anaemia because of ineffective erythropoiesis. Inclusions of aggregated α chains are efficiently removed by the spleen and not easily seen. Tear-drop cells and Howell-Jolly bodies (after splenectomy) may be seen.
-
+- Marked variation in red cell size (anisocytosis) and shape (poikilocytosis).
+- Microcytosis and hypochromia.
+- **Target cells** (haemoglobin collects in the centre of the cell), basophilic stippling and fragmented red cells.
+- Reticulocyte count elevated, but lower than expected for the severity of the anaemia because of ineffective erythropoiesis.
+- Variable numbers of poorly haemoglobinised nucleated red cell precursors (normoblasts).
+- Inclusions of aggregated alpha chains are efficiently removed by the spleen and are not easily seen.
 
 ## Confirmatory test for thalassaemia.
 
-The confirmatory test for thalassaemia is haemoglobin electrophoresis or high-performance liquid chromatography (HPLC), which shows raised HbF and absent or reduced HbA in β-thalassaemia major, and raised HbA₂ in β-thalassaemia trait.
+The textbook names no single confirmatory test; the diagnostic tests it describes are:
 
-In β-thalassaemia major the major red cell haemoglobin is HbF, markedly elevated, and HbA is absent (β⁰/β⁰) or present in small amounts (β⁺ genotypes). In β-thalassaemia minor, HbA₂ (α₂δ₂) is increased to 4% to 8% of the total haemoglobin (normal 2.5% ± 0.3%), reflecting an elevated ratio of δ-chain to β-chain synthesis; HbF is normal or slightly increased. In HbH disease, HbH (β₄) and Hb Barts are demonstrable. α-Thalassaemia trait is diagnosed by exclusion (normal HbA₂, microcytosis) and by DNA analysis (gene deletion studies by multiplex PCR). Molecular analysis of DNA provides definitive diagnosis and permits prenatal diagnosis. Iron deficiency should be excluded, since it may reduce HbA₂ and mask the diagnosis of trait.
-
+- **Haemoglobin electrophoresis:** in beta-thalassaemia major the major haemoglobin is HbF, markedly elevated, with HbA absent or small; in beta-thalassaemia minor HbA2 is increased to 4% to 8%.
+- **Molecular analysis of DNA** for prenatal diagnosis.
 
 ## Write the genetic basis of β-thalassemia major.
 
@@ -8827,34 +8801,23 @@ The diagnosis is confirmed by the following investigations.
 
 ## Which type of abnormal haemoglobin is found in sickle cell anaemia?
 
-The abnormal haemoglobin in sickle cell anaemia is haemoglobin S (HbS), which results from a point mutation in the β-globin gene that replaces glutamic acid with valine at position 6 of the β-chain.
-
-In the homozygous state, almost all the haemoglobin of the red cell is HbS (α₂βˢ₂), with a variable amount of HbF and no HbA. The substitution of a charged glutamate by a hydrophobic valine allows deoxygenated HbS molecules to polymerise into long needlelike fibres, which distort the red cell into a sickle or holly-leaf shape. In heterozygotes (sickle cell trait), about 40% of the haemoglobin is HbS and the rest HbA, which interferes with polymerisation, so the trait is largely asymptomatic. In compound heterozygotes for HbS and HbC (HbSC disease), 50% of the haemoglobin is HbS, giving a symptomatic but somewhat milder disease.
-
+**Sickle haemoglobin (HbS).** A missense mutation in the beta-globin gene replaces a charged glutamate residue with a hydrophobic valine residue. In affected individuals almost all the haemoglobin in the red cell is HbS (two alpha chains and two sickle beta chains).
 
 ## Clinical features of sickle cell anaemia.
 
-Sickle cell anaemia presents with chronic haemolytic anaemia and jaundice, punctuated by painful vaso-occlusive crises, and is complicated by splenic autoinfarction, increased susceptibility to infection with encapsulated organisms, and chronic organ damage.
-
-Infants are protected by HbF and become symptomatic at about 5 to 6 months of age.
-
-Chronic haemolytic anaemia. Moderate to severe anaemia, jaundice, pigment gallstones, reticulocytosis, and expanded marrow with skeletal changes ("crew-cut" skull).
-
-Crises.
-
-- **Vaso-occlusive (pain) crises:** episodes of hypoxic injury and infarction, in bones, lungs, liver, brain, spleen and penis. In children, hand-foot syndrome (dactylitis) is frequent and may be confused with osteomyelitis.
-- **Acute chest syndrome:** fever, cough, chest pain and pulmonary infiltrates; potentially fatal.
-- **Priapism:** in up to 45% of postpubertal males.
-- **Stroke and retinopathy,** which may lead to blindness.
-- **Sequestration crisis:** in children with intact spleens, massive splenic enlargement, hypovolaemia and shock.
-- **Aplastic crisis:** parvovirus B19 infection of red cell progenitors, causing a sudden worsening of anaemia.
-
-Spleen. Enlarged in early childhood by congestion, then progressive fibrosis and infarction leading to autosplenectomy by adolescence or early adulthood, with Howell-Jolly bodies.
-
-Infections. Impaired splenic function and defective alternative complement pathway lead to susceptibility to Streptococcus pneumoniae, Haemophilus influenzae and Salmonella osteomyelitis; reduced by vaccination and prophylactic penicillin.
-
-Other. Leg ulcers in adults, hyposthenuria and renal papillary necrosis, growth retardation, cor pulmonale, and chronic organ damage.
-
+- Infants become symptomatic only at 5 or 6 months of age, when the level of HbF normally falls.
+- **Chronic haemolytic anaemia** with jaundice and pigment gallstones; chronic tissue hypoxia impairs growth and development and damages the spleen, heart, kidneys and lungs.
+- The course is punctuated by **crises**:
+  - **Vaso-occlusive (pain) crises:** hypoxic injury and infarction causing severe pain, most often in the bones, lungs, liver, brain, spleen and penis; in children, bone crises and the hand-foot syndrome (dactylitis).
+  - **Acute chest syndrome:** fever, cough, chest pain and pulmonary infiltrates; may be fatal.
+  - **Sequestration crisis** in children with an intact spleen: massive entrapment of sickled cells, rapid splenic enlargement, hypovolaemia and sometimes shock.
+  - **Aplastic crisis:** parvovirus B19 infection of red cell progenitors causes a sudden worsening of the anaemia.
+- **Priapism** in up to 45% of males after puberty; **stroke** and **retinopathy** with loss of vision.
+- **Autosplenectomy:** the spleen is enlarged in early childhood, then infarcted and fibrosed to a small nubbin by adolescence or early adulthood.
+- Increased susceptibility to infection with encapsulated organisms (*Pneumococcus pneumoniae*, *Haemophilus influenzae*, meningococcus), from impaired splenic function and defects in the alternative complement pathway.
+- **Hyposthenuria** (inability to concentrate urine) from sickling in the renal medulla.
+- **Leg ulcers** in adults from vascular stagnation in subcutaneous tissues.
+- Marrow expansion gives prominent cheekbones and a "crewcut" skull; cor pulmonale may follow pulmonary vessel infarcts.
 
 ## How does leg ulcer occur in sickle cell anaemia?
 
