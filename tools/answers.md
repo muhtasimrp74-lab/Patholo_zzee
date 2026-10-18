@@ -13966,3 +13966,174 @@ Causes are the disorders associated with splenomegaly:
    - Extrahepatic obstruction of the portal or splenic vein: portal vein thrombosis, pyelophlebitis (inflammation of the portal vein), thrombosis from tumours of the stomach or pancreas.
    - Systemic venous congestion from right-sided heart failure, as in tricuspid or pulmonic valve disease and chronic cor pulmonale; the spleen rarely exceeds 500 g.
 4. **Infiltrative disorders:** sarcoidosis, amyloidosis, glycogen storage diseases, lipid storage diseases and metastases.
+
+## Write down the etiology of hepatocellular carcinoma.
+
+Most hepatocellular carcinomas occur in chronic liver disease with **cirrhosis**; 15% to 20% arise in noncirrhotic livers. Chronic injury, inflammation and hepatocyte regeneration lead to **driver mutations**.
+
+- **Chronic viral hepatitis B and C**; more than 85% of cases occur in Asia and sub-Saharan Africa, where chronic hepatitis B infection is common, with peak incidence in young adults who acquired the virus by maternal-foetal transmission
+- **Metabolic diseases:** hereditary haemochromatosis and alpha-1 antitrypsin deficiency
+- **Alcohol-associated liver disease**
+- **MASLD** (metabolic dysfunction-associated steatotic liver disease), which raises the risk even without cirrhosis
+- **Aflatoxin**, a mycotoxin of Aspergillus species that contaminates crops; it acts synergistically with alcohol and hepatitis B
+- Cirrhosis from **Wilson disease** and chronic biliary diseases, where the risk is lower but still above the population average
+- **Hepatocellular adenoma**, especially with beta-catenin activating mutations, in noncirrhotic liver
+- **Dysplastic nodules** in cirrhotic liver
+
+## A 30y male with recent blood transfusion has jaundice, weakness. What are the possible fates/outcomes of such a case?
+
+**Hepatitis B** (parenteral spread, including blood transfusion):
+
+1. **Acute hepatitis followed by recovery and clearance of the virus.** Acute infection is mild or subclinical in nearly two-thirds of adults and is self-limited in most cases.
+2. **Acute hepatic failure** with massive liver necrosis: 0.1% to 0.5% of acutely infected individuals, in 4 to 8 weeks.
+3. **Chronic hepatitis**, with or without progression to **cirrhosis**: 5% to 10% of infected individuals. The risk is greatest, about 90%, in infants infected at birth, and these individuals are at greatest risk of **hepatocellular carcinoma**.
+4. **Asymptomatic "healthy" carrier state.**
+
+**Hepatitis C** (parenteral spread):
+
+- Acute infection is asymptomatic in about 85% of individuals
+- **Chronic hepatitis** in 80% to 90% of infected individuals
+- About 20% of these progress to **cirrhosis** over 20 to 30 years
+- Those who develop cirrhosis are at risk of **hepatocellular carcinoma**
+
+## Same (with anorexia, high SGPT): what is the provisional diagnosis?
+
+**Acute viral hepatitis**, due to **hepatitis B or hepatitis C** acquired through the blood transfusion.
+
+- Both viruses are spread by the parenteral route
+- Anorexia and jaundice are symptoms of acute hepatitis B
+- Serum transaminases (SGPT is alanine aminotransferase) rise in acute infection
+- Hepatitis B is confirmed by **HBsAg**, which appears before symptoms and peaks in acute disease, and by **IgM anti-HBc**
+- Hepatitis C is confirmed by **HCV RNA**, detectable in blood for 1 to 3 weeks in acute infection; anti-HCV antibodies appear 3 to 6 weeks after infection and can be negative in early infection
+
+## A 59y male with HBV history has hepatomegaly, SOL in right lobe on USG. How will you proceed to diagnose?
+
+A space-occupying lesion in a man with chronic hepatitis B is **hepatocellular carcinoma** until proved otherwise.
+
+1. **Clinical assessment** for features of underlying chronic liver disease
+2. **Serum alpha-fetoprotein:** a frequent finding in advanced disease, but not sensitive as a screening test for early tumours and not seen in the fibrolamellar variant
+3. **Ultrasonography**, used to screen high-risk patients such as those with cirrhosis
+4. **Contrast-enhanced CT or MRI:** early enhancement of the tumour in the arterial phase, followed by rapid venous washout; these findings are highly characteristic of hepatocellular carcinoma
+
+## Same: what are your expected findings?
+
+**Clinical**
+
+- Abdominal pain, malaise, fatigue, weight loss and hepatomegaly
+- Features of underlying chronic liver disease
+
+**Investigations**
+
+- Raised **serum alpha-fetoprotein** in advanced disease
+- CT or MRI: early arterial enhancement followed by rapid venous washout
+
+**Morphology**
+
+- Single mass, multiple discrete masses, or diffuse infiltration of the liver, usually in a cirrhotic liver
+- Masses may be pale yellow from **fatty change** or green from cholestasis
+- Tumours larger than 2 cm are more likely to show vascular invasion and intrahepatic metastases; veins may be invaded, with extension into the portal vein, inferior vena cava and right side of the heart
+- Cells resemble normal hepatocytes in well and moderately differentiated tumours, growing in thick plates or trabeculae, pseudoglandular structures with bile plugs, or sheets
+- Haematogenous metastases, especially to the lung, occur late; lymph node metastases occur in less than 5% of cases
+
+## Give an outline of the spectrum of liver diseases associated with alcohol abuse.
+
+There are three distinctive, overlapping forms of alcohol-induced liver injury. Injury begins in centrilobular **zone 3** and extends outward toward the portal tracts as it becomes more severe.
+
+| Form | Pathology | Clinical features |
+|---|---|---|
+| **Steatosis (fatty change)** | Lipid droplets accumulate in hepatocytes, small at first and then coalescing; mainly macrovesicular. Liver enlarged (4 to 6 kg), soft, yellow and greasy. Completely reversible on abstention | Hepatomegaly with mild rise of serum bilirubin and alkaline phosphatase; severe dysfunction is unusual |
+| **Alcohol-associated (alcoholic) steatohepatitis** | **Ballooned hepatocytes** with **Mallory hyaline**; neutrophils around ballooned hepatocytes; lobular lymphocytic infiltrate; spotty necrosis or apoptosis; perivenular and pericellular "chicken wire" **fibrosis** | Acute onset after a bout of heavy drinking: malaise, anorexia, weight loss, upper abdominal discomfort, tender hepatomegaly; raised bilirubin, aminotransferases (**AST higher than ALT by 2:1 or more**) and alkaline phosphatase; neutrophil leucocytosis. Each episode carries a 10% to 20% risk of death |
+| **Fibrosis leading to cirrhosis** | Progression from perivenular fibrosis to periportal and bridging fibrosis; micronodular cirrhosis (**Laennec cirrhosis**, the micronodular cirrhosis of alcohol-associated liver disease) with nodules averaging 3 mm; fat no longer seen in the burned-out stage | Hyperbilirubinaemia, raised aminotransferases, variable alkaline phosphatase, hypoproteinaemia and anaemia; cirrhosis develops in about one-third of patients with repeated bouts of hepatitis within a few years |
+
+- Short-term ingestion of about 80 g of alcohol produces mild, reversible steatosis
+- Risk of severe injury becomes significant at 80 g or more of ethanol per day; 160 g or more daily for 10 to 20 years is frequently associated with severe injury
+- Only 10% to 15% of patients with alcohol use disorder develop cirrhosis
+
+## What are the factors that favour stone formation within gallbladder?
+
+**Cholesterol stones.** Four conditions contribute:
+
+1. **Supersaturation of bile with cholesterol**, so that cholesterol nucleates into crystals
+2. **Hypomotility** of the gallbladder
+3. **Accelerated cholesterol crystal nucleation**
+4. **Hypersecretion of mucus** in the gallbladder, which traps the crystals
+
+Risk factors:
+
+- **Age and sex:** prevalence rises through life and is higher in females; hypersecretion of biliary cholesterol plays the major role; metabolic syndrome and obesity are associated
+- **Oestrogen** (oral contraceptives, pregnancy): increases hepatic lipoprotein receptors and HMG-CoA reductase activity, so biliary cholesterol secretion is increased
+- **Obesity and rapid weight loss**, which increase biliary cholesterol secretion
+- **Gallbladder stasis**, neurogenic or hormonal
+- **Hereditary:** ABC transporter genes, particularly a common variant of the sterol transporter gene ABCG8
+
+**Pigment stones.** Raised unconjugated bilirubin in bile favours stones:
+
+- Chronic **haemolytic anaemia**
+- Severe ileal dysfunction or bypass
+- **Bacterial contamination of the biliary tree** (Escherichia coli, Ascaris lumbricoides, liver fluke Clonorchis sinensis): microbial beta-glucuronidases hydrolyse bilirubin glucuronides
+- Gallbladder stasis
+
+## What are the liver function tests (names, normal values; short note)?
+
+Reference ranges vary between laboratories.
+
+| Group | Test | Normal value | Note |
+|---|---|---|---|
+| **Hepatocellular injury** | **ALT** (alanine aminotransferase) | 4 to 36 IU/L | More liver-specific than AST. In alcohol-associated liver disease AST is higher than ALT by 2:1 or more |
+| | **AST** (aspartate aminotransferase) | 5 to 30 IU/L | Less specific; also found in muscle, heart, kidney, brain and blood cells |
+| **Cholestasis** | **Alkaline phosphatase** | 30 to 120 IU/L | Not liver-specific; also from bone, placenta and intestine. Raised in cholestatic disease |
+| | **GGT** (gamma-glutamyl transpeptidase) | 6 to 50 IU/L | Raised together with alkaline phosphatase in cholestatic disease; shows that a raised alkaline phosphatase is from the liver or biliary tract |
+| **Bilirubin** | **Total bilirubin** | 2 to 17 micromol/L (0.3 to 1.2 mg/dL) | Jaundice becomes evident above 2 to 2.5 mg/dL |
+| | **Direct bilirubin** | 0 to 6 micromol/L | Separates conjugated from unconjugated hyperbilirubinaemia |
+| **Synthetic function** | **Prothrombin time** | 10.9 to 12.5 seconds | Prolonged when clotting factor synthesis is impaired |
+| | **Serum albumin** | 35 to 50 g/L | Slow to change and nonspecific |
+| | **Total protein** | 60 to 80 g/L | Albumin plus globulins |
+
+## Name synthetic liver function tests.
+
+1. **Prothrombin time**, which reflects synthesis of the clotting factors (II, V, VII, IX, X, XI, XII and fibrinogen) made by hepatocytes
+2. **Serum albumin**
+
+## Name two causes of raised prothrombin time.
+
+1. **Liver failure** (hepatocellular disease): hepatocytes synthesise clotting factors II, V, VII, IX, X, XI and XII and fibrinogen, so factor deficiency and coagulopathy develop
+2. **Vitamin K deficiency**, as in cholestasis, where malabsorption causes deficiency of the fat-soluble vitamins A, D and K
+
+## Why is prothrombin time more specific than total protein estimation?
+
+- **Prothrombin time** tests directly the synthesis of clotting factors by hepatocytes; with liver failure these factors fall and coagulopathy develops
+- **Total protein** includes globulins, which are raised (hyperglobulinaemia) in chronic hepatitis
+- **Albumin** is slow to change and nonspecific; it is also low in poor nutrition, inflammation, and renal or gastrointestinal protein loss
+
+## What is jaundice?
+
+**Jaundice** is yellow discoloration of the skin (jaundice) and conjunctiva (icterus) due to **retention of bilirubin**. It becomes evident when serum bilirubin rises above 2 to 2.5 mg/dL (normal 0.3 to 1.2 mg/dL).
+
+## Classify jaundice.
+
+| Predominant bilirubin | Mechanism | Causes |
+|---|---|---|
+| **Unconjugated** | Excess production | **Haemolytic anaemia**; resorption of blood from internal haemorrhage (alimentary tract bleeding, haematoma); ineffective erythropoiesis (pernicious anaemia, thalassaemia) |
+| | Reduced hepatic uptake | Drug interference with membrane carrier systems; some cases of **Gilbert syndrome** (mild inherited deficiency of UGT1A1, the bilirubin-conjugating enzyme) |
+| | Impaired conjugation | **Physiologic jaundice of the newborn** (decreased UGT1A1 activity); breast milk jaundice (beta-glucuronidases in milk); genetic UGT1A1 deficiency: **Crigler-Najjar syndrome** types I and II (inherited UGT1A1 deficiency, severe in type I) and some cases of Gilbert syndrome |
+| **Conjugated** | Deficiency of canalicular membrane transporters | **Dubin-Johnson syndrome** (MRP2 gene mutation) and **Rotor syndrome** (inherited conjugated hyperbilirubinaemia); both autosomal recessive and clinically innocuous |
+| | Hepatocellular disease | Viral or drug-induced hepatitis, cirrhosis |
+| | Impaired bile flow | Duct obstruction; autoimmune cholangiopathies |
+
+## Give the differences between hemolytic and obstructive jaundice.
+
+| Feature | Haemolytic jaundice | Obstructive jaundice |
+|---|---|---|
+| **Cause** | Excess bilirubin production: haemolytic anaemia, ineffective erythropoiesis | Obstruction of large bile ducts: stones, malignant neoplasms of the biliary tree or head of pancreas, strictures |
+| **Bilirubin raised** | **Unconjugated**, usually below 3.5 mg/dL | **Conjugated** |
+| **Urine bilirubin** | **Absent**; unconjugated bilirubin is insoluble and cannot be excreted in urine | **Present**, dark urine; conjugated bilirubin is water soluble |
+| **Aminotransferases** | Normal | Below 200 U/L |
+| **Other findings** | Anaemia, ecchymoses; peripheral blood smear confirms | Raised **alkaline phosphatase and GGT** (more than 3 times normal); **pruritus**, skin xanthomas, steatorrhoea, deficiency of vitamins A, D and K; clay-coloured stools if severe |
+| **Complications** | **Kernicterus** in infants, when unbound unconjugated bilirubin enters the brain | **Fibrosis and biliary cirrhosis** if persistent; **ascending cholangitis** |
+
+## What is physiological jaundice?
+
+- **Transient and mild unconjugated hyperbilirubinaemia**, nearly universal in the first week of life; it resolves by 2 weeks
+- Cause: levels of **UGT1A1** (the enzyme that conjugates bilirubin with glucuronic acid) are low at birth and do not reach adult levels until 3 to 4 months of age
+- **Breastfeeding** may exacerbate it, possibly because of bilirubin-deconjugating enzymes in breast milk
+- **Phototherapy** with blue light converts bilirubin to a soluble isomer that is excreted in urine, and is sufficient in most infants
