@@ -371,3 +371,12 @@ Questions: investigation of anaemia, causes of iron deficiency anaemia (general,
 - Causes by age group: the textbook gives no table by age; the answer arranges its statements by group.
 - Progress file lists 655 questions done; 480 remain.
 - tools/tests/test_site.py: 34 tests, all passed after the final bump.
+
+### Session 10, batch 5 (ten further questions)
+Questions: causes of IDA in infants and children, laboratory findings and biochemical tests in IDA, susceptibility to IDA, prognosis of aplastic anaemia versus IDA, differential diagnosis of microcytic hypochromic anaemia (two), macrocytic anaemia (define, classify, nonmegaloblastic causes).
+- All from the textbook (Chapter 14); no outside source.
+- Macrocytic anaemia: the textbook has no separate definition; the answer uses the mean cell volume reference range from Table 14.2.
+- Prognosis of aplastic anaemia versus IDA: the textbook gives no direct comparison; the table sets side by side only what it states for each.
+- Differentiating microcytic hypochromic anaemias: the textbook gives no iron indices for thalassaemia trait, shown as "not stated".
+- Normoblastic (nonmegaloblastic) macrocytic causes: only liver disease, aplastic anaemia and reticulocytosis are named; alcohol, hypothyroidism and drugs are left out.
+- Progress file lists 665 questions done; 470 remain.
