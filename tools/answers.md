@@ -2621,44 +2621,36 @@ A ***thrombus*** is a blood clot that forms within an intact blood vessel or wit
 
 ## Virchow's triad.
 
-Virchow's triad consists of the three primary abnormalities that lead to thrombosis: endothelial injury, abnormal blood flow (stasis or turbulence), and hypercoagulability of the blood.
+1. **Endothelial injury** (for example by toxins, hypertension, inflammation or metabolic products), associated with endothelial activation and changes in endothelial gene expression that favour coagulation.
+2. **Abnormal blood flow: stasis or turbulence** (for example due to aneurysms or atherosclerotic plaque).
+3. **Hypercoagulability**, either primary or secondary.
 
-- **Endothelial injury** is the dominant influence and can by itself lead to thrombosis (for example over ulcerated atherosclerotic plaques, damaged heart valves, or after endothelial activation by hypertension, toxins, inflammation and metabolic products).
-- **Stasis or turbulence of blood flow** contributes to arterial and cardiac thrombosis (turbulence) and to venous thrombosis (stasis).
-- **Hypercoagulability** is any alteration of the coagulation pathways that predisposes to thrombosis; it is primary (genetic) or secondary (acquired).
+- Primary: factor V Leiden (a mutation named after the city in the Netherlands where it was discovered), increased prothrombin synthesis, antithrombin deficiency.
+- Secondary: bed rest, tissue damage, malignancy, antiphospholipid antibodies (antiphospholipid antibody syndrome) or antibodies against PF4/heparin complexes (heparin-induced thrombocytopenia).
 
-The three factors may act independently or together, and endothelial injury can alter local flow and coagulability while abnormal flow can in turn injure endothelium.
-
+Endothelial integrity is the most important factor. Injury to endothelial cells can alter local blood flow and affect coagulability. Abnormal blood flow, in turn, can cause endothelial injury. These factors may promote thrombosis independently or in combination.
 
 ## Why does prolonged bed rest result in pulmonary embolism?
 
-Prolonged bed rest causes stasis of blood in the deep veins of the legs, because lack of muscle contraction removes the milking action on the veins, so deep vein thrombi form, and fragments of these thrombi break off, travel to the right heart and lodge in the pulmonary arteries as emboli.
-
-Bed rest and immobilisation reduce the pumping action of the leg muscles, which normally propels blood toward the heart; blood in the deep veins of the calf and thigh becomes stagnant (stasis), and stasis is a major contributor to venous thrombosis. Stasis allows platelets to contact endothelium, prevents washout and dilution of activated clotting factors, and promotes endothelial activation. The underlying illness, surgery, trauma or heart failure that caused the bed rest often adds hypercoagulability and endothelial injury (Virchow triad). Deep vein thrombosis at or above the knee (popliteal, femoral, iliac veins) is serious because such thrombi readily embolise; they are often asymptomatic, so that approximately 50% of DVTs are recognised only after embolisation. The propagating portion of a venous thrombus is poorly attached and may fragment; the fragments are carried through progressively larger veins and the right side of the heart to impact in the pulmonary arterial tree. About 70% to 80% of pulmonary emboli arise from leg DVT.
-
+1. Bed rest and immobilisation reduce the milking action of the leg muscles, which results in **stasis** in the leg veins.
+2. Stasis is a major contributor to the development of venous thrombi. It promotes endothelial activation, brings platelets into contact with the endothelium, and prevents washout and dilution of activated clotting factors by fresh flowing blood and the inflow of clotting factor inhibitors.
+3. **Deep vein thrombosis** of the lower extremity develops; veins of the lower extremities are involved in 90% of venous thrombi.
+4. The propagating portion of the thrombus is poorly attached and fragments. The fragments are carried through progressively larger veins and the right side of the heart into the pulmonary arterial vasculature as a **pulmonary embolus**.
+5. In 70% to 80% of cases, pulmonary embolism originates from leg deep vein thrombosis, so the risk factors for pulmonary embolism are the same as for deep vein thrombosis.
 
 ## What are mural thrombi?
 
-Mural thrombi are thrombi that form in the heart chambers or in the aortic lumen and are attached to the wall without completely occluding the lumen.
-
-They arise where there is abnormal myocardial contraction (arrhythmias such as atrial fibrillation, dilated cardiomyopathy, myocardial infarction with dyskinetic myocardium) or endomyocardial injury (myocarditis, catheter trauma), and, in the aorta, over ulcerated atherosclerotic plaques and in aneurysmal dilations, where turbulence and stasis exist. Left ventricular thrombi overlie infarcts, and atrial thrombi form in dilated, fibrillating left atria (rheumatic mitral stenosis). They are laminated and friable, and are prone to embolisation, a common source of systemic emboli (80% of systemic emboli arise from intracardiac mural thrombi); the brain, kidneys and spleen are particularly likely targets.
-
+Thrombi occurring in heart chambers or in the aortic lumen are designated **mural thrombi**.
 
 ## Differences between thrombus and post-mortem clot.
 
-A thrombus forms in life, is firm, dry and attached to the vessel wall, with lines of Zahn; a postmortem clot forms after death, is soft and gelatinous, shows a dark red lower portion and a yellow "chicken fat" upper portion, and is not attached to the wall.
-
-| Feature | Thrombus (antemortem) | Postmortem clot |
+| Feature | Thrombus | Postmortem clot |
 |---|---|---|
-| Formation | In flowing blood during life | After death, in stagnant blood |
-| Attachment | Attached to the vessel wall at point of origin | Not attached |
-| Consistency | Firm, friable, dry | Soft, gelatinous, rubbery |
-| Surface | Rough, dull, granular | Smooth, glistening |
-| Lines of Zahn | Present (alternating pale platelet-fibrin and dark red cell layers) | Absent (not laminated) |
-| Colour | Mixed, red and gray; red cell-rich in veins | Dark red dependent portion (settled red cells) with yellow "chicken fat" upper portion |
-| Shape | May be occlusive or mural; cast of vessel in veins | Conforms to the lumen; may be a cast but not attached |
-| Microscopy | Fibrin, platelets, red cells and leukocytes, with lamination | Sedimented red cells and fibrin without lamination |
-
+| Time of formation | Formed in flowing blood during life (antemortem) | Forms after death |
+| Lines of Zahn (alternating pale platelet and fibrin deposits and darker red cell-rich layers) | Present; they signify that the thrombus formed in flowing blood | Absent; bland and nonlaminated |
+| Consistency | Firm | Gelatinous |
+| Appearance | Laminated | Dark-red dependent portion where red cells have settled by gravity and a yellow "chicken fat" upper portion |
+| Attachment to vessel wall | Focally attached to the underlying vascular surface | Usually not attached to the underlying vessel wall |
 
 ## What is thrombosis?
 
@@ -2783,126 +2775,98 @@ Other possibilities include **infection** of the thrombus in bacteraemia, which 
 
 ## Define embolus.
 
-An embolus is a detached intravascular solid, liquid or gaseous mass that is carried by the blood from its point of origin to a distant site, where it often obstructs blood flow and causes tissue dysfunction or infarction.
-
-Most emboli are dislodged thrombi, hence the term thromboembolism. Rare emboli are composed of fat droplets, air or nitrogen bubbles, atherosclerotic debris (cholesterol emboli), tumour fragments, bone marrow or foreign bodies. Emboli travel through the blood until they encounter vessels too small to permit passage, and cause partial or complete vascular occlusion. The consequences depend on the size and position of the lodged embolus and on the vascular bed involved.
-
+An **embolus** is a detached intravascular solid, liquid, or gaseous mass that is carried by the blood from its point of origin to a distant site, where it often obstructs blood flow and causes tissue dysfunction or infarction.
 
 ## Classify embolus.
 
-Emboli are classified on the basis of their composition as thromboemboli (the commonest), fat, air or gas, amniotic fluid, atheromatous (cholesterol), tumour, bone marrow, and foreign body emboli; by site as pulmonary (venous) or systemic (arterial), with paradoxical embolism as a special type.
+**By composition**
 
-| Basis | Types |
-|---|---|
-| Composition: solid | Thromboembolus (dislodged thrombus), atheroembolus (cholesterol), tumour embolus, bone marrow embolus, foreign body (bullet, catheter fragment) embolus, parasitic emboli |
-| Composition: liquid | Fat embolus, amniotic fluid embolus |
-| Composition: gas | Air embolus, nitrogen embolus (decompression sickness) |
-| Infection | Bland or septic (infected valve vegetation, infected thrombus) |
-| Route | Venous, pulmonary, systemic (arterial), paradoxical (venous embolus crossing an interatrial or interventricular defect) |
+- **Thromboembolus:** a dislodged thrombus; most emboli are of this type.
+- **Fat embolus:** fat droplets, sometimes with haematopoietic bone marrow.
+- **Air or nitrogen bubbles:** air embolism and decompression sickness.
+- **Cholesterol embolus:** atherosclerotic debris.
+- **Tumour fragments.**
+- **Bone marrow.**
+- **Foreign bodies.**
+- **Amniotic fluid.**
 
+**By the site of lodgement**
+
+- **Pulmonary embolism:** originates from deep vein thrombosis.
+- **Systemic embolism:** arterial emboli that travel to a wide variety of sites.
+- **Paradoxical embolism:** a venous embolus that passes through an interatrial or interventricular defect and gains access to the systemic arterial circulation.
 
 ## Examples of each type of embolus.
 
-The commonest example is pulmonary thromboembolism from deep vein thrombosis; other examples are fat embolism after long bone fracture, air embolism after neck vein injury, nitrogen embolism in divers, amniotic fluid embolism in labour, and tumour emboli in renal cell carcinoma.
-
-| Type | Example |
+| Type of embolus | Example |
 |---|---|
-| Thromboembolus | Pulmonary embolism from leg DVT; cerebral or limb embolus from left atrial or ventricular mural thrombus |
-| Fat embolus | After fracture of long bones (femur), soft tissue trauma, burns |
-| Air embolus | Injury to neck or chest veins, central venous catheter, obstetric or laparoscopic procedures, neurosurgery in sitting position |
-| Gas (nitrogen) embolus | Decompression sickness in divers (bends, chokes, caisson disease) |
-| Amniotic fluid embolus | Complication of labour and the immediate postpartum period |
-| Atheroembolus (cholesterol) | After aortic angiography or surgery; ulcerated aortic plaque, causing renal or lower limb emboli |
-| Tumour embolus | Renal cell carcinoma into the renal vein and inferior vena cava; hepatocellular carcinoma into hepatic veins |
-| Bone marrow embolus | Fractures, cardiopulmonary resuscitation |
-| Foreign body | Bullet, broken catheter, talc in intravenous drug users |
-| Septic embolus | Infective endocarditis vegetations |
-
+| Thromboembolus | Embolus from a lower extremity deep venous thrombosis lodged in the pulmonary artery; emboli from intracardiac mural thrombi, aortic aneurysms, atherosclerotic plaques or valvular vegetations in the systemic circulation |
+| Fat and bone marrow embolus | Fractures of long bones; rarely soft tissue trauma and burns |
+| Air embolus | Neurosurgery in the "sitting position"; endovascular and interventional procedures; mechanical ventilation; obstetric or laparoscopic procedures; chest wall injury |
+| Nitrogen bubbles | Decompression sickness in scuba and deep-sea divers, underwater construction workers, and persons in unpressurised aircraft who undergo rapid ascent |
+| Amniotic fluid embolus | Labour and the immediate postpartum period, through a tear in the placental membranes or rupture of uterine veins |
+| Atherosclerotic debris (cholesterol emboli), tumour fragments, foreign bodies | Named as rare emboli |
 
 ## Common sources of emboli.
 
-The commonest source of emboli is thrombus: deep vein thrombosis of the legs for pulmonary emboli, and cardiac mural thrombi (after myocardial infarction or in atrial fibrillation) for systemic emboli.
-
-- **Pulmonary emboli:** 70% to 80% originate from deep vein thrombosis of the legs (popliteal, femoral and iliac veins); pelvic veins and upper limb veins are less common sources.
-- **Systemic emboli:** 80% arise from intracardiac mural thrombi, two-thirds of which are associated with left ventricular wall infarcts and one-fourth with left atrial dilation and fibrillation (as in rheumatic mitral stenosis). The remainder come from aortic aneurysms, atherosclerotic plaques, valvular vegetations, or venous thrombi (paradoxical emboli); 10% to 15% are of unknown origin.
-
+- **Deep vein thrombosis of the leg:** the source of 70% to 80% of pulmonary emboli.
+- **Intracardiac mural thrombi:** the source of 80% of systemic emboli. Two-thirds are associated with left ventricular wall infarcts and another one-fourth with left atrial dilation and fibrillation.
 
 ## Other sources of emboli.
 
-Other sources are fractures of long bones (fat and marrow), sudden decompression (nitrogen), intravenous procedures and trauma (air), obstetric tears (amniotic fluid), atherosclerotic plaques (cholesterol), tumours, and foreign bodies.
+The remainder of systemic emboli originate from:
 
-- **Fat and bone marrow:** fractures of long bones, soft tissue trauma, burns, rarely orthopaedic procedures.
-- **Air:** neck and chest wall injuries, intravenous lines, surgery in a sitting position, obstetric and laparoscopic procedures, mechanical ventilation.
-- **Nitrogen:** rapid ascent in divers, unpressurised aircraft.
-- **Amniotic fluid:** tear in the placental membranes or rupture of uterine veins during labour or delivery.
-- **Atheromatous debris:** ulcerated plaques of the aorta, especially after catheterisation or surgery.
-- **Tumour fragments:** tumours invading veins (renal cell carcinoma, hepatocellular carcinoma).
-- **Foreign bodies:** bullets, catheter fragments, talc and other particles in intravenous drug use.
-- **Infected vegetations** of the heart valves (septic emboli), and parasites.
+- Aortic aneurysms
+- Atherosclerotic plaques
+- Valvular vegetations
+- Venous thrombi (paradoxical emboli)
 
+In 10% to 15% of systemic emboli the origin is unknown.
 
 ## How does fat embolism occur?
 
-Fat embolism occurs when trauma, usually fracture of long bones, ruptures the vascular sinusoids or small venules of the marrow, allowing droplets of marrow fat (sometimes with haematopoietic marrow) to enter the venous circulation and travel to the lungs.
-
-Fat embolism is the presence of microscopic fat globules, sometimes with haematopoietic bone marrow, in the vasculature, typically after fractures of long bones or, rarely, in soft tissue trauma and burns. It is common, occurring in about 90% of individuals with severe skeletal injuries, but only a minority have the clinical fat embolism syndrome. The injury ruptures vascular sinusoids or small venules in the marrow, allowing marrow and adipose tissue to herniate into the vascular space and travel to the lung. Small globules may pass through pulmonary capillaries to reach the systemic circulation (brain, kidney, skin). The embolic fat also causes biochemical injury, because free fatty acids released from the globules damage endothelium.
-
+1. Fat embolism typically follows fractures of long bones or, rarely, soft tissue trauma and burns; it occurs in some 90% of individuals with severe skeletal injuries.
+2. The injury ruptures vascular sinusoids or small venules in the marrow.
+3. Marrow and adipose tissue herniate into the vascular space.
+4. Microscopic fat globules, sometimes with associated haematopoietic bone marrow, travel to the lung.
 
 ## What is fat embolism syndrome?
 
-Fat embolism syndrome is the symptomatic condition seen in a minority of patients with fat embolism, characterised by pulmonary insufficiency, neurological symptoms, anaemia and thrombocytopenia, with a petechial rash, appearing 1 to 3 days after injury and fatal in 5% to 15% of cases.
-
-Typically, 1 to 3 days after injury, there is sudden onset of tachypnoea, dyspnoea and tachycardia, with irritability and restlessness that may progress to delirium or coma. Thrombocytopenia is attributed to platelet adhesion to fat globules and aggregation or splenic sequestration, and anaemia to red cell aggregation or haemolysis. A diffuse petechial rash (20% to 50%) is a useful diagnostic clue.
-
-**Pathogenesis.** Mechanical obstruction by fat microemboli and associated red cell and platelet aggregates occludes the pulmonary and cerebral microvasculature; biochemical injury follows because free fatty acids released from the fat globules cause toxic injury to endothelium, with platelet activation and granulocyte recruitment releasing free radicals, proteases and eicosanoids.
-
-**Diagnosis.** Because paraffin processing dissolves lipids, demonstration of fat microglobules (in the absence of marrow elements) requires frozen sections with fat stains (Oil red O, Sudan).
-
+**Fat embolism syndrome** is the term applied to the minority of patients with fat embolism who become symptomatic. It is characterised by pulmonary insufficiency, neurologic symptoms, anaemia and thrombocytopenia, and is fatal in 5% to 15% of cases.
 
 ## What is decompression sickness / caisson disease?
 
-Decompression sickness is a form of gas embolism caused by sudden decrease in atmospheric pressure, in which nitrogen dissolved in blood and tissues at high pressure comes out of solution as bubbles; caisson disease is the chronic form, in which persistent gas emboli in bone cause multiple foci of ischaemic necrosis.
+**Decompression sickness** is a particular form of gas embolism that occurs when individuals experience sudden decreases in atmospheric pressure.
 
-Scuba and deep-sea divers, underwater construction workers and people in unpressurised aircraft who ascend rapidly are at risk. When air is breathed at high pressure, increased amounts of gas (especially nitrogen) dissolve in blood and tissues; with too rapid ascent, nitrogen comes out of solution as bubbles.
-
-- **The bends:** rapid formation of gas bubbles in skeletal muscle and supporting tissues around joints causes severe pain (named from the arched posture of those afflicted, like the "Grecian bend").
-- **The chokes:** bubbles in the lung vasculature cause oedema, haemorrhage and focal atelectasis or emphysema, producing respiratory distress.
-- **Central nervous system** bubbles cause memory loss, ataxia, visual disturbances, even coma.
-- **Caisson disease** (named after the pressurised vessels used in bridge construction) is the chronic form: persistence of gas emboli in the skeletal system leads to multiple foci of ischaemic necrosis, commonly in the femoral heads, tibia and humeri.
-
-Small intravascular bubbles also evoke inflammatory and thrombogenic responses. **Treatment** is recompression in a chamber under high pressure to force the bubbles back into solution, followed by slow decompression.
-
+**Caisson disease** is a more chronic form of decompression sickness (named for the pressurised vessels used in bridge construction; workers in these vessels suffered both acute and chronic forms). In caisson disease, persistence of gas emboli in the skeletal system leads to multiple foci of ischaemic necrosis.
 
 ## How much air is needed to produce a clinical effect?
 
-More than about 100 mL of air is needed to produce a clinical effect in the pulmonary circulation, and 300 to 500 mL introduced over several seconds may be fatal.
-
-A large volume of air, generally more than 100 mL, is necessary to produce a clinical effect in the pulmonary circulation; this volume can inadvertently be introduced during obstetric or laparoscopic procedures, or through chest wall injury. Air in the pulmonary vasculature not only blocks perfusion of downstream regions but also induces an intense inflammatory response with release of cytokines that may injure the alveoli. Air embolism requires communication between the vasculature and outside air and a negative pressure gradient that sucks in air; in the cerebral circulation much smaller volumes can be dangerous.
-
+- A large volume of air, generally more than **100 mL**, is necessary to produce a clinical effect in the pulmonary circulation.
+- Introduction of **300 to 500 mL** of air over several seconds may be fatal.
 
 ## Clinical effects of caisson disease.
 
-The clinical effects of decompression sickness and caisson disease are the bends (painful joints and muscles), the chokes (respiratory distress with pulmonary oedema and haemorrhage), neurological manifestations, and, in the chronic form, ischaemic bone necrosis, especially of the femoral heads, tibia and humeri.
+**Chronic form (caisson disease)**
 
-- **Acute decompression sickness:** rapid bubble formation in muscles and tissues around joints causes the painful bends; bubbles in the lungs cause oedema, haemorrhage and focal atelectasis or emphysema, leading to respiratory distress (the chokes); bubbles in the central nervous system cause headache, memory loss, ataxia, visual disturbances and the sudden onset of coma; even small bubbles cause inflammatory and thrombogenic responses.
-- **Chronic (caisson disease):** persistence of gas emboli in the skeletal system causes multiple foci of ischaemic (avascular) necrosis, most commonly of the femoral heads, tibia and humeri, leading to joint pain and degenerative arthritis.
-- **Treatment:** recompression, then slow decompression.
+- Persistence of gas emboli in the skeletal system leads to multiple foci of **ischaemic necrosis**.
+- The more common sites are the **femoral heads, tibia and humeri**.
 
+**Acute decompression sickness, also suffered by caisson workers**
+
+- **The bends:** rapid formation of gas bubbles within skeletal muscles and supporting tissues in and about joints causes a painful condition. It was so named in the 1880s because those afflicted characteristically arched their backs in a manner reminiscent of the Grecian bend (a then-popular women's fashion pose).
+- **The chokes:** gas bubbles in the pulmonary vasculature cause oedema, haemorrhage, and focal atelectasis or emphysema, leading to a form of respiratory distress.
+- Even small intravascular bubbles may have physical effects, caused by inflammatory and thrombogenic host responses.
 
 ## Why is amniotic fluid embolism so dangerous?
 
-Amniotic fluid embolism is dangerous because, although rare, it has a mortality up to 60%, and the morbidity arises less from mechanical obstruction than from activation of coagulation and the innate immune system with release of vasoactive substances, causing sudden pulmonary hypertension, shock, DIC and neurological injury.
-
-It is the fifth most common cause of maternal mortality worldwide (about 10% of maternal deaths in the United States) and occurs in about 2 to 6 per 100,000 deliveries; about half of survivors have permanent neurologic dysfunction. Amniotic fluid or foetal tissue enters the maternal circulation through a tear in the placental membranes or rupture of uterine veins.
-
-The onset is sudden: severe dyspnoea, cyanosis and shock, followed by neurologic impairment (headache, seizures, coma) and DIC. The reasons for the danger are:
-
-1. Amniotic fluid contains many procoagulants (activated factors II, VII, X and tissue factor), causing DIC with massive haemorrhage.
-2. Activation of components of the innate immune system and release of vasoactive substances cause acute pulmonary hypertension and right heart failure, leading to hypoxia, left heart failure, pulmonary oedema and diffuse alveolar damage.
-3. The onset is abrupt and unpredictable during labour, and the features differ from those of thromboembolism.
-
-At autopsy, squamous cells shed from foetal skin, lanugo hair, fat from vernix caseosa and mucin from the foetal respiratory or gastrointestinal tract are found in the maternal pulmonary microvasculature.
-
+- It is the fifth most common cause of maternal mortality worldwide and accounts for roughly 10% of maternal deaths in the United States.
+- It is an ominous complication of labour and the immediate postpartum period; the incidence is only approximately 2 to 6 in 100,000 deliveries, but the mortality rate is up to 60%.
+- Approximately half of those who survive have permanent neurologic dysfunction.
+- The onset is characterised by sudden severe dyspnoea, cyanosis and shock, followed by neurologic impairment ranging from headache to seizures and coma, and by **DIC**.
+- Amniotic fluid contains many procoagulants, such as activated coagulation factors II, VII, X and tissue factor.
+- Much of the morbidity and mortality stems from activation of coagulation and components of the innate immune system and release of vasoactive substances, rather than mechanical obstruction of pulmonary vessels by amniotic debris.
+- The vasoactive substances cause acute **pulmonary hypertension** and right-heart failure, leading to hypoxia, left-heart failure, pulmonary oedema and diffuse alveolar damage.
 
 ## Sources of pulmonary embolism.
 
