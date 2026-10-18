@@ -4368,51 +4368,51 @@ Carcinomas may be further qualified. In **squamous cell carcinoma** the tumour c
 
 ## What is sarcoma?
 
-A sarcoma is a malignant tumour arising from mesenchymal tissue, such as connective tissue, fat, cartilage, bone, muscle and blood vessels.
-
-The name comes from the Greek sar, meaning fleshy, because sarcomas typically have little connective tissue stroma and so present as soft, fleshy tumours on cut section. They are named by attaching the suffix "-sarcoma" to the cell type that they resemble, for example fibrosarcoma, liposarcoma, chondrosarcoma, osteogenic sarcoma, leiomyosarcoma, rhabdomyosarcoma and angiosarcoma. Sarcomas are much less common than carcinomas in adults but form a significant proportion of malignant tumours in children and young adults. They tend to spread by the haematogenous route, although they may sometimes use the lymphatic channels. Several sarcomas are characterised by specific translocations, for instance the t(11;22)(q24;q12) of Ewing sarcoma, which are useful for diagnosis.
-
+Malignant tumours arising in solid **mesenchymal tissues** are usually called **sarcomas** (Greek sar, fleshy), for example fibrosarcoma and chondrosarcoma.
 
 ## Common examples of carcinoma.
 
-The common carcinomas are squamous cell carcinoma, adenocarcinoma, basal cell carcinoma and transitional cell (urothelial) carcinoma, and by organ the carcinomas of the lung, breast, prostate, colon and rectum, stomach, cervix and liver are the most frequent.
-
-Examples by type and site include squamous cell carcinoma of the skin, oral cavity, oesophagus, larynx, lung and uterine cervix; adenocarcinoma of the colon, stomach, pancreas, breast, prostate, endometrium and lung; basal cell carcinoma of the skin; transitional cell carcinoma of the urinary bladder; hepatocellular carcinoma of the liver; renal cell carcinoma of the kidney; bronchogenic carcinoma of the lung; serous and mucinous cystadenocarcinomas of the ovary; and choriocarcinoma of the placenta and embryonal carcinoma of the testis among the germ cell group.
-
+- **Squamous cell carcinoma**, in which the tumour cells resemble stratified squamous epithelium
+- **Adenocarcinoma**, in which the neoplastic epithelial cells grow in a glandular pattern
+- **Basal cell carcinoma** of the skin
+- **Transitional cell carcinoma** of the bladder
+- **Bronchogenic carcinoma** of the lung
+- **Renal cell carcinoma** of the kidney
+- **Hepatocellular carcinoma** of the liver
+- **Cystadenocarcinoma** and **papillary carcinoma** of glandular epithelium, including serous and mucinous cystadenocarcinoma of the ovary
+- **Choriocarcinoma** of the placenta
+- **Embryonal carcinoma** of the testis
 
 ## Common examples of sarcoma.
 
-Common sarcomas are fibrosarcoma, liposarcoma, chondrosarcoma, osteosarcoma, leiomyosarcoma, rhabdomyosarcoma and angiosarcoma.
-
-These tumours arise from fibrous tissue, fat, cartilage, bone, smooth muscle, skeletal muscle and blood vessels respectively. Additional examples are lymphangiosarcoma (lymph vessels), Ewing sarcoma (a small round blue cell tumour of bone and soft tissue in children and young adults) and Kaposi sarcoma, a vascular tumour associated with human herpesvirus 8 (HHV8) infection and immunodeficiency. Osteosarcoma is the commonest primary malignant bone tumour in adolescents, rhabdomyosarcoma is one of the common soft tissue sarcomas of childhood and leiomyosarcoma may arise in the uterus, gastrointestinal tract and retroperitoneum.
-
+- **Fibrosarcoma**, from connective tissue
+- **Liposarcoma**, from adipose tissue
+- **Chondrosarcoma**, from cartilage
+- **Osteogenic sarcoma**, from bone
+- **Leiomyosarcoma**, from smooth muscle
+- **Rhabdomyosarcoma**, from striated muscle
+- **Angiosarcoma**, from blood vessels
+- **Lymphangiosarcoma**, from lymph vessels
 
 ## What is a hamartoma?
 
-A hamartoma is a disorganised mass composed of mature cells indigenous to the tissue in which it arises.
+**Hamartomas** are disorganised masses composed of cells indigenous to the involved tissue.
 
-It was long regarded as a developmental malformation rather than a true tumour, but most hamartomas have been found to carry clonal chromosomal aberrations acquired through somatic mutation, and they are therefore now considered benign neoplasms. The mass is made up of the same cell types that are normally present at the site but they are arranged in a haphazard way and in abnormal proportions. A familiar example is the pulmonary hamartoma, a "coin lesion" on chest imaging that is composed of disorganised cartilage, fat, connective tissue and bronchial epithelium. The polyps of Peutz–Jeghers syndrome, which is caused by germline loss-of-function mutations of the STK11 tumour suppressor gene, are also hamartomatous.
-
-A **choristoma** is different: it is a heterotopic (misplaced) rest of normal tissue, such as a nodule of well-developed pancreatic tissue in the submucosa of the stomach or small intestine. Like hamartoma, the name sounds neoplastic and conveys a gravity that far exceeds the actual significance of these lesions.
-
+Once thought to be a developmental malformation, most hamartomas have clonal chromosomal aberrations that are acquired through somatic mutation and are now considered **benign neoplasms**.
 
 ## Write a short note on teratoma.
 
-A teratoma is a germ cell tumour composed of mature or immature tissues derived from more than one germ layer, and sometimes from all three, which arises from totipotential germ cells; the commonest example is the cystic teratoma (dermoid cyst) of the ovary.
+**Definition.** A **teratoma** is a tumour that contains mature or immature cells or tissues belonging to more than one germ cell layer, and sometimes all three. Most neoplasms are composed of cells from a single germ layer, so teratoma is an exception.
 
-**Definition and origin.** Most neoplasms, including mixed tumours, are composed of cells from a single germ layer. Teratoma is the exception. It originates from totipotential germ cells that are normally present in the ovary and testis and are sometimes found in abnormal midline embryonic rests, such as the sacrococcygeal region, mediastinum, retroperitoneum and pineal region. Because these cells can differentiate into any cell type of the body, the tumours contain, in a haphazard fashion, tissues such as skin, hair, sebaceous glands, teeth, bone, cartilage, muscle, fat, nerve, respiratory and gastrointestinal epithelium and even thyroid tissue.
+**Origin.** It originates from **totipotential germ cells** that are normally present in the ovary and testis, and sometimes also found in abnormal midline embryonic rests. These cells can differentiate into any cell type found in the body.
 
-**Types.**
+**Morphology.**
 
-- **Mature teratoma (benign).** The best-known form is the cystic teratoma of the ovary, or dermoid cyst, which differentiates mainly along ectodermal lines. Grossly it is a unilocular cyst lined by skin-like squamous epithelium and filled with sebaceous material and hair, with a tooth or bone frequently projecting from a nodule of the wall. Microscopically it shows skin with sebaceous glands, fat cells and neural tissue, often with cartilage, bone, respiratory or intestinal epithelium. Mature teratomas of the ovary are nearly always benign.
-- **Immature teratoma (malignant).** It contains immature, embryonic-appearing tissue, most often primitive neuroectodermal elements, and behaves as a malignant tumour, its grade depending on the amount of immature tissue.
-- **Teratocarcinoma.** A teratoma that contains a carcinomatous (e.g., embryonal carcinoma) component.
-- **Monodermal teratoma.** A teratoma that is composed predominantly of one tissue, such as struma ovarii (thyroid tissue).
+- The tumour may contain, in a helter-skelter fashion, **bone, epithelium, muscle, fat, nerve** and other tissues.
+- A particularly common pattern is the **ovarian cystic teratoma (dermoid cyst)**. It differentiates principally along ectodermal lines to create a cystic tumour lined by squamous epithelium that is replete with **hair, sebaceous glands and teeth**.
+- On gross examination, an opened cystic teratoma shows hair, sebaceous material and a tooth. On microscopy there is skin with sebaceous glands, fat cells and a tract of neural tissue.
 
-**Sites and age.** In females the ovary is the commonest site, and the tumour is seen usually in reproductive-age women. In infants, the sacrococcygeal region is a characteristic site. In the testis, teratomas of adults are generally regarded as potentially malignant, in contrast to the ovarian counterpart.
-
-**Clinical significance.** Complications of ovarian dermoid cysts include torsion, rupture with chemical peritonitis, infection, and rarely malignant transformation of one component (usually a squamous cell carcinoma). Immature teratomas and teratocarcinomas may secrete alpha-fetoprotein or human chorionic gonadotropin, which are useful tumour markers for diagnosis and for monitoring response to therapy.
-
+**Nomenclature.** Mature teratoma (dermoid cyst) is the benign form, and immature teratoma and teratocarcinoma are the malignant forms.
 
 ## Define neoplasia with example.
 
@@ -4487,61 +4487,55 @@ Of all these criteria, invasion and metastasis are the most reliable discriminat
 
 ## What do you mean by differentiation?
 
-Differentiation refers to the extent to which the neoplastic parenchymal cells resemble the corresponding normal parenchymal cells, both morphologically and functionally; lack of differentiation is called anaplasia.
-
-Differentiation is the single most useful concept in the morphologic assessment of a tumour, because it links the appearance of the tumour cells to their likely behaviour. Benign tumours are, as a rule, well differentiated. The cells of a lipoma, for example, may so closely resemble normal adipocytes that the lesion can be recognised as a tumour only because the cells have grown into a discrete mass, and a follicular adenoma of the thyroid is made up of normal-looking colloid-filled follicles. Malignant tumours range from well differentiated, through moderately differentiated, to poorly differentiated or undifferentiated (anaplastic). In a well-differentiated adenocarcinoma of the thyroid the cells still form follicles, and some squamous cell carcinomas contain cells that look identical to normal squamous epithelium and produce keratin pearls; in a moderately differentiated adenocarcinoma of the colon, gland formation is still present but the glands are irregular in shape and size; in an anaplastic tumour the cells have lost almost all resemblance to the tissue of origin.
-
-Differentiation has a functional as well as a morphologic dimension. Well-differentiated cells tend to retain the specialised functions of their normal counterparts: well-differentiated endocrine tumours secrete hormones, squamous cell carcinomas synthesise keratin and hepatocellular carcinomas elaborate bile. Highly anaplastic tumours lose these specialised functions, although they may acquire unexpected ones, such as the expression of foetal proteins or the ectopic secretion of hormones. In general, the less differentiated a cancer, the more aggressive it tends to be, and this relationship is the basis of histologic grading.
-
+**Differentiation** refers to the extent to which neoplastic parenchymal cells resemble the corresponding normal parenchymal cells, both morphologically and functionally.
 
 ## Define anaplasia.
 
-Anaplasia means lack of differentiation. It is the failure of neoplastic cells to resemble their normal counterparts, in form or in function, and in its fully developed state it is a morphologic hallmark of malignancy.
-
-The word is derived from the Greek for "to form backward", reflecting the old belief that cancer cells were mature cells that had undergone "dedifferentiation". It is now generally held that most cancers arise from tissue stem cells or from progenitor cells whose maturation is arrested, although in some tumours mature cells may revert to a stem-like state through lineage plasticity. Whatever the origin, the cancer cell fails to complete the program of maturation that characterises the normal cell of that lineage.
-
-Anaplasia exists in degrees. Tumours range from well differentiated, in which the malignant nature is revealed only by invasion and metastasis, to highly anaplastic, poorly differentiated tumours in which the cell of origin cannot be identified on morphologic grounds alone and ancillary methods such as immunohistochemistry are needed. Highly anaplastic tumours are characterised by pleomorphism, abnormal nuclear morphology with a high nuclear-to-cytoplasmic ratio, numerous and often atypical mitoses, tumour giant cells, and loss of polarity with disorganised growth (these features are set out in the next question). Functionally, anaplastic tumours lose the specialised activities of their parent tissue. The degree of anaplasia correlates with biologic aggressiveness, so that a highly anaplastic appearance is highly predictive of malignant behaviour, and it forms the basis for histologic grading of the tumour.
-
+Lack of differentiation is called **anaplasia**.
 
 ## What are the features of anaplasia (anaplastic cell)?
 
-The cardinal features of anaplasia are pleomorphism, abnormal nuclear morphology (hyperchromatic, enlarged, irregular nuclei with a high nuclear-to-cytoplasmic ratio and prominent nucleoli), numerous and atypical mitoses, loss of polarity, and tumour giant cells, usually accompanied by areas of ischaemic necrosis and loss of specialised function.
+Anaplasia is the lack of differentiation. Anaplastic cells show the following:
 
-1. **Pleomorphism.** There is variation in the size and shape of both cells and nuclei. Cells within the same tumour are not uniform but range from small, primitive-looking cells to tumour giant cells many times larger than their neighbours.
-2. **Tumour giant cells.** Some possess a single huge, bizarre nucleus, whereas others have two or more large hyperchromatic nuclei. They must not be confused with Langhans or foreign body giant cells, which derive from macrophages and contain many small, normal-appearing nuclei.
-3. **Abnormal nuclear morphology.** The nuclei are disproportionately large, so that the nuclear-to-cytoplasmic ratio, normally 1:4 to 1:6, approaches 1:1. The nuclear shape is irregular, the chromatin is coarsely clumped and distributed along the nuclear membrane, or the nucleus stains more darkly than normal (hyperchromasia), and the nucleoli are abnormally large and prominent. These changes reflect disturbed organisation of chromatin, which is now known to stem in part from acquired defects in epigenetic regulators.
-4. **Mitoses.** Undifferentiated cancers often contain many cells in mitosis, reflecting a high proliferative rate. The mere presence of mitoses does not indicate malignancy, because they are also seen in rapidly turning-over normal tissues and in hyperplasias. The more significant finding is the presence of atypical, bizarre mitotic figures, such as tripolar or multipolar spindles.
-5. **Loss of polarity.** The orientation of the anaplastic cells to one another and to supporting structures such as the basement membrane is disturbed, and the cells grow in sheets or masses in a disorganised fashion. Cell cohesion is lowered, which is the reason shed cells can be recognised in cytologic smears.
-6. **Vascular supply and necrosis.** The blood supply of rapidly growing anaplastic tumours is often insufficient, and areas of ischaemic necrosis are therefore common.
-7. **Functional changes.** Anaplastic tumours typically lose the specialised functions of their tissue of origin. Some acquire new properties, such as the production of foetal proteins or ectopic hormones that cause paraneoplastic syndromes.
-
+- **Pleomorphism:** variation in cell size and shape. Cells within the same tumour range from small cells with an undifferentiated appearance to **tumour giant cells** many times larger than their neighbours. Some giant cells have a single huge polymorphic nucleus, and others have two or more large hyperchromatic nuclei.
+- **Abnormal nuclear morphology:**
+- nuclei disproportionately large, with a nuclear to cytoplasmic ratio that may approach 1 to 1 instead of the normal 1 to 4 or 1 to 6
+- nuclear shape variable and often irregular
+- chromatin coarsely clumped, distributed along the nuclear membrane, or darker than normal (**hyperchromatic**)
+- abnormally large nucleoli
+- **Mitoses:** undifferentiated cancers often contain many cells in mitosis, reflecting a high rate of proliferation. More important is the presence of **atypical, bizarre mitotic figures**, for example tripolar spindles.
+- **Loss of polarity:** the orientation of anaplastic cells with respect to each other or to supporting structures such as basement membranes is markedly disturbed. Sheets or large masses of tumour cells grow in a disorganised fashion.
+- **Loss of specialised function:** highly anaplastic undifferentiated tumours typically lose the specialised functions of their tissue of origin, but sometimes acquire new and unanticipated features, such as the production of fetal proteins or hormones not normally made by their tissue of origin.
 
 ## Types of dysplasia.
 
-Epithelial dysplasia is graded as mild, moderate or severe according to the proportion of the epithelial thickness that shows disordered maturation, and in practice these are condensed into low-grade and high-grade dysplasia; severe dysplasia involving the full thickness is carcinoma in situ.
+**Dysplasia** literally means disordered growth. It is encountered principally in epithelial cells and is a premalignant change.
 
-**By grade.** In mild dysplasia the cytologic and architectural abnormalities are confined to the lower third of the epithelium, in moderate dysplasia they involve up to two-thirds, and in severe dysplasia they extend through more than two-thirds up to the full thickness, at which point the lesion merges with carcinoma in situ. This is exemplified in the uterine cervix by cervical intraepithelial neoplasia (CIN) grades 1 to 3, which correspond to low-grade and high-grade squamous intraepithelial lesions. Mild dysplasia may regress when the cause is removed, whereas severe dysplasia carries a high probability of progression to invasive cancer.
+The textbook describes dysplasia by severity:
 
-**By tissue and site.** Dysplasia is encountered mainly in epithelia, and the common settings are squamous dysplasia (cervix, oral mucosa as leukoplakia, bronchus, skin as actinic keratosis, oesophagus) and glandular dysplasia (Barrett oesophagus, adenomatous polyps of the colon, gastric intestinal metaplasia, endometrium).
-
-**Non-neoplastic usage.** The term is also used for developmental disorders of tissue structure that are not premalignant, such as fibrous dysplasia of bone, fibromuscular dysplasia of arteries and ectodermal dysplasia.
-
+- **Mild dysplasia:** mutations associated with full-blown cancer may already be present.
+- **Moderately severe dysplasia:** may be completely reversible with removal of the inciting causes.
+- **Severe dysplasia:** involves the full thickness of the epithelium, and when the lesion does not penetrate the basement membrane it is called **carcinoma in situ**.
 
 ## What is carcinoma in situ (and locally malignant tumour)?
 
-Carcinoma in situ is a cancer that has not yet invaded: the epithelium shows severe dysplasia involving its full thickness, with all the cytologic features of malignancy, but the basement membrane is intact and there is no penetration into the underlying stroma. A locally malignant tumour is one that invades and destroys surrounding tissue but rarely or never metastasises, as exemplified by basal cell carcinoma of the skin and gliomas of the central nervous system.
+**Carcinoma in situ.** When dysplasia is severe and involves the full thickness of the epithelium but the lesion does not penetrate the basement membrane, it is referred to as carcinoma in situ. It is a cancer that has yet to invade.
 
-**Carcinoma in situ.** When dysplasia is severe and involves the entire thickness of the epithelium but the lesion does not penetrate the basement membrane, it is called carcinoma in situ. Microscopically the epithelium is replaced by atypical cells showing no orderly differentiation, marked nuclear and cellular pleomorphism and numerous mitotic figures extending toward the surface, while the basement membrane remains intact and there is no tumour in the subepithelial stroma. Carcinoma in situ is seen in the skin, breast, bladder and uterine cervix. In situ cancers display all the cytologic features of malignancy, and unless treated they have a high probability of progression to invasive cancer. Because the lesion has not breached the basement membrane, it has no access to lymphatics and blood vessels and cannot metastasise, and so complete excision or ablation is curative. This is why detection of precursor lesions by Pap smear has been so effective in reducing cervical cancer mortality. An in situ carcinoma may persist for years before becoming invasive, the interval reflecting the time required for the accumulation of the further mutations and epigenetic changes needed for a fully malignant phenotype.
+- In situ epithelial cancers display all the cytologic features of malignancy.
+- Unless treated, they have a high probability of progression to invasive cancer.
+- In the cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of cancer.
+- Carcinoma in situ may persist for years before it becomes invasive.
 
-**Locally malignant tumours.** Invasiveness and metastasis are separable properties. Some malignant tumours invade early and destroy surrounding tissue but metastasise rarely, and are therefore sometimes described as locally malignant. The two examples given are basal cell carcinoma of the skin, which infiltrates and ulcerates the surrounding tissue (the "rodent ulcer") but almost never spreads to distant sites, and gliomas of the brain, which invade the neuropil diffusely but seldom metastasise outside the central nervous system. Such tumours may be fatal or disabling because of local destruction or because of their location, and they require wide local excision with adequate margins.
-
+**Locally malignant tumour.** Some malignant tumours invade early in their course but only rarely metastasise. Malignant neoplasms of the glial cells of the central nervous system, called **gliomas**, and **basal cell carcinomas** of the skin are examples. This shows that the properties of invasiveness and metastasis are separable.
 
 ## Two examples of carcinoma in situ.
 
-Two examples are carcinoma in situ of the uterine cervix (squamous CIN 3) and ductal carcinoma in situ of the breast.
+Carcinoma in situ may be seen in the:
 
-Carcinoma in situ is also encountered in the skin (Bowen disease, a squamous carcinoma in situ) and in the urinary bladder (urothelial carcinoma in situ), and in the cervix it often precedes invasive squamous cell carcinoma by years.
-
+- **skin**
+- **breast**
+- **bladder**
+- **uterine cervix**
 
 ## Mention the clinical importance of dysplasia.
 
@@ -4597,56 +4591,67 @@ Both terms describe disturbances of differentiation, and the cytologic features 
 
 ## Define metastasis (short note).
 
-Metastasis is the spread of a primary tumour to physically discontinuous sites, and it unequivocally marks a tumour as malignant.
+**Metastasis** is defined as the spread of a primary tumour to physically discontinuous sites, an event that unequivocally marks a tumour as **malignant**.
 
-Metastasis is the process whereby cells separate from the primary tumour, are carried to a distant site and there establish a secondary growth of the same histologic type. It is made possible by the invasiveness of cancers, which allows them to penetrate blood vessels, lymphatics and body cavities. All malignant tumours can metastasise, but some do so very infrequently; gliomas and basal cell carcinomas, for example, invade early but rarely metastasise, which shows that invasiveness and metastasis are separable properties. Leukaemias and lymphomas are a special case. Because they are derived from cells that normally circulate, they are often disseminated at diagnosis and are always considered malignant, unlike the solid tumours.
-
-About 30% of solid tumours (excluding skin cancers other than melanoma) present as metastatic disease, and in general the likelihood of metastasis correlates with lack of differentiation, aggressive local invasion, rapid growth and large size, although there are innumerable exceptions. Metastatic spread follows three pathways: seeding of body cavities, lymphatic spread and haematogenous spread. The process is a multistep cascade that is divided into two phases: invasion of the extracellular matrix (loosening of intercellular contacts, degradation of the matrix, attachment to modified matrix components and migration), followed by vascular dissemination, homing and colonisation (intravasation, survival in the circulation, arrest, extravasation and growth at the new site). The cascade is highly inefficient, since although many tumour cells enter the circulation daily, very few produce metastases. Metastasis is the major cause of cancer deaths, and it strongly reduces the possibility of cure.
-
+- The invasiveness of cancers permits them to penetrate blood vessels, lymphatics and body cavities, providing the opportunity for spread.
+- All malignant tumours can metastasise, but some do so very infrequently, for example gliomas and basal cell carcinomas.
+- Leukaemias and lymphomas are derived from cells that normally enter the bloodstream, so they are often disseminated at diagnosis and are always considered malignant.
+- About 30% of solid tumours (excluding skin cancers other than melanoma) present as metastatic disease.
+- The likelihood of metastasis correlates with lack of differentiation, aggressive local invasion, rapid growth and large size, but there are innumerable exceptions.
+- Metastatic spread strongly reduces the possibility of cure.
 
 ## Mention the routes/pathways of spread of a malignant tumour.
 
-A malignant tumour spreads by direct local invasion of adjacent tissues, and its dissemination to distant sites occurs by three pathways: seeding of body cavities and surfaces, lymphatic spread and haematogenous spread. Iatrogenic implantation on surgical instruments is a rare additional route.
+Dissemination of cancers occurs through three pathways:
 
-**1. Local invasion (direct extension).** Cancer cells infiltrate and destroy contiguous tissues, penetrating the wall of an organ and crossing anatomic boundaries, and may eventually fungate through the skin. This is the first step in all other forms of spread.
+1. **Seeding of body cavities and surfaces.** This occurs when malignant neoplasms spread to a natural open field lacking physical barriers.
 
-**2. Seeding of body cavities and surfaces.** This occurs when a malignant neoplasm penetrates into a natural "open field" lacking physical barriers. The peritoneal cavity is most often involved, but any cavity or surface, including the pleura, pericardium, meninges and joint spaces, may be affected. It is particularly characteristic of ovarian carcinoma, which spreads over the peritoneal surfaces and the omentum to produce a heavy cancerous coating without invading the deeper tissues. Mucus-secreting carcinomas of the appendix or ovary may fill the peritoneal cavity with a gelatinous neoplastic mass called pseudomyxoma peritonei.
+- Most often involved is the **peritoneal cavity**, but any body cavity and associated surface, such as the pleura, pericardium, meninges and joints, may be affected.
+- It is particularly characteristic of **ovarian carcinoma**. Mucus-secreting appendiceal or ovarian carcinomas may fill the peritoneal cavity with a gelatinous mass called pseudomyxoma peritonei.
 
-**3. Lymphatic spread.** Transport through lymphatic vessels is the most common pathway for the initial dissemination of carcinomas; sarcomas may also use it. Tumours do not contain functional lymphatics, but lymphatic vessels at the margins of invading cancers are sufficient for lymphatic spread. The pattern follows the natural routes of lymphatic drainage: carcinomas of the breast, which usually arise in the upper outer quadrant, spread first to the axillary nodes and then to the infraclavicular and supraclavicular nodes, and carcinomas of the lung spread first to the perihilar tracheobronchial and mediastinal nodes. Sometimes the regional nodes are bypassed (skip metastasis). The sentinel lymph node, the first node in the regional basin that receives lymph from the primary tumour, is identified by radiolabeled tracers or dyes and examined to determine whether the tumour has spread, as in breast cancer and melanoma. Regional nodes may serve for a while as barriers, and enlarged nodes near a cancer do not always contain metastasis, because reactive hyperplasia in response to tumour antigens can enlarge them; only microscopic examination is definitive.
+2. **Lymphatic spread.** This is the most common pathway for the initial dissemination of **carcinomas**; sarcomas also sometimes use it.
 
-**4. Haematogenous spread.** This is typical of sarcomas but is also seen with carcinomas. Penetration of small veins at the site of the primary tumour is an ominous feature. Arteries, with their thicker walls, are more resistant, but arterial spread may occur when tumour cells pass through pulmonary capillaries or arteriovenous shunts. Blood-borne cells tend to lodge in the first capillary bed they encounter, so that the liver and lungs are the most frequent sites of metastasis, since they filter the blood from the portal vein and from the vena cavae respectively. Cancers close to the vertebral column, such as carcinomas of the thyroid and prostate, may embolise through the paravertebral venous plexus and produce vertebral metastases. Some cancers have a propensity to grow within large veins: renal cell carcinoma invades the renal vein and grows up the inferior vena cava, sometimes as far as the right atrium, and hepatocellular carcinoma grows into the portal and hepatic veins.
+- The pattern follows the natural routes of lymphatic drainage. Breast carcinomas usually spread first to the axillary lymph nodes, then to infraclavicular and supraclavicular nodes. Carcinomas of the lung spread first to perihilar tracheobronchial and mediastinal nodes.
+- Local nodes are sometimes bypassed, which is called skip metastasis.
+- A **sentinel lymph node** is the first node in a regional lymphatic basin that receives lymph flow from the primary tumour.
+- Enlarged lymph nodes do not always harbour metastases.
 
+3. **Haematogenous spread.** This is typical of **sarcomas** but is also seen with carcinomas.
+
+- Involved vessels are usually small veins, because arteries, with their thicker walls, are more resistant to penetration.
+- Tumour cells often come to rest in the first capillary bed they encounter.
 
 ## Common organs where metastasis occurs.
 
-The commonest sites of haematogenous metastasis are the liver and the lungs, followed by the bones and brain, and the adrenal glands are also frequently involved; regional lymph nodes are the commonest site of lymphatic metastasis.
-
-The liver and lungs are involved most often because their capillary beds act as filters for the blood carried by the portal vein and by the vena cavae. The pattern is also influenced by the site of the primary tumour and by tissue tropism. Colonic carcinomas metastasise to the liver, the first organ downstream of the tumour; carcinomas of the prostate and breast preferentially spread to bone; lung carcinomas tend to involve the adrenals and brain; neuroblastoma spreads to liver and bones; and melanoma of the eye has a remarkable tendency to spread to the liver. Some tissues, such as skeletal muscle and spleen, are rarely the site of metastasis despite a rich blood supply, and are regarded as nonpermissive.
-
+- The **liver** and the **lungs** are most commonly affected by haematogenous metastases, because their capillary beds act as filters for blood supplied by the portal vein and by the venae cavae.
+- **Vertebrae** are affected by cancers arising near the vertebral column, such as carcinomas of the thyroid and prostate, which embolise through the paravertebral plexus.
+- Other tumours show organ tropism:
+- carcinoma of the prostate and breast spreads preferentially to **bone** and lung
+- lung carcinoma tends to involve the **adrenals** and the **brain**
+- neuroblastoma spreads to the liver and bones
+- melanoma of the eye tends to spread to the liver
+- Colon carcinomas are far more likely to give rise to metastases in the liver, the first organ downstream of the tumour.
 
 ## Carcinomas that prefer haematogenous spread.
 
-Although carcinomas spread initially by lymphatics, renal cell carcinoma, hepatocellular carcinoma, follicular carcinoma of the thyroid and choriocarcinoma are the classic examples that prefer the haematogenous route.
-
-Renal cell carcinoma has a characteristic propensity to invade the renal vein and to grow as a snake-like column up the inferior vena cava, sometimes reaching the right atrium, and hepatocellular carcinoma invades the portal and hepatic venous radicles and grows into the main venous channels. Follicular carcinoma of the thyroid typically spreads to the lungs and bones and choriocarcinoma spreads early to the lungs, brain and vagina. Carcinomas of the prostate and thyroid, which lie near the vertebral column, may also embolise through the paravertebral venous plexus to vertebrae, and prostatic carcinoma spreads preferentially to bone. Bronchogenic carcinoma is another carcinoma that metastasises widely through the blood, to the brain, adrenals, liver and bone. Sarcomas, as a group, are the tumours that typically spread haematogenously.
-
+- **Renal cell carcinoma** often invades the branches of the renal vein and then the renal vein itself, growing in a snakelike fashion up the inferior vena cava until it sometimes reaches the right side of the heart.
+- **Hepatocellular carcinoma** often penetrates portal and hepatic radicles and grows into the main venous channels. Such intravenous growth may not be accompanied by widespread metastasis.
+- **Carcinomas of the thyroid and prostate** often embolise through the paravertebral plexus, producing vertebral metastases.
 
 ## What is invasion?
 
-Invasion is the progressive infiltration and destruction of the surrounding normal tissue by malignant cells, which do not respect anatomic boundaries; it is a hallmark of malignancy and a prerequisite for distant spread.
+The growth of cancers is accompanied by progressive **invasion**, destruction of surrounding tissue and eventually systemic spread. Malignant tumours are, in general, poorly demarcated from the surrounding normal tissue and lack well-defined cleavage planes; most do not recognise normal anatomic boundaries.
 
-Invasion is an active process by which cancer cells breach the basement membrane, traverse the interstitial connective tissue and penetrate the walls of vessels. In contrast, nearly all benign tumours grow as cohesive, expansile masses that remain localised, compress their surroundings and usually develop a rim of compressed fibrous tissue (capsule), which makes them discrete, movable and easily removed. Malignant tumours are generally poorly demarcated and lack well-defined cleavage planes. A slowly expanding cancer may develop a pseudocapsule, but careful histologic examination almost always reveals tumour cells extending through it into the adjacent tissue. Next to metastasis, invasiveness is the most reliable discriminator between malignant and benign tumours. Its practical implication is that complete surgical removal of a cancer is difficult, and even if a tumour appears well circumscribed, a wide margin of apparently normal tissue must be removed.
-
+Next to metastasis, invasiveness is the most reliable discriminator of malignant and benign tumours. Given time, malignant tumours penetrate the wall of the colon or uterus, for example, or fungate through the surface of the skin. Local invasion may damage or destroy vital structures and is a prerequisite for distant spread.
 
 ## Steps of invasion.
 
-Invasion of the extracellular matrix proceeds in four steps: loosening of tumour cell–tumour cell contacts, degradation of the extracellular matrix, attachment to novel (remodeled) matrix components, and migration of the tumour cells.
+Invasion of the extracellular matrix (ECM) initiates the metastatic cascade. Carcinoma cells must breach the underlying basement membrane, traverse the interstitial connective tissue and penetrate the vascular basement membrane. It occurs in four steps:
 
-1. **Loosening of intercellular contacts.** Normal epithelial cells are held together by adhesion molecules, notably E-cadherin. In several carcinomas E-cadherin function is lost by mutation, and in many others its expression is silenced through epithelial–mesenchymal transition (EMT), which is controlled by the transcription factors SNAIL and TWIST, and in which epithelial markers fall and mesenchymal markers such as vimentin rise, favouring a migratory phenotype.
-2. **Degradation of the basement membrane and interstitial matrix.** Tumour cells, and stromal cells stimulated by them, secrete proteases, including matrix metalloproteinases (MMP2 and MMP9, which cleave type IV collagen), cathepsin D and urokinase plasminogen activator, while the concentration of metalloproteinase inhibitors is reduced. Proteolysis also releases growth factors stored in the matrix, such as VEGF, and generates fragments that are chemotactic, angiogenic and growth-promoting.
-3. **Attachment to novel matrix components.** Tumour cells change their expression of integrins. Free tumour cells resist anoikis, the apoptosis that normally follows loss of attachment to the matrix, and cleavage of collagen IV and laminin exposes new binding sites that stimulate migration.
-4. **Migration.** Locomotion propels the cells through the degraded matrix. It is driven by autocrine motility factors from the tumour, by cleavage products of matrix components, and by stromal factors such as hepatocyte growth factor/scatter factor acting on the MET receptor, and it depends on cycles of attachment at the leading edge, detachment at the trailing edge and actin-based contraction. The process culminates in penetration of the vascular basement membrane and entry into the vascular space.
-
+1. **Loosening of tumour cell to tumour cell interactions.** Cancer cells dissociate from one another because of altered adhesion molecules. **E-cadherin** function is lost by mutation or silenced, often through epithelial to mesenchymal transition (EMT), which is controlled by the transcription factors SNAIL and TWIST.
+2. **Degradation of the ECM.** Tumour cells, or stromal cells induced by them, secrete proteolytic enzymes such as **matrix metalloproteinases (MMPs)**, cathepsin D and urokinase plasminogen activator, which digest the basement membrane and interstitial connective tissue. Concentrations of metalloproteinase inhibitors are also reduced.
+3. **Attachment to remodelled ECM components.** Tumour cells change the expression of **integrins**. They resist anoikis (apoptosis due to loss of adhesion), and cleavage of collagen IV and laminin generates new binding sites that stimulate migration.
+4. **Migration and invasion of tumour cells.** Locomotion propels tumour cells through the degraded basement membranes, stimulated by tumour cell–derived cytokines (autocrine motility factors), cleavage products of matrix components, and stromal cell–derived factors such as hepatocyte growth factor, which binds the receptor MET.
 
 ## How does a malignant tumour spread through the hematogenous route?
 
