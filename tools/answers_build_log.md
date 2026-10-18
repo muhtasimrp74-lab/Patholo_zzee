@@ -229,3 +229,22 @@ Sources: the site textbook only (Chapter 9 Environmental and Nutritional Disease
 ### Housekeeping
 - Progress file lists 505 questions done (430 before batch 4, plus 50, plus 25). 630 remain.
 - Site tests were not run. VERSION in sw.js was bumped.
+
+## Session 8, batch 6 (25 answers: Chapter 12 myocardial infarction through infective endocarditis)
+
+Questions: myocardial infarction (definition, risk factors, pathogenesis, morphology, complications, laboratory diagnosis, markers, troponin, three case scenarios), hypertensive heart disease (two questions), rheumatic fever (criteria, pathogenesis, valves, complications, Aschoff body, case scenario in two parts), vegetation, subacute infective endocarditis, classification, pathogenesis, complications of infective endocarditis.
+
+Sources: the site textbook only (Chapter 12 The Heart, Chapter 11 for risk factors, Chapter 2 for physiological hypertrophy). **No outside sources were used.**
+
+### Points left out or needing a decision
+- Cardiac markers: the textbook names only troponins T and I with their timing. The old CK-MB, myoglobin, LDH and AST rows were dropped as not in the textbook, and the answer says so.
+- Aschoff nodule: the textbook describes Anitschkow cells (caterpillar cells) but no giant cells; the answer says so.
+- IE complications: the textbook passage is cut by a page break after "sepsis, arrhythmias"; the answer uses what is readable and the later paragraph on ring abscess, embolisation and outcome.
+- "What is vegetation?": the textbook has no stand-alone definition; the wording is built from its infective endocarditis passage and the rheumatic fever vegetation description.
+- "What is myocardial infarction?": definition only.
+- Hypertensive heart disease answers rely on the Chapter 12 morphology passage; the physiological hypertrophy examples come from Chapter 2 as in earlier batches.
+- Not done this batch: "What is granulopoiesis?" (next in the list).
+
+### Housekeeping
+- Progress file lists 530 questions done. 605 remain.
+- Site tests were not run. VERSION in sw.js was bumped to v145.

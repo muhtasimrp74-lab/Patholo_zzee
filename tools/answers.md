@@ -5855,296 +5855,259 @@ Three overlapping patterns are recognised.
 
 ## What is myocardial infarction?
 
-Myocardial infarction (MI), commonly called a heart attack, is the death of cardiac muscle due to prolonged ischaemia. It is usually caused by atherosclerotic coronary artery disease complicated by acute plaque rupture and occlusive thrombosis, and the dominant mechanism of cell death is ischaemic coagulative necrosis. Severe ischaemia (flow 10% or less of normal) lasting 20–30 minutes or longer causes irreversible injury, and necrosis is complete by 6–12 hours. When transmural it is called an ST-elevation MI (STEMI), and when confined to the subendocardium a non-ST-elevation MI (NSTEMI). Roughly 800,000 people in the United States have an MI each year.
-
+**Myocardial infarction (MI)**, commonly called a heart attack, is the death of cardiac muscle due to prolonged ischaemia.
 
 ## What are the risk factors of ischemic heart disease/MI?
 
-The risk factors for IHD and MI are those of coronary atherosclerosis, since more than 90% of cases arise from it.
+The major underlying cause is **atherosclerosis**, so the risk factors are those of atherosclerosis.
 
-- **Non-modifiable:** increasing age, male sex (women are protected until menopause), family history and genetic variation.
-- **Major modifiable:** hyperlipidaemia (raised LDL, low HDL, raised lipoprotein(a)), hypertension (which also causes left ventricular hypertrophy), cigarette smoking (which doubles the death rate from IHD) and diabetes mellitus (which doubles the incidence of MI).
-- **Additional:** inflammation (raised C-reactive protein), hyperhomocysteinaemia, metabolic syndrome and obesity, haemostatic abnormalities (raised PAI-1), physical inactivity and psychological stress.
-- **Precipitants of the acute event:** adrenergic surges (morning peak of MI between 6 a.m. and noon), emotional stress, cocaine use (vasospasm), and states of increased demand such as tachycardia, hypotension or severe anaemia.
+1. **Age.** MI can occur at any age (10% occur before 40 years and 45% before 65 years), but the frequency rises progressively with age.
+2. **Sex.** Through middle age male sex increases the risk; females are generally protected during their reproductive years. After the menopause the risk rises and IHD becomes the commonest cause of death in older females. Hormone replacement has not been shown to protect.
+3. **Family history and genetics**, the most important independent risk factor.
+4. **Hyperlipidaemia**, especially raised LDL cholesterol; higher HDL lowers the risk.
+5. **Hypertension**, which raises the risk of ischaemic heart disease by about 60%.
+6. **Cigarette smoking**, which doubles the death rate from IHD.
+7. **Diabetes mellitus**, which doubles the incidence of MI.
+8. **Other factors.** Inflammation (raised C-reactive protein), hyperhomocysteinaemia, metabolic syndrome, lipoprotein (a), factors affecting haemostasis, lack of exercise, stress and obesity.
 
-These factors act with greater than additive effect. Some 10% of MIs occur without typical atherothrombosis, through vasospasm, embolism or small-vessel disease.
-
+Risk factors have greater than additive effects. Other causes of reduced coronary flow account for about 10% of MIs: vasospasm (for example with cocaine or ephedrine), embolism (from atrial thrombus, endocarditis vegetations or prosthetic material) and small-vessel disease such as vasculitis or sickle cell disease.
 
 ## Describe the pathogenesis of myocardial infarction.
 
-**1. Coronary arterial occlusion.** In the great majority of cases the sequence is:
+**Coronary arterial occlusion.** The sequence underlying most MIs is:
 
-1. An atheromatous plaque is eroded or suddenly disrupted by endothelial injury, intraplaque haemorrhage or mechanical forces, exposing subendothelial collagen and necrotic plaque contents. Vulnerable plaques have a thin fibrous cap, a large lipid core and many macrophages, and fissures typically occur at the cap's junction with the normal wall, where mechanical stress is highest.
-2. Platelets adhere, aggregate and become activated, releasing thromboxane A₂, ADP and serotonin, which promote further aggregation and vasospasm.
-3. Tissue factor activates coagulation, adding fibrin to the thrombus.
-4. Within minutes the thrombus can occlude the lumen completely.
+1. An atheromatous plaque is eroded or suddenly disrupted by endothelial injury, intraplaque haemorrhage or mechanical forces, exposing subendothelial collagen and necrotic plaque contents to the blood.
+2. Platelets adhere, aggregate and are activated, releasing thromboxane A₂, ADP and serotonin, which cause more aggregation and vasospasm.
+3. Activation of coagulation by tissue factor adds to the growing thrombus.
+4. Within minutes the thrombus can completely occlude the coronary lumen.
 
-Angiography within 4 hours of onset shows coronary thrombosis in about 90% of cases. The culprit plaque is usually not critically stenotic beforehand. In about 10% of cases MI occurs without typical atherothrombosis, through vasospasm (cocaine, ephedrine), embolism (left atrial thrombus, endocarditis vegetations), small-vessel disease (vasculitis, sickle cell disease, amyloid), vessel dissection, severe hypertrophy or hypotension.
+The culprit lesion is usually not critically stenotic (over 70%) before it ruptures. Angiography within 4 hours of onset shows thrombosis in almost 90% of cases, but only 60% at 12 to 24 hours, because some occlusions clear by lysis or relaxation of spasm.
 
-**2. Myocardial response.** Within seconds aerobic metabolism ceases, ATP and creatine phosphate fall and lactate accumulates, and contractility is lost within about 2 minutes. Ultrastructural changes (myofibrillar relaxation, glycogen loss, mitochondrial swelling) are reversible at first. Only severe ischaemia lasting 20–40 minutes or more causes irreversible injury, and the earliest sign of necrosis is loss of sarcolemmal integrity, which allows proteins such as troponin to leak into the circulation. Microvascular injury follows after about an hour. Necrosis begins in the subendocardium (last to be perfused and exposed to high intramural pressure) and spreads as a wavefront toward the epicardium, so that a transmural infarct is complete by 6–12 hours. A thin rim of subendocardium (about 0.1 mm) survives by diffusion from the ventricular cavity.
+**Myocardial response.**
 
-**3. Determinants of size and pattern.** The location, severity and rate of development of obstruction, the size of the vascular bed supplied, duration of occlusion, metabolic demand of the myocardium, collateral circulation, presence of spasm, and heart rate, rhythm and oxygenation all decide the outcome. Transmural infarcts follow occlusion of an epicardial vessel, subendocardial infarcts follow a thrombus that lyses early or global hypotension, and microinfarcts follow small-vessel occlusion.
-
-**4. Reperfusion injury.** Restoring flow can itself cause damage through mitochondrial dysfunction, myocyte hypercontracture (calcium influx), free radicals, leukocyte aggregation (no-reflow), and platelet and complement activation.
-
+- Aerobic metabolism stops within seconds, with loss of high-energy phosphates and build-up of lactic acid. Contractility is lost within about a minute.
+- Early changes (myofibrillar relaxation, glycogen loss, swelling of cells and mitochondria) are reversible.
+- Severe ischaemia (flow 10% or less of normal) lasting 20 to 30 minutes or more causes irreversible necrosis. Loss of viability is complete by 6 to 12 hours.
+- The earliest sign of necrosis is disruption of the sarcolemma, letting myocardial proteins leak into the circulation.
+- Necrosis begins in the subendocardium, which is the last to receive blood and has high intramural pressure, then spreads as a wavefront towards the epicardium.
+- The extent depends on the site, severity and speed of the obstruction, the size of the vascular bed, the duration of occlusion, myocardial oxygen needs, collateral circulation and spasm.
 
 ## Write the morphological changes in myocardial infarction.
 
-An infarct is generally localised to the territory of the occluded vessel (left anterior descending artery 40–50%, right coronary artery 30–40%, left circumflex artery 15–20%), and nearly all transmural infarcts involve part of the left ventricle. The characteristic change is ischaemic coagulative necrosis, followed by acute inflammation and repair, and the sequence is predictable.
+**Distribution.** Left anterior descending artery 40% to 50% (anterior wall of the left ventricle near the apex, anterior septum); right coronary artery 30% to 40% (inferior and posterior wall, posterior septum); left circumflex artery 15% to 20% (lateral wall). A narrow rim of subendocardium about 0.1 mm thick is spared, because it is nourished from the ventricular cavity.
 
-| Time | Gross | Light microscopy |
+**Evolution** (Table 12.5)
+
+| Time | Gross | Microscopy |
 |---|---|---|
-| 0–0.5 h | None | None (reversible injury; EM shows myofibrillar relaxation, glycogen loss, mitochondrial swelling) |
-| 0.5–4 h | None | Usually none; variable waviness of fibres at the border |
-| 4–12 h | Occasional dark mottling | Early coagulative necrosis, oedema, haemorrhage; wavy fibres |
-| 12–24 h | Dark mottling | Ongoing coagulative necrosis, pyknosis of nuclei, hypereosinophilia of myocytes, marginal contraction band necrosis, early neutrophilic infiltrate |
-| 1–3 days | Mottling with yellow-tan centre | Coagulative necrosis with loss of nuclei and striations; brisk neutrophil infiltrate |
-| 3–7 days | Hyperaemic border, central yellow-tan softening | Disintegration of dead fibres, dying neutrophils; macrophages begin phagocytosis at the border |
-| 7–10 days | Maximally yellow-tan and soft; depressed red-tan margins | Well-developed phagocytosis; granulation tissue at margins |
-| 10–14 days | Red-gray depressed borders | Well-established granulation tissue with new vessels and collagen |
-| 2–8 weeks | Grey-white scar progressing inward from the border | Increased collagen, decreased cellularity |
-| Over 2 months | Scarring complete | Dense collagenous scar |
+| 0 to 0.5 hours | None | None (electron microscopy: myofibrillar relaxation, glycogen loss, mitochondrial swelling) |
+| 0.5 to 4 hours | None | Usually none; variable waviness of fibres at the border |
+| 4 to 12 hours | Occasional dark mottling | Early coagulative necrosis, oedema, haemorrhage |
+| 12 to 24 hours | Dark mottling | Ongoing coagulative necrosis, pyknosis, myocyte hypereosinophilia, marginal contraction band necrosis, early neutrophils |
+| 1 to 3 days | Mottling with yellow-tan centre | Coagulative necrosis with loss of nuclei and striations; brisk neutrophil infiltrate |
+| 3 to 7 days | Hyperaemic border, central yellow-tan softening | Disintegration of dead fibres, dying neutrophils, early macrophage phagocytosis at the border |
+| 7 to 10 days | Maximally yellow-tan and soft, depressed red-tan margins | Well-developed phagocytosis; granulation tissue at the margins |
+| 10 to 14 days | Red-grey depressed borders | Well-established granulation tissue with new vessels and collagen |
+| 2 to 8 weeks | Grey-white scar, progressing from border to core | Increased collagen, decreased cellularity |
+| More than 2 months | Scarring complete | Dense collagenous scar |
 
-Early detection. Infarcts less than 12 hours old are usually not visible grossly, but they can be shown after 2–3 hours by triphenyl tetrazolium chloride, which stains viable myocardium brick red because of intact lactate dehydrogenase activity and leaves the infarct pale. After reperfusion, infarcts are haemorrhagic and show contraction band necrosis (intense eosinophilic bands of hypercontracted sarcomeres). Healing proceeds from the border toward the centre, and a completely healed scar cannot be dated.
-
+- Infarcts less than 12 hours old are usually not visible grossly. After 2 to 3 hours they can be shown by triphenyl tetrazolium chloride, which stains normal myocardium brick-red and leaves the infarct pale.
+- Wavy fibres appear in the first 4 to 12 hours. Cardiac muscle cells cannot regenerate, so healing is by scar.
+- **After reperfusion** the infarct is haemorrhagic and the myocytes show **contraction band necrosis**.
 
 ## Mention the complications/consequences of myocardial infarction.
 
-Nearly three-quarters of patients experience at least one complication, and the risk depends mainly on infarct size, location and the fraction of wall thickness involved.
+Nearly three-quarters of patients have one or more complications.
 
-1. **Arrhythmias.** About 90% of patients develop a rhythm disturbance, because of myocardial irritability and conduction disturbances: heart block, bradycardia, supraventricular tachyarrhythmias, ventricular premature contractions, ventricular tachycardia and ventricular fibrillation. Risk is greatest in the first hour, and arrhythmia accounts for most out-of-hospital deaths.
-2. **Contractile dysfunction (left ventricular failure).** Pump function falls in proportion to the volume damaged, causing hypotension, pulmonary congestion and oedema. Cardiogenic shock occurs in about 10% of patients with transmural MI, typically when 40% or more of the left ventricle is damaged.
-3. **Myocardial rupture (1–3%).** Left ventricular free wall rupture is most common and causes haemopericardium and cardiac tamponade. Rupture of the interventricular septum produces an acquired VSD with left-to-right shunt, and rupture of a papillary muscle causes severe acute mitral regurgitation. Rupture is commonest 3 to 7 days after infarction, when lysis of necrotic myocardium is maximal and the infarct is soft granulation tissue. Risk factors are age above 60, anterior or lateral infarcts, female sex, absence of left ventricular hypertrophy and a first MI.
-4. **Papillary muscle dysfunction.** Ischaemic papillary muscles are poorly contractile and cause postinfarct mitral regurgitation. Later, fibrosis and shortening or ventricular dilation may cause it.
-5. **Right ventricular infarction.** It is isolated in only 1–3% but accompanies posterior septal or left ventricular infarcts from right coronary occlusion, leading to right heart failure and hypotension.
-6. **Pericarditis.** Transmural infarcts cause fibrinohaemorrhagic pericarditis 2–3 days later (chest pain and friction rub). Dressler syndrome is an autoimmune pericarditis weeks after infarction.
-7. **Chamber dilation and infarct expansion.** Weakened necrotic muscle stretches and thins, especially in anteroseptal infarcts.
-8. **Mural thrombus.** Stasis, dilation and endocardial damage predispose to thrombus, with risk of systemic embolism (including stroke).
-9. **Ventricular aneurysm.** A late complication of a large anteroseptal transmural infarct that heals as a thin scar. It causes mural thrombi, arrhythmias and heart failure but does not rupture.
-10. **Progressive heart failure and ventricular remodeling.** Compensatory hypertrophy of the noninfarcted myocardium may eventually be overwhelmed by dilation and increased oxygen demand (chronic ischaemic heart disease).
+1. **Contractile dysfunction.** Left ventricular failure with hypotension and pulmonary congestion and oedema. **Cardiogenic shock** occurs in about 10% of transmural MIs, usually when 40% or more of the left ventricle is damaged.
+2. **Papillary muscle dysfunction**, causing mitral regurgitation.
+3. **Right ventricular infarction**, with right-sided failure.
+4. **Myocardial rupture** (1% to 3%): free wall rupture with haemopericardium and cardiac tamponade; ventricular septal rupture with left-to-right shunt; papillary muscle rupture with severe mitral regurgitation. Most common 3 to 7 days after infarction, when necrotic muscle is softest.
+5. **Arrhythmias.** About 90% of patients; heart block, bradycardia, tachyarrhythmias, ventricular tachycardia and fibrillation. The risk of ventricular fibrillation is greatest in the first hour.
+6. **Pericarditis**, fibrinohaemorrhagic, 2 to 3 days after a transmural MI; rarely Dressler syndrome weeks later, due to antibodies against damaged pericardium and myocardium.
+7. **Chamber dilation** from thinning of the infarcted region.
+8. **Mural thrombus**, with a risk of embolism.
+9. **Ventricular aneurysm**, a late complication after a large transmural anteroseptal infarct. It causes thrombi, arrhythmias and heart failure but does not rupture.
+10. **Progressive heart failure.**
 
-Posterior transmural infarcts are more often complicated by conduction block and right ventricular involvement, whereas anterior transmural infarcts carry the greatest risk of free wall rupture, dilation, thrombus and aneurysm. Subendocardial infarcts rarely cause pericarditis, rupture or aneurysm. Mortality within the first year is about 20%.
-
+Outlook depends on infarct size, site and thickness of wall involved. About 20% die within the first year, mostly in the first 30 days.
 
 ## Give the laboratory diagnosis of MI.
 
-The diagnosis of MI is made on clinical symptoms, electrocardiographic changes, and laboratory demonstration of myocardial proteins in plasma.
+MI is diagnosed by three things: **clinical symptoms**, **laboratory tests for myocardial proteins in the plasma**, and **characteristic electrocardiographic changes**.
 
-1. **Cardiac biomarkers (the cornerstone).** The diagnosis of myocardial injury is established when troponin rises above the upper reference limit with a rise and/or fall pattern on serial samples. Cardiac troponin T or I is the preferred marker. CK-MB serves as a second marker, particularly for reinfarction. Myoglobin is an early but nonspecific marker, and LDH is of historic value.
-2. **ECG.** Transmural infarcts show ST-segment elevation (STEMI), and subendocardial infarcts show ST depression or T-wave changes without ST elevation (NSTEMI). Pathologic Q waves appear later. Small infarcts may be electrocardiographically silent.
-3. **Imaging.** Echocardiography shows regional wall-motion abnormality and measures ejection fraction. Coronary angiography demonstrates the occluding thrombus.
-4. **Other findings.** Neutrophilic leukocytosis, raised ESR and C-reactive protein reflect the inflammatory response, and hyperglycaemia is common.
-
+1. **Cardiac troponins T and I (cTnT, cTnI).** The most clinically useful biomarkers of myocardial damage. They leak from necrotic myocytes through the damaged sarcolemma. Diagnosis is established when blood levels exceed threshold levels. They begin to rise in 2 to 4 hours, peak at 24 to 48 hours and stay raised for 7 to 10 days.
+2. **Electrocardiogram.** A transmural infarct shows ST elevation (STEMI) and a subendocardial infarct does not (NSTEMI). Small infarcts may give non-specific changes or none.
+3. **Clinical presentation.** Chest pain lasting over 30 minutes, crushing or squeezing, with sweating, nausea, vomiting and dyspnoea. Up to 25% of cases are painless.
 
 ## What are the cardiac markers/enzymes of MI (with change over time)?
 
-| Marker | Begins to rise | Peaks | Returns to normal | Comment |
-|---|---|---|---|---|
-| **Troponin I / T (cTnI, cTnT)** | 2–4 h (earlier with high-sensitivity assays) | 24–48 h | 7–10 days (cTnT up to about 14 days) | Most sensitive and specific; best marker, including late presentation |
-| **CK-MB** | 3–12 h | About 24 h | 48–72 h | Fairly specific; useful for reinfarction; also present in skeletal muscle in small amounts |
-| **Myoglobin** | 1–3 h | 6–9 h | About 24 h | Earliest, but nonspecific (skeletal muscle); useful to exclude MI early |
-| **LDH (LDH-1 > LDH-2 flip)** | 24–48 h | 3–6 days | 8–14 days | Late and nonspecific; now rarely used |
-| **AST (SGOT)** | 6–12 h | 24–48 h | 3–5 days | Obsolete; nonspecific |
+The site textbook names only the **cardiac-specific troponins T and I** as the clinically useful markers. It does not give the older enzyme markers.
 
-With reperfusion (thrombolysis or angioplasty), the markers rise earlier and peak sooner, and often higher, because of rapid washout from the necrotic tissue. Cardiac troponins are the markers in current use.
+| Marker | Rise | Peak | Duration of elevation |
+|---|---|---|---|
+| **Cardiac troponins T and I** | 2 to 4 hours | 24 to 48 hours | 7 to 10 days |
 
+With reperfusion, troponin levels may be higher and peak earlier because of faster washout from the necrotic tissue.
 
 ## Why is troponin the best indicator for MI?
 
-Cardiac troponins T and I (cTnT and cTnI) are the most clinically useful markers of myocardial damage for the following reasons.
+1. **Cardiac specific.** Troponins T and I are proteins that regulate calcium-mediated contraction of cardiac muscle, so a rise reflects myocardial damage.
+2. **Sensitive.** They detect irreversible myocyte damage sensitively, because they leak out of necrotic cells once the sarcolemma is disrupted.
+3. **Diagnostic threshold.** Myocardial injury is established when levels exceed threshold levels.
+4. **Long window.** They begin to rise at 2 to 4 hours, peak at 24 to 48 hours and remain elevated 7 to 10 days, so late presentation can still be diagnosed.
 
-1. **Cardiac specificity.** Cardiac troponins are encoded by genes distinct from those of skeletal muscle troponins and are expressed only in cardiac myocytes. CK-MB and myoglobin also occur in skeletal muscle and rise after trauma, exercise or myopathy.
-2. **High sensitivity.** Troponins are present in large amounts in the myocyte (part is free in the cytoplasm and the rest is bound to the contractile apparatus), so even minor myocardial necrosis, such as in NSTEMI, gives a measurable rise. A normal level makes MI very unlikely.
-3. **Early rise with a wide diagnostic window.** They begin to rise within 2–4 hours, peak at 24–48 hours and remain elevated 7–10 days, which allows the diagnosis even when the patient presents late, whereas CK-MB has normalised by 48–72 hours.
-4. **Quantitative correlation.** The magnitude of the rise correlates with the volume of damaged myocardium and with prognosis.
-5. **Standardised.** Reference values and assays are well established, and a rise and/or fall pattern fulfils the universal definition of MI.
-
-Its limitations are that small "troponin leaks" occur in heart failure, pulmonary embolism, renal failure and sepsis, and large rises in myocarditis, so serial values are interpreted in clinical context. Persistence of the elevation also limits its use for early reinfarction, where CK-MB is useful.
-
+**Limitation.** Acute rises also occur in myocarditis and myocardial trauma, and low-level elevations ("troponin leak") in heart failure, pulmonary embolus, renal failure and sepsis. Serial measurements help, because these do not follow the time course of MI.
 
 ## 50-year-old man with severe central chest pain and sweating followed by transient unconsciousness — Likely diagnosis? Laboratory investigations to confirm that diagnosis?
 
-The likely diagnosis is acute myocardial infarction, with the transient unconsciousness (syncope) most probably due to an arrhythmia such as ventricular tachycardia, heart block or asystole, or to hypotension from acute pump failure. It is confirmed by a raised cardiac troponin (with CK-MB), along with typical ECG changes.
+**Likely diagnosis: acute myocardial infarction.** Prolonged crushing central chest pain with sweating is the classic presentation, and syncope may come from an arrhythmia, which complicates about 90% of MIs.
 
-Severe central chest pain with diaphoresis is the classic presentation of acute MI. Syncope in this setting suggests a complication, the commonest being a ventricular arrhythmia (arrhythmias occur in about 90% of patients and are maximal in the first hour), or conduction block in a posterior (inferior) infarct, or hypotension from extensive myocardial damage with cardiogenic shock. Aortic dissection and massive pulmonary embolism, which can also present with pain and syncope, must be considered.
+**Investigations to confirm**
 
-**Laboratory investigations.** Serial cardiac troponin T or I is the key test and shows a rise from 2–4 hours, a peak at 24–48 hours and persistence for 7–10 days. CK-MB (rise at 3–12 hours, peak at 24 hours, normal by 48–72 hours) is a supporting test. The ECG will show ST elevation (STEMI), and the findings are supported by raised leukocyte count, ESR and CRP. Echocardiography and angiography are performed to define wall-motion abnormality and coronary occlusion.
-
+1. **Cardiac troponin T or I**, raised above threshold. Rises in 2 to 4 hours, peaks at 24 to 48 hours, stays up 7 to 10 days. Serial measurement helps distinguish other causes of troponin rise.
+2. **Electrocardiogram**, with ST elevation (STEMI) in a transmural infarct or no ST elevation (NSTEMI) in a subendocardial one.
+3. The clinical picture itself.
 
 ## A patient has severe central chest pain, sweating, ± syncope. What is the probable diagnosis?
 
-The probable diagnosis is acute myocardial infarction (an acute coronary syndrome, likely STEMI). Severe, prolonged (over 30 minutes) crushing central chest pain with profuse sweating (diaphoresis) is the classic presentation of infarction and implies myocardial necrosis, usually following rupture or erosion of a coronary atheromatous plaque with superimposed occlusive thrombosis. Nausea and vomiting, dyspnoea and a rapid weak pulse commonly accompany it, and syncope signals a complication such as a ventricular arrhythmia, heart block or hypotension from acute pump failure. In up to 25% of patients, particularly the elderly and those with diabetic neuropathy, the onset is atypical or painless.
-
-The differential diagnosis includes unstable angina, aortic dissection, pulmonary embolism, acute pericarditis and oesophageal causes, and these are excluded by the ECG, biomarkers and imaging.
-
+**Acute myocardial infarction**, caused most often by rupture or erosion of a coronary atheromatous plaque with superimposed thrombosis. The pain is prolonged (more than 30 minutes), crushing or squeezing, with sweating, nausea and dyspnoea. Syncope can be due to an arrhythmia or pump failure.
 
 ## Same: what investigations/expected biochemical findings confirm it?
 
-Confirmation is by the ECG and cardiac biomarkers, supported by imaging.
-
-**Biochemical findings.**
-
-- **Cardiac troponin T or I:** raised above the reference limit, beginning at 2–4 hours, peaking at 24–48 hours and remaining elevated for 7–10 days. This is the most sensitive and specific marker.
-- **CK-MB:** rises in 3–12 hours, peaks at about 24 hours and returns to normal within 48–72 hours (useful for reinfarction).
-- **Myoglobin:** rises very early (1–3 hours) but is nonspecific.
-- **LDH:** rises at 24–48 hours with a flipped LDH1:LDH2 ratio, peaks at 3–6 days (historical).
-- Nonspecific: neutrophilic leukocytosis, raised ESR and C-reactive protein, hyperglycaemia.
-
-**Other investigations.** The ECG shows ST-segment elevation in STEMI (ST depression or T-wave changes in NSTEMI), followed by T-wave inversion and Q waves. Echocardiography shows regional wall-motion abnormality and reduced ejection fraction, and coronary angiography shows the occluded vessel.
+1. **Cardiac troponin T or I** raised above the diagnostic threshold, beginning 2 to 4 hours after onset, peaking at 24 to 48 hours and remaining elevated for 7 to 10 days.
+2. **ECG**: ST elevation (STEMI) or none (NSTEMI).
+3. **Serial troponin** measurements to separate MI from other causes of mild rise.
 
 ## A 70y man has long-standing hypertension. What type of adaptive change may occur in his heart?
 
-The adaptive change is concentric left ventricular hypertrophy (systemic hypertensive heart disease). Chronic pressure overload increases wall stress, and the myocytes respond by increasing in size (cellular hypertrophy) with synthesis of new sarcomeres assembled in parallel to the long axis of the cell, so that the ventricular wall thickens concentrically while the cavity is initially not dilated. The heart weight rises disproportionately (it may exceed 500 g) and the wall thickness may exceed 2 cm. Hypertrophic myocytes show increased transverse diameter, enlarged hyperchromatic nuclei and often interstitial and perivascular fibrosis.
+**Left ventricular hypertrophy** (concentric), a pathologic adaptation to the pressure overload of chronic hypertension. It leads to **systemic (left-sided) hypertensive heart disease**.
 
-Although initially compensatory, the change is eventually maladaptive. Capillary density does not increase in proportion to myocyte size, oxygen demand is increased and fibrosis stiffens the wall, so that the hypertrophied heart is vulnerable to demand ischaemia, diastolic dysfunction (with left atrial enlargement and atrial fibrillation), eventual dilation and congestive heart failure, and sudden death. Minimal criteria for the diagnosis of hypertensive heart disease are left ventricular hypertrophy in the absence of other cardiovascular pathology, together with a history or evidence of hypertension elsewhere (such as the kidney). Effective control of blood pressure can lead to regression of the hypertrophy.
-
+- Myocytes increase in size without new cells.
+- The heart is heavy (may exceed 500 g) with a left ventricular wall over 2.0 cm thick, initially without dilation.
+- Increased interstitial connective tissue makes the wall stiff, impairing diastolic filling and enlarging the left atrium.
+- It is maladaptive in the end: myocardial demand ischaemia, dilation, heart failure and sometimes sudden death.
+- Control of hypertension can prevent hypertrophy and even cause regression.
 
 ## Same: mention physiological conditions where this change can occur.
 
-Cardiac hypertrophy can also be a physiologic adaptation to a sustained increase in workload, and the main examples are:
+Hypertrophy is physiologic when it is driven by increased functional demand or by hormones and growth factors.
 
-1. **Athletic training.** Regular aerobic exercise (for example long-distance running) causes physiologic hypertrophy, generally with volume-load pattern and with an increase in capillary density. It is beneficial and lowers the resting heart rate and blood pressure. Static, isometric exercise such as weightlifting produces mild pressure hypertrophy with less beneficial remodeling.
-2. **Pregnancy.** The increased blood volume and cardiac output impose a volume load on the heart, producing a reversible increase in ventricular mass that regresses after delivery.
-3. **Growth and manual labour.** Hypertrophic growth of the heart in normal development of the child and adolescent, and in heavy physical work.
-
-The distinguishing feature of physiologic hypertrophy is that it is reversible, with preserved or improved function and normal capillary supply, whereas pathologic hypertrophy (pressure or volume overload) is associated with fibrosis, a relatively inadequate blood supply and a tendency to failure.
+1. **Uterus in pregnancy.** Smooth muscle hypertrophy stimulated by oestrogen.
+2. **Skeletal muscle of bodybuilders**, from increased demand.
 
 ## What are the criteria for diagnosis of rheumatic fever?
 
-The diagnosis is made using the revised Jones criteria, which require evidence of a preceding group A streptococcal infection together with either two major manifestations or one major and two minor manifestations.
+Diagnosis follows the **revised Jones criteria**: **evidence of a preceding group A streptococcal infection**, plus **two major manifestations, or one major and two minor manifestations**.
 
-**Evidence of preceding streptococcal infection:** raised or rising antistreptolysin O (ASO) or anti-DNase B titre, positive throat culture or rapid streptococcal antigen test, or a recent history of scarlet fever. Pharyngeal cultures are usually negative by the time the illness begins.
+**Major manifestations**
 
-**Major criteria:**
-
-1. Migratory polyarthritis of the large joints, in which one joint after another becomes painful and swollen for a few days and then settles without residual disability.
-2. Carditis (pancarditis): myocarditis, pericarditis or endocarditis, manifested by tachycardia, murmurs, pericardial friction rub and cardiac failure.
-3. Subcutaneous nodules, typically over extensor surfaces of the extremities.
+1. Migratory polyarthritis of the large joints.
+2. Pancarditis (myocarditis, pericarditis or endocarditis).
+3. Subcutaneous nodules, typically on extensor surfaces of the limbs.
 4. Erythema marginatum, an irregular circinate skin rash.
-5. Sydenham chorea, a neurologic disorder with involuntary rapid movements.
+5. Sydenham chorea, a neurological disorder with rapid involuntary movements.
 
-**Minor criteria:** fever, arthralgia, raised acute-phase reactants (ESR, CRP) and a prolonged PR interval on ECG.
+**Minor manifestations** are non-specific: fever, arthralgia and raised acute-phase reactants.
 
-The criteria are evolving and are applied differently in low-risk and high-risk settings. The first attack usually appears 10 days to 6 weeks after streptococcal infection.
+**Evidence of preceding infection.** Pharyngeal cultures are usually negative by the time of illness, but antibodies to streptococcal enzymes such as streptolysin O and DNase B are found in most patients.
 
+The criteria are evolving and are applied differently in low-risk and high-risk settings.
 
 ## Give the pathogenesis of rheumatic fever.
 
-Acute rheumatic fever results from host immune responses to group A streptococcal antigens that cross-react with host proteins. The following steps are involved.
+Acute rheumatic fever is an **immune response to group A streptococcal antigens that cross-react with host proteins**.
 
-1. Preceding infection. Group A β-haemolytic streptococcal pharyngitis (occasionally skin infection) exposes the immune system to streptococcal antigens, particularly the M protein, a surface virulence factor.
-2. Genetic susceptibility. Only 0.3–3% of infected individuals develop RF, implying an intrinsic susceptibility (certain MHC haplotypes) that determines the cross-reactive response.
-3. Molecular mimicry. Antibodies and CD4⁺ T cells directed against streptococcal M protein recognise cardiac antigens in the pericardium, myocardium and valves.
-4. Effector mechanisms. Antibody binding activates complement and recruits Fc-receptor–bearing neutrophils and macrophages. Cytokines produced by stimulated T cells activate macrophages, which form the Aschoff bodies. Tissue damage is thus caused by a combination of antibody-mediated and T-cell–mediated reactions (type II and type IV hypersensitivity).
-5. Latent period. The 2–3 week delay reflects the time needed to generate the immune response, and streptococci are absent from the lesions.
-6. Chronic disease. Acute inflammation resolves by healing and scarring. With each recurrent attack the damage to the valves is cumulative, and turbulent flow through deformed valves causes further fibrosis in a positive feedback loop.
-
+1. It follows group A streptococcal pharyngitis (sometimes skin infection) after a delay of 2 to 3 weeks, the time needed to generate an immune response.
+2. Antibodies and CD4⁺ T cells against streptococcal **M proteins** recognise cardiac antigens in the pericardium, myocardium and valves.
+3. Antibody binding activates complement and recruits neutrophils and macrophages; cytokines from stimulated T cells activate macrophages, for example within **Aschoff bodies**.
+4. Damage is thus from antibody-mediated and T cell-mediated reactions.
+5. Streptococci are completely absent from the lesions, as expected for an immunological disease.
+6. Only 0.3% to 3% of infected people develop it, so intrinsic genetic susceptibility is likely.
+7. Chronic fibrotic lesions are the result of healing and scarring after the acute inflammation.
 
 ## Which valves are commonly involved in rheumatic fever?
 
-In chronic rheumatic heart disease the mitral valve is virtually always involved, in isolation in roughly two-thirds of cases, and together with the aortic valve in another 25%. The tricuspid valve is infrequently involved, and the pulmonary valve is only rarely affected. Thus the left-sided valves bear the brunt of the damage, probably because of the greater mechanical stress they sustain. In acute rheumatic fever, inflammation of the endocardium and left-sided valves produces fibrinoid necrosis in the cusps or tendinous cords with small verrucae along the lines of closure. Chronic disease produces leaflet thickening, commissural fusion and shortening, and thickening and fusion of the cords. Rheumatic heart disease is responsible for 99% of acquired mitral stenosis.
+- The **mitral valve** is virtually always involved in chronic rheumatic heart disease. It is affected alone in about two-thirds of cases.
+- The **mitral and aortic valves together** are affected in another 25%.
+- The **tricuspid valve** is infrequently involved and the **pulmonary valve** only rarely.
 
+In acute rheumatic fever the left-sided valves show fibrinoid necrosis with small (1 to 2 mm) vegetations called verrucae along the lines of closure.
 
 ## What are the complications of rheumatic fever?
 
-Acute phase.
-
-- Acute rheumatic carditis (pancarditis) with tachycardia, arrhythmias, cardiac dilation, functional mitral insufficiency and heart failure. About 1–2% of patients die of fulminant cardiac involvement.
-- Pericarditis with friction rub, and effusion.
-- Arthritis (self-limited, leaving no deformity), Sydenham chorea and skin lesions.
-- Recurrences: after an initial attack there is increased vulnerability to reactivation with each subsequent streptococcal pharyngitis, and the damage to the valves is cumulative.
-
-Chronic rheumatic heart disease (appearing years or decades later).
-
-- Deforming fibrotic valvular disease: mitral stenosis ("fish-mouth") and/or regurgitation, and aortic stenosis or regurgitation.
-- Left atrial dilation, atrial fibrillation and mural thrombi with systemic thromboembolism (stroke).
-- Pulmonary hypertension and right ventricular hypertrophy and failure.
-- Congestive heart failure.
-- Infective endocarditis superimposed on the damaged valves.
-- Calcification of valves, requiring surgical repair or replacement.
-
+1. **Acute carditis.** Pericarditis with friction rub, myocarditis with arrhythmias and cardiac dilation, which can cause functional mitral regurgitation or heart failure. About 1% to 2% die of fulminant cardiac involvement.
+2. **Recurrent attacks.** With each streptococcal infection the same manifestations return, and valve damage is cumulative.
+3. **Chronic rheumatic heart disease.** Mitral leaflet thickening, commissural fusion and shortening, and thickening and fusion of the tendinous cords, giving "fish mouth" **mitral stenosis**. MacCallum plaques may form in the left atrium.
+4. **Late effects.** Heart murmurs, cardiac hypertrophy and dilation, heart failure, atrial fibrillation (particularly with mitral stenosis), left atrial mural thrombi with thromboembolism, and **infective endocarditis**.
+5. **Lung changes** from long-standing congestion in mitral stenosis.
 
 ## Write a short note on Aschoff nodule (myocardial changes, giant cell).
 
-The Aschoff body (Aschoff nodule) is the characteristic and pathognomonic lesion of acute rheumatic carditis. It is a focal granulomatous inflammatory lesion found in the interstitial connective tissue of the heart, especially around small blood vessels, in the myocardium, endocardium and pericardium.
+**Aschoff bodies** are the distinctive lesions of **acute rheumatic fever** in the heart.
 
-Structure. A mature lesion has a central area of fibrinoid necrosis (collagen degeneration with deposits of fibrin and immune material), around which are collected T lymphocytes, occasional plasma cells and large activated macrophages called **Anitschkow cells** (caterpillar cells). These have abundant cytoplasm and a round to ovoid nucleus in which chromatin is condensed into a central, slender, wavy ribbon (appearing as a "caterpillar" in longitudinal section and "owl-eye" in cross-section), and they are sometimes binucleate. Some Anitschkow cells fuse to form multinucleated **Aschoff giant cells**.
-
-Evolution. The lesion passes through an early exudative (fibrinoid) stage, a proliferative (granulomatous) stage with Anitschkow and giant cells, and a late healing stage in which fibrosis forms a perivascular scar. This is why Aschoff bodies are rarely seen in the chronic phase.
-
-Significance. Lesions in the myocardium contribute to rheumatic myocarditis, and Aschoff bodies in any of the layers define pancarditis. Nodules are accompanied by diffuse inflammation, and in the endocardium they underlie the verrucae. Streptococci are absent from the lesion because it is an immunologic reaction.
-
+- Each is a focal inflammatory lesion of **T lymphocytes**, occasional **plasma cells** and plump activated macrophages called **Anitschkow cells**.
+- Anitschkow cells have abundant cytoplasm and a central round-to-ovoid nucleus (occasionally binucleate) in which the chromatin condenses into a central slender wavy ribbon, so they are called "caterpillar cells".
+- They may be found with diffuse inflammation in any of the three layers of the heart, causing pericarditis, myocarditis and endocarditis (**pancarditis**).
+- They reflect cytokine-driven macrophage activation in an immune-mediated reaction. The textbook does not describe giant cells in them.
 
 ## A child has fever, migratory large-joint pain after sore throat. What is your provisional diagnosis?
 
-The provisional diagnosis is acute rheumatic fever. A child of school age with fever and migratory polyarthritis of the large joints developing about 2–3 weeks after a sore throat fits the picture of an immunologically mediated reaction to group A streptococcal pharyngitis. Migratory polyarthritis is a major Jones criterion (one large joint after another becomes painful and swollen for a few days, then resolves spontaneously without residual disability), and fever is a minor criterion. The diagnosis must be confirmed by looking for other manifestations, particularly carditis, and for evidence of the preceding infection. The differential diagnosis includes juvenile idiopathic arthritis, septic arthritis, reactive arthritis, SLE and leukaemia.
-
+**Acute rheumatic fever**, which follows group A streptococcal pharyngitis after a latent period of 10 days to 6 weeks and occurs most often in children aged 5 to 15 years. Migratory polyarthritis of the large joints, in which one large joint after another becomes painful and swollen for days and then settles without residual disability, is a major manifestation, and fever is a minor one.
 
 ## Same: how will you diagnose the case?
 
-The diagnosis is established by applying the revised Jones criteria, which require evidence of preceding group A streptococcal infection plus two major or one major and two minor manifestations. This is accomplished through history, examination and investigations.
+By the **revised Jones criteria**: evidence of a preceding group A streptococcal infection, plus two major or one major and two minor manifestations.
 
-1. Clinical examination: look for carditis (new murmur, tachycardia, pericardial friction rub, cardiomegaly, signs of heart failure), subcutaneous nodules, erythema marginatum and chorea.
-2. Evidence of streptococcal infection: ASO titre (raised or rising, with serial samples), anti-DNase B, throat swab culture or rapid antigen test (often negative by the time symptoms start).
-3. Acute-phase reactants: ESR and C-reactive protein raised, and leukocytosis.
-4. ECG: prolonged PR interval (a minor criterion), and other conduction abnormalities.
-5. Echocardiography: detects subclinical carditis, valvular regurgitation, effusion and ventricular function.
-6. Chest radiograph: cardiomegaly, pulmonary congestion if in failure.
-7. Exclusion of other diseases: blood culture, rheumatoid factor and ANA, as indicated, to exclude septic arthritis, juvenile arthritis and SLE.
-
+1. **Evidence of streptococcal infection.** Raised antibodies to streptolysin O and DNase B (pharyngeal culture is usually negative by then).
+2. **Major criteria**: migratory polyarthritis, pancarditis, subcutaneous nodules, erythema marginatum, Sydenham chorea.
+3. **Minor criteria**: fever, arthralgia, raised acute-phase reactants.
+4. **Look for carditis**: pericardial friction rub, tachycardia, arrhythmia, murmurs.
 
 ## What is vegetation?
 
-A vegetation is a wart-like or friable mass attached to the surface of a heart valve (or less commonly the mural endocardium), composed of fibrin, platelets and other thrombotic debris, often with inflammatory cells and, in infective endocarditis, colonies of microorganisms. It forms where the endothelium has been damaged or the valve surface has become thrombogenic, so that thrombus builds up at the site, typically on the line of closure of the leaflets. Vegetations are a hallmark of vegetative (verrucous) endocarditis and may be infected (infective endocarditis) or sterile (rheumatic heart disease, nonbacterial thrombotic endocarditis and Libman-Sacks endocarditis).
-
-The principal consequences are valve damage with regurgitation, extension into adjacent myocardium (ring abscess), and embolisation. Infected vegetations cause septic infarcts and mycotic aneurysms where they lodge, and sterile vegetations of NBTE may cause bland infarcts in the brain, heart or elsewhere.
-
+A **vegetation** is a lesion on a heart valve formed of fibrin and thrombotic debris. In **infective endocarditis** it also contains inflammatory cells and microorganisms and is friable, bulky and destructive.
 
 ## What is subacute infective endocarditis?
 
-Subacute infective endocarditis is an insidious infection of previously abnormal (deformed) heart valves caused by organisms of low virulence, most characteristically viridans streptococci (Streptococcus viridans), a normal component of oral flora. The disease pursues a protracted course of weeks to months. The vegetations cause less valvular destruction than those of acute endocarditis, and microscopically they show granulation tissue at the base, indicating healing, with fibrosis, calcification and chronic inflammation developing later. The underlying valve abnormality is rheumatic heart disease, mitral valve prolapse, calcific valvular stenosis, bicuspid aortic valve, prosthetic valves or congenital defects.
-
-Clinically the patient has low-grade fever, fatigue, weight loss, a flu-like illness and a murmur, and immune phenomena may appear (Osler nodes, Roth spots, glomerulonephritis). Cure is often achieved by antibiotics alone (about 98% for low-virulence organisms such as viridans streptococci), usually with 6 weeks or more of therapy. The distinction from acute endocarditis is not absolute, and many cases lie between the two forms.
-
+**Subacute infective endocarditis** is an insidious infection of previously **deformed heart valves** by organisms of **lower virulence**, such as viridans streptococci, with less valve destruction than acute endocarditis.
 
 ## Write the types/classification of infective endocarditis with infective agents.
 
-Infective endocarditis is classified clinically on the basis of severity and tempo (reflecting the virulence of the organism) and on the presence of underlying valve disease. Classification also recognises special settings.
+Traditionally IE is classed on clinical grounds as **acute** or **subacute**, based on severity, tempo (microbial virulence) and whether there is underlying valve disease. The two form a spectrum.
 
-| Type | Valve and host | Common organisms | Features |
+| Type | Valve | Organism | Course |
 |---|---|---|---|
-| **Acute IE** | Previously normal valve, often with a recognised portal of entry | Staphylococcus aureus (most cases overall) | Stormy onset, rapid destruction, ring abscess, high mortality, often needs surgery |
-| **Subacute IE** | Previously damaged or deformed valve (RHD, MV prolapse, calcific stenosis, congenital defects) | Viridans streptococci (50–60% of native valve cases) | Insidious, weeks to months, less destruction, curable with antibiotics |
-| **Prosthetic valve IE** | Prosthetic (mechanical or bioprosthetic) valve | Early (within 1–2 months): skin flora, S. aureus and S. epidermidis. Late (over 1 year): streptococci, S. aureus | Vegetations at the prosthesis–tissue interface, ring abscess, paravalvular leak; cure rate poorer |
-| **IE in intravenous drug users** | Right-sided valves (tricuspid) mainly, though left-sided also | S. aureus | Septic pulmonary emboli |
-| **Other organisms** | Native valves | Enterococci, HACEK group (Haemophilus, Actinobacillus, Cardiobacterium, Eikenella, Kingella), gram-negative bacilli, fungi (Candida, Aspergillus) | Fungal and gram-negative infections have about 50% mortality |
-| **Culture-negative IE** | Native or prosthetic | No organism isolated (about 10% of cases) | Prior antibiotics, fastidious or deeply embedded organisms |
+| **Acute** | Previously normal | Highly virulent, for example *Staphylococcus aureus* | Rapid, destructive; antibiotics alone often fail and surgery may be needed |
+| **Subacute** | Deformed or damaged | Low virulence, for example viridans streptococci | Protracted over weeks to months; often cured by antibiotics alone |
 
-Noninfective (sterile) vegetations are a separate group: nonbacterial thrombotic endocarditis and Libman-Sacks endocarditis.
+**Other agents**
 
+- Viridans streptococci cause 50% to 60% of cases on previously damaged native valves.
+- *S. aureus* causes most cases overall, including those in intravenous drug users.
+- Enterococci and the HACEK group (*Haemophilus*, *Actinobacillus*, *Cardiobacterium*, *Eikenella*, *Kingella*).
+- Rarely gram-negative bacilli and fungi.
+- **Prosthetic valve endocarditis**: within 1 to 2 months of surgery, skin flora (*S. aureus*, *S. epidermidis*); a year or more later, streptococci and *S. aureus*.
+- About 10% are culture negative.
 
 ## Give the pathogenesis of infective endocarditis.
 
-The development of infective endocarditis requires two ingredients, a susceptible valve and microorganisms in the bloodstream, and a series of events follows.
-
-1. Predisposing cardiac abnormalities. Valve damage creates a thrombogenic surface. Rheumatic heart disease was historically the commonest antecedent, now supplanted by mitral valve prolapse, degenerative calcific valvular stenosis, bicuspid aortic valve, prosthetic valves and congenital defects. Healthy valves can be infected by highly virulent organisms such as S. aureus.
-2. Bacteraemia or fungaemia. Organisms seed the blood from an infection elsewhere, dental or surgical procedures, injected drug use with contaminated needles, or even trivial breaks in the epithelial barriers of the gut, mouth and skin.
-3. Colonisation and vegetation formation. Organisms adhere to the damaged endothelium or the platelet-fibrin thrombus on the valve surface, and multiply within the growing mass of fibrin, platelets and inflammatory cells. Deeply embedded organisms are protected from host defences and antibiotics.
-4. Local and distant effects. The vegetation destroys the valve and may erode into the myocardium, forming a ring abscess. Fragments embolise, and immune complex deposition produces glomerulonephritis and other immune phenomena.
-
-Virulence determines the pattern: highly virulent organisms rapidly destroy even normal valves (acute IE), while low-virulence organisms infect deformed valves slowly (subacute IE). Antibiotic prophylaxis lowers risk in those with abnormal valves.
-
+1. **Predisposing cardiac lesions.** Rheumatic heart disease with valve scarring was historically the main one. It is now replaced by mitral valve prolapse, degenerative calcific stenosis, bicuspid aortic valve, prosthetic valves and congenital defects.
+2. **Bacteraemia or fungaemia**, the foremost predisposing factor. The source may be an infection elsewhere, a dental or surgical procedure, a contaminated needle in intravenous drug users, or trivial breaks in the epithelial barriers of gut, mouth or skin.
+3. **Organisms and valve.** Low-virulence viridans streptococci infect damaged valves; virulent *S. aureus* infects healthy or damaged valves.
+4. **Vegetation formation.** The organisms lodge on the valve and form vegetations of fibrin, thrombotic debris, inflammatory cells and organisms, with destruction of the underlying tissue. Organisms deep in the vegetation are hard to release into the blood or reach with antibiotics.
+5. **Prevention.** Antibiotic prophylaxis lowers risk in patients with valve abnormalities or known bacteraemia.
 
 ## Mention the complications of infective endocarditis.
 
-The complications of infective endocarditis generally begin within the first few weeks of illness.
+Complications generally begin within the first few weeks.
 
-1. Cardiac: valve destruction with perforation and acute regurgitation, heart failure, ring abscess (invading the myocardium and conduction system, causing arrhythmias and heart block), pericarditis, and, with prosthetic valves, paravalvular leak.
-2. Embolic: systemic emboli from left-sided vegetations cause infarcts of the brain (stroke), spleen, kidney and heart, and septic emboli cause abscesses, septic infarcts and mycotic aneurysms (with risk of rupture and intracranial haemorrhage). Right-sided vegetations cause septic pulmonary infarcts.
-3. Immune-complex mediated: glomerulonephritis, Osler nodes, Roth spots, Janeway lesions and rheumatoid factor.
-4. Septic: sepsis, and metastatic abscesses.
-
-Arrhythmias, invasion of the myocardium and systemic embolisation bode particularly ill. Untreated IE is generally fatal. With 6 or more weeks of antibiotics and/or valve replacement the cure rate is about 98% for low-virulence organisms, 60–90% for enterococci and S. aureus, and only about 50% for gram-negative bacilli or fungi.
+1. **Valve destruction** and **ring abscess**, where a vegetation erodes into the myocardium (invasion of the myocardium and conduction system carries a poor outlook).
+2. **Embolisation.** Fragments with virulent organisms cause abscesses where they lodge, giving septic infarcts and **mycotic aneurysms**; systemic embolisation bodes ill.
+3. **Glomerulonephritis** from deposition of antigen-antibody complexes.
+4. **Sepsis** and **arrhythmias.**
+5. **Vascular and immunological signs**: splinter haemorrhages, Janeway lesions (small painless haemorrhagic macules on palms and soles), Osler nodes (tender nodules in the digit pulp), Roth spots (retinal haemorrhages with pale centres). These are now less common because of earlier treatment.
+6. **Outcome.** Untreated IE is generally fatal. With 6 weeks or more of antibiotics, or valve replacement, mortality falls. Cure is 98% with low-virulence organisms such as *S. viridans*, 60% to 90% with enterococci and *S. aureus*, and half of patients with gram-negative bacilli or fungi die.
 
 ## What is granulopoiesis?
 
