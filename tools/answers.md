@@ -9168,42 +9168,32 @@ Chronic immune thrombocytopenic purpura is caused by autoantibody-mediated destr
 
 ## How are platelets destroyed in peripheral blood in ITP?
 
-In ITP, IgG autoantibodies bind to platelet membrane glycoproteins and opsonise the platelets, which are then recognised through Fc receptors and phagocytosed by macrophages of the spleen, so that the platelet life span is shortened from 7 to 10 days to a few hours.
-
-Autoantibodies against platelet glycoproteins IIb/IIIa or Ib/IX can be demonstrated in the plasma and bound to the platelet surface in about 80% of patients. As in autoimmune haemolytic anaemia, the antiplatelet antibodies, mostly IgG, act as opsonins recognised by IgG Fc receptors on phagocytes, leading to increased platelet destruction. The thrombocytopenia is usually markedly improved by splenectomy, which shows that the spleen is the principal site of removal of opsonised platelets, and may also remove a source of autoantibody (the splenic red pulp is rich in plasma cells). The antibodies may also bind and damage megakaryocytes, so that platelet production falls and exacerbates the thrombocytopenia. The marrow compensates with an increase in megakaryocytes, many of which are immature, and by releasing large platelets.
-
+- Autoantibodies, most often against platelet membrane glycoproteins IIb/IIIa or Ib/IX, are bound to the platelet surface; in most cases they are of the IgG class.
+- As in autoimmune haemolytic anaemias, the antiplatelet antibodies act as **opsonins**, recognised by IgG Fc receptors expressed on phagocytes, leading to increased platelet destruction.
+- The **spleen** is the major site of removal of opsonised platelets, as shown by the marked improvement in thrombocytopenia after splenectomy.
+- The splenic red pulp is also rich in plasma cells, a source of autoantibodies.
+- The autoantibodies may also bind to and damage megakaryocytes, decreasing platelet production.
 
 ## How is ITP diagnosed in the laboratory?
 
-ITP is diagnosed in the laboratory by the finding of isolated thrombocytopenia with large platelets on the blood film, normal PT and PTT, and a bone marrow with normal or increased megakaryocytes, after the exclusion of other causes of thrombocytopenia.
-
-1. **Blood count and film.** A low platelet count (below 150,000/µL; spontaneous bleeding when below 20,000/µL), with normal haemoglobin and white cell count (unless there has been blood loss), unless there is associated autoimmune haemolysis (Evans syndrome). The film shows reduced platelets with large platelets (megathrombocytes), which are a sign of accelerated thrombopoiesis; platelet clumping and spurious thrombocytopenia must be excluded.
-2. **Coagulation screening.** Prothrombin time and partial thromboplastin time are normal (as is the thrombin time and fibrinogen); the bleeding time is prolonged.
-3. **Bone marrow examination.** Normal or increased megakaryocytes, some of them immature, with large, nonlobulated single nuclei; this reflects accelerated thrombopoiesis and is found in most thrombocytopenias from increased destruction. Marrow examination is important to exclude marrow failure or other primary marrow disorders (leukaemia, aplastic anaemia, myelodysplastic neoplasm), especially in older adults.
-4. **Platelet autoantibody tests.** Antiplatelet antibodies (against GpIIb/IIIa or Ib/IX) can be detected, but the tests have low sensitivity and specificity and are not clinically useful.
-5. **Exclusion of secondary causes.** Antinuclear antibodies for SLE; HIV, hepatitis C and H. pylori testing; and drug history (heparin, quinine); the diagnosis is one of exclusion and can be made only after other causes (as in the list of causes of thrombocytopenia) have been ruled out. The spleen is of normal size on examination or ultrasound.
-
+1. **Platelet count low**, with normal or increased megakaryocytes in the bone marrow and large platelets (megathrombocytes) in the peripheral blood; these are presumptive evidence of accelerated platelet destruction.
+2. **PT and PTT normal.**
+3. **Bone marrow examination** is done to rule out thrombocytopenia due to marrow failure or other primary marrow disorders.
+4. Tests for platelet autoantibodies have low sensitivity and specificity and are not clinically useful.
+5. The diagnosis is one of **exclusion**: it is made only after other causes of thrombocytopenia have been ruled out, including secondary causes such as systemic lupus erythematosus, HIV infection and B-cell neoplasms.
 
 ## What are the causes of thrombocytopenia?
 
-The causes of thrombocytopenia fall into four categories: decreased platelet production, decreased platelet survival, sequestration, and dilution.
+A platelet count below 150,000 per µL is thrombocytopenia. The causes fall into four categories.
 
-1. **Decreased production**
-
-- Generalised marrow failure: aplastic anaemia, leukaemia, marrow replacement by metastatic cancer, granulomas or myelofibrosis, myelodysplastic neoplasm (which occasionally presents with isolated thrombocytopenia).
-- Selective megakaryocyte suppression: drugs (thiazides, cytotoxic drugs), alcohol, and infections such as measles and HIV (which can infect megakaryocytes), dengue.
-- Nutritional deficiency of B₁₂ and folate (megaloblastic anaemia).
-
-2. **Decreased survival**
-
-- Immunologic: autoimmune (chronic and acute ITP, systemic lupus erythematosus, B-cell neoplasms), alloimmune (post-transfusion and neonatal), drug-associated (quinine, quinidine, vancomycin, sulpha compounds, heparin-induced thrombocytopenia), and infections (HIV, infectious mononucleosis, dengue fever).
-- Nonimmunologic: disseminated intravascular coagulation, thrombotic microangiopathies (TTP and HUS), giant haemangioma, and mechanical injury (prosthetic heart valves).
-
-3. **Sequestration:** hypersplenism; the spleen normally sequesters 30% to 35% of platelets, rising to 80% to 90% in an enlarged spleen.
-4. **Dilution:** massive transfusion of stored blood and plasma replacement.
-
-A platelet count below 150,000 per µL is thrombocytopenia; counts of 20,000 to 50,000 per µL aggravate post-traumatic bleeding, and counts below 20,000 per µL may produce spontaneous bleeding.
-
+1. **Decreased platelet production**
+   - Conditions that depress marrow output generally: aplastic anaemia, leukaemia, disseminated cancer, granulomatous disease, megaloblastic anaemia from vitamin B12 or folate deficiency.
+   - Conditions that affect megakaryocytes selectively: drugs (thiazides, cytotoxic drugs) and alcohol; infections such as measles and HIV; myelodysplastic neoplasm, which occasionally presents with isolated thrombocytopenia.
+2. **Decreased platelet survival**
+   - Immunologic: autoimmune (immune thrombocytopenic purpura, systemic lupus erythematosus, B-cell lymphoid neoplasms); alloimmune (post-transfusion and neonatal); drug-associated (quinidine, heparin, sulfa compounds); infections (HIV, infectious mononucleosis, dengue fever).
+   - Nonimmunologic: **disseminated intravascular coagulation** and the thrombotic microangiopathies, in which platelet consumption reduces life span; mechanical injury, as with prosthetic heart valves.
+3. **Sequestration:** the spleen normally sequesters 30% to 35% of the body's platelets, which can rise to 80% to 90% when the spleen is enlarged.
+4. **Dilution:** massive transfusions.
 
 ## Classify bleeding (haemorrhagic) disorders.
 
@@ -9403,31 +9393,27 @@ The result is spontaneous bleeding from multiple sites (skin petechiae and ecchy
 
 ## Classify blood groups.
 
-Blood groups are classified according to the antigenic systems on the red cell surface, of which the ABO and Rh systems are by far the most important in transfusion practice, and many minor systems also exist.
+Blood groups are classified by the red cell antigens that define them. The two systems of main clinical importance are:
 
-A blood group system is a set of red cell membrane antigens controlled by alleles at a single genetic locus (or by closely linked loci). Over 30 systems are recognised.
+| System | Groups | Basis |
+|---|---|---|
+| **ABO** | A, B, AB and O | Presence of antigen A, antigen B, both, or neither on the red cells |
+| **Rh** | Rh positive and Rh negative | Presence or absence of the D antigen on the red cells |
 
-1. **ABO system** (Landsteiner, 1901): groups A, B, AB and O, defined by the presence of A and B antigens on red cells and the reciprocal naturally occurring antibodies (anti-A, anti-B) in the plasma. Antigens A and B are carbohydrates built on the H substance; group O cells have only H.
-2. **Rh system:** defined by the D antigen (Rh-positive if D is present, Rh-negative if absent), with the associated C, c, E and e antigens. Anti-D is not naturally present and appears only after sensitisation.
-3. **Other clinically important systems:** Kell, Duffy (Fy), Kidd (Jk), MNSs, Lewis, P, Lutheran and Diego; antibodies to Rh, Kell and Kidd antigens may cause severe delayed haemolytic transfusion reactions and haemolytic disease of the newborn.
-4. **Rare phenotypes:** for example the Bombay (hh) phenotype, lacking H substance, which makes red cells appear as group O but is incompatible with normal group O blood.
-
+Other red cell antigens, such as Kell and Kidd, can cause delayed haemolytic transfusion reactions.
 
 ## Name the ABO and Rh blood groups with their agglutinins.
 
-The ABO groups are A, B, AB and O; each person has the agglutinin (antibody) against the ABO antigen that he lacks, so group A has anti-B, group B has anti-A, group AB has neither and group O has both; the Rh groups are Rh-positive and Rh-negative, and anti-D appears only after sensitisation.
-
-| Blood group | Antigen on red cells | Naturally occurring agglutinins (antibodies) in plasma |
+| Blood group | Antigen on red cells | Agglutinin (antibody) in serum |
 |---|---|---|
-| A | A | Anti-B |
-| B | B | Anti-A |
-| AB | A and B | None (universal recipient for red cells) |
-| O | None (H only) | Anti-A and anti-B (universal donor for red cells) |
-| Rh-positive | D (± C, E) | No anti-D |
-| Rh-negative | No D | No natural anti-D; immune anti-D (IgG) develops after exposure to Rh-positive cells |
+| **A** | A | Anti-B |
+| **B** | B | Anti-A |
+| **AB** | A and B | Neither anti-A nor anti-B |
+| **O** | Neither A nor B | Anti-A and anti-B |
+| **Rh positive** | D antigen present | No naturally occurring anti-D |
+| **Rh negative** | D antigen absent | Anti-D formed only after exposure to D-positive red cells, by transfusion or fetal red cells in pregnancy |
 
-The natural anti-A and anti-B antibodies are chiefly IgM, preformed (probably induced by environmental polysaccharide antigens), able to fix complement and cause rapid intravascular haemolysis when ABO-incompatible blood is transfused. Anti-D is IgG, crosses the placenta, and causes Rh haemolytic disease of the newborn.
-
+The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is an immune antibody, mainly IgG.
 
 ## What do you mean by cross matching?
 
