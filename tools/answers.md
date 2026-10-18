@@ -8382,108 +8382,102 @@ The cause is loss of intrinsic factor. After gastrectomy (total or, more slowly,
 
 ## Define haemolytic anaemia.
 
-Haemolytic anaemia is an anaemia caused by premature destruction of red cells, with a shortened red cell lifespan of less than the normal 120 days, which the marrow cannot fully compensate by increased erythropoiesis.
+Haemolytic anaemias are the result of extravascular or intravascular haemolysis. They share the following features:
 
-Haemolytic anaemias share three features: a red cell life span shorter than 120 days; elevated erythropoietin levels with a compensatory increase in erythropoiesis, seen as reticulocytosis and erythroid hyperplasia of the marrow; and accumulation of the products of haemoglobin degradation. Destruction may be extravascular, within macrophages of the spleen, liver and marrow (the great majority), or intravascular, within the circulation, and the two differ in their clinical and laboratory features. Anaemia develops when the rate of destruction exceeds the marrow's capacity to compensate, which can be up to six to eight times the normal rate; when compensation is complete, haemolysis may occur without anaemia (compensated haemolytic state).
-
+- A shortened red cell life span below the normal 120 days.
+- Elevated erythropoietin levels and a compensatory increase in erythropoiesis.
+- Accumulation of haemoglobin degradation products created during the process of red cell haemolysis.
 
 ## What do you mean by premature destruction of RBC?
 
-Premature destruction of red cells means the removal of red cells from the circulation before the end of their normal lifespan of 120 days, by phagocytosis (extravascular) or lysis in the circulation (intravascular).
+Premature destruction of red cells is the removal of red cells before the normal life span of 120 days. It occurs in two ways:
 
-Normally, senescent red cells are removed by macrophages, triggered by age-dependent changes in red cell surface proteins. In haemolytic states, red cells are removed earlier because they are less deformable (spherocytes, sickled cells, cells with Heinz bodies or antibody coating) and cannot pass through the splenic cords into the sinusoids, so that they are sequestered and phagocytosed; or because they are directly lysed in the circulation by complement (the membrane attack complex, as in PNH and ABO-incompatible transfusion), mechanical injury (prosthetic valves, microangiopathy), parasites (falciparum malaria) or toxins (clostridial lecithinase). In hereditary spherocytosis, for example, the lifespan is shortened to 10 to 20 days on average.
-
+- **Extravascular haemolysis:** in the great majority of haemolytic anaemias the premature destruction occurs within phagocytes. It is usually caused by alterations that make red cells less deformable, so that they are sequestered and phagocytosed by macrophages in the splenic cords. If persistent, it leads to hyperplasia of phagocytes and splenomegaly.
+- **Intravascular haemolysis:** less common; caused by mechanical injury, complement fixation, intracellular parasites (for example falciparum malaria) or exogenous toxic factors.
 
 ## Outline classification of haemolytic anaemia.
 
-Haemolytic anaemias are classified as inherited or acquired, or by the site of the defect into intracorpuscular (intrinsic to the red cell) and extracorpuscular (extrinsic) causes.
-
-| Category | Examples |
+| Mechanism | Examples |
 |---|---|
-| **Inherited (intracorpuscular)** | Membrane defects: hereditary spherocytosis, hereditary elliptocytosis. Enzyme deficiencies: G6PD deficiency (hexose monophosphate shunt), pyruvate kinase deficiency (glycolytic pathway). Haemoglobin abnormalities: thalassaemia syndromes (deficient globin synthesis); sickle cell disease, unstable haemoglobins (structural abnormalities) |
-| **Acquired intracorpuscular** | Paroxysmal nocturnal haemoglobinuria (PIGA mutation, deficiency of GPI-linked complement regulators) |
-| **Acquired extracorpuscular** | Antibody-mediated: autoimmune haemolytic anaemia (warm and cold), drug-induced, alloimmune (haemolytic disease of the newborn, transfusion reactions). Mechanical trauma: microangiopathic haemolytic anaemia (DIC, TTP, HUS), cardiac valve haemolysis, march haemoglobinuria. Infections: malaria, babesiosis, clostridial sepsis. Toxic or chemical: snake venom, lead, copper. Membrane lipid abnormalities: abetalipoproteinaemia, severe liver disease. Sequestration: hypersplenism |
-
+| **Inherited genetic defects** | |
+| Red cell membrane disorders | Hereditary spherocytosis, hereditary elliptocytosis |
+| Hexose monophosphate shunt enzyme deficiencies | G6PD deficiency, glutathione synthetase deficiency |
+| Glycolytic enzyme deficiencies | Pyruvate kinase deficiency, hexokinase deficiency |
+| Deficient globin synthesis | Thalassaemia syndromes |
+| Structurally abnormal globins (haemoglobinopathies) | Sickle cell disease, unstable haemoglobins |
+| **Acquired genetic defect** | |
+| Deficiency of phosphatidylinositol-linked glycoproteins | Paroxysmal nocturnal haemoglobinuria |
+| **Antibody-mediated destruction** | Haemolytic disease of the newborn (Rh disease), transfusion reactions, drug-induced, autoimmune disorders |
+| **Mechanical trauma** | |
+| Microangiopathic haemolytic anaemias | Haemolytic uraemic syndrome, disseminated intravascular coagulation, thrombotic thrombocytopenic purpura |
+| Cardiac traumatic haemolysis | Defective cardiac valves |
+| Repetitive physical trauma | Bongo drumming, marathon running, karate chopping |
+| **Infections of red cells** | Malaria, babesiosis |
+| **Toxic or chemical injury** | Clostridial sepsis, snake venom, lead poisoning |
+| **Membrane lipid abnormalities** | Abetalipoproteinaemia, severe hepatocellular liver disease |
+| **Sequestration** | Hypersplenism |
 
 ## Common examples of congenital haemolytic anaemias.
 
-The common congenital haemolytic anaemias are hereditary spherocytosis, G6PD deficiency, pyruvate kinase deficiency, thalassaemia and sickle cell disease.
-
-They fall into three groups by defect: membrane (hereditary spherocytosis, hereditary elliptocytosis, hereditary stomatocytosis); enzyme (G6PD deficiency in the hexose monophosphate shunt and pyruvate kinase deficiency in glycolysis); and haemoglobin (sickle cell disease and other haemoglobinopathies such as HbC, HbE and unstable haemoglobins, and the thalassaemia syndromes). In Bangladesh and the Indian subcontinent, β-thalassaemia and HbE-β-thalassaemia are the most common, followed by G6PD deficiency and hereditary spherocytosis; sickle cell disease is much less common than in Africa.
-
+1. **Red cell membrane disorders:** hereditary spherocytosis, hereditary elliptocytosis.
+2. **Red cell enzyme deficiencies:** G6PD deficiency and glutathione synthetase deficiency (hexose monophosphate shunt); pyruvate kinase deficiency and hexokinase deficiency (glycolytic enzymes).
+3. **Haemoglobin abnormalities:** thalassaemia syndromes (deficient globin synthesis); sickle cell disease and unstable haemoglobins (structurally abnormal globins).
 
 ## Haemolytic anaemias due to extracorpuscular defect.
 
-Extracorpuscular haemolytic anaemias are those in which the red cells are normal but are destroyed by an abnormality outside the cell, such as antibodies, mechanical injury, infections, toxins or hypersplenism.
+The textbook does not use the term; the causes in its classification that act on the red cell from outside are:
 
-1. **Immune:** autoimmune haemolytic anaemia (warm IgG, cold agglutinin IgM, paroxysmal cold haemoglobinuria); drug-induced (penicillin and cephalosporins as haptens, α-methyldopa as tolerance-breaking); alloimmune (haemolytic disease of the newborn, incompatible blood transfusion).
-2. **Mechanical or traumatic:** microangiopathic haemolytic anaemia in DIC, TTP, HUS, malignant hypertension and disseminated cancer; prosthetic or damaged cardiac valves; march haemoglobinuria (repetitive trauma such as marathon running or bongo drumming).
-3. **Infections:** malaria, babesiosis, bartonellosis, clostridial sepsis (lecithinase digests the membrane).
-4. **Chemical and physical agents:** snake venoms, lead, copper (Wilson disease), oxidant drugs and chemicals (in normal cells at high doses), burns, osmotic lysis from hypotonic fluids.
-5. **Hypersplenism:** sequestration and destruction in the enlarged spleen.
-6. **Membrane lipid abnormalities** secondary to liver disease (spur cell anaemia) and abetalipoproteinaemia.
-
+1. **Antibody-mediated destruction (immunohaemolytic anaemia):** warm antibody type (IgG), cold agglutinin type (IgM) and cold haemolysin type (IgG); also haemolytic disease of the newborn (Rh disease), transfusion reactions and drug-induced haemolysis.
+2. **Mechanical trauma:** microangiopathic haemolytic anaemia (disseminated intravascular coagulation, thrombotic thrombocytopenic purpura, haemolytic uraemic syndrome), cardiac valve prostheses, and repetitive physical trauma.
+3. **Infections of red cells:** malaria, babesiosis.
+4. **Toxic or chemical injury:** clostridial sepsis, snake venom, lead poisoning.
+5. **Membrane lipid abnormalities:** abetalipoproteinaemia, severe hepatocellular liver disease.
+6. **Sequestration:** hypersplenism.
 
 ## Why does jaundice occur in haemolytic anaemia?
 
-Jaundice occurs because the increased breakdown of red cells releases more haem, which mononuclear phagocytes convert to unconjugated bilirubin faster than the liver can conjugate and excrete it, producing an acholuric (unconjugated) hyperbilirubinaemia.
-
-Haem from phagocytosed or lysed red cells is metabolised in macrophages (and, in intravascular haemolysis, from haemoglobin–haptoglobin complexes) to biliverdin and then unconjugated bilirubin. The excess unconjugated bilirubin, bound to albumin, is not water soluble and therefore is not excreted in the urine, which explains why the jaundice is "acholuric". When the liver is normal, its reserve capacity prevents severe jaundice (usually the bilirubin is below 4 to 5 mg/dL), and the degree depends on the functional capacity of the liver and the rate of haemolysis. The excess bilirubin excreted into bile leads to increased urinary and faecal urobilinogen and stercobilin (dark stools), and to pigment gallstones. In neonates, the immature hepatic conjugation can cause severe jaundice (kernicterus) in haemolytic disease of the newborn.
-
+- Haem groups derived from haemoglobin are metabolised to **bilirubin** within mononuclear phagocytes, leading to jaundice.
+- In all types of uncomplicated haemolytic anaemia the excess serum bilirubin is **unconjugated**.
+- The level of hyperbilirubinaemia depends on the functional capacity of the liver and the rate of haemolysis. When the liver is normal, jaundice is rarely severe.
+- Excessive bilirubin excreted by the liver into the biliary tract often leads to the formation of **pigment gallstones** derived from haem.
 
 ## Evidence of increased haemoglobin breakdown.
 
-The evidence of increased haemoglobin breakdown includes unconjugated hyperbilirubinaemia and jaundice, raised urinary urobilinogen and faecal stercobilinogen, reduced serum haptoglobin, raised LDH, and, in intravascular haemolysis, haemoglobinaemia, haemoglobinuria and haemosiderinuria.
-
-- **Serum:** raised unconjugated bilirubin; low or absent haptoglobin (a₂-globulin that binds free haemoglobin and is consumed); raised lactate dehydrogenase; free plasma haemoglobin and methaemalbumin in intravascular haemolysis.
-- **Urine:** increased urobilinogen (urine bilirubin is absent, since unconjugated bilirubin is not filtered); haemoglobinuria and haemosiderinuria in intravascular haemolysis, since renal tubular cells reabsorb haemoglobin and shed iron-laden cells.
-- **Stool:** increased stercobilinogen (dark stools).
-- **Tissue changes:** haemosiderosis of the spleen, liver and marrow, and pigment (bilirubinate) gallstones in chronic haemolysis.
-- **Red cell survival:** reduced survival on ⁵¹Cr labelling studies, with splenic sequestration, rarely performed now.
-
+1. **Extravascular haemolysis**
+   - Jaundice from unconjugated hyperbilirubinaemia.
+   - Variable decrease in plasma **haptoglobin**, because some haemoglobin escapes from phagocytes.
+   - Haemosiderosis: accumulation of haemosiderin in the spleen, liver and bone marrow.
+   - Pigment gallstones (cholelithiasis) with chronic haemolysis.
+2. **Intravascular haemolysis**
+   - Haemoglobinaemia and **haemoglobinuria**.
+   - Haemosiderinuria; iron released from haemoglobin accumulates within renal tubular cells, giving renal haemosiderosis.
+   - Free haemoglobin is bound by haptoglobin; as serum haptoglobin is depleted, free haemoglobin oxidises to brown methaemoglobin, which gives the urine a red-brown colour.
+   - Jaundice, as bilirubin is formed in mononuclear phagocytes from the haemoglobin-haptoglobin complexes.
 
 ## Evidence of compensatory erythroid hyperplasia.
 
-The evidence of compensatory erythroid hyperplasia is reticulocytosis and polychromasia in the peripheral blood, nucleated red cells in the film, and a hypercellular marrow with erythroid hyperplasia and a reversed myeloid-to-erythroid ratio.
-
-Anaemia and tissue hypoxia stimulate erythropoietin production, which expands the erythroid progenitor pool. The consequences are:
-
-1. **Peripheral blood:** reticulocytosis (often 5% to 20% or more), polychromasia and macrocytosis (reticulocytes are larger than mature cells), nucleated red cells, and sometimes mild leukocytosis and thrombocytosis.
-2. **Bone marrow:** increased numbers of erythroid precursors (normoblasts), with the myeloid-to-erythroid ratio falling from the normal 2:1 to 4:1 to 1:1 or reversed; yellow marrow is converted to red marrow.
-3. **Skeletal changes** when the marrow expansion is massive and long-standing (thalassaemia major, sickle cell disease): widening of the marrow spaces, thinning of the cortex, "crew-cut" skull on radiographs and frontal bossing.
-4. **Extramedullary haemopoiesis** in the liver, spleen and lymph nodes, with hepatosplenomegaly.
-5. **Increased folate consumption,** which can precipitate megaloblastic anaemia in chronic haemolysis.
-
+- Anaemia and lowered tissue oxygen tension trigger the production of **erythropoietin**, which stimulates erythroid differentiation.
+- Bone marrow shows increased numbers of **erythroid precursors** (normoblasts).
+- Peripheral blood shows a prominent **reticulocytosis**.
+- If the anaemia is severe, **extramedullary haematopoiesis** appears in the liver, spleen and lymph nodes.
+- In sickle cell disease and thalassaemia major, marked marrow expansion leads to bone resorption and secondary new bone formation, giving prominent cheekbones and a "crewcut" appearance of the skull on radiographs.
 
 ## Evidence of haemolysis in PBF.
 
-The peripheral blood film in haemolysis shows polychromasia and reticulocytosis reflecting increased marrow activity, along with nucleated red cells and abnormal red cell shapes specific to the cause, such as spherocytes, sickle cells, schistocytes, bite cells and target cells.
-
-Features of increased erythropoiesis (common to all). Polychromatic macrocytes (reticulocytes, confirmed with supravital stain), nucleated red cells (normoblasts), basophilic stippling, Howell-Jolly bodies and anisocytosis. A mild neutrophil leukocytosis and thrombocytosis may be present.
-
-Features pointing to the cause.
-
-- Spherocytes (small, dark, without central pallor): hereditary spherocytosis, autoimmune haemolytic anaemia.
-- Sickle cells and target cells: sickle cell disease; target cells and teardrop cells in thalassaemia.
-- Schistocytes (fragmented red cells, helmet and triangular cells) and burr cells: microangiopathic haemolysis and mechanical valves.
-- Bite cells and blister cells, with Heinz bodies on supravital staining: G6PD deficiency.
-- Red cell agglutination: cold agglutinin disease; and spherocytes with positive Coombs test in warm AIHA.
-- Parasites: malaria and babesia.
-- Elliptocytes and ovalocytes: hereditary elliptocytosis.
-
+1. **Reticulocytosis**, with larger red cells that show blue-red polychromatophilic cytoplasm.
+2. Anisocytosis and poikilocytosis, with changes specific to the cause:
+   - **Spherocytes:** small, dark-staining red cells lacking central pallor, in hereditary spherocytosis and autoimmune haemolytic anaemia.
+   - **Heinz bodies and bite cells**, in G6PD deficiency.
+   - **Irreversibly sickled cells** and target cells, in sickle cell disease.
+   - **Target cells**, basophilic stippling and fragmented red cells, in thalassaemia.
+   - **Schistocytes (fragmented red cells)**, burr cells, helmet cells and triangle cells, in microangiopathic haemolytic anaemia and with defective cardiac valves.
+3. **Howell-Jolly bodies** (small nuclear remnants) when the spleen is absent or nonfunctional.
 
 ## Conditions where nucleated RBCs are seen in PBF.
 
-Nucleated red cells appear in the peripheral blood when the marrow is under intense erythropoietic stress or is distorted by disease, and so they are seen in severe haemolytic anaemias, thalassaemia major, marrow infiltration and myelofibrosis.
-
-1. **Haemolytic anaemias:** especially haemolytic disease of the newborn, sickle cell disease, thalassaemia major (poorly haemoglobinised nucleated cells from "stress" erythropoiesis and extramedullary sites) and autoimmune haemolytic anaemia.
-2. **Severe haemorrhage** and other states of hypoxia.
-3. **Myelophthisic anaemia and myelofibrosis:** marrow infiltration by tumour, granulomas or fibrosis releases nucleated red cells and immature granulocytes (leukoerythroblastosis) with teardrop cells.
-4. **Leukaemias and myeloproliferative neoplasms,** and myelodysplastic neoplasms.
-5. **Severe megaloblastic anaemia.**
-6. **Extramedullary haemopoiesis.**
-7. **After splenectomy,** and in normal newborns for the first few days of life.
-
+1. **Severe megaloblastic anaemia:** nucleated red cell progenitors occasionally appear in the circulating blood when the anaemia is severe.
+2. **Thalassaemia major:** poorly haemoglobinised normoblasts, from "stress" erythropoiesis and abnormal release of red cell precursors from sites of extramedullary haematopoiesis.
+3. **Myelophthisic anaemia:** marrow replaced by metastatic cancer, granulomatous disease or the fibrosis of the spent phase of myeloproliferative neoplasms; nucleated erythroid precursors and immature granulocytic forms are released prematurely (**leukoerythroblastosis**), with teardrop-shaped red cells.
 
 ## What is autoimmune haemolytic anaemia (AIHA)?
 
