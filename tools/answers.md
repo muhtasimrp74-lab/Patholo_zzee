@@ -4416,74 +4416,49 @@ Once thought to be a developmental malformation, most hamartomas have clonal chr
 
 ## Define neoplasia with example.
 
-Neoplasia means "new growth", and a neoplasm is defined as a disorder of cell growth that is triggered by acquired or, less commonly, inherited mutations affecting a single cell and its clonal progeny. These mutations alter the function of genes that regulate proliferation, survival, differentiation and DNA repair, and they give the neoplastic cells a growth advantage that results in excessive proliferation, independent of physiologic growth signals and controls. In Willis's classic words, a neoplasm is an abnormal mass of tissue whose growth exceeds and is uncoordinated with that of normal tissues and persists in the same excessive manner after cessation of the stimulus that evoked the change.
+**Neoplasia** means "new growth", and the collection of cells and stroma composing new growths are referred to as **neoplasms**.
 
-A neoplasm consists of the proliferating neoplastic cells (the parenchyma) and a supporting stroma of connective tissue, vessels and immune cells. Neoplasms are either benign, remaining localised and amenable to surgical removal, or malignant, with the capacity to invade surrounding tissues and metastasise.
+In the modern era, a neoplasm is defined as a disorder of **cell growth** that is triggered by **acquired** or, less commonly, **inherited mutations** affecting a single cell and its **clonal progeny**. These causative mutations alter the function of genes and give the neoplastic cells a growth advantage, resulting in excessive proliferation that is independent of physiologic growth signals and controls.
 
-Examples. A **lipoma** is a benign neoplasm of fat cells that closely resembles normal adipose tissue, grows as a discrete encapsulated mass and does not metastasise. An **adenoma** of the colon is a benign epithelial neoplasm that forms glandular structures and often presents as a polyp. A **colonic adenocarcinoma** is the corresponding malignant neoplasm, in which irregular glands invade the muscular layer of the colon wall and may metastasise to regional lymph nodes and the liver.
+**Examples.** A follicular adenoma of the thyroid and a lipoma are benign neoplasms. An adenocarcinoma of the colon is a malignant neoplasm.
 
 ## What are the characteristics of a malignant tumour/cell?
 
-Malignant tumours differ from benign ones in the structure and behaviour of their cells, in their pattern of growth and in their capacity to invade and metastasise. Their characteristics can be considered under the following headings.
+**Characteristics of a malignant tumour.**
 
-**1. Loss of differentiation (anaplasia).** Malignant cells show a variable lack of differentiation; the greater the anaplasia the more poorly the tumour resembles its tissue of origin and the more aggressive it is likely to be. In well-differentiated cancers, such as a well-differentiated thyroid adenocarcinoma that forms normal-looking follicles, the features may be subtle, and malignancy is then recognised by invasion and metastasis. Highly anaplastic tumours show the following cytologic changes:
+1. **Poor differentiation (anaplasia).** Malignant neoplasms show some lack of differentiation, and their structure is often deranged. Highly anaplastic, poorly differentiated tumours are highly predictive of malignant behaviour.
+2. **Growth.** Growth is erratic, from slow to rapid, and mitotic figures may be numerous and abnormal. Many rapidly growing cancers develop areas of ischaemic necrosis because the vascular stroma is insufficient.
+3. **Local invasion.** Malignant tumours are poorly demarcated from the surrounding normal tissue and lack well-defined cleavage planes. They infiltrate surrounding tissue. Next to metastasis, invasiveness is the most reliable discriminator of malignancy.
+4. **Metastasis.** Spread to physically discontinuous sites unequivocally marks a tumour as malignant. It is more likely with large undifferentiated primary tumours.
+5. **Function.** Highly anaplastic tumours lose the specialised functions of their tissue of origin, but may acquire unexpected functions, for example the production of fetal proteins or hormones (paraneoplastic syndromes).
 
-- Pleomorphism: variation in the size and shape of cells and nuclei within the same tumour, ranging from small undifferentiated cells to tumour giant cells many times larger than their neighbours, some with a single huge nucleus and others with multiple hyperchromatic nuclei.
-- Abnormal nuclear morphology: nuclei are disproportionately large, so that the nuclear-to-cytoplasmic ratio approaches 1:1 instead of the normal 1:4 to 1:6; the nuclear shape is irregular, the chromatin is coarse and clumped along the nuclear membrane or hyperchromatic, and the nucleoli are abnormally large.
-- Mitoses: often numerous, reflecting rapid proliferation, and importantly atypical and bizarre, including tripolar or multipolar spindles.
-- Loss of polarity: cells lose their orientation to one another and to the basement membrane, and they grow in sheets or masses in a disorganised fashion.
-- Ischaemic necrosis: the vascular supply is often inadequate for the rapidly growing tumour, so that areas of necrosis (and haemorrhage) are common.
+**Characteristics of a malignant (anaplastic) cell.**
 
-**2. Altered function.** Well-differentiated cancers may retain the function of their parent cells (for example, keratin production by squamous carcinomas, bile production by hepatocellular carcinoma). Highly anaplastic tumours lose specialised function but may acquire new properties, such as the production of foetal proteins or ectopic hormones that give rise to paraneoplastic syndromes.
-
-**3. Growth.** The rate of growth is erratic and may be slow or rapid, and in general it correlates with the level of differentiation. Growth is progressive and autonomous, and the tumour continues to grow in an excessive manner. The rate of growth alone is not a reliable discriminator of malignancy, since many benign tumours, and some cancers, deviate from the rule.
-
-**4. Local invasion.** Cancers are usually poorly demarcated from surrounding tissue and lack a well-defined cleavage plane. Their cells infiltrate and destroy adjacent tissues and do not respect anatomic boundaries. A slowly growing cancer may be surrounded by a pseudocapsule, but careful histologic examination shows tumour cells infiltrating beyond it. Invasiveness makes complete surgical removal difficult and requires wide margins.
-
-**5. Metastasis.** The capacity to spread to physically discontinuous sites, by seeding of body cavities, lymphatics or blood vessels, unequivocally identifies a tumour as malignant. About 30% of newly diagnosed solid tumours already have metastases. Metastasis is more likely with large, undifferentiated, rapidly growing and aggressively invasive primaries.
-
-**6. Molecular characteristics.** The cells carry driver mutations and epigenetic changes that confer the hallmarks of cancer: self-sufficiency in growth signals, insensitivity to growth inhibitors, altered metabolism, evasion of apoptosis, limitless replicative potential, sustained angiogenesis, invasion and metastasis, and evasion of the host immune response. They are also genomically unstable and show genetic heterogeneity.
-
-**7. Effects on the host.** Malignant tumours cause local destruction, bleeding and infection, and also systemic effects such as cachexia and paraneoplastic syndromes. They usually recur after incomplete excision and may be fatal if untreated.
-
+- **Pleomorphism:** variation in cell size and shape, including tumour giant cells.
+- **Abnormal nuclei:** disproportionately large, with a nuclear to cytoplasmic ratio that may approach 1 to 1 (normal 1 to 4 or 1 to 6), irregular shape, coarsely clumped hyperchromatic chromatin and abnormally large nucleoli.
+- **Mitoses:** often many, and more important, atypical bizarre mitotic figures.
+- **Loss of polarity:** disorganised growth of cells.
 
 ## Mention the characteristics of a benign neoplasm.
 
-A benign neoplasm remains localised at its site of origin, has no capacity to invade or metastasise and can usually be cured by surgical excision. Its characteristics are as follows.
-
-1. **Differentiation.** Benign tumours are well differentiated, and their cells closely resemble the normal cells of origin. A lipoma, for example, may be almost indistinguishable from normal adipose tissue microscopically, and is recognised as a tumour only because it forms a discrete mass. Anaplasia is absent.
-2. **Cytology.** The nuclei are uniform and normal in size and shape, with a normal nuclear-to-cytoplasmic ratio. Mitoses are rare and, when present, are of normal configuration. There is no pleomorphism and no tumour giant cells.
-3. **Rate of growth.** Growth is usually slow and progressive; the tumour may come to a standstill or even regress.
-4. **Mode of growth.** The tumour grows as a cohesive, expansile mass that pushes aside the surrounding tissue. Because the expanding tumour compresses its surroundings, the stromal cells deposit a rim of compressed fibrous tissue, which forms a capsule. This tissue plane makes the tumour discrete, palpable, movable and easily removed. The exceptions include haemangiomas, which are often unencapsulated and permeate the tissues in which they arise.
-5. **Invasion and metastasis.** The tumour does not invade adjacent tissues and never metastasises.
-6. **Vascularity.** There is usually an adequate blood supply, so necrosis and haemorrhage are uncommon.
-7. **Function.** Benign tumours often retain the functions of their cell of origin, so that benign endocrine tumours may secrete hormones. A benign islet β-cell adenoma less than 1 cm in diameter may produce enough insulin to cause fatal hypoglycaemia.
-8. **Behaviour and prognosis.** Recurrence after complete excision is unusual and the prognosis is good. However, a benign tumour may cause serious morbidity or even death because of its location (as in the brain, or by compressing a vital structure such as the pituitary gland) or through hormone production, obstruction (such as intussusception in the gut), ulceration and bleeding. Most benign tumours transform rarely (leiomyoma, pleomorphic adenoma) or never (lipoma), but some, such as the colonic villous adenoma, progress to cancer in about half of untreated cases.
-
+1. **Well differentiated.** Benign tumours resemble the tissue of origin. The cells of a lipoma may closely resemble normal adipocytes, and only growth into a discrete mass discloses their neoplastic nature.
+2. **Mitoses** are usually rare and of normal configuration.
+3. **Slow growth.** Growth is usually progressive and slow, and may come to a standstill or regress.
+4. **Cohesive, expansile and localised.** They remain at the site of origin and do not invade or infiltrate surrounding normal tissue.
+5. **Capsule.** They usually develop a rim of compressed fibrous tissue, which makes the tumour discrete, readily palpable, movable (non-fixed) and easily removed by surgical excision. Exceptions exist, for example haemangiomas, which are often unencapsulated.
+6. **No metastasis.**
+7. **Retain function.** They often keep the functions of the cells of origin. Well-differentiated tumours of endocrine glands frequently secrete hormones.
 
 ## Give the differences between benign and malignant tumour.
 
-Distinguishing a benign from a malignant tumour is one of the most important decisions a pathologist makes, since nothing is more important to a patient with a tumour than being told that it is benign. The distinction rests on differentiation, local invasion and metastasis, and also on a range of cytologic and gross features.
-
-| Characteristic | Benign tumour | Malignant tumour |
+| Characteristic | Benign | Malignant |
 |---|---|---|
-| Differentiation | Well differentiated; structure often typical of the tissue of origin | Some lack of differentiation (anaplasia); structure often deranged |
-| Cytology | Uniform cells and nuclei; normal nuclear-to-cytoplasmic ratio | Pleomorphism; hyperchromatic, large nuclei; nuclear-to-cytoplasmic ratio approaching 1:1; prominent nucleoli; tumour giant cells |
-| Mitoses | Rare and normal in configuration | May be numerous and abnormal (atypical, tripolar) |
-| Rate of growth | Usually slow and progressive; may stop or regress | Erratic; slow to rapid |
-| Pattern of growth | Cohesive, expansile, well-demarcated mass | Locally invasive and infiltrating; poorly demarcated; may be misleadingly cohesive and expansile |
-| Capsule | Usually present (a true fibrous capsule) | Absent, or incomplete pseudocapsule that is breached by tumour cells |
-| Mobility on palpation | Freely movable | Often fixed to surrounding tissues |
-| Metastasis | Absent | Frequent; more likely with large, undifferentiated primary tumours |
-| Vascular supply, necrosis | Adequate; necrosis and haemorrhage uncommon | Often inadequate; ischaemic necrosis and haemorrhage common |
-| Function | Retained, may be excessive in endocrine tumours | May be lost, or new (ectopic) functions acquired |
-| Recurrence after excision | Unusual | Common, especially after incomplete excision |
-| Effect on host | Mostly local; may be harmful because of location or hormone secretion | Local destruction and systemic effects (cachexia, paraneoplastic syndromes); usually fatal if untreated |
-| Prognosis | Usually good | Poor unless detected early and treated |
-| Example | Leiomyoma of the uterus (well-circumscribed, whorled, encapsulated mass) | Leiomyosarcoma of the uterus (large, poorly demarcated, with haemorrhage and necrosis) |
-
-Of all these criteria, invasion and metastasis are the most reliable discriminators. Growth rate is not reliable, since there are many exceptions. Leukaemias and lymphomas are always considered malignant, because they arise from cells that normally circulate and are frequently disseminated at diagnosis.
-
+| Differentiation and anaplasia | Well differentiated; structure often typical of the tissue of origin | Some lack of differentiation (anaplasia); structure often deranged |
+| Rate of growth | Usually progressive and slow; may come to a standstill or regress; mitotic figures rare and normal | Erratic, slow to rapid; mitotic figures may be numerous and abnormal |
+| Local invasion | Usually cohesive, expansile, well-demarcated masses that do not invade or infiltrate surrounding normal tissues | Locally invasive, infiltrating surrounding tissue; sometimes misleadingly cohesive |
+| Metastasis | Absent | Frequent; more likely with large undifferentiated primary tumours |
+| Capsule | Circumscribed, with a capsule | Poorly circumscribed, no true capsule |
+| Function | More likely to retain functions of the cell of origin | May acquire unexpected functions |
 
 ## What do you mean by differentiation?
 
@@ -4539,55 +4514,31 @@ Carcinoma in situ may be seen in the:
 
 ## Mention the clinical importance of dysplasia.
 
-The clinical importance of dysplasia lies in its relationship to cancer and in the opportunity it provides for early intervention.
-
-1. **Precancerous lesion.** Dysplastic changes are often found adjacent to foci of invasive carcinoma, and in some situations, such as the uterine cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of invasive cancer. Dysplasia in Barrett oesophagus, in oral leukoplakia, in the bronchial epithelium of smokers, in the colon in inflammatory bowel disease and in adenomatous polyps carries a corresponding risk.
-2. **Molecular significance.** Mutations associated with full-blown cancer may be present even in mild dysplasias, so that dysplasia marks a field of epithelium in which carcinogenesis is already under way.
-3. **Reversibility.** Progression to cancer is not inevitable. With removal of the inciting cause, such as cessation of smoking or treatment of chronic irritation or infection, moderately severe dysplasia may regress completely. Even carcinoma in situ may persist for years before becoming invasive.
-4. **Basis of screening.** Cytologic smears can distinguish normal, dysplastic and malignant cells. The Papanicolaou smear detects cervical precursor lesions and early curable cancers, and the marked fall in cervical cancer deaths in highly resourced countries is attributed largely to this test.
-5. **Grading and management.** The grade of dysplasia guides management. Low-grade lesions may be followed by surveillance, whereas high-grade dysplasia and carcinoma in situ generally require excision or ablation, because the time interval for evolution of a full-blown cancer from an in situ lesion relates to the time required to accumulate the necessary mutations.
-6. **Surgical margins.** Residual dysplasia at a resection margin signals a field defect and a risk of recurrence.
-
-It should also be remembered that dysplasia often occurs in metaplastic epithelium, but not all metaplastic epithelium is dysplastic.
-
+1. **Dysplasia is a premalignant change.** Dysplastic changes are often found adjacent to foci of invasive carcinoma. In the cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of cancer.
+2. **Mutations** associated with full-blown cancer may be present even in "mild" dysplasia.
+3. **Progression to cancer is not inevitable.** With removal of the inciting causes, moderately severe dysplasia may be completely reversible.
+4. **Severe dysplasia** involving the full thickness of the epithelium without breaching the basement membrane is carcinoma in situ, which unless treated has a high probability of progression to invasive cancer. It may persist for years before it becomes invasive.
+5. **Detection.** The Pap smear enables detection of precursor lesions and early curable cancers of the cervix.
 
 ## Write down the features of dysplasia.
 
-The features of dysplasia may be grouped into cytologic and architectural changes.
+**Dysplasia** literally means "disordered growth". It is encountered principally in epithelial cells.
 
-**Cytologic features.**
-
-- Pleomorphism, with variation in the size and shape of cells and nuclei.
-- Enlarged, hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio, irregular nuclear contours, coarse chromatin and enlarged nucleoli.
-- Increased mitotic activity, with mitoses seen above the basal layer rather than being confined to it, and occasionally abnormal mitotic figures.
-
-**Architectural features.**
-
-- Disarray of the epithelium, with loss of the normal orderly maturation. In dysplastic squamous epithelium the progressive maturation of tall basal cells into flattened surface squames fails in part or entirely, so that the epithelium is replaced by basal-like cells with hyperchromatic nuclei.
-- Loss of polarity of the cells.
-
-**Other features.**
-
-- The basement membrane is intact and there is no stromal invasion.
-- The severity is graded by the proportion of the epithelium involved, the full-thickness form being carcinoma in situ.
-- The process is potentially reversible when the cause is removed, but it may progress to invasive cancer.
-- Dysplasia occurs predominantly in epithelia and frequently, though not invariably, in metaplastic epithelium.
-
+- **Pleomorphism** of the cells.
+- **Large hyperchromatic nuclei** with a high nuclear to cytoplasmic ratio.
+- **Architectural disarray** of the epithelial surface, with loss of orderly differentiation. In dysplastic squamous epithelium the normal maturation of tall basal cells to flattened squames fails in part or entirely, and the epithelium is replaced by basal-like cells with hyperchromatic nuclei.
+- **Increased mitotic figures**, seen throughout the dysplastic epithelium rather than only in the basal layer.
 
 ## How does dysplasia differ from anaplasia?
 
-Both terms describe disturbances of differentiation, and the cytologic features overlap, since dysplastic cells may show pleomorphism, hyperchromasia and a high nuclear-to-cytoplasmic ratio. They differ in meaning and in significance.
-
 | Feature | Dysplasia | Anaplasia |
 |---|---|---|
-| Meaning | Disordered growth, with abnormal cell appearance and loss of orderly maturation | Lack of differentiation of the tumour cells |
-| Nature | A premalignant alteration of epithelium | A feature of malignant neoplasms |
-| Tissue | Principally epithelial | Seen in any malignant tumour (carcinoma, sarcoma, lymphoma) |
-| Architecture | Epithelial layering is disordered, but the epithelium is still recognizable | Orderly arrangement is lost, and the cells grow in sheets without polarity |
-| Invasion | Absent; the basement membrane is intact | Usually accompanied by invasion and potential metastasis |
-| Reversibility | May regress when the inciting cause is removed (mild and moderate forms) | Irreversible, since it is a property of the cancer cell |
-| Extent of atypia | Graded mild to severe; severe full-thickness change is carcinoma in situ | Graded from well to poorly differentiated; most pronounced in undifferentiated cancers |
-| Significance | Marks an increased risk of cancer and is used for screening | Predicts aggressive behaviour and forms the basis of grading |
+| Meaning | Disordered growth | Lack of differentiation |
+| Where found | Principally epithelial cells | Malignant tumour cells |
+| Nature | A premalignant change | A feature highly predictive of malignant behaviour |
+| Cell changes | Pleomorphism, large hyperchromatic nuclei, high nuclear to cytoplasmic ratio, architectural disarray, increased mitoses | Pleomorphism, abnormal nuclei, abnormal mitoses, loss of polarity, tumour giant cells |
+| Reversibility | Moderately severe dysplasia may be completely reversible | Not reversible |
+| Invasion | Basement membrane intact (carcinoma in situ when full thickness) | Associated with invasion and metastasis |
 
 ## Define metastasis (short note).
 
@@ -4655,28 +4606,31 @@ Invasion of the extracellular matrix (ECM) initiates the metastatic cascade. Car
 
 ## How does a malignant tumour spread through the hematogenous route?
 
-Haematogenous spread is typical of sarcomas but is also common with carcinomas, and its mechanism is the metastatic cascade, in which the tumour cells go through a series of sequential steps, each of which they must complete successfully.
+**Hematogenous spread** is typical of **sarcomas** but is also seen with carcinomas.
 
-**1. Invasion of the extracellular matrix.** The tumour cells loosen their intercellular attachments (loss of E-cadherin, EMT), degrade the basement membrane and interstitial matrix with matrix metalloproteinases and other proteases, attach to remodeled matrix through altered integrins, and migrate. Penetration of the thin-walled small veins at the primary site, and of capillaries and lymphatics, gives access to the circulation (intravasation). Veins are involved more often than arteries because of their thin walls.
-
-**2. Survival in the circulation.** Circulating tumour cells are vulnerable to shear stress, to anoikis and to attack by innate and adaptive immune cells. The cells that succeed travel preferentially as multicellular aggregates, whose formation is promoted by homotypic adhesion and by interactions with platelets. Platelets shield the cells, and tumour-derived anionic substances such as polyphosphate activate factor XII, causing fibrin deposition that stabilises the tumour emboli. Aggregates are more likely to contain cells with stem-like properties, which are needed to establish a metastasis.
-
-**3. Arrest and extravasation.** The cells commonly lodge in the first capillary bed they meet, which explains the frequency of hepatic and pulmonary metastases, and vertebral metastasis from thyroid and prostatic carcinomas through the paravertebral plexus. Extravasation involves transmigration between endothelial cells and passage through the basement membrane, using adhesion molecules (integrins, CD44), proteolytic enzymes and chemokines supplied by the tumour cells and by monocytes and neutrophils.
-
-**4. Homing and colonisation.** Where metastases finally form depends on the location and vascular drainage of the primary tumour, on tropisms of the tumour cells for particular tissues (adhesion molecules and chemokine receptors matched to ligands in the target organ, and the Paget "seed and soil" principle), and on escape from tumour dormancy. The metastatic cells must modify the new microenvironment: breast cancer cells in bone secrete parathyroid hormone–related protein, which acts through osteoblasts and RANKL to activate osteoclasts, and the growth factors released from the degraded bone support the tumour cells.
-
-The process is highly inefficient: many cells enter the bloodstream daily, but very few produce metastases. The clinical sites most frequently involved are the liver, lungs, bone and brain.
-
+- Histologic evidence of penetration of small vessels at the site of the primary tumour is an ominous feature. The involved vessels are usually small veins, because arteries, with thicker walls, are more resistant to penetration.
+- Arterial spread may occur when tumour cells pass through pulmonary capillary beds or pulmonary arteriovenous shunts, or when cancers in the lung give rise to tumour emboli.
+- With venous invasion, tumour cells often come to rest in the first capillary bed they encounter. Metastases therefore most commonly affect the **liver** and **lungs**, because their capillary beds filter blood from the portal vein and from the vena cavae.
+- Cancers near the vertebral column, such as carcinomas of the thyroid and prostate, embolise through the paravertebral plexus and produce vertebral metastases.
+- Some cancers grow within large veins: **renal cell carcinoma** grows up the renal vein and inferior vena cava, and **hepatocellular carcinoma** grows into portal and hepatic veins.
+- Patterns of spread are often cancer specific, and cannot be wholly explained by the site of the primary tumour and its venous drainage.
 
 ## Describe in short the mechanism of invasion and metastasis.
 
-Invasion and metastasis are the major causes of cancer-related morbidity and mortality. The metastatic cascade is considered in two phases.
+The metastatic cascade has two phases: **invasion of the extracellular matrix (ECM)**, and **vascular dissemination, tissue homing and colonisation**.
 
-**Phase 1: invasion of the extracellular matrix.** To metastasise, a carcinoma cell must breach the underlying basement membrane, traverse the interstitial connective tissue and penetrate the vascular basement membrane. This takes place in four steps. First, tumour cells detach from one another because of reduced expression of adhesion molecules, especially E-cadherin, a process often achieved through epithelial–mesenchymal transition driven by SNAIL and TWIST. Second, proteolytic enzymes secreted by the tumour cells and by stromal cells (matrix metalloproteinases, cathepsins, urokinase plasminogen activator) degrade the basement membrane and interstitial matrix, and release matrix-bound growth factors and chemotactic fragments. Third, the cells attach to remodeled matrix components through altered integrins, and resist anoikis. Fourth, they migrate under the influence of autocrine motility factors, matrix breakdown products and stromal factors such as hepatocyte growth factor, and enter the vascular space.
+**1. Invasion of the ECM** occurs in four steps.
 
-**Phase 2: vascular dissemination, homing and colonisation.** In the circulation, tumour cells, often as emboli aggregated with platelets, must survive shear forces and immune attack. They arrest in capillary beds, extravasate, and colonise the new site. The site of metastasis is determined by the anatomy of venous and lymphatic drainage, by tissue tropism related to adhesion molecules and chemokine receptors, and by the compatibility of the tissue as "soil" for the tumour "seed". Many metastatic cells then remain dormant before they grow, and successful colonisation requires them to alter the resident stromal cells so that the site becomes habitable.
+1. Loosening of tumour cell to tumour cell contacts, through loss of **E-cadherin**.
+2. Degradation of the ECM by proteolytic enzymes such as **matrix metalloproteinases** and cathepsins.
+3. Attachment to novel ECM components.
+4. Migration of tumour cells.
 
-The process is inefficient and complex, and no single "metastasis gene" has been identified; the metastatic phenotype probably requires the accumulation of multiple complementary genetic and epigenetic alterations.
+**2. Vascular dissemination, homing and colonisation.**
+
+- Tumour cells in the circulation are vulnerable to shear stress, anoikis and immune defences. Those that establish metastases are more likely to travel as multicellular aggregates, clumped with platelets.
+- Where cells arrest depends on the location and vascular drainage of the primary tumour, the tropism of tumour cells for specific tissues (adhesion molecules, chemokine receptors, the seed-soil hypothesis), and escape from tumour dormancy.
+- At a distant site, tumour cells extravasate by transmigration between endothelial cells and egress through the basement membrane. They then colonise by secreting factors that make the stroma habitable.
 
 ## Fundamental cellular changes considered hallmarks of cancer.
 
@@ -4838,176 +4792,141 @@ Further proliferation induces additional mutations and the emergence of a malign
 
 ## What do you mean by oncogene?
 
-Oncogenes are mutated or overexpressed versions of normal cellular genes, called proto-oncogenes, that cause excessive cell growth even in the absence of growth factors and other growth-promoting external cues. Proto-oncogenes are the normal genes whose products promote cell proliferation, and they may encode growth factors, growth factor receptors, signal transducers, transcription factors or cell cycle components. The protein encoded by an oncogene is called an oncoprotein. It resembles the normal product in function, but it is constitutively active and resistant to control by external signals, so that the cell is freed from its normal dependence on growth factors and from normal checkpoints. Because the mutations produce a gain of function, oncogenes act dominantly: a single mutant allele is enough to transform the cell despite the presence of a normal copy.
+**Oncogenes** are mutated genes that cause excessive cell growth, even in the absence of growth factors and other growth-promoting external cues.
 
-Oncogenes were first discovered in the genomes of transforming retroviruses (viral oncogenes), which had captured and altered host proto-oncogenes. Proto-oncogenes are converted into oncogenes by several mechanisms: point mutations (RAS, EGFR, BRAF), chromosomal translocations that either substitute a promoter or enhancer and cause overexpression (MYC in Burkitt lymphoma) or create a fusion gene encoding a chimeric oncoprotein (BCR::ABL in chronic myeloid leukaemia), gene amplification (ERBB2 in breast cancer, NMYC in neuroblastoma), and increased expression driven by upstream pathways.
+- Oncogenes are mutated or overexpressed versions of normal cellular genes, called **proto-oncogenes**.
+- Proto-oncogenes may encode growth factors, growth factor receptors, signal transducers, transcription factors or cell cycle components.
+- Oncogenes usually encode **oncoproteins** with functions like those of the normal counterparts, but they are **constitutively active**, so cells are freed from normal checkpoints and proliferate excessively.
+- Mutations are gain of function, so one mutant allele is enough and oncogenes are dominant.
 
-| Category | Example | Tumour |
+| Oncogene | Mode of activation | Associated tumour |
 |---|---|---|
-| Growth factors | PDGFB, TGFA, FGF3 | Astrocytoma, sarcoma, breast, stomach |
-| Growth factor receptors | ERBB1 (EGFR), ERBB2 (HER2), KIT, RET, ALK | Lung adenocarcinoma, breast carcinoma, GIST, MEN2, neuroblastoma |
-| Signal transducers | RAS, BRAF, ABL, JAK2, PI3K | Pancreatic, colon cancer, melanoma, CML, polycythaemia vera |
-| Transcription factors | MYC | Burkitt lymphoma |
-| Cell cycle regulators | Cyclin D1, CDK4 | Mantle cell lymphoma, glioblastoma |
-
-Oncogenes are clinically important because tumour cells may become "addicted" to the oncoprotein, which therefore makes an effective drug target, as in imatinib for BCR::ABL, trastuzumab for HER2, and inhibitors of EGFR, ALK and BRAF.
-
+| ERBB1 (EGFR) | Mutation | Adenocarcinoma of lung |
+| ERBB2 (HER2) | Amplification | Breast carcinoma |
+| KRAS | Point mutation | Colon, lung and pancreatic tumours |
+| BRAF | Point mutation | Melanomas, leukaemias, colon carcinoma |
+| ABL | Translocation (BCR-ABL) | Chronic myeloid leukaemia, acute lymphoblastic leukaemia |
+| MYC | Translocation | Burkitt lymphoma |
+| NMYC | Amplification | Neuroblastoma |
 
 ## How does a cell become malignant?
 
-A cell becomes malignant through the stepwise accumulation of genetic and epigenetic alterations that confer upon it the hallmarks of cancer.
+Carcinogenesis is a **multistep process** resulting from the accumulation of complementary mutations in a stepwise fashion over time.
 
-**Initial nonlethal genetic damage.** The initial damage may be caused by environmental agents (chemicals, radiation, viruses, or reactive oxygen species), may be inherited in the germline, or may arise spontaneously from random errors. This damage is nonlethal and heritable, and is passed to daughter cells. A tumour therefore arises as a clonal expansion of a single precursor cell that has sustained genetic damage.
+1. **Initiation.** A cell exposed to a sufficient dose of a carcinogenic agent suffers permanent DNA damage (mutation). The first **driver mutation** that starts a cell on the path to malignancy is the initiating mutation.
+2. **Promotion.** Promoters induce proliferation and clonal expansion of the initiated cell, producing a preneoplastic clone.
+3. **Progression.** Subclones acquire additional driver mutations, and eventually a cancerous clone with all the hallmarks of cancer emerges.
 
-**Targets of the damage.** Four classes of genes are affected. Gain-of-function mutations activate proto-oncogenes and so provide growth autonomy, loss-of-function mutations inactivate tumour suppressor genes and remove growth restraints, abnormalities of apoptosis-regulating genes reduce cell death, and loss-of-function mutations of DNA repair genes create a mutator phenotype with genomic instability that accelerates the acquisition of further mutations.
-
-**Multistep acquisition.** No single mutation is fully transforming. The first driver mutation (the initiating mutation) starts the cell on the path, and the "initiated" cell, which may have stem cell–like properties and persist for years, must acquire further complementary driver mutations. In addition, hundreds or thousands of "passenger" mutations of no functional consequence are acquired. The colon adenoma–carcinoma sequence is the classic example, with early APC and late TP53 mutations. Epigenetic changes (promoter hypermethylation silencing tumour suppressors, histone modifications) and altered microRNA expression contribute as well.
-
-**Acquisition of hallmarks.** The cell becomes self-sufficient in growth signals, insensitive to growth inhibition, metabolically reprogrammed (Warburg effect), resistant to apoptosis, immortal through evasion of senescence and reactivation of telomerase, capable of inducing angiogenesis, able to invade and metastasise, and able to evade immune destruction. Genomic instability and cancer-enabling inflammation accelerate the process.
-
-**Progression.** Under Darwinian selection, subclones with growth advantages dominate, so that tumours become more aggressive over time.
-
+- No single mutation is fully transforming, so the initiated cell must acquire further driver mutations.
+- Loss-of-function mutations in genes that maintain genomic integrity are a common early step. They increase the number of **passenger mutations**, which are much more common than driver mutations.
+- The mutations affect four classes of genes: growth-promoting proto-oncogenes, growth-inhibiting tumour suppressor genes, genes that regulate apoptosis, and DNA repair genes.
+- In colon carcinoma, adenomas progressively enlarge and undergo malignant transformation. **APC** mutations occur early and **TP53** mutations late.
 
 ## Write about the role of genes in tumourigenesis.
 
-Cancer is fundamentally a genetic disease. Nonlethal damage to DNA lies at the heart of carcinogenesis, and four classes of normal regulatory genes are the principal targets.
+Four principal classes of genes are the targets of cancer-causing mutations.
 
-**1. Proto-oncogenes (growth-promoting genes).** These encode growth factors, growth factor receptors, signal transducing proteins (RAS, BRAF, PI3K, ABL), transcription factors (MYC) and cell cycle components (cyclin D, CDK4). Their gain-of-function mutations (point mutation, translocation, amplification) produce oncoproteins that drive proliferation constitutively. RAS is the most commonly mutated oncogene, being mutated in about 15% to 20% of all human tumours, and MYC acts as a master regulator of cell growth.
+1. **Growth-promoting proto-oncogenes.** Activating mutations cause a gain of function, so they can transform cells despite a normal copy of the same gene. Oncogenes are dominant over their normal counterparts.
+2. **Growth-inhibiting tumour suppressor genes.** Mutations generally cause a loss of function, and in most instances both alleles must be damaged before transformation occurs.
+3. **Genes that regulate programmed cell death (apoptosis).**
+4. **Genes responsible for DNA repair.** Their loss lets mutations accumulate in other genes (the mutator phenotype).
 
-**2. Tumour suppressor genes (growth-inhibiting genes).** These oppose the hallmarks of cancer and act as brakes on proliferation. RB governs the G1/S checkpoint, and TP53 is the "guardian of the genome", responding to DNA damage, hypoxia and oncogenic stress by inducing cell cycle arrest, DNA repair, senescence or apoptosis. APC restrains Wnt signalling, PTEN restrains PI3K, NF1 restrains RAS, and VHL regulates HIF1α. Loss-of-function of both alleles is generally needed (the two-hit hypothesis), and the germline inheritance of one defective allele underlies familial cancer syndromes.
-
-**3. Genes regulating apoptosis.** Overexpression of the anti-apoptotic BCL2 (follicular lymphoma, t(14;18)), MDM2 amplification, and loss of p53 or pro-apoptotic BAX and PUMA function allow damaged cells to survive.
-
-**4. DNA repair genes.** Defects in mismatch repair (MSH2, MLH1, as in hereditary nonpolyposis colon cancer, with microsatellite instability), nucleotide excision repair (xeroderma pigmentosum), and homologous recombination repair (BRCA1/2, ataxia-telangiectasia, Bloom syndrome, Fanconi anaemia) lead to a mutator phenotype.
-
-**Additional genetic mechanisms.** Genes encoding epigenetic regulators (DNMT3A, KMT2D, ARID1A) and microRNAs (miR-15/16, miR-155) are also altered. Telomerase (TERT) reactivation confers immortality, and genes affecting the immune response, such as PD-L1, and the stroma contribute by non-cell-autonomous mechanisms. Oncogenic viruses introduce viral genes (HPV E6 and E7) that disable TP53 and RB.
-
-Mutations contributing to the hallmarks are called driver mutations, whereas passenger mutations are functionally neutral.
-
+Together these changes produce the hallmarks of cancer, including self-sufficiency in growth signals, insensitivity to growth inhibition and evasion of apoptosis.
 
 ## Write a short note on tumour suppressor genes.
 
-Tumour suppressor genes encode proteins that act as negative regulators of cell proliferation, and loss of their function leads to excessive growth. More broadly, a tumour suppressor is any gene or protein that opposes one of the hallmarks of cancer, and the products may function as transcription factors, cell cycle inhibitors, signal transduction molecules, cell surface receptors, or regulators of cellular responses to DNA damage, metabolism and genomic stability. They control checkpoints that prevent uncontrolled growth, and induce senescence or apoptosis when damage is irreparable.
+**Tumour suppressor genes** act as negative regulators of cell proliferation, and loss of their function therefore leads to excessive growth. A more inclusive definition is a protein or gene that opposes any of the hallmarks of cancer.
 
-**The two-hit hypothesis.** Retinoblastoma, the first tumour suppressor disease to be studied, was explained by Knudson's two-hit hypothesis. Both alleles of the RB gene must be inactivated to produce the tumour. In familial cases (about 40%), a child inherits one defective copy in the germline (first hit) and one normal copy, and a somatic mutation in a retinoblast (second hit) is virtually inevitable, so that tumours are often bilateral and the carriers have a 10,000-fold increased risk, as well as an increased risk of osteosarcoma. In sporadic cases (60%), both hits are somatic mutations in the same retinoblast, which is why they are unilateral and uncommon. The predisposition is inherited as an autosomal dominant trait, but at the cellular level loss of function behaves as a recessive trait. A state of haploinsufficiency is an exception, in which loss of one allele is sufficient.
+- Their products control checkpoints that prevent uncontrolled growth. RB and p53 form part of a network that recognises DNA-damaging (genotoxic) stress and shuts down proliferation. p53 may also induce apoptosis.
+- Some are involved in cell differentiation, and others alter cell metabolism or ensure genomic stability.
+- Their products may be transcription factors, cell cycle inhibitors, signal transduction molecules, cell surface receptors or regulators of the response to DNA damage.
 
-**Mechanisms of inactivation.** Deletions, point mutations, promoter hypermethylation (epigenetic silencing, for example of CDKN2A), loss of heterozygosity, and binding and inactivation by viral oncoproteins (HPV E6 for p53 and E7 for RB), or increased degradation (MDM2 amplification).
+**RB, the prototype.** Familial retinoblastoma led to the discovery of RB, the first tumour suppressor gene.
 
-| Gene | Function | Familial syndrome |
+- Both alleles must be lost to cause retinoblastoma (the **two-hit hypothesis**).
+- In familial cases a child inherits one defective copy (first hit), and a somatic mutation destroys the other copy (second hit). The risk is inherited as an autosomal dominant trait, but at the cell level the loss of function is recessive.
+- In sporadic cases both alleles are lost by two somatic mutations.
+- Carriers also have a greatly increased risk of osteosarcoma and other soft tissue sarcomas.
+
+| Gene | Familial syndrome | Sporadic cancers |
 |---|---|---|
-| RB | Inhibits G1/S progression by binding E2F | Retinoblastoma, osteosarcoma |
-| TP53 | Cell cycle arrest, DNA repair, apoptosis | Li-Fraumeni syndrome |
-| APC | Degrades β-catenin (Wnt inhibition) | Familial adenomatous polyposis |
-| NF1 | GAP for RAS | Neurofibromatosis type 1 |
-| NF2 | Merlin; cytoskeletal stability | Neurofibromatosis type 2 |
-| PTEN | Inhibits PI3K/AKT | Cowden syndrome |
-| VHL | Degrades HIF1α | von Hippel–Lindau syndrome |
-| CDKN2A | p16 and p14/ARF | Familial melanoma |
-| BRCA1, BRCA2 | Homologous recombination repair | Familial breast and ovarian cancer |
-| WT1 | Transcription factor | Wilms tumour |
-| CDH1 | E-cadherin | Familial gastric cancer |
-| STK11 | Metabolic kinase (AMPK family) | Peutz-Jeghers syndrome |
-| MSH2, MLH1 | Mismatch repair | Hereditary nonpolyposis colon cancer |
-
+| APC | Familial colonic polyps and carcinomas | Carcinomas of stomach, colon, pancreas; melanoma |
+| NF1 | Neurofibromatosis type 1 | Neuroblastoma, juvenile myeloid leukaemia |
+| RB | Familial retinoblastoma | Retinoblastoma, osteosarcoma, carcinomas of breast and colon |
+| TP53 | Li-Fraumeni syndrome | Most human cancers |
+| BRCA1, BRCA2 | Familial breast and ovarian carcinoma | Rare |
+| VHL | Von Hippel-Lindau syndrome | Renal cell carcinoma |
+| WT1 | Familial Wilms tumour | Wilms tumour |
 
 ## Briefly state the role of environmental factors in cancer development.
 
-Environmental influences are the dominant risk factors for most cancers, and a large part of the geographic and temporal variation in cancer incidence is attributable to them. The evidence includes the close tracking of lung cancer incidence with smoking habits, the sharp decline of stomach cancer incidence in the 20th century, the recent increase in liver cancer related to chronic hepatitis B and C and obesity, and the wide geographic variation in specific cancers, such as the high incidence of liver, stomach and oesophageal cancers in some regions and of prostate cancer in developed countries. The term "environmental" here includes any exogenous agent, such as chemicals, radiation and infectious agents, and also lifestyle.
+Environmental influences are the **dominant risk factors for most cancers**. Evidence includes the tight tracking of lung cancer incidence with smoking habits, the fall in stomach cancer in the 20th century, and wide geographic variation in the incidence of specific cancers.
 
-The best-established factors are as follows.
-
-- **Infectious agents** cause about 15% of cancers worldwide, the proportion being roughly three times higher in low-resource countries. HPV is implicated in most cervical cancers, HBV and HCV in hepatocellular carcinoma, H. pylori in gastric cancer, and EBV in Burkitt lymphoma and nasopharyngeal carcinoma.
-- **Smoking** is implicated in about 90% of lung cancers, and in cancers of the mouth, pharynx, larynx, oesophagus, pancreas and bladder.
-- **Alcohol** increases the risk of cancers of the oropharynx, larynx and oesophagus, synergistically with smoking, and of hepatocellular carcinoma via cirrhosis.
-- **Diet.** High-fat, low-fibre diets have been linked to colorectal carcinoma, and geographic variation in prostate and breast cancer is also attributed to diet. Contaminants such as aflatoxin (hepatocellular carcinoma) and nitrosamines are relevant.
-- **Obesity** accounts for an estimated 11% of cancers in females and 5% in males in the United States, and is strongly related to endometrial cancer.
-- **Reproductive history and hormones.** Lifelong cumulative exposure to oestrogen, particularly if unopposed by progesterone, increases the risk of breast and endometrial cancers.
-- **Environmental and occupational carcinogens.** Ultraviolet rays (skin cancers), ionising radiation, asbestos (mesothelioma and lung cancer), vinyl chloride (hepatic angiosarcoma), benzene (acute myeloid leukaemia), arsenic (skin and lung cancers, notably from contaminated well water in Bangladesh), radon, nickel and chromium, and air pollutants. Irritants such as airborne particulates may act as promoters.
-- **Acquired predisposing conditions.** Chronic inflammation, precursor lesions and immunodeficiency.
-
-Environmental factors interact with the host. Genetic polymorphisms in carcinogen-metabolising enzymes, such as cytochrome P-450 variants, alter susceptibility; for example, smokers with a highly inducible CYP1A1 genotype have up to a seven-fold higher risk of lung cancer. Age also matters, since the accumulation of somatic mutations explains the rising incidence of cancer with age. Many cancers are therefore preventable, as shown by the effects of smoking control, hepatitis B vaccination and HPV vaccination.
-
+1. **Infectious agents.** About 15% of all cancers worldwide are caused directly or indirectly by infectious agents, for example HPV in cervical carcinoma.
+2. **Smoking.** Implicated in cancers of the mouth, pharynx, larynx, oesophagus, pancreas and bladder, and in about 90% of lung cancers.
+3. **Alcohol.** Increases the risk of carcinoma of the oropharynx, larynx and oesophagus, and of hepatocellular carcinoma through cirrhosis. The risk rises synergistically with smoking.
+4. **Diet.** Differences in diet are ascribed for the wide geographic variation in colorectal, prostate and breast carcinoma.
+5. **Obesity.** Associated with an increased risk of diverse cancers, for example endometrial cancer.
+6. **Reproductive history.** Lifelong exposure to oestrogen, especially unopposed by progesterone, raises the risk of breast and endometrial cancer.
+7. **Carcinogens and tumour promoters.** These include ultraviolet rays, air pollutants, arsenic in well water (particularly in Bangladesh), asbestos at work, and certain medications such as methotrexate.
 
 ## Give in short what you know about viral oncogenesis (oncogenic virus).
 
-Many RNA and DNA viruses are oncogenic in animals, but only a few have been firmly linked to human cancer. These include one RNA retrovirus, HTLV-1; the DNA viruses HPV, EBV, HBV, HHV8 (Kaposi sarcoma herpesvirus) and Merkel cell polyomavirus; and HCV, which is an RNA virus not belonging to the retroviruses. A common theme is that the infection triggers cell proliferation, initially polyclonal but with time monoclonal as driver mutations are acquired in the rapidly dividing cells. Mechanisms include the introduction of viral oncogenes, insertional activation of cellular proto-oncogenes (principally in animal retroviruses), viral oncoproteins that inactivate tumour suppressors, chronic inflammation with reparative proliferation, and immunosuppression. Infection alone is generally not sufficient, and the cancers appear after decades, requiring additional genetic or environmental hits.
+About 15% of all cancers worldwide are caused directly or indirectly by infectious agents. Oncogenic viruses are of two kinds.
 
-**HPV.** High-risk types (16 and 18) cause squamous cell carcinomas of the cervix, anogenital region and oropharynx, while types 6 and 11 cause benign warts. In cancers the viral genome is integrated in the host DNA, disrupting the E2 repressor, and so E6 and E7 are overexpressed. E6 binds and degrades p53 and activates telomerase (TERT); E7 binds RB, releasing E2F, and inactivates the CDK inhibitors p21 and p27. High-risk types bind these targets with higher affinity than low-risk types. The vaccines prevent cervical cancer.
+**Oncogenic RNA virus.** Only one human retrovirus, **HTLV-1**, is firmly implicated in cancer. It causes **adult T-cell leukaemia/lymphoma**, endemic in parts of Japan, the Caribbean basin, South America and Africa.
 
-**EBV.** It infects B cells via CD21 and establishes latent infection that immortalises cells. The viral gene LMP1 acts like a constitutively active CD40 receptor, activating NF-κB and JAK/STAT and inducing BCL2, and EBNA2 mimics activated Notch and upregulates cyclin D. EBV is associated with Burkitt lymphoma, in which it acts as a polyclonal B-cell mitogen that sets the stage for the t(8;14) MYC translocation (with malaria as a cofactor in endemic regions), nasopharyngeal carcinoma (always EBV-positive), Hodgkin lymphoma, and B-cell lymphomas in immunosuppressed patients, which regress when T-cell immunity is restored.
+- HTLV-1 has a tropism for CD4⁺ T cells, which are the target for neoplastic transformation.
+- It contains no recognisable oncogene, but its genome has the genes **tax** and **HBZ**, whose products alter transcription of host genes and interact with host signalling proteins.
+- Proviral integration sites are clonal, so infection occurred before transformation.
 
-**HBV and HCV.** Together they are responsible for 70% to 85% of hepatocellular carcinomas worldwide. The dominant effect is immunologically mediated chronic inflammation, hepatocyte death and regenerative proliferation, with NF-κB activation, aided by the HBx protein of HBV and the core protein of HCV, and by integration of HBV DNA.
+**Oncogenic DNA viruses.** Five human DNA viruses are implicated: HPV, EBV, HBV, Merkel cell polyomavirus and human herpesvirus 8 (Kaposi sarcoma herpesvirus). The hepatitis C virus, although not a DNA virus, is also associated with cancer.
 
-**HTLV-1.** A retrovirus that infects CD4⁺ T cells, causing adult T-cell leukaemia/lymphoma in 3% to 5% of infected persons after a latency of 40 to 60 years. It carries no oncogene, but its tax and HBZ gene products alter host gene transcription.
-
+- **HPV.** High-risk types 16 and 18 cause squamous cell carcinomas of the cervix, anogenital region and head and neck. Types 1, 2, 4 and 7 cause benign warts, and types 6 and 11 genital warts of low malignant potential.
 
 ## Name the oncogenic viruses/microbes with associated cancers.
 
-| Agent | Genome / type | Associated cancer(s) |
-|---|---|---|
-| Human papillomavirus (HPV 16, 18, 31) | DNA virus | Squamous cell carcinoma of the cervix, anus, vulva, penis; head and neck (tonsillar) carcinoma |
-| Epstein-Barr virus | DNA virus (herpes) | Burkitt lymphoma, nasopharyngeal carcinoma, Hodgkin lymphoma, B-cell lymphomas in immunosuppressed patients, some gastric carcinomas |
-| Hepatitis B virus | DNA virus | Hepatocellular carcinoma |
-| Hepatitis C virus | RNA virus | Hepatocellular carcinoma |
-| Human herpesvirus 8 (KSHV) | DNA virus | Kaposi sarcoma, primary effusion lymphoma |
-| Merkel cell polyomavirus | DNA virus | Merkel cell carcinoma |
-| HTLV-1 | RNA retrovirus | Adult T-cell leukaemia/lymphoma |
-| HIV | RNA retrovirus | Indirect, through immunodeficiency: Kaposi sarcoma, non-Hodgkin lymphoma, cervical cancer |
-| Helicobacter pylori | Bacterium | Gastric adenocarcinoma, gastric MALT lymphoma |
-| Schistosoma haematobium | Trematode | Squamous cell carcinoma of the urinary bladder |
-| Opisthorchis viverrini, Clonorchis sinensis | Liver flukes | Cholangiocarcinoma |
-
+| Agent | Cancer |
+|---|---|
+| **HTLV-1** (RNA retrovirus) | Adult T-cell leukaemia/lymphoma |
+| **Human papillomavirus** types 16 and 18 | Squamous cell carcinomas of the cervix, anogenital region and head and neck (oropharynx) |
+| **Epstein-Barr virus** | Burkitt lymphoma, B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma |
+| **Hepatitis B and C viruses** | Hepatocellular carcinoma (70 to 85% worldwide) |
+| **Human herpesvirus 8** | Kaposi sarcoma |
+| **Merkel cell polyomavirus** | Merkel cell carcinoma |
+| ***Helicobacter pylori*** | Gastric adenocarcinoma, gastric B-cell lymphoma (MALToma) |
 
 ## Write a short note on tumour angiogenesis.
 
-**Concept.** A solid tumour cannot enlarge beyond 1 to 2 mm in diameter unless it induces new blood vessels, since this is the maximum distance across which oxygen, nutrients and waste can diffuse from existing vessels. Growing cancers stimulate neoangiogenesis, in which new vessels sprout from capillaries. Early in their development most tumours do not induce angiogenesis and remain small or in situ, possibly for years, until an angiogenic switch ends this quiescence. Angiogenesis is thus an essential requirement for malignancy.
-
-**Regulation.** It is controlled by the balance of angiogenesis promoters and inhibitors, which in tumours is skewed in favour of promoters through increased local production of angiogenic factors and loss of inhibitors. The sources are tumour cells, infiltrating macrophages and other stromal cells, and the extracellular matrix.
-
-- Hypoxia stabilises HIF1α, which induces VEGF and bFGF; the same process occurs with loss of VHL.
-- Oncogenes such as RAS and MYC upregulate VEGF, and loss of p53 removes the inhibitor thrombospondin-1 and de-represses VEGF.
-- Proteases release bFGF from the matrix, or cleave plasminogen and collagen to release the inhibitors angiostatin and endostatin.
-
-**Characteristics of the tumour vasculature.** The vessels are leaky, dilated and haphazardly connected, but they deliver nutrients and remove waste.
-
-**Effects.** Beyond nourishing the tumour, the proliferating endothelial cells secrete growth factors (IGF, PDGF) which stimulate the tumour cells, and the abnormal vessels allow tumour cells ready access to the circulation, thereby facilitating metastasis.
-
-**Therapeutic importance.** Bevacizumab, a monoclonal antibody that neutralises VEGF, and other agents are used in several cancers. However, angiogenesis inhibitors have been less effective than hoped, usually prolonging life by only a few months. Tumours escape, in some instances through epithelial–mesenchymal transition, which allows tumour cells to grow along pre-existing vessels in the tumour stroma.
-
+- A solid tumour cannot enlarge beyond **1 to 2 mm** in diameter unless it induces **angiogenesis**, because oxygen, nutrients and waste can diffuse only across that distance from existing vessels.
+- Early in their development most human tumours do not induce angiogenesis, so they stay small or in situ, possibly for years, until an **angiogenic switch** ends the quiescent stage.
+- **Hypoxia** stabilises **HIF1α**, which activates transcription of **VEGF** and **basic fibroblast growth factor (bFGF)**. Loss of p53 and gain-of-function mutations in RAS or MYC also increase VEGF production.
+- New vessels supply nutrients and oxygen, and proliferating endothelial cells also stimulate growth of adjacent tumour cells by secreting growth factors such as insulin-like growth factors and PDGF.
+- Tumour vessels are leaky and dilated, with a haphazard pattern of connection. They give tumour cells ready access to the circulation, so angiogenesis also contributes to **metastasis**.
+- Angiogenesis is therefore an essential requirement for malignancy. VEGF inhibitors such as bevacizumab prolong the clinical course of several advanced cancers but are not curative.
 
 ## Write a short note on tumour heterogeneity.
 
-Although every cancer is clonal in origin, being derived from a single founding cell that has sustained genetic damage, the cells of a clinically evident tumour are often extremely heterogeneous genetically, epigenetically and phenotypically.
+Cancers are **clonal** in origin: early on, all the cells are genetically identical, being the progeny of a single founding transformed cell. By the time the tumour comes to clinical attention, however, its cells are often extremely **heterogeneous genetically**.
 
-**Basis.** By the time a tumour reaches clinical attention (about 1 g, or 10⁹ cells), it has undergone at least 30 cell doublings. During this expansion, individual tumour cells acquire additional mutations at random, particularly in tumours with a mutator phenotype from defects in DNA repair or TP53. This process, called clonal evolution, generates subclones that compete for nutrients and microenvironmental niches, and under Darwinian selection the fittest dominate the tumour mass. This tendency of tumours to become more aggressive over time is called tumour progression. In addition, epigenetic heterogeneity occurs from cell to cell, and the hierarchy of cancer stem cells and their more differentiated progeny contributes phenotypic heterogeneity.
-
-**Evidence.** Multiregion sequencing of renal cell carcinoma and its metastases has shown two types of mutations: those present at all sites (ubiquitous, presumably present in the founding cell) and those unique to some regions (acquired later during outgrowth and spread), which allow construction of tumour "family trees" resembling the evolution of Darwin's finches.
-
-**Clinical consequences.**
-
-- Therapy resistance. Treatment is itself a selective pressure. Resistant subclones, present by chance, survive and are responsible for relapse, as with EGFR inhibitors in lung cancer (secondary EGFR mutations or MET amplification); relapsed tumours more often carry TP53 mutations.
-- Sampling error. A single biopsy may not represent the whole tumour, which makes liquid biopsies of circulating tumour DNA attractive for tracking emerging variants.
-- Therapeutic strategy. Heterogeneity argues for combination therapies and for targeting truncal (ubiquitous) alterations.
-
+- A tumour reaches about 1 g (about 10⁹ cells) after at least 30 cell doublings. During this expansion individual cells acquire additional mutations at random, especially in tumours with a mutator phenotype.
+- These diverse **subclones** compete for nutrients and microenvironmental niches, and the fittest subclones (Darwinian selection) dominate the tumour mass.
+- The tendency of tumours to become more aggressive over time is **tumour progression**.
+- Sequencing of several regions of renal cell carcinomas and their metastases found mutations common to all sites (present in the founding cell) and mutations unique to a subset of sites (acquired later). The latter can be used to build tumour "family trees".
+- Subclones may arise and diverge in years, months or even weeks.
+- **Therapy** is a strong selective pressure: tumours that recur after therapy are almost always resistant to the same treatment, because therapy selects for resistant subclones.
+- Cancers also show **epigenetic heterogeneity** from cell to cell, which may cause drug resistance.
 
 ## What is a precancerous condition/lesion?
 
-Cancers frequently arise in tissue that has already undergone recognizable changes, and these acquired predisposing states are divided into precancerous lesions and precancerous conditions.
+**Precursor (precancerous) lesions** are localised morphologic changes that identify a field of epithelium at increased risk of malignant transformation. These changes may take the form of hyperplasia, metaplasia or dysplasia.
 
-A **precancerous (precursor) lesion** is a localised morphologic change that identifies a field of epithelium at increased risk for malignant transformation, in which cancer is more likely to occur than in its apparently normal counterpart. These changes take the form of hyperplasia, metaplasia, dysplasia or benign neoplasia:
+1. **Dysplasia and carcinoma in situ.** Dysplasia is a premalignant change, and severe dysplasia that does not breach the basement membrane is carcinoma in situ. Progression to cancer is not inevitable.
+2. **Hyperplasia**, often from chronic exposure to trophic factors, for example endometrial hyperplasia caused by sustained oestrogenic stimulation.
+3. **Benign neoplasms.** A classic example is the colonic villous adenoma, which progresses to cancer in about 50% of cases if left untreated. Most benign tumours transform rarely (uterine leiomyomas, pleomorphic adenoma) and others not at all (lipomas).
+4. **Metaplasia**, for example Barrett oesophagus. Not all metaplastic epithelium becomes dysplastic.
 
-- Hyperplasia, usually from chronic exposure to trophic factors, such as endometrial hyperplasia from sustained oestrogenic stimulation, a precursor of endometrial carcinoma.
-- Metaplasia, such as columnar (intestinal) metaplasia in Barrett oesophagus, which predisposes to adenocarcinoma, and intestinal metaplasia of the stomach.
-- Dysplasia, such as cervical intraepithelial neoplasia, bronchial and oral dysplasia (leukoplakia) and actinic keratosis; severe dysplasia and carcinoma in situ often antedate invasive cancer.
-- Benign neoplasms, such as the colonic villous adenoma, which progresses to cancer in about 50% of untreated cases. It should be emphasised that most benign tumours transform rarely (leiomyoma, pleomorphic adenoma) or not at all (lipoma), possibly because they lack genomic instability.
-
-A **precancerous condition** is a generalised state, not a discrete lesion, that is associated with a significantly increased risk of cancer. These are chiefly chronic inflammatory disorders and immunodeficiency states, together with some hereditary conditions:
-
-- Chronic inflammatory disorders, such as ulcerative colitis, chronic atrophic gastritis and H. pylori gastritis, chronic hepatitis B and C and cirrhosis, and chronic cholecystitis.
-- Immunodeficiency states, particularly of T-cell immunity, which predispose to virus-induced cancers.
-- Hereditary conditions such as familial adenomatous polyposis and xeroderma pigmentosum.
-
-What these have in common is increased cellular replication, which creates a "fertile soil" for malignant tumours, as proliferating cells are most at risk for the somatic mutations that drive carcinogenesis. Not all precancerous lesions progress to cancer, and many can be reversed by removing the cause. Their recognition is the basis of cancer screening and prevention, as in the Pap smear for cervical cancer, colonoscopic polypectomy, and surveillance of Barrett oesophagus.
+**Chronic inflammatory conditions** also predispose to cancer, for example inflammatory bowel disease (colorectal carcinoma), chronic hepatitis (hepatocellular carcinoma), reflux oesophagitis and Barrett oesophagus (oesophageal carcinoma), and chronic cervicitis from HPV (cervical carcinoma).
 
 ## Clinical features of tumour.
 
@@ -5274,873 +5193,665 @@ The laboratory diagnosis of cancer is not difficult in most instances, because m
 
 ## What techniques of cytology are used in tumour diagnosis?
 
-Cytology permits the diagnosis of tumours from individual cells or small clusters, without the need for tissue sections. The principal techniques are as follows.
+Cancer cells have lowered cohesiveness and show a range of morphologic changes called anaplasia, so single cells or small clumps can be examined for the features of malignancy. Two techniques are used.
 
-1. **Exfoliative cytology.** Examination of cells that are shed spontaneously into body fluids or from body surfaces, collected as smears. The cervicovaginal (Papanicolaou) smear is the best example. Urine, sputum, gastric washings, bronchial washings and brushings, cerebrospinal fluid, and pleural, pericardial and peritoneal effusions are also examined.
-2. **Fine-needle aspiration cytology (FNAC).** A small-bore needle is used to aspirate cells and fluid from a mass, which are spread on slides and stained. It is widely used for palpable lesions in the breast, thyroid, lymph nodes and salivary gland, and, with imaging guidance (ultrasound, CT, endoscopic ultrasound), for deep structures such as the pancreas, lung and pelvic nodes.
-3. **Abrasive and brush cytology.** Cells are obtained by scraping or brushing accessible surfaces, such as the cervix, oral cavity, bronchus and oesophagus.
-4. **Imprint and scrape cytology.** Touch smears are made from freshly cut surfaces of a biopsy or resected specimen, which are useful in intraoperative consultation.
-5. **Fluid cytology and cell block preparations.** Effusions and other fluids are centrifuged, and the sediment is smeared or processed as a cell block, which permits immunohistochemistry.
-6. **Liquid-based cytology.** Cells are collected in a preservative fluid and a thin monolayer is prepared, improving cell preservation and permitting repeat or ancillary tests (HPV testing).
+1. **Cytologic smears (exfoliative cytology).** Cells shed into fluids or from easily accessible surfaces are spread on a slide and examined.
+   - Used most widely to screen for carcinoma of the cervix and its precursor lesions (Pap smear).
+   - Other specimens: urine, cerebrospinal fluid, pleural effusions and bronchial washes.
+2. **Fine-needle aspiration cytology.** A small-bore needle aspirates cells and fluid from a palpable or imaging-guided lesion. The cells are spread on a slide, stained and examined.
 
-Staining: Papanicolaou stain for fixed (alcohol) smears, and Romanowsky stains (May–Grünwald–Giemsa) for air-dried smears; haematoxylin and eosin is used on cell blocks.
-
-Ancillary methods: immunocytochemistry, flow cytometry for haematolymphoid lesions, and molecular tests (FISH, PCR) can be applied to cytologic material.
-
-Judgment in cytology is made on features of individual cells (nuclear enlargement, pleomorphism, hyperchromasia, irregular chromatin, nucleoli and loss of cohesion) or on groups of cells, without the architectural evidence of loss of orientation and invasion that tissue sections give.
-
+Cytology allows differentiation among **normal, dysplastic and malignant cells**, and recognition of the cellular changes of carcinoma in situ.
 
 ## Write a short note on exfoliative cytology.
 
-Exfoliative cytology is the study of cells that are shed spontaneously from epithelial surfaces, or are collected from them, into body fluids and cavities, in order to detect cancer and its precursors.
+**Exfoliative cytology** is the examination of cytologic smears made from cells shed into fluids or from easily accessible surfaces, to detect cancer.
 
-**Principle.** Cancer cells have lowered cohesiveness and exhibit a range of morphologic changes encompassed by anaplasia, so that shed cells can be evaluated for the features of malignancy: enlarged, pleomorphic, hyperchromatic nuclei with an increased nuclear-to-cytoplasmic ratio, irregular chromatin and nucleoli, and abnormal mitoses. The method permits differentiation between normal, dysplastic and malignant cells, and recognition of the changes characteristic of carcinoma in situ.
-
-**Specimens.** Cervicovaginal smears; urine; sputum; bronchial washings and brushings; gastric washings; cerebrospinal fluid; pleural, peritoneal and pericardial effusions; nipple discharge; and oral and other scrapings.
-
-**Method.** The material is spread as a smear on a slide and immediately fixed in alcohol (wet fixation), or air-dried, and then stained, commonly with the Papanicolaou stain, and examined microscopically. Fluids are centrifuged and the sediment is smeared.
-
-**Uses.**
-
-- Screening for carcinoma of the cervix and its precursor lesions (Pap smear), which is the best demonstration of the value of cytology: the marked fall in cervical cancer deaths in highly resourced countries is attributed largely to Pap smear screening.
-- Diagnosis of suspected malignancy in any site where tumour cells are shed into fluids or are accessible: bladder (urine), lung (sputum, washings), serous effusions, and cerebrospinal fluid.
-
-**Advantages.** It is simple, noninvasive, inexpensive and repeatable, and suitable for mass screening.
-
-**Limitations.** Judgment must rest on the features of individual cells or clumps, without evidence of loss of orientation of cells to one another and, most importantly, without evidence of invasion. It cannot precisely identify the tumour type and grade, and false negatives and positives occur through sampling error and inflammatory or degenerative changes. A positive cytologic result generally needs histologic confirmation.
-
+- It is used most widely to screen for carcinoma of the cervix and its precursor lesions (**Papanicolaou or Pap smear**). It is suitable for any suspected malignancy in which tumour cells are shed into fluids or are easily accessible.
+- **Specimens** commonly examined: urine, cerebrospinal fluid, pleural effusions and bronchial washes.
+- **Basis.** Cancer cells have lowered cohesiveness and show anaplasia (pleomorphic, hyperchromatic nuclei), so shed cells can be judged for their origin from a tumour.
+- **Limitation.** Judgement rests on individual cells or at most a clump of cells, without the supporting evidence of loss of orientation of one cell to another or, most importantly, evidence of invasion.
+- It differentiates normal, dysplastic and malignant cells, and recognises the changes of **carcinoma in situ**.
+- Screening of cervical smears has produced the gratifying control of cervical cancer, which is the best testament to the value of cytology.
 
 ## Write a short note on FNAC.
 
-Fine-needle aspiration cytology (FNAC) is a technique of tumour diagnosis in which a small-bore needle (usually 22 to 25 gauge) attached to a syringe is used to aspirate cells and attendant fluid from a lesion. The material is spread on slides, stained (Papanicolaou, Romanowsky, or both) and examined.
+**Fine-needle aspiration cytology (FNAC)** uses a small-bore needle to aspirate cells and attendant fluid, which are spread on a slide, stained and examined.
 
-**Indications and sites.** It is very useful for the assessment of readily palpable lesions in the breast, thyroid, lymph nodes, salivary glands, soft tissue and skin. With guidance from imaging (ultrasound, CT, endoscopic ultrasound), it can be used for deep-seated lesions in the lung, liver, pancreas, kidney and pelvic lymph nodes.
-
-**Advantages.** It is less invasive and more rapidly performed than needle (core) biopsy, causes little discomfort, needs no anaesthesia, can be done as an outpatient procedure, is inexpensive, gives a result quickly, and obviates surgery and its attendant risks. In experienced hands it is quite reliable.
-
-**Uses.** To distinguish benign from malignant lesions (for example in a thyroid nodule or breast lump), to diagnose metastasis in lymph nodes, to obtain material for ancillary tests (immunocytochemistry, flow cytometry, molecular tests), to confirm recurrence, and to diagnose infections.
-
-**Limitations.** It may be confounded by sampling error and inadequate material. It cannot reliably assess invasion (for example, to separate follicular adenoma from follicular carcinoma of the thyroid, which depends on capsular and vascular invasion), and architecture is limited, so that tumour typing and grading may not be possible. A positive result in a doubtful case needs confirmation by histology.
-
+- **Sites.** Very useful for readily palpable lesions of the breast, thyroid and lymph nodes. With imaging guidance it can evaluate deep-seated lesions such as pelvic lymph nodes and the pancreas.
+- **Advantages.** It is less invasive and more rapidly performed than needle biopsy, and it avoids surgery and its attendant risks. In experienced hands it is rapid and quite reliable.
+- **Limitation.** It may be confounded by sampling errors.
+- In the thyroid, improvements in cytologic analysis with molecular testing have made FNAC a reliable test for distinguishing benign from malignant nodules.
 
 ## Why is clinical data important for accurate histopathologic diagnosis?
 
-Clinical data are invaluable for accurate pathologic diagnosis, although clinicians often underestimate their value. The histologic appearance of a lesion cannot always be interpreted in isolation, and the pathologist needs the clinical context for the following reasons.
+Clinical data are invaluable for accurate pathologic diagnosis, but clinicians often underestimate their value.
 
-1. **Simulation of cancer by non-neoplastic lesions.** Radiation changes in the skin or mucosa can simulate those associated with cancer, and sections taken from a healing fracture can mimic an osteosarcoma. Without a history of radiation or trauma these may lead to overdiagnosis and unnecessary radical treatment. Reactive changes in injured or healing tissue may also resemble the features of malignancy.
-2. **Adequacy and representativeness of the specimen.** The evaluation of a lesion is only as good as the specimen. Knowledge of the site, the size of the lesion and which part was sampled helps the pathologist to judge whether it is adequate, since the periphery of a mass may not be representative and the centre may be necrotic.
-3. **Correlation with imaging and gross findings.** Many diagnoses depend on correlation, as in bone tumours where radiologic findings are essential, and in liver, lung and kidney biopsies.
-4. **Differential diagnosis.** Age, sex, site, duration, previous cancer or treatment, family history, immune status and drug history narrow the differential diagnosis. A lymphoid proliferation in an immunosuppressed patient, for example, will be interpreted differently from one in an immunocompetent patient.
-5. **Choice of ancillary studies and handling.** The clinical question determines whether tissue is allocated for cytogenetics, flow cytometry, molecular studies or frozen section, and what stains are needed.
-6. **Surgical planning.** Decisions such as the need for frozen section, margin assessment and the extent of surgery depend on a shared understanding between surgeon and pathologist.
-
+- **Reactive and treatment changes can mimic cancer.** Radiation changes in the skin or mucosa can simulate those associated with cancer. Sections taken from a healing fracture can mimic an osteosarcoma.
+- **The specimen is only as good as what is sent.** The laboratory evaluation of a lesion depends on the specimen, which must be adequate, representative and properly preserved.
+- **Choice of tests.** Depending on the differential diagnosis, tissue is rapidly allocated for other studies such as cytogenetics, flow cytometry and molecular diagnostics.
+- **Choice of procedure.** The clinician and the pathologist together decide on frozen section or permanent sections, and on the site of biopsy.
 
 ## What is frozen section?
 
-Frozen section, or "quick-frozen section", is a technique for rapid histologic diagnosis in which fresh, unfixed tissue is frozen, cut with a cryostat, stained and examined, so that a diagnosis can be given within minutes, usually while the patient is still on the operating table.
+A **frozen section** is a "quick-frozen section" diagnosis, in which tissue is frozen and sectioned so that it can be examined histologically **within minutes**, usually during an operation. (The textbook does not define frozen section; this description follows its account.)
 
-**Procedure.** The fresh tissue specimen is sent directly from the operating theater to the laboratory without fixative. It is rapidly frozen (in a cryostat at about –20 to –30 °C, or with liquid nitrogen or carbon dioxide), cut into thin sections (5 to 10 µm), mounted on a slide, and stained quickly with haematoxylin and eosin or toluidine blue. The pathologist then gives a diagnosis, usually within 10 to 20 minutes. The tissue is subsequently processed routinely, and the final diagnosis is based on permanent sections.
-
-**Accuracy.** With proper training, frozen section diagnosis is highly accurate. However, the morphologic detail is inferior to that of standard paraffin sections because of freezing artifact, thicker sections, and incomplete sampling. It is difficult in fatty or very small specimens, and in lesions that are heavily calcified or haemorrhagic.
-
-**Limitations.** There are many instances in which the superior morphologic detail of permanent sections is needed, for example when radical surgery such as amputation of an extremity is contemplated, and the best practice in many instances is to await the results of permanent sections to avoid inadequate or unnecessary surgery. Very small biopsies may be exhausted by freezing and are better processed routinely.
-
+- With proper training it is highly accurate.
+- It does not give the superior morphologic detail of standard histology, so the best practice in many instances is to await the results of **permanent sections**, to avoid inadequate or unnecessary surgery.
 
 ## Mention the uses/indications of frozen section.
 
-The main uses of frozen section are as follows.
+A quick-frozen section is sometimes desirable for the following.
 
-1. **To determine the nature of a mass lesion** found at surgery, that is, to decide whether the lesion is benign or malignant, or inflammatory, so that the surgeon can proceed to the appropriate operation (for example, in a breast or thyroid lump, or an ovarian mass).
-2. **To evaluate the margins of an excised cancer,** to ascertain that the tumour has been entirely removed, or to decide whether further resection is needed.
-3. **To decide what additional studies beyond histology are needed,** by allowing tissue to be allocated for cytogenetics, flow cytometry, molecular diagnostics or microbiologic culture.
-4. **To examine sentinel lymph nodes** during surgery, as in breast cancer and melanoma, to guide the surgeon on the extent of nodal dissection.
-5. **To confirm that the tissue taken is representative** and adequate, or that a particular tissue (for example parathyroid) has been identified.
-6. **For techniques that need unfixed tissue,** such as certain enzyme histochemical and lipid stains, immunofluorescence on skin and kidney biopsies, and muscle and nerve biopsies.
+1. **Determining the nature of a mass lesion.**
+2. **Evaluating the margins of an excised cancer**, to ascertain that it has been entirely removed.
+3. **Deciding what additional studies** beyond histology are needed.
+4. **Sentinel lymph node examination.** Frozen sections of the sentinel node done during surgery guide the surgeon to the appropriate therapy, as in breast cancer.
 
+**Limitation.** It permits evaluation within minutes, but the superior morphologic detail of standard histology is needed in many instances, for example when radical surgery such as amputation of an extremity may be indicated. Permanent sections are then awaited.
 
 ## What are the common fixatives used for histo- and cytopathological examination?
 
-Fixation preserves tissue and cells by stabilising proteins and preventing autolysis and putrefaction, and it should be done promptly, using a volume of fixative that is 10 to 20 times that of the specimen.
+The site textbook names only one fixative: **formalin solution**, into which at least part of the specimen is promptly immersed. The others below come from outside sources (see the build log).
 
-| Fixative | Use |
+| Fixative | Notes |
 |---|---|
-| 10% neutral buffered formalin | The routine fixative for histopathology; also for immunohistochemistry and molecular studies on paraffin-embedded tissue |
-| Bouin's fluid | Small biopsies, testis (preserves nuclear detail), and gastrointestinal biopsies |
-| Zenker's fluid, B5 (mercuric chloride–based) | Lymph node, bone marrow biopsies and haematolymphoid tissues |
-| Carnoy's fluid | Rapid fixation; glycogen and nucleic acids |
-| Glutaraldehyde (2.5% to 3%) | Electron microscopy |
-| 95% ethyl alcohol (with or without ether) | Wet fixation of cytology smears for Papanicolaou staining; also spray (coating) fixatives |
-| Methanol | Fixation of air-dried smears for Romanowsky stains |
-| Michel's medium (transport medium) | Immunofluorescence of skin and renal biopsies |
-
+| **10% neutral buffered formalin** | The most widely used fixative for routine histopathology |
+| **Alcoholic formalin** | Combines a denaturing alcohol fixative with formalin; sometimes used to complete fixation after incomplete formalin fixation |
+| **Bouin's solution** | Contains picric acid; gives very good results with tissue that is stained with trichrome; preserves glycogen; lyses red cells |
+| **Carnoy's solution** | A rapidly penetrating alcohol-based fixative |
+| **Ethanol (95%)** | A denaturing alcohol fixative; specimens can be placed directly into it |
 
 ## Write about the role of IHC in tumour diagnosis.
 
-Immunohistochemistry (IHC) entails the staining of tissue sections with antibodies that are specific for certain cell lineages or that point to the presence of therapeutic targets, with detection by an enzyme-linked or fluorescent system. It is one of the most widely used adjuncts to routine haematoxylin and eosin histology, and it is also applicable to cytologic cell blocks. Histology and exfoliative cytology remain the foundation of cancer diagnosis, but they have inherent limits, for example when it is difficult to determine the nature and tissue of origin of a poorly differentiated tumour, and IHC helps to overcome them.
+**Immunohistochemistry (IHC)** is the staining of tissue sections with antibodies that are specific for certain cell lineages or that point to the presence of therapeutic targets.
 
-**1. Categorisation of undifferentiated malignant tumours.** Anaplastic tumours of diverse types, including carcinoma, lymphoma, melanoma and sarcoma, are impossible to distinguish on H&E, yet they must be identified because their treatment and prognosis differ. Antibodies against intermediate filaments are of particular value: cytokeratins indicate epithelial origin (carcinoma), desmin indicates muscle origin, and haematologic malignancies lack these components. Other useful markers are CD45 (leukocyte common antigen), expressed by virtually all haematopoietic neoplasms, SOX10 (and S100, HMB-45, Melan-A) for melanoma, and vimentin for mesenchymal tumours.
-
-**2. Determination of the site of origin of metastatic tumours.** When the primary is obscure, tissue- or organ-specific antigens in a metastatic deposit identify the source: prostate-specific antigen for prostatic carcinoma and thyroglobulin for thyroid carcinoma, and other markers such as TTF-1 for lung and thyroid carcinoma and CDX2 for gastrointestinal carcinoma.
-
-**3. Detection of molecules of prognostic or therapeutic significance.** Oestrogen and progesterone receptors in breast cancer are of prognostic and therapeutic value, since receptor-positive tumours respond to antioestrogen therapy and have a better prognosis. HER2 overexpression, caused by ERBB2 amplification, identifies breast cancers that respond to HER2-blocking antibodies, and FISH is used to confirm gene amplification when staining is equivocal. ALK immunostaining identifies lung cancers and lymphomas with ALK fusion proteins, which are an indication for ALK kinase inhibitors. Other examples include PD-L1 expression to guide immunotherapy and mismatch repair proteins.
-
-**4. Classification of lymphomas and leukaemias,** using panels of CD markers, and assessment of the proliferative index with Ki-67.
-
-**Limitations.** IHC results depend on fixation and technique, and the antibody panels must be interpreted with appropriate controls, since no marker is completely specific. It complements, but does not replace, morphologic assessment. Flow cytometry has the advantage over IHC of assessing multiple antigens simultaneously on individual cells in suspension, mainly in haematologic tumours.
+1. **Categorisation of undifferentiated malignant tumours.** Carcinoma, lymphoma, melanoma and sarcoma cannot be distinguished in routine H&E sections when poorly differentiated, but they must be separated because treatment and prognosis differ.
+   - **Cytokeratins** point to an epithelial origin (carcinoma).
+   - **Desmin** is specific for tumours of muscle origin.
+   - **CD45** is expressed by virtually all haematopoietic neoplasms.
+   - **SOX10** is expressed by most melanomas.
+2. **Determination of the site of origin of metastatic tumours** when the primary is obscure, by detecting tissue-specific antigens in the metastatic deposit. Stains for **PSA** and **thyroglobulin** identify carcinomas of the prostate and thyroid respectively.
+3. **Detection of molecules of prognostic or therapeutic significance.**
+   - **Oestrogen and progesterone receptors** in breast cancer cells predict response to antioestrogen therapy. Receptor-positive cancers have a better prognosis.
+   - **HER2** (the ERBB2 gene product) in breast cancer: strong staining shows that antibodies blocking HER2 can be used. FISH confirms ERBB2 amplification as an adjunct.
+   - **ALK** protein identifies lung cancers and lymphomas with active ALK fusion proteins, which are treated with ALK kinase inhibitors.
 
 ## 45-year-old man with hard neck mass and hoarseness of voice for 3 months — Clinical diagnosis? Tests to evaluate the mass?
 
-This is a malignant neoplasm of the neck until proved otherwise. The most likely clinical diagnosis is carcinoma of the thyroid, such as papillary or anaplastic carcinoma, that has invaded the recurrent laryngeal nerve, and the differential diagnosis is squamous cell carcinoma of the larynx or hypopharynx with metastasis to a cervical lymph node, or a lymphoma. I would confirm it by FNAC and histology, with laryngoscopy and imaging for the extent.
+**Clinical diagnosis: carcinoma of the thyroid** (an advanced thyroid cancer with local invasion, or a cervical lymph node metastasis from it).
 
-**Reasoning.** A hard, relatively fixed mass in a middle-aged man that has progressed over months suggests a malignant neoplasm, since benign lesions are usually soft, slow growing, and movable. Hoarseness of voice indicates involvement of the larynx or of the recurrent laryngeal nerve, producing vocal cord paralysis, and it points to a locally invasive tumour. A thyroid swelling moves with deglutition, whereas a lymph node mass is usually lateral and does not, which helps to separate a thyroid primary from nodal disease. A history of smoking and alcohol, dysphagia, haemoptysis, a previous history of irradiation to the neck, or a family history of thyroid cancer would help to distinguish the possibilities.
+- Most thyroid neoplasms manifest as thyroid nodules, and a neck mass can be the first sign.
+- **Hoarseness**, dysphagia, cough or dyspnoea suggest advanced disease.
+- **Anaplastic carcinoma** typically presents as a rapidly enlarging bulky neck mass with compression and invasion of neighbouring structures, causing dyspnoea, dysphagia, hoarseness and cough. It is more common in older patients (mean age 65 years).
+- **Medullary carcinoma** may present as a mass in the neck with dysphagia or hoarseness.
 
-**Investigations.**
+**Tests to evaluate the mass.**
 
-1. **Clinical examination:** the site, size, consistency, fixity and movement with deglutition of the mass, regional nodes, the thyroid, and the oral cavity and pharynx.
-2. **Indirect or fibreoptic laryngoscopy** to examine the mobility of the vocal cords and look for a laryngeal or hypopharyngeal primary.
-3. **Ultrasonography of the neck** with FNAC of the mass, thyroid or lymph node (the first-line test); where FNAC is inconclusive, core needle biopsy or excision biopsy and histopathology, which gives the type and grade.
-4. **Immunohistochemistry** to determine the origin: thyroglobulin and TTF-1 (thyroid), calcitonin (medullary carcinoma), cytokeratin and p40 (squamous carcinoma), and CD45 with lymphoid markers (lymphoma).
-5. **Biochemistry:** thyroid function tests, and serum calcitonin and CEA if medullary carcinoma is suspected.
-6. **Imaging:** CT or MRI of the neck and upper chest for local extent and nodal spread, and chest radiograph or CT to look for pulmonary metastases.
-7. **Staging** by the TNM system after histologic confirmation.
-
+1. **Fine-needle aspiration cytology**, the key test to separate benign from malignant nodules, supplemented by molecular testing when the cytology is indeterminate.
+2. **Ultrasonography**, by which many thyroid cancers are detected.
+3. **Thyroid scintigraphy.** Papillary carcinomas are cold masses, and hot nodules are almost never malignant. It is generally done only when the TSH level is low.
+4. **Histology of the resected tumour**, which may be the only way to diagnose high-grade differentiated and poorly differentiated carcinomas, and which shows capsular and vascular invasion in follicular carcinoma.
+5. **Serum calcitonin and carcinoembryonic antigen (CEA)** if medullary carcinoma is suspected.
+6. **Staging** for spread to adjacent neck structures and to the lungs.
 
 ## 60-year-old man with fungating, ulcerated growth on the leg for 6 months, fixed to the underlying surface — Probable diagnosis? How can you diagnose the case?
 
-The probable diagnosis is squamous cell carcinoma of the skin of the leg, possibly arising in a chronic ulcer or scar (Marjolin ulcer). The diagnosis is made by a biopsy from the edge of the lesion for histopathology, with assessment of the regional lymph nodes and of the extent of invasion.
+**Probable diagnosis: squamous cell carcinoma of the skin.**
 
-**Reasoning.** A fungating, ulcerated growth that is fixed to the underlying tissue in an older man indicates a locally invasive malignant tumour, which has penetrated through the skin and into the deeper structures. Squamous cell carcinoma is the commonest such malignancy. Predisposing factors are chronic sun exposure, a long-standing ulcer, scar, burn or sinus (as in chronic osteomyelitis, which is in the list of chronic inflammatory conditions that predispose to cancer), radiation, and arsenic exposure. The differential diagnosis includes basal cell carcinoma (locally invasive but only rarely metastasising, and more common on the face), amelanotic melanoma, a soft tissue sarcoma that has ulcerated, and Kaposi sarcoma.
+- Invasive squamous cell carcinomas are nodular, show variable keratin production (hyperkeratotic scale) and may ulcerate.
+- A growth fixed to the underlying structures shows invasion, the feature that most reliably marks malignancy after metastasis.
+- Risk factors include sun exposure, chronic ulcers and draining osteomyelitis, old burn scars, industrial carcinogens (tars and oils), arsenicals, ionising radiation and immunosuppression.
+- Fewer than 5% of these tumours metastasise to regional lymph nodes.
 
-**Diagnosis.**
+**How to diagnose.**
 
-1. **History and examination:** the duration, previous ulcer or scar, risk factors, the size, edge and base of the lesion, fixity to bone or deep structures, and the inguinal and popliteal lymph nodes.
-2. **Biopsy:** incisional (wedge) or punch biopsy from the edge of the ulcer, including adjacent normal tissue and avoiding the necrotic centre. Histology shows invasive nests of atypical squamous cells with keratin pearls (well differentiated), and the grade is assigned.
-3. **FNAC of enlarged inguinal lymph nodes** to detect lymphatic metastasis.
-4. **Imaging:** radiograph, CT or MRI of the limb to assess invasion of bone and deep tissues, and chest imaging or CT for staging.
-5. **Staging** by the TNM system, which guides wide local excision with adequate margins, possibly with nodal dissection, or amputation for bone involvement, and radiotherapy.
-
+1. **History and examination**, including the regional lymph nodes.
+2. **Biopsy with histology.** Take an incisional biopsy from the edge of the lesion. The tumour shows variable differentiation, from orderly lobules with keratinisation to highly anaplastic cells with single-cell keratinisation (dyskeratosis). Poorly differentiated tumours may need **immunohistochemistry for keratins** to confirm the diagnosis.
+3. **Staging**: spread to regional nodes and distant sites.
 
 ## 70-year-old man with blackish pigmented lesion on the right foot for 4 months and new right inguinal lymphadenopathy — Probable diagnosis? How can you diagnose the case?
 
-The probable diagnosis is malignant melanoma of the skin of the foot, with metastasis to the right inguinal lymph nodes. The diagnosis is confirmed by excisional biopsy of the lesion for histology with immunohistochemistry, and FNAC or biopsy of the lymph node, followed by staging.
+**Probable diagnosis: malignant melanoma of the foot (acral lentiginous type), with metastasis to the right inguinal lymph nodes.**
 
-**Reasoning.** A recently evolving blackish pigmented lesion in an older person strongly suggests melanoma, a malignant tumour of melanocytes, and the new, enlarged regional lymph nodes in the drainage area of the foot (inguinal) point to lymphatic metastasis. Acral lentiginous melanoma of the sole and foot is not primarily related to sun exposure, and it is the commonest type in Asian and African populations. The differential diagnosis includes a benign nevus, seborrheic keratosis, pigmented basal cell carcinoma, and a haematoma beneath the nail or skin, and reactive lymphadenopathy from infection of the foot, which may enlarge the nodes without metastasis; this can be settled only by microscopic examination.
+- Melanoma is the deadliest skin cancer. It shows striking variation in colour (black, brown, red, dark blue, grey) and has irregular, notched borders.
+- **Acral/mucosal lentiginous melanoma** occurs at non–sun-exposed sites, such as the sole of the foot.
+- Locally advanced melanomas often metastasise, and the inguinal nodes drain the foot.
 
-**Diagnosis.**
+**How to diagnose.**
 
-1. **Clinical assessment** with the ABCDE criteria (asymmetry, border irregularity, colour variegation, diameter more than 6 mm, evolution), examination of the whole skin, and the draining nodes.
-2. **Excisional biopsy** with a narrow margin of normal skin, down to the subcutaneous fat, for histology. Incisional or shave biopsy is avoided where possible, because the depth of the tumour needs to be measured. Histology shows atypical melanocytes with pleomorphic nuclei, prominent nucleoli, mitoses, and pagetoid spread, and gives the Breslow thickness, Clark level, ulceration and mitotic rate, which are the main prognostic factors.
-3. **Immunohistochemistry:** SOX10, S100, HMB-45 and Melan-A confirm melanocytic origin, which also distinguishes melanoma from carcinoma, lymphoma and sarcoma.
-4. **Lymph node:** FNAC or core biopsy of the inguinal node to prove metastasis (sentinel node biopsy is used when the nodes are not clinically involved).
-5. **Molecular tests:** BRAF mutation analysis (present in about 60% of melanomas), since BRAF inhibitors produce striking responses in advanced disease, and, where relevant, KIT and NRAS testing. Melanoma also responds well to immune checkpoint inhibitors (anti-CTLA-4 and anti-PD-1).
-6. **Staging:** CT or PET-CT for metastases, and serum lactate dehydrogenase (LDH), and TNM classification.
-
+1. **Clinical assessment** by the **ABCDE** warning signs: Asymmetry, irregular Borders, variegated Colour, increasing Diameter, and Evolution.
+2. **Complete excision biopsy of the lesion with histology.** The melanoma cells have enlarged nuclei with irregular contours, peripherally clumped chromatin and prominent eosinophilic nucleoli. The **vertical thickness** of the excised tumour predicts the risk of spread.
+3. **Immunohistochemistry:** melanocytic markers such as HMB-45 and SOX10.
+4. **Assessment of the lymph nodes**, by fine-needle aspiration of the enlarged inguinal node or sentinel node biopsy. Even small numbers of malignant cells in a draining node worsen the prognosis.
+5. **Molecular testing.** All metastatic cutaneous melanomas should be tested for **BRAF** mutations. Acral melanomas are more likely to carry KIT mutations.
 
 ## Common types of environmental hazards and diseases.
 
-Environmental diseases are conditions caused by exposure to harmful chemical or physical agents in the ambient, workplace and personal environment. The main groups are air pollution, toxic metals, occupational and agricultural exposures, tobacco and alcohol, drugs, physical agents such as heat, radiation and electricity, and nutritional disorders.
+**Environmental diseases** are conditions caused by exposure to harmful chemical or physical agents in the ambient (outdoor and indoor), workplace and personal environments.
 
-Xenobiotics are foreign chemicals in air, water, food and soil that enter the body by inhalation, ingestion or skin contact. They may be excreted in urine, feces or expired air, or accumulate in bone, fat, brain and other tissues. They are converted into nontoxic products or activated into toxic ones by the two-phase reaction system that involves the cytochrome P-450 enzymes.
-
-| Group | Examples |
-|---|---|
-| Air pollution, outdoor | Ozone, sulphur dioxide, nitrogen dioxide, particulate matter (PM10, PM2.5), carbon monoxide |
-| Air pollution, indoor | Tobacco smoke, biomass smoke, radon, formaldehyde, bioaerosols, sick building syndrome |
-| Toxic metals | Lead, mercury, arsenic, cadmium |
-| Occupational and agricultural | Organic solvents (benzene), polycyclic hydrocarbons, organochlorines (DDT, PCBs, dioxin), vinyl chloride, bisphenol A, PFAS, mineral dusts (pneumoconioses), asbestos |
-| Lifestyle | Tobacco smoking, alcohol |
-| Therapeutic and illicit drugs | Acetaminophen, anticoagulants, hormone therapy, oral contraceptives, cocaine, opioids, amphetamines, marijuana |
-| Physical agents | Mechanical trauma, burns, hyperthermia and hypothermia, electrical injury, ionising radiation |
-| Nutritional | Undernutrition, vitamin and mineral deficiencies, obesity |
-
-Climate change and health disparities increasingly influence the distribution of environmental disease.
-
+| Type of hazard | Examples | Diseases |
+|---|---|---|
+| Personal behaviour | Tobacco, alcohol, drugs of abuse, diet | Lung and other cancers, COPD, atherosclerosis; cirrhosis, pancreatitis; malnutrition and obesity |
+| Air pollution | Ozone, sulphur dioxide, particulates, carbon monoxide; indoors, tobacco smoke, radon, formaldehyde, biomass smoke | Lung inflammation, asthma attacks, lung cancer, carbon monoxide poisoning |
+| Heavy metals | Lead, mercury, arsenic, cadmium | Anaemia and neuropathy (lead), Minamata disease (mercury), skin changes and cancers (arsenic), lung and kidney damage (cadmium) |
+| Occupational exposures | Organic solvents, polycyclic hydrocarbons, vinyl chloride, asbestos, silica, coal dust | Leukaemia (benzene), angiosarcoma of the liver, pneumoconioses, lung cancer |
+| Drugs | Adverse drug reactions, drugs of abuse | Organ injury |
+| Physical agents | Thermal injury (burns, hyperthermia, hypothermia), electrical injury, ionising radiation | Burns, radiation injury and cancer |
+| Nutritional factors | Dietary insufficiency, vitamin deficiency, obesity | Marasmus, kwashiorkor, vitamin deficiency syndromes |
 
 ## Sources of lead poisoning.
 
-The main sources are lead-containing paint and dust in old housing, contaminated drinking water and soil, leaded gasoline and automobile exhaust, and occupational exposure in mining, foundries, battery manufacture and spray painting.
+Lead exposure may occur through contaminated **air, food and water**.
 
-For most of the twentieth century the major environmental sources were lead-containing house paints and gasoline. Lead was banned from gasoline in the United States in 1996, but it remains a hazard, particularly for children. The sources can be grouped as follows:
+- **Lead-containing house paints and gasoline** were the major sources for most of the twentieth century. Flaking lead paint and lead-contaminated dust in older houses are major hazards for young children.
+- **Contaminated soil.**
+- **Drinking water** that has leached lead from lead pipes, as happened in Flint, Michigan.
+- **Automotive exhaust.**
+- **Occupational sources:** mining and extracting lead, foundry work, battery manufacture and spray painting.
 
-- **Environmental:** flaking lead paint and paint dust in older houses, contaminated soil, drinking water carried through lead pipes (as in the Flint, Michigan crisis of 2014–2016, when a change of water source leached lead from century-old pipes), and automobile exhaust.
-- **Occupational:** mining and extraction of lead, foundry work, battery manufacture and spray painting.
-- **Other sources recognised in clinical practice** (beyond the chapter): glazed pottery, certain cosmetics such as kohl, traditional remedies, adulterated spices and informal recycling of lead-acid batteries.
-
-Children are particularly vulnerable. They absorb more ingested lead than adults and are exposed through hand-to-mouth contact with dust and paint chips. The CDC recommends that measures be taken to limit exposure when a child's blood lead exceeds 3.5 µg/dL.
-
+Children absorb more ingested lead than adults.
 
 ## Important pathologic features of lead poisoning.
 
-Lead binds sulfhydryl groups and interferes with calcium metabolism, and its major targets are the bone marrow and blood, the nervous system, the gastrointestinal tract and the kidneys. The characteristic findings are microcytic hypochromic anaemia with basophilic stippling, lead lines in bone and gums, encephalopathy in children, peripheral neuropathy in adults, lead colic and proximal tubular damage.
+Lead binds to sulphydryl groups and interferes with calcium metabolism. The major anatomic targets are the **bone marrow and blood, nervous system, gastrointestinal tract and kidneys**.
 
-Most absorbed lead (80–85%) is deposited in newly forming bone and teeth, where it competes with calcium, binds phosphate and has a half-life of 20–30 years. The remainder lies in blood and soft tissues.
+1. **Blood and marrow.** Lead inhibits delta-aminolevulinic acid dehydratase and ferrochelatase, which are needed for haem synthesis. The result is a **microcytic hypochromic anaemia**, often with mild haemolysis, and distinctive **punctate basophilic stippling** of red cells.
+2. **Brain (children).** Marked brain oedema, demyelination of the cerebral and cerebellar white matter, and necrosis of cortical neurons with astrocytic proliferation. Milder effects are a reduced IQ and learning disability. Damage in children is usually irreversible.
+3. **Peripheral nerves (adults).** A demyelinating motor neuropathy, causing **wristdrop** then **footdrop**, which usually remits with chelation.
+4. **Gastrointestinal tract.** **Lead colic**, severe poorly localised abdominal pain.
+5. **Kidneys.** Proximal tubular damage with intranuclear inclusions, then interstitial fibrosis and renal failure. Reduced uric acid excretion can cause **saturnine gout**.
+6. **Bones and gums.** Increased bone density seen as radiodense **lead lines** in the epiphyses of children, impaired fracture healing, and a hyperpigmented lead line in the gums.
 
-- **Blood and bone marrow.** Lead inhibits two enzymes of haem synthesis, δ-aminolevulinic acid dehydratase and ferrochelatase. Iron incorporation into haem is impaired, giving microcytic, hypochromic anaemia, and erythrocyte protoporphyrin rises. Inhibition of Na⁺/K⁺-ATPase increases red cell fragility and causes mild haemolysis. The peripheral smear shows distinctive punctate basophilic stippling.
-- **Nervous system.** In children, effects range from subtle loss of IQ, learning disability and delayed psychomotor development to seizures, blindness, coma and death. Severe cases show brain oedema, demyelination of cerebral and cerebellar white matter, necrosis of cortical neurons and astrocytic proliferation. In adults a peripheral demyelinating neuropathy involves the motor nerves of the most used muscles, producing wristdrop and then footdrop. The adult neuropathy often remits after chelation, but the central damage in children is generally irreversible.
-- **Gastrointestinal tract.** Lead colic, severe poorly localised abdominal pain.
-- **Kidneys.** Proximal tubular damage with intranuclear inclusions of protein aggregates. Chronic exposure leads to interstitial fibrosis and renal failure. Reduced uric acid excretion may cause saturnine gout.
-- **Bone and gums.** Impaired remodeling of calcified cartilage in the epiphyses produces radiodense lead lines on radiographs. Lead stimulates pigmentation of the gingiva, and the tongue may darken. Fracture healing is delayed.
-
-Diagnosis. It requires suspicion: neurologic change in a child, or unexplained microcytic anaemia with basophilic stippling. Confirmation is by raised blood lead and red cell free (or zinc) protoporphyrin. Treatment is removal of the source and chelation.
-
+**Diagnosis:** elevated blood lead and red cell free protoporphyrin (or zinc protoporphyrin) levels.
 
 ## Sources of arsenic.
 
-Arsenic occurs naturally in soil and groundwater and is also released from mining and smelting, and from wood preservatives, herbicides and other agricultural products. Arsenic-contaminated drinking water is the most important source of exposure in Bangladesh.
-
-- **Natural sources:** arsenic is found in soils and water. High concentrations of inorganic arsenic are present in groundwater in countries such as Bangladesh, Chile and China. About 40 million people in Bangladesh drink arsenic-contaminated water, which makes this one of the greatest environmental cancer risks recognised.
-- **Industrial and agricultural:** release from mines and smelting industries, wood preservatives, herbicides and other agricultural products.
-- **Medicinal:** arsenic is present in some Chinese and Indian herbal medicines.
-- **Deliberate poisoning:** arsenic was the favoured homicidal poison of Renaissance Italy ("the poison of kings and the king of poisons"). Deliberate poisoning is rare today.
-
-The trivalent compounds (arsenic trioxide, sodium arsenite and arsenic trichloride) are the most toxic.
-
+- Arsenic is found **naturally in soils and water**.
+- **High concentrations of inorganic arsenic in groundwater** in countries such as Bangladesh, Chile and China. About 40 million people in Bangladesh drink arsenic-contaminated water.
+- Products such as **wood preservatives, herbicides** and other agricultural products.
+- Release from **mines and smelting industries**.
+- **Chinese and Indian herbal medicines.**
+- Deliberate poisoning is now rare.
 
 ## Toxic effects of arsenic on the body.
 
-Arsenic interferes with cellular metabolism, particularly mitochondrial oxidative phosphorylation, and its toxicity falls mainly on the gastrointestinal tract, nervous system, skin and heart. Chronic exposure causes characteristic skin lesions and cancers of the skin, lung and bladder.
+Arsenic salts interfere with several aspects of cellular metabolism. Trivalent arsenic can replace phosphate in ATP and so interferes with mitochondrial oxidative phosphorylation.
 
-Trivalent arsenic can replace phosphate in oxidative phosphorylation, and it also binds sulfhydryl groups and disturbs a variety of proteins.
-
-- **Acute poisoning.** Ingestion of large amounts causes severe gastrointestinal, cardiovascular and CNS toxicity that is often fatal.
-- **Nervous system.** A sensorimotor neuropathy with paraesthesias, numbness and pain appears 2–8 weeks after exposure.
-- **Cardiovascular system.** Hypertension, prolonged QTc interval and ventricular arrhythmias.
-- **Skin.** Chronic exposure produces numerous hypopigmented macules on a hyperpigmented background (a "raindrop" pattern) and hyperkeratotic papules on the palms and soles.
-- **Cancer.** This is the most serious consequence of chronic exposure: carcinomas of the lung, bladder and skin. The skin tumours are often multiple and appear on the palms and soles, unlike sun-induced skin cancers. The mechanism may involve defective nucleotide excision repair.
-
+- **Acute large doses:** gastrointestinal, cardiovascular and central nervous system toxicity, often fatal.
+- **Nervous system:** a sensorimotor neuropathy with paraesthesias, numbness and pain, appearing 2 to 8 weeks after exposure.
+- **Cardiovascular:** hypertension, and prolonged QTc interval with ventricular arrhythmias.
+- **Skin (chronic exposure):** many hypopigmented macules on a hyperpigmented background (raindrop appearance), and hyperkeratotic papules on the palms and soles.
+- **Cancer** is the most serious consequence of chronic exposure, particularly of the lung, bladder and skin. Arsenic-induced skin tumours are often multiple and usually appear on the palms and soles.
 
 ## Diseases associated with occupational exposure.
 
-Occupational exposure causes diseases of the lung (pneumoconioses, cancer, chronic obstructive disease), nervous system, kidney, blood, skin and liver, and cancers such as bladder cancer, leukaemia and liver angiosarcoma.
-
-More than 10 million occupational injuries occur each year in the United States, and about 65,000 people die from occupational injuries and illness. Most deaths result from toxic exposures that cause cancer, lung disease and other fatal conditions.
-
-| System | Disease | Agent |
+| System | Effect | Toxicant |
 |---|---|---|
-| Respiratory | Pneumoconioses and fibrosis | Coal dust, silica, asbestos, beryllium, cobalt |
-| | Lung cancer | Asbestos, radon, silica, nickel, arsenic, chromium, uranium, bis(chloromethyl) ether |
-| | COPD | Grain dust, coal dust, cadmium |
+| Respiratory | Lung cancer | Radon, asbestos, silica, nickel, arsenic, chromium, uranium |
+| | Nasal cancer | Isopropyl alcohol, wood dust |
+| | Chronic obstructive pulmonary disease | Grain dust, coal dust, cadmium |
 | | Hypersensitivity | Beryllium, isocyanates |
 | | Irritation | Ammonia, sulphur oxides, formaldehyde |
-| Nervous | Peripheral neuropathy | Solvents, acrylamide, mercury, lead, arsenic, DDT |
-| | CNS depression | Alcohols, ketones, aldehydes, solvents |
-| Urinary | Renal toxicity | Mercury, lead, glycol ethers, solvents |
-| | Bladder cancer | Naphthylamines, 4-aminobiphenyl, benzidine |
-| Haematopoietic | Leukaemia, marrow aplasia | Benzene |
-| Skin | Chloracne, folliculitis | PCBs, dioxins, herbicides |
-| | Cancer | Ultraviolet radiation, polycyclic hydrocarbons (scrotal cancer of chimney sweeps) |
-| Liver | Angiosarcoma | Vinyl chloride |
+| | Fibrosis | Silica, asbestos, cobalt |
 | Cardiovascular | Heart disease | Carbon monoxide, lead, solvents, cobalt, cadmium |
-| Reproductive | Infertility, stillbirth, teratogenesis | Lead, mercury, cadmium, phthalates, PCBs |
+| Nervous | Peripheral neuropathies | Solvents, acrylamide, mercury, lead, arsenic, DDT |
+| | CNS depression | Alcohols, ketones, aldehydes, solvents |
+| | Cataracts | Ultraviolet radiation |
+| Urinary | Renal toxicity | Mercury, lead, glycol ethers, solvents |
+| | Bladder cancer | Naphthylamines, 4-aminobiphenyl, benzidine, rubber products |
+| Reproductive | Male and female infertility, stillbirth, teratogenesis | Lead, mercury, cadmium, PCBs |
+| Haematopoietic | Leukaemia | Benzene |
+| Skin | Folliculitis and acneiform dermatosis | PCBs, dioxins, herbicides |
+| | Cancer | Ultraviolet radiation |
+| Gastrointestinal | Angiosarcoma of the liver | Vinyl chloride |
 
+The pneumoconioses (coal dust, silica, asbestos and beryllium) are non-neoplastic lung diseases caused by inhaling mineral dusts at work.
 
 ## Write a short note on environmental pollution.
 
-Environmental pollution is the contamination of air, water and soil with chemical and physical agents that damage health. Environmental diseases arise from exposure to such agents in the ambient, workplace and personal environments.
+Air pollution is a significant cause of morbidity and mortality worldwide, especially in people with pre-existing lung or heart disease.
 
-Outdoor air pollution. Ambient air in industrial nations carries a mixture of gaseous and particulate pollutants, mixed with fog to form smog. The main pollutants are as follows.
+**Outdoor air pollution.** The main pollutants are ozone, sulphur dioxide, nitrogen dioxide, carbon monoxide, lead and particulate matter (PM10 and PM2.5), which together form smog.
 
-- **Ground-level ozone**, formed from nitrogen oxides and volatile organic compounds in sunlight, injures respiratory epithelium and type I alveolar cells through free radicals. It reduces lung function and aggravates asthma. (This must be distinguished from the protective stratospheric ozone layer, which has been depleted by chlorofluorocarbons.)
-- **Sulphur dioxide**, from coal- and oil-burning power plants and smelters, forms sulphuric acid and triggers bronchospasm.
-- **Nitrogen dioxide** increases airway reactivity and respiratory infections in children.
-- **Particulate matter** (PM10 and PM2.5, "soot") causes pulmonary inflammation and cardiovascular effects. A rise of 10 µg/m³ in PM10 is associated with about 0.5% increase in daily mortality, mainly from cardiac and pulmonary disease, and particulates may promote lung cancer.
-- **Carbon monoxide**, a colourless, odourless gas from incomplete combustion, is a systemic asphyxiant that binds haemoglobin with high affinity. Acute poisoning causes cherry-red skin and mucosae in light-skinned persons, while chronic low-level exposure produces ischaemic changes in the CNS, especially the basal ganglia.
+| Pollutant | Effects |
+|---|---|
+| Ozone (ground level) | Free radicals injure respiratory epithelium; lung inflammation, reduced lung function, asthma attacks |
+| Sulphur dioxide (power plants burning coal and oil) | Burning of nose and throat, difficulty in breathing, asthma attacks |
+| Particulate matter (soot) | Lung inflammation and secondary cardiovascular effects; increased mortality; promotes lung cancer |
+| Carbon monoxide | Systemic asphyxiant; binds haemoglobin; cherry-red skin in acute poisoning; chronic ischaemic changes in the CNS |
 
-Indoor air pollution. Tobacco smoke is the commonest pollutant. Others are smoke from burning wood, dung and other fuels (used by about one-third of the world's population, with polycyclic hydrocarbons), carbon monoxide, nitrogen dioxide, asbestos, bioaerosols (Legionella, allergens, moulds), radon (the leading cause of lung cancer in nonsmokers), formaldehyde (a carcinogen and asthma trigger) and sick building syndrome.
+**Indoor air pollution.**
 
-Water and soil pollution. Toxic metals (lead in water pipes, arsenic in groundwater, mercury in fish, cadmium in soil from batteries and fertilisers), organochlorines (DDT, PCBs, dioxins), bisphenol A and the persistent "forever chemicals" (PFAS) enter food and water.
+- Tobacco smoke is the most common pollutant.
+- Smoke from burning wood, dung and coal for cooking, containing carcinogenic polycyclic hydrocarbons, predisposes to lung infections. One-third of the world's people burn such material at home.
+- **Radon** is the leading cause of lung cancer in non-smokers.
+- **Formaldehyde** causes breathing difficulty and eye and throat irritation, and is a carcinogen.
+- Bioaerosols (microbes, allergens), asbestos and nitrogen dioxide.
+- **Sick building syndrome** causes headaches and respiratory problems in office workers.
 
-Effects. Respiratory disease, cardiovascular disease and cancer predominate. Air pollution is a major cause of morbidity and mortality, especially in people with existing cardiac or pulmonary disease, and systemic inflammation may mediate some extrapulmonary effects. Climate change and social disadvantage increase vulnerability.
+**Water and soil.** Xenobiotics enter the body by ingestion as well as inhalation and skin contact. Examples are arsenic in groundwater and lead from old pipes and soil.
 
 ## Health hazards due to tobacco smoking.
 
-Smoking is the most readily preventable cause of death. It causes lung cancer and cancers of many other organs, chronic obstructive pulmonary disease, atherosclerosis with myocardial infarction and stroke, and harm to the developing foetus, and it harms nonsmokers through second-hand smoke.
+Smoking is the most readily preventable cause of death. Tobacco smoke contains about **7000 chemicals**, more than 60 of them carcinogens, and **nicotine**, which is strongly addictive.
 
-Tobacco smoke contains about 7000 chemicals, more than 60 of which are carcinogens. The harmful constituents include tar, polycyclic aromatic hydrocarbons, benzo[a]pyrene and nitrosamines (carcinogenesis), nicotine (addiction, ganglionic stimulation, tumour promotion), phenol (tumour promotion and mucosal irritation), carbon monoxide (impaired oxygen transport) and formaldehyde and nitrogen oxides (ciliary toxicity and mucosal irritation). Nicotine acts on nicotinic receptors and releases catecholamines, so it raises heart rate, blood pressure and cardiac output. Harm increases with the amount smoked, measured in pack-years.
+1. **Cancer.** Tobacco is the leading exogenous cause of human cancers, including **90% of lung cancers**. Smoking also causes cancers of the oral cavity, larynx, oesophagus, pancreas, bladder, kidney, cervix, liver, stomach, colon and haemopoietic cells. Smokeless tobacco is an important cause of oral cancer.
+2. **Lung disease.** Chronic bronchitis, emphysema and COPD, worsening of asthma, and increased risk of pulmonary tuberculosis.
+3. **Cardiovascular disease.** Atherosclerosis, myocardial infarction, stroke and peripheral vascular disease. The effect is multiplied by hypertension and hypercholesterolaemia.
+4. **Pregnancy.** Spontaneous abortion, preterm birth and intrauterine growth retardation. Nicotine harms fetal brain development.
+5. **Other disorders.** Type 2 diabetes, rheumatoid arthritis, macular degeneration and erectile dysfunction.
+6. **Synergy.** The risk is multiplied with alcohol (oral and laryngeal cancers) and with occupational exposures such as asbestos and uranium (lung cancer).
+7. **Passive smoking.** Second-hand smoke carries many of the same risks, including lung cancer in non-smokers.
 
-- **Cancer.** Smoking causes about 90% of lung cancers and also cancers of the oral cavity, pharynx, larynx, oesophagus, stomach, pancreas, liver, colon, kidney, bladder, cervix and haematopoietic cells (acute myeloid leukaemia). Smokeless tobacco causes oral cancer.
-- **Lung disease.** Chronic bronchitis, emphysema and COPD, from recruitment of leukocytes and increased elastase activity. It also worsens asthma and increases the risk of tuberculosis.
-- **Cardiovascular disease.** Atherosclerosis, myocardial infarction, stroke and peripheral vascular disease, through increased platelet aggregation, reduced oxygen supply, increased oxygen demand and a lower threshold for ventricular fibrillation. The effect multiplies when combined with hypertension and hypercholesterolaemia.
-- **Foetus.** Spontaneous abortion, preterm birth, stillbirth and intrauterine growth retardation. Maternal smoking is also associated with orofacial clefts.
-- **Other.** Type 2 diabetes, rheumatoid arthritis, age-related macular degeneration, cataract, ectopic pregnancy, reduced fertility and erectile dysfunction.
-- **Passive smoking.** Relative risk of lung cancer in exposed nonsmokers about 1.3, coronary artery disease and fatal myocardial infarction, and respiratory illness and asthma in children in smoking households.
-- **Interactions.** Tobacco multiplies the risk of oral, laryngeal and oesophageal cancer with alcohol, and of lung cancer with asbestos and uranium exposure (about 10-fold).
-- **Vaping.** E-cigarettes are not harmless: they carry the risks of nicotine addiction, respiratory symptoms and the e-cigarette or vaping product use–associated lung injury (EVALI) described in 2019.
-
-Smoking cessation lowers cardiovascular risk within a few years, but the excess lung cancer risk persists for decades.
-
+Quitting reduces the risk, but the excess risk of lung cancer persists for decades.
 
 ## Organs where carcinomas may develop due to the carcinogenic effect of tobacco.
 
-Tobacco causes carcinomas of the lung, oral cavity, pharynx, larynx, oesophagus, stomach, pancreas, liver, colon, kidney, bladder and cervix, and some leukaemias. Lung cancer is the commonest, and about 90% of lung cancers occur in smokers.
-
-| Organ | Suspected carcinogen |
+| Organ | Suspected carcinogens |
 |---|---|
-| Lung and larynx | Polycyclic aromatic hydrocarbons, NNK (a nicotine-derived nitrosamine ketone), polonium-210 |
-| Oesophagus | NNN (N′-nitrosonornicotine) |
+| Lung and larynx | Polycyclic aromatic hydrocarbons, NNK, polonium 210 |
+| Oesophagus | NNN |
 | Pancreas | NNK |
-| Bladder | 4-Aminobiphenyl, 2-naphthylamine |
+| Bladder | 4-aminobiphenyl, 2-naphthylamine |
 | Oral cavity (smoking) | Polycyclic aromatic hydrocarbons, NNK, NNN |
-| Oral cavity (smokeless tobacco) | NNK, NNN, polonium-210 |
+| Oral cavity (snuff) | NNK, NNN, polonium 210 |
 
-The carcinogens in smoke are metabolised by cytochrome P-450 enzymes to electrophilic intermediates that form DNA adducts. If these are repaired by error-prone mechanisms, oncogenic mutations result, and the genomes of lung cancers in smokers carry thousands of mutations of the type produced by tobacco carcinogens. Other organs are affected by the circulating carcinogens or their metabolites, excreted in urine (bladder, kidney). The risk correlates with pack-years. Combining tobacco with alcohol multiplies the risk of oral, laryngeal and oesophageal cancer.
-
+Smoking is also linked to cancers of the kidney, cervix, liver, stomach, colon and haemopoietic cells (leukaemia).
 
 ## Adverse effects of alcohol abuse on health.
 
-Alcohol abuse injures the liver (fatty change, alcoholic hepatitis, cirrhosis), gastrointestinal tract, nervous system, heart and pancreas, causes foetal alcohol syndrome and malnutrition, and increases the risk of cancer of the oral cavity, oesophagus, larynx, liver and breast.
+**Acute effects.** Mainly on the CNS, which is depressed: drowsiness at about 200 mg/dL, with stupor and coma at higher levels. Fatty change in the liver and acute gastritis with ulceration may occur and are reversible if drinking stops.
 
-Metabolism. Ethanol is oxidised to acetaldehyde by alcohol dehydrogenase (main route), the microsomal CYP2E1 system and catalase (about 5%), and acetaldehyde is converted to acetate by aldehyde dehydrogenase. The toxic effects stem from acetaldehyde, from the fall in NAD and rise in NADH (which causes hepatic fat accumulation and lactic acidosis), and from reactive oxygen species and gut-derived endotoxin that stimulate TNF release from Kupffer cells. About 50% of Asians carry the ALDH2*2 variant, which is dominant negative, and heterozygotes who drink have a higher risk of oesophageal cancer.
+**Chronic effects.**
 
-Acute effects. CNS depression, first of subcortical inhibitory control and then of cortical and medullary centres, with drowsiness at about 200 mg/dL, stupor at 300 mg/dL, and coma and respiratory arrest at higher levels. Fatty change of the liver and acute gastritis and ulceration are reversible.
-
-Chronic effects.
-
-- **Liver:** fatty change, alcoholic hepatitis and cirrhosis, with portal hypertension and an increased risk of hepatocellular carcinoma.
-- **Gastrointestinal tract:** gastritis, gastric ulcer and bleeding from oesophageal varices.
-- **Nervous system:** thiamine deficiency with peripheral neuropathy and Wernicke-Korsakoff syndrome, cerebral atrophy, cerebellar degeneration and optic neuropathy.
-- **Cardiovascular system:** dilated (alcoholic) cardiomyopathy, hypertension and, with liver injury, lowered HDL.
-- **Pancreas:** acute and chronic pancreatitis.
-- **Foetus:** foetal alcohol syndrome with microcephaly, growth retardation, facial abnormalities and mental impairment.
-- **Cancer:** oral cavity, oesophagus, larynx and liver, and breast in females even with low to moderate intake. The risk is multiplied by smoking.
-- **Nutrition:** ethanol provides empty calories and displaces food, and malnutrition and deficiencies of thiamine, pyridoxine, folate and vitamin A are common.
+1. **Liver.** The main site of chronic injury: fatty change, **alcoholic hepatitis** and **cirrhosis**, which leads to portal hypertension and raises the risk of hepatocellular carcinoma.
+2. **Gastrointestinal tract.** Massive, sometimes fatal bleeding from gastritis, gastric ulcer or oesophageal varices.
+3. **Nervous system.** Thiamine deficiency causes peripheral neuropathy and **Wernicke-Korsakoff syndrome**. Cerebral atrophy, cerebellar degeneration and optic neuropathy may occur.
+4. **Cardiovascular system.** Alcoholic cardiomyopathy, hypertension, and a lower HDL level with more coronary heart disease.
+5. **Pancreatitis**, acute and chronic.
+6. **Fetus.** **Fetal alcohol syndrome**: microcephaly, growth retardation and facial abnormalities, with reduced mental function later.
+7. **Cancer.** Oral cavity, oesophagus and liver, with a small increase in breast cancer risk even at low intake. The risk rises synergistically with smoking.
+8. **Malnutrition.** Alcohol supplies empty calories, and deficiencies of B vitamins are common.
 
 ## Effects of radiation on various organs of the body.
 
-Ionising radiation damages DNA directly and through free radicals, so rapidly dividing tissues such as bone marrow, lymphoid tissue, the gastrointestinal mucosa and gonads are most sensitive. It also causes vascular damage, fibrosis and cancer.
-
-Radiation injures cells by radiolysis of water, which generates reactive oxygen species, and by direct damage to DNA, especially double-strand breaks. Repair by nonhomologous end joining can leave deletions, translocations and inversions. Cells may die, fail to divide, or survive with mutations, leading to carcinogenesis and teratogenesis. Nondividing cells such as neurons and muscle are relatively resistant.
+Ionising radiation damages DNA, so **rapidly dividing cells** (gonads, bone marrow, lymphoid tissue, gastrointestinal mucosa) are the most vulnerable, and injury appears early. Vascular damage causes fibrosis and ischaemic atrophy months or years later.
 
 | Organ | Effects |
 |---|---|
-| Skin | Early erythema and oedema; dyspigmentation after weeks to months; later atrophy, telangiectasia and, years later, cancer |
-| Lungs | Oedema and acute respiratory distress syndrome early; interstitial fibrosis in months to years |
-| Gastrointestinal tract | Mucosal injury and ulceration early; fibrosis of the wall late |
-| Gonads | Destruction of spermatogonia and spermatids in the testes, and of germ and granulosa cells in the ovary; late atrophy and fibrosis |
-| Blood and bone marrow | Lymphopenia within hours, neutropenia in days, thrombocytopenia by the end of the first week, anaemia at 2–3 weeks; marrow aplasia at high dose |
-| Lymph nodes | Acute cell loss, then atrophy and fibrosis |
-| Brain | Adult brain resistant; embryonic brain suffers destruction of neurons and glia |
-| Blood vessels | Endothelial injury, then intimal fibrosis and hyalinisation that narrow the lumen, causing chronic ischaemia and atrophy months or years later |
+| Skin | Erythema and oedema (early); dyspigmentation (weeks to months); atrophy and cancer (months to years) |
+| Lungs | Oedema and ARDS (early); interstitial fibrosis (months to years) |
+| Gastrointestinal tract | Mucosal injury and ulceration (early); fibrosis of the wall (late) |
+| Bone marrow and blood | Thrombocytopenia, granulocytopenia, anaemia, lymphopenia |
+| Lymph nodes | Acute tissue loss; atrophy and fibrosis (late) |
+| Gonads | Destruction of testes and ovaries; atrophy and fibrosis (late) |
+| Brain | Adult brain resistant; embryonic brain shows destruction of neurons and glial cells |
 
-Total-body irradiation. Below 1 Sv there is little effect. From 1–2 Sv the main injury is to lymphocytes. From 2–10 Sv the bone marrow is the target, with leukopenia, haemorrhage, hair loss and vomiting after 2–6 weeks. From 10–20 Sv the small bowel is the target, with diarrhoea, fever and electrolyte imbalance in 5–14 days. Above 50 Sv the brain is affected, with ataxia, coma and convulsions within hours.
-
-Late effects. Fibrosis, and an increased risk of cancer (leukaemia, thyroid, breast and lung), as in Hiroshima and Nagasaki survivors and after Chernobyl. Irradiated cells may show giant, pleomorphic nuclei that can resemble cancer cells.
-
+Radiation also causes mutagenesis, carcinogenesis and teratogenesis.
 
 ## Classify burn on the basis of degree.
 
-Burns are classified by depth into superficial (first degree), partial-thickness (second degree) and full-thickness (third degree) burns, with deeper injury to muscle and bone sometimes called fourth degree.
+Burns used to be classified as first to fourth degree by depth, and are now classified as superficial, partial-thickness and full-thickness.
 
-| Classification | Former term | Depth | Appearance and symptoms |
+| Current term | Old term | Extent | Appearance |
 |---|---|---|---|
-| Superficial | First degree | Epidermis only | Red, dry, painful, no blisters; heals without scarring |
-| Partial-thickness | Second degree | Dermis | Pink or mottled, blistered, moist and painful |
-| Full-thickness | Third degree | Through dermis to subcutaneous tissue | White or charred, dry, leathery and painless because nerve endings are destroyed |
-| Full-thickness with deeper injury | Fourth degree | Muscle, tendon or bone | Charred, with deeper necrosis |
-
-Histologically the devitalised tissue shows coagulative necrosis, with an inflammatory exudate in the adjacent viable tissue. Full-thickness burns need excision and grafting.
-
+| Superficial | First degree | Confined to the epidermis | |
+| Partial-thickness | Second degree | Injury to the dermis | Pink or mottled with blisters; painful |
+| Full-thickness | Third degree | Extends to the subcutaneous tissue | White or charred, dry and painless (nerve endings destroyed) |
+| Full-thickness with muscle damage | Fourth degree | Damage to muscle beneath the subcutaneous tissue | |
 
 ## Factors that influence the severity of burn injury.
 
-The severity of a burn depends on its depth, the percentage of body surface involved, internal injury from inhaling hot or toxic fumes, and the promptness and effectiveness of treatment, especially fluid and electrolyte management and control of infection.
+The clinical significance of a burn depends on the following.
 
-- **Depth** of the burn.
-- **Percentage of the body surface involved.** In burns of more than 20% of body surface, a systemic inflammatory response shifts fluid rapidly into the interstitium, causing shock and generalised oedema, including pulmonary oedema. When more than 40% is burned, the resting metabolic rate doubles.
-- **Inhalation injury.** Heat and noxious gases injure the airway and lungs within 24–48 hours. Water-soluble gases (chlorine, sulphur oxides, ammonia) form acids or alkalis and cause upper airway swelling and obstruction, whereas lipid-soluble gases and products of burning plastics reach deeper airways and cause pneumonitis.
-- **Promptness and efficacy of therapy.** Fluid and electrolyte management, nutritional support for the hypermetabolic state, early excision and grafting, and prevention of wound infection. Virtually all burns become colonised, most often by Pseudomonas aeruginosa, MRSA and Candida, and burn sepsis can lead to pneumonia, septic shock, renal failure and ARDS.
+1. **Depth of the burn.**
+2. **Percentage of body surface involved.** In burns of more than 20% of the body surface there is a rapid shift of fluid into the interstitial compartments, causing shock. When more than 40% is burned, the resting metabolic rate doubles.
+3. **Internal injuries** caused by inhalation of hot and toxic fumes.
+4. **Promptness and efficacy of therapy**, especially fluid and electrolyte management and prevention or control of wound infection.
 
-The three most serious complications are shock, sepsis and respiratory insufficiency. Age at the extremes, the site (face, hands, perineum) and coexisting illness also affect outcome. Survivors may develop hypertrophic scars and itching.
+The three most serious complications are **shock, sepsis and respiratory insufficiency**.
 
 ## Causes of malnutrition.
 
-Malnutrition is primary when the diet lacks protein, calories, vitamins or minerals, and secondary when the diet is adequate but absorption, utilisation, storage or need is disturbed. The main causes are poverty, acute and chronic illness, alcohol use disorder, ignorance, self-imposed restriction and gastrointestinal disease.
+In **primary malnutrition** one or more dietary components are missing. **Secondary malnutrition** results from malabsorption, impaired utilisation or storage, excess loss, or increased need for nutrients.
 
-An adequate diet supplies energy as carbohydrates, fats and proteins, amino acids and fatty acids as building blocks, and vitamins and minerals as coenzymes, hormones and structural components. In **primary malnutrition** one or more of these is missing from the diet. In **secondary malnutrition** the cause is malabsorption, impaired utilisation or storage, excess loss or increased need.
-
-- **Poverty.** Homeless persons, the elderly and children of the poor. In low-resource countries, crop failure, drought, livestock deaths, war and political upheaval cause childhood and adult malnutrition.
-- **Acute and chronic illness.** The basal metabolic rate rises in many illnesses and requirements increase. Wasting diseases such as advanced cancer and AIDS cause cachexia.
-- **Chronic alcohol use.** Poor diet, defective absorption, abnormal utilisation and storage, and increased loss cause deficiencies of thiamine, pyridoxine, folate and vitamin A.
-- **Ignorance and failure of supplementation.** Infants, adolescents and pregnant women have increased needs. Examples are iron deficiency in infants fed only artificial milk, thiamine deficiency where polished rice is the staple, and iodine deficiency in regions far from the sea.
-- **Self-imposed dietary restriction.** Anorexia nervosa, bulimia and less overt eating disorders.
-- **Other causes.** Gastrointestinal disease and malabsorption syndromes, genetic diseases, drugs that block nutrient uptake or utilisation, and inadequate total parenteral nutrition.
-
+1. **Poverty**, crop failure, livestock deaths, drought, war and political upheaval.
+2. **Acute and chronic illnesses**, which raise the basal metabolic rate, especially wasting diseases such as advanced cancer and AIDS with cachexia.
+3. **Chronic excessive alcohol use**, with deficiency of thiamine, pyridoxine, folate and vitamin A.
+4. **Ignorance and failure of diet supplementation**, for example the increased needs of infants, adolescents and pregnant women.
+5. **Self-imposed dietary restriction:** anorexia nervosa and bulimia.
+6. **Other causes:** gastrointestinal diseases and malabsorption, genetic diseases, drugs that block nutrient uptake, and inadequate total parenteral nutrition.
 
 ## Common nutritional disorders of Bangladesh.
 
-The commonest nutritional disorders in Bangladesh are protein-energy malnutrition (stunting, wasting and underweight in children), and deficiencies of iron, vitamin A, iodine, zinc and vitamin D, with obesity emerging as a problem of urban populations.
+The site textbook does not cover Bangladesh specifically. The disorders below come from outside sources (see the build log), and each is described in the textbook.
 
-- **Protein-energy malnutrition.** The Bangladesh Demographic and Health Survey 2022 found stunting in about 24% of children under five (down from 31% in 2017–18), underweight in about 22%, and wasting in about 11%, which was higher than the 8% of the previous survey. Stunting reflects chronic malnutrition in utero and in early childhood. Marasmus is more frequent than classic kwashiorkor.
-- **Iron deficiency anaemia.** Common in women of reproductive age, pregnant women, adolescent girls and young children, caused by an inadequate diet, blood loss and hookworm infestation.
-- **Vitamin A deficiency.** Night blindness and xerophthalmia in preschool children, reduced by supplementation programs.
-- **Iodine deficiency.** Goiter and hypothyroidism, reduced by salt iodisation.
-- **Zinc deficiency.** Contributes to diarrhoea and growth failure in children. Zinc supplementation is given with oral rehydration therapy.
-- **Vitamin D deficiency and rickets.** Seen even in a sunny country, especially in veiled women, infants and urban populations, and associated with low calcium intake.
-- **Folate and vitamin B₁₂ deficiency** and **calcium deficiency** in women.
-- **Overweight and obesity.** Rising among urban adults, with diabetes and hypertension, so that undernutrition and overnutrition coexist (double burden).
-
+1. **Protein-energy malnutrition.** Stunting, wasting and underweight in children, with marasmus and kwashiorkor at the severe end.
+2. **Vitamin A deficiency.** Night blindness and xerophthalmia in children.
+3. **Iron deficiency anaemia.** Common in children and in women, including pregnant and lactating women.
+4. **Iodine deficiency disorders.** Goitre and hypothyroidism.
+5. **Zinc deficiency.**
 
 ## What is PEM?
 
-Protein-energy malnutrition, now called severe acute malnutrition, is a spectrum of clinical syndromes resulting from a dietary intake of protein and calories that is inadequate for the body's needs. Its two ends are marasmus and kwashiorkor.
-
-Severe acute malnutrition is a life-threatening wasting disorder of children caused by poor nutrient intake or repeated illness. It is defined by a mid-upper arm circumference below 115 mm, weight-for-height three standard deviations below normal, or bilateral pitting oedema of the lower limbs. About 45 million children under five suffered from wasting in 2022, 13.6 million of them severely, and more than three-quarters of children with severe wasting live in Asia. Stunting, which results from malnutrition in utero and in early childhood, affects over 20% of children under five.
-
-There are two functionally distinct protein compartments: the somatic compartment (skeletal muscle) and the visceral compartment (liver and other organs). Marasmus mainly depletes the somatic compartment, and kwashiorkor mainly depletes the visceral compartment, so serum albumin falls and oedema appears. The two forms overlap, and some children have features of both (marasmic kwashiorkor).
-
+**Protein-energy malnutrition (PEM)** is a consequence of inadequate intake of proteins and calories, or of deficiencies in the digestion or absorption of proteins, resulting in loss of fat and muscle mass, weight loss and generalised weakness. In children it is called **severe acute malnutrition**, a spectrum of syndromes with **marasmus** and **kwashiorkor** at its two ends.
 
 ## Causes of PEM.
 
-PEM is caused by inadequate intake of protein and calories because of poverty, early weaning, ignorance and infections, or by secondary causes such as malabsorption, chronic disease and excess protein loss.
+PEM results from dietary intake of protein and calories that is inadequate to meet the body's needs.
 
-- **Primary causes (inadequate dietary intake).** Poverty, food shortage from crop failure, drought, war and political upheaval, and ignorance about the nutritional needs of infants. Kwashiorkor typically follows early weaning onto an almost entirely carbohydrate diet, and marasmus follows severe deficiency of total calories. Recurrent illness, particularly diarrhoea and infections, lowers appetite and increases losses and requirements.
-- **Secondary causes.**
-- Malabsorption: chronic diarrhoeal states, protein-losing enteropathy, celiac disease.
-- Excess protein loss: nephrotic syndrome, extensive burns.
-- Increased demand or catabolism: chronic infections, cancer and AIDS (cachexia), inflammatory disease.
-- Impaired intake: dysphagia after stroke, anorexia nervosa, alcohol use disorder, and inadequate parenteral nutrition.
-- **High-resource settings.** More than half of older nursing home residents in the United States are malnourished. Adult malnutrition is commonly inflammation-driven in cancer, COPD, inflammatory bowel disease and renal failure, because cytokines raise resting energy expenditure and increase muscle catabolism.
-
+1. **Primary:** inadequate diet because of poverty, crop failure, drought, war, ignorance, and the increased needs of infants, adolescents and pregnant women.
+2. **Secondary:** malabsorption, impaired utilisation or storage, excess loss, or increased need, as in chronic illness, cancer cachexia and AIDS.
+3. **Marasmus:** a diet severely lacking in calories.
+4. **Kwashiorkor:** protein deprivation relatively greater than the reduction in total calories. It is seen in children weaned too early and fed an almost exclusively carbohydrate diet, in chronic diarrhoeal states where protein is not absorbed, and in chronic protein loss (protein-losing enteropathies, the nephrotic syndrome and the aftermath of extensive burns).
+5. **Recurrent illnesses** and poor intake in children.
 
 ## Differences between marasmus and kwashiorkor.
 
-Marasmus is caused by severe deficiency of total calories and shows emaciation with loss of muscle and fat but little oedema. Kwashiorkor is caused by relatively greater deficiency of protein than calories and shows generalised oedema, fatty liver and skin changes.
-
 | Feature | Marasmus | Kwashiorkor |
 |---|---|---|
-| Deficiency | Severe lack of calories (total energy) | Protein deprivation greater than calorie deficit |
-| Usual setting | Early weaning, poverty, repeated infection | Weaning onto carbohydrate diet after another child is born; protein loss states |
-| Body weight | Below 60% of normal for age, sex and height | 60–80% of normal, masked by oedema |
-| Oedema | Absent | Present, generalised or dependent |
-| Subcutaneous fat | Lost | Relatively preserved |
-| Muscle | Wasted (somatic protein depleted) | Relatively spared |
-| Visceral protein, serum albumin | Normal or slightly low | Markedly reduced (hypoalbuminaemia) |
-| Appearance | Emaciated, "old man" face, head appears too large | Puffy face, swollen limbs and ascites, "moon face" |
-| Skin and hair | Dry, thin | "Flaky paint" dermatosis; sparse, depigmented, straight hair with bands of colour |
+| Cause | Diet severely lacking in calories | Protein deprivation relatively greater than the reduction in total calories |
+| Weight | Falls to 60% of normal for sex, height and age | 60% to 80% of normal, masked by oedema |
+| Protein compartment | Somatic compartment depleted; visceral compartment spared | Visceral compartment severely depleted |
+| Serum albumin | Normal or slightly reduced | Low (hypoalbuminaemia) |
+| Oedema | Absent | Generalised or dependent oedema |
+| Muscle and fat | Marked loss of muscle and subcutaneous fat; emaciated limbs; head appears too large | Relative sparing of subcutaneous fat and muscle |
+| Skin and hair | | "Flaky paint" skin lesions; hair changes |
 | Liver | Not enlarged | Enlarged and fatty |
-| Behaviour and appetite | Alert, hungry | Apathetic, irritable, anorexic |
-| Small bowel | Rarely abnormal | Mucosal atrophy, villous loss, disaccharidase deficiency |
-| Leptin and cortisol | Leptin low, cortisol high | Variable |
-| Immunity | T-cell immunodeficiency | Immunodeficiency, with more marked thymic and lymphoid atrophy |
+| Other | Growth retardation; anaemia; vitamin deficiencies; immune deficiency | Apathy, listlessness and loss of appetite; vitamin deficiencies; immune defects; small bowel mucosal atrophy |
 
-Both may show anaemia, vitamin deficiencies and infections, and the two forms overlap.
-
+The two are ends of a spectrum, and considerable overlap exists.
 
 ## Sources of vitamin A.
 
-Preformed vitamin A comes from animal foods such as liver, fish, eggs, milk and butter, and provitamin A carotenoids come from yellow and leafy green vegetables such as carrots, squash and spinach.
-
-- **Animal sources (preformed vitamin A, retinol):** liver, fish and fish liver oils, eggs, milk, butter and other dairy products.
-- **Plant sources (carotenoids):** yellow and leafy green vegetables such as carrots, squash and spinach, and yellow-orange fruits. β-Carotene is the most important carotenoid and is converted efficiently to retinol in the intestine. Carotenoids supply about 30% of the vitamin A in human diets.
-
-The recommended dietary allowance is expressed in retinol equivalents to account for both sources. Absorption of vitamin A needs bile, pancreatic enzymes and dietary fat. The liver stores about 90% of body reserves, mainly in perisinusoidal stellate (Ito) cells, enough to meet needs for at least 6 months on an adequate diet.
-
+- **Preformed vitamin A** in animal-derived foods: liver, fish, eggs, milk and butter.
+- **Carotenoids (provitamins)** in yellow and leafy green vegetables such as carrots, squash and spinach. **β-carotene** is the most important and is efficiently converted to vitamin A. Carotenoids contribute about 30% of the vitamin A in human diets.
 
 ## Effects of vitamin A deficiency.
 
-Vitamin A deficiency causes night blindness and xerophthalmia with eventual blindness, squamous metaplasia and keratinisation of epithelia, and immune deficiency with increased mortality from infections such as measles.
+Vitamin A deficiency occurs worldwide because of primary malnutrition and in conditions that cause malabsorption of fats, such as coeliac disease, Crohn disease and colitis.
 
-Vitamin A is a component of visual pigment (rhodopsin in rods, iodopsins in cones), regulates differentiation of epithelia through retinoic acid receptors, and supports immunity.
-
-- **Eye.** Night blindness is an early manifestation. Persistent deficiency causes xerophthalmia: dryness of the conjunctiva (xerosis) as lacrimal and mucus-secreting epithelium is replaced by keratinising epithelium, then Bitot spots (opaque plaques of keratin debris), erosion and softening of the cornea (keratomalacia) and blindness.
-- **Epithelial metaplasia.** The respiratory epithelium loses its mucociliary character, predisposing to pulmonary infections. Keratin debris in the urinary tract predisposes to renal and bladder stones.
-- **Skin.** Hyperplasia and hyperkeratinisation of the epidermis and plugging of adnexal gland ducts cause a follicular or papular dermatosis.
-- **Immunity.** Immune deficiency raises mortality from measles, pneumonia and diarrhoea, and supplementation in deficient populations lowers mortality by 20–30%.
-
+1. **Eyes.** Night blindness is one of the earliest manifestations, because vitamin A is a component of rhodopsin. Persistent deficiency causes **xerophthalmia**: dryness of the conjunctiva (xerosis), **Bitot spots** (plaques of keratin debris), erosion of the cornea, **keratomalacia** (softening and destruction of the cornea) and blindness.
+2. **Epithelium.** **Squamous metaplasia** and keratinisation of epithelia, with hyperplasia and hyperkeratinisation of the epidermis and plugging of the ducts of the adnexal glands, causing a follicular or papular dermatosis.
+3. **Immune deficiency.** Higher mortality from measles, pneumonia and infectious diarrhoea. Vitamin A supplements reduce mortality from these infections by 20% to 30% where deficiency is prevalent.
 
 ## What is rickets?
 
-Rickets is a disease of growing children in which deficiency of vitamin D, or disturbed calcium and phosphate metabolism, causes defective mineralisation of bone and epiphyseal cartilage, producing soft deformed bones. The counterpart in adults is osteomalacia.
-
-Pathogenesis. Vitamin D, formed in the skin from 7-dehydrocholesterol under UVB light and hydroxylated in the liver and then in the kidney to 1,25-dihydroxyvitamin D, promotes intestinal absorption of calcium and phosphate and mineralisation of bone. In deficiency, low calcium raises parathyroid hormone, which restores serum calcium by bone resorption and renal calcium retention but also wastes phosphate in the urine. Hypophosphataemia persists and bone mineralisation fails, leaving an excess of unmineralised matrix.
-
-Causes. Diets deficient in calcium and vitamin D, limited sunlight exposure (heavily veiled females, northern latitudes, dark skin), frequent pregnancy and lactation, renal disease with reduced 1,25-dihydroxyvitamin D synthesis, malabsorption, phosphate depletion and rare inherited disorders, including FGF23 excess.
-
-Morphology. Overgrowth of epiphyseal cartilage with inadequate provisional calcification, irregular masses of cartilage projecting into the marrow, osteoid laid down on poorly mineralised cartilage, widening and lateral expansion of the osteochondral junction, and microfractures with overgrowth of capillaries and fibroblasts.
-
-Clinical features. In infants the head and chest suffer the greatest stress: craniotabes, frontal bossing and a squared head, the rachitic rosary at the costochondral junctions and pigeon-breast deformity. In ambulant children there is lumbar lordosis and bowing of the legs. Serum calcium is normal or low and phosphate low, with raised alkaline phosphatase.
-
+**Rickets** is a skeletal disease of growing children, whose epiphyses have not yet closed, in which **vitamin D deficiency** leaves an excess of **unmineralised matrix** (osteoid and cartilage) and bone mineralisation is poor. Its counterpart in adults is **osteomalacia**.
 
 ## Effects of vitamin D deficiency.
 
-Vitamin D deficiency causes rickets in children and osteomalacia in adults, with hypocalcaemia that may lead to tetany, and secondary hyperparathyroidism. In older people milder deficiency increases bone loss and hip fractures.
+Vitamin D maintains plasma calcium and phosphorus for bone mineralisation, metabolic functions and neuromuscular transmission, so deficiency (circulating 25-hydroxyvitamin D below 20 ng/mL) has the following effects.
 
-- **Rickets** in growing children, with the skeletal deformities described above.
-- **Osteomalacia** in adults. The remodeling of bone is deranged, and newly formed osteoid is inadequately mineralised, so there is a thick layer of persistent pink osteoid around the basophilic mineralised trabeculae. Bone contours are preserved, but the bone is weak and prone to fractures and microfractures, especially of vertebral bodies and femoral necks.
-- **Hypocalcaemic tetany.** Vitamin D maintains the ionised calcium of extracellular fluid, and a drop causes continuous excitation of muscle. Tetany is uncommon because parathyroid hormone usually corrects the fall.
-- **Secondary hyperparathyroidism** with bone resorption, renal phosphate wasting and hypophosphataemia.
-- **Osteoporosis and fractures.** Milder deficiency (25-hydroxyvitamin D below 20 ng/mL) is common in older adults and increases bone loss and hip fractures.
-- **Nonskeletal effects.** Vitamin D has immunomodulatory and antiproliferative actions, and low levels have been associated with colon, prostate and breast cancer, although supplements have not clearly changed the course of infections or tuberculosis.
-
+1. **Hypocalcaemia and its correction.** The fall in calcium raises parathyroid hormone, which activates renal 1α-hydroxylase, increases bone resorption by osteoclasts, reduces renal calcium excretion and increases renal phosphate excretion. Serum calcium may return to normal, but **hypophosphataemia** persists and bone mineralisation is impaired.
+2. **Rickets in growing children.** Excess unmineralised matrix, with this sequence:
+   - Overgrowth of epiphyseal cartilage, because of inadequate provisional calcification.
+   - Persistent distorted masses of cartilage projecting into the marrow cavity.
+   - Osteoid laid down on poorly mineralised cartilage, with disruption of the orderly replacement of cartilage by osteoid and enlargement of the osteochondral junction.
+   - Overgrowth of capillaries and fibroblasts in the disorganised zone, from microfractures in the weak bone.
+   - Skeletal deformity: softened occipital bones (craniotabes), frontal bossing, **rachitic rosary** at the costochondral junctions, **pigeon breast**, and in an ambulant child lumbar lordosis and bowing of the legs.
+3. **Osteomalacia in adults.** Newly formed osteoid is inadequately mineralised, so excess persistent osteoid accumulates. The contours of the bone are unchanged, but the bone is weak and vulnerable to fractures and microfractures, most often of the vertebral bodies and femoral necks.
+4. **Hypocalcaemic tetany.** Fall in ionised calcium causes continuous muscle excitation, but it is uncommon because parathyroid hormone usually corrects the calcium.
 
 ## Why is zinc important for the body?
 
-Zinc is an essential trace element that is a component of many enzymes, so it is needed for growth, cell division, immunity, wound healing, taste, reproduction and normal skin and gut function.
-
-- **Enzyme cofactor.** Zinc is needed by more than 300 enzymes, including carbonic anhydrase, alcohol dehydrogenase, alkaline phosphatase, copper-zinc superoxide dismutase (antioxidant defence), and DNA and RNA polymerases (cell division and growth).
-- **Gene regulation.** The zinc-finger structure of many transcription factors, including nuclear hormone receptors, depends on zinc.
-- **Immunity.** Needed for the development and function of T cells and for thymic hormone activity. Deficiency causes lymphoid atrophy and increased infections.
-- **Growth and reproduction.** Required for growth in childhood, sexual maturation and spermatogenesis.
-- **Skin, wound healing and taste.** Required for epithelial integrity and collagen synthesis, and for the sense of taste and smell.
-- **Vitamin A metabolism.** Needed for synthesis of retinol-binding protein and for conversion of retinol to retinal, explaining impaired night vision in deficiency.
-
+The site textbook gives zinc only in its table of trace elements (Table 9.10). It states that zinc is a **component of enzymes, principally oxidases**. Its deficiency affects growth in children, mental function, wound healing, the immune response, night vision and fertility, as listed in the table.
 
 ## How does zinc deficiency develop?
 
-Zinc deficiency develops from inadequate intake, as in artificial diets without supplementation, from interference with absorption by other dietary constituents, or from an inborn error of metabolism.
+Table 9.10 gives three ways.
 
-Three bases of deficiency are recognised: inadequate supplementation in artificial diets (for example total parenteral nutrition), interference with absorption by other dietary constituents, and an inborn error of metabolism. In more detail:
-
-- **Inadequate intake.** Poor diets low in animal protein, and long-term parenteral or enteral feeding without zinc.
-- **Reduced absorption.** Phytates in cereals and legumes, and high intake of calcium, iron or copper, bind zinc or compete with it. Malabsorption (celiac disease, Crohn disease, short bowel, bariatric surgery) and chronic diarrhoea also impair absorption and increase losses.
-- **Increased losses and needs.** Persistent diarrhoea in children, chronic liver disease, alcohol use, burns, and increased needs in infancy, pregnancy and lactation.
-- **Genetic.** Acrodermatitis enteropathica is an autosomal recessive defect of intestinal zinc uptake (SLC39A4, the ZIP4 transporter).
-- **Drugs.** Chelators and some diuretics increase loss.
-
+1. **Inadequate supplementation in artificial diets**, that is, zinc left out of a diet given artificially.
+2. **Interference with absorption** by other dietary constituents.
+3. **Inborn error of metabolism.** The textbook links acrodermatitis enteropathica (a rash around the eyes, mouth, nose and anus) with zinc deficiency.
 
 ## Clinical features of zinc deficiency.
 
-The features are a rash around the eyes, mouth, nose and anus (acrodermatitis enteropathica), anorexia and diarrhoea, growth retardation, depressed mental function, poor wound healing, impaired immunity, impaired night vision and infertility.
-
-- **Skin:** a vesiculobullous and pustular rash around the eyes, mouth, nose and anus, in acrodermatitis enteropathica, and also on the extremities.
-- **Gastrointestinal:** anorexia and diarrhoea, with loss of taste.
-- **Growth:** growth retardation in children, and delayed sexual maturation.
-- **Nervous system:** depressed mental function, irritability and apathy.
-- **Healing and immunity:** depressed wound healing and immune response, with recurrent infections.
-- **Eye:** impaired night vision.
-- **Reproductive:** infertility and hypogonadism.
-- **Hair:** alopecia.
-
+1. Rash around the eyes, mouth, nose and anus, called **acrodermatitis enteropathica**.
+2. Anorexia and diarrhoea.
+3. Growth retardation in children.
+4. Depressed mental function.
+5. Depressed wound healing and immune response.
+6. Impaired night vision.
+7. Infertility.
 
 ## Diseases that may occur as a consequence of obesity.
 
-Obesity, particularly central obesity, predisposes to insulin resistance and type 2 diabetes, hypertension, dyslipidaemia, coronary artery disease, fatty liver disease, gallstones, sleep apnoea, osteoarthritis and several cancers.
+Obesity, particularly central obesity, raises mortality from most diseases. Central obesity lies at the centre of the **metabolic syndrome**: abnormal glucose and lipid metabolism with hypertension and a systemic proinflammatory state.
 
-Obesity is defined by a body mass index above 30 kg/m², with overweight at 25–30 kg/m². Central (visceral) obesity carries a much higher risk than subcutaneous fat, and is the centre of the metabolic syndrome: abnormal glucose and lipid metabolism, hypertension and a proinflammatory state, driven in part by free fatty acids that activate the inflammasome and stimulate IL-1.
-
-- **Type 2 diabetes mellitus:** insulin resistance and hyperinsulinaemia, aggravated by inflammation.
-- **Hypertension:** excess insulin promotes sodium retention, expansion of blood volume and increased norepinephrine.
-- **Dyslipidaemia and cardiovascular disease:** hypertriglyceridaemia and low HDL, increasing the risk of coronary artery disease, compounded by diabetes and hypertension.
-- **Nonalcoholic fatty liver disease,** which can progress to fibrosis and cirrhosis.
-- **Cholelithiasis:** gallstones are six times more common in obese people.
-- **Obstructive sleep apnoea** with right-sided heart failure, and the hypoventilation (pickwickian) syndrome.
-- **Osteoarthritis** from cumulative trauma to joints.
-- **Cancer:** oesophagus, upper stomach, colon and rectum, gallbladder, liver, pancreas, kidney, endometrium, ovary and breast, meningioma and multiple myeloma. Obesity is associated with at least 40% of cancers in the United States.
-- **Chronic inflammation** with raised CRP and TNF, contributing to thrombosis and the other complications.
-
+1. **Type 2 diabetes mellitus**, through insulin resistance and hyperinsulinaemia.
+2. **Hypertension.** Excess insulin may contribute through sodium retention, expanded blood volume, excess norepinephrine and smooth muscle proliferation; the risk rises in proportion to weight.
+3. **Dyslipidaemia and coronary artery disease.** Hypertriglyceridaemia and low HDL cholesterol raise the risk, which is compounded by diabetes and hypertension.
+4. **Non-alcoholic fatty liver disease**, which can progress to fibrosis and cirrhosis.
+5. **Cholelithiasis.** Gallstones are six times more common in obese than in lean people, because biliary cholesterol excretion rises.
+6. **Obstructive sleep apnoea** with right-sided heart failure, and the **hypoventilation (pickwickian) syndrome**.
+7. **Degenerative joint disease** (osteoarthritis), from cumulative wear and tear on the joints.
+8. **Cancer.** Increased incidence of carcinomas of the oesophagus and upper stomach, colon and rectum, gallbladder, liver, pancreas, kidney, endometrium, ovary and breast, and of meningioma and multiple myeloma. Mechanisms are raised insulin and IGF-1, increased oestrogen availability, reduced adiponectin and chronic inflammation.
+9. **Chronic inflammation**, with raised CRP and TNF, which may contribute to insulin resistance, thrombosis and cardiovascular disease.
 
 ## Write a short note on protein energy malnutrition (PEM).
 
-Protein-energy malnutrition, now designated severe acute malnutrition, is a spectrum of clinical syndromes caused by dietary intake of protein and calories inadequate for the body's needs. It is a common cause of childhood death in low-resource countries.
+**Protein-energy malnutrition (PEM)** is a consequence of inadequate intake of proteins and calories, or of deficiencies in the digestion or absorption of proteins, resulting in loss of fat and muscle mass, weight loss and generalised weakness. In children it is called **severe acute malnutrition**, a spectrum of syndromes with **marasmus** and **kwashiorkor** at its two ends.
 
-Definition and epidemiology. In children, severe acute malnutrition is defined by a mid-upper arm circumference below 115 mm, weight-for-height three standard deviations below normal, or bilateral pitting oedema. In 2022 about 45 million children under five were wasted, 13.6 million of them severely, and about 148 million were stunted. In older adults and the chronically ill in high-resource countries, secondary malnutrition is common.
-
-Causes. Primary malnutrition arises from poverty, famine, early weaning and ignorance, with recurrent infections. Secondary malnutrition arises from malabsorption, chronic disease, cancer and AIDS, nephrotic syndrome and burns.
-
-Pathophysiology. The body has a somatic protein compartment (skeletal muscle) and a visceral compartment (liver and viscera) regulated differently.
-
-- **Marasmus** (severe calorie deficiency, weight below 60% of normal). Adaptive catabolism of muscle supplies amino acids for energy, and subcutaneous fat is mobilised. The visceral compartment is only marginally depleted, so serum albumin is normal or slightly low. Low leptin may stimulate the hypothalamic-pituitary-adrenal axis, and the resulting high cortisol promotes lipolysis. The child is emaciated with a large-appearing head, anaemia, multivitamin deficiencies and T-cell immunodeficiency, with infections.
-- **Kwashiorkor** (protein deprivation relatively greater than calorie deficit, typically after weaning onto carbohydrate). The visceral compartment is depleted, causing hypoalbuminaemia and generalised oedema. Weight is 60–80% of normal but masked by fluid. Subcutaneous fat and muscle are relatively spared. There is "flaky paint" skin with zones of hyperpigmentation, desquamation and hypopigmentation, depigmented and sparse hair, apathy and anorexia, and an enlarged fatty liver because of reduced synthesis of lipoprotein carrier proteins.
-- The two forms are ends of a spectrum and overlap (marasmic kwashiorkor).
-
-Morphology. Growth failure, peripheral oedema in kwashiorkor, and loss of fat and muscle atrophy (greater in marasmus). The liver is enlarged and fatty in kwashiorkor. The small bowel shows loss of crypt mitoses, mucosal atrophy, villous blunting and disaccharidase deficiency, so infants with kwashiorkor may not tolerate full-strength milk, and the changes are reversible. The bone marrow is hypoplastic and anaemia is multifactorial (iron, folate, protein, infection). Thymic and lymphoid atrophy occurs, and the brain may show atrophy, fewer neurons and impaired myelination in infants malnourished in the first two years.
-
-Complications and outcome. Infections (diarrhoea, pneumonia, measles, parasites), hypoglycaemia, hypothermia, electrolyte disturbances and heart failure. Long-term consequences include stunting and impaired cognitive development.
-
-Management. Treat infection, correct hypoglycaemia, hypothermia and electrolyte disturbances, and refeed gradually with therapeutic milk or ready-to-use therapeutic food, with micronutrients (vitamin A, zinc, folate, iron after recovery has started). Rapid refeeding carries a risk of refeeding syndrome.
-
+- **Causes.** Primary: a diet inadequate in protein and calories because of poverty, crop failure, drought, war, ignorance, and the increased needs of infants, adolescents and pregnant women. Secondary: malabsorption, impaired utilisation or storage, excess loss, or increased need, as in chronic illness, cancer cachexia and AIDS.
+- **Two protein compartments.** The somatic compartment is the skeletal muscle protein; the visceral compartment is the protein of the viscera, chiefly the liver. They are regulated differently.
+- **Marasmus.** Diet severely lacking in calories. Weight falls to 60% of normal, with muscle and subcutaneous fat loss and growth retardation. The visceral compartment is spared, so serum albumin is normal or slightly low and there is no oedema.
+- **Kwashiorkor.** Protein deprivation relatively greater than the reduction in total calories. Visceral protein is severely depleted, causing hypoalbuminaemia and generalised or dependent oedema, with a fatty enlarged liver.
+- **Morphology.** Growth failure, peripheral oedema in kwashiorkor, and loss of body fat and muscle atrophy (more marked in marasmus). The small bowel mucosa may atrophy, the bone marrow may be hypoplastic, and thymic and lymphoid atrophy is more marked in kwashiorkor.
+- **Associated problems.** Vitamin deficiencies, immune deficiency with intercurrent infections, and parasitic infestations.
 
 ## Write a short note on kwashiorkor.
 
-Kwashiorkor is the form of severe acute malnutrition in which protein deprivation is relatively greater than the reduction in total calories. The name comes from the Ga language of Ghana and describes the illness of a child displaced from the breast by the birth of the next baby.
+**Kwashiorkor** occurs when protein deprivation is relatively greater than the reduction in total calories. The name comes from the Ga language of Ghana and describes the illness of a young child that appears after the arrival of another baby.
 
-Aetiology. It is the commonest form of severe acute malnutrition in African children weaned early and fed an almost exclusively carbohydrate diet, and it is also common in Southeast Asia. Less severe forms occur worldwide where protein is lost or not absorbed: chronic diarrhoea, protein-losing enteropathy, the nephrotic syndrome and extensive burns. Rare cases occur with fad diets and rice-based drinks replacing milk.
-
-Pathogenesis. There is severe loss of the visceral protein compartment. Hypoalbuminaemia lowers plasma oncotic pressure and causes generalised or dependent oedema. Deficient synthesis of the carrier proteins of lipoproteins leads to a fatty liver. Infections impose catabolic stress and worsen the state. Oxidative stress and an abnormal gut flora have also been proposed.
-
-Clinical features. The child is irritable, apathetic and anorexic. Weight is 60–80% of normal but masked by oedema, with relative preservation of subcutaneous fat and muscle. The face is puffy and the limbs swollen, with ascites. The skin shows alternating zones of hyperpigmentation, desquamation and hypopigmentation ("flaky paint"). The hair loses colour or has bands of pale and dark, becomes fine and straight, and is easily pulled out. There is hepatomegaly, immune defects, anaemia and vitamin deficiencies.
-
-Morphology. Enlarged fatty liver (cirrhosis is rare), mucosal atrophy of the small bowel with disaccharidase deficiency, marrow hypoplasia, thymic and lymphoid atrophy and, in infants, cerebral atrophy.
-
-Differences from marasmus. In marasmus the child is emaciated, with loss of fat and muscle, no oedema, a normal or slightly low albumin, and no fatty liver.
-
-Treatment. Correct dehydration and electrolyte imbalance, treat infections, and give gradual refeeding with a protein-rich diet and vitamins and minerals. The intestinal changes are reversible with treatment.
-
+- **Epidemiology.** It is the commonest form of severe acute malnutrition in African children who are weaned too early and fed an almost exclusively carbohydrate diet. It is also common in low-resource countries of Southeast Asia. Less severe forms occur worldwide in chronic diarrhoeal states, where protein is not absorbed, and in chronic protein loss (protein-losing enteropathies, the nephrotic syndrome and the aftermath of extensive burns).
+- **Pathology.** There is severe loss of the visceral protein compartment, with **hypoalbuminaemia** and generalised or dependent **oedema**. Weight is 60% to 80% of normal, but the true tissue loss is masked by oedema. Subcutaneous fat and muscle are relatively spared.
+- **Skin and hair.** "Flaky paint" skin lesions with alternating hyperpigmentation, desquamation and hypopigmentation. The hair loses colour or becomes banded, straight, fine and loosely attached.
+- **Other features.** Enlarged fatty liver, apathy, listlessness and loss of appetite, vitamin deficiencies and immune defects.
+- **Morphology.** In kwashiorkor, but rarely in marasmus, the small bowel shows fewer mitoses in the crypts, with mucosal atrophy, loss of villi and disaccharidase deficiency, so the child may not tolerate full-strength milk diets at first. These changes reverse with treatment. Thymic and lymphoid atrophy is marked.
 
 ## Write a short note on beriberi.
 
-Beriberi is the disease caused by deficiency of thiamine (vitamin B₁).
+**Beriberi** is the disease caused by deficiency of **vitamin B₁ (thiamine)**. The site textbook covers it only briefly.
 
-Biochemistry. Thiamine pyrophosphate is the coenzyme of pyruvate dehydrogenase and α-ketoglutarate dehydrogenase (carbohydrate oxidation), branched-chain keto acid dehydrogenase, and transketolase in the pentose phosphate pathway. Deficiency blocks aerobic metabolism and the neurons and myocardium, which depend on glucose oxidation, are most affected. Pyruvate and lactate accumulate.
-
-Causes. A diet based on polished (milled) rice, in which the thiamine-rich husk has been removed, is the classic cause. Others are chronic alcohol use disorder (poor intake, reduced absorption, impaired storage and increased need), persistent vomiting, malabsorption, dialysis, thiaminase in raw fish, and infants of thiamine-deficient mothers.
-
-Clinical forms.
-
-- **Dry beriberi:** a symmetrical peripheral neuropathy, mainly distal, with sensory loss, paraesthesias, burning feet, muscle weakness and wasting, calf tenderness, and foot and wrist drop. The nerves show axonal degeneration and demyelination.
-- **Wet beriberi:** cardiovascular involvement with peripheral vasodilatation, high-output cardiac failure, tachycardia, dilated heart and oedema. A fulminant form (Shoshin beriberi) causes acute cardiovascular collapse with lactic acidosis.
-- **Infantile beriberi:** in breast-fed infants of deficient mothers, at 2–3 months, with cardiac failure, aphonia and loss of tendon reflexes, and it may be fatal.
-- **Wernicke-Korsakoff syndrome:** in alcohol use disorder, Wernicke encephalopathy (confusion, ophthalmoplegia and ataxia) with haemorrhagic lesions in the mammillary bodies and periventricular regions, which progresses to Korsakoff psychosis (amnesia and confabulation) if untreated.
-
-Diagnosis and treatment. Low erythrocyte transketolase activity with a rise after adding thiamine pyrophosphate, and a response to thiamine. Parenteral thiamine should be given before glucose in patients at risk.
-
+- **Function of thiamine.** As **thiamine pyrophosphate** it is the coenzyme in decarboxylation reactions.
+- **Deficiency syndromes.** **Dry and wet beriberi**, and the **Wernicke-Korsakoff syndrome**. The textbook does not describe the features of dry and wet beriberi.
+- **Causes.** A diet in which **polished rice** is the mainstay. **Chronic excessive alcohol use** is also important, because it causes poor diet, defective absorption, abnormal utilisation and storage, increased needs and increased loss of thiamine.
+- **Brain.** Failure to recognise thiamine deficiency in a person with alcohol use disorder may cause irreversible brain damage (Wernicke encephalopathy and Korsakoff psychosis).
+- **Heart.** Alcohol-related thiamine deficiency can lead to **beriberi heart disease**, a form of dilated cardiomyopathy.
 
 ## What are the dietary sources of vitamin A?
 
-Dietary vitamin A comes from two types of source.
-
-Preformed vitamin A (retinol and retinyl esters) occurs in foods of animal origin: liver, which is the richest source, fish and fish liver oils, eggs, milk, butter and other dairy products. Liver of some animals, such as polar bear, whale, shark and tuna, contains so much that eating it has caused acute vitamin A toxicity.
-
-Provitamin A carotenoids occur in plants. Yellow and leafy green vegetables such as carrots, squash and spinach provide large amounts of carotenoids, and yellow-orange fruits are also sources. The most important is β-carotene, which is efficiently converted to vitamin A in the intestine. Carotenoids contribute about 30% of the vitamin A in human diets.
-
-Dietary requirements are expressed as retinol equivalents. Absorption of this fat-soluble vitamin requires bile, pancreatic enzymes and some dietary fat, and the liver stores about 90% of the body's reserve in stellate (Ito) cells. In populations at risk, fortified foods and periodic high-dose supplements supplement the diet.
-
+- **Preformed vitamin A** in animal-derived foods: liver, fish, eggs, milk and butter.
+- **Carotenoids (provitamins)** in yellow and leafy green vegetables such as carrots, squash and spinach. **β-carotene** is the most important and is efficiently converted to vitamin A. Carotenoids contribute about 30% of the vitamin A in human diets.
 
 ## What are the clinical manifestations of vitamin A deficiency?
 
-Vitamin A deficiency occurs worldwide as a result of primary malnutrition, and in conditions that cause fat malabsorption (celiac disease, Crohn disease, bariatric surgery, mineral oil laxatives). Infections deplete the stores of children. The manifestations follow from the roles of vitamin A in vision, epithelial differentiation and immunity.
+Vitamin A deficiency occurs worldwide because of primary malnutrition and in conditions that cause malabsorption of fats, such as coeliac disease, Crohn disease and colitis.
 
-Ocular manifestations (xerophthalmia).
-
-1. Night blindness (nyctalopia), the earliest symptom, from failure to regenerate rhodopsin in rods.
-2. Xerosis of the conjunctiva, in which the normal lacrimal and mucus-secreting epithelium is replaced by keratinised epithelium.
-3. Bitot spots, foamy white plaques of keratin debris on the conjunctiva.
-4. Xerosis and erosion of the roughened corneal surface.
-5. Keratomalacia, softening, ulceration and destruction of the cornea, with perforation and permanent blindness.
-
-Extraocular epithelial changes. Squamous metaplasia and keratinisation of the epithelia of the respiratory tract and urinary tract. Loss of the mucociliary epithelium predisposes to pulmonary infections, and keratin debris in the urinary tract predisposes to renal and bladder stones. In the skin there is follicular hyperkeratosis and plugging of the adnexal glands (follicular or papular dermatosis).
-
-Immune deficiency. A defect in immunity is responsible for higher mortality from measles, pneumonia and infectious diarrhoea. Supplementation in deficient populations reduces mortality from these infections by 20–30%.
-
-Other. Growth retardation in children.
-
+1. **Eyes.** Night blindness is one of the earliest manifestations, because vitamin A is a component of rhodopsin. Persistent deficiency causes **xerophthalmia**: dryness of the conjunctiva (xerosis), **Bitot spots** (plaques of keratin debris), erosion of the cornea, **keratomalacia** (softening and destruction of the cornea) and blindness.
+2. **Epithelium.** **Squamous metaplasia** and keratinisation of the epithelia of the upper respiratory passage and urinary tract. Loss of the mucociliary epithelium predisposes to pulmonary infections, and keratin debris in the urinary tract predisposes to renal and bladder stones. Hyperplasia and hyperkeratinisation of the epidermis with plugging of adnexal gland ducts causes a follicular or papular dermatosis.
+3. **Immune deficiency.** Higher mortality from measles, pneumonia and infectious diarrhoea. Vitamin A supplements reduce mortality from these infections by 20% to 30% where deficiency is prevalent.
 
 ## Write a short note on deficiency of zinc.
 
-Zinc is a trace element and a component of many enzymes (principally oxidases). It is needed for growth, DNA and RNA synthesis, immune function, wound healing, taste and reproduction.
+**Zinc** is a trace element and a **component of enzymes, principally oxidases** (Table 9.10 of the site textbook, which is its only source on zinc).
 
-Basis of deficiency. Causes are inadequate supplementation in artificial diets, interference with absorption by other dietary constituents (such as phytates, and excess calcium, iron or copper), and an inborn error of metabolism. Additional causes are malabsorption and chronic diarrhoea, alcohol use disorder, chronic liver and renal disease, burns, and increased requirements in infancy, pregnancy and lactation. Acrodermatitis enteropathica is an autosomal recessive defect of intestinal zinc uptake (the ZIP4 transporter encoded by SLC39A4), which presents in infants soon after weaning.
-
-Clinical features.
-
-- Rash around the eyes, mouth, nose and anus, called acrodermatitis enteropathica, with extension to the extremities.
-- Anorexia and diarrhoea, and loss of taste.
-- Growth retardation in children.
-- Depressed mental function.
-- Depressed wound healing and immune response, with recurrent infection.
-- Impaired night vision.
-- Infertility.
-- Alopecia (the classic triad is dermatitis, diarrhoea and alopecia).
-
-Diagnosis and treatment. Low plasma or serum zinc (with low alkaline phosphatase) in a patient with the appropriate setting, and response to zinc supplementation. Zinc supplements are given with oral rehydration therapy to reduce diarrhoeal illness in children, and acrodermatitis enteropathica needs lifelong zinc.
+- **Causes.** Inadequate supplementation in artificial diets, interference with absorption by other dietary constituents, and an inborn error of metabolism.
+- **Clinical features.**
+  - Rash around the eyes, mouth, nose and anus, called **acrodermatitis enteropathica**.
+  - Anorexia and diarrhoea.
+  - Growth retardation in children.
+  - Depressed mental function.
+  - Depressed wound healing and immune response.
+  - Impaired night vision.
+  - Infertility.
 
 ## How does dietary habit influence the development of cancer?
 
-Diet may influence cancer through exogenous carcinogens in food, endogenous synthesis of carcinogens from dietary components, lack of protective factors, and obesity. Although geographic and migration studies show that diet affects cancer incidence, no particular diet has been proven to cause or prevent cancer.
+The incidence of specific cancers varies as much as 100-fold between geographic areas and changes with diet. The incidence of colon cancer in Japanese people aged 55 to 60 years was negligible about 50 years ago but is now higher than in men of the same age in the United Kingdom, and it rose progressively as Japanese people moved to Hawaii and then to the continental United States. The mechanisms linking diet and specific cancers are not yet established. Three aspects of diet matter.
 
-The incidence of specific cancers varies up to 100-fold between regions and changes with diet. For example, colon cancer was negligible in Japanese men aged 55–60 fifty years ago and is now more frequent than in men of the same age in the United Kingdom, and it increased progressively as Japanese migrated to Hawaii and the mainland United States. Three aspects of diet are of major concern.
+1. **Exogenous carcinogens.** Aflatoxin causes hepatocellular carcinoma in parts of Asia and Africa, usually together with hepatitis B virus, and produces a specific mutation in codon 249 of *TP53* that acts as a molecular signature. The carcinogenicity of food additives, artificial sweeteners and pesticides is still debated.
+2. **Endogenous synthesis of carcinogens.** Nitrosamines and nitrosamides, formed from nitrites and from amines or amides of digested protein, are implicated in gastric carcinoma. Nitrites are added to foods as a preservative, and nitrates in vegetables are reduced by gut bacteria.
+3. **Lack of protective factors.** High animal fat with low fibre intake is implicated in colon cancer. Doubling fibre intake to about 40 g per day is estimated to halve the risk. High fat raises bile acids, which favour microaerophilic bacteria whose bile acid metabolites may act as carcinogens. Antioxidants (vitamins C and E, β-carotene, selenium) have no convincing evidence of chemoprevention.
 
-1. **Exogenous carcinogens.** Aflatoxin contributes to hepatocellular carcinoma in parts of Asia and Africa, acting with hepatitis B virus. It causes a specific mutation in codon 249 of TP53, a molecular signature of exposure. The carcinogenicity of food additives, sweeteners and pesticide residues remains debated.
-2. **Endogenous synthesis of carcinogens.** Nitrosamines and nitrosamides, formed from nitrites (preservatives, or bacterial reduction of vegetable nitrates) and amines or amides from digested protein, are implicated in gastric carcinoma.
-3. **Lack of protective factors.** A diet high in animal fat and low in fibre has been implicated in colon cancer: fat raises bile acids that favour bacteria generating carcinogenic metabolites, whereas fibre increases stool bulk, shortens transit time and may bind carcinogens. Doubling fibre to about 40 g daily is estimated to lower colon cancer risk by 50%, although studies are inconsistent. Antioxidant vitamins C and E, β-carotene and selenium have no convincing chemopreventive effect.
-
-Obesity. Obesity is associated with at least 40% of cancers in the United States, including oesophagus, colon, gallbladder, liver, pancreas, kidney, endometrium, ovary and breast. The risk rises with duration of obesity and BMI. Proposed mechanisms are hyperinsulinaemia with raised free IGF-1 acting through the RAS and PI3K/AKT pathways, increased oestrogen synthesis and androgen production with reduced sex hormone–binding globulin, reduced adiponectin (which normally promotes apoptosis through p53 and p21), and chronic inflammation.
-
-Other factors. Retinoids treat acute promyelocytic leukaemia, and low vitamin D has been associated with colon, prostate and breast cancer. Alcohol raises the risk of oral, oesophageal, liver and breast cancer, and preserved, smoked and salted foods are associated with gastric cancer. Prevention of obesity through a healthy diet is a commonsense measure.
-
+**Obesity** is also linked to cancer, through raised insulin and IGF-1, increased oestrogen availability, reduced adiponectin and chronic inflammation. There is no definitive proof that a particular diet causes or prevents cancer, but preventing obesity through a healthy diet is a sensible measure.
 
 ## Define arteriosclerosis.
 
-Arteriosclerosis, literally "hardening of the arteries," is a generic term for thickening of the arterial wall with loss of elasticity. It comprises several distinct patterns of arterial disease that differ in the size of the vessel affected and in the pathologic process. The most important of these is atherosclerosis, an intimal lesion of large and medium-sized arteries characterised by plaque formation, so that the two terms are not synonymous. Arteriosclerosis is the broader category, and atherosclerosis is one variety within it.
-
+**Arteriosclerosis** literally means "hardening of the arteries". It is a generic term for arterial wall thickening and loss of elasticity.
 
 ## What are the types of arteriosclerosis?
 
-Robbins recognises four general patterns of arteriosclerosis, each with different clinical and pathologic consequences.
+There are four general patterns, with different clinical and pathologic consequences.
 
-| Type | Vessels affected | Essential features |
-|---|---|---|
-| **Arteriolosclerosis** | Small arteries and arterioles | Two anatomic variants associated with hypertension and diabetes. Hyaline arteriolosclerosis shows homogeneous pink thickening from plasma protein leakage and increased matrix synthesis, with luminal narrowing. Hyperplastic arteriolosclerosis shows concentric, laminated "onion-skin" smooth muscle and reduplicated basement membrane thickening, and in malignant hypertension fibrinoid necrosis. It causes ischaemic injury, most prominently in the kidney. |
-| **Mönckeberg medial sclerosis** | Medium-sized muscular arteries | Calcification of the media, beginning along the internal elastic lamina, usually in people over 50 and often with renal insufficiency and secondary hypercalcaemia. The calcification does not encroach on the lumen and is usually clinically insignificant. |
-| **Fibromuscular intimal hyperplasia** | Muscular arteries larger than arterioles | A healing response to inflammation (healed arteritis, transplant arteriopathy) or to mechanical injury (stents, angioplasty). It can produce marked stenosis and underlies in-stent restenosis and graft loss in transplanted organs. |
-| **Atherosclerosis** | Elastic and large to medium muscular arteries | Intimal atheromatous plaques composed of a lipid core and fibrous cap. It is the most frequent and clinically important form. |
-
+1. **Arteriolosclerosis.** Affects small arteries and arterioles and may lead to ischaemic injury. The two anatomic variants associated with hypertension are **hyaline** and **hyperplastic**.
+2. **Mönckeberg medial sclerosis.** Calcification of the medial walls of muscular arteries, typically starting along the internal elastic membrane. It mostly affects adults older than 50 years, particularly those with renal insufficiency and secondary hypercalcaemia. The calcification does not narrow the lumen and is usually not clinically significant.
+3. **Fibromuscular intimal hyperplasia.** Occurs in muscular arteries larger than arterioles. It is driven by inflammation (healed arteritis, transplant arteriopathy) or mechanical injury (stents, balloon angioplasty) and is a healing response. It can cause marked stenosis and underlies in-stent restenosis.
+4. **Atherosclerosis.** The most frequent and clinically important form.
 
 ## Define atherosclerosis (short note).
 
-**Definition.** Atherosclerosis (Greek athere, "gruel," and sclerosis, "hardening") is a chronic, progressive intimal disease of elastic arteries and large and medium-sized muscular arteries, characterised by the formation of atheromatous plaques. An atheroma is a raised intimal lesion with a soft, grumous core of lipid (mainly cholesterol and cholesterol esters) covered by a fibrous cap. It is the underlying cause of coronary, cerebral and peripheral vascular disease and accounts for roughly half of all deaths in Western countries. Myocardial infarction alone causes almost a quarter of deaths in the United States.
+**Atherosclerosis**, from Greek words for "gruel" and "hardening", is an **intimal-based lesion** composed of a **fibrous cap** and an **atheromatous core**. The plaque contains smooth muscle cells, extracellular matrix, inflammatory cells, calcifications, lipids and necrotic debris.
 
-**Risk factors.** Constitutional risk factors are family history (the most important independent factor), age and male sex. Modifiable major factors are hyperlipidaemia (particularly raised LDL cholesterol), hypertension, cigarette smoking and diabetes mellitus. Additional factors include inflammation (raised C-reactive protein), hyperhomocysteinaemia, metabolic syndrome, raised lipoprotein(a), and haemostatic factors such as raised PAI-1. These factors act multiplicatively rather than additively.
-
-**Pathogenesis.** The accepted "response to injury" hypothesis views atherosclerosis as a chronic inflammatory and healing response of the arterial wall to endothelial injury. Endothelial dysfunction, caused above all by disturbed (nonlaminar) flow, hypercholesterolaemia and inflammation, increases permeability and leukocyte adhesion. LDL accumulates in the intima and is oxidised, monocytes adhere and enter the intima and become foam cells after engulfing modified lipid through scavenger receptors, and platelets adhere. Macrophages, platelets and endothelial cells release growth factors and cytokines that recruit smooth muscle cells (SMCs) from the media. These proliferate and synthesise extracellular matrix, forming the fibrous cap, while T lymphocytes add to the inflammation. Cholesterol crystals activate the inflammasome, which generates IL-1 and perpetuates inflammation.
-
-**Morphology.** The lesion begins as the fatty streak (flat yellow macules of foamy macrophages) and progresses to the atheromatous plaque, which has a fibrous cap overlying a necrotic lipid core with cholesterol clefts, foam cells and calcification, with neovascularisation at the periphery. Plaques are eccentric and patchy.
-
-**Complications.** The main complications are plaque rupture or erosion with thrombosis, intraplaque haemorrhage, atheroembolism, and aneurysm formation. Slow luminal stenosis causes chronic ischaemia. The clinical consequences are myocardial infarction, stroke, aortic aneurysm and gangrene of the legs.
-
+- It is the most frequent and clinically important vasculopathy and underlies coronary, cerebral and peripheral vascular disease.
+- The lesions are called **atheromas** (atheromatous or atherosclerotic plaques). A typical plaque is a raised lesion with a soft grumous lipid core, mainly cholesterol and cholesterol esters, covered by a fibrous cap.
+- Plaques develop and grow slowly over decades.
+- Its major consequences are myocardial infarction, cerebral infarction, aortic aneurysms and peripheral vascular disease.
+- It is driven by an interplay of vessel wall injury and inflammation.
 
 ## What are the risk factors of atherosclerosis?
 
-The risk factors, identified largely from prospective studies such as the Framingham Heart Study, act with greater-than-additive effects and are grouped as follows (Table 11.3).
+Risk factors usually have greater than additive effects.
 
-**A. Constitutional (non-modifiable) risk factors**
+**Constitutional (less controllable)**
 
-- Genetics: Family history is the most important independent risk factor. Mendelian disorders such as familial hypercholesterolaemia are strongly associated but account for only a small proportion of cases. The usual predisposition is polygenic.
-- Age: Atherosclerosis is a progressive disease that becomes clinically manifest in middle age or later. Between ages 40 and 60 the incidence of myocardial infarction increases fivefold. Age-related clonal haematopoiesis of indeterminate potential (CHIP) with pro-inflammatory monocytes adds to the risk.
-- Sex: Premenopausal women are relatively protected compared with age-matched men. After menopause the incidence rises, eventually exceeding that in men, but oestrogen replacement has not been shown to be protective and in some cases has increased risk.
+1. **Family history and genetics.** The most important independent risk factor. Familial hypercholesterolaemia is a Mendelian example but accounts for few cases; most familial predisposition is polygenic.
+2. **Age.** A dominant influence; between 40 and 60 years the incidence of myocardial infarction rises fivefold.
+3. **Sex.** Premenopausal females are relatively protected; after menopause the incidence rises and eventually exceeds that in males.
 
-**B. Modifiable major risk factors**
+**Modifiable major**
 
-- Hyperlipidaemia (especially hypercholesterolaemia): It can initiate lesions even in the absence of other risk factors. Raised LDL is the main atherogenic component, and HDL, which mobilises cholesterol from plaques to the liver, is protective. Raised lipoprotein(a) is an additional risk.
-- Hypertension: It increases the risk of ischaemic heart disease by about 60% and is the commonest cause of left ventricular hypertrophy.
-- Cigarette smoking: Prolonged smoking doubles the death rate from ischaemic heart disease.
-- Diabetes mellitus: It induces hypercholesterolaemia, doubles the incidence of myocardial infarction and increases the risk of lower-limb gangrene about 100-fold.
+4. **Hyperlipidaemia**, especially hypercholesterolaemia. Raised LDL cholesterol increases risk and higher HDL reduces it.
+5. **Hypertension.** Raises the risk of ischaemic heart disease by about 60%.
+6. **Cigarette smoking.** Prolonged smoking doubles the death rate from ischaemic heart disease.
+7. **Diabetes mellitus.** Induces hypercholesterolaemia; the incidence of myocardial infarction is twice as high, and there is a 100-fold increased risk of atherosclerotic gangrene of the lower limbs.
 
-**C. Additional (emerging or less certain) risk factors**
+**Additional**
 
-- Inflammation, measured by C-reactive protein (a strong independent marker of risk).
-- Hyperhomocysteinaemia.
-- Metabolic syndrome (central obesity, insulin resistance, hypertension, dyslipidaemia, hypercoagulability).
-- Raised lipoprotein(a).
-- Haemostatic factors, such as raised plasminogen activator inhibitor-1 and platelet-derived factors.
-- Physical inactivity, a competitive stressful lifestyle (type A personality) and obesity.
-
-Up to 20% of cardiovascular events occur without any of the major risk factors.
-
+8. **Inflammation**, marked by raised C-reactive protein.
+9. **Hyperhomocysteinaemia.**
+10. **Metabolic syndrome** associated with central obesity.
+11. **Lipoprotein (a)** and **factors affecting haemostasis**, such as plasminogen activator inhibitor 1.
+12. Lack of exercise, a stressful lifestyle (type A personality) and obesity.
 
 ## Write in short the pathogenesis of atherosclerosis.
 
-Atherogenesis is explained by the response-to-injury hypothesis, which regards the disease as a chronic inflammatory and reparative response of the arterial intima to endothelial injury. The principal steps follow in sequence.
+The contemporary **response to injury** hypothesis views atherosclerosis as a **chronic inflammatory and healing response** of the arterial wall to **endothelial injury**. Lesions progress through interaction of modified lipoproteins, macrophages and T lymphocytes with endothelial cells and smooth muscle cells. The sequence is:
 
-1. Endothelial injury or dysfunction, caused mainly by disturbed haemodynamics, hypercholesterolaemia and inflammation, increases permeability, leukocyte adhesion and thrombogenicity.
-2. LDL accumulates in the intima, where it is oxidised.
-3. Monocytes adhere to the endothelium, migrate into the intima and become macrophages and, after ingesting modified lipid through scavenger receptors, foam cells. SMCs can also become foam cells. Early lesions of foam cells are fatty streaks.
-4. Platelets adhere to injured endothelium.
-5. Macrophages, platelets and endothelium release PDGF, FGF, TGF, cytokines and chemokines, which attract SMCs from the media and also T cells.
-6. SMCs proliferate and synthesise collagen, elastin and proteoglycans, producing the fibrous cap, while lipid accumulates in cells and extracellularly and forms the necrotic core.
-7. Cholesterol crystals activate the inflammasome and IL-1 production, maintaining chronic inflammation; late in the process, calcification occurs.
+1. Endothelial injury and dysfunction, causing increased vascular permeability, leukocyte adhesion and thrombosis.
+2. Accumulation of lipoproteins (mainly LDL and its oxidised forms) in the vessel wall.
+3. Monocyte adhesion to the endothelium, migration into the intima and transformation into macrophages and **foam cells**.
+4. Platelet adhesion.
+5. Release of factors from activated platelets, macrophages and vascular wall cells, recruiting smooth muscle cells.
+6. Smooth muscle cell proliferation, extracellular matrix production and recruitment of T cells.
+7. Lipid accumulation inside and outside cells.
+8. Calcification of matrix and necrotic debris late in the process.
 
-The result is a mature atheroma, which may then progress to stenosis or to acute plaque rupture, thrombosis and infarction.
+Key mechanisms:
 
+- **Endothelial injury.** The three most important causes are **haemodynamic disturbances**, **hypercholesterolaemia** and **inflammation**. Plaques sit at vessel ostia, branch points and the posterior abdominal aorta, where flow is turbulent.
+- **Hyperlipidaemia.** It impairs endothelial function through reactive oxygen species. LDL accumulates in the intima, is oxidised and is taken up by macrophages through scavenger receptors to form foam cells, which release growth factors, cytokines and chemokines.
+- **Inflammation.** Cholesterol crystals and free fatty acids activate the inflammasome, producing **IL-1**, which activates endothelium and recruits macrophages and T cells.
+- **Smooth muscle cells.** They migrate into the intima, proliferate and synthesise matrix under PDGF, FGF and TGF-α, converting a fatty streak into a mature atheroma.
 
 ## Draw and label a typical atheroma / give the morphology of an atheromatous plaque.
 
-**Labelled diagram (cross-section of a muscular artery with an eccentric plaque):**
+**Labelled structure of a plaque, from the lumen outwards**
 
-LUMEN (narrowed, eccentric)
-┌───────────────────────────────────────────┐
-│ ENDOTHELIUM (may be eroded / ulcerated) │
-│ ┌─────────────────────────────────────┐ │
-│ │ FIBROUS CAP │ │ <- SMCs + dense collagen
-│ │ (thin cap = vulnerable plaque) │ │
-│ ├──────────────┬──────────────────────┤ │
-│ │ SHOULDER: │ NECROTIC (ATHEROMATOUS)│ │
-│ │ macrophages, │ CORE: cholesterol │ │
-│ │ T cells, SMCs│ clefts, foam cells, │ │
-│ │ │ debris, calcification │ │
-│ └──────────────┴──────────────────────┘ │
-│ Neovascularisation at plaque base │
-└───────────────────────────────────────────┘
-INTERNAL ELASTIC LAMINA (fragmented)
-MEDIA (thinned, SMC loss beneath plaque)
-EXTERNAL ELASTIC LAMINA
-ADVENTITIA (vasa vasorum)
-Plaque-free segment of wall (shows lesion is eccentric)
+1. **Lumen**, narrowed and eccentric, because plaques are patchy and rarely circumferential.
+2. **Endothelium**, which may be eroded or ulcerated.
+3. **Fibrous cap**, formed by smooth muscle cells and dense collagen. A thin cap makes the plaque vulnerable.
+4. **Shoulder**, the cellular area beneath and to the side of the cap, with macrophages, T lymphocytes and smooth muscle cells.
+5. **Necrotic (atheromatous) core**, with cholesterol and cholesterol esters, dead cell debris, foam cells, fibrin and thrombus in varying degrees of organisation.
+6. **Calcification** in late plaques.
+7. **Media** beneath the plaque, which may be thinned and atrophic.
 
-**Morphology.**
+**Morphology**
 
-Fatty streak. This earliest lesion consists of lipid-filled foamy macrophages. It begins as small flat yellow macules that coalesce into streaks 1 cm or longer, slightly raised and without flow disturbance. Fatty streaks are present in the aortas of infants and in virtually all adolescents, and coronary fatty streaks form at the same sites that later develop plaques.
-
-Atheromatous plaque, gross. Plaques are yellow-tan, raised lesions that may coalesce. Superimposed thrombus over an ulcerated plaque is red-brown. Lesions are patchy and rarely circumferential, so that on cross-section they are eccentric. Lesions at various stages coexist in one vessel.
-
-Microscopy. There are four components: cells (SMCs, macrophages, T cells), extracellular matrix (collagen, elastic fibres, proteoglycans), intracellular and extracellular lipid, and calcification in late stages. The superficial fibrous cap overlies the cellular shoulder and the necrotic core. Cholesterol crystals leave needle-shaped clefts, and neovascularisation appears at the periphery. The underlying media is thinned, with attenuation of the elastic laminae and loss of SMCs from pressure and ischaemia. Plaques enlarge through cell death, matrix remodeling, organisation of thrombus and calcification.
-
-Secondary changes. Rupture, ulceration or erosion with thrombosis, haemorrhage into the plaque, atheroembolism, and aneurysm formation.
-
+- **Fatty streaks.** Small flat yellow macules of lipid-filled foamy macrophages that coalesce into streaks 1 cm or more long. They are slightly raised and do not obstruct flow. They are present in virtually all adolescents and may be precursors of plaques.
+- **Atherosclerotic plaque.** Yellow-tan, raised above the vessel wall; a superimposed thrombus over an ulcerated plaque is red-brown. Plaques vary in size and can coalesce.
+- **Four principal components.** Cells (smooth muscle cells, macrophages, T lymphocytes), extracellular matrix (collagen, elastic fibres, proteoglycans), intracellular and extracellular lipid, and calcification.
+- **Fibrous plaques.** Some plaques consist almost entirely of smooth muscle cells and fibrous tissue, which may be heavily calcified.
+- **Progression.** Plaques enlarge through cell death, matrix remodelling, organisation of thrombus and secondary calcification.
 
 ## Name the blood vessels most frequently involved by atherosclerosis, with clinical consequences (common sites).
 
-Atherosclerosis affects the large elastic arteries (aorta, carotid and iliac arteries) and the large and medium-sized muscular arteries (coronary and popliteal arteries). In descending order of extent of involvement, the vessels are as follows.
+**Vessels involved, in descending order of frequency**
 
-| Vessel | Principal clinical consequences |
-|---|---|
-| Lower abdominal aorta and iliac arteries | Abdominal aortic aneurysm with risk of rupture, thrombosis and embolism; occlusion causing claudication of the legs |
-| Coronary arteries | Angina pectoris, myocardial infarction, chronic ischaemic heart disease with heart failure, sudden cardiac death |
-| Popliteal and other leg arteries | Intermittent claudication, rest pain, ischaemic ulcers and gangrene of the lower limb (especially in diabetics) |
-| Internal carotid arteries | Cerebral infarction (stroke), transient ischaemic attacks, from stenosis, thrombosis or embolism |
-| Circle of Willis (cerebral arteries) | Ischaemic encephalopathy, infarction, multi-infarct dementia |
-| Renal and mesenteric arteries (mainly at the ostia) | Renovascular hypertension and renal ischaemia; mesenteric occlusion with bowel ischaemia |
+1. Lower abdominal aorta and iliac arteries.
+2. Coronary arteries.
+3. Popliteal arteries.
+4. Internal carotid arteries.
+5. Vessels of the circle of Willis.
 
-Upper-extremity vessels are usually relatively spared. Symptomatic disease most often involves the arteries supplying the heart, brain, kidneys and lower extremities, and the major consequences are myocardial infarction, cerebral infarction, aortic aneurysm and peripheral vascular disease with gangrene.
+Vessels of the upper extremities are relatively spared, as are the mesenteric and renal arteries except at their ostia.
 
+**Clinical consequences**
+
+- Coronary arteries: **myocardial infarction**, angina, chronic ischaemic heart disease and sudden cardiac death.
+- Cerebral and carotid vessels: **cerebral infarction (stroke)** and ischaemic encephalopathy.
+- Aorta: **aneurysm**.
+- Lower limbs: **intermittent claudication** and peripheral vascular disease, with gangrene in diabetics.
+- Mesenteric arteries: **bowel ischaemia**.
 
 ## What are the complications of atherosclerosis / atheromatous plaque?
 
-The complications arise either from progressive luminal narrowing or from abrupt change in the plaque.
-
-**1. Atherosclerotic stenosis (chronic ischaemia).** Outward remodeling of the vessel (Glagov phenomenon) initially preserves the lumen. Eventually the expanding plaque produces critical stenosis, at about 70–75% loss of cross-sectional area. Consequences include stable angina, chronic ischaemic heart disease, intermittent claudication, mesenteric ischaemia with bowel infarction, and ischaemic encephalopathy. Slowly developing stenosis allows collateral circulation to compensate.
-
-**2. Acute plaque change.**
-
-- Rupture or fissuring exposes highly thrombogenic plaque contents and activates coagulation, often producing a completely occlusive thrombus. This causes myocardial infarction, stroke, sudden cardiac death or acute limb ischaemia.
-- Erosion or ulceration exposes the thrombogenic subendothelial basement membrane, less often with occlusive thrombosis.
-- Haemorrhage into the plaque from rupture of the cap or of thin-walled neovascular channels expands the plaque and may precipitate rupture.
-
-Plaques with thin caps, large lipid cores and many inflammatory cells (vulnerable plaques) are most likely to rupture. Triggers include hypertensive surges, adrenergic stimulation (explaining the morning peak of infarction), vasospasm and emotional stress. Many culprit plaques were previously only mildly to moderately stenotic and asymptomatic.
-
-**3. Atheroembolism.** Cholesterol-rich plaque debris, or fragments of mural thrombus, embolise and obstruct small distal vessels.
-
-**4. Aneurysm formation.** Pressure atrophy and ischaemia of the underlying media, with loss of elastic tissue, weaken the wall. This leads to aneurysm (typically abdominal aortic), which may rupture, thrombose or embolise.
-
-Organisation of subclinical thrombi on disrupted plaques is also an important mechanism of lesion growth, and calcification can occur in late lesions.
-
+1. **Rupture, fissuring, ulceration or erosion** of the plaque surface. This exposes thrombogenic material and leads to **thrombosis**, which may partly or completely occlude the lumen and cause acute infarction. The thrombus may organise and become part of the plaque.
+2. **Haemorrhage into the plaque.** Rupture of the cap or of thin-walled new vessels causes intraplaque haemorrhage; the haematoma may expand the plaque or precipitate rupture.
+3. **Atheroembolism.** Plaque rupture discharges atherosclerotic debris into the bloodstream as microemboli.
+4. **Aneurysm formation.** Pressure or ischaemic atrophy of the media, with loss of elastic tissue, weakens the wall and leads to dilatation and possible rupture.
+5. **Atherosclerotic stenosis.** Slow narrowing of the lumen causes chronic ischaemia. Critical stenosis, a 70% to 75% decrease in luminal cross-sectional area, causes exertional symptoms such as stable angina.
+6. **Vasoconstriction** at the plaque, which narrows the lumen and potentiates plaque disruption.
+7. **Resulting disease.** Myocardial infarction, sudden cardiac death, chronic ischaemic heart disease, cerebral infarction, mesenteric occlusion with bowel ischaemia, and intermittent claudication.
 
 ## How does dietary habit influence the development of atherosclerosis?
 
-Diet influences atherosclerosis mainly through its effect on blood lipids and on associated conditions such as obesity, hypertension and diabetes. A diet that raises LDL cholesterol (rich in cholesterol, saturated fat and trans fats) promotes atherosclerosis, whereas omega-3 fatty acids from fish are protective. Excess salt aggravates hypertension, and excess calories cause obesity, insulin resistance and diabetes.
+The site textbook treats the role of diet as important but partly unresolved.
 
-**Cholesterol and LDL.** Hypercholesterolaemia is sufficient on its own to initiate lesions, and the dominant lipids in plaques are cholesterol and cholesterol esters. Epidemiologic data show a strong correlation between the severity of atherosclerosis and plasma total and LDL cholesterol, and lowering cholesterol by diet or drugs slows progression, causes regression of some plaques and reduces cardiovascular events. In Robbins' account the contribution of most dietary fats is now regarded as minor, but diets that raise LDL (high in saturated animal fat and cholesterol) remain adverse in practice.
-
-**Specific components.**
-
-- Trans-unsaturated fats (from artificial hydrogenation of oils, in baked goods and margarine) adversely alter the cholesterol profile.
-- Omega-3 fatty acids (abundant in fish oils) are beneficial.
-- Exclusive raising of HDL has not proved effective.
-
-**Indirect effects.** Heavy salt intake is strongly linked to hypertension, itself a major risk factor. Overnutrition produces obesity and the metabolic syndrome (central obesity, insulin resistance, dyslipidaemia, hypertension, hypercoagulability and a proinflammatory state) and type 2 diabetes. Diabetes induces hypercholesterolaemia and markedly increases atherosclerosis. Westernisation of diet explains the rising rates of coronary disease in lower-resource countries. Dietary and pharmacologic cholesterol lowering (statins, which also reduce plaque inflammation) is therefore a cornerstone of prevention.
+1. **Cholesterol and saturated fats.** The central question is whether cutting foods high in cholesterol and saturated animal fats (eggs, butter, beef) lowers serum cholesterol and prevents or slows atherosclerosis in people without previous cardiovascular disease (primary prevention). Lowering saturated fatty acids to the level of polyunsaturated fatty acids reduces serum cholesterol by 10% to 15% within a few weeks.
+2. **Polyunsaturated fats.** Vegetable oils (corn, safflower) and fish oils are good sources of cholesterol-lowering polyunsaturated fatty acids. **Omega-3 fatty acids** (fish oils) are considered beneficial.
+3. **Trans-unsaturated fats**, produced by artificial hydrogenation of polyunsaturated oils (baked goods, margarine), can adversely affect the cholesterol profile.
+4. **Dietary fats in general.** The textbook's chapter on blood vessels states that the contribution of most dietary fats to atherosclerosis is now viewed as minimal.
+5. **Link through lipids.** Hypercholesterolaemia, especially raised LDL, is a major risk factor, and lowering serum cholesterol slows progression, causes regression of some plaques and reduces cardiovascular events.
+6. **Link through obesity.** Obesity brings hypertriglyceridaemia, low HDL, diabetes and hypertension, which all raise the risk of coronary artery disease.
 
 ## Define ischemic heart disease.
 
-Ischaemic heart disease (IHD) is a group of related clinical syndromes resulting from myocardial ischaemia, which is an imbalance between the supply of oxygenated blood to the myocardium (perfusion) and the cardiac demand for it. Ischaemia reduces oxygenation and ATP generation and also impairs delivery of nutrients and removal of metabolic wastes, so that it is tolerated less well than hypoxaemia alone. In more than 90% of cases the cause is reduced coronary flow from obstructive atherosclerosis of the epicardial coronary arteries, for which reason IHD is often called coronary artery disease. It usually reflects decades of silent progression of atherosclerosis, which begins in childhood or adolescence.
-
+**Ischaemic heart disease (IHD)** is a group of related entities resulting from **myocardial ischaemia**, an imbalance between myocardial supply (perfusion) and cardiac demand for oxygenated blood.
 
 ## Write down the types of ischemic heart disease.
 
-Ischaemic heart disease presents in four clinical forms.
+IHD declares itself through one or more clinical presentations.
 
-**1. Angina pectoris.** Paroxysmal substernal chest discomfort from transient (15 seconds to 15 minutes) myocardial ischaemia insufficient to cause necrosis. Three patterns are recognised:
+1. **Myocardial infarction (MI)**, in which ischaemia causes cardiac necrosis.
+2. **Angina pectoris**, in which ischaemia is not severe enough to cause infarction, but the symptoms portend infarction risk. Its patterns are stable (typical), Prinzmetal variant (caused by coronary artery spasm) and unstable or crescendo angina.
+3. **Chronic ischaemic heart disease with heart failure.**
+4. **Sudden cardiac death.**
 
-- Stable (typical) angina: due to chronic stenosing coronary atherosclerosis. Pain is induced by exertion, emotion or stress, and is relieved by rest or nitroglycerin.
-- Prinzmetal (variant) angina: due to coronary vasospasm. It occurs at rest, is unrelated to exertion, and responds to vasodilators.
-- Unstable (crescendo) angina: increasingly frequent, prolonged (over 20 minutes) or severe pain, occurring with progressively less exertion or at rest. It is caused by plaque disruption with thrombosis, embolisation or vasospasm and is a harbinger of infarction.
-
-**2. Myocardial infarction.** Death of cardiac muscle from prolonged ischaemia. It is either transmural (STEMI) or subendocardial (NSTEMI).
-
-**3. Chronic ischaemic heart disease (ischaemic cardiomyopathy).** Progressive congestive heart failure from accumulated ischaemic myocardial damage, usually after a prior infarct, with cardiomegaly and scars.
-
-**4. Sudden cardiac death.** Unexpected death from cardiac causes within 1 hour of symptom onset, usually from a fatal arrhythmia (ventricular fibrillation) in a heart with severe chronic coronary atherosclerosis.
-
+More than 90% of cases are due to obstructive atherosclerosis of the epicardial coronary arteries, so IHD is often called coronary artery disease.
 
 ## Write a short note on angina pectoris.
 
-Angina pectoris (literally "chest pain") is characterised by paroxysmal, recurrent attacks of substernal or precordial discomfort caused by transient myocardial ischaemia (15 seconds to 15 minutes) that is not severe enough to cause myocyte necrosis. The pain results from ischaemia-induced release of adenosine, bradykinin and other molecules that stimulate sympathetic and vagal afferent nerves. It is classically described as crushing or squeezing, radiating down the left arm or to the left jaw. Not all ischaemia is felt as pain: "silent ischaemia" is common in the elderly and in diabetic neuropathy and may present as dyspnoea, nausea, diaphoresis or fatigue.
+**Angina pectoris** is characterised by paroxysmal, recurrent attacks of substernal or precordial chest discomfort caused by **transient myocardial ischaemia** (15 seconds to 15 minutes) that is insufficient to cause myocyte necrosis. The pain results from ischaemia-induced release of adenosine, bradykinin and other molecules that stimulate sympathetic and vagal afferent nerves.
 
 Three overlapping patterns are recognised.
 
-- **Stable (typical) angina** is the most common. It is caused by an imbalance between perfusion (chronic stenosing atherosclerosis) and myocardial demand. It does not occur at rest, can be reliably reproduced by exertion, emotion or stress, and is relieved by rest or by nitroglycerin and calcium channel blockers.
-- **Prinzmetal variant angina** is an uncommon form caused by coronary artery spasm. Attacks are unrelated to physical activity, heart rate or blood pressure and can occur at rest. They respond promptly to vasodilators, even though significant atherosclerosis may coexist.
-- **Unstable (crescendo) angina** is a pattern of increasingly frequent, prolonged (over 20 minutes) or severe attacks, precipitated by progressively lower levels of activity or at rest. It is associated with plaque disruption with superimposed thrombosis, distal embolisation or vasospasm, and it portends a high risk of complete occlusion and infarction.
+1. **Stable (typical) angina.** The most common form. It is caused by an imbalance between coronary perfusion, due to chronic stenosing coronary atherosclerosis, and myocardial demand. It does not occur at rest but is reliably induced by physical activity, emotional excitement or psychological stress. The pain is crushing or squeezing, behind the sternum, and can radiate down the left arm or to the left jaw. It is relieved by rest or by vasodilators such as nitroglycerin and calcium channel blockers.
+2. **Prinzmetal variant angina.** An uncommon form of episodic ischaemia caused by coronary artery spasm. The attacks are unrelated to physical activity, heart rate or blood pressure and can occur at rest. It responds promptly to vasodilators.
+3. **Unstable (crescendo) angina.** Increasingly frequent, prolonged (over 20 minutes) or severe attacks, precipitated by progressively lower levels of activity or occurring at rest. It is associated with plaque disruption and superimposed thrombosis, distal embolisation and vasospasm, and it is a harbinger of myocardial infarction.
 
+**Silent ischaemia** is common in the elderly and in diabetic neuropathy, and may present as dyspnoea, nausea and vomiting, palpitations, sweating or fatigue, or with no symptoms.
 
 ## What is myocardial infarction?
 

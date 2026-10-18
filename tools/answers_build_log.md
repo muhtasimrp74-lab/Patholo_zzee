@@ -191,3 +191,41 @@ Sources: the site textbook (Chapter 7 "Grading and Staging of Tumors" and "Labor
 ### Housekeeping
 - Progress file lists 430 questions done (380 at the start of the round plus 50). 705 remain.
 - Site tests were not run this batch; the service-worker version was not bumped.
+
+## Session 8, batch 4 (50 answers recovered from the saved chat page; Chapter 7 neoplasia through Chapter 9 vitamin A)
+
+These 50 answers had been written in an earlier session (files b10, b11 and b12) but were never pushed, because that session ended mid-run. They were recovered word for word from the saved chat page and applied here, so the "Answer more 50 questions" round is now complete.
+
+Questions: neoplasia, benign and malignant tumours, dysplasia, oncogenes and tumour suppressor genes, environmental and viral carcinogenesis, angiogenesis, heterogeneity, precancerous lesions, cytology techniques, FNAC, frozen section, fixatives, IHC, three clinical case scenarios (thyroid, skin, melanoma), environmental hazards (lead, arsenic, pollution, tobacco, alcohol, radiation, burns), malnutrition, PEM, marasmus and kwashiorkor, vitamin A.
+
+Sources: the site textbook (Chapters 7, 9, 24 and 25).
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| What are the common fixatives used for histo- and cytopathological examination? | Web search results (Leica Biosystems "Fixation and fixatives: 4 popular fixative solutions", plus a PubMed Central article comparing tissue fixation methods) as seen on the saved chat page | exact URLs not recoverable from the saved page; please re-check |
+| Common nutritional disorders of Bangladesh. | Web search results (UN Nutrition, GAIN, Thrive Global, Education Commission country case study, Daily Observer Bangladesh, BVS) as seen on the saved chat page | exact URLs not recoverable from the saved page; please re-check |
+
+### Points needing a decision
+- The two outside-source answers above are the only ones in this batch that go beyond the textbook. Please confirm or replace them.
+- This batch was recovered from page text, so please skim a few answers on the site for any stray characters.
+
+## Session 8, batch 5 (25 answers: Chapter 9 vitamin D through Chapter 12 angina)
+
+Questions: rickets, effects of vitamin D deficiency, zinc (importance, development, clinical features, short note), obesity consequences, PEM, kwashiorkor, beriberi, vitamin A sources and manifestations, diet and cancer, arteriosclerosis (definition, types), atherosclerosis (definition, risk factors, pathogenesis, morphology, common sites, complications, diet), ischaemic heart disease (definition, types), angina pectoris.
+
+Sources: the site textbook only (Chapter 9 Environmental and Nutritional Diseases, Chapter 11 Blood Vessels, Chapter 12 The Heart). **No outside sources were used.**
+
+### Points left out or needing a decision
+- Zinc: the textbook gives zinc only in Table 9.10 (function, causes, deficiency features). The old answers added ZIP4, phytates, alcohol, burns and similar details; these were dropped as not in the textbook.
+- Beriberi: the textbook gives thiamine pyrophosphate as a coenzyme, "dry and wet beriberi" as the syndromes, polished rice and alcohol as causes, and "beriberi heart disease" in the cardiomyopathy chapter. It does not describe the features of dry or wet beriberi, so the answer says so. The old biochemistry (pyruvate dehydrogenase and similar enzymes) and clinical details were dropped.
+- Rickets (What is rickets?): definition only, per the answer rules. Pathogenesis moved to the "Effects of vitamin D deficiency" answer.
+- Define ischaemic heart disease, Define arteriosclerosis: definition only.
+- Draw and label an atheroma: the old text diagram was replaced by a numbered labelled description, so every line reads aloud.
+- Diet and atherosclerosis: the textbook's Chapter 9 passage (reducing saturated fat lowers cholesterol by 10% to 15%) and its Chapter 11 statement (the contribution of most dietary fats is now viewed as minimal) differ in emphasis; both are given.
+- Eponyms: Mönckeberg medial sclerosis is described by its feature; Prinzmetal variant angina is explained as angina caused by spasm.
+- Same text on purpose: dietary sources of vitamin A and vitamin A manifestations reuse the "Sources of vitamin A" and "Effects of vitamin A deficiency" answers from batch 4; the zinc short note repeats the zinc clinical features.
+
+### Housekeeping
+- Progress file lists 505 questions done (430 before batch 4, plus 50, plus 25). 630 remain.
+- Site tests were not run. VERSION in sw.js was bumped.
