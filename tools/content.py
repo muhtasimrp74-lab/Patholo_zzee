@@ -60,7 +60,11 @@ ANSWERS = {}
 # ---- answers.md: one "## <exact question text>" heading per question, then the answer in simple markdown ----
 def _md(t):
     import html as _h
-    inl = lambda s: _re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', _h.escape(s, quote=False))
+    def inl(s):   # ***bold italic***, **bold**, *italic* (italic only when the asterisks hug the words)
+        s = _h.escape(s, quote=False)
+        s = _re.sub(r'\*\*\*(.+?)\*\*\*', r'<strong><em>\1</em></strong>', s)
+        s = _re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
+        return _re.sub(r'(?<![\w*])\*(?![\s*])(.+?)(?<![\s*])\*(?![\w*])', r'<em>\1</em>', s)
     out, blocks = [], _re.split(r'\n\s*\n', t.strip())
     cur = [None]   # open numbered list: {'items': [html...], 'start': n, 'last': n}; stays open across nested bullet blocks
     def flush():
