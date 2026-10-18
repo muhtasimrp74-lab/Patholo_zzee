@@ -12509,23 +12509,21 @@ By stage, the changes are acute, subacute and chronic.
 
 ## A 16y boy has severe left tibial pain, high fever, TLC 18000, periosteal thickening on X-ray. What is your clinical diagnosis?
 
-The clinical diagnosis is **acute (haematogenous) pyogenic osteomyelitis** of the tibia, most probably due to Staphylococcus aureus.
+**Acute (haematogenous) pyogenic osteomyelitis of the tibia.**
 
-A boy of 16, with severe localised pain in the tibia, high fever, neutrophil leukocytosis (a total leukocyte count of 18,000) and periosteal thickening on radiograph, has the classical picture of acute osteomyelitis. The metaphysis of the long bones, such as the upper end of the tibia, is the commonest site in children and adolescents, owing to the slow blood flow in its terminal vascular loops, which favours bacterial lodging. Periosteal reaction on X-ray reflects the periosteum elevated by subperiosteal pus and the new bone deposited beneath it.
+- In otherwise healthy children, most osteomyelitis is haematogenous and more common in long bones
+- It presents acutely as a systemic illness with malaise, fever, chills, **leucocytosis** and intense throbbing pain over the affected region
+- The commonest organism is **Staphylococcus aureus**, responsible for 80% to 90% of culture-positive cases
+- Infection lifts the periosteum, and reactive bone is deposited at the periphery of the infection
 
-The differential diagnoses include **Ewing sarcoma**, which also presents in this age group with pain, fever, leukocytosis and a lamellated ("onion-skin") periosteal reaction, and which is excluded by biopsy; osteosarcoma; Brodie abscess; septic arthritis; and bone infarction in sickle cell disease.
-
+**Differential diagnosis:** **Ewing sarcoma** also presents in children with a painful, tender, warm, swollen mass and systemic findings that mimic infection (fever, raised sedimentation rate, anaemia, leucocytosis), with a periosteal reaction.
 
 ## Same: how would you confirm it?
 
-The diagnosis of acute osteomyelitis is confirmed as follows.
-
-1. **Blood culture**, positive in about half of the patients, before antibiotics are started.
-2. **Haematology:** neutrophil leukocytosis, raised ESR and C-reactive protein.
-3. **Bone biopsy or aspiration** of pus from the subperiosteal or intramedullary collection for Gram stain, culture and antibiotic sensitivity, the definitive test; histology shows acute inflammation and necrotic bone.
-4. **Imaging.** Plain radiographs may be normal in the first 10–14 days; later, they show periosteal elevation, soft tissue swelling and lytic lesions. MRI is the most sensitive method for early diagnosis and can show marrow oedema and abscesses; radionuclide bone scan is also positive early.
-5. **Exclusion of other conditions**, particularly Ewing sarcoma, by biopsy when imaging is atypical.
-
+- **Plain radiograph**: a lytic focus of bone destruction with associated reactive bone
+- **MRI**: more sensitive and specific for the changes of osteomyelitis
+- **Biopsy and microbial culture**: required to identify the pathogen in most instances; the organism is identified in only about 50% of patients
+- Histology of the biopsy: neutrophilic reaction and necrosis of bone and marrow in the acute phase
 
 ## Write a short note on Pott's disease.
 
@@ -12573,127 +12571,128 @@ Bone tumours are classified according to the normal cell type they recapitulate 
 
 ## Write a short note on Ewing's sarcoma.
 
-Ewing sarcoma is a highly malignant primitive neoplasm of small round cells that shows neuroectodermal differentiation. It is the second commonest malignant bone tumour of children and adolescents, after osteosarcoma.
+**Definition.** **Ewing sarcoma** is a malignant bone tumour strongly associated with oncogenic fusion genes composed of portions of the **EWSR1** gene and genes encoding ETS family transcription factors. It accounts for about 10% of primary malignant bone tumours and is the second most common bone sarcoma in children after osteosarcoma.
 
-Incidence and site. It occurs mostly under the age of 20, with a peak at 10 to 15 years, and more often in males. It arises in the diaphysis of long bones (femur, tibia, humerus) and in flat bones such as the pelvis and ribs; soft tissue origin also occurs.
+**Aetiology and pathogenesis**
 
-Genetics. Over 90% of tumours carry the translocation t(11;22)(q24;q12), which fuses the EWSR1 gene with FLI1 and produces an aberrant transcription factor that promotes proliferation and blocks differentiation. The related translocation t(21;22) is less frequent.
+- More than 90% contain a balanced translocation involving **EWSR1** on chromosome 22 and **FLI1** on chromosome 11
+- The fusion gene encodes a chimeric **EWSR1/FLI1** protein that binds chromatin and dysregulates transcription
+- Fewer than 10% have fusion genes involving other members of the FET or ETS gene families
+- The cell of origin is not certain: mesenchymal stem cells and primitive neuroectodermal cells are possible sources
 
-Gross. A soft, grey-white tumour that begins in the medullary cavity, with haemorrhage and necrosis, spreading through the cortex to elevate the periosteum and form a soft tissue mass.
+**Morphology**
 
-Microscopy. Solid sheets of small, uniform, round cells with round nuclei, finely stippled chromatin and scanty pale cytoplasm containing glycogen (PAS-positive, diastase-sensitive). Homer Wright rosettes are present in a minority. The cells are strongly positive for CD99, and also express FLI1 and NKX2.2. It belongs to the group of small round blue cell tumours of childhood (lymphoma, neuroblastoma, rhabdomyosarcoma), from which it is distinguished by immunohistochemistry and molecular testing.
+- Arises in the medullary cavity and invades the cortex, periosteum and soft tissue
+- Grossly soft, tan-white, with areas of haemorrhage and necrosis
+- Sheets of uniform **small round cells**, more cohesive than lymphocytes, with scant cytoplasm that may be clear because of glycogen
+- **Homer-Wright rosettes** (circular groups of cells with a central fibrillary core) may be present
+- Tumour cells do not produce bone or cartilage
 
-Clinical features. Pain, swelling and tenderness over the bone, with fever, anaemia, leukocytosis and raised ESR, which simulate osteomyelitis. Radiographs show a permeative destructive lesion with lamellated "onion-skin" periosteal new bone formation.
+**Clinical features and complications**
 
-Treatment and prognosis. Chemotherapy, surgery and radiotherapy. The tumour metastasises early to lungs and bone, but long-term survival in localised disease is about 70–75%.
-
+- About 80% of patients are younger than 20 years; boys are affected slightly more often
+- Usually in the **diaphysis** of long bones, especially the femur, and the flat bones of the pelvis; about 20% are extraskeletal
+- Painful, enlarging mass; the site is tender, warm and swollen, with systemic findings that mimic infection: fever, raised red cell sedimentation rate, anaemia and leucocytosis
+- Radiograph: destructive lytic tumour with permeative or moth-eaten margins and an **onion-skin** periosteal reaction
+- With neoadjuvant chemotherapy, surgery and adjuvant chemotherapy, 5-year survival is 75% and long-term cure 50%; chemotherapy-induced necrosis is a positive prognostic indicator
 
 ## Write a short note on giant cell tumour of bone.
 
-Giant cell tumour of bone (osteoclastoma) is a benign but locally aggressive tumour composed of neoplastic mononuclear stromal cells and numerous multinucleated giant cells resembling osteoclasts.
+**Definition.** **Giant cell tumour** is a neoplasm composed of monotonous mononuclear stromal cells, macrophages and osteoclast-type giant cells. While benign, it can be locally aggressive.
 
-Incidence and site. It occurs in young adults, aged 20 to 40, with a slight female preponderance. It involves the **epiphysis** of long bones, usually extending into the metaphysis, and is most frequent at the lower end of the femur, the upper end of the tibia and the lower end of the radius.
+**Aetiology and pathogenesis**
 
-Gross. A large, soft, red-brown, haemorrhagic tumour with cystic degeneration and areas of necrosis, expanding the end of the bone, thinning the cortex and sometimes extending into the soft tissue.
+- Most cells are non-neoplastic osteoclasts and their precursors
+- The neoplastic cells are primitive osteoblast precursors that express high levels of **RANKL**, which promotes proliferation of osteoclast precursors and their differentiation into mature osteoclasts
+- Absent feedback between osteoblasts and osteoclasts leads to localised but highly destructive bone resorption
+- The neoplastic cells have mutations in the **H3-3A** gene encoding histone 3.3
 
-Microscopic. Sheets of uniform oval mononuclear stromal cells with scattered, numerous, multinucleated osteoclast-like giant cells whose nuclei resemble those of the stromal cells. Atypia is minimal and mitoses are present, but atypical mitoses are absent. Haemorrhage, haemosiderin, foam cells and reactive bone are common. The neoplastic stromal cells carry H3F3A mutations and secrete RANKL, which recruits the giant cells.
+**Morphology**
 
-Radiology. An eccentric, purely lytic, expansile lesion with a "soap-bubble" appearance, reaching the subchondral bone with no marginal sclerosis.
+- Large, red-brown masses that frequently undergo cystic degeneration
+- Often destroy the overlying cortex, giving a bulging soft tissue mass delineated by a thin shell of reactive bone
+- Uniform oval mononuclear tumour cells and abundant osteoclast-type giant cells with 100 or more nuclei; necrosis and mitotic activity may be prominent
 
-Behaviour. Pain and swelling near a joint, sometimes a pathological fracture. The tumour recurs in 40 to 60% of cases after curettage; rarely it metastasises to the lungs. It is treated by curettage with adjuvant therapy, wide excision for aggressive tumours, and denosumab for unresectable disease.
+**Clinical features and complications**
+
+- Usually arises in the third to fifth decades, in the **epiphysis** of long bones, and may extend into the metaphysis; most are near the knee, in the distal femur or proximal tibia
+- Arthritis-like symptoms, because it arises near joints; pathological fracture
+- Treated by curettage; 40% to 60% recur locally
+- Up to 4% metastasise to the lungs, but these regress spontaneously or can be cured by excision
+- The RANKL inhibitor **denosumab** is an alternative to surgery when resection would cause significant morbidity
 
 ## Name 2 systemic diseases that affect joints.
 
-Two important systemic diseases that affect the joints are **rheumatoid arthritis** and **systemic lupus erythematosus**. Rheumatoid arthritis is a chronic autoimmune inflammatory disease that affects the synovium of small and large joints symmetrically, producing synovitis, pannus formation and destruction of cartilage and bone, in addition to systemic features such as rheumatoid nodules and vasculitis. Systemic lupus erythematosus is an autoimmune disease of multiple organs in which a non-erosive, deforming arthritis commonly affects the small joints of the hands. Other examples include gout, ankylosing spondylitis and psoriatic arthritis.
+1. **Rheumatoid arthritis**: a chronic autoimmune disorder that principally attacks the joints, producing a non-suppurative, proliferative, inflammatory synovitis; extra-articular lesions may also occur
+2. **Gout**: transient attacks of acute arthritis initiated by monosodium urate crystals deposited within and around joints, with excessive uric acid in the tissues and body fluids
 
 ## What is meningitis? What are the types?
 
-Meningitis is inflammation of the leptomeninges (pia mater and arachnoid) and of the CSF in the subarachnoid space, most often caused by infection.
+**Definition.** **Meningitis** is an inflammatory process involving the leptomeninges and CSF within the subarachnoid space, usually caused by infection. **Meningoencephalitis** is inflammation of the meninges and brain parenchyma, most commonly viral.
 
-The types are:
+**Types** (by aetiology and clinical evolution of infectious meningitis)
 
-1. **Acute pyogenic (bacterial) meningitis**, caused by pyogenic bacteria; the exudate is neutrophilic and the course is fulminant, developing over hours to days.
-2. **Acute aseptic (lymphocytic, viral) meningitis**, a self-limited illness caused chiefly by viruses, with a lymphocytic CSF response and no organisms on bacterial culture.
-3. **Chronic meningitis**, which includes tuberculous meningitis (a thick gelatinous exudate at the base of the brain, with granulomas) and fungal meningitis (for example cryptococcal meningitis), as well as spirochaetal (syphilitic and Lyme) disease.
-4. **Other types** include carcinomatous or leukaemic (neoplastic) meningitis, and chemical meningitis, which results from irritants such as a ruptured dermoid cyst.
+1. **Acute pyogenic** meningitis, usually bacterial
+2. **Aseptic** meningitis, usually acute or subacute viral
+3. **Chronic** meningitis, usually tuberculous, spirochaetal or cryptococcal
 
+- **Chemical meningitis** may follow an irritant introduced into the subarachnoid space
+- Meningitis may also occur in a systemic autoimmune disease
 
 ## What are the causes of neonatal meningitis?
 
-The causes of neonatal meningitis are organisms acquired from the maternal genital tract at or near delivery, or from the nursery environment.
-
-1. **Group B streptococci** (Streptococcus agalactiae) are the most common cause in developed countries.
-2. **Escherichia coli**, especially the K1 capsular antigen strains, are the commonest gram-negative cause, together with other enteric bacilli: Klebsiella, Enterobacter, Citrobacter, Proteus and Pseudomonas.
-3. ***Listeria monocytogenes***, acquired transplacentally or at birth.
-4. Staphylococcus aureus and coagulase-negative staphylococci, especially in premature infants with intravascular devices, shunts or neural tube defects.
-5. Haemophilus influenzae and other organisms, less commonly.
-
-Predisposing factors include prematurity, low birth weight, prolonged rupture of the membranes, maternal infection or chorioamnionitis, neonatal sepsis, traumatic delivery and neural tube defects.
-
+- **Escherichia coli**
+- **Group B streptococci**
 
 ## Mention the CSF findings of different types of meningitis.
 
-The CSF findings in the different types of meningitis are as follows.
-
-| Feature | Normal | Acute pyogenic | Tuberculous | Viral (aseptic) | Fungal (cryptococcal) |
-|---|---|---|---|---|---|
-| **Appearance** | Clear, colourless | Turbid to purulent | Clear or slightly turbid; fibrin web (cobweb) on standing | Clear | Clear |
-| **Pressure** | Normal | Markedly raised | Raised | Normal or slightly raised | Often markedly raised |
-| **Cells (per µL)** | 0–5 lymphocytes | 1,000–10,000 or more, mainly neutrophils | 50–500, predominantly lymphocytes (neutrophils early) | 10–500, mainly lymphocytes (neutrophils very early) | 20–500 lymphocytes |
-| **Protein** | 15–45 mg/dL | Markedly raised (above 100 mg/dL) | Markedly raised (100–500 mg/dL) | Normal or mildly raised | Raised |
-| **Glucose** | 45–80 mg/dL (about two-thirds of blood glucose) | Markedly reduced | Reduced | Normal | Reduced |
-| **Chloride** | Normal | Reduced | Markedly reduced | Normal | Reduced |
-| **Microbiology** | Sterile | Gram stain and culture positive | Ziehl–Neelsen stain, culture or PCR for M. tuberculosis | Culture negative; viral PCR positive | India ink and cryptococcal antigen positive |
-
+| Type | Cells | Protein | Glucose | Other |
+|---|---|---|---|---|
+| **Acute pyogenic** | Numerous neutrophils | Increased | Markedly reduced | Cloudy or frankly purulent; increased pressure |
+| **Aseptic (viral)** | Lymphocytic pleocytosis | Only moderately increased | Nearly always normal | Clear; normal or mildly increased pressure |
+| **Tuberculous** | Mononuclear cells, or a mixture of neutrophils and mononuclear cells | Elevated, often strikingly | Moderately reduced or normal | Cloudy or yellow; increased pressure |
+| **Chemical** | Neutrophilic pleocytosis | Increased | Usually normal | Sterile CSF |
 
 ## Give the differences in CSF findings between pyogenic, tubercular and viral meningitis.
 
 | Feature | Pyogenic meningitis | Tuberculous meningitis | Viral meningitis |
 |---|---|---|---|
-| **Appearance** | Turbid or purulent | Clear or opalescent; a fine fibrin clot ("cobweb") forms on standing | Clear |
-| **Pressure** | Markedly increased | Increased | Normal or mildly increased |
-| **Cells** | Greatly increased (several hundred to many thousand per µL); predominantly neutrophils | Moderately increased (usually 50–500 per µL); predominantly lymphocytes, with neutrophils in the early stages | Mildly to moderately increased (10–500 per µL); predominantly lymphocytes |
-| **Protein** | Markedly increased | Markedly increased | Normal or mildly increased |
-| **Glucose** | Markedly decreased (often less than one-third of blood glucose) | Decreased | Normal |
-| **Chloride** | Decreased | Markedly decreased | Normal |
-| **Microscopy and culture** | Gram-stain shows organisms; culture positive | Acid-fast bacilli on Ziehl–Neelsen stain (low yield); culture and PCR positive | No organisms; virus found by PCR |
-
+| **Appearance** | Cloudy or frankly purulent | Cloudy or yellow | Clear |
+| **Pressure** | Increased | Increased | Normal or mildly increased |
+| **Cells** | Numerous neutrophils | Mononuclear cells, or neutrophils with mononuclear cells | Lymphocytic pleocytosis |
+| **Protein** | Increased | Elevated, often strikingly | Only moderately increased |
+| **Glucose** | Markedly reduced | Moderately reduced or normal | Nearly always normal |
 
 ## Why is glucose reduced in pyogenic meningitis?
 
-The reduction of CSF glucose in pyogenic meningitis has three main causes. First, the neutrophils that fill the subarachnoid space, and the bacteria themselves, consume glucose avidly through glycolysis, and metabolise it largely to lactate, so that CSF lactate rises as glucose falls. Second, the inflamed meninges and brain surface increase anaerobic glycolysis in the neighbouring neural tissue, further using up glucose. Third, inflammation impairs the carrier-mediated transport of glucose, by GLUT1, across the blood–brain barrier and the choroid plexus, so that glucose entering the CSF is reduced. The result is a CSF glucose lower than two-thirds of the blood level and often below 40 mg/dL; the blood glucose should be measured at the same time for comparison.
-
+- Markedly reduced CSF glucose (hypoglycorrhachia) is a characteristic finding of acute pyogenic meningitis
+- It results mainly from increased **anaerobic glycolysis** in the subarachnoid space, induced by TNF-alpha and leucocytes
+- The cause is still debated: the leucocyte count does not fully explain it, and the CSF protein concentration correlates more strongly with the low glucose than the cell count does
 
 ## Why is CSF appearance turbid in pyogenic meningitis?
 
-The CSF is normally crystal-clear, because it contains only a few cells and little protein. In pyogenic meningitis the subarachnoid space fills with a large number of neutrophils (often thousands per microlitre), together with bacteria, protein (including fibrinogen and fibrin from the leaky inflamed vessels) and cell debris. Visible turbidity appears once the leukocyte count exceeds a few hundred cells per microlitre, and so in pyogenic meningitis the fluid is cloudy and may be frankly purulent. In viral meningitis the cell count is lower, so the CSF is clear.
-
+- In pyogenic meningitis, **neutrophils** fill the subarachnoid space and a suppurative exudate covers the brain surface
+- A lumbar puncture therefore yields **cloudy or frankly purulent** CSF with numerous neutrophils and increased protein
+- Normal CSF is clear
 
 ## A patient has high fever, neck rigidity/pain, ± purpuric rash, leukocytosis. What is your clinical diagnosis?
 
-The clinical diagnosis is **acute pyogenic (bacterial) meningitis**; when a purpuric rash is present, it is most probably **meningococcal meningitis**, with meningococcaemia.
+**Acute pyogenic (bacterial) meningitis.**
 
-The triad of high fever, headache and neck rigidity (meningism), together with a neutrophil leukocytosis, indicates acute inflammation of the meninges by pyogenic bacteria. Neck pain and stiffness are due to meningeal irritation by the inflammatory exudate. Fever and leukocytosis reflect the systemic inflammatory response to bacteraemia. A petechial or purpuric rash occurs when Neisseria meningitidis causes septicaemia, with endothelial injury, disseminated intravascular coagulation and skin haemorrhages. In its fulminant form, it is accompanied by bilateral adrenal haemorrhage, shock and circulatory collapse (Waterhouse–Friderichsen syndrome). Other features include photophobia, vomiting, confusion or reduced consciousness, seizures, and positive Kernig and Brudzinski signs.
-
-Differential diagnoses are viral and tuberculous meningitis, encephalitis, subarachnoid haemorrhage, cerebral malaria, and a cerebral abscess.
-
+- Systemic signs of infection with symptoms of meningeal irritation: headache, photophobia, irritability, clouding of consciousness and **neck stiffness**
+- *Neisseria meningitidis* is the cause in adolescents and young adults; clusters of cases raise public health concerns
+- Complication: **Waterhouse-Friderichsen syndrome** (septicaemia with haemorrhagic infarction of the adrenal glands), most often with meningococcal and pneumococcal meningitis
 
 ## Same: what investigations/CSF findings will confirm it?
 
-The diagnosis is confirmed by examining the cerebrospinal fluid, obtained by lumbar puncture, and by blood tests.
+**Lumbar puncture and CSF examination.**
 
-1. **Lumbar puncture and CSF analysis.** If there is papilloedema, focal neurological deficit or depressed consciousness, imaging (CT) should precede lumbar puncture, to exclude a mass lesion and the risk of herniation. The CSF in pyogenic meningitis shows:
-
-- turbid or purulent appearance with raised opening pressure;
-- markedly raised neutrophil count (usually above 1,000 per µL);
-- markedly raised protein (above 100 mg/dL);
-- markedly reduced glucose (below 40 mg/dL, or less than one-third of the blood glucose);
-- **Gram stain** positive in most cases (Gram-negative intracellular diplococci for Neisseria meningitidis, Gram-positive diplococci for pneumococci), and **culture** with antibiotic sensitivity, which gives the definitive diagnosis;
-- latex agglutination for bacterial antigens or PCR, when antibiotics have been given before the lumbar puncture.
-
-2. **Blood culture**, positive in a high proportion of cases, and culture or scraping of a purpuric lesion.
-3. **Blood tests:** total and differential leukocyte count (neutrophil leukocytosis), C-reactive protein, procalcitonin, blood glucose for comparison with CSF glucose, coagulation profile when meningococcaemia is suspected.
-4. **Imaging** (CT or MRI) if complications such as hydrocephalus, abscess or infarction are suspected.
+- **Cloudy or frankly purulent** CSF
+- Numerous **neutrophils**
+- Increased CSF pressure
+- Increased protein
+- Markedly reduced glucose
+- **Gram stain** shows variable numbers of bacteria, particularly in untreated meningitis, and culture identifies the organism
 
 ## What is pleocytosis?
 
@@ -12704,45 +12703,53 @@ The diagnosis is confirmed by examining the cerebrospinal fluid, obtained by lum
 
 ## Write down the indications of CSF examination.
 
-The indications for examination of CSF are as follows.
+CSF analysis is indicated in:
 
-1. **Suspected CNS infection:** meningitis (the main indication), encephalitis, brain abscess (with caution), neurosyphilis and other chronic infections.
-2. **Subarachnoid haemorrhage** when CT is negative but the clinical suspicion is strong; xanthochromia confirms it.
-3. **Demyelinating diseases:** multiple sclerosis (oligoclonal bands, raised IgG index).
-4. **Guillain–Barré syndrome and other inflammatory neuropathies:** raised protein with a normal cell count (albuminocytological dissociation).
-5. **Neoplastic meningitis:** carcinomatous, leukaemic and lymphomatous infiltration, diagnosed by cytology.
-6. **Raised intracranial pressure,** hydrocephalus and idiopathic intracranial hypertension, in which the pressure is measured.
-7. **Unexplained fever or seizures in neonates and infants,** and unexplained coma or confusion.
-8. **Therapeutic and diagnostic uses:** intrathecal chemotherapy or antibiotics, spinal anaesthesia, and myelography.
-
-Lumbar puncture is contraindicated when there is raised intracranial pressure with a mass lesion, a bleeding disorder, or infection at the puncture site.
+1. **Suspected CNS infection** (meningitis, encephalitis, myelitis, radiculitis and neuritis): the most common indication and a medical emergency; it identifies the organism and guides antimicrobial treatment
+2. **Subarachnoid haemorrhage**: when CT is delayed or equivocal, because bleeding may not be seen on imaging
+3. **Inflammatory and demyelinating disease**: multiple sclerosis and Guillain-Barré syndrome
+4. **Malignancy**: spread of malignant disease, such as lymphoma or leptomeningeal carcinomatosis, into the CSF space
+5. Other neurological conditions: spontaneous intracranial hypotension and idiopathic intracranial hypertension
 
 ## Write a short note on peculiarities of CNS neoplasm.
 
-The tumours of the central nervous system differ from those in other organs in several important respects.
+The following make CNS tumours different from tumours elsewhere:
 
-1. **The site is more important than the histological type.** Within the rigid cranial vault, any space-occupying lesion, even a histologically benign one, raises intracranial pressure, compresses vital structures, and may cause herniation and death. A small tumour in the brainstem may prove fatal, whereas a larger one in a silent area may be well tolerated.
-2. **The distinction between benign and malignant is imprecise.** The tumours are therefore graded (WHO grades 1 to 4) by their expected biological behaviour, using histology and molecular markers such as IDH mutation, 1p/19q codeletion and H3 alterations, rather than being classified as benign or malignant. A low-grade tumour may progress to a higher grade.
-3. **Diffusely infiltrating gliomas** spread into the surrounding brain tissue without a clear margin, so complete surgical removal is impossible and recurrence is the rule.
-4. **Metastasis outside the CNS is rare**, since the brain has no lymphatic system, but tumours such as medulloblastoma, ependymoma and high-grade gliomas may spread within the subarachnoid space through the CSF.
-5. **The age and site distribution is characteristic:** in children most tumours are infratentorial (medulloblastoma, pilocytic astrocytoma, ependymoma), whereas in adults most are supratentorial (glioblastoma, meningioma, metastases).
-6. **Metastatic tumours** (from lung, breast, melanoma, kidney and colon) are the commonest intracranial neoplasms in adults.
-7. **Presentation** is with symptoms of raised intracranial pressure (headache, vomiting, papilloedema), focal neurological deficits, or seizures.
-
+1. The clinical course is strongly influenced by the **pattern of growth and location**, as much as by histological grade
+2. Even **benign tumours and low-grade malignancies** can cause serious deficits and may be fatal; a benign posterior fossa meningioma can cause cardiorespiratory arrest by compressing vital centres in the medulla
+3. **Diffuse gliomas** infiltrate the brain widely, so complete surgical resection is not possible without compromising neurological function
+4. Even the most highly malignant gliomas **rarely metastasise outside the CNS**
+5. Some paediatric tumours, such as **medulloblastoma**, spread through the CSF in the subarachnoid space and disseminate far from the original site
+6. Grading uses the 2021 WHO classification, which gives CNS WHO grade 1 to grade 4 by biological behaviour and increasingly includes molecular and genetic criteria
+7. Malignant tumours tend to become more aggressive with time because of clonal evolution, shown as a higher grade
+8. Seventy percent of childhood CNS tumours arise in the posterior fossa; a comparable number in adults arise in the cerebral hemispheres above the tentorium
 
 ## Write a short note on meningioma.
 
-A meningioma is a slow-growing tumour of the meningothelial cells of the arachnoid, usually benign, and attached to the dura.
+**Definition.** **Meningiomas** are predominantly benign tumours of adults that arise from the meningothelial cells of the arachnoid and are usually attached to the dura. They are the most common primary brain tumours.
 
-Incidence and aetiology. It is a tumour of adults, most frequent between the ages of 50 and 70, with a female predominance, and it is the most common benign intracranial tumour. Loss of function of the NF2 gene on chromosome 22 is the principal genetic event. Predisposing factors are prior radiation to the head and neurofibromatosis type 2, and tumours may express progesterone receptors.
+**Aetiology and pathogenesis**
 
-Sites. They arise along the dural venous sinuses and surfaces: the parasagittal region, falx, cerebral convexities, sphenoid ridge, olfactory groove, and also the spinal canal.
+- Prior radiation therapy to the head and neck, typically decades earlier, is a risk factor
+- Loss of chromosome 22, especially 22q12, which carries the **NF2** gene (merlin); 50% to 60% of sporadic meningiomas have NF2 mutations
+- Without NF2 mutations: TRAF7, KLF4, AKT1, SMO and PIK3CA mutations, mostly in skull base tumours with lower risk of progression
+- Higher grade: multiple chromosomal losses, **TERT** promoter mutations and homozygous **CDKN2A** deletions; the last two define CNS WHO grade 3
 
-Gross. A firm, rounded or lobulated, well-demarcated tumour attached to the dura, compressing the brain, which it does not infiltrate. It may invade the skull and induce hyperostosis. The cut surface is grey-tan.
+**Morphology**
 
-Microscopic. Several patterns exist: the meningothelial type with syncytial whorls of cells; the fibroblastic type with spindle cells; the transitional type with both; and the psammomatous type with calcified whorls forming psammoma bodies. Cells have uniform oval nuclei with intranuclear pseudo-inclusions and express epithelial membrane antigen. Most are WHO grade 1; atypical (grade 2) and anaplastic (grade 3) meningiomas show greater mitotic activity and brain invasion and recur frequently.
+- Rubbery, rounded or bosselated dural masses that compress the underlying brain but are easily separated from it; may grow en plaque, with hyperostosis of adjacent bone
+- Firm to finely gritty because of **psammomatous calcifications**
+- Most are CNS WHO grade 1; patterns are meningothelial, fibroblastic, transitional (with **whorls**) and psammomatous (with **psammoma bodies**, concentric rings of calcification)
+- **Atypical** (grade 2) are about one-quarter, with increased mitoses or brain invasion; **anaplastic** (grade 3) are 1% to 3%
 
-Clinical features. Headache, seizures or progressive focal deficits through compression of the adjacent brain; radiologically a dural-based enhancing mass with a "dural tail". The treatment is surgical excision, with radiotherapy for atypical tumours.
+**Clinical features and complications**
+
+- Slow growing; vague non-localising symptoms or focal findings from compression of the brain
+- Sites: parasagittal convexity, lateral convexity dura, sphenoid wing, olfactory groove, sella turcica and foramen magnum
+- Uncommon in children; 2 to 1 female predominance in adults, 10 to 1 for spinal meningiomas
+- Multiple lesions with vestibular schwannoma or spinal ependymoma suggest **NF2**
+- Progesterone receptors are often expressed; growth may be faster in pregnancy and regress after delivery
+- Higher grades recur more and may need radiation therapy in addition to surgery
 
 ## Give the normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻.
 
