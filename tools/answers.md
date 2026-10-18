@@ -2850,73 +2850,150 @@ In 10% to 15% of systemic emboli the origin is unknown.
 
 ## Write in short the pathogenesis/effects of systemic embolism.
 
-Systemic (arterial) thromboembolism refers to emboli that enter the arterial circulation.
+**Sources of systemic emboli**
 
-**Sources.** About 80% arise from intracardiac mural thrombi, two-thirds of which are associated with left ventricular wall infarcts and another quarter with left atrial dilation and fibrillation (for example in rheumatic mitral stenosis). The remainder come from aortic aneurysms, atherosclerotic plaques, valvular vegetations, or venous thrombi crossing a septal defect (paradoxical emboli); 10% to 15% are of unknown origin.
+- Most systemic emboli (80%) arise from **intracardiac mural thrombi**, two-thirds of which are associated with left ventricular wall infarcts and another one-fourth with left atrial dilation and fibrillation.
+- The remainder originate from **aortic aneurysms**, **atherosclerotic plaques**, **valvular vegetations** or **venous thrombi** (paradoxical emboli).
+- A paradoxical embolus is a venous embolus that passes through an interatrial or interventricular defect and gains access to the systemic arterial circulation.
+- 10% to 15% are of unknown origin.
 
-**Pathogenesis.** A fragment of the thrombus detaches, enters the arterial stream and travels until it lodges in a vessel too small to allow passage. In contrast to venous emboli, which lodge in the lung, arterial emboli can travel to a wide variety of sites; the point of arrest depends on the source and on the relative amount of blood flow received by downstream tissues. Most (75%) come to rest in the lower extremities and 10% in the brain; other sites are the intestines, kidneys, spleen and upper extremities.
+**Sites of lodgement**
 
-**Effects.** The consequences depend on the vulnerability of the affected tissue to ischaemia, the caliber of the occluded vessel and whether there is a collateral blood supply; in general, tissue infarction results: gangrene of the lower limb, cerebral infarction (stroke), mesenteric infarction, renal and splenic infarcts. Septic emboli cause abscesses or mycotic aneurysms.
+- In contrast to venous emboli, the vast majority of which lodge in the lung, arterial emboli can travel to a wide variety of sites.
+- The point of arrest depends on the source and the relative amount of blood flow that downstream tissues receive.
+- Most come to rest in the lower extremities (75%) or the brain (10%).
+- Intestines, kidneys, spleen and upper extremities may also be involved.
+
+**Effects**
+
+- The consequences depend on the vulnerability of the affected tissue to ischaemia, the calibre of the occluded vessel, and whether a collateral blood supply exists.
+- In general, the outcome is tissue **infarction**.
 
 
 ## Write a short note on embolism / emboli.
 
-**Definition.** An embolus is a detached intravascular solid, liquid or gaseous mass that is carried by the blood from its point of origin to a distant site, where it often obstructs blood flow and causes tissue dysfunction or infarction. The phenomenon is called embolism.
+**Definition**
 
-**Types.** Most emboli (more than 90%) are dislodged thrombi (thromboembolism). Others are fat droplets, air or nitrogen bubbles, atherosclerotic debris (cholesterol emboli), tumour fragments, bone marrow, amniotic fluid and foreign bodies.
+An **embolus** is a detached intravascular solid, liquid or gaseous mass that is carried by the blood from its point of origin to a distant site, where it often obstructs blood flow and causes tissue dysfunction or infarction.
 
-**Venous and arterial emboli.** Emboli of venous origin lodge in the pulmonary arteries (pulmonary embolism, from deep leg vein thrombosis in 70% to 80%). Emboli of cardiac or arterial origin lodge in systemic arteries, most commonly in the lower limbs (75%) and brain (10%). Paradoxical embolism occurs when a venous embolus passes through an interatrial or interventricular defect into the arterial circulation.
+**Composition**
 
-**Consequences.** These depend on the size and site of the embolus and the vascular bed: partial or complete vascular occlusion, ischaemia and infarction (when collateral supply is absent), sudden death (massive pulmonary embolism), pulmonary hypertension (recurrent emboli), and DIC (amniotic fluid embolism). Septic emboli spread infection.
+- Most emboli are dislodged thrombi, hence the term **thromboembolism**.
+- Other rare emboli are composed of fat droplets, air or nitrogen bubbles, atherosclerotic debris (cholesterol emboli), tumour fragments, bone marrow, or even foreign bodies.
 
-**Special forms.** Pulmonary embolism, fat embolism and fat embolism syndrome, air embolism and decompression sickness, amniotic fluid embolism.
+**Pathogenesis**
+
+- Emboli travel through the blood until they encounter vessels too small to permit further passage, causing partial or complete vascular occlusion.
+- Depending on where they originate, emboli can lodge anywhere in the vascular tree.
+
+**Types**
+
+- **Pulmonary emboli** derive primarily from lower extremity deep vein thrombosis.
+- **Systemic emboli** derive from cardiac mural or valvular thrombi, aortic aneurysms or atherosclerotic plaques.
+- **Fat embolism** occurs after crushing injuries to the bones.
+- **Air embolism** occurs upon rapid decompression, most commonly in divers.
+- **Amniotic fluid embolism** is a rare complication of childbirth.
+
+**Clinical consequences**
+
+- The clinical consequences vary widely, depending on the size and the position of the lodged embolus, as well as the vascular bed that is impacted.
+- Pulmonary emboli may cause right-sided heart failure, pulmonary haemorrhage, pulmonary infarction or sudden death.
+- Whether a systemic embolus causes tissue infarction depends on the site of embolisation and the presence or absence of collateral circulation.
 
 
 ## Write a short note on fat embolism.
 
-**Definition.** Fat embolism is the presence of microscopic fat globules, sometimes with haematopoietic bone marrow, in the lung and other vasculature.
+**Definition**
 
-**Cause and incidence.** It typically follows fractures of long bones, or rarely soft tissue trauma and burns, and is found in about 90% of individuals with severe skeletal injuries; injuries rupture vascular sinusoids or small venules in the marrow, allowing marrow and adipose tissue to enter the circulation and travel to the lung.
+**Fat embolism** refers to the presence of microscopic fat globules, sometimes with associated haematopoietic bone marrow, in the vasculature.
 
-**Fat embolism syndrome** affects the minority who become symptomatic. About 1 to 3 days after injury there is sudden tachypnoea, dyspnoea and tachycardia, with irritability and restlessness progressing to delirium or coma; thrombocytopenia (platelet adhesion to fat globules, sequestration), anaemia (red cell aggregation, haemolysis) and a diffuse petechial rash (20% to 50%) occur. The syndrome is fatal in 5% to 15% of cases.
+**Aetiology**
 
-**Pathogenesis.** Mechanical obstruction of the pulmonary and cerebral microvasculature by fat globules and platelet and red cell aggregates, plus biochemical injury: free fatty acids released from the globules injure endothelium, with platelet activation and granulocyte recruitment (free radicals, proteases, eicosanoids).
+- It typically follows **fractures of long bones**; rarely it occurs in the setting of soft tissue trauma and burns.
+- It is common, occurring in some 90% of individuals with severe skeletal injuries.
 
-**Diagnosis.** Frozen sections stained for fat (Oil red O, Sudan), as routine processing dissolves fat; bone marrow elements may be seen in the pulmonary vessels.
+**Pathogenesis**
+
+- The injuries presumably rupture vascular sinusoids or small venules in the marrow, allowing marrow and adipose tissue to herniate into the vascular space and travel to the lung.
+- **Fat embolism syndrome** is the term applied to the minority of patients who become symptomatic.
+- Its pathogenesis involves both **mechanical obstruction** and **biochemical injury**.
+- Fat microemboli and associated red cell and platelet aggregates occlude the pulmonary and cerebral microvasculature.
+- Release of free fatty acids from the fat globules causes local toxic injury to endothelium.
+- Platelet activation and granulocyte recruitment, with release of free radicals, proteases and eicosanoids, complete the vascular assault.
+- Thrombocytopenia is attributed to platelet adhesion to fat globules and subsequent aggregation or splenic sequestration.
+- Anaemia can result from red cell aggregation or haemolysis.
+
+**Morphology**
+
+- Lipids are dissolved out of tissue preparations by the solvents used in paraffin embedding.
+- Microscopic demonstration of fat microglobules, in the absence of accompanying marrow elements, therefore requires specialised techniques, including **frozen sections** and **stains for fat**.
+
+**Clinical features and complications**
+
+- Fat embolism syndrome is characterised by **pulmonary insufficiency**, **neurological symptoms**, **anaemia** and **thrombocytopenia**.
+- Typically 1 to 3 days after injury there is sudden onset of tachypnoea, dyspnoea, tachycardia, irritability and restlessness, which can progress to delirium or coma.
+- A diffuse **petechial rash** (seen in 20% to 50% of cases) is related to the rapid onset of thrombocytopenia and is a useful diagnostic clue.
+- It is fatal in 5% to 15% of cases.
 
 
 ## Write a short note on air embolism.
 
-**Definition.** Air (gas) embolism is the presence of gas bubbles within the circulation that coalesce to form frothy masses obstructing vascular flow and causing distal ischaemic injury.
+**Definition**
 
-**Causes.** Air embolism occurs when there is communication between the vasculature and outside air and a negative pressure gradient that sucks air in: injuries of the neck or chest wall veins, neurosurgery in the sitting position, endovascular and interventional procedures, central venous catheters, mechanical ventilation, and obstetric or laparoscopic procedures.
+Gas bubbles within the circulation can coalesce to form frothy masses that obstruct vascular flow and cause distal ischaemic injury.
 
-**Volume.** More than about 100 mL of air is generally needed to produce a clinical effect in the pulmonary circulation, and 300 to 500 mL over several seconds may be fatal.
+**Aetiology and pathogenesis**
 
-**Effects.** In the pulmonary vasculature air blocks perfusion and induces an intense inflammatory response with cytokine release and alveolar injury (right heart "air lock" with sudden dyspnoea, hypotension, a churning "mill-wheel" murmur). In the central nervous system, bubbles cause memory loss, ataxia, visual disturbances and sudden coma.
+- Air embolism occurs when there is communication between the vasculature and outside air and a negative pressure gradient that "sucks" in the air.
+- Air may be introduced into the cerebral circulation by neurosurgery in the "sitting position", creating a gravitational gradient.
+- Air may also be introduced during endovascular and interventional procedures, during mechanical ventilation, during obstetric or laparoscopic procedures, or because of chest wall injury.
+- A large volume of air, generally more than 100 mL, is necessary to produce a clinical effect in the pulmonary circulation.
+- Introduction of 300 to 500 mL of air over several seconds may be fatal.
 
-**Decompression sickness.** A particular form of gas (nitrogen) embolism seen when sudden decreases in atmospheric pressure occur (divers, caisson workers, rapid ascent in unpressurised aircraft): the bends (painful bubbles in muscles and joints), the chokes (pulmonary oedema, haemorrhage and atelectasis), and the chronic caisson disease (ischaemic bone necrosis of femoral heads, tibia and humeri).
+**Clinical features**
 
-**Treatment.** Recompression in a hyperbaric chamber with slow decompression; for venous air embolism, left lateral decubitus and head-down position and aspiration.
+- Entry of air in the pulmonary vasculature blocks perfusion of the downstream region and induces an intense inflammatory response, with release of cytokines that may injure the alveoli.
+- Bubbles in the central nervous system can cause memory loss, ataxia, visual disturbances and even sudden onset of coma.
+
+**Decompression sickness**
+
+- It is a particular form of gas embolism that occurs when individuals experience sudden decreases in atmospheric pressure; scuba and deep-sea divers, underwater construction workers and persons in unpressurised aircraft who undergo rapid ascent are at risk.
+- On breathing air at high pressure, increased amounts of gas, particularly nitrogen, are dissolved in the blood and tissues; if the diver ascends too rapidly, the nitrogen comes out of solution in the tissues and the blood.
+- The **bends** is the painful condition caused by rapid formation of gas bubbles within skeletal muscles and supporting tissues in and about joints.
+- The **chokes** is a form of respiratory distress in which gas bubbles in the lung vasculature cause oedema, haemorrhage, and focal atelectasis or emphysema.
+- **Caisson disease** is a more chronic form, in which persistence of gas emboli in the skeletal system leads to multiple foci of ischaemic necrosis; the more common sites are the femoral heads, tibia and humeri.
+- Acute decompression sickness is treated by placing the patient in a chamber under sufficiently high pressure to force the gas bubbles back into solution; subsequent slow decompression permits gradual resorption and exhalation of the gases.
 
 
 ## Write a short note on pulmonary embolism.
 
-**Definition and incidence.** Pulmonary embolism (PE) is occlusion of the pulmonary arterial vasculature by emboli, almost always thromboemboli from deep vein thrombosis. Incidence is estimated at 60 to 120 per 100,000 in the United States; it is somewhat more common in males; it causes 60,000 to 100,000 deaths per year, and about 20% of individuals with PE die before or shortly after diagnosis.
+**Definition and incidence**
 
-**Source and risk factors.** In 70% to 80% of cases the embolus originates from leg DVT, so the risk factors are those of DVT: prolonged bed rest and immobilisation, heart failure, trauma, surgery, burns, pregnancy and the puerperium, malignancy, oral contraceptives, inherited thrombophilias, and advanced age.
+- Pulmonary emboli originate from **deep vein thrombosis (DVT)** and are a common, serious form of thromboembolic disease.
+- In 70% to 80% of cases, pulmonary embolism originates from leg DVT.
+- Incidence is an estimated 60 to 120 cases per 100,000 people in the United States; it is somewhat more common in males than in females.
+- It causes 60,000 to 100,000 deaths per year in the United States; an estimated 20% of individuals with pulmonary embolism die before or shortly after a diagnosis is made.
 
-**Pathogenesis and morphology.** Fragmented thrombi are carried through progressively larger veins and the right side of the heart and impact in the pulmonary arterial tree. Depending on size, an embolus may occlude the main pulmonary artery, straddle the bifurcation (saddle embolus), or pass into smaller branching arteries. Multiple emboli are common, sequentially or as a shower. Rarely a venous embolus passes through a septal defect into the systemic circulation (paradoxical embolism).
+**Risk factors**
 
-**Consequences.**
+- The risk factors are the same as for DVT.
+- Strong risk factors are prolonged bed rest or immobilisation, myocardial infarction, atrial fibrillation, tissue injury (surgery, fracture, burn), cancer, prosthetic cardiac valves, disseminated intravascular coagulation, heparin-induced thrombocytopenia and antiphospholipid antibody syndrome.
 
-- 60% to 80% are small and clinically silent; they organise and are incorporated into the wall.
-- Occlusion of 60% or more of the circulation causes sudden death, acute right heart failure (cor pulmonale) or cardiovascular collapse.
-- Occlusion of medium-sized arteries causes haemorrhage but usually not infarction, because of the bronchial arterial supply (infarction occurs if bronchial flow is compromised, as in left heart failure).
-- Occlusion of small end-arteriolar branches often causes haemorrhage or infarction.
-- Multiple emboli over time cause pulmonary hypertension and right ventricular failure.
+**Pathogenesis and morphology**
 
-**Clinical features.** Sudden dyspnoea, pleuritic chest pain, cough, haemoptysis, tachycardia; diagnosis by CT pulmonary angiography; raised D-dimer; treatment with anticoagulation, thrombolysis or embolectomy.
+- Fragmented thrombi from DVT are carried through progressively larger veins and the right side of the heart before lodging in the pulmonary arterial vasculature.
+- Depending on the size of the embolus, it can occlude the main pulmonary artery, straddle the pulmonary artery bifurcation (**saddle embolus**), or pass out into the smaller, branching arteries.
+- Frequently there are multiple emboli, occurring either sequentially or simultaneously as a shower of smaller emboli from a single large mass; the patient who has had one pulmonary embolism is at high risk for more.
+- Rarely, a venous embolus passes through an interatrial or interventricular defect and gains access to the systemic arterial circulation (**paradoxical embolism**).
+
+**Clinical features and complications**
+
+- Most pulmonary emboli (60% to 80%) are clinically **silent** because they are small; with time they become organised and are incorporated into the vascular wall, sometimes leaving a delicate, bridging fibrous web.
+- **Sudden death**, acute right-heart failure (**cor pulmonale**), or cardiovascular collapse occurs when emboli obstruct 60% or more of the pulmonary circulation.
+- Obstruction of medium-sized arteries with subsequent vascular rupture can result in **pulmonary haemorrhage** but usually does not cause pulmonary infarction, because the lung is supplied by both the pulmonary and the bronchial arteries.
+- If the bronchial arterial flow is compromised (for example by left-sided cardiac failure), infarction may occur.
+- Obstruction of small end-arteriolar pulmonary branches often produces haemorrhage or **infarction**.
+- Multiple emboli over time may cause **pulmonary hypertension** and **right ventricular failure**.
 
 
 ## Male (30 or 38 years) hospitalised for femur fracture; after two weeks sudden chest pain, cough and haemoptysis — Most probable diagnosis? Cause of this complication?
@@ -2935,18 +3012,24 @@ Systemic (arterial) thromboembolism refers to emboli that enter the arterial cir
 
 ## A 38y male with femur fracture develops chest pain, cough and haemoptysis after 2 weeks. What is the most likely diagnosis?
 
-The most likely diagnosis is **pulmonary thromboembolism with pulmonary infarction**. Sudden chest pain, cough and haemoptysis in a patient immobilised after a femoral fracture are the typical features of pulmonary embolism with infarction of lung tissue. The interval of about two weeks is consistent with deep vein thrombosis of the leg that has embolised, whereas fat embolism syndrome appears 1 to 3 days after the fracture with tachypnoea, neurologic changes, thrombocytopenia and a petechial rash. Embolic obstruction of small end-arteries causes a wedge-shaped haemorrhagic (red) infarct, accounting for the pleuritic pain and blood-stained sputum. Confirmation is by CT pulmonary angiography, with raised D-dimer and demonstration of DVT by Doppler ultrasound.
+The most likely diagnosis is **pulmonary embolism**, from **deep vein thrombosis** of the leg.
+
+- Tissue injury (fracture) and prolonged bed rest or immobilisation are strong risk factors for thrombosis.
+- Pulmonary emboli originate from DVT, in 70% to 80% of cases from leg DVT.
+- Embolic obstruction of small end-arteriolar pulmonary branches often produces **haemorrhage or infarction**.
+- Fat embolism syndrome, in contrast, typically appears 1 to 3 days after injury with tachypnoea, dyspnoea, tachycardia, irritability and restlessness.
 
 
 ## Same patient: what is the cause of this complication?
 
-The cause is **deep vein thrombosis (DVT) of the leg veins**, with detachment of the thrombus and embolisation to the pulmonary arteries. Following a femoral fracture, all components of Virchow's triad are present:
+The cause is a **deep vein thrombosis** of the leg whose fragments have embolised to the lung.
 
-1. **Stasis**, because of immobilisation and enforced bed rest, which abolishes the milking action of the calf muscles on the deep veins.
-2. **Endothelial injury**, from direct trauma and surgery (fixation) to the vessels at the fracture site.
-3. **Hypercoagulability**, from release of tissue procoagulants (tissue factor) from injured tissue, increased hepatic synthesis of clotting factors and decreased t-PA production after trauma and surgery.
+- Bed rest and immobilisation reduce the milking action of the leg muscles, resulting in **stasis**.
+- Trauma and surgery not only immobilise the person but are also associated with **vascular insults**, **procoagulant release** from injured tissues, **increased hepatic synthesis** of coagulation factors and **decreased t-PA production**.
+- Venous thrombi extend in the direction of blood flow, and the propagating portion is often poorly attached and therefore prone to fragmentation and embolisation.
+- DVT in a large leg vein at or above the knee (popliteal, femoral, iliac) more often embolises to the lungs.
+- DVT is asymptomatic in approximately 50% of affected individuals and is recognised only in retrospect after embolisation.
 
-The thrombus forms in the deep veins (popliteal, femoral, iliac) and extends toward the heart; its poorly attached propagating portion fragments and is carried through the right heart into the pulmonary arterial circulation, causing embolic obstruction, haemorrhage and infarction. About 70% to 80% of pulmonary emboli arise in this way, and DVT is often asymptomatic until embolisation occurs.
 
 ## What is an infarct?
 
@@ -3004,39 +3087,59 @@ In the lung, haemorrhagic infarcts are the rule.
 
 ## What are the factors that influence formation of infarct?
 
-Vascular occlusion may have effects ranging from virtually nothing to tissue necrosis sufficient to cause death. The variables determining the outcome are:
+1. **Anatomy of the vascular supply.** The availability of an alternative blood supply is the most important determinant of whether vessel occlusion will cause tissue damage.
 
-1. **Anatomy of the vascular supply.** The availability of an alternative (collateral or dual) blood supply is the most important determinant. The lung has a dual pulmonary and bronchial artery supply that protects against thromboembolic infarction; the liver, with its hepatic artery and portal vein, and the hand and forearm, with radial and ulnar arteries, are likewise resistant. Renal and splenic circulations are end-arterial, and obstruction generally causes infarction. Organs with a single efferent vein (testis, ovary) infarct with venous occlusion.
-2. **Rate of development of occlusion.** Slowly developing occlusions are less likely to cause infarction since there is time for development of collateral pathways. For example, small interarteriolar anastomoses connect the three major coronary arteries and, if one is occluded slowly by an encroaching atherosclerotic plaque, collateral flow may increase enough to prevent infarction.
-3. **Tissue vulnerability to hypoxia.** Neurons suffer irreversible damage after 3 to 4 minutes of ischaemia; myocardial cells are hardier but die after 20 to 30 minutes; fibroblasts survive many hours.
-4. **Hypoxaemia.** Low oxygen content of the blood, whatever its cause (anaemia, cardiac failure, lung disease), increases the likelihood and extent of infarction.
-5. In addition, the **caliber of the occluded vessel**, the **nature of the occlusion** (embolus versus slowly progressive thrombosis), and the **presence of shock** or poor perfusion influence the result.
+- The lungs have a dual pulmonary and bronchial artery blood supply that protects against thromboembolism-induced infarction.
+- The liver, with its dual hepatic artery and portal vein circulation, and the hand and forearm, with their dual radial and ulnar arterial supply, are relatively resistant to infarction.
+- Renal and splenic circulations are end-arterial, and vascular obstruction generally causes tissue death.
+
+2. **Rate of occlusion.** Slowly developing occlusions are less likely to cause infarction because they provide time for development of collateral pathways of perfusion.
+
+- Small interarteriolar anastomoses, normally with minimal functional flow, interconnect the three major coronary arteries of the heart.
+- If one coronary artery is occluded slowly by an encroaching atherosclerotic plaque, flow within this collateral circulation may increase sufficiently to prevent infarction.
+
+3. **Tissue vulnerability to hypoxia.**
+
+- Neurons undergo irreversible damage when deprived of their blood supply for only 3 to 4 minutes.
+- Myocardial cells die after only 20 to 30 minutes of ischaemia.
+- Fibroblasts within myocardium remain viable even after many hours of ischaemia.
+
+4. **Hypoxaemia.** Abnormally low blood oxygen content, regardless of cause, increases both the likelihood and extent of infarction.
 
 
 ## Write a short note on red infarct / red and white infarct.
 
-**Definition.** An infarct is an area of ischaemic necrosis caused by occlusion of the arterial supply or venous drainage. Infarcts are classified by colour and by the presence of infection: they are either red (haemorrhagic) or white (anaemic), and either bland or septic.
+**Definition**
+
+- An **infarct** is an area of ischaemic necrosis caused by occlusion of either the arterial supply or the venous drainage.
+- Infarcts are classified according to colour and the presence or absence of infection: they are either **red (haemorrhagic)** or **white (anaemic)**, and may be **septic** or **bland**.
+
+**Causes**
 
 | Feature | Red (haemorrhagic) infarct | White (anaemic) infarct |
 |---|---|---|
-| Cause | Venous occlusion; arterial occlusion in tissues with dual circulation; in loose tissue; in previously congested tissue; reperfusion | Arterial occlusion in solid organs with end-arterial circulation |
-| Tissue | Lung, small intestine, testis, ovary, brain (reperfusion) | Heart, spleen, kidney (and brain) |
-| Mechanism | Blood seeps into the necrotic area from parallel or collateral supply or from the congested veins | Dense tissue limits seepage of blood from neighbouring capillary beds |
-| Colour | Red-dark, haemorrhagic; later brown (haemosiderin) | Pale, yellow-white, sharply demarcated |
-| Examples | Pulmonary infarct, testicular torsion, intestinal volvulus | Myocardial infarct, splenic infarct, renal infarct |
+| Occurs with | Venous occlusions (for example testicular torsion); loose, spongy tissues (for example lung) where blood can collect in the infarcted zone; tissues with dual circulations (for example lung and small intestine); tissues previously congested by sluggish venous outflow; reestablished flow to a site of previous arterial occlusion and necrosis (for example following angioplasty) | Arterial occlusions in solid organs with end-arterial circulation (for example heart, spleen, kidney), where tissue density limits seepage of blood from adjoining capillary beds into the necrotic area |
+| Course | In the lung, haemorrhagic infarcts are the rule; extravasated red cells are phagocytosed by macrophages, which convert haem iron into **haemosiderin**, and extensive haemorrhage can leave a firm, brown, haemosiderin-rich residuum | Infarcts in organs without a dual blood supply typically become progressively paler and more sharply defined |
 
-**Morphology.** Infarcts tend to be wedge-shaped, with the occluded vessel at the apex and the periphery of the organ forming the base; when the base is a serosal surface, a fibrinous exudate may overlie it. Fresh infarcts are poorly defined and slightly haemorrhagic; within a few days the margins become better defined by a narrow rim of congestion due to inflammation. White infarcts become progressively paler and more sharply defined; in the lung haemorrhagic infarcts are the rule. Extravasated red cells are phagocytosed by macrophages and converted to haemosiderin, leaving a firm brown residuum if haemorrhage is extensive.
+**Morphology**
 
-**Histology and evolution.** The dominant histological feature is coagulative necrosis (liquefactive necrosis in the brain). Microscopic changes take 4 to 12 hours to appear; acute inflammation is present along the margins within a few hours and well defined in 1 to 2 days; repair begins in the preserved margins, and most infarcts are replaced by scar.
-
-**Septic infarcts** arise when infected valve vegetations embolise or microbes seed necrotic tissue, converting the infarct to an abscess.
+- Infarcts tend to be **wedge-shaped**, with the occluded vessel at the apex and the periphery of the organ forming the base.
+- When the base is a serosal surface, there may be an overlying fibrinous exudate resulting from acute inflammation.
+- Fresh infarcts are poorly defined and slightly haemorrhagic; over a few days the margins become better defined by a narrow rim of congestion attributable to inflammation.
+- The dominant histological characteristic is **coagulative necrosis**.
+- It takes 4 to 12 hours for the dead tissue to show microscopic evidence of necrosis; acute inflammation is present along the margins within a few hours and is usually well defined within 1 to 2 days.
+- Eventually a reparative response begins in the preserved margins, and most infarcts are ultimately replaced by **scar tissue**.
+- The brain is an exception, in that central nervous system infarction results in **liquefactive necrosis**.
+- **Septic infarction** occurs when infected cardiac valve vegetations embolise or when microbes seed necrotic tissue; the infarct is converted to an **abscess**.
 
 
 ## What types of infarct are seen in heart and lungs?
 
-**Heart: white (anaemic) infarct.** Myocardial infarction results from occlusion of a coronary artery (usually by thrombosis on an atherosclerotic plaque). The heart is a solid organ with end-arterial type supply, so the arterial occlusion produces a pale (white) infarct, in which tissue density limits seepage of blood into the necrotic area. Histologically it is coagulative necrosis, which takes 4 to 12 hours to be visible (cardiac myocytes die after 20 to 30 minutes of ischaemia), with neutrophilic infiltration at the margins within 1 to 2 days and eventual replacement by a fibrous scar. Reperfusion (angioplasty, thrombolysis) may make the infarct haemorrhagic (red). The infarct may be subendocardial or transmural.
+| Organ | Type of infarct | Reason |
+|---|---|---|
+| Heart | **White (anaemic)** infarct | Arterial occlusion in a solid organ with end-arterial circulation, where tissue density limits seepage of blood from adjoining capillary beds into the necrotic area |
+| Lung | **Red (haemorrhagic)** infarct | Loose, spongy tissue in which blood can collect in the infarcted zone; dual circulation allows blood to flow from an unobstructed parallel supply into the necrotic zone; haemorrhagic infarcts are the rule |
 
-**Lung: red (haemorrhagic) infarct.** Pulmonary infarcts result from occlusion of small peripheral branches of the pulmonary artery, usually by emboli, and are haemorrhagic (red) because the lung is a loose spongy tissue with dual (pulmonary and bronchial) circulation, so blood flowing from the bronchial arteries collects in the necrotic zone, and because pulmonary congestion is often present. They are wedge-shaped with the base on the pleural surface, which may be covered by fibrinous exudate (pleuritic pain), and cause haemoptysis. Pulmonary infarction is uncommon with embolic occlusion of medium arteries because of the bronchial supply, unless the bronchial circulation is compromised (left heart failure).
 
 ## What are the types of shock?
 
@@ -3070,64 +3173,131 @@ Less commonly, shock can occur in the setting of a spinal cord injury (**neuroge
 
 ## Define shock.
 
-Shock is a state of systemic tissue hypoperfusion resulting from reduced cardiac output and/or reduced effective circulating blood volume, which leads to circulatory failure, impaired delivery of oxygen and nutrients to the tissues, and cellular hypoxia. At the outset the cellular injury is reversible, but prolonged shock leads to irreversible tissue injury, multiorgan failure and death.
+**Shock** is a state of circulatory failure that impairs tissue perfusion and leads to cellular hypoxia.
 
-**Causes.** Shock may complicate severe haemorrhage, extensive trauma or burns, myocardial infarction, pulmonary embolism and microbial sepsis. The three major categories are cardiogenic shock (failure of the myocardial pump), hypovolaemic shock (loss of blood or plasma volume) and septic shock (systemic microbial infection with dysregulated host response); less common forms are neurogenic and anaphylactic shock, in which acute vasodilation causes hypotension.
-
-**Course.** Shock evolves through three stages: nonprogressive (compensated), progressive, and irreversible.
-
-**Features.** Hypotension, weak rapid pulse, tachypnoea, cool, clammy, cyanotic skin (warm and flushed in early septic shock), oliguria, altered sensorium, and lactic acidosis. Morphologically the changes are those of hypoxic injury, with involvement of brain, heart, kidneys, adrenals and the gastrointestinal tract.
+It is defined as a state of systemic tissue hypoperfusion resulting from reduced cardiac output, reduced effective circulating blood volume, or both.
 
 
 ## What is anaphylactic shock?
 
-Anaphylactic shock is an acute, life-threatening systemic type I (IgE-mediated) hypersensitivity reaction, in which a sudden widespread vasodilation with increased vascular permeability causes hypotension and tissue hypoperfusion.
-
-**Pathogenesis.** In a previously sensitised individual, re-exposure to the antigen (penicillin and other drugs, insect venom, foods such as peanuts and shellfish, latex, contrast media) causes cross-linking of the antigen to IgE bound to FcεRI on mast cells and basophils. Degranulation releases histamine, and newly synthesised mediators (leukotrienes C₄, D₄, E₄, prostaglandin D₂, platelet-activating factor) and cytokines. Bradykinin and complement anaphylatoxins (C3a, C5a) may contribute.
-
-**Effects.** Systemic arteriolar and venous dilation, increased vascular permeability with loss of plasma into the tissues (angioedema, laryngeal oedema), bronchospasm and mucus secretion (respiratory distress), urticaria, and hypotension with circulatory collapse.
-
-**Clinical features.** Within minutes of exposure: itching, urticaria, flushing, swelling of lips and larynx, wheezing, abdominal cramps, tachycardia, hypotension and collapse; it may be fatal. Treatment is immediate intramuscular epinephrine, with airway support, intravenous fluids, antihistamines and corticosteroids.
+**Anaphylactic shock** is shock that occurs in the setting of an **IgE-mediated hypersensitivity reaction**, in which acute vasodilation leads to hypotension and tissue hypoperfusion.
 
 
 ## Name the stages of shock.
 
-Shock is a progressive disorder that leads to death if the underlying problems are not corrected. Unless the insult is massive and rapidly lethal (exsanguination from a ruptured aortic aneurysm), it evolves through three somewhat artificial stages, described most clearly in hypovolaemic shock but common to other forms:
-
-1. **Initial nonprogressive (compensated) stage.** Reflex compensatory mechanisms are activated and vital organ perfusion is maintained. These include baroreceptor reflexes, release of catecholamines and antidiuretic hormone, activation of the renin-angiotensin-aldosterone axis, and generalised sympathetic stimulation. The net effect is tachycardia, peripheral vasoconstriction and renal fluid conservation. Cutaneous vasoconstriction causes cool, pale skin (in septic shock the skin may be warm and flushed from vasodilation). Coronary and cerebral vessels remain of normal caliber, so blood is shunted to the heart and brain.
-2. **Progressive stage.** Characterised by tissue hypoperfusion and the onset of worsening circulatory and metabolic derangement, including acidosis. Anaerobic glycolysis produces lactic acidosis, tissue pH falls, arterioles dilate and blood pools in the microcirculation, cardiac output falls further, endothelial anoxic injury causes DIC, and vital organs begin to fail (oliguria, confusion).
-3. **Irreversible stage.** Cellular and tissue injury is so severe that even if the haemodynamic defects are corrected, survival is not possible. There is widespread cell injury with lysosomal enzyme leakage, worsening myocardial function (partly from nitric oxide), intestinal ischaemia with bacteraemia, and renal failure (acute tubular necrosis), leading to multiorgan failure and death.
+1. **Initial nonprogressive stage:** reflex compensatory mechanisms are activated and vital organ perfusion is maintained.
+2. **Progressive stage:** tissue hypoperfusion and onset of worsening circulatory and metabolic derangement, including acidosis.
+3. **Irreversible stage:** cellular and tissue injury is so severe that even if the haemodynamic defects are corrected, survival is not possible.
 
 
 ## Write a short note on hemorrhagic shock (pathophysiology of severe hemorrhage after RTA).
 
-Haemorrhagic shock is hypovolaemic shock due to acute loss of a large volume of blood, as in severe haemorrhage after a road traffic accident, ruptured organs or fractures.
+**Definition and cause**
 
-**Pathophysiology.** The clinical significance of haemorrhage depends on the volume, the rate and the site. Rapid loss of up to about 20% of blood volume may have little impact in healthy adults; greater losses cause haemorrhagic (hypovolaemic) shock.
+- **Hypovolaemic shock** results from low cardiac output due to low blood volume, such as occurs with **massive haemorrhage** or fluid loss from severe burns.
+- Shock may also complicate extensive trauma.
+- Trauma may trigger systemic inflammation, as in systemic inflammatory response syndrome (SIRS).
 
-1. **Reduced circulating volume.** Loss of blood volume reduces venous return and cardiac preload, so cardiac output and arterial pressure fall.
-2. **Compensatory stage (nonprogressive).** Baroreceptor reflexes, release of catecholamines and antidiuretic hormone, activation of the renin-angiotensin-aldosterone axis and sympathetic stimulation produce tachycardia, peripheral vasoconstriction and renal fluid conservation. The skin becomes cool and pale, and blood is shunted to the heart and brain. Fluid shifts from the interstitium into the vessels partly restore volume.
-3. **Progressive stage.** If bleeding continues, persistent tissue hypoperfusion shifts metabolism to anaerobic glycolysis, with lactic acidosis; acidosis blunts vasomotor tone, arterioles dilate and blood pools in capillaries, cardiac output falls further, and endothelium is injured, which may cause DIC. Trauma adds tissue injury and release of inflammatory mediators (SIRS), and massive transfusion, hypothermia and acidosis aggravate coagulopathy.
-4. **Irreversible stage.** Widespread cell injury, lysosomal enzyme release, myocardial failure, ischaemic gut with bacteraemia, acute tubular necrosis and multiorgan failure lead to death.
+**Pathophysiology**
 
-**Morphology and clinical features.** Hypoxic injury of brain, heart, kidneys (acute tubular necrosis), adrenals (lipid depletion) and gut, with centrilobular hepatic necrosis. The lungs are relatively resistant to hypoxic injury in hypovolaemic shock after haemorrhage, though trauma may cause diffuse alveolar damage (shock lung). The patient is pale, with cold clammy skin, weak rapid pulse, hypotension, tachypnoea and oliguria. More than 90% of young, otherwise healthy patients with hypovolaemic shock survive with appropriate management (control of bleeding, volume replacement).
+1. **Initial nonprogressive stage.** Reflex compensatory mechanisms maintain cardiac output and blood pressure.
+
+- These mechanisms are baroreceptor reflexes, release of catecholamines and antidiuretic hormone, activation of the renin-angiotensin-aldosterone axis, and generalised sympathetic stimulation.
+- The net effect is tachycardia, peripheral vasoconstriction and renal fluid conservation.
+- Cutaneous vasoconstriction causes the characteristic "shocky" skin coolness and pallor.
+- Coronary and cerebral vessels are less sensitive to sympathetic signals and maintain relatively normal calibre, blood flow and oxygen delivery, so blood is shunted from the skin to the heart and brain.
+
+2. **Progressive stage.** Persistent oxygen deficit causes widespread tissue hypoxia.
+
+- Aerobic respiration is replaced by anaerobic glycolysis, with excessive production of lactic acid.
+- The resulting metabolic **lactic acidosis** lowers the tissue pH, which blunts the vasomotor response; arterioles dilate and blood begins to pool in the microcirculation.
+- Peripheral pooling worsens the cardiac output and puts endothelial cells at risk of anoxic injury with subsequent **DIC**.
+- Vital organs are affected and begin to fail.
+
+3. **Irreversible stage.** Cellular and tissue injury is so severe that survival is not possible even if the haemodynamic defects are corrected.
+
+- Widespread cell injury is reflected in lysosomal enzyme leakage, which further aggravates the shock state.
+- Myocardial contractile function worsens, in part because of increased nitric oxide synthesis.
+- The ischaemic bowel may allow intestinal flora to enter the circulation, so bacteraemic shock may be superimposed.
+- Renal failure commonly follows because of ischaemic injury of the kidney, and the downward spiral culminates in death.
+
+**Morphology**
+
+- The cellular and tissue effects are those of hypoxic injury, caused by a combination of hypoperfusion and microvascular thrombosis.
+- The brain, heart, kidneys, adrenals and gastrointestinal tract are most involved.
+- Fibrin thrombi are most readily visualised in kidney glomeruli.
+- Adrenal cortical cell lipid depletion reflects increased use of stored lipids for steroid synthesis.
+- The lungs are resistant to hypoxic injury in hypovolaemic shock occurring after haemorrhage.
+
+**Clinical features**
+
+- Hypotension, weak rapid pulse, tachypnoea, and cool, clammy, cyanotic skin.
+- If the patient survives the initial insult, worsening renal function can provoke a phase dominated by progressive oliguria, acidosis and electrolyte imbalances.
+- More than 90% of young, otherwise healthy patients with hypovolaemic shock survive with appropriate management.
 
 
 ## Write the pathogenesis/mechanism of septic shock.
 
-Sepsis is life-threatening organ dysfunction caused by a dysregulated host response to infection; septic shock is a subset of sepsis with particularly profound circulatory, cellular and metabolic abnormalities and a greater risk of death. It is most frequently triggered by gram-positive bacterial infections, followed by gram-negative bacteria and fungi, and also by viruses; superantigens (toxic shock syndrome) cause a similar syndrome. Mortality remains around 40%. It represents a failure of the normal control mechanisms that evolved to contain infection, when the response becomes generalised and injures normal tissues remote from the site of infection.
+**Triggers**
 
-**Initiators.** Microbial constituents such as endotoxin (LPS), staphylococcal enterotoxin B and M protein of streptococci. Macrophages, neutrophils, dendritic cells and endothelial cells recognise pathogen-associated molecular patterns (PAMPs) and damage-associated molecular patterns (DAMPs) through Toll-like receptors, G protein-coupled receptors and C-type lectin receptors.
+- Septic shock is most frequently triggered by **gram-positive bacterial infections**, followed by gram-negative bacteria and fungi; emerging viral infections such as SARS-CoV-2 can also cause sepsis.
+- A variety of microbial constituents, such as **endotoxin**, **staphylococcal enterotoxin B** and **M protein of streptococci**, can trigger the process.
+- Macrophages, neutrophils, dendritic cells, endothelial cells and soluble components of the innate immune system (for example complement) recognise and are activated by diverse substances derived from microorganisms.
+- Sepsis occurs when the response to infection becomes generalised and injures normal tissues remote from the site of infection; it represents the failure of the normal control mechanisms that contain an infection.
 
-**Major pathogenic mechanisms.**
+**1. Inflammatory and counter-inflammatory responses**
 
-1. **Inflammatory and counter-inflammatory responses.** Engagement of the receptors activates NF-κB and increases expression of cytokines (TNF, IL-1, IL-12, IL-18, IFN-γ) and other mediators (HMGB1, reactive oxygen species, prostaglandins, PAF); CRP and procalcitonin are elevated. These mediators induce endothelial adhesion molecules and further cytokine and chemokine release. Complement is activated, generating anaphylatoxins (C3a, C5a), chemotactic C5a and opsonin C3b. Microbial products also activate coagulation through factor XII and altered endothelial function. The hyperinflammatory state triggers counterregulatory immunosuppression (shift from Th1 to antiinflammatory cytokines, IL-10, IL-1 receptor antagonist, soluble TNF receptor, lymphocyte apoptosis, anergy), so patients may oscillate between hyperinflammatory and immunosuppressed states.
-2. **Endothelial activation and injury.** Cytokines loosen endothelial tight junctions, causing widespread vascular leakage and protein-rich oedema that impairs perfusion, aggravated by intravenous fluids. Activated endothelium produces nitric oxide and other vasoactive mediators (C3a, C5a, PAF), causing vascular smooth muscle relaxation and systemic hypotension. Microvascular dysfunction (intermittent capillary flow, loss of autoregulation) produces a mismatch of oxygen delivery and need.
-3. **Procoagulant state and DIC.** Proinflammatory cytokines increase tissue factor on monocytes (and possibly endothelium) and decrease endothelial anticoagulants (TFPI, thrombomodulin, protein C), and increase PAI-1, dampening fibrinolysis. NETs may promote coagulation. Vascular leak and stasis reduce washout of activated factors. Systemic thrombin activation produces fibrin-rich thrombi in small vessels, further compromising perfusion. Up to half of septic patients develop DIC; with consumption of platelets and factors, bleeding follows.
-4. **Metabolic abnormalities.** Insulin resistance and hyperglycaemia (TNF, IL-1, glucagon, growth hormone, glucocorticoids and catecholamines drive gluconeogenesis while cytokines impair insulin release and GLUT-4 expression); hyperglycaemia impairs neutrophil function. Initial surge in glucocorticoids may be followed by adrenal insufficiency, including adrenal haemorrhagic necrosis (Waterhouse-Friderichsen syndrome). Cellular hypoxia and impaired oxidative phosphorylation cause lactic acidosis.
-5. **Organ dysfunction.** Hypotension, interstitial oedema, microvascular dysfunction and microthrombi reduce oxygen delivery; mitochondrial damage from oxidative stress impairs oxygen use; high cytokine levels depress myocardial contractility; increased permeability leads to ARDS; the result is failure of kidneys, liver, lungs and heart, culminating in death.
+- Various microbial cell wall constituents engage receptors on cells of the innate immune system, triggering proinflammatory responses.
+- Likely initiators are signalling pathways downstream of **Toll-like receptors (TLRs)**, which recognise pathogen-associated molecular patterns (PAMPs) and damage-associated molecular patterns (DAMPs).
+- G protein-coupled receptors detect bacterial peptides, and C-type lectin receptors such as Dectins detect fungal antigens.
+- Ligation of these receptors increases expression of inflammatory mediator genes, mainly through activation and nuclear translocation of **NF-κB**.
+- Upregulated mediators include TNF, IL-1, IL-12, IL-18, interferon-γ and high-mobility group box 1 protein (HMGB1).
+- C-reactive protein and procalcitonin are elevated; reactive oxygen species, prostaglandins and platelet-activating factor (PAF) are also elaborated.
+- These effector molecules induce endothelial cells to upregulate adhesion molecule expression and further stimulate cytokine and chemokine production.
+- The complement cascade is activated by microbial components, producing anaphylatoxins (C3a, C5a), a chemotactic fragment (C5a) and an opsonin (C3b).
+- Microbial components activate coagulation directly through factor XII and indirectly through altered endothelial function; widespread thrombin activation further augments inflammation by triggering protease-activated receptors on inflammatory cells.
+- The hyperinflammatory state triggers counterregulatory immunosuppressive mechanisms, so septic patients may oscillate between hyperinflammatory and immunosuppressed states.
+- Proposed mechanisms of immune suppression are a shift from proinflammatory (Th1) to anti-inflammatory cytokines, anti-inflammatory mediators (soluble TNF receptor, IL-1 receptor antagonist, IL-10), lymphocyte apoptosis, the immunosuppressive effects of apoptotic cells, and induction of cellular anergy.
 
-**Clinical aspects.** Hypotension with warm, flushed skin early (vasodilation), tachycardia, fever or hypothermia, tachypnoea, leukocytosis or leukopenia, lactic acidosis and oliguria. Therapeutic attempts to block individual mediators have failed because of the multiplicity of mediators and concurrent anti-inflammatory activation; the standard of care is antibiotics, intravenous fluids, pressors and oxygen.
+**2. Endothelial activation and injury**
+
+- The proinflammatory state and endothelial activation lead to widespread vascular leakage and tissue oedema, which impair nutrient delivery and waste removal.
+- Inflammatory cytokines loosen endothelial tight junctions, making vessels leaky, with accumulation of protein-rich oedema fluid throughout the body; this may be exacerbated by intravenous fluids.
+- Activated endothelium upregulates production of **nitric oxide** and other vasoactive mediators (C3a, C5a, PAF), which contribute to vascular smooth muscle relaxation and systemic hypotension.
+- Microvascular dysfunction occurs: capillaries with intermittent flow increase, flow is heterogeneous in different capillary beds, and normal autoregulation of flow is lost, causing a mismatch between oxygen needs and oxygen delivery.
+
+**3. Induction of a procoagulant state**
+
+- The derangement in coagulation produces **DIC** in up to one-half of septic patients.
+- Proinflammatory cytokines increase tissue factor production by monocytes and possibly endothelial cells, and decrease endothelial anticoagulant factors: tissue factor pathway inhibitor, thrombomodulin and protein C.
+- They dampen fibrinolysis by increasing PAI-1 expression.
+- Neutrophil extracellular traps (NETs) may promote the procoagulant state by stimulating both intrinsic and extrinsic pathways of coagulation.
+- Vascular leak and tissue oedema decrease blood flow in small vessels, producing stasis and diminishing washout of activated coagulation factors.
+- The result is systemic activation of thrombin and deposition of fibrin-rich thrombi in small vessels throughout the body, further compromising tissue perfusion.
+- In full-blown DIC, consumption of coagulation factors and platelets is so great that deficiencies appear, leading to concomitant bleeding and haemorrhage.
+
+**4. Metabolic abnormalities**
+
+- Septic patients show **insulin resistance** and **hyperglycaemia**.
+- TNF, IL-1, stress-induced hormones (glucagon, growth hormone, glucocorticoids) and catecholamines all drive gluconeogenesis.
+- Proinflammatory cytokines suppress insulin release and promote insulin resistance in the liver and other tissues, likely by impairing surface expression of glucose transporter-4 (GLUT-4).
+- Blood levels of glucose, triglycerides and lactate rise.
+- Hyperglycaemia decreases neutrophil function, suppressing bactericidal activity, and increases adhesion molecule expression on endothelial cells.
+- An initial surge in glucocorticoid production may be followed by adrenal insufficiency and a functional glucocorticoid deficit, from depressed synthetic capacity of the adrenals or frank adrenal necrosis resulting from DIC (**Waterhouse-Friderichsen syndrome**).
+- Cellular hypoxia and diminished oxidative phosphorylation increase lactate production and cause lactic acidosis.
+
+**5. Organ dysfunction**
+
+- Systemic hypotension, interstitial oedema, microvascular dysfunction and small vessel thrombosis decrease delivery of oxygen and nutrients, and the hypoxic cells fail to use even the nutrients that are delivered.
+- Mitochondrial damage resulting from oxidative stress impairs oxygen use.
+- High levels of cytokines and secondary mediators diminish myocardial contractility and cardiac output.
+- Increased vascular permeability and endothelial injury can lead to acute respiratory distress syndrome.
+- Failure of multiple organs, particularly the kidneys, liver, lungs and heart, culminates in death.
+
+**Superantigens**
+
+- Secreted bacterial proteins called superantigens cause a syndrome similar to septic shock (for example toxic shock syndrome).
+- Superantigens are polyclonal T-lymphocyte activators that induce release of high levels of cytokines, with manifestations ranging from a diffuse rash to vasodilation, hypotension, shock and death.
 
 
 ## A 40y male lost consciousness with cold clammy skin after severe bleeding in RTA. What is your probable diagnosis?
