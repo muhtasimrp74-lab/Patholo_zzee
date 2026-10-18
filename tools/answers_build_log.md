@@ -361,7 +361,7 @@ Questions: myeloma bone marrow and ESR, Bence Jones short note, generalised and 
 
 ### Session 10 end checks
 - build.py run twice: index.html byte-identical.
-- VERSION in sw.js bumped from v146 to v147; build.py, gen_manifests.py and build.py run again.
+- VERSION in sw.js bumped from v146 to v148 (v147 after batch 3, v148 after batch 4); build.py, gen_manifests.py and build.py run again.
 - tools/tests/test_site.py not run this session, at the owner's request.
 
 ### Session 10, batch 4 (five further questions)
@@ -370,3 +370,4 @@ Questions: investigation of anaemia, causes of iron deficiency anaemia (general,
 - Investigation of anaemia: the textbook has no single investigation protocol; the answer collects the tests it names in different places.
 - Causes by age group: the textbook gives no table by age; the answer arranges its statements by group.
 - Progress file lists 655 questions done; 480 remain.
+- tools/tests/test_site.py: 34 tests, all passed after the final bump.
