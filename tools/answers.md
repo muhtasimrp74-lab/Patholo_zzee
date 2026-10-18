@@ -2442,64 +2442,49 @@ Increases in hydrostatic pressure are mainly caused by disorders that impair ven
 
 ## State the pathophysiologic categories / classify edema.
 
-Oedema is classified according to the pathophysiologic mechanism (Table of pathophysiologic categories) and also according to the nature of the fluid and its distribution.
-
-| Category | Mechanism | Examples |
-|---|---|---|
-| **Increased hydrostatic pressure** | Impaired venous return (localised or systemic), arteriolar dilation | Congestive heart failure, constrictive pericarditis, cirrhotic ascites, venous thrombosis, external pressure, lower-extremity inactivity; heat, neurohumoral dysregulation |
-| **Reduced plasma osmotic pressure (hypoproteinaemia)** | Reduced albumin synthesis or increased albumin loss | Nephrotic syndrome, cirrhosis, protein malnutrition, protein-losing gastroenteropathy |
-| **Lymphatic obstruction** | Impaired clearance of interstitial fluid | Inflammatory (filariasis), neoplastic, postsurgical, postirradiation |
-| **Sodium and water retention** | Increased intravascular volume (increased hydrostatic pressure, diluted proteins) | Renal failure, excessive salt intake with renal insufficiency, increased renin-angiotensin-aldosterone secretion |
-| **Inflammation** | Increased vascular permeability | Acute and chronic inflammation, angiogenesis |
-
-By the nature of the fluid, oedema is either a **transudate** (protein-poor; the first four categories) or an **exudate** (protein-rich; inflammation). By distribution, it is **localised** (venous or lymphatic obstruction, inflammation) or **generalised** (anasarca; cardiac, renal, hepatic or nutritional).
-
+| Category | Examples |
+|---|---|
+| Increased hydrostatic pressure: impaired venous return | Congestive heart failure; constrictive pericarditis; ascites (liver cirrhosis); venous obstruction or compression (thrombosis, external pressure such as a mass); lower extremity inactivity with prolonged dependency |
+| Increased hydrostatic pressure: arteriolar dilation | Heat; neurohumoral dysregulation |
+| Reduced plasma osmotic pressure (hypoproteinaemia) | Protein-losing glomerulopathies (nephrotic syndrome); liver cirrhosis; malnutrition; protein-losing gastroenteropathy |
+| Lymphatic obstruction | Inflammatory; neoplastic; postsurgical; postirradiation |
+| Sodium retention | Excessive salt intake with renal insufficiency; increased tubular reabsorption of sodium; renal hypoperfusion; increased renin-angiotensin-aldosterone secretion |
+| Inflammation | Acute inflammation; chronic inflammation; angiogenesis |
 
 ## Give in brief the mechanisms of edema formation.
 
-Fluid movement across the capillary wall depends on the balance between vascular hydrostatic pressure, which pushes fluid out of the vessel, and plasma colloid osmotic pressure, which retains it; the small amount that escapes is returned by lymphatic drainage. Oedema forms when this balance is upset, by the following mechanisms.
+Under normal circumstances the tendency of vascular hydrostatic pressure to push water and salts out of capillaries is nearly balanced by the tendency of plasma colloid osmotic pressure to pull water and salts back into vessels. Elevated hydrostatic pressure or diminished colloid osmotic pressure disrupts this balance and increases the movement of fluid out of vessels. If the net rate of fluid influx exceeds the rate of lymphatic drainage, fluid accumulates.
 
-1. **Increased hydrostatic pressure**, due to impaired venous return (heart failure, venous thrombosis, constrictive pericarditis, cirrhosis) or arteriolar dilation. Fluid is forced out of the capillary.
-2. **Reduced plasma colloid osmotic pressure**, due to hypoalbuminaemia from decreased synthesis (cirrhosis, protein malnutrition) or increased loss (nephrotic syndrome, protein-losing enteropathy). The fall in intravascular volume causes renal hypoperfusion and secondary hyperaldosteronism, whose retention of salt and water does not correct the deficit and aggravates the oedema.
-3. **Increased vascular permeability**, in inflammation: protein-rich fluid escapes and the osmotic gradient is lost.
-4. **Lymphatic obstruction**, from trauma, fibrosis, invasive tumours, surgery, irradiation, and filariasis, which produces lymphoedema (elephantiasis in filariasis).
-5. **Sodium and water retention**, due to renal disease or reduced renal perfusion with activation of the renin-angiotensin-aldosterone axis; retained fluid increases hydrostatic pressure and dilutes plasma proteins.
-
+1. **Increased hydrostatic pressure**, mainly caused by disorders that impair venous return, for example heart failure.
+2. **Decreased colloid osmotic pressure** caused by reduced plasma albumin, either due to decreased synthesis (liver disease, protein malnutrition) or to increased loss (nephrotic syndrome).
+3. **Increased vascular permeability**, for example in inflammation.
+4. **Lymphatic obstruction**, for example by infection or neoplasia.
+5. **Sodium and water retention**, for example in renal failure.
 
 ## Explain the mechanism of edema in nephrotic syndrome.
 
-Oedema in nephrotic syndrome is primarily due to reduced plasma colloid osmotic pressure from loss of albumin in the urine, aggravated by secondary retention of sodium and water.
+1. Increased permeability of the glomerular capillary wall allows proteins to escape from the plasma into the urinary space, resulting in **proteinuria**.
+2. Heavy proteinuria depletes serum albumin at a rate beyond the compensatory synthetic capacity of the liver, resulting in **hypoalbuminaemia**. Increased renal catabolism of filtered albumin also contributes.
+3. The generalised oedema is a direct consequence of decreased intravascular **colloid osmotic pressure** because of low plasma albumin.
+4. Reduced plasma osmotic pressure leads to reduced intravascular volume, renal hypoperfusion and secondary hyperaldosteronism.
+5. Sodium and water retention aggravates the oedema, because the primary defect, the low plasma protein level, persists. It seems to be due to several factors: compensatory secretion of aldosterone, mediated by the hypovolaemia-enhanced renin secretion; stimulation of the sympathetic nervous system; and a reduction in the secretion of natriuretic factors such as atrial natriuretic peptides.
 
-1. **Massive proteinuria.** In nephrotic syndrome the glomerular capillaries are abnormally permeable, and albumin leaks into the urine (more than 3.5 g/day in adults).
-2. **Hypoalbuminaemia.** Urinary loss exceeds hepatic synthesis, so plasma albumin falls and with it the colloid osmotic pressure of plasma (albumin accounts for almost half of the plasma protein).
-3. **Fluid shift.** The reduced oncotic pressure allows fluid to move from the vessels into the interstitium, producing oedema and reducing the intravascular volume.
-4. **Secondary hyperaldosteronism.** The reduced intravascular volume causes renal hypoperfusion, which activates the renin-angiotensin-aldosterone axis (and antidiuretic hormone), causing renal salt and water retention. This does not correct the plasma volume deficit, since the primary defect (low plasma protein) persists; the retained fluid merely leaks into the tissues and exacerbates the oedema.
-5. A contribution from primary renal sodium retention is also recognised in some patients.
-
-The oedema is generalised, soft and pitting; it appears first in loose connective tissue, notably the periorbital region (eyelids), and may progress to anasarca with ascites and pleural effusions.
-
+The oedema is characteristically soft and pitting, and is most marked in the periorbital regions and dependent portions of the body. If severe, hypoalbuminaemia may also lead to pleural effusions and ascites.
 
 ## Write the mechanism of edema in nephritic syndrome.
 
-Oedema in nephritic syndrome (acute glomerulonephritis) is predominantly due to **retention of sodium and water** by the kidneys because of reduced glomerular filtration, and is therefore an "overfill" type of oedema, in contrast to the "underfill" oedema of nephrotic syndrome.
-
-1. Inflammation and proliferation of the glomerular capillary endothelial and mesangial cells, with infiltration of leukocytes, reduce the glomerular filtration rate.
-2. The reduced filtration and increased tubular reabsorption of sodium cause salt and water retention, with expansion of the plasma and extracellular volume.
-3. Increased intravascular volume raises capillary hydrostatic pressure and dilutes plasma proteins (lowering colloid osmotic pressure), so fluid moves into the interstitium; the process is aided by activation of the renin-angiotensin-aldosterone axis and hypertension.
-4. Proteinuria is mild to moderate, so hypoalbuminaemia is not marked, and the contribution of reduced oncotic pressure is small.
-
-The oedema is mild to moderate and appears first in loose connective tissue (periorbital, face), and is associated with oliguria, haematuria, azotaemia and hypertension. Heart failure and pulmonary oedema may develop from volume overload.
-
+1. The lesions that cause the nephritic syndrome have in common proliferation of the cells within the glomeruli, often accompanied by infiltration of inflammatory leukocytes.
+2. This inflammatory reaction severely injures the capillary walls and induces haemodynamic changes that lead to a reduction in GFR.
+3. The reduced GFR is manifested clinically by oliguria, **fluid retention** and azotaemia.
+4. Salt retention, with obligate retention of associated water, causes both increased hydrostatic pressure (due to intravascular fluid volume expansion) and diminished vascular colloid osmotic pressure (due to dilution).
+5. Oedema resulting from renal dysfunction often appears initially in parts of the body containing loose connective tissue, such as the eyelids; periorbital oedema is thus a characteristic finding in severe renal disease.
 
 ## How does edema due to cardiac failure develop?
 
-Oedema in congestive heart failure results from increased hydrostatic pressure due to impaired venous return, combined with sodium and water retention through renal hypoperfusion.
-
-1. **Venous congestion.** When the heart fails, blood is not pumped forward effectively and venous pressure rises (backward failure). Right-sided failure raises systemic venous pressure and thereby capillary hydrostatic pressure, causing dependent pitting oedema of the legs (or sacrum when recumbent), hepatic congestion, ascites and pleural effusion. Left-sided failure raises pulmonary venous pressure and causes pulmonary oedema.
-2. **Reduced cardiac output and renal hypoperfusion.** Decreased cardiac output reduces renal perfusion, which activates the renin-angiotensin-aldosterone axis and raises antidiuretic hormone and sympathetic tone. In early failure this is beneficial: salt and water retention, increased vascular tone and other adaptations improve cardiac output and restore renal perfusion.
-3. **Vicious circle.** As failure worsens and cardiac output diminishes, the retained fluid merely increases the hydrostatic pressure further, leading to oedema and effusions.
-4. **Additional factors.** In advanced failure, hepatic congestion and protein-losing enteropathy may lower plasma albumin and colloid osmotic pressure, adding to the oedema.
-
+1. Congestive heart failure is a cause of **impaired venous return**, which increases hydrostatic pressure.
+2. One of the most important causes of renal hypoperfusion is congestive heart failure, which results in activation of the **renin-angiotensin-aldosterone axis**.
+3. In early heart failure this response is beneficial: retention of sodium and water and other adaptations, including increased vascular tone and elevated levels of antidiuretic hormone, improve cardiac output and restore normal renal perfusion.
+4. As heart failure worsens and cardiac output diminishes, the retained fluid merely increases the hydrostatic pressure, leading to oedema and effusions.
 
 ## Important diseases where transudates occur.
 
@@ -2584,33 +2569,37 @@ The textbook does not list the laboratory tests for body fluids. It gives the fe
 
 ## Describe briefly the role of platelets in normal haemostasis.
 
-Platelets are disk-shaped, anucleate cell fragments shed from megakaryocytes. They form the primary haemostatic plug that initially seals vascular defects and provide a phospholipid surface that binds and concentrates activated coagulation factors. Their function depends on glycoprotein receptors, a contractile cytoskeleton, and two types of granules: α-granules (P-selectin on the membrane; fibrinogen, factors V and XI, vWF, fibronectin, platelet factor 4, PDGF and TGF-β) and dense (δ) granules (ADP, ATP, ionised calcium, serotonin, epinephrine).
+Platelets form the **primary plug** that initially seals vascular defects and provide a surface that binds and concentrates activated coagulation factors.
 
-1. **Adhesion.** After endothelial disruption, platelets adhere to subendothelial matrix. GpIb on the platelet binds von Willebrand factor (vWF) bound to collagen (vWF acts as a bridge under high shear); platelets also bind collagen through GpIa/IIa and GpVI. Deficiency of vWF (von Willebrand disease) or GpIb (Bernard-Soulier syndrome) causes bleeding.
-2. **Activation.** Platelets change shape from disks to spiky "sea urchins" with greater surface area; GpIIb/IIIa changes conformation, increasing its affinity for fibrinogen; negatively charged phospholipids (phosphatidylserine) are translocated to the surface and, with calcium, nucleate assembly of coagulation factor complexes. Secretion (release reaction) of granule contents follows. Activation is triggered by thrombin (through PAR-1) and ADP (through P2Y₁ and P2Y₁₂), and ADP release recruits more platelets. Activated platelets synthesise thromboxane A₂, a potent aggregating agent and vasoconstrictor (inhibited by aspirin).
-3. **Aggregation.** Fibrinogen bridges adjacent platelets by binding GpIIb/IIIa, forming the primary haemostatic plug (inherited deficiency causes Glanzmann thrombasthenia).
-4. **Consolidation.** Thrombin, generated locally by tissue factor, further activates platelets, causes irreversible platelet contraction and converts fibrinogen into fibrin, "cementing" the platelets into the definitive secondary haemostatic plug. Leukocytes adhere to platelet P-selectin.
-5. Platelet growth factors (PDGF, TGF-β) contribute to wound healing.
+1. **Adhesion.** Platelets adhere to subendothelial von Willebrand factor (vWF) through **GpIb**; under high shear stress vWF binds both platelets and collagen, acting like a glue between them. Platelets also adhere to exposed collagen through GpIa/IIa and GpVI.
+2. **Shape change.** Platelets change from smooth disks to spiky "sea urchins" with greatly increased surface area. GpIIb/IIIa undergoes a conformational change that increases its affinity for fibrinogen, and negatively charged phospholipids (particularly phosphatidylserine) move to the platelet surface, where they bind calcium and serve as nucleation sites for the assembly of coagulation factor complexes.
+3. **Secretion (release reaction)** of granule contents, together with the shape change, is called platelet activation; it is triggered by thrombin and ADP.
 
-Drugs that inhibit platelet function include aspirin (COX inhibition), P2Y₁₂ antagonists, and PAR-1 antagonists.
+- **Alpha granules** contain fibrinogen, factors V and XI, vWF, fibronectin, platelet factor 4, PDGF and TGF-β, and carry P-selectin on their membranes.
+- **Dense granules** contain ADP, ATP, ionised calcium, serotonin and epinephrine.
 
+4. **Recruitment.** ADP release begets additional rounds of platelet activation. Activated platelets also produce thromboxane A₂, a potent inducer of platelet aggregation.
+5. **Aggregation.** Fibrinogen forms bridges between GpIIb/IIIa receptors on adjacent platelets. The initial wave of aggregation is reversible.
+6. **Stabilisation.** Thrombin causes further platelet activation and aggregation, promotes irreversible platelet contraction, and converts fibrinogen into insoluble fibrin, which cements the platelets in place and creates the definitive secondary haemostatic plug.
 
 ## What are the antithrombotic properties of endothelial cells?
 
-The balance between antithrombotic and prothrombotic activities of endothelium determines whether clot formation, propagation or dissolution occurs. Normal, intact endothelium expresses many factors that inhibit platelets and coagulation and augment fibrinolysis, so that thrombosis is prevented and clotting is restricted to sites of vascular injury.
+**Platelet inhibitory effects**
 
-**1. Platelet inhibitory effects.** Intact endothelium shields platelets from subendothelial vWF and collagen. It also releases **prostacyclin (PGI₂)**, **nitric oxide (NO)** and **adenosine diphosphatase**, which degrades ADP and inhibits platelet activation and aggregation. PGI₂ (formed through COX-1) and NO (formed by eNOS) production is regulated by blood flow.
+- Intact endothelium is a barrier that shields platelets from subendothelial vWF and collagen.
+- It releases **prostacyclin (PGI₂)**, **nitric oxide (NO)** and **adenosine diphosphatase**, which degrades ADP.
+- PGI₂ is produced by COX-1 and NO is the product of endothelial nitric oxide synthase (eNOS); their production appears to be regulated by blood flow.
 
-**2. Anticoagulant effects.**
+**Anticoagulant effects**
 
-- Normal endothelium shields coagulation factors from tissue factor in the vessel wall.
-- **Thrombomodulin** binds thrombin; in this complex thrombin loses its ability to activate coagulation factors and platelets, and instead activates **protein C** (with the **endothelial protein C receptor, EPCR**), which with its cofactor **protein S** inactivates factors Va and VIIIa.
-- **Heparin-like molecules** on the endothelial surface bind and activate **antithrombin III**, which inhibits thrombin and factors IXa, Xa, XIa and XIIa.
-- **Tissue factor pathway inhibitor (TFPI)** binds and inhibits tissue factor/factor VIIa complexes.
+- Normal endothelium shields coagulation factors from tissue factor in vessel walls.
+- **Thrombomodulin** and **endothelial protein C receptor** bind thrombin and protein C. In this complex, thrombin loses its ability to activate coagulation factors and platelets and instead activates protein C, which with its cofactor protein S inhibits coagulation cofactors Va and VIIIa.
+- **Heparin-like molecules** on the endothelial surface bind and activate antithrombin III, which inhibits thrombin and factors IXa, Xa, XIa and XIIa.
+- **Tissue factor pathway inhibitor (TFPI)** requires protein S as a cofactor and binds and inhibits tissue factor/factor VIIa complexes.
 
-**3. Fibrinolytic effects.** Endothelial cells synthesise **tissue plasminogen activator (t-PA)**, which converts plasminogen to plasmin, to degrade fibrin.
+**Fibrinolytic effects**
 
-With injury or activation (by inflammatory cytokines, microbes, haemodynamic stress), the endothelium loses these properties: thrombomodulin, protein C and TFPI are downregulated, t-PA falls, and plasminogen activator inhibitors (PAI) rise, shifting the balance toward thrombosis.
+- Normal endothelial cells synthesise **tissue plasminogen activator (t-PA)**, a key component of the fibrinolytic pathway.
 
 ## Define thrombus.
 
@@ -2654,124 +2643,83 @@ Thrombi occurring in heart chambers or in the aortic lumen are designated **mura
 
 ## What is thrombosis?
 
-Thrombosis is the inappropriate formation of a blood clot (thrombus) within an intact blood vessel or within the chambers of the heart during life. Haemostasis, the process by which blood clots form at sites of vascular injury, is essential for life, and thrombosis represents its pathological counterpart, in which the haemostatic machinery of platelets, coagulation factors and endothelium is activated in the absence of bleeding.
-
-**Pathogenesis.** Thrombosis is determined by the three primary abnormalities of Virchow triad: endothelial injury, stasis or turbulence of blood flow, and hypercoagulability of the blood. Endothelial integrity is the most important factor. Thrombus formation begins with platelet adhesion and activation, followed by thrombin generation and fibrin deposition. Arterial and cardiac thrombi form at sites of turbulence or endothelial injury and are rich in platelets; venous thrombi form at sites of stasis and are rich in red cells.
-
-**Morphology.** Thrombi may be laminated with lines of Zahn (pale platelet-fibrin layers alternating with red cell-rich layers), which signify formation in flowing blood. Thrombi in the heart or aorta are mural thrombi; on valves they are vegetations. Arterial thrombi are usually occlusive; venous thrombi form a long luminal cast (red or stasis thrombi).
-
-**Fate.** A thrombus may propagate, embolise, dissolve (fibrinolysis), or become organised and recanalised; it may become infected (mycotic aneurysm).
-
-**Consequences.** Thrombi cause tissue injury by local vascular occlusion (infarction in arteries, congestion and oedema in veins) or by distal embolisation (pulmonary embolism from deep vein thrombosis). Thrombosis underlies myocardial infarction, stroke and pulmonary embolism, which are among the most important causes of morbidity and mortality.
-
+**Thrombosis** is inappropriate clotting: blood clots (thrombi) form within intact blood vessels or within the chambers of the heart.
 
 ## Discuss the role of endothelial injury in thrombus formation.
 
-Endothelial injury is the most important factor in the Virchow triad, and by itself can lead to thrombosis. It is particularly important for thrombus formation in the heart and arterial circulation, where high shear rates impede clot formation unless platelet adherence and activation occur. Injury to endothelial cells also alters local blood flow and coagulability.
+- Endothelial integrity is the most important factor in Virchow's triad. Injury to endothelial cells can alter local blood flow and affect coagulability, and abnormal blood flow can in turn cause endothelial injury.
+- Severe endothelial injury may trigger thrombosis by exposing **vWF and tissue factor**.
+- Inflammation and other noxious stimuli also promote thrombosis by shifting the pattern of gene expression in endothelium to one that is prothrombotic, called **endothelial activation or dysfunction**. It can be produced by physical injury, infectious agents, abnormal blood flow, inflammatory mediators, metabolic abnormalities such as hypercholesterolaemia or homocystinaemia, and toxins absorbed from cigarette smoke. It is believed to have an important role in triggering arterial thrombotic events.
 
-**Mechanisms.**
+**Prothrombotic alterations**
 
-1. **Exposure of subendothelial prothrombotic elements.** Severe endothelial injury (trauma, ulceration of atherosclerotic plaque, vasculitis, damaged valves, myocardial infarct endocardium, catheters) exposes von Willebrand factor and collagen, which cause platelet adhesion and activation, and tissue factor, which initiates the coagulation cascade and thrombin generation.
-2. **Endothelial activation or dysfunction.** Even without gross denudation, inflammation and other noxious stimuli shift the pattern of gene expression of endothelium to a prothrombotic one. Stimuli include physical injury, infectious agents, abnormal blood flow, inflammatory mediators, metabolic abnormalities (hypercholesterolaemia, hyperhomocystinaemia, diabetes), and toxins from cigarette smoke and hypertension. The changes are:
+- **Procoagulant changes:** endothelial cells activated by inflammatory cytokines downregulate thrombomodulin, enhancing the procoagulant and proinflammatory actions of thrombin. Inflamed endothelium also downregulates protein C and tissue factor pathway inhibitor.
+- **Antifibrinolytic effects:** activated endothelial cells secrete plasminogen activator inhibitors (PAIs), which limit fibrinolysis, and downregulate the expression of t-PA.
 
-- Procoagulant changes: downregulation of thrombomodulin (enhancing the procoagulant and proinflammatory action of thrombin), and of protein C and tissue factor pathway inhibitor, and increased tissue factor.
-- Antifibrinolytic effects: secretion of plasminogen activator inhibitors (PAI) and reduced t-PA.
-- Loss of antiplatelet agents: reduced prostacyclin (PGI₂), nitric oxide and ADPase.
-
-3. **Altered flow.** Injured endothelium produces local turbulence and stasis.
-
-**Clinical settings.** Ulcerated atheromatous plaques; myocardial infarction (endocardial injury) leading to mural thrombi; damaged or inflamed heart valves (vegetations); hypertensive vascular injury; vasculitis; hypercholesterolaemia; bacterial endotoxins; radiation; and cigarette smoking.
-
+Cardiac and arterial clots are typically rich in platelets, and platelet adherence and activation is believed to be a necessary prerequisite for thrombus formation under high shear stress, such as exists in arteries.
 
 ## How does altered blood flow cause thrombosis?
 
-Normal blood flow is laminar: platelets and other cells flow centrally in the lumen, separated from the endothelium by a slower-moving layer of plasma. Turbulence and stasis disrupt this arrangement in the following ways:
+Turbulence contributes to arterial and cardiac thrombosis by causing endothelial injury or dysfunction and by forming countercurrents that contribute to local pockets of stasis. Stasis is a major contributor to the development of venous thrombi.
 
-1. They **promote endothelial activation**, enhancing procoagulant activity and leukocyte adhesion, partly through flow-induced changes in adhesion molecules and proinflammatory factors.
-2. They **disrupt laminar flow and bring platelets into contact with the endothelium.**
-3. They **prevent washout and dilution** of activated clotting factors by fresh flowing blood and prevent the inflow of clotting factor inhibitors.
+Normal blood flow is laminar, so the platelets flow centrally in the vessel lumen, separated from the endothelium by a slower moving layer of plasma. Turbulence and stasis:
 
-Turbulence contributes mainly to arterial and cardiac thrombosis, by causing endothelial injury or dysfunction and by forming countercurrents that create local pockets of stasis. Stasis is a major contributor to venous thrombosis.
+- Promote endothelial activation, enhancing procoagulant activity and leukocyte adhesion
+- Disrupt laminar flow and bring platelets into contact with the endothelium
+- Prevent washout and dilution of activated clotting factors by fresh flowing blood and the inflow of clotting factor inhibitors
 
-**Clinical settings.**
+**Clinical settings**
 
 - Ulcerated atherosclerotic plaques expose subendothelial vWF and tissue factor and also cause turbulence.
-- Aneurysms of the aorta and arteries produce local stasis and are fertile sites for thrombosis.
-- Acute myocardial infarction (noncontractile myocardium, cardiac aneurysm) causes stasis and abnormal flow that promote cardiac mural thrombi.
-- Rheumatic mitral stenosis with left atrial dilation and atrial fibrillation produces profound stasis in the atrium.
-- Hyperviscosity (polycythaemia vera) increases resistance to flow and causes small vessel stasis.
-- Deformed red cells in sickle cell anaemia impede flow in small vessels.
-- Prolonged bed rest, immobilisation, and heart failure cause venous stasis in the legs.
-
+- Aneurysms result in local stasis and are fertile sites for thrombosis.
+- Acute myocardial infarction results in areas of noncontractile myocardium and sometimes in cardiac aneurysm; both are associated with stasis and flow abnormalities that promote cardiac mural thrombi.
+- Rheumatic mitral valve stenosis results in left atrial dilation; in conjunction with atrial fibrillation, a dilated atrium is a site of profound stasis and a prime location for thrombosis.
+- Hyperviscosity (as in polycythaemia vera) increases resistance to flow and causes small vessel stasis.
+- The deformed red cells in sickle cell anaemia impede blood flow through small vessels, and the resulting stasis predisposes to thrombosis.
 
 ## Write down the pathogenesis of venous thrombus.
 
-Venous thrombi (phlebothrombosis) characteristically occur at sites of **stasis**, and hypercoagulability plays a particularly important role in their pathogenesis, though all three components of Virchow's triad may contribute.
+1. Venous thrombi characteristically occur at sites of **stasis**, which is a major contributor to their development. Bed rest and immobilisation reduce the milking action of the leg muscles, resulting in stasis, and congestive heart failure is also a cause of impaired venous return.
+2. Stasis prevents washout and dilution of activated clotting factors by fresh flowing blood and the inflow of clotting factor inhibitors, and it promotes endothelial activation.
+3. **Hypercoagulability** has a particularly important role in venous thrombosis. It may be primary (genetic), such as factor V Leiden and the prothrombin G20210A mutation, or secondary (acquired).
+4. The thrombus forms in the sluggish venous circulation, so it contains more enmeshed red cells and relatively few platelets (a **red thrombus** or **stasis thrombus**). It is firm, focally attached to the vessel wall, contains lines of Zahn, and is almost invariably occlusive, forming a long luminal cast.
+5. Venous thrombi extend in the direction of blood flow, towards the heart. The propagating portion is often poorly attached and therefore prone to fragmentation and embolisation.
 
-1. **Stasis.** Blood flow in veins is sluggish, particularly in the valve cusp pockets and in the deep veins of the calf. Immobilisation (bed rest, paralysis, surgery), heart failure, obesity, pregnancy (venous compression) and varicosities cause stasis, in which activated clotting factors are not washed away, inhibitors do not reach the site, and platelets and leukocytes contact endothelium, promoting endothelial activation (and hypoxic injury of valve-pocket endothelium).
-2. **Hypercoagulability.** Primary (factor V Leiden, prothrombin G20210A mutation, deficiency of antithrombin III, protein C or protein S) or secondary causes (surgery, trauma, burns, malignancy with tissue factor and mucin release, pregnancy and postpartum states, oral contraceptives, nephrotic syndrome, antiphospholipid syndrome, heparin-induced thrombocytopenia, advanced age) enhance coagulation.
-3. **Endothelial dysfunction.** Trauma, surgery, venous catheters and inflammation may injure endothelium.
-4. **Thrombus formation.** Thrombin generated locally converts fibrinogen to fibrin, which traps large numbers of red cells and relatively few platelets; the thrombus is therefore a red, stasis thrombus. It is firm, attached focally to the vein wall and contains lines of Zahn.
-5. **Propagation.** The thrombus extends in the direction of blood flow, toward the heart, usually forming a long luminal cast, and is almost invariably occlusive. The propagating tail is poorly attached and may fragment and embolise.
+**Predisposing factors in the lower extremity (90% of cases)**
 
-Ninety percent of cases involve the veins of the lower extremities. Deep vein thrombi at or above the knee are the most dangerous, because they embolise to the lungs; clinically, they cause painful congestion and oedema, though about half are asymptomatic. Superficial thrombi in varicose veins seldom embolise but cause local congestion, pain and varicose ulcers. Cancer-associated migratory thrombophlebitis is called Trousseau syndrome.
-
+- Bed rest and immobilisation, and congestive heart failure.
+- Trauma, surgery and burns, which not only immobilise a person but are also associated with vascular insults, procoagulant release from injured tissues, increased hepatic synthesis of coagulation factors and decreased t-PA production.
+- Pregnancy, through decreased venous return from leg veins and systemic hypercoagulability associated with the hormonal changes of late pregnancy and the postpartum period.
+- Disseminated cancers, through tumour-associated inflammation and release of coagulation factors (for example tissue factor) and procoagulants (for example mucin); this is called migratory thrombophlebitis or Trousseau syndrome.
+- Advanced age.
 
 ## What is Virchow's triad of thrombogenesis?
 
-Virchow's triad comprises the three primary abnormalities that lead to thrombosis: **(1) endothelial injury, (2) stasis or turbulence of blood flow, and (3) hypercoagulability of the blood.** Thrombosis usually results from one or more of these. They may act independently or in combination; endothelial integrity is the most important factor, because injury to endothelium can alter local blood flow and coagulability, and abnormal flow can in turn injure endothelium.
-
-**1. Endothelial injury.** This is the dominant factor, especially in arteries and the heart, where high flow rates impede clot formation, so that platelet adherence and activation is a prerequisite and arterial and cardiac clots are rich in platelets.
-
-- Severe injury exposes subendothelial vWF and collagen (platelet adhesion and activation) and tissue factor (coagulation).
-- Endothelial activation or dysfunction (from inflammation, infection, abnormal flow, hypercholesterolaemia, homocystinaemia, hypertension, smoking) produces a prothrombotic state: loss of thrombomodulin, protein C and TFPI; reduced PGI₂, NO and t-PA; increased PAI.
-- Examples: ulcerated atherosclerotic plaque, myocardial infarct, damaged valves, vasculitis, catheter injury.
-
-**2. Alterations in normal blood flow (stasis and turbulence).** Turbulence causes endothelial injury or dysfunction and creates countercurrents with local stasis; stasis predominates in veins. Both promote endothelial activation, bring platelets into contact with the endothelium, and prevent washout of activated factors and inflow of inhibitors. Examples: atherosclerotic plaque, aneurysms, myocardial infarct with dyskinetic wall, atrial fibrillation with dilated atrium (mitral stenosis), polycythaemia, sickle cell anaemia, bed rest.
-
-**3. Hypercoagulability.** An abnormally high tendency of the blood to clot, mainly due to alterations in coagulation factors, with special importance in venous thrombosis.
-
-| Primary (genetic) | Secondary (acquired) |
-|---|---|
-| Factor V Leiden (resistance to protein C), most common | Prolonged bed rest, immobilisation |
-| Prothrombin G20210A mutation | Tissue injury (surgery, fracture, burns) |
-| Antithrombin III, protein C and protein S deficiency | Cancer; myocardial infarction; atrial fibrillation |
-| Homocystinaemia | Oral contraceptives, pregnancy and postpartum |
-| Increased factor VIII, IX, XI, fibrinogen | Heparin-induced thrombocytopenia; antiphospholipid syndrome; DIC; nephrotic syndrome; smoking, obesity |
-
-**Fate and significance.** Thrombi propagate, embolise, dissolve or organise and recanalise.
-
+The primary abnormalities that lead to thrombosis are (1) **endothelial injury**, (2) **stasis or turbulent blood flow** and (3) **hypercoagulability** of the blood, the so-called **Virchow triad**.
 
 ## Mention the causes of hypercoagulability of blood.
 
-Hypercoagulability is divided into primary (genetic) and secondary (acquired) disorders.
+**Primary (genetic)**
 
-**Primary (inherited):**
+- Common: factor V Leiden (named after the city in the Netherlands where it was discovered; arginine to glutamine substitution at amino acid residue 506, leading to resistance to activated protein C); prothrombin mutation (G20210A noncoding sequence variant leading to increased prothrombin levels); increased levels of factors VIII, IX, XI or fibrinogen
+- Rare: antithrombin III deficiency; protein C deficiency; protein S deficiency
+- Very rare: fibrinolysis defects; homozygous homocystinuria (deficiency of cystathionine β-synthetase)
 
-- Common: factor V Leiden (Arg506Gln mutation, producing resistance to activated protein C; carried by 2% to 15% of people of European ancestry; heterozygotes have a 4- to 8-fold, and homozygotes about a 12-fold, increased risk of venous thrombosis); prothrombin gene mutation G20210A (elevated prothrombin levels, 2- to 4-fold risk in heterozygotes); increased levels of factors VIII, IX, XI or fibrinogen.
-- Rare: deficiency of antithrombin III, protein C, protein S (venous thrombosis and recurrent thromboembolism from adolescence or early adulthood).
-- Very rare: defects of fibrinolysis; homozygous homocystinuria (cystathionine β-synthase deficiency).
+**Secondary (acquired)**
 
-**Secondary (acquired):**
-
-- Strong risk factors: prolonged bed rest or immobilisation, myocardial infarction, atrial fibrillation, tissue injury (surgery, fracture, burn), cancer (release of procoagulants such as tissue factor and mucin), prosthetic cardiac valves, disseminated intravascular coagulation, heparin-induced thrombocytopenia, antiphospholipid antibody syndrome.
-- Other risk factors: cardiomyopathy, nephrotic syndrome (loss of antithrombin), hyperoestrogenic states (pregnancy and postpartum, oral contraceptives: increased hepatic synthesis of coagulation factors and reduced anticoagulants), sickle cell anaemia, smoking, obesity, advancing age (reduced endothelial PGI₂), and acquired hyperhomocysteinaemia (deficiency of vitamin B₆, B₁₂, folate).
-
-**Special syndromes.** Heparin-induced thrombocytopenia: antibodies against complexes of heparin and platelet factor 4 activate platelets (via Fc receptors) and cause both thrombocytopenia and thrombosis (venous and arterial in 50%). Antiphospholipid antibody syndrome: antibodies to anionic phospholipids and β₂-glycoprotein I ("lupus anticoagulant") cause arterial and venous thrombosis and recurrent miscarriage; they prolong the PTT in vitro and cause false-positive syphilis serology.
-
-Inherited causes should be considered in patients younger than 50 years who present with thrombosis, even in the presence of acquired risk factors.
-
+- Strong risk factors: prolonged bed rest or immobilisation; myocardial infarction; atrial fibrillation; tissue injury (surgery, fracture, burn); cancer; prosthetic cardiac valves; disseminated intravascular coagulation; heparin-induced thrombocytopenia; antiphospholipid antibody syndrome
+- Other risk factors: cardiomyopathy; nephrotic syndrome; hyperestrogenic states (pregnancy and postpartum); oral contraceptive use; sickle cell anaemia; smoking
 
 ## Give the fate of a thrombus.
 
-If a patient survives the initial thrombosis, over days to weeks the thrombus undergoes some combination of four events.
+If a patient survives the initial thrombosis, in the ensuing days to weeks thrombi undergo some combination of four events:
 
-1. **Propagation.** The thrombus accumulates additional platelets and fibrin and enlarges; arterial thrombi grow retrograde and venous thrombi grow in the direction of flow, toward the heart. The propagating portion is poorly attached.
-2. **Embolisation.** Thrombi (or fragments) dislodge and travel to other sites in the vasculature; venous thrombi lodge in the lungs, arterial and cardiac thrombi in systemic organs.
-3. **Dissolution.** Fibrinolysis, through plasmin, may lead to rapid shrinkage and total disappearance of recent thrombi. Older thrombi, with extensive fibrin cross-linking, are more resistant to lysis, which explains why therapeutic t-PA is effective only in the first few hours of a thrombotic event.
-4. **Organisation and recanalisation.** Older thrombi are invaded by endothelial cells, smooth muscle cells and fibroblasts, forming granulation tissue, and capillary channels form that re-establish the continuity of the lumen to a variable degree. With remodelling, only a fibrous lump may remain, incorporated in the vessel wall.
+1. **Propagation.** Thrombi accumulate additional platelets and fibrin and enlarge.
+2. **Embolisation.** Thrombi dislodge and travel to other sites in the vasculature.
+3. **Dissolution.** The result of fibrinolysis, which can lead to the rapid shrinkage and total disappearance of recent thrombi. Extensive fibrin deposition and cross-linking in older thrombi render them more resistant to lysis, so fibrinolytic agents such as t-PA are generally effective only when given during the first few hours of a thrombotic event.
+4. **Organisation and recanalisation.** Older thrombi become organised by the ingrowth of endothelial cells, smooth muscle cells and fibroblasts. Capillary channels eventually form that reestablish the continuity of the original lumen, albeit to a variable degree. With remodelling and contraction of the mesenchymal elements, only a fibrous lump may remain to mark the original thrombus.
 
-Other possibilities include **infection** of the thrombus in bacteraemia, which may erode the vessel wall and produce a mycotic aneurysm; enzymatic digestion of the centre of the thrombus by lysosomal enzymes of trapped leukocytes; and calcification (phlebolith).
+Occasionally the centres of thrombi undergo enzymatic digestion, presumably from the release of lysosomal enzymes from trapped leukocytes and platelets. In the setting of bacteraemia such thrombi may become infected, producing an inflammatory mass that erodes and weakens the vessel wall and may result in a mycotic aneurysm.
 
 ## Define embolus.
 
@@ -2891,21 +2839,14 @@ In 10% to 15% of systemic emboli the origin is unknown.
 
 ## Classify emboli on the basis of their composition.
 
-An embolus is a detached intravascular solid, liquid or gaseous mass carried by the blood to a distant site. On the basis of composition emboli are classified as follows:
-
-| Class | Type | Source or setting |
-|---|---|---|
-| **Solid** | Thromboembolus (most common; the great majority of emboli) | Dislodged thrombus: DVT, cardiac mural thrombi |
-| | Atheromatous (cholesterol) embolus | Ulcerated atherosclerotic plaque, often after vascular procedures |
-| | Tumour embolus | Tumour invading veins (renal cell carcinoma) |
-| | Bone marrow embolus | Fractures, resuscitation |
-| | Foreign body embolus | Bullets, catheter fragments, talc |
-| | Septic embolus | Infected vegetations or thrombi |
-| **Liquid** | Fat embolus | Long bone fractures, burns, soft tissue trauma |
-| | Amniotic fluid embolus | Labour and postpartum period |
-| **Gas** | Air embolus | Vein injury, intravenous or surgical procedures |
-| | Nitrogen embolus | Decompression sickness |
-
+- **Thromboembolus:** a dislodged thrombus; most emboli are of this type.
+- **Fat droplets**, sometimes with haematopoietic bone marrow.
+- **Air or nitrogen bubbles.**
+- **Atherosclerotic debris** (cholesterol emboli).
+- **Tumour fragments.**
+- **Bone marrow.**
+- **Foreign bodies.**
+- **Amniotic fluid.**
 
 ## Write in short the pathogenesis/effects of systemic embolism.
 
