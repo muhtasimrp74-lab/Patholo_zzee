@@ -8437,117 +8437,82 @@ Drug-induced warm antibody type acts by two mechanisms:
 
 ## Classify haemolytic anemia.
 
-Haemolytic anaemias are those in which the red cell lifespan is shortened below the normal 120 days. They may be classified by the underlying mechanism, as in Robbins, or by the site of the defect.
-
-**A. Inherited (genetic) defects**
-
-1. Red cell membrane disorders: hereditary spherocytosis, hereditary elliptocytosis.
-2. Enzyme deficiencies: hexose monophosphate shunt (G6PD deficiency, glutathione synthetase deficiency); glycolytic pathway (pyruvate kinase deficiency, hexokinase deficiency).
-3. Haemoglobin abnormalities: deficient globin synthesis (thalassaemia syndromes); structurally abnormal globins (sickle cell disease, HbC, HbE, unstable haemoglobins).
-
-**B. Acquired**
-
-1. Acquired genetic defect: paroxysmal nocturnal haemoglobinuria (deficiency of GPI-linked proteins).
-2. Antibody-mediated destruction: haemolytic disease of the newborn, transfusion reactions, drug-induced, autoimmune (warm, cold).
-3. Mechanical trauma: microangiopathic haemolytic anaemias (HUS, DIC, TTP), cardiac valve haemolysis, repetitive physical trauma (march haemoglobinuria).
-4. Infections of red cells: malaria, babesiosis.
-5. Toxic or chemical injury: clostridial sepsis, snake venom, lead poisoning.
-6. Membrane lipid abnormalities: abetalipoproteinaemia, severe hepatocellular disease.
-7. Sequestration: hypersplenism.
-
-By site of destruction, haemolysis can also be classified as **extravascular** (in macrophages; most inherited anaemias and warm AIHA) and **intravascular** (within the circulation; PNH, ABO-incompatible transfusion, mechanical injury, falciparum malaria, G6PD crisis).
-
+| Mechanism | Examples |
+|---|---|
+| **Inherited genetic defects: red cell membrane disorders** | Hereditary spherocytosis, hereditary elliptocytosis |
+| **Inherited genetic defects: enzyme deficiencies** | Hexose monophosphate shunt enzyme deficiencies (G6PD deficiency, glutathione synthetase deficiency); glycolytic enzyme deficiencies (pyruvate kinase deficiency, hexokinase deficiency) |
+| **Inherited genetic defects: haemoglobin abnormalities** | Deficient globin synthesis (thalassaemia syndromes); structurally abnormal globins (sickle cell disease, unstable haemoglobins) |
+| **Acquired genetic defects** | Deficiency of phosphatidylinositol-linked glycoproteins (paroxysmal nocturnal haemoglobinuria) |
+| **Antibody-mediated destruction** | Haemolytic disease of the newborn (Rh disease), transfusion reactions, drug-induced, autoimmune disorders |
+| **Mechanical trauma** | Microangiopathic haemolytic anaemias (haemolytic uraemic syndrome, disseminated intravascular coagulation, thrombotic thrombocytopenic purpura); cardiac traumatic haemolysis (defective cardiac valves); repetitive physical trauma (bongo drumming, marathon running, karate chopping) |
+| **Infections of red cells** | Malaria, babesiosis |
+| **Toxic or chemical injury** | Clostridial sepsis, snake venom, lead poisoning |
+| **Membrane lipid abnormalities** | Abetalipoproteinaemia, severe hepatocellular liver disease |
+| **Sequestration** | Hypersplenism |
 
 ## Compare and contrast warm antibody and cold antibody.
 
-Autoimmune haemolytic anaemias are classified by the temperature at which the autoantibody binds optimally to red cells.
+| Feature | Warm antibody type | Cold agglutinin type |
+|---|---|---|
+| Antibody | **IgG** (less commonly IgA), active at 37°C | **IgM**, binds avidly at 0°C to 4°C but not at 37°C |
+| Frequency | About 80% of immunohaemolytic anaemia | 15% to 20% |
+| Cause | About 50% idiopathic (primary); others secondary to autoimmune disorders (particularly systemic lupus erythematosus), drugs or lymphoid neoplasms | Transient after infections (Mycoplasma pneumoniae, Epstein-Barr virus, cytomegalovirus, influenza, HIV); chronic form with B-cell neoplasms or idiopathic |
+| Mechanism | IgG-coated red cells bind Fc receptors on phagocytes, which remove red cell membrane (partial phagocytosis); cells become **spherocytes** | IgM binds in cold parts of the body, agglutinates red cells and fixes complement; as blood warms IgM is released, leaving sublytic C3b, which acts as an opsonin |
+| Haemolysis | Mostly extravascular, in the spleen; moderate splenomegaly | Extravascular in spleen, liver and bone marrow; intravascular haemolysis usually not seen |
+| Clinical features | Anaemia, splenomegaly, jaundice | Pallor, cyanosis and Raynaud phenomenon in fingers, toes and ears exposed to cold |
+| Treatment | Remove initiating factors such as drugs; immunosuppressive drugs and splenectomy | Avoid cold temperatures |
 
-| Feature | Warm antibody type | Cold agglutinin type | Cold haemolysin type |
-|---|---|---|---|
-| Frequency | About 80% | 15–20% | Rare |
-| Antibody class | IgG (rarely IgA) | IgM | IgG (Donath-Landsteiner) |
-| Optimal temperature | 37°C | 0–4°C (active below 30°C) | Binds in the cold, lyses at 37°C |
-| Antigen | Rh complex proteins | I/i antigens | P blood group antigen |
-| Direct Coombs test | IgG ± C3 | C3 only (IgM elutes when warmed) | C3 |
-| Mechanism | Fc-receptor-mediated partial phagocytosis; spherocytes sequestered in spleen | IgM agglutinates red cells and fixes complement (C3b opsonisation); phagocytosis in liver, spleen and marrow | Complement-mediated lysis in the warm core |
-| Haemolysis | Extravascular | Mainly extravascular | Intravascular, with haemoglobinuria |
-| Spleen | Moderate splenomegaly | Usually not enlarged | — |
-| Causes | Idiopathic (50%), SLE, lymphoid neoplasms, drugs (α-methyldopa, penicillin) | Acute: Mycoplasma, EBV, CMV, HIV; chronic: B-cell neoplasms or idiopathic | Viral infections in children |
-| Clinical features | Anaemia, jaundice, splenomegaly | Pallor, cyanosis, Raynaud phenomenon in cold-exposed parts | Acute haemoglobinuria after cold exposure |
-| Treatment | Stop drug; corticosteroids, immunosuppressants, splenectomy | Avoid cold; treatment is difficult; rituximab; steroids and splenectomy ineffective | Supportive; self-limited |
-
+Cold haemolysin type (paroxysmal cold haemoglobinuria): IgG antibodies against the P blood group antigen bind in cool peripheral regions, and complement-mediated lysis occurs in the warm core of the body; mostly in children after viral infections.
 
 ## Narrate the features of haemolysis found in PBF.
 
-The peripheral blood film in haemolytic anaemia shows two sets of changes: those reflecting compensatory erythropoietic activity of the marrow, which are common to all haemolytic anaemias, and those reflecting the specific mechanism of red cell injury.
-
-**Features of increased erythropoiesis.** Polychromasia: red cells with a bluish-pink cytoplasm due to RNA, corresponding to reticulocytes (confirmed with supravital stains and reported as a raised reticulocyte count, often 5% to 20%, or higher). These cells are larger than mature cells, contributing to macrocytosis and a raised MCV. Anisocytosis, nucleated red cells (normoblasts) and basophilic stippling are frequently present, with sometimes Howell-Jolly bodies. There is often a neutrophil leukocytosis and thrombocytosis.
-
-**Features specific to the cause.** Spherocytes (hereditary spherocytosis, immune haemolysis), sickle cells and target cells (haemoglobinopathies), microcytes, target cells and teardrop cells (thalassaemia), schistocytes (microangiopathic haemolysis and mechanical valves), bite cells and blister cells (G6PD deficiency), red cell agglutinates (cold agglutinins), elliptocytes, and intracellular parasites (malaria).
-
+- **Reticulocytosis**, which is prominent, from the compensatory increase in erythropoiesis.
+- **Spherocytes** in warm antibody immunohaemolytic anaemia, as in hereditary spherocytosis, from loss of red cell membrane.
+- **Red cell fragments (schistocytes), burr cells, helmet cells and triangle cells** in haemolysis due to red cell trauma, such as cardiac valve prostheses and microangiopathic haemolytic anaemia.
 
 ## Write down the general evidence/laboratory features of haemolysis.
 
-The laboratory evidence of haemolysis falls into three groups.
-
-**1. Evidence of increased red cell destruction (increased haemoglobin breakdown)**
-
-- Raised serum unconjugated (indirect) bilirubin, with acholuric jaundice.
-- Reduced or absent serum haptoglobin; raised lactate dehydrogenase.
-- Increased urinary urobilinogen, and increased faecal stercobilinogen.
-- In intravascular haemolysis: haemoglobinaemia, haemoglobinuria, haemosiderinuria and methaemalbuminaemia.
-- Reduced red cell survival on ⁵¹Cr-labelling, with excess splenic uptake.
-- Haemosiderosis and pigment gallstones in chronic haemolysis.
-
-**2. Evidence of compensatory increased erythropoiesis**
-
-- Reticulocytosis, polychromasia, nucleated red cells.
-- Bone marrow erythroid hyperplasia with a reversed myeloid:erythroid ratio.
-- Skeletal changes (in chronic severe haemolysis) and extramedullary haemopoiesis.
-
-**3. Evidence of damaged red cells and identification of the cause**
-
-- Blood film features: spherocytes, fragmented cells, sickle cells, bite cells, parasites.
-- Direct Coombs test (immune haemolysis); osmotic fragility test (hereditary spherocytosis); G6PD assay; haemoglobin electrophoresis; flow cytometry for CD55 and CD59 (PNH).
-
-Normocytic normochromic anaemia (or macrocytic with raised MCV from reticulocytes) is the usual blood count finding, together with splenomegaly in extravascular haemolysis.
-
+1. Shortened red cell life span, below the normal 120 days.
+2. Anaemia, with raised erythropoietin levels.
+3. **Reticulocytosis** in the peripheral blood.
+4. Increased erythroid precursors (normoblasts) in the bone marrow.
+5. Hyperbilirubinaemia, in which the excess serum bilirubin is **unconjugated**; jaundice follows.
+6. Raised lactate dehydrogenase and low plasma **haptoglobin**.
+7. **Haemosiderosis**, with haemosiderin in the spleen, liver and bone marrow.
+8. Extramedullary haematopoiesis in the liver, spleen and lymph nodes if the anaemia is severe.
+9. Pigment gallstones in chronic haemolysis.
+10. Extravascular haemolysis: splenomegaly, from hyperplasia of phagocytes.
+11. Intravascular haemolysis: haemoglobinaemia, haemoglobinuria and haemosiderinuria; no splenomegaly.
+12. Positive direct Coombs test in immunohaemolytic anaemia.
 
 ## Write down the evidence of intravascular haemolysis.
 
-Intravascular haemolysis is the lysis of red cells within the circulation. It is less common than extravascular haemolysis and results from mechanical injury (prosthetic valves, microangiopathy, march haemoglobinuria), complement fixation (ABO-incompatible transfusion, PNH, cold haemolysin), intracellular parasites (falciparum malaria) or toxic factors (clostridial sepsis). The evidence comprises:
+1. Anaemia.
+2. **Haemoglobinaemia**: free haemoglobin from lysed red cells in the plasma.
+3. **Haemoglobinuria**: some filtered haemoglobin and methaemoglobin passes out in the urine, giving a red-brown colour.
+4. **Haemosiderinuria** and renal haemosiderosis: iron released from haemoglobin accumulates in renal tubular cells.
+5. **Jaundice**: haem from haemoglobin-haptoglobin complexes is metabolised to bilirubin in mononuclear phagocytes.
+6. Serum haptoglobin is depleted; free haemoglobin then oxidises to **methaemoglobin**, which is brown.
+7. Splenomegaly is not seen.
+8. In chronic haemolysis, iron loss in the urine may lead to iron deficiency.
 
-1. **Haemoglobinaemia:** free haemoglobin in the plasma, which makes the plasma pink or red.
-2. **Haemoglobinuria:** when the haptoglobin-binding capacity is saturated, free haemoglobin is filtered, and some passes in the urine, imparting a red-brown colour. Urine microscopy shows no red cells.
-3. **Haemosiderinuria:** renal proximal tubular cells reabsorb and break down haemoglobin; iron accumulates as haemosiderin and is shed into the urine (positive Prussian blue stain of urine sediment), and may give rise to renal haemosiderosis; chronic loss may produce iron deficiency.
-4. **Low or absent serum haptoglobin,** since the haptoglobin–haemoglobin complex is rapidly cleared by mononuclear phagocytes; free haemoglobin oxidises to methaemoglobin, producing methaemalbuminaemia (a positive Schumm test).
-5. **Raised LDH and unconjugated hyperbilirubinaemia (jaundice).**
-6. **Red cell fragments** (schistocytes) in mechanical causes.
-7. Splenomegaly is absent, unlike in extravascular haemolysis.
-
+Causes: mechanical injury, complement fixation, intracellular parasites (falciparum malaria) and toxic factors such as clostridial sepsis.
 
 ## Write a short note on Coombs' test (direct).
 
-The Coombs (antiglobulin) test detects antibody or complement bound to the surface of red cells, and is the cardinal test for immunohaemolytic anaemia.
+**Principle.** The direct Coombs antiglobulin test detects antibodies or complement on the surface of the patient's red cells. The patient's red cells are mixed with sera containing antibodies specific for human immunoglobulin or complement. If either is present on the red cells, the antibodies cause **agglutination**, seen as clumping.
 
-**Principle.** Red cells coated with IgG or C3 do not agglutinate on their own in saline, since the sensitised cells are too far apart. Antihuman globulin (Coombs reagent), a polyspecific or monospecific antibody directed against human IgG and complement (C3d), bridges the gap between the coated cells and causes visible agglutination.
+**Uses**
+- Diagnosis of **immunohaemolytic anaemia**, which requires detection of antibodies or complement on the patient's red cells.
+- Acute haemolytic transfusion reaction: typically positive, unless all the donor red cells have lysed.
+- Delayed haemolytic transfusion reaction: positive.
+- About 10% of patients taking alpha-methyldopa develop autoantibodies detected by the direct Coombs test; roughly 1% develop clinically significant haemolysis.
 
-**Direct Coombs test (DAT).** The patient's red cells, washed free of plasma, are mixed with Coombs reagent. If immunoglobulin or complement is present on the surface of the red cells (in vivo sensitisation), the cells agglutinate, seen as clumping. Specific anti-IgG and anti-C3 reagents identify the type of coating.
-
-**Indirect Coombs test (IAT).** The patient's serum is incubated with commercially available red cells bearing known antigens and then Coombs reagent is added, to detect free antibodies in the serum; it is used to characterise the target antigen and temperature dependence of the antibody, and in cross-matching and antenatal antibody screening.
-
-**Clinical uses of the direct test.** Autoimmune haemolytic anaemia (warm: IgG ± C3; cold: C3), drug-induced haemolysis (penicillin, α-methyldopa), haemolytic disease of the newborn (positive in the infant's cells), delayed haemolytic transfusion reactions and acute haemolytic transfusion reactions.
-
-**Interpretation and pitfalls.** A negative test in a patient with spherocytic anaemia suggests hereditary spherocytosis, in which the combination of spherocytosis, reticulocytosis and negative Coombs test is highly suggestive. False positives occur in hypergammaglobulinaemia and some drug therapy; false negatives occur if too few IgG molecules are bound.
-
+**Indirect Coombs test.** The patient's serum is tested for its ability to agglutinate commercially available red cells bearing known antigens. It characterises the target antigen and the temperature dependence of the antibody.
 
 ## What do you mean by haemolytic disease of newborn?
 
-Haemolytic disease of the newborn (HDN, erythroblastosis fetalis) is a haemolytic anaemia of the foetus and newborn caused by transplacental passage of maternal IgG antibodies directed against foetal red cell antigens inherited from the father that the mother lacks.
-
-The most important is Rh (D) incompatibility, in which an Rh-negative mother who has been sensitised to D antigen (usually at delivery of a previous Rh-positive infant, or by miscarriage, amniocentesis or transfusion) forms anti-D IgG, which crosses the placenta in a subsequent pregnancy and coats the red cells of an Rh-positive foetus, causing extravascular haemolysis in the spleen and liver. ABO incompatibility (mother group O, infant group A or B) is more common but milder, and may affect the first pregnancy because natural anti-A and anti-B IgG exist.
-
-The consequences are anaemia, compensatory erythroid hyperplasia and extramedullary haemopoiesis with hepatosplenomegaly, and nucleated red cells in the blood (hence erythroblastosis); jaundice from unconjugated hyperbilirubinaemia in the first 24 hours, which may cause kernicterus; and, in the severe form, hydrops fetalis with generalised oedema, ascites, cardiac failure and foetal death. The direct Coombs test on the infant's cells is positive. Prevention is by giving anti-D immunoglobulin to Rh-negative mothers at 28 weeks and within 72 hours after delivery of an Rh-positive infant; treatment includes phototherapy, exchange transfusion and intrauterine transfusion.
+Immune hydrops is a haemolytic disease caused by blood group antigen incompatibility between mother and fetus.
 
 ## Normal types of haemoglobin.
 
@@ -9137,199 +9102,190 @@ A platelet count below 150,000 per µL is thrombocytopenia. The causes fall into
 
 ## Classify bleeding (haemorrhagic) disorders.
 
-Excessive bleeding can result from increased fragility of vessels, platelet deficiency or dysfunction, and derangement of coagulation, alone or in combination. The bleeding disorders are therefore classified as follows.
-
-**I. Disorders of the blood vessel wall (vascular purpura).**
-
-- Hereditary: hereditary haemorrhagic telangiectasia (Rendu-Osler-Weber syndrome), Ehlers-Danlos syndrome, Marfan syndrome.
-- Acquired: infections (meningococcaemia, septicaemia, infective endocarditis, rickettsioses), drug reactions (hypersensitivity vasculitis), scurvy, Henoch-Schönlein purpura, senile purpura, Cushing syndrome, perivascular amyloidosis.
-
-**II. Platelet disorders.**
-
-- Thrombocytopenia: decreased production (aplastic anaemia, leukaemia, drugs, alcohol, HIV), decreased survival (immune: ITP, drug-induced, alloimmune; nonimmune: DIC, TTP, HUS), sequestration (hypersplenism), and dilution.
-- Qualitative defects of platelet function: inherited (Bernard-Soulier syndrome, Glanzmann thrombasthenia, storage pool disorders) and acquired (aspirin and NSAIDs, uraemia, myeloproliferative neoplasms).
-
-**III. Coagulation disorders.**
-
-- Inherited: haemophilia A, haemophilia B, von Willebrand disease, other single factor deficiencies.
-- Acquired: vitamin K deficiency, liver disease, DIC, anticoagulant drugs, and inhibitors.
-
-**IV. Combined and fibrinolytic disorders:** von Willebrand disease, DIC, and hyperfibrinolysis.
-
+| Group | Examples |
+|---|---|
+| **Increased fragility of vessels** | Infections (meningococcaemia, septicaemia, infective endocarditis, rickettsioses); drug reactions; scurvy and Ehlers-Danlos syndrome; Cushing syndrome and ageing; Henoch-Schönlein purpura; hereditary haemorrhagic telangiectasia; perivascular amyloidosis |
+| **Platelet deficiency: thrombocytopenia** | Decreased production, decreased survival, sequestration, dilution; immune thrombocytopenic purpura; thrombotic microangiopathies (thrombotic thrombocytopenic purpura, haemolytic uraemic syndrome) |
+| **Platelet dysfunction** | Defects of adhesion (Bernard-Soulier syndrome), aggregation (Glanzmann thrombasthenia) and secretion (storage pool disorders); acquired: aspirin and other NSAIDs, uraemia |
+| **Derangement of coagulation: inherited** | Haemophilia A (factor VIII), haemophilia B (factor IX), von Willebrand disease |
+| **Derangement of coagulation: acquired** | Vitamin K deficiency, severe liver disease, disseminated intravascular coagulation, inhibitory autoantibodies |
 
 ## What screening tests are done for bleeding disorders (with interpretation)?
 
-The normal haemostatic response involves the blood vessel wall, the platelets and the clotting cascade, and the following tests evaluate different aspects of haemostasis.
+| Test | What it assesses | Interpretation |
+|---|---|---|
+| **Prothrombin time (PT)** | Extrinsic and common pathways | Prolonged in deficiency or dysfunction of factor V, VII, X, prothrombin or fibrinogen |
+| **Partial thromboplastin time (PTT)** | Intrinsic and common pathways | Prolonged in deficiency or dysfunction of factors V, VIII, IX, X, XI, XII, prothrombin or fibrinogen, or by antiphospholipid antibodies |
+| **Platelet count** | Platelet number; reference range 150,000 to 350,000 per µL | Less than 150,000 per µL is thrombocytopenia; 20,000 to 50,000 aggravates bleeding after trauma; less than 20,000 may cause spontaneous bleeding; confirm on a blood film, since clumping gives spurious thrombocytopenia |
+| **Tests of platelet function** | Platelet aggregation; quantitative and qualitative tests of von Willebrand factor | Used when the count is normal but platelet function is suspected |
+| **Specific tests** | Individual clotting factors, fibrinogen, fibrin split products (D-dimers), circulating anticoagulants | Used to pin down the defect |
 
-1. **Platelet count** (reference 150 to 350 × 10³/µL): determined on anticoagulated blood with an electronic counter, and confirmed with a blood film because clumping can cause spurious thrombocytopenia. Counts of 20,000 to 50,000 per µL aggravate post-traumatic bleeding, and below 20,000 per µL may cause spontaneous bleeding. A high count may reflect a myeloproliferative neoplasm but more often reactive thrombocytosis.
-2. **Prothrombin time (PT):** the clotting of plasma after addition of tissue thromboplastin and calcium, measured in seconds (normal 11 to 15 seconds). It assesses the extrinsic and common pathways, and is prolonged by deficiency or dysfunction of factor V, VII, X, prothrombin or fibrinogen (vitamin K deficiency, warfarin, liver disease).
-3. **Partial thromboplastin time (PTT, aPTT):** the clotting of plasma after addition of kaolin, cephalin and calcium (normal 25 to 40 seconds). It assesses the intrinsic and common pathways, and is prolonged by deficiency or dysfunction of factors V, VIII, IX, X, XI, XII, prothrombin or fibrinogen, by heparin, or by interfering antiphospholipid antibodies.
-4. **Tests of platelet function:** platelet aggregation studies with agonists, and quantitative and qualitative von Willebrand factor tests (including the ristocetin cofactor assay). The older bleeding time is time-consuming and difficult to standardise and has been discarded in many centres; it is prolonged in thrombocytopenia, platelet function defects and von Willebrand disease.
-5. **Additional tests:** thrombin time, fibrinogen, fibrin degradation products and D-dimers, factor assays and mixing studies.
+Bleeding time is an older test, now discarded because it is time-consuming and difficult to standardise.
 
-**Interpretation.**
-
-| Platelets | PT | PTT | Interpretation |
-|---|---|---|---|
-| Low | Normal | Normal | Thrombocytopenia (ITP, marrow failure) |
-| Normal | Normal | Normal | Vascular disorder or platelet function defect (check vWF, aggregation) |
-| Normal | Normal | Prolonged | Haemophilia A or B, factor XI deficiency, von Willebrand disease, heparin |
-| Normal | Prolonged | Normal | Factor VII deficiency, early warfarin, early vitamin K deficiency |
-| Normal | Prolonged | Prolonged | Common pathway deficiency, liver disease, vitamin K deficiency, anticoagulants |
-| Low | Prolonged | Prolonged | DIC (with low fibrinogen and raised D-dimer), severe liver disease |
-
+**Pattern in common disorders**
+- Vessel wall abnormalities: platelet count, PT and PTT normal.
+- Isolated thrombocytopenia: low platelet count; PT and PTT normal.
+- Haemophilia A and B: prolonged PTT; normal PT.
+- Von Willebrand disease: reduced ristocetin cofactor activity; PTT prolonged in types 1 and 3.
+- DIC: fibrinogen, platelets, PT, PTT and fibrin degradation products (D-dimers) are measured.
 
 ## Give the normal findings and expected changes in ITP, hemophilia and DIC.
 
-The screening tests used to distinguish these three disorders have the following normal values: platelet count 150 to 350 × 10³/µL, bleeding time 2 to 7 minutes, prothrombin time 11 to 15 seconds, partial thromboplastin time 25 to 40 seconds, thrombin time 15 to 20 seconds, fibrinogen 200 to 400 mg/dL, and D-dimer negative or below 0.5 µg/mL.
-
-| Test | Normal | ITP | Haemophilia A/B | DIC |
-|---|---|---|---|---|
-| Platelet count | 150–350 × 10³/µL | Markedly decreased | Normal | Decreased |
-| Bleeding time | 2–7 minutes | Prolonged | Normal | Prolonged |
-| Prothrombin time | 11–15 s | Normal | Normal | Prolonged |
-| PTT | 25–40 s | Normal | Prolonged | Prolonged |
-| Thrombin time | 15–20 s | Normal | Normal | Prolonged |
-| Fibrinogen | 200–400 mg/dL | Normal | Normal | Decreased |
-| FDP / D-dimer | Normal | Normal | Normal | Markedly increased |
-| Factor VIII | 50–150% | Normal | Decreased (haemophilia A) | Decreased |
-| Blood film | Normal | Large platelets | Normal | Schistocytes |
-
-In ITP, thrombocytopenia is isolated, with normal clotting tests; in haemophilia the platelet count, bleeding time and PT are normal and only the PTT is prolonged; in DIC there is a combination of thrombocytopenia, prolonged PT, PTT and thrombin time, low fibrinogen and high D-dimer.
-
+| Disorder | Normal | Abnormal |
+|---|---|---|
+| **Immune thrombocytopenic purpura** | PT and PTT | Low platelet count (isolated thrombocytopenia) |
+| **Haemophilia A and B** | PT | PTT prolonged |
+| **Disseminated intravascular coagulation** | None stated | Consumption of platelets, fibrin and coagulation factors; fibrin degradation products, particularly D-dimers, raised |
 
 ## What are the causes of gum bleeding?
 
-Gum (gingival) bleeding may be due to local oral disease or to a systemic bleeding disorder.
-
-**Local causes:** poor oral hygiene with gingivitis and periodontitis (the commonest), dental plaque and calculus, trauma from vigorous brushing or ill-fitting dentures, dental extraction, pregnancy gingivitis, and gingival tumours or epulis.
-
-**Systemic causes**
-
-1. Platelet disorders: thrombocytopenia (ITP, aplastic anaemia, acute leukaemia, drug-induced), and functional platelet defects (aspirin, NSAIDs, uraemia, Glanzmann thrombasthenia).
-2. Coagulation disorders: von Willebrand disease, haemophilia A and B, vitamin K deficiency, liver disease, DIC, anticoagulant therapy (warfarin, heparin).
-3. Vascular disorders: scurvy (vitamin C deficiency), with swollen spongy gums, and hereditary haemorrhagic telangiectasia.
-4. Leukaemia: gum hypertrophy and infiltration with bleeding, particularly in acute monocytic leukaemia.
-5. Drugs: phenytoin, nifedipine and cyclosporine cause gingival hyperplasia.
-
-In a child, gum bleeding should prompt consideration of ITP, acute leukaemia, scurvy and haemophilia.
-
+1. **Vessel wall abnormalities:** small haemorrhages in the skin or mucous membranes, particularly the gingivae. Causes include infections (meningococcaemia, septicaemia, infective endocarditis), drug reactions, scurvy, Ehlers-Danlos syndrome, Henoch-Schönlein purpura, hereditary haemorrhagic telangiectasia and perivascular amyloidosis.
+2. **Chronic immune thrombocytopenic purpura:** easy bruising, nosebleeds and gingival bleeding from minor trauma.
+3. **Thrombocytopenia:** spontaneous bleeding from small vessels, in the skin and mucous membranes.
+4. **Coagulation factor deficiencies:** prolonged bleeding after a tooth extraction.
 
 ## Define thrombocytopenia.
 
-Thrombocytopenia is a reduction in the number of circulating platelets below the lower limit of the reference range, that is, a platelet count of less than 150,000 per µL (150 × 10⁹/L). It constitutes an important cause of generalised bleeding. Counts of 20,000 to 50,000 per µL can aggravate posttraumatic bleeding, and counts below 20,000 per µL may be associated with spontaneous (nontraumatic) bleeding, most often involving small vessels in the skin and the mucous membranes of the gastrointestinal and genitourinary tracts; the most feared complication is intracranial haemorrhage. When thrombocytopenia is isolated, the PT and PTT are normal. The causes fall into four categories: decreased production, decreased survival, sequestration (hypersplenism) and dilution.
-
+Reduction in platelet number is called thrombocytopenia. A count less than 150,000 platelets per µL is generally considered to constitute thrombocytopenia.
 
 ## Discuss in short the pathogenesis of ITP.
 
-Chronic immune thrombocytopenic purpura is caused by autoantibody-mediated destruction of platelets. It can occur in the setting of predisposing conditions (secondary, such as systemic lupus erythematosus, HIV infection and B-cell neoplasms like chronic lymphocytic leukaemia) or without any known risk factors (primary, idiopathic).
+Chronic immune thrombocytopenic purpura is caused by **autoantibody-mediated destruction of platelets**.
 
-Autoantibodies, most often directed against platelet membrane glycoproteins IIb/IIIa or Ib/IX, can be demonstrated in the plasma and bound to the platelet surface in about 80% of patients, and in most cases they are of the IgG class. As in autoimmune haemolytic anaemias, the antiplatelet antibodies act as opsonins that are recognised by IgG Fc receptors on phagocytes, leading to increased platelet destruction. The thrombocytopenia is usually markedly improved by splenectomy, indicating that the spleen is the major site of removal of opsonised platelets; the splenic red pulp is also rich in plasma cells, so part of the benefit of splenectomy may stem from the removal of a source of autoantibodies. In some instances, the autoantibodies also bind to and damage megakaryocytes, decreasing platelet production and further exacerbating the thrombocytopenia. The marrow responds with increased numbers of megakaryocytes and release of large platelets.
+1. Autoantibodies, most often against platelet membrane glycoproteins **IIb/IIIa** or **Ib/IX**, are found in the plasma and bound to platelets in about 80% of patients.
+2. They are mostly of the IgG class.
+3. As in autoimmune haemolytic anaemias, the antibodies act as **opsonins**, recognised by IgG Fc receptors on phagocytes, which leads to increased platelet destruction.
+4. The **spleen** is the major site of removal of opsonised platelets, so splenectomy markedly improves the thrombocytopenia.
+5. The splenic red pulp is rich in plasma cells, so splenectomy may also remove a source of autoantibodies.
+6. The autoantibodies may also bind and damage megakaryocytes, which decreases platelet production.
 
-In acute ITP, a self-limited viral illness 1 to 2 weeks earlier appears to trigger the development of autoantibodies through uncertain mechanisms.
-
+Chronic ITP may be secondary (systemic lupus erythematosus, HIV infection, B-cell neoplasms such as chronic lymphocytic leukaemia) or primary (idiopathic). In acute ITP the autoantibodies appear 1 to 2 weeks after a self-limited viral illness, by uncertain mechanisms.
 
 ## Give the blood and bone marrow picture of ITP.
 
-**Blood.**
+**Blood**
+- Low platelet count (isolated thrombocytopenia).
+- Unusually large platelets (**megathrombocytes**), a sign of accelerated thrombopoiesis.
+- PT and PTT normal.
 
-- The platelet count is low (often below 30,000 per µL, and may be below 10,000), reflecting isolated thrombocytopenia.
-- The film shows reduced platelets, many of which are unusually large (megathrombocytes), a sign of accelerated thrombopoiesis; red cell and white cell counts and morphology are normal unless there has been significant bleeding (in which case there may be a normocytic or iron deficiency anaemia).
-- The prothrombin time and partial thromboplastin time are normal; bleeding time is prolonged.
-
-**Bone marrow.**
-
-- The marrow shows a modestly increased number of megakaryocytes (normal or increased), with many apparently immature, with large, non-lobulated single nuclei and little granular cytoplasm; platelet budding may be reduced.
-- Erythroid and granulocytic series are normal.
-- These findings are not specific, but merely reflect accelerated thrombopoiesis found in most forms of thrombocytopenia resulting from increased platelet destruction. The importance of bone marrow examination is to rule out thrombocytopenia due to marrow failure or other primary marrow disorders.
-
-**Spleen.** Normal in size, with congestion of sinusoids and enlarged follicles with reactive germinal centres, and scattered megakaryocytes in the sinuses.
-
+**Bone marrow**
+- Modestly increased number of megakaryocytes; some are immature, with large nonlobulated single nuclei.
+- These findings reflect accelerated thrombopoiesis and are not specific.
+- Marrow examination is important to rule out thrombocytopenia due to marrow failure or other primary marrow disorders.
 
 ## A child has purpuric rash/gum bleeding, thrombocytopenia, normocellular marrow with active megakaryopoiesis. What is the likely diagnosis?
 
-The likely diagnosis is **acute immune thrombocytopenic purpura (acute ITP)**. It is mainly a disease of childhood, with equal frequency in both sexes, with abrupt onset of petechiae, purpuric rash and mucosal bleeding such as gum bleeding and epistaxis, often 1 to 2 weeks after a self-limited viral illness, which appears to trigger the development of autoantibodies. The isolated thrombocytopenia, with a marrow that is normocellular with active (normal or increased) megakaryopoiesis, shows that platelets are being destroyed peripherally by antibody-mediated opsonisation rather than being underproduced. The PT and PTT are normal.
-
-The condition is self-limited, usually resolving spontaneously within 6 months; glucocorticoids or intravenous immunoglobulin are given only if the thrombocytopenia is severe or there is significant bleeding. In about 20% of children, usually those without a viral prodrome, thrombocytopenia persists, and they follow the course of chronic ITP. Acute leukaemia and aplastic anaemia, which present with similar bleeding, are excluded by the normal blood count in the other cell lines and the marrow findings.
-
+**Immune thrombocytopenic purpura (ITP).**
+- Purpura and gingival bleeding point to bleeding from a low platelet count.
+- A low platelet count with normal or increased megakaryocytes in the marrow is taken as presumptive evidence of accelerated platelet destruction.
+- Acute ITP is mainly a disease of childhood, with abrupt onset, often 1 to 2 weeks after a viral illness, and it is self-limited, usually resolving within 6 months.
+- Diagnosis is one of exclusion, after other causes of thrombocytopenia are ruled out.
 
 ## Why is APTT prolonged in hemophilia?
 
-The activated partial thromboplastin time (aPTT) assesses the intrinsic and common pathways of coagulation, in which the plasma is activated by kaolin (which activates the contact factor XII), with cephalin supplying platelet phospholipid, and calcium is added. In the intrinsic pathway, activated factor IX (IXa) with its cofactor VIIIa forms the tenase complex, which activates factor X on the phospholipid surface. This is the pivotal step in the generation of thrombin through the intrinsic route, reflecting the preeminent role of the factor VIIIa/IXa complex in the activation of factor X in vivo.
-
-In haemophilia A (factor VIII deficiency) and haemophilia B (factor IX deficiency), the tenase complex cannot form efficiently, so that the conversion of factor X is delayed, thrombin generation is slow, and the plasma takes longer to clot in the in vitro test. The prothrombin time, which relies on tissue factor and factor VII to activate factor X directly (the extrinsic pathway), is normal, and the platelet count and bleeding time are normal. A prolonged PTT with a normal PT in a bleeding patient thus points to an abnormality of the intrinsic pathway, and factor VIII–specific or factor IX assays are required for diagnosis.
-
+- Haemophilia A is caused by mutations in the gene for factor VIII, an essential cofactor for factor IX in the coagulation cascade.
+- The factor VIIIa and factor IXa complex has the preeminent role in activation of factor X.
+- Factor VIII deficiency therefore causes an abnormality of the **intrinsic coagulation pathway**.
+- The PTT assesses the intrinsic and common pathways, so it is **prolonged**; the PT, which assesses the extrinsic and common pathways, is normal.
 
 ## Write a short note on von Willebrand disease.
 
-Von Willebrand disease is the most common inherited bleeding disorder of humans, affecting about 1% of adults in the United States. It is caused by qualitative or quantitative defects of von Willebrand factor (vWF), a large multimeric glycoprotein made by endothelial cells and megakaryocytes that promotes the adhesion of platelets to the subendothelial matrix (through glycoprotein Ib/IX and collagen), promotes aggregation under high shear stress, and binds and stabilises factor VIII (extending its half-life from about 2.4 to 12 hours).
+**Definition.** Autosomal dominant disorder caused by mutations in von Willebrand factor (vWF), a large protein that promotes the adhesion of platelets to subendothelial collagen and stabilises factor VIII.
 
-**Inheritance and types.** It is usually autosomal dominant, with rare recessive variants, and is clinically and molecularly heterogeneous.
+**Factor VIII and vWF**
+- Factor VIII is a cofactor of factor IX; vWF is made by endothelial cells and megakaryocytes.
+- vWF binds and stabilises factor VIII, raising its half-life from about 2.4 hours to about 12 hours.
+- vWF promotes platelet adhesion to the subendothelial matrix, by bridging platelet glycoprotein Ib/IX and collagen.
 
-- **Type 1** (about 70% of cases): autosomal dominant, with mild to moderate quantitative deficiency of vWF; incomplete penetrance and variable expressivity; generally mild disease.
-- **Type 2** (about 25%): qualitative defects, with normal amounts of vWF but missense mutations causing defective multimer assembly (type 2A, the most common subtype), so that large and intermediate multimers are missing; mild to moderate bleeding.
-- **Type 3:** autosomal recessive, with deletions or frameshift mutations of both alleles, with almost no vWF and consequently very low factor VIII; severe, haemophilia-like bleeding.
+**Types**
+1. **Type 1:** autosomal dominant; mild to moderate quantitative deficiency of vWF; about 70% of cases; incomplete penetrance and variable expressivity; generally mild.
+2. **Type 2:** autosomal dominant; qualitative defect with missense mutations that cause defective multimer assembly, so large and intermediate multimers are missing; 25% of cases; type 2A is commonest; mild to moderate bleeding.
+3. **Type 3:** autosomal recessive; deletions or frameshift mutations of both alleles, with little or no vWF; factor VIII is also reduced; severe bleeding.
 
-**Clinical features.** The bleeding is usually mild, often unnoticed until surgery or a dental procedure reveals it, and resembles that of a platelet disorder: spontaneous bleeding from mucous membranes (epistaxis), excessive bleeding from wounds and menorrhagia.
+**Clinical and laboratory features**
+- Mild to moderate bleeding disorder resembling that of thrombocytopenia.
+- Defective platelet function with a normal platelet count.
+- Reduced ristocetin cofactor activity.
+- Prolonged PTT in types 1 and 3.
 
-**Laboratory findings.** Normal platelet count, defective platelet function with prolonged bleeding time, reduced ristocetin cofactor activity, reduced vWF antigen, and (because vWF stabilises factor VIII) prolonged PTT in types 1 and 3 with a normal PT.
-
-**Treatment.** Desmopressin (stimulates vWF release) or infusions of plasma concentrates containing factor VIII and vWF, or recombinant vWF for types 1 and 2; type 3 requires prophylactic plasma concentrates and factor VIII.
-
+**Treatment.** Desmopressin, which stimulates vWF release, or plasma concentrates containing factor VIII and vWF, or recombinant vWF, for types 1 and 2; prophylactic plasma concentrates for type 3.
 
 ## Write a short note on hemophilia (A) / its characteristic features.
 
-Haemophilia A (factor VIII deficiency, classic haemophilia) is the most common hereditary disease associated with life-threatening bleeding. It is caused by mutations in the gene encoding factor VIII, an essential cofactor for factor IX in the activation of factor X, and is inherited as an X-linked recessive trait, so that it affects mainly males and homozygous females. Rarely, heterozygous females bleed excessively because of unfavourable lyonisation. About 30% of patients have no family history, because the disease is caused by new mutations.
+**Definition and aetiology**
+- The most common hereditary disease associated with life-threatening bleeding.
+- Caused by mutations in the gene encoding **factor VIII**, an essential cofactor for factor IX.
+- Inherited as an **X-linked recessive** trait; affects mainly males and homozygous females.
+- About 30% of patients have no family history and have new mutations.
 
-**Severity.** The clinical severity correlates well with the level of factor VIII activity: below 1% of normal is severe, 2% to 5% moderately severe, and 6% to 50% mild. The most severe deficiencies are caused by an inversion involving the X chromosome that abolishes the synthesis of factor VIII. Point mutations impairing the function of the protein may give normal protein levels by immunoassay.
+**Severity, by factor VIII activity**
+- Less than 1% of normal: severe.
+- 2% to 5%: moderately severe.
+- 6% to 50%: mild.
+- The most severe deficiencies result from an inversion involving the X chromosome that abolishes synthesis of factor VIII.
 
-**Clinical features.** A tendency toward easy bruising and massive haemorrhage after trauma or surgery, together with "spontaneous" haemorrhages in regions of the body susceptible to trauma, particularly the joints (haemarthroses, usually knees, elbows and ankles), muscles (haematomas) and central nervous system; recurrent bleeding into the joints leads to progressive, disabling deformity. Bleeding after dental extraction, haematuria and gastrointestinal bleeding occur. Petechiae are characteristically absent.
+**Clinical features**
+- Easy bruising and massive haemorrhage after trauma or surgery.
+- Spontaneous haemorrhage into joints (**haemarthroses**) and other regions susceptible to trauma; recurrent bleeding causes progressive disabling deformities.
+- Petechiae are characteristically absent.
 
-**Laboratory findings.** Prolonged PTT with a normal PT, normal platelet count and bleeding time; reduced factor VIII by specific assay, with normal vWF.
+**Laboratory**
+- Prolonged PTT and normal PT.
+- Factor VIII-specific assays are required for diagnosis.
 
-**Treatment.** Infusions of recombinant factor VIII, or a bispecific antibody linking factor IXa and factor X (which bypasses the need for factor VIII and remains active in patients who develop inhibitors, which occur in about 15% of those with severe disease treated with recombinant factor VIII); the very high cost limits treatment in low-resource countries. Gene therapy is available for haemophilia B and being developed for A.
-
+**Treatment**
+- Recombinant factor VIII, or a bispecific antibody linking factor IXa and factor Xa.
+- About 15% of patients with severe disease develop antibodies that inhibit factor VIII.
 
 ## Why is hemophilia called an X-linked recessive disorder?
 
-Haemophilia is called an X-linked recessive disorder because the genes encoding factor VIII (haemophilia A) and factor IX (haemophilia B) are located on the long arm of the X chromosome, and the disease is expressed fully only when there is no normal allele to compensate.
-
-A male has only one X chromosome (hemizygous), so a single mutant allele, inherited from his mother, is sufficient to produce the disease; there is no second X chromosome carrying a normal allele. A heterozygous female carrier has one normal and one mutant allele, and her normal factor VIII, produced from the normal X chromosome, is usually enough for haemostasis, so she is clinically normal (the trait is recessive). Hence the disease affects mainly males and is transmitted through carrier females. A carrier mother has a 50% chance of transmitting the gene to each child, so that half her sons are affected and half her daughters are carriers; an affected father transmits the gene to all his daughters (obligate carriers) and to none of his sons (no male-to-male transmission). A female is affected only when homozygous (affected father and carrier mother) or, rarely, in a heterozygote when most cells by chance inactivate the X chromosome carrying the normal allele (unfavourable lyonisation). About 30% of cases arise from new mutations with no family history.
-
+- Haemophilia A is caused by mutations in the gene encoding factor VIII, which is carried on the X chromosome.
+- It is inherited as an **X-linked recessive** trait.
+- It therefore affects mainly **males** and homozygous females.
+- Rarely, heterozygous females bleed excessively, presumably because the X chromosome bearing the normal factor VIII allele is inactivated by chance in most cells (unfavourable lyonization).
+- About 30% of patients have no family history; the disease is caused by new mutations.
 
 ## A boy has hemarthrosis after a small fall; maternal uncle bled after tooth extraction. What is your provisional diagnosis?
 
-The provisional diagnosis is **haemophilia A** (classic haemophilia, factor VIII deficiency); haemophilia B (factor IX deficiency) is clinically indistinguishable and is the alternative. The occurrence of haemarthrosis after minor trauma in a boy is characteristic of a coagulation factor deficiency, in which bleeding is deep, into joints and muscles, rather than mucocutaneous. The history of excessive bleeding after tooth extraction in the maternal uncle indicates transmission through the mother's side of the family, as in X-linked recessive inheritance (the mother being an obligate carrier).
+**Haemophilia A** (factor VIII deficiency), an X-linked recessive disorder.
 
-The diagnosis is confirmed by a prolonged PTT with a normal PT, platelet count and bleeding time, followed by specific factor VIII and factor IX assays, with the normal von Willebrand factor level excluding von Willebrand disease.
-
+- Haemarthrosis after minor stress to a joint and prolonged bleeding after a tooth extraction are typical of bleeding due to coagulation factor deficiency.
+- The affected maternal uncle fits X-linked recessive inheritance, which affects mainly males.
+- Haemophilia B (factor IX deficiency) is clinically indistinguishable, so factor VIII and factor IX assays are needed to confirm.
+- PTT is prolonged and PT is normal.
 
 ## Same: what type of disease is it?
 
-It is an **inherited (hereditary) coagulation factor deficiency disorder, transmitted as an X-linked recessive trait**. Haemophilia A is a genetic bleeding disorder (haemorrhagic diathesis) caused by mutation of the factor VIII gene on the X chromosome, which leads to reduced or nonfunctional factor VIII, an essential cofactor for factor IX in the activation of factor X. It principally affects males, with carrier females who are generally asymptomatic, and shows a wide range of clinical severity that correlates with the residual factor VIII level (severe disease with less than 1% activity).
-
+- An inherited bleeding disorder due to deficiency of a coagulation factor, factor VIII in haemophilia A.
+- **X-linked recessive**: it affects mainly males and homozygous females.
 
 ## Describe the pathogenesis of DIC.
 
-DIC is not a primary disease but an acquired coagulopathy that occurs in the course of a variety of clinical conditions. Normally, clotting is initiated by exposure of tissue factor, which activates factor VII; the tissue factor–factor VIIa complex activates factor IX and factor X, leading to the generation of thrombin, which converts fibrinogen to fibrin, activates factors V, VIII and IX, stimulates fibrin cross-linking, inhibits fibrinolysis and activates platelets. This process is sharply limited to the site of injury: thrombin swept into the circulation binds to thrombomodulin on uninjured endothelium and activates protein C, an inhibitor of factors V and VIII; other activated factors are cleared by the liver, and plasmin removes the clot. DIC can result from pathological activation of coagulation or from impairment of the inhibitory mechanisms, the former being the usual cause. Two major mechanisms trigger it.
+DIC is not a primary disease but an acquired coagulopathy that occurs in the course of many clinical conditions. It results from pathological activation of coagulation or impairment of clot-inhibiting mechanisms.
 
-**1. Release of tissue factor or other procoagulants into the circulation.** Sources include the placenta in obstetric complications (abruptio placentae, retained dead foetus, amniotic fluid embolism), tissues injured by trauma, burns or extensive surgery, mucin from certain adenocarcinomas (which directly activates factor X), and the granules of acute promyelocytic leukaemia cells.
+**Two major triggers**
+1. Release of **tissue factor** or other procoagulants into the circulation.
+   - Sources: placenta in obstetric complications; tissues injured by trauma or burns.
+   - Mucus from certain adenocarcinomas can activate factor X directly.
+2. Widespread **endothelial injury**.
+   - Endothelial cell necrosis exposes the subendothelial matrix, which activates platelets and the coagulation pathway.
+   - **TNF** in sepsis makes endothelial cells express tissue factor and reduces thrombomodulin, and increases adhesion molecules, so leukocytes release reactive oxygen species and proteases.
+   - Other causes: antigen-antibody complexes (systemic lupus erythematosus), temperature extremes (heat stroke, burns), and microorganisms (meningococci, rickettsiae).
 
-**2. Widespread endothelial injury.** Endothelial necrosis exposes the subendothelial matrix, activating platelets and the coagulation pathway; even subtle injury can unleash procoagulant activity. TNF, implicated in sepsis-associated DIC, induces endothelial expression of tissue factor and decreases thrombomodulin expression, and increases adhesion molecule expression so that leukocytes adhere and damage endothelial cells by reactive oxygen species and proteases. Endotoxin of Gram-negative bacteria acts similarly (and activates factor XII); antigen-antibody complexes (SLE, infections) activate complement and platelets; heat stroke, burns, hypoxia, acidosis, shock, and microorganisms (meningococci, rickettsiae) also damage endothelium.
+**Associated conditions.** Obstetric complications, malignant neoplasms, sepsis and major trauma; among cancers, acute promyelocytic leukaemia and adenocarcinomas of the lung, pancreas, colon and stomach.
 
-**Consequences.** Widespread deposition of fibrin in the microcirculation causes ischaemia of vulnerable organs and microangiopathic haemolytic anaemia; and consumption of platelets and clotting factors, together with activation of plasminogen to plasmin (which digests fibrin and factors V and VIII, and generates fibrin degradation products that inhibit platelet aggregation, fibrin polymerisation and thrombin), produces a haemorrhagic diathesis.
-
+**Consequences**
+1. Widespread deposition of fibrin in the microcirculation, causing ischaemia of organs and **microangiopathic haemolytic anaemia**.
+2. Consumption of platelets and clotting factors and activation of plasminogen, causing a **haemorrhagic diathesis**.
 
 ## Explain why bleeding occurs in DIC.
 
-Bleeding in DIC is a consequence of widespread intravascular coagulation, which causes both depletion of the elements required for haemostasis and the generation of anticoagulant substances, so that the patient bleeds even though the primary process is clotting (a "consumptive coagulopathy").
+1. The thrombotic diathesis consumes **platelets, fibrin and coagulation factors**.
+2. Fibrinolysis is activated: plasmin cleaves fibrin and also digests factors V and VIII, reducing their concentration further.
+3. Fibrin degradation products inhibit platelet aggregation, fibrin polymerisation and thrombin.
+4. This depletion of the factors required for haemostasis, with activated fibrinolysis, causes bleeding.
 
-1. **Consumption of platelets and clotting factors:** the thrombi forming throughout the microcirculation use up platelets, fibrinogen, prothrombin and factors V, VIII and X faster than they can be synthesised, so there are too few of them left to form haemostatic plugs and clots at sites of real injury or at venepuncture sites.
-2. **Activation of the fibrinolytic system:** deposition of fibrin activates plasminogen to plasmin; plasmin dissolves fibrin clots, including haemostatic plugs, and also digests fibrinogen and factors V and VIII, reducing their concentration still further.
-3. **Fibrin degradation products (FDPs and D-dimers):** these inhibit platelet aggregation, interfere with fibrin polymerisation and inhibit thrombin, thereby acting as anticoagulants.
-4. **Thrombocytopenia and acquired platelet dysfunction,** and in some settings, vitamin K deficiency or liver disease, aggravate the defect.
-
-The result is spontaneous bleeding from multiple sites (skin petechiae and ecchymoses, mucosal and wound oozing, gastrointestinal, urinary, intracranial bleeding). In acute DIC with obstetric complications or major trauma the bleeding diathesis dominates, whereas chronic DIC such as occurs in cancer patients tends to present with thrombotic complications.
+Acute DIC, for example with obstetric complications or major trauma, is dominated by a bleeding diathesis.
 
 ## Classify blood groups.
 
@@ -9532,117 +9488,99 @@ An anticoagulant is a chemical substance that prevents blood from clotting. In t
 
 ## Name the blood groups with their antigens.
 
-The ABO and Rh systems are the most important blood group systems.
-
-**ABO system**
-
-| Blood group | Antigen on red cells | Antibodies in plasma | Approximate frequency (varies by population) |
-|---|---|---|---|
-| A | A | Anti-B | About 25% to 30% |
-| B | B | Anti-A | About 25% to 35% (higher in South Asia) |
-| AB | A and B | None | About 5% to 10% |
-| O | None (H substance only) | Anti-A and anti-B | About 35% to 45% |
-
-**Rh system.** Rh-positive individuals have the D antigen on their red cells (about 95% to 99% of South Asians, 85% of Europeans); Rh-negative individuals lack D. Other Rh antigens are C, c, E and e.
-
-**Other systems with their antigens.** Kell (K, k), Duffy (Fy^a, Fy^b), Kidd (Jk^a, Jk^b), MNS (M, N, S, s), Lewis (Le^a, Le^b), P (P1), and Lutheran (Lu^a, Lu^b). The A and B antigens are carbohydrate structures, formed by the addition of N-acetylgalactosamine (A) or galactose (B) to the H substance (fucose), which is the antigen of group O, under the control of the ABO gene on chromosome 9.
-
+| Blood group | Antigen on red cells | Antibodies in plasma |
+|---|---|---|
+| **A** | A | Anti-B |
+| **B** | B | Anti-A |
+| **AB** | A and B | Neither anti-A nor anti-B |
+| **O** | Neither A nor B | Anti-A and anti-B |
+| **Rh positive** | D antigen present | No naturally occurring anti-D |
+| **Rh negative** | D antigen absent | Anti-D formed only after exposure to D-positive red cells |
 
 ## What are the commonly used blood products?
 
-The blood products (components and derivatives) in common use are the following.
-
-1. **Whole blood:** used in massive haemorrhage when both oxygen-carrying capacity and volume are needed.
-2. **Packed red cell concentrate** (with or without additive solution): the main product for correction of anaemia; special forms are leukocyte-depleted, washed and irradiated cells.
-3. **Platelet concentrates** (random-donor pooled or single-donor apheresis): for thrombocytopenia and platelet function defects.
-4. **Fresh frozen plasma (FFP):** contains all coagulation factors, used in DIC, liver disease, massive transfusion and reversal of warfarin, and in plasma exchange for TTP.
-5. **Cryoprecipitate:** rich in fibrinogen, factor VIII, vWF and factor XIII; used in hypofibrinogenaemia and, when concentrates are unavailable, in haemophilia A and von Willebrand disease.
-6. **Plasma derivatives (fractionated products):** albumin, immunoglobulins (normal and specific, including anti-D), factor VIII and IX concentrates, prothrombin complex concentrate, fibrinogen concentrate, antithrombin and C1 esterase inhibitor.
-7. **Granulocyte concentrates** (rarely used).
-
+| Product | Use |
+|---|---|
+| **Whole blood** | Massive transfusion in trauma or shock; exchange transfusion |
+| **Packed red cells** | Symptomatic anaemia and surgical blood loss |
+| **Platelet concentrate** | Prevent or treat bleeding in thrombocytopenia |
+| **Fresh frozen plasma** | Replaces labile and stable clotting factors |
+| **Cryoprecipitate** | Source of factor VIII, fibrinogen and von Willebrand factor; haemophilia, von Willebrand disease, DIC, low fibrinogen |
+| **Granulocytes** | Neutropenic patients with culture-proven gram-negative infection unresponsive to antibiotics |
 
 ## What are the hazards/complications of blood transfusion?
 
-Blood products are the gift of life: over 4.5 million red cell transfusions are given in US hospitals each year, and with improved screening they are safer than ever, but complications still occur. Most are minor and transient, but some have severe or fatal consequences. The complications may be classified as follows.
-
-**A. Immunological reactions**
-
-1. **Febrile nonhaemolytic transfusion reaction:** the commonest. Fever and chills, sometimes with mild dyspnoea, within 6 hours of a transfusion of red cells or platelets, caused by inflammatory mediators released from donor leukocytes. Its frequency increases with the storage age of the product and is decreased by leukocyte reduction; symptoms respond to antipyretics.
-2. **Allergic reactions:** urticarial reactions (1% to 3% of transfusions), triggered by allergens in the donated product recognised by recipient IgE, are usually mild and respond to antihistamines; severe anaphylactic reactions (1 in 20,000 to 50,000 transfusions) occur in IgA-deficient recipients (frequency about 1 in 600) with IgG antibodies against IgA.
-3. **Haemolytic reactions:**
-
-- Acute: due to preformed IgM antibodies, usually from an ABO-incompatible unit caused by an error in patient identification or sample labelling; complement-mediated intravascular haemolysis, with fever, shaking chills, flank pain and haemoglobinuria, which may progress to DIC, shock, acute renal failure and death.
-- Delayed: IgG antibodies to previously encountered protein antigens (Rh, Kell, Kidd), causing extravascular haemolysis with a positive direct Coombs test, low haptoglobin and raised LDH.
-
-4. **Transfusion-related acute lung injury (TRALI):** sudden respiratory failure, bilateral infiltrates unresponsive to diuretics, fever and hypotension during or soon after transfusion; due to donor antibodies (usually anti-HLA from multiparous females) activating primed neutrophils in the lung microvasculature; mortality is 5% in uncomplicated cases and up to 67% in the severely ill; incidence below 1 in 10,000 transfusions.
-5. Also post-transfusion purpura, transfusion-associated graft-versus-host disease, and alloimmunisation to red cell and HLA antigens.
-
-**B. Infectious complications**
-
-- Bacterial contamination (mostly skin flora, much more common in platelets, up to 1 in 5000, because they are stored at room temperature; sepsis resembles a transfusion reaction); viruses (HIV 1 in 1.5 million, hepatitis C 1 in 1.2 million, hepatitis B 1 in 1 million), CMV, West Nile virus, malaria, syphilis, babesia and trypanosomes.
-
-**C. Non-immunological and metabolic**
-
-- Circulatory overload, citrate toxicity with hypocalcaemia, hyperkalaemia, hypothermia, dilutional thrombocytopenia and coagulopathy in massive transfusion, air embolism, and iron overload (secondary haemochromatosis) in repeatedly transfused patients, which damages the heart, liver and pancreas.
-
+| Reaction | Features |
+|---|---|
+| **Febrile nonhaemolytic** | Commonest; fever and chills, sometimes mild dyspnoea, within 6 hours of red cell or platelet transfusion; due to inflammatory mediators from donor leucocytes; responds to antipyretics |
+| **Allergic** | Severe reactions in sensitised recipients, most likely in IgA deficiency (about 1 in 600), where IgG antibodies recognise IgA; occur in 1 in 20,000 to 1 in 50,000 transfusions; urticarial reactions are IgE mediated, occur in 1% to 3% and are mild |
+| **Acute haemolytic** | Preformed IgM antibodies against donor red cells fix complement; usually an ABO-incompatible unit; fever, shaking chills and flank pain; may progress to DIC, shock, acute renal failure and death |
+| **Transfusion-related acute lung injury (TRALI)** | Sudden respiratory failure during or soon after transfusion; bilateral pulmonary infiltrates not responding to diuretics; fever, hypotension and hypoxaemia; incidence less than 1 in 10,000; mortality 5% in uncomplicated cases, up to 67% in the severely ill |
+| **Bacterial infection** | Fever, chills and hypotension; more common with platelets |
+| **Circulatory overload** | About 1% of transfusions; respiratory distress or hypertension within 12 hours |
+| **Delayed haemolytic** | IgG antibodies to antigens of previous sensitisation; extravascular haemolysis; positive direct Coombs test, low haptoglobin, raised lactate dehydrogenase; antibodies to Rh, Kell and Kidd may cause severe reactions |
+| **Viral infection** | HIV, hepatitis C and hepatitis B; estimated 1 in 1.5 million, 1 in 1.2 million and 1 in 1 million units |
+| **Graft-versus-host disease** | 4 to 30 days after transfusion |
+| **Post-transfusion purpura** | 5 to 10 days after transfusion |
+| **Iron overload** | Generally after 15 to 20 red cell units |
 
 ## Write a short note on mismatched blood transfusion (adverse effects).
 
-Mismatched blood transfusion means the transfusion of red cells that are incompatible with the recipient's plasma antibodies, most dangerously an ABO-incompatible unit. Its commonest cause is clerical: an error in patient identification, sample or unit labelling.
+**Cause.** An error in patient identification or tube labelling that allows a patient to receive an ABO-incompatible unit of blood.
 
-**Pathogenesis.** The recipient has preexisting high-affinity "natural" IgM antibodies, usually directed against the polysaccharide antigens A or B, which bind to the donor red cells and rapidly induce complement-mediated lysis (the membrane attack complex), intravascular haemolysis and haemoglobinuria. Complement activation (C3a, C5a) and release of cytokines and bradykinin, rather than intravascular haemolysis per se, are responsible for the symptoms: osmotic lysis of red cells (for example by infusing red cells with 5% dextrose in water) produces haemoglobinuria without the other features of a haemolytic reaction.
+**Pathogenesis**
+- Preformed high-affinity natural **IgM** antibodies, usually against the polysaccharide blood group antigens A or B, bind the donor red cells.
+- They fix complement and rapidly induce complement-mediated lysis, **intravascular haemolysis** and haemoglobinuria.
+- The signs and symptoms are due to complement activation rather than intravascular haemolysis itself.
 
-**Adverse effects.**
+**Adverse effects**
+1. Fever, shaking chills and flank pain, appearing rapidly.
+2. Haemoglobinuria.
+3. The direct Coombs test is typically positive, unless all the donor red cells have lysed.
+4. In severe cases the process rapidly progresses to **DIC**, **shock**, **acute renal failure** and occasionally death.
 
-1. Immediate: within minutes of starting the transfusion, fever, shaking chills, flushing, flank or back pain, chest tightness, nausea, hypotension and oozing from venepuncture sites, with haemoglobinaemia and haemoglobinuria.
-2. Severe: shock, disseminated intravascular coagulation, and acute renal failure (from hypotension, free haemoglobin and fibrin thrombi in the kidney); death in severe cases.
-3. Subsequent: jaundice from unconjugated hyperbilirubinaemia, anaemia with failure of the transfused cells to raise the haemoglobin, and a positive direct Coombs test (unless all donor cells are lysed).
-4. Delayed haemolytic reaction (days later) with antibodies to Rh, Kell and Kidd antigens, producing extravascular haemolysis.
-
-**Management.** Stop the transfusion immediately, maintain the intravenous line with saline, recheck the identity of patient and unit, return the unit and send a fresh sample for repeat grouping, cross-match, direct Coombs test and plasma free haemoglobin; support blood pressure and renal perfusion (fluids, diuretics), and treat DIC. Prevention depends on meticulous bedside identification of the patient and the unit, and cross-matching.
-
+**Delayed haemolytic reactions**
+- Caused by IgG antibodies to red cell antigens to which the recipient was sensitised earlier, for example by a prior transfusion.
+- Extravascular haemolysis, with a positive direct Coombs test, low haptoglobin and raised lactate dehydrogenase.
+- Antibodies to Rh, Kell and Kidd antigens may cause severe and potentially fatal reactions.
 
 ## Name the immediate blood transfusion reactions.
 
-The immediate (acute) transfusion reactions, occurring during or within 24 hours of transfusion, are the following.
-
-1. Febrile nonhaemolytic transfusion reaction.
-2. Allergic (urticarial) reaction, and anaphylactic reaction (in IgA deficiency).
-3. Acute haemolytic transfusion reaction (ABO incompatibility).
-4. Transfusion-related acute lung injury (TRALI).
-5. Bacterial contamination of the blood product with septic shock.
-6. Transfusion-associated circulatory overload (TACO).
-7. Metabolic effects of massive transfusion: citrate toxicity and hypocalcaemia, hyperkalaemia, hypothermia and acidosis; dilutional coagulopathy and thrombocytopenia.
-8. Air embolism.
-9. Nonimmune haemolysis (from overheating, freezing or use of hypotonic solutions).
-
+1. **Febrile nonhaemolytic reaction:** fever and chills, sometimes with mild dyspnoea, within 6 hours.
+2. **Allergic reactions:** urticarial, or severe in IgA-deficient recipients.
+3. **Acute haemolytic reaction:** fever, shaking chills and flank pain.
+4. **Transfusion-related acute lung injury (TRALI):** sudden respiratory failure during or soon after transfusion.
+5. **Bacterial infection:** fever, chills and hypotension.
+6. **Circulatory overload:** respiratory distress or hypertension within 12 hours.
 
 ## What is hemolytic transfusion reaction?
 
-A haemolytic transfusion reaction is the premature destruction of transfused donor red cells (or, rarely, of the recipient's red cells by donor plasma antibodies) because of an antigen-antibody reaction between the donor's cells and antibodies in the recipient. It may be acute or delayed.
-
-**Acute haemolytic reaction.** Usually caused by preformed IgM antibodies against donor red cells that fix complement. It commonly stems from an error in patient identification or tube labelling that allows a patient to receive an ABO-incompatible unit of blood. Preexisting high-affinity "natural" IgM antibodies, usually against polysaccharide blood group antigens A or B, bind to red cells and rapidly induce complement-mediated lysis, intravascular haemolysis and haemoglobinuria. Fever, shaking chills and flank pain appear rapidly, and in severe cases the process rapidly progresses to DIC, shock, acute renal failure and occasionally death. The direct Coombs test is typically positive, unless all the donor red cells have lysed.
-
-**Delayed haemolytic reaction.** Caused by antibodies that recognise red cell antigens to which the recipient was sensitised previously, for example through a prior blood transfusion or pregnancy. These are typically IgG antibodies to protein antigens, such as Rh, Kell and Kidd, associated with a positive direct Coombs test and laboratory features of haemolysis (low haptoglobin, raised LDH). They produce extravascular haemolysis, and the severity varies according to the antigen: antibodies to Rh, Kell and Kidd may induce severe and potentially fatal reactions, apparently because of macrophage activation and cytokine release, while others produce minor signs and symptoms.
-
+- **Acute haemolytic reaction:** preformed IgM antibodies against donor red cells fix complement; usually after an ABO-incompatible unit is given through an error in patient identification or labelling; intravascular haemolysis, haemoglobinuria, fever, shaking chills and flank pain.
+- **Delayed haemolytic reaction:** IgG antibodies against red cell antigens to which the recipient was sensitised previously; extravascular haemolysis with a positive direct Coombs test, low haptoglobin and raised lactate dehydrogenase.
 
 ## Write a short note on preservation of blood.
 
-Blood is preserved for storage and transfusion by collection into an anticoagulant–preservative solution and storage at a controlled low temperature, to maintain the viability and function of red cells.
+**Collection**
+- About 450 mL of blood is collected into a bag containing 63 mL of anticoagulant-preservative solution, usually **citrate phosphate dextrose adenine (CPDA-1)**.
+- Citrate chelates calcium and prevents clotting.
+- Phosphate maintains the pH and the 2,3-DPG level.
+- Dextrose is the energy source for red cell metabolism.
+- Adenine is the substrate for ATP synthesis, and extends the shelf life.
 
-**Collection.** Donor blood (usually 450 mL) is collected under aseptic conditions into a plastic bag containing 63 mL of an anticoagulant-preservative solution, commonly **citrate-phosphate-dextrose-adenine (CPDA-1)**:
+**Storage**
+- Whole blood and red cells are kept at 1°C to 6°C.
+- Shelf life is 21 days in ACD and CPD, 35 days in CPDA-1 and 42 days with additive solutions.
+- Platelet concentrates are kept at 20°C to 24°C with constant agitation, for 5 days.
+- Fresh frozen plasma and cryoprecipitate are kept at or below minus 18°C, for 12 months and 1 year.
 
-- Citrate: chelates calcium and prevents clotting.
-- Phosphate: buffers the pH and supports 2,3-DPG levels.
-- Dextrose: the energy substrate for red cell glycolysis.
-- Adenine: allows the red cells to resynthesise ATP, extending storage.
-
-Older solutions are acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose (CPD).
-
-**Storage.** Whole blood and red cells are stored at 2°C to 6°C in a monitored blood bank refrigerator (which slows metabolism and bacterial growth). The shelf life is 35 days in CPDA-1 and up to 42 days for packed cells with additive solutions such as SAGM (saline-adenine-glucose-mannitol). Platelet concentrates are stored at 20°C to 24°C with continuous agitation for up to 5 days (7 with bacterial testing); fresh frozen plasma is frozen within 6 to 8 hours of collection and stored at –30°C or below for up to a year; cryoprecipitate is stored frozen at –30°C. Red cells may be preserved for years by freezing with glycerol at –80°C (rare units).
-
-**Changes during storage (storage lesion).** Fall in pH, rise in plasma potassium, loss of 2,3-DPG and ATP, loss of viability of platelets (within 48 hours), granulocytes (within 24 hours) and labile factors V and VIII, and increased free haemoglobin. At least 70% of red cells must survive 24 hours after transfusion at the end of storage.
-
+**Changes during storage (storage lesion)**
+1. Fall in pH.
+2. Rise in plasma potassium.
+3. Depletion of 2,3-DPG, which shifts the oxygen dissociation curve to the left; it is regenerated within 24 hours of transfusion.
+4. Fall in ATP after day 7.
+5. Increased haemolysis.
+6. Loss of platelets and of the labile factors V and VIII.
+7. At expiry, at least 75% of transfused red cells must remain in circulation 24 hours after transfusion.
 
 ## Name the commonly used anticoagulants with advantages (incl. those in blood bag).
 
@@ -9650,20 +9588,20 @@ Older solutions are acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose (
 
 | Anticoagulant | Advantages |
 |---|---|
-| EDTA (dipotassium or tripotassium) | Best preservation of cell morphology and counts; prevents platelet clumping; standard for complete blood count, film, and haemoglobin studies |
-| Trisodium citrate (3.2% or 3.8%) | Reversible calcium chelation preserves factors V and VIII; standard for coagulation tests and ESR |
-| Heparin (lithium or sodium) | Does not alter cell size or electrolytes; used for blood gases, osmotic fragility, cytogenetics and some biochemical tests |
-| Double oxalate (Wintrobe) | Inexpensive; no change in cell volume; for PCV |
-| Sodium fluoride | Preserves glucose by inhibiting glycolysis |
+| **EDTA** | Preserves cell morphology for about 3 hours; inhibits platelet clumping; suits PCR |
+| **Trisodium citrate** | Binding of calcium is reversible, so factors V and VIII are preserved |
+| **Heparin** | Does not alter red cell size; reduces lysis |
+| **Double oxalate** | Used for chemistry tests, PCV, ESR and total leucocyte count |
+| **Sodium fluoride** | Preserves glucose |
 
-**For blood bags (blood bank storage)**
+**For blood bags**
 
 | Solution | Advantages |
 |---|---|
-| ACD (acid-citrate-dextrose) | Citrate prevents clotting; acid and dextrose maintain red cell viability for up to 21 days |
-| CPD (citrate-phosphate-dextrose) | Phosphate gives better pH and 2,3-DPG; 21 days |
-| CPDA-1 | Adenine supports ATP regeneration; extends storage to 35 days; most widely used in blood bags |
-| SAGM and other additive solutions | Allow plasma removal for other products; red cells stored for 42 days with good viability |
+| **ACD (acid citrate dextrose)** | Citrate prevents clotting; dextrose supplies energy; storage for 21 days |
+| **CPD (citrate phosphate dextrose)** | Phosphate maintains pH and 2,3-DPG; storage for 21 days |
+| **CPDA-1** | Adenine supports ATP synthesis; storage for 35 days |
+| **Additive solutions** | Red cells stored for 42 days |
 
 ## DIC picture after delivery or induced abortion — Probable diagnosis? Tests / laboratory investigations to establish it (with results)?
 
