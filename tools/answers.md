@@ -1855,43 +1855,32 @@ Activation of the complement system through the classical, alternative or lectin
 
 ## Morphological types / patterns of acute inflammation.
 
-The morphological patterns of acute inflammation are serous, fibrinous, purulent (suppurative, including abscess) and ulcerative inflammation.
+The morphologic hallmarks of acute inflammation are dilation of small blood vessels and accumulation of leukocytes and fluid in the extravascular tissue. Special patterns are superimposed on these features, depending on the severity of the reaction, its aetiology, and the tissue and site involved. They often give valuable clues about the underlying cause.
 
-The morphological hallmarks of acute inflammation are dilation of small blood vessels and accumulation of leukocytes and fluid in the extravascular tissue, but special patterns are superimposed depending on the severity of the reaction, its aetiology and the tissue involved. Recognising these patterns often provides clues to the underlying cause.
-
-| Pattern | Characteristic |
+| Pattern | Main feature |
 |---|---|
-| Serous | Exudation of cell-poor, serum-like fluid into spaces or body cavities |
-| Fibrinous | Greater permeability: fibrinogen leaks out and fibrin is deposited, typically on serosal surfaces |
-| Purulent (suppurative) | Pus (neutrophils, necrotic debris, oedema fluid) from pyogenic bacteria; abscess is a localised collection |
-| Ulcer | Local defect of an epithelial surface from sloughing of inflamed necrotic tissue |
-
-Other descriptive terms used in practice include catarrhal (mucous), pseudomembranous (a membrane of fibrin, necrotic epithelium and leukocytes as in diphtheria) and haemorrhagic inflammation.
-
+| ***Serous inflammation*** | Exudation of serum-like fluid into spaces created by cell injury, or into body cavities lined by the peritoneum, pleura or pericardium. The fluid typically contains no microbes and few leukocytes. |
+| ***Fibrinous inflammation*** | With a greater increase in vascular permeability, large molecules such as fibrinogen leave the blood and fibrin is deposited in the extracellular space. Typical of the lining of body cavities such as meninges, pericardium and pleura. |
+| ***Purulent (suppurative) inflammation*** | Production of **pus**, an exudate of neutrophils, the liquefied debris of necrotic cells and oedema fluid. Caused mainly by pyogenic (pus-producing) bacteria such as staphylococci. An **abscess** is a localised collection of pus. |
+| ***Ulcer*** | A local defect, or excavation, of the surface of an organ or tissue, produced by sloughing of inflamed necrotic tissue. |
 
 ## One example of each morphological type.
 
-Serous inflammation is exemplified by a skin blister from a burn; fibrinous inflammation by fibrinous pericarditis; purulent inflammation by acute appendicitis or an abscess; and ulcerative inflammation by a peptic ulcer.
-
-- **Serous:** a skin blister due to a burn or viral infection, with fluid accumulating beneath the epidermis; effusions in the pleural, pericardial or peritoneal cavity from irritation.
-- **Fibrinous:** fibrinous pericarditis (bread-and-butter appearance), fibrinous pleuritis, and meningitis; the lining of body cavities is characteristically involved.
-- **Purulent (suppurative):** acute appendicitis; a staphylococcal skin abscess; bronchopneumonia with abscesses.
-- **Ulcer:** peptic ulcer of the stomach or duodenum, in which acute and chronic inflammation coexist; also ulcers of the mouth and intestine, and diabetic or venous ulcers of the lower limb.
-
+| Morphologic type | Example |
+|---|---|
+| ***Serous inflammation*** | Skin blister of a burn or viral infection (serous fluid collects within or just beneath the damaged epidermis); effusion into a body cavity |
+| ***Fibrinous inflammation*** | Fibrinous pericarditis (fibrin deposited on the pericardium); also pleura and meninges |
+| ***Purulent (suppurative) inflammation*** | Acute appendicitis |
+| ***Abscess*** | Bacterial abscesses of the lung in bronchopneumonia |
+| ***Ulcer*** | Peptic ulcer of the stomach or duodenum |
 
 ## What is an ulcer?
 
-An ulcer is a local defect or excavation of the surface of an organ or tissue, produced by the sloughing of inflamed necrotic tissue.
-
-Ulceration can occur only when tissue necrosis and resultant inflammation exist on or near a surface. It is most common in (1) the mucosa of the mouth, stomach, intestines and genitourinary tract, and (2) the skin and subcutaneous tissue of the lower extremities in individuals with disorders that predispose to vascular insufficiency, such as diabetes, sickle cell anaemia and peripheral vascular disease. Ulcers are best exemplified by peptic ulcer of the stomach or duodenum, in which acute and chronic inflammation coexist: in the acute stage there is intense polymorphonuclear infiltration and vascular dilation at the margins of the defect, and with chronicity the margins and base develop fibroblastic proliferation, scarring, and accumulation of lymphocytes, macrophages and plasma cells. An ulcer may be considered as a discontinuity in an epithelium with underlying acute and chronic inflammation. Chronic ulcers of the leg include venous, arterial, diabetic ulcers and pressure sores.
-
+An ***ulcer*** is a local defect, or excavation, of the surface of an organ or tissue that is produced by the sloughing (shedding) of inflamed necrotic tissue.
 
 ## Define abscess.
 
-Abscesses are localised collections of pus caused by suppuration buried in a tissue, an organ, or a confined space; they are produced by seeding of pyogenic bacteria into a tissue.
-
-Pus is an exudate of neutrophils, the liquefied debris of necrotic cells, and oedema fluid. It is produced when infection with pyogenic bacteria, such as staphylococci, causes liquefactive necrosis. The abscess has a central liquefied region composed of necrotic leukocytes and tissue cells, a zone of preserved neutrophils around this focus, and, outside this, vascular dilation with parenchymal and fibroblastic proliferation indicating chronic inflammation and repair. In time the abscess may be walled off by a fibrous capsule (pyogenic membrane) and ultimately replaced by connective tissue. The fate of an abscess includes rupture and drainage with healing, formation of a sinus or fistula, spread, or chronic abscess formation with scarring and, occasionally, calcification. Abscesses are treated by drainage and antibiotics, since antibiotics penetrate the avascular pus poorly.
-
+An ***abscess*** is a localised collection of pus caused by suppuration buried in a tissue, an organ or a confined space.
 
 ## Describe the morphological patterns of acute inflammation.
 
@@ -1908,86 +1897,63 @@ The morphological hallmarks of acute inflammation are dilation of small vessels 
 
 ## Beneficial effects of acute inflammation.
 
-Acute inflammation is beneficial because it delivers leukocytes, antibodies, complement and fibrin to the site of injury, dilutes toxins, destroys microbes and necrotic tissue, and initiates repair.
-
-- **Dilution of toxins** by oedema fluid, and delivery of plasma proteins (antibodies, complement, clotting factors) to the injured site.
-- **Fibrin formation**, which forms a meshwork that traps microbes, limits spread and provides a scaffold for repair.
-- **Delivery of leukocytes**, which phagocytose and kill microbes and clear necrotic debris.
-- **Drainage** of fluid and antigens through lymphatics to lymph nodes, which initiates the adaptive immune response, and delivery of antimicrobial drugs to the site.
-- **Fever**, which may be a protective host response.
-- **Initiation of repair**: macrophages produce growth factors and cytokines that promote angiogenesis, fibroblast proliferation and healing.
-
-Without inflammation, infections would go unchecked and wounds would never heal.
-
+- Inflammation is a ***protective response that is essential for survival***. It rids the host of both the initial cause of cell injury (microbes, toxins) and its consequences (necrotic cells and tissues).
+- It delivers circulating **phagocytic leukocytes, antibodies and complement proteins** from the blood to the site of infection or injury. These are kept in a resting state in the blood and can be rapidly recruited to any site.
+- Leukocytes eliminate microbes and dead cells by **phagocytosis**, and neutrophils can form **extracellular traps** that trap and destroy microbes and prevent their spread.
+- *Fever* may be a protective host response.
+- Inflammation is followed by **repair**, in which damaged tissue is healed by regeneration and scarring.
+- Without inflammation, *infections would go unchecked, wounds would never heal, and injured tissues might remain permanent festering sores*.
 
 ## Harmful effects of acute inflammation.
 
-The harmful effects of acute inflammation include tissue damage from leukocyte enzymes and oxygen radicals, swelling of vital structures in confined spaces, scarring and adhesions, fluid loss, and systemic effects such as septic shock.
-
-- **Digestion and injury of normal tissue** by lysosomal enzymes and reactive oxygen species of leukocytes released into the extracellular space.
-- **Swelling in vital or confined areas:** oedema of the epiglottis may obstruct the airway; brain oedema in meningitis may raise intracranial pressure and cause herniation.
-- **Fibrinous exudates** may organise to form scars and adhesions, causing, for example, constrictive pericarditis or intestinal obstruction.
-- **Massive fluid loss** in severe burns.
-- **Inappropriate or exaggerated reactions**: hypersensitivity (anaphylaxis, asthma), autoimmune diseases, and diseases in which leukocytes are the principal cause of injury such as ARDS and glomerulonephritis.
-- **Systemic effects** of high levels of cytokines: sepsis, septic shock, DIC and multiorgan failure.
-- **Progression to chronic inflammation** with fibrosis and loss of function.
-
+- ***Local tissue damage***: protective reactions to infection are often accompanied by local tissue damage with pain and functional impairment. This is usually self-limited and leaves little or no permanent damage.
+- ***Leukocyte-mediated injury***: activated leukocytes release enzymes, reactive oxygen species and other products into the extracellular space, which damage normal tissue. This happens as collateral damage in infections, when the response is directed against host tissues (autoimmune diseases), and when there is an excessive reaction to harmless environmental substances (allergic diseases such as asthma).
+- ***Fluid loss***: increased vascular permeability can cause life-threatening loss of fluid in severely burned patients.
+- ***Scarring (fibrosis)***: healing by connective tissue replacement, for example organisation of fibrin in the pericardial sac, can obliterate the pericardial space.
+- ***Progression to chronic inflammation***: the response may become prolonged, with more tissue destruction and fibrosis.
+- ***Systemic harm***: in sepsis, very high levels of cytokines cause septic shock, with disseminated intravascular coagulation, hypotension and metabolic disturbances.
+- Examples of diseases with inflammatory injury: acute respiratory distress syndrome (neutrophils), glomerulonephritis and vasculitis (antibodies, complement, neutrophils and monocytes), and septic shock (cytokines).
 
 ## Outcomes of acute inflammation.
 
-Acute inflammation has three possible outcomes: complete resolution, healing by connective tissue replacement (scarring or fibrosis), or progression to chronic inflammation.
+Acute inflammation typically has one of three outcomes. The nature and intensity of the injury, the site and tissue affected and the responsiveness of the host all modify the result.
 
-1. **Complete resolution.** The site is restored to normal. This is the usual outcome when injury is limited or short-lived, there has been little tissue destruction, and the damaged parenchymal cells can regenerate.
-2. **Healing by connective tissue replacement (scarring/fibrosis).** This follows substantial tissue destruction, injury to tissues incapable of regeneration, or abundant fibrin exudation in tissue or serous cavities that cannot be adequately cleared. Connective tissue grows into the area of damage or exudate and converts it into a mass of fibrous tissue, a process called organisation.
-3. **Progression to chronic inflammation.** This occurs when the acute response cannot be resolved because of persistence of the injurious agent or interference with healing.
+1. ***Complete resolution***: the site of acute inflammation is restored to normal.
+2. ***Healing by connective tissue replacement (scarring, or fibrosis)***.
+3. ***Progression to chronic inflammation***.
 
-Abscess formation is a pattern of purulent inflammation that may drain, heal by scar, or become chronic.
-
+- Resolution is the usual outcome when the injury is limited or short lived, or when there has been little tissue destruction and the damaged parenchymal cells can regenerate.
+- Scarring occurs after substantial tissue destruction, when the injury involves tissues that cannot regenerate, or when there is abundant fibrin exudation in tissue or serous cavities (pleura, peritoneum) that cannot be adequately cleared. Connective tissue grows into the area, converting it into fibrous tissue, a process also called *organisation*.
+- Progression to chronic inflammation occurs when the acute response cannot be resolved, either because of persistence of the injurious agent or because of interference with the normal process of healing. An example is acute bacterial infection of the lung progressing to a chronic lung abscess.
 
 ## How does (complete) resolution occur?
 
-Complete resolution occurs when the injurious agent is removed, mediators are neutralised and leukocyte emigration stops, macrophages clear debris and microbes, lymphatics reabsorb oedema fluid, and the damaged tissue regenerates.
+***Complete resolution*** is the restoration of the site of acute inflammation to normal after the offending agent has been eliminated. It is the usual outcome when the injury is limited or short lived, or when there has been little tissue destruction and the damaged parenchymal cells can regenerate.
 
-Resolution is favoured when the injury is limited or brief, tissue destruction is slight, and the parenchymal cells are capable of regeneration (labile and stable cells). The sequence is as follows:
-
-- The stimulus is removed, and the production of mediators ceases; the mediators are short-lived and are degraded.
-- Vascular permeability returns to normal and leukocyte emigration ends.
-- Neutrophils die by apoptosis within hours to days after leaving the blood.
-- Active termination signals operate: switch from pro-inflammatory leukotrienes to anti-inflammatory lipoxins (and resolvins), release of TGF-β and IL-10, and cholinergic inhibition of TNF.
-- Macrophages remove the cellular debris, apoptotic neutrophils and microbes.
-- Oedema fluid and protein are reabsorbed by lymphatics and venules; fibrin is dissolved by fibrinolysis.
-- The damaged parenchyma regenerates from surviving cells or stem cells, and the normal architecture is restored, as in lobar pneumonia.
-
+1. **Removal of the stimulus:** the offending agent is eliminated, mainly by phagocytic cells.
+2. **Termination of the acute response:** mediators are produced only while the stimulus persists, have short half-lives and are degraded after release. Neutrophils have a short half-life in tissues and die by apoptosis within hours or a few days. Active stop signals include a switch from proinflammatory leukotrienes to antiinflammatory lipoxins, release of the antiinflammatory cytokines TGF-beta and IL-10, and cholinergic nerve discharge that inhibits TNF production by macrophages.
+3. **Removal of cellular debris and microbes** by macrophages.
+4. **Resorption of oedema fluid** by lymphatics.
+5. **Regeneration** of the damaged tissue.
 
 ## What are the systemic effects of inflammation?
 
-The systemic effects of inflammation, mediated by cytokines (TNF, IL-1, IL-6), include fever, leukocytosis, the acute-phase response with elevated acute-phase proteins such as CRP, and, in severe infection, septic shock.
+Inflammation, even if localised, is associated with systemic reactions induced by cytokines, mainly **TNF, IL-1 and IL-6** (interferons also contribute), whose production is stimulated by bacterial products and other inflammatory stimuli.
 
-Even localised inflammation is associated with cytokine-induced systemic reactions, as anyone who has had influenza will recognise.
-
-**1. Fever.** Elevation of body temperature by 1 to 4 °C is one of the most prominent manifestations. Pyrogens are exogenous (bacterial products such as LPS) or endogenous (IL-1 and TNF). Exogenous pyrogens stimulate immune cells to release IL-1 and TNF, which upregulate cyclooxygenases in vascular and perivascular cells of the hypothalamus; the resulting PGE₂ stimulates neurotransmitter production, resetting the thermostat to a higher level by reducing heat loss (vasoconstriction) and increasing heat generation (brown fat, skeletal muscle). NSAIDs reduce fever by inhibiting prostaglandin synthesis.
-
-**2. Leukocytosis.** The count usually rises to 15,000 to 20,000/μL, sometimes 40,000 to 100,000 (a leukaemoid reaction). It results initially from accelerated release of granulocytes from the marrow (due to TNF and IL-1), with a rise in mature and immature neutrophils (a "shift to the left"), and later from marrow proliferation due to colony-stimulating factors. Bacterial infections cause neutrophilia; viral infections (infectious mononucleosis, mumps, rubella) cause lymphocytosis; allergies and helminth infections cause eosinophilia; typhoid and some viral, rickettsial and protozoal infections cause leukopenia.
-
-**3. Acute-phase response.** The liver synthesises acute-phase proteins, whose plasma concentration can rise several hundredfold. C-reactive protein (CRP) and fibrinogen are induced by IL-6, and serum amyloid A (SAA) by IL-1 and TNF. CRP and SAA bind microbial walls, act as opsonins and fix complement. Fibrinogen causes red cell rouleaux and accelerates the erythrocyte sedimentation rate (ESR). Hepcidin sequesters iron and causes the anaemia of chronic inflammation; thrombopoietin is upregulated and may cause thrombocytosis. Prolonged SAA production may cause secondary amyloidosis, and raised CRP is a marker of cardiovascular risk.
-
-**4. Other manifestations.** Increased pulse and blood pressure, decreased sweating (redirection of blood from skin), rigors, chills, anorexia, somnolence and malaise, due to the action of cytokines on the brain; TNF-induced cachexia in chronic disease.
-
-**5. Septic shock.** In severe bacterial infection, enormous quantities of TNF and IL-1 produce DIC, hypotensive shock and metabolic disturbances (insulin resistance, hyperglycaemia).
-
+1. ***Fever***: a rise in body temperature, usually by 1 to 4 degrees Celsius, produced by *pyrogens*. Exogenous pyrogens (bacterial products such as LPS) stimulate cells to release IL-1 and TNF (endogenous pyrogens), which increase cyclooxygenases and the synthesis of prostaglandins. PGE2 acts on the hypothalamus to reset the body temperature to a higher level. NSAIDs reduce fever by inhibiting prostaglandin synthesis.
+2. ***Leukocytosis***: the leukocyte count usually rises to 15,000 or 20,000 cells per microlitre, and may reach 40,000 to 100,000 (*leukemoid reaction*). It is due to accelerated release of granulocytes from the bone marrow, with a shift to the left, and later to increased production of colony-stimulating factors. Bacterial infections cause neutrophilia, viral infections cause lymphocytosis, and allergies and helminth infestations cause eosinophilia. Some infections (typhoid fever and some viral, rickettsial and protozoal infections) cause leukopenia.
+3. ***Acute-phase response***: increased synthesis, mainly in the liver, of **C-reactive protein, fibrinogen and serum amyloid A**, stimulated by IL-6, IL-1 and TNF. Fibrinogen causes red cells to form rouleaux, which is the basis of the erythrocyte sedimentation rate. Hepcidin rises and, in chronic inflammation, causes anaemia. Thrombopoietin rises and may cause thrombocytosis.
+4. **Other manifestations**: increased pulse and blood pressure, decreased sweating, rigors, chills, anorexia, somnolence and malaise.
+5. ***Septic shock***: in severe bacterial infection (sepsis), huge amounts of TNF and IL-1 cause disseminated intravascular coagulation, hypotensive shock and metabolic disturbances such as insulin resistance and hyperglycaemia.
 
 ## Common investigations usually done in inflammatory conditions.
 
-The common investigations in inflammation are a complete blood count with differential leukocyte count, ESR and C-reactive protein, culture and Gram stain of pus or blood, and, where needed, imaging and histopathology.
+The textbook describes these as the laboratory markers of the systemic response to inflammation.
 
-The tests reflect the systemic response and identify the cause:
-
-- **Complete blood count and differential:** neutrophilic leukocytosis with a shift to the left in bacterial infection (and toxic granulation); lymphocytosis in viral infection; eosinophilia in allergy and helminthiasis; anaemia of chronic disease and thrombocytosis in chronic inflammation.
-- **Acute-phase reactants:** ESR (raised because fibrinogen promotes rouleaux formation) and C-reactive protein; procalcitonin in sepsis.
-- **Microbiology:** Gram stain, culture and sensitivity of pus, aspirates, blood, urine or other fluid; acid-fast stains, culture or PCR for tuberculosis; serology (for example for syphilis).
-- **Imaging:** ultrasonography, radiography, CT or MRI to locate an abscess or involved bone.
-- **Cytology and histopathology:** fine-needle aspiration or biopsy to demonstrate the type of inflammation (suppurative, granulomatous), with special stains for organisms.
-- **Immunological tests** (autoantibodies, immunoglobulins) when immune-mediated disease is suspected.
+1. ***Total and differential leukocyte count***: leukocytosis is common in inflammation, especially bacterial infection (neutrophilia, with a shift to the left). Viral infections show lymphocytosis, allergies and helminth infestations show eosinophilia, and some infections (typhoid fever, some viral, rickettsial and protozoal infections) show leukopenia.
+2. ***Erythrocyte sedimentation rate (ESR)***: fibrinogen makes red cells form stacks (rouleaux) that sediment faster. It is a simple test for an inflammatory response caused by any stimulus.
+3. ***Acute-phase proteins***: serum **C-reactive protein (CRP)**, fibrinogen and serum amyloid A are raised. CRP is also a marker of increased risk of myocardial infarction in coronary artery disease.
+4. ***Other blood count changes***: anaemia from hepcidin in chronic inflammation, and thrombocytosis from raised thrombopoietin.
 
 ## Define chronic inflammation.
 
