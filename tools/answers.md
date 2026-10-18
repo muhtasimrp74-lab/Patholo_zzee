@@ -4680,198 +4680,161 @@ The process is inefficient and complex, and no single "metastasis gene" has been
 
 ## Fundamental cellular changes considered hallmarks of cancer.
 
-All cancers display eight fundamental changes in cell physiology, the hallmarks of cancer: self-sufficiency in growth signals, insensitivity to growth-inhibitory signals, altered cellular metabolism, evasion of apoptosis, limitless replicative potential, sustained angiogenesis, the ability to invade and metastasise, and the ability to evade the host immune response. Genomic instability and tumour-promoting inflammation are enabling characteristics that accelerate their acquisition.
+All cancers display eight fundamental changes in cell physiology, which are the **hallmarks of cancer**:
 
-| Hallmark | Basis |
-|---|---|
-| Self-sufficiency in growth signals | Proliferation without external stimuli, usually through activation of oncogenes such as RAS, MYC, mutated growth factor receptors |
-| Insensitivity to growth-inhibitory signals | Inactivation of tumour suppressor genes such as RB, TP53, APC, CDKN2A |
-| Altered cellular metabolism | Switch to aerobic glycolysis (Warburg effect), which supplies the carbon intermediates needed for rapid growth |
-| Evasion of apoptosis | Loss of p53 function, overexpression of BCL2, amplification of MDM2 |
-| Limitless replicative potential | Evasion of senescence and mitotic crisis through reactivation of telomerase, and a stem cell–like capacity for self-renewal |
-| Sustained angiogenesis | Hypoxia-induced HIF1α and VEGF; loss of angiogenesis inhibitors |
-| Invasion and metastasis | Loss of E-cadherin, EMT, matrix proteases, integrin changes |
-| Evasion of the immune response | Loss of MHC class I, checkpoint ligands (PD-L1), immunosuppressive factors such as TGF-β, regulatory T cells |
+1. **Self-sufficiency in growth signals.** Tumours can proliferate without external stimuli, usually because of oncogene activation.
+2. **Insensitivity to growth-inhibitory signals.** Tumours may not respond to molecules that inhibit proliferation of normal cells, typically because of inactivation of tumour suppressor genes.
+3. **Altered cellular metabolism.** Tumour cells switch to aerobic glycolysis, called the **Warburg effect**, which enables synthesis of the macromolecules and organelles needed for rapid growth.
+4. **Evasion of apoptosis.** Tumours are resistant to programmed cell death.
+5. **Limitless replicative potential (immortality).** Tumours have unrestricted proliferative capacity, a stem cell–like property that avoids cellular senescence and mitotic catastrophe.
+6. **Sustained angiogenesis.** Tumours cannot grow without a vascular supply, so they must induce angiogenesis.
+7. **Ability to invade and metastasise.**
+8. **Ability to evade the host immune response.**
 
-**Enabling characteristics:** genomic instability (the mutator phenotype) and cancer-enabling (tumour-promoting) inflammation.
-
+Two **enabling characteristics** accelerate the acquisition of these changes: **genomic instability** (mutator phenotype) and **tumour-promoting (cancer-enabling) inflammation**.
 
 ## Four principal classes of genes that cause cancer after mutation.
 
-The principal targets of cancer-causing mutations are four classes of genes: growth-promoting proto-oncogenes, growth-inhibiting tumour suppressor genes, genes that regulate programmed cell death (apoptosis), and genes that are responsible for DNA repair.
-
-- **Proto-oncogenes** are converted to oncogenes by gain-of-function mutations; because the mutant protein is constitutively active, one mutant allele suffices, and oncogenes are therefore dominant.
-- **Tumour suppressor genes** are disabled by loss-of-function mutations, and in most instances both alleles must be damaged, so that they behave in a recessive fashion (a state of haploinsufficiency is an exception, in which loss of one allele is enough).
-- **Apoptosis-regulating genes** acquire abnormalities that reduce cell death, either by gain of function in genes whose products suppress apoptosis (e.g., BCL2) or by loss of function in those that promote it (e.g., TP53, BAX).
-- **DNA repair genes** contribute indirectly. Their loss impairs the recognition and repair of nonlethal genetic damage in other genes, so that mutations accumulate at an accelerated rate (mutator phenotype), as in hereditary nonpolyposis colon cancer, xeroderma pigmentosum, and BRCA1/BRCA2-related cancers.
-
+1. **Growth-promoting proto-oncogenes.** Activating mutations cause a gain of function, so they can transform cells despite a normal copy of the same gene; oncogenes are dominant over their normal counterparts.
+2. **Growth-inhibiting tumour suppressor genes.** Mutations generally cause a loss of function, and in most instances both alleles must be damaged before transformation occurs.
+3. **Genes that regulate programmed cell death (apoptosis).**
+4. **Genes responsible for DNA repair.**
 
 ## Examples of oncogenes and tumour suppressor genes.
 
-Examples of oncogenes are RAS, MYC, ERBB2 (HER2), ABL and BRAF, and examples of tumour suppressor genes are RB, TP53, APC, NF1, PTEN, VHL and BRCA1/2.
+**Oncogenes:**
 
-| Oncogene | Activation | Associated tumour |
+| Oncogene | Mode of activation | Associated tumour |
 |---|---|---|
-| KRAS | Point mutation | Pancreatic, colon, lung adenocarcinoma |
-| HRAS | Point mutation | Bladder, kidney |
-| NRAS | Point mutation | Melanoma, haematologic malignancies |
+| ERBB1 (EGFR) | Mutation | Adenocarcinoma of lung |
+| ERBB2 (HER2) | Amplification | Breast carcinoma |
+| KRAS | Point mutation | Colon, lung and pancreatic tumours |
+| BRAF | Point mutation | Melanomas, leukaemias, colon carcinoma |
+| ABL | Translocation (BCR-ABL) | Chronic myeloid leukaemia, acute lymphoblastic leukaemia |
 | MYC | Translocation | Burkitt lymphoma |
 | NMYC | Amplification | Neuroblastoma |
-| ERBB2 (HER2) | Amplification | Breast carcinoma |
-| ERBB1 (EGFR) | Mutation | Lung adenocarcinoma |
-| ABL | Translocation, t(9;22), BCR::ABL | Chronic myeloid leukaemia, ALL |
-| BRAF | Point mutation | Melanoma, hairy cell leukaemia, colon cancer |
-| ALK | Translocation (EML4::ALK) | Lung adenocarcinoma |
-| KIT | Point mutation | GIST, seminoma |
-| RET | Point mutation | MEN 2A and 2B, medullary thyroid carcinoma |
-| JAK2 | Point mutation | Polycythaemia vera and other myeloproliferative neoplasms |
-| CCND1 (cyclin D1) | Translocation | Mantle cell lymphoma |
-| CDK4 | Amplification | Glioblastoma, melanoma, sarcoma |
+| CDK4 | Amplification or point mutation | Glioblastoma, melanoma, sarcoma |
+| Cyclin D1 (CCND1) | Translocation or amplification | Mantle cell lymphoma, breast and oesophageal cancers |
 
-| Tumour suppressor gene | Function | Syndrome or tumour |
-|---|---|---|
-| RB | Inhibits G1/S transition | Retinoblastoma, osteosarcoma |
-| TP53 | Cell cycle arrest, DNA repair, apoptosis | Li-Fraumeni syndrome; most sporadic cancers |
-| APC | Inhibitor of Wnt signalling (degrades β-catenin) | Familial adenomatous polyposis |
-| NF1 | Inhibitor of RAS signalling | Neurofibromatosis type 1 |
-| PTEN | Inhibitor of PI3K/AKT | Cowden syndrome |
-| VHL | Degrades HIF1α | von Hippel–Lindau syndrome, renal cell carcinoma |
-| CDKN2A | p16 inhibits CDK4; p14 stabilises p53 | Familial melanoma |
-| BRCA1, BRCA2 | Repair of double-strand breaks | Familial breast and ovarian cancer |
-| WT1 | Transcription factor | Wilms tumour |
-| CDH1 | E-cadherin | Familial gastric cancer |
-| STK11 | Metabolic kinase | Peutz-Jeghers syndrome |
-| SMAD4 | TGF-β signalling | Pancreatic carcinoma, juvenile polyposis |
+**Tumour suppressor genes and the familial syndromes they cause:**
 
+| Tumour suppressor gene | Familial syndrome |
+|---|---|
+| RB | Familial retinoblastoma |
+| TP53 | Li-Fraumeni syndrome |
+| APC | Familial adenomatous polyposis |
+| NF1 | Neurofibromatosis type 1 |
+| PTEN | Cowden syndrome |
+| CDKN2A | Familial melanoma |
+| VHL | von Hippel-Lindau syndrome |
+| STK11 | Peutz-Jeghers syndrome |
+| CDH1 (E-cadherin) | Familial gastric cancer |
+| BRCA1 and BRCA2 | Familial breast and ovarian cancer |
+| WT1 | Familial Wilms tumour |
 
 ## What is Li-Fraumeni syndrome?
 
-Li-Fraumeni syndrome is an autosomal dominant cancer predisposition syndrome caused by inheritance of one mutated copy of the TP53 tumour suppressor gene.
+**Li-Fraumeni syndrome** occurs in individuals who inherit one mutated copy of the tumour suppressor gene **TP53** (on chromosome 17p13.1).
 
-The affected individual carries the first hit in every cell, so that only one further somatic hit in the remaining normal allele is required to abrogate p53 function. Such persons have a 25-fold greater chance of developing a malignant tumour by the age of 50 than the general population. In contrast to the narrow spectrum seen with germline RB mutations, the spectrum of tumours is broad; the most common are sarcomas, breast cancers, leukaemias, brain tumours and carcinomas of the adrenal cortex. The patients tend to develop cancer at younger ages and are more likely to have multiple primary tumours of different types. The syndrome illustrates the central position of p53, the "guardian of the genome", which is the most commonly mutated gene in human cancers, with loss-of-function mutations present in more than 50% of them, usually as somatic mutations of both alleles.
-
+- Only one additional hit in the remaining normal allele is needed to abrogate TP53 function.
+- They have a **25-fold** greater chance of developing a malignant tumour by age 50 than the general population.
+- The spectrum of tumours is broad. The most common are **sarcomas, breast cancers, leukaemias, brain tumours and carcinomas of the adrenal cortex**.
+- Affected persons often develop cancer at younger ages and are more likely to have multiple primary tumours of varying types.
 
 ## Which factor induces angiogenesis?
 
-Vascular endothelial growth factor (VEGF) is the principal factor that induces tumour angiogenesis, and its production is driven mainly by hypoxia through the transcription factor HIF1α; basic fibroblast growth factor (bFGF) also contributes.
+**Hypoxia** stabilises **HIF1α**, an oxygen-sensitive transcription factor that activates transcription of the pro-angiogenic cytokines **vascular endothelial growth factor (VEGF)** and **basic fibroblast growth factor (bFGF)**.
 
-Hypoxia stabilises HIF1α, which activates transcription of VEGF and bFGF and creates an angiogenic gradient that stimulates endothelial proliferation and guides new vessels towards the tumour. Gain-of-function mutations of RAS and MYC upregulate VEGF, while loss of p53 removes thrombospondin-1, an inhibitor, and releases the suppression of VEGF. Loss of VHL function stabilises HIF1α even under normal oxygen tension. VEGF is also supplied by infiltrating macrophages and other stromal cells, and the antibody bevacizumab, which neutralises VEGF, is used in the treatment of several cancers.
-
+Loss of p53, and gain-of-function mutations in RAS or MYC, also increase VEGF production.
 
 ## How does angiogenesis affect tumour growth?
 
-Angiogenesis supplies the tumour with oxygen and nutrients and removes waste, allowing it to grow beyond 1 to 2 mm, and it also provides tumour cells with access to the circulation, thereby promoting metastasis.
-
-1. **Growth.** Neovascularisation permits growth beyond the diffusion limit. Without it, tumours stay small or in situ in a dormant state.
-2. **Paracrine stimulation.** Proliferating endothelial cells secrete growth factors, such as insulin-like growth factors and PDGF, which stimulate the growth of adjacent tumour cells.
-3. **Metastasis.** The tumour vessels are structurally abnormal (leaky, dilated and haphazardly connected), and they give tumour cells ready access to the circulation, which favours metastasis.
-4. **Therapeutic target.** Inhibitors of VEGF prolong the course of several advanced cancers, although they are not curative.
-
+- A solid tumour cannot enlarge beyond **1 to 2 mm** in diameter unless it induces angiogenesis, because oxygen, nutrients and waste can diffuse only across that distance from existing vessels.
+- Early in their development most human tumours do not induce angiogenesis, so they remain small or in situ, possibly for years, until an **angiogenic switch** ends the quiescent stage.
+- New vessels supply nutrients and oxygen, and proliferating endothelial cells also stimulate growth of adjacent tumour cells by secreting growth factors such as insulin-like growth factors and PDGF.
+- Tumour vessels are leaky and dilated, with a haphazard pattern of connection.
+- Angiogenesis gives tumour cells ready access to these abnormal vessels, so it also contributes to **metastasis**.
+- Angiogenesis is thus an essential requirement for malignancy. VEGF inhibitors such as bevacizumab prolong the clinical course of several advanced cancers but are not curative.
 
 ## Cells involved in the anti-tumour immune mechanism.
 
-The principal effector cells of antitumour immunity are CD8⁺ cytotoxic T lymphocytes, aided by dendritic cells, CD4⁺ helper T cells, natural killer cells and activated macrophages.
-
-- **CD8⁺ cytotoxic T lymphocytes (CTLs)** are the main mediators. They recognise tumour neoantigens (from mutated genes, viral proteins, or overexpressed and aberrantly expressed proteins) presented on MHC class I molecules, and kill tumour cells directly and serially.
-- **Dendritic cells** ingest tumour cells or antigens and present them in draining lymph nodes, with costimulation, to initiate the CTL response.
-- **CD4⁺ T cells**, especially Th1 cells, support the response, and their abundance in tumour infiltrates predicts a better prognosis in some cancers, such as colorectal carcinoma.
-- **Natural killer (NK) cells**, activated by IL-2 and IL-15, can lyse tumour cells without prior sensitisation, including those that have lost MHC class I expression, and may represent a first line of defence.
-- **Macrophages**, activated by interferon-γ from T and NK cells, can be cytotoxic to tumour cells.
-
-Antibodies against tumour cells have little demonstrated protective role. The suppressive cells that oppose these effectors are regulatory T cells, myeloid-derived suppressor cells and alternatively activated (M2) macrophages.
-
+- **CD8⁺ cytotoxic T lymphocytes (CTLs)** are the principal mechanism of tumour eradication. They recognise tumour antigens presented by MHC class I molecules and kill tumour cells directly and serially.
+- **Dendritic cells** ingest tumour cells or released tumour antigens, migrate to draining lymph nodes and present the antigens to CD8⁺ T cells.
+- **Natural killer (NK) cells**, after activation with IL-2 and IL-15, can lyse a wide range of tumour cells, including those that have lost MHC class I expression, without prior sensitisation. They may constitute a first line of defence.
+- **CD4⁺ T cells**, especially Th1 cells, in tumour infiltrates are associated with a better prognosis in some cancers, such as colorectal carcinoma.
+- **Macrophages** activated by interferon-γ, which is secreted by T cells and NK cells, may kill tumour cells.
 
 ## What are the carcinogenic agents?
 
-Carcinogenic agents fall into three principal groups: chemicals, radiant energy (ultraviolet and ionising radiation) and microbial agents (oncogenic viruses and certain bacteria and parasites). All of them cause cancer by producing genetic damage or by stimulating the proliferation of cells that have been damaged.
-
-**1. Chemical carcinogens.** Many hundreds of chemicals are carcinogenic in animals. All initiating chemical carcinogens are highly reactive electrophiles that damage DNA. Direct-acting agents need no metabolic conversion and include alkylating and acylating agents, such as the anticancer drugs cyclophosphamide, chlorambucil and the nitrosoureas, which may themselves cause second cancers, usually acute myeloid leukaemia. Indirect-acting agents (procarcinogens) require metabolic conversion to ultimate carcinogens, usually by cytochrome P-450 monooxygenases, and include polycyclic aromatic hydrocarbons such as benzo[a]pyrene (in tobacco smoke, soot, and broiled or smoked meats), aromatic amines and azo dyes, the mould product aflatoxin B₁, and nitrosamines. Occupational carcinogens include asbestos, vinyl chloride, benzene, arsenic, nickel and chromium. Substances that stimulate proliferation of initiated cells (promoters), such as oestrogens, act in concert.
-
-**2. Radiation.** Ultraviolet B induces pyrimidine dimers in DNA and causes squamous cell carcinoma, basal cell carcinoma and melanoma of the skin, and ionising radiation (x-rays, γ-rays, and particulate radiation) causes DNA breaks and cross-links and is associated with leukaemias, and with carcinomas of the thyroid, breast and lung.
-
-**3. Microbial agents.** These include HPV, EBV, HBV, HCV, HTLV-1, HHV8 and Merkel cell polyomavirus, the bacterium Helicobacter pylori, and parasites such as Schistosoma haematobium and Opisthorchis viverrini.
-
-Chronic inflammation, hormones and tissue injury with regenerative proliferation act as important promoting influences, so that several of these factors usually operate together.
-
+1. **Chemical carcinogens**, which are direct-acting or indirect-acting.
+2. **Radiation**, as ultraviolet rays of sunlight and as ionising electromagnetic and particulate radiation.
+3. **Microbial agents**, which are oncogenic RNA and DNA viruses and the bacterium *Helicobacter pylori*.
 
 ## Types of chemical carcinogens.
 
-Chemical carcinogens are classified as direct-acting agents, which do not need metabolic activation, and indirect-acting agents (procarcinogens), which require conversion into ultimate carcinogens; tumour promoters form a third group, which stimulate proliferation of initiated cells but are not themselves carcinogenic.
+1. **Direct-acting carcinogens** do not require metabolic conversion to become carcinogenic. Most are weak carcinogens, but some are important because they are used as cancer chemotherapy (alkylating agents such as cyclophosphamide, chlorambucil and nitrosoureas), which may evoke a second cancer, usually acute myeloid leukaemia.
+2. **Indirect-acting carcinogens (procarcinogens)** require metabolic conversion to become active carcinogens, which are called ultimate carcinogens. Most chemical carcinogens act indirectly. They are metabolised by cytochrome P-450–dependent monooxygenases. Examples:
 
-| Type | Features | Examples |
-|---|---|---|
-| Direct-acting (initiators) | Active as such; usually weak carcinogens; some are cancer chemotherapy drugs that can induce second cancers | Alkylating agents (cyclophosphamide, chlorambucil, nitrosoureas); acylating agents; diepoxybutane; β-propiolactone |
-| Indirect-acting (procarcinogens) | Require metabolic activation, mostly through cytochrome P-450 enzymes, to become "ultimate carcinogens"; susceptibility depends on enzyme polymorphisms | Polycyclic aromatic hydrocarbons (benzo[a]pyrene, from tobacco smoke, grilled meats); aromatic amines and azo dyes (β-naphthylamine, benzidine); aflatoxin B₁; nitrosamines; vinyl chloride |
-| Tumour promoters | Not mutagenic themselves; induce proliferation and clonal expansion of initiated cells | Phorbol esters, hormones (oestrogen), chronic inflammation and tissue repair, certain drugs and dietary components |
+- **polycyclic hydrocarbons**, such as benzo[a]pyrene in soot and tobacco smoke, also produced by broiling or grilling meats and present in smoked meats and fish
+- **aromatic amines and azo dyes**
+- **aflatoxin B₁**, produced by the mould *Aspergillus*, which is linked to hepatocellular carcinoma
+- nitrosamines, formed from nitrites used as food preservatives, which are suspected carcinogens
 
-Other chemical agents include metals and natural products: arsenic, nickel and chromium (lung), asbestos (mesothelioma and lung) and aflatoxin from Aspergillus (hepatocellular carcinoma).
-
+3. **Tumour promoters** are not tumorigenic by themselves. They stimulate proliferation of initiated cells, for example oestrogen and tissue repair.
 
 ## Steps of carcinogenesis.
 
-Chemical carcinogenesis proceeds in stages: initiation, in which a cell sustains permanent DNA damage; promotion, in which the initiated cell is driven to proliferate and expand clonally; and progression, in which further mutations accumulate in the proliferating cells until a fully malignant clone emerges.
+Carcinogenesis is a **multistep process** resulting from the accumulation of complementary mutations in a stepwise fashion over time.
 
-Initiation is rapid and irreversible and results from exposure to a sufficient dose of a carcinogen. Promotion by itself does not produce tumours, but induces tumours to arise from initiated cells, and it must follow initiation, not precede it. Driven to proliferate, subclones of the initiated cells acquire additional mutations, and eventually a cancerous clone possessing all the hallmarks emerges, which then continues to evolve under Darwinian selection (tumour progression). At the molecular level, carcinogenesis is a multistep process in which a series of complementary driver mutations in proto-oncogenes, tumour suppressor genes, apoptosis-regulating genes and DNA repair genes accumulate over time. The colon adenoma–carcinoma sequence shows this stepwise pattern, with early mutations in APC and late mutations in TP53.
+1. **Initiation.** Exposure of a cell to a sufficient dose of a carcinogenic agent causes permanent DNA damage (mutation). The first driver mutation that starts a cell on the path to malignancy is the initiating mutation.
+2. **Promotion.** Promoters induce proliferation and clonal expansion of the initiated cells, producing a preneoplastic clone.
+3. **Progression.** Driven to proliferate, subclones of the initiated cells acquire additional driver mutations, and eventually a cancerous clone with all the hallmarks of cancer emerges. Mutations that destabilise the genome greatly increase the number of mutations.
 
+In colon carcinoma, adenomas progressively enlarge and undergo malignant transformation. Certain mutations occur early, such as mutations in the tumour suppressor gene **APC**, and others late, such as mutations in **TP53**.
+
+By the time a tumour comes to clinical attention it has a mass of about 1 g, or about 10⁹ cells, and has gone through a minimum of 30 cell doublings.
 
 ## What do you mean by initiation?
 
-Initiation is the first step of carcinogenesis, in which exposure of a cell to a sufficient dose of a carcinogenic agent causes permanent DNA damage (mutation), rendering the cell and its progeny susceptible to subsequent neoplastic transformation.
+**Initiation** results from exposure of cells to a sufficient dose of a carcinogenic agent. It causes **permanent DNA damage (mutations)**.
 
-Initiating agents are highly reactive electrophiles that react with nucleophilic atoms of DNA, and cause nonlethal damage that is repaired in an error-prone fashion, so that the mutation is fixed and transmitted to daughter cells. The process is irreversible and rapid. An initiated cell is not yet neoplastic and does not form a tumour by itself, since additional events are needed. Initiation does not target particular genes exclusively; mutations occur throughout the genome, and cells that by chance sustain damage to the "usual suspects", such as RAS and TP53, gain a selective advantage. In the molecular scheme, the first driver mutation that starts a cell on the path to malignancy is the initiating mutation, which is maintained in all cells of the subsequent cancer.
-
+Initiating chemical carcinogens are highly reactive electrophiles that inflict nonlethal damage to DNA, which is repaired in some error-prone fashion, and the mutated cell passes the DNA lesions to its daughter cells. Initiation alone is not enough for a tumour to develop.
 
 ## What do you mean by promotion?
 
-Promotion is the second step of carcinogenesis, in which agents called promoters stimulate the proliferation and clonal expansion of initiated cells, so that tumours arise; promoters are not tumourigenic by themselves.
+**Promoters** can induce tumours to arise from initiated cells, but they are not tumorigenic by themselves. Application of promoters leads to proliferation and **clonal expansion** of initiated (mutated) cells, producing a preneoplastic clone.
 
-Promoters do not damage DNA directly, and do not affect cells that have not been initiated. By driving the initiated cells to divide, they cause clonal expansion of a preneoplastic population and increase the chance that these cells will sustain additional mutations, culminating in a cancerous clone with all the hallmark characteristics. Promotion in its early stage is reversible, in contrast to initiation. Many factors that contribute to human cancer act as promoters because they stimulate proliferation, for example unopposed oestrogenic stimulation of the endometrium and breast, and the chronic inflammation and regenerative proliferation associated with tissue repair and fibrosis, as in inflammatory bowel disease, chronic hepatitis and Barrett oesophagus. Environmental irritants such as airborne particulate matter probably promote cancer by fostering the outgrowth of cells bearing oncogenic mutations. The phorbol esters are the classic experimental promoters on mouse skin.
-
+Further proliferation induces additional mutations and the emergence of a malignant tumour. Factors that stimulate proliferation act as tumour promoters, for example unopposed oestrogenic stimulation of the endometrium and breast, and chronic inflammatory processes associated with tissue repair and fibrosis.
 
 ## Examples of chronic inflammation that cause risk of cancer.
 
-Examples include chronic hepatitis B or C leading to hepatocellular carcinoma, Helicobacter pylori gastritis leading to gastric carcinoma and MALT lymphoma, inflammatory bowel disease leading to colorectal carcinoma, and Barrett oesophagus leading to oesophageal adenocarcinoma.
-
-Virchow proposed a link between chronic inflammation and cancer in 1863. The associations include:
-
-| Condition | Associated neoplasm | Agent |
-|---|---|---|
-| Chronic hepatitis | Hepatocellular carcinoma | HBV, HCV |
-| Gastritis, peptic ulcer | Gastric adenocarcinoma, MALT lymphoma | H. pylori |
-| Inflammatory bowel disease | Colorectal carcinoma | — |
-| Reflux oesophagitis, Barrett oesophagus | Oesophageal carcinoma | Gastric acid |
-| Chronic cervicitis | Cervical carcinoma | HPV |
-| Chronic cystitis | Bladder carcinoma | Schistosoma |
-| Chronic cholecystitis | Gallbladder carcinoma | Bile acids, bacteria, gallstones |
-| Chronic pancreatitis | Pancreatic carcinoma | Alcohol, germline mutations |
-| Opisthorchis infection, cholangitis | Cholangiocarcinoma | Liver flukes |
-| Asbestosis, silicosis | Mesothelioma, lung carcinoma | Asbestos, silica |
-| Osteomyelitis | Carcinoma in draining sinuses | Bacterial infection |
-| Sjögren syndrome, Hashimoto thyroiditis | MALT lymphoma | — |
-| Lichen sclerosus | Vulvar squamous cell carcinoma | — |
-
-Inflammation promotes cancer through compensatory proliferation of cells that repairs the damage, which increases the pool of tissue stem cells and exposes dividing cells to mutations. Activated immune cells also produce reactive oxygen species that damage DNA, and mediators that promote cell survival even in the face of genomic damage.
-
+| Chronic inflammatory condition | Associated neoplasm |
+|---|---|
+| Asbestosis, silicosis | Mesothelioma, lung carcinoma |
+| Inflammatory bowel disease | Colorectal carcinoma |
+| Lichen sclerosus | Vulval squamous cell carcinoma |
+| Pancreatitis | Pancreatic carcinoma |
+| Chronic cholecystitis | Gallbladder carcinoma |
+| Reflux oesophagitis, Barrett oesophagus | Oesophageal carcinoma |
+| Sjögren syndrome, Hashimoto thyroiditis | Extranodal marginal zone (MALT) lymphoma |
+| Opisthorchis (liver fluke) cholangitis | Cholangiocarcinoma, colon carcinoma |
+| Gastritis and ulcers (*Helicobacter pylori*) | Gastric adenocarcinoma, MALT lymphoma |
+| Hepatitis (hepatitis B and C viruses) | Hepatocellular carcinoma |
+| Osteomyelitis | Carcinoma in draining sinuses |
+| Chronic cervicitis (human papillomavirus) | Cervical carcinoma |
+| Chronic cystitis (schistosomiasis) | Bladder carcinoma |
 
 ## Oncogenic infective agents (viruses/bacteria) and the cancers they produce.
 
-The oncogenic microbes include HPV (cervical and anogenital squamous carcinoma), EBV (Burkitt lymphoma, nasopharyngeal carcinoma), HBV and HCV (hepatocellular carcinoma), HTLV-1 (adult T-cell leukaemia/lymphoma), HHV8 (Kaposi sarcoma), Merkel cell polyomavirus (Merkel cell carcinoma), and the bacterium Helicobacter pylori (gastric adenocarcinoma and MALT lymphoma).
-
-| Agent | Type | Associated cancers |
-|---|---|---|
-| HPV types 16, 18 (high risk) | DNA virus | Squamous cell carcinoma of cervix, anogenital region, oropharynx (tonsil); (types 6, 11 cause benign genital warts) |
-| EBV | DNA virus (herpes) | Burkitt lymphoma; nasopharyngeal carcinoma; Hodgkin lymphoma; B-cell lymphomas in immunosuppressed patients; some gastric carcinomas |
-| HBV | DNA virus | Hepatocellular carcinoma |
-| HCV | RNA virus | Hepatocellular carcinoma |
-| HHV8 (KSHV) | DNA virus (herpes) | Kaposi sarcoma, primary effusion lymphoma |
-| Merkel cell polyomavirus | DNA virus | Merkel cell carcinoma |
-| HTLV-1 | RNA retrovirus | Adult T-cell leukaemia/lymphoma |
-| Helicobacter pylori | Bacterium | Gastric adenocarcinoma, gastric MALT lymphoma |
-| Schistosoma haematobium | Parasite | Bladder (squamous) carcinoma |
-| Opisthorchis viverrini | Liver fluke | Cholangiocarcinoma |
-
-About 15% of all cancers worldwide are caused directly or indirectly by infectious agents, the burden being roughly three times greater in low-resource nations. HIV is not directly oncogenic, but through T-cell immunodeficiency it predisposes to EBV-related lymphomas, HHV8-related Kaposi sarcoma, and HPV-related cancers.
-
+| Agent | Cancer |
+|---|---|
+| **HTLV-1** (RNA retrovirus) | Adult T-cell leukaemia/lymphoma |
+| **Human papillomavirus** types 16 and 18 | Squamous cell carcinomas of the cervix, anogenital region and head and neck (oropharynx) |
+| **Epstein-Barr virus** | Burkitt lymphoma, B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma |
+| **Hepatitis B and C viruses** | Hepatocellular carcinoma (70 to 85% worldwide) |
+| **Human herpesvirus 8** | Kaposi sarcoma |
+| **Merkel cell polyomavirus** | Merkel cell carcinoma |
+| ***Helicobacter pylori*** | Gastric adenocarcinoma, gastric B-cell lymphoma (MALToma) |
 
 ## What do you mean by oncogene?
 
@@ -5048,84 +5011,66 @@ What these have in common is increased cellular replication, which creates a "fe
 
 ## Clinical features of tumour.
 
-The clinical effects of a tumour depend chiefly on its location and behaviour and include local effects (mass effect, pressure and obstruction, ulceration, bleeding and infection), hormonal effects, cancer cachexia and paraneoplastic syndromes, in addition to the effects of metastasis.
+Any tumour, even a benign one, may cause morbidity and mortality.
 
-Any tumour, even a benign one, may cause morbidity and mortality, although malignant tumours are naturally more threatening.
+1. **Local effects.** Location is a critical determinant of the clinical effects.
 
-**Local effects.** Location is a critical determinant. Tumours may impinge on vital tissues and impair their function, cause death of the involved tissue, and provide a nidus for infection. A small (1 cm) benign pituitary adenoma can compress and destroy the surrounding normal gland and cause hypopituitarism, and cancers arising in or metastatic to an endocrine gland may cause endocrine insufficiency. Neoplasms of the gut, benign or malignant, can cause obstruction as they enlarge, and sometimes peristalsis telescopes the tumour and its segment into the downstream bowel, producing intussusception. Symptoms produced by position can even be lifesaving, as when a pancreatic cancer obstructs the bile duct early and produces jaundice. Erosive growth, or the expansile pressure of a tumour on a natural surface such as the skin or gut mucosa, may cause ulceration, secondary infection and bleeding; melaena and haematuria are characteristic of neoplasms of the gut and urinary tract respectively. Pain is usually a late feature.
+- Tumours may impinge on vital tissues and impair their function, cause death of involved tissues, and provide a nidus for infection.
+- A small pituitary adenoma can compress and destroy the surrounding gland and lead to hypopituitarism. Cancers within or metastatic to an endocrine gland may cause endocrine insufficiency.
+- Neoplasms in the gut may cause obstruction and sometimes intussusception.
+- Erosive growth or pressure on skin or mucosa may cause ulceration, secondary infection and bleeding, for example melaena and haematuria in neoplasms of the gut and urinary tract.
 
-**Hormonal effects.** Benign and malignant neoplasms of endocrine glands can produce clinical problems by secreting hormones; this is more typical of benign, well-differentiated tumours. A benign β-cell adenoma of the pancreatic islets less than 1 cm in diameter may produce enough insulin to cause fatal hypoglycaemia.
-
-**Cancer cachexia** is a progressive loss of body mass with weakness, anorexia and anaemia.
-
-**Paraneoplastic syndromes** are symptom complexes that cannot be explained by local or metastatic spread or by hormones native to the tissue of origin, and they may be the earliest manifestation of an occult cancer.
-
-**Effects of metastasis,** and of general features such as fever, anaemia and thrombotic tendency.
-
+2. **Hormonal effects.** Neoplasms of endocrine glands may produce hormones. This is more typical of benign tumours. For example, a benign β-cell adenoma of the pancreatic islets less than 1 cm in diameter may produce enough insulin to cause fatal hypoglycaemia.
+3. **Cancer cachexia.**
+4. **Paraneoplastic syndromes.**
 
 ## What is cancer cachexia?
 
-Cancer cachexia is a hypercatabolic state defined by a loss of muscle mass, with or without loss of fat, that cannot be explained by diminished food intake.
+**Cancer cachexia** is a hypercatabolic state defined by a loss of muscle mass (with or without loss of fat) that cannot be explained by diminished food intake.
 
-It occurs in about 50% of cancer patients, most commonly in those with advanced cancers of the gastrointestinal tract, pancreas and lung, and is responsible for about 30% of cancer deaths. Clinically it is a highly debilitating condition characterised by extreme weight loss, fatigue, muscle atrophy, anaemia, anorexia and oedema, and death is generally the consequence of atrophy of the diaphragm and other respiratory muscles. In contrast to simple starvation, in which the body conserves lean tissue, there is loss of skeletal muscle protein, and the patient does not respond adequately to nutritional supplementation. Inflammatory cytokines act directly on skeletal muscle cells and increase degradation of the major structural proteins, such as myosin heavy chain, through ubiquitination followed by proteasomal proteolysis. Similar cachectic states can occur in patients without cancer, as in chronic disseminated infections and AIDS.
-
+- It occurs in about **50%** of cancer patients, most commonly in advanced gastrointestinal, pancreatic and lung cancers, and is responsible for about **30%** of cancer deaths.
+- It is characterised by extreme weight loss, fatigue, muscle atrophy, anaemia, anorexia and oedema.
+- Mortality is generally the consequence of atrophy of the diaphragm and other respiratory muscles.
 
 ## Factors that influence cancer cachexia.
 
-The precise cause of cancer cachexia is not known, but the main factors are inflammatory cytokines, notably tumour necrosis factor (TNF), interleukin-1 (IL-1) and interleukin-6 (IL-6), together with growth differentiation factor-15 (GDF-15), anorexia, and the altered metabolism of the host and tumour.
+The precise causes are not known.
 
-- **Inflammatory cytokines (TNF, IL-1, IL-6).** They are produced by the tumour and by host immune cells. Administration of any of them to mice induces cachexia, and tumour-bearing mice lacking the TNF receptor are protected. Cachexia in patients correlates with higher levels of inflammatory cytokines, and they stimulate proteolysis of skeletal muscle through the ubiquitin–proteasome pathway.
-- **GDF-15.** A protein secreted by tumour cells and macrophages, it binds to the receptor GFRAL in the brainstem and suppresses appetite. Inhibitors of GDF-15 and GFRAL block cachexia in animal models, and GDF-15 inhibitors have suppressed cachexia in early clinical trials.
-- **Anorexia and reduced intake**, which are due to the tumour and the cytokines, although caloric intake alone does not explain the wasting.
-- **Hypermetabolism and altered metabolism** with increased energy expenditure.
-- **Tumour type and burden.** Cachexia is commonest with advanced gastrointestinal, pancreatic and lung cancers.
-
-Therapies directed against individual cytokines, such as TNF, have not been effective in reversing cachexia, which suggests that a multiplicity of factors is involved.
-
+- **Inflammatory mediators**, particularly **TNF, IL-1 and IL-6**, have important roles. They act directly on skeletal muscle cells, increasing degradation of major structural proteins such as myosin heavy chain through ubiquitination followed by proteolysis in the proteasome.
+- **Growth differentiation factor-15 (GDF-15)**, a protein secreted by tumour cells and macrophages, binds to the receptor GFRAL in the brainstem to suppress appetite.
+- A multiplicity of factors is involved, because therapies directed against individual cytokines have not been effective in reversing cachexia.
 
 ## Define paraneoplastic syndrome.
 
-Paraneoplastic syndromes are symptom complexes in individuals with cancer that cannot be explained by tumour spread or by release of hormones that are indigenous to the tumour's cell of origin.
-
-They are caused by substances produced by the tumour, such as hormones, hormone-like peptides, cytokines or immune mediators, or by immune reactions to the tumour. They are important to recognise for three reasons. First, they may be the earliest manifestation of an occult neoplasm. Second, in affected patients they can cause significant clinical problems and may even be lethal. Third, they may mimic metastatic disease and therefore confound treatment.
-
+**Paraneoplastic syndromes** are symptom complexes in individuals with cancer that cannot be explained by tumour spread, or by the release of hormones indigenous to the tissue from which the tumour arose.
 
 ## Incidence of paraneoplastic syndrome in cancer patients.
 
-Paraneoplastic syndromes occur in about 10% of persons with cancer.
+Paraneoplastic syndromes occur in about **10%** of persons with cancer.
 
+They are important to recognise because they:
+
+- may be the earliest manifestation of an occult neoplasm
+- can cause significant clinical problems and may even be lethal
+- may mimic metastatic disease and therefore confound treatment
 
 ## Paraneoplastic syndromes with examples of associated cancers.
 
-The commonest paraneoplastic syndromes are the endocrinopathies, such as Cushing syndrome and hypercalcaemia, followed by neuromuscular, dermatologic, osseous and vascular or haematologic syndromes, each associated with particular cancers; for example, small cell carcinoma of the lung causes Cushing syndrome, and squamous cell carcinoma of the lung causes hypercalcaemia.
-
 | Syndrome | Associated cancer | Mechanism |
 |---|---|---|
-| **Endocrinopathies** (ectopic hormone production) | | |
-| Cushing syndrome | Small cell carcinoma of lung, pancreatic carcinoma, neural tumours | ACTH or ACTH-like peptide |
-| Syndrome of inappropriate ADH secretion | Small cell carcinoma of lung, intracranial neoplasms | ADH or atrial natriuretic hormones |
-| Hypercalcaemia | Squamous cell carcinoma of lung, breast, renal and ovarian carcinoma, adult T-cell leukaemia/lymphoma | Parathyroid hormone–related protein (PTHrP), TGF-α, TNF, IL-1 |
-| Hypoglycaemia | Ovarian carcinoma, fibrosarcoma | Insulin or insulin-like substance |
-| Polycythaemia | Renal carcinoma, cerebellar haemangioma, hepatocellular carcinoma | Erythropoietin |
-| Osteomalacia | Phosphaturic mesenchymal tumour | FGF-23 |
-| **Nerve and muscle** | | |
-| Myasthenic syndromes (myasthenia gravis with thymoma; Lambert–Eaton syndrome with small cell carcinoma) | Bronchogenic carcinoma, thymic neoplasms | Immunologic |
-| Peripheral neuropathy, cerebellar degeneration, encephalitis | Breast carcinoma and others | Immunologic |
-| **Dermatologic** | | |
-| Acanthosis nigricans | Gastric, lung and uterine carcinoma | Immunologic; EGF-like secretion |
-| Dermatomyositis | Bronchogenic and breast carcinoma | Immunologic |
-| **Osseous and soft tissue** | | |
-| Hypertrophic osteoarthropathy and clubbing | Bronchogenic carcinoma, thymic neoplasms | Unknown |
-| **Vascular and haematologic** | | |
-| Migratory thrombophlebitis (Trousseau phenomenon) | Pancreatic and bronchogenic carcinoma | Tumour products (mucins) that activate clotting |
-| Disseminated intravascular coagulation | Acute promyelocytic leukaemia, prostatic carcinoma | Tumour products activating clotting |
-| Nonbacterial thrombotic endocarditis | Advanced mucin-secreting adenocarcinomas | Hypercoagulability |
-| Red cell aplasia | Thymoma, large granular lymphocytic leukaemia | Immunologic |
-| **Others** | | |
-| Nephrotic syndrome | Various cancers | Tumour antigens, immune complexes |
-
-Cushing syndrome is the commonest paraneoplastic endocrinopathy, about 50% of cases being associated with lung carcinoma, chiefly small cell type; hypercalcaemia is probably the most common paraneoplastic syndrome overall, and symptomatic hypercalcaemia is more often related to cancer than to hyperparathyroidism.
-
+| Cushing syndrome | Small cell carcinoma of lung | ACTH or ACTH-like substance |
+| Syndrome of inappropriate antidiuretic hormone secretion | Small cell carcinoma of lung, intracranial neoplasms | Antidiuretic hormone or atrial natriuretic hormones |
+| Hypercalcaemia | Squamous cell carcinoma of lung, breast carcinoma | Parathyroid hormone–related protein, TGF-α, TNF, IL-1 |
+| Hypoglycaemia | Ovarian carcinoma | Insulin or insulin-like substance |
+| Polycythaemia | Renal carcinoma | Erythropoietin |
+| Myasthenia and disorders of the central and peripheral nervous system | Bronchogenic carcinoma, breast carcinoma | Immunologic |
+| Acanthosis nigricans | Gastric carcinoma | Immunologic; secretion of epidermal growth factor |
+| Dermatomyositis | Bronchogenic carcinoma | Immunologic |
+| Hypertrophic osteoarthropathy and clubbing of the fingers | Bronchogenic carcinoma | Unknown |
+| Venous thrombosis (Trousseau phenomenon) | Pancreatic carcinoma, bronchogenic carcinoma | Tumour products that activate clotting |
+| Disseminated intravascular coagulation | Acute promyelocytic leukaemia, prostatic carcinoma | Tumour products that activate clotting |
+| Red cell aplasia | Thymic neoplasms | Immunologic |
+| Nonbacterial thrombotic endocarditis | Advanced mucin-secreting adenocarcinomas | Not specified in the textbook |
 
 ## Grading of cancer.
 
