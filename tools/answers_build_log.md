@@ -306,3 +306,8 @@ Sources: the site textbook (Chapter 13; Chapter 14 for the definition and classi
 
 ### Housekeeping
 - Progress file lists 580 questions done (530 before this session, plus 26 in batch 1, plus 24 in batch 2). 555 remain.
+
+### Session 9 end checks
+- build.py run twice: index.html byte-identical (md5 387f8c77dd947b9522097424cb491ff6).
+- VERSION in sw.js bumped from v145 to v146; build.py, gen_manifests.py and build.py run again.
+- tools/tests/test_site.py: 34 tests, all passed.
