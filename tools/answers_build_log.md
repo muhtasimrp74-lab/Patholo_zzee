@@ -590,3 +590,26 @@ Previously empty and now written: "20-year-old woman with a free, movable breast
 - Endometrial carcinoma, confirm: only biopsy or curettage and mismatch repair testing are given; no ultrasonography criteria (endometrial thickness) are in the textbook.
 - Classify ovarian tumours: the sex cord–stromal list is given only as granulosa cell tumour; the full textbook table is partly illegible in the source file.
 - Not written this session (outside sources still to be gathered): all semen and male infertility questions (work-list items 47 to 55), heat coagulation test, reducing substances in urine, Benedict's test, hyperuricaemia causes and significance, renal glycosuria (two questions) and haematuria (three questions): 20 questions in all.
+
+## Session 18, batch 1 (work-list questions 1 to 19, Chapters 20 and 21, outside sources)
+
+None of these topics is in the site textbook, so every answer in this batch uses outside sources.
+
+| Question | Source | URL |
+|---|---|---|
+| Semen collection, normal findings, semen analysis short note, indications, infertility laboratory work-up, hormones in male infertility, causes of azoospermia | StatPearls "Semen Analysis" (WHO 2010 lower reference limits) | https://www.ncbi.nlm.nih.gov/books/NBK564369/ |
+| Oligospermia, azoospermia (definitions) | Urology Textbook, "Semen Analysis: Technique and Normal Values" | https://www.urology-textbook.com/semen-analysis |
+| Azoospermia causes (transient azoospermia; cystic fibrosis, Klinefelter syndrome, vasectomy) | PMC "The importance of semen analysis in the context of azoospermia" | https://pmc.ncbi.nlm.nih.gov/articles/PMC3583176 |
+| What is renal glycosuria? / Why is sugar present? | StatPearls "Physiology, Glycosuria"; PMC "Glucosuria Is Not Always Due to Diabetes" | https://ncbi.nlm.nih.gov/books/NBK557441 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC7953860/ |
+| Haematuria short note, causes, microscopic haematuria | StatPearls "Gross and Microscopic Hematuria" | https://www.ncbi.nlm.nih.gov/books/NBK534213/ |
+| Heat coagulation test | Lecture and laboratory notes (not a standard textbook): biologynotesonline.com heat and acetic acid test page; Al-Zahraa University chemical examination of urine lecture | https://biologynotesonline.com/heat-and-acetic-acid-test-for-proteinuria-principle-procedure-result-uses/ |
+| Reducing substances in urine | Practical urine examination notes (slideshare) | https://www.slideshare.net/slideshow/urine-examination-for-practical-exam-pptx/280083072 |
+| Benedict's test | HiMedia Benedict's Qualitative Reagent data sheet; Mahatma Gandhi Kashi / CSJM University study material for the grading table | https://www.himedialabs.com/media/TD/R002.pdf ; https://gyansanchay.csjmu.ac.in/wp-content/uploads/2022/10/Benedicts-test.pdf |
+| Raised serum uric acid; causes of hyperuricaemia | StatPearls "Hyperuricemia"; WikEM "Hyperuricemia" for the drug and alcohol causes | https://www.ncbi.nlm.nih.gov/books/NBK459218/ ; https://wikem.org/wiki/Hyperuricemia |
+
+### Points left out and decisions needed
+- Hormones for infertility in the female: no female hormone source was read, so only the male hormones are given. Please decide whether to add a source (for example StatPearls "Female Infertility").
+- Heat coagulation test, reducing substances and Benedict's test: no standard textbook, StatPearls or WHO page was found for the bench procedure; lecture and manufacturer notes were used. Please confirm they are acceptable or name a preferred source.
+- Semen: the indications are only what StatPearls and the Urology Textbook state (male infertility assessment and planning assisted fertilisation); post-vasectomy checks were not found in the sources read, so they are not stated.
+- Haematuria short note: no textbook explanation of mechanism was found beyond the StatPearls pathophysiology paragraph; it is not repeated.
+- Hyperuricaemia causes: gout-related causes such as inborn enzyme defects, cell turnover states and cytotoxic therapy were not found in the snippets read, so they are not stated.

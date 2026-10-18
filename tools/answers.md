@@ -11173,55 +11173,70 @@ Tumours of the kidney are classified as follows.
 
 ## Write a short note on haematuria.
 
-**Definition.** Haematuria is the presence of an abnormal number of red blood cells in the urine. It may be macroscopic (gross), when the urine is visibly coloured, or microscopic, when red cells are found only on dipstick testing or microscopy of the sediment (conventionally three or more red cells per high-power field).
+**Definition.** Haematuria is the abnormal presence of blood in the urine. It is **gross** (visible blood) or **microscopic** (red blood cells found only on microscopic urinalysis, with normal-looking urine).
 
-**Classification.** By the timing of bleeding in the urinary stream, haematuria is initial (urethral or prostatic origin), terminal (bladder neck or prostate) or total (bladder, ureter or kidney). By the site of origin it is glomerular, when the red cells pass through damaged glomerular capillaries, or non-glomerular (urological), when bleeding arises from the tubules, the renal pelvis or the lower urinary tract.
+**Causes.** Glomerular or nonglomerular (see the causes of haematuria).
 
-**Causes.**
+**Features**
 
-- Glomerular: acute glomerulonephritis, IgA nephropathy, Alport syndrome, thin basement membrane disease, lupus nephritis.
-- Renal, non-glomerular: pyelonephritis, renal calculi, tumours (renal cell carcinoma, Wilms tumour), polycystic kidney disease, tuberculosis, papillary necrosis, trauma, infarction.
-- Lower urinary tract: ureteric and bladder stones, cystitis, bladder carcinoma, prostatic hyperplasia and carcinoma, urethritis, schistosomiasis.
-- Systemic: bleeding disorders and anticoagulants, sickle cell disease and trait, strenuous exercise.
+- **Gross:** red, pink or tea-coloured urine
+- **Microscopic haematuria:** 3 or more red blood cells per high-power field on microscopy of the urine
+- Glomerular bleeding shows **proteinuria**, **dysmorphic red cells** or **red cell casts**
+- Nonglomerular bleeding shows normal red cells, without proteinuria or casts
 
-**Distinguishing glomerular from non-glomerular bleeding.** Glomerular haematuria is characterised by **dysmorphic red cells** (acanthocytes), **red cell casts**, and accompanying proteinuria; the urine is brown, smoky or cola-coloured. Non-glomerular haematuria shows normal-shaped (isomorphic) red cells, the urine is bright red, clots may be present, and there are no red cell casts.
+**Investigation**
 
-**Investigation.** Urine microscopy and dipstick, urine culture, urine cytology for malignant cells, serum creatinine, a coagulation profile, ultrasonography and CT or intravenous urography of the urinary tract, and cystoscopy, with renal biopsy for suspected glomerular disease.
+- **Urinalysis** is the first test; a positive dipstick must be confirmed by microscopy of the urine sediment
+- Absence of red cells in a strongly dipstick-positive sample suggests myoglobinuria or haemoglobinuria
+- Cystoscopy and CT urogram are used to exclude **urothelial or renal malignancy**
+- A renal biopsy is needed when a glomerular source is likely
 
-**Significance.** Painless haematuria is the commonest presentation of bladder cancer and an important clue to renal cell carcinoma; its causes range from trivial to life threatening.
-
+**Importance.** Haematuria is the presenting symptom in most bladder cancers and is often the earliest sign of a renal neoplasm, so malignancy must always be excluded.
 
 ## Enumerate the important causes of haematuria.
 
-The important causes of haematuria are:
+**Glomerular**
 
-**A. Renal**
+- Alport syndrome
+- IgA nephropathy (Berger disease)
+- Poststreptococcal (postinfectious) glomerulonephritis
+- Crescentic and rapidly progressive glomerulonephritis
+- Lupus nephritis
+- Goodpasture syndrome
+- Thin basement membrane disease
+- Polycystic kidney disease
 
-1. Glomerular: acute poststreptococcal and other glomerulonephritis, IgA nephropathy, rapidly progressive glomerulonephritis, lupus nephritis, Alport syndrome and thin basement membrane disease, Goodpasture syndrome
-2. Tubulointerstitial and infective: acute pyelonephritis, tuberculosis of the kidney, acute interstitial nephritis, papillary necrosis
-3. Neoplastic: renal cell carcinoma, Wilms tumour, urothelial carcinoma of the renal pelvis, angiomyolipoma
-4. Cystic and vascular: polycystic kidney disease, medullary sponge kidney, renal infarction, renal vein thrombosis, arteriovenous malformation
-5. Calculi and trauma
+**Nonglomerular**
 
-**B. Ureter, bladder, prostate and urethra**
-
-1. Ureteric and bladder calculi
-2. Cystitis (bacterial, tuberculous, schistosomal, radiation- or drug-induced)
-3. Bladder tumours
-4. Benign prostatic hyperplasia, prostate cancer, prostatitis
-5. Urethritis, urethral stricture and trauma, catheterisation
-
-**C. Systemic and miscellaneous**
-Bleeding diatheses (thrombocytopenia, haemophilia), anticoagulant therapy, sickle cell disease and trait, infective endocarditis (emboli), malignant hypertension, and strenuous exercise.
-
+- Urinary tract infection (cystitis, urethritis, prostatitis)
+- Urolithiasis and nephrolithiasis
+- Bladder and urothelial cancer, renal cell carcinoma, prostate cancer
+- Benign prostatic hyperplasia
+- Trauma and instrumentation of the urinary tract
+- Haemorrhagic cystitis and radiation cystitis
+- Sickle cell disease (papillary necrosis), thrombocytopenia and coagulopathies
+- Drugs such as cyclophosphamide and ifosfamide
+- Schistosomiasis in endemic regions
+- Strenuous exercise
 
 ## Write a short note on microscopic haematuria.
 
-Microscopic haematuria is the presence of red blood cells in the urine in excess of normal that can be detected only by dipstick or by microscopic examination of the urinary sediment, the urine appearing normal to the naked eye. It is conventionally defined as three or more red cells per high-power field, ideally confirmed on repeated, properly collected specimens, since transient haematuria may follow exercise, menstruation, fever or trauma.
+**Definition.** Microscopic haematuria is the detection of 3 or more red blood cells per high-power field on microscopic urinalysis, without an apparent cause, while the urine looks normal.
 
-The first step is to determine its source. Dysmorphic red cells, red cell casts and accompanying proteinuria indicate a glomerular origin; uniformly shaped red cells without casts indicate bleeding from the urinary tract. Glomerular causes include IgA nephropathy, thin basement membrane disease, Alport syndrome and mild or resolving glomerulonephritis, which typically present as isolated urinary abnormalities. Non-glomerular causes include calculi, infection, tumours, polycystic disease, benign prostatic hyperplasia, and sickle cell trait.
+**Types**
 
-The evaluation comprises urine microscopy, culture and cytology, serum creatinine, assessment of proteinuria, ultrasonography and further imaging, cystoscopy in patients at risk of urothelial malignancy, particularly older adults and smokers, and renal biopsy when a glomerular cause is suspected. Microscopic haematuria is often asymptomatic, but it can be the only early sign of serious disease such as bladder or renal cancer, or of progressive glomerular disease, and it should never be dismissed without evaluation.
+| Type | Meaning |
+|---|---|
+| **Asymptomatic, no proteinuria** | Normal red cells; possible urothelial malignancy |
+| **Asymptomatic with proteinuria** | Dysmorphic red cells; glomerular disease |
+| **Symptomatic** | Infection, prostatitis or benign prostatic hyperplasia |
+
+**Investigation**
+
+- A dipstick alone does not make the diagnosis; **microscopy of the urine sediment** must confirm it
+- Blood from recent urological procedures, infection, or rectal or vaginal bleeding must be excluded
+- Patients are placed in low, intermediate or high risk groups for urothelial cancer by age, smoking history and the number of red cells per high-power field
+- Higher risk patients need **cystoscopy** and a **CT urogram**; a renal biopsy may be needed in glomerular haematuria
 
 ## What do you mean by massive proteinuria?
 
@@ -11253,21 +11268,18 @@ Massive proteinuria is caused by derangement of the glomerular capillary wall, w
 
 ## How do you perform the heat coagulation test of urine?
 
-**Principle.** Heat denatures and coagulates the proteins in urine, which appear as turbidity. Phosphates and carbonates of the urine, which are also precipitated by heat, are dissolved by dilute acetic acid, whereas coagulated protein is not, so persistence of turbidity after acidification establishes the presence of protein.
+**Principle.** Heat in an acid medium denatures and precipitates the proteins of the urine, which appear as turbidity.
 
 **Procedure**
 
-1. The urine must be clear; a cloudy specimen is centrifuged or filtered. Its reaction is tested, and if it is neutral or alkaline it is made faintly acid by adding a drop or two of dilute (about 5–10%) acetic acid.
-2. A test tube is filled about two-thirds with the urine. Holding the tube at its lower end, the upper portion is heated over a flame to boiling, while the lower portion serves as a control for comparison.
-3. Any turbidity appearing in the heated portion is noted.
-4. Two or three drops of dilute acetic acid are then added, and the urine is boiled again.
+1. Fill about three-fourths of a test tube with clear urine
+2. Heat the upper part of the urine over a flame, keeping the lower part unheated as a control
+3. Add 3 to 5 drops of dilute (3%) acetic acid
 
 **Interpretation**
 
-- Turbidity that **disappears** on adding acid is due to phosphates or carbonates: no protein.
-- Turbidity that **persists** indicates protein. It is graded by its appearance: a faint opalescence (trace); definite cloudiness without granules (+); granular turbidity (++); dense flocculent turbidity (+++); and a solid coagulum (++++).
-- A very high salt concentration can redissolve protein and give a false negative, and a urine that was alkaline when heated may fail to coagulate.
-
+- **Turbidity that persists or increases:** protein is present (**positive**)
+- **Turbidity that disappears:** it was due to phosphates and carbonates, which acetic acid dissolves (**negative**)
 
 ## What is microalbumin? Write its importance.
 
@@ -11348,31 +11360,26 @@ Uraemia is azotaemia that has led to clinical signs and symptoms, so it arises f
 
 ## State the clinical significance of raised serum uric acid.
 
-Raised serum uric acid (hyperuricaemia) is clinically significant for the following reasons.
-
-1. **Gout.** Persistent hyperuricaemia leads to deposition of monosodium urate crystals in joints and soft tissues, producing acute gouty arthritis and tophi.
-2. **Uric acid nephrolithiasis.** Uric acid stones are present in about 22% of individuals with gout and 42% of those with secondary hyperuricaemia; acid urine favours precipitation of uric acid, and uric acid crystals can also nucleate calcium oxalate stones.
-3. **Urate nephropathy.** Acute uric acid nephropathy is caused by precipitation of uric acid crystals in the collecting ducts, leading to tubular obstruction and acute renal failure, as in patients with leukaemia or lymphoma undergoing chemotherapy (tumour lysis syndrome). Chronic urate (gouty) nephropathy shows urate deposits in the medulla surrounded by a giant cell reaction, with tubular obstruction, atrophy and slowly progressive renal insufficiency.
-4. It reflects **renal impairment** (decreased excretion) and is therefore raised in chronic kidney disease.
-5. It is an indicator of rapid **cell turnover** (leukaemia, lymphoma, polycythaemia, haemolysis, psoriasis, cytotoxic therapy), of an inborn error of purine metabolism, and is associated with the metabolic syndrome, hypertension and cardiovascular disease.
-
+- Most people with hyperuricaemia are **asymptomatic** (85% to 90%)
+- Raised uric acid in the blood or urine can lead to **gout**, which is its most common manifestation
+- It can lead to **nephrolithiasis** (uric acid stones)
+- It can cause **acute uric acid nephropathy**, from precipitation of uric acid crystals in the renal tubules
+- Uric acid levels can be raised 10 to 15 years before the clinical onset of gout
 
 ## Name the causes of hyperuricaemia.
 
-Hyperuricaemia results from overproduction of uric acid, reduced renal excretion, or both.
+**Overproduction** (about 10% of cases)
 
-**Overproduction**
+- Increased breakdown of purines
+- Fructose, whose hepatic metabolism produces uric acid
 
-- Primary: idiopathic gout; inherited enzyme defects, such as hypoxanthine–guanine phosphoribosyltransferase deficiency (Lesch–Nyhan syndrome) and overactivity of phosphoribosyl pyrophosphate synthetase.
-- Secondary: increased cell turnover and nucleic acid breakdown — leukaemia, lymphoma, multiple myeloma, polycythaemia, haemolytic anaemia, psoriasis, tumour lysis after chemotherapy or radiation; a diet rich in purines, alcohol, fructose; obesity.
+**Underexcretion** (about 90% of cases)
 
-**Reduced renal excretion**
-
-- Chronic kidney disease.
-- Drugs: thiazide and loop diuretics, low-dose aspirin, pyrazinamide, ethambutol, cyclosporine.
-- Metabolic: lactic acidosis, ketoacidosis, starvation, and dehydration.
-- Hypothyroidism, hyperparathyroidism, lead poisoning, and preeclampsia.
-
+- Decreased glomerular filtration, as in **chronic kidney disease**
+- Reduced tubular secretion and increased tubular reabsorption of urate
+- **Drugs:** thiazide and loop diuretics, low-dose aspirin, ciclosporin
+- Alcohol, which increases production and decreases excretion
+- Lead poisoning
 
 ## What is renal glycosuria?
 
@@ -11413,32 +11420,36 @@ The urine dipstick uses **dry chemistry**: reagents impregnated on the paper cha
 
 ## What are the reducing substances/agents found in urine?
 
-Reducing substances in the urine are substances that reduce cupric ions in hot alkaline solution (Benedict's test). They include:
+Reducing substances reduce cupric ions in an alkaline solution to cuprous ions (cuprous oxide), as in **Benedict's test**.
 
-1. **Sugars:** glucose (the commonest and most important, in diabetes mellitus and renal glycosuria); fructose (fructosuria, hereditary fructose intolerance); galactose (galactosaemia); lactose (in late pregnancy and lactation); and pentoses (pentosuria). Sucrose is not a reducing sugar.
-2. **Non-sugar reducing agents:** homogentisic acid (alkaptonuria), ascorbic acid in large doses, glucuronates excreted after drugs such as salicylates, chloramphenicol, nalidixic acid, penicillin and cephalosporins, and, in large amounts, uric acid and creatinine.
-
-A positive Benedict's test is not specific for glucose and must be confirmed with a glucose-oxidase test, which is specific.
-
+- **Reducing sugars:** glucose, fructose, galactose and lactose
+- **Reducing non-sugars:** ascorbic acid, uric acid and urates, glucuronides, creatinine, salicylates, streptomycin, homogentisic acid, formaldehyde
+- **Sucrose** is a nonreducing sugar and gives a negative result
 
 ## How do you perform Benedict's test and interpret it?
 
-**Principle.** In hot alkaline solution, reducing substances in urine reduce the blue cupric ions (Cu²⁺) of Benedict's reagent to red cuprous oxide (Cu₂O), which forms a coloured precipitate. The reagent contains copper sulfate, sodium carbonate (which supplies the alkalinity) and sodium citrate (which keeps cupric hydroxide in solution).
+**Principle.** Reducing sugars reduce the blue cupric ions of Benedict's reagent, in alkaline medium and on heating, to red **cuprous oxide**.
 
-**Procedure.** Five mL of Benedict's reagent is placed in a test tube, and 8 drops (about 0.5 mL) of urine are added and mixed. The tube is placed in a boiling water bath or boiled directly for 2 minutes and then allowed to cool.
+**Procedure**
+
+1. Take 5 mL of Benedict's qualitative reagent in a test tube
+2. Add 8 drops (0.5 mL) of urine
+3. Boil for 2 minutes over a flame or in a boiling water bath
+4. Let it cool and note the colour
 
 **Interpretation**
 
-| Colour | Grade | Approximate sugar concentration |
+| Colour | Grade | Sugar |
 |---|---|---|
-| Blue (clear) | Negative | None |
-| Green (without precipitate) | + | Up to about 0.5 g/dL |
-| Yellow | ++ | About 0.5–1 g/dL |
-| Orange | +++ | About 1–2 g/dL |
-| Brick red | ++++ | More than 2 g/dL |
+| Blue, no change | Negative | None |
+| Green solution | Trace | Less than 0.5 g/dL |
+| Green precipitate | 1 plus | 0.5 to 1 g/dL |
+| Yellow precipitate | 2 plus | 1 to 1.5 g/dL |
+| Orange precipitate | 3 plus | 1.5 to 2 g/dL |
+| Brick-red precipitate | 4 plus | More than 2 g/dL |
 
-A positive result indicates a reducing substance, not necessarily glucose, and should be confirmed by a glucose-oxidase test. The test is not sensitive at low concentrations and may be falsely positive with the other reducing agents listed above.
-
+- The test detects any reducing substance, so it is **not specific for glucose**
+- Creatinine, ascorbic acid and urate in concentrated urine can interfere with the reaction
 
 ## Define oliguria.
 
