@@ -8821,103 +8821,91 @@ The diagnosis is confirmed by the following investigations.
 
 ## How does leg ulcer occur in sickle cell anaemia?
 
-Leg ulcers in sickle cell anaemia result from chronic vascular stasis and microvascular occlusion by sickled red cells in the subcutaneous tissues of the lower limb, leading to ischaemia and skin breakdown, usually after minor trauma.
+In adult patients, **vascular stagnation in subcutaneous tissues** often leads to leg ulcers; the complication is rare in children.
 
-The skin over the ankles and lower legs has a sluggish circulation, with high venous pressure and slow transit times, which favours deoxygenation, polymerisation of HbS and sickling. Sticky sickled cells, with raised adhesion molecules, adhere to the endothelium and arrest in the microcirculation, which is further compromised by endothelial dysfunction from depletion of nitric oxide by free haemoglobin released in haemolysis (leading to vasoconstriction), inflammation and thrombosis. The resulting ischaemic damage and chronic hypoxia (aggravated by anaemia) impair healing, so minor trauma produces an ulcer. Vascular stagnation in subcutaneous tissues leads to leg ulcers in adult patients, but the complication is rare in children. The ulcers are typically painful, heal slowly and recur.
+The stagnation reflects the microvascular occlusion that underlies the disease:
 
+- Sickling occurs within microvascular beds with slow transit times.
+- Sickle red cells express increased amounts of adhesion molecules and are sticky, and inflammation slows or arrests their movement through the microvasculature.
+- Stagnation prolongs exposure to low oxygen tension, so more cells sickle and obstruct the vessel: a vicious cycle of sickling, obstruction, hypoxia and more sickling.
+- Free haemoglobin from lysed sickle cells binds and inactivates nitric oxide, which raises vascular tone and enhances platelet aggregation.
 
 ## Laboratory diagnosis of sickle cell anaemia.
 
-Sickle cell anaemia is diagnosed by the finding of a normocytic haemolytic anaemia with irreversibly sickled cells on the film, demonstration of sickle haemoglobin by a sickling or solubility test, and confirmation by haemoglobin electrophoresis or HPLC.
-
-1. **Blood count:** haemoglobin 6 to 9 g/dL (low), normocytic normochromic; reticulocytosis; neutrophil leukocytosis and thrombocytosis.
-2. **Blood film:** variable numbers of irreversibly sickled cells, target cells (from dehydration), polychromasia, nucleated red cells and Howell-Jolly bodies (autosplenectomy).
-3. **Sickling test:** a drop of blood is mixed with a reducing agent, such as 2% sodium metabisulphite, under a sealed coverslip, and sickling is observed microscopically; positive in both trait and disease.
-4. **Solubility test:** HbS is insoluble in a concentrated phosphate buffer with dithionite, producing turbidity.
-5. **Haemoglobin electrophoresis or HPLC (confirmatory):** HbS above 80% with no HbA in the homozygote, HbF 2% to 20%, normal HbA₂; HbAS (trait) has about 40% HbS with HbA predominating; also detects HbSC and HbS-β-thalassaemia.
-6. **Biochemical evidence of haemolysis:** raised unconjugated bilirubin and LDH, low haptoglobin.
-7. **Others:** DNA analysis, prenatal diagnosis (amniocentesis, chorionic villus sampling), and routine newborn screening using heel-stick samples.
+1. **Peripheral blood:** variable numbers of **irreversibly sickled cells**, reticulocytosis and target cells (from red cell dehydration); Howell-Jolly bodies from asplenia; anisocytosis and poikilocytosis.
+2. **Bone marrow:** hyperplastic from compensatory erythroid hyperplasia.
+3. **Hyperbilirubinaemia** from the increased breakdown of haemoglobin.
+4. **Confirmation:** the diagnosis is suggested by the clinical findings and the presence of irreversibly sickled red cells, and is confirmed by various tests for sickle haemoglobin.
+5. **Prenatal diagnosis** by analysis of fetal DNA obtained by amniocentesis or chorionic biopsy.
+6. **Newborn screening** for sickle haemoglobin, using heel-stick samples obtained at birth.
 
 ## What is pancytopenia?
 
-Pancytopenia is the simultaneous reduction of all three formed elements of blood, namely anaemia, leukopenia (particularly neutropenia) and thrombocytopenia, and it is a laboratory finding that reflects a number of different underlying disorders rather than a diagnosis in itself.
-
-Typical working criteria are haemoglobin below the reference range (often below 10 g/dL), a total leukocyte count below 4 × 10⁹/L and a platelet count below 150 × 10⁹/L (frequently below 100 × 10⁹/L). The reduction may result from decreased production in the marrow (aplastic anaemia, marrow infiltration, megaloblastic anaemia, myelodysplasia), from increased peripheral destruction or sequestration (hypersplenism), or from a combination of these mechanisms. The clinical consequences correspond to the deficiency of each cell line: anaemia produces weakness, pallor and dyspnoea; neutropenia produces frequent and persistent infections, fever and prostration; and thrombocytopenia produces petechiae, ecchymoses and mucosal bleeding. Aplastic anaemia is the prototype of a disorder with pancytopenia and a hypocellular marrow, whereas in leukaemia, myelodysplasia, megaloblastic anaemia and marrow infiltration, the marrow is usually hypercellular or infiltrated.
-
+Pancytopenia is the combination of anaemia, neutropenia and thrombocytopenia.
 
 ## Write down the important causes of pancytopenia.
 
-The important causes of pancytopenia are marrow failure as in aplastic anaemia, marrow infiltration by leukaemia, lymphoma, myeloma or metastatic cancer, megaloblastic anaemia, myelodysplastic neoplasms, and hypersplenism.
-
-**A. Decreased marrow production, with a hypocellular marrow**
-
-- Aplastic anaemia: idiopathic (about 65% of cases), drugs (chemotherapeutic agents, chloramphenicol, gold salts, sulphonamides, NSAIDs, antithyroid drugs and carbamazepine), chemicals (benzene, insecticides), ionising radiation, viral infections (hepatitis, which accounts for about 5% of cases, EBV, CMV, parvovirus, HIV, herpes zoster), and inherited defects (Fanconi anaemia, telomerase defects, dyskeratosis congenita).
-- Paroxysmal nocturnal haemoglobinuria (with aplastic anaemia).
-
-**B. Marrow infiltration, with a hypercellular or replaced marrow**
-
-- Acute leukaemias (including aleukaemic forms), hairy cell leukaemia, lymphomas, multiple myeloma.
-- Myelofibrosis, metastatic carcinoma (breast, lung, prostate), granulomatous disease (tuberculosis, sarcoidosis), storage diseases (Gaucher disease), and haemophagocytic lymphohistiocytosis.
-
-**C. Ineffective haemopoiesis**
-
-- Megaloblastic anaemia (vitamin B₁₂ and folate deficiency), myelodysplastic neoplasms.
-
-**D. Peripheral destruction or sequestration**
-
-- Hypersplenism (cirrhosis with portal hypertension, myelofibrosis, Gaucher disease, Felty syndrome, lymphomas).
-- Systemic lupus erythematosus and other autoimmune disorders (Evans syndrome), with overwhelming sepsis, kala-azar, malaria, miliary tuberculosis and HIV infection.
-
+1. **Aplastic anaemia:** chronic primary haematopoietic failure, from:
+   - Chemicals and drugs: dose-related marrow suppression (many cancer chemotherapy drugs, benzene) or idiosyncratic reactions (chloramphenicol, gold salts).
+   - Viral infections, most commonly viral hepatitis (about 5% of cases).
+   - Whole-body irradiation.
+   - Inherited defects: Fanconi anaemia (autosomal recessive defect in DNA repair) and telomerase defects.
+   - Idiopathic in about 65% of cases.
+2. **Megaloblastic anaemia:** impaired DNA synthesis causes most precursors to undergo apoptosis in the marrow (ineffective haematopoiesis).
+3. **Bone marrow replacement:** leukaemia, disseminated cancer and granulomatous disease (myelophthisic marrow failure).
+4. **Ineffective haematopoiesis:** myelodysplastic neoplasm.
+5. **Acute myeloid leukaemia:** replacement of the marrow with blasts.
+6. **Hypersplenism:** sequestration of blood cells in an enlarged spleen.
+7. **Hairy cell leukaemia:** pancytopenia from marrow involvement and sequestration of cells in the enlarged spleen, in more than one-half of cases.
 
 ## How will you diagnose/investigate a case of pancytopenia?
 
-I would confirm pancytopenia with a complete blood count and a peripheral blood film, then examine the bone marrow by aspiration and trephine biopsy, which is the decisive investigation, and look for the underlying cause with directed tests.
-
-1. **History and examination.** Exposure to drugs, chemicals, radiation, preceding viral illness, diet and alcohol, family history (Fanconi anaemia: short stature, thumb and radial anomalies, skin pigmentation); symptoms of anaemia, infection and bleeding; and enlargement of the spleen, liver or lymph nodes. Splenomegaly characteristically is absent in aplastic anaemia, and its presence should lead to question that diagnosis.
-2. **Blood count and film.** Degree of cytopenia and indices (normocytic or macrocytic red cells, low reticulocyte count); search the film for blasts, dysplastic cells, nucleated red cells, hypersegmented neutrophils, teardrop cells, or parasites.
-3. **Bone marrow aspiration and trephine biopsy.** This distinguishes the principal causes: a markedly hypocellular marrow with fat, fibrous stroma and scattered lymphocytes and plasma cells (aplastic anaemia, best shown on biopsy); a hypercellular marrow with blasts (leukaemia), megaloblasts (megaloblastic anaemia) or dysplasia (myelodysplastic neoplasm); infiltration by lymphoma, myeloma or metastatic tumour, fibrosis (myelofibrosis) or granulomas; cytogenetics and flow cytometry as necessary.
-4. **Further tests.** Serum B₁₂ and folate; liver function and viral serology (hepatitis, EBV, CMV, HIV, parvovirus); antinuclear antibodies and anti-dsDNA; flow cytometry for CD55 and CD59 (PNH); chromosomal breakage test (Fanconi anaemia); telomere length; abdominal ultrasound to assess the spleen and liver; chest radiography.
-
+1. **Clinical examination for splenomegaly:** characteristically absent in aplastic anaemia; if present, the diagnosis of aplastic anaemia should be questioned.
+2. **Blood count and film:** in aplastic anaemia the red cells are usually slightly macrocytic and normochromic, with reticulocytopenia; in megaloblastic anaemia look for macro-ovalocytes and neutrophils with five or more lobes.
+3. **Bone marrow biopsy:** the diagnosis of aplastic anaemia rests on it; aspirates often give little material (a "dry tap"), so aplasia is best seen in the biopsy.
+   - Aplastic anaemia: markedly hypocellular marrow.
+   - "Aleukaemic" leukaemia and myelodysplastic neoplasm: usually a hypercellular marrow filled with neoplastic progenitors.
+   - Megaloblastic anaemia: markedly hypercellular marrow with megaloblasts.
+4. **Look for the cause:** serum vitamin B12 and folate levels if the picture is megaloblastic; history of drug, chemical, viral or radiation exposure for aplastic anaemia.
 
 ## Blood and bone marrow picture of aplastic anaemia.
 
-Aplastic anaemia shows pancytopenia in the blood, with normocytic or slightly macrocytic normochromic red cells and a low reticulocyte count, and a markedly hypocellular marrow in which haemopoietic cells are largely replaced by fat.
+**Blood**
 
-Blood. Anaemia, leukopenia (particularly granulocytopenia with relative lymphocytosis) and thrombocytopenia. The red cells are usually slightly macrocytic and normochromic; reticulocytopenia is the rule. There are no abnormal or immature cells, and no nucleated red cells or teardrop cells. The ESR is raised.
+- Pancytopenia: anaemia, neutropenia and thrombocytopenia.
+- Red cells usually slightly macrocytic and normochromic.
+- Reticulocytopenia is the rule.
 
-Bone marrow. The marrow is markedly hypocellular, largely devoid of haemopoietic cells; often only fat cells, fibrous stroma and scattered lymphocytes and plasma cells remain. Aspirates often yield little material (a "dry tap") or are diluted with blood, so aplasia is best appreciated in trephine biopsy, which shows less than 25% cellularity (in severe cases) with no fibrosis, no abnormal infiltrate and no blasts. Residual haemopoietic cells appear normal. Iron stores are increased, and in transfused patients systemic haemosiderosis can appear.
+**Bone marrow**
 
+- Markedly hypocellular, largely devoid of haematopoietic cells.
+- Often only fat cells, fibrous stroma, and scattered lymphocytes and plasma cells remain.
+- Aspirates often yield little material (a "dry tap"); aplasia is best appreciated in marrow biopsies.
+- If multiple transfusions are needed, systemic haemosiderosis can appear.
 
 ## Why does pancytopenia occur in acute leukaemia?
 
-Pancytopenia in acute leukaemia occurs because the proliferating leukaemic blasts replace and suppress the normal haemopoietic cells in the marrow, so that production of red cells, normal granulocytes and platelets all fail.
-
-The neoplastic cells accumulate in the marrow, crowd out and displace normal haemopoietic precursors and the supporting stroma, and produce inhibitory cytokines and factors that suppress normal stem cell proliferation and differentiation. The result is anaemia, neutropenia (despite a possibly high total white cell count made up of blasts) and thrombocytopenia. These are responsible for the presenting manifestations of acute leukaemia: fatigue and pallor, recurrent infections and fever, and bleeding (petechiae, epistaxis, gum bleeding), with additional platelet consumption in DIC in acute promyelocytic leukaemia. In "aleukaemic" or subleukaemic leukaemia the peripheral count shows pancytopenia with few or no circulating blasts, which may mimic aplastic anaemia, and the distinction depends on the marrow. Treatment with chemotherapy further depresses the marrow.
-
+- In **acute myeloid leukaemia**, the replacement of the marrow with blasts produces **marrow failure**, with anaemia, thrombocytopenia and neutropenia.
+- In **acute lymphoblastic leukaemia** with a leukaemic presentation, the marrow is hypercellular and packed with lymphoblasts, which replace normal marrow elements.
 
 ## Why does pancytopenia occur in some cases of splenomegaly?
 
-Pancytopenia in splenomegaly is due to hypersplenism, in which the enlarged spleen sequesters and destroys blood cells and expands the plasma volume, so that all cell counts fall while the marrow is normal or hyperplastic.
-
-The red pulp of an enlarged spleen sequesters a large fraction of the circulating cells: the spleen normally holds 30% to 35% of the body's platelets, but this can rise to 80% to 90% when the spleen is enlarged. Red cells and granulocytes are similarly pooled, and these cells are exposed to prolonged contact with macrophages, which phagocytose and destroy them (the splenic environment is also hostile to metabolism: low glucose and low pH). In addition, splenic enlargement expands the plasma volume, causing a dilutional fall of the haemoglobin. The marrow is normocellular or hyperplastic as it responds to peripheral destruction, a point that distinguishes this from marrow failure. The criteria of hypersplenism are cytopenia, splenomegaly, a cellular marrow and correction after splenectomy. Examples are portal hypertension from cirrhosis, myelofibrosis, Gaucher disease, lymphomas, Felty syndrome, malaria and kala-azar.
-
+- Splenomegaly can cause **hypersplenism**, characterised by anaemia, leukopenia and/or thrombocytopenia.
+- The probable cause of the cytopenias is **increased sequestration of formed elements** and the consequent enhanced phagocytosis by the splenic macrophages.
+- The spleen normally sequesters 30% to 35% of the body's platelets, which can rise to 80% to 90% when the spleen is enlarged.
+- In congestive splenomegaly, slowing of blood flow from the cords to the sinusoids prolongs the exposure of blood cells to macrophages, resulting in excessive destruction.
+- In hairy cell leukaemia, pancytopenia results from marrow involvement and sequestration of cells in the enlarged spleen.
 
 ## How will you differentiate aplastic anaemia from subleukaemic acute leukaemia in the laboratory?
 
-The distinction rests on the bone marrow: aplastic anaemia has a hypocellular fatty marrow without blasts, whereas subleukaemic acute leukaemia has a hypercellular marrow packed with leukaemic blasts, even though both show pancytopenia with few or no blasts in the blood.
+Aplastic anaemia must be distinguished from "aleukaemic" leukaemia and myelodysplastic neoplasm, which may have identical clinical manifestations. The diagnosis rests on examination of a bone marrow biopsy.
 
-| Feature | Aplastic anaemia | Subleukaemic (aleukaemic) acute leukaemia |
+| Feature | Aplastic anaemia | Aleukaemic acute leukaemia |
 |---|---|---|
-| Peripheral blood | Pancytopenia; no blasts; lymphocytes relatively increased | Pancytopenia; few or occasional blasts (may be absent) |
-| Red cells | Normocytic or slightly macrocytic; no nucleated red cells | Normocytic; sometimes nucleated red cells |
-| Spleen, liver, nodes | Spleen usually not enlarged | Hepatosplenomegaly and lymphadenopathy may be present |
-| Bone marrow aspirate | Dry or poor; mainly fat, lymphocytes, plasma cells | Hypercellular; 20% or more blasts |
-| Trephine biopsy | Markedly hypocellular (fat, fibrous stroma); no infiltrate | Hypercellular, replaced by blasts |
-| Cytochemistry, flow, cytogenetics | Normal; no clonal abnormality (though some cases show clonal changes) | Myeloperoxidase/Sudan black or immunophenotyping establishes lineage; clonal abnormalities |
-| Others | Raised iron stores; low LDH | Raised LDH and uric acid |
-
-Myelodysplastic neoplasm, hypoplastic variant, should also be considered when the marrow shows dysplasia and cytogenetic abnormalities.
-
+| Bone marrow cellularity | Hypocellular, usually markedly so | Hypercellular |
+| Bone marrow cells | Largely fat cells, fibrous stroma, scattered lymphocytes and plasma cells | Packed with neoplastic blasts, which replace normal marrow elements |
+| Marrow aspirate | Often a "dry tap" | Not stated |
+| Spleen | Splenomegaly characteristically absent | Not stated |
 
 ## Write down the causes of marrow aplasia.
 
@@ -8973,77 +8961,73 @@ The principal differentials are aleukaemic acute leukaemia, myelodysplastic neop
 
 ## Define hemorrhagic disorders with example.
 
-Haemorrhagic disorders (haemorrhagic diatheses) are conditions characterised by abnormal or excessive bleeding, spontaneously or after minor trauma, due to defects in the blood vessel wall, in platelets, or in the coagulation system, alone or in combination.
+Haemorrhagic diatheses (bleeding disorders) are conditions in which excessive bleeding results from (1) increased fragility of vessels, (2) platelet deficiency or dysfunction, and (3) derangement of coagulation, alone or in combination.
 
-Haemostasis depends on the integrity of the vessel wall, adequate numbers and function of platelets, and the coagulation cascade with its regulating fibrinolytic system. Failure of any component produces bleeding, with a characteristic pattern. Examples are: vessel wall disorders (scurvy, hereditary haemorrhagic telangiectasia, Henoch-Schönlein purpura); platelet disorders (immune thrombocytopenic purpura, aplastic anaemia, Glanzmann thrombasthenia, aspirin effect); and coagulation disorders (haemophilia A and B, von Willebrand disease, vitamin K deficiency, liver disease and disseminated intravascular coagulation).
+Examples:
 
+- Vessel wall: hereditary haemorrhagic telangiectasia.
+- Platelets: immune thrombocytopenic purpura.
+- Coagulation: haemophilia A.
 
 ## Classify haemorrhagic disorder.
 
-Haemorrhagic disorders are classified according to the component of haemostasis that is defective into vascular, platelet and coagulation disorders.
-
-| Group | Subtypes and examples |
+| Group | Examples |
 |---|---|
-| **Vascular (vessel wall) disorders** | Inherited: hereditary haemorrhagic telangiectasia, Ehlers-Danlos syndrome. Acquired: infections (meningococcaemia, septicaemia, infective endocarditis, rickettsial infections), drug reactions (hypersensitivity vasculitis), scurvy, Henoch-Schönlein purpura, Cushing syndrome and senile purpura, amyloidosis |
-| **Platelet disorders** | Quantitative (thrombocytopenia): decreased production (aplastic anaemia, leukaemia, drugs, alcohol, HIV, megaloblastic anaemia); decreased survival (ITP, drug-induced, DIC, TTP/HUS, HIV); sequestration (hypersplenism); dilution (massive transfusion). Qualitative (functional): Bernard-Soulier syndrome, Glanzmann thrombasthenia, storage pool disorders, aspirin and NSAIDs, uraemia |
-| **Coagulation disorders** | Inherited: haemophilia A, haemophilia B, von Willebrand disease, other factor deficiencies. Acquired: vitamin K deficiency, liver disease, DIC, anticoagulant therapy, inhibitors (autoantibodies to single factors) |
-| **Combined** | von Willebrand disease (platelet adhesion and factor VIII), DIC (platelet and factor consumption), uraemia |
-
+| **Vessel wall abnormalities** | Infections (meningococcaemia, septicaemia, infective endocarditis, rickettsioses); drug reactions; scurvy and Ehlers-Danlos syndrome; Cushing syndrome and ageing; Henoch-Schönlein purpura; hereditary haemorrhagic telangiectasia; perivascular amyloidosis |
+| **Platelet disorders** | Thrombocytopenia (decreased production, decreased survival, sequestration, dilution); immune thrombocytopenic purpura; thrombotic microangiopathies (TTP and HUS) |
+| **Coagulation disorders** | Inherited: haemophilia A, haemophilia B, von Willebrand disease. Acquired: vitamin K deficiency, liver disease, disseminated intravascular coagulation |
 
 ## Approach to diagnosing a patient with a bleeding disorder.
 
-I would approach the patient by taking a detailed bleeding history, noting the site and pattern of the bleeding, examining for petechiae or haematomas and signs of an underlying disease, and then performing screening tests (platelet count, PT and PTT) followed by specific tests.
+Excessive bleeding results from vessel fragility, platelet deficiency or dysfunction, or derangement of coagulation. The clinical pattern is matched with laboratory tests.
 
-History. Age at onset, the pattern (spontaneous or after trauma, surgery, dental extraction), sites of bleeding, family history (X-linked inheritance in haemophilia, autosomal dominant in von Willebrand disease), drugs (aspirin, NSAIDs, warfarin, heparin, antibiotics), alcohol, liver or renal disease, and menstrual history.
+| Pattern | Clinical picture | Laboratory findings |
+|---|---|---|
+| **Vessel wall** | Small haemorrhages (petechiae and purpura) in skin and mucous membranes, particularly the gingivae; occasionally joints, muscles, menorrhagia, nosebleeds, gastrointestinal bleeding, haematuria | Platelet count, PT and PTT usually normal, pointing by exclusion to the vessel wall |
+| **Thrombocytopenia** | Bleeding from small vessels into skin and the mucous membranes of the gastrointestinal and genitourinary tracts; intracranial bleeding is most feared | Platelet count below 150,000 per µL; PT and PTT normal when thrombocytopenia is isolated |
+| **Coagulation factor deficiency** | Large post-traumatic ecchymoses or haematomas; prolonged bleeding from a laceration or after surgery; bleeding into the gastrointestinal and urinary tracts and weight-bearing joints (haemarthrosis) | Prolonged PT and/or PTT; specific factor assays |
 
-Clinical pattern. Bleeding from vessel wall and platelet disorders is mucocutaneous and immediate: petechiae, purpura, epistaxis, gum bleeding, menorrhagia, and gastrointestinal bleeding, with small superficial bruises. Bleeding from coagulation factor deficiency is deep and delayed: large post-traumatic ecchymoses and haematomas, haemarthrosis, muscle bleeds and prolonged bleeding after surgery or tooth extraction, and petechiae are characteristically absent.
+Tests used:
 
-Screening tests. Platelet count, with blood film, PT, PTT (and thrombin time and fibrinogen), and bleeding time (now largely replaced by platelet function tests). The pattern separates the groups: isolated low platelets with normal PT and PTT indicates thrombocytopenia; normal platelets, normal PT and PTT suggests vascular or platelet function disorder; prolonged PTT with normal PT suggests factor VIII, IX or XI deficiency or von Willebrand disease; prolonged PT alone suggests factor VII deficiency, early warfarin or vitamin K deficiency; both prolonged suggests liver disease, DIC or a common-pathway defect.
-
-Specific tests. Mixing studies, factor assays (VIII, IX), von Willebrand factor antigen and ristocetin cofactor activity, platelet aggregation studies, fibrin degradation products and D-dimers, and bone marrow examination for thrombocytopenia of uncertain cause.
-
+- **Prothrombin time (PT):** assesses the extrinsic and common pathways; prolonged by deficiency or dysfunction of factor V, factor VII, factor X, prothrombin or fibrinogen.
+- **Partial thromboplastin time (PTT):** assesses the intrinsic and common pathways; prolonged by deficiency or dysfunction of factors V, VIII, IX, X, XI or XII, prothrombin or fibrinogen, or by interfering antiphospholipid antibodies.
+- **Platelet count:** reference range 150,000 to 350,000 per µL; confirm abnormal counts on a peripheral blood film, as clumping can cause spurious thrombocytopenia.
+- **Tests of platelet function:** platelet aggregation, and quantitative and qualitative tests of von Willebrand factor.
+- **Specific tests:** levels of specific clotting factors, fibrinogen, fibrin split products and circulating anticoagulants.
 
 ## What are the causes of haemorrhagic disorders?
 
-The causes of haemorrhagic disorders are increased fragility of vessels, platelet deficiency or dysfunction, and derangement of coagulation, alone or in combination.
-
-1. **Vessel wall abnormalities:** infections (meningococcaemia, other septicaemias, infective endocarditis, rickettsioses) causing vasculitis or DIC; drug reactions (immune-complex hypersensitivity vasculitis); scurvy and Ehlers-Danlos syndrome (collagen defects); acquired fragility in older adults and Cushing syndrome; Henoch-Schönlein purpura; hereditary haemorrhagic telangiectasia; and perivascular amyloidosis. The platelet count and the PT and PTT are normal.
-2. **Platelet disorders:**
-
-- Thrombocytopenia: decreased production (aplastic anaemia, leukaemia, drugs, alcohol, HIV, megaloblastic anaemia), decreased survival (ITP, drugs including heparin, DIC, TTP and HUS), sequestration in hypersplenism, and dilution.
-- Qualitative defects: Bernard-Soulier syndrome (GpIb/IX), Glanzmann thrombasthenia (GpIIb/IIIa), storage pool disorders, aspirin and other NSAIDs, and uraemia.
-
-3. **Coagulation disorders:**
-
-- Inherited: haemophilia A (factor VIII), haemophilia B (factor IX), von Willebrand disease.
-- Acquired: vitamin K deficiency (factors II, VII, IX, X), liver disease (decreased synthesis), DIC (consumption), anticoagulant therapy and inhibitors.
-
+1. **Vessel wall abnormalities**
+   - Infections (meningococcaemia, other septicaemias, infective endocarditis, rickettsioses): microbial damage to the microvasculature (vasculitis) and disseminated intravascular coagulation.
+   - Drug reactions: drug-induced immune complexes in vessel walls (hypersensitivity vasculitis).
+   - Scurvy and Ehlers-Danlos syndrome: collagen defects that weaken vessel walls.
+   - Acquired vascular fragility in older adults; Cushing syndrome.
+   - Henoch-Schönlein purpura: immune complex deposition in vessels.
+   - Hereditary haemorrhagic telangiectasia: autosomal dominant; dilated, thin-walled vessels.
+   - Perivascular amyloidosis, most common with AL amyloidosis.
+2. **Platelet deficiency or dysfunction**
+   - Decreased production: aplastic anaemia, leukaemia, certain drugs and alcohol, HIV, myelodysplastic neoplasm.
+   - Decreased survival: immune (immune thrombocytopenic purpura, alloimmune, drug-induced) or nonimmune (DIC, thrombotic microangiopathies, mechanical injury from prosthetic heart valves).
+   - Sequestration in an enlarged spleen.
+   - Dilution after massive transfusion.
+   - Platelet function defects from von Willebrand factor deficiency.
+3. **Derangement of coagulation**
+   - Inherited: haemophilia A, haemophilia B, von Willebrand disease.
+   - Acquired: vitamin K deficiency, severe parenchymal liver disease, DIC, and inhibitory autoantibodies.
 
 ## What do you mean by coagulation disorders?
 
-Coagulation disorders are bleeding disorders caused by a quantitative or qualitative deficiency of one or more of the plasma clotting factors, or by the presence of inhibitors, resulting in defective fibrin clot formation.
+Coagulation disorders are bleeding disorders caused by inherited or acquired deficiencies of coagulation factors; deficiencies of virtually every coagulation factor have been reported as causes of abnormal bleeding.
 
-Bleeding due to coagulation factor deficiencies commonly manifests as large post-traumatic ecchymoses or haematomas, or prolonged bleeding from a laceration or after a surgical procedure; bleeding often occurs in the gastrointestinal and urinary tracts and in weight-bearing joints (haemarthrosis). Petechiae are absent, unlike in thrombocytopenia. Typical stories include the patient who oozes blood for days after a tooth extraction or who develops haemarthrosis after minor stress on a knee joint. Hereditary deficiencies typically affect a single clotting factor (haemophilia A, factor VIII; haemophilia B, factor IX; von Willebrand disease). Acquired deficiencies usually involve multiple factors, from decreased synthesis (vitamin K deficiency, liver disease), consumption (DIC), or inhibitors, such as autoantibodies to factor VIII or heparin and warfarin therapy.
-
+Bleeding commonly manifests as large post-traumatic ecchymoses or haematomas, or prolonged bleeding from a laceration or after a surgical procedure. Unlike bleeding with thrombocytopenia, it often occurs in the gastrointestinal and urinary tracts and in weight-bearing joints (haemarthrosis).
 
 ## Classify coagulation disorders.
 
-Coagulation disorders are classified as inherited or acquired, depending on whether the factor deficiency is genetic or arises from another disease or from drugs.
-
-**A. Inherited (hereditary) coagulation disorders**
-
-- Factor VIII deficiency (haemophilia A, X-linked recessive), the most common.
-- Factor IX deficiency (haemophilia B, Christmas disease, X-linked recessive).
-- Von Willebrand disease (autosomal dominant, rarely recessive), the most common inherited bleeding disorder.
-- Factor XI deficiency (haemophilia C, autosomal), and rarer deficiencies of fibrinogen (afibrinogenaemia, dysfibrinogenaemia), prothrombin, and factors V, VII, X and XIII.
-
-**B. Acquired coagulation disorders**
-
-1. Decreased synthesis: vitamin K deficiency (obstructive jaundice, malabsorption, haemorrhagic disease of the newborn, warfarin), which affects factors II, VII, IX and X and protein C; parenchymal liver disease.
-2. Increased consumption: disseminated intravascular coagulation.
-3. Inhibitors: circulating anticoagulants such as heparin, antibodies to factor VIII (in haemophilia A on treatment, or autoimmune acquired haemophilia), and the lupus anticoagulant (which prolongs PTT in vitro but causes thrombosis rather than bleeding).
-4. Increased fibrinolysis: primary hyperfibrinolysis (prostate surgery, thrombolytic therapy).
-
+| Type | Features | Examples |
+|---|---|---|
+| **Inherited** | Typically affect a single clotting factor | Factor VIII deficiency (haemophilia A); factor IX deficiency (haemophilia B); von Willebrand factor deficiency (von Willebrand disease) |
+| **Acquired** | Usually involve multiple factors, from decreased protein synthesis or a shortened protein half-life | Vitamin K deficiency (factors II, VII, IX, X and protein C); severe parenchymal liver disease; DIC, in which multiple factors are consumed |
+| **Acquired, single factor** | Rare; caused by inhibitory autoantibodies | Autoantibody to a single clotting factor |
 
 ## What is bleeding time?
 
