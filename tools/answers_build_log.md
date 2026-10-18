@@ -624,3 +624,22 @@ Sources: site textbook chapter 22 (cervix: ch22.json) and chapter 23 (breast: ch
 - Hard breast lump, diagnosis: the textbook says malignant tumours "tend to be irregular"; the sentence is cut off in the file, so fixity to tissue is not stated. Skin dimpling is explained from the inflammatory carcinoma passage only.
 - Hard breast lump, investigations: core biopsy, FNAC, axillary ultrasound, chest, bone and liver imaging, Ki-67 and BRCA testing are not described in the textbook passages read, so they are not stated. Please decide whether an outside source (for example StatPearls "Breast Cancer") should be added.
 - Cervical carcinoma diagnosis: smoking, contact bleeding and discharge as clinical features are not in the passages read; only the textbook's gross appearance, age, histology and HPV link are stated.
+
+## Session 18, batch 3 (work-list questions 31 to 63, Chapter 24: thyroid and diabetes)
+
+Sources: site textbook chapter 24 (tools/textbook_src/ch24.json) for the thyroid and diabetes answers.
+
+| Question | Source | URL |
+|---|---|---|
+| What is HbA1c? / Importance of HbA1c | StatPearls "Hemoglobin A1C" (definition and 2 to 3 month averaging); site textbook ch24 for the 6.5% and 5.7% to 6.4% thresholds | https://www.ncbi.nlm.nih.gov/books/NBK549816/ |
+
+### Points left out and decisions needed
+- Glucose values are given in mg/dL because the textbook uses mg/dL; the case question about FBS 6.6 and RBS 10.0 mmol/L gives the cut-offs also in mmol/L (7.0 and 11.1) by dividing the textbook figures by 18. This conversion factor is not in the textbook. Please confirm that you want mmol/L shown.
+- OGTT procedure and indications: the textbook gives only the 75 g load, the 2-hour value and its interpretation. Fasting before the test, sampling times and indications are not stated, because no outside source was read for them. Please decide whether to add StatPearls "Glucose Tolerance Test".
+- Draw different types of diabetic curves: a drawing cannot be given in the answer text, so a table of fasting and 2-hour values is given. The normal fasting range (70 to 120 mg/dL) is the textbook's general blood glucose range; no separate normal 2-hour value is in the textbook, so "below 140" is taken as the lower limit of impaired glucose tolerance.
+- Hyperglycaemia sine glycosuria: the textbook does not discuss it. Only the renal threshold statement from the type 1 diabetes passage is used; a raised renal threshold, ageing or other reasons are not stated.
+- Causes of hyperglycaemia: pregnancy and the pancreatic and drug causes are from the classification table and the gestational diabetes passage; Cushing syndrome, acromegaly, phaeochromocytoma and other endocrine causes in the same chapter were not added.
+- Case "musty odour": the textbook describes a fruity odour in diabetic ketoacidosis; the answer states the textbook term.
+- Fasting 6.6 mmol/L case: the textbook gives no diagnosis for values below the cut-offs other than prediabetes; the answer states this.
+- Thyroid: the sources do not list hypothyroidism causes as a table (lost in extraction); the four causes are from the running text. The textbook does not give a one-line definition of goitre; the answer states enlargement of the thyroid gland from the goitre section.
+- Follicular carcinoma prognosis and iodine association for papillary carcinoma are not given in the passages read; shown as "not stated" in the comparison table.

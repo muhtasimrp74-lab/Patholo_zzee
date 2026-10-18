@@ -11992,329 +11992,315 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 
 ## Mention four important causes of hypothyroidism.
 
-Hypothyroidism is a state of deficient thyroid hormone activity. Four important causes are:
-
-1. **Autoimmune thyroiditis (Hashimoto thyroiditis)**, the most common cause in iodine-sufficient regions.
-2. **Iodine deficiency**, the most common cause worldwide and of congenital hypothyroidism (cretinism) in endemic areas.
-3. **Iatrogenic causes**: thyroidectomy, radioiodine therapy, external irradiation of the neck, and antithyroid drugs (methimazole, propylthiouracil) as well as lithium, amiodarone and iodides.
-4. **Congenital causes**: thyroid agenesis or hypoplasia (PAX8, FOXE1, TSH-receptor mutations) and dyshormonogenetic goitre due to enzyme defects in hormone synthesis.
-
-Less commonly, hypothyroidism is central (secondary or tertiary) from pituitary or hypothalamic disease, in which TSH is low or inappropriately normal rather than raised.
-
+1. **Hashimoto thyroiditis:** the commonest cause in iodine-sufficient areas
+2. **Postablative:** surgery, radioiodine therapy or external irradiation
+3. **Drugs:** lithium, amiodarone, iodides, p-aminosalicylic acid, thionamides
+4. **Congenital:** endemic **iodine deficiency** (the commonest worldwide) and dyshormonogenetic goitre
 
 ## What is goitre?
 
-Goitre is enlargement of the thyroid gland. It may be diffuse or nodular, and the patient may be euthyroid, hyperthyroid or hypothyroid. Most goitres result from a compensatory rise in TSH that causes hypertrophy and hyperplasia of the follicular epithelium when thyroid hormone output is inadequate.
-
+**Goitre** is enlargement of the thyroid gland. It can be associated with hyperthyroidism, hypothyroidism or euthyroidism.
 
 ## What are the causes of goitre?
 
-Goitre results from any condition that reduces hormone synthesis and so raises TSH, or that stimulates or infiltrates the gland.
-
-- **Iodine deficiency** (endemic goitre in mountainous areas such as the Himalayas and Andes).
-- **Goitrogens**: dietary substances (cassava thiocyanate, cabbage-family vegetables) and drugs (lithium, antithyroid drugs).
-- **Dyshormonogenesis**: hereditary enzymatic defects of hormone synthesis (autosomal recessive).
-- **Autoimmune disease**: Graves disease (diffuse toxic goitre) and Hashimoto thyroiditis.
-- **Sporadic goitre**, in which no cause can be found in most cases.
-- **Multinodular goitre**, a late complication of a long-standing simple goitre.
-- **Neoplasms**, thyroiditis (subacute granulomatous, Riedel) and infiltrative disease.
-
+1. **Endemic goitre:** low iodine in soil, water and food, as in the Andes and Himalayas
+2. **Sporadic goitre:**
+   - Ingestion of substances that interfere with thyroid hormone synthesis
+   - Hereditary enzymatic defects (**dyshormonogenetic goitre**), autosomal recessive
+   - No apparent cause in most cases
+3. **Multinodular goitre**
+4. **Hashimoto thyroiditis**
+5. **Graves disease**
 
 ## Give the etiopathogenesis of multinodular goitre.
 
-**Multinodular goitre** is a late stage of long-standing simple (diffuse non-toxic) goitre, so it has the same background (iodine deficiency, goitrogens, or unknown causes) but affects older patients. Recurrent cycles of hyperplasia and involution, driven by raised TSH, produce a gland that is irregularly nodular and asymmetrically enlarged, sometimes exceeding 2000 g.
-
-The key concept is heterogeneity of the follicular cells. Some cells respond more vigorously to TSH and other stimuli, or acquire growth-promoting genetic changes, and so proliferate autonomously to form nodules. Both polyclonal and monoclonal nodules are found within the same gland. Activating mutations in the TSH-receptor signalling pathway have been identified in a subset of autonomous nodules, which explains why some goitres become hyperfunctioning (toxic multinodular goitre, Plummer disease).
-
-Morphologically the nodules contain colloid-rich follicles lined by flattened epithelium, areas of hyperplasia, and secondary haemorrhage, fibrosis, calcification and cystic change. There is no true capsule separating nodules from the compressed residual thyroid. Clinically the dominant features are mass effects: tracheal and oesophageal compression, substernal extension, and superior vena cava syndrome. A dominant nodule may mimic a neoplasm.
-
+- **Recurrent episodes of hyperplasia and involution** of a simple goitre produce irregular enlargement
+- Follicular cells **vary in their response** to external stimuli such as trophic hormones
+- Cells with a growth advantage, perhaps from acquired genetic abnormalities like those in adenomas, **proliferate autonomously** and form a nodule
+- **Polyclonal and monoclonal nodules** coexist in the same gland
+- It occurs in sporadic and endemic forms, in older individuals, as a late complication of simple goitre
 
 ## Write in short the pathogenesis of Hashimoto's thyroiditis.
 
-Hashimoto thyroiditis is an autoimmune disease in which a breakdown of self-tolerance leads to progressive immune destruction of the thyroid.
-
-**Loss of tolerance.** Defective regulatory T-cell function or exposure of normally sequestered thyroid antigens is thought to be the initiating event. Genetic susceptibility is shown by associations with polymorphisms in immune-regulatory genes, namely CTLA4, PTPN22 and IL2RA, all of which regulate T-cell responses. The disease is 10 to 20 times more common in females.
-
-**Effector mechanisms.** Three mechanisms contribute to loss of thyrocytes:
-
-1. CD8⁺ cytotoxic T cells directly kill follicular cells.
-2. CD4⁺ Th1 cells release interferon-γ, which recruits and activates macrophages and damages the follicles.
-3. Autoantibodies to thyroglobulin and thyroid peroxidase may cause injury by antibody-dependent cell-mediated cytotoxicity or complement activation, although they may be a consequence rather than a cause of injury.
-
-The result is progressive depletion of epithelial cells, replacement of parenchyma by lymphoid follicles with germinal centres, oncocytic (Hürthle cell) metaplasia of surviving follicles, and variable fibrosis. Clinically this leads to gradual hypothyroidism with a diffuse painless goitre, preceded in some patients by transient thyrotoxicosis (hashitoxicosis) as follicles rupture.
-
+1. A breakdown in **self-tolerance** to thyroid autoantigens, shown by autoantibodies against **thyroglobulin** and **thyroid peroxidase**
+2. The inciting events are unknown; possibilities are abnormal regulatory T cells or exposure of sequestered thyroid antigens
+3. Strong genetic component
+4. Progressive depletion of thyroid epithelial cells, replaced by lymphocytic infiltrates and **fibrosis**, by:
+   - **CD8 positive cytotoxic T cell** killing of follicular cells
+   - **Cytokine-mediated** damage: CD4 positive Th1 cells produce interferon gamma, which activates macrophages
+   - Antibody-dependent cell-mediated cytotoxicity and complement-dependent damage by antithyroid antibodies, though it is unclear if the antibodies are cause or consequence
 
 ## What are the expected laboratory findings in Hashimoto's thyroiditis?
 
-**Expected laboratory findings in Hashimoto thyroiditis:**
-
-- **Thyroid function:** raised serum TSH with low free T₄ and T₃ once hypothyroidism develops. Early in the disease, a transient thyrotoxic phase with high T₄ and low TSH may be seen.
-- **Autoantibodies:** high titres of anti-thyroid peroxidase (anti-TPO) and anti-thyroglobulin antibodies in most patients.
-- **FNAC:** a heterogeneous population of lymphocytes and plasma cells with oncocytes (Hürthle cells).
-- **Histology:** diffuse lymphoplasmacytic infiltrate with germinal centres, atrophic follicles lined by oncocytes, and interstitial fibrosis confined within the gland.
-- **Radioiodine uptake** is low or patchy; other autoimmune markers may be positive.
-
+- **Autoantibodies** against thyroglobulin and thyroid peroxidase in the vast majority of patients
+- As hypothyroidism develops, **T4 and T3 fall** and **TSH rises**
+- **Serum TSH** is the most sensitive screening test for primary hypothyroidism
+- Early on there may be transient thyrotoxicosis (**hashitoxicosis**) from release of thyroid hormones
 
 ## A 30y lady has diffuse thyroid enlargement with exophthalmos. What is your clinical diagnosis (Graves' disease)?
 
-**Provisional diagnosis: Graves disease** (diffuse toxic goitre). A young woman with a diffusely enlarged thyroid, exophthalmos and (in addition) features of hyperthyroidism fits the classical triad of Graves disease: hyperthyroidism with diffuse goitre, infiltrative ophthalmopathy with exophthalmos, and, in a minority, localised infiltrative dermopathy (pretibial myxoedema).
+**Graves disease.**
 
-**Immunological mechanisms.** Graves disease is an autoimmune disorder. The principal autoantibody is thyroid-stimulating immunoglobulin (TSI), present in about 90% of patients. TSI binds the TSH receptor and mimics TSH, stimulating adenyl cyclase, thyroid growth and hormone release without feedback control. TSH-receptor blocking antibodies may also occur and cause hypothyroidism in a few patients. There is genetic susceptibility (concordance 30–40% in monozygotic twins; CTLA4, PTPN22, IL2RA and TSHR variants).
-
-**Ophthalmopathy** arises because CD4⁺ T cells in the orbit release cytokines that stimulate fibroblast proliferation and synthesis of hydrophilic glycosaminoglycans. Together with inflammation, oedema and fatty infiltration, this increases retro-orbital volume and pushes the eyeball forward.
-
-**Morphology:** the gland is symmetrically enlarged with a soft, beefy-red cut surface. The follicles are lined by tall crowded columnar cells forming papillae without fibrovascular cores, and the colloid is pale with scalloped margins. Lymphoid infiltrates with germinal centres are present.
-
+- An autoimmune disorder with autoantibodies against the **TSH receptor**; thyroid-stimulating immunoglobulin is found in about 90%
+- Diffuse hyperplasia of the thyroid, which may have an audible bruit
+- Thyrotoxicosis: wide staring gaze and lid lag from sympathetic overactivity
+- Infiltrative ophthalmopathy causing **exophthalmos**
+- Infiltrative dermopathy (**pretibial myxoedema**) in a minority
 
 ## Same: what will be the status of thyroid hormone level?
 
-In Graves disease, the thyroid hormone profile shows **elevated free T₄ and T₃ with suppressed TSH**, because the autonomously raised hormone levels abolish pituitary TSH secretion by negative feedback. Thyroid-stimulating immunoglobulins (TSI) or TSH-receptor antibodies are detectable, and radioiodine scanning shows diffusely increased uptake. In occasional patients (T₃ toxicosis) only T₃ is raised.
-
+- **Free T4 and T3 are raised**
+- **TSH is depressed**
+- Radioiodine scan shows diffusely increased uptake
+- Thyroid-stimulating immunoglobulins and TSH-receptor antibodies are elevated
 
 ## Enumerate the tumours of thyroid.
 
-Tumours of the thyroid are classified as follows.
+**Benign:** thyroid (follicular) **adenoma**
 
-- **Benign:** follicular adenoma (including oncocytic variant).
-- **Malignant epithelial (follicular cell):** papillary carcinoma, follicular carcinoma (including oncocytic type), poorly differentiated carcinoma and anaplastic (undifferentiated) carcinoma.
-- **Malignant (C-cell):** medullary carcinoma.
-- **Other:** primary thyroid lymphoma (usually extranodal marginal zone B-cell lymphoma arising in Hashimoto thyroiditis), sarcomas and metastases.
-- **Borderline entity:** noninvasive follicular thyroid neoplasm with papillary-like nuclear features (NIFTP), which behaves in a benign fashion.
+**Malignant (carcinomas)**
 
+1. **Papillary thyroid carcinoma:** about 85% of cases
+2. **Follicular or oncocytic thyroid carcinoma:** 5% to 15%
+3. **High-grade differentiated and poorly differentiated carcinoma:** about 5%
+4. **Anaplastic (undifferentiated) carcinoma:** about 1%
+5. **Medullary thyroid carcinoma:** about 5%; a neoplasm of C cells
+
+- **NIFTP** (noninvasive follicular thyroid neoplasm with papillary-like nuclear features) is the new name for encapsulated noninvasive follicular variant papillary carcinoma
 
 ## Name the malignant tumours of thyroid.
 
-The malignant tumours of thyroid are papillary carcinoma (about 85% of cases), follicular carcinoma (5–15%), medullary carcinoma (about 5%), poorly differentiated and high-grade differentiated carcinoma (about 5%) and anaplastic carcinoma (under 5%). Rare malignancies include lymphoma and metastatic tumours. Papillary and follicular carcinomas are well differentiated and carry an excellent prognosis, whereas anaplastic carcinoma is one of the most lethal human cancers.
-
+1. **Papillary carcinoma:** about 85% of cases
+2. **Follicular or oncocytic carcinoma:** 5% to 15%
+3. **High-grade differentiated and poorly differentiated carcinoma:** about 5%
+4. **Anaplastic (undifferentiated) carcinoma:** about 1%
+5. **Medullary carcinoma** (C cells): about 5%
 
 ## Write a short note on papillary carcinoma of thyroid (microscopic morphology).
 
-**Papillary carcinoma** is the commonest thyroid malignancy and is the typical radiation-associated thyroid cancer, occurring mainly between 25 and 50 years of age.
-
-**Gross:** it may be solitary or multifocal, circumscribed or infiltrative with ill-defined margins, often cystic, with areas of fibrosis and calcification, and sometimes grossly visible papillae.
-
-**Microscopic hallmarks:**
-
-1. Branching, complex papillae with thin fibrovascular cores lined by cuboidal cells.
-2. Characteristic nuclei: enlarged, overlapping, with finely dispersed, optically clear chromatin ("ground-glass" or "Orphan Annie eye" nuclei), irregular contours with nuclear grooves ("coffee-bean") and intranuclear cytoplasmic pseudoinclusions.
-3. Psammoma bodies, concentrically calcified structures in papillary cores or stroma, virtually never seen in follicular or medullary carcinoma.
-4. Lymphatic invasion is common, and about half of patients have cervical nodal metastases, but blood-vessel invasion is uncommon.
-
-The diagnosis rests on nuclear features, not architecture, so that follicular variants with these nuclei are still papillary carcinoma. Genetically, BRAF V600E mutations or RET/NTRK fusions are typical. The 10-year survival exceeds 95%.
-
+- **Branching papillae** with a fibrovascular stalk covered by single or multiple layers of cuboidal epithelial cells
+- Nuclei with finely dispersed chromatin and an optically clear appearance: **ground-glass (Orphan Annie eye) nuclei**
+- Nuclear membrane irregularities: **nuclear grooves** (coffee-bean shape) and **pseudoinclusions** (cytoplasmic invaginations)
+- **Psammoma bodies**: concentrically calcified structures in papillary cores or stroma; almost never in follicular or medullary carcinomas
+- Foci of **lymphatic invasion** are common; blood vessel invasion is uncommon
+- Metastases to cervical lymph nodes occur in up to one-half of cases
 
 ## How will you differentiate papillary carcinoma from follicular carcinoma of thyroid?
 
 | Feature | Papillary carcinoma | Follicular carcinoma |
 |---|---|---|
-| Frequency | About 85% | 5–15% (more in iodine deficiency) |
-| Age | 25–50 years | 40–60 years |
-| Risk factor | Ionising radiation | Iodine deficiency |
-| Genetics | BRAF V600E, RET/NTRK fusions | RAS mutations, PAX8::PPARG fusion |
-| Architecture | Papillae with fibrovascular cores | Small follicles with colloid, resembling normal thyroid |
-| Nuclei | Ground-glass, grooved, pseudoinclusions | Uniform, lacking papillary-type nuclear features |
-| Psammoma bodies | Frequently present | Absent |
-| Diagnosis of malignancy | By nuclear features | By capsular and/or vascular invasion |
-| Spread | Lymphatic, to cervical nodes | Haematogenous (bone, lung, liver); nodes uncommonly involved |
-| Prognosis | 10-year survival over 95% | Good if minimally invasive; widely invasive disease carries about 50% 10-year mortality |
+| **Frequency** | About 85% | 5% to 15% |
+| **Age** | Most often 25 to 50 years | Peak 40 to 60 years |
+| **Iodine deficiency** | Not stated | More frequent; 25% to 40% of thyroid cancers in such areas |
+| **Architecture** | Branching papillae | Small follicles with colloid |
+| **Nuclei** | Ground-glass, grooves, pseudoinclusions | Lack the features of papillary carcinoma |
+| **Psammoma bodies** | Present | Absent |
+| **Spread** | Lymphatic; cervical nodes in up to one-half | Haematogenous, most commonly to lung |
+| **Prognosis** | 10-year survival over 95% | Not stated |
 
 ## Define diabetes mellitus.
 
-**Diabetes mellitus** is a group of metabolic disorders characterised by chronic hyperglycaemia resulting from defects in insulin secretion, insulin action or both, and associated with disturbances of carbohydrate, fat and protein metabolism. The sustained hyperglycaemia leads to long-term damage of the eyes, kidneys, nerves, heart and blood vessels.
-
+**Diabetes mellitus** is a group of metabolic disorders sharing the common feature of **hyperglycaemia**, caused by defects in insulin secretion, insulin action, or, most commonly, both. The chronic hyperglycaemia and attendant metabolic deregulation may be associated with secondary damage in multiple organ systems, especially the kidneys, eyes, nerves and blood vessels.
 
 ## How is diabetes mellitus classified?
 
-Diabetes mellitus is classified as follows (Table 24.6).
-
-1. **Type 1 diabetes mellitus:** autoimmune (immune-mediated) β-cell destruction with absolute insulin deficiency; includes latent autoimmune diabetes of adults (LADA).
-2. **Type 2 diabetes mellitus:** insulin resistance with relative insulin deficiency.
-3. **Other specific types:**
-
-- Genetic defects of β-cell function (MODY, neonatal diabetes, mitochondrial diabetes, insulin gene mutations).
-- Genetic defects of insulin action.
-- Diseases of the exocrine pancreas (chronic pancreatitis, pancreatectomy, carcinoma, cystic fibrosis).
-- Endocrinopathies (Cushing syndrome, acromegaly, phaeochromocytoma).
-- Drug- or chemical-induced (glucocorticoids, thiazides, phenytoin).
-- Infections and genetic syndromes.
-
-4. **Gestational diabetes mellitus.**
-
+1. **Type 1 diabetes:** autoimmune destruction of pancreatic β cells with absolute insulin deficiency; 5% to 10% of cases; the commonest type in patients younger than 20 years
+2. **Type 2 diabetes:** peripheral resistance to insulin action with an inadequate β cell secretory response (relative insulin deficiency); 90% to 95% of cases
+3. **Other types**
+   - Genetic defects of β cell function: maturity-onset diabetes of the young (MODY), neonatal diabetes, maternally inherited diabetes and deafness
+   - Genetic defects in insulin action
+   - Exocrine pancreatic disease: chronic pancreatitis, pancreatectomy, trauma, pancreatic cancer, cystic fibrosis
+   - Drugs: thiazides, nicotinic acid, phenytoin, β-adrenergic agonists
+4. **Gestational diabetes**
 
 ## Mention the difference between type-I and type-II DM.
 
 | Feature | Type 1 | Type 2 |
 |---|---|---|
-| Frequency | 5–10% | 90–95% |
-| Onset | Usually childhood and adolescence, but any age | Usually adult; increasingly in children |
-| Body weight | Normal or weight loss | About 80% obese |
-| Pathogenesis | Autoimmune T-cell mediated β-cell destruction; failure of self-tolerance | Insulin resistance and β-cell dysfunction |
-| Genetics | HLA-DR3/DR4, DQ8; CTLA4, PTPN22, insulin gene VNTR | No HLA linkage; TCF7L2, PPARG, FTO |
-| Insulin level | Progressively falls to absent | Raised early; normal or modestly decreased late |
-| Autoantibodies | Present (GAD65, IA-2, ZnT8, insulin) | Absent |
-| Ketoacidosis | Common without insulin | Rare; hyperosmolar state more common |
-| Islet pathology | Insulitis (T lymphocytes), β-cell depletion, islet atrophy | No insulitis; islet amyloid, mild β-cell depletion |
-
+| **Basis** | Autoimmune β cell destruction | Insulin resistance with β cell dysfunction; no autoimmune basis |
+| **Insulin** | Absolute deficiency | Relative deficiency |
+| **Frequency** | 5% to 10% | 90% to 95% |
+| **Age** | Commonest under 20 years | Typically obese patients over 40 years; increasingly in children |
+| **Body weight** | Not stated | Most are overweight |
+| **Onset** | Often abrupt; triad of polyuria, polydipsia and polyphagia | Often found on routine blood testing in asymptomatic persons |
+| **Ketoacidosis** | Common | Less frequent, because higher portal vein insulin limits ketone formation |
+| **Acute complication** | Diabetic ketoacidosis | Hyperosmolar hyperglycaemic state |
 
 ## Give the WHO (diagnostic) criteria of diabetes mellitus.
 
-**WHO/ADA diagnostic criteria for diabetes mellitus** (any one):
+Diabetes is diagnosed by any one of:
 
-1. Fasting plasma glucose 7.0 mmol/L (126 mg/dL) or more (fasting means no caloric intake for at least 8 hours).
-2. Two-hour plasma glucose 11.1 mmol/L (200 mg/dL) or more during a 75 g OGTT.
-3. Random plasma glucose 11.1 mmol/L (200 mg/dL) or more in a patient with classic symptoms of hyperglycaemia.
-4. HbA1c 6.5% or more.
+1. **Fasting plasma glucose** of 126 mg/dL or more
+2. **Random plasma glucose** of 200 mg/dL or more, in a patient with classic hyperglycaemic signs
+3. **2-hour plasma glucose** of 200 mg/dL or more during an oral glucose tolerance test with a 75 g glucose load
+4. **HbA1c** of 6.5% or more
 
-Except for criterion 3, the test must be repeated and confirmed on a separate day. Prediabetes is defined by fasting glucose of 100–125 mg/dL (impaired fasting glucose), a two-hour OGTT value of 140–199 mg/dL (impaired glucose tolerance), or an HbA1c of 5.7–6.4%.
-
+- All tests except the random glucose in a patient with classic signs must be repeated and confirmed on a separate day
 
 ## Define gestational DM.
 
-**Gestational diabetes mellitus** is glucose intolerance of variable severity with onset or first recognition during pregnancy in a previously euglycaemic woman. Pregnancy is a diabetogenic state because the hormonal milieu favours insulin resistance, and the condition appears in women with other genetic and environmental susceptibility. It affects 5–9% of pregnancies, usually resolves after delivery, and may cause foetal macrosomia; most affected women later develop overt diabetes. It is detected by an OGTT at 24–28 weeks.
+**Gestational diabetes** is impaired glucose tolerance and diabetes developing for the first time during pregnancy in a female who was previously euglycaemic.
 
+- Pregnancy is a diabetogenic state, because the hormonal milieu favours insulin resistance
+- It typically resolves after delivery, but most affected females develop overt diabetes over the next 10 to 20 years
 
 ## What are the clinical features of a diabetic patient?
 
-The clinical features of a diabetic patient depend on type and duration.
+**Type 1**
 
-Type 1: abrupt onset of the classic triad of polyuria, polydipsia and polyphagia, with weight loss, fatigue and muscle weakness; the presentation may be diabetic ketoacidosis. The catabolic state arises because insulin deficiency impairs glucose assimilation, so glucose spills into urine and causes osmotic diuresis, thirst and increased appetite, while protein and fat breakdown cause wasting. Type 2: often asymptomatic and found on routine testing; symptoms include fatigue, dizziness, blurred vision, recurrent skin and urinary infections, pruritus vulvae or balanitis, and delayed wound healing.
+1. **Polyuria, polydipsia and polyphagia**
+2. Weight loss and muscle weakness despite the increased appetite
+3. **Diabetic ketoacidosis** when severe
 
-Chronic features: retinopathy with visual loss, cataract, nephropathy with proteinuria and hypertension, peripheral and autonomic neuropathy, diabetic foot ulceration and gangrene, and accelerated atherosclerosis with ischaemic heart disease and stroke.
+**Type 2**
 
+1. Often diagnosed on routine blood testing in asymptomatic persons
+2. Unexplained fatigue, dizziness or blurred vision
+
+**Chronic complications** (usually 15 to 20 years after onset)
+
+- Macrovascular: myocardial infarction, stroke, lower limb ischaemia
+- Microvascular: retinopathy, nephropathy, neuropathy
+- Infections
 
 ## What is OGTT? Write its procedure, indications and interpretation.
 
-The **oral glucose tolerance test (OGTT)** assesses the body's capacity to handle an oral glucose load.
+**OGTT** is the oral glucose tolerance test, in which plasma glucose is measured 2 hours after a loading dose of **75 g of glucose**.
 
-Procedure. Three days of an unrestricted carbohydrate diet and normal activity; overnight fast of 8–14 hours; a fasting plasma glucose sample; ingestion of 75 g anhydrous glucose in 250–300 mL of water over five minutes (1.75 g/kg to a maximum of 75 g in children); further plasma glucose estimation at two hours, and if a curve is needed, at 30, 60 and 90 minutes. The patient must remain seated and not smoke.
+**Interpretation**
 
-Indications. Borderline fasting glucose; suspected diabetes with normal fasting glucose; screening in pregnancy (gestational diabetes) and in high-risk groups; glycosuria of uncertain cause; investigation of impaired glucose tolerance; diabetic-type complications without proven hyperglycaemia.
+| 2-hour plasma glucose | Meaning |
+|---|---|
+| 200 mg/dL or more | **Diabetes** |
+| 140 to 199 mg/dL | **Impaired glucose tolerance** |
 
-Interpretation (2-hour plasma glucose). Below 7.8 mmol/L (140 mg/dL) is normal; 7.8–11.0 mmol/L is impaired glucose tolerance; 11.1 mmol/L (200 mg/dL) or more is diabetes.
-
+- As many as one-quarter of individuals with impaired glucose tolerance develop overt diabetes over 5 years
 
 ## What is the normal fasting blood glucose level?
 
-The normal fasting plasma glucose is 3.9–5.5 mmol/L (70–99 mg/dL). Values from 5.6 to 6.9 mmol/L (100–125 mg/dL) constitute impaired fasting glucose, and 7.0 mmol/L (126 mg/dL) or more indicates diabetes.
-
+- Blood glucose is normally maintained in a narrow range of **70 to 120 mg/dL**
+- A fasting plasma glucose of 100 to 125 mg/dL is **impaired fasting glucose**
+- A fasting plasma glucose of 126 mg/dL or more is diabetes
 
 ## What is impaired glucose tolerance (IGT)?
 
-**Impaired glucose tolerance (IGT)** is a state of dysglycaemia intermediate between normal and diabetes, in which the fasting glucose is below the diabetic level but the two-hour plasma glucose in a 75 g OGTT is 7.8–11.0 mmol/L (140–199 mg/dL). It is a form of prediabetes: about one-quarter of such persons develop overt diabetes within five years, and they are also at increased risk of cardiovascular disease, especially when obese or with a family history.
+**Impaired glucose tolerance** is a 2-hour plasma glucose between 140 and 199 mg/dL following a 75 g oral glucose tolerance test.
 
+- It is one of the criteria of **prediabetes**, a state of dysglycaemia that often precedes type 2 diabetes
+- The others are impaired fasting glucose (fasting plasma glucose 100 to 125 mg/dL) and an HbA1c of 5.7% to 6.4%
+- Individuals with prediabetes are also at significant risk of cardiovascular complications
 
 ## Draw different types of diabetic curves.
 
-Typical OGTT curves (plasma glucose in mmol/L, illustrative values) are shown below.
-
-| Time (min) | Normal | Diabetic | Impaired glucose tolerance | Alimentary (lag-storage) | Flat curve (malabsorption) |
-|---|---|---|---|---|---|
-| 0 (fasting) | 4–5.5 | 7.0 or more | 5.6–6.9 | normal | normal |
-| 30–60 | peak below 10, then falls | rises above 11.1 | rises to 9–11 | sharp peak above 10 (exceeds renal threshold) | slight rise, below 1.5 above fasting |
-| 120 | below 7.8 | 11.1 or more | 7.8–11.0 | returns to normal (below 7.8) | normal |
-
-The normal curve rises to a peak at 30–60 minutes and returns to the fasting level by two hours. The diabetic curve starts from a raised fasting level, rises to a high peak and remains above 11.1 mmol/L at two hours. The IGT curve is intermediate. The lag-storage curve shows an early high peak with glycosuria, but a normal two-hour value. The flat curve shows hardly any rise (coeliac disease, malabsorption). In renal glycosuria the curve is normal despite glycosuria.
-
+| Glucose tolerance curve | Fasting plasma glucose | 2-hour plasma glucose after 75 g |
+|---|---|---|
+| **Diabetic** | 126 mg/dL or more | 200 mg/dL or more |
+| **Impaired glucose tolerance** | May be 100 to 125 mg/dL | 140 to 199 mg/dL |
+| **Normal** | Within 70 to 120 mg/dL | Below 140 mg/dL |
 
 ## What is HbA1c (glycosylated haemoglobin)?
 
-HbA1c is glycated haemoglobin, formed by non-enzymatic attachment of glucose to the β-chain of haemoglobin A. It reflects mean blood glucose over the previous 8–12 weeks, and is used both to diagnose diabetes (6.5% or more) and to monitor long-term control (target below 7%).
-
-**Complete explanation:** Glycation proceeds continuously and irreversibly over the 120-day lifespan of the red cell, so that the HbA1c percentage is proportional to the average glucose exposure, weighted to the most recent month. Unlike a blood glucose it does not need fasting and is unaffected by day-to-day variation. Interpretation: below 5.7% normal; 5.7–6.4% prediabetes; 6.5% or more diabetes. Clinically, a lower HbA1c is associated with a reduced risk of retinopathy, nephropathy and neuropathy. Falsely low values occur in haemolytic anaemia, blood loss and recent transfusion, and falsely high or unreliable values in iron deficiency and some haemoglobinopathies. Continuous glucose monitoring has introduced "time in range" as an additional measure.
-
+- HbA1c is haemoglobin in the red cell that has become **bound to glucose** by a nonenzymatic process during its circulating life span of about 120 days
+- The amount formed is proportional to the average blood glucose
+- It therefore reflects the **average blood glucose of the previous 2 to 3 months**
+- A fasting sample is not needed
 
 ## Importance of HbA1c.
 
-The importance of HbA1c is that it gives an objective index of average glycaemia over two to three months, which makes it the best single test for assessing long-term control and the risk of complications; it is also an accepted diagnostic criterion for diabetes.
-
-**Complete explanation:** Its value rests on four uses. First, monitoring control: it shows whether treatment has been effective over the preceding months, independent of the day's meal or fast. Second, predicting complications: large trials have shown that sustained glycaemic control, with HbA1c maintained below 7%, reduces microvascular complications. Third, diagnosis and screening: 6.5% or more diagnoses diabetes and 5.7–6.4% identifies prediabetes. Fourth, it serves to separate transient stress hyperglycaemia from established diabetes, since a normal HbA1c in a hyperglycaemic patient suggests a short-lived rise. Its limitations are the effects of anaemia, haemoglobinopathy, transfusion and renal failure.
-
+1. **Diagnosis of diabetes:** a level of 6.5% or more
+2. **Diagnosis of prediabetes:** a level of 5.7% to 6.4%
+3. **Monitoring long-term glycaemic control** in type 1 and type 2 diabetes
+4. It is not affected by the daily fluctuations seen with single glucose readings
+5. Used to judge the effect of treatment, usually every 3 months
 
 ## What is hyperglycaemia?
 
-**Hyperglycaemia** is an abnormally raised blood glucose concentration, above the normal fasting range of about 5.5 mmol/L (100 mg/dL). Diabetes mellitus is diagnosed when fasting plasma glucose is 7.0 mmol/L or more, or random glucose is 11.1 mmol/L or more with symptoms. Values in between define impaired fasting glucose and impaired glucose tolerance.
+**Hyperglycaemia** is a raised blood glucose level.
 
+- It is the common feature of all forms of diabetes mellitus
+- Persistent hyperglycaemia (**glucotoxicity**) is responsible for many of the long-term complications of diabetes
 
 ## Mention the important causes of hyperglycaemia.
 
-Important causes of hyperglycaemia:
-
-1. **Diabetes mellitus** (type 1, type 2, gestational and secondary types), the commonest cause.
-2. **Endocrine disease** with insulin antagonism: Cushing syndrome, acromegaly, phaeochromocytoma, thyrotoxicosis, glucagonoma.
-3. **Stress hyperglycaemia** from acute illness: severe infection, myocardial infarction, stroke, burns, trauma and surgery, owing to catecholamines and cortisol.
-4. **Drugs**: glucocorticoids, thiazides, β-agonists, phenytoin, nicotinic acid.
-5. **Pancreatic disease**: pancreatitis, pancreatectomy, carcinoma, haemochromatosis, cystic fibrosis.
-6. **Other**: pregnancy, liver disease, intravenous glucose infusion, and sampling after a meal.
-
+1. **Diabetes mellitus:** type 1, type 2, monogenic forms, gestational
+2. **Acute stress:** severe infections, burns or trauma cause transient hyperglycaemia through catecholamines and cortisol, which oppose insulin
+3. **Exocrine pancreatic disease:** chronic pancreatitis, pancreatectomy, pancreatic cancer, cystic fibrosis
+4. **Drugs:** thiazides, nicotinic acid, phenytoin, β-adrenergic agonists
+5. **Pregnancy,** which favours insulin resistance
 
 ## What is hyperglycaemia sine glycosuria? Why is sugar absent in urine?
 
-**Hyperglycaemia sine glycosuria** is the finding of a raised blood glucose without glucose in the urine. This occurs because glucose appears in urine only when the plasma concentration exceeds the renal threshold of about 10 mmol/L (180 mg/dL), and that threshold may be effectively raised. The usual causes are:
-
-- Blood glucose that is raised, but not above the renal threshold (mild hyperglycaemia).
-- A raised renal threshold from reduced glomerular filtration of glucose, as in elderly diabetic patients, in diabetic glomerulosclerosis (Kimmelstiel-Wilson disease) and in chronic renal failure. The kidney filters less glucose, so tubular reabsorption is able to cope.
-
-For this reason, urine testing alone must not be used to exclude diabetes in the elderly.
-
+- In diabetes the filtered glucose exceeds the **renal tubular threshold for reabsorption**, so glucose appears in the urine
+- Sugar is therefore absent from the urine when the filtered glucose does not exceed the tubular threshold for reabsorption
 
 ## Write the complications of diabetes mellitus (macro- and microvascular).
 
-The complications of diabetes mellitus are acute and chronic.
+**Macrovascular** (damage to large and medium-sized muscular arteries)
 
-**Acute metabolic complications:** diabetic ketoacidosis (mainly type 1), hyperosmolar hyperglycaemic state (mainly older type 2 patients, glucose often 600–1200 mg/dL) and hypoglycaemia from treatment.
+- Accelerated **atherosclerosis**
+- Myocardial infarction, stroke and lower extremity ischaemia
+- Hypertension in about 75% of those with type 2 diabetes
+- Two to four times greater incidence of coronary artery disease
 
-**Chronic complications** are caused by sustained hyperglycaemia acting through advanced glycation end-products (AGEs binding RAGE), activation of protein kinase C, polyol pathway flux with NADPH depletion and oxidative stress, and the hexosamine pathway.
+**Microvascular** (damage to small vessels)
 
-1. **Macrovascular disease:** accelerated atherosclerosis causing myocardial infarction (the commonest cause of death), stroke, peripheral vascular disease and gangrene.
-2. **Microangiopathy** (basement-membrane thickening with increased permeability):
+- **Diabetic retinopathy:** 60% to 80% develop it; leading cause of adult blindness; neovascularisation from hypoxia-induced VEGF; also cataract and glaucoma
+- **Diabetic nephropathy:** 30% to 40% develop it; first sign is moderately increased albuminuria (30 to 300 mg per day)
+- **Diabetic neuropathy:** distal symmetric polyneuropathy in a glove-and-stocking pattern, autonomic neuropathy and mononeuropathy
 
-- Nephropathy: capillary basement-membrane thickening, diffuse mesangial sclerosis and nodular glomerulosclerosis (Kimmelstiel-Wilson), arteriolosclerosis involving both afferent and efferent arterioles, and pyelonephritis with papillary necrosis; it progresses from microalbuminuria to overt proteinuria and end-stage renal disease.
-- Retinopathy: non-proliferative (microaneurysms, haemorrhages, exudates, macular oedema) and proliferative (neovascularisation driven by VEGF), a leading cause of adult blindness.
-- Neuropathy: distal symmetric "glove and stocking" polyneuropathy, autonomic neuropathy and mononeuropathy.
+**Other**
 
-3. **Eye:** cataract and glaucoma.
-4. **Infections:** skin, tuberculosis, pneumonia and urinary tract infection, because of impaired neutrophil function and vascular compromise.
-5. **Other:** diabetic foot ulceration with osteomyelitis, MASLD, and pregnancy complications (macrosomia, malformations).
-
+- Infections of the skin, tuberculosis, pneumonia and pyelonephritis
+- Acute: diabetic ketoacidosis, hyperosmolar hyperglycaemic state and hypoglycaemia
 
 ## What are ketone bodies (ketonuria)?
 
-**Ketone bodies** are acetoacetic acid, β-hydroxybutyric acid and acetone, produced in the liver from fatty acid oxidation when carbohydrate is unavailable or unutilizable, as in insulin deficiency or starvation. When their production exceeds tissue use they accumulate in blood (ketonaemia) and are excreted in urine (**ketonuria**), where they are detected by the nitroprusside (Rothera or dipstick) test. Ketonuria occurs in diabetic ketoacidosis, starvation, persistent vomiting and high-fat, low-carbohydrate diets, and in febrile illness in children.
-
+- **Ketone bodies** are **acetoacetic acid** and **β-hydroxybutyric acid**
+- They are produced in the liver mitochondria by oxidation of fatty acyl coenzyme A, when insulin deficiency raises free fatty acids
+- When their formation exceeds their use by peripheral tissues, **ketonaemia** and **ketonuria** result
 
 ## Write a short note on ketoacidosis / discuss the pathogenesis of DKA.
 
-**Diabetic ketoacidosis** is a severe acute complication, chiefly of type 1 diabetes, characterised by hyperglycaemia, ketonaemia and metabolic acidosis.
+**Definition.** Diabetic ketoacidosis is a severe acute metabolic complication mainly seen in type 1 diabetes.
 
-**Pathogenesis.** A precipitant (omitted insulin, infection, trauma, certain drugs) raises epinephrine, glucagon and cortisol while insulin is deficient. Decreased glucose utilisation and increased gluconeogenesis produce marked hyperglycaemia, causing osmotic diuresis, dehydration and loss of electrolytes. Insulin deficiency stimulates hormone-sensitive lipase and so increases free fatty acids, which the liver oxidises via fatty acyl coenzyme A to acetoacetic and β-hydroxybutyric acids; production overwhelms peripheral use, and dehydration impairs urinary excretion. Systemic ketoacidosis results, aggravated by ketogenic amino acids from protein catabolism.
+**Pathogenesis**
 
-**Clinical features.** Fatigue, nausea, vomiting, abdominal pain, fruity odour, Kussmaul breathing, dehydration, and progressive depression of consciousness to coma.
+1. A precipitating factor, most often failure to take insulin, or infection, illness, trauma or drugs
+2. These release **epinephrine**, which blocks residual insulin action and stimulates glucagon
+3. Insulin deficiency with glucagon excess decreases peripheral glucose use and increases gluconeogenesis, so plasma glucose reaches 250 to 600 mg/dL
+4. Hyperglycaemia causes **osmotic diuresis** and dehydration
+5. Insulin deficiency stimulates hormone-sensitive lipase, so fat breakdown raises free fatty acids
+6. In the liver these form **ketone bodies** faster than they can be used, leading to ketonaemia and ketonuria
+7. Dehydration compromises urinary excretion of ketones, giving **metabolic ketoacidosis**
 
-**Laboratory findings.** Plasma glucose 250–600 mg/dL, ketonaemia and ketonuria, low pH and bicarbonate, raised anion gap and electrolyte disturbance.
+**Clinical features.** Fatigue, nausea and vomiting, severe abdominal pain, a characteristic **fruity odour**, and deep labored (**Kussmaul**) breathing. Persistence leads to depressed consciousness and coma.
 
-**Management** consists of insulin, fluid and electrolyte replacement, correction of acidosis and treatment of the precipitating cause. The lower frequency in type 2 diabetes is attributed to higher portal insulin levels, which restrain ketone formation.
-
+**Treatment.** Insulin, correction of metabolic acidosis, and treatment of the precipitating factor.
 
 ## A 48y diabetic became unconscious after chest infection with musty odour in breath. What may be the likely urine finding?
 
-In a diabetic who is unconscious after a chest infection with a fruity or musty odour of the breath, the likely diagnosis is diabetic ketoacidosis. The urine will show **heavy glycosuria and ketonuria** (positive nitroprusside test), an acid pH and a high specific gravity; there may also be proteinuria and pus cells from associated infection.
+**Diabetic ketoacidosis.**
 
+- Infection is a recognised precipitating factor
+- Insulin deficiency and raised ketone bodies cause metabolic ketoacidosis, with a characteristic fruity odour of the breath
+- Persistence of the ketotic state leads to depressed consciousness and coma
+- Hyperosmolar hyperglycaemic state is the alternative in type 2 diabetes, but it has no ketoacidosis symptoms
 
 ## A 58y obese male has weight loss, FBS 6.6, RBS 10.0 mmol/L, raised lipids. What is the diagnosis?
 
-**Probable diagnosis:** an obese 58-year-old man with weight loss, a fasting glucose of 6.6 mmol/L, a random glucose of 10.0 mmol/L and a raised lipid profile has abnormal glucose regulation in the setting of the **metabolic syndrome**. His values fall just short of the diagnostic thresholds for diabetes (fasting 7.0 mmol/L, random 11.1 mmol/L with symptoms), so strictly he has impaired fasting glucose (prediabetes) and is a probable early type 2 diabetic, particularly given the weight loss, which should raise suspicion of evolving diabetes. Diagnosis must be confirmed by repeat fasting glucose, 75 g OGTT and HbA1c.
+**Type 2 diabetes mellitus, or prediabetes progressing to it, in an obese patient; the values do not yet confirm diabetes.**
 
-The combination of central obesity, hyperglycaemia, increased cholesterol and triglycerides, and hypertension (to be sought) defines the metabolic syndrome and carries a high risk of type 2 diabetes and cardiovascular disease.
-
+- The fasting glucose of 6.6 mmol/L and the random glucose of 10.0 mmol/L are below the diagnostic cut-offs of 126 mg/dL (7.0 mmol/L) fasting and 200 mg/dL (11.1 mmol/L) random
+- They fall in the range of **impaired fasting glucose**
+- Type 2 diabetes is typically seen in obese patients older than 40 years, and dyslipidaemia is a frequent accompanying risk
+- Weight loss with hyperglycaemia should raise suspicion of diabetes
 
 ## Same: how will you investigate the case?
 
-Investigation of this patient:
-
-1. **Confirm glycaemic status:** repeat fasting plasma glucose, 2-hour OGTT with 75 g glucose, HbA1c.
-2. **Urine:** glucose, ketones, protein; albumin-to-creatinine ratio for microalbuminuria.
-3. **Complication and risk assessment:** lipid profile, serum creatinine and urea, electrolytes, liver function tests (MASLD), ECG, blood pressure measurement and fundoscopy.
-4. **Other:** thyroid function if weight loss is unexplained, and tests to exclude a pancreatic cause (amylase, imaging) and secondary diabetes.
+1. **Repeat fasting plasma glucose** on a separate day
+2. **Oral glucose tolerance test** with 75 g glucose: 2-hour value of 200 mg/dL or more confirms diabetes; 140 to 199 mg/dL is impaired glucose tolerance
+3. **HbA1c:** 6.5% or more confirms diabetes; 5.7% to 6.4% is prediabetes
+4. Test for complications: urinary albumin (first sign of nephropathy), eye examination for retinopathy, assessment of neuropathy
 
 ## Write a short note on basal cell carcinoma.
 
