@@ -11451,136 +11451,121 @@ Urine output of **less than 400 mL per day**.
 
 ## Classify testicular (germ cell) tumours.
 
-Testicular tumours are divided into germ cell tumours (about 95%) and sex cord–stromal tumours, and the germ cell tumours are classified, in the 2022 WHO scheme, according to whether they arise from germ cell neoplasia in situ (GCNIS), the precursor lesion.
+Germ cell tumours (95% of testicular neoplasms) are in two groups, with the other main category being sex cord–stromal tumours.
 
-**A. Germ cell tumours derived from GCNIS** (postpubertal type)
-
-Tumours of a single histological type (pure forms)
-
-- **Seminoma**
-- **Embryonal carcinoma**
-- **Yolk sac tumour**, postpubertal type
-- **Choriocarcinoma**
-- **Teratoma**, postpubertal type
-
-Tumours of more than one histological type
-
-- **Mixed germ cell tumour** (30–40% of germ cell tumours), for example teratoma with embryonal carcinoma and yolk sac tumour
-
-**B. Germ cell tumours unrelated to GCNIS**
-
-- **Spermatocytic tumour** (older men)
-- **Yolk sac tumour**, prepubertal type
-- **Teratoma**, prepubertal type
-- Mixed teratoma and yolk sac tumour, prepubertal type
-
-**Clinical grouping.** Clinically, germ cell tumours are divided into two groups: **seminomas** and **nonseminomatous germ cell tumours** (embryonal carcinoma, yolk sac tumour, choriocarcinoma, teratoma and mixed tumours), because they differ in behaviour, spread and treatment.
-
+1. **Derived from germ cell neoplasia in situ**
+   - Pure forms: **seminoma**, **embryonal carcinoma**, **yolk sac tumour**, **choriocarcinoma**, **teratoma** (postpubertal)
+   - Mixed germ cell tumours (more than one histologic type; 30% to 40% of germ cell tumours)
+2. **Unrelated to germ cell neoplasia in situ**
+   - Spermatocytic tumour
+   - Prepubertal-type teratoma and yolk sac tumour, and mixed teratoma with yolk sac tumour of prepubertal type
+- Clinically they are divided into **seminomas** and **nonseminomatous germ cell tumours**
 
 ## Name the testicular tumour markers.
 
-The serum markers of testicular germ cell tumours are:
-
-1. **Alpha-fetoprotein (AFP)** — produced by yolk sac elements; markedly raised in yolk sac tumour, and in embryonal carcinoma and mixed tumours containing yolk sac elements; not raised in pure seminoma or choriocarcinoma.
-2. **Human chorionic gonadotropin (hCG, β-hCG)** — produced by syncytiotrophoblasts; markedly raised in choriocarcinoma, and raised in embryonal carcinoma and mixed tumours; mildly elevated in the 15% of seminomas that contain syncytiotrophoblastic giant cells.
-3. **Lactate dehydrogenase (LDH)** — a nonspecific marker that correlates with tumour cell mass and burden.
-
-Both AFP and hCG are elevated in more than 80% of patients with nonseminomatous germ cell tumours at diagnosis. Placental alkaline phosphatase is also raised in seminoma.
-
+- **Alpha-fetoprotein (AFP):** raised by yolk sac tumour elements
+- **Human chorionic gonadotropin (hCG):** raised by syncytiotrophoblastic elements
 
 ## Mention the uses of testicular tumour markers.
 
-Serum tumour markers are of value in several ways.
-
-1. **Initial evaluation of a testicular mass**, supporting the diagnosis and suggesting the histological type: a raised AFP excludes pure seminoma.
-2. **Staging.** After orchiectomy, persistent elevation of hCG or AFP indicates metastatic spread; markers are incorporated into the TNM prognostic stage grouping.
-3. **Assessment of tumour burden**, LDH level being proportional to the mass of tumour cells.
-4. **Monitoring the response to therapy** and **detection of recurrence** or residual tumour after treatment.
-
+1. Initial evaluation of testicular masses
+2. Staging: after orchiectomy, persistent elevation of hCG or AFP indicates metastatic spread
+3. Assessing tumour burden: markers are incorporated into the TNM stage for prognostic stage grouping
+4. Monitoring the response to therapy
 
 ## Name the tumour associated with increased beta-hCG.
 
-**Choriocarcinoma** is the tumour associated with markedly increased serum β-hCG, because its syncytiotrophoblastic cells secrete hCG. A mild elevation is seen in seminomas containing syncytiotrophoblastic cells (about 15%), and hCG is also raised in embryonal carcinoma and mixed germ cell tumours.
-
+- **Choriocarcinoma** (syncytiotrophoblasts contain hCG)
+- Also **seminoma** with syncytiotrophoblasts (about 15%), where the rise is minimal
+- Raised hCG or AFP in more than 80% of nonseminomatous germ cell tumours at diagnosis
 
 ## Write down the morphology of seminoma (short note).
 
-**Gross appearance.** Seminomas produce bulky masses, sometimes ten times the size of the normal testis. The cut surface is homogeneous, grey-white and lobulated, usually without haemorrhage or necrosis. The tunica albuginea is generally not penetrated, although extension to the epididymis, spermatic cord or scrotum may occur.
+**Gross**
+- Bulky masses, sometimes 10 times the size of the normal testis
+- Homogeneous, gray-white, lobulated cut surface, usually without haemorrhage or necrosis
+- Tunica albuginea generally not penetrated; occasional extension to the epididymis, spermatic cord or scrotal sac
 
-**Microscopic appearance.** The tumour is made up of sheets of uniform cells divided into poorly demarcated lobules by delicate fibrous septa containing a lymphocytic infiltrate; ill-defined granulomas may be present. The classic seminoma cell is round to polyhedral, with a distinct cell membrane, clear or watery cytoplasm that contains glycogen, and a large, central nucleus with one or two prominent nucleoli. About 15% contain syncytiotrophoblasts, with a mild rise in serum hCG.
-
-**Immunohistochemistry.** The cells are positive for KIT, OCT3/4 and podoplanin and negative for cytokeratin.
-
-**Behaviour.** Seminoma is the commonest germ cell tumour (about 50%), with a peak incidence in the fourth decade. It spreads mainly through lymphatics to the retroperitoneal para-aortic nodes, and later haematogenously. It is radiosensitive and chemosensitive, and more than 95% of patients with stage I or II disease are cured. Its counterparts are dysgerminoma in the ovary and germinoma in the central nervous system.
-
+**Microscopy**
+- Sheets of uniform cells divided into poorly demarcated lobules by delicate fibrous septa containing a lymphocytic infiltrate; ill-defined granulomas in some
+- **Classic seminoma cell:** round to polyhedral, distinct cell membrane, clear or watery cytoplasm containing glycogen, large central nucleus with one or two prominent nucleoli
+- About 15% contain **syncytiotrophoblasts**, with a mild rise in serum hCG
+- Immunohistochemistry: positive for KIT, OCT3/4 and podoplanin; negative for cytokeratin
 
 ## How does seminoma differ from non-seminomatous germ cell tumour?
 
 | Feature | Seminoma | Nonseminomatous germ cell tumour |
 |---|---|---|
-| Components | Single cell type resembling primordial germ cells | Embryonal carcinoma, yolk sac tumour, choriocarcinoma, teratoma, alone or mixed |
-| Peak age | About 30–40 years | About 20–30 years (embryonal carcinoma) |
-| Gross | Homogeneous, grey-white, lobulated; no haemorrhage or necrosis | Variegated, with haemorrhage, necrosis and cysts |
-| Microscopy | Sheets of uniform cells with clear cytoplasm; fibrous septa with lymphocytes; granulomas | Varied architecture; pleomorphic cells; embryonal glands, Schiller–Duval bodies, syncytiotrophoblasts |
-| Immunohistochemistry | KIT, OCT3/4, podoplanin positive; cytokeratin negative | Cytokeratin positive; KIT negative (embryonal carcinoma also OCT3/4 and SALL4 positive) |
-| Tunica albuginea | Usually not breached | Often invaded, with vascular and lymphatic invasion |
-| Serum markers | hCG mildly raised in 15%; AFP normal | AFP and/or hCG raised in over 80% |
-| Spread | Lymphatic to para-aortic nodes; haematogenous late | Earlier and more frequent haematogenous spread, especially to lung |
-| Treatment and prognosis | Radiosensitive and chemosensitive; over 95% cure at stage I–II | Chemotherapy; about 90% complete remission; pure choriocarcinoma has a poor prognosis |
-
+| **Cells** | Resemble primordial germ cells or early gonocytes | Undifferentiated cells resembling embryonic stem cells (embryonal carcinoma), or differentiation into yolk sac tumour, choriocarcinoma and teratoma |
+| **Cut surface** | Homogeneous, gray-white, usually no haemorrhage or necrosis | Variegated, with haemorrhage or necrosis (embryonal carcinoma) |
+| **Local spread** | Tunica albuginea generally not penetrated | Embryonal carcinoma often extends through the tunica albuginea into the epididymis or spermatic cord |
+| **Markers** | hCG minimally raised in about 15% | AFP or hCG raised in more than 80% |
+| **Metastasis** | Mainly to lymph nodes; blood spread later | Earlier and more frequent blood spread, as well as lymphatic |
+| **Treatment response** | Radiosensitive and chemosensitive | Aggressive chemotherapy needed |
+| **Prognosis** | Best; more than 95% of stage I and II cured | About 90% complete remission; pure choriocarcinoma poor |
 
 ## How will you investigate a case of testicular mass/tumour in the laboratory?
 
-A testicular mass is investigated as follows.
-
-1. **Serum tumour markers** — AFP, β-hCG and LDH, measured before orchiectomy; they help in diagnosis and typing, and serve as a baseline for staging and follow-up.
-2. **Histopathology** — a solid testicular mass is presumed to be malignant, and the definitive diagnosis is made by examination of the specimen obtained by **radical inguinal orchiectomy**. Percutaneous biopsy or fine-needle aspiration is avoided because of the risk of tumour spillage, which would require excision of the scrotal skin as well; occasionally a frozen section is done if a benign lesion is suspected. The pathologist determines the histological type, and the presence of vascular invasion and extratesticular extension; immunohistochemistry (OCT3/4, SALL4, KIT, podoplanin, CD30, glypican-3, hCG, cytokeratin) helps to distinguish the types.
-3. **Imaging** — scrotal ultrasonography, which shows an intratesticular mass, and CT of the chest, abdomen and pelvis for staging (para-aortic nodes, lungs).
-4. **Other tests** — a complete blood count, liver and renal function tests, and semen analysis and hormone assays (for fertility assessment and sperm banking before therapy).
-
+1. **Serum tumour markers:** AFP and hCG, in the initial evaluation
+   - Marked rise of AFP indicates yolk sac tumour; of hCG indicates syncytiotrophoblastic elements
+2. **Histology** of the radical orchiectomy specimen
+   - Any solid testicular mass is considered neoplastic until proven otherwise
+   - Biopsy is avoided because of the risk of tumour spillage
+   - Intraoperative frozen section may be done when a benign lesion is suspected and partial orchiectomy is possible
+3. Markers after orchiectomy: persistent elevation indicates metastatic spread
 
 ## A 30y man has painless testicular swelling. What is your provisional diagnosis?
 
-The provisional diagnosis is a **testicular germ cell tumour**, most probably **seminoma**. Germ cell tumours are the commonest cancer in young and middle-aged men aged 15 to 45 years, and painless enlargement of the testis is the characteristic presentation; any solid testicular mass is considered neoplastic until proven otherwise. Seminoma is the commonest type and peaks in the fourth decade, whereas embryonal carcinoma and other nonseminomatous tumours peak a decade earlier. A history of cryptorchidism is a risk factor. The diagnosis is supported by raised serum markers (AFP, hCG, LDH) and ultrasonography and is confirmed by histological examination of the orchiectomy specimen.
+**Germ cell tumour of the testis**, most likely seminoma.
 
+- Germ cell tumours are the most common cancer in males between 15 and 45 years of age
+- Painless enlargement of the testis is the characteristic feature
+- Seminoma is the most common germ cell tumour (about 50%), with peak incidence in the fourth decade
+- Any solid testicular mass is considered neoplastic until proven otherwise
 
 ## What is cryptorchidism?
 
-Cryptorchidism is complete or partial failure of the intra-abdominal testis (one or both) to descend into the scrotal sac. It is found in about 1% of one-year-old boys and is associated with testicular dysfunction and an increased risk of testicular cancer.
+Complete or partial failure of the intra-abdominal testes (one or both) to descend into the scrotal sac.
 
-Descent occurs in two phases: a transabdominal phase, controlled by Müllerian-inhibiting substance, and an inguinoscrotal phase, which is androgen dependent. The testis may arrest anywhere along the path, most commonly in the inguinal canal. It is usually unilateral (bilateral in 25%), may accompany other malformations such as hypospadias, and may occur in inherited disorders such as Prader–Willi and Noonan syndromes.
-
-**Morphology.** The cryptorchid testis is small and firm. From as early as 2 years of age, there is thickening of the basement membrane of the seminiferous tubules and progressive loss of spermatogonia, leaving tubules with only Sertoli cells, with hyalinised tubular scars, and relatively prominent Leydig cells because they are spared. Germ cell neoplasia in situ may be present, and similar changes can occur in the contralateral, descended testis.
-
-**Complications.** Infertility (sterility), inguinal hernia (10–20%), trauma, torsion, and a four- to ten-fold increased risk of testicular germ cell tumour, which is not eliminated by orchiopexy, so the risk is linked to an in utero defect in gonadal development rather than to position.
-
-**Management.** Most inguinal testes descend spontaneously in the first year; if not, orchiopexy is performed, preferably at 6–12 months of age, before histological changes develop.
+- Found in about 1% of 1-year-old boys; bilateral in 25%
+- Most common arrest site is the inguinal canal; arrest within the abdomen accounts for 5% to 10%
+- Associated with testicular dysfunction and an increased risk of testicular cancer (four- to 10-fold, not removed by orchiopexy)
+- Other associations: hypospadias, Prader-Willi syndrome, Noonan syndrome
+- **Morphology:** small, firm testis; thickened tubular basement membrane, loss of spermatogonia leaving only Sertoli cells, hyalinised scarred tubules, prominent Leydig cells; germ cell neoplasia in situ may be present
+- **Clinical features:** empty scrotal sac; sterility; inguinal hernia (10% to 20%); crushing injury
+- Most inguinal testes descend spontaneously in the first year; otherwise orchiopexy at 6 to 12 months of age
 
 ## Write a short note on benign prostatic hyperplasia (70y male with prostatism: likely diagnosis).
 
-Benign prostatic hyperplasia (nodular hyperplasia) is the commonest benign prostatic disease in men older than 50 years. About 30% of men in this age group have moderate to severe symptoms, and histological evidence is found in up to 90% of men by 80 years. It is not a premalignant lesion.
+**Benign prostatic hyperplasia (nodular hyperplasia)** is the most common benign prostatic disease in males older than 50 years; histologic evidence is found in up to 90% of males by age 80 years. It is not a premalignant lesion. The likely diagnosis in a 70-year-old male with urinary obstructive symptoms is benign prostatic hyperplasia.
 
-**Pathogenesis.** The main androgen in the prostate is dihydrotestosterone (DHT), formed from testosterone by type 2 5α-reductase in the stromal cells. DHT binds to the androgen receptors of stromal and epithelial cells, and induces the transcription of growth factors, particularly members of the fibroblast growth factor family and TGF-β. The result is increased proliferation of stromal cells and decreased death of epithelial cells. Oestrogens, acting through their receptors, also contribute by tipping the balance toward proliferation.
+**Aetiology and pathogenesis**
+- **Dihydrotestosterone (DHT)** is the main androgen in the prostate, formed from testosterone by type 2 5-alpha-reductase in stromal cells
+- DHT binds androgen receptors and switches on androgen-dependent genes for growth factors, chiefly **fibroblast growth factor** family members and **transforming growth factor beta**
+- The ultimate cause is unknown
 
-**Morphology.** The gland weighs 60–100 g (three to five times normal) or more. The hyperplasia affects the transition zone and periurethral region, so it compresses the urethra into a slit-like orifice. The nodules vary: those rich in glands are yellow-pink, soft and exude milky fluid; fibromuscular nodules are pale gray and firm. Microscopically, the nodules contain small to cystically dilated glands, often with papillary infoldings, lined by an inner columnar and an outer basal cell layer, separated by bland spindle-shaped stromal cells. Infarcts with adjacent squamous metaplasia may occur.
+**Morphology**
+- Prostate weight rises three- to five-fold (60 to 100 g) or more
+- Affects the **transition zone** and compresses the urethra to a slit-like orifice
+- Nodules rich in glands are yellow-pink, soft and exude milky prostatic fluid; nodules of fibromuscular stroma are pale gray and firm
+- Microscopy: small to large to cystically dilated glands separated by bland spindle-shaped stromal cells; glands lined by an inner columnar secretory layer and an outer cuboidal or flattened basal layer
+- Prostatic infarcts may occur, with adjacent squamous metaplasia
 
-**Clinical features.** Obstruction to urinary outflow produces frequency, nocturia, hesitancy, a poor stream, difficulty in starting and stopping urination, overflow dribbling and dysuria (a typical 70-year-old man with prostatism). The bladder wall undergoes hypertrophy and distension, and residual urine predisposes to urinary infection, bladder and kidney infection, and stones; acute urinary retention may require emergency catheterisation, and chronic obstruction may cause hydronephrosis and renal failure.
+**Clinical features**
+- Urinary frequency, nocturia, difficulty in starting and stopping the stream, overflow dribbling and dysuria
+- Sudden acute urinary retention may need emergency catheterisation
 
-**Management.** α-adrenergic blockers (reduce smooth muscle tone) and 5α-reductase inhibitors (reduce DHT and shrink the gland); transurethral resection of the prostate or other ablative procedures in resistant cases.
-
+**Complications**
+- Bladder muscular wall hypertrophy and distension, with trabeculation
+- Residual urine, a common site of infection; increased risk of bacterial infection of the bladder and kidney
 
 ## Mention the important diagnostic workup for BPH.
 
-The diagnostic workup for benign prostatic hyperplasia comprises:
-
-1. **History and symptom score** (IPSS) of obstructive and irritative symptoms.
-2. **Digital rectal examination**, which shows a smooth, firm, symmetrically enlarged gland; a hard nodule suggests carcinoma.
-3. **Urinalysis and culture** for haematuria, infection and glycosuria.
-4. **Serum creatinine and urea** to detect renal impairment from obstruction.
-5. **Serum PSA**, to exclude carcinoma (recognising that BPH also raises it).
-6. **Uroflowmetry** (reduced peak flow rate) and measurement of **post-void residual** urine volume.
-7. **Ultrasonography** of the kidneys and bladder, and transrectal ultrasound, to measure prostatic size and to detect hydronephrosis, bladder wall thickening, diverticula and stones.
-8. **Cystoscopy and urodynamic studies** where indicated, and **biopsy** if the PSA is elevated or a nodule is palpable.
+1. **History** with the International Prostate Symptom Score (IPSS)
+2. **Physical examination:** abdominal examination for bladder enlargement; digital rectal examination for prostate size, consistency and tenderness
+3. **Urinalysis** for glucosuria, proteinuria, haematuria and infection
+4. **Serum prostate-specific antigen (PSA):** not required routinely; used after shared decision-making
+5. **Post-void residual urine** and ultrasound for prostate volume and residual urine, when needed
 
 ## What are the common hormones done in male and female to evaluate infertility?
 
