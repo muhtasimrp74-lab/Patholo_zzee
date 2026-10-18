@@ -12304,148 +12304,208 @@ Diabetes is diagnosed by any one of:
 
 ## Write a short note on basal cell carcinoma.
 
-Basal cell carcinoma is a locally invasive malignant epithelial tumour that arises from the basal cells of the epidermis and hair follicles. It is the commonest human cancer and the commonest malignant tumour of the skin in fair-skinned people. It occurs in older adults, predominantly on the sun-exposed skin of the face, and its development is closely linked to cumulative ultraviolet exposure, which damages DNA, with consequent mutation of TP53 and of the Hedgehog pathway gene PTCH1. Predisposing factors include fair skin, xeroderma pigmentosum, chronic arsenic ingestion, ionising radiation, immunosuppression and the inherited basal cell naevus (Gorlin) syndrome.
+**Definition.** **Basal cell carcinoma** is a distinctive locally aggressive cutaneous tumour associated with mutations that activate the **Hedgehog signalling pathway**. It is the most common invasive cancer in humans. It is slow growing and rarely metastasises.
 
-Gross appearance. The tumour begins as a pearly, translucent papule with fine surface telangiectasias. Gradual enlargement is followed by central ulceration, leaving the characteristic rodent ulcer with a rolled, beaded edge. Pigmented and morpheaform (scar-like) variants occur.
+**Aetiology and pathogenesis**
 
-Microscopic appearance. Nests and cords of uniform basaloid cells with dark nuclei and sparse cytoplasm lie in the dermis, connected to the epidermis or follicular epithelium in some sections. The cells at the periphery palisade, and the nests are separated from the stroma by clefts that result from retraction artefact. The stroma is often mucinous.
+- Occurs at **sun-exposed sites** in lightly pigmented older adults
+- Incidence is increased in **immunosuppression** and in disorders of DNA repair such as **xeroderma pigmentosum**
+- **Nevoid basal cell carcinoma syndrome** (Gorlin syndrome, basal cell naevus syndrome): autosomal dominant; multiple basal cell carcinomas often before age 20 years, with medulloblastomas, ovarian fibromas, odontogenic keratocysts and pits of the palms and soles
+- Gene is **PTCH** (9q22), a tumour-suppressor gene: germline loss-of-function mutation in one allele, with the second allele inactivated in tumours
+- PTCH is the receptor for sonic hedgehog (SHH); it normally blocks SMO. Loss of PTCH function causes constitutive activation of **SMO** and the transcription factor **GLI1**
+- Hedgehog-activating mutations are also common in sporadic tumours; about one-third of PTCH mutations are C to T transitions, the hallmark of UV damage
 
-Behaviour. The tumour is slow-growing and locally destructive, with a tendency to recur if incompletely excised, particularly the infiltrative and morpheaform types, but it metastasises only exceptionally. Treatment is surgical excision with clear margins, Mohs micrographic surgery, curettage and cautery, radiotherapy, or topical and systemic Hedgehog pathway inhibitors for advanced disease.
+**Morphology**
 
+- Pearly papules with prominent dilated subepidermal blood vessels (**telangiectasias**); these may be less prominent in darker skin
+- Some tumours contain melanin and resemble naevi or melanomas
+- Advanced lesions may ulcerate, and extensive local invasion of bone or facial sinuses may follow years of neglect, hence the name **rodent ulcers**
+- **Superficial basal cell carcinoma** is an erythematous, occasionally pigmented plaque that may mimic melanoma
+- Tumour cells resemble the basal cell layer of the epidermis; they arise from the epidermis or follicular epithelium and do not occur on mucosal surfaces
+- Two patterns: **multifocal superficial** growth from the epidermis, and **nodular** growth into the dermis as cords and islands of basophilic cells with hyperchromatic nuclei in a mucinous matrix
+- **Palisading** of the peripheral cells of the islands, with **retraction clefts** between tumour and stroma; the clefts help to separate it from appendage tumours such as trichoepithelioma
+
+**Clinical features and complications**
+
+- Metastasis is very rare; fewer than 0.5% are locally aggressive and disfiguring
+- Most are cured by local excision
+- Locally advanced or metastatic disease often responds to **Hedgehog pathway inhibitors** or immune checkpoint inhibitors
 
 ## Write a short note on nevus.
 
-A naevus is a benign, circumscribed proliferation of melanocytes (naevus cells) in the skin, and is commonly called a mole. Naevi are almost universal; they are acquired in childhood and early adult life and mostly carry BRAF mutations. Growth is self-limited by oncogene-induced senescence.
+**Definition.** **Melanocytic naevi** (moles) are common benign neoplasms strongly associated with acquired activating mutations in components of the RAS signalling pathway. Acquired melanocytic naevi are the most common type and are found in virtually all individuals.
 
-Gross appearance. A common naevus is a small, round or oval, symmetrical, sharply demarcated lesion, usually less than 6 mm, evenly pigmented tan to brown, flat or slightly raised.
+**Pathogenesis**
 
-Microscopic appearance and types. In a junctional naevus the naevus cells form nests along the dermoepidermal junction. In a compound naevus nests occur at the junction and within the dermis. In an intradermal naevus the cells lie only in the dermis, arranged in nests and cords; they become smaller and more spindled as they descend (maturation), a feature that distinguishes benign naevi from melanoma. The cells are cytologically bland with round, uniform nuclei and show no significant mitotic activity.
+- Many have acquired mutations causing constitutive activation of **RAS** or of **BRAF**, which lies immediately downstream of RAS
+- Naevi rarely give rise to melanoma because of **oncogene-induced senescence**: activated RAS or BRAF causes only limited proliferation, followed by permanent growth arrest through accumulation of **p16**, an inhibitor of CDK4 and CDK6
+- This protective response is disrupted in melanoma
 
-Other variants. The congenital naevus is present at birth and deeper; the blue naevus is a dermal collection of pigmented spindle melanocytes; the Spitz naevus has large epithelioid cells and occurs mainly in children; and the dysplastic naevus shows architectural disorder with cytological atypia and is a risk marker for melanoma.
+**Morphology**
 
-Significance. Naevi are harmless, but excision and histology are indicated when a naevus shows change in size, colour, shape, surface or symptoms, because these may indicate malignant change.
+- Common acquired naevi are tan to brown, uniformly pigmented, small (usually less than 6 mm), flat macules or elevated papules with well-defined, rounded borders
+- **Junctional naevus**: the earliest lesion; nests of round cells along the dermoepidermal junction, with uniform rounded nuclei, inconspicuous nucleoli and little or no mitotic activity
+- **Compound naevus**: growth into the dermis as nests or cords of cells, so epidermal and dermal components are both present; raised and dome shaped
+- **Intradermal naevus**: in older lesions the epidermal nests are lost entirely
+- Superficial naevus cells are larger, produce melanin and grow in nests; deeper cells are smaller, produce little or no pigment and appear as cords and single cells
+- At the deepest extent the cells become fusiform and grow in fascicles resembling neural tissue (**neurotisation**), with progressive loss of tyrosinase activity; this helps to distinguish naevi from melanomas
 
+**Variants**
+
+| Variant | Features | Clinical significance |
+|---|---|---|
+| **Congenital naevus** | Deep dermal and sometimes subcutaneous growth around adnexa, neurovascular bundles and vessel walls | Present at birth; large variants have increased melanoma risk |
+| **Blue naevus** | Non-nested dermal infiltration; highly dendritic, heavily pigmented cells | Black-blue nodule; often confused with melanoma clinically |
+| **Spitz naevus** (spindle and epithelioid cell naevus) | Fascicular growth; large plump cells with pink-blue cytoplasm | Common in children; red-pink nodule; often confused with haemangioma |
+| **Halo naevus** | Lymphocytic infiltration around naevus cells | Host immune response against naevus cells and surrounding normal melanocytes |
+| **Dysplastic naevus** | Coalescent intraepidermal nests; cytological atypia | Potential marker or precursor of melanoma |
+
+**Clinical features and complications**
+
+- May become more prominent during pregnancy, indicating hormone sensitivity
+- **Dysplastic naevi** are larger than most acquired naevi (often more than 5 mm), with variable pigmentation and irregular borders, and occur on sun-exposed and protected surfaces
+- Dysplastic naevi are best regarded as markers of increased melanoma risk; most never progress
+- In **dysplastic naevus syndrome** (autosomal dominant), the probability of melanoma is over 50% by age 60 years
 
 ## A 70y male has a black ulcerated lesion of right great toe for 6 months, spreading rapidly. What is the differential diagnosis?
 
-The differential diagnosis of a black, ulcerated, rapidly spreading lesion on the great toe of an elderly man, present for six months, includes the following.
+**Malignant melanoma** is the most likely diagnosis: it shows striking variation in colour, with shades of black, brown, red, dark blue and grey, irregular and often notched borders, and a vertical growth phase heralded by a nodule.
 
-1. **Malignant melanoma**, particularly the acral lentiginous or subungual type. This is the most likely diagnosis, given the black pigmentation, ulceration and rapid spread.
-2. **Squamous cell carcinoma**, which also occurs on the toe, especially in a chronic ulcer or scar, and may be pigmented.
-3. **Kaposi sarcoma**, a violaceous to dark nodular lesion of the lower limb in elderly men.
-4. **Pigmented basal cell carcinoma** (rare at this site).
-5. **Gangrene** of the toe from peripheral vascular disease or diabetes, and chronic trophic, venous or diabetic ulcers with a blackened margin.
-6. **Pyogenic granuloma** or other vascular lesion that has bled and crusted, and a **subungual haematoma** after trauma.
-7. A **pigmented naevus** or **seborrhoeic keratosis** with secondary infection.
+The lesions that it must be distinguished from are:
 
+- **Acral lentiginous melanoma**: the melanoma type that arises on non-sun-exposed sites
+- **Pigmented basal cell carcinoma**: some tumours contain melanin and superficially resemble naevi or melanomas; advanced lesions ulcerate
+- **Blue naevus**: a black-blue nodule often confused with melanoma clinically
+- **Seborrhoeic keratosis**: a pigmented lesion; small pore-like keratin-filled openings seen with a hand lens help to tell it from melanoma
 
 ## Same: how will you confirm the disease?
 
-The diagnosis of malignant melanoma is confirmed histologically.
+**Excision biopsy with histological examination.**
 
-1. **Tissue biopsy.** A complete excisional biopsy with a narrow (1–3 mm) clear margin is the method of choice for a suspected melanoma, because it allows accurate measurement of the Breslow thickness; for a large or acral lesion, a full-thickness incisional or punch biopsy through the thickest part is acceptable. Shave biopsy should be avoided.
-2. **Histopathology** to establish the diagnosis, and to document the Breslow thickness, ulceration, mitotic rate, Clark level, growth phase and margins.
-3. **Immunohistochemistry:** S100, HMB-45, Melan-A and SOX10 are positive in melanoma, and distinguish it from squamous cell carcinoma and other tumours.
-4. **Regional lymph nodes:** FNAC or biopsy of an enlarged inguinal node to confirm metastasis, or sentinel lymph node biopsy for clinically negative nodes.
-5. **Staging investigations:** chest X-ray or CT, ultrasonography or CT of the abdomen and groin, and PET-CT or MRI brain in advanced disease; serum LDH.
-6. **Molecular testing** for BRAF V600 (and KIT in acral melanoma) when advanced disease is treated with targeted therapy.
+- Cells are larger than normal melanocytes, with enlarged irregular nuclei, chromatin clumped at the nuclear membrane and prominent eosinophilic nucleoli
+- **Neurotisation** (maturation) is absent in the deep invasive part, unlike a naevus
+- Atypical lesions in the histological gray zone need complete excision and close follow-up
+
+The prognosis is assessed from:
+
+1. **Breslow thickness** (depth of invasion)
+2. Number of mitoses
+3. Tumour regression
+4. Ulceration of the overlying skin
+5. Tumour-infiltrating lymphocytes
+6. Site (central body or extremity)
+
+- **Sentinel lymph node biopsy**: most melanomas first metastasise to regional nodes; micrometastasis, which can be shown with the melanocytic marker HMB-45, confers a worse prognosis
+- Metastatic melanomas are tested for **BRAF** mutation
 
 ## What is osteomyelitis?
 
-Osteomyelitis is inflammation of bone and bone marrow, nearly always caused by infection. Bacteria are the commonest cause, with Staphylococcus aureus the most frequent organism, but mycobacteria, fungi and other organisms may also be responsible. The organisms reach the bone by haematogenous spread, direct extension from an adjacent infected focus, or direct implantation through an open fracture or surgery. The disease may be acute, when it presents with fever, pain and leukocytosis, or chronic, when the infected bone becomes necrotic and a sequestrum persists within a sheath of reactive new bone.
-
+**Osteomyelitis** is bone and marrow inflammation, virtually always secondary to infection.
 
 ## Name the different types of osteomyelitis.
 
-Osteomyelitis may be classified in several ways.
+Organisms of all types can cause it, including viruses, parasites, fungi and bacteria, but certain pyogenic bacteria and mycobacteria are the most common.
 
-1. **By duration:** acute osteomyelitis and chronic osteomyelitis, with the intermediate subacute form (Brodie abscess).
-2. **By aetiology:**
+1. **Pyogenic osteomyelitis**, almost always bacterial
+2. **Mycobacterial osteomyelitis**, including tuberculous osteomyelitis of the spine (**Pott disease**)
+3. **Skeletal syphilis**, congenital or acquired
 
-- pyogenic osteomyelitis (bacterial), the commonest type;
-- tuberculous osteomyelitis, including Pott disease of the spine;
-- fungal, syphilitic and other specific osteomyelitis, including salmonella osteomyelitis in sickle cell disease.
-
-3. **By route of infection:** haematogenous, contiguous (spread from adjacent tissue) and direct implantation (post-traumatic or post-surgical).
-4. **Special forms:** Brodie abscess, sclerosing osteomyelitis of Garré, and vertebral osteomyelitis.
-
+By stage, the changes are acute, subacute and chronic.
 
 ## What are its predisposing factors, etiologic agents and causes?
 
-**Predisposing factors.** Osteomyelitis is promoted by the following.
+**Routes of infection**
 
-- Age: young children, in whom the metaphysis is richly vascularised with sluggish sinusoidal flow, and the elderly.
-- Open fractures, penetrating injury, orthopaedic surgery and prosthetic implants, which allow direct inoculation of bacteria.
-- Existing infections elsewhere (boils, tonsillitis, urinary tract infection, respiratory infection, dental sepsis) that give rise to bacteraemia.
-- Diabetes mellitus and peripheral vascular disease, with poor tissue perfusion and foot ulcers.
-- Immunosuppression, malnutrition, malignancy and chronic steroid use.
-- Sickle cell disease, in which bone infarcts provide a nidus of infection.
-- Intravenous drug use and long-term intravascular catheters.
+1. Haematogenous spread
+2. Extension from a contiguous site
+3. Direct implantation after compound fracture or orthopaedic procedures
 
-**Aetiological agents.**
+**Predisposing factors**
 
-| Setting | Usual organisms |
+- In otherwise healthy children, most osteomyelitis is haematogenous, from trivial mucosal injuries or minor skin infections
+- In adults: open fractures, surgical procedures and **diabetes** (infections of the feet)
+- **Sickle cell anaemia**: osteonecrosis acts as a nidus, and loss of splenic function impairs immunity
+- Infants: epiphyseal infection can spread to the joint
+- Delayed diagnosis, extensive bone necrosis, inadequate antibiotic treatment or debridement, and weakened host immunity favour failure to resolve
+
+**Aetiological agents**
+
+| Setting | Organism |
 |---|---|
-| All ages (most cases) | Staphylococcus aureus |
-| Neonates | Haemophilus influenzae, group B streptococci |
-| Sickle cell disease | Salmonella species |
-| Genitourinary infection, elderly | Escherichia coli, Klebsiella, Proteus |
-| Intravenous drug users, puncture wounds | Pseudomonas aeruginosa |
-| Chronic granulomatous | Mycobacterium tuberculosis |
-| Immunocompromised | Fungi (Candida, Aspergillus) |
+| Most culture-positive pyogenic cases | **Staphylococcus aureus**, 80% to 90% |
+| Neonates | Group B streptococci and **E. coli** |
+| Older children | Gram-positive organisms such as **S. aureus** |
+| Direct spread, surgery or open fractures | Mixed bacterial infections |
+| Sickle cell anaemia | **Salmonella** and other gram-negative organisms |
+| Mycobacterial osteomyelitis | **Mycobacterium tuberculosis** |
+| Rare | **Treponema pallidum** and yaws |
 
-Among those with no organism isolated, which is the case in about half of patients, S. aureus is the most probable cause.
-
+- Specific organisms are identified in only about 50% of patients
 
 ## Give the morphology of pyogenic osteomyelitis.
 
-Pyogenic osteomyelitis most often arises by haematogenous spread. The morphological changes depend on the virulence of the organism, the age of the patient and the site of the lesion.
+- The changes depend on the stage (acute, subacute and chronic) and the site of infection
+- In neonates the metaphysis, epiphysis or both are infected; in older children the metaphysis; in adults after growth plate closure the epiphysis and subchondral regions
 
-**Early (acute) phase.** In children the infection typically starts in the **metaphysis** of a long bone (lower end of femur, upper end of tibia), where sluggish blood flow in the terminal vessels and sinusoids favours the lodging of bacteria. A suppurative acute inflammatory exudate develops within the marrow spaces, and the inflammation, pus and swelling raise the intramedullary pressure. The pressure compresses the vessels and, together with the toxic effect of the infection, causes ischaemic necrosis of bone and marrow.
+**Acute phase**
 
-**Spread.** The pus spreads along the medullary cavity and through the Haversian and Volkmann canals to the cortex. In the child, the periosteum is loosely attached and is lifted, forming a subperiosteal abscess, which further reduces the blood supply to the cortex and extends the necrosis. In the infant the infection can pass through the epiphysis into the joint (suppurative arthritis), because the epiphyseal and metaphyseal vessels communicate. In the adult the growth plate has fused, and infection may involve the epiphysis and the joint directly.
+1. Bacteria proliferate and induce a **neutrophilic reaction**
+2. **Necrosis** of bone cells and marrow within 48 hours
+3. Spread through the **Haversian canals** to the periosteum
+4. **Subperiosteal abscesses** dissect along the bone surface in children, because the periosteum is loosely attached; lifting of the periosteum further impairs blood supply
+5. Soft tissue abscesses after periosteal rupture, which may drain through **sinuses** to the skin
 
-**Late phase.** Over days to weeks the necrotic bone becomes a sequestrum. The periosteum lays down reactive new bone around the dead bone, forming the involucrum. The inflammation changes from neutrophilic to a mixture of lymphocytes, plasma cells and macrophages, with fibrosis. Bone may be drained through sinus tracts. Radiographs, which are normal for 1–2 weeks, then show lytic foci, periosteal new bone formation and later sclerosis.
+**Subacute and chronic phase**
 
+- During the first week, chronic inflammatory cells release cytokines that stimulate bone resorption, **fibrous tissue ingrowth** and deposition of **reactive bone** at the periphery
+- Dead bone is the **sequestrum**
+- Reactive bone forms a living shell, the **involucrum**, around the dead infected bone
+- Histology: marrow fibrosis, sequestrum, and a chronic inflammatory infiltrate of lymphocytes and plasma cells
 
 ## Write the pathogenesis (aetiopathogenesis) of (chronic) osteomyelitis.
 
-Chronic osteomyelitis develops when acute infection is not eradicated or when the infection is low-grade from the outset. Its pathogenesis rests on the persistence of bacteria in an environment that the host defences and antibiotics cannot easily reach.
-
-The process begins with an acute infection that causes bone necrosis. Intramedullary pus raises pressure, thrombosis of the intraosseous vessels follows, and part of the cortex dies. Dead bone, being avascular, cannot deliver circulating leukocytes, antibodies or antibiotics to the organisms lodged within it, so it becomes the sequestrum that acts as a nidus for continued infection. Bacteria, notably Staphylococcus aureus, adhere to the bone and any implants and form a biofilm of extracellular polymeric matrix, which protects them from phagocytosis and from antibiotics and allows them to persist in a slow-growing state. Delay in diagnosis, inadequate or short antibiotic treatment, resistant organisms, poor vascularity (diabetes, peripheral vascular disease), foreign bodies and immunosuppression all favour persistence.
-
-The host reacts to the persistent infection by chronic inflammation, with lymphocytes, plasma cells and macrophages, fibrosis and granulation tissue around the dead bone, and with new bone formation by the periosteum (involucrum). The infection periodically flares up, and pus drains through sinus tracts to the skin surface. Chronic osteomyelitis may also arise without a preceding acute phase, in tuberculous infection and in a Brodie abscess with a low-virulence organism.
-
+- Staphylococcal cell wall proteins bind to bone matrix components such as collagen, which helps bacteria to adhere to bone
+- Bacteria proliferate and induce a neutrophilic reaction, and bone cells and marrow become necrotic
+- Chronic inflammatory cells release cytokines that stimulate bone resorption, fibrous tissue ingrowth and reactive bone deposition
+- Dead bone persists as **sequestrum** within an **involucrum** of new bone
+- In 5% to 25% of cases acute osteomyelitis fails to resolve, which leads to chronic infection; this is likely with:
+  1. delayed diagnosis
+  2. extensive bone necrosis
+  3. inadequate antibiotic treatment or surgical debridement
+  4. weakened host immunity
+- Chronic infection may flare spontaneously after years of dormancy
 
 ## Write a short note on chronic osteomyelitis.
 
-Chronic osteomyelitis is a persistent, indolent infection of bone, lasting weeks to years, characterised by dead bone, chronic inflammation and reactive new bone formation.
+**Definition.** Bone and marrow inflammation, virtually always secondary to infection, that has failed to resolve; 5% to 25% of acute osteomyelitis does not resolve.
 
-Causes. It usually follows inadequately treated acute pyogenic osteomyelitis, open fracture or surgery, particularly with implants, and a chronic infection can be an extension of soft tissue infection (diabetic foot). Staphylococcus aureus is the most common organism. Chronic infection by Mycobacterium tuberculosis and by fungi may also occur as a primary event.
+**Aetiology and pathogenesis**
 
-Pathology. Necrotic bone persists as a **sequestrum**, which acts as a nidus for continuing infection. The periosteum forms a thick sleeve of new bone, the **involucrum**, enclosing the sequestrum. Drainage of pus occurs through openings in the involucrum (cloacae) into sinus tracts that open on the skin. The marrow and surrounding tissues show chronic inflammation with fibrosis. Variants include the **Brodie abscess**, a small intraosseous abscess walled off by sclerotic bone, and the **sclerosing osteomyelitis of Garré**, in which diffuse sclerosis and thickening of the bone follow low-grade infection.
+- Delayed diagnosis, extensive bone necrosis, inadequate antibiotic treatment or surgical debridement, and weakened host immunity
+- Chronic inflammatory cells release cytokines that stimulate bone resorption, fibrous tissue ingrowth and reactive bone formation
 
-Clinical features. There is chronic pain, local tenderness and swelling, intermittent discharge from sinuses, and recurrent acute exacerbations with fever. Radiographs show a sclerotic, thickened bone, a dense sequestrum surrounded by a lucent zone, and sinus tracts.
+**Morphology**
 
-Treatment. Surgical debridement removing the sequestrum, together with prolonged antibiotic therapy.
+- **Sequestrum** (dead bone) surrounded by **involucrum** (shell of living new bone); a drainage tract in the involucrum reveals the necrotic cortex
+- Marrow fibrosis, sequestrum, and a chronic inflammatory infiltrate of lymphocytes and plasma cells
 
-Complications. See below.
+**Clinical features and complications**
 
+- Course punctuated by spontaneous flares after years of dormancy
+- Complications: pathological fracture, secondary (reactive) **amyloidosis**, endocarditis, **sepsis**, **squamous cell carcinoma** in draining sinus tracts, and sarcoma in the infected bone
 
 ## Write the complications of (chronic) osteomyelitis.
 
-The complications of osteomyelitis, particularly of the chronic form, are as follows.
+1. Pathological fracture
+2. Secondary (reactive) **amyloidosis**
+3. **Endocarditis**
+4. **Sepsis**
+5. **Squamous cell carcinoma** in draining sinus tracts
+6. **Sarcoma** in the infected bone
+7. Spontaneous flares after years of dormancy
 
-1. **Pathological fracture** through bone weakened by infection and necrosis.
-2. **Septic arthritis**, when infection spreads through the epiphysis to the adjacent joint, particularly in infants; later, secondary osteoarthritis and joint deformity.
-3. **Chronic discharging sinuses** to the skin, with persistent drainage.
-4. **Squamous cell carcinoma** developing in the epithelium of a long-standing sinus tract (Marjolin ulcer); very rarely, an osteosarcoma may develop.
-5. **Secondary (AA) amyloidosis** from prolonged chronic inflammation, causing renal failure.
-6. **Bacteraemia, sepsis and metastatic abscesses**, including endocarditis, particularly in acute disease.
-7. **Growth disturbance, limb shortening and deformity** in children, when the growth plate is damaged.
-8. **Recurrence** of infection after treatment, and persistent chronic infection.
-9. **Soft tissue abscesses** and, in the vertebrae, cord compression or epidural abscess.
-
+- In infants, epiphyseal infection can spread to a joint and cause septic (suppurative) arthritis, articular cartilage destruction and permanent disability
+- Soft tissue abscesses may channel to the skin as draining sinuses
 
 ## A 16y boy has severe left tibial pain, high fever, TLC 18000, periosteal thickening on X-ray. What is your clinical diagnosis?
 
@@ -12469,42 +12529,47 @@ The diagnosis of acute osteomyelitis is confirmed as follows.
 
 ## Write a short note on Pott's disease.
 
-Pott disease is tuberculous osteomyelitis of the vertebral column.
+**Definition.** **Pott disease** is mycobacterial (tuberculous) osteomyelitis of the spine. The spine is involved in 40% of mycobacterial osteomyelitis cases.
 
-Pathogenesis. The infection is usually secondary to tuberculosis elsewhere, typically pulmonary, and reaches the vertebrae by the haematogenous route. The lower thoracic and upper lumbar vertebrae are the most commonly affected.
+**Aetiology and pathogenesis**
 
-Morphology. Tuberculous infection begins in the vertebral body, often in the anterior part adjacent to the intervertebral disc, and spreads to the disc and the adjoining vertebra. There are caseating granulomas with epithelioid cells and Langhans giant cells, necrosis and destruction of the bone. The softened vertebral bodies collapse anteriorly, causing angulation of the spine (kyphosis, gibbus). Pus and caseous material may spread beneath the anterior longitudinal ligament and track along the psoas sheath to form a **cold abscess** in the groin or thigh.
+- Usually bloodborne, from a focus of active visceral disease elsewhere
+- Direct extension may occur, for example from tracheobronchial nodes into adjacent vertebrae
+- About 1% to 3% of individuals with tuberculosis develop osseous infection
 
-Clinical features and complications. The patient has back pain, stiffness, constitutional symptoms of tuberculosis, and a spinal deformity. Compression of the spinal cord by the abscess, granulation tissue or collapsed vertebrae leads to **paraplegia** (Pott paraplegia). Diagnosis is made by radiology (destruction of vertebral bodies with disc space narrowing and paravertebral shadow), by CT or MRI, and by biopsy and culture or PCR for tubercle bacilli. Treatment is with antituberculous chemotherapy and, if necessary, surgical decompression and stabilisation.
+**Morphology**
+
+- **Caseating granulomas**, as in other sites
+- Infection tracks through the intervertebral discs to involve multiple vertebrae and the surrounding soft tissues
+- More destructive and resistant to control than pyogenic osteomyelitis
+
+**Clinical features and complications**
+
+- Localised pain, low-grade fever, chills or weight loss
+- Disc and vertebral destruction lead to permanent compression fractures, which produce **scoliosis**, **kyphosis** and neurological deficits from compression of the spinal cord and nerves
+- Sinus tract formation, abscesses, tuberculous arthritis and **amyloidosis**
 
 ## Name the bone-forming tumours / classify bone tumours.
 
-Bone tumours are classified according to the tissue they form.
+Bone tumours are classified according to the normal cell type they recapitulate or the matrix they produce. Lesions without a normal tissue counterpart are grouped by clinicopathological features.
 
-| Line of differentiation | Benign | Malignant |
+| Category | Benign | Malignant |
 |---|---|---|
-| **Bone-forming** | Osteoma, osteoid osteoma, osteoblastoma | Osteosarcoma |
-| **Cartilage-forming** | Osteochondroma, chondroma, chondroblastoma, chondromyxoid fibroma | Chondrosarcoma |
-| **Fibrous** | Fibrous cortical defect, non-ossifying fibroma, fibrous dysplasia (tumour-like) | Fibrosarcoma |
-| **Unknown origin** | Giant cell tumour (locally aggressive) | Ewing sarcoma |
-| **Notochordal** | — | Chordoma |
-| **Vascular** | Haemangioma | Angiosarcoma |
-| **Haematopoietic** | — | Myeloma, lymphoma |
-| **Metastatic** | — | Carcinomas of breast, prostate, lung, kidney and thyroid |
-
-The **bone-forming tumours** are therefore osteoma, osteoid osteoma and osteoblastoma, which are benign, and osteosarcoma, which is malignant.
-
+| **Bone forming** | **Osteoid osteoma**, **osteoblastoma** | **Osteosarcoma** |
+| **Cartilage forming** | Osteochondroma, chondroma, chondroblastoma, chondromyxoid fibroma | Chondrosarcoma |
+| **Unknown origin** | **Giant cell tumour**, aneurysmal bone cyst | **Ewing sarcoma**, adamantinoma |
+| **Notochordal** | None | Chordoma |
 
 ## Write in brief about the morphology of osteosarcoma.
 
-Osteosarcoma is the commonest primary malignant bone tumour after myeloma, in which malignant mesenchymal cells directly produce osteoid and bone. It most frequently occurs in the metaphysis of long bones, especially around the knee, in patients between 10 and 20 years of age.
-
-**Gross morphology.** The tumour is a large, bulky, gritty, grey-white mass in the metaphysis. It frequently shows areas of haemorrhage and cystic degeneration. It destroys the cortex, lifts and breaks through the periosteum, and extends into the soft tissue. It spreads along the medullary cavity, but usually does not cross the epiphyseal plate; occasionally it involves the epiphysis and joint.
-
-**Microscopic morphology.** The tumour is composed of pleomorphic malignant cells, with hyperchromatic, bizarre nuclei, giant cells and atypical mitotic figures, which are epithelioid, plasmacytoid, spindle or small round in shape. The diagnostic feature is the formation of **neoplastic osteoid and bone** by the tumour cells; the bone is lace-like and irregular, and may be mineralised. According to the matrix, the tumour may be osteoblastic, chondroblastic (with malignant cartilage) or fibroblastic, and telangiectatic types have blood-filled spaces. Tumour cells invade vascular channels, which explains the early haematogenous spread to the lungs.
-
-**Radiological features.** A destructive lesion of mixed lytic and sclerotic appearance, with periosteal elevation forming Codman triangle and the sunburst appearance of radiating spicules.
-
+- Large, gritty, gray-white tumours that often contain haemorrhage and cystic degeneration
+- Frequently destroy the surrounding cortices to produce a soft tissue mass, spread extensively in the medullary canal and replace the haematopoietic marrow
+- Infrequently penetrate the epiphyseal plate or enter the joint
+- Pleomorphism, large hyperchromatic nuclei, bizarre tumour giant cells and abundant mitoses, including abnormal (tripolar) forms
+- Extensive necrosis and intravascular invasion are common
+- Diagnosis requires malignant cells producing **unmineralised osteoid** or **mineralised bone**, typically fine and lacelike, but sometimes broad sheets or primitive trabeculae
+- If the cells also produce abundant cartilage, the tumour is a **chondroblastic osteosarcoma**
+- Radiologically: destructive mixed lytic and sclerotic mass; lifting of the periosteum produces **Codman triangle**
 
 ## Write a short note on Ewing's sarcoma.
 

@@ -646,3 +646,12 @@ Sources: site textbook chapter 24 (tools/textbook_src/ch24.json) for the thyroid
 
 ### Housekeeping (batch 3)
 - tools/hand_edits.json: one hunk removed (the bold-tag fix inside the old diabetes complications answer; that text no longer exists). 7 remain.
+
+## Session 19, batch 1 (work-list questions 1 to 14, Chapters 25 and 26)
+
+Sources: site textbook ch25 (skin) and ch26 (bones). No outside sources. No answers in this batch were previously empty.
+
+### Points left out
+- Great toe lesion, differential: the textbook gives no differential list for this case; the answer uses only the lesions the textbook says mimic melanoma (acral lentiginous melanoma, pigmented basal cell carcinoma, blue naevus, seborrhoeic keratosis).
+- Confirmation of melanoma: dermoscopy, excision margins and Breslow thickness cut-offs are not in the passages read; only the prognostic factors listed are given.
+- Osteomyelitis types: the textbook gives no formal classification by duration; the answer lists its headings (pyogenic, mycobacterial, skeletal syphilis) and its stages.
