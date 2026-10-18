@@ -559,3 +559,20 @@ Sources: site textbook chapter 20 (tools/textbook_src/ch20.json) for pyelonephri
 - Chemical examination of urine: the specific chemical principle of each dipstick pad (for example enzyme reactions) is not given in the sources used, so it is not stated; only the dry-chemistry principle is.
 - Causes of uraemia: no list of chronic kidney disease causes beyond hypertension and diabetes is given in the sources.
 - Not yet written (no reliable source found yet, left for next session): heat coagulation test, reducing substances in urine, Benedict's test, hyperuricaemia causes and significance, renal glycosuria (two questions), haematuria (three questions).
+
+## Session 17, batch 3 (work-list questions 36 to 46, Chapter 21: testicular tumours, cryptorchidism, BPH)
+
+Sources: site textbook chapter 21 (tools/textbook_src/ch21.json) for all eleven answers except the BPH work-up.
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| Mention the important diagnostic workup for BPH. | American Family Physician, Benign Prostatic Hyperplasia (June 2023); CMAJ, "Does this patient have benign prostatic hyperplasia?" | https://www.aafp.org/pubs/afp/issues/2023/0600/benign-prostatic-hyperplasia.pdf ; https://cmaj.ca/content/cmaj/186/7/525.full.pdf |
+
+### Points left out
+- Name the testicular tumour markers: lactate dehydrogenase and placental alkaline phosphatase are not in the textbook; only AFP and hCG are given.
+- Investigate a testicular mass: no ultrasonography or scrotal imaging is described in the textbook, so none is stated.
+- Classify testicular tumours: the textbook table is only partly legible in the source file; the list is assembled from the classification text and the key concepts (pure and mixed forms; tumours unrelated to germ cell neoplasia in situ).
+- BPH work-up: the textbook gives no work-up. Digital rectal examination, IPSS, urinalysis and PSA are from the AFP and CMAJ articles; uroflowmetry was left out because it is not stated in the sources read.
+- Seminoma versus nonseminomatous germ cell tumour: the Cells, Local spread and Cut surface rows compare seminoma with embryonal carcinoma and the other nonseminomatous types as the textbook describes each; no single textbook table exists for this comparison.
+- Not yet written (outside sources still to be gathered): semen collection, indications, normal findings, oligospermia, azoospermia (definition and causes), semen analysis short note, laboratory investigation of male infertility, infertility hormones.
