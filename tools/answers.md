@@ -13003,114 +13003,165 @@ Results are interpreted together with the history and clinical findings.
 
 ## Give the clinical importance of alpha-fetoprotein.
 
-Alpha-fetoprotein (AFP) is an oncofoetal glycoprotein synthesised by the foetal liver, yolk sac and gastrointestinal tract. It is high in foetal life and falls to below 10 ng/mL (about 10 IU/mL) in the healthy adult by the end of the first year.
+**Alpha-fetoprotein** (AFP) is a foetal glycoprotein of about 70 kDa made in the yolk sac, foetal liver and gastrointestinal tract; some adult tumours re-express it. Its half-life is about 4 to 5 days. Normal level in men and non-pregnant women is typically 0 to 40 ng/mL.
 
-**Clinical importance**
+**Hepatocellular carcinoma**
 
-- **Tumour marker:** markedly raised in **hepatocellular carcinoma** (in about 70–90% of cases, often above 400 ng/mL) and in **yolk sac (endodermal sinus) tumours and non-seminomatous germ cell tumours** of the testis and ovary. It is used for diagnosis, screening in cirrhosis, monitoring treatment and detecting recurrence.
-- **Prenatal screening:** raised maternal serum AFP indicates neural tube defects (anencephaly, spina bifida), abdominal wall defects, multiple pregnancy and wrong dating; low levels are associated with Down syndrome (as part of the triple test).
-- Moderately raised in chronic hepatitis, cirrhosis and hepatic regeneration, which are false-positive causes.
-- AFP is not raised in pure seminoma.
+- Used for **screening** in high-risk groups: chronic hepatitis B or C, cirrhosis
+- In cirrhosis, a level above **200 ng/mL** strongly suggests hepatocellular carcinoma
+- **AFP-L3%** (cut-off 10%) has a sensitivity of 75 to 96.9% and a specificity of 90 to 92%; L3 is specific to malignancy, whereas L1 is linked to non-cancerous liver inflammation
+- A high AFP or AFP-L3% with a raised bilirubin (above 2 mg/dL) is linked to a poorer prognosis
 
+**Germ cell tumours**
+
+- **Yolk sac tumour** raises AFP; choriocarcinoma raises hCG; embryonal carcinoma raises both
+- **Seminoma does not** raise AFP; teratoma raises neither
+- About 90% of non-seminomatous testicular tumours have one or both markers raised
+
+**Prenatal screening**: maternal serum AFP is part of the triple and quadruple tests.
+
+- **Raised**: neural tube defects (spina bifida, anencephaly), abdominal wall defects (omphalocele, gastroschisis), sacrococcygeal teratoma, cystic hygroma, renal abnormalities, osteogenesis imperfecta, threatened abortion
+- **Low**: Down syndrome, trisomy 18, foetal demise, hydatidiform mole
+
+**Other causes of a raised AFP in adults**: metastatic liver cancer, cirrhosis, hepatitis, ataxia-telangiectasia.
+
+**Monitoring**
+
+- A persistently raised level after surgery suggests incomplete removal or metastasis
+- Falling levels suggest response to treatment; rising levels suggest failure or recurrence
+- In germ cell tumours, response is judged from the fall in AFP (half-life about 5 days) and hCG (12 to 20 hours)
 
 ## Give the clinical importance of creatine kinase.
 
-Creatine kinase (CK, creatine phosphokinase) catalyses the reversible transfer of phosphate between creatine phosphate and ADP to generate ATP. It is present mainly in skeletal muscle, heart and brain. Normal serum total CK is about 25–200 U/L (males higher than females). The isoenzymes are CK-MM (skeletal muscle), CK-MB (heart) and CK-BB (brain).
+**Creatine kinase** (CK, creatine phosphokinase) regenerates ATP in tissues with high energy demand: heart, skeletal muscle and brain. Its isoenzymes are **MM** (skeletal muscle), **MB** (heart) and **BB** (brain). Skeletal muscle is almost entirely MM; cardiac muscle has about 20 to 30% MB. In healthy people serum CK is mostly MM.
 
-**Clinical importance**
+**Causes of a raised CK**
 
-- **Myocardial infarction:** rises in 4–8 hours, peaks at 24 hours and returns to normal in 3–4 days.
-- **Skeletal muscle disease:** markedly raised in Duchenne muscular dystrophy (even before symptoms and in female carriers), polymyositis, and rhabdomyolysis (crush injury, statins).
-- Raised after intramuscular injections, vigorous exercise, convulsions, and surgery.
-- Raised in hypothyroidism; CK-BB is raised in brain injury and some tumours.
-- Low levels are of no clinical importance.
+- **Muscle injury or breakdown** (rhabdomyolysis) after crush injury, drugs, viral infection or strenuous exercise
+- **Chronic muscle disease**: muscular dystrophy (in Duchenne dystrophy the level can rise before symptoms and in many female carriers), myositis, burns
+- Prolonged or intense exercise, with greater rises in untrained people
+- **Heart disease**: myocardial infarction, myocarditis, some cardiac procedures
+- **Hypothyroidism**
+- **Statins**, particularly simvastatin, with higher risk when drugs inhibiting CYP3A4 are taken together
+- Non-specific rises in kidney disease and arrhythmias
 
+**Myocardial infarction**: total CK rises within about 12 hours, peaks at 24 to 36 hours and returns to normal after 48 to 72 hours. Because CK is not heart-specific, **CK-MB** and, increasingly, **troponin** are used instead.
+
+**Rhabdomyolysis**
+
+- Muscle pain, weakness and dark urine caused by myoglobin
+- CK above **1,000 IU/L** indicates rhabdomyolysis; above **5,000 IU/L** indicates severe disease
+- **Acute kidney injury** is the most common complication, so prompt intravenous fluids are given
+
+**Low CK**: seen in connective tissue diseases and reduced physical activity, and linked to higher mortality in chronic kidney disease.
+
+CK is a useful but **non-specific** marker; interpretation depends on sex, age, muscle mass, activity and clinical context.
 
 ## What is lipid profile? What are its components and normal range?
 
-The lipid profile is a group of blood tests that measures the lipid fractions in the fasting serum (after 9–12 hours of fasting) to assess the risk of atherosclerosis and coronary artery disease and to diagnose and monitor dyslipidaemia.
+The **lipid profile** (lipid panel) is a fasting blood test (after a 9 to 12 hour fast) that includes total cholesterol, HDL cholesterol (HDL-C), LDL cholesterol (LDL-C) and triglycerides; non-HDL cholesterol is also reported in a routine panel.
 
-**Components and desirable (normal) range**
+| Component | How obtained | Classification (mg/dL) |
+|---|---|---|
+| Total cholesterol | Measured directly | Below 200 desirable; 200 to 239 borderline high; 240 and above high |
+| LDL cholesterol | Usually calculated | Below 100 optimal; 100 to 129 near optimal or above optimal; 130 to 159 borderline high; 160 to 189 high; 190 and above very high |
+| HDL cholesterol | Measured directly | Below 40 low; 60 and above high |
+| Triglycerides | Measured directly | Below 150 normal; 150 to 199 borderline high; 200 to 499 high; 500 and above very high |
 
-| Component | Desirable range |
-|---|---|
-| Total cholesterol | Below 200 mg/dL (5.2 mmol/L) |
-| LDL cholesterol | Below 100 mg/dL (optimal); below 130 mg/dL (near optimal) |
-| HDL cholesterol | Above 40 mg/dL in males, above 50 mg/dL in females |
-| Triglycerides | Below 150 mg/dL (1.7 mmol/L) |
-| VLDL cholesterol | 2–30 mg/dL (triglycerides ÷ 5) |
-| Total cholesterol/HDL ratio | Below 5 (ideal below 3.5) |
-
-LDL cholesterol is usually calculated by the Friedewald formula: LDL = Total cholesterol − HDL − (Triglycerides ÷ 5), valid when triglycerides are below 400 mg/dL. Borderline high total cholesterol is 200–239 mg/dL and high is 240 mg/dL or above; borderline high triglycerides are 150–199 mg/dL and high are 200 mg/dL or above.
-
+- **Friedewald equation**: LDL-C is total cholesterol minus HDL-C minus triglycerides divided by 5 (in mg/dL)
+- It becomes inaccurate when triglycerides are high; LDL-C is then measured directly (when fasting triglycerides are above about 200 to 400 mg/dL)
+- **Total cholesterol to HDL ratio**: 5 to 1 desirable, 3.5 to 1 optimum
+- Without fasting, only total cholesterol and HDL-C are usable
+- Abnormal results prompt a search for secondary causes: diabetes, hypothyroidism, liver or kidney disease, and drugs
 
 ## What are the fractions of lipid?
 
-The plasma lipids are carried in lipoproteins, and the lipid fractions measured are:
+**Fractions measured in the lipid profile**
 
-1. **Total cholesterol** (free cholesterol and cholesteryl esters).
-2. **Triglycerides.**
-3. **Phospholipids.**
-4. **Free fatty acids** (bound to albumin).
+1. **Total cholesterol**
+2. **HDL cholesterol**
+3. **LDL cholesterol** (usually calculated)
+4. **Triglycerides**
 
-The lipoprotein fractions, separated by ultracentrifugation or electrophoresis, are:
+**Lipoprotein fractions** that carry plasma lipids
 
-- **Chylomicrons** (richest in triglycerides; transport dietary fat).
-- **VLDL** (very low-density lipoprotein, pre-β; transports endogenous triglycerides).
-- **IDL** (intermediate-density lipoprotein).
-- **LDL** (low-density lipoprotein, β; carries most cholesterol).
-- **HDL** (high-density lipoprotein, α; carries cholesterol from tissues to liver).
-
+1. **Chylomicrons**: made in the intestine; carry dietary triglycerides
+2. **VLDL** (very low-density lipoprotein): made in the liver; carries endogenous triglycerides and some cholesterol
+3. **IDL** (intermediate-density lipoprotein): remnant of VLDL; carries cholesterol esters and triglycerides
+4. **LDL** (low-density lipoprotein): carries cholesterol esters
+5. **HDL** (high-density lipoprotein): carries cholesterol esters; moves excess cholesterol from tissues to the liver
 
 ## Write a short note on lipoprotein.
 
-Lipoproteins are spherical macromolecular complexes that transport water-insoluble lipids in plasma. Each has a hydrophobic core of triglycerides and cholesteryl esters, surrounded by a surface monolayer of phospholipid, free cholesterol and specific proteins called **apolipoproteins**.
+**Lipoproteins** carry lipids through the watery blood, which lipids cannot do alone. Their metabolism determines the serum lipid levels.
 
-| Lipoprotein | Main lipid | Main apolipoproteins | Function |
+| Lipoprotein | Origin and main lipid | Apolipoproteins | Role |
 |---|---|---|---|
-| Chylomicron | Dietary triglyceride | B-48, C-II, E | Carries dietary fat from intestine to tissues |
-| VLDL | Endogenous triglyceride | B-100, C-II, E | Carries liver-made triglyceride to tissues |
-| IDL | Triglyceride and cholesterol | B-100, E | Remnant of VLDL; converted to LDL |
-| LDL | Cholesterol (about 50%) | B-100 | Delivers cholesterol to tissues through LDL receptors |
-| HDL | Phospholipid and cholesterol | A-I, A-II | Reverse cholesterol transport from tissues to liver |
+| Chylomicron | Intestine; dietary triglycerides | A-I, A-II, A-IV, B-48, C-I, C-II, C-III, E | Delivers triglycerides to tissues; remnants are cleared by the liver |
+| VLDL | Liver; endogenous triglycerides and some cholesterol | B-100, C-I, C-II, C-III, E | Triglycerides are hydrolysed by lipoprotein lipase in muscle and fat |
+| IDL | Remnant of VLDL; cholesterol esters and triglycerides | B-100, C-III, E | Further depleted of triglycerides and converted toward LDL |
+| LDL | Cholesterol esters | B-100 | Delivers cholesterol to tissues; cleared by the LDL receptor |
+| HDL | Cholesterol esters | A-I, A-II, C-I, C-II, C-III, D, E | Reverse cholesterol transport: moves excess cholesterol from tissues to the liver |
 
-The apolipoproteins act as structural components, as ligands for receptors, and as cofactors for enzymes (apo C-II activates lipoprotein lipase; apo A-I activates LCAT). Abnormalities cause hyperlipoproteinaemias (Fredrickson types I–V) and atherosclerosis. Lipoprotein(a) is an LDL-like particle that is an independent risk factor for coronary disease.
+**Functions of apolipoproteins**
 
+- **A-I**: main structural protein of HDL; activates LCAT (lecithin-cholesterol acyltransferase)
+- **C-II**: activates lipoprotein lipase
+- **C-III**: inhibits lipoprotein lipase
+- **E**: ligand for the LDL receptor
+
+**Clinical importance**
+
+- Raised LDL cholesterol is strongly associated with **atherosclerotic cardiovascular disease**
+- Apo B-100 correlates with LDL particle number, so higher levels raise the risk of atherosclerosis
+- **Familial hypercholesterolaemia** is caused mainly by mutations of the LDL receptor gene
+- Severe lipoprotein lipase deficiency causes **chylomicronaemia**, with triglycerides above 2000 mg/dL and a risk of pancreatitis
 
 ## Why is HDL good cholesterol and LDL harmful (which fraction is better)?
 
-**HDL is "good" cholesterol** because it carries cholesterol from peripheral tissues, including the arterial wall, back to the liver (reverse cholesterol transport) for excretion in bile. It also has antioxidant, anti-inflammatory and endothelium-protective actions. A high HDL level is therefore inversely related to the risk of coronary artery disease.
+| Feature | HDL | LDL |
+|---|---|---|
+| Cholesterol transport | From peripheral tissues to the liver (reverse cholesterol transport) | Delivers cholesterol to tissues |
+| Effect on the artery wall | Antiatherogenic and anti-inflammatory; removes cholesterol from foam cells in plaques, which can reduce plaque size and inflammation | Oxidised LDL is deposited in the arterial wall and forms foam cells |
+| Main apolipoprotein | A-I | B-100 (correlates with LDL particle number) |
+| Association with risk | Low HDL is linked to higher cardiovascular risk | Raised LDL cholesterol is strongly associated with atherosclerotic cardiovascular disease |
+| Level | Below 40 mg/dL is low; 60 mg/dL and above is high | Below 100 mg/dL is optimal |
 
-**LDL is "bad" cholesterol** because it carries cholesterol from the liver to peripheral tissues. When raised, it is deposited in the arterial intima, and after oxidation it is taken up by macrophages through scavenger receptors, forming foam cells and atheromatous plaques. High LDL is directly related to the risk of atherosclerosis, myocardial infarction and stroke.
-
-**Which fraction is better:** a high HDL fraction and a low LDL fraction. A favourable profile has HDL above 40–50 mg/dL, LDL below 100 mg/dL, and a low total cholesterol/HDL ratio.
-
+- A **high HDL and a low LDL** are the favourable fractions
+- In treatment, **lowering LDL cholesterol is paramount**
+- Raising HDL has not been shown to help: HDL-raising therapies have given no clinical benefit, and CETP inhibitors raised HDL by up to 100% yet cardiovascular events rose
+- Very high HDL due to CETP deficiency, primary familial hyperalphalipoproteinaemia or endothelial lipase deficiency may not be protective
 
 ## How will you diagnose a case of dyslipidaemia?
 
-Dyslipidaemia is an abnormality of plasma lipids, either raised cholesterol (hypercholesterolaemia), raised triglycerides, mixed, or low HDL. The diagnosis is made as follows:
-
-1. **History and examination:** family history of premature coronary disease or dyslipidaemia; diet, alcohol, drugs. Look for xanthelasma, tendon xanthomas, corneal arcus (familial hypercholesterolaemia) and eruptive xanthomas (hypertriglyceridaemia).
-2. **Fasting lipid profile** (after 9–12 hours): total cholesterol, triglycerides, HDL, LDL (calculated or directly measured) and VLDL. Serum appearance after standing overnight (creamy layer indicates chylomicrons).
-3. **Exclusion of secondary causes:** diabetes mellitus (fasting glucose, HbA1c), hypothyroidism (TSH), nephrotic syndrome (urine protein), obstructive liver disease, alcohol, and drugs (thiazides, β-blockers, steroids, oral contraceptives).
-4. **Lipoprotein electrophoresis or apolipoprotein assay** and genetic tests to classify the primary hyperlipoproteinaemias (Fredrickson types).
-5. **Assessment of cardiovascular risk** with ECG and other tests.
-
+1. **Define the abnormality**: raised LDL-C, triglycerides, non-HDL-C or lipoprotein(a), or low HDL-C; more than one is often present
+2. **History**
+   - Diet: saturated and trans fats, simple sugars, alcohol
+   - Drugs that raise LDL-C, triglycerides or lipoprotein(a), or lower HDL-C
+   - Comorbidities: hypothyroidism, nephrotic syndrome, chronic kidney disease, diabetes, obesity, HIV, inflammatory disease, liver disease
+   - A new or suddenly worsening abnormality suggests a secondary cause
+   - Anabolic steroid use in young, fit males with very low HDL-C
+3. **Family history**: premature cardiovascular disease, lipid disorders, use of lipid-lowering drugs; pancreatitis if triglycerides are markedly raised; a marked abnormality or onset at a young age suggests a genetic disorder
+4. **Examination**: look for xanthomas, xanthelasma and corneal arcus
+5. **Fasting lipid profile** (after 9 to 12 hours): total cholesterol, triglycerides, HDL-C, calculated LDL-C and non-HDL-C
+   - Direct LDL-C is measured if fasting triglycerides are high (above about 200 to 400 mg/dL)
+   - LDL-C of 130 to 159 mg/dL is borderline high, 160 to 189 high and 190 or more very high; triglycerides of 150 to 499 mg/dL indicate hypertriglyceridaemia and 500 or more very high; HDL-C below 40 mg/dL is low
+6. **Exclude secondary causes**: TSH for raised LDL-C; glycaemic control for raised triglycerides with diabetes; also liver and kidney disease and drugs
+7. **Further tests**
+   - Lipoprotein(a): premature coronary heart disease, strong family history, familial hypercholesterolaemia, statin resistance, aortic stenosis of uncertain cause, unexplained ischaemic stroke
+   - Apo B: above 130 mg/dL is a risk enhancer
+   - Genetic testing if monogenic hypercholesterolaemia is suspected, with screening of family members
+   - Coronary calcium scan when the decision to start a statin is uncertain
 
 ## Name the body fluids usually examined in clinical pathology.
 
-The body fluids usually examined in clinical pathology are:
-
-1. **Blood** (haematological, biochemical and microbiological examination).
-2. **Urine** (physical, chemical and microscopic examination).
-3. **Stool** (for occult blood, parasites, and other tests).
-4. **Cerebrospinal fluid (CSF)** (for meningitis and other central nervous system diseases).
-5. **Serous effusions:** pleural, pericardial and peritoneal (ascitic) fluid, to differentiate transudate from exudate.
-6. **Synovial fluid** (for arthritis, gout and infection).
-7. **Semen** (semen analysis for infertility).
-8. **Sputum** (for tuberculosis and malignant cells).
-9. **Gastric juice, bile, and duodenal aspirate.**
-10. **Others:** bone marrow aspirate, breast milk, vaginal and cervical secretions, and fluid from cysts and abscesses.
+1. **Cerebrospinal fluid**: white cell count, protein, glucose, red cells (haemorrhage); for meningitis, tumours and demyelinating diseases
+2. **Pleural fluid**: appearance, protein and LDH (transudate or exudate), leucocytes, pH, triglycerides and cholesterol, adenosine deaminase, amylase
+3. **Pericardial fluid**: appearance, total white cell count with differential, cytology, bacteriological smears and cultures
+4. **Peritoneal (ascitic) fluid**: appearance, serum-ascites albumin gradient, total protein, polymorphonuclear count, glucose, amylase, triglycerides, urea and creatinine, adenosine deaminase
+5. **Amniotic fluid**: appearance and bilirubin (an indirect measure of foetal anaemia); amniocentesis assesses chromosomal anomalies, foetal lung maturity and alloimmunisation
+6. **Synovial fluid**: volume, viscosity, clarity, colour, Gram stain, cell count and differential, crystals, culture
+7. **Saliva**: antibodies (for example to Helicobacter pylori, Lyme disease, mumps, measles, HIV-1), hormones (cortisol, testosterone), drugs
 
 ## Define atrophy.
 
