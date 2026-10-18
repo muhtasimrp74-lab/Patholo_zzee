@@ -675,3 +675,29 @@ Sources: site textbook ch26 (Ewing sarcoma, giant cell tumour, osteomyelitis, jo
 - Normal CSF values and numerical cell counts are not given in the textbook, so none are stated.
 - Osteomyelitis case: blood culture, sedimentation rate and C-reactive protein are not mentioned for osteomyelitis in the textbook, so they are left out.
 - Systemic diseases affecting joints: the textbook does not use this phrase; rheumatoid arthritis and gout are chosen from its descriptions of joint diseases with systemic or metabolic causes.
+
+## Session 19, batch 3 (work-list questions 31 to 38 and 43, Chapter 30: acid-base, electrolytes, LDH; outside sources)
+
+The site textbook does not cover Clinical Biochemistry, so all answers use outside sources. No answers were previously empty.
+
+| Question | Source | URL |
+|---|---|---|
+| Normal serum Na, K, Cl, HCO3 | NBME Laboratory Reference Values (Na 136 to 146, K 3.5 to 5.0, Cl 95 to 105, HCO3 22 to 28) | https://nbme.org/sites/default/files/2024-12/Laboratory_Reference_Values.pdf |
+| Normal pH of blood | StatPearls "Metabolic Acidosis" | https://www.ncbi.nlm.nih.gov/sites/books/NBK482146/ |
+| Normal pH of urine | WikEM "Urine analysis" (4.5 to 8.0); LITFL "Urinalysis Overview" | https://wikem.org/wiki/Urinalysis ; https://litfl.com/urinalysis-overview/ |
+| Metabolic acidosis: definition and causes; diarrhoea case; shock and oliguria case | StatPearls "Metabolic Acidosis"; StatPearls "Anion Gap and Non-Anion Gap Metabolic Acidosis" | https://www.ncbi.nlm.nih.gov/sites/books/NBK482146/ ; https://www.ncbi.nlm.nih.gov/sites/books/NBK448090/ |
+| Metabolic alkalosis | StatPearls "Alkalosis" and "Physiology, Metabolic Alkalosis"; Merck Manual Professional "Metabolic Alkalosis" | https://www.ncbi.nlm.nih.gov/sites/books/NBK545269/ ; https://www.ncbi.nlm.nih.gov/sites/books/NBK482291/ ; https://www.merckmanuals.com/professional/nephrology/acid-base-regulation-and-disorders/metabolic-alkalosis |
+| Respiratory acidosis | StatPearls "Respiratory Acidosis"; Merck Manual Professional "Respiratory Acidosis" | https://www.ncbi.nlm.nih.gov/sites/books/NBK482430/ ; https://www.merckmanuals.com/professional/endocrine-and-metabolic-disorders/acid-base-regulation-and-disorders/respiratory-acidosis |
+| Clinical importance of LDH | StatPearls "Biochemistry, Lactate Dehydrogenase"; Shipman, J Lab Precis Med review of plasma LDH | https://www.ncbi.nlm.nih.gov/sites/books/NBK557536/ ; https://jlpm.amegroups.org/article/view/8567/html |
+
+### Points left out and decisions needed
+- Normal electrolyte ranges differ between sources (StatPearls "Electrolytes" gives sodium 135 to 145, potassium 3.6 to 5.5, bicarbonate 23 to 30 mmol/L; the metabolic acidosis page gives bicarbonate 21 to 28). The NBME table is used because it gives all four values from one source. Please confirm or give the range your department uses.
+- Urine pH: no StatPearls page with the range was retrieved; WikEM and LITFL are used. The normal chloride range is not given in the StatPearls pages read.
+- Diarrhoea case: hypokalaemia comes from a fpnotebook summary that was read in search results only; sodium, dehydration and the degree of change are not stated because no reliable source was read for them.
+- Shock and oliguria case: hyperkalaemia, hyponatraemia and raised urea and creatinine are expected but are not in the sources read, so only the acid-base status is stated. Please decide whether to add a source (for example StatPearls "Acute Kidney Injury").
+- Metabolic alkalosis: causes listed from the sources above; Bartter, Gitelman and Liddle syndromes are named only as the sources name them.
+- Respiratory acidosis: compensation figures are from StatPearls (1 and 4 mEq/L per 10 mmHg).
+- LDH: the normal reference range is not given because no source read states one.
+
+### Housekeeping (batch 3)
+- tools/hand_edits.json: one hunk removed (the chloride 98 to 107 mmol/L fix in the old electrolytes answer; that text no longer exists). 6 remain.

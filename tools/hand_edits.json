@@ -14,13 +14,6 @@
   "post": "<style id=\"zz-perf\">@media (min-width:70"
  },
  {
-  "old": "98–106 mmol/L</strong>",
-  "new": "98–107 mmol/L</strong>",
-  "nth": 0,
-  "pre": "Chloride (Cl⁻)</strong></td><td><strong>",
-  "post": "</td></tr><tr><td><strong>Bicarbonate (H"
- },
- {
   "old": "\nfunction heat(){\n const A=actMap(),W=innerWidth<520?16:22,tdy=dstr(Date.now()),base=new Date(tdy+'T12:00:00').getTime(),dw=new Date(base).getDay();\n const first=base-dw*DAY-(W-1)*7*DAY,lv=n=>",
   "new": "\nfunction heat(){\n const A=actMap(),tdy=dstr(Date.now()),base=new Date(tdy+'T12:00:00').getTime(),dw=new Date(base).getDay();\n /* the grid starts at the week of 1 Oct 2026 and runs forward (at least 12 weeks wide) */\n const s0=new Date('2026-10-01T12:00:00').getTime(),first=s0-new Date(s0).getDay()*DAY,W=Math.max(12,Math.ceil((base-first)/DAY/7)+1),lv=n=>",
   "nth": 0,
