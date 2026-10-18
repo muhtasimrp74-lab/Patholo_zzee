@@ -13,7 +13,7 @@
 
 ## What do you mean by cellular adaptive change?
 
-Adaptations are reversible functional and structural responses to changes in physiologic states (for example pregnancy) and some pathologic stimuli, during which new but altered steady states are achieved, allowing the cell to survive and continue to function.
+**Adaptations** are reversible functional and structural responses to changes in physiologic states (for example pregnancy) and some pathologic stimuli, during which new but altered steady states are achieved, allowing the cell to survive and continue to function.
 
 ## Write down the name of adaptive changes with an example.
 
@@ -26,7 +26,7 @@ Adaptations are reversible functional and structural responses to changes in phy
 
 ## Define cellular adaptation.
 
-Adaptations are reversible changes in the size, number, phenotype, metabolic activity, or functions of cells in response to changes in their environment.
+**Adaptations** are reversible changes in the size, number, phenotype, metabolic activity, or functions of cells in response to changes in their environment.
 
 ## Examples of each type of cellular adaptation.
 
@@ -91,36 +91,36 @@ Adaptations are reversible changes in the size, number, phenotype, metabolic act
 
 | Feature | Hyperplasia | Neoplasia |
 |---|---|---|
-| Definition | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by acquired or, less commonly, inherited mutations |
-| Cells involved | Mature cells and, in some cases, tissue stem cells | A single cell and its clonal progeny |
-| Driving factor | Growth factors and hormones | Mutations that alter gene function and give the cells a growth advantage |
-| Growth control | Remains controlled; can regress or stabilise if the stimulation is eliminated | Excessive proliferation independent of physiologic growth signals and controls |
+| **Definition** | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by acquired or, less commonly, inherited mutations |
+| **Cells involved** | Mature cells and, in some cases, tissue stem cells | A single cell and its clonal progeny |
+| **Driving factor** | Growth factors and hormones | Mutations that alter gene function and give the cells a growth advantage |
+| **Growth control** | Remains controlled; can regress or stabilise if the stimulation is eliminated | Excessive proliferation independent of physiologic growth signals and controls |
 
-Pathologic hyperplasia is distinct from cancer, but it is a fertile soil in which cancer may arise.
+Pathologic **hyperplasia** is distinct from cancer, but it is a fertile soil in which cancer may arise.
 
 ## Mention the important differences between hypertrophy and hyperplasia.
 
 | Feature | Hypertrophy | Hyperplasia |
 |---|---|---|
-| Definition | Increase in the size of cells, which increases the size of the organ | Increase in the number of cells in an organ or tissue in response to a stimulus |
-| New cells | None; just larger cells, from synthesis and assembly of additional intracellular structural components | New cells are formed |
-| Cells involved | Occurs in tissues with limited proliferative capacity; non-dividing cells such as myocardial fibres increase mass by hypertrophy only | Can take place only if the tissue contains cells capable of dividing, or abundant tissue stem cells |
-| Mechanism | Increased cellular protein production, from growth factors and direct effects of mechanical force | Growth factor-driven proliferation of mature cells and, in some cases, increased output of new cells from tissue stem cells |
-| Physiologic example | Gravid uterus; skeletal muscle of bodybuilders | Breast epithelium at puberty and pregnancy; liver regeneration; bone marrow |
-| Pathologic example | Heart in hypertension or valvular disease | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
+| **Definition** | Increase in the size of cells, which increases the size of the organ | Increase in the number of cells in an organ or tissue in response to a stimulus |
+| **New cells** | None; just larger cells, from synthesis and assembly of additional intracellular structural components | New cells are formed |
+| **Cells involved** | Occurs in tissues with limited proliferative capacity; non-dividing cells such as myocardial fibres increase mass by hypertrophy only | Can take place only if the tissue contains cells capable of dividing, or abundant tissue stem cells |
+| **Mechanism** | Increased cellular protein production, from growth factors and direct effects of mechanical force | Growth factor-driven proliferation of mature cells and, in some cases, increased output of new cells from tissue stem cells |
+| **Physiologic example** | Gravid uterus; skeletal muscle of bodybuilders | Breast epithelium at puberty and pregnancy; liver regeneration; bone marrow |
+| **Pathologic example** | Heart in hypertension or valvular disease | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
 
-The two frequently occur together and may be triggered by the same stimuli.
+**The two frequently** occur together and may be triggered by the same stimuli.
 
 ## Discuss how hyperplasia differs from neoplasia.
 
 | Feature | Hyperplasia | Neoplasia |
 |---|---|---|
-| Definition | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by acquired or, less commonly, inherited mutations |
-| Cells involved | Mature cells and, in some cases, tissue stem cells | A single cell and its clonal progeny |
-| Driving factor | Growth factors and hormones | Mutations that alter gene function and give the cells a growth advantage |
-| Growth control | Remains controlled; can regress or stabilise if the stimulation is eliminated | Excessive proliferation independent of physiologic growth signals and controls |
+| **Definition** | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by acquired or, less commonly, inherited mutations |
+| **Cells involved** | Mature cells and, in some cases, tissue stem cells | A single cell and its clonal progeny |
+| **Driving factor** | Growth factors and hormones | Mutations that alter gene function and give the cells a growth advantage |
+| **Growth control** | Remains controlled; can regress or stabilise if the stimulation is eliminated | Excessive proliferation independent of physiologic growth signals and controls |
 
-Pathologic hyperplasia is distinct from cancer, but it is a fertile soil in which cancer may arise.
+Pathologic **hyperplasia** is distinct from cancer, but it is a fertile soil in which cancer may arise.
 
 ## Define hyperplasia.
 
@@ -198,14 +198,14 @@ Atrophy is a reduction in the size of an organ or tissue due to a decrease in ce
 
 ## Why does pathological atrophy occur?
 
-1. Decreased workload (disuse), as in a limb immobilised in a plaster cast or complete bed rest.
-2. Loss of innervation (denervation).
-3. Diminished blood supply (chronic ischaemia), as in senile atrophy of the brain from atherosclerosis.
-4. Inadequate nutrition, as in profound protein-calorie malnutrition.
-5. Loss of endocrine stimulation, as after menopause or castration.
-6. Pressure, from tissue compression.
+1. **Decreased workload** (disuse), as in a limb immobilised in a plaster cast or complete bed rest.
+2. **Loss of innervation** (denervation).
+3. **Diminished blood supply** (chronic ischaemia), as in senile atrophy of the brain from atherosclerosis.
+4. **Inadequate nutrition**, as in profound protein-calorie malnutrition.
+5. **Loss of endocrine stimulation**, as after menopause or castration.
+6. **Pressure**, from tissue compression.
 
-The fundamental cellular change is a decrease in cell size and organelles. This brings the cell's metabolic demands into balance with the lower levels of blood supply, nutrition or trophic stimulation, and a new equilibrium is achieved.
+**The fundamental cellular change** is a decrease in cell size and organelles. This brings the cell's metabolic demands into balance with the lower levels of blood supply, nutrition or trophic stimulation, and a new equilibrium is achieved.
 
 ## Mechanism of atrophy of a cell or organ.
 
@@ -272,10 +272,10 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 
 ## Give four examples of squamous metaplasia.
 
-1. Trachea and bronchi of a habitual cigarette smoker, where ciliated columnar cells are replaced by stratified squamous cells.
-2. Respiratory epithelium in vitamin A (retinoic acid) deficiency.
-3. Cornea in vitamin A deficiency.
-4. Excretory ducts of the salivary glands, pancreas or bile ducts, in the presence of stones.
+1. **Trachea and bronchi** of a habitual cigarette smoker, where ciliated columnar cells are replaced by stratified squamous cells.
+2. **Respiratory epithelium** in vitamin A (retinoic acid) deficiency.
+3. **Cornea** in vitamin A deficiency.
+4. **Excretory ducts** of the salivary glands, pancreas or bile ducts, in the presence of stones.
 
 ## Write down the type of metaplasia in Barrett's esophagus.
 
@@ -304,18 +304,18 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 
 ## Important sites of epithelial metaplasia.
 
-- Trachea and bronchi of a habitual cigarette smoker: ciliated columnar epithelium replaced by stratified squamous epithelium.
-- Respiratory epithelium and cornea in vitamin A deficiency: squamous metaplasia.
-- Excretory ducts of the salivary glands, pancreas or bile ducts, in the presence of stones: squamous metaplasia.
-- Oesophagus, in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells): squamous to columnar metaplasia.
+- **Trachea and bronchi** of a habitual cigarette smoker: ciliated columnar epithelium replaced by stratified squamous epithelium.
+- **Respiratory epithelium and cornea** in vitamin A deficiency: squamous metaplasia.
+- **Excretory ducts** of the salivary glands, pancreas or bile ducts, in the presence of stones: squamous metaplasia.
+- **Oesophagus**, in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells): squamous to columnar metaplasia.
 
 ## Classify metaplasia with examples.
 
 | Class | Type | Example |
 |---|---|---|
-| Epithelial | Columnar to squamous (the most common) | Trachea and bronchi of a smoker; respiratory epithelium and cornea in vitamin A deficiency; ducts of the salivary glands, pancreas or bile ducts with stones |
-| Epithelial | Squamous to columnar | Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells) |
-| Connective tissue | Formation of cartilage, bone or adipose cells in tissues that normally do not contain these elements | Bone formation in muscle after intramuscular haemorrhage (myositis ossificans) |
+| **Epithelial** | Columnar to squamous (the most common) | Trachea and bronchi of a smoker; respiratory epithelium and cornea in vitamin A deficiency; ducts of the salivary glands, pancreas or bile ducts with stones |
+| **Epithelial** | Squamous to columnar | Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells) |
+| **Connective tissue** | Formation of cartilage, bone or adipose cells in tissues that normally do not contain these elements | Bone formation in muscle after intramuscular haemorrhage (myositis ossificans) |
 
 ## Bad consequence / clinical importance of metaplasia.
 
@@ -331,14 +331,14 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 
 | Feature | Metaplasia | Dysplasia |
 |---|---|---|
-| Meaning | Replacement of one cell type with another; a reversible change | Literally "disordered growth" |
-| Nature | Adaptation to chronic injury | Premalignant change |
-| Setting | Nearly always found in association with tissue damage, repair and regeneration | Often occurs in metaplastic epithelium, but not all metaplastic epithelium is dysplastic |
-| Cells | The new cell type is better suited to withstand a noxious chronic environmental exposure | Considerable pleomorphism; large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio; mitotic figures increased and seen throughout the epithelium instead of only in the basal layer |
-| Architecture | Orderly | Architectural disarray and loss of orderly differentiation |
-| Reversibility | Reversible | With removal of inciting causes, moderately severe dysplasia may be completely reversible; progression to cancer is not inevitable |
-| Relation to cancer | Persistent influences can initiate malignant transformation in the metaplastic epithelium | Precursor to malignant transformation; when severe and involving the full thickness of the epithelium without penetrating the basement membrane it is carcinoma in situ |
-| Examples | Barrett oesophagus (oesophageal squamous epithelium replaced by glandular epithelium); squamous metaplasia of bronchial epithelium in tobacco smokers | In the cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of cancer |
+| **Meaning** | Replacement of one cell type with another; a reversible change | Literally "disordered growth" |
+| **Nature** | Adaptation to chronic injury | Premalignant change |
+| **Setting** | Nearly always found in association with tissue damage, repair and regeneration | Often occurs in metaplastic epithelium, but not all metaplastic epithelium is dysplastic |
+| **Cells** | The new cell type is better suited to withstand a noxious chronic environmental exposure | Considerable pleomorphism; large hyperchromatic nuclei with a high nuclear-to-cytoplasmic ratio; mitotic figures increased and seen throughout the epithelium instead of only in the basal layer |
+| **Architecture** | Orderly | Architectural disarray and loss of orderly differentiation |
+| **Reversibility** | Reversible | With removal of inciting causes, moderately severe dysplasia may be completely reversible; progression to cancer is not inevitable |
+| **Relation to cancer** | Persistent influences can initiate malignant transformation in the metaplastic epithelium | Precursor to malignant transformation; when severe and involving the full thickness of the epithelium without penetrating the basement membrane it is carcinoma in situ |
+| **Examples** | Barrett oesophagus (oesophageal squamous epithelium replaced by glandular epithelium); squamous metaplasia of bronchial epithelium in tobacco smokers | In the cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of cancer |
 
 ## Define dysplasia.
 
@@ -346,7 +346,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 
 ## What do you mean by cell injury?
 
-Cell injury is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations that affect essential cellular functions. It is reversible up to a point, but if the injurious stimulus is persistent or severe, the cell suffers irreversible injury and ultimately undergoes cell death.
+**Cell injury** is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations that affect essential cellular functions. It is reversible up to a point, but if the injurious stimulus is persistent or severe, the cell suffers irreversible injury and ultimately undergoes cell death.
 
 ## What are the causes of cell injury?
 
@@ -519,26 +519,26 @@ After 1 or 2 days the nucleus of the necrotic cell disappears totally.
 
 ## Describe in brief the sequence of events in ischemic injury.
 
-1. Intracellular oxygen tension falls, oxidative phosphorylation fails and ATP generation decreases.
-2. A fall in ATP with a rise in AMP stimulates phosphorylase and phosphofructokinase, which increase glycogenolysis and glycolysis; glycogen stores are rapidly depleted.
-3. Anaerobic glycolysis produces lactic acid and inorganic phosphates, which lower the intracellular pH and reduce the activity of many cytosolic enzymes.
-4. The sodium-potassium ATPase of the plasma membrane fails. Sodium and water enter the cell and potassium falls, causing cell and ER swelling. This stage is reversible.
-5. With prolonged ATP depletion, ribosomes detach from the rough ER and polysomes dissociate, so protein synthesis falls, and protein misfolding may increase.
-6. The mitochondrial permeability transition pore opens, membrane potential is lost and ATP depletion progresses.
-7. Severe or prolonged ischaemia causes severe mitochondrial swelling, calcium influx into mitochondria and the cell, and rupture of lysosomes and the plasma membrane.
-8. The cell dies by necrosis, and by apoptosis through release of cytochrome c from mitochondria.
+1. **Intracellular oxygen tension falls**, oxidative phosphorylation fails and ATP generation decreases.
+2. **A fall** in ATP with a rise in AMP stimulates phosphorylase and phosphofructokinase, which increase glycogenolysis and glycolysis; glycogen stores are rapidly depleted.
+3. **Anaerobic glycolysis produces** lactic acid and inorganic phosphates, which lower the intracellular pH and reduce the activity of many cytosolic enzymes.
+4. **The sodium-potassium ATPase** of the plasma membrane fails. Sodium and water enter the cell and potassium falls, causing cell and ER swelling. This stage is reversible.
+5. **With prolonged ATP depletion**, ribosomes detach from the rough ER and polysomes dissociate, so protein synthesis falls, and protein misfolding may increase.
+6. **The mitochondrial permeability** transition pore opens, membrane potential is lost and ATP depletion progresses.
+7. **Severe or prolonged** ischaemia causes severe mitochondrial swelling, calcium influx into mitochondria and the cell, and rupture of lysosomes and the plasma membrane.
+8. **The cell dies** by necrosis, and by apoptosis through release of cytochrome c from mitochondria.
 
 ## Write down the mechanism of irreversible cell injury.
 
-- The point of no return, at which damage becomes irreversible, is still largely undefined.
-- Two phenomena consistently characterise irreversibility.
+- **The point** of no return, at which damage becomes irreversible, is still largely undefined.
+- **Two phenomena consistently** characterise irreversibility.
 
-1. Inability to reverse mitochondrial dysfunction, that is lack of oxidative phosphorylation and ATP generation, even after the original injury resolves.
-2. Profound disturbances in membrane function.
+1. **Inability** to reverse mitochondrial dysfunction, that is lack of oxidative phosphorylation and ATP generation, even after the original injury resolves.
+2. **Profound disturbances** in membrane function.
 
-- Mitochondrial damage opens the permeability transition pore, with loss of membrane potential and progressive ATP depletion that culminates in necrosis.
-- Injury to lysosomal membranes lets lysosomal enzymes enter the cytoplasm and digest the cell, which is the enzymatic dissolution characteristic of necrosis.
-- Severe mitochondrial damage with ATP depletion, and rupture of lysosomal and plasma membranes, are typically associated with necrosis.
+- **Mitochondrial damage opens** the permeability transition pore, with loss of membrane potential and progressive ATP depletion that culminates in necrosis.
+- **Injury** to lysosomal membranes lets lysosomal enzymes enter the cytoplasm and digest the cell, which is the enzymatic dissolution characteristic of necrosis.
+- **Severe mitochondrial damage** with ATP depletion, and rupture of lysosomal and plasma membranes, are typically associated with necrosis.
 
 ## How is depletion of ATP associated with hypoxic cell injury?
 
@@ -687,7 +687,7 @@ Early loss of selective membrane permeability, leading to overt membrane damage,
 
 ## What is reperfusion injury?
 
-Restoration of blood flow to ischaemic tissues can promote recovery of reversibly injured cells, but it can also paradoxically exacerbate cell injury and cause cell death. Reperfused tissues may lose viable cells in addition to those irreversibly damaged by the ischaemia; this process is called ischaemia-reperfusion injury.
+Restoration of blood flow to ischaemic tissues can promote recovery of reversibly injured cells, but it can also paradoxically exacerbate cell injury and cause cell death. Reperfused tissues may lose viable cells in addition to those irreversibly damaged by the ischaemia; this process is called ischaemia-**reperfusion injury**.
 
 ## Discuss the mechanism of reperfusion injury.
 
@@ -764,10 +764,10 @@ Necrosis of tissues has several morphologically distinct patterns, which give cl
 
 | Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
-| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
-| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
-| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
-| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
+| **Tissue change** | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| **Mechanism** | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
+| **Appearance** | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| **Setting** | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
 
 ## Classify necrosis.
 
@@ -829,11 +829,11 @@ Necrosis of tissues has several morphologically distinct patterns, which give cl
 
 | Feature | Coagulative necrosis | Caseous necrosis |
 |---|---|---|
-| Architecture | Architecture of the dead tissue is preserved for at least some days | Structureless collection of fragmented or lysed cells and amorphous granular debris |
-| Texture and colour | Firm; kidney infarct is wedge-shaped and yellow | Friable and white, cheese-like; yellow-white cheesy debris in tuberculosis of the lung |
-| Microscopy | Intensely eosinophilic cells with indistinct or reddish nuclei persist for days or weeks | Debris enclosed within a distinctive collection of macrophages called epithelioid cells, which is characteristic of a granuloma |
-| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis of the dead cells | Not given |
-| Setting | Ischaemia from obstruction of a vessel, in all organs except the brain; a localised area is an infarct | Encountered most often in foci of tuberculous infection |
+| **Architecture** | Architecture of the dead tissue is preserved for at least some days | Structureless collection of fragmented or lysed cells and amorphous granular debris |
+| **Texture and colour** | Firm; kidney infarct is wedge-shaped and yellow | Friable and white, cheese-like; yellow-white cheesy debris in tuberculosis of the lung |
+| **Microscopy** | Intensely eosinophilic cells with indistinct or reddish nuclei persist for days or weeks | Debris enclosed within a distinctive collection of macrophages called epithelioid cells, which is characteristic of a granuloma |
+| **Mechanism** | Injury denatures structural proteins and enzymes, which blocks proteolysis of the dead cells | Not given |
+| **Setting** | Ischaemia from obstruction of a vessel, in all organs except the brain; a localised area is an infarct | Encountered most often in foci of tuberculous infection |
 
 ## What do you mean by gangrenous necrosis?
 
@@ -841,27 +841,27 @@ Necrosis of tissues has several morphologically distinct patterns, which give cl
 
 ## What is ischemic necrosis?
 
-Ischaemia caused by obstruction in a vessel leads to coagulative necrosis of the supplied tissue in all organs except the brain. A localised area of coagulative necrosis is called an infarct.
+Ischaemia caused by obstruction in a vessel leads to coagulative **necrosis** of the supplied tissue in all organs except the brain. A localised area of coagulative necrosis is called an infarct.
 
-In the central nervous system, hypoxic death of cells often shows liquefactive necrosis.
+In the central nervous system, hypoxic death of cells often shows liquefactive **necrosis**.
 
 ## How do coagulative necrosis and liquefactive necrosis differ?
 
 | Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
-| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
-| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
-| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
-| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
+| **Tissue change** | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| **Mechanism** | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
+| **Appearance** | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| **Setting** | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
 
 ## What are the morphological differences between coagulation necrosis and liquefactive necrosis?
 
 | Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
-| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
-| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
-| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
-| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
+| **Tissue change** | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| **Mechanism** | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
+| **Appearance** | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| **Setting** | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
 
 ## Give the morphology of caseation necrosis.
 
@@ -925,12 +925,12 @@ Apoptosis is a regulated mechanism of cell death that serves to eliminate unwant
 
 ## Give examples of apoptosis in physiological conditions.
 
-1. Removal of supernumerary cells during development, with involution of primordial structures and remodelling of maturing tissues.
-2. Involution of hormone-dependent tissues on hormone withdrawal: endometrial cell breakdown during the menstrual cycle, ovarian follicular atresia in menopause and regression of the lactating breast after weaning.
-3. Cell turnover in proliferating cell populations, such as epithelial cells in intestinal crypts.
-4. Elimination of lymphocytes that fail to produce functional antigen receptors: immature lymphocytes in the bone marrow and thymus and germinal centre B cells.
-5. Elimination of potentially harmful self-reactive lymphocytes.
-6. Death of host cells that have served their useful purpose: neutrophils in an acute inflammatory response and lymphocytes at the end of an immune response.
+1. **Removal** of supernumerary cells during development, with involution of primordial structures and remodelling of maturing tissues.
+2. **Involution** of hormone-dependent tissues on hormone withdrawal: endometrial cell breakdown during the menstrual cycle, ovarian follicular atresia in menopause and regression of the lactating breast after weaning.
+3. **Cell turnover** in proliferating cell populations, such as epithelial cells in intestinal crypts.
+4. **Elimination of lymphocytes** that fail to produce functional antigen receptors: immature lymphocytes in the bone marrow and thymus and germinal centre B cells.
+5. **Elimination** of potentially harmful self-reactive lymphocytes.
+6. **Death of host cells** that have served their useful purpose: neutrophils in an acute inflammatory response and lymphocytes at the end of an immune response.
 
 ## Give two examples of apoptosis in pathological conditions.
 
@@ -1021,14 +1021,14 @@ In all of these situations, cells undergo apoptosis because they are deprived of
 
 | Feature | Necrosis | Apoptosis |
 |---|---|---|
-| Cell size | Enlarged (swelling) | Reduced (shrinkage) |
-| Nucleus | Pyknosis, karyorrhexis, karyolysis | Fragmentation into nucleosome-size fragments |
-| Plasma membrane | Disrupted | Intact; altered structure, especially orientation of lipids |
-| Cellular contents | Enzymatic digestion; may leak out of the cell | Intact; may be released in apoptotic bodies |
-| Adjacent inflammation | Frequent | No |
-| Physiologic or pathologic role | Usually pathologic (culmination of irreversible cell injury) | Often physiologic, a means of eliminating unwanted cells; may be pathologic after some forms of cell injury, especially DNA damage |
-| Regulation | Historically thought of as accidental cell death | Regulated cell death, mediated by defined molecular pathways |
-| Cytoplasm | Eosinophilic, glassy and homogeneous; vacuolated and moth-eaten once organelles are digested | Dense and eosinophilic |
+| **Cell size** | Enlarged (swelling) | Reduced (shrinkage) |
+| **Nucleus** | Pyknosis, karyorrhexis, karyolysis | Fragmentation into nucleosome-size fragments |
+| **Plasma membrane** | Disrupted | Intact; altered structure, especially orientation of lipids |
+| **Cellular contents** | Enzymatic digestion; may leak out of the cell | Intact; may be released in apoptotic bodies |
+| **Adjacent inflammation** | Frequent | No |
+| **Physiologic or pathologic role** | Usually pathologic (culmination of irreversible cell injury) | Often physiologic, a means of eliminating unwanted cells; may be pathologic after some forms of cell injury, especially DNA damage |
+| **Regulation** | Historically thought of as accidental cell death | Regulated cell death, mediated by defined molecular pathways |
+| **Cytoplasm** | Eosinophilic, glassy and homogeneous; vacuolated and moth-eaten once organelles are digested | Dense and eosinophilic |
 ## Examples of pathological apoptosis.
 
 1. **DNA damage:** radiation and cytotoxic anticancer drugs damage DNA, either directly or through production of free radicals.
@@ -1156,8 +1156,8 @@ The terms **steatosis** and **fatty change** describe abnormal accumulations of 
 
 ## Causes of fatty change of the liver.
 
-- The causes of steatosis include **toxins**, **protein malnutrition**, **diabetes mellitus**, **obesity** and **anoxia**.
-- In higher-income nations the most common causes of significant fatty change in the liver (fatty liver) are **excessive alcohol use** and **nonalcoholic fatty liver disease**, which is often associated with diabetes and obesity.
+- The causes of steatosis include **toxins**, protein malnutrition, diabetes mellitus, obesity and anoxia.
+- In higher-income nations the most common causes of significant fatty change in the liver (fatty liver) are **excessive alcohol use** and nonalcoholic fatty liver disease, which is often associated with diabetes and obesity.
 
 ## Alcohol abuse with massive hepatomegaly; liver biopsy shows fat droplets in hepatocytes — Diagnosis? Future consequence?
 
@@ -1234,25 +1234,25 @@ Four principal causes of hypercalcaemia
 
 | Feature | Dystrophic calcification | Metastatic calcification |
 |---|---|---|
-| Tissue involved | Dying tissues | Otherwise normal tissues |
-| Serum calcium | Normal; no derangement of calcium metabolism | Hypercalcaemia, secondary to some disturbance in calcium metabolism |
-| Cause | Necrotic cells and cellular debris that are not promptly destroyed and reabsorbed provide a nidus for deposition of calcium salts | Increased parathyroid hormone secretion; resorption of bone tissue; vitamin D-related disorders; renal failure with retention of phosphate |
-| Sites | Areas of coagulative, caseous or liquefactive necrosis; foci of enzymatic necrosis of fat; atheromas of advanced atherosclerosis; aging or damaged heart valves; tuberculous lymph node | Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins, which all excrete acid and have an internal alkaline compartment |
-| Morphology | Fine white granules or clumps, gritty; basophilic, amorphous and granular on H&E | Resembles dystrophic calcification; noncrystalline amorphous deposits or hydroxyapatite crystals |
-| Clinical effect | Often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis | Usually no clinical dysfunction; massive lung involvement causes respiratory compromise and massive kidney deposits (nephrocalcinosis) may cause renal damage |
+| **Tissue involved** | Dying tissues | Otherwise normal tissues |
+| **Serum calcium** | Normal; no derangement of calcium metabolism | Hypercalcaemia, secondary to some disturbance in calcium metabolism |
+| **Cause** | Necrotic cells and cellular debris that are not promptly destroyed and reabsorbed provide a nidus for deposition of calcium salts | Increased parathyroid hormone secretion; resorption of bone tissue; vitamin D-related disorders; renal failure with retention of phosphate |
+| **Sites** | Areas of coagulative, caseous or liquefactive necrosis; foci of enzymatic necrosis of fat; atheromas of advanced atherosclerosis; aging or damaged heart valves; tuberculous lymph node | Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins, which all excrete acid and have an internal alkaline compartment |
+| **Morphology** | Fine white granules or clumps, gritty; basophilic, amorphous and granular on H&E | Resembles dystrophic calcification; noncrystalline amorphous deposits or hydroxyapatite crystals |
+| **Clinical effect** | Often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis | Usually no clinical dysfunction; massive lung involvement causes respiratory compromise and massive kidney deposits (nephrocalcinosis) may cause renal damage |
 
 ## Sites of dystrophic calcification.
 
-- Areas of necrosis, whether of coagulative, caseous or liquefactive type.
-- Foci of enzymatic necrosis of fat.
-- Atheromas of advanced atherosclerosis, where calcification is almost always present.
-- Aging or damaged heart valves, as in calcific aortic stenosis.
-- A tuberculous lymph node, which may be virtually converted to stone.
+- **Areas of necrosis**, whether of coagulative, caseous or liquefactive type.
+- **Foci** of enzymatic necrosis of fat.
+- **Atheromas of advanced atherosclerosis**, where calcification is almost always present.
+- **Aging or damaged** heart valves, as in calcific aortic stenosis.
+- **A tuberculous lymph node**, which may be virtually converted to stone.
 
 ## Common sites of metastatic calcification.
 
-- Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins.
-- All of these tissues excrete acid and therefore have an internal alkaline compartment that predisposes them to metastatic calcification.
+- **Interstitial tissues** of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins.
+- All of these tissues excrete **acid** and therefore have an internal **alkaline compartment** that predisposes them to metastatic calcification.
 
 ## Define dystrophic calcification.
 
@@ -1388,13 +1388,13 @@ Four principal causes of hypercalcaemia
 
 | Feature | Acute inflammation | Chronic inflammation |
 |---|---|---|
-| Onset | Rapid; develops within minutes or hours | May follow acute inflammation or arise de novo |
-| Duration | Short, from several hours to a few days | Longer, weeks or months |
-| Agent | Offending agents that are readily eliminated, such as many bacteria and fungi, and dead cells | Agents that are difficult to eradicate: some bacteria (tubercle bacilli), viruses, fungi, self antigens, environmental antigens and toxic substances such as silica |
-| Principal cells | Neutrophils | Mononuclear cells: macrophages, lymphocytes and plasma cells |
-| Main features | Vascular changes and exudation of fluid and plasma proteins (oedema) | Infiltration with mononuclear cells, tissue destruction, and attempts at healing by angiogenesis and fibrosis |
-| Tissue injury | Often self-limited; if the stimulus is eliminated the reaction subsides and residual injury is repaired | More tissue destruction and scarring (fibrosis) |
-| Outcome | Resolution, healing by scarring, or progression to chronic inflammation | Coexisting inflammation, tissue injury and attempted repair by scarring |
+| **Onset** | Rapid; develops within minutes or hours | May follow acute inflammation or arise de novo |
+| **Duration** | Short, from several hours to a few days | Longer, weeks or months |
+| **Agent** | Offending agents that are readily eliminated, such as many bacteria and fungi, and dead cells | Agents that are difficult to eradicate: some bacteria (tubercle bacilli), viruses, fungi, self antigens, environmental antigens and toxic substances such as silica |
+| **Principal cells** | Neutrophils | Mononuclear cells: macrophages, lymphocytes and plasma cells |
+| **Main features** | Vascular changes and exudation of fluid and plasma proteins (oedema) | Infiltration with mononuclear cells, tissue destruction, and attempts at healing by angiogenesis and fibrosis |
+| **Tissue injury** | Often self-limited; if the stimulus is eliminated the reaction subsides and residual injury is repaired | More tissue destruction and scarring (fibrosis) |
+| **Outcome** | Resolution, healing by scarring, or progression to chronic inflammation | Coexisting inflammation, tissue injury and attempted repair by scarring |
 
 ## Explain: "Inflammation is a protective response but may be potentially harmful."
 
@@ -1952,14 +1952,14 @@ In contrast to acute inflammation, which shows vascular changes, oedema and pred
 
 ## Types of granuloma.
 
-There are two types of granuloma, which differ in their pathogenesis.
+There are two types of **granuloma**, which differ in their pathogenesis.
 
 | Feature | Foreign body granuloma | Immune granuloma |
 |---|---|---|
-| Cause | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
-| Mechanism | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
-| Examples | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
-| Morphology | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
+| **Cause** | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
+| **Mechanism** | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
+| **Examples** | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
+| **Morphology** | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
 
 - Caseating granulomas have a central zone of caseous necrosis (tuberculosis). Noncaseating granulomas lack necrotic centres (Crohn disease, sarcoidosis, foreign body reactions).
 
@@ -2007,14 +2007,14 @@ There are two types of granuloma, which differ in their pathogenesis.
 
 ## Mention the types/etiological classification of granuloma with examples.
 
-There are two types of granuloma, which differ in their pathogenesis.
+There are two types of **granuloma**, which differ in their pathogenesis.
 
 | Feature | Foreign body granuloma | Immune granuloma |
 |---|---|---|
-| Cause | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
-| Mechanism | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
-| Examples | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
-| Morphology | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
+| **Cause** | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
+| **Mechanism** | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
+| **Examples** | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
+| **Morphology** | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
 
 - Caseating granulomas have a central zone of caseous necrosis (tuberculosis). Noncaseating granulomas lack necrotic centres (Crohn disease, sarcoidosis, foreign body reactions).
 
@@ -2137,15 +2137,15 @@ Tissues are divided into three groups, based on their intrinsic proliferative ca
 
 ## Classify wound healing.
 
-Skin wound healing is classified into two types, depending on the extent of tissue injury and the dominant mechanism of healing.
+Skin **wound healing** is classified into two types, depending on the extent of tissue injury and the dominant mechanism of healing.
 
 | Feature | Healing by first intention (primary union) | Healing by second intention (secondary union) |
 |---|---|---|
-| Type of wound | Well-apposed surgical incisions | Larger wounds, especially if infected |
-| Mechanism | Epithelial regeneration | Combination of regeneration and scarring |
-| Scarring | Minimal | More extensive scarring, with wound contraction |
+| **Type of wound** | Well-apposed surgical incisions | Larger wounds, especially if infected |
+| **Mechanism** | Epithelial regeneration | Combination of regeneration and scarring |
+| **Scarring** | Minimal | More extensive scarring, with wound contraction |
 
-- The steps in both types are inflammation, formation of granulation tissue and remodelling of the extracellular matrix (scar formation).
+- **The steps** in both types are inflammation, formation of granulation tissue and remodelling of the extracellular matrix (scar formation).
 
 ## Factors that influence wound healing / tissue repair.
 
@@ -2445,11 +2445,11 @@ Increases in hydrostatic pressure are mainly caused by disorders that impair ven
 | Category | Examples |
 |---|---|
 | Increased hydrostatic pressure: impaired venous return | Congestive heart failure; constrictive pericarditis; ascites (liver cirrhosis); venous obstruction or compression (thrombosis, external pressure such as a mass); lower extremity inactivity with prolonged dependency |
-| Increased hydrostatic pressure: arteriolar dilation | Heat; neurohumoral dysregulation |
-| Reduced plasma osmotic pressure (hypoproteinaemia) | Protein-losing glomerulopathies (nephrotic syndrome); liver cirrhosis; malnutrition; protein-losing gastroenteropathy |
-| Lymphatic obstruction | Inflammatory; neoplastic; postsurgical; postirradiation |
-| Sodium retention | Excessive salt intake with renal insufficiency; increased tubular reabsorption of sodium; renal hypoperfusion; increased renin-angiotensin-aldosterone secretion |
-| Inflammation | Acute inflammation; chronic inflammation; angiogenesis |
+| **Increased hydrostatic pressure: arteriolar dilation** | Heat; neurohumoral dysregulation |
+| **Reduced plasma osmotic pressure (hypoproteinaemia)** | Protein-losing glomerulopathies (nephrotic syndrome); liver cirrhosis; malnutrition; protein-losing gastroenteropathy |
+| **Lymphatic obstruction** | Inflammatory; neoplastic; postsurgical; postirradiation |
+| **Sodium retention** | Excessive salt intake with renal insufficiency; increased tubular reabsorption of sodium; renal hypoperfusion; increased renin-angiotensin-aldosterone secretion |
+| **Inflammation** | Acute inflammation; chronic inflammation; angiogenesis |
 
 ## Give in brief the mechanisms of edema formation.
 
@@ -2511,11 +2511,11 @@ Fluid movement across the capillary wall depends on the balance between hydrosta
 
 | Feature | Exudate | Transudate |
 |---|---|---|
-| Protein content | High | Low (mostly albumin) |
-| Cells | May contain cellular debris, occasionally blood cells. Effusions are often cloudy from white cells | Little or no cellular material |
-| Mechanism | Increased permeability of small blood vessels (inflammation) | Osmotic or hydrostatic imbalance, with no increase in vascular permeability |
-| Appearance (effusions) | Cloudy | Translucent and straw coloured |
-| Examples | Inflammation, for example acute inflammation and pus | Heart failure, nephrotic syndrome, liver disease, malnutrition |
+| **Protein content** | High | Low (mostly albumin) |
+| **Cells** | May contain cellular debris, occasionally blood cells. Effusions are often cloudy from white cells | Little or no cellular material |
+| **Mechanism** | Increased permeability of small blood vessels (inflammation) | Osmotic or hydrostatic imbalance, with no increase in vascular permeability |
+| **Appearance (effusions)** | Cloudy | Translucent and straw coloured |
+| **Examples** | Inflammation, for example acute inflammation and pus | Heart failure, nephrotic syndrome, liver disease, malnutrition |
 
 ## Name the body fluids commonly examined in the laboratory.
 
@@ -2635,11 +2635,11 @@ Thrombi occurring in heart chambers or in the aortic lumen are designated **mura
 
 | Feature | Thrombus | Postmortem clot |
 |---|---|---|
-| Time of formation | Formed in flowing blood during life (antemortem) | Forms after death |
+| **Time of formation** | Formed in flowing blood during life (antemortem) | Forms after death |
 | Lines of Zahn (alternating pale platelet and fibrin deposits and darker red cell-rich layers) | Present; they signify that the thrombus formed in flowing blood | Absent; bland and nonlaminated |
-| Consistency | Firm | Gelatinous |
-| Appearance | Laminated | Dark-red dependent portion where red cells have settled by gravity and a yellow "chicken fat" upper portion |
-| Attachment to vessel wall | Focally attached to the underlying vascular surface | Usually not attached to the underlying vessel wall |
+| **Consistency** | Firm | Gelatinous |
+| **Appearance** | Laminated | Dark-red dependent portion where red cells have settled by gravity and a yellow "chicken fat" upper portion |
+| **Attachment to vessel wall** | Focally attached to the underlying vascular surface | Usually not attached to the underlying vessel wall |
 
 ## What is thrombosis?
 
@@ -2748,11 +2748,11 @@ An **embolus** is a detached intravascular solid, liquid, or gaseous mass that i
 
 | Type of embolus | Example |
 |---|---|
-| Thromboembolus | Embolus from a lower extremity deep venous thrombosis lodged in the pulmonary artery; emboli from intracardiac mural thrombi, aortic aneurysms, atherosclerotic plaques or valvular vegetations in the systemic circulation |
-| Fat and bone marrow embolus | Fractures of long bones; rarely soft tissue trauma and burns |
-| Air embolus | Neurosurgery in the "sitting position"; endovascular and interventional procedures; mechanical ventilation; obstetric or laparoscopic procedures; chest wall injury |
-| Nitrogen bubbles | Decompression sickness in scuba and deep-sea divers, underwater construction workers, and persons in unpressurised aircraft who undergo rapid ascent |
-| Amniotic fluid embolus | Labour and the immediate postpartum period, through a tear in the placental membranes or rupture of uterine veins |
+| **Thromboembolus** | Embolus from a lower extremity deep venous thrombosis lodged in the pulmonary artery; emboli from intracardiac mural thrombi, aortic aneurysms, atherosclerotic plaques or valvular vegetations in the systemic circulation |
+| **Fat and bone marrow embolus** | Fractures of long bones; rarely soft tissue trauma and burns |
+| **Air embolus** | Neurosurgery in the "sitting position"; endovascular and interventional procedures; mechanical ventilation; obstetric or laparoscopic procedures; chest wall injury |
+| **Nitrogen bubbles** | Decompression sickness in scuba and deep-sea divers, underwater construction workers, and persons in unpressurised aircraft who undergo rapid ascent |
+| **Amniotic fluid embolus** | Labour and the immediate postpartum period, through a tear in the placental membranes or rupture of uterine veins |
 | Atherosclerotic debris (cholesterol emboli), tumour fragments, foreign bodies | Named as rare emboli |
 
 ## Common sources of emboli.
@@ -2762,21 +2762,21 @@ An **embolus** is a detached intravascular solid, liquid, or gaseous mass that i
 
 ## Other sources of emboli.
 
-The remainder of systemic emboli originate from:
+The remainder of systemic **emboli** originate from:
 
-- Aortic aneurysms
-- Atherosclerotic plaques
-- Valvular vegetations
-- Venous thrombi (paradoxical emboli)
+- **Aortic aneurysms**
+- **Atherosclerotic plaques**
+- **Valvular vegetations**
+- **Venous thrombi** (paradoxical emboli)
 
-In 10% to 15% of systemic emboli the origin is unknown.
+In **10%** to **15%** of systemic **emboli** the origin is unknown.
 
 ## How does fat embolism occur?
 
-1. Fat embolism typically follows fractures of long bones or, rarely, soft tissue trauma and burns; it occurs in some 90% of individuals with severe skeletal injuries.
-2. The injury ruptures vascular sinusoids or small venules in the marrow.
-3. Marrow and adipose tissue herniate into the vascular space.
-4. Microscopic fat globules, sometimes with associated haematopoietic bone marrow, travel to the lung.
+1. **Fat embolism typically** follows fractures of long bones or, rarely, soft tissue trauma and burns; it occurs in some 90% of individuals with severe skeletal injuries.
+2. **The injury ruptures** vascular sinusoids or small venules in the marrow.
+3. **Marrow and adipose** tissue herniate into the vascular space.
+4. **Microscopic fat globules**, sometimes with associated haematopoietic bone marrow, travel to the lung.
 
 ## What is fat embolism syndrome?
 
@@ -3055,11 +3055,11 @@ An **infarct** is an area of ischaemic necrosis caused by occlusion of either th
 
 ## Sites where white infarct occurs.
 
-White infarcts occur with arterial occlusions in solid organs with end-arterial circulation, and where tissue density limits the seepage of blood from adjoining capillary beds into the necrotic area.
+White infarcts occur with arterial occlusions in solid organs with end-arterial circulation, and **where** tissue density limits the seepage of blood from adjoining capillary beds into the necrotic area.
 
-- Heart
-- Spleen
-- Kidney
+- **Heart**
+- **Spleen**
+- **Kidney**
 
 ## Factors that influence the development of an infarct.
 
@@ -3352,10 +3352,10 @@ The aetiology is a **microbial infection** that has become generalised.
 
 | Electrolyte | Normal serum level |
 |---|---|
-| Sodium (Na⁺) | 135 to 145 mEq/L |
-| Potassium (K⁺) | 3.7 to 5.2 mEq/L |
-| Chloride (Cl⁻) | 98 to 107 mEq/L |
-| Bicarbonate (HCO₃⁻) | 21 to 28 mEq/L |
+| **Sodium (Na⁺)** | 135 to 145 mEq/L |
+| **Potassium (K⁺)** | 3.7 to 5.2 mEq/L |
+| **Chloride (Cl⁻)** | 98 to 107 mEq/L |
+| **Bicarbonate (HCO₃⁻)** | 21 to 28 mEq/L |
 
 ## What is hyponatraemia?
 
@@ -3675,7 +3675,7 @@ A **mutation** is defined as a permanent change in DNA sequence.
 | **Chromosomal** | Down syndrome (trisomy 21) |
 | **Complex multigenic** | Type 2 diabetes mellitus; atherosclerosis |
 | **Nonclassical single-gene: trinucleotide-repeat** | Fragile X syndrome |
-| **Nonclassical single-gene: mitochondrial gene mutation** | Leber hereditary optic neuropathy |
+| Nonclassical single-gene: mitochondrial gene mutation | Leber hereditary optic neuropathy |
 | **Nonclassical single-gene: genomic imprinting** | Prader-Willi syndrome and Angelman syndrome |
 | **Somatically acquired mutation** | PIK3CA-related somatic overgrowth syndromes |
 
@@ -3906,7 +3906,7 @@ Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and
 
 ## What are the cytogenetic disorders?
 
-Cytogenetic disorders may take the form of an abnormal number of chromosomes or alterations in the structure of one or more chromosomes.
+**Cytogenetic disorders** may take the form of an abnormal number of chromosomes or alterations in the structure of one or more chromosomes.
 
 
 ## Write a short note on Down's syndrome.
@@ -4252,9 +4252,9 @@ Immunodeficiencies are manifested clinically by **increased infections**, which 
 ## Name some autoimmune diseases.
 
 - **Diseases mediated by antibodies:** autoimmune haemolytic anaemia, autoimmune thrombocytopenia, pernicious anaemia, myasthenia gravis, Graves disease and Goodpasture syndrome.
-- **Diseases mediated by T cells:** type 1 diabetes mellitus, rheumatoid arthritis, multiple sclerosis, systemic sclerosis (scleroderma) and Sjögren syndrome.
-- **Systemic disease with a diversity of antibodies:** systemic lupus erythematosus.
-- **Diseases postulated to be autoimmune:** inflammatory bowel diseases (Crohn disease and ulcerative colitis), polyarteritis nodosa, inflammatory myopathies, primary biliary cholangitis and autoimmune (chronic active) hepatitis.
+- Diseases mediated by T cells: type 1 diabetes mellitus, rheumatoid arthritis, multiple sclerosis, systemic sclerosis (scleroderma) and Sjögren syndrome.
+- Systemic disease with a diversity of antibodies: systemic lupus erythematosus.
+- Diseases postulated to be autoimmune: inflammatory bowel diseases (Crohn disease and ulcerative colitis), polyarteritis nodosa, inflammatory myopathies, primary biliary cholangitis and autoimmune (chronic active) hepatitis.
 
 ## Write a short note on autoimmune disease.
 
@@ -4316,12 +4316,12 @@ In the modern era, a neoplasm is defined as a disorder of **cell growth** that i
 
 | Feature | Hyperplasia | Neoplasia |
 |---|---|---|
-| Definition | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by mutations affecting a single cell and its clonal progeny |
-| Cause | Action of hormones or growth factors on target cells; in pathologic hyperplasia their excessive or inappropriate action | Acquired or, less commonly, inherited mutations that alter the function of genes |
-| Control of growth | The process remains controlled | Excessive proliferation that is independent of physiologic growth signals and controls |
-| Effect of removing the stimulus | Can regress or stabilise if the stimulus is eliminated | Proliferation is independent of physiologic growth signals |
-| Relation to cancer | Distinct from cancer, but pathologic hyperplasia is a fertile soil in which cancerous proliferations may arise, because increased cell division raises the risk of genetic aberrations | Neoplastic cells have a growth advantage; malignant neoplasms are cancers |
-| Example | Endometrial hyperplasia, benign prostatic hyperplasia | Benign and malignant tumours |
+| **Definition** | Increase in the number of cells in an organ or tissue in response to a stimulus | Disorder of cell growth triggered by mutations affecting a single cell and its clonal progeny |
+| **Cause** | Action of hormones or growth factors on target cells; in pathologic hyperplasia their excessive or inappropriate action | Acquired or, less commonly, inherited mutations that alter the function of genes |
+| **Control of growth** | The process remains controlled | Excessive proliferation that is independent of physiologic growth signals and controls |
+| **Effect of removing the stimulus** | Can regress or stabilise if the stimulus is eliminated | Proliferation is independent of physiologic growth signals |
+| **Relation to cancer** | Distinct from cancer, but pathologic hyperplasia is a fertile soil in which cancerous proliferations may arise, because increased cell division raises the risk of genetic aberrations | Neoplastic cells have a growth advantage; malignant neoplasms are cancers |
+| **Example** | Endometrial hyperplasia, benign prostatic hyperplasia | Benign and malignant tumours |
 
 ## Types of neoplasm.
 
@@ -4344,17 +4344,17 @@ In the modern era, a neoplasm is defined as a disorder of **cell growth** that i
 
 | Type | Benign | Malignant |
 |---|---|---|
-| Connective tissue | Fibroma, lipoma | Fibrosarcoma, liposarcoma |
-| Cartilage and bone | Chondroma, osteoma | Chondrosarcoma, osteogenic sarcoma |
-| Blood vessels and lymph vessels | Haemangioma, lymphangioma | Angiosarcoma, lymphangiosarcoma |
-| Muscle | Leiomyoma, rhabdomyoma | Leiomyosarcoma, rhabdomyosarcoma |
-| Blood cell–forming tissues | None | Leukaemias, lymphomas |
-| Squamous epithelium | Squamous cell papilloma | Squamous cell carcinoma |
-| Glandular epithelium | Adenoma, papilloma | Adenocarcinoma, cystadenocarcinoma |
-| Melanocytes | Naevus | Melanoma |
-| Kidney and liver | Renal tubular adenoma, hepatic adenoma | Renal cell carcinoma, hepatocellular carcinoma |
-| Mixed tumours | Pleomorphic adenoma | Malignant mixed tumour of salivary gland origin, Wilms tumour |
-| Totipotential cells | Mature teratoma (dermoid cyst) | Immature teratoma, teratocarcinoma |
+| **Connective tissue** | Fibroma, lipoma | Fibrosarcoma, liposarcoma |
+| **Cartilage and bone** | Chondroma, osteoma | Chondrosarcoma, osteogenic sarcoma |
+| **Blood vessels and lymph vessels** | Haemangioma, lymphangioma | Angiosarcoma, lymphangiosarcoma |
+| **Muscle** | Leiomyoma, rhabdomyoma | Leiomyosarcoma, rhabdomyosarcoma |
+| **Blood cell–forming tissues** | None | Leukaemias, lymphomas |
+| **Squamous epithelium** | Squamous cell papilloma | Squamous cell carcinoma |
+| **Glandular epithelium** | Adenoma, papilloma | Adenocarcinoma, cystadenocarcinoma |
+| **Melanocytes** | Naevus | Melanoma |
+| **Kidney and liver** | Renal tubular adenoma, hepatic adenoma | Renal cell carcinoma, hepatocellular carcinoma |
+| **Mixed tumours** | Pleomorphic adenoma | Malignant mixed tumour of salivary gland origin, Wilms tumour |
+| **Totipotential cells** | Mature teratoma (dermoid cyst) | Immature teratoma, teratocarcinoma |
 
 ## What is cancer?
 
@@ -4379,7 +4379,7 @@ Malignant tumours arising in solid **mesenchymal tissues** are usually called **
 - **Bronchogenic carcinoma** of the lung
 - **Renal cell carcinoma** of the kidney
 - **Hepatocellular carcinoma** of the liver
-- **Cystadenocarcinoma** and **papillary carcinoma** of glandular epithelium, including serous and mucinous cystadenocarcinoma of the ovary
+- **Cystadenocarcinoma** and papillary carcinoma of glandular epithelium, including serous and mucinous cystadenocarcinoma of the ovary
 - **Choriocarcinoma** of the placenta
 - **Embryonal carcinoma** of the testis
 
@@ -4453,12 +4453,12 @@ In the modern era, a neoplasm is defined as a disorder of **cell growth** that i
 
 | Characteristic | Benign | Malignant |
 |---|---|---|
-| Differentiation and anaplasia | Well differentiated; structure often typical of the tissue of origin | Some lack of differentiation (anaplasia); structure often deranged |
-| Rate of growth | Usually progressive and slow; may come to a standstill or regress; mitotic figures rare and normal | Erratic, slow to rapid; mitotic figures may be numerous and abnormal |
-| Local invasion | Usually cohesive, expansile, well-demarcated masses that do not invade or infiltrate surrounding normal tissues | Locally invasive, infiltrating surrounding tissue; sometimes misleadingly cohesive |
-| Metastasis | Absent | Frequent; more likely with large undifferentiated primary tumours |
-| Capsule | Circumscribed, with a capsule | Poorly circumscribed, no true capsule |
-| Function | More likely to retain functions of the cell of origin | May acquire unexpected functions |
+| **Differentiation and anaplasia** | Well differentiated; structure often typical of the tissue of origin | Some lack of differentiation (anaplasia); structure often deranged |
+| **Rate of growth** | Usually progressive and slow; may come to a standstill or regress; mitotic figures rare and normal | Erratic, slow to rapid; mitotic figures may be numerous and abnormal |
+| **Local invasion** | Usually cohesive, expansile, well-demarcated masses that do not invade or infiltrate surrounding normal tissues | Locally invasive, infiltrating surrounding tissue; sometimes misleadingly cohesive |
+| **Metastasis** | Absent | Frequent; more likely with large undifferentiated primary tumours |
+| **Capsule** | Circumscribed, with a capsule | Poorly circumscribed, no true capsule |
+| **Function** | More likely to retain functions of the cell of origin | May acquire unexpected functions |
 
 ## What do you mean by differentiation?
 
@@ -4533,12 +4533,12 @@ Carcinoma in situ may be seen in the:
 
 | Feature | Dysplasia | Anaplasia |
 |---|---|---|
-| Meaning | Disordered growth | Lack of differentiation |
-| Where found | Principally epithelial cells | Malignant tumour cells |
-| Nature | A premalignant change | A feature highly predictive of malignant behaviour |
-| Cell changes | Pleomorphism, large hyperchromatic nuclei, high nuclear to cytoplasmic ratio, architectural disarray, increased mitoses | Pleomorphism, abnormal nuclei, abnormal mitoses, loss of polarity, tumour giant cells |
-| Reversibility | Moderately severe dysplasia may be completely reversible | Not reversible |
-| Invasion | Basement membrane intact (carcinoma in situ when full thickness) | Associated with invasion and metastasis |
+| **Meaning** | Disordered growth | Lack of differentiation |
+| **Where found** | Principally epithelial cells | Malignant tumour cells |
+| **Nature** | A premalignant change | A feature highly predictive of malignant behaviour |
+| **Cell changes** | Pleomorphism, large hyperchromatic nuclei, high nuclear to cytoplasmic ratio, architectural disarray, increased mitoses | Pleomorphism, abnormal nuclei, abnormal mitoses, loss of polarity, tumour giant cells |
+| **Reversibility** | Moderately severe dysplasia may be completely reversible | Not reversible |
+| **Invasion** | Basement membrane intact (carcinoma in situ when full thickness) | Associated with invasion and metastasis |
 
 ## Define metastasis (short note).
 
@@ -4638,21 +4638,21 @@ All cancers display eight fundamental changes in cell physiology, which are the 
 
 1. **Self-sufficiency in growth signals.** Tumours can proliferate without external stimuli, usually because of oncogene activation.
 2. **Insensitivity to growth-inhibitory signals.** Tumours may not respond to molecules that inhibit proliferation of normal cells, typically because of inactivation of tumour suppressor genes.
-3. **Altered cellular metabolism.** Tumour cells switch to aerobic glycolysis, called the **Warburg effect**, which enables synthesis of the macromolecules and organelles needed for rapid growth.
+3. **Altered cellular metabolism.** Tumour cells switch to aerobic glycolysis, called the Warburg effect, which enables synthesis of the macromolecules and organelles needed for rapid growth.
 4. **Evasion of apoptosis.** Tumours are resistant to programmed cell death.
 5. **Limitless replicative potential (immortality).** Tumours have unrestricted proliferative capacity, a stem cell–like property that avoids cellular senescence and mitotic catastrophe.
 6. **Sustained angiogenesis.** Tumours cannot grow without a vascular supply, so they must induce angiogenesis.
-7. **Ability to invade and metastasise.**
-8. **Ability to evade the host immune response.**
+7. Ability to invade and metastasise.
+8. Ability to evade the host immune response.
 
-Two **enabling characteristics** accelerate the acquisition of these changes: **genomic instability** (mutator phenotype) and **tumour-promoting (cancer-enabling) inflammation**.
+Two **enabling characteristics** accelerate the acquisition of these changes: genomic instability (mutator phenotype) and tumour-promoting (cancer-enabling) inflammation.
 
 ## Four principal classes of genes that cause cancer after mutation.
 
 1. **Growth-promoting proto-oncogenes.** Activating mutations cause a gain of function, so they can transform cells despite a normal copy of the same gene; oncogenes are dominant over their normal counterparts.
 2. **Growth-inhibiting tumour suppressor genes.** Mutations generally cause a loss of function, and in most instances both alleles must be damaged before transformation occurs.
-3. **Genes that regulate programmed cell death (apoptosis).**
-4. **Genes responsible for DNA repair.**
+3. Genes that regulate programmed cell death (apoptosis).
+4. Genes responsible for DNA repair.
 
 ## Examples of oncogenes and tumour suppressor genes.
 
@@ -4697,7 +4697,7 @@ Two **enabling characteristics** accelerate the acquisition of these changes: **
 
 ## Which factor induces angiogenesis?
 
-**Hypoxia** stabilises **HIF1α**, an oxygen-sensitive transcription factor that activates transcription of the pro-angiogenic cytokines **vascular endothelial growth factor (VEGF)** and **basic fibroblast growth factor (bFGF)**.
+**Hypoxia** stabilises HIF1α, an oxygen-sensitive transcription factor that activates transcription of the pro-angiogenic cytokines vascular endothelial growth factor (VEGF) and basic fibroblast growth factor (bFGF).
 
 Loss of p53, and gain-of-function mutations in RAS or MYC, also increase VEGF production.
 
@@ -4764,19 +4764,19 @@ Further proliferation induces additional mutations and the emergence of a malign
 
 | Chronic inflammatory condition | Associated neoplasm |
 |---|---|
-| Asbestosis, silicosis | Mesothelioma, lung carcinoma |
-| Inflammatory bowel disease | Colorectal carcinoma |
-| Lichen sclerosus | Vulval squamous cell carcinoma |
-| Pancreatitis | Pancreatic carcinoma |
-| Chronic cholecystitis | Gallbladder carcinoma |
-| Reflux oesophagitis, Barrett oesophagus | Oesophageal carcinoma |
-| Sjögren syndrome, Hashimoto thyroiditis | Extranodal marginal zone (MALT) lymphoma |
-| Opisthorchis (liver fluke) cholangitis | Cholangiocarcinoma, colon carcinoma |
-| Gastritis and ulcers (Helicobacter pylori) | Gastric adenocarcinoma, MALT lymphoma |
+| **Asbestosis, silicosis** | Mesothelioma, lung carcinoma |
+| **Inflammatory bowel disease** | Colorectal carcinoma |
+| **Lichen sclerosus** | Vulval squamous cell carcinoma |
+| **Pancreatitis** | Pancreatic carcinoma |
+| **Chronic cholecystitis** | Gallbladder carcinoma |
+| **Reflux oesophagitis, Barrett oesophagus** | Oesophageal carcinoma |
+| **Sjögren syndrome, Hashimoto thyroiditis** | Extranodal marginal zone (MALT) lymphoma |
+| **Opisthorchis (liver fluke) cholangitis** | Cholangiocarcinoma, colon carcinoma |
+| **Gastritis and ulcers (Helicobacter pylori)** | Gastric adenocarcinoma, MALT lymphoma |
 | Hepatitis (hepatitis B and C viruses) | Hepatocellular carcinoma |
-| Osteomyelitis | Carcinoma in draining sinuses |
-| Chronic cervicitis (human papillomavirus) | Cervical carcinoma |
-| Chronic cystitis (schistosomiasis) | Bladder carcinoma |
+| **Osteomyelitis** | Carcinoma in draining sinuses |
+| **Chronic cervicitis (human papillomavirus)** | Cervical carcinoma |
+| **Chronic cystitis (schistosomiasis)** | Bladder carcinoma |
 
 ## Oncogenic infective agents (viruses/bacteria) and the cancers they produce.
 
@@ -4785,7 +4785,7 @@ Further proliferation induces additional mutations and the emergence of a malign
 | **HTLV-1** (RNA retrovirus) | Adult T-cell leukaemia/lymphoma |
 | **Human papillomavirus** types 16 and 18 | Squamous cell carcinomas of the cervix, anogenital region and head and neck (oropharynx) |
 | **Epstein-Barr virus** | Burkitt lymphoma, B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma |
-| **Hepatitis B and C viruses** | Hepatocellular carcinoma (70 to 85% worldwide) |
+| Hepatitis B and C viruses | Hepatocellular carcinoma (70 to 85% worldwide) |
 | **Human herpesvirus 8** | Kaposi sarcoma |
 | **Merkel cell polyomavirus** | Merkel cell carcinoma |
 | **Helicobacter pylori** | Gastric adenocarcinoma, gastric B-cell lymphoma (MALToma) |
@@ -4891,7 +4891,7 @@ About 15% of all cancers worldwide are caused directly or indirectly by infectio
 | **HTLV-1** (RNA retrovirus) | Adult T-cell leukaemia/lymphoma |
 | **Human papillomavirus** types 16 and 18 | Squamous cell carcinomas of the cervix, anogenital region and head and neck (oropharynx) |
 | **Epstein-Barr virus** | Burkitt lymphoma, B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma |
-| **Hepatitis B and C viruses** | Hepatocellular carcinoma (70 to 85% worldwide) |
+| Hepatitis B and C viruses | Hepatocellular carcinoma (70 to 85% worldwide) |
 | **Human herpesvirus 8** | Kaposi sarcoma |
 | **Merkel cell polyomavirus** | Merkel cell carcinoma |
 | **Helicobacter pylori** | Gastric adenocarcinoma, gastric B-cell lymphoma (MALToma) |
@@ -4977,19 +4977,19 @@ They are important to recognise because they:
 
 | Syndrome | Associated cancer | Mechanism |
 |---|---|---|
-| Cushing syndrome | Small cell carcinoma of lung | ACTH or ACTH-like substance |
+| **Cushing syndrome** | Small cell carcinoma of lung | ACTH or ACTH-like substance |
 | Syndrome of inappropriate antidiuretic hormone secretion | Small cell carcinoma of lung, intracranial neoplasms | Antidiuretic hormone or atrial natriuretic hormones |
-| Hypercalcaemia | Squamous cell carcinoma of lung, breast carcinoma | Parathyroid hormone–related protein, TGF-α, TNF, IL-1 |
-| Hypoglycaemia | Ovarian carcinoma | Insulin or insulin-like substance |
-| Polycythaemia | Renal carcinoma | Erythropoietin |
+| **Hypercalcaemia** | Squamous cell carcinoma of lung, breast carcinoma | Parathyroid hormone–related protein, TGF-α, TNF, IL-1 |
+| **Hypoglycaemia** | Ovarian carcinoma | Insulin or insulin-like substance |
+| **Polycythaemia** | Renal carcinoma | Erythropoietin |
 | Myasthenia and disorders of the central and peripheral nervous system | Bronchogenic carcinoma, breast carcinoma | Immunologic |
-| Acanthosis nigricans | Gastric carcinoma | Immunologic; secretion of epidermal growth factor |
-| Dermatomyositis | Bronchogenic carcinoma | Immunologic |
+| **Acanthosis nigricans** | Gastric carcinoma | Immunologic; secretion of epidermal growth factor |
+| **Dermatomyositis** | Bronchogenic carcinoma | Immunologic |
 | Hypertrophic osteoarthropathy and clubbing of the fingers | Bronchogenic carcinoma | Unknown |
-| Venous thrombosis (Trousseau phenomenon) | Pancreatic carcinoma, bronchogenic carcinoma | Tumour products that activate clotting |
-| Disseminated intravascular coagulation | Acute promyelocytic leukaemia, prostatic carcinoma | Tumour products that activate clotting |
-| Red cell aplasia | Thymic neoplasms | Immunologic |
-| Nonbacterial thrombotic endocarditis | Advanced mucin-secreting adenocarcinomas | Not specified in the textbook |
+| **Venous thrombosis (Trousseau phenomenon)** | Pancreatic carcinoma, bronchogenic carcinoma | Tumour products that activate clotting |
+| **Disseminated intravascular coagulation** | Acute promyelocytic leukaemia, prostatic carcinoma | Tumour products that activate clotting |
+| **Red cell aplasia** | Thymic neoplasms | Immunologic |
+| **Nonbacterial thrombotic endocarditis** | Advanced mucin-secreting adenocarcinomas | Not specified in the textbook |
 
 ## Grading of cancer.
 
@@ -5086,9 +5086,9 @@ The site textbook does not cover cancer in Bangladesh. This answer follows the I
 
 | Males | Females |
 |---|---|
-| Lung | Breast |
-| Lip and oral cavity | Cervix uteri |
-| Oesophagus | |
+| **Lung** | Breast |
+| **Lip and oral cavity** | Cervix uteri |
+| **Oesophagus** | |
 
 - Breast cancer and cervical cancer are the most common cancers in women.
 - Lung cancer and cancers of the lip and oral cavity are the most prevalent in men, with oesophageal cancer also among the most frequently diagnosed.
@@ -5143,11 +5143,11 @@ The site textbook names the sampling approaches (excision or biopsy, needle aspi
 
 | Marker | Associated tumour |
 |---|---|
-| Prostate-specific antigen (PSA) | Prostatic adenocarcinoma |
-| Carcinoembryonic antigen (CEA) | Carcinomas of the colon, pancreas, stomach and breast |
-| Alpha-fetoprotein (AFP) | Hepatocellular carcinoma, yolk sac tumours, and occasionally teratocarcinomas and embryonal cell carcinomas |
-| Human chorionic gonadotropin (HCG) | Testicular tumours |
-| CA-125 | Ovarian tumours |
+| **Prostate-specific antigen (PSA)** | Prostatic adenocarcinoma |
+| **Carcinoembryonic antigen (CEA)** | Carcinomas of the colon, pancreas, stomach and breast |
+| **Alpha-fetoprotein (AFP)** | Hepatocellular carcinoma, yolk sac tumours, and occasionally teratocarcinomas and embryonal cell carcinomas |
+| **Human chorionic gonadotropin (HCG)** | Testicular tumours |
+| **CA-125** | Ovarian tumours |
 
 ## How will you diagnose a tumour in the laboratory?
 
@@ -5366,11 +5366,11 @@ Lead binds to sulphydryl groups and interferes with calcium metabolism. The majo
 
 ## Sources of arsenic.
 
-- Arsenic is found **naturally in soils and water**.
-- **High concentrations of inorganic arsenic in groundwater** in countries such as Bangladesh, Chile and China. About 40 million people in Bangladesh drink arsenic-contaminated water.
+- Arsenic is found naturally in soils and water.
+- High concentrations of inorganic arsenic in groundwater in countries such as Bangladesh, Chile and China. About 40 million people in Bangladesh drink arsenic-contaminated water.
 - Products such as **wood preservatives, herbicides** and other agricultural products.
 - Release from **mines and smelting industries**.
-- **Chinese and Indian herbal medicines.**
+- Chinese and Indian herbal medicines.
 - Deliberate poisoning is now rare.
 
 ## Toxic effects of arsenic on the body.
@@ -5387,25 +5387,25 @@ Arsenic salts interfere with several aspects of cellular metabolism. Trivalent a
 
 | System | Effect | Toxicant |
 |---|---|---|
-| Respiratory | Lung cancer | Radon, asbestos, silica, nickel, arsenic, chromium, uranium |
+| **Respiratory** | Lung cancer | Radon, asbestos, silica, nickel, arsenic, chromium, uranium |
 | | Nasal cancer | Isopropyl alcohol, wood dust |
 | | Chronic obstructive pulmonary disease | Grain dust, coal dust, cadmium |
 | | Hypersensitivity | Beryllium, isocyanates |
 | | Irritation | Ammonia, sulphur oxides, formaldehyde |
 | | Fibrosis | Silica, asbestos, cobalt |
-| Cardiovascular | Heart disease | Carbon monoxide, lead, solvents, cobalt, cadmium |
-| Nervous | Peripheral neuropathies | Solvents, acrylamide, mercury, lead, arsenic, DDT |
+| **Cardiovascular** | Heart disease | Carbon monoxide, lead, solvents, cobalt, cadmium |
+| **Nervous** | Peripheral neuropathies | Solvents, acrylamide, mercury, lead, arsenic, DDT |
 | | CNS depression | Alcohols, ketones, aldehydes, solvents |
 | | Cataracts | Ultraviolet radiation |
-| Urinary | Renal toxicity | Mercury, lead, glycol ethers, solvents |
+| **Urinary** | Renal toxicity | Mercury, lead, glycol ethers, solvents |
 | | Bladder cancer | Naphthylamines, 4-aminobiphenyl, benzidine, rubber products |
-| Reproductive | Male and female infertility, stillbirth, teratogenesis | Lead, mercury, cadmium, PCBs |
-| Haematopoietic | Leukaemia | Benzene |
-| Skin | Folliculitis and acneiform dermatosis | PCBs, dioxins, herbicides |
+| **Reproductive** | Male and female infertility, stillbirth, teratogenesis | Lead, mercury, cadmium, PCBs |
+| **Haematopoietic** | Leukaemia | Benzene |
+| **Skin** | Folliculitis and acneiform dermatosis | PCBs, dioxins, herbicides |
 | | Cancer | Ultraviolet radiation |
-| Gastrointestinal | Angiosarcoma of the liver | Vinyl chloride |
+| **Gastrointestinal** | Angiosarcoma of the liver | Vinyl chloride |
 
-The pneumoconioses (coal dust, silica, asbestos and beryllium) are non-neoplastic lung diseases caused by inhaling mineral dusts at work.
+The pneumoconioses (coal dust, silica, asbestos and beryllium) are non-neoplastic lung **diseases** caused by inhaling mineral dusts at work.
 
 ## Write a short note on environmental pollution.
 
@@ -5449,14 +5449,14 @@ Quitting reduces the risk, but the excess risk of lung cancer persists for decad
 
 | Organ | Suspected carcinogens |
 |---|---|
-| Lung and larynx | Polycyclic aromatic hydrocarbons, NNK, polonium 210 |
-| Oesophagus | NNN |
-| Pancreas | NNK |
-| Bladder | 4-aminobiphenyl, 2-naphthylamine |
-| Oral cavity (smoking) | Polycyclic aromatic hydrocarbons, NNK, NNN |
-| Oral cavity (snuff) | NNK, NNN, polonium 210 |
+| **Lung and larynx** | Polycyclic aromatic hydrocarbons, NNK, polonium 210 |
+| **Oesophagus** | NNN |
+| **Pancreas** | NNK |
+| **Bladder** | 4-aminobiphenyl, 2-naphthylamine |
+| **Oral cavity (smoking)** | Polycyclic aromatic hydrocarbons, NNK, NNN |
+| **Oral cavity (snuff)** | NNK, NNN, polonium 210 |
 
-Smoking is also linked to cancers of the kidney, cervix, liver, stomach, colon and haemopoietic cells (leukaemia).
+**Smoking** is also linked to cancers of the kidney, cervix, liver, stomach, colon and haemopoietic cells (leukaemia).
 
 ## Adverse effects of alcohol abuse on health.
 
@@ -5491,14 +5491,14 @@ Radiation also causes mutagenesis, carcinogenesis and teratogenesis.
 
 ## Classify burn on the basis of degree.
 
-Burns used to be classified as first to fourth degree by depth, and are now classified as superficial, partial-thickness and full-thickness.
+Burns used to be classified as first to fourth **degree** by depth, and are now classified as superficial, partial-thickness and full-thickness.
 
 | Current term | Old term | Extent | Appearance |
 |---|---|---|---|
-| Superficial | First degree | Confined to the epidermis | |
-| Partial-thickness | Second degree | Injury to the dermis | Pink or mottled with blisters; painful |
-| Full-thickness | Third degree | Extends to the subcutaneous tissue | White or charred, dry and painless (nerve endings destroyed) |
-| Full-thickness with muscle damage | Fourth degree | Damage to muscle beneath the subcutaneous tissue | |
+| **Superficial** | First degree | Confined to the epidermis | |
+| **Partial-thickness** | Second degree | Injury to the dermis | Pink or mottled with blisters; painful |
+| **Full-thickness** | Third degree | Extends to the subcutaneous tissue | White or charred, dry and painless (nerve endings destroyed) |
+| **Full-thickness with muscle damage** | Fourth degree | Damage to muscle beneath the subcutaneous tissue | |
 
 ## Factors that influence the severity of burn injury.
 
@@ -5550,17 +5550,17 @@ PEM results from dietary intake of protein and calories that is inadequate to me
 
 | Feature | Marasmus | Kwashiorkor |
 |---|---|---|
-| Cause | Diet severely lacking in calories | Protein deprivation relatively greater than the reduction in total calories |
-| Weight | Falls to 60% of normal for sex, height and age | 60% to 80% of normal, masked by oedema |
-| Protein compartment | Somatic compartment depleted; visceral compartment spared | Visceral compartment severely depleted |
-| Serum albumin | Normal or slightly reduced | Low (hypoalbuminaemia) |
-| Oedema | Absent | Generalised or dependent oedema |
-| Muscle and fat | Marked loss of muscle and subcutaneous fat; emaciated limbs; head appears too large | Relative sparing of subcutaneous fat and muscle |
-| Skin and hair | | "Flaky paint" skin lesions; hair changes |
-| Liver | Not enlarged | Enlarged and fatty |
-| Other | Growth retardation; anaemia; vitamin deficiencies; immune deficiency | Apathy, listlessness and loss of appetite; vitamin deficiencies; immune defects; small bowel mucosal atrophy |
+| **Cause** | Diet severely lacking in calories | Protein deprivation relatively greater than the reduction in total calories |
+| **Weight** | Falls to 60% of normal for sex, height and age | 60% to 80% of normal, masked by oedema |
+| **Protein compartment** | Somatic compartment depleted; visceral compartment spared | Visceral compartment severely depleted |
+| **Serum albumin** | Normal or slightly reduced | Low (hypoalbuminaemia) |
+| **Oedema** | Absent | Generalised or dependent oedema |
+| **Muscle and fat** | Marked loss of muscle and subcutaneous fat; emaciated limbs; head appears too large | Relative sparing of subcutaneous fat and muscle |
+| **Skin and hair** | | "Flaky paint" skin lesions; hair changes |
+| **Liver** | Not enlarged | Enlarged and fatty |
+| **Other** | Growth retardation; anaemia; vitamin deficiencies; immune deficiency | Apathy, listlessness and loss of appetite; vitamin deficiencies; immune defects; small bowel mucosal atrophy |
 
-The two are ends of a spectrum, and considerable overlap exists.
+**The two** are ends of a spectrum, and considerable overlap exists.
 
 ## Sources of vitamin A.
 
@@ -6193,9 +6193,9 @@ Several patterns are often seen within the same node. The nodes are nontender be
 
 ## Write down the causes of generalized lymphadenopathy.
 
-- **Systemic viral infections**, particularly in children, and **bacteraemia.**
-- **Chronic lymphocytic leukaemia/small lymphocytic lymphoma**, in 50% to 60% of symptomatic patients.
-- **Follicular lymphoma**, **mantle cell lymphoma** and **peripheral T-cell lymphoma**, not otherwise specified.
+- **Systemic viral infections**, particularly in children, and bacteraemia.
+- Chronic lymphocytic leukaemia/small lymphocytic lymphoma, in 50% to 60% of symptomatic patients.
+- **Follicular lymphoma**, mantle cell lymphoma and peripheral T-cell lymphoma, not otherwise specified.
 - **Acute lymphoblastic leukaemia**, from neoplastic infiltration.
 - **Tuberculosis** and other mycobacterial, fungal and parasitic infections (for example toxoplasmosis).
 - **Autoimmune disease.**
@@ -6220,14 +6220,14 @@ Several patterns are often seen within the same node. The nodes are nontender be
 
 | Type | Name |
 |---|---|
-| M0 | Acute myeloblastic leukaemia with minimal differentiation |
-| M1 | Myeloblastic leukaemia without maturation |
-| M2 | Myeloblastic leukaemia with maturation |
-| M3 | Acute promyelocytic leukaemia |
-| M4 | Acute myelomonocytic leukaemia; the myeloblastic and monoblastic components each make up more than 20% of the blasts in the marrow |
-| M5 | Acute monoblastic leukaemia: M5a without differentiation, M5b with differentiation |
-| M6 | Erythroleukaemia |
-| M7 | Acute megakaryoblastic leukaemia |
+| **M0** | Acute myeloblastic leukaemia with minimal differentiation |
+| **M1** | Myeloblastic leukaemia without maturation |
+| **M2** | Myeloblastic leukaemia with maturation |
+| **M3** | Acute promyelocytic leukaemia |
+| **M4** | Acute myelomonocytic leukaemia; the myeloblastic and monoblastic components each make up more than 20% of the blasts in the marrow |
+| **M5** | Acute monoblastic leukaemia: M5a without differentiation, M5b with differentiation |
+| **M6** | Erythroleukaemia |
+| **M7** | Acute megakaryoblastic leukaemia |
 
 ## What are the common presentations of acute leukaemia/AML?
 
@@ -6482,7 +6482,7 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 2. **Waldenström macroglobulinaemia**, in which high levels of IgM cause hyperviscosity.
 3. **Heavy-chain disease**, with free heavy-chain fragments.
 4. **Immunoglobulin-related (AL) amyloidosis**, from monoclonal plasma cells secreting light chains.
-5. **Monoclonal gammopathy of undetermined significance (MGUS).**
+5. Monoclonal gammopathy of undetermined significance (MGUS).
 
 ## What is myeloma?
 
@@ -6609,10 +6609,10 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 | Feature | Subleukaemic or aleukaemic leukaemia | Aplastic anaemia |
 |---|---|---|
-| Bone marrow | Hypercellular, packed with blasts, generally 20% or more | Markedly hypocellular, largely devoid of haematopoietic cells; fat cells, fibrous stroma and scattered lymphocytes and plasma cells remain |
-| Marrow aspirate | Cells yielded, showing blasts | Often yields little material (dry tap); aplasia best seen on biopsy |
-| Blood | Abnormal white cells present with a normal total count; in aleukaemic leukaemia blasts are absent; pancytopenia may be present | Pancytopenia inevitably; reticulocytopenia; red cells usually slightly macrocytic and normochromic |
-| Diagnosis | Bone marrow examination is essential to exclude acute leukaemia in pancytopenic patients | Rests on bone marrow biopsy |
+| **Bone marrow** | Hypercellular, packed with blasts, generally 20% or more | Markedly hypocellular, largely devoid of haematopoietic cells; fat cells, fibrous stroma and scattered lymphocytes and plasma cells remain |
+| **Marrow aspirate** | Cells yielded, showing blasts | Often yields little material (dry tap); aplasia best seen on biopsy |
+| **Blood** | Abnormal white cells present with a normal total count; in aleukaemic leukaemia blasts are absent; pancytopenia may be present | Pancytopenia inevitably; reticulocytopenia; red cells usually slightly macrocytic and normochromic |
+| **Diagnosis** | Bone marrow examination is essential to exclude acute leukaemia in pancytopenic patients | Rests on bone marrow biopsy |
 
 ## Write a short note on polycythaemia rubra vera.
 
@@ -6691,12 +6691,12 @@ All formed elements of blood (red cells, granulocytes, monocytes, platelets and 
 
 | Period | Site |
 |---|---|
-| Third week of embryonic life | Yolk sac; transient, mainly embryonic red cells |
-| Several weeks later | Definitive HSCs arise in the mesoderm of the intraembryonic aorta/gonad/mesonephros region |
-| Third month | Liver, the chief site until shortly before birth; HSCs also in the foetal placenta |
-| Fourth month onwards | Bone marrow |
-| Birth | Marrow throughout the skeleton is active; hepatic haematopoiesis dwindles |
-| After puberty | Restricted to the axial skeleton; in adults only about half of the marrow space is active |
+| **Third week of embryonic life** | Yolk sac; transient, mainly embryonic red cells |
+| **Several weeks later** | Definitive HSCs arise in the mesoderm of the intraembryonic aorta/gonad/mesonephros region |
+| **Third month** | Liver, the chief site until shortly before birth; HSCs also in the foetal placenta |
+| **Fourth month onwards** | Bone marrow |
+| **Birth** | Marrow throughout the skeleton is active; hepatic haematopoiesis dwindles |
+| **After puberty** | Restricted to the axial skeleton; in adults only about half of the marrow space is active |
 
 ## Where does extramedullary haemopoiesis occur?
 
@@ -6710,7 +6710,7 @@ Extramedullary haematopoiesis occurs in the **spleen, liver and lymph nodes**, w
 ## Write the developmental stages of RBC.
 
 1. **Haemopoietic stem cell:** pluripotent cell at the apex of the marrow hierarchy.
-2. **Committed erythroid progenitor (CFU-E, colony-forming unit erythroid):** proliferates under erythropoietin.
+2. Committed erythroid progenitor (CFU-E, colony-forming unit erythroid): proliferates under erythropoietin.
 3. **Proerythroblast:** the first morphologically recognisable red cell precursor.
 4. **Basophilic erythroblast.**
 5. **Polychromatic erythroblast.**
@@ -6774,11 +6774,11 @@ Red cell indices describe the red cells measured by special instrumentation.
 
 | Group | Haemoglobin (g/dL) |
 |---|---|
-| Adult male | 13.6 to 17.2 |
-| Adult female | 12.0 to 15.0 |
+| **Adult male** | 13.6 to 17.2 |
+| **Adult female** | 12.0 to 15.0 |
 
-- Anaemia is usually diagnosed from reductions in haematocrit and haemoglobin concentration below the normal range.
-- Haemoglobin correlates with red cell mass except when plasma volume changes, as in fluid retention or dehydration.
+- **Anaemia is usually diagnosed** from reductions in haematocrit and haemoglobin concentration below the normal range.
+- **Haemoglobin correlates** with red cell mass except when plasma volume changes, as in fluid retention or dehydration.
 
 ## What information can you get from a stained PBF?
 
@@ -6831,7 +6831,7 @@ Red cell indices describe the red cells measured by special instrumentation.
 
 **Plasma proteins**
 
-- **Increased fibrinogen** and **immunoglobulins** promote rouleaux formation and increase ESR.
+- **Increased fibrinogen** and immunoglobulins promote rouleaux formation and increase ESR.
 - **Albumin** retards sedimentation; hypoalbuminaemia permits faster sedimentation.
 - Removal of fibrinogen by defibrination decreases ESR.
 
@@ -6840,7 +6840,7 @@ Red cell indices describe the red cells measured by special instrumentation.
 - **Anaemia** increases ESR.
 - **Polycythaemia** decreases ESR.
 - **Sickle cells and spherocytes** cannot form rouleaux, so ESR is low in sickle cell anaemia and hereditary spherocytosis.
-- **Macrocytes** settle faster; **microcytes** settle more slowly.
+- **Macrocytes** settle faster; microcytes settle more slowly.
 
 
 ## What are the iron profile tests?
@@ -6865,7 +6865,7 @@ In health transferrin is about one-third saturated; serum iron averages 120 µg/
 
 ## Define PCV.
 
-The packed cell volume (haematocrit) is the ratio of packed red cells to total blood volume.
+The **packed cell volume** (**haematocrit**) is the ratio of packed red cells to total blood volume.
 
 
 ## Name the red cell (absolute) indices with values.
@@ -6937,12 +6937,12 @@ Bone marrow is examined by two procedures, usually done together:
 
 ## Name the white cell disorders for which bone marrow aspiration is done.
 
-1. Acute leukaemias.
-2. Aleukaemic leukaemia.
-3. Myelodysplastic neoplasm.
-4. Multiple myeloma and Waldenström macroglobulinaemia.
-5. Agranulocytosis.
-6. Staging of Hodgkin lymphoma (bone marrow biopsy).
+1. **Acute leukaemias**.
+2. **Aleukaemic leukaemia**.
+3. **Myelodysplastic neoplasm**.
+4. **Multiple myeloma and** Waldenström macroglobulinaemia.
+5. **Agranulocytosis**.
+6. **Staging of Hodgkin lymphoma** (bone marrow biopsy).
 
 
 ## Mention the site of marrow puncture in a child below 2 years.
@@ -7035,7 +7035,7 @@ Classification rests on red cell size (normocytic, microcytic, macrocytic), degr
 | **Immune-mediated injury of progenitors** | Aplastic anaemia, pure red cell aplasia |
 | **Primary haematopoietic neoplasms** | Acute leukaemia, myelodysplastic syndrome, myeloproliferative neoplasms |
 | **Space-occupying marrow lesions** | Metastatic neoplasms, granulomatous disease |
-| **Infections of red cell progenitors** | Parvovirus B19 infection |
+| Infections of red cell progenitors | Parvovirus B19 infection |
 | **Unknown mechanisms** | Endocrine disorders, hepatocellular liver disease |
 
 ## How will you investigate a case of anaemia?
@@ -7148,10 +7148,10 @@ Iron deficiency can result from:
 
 | Feature | Aplastic anaemia | Iron deficiency anaemia |
 |---|---|---|
-| Nature | Markedly hypocellular marrow, largely devoid of haematopoietic cells; pancytopenia inevitably appears | Inadequate haemoglobin production from lack of iron |
-| Consequences | Anaemia, petechiae and ecchymoses, and frequent, persistent infections or sudden chills, fever and prostration | Hypochromic microcytic anaemia; symptoms often those of the underlying cause |
-| Treatment | Stem cell transplantation, with 5-year survival of more than 75% where a donor exists; immunosuppressive therapy for older patients or those without a donor | Oral iron produces a reticulocyte rise in 5 to 7 days and normalisation of red cell indices |
-| Prognosis | Variable | Correctable once the cause is treated |
+| **Nature** | Markedly hypocellular marrow, largely devoid of haematopoietic cells; pancytopenia inevitably appears | Inadequate haemoglobin production from lack of iron |
+| **Consequences** | Anaemia, petechiae and ecchymoses, and frequent, persistent infections or sudden chills, fever and prostration | Hypochromic microcytic anaemia; symptoms often those of the underlying cause |
+| **Treatment** | Stem cell transplantation, with 5-year survival of more than 75% where a donor exists; immunosuppressive therapy for older patients or those without a donor | Oral iron produces a reticulocyte rise in 5 to 7 days and normalisation of red cell indices |
+| **Prognosis** | Variable | Correctable once the cause is treated |
 
 ## Differential diagnosis of microcytic hypochromic anaemia.
 
@@ -7166,12 +7166,12 @@ Iron deficiency can result from:
 
 | Test | Iron deficiency | Anaemia of chronic inflammation | Thalassaemia trait |
 |---|---|---|---|
-| Serum iron | Low | Low | Not stated |
-| Total iron-binding capacity | High | Reduced | Not stated |
-| Serum ferritin | Low | High | Not stated |
-| Marrow iron in macrophages | Absent | Increased | Not stated |
-| Haemoglobin electrophoresis | Not stated | Not stated | Haemoglobin A2 increased to 4% to 8% |
-| Blood film | Pencil cells | Normocytic or slightly hypochromic | Target cells, basophilic stippling |
+| **Serum iron** | Low | Low | Not stated |
+| **Total iron-binding capacity** | High | Reduced | Not stated |
+| **Serum ferritin** | Low | High | Not stated |
+| **Marrow iron in macrophages** | Absent | Increased | Not stated |
+| **Haemoglobin electrophoresis** | Not stated | Not stated | Haemoglobin A2 increased to 4% to 8% |
+| **Blood film** | Pencil cells | Normocytic or slightly hypochromic | Target cells, basophilic stippling |
 
 ## Name the changes of absolute values in iron deficiency anemia.
 
@@ -7274,11 +7274,11 @@ Microcytic hypochromic anaemias are caused by disorders of haemoglobin synthesis
 
 ## Same patient: what will be his iron profile?
 
-1. Serum iron low.
-2. Serum ferritin low.
-3. Total iron-binding capacity high.
-4. Transferrin saturation below 15%.
-5. Absent stainable iron in marrow macrophages.
+1. **Serum iron low**.
+2. **Serum ferritin low**.
+3. **Total iron-binding capacity high**.
+4. **Transferrin saturation below 15%**.
+5. **Absent stainable iron** in marrow macrophages.
 
 
 ## Define macrocytic anemia.
@@ -7331,12 +7331,12 @@ The common theme among the various causes of megaloblastic anaemia is an impairm
 
 | Feature | Megaloblastic anaemia | Aplastic anaemia (slightly macrocytic) |
 |---|---|---|
-| Red cells | Macro-ovalocytes; marked anisocytosis and poikilocytosis | Usually slightly macrocytic and normochromic |
-| Neutrophils | Larger than normal, with five or more nuclear lobules (hypersegmentation) | Neutropenia |
-| Reticulocytes | Low | Reticulocytopenia is the rule |
-| Marrow cellularity | Markedly hypercellular | Markedly hypocellular, largely fat cells |
-| Marrow cells | Megaloblasts with nuclear-to-cytoplasmic asynchrony; giant metamyelocytes; large megakaryocytes | Largely devoid of haematopoietic cells; "dry tap" on aspiration |
-| Cause | Impaired DNA synthesis from vitamin B12 or folate deficiency | Chronic primary haematopoietic failure |
+| **Red cells** | Macro-ovalocytes; marked anisocytosis and poikilocytosis | Usually slightly macrocytic and normochromic |
+| **Neutrophils** | Larger than normal, with five or more nuclear lobules (hypersegmentation) | Neutropenia |
+| **Reticulocytes** | Low | Reticulocytopenia is the rule |
+| **Marrow cellularity** | Markedly hypercellular | Markedly hypocellular, largely fat cells |
+| **Marrow cells** | Megaloblasts with nuclear-to-cytoplasmic asynchrony; giant metamyelocytes; large megakaryocytes | Largely devoid of haematopoietic cells; "dry tap" on aspiration |
+| **Cause** | Impaired DNA synthesis from vitamin B12 or folate deficiency | Chronic primary haematopoietic failure |
 
 ## How can you diagnose a case of megaloblastic anaemia?
 
@@ -7361,18 +7361,18 @@ The three major causes are decreased intake, increased requirements and impaired
 
 ## Why is folate deficiency more common than vitamin B12 deficiency?
 
-Folate
+**Folate**
 
-- The body's reserves of folate are relatively modest, and a deficiency can arise within weeks to months if intake is inadequate.
-- Folic acid in food is largely folylpolyglutamates, which are sensitive to heat; boiling, steaming or frying for 5 to 10 minutes destroys up to 95% of the folate content.
-- Requirements rise in pregnancy, infancy, hyperactive haematopoiesis and disseminated cancer, so normal intake becomes inadequate.
-- Alcohol use disorder, malabsorption, and drugs such as phenytoin, oral contraceptives and methotrexate all cause deficiency.
+- **The body's reserves** of folate are relatively modest, and a deficiency can arise within weeks to months if intake is inadequate.
+- **Folic acid** in food is largely folylpolyglutamates, which are sensitive to heat; boiling, steaming or frying for 5 to 10 minutes destroys up to 95% of the folate content.
+- **Requirements rise** in pregnancy, infancy, hyperactive haematopoiesis and disseminated cancer, so normal intake becomes inadequate.
+- **Alcohol use disorder**, malabsorption, and drugs such as phenytoin, oral contraceptives and methotrexate all cause deficiency.
 
-Vitamin B12
+**Vitamin** B12
 
-- The daily requirement is only 2 to 3 µg.
-- A diet that includes animal products contains significantly more than the minimal daily requirement and builds intrahepatic stores sufficient to last several years.
-- Only strictly vegetarian or macrobiotic diets, which contain little cobalamin, fail to provide enough.
+- **The daily requirement** is only 2 to 3 µg.
+- **A diet** that includes animal products contains significantly more than the minimal daily requirement and builds intrahepatic stores sufficient to last several years.
+- **Only strictly vegetarian** or macrobiotic diets, which contain little cobalamin, fail to provide enough.
 
 ## Causes of vitamin B12 deficiency.
 
@@ -7510,7 +7510,7 @@ With gastrectomy, **intrinsic factor is lost**, so vitamin B12 cannot be absorbe
 
 ## Define haemolytic anaemia.
 
-Haemolytic anaemias are the result of extravascular or intravascular haemolysis. They share the following features:
+**Haemolytic** anaemias are the result of extravascular or intravascular haemolysis. They share the following features:
 
 - A shortened red cell life span below the normal 120 days.
 - Elevated erythropoietin levels and a compensatory increase in erythropoiesis.
@@ -7609,7 +7609,7 @@ The textbook does not use the term; the causes in its classification that act on
 
 ## What is autoimmune haemolytic anaemia (AIHA)?
 
-Immunohaemolytic anaemia is caused by antibodies that recognise red cells and cause their premature destruction. Although these disorders are commonly referred to as autoimmune haemolytic anaemias, the designation immunohaemolytic anaemia is preferred because the immune reaction is initiated in some instances by an ingested drug.
+Immunohaemolytic anaemia is caused by antibodies that recognise red cells and cause their premature destruction. Although these disorders are commonly referred to as **autoimmune haemolytic** anaemias, the designation immunohaemolytic anaemia is preferred because the immune reaction is initiated in some instances by an ingested drug.
 
 ## Causes of AIHA.
 
@@ -7628,9 +7628,9 @@ Drug-induced warm antibody type acts by two mechanisms:
 
 | Mechanism | Examples |
 |---|---|
-| **Inherited genetic defects: red cell membrane disorders** | Hereditary spherocytosis, hereditary elliptocytosis |
-| **Inherited genetic defects: enzyme deficiencies** | Hexose monophosphate shunt enzyme deficiencies (G6PD deficiency, glutathione synthetase deficiency); glycolytic enzyme deficiencies (pyruvate kinase deficiency, hexokinase deficiency) |
-| **Inherited genetic defects: haemoglobin abnormalities** | Deficient globin synthesis (thalassaemia syndromes); structurally abnormal globins (sickle cell disease, unstable haemoglobins) |
+| Inherited genetic defects: red cell membrane disorders | Hereditary spherocytosis, hereditary elliptocytosis |
+| Inherited genetic defects: enzyme deficiencies | Hexose monophosphate shunt enzyme deficiencies (G6PD deficiency, glutathione synthetase deficiency); glycolytic enzyme deficiencies (pyruvate kinase deficiency, hexokinase deficiency) |
+| Inherited genetic defects: haemoglobin abnormalities | Deficient globin synthesis (thalassaemia syndromes); structurally abnormal globins (sickle cell disease, unstable haemoglobins) |
 | **Acquired genetic defects** | Deficiency of phosphatidylinositol-linked glycoproteins (paroxysmal nocturnal haemoglobinuria) |
 | **Antibody-mediated destruction** | Haemolytic disease of the newborn (Rh disease), transfusion reactions, drug-induced, autoimmune disorders |
 | **Mechanical trauma** | Microangiopathic haemolytic anaemias (haemolytic uraemic syndrome, disseminated intravascular coagulation, thrombotic thrombocytopenic purpura); cardiac traumatic haemolysis (defective cardiac valves); repetitive physical trauma (bongo drumming, marathon running, karate chopping) |
@@ -7701,7 +7701,7 @@ Causes: mechanical injury, complement fixation, intracellular parasites (falcipa
 
 ## What do you mean by haemolytic disease of newborn?
 
-Immune hydrops is a haemolytic disease caused by blood group antigen incompatibility between mother and foetus.
+Immune hydrops is a **haemolytic disease** caused by blood group antigen incompatibility between mother and foetus.
 
 ## Normal types of haemoglobin.
 
@@ -7720,7 +7720,7 @@ Haemoglobin is a tetrameric protein composed of two pairs of globin chains, each
 
 ## Define haemoglobinopathies.
 
-Haemoglobinopathies are disorders caused by mutations in globin genes that produce structurally abnormal globins. Several hundred are known.
+**Haemoglobinopathies** are disorders caused by mutations in globin genes that produce structurally abnormal globins. Several hundred are known.
 
 ## Examples of haemoglobinopathies.
 
@@ -7773,7 +7773,7 @@ Haemoglobinopathies are disorders caused by mutations in globin genes that produ
 
 ## Define thalassemia.
 
-Thalassaemia is a genetically heterogeneous disorder caused by germline mutations that decrease the synthesis of either alpha-globin or beta-globin, leading to anaemia, tissue hypoxia, and red cell haemolysis related to the imbalance in globin chain synthesis.
+**Thalassaemia** is a genetically heterogeneous disorder caused by germline mutations that decrease the synthesis of either alpha-globin or beta-globin, leading to anaemia, tissue hypoxia, and red cell haemolysis related to the imbalance in globin chain synthesis.
 
 ## How is thalassemia classified?
 
@@ -7941,7 +7941,7 @@ The stagnation reflects the microvascular occlusion that underlies the disease:
 
 ## What is pancytopenia?
 
-Pancytopenia is the combination of anaemia, neutropenia and thrombocytopenia.
+**Pancytopenia** is the combination of anaemia, neutropenia and thrombocytopenia.
 
 ## Write down the important causes of pancytopenia.
 
@@ -7998,14 +7998,14 @@ Pancytopenia is the combination of anaemia, neutropenia and thrombocytopenia.
 
 ## How will you differentiate aplastic anaemia from subleukaemic acute leukaemia in the laboratory?
 
-Aplastic anaemia must be distinguished from "aleukaemic" leukaemia and myelodysplastic neoplasm, which may have identical clinical manifestations. The diagnosis rests on examination of a bone marrow biopsy.
+**Aplastic anaemia** must be distinguished from "aleukaemic" leukaemia and myelodysplastic neoplasm, which may have identical clinical manifestations. The diagnosis rests on examination of a bone marrow biopsy.
 
 | Feature | Aplastic anaemia | Aleukaemic acute leukaemia |
 |---|---|---|
-| Bone marrow cellularity | Hypocellular, usually markedly so | Hypercellular |
-| Bone marrow cells | Largely fat cells, fibrous stroma, scattered lymphocytes and plasma cells | Packed with neoplastic blasts, which replace normal marrow elements |
-| Marrow aspirate | Often a "dry tap" | Not stated |
-| Spleen | Splenomegaly characteristically absent | Not stated |
+| **Bone marrow cellularity** | Hypocellular, usually markedly so | Hypercellular |
+| **Bone marrow cells** | Largely fat cells, fibrous stroma, scattered lymphocytes and plasma cells | Packed with neoplastic blasts, which replace normal marrow elements |
+| **Marrow aspirate** | Often a "dry tap" | Not stated |
+| **Spleen** | Splenomegaly characteristically absent | Not stated |
 
 ## Write down the causes of marrow aplasia.
 
@@ -8055,13 +8055,13 @@ The diagnosis rests on bone marrow biopsy. It distinguishes aplastic anaemia fro
 
 ## Define hemorrhagic disorders with example.
 
-Haemorrhagic diatheses (bleeding disorders) are conditions in which excessive bleeding results from (1) increased fragility of vessels, (2) platelet deficiency or dysfunction, and (3) derangement of coagulation, alone or in combination.
+Haemorrhagic diatheses (bleeding **disorders**) are conditions in which excessive bleeding results from (1) increased fragility of vessels, (2) platelet deficiency or dysfunction, and (3) derangement of coagulation, alone or in combination.
 
 Examples:
 
-- Vessel wall: hereditary haemorrhagic telangiectasia.
-- Platelets: immune thrombocytopenic purpura.
-- Coagulation: haemophilia A.
+- **Vessel wall**: hereditary haemorrhagic telangiectasia.
+- **Platelets**: immune thrombocytopenic purpura.
+- **Coagulation**: haemophilia A.
 
 ## Classify haemorrhagic disorder.
 
@@ -8111,7 +8111,7 @@ Tests used:
 
 ## What do you mean by coagulation disorders?
 
-Coagulation disorders are bleeding disorders caused by inherited or acquired deficiencies of coagulation factors; deficiencies of virtually every coagulation factor have been reported as causes of abnormal bleeding.
+**Coagulation disorders** are bleeding disorders caused by inherited or acquired deficiencies of coagulation factors; deficiencies of virtually every coagulation factor have been reported as causes of abnormal bleeding.
 
 Bleeding commonly manifests as large post-traumatic ecchymoses or haematomas, or prolonged bleeding from a laceration or after a surgical procedure. Unlike bleeding with thrombocytopenia, it often occurs in the gastrointestinal and urinary tracts and in weight-bearing joints (haemarthrosis).
 
@@ -8134,7 +8134,7 @@ It is an older test, time-consuming and difficult to standardise, which has been
 
 ## What is clotting time?
 
-Clotting time is the time taken for blood to clot in a glass tube, the clotting being triggered by contact with the glass surface. It reflects the integrity of the intrinsic clotting pathway.
+**Clotting time** is the time taken for blood to clot in a glass tube, the clotting being triggered by contact with the glass surface. It reflects the integrity of the intrinsic clotting pathway.
 
 ## Normal limits of bleeding time and clotting time.
 
@@ -8170,11 +8170,11 @@ The prothrombin time is prolonged by deficiency or dysfunction of factor V, fact
 
 ## What is von Willebrand factor?
 
-Von Willebrand factor is a large protein that promotes the adhesion of platelets to subendothelial collagen and stabilises factor VIII.
+**Von Willebrand factor** is a large protein that promotes the adhesion of platelets to subendothelial collagen and stabilises factor VIII.
 
-- It is made by endothelial cells and by megakaryocytes, which are the source of the vWF in platelet alpha-granules.
-- It is secreted as multimers containing as many as 100 subunits, which can exceed 20 million daltons in molecular mass.
-- Some of the secreted vWF is deposited in the subendothelial matrix, ready to promote platelet adhesion if the endothelial lining is disrupted.
+- **It is made** by endothelial cells and by megakaryocytes, which are the source of the vWF in platelet alpha-granules.
+- **It is secreted** as multimers containing as many as 100 subunits, which can exceed 20 million daltons in molecular mass.
+- **Some** of the secreted vWF is deposited in the subendothelial matrix, ready to promote platelet adhesion if the endothelial lining is disrupted.
 
 ## Functions of von Willebrand factor.
 
@@ -8227,8 +8227,8 @@ The thrombotic diathesis leads to the consumption of platelets, fibrin and coagu
 
 Diagnosis is based on clinical observation and laboratory studies:
 
-1. **Fibrinogen level, platelet count, PT and PTT:** reflect the consumption of fibrinogen, platelets and clotting factors.
-2. **Fibrin degradation products, particularly D-dimers:** produced when plasmin cleaves fibrin during fibrinolysis.
+1. Fibrinogen level, platelet count, PT and PTT: reflect the consumption of fibrinogen, platelets and clotting factors.
+2. Fibrin degradation products, particularly D-dimers: produced when plasmin cleaves fibrin during fibrinolysis.
 3. **Peripheral blood film:** fragmented red cells, from microangiopathic haemolytic anaemia.
 
 ## Write a short note on ITP.
@@ -8335,7 +8335,7 @@ Bleeding time is an older test, now discarded because it is time-consuming and d
 
 ## Define thrombocytopenia.
 
-Reduction in platelet number is called thrombocytopenia. A count less than 150,000 platelets per µL is generally considered to constitute thrombocytopenia.
+Reduction in platelet number is called **thrombocytopenia**. A count less than 150,000 platelets per µL is generally considered to constitute thrombocytopenia.
 
 ## Discuss in short the pathogenesis of ITP.
 
@@ -8502,7 +8502,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 
 ## What do you mean by cross matching?
 
-Cross matching is the final check that a specific donor unit is compatible with a specific recipient. It tests ABO compatibility and whether the recipient has an unexpected antibody that reacts with donor red cells.
+**Cross matching** is the final check that a specific donor unit is compatible with a specific recipient. It tests ABO compatibility and whether the recipient has an unexpected antibody that reacts with donor red cells.
 
 
 ## How is cross matching performed?
@@ -8651,7 +8651,7 @@ Cross matching is the final check that a specific donor unit is compatible with 
 
 ## What is an anticoagulant?
 
-An anticoagulant is a chemical substance that prevents blood from clotting. In the laboratory it is added to blood in a fixed proportion and used only in vitro.
+An **anticoagulant** is a chemical substance that prevents blood from clotting. In the laboratory it is added to blood in a fixed proportion and used only in vitro.
 
 
 ## Enumerate anticoagulants used in the laboratory.
@@ -8738,7 +8738,7 @@ An anticoagulant is a chemical substance that prevents blood from clotting. In t
 1. **Febrile nonhaemolytic reaction:** fever and chills, sometimes with mild dyspnoea, within 6 hours.
 2. **Allergic reactions:** urticarial, or severe in IgA-deficient recipients.
 3. **Acute haemolytic reaction:** fever, shaking chills and flank pain.
-4. **Transfusion-related acute lung injury (TRALI):** sudden respiratory failure during or soon after transfusion.
+4. Transfusion-related acute lung injury (TRALI): sudden respiratory failure during or soon after transfusion.
 5. **Bacterial infection:** fever, chills and hypotension.
 6. **Circulatory overload:** respiratory distress or hypertension within 12 hours.
 
@@ -8924,15 +8924,15 @@ Excessive bleeding can result from increased fragility of vessels, platelet defi
 
 | Feature | Obstructive lung disease | Restrictive lung disease |
 |---|---|---|
-| Definition | Increase in resistance to airflow due to diffuse airway disease, which may affect any level of the respiratory tract | Reduced expansion of lung parenchyma and decreased total lung capacity |
-| Pulmonary function tests | Decreased maximal airflow rates during forced expiration; FEV1 over FVC ratio of less than 0.7 | Decreased total lung capacity |
-| Examples | Chronic obstructive pulmonary disease (emphysema and chronic bronchitis), asthma, bronchiectasis | Diseases that reduce lung expansion, such as the fibrosing diseases |
+| **Definition** | Increase in resistance to airflow due to diffuse airway disease, which may affect any level of the respiratory tract | Reduced expansion of lung parenchyma and decreased total lung capacity |
+| **Pulmonary function tests** | Decreased maximal airflow rates during forced expiration; FEV1 over FVC ratio of less than 0.7 | Decreased total lung capacity |
+| **Examples** | Chronic obstructive pulmonary disease (emphysema and chronic bronchitis), asthma, bronchiectasis | Diseases that reduce lung expansion, such as the fibrosing diseases |
 
-Chronic obstructive pulmonary disease is defined by the World Health Organization as a common, preventable and treatable disease characterised by persistent respiratory symptoms and airflow limitation due to airway or alveolar abnormalities caused by exposure to noxious particles or gases.
+**Chronic obstructive** pulmonary disease is defined by the World Health Organization as a common, preventable and treatable disease characterised by persistent respiratory symptoms and airflow limitation due to airway or alveolar abnormalities caused by exposure to noxious particles or gases.
 
 ## Define emphysema.
 
-Emphysema is defined by irreversible enlargement of the airspaces distal to the terminal bronchiole, accompanied by destruction of alveolar walls.
+**Emphysema** is defined by irreversible enlargement of the airspaces distal to the terminal bronchiole, accompanied by destruction of alveolar walls.
 
 ## Classify emphysema.
 
@@ -8987,7 +8987,7 @@ Clinically significant emphysema is largely confined to smokers and to patients 
 
 ## What is pneumonia?
 
-Pneumonia can be very broadly defined as any infection of the lung parenchyma.
+**Pneumonia** can be very broadly defined as any infection of the lung parenchyma.
 
 ## Give the types of pneumonia.
 
@@ -9042,11 +9042,11 @@ The pleural fibrinous reaction (pleuritis) may resolve, but more often is organi
 
 | Feature | Bronchopneumonia | Lobar pneumonia |
 |---|---|---|
-| Distribution | Patchy consolidation of the lung | Consolidation of a large portion of a lobe or an entire lobe |
-| Gross | Foci of acute suppurative inflammation; often multilobar, frequently bilateral and basal; slightly elevated, dry, granular, grey-red to yellow, poorly delimited at the margins | Lobe uniformly consolidated; four stages: congestion, red hepatisation, grey hepatisation and resolution |
-| Histology | Neutrophil-rich exudate filling the bronchi, bronchioles and adjacent alveolar spaces | Alveoli filled by neutrophils, red cells and fibrin |
-| Radiology | Focal opacities | Whole lobe radiopaque |
-| Common cause | Not given | Streptococcus pneumoniae (the inflammation is usually lobar) |
+| **Distribution** | Patchy consolidation of the lung | Consolidation of a large portion of a lobe or an entire lobe |
+| **Gross** | Foci of acute suppurative inflammation; often multilobar, frequently bilateral and basal; slightly elevated, dry, granular, grey-red to yellow, poorly delimited at the margins | Lobe uniformly consolidated; four stages: congestion, red hepatisation, grey hepatisation and resolution |
+| **Histology** | Neutrophil-rich exudate filling the bronchi, bronchioles and adjacent alveolar spaces | Alveoli filled by neutrophils, red cells and fibrin |
+| **Radiology** | Focal opacities | Whole lobe radiopaque |
+| **Common cause** | Not given | Streptococcus pneumoniae (the inflammation is usually lobar) |
 
 The patterns overlap: patchy involvement may become confluent, and the same organism may produce either pattern.
 
@@ -9134,7 +9134,7 @@ The patterns overlap: patchy involvement may become confluent, and the same orga
 
 ## Define miliary tuberculosis.
 
-Miliary pulmonary tuberculosis occurs when organisms draining through lymphatics enter the venous blood and circulate back to the lung; the lesions are microscopic or small visible foci (2 mm) of yellow-white consolidation, resembling millet seeds. Systemic miliary tuberculosis occurs when bacteria disseminate through the systemic arterial system.
+Miliary pulmonary tuberculosis occurs when organisms draining through lymphatics enter the venous blood and circulate back to the lung; the lesions are microscopic or small visible foci (**2 mm**) of yellow-white consolidation, resembling millet seeds. Systemic **miliary tuberculosis** occurs when bacteria disseminate through the systemic arterial system.
 
 ## Discuss the pathological characteristics of secondary pulmonary TB.
 
@@ -9344,7 +9344,7 @@ Peptic ulcer disease (PUD) refers to **chronic mucosal ulceration** affecting th
 ## Same (40y): what test confirms it in the laboratory?
 
 - **Serum electrolytes**: low chloride (hypochloraemia), low potassium (hypokalaemia), raised bicarbonate
-- **Arterial or venous blood gas analysis**: metabolic alkalosis
+- Arterial or venous blood gas analysis: metabolic alkalosis
 - Cause of the vomiting: **upper endoscopy** (visualises the gastric outlet) and barium upper GI study (shows the site of obstruction)
 
 ## Same (55y): what is the likely diagnosis of his present illness?
@@ -9430,8 +9430,8 @@ Inflammatory bowel disease (IBD) is a **chronic condition comprised of two disor
 ## Mention three important features of Crohn disease.
 
 1. **Skip lesions**: multiple, separate, sharply delineated areas of disease; most commonly the terminal ileum, ileocaecal valve and caecum
-2. **Transmural inflammation** with **noncaseating granulomas** (about 35% of cases) and a thickened, rubbery wall
-3. **Strictures, fissures and fistulae**; aphthous and linear ulcers give a **cobblestone** mucosa; **creeping fat**
+2. **Transmural inflammation** with noncaseating granulomas (about 35% of cases) and a thickened, rubbery wall
+3. **Strictures, fissures and fistulae**; aphthous and linear ulcers give a cobblestone mucosa; creeping fat
 
 ## Name the inflammatory bowel diseases.
 
@@ -9484,8 +9484,8 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 
 | Group | Types |
 |---|---|
-| **Non-neoplastic** | **Inflammatory** polyps; **hyperplastic** polyps; **hamartomatous** polyps (juvenile polyp, Peutz-Jeghers polyp) |
-| **Neoplastic** | **Adenoma** (tubular, tubulovillous, villous); **sessile serrated polyp** |
+| **Non-neoplastic** | **Inflammatory** polyps; hyperplastic polyps; hamartomatous polyps (juvenile polyp, Peutz-Jeghers polyp) |
+| **Neoplastic** | **Adenoma** (tubular, tubulovillous, villous); sessile serrated polyp |
 | **Stomach** | Inflammatory or hyperplastic polyps; fundic gland polyps; gastric adenoma |
 
 ## Mention the polyps having malignant potential.
@@ -9546,11 +9546,11 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 
 ## Write a short note on occult blood test.
 
-**Definition:** Test for **hidden (occult) blood in the stool**, blood not visible to the eye.
+**Definition:** Test for hidden (occult) blood in the stool, blood not visible to the eye.
 
 **Principle**
-- Detects **haemoglobin or its breakdown products**; the most common method detects haem
-- **Guaiac test**: the pseudoperoxidase of haemoglobin converts guaiac to **blue**
+- Detects haemoglobin or its breakdown products; the most common method detects haem
+- **Guaiac test**: the pseudoperoxidase of haemoglobin converts guaiac to blue
 - **Faecal immunochemical test (FIT)**: uses antibodies to detect blood
 
 **Indications**
@@ -9566,13 +9566,13 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 
 ## Name common pathological conditions of hepatomegaly.
 
-- **Hepatitis A, B and C**
+- Hepatitis A, B and C
 - **Alcohol use**
 - **Steatosis** (fatty liver)
-- **Cancer metastases** to the liver; **hepatocellular carcinoma**
+- **Cancer metastases** to the liver; hepatocellular carcinoma
 - **Congestive heart failure**
 - **Leukaemia**
-- **Primary biliary cholangitis** and **sclerosing cholangitis**
+- **Primary biliary cholangitis** and sclerosing cholangitis
 - **Portal vein thrombosis**
 - **Sarcoidosis**
 - **Glycogen storage disease**
@@ -9682,17 +9682,17 @@ The common causes of death in cirrhosis are:
 
 ## A male has jaundice, gynaecomastia, testicular atrophy/abdominal distension, ascites. What is the likely diagnosis?
 
-- **Cirrhosis of the liver** (chronic liver failure) with **portal hypertension**
+- **Cirrhosis of the liver** (chronic liver failure) with portal hypertension
 - Jaundice and ascites reflect liver failure and portal hypertension
-- Impaired oestrogen metabolism leads to **hyperoestrogenaemia**, which in males produces **hypogonadism (testicular atrophy) and gynaecomastia**; also palmar erythema and spider angiomas
+- Impaired oestrogen metabolism leads to **hyperoestrogenaemia**, which in males produces hypogonadism (testicular atrophy) and gynaecomastia; also palmar erythema and spider angiomas
 
 ## Same (40y): name the liver function tests expected to be altered.
 
 | Test | Expected change |
 |---|---|
 | Serum **bilirubin**, total and direct; urine bilirubin | Increased |
-| Serum **alkaline phosphatase**, **GGT** | Increased |
-| **AST**, **ALT**, LDH | Increased |
+| Serum **alkaline phosphatase**, GGT | Increased |
+| **AST**, ALT, LDH | Increased |
 | Serum **albumin** | Decreased |
 | **Prothrombin time** and PTT (fibrinogen, prothrombin, factors V, VII, IX, X) | Prolonged |
 | Serum **ammonia** | Increased |
@@ -9717,12 +9717,12 @@ The common causes of death in cirrhosis are:
 
 ## Why is UTI more common in females?
 
-In the absence of instrumentation, urinary infections are much more common in females because of:
+In the absence of instrumentation, urinary infections are much **more** common in females because of:
 
-1. Shorter urethra
-2. Absence of the antibacterial properties of prostatic fluid
-3. Hormonal changes affecting bacterial adherence to the mucosa
-4. Urethral trauma during sexual intercourse
+1. **Shorter urethra**
+2. **Absence** of the antibacterial properties of prostatic fluid
+3. **Hormonal changes affecting** bacterial adherence to the mucosa
+4. **Urethral trauma during** sexual intercourse
 
 ## What is recurrent UTI?
 
@@ -9854,7 +9854,7 @@ Massive proteinuria is caused by derangement of the glomerular capillary wall, w
 
 1. **Urine dipstick** for protein
 2. **24-hour urine protein** collection
-3. **Random urine protein to creatinine ratio**; an early morning sample is preferred as it represents the 24-hour sample
+3. Random urine protein to creatinine ratio; an early morning sample is preferred as it represents the 24-hour sample
 4. **Urine albumin**, in a 24-hour collection or as an early morning or random albumin to creatinine ratio
 
 ## What are the causes of proteinuria?
@@ -10064,13 +10064,13 @@ Urine output of **less than 400 mL per day**.
 
 Germ cell tumours (95% of testicular neoplasms) are in two groups, with the other main category being sex cord–stromal tumours.
 
-1. **Derived from germ cell neoplasia in situ**
-   - Pure forms: **seminoma**, **embryonal carcinoma**, **yolk sac tumour**, **choriocarcinoma**, **teratoma** (postpubertal)
+1. Derived from germ cell neoplasia in situ
+   - Pure forms: **seminoma**, embryonal carcinoma, yolk sac tumour, choriocarcinoma, teratoma (postpubertal)
    - Mixed germ cell tumours (more than one histologic type; 30% to 40% of germ cell tumours)
-2. **Unrelated to germ cell neoplasia in situ**
+2. Unrelated to germ cell neoplasia in situ
    - Spermatocytic tumour
    - Prepubertal-type teratoma and yolk sac tumour, and mixed teratoma with yolk sac tumour of prepubertal type
-- Clinically they are divided into **seminomas** and **nonseminomatous germ cell tumours**
+- Clinically they are divided into **seminomas** and nonseminomatous germ cell tumours
 
 ## Name the testicular tumour markers.
 
@@ -10079,10 +10079,10 @@ Germ cell tumours (95% of testicular neoplasms) are in two groups, with the othe
 
 ## Mention the uses of testicular tumour markers.
 
-1. Initial evaluation of testicular masses
-2. Staging: after orchiectomy, persistent elevation of hCG or AFP indicates metastatic spread
-3. Assessing tumour burden: markers are incorporated into the TNM stage for prognostic stage grouping
-4. Monitoring the response to therapy
+1. **Initial evaluation** of testicular masses
+2. **Staging**: after orchiectomy, persistent elevation of hCG or AFP indicates metastatic spread
+3. **Assessing tumour burden**: markers are incorporated into the TNM stage for prognostic stage grouping
+4. **Monitoring the response** to therapy
 
 ## Name the tumour associated with increased beta-hCG.
 
@@ -10221,15 +10221,15 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 
 | Parameter | Lower reference limit |
 |---|---|
-| Volume | More than 1.5 mL |
-| pH | More than 7.2 |
-| Total sperm number | 39 million per ejaculate or more |
-| Normal forms (Tygerberg method) | More than 4% |
-| Vitality | More than 58% live sperm |
-| Progressive motility | More than 32% |
-| Total motility (progressive and nonprogressive) | More than 40% |
-| Agglutination | None |
-| Viscosity | Less than 2 cm after liquefaction |
+| **Volume** | More than 1.5 mL |
+| **pH** | More than 7.2 |
+| **Total sperm number** | 39 million per ejaculate or more |
+| **Normal forms (Tygerberg method)** | More than 4% |
+| **Vitality** | More than 58% live sperm |
+| **Progressive motility** | More than 32% |
+| **Total motility (progressive and nonprogressive)** | More than 40% |
+| **Agglutination** | None |
+| **Viscosity** | Less than 2 cm after liquefaction |
 
 - Seminal fructose more than 13 micromoles per ejaculate
 - Seminal zinc more than 2.4 micromoles per ejaculate
@@ -10665,8 +10665,8 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 **Malignant (carcinomas)**
 
 1. **Papillary thyroid carcinoma:** about 85% of cases
-2. **Follicular or oncocytic thyroid carcinoma:** 5% to 15%
-3. **High-grade differentiated and poorly differentiated carcinoma:** about 5%
+2. Follicular or oncocytic thyroid carcinoma: 5% to 15%
+3. High-grade differentiated and poorly differentiated carcinoma: about 5%
 4. **Anaplastic (undifferentiated) carcinoma:** about 1%
 5. **Medullary thyroid carcinoma:** about 5%; a neoplasm of C cells
 
@@ -10676,7 +10676,7 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 
 1. **Papillary carcinoma:** about 85% of cases
 2. **Follicular or oncocytic carcinoma:** 5% to 15%
-3. **High-grade differentiated and poorly differentiated carcinoma:** about 5%
+3. High-grade differentiated and poorly differentiated carcinoma: about 5%
 4. **Anaplastic (undifferentiated) carcinoma:** about 1%
 5. **Medullary carcinoma** (C cells): about 5%
 
@@ -11157,7 +11157,7 @@ Bone tumours are classified according to the normal cell type they recapitulate 
 
 | Category | Benign | Malignant |
 |---|---|---|
-| **Bone forming** | **Osteoid osteoma**, **osteoblastoma** | **Osteosarcoma** |
+| **Bone forming** | **Osteoid osteoma**, osteoblastoma | **Osteosarcoma** |
 | **Cartilage forming** | Osteochondroma, chondroma, chondroblastoma, chondromyxoid fibroma | Chondrosarcoma |
 | **Unknown origin** | **Giant cell tumour**, aneurysmal bone cyst | **Ewing sarcoma**, adamantinoma |
 | **Notochordal** | None | Chordoma |
@@ -11484,10 +11484,10 @@ Serum enzymes are measured:
 1. To **detect tissue damage**, because intracellular enzymes leak into the blood from damaged cells
 2. To **localise the site** of damage, showing which parts of the body are involved
 3. To **quantify the extent** of damage
-4. For **diagnosis, differential diagnosis, prognosis and early detection**, for example alanine aminotransferase (ALT) rises in viral hepatitis before jaundice appears
+4. For diagnosis, differential diagnosis, prognosis and early detection, for example alanine aminotransferase (ALT) rises in viral hepatitis before jaundice appears
 5. To follow the **course of liver disease** and to check the hepatic origin of a raised alkaline phosphatase
-6. To evaluate **pancreatic and salivary gland disease**
-7. To monitor **organophosphate poisoning** and **hepatic synthetic capacity** (cholinesterase)
+6. To evaluate pancreatic and salivary gland disease
+7. To monitor **organophosphate poisoning** and hepatic synthetic capacity (cholinesterase)
 
 Results are interpreted together with the history and clinical findings.
 
@@ -11769,7 +11769,7 @@ The **lipid profile** (lipid panel) is a fasting blood test (after a 9 to 12 hou
 
 ## Define atrophy.
 
-Atrophy is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
+**Atrophy** is a reduction in the size of an organ or tissue due to a decrease in cell size and number.
 
 ## What do you mean by apoptosis?
 
@@ -11805,14 +11805,14 @@ Atrophy is a reduction in the size of an organ or tissue due to a decrease in ce
 
 | Feature | Hypertrophy | Hyperplasia |
 |---|---|---|
-| Definition | Increase in the size of cells, which increases the size of the organ | Increase in the number of cells in an organ or tissue in response to a stimulus |
-| New cells | None; just larger cells, from synthesis and assembly of additional intracellular structural components | New cells are formed |
-| Cells involved | Occurs in tissues with limited proliferative capacity; non-dividing cells such as myocardial fibres increase mass by hypertrophy only | Can take place only if the tissue contains cells capable of dividing, or abundant tissue stem cells |
-| Mechanism | Increased cellular protein production, from growth factors and direct effects of mechanical force | Growth factor-driven proliferation of mature cells and, in some cases, increased output of new cells from tissue stem cells |
-| Physiologic example | Gravid uterus; skeletal muscle of bodybuilders | Breast epithelium at puberty and pregnancy; liver regeneration; bone marrow |
-| Pathologic example | Heart in hypertension or valvular disease | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
+| **Definition** | Increase in the size of cells, which increases the size of the organ | Increase in the number of cells in an organ or tissue in response to a stimulus |
+| **New cells** | None; just larger cells, from synthesis and assembly of additional intracellular structural components | New cells are formed |
+| **Cells involved** | Occurs in tissues with limited proliferative capacity; non-dividing cells such as myocardial fibres increase mass by hypertrophy only | Can take place only if the tissue contains cells capable of dividing, or abundant tissue stem cells |
+| **Mechanism** | Increased cellular protein production, from growth factors and direct effects of mechanical force | Growth factor-driven proliferation of mature cells and, in some cases, increased output of new cells from tissue stem cells |
+| **Physiologic example** | Gravid uterus; skeletal muscle of bodybuilders | Breast epithelium at puberty and pregnancy; liver regeneration; bone marrow |
+| **Pathologic example** | Heart in hypertension or valvular disease | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
 
-The two frequently occur together and may be triggered by the same stimuli.
+**The two frequently** occur together and may be triggered by the same stimuli.
 
 ## Define metaplasia.
 
@@ -11855,7 +11855,7 @@ Cellular ageing results from a combination of accumulating cellular damage (for 
 
 ## Define cell injury.
 
-Cell injury is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations that affect essential cellular functions. It is reversible up to a point, but if the injurious stimulus is persistent or severe, the cell suffers irreversible injury and ultimately undergoes cell death.
+**Cell injury** is the sequence of events that follows when the limits of adaptive responses are exceeded, or when cells are exposed to damaging insults, deprived of critical nutrients, or compromised by mutations that affect essential cellular functions. It is reversible up to a point, but if the injurious stimulus is persistent or severe, the cell suffers irreversible injury and ultimately undergoes cell death.
 
 ## Classify cell injury.
 
@@ -11893,10 +11893,10 @@ Cell injury is the sequence of events that follows when the limits of adaptive r
 
 | Feature | Coagulative necrosis | Liquefactive necrosis |
 |---|---|---|
-| Tissue change | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
-| Mechanism | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
-| Appearance | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
-| Setting | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
+| **Tissue change** | Architecture of the dead tissue is preserved for at least some days; firm texture | Dead cells are digested and the tissue becomes a viscous liquid |
+| **Mechanism** | Injury denatures structural proteins and enzymes, which blocks proteolysis | Microbes attract leucocytes, which liberate enzymes that digest the cells |
+| **Appearance** | Intensely eosinophilic cells with indistinct or reddish nuclei; wedge-shaped yellow kidney infarct | Creamy yellow pus; brain infarct shows dissolution of tissue |
+| **Setting** | Ischaemia from vessel obstruction in all organs except the brain; localised area is an infarct | Focal bacterial or occasionally fungal infections; hypoxic death of cells in the central nervous system |
 
 ## Define apoptosis.
 
@@ -11927,25 +11927,25 @@ In all of these situations, cells undergo apoptosis because they are deprived of
 
 | Feature | Necrosis | Apoptosis |
 |---|---|---|
-| Cell size | Enlarged (swelling) | Reduced (shrinkage) |
-| Nucleus | Pyknosis, karyorrhexis, karyolysis | Fragmentation into nucleosome-size fragments |
-| Plasma membrane | Disrupted | Intact; altered structure, especially orientation of lipids |
-| Cellular contents | Enzymatic digestion; may leak out of the cell | Intact; may be released in apoptotic bodies |
-| Adjacent inflammation | Frequent | No |
-| Physiologic or pathologic role | Usually pathologic (culmination of irreversible cell injury) | Often physiologic, a means of eliminating unwanted cells; may be pathologic after some forms of cell injury, especially DNA damage |
-| Regulation | Historically thought of as accidental cell death | Regulated cell death, mediated by defined molecular pathways |
-| Cytoplasm | Eosinophilic, glassy and homogeneous; vacuolated and moth-eaten once organelles are digested | Dense and eosinophilic |
+| **Cell size** | Enlarged (swelling) | Reduced (shrinkage) |
+| **Nucleus** | Pyknosis, karyorrhexis, karyolysis | Fragmentation into nucleosome-size fragments |
+| **Plasma membrane** | Disrupted | Intact; altered structure, especially orientation of lipids |
+| **Cellular contents** | Enzymatic digestion; may leak out of the cell | Intact; may be released in apoptotic bodies |
+| **Adjacent inflammation** | Frequent | No |
+| **Physiologic or pathologic role** | Usually pathologic (culmination of irreversible cell injury) | Often physiologic, a means of eliminating unwanted cells; may be pathologic after some forms of cell injury, especially DNA damage |
+| **Regulation** | Historically thought of as accidental cell death | Regulated cell death, mediated by defined molecular pathways |
+| **Cytoplasm** | Eosinophilic, glassy and homogeneous; vacuolated and moth-eaten once organelles are digested | Dense and eosinophilic |
 
 ## Differences between dystrophic and metastatic calcification.
 
 | Feature | Dystrophic calcification | Metastatic calcification |
 |---|---|---|
-| Tissue involved | Dying tissues | Otherwise normal tissues |
-| Serum calcium | Normal; no derangement of calcium metabolism | Hypercalcaemia, secondary to some disturbance in calcium metabolism |
-| Cause | Necrotic cells and cellular debris that are not promptly destroyed and reabsorbed provide a nidus for deposition of calcium salts | Increased parathyroid hormone secretion; resorption of bone tissue; vitamin D-related disorders; renal failure with retention of phosphate |
-| Sites | Areas of coagulative, caseous or liquefactive necrosis; foci of enzymatic necrosis of fat; atheromas of advanced atherosclerosis; aging or damaged heart valves; tuberculous lymph node | Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins, which all excrete acid and have an internal alkaline compartment |
-| Morphology | Fine white granules or clumps, gritty; basophilic, amorphous and granular on H&E | Resembles dystrophic calcification; noncrystalline amorphous deposits or hydroxyapatite crystals |
-| Clinical effect | Often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis | Usually no clinical dysfunction; massive lung involvement causes respiratory compromise and massive kidney deposits (nephrocalcinosis) may cause renal damage |
+| **Tissue involved** | Dying tissues | Otherwise normal tissues |
+| **Serum calcium** | Normal; no derangement of calcium metabolism | Hypercalcaemia, secondary to some disturbance in calcium metabolism |
+| **Cause** | Necrotic cells and cellular debris that are not promptly destroyed and reabsorbed provide a nidus for deposition of calcium salts | Increased parathyroid hormone secretion; resorption of bone tissue; vitamin D-related disorders; renal failure with retention of phosphate |
+| **Sites** | Areas of coagulative, caseous or liquefactive necrosis; foci of enzymatic necrosis of fat; atheromas of advanced atherosclerosis; aging or damaged heart valves; tuberculous lymph node | Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins, which all excrete acid and have an internal alkaline compartment |
+| **Morphology** | Fine white granules or clumps, gritty; basophilic, amorphous and granular on H&E | Resembles dystrophic calcification; noncrystalline amorphous deposits or hydroxyapatite crystals |
+| **Clinical effect** | Often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis | Usually no clinical dysfunction; massive lung involvement causes respiratory compromise and massive kidney deposits (nephrocalcinosis) may cause renal damage |
 
 ## What is granulopoiesis?
 
@@ -12126,29 +12126,29 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 | Feature | Leukaemoid reaction | Leukaemia (chronic myeloid leukaemia) |
 |---|---|---|
-| Nature | Reactive, non-malignant leucocytosis caused by an underlying condition | Neoplastic proliferation |
-| Cells in blood | Mature neutrophils with a mixture of early precursors | Abnormal granulocytes; a large proportion of myelocytes |
-| Eosinophils and basophils | Normal count and morphology | Often elevated; may show mixed granulation |
-| Neutrophil morphology | Toxic granulation and Döhle bodies often present | Pseudo-Pelger-Huët forms may be seen |
-| Platelets | Normal count and morphology | Elevated early and decreased late; giant, hypogranular or bizarre forms |
-| Haemoglobin | Normal | Often anaemic |
-| Leucocyte alkaline phosphatase score | Elevated | Decreased |
-| Genetics | Normal; no BCR::ABL1 | t(9;22) with BCR::ABL fusion gene |
-| Bone marrow | Hypercellular but otherwise normal | Markedly hypercellular with increased eosinophils and basophils, small dysplastic megakaryocytes and sea-blue histiocytes |
-| Leukaemic hiatus (acute leukaemia) | Absent | Present in acute leukaemia |
+| **Nature** | Reactive, non-malignant leucocytosis caused by an underlying condition | Neoplastic proliferation |
+| **Cells in blood** | Mature neutrophils with a mixture of early precursors | Abnormal granulocytes; a large proportion of myelocytes |
+| **Eosinophils and basophils** | Normal count and morphology | Often elevated; may show mixed granulation |
+| **Neutrophil morphology** | Toxic granulation and Döhle bodies often present | Pseudo-Pelger-Huët forms may be seen |
+| **Platelets** | Normal count and morphology | Elevated early and decreased late; giant, hypogranular or bizarre forms |
+| **Haemoglobin** | Normal | Often anaemic |
+| **Leucocyte alkaline phosphatase score** | Elevated | Decreased |
+| **Genetics** | Normal; no BCR::ABL1 | t(9;22) with BCR::ABL fusion gene |
+| **Bone marrow** | Hypercellular but otherwise normal | Markedly hypercellular with increased eosinophils and basophils, small dysplastic megakaryocytes and sea-blue histiocytes |
+| **Leukaemic hiatus (acute leukaemia)** | Absent | Present in acute leukaemia |
 
 ## Differences between leukaemoid reaction and subleukaemic acute leukaemia.
 
 | Feature | Leukaemoid reaction | Subleukaemic acute leukaemia |
 |---|---|---|
-| Nature | Reactive, non-malignant; caused by infection, intoxication, other malignancy, haemorrhage or haemolysis | Neoplastic accumulation of immature blasts |
-| Total white cell count | Markedly raised, more than 50,000 per microlitre | Normal |
-| Cells in blood | Myelocytes, metamyelocytes and promyelocytes, rarely myeloblasts, in a mixture with mature neutrophils | Abnormal white cells (blasts) |
-| Leukaemic hiatus | Absent | Characteristic of acute leukaemia |
-| Neutrophil changes | Toxic granulation, vacuolation and Döhle bodies | Not a feature |
-| Bone marrow | Hypercellular but otherwise normal | Blasts of 20% or more of marrow cells; the WHO allows fewer with defining genetic aberrations |
-| Genetics | No BCR::ABL1 | Specific genetic aberrations, such as t(8;21), inv(16) and t(15;17) in acute myeloid leukaemia |
-| Other | Resolves on treatment of the underlying cause | Needs a bone marrow examination to exclude acute leukaemia |
+| **Nature** | Reactive, non-malignant; caused by infection, intoxication, other malignancy, haemorrhage or haemolysis | Neoplastic accumulation of immature blasts |
+| **Total white cell count** | Markedly raised, more than 50,000 per microlitre | Normal |
+| **Cells in blood** | Myelocytes, metamyelocytes and promyelocytes, rarely myeloblasts, in a mixture with mature neutrophils | Abnormal white cells (blasts) |
+| **Leukaemic hiatus** | Absent | Characteristic of acute leukaemia |
+| **Neutrophil changes** | Toxic granulation, vacuolation and Döhle bodies | Not a feature |
+| **Bone marrow** | Hypercellular but otherwise normal | Blasts of 20% or more of marrow cells; the WHO allows fewer with defining genetic aberrations |
+| **Genetics** | No BCR::ABL1 | Specific genetic aberrations, such as t(8;21), inv(16) and t(15;17) in acute myeloid leukaemia |
+| **Other** | Resolves on treatment of the underlying cause | Needs a bone marrow examination to exclude acute leukaemia |
 
 ## Write a short note on leukoerythroblastic blood picture.
 
@@ -12177,7 +12177,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 - **Metastatic tumours** in the marrow.
 - **Granulomatous diseases** of the marrow.
 - Other **infiltrative disorders** of the marrow.
-- **Marrow infiltration by lymphoid tumour**, for example chronic lymphocytic leukaemia, together with premature release of progenitors in the face of severe anaemia.
+- Marrow infiltration by lymphoid tumour, for example chronic lymphocytic leukaemia, together with premature release of progenitors in the face of severe anaemia.
 
 ## Define leukaemia.
 
@@ -12194,14 +12194,14 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 | Type | Name |
 |---|---|
-| M0 | Acute myeloblastic leukaemia with minimal differentiation |
-| M1 | Myeloblastic leukaemia without maturation |
-| M2 | Myeloblastic leukaemia with maturation |
-| M3 | Acute promyelocytic leukaemia |
-| M4 | Acute myelomonocytic leukaemia; the myeloblastic and monoblastic components each make up more than 20% of the blasts in the marrow |
-| M5 | Acute monoblastic leukaemia: M5a without differentiation, M5b with differentiation |
-| M6 | Erythroleukaemia |
-| M7 | Acute megakaryoblastic leukaemia |
+| **M0** | Acute myeloblastic leukaemia with minimal differentiation |
+| **M1** | Myeloblastic leukaemia without maturation |
+| **M2** | Myeloblastic leukaemia with maturation |
+| **M3** | Acute promyelocytic leukaemia |
+| **M4** | Acute myelomonocytic leukaemia; the myeloblastic and monoblastic components each make up more than 20% of the blasts in the marrow |
+| **M5** | Acute monoblastic leukaemia: M5a without differentiation, M5b with differentiation |
+| **M6** | Erythroleukaemia |
+| **M7** | Acute megakaryoblastic leukaemia |
 
 ## WHO classification of AML.
 
@@ -12246,19 +12246,19 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 | Feature | AML | ALL |
 |---|---|---|
-| Cell of origin | Immature myeloid cells (myeloblasts, monoblasts) | Immature B (pre-B) or T (pre-T) lymphoblasts |
-| Blast chromatin | Delicate | More condensed |
-| Nucleoli | Two to four; prominent | Small; less conspicuous |
-| Cytoplasm | More voluminous; fine azurophilic granules | Scant; usually no granules |
-| Auer rods | Present in many cases; numerous in t(15;17) | Not a feature |
-| Myeloperoxidase | Positive | Negative |
-| Periodic acid–Schiff | Not described | Often positive cytoplasmic material |
-| TdT | Not expressed | Positive in more than 95% |
-| Blood blasts | More than 100,000 per microlitre to absent; under 10,000 in about 50% | High counts, with more than 100,000 a poor prognostic sign |
-| Age | Incidence rises through life, peaking after 60 years | Most common cancer of children; B-ALL peaks at about 3 years |
+| **Cell of origin** | Immature myeloid cells (myeloblasts, monoblasts) | Immature B (pre-B) or T (pre-T) lymphoblasts |
+| **Blast chromatin** | Delicate | More condensed |
+| **Nucleoli** | Two to four; prominent | Small; less conspicuous |
+| **Cytoplasm** | More voluminous; fine azurophilic granules | Scant; usually no granules |
+| **Auer rods** | Present in many cases; numerous in t(15;17) | Not a feature |
+| **Myeloperoxidase** | Positive | Negative |
+| **Periodic acid–Schiff** | Not described | Often positive cytoplasmic material |
+| **TdT** | Not expressed | Positive in more than 95% |
+| **Blood blasts** | More than 100,000 per microlitre to absent; under 10,000 in about 50% | High counts, with more than 100,000 a poor prognostic sign |
+| **Age** | Incidence rises through life, peaking after 60 years | Most common cancer of children; B-ALL peaks at about 3 years |
 | Mass effects and central nervous system spread | Less striking and less common | More common: lymphadenopathy, splenomegaly, hepatomegaly, testicular enlargement, mediastinal mass in T-ALL, meningeal spread |
-| Bleeding | Often prominent; worsened in t(15;17) | Thrombocytopenic bleeding |
-| Outcome | About 60% remission; 15% to 30% disease free at 5 years | About 95% of children remission; 75% to 85% cured |
+| **Bleeding** | Often prominent; worsened in t(15;17) | Thrombocytopenic bleeding |
+| **Outcome** | About 60% remission; 15% to 30% disease free at 5 years | About 95% of children remission; 75% to 85% cured |
 
 ## Laboratory diagnosis of AML.
 
@@ -12280,16 +12280,16 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 | Feature | Myeloblast | Lymphoblast |
 |---|---|---|
-| Nuclear chromatin | Delicate | More condensed |
-| Nucleoli | Two to four; prominent | Less conspicuous; small and sharply demarcated by a rim of condensed chromatin |
-| Cytoplasm | More voluminous; often fine peroxidase positive azurophilic granules | Smaller amount; scant basophilic; usually lacks granules |
-| Auer rods | Present in many cases | Not described |
-| Myeloperoxidase | Positive | Negative |
-| Periodic acid–Schiff | Not described | Often positive cytoplasmic material |
-| Terminal deoxynucleotidyl transferase (TdT) | Not described | Positive in more than 95% of cases; expressed only in pre-B and pre-T lymphoblasts |
-| Surface markers | CD34, CD33, CD15 | B lineage: CD19, CD10, PAX5. T lineage: CD1, CD2, CD5, CD7 |
+| **Nuclear chromatin** | Delicate | More condensed |
+| **Nucleoli** | Two to four; prominent | Less conspicuous; small and sharply demarcated by a rim of condensed chromatin |
+| **Cytoplasm** | More voluminous; often fine peroxidase positive azurophilic granules | Smaller amount; scant basophilic; usually lacks granules |
+| **Auer rods** | Present in many cases | Not described |
+| **Myeloperoxidase** | Positive | Negative |
+| **Periodic acid–Schiff** | Not described | Often positive cytoplasmic material |
+| **Terminal deoxynucleotidyl transferase (TdT)** | Not described | Positive in more than 95% of cases; expressed only in pre-B and pre-T lymphoblasts |
+| **Surface markers** | CD34, CD33, CD15 | B lineage: CD19, CD10, PAX5. T lineage: CD1, CD2, CD5, CD7 |
 
-These morphological distinctions are not absolute. The definitive diagnosis relies on stains with antibodies specific for B-cell, T-cell and myeloid antigens.
+**These morphological distinctions** are not absolute. The definitive diagnosis relies on stains with antibodies specific for B-cell, T-cell and myeloid antigens.
 
 ## What is Philadelphia chromosome?
 
@@ -12330,12 +12330,12 @@ The **Philadelphia chromosome** (Ph) is the reciprocal (9;22)(q34;q11) transloca
 
 ## Why is the prognosis of blast crisis worse than classical CGL?
 
-- Untreated classical CML progresses slowly, with a median survival of about 3 years.
-- Blast crisis is the greatest threat to the patient.
-- It resembles acute leukaemia.
-- The accelerated phase brings additional clonal cytogenetic abnormalities: trisomy 8, isochromosome 17q, duplication of the Ph chromosome.
-- Lymphoid blast crisis has mutations in Ikaros in 85% of cases.
-- BCR-ABL inhibitors control blood counts and decrease the risk of transformation to the accelerated phase and blast crisis.
+- **Untreated classical CML** progresses slowly, with a median survival of about 3 years.
+- **Blast crisis is** the greatest threat to the patient.
+- **It resembles acute leukaemia**.
+- **The accelerated phase** brings additional clonal cytogenetic abnormalities: trisomy 8, isochromosome 17q, duplication of the Ph chromosome.
+- **Lymphoid blast crisis** has mutations in Ikaros in 85% of cases.
+- **BCR-ABL inhibitors control** blood counts and decrease the risk of transformation to the accelerated phase and blast crisis.
 
 ## Laboratory diagnosis of CLL.
 
@@ -12393,12 +12393,12 @@ Common features:
 
 | Disorder | Mutation (frequency) |
 |---|---|
-| Chronic myeloid leukaemia | BCR::ABL fusion gene (100%) |
-| Polycythaemia vera | JAK2 mutations (more than 95%) |
-| Essential thrombocythaemia | JAK2 (50% to 60%), CALR (25% to 35%), MPL (5% to 10%) |
-| Primary myelofibrosis | JAK2 (50% to 60%), CALR (25% to 35%), MPL (5% to 10%) |
-| Systemic mastocytosis | KIT mutations (more than 90%) |
-| Chronic eosinophilic leukaemia | FIP1L1::PDGFRA fusion gene (common); PDE4DIP::PDGFRB fusion gene (rare) |
+| **Chronic myeloid leukaemia** | BCR::ABL fusion gene (100%) |
+| **Polycythaemia vera** | JAK2 mutations (more than 95%) |
+| **Essential thrombocythaemia** | JAK2 (50% to 60%), CALR (25% to 35%), MPL (5% to 10%) |
+| **Primary myelofibrosis** | JAK2 (50% to 60%), CALR (25% to 35%), MPL (5% to 10%) |
+| **Systemic mastocytosis** | KIT mutations (more than 90%) |
+| **Chronic eosinophilic leukaemia** | FIP1L1::PDGFRA fusion gene (common); PDE4DIP::PDGFRB fusion gene (rare) |
 | Myeloid/lymphoid neoplasms with eosinophilia and tyrosine kinase gene mutations | Fusion genes involving FGFR1, PDGFRA, PDGFRB or JAK2 (100%) |
 
 ## What do you mean by polycythaemia?
@@ -12423,11 +12423,11 @@ Clinical features of polycythaemia vera:
 
 | Feature | Polycythaemia vera | Secondary polycythaemia |
 |---|---|---|
-| Nature | Primary; myeloproliferative neoplasm with an intrinsic abnormality of haematopoietic precursors | Absolute polycythaemia from a response of red cell progenitors to raised erythropoietin |
-| Cause | Activating mutations in the tyrosine kinase JAK2 (more than 97% with a valine-to-phenylalanine change at residue 617) | Compensatory or pathologic increase in erythropoietin secretion: erythropoietin-secreting tumours (renal cell carcinoma, hepatocellular carcinoma, cerebellar haemangioblastoma), high oxygen affinity haemoglobin mutants, inherited defects that stabilise HIF-1α |
-| Serum erythropoietin | Low | High |
-| Erythropoietin dependence | Progenitors have markedly decreased requirements for erythropoietin and other growth factors | Red cell progenitors respond to erythropoietin |
-| Cell lines | Increased red cells, granulocytes and platelets (panmyelosis) | Red cells |
+| **Nature** | Primary; myeloproliferative neoplasm with an intrinsic abnormality of haematopoietic precursors | Absolute polycythaemia from a response of red cell progenitors to raised erythropoietin |
+| **Cause** | Activating mutations in the tyrosine kinase JAK2 (more than 97% with a valine-to-phenylalanine change at residue 617) | Compensatory or pathologic increase in erythropoietin secretion: erythropoietin-secreting tumours (renal cell carcinoma, hepatocellular carcinoma, cerebellar haemangioblastoma), high oxygen affinity haemoglobin mutants, inherited defects that stabilise HIF-1α |
+| **Serum erythropoietin** | Low | High |
+| **Erythropoietin dependence** | Progenitors have markedly decreased requirements for erythropoietin and other growth factors | Red cell progenitors respond to erythropoietin |
+| **Cell lines** | Increased red cells, granulocytes and platelets (panmyelosis) | Red cells |
 
 ## Laboratory diagnosis of polycythaemia.
 
@@ -12743,10 +12743,10 @@ Jaundice in which the urine contains **no bilirubin** because the raised bilirub
 
 ## How will you investigate a case of hemolytic jaundice?
 
-1. **Serum bilirubin**, fractionated: the excess is **unconjugated**; jaundice is rarely severe when the liver is normal
-2. **Complete blood count and peripheral blood smear:** anaemia, with prominent **reticulocytosis**
+1. **Serum bilirubin**, fractionated: the excess is unconjugated; jaundice is rarely severe when the liver is normal
+2. Complete blood count and peripheral blood smear: anaemia, with prominent reticulocytosis
 3. **Bone marrow:** increased numbers of erythroid precursors (normoblasts)
-4. **Evidence of haemolysis:** decreased plasma **haptoglobin**; raised **lactate dehydrogenase**
+4. **Evidence of haemolysis:** decreased plasma **haptoglobin**; raised lactate dehydrogenase
 5. **Direct Coombs test**, positive in immune haemolysis
 6. **Urine:** no bilirubin; in intravascular haemolysis, haemoglobinuria and haemosiderinuria, with haemoglobinaemia in the blood
 7. **Splenomegaly** on examination in extravascular haemolysis
@@ -12855,15 +12855,15 @@ Glomerular diseases are classified as **primary** (the kidney is the only or pre
 
 ## Name the primary glomerular diseases.
 
-1. Postinfectious glomerulonephritis
-2. Crescentic (rapidly progressive) glomerulonephritis
-3. Membranous nephropathy
-4. Minimal change disease
-5. Focal segmental glomerulosclerosis
-6. Membranoproliferative glomerulonephritis (type I)
-7. Dense deposit disease (type II membranoproliferative glomerulonephritis) and C3 glomerulonephritis
-8. IgA nephropathy
-9. Fibrillary glomerulonephritis
+1. **Postinfectious glomerulonephritis**
+2. **Crescentic** (rapidly progressive) glomerulonephritis
+3. **Membranous nephropathy**
+4. **Minimal change disease**
+5. **Focal segmental glomerulosclerosis**
+6. **Membranoproliferative glomerulonephritis** (type I)
+7. **Dense deposit disease** (type II membranoproliferative glomerulonephritis) and C3 glomerulonephritis
+8. **IgA nephropathy**
+9. **Fibrillary glomerulonephritis**
 
 ## What is nephrotic syndrome?
 
