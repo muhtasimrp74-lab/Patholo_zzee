@@ -166,3 +166,28 @@ The site textbook (ch04.json) has no section on electrolytes or acid-base disord
 - "Differences between hyperplasia and neoplasia.": "polyclonal versus monoclonal" hyperplasia, the Willis definition and "never invades" were left out because the site textbook does not state them in this form.
 - "Write a short note on MHC." and "Write a short note on autoimmune disease.": the site textbook gives no separate clinical-features or morphology passage for them; clinical features of autoimmune disease are limited to the textbook's statements that manifestations are varied and that autoantibody detection is the most widely used test.
 - "A 30y lady ... Graves": exophthalmos and TSI points come from Chapter 24 (Graves disease) together with the antibody-mediated receptor stimulation passage in Chapter 6; the textbook does not explain the origin of the autoreactive T cells beyond genetic susceptibility.
+
+## Session 8, batch 3 (13 answers: Chapter 7 grading and staging through tumour markers; round total 50)
+
+Questions: grading, staging, TNM, childhood tumours, grading and staging (basis and importance), Bangladesh common cancers, laboratory diagnosis (two questions, same text on purpose), FNAC organs, biopsy, types of biopsy, five tumour markers, tumour markers short note.
+
+Sources: the site textbook (Chapter 7 "Grading and Staging of Tumors" and "Laboratory Diagnosis of Cancer"; Chapter 10 "Tumors and Tumor-like Lesions of Infancy and Childhood", Table 10.5).
+
+### Outside sources used
+| Question | Source | URL |
+|---|---|---|
+| Enumerate common cancers in males and females of the Bangladeshi population. | IARC GLOBOCAN 2022 estimates as reported: Daily Star World Cancer Day supplement (3 Feb 2026); Financial Express report of the Health Minister's statement to Parliament (June 2026); WHO Bangladesh (2017, 2012 estimates) | https://epfs.thedailystar.net/TDS/2026/02/03/Bangladesh/MAI/5_13/0eb4d59a15c1e7dd_13.pdf ; https://thefinancialexpress.com.bd/health/over-100000-people-die-from-cancer-related-causes-each-year-in-bangladesh ; https://www.who.int/bangladesh/news/detail/06-02-2017-yearly-8.8-million-people-die-from-cancer |
+| What do you mean by biopsy? / Types of biopsy. | CancerQuest (Emory), "Tissue Biopsies" | https://cancerquest.org/node/4186 |
+
+### Points left out or needing a decision
+- Bangladesh: the exact rank order is not given in any source I could open, so the answer lists sites without ranking. The old extra sites (stomach, hypopharynx and larynx, lip and oral cavity ranks) and the risk-factor paragraph were dropped as unverified. Please confirm you accept GLOBOCAN as reported.
+- Biopsy: the textbook has no definition of biopsy and no classification of types. The definition and the types (excisional, incisional, punch, needle: FNA and core) come from the outside source. The Greek derivation and the old table (Tru-Cut, endoscopic examples) were dropped.
+- TNM: Tis and Tx from the old answer are not in the textbook and were removed; the textbook says T0 marks an in situ lesion.
+- FNAC organs: only breast, thyroid, lymph nodes (palpable) and pelvic lymph nodes and pancreas (image-guided) are given, as the textbook states. The old list (salivary gland, lung, liver, kidney, prostate and others) was dropped.
+- Tumour markers: Table 7.12 has no rows in the site textbook source. The five markers come from the text. HCG is given for testicular tumours as the text says (the old answer said choriocarcinoma). The old definition (enzymes, hormones, oncofoetal antigens) was replaced with the textbook's Key Concepts wording.
+- Childhood tumours: built from Chapter 10; the old statistics (10% of deaths, 60% of deaths, US figures from another passage) were replaced with the Chapter 10 figures (2% of malignant tumours, 16% of deaths at 5 to 14 years, about 25% each for leukaemia and brain tumours).
+- Grading and staging answers: old "Staging is of greater value" kept, now from Key Concepts; the old AJCC molecular sentence kept from the text.
+
+### Housekeeping
+- Progress file lists 430 questions done (380 at the start of the round plus 50). 705 remain.
+- Site tests were not run this batch; the service-worker version was not bumped.
