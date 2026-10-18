@@ -576,3 +576,17 @@ Sources: site textbook chapter 21 (tools/textbook_src/ch21.json) for all eleven 
 - BPH work-up: the textbook gives no work-up. Digital rectal examination, IPSS, urinalysis and PSA are from the AFP and CMAJ articles; uroflowmetry was left out because it is not stated in the sources read.
 - Seminoma versus nonseminomatous germ cell tumour: the Cells, Local spread and Cut surface rows compare seminoma with embryonal carcinoma and the other nonseminomatous types as the textbook describes each; no single textbook table exists for this comparison.
 - Not yet written (outside sources still to be gathered): semen collection, indications, normal findings, oligospermia, azoospermia (definition and causes), semen analysis short note, laboratory investigation of male infertility, infertility hormones.
+
+## Session 17, batch 4 (work-list questions 56 to 75, Chapters 22 and 23)
+
+Sources: site textbook chapter 22 (tools/textbook_src/ch22.json: cervix, endometriosis, endometrium, ovary) and chapter 23 (breast). No outside sources were used in this batch.
+
+Previously empty and now written: "20-year-old woman with a free, movable breast lump" (Chapter 23). This was the only empty answer in the whole 75-question batch.
+
+### Points left out
+- Risk factors for carcinoma of cervix: smoking, oral contraceptives, parity and low socioeconomic status are not given in the site textbook, so they are not stated.
+- Ovarian tumour markers: textbook gives CA-125, alpha-fetoprotein (yolk sac), chorionic gonadotropin and inhibin only; lactate dehydrogenase is not given.
+- Fibroadenoma, investigations: the textbook gives only imaging (well-circumscribed radiodense mass) and histology; ultrasonography, fine-needle aspiration and core biopsy are not described, so they are not stated. Please decide whether an outside source (for example StatPearls on fibroadenoma) should be added.
+- Endometrial carcinoma, confirm: only biopsy or curettage and mismatch repair testing are given; no ultrasonography criteria (endometrial thickness) are in the textbook.
+- Classify ovarian tumours: the sex cord–stromal list is given only as granulosa cell tumour; the full textbook table is partly illegible in the source file.
+- Not written this session (outside sources still to be gathered): all semen and male infertility questions (work-list items 47 to 55), heat coagulation test, reducing substances in urine, Benedict's test, hyperuricaemia causes and significance, renal glycosuria (two questions) and haematuria (three questions): 20 questions in all.

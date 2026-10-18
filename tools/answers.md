@@ -11707,62 +11707,59 @@ Obstructive azoospermia is suggested by a normal FSH, normal-sized testes and no
 
 ## Write down the risk factors for carcinoma of cervix.
 
-- Persistent high-risk HPV (HPV-16 ~60% of cases, HPV-18 ~10%).
-- Early age at first intercourse, multiple partners, male partner with multiple partners.
-- Immune compromise; co-carcinogens (smoking).
-- No regular screening: more than half of invasive cancers occur in unscreened women.
-- Unvaccinated status.
-
+- **Persistent infection with high-risk HPV**, the most important factor; HPV-16 accounts for almost 60% of cases and HPV-18 for another 10%
+- Young age at first intercourse
+- Multiple sexual partners
+- Male partner with multiple sexual partners
+- Co-carcinogens and host immune status, which decide whether an HPV infection regresses or persists
+- Lack of participation in regular screening: more than one-half of invasive cancers occur in females who were not screened
 
 ## Describe briefly the pathogenesis of carcinoma cervix.
 
-1. HPV infects immature basal/metaplastic cells at the transformation zone. Most infections clear (50% in 8 months, 90% in 2 years). Persistence is the key step.
-
-2. E6 degrades p53 and upregulates telomerase. E7 degrades RB and inhibits p21/p27. The result is cell-cycle deregulation and impaired DNA repair.
-
-3. Integration of viral DNA raises E6/E7 expression and can dysregulate nearby oncogenes such as MYC. In LSIL the DNA stays episomal.
-
-4. Further mutations, co-carcinogens and host immunity decide progression: LSIL, then HSIL, then carcinoma, usually over decades.
-
+1. **High-risk HPV infection** of immature basal squamous cells, at sites of squamous trauma and repair and in the immature metaplastic cells of the transformation zone
+2. Most infections are transient (50% cleared within 8 months, 90% within 2 years); **persistent infection** leads to precursor lesions
+3. Viral **E6** binds p53 and promotes its degradation; E6 also upregulates telomerase, which leads to immortalisation
+4. Viral **E7** promotes degradation of RB and inhibits p21 and p27, so cells progress through the cell cycle and cannot repair DNA damage
+5. **Integration** of viral DNA into the host genome increases expression of E6 and E7 and may dysregulate nearby oncogenes such as MYC
+6. Additional mutations accumulate; low-grade lesion progresses to high-grade squamous intraepithelial lesion and then invasive carcinoma, over decades
 
 ## State the role of HPV in causing carcinoma of cervix.
 
-Human papillomavirus (HPV) is the main cause of carcinoma of the cervix. Nearly all precursor lesions and carcinomas involve one of about 15 high-risk types (mainly 16 and 18), whereas low-risk types (6, 11) cause condylomas and have weak E6/E7 activity.
-
-**Mechanism.** The carcinogenic ability of HPV depends on the viral E6 and E7 proteins, which interfere with the tumour suppressor proteins p53 and RB, respectively.
-
-- Viral replication occurs in maturing squamous cells, which are normally arrested in G₁; HPV drives them through the cell cycle to use the host DNA synthesis machinery.
-- E7 promotes proteasomal degradation of RB and inhibits the cyclin-dependent kinase inhibitors p21 and p27, enhancing cell cycle progression.
-- E6 promotes degradation of p53, impairing DNA-damage-induced cell cycle arrest and apoptosis.
-- In most cancers the viral DNA is integrated into the host genome, which increases E6 and E7 expression and may dysregulate nearby oncogenes such as MYC; in precursor lesions and condylomas it is episomal.
-
-HPV alone is not enough: only a few infected women develop cancer, so co-factors (smoking, immune compromise, multiparity, other infections) contribute. The nonavalent vaccine covers types 6, 11, 16, 18, 31, 33, 45, 52 and 58 (see Q1278).
-
+- High-risk HPVs are by far the most important factor; 15 high-risk types are known
+- HPV-16 accounts for almost 60% of cases, HPV-18 for another 10%
+- More than 80% of low-grade and 100% of high-grade squamous intraepithelial lesions are associated with high-risk HPV
+- Carcinogenic action depends on viral **E6** (binds and degrades p53; upregulates telomerase) and **E7** (degrades RB; inhibits p21 and p27)
+- Viral DNA is integrated into the host genome in most cancers, increasing E6 and E7 expression
+- Only a few infected females develop cancer, so co-carcinogens and host immune status also matter
 
 ## What is CIN?
 
-See Q140. Natural history over about 2 years (Table 22.1):
+**Cervical intraepithelial neoplasia**, the precursor lesion of cervical squamous carcinoma, graded by dysplasia:
 
-- LSIL: 60% regress, 30% persist, 10% progress to HSIL.
-- HSIL: 30% regress, 60% persist, 10% progress to carcinoma (within 2-10 years).
-- About 20% of HSIL arise de novo.
+| CIN grade | Dysplasia | Current term |
+|---|---|---|
+| **CIN 1** | Mild | Low-grade squamous intraepithelial lesion (LSIL) |
+| **CIN 2** | Moderate | High-grade squamous intraepithelial lesion (HSIL) |
+| **CIN 3** | Severe, carcinoma in situ | High-grade squamous intraepithelial lesion (HSIL) |
 
-Morphology: nuclear enlargement, hyperchromasia, coarse chromatin and size variation, often with koilocytic halos (E5 effect). Grade depends on how far the immature cells extend.
-
+- Grading depends on how far immature cells expand from the basal layer: lower one-third in LSIL; upper two-thirds in HSIL
+- Nuclear atypia with perinuclear halos (**koilocytic atypia**)
 
 ## Mention the diagnostic tools of cervical cancer.
 
-Pap cytology, HPV DNA testing (age 30 or older), colposcopy with acetic acid, directed biopsy and conisation. p16 and Ki-67 IHC are adjuncts.
-
+1. **Pap test** (cervical cytology) from the transformation zone
+2. **HPV DNA testing** of the cervical scrape: higher sensitivity but lower specificity than the Pap test
+3. **Colposcopy** after acetic acid, which shows abnormal epithelium as aceto-white areas
+4. **Biopsy** of abnormal areas for histology; Ki-67 and p16 immunohistochemistry confirm equivocal squamous intraepithelial lesions
+5. **Cervical conization** treats high-grade lesions and superficially invasive carcinoma
 
 ## Write a short note on Pap smear.
 
-- Technique: the transformation zone is circumferentially scraped with a spatula or brush. The cells are smeared or spun onto a slide, fixed, Pap-stained and screened by eye or automated image analysis.
-- Findings: normal superficial cells; LSIL (koilocytes); HSIL (scant cytoplasm, high N:C ratio). Marked inflammation can give reactive atypia and an abnormal result.
-- Schedule: start at 21 years (or within 3 years of sexual onset), then every 3 years. At 30 or older with normal cytology and negative HPV, screen every 5 years. Normal Pap with positive high-risk HPV: repeat in 6-12 months.
-- Impact: cervical cancer death rate has fallen by 75%.
-- Limit: HPV testing is more sensitive but less specific than Pap, and is not recommended under age 30.
-
+- Cytologic screening for cervical precursor lesions and low-stage cancer; credited with a 75% fall in cervical cancer death rate
+- **Technique:** the transformation zone of the cervix is circumferentially scraped with a spatula or brush, and the cells are smeared or spun down onto a slide; the smear is fixed and stained by the Papanicolaou method, then screened microscopically or by automated image analysis
+- **Findings:** the spectrum from low-grade to high-grade squamous intraepithelial lesion
+- **Schedule:** first smear at 21 years or within 3 years of onset of sexual activity, then every 3 years; after 30 years with normal cytology and negative HPV, every 5 years by HPV testing alone or with a Pap test
+- An abnormal result is followed by colposcopy and biopsy
 
 ## A female has PV bleeding/discharge, contact bleeding, an ulcerated/friable/fungating cervical growth. What is the likely diagnosis?
 
@@ -11771,127 +11768,123 @@ Invasive carcinoma of the cervix, usually squamous cell carcinoma (~80%). Averag
 
 ## Same: what do you expect in histopathology?
 
-- Squamous cell carcinoma: nests and tongues of malignant squamous cells (keratinising or non-keratinising) invading the stroma.
-- Adenocarcinoma: malignant endocervical glands with large hyperchromatic nuclei and mucin-depleted, dark cytoplasm.
-- Adenosquamous and neuroendocrine (small/large cell) types are rare and aggressive.
-- Spread: direct to paracervical tissue, bladder, ureters (hydronephrosis), rectum and vagina; then nodes and distant sites.
-
+- **Squamous cell carcinoma** (about 80%): nests and tongues of malignant squamous epithelium, keratinising or nonkeratinising, invading the cervical stroma
+- **Adenocarcinoma** (about 15%): proliferating malignant endocervical glands with large hyperchromatic nuclei and mucin-depleted cytoplasm
+- Adenosquamous and neuroendocrine carcinomas (remaining 5%)
+- Preceding high-grade squamous intraepithelial lesion shows nuclear atypia and koilocytes
 
 ## Same: name the microbial agent/oncogenic virus associated with it.
 
-High-risk HPV, mainly HPV-16 (~60%) and HPV-18 (~10%).
-
+**High-risk human papillomavirus**, mainly HPV-16 (almost 60%) and HPV-18 (about 10%).
 
 ## Same: how will you confirm it / which investigations are needed?
 
-Biopsy (colposcopic or cone) for histology is the confirmatory test. Pap and HPV testing screen. Staging uses clinical examination and imaging for hydronephrosis, nodes and distant spread.
-
-**Staging (as in Robbins)**
-
-- I: confined to cervix. Ia1 = stromal invasion ≤3 mm; Ia2 = >3 to 5 mm.
-- II: beyond the cervix but not the pelvic wall; vagina involved but not the lower third.
-- III: lower third of vagina, pelvic wall, hydronephrosis or nodes.
-- IV: beyond the pelvis, bladder/rectal mucosa, or distant spread.
-
-Prognosis: 5-year survival is 100% for superficially invasive tumours and <20% beyond the pelvis. Death is usually from ureteric obstruction, pyelonephritis and uraemia.
-
+1. **Biopsy** of the lesion, with histology: the diagnosis is made on tissue
+2. **Pap test** and **HPV DNA testing** of the cervical scrape
+3. **Colposcopy** with acetic acid, then biopsy of abnormal areas
+4. **Staging:** stage 0 carcinoma in situ; stage I confined to the cervix; stage II beyond the cervix but not the pelvic wall, and not the lower third of the vagina; stage III lower third of vagina, pelvic wall, hydronephrosis or nodes; stage IV beyond the true pelvis or bladder or rectal mucosa
 
 ## Write a short note on endometriosis.
 
-- Definition, sites and pathogenesis: see Q144.
-- Morphology: red-blue to yellow-brown nodules that bleed cyclically. Adhesions can obliterate the pouch of Douglas. Chocolate cysts (endometriomas, 3-5 cm) in the ovary. Histology shows glands and stroma, with or without haemosiderin. Atypical endometriosis is the precursor of ovarian carcinoma.
-- Clinical: severe dysmenorrhoea, dyspareunia, pelvic pain, menstrual irregularity; infertility in 30-40%.
-- Complications: about three-fold increased risk of endometrioid and clear cell ovarian cancer.
+**Definition:** endometrial glands and stroma outside the uterus; the ectopic tissue may bleed cyclically.
 
+**Pathogenesis**
+1. **Regurgitation theory:** retrograde flow of menstrual endometrium
+2. **Benign metastasis theory:** spread through blood vessels and lymphatics to distant sites such as bone, lung and brain
+3. **Metaplastic theory:** from coelomic epithelium, or from mesonephric remnants
+4. **Extrauterine stem or progenitor cell theory:** from bone marrow cells
+- Implants release proinflammatory and angiogenic factors, and stromal cells produce aromatase, so oestrogen enhances their survival
+
+**Morphology**
+- Red-blue to yellow-brown nodules on or beneath mucosal or serosal surfaces
+- Organising haemorrhage causes fibrous adhesions between tubes and ovaries and obliterates the pouch of Douglas
+- Ovarian **chocolate cysts (endometriomas)**, 3 to 5 cm, filled with brown fluid
+- Microscopy: endometrial glands and stroma, with or without haemosiderin
+
+**Clinical features and complications**
+- Severe dysmenorrhoea, dyspareunia and pelvic pain; menstrual irregularity
+- Infertility in 30% to 40%
+- Malignancy (endometrioid and clear cell carcinoma) may arise in endometriotic cysts
 
 ## A 60y woman has postmenopausal bleeding with thick endometrium on USG. What is the provisional diagnosis?
 
-Endometrial carcinoma (usually endometrioid) until proven otherwise. Postmenopausal bleeding is the usual presentation. Differentials: atypical hyperplasia (up to 40% have co-existing carcinoma), polyp, atrophic endometrium. Serous carcinoma arises in atrophic uteri about 10 years later in life than endometrioid.
+**Endometrial carcinoma**, most likely endometrioid type; endometrial hyperplasia is the other important cause.
 
+- Peak incidence in postmenopausal females 55 to 65 years of age
+- Usually produces irregular or postmenopausal vaginal bleeding
+- Endometrial hyperplasia, an important cause of abnormal bleeding, is a frequent precursor and follows prolonged oestrogenic stimulation (obesity, polycystic ovarian syndrome, granulosa cell tumour, oestrogen therapy)
 
 ## Same: how can you confirm it?
 
-Tissue diagnosis by endometrial biopsy or curettage. Hysteroscopy for direction. After diagnosis: grade, depth of invasion, MMR/p53/POLE molecular class and staging.
+The diagnosis must be established by **histologic examination of tissue obtained by biopsy or curettage**.
 
+- Endometrioid carcinomas are then analysed for DNA mismatch repair deficiency
+- Atypical hyperplasia cannot always be distinguished from cancer without hysterectomy; up to 40% of those diagnosed with it have carcinoma at hysterectomy
 
 ## Classify ovarian tumours.
 
-Ovarian tumours are classified by origin into surface epithelial-stromal, germ cell, sex cord-stromal and metastatic tumours.
+Ovarian tumours arise from three components.
 
-| Origin | Tumours |
-|---|---|
-| Surface epithelial-stromal | Serous, mucinous, endometrioid, clear cell, Brenner (each benign/borderline/malignant) |
-| Germ cell | Teratoma (mature, immature, monodermal), dysgerminoma, yolk sac tumour, choriocarcinoma, embryonal carcinoma, polyembryoma, mixed |
-| Sex cord-stromal | Granulosa cell tumour, fibroma/thecoma, Sertoli-Leydig, Leydig, pregnancy luteoma, gonadoblastoma |
-| Metastatic | Müllerian primaries, GI tract, breast (Krukenberg) |
-
-Most tumours arise from surface/tubal epithelium and endometriosis, germ cells, or stromal cells. About 80% of epithelial tumours are benign. Type I (low-grade; from borderline tumours/endometriosis) and type II (high-grade serous; from tubal STIC) is the pathogenetic dichotomy.
-
+1. **Surface epithelial-stromal tumours** (müllerian epithelium): serous, mucinous, endometrioid, clear cell and Brenner tumours, each benign, borderline or malignant
+2. **Germ cell tumours:** teratoma, dysgerminoma, yolk sac tumour, choriocarcinoma, embryonal carcinoma, polyembryoma, mixed germ cell tumours
+3. **Sex cord–stromal tumours:** for example granulosa cell tumour
 
 ## What is dermoid cyst of ovary? Describe its morphology.
 
-- Definition: mature (benign) cystic teratoma lined by skin-like structures. Usually occurs in young women and is often incidental. Arises from an ovum after the first meiotic division; karyotype 46,XX.
-- Gross: usually a unilocular cyst (bilateral in 10-15%) containing hair and sebaceous material. The wall is lined by grey-white wrinkled epidermis with hair shafts. Teeth and calcification may be seen in the wall.
-- Micro: stratified squamous epithelium with sebaceous glands, hair follicles and other adnexa. Tissues from other germ layers are common: cartilage, bone, thyroid, neural tissue.
-- Complications: ~1% undergo malignant change (usually squamous cell carcinoma). Paraneoplastic limbic encephalitis (remits after removal). Torsion, rupture, infection.
-- Variant: rare solid benign teratoma, which must be separated from immature teratoma.
+A **mature (benign) cystic teratoma**, called a dermoid cyst because it is almost always lined by skin-like structures; found usually in young adult females.
 
+**Gross**
+- Bilateral in 10% to 15%
+- Unilocular cyst containing hair and sebaceous material
+- Wall lined by opaque, gray-white, wrinkled epidermis, often with protruding hair shafts
+- Teeth and areas of calcification in the wall
+
+**Microscopy**
+- Stratified squamous epithelium with sebaceous glands, hair shafts and other skin adnexal structures
+- Tissues of other germ layers: cartilage, bone, thyroid and neural tissue
+
+**Other points**
+- Karyotype 46,XX
+- About 1% undergo malignant transformation, most commonly to squamous cell carcinoma
 
 ## Classify germ cell tumours of ovary.
 
-1. Teratoma: mature (cystic/solid), immature, monodermal (struma ovarii, carcinoid, strumal carcinoid).
-
-2. Dysgerminoma.
-
-3. Yolk sac tumour (endodermal sinus tumour).
-
-4. Choriocarcinoma.
-
-5. Embryonal carcinoma.
-
-6. Polyembryoma.
-
-7. Mixed germ cell tumour.
-
+1. **Teratoma:** mature (benign, dermoid cyst); immature (malignant); monodermal or specialised (struma ovarii, carcinoid)
+2. **Dysgerminoma**
+3. **Yolk sac tumour** (endodermal sinus tumour)
+4. **Choriocarcinoma**
+5. **Embryonal carcinoma**
+6. **Polyembryoma**
+7. **Mixed germ cell tumours**
 
 ## Classify the surface epithelial tumours of ovary.
 
 | Type | Benign | Borderline | Malignant |
 |---|---|---|---|
-| Serous | Cystadenoma, cystadenofibroma | Serous borderline tumour | Low-grade and high-grade serous carcinoma |
-| Mucinous (intestinal or endocervical-like) | Cystadenoma | Borderline | Mucinous adenocarcinoma |
-| Endometrioid | Adenofibroma | Borderline | Endometrioid adenocarcinoma |
-| Clear cell | Rare | Rare | Clear cell carcinoma |
-| Brenner (transitional) | Benign Brenner | Borderline | Malignant Brenner / transitional cell carcinoma |
-
+| **Serous** | Cystadenoma, cystadenofibroma | Serous borderline tumour | Low- and high-grade serous adenocarcinoma |
+| **Mucinous** (endocervical-like and intestinal type) | Cystadenoma, cystadenofibroma | Mucinous borderline tumour | Mucinous adenocarcinoma |
+| **Endometrioid** | Cystadenoma, cystadenofibroma | Endometrioid borderline tumour | Endometrioid adenocarcinoma |
+| **Clear cell** | Exceedingly rare | Exceedingly rare | Clear cell adenocarcinoma |
+| **Brenner** | Benign Brenner tumour | Borderline Brenner tumour | Malignant Brenner tumour |
 
 ## List the tumour markers associated with ovarian tumour.
 
-| Marker | Tumour |
-|---|---|
-| CA-125 | Epithelial (serous); monitors recurrence/progression, not a screening test |
-| Inhibin | Granulosa cell tumour; gauges treatment response |
-| AFP | Yolk sac tumour |
-| hCG | Choriocarcinoma; some dysgerminomas |
-| OCT3/4, KIT | Dysgerminoma; LDH and PLAP also used |
-| CEA, CA 19-9 | Mucinous tumours |
-
+- **CA-125:** surface epithelial carcinoma; used in patients with known disease to monitor recurrence or progression; no marker is sensitive and specific enough for early diagnosis
+- **Alpha-fetoprotein:** yolk sac tumour
+- **Chorionic gonadotropin:** choriocarcinoma, and some dysgerminomas with syncytiotrophoblastic giant cells
+- **Inhibin** (immunohistochemistry): granulosa cell tumour
 
 ## Name inflammatory lesions of breast.
 
-Inflammatory disease is rare (<1% of breast symptoms) outside lactation.
+Inflammatory disease of the breast is rare (less than 1% of breast symptoms) and is caused by infection, autoimmune disease, or foreign body-type reactions to keratin or secretions.
 
-| Lesion | Key points |
-|---|---|
-| Acute (lactational) mastitis | First month of breastfeeding; nipple cracks are the portal. S. aureus causes abscesses; streptococci cause spreading cellulitis. Treat with antibiotics and continued milk expression. |
-| Squamous metaplasia of lactiferous ducts (Zuska disease, recurrent subareolar abscess, periductal mastitis) | >90% are smokers. Keratinising metaplasia extends deep into the duct; keratin plugs it, the duct ruptures, granulomatous reaction follows. Fistula at areolar edge; nipple inversion. Cure by en bloc excision of duct and tract. |
-| Duct ectasia | Multiparous women, 5th-6th decade. Thick white discharge; dilated ducts with lipid-laden macrophages. Periductal fibrosis causes retraction and mimics carcinoma. Not linked to smoking. |
-| Fat necrosis | Trauma/surgery history in about half. Painless mass mimicking cancer. Liquefactive necrosis, then giant cells, calcification, scar. |
-| Lymphocytic mastopathy (diabetic mastopathy) | Type 1 DM or Hashimoto thyroiditis; probably autoimmune. Dense collagenous stroma, atrophic lobules, lymphocytic infiltrate. Hard mass. |
-| Granulomatous mastitis | Systemic causes (sarcoid, TB, granulomatosis with polyangiitis) or local infection. Granulomatous lobular mastitis occurs in parous women and is often idiopathic. Cystic neutrophilic type is due to lipophilic Corynebacteria. |
-
-Trap: inflammatory carcinoma mimics mastitis; always consider it in an erythematous swollen breast.
-
+1. **Acute mastitis:** lactational, usually in the first month of breastfeeding, through cracks and fissures in the nipple; Staphylococcus aureus (abscesses) or streptococci (cellulitis)
+2. **Squamous metaplasia of lactiferous ducts** (recurrent subareolar abscess, periductal mastitis, Zuska disease): keratinising squamous metaplasia plugs ducts; more than 90% are smokers; fistula and nipple inversion
+3. **Duct ectasia:** periareolar mass with thick white nipple secretion in multiparous females in the fifth or sixth decade; not related to smoking
+4. **Fat necrosis:** painless mass mimicking cancer; about half have a history of trauma or surgery
+5. **Lymphocytic mastopathy** (diabetic mastopathy): hard masses with dense collagenised stroma and lymphocytic infiltrate; type 1 diabetes and Hashimoto thyroiditis
+6. **Granulomatous mastitis:** granulomatous lobular mastitis (parous females, often idiopathic), cystic neutrophilic granulomatous mastitis (lipophilic Corynebacteria), and systemic or infective causes such as sarcoidosis, granulomatosis with polyangiitis, tuberculosis
+- Inflammatory carcinoma mimics inflammation and must always be considered in an erythematous swollen breast
 
 ## What are the causes of breast lump?
 
@@ -12026,16 +12019,16 @@ Staging: AJCC 8th edition anatomic stage (TNM) plus prognostic stage (grade, ER,
 
 ## 20-year-old woman with a free, movable breast lump — Probable diagnosis? Investigations to diagnose the case?
 
-Fibroadenoma. It is the commonest benign breast tumour, typical at 20-30 years, presenting as a firm, rubbery, mobile, well-circumscribed lump. It is hormone-responsive.
+**Probable diagnosis: fibroadenoma**, the most common benign stromal tumour of the female breast.
 
-**Investigations (triple assessment)**
+- Most occur in females in their 20s and 30s; frequently multiple and bilateral
+- Usually presents as a palpable mass in young females
+- Hormonally responsive: may grow during pregnancy and regress after menopause
 
-1. Clinical examination.
-
-2. Imaging: ultrasound is preferred at this age (mammography in older women); well-circumscribed density.
-
-3. FNAC or core biopsy: biphasic stroma and epithelium. Clinical assessment, imaging and biopsy together identify >99.5% of malignancies in symptomatic patients.
-
+**Investigations**
+- **Imaging:** radiograph shows a characteristically well-circumscribed mass; the absence of adipose tissue accounts for its radiodensity
+- **Histology:** proliferation of intralobular stroma that surrounds, pushes and distorts the associated epithelium, with a sharply delimited border
+- Gross: rubbery, white, well-circumscribed mass
 
 ## A woman has a hard, firm breast lump fixed to tissue (± skin dimpling). What is your likely diagnosis?
 
@@ -14391,3 +14384,7 @@ Acute kidney injury can result from glomerular, interstitial, vascular or acute 
 | **Chromophobe** | 5% | Prominent cell membranes and pale eosinophilic cytoplasm with a perinuclear halo; arises from intercalated cells of collecting ducts; excellent prognosis |
 | **Xp11 translocation** (TFE3-rearranged) | Not given | Translocations of the TFE3 gene at Xp11.2; often in young patients |
 | **Collecting duct carcinoma** | About 1% or less | Malignant cells forming glands in a desmoplastic stroma in the medulla; medullary carcinoma is a similar tumour in patients with sickle cell trait |
+
+## A female has PV bleeding/discharge, contact bleeding, an ulcerated/friable/fungating cervical growth. What is the provisional diagnosis?
+
+**Carcinoma of the cervix**, most likely squamous cell carcinoma.
