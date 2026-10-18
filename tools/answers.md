@@ -12753,110 +12753,102 @@ The following make CNS tumours different from tumours elsewhere:
 
 ## Give the normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻.
 
-The normal serum (plasma) levels are:
-
 | Electrolyte | Normal serum level |
 |---|---|
-| Sodium (Na⁺) | 135–145 mmol/L |
-| Potassium (K⁺) | 3.5–5.0 mmol/L |
-| Chloride (Cl⁻) | 98–106 mmol/L |
-| Bicarbonate (HCO₃⁻) | 22–28 mmol/L |
-
-Sodium is the major extracellular cation and determines plasma osmolality; potassium is the major intracellular cation; chloride and bicarbonate are the major extracellular anions. The anion gap, Na⁺ − (Cl⁻ + HCO₃⁻), is normally about 8–12 mmol/L.
-
+| **Sodium** (Na⁺) | 136 to 146 mmol/L |
+| **Potassium** (K⁺) | 3.5 to 5.0 mmol/L |
+| **Chloride** (Cl⁻) | 95 to 105 mmol/L |
+| **Bicarbonate** (HCO₃⁻) | 22 to 28 mmol/L |
 
 ## What is the normal pH of blood and urine?
 
-- **Blood pH:** 7.35–7.45 (arterial blood; mean 7.40), corresponding to a hydrogen ion concentration of about 40 nmol/L. A pH below 7.35 is acidaemia and above 7.45 is alkalaemia. A pH below 6.8 or above 7.8 is incompatible with life.
-- **Urine pH:** The normal range is 4.5–8.0; an average random sample is about 6.0. It is acidic (about 5–6) on a mixed diet, because the kidney excretes the daily acid load as titratable acid and ammonium. It becomes alkaline on a vegetarian diet, after meals, and in urinary infection by urea-splitting organisms.
+| Fluid | Normal pH |
+|---|---|
+| **Blood** | 7.35 to 7.45 |
+| **Urine** | 4.5 to 8.0 |
 
+- Blood pH below 7.35 is **acidaemia** and above 7.45 is **alkalaemia**
+- Normal urine is slightly acidic; it varies with diet and with acid-base disturbances
 
 ## What do you mean by metabolic acidosis?
 
-Metabolic acidosis is an acid–base disorder in which the primary abnormality is a fall in plasma bicarbonate (HCO₃⁻ below 22 mmol/L) with a fall in blood pH below 7.35. It results either from a gain of non-volatile (fixed) acid, or a loss of bicarbonate, or failure of the kidney to excrete acid.
+**Metabolic acidosis** is an acid-base disturbance with an increase in hydrogen ion concentration in the systemic circulation, shown as a **fall in serum bicarbonate** (below 24 mEq/L) and a **blood pH below 7.35**.
 
-The lungs compensate by hyperventilation (deep, rapid Kussmaul breathing), which lowers PCO₂. The kidney compensates, if functioning, by increasing excretion of H⁺ as ammonium and reabsorbing more bicarbonate.
-
-It is classified by the anion gap into **high anion gap** acidosis (accumulation of unmeasured acid anions, e.g. lactic acid, ketoacids) and **normal anion gap (hyperchloraemic)** acidosis (loss of bicarbonate, e.g. diarrhoea).
-
+- It signifies an underlying disorder that needs correction
+- The respiratory system compensates by hyperventilation, which lowers the arterial PCO2; compensation never fully corrects the pH
 
 ## What are the causes of metabolic acidosis?
 
-The causes are classified according to the anion gap.
+**Mechanisms:** increased production of acid, decreased excretion of acid, acid ingestion, and renal or gastrointestinal loss of bicarbonate.
 
-**1. High anion gap metabolic acidosis (gain of acid)**
+The causes are classified by the **anion gap** (sodium minus the sum of chloride and bicarbonate; normal about 12):
 
-- Diabetic ketoacidosis, starvation and alcoholic ketoacidosis (ketoacids).
-- Lactic acidosis: shock, severe hypoxia, sepsis, severe exercise, liver failure, metformin.
-- Renal failure (retention of sulphate, phosphate and organic acids).
-- Poisoning: salicylates, methanol, ethylene glycol, paraldehyde.
+| Type | Causes |
+|---|---|
+| **High anion gap** | Lactic acidosis from anaerobic metabolism; diabetic ketoacidosis; **uraemia** (renal failure); salicylates; methanol and ethylene glycol; paraldehyde; iron and isoniazid; cyanide and carbon monoxide; arsenic; toluene; metformin |
+| **Normal anion gap** (hyperchloraemic) | **Diarrhoea** (gastrointestinal loss of bicarbonate); **renal tubular acidosis**; Addison disease; ureterosigmoid or pancreatic fistulae; acetazolamide; total parenteral nutrition; large volumes of normal saline |
 
-**2. Normal anion gap (hyperchloraemic) metabolic acidosis (loss of bicarbonate)**
-
-- Gastrointestinal loss: severe diarrhoea, intestinal or pancreatic fistula, ureterosigmoidostomy.
-- Renal loss: renal tubular acidosis, carbonic anhydrase inhibitors (acetazolamide), hypoaldosteronism.
-- Rapid infusion of normal saline; ammonium chloride ingestion.
-
+- A positive urine anion gap points to renal loss of bicarbonate such as renal tubular acidosis; a negative value points to non-renal loss such as diarrhoea
 
 ## What conditions may lead to metabolic alkalosis? Give the biochemical changes.
 
-**Conditions leading to metabolic alkalosis**
+**Conditions**
 
-1. **Loss of hydrogen ion from the stomach:** persistent vomiting, nasogastric aspiration, pyloric stenosis.
-2. **Renal loss of H⁺ and K⁺:** diuretics (thiazides, loop diuretics), primary hyperaldosteronism, Cushing syndrome, Bartter syndrome, severe potassium depletion.
-3. **Excess alkali intake:** sodium bicarbonate, antacids (milk-alkali syndrome), citrate in massive blood transfusion.
-4. **Post-hypercapnic states** after rapid correction of chronic respiratory acidosis.
+1. **Loss of gastric acid**: prolonged vomiting or nasogastric suction
+2. **Diuretics**: thiazide and loop diuretics
+3. **Volume depletion** (hypovolaemia) and chloride depletion
+4. **Hypokalaemia**, which shifts hydrogen ions into cells and increases renal bicarbonate reabsorption
+5. **Mineralocorticoid excess**: Conn syndrome, Cushing syndrome, Bartter and Gitelman syndromes, Liddle syndrome
+6. Alkali (bicarbonate) administration
+7. Recovery after prolonged hypercapnia
 
 **Biochemical changes**
 
-- Plasma pH raised (above 7.45); plasma HCO₃⁻ raised (above 28 mmol/L); PCO₂ raised slightly by compensatory hypoventilation.
-- Hypokalaemia (potassium moves into cells in exchange for H⁺ and is lost in urine).
-- Hypochloraemia in vomiting and diuretic use; ionised calcium falls, which may cause tetany.
-- Urine is paradoxically acidic in severe potassium and volume depletion.
-
+- Primary **increase in serum bicarbonate**
+- Raised blood pH, though it may be nearly normal
+- **Hypokalaemia** and **hypochloraemia**
+- Compensatory hypoventilation, with a rise in arterial PCO2
+- Urine chloride below 10 mEq/L in chloride-responsive causes (vomiting, diuretics) and above 20 mEq/L in chloride-resistant causes
 
 ## Write a short note on respiratory acidosis.
 
-Respiratory acidosis is an acid–base disorder in which the primary abnormality is retention of carbon dioxide (PaCO₂ above 45 mmHg) because of alveolar hypoventilation, producing a fall in blood pH below 7.35.
+**Definition.** **Respiratory acidosis** is an acid-base disturbance due to alveolar hypoventilation, with a primary rise in arterial PCO2, a fall in the bicarbonate to PCO2 ratio and a **fall in blood pH**.
 
 **Causes**
 
-- Depression of the respiratory centre: opioids, sedatives, anaesthetics, head injury.
-- Neuromuscular disease: poliomyelitis, Guillain–Barré syndrome, myasthenia gravis, muscular dystrophy.
-- Airway and lung disease: chronic obstructive pulmonary disease, severe asthma, pneumonia, pulmonary oedema, airway obstruction.
-- Thoracic cage disorders: kyphoscoliosis, flail chest, pneumothorax, gross obesity (hypoventilation).
+- Impaired respiratory drive from drugs or CNS disease
+- Airflow obstruction: chronic obstructive pulmonary disease (COPD), asthma, sleep apnoea, airway oedema
+- Obesity hypoventilation syndrome, amyotrophic lateral sclerosis and severe thoracic skeletal defects
 
 **Biochemical changes**
 
-- Raised PaCO₂, lowered pH, and raised HCO₃⁻ in the chronic state because the kidney retains bicarbonate and excretes H⁺ as ammonium.
-- Acute: pH falls markedly and bicarbonate rises only slightly. Chronic: pH is near normal (compensated) with high bicarbonate.
+- Arterial blood gas: **PCO2 above 45 mmHg**, **pH below 7.35**
+- **Acute**: bicarbonate rises by 1 mEq/L for each 10 mmHg rise in PCO2
+- **Chronic**: renal compensation over days; bicarbonate rises by 4 mEq/L for each 10 mmHg rise in PCO2 and exceeds 30 mEq/L; pH is normal or near normal
 
-**Clinical features:** headache, confusion, drowsiness, coma (CO₂ narcosis), warm flushed skin and papilloedema. **Treatment** is that of the underlying cause and improving ventilation.
+**Clinical features**
 
+- Acute: headache, confusion, drowsiness; with severe prolonged hypoventilation, altered mental status, myoclonus and seizures
+- Chronic form is often asymptomatic
 
 ## A 10y boy has severe diarrhoea. What changes do you expect in his electrolyte and acid-base status?
 
-Severe diarrhoea causes loss of large volumes of fluid rich in bicarbonate and potassium, and the expected changes are:
+**Normal anion gap (hyperchloraemic) metabolic acidosis.**
 
-- **Metabolic acidosis (normal anion gap, hyperchloraemic):** loss of bicarbonate-rich intestinal fluid lowers plasma HCO₃⁻ and pH. Hypovolaemia adds lactic acidosis from poor tissue perfusion. Respiratory compensation (deep, rapid breathing) lowers PCO₂.
-- **Hypokalaemia:** potassium is lost in stool and in urine (secondary hyperaldosteronism); acidosis may initially mask it.
-- **Sodium:** low or normal (isotonic loss); hypernatraemia if loss is hypotonic and water is not replaced.
-- **Chloride:** relatively raised (hyperchloraemia) because chloride is retained as bicarbonate is lost.
-- **Dehydration:** haemoconcentration, raised urea and creatinine (prerenal azotaemia), oliguria and a raised urine specific gravity.
-
-Treatment is oral or intravenous rehydration with replacement of potassium and bicarbonate (oral rehydration solution).
-
+- Diarrhoea causes loss of **bicarbonate** from the gut, so serum bicarbonate and blood pH fall
+- Chloride rises to balance the fall in bicarbonate, so the anion gap stays normal
+- The urine anion gap is negative, since the loss is non-renal
+- Hypokalaemia accompanies the acidosis of diarrhoea
+- The respiratory compensation is hyperventilation, which lowers the arterial PCO2
 
 ## A 25y man in shock after RTA passed 40 ml urine in 24 h. What will be his acid-base and electrolyte status?
 
-Shock after a road traffic accident followed by oliguria (40 mL in 24 hours) indicates acute kidney injury (acute tubular necrosis) after hypoperfusion. The expected status is:
+**High anion gap metabolic acidosis.**
 
-- **Acid–base: high anion gap metabolic acidosis.** Lactic acid accumulates from tissue hypoxia in shock, and the failing kidney cannot excrete H⁺, phosphate and sulphate. Plasma HCO₃⁻ and pH are low, and PCO₂ is low from respiratory compensation. Crush injury adds organic acids.
-- **Hyperkalaemia:** reduced renal excretion of potassium, with release of potassium from damaged muscle cells and acidosis shifting K⁺ out of cells. This is the most dangerous change and may cause cardiac arrhythmias.
-- **Sodium:** low (hyponatraemia, dilutional from water retention).
-- **Calcium:** low (hypocalcaemia, from phosphate retention and calcium deposition in injured muscle); phosphate and magnesium raised.
-- **Retention products:** raised blood urea and creatinine, and raised creatine kinase and myoglobin if there is rhabdomyolysis.
-
+- Oliguria of 40 mL in 24 hours after shock indicates **acute kidney injury**, so acid excretion falls (**uraemia**)
+- Shock causes anaerobic metabolism and **lactic acid** accumulation
+- Unmeasured anions increase, so the anion gap is **raised**; serum bicarbonate and blood pH are low
+- The respiratory compensation is hyperventilation, which lowers the arterial PCO2
 
 ## Write the clinical importance of serum calcium.
 
@@ -12907,16 +12899,13 @@ Aspartate aminotransferase (AST, formerly SGOT) catalyses the transfer of an ami
 
 ## Give the clinical importance of LDH.
 
-Lactate dehydrogenase (LDH) catalyses the reversible conversion of pyruvate to lactate. It is present in almost all tissues, so a raised level is sensitive but not specific. Normal serum level is about 140–280 U/L. There are five isoenzymes: LDH-1 and LDH-2 (heart, red cells), LDH-3 (lung), LDH-4 and LDH-5 (liver, skeletal muscle).
+**Lactate dehydrogenase** (LDH) is an enzyme present in almost all body tissues. Its five isozymes, LDH-1 to LDH-5, are expressed differently in different tissues, which is the basis of its use as a diagnostic marker.
 
-**Clinical importance**
-
-- **Myocardial infarction:** total LDH rises at 12–24 hours, peaks at 2–3 days and remains raised for 10–14 days; LDH-1 exceeds LDH-2 ("flipped LDH ratio").
-- **Haemolytic and megaloblastic anaemia:** markedly raised (LDH-1 and LDH-2).
-- **Liver disease** (LDH-5), skeletal muscle disease, pulmonary embolism.
-- **Tumour marker:** raised in lymphoma, leukaemia, seminoma and germ cell tumours, and used to indicate tumour burden and prognosis.
-- Raised in pleural, pericardial and CSF fluid, where it helps to distinguish exudate from transudate.
-
+- **Myocardial infarction**: LDH-1 exceeds LDH-2 (a flipped ratio above 1); LDH-1 stays raised from the second to the fourth day. It has been replaced by troponin as the marker of myocardial infarction
+- **Liver injury**: LDH-5 is raised
+- Raised in tissue destruction because of cell death and loss of cytoplasm; the level can remain raised for up to 7 days
+- Common causes of a raised level: cardiorespiratory disease, malignancy, fracture or trauma, infection, inflammation and hepatitis
+- **Limitations**: it is non-specific, so alternative assays are preferred (creatine kinase for muscle, ALT for liver, troponin for heart); haemolysis falsely raises the result because red cells contain LDH
 
 ## Give the clinical importance of PSA.
 
