@@ -475,3 +475,4 @@ Ascites causes combine Chapter 18 (portal hypertension table text, 85% cirrhosis
 - Etiology of cirrhosis: the textbook gives no single list; autoimmune, biliary and specific metabolic causes (Wilson disease, haemochromatosis) are left out because the chapter says these are often not accompanied by established cirrhosis or does not tie them to cirrhosis in the passage used.
 - Male case with gynaecomastia: the textbook does not link this to a specific cause (for example alcohol), so none is stated.
 - Liver function tests: the textbook (Table 18.1) gives direction of change only, no normal values.
+- Hand-edit hunk 3 of tools/hand_edits.json (numbering fix before the Hepatic encephalopathy item in the old cirrhosis complications answer) dropped because its anchor text was rewritten (11 down to 10).
