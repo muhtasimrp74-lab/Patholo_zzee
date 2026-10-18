@@ -381,3 +381,32 @@ Questions: causes of IDA in infants and children, laboratory findings and bioche
 - Normoblastic (nonmegaloblastic) macrocytic causes: only liver disease, aplastic anaemia and reticulocytosis are named; alcohol, hypothyroidism and drugs are left out.
 - Progress file lists 665 questions done; 470 remain.
 - sw.js VERSION bumped to v149 after batch 5; build and manifests regenerated; tests not run, at the owner's request.
+
+### Session 11 (70 answers: Chapter 14 megaloblastic anaemia through blood groups)
+Questions: megaloblastic anaemia (short note, differentiation, diagnosis, folate and vitamin B12 causes), pernicious anaemia; haemolytic anaemia (definition, classification, evidence of haemolysis, jaundice), AIHA, haemoglobinopathies, thalassaemia, sickle cell anaemia; pancytopenia, aplastic anaemia; haemorrhagic and coagulation disorders, bleeding tests, von Willebrand factor, haemophilia, DIC, ITP, thrombocytopenia, blood groups.
+- Almost all from the textbook (Chapter 14; Chapter 13 for acute leukaemia and hypersplenism; Chapter 10 for Rh disease). Tables 14.4, 14.5, 14.7 and 14.8 are mostly empty in the source JSON, so the narrative text was used.
+
+| Question | Source | URL |
+|---|---|---|
+| What is bleeding time? | StatPearls, Bleeding Time (definition, Ivy and Duke methods) | https://www.ncbi.nlm.nih.gov/books/NBK537233/ |
+| Normal limits of bleeding time and clotting time. (bleeding time part) | StatPearls, Bleeding Time | https://www.ncbi.nlm.nih.gov/books/NBK537233/ |
+| What is clotting time? / Normal limits of bleeding time and clotting time. (clotting time part) | FPnotebook, Whole Blood Clotting Time (definition, 9 to 15 minutes) | https://mobile.fpnotebook.com/HemeOnc/Lab/WhlBldCltngTm.htm |
+| Why are both bleeding time and clotting time prolonged in von Willebrand disease? | Definitions of bleeding time and clotting time from the two sources above; the rest from the textbook | as above |
+| Classify blood groups. / Name the ABO and Rh blood groups with their agglutinins. | Dean L. Blood Groups and Red Cell Antigens, NCBI Bookshelf (ABO and Rh chapters) | https://www.ncbi.nlm.nih.gov/books/NBK2267/ ; https://www.ncbi.nlm.nih.gov/books/NBK2269/ |
+
+### Session 11 points left out or needing a decision
+- Clotting time: FPnotebook is not a standard textbook, StatPearls or WHO source; no StatPearls page on whole blood clotting time was found. Owner to decide whether to keep it. Normal ranges for bleeding and clotting time differ between sources and methods.
+- Macrocytic anaemias other than megaloblastic: the textbook describes only aplastic anaemia as slightly macrocytic; liver disease, alcohol, hypothyroidism and drugs are left out of the differentiation table.
+- Normal findings in ITP, haemophilia and DIC: the textbook gives no bleeding time or clotting time for them, no platelet count for haemophilia, and no normal test for DIC; shown as "None stated" or left out. The direction of change of the DIC tests (low platelets and fibrinogen, prolonged PT and PTT, raised D-dimer) is not stated by the textbook and is left out.
+- Leg ulcer in sickle cell anaemia: the textbook gives only the statement about vascular stagnation; the general mechanism of microvascular occlusion is added from its pathogenesis section.
+- Laboratory diagnosis of sickle cell anaemia: the textbook names no solubility test or electrophoresis, only "various tests for sickle haemoglobin"; those tests are left out.
+- Confirmatory test for thalassaemia: the textbook names no single confirmatory test; the answer says so and lists electrophoresis and DNA analysis.
+- Haemolytic anaemias due to extracorpuscular defect: the textbook does not use the term; the answer groups the non-inherited causes in its Table 14.1 and says so.
+- Pancytopenia investigation: no protocol in the textbook; the answer collects the steps it names.
+- Normal types of haemoglobin: only HbA, HbA2 and HbF are given by the textbook; embryonic haemoglobins are left out.
+
+### Session 11 housekeeping
+- Six stale hunks dropped from tools/hand_edits.json, all anchored in old answers that were rewritten: haemoglobinopathies list (batch 3), four in batch 4 (thrombocytopenia classification, haemophilia and coagulation classification, and two insertions or list closings), and the platelet count line (batch 5).
+- All 70 questions already had an answer, so none were previously empty.
+- Progress file lists 735 questions done (665 before this session, plus 70). 400 remain in the work list.
+- tools/tests/test_site.py not run this session, at the owner's request.
