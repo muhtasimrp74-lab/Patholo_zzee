@@ -6140,49 +6140,37 @@ Normally only band and segmented forms are seen in the peripheral blood; the app
 
 ## Define neutrophilia.
 
-Neutrophilia (neutrophilic leukocytosis) is an increase in the absolute number of circulating neutrophils above the upper limit of the laboratory reference range for age. The adult range tabulated in Robbins is 1.4 to 6.5 × 10³/µL, and many laboratories regard an absolute neutrophil count above about 7.5 × 10³/µL as neutrophilia. It is the commonest form of leukocytosis and is usually a reaction to infection or inflammation, although it may also be physiologic, drug-induced or neoplastic.
-
-The peripheral neutrophil count reflects the balance among the size of the marrow precursor and storage pools, the rate of release from the marrow, the proportion of cells adherent to vessel walls (the marginal pool), and the rate of extravasation into tissues. Neutrophilia therefore arises by one or more of the following mechanisms:
-
-1. **Increased release from marrow stores**, as in acute infection and acute inflammation, mediated by TNF and IL-1 and appearing within hours.
-2. **Increased marrow production**, in which prolonged infection or inflammation stimulates macrophages, stromal cells and T cells to elaborate colony-stimulating factors, notably G-CSF, which expand committed granulocytic progenitors over several days; this growth factor–dependent pattern also occurs as a paraneoplastic phenomenon, for example in Hodgkin lymphoma. In myeloproliferative neoplasms such as chronic myeloid leukaemia, production is growth factor–independent.
-3. **Demargination**, in which cells shift from the marginal to the circulating pool under the influence of catecholamines, exercise or glucocorticoids, producing a rapid, transient rise without any increase in total body neutrophils.
-
-In sepsis and severe inflammatory states, reactive neutrophilia is often accompanied by a left shift and by toxic granulation (coarse, dark abnormal primary granules), Döhle bodies (sky-blue patches of dilated endoplasmic reticulum) and cytoplasmic vacuolation.
-
+**Neutrophilia** (neutrophilic leukocytosis) is an increase in the number of neutrophils in the blood. The adult reference range for neutrophils is 1,400 to 6,500 per microlitre.
 
 ## Name four important causes of neutrophilic leukocytosis.
 
-Neutrophilic leukocytosis has several important causes, of which the most significant is infection. Four principal causes are as follows.
+**Causes of neutrophilic leukocytosis**
 
-1. **Acute bacterial infections**, especially those caused by pyogenic organisms such as staphylococci, streptococci and pneumococci. Cytokines such as TNF and IL-1 trigger the release of mature neutrophils from the marrow storage pool, and sustained infection drives increased production through colony-stimulating factors.
-2. **Sterile inflammation and tissue necrosis**, for example myocardial infarction, burns, trauma, surgery and gout, in which necrotic tissue evokes an acute inflammatory response and the same cytokine-mediated release of neutrophils.
-3. **Physiologic and stress states and drugs**, including strenuous exercise, emotional stress, pregnancy and labour, and the newborn period (through demargination and increased release), and drugs such as glucocorticoids, lithium and G-CSF, which mobilise neutrophils from the marginal pool and marrow and impair their egress into tissues.
-4. **Neoplastic and paraneoplastic causes**, namely myeloproliferative neoplasms, particularly chronic myeloid leukaemia, in which production is autonomous and growth factor–independent, and tumours such as Hodgkin lymphoma and some carcinomas that elaborate G-CSF.
+- **Acute bacterial infections**, especially those caused by pyogenic organisms.
+- **Sterile inflammation** caused by tissue necrosis, for example myocardial infarction and burns.
+- **Chronic infection or inflammation.**
+- **Paraneoplastic**, for example Hodgkin lymphoma.
+- **Myeloproliferative neoplasms**, for example chronic myeloid leukaemia.
 
-Other recognised causes include metabolic derangements (diabetic ketoacidosis, uraemia), acute haemorrhage or haemolysis, and splenectomy or hyposplenism.
+**Mechanisms**
 
+- Increased release from marrow stores: in acute inflammation, such as infection, there is a rapid increase in the egress of mature granulocytes from the bone marrow pool, mediated through tumour necrosis factor (TNF) and interleukin-1 (IL-1).
+- Increased marrow production: in prolonged infection or inflammation, IL-1, TNF and other mediators stimulate macrophages, marrow stromal cells and T cells to produce more haematopoietic growth factors; these increase proliferation and differentiation of committed granulocytic progenitors and sustain neutrophil production over several days. Granulocyte colony-stimulating factor (G-CSF) induces neutrophilia.
+- Chronic infection or inflammation and paraneoplastic causes are growth factor dependent; myeloproliferative neoplasms are growth factor independent.
 
 ## Write a short note on eosinophilia.
 
-**Definition.** Eosinophilia is an increase in the absolute eosinophil count above the upper reference limit, which in adults is about 0.5 × 10³/µL (500/µL). It is graded as mild (0.5–1.5 × 10³/µL), moderate (1.5–5 × 10³/µL) and severe (more than 5 × 10³/µL). A persistent count above 1.5 × 10³/µL with tissue damage is called hypereosinophilic syndrome.
+**Definition:** eosinophilic leukocytosis, an increase in the number of eosinophils in the blood; the adult reference range is 0 to 500 per microlitre.
 
-**Pathogenesis.** Eosinophil production is driven principally by IL-5, produced by Th2 cells, with contributions from IL-3 and GM-CSF. Eosinophilia therefore characteristically accompanies Th2-type immune responses, as in allergy and helminthic infection. Mature eosinophils have bilobed nuclei and bright red-orange cytoplasmic granules containing major basic protein, eosinophil cationic protein, eosinophil peroxidase and eosinophil-derived neurotoxin; these products kill helminths but also injure host tissue when eosinophils are present in excess or activated chronically.
+**Aetiology**
 
-**Causes.**
+- **Allergic disorders**, such as asthma and hay fever.
+- **Parasitic infestations.**
+- **Drug reactions.**
+- **Certain malignancies**, for example Hodgkin lymphoma and some non-Hodgkin lymphomas.
+- **Autoimmune disorders**, for example pemphigus and dermatitis herpetiformis.
 
-| Category | Examples |
-|---|---|
-| Allergic disorders | Bronchial asthma, hay fever, atopic dermatitis, urticaria, drug hypersensitivity |
-| Parasitic infestations | Tissue-invading helminths—ascariasis, hookworm, strongyloidiasis, filariasis, schistosomiasis, trichinosis, toxocariasis, hydatid disease |
-| Drug reactions | Penicillins, sulfonamides, NSAIDs, allopurinol, many others |
-| Autoimmune and skin disorders | Pemphigus, dermatitis herpetiformis, eosinophilic granulomatosis with polyangiitis and other vasculitides |
-| Malignancy | Hodgkin lymphoma and some non-Hodgkin lymphomas, T-cell lymphomas, chronic myeloid leukaemia, some carcinomas |
-| Pulmonary and other | Löffler syndrome, tropical pulmonary eosinophilia, eosinophilic pneumonias; adrenal insufficiency; transient eosinophilia in atheroembolic disease |
-| Primary (clonal) | Chronic eosinophilic leukaemia and myeloid or lymphoid neoplasms with eosinophilia and tyrosine kinase gene rearrangements (e.g., FIP1L1::PDGFRA), which respond to imatinib |
-
-**Clinical significance.** Mild eosinophilia is usually harmless, but sustained marked eosinophilia may cause endomyocardial fibrosis with restrictive cardiomyopathy and thrombosis, pulmonary infiltrates, neuropathy and skin lesions. The cause is determined by history (allergy, drugs, travel), stool examination for ova and parasites, and, where indicated, marrow examination and molecular testing for PDGFRA rearrangement.
-
+**Pathogenesis:** growth factors preferentially stimulate single leukocyte types; **interleukin-5** mainly stimulates eosinophil production.
 
 ## What do you mean by leucocytosis?
 
@@ -6431,16 +6419,10 @@ The common causes of a leukoerythroblastic picture are marrow infiltration by me
 
 ## What are the types of leukaemoid reaction with example?
 
-Leukaemoid reaction is a reactive increase in white cell count with immature forms which mimics leukaemia. It is classified according to the cell lineage that is involved, the commonest being neutrophilic (myeloid).
-
-| Type | Blood picture | Examples of causes |
+| Type | Features | Example |
 |---|---|---|
-| **Neutrophilic (myeloid)** | Marked neutrophilia with left shift to myelocytes, toxic granulation, Döhle bodies, high LAP; rare blasts | Severe pyogenic infection (pneumonia, sepsis, abscess), tuberculosis, diphtheria, severe haemorrhage or haemolysis, burns, tissue necrosis, mercury or ethylene glycol poisoning |
-| **Lymphocytic** | Lymphocytosis with mature small lymphocytes, or atypical reactive lymphocytes in viral infection; polyclonal | Pertussis, infectious mononucleosis, cytomegalovirus infection, tuberculosis, measles, viral hepatitis |
-| **Eosinophilic** | Marked eosinophilia, often with immature eosinophils | Hodgkin lymphoma, drug hypersensitivity, parasitic infestation, Löffler syndrome |
-| **Monocytic** | Monocytosis with some promonocytes | Tuberculosis, subacute bacterial endocarditis, typhoid, kala-azar |
-| **Leukoerythroblastic (myelophthisic)** | Immature granulocytes and nucleated red cells, teardrop cells | Marrow infiltration by metastatic carcinoma, granulomatous disease, myelofibrosis |
-| **Plasmacytic (rare)** | Increased plasma cells in blood | Infections such as rubella, serum sickness, and collagen vascular disease |
+| **Neutrophilic** | Many immature granulocytes appear in the blood, mimicking myeloid leukaemia | Severe infections |
+| **Lymphoid** | Large numbers of activated lymphocytes resembling neoplastic lymphoid cells | Acute viral infections, particularly in children; infectious mononucleosis |
 
 ## What do you mean by lymphadenopathy?
 
@@ -6526,22 +6508,11 @@ Hard, fixed, painless, rapidly enlarging nodes in a middle-aged or elderly smoke
 
 ## What is the etiology of leukaemia?
 
-Leukaemia, like all cancers, arises from acquired genetic alterations in haematopoietic progenitors that provide a growth or survival advantage and block normal differentiation. In most patients no single cause is identifiable, and leukaemia results from the interaction of inherited susceptibility, acquired driver mutations and environmental exposures.
-
-**1. Acquired genetic alterations (the proximate cause).** Nonrandom chromosomal abnormalities, most commonly translocations, are present in most leukaemias, and the genes involved usually play critical roles in the development, growth or survival of the normal counterpart cell. They act through four principal mechanisms: oncoproteins that block differentiation (e.g., RUNX1::RUNX1T1 from t(8;21), PML::RARA from t(15;17), ETV6::RUNX1 from t(12;21), NOTCH1 mutations in T-ALL), mutations that activate tyrosine kinases and progrowth signalling (BCR::ABL1, FLT3, JAK2, RAS), mutations in epigenetic regulators (IDH1/2, TET2, DNMT3A), and mutations that inhibit apoptosis or abrogate p53 function (BCL2, TP53). Leukaemias are usually the result of collaboration between a mutation that blocks differentiation and one that promotes growth.
-
-**2. Inherited and constitutional factors.** Genetic disorders that promote genomic instability—Bloom syndrome, Fanconi anaemia and ataxia telangiectasia—carry an increased risk of acute leukaemia. Down syndrome (trisomy 21), type I neurofibromatosis, Li-Fraumeni syndrome, Klinefelter syndrome and some immunodeficiency states are also associated with increased incidence, especially in childhood. The risk is higher in monozygotic twins of an affected child.
-
-**3. Ionising radiation and chemicals.** Atomic bomb survivors, radiologists exposed in the past, and patients treated with therapeutic radiation have increased rates of acute and chronic myeloid leukaemia. Benzene exposure and tobacco smoking (tobacco smoke contains benzene and other carcinogens; the incidence of AML is increased 1.3- to 2-fold in smokers) predispose to AML; other implicated agents include pesticides and organic solvents.
-
-**4. Iatrogenic factors.** Radiation therapy and chemotherapy used to treat cancer increase the risk of later myeloid and lymphoid neoplasms. Alkylating agents produce therapy-related AML or myelodysplasia after 3 to 8 years, often with monosomy or deletions of chromosomes 5 and 7 and TP53 mutations, whereas topoisomerase II inhibitors cause AML after 1 to 3 years, characteristically with KMT2A (11q23) translocations. Chloramphenicol and phenylbutazone have been implicated rarely.
-
-**5. Viruses.** Human T-cell leukaemia virus type 1 (HTLV-1) causes adult T-cell leukaemia/lymphoma. EBV is associated with Burkitt lymphoma, a portion of Hodgkin lymphoma and lymphomas in the immunodeficient, and human herpesvirus 8 with primary effusion lymphoma.
-
-**6. Preexisting haematologic disorders and clonal haematopoiesis.** Myelodysplastic neoplasms, myeloproliferative neoplasms, aplastic anaemia and paroxysmal nocturnal haemoglobinuria predispose to AML, and clonal haematopoiesis (mutations in TET2, DNMT3A) carries approximately a 1% yearly risk of a haematologic neoplasm.
-
-**7. Chronic inflammation and immune dysfunction.** Helicobacter pylori infection and gastric lymphoma, gluten-sensitive enteropathy and intestinal T-cell lymphoma, and HIV infection and B-cell lymphoma exemplify how chronic antigenic stimulation and immunodeficiency predispose to lymphoid neoplasia.
-
+- **Genetic alterations in cancer genes:** nonrandom chromosomal abnormalities, most commonly translocations, are present in most white cell neoplasms, with driver mutations that block differentiation, drive growth or prevent apoptosis.
+- **Inherited factors:** diseases with genomic instability (Bloom syndrome, Fanconi anaemia, ataxia telangiectasia) raise the risk of acute leukaemia; **Down syndrome** (trisomy 21) and type I neurofibromatosis are associated with childhood leukaemia.
+- **Viruses:** HTLV-1 with adult T-cell leukaemia/lymphoma; EBV with a subset of Burkitt lymphoma and other lymphomas; HHV8 with an unusual B-cell lymphoma presenting as an effusion.
+- **Chronic inflammation:** for example *Helicobacter pylori* with gastric B-cell lymphomas, and gluten-sensitive enteropathy with intestinal T-cell lymphomas.
+- **Treatment:** chemotherapy with alkylating agents has been followed by a high incidence of acute myeloid leukaemia.
 
 ## Define leukaemia.
 
@@ -6723,126 +6694,78 @@ Infection with fever in a neutropenic patient is a medical emergency and require
 
 ## Classify AML (FAB classification).
 
-Acute myeloid leukaemia (AML) is a neoplasm of haematopoietic progenitors in which acquired oncogenic mutations impede differentiation, leading to accumulation of immature myeloid blasts in the marrow. The French–American–British (FAB) cooperative group classified AML into eight subtypes, M0 to M7, according to the lineage and degree of differentiation of the blasts as judged by morphology and cytochemistry; 30% or more blasts in the marrow were required for the diagnosis of AML.
-
-| FAB type | Designation | Morphology and cytochemistry | Cytogenetic association |
-|---|---|---|---|
-| M0 | AML, minimally differentiated | Agranular blasts, no Auer rods; MPO and SBB negative; diagnosed by CD13, CD33, CD117 | Variable |
-| M1 | AML without maturation | Myeloblasts predominate (≥90% of non-erythroid cells); occasional granules and Auer rods; MPO positive | Variable |
-| M2 | AML with maturation | Blasts 30–89% with promyelocytes to neutrophils (≥10%); Auer rods frequent | t(8;21) |
-| M3 / M3v | Acute promyelocytic leukaemia | Hypergranular promyelocytes, bundles of Auer rods (faggot cells); microgranular variant with bilobed nuclei; strongly MPO positive; DIC | t(15;17) PML::RARA |
-| M4 / M4Eo | Acute myelomonocytic leukaemia | Both neutrophil and monocyte lines (≥20% monocytic); MPO and NSE positive; M4Eo has abnormal eosinophils | inv(16) in M4Eo |
-| M5a / M5b | Acute monoblastic / monocytic leukaemia | Monoblasts or promonocytes, folded nuclei; NSE positive; gum and skin infiltration | 11q23 (KMT2A) |
-| M6 | Acute erythroleukaemia | >50% erythroid precursors, dysplastic; ≥30% blasts among non-erythroid cells | Complex, 5q/7q |
-| M7 | Acute megakaryoblastic leukaemia | Megakaryoblasts, CD41/CD61; marrow fibrosis | t(1;22); Down syndrome |
-
-The FAB classification is now largely replaced by the WHO classification, which divides AML into AML with defining genetic abnormalities and AML defined by differentiation and allows the diagnosis with a blast count below 20% in the presence of defined genetic lesions, because the genetic features have greater prognostic and therapeutic importance.
-
+| Type | Name |
+|---|---|
+| M0 | Acute myeloblastic leukaemia with minimal differentiation |
+| M1 | Myeloblastic leukaemia without maturation |
+| M2 | Myeloblastic leukaemia with maturation |
+| M3 | Acute promyelocytic leukaemia |
+| M4 | Acute myelomonocytic leukaemia; the myeloblastic and monoblastic components each make up more than 20% of the blasts in the marrow |
+| M5 | Acute monoblastic leukaemia: M5a without differentiation, M5b with differentiation |
+| M6 | Erythroleukaemia |
+| M7 | Acute megakaryoblastic leukaemia |
 
 ## What are the common presentations of acute leukaemia/AML?
 
-Acute leukaemia presents abruptly, usually within days to a few weeks (in AML within weeks to a few months) of the onset of symptoms, and the presentation reflects the suppression of normal haematopoiesis by the accumulating blasts, with tissue infiltration and metabolic derangements added to varying degrees.
-
-**1. Anaemia.** Pallor, fatigue, weakness, exertional dyspnoea and palpitations.
-
-**2. Neutropenia and infection.** Fever, sore throat, oral ulceration, and infections of the skin, lungs, urinary tract and colon, often caused by opportunists such as fungi and Pseudomonas and commensal organisms.
-
-**3. Thrombocytopenia and bleeding.** Thrombocytopenia causes abnormal bleeding, which is often prominent, with cutaneous petechiae and ecchymoses, serosal haemorrhages into the linings of body cavities and viscera, and mucosal bleeding from the gingivae, nose and urinary tract. Procoagulants and fibrinolytic factors released by leukaemic cells, particularly in AML with t(15;17) (acute promyelocytic leukaemia), exacerbate the tendency by causing DIC.
-
-**4. Extramedullary infiltration.** These signs are usually less striking in AML than in ALL. They include bone pain and tenderness, moderate splenomegaly and hepatomegaly, and lymphadenopathy; infiltration of the skin (leukaemia cutis) and gingivae (gum hypertrophy) in AML with monocytic differentiation; and a localised soft tissue mass of blasts (myeloid sarcoma, chloroma). CNS spread is less common in AML than in ALL.
-
-**5. Hyperleukocytosis and metabolic features.** When blast counts are very high there may be leukostasis with visual blurring, dyspnoea and neurologic symptoms, and tumour lysis with hyperuricaemia and renal failure.
-
-**6. Constitutional symptoms.** Fever, weight loss, malaise.
-
-Often the presentation is a combination of fatigue, fever and bleeding in an adult past middle age, and the diagnosis is first suspected from an abnormal blood count.
-
+- **Abrupt, stormy onset** within days to a few weeks of the first symptoms.
+- **Marrow failure**: fatigue from anaemia; fever from infections secondary to neutropenia; bleeding from thrombocytopenia.
+- **Bleeding**: cutaneous petechiae and ecchymoses, serosal haemorrhages, and mucosal haemorrhages into the gingivae and urinary tract. Procoagulants and fibrinolytic factors released by leukaemic cells, especially in AML with t(15;17), make bleeding worse.
+- **Infections**, frequent in the oral cavity, skin, lungs, kidneys, urinary bladder and colon, often caused by opportunists such as fungi, Pseudomonas and commensal organisms.
+- **Mass effects from neoplastic infiltration**, more common in ALL: bone pain, generalised lymphadenopathy, splenomegaly, hepatomegaly, testicular enlargement, and in T-ALL compression of large vessels and airways in the mediastinum.
+- **Central nervous system** manifestations, more common in ALL: headache, vomiting and nerve palsies from meningeal spread.
+- In AML, tumours with monocytic differentiation often infiltrate the skin (leukaemia cutis) and gingiva; AML occasionally presents as a localised soft tissue mass, a myeloid sarcoma.
 
 ## A child has severe pallor, sore throat, bleeding, lymphadenopathy, blasts in PBF. What is the probable diagnosis?
 
-The probable diagnosis is **acute leukaemia, most likely acute lymphoblastic leukaemia (ALL)**.
+**Probable diagnosis: acute lymphoblastic leukaemia (ALL)**, the most common cancer of children.
 
-**Reasoning.** The clinical picture is that of marrow failure and tissue infiltration. Severe pallor reflects anaemia from replacement of normal erythropoiesis by blasts; sore throat and fever reflect neutropenia with infection of the oropharynx; bleeding (petechiae, gum or nose bleeding) reflects thrombocytopenia. Lymphadenopathy, together with hepatosplenomegaly, represents infiltration, which is more common in ALL than in AML. The finding of **blasts in the peripheral blood film** is the hallmark of acute leukaemia. ALL is the most common cancer of childhood, with a peak around 3 years of age, so ALL is the most likely type, although AML must be excluded because it can produce an identical picture.
-
-**Confirmation.**
-
-1. Complete blood count and peripheral smear: anaemia, thrombocytopenia, neutropenia, and variable leukocyte count, with blasts of high nuclear-cytoplasmic ratio.
-2. **Bone marrow aspiration and biopsy:** hypercellular marrow with 20% or more lymphoblasts; reduced erythroid, myeloid and megakaryocytic cells.
-3. Cytochemistry: lymphoblasts are myeloperoxidase and Sudan black negative and PAS positive.
-4. Flow cytometry: TdT and CD19, CD22, CD79a and CD10 for B-ALL; cytoplasmic CD3 and CD7 for T-ALL.
-5. Cytogenetics and molecular studies (t(12;21), hyperdiploidy, BCR::ABL1, KMT2A) for risk stratification, and CSF examination for CNS disease.
-
-**Differential diagnosis.** AML; aplastic anaemia (no blasts, hypocellular marrow, no lymphadenopathy); infectious mononucleosis and other viral infections in which reactive lymphocytes mimic blasts; pertussis; and leukaemoid reaction.
-
+- Pallor from anaemia; sore throat and fever from infections secondary to neutropenia; bleeding from thrombocytopenia; lymphadenopathy from neoplastic infiltration, which is more common in ALL.
+- Confirmed by bone marrow examination, generally 20% or more blasts, myeloperoxidase negative, TdT positive in more than 95%, and immunophenotyping.
 
 ## Give the blood picture and bone marrow findings of AML.
 
-**Peripheral blood.**
-
-- Red cells: normocytic normochromic anaemia of variable severity, with a low reticulocyte count; occasional nucleated red cells.
-- White cells: the leukocyte count is variable. Blast counts may exceed 100,000 per µL, but are below 10,000 per µL in about 50% of patients, and occasionally blasts are entirely absent from the blood (aleukaemic leukaemia). The smear shows myeloblasts with delicate nuclear chromatin, two to four nucleoli, and relatively abundant cytoplasm containing fine azurophilic, peroxidase-positive granules. **Auer rods**—needle-like azurophilic granules—are present in many cases and are particularly numerous in AML with t(15;17). Monoblasts have folded or lobulated nuclei, lack Auer rods and are nonspecific esterase positive. There is neutropenia with dysplastic neutrophils in some, and a **hiatus leukaemicus** (blasts and mature cells without intermediate forms).
-- Platelets: thrombocytopenia, often marked, sometimes with abnormal platelets.
-- Coagulation: in acute promyelocytic leukaemia there is a prolonged prothrombin time, hypofibrinogenaemia and high D-dimers (DIC).
-
-**Bone marrow.**
-
-- A hypercellular marrow in most cases (hypocellular in a minority), with replacement of normal elements by myeloblasts. Blasts constitute 20% or more of the nucleated cells; the WHO classification permits the diagnosis with fewer than 20% if a defining genetic aberration is present.
-- Auer rods in the blasts; types of blasts may be mixed or hybrid. Promyelocytes with bundles of Auer rods (faggot cells) in APL.
-- Reduced erythroid precursors and megakaryocytes, with dysplasia in the residual cells in some cases (especially secondary AML).
-- Megakaryocytic differentiation is often accompanied by marrow fibrosis from the release of fibrogenic cytokines, which may make the marrow difficult to aspirate (a "dry tap").
-- Cytochemistry: MPO and Sudan black positive; NSE positive in monocytic types. Flow cytometry: CD34, CD117, CD13, CD33 and MPO. Cytogenetics: t(8;21), inv(16), t(15;17), KMT2A rearrangements, or complex karyotypes.
-
+1. **Peripheral blood:** blast count highly variable; may be more than 100,000 per microlitre but under 10,000 in about 50%; occasionally absent (aleukaemic leukaemia). Anaemia, neutropenia and thrombocytopenia are present.
+2. **Bone marrow examination** is essential to exclude acute leukaemia in pancytopenic patients. Generally 20% or more myeloid blasts; the WHO permits the diagnosis with fewer than 20% if a defining genetic aberration is present.
+3. **Blast morphology:** myeloblasts have delicate nuclear chromatin, two to four nucleoli and more cytoplasm than lymphoblasts, with fine peroxidase positive azurophilic granules. **Auer rods** (needle-like azurophilic granules) are present in many cases, particularly numerous in t(15;17). Monoblasts have folded or lobulated nuclei, lack Auer rods and are nonspecific esterase positive.
+4. **Immunophenotyping:** stains for myeloid-specific antigens confirm the diagnosis, since myeloblasts and lymphoblasts are hard to tell apart by morphology; blasts express CD34, CD33 and in part CD15, but not CD64. Megakaryocytic blasts are detected with antibodies such as GPIIb/IIIa.
+5. **Cytogenetics:** abnormalities are detected in 50% to 70% of cases with standard techniques and about 90% with high-resolution banding. Balanced translocations t(8;21), inv(16) and t(15;17) are typical of de novo AML in younger adults; deletions or monosomies of chromosomes 5 and 7 and p53 mutations follow DNA-damaging agents.
+6. **DNA sequencing** detects mutations such as NPM1.
 
 ## Write down the clinical presentation of ALL.
 
-ALL is the most common cancer of childhood, with about 2,500 new cases a year in the United States, most under 15 years; B-ALL peaks at about 3 years, and T-ALL typically presents in adolescent males. It is slightly more frequent in boys. Presentation is abrupt and stormy, with onset within days to a few weeks, and arises from three groups of processes.
-
-**1. Depression of marrow function.** Anaemia: pallor, fatigue, dyspnoea, weakness. Neutropenia: fever from infection, which may be severe. Thrombocytopenia: bleeding—petechiae, ecchymoses, epistaxis, gum bleeding.
-
-**2. Mass effects from neoplastic infiltration**, which are more frequent in ALL than in AML: bone pain and tenderness (sometimes a limp or refusal to walk in a child) resulting from marrow expansion and subperiosteal infiltration; joint pain that may mimic arthritis; generalised lymphadenopathy; splenomegaly and hepatomegaly; testicular enlargement; and, in T-ALL, an anterior mediastinal mass with compression of the great vessels and trachea (superior vena cava syndrome, respiratory distress, cough).
-
-**3. Central nervous system involvement.** Headache, vomiting, cranial nerve (especially facial) palsies and papilloedema from meningeal spread.
-
-Other features include fever of unknown origin, weight loss, skin infiltration, renal enlargement, and features of tumour lysis (hyperuricaemia). Prognosis is worse in infants under 2 years, in adolescents and adults, and when the leukocyte count exceeds 100,000 per µL; favourable features include age between 2 and 10 years, a low leukocyte count, hyperdiploidy and t(12;21).
-
+- **Abrupt, stormy onset** within days to a few weeks of the first symptoms.
+- **Marrow failure**: fatigue from anaemia; fever from infections secondary to neutropenia; bleeding from thrombocytopenia.
+- **Bleeding**: cutaneous petechiae and ecchymoses, serosal haemorrhages, and mucosal haemorrhages into the gingivae and urinary tract. Procoagulants and fibrinolytic factors released by leukaemic cells, especially in AML with t(15;17), make bleeding worse.
+- **Infections**, frequent in the oral cavity, skin, lungs, kidneys, urinary bladder and colon, often caused by opportunists such as fungi, Pseudomonas and commensal organisms.
+- **Mass effects from neoplastic infiltration**, more common in ALL: bone pain, generalised lymphadenopathy, splenomegaly, hepatomegaly, testicular enlargement, and in T-ALL compression of large vessels and airways in the mediastinum.
+- **Central nervous system** manifestations, more common in ALL: headache, vomiting and nerve palsies from meningeal spread.
+- In AML, tumours with monocytic differentiation often infiltrate the skin (leukaemia cutis) and gingiva; AML occasionally presents as a localised soft tissue mass, a myeloid sarcoma.
 
 ## Give the laboratory diagnosis/bone marrow findings of ALL.
 
-**1. Peripheral blood.** Normocytic normochromic anaemia, thrombocytopenia and neutropenia are usual; the leukocyte count may be raised, normal or low, and in some cases is above 100,000 per µL; the smear shows circulating lymphoblasts, as described below.
-
-**2. Bone marrow aspirate and biopsy.** The marrow is hypercellular and packed with lymphoblasts, which replace the normal marrow elements, with 20% or more blasts (usually 50–90%). The tumour cells have scant basophilic cytoplasm and nuclei that are somewhat larger than those of small lymphocytes. The chromatin is delicate and finely stippled, the nucleoli are small and sharply demarcated by a rim of condensed chromatin, and the nuclear membrane is often deeply subdivided, giving a convoluted appearance. The mitotic rate is high, and macrophages ingesting apoptotic tumour cells may give a "starry sky" appearance on the biopsy. Erythroid, granulocytic and megakaryocytic precursors are markedly reduced. FAB L1 blasts are small and uniform, L2 larger and heterogeneous, and L3 have deeply basophilic vacuolated cytoplasm.
-
-**3. Cytochemistry.** Compared with myeloblasts, lymphoblasts have more condensed chromatin, less conspicuous nucleoli, and less cytoplasm, which usually lacks granules. They are **myeloperoxidase negative** and Sudan black negative, and often contain **PAS-positive** cytoplasmic material (coarse block pattern); T-lymphoblasts show focal acid phosphatase positivity.
-
-**4. Immunophenotyping (definitive).** Terminal deoxynucleotidyl transferase (TdT) is positive in most lymphoblasts. B-ALL expresses CD19, CD22, CD79a, cytoplasmic IgM in some, and usually CD10; T-ALL expresses CD3, CD7, CD2, CD5, CD1a, depending on the maturation stage.
-
-**5. Cytogenetics and molecular studies.** About 90% of cases have numerical or structural chromosomal changes: hyperdiploidy (more than 50 chromosomes; favourable), hypodiploidy (unfavourable), t(12;21) ETV6::RUNX1 (favourable), t(9;22) BCR::ABL1 (p190, unfavourable but responsive to tyrosine kinase inhibitors), KMT2A rearrangements (infants, poor), t(1;19), and NOTCH1 mutations in T-ALL. Molecular detection of minimal residual disease after therapy predicts outcome.
-
-**6. Other investigations.** Serum uric acid and LDH; renal and liver function; coagulation profile; chest radiograph for a mediastinal mass; CSF examination for blasts; testicular ultrasound if indicated.
-
+1. **Peripheral blood:** blast count is highly variable; in AML blasts may be more than 100,000 per microlitre but are under 10,000 in about 50% of patients, and occasionally blasts are absent from the blood (aleukaemic leukaemia).
+2. **Bone marrow examination** is essential. The marrow is hypercellular and packed with blasts, generally 20% or more of marrow cells.
+3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods.
+4. **Cytochemistry:** myeloperoxidase positive in myeloblasts; lymphoblasts are myeloperoxidase negative and often contain periodic acid–Schiff positive cytoplasmic material; monoblasts are nonspecific esterase positive.
+5. **Immunophenotyping by flow cytometry**, which confirms the lineage. Terminal deoxynucleotidyl transferase (TdT) is positive in more than 95% of ALL. B-ALL: CD19, CD10, PAX5; T-ALL: CD1, CD2, CD5, CD7. Myeloid blasts: CD34, CD33, CD15 and CD64.
+6. **Cytogenetics and molecular tests:** chromosomal aberrations in 50% to 70% of AML by standard techniques; approximately 90% of ALL have numerical or structural chromosomal changes.
 
 ## Give the blood picture of ALL.
 
-- **Red cells:** normocytic normochromic anaemia, which is often moderate to severe at presentation, with a low reticulocyte count and few nucleated red cells.
-- **White cells:** the total count may be high, normal or low, being greater than 100,000 per µL in a minority and a poor prognostic sign. The differential count shows a large proportion of **lymphoblasts**—cells slightly larger than a small lymphocyte, with a high nuclear-cytoplasmic ratio, scanty basophilic agranular cytoplasm, finely stippled condensed chromatin, small indistinct nucleoli and often a convoluted or cleft nucleus. Blasts may be vacuolated in L3 disease. Auer rods are absent. Residual normal neutrophils are reduced (neutropenia), and there is often a hiatus between blasts and mature cells. Smudge cells may be seen.
-- **Platelets:** thrombocytopenia, commonly marked.
-- **Special:** lymphoblasts are myeloperoxidase negative and PAS positive on cytochemistry, and TdT positive on flow cytometry.
-
-In a minority the count is not raised and blasts are scanty or absent (aleukaemic or subleukaemic ALL), so marrow examination is essential.
-
+1. **Peripheral blood:** blast count is highly variable; in AML blasts may be more than 100,000 per microlitre but are under 10,000 in about 50% of patients, and occasionally blasts are absent from the blood (aleukaemic leukaemia).
+2. **Bone marrow examination** is essential. The marrow is hypercellular and packed with blasts, generally 20% or more of marrow cells.
+3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods.
+4. **Cytochemistry:** myeloperoxidase positive in myeloblasts; lymphoblasts are myeloperoxidase negative and often contain periodic acid–Schiff positive cytoplasmic material; monoblasts are nonspecific esterase positive.
+5. **Immunophenotyping by flow cytometry**, which confirms the lineage. Terminal deoxynucleotidyl transferase (TdT) is positive in more than 95% of ALL. B-ALL: CD19, CD10, PAX5; T-ALL: CD1, CD2, CD5, CD7. Myeloid blasts: CD34, CD33, CD15 and CD64.
+6. **Cytogenetics and molecular tests:** chromosomal aberrations in 50% to 70% of AML by standard techniques; approximately 90% of ALL have numerical or structural chromosomal changes.
 
 ## Write a short note on blast crisis.
 
-**Definition.** Blast crisis (blastic transformation, blast phase) is the terminal acute leukaemia–like phase of chronic myeloid leukaemia (CML) and other myeloproliferative neoplasms, in which immature blasts accumulate in the marrow and blood, usually to 20% or more of the cells, and the disease behaves like an acute leukaemia that is resistant to therapy.
-
-**Natural history of CML.** CML begins in a chronic phase lasting a few years in which cells mature normally. After an average of about 3 years without treatment, roughly 50% of patients enter an **accelerated phase** marked by increasing anaemia and thrombocytopenia, sometimes with a rise in the number of basophils, and by new clonal cytogenetic abnormalities. Within 6 to 12 months this terminates in blast crisis. In the other 50% of patients blast crisis occurs abruptly, without an accelerated phase.
-
-**Cells and pathogenesis.** In about 70% of crises the blasts are of myeloid origin (myeloid blast crisis) and in most of the remainder pre-B lymphoblasts (lymphoid blast crisis); this is taken as evidence that CML arises in a pluripotent stem cell with myeloid and lymphoid potential. Additional genetic lesions accumulate on the background of the BCR::ABL1 fusion, such as trisomy 8, isochromosome 17q (with TP53 loss), duplication of the Philadelphia chromosome, and mutations of RUNX1, ASXL1 and other genes. In 85% of cases of lymphoid blast crisis there are mutations that interfere with the activity of Ikaros (IKZF1), a transcription factor regulating differentiation of haematopoietic progenitors; the same type of mutation is found in BCR-ABL–positive B-ALL. These changes block differentiation and enhance self-renewal.
-
-**Features.** Rapid enlargement of the spleen, fever, weight loss, bone pain, lymphadenopathy, increasing anaemia and thrombocytopenia (or paradoxical thrombocytosis), leukocytosis with 20% or more blasts in blood or marrow (or extramedullary blast proliferation, such as myeloid sarcoma), and increasing basophilia. The picture is that of acute leukaemia, and the blasts may be confirmed by cytochemistry and flow cytometry as myeloid (MPO-positive, CD13, CD33, CD34), lymphoid (TdT, CD10, CD19) or mixed.
-
-**Treatment and prognosis.** Blast crisis is refractory to therapy, and the median survival is only a few months (3 to 6 months for myeloid crisis). Tyrosine kinase inhibitors have reduced its incidence markedly by controlling the proliferative drive in the chronic phase, but the other major threat is resistance to first-generation BCR-ABL inhibitors, due in about half of cases to mutations in BCR::ABL1. Lymphoid blast crisis responds better to induction chemotherapy plus a tyrosine kinase inhibitor, and allogeneic stem cell transplantation is offered when possible. Polycythaemia vera (about 2%) and primary myelofibrosis (5–20%) may likewise transform to AML, as may essential thrombocythaemia uncommonly, whereas transformation to ALL is rare.
-
+- Blast crisis is the terminal event in CML, a picture resembling **acute leukaemia**.
+- About 50% of patients first enter an **accelerated phase** after a variable period averaging 3 years, with increasing anaemia and thrombocytopenia, sometimes a rise in basophils, and new cytogenetic abnormalities such as trisomy 8, isochromosome 17q or duplication of the Ph chromosome. Within 6 to 12 months this ends in blast crisis.
+- In the other 50%, blast crisis occurs abruptly without an accelerated phase.
+- In 70% of crises the blasts are myeloid (**myeloid blast crisis**); in most of the remainder they are of pre-B cell origin (**lymphoid blast crisis**). This is evidence that CML originates from a pluripotent stem cell with both myeloid and lymphoid potential.
+- In lymphoid blast crisis, 85% of cases have mutations that interfere with Ikaros, a transcription factor encoded by IKZF1.
 
 ## How will you differentiate myeloblast from lymphoblast?
 
@@ -6919,50 +6842,32 @@ In the chronic phase the BCR::ABL1 kinase drives proliferation but does not prev
 
 ## Define chronic leukaemia.
 
-Chronic leukaemia is a clonal neoplasm of haematopoietic cells in which the leukaemic cells retain the capacity to differentiate and are relatively mature, in contrast to acute leukaemia in which immature blasts accumulate. It has an insidious onset and a slowly progressive course, often with a long period of survival measured in years, and typically presents with leukocytosis, splenomegaly, mild anaemia and constitutional symptoms; many patients are asymptomatic and the disease is discovered on a routine blood count.
-
-The principal types are **chronic myeloid leukaemia (CML)**, a myeloproliferative neoplasm arising in a pluripotent stem cell and characterised by the Philadelphia chromosome and the BCR::ABL1 fusion gene, and **chronic lymphocytic leukaemia (CLL)**, a neoplasm of mature B cells defined by sustained monoclonal lymphocytosis of more than 5,000 per µL, with a median survival of about 10 years. Rarer forms include hairy cell leukaemia, prolymphocytic leukaemia, large granular lymphocytic leukaemia, chronic neutrophilic leukaemia and chronic eosinophilic leukaemia. Chronic leukaemias may transform to an aggressive acute phase: CML into blast crisis, and CLL into diffuse large B-cell lymphoma (Richter syndrome).
-
+**Leukaemias** are neoplasms that present with widespread involvement of the bone marrow and, usually but not always, the peripheral blood. The chronic leukaemias are **chronic lymphocytic leukaemia**, a B-cell neoplasm, and **chronic myeloid leukaemia**, a myeloproliferative neoplasm distinguished by the BCR::ABL gene.
 
 ## Give the clinical manifestations of chronic granulocytic leukaemia.
 
-Chronic granulocytic (myeloid) leukaemia is primarily a disease of adults, with a peak incidence in the fifth to sixth decades (about 4,800 new cases per year in the United States), though it also occurs in children and adolescents. The onset is insidious.
-
-**Symptoms of anaemia and hypermetabolism.** Mild to moderate anaemia and the hypermetabolic state resulting from increased cell turnover lead to fatigability, weakness, weight loss, anorexia, night sweats and heat intolerance.
-
-**Splenomegaly.** The spleen is enlarged in most patients, often massively, owing to extramedullary haematopoiesis, which causes a dragging sensation or fullness in the left upper abdomen and early satiety; the first symptom may be acute left upper quadrant pain from splenic infarction, sometimes with a friction rub. Mild hepatomegaly and, less often, lymphadenopathy may occur.
-
-**Other features.** Bleeding or bruising from abnormal platelet function; gouty arthritis and renal stones from hyperuricaemia; priapism and leukostasis (visual disturbance, tinnitus, dyspnoea, confusion) with very high white counts; occasionally an incidental discovery on a blood count.
-
-**Course.** Without treatment the median survival is about 3 years. After an average of about 3 years in the chronic phase, about 50% of patients enter an accelerated phase with increasing anaemia, thrombocytopenia and basophilia, and within 6 to 12 months this terminates in blast crisis, with the clinical picture of acute leukaemia; in the other half blast crisis occurs abruptly. With BCR-ABL tyrosine kinase inhibitors, more than 90% of patients achieve sustained haematologic remission, with a much lower risk of progression.
-
+- **Insidious onset**, mainly in adults, with peak incidence in the fifth and sixth decades.
+- Mild to moderate anaemia and hypermetabolism from increased cell turnover cause fatigability, weakness, weight loss and anorexia.
+- Dragging sensation in the abdomen from **splenomegaly**, or sudden left upper quadrant pain from splenic infarction.
+- Mild hepatomegaly and lymphadenopathy from extramedullary haematopoiesis.
+- Slow progression; untreated median survival about 3 years.
+- **Accelerated phase** in about 50%, after an average of 3 years: increasing anaemia and thrombocytopenia, sometimes more basophils, and new cytogenetic abnormalities.
+- **Blast crisis** within 6 to 12 months, resembling acute leukaemia; in the other 50% it occurs abruptly.
 
 ## Give the laboratory diagnosis (blood/bone marrow) of chronic myeloid leukaemia.
 
-CML is best differentiated from other myeloproliferative neoplasms by detection of the BCR::ABL1 fusion gene through chromosomal analysis or PCR-based tests; the laboratory evaluation comprises the following.
-
-**1. Peripheral blood**
-
-- Leukocytosis, often exceeding 100,000 per µL, consisting predominantly of neutrophils, band forms, metamyelocytes and myelocytes, with the entire spectrum of myeloid maturation represented and peaks at the myelocyte and segmented neutrophil stages; eosinophils and basophils are increased (absolute basophilia is characteristic and increases in the accelerated phase). Blasts usually make up less than 10% of the circulating cells.
-- Platelets are usually increased, sometimes markedly; they may be large or dysfunctional; thrombocytopenia suggests progression.
-- Red cells: mild to moderate normocytic normochromic anaemia; a few nucleated red cells.
-- Leukocyte alkaline phosphatase (LAP) score is low or absent, which distinguishes CML from leukaemoid reaction and from other myeloproliferative neoplasms (in which it is normal or raised).
-
-**2. Bone marrow**
-
-- Markedly hypercellular, with almost complete replacement of fat, owing to massively increased numbers of maturing granulocytic precursors, which usually include an elevated proportion of eosinophils and basophils; the myeloid to erythroid ratio is markedly increased, from 3:1 to 10:1 or more.
-- Megakaryocytes are increased and usually include small, hypolobated, dysplastic ("dwarf") forms; erythroid progenitors are normal or mildly decreased.
-- Scattered macrophages with abundant wrinkled, green-blue cytoplasm (**sea-blue histiocytes**, or Gaucher-like cells) are a characteristic finding.
-- Increased reticulin deposition is typical, but overt marrow fibrosis is rare. The proportion of blasts defines progression (below 10% chronic; blast crisis at 20% or more).
-
-**3. Cytogenetic and molecular diagnosis (confirmatory)**
-
-- Cytogenetics demonstrates the **Philadelphia chromosome t(9;22)(q34;q11)** in more than 90% of cases. In the remainder, cryptic or complex rearrangements are detected by FISH or RT-PCR. Quantitative RT-PCR for BCR::ABL1 transcripts is used to monitor response, and sequencing of the kinase domain identifies resistance mutations.
-
-**4. Other findings**
-
-- Spleen enlargement with extramedullary haematopoiesis and infarcts; serum uric acid, LDH and vitamin B₁₂ raised; basophil histamine release.
-
+1. **Peripheral blood**
+   - Leukocytosis, often exceeding 100,000 per microlitre, of neutrophils, band forms, metamyelocytes, myelocytes, eosinophils and basophils.
+   - Blasts usually less than 10% of circulating cells.
+   - Platelets usually increased, sometimes markedly.
+   - Mild to moderate anaemia.
+2. **Bone marrow**
+   - Markedly hypercellular, with massively increased maturing granulocytic precursors, usually with a raised proportion of eosinophils and basophils.
+   - Megakaryocytes increased, usually small and dysplastic.
+   - Erythroid progenitors normal or mildly decreased.
+   - Scattered **sea-blue histiocytes** (macrophages with abundant wrinkled green-blue cytoplasm).
+   - Increased reticulin; overt fibrosis is rare.
+3. **Molecular and cytogenetic tests:** the BCR::ABL fusion gene, with the Philadelphia chromosome t(9;22), detected by chromosomal analysis, FISH or PCR-based tests; this differentiates CML from other myeloproliferative neoplasms.
 
 ## Laboratory diagnosis of CLL.
 
@@ -7037,31 +6942,17 @@ In the first four the Reed-Sternberg cells have a similar distinctive immunophen
 
 ## A 20y male has multiple painless cervical/axillary lymph nodes. What is your provisional diagnosis?
 
-The provisional diagnosis is a **lymphoma, most likely Hodgkin lymphoma (nodular sclerosis type)**.
+**Provisional diagnosis: lymphoma, most probably Hodgkin lymphoma.**
 
-**Reasoning.** Hodgkin lymphoma shows a peak incidence in young adults, and virtually all cases present as painless, enlarged, rubbery, nontender lymph nodes, most often in the cervical (lower cervical and supraclavicular) region, with axillary involvement common; it tends to begin in a single node or chain and spread to contiguous groups. The nodular sclerosis subtype, which is the commonest (65–70%), characteristically involves the lower cervical, supraclavicular and mediastinal nodes of adolescents and young adults. Patients of this type are often free of systemic manifestations, but may have fever, drenching night sweats, weight loss and pruritus, which, if present, define stage B.
-
-**Differential diagnosis.**
-
-1. Non-Hodgkin lymphoma (follicular lymphoma, lymphoblastic lymphoma, Burkitt and diffuse large B-cell lymphoma, anaplastic large-cell lymphoma), which can have a similar presentation but more often involve multiple peripheral and extranodal sites and is noncontiguous.
-2. Tuberculous lymphadenitis, which is common in our setting and may present with firm matted nodes, fever and night sweats.
-3. Infectious mononucleosis, cytomegalovirus, toxoplasmosis and HIV lymphadenopathy.
-4. Acute lymphoblastic leukaemia and metastatic carcinoma (rare at this age).
-
-The diagnosis is established by excision biopsy of a node showing Reed-Sternberg cells and variants in a reactive background with CD15⁺ and CD30⁺ immunophenotype.
-
+- Lymphomas most commonly present as painless lymphadenopathy.
+- Hodgkin lymphoma has a peak in young adults and arises in a single node or chain of nodes; cervical and axillary nodes are commonly involved.
 
 ## Same: what tests can you do on the lymph nodes?
 
-The tests on the lymph nodes are directed toward obtaining a tissue diagnosis, identifying the lineage and subtype of any lymphoma, and excluding mimics such as tuberculosis.
-
-1. **Fine-needle aspiration cytology (FNAC).** A rapid screening test, which may show Reed-Sternberg cells with a mixed inflammatory background (lymphocytes, eosinophils, plasma cells), caseating granulomas and epithelioid cells (with acid-fast bacilli on Ziehl–Neelsen stain) in tuberculosis, or metastatic carcinoma cells. It is inadequate for definitive diagnosis and subclassification of lymphoma, since the nodal architecture is not evident.
-2. **Excision biopsy of an entire intact node (the diagnostic procedure of choice).** Histology with H&E stain shows effacement of the nodal architecture, the Reed-Sternberg cells and variants (diagnostic cells, mononuclear, lacunar), the cellular background (lymphocytes, eosinophils, plasma cells, macrophages), fibrous bands (nodular sclerosis) and necrosis.
-3. **Special stains.** Ziehl–Neelsen for acid-fast bacilli; reticulin and PAS where indicated.
-4. **Immunohistochemistry.** Classic Hodgkin lymphoma: CD15⁺, CD30⁺, PAX5 weakly positive, CD45⁻, CD20 negative or variable, with EBV-encoded RNA (EBER) or LMP1 in a proportion. Nodular lymphocyte predominant type: CD20⁺, BCL6⁺, CD45⁺, CD15⁻, CD30⁻. Immunostains for CD3, CD20 and other markers help to exclude non-Hodgkin lymphoma and anaplastic large-cell lymphoma (CD30⁺, ALK⁺, EMA⁺).
-5. **Flow cytometry, cytogenetic and molecular tests** if non-Hodgkin lymphoma is suspected: monoclonality of immunoglobulin or T-cell receptor genes and specific translocations.
-6. **Staging tests.** Complete blood count, ESR, LDH, liver and renal function; chest radiograph; CT or PET-CT of the neck, chest, abdomen and pelvis; bone marrow biopsy; and HIV serology.
-
+1. **Excision biopsy with histological examination** of a node: the diagnosis of Hodgkin lymphoma depends on Reed-Sternberg cells in a background of nonneoplastic inflammatory cells.
+2. **Immunohistochemistry:** Reed-Sternberg cells of classic types are positive for PAX5, CD15 and CD30 and negative for CD45.
+3. **Antigen receptor gene rearrangement** studies, to separate monoclonal from polyclonal proliferations.
+4. **Staging:** imaging of the chest, abdomen and pelvis, and bone marrow biopsy.
 
 ## Give the WHO classification of Hodgkin lymphoma.
 
@@ -7517,54 +7408,43 @@ Essential thrombocythaemia is a myeloproliferative neoplasm characterised by a s
 
 ## What do you mean by sub-leukaemic leukaemia (marrow picture)?
 
-**Meaning.** Subleukaemic leukaemia is a form of leukaemia, usually acute, in which the total leukocyte count in the peripheral blood is normal or only slightly increased (or low) and blasts are few or absent in the blood, whereas the bone marrow is heavily infiltrated by leukaemic cells. When the leukocyte count is low and no blasts are seen, the term aleukaemic leukaemia is used. In acute myeloid leukaemia the number of blasts in the blood is variable; blasts are under 10,000/µL in about 50% of patients and occasionally absent altogether, which is why a marrow examination is essential to exclude acute leukaemia in a pancytopenic patient.
+**Subleukaemic leukaemia** is a leukaemia with abnormal white cells in the peripheral blood in which the total white cell count is normal.
 
-**Peripheral blood.** Pancytopenia or bicytopenia, with anaemia, thrombocytopenia and neutropenia; very few or no blasts; normal or slightly raised total count; the peripheral smear may be misleading.
-
-**Marrow picture (diagnostic).**
-
-- The marrow is **hypercellular** (occasionally normocellular), with replacement of the normal fat and haematopoietic elements by **blasts that constitute 20% or more** of nucleated cells (WHO), or fewer if a defining genetic abnormality is present.
-- Residual erythroid, granulocytic and megakaryocytic cells are markedly reduced, and may show dysplasia.
-- The blasts are identified by cytochemistry (myeloperoxidase, Sudan black positive in myeloblasts; PAS positive in lymphoblasts) and immunophenotyping; Auer rods suggest AML.
-- The biopsy confirms hypercellularity with sheets of blasts and shows fibrosis if present (an aspiration "dry tap" may occur in AML with megakaryocytic differentiation and in hairy cell leukaemia).
-- Cytogenetics and molecular studies identify the type and prognosis.
-
-The importance of recognising the entity is that, without a marrow examination, the pancytopenia may be misdiagnosed as aplastic anaemia, myelodysplasia or megaloblastic anaemia.
-
+In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone marrow examination is essential to exclude acute leukaemia in pancytopenic patients.
 
 ## How will you differentiate sub-leukaemic leukaemia from aplastic anemia?
 
-Both conditions present with pancytopenia (anaemia, neutropenia and thrombocytopenia) and may have a "normal" leukocyte count with no blasts in the blood, and therefore cannot be separated by the peripheral smear alone; the distinction depends on the bone marrow examination, particularly the trephine biopsy.
-
-| Feature | Subleukaemic leukaemia | Aplastic anaemia |
+| Feature | Subleukaemic or aleukaemic leukaemia | Aplastic anaemia |
 |---|---|---|
-| **Nature** | Clonal neoplasm of haematopoietic progenitors | Marrow failure from stem cell injury (often immune-mediated; drugs, viruses, idiopathic) |
-| **Clinical findings** | Pallor, fever, bleeding, **bone pain, lymphadenopathy, hepatosplenomegaly** | Pallor, fever, bleeding; **no organomegaly** and no lymphadenopathy |
-| **Peripheral blood** | Pancytopenia with few or occasional blasts; hiatus leukaemicus | Pancytopenia without blasts or abnormal cells |
-| **Bone marrow aspirate** | Hypercellular with **20% or more blasts** | Hypocellular, with fatty replacement, scanty haematopoietic cells, relative lymphocyte, plasma cell and stromal cell predominance; no blasts |
-| **Trephine biopsy** | Packed marrow, loss of fat spaces, infiltration by blasts | Markedly hypocellular, with the proportion of fat greatly increased |
-| **Cytochemistry / flow cytometry** | MPO, SBB, TdT or myeloid/lymphoid markers positive | No blast population |
-| **Cytogenetics** | Clonal abnormalities (t(8;21), t(15;17), etc.) | Normal karyotype |
-| **LDH and uric acid** | Raised | Normal |
-| **Spleen** | Enlarged (often) | Not enlarged |
-| **Treatment and prognosis** | Chemotherapy, transplant | Immunosuppression, transplant; supportive care |
-
-The aspirate in aplastic anaemia is typically dilute and haemodilute, and the trephine biopsy settles the question, since the proportion of fat is greatly increased in hypoplastic states, whereas fat cells are largely replaced when the marrow is infiltrated by haematopoietic tumours.
-
+| Bone marrow | Hypercellular, packed with blasts, generally 20% or more | Markedly hypocellular, largely devoid of haematopoietic cells; fat cells, fibrous stroma and scattered lymphocytes and plasma cells remain |
+| Marrow aspirate | Cells yielded, showing blasts | Often yields little material (dry tap); aplasia best seen on biopsy |
+| Blood | Abnormal white cells present with a normal total count; in aleukaemic leukaemia blasts are absent; pancytopenia may be present | Pancytopenia inevitably; reticulocytopenia; red cells usually slightly macrocytic and normochromic |
+| Diagnosis | Bone marrow examination is essential to exclude acute leukaemia in pancytopenic patients | Rests on bone marrow biopsy |
 
 ## Write a short note on polycythaemia rubra vera.
 
-**Definition.** Polycythaemia rubra vera (polycythaemia vera, PV) is a clonal myeloproliferative neoplasm characterised by increased marrow production of red cells, granulocytes and platelets (panmyelosis), though it is the increase in red cells (polycythaemia) that is responsible for most of the clinical symptoms. It must be differentiated from relative polycythaemia due to haemoconcentration and from other causes of absolute polycythaemia.
+**Definition:** polycythaemia vera (PCV) is a myeloproliferative neoplasm with increased marrow production of red cells, granulocytes and platelets (panmyelosis); the increase in red cells causes most of the symptoms.
 
-**Pathogenesis.** The transformed progenitor cells have markedly decreased requirements for erythropoietin and other growth factors because of activating mutations in the tyrosine kinase JAK2, which lies downstream of the erythropoietin, thrombopoietin and G-CSF receptors. More than 97% of cases have the JAK2 V617F mutation (valine to phenylalanine at residue 617); the rest have other JAK2 mutations such as those in exon 12. In 25% to 30% the tumour cells have two mutated copies of JAK2, associated with higher white counts, greater splenomegaly, pruritus and progression to the spent phase. Because the pathway is constitutively active, **serum erythropoietin levels are low**, in contrast to secondary polycythaemia. Elevated haematocrit causes hyperviscosity and sludging, and together with thrombocytosis and abnormal platelet function predisposes to both thrombosis and bleeding.
+**Pathogenesis**
 
-**Morphology.** The marrow is hypercellular with residual fat; red cell, granulocyte and megakaryocyte precursors are increased. Reticulin fibres are moderately to markedly increased in about 10% of marrows at diagnosis. Mild organomegaly early, from congestion. The blood often contains increased basophils and abnormally large platelets. Late in the course, a **spent phase** with extensive marrow fibrosis, massive splenomegaly and extramedullary haematopoiesis occurs in 15–20% after an average of 10 years. Transformation to AML occurs in about 2%.
+- Activating mutations of the tyrosine kinase ***JAK2***; more than 97% have the valine-to-phenylalanine substitution at residue 617.
+- Progenitors have markedly decreased requirements for erythropoietin, so serum erythropoietin is **low**; in secondary polycythaemia it is high.
+- Raised haematocrit increases blood viscosity and sludging; with thrombocytosis and abnormal platelet function this predisposes to thrombosis and bleeding.
 
-**Clinical features.** Insidious onset in adults of late middle age (1–3 per 100,000 a year). Plethora and cyanosis, headache, dizziness, hypertension, gastrointestinal symptoms, intense pruritus and peptic ulceration (histamine from basophils), and hyperuricaemia with gout in 5–10%. About 25% present with thrombosis (deep vein thrombosis, myocardial infarction, stroke, Budd-Chiari syndrome, mesenteric thrombosis); haemorrhage in 5–10% is life-threatening.
+**Morphology**
 
-**Laboratory findings.** Haemoglobin above 16 g/dL, often haematocrit above 55%; white cell count 12,000–50,000/µL; platelets often above 500,000/µL with giant forms and defective aggregation; low erythropoietin; JAK2 mutation. Iron deficiency from chronic bleeding can lower the haematocrit into the normal range, masking the disease.
+- Hypercellular marrow with some residual fat; subtle increase in red cell progenitors, with more granulocytic precursors and megakaryocytes; increased reticulin in about 10%.
+- Blood: increased basophils and abnormally large platelets.
+- Mild organomegaly from congestion.
 
-**Treatment and prognosis.** Untreated, death from bleeding or thrombosis occurs within months. Maintaining the haematocrit at nearly normal levels by phlebotomy with low-dose aspirin extends median survival to about 10 years; cytoreduction (hydroxyurea) in high-risk patients; JAK2 inhibitors (ruxolitinib) for the spent phase.
+**Clinical features and complications**
+
+- Insidious onset in late middle age; plethora and cyanosis; headache, dizziness, hypertension.
+- Intense pruritus and peptic ulceration, possibly from histamine released by basophils.
+- Hyperuricaemia, with secondary gout in 5% to 10%.
+- **Thrombosis** and **bleeding.**
+- **Spent phase** with marrow fibrosis and extramedullary haematopoiesis in the spleen and liver; transformation to acute myeloid leukaemia in about 1%.
+- Untreated, death from bleeding or thrombosis occurs within months of diagnosis.
 
 ## Causes of hypersplenism.
 
@@ -7624,41 +7504,25 @@ Splenomegaly is the major manifestation of splenic disorders, which are only rar
 
 ## 40-year-old man with massive splenomegaly and total WBC count 2,50,000/cu.mm — Diagnosis?
 
-This is most probably chronic myeloid leukaemia in the chronic phase, and I would confirm it by peripheral smear, marrow examination and demonstration of the Philadelphia chromosome or BCR::ABL1 fusion gene.
+**Diagnosis: chronic myeloid leukaemia (CML).**
 
-**Reasoning.** A middle-aged adult (peak incidence in the fifth to sixth decades) with a very high white cell count, well above 100,000/µL, and **massive splenomegaly** from extensive extramedullary haematopoiesis, is the typical presentation of CML. The onset is insidious, with fatigue, weight loss, anorexia and a dragging sensation in the left upper quadrant, and occasionally acute pain from splenic infarction.
-
-**Confirmation.**
-
-1. **Peripheral smear:** neutrophils, bands, metamyelocytes and myelocytes (the full spectrum of granulocytic maturation), basophilia and eosinophilia, blasts below 10%; platelets often increased; mild anaemia.
-2. **Leukocyte alkaline phosphatase score:** low or absent.
-3. **Bone marrow:** markedly hypercellular with granulocytic hyperplasia, increased megakaryocytes (small, hypolobated), sea-blue histiocytes.
-4. **Cytogenetic and molecular tests:** Philadelphia chromosome t(9;22)(q34;q11), or BCR::ABL1 by FISH or RT-PCR.
-5. **Other:** uric acid, LDH, vitamin B₁₂ raised; blasts and basophils to define phase.
-
-**Differential diagnosis.** Leukaemoid reaction (high LAP, toxic changes, no basophilia, no massive splenomegaly, Ph negative); primary myelofibrosis (leukoerythroblastosis, teardrop cells, fibrotic marrow, lower WBC); chronic neutrophilic leukaemia, chronic myelomonocytic leukaemia, chronic lymphocytic leukaemia (lymphocytes), hairy cell leukaemia (pancytopenia), and the other BCR::ABL1-negative myeloproliferative neoplasms.
-
-**Management note.** With a count of 250,000/µL there is a risk of leukostasis and tumour lysis; hydration, allopurinol and cytoreduction are needed, and BCR-ABL tyrosine kinase inhibitors induce sustained haematologic remission in over 90% of patients and reduce the risk of progression to blast crisis.
-
+- Massive splenomegaly from extramedullary haematopoiesis, with a white cell count above 100,000 per microlitre, in an adult.
+- Blood: neutrophils, band forms, metamyelocytes, myelocytes, eosinophils and basophils; blasts usually less than 10%; platelets often increased.
+- Confirmed by detection of the **BCR::ABL fusion gene** (Philadelphia chromosome, t(9;22)) by chromosomal analysis or PCR-based tests; this separates CML from other myeloproliferative neoplasms.
 
 ## 10-year-old boy with weakness, fever, joint pain and gum bleeding — Clinical diagnosis? Expected PBF findings?
 
-This is most likely acute leukaemia—acute lymphoblastic leukaemia being the commonest in a child—and the peripheral blood film would show anaemia, thrombocytopenia and circulating blasts.
+**Clinical diagnosis: acute leukaemia**, most probably acute lymphoblastic leukaemia (ALL), the most common cancer of children.
 
-**Clinical diagnosis.** The combination of weakness (anaemia), fever (neutropenia with infection, or the disease itself), joint and bone pain (marrow expansion and subperiosteal infiltration by leukaemic cells) and gum bleeding (thrombocytopenia) in a child suggests **acute leukaemia**: the stormy onset over days to weeks, the marrow failure triad and the bone pain are characteristic. ALL is the most common cancer of children and is more likely (peak at about 3 years, with a second adolescent peak for T-ALL), but AML can present identically; prominent **gum hypertrophy** and bleeding would suggest AML with monocytic differentiation. Other features sought are lymphadenopathy, hepatosplenomegaly, testicular enlargement, mediastinal mass and CNS signs.
+- Weakness from anaemia; fever from infections secondary to neutropenia; gum bleeding from thrombocytopenia; joint and bone pain from marrow expansion and infiltration of the subperiosteum.
 
-**Expected peripheral blood findings.**
+**Expected peripheral blood film findings**
 
-- **Normocytic normochromic anaemia**, with a low reticulocyte count.
-- **Thrombocytopenia**, often severe.
-- **White cell count** variable: raised in most, but normal or low in some; neutropenia.
-- **Blasts** in the smear: in ALL, lymphoblasts of high nuclear-cytoplasmic ratio, condensed finely stippled chromatin, small nucleoli and scant agranular cytoplasm; in AML, myeloblasts with delicate chromatin, prominent nucleoli, fine granules and **Auer rods**.
-- **Hiatus leukaemicus** (blasts and mature cells without intermediate stages); smudge cells may be present.
+- Anaemia, neutropenia and thrombocytopenia.
+- Blast count highly variable; blasts may be absent from the blood (aleukaemic leukaemia).
+- Lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm.
 
-**Confirmation.** Bone marrow aspiration and biopsy showing 20% or more blasts; cytochemistry (MPO negative and PAS positive in ALL); flow cytometry (TdT, CD19, CD10, CD3); cytogenetics; CSF examination.
-
-**Differential diagnosis.** Aplastic anaemia (no blasts, hypocellular marrow); idiopathic thrombocytopenic purpura (isolated thrombocytopenia); juvenile idiopathic arthritis and rheumatic fever (joint pain, but normal blood counts and no marrow failure); infectious mononucleosis (atypical lymphocytes); scurvy (gum bleeding and bone pain).
-
+Bone marrow examination is essential to confirm the diagnosis.
 
 ## What is haemopoiesis?
 
