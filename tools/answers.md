@@ -14077,3 +14077,324 @@ In all of these situations, cells undergo apoptosis because they are deprived of
 | Morphology | Fine white granules or clumps, gritty; basophilic, amorphous and granular on H&E | Resembles dystrophic calcification; noncrystalline amorphous deposits or hydroxyapatite crystals |
 | Clinical effect | Often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis | Usually no clinical dysfunction; massive lung involvement causes respiratory compromise and massive kidney deposits (nephrocalcinosis) may cause renal damage |
 
+## What is granulopoiesis?
+
+**Granulopoiesis** is the stepwise development of neutrophils in the bone marrow, in which granulocyte-monocyte progenitor cells pass through successive stages to become mature neutrophils.
+
+## Stages of the granulocytic series.
+
+1. **Myeloblast:** the earliest precursor recognisable by morphology; delicate nuclear chromatin, two to four nucleoli, and fine azurophilic granules in the cytoplasm.
+2. **Promyelocyte:** larger cell with more basophilic cytoplasm and coarse **primary (azurophilic) granules**; round or oval nucleus with one or two nucleoli.
+3. **Myelocyte:** **specific (secondary) granules** start to form; this is the stage at which the cell becomes a neutrophilic, eosinophilic or basophilic myelocyte.
+4. **Metamyelocyte:** specific granules are fully present; the nucleus is indented.
+5. **Band form:** the last stage before the mature cell; the nucleus is band shaped.
+6. **Segmented neutrophil:** mature cell; the nucleus has three to five lobes.
+
+As the cell matures, the nuclear to cytoplasmic ratio falls, granule production increases and the nucleus becomes more segmented. Eosinophils and basophils pass through the same stages, named eosinophilic or basophilic before the stage, for example eosinophilic metamyelocyte.
+
+## What do you mean by leucocytosis?
+
+**Leukocytosis** refers to an increase in the number of white cells in the blood. It is a common reaction to a variety of inflammatory states.
+
+## Causes of neutrophilia.
+
+**Causes of neutrophilic leukocytosis**
+
+- **Acute bacterial infections**, especially those caused by pyogenic organisms.
+- **Sterile inflammation** caused by tissue necrosis, for example myocardial infarction and burns.
+- **Chronic infection or inflammation.**
+- **Paraneoplastic**, for example Hodgkin lymphoma.
+- **Myeloproliferative neoplasms**, for example chronic myeloid leukaemia.
+
+**Mechanisms**
+
+- Increased release from marrow stores: in acute inflammation, such as infection, there is a rapid increase in the egress of mature granulocytes from the bone marrow pool, mediated through tumour necrosis factor (TNF) and interleukin-1 (IL-1).
+- Increased marrow production: in prolonged infection or inflammation, IL-1, TNF and other mediators stimulate macrophages, marrow stromal cells and T cells to produce more haematopoietic growth factors; these increase proliferation and differentiation of committed granulocytic progenitors and sustain neutrophil production over several days. Granulocyte colony-stimulating factor (G-CSF) induces neutrophilia.
+- Chronic infection or inflammation and paraneoplastic causes are growth factor dependent; myeloproliferative neoplasms are growth factor independent.
+
+## Causes of eosinophilia.
+
+- **Allergic disorders**, such as asthma and hay fever.
+- **Parasitic infestations.**
+- **Drug reactions.**
+- **Certain malignancies**, for example Hodgkin lymphoma and some non-Hodgkin lymphomas.
+- **Autoimmune disorders**, for example pemphigus and dermatitis herpetiformis, and some vasculitides.
+- **Atheroembolic disease** (transient).
+
+## What is Loeffler syndrome?
+
+**Löffler syndrome** (a self-limited eosinophilic pneumonitis) is a form of secondary eosinophilia caused by invasive infection of the alveoli by the larvae of Ascaris, hookworm or Strongyloides helminth species. It presents with dry cough, dyspnoea and fever.
+
+## Define lymphocytosis.
+
+**Lymphocytosis** is an increase in the number of lymphocytes in the blood, one of the five principal types of leukocytosis.
+
+## What are the causes of lymphocytosis?
+
+**Reactive**
+
+- Disorders associated with chronic immunologic stimulation, where it accompanies monocytosis, for example tuberculosis and brucellosis.
+- Viral infections, for example hepatitis A, cytomegalovirus and Epstein-Barr virus.
+- Bordetella pertussis infection.
+- Acute viral infections, particularly in children, which cause large numbers of activated lymphocytes that resemble neoplastic lymphoid cells.
+
+**Neoplastic**
+
+- Chronic lymphocytic leukaemia, in which the absolute lymphocyte count is more than 5000 per cubic millimetre.
+- Monoclonal lymphocytosis of uncertain significance, a precursor lesion with about a 1% risk per year of progressing to chronic lymphocytic leukaemia.
+- T-cell and NK-cell large granular lymphocytic leukaemia, which usually presents with mild-to-moderate lymphocytosis and splenomegaly.
+
+## Write a short note on leukopenia.
+
+**Definition:** leukopenia is a decrease in the number of circulating white cells.
+
+**Aetiology and pathogenesis**
+
+- A low white cell count most commonly results from reduced numbers of **neutrophils** (neutropenia, granulocytopenia).
+- **Lymphopenia** is less common. Causes are congenital immunodeficiency diseases, advanced HIV infection, therapy with glucocorticoids or cytotoxic drugs, autoimmune disorders, malnutrition and certain acute viral infections.
+- In acute viral infections, lymphopenia stems from lymphocyte redistribution rather than a decrease in the number of lymphocytes in the body. Type I interferons activate T lymphocytes and change the surface proteins that regulate T-cell migration, so activated T cells are sequestered in lymph nodes and adhere more to vascular endothelium.
+- An enlarged spleen may trap white cells and induce leukopenia.
+
+**Clinical features and complications**
+
+- Granulocytopenia is more common and is often associated with diminished granulocyte function.
+- Its consequences are the infections of neutropenia and agranulocytosis.
+
+## Write a short note on neutropenia.
+
+**Definition:** neutropenia is a reduction in the number of neutrophils in the blood. **Agranulocytosis** is a marked reduction in neutrophils, usually less than 100 per microlitre.
+
+**Aetiology and pathogenesis**
+
+1. **Inadequate or ineffective granulopoiesis**
+   - Suppression of haematopoietic stem cells, as in aplastic anaemia and infiltrative marrow disorders (tumours, granulomatous disease); granulocytopenia is then accompanied by anaemia and thrombocytopenia.
+   - Suppression of committed granulocytic precursors by certain drugs.
+   - Ineffective haematopoiesis, as in megaloblastic anaemia and myelodysplastic neoplasms, in which defective precursors die in the marrow.
+   - Rare congenital conditions, such as severe congenital neutropenia (Kostmann syndrome), in which inherited gene defects impair granulocytic differentiation.
+2. **Increased destruction or sequestration of neutrophils**
+   - Immune mediated injury, which can be idiopathic, associated with a defined immunologic disorder such as systemic lupus erythematosus, or caused by drugs.
+   - Splenomegaly, with sequestration and destruction of neutrophils by increased numbers of splenic macrophages.
+   - Increased peripheral utilisation, in overwhelming bacterial, fungal or rickettsial infections.
+
+**Morphology**
+
+- Marrow is hypercellular when neutrophils are destroyed in the periphery or granulopoiesis is ineffective, because of a compensatory increase in granulocytic precursors.
+- Marrow is hypocellular when agranulocytosis is caused by agents that suppress or destroy granulocyte precursors.
+- Infection is a common consequence. Necrotising ulcerative lesions of the gingiva, floor of the mouth, buccal mucosa, pharynx or elsewhere in the oral cavity are characteristic; they are deep, undermined and covered by grey to green-black necrotic membranes from which bacteria or fungi can be isolated.
+- Similar ulcers occur less often in the skin, vagina, anus or gastrointestinal tract.
+- Life-threatening invasive bacterial or fungal infections may occur in the lungs, urinary tract and kidneys; deep fungal infections by Candida and Aspergillus are a particular risk.
+- Sites of infection often show massive growth of organisms with little leukocytic response.
+
+**Clinical features and complications**
+
+- Malaise, chills and fever, often followed by marked weakness and fatigability.
+- In agranulocytosis, infections are often overwhelming and may cause death within hours to days.
+- Serious infections are most likely when the neutrophil count falls below 500 per cubic millimetre.
+- Broad-spectrum antibiotics must be given promptly when signs or symptoms appear; after myelosuppressive chemotherapy, neutropenia is treated with G-CSF.
+
+## What is agranulocytosis?
+
+**Agranulocytosis** is a marked reduction in neutrophils (usually less than 100 per microlitre), which has the serious consequence of making individuals susceptible to bacterial and fungal infections.
+
+## Important causes of leucopenia, neutropenia and agranulocytosis.
+
+**Leukopenia**
+
+- Neutropenia, the most common cause of a low white cell count.
+- Lymphopenia: congenital immunodeficiency, advanced HIV infection, glucocorticoid or cytotoxic drug therapy, autoimmune disorders, malnutrition, certain acute viral infections.
+- Splenomegaly, which may trap white cells.
+
+**Neutropenia**
+
+- Suppression of haematopoietic stem cells: aplastic anaemia, infiltrative marrow disorders.
+- Suppression of committed granulocytic precursors by certain drugs.
+- Ineffective haematopoiesis: megaloblastic anaemia, myelodysplastic neoplasms.
+- Congenital: severe congenital neutropenia (Kostmann syndrome).
+- Immune mediated injury: idiopathic, systemic lupus erythematosus, drugs; acquired idiopathic neutropenia from autoantibodies against neutrophil-specific antigens.
+- Splenomegaly.
+- Increased peripheral utilisation in overwhelming bacterial, fungal or rickettsial infections.
+- Monoclonal proliferations of large granular lymphocytes (LGL leukaemia), probably through suppression of granulocytic progenitors by products of the neoplastic cell.
+
+**Agranulocytosis**
+
+- **Drug toxicity** is the most common cause.
+- Alkylating agents and antimetabolites used in cancer treatment cause it in a predictable, dose-related fashion, through generalised suppression of haematopoiesis.
+- Idiosyncratic reaction to a large variety of agents, including certain antibiotics, anticonvulsants, anti-inflammatory drugs, antipsychotic drugs and diuretics.
+- Antipsychotic agents such as chlorpromazine and related phenothiazines act through a toxic effect on granulocytic precursors in the marrow.
+- Sulfonamides and some other drugs probably act through antibody-mediated destruction of neutrophils.
+
+## Define leukaemoid reaction / write a short note (incl. blood picture).
+
+**Definition:** a leukaemoid reaction is a marked increase in white cells (more than 50,000 per microlitre), typically neutrophils, as an acute inflammatory reaction that can mimic leukaemia. In severe infections many immature granulocytes appear in the blood, mimicking myeloid leukaemia.
+
+**Aetiology and pathogenesis**
+
+- Severe infection.
+- Intoxication.
+- Other malignancies.
+- Severe haemorrhage.
+- Acute haemolysis.
+- It often results from accelerated release of cells from the bone marrow. In acute infection, release of mature granulocytes from the marrow is mediated by TNF and IL-1.
+
+**Blood picture**
+
+- Persistent reactive neutrophilic leukocytosis, with a white cell count of more than 50,000 per microlitre.
+- A mixture of early mature neutrophil precursors: myelocytes and metamyelocytes, with promyelocytes and rarely myeloblasts; there is no leukaemic hiatus (the gap between blasts and mature cells seen in acute leukaemia).
+- Toxic granulation, cytoplasmic vacuolation and Döhle bodies (sky-blue patches of dilated endoplasmic reticulum).
+- A high neutrophil alkaline phosphatase score.
+- Normal eosinophil and basophil counts; no monocytosis.
+- No Philadelphia chromosome or BCR::ABL1 translocation.
+- Marrow is hypercellular but otherwise normal.
+
+## What is subleukaemic leukaemia?
+
+**Subleukaemic leukaemia** is a leukaemia with abnormal white cells in the peripheral blood in which the total white cell count is normal.
+
+In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone marrow examination is essential to exclude acute leukaemia in pancytopenic patients.
+
+## Write the differences between leukaemoid reaction and leukaemia.
+
+| Feature | Leukaemoid reaction | Leukaemia (chronic myeloid leukaemia) |
+|---|---|---|
+| Nature | Reactive, non-malignant leukocytosis caused by an underlying condition | Neoplastic proliferation |
+| Cells in blood | Mature neutrophils with a mixture of early precursors | Abnormal granulocytes; a large proportion of myelocytes |
+| Eosinophils and basophils | Normal count and morphology | Often elevated; may show mixed granulation |
+| Neutrophil morphology | Toxic granulation and Döhle bodies often present | Pseudo-Pelger-Huët forms may be seen |
+| Platelets | Normal count and morphology | Elevated early and decreased late; giant, hypogranular or bizarre forms |
+| Haemoglobin | Normal | Often anaemic |
+| Leukocyte alkaline phosphatase score | Elevated | Decreased |
+| Genetics | Normal; no BCR::ABL1 | t(9;22) with BCR::ABL fusion gene |
+| Bone marrow | Hypercellular but otherwise normal | Markedly hypercellular with increased eosinophils and basophils, small dysplastic megakaryocytes and sea-blue histiocytes |
+| Leukaemic hiatus (acute leukaemia) | Absent | Present in acute leukaemia |
+
+## Differences between leukaemoid reaction and subleukaemic acute leukaemia.
+
+| Feature | Leukaemoid reaction | Subleukaemic acute leukaemia |
+|---|---|---|
+| Nature | Reactive, non-malignant; caused by infection, intoxication, other malignancy, haemorrhage or haemolysis | Neoplastic accumulation of immature blasts |
+| Total white cell count | Markedly raised, more than 50,000 per microlitre | Normal |
+| Cells in blood | Myelocytes, metamyelocytes and promyelocytes, rarely myeloblasts, in a mixture with mature neutrophils | Abnormal white cells (blasts) |
+| Leukaemic hiatus | Absent | Characteristic of acute leukaemia |
+| Neutrophil changes | Toxic granulation, vacuolation and Döhle bodies | Not a feature |
+| Bone marrow | Hypercellular but otherwise normal | Blasts of 20% or more of marrow cells; the WHO allows fewer with defining genetic aberrations |
+| Genetics | No BCR::ABL1 | Specific genetic aberrations, such as t(8;21), inv(16) and t(15;17) in acute myeloid leukaemia |
+| Other | Resolves on treatment of the underlying cause | Needs a bone marrow examination to exclude acute leukaemia |
+
+## Write a short note on leukoerythroblastic blood picture.
+
+**Definition:** leukoerythroblastosis is the premature release into the blood of nucleated erythroid and early granulocyte progenitors (immature precursors).
+
+**Aetiology and pathogenesis**
+
+- Processes that distort the marrow architecture, such as deposits of metastatic cancer or granulomatous disorders.
+- Fibrosis of the marrow, as in primary myelofibrosis.
+- Immature cells also enter the circulation from sites of extramedullary haematopoiesis.
+
+**Blood picture**
+
+- Nucleated red cells and immature granulocytes in the blood.
+- Teardrop-shaped red cells (dacryocytes), which are probably damaged during the birthing process in the fibrotic marrow.
+- In myelofibrosis, moderate to severe normochromic normocytic anaemia; large platelets and basophilia are common but nonspecific.
+
+**Clinical significance**
+
+- It is characteristic of primary myelofibrosis but is seen in other infiltrative disorders of the marrow, including granulomatous diseases and metastatic tumours.
+- The blood findings are not specific; bone marrow biopsy is essential for diagnosis.
+
+## Causes of leukoerythroblastic blood picture.
+
+- **Primary myelofibrosis**, and the spent phase of other myeloproliferative neoplasms.
+- **Metastatic tumours** in the marrow.
+- **Granulomatous diseases** of the marrow.
+- Other **infiltrative disorders** of the marrow.
+- **Marrow infiltration by lymphoid tumour**, for example chronic lymphocytic leukaemia, together with premature release of progenitors in the face of severe anaemia.
+
+## Define leukaemia.
+
+**Leukaemias** are neoplasms that present with widespread involvement of the bone marrow and (usually, but not always) the peripheral blood.
+
+## Classify (acute) leukaemia.
+
+| Type | Cell of origin | Subtypes |
+|---|---|---|
+| **Acute lymphoblastic leukaemia/lymphoma (ALL)** | Immature B (pre-B) or T (pre-T) cells, called lymphoblasts | B-cell ALL (about 85%); T-cell ALL |
+| **Acute myeloid leukaemia (AML)** | Haematopoietic progenitors; immature myeloid blasts | WHO class I: AML with specific genetic aberrations. WHO class II: AML defined by differentiation |
+
+## FAB classification of AML.
+
+| Type | Name |
+|---|---|
+| M0 | Acute myeloblastic leukaemia with minimal differentiation |
+| M1 | Myeloblastic leukaemia without maturation |
+| M2 | Myeloblastic leukaemia with maturation |
+| M3 | Acute promyelocytic leukaemia |
+| M4 | Acute myelomonocytic leukaemia; the myeloblastic and monoblastic components each make up more than 20% of the blasts in the marrow |
+| M5 | Acute monoblastic leukaemia: M5a without differentiation, M5b with differentiation |
+| M6 | Erythroleukaemia |
+| M7 | Acute megakaryoblastic leukaemia |
+
+## WHO classification of AML.
+
+| Subtype | Prognosis | Morphology or comment |
+|---|---|---|
+| **I. AML with specific genetic aberrations** | | |
+| t(8;21)(q22;q22); RUNX1::RUNX1T1 | Favourable | Full range of myelocytic maturation; Auer rods easily found; abnormal cytoplasmic granules |
+| inv(16)(p13;q22); CBFB::MYH11 | Favourable | Myelocytic and monocytic differentiation; abnormal eosinophilic precursors with abnormal basophilic granules |
+| t(15;17)(q22;q11-12); PML::RARA (acute promyelocytic leukaemia) | Very favourable | Numerous Auer rods, often in bundles; prominent primary granules, inconspicuous in the microgranular variant; high incidence of disseminated intravascular coagulation |
+| t(11q23;v); KMT2A rearrangement | Poor | Usually some monocytic differentiation |
+| Mutated NPM1 | Favourable | Detected by DNA sequencing |
+| Myelodysplasia-related genetic abnormalities | Poor | Deletion of chromosome 5q or 7q, or mutations in SRSF2, SF3B1, U2AF1, ZRSR2, ASXL1, EZH2, BCOR or STAG2 |
+| **II. AML defined by differentiation** | | |
+| Minimally differentiated | Intermediate | Negative for myeloperoxidase; myeloid antigens detected on blasts by flow cytometry |
+| Without maturation | Intermediate | More than 3% of blasts positive for myeloperoxidase |
+| With maturation | Intermediate | Full range of myelocytic maturation |
+| With myelomonocytic maturation | Intermediate | Myelocytic and monocytic differentiation |
+| With monocytic maturation | Intermediate | Nonspecific esterase positive monoblasts and promonocytes predominate in the marrow |
+| With erythroid maturation | Intermediate | Erythroid/myeloid subtype: more than 50% dysplastic maturing erythroid precursors and more than 20% myeloblasts; pure erythroid subtype: more than 80% erythroid precursors without myeloblasts |
+| With megakaryocytic maturation | Intermediate | Megakaryocytic blasts predominate, detected with antibodies such as GPIIb/IIIa; often marrow fibrosis; most common AML in Down syndrome |
+
+## Clinical presentation of acute leukaemia.
+
+- **Abrupt, stormy onset** within days to a few weeks of the first symptoms.
+- **Marrow failure**: fatigue from anaemia; fever from infections secondary to neutropenia; bleeding from thrombocytopenia.
+- **Bleeding**: cutaneous petechiae and ecchymoses, serosal haemorrhages, and mucosal haemorrhages into the gingivae and urinary tract. Procoagulants and fibrinolytic factors released by leukaemic cells, especially in AML with t(15;17), make bleeding worse.
+- **Infections**, frequent in the oral cavity, skin, lungs, kidneys, urinary bladder and colon, often caused by opportunists such as fungi, Pseudomonas and commensal organisms.
+- **Mass effects from neoplastic infiltration**, more common in ALL: bone pain, generalised lymphadenopathy, splenomegaly, hepatomegaly, testicular enlargement, and in T-ALL compression of large vessels and airways in the mediastinum.
+- **Central nervous system** manifestations, more common in ALL: headache, vomiting and nerve palsies from meningeal spread.
+- In AML, tumours with monocytic differentiation often infiltrate the skin (leukaemia cutis) and gingiva; AML occasionally presents as a localised soft tissue mass, a myeloid sarcoma.
+
+## How will you diagnose a case of acute leukaemia in the laboratory?
+
+1. **Peripheral blood:** blast count is highly variable; in AML blasts may be more than 100,000 per microlitre but are under 10,000 in about 50% of patients, and occasionally blasts are absent from the blood (aleukaemic leukaemia).
+2. **Bone marrow examination** is essential. The marrow is hypercellular and packed with blasts, generally 20% or more of marrow cells.
+3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods.
+4. **Cytochemistry:** myeloperoxidase positive in myeloblasts; lymphoblasts are myeloperoxidase negative and often contain periodic acid–Schiff positive cytoplasmic material; monoblasts are nonspecific esterase positive.
+5. **Immunophenotyping by flow cytometry**, which confirms the lineage. Terminal deoxynucleotidyl transferase (TdT) is positive in more than 95% of ALL. B-ALL: CD19, CD10, PAX5; T-ALL: CD1, CD2, CD5, CD7. Myeloid blasts: CD34, CD33, CD15 and CD64.
+6. **Cytogenetics and molecular tests:** chromosomal aberrations in 50% to 70% of AML by standard techniques; approximately 90% of ALL have numerical or structural chromosomal changes.
+
+## Differences between AML and ALL (including by PBF).
+
+| Feature | AML | ALL |
+|---|---|---|
+| Cell of origin | Immature myeloid cells (myeloblasts, monoblasts) | Immature B (pre-B) or T (pre-T) lymphoblasts |
+| Blast chromatin | Delicate | More condensed |
+| Nucleoli | Two to four; prominent | Small; less conspicuous |
+| Cytoplasm | More voluminous; fine azurophilic granules | Scant; usually no granules |
+| Auer rods | Present in many cases; numerous in t(15;17) | Not a feature |
+| Myeloperoxidase | Positive | Negative |
+| Periodic acid–Schiff | Not described | Often positive cytoplasmic material |
+| TdT | Not expressed | Positive in more than 95% |
+| Blood blasts | More than 100,000 per microlitre to absent; under 10,000 in about 50% | High counts, with more than 100,000 a poor prognostic sign |
+| Age | Incidence rises through life, peaking after 60 years | Most common cancer of children; B-ALL peaks at about 3 years |
+| Mass effects and central nervous system spread | Less striking and less common | More common: lymphadenopathy, splenomegaly, hepatomegaly, testicular enlargement, mediastinal mass in T-ALL, meningeal spread |
+| Bleeding | Often prominent; worsened in t(15;17) | Thrombocytopenic bleeding |
+| Outcome | About 60% remission; 15% to 30% disease free at 5 years | About 95% of children remission; 75% to 85% cured |
+
+## Laboratory diagnosis of AML.
+
+1. **Peripheral blood:** blast count highly variable; may be more than 100,000 per microlitre but under 10,000 in about 50%; occasionally absent (aleukaemic leukaemia). Anaemia, neutropenia and thrombocytopenia are present.
+2. **Bone marrow examination** is essential to exclude acute leukaemia in pancytopenic patients. Generally 20% or more myeloid blasts; the WHO permits the diagnosis with fewer than 20% if a defining genetic aberration is present.
+3. **Blast morphology:** myeloblasts have delicate nuclear chromatin, two to four nucleoli and more cytoplasm than lymphoblasts, with fine peroxidase positive azurophilic granules. **Auer rods** (needle-like azurophilic granules) are present in many cases, particularly numerous in t(15;17). Monoblasts have folded or lobulated nuclei, lack Auer rods and are nonspecific esterase positive.
+4. **Immunophenotyping:** stains for myeloid-specific antigens confirm the diagnosis, since myeloblasts and lymphoblasts are hard to tell apart by morphology; blasts express CD34, CD33 and in part CD15, but not CD64. Megakaryocytic blasts are detected with antibodies such as GPIIb/IIIa.
+5. **Cytogenetics:** abnormalities are detected in 50% to 70% of cases with standard techniques and about 90% with high-resolution banding. Balanced translocations t(8;21), inv(16) and t(15;17) are typical of de novo AML in younger adults; deletions or monosomies of chromosomes 5 and 7 and p53 mutations follow DNA-damaging agents.
+6. **DNA sequencing** detects mutations such as NPM1.
