@@ -11857,134 +11857,108 @@ Inflammatory disease of the breast is rare (less than 1% of breast symptoms) and
 
 ## What are the causes of breast lump?
 
-Over 90% of symptomatic lesions are benign. A mass is usually detected at 2-3 cm. Benign masses are round, rubbery and mobile; malignant ones are hard, irregular and fixed.
+Most palpable breast masses (more than 95%) are benign.
 
-| Group | Examples |
-|---|---|
-| Non-neoplastic | Cysts and fibrocystic change (fibrosis, adenosis), fat necrosis, abscess, duct ectasia, granulomatous mastitis, lymphocytic mastopathy, lactational adenoma |
-| Benign epithelial/stromal | Fibroadenoma (commonest), papilloma, sclerosing adenosis, radial scar, benign phyllodes tumour, lipoma, fibromatosis, myofibroblastoma |
-| Malignant | Invasive carcinoma (NST, lobular, others), DCIS (rarely palpable), malignant phyllodes tumour, angiosarcoma, lymphoma, metastasis (melanoma, ovarian carcinoma) |
-| Male | Gynaecomastia (commonest); carcinoma is rare |
+**Benign**
 
-The chance a mass is malignant rises with age, from 10% under 40 to 60% over 50.
+- **Fibroadenoma** and **cysts** (the commonest)
+- Fibrocystic changes
+- Fat necrosis, which may mimic cancer
+- Duct ectasia
+- Lactational adenoma
+- Abscess from infection, during lactation
+- Granulomatous mastitis
 
+**Tumours**
+
+- **Phyllodes tumour**
+- **Invasive carcinoma**, which is usually an irregular mass
+- Angiosarcoma and lymphoma (rare)
 
 ## Give the morphology of fibroadenoma of breast.
 
-- Origin: intralobular stroma; a biphasic tumour with a non-neoplastic epithelial component. Two-thirds have MED12 mutations; about one-third have RARA mutations.
-- Gross: well-circumscribed, rubbery, grey-white nodule that bulges above the cut surface. Size from <1 cm to very large. Slit-like spaces on section. No fat, hence radiodense.
-- Micro: delicate, often myxoid stroma resembling intralobular stroma, sharply demarcated from surrounding breast.
-- Pericanalicular pattern: stroma surrounds open ducts.
-- Intracanalicular pattern: stroma compresses ducts into cleft-like spaces.
-- Older women: hyalinised, calcified stroma with atrophic epithelium.
-- Complex fibroadenoma: cysts >0.3 cm, sclerosing adenosis, epithelial calcification or papillary apocrine change; slightly increased cancer risk.
-- Clinical: age 20s-30s, often multiple and bilateral. Hormone-responsive: grows in pregnancy (may infarct), regresses after menopause. Cyclosporin A in renal transplant recipients causes multiple fibroadenomas. Myxoid types may be linked to Carney complex (PRKAR1A).
-
+- Size varies from less than 1 cm to large tumours that replace most of the breast
+- **Well-circumscribed**, rubbery, grey-white nodules that bulge above the surrounding tissue
+- Often contain **slit-like spaces** lined by epithelium
+- On radiography a well-circumscribed mass; the absence of adipose tissue accounts for its radiodensity
+- **Microscopy:** proliferation of delicate, often myxoid **intralobular stroma**, which surrounds, pushes and distorts the epithelium; the border is sharply delimited
+- Two patterns: **pericanalicular** (stroma surrounds patent ducts) and **intracanalicular** (stroma compresses ducts into cleft-like spaces)
 
 ## Classify breast tumour/carcinoma.
 
-| Category | Types |
+| Group | Types |
 |---|---|
-| Carcinoma in situ | DCIS (low/high nuclear grade; patterns comedo, cribriform, micropapillary, papillary); LCIS (classic, pleomorphic) |
-| Invasive carcinoma | NST (~75%, includes "medullary pattern"); invasive lobular (~15%) |
-| Special types | Tubular, cribriform, mucinous, papillary (luminal); apocrine, micropapillary (HER2-prone); metaplastic, adenoid cystic, secretory, mucoepidermoid (TNBC) |
-| Clinical entities | Inflammatory carcinoma (a clinical presentation, not a histologic type); Paget disease of the nipple (DCIS or invasive carcinoma) |
-| Stromal tumours | Fibroadenoma, phyllodes (benign/borderline/malignant), angiosarcoma, fibromatosis, myofibroblastoma, lipoma |
-| Others | Lymphoma, skin tumours, metastases (<5%) |
+| **In situ carcinoma** | Ductal carcinoma in situ (DCIS); lobular carcinoma in situ (LCIS) |
+| **Invasive carcinoma** | Invasive carcinoma of **no special type** (about 75%); **invasive lobular carcinoma** (up to 15%); special types: mucinous, tubular, cribriform, papillary, apocrine, micropapillary, metaplastic |
+| **Stromal tumours** | Fibroadenoma, phyllodes tumour (intralobular stroma); angiosarcoma (interlobular stroma) |
+| **Other** | Lymphoma, metastases from other sites (less than 5% of malignant tumours) |
 
-Grade: Nottingham score = tubule formation + nuclear pleomorphism + mitotic rate (grades 1-3). Biomarker/molecular classification: see Q1297.
-
+- Paget disease of the nipple is DCIS extending into the skin of the nipple
+- Inflammatory carcinoma is not a histological type; it is a clinical presentation
 
 ## Write down the molecular classification of breast cancer.
 
-| Feature | Luminal A | Luminal B | HER2 | TNBC (basal-like) |
-|---|---|---|---|---|
-| Profile | ER+/HER2-, low proliferation | ER+, high proliferation | HER2 amplified (ER+ or -) | ER-/PR-/HER2- |
-| % of cases | 40-55% (luminal total 50-65%) | ~10% | ~20% | ~15% |
-| Genetics | PIK3CA ~45%, 1q gain, 16q loss, quiet genome | PIK3CA, TP53 ~29%, complex genome | ERBB2 amplification, TP53 70-80% | TP53 70-80%, genomic instability, HR defect (BRCA1) |
-| Grade | 1-2 | 2-3 | 3 | 3 |
-| Patients | Older; screen-detected | Younger; BRCA2 | Young; TP53 carriers | Young, African descent, BRCA1 |
-| Metastasis | Bone | Bone | Bone, viscera, brain | Viscera, brain, bone |
-| Relapse | Low rate, many years | Early peak, late recurrence | Bimodal (early and late) | Early peak (<8 y), late rare |
-| pCR to neoadjuvant chemotherapy | <10% | <10% | 30-60% (ER-) | ~30% |
+Breast cancers fall into three major molecular groups: **luminal** (ER-positive), **HER2** and **triple negative**.
 
-****
-
-- Intrinsic subtypes by expression profiling: luminal A, luminal B, HER2-enriched, basal-like, normal-like, claudin-low.
-- Pathways: low-grade (FEA, ADH, low-grade DCIS/LCIS; 16q loss, 1q gain) and high-grade (high-grade DCIS; 13q loss, 11q13 gain, 17q12 amplification).
-
+| Group | Features |
+|---|---|
+| **Luminal A** | ER-positive, HER2-negative; 50% to 65% of cancers are luminal; strongly ER and PR positive; well differentiated; low proliferation; gain of 1q, loss of 16q, *PIK3CA* mutations |
+| **Luminal B** | ER-positive, HER2-negative; high proliferation; lower ER and PR expression; poorly differentiated; more aggressive than luminal A |
+| **HER2-positive** | Amplification of the *HER2* gene on chromosome 17q; about 20% of cancers; ER-positive or ER-negative; respond well to HER2 inhibitors |
+| **Triple negative (TNBC)** | Negative for ER, PR and HER2; about 15% of cancers; basal-like gene expression; *TP53* mutation; defective DNA repair, often from *BRCA1* defects; high grade; relatively poor prognosis |
 
 ## What are the risk factors of breast carcinoma?
 
-| Relative risk | Factors |
-|---|---|
-| >4 | Female sex, increasing age, high-penetrance germline mutations (BRCA1/2, PALB2, TP53, PTEN, STK11, CDH1), strong family history, personal history of breast cancer, high breast density |
-| 2.1-4 | Moderate-penetrance mutations (ATM, CHEK2), chest irradiation at <18 y, one first-degree relative |
-| 1.1-2 | Early menarche (<12), late menopause (>55), late first pregnancy (>35), nulliparity, no breastfeeding, exogenous hormones, postmenopausal obesity, inactivity, alcohol |
+Breast cancer is multifactorial.
 
-- Core mechanism: lifetime oestrogen exposure.
+1. **Sex:** 99% of those affected are female
+2. **Increasing age**
+3. **Lifetime exposure to estrogen:** postmenopausal hormone therapy increases the incidence of luminal cancers
+4. **Genetic inheritance:**
+   - 25% to 35% of cases are due to inherited susceptibility variants
+   - *BRCA1* and *BRCA2* mutations account for 80% to 90% of single gene familial breast cancers and 3% to 6% of all breast cancers
+5. **Family history:** breast cancer in a first-degree relative, in multiple relatives, or at an early age
+6. **Environmental and lifestyle factors,** such as low physical activity
 
-- Benign lesions raise risk (Table 23.1): nonproliferative 1.0; proliferative without atypia 1.5-2; atypical hyperplasia 4-5; carcinoma in situ 8-10.
-- Protective: pregnancy before age 20, prolonged breastfeeding.
-- About 20% of cases are attributable to modifiable factors (obesity, alcohol, inactivity). Bilateral prophylactic mastectomy lowers risk by ~90%. BRCA1/2 account for 80-90% of single-gene familial cancers.
-
+Factors that decrease risk are **early pregnancy** (before 20 years of age) and **prolonged breastfeeding**.
 
 ## What are the prognostic (and predictive) factors of breast cancer?
 
-**Extent-related (mainly prognostic):**
+**Prognostic factors**
 
-1. Distant metastasis: the most important factor; cure is unlikely (Table 23.5).
+1. **Distant metastases:** the most important
+2. **Lymph node metastases:** the most important in the absence of distant metastases; 10-year disease-free survival is 70% to 80% with no nodes involved, 35% to 40% with one to three positive nodes and 10% to 15% with more than 10 positive nodes
+3. **Tumour size:** node-negative carcinoma less than 1 cm has a 10-year survival of more than 90%, falling to 77% above 2 cm
+4. **Locally advanced disease:** invasion of skin or skeletal muscle
+5. **Histologic grade:** high-grade tumours do worse
+6. **Histologic subtype:** tubular and cribriform carcinomas have a good prognosis
+7. **Lymphovascular invasion**
+8. **Inflammatory carcinoma:** 3-year survival of only 3% to 10%
 
-2. Axillary nodes: most important factor without distant metastasis. 10-year disease-free survival is 70-80% with no nodes, 35-40% with 1-3 nodes, 10-15% with >10 nodes. Sentinel node biopsy is used.
+**Prognostic and predictive biomarkers**
 
-3. Tumour size: node-negative <1 cm has >90% 10-year survival; >2 cm, 77%.
-
-4. Local extent: skin or chest wall invasion; inflammatory carcinoma (3-year survival 3-10%).
-
-5. Histologic grade: worse with higher grade; modifies prognostic stage.
-
-6. Histologic type: tubular, cribriform and adenoid cystic are good; some metaplastic types are poor.
-
-7. Lymphovascular invasion: poor.
-
-**Biology-related (prognostic and predictive)**
-
-| Factor | Role |
-|---|---|
-| ER | ≥1% positive predicts endocrine therapy response; 1-10% ("low positive") does worse |
-| PR | Low PR within ER+ tumours predicts worse outcome |
-| HER2 | Aggressive behaviour; predicts response to anti-HER2 therapy |
-| Gene-expression assays | Identify slow-growing ER+ tumours that can be spared chemotherapy |
-| Neoadjuvant response | Pathologic complete response in TNBC/HER2 gives better prognosis |
-| TILs | Favourable in TNBC and HER2 |
-| ESR1 mutation | Endocrine resistance |
-| BRCA1/2 germline | Predicts PARP inhibitor response |
-| PIK3CA mutation | Predicts response to PI3K inhibitors |
-| PD-L1/TMB/MMRD | Immune checkpoint inhibitors |
-| NTRK fusion | TK inhibitors in secretory carcinoma |
-| ctDNA | Detects emerging actionable mutations |
-
-Staging: AJCC 8th edition anatomic stage (TNM) plus prognostic stage (grade, ER, PR, HER2). TNBC is often up-staged, luminal down-staged.
-
+- **ER** and **PR**
+- **HER2**
+- Gene expression profiling, which identifies slow-growing ER-positive cancers that can be spared chemotherapy
 
 ## What is the role of ER, PR and HER-2 neu in breast cancer?
 
-| Marker | Role |
-|---|---|
-| ER | Defines the luminal group. Prognostic and predictive. ER+ tumours respond to endocrine therapy: tamoxifen (blockade), aromatase inhibitors (oestrogen deprivation), fulvestrant (degradation). CDK4/6 inhibitors added in advanced disease. |
-| PR | ER-regulated gene. ER+/PR+ is the best combination; ER+ with low PR does worse. Adds prognostic value. |
-| HER2 (ERBB2) | Receptor tyrosine kinase driving RAS and PI3K-AKT signalling and blocking apoptosis. Overexpression is almost always from gene amplification (17q), detected by IHC or ISH/FISH. Predicts response to trastuzumab, T-DM1, lapatinib. Marks aggressive behaviour. |
-| Triple negative | Lacks all three, so no endocrine or anti-HER2 therapy. Treated with chemotherapy, platinum, PARP inhibitors (BRCA), checkpoint inhibitors, sacituzumab govitecan (TROP2). |
-
+- **ER:** both prognostic and predictive; ER-positive tumours (1% or more of cells with nuclear staining) respond to **endocrine therapy**, which reduces recurrence and improves survival; "low positive" tumours (1% to 10% staining) have a worse prognosis
+- **PR:** ER-positive tumours are usually PR-positive; ER-positive tumours with low PR expression have worse outcomes than those with high ER and PR
+- **HER2:** both prognostic and predictive; positivity indicates **aggressive behaviour** and response to **HER2-targeting agents**
+- HER2 is detected by immunohistochemistry for protein overexpression or by in situ hybridisation for gene amplification
+- Cancers negative for ER, PR and HER2 are **triple negative**
 
 ## Short note on Paget's disease of nipple.
 
-- Definition: rare manifestation of breast carcinoma (1-4%). Malignant Paget cells extend from underlying DCIS along the lactiferous ducts into the nipple epidermis without crossing the basement membrane.
-- Clinical: unilateral erythematous, scaly, crusted, oozing eruption with pruritus; mimics eczema. The malignant cells disrupt the epithelial barrier so fluid seeps out.
-- Diagnosis: nipple biopsy or exudate cytology.
-- Underlying lesion: with no palpable mass, usually DCIS alone. With a mass (about half), usually invasive carcinoma. Prognosis depends on the underlying carcinoma, not on the Paget disease itself.
-- Contrast: vulvar extramammary Paget disease usually has no underlying cancer.
+**Definition and pathogenesis.** Ductal carcinoma in situ arising within the ductal system extends up the lactiferous ducts into the skin of the nipple without crossing the basement membrane. The malignant cells disrupt the squamous epithelial barrier, so fluid seeps out and forms an oozing, scaly crust.
 
+**Features**
+
+- Most females without a palpable mass have **DCIS** and are staged as such
+- About one-half have a palpable breast mass, which usually proves to be **invasive carcinoma**
+
+**Prognosis.** It depends on the features of the invasive carcinoma, if present, and is not affected by the presence or absence of Paget disease.
 
 ## 20-year-old woman with a free, movable breast lump — Probable diagnosis? Investigations to diagnose the case?
 
@@ -12001,23 +11975,20 @@ Staging: AJCC 8th edition anatomic stage (TNM) plus prognostic stage (grade, ER,
 
 ## A woman has a hard, firm breast lump fixed to tissue (± skin dimpling). What is your likely diagnosis?
 
-Invasive breast carcinoma (NST). Malignant tumours invade across tissue planes and are hard (scirrhous), irregular and non-mobile. Skin dimpling or nipple retraction occurs with dermal or central involvement; large tumours fix to the pectoralis or chest wall. About 50% arise in the upper outer quadrant. Gross: grating cut surface with chalky-white desmoplastic stroma.
+**Invasive breast carcinoma of no special type.**
 
+- It most commonly presents as a **hard, irregular, radiodense mass** with a desmoplastic stromal reaction
+- Malignant tumours invade across tissue planes, so they are irregular, unlike the round, rubbery, mobile benign masses
+- The cut surface produces a **grating sound** from chalky-white desmoplastic stroma
+- Skin dimpling, with *peau d'orange*, is seen in inflammatory carcinoma, where dermal lymphovascular channels are plugged by tumour cells and the skin is tethered by Cooper ligaments
 
 ## Same: what investigations would you perform?
 
-1. Clinical: breast and axilla (nodes); look for distant metastases.
-
-2. Imaging: mammography (irregular dense mass, calcification), ultrasound, MRI/tomosynthesis if needed (~10% are not seen on standard mammograms).
-
-3. Tissue diagnosis: core biopsy (preferred) and/or FNAC.
-
-4. Biomarkers on the biopsy: ER, PR, HER2 (IHC, ISH), Nottingham grade, Ki-67.
-
-5. Staging: axillary ultrasound, sentinel node biopsy, chest/bone/liver imaging as indicated.
-
-6. Genetic testing (BRCA1/2) in selected patients.
-
+1. **Mammography:** densities, architectural distortions and calcifications; the average invasive carcinoma detected is about 1 cm
+2. **Ultrasonography, digital breast tomosynthesis or MRI** when the carcinoma is not visible on standard mammograms (about 10%)
+3. **Histology** to confirm invasive carcinoma and grade it by the Nottingham score
+4. **Biomarkers:** ER, PR and HER2
+5. **Axillary lymph nodes:** histological examination, since clinical assessment is unreliable; sentinel node biopsy
 
 ## Mention four important causes of hypothyroidism.
 
@@ -14356,4 +14327,11 @@ Acute kidney injury can result from glomerular, interstitial, vascular or acute 
 
 ## A female has PV bleeding/discharge, contact bleeding, an ulcerated/friable/fungating cervical growth. What is the provisional diagnosis?
 
-**Carcinoma of the cervix**, most likely squamous cell carcinoma.
+**Invasive carcinoma of the cervix**, most likely **squamous cell carcinoma**.
+
+- The average age is 45 to 50 years
+- Squamous cell carcinoma accounts for about 80% of cases; adenocarcinoma for about 15%
+- All are caused by **high-risk HPV**
+- It appears as a **fungating (exophytic)** or infiltrative mass
+- More than one-half of cases are found in females who did not attend regular screening
+
