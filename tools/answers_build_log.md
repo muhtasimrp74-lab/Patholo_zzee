@@ -406,7 +406,12 @@ Questions: megaloblastic anaemia (short note, differentiation, diagnosis, folate
 - Normal types of haemoglobin: only HbA, HbA2 and HbF are given by the textbook; embryonic haemoglobins are left out.
 
 ### Session 11 housekeeping
-- Six stale hunks dropped from tools/hand_edits.json, all anchored in old answers that were rewritten: haemoglobinopathies list (batch 3), four in batch 4 (thrombocytopenia classification, haemophilia and coagulation classification, and two insertions or list closings), and the platelet count line (batch 5).
+- Eight stale hunks dropped from tools/hand_edits.json (27 down to 19), all anchored in old answers that were rewritten: haemoglobinopathies list (batch 3); four in batch 4 (thrombocytopenia classification, haemophilia and coagulation classification, and two insertions or list closings); the platelet count line (batch 5); and two in batch 6 (marrow failure causes and immunologic causes of thrombocytopenia).
 - All 70 questions already had an answer, so none were previously empty.
 - Progress file lists 735 questions done (665 before this session, plus 70). 400 remain in the work list.
 - tools/tests/test_site.py not run this session, at the owner's request.
+
+### Session 11 end checks
+- build.py run twice: index.html byte-identical (same md5sum).
+- VERSION in sw.js bumped from v149 to v150; build.py, gen_manifests.py and build.py run again.
+- tools/tests/test_site.py not run, at the owner's request.
