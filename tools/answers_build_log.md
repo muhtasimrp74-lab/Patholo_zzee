@@ -501,3 +501,27 @@ Points left out:
 - Hepatocellular carcinoma etiology: HBx protein and driver mutations are left out as mechanism rather than etiology.
 - Haemolytic versus obstructive jaundice: urine urobilinogen and stool colour for haemolytic jaundice are not given in the textbook or in the MSD table, so these rows are left out.
 - Provisional diagnosis case: hepatitis A and E are not mentioned as differentials because the textbook ties the case to parenteral spread.
+
+### Batch 2 (Chapter 18 jaundice questions; Chapter 20 glomerular disease and nephrotic syndrome)
+
+Sources: the site textbook, Chapter 18 (tools/textbook_src/ch18.json), Chapter 14 (haemolytic anaemia, for the haemolytic jaundice work-up), Chapter 10 (kernicterus, hydrops fetalis) and Chapter 20 (tools/textbook_src/ch20.json). No answer in this batch was previously empty.
+
+Outside sources used:
+
+| Question | Source | URL |
+|---|---|---|
+| What enzymes are elevated in hepatocellular and obstructive jaundice (AST, ALT, ALP interpretation)? | MSD Manual Professional, Jaundice (numerical cut-offs for aminotransferases and alkaline phosphatase) | https://www.msdmanuals.com/professional/hepatic-and-biliary-disorders/approach-to-the-patient-with-liver-disease/jaundice |
+| Give the urinary findings of obstructive jaundice. | MSD Manual Professional, Jaundice (urine bilirubin present, dark urine) | same as above |
+| How will you differentiate hemolytic, hepatocellular and obstructive jaundice biochemically? | MSD Manual Professional, Jaundice (table of laboratory patterns); AAFP, Evaluation of Jaundice in Adults (peripheral smear for haemolysis; pale stools and dark urine in cholestasis) | https://www.aafp.org/pubs/afp/issues/2017/0201/p164.html |
+| Write a short note on obstructive jaundice. | AAFP (dark urine and pale stools) for the clinical features | https://www.aafp.org/pubs/afp/issues/2017/0201/p164.html |
+| A patient has jaundice, pruritus, bulky pale stool ... What type of jaundice is this? | AAFP (pale stools and dark urine in cholestatic jaundice) | https://www.aafp.org/pubs/afp/issues/2017/0201/p164.html |
+
+Points left out:
+
+- Acholuric jaundice: the term is not used in the textbook; the answer is built from the textbook statement that unconjugated bilirubin is insoluble and cannot be excreted in urine, and that the excess bilirubin in haemolytic anaemia is unconjugated.
+- Urinary findings of obstructive jaundice: urine urobilinogen and bile salts are not given in the textbook, the MSD Manual or the AAFP article, so they are left out.
+- Haemolytic versus obstructive jaundice and the biochemical differentiation: urine and stool urobilinogen are not in any of the sources; alkaline phosphatase for haemolytic jaundice is not given in the MSD table, so no value is stated.
+- Investigation of haemolytic jaundice: the MSD and AAFP pages give only the peripheral smear for haemolysis; reticulocytosis, haptoglobin, lactate dehydrogenase and Coombs test come from the textbook (Chapter 14, haemolytic anaemias and haemolytic transfusion reactions). The textbook gives no numerical values for these.
+- Case with palpable gallbladder: the textbook does not describe a palpable gallbladder sign, so only the jaundice type and the cholestatic features are stated.
+- Names of the primary glomerular diseases: the list follows Table 20.5 (the table cells are partly garbled in the source file) plus C3 glomerulonephritis and fibrillary glomerulonephritis from the text.
+- Classification of glomerular disease: Table 20.2 (histologic classification) has no usable cell text in the source file, so the answer follows the text (primary and secondary) and Table 20.5.

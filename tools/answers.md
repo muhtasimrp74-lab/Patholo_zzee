@@ -14137,3 +14137,199 @@ Reference ranges vary between laboratories.
 - Cause: levels of **UGT1A1** (the enzyme that conjugates bilirubin with glucuronic acid) are low at birth and do not reach adult levels until 3 to 4 months of age
 - **Breastfeeding** may exacerbate it, possibly because of bilirubin-deconjugating enzymes in breast milk
 - **Phototherapy** with blue light converts bilirubin to a soluble isomer that is excreted in urine, and is sufficient in most infants
+
+## Mention 2 important causes of obstructive jaundice.
+
+1. **Stones in the bile duct** (choledocholithiasis)
+2. **Malignant neoplasms** of the biliary tree or the head of the pancreas, usually adenocarcinoma
+
+## What enzymes are elevated in hepatocellular and obstructive jaundice (AST, ALT, ALP interpretation)?
+
+| Type | Enzymes raised | Interpretation |
+|---|---|---|
+| **Hepatocellular jaundice** | **AST and ALT** (aminotransferases) | Above 500 U/L; alkaline phosphatase is below 3 times normal. In alcohol-associated liver disease AST is higher than ALT by 2:1 or more; in other chronic liver diseases ALT tends to be higher than AST |
+| **Obstructive (cholestatic) jaundice** | **Alkaline phosphatase and GGT** (gamma-glutamyl transpeptidase) | Both more than 3 times normal; they are present on the canalicular membranes of hepatocytes and bile duct epithelial cells and are characteristic of cholestatic disease. Aminotransferases are below 200 U/L |
+
+## Give the urinary findings of obstructive jaundice.
+
+- **Bilirubin present** in the urine, because conjugated bilirubin is water soluble and loosely bound to albumin
+- **Dark urine**
+
+## What is acholuric jaundice?
+
+Jaundice in which the urine contains **no bilirubin** because the raised bilirubin is **unconjugated**. Unconjugated bilirubin is largely insoluble and cannot be excreted in the urine. It is seen in **haemolytic anaemia**, where the excess serum bilirubin is unconjugated.
+
+## How will you differentiate hemolytic, hepatocellular and obstructive jaundice biochemically?
+
+| Feature | Haemolytic | Hepatocellular | Obstructive |
+|---|---|---|---|
+| **Bilirubin raised** | **Unconjugated** | **Conjugated** | **Conjugated** |
+| **Urine bilirubin** | **Absent** | Present, dark urine | Present, dark urine |
+| **Aminotransferases** | Normal | Above 500 U/L | Below 200 U/L |
+| **Other findings** | Anaemia, reticulocytosis; peripheral blood smear confirms | Prolonged prothrombin time or partial thromboplastin time shows hepatic dysfunction | Pruritus, steatorrhoea; clay-coloured stools if severe |
+
+- **Alkaline phosphatase** is below 3 times normal in hepatocellular jaundice
+- **Alkaline phosphatase and GGT** are both more than 3 times normal in obstructive jaundice
+
+## How will you investigate a case of hemolytic jaundice?
+
+1. **Serum bilirubin**, fractionated: the excess is **unconjugated**; jaundice is rarely severe when the liver is normal
+2. **Complete blood count and peripheral blood smear:** anaemia, with prominent **reticulocytosis**
+3. **Bone marrow:** increased numbers of erythroid precursors (normoblasts)
+4. **Evidence of haemolysis:** decreased plasma **haptoglobin**; raised **lactate dehydrogenase**
+5. **Direct Coombs test**, positive in immune haemolysis
+6. **Urine:** no bilirubin; in intravascular haemolysis, haemoglobinuria and haemosiderinuria, with haemoglobinaemia in the blood
+7. **Splenomegaly** on examination in extravascular haemolysis
+
+## Write a short note on obstructive jaundice.
+
+**Definition.** Conjugated hyperbilirubinaemia from impaired bile flow due to obstruction of the large bile ducts; **cholestasis** is retention of bilirubin and other solutes normally eliminated in bile.
+
+**Aetiology**
+
+- Adults: **stones** (choledocholithiasis), **malignant neoplasms** of the biliary tree or head of pancreas (usually adenocarcinoma), strictures after surgery or ischaemic injury, **primary sclerosing cholangitis**
+- Children: biliary atresia, cystic fibrosis, choledochal cysts
+
+**Morphology**
+
+- Proximal duct dilatation
+- Liver biopsy: portal expansion by oedema, prominent **ductular reaction** at the portal-parenchymal interface, neutrophils around ductules (pericholangitis)
+- In ascending cholangitis the neutrophils also involve the bile duct epithelium and lumen
+- Cholestasis: green-brown bile pigment plugs in hepatocytes and dilated canaliculi; swollen, foamy hepatocytes (**feathery degeneration**)
+- Persistent obstruction: fibrosis and eventually **biliary cirrhosis**
+
+**Clinical features**
+
+- Jaundice, **pruritus**, skin xanthomas
+- Malabsorption of fat-soluble vitamins A, D and K
+- Raised alkaline phosphatase and GGT
+- Dark urine and pale stools
+
+**Complications**
+
+- **Ascending cholangitis** (fever, chills, abdominal pain, jaundice), which can progress to abscess formation, sepsis and death
+- Fibrosis and biliary cirrhosis if obstruction persists; the changes are reversible if the obstruction is corrected early
+
+## Write a short note on unconjugated hyperbilirubinemia.
+
+**Definition.** Elevation of serum bilirubin that is predominantly unconjugated (indirect).
+
+**Aetiology**
+
+- Excess production: **haemolytic anaemia**, resorption of blood from internal haemorrhage, ineffective erythropoiesis (pernicious anaemia, thalassaemia)
+- Reduced hepatic uptake: drug interference, some cases of Gilbert syndrome (mild inherited UGT1A1 deficiency)
+- Impaired conjugation: **physiologic jaundice of the newborn**, breast milk jaundice, genetic UGT1A1 deficiency
+- Crigler-Najjar syndrome type I (severe UGT1A1 deficiency) is fatal around birth; in Crigler-Najjar type II and Gilbert syndrome residual UGT1A1 activity gives a milder picture
+
+**Pathogenesis**
+
+- Unconjugated bilirubin is largely insoluble and cannot be excreted in the urine
+- Most is tightly bound to albumin; at excessive levels the unbound fraction rises and may diffuse into tissues, particularly the brain in infants
+
+**Clinical features and complications**
+
+- **Jaundice** becomes evident above 2 to 2.5 mg/dL
+- In haemolysis, jaundice is rarely severe when the liver is normal; excess bilirubin excreted in bile often forms **pigment gallstones**
+- Neurologic damage in infants: **kernicterus**
+
+## Write a short note on kernicterus.
+
+**Definition.** Damage to the central nervous system caused by unconjugated bilirubin.
+
+**Pathogenesis**
+
+- Haemolysis produces **unconjugated bilirubin**, which passes through the infant's poorly developed blood-brain barrier
+- Being water-insoluble, bilirubin binds to lipids in the brain and damages the CNS
+- At excessive levels the unbound fraction of unconjugated bilirubin rises and diffuses into the brain
+- Occurs particularly in premature infants and with haemolysis, as in immune hydrops fetalis
+
+**Morphology**
+
+- Brain is enlarged and oedematous, with **bright yellow** discoloration from bilirubin deposition
+- Most prominent in the **basal ganglia**, also the thalamus, cerebellum, cerebral grey matter, spinal cord and brainstem
+
+**Clinical features**
+
+- Neural damage usually requires a blood bilirubin above 20 mg/dL in term infants; the threshold may be considerably lower in premature infants
+- Intense jaundice with signs of neurologic injury
+
+**Treatment**
+
+- **Phototherapy** converts bilirubin to harmless, water-soluble products that are readily excreted; total exchange transfusion in severe cases
+
+## A patient has jaundice, pruritus, bulky pale stool, raised ALP / gallstones with palpable gallbladder. What type of jaundice is this?
+
+**Obstructive (cholestatic) jaundice**, due to obstruction of a large bile duct by a stone or a malignant neoplasm.
+
+- Pruritus and raised alkaline phosphatase are features of cholestasis
+- Pale stools and dark urine occur when bile flow is blocked
+- Malabsorption and deficiency of fat-soluble vitamins occur in cholestasis
+
+## Classify glomerular disease.
+
+Glomerular diseases are classified as **primary** (the kidney is the only or predominant organ involved) and **secondary** (the glomerulus is involved as one manifestation of a systemic disease).
+
+| Type | Disease | Clinical presentation |
+|---|---|---|
+| **Primary** | **Postinfectious glomerulonephritis** | Nephritic syndrome |
+| | **Crescentic (rapidly progressive) glomerulonephritis** | Nephritic syndrome with rapid loss of renal function |
+| | **Membranous nephropathy** | Nephrotic syndrome |
+| | **Minimal change disease** | Nephrotic syndrome |
+| | **Focal segmental glomerulosclerosis** | Nephrotic syndrome; non-nephrotic proteinuria |
+| | **Membranoproliferative glomerulonephritis** (type I) | Nephritic or nephrotic syndrome |
+| | **Dense deposit disease** (type II membranoproliferative glomerulonephritis) | Haematuria, chronic renal failure |
+| | **IgA nephropathy** | Recurrent haematuria or proteinuria |
+| **Secondary** | Systemic immunologic diseases such as **SLE** (systemic lupus erythematosus); vascular disorders such as thrombotic angiopathies; metabolic diseases such as **diabetes mellitus**; hereditary conditions such as **Fabry disease** (a hereditary condition affecting the glomerulus) | Similar to the primary forms |
+
+- Histologic changes are described as **diffuse** (all glomeruli), **global** (whole glomerulus), **focal** (a fraction of glomeruli) or **segmental** (part of each glomerulus)
+
+## Name the primary glomerular diseases.
+
+1. Postinfectious glomerulonephritis
+2. Crescentic (rapidly progressive) glomerulonephritis
+3. Membranous nephropathy
+4. Minimal change disease
+5. Focal segmental glomerulosclerosis
+6. Membranoproliferative glomerulonephritis (type I)
+7. Dense deposit disease (type II membranoproliferative glomerulonephritis) and C3 glomerulonephritis
+8. IgA nephropathy
+9. Fibrillary glomerulonephritis
+
+## What is nephrotic syndrome?
+
+**Nephrotic syndrome**, typically caused by severe dysfunction of the glomerular filter, is characterised by **heavy proteinuria** (more than 3.5 g/day), resulting in **hypoalbuminaemia** and severe oedema, and **hyperlipidaemia** and lipiduria (lipids in the urine).
+
+## What are the causes of nephrotic syndrome?
+
+Nephrotic syndrome is caused by a derangement of the glomerular capillary wall, with increased permeability to plasma proteins. The causes vary with age and geography: in children it is almost always a lesion primary to the kidney, whereas in adults it is often associated with a systemic disease.
+
+1. **Primary glomerular lesions**
+   - **Minimal change disease**, the most common in children in North America
+   - **Membranous nephropathy**, the most common in older adults
+   - **Primary (idiopathic) focal segmental glomerulosclerosis**, at all ages
+2. **Systemic causes**, the most frequent being **diabetes**, **amyloidosis** and **SLE**
+3. **Less common:** proliferative glomerulonephritides such as **membranoproliferative glomerulonephritis** and **IgA nephropathy**
+4. **Secondary membranous nephropathy:** drugs (penicillamine, captopril, gold, NSAIDs) and other systemic diseases; about 75% of membranous nephropathy is primary
+
+## Write a short note on nephrotic syndrome.
+
+**Definition.** Heavy proteinuria (3.5 g or more per day, less in children), hypoalbuminaemia (plasma albumin below 3 g/dL), generalised oedema, and hyperlipidaemia with lipiduria.
+
+**Aetiology.** Minimal change disease, membranous nephropathy and focal segmental glomerulosclerosis; systemic causes (diabetes, amyloidosis, SLE).
+
+**Pathogenesis**
+
+1. Increased permeability of the glomerular capillary wall (endothelium, basement membrane and podocytes act as a size and charge barrier) lets proteins escape, causing **proteinuria**
+2. Heavy proteinuria depletes serum albumin faster than the liver can compensate, and increased renal catabolism of albumin also contributes, causing **hypoalbuminaemia**
+3. Low plasma albumin lowers intravascular colloid osmotic pressure, causing **generalised oedema**; sodium and water retention aggravates it (aldosterone secretion from renin release, sympathetic stimulation, reduced natriuretic factors)
+4. **Hyperlipidaemia** follows from increased hepatic lipoprotein synthesis, abnormal transport of lipid particles and decreased lipid catabolism; lipoproteins leak into the urine as free fat or oval fat bodies (**lipiduria**)
+
+**Clinical features**
+
+- Oedema is soft and pitting, most marked in the periorbital regions and dependent parts; pleural effusions and ascites if severe
+- Selectivity of proteinuria: highly selective proteinuria is mostly albumin and transferrin, poorly selective proteinuria includes higher-molecular-weight globulins
+
+**Complications**
+
+- **Infection**, especially staphylococcal and pneumococcal, probably from loss of immunoglobulins in the urine
+- **Thrombosis and thromboembolism**, partly from loss of antithrombin III in the urine; renal vein thrombosis is most often a consequence of this hypercoagulable state
