@@ -1398,19 +1398,21 @@ Four principal causes of hypercalcaemia
 
 ## Explain: "Inflammation is a protective response but may be potentially harmful."
 
-Inflammation is a defensive response of vascularised tissues whose purpose is to deliver leukocytes and plasma proteins to the site of infection or injury, eliminate the offending agent and its consequences (microbes, toxins, necrotic cells), and initiate repair. The statement that it is protective but potentially harmful reflects the fact that the very mechanisms that protect the host can also damage it.
+***Inflammation*** is a response of vascularised tissues that delivers leukocytes and molecules of host defence from the circulation to sites of infection and cell damage.
 
-**The protective role.** Without inflammation infections would go unchecked, wounds would never heal and injured tissues would remain permanent festering sores. Vasodilation and increased permeability bring antibodies, complement and fibrin into the tissue and dilute toxins; neutrophils and macrophages ingest and destroy microbes and necrotic debris; lymphatic drainage carries antigen to lymph nodes to initiate adaptive immunity; macrophages secrete growth factors and cytokines that induce angiogenesis, fibroblast proliferation and healing; and fever may contribute to defence. Metchnikoff concluded that the purpose of inflammation was to bring phagocytes to the site of injury, and John Hunter recognised that it is a stereotyped response with a salutary effect on its host.
+**It is protective**
 
-**The potentially harmful role.** Leukocytes, once activated, do not distinguish between offender and host. Reactive oxygen and nitrogen species and lysosomal proteases produced to kill microbes can leak into the extracellular space (particularly in "frustrated phagocytosis") and injure normal cells and matrix. This collateral damage is usually minor and self-limited, but harm may become the dominant feature of disease in several circumstances:
+- It is a response that is essential for survival.
+- It rids the host of both the initial cause of cell injury (for example microbes and toxins) and the consequences of such injury (necrotic cells and tissues).
+- Phagocytic leukocytes, antibodies and complement proteins are recruited to the site. The stimulus is removed mainly by phagocytes, and repair follows by regeneration and scarring.
 
-- When the response is misdirected against self tissues, as in rheumatoid arthritis, glomerulonephritis and other autoimmune diseases.
-- When it is directed against harmless environmental antigens, as in asthma and allergy, with anaphylaxis as the most dramatic example.
-- When it is inadequately controlled or persists, as in chronic infections such as tuberculosis, atherosclerosis, silicosis, or when sustained systemic cytokine release produces septic shock, DIC and multiorgan failure.
-- When swelling occurs in a confined space (brain, larynx), or when fibrinous exudates organise into adhesions and constrictive scars, or when fluid loss is massive as in burns.
-- When it contributes to diseases regarded as primarily metabolic or degenerative, such as type 2 diabetes, Alzheimer disease and cancer.
+**It may be harmful**
 
-The clinical use of anti-inflammatory drugs (NSAIDs, corticosteroids, anti-TNF agents) rests on this duality, and their major drawback is that suppression of harmful inflammation also compromises host defence, as seen in the susceptibility of anti-TNF-treated patients to mycobacterial infection.
+- Protective reactions to infection are often accompanied by local tissue damage, with pain and functional impairment. These effects are usually self-limited and leave little or no permanent damage.
+- In many diseases the reaction is *misdirected* against self tissues (autoimmune diseases), occurs against normally harmless environmental substances (allergies) or is *inadequately controlled*. The protective reaction then becomes the cause of the disease.
+- Activated leukocytes release enzymes and reactive oxygen species into the extracellular space, and these damage normal tissue.
+- Examples of diseases caused by inflammatory injury are acute respiratory distress syndrome (neutrophils), glomerulonephritis and vasculitis (antibodies, complement, neutrophils and monocytes), septic shock (cytokines), rheumatoid arthritis (lymphocytes and macrophages) and asthma (eosinophils and IgE antibodies).
+- Inflammation may also contribute to type 2 diabetes, Alzheimer disease and cancer.
 
 ## Vascular changes / reactions of blood vessels in acute inflammation.
 
@@ -1447,19 +1449,13 @@ Increased permeability of the postcapillary venules, a hallmark of acute inflamm
 
 ## What are the vascular events in acute inflammation?
 
-The vascular events of acute inflammation consist of alterations in blood flow and in the permeability of vessels, both directed toward delivering plasma proteins and leukocytes to the site of injury. They occur in a recognisable sequence and are controlled by chemical mediators.
+1. **Vasodilation:** one of the earliest manifestations, involving mainly postcapillary venules and causing increased blood flow.
+2. **Increased permeability of the microvasculature:** outpouring of protein-rich fluid into the extravascular tissues.
+3. **Stasis:** loss of fluid and increased vessel diameter slow the blood flow and increase the concentration of red cells, with vascular congestion.
+4. **Leukocyte accumulation:** as stasis develops, leukocytes, principally neutrophils, accumulate along the endothelium. The endothelial cells are activated and express increased levels of adhesion molecules. Leukocytes then adhere and migrate into the interstitial tissue.
 
-**1. Changes in vascular caliber and flow.** After a brief and inconstant arteriolar vasoconstriction, vasodilation develops. It is induced by histamine, prostaglandins, nitric oxide and other mediators and involves the arterioles and postcapillary venules, opening up capillary beds. It increases blood flow (active hyperaemia), the cause of redness (rubor) and heat (calor), and it is one of the earliest manifestations of acute inflammation.
-
-**2. Increased vascular permeability.** Permeability of the postcapillary venules rises soon after vasodilation, leading to the escape of protein-rich fluid (exudate) into the extravascular space. The mechanisms are (a) endothelial cell contraction, which produces interendothelial gaps and is mediated by histamine, bradykinin and leukotrienes, giving an immediate transient response lasting 15 to 30 minutes, or a delayed prolonged response (2 to 12 hours, for example in sunburn); and (b) endothelial injury with necrosis and detachment, produced directly by burns and microbial toxins or by adherent neutrophils, leading to immediate sustained leakage. This produces swelling (tumour).
-
-**3. Slowing of circulation (stasis).** Loss of fluid raises the viscosity of the blood and the concentration of red cells; with dilated vessels, blood flow slows and the small vessels become engorged with red cells (vascular congestion). Stasis is one cause of persistent redness.
-
-**4. Leukocyte margination.** With slowing of flow, leukocytes leave the central axial stream and assume a peripheral position along the endothelium (margination). Endothelial cells activated by TNF and IL-1 express adhesion molecules, and the leukocytes roll, adhere and then migrate across the vessel wall, the beginning of the cellular phase.
-
-**5. Lymphatic response.** Lymph flow increases and drains the oedema fluid, microbes and cell debris; lymphatic vessels and draining lymph nodes may become inflamed (lymphangitis, lymphadenitis), producing red streaks and tender enlargement of the nodes.
-
-The principal mediators responsible are histamine and serotonin, bradykinin, prostaglandins, leukotrienes C₄, D₄ and E₄, PAF, and the anaphylatoxins C3a and C5a; TNF and IL-1 cause endothelial activation. Vascular leakage ends when the damaged vessels have thrombosed or been repaired, or when mediators have decayed. The loss of fluid can be life-threatening in severe burns.
+- The vascular reactions are designed to maximise the movement of plasma proteins and leukocytes out of the circulation and into the site of infection or injury.
+- Lymphatic vessels also take part. Lymph flow is increased and helps to drain oedema fluid, and the lymphatics and draining lymph nodes may become inflamed (lymphangitis and lymphadenitis).
 
 ## Steps of cellular events in acute inflammation.
 
@@ -1508,38 +1504,28 @@ All these agents bind to specific seven-transmembrane G protein-coupled receptor
 
 ## What are the cellular events of acute inflammation?
 
-The cellular events of acute inflammation comprise the recruitment of leukocytes from the blood to the extravascular focus of injury, their activation, and the removal of the offending agent.
+The changes in blood flow and vascular permeability are quickly followed by an influx of leukocytes into the tissue. The most important leukocytes are the phagocytes, namely ***neutrophils*** and ***macrophages***.
 
-**Leukocyte recruitment.** The important leukocytes in typical inflammatory reactions are neutrophils and macrophages, which are capable of phagocytosis. Their journey from the lumen is a multistep process controlled by adhesion molecules and cytokines. With stasis, leukocytes marginate; selectins (L-selectin on leukocytes; E- and P-selectin on activated endothelium) mediate rolling; chemokines bound to endothelial proteoglycans activate integrins (LFA-1, MAC-1, VLA-4) so that they bind firmly to ICAM-1 and VCAM-1 whose expression is increased by TNF and IL-1; and transmigration through interendothelial junctions occurs under the influence of chemokines and CD31 (PECAM-1). The cells penetrate the basement membrane, probably by collagenases.
+1. **Margination, rolling and adhesion.** In the dilated venules blood flow slows (stasis), so leukocytes take up a peripheral position along the endothelium. They roll (selectins) and then adhere firmly to the activated endothelium (integrins).
+2. **Transmigration (diapedesis).** Leukocytes migrate through the endothelium, mainly in postcapillary venules, and pierce the basement membrane.
+3. **Chemotaxis.** Leukocytes migrate in the tissue towards the site of injury along a chemical gradient.
+4. **Leukocyte activation.** Recognition of microbes and dead cells by receptors on the leukocytes activates them.
+5. **Phagocytosis.** Recognition and attachment, engulfment and formation of a phagocytic vacuole.
+6. **Intracellular killing and degradation** of the microbe and the ingested material, by reactive oxygen species, nitric oxide and lysosomal enzymes.
 
-**Chemotaxis.** Leukocytes move along chemical gradients created by bacterial peptides, chemokines such as IL-8, C5a and LTB₄, which act on G protein-coupled receptors and drive actin polymerisation. Neutrophils predominate during the first 6 to 24 hours, then give way to monocytes within 24 to 48 hours; neutrophils are short lived and die by apoptosis.
-
-**Leukocyte activation.** Recognition of microbes and dead cells by Toll-like receptors, G protein-coupled receptors, opsonin receptors and cytokine receptors activates the cells for phagocytosis, production of arachidonic acid metabolites, cytokine secretion, degranulation, and generation of reactive oxygen species.
-
-**Phagocytosis and intracellular killing.** Phagocytosis involves recognition and attachment, engulfment with formation of a phagosome that fuses with a lysosome, and killing by reactive oxygen species (phagocyte oxidase and myeloperoxidase), reactive nitrogen species derived from nitric oxide, and lysosomal enzymes. Neutrophils can also release extracellular traps (NETs) of nuclear chromatin laden with antimicrobial proteins.
-
-**Tissue injury and termination.** Products of activated leukocytes may be released extracellularly and injure normal tissue. The reaction ends when the stimulus is removed, mediators decay, neutrophils undergo apoptosis, and lipoxins, TGF-β and IL-10 and cholinergic signals exert anti-inflammatory effects.
-
+- Neutrophils predominate during the first 6 to 24 hours and are replaced by monocytes and macrophages in 24 to 48 hours.
+- Leukocyte products may also be released into the extracellular space and damage normal tissue.
 
 ## What are the steps of leukocyte extravasation?
 
-Leukocyte extravasation is the multistep exit of leukocytes from the circulation into the extravascular tissue, which takes place mainly in postcapillary venules. The sequential phases are margination, rolling, adhesion, transmigration, and migration in the tissue by chemotaxis.
+The journey of leukocytes from the vessel lumen to the tissue is a multistep process mediated and controlled by *adhesion molecules* and *cytokines*.
 
-1. **Margination.** In normal flow, red cells occupy a central axial column and leukocytes are displaced toward the wall. In inflammation, vasodilation and increased permeability slow flow, and more white cells assume a peripheral position along the endothelial surface.
-2. **Rolling.** This is mediated by selectins and their sialylated oligosaccharide ligands. TNF and IL-1, secreted by sentinel cells, induce the endothelial expression of E-selectin within 1 to 2 hours and ligands for L-selectin; histamine and thrombin cause redistribution of P-selectin from Weibel-Palade bodies to the surface. The interactions are of low affinity and fast off-rate, so the leukocytes bind, detach and rebind, thereby rolling.
-3. **Firm adhesion.** TNF and IL-1 induce endothelial ICAM-1 and VCAM-1. Chemokines presented on endothelial proteoglycans activate the leukocytes and convert integrins (LFA-1, MAC-1, VLA-4) to a high-affinity state, so that the leukocytes adhere firmly, stop rolling, reorganise their cytoskeleton and spread.
-4. **Transmigration (diapedesis).** Chemokines drive the adherent cells through interendothelial gaps toward the source of the chemokines. Adhesion molecules at the junctions, notably CD31 (PECAM-1), participate.
-5. **Penetration of the basement membrane and chemotaxis.** Leukocytes pierce the basement membrane, probably through collagenases, which is then restored, and migrate toward the chemotactic gradient to accumulate at the site.
-
-| Step | Principal molecules |
-|---|---|
-| Rolling | Selectins (L, E, P) and sialyl-Lewis X ligands |
-| Activation | Chemokines (e.g., IL-8) |
-| Firm adhesion | Integrins (LFA-1, MAC-1, VLA-4) with ICAM-1 and VCAM-1 |
-| Transmigration | CD31 (PECAM-1), chemokines |
-
-Genetic deficiencies in leukocyte adhesion molecules result in increased susceptibility to bacterial infection, which proves their importance; therapeutic antagonists of integrins and TNF control harmful inflammation but may compromise host defence.
-
+1. **Margination.** Dilation of the postcapillary venules slows the blood flow (stasis), and leukocytes move to the periphery along the endothelial surface.
+2. **Rolling.** Mediated by **selectins**. E-selectin and P-selectin on the endothelium and L-selectin on leukocytes make low-affinity bonds that are easily broken, so the leukocytes bind, detach and bind again and roll along the endothelium. TNF and IL-1 induce E-selectin within 1 to 2 hours. Histamine and thrombin move P-selectin to the cell surface.
+3. **Firm adhesion.** Mediated by **integrins** on leukocytes (LFA-1, MAC-1 and VLA-4) binding to their ligands on the endothelium (**ICAM-1** and **VCAM-1**), which are induced by TNF and IL-1. Chemokines displayed on the endothelium activate the rolling leukocytes and convert the integrins to a high-affinity state. The leukocytes stop rolling and spread out on the endothelial surface.
+4. **Transmigration (diapedesis).** Chemokines stimulate the leukocytes to migrate through the interendothelial gaps, mainly in postcapillary venules. **CD31 (PECAM-1)** in the intercellular junctions is involved.
+5. **Piercing the basement membrane.** Leukocytes pierce the basement membrane, probably by secreting collagenases, and enter the extravascular space.
+6. **Chemotaxis.** The cells then migrate in the tissue towards the chemotactic gradient created by chemokines and other chemoattractants.
 
 ## What are phagocytes?
 
@@ -1605,72 +1591,41 @@ Together these cells comprise the **mononuclear phagocyte system**, also known b
 
 ## Name the cells causing phagocytosis.
 
-The cells that perform phagocytosis are called phagocytes. The two major (professional) phagocytes are neutrophils (polymorphonuclear leukocytes), which dominate in the early phase of acute inflammation, and macrophages, derived from circulating monocytes and tissue precursors, which dominate later and in chronic inflammation. Macrophages are tissue cells of the mononuclear phagocyte system and include the Kupffer cells of liver, sinus histiocytes of spleen and lymph nodes, alveolar macrophages of the lung, microglia of the central nervous system, and connective-tissue histiocytes. Dendritic cells and, to a limited extent, eosinophils also have phagocytic capacity.
-
+- The two major phagocytes are ***neutrophils*** and ***macrophages***.
+- They ingest and destroy bacteria and other microbes, as well as necrotic tissue and foreign substances.
+- Phagocytosis and intracellular killing are the functional responses most important for destruction of microbes and other offenders.
 
 ## What are the steps/mechanism of phagocytosis?
 
-Phagocytosis is the engulfment and destruction of microbes, necrotic cells and other particles by neutrophils and macrophages. It is the key effector mechanism by which inflammation removes the offending agent and follows leukocyte recruitment and activation. It proceeds through three sequential steps.
-
-**Step 1: Recognition and attachment of the particle.** Phagocytes recognise particles through several classes of receptors.
-
-- The **macrophage mannose receptor** is a lectin that binds terminal mannose and fucose residues of microbial glycoproteins and glycolipids; mammalian glycoproteins end in sialic acid or N-acetylgalactosamine, so host cells are not recognised.
-- **Scavenger receptors**, originally defined by their ability to bind oxidised or acetylated LDL, also bind many microbes.
-- **Macrophage integrins**, notably MAC-1 (CD11b/CD18), may also bind microbes.
-- **Opsonin receptors.** Phagocytosis is greatly enhanced by opsonisation of microbes with IgG antibodies, the C3b (and iC3b) fragments of complement, and plasma lectins (mannose-binding lectin, collectins). Phagocytes express high-affinity receptors for these opsonins (Fc receptors and complement receptors).
-
-Leukocyte activation through Toll-like receptors and other receptors (including G protein-coupled receptors for N-formylmethionine peptides, and cytokine receptors) enhances the process.
-
-**Step 2: Engulfment.** After binding, signals integrated from the receptors cause remodelling of the membrane and polymerisation of actin filaments. Extensions of the cytoplasm (pseudopods) flow around the particle and the plasma membrane pinches off, forming an intracellular vesicle, the phagosome. The phagosome fuses with one or more lysosomal granules, and the contents of the granules are discharged into the resulting phagolysosome. During this process the phagocyte may release lysosomal contents into the extracellular space.
-
-**Step 3: Killing and degradation.** Killing is achieved by reactive oxygen species, reactive nitrogen species and lysosomal enzymes within the phagolysosome; these are most efficient when the phagocytes are activated, and they are sequestered in lysosomes to protect the cell.
-
-- Reactive oxygen species (oxygen-dependent mechanism). Phagocyte oxidase (NADPH oxidase), a multicomponent enzyme of at least seven proteins, assembles at the phagosomal membrane. It oxidises NADPH and converts oxygen to superoxide anion (the respiratory burst). Superoxide is dismutated to H₂O₂, and in neutrophils myeloperoxidase from azurophil granules converts H₂O₂ and Cl⁻ to hypochlorite, which kills microbes by halogenation and by oxidation of proteins and lipids. H₂O₂ also generates hydroxyl radical.
-- Reactive nitrogen species. iNOS in activated macrophages generates nitric oxide from arginine; NO reacts with superoxide to form peroxynitrite, which damages microbial lipids, proteins and nucleic acids.
-- Lysosomal enzymes. Acid hydrolases in the acidified phagolysosome degrade bacteria and debris. Neutrophil specific (secondary) granules contain lysozyme, collagenase, gelatinase, lactoferrin; azurophil (primary) granules contain MPO, defensins, lysozyme, acid hydrolases and neutral proteases (elastase, cathepsin G, proteinase 3). Lysozyme hydrolyses the bacterial cell wall, defensins and cathelicidins are antimicrobial peptides, and lactoferrin sequesters iron.
-
-**Other points.** Neutrophils may in addition extrude nuclear chromatin laden with antimicrobial proteins as extracellular traps (NETs) to trap microbes too large to phagocytose. If the phagocyte cannot engulf a target (for example immune complexes on a basement membrane, "frustrated phagocytosis"), or if crystals such as urate damage the phagolysosome, lysosomal enzymes and ROS are released extracellularly and injure host tissue. Host tissues are protected by antioxidants (superoxide dismutase, catalase, glutathione peroxidase, ceruloplasmin, transferrin) and by antiproteases (α₁-antitrypsin, α₂-macroglobulin).
-
-**Clinical correlates.** Deficiency of phagocyte oxidase causes chronic granulomatous disease; deficiency of MPO alone causes minimal susceptibility because of redundancy; and deficiency of α₁-antitrypsin permits unrestrained elastase activity and emphysema.
-
+1. **Recognition and attachment** of the particle to be ingested by the leukocyte. Mannose receptors, scavenger receptors and receptors for opsonins (IgG antibodies, the C3b breakdown product of complement, and certain plasma lectins) enable phagocytes to bind microbes.
+2. **Engulfment**, with subsequent formation of a phagocytic vacuole. Extensions of the cytoplasm flow around the particle and the plasma membrane pinches off to form a phagosome, which then fuses with a lysosomal granule to form a phagolysosome.
+3. **Killing of the microbe and degradation** of the ingested material.
 
 ## Write the mechanism of oxygen-dependent microbial killing (role of oxygen in phagocytic killing).
 
-Killing of ingested microbes by phagocytes is achieved by reactive oxygen species (ROS), reactive nitrogen species, and lysosomal enzymes. The oxygen-dependent mechanism is the most important and is produced by the following sequence.
+1. **Respiratory burst:** on activation of the phagocyte, the components of **phagocyte oxidase (NADPH oxidase)** assemble in the membrane of the phagosome. The enzyme oxidises NADPH and converts oxygen to ***superoxide anion***. In neutrophils this is accompanied by increased oxygen consumption, called the *respiratory burst*.
+2. **Hydrogen peroxide:** superoxide is converted to hydrogen peroxide, mostly by spontaneous dismutation.
+3. **Hypochlorite:** hydrogen peroxide is not able to kill microbes efficiently by itself. In the presence of a halide such as chloride, **myeloperoxidase (MPO)** of the azurophilic granules converts it to ***hypochlorite***, the active ingredient of household bleach. This is the most potent bactericidal system of neutrophils.
+4. **Hydroxyl radical:** hydrogen peroxide is also converted to the hydroxyl radical.
+5. **Killing:** hypochlorite destroys microbes by halogenation and by oxidation of proteins and lipids (lipid peroxidation). The oxygen-derived free radicals bind to and modify cellular lipids, proteins and nucleic acids.
 
-**1. Assembly of phagocyte oxidase.** Reactive oxygen species are produced by the rapid assembly and activation of a multicomponent enzyme, phagocyte oxidase (NADPH oxidase), consisting of at least seven proteins. In resting neutrophils, some components lie in the plasma membrane and others in the cytoplasm. In response to activating stimuli, the cytosolic components translocate to the membrane of the phagosome, where they assemble into the functional enzyme complex. As a result, ROS are generated within the phagolysosome, where they act on the ingested particle without damaging the host cell.
-
-**2. Respiratory burst and generation of superoxide.** The assembled enzyme oxidises NADPH (supplied by the hexose monophosphate shunt, which accelerates) and reduces molecular oxygen to superoxide anion (O₂•⁻): NADPH + 2O₂ → NADP⁺ + 2O₂•⁻ + H⁺. In neutrophils, this is accompanied by a sharp increase in oxygen consumption, called the respiratory burst.
-
-**3. Conversion to hydrogen peroxide.** Superoxide is converted to hydrogen peroxide (H₂O₂), mostly by spontaneous dismutation (also accelerated by superoxide dismutase).
-
-**4. Myeloperoxidase-halide system.** H₂O₂ is not by itself able to kill microbes efficiently. The azurophil granules of neutrophils contain myeloperoxidase (MPO), which, in the presence of a halide such as chloride, converts H₂O₂ to hypochlorite (HOCl or ClO⁻), the active ingredient of household bleach. Hypochlorite destroys microbes by halogenation (covalent binding of the halide to cellular constituents) and by oxidation of proteins and lipids (lipid peroxidation). The H₂O₂-MPO-halide system is the most potent bactericidal system of neutrophils.
-
-**5. Hydroxyl radical.** H₂O₂ is also converted to the hydroxyl radical (•OH), a further powerful destructive agent that damages microbial lipids, proteins and nucleic acids.
-
-**Reactive nitrogen species** act in parallel: iNOS, induced mainly in macrophages by IFN-γ or microbial products, produces nitric oxide, which reacts with superoxide to give peroxynitrite. Because of the overlapping action of ROS and RNS, mice that lack both phagocyte oxidase and iNOS succumb to infection by otherwise harmless commensal bacteria, while those lacking only one are mildly susceptible.
-
-**Protection of the host.** ROS may leak extracellularly and cause tissue damage. The host is protected by superoxide dismutase, catalase (detoxifies H₂O₂), glutathione peroxidase, ceruloplasmin and the iron-free fraction of transferrin.
-
-**Clinical significance.** Inherited deficiency of components of phagocyte oxidase produces chronic granulomatous disease, an immunodeficiency in which phagocytes cannot generate ROS, causing recurrent infections and granuloma formation. By contrast, inherited MPO deficiency causes minimal increase in susceptibility to infection, which shows the redundancy of the microbicidal mechanisms.
-
+- The reactive oxygen species are produced inside the phagolysosome, so they act on the ingested microbe without damaging the host cell.
+- Inherited deficiency of the components of phagocyte oxidase causes the immunodeficiency disease ***chronic granulomatous disease***.
 
 ## Write a short note on opsonin.
 
-Opsonins are molecules that coat microbes or other particles and make them more readily recognised and ingested by phagocytes. The process of coating is called opsonisation. Phagocytes express high-affinity receptors for opsonins, so the efficiency of phagocytosis is greatly enhanced when microbes are opsonised; the term comes from a Greek word meaning "to prepare for eating".
+***Opsonins*** are molecules that coat microbes and greatly enhance the efficiency of phagocytosis. The phagocytes express high-affinity receptors for them.
 
-**Major opsonins** and their receptors:
+**The major opsonins**
 
-| Opsonin | Receptor on phagocyte |
-|---|---|
-| Immunoglobulin G antibody (Fc portion) | Fcγ receptors |
-| C3b and its breakdown product iC3b (complement) | Complement receptors (including MAC-1 / CR3) |
-| Plasma lectins: mannose-binding lectin and collectins | Lectin receptors |
-| Acute-phase proteins such as C-reactive protein and serum amyloid A | Bind microbial walls and fix complement |
+- **Immunoglobulin G** (IgG) antibodies.
+- **C3b**, a breakdown product of complement.
+- Certain plasma lectins, notably **mannose-binding lectin** and *collectins*.
 
-**Mechanism.** Antibody binds through its Fab region to a microbial antigen and presents the Fc tail to Fc receptors; complement activation by the classical, alternative or lectin pathways deposits C3b covalently on the microbial surface; mannose-binding lectin binds microbial sugars. The bridge formed between the microbe and the phagocyte receptor triggers signalling that leads to engulfment and also activates the phagocyte.
+All of these are recognised by specific receptors on leukocytes.
 
-**Significance.** Opsonisation is the mechanism by which adaptive immunity (antibodies) and innate immunity (complement, lectins) direct phagocytes against microbes. Deficiencies of antibody or complement (and, clinically, absence of the spleen) predispose to infections with encapsulated bacteria. Opsonin-coated microbes are also recognised by macrophages through opsonin-independent receptors such as the mannose and scavenger receptors, but with lower efficiency.
+- C3b and its inactive product iC3b fixed to the microbial cell wall promote phagocytosis by neutrophils and macrophages.
+- Acute-phase proteins such as C-reactive protein and serum amyloid A bind to microbial cell walls and may act as opsonins and fix complement.
 
 ## Name the chemical mediators of inflammation.
 
@@ -1769,89 +1724,50 @@ Complement proteins (C1 to C9) are present as inactive forms in plasma. Many bec
 
 ## What chemical mediators are responsible for the vascular events/features of acute inflammation?
 
-The vascular events of acute inflammation (vasodilation, increased vascular permeability, and the later endothelial activation that promotes leukocyte adhesion) are driven by several mediators with overlapping actions, which ensures a robust response (Table 3.5).
-
-**Vasodilation** (cause of redness and warmth):
-
-- **Histamine**, acting on H1 receptors of vascular smooth muscle, is the principal early mediator.
-- **Prostaglandins** PGI₂ (prostacyclin), PGE₁, PGE₂ and PGD₂ are vasodilators; PGD₂ is the major prostaglandin of mast cells.
-- **Nitric oxide**, produced by endothelial and inducible NOS, relaxes vascular smooth muscle.
-- **Bradykinin** (kinin system), **PAF** (at low concentrations), and the anaphylatoxins **C3a and C5a** (by releasing histamine from mast cells) contribute.
-
-**Increased vascular permeability** (cause of oedema):
-
-- **Histamine and serotonin**, the immediate transient response through endothelial contraction.
-- **Bradykinin**, which has effects similar to those of histamine, and is rapidly inactivated by kininase.
-- **Leukotrienes C₄, D₄ and E₄**, produced by 5-lipoxygenase in mast cells and leukocytes.
-- **C3a and C5a**, by liberating vasoactive amines from mast cells.
-- **PAF**, **substance P** and prostaglandins (which potentiate permeability).
-- **Cytokines (TNF, IL-1)** and **reactive oxygen species and lysosomal enzymes** from leukocytes mediate delayed and sustained leakage by endothelial activation and injury.
-
-**Vasoconstriction** (transient, minor): thromboxane A₂, leukotrienes C₄, D₄, E₄ and serotonin.
-
-**Leukocyte adhesion and recruitment:** TNF and IL-1 induce E-selectin and the integrin ligands ICAM-1 and VCAM-1; histamine and thrombin mobilise P-selectin; chemokines, C5a and LTB₄ attract and activate leukocytes.
-
-| Reaction | Principal mediators |
+| Vascular event | Principal mediators |
 |---|---|
-| Vasodilation | Histamine, prostaglandins, NO, bradykinin |
-| Increased permeability | Histamine, serotonin, C3a, C5a, leukotrienes C₄/D₄/E₄, bradykinin, PAF |
-| Endothelial activation | TNF, IL-1 |
+| ***Vasodilation*** | **Histamine** (the principal mediator). Prostaglandins (PGI2, PGE2, PGD2), bradykinin, platelet-activating factor, and complement through stimulation of mast cells |
+| ***Increased vascular permeability*** | **Histamine** and **serotonin**. **C3a** and **C5a** (by liberating vasoactive amines from mast cells). **Leukotrienes** C4, D4 and E4. Bradykinin and platelet-activating factor. PGE2 and PGD2 potentiate the oedema |
 
+- Histamine is the principal mediator of the *immediate transient phase* of increased vascular permeability.
+- TNF and IL-1 act on endothelial cells and promote adhesion of leukocytes to the endothelium.
 
 ## List the molecules and cytokines involved in inflammation.
 
-A large number of molecules mediate the steps of inflammation, grouped as follows.
+**Chemical mediators**
 
-| Category | Molecules |
-|---|---|
-| Recognition receptors | Toll-like receptors, NOD-like receptors and inflammasome, mannose-binding lectin, collectins, Fc and complement receptors |
-| Adhesion molecules | Selectins (L, E, P), integrins (LFA-1, MAC-1, VLA-4, α4β7), ICAM-1, VCAM-1, CD31 (PECAM-1), sialyl-Lewis X |
-| Vasoactive amines | Histamine, serotonin |
-| Arachidonic acid metabolites | Prostaglandins (PGE₂, PGD₂, PGI₂), thromboxane A₂, leukotrienes (LTB₄, LTC₄, LTD₄, LTE₄), lipoxins, resolvins |
-| Other lipid mediator | Platelet-activating factor |
-| Plasma proteases | Complement (C3a, C5a, C3b, MAC), kinins (bradykinin), coagulation and fibrinolytic proteins (thrombin, plasmin) |
-| Cell-derived effectors | Reactive oxygen species, nitric oxide, lysosomal enzymes |
-| Neuropeptides | Substance P, neurokinin A |
-| Pro-inflammatory cytokines | TNF, IL-1, IL-6, IL-12, IL-17, IL-18, IFN-γ, HMGB1 |
-| Chemokines | CXCL8 (IL-8), MCP-1 (CCL2), eotaxin (CCL11), MIP-1α (CCL3), lymphotactin (XCL1), fractalkine (CX3CL1) |
-| Th2 cytokines | IL-4, IL-5, IL-13 |
-| Anti-inflammatory cytokines | IL-10, TGF-β |
-| Acute-phase proteins | C-reactive protein, fibrinogen, serum amyloid A, hepcidin |
+- Vasoactive amines: histamine and serotonin.
+- Arachidonic acid metabolites: prostaglandins, leukotrienes and lipoxins.
+- Platelet-activating factor.
+- Complement: C3a, C5a, C3b and the membrane attack complex.
+- Kinins: bradykinin.
+- Neuropeptides: substance P and neurokinin A.
 
+**Cytokines**
+
+- In acute inflammation: ***TNF***, ***IL-1***, ***IL-6***, ***chemokines*** (for example IL-8) and ***IL-17***.
+- In chronic inflammation: ***IL-12*** and ***IFN-gamma***.
+
+**Adhesion molecules**
+
+- Selectins: L-selectin, E-selectin and P-selectin.
+- Integrins: LFA-1, MAC-1 and VLA-4.
+- Immunoglobulin family: ICAM-1, VCAM-1 and CD31 (PECAM-1).
 
 ## State the consequences of complement activation.
 
-Activation of the complement system through the classical, alternative or lectin pathways yields cleavage products that have three principal biological effects, and its dysregulation causes disease.
+All three pathways of complement activation lead to cleavage of C3. The complement system has three main functions.
 
-1. **Inflammation.** C5a, C3a and, to a lesser extent, C4a are anaphylatoxins: they stimulate histamine release from mast cells and thereby cause increased vascular permeability and vasodilation. C5a is also a chemotactic agent for neutrophils, monocytes, eosinophils and basophils, and activates the lipoxygenase pathway of arachidonic acid metabolism in neutrophils and monocytes, leading to further release of mediators.
-2. **Opsonisation and phagocytosis.** C3b and its inactive product iC3b, fixed to microbial cell walls, act as opsonins and promote phagocytosis by neutrophils and macrophages, which bear receptors for these fragments.
-3. **Cell lysis.** The membrane attack complex (C5b to C9, with multiple C9 molecules) makes cells permeable to water and ions and causes osmotic lysis, important in killing microbes with thin cell walls such as Neisseria; deficiency of terminal components predisposes to Neisseria infection.
-
-**Pathological consequences.** Complement activation by antibodies or antigen-antibody complexes deposited on host cells and tissues is an important mechanism of tissue injury in autoimmune and immune-complex disease. Inherited deficiencies of complement proteins increase susceptibility to infection, and deficiency of regulators produces excess activation: C1 inhibitor deficiency causes hereditary angioedema; deficiency of DAF and CD59 causes paroxysmal nocturnal haemoglobinuria; defects in factor H cause atypical haemolytic uraemic syndrome and are associated with age-related macular degeneration. Inhibitors of C5 and C3 activation are now approved for several of these disorders.
-
+1. **Inflammation.** C5a, C3a and, to a lesser extent, C4a stimulate histamine release from mast cells, and so increase vascular permeability and cause vasodilation. They are called ***anaphylatoxins***. C5a is also *chemotactic* for neutrophils, monocytes, eosinophils and basophils, and activates the lipoxygenase pathway of arachidonic acid metabolism in neutrophils and monocytes.
+2. **Opsonisation and phagocytosis.** C3b and its inactive product iC3b, fixed to the microbial cell wall, act as opsonins and promote phagocytosis by neutrophils and macrophages, which have receptors for these fragments.
+3. **Cell lysis.** Deposition of the ***membrane attack complex*** makes cells permeable to water and ions and results in osmotic lysis. This is particularly important for killing microbes with thin cell walls, such as *Neisseria*.
 
 ## Which chemical mediators are responsible for pain and swelling?
 
-**Pain (dolor).** The mediators responsible for pain are:
-
-- **Prostaglandins**, especially PGE₂, which are hyperalgesic: they sensitise sensory nerve endings so that the skin becomes hypersensitive to painful stimuli such as histamine and bradykinin. This explains why NSAIDs relieve inflammatory pain.
-- **Bradykinin**, which produces pain when injected into the skin, in addition to increasing vascular permeability.
-- **Substance P**, a neuropeptide released by sensory nerves, which transmits pain signals and increases vascular permeability.
-- Other contributors are histamine and cytokines (IL-1, TNF), as well as distension of tissue by oedema and direct injury by leukocyte-derived enzymes and oxygen radicals.
-
-**Swelling (tumour).** Swelling is produced mainly by oedema due to increased vascular permeability of venules, together with vasodilation that increases the hydrostatic pressure. The responsible mediators are:
-
-- **Histamine** and **serotonin** (immediate transient phase).
-- **Bradykinin**.
-- **Leukotrienes C₄, D₄ and E₄**.
-- **C3a and C5a**, by releasing histamine and other amines from mast cells.
-- **PAF**, **substance P**, and **prostaglandins** (PGE₂ and PGD₂, which potentiate oedema formation).
-- **TNF and IL-1**, and leukocyte products (ROS and lysosomal enzymes), which sustain leakage by injuring the endothelium.
-
-| Reaction | Principal mediators (Robbins) |
+| Sign | Principal mediators |
 |---|---|
-| Pain | Prostaglandins, bradykinin, substance P |
-| Swelling (increased permeability) | Histamine and serotonin, C3a and C5a, leukotrienes C₄/D₄/E₄ |
+| ***Pain*** | **Prostaglandins** (PGE2 makes the skin hypersensitive to painful stimuli), **bradykinin** and **substance P** |
+| ***Swelling*** (oedema from increased vascular permeability) | **Histamine** and **serotonin**. **C3a** and **C5a**, by liberating vasoactive amines from mast cells. **Leukotrienes** C4, D4 and E4. Bradykinin also increases vascular permeability |
 
 ## Morphological types / patterns of acute inflammation.
 
@@ -1884,16 +1800,14 @@ An ***abscess*** is a localised collection of pus caused by suppuration buried i
 
 ## Describe the morphological patterns of acute inflammation.
 
-The morphological hallmarks of acute inflammation are dilation of small vessels and accumulation of leukocytes and fluid in the extravascular tissue. Superimposed on these are special patterns that depend on the severity of the reaction, its cause, and the tissue and site involved, and which often give clues to the cause.
+The morphologic hallmarks of acute inflammation are dilation of small blood vessels and accumulation of leukocytes and fluid in the extravascular tissue. Special patterns are superimposed on these features, depending on the severity of the reaction, its aetiology, and the tissue and site involved. They often give valuable clues about the underlying cause.
 
-**1. Serous inflammation.** Serous inflammation is marked by exudation of cell-poor, serum-like fluid into spaces created by cell injury or into body cavities lined by peritoneum, pleura or pericardium. The fluid usually contains no microbes and few leukocytes. The skin blister resulting from a burn or viral infection is a collection of serous fluid within or beneath the damaged epidermis. In body cavities the fluid may derive from plasma, owing to increased vascular permeability, or from secretions of mesothelial cells, owing to local irritation; accumulation is called effusion (effusions also occur in noninflammatory conditions, such as heart failure).
-
-**2. Fibrinous inflammation.** With a greater increase in vascular permeability, large molecules such as fibrinogen leak from vessels and, if there is a local procoagulant stimulus, fibrin is formed and deposited in the extracellular space. It is characteristic of inflammation in the lining of body cavities such as the meninges, pericardium and pleura. Histologically fibrin is an eosinophilic meshwork of threads or an amorphous coagulum. Fibrinous exudates may be dissolved by fibrinolysis and cleared by macrophages; if not removed, they stimulate the ingrowth of fibroblasts and blood vessels (organisation) and lead to scarring, with opaque fibrous thickening of the pericardium and, if extensive, obliteration of the pericardial space.
-
-**3. Purulent (suppurative) inflammation and abscess.** This is characterised by the production of pus, an exudate of neutrophils, liquefied debris of necrotic cells and oedema fluid. It is most often caused by pyogenic (pus-producing) bacteria, such as staphylococci, that cause liquefactive necrosis. Acute appendicitis is a common example. An abscess is a localised collection of pus buried in tissue, with a central liquefied region, a surrounding zone of preserved neutrophils, and an outer zone of vascular dilation and fibroblastic proliferation; in time it is walled off and replaced by connective tissue.
-
-**4. Ulcers.** An ulcer is a local defect of the surface of an organ or tissue produced by the sloughing of inflamed necrotic tissue; it occurs only where necrosis and inflammation exist on or near a surface. It is common in the mucosa of the mouth, stomach, intestines and genitourinary tract and in the skin and subcutaneous tissue of the legs in patients with vascular insufficiency (diabetes, peripheral vascular disease). Peptic ulcer is the classic example, with acute inflammation at the margins and chronic inflammation and fibrosis in the base.
-
+| Pattern | Main feature |
+|---|---|
+| ***Serous inflammation*** | Exudation of serum-like fluid into spaces created by cell injury, or into body cavities lined by the peritoneum, pleura or pericardium. The fluid typically contains no microbes and few leukocytes. |
+| ***Fibrinous inflammation*** | With a greater increase in vascular permeability, large molecules such as fibrinogen leave the blood and fibrin is deposited in the extracellular space. Typical of the lining of body cavities such as meninges, pericardium and pleura. |
+| ***Purulent (suppurative) inflammation*** | Production of **pus**, an exudate of neutrophils, the liquefied debris of necrotic cells and oedema fluid. Caused mainly by pyogenic (pus-producing) bacteria such as staphylococci. An **abscess** is a localised collection of pus. |
+| ***Ulcer*** | A local defect, or excavation, of the surface of an organ or tissue, produced by sloughing of inflamed necrotic tissue. |
 
 ## Beneficial effects of acute inflammation.
 
@@ -2075,91 +1989,73 @@ There are two types of granuloma, which differ in their pathogenesis.
 
 ## Write a short note on granulomatous inflammation.
 
-**Definition.** Granulomatous inflammation is a distinctive form of chronic inflammation characterised by collections of activated macrophages, often with T lymphocytes, and sometimes with necrosis. A granuloma is a cellular attempt to contain an offending agent that is difficult to eradicate.
+***Granulomatous inflammation*** is a form of chronic inflammation characterised by collections of activated macrophages, often with T lymphocytes, and sometimes associated with necrosis. A ***granuloma*** is a cellular attempt to contain an offending agent that is difficult to eradicate.
 
-**Types and pathogenesis.** Foreign-body granulomas form around inert materials (talc, suture, fibres) too large for phagocytosis and are not immunogenic, so there is no T-cell response. Immune granulomas are caused by agents that induce a persistent T cell-mediated response. Antigen-presenting macrophages stimulate Th1 cells through IL-12; Th1 cells produce IFN-γ, which activates macrophages; and a macrophage-T-cell cycle sustains the reaction. In schistosomiasis a Th2 response with eosinophils is seen.
+**Types**
 
-**Morphology.** Activated macrophages with abundant pink cytoplasm resemble epithelium (epithelioid cells), are surrounded by a collar of lymphocytes, and may fuse into Langhans giant cells (40 to 50 μm). Older granulomas have a rim of fibroblasts. Hypoxia and free radical injury produce central caseous necrosis in tuberculosis; granulomas of Crohn disease, sarcoidosis and foreign-body reactions are noncaseating. Healing causes fibrosis.
+1. **Foreign body granulomas**: reactions to inert foreign bodies (talc, suture material, fibres) in the absence of a T cell-mediated immune response.
+2. **Immune granulomas**: caused by agents that induce a persistent T cell-mediated immune response, in which Th1 cells produce IFN-gamma, which activates macrophages.
 
-**Causes.** Tuberculosis, leprosy, syphilis, cat-scratch disease, fungal and parasitic infections, sarcoidosis, Crohn disease, foreign materials.
+**Morphology**
 
-**Significance.** The limited number of causes (some life-threatening) makes recognition important; tuberculosis must always be excluded, and the aetiologic agent should be identified by special stains (acid-fast), culture, PCR or serology. Activation of macrophages and T cells may itself cause tissue damage, and TNF antagonists can reactivate tuberculosis by impairing granuloma maintenance.
+- Activated macrophages with pink granular cytoplasm and indistinct cell boundaries are called ***epithelioid cells***. They are surrounded by a collar of lymphocytes. Older granulomas have a rim of fibroblasts and connective tissue.
+- Frequently there are **multinucleate giant cells** (Langhans giant cells), 40 to 50 micrometres in diameter, formed by the fusion of activated macrophages.
+- In tuberculosis a central zone of *caseous necrosis* develops. Granulomas of Crohn disease, sarcoidosis and foreign body reactions are *noncaseating*.
+- Healing is accompanied by fibrosis, which may be extensive.
 
+**Examples:** tuberculosis (the prototype, with granulomas called tubercles), leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease.
 
 ## Mention the types/etiological classification of granuloma with examples.
 
-Granulomas are classified by pathogenesis into foreign-body and immune types, and by aetiology as follows (Table 3.9).
+There are two types of granuloma, which differ in their pathogenesis.
 
-| Aetiological group | Examples | Type of granuloma |
+| Feature | Foreign body granuloma | Immune granuloma |
 |---|---|---|
-| Bacterial | Tuberculosis (caseating), leprosy (noncaseating, bacilli in macrophages), syphilis (gumma), cat-scratch disease (stellate), brucellosis | Immune |
-| Fungal | Histoplasmosis, cryptococcosis, blastomycosis, coccidioidomycosis | Immune |
-| Parasitic | Schistosomiasis (egg granuloma with eosinophils; Th2) | Immune |
-| Foreign bodies / chemical | Talc, suture material, silica, beryllium, urate crystals (gout) | Foreign-body (beryllium is immune) |
-| Idiopathic or immune-mediated | Sarcoidosis, Crohn disease | Immune (noncaseating) |
+| Cause | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
+| Mechanism | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
+| Examples | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
+| Morphology | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
 
-Morphologically they are separated into **caseating** granulomas (tuberculosis, with central amorphous eosinophilic granular necrosis) and **noncaseating** granulomas (sarcoidosis, Crohn disease, foreign-body reactions, leprosy). Syphilitic gumma shows coagulative necrosis with preserved cell outlines.
-
+- *Caseating* granulomas have a central zone of caseous necrosis (tuberculosis). *Noncaseating* granulomas lack necrotic centres (Crohn disease, sarcoidosis, foreign body reactions).
 
 ## Draw and label a tubercular (typical) granuloma.
 
-The following schematic shows a typical tuberculous granuloma (tubercle) in cross-section, with concentric zones from the centre outward.
+A typical *tuberculous granuloma* (***tubercle***) is a rounded focus with the following parts, from the centre outwards.
 
-┌─────────────────────────────────────────────┐
-╱ Fibroblasts / collagen rim (outermost) ╲
-│ ┌─────────────────────────────────────────┐ │
-│ ╱ Collar of lymphocytes (mostly T cells) ╲ │
-│ │ ┌────────────────────────────────────┐ │ │
-│ │ ╱ Epithelioid cells (activated ╲ │ │
-│ │ │ macrophages) + Langhans giant cells │ │ │
-│ │ │ ┌──────────────────────────────┐ │ │ │
-│ │ │ │ CENTRAL CASEOUS NECROSIS │ │ │ │
-│ │ │ │ (amorphous, granular, │ │ │ │
-│ │ │ │ eosinophilic debris; │ │ │ │
-│ │ │ │ AFB seen with ZN stain) │ │ │ │
-│ │ │ └──────────────────────────────┘ │ │ │
-│ │ ╲ ╱ │ │
-│ ╲ └────────────────────────────────────┘ ╱ │
-│ └─────────────────────────────────────────┘ │
-╲ ╱
-└─────────────────────────────────────────────┘
+1. **Central caseous necrosis.** Amorphous, structureless, eosinophilic granular debris, with complete loss of cellular detail. Acid-fast bacilli can be seen.
+2. **Epithelioid cells.** Activated macrophages with pink granular cytoplasm and indistinct cell boundaries, around the necrosis.
+3. **Langhans giant cells.** Multinucleate cells, 40 to 50 micrometres in diameter, formed by fusion of macrophages.
+4. **Collar of lymphocytes** around the epithelioid cells.
+5. **Rim of fibroblasts and connective tissue**, in older granulomas.
 
-**Labels.**
-
-1. **Central zone of caseous necrosis**: structureless, granular, eosinophilic debris with complete loss of cellular outlines (cheesy on gross); acid-fast bacilli may be demonstrated with the Ziehl-Neelsen stain.
-2. **Epithelioid cells**: activated macrophages with abundant pink granular cytoplasm and indistinct cell boundaries, arranged around the necrosis (palisading).
-3. **Langhans giant cells**: large multinucleate cells (40 to 50 μm) with nuclei arranged in a horseshoe or peripheral ring, formed by the fusion of macrophages.
-4. **Lymphocytes** (a collar of mainly CD4⁺ T cells) at the periphery of the epithelioid zone.
-5. **Fibroblasts and connective tissue** rim in older granulomas, indicating healing by fibrosis.
-
+- In the diagram, label the area of central necrosis, surrounded by multiple giant cells, epithelioid cells and lymphocytes.
 
 ## How does immune granuloma form?
 
-An immune granuloma is the result of a persistent T cell-mediated immune (delayed-type hypersensitivity) response to a microbe or other chronic stimulus that cannot be eliminated. It is the typical consequence of prolonged interaction between T cells and macrophages. The steps are as follows.
+***Granuloma formation*** is a cellular attempt to contain an offending agent that is difficult to eradicate.
 
-1. **Antigen uptake and presentation.** Macrophages and dendritic cells ingest the persistent agent (for example tubercle bacilli), process it, and display its peptides to CD4⁺ T lymphocytes, together with costimulators.
-2. **T-cell activation and differentiation.** Macrophages produce IL-12 and other cytokines, which drive differentiation of naive CD4⁺ cells into Th1 cells (in some parasitic infections, such as schistosomiasis, strong Th2 responses with eosinophils; Th17 cells contribute through IL-17, which recruits neutrophils and monocytes).
-3. **Macrophage activation.** Th1 cells secrete IFN-γ, which activates macrophages by the classical pathway, enhancing their ability to kill microbes (NO, ROS, lysosomal enzymes). TNF, IL-17 and chemokines recruit further monocytes from the blood.
-4. **Feedback loop.** Activated macrophages again present antigen and secrete IL-12, stimulating more T cells, which produce more cytokines; this bidirectional cycle propagates and sustains the reaction.
-5. **Formation of epithelioid and giant cells.** Strongly activated macrophages acquire abundant cytoplasm and resemble epithelial cells (epithelioid cells); some fuse into multinucleate giant cells.
-6. **Organisation of the granuloma.** Lymphocytes cluster around the macrophage mass; with time, fibroblasts deposit connective tissue around it.
-7. **Necrosis and healing.** In tuberculosis, hypoxia and free radical injury cause central caseous necrosis. Healing is accompanied by fibrosis which may be extensive.
+1. A persistent microbe or other chronic stimulus activates **T lymphocytes**.
+2. **Macrophages** display the antigen to T cells and produce IL-12, which stimulates the T-cell response.
+3. **Th1 cells** produce cytokines such as ***IFN-gamma***, which activates the macrophages. Activated T cells also produce TNF, IL-17 and chemokines that recruit more macrophages.
+4. Activated macrophages produce cytokines (IL-12 and others) that stimulate the T cells again. This cycle of T cell and macrophage reactions sustains the chronic inflammation.
+5. The activated macrophages develop abundant cytoplasm and resemble epithelial cells (***epithelioid cells***). Some of them fuse to form ***multinucleate giant cells***.
+6. The aggregate of epithelioid cells is surrounded by a collar of lymphocytes. In some infections (classically *Mycobacterium tuberculosis*), hypoxia and free radical injury lead to a central zone of caseous necrosis.
+7. Older granulomas develop a rim of fibroblasts and connective tissue, and healing is accompanied by fibrosis.
 
-Granuloma formation is therefore a protective attempt to wall off an agent resistant to eradication, but it can injure normal tissue and cause fibrosis.
-
+- In *foreign body granulomas* no T-cell immune response is involved; the inert foreign material itself induces the reaction.
 
 ## Give the immunopathogenesis of TB granuloma.
 
-Mycobacterium tuberculosis is inhaled in droplets and ingested by alveolar macrophages, in which it survives by inhibiting phagosome-lysosome fusion and thereby multiplies in the first weeks. Infected macrophages and dendritic cells transport antigen to regional lymph nodes, and after about 2 to 4 weeks a cell-mediated immune response (delayed-type hypersensitivity) develops.
+Immunity to *Mycobacterium tuberculosis* is mediated by **Th1 cells**, which stimulate macrophages to kill the bacteria. The same response produces the granuloma and the tissue damage.
 
-1. Antigen-presenting macrophages and dendritic cells secrete **IL-12**, which drives differentiation of CD4⁺ **Th1** cells.
-2. Th1 cells secrete **IFN-γ**, which activates macrophages: phagosome-lysosome fusion is restored, and macrophages produce nitric oxide, reactive oxygen species and lysosomal enzymes that kill or inhibit the bacilli. **TNF** secreted by macrophages and T cells recruits monocytes and is essential for maintaining the granuloma; patients treated with TNF antagonists may reactivate latent infection.
-3. Activated macrophages transform into **epithelioid cells** and fuse into **Langhans giant cells**; lymphocytes form a surrounding collar and fibroblasts, a rim.
-4. **Caseous necrosis** develops centrally because of hypoxia, free radical injury and the cytotoxic effect of T-cell and macrophage products; it limits bacillary growth because of its low oxygen tension and low pH.
-5. The primary lesion, with involved hilar nodes, forms the Ghon complex, which heals by fibrosis and calcification. Failure of immunity (HIV infection, malnutrition, immunosuppression, TNF blockade) allows progressive disease, and reactivation or reinfection produces secondary tuberculosis.
+1. **Entry into macrophages.** The bacteria are phagocytosed by macrophages, mainly alveolar macrophages.
+2. **Replication in macrophages.** The bacteria block formation of the phagolysosome, so they multiply unchecked in the phagosome. In the first 3 weeks, in the nonsensitised person, the bacteria proliferate in alveolar macrophages and air spaces and seed multiple sites through the blood.
+3. **Th1 response.** About 3 weeks after infection, dendritic cells carry the antigens to the draining lymph nodes and present them to T cells. **IL-12** and **IL-18**, produced by antigen-presenting cells, drive differentiation of Th1 cells.
+4. **Macrophage activation.** Th1 cells produce **IFN-gamma**, which activates macrophages to produce nitric oxide and reactive oxygen species in the phagolysosome, mobilises defensins such as cathelicidin, and stimulates autophagy. The macrophages become bactericidal.
+5. **Granuloma formation.** The Th1 response orchestrates formation of granulomas. Macrophages activated by IFN-gamma become **epithelioid cells**, and some fuse to form **giant cells**. Activated macrophages secrete **TNF** and chemokines, which recruit more monocytes.
+6. **Caseous necrosis.** If the infection progresses, the ongoing immune response causes caseous necrosis in the centre of the granuloma.
 
-The same immune response that controls the infection causes tissue destruction through caseation, which is why the host response contributes more to the pathology than the organism itself.
-
+- Host susceptibility to disease is increased by AIDS (loss of Th1 function), TNF inhibitors and other forms of immunosuppression.
 
 ## Define a giant cell.
 
@@ -2211,18 +2107,10 @@ Tissues are divided into three groups, based on their intrinsic proliferative ca
 
 ## What do you mean by regeneration and repair?
 
-**Repair** (healing) refers to the restoration of tissue architecture and function after injury. It occurs by two processes: **regeneration**, which restores normal cells and structures, and **scarring** (fibrosis), the deposition of connective tissue.
+***Repair*** (healing) refers to the restoration of tissue architecture and function after an injury. It occurs by two processes.
 
-**Regeneration** is the replacement of injured cells by cells of the same type, restoring normal tissue. It may occur by proliferation of surviving differentiated cells that retain proliferative capacity (hepatocytes), or by development of mature cells from tissue stem cells and progenitors in their niches (the epithelia of skin and intestine). It is driven by growth factors (HGF, TGF-α, EGF) and signals from the extracellular matrix and integrins, and it requires an intact connective tissue framework. The liver is the classic example: after partial hepatectomy, up to 90% can regenerate by proliferation of residual hepatocytes, primed by IL-6 from Kupffer cells and driven by HGF and TGF-α; when hepatocyte proliferation is impaired, as in chronic injury, progenitor cells in the canals of Hering contribute. Labile tissues regenerate readily, stable tissues can regenerate to a limited extent (except the liver), and permanent tissues (neurons, cardiac muscle) cannot.
-
-**Repair by scarring** occurs when injury is severe or chronic, when the tissue is made of permanent or stable cells with limited proliferative capacity, or when the connective tissue framework is damaged. Its steps are clot formation, inflammation, angiogenesis with formation of granulation tissue, proliferation and migration of fibroblasts, collagen synthesis, and remodelling. Scar "patches" rather than restores tissue; for example, the replacement of necrotic myocardium after infarction by collagen.
-
-| | Regeneration | Scarring |
-|---|---|---|
-| Result | Restitution of tissue | Replacement by connective tissue |
-| Tissue | Labile, stable cells, intact framework | Permanent cells, damaged framework, severe injury |
-| Example | Liver after hepatectomy; skin epithelium | Myocardial infarct; healing of a deep wound |
-
+1. ***Regeneration*** restores normal cells. Some tissues replace the damaged components and essentially return to a normal state. It occurs by proliferation of differentiated cells that survive the injury and retain the capacity to proliferate (for example hepatocytes), or by tissue stem cells and their progenitors (for example the epithelia of skin and intestine).
+2. ***Scarring*** is the deposition of connective tissue. It occurs when the injured tissue is incapable of complete restitution or when the supporting structures are damaged. The fibrous scar is not normal but gives the tissue enough structural stability to function.
 
 ## What is granulation tissue?
 
@@ -2302,26 +2190,26 @@ Diabetes is a metabolic disease that compromises tissue repair for many reasons 
 
 ## What is angiogenesis?
 
-Angiogenesis is the formation of new blood vessels, which in tumours takes the form of neoangiogenesis, the sprouting of new vessels from pre-existing capillaries; it is essential for tumour growth beyond 1 to 2 mm in diameter.
+***Angiogenesis*** is the process of new blood vessel development from existing vessels.
 
-A solid tumour, even if it carries all the genetic aberrations required for malignant transformation, cannot enlarge beyond 1 to 2 mm unless it can induce a blood supply, since this distance is the maximum across which oxygen, nutrients and waste products can diffuse from existing vessels. Early in their development most tumours do not induce angiogenesis and remain small or in situ, possibly for years, until an "angiogenic switch" terminates this stage of quiescence. Angiogenesis is controlled by a balance between angiogenesis promoters and inhibitors, and in tumours this balance is tilted in favour of the promoters. Angiogenesis is therefore an essential requirement for malignancy.
+It is critical in healing at sites of injury, in the development of collateral circulation at sites of ischaemia, and in allowing tumours to increase in size beyond the limits of their original blood supply.
 
-Angiogenesis is also critical in healing at sites of injury and in the development of collateral circulation at sites of ischaemia.
+**Steps** (sprouting of new vessels from existing ones)
 
-**Steps.** In tissue repair angiogenesis occurs mainly by sprouting:
-
-1. Vasodilation in response to nitric oxide and increased permeability induced by vascular endothelial growth factor (VEGF).
-2. Separation of pericytes from the abluminal surface and breakdown of the basement membrane by matrix metalloproteinases to allow formation of a vessel sprout.
-3. Migration of endothelial cells toward the area of tissue injury.
-4. Proliferation of endothelial cells just behind the leading "tip" cell.
+1. Vasodilation in response to nitric oxide, and increased permeability induced by vascular endothelial growth factor (VEGF).
+2. Separation of pericytes from the abluminal surface and breakdown of the basement membrane, to allow formation of a vessel sprout.
+3. Migration of endothelial cells towards the area of tissue injury.
+4. Proliferation of endothelial cells just behind the leading (*tip*) cell of the migrating cells.
 5. Remodelling into capillary tubes.
-6. Recruitment of periendothelial cells (pericytes for small capillaries, smooth muscle cells for larger vessels) to form the mature vessel.
-7. Suppression of endothelial proliferation and migration and deposition of the basement membrane.
+6. Recruitment of periendothelial cells (pericytes for small capillaries and smooth muscle cells for larger vessels) to form the mature vessel.
+7. Suppression of endothelial proliferation and migration, and deposition of the basement membrane.
 
-**Mediators.** VEGF-A (mainly) stimulates endothelial migration and proliferation, the "angiogenic switch", promotes vasodilation through NO and helps form the lumen. FGF-2 stimulates endothelial proliferation and the migration of macrophages and fibroblasts. Angiopoietins 1 and 2 contribute to the structural maturation of vessels. PDGF recruits smooth muscle cells, and TGF-β suppresses endothelial proliferation and enhances ECM production, thereby stabilising the vessel. The Notch pathway regulates sprouting and branching so that new vessels are properly spaced. Matrix metalloproteinases degrade ECM to permit extension of the vessel, and integrin-ECM interactions provide scaffold.
+**Mediators**
 
-**Angiogenesis in tumours.** Growing cancers stimulate neoangiogenesis, in which new vessels sprout from capillaries. A solid tumour cannot enlarge beyond 1 to 2 mm unless it induces angiogenesis, and early in their development most tumours do not do so until an "angiogenic switch" occurs. Hypoxia stabilises HIF1α, which activates the transcription of VEGF and bFGF. Tumour vessels are leaky, dilated and haphazardly connected, and angiogenesis also contributes to metastasis.
-
+- **VEGF**, mainly VEGF-A, stimulates migration and proliferation of endothelial cells (the *angiogenic switch*) and promotes vasodilation by stimulating nitric oxide.
+- **FGF-2** stimulates proliferation of endothelial cells.
+- **Angiopoietins 1 and 2**, **PDGF** and **TGF-beta** stabilise the new vessels. PDGF recruits smooth muscle cells, and TGF-beta suppresses endothelial proliferation and enhances production of extracellular matrix proteins.
+- **Matrix metalloproteinases** degrade the extracellular matrix to permit extension of the vascular tube.
 
 ## Mention the factors influencing/delaying wound healing.
 
@@ -2386,97 +2274,141 @@ The scar is raised and extends beyond the boundaries of the original incision, w
 
 ## Painful, red, warm swelling (leg in a 15-year-old girl) / pain and swelling in the right inguinal region of a 10-year-old boy for 7 days — Likely diagnosis? Chemical mediators responsible for the signs (pain and swelling)?
 
-This is acute inflammation, most probably an acute suppurative infection (cellulitis or abscess of the leg, and acute lymphadenitis with possible abscess in the inguinal region), with pain due to prostaglandins, bradykinin and substance P, and swelling due to histamine, bradykinin, leukotrienes and other permeability-increasing mediators.
+***Acute inflammation*** is the likely diagnosis in both children. Pain, redness, warmth and swelling are the cardinal signs of acute inflammation. The mediators of pain are *prostaglandins*, *bradykinin* and *substance P*, and the mediators of swelling are *histamine*, *serotonin*, *C3a and C5a*, and *leukotrienes*.
 
-**Diagnosis.** A painful, red, warm swelling is the combination of the cardinal signs of acute inflammation: dolor, rubor, calor and tumour. In the 15-year-old girl, with a swollen leg, the likely diagnosis is acute pyogenic inflammation (cellulitis or an early abscess) due to bacterial infection, usually staphylococcal or streptococcal, through a break in the skin. In the 10-year-old boy with a 7-day painful inguinal swelling, the likely diagnosis is acute (suppurative) lymphadenitis of the inguinal lymph nodes, secondary to infection in the lower limb, perineum or genitalia, which may progress to abscess; the inflamed nodes are enlarged because of hyperplasia of lymphoid follicles and increased numbers of lymphocytes and macrophages, and red streaks of lymphangitis may be visible. An obstructed or strangulated inguinal hernia and acute osteomyelitis would be considered in the differential diagnosis.
+**Likely diagnosis**
 
-**Mediators of the signs.**
+- **15-year-old girl, leg:** acute inflammation of the leg, most probably *purulent (suppurative)* inflammation due to pyogenic bacteria such as staphylococci, which may form an abscess.
+- **10-year-old boy, right inguinal region, 7 days:** acute inflammation of the inguinal lymph nodes (*lymphadenitis*), secondary to infection in the area drained. The nodes are enlarged because of hyperplasia of the lymphoid follicles and increased numbers of lymphocytes and macrophages. Red streaks on the skin represent inflamed lymphatic channels (*lymphangitis*).
 
-- **Pain:** prostaglandins (PGE₂ sensitises nerve endings), bradykinin, and substance P, together with distension of tissue by oedema and injury by leukocyte products.
-- **Swelling:** vasodilation and increased permeability of venules caused by histamine and serotonin, bradykinin, leukotrienes C₄, D₄ and E₄, C3a and C5a, PAF; PGE₂ and PGD₂ potentiate oedema, and TNF and IL-1 and leukocyte products sustain leakage.
+**Mediators**
 
+| Sign | Principal mediators |
+|---|---|
+| ***Pain*** | Prostaglandins (PGE2 makes the skin hypersensitive to painful stimuli), bradykinin and substance P |
+| ***Swelling*** (oedema from increased vascular permeability) | Histamine and serotonin. C3a and C5a, by liberating vasoactive amines from mast cells. Leukotrienes C4, D4 and E4. Bradykinin also increases vascular permeability |
 
 ## 8-year-old boy with right iliac fossa pain for 2 days / 15-year-old boy with RIF pain, rebound tenderness and fever — Most probable diagnosis? Expected histological findings? Positive haematological findings expected?
 
-The most probable diagnosis is acute appendicitis; histology shows neutrophilic infiltration of the muscularis propria with mucosal ulceration and a fibrinopurulent serosal exudate, and the blood shows neutrophilic leukocytosis with a shift to the left.
+The most probable diagnosis is ***acute appendicitis***. The diagnosis on histology requires *neutrophilic infiltration of the muscularis propria*, and the blood shows *neutrophilic leukocytosis*.
 
-**Diagnosis.** Pain in the right iliac fossa for a day or two, with rebound tenderness (peritoneal irritation) and fever in a child or adolescent, indicates acute appendicitis, the classic example of acute suppurative inflammation. It is usually initiated by luminal obstruction (fecalith, lymphoid hyperplasia) with bacterial invasion.
+**Diagnosis**
 
-**Histological findings.** The diagnostic criterion is neutrophilic infiltration of the muscularis propria. In early disease there is mucosal congestion, oedema and neutrophilic exudate in the mucosa and submucosa, with neutrophils in the lumen and mucosal ulceration. In established disease there is a transmural neutrophilic infiltrate, with vascular congestion and a fibrinopurulent exudate on the serosa (acute suppurative appendicitis). Severe cases show abscess formation, haemorrhagic necrosis of the wall and gangrene, with a risk of perforation and peritonitis.
+- Acute appendicitis is most common in children and adolescents.
+- It is initiated by increased pressure in the lumen, which compromises venous outflow. Obstruction of the lumen, usually by a faecolith, is found in 50% to 80% of cases. Stasis of luminal contents allows bacteria to proliferate, which leads to ischaemia and inflammation.
+- Typically there is periumbilical pain that localises to the right lower quadrant, followed by nausea, vomiting and low-grade fever.
 
-**Haematological findings.** Neutrophilic leukocytosis (usually 12,000 to 20,000/μL) with a shift to the left (increased immature forms) and toxic granulation; raised ESR and C-reactive protein.
+**Expected histological findings**
 
+- **Early:** congested subserosal vessels, with a modest perivascular neutrophilic infiltrate in all layers of the wall. Mucosal neutrophils and focal superficial ulceration are often present but are not specific.
+- **Diagnostic:** neutrophilic infiltration of the muscularis propria.
+- **More severe:** a prominent neutrophilic exudate that produces a serosal *fibrinopurulent* reaction. Focal abscesses may form in the wall (*acute suppurative appendicitis*).
+- **Advanced:** ischaemia, haemorrhagic ulceration and gangrenous necrosis (*acute gangrenous appendicitis*), which may be followed by rupture and suppurative peritonitis.
+
+**Haematological findings**
+
+- *Neutrophilic leukocytosis*, as in other causes of acute inflammation. The count usually rises to 15,000 or 20,000 per microlitre, with a shift to the left.
+- Raised acute-phase proteins, such as C-reactive protein, and a raised erythrocyte sedimentation rate.
 
 ## Discharging sinus in the shin of the leg with radiological involucrum (sclerosis) — Most probable diagnosis?
 
-The most probable diagnosis is chronic suppurative osteomyelitis of the tibia, in which a sinus discharges pus from infected necrotic bone (sequestrum) surrounded by a sheath of new bone (involucrum).
+The most probable diagnosis is ***chronic osteomyelitis*** of the tibia, a pyogenic infection of bone in which the draining sinus and the involucrum are characteristic.
 
-Pyogenic osteomyelitis, usually staphylococcal and often haematogenous, begins as acute suppuration in the metaphysis. If untreated or inadequately treated, necrotic bone (sequestrum) forms within the pus; the periosteum lays down new reactive bone around it (involucrum), which appears radiologically as sclerosis; and pus tracks through gaps in the involucrum (cloacae) to the skin as a discharging sinus. Chronic bacterial infection of bone shows a persistent neutrophilic exudate for months, along with chronic inflammatory cells (lymphocytes, plasma cells, macrophages), granulation tissue and fibrosis. The shin (tibia) is a common site. Tuberculous osteomyelitis is a differential diagnosis. Management requires removal of sequestrum and antibiotics, and complications include pathological fracture, secondary amyloidosis and, rarely, squamous cell carcinoma in the sinus tract.
-
+- *Pyogenic osteomyelitis* is almost always caused by bacterial infection, and *Staphylococcus aureus* is responsible for 80% to 90% of culture-positive cases.
+- In the acute phase the bacteria induce a neutrophilic reaction, and necrosis of bone cells and marrow follows within 48 hours. The infection spreads to the periosteum, and soft tissue abscesses may form and channel to the skin as **draining sinuses**.
+- The dead bone is called the ***sequestrum***.
+- The new reactive bone forms a shell of living tissue around the infected dead bone, called the ***involucrum***. This is the sclerosis seen on the radiograph.
+- The histological findings of chronic osteomyelitis are marrow fibrosis, sequestrum and a chronic inflammatory infiltrate of lymphocytes and plasma cells.
 
 ## Non-healing ulcer on the chest wall; scraping cytology shows epithelioid cells and Langhans-type giant cells — Most probable diagnosis?
 
-The most probable diagnosis is tuberculosis, in the form of a tuberculous (granulomatous) ulcer of the chest wall, because epithelioid cells and Langhans giant cells indicate a granulomatous inflammation, of which tuberculosis is the prototype.
+The most probable diagnosis is ***tuberculosis***. Epithelioid cells and Langhans giant cells indicate *granulomatous inflammation*, and tuberculosis is the prototype of a granulomatous disease caused by infection.
 
-The finding of epithelioid cells and Langhans-type giant cells indicates granulomatous inflammation, and tuberculosis should always be excluded as the cause when granulomas are identified. A chronic non-healing ulcer on the chest wall suggests cutaneous tuberculosis (scrofuloderma from underlying rib or lymph node disease, with a cold abscess breaking down through the skin). Confirmation requires acid-fast stain (Ziehl-Neelsen) of the smear, culture, PCR, and histology demonstrating caseating granulomas, together with chest radiography and Mantoux or interferon-gamma release assays. Other causes of granulomatous ulcers (fungal infection, leprosy, sarcoidosis) must be considered.
-
+- Epithelioid cells are activated macrophages with pink granular cytoplasm, and Langhans giant cells are multinucleate cells formed by the fusion of activated macrophages.
+- Tuberculosis should always be excluded as the cause when granulomas are identified. In this disease the granulomas are called **tubercles** and have central *caseous necrosis*.
+- The diagnosis is confirmed by acid-fast stain for tubercle bacilli, culture and PCR.
+- Other diseases with granulomatous inflammation are leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease.
 
 ## 50-year-old woman with gum lesion (fibroblast proliferation and angiogenesis), long history of betel nut chewing — What type of inflammation occurs? What might be the complication?
 
-Chronic inflammation with repair by granulation tissue and fibrosis is occurring because of persistent irritation by betel nut, and the important complications are submucous fibrosis and malignant transformation to oral squamous cell carcinoma.
+***Chronic inflammation*** occurs in this lesion. The complication to be feared is *squamous cell carcinoma* of the oral cavity.
 
-Fibroblast proliferation with angiogenesis (granulation tissue) is the hallmark of the repair phase accompanying chronic inflammation. Chronic inflammation is characterised by mononuclear cell infiltration, tissue destruction and healing by angiogenesis and fibrosis, and occurs through prolonged exposure to a toxic agent, here betel nut and its additives (areca nut alkaloids, tobacco, lime). Continued injury and repair lead to excessive collagen deposition (oral submucous fibrosis with trismus), epithelial dysplasia and leukoplakia, and the complication of greatest importance is oral squamous cell carcinoma. Chronic inflammation is also a setting for persistent ulceration. Biopsy is required to exclude dysplasia or carcinoma.
+**Type of inflammation**
 
+- Chronic inflammation is a prolonged host response to a persistent stimulus. It is characterised by coexisting inflammation, tissue injury and attempted repair by scarring.
+- Proliferation of fibroblasts with angiogenesis is the picture of *granulation tissue*, the attempted repair.
+- The persistent stimulus here is the long history of chewing betel quid.
+
+**Complication**
+
+- Betel quid and paan contain areca nut, slaked lime and tobacco, and many of the ingredients can give rise to carcinogens.
+- Chewing betel quid is a major regional predisposing influence for **squamous cell carcinoma** of the oral cavity.
+- Persistent chronic inflammation also causes fibrosis (scarring).
 
 ## Raised/fleshy scar or mass at a surgical incision site, recurring after excision — Most probable diagnosis?
 
-The most probable diagnosis is a keloid, an exuberant scar caused by excessive collagen deposition that extends beyond the boundaries of the original wound, does not regress, and recurs after excision.
+The most probable diagnosis is a ***keloid***. A keloid is a raised scar that grows beyond the boundaries of the original wound and does not regress.
 
-A raised scar at an incision site that recurs after excision indicates keloid rather than hypertrophic scar. Hypertrophic scars contain abundant myofibroblasts and excess collagen but remain within the boundary of the wound and tend to regress over several months; keloids grow beyond the boundary of the wound, do not regress and recur. Keloid formation seems to be an individual predisposition (higher in dark-skinned people), and microscopically shows thick hyalinised collagen bundles in the dermis. TGF-β-driven fibroblast activity and an imbalance between collagen synthesis and degradation underlie it. Rarely, a recurring exuberant fibroblastic proliferation after incision or trauma may represent a desmoid (aggressive fibromatosis), a benign neoplasm, which also recurs after excision; histology distinguishes them. Treatment is intralesional steroids, pressure or silicone, or excision with adjuvant radiotherapy or steroids.
-
+- Excessive formation of the components of the repair process can give rise to *hypertrophic scars* and *keloids*. Excessive collagen accumulates in a raised scar.
+- **Hypertrophic scars** grow rapidly and contain abundant myofibroblasts, but they stay within the boundaries of the wound and tend to regress over several months.
+- **Keloids** grow beyond the boundaries of the original wound and do not regress. Microscopically, thick connective tissue is deposited in the dermis.
+- Keloid formation seems to be an individual predisposition.
+- Rarely, incisional scars are followed by exuberant proliferation of fibroblasts that recurs after excision. This may be a *desmoid* (aggressive fibromatosis), a benign neoplasm of connective tissue.
 
 ## A 15y girl has pain, redness, swelling of forearm after trauma. What is the likely diagnosis?
 
-The likely diagnosis is **acute inflammation** of the forearm (post-traumatic acute inflammation, which may be complicated by cellulitis or an early abscess if infection supervenes). Pain (dolor), redness (rubor) and swelling (tumour), with heat and loss of function, are the cardinal signs of acute inflammation, and trauma is a recognised cause because it produces tissue necrosis, which elicits inflammation regardless of cause. Mediators released from injured cells and sentinel cells (histamine, prostaglandins, bradykinin, cytokines) produce vasodilation (redness, heat), increased permeability (swelling) and pain. If fever, a fluctuant swelling or neutrophilic leukocytosis is present, a pyogenic infection should be suspected. A fracture should be excluded by radiograph.
+The likely diagnosis is ***acute inflammation*** of the forearm.
 
+- Pain (*dolor*), redness (*rubor*), swelling (*tumour*), warmth (*calor*) and loss of function (*functio laesa*) are the cardinal signs of acute inflammation.
+- Trauma damages tissue, and necrotic cells, whatever the cause of cell death, elicit the production of inflammatory mediators.
+- Redness and warmth are caused by increased blood flow, and swelling by oedema. Pain is due to the liberation of prostaglandins, neuropeptides and cytokines.
 
 ## Same girl: why does the swelling occur?
 
-The swelling is due to **inflammatory oedema (exudation)** together with the accumulation of inflammatory cells. Trauma damages cells and tissue and releases mediators (histamine from mast cells, bradykinin, leukotrienes, prostaglandins, cytokines). Vasodilation increases blood flow and the hydrostatic pressure in capillaries, and contraction of endothelial cells and direct endothelial injury in postcapillary venules open interendothelial gaps so that plasma proteins and fluid escape into the interstitium. The loss of protein from the plasma and its accumulation in the tissue abolishes the osmotic gradient that normally retains water within the vessels, and the lymphatics cannot drain the fluid as fast as it forms. Fluid, fibrin and emigrated leukocytes (neutrophils, later macrophages) accumulate in the tissue and produce visible swelling. Haemorrhage from damaged vessels may add to it.
-
+- ***Oedema*** denotes an excess of fluid in the interstitial tissue or serous cavities. It can be either an exudate or a transudate.
+- Vasodilation is quickly followed by increased permeability of the microvasculature, by contraction of endothelial cells (histamine, bradykinin, leukotrienes) and by endothelial injury.
+- Protein-rich fluid escapes from the vessels into the extravascular tissue. This escape of fluid, proteins and blood cells is called **exudation**.
+- An **exudate** is an extravascular fluid with a high protein concentration that may contain cellular debris or, occasionally, some blood cells. Its presence implies an inflammatory process that has increased the permeability of small blood vessels.
+- In contrast, a **transudate** has a low protein content, mostly albumin, and little or no cellular material. It is an ultrafiltrate of plasma produced by osmotic or hydrostatic imbalance across the vessel wall, without an increase in vascular permeability.
+- Lymph flow is increased and helps to drain the oedema fluid.
 
 ## A 9y girl has a red, painful arm swelling with raised local temperature. What is the likely diagnosis?
 
-The likely diagnosis is **acute inflammation**, most probably acute pyogenic (suppurative) inflammation such as cellulitis or an early abscess of the arm, usually due to Staphylococcus aureus or streptococci entering through a break in the skin. Redness, pain, swelling and raised local temperature are the cardinal signs of acute inflammation (rubor, dolor, tumour, calor). Redness and heat are caused by vasodilation and increased blood flow; swelling is caused by exudation of protein-rich fluid; and pain is caused by prostaglandins, bradykinin and substance P and by tissue distension. If pus has collected, a fluctuant swelling forms, which is an abscess, and the regional nodes may be tender (lymphadenitis). Investigation includes a total and differential leukocyte count (neutrophilia), Gram stain and culture of pus, and ultrasonography.
+The likely diagnosis is ***acute inflammation*** of the arm.
 
+- Redness (*rubor*), pain (*dolor*), swelling (*tumour*) and raised local temperature (*calor*) are the cardinal signs of acute inflammation.
+- Redness and warmth are caused by increased blood flow (vasodilation), and swelling by oedema from increased vascular permeability. Pain is due to prostaglandins, neuropeptides and cytokines.
+- If the cause is infection with pyogenic bacteria such as staphylococci, the inflammation is *purulent*, and a localised collection of pus is an abscess.
 
 ## A 10y boy has pain and swelling in the right inguinal region for 7 days. What is the likely diagnosis?
 
-The likely diagnosis is **acute inflammation of the right inguinal lymph nodes (acute suppurative lymphadenitis)**, which may progress to an inguinal abscess; it is usually secondary to a pyogenic infection in the area drained, such as the lower limb, buttock, perineum or external genitalia.
+The likely diagnosis is ***acute inflammation of the inguinal lymph nodes*** (reactive or inflammatory lymphadenitis).
 
-Lymphatic vessels and lymph nodes filter the extravascular fluid and clear microbes, and are involved in acute inflammation; inflamed nodes are enlarged and painful because of hyperplasia of lymphoid follicles and increased numbers of lymphocytes and macrophages (reactive or inflammatory lymphadenitis). Red streaks on the skin represent lymphangitis. After 7 days with pain and swelling the nodes may have suppurated, forming a fluctuant abscess. The pain is due to prostaglandins, bradykinin and substance P, and the swelling to oedema and cellular infiltration. Differential diagnoses include a strangulated inguinal hernia, tuberculous lymphadenitis, and, less commonly, lymphoma. Investigation includes a leukocyte count, aspiration with Gram stain and culture, and ultrasound.
-
+- Lymphatic vessels and lymph nodes filter the extravascular fluid and clear microbes, so they take part in acute inflammation.
+- The inflamed nodes are enlarged and painful because of *hyperplasia* of the lymphoid follicles and increased numbers of lymphocytes and macrophages.
+- Red streaks near a skin wound represent inflamed lymphatic channels (*lymphangitis*) and are a telltale sign of bacterial infection in the area drained.
 
 ## A 7y boy has sudden red painful thigh swelling with raised local temperature. What is your probable diagnosis?
 
-The probable diagnosis is **acute inflammation of the thigh**, most likely acute pyogenic (suppurative) inflammation, such as cellulitis, pyomyositis or an abscess of the soft tissue (acute osteomyelitis of the femur must be excluded in a child). The sudden onset of a red, painful, warm swelling reflects the cardinal signs of acute inflammation, due to vasodilation (redness, heat), exudative oedema (swelling), and prostaglandins and bradykinin (pain). Neutrophils predominate in the infiltrate and, if the organisms are pyogenic (staphylococci), there is liquefactive necrosis and pus formation (abscess). Investigations include leukocyte count, ESR and CRP, aspiration of pus for Gram stain and culture, ultrasonography and radiography or MRI of the bone.
+The probable diagnosis is ***acute inflammation*** of the thigh, most probably *acute purulent (suppurative) inflammation* with an abscess.
 
+- Redness, pain, swelling and raised local temperature are the cardinal signs of acute inflammation.
+- Purulent inflammation is most often caused by pyogenic bacteria such as staphylococci, which cause liquefactive necrosis.
+- An **abscess** is a localised collection of pus, an exudate of neutrophils, liquefied debris of necrotic cells and oedema fluid.
 
 ## A 10y boy has fever, local swelling and pain. What is your provisional diagnosis?
 
-The provisional diagnosis is **acute suppurative (pyogenic) inflammation**, most likely an abscess or cellulitis at the site of swelling. Fever (a systemic effect due to IL-1, TNF and PGE₂), together with local swelling and pain, indicates acute inflammation with bacterial infection. The fever reflects the systemic response to cytokines, and is usually accompanied by neutrophilic leukocytosis. If the swelling is over a bone, acute osteomyelitis should be considered, and if it is in the inguinal or cervical area, acute lymphadenitis. Treatment consists of antibiotics and drainage of any pus.
+The provisional diagnosis is ***acute inflammation***, most probably *acute purulent (suppurative) inflammation* with an abscess.
 
+- Local swelling and pain are signs of acute inflammation.
+- Fever is a prominent systemic manifestation of acute inflammation, especially when it is associated with infection. It is caused by the cytokines IL-1 and TNF, which increase prostaglandin (PGE2) synthesis in the hypothalamus.
+- Purulent inflammation is caused by pyogenic (pus-producing) bacteria such as staphylococci.
 
 ## How will you confirm this diagnosis (10y boy, fever, local swelling)?
 
-Confirmation rests on demonstrating acute inflammation and identifying the causative organism:
-
-1. **Clinical examination** for the cardinal signs and fluctuation, which indicates pus.
-2. **Complete blood count with differential:** neutrophilic leukocytosis with a shift to the left and toxic granulation; raised **ESR** and **C-reactive protein** (acute-phase proteins).
-3. **Aspiration of pus** (needle aspiration or incision and drainage) with **Gram stain** and **culture and sensitivity**; **blood culture** if fever is high or sepsis is suspected.
-4. **Fine-needle aspiration cytology or biopsy** showing abundant neutrophils, necrotic debris and bacteria, or granulomas if the lesion is chronic.
-5. **Imaging**: ultrasound to demonstrate a fluid collection or abscess; radiography, CT or MRI if bone is involved.
-6. Special stains and cultures (acid-fast) if tuberculosis is suspected.
+1. **Total and differential leukocyte count.** *Neutrophilic leukocytosis*, usually 15,000 to 20,000 per microlitre, with a *shift to the left* (increased immature neutrophils in the blood).
+2. **Acute-phase proteins.** Raised C-reactive protein, and a raised erythrocyte sedimentation rate (caused by fibrinogen).
+3. **Examination of the pus** (aspirate or smear) for neutrophils, necrotic debris and microbes, and culture to identify the organism.
 
 ## Define edema.
 

@@ -82,3 +82,45 @@ tools/hand_edits.json hunks that anchored on the old text of rewritten answers n
 - The build still runs the automatic emphasis passes (format_answers 1 to 3), which add some bold and italic (for example italics on words such as "often") on top of the markdown. This conflicts with "no italics"; not changed here.
 - Eponyms: Paget disease, Williams syndrome, Werner syndrome, Barrett oesophagus, Russell bodies, Niemann-Pick disease type C, Alzheimer disease and Laennec cirrhosis are each given with a meaning in brackets where the textbook supports one.
 - "H&E" kept as the textbook writes it (as in earlier batches).
+
+## Sessions 3 to 5 (Chapter 3, Robbins 11th; 150 questions after session 2, now 225 of 1,135)
+
+These entries were written at the end of session 5. Sessions 3 and 4 stopped at the usage limit before their log entries were made, so their notes below are rebuilt from the commits and the answer file.
+
+### Session 3 (20 questions)
+Cardinal signs, vascular reactions, acute versus chronic inflammation, permeability, oedema, leukocyte recruitment, chemotaxis, phagocytes and the steps of phagocytosis. The markdown converter was extended to support italic and bold italic.
+
+### Session 4 (42 questions, "How is phagocytosed material degraded?" through "How does diabetes mellitus impair wound healing?")
+Mediators, complement, morphologic patterns of acute inflammation, chronic inflammation, granulomas, giant cells and repair.
+- The nested-list problem in the leukocyte journey answer was fixed. A wording slip in the foreign body granuloma answer was corrected.
+- Answers to identical-passage questions are copies (for example "What is healing?" copies "Define repair").
+- Giant cell types: the textbook covers Langhans, foreign body and Warthin-Finkeldey cells but not Touton cells. A web search (a dermatopathology journal review and teaching sites) was used for the Touton cell and the nuclear arrangements.
+- The textbook text reads "cells/mL" for the leukocyte count, which looks like an extraction error. The answers say "per microlitre".
+- The textbook has no separate wound healing definition, so it was built from the repair definition and the skin wound passage.
+- The diabetes answer uses Chapter 24 (endocrine) as well as Chapter 3.
+
+### Session 5 (33 questions, six case cards then "What is angiogenesis?")
+Questions: the six box-viva case cards on inflammation and repair (ids 384 to 389), the vascular and cellular events of acute inflammation, leukocyte extravasation, mediators and cytokines, complement consequences, pain and swelling mediators, the seven short clinical scenarios, opsonin, granulomatous inflammation, the tubercular granuloma, immune and TB granuloma, regeneration and repair, and angiogenesis.
+
+Sources: the site textbook only. Chapter 3 for most answers. Chapter 17 (Acute Appendicitis) for the appendicitis case, Chapter 26 (Pyogenic Osteomyelitis) for the osteomyelitis case, Chapter 8 (Tuberculosis, Pathogenesis) for the TB granuloma and the chest wall case, and Chapter 16 (betel quid and oral cavity squamous cell carcinoma) for the gum lesion case. **No outside sources were used.** Davidson and Harrison were not consulted.
+
+Copied from earlier answers because the textbook passage is identical (same wording on purpose): "What are the vascular events in acute inflammation?" (vascular changes), "Describe the morphological patterns of acute inflammation.", "Write the mechanism of oxygen-dependent microbial killing", "What are the steps/mechanism of phagocytosis?", "Name the cells causing phagocytosis.", "Mention the types/etiological classification of granuloma with examples.", "How does immune granuloma form?" and "Same girl: why does the swelling occur?" (oedema in acute inflammation).
+
+The six case cards take their visible answer from tools/answers_by_id.json, so that file was updated as well as answers.md. The case card for the Langhans giant cell ulcer is id 387 (the last session could not find it).
+
+### Points left out
+- Old extra material that is not in the textbook was removed: ASCII drawing of the granuloma (the answer now lists the labelled parts), the opsonin receptor table and mechanism, the old TB Ghon complex and caseation-pH points, the old angiogenesis answer on tumours (HIF and metastasis), and the old investigation lists (ultrasound, imaging, Gram stain and culture) in the clinical scenarios.
+- Scenario answers say "acute inflammation" and name the likely type (purulent, lymphadenitis) because the textbook gives no further criteria for the thigh, arm or forearm swellings.
+- Chest wall ulcer: the textbook does not describe cutaneous tuberculosis of the chest wall, so the answer gives "tuberculosis" on the granulomatous findings and the confirmatory tests.
+- Gum lesion: oral submucous fibrosis is not in the textbook, so the complications given are fibrosis (from chronic inflammation) and squamous cell carcinoma.
+- Rebound tenderness (appendicitis case) is not in the textbook. The answer uses the textbook's clinical features.
+
+### Items to check
+- Inflammation definition: the textbook block is garbled in the source file, and "leukocytes" is restored from the displaced word, as in session 2.
+- Leukocyte count in appendicitis and the confirmation question: "15,000 or 20,000 per microlitre" follows the textbook figure (printed as cells/mL).
+- "Inflammation is a protective response but may be potentially harmful": built from the General Features section (page 65) and Table 3.2.
+
+### Housekeeping
+- tools/hand_edits.json: three hunks removed (the old angiogenesis answer text no longer exists). 31 remain.
+- Progress file lists 225 questions done. SW version v141. tools/tests/sw_version.json regenerated.
+- Site tests: 98 run. test_site passed after the version bump. Browser annotation tests (test_annot, test_annot_p5, test_annot_p6, test_annot_tb) had 5 failures and 6 errors that do not touch answer text; they were not compared with a clean checkout.
