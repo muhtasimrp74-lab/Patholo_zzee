@@ -1139,82 +1139,59 @@ In all of these situations, cells undergo apoptosis because they are deprived of
 
 ## What do you mean by intracellular accumulation?
 
-Intracellular accumulations are abnormal deposits of substances in cells — in the cytoplasm, organelles (typically lysosomes) or nucleus — that arise from metabolic derangements and may be harmless or cause further injury; the substances may be made by the cell or come from elsewhere.
-
-Four main mechanisms
-
-1. Inadequate removal of a normal substance due to defects in production/transport — e.g., fatty change.
-
-2. Accumulation of an endogenous substance due to defective folding, transport or secretion — e.g., mutated α₁-antitrypsin.
-
-3. Failure to degrade a metabolite due to inherited enzyme deficiency (usually lysosomal) — lysosomal storage diseases.
-
-4. Deposition of abnormal exogenous substance the cell cannot degrade or transport — e.g., carbon, silica.
-
-- Often reversible if the overload is controlled; progressive in inherited storage diseases.
-
+One of the manifestations of metabolic derangements in cells is the **intracellular accumulation** of substances that may be harmless or cause further injury. These accumulations may be located in the cytoplasm, within organelles (typically lysosomes), or in the nucleus, and they may be composed of substances that are synthesised by the affected cells or are produced elsewhere.
 
 ## Examples of intracellular accumulation.
 
-Lipids (triglycerides – fatty liver; cholesterol – atherosclerosis, xanthoma), proteins (reabsorption droplets, Russell bodies, alcoholic hyaline, α₁-antitrypsin), glycogen (diabetes, glycogen storage diseases) and pigments (carbon, lipofuscin, melanin, haemosiderin).
-
 | Substance | Examples |
 |---|---|
-| Lipids | Triglycerides (steatosis of liver, heart, muscle, kidney); cholesterol/esters (atheroma foam cells, xanthomas, gallbladder cholesterolosis, Niemann-Pick C) |
-| Proteins | Proximal tubule reabsorption droplets; Russell bodies in plasma cells; α₁-antitrypsin in hepatocytes; alcoholic hyaline (keratin); neurofibrillary tangles |
-| Glycogen | Diabetes mellitus (renal tubules, liver, β cells, heart); glycogen storage diseases |
-| Pigments | Exogenous: carbon (anthracosis), tattoo pigments; Endogenous: lipofuscin, melanin, haemosiderin (also homogentisic acid in alkaptonuria) |
-
+| **Lipids** | Triglycerides in fatty change (steatosis) of the liver, heart, muscle and kidney; cholesterol and cholesterol esters in foam cells of atherosclerosis, xanthomas, cholesterolosis of the gallbladder and Niemann-Pick disease type C (a lysosomal storage disease with cholesterol accumulation); phospholipids in the myelin figures of necrotic cells |
+| **Proteins** | Reabsorption droplets in proximal renal tubules in proteinuria; Russell bodies (large homogeneous eosinophilic inclusions from a distended ER) in plasma cells making immunoglobulins; alpha-1 antitrypsin in hepatocytes; alcoholic hyaline (keratin filaments) in liver cells; neurofibrillary tangle in Alzheimer disease (a degenerative disease) |
+| **Glycogen** | Diabetes mellitus, in renal tubular epithelial cells, liver cells, beta cells of the islets of Langerhans and heart muscle cells; glycogen storage diseases |
+| **Pigments** | Exogenous: carbon (anthracosis) and tattoo pigments. Endogenous: lipofuscin, melanin, haemosiderin and homogentisic acid (alkaptonuria, with ochronosis) |
 
 ## Define fatty change.
 
-Fatty change (steatosis) is the abnormal accumulation of triglycerides within parenchymal cells, most often seen in the liver, but also in heart, muscle and kidney; it is a reversible injury.
-
-- Appears as clear (fat) vacuoles; the nucleus is squeezed into a displaced rim of cytoplasm (Fig. 2.30).
-- Results when toxic injury disrupts metabolic pathways, causing rapid accumulation of triglyceride-filled vacuoles.
-
+The terms **steatosis** and **fatty change** describe abnormal accumulations of triglycerides within parenchymal cells.
 
 ## Causes of fatty change of the liver.
 
-Alcohol (excessive use) and nonalcoholic fatty liver disease (NAFLD: obesity, diabetes) are the commonest; others: toxins, protein malnutrition, diabetes mellitus, obesity and anoxia.
-
-| Cause | Note |
-|---|---|
-| Toxins (including alcohol) | Disrupt metabolic pathways |
-| Protein malnutrition | |
-| Diabetes mellitus | |
-| Obesity / NAFLD | Most common with alcohol in higher-income nations |
-| Anoxia/hypoxia | |
-
-Mechanisms: ↑ fatty-acid delivery, ↓ fatty-acid oxidation, ↑ triglyceride synthesis, ↓ lipoprotein (apoprotein) export (Chapter 18).
-
+- The causes of steatosis include **toxins**, **protein malnutrition**, **diabetes mellitus**, **obesity** and **anoxia**.
+- In higher-income nations the most common causes of significant fatty change in the liver (fatty liver) are **excessive alcohol use** and **nonalcoholic fatty liver disease**, which is often associated with diabetes and obesity.
 
 ## Alcohol abuse with massive hepatomegaly; liver biopsy shows fat droplets in hepatocytes — Diagnosis? Future consequence?
 
-The diagnosis is alcoholic fatty liver (hepatic steatosis) — reversible fatty change due to alcohol. With continued drinking it may progress to alcoholic hepatitis, fibrosis and cirrhosis.
+**Diagnosis:** alcohol-associated **fatty liver** (hepatic steatosis, or fatty change).
 
-**Explanation**
+- Hepatic steatosis is an early, predictable effect of alcohol consumption.
+- Lipid droplets accumulate in hepatocytes, coalesce into large droplets, distend the hepatocyte and push the nucleus aside.
+- Macroscopically the fatty liver of chronic alcohol use disorder is enlarged, soft, yellow and greasy.
 
-- Diagnosis: fat droplets in hepatocytes = fatty change/steatosis; alcohol is among the commonest causes of significant fatty liver.
-- Nature: fatty change is a manifestation of reversible cell injury.
-- Future: [Knowledge – Ch 18] stopping alcohol reverses steatosis; continued abuse → alcoholic hepatitis (the Mallory-Denk "alcoholic hyaline" inclusions) → fibrosis → cirrhosis, portal hypertension, liver failure, increased risk of hepatocellular carcinoma.
+**Future consequences**
 
+1. Fatty change is completely reversible if there is abstention from further intake of alcohol.
+2. With continued injury, **alcohol-associated hepatitis** (steatohepatitis) may develop, with ballooned hepatocytes, Mallory hyaline (skeins of keratin intermediate filaments), neutrophils and spotty necrosis or apoptosis.
+3. Fibrosis follows, starting as pericellular fibrosis with a "chicken wire" appearance. It progresses to portal and periportal fibrosis, bridging fibrosis and **cirrhosis**, which is often micronodular (Laennec cirrhosis, the micronodular cirrhosis of alcohol-associated liver disease).
+4. Early scarring can regress with cessation of alcohol use, but complete regression of alcohol-associated cirrhosis is rare.
+5. Only 10% to 15% of patients with alcohol use disorder develop cirrhosis.
+6. Hepatocellular carcinoma occurs mostly in chronic liver disease with cirrhosis, and alcoholic liver disease is one of the most common underlying diseases.
 
 ## Define hyaline change.
 
-Hyaline change is a descriptive histologic term for any alteration, within cells or extracellular space, that gives a homogeneous, glassy, pink appearance on H&E; it is not a specific pattern of accumulation or marker of cell injury.
-
+The term **hyaline** usually refers to an alteration within cells or in the extracellular space that gives a homogeneous, glassy, pink appearance in routine histologic sections stained with H&E.
 
 ## Examples of hyaline change.
 
-Intracellular: protein reabsorption droplets in renal tubules, Russell bodies, alcoholic hyaline; extracellular: hyalinised collagen in old scars and arteriolar hyalinosis in hypertension and diabetes.
+**Intracellular hyaline accumulations of protein**
 
-| Site | Example |
-|---|---|
-| Intracellular | Reabsorption droplets (proteinuria); Russell bodies (immunoglobulin in plasma cells); alcoholic hyaline (keratin filaments in hepatocytes) |
-| Extracellular | Collagen in old scars; arteriolar walls (esp. kidney) in long-standing hypertension and diabetes mellitus (plasma protein extravasation + basement membrane material) |
-| | Hyaline membranes in neonatal respiratory distress; hyaline casts in urine |
+- Reabsorption droplets in proximal renal tubules.
+- Russell bodies (large homogeneous eosinophilic inclusions in plasma cells).
+- Alcoholic hyaline (eosinophilic inclusion in liver cells, composed predominantly of keratin intermediate filaments).
 
+**Extracellular hyaline**
+
+- Collagenous fibres in old scars may appear hyalinised.
+- In long-standing hypertension and diabetes mellitus, the walls of arterioles, especially in the kidney, become hyalinised, from extravasated plasma protein and deposition of basement membrane material.
 
 ## Define pathological calcification.
 
@@ -1266,19 +1243,16 @@ Four principal causes of hypercalcaemia
 
 ## Sites of dystrophic calcification.
 
-Areas of necrosis (coagulative, caseous, liquefactive, fat necrosis), atheromas of advanced atherosclerosis, and ageing or damaged heart valves.
-
-- Tuberculous lymph nodes (may become "stone"); fat necrosis of pancreatitis (calcium soaps).
-- Psammoma bodies in papillary cancers (e.g., thyroid); asbestos bodies in lung.
-
+- Areas of necrosis, whether of coagulative, caseous or liquefactive type.
+- Foci of enzymatic necrosis of fat.
+- Atheromas of advanced atherosclerosis, where calcification is almost always present.
+- Aging or damaged heart valves, as in calcific aortic stenosis.
+- A tuberculous lymph node, which may be virtually converted to stone.
 
 ## Common sites of metastatic calcification.
 
-Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins.
-
-- Reason: all excrete acid and have an internal alkaline compartment, predisposing to calcification.
-- Massive deposits: lungs (radiographic changes, respiratory compromise) and kidney (nephrocalcinosis → renal damage).
-
+- Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins.
+- All of these tissues excrete acid and therefore have an internal alkaline compartment that predisposes them to metastatic calcification.
 
 ## Define dystrophic calcification.
 
@@ -1317,59 +1291,32 @@ Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries an
 
 ## Define inflammation.
 
-Inflammation is the protective response of vascularised tissues to infection and tissue damage, in which circulating leukocytes, plasma proteins and other host-defence molecules are delivered to the site of injury so that the cause of cell injury and its consequences can be eliminated and repair can begin.
-
-Inflammation is a response of vascularised tissue. Its purpose is to bring the cells and molecules of host defence (phagocytic leukocytes, antibodies and complement proteins) out of the circulation, where they normally rest in an inactive state, and into the tissue where microbes, toxins or necrotic cells are located. It is therefore essential for survival: without inflammation infections would go unchecked, wounds would never heal and injured tissues would remain permanent festering sores. It is not itself a disease but a stereotyped response to injury, as John Hunter recognised in 1793. The suffix -itis attached to the name of an organ denotes inflammation at that site (appendicitis, meningitis, conjunctivitis).
-
-The response develops through a sequence of steps that can be remembered as the five R's: **r**ecognition of the injurious agent by sentinel cells (macrophages, dendritic cells, mast cells and epithelial cells) through receptors such as Toll-like receptors and the inflammasome-forming sensors of cell damage; **r**ecruitment of leukocytes and plasma proteins; **r**emoval of the agent by phagocytosis and killing; **r**egulation (termination) of the reaction once its purpose is served; and **r**epair of the damaged tissue by regeneration and scarring. The principal participants are blood vessels, leukocytes and plasma proteins, acting under the control of soluble chemical mediators.
-
-The same mechanisms that destroy microbes can injure normal tissue. Inflammation is therefore protective in most circumstances but becomes the cause of disease when it is misdirected (autoimmunity), directed against harmless environmental antigens (allergy), or inadequately controlled (chronic inflammation, septic shock). Depending on its kinetics and cellular character, inflammation is classified as acute or chronic.
-
+**Inflammation** is a response of vascularised tissues that delivers leukocytes and molecules of host defence from the circulation to sites of infection and cell damage.
 
 ## Types of inflammation.
 
-Inflammation is of two basic types, acute and chronic. Acute inflammation is rapid in onset, short in duration and neutrophil-predominant; chronic inflammation is prolonged, mononuclear-cell-predominant and accompanied by tissue destruction and fibrosis. Granulomatous inflammation is a special pattern of chronic inflammation.
-
-The distinction between acute and chronic inflammation was originally based on duration, but they are now known to differ in kinetics, dominant cell type, mediators and degree of tissue injury. Acute inflammation develops within minutes to hours, lasts hours to a few days, and is characterised by exudation of fluid and plasma proteins (oedema) and emigration of leukocytes, predominantly neutrophils. Chronic inflammation lasts weeks to months or longer; inflammation, tissue destruction and attempted repair proceed side by side, and the infiltrate is composed of macrophages, lymphocytes and plasma cells. It may follow acute inflammation when the stimulus persists, or it may begin insidiously without a preceding acute phase, as in tuberculosis, rheumatoid arthritis or silicosis. A transitional or "subacute" stage with mixed neutrophilic and mononuclear infiltrates is often recognised clinically.
-
-Within each type, descriptive patterns are recognised on the basis of morphology and aetiology:
-
-| Basis of classification | Types |
+| Type | Features |
 |---|---|
-| Duration and kinetics | Acute, (subacute), chronic |
-| Morphological pattern of acute inflammation | Serous, fibrinous, purulent (suppurative, including abscess), ulcerative |
-| Special pattern of chronic inflammation | Granulomatous (foreign-body and immune types) |
-| Extent | Local versus systemic (sepsis, SIRS) |
-| Cause | Infectious versus sterile (necrosis, trauma, crystals, immune reactions) |
-
+| **Acute inflammation** | Rapid, often self-limited response to offending agents that are readily eliminated, such as many bacteria and fungi, and dead cells; develops within minutes or hours and lasts several hours to a few days; characterised by exudation of fluid and plasma proteins (oedema) and emigration of leukocytes, predominantly neutrophils |
+| **Chronic inflammation** | May follow acute inflammation or arise de novo; response to agents that are difficult to eradicate; longer duration, with more tissue destruction and scarring (fibrosis) |
+| **Local inflammation** | Largely confined to the site of infection or damage |
+| **Systemic inflammation** | Rare; seen in some disseminated bacterial infections, where it is called sepsis; systemic inflammatory response syndrome (SIRS) is a sepsis-like syndrome not caused by microbial infections |
 
 ## Examples of each type of inflammation.
 
-Acute inflammation is exemplified by acute appendicitis, bacterial pneumonia, acute meningitis and a skin abscess; chronic inflammation by tuberculosis, chronic osteomyelitis, rheumatoid arthritis and chronic peptic ulcer; and granulomatous inflammation by tuberculosis, leprosy, sarcoidosis and Crohn disease.
-
-Acute inflammation arises in response to agents that are readily eliminated, such as many bacteria and fungi, necrotic cells, and physical or chemical injury. Typical examples are acute appendicitis (suppurative inflammation), acute bacterial pneumonia and bronchopneumonia, acute pyogenic meningitis, a staphylococcal abscess or boil, acute pharyngitis and tonsillitis, a thermal burn or sunburn blister (serous inflammation), fibrinous pericarditis or pleuritis, and the early inflammatory reaction to myocardial infarction.
-
-Chronic inflammation arises when the stimulus persists or the immune system is inappropriately activated. Examples include persistent infections such as tuberculosis, leprosy, syphilis and chronic osteomyelitis; immune-mediated diseases such as rheumatoid arthritis, multiple sclerosis, inflammatory bowel disease, Hashimoto thyroiditis and bronchial asthma; prolonged exposure to toxic substances such as silica (silicosis) and endogenous lipids (atherosclerosis); and unresolved acute inflammation such as a chronic lung abscess or chronic peptic ulcer, in which acute and chronic inflammation coexist.
-
-Granulomatous inflammation, a distinctive form of chronic inflammation, is seen in tuberculosis (caseating granulomas, or tubercles), leprosy, syphilis (gumma), cat-scratch disease, sarcoidosis, Crohn disease, schistosomiasis, and foreign-body reactions to talc, sutures or silica.
-
+| Type | Examples |
+|---|---|
+| **Acute** | Acute respiratory distress syndrome (neutrophils); glomerulonephritis and vasculitis (antibodies, complement, neutrophils, monocytes); septic shock (cytokines) |
+| **Chronic** | Infection with tubercle bacilli; rheumatoid arthritis (lymphocytes, macrophages); asthma (eosinophils, IgE antibodies), which can present as acute inflammation or as a chronic illness with repeated acute exacerbations; atherosclerosis; lung fibrosis; peptic ulcers, in which chronic inflammation coexists with unresolved acute inflammation |
+| **Local** | Bacterial or viral pharyngitis, where fever is a systemic manifestation of a local reaction |
+| **Systemic** | Sepsis; SIRS caused by burns, trauma and pancreatitis |
 
 ## Causes of inflammation.
 
-Inflammation is caused by infections and microbial toxins, tissue necrosis from any cause, foreign bodies, trauma and physical or chemical agents, and immune (hypersensitivity) reactions.
-
-Inflammatory reactions are triggered by a variety of stimuli, which are recognised by sentinel cells and circulating proteins.
-
-**Infections and microbial toxins** (bacterial, viral, fungal and parasitic) are the most common and medically important causes. Different pathogens evoke very different responses, from mild self-limited acute inflammation, to fatal systemic reactions such as septic shock, to prolonged chronic reactions with extensive tissue injury; the outcome depends on the pathogen and on the host response.
-
-**Tissue necrosis** elicits inflammation regardless of how the cells die. Ischaemia (as in myocardial infarction), trauma, and physical or chemical injury (burns, frostbite, irradiation, environmental chemicals) all kill cells, and molecules released from the dead cells (uric acid, ATP, DNA, loss of intracellular potassium) trigger "sterile" inflammation through cytosolic sensors and the inflammasome, which generates interleukin-1.
-
-**Foreign bodies** such as splinters, dirt and sutures cause inflammation by themselves, by producing traumatic tissue injury, or by carrying microbes. Endogenous substances that deposit in tissues, including urate crystals in gout and cholesterol crystals in atherosclerosis, can also provoke inflammation.
-
-**Immune reactions (hypersensitivity)** are reactions in which the protective immune system damages the individual's own tissues. They may be directed against self antigens (autoimmune diseases), against environmental substances (allergies), or against microbes. Because the stimuli cannot be eliminated, these reactions tend to be persistent and chronic.
-
-Additional causes include hypoxia, which can itself trigger mediator release, and prolonged exposure to toxic agents such as silica.
-
+1. **Infections** (bacterial, viral, fungal, parasitic) and microbial toxins: among the most common and medically important causes. Different pathogens elicit responses ranging from mild acute inflammation to severe systemic reactions that can be fatal, to prolonged chronic reactions that cause extensive tissue injury.
+2. **Tissue necrosis:** it elicits inflammation regardless of the cause of cell death, whether ischaemia (as in myocardial infarction), trauma, or physical and chemical injury such as burns, frostbite, irradiation and exposure to some environmental chemicals. Molecules released from necrotic cells trigger this sterile inflammation.
+3. **Foreign bodies**, such as splinters, dirt and sutures, which may elicit inflammation by themselves or because they cause traumatic tissue injury or carry microbes. Endogenous substances that deposit in tissues can also be harmful, such as urate crystals in gout and cholesterol crystals in atherosclerosis.
+4. **Immune reactions (hypersensitivity):** the immune system damages the individual's own tissues. The reactions may be directed against self antigens, causing autoimmune diseases, or against environmental substances, as in allergies, or against microbes. These reactions tend to be persistent and are often associated with chronic inflammation.
 
 ## What are the cardinal signs of acute inflammation?
 
@@ -14711,4 +14658,28 @@ In all of these situations, cells undergo apoptosis because they are deprived of
 - **Infections**, particularly viral infections, because of the virus itself (as in adenovirus and HIV infections) or the host immune response (as in viral hepatitis).
 - Killing by **cytotoxic T lymphocytes**, which is responsible for killing tumour cells, cellular rejection of transplants and tissue damage in graft-versus-host disease.
 - Pathologic atrophy in parenchymal organs after duct obstruction, such as occurs in the pancreas, parotid gland and kidney.
+
+## Differences between necrosis and apoptosis.
+
+| Feature | Necrosis | Apoptosis |
+|---|---|---|
+| Cell size | Enlarged (swelling) | Reduced (shrinkage) |
+| Nucleus | Pyknosis, karyorrhexis, karyolysis | Fragmentation into nucleosome-size fragments |
+| Plasma membrane | Disrupted | Intact; altered structure, especially orientation of lipids |
+| Cellular contents | Enzymatic digestion; may leak out of the cell | Intact; may be released in apoptotic bodies |
+| Adjacent inflammation | Frequent | No |
+| Physiologic or pathologic role | Usually pathologic (culmination of irreversible cell injury) | Often physiologic, a means of eliminating unwanted cells; may be pathologic after some forms of cell injury, especially DNA damage |
+| Regulation | Historically thought of as accidental cell death | Regulated cell death, mediated by defined molecular pathways |
+| Cytoplasm | Eosinophilic, glassy and homogeneous; vacuolated and moth-eaten once organelles are digested | Dense and eosinophilic |
+
+## Differences between dystrophic and metastatic calcification.
+
+| Feature | Dystrophic calcification | Metastatic calcification |
+|---|---|---|
+| Tissue involved | Dying tissues | Otherwise normal tissues |
+| Serum calcium | Normal; no derangement of calcium metabolism | Hypercalcaemia, secondary to some disturbance in calcium metabolism |
+| Cause | Necrotic cells and cellular debris that are not promptly destroyed and reabsorbed provide a nidus for deposition of calcium salts | Increased parathyroid hormone secretion; resorption of bone tissue; vitamin D-related disorders; renal failure with retention of phosphate |
+| Sites | Areas of coagulative, caseous or liquefactive necrosis; foci of enzymatic necrosis of fat; atheromas of advanced atherosclerosis; aging or damaged heart valves; tuberculous lymph node | Interstitial tissues of the gastric mucosa, kidneys, lungs, systemic arteries and pulmonary veins, which all excrete acid and have an internal alkaline compartment |
+| Morphology | Fine white granules or clumps, gritty; basophilic, amorphous and granular on H&E | Resembles dystrophic calcification; noncrystalline amorphous deposits or hydroxyapatite crystals |
+| Clinical effect | Often a cause of organ dysfunction, as in calcific valvular disease and atherosclerosis | Usually no clinical dysfunction; massive lung involvement causes respiratory compromise and massive kidney deposits (nephrocalcinosis) may cause renal damage |
 
