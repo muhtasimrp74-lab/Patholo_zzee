@@ -655,3 +655,23 @@ Sources: site textbook ch25 (skin) and ch26 (bones). No outside sources. No answ
 - Great toe lesion, differential: the textbook gives no differential list for this case; the answer uses only the lesions the textbook says mimic melanoma (acral lentiginous melanoma, pigmented basal cell carcinoma, blue naevus, seborrhoeic keratosis).
 - Confirmation of melanoma: dermoscopy, excision margins and Breslow thickness cut-offs are not in the passages read; only the prognostic factors listed are given.
 - Osteomyelitis types: the textbook gives no formal classification by duration; the answer lists its headings (pyogenic, mycobacterial, skeletal syphilis) and its stages.
+
+## Session 19, batch 2 (work-list questions 15 to 30, Chapters 26 and 28)
+
+Sources: site textbook ch26 (Ewing sarcoma, giant cell tumour, osteomyelitis, joints) and ch28 (CNS tumours, meningioma, meningitis). No answers in this batch were previously empty.
+
+| Question | Source | URL |
+|---|---|---|
+| Indications of CSF examination | Shahan, Choi, Nieves. Cerebrospinal Fluid Analysis. American Family Physician 2021; and S1 guideline "Lumbar puncture and cerebrospinal fluid analysis" (Neurological Research and Practice 2020) | https://www.aafp.org/pubs/afp/issues/2021/0401/p422.html ; https://pmc.ncbi.nlm.nih.gov/articles/PMC7650145 |
+| CSF findings of types of meningitis; pyogenic, tubercular and viral differences (appearance and pressure cells only; cells, protein and glucose are from the textbook) | Table 1, typical CSF characteristics in meningitis and encephalitis | https://pmc.ncbi.nlm.nih.gov/articles/PMC10201400/table/tbl1 |
+| Why glucose is reduced in pyogenic meningitis | Pleocytosis is not fully responsible for low CSF glucose in meningitis (Neurol Neuroimmunol Neuroinflamm 2018); Effect of induced hyperglycemia on brain cell membrane function in neonatal meningitis (experimental) | https://pmc.ncbi.nlm.nih.gov/articles/PMC5745359 ; https://pure.skku.edu/en/publications/effect-of-induced-hyperglycemia-on-brain-cell-membrane-function-a/ |
+| Confirmation of meningitis (culture of CSF) | AAFP 2021 (above) | https://www.aafp.org/pubs/afp/issues/2021/0401/p422.html |
+
+### Points left out and decisions needed
+- StatPearls pages could not be retrieved in the search, so the American Family Physician review, the German S1 guideline and the PMC articles above were used instead. Please decide whether these are acceptable or whether StatPearls "Cerebrospinal Fluid Analysis" should replace them.
+- Why glucose is reduced: the textbook gives no explanation. The sources disagree on the mechanism (leucocyte and bacterial glycolysis, impaired glucose transport), so the answer states only the points the two sources agree on and says that the cause is debated. Impaired transport across the blood-brain barrier and bacterial consumption are left out as not established.
+- Neonatal meningitis causes: the textbook names only E. coli and group B streptococci for neonates; Listeria in neonates is left out.
+- Purpuric rash: the textbook does not describe it. The answer links it to meningococcal disease only through the textbook statement that Neisseria meningitidis causes meningitis in adolescents and young adults and through the Waterhouse-Friderichsen syndrome passage.
+- Normal CSF values and numerical cell counts are not given in the textbook, so none are stated.
+- Osteomyelitis case: blood culture, sedimentation rate and C-reactive protein are not mentioned for osteomyelitis in the textbook, so they are left out.
+- Systemic diseases affecting joints: the textbook does not use this phrase; rheumatoid arthritis and gout are chosen from its descriptions of joint diseases with systemic or metabolic causes.
