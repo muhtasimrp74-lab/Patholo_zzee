@@ -10044,113 +10044,106 @@ Lung cancers are broadly classified into small cell and non-small cell types. Co
 
 ## What is Barrett esophagus?
 
-Barrett oesophagus is a complication of chronic gastroesophageal reflux disease in which the stratified squamous epithelium of the distal oesophagus is replaced by metaplastic columnar epithelium of intestinal type, and it is associated with an increased risk of oesophageal adenocarcinoma. The metaplastic mucosa is acquired as an adaptive response to chronic injury by gastric acid and bile, because columnar epithelium is more resistant to the refluxate than squamous epithelium.
-
-Grossly, it appears as tongues or patches of red, velvety mucosa extending upward from the gastroesophageal junction, interspersed with islands of residual pale squamous mucosa; a segment of 3 cm or more is called long-segment and one of less than 3 cm short-segment disease. Microscopically, the squamous epithelium is replaced by columnar cells, among which goblet cells, with their distended pale-blue mucin vacuoles, are the diagnostic cell type; gastric-type foveolar cells are also present. Dysplasia, if present, is graded as low or high.
-
-It occurs in about 10% of persons with symptomatic GERD, is commonest in white men aged 40 to 60 years, and is increasing in incidence. Its significance lies in its progression, through dysplasia, to adenocarcinoma, and it is diagnosed by endoscopy with biopsy.
-
+Barrett oesophagus is a complication of chronic GERD that is characterised by **intestinal metaplasia of the oesophageal squamous mucosa** and is associated with an **increased risk of cancer**.
 
 ## Mention the clinical importance of Barrett esophagus.
 
-The clinical importance of Barrett oesophagus rests on its malignant potential. It is the precursor lesion of oesophageal adenocarcinoma, the incidence of which has risen sharply in Western countries in parallel with GERD and obesity. Barrett epithelium acquires driver mutations (for example in TP53 and CDKN2A) in a stepwise fashion, progressing from metaplasia to low-grade dysplasia, high-grade dysplasia, intramucosal carcinoma, and invasive adenocarcinoma. Risk is highest with goblet-cell metaplasia, long-segment involvement, advancing age, male sex, white race, and dysplasia, whereas short-segment disease carries a lower risk.
-
-Its recognition therefore has several practical consequences. Patients are placed under endoscopic surveillance with a standardised biopsy protocol, although the effect of surveillance on survival remains debated. Dysplasia can be eradicated by radiofrequency ablation or endoscopic mucosal resection, and oesophagectomy is reserved for multifocal high-grade dysplasia or invasive carcinoma that is unsuitable for endoscopic therapy. Early adenocarcinoma confined to the mucosa or submucosa has a 5-year survival of about 80%, compared with less than 25% once symptomatic. Barrett oesophagus also indicates long-standing reflux and may be complicated by ulceration, haemorrhage, and stricture, and it may be asymptomatic, particularly in short-segment disease.
-
+- Greatest concern: increased risk of **oesophageal adenocarcinoma**; most oesophageal adenocarcinomas occur with Barrett oesophagus, but most individuals with Barrett oesophagus do not develop tumours
+- Risk of cancer is greatest in those with **goblet cells**
+- **Dysplasia** (low grade or high grade) is a preinvasive neoplastic change, associated with prolonged symptoms, longer segment length, increased age and European ethnicity
+- **Long-segment** (3 cm or more) disease carries higher risk of dysplasia or carcinoma than **short-segment** (less than 3 cm)
+- Identified by **endoscopy and biopsy**; surveillance biopsy protocol supported by many experts
+- Low-grade dysplasia: conservative management with more frequent surveillance, or radiofrequency ablation or endoscopic mucosal resection
+- Multifocal high-grade dysplasia or intramucosal carcinoma: ablation, endoscopic mucosal resection or oesophagectomy
 
 ## What are the ulcerative lesions/different ulcers of GIT?
 
-Ulcerative lesions of the gastrointestinal tract can be grouped by cause.
-
-**Peptic and acid-related ulcers.** Chronic peptic ulcers of the duodenum and stomach, reflux and Barrett ulcers of the oesophagus, marginal ulcers after gastrojejunostomy, the multiple ulcers of Zollinger–Ellison syndrome, and ulcers in a Meckel diverticulum containing ectopic gastric mucosa all result from acid–pepsin injury.
-
-**Stress- and drug-related ulcers.** Acute stress ulcers (Curling ulcers in burns, Cushing ulcers in intracranial disease), NSAID and aspirin ulcers, pill-induced oesophageal ulcers, and corrosive injury.
-
-**Infectious ulcers.** Herpetic, cytomegaloviral, and candidal oesophageal ulcers; typhoid ulcers (longitudinal, in the terminal ileum over Peyer patches, with risk of perforation); intestinal tuberculosis (transverse, girdle-like ulcers); amoebic colitis (flask-shaped ulcers); shigellosis; and pseudomembranous colitis due to Clostridioides difficile (volcano-like exudate).
-
-**Inflammatory bowel disease.** Crohn disease (aphthous ulcers progressing to linear, serpentine, deep fissuring ulcers with cobblestoning) and ulcerative colitis (continuous, broad-based mucosal ulcers with pseudopolyps).
-
-**Ischaemic and mechanical ulcers.** Ischaemic colitis, radiation injury, stercoral ulcers from fecal impaction, and solitary rectal ulcer syndrome.
-
-**Neoplastic ulcers.** Ulcerated carcinomas of the oesophagus, stomach, and colon, ulcerated lymphoma, and ulcerated gastrointestinal stromal tumour.
-
+- **Peptic ulcer**: chronic ulcer of the duodenum or stomach
+- **Stress-related ulcers** (acute): in shock, sepsis, severe trauma, extensive burns, intracranial disease or major surgery
+  - **Curling ulcers**: proximal duodenum and stomach in severe burns or trauma
+  - **Cushing ulcers**: stomach, duodenum and oesophagus in intracranial disease; greater risk of perforation
+- **Viral oesophageal ulcers**: discrete punched-out ulcers, for example herpes simplex virus
+- Ulcers of **Crohn disease** and **ulcerative colitis**
 
 ## What is peptic ulcer disease (PUD)?
 
-Peptic ulcer disease is chronic mucosal ulceration of the duodenum or stomach, caused by an imbalance between the protective mechanisms of the mucosa and the damaging action of gastric acid and pepsin. It is almost always associated with Helicobacter pylori infection, the use of NSAIDs, or cigarette smoking, and it develops on a background of chronic gastritis (Table 17.3).
-
-The ulcers are typically solitary, round to oval, sharply punched out, with a clean base, and they penetrate through the muscularis mucosae. They occur most frequently in the first part of the duodenum and on the lesser curvature of the stomach. The classic symptom is epigastric burning or gnawing pain, occurring one to three hours after meals, worse at night, and relieved by food or alkali. Haemorrhage, perforation, and gastric outlet obstruction are the main complications. Eradication of H. pylori, acid suppression with proton pump inhibitors, and withdrawal of NSAIDs heal most ulcers, and the recurrence rate after successful eradication is less than 20%.
-
+Peptic ulcer disease (PUD) refers to **chronic mucosal ulceration** affecting the **duodenum or stomach** and is almost always associated with ***H. pylori* infection, NSAIDs, or cigarette smoking**.
 
 ## Mention the common site of PUD.
 
-The commonest site of peptic ulcer is the proximal duodenum, within a few centimetres of the pyloric valve, usually the anterior or posterior wall of the first part. In the stomach, the commonest site is the lesser curvature near the junction of the body and the antrum. Less common sites include the pyloric channel, the gastrojejunal anastomotic margin, the lower oesophagus (in reflux disease or in Barrett oesophagus), the jejunum in Zollinger–Ellison syndrome, and a Meckel diverticulum containing gastric mucosa.
-
+- **Proximal duodenum**, within a few centimetres of the pyloric valve: the most frequent site
+- **Stomach**: predominantly along the **lesser curvature**, near the interface of the body and antrum
+- Also the gastric antrum
 
 ## Write down the predisposing factors for peptic ulcer.
 
-The predisposing factors for peptic ulcer disease are:
-
-1. Helicobacter pylori infection, the most important cause, through chronic antral gastritis, increased acid and gastrin, and reduced duodenal bicarbonate.
-2. Nonsteroidal anti-inflammatory drugs and aspirin, which inhibit protective prostaglandin synthesis; their effect is potentiated by corticosteroids.
-3. Cigarette smoking, which synergises with H. pylori in gastric ulcer and impairs mucosal blood flow and healing.
-4. Zollinger–Ellison syndrome and other hypersecretory states, including endocrine cell hyperplasia.
-5. Chronic obstructive pulmonary disease, alcoholic cirrhosis (mainly duodenal ulcer), chronic renal failure, hyperparathyroidism, and cardiovascular disease.
-6. Illicit drugs such as cocaine that reduce mucosal blood flow, and alcohol.
-7. Psychological stress, which may increase gastric acid secretion.
-8. Viral infections (cytomegalovirus, herpes simplex virus), genetic predisposition, and blood group O.
-
+- ***Helicobacter pylori* infection**
+- **Cigarette use** (synergises with *H. pylori* for gastric PUD)
+- **NSAIDs**, including aspirin (potentiated by corticosteroids)
+- **Chronic obstructive pulmonary disease**
+- **Alcoholic cirrhosis** (primarily duodenal PUD)
+- **Illicit drugs**, for example cocaine, that reduce mucosal blood flow
+- **Cardiovascular disease** (reduced mucosal blood flow, oxygenation and healing)
+- **Psychological stress** (can increase gastric acid secretion)
+- **Endocrine cell hyperplasia** (can stimulate parietal cell growth and gastric acid secretion)
+- **Zollinger-Ellison syndrome** (PUD of stomach, duodenum and jejunum)
+- **Viral infection** (cytomegalovirus, herpes simplex virus)
 
 ## Write in short about the pathogenesis of PUD.
 
-Peptic ulcer results from an imbalance between damaging factors (gastric acid, pepsin, H. pylori, NSAIDs, bile) and the defensive mechanisms of the mucosa (mucus and bicarbonate secretion, tight epithelial barrier, prostaglandins, mucosal blood flow, epithelial renewal), and it develops on a background of chronic gastritis.
-
-H. pylori is the principal cause. Residing in the mucus overlying the surface epithelium, it produces urease (ammonia, raising local pH), adhesins, flagella, and the CagA and VacA toxins, and it elicits a neutrophilic and lymphoplasmacytic response. Antral gastritis increases gastrin secretion and expands the parietal cell mass, so acid secretion rises, while duodenal bicarbonate secretion falls; gastric metaplasia of the duodenal epithelium then allows colonisation of the duodenum and ulceration. NSAIDs inhibit cyclooxygenase and so the synthesis of prostaglandins E₂ and I₂, which support mucus, bicarbonate, blood flow, and epithelial restitution. Smoking, ischaemia, and hypersecretory states add to the injury. Atrophic gastritis with low acid output protects against ulcer but predisposes to carcinoma.
-
+- PUD results from **imbalance between defence mechanisms and damaging factors** that cause chronic gastritis; it generally develops on a background of chronic gastritis
+- Defences: mucus and phospholipid layer, bicarbonate secretion, epithelial barrier, mucosal blood flow
+- Damaging factors: gastric acid, peptic enzymes, *H. pylori*, NSAIDs
+- ***H. pylori* antral gastritis** leads to increased local gastrin production, expansion of gastric body parietal cells and **increased acid secretion**, with **decreased duodenal bicarbonate secretion**
+- **NSAIDs** inhibit COX-dependent synthesis of prostaglandins E2 and I2, which support mucus, bicarbonate and phospholipid secretion, mucosal blood flow and epithelial restitution
+- Individuals with gastric mucosal atrophy (reduced acid secretion) are generally protected from antral and duodenal ulcers
+- Why only some people develop PUD is poorly understood: host factors and variation in bacterial pathogenicity are involved
 
 ## Explain: H. pylori does not invade the tissues but can cause peptic ulcer.
 
-Helicobacter pylori is a non-invasive organism that lives in the gastric mucus, attached to the surface of the foveolar epithelial cells and in the superficial mucus layer, and it is not found within the mucosal tissues. It nevertheless causes peptic ulcer through indirect mechanisms.
-
-First, it damages the epithelium and the mucus barrier from the luminal side: urease splits urea into ammonia, which neutralises acid locally to allow bacterial survival but is itself toxic to the epithelium and inhibits bicarbonate transport; the CagA protein (injected into epithelial cells) and the VacA cytotoxin disturb epithelial function. Second, the bacterium provokes a vigorous host inflammatory response, with neutrophils, lymphocytes, plasma cells, and cytokines such as TNF and IL-1, that injures the mucosa. Third, antral inflammation raises gastrin and thus acid secretion and reduces duodenal bicarbonate secretion, so the acid–peptic load on the mucosa increases. The damaged mucosa, exposed to acid and pepsin, then breaks down into an ulcer. Thus the ulcer is the result of the interplay of the bacterial virulence factors, the host immune response, and acid, rather than of tissue invasion by the organism.
-
+- *H. pylori* has adapted to the niche provided by **gastric mucus**; it stays in the superficial mucus over surface and neck epithelial cells and does not invade the tissue
+- It causes injury through its virulence factors:
+  - **Flagella**: motility in viscous mucus
+  - **Urease**: generates ammonia from endogenous urea and raises local gastric pH
+  - **Adhesins**: adherence to surface foveolar cells
+  - **Toxins**, such as **CagA** (injected into the epithelial cytoplasm) and **VacA**
+- It induces **antral gastritis** with infiltration by neutrophils and plasma cells; inflammation enhances local gastrin production, leading to increased acid secretion and decreased duodenal bicarbonate secretion
+- Increased acid with impaired mucosal defence leads to **peptic ulcer**
+- The outcome depends on host defences, host genetics and immune response, and bacterial virulence
 
 ## How will you differentiate a benign gastric ulcer from a malignant ulcer?
 
-A benign gastric ulcer and a malignant gastric ulcer are differentiated by gross, endoscopic, radiologic, and microscopic criteria.
-
-| Feature | Benign gastric ulcer | Malignant gastric ulcer |
+| Feature | Benign (peptic) ulcer | Malignant ulcer (gastric adenocarcinoma) |
 |---|---|---|
-| Site | Lesser curvature | Greater curvature or anywhere, especially antrum |
-| Size | Usually less than 3 to 4 cm | Often more than 4 cm |
-| Shape and margin | Round or oval, sharply punched out; margins level with the mucosa | Irregular; heaped-up, rolled, everted, indurated margins |
-| Base | Smooth, clean | Necrotic, shaggy, haemorrhagic |
-| Surrounding folds | Radiate to the edge, tapering | Clubbed, fused, or abruptly cut off; rigid wall |
-| Barium meal | Niche projects beyond the lumen outline | Crater inside the lumen outline with an irregular filling defect |
-| Histology | Inflammation and granulation tissue with fibrous scar | Adenocarcinoma cells infiltrating the wall |
-| Behaviour | Heals with acid suppression and H. pylori eradication | Fails to heal; nodal and liver metastases |
-
-Definitive differentiation is by endoscopic biopsy from the margins and base of the ulcer (multiple biopsies), and healing should be confirmed at follow-up endoscopy.
-
+| Shape | Round to oval, sharply **punched-out** defect | Ulcerated infiltrative tumour |
+| Margin | Level with surrounding mucosa; may overhang the base on the proximal side | **Heaped-up** margins |
+| Base | **Smooth and clean** because of peptic digestion of exudate | Tumour tissue |
+| Number | Solitary in more than 80% | Not stated |
+| Site | Lesser curvature near the interface of body and antrum | Most often the antrum; lesser curvature more than greater |
+| Surrounding mucosa | Scarring draws mucosa into folds that radiate outward | Desmoplastic reaction, rigid thickened wall |
+| Microscopy | Fibrinoid debris, granulation tissue and fibrous scar | Neoplastic glands (intestinal type) or **signet-ring cells** (diffuse type) |
 
 ## Write the microscopic features/morphology of peptic ulcer.
 
-Microscopically, a chronic peptic ulcer extends through the muscularis mucosae and has a characteristic four-layered base. The superficial layer is a thin zone of necrotic fibrinoid debris containing neutrophils. Beneath it is a layer of active inflammation with a predominantly neutrophilic infiltrate. Deeper is a zone of granulation tissue with proliferating, immature vessels, together with neutrophils and mononuclear leukocytes. At the bottom is a fibrous or collagenous scar, which may extend through the muscularis propria and sometimes to the serosa, drawing the surrounding mucosa into radiating folds. Vessels in the scar are thickened (endarteritis obliterans) and may be thrombosed; arteries eroded by the ulcer are the source of haemorrhage. The surrounding mucosa shows chronic gastritis, often with foveolar metaplasia in duodenal ulcers, and the epithelium at the margin shows regenerative change without dysplasia.
+**Gross**
+- Solitary in more than 80%; round to oval, sharply **punched-out** defect
+- Margin usually level with the surrounding mucosa; may overhang the base proximally
+- Base **smooth and clean** because of peptic digestion of exudate
+- Scarring may involve the entire thickness of the wall and draw surrounding mucosa into radiating folds
 
-Grossly, the ulcer is solitary, round to oval, sharply punched out, with a smooth, clean base and radiating folds.
-
+**Microscopy** (base of an active ulcer, from surface to depth)
+1. Thin layer of **fibrinoid debris** with a predominantly **neutrophilic** infiltrate
+2. **Granulation tissue** with immature vessels, neutrophils and mononuclear leukocytes
+3. **Fibrous or collagenous scar**
+- Larger vessels in the scarred area are thickened and occasionally thrombosed
+- Foveolar metaplasia is common in chronic duodenal peptic disease
 
 ## Mention the complications of PUD.
 
-The complications of peptic ulcer disease are (Table 17.4):
-
-1. **Haemorrhage**, the commonest (about 15% to 20%), presenting as haematemesis, melaena, or chronic blood loss and iron deficiency anaemia; it may be life threatening and results from erosion of vessels in the ulcer base.
-2. **Perforation** (about 5%), accounting for about two-thirds of ulcer-related deaths; it produces acute peritonitis, shock, and free air under the diaphragm, and is most common with anterior duodenal ulcers.
-3. **Gastric outlet obstruction** (about 2%), due to scarring and oedema of pyloric channel or duodenal ulcers, causing incapacitating pain, vomiting, and, if prolonged, dehydration and hypochloraemic metabolic alkalosis.
-4. **Penetration** into the pancreas, liver, or other adjacent structures, with referred back pain, and fistula formation.
-5. **Intractable pain and chronicity** with recurrent ulceration.
-6. **Malignant transformation**, rare, and concerned chiefly with gastric ulcers.
-
+1. **Haemorrhage**: bleeding from thickened vessels in the scarred base may be life-threatening; **iron deficiency anaemia** may result
+2. **Perforation** into the peritoneal cavity: surgical emergency, free air under the diaphragm on upright abdominal radiograph; accounts for two-thirds of ulcer-related deaths; rarely the first indication of an ulcer
+3. **Obstruction**: most often with pyloric channel ulcers (may occur with duodenal ulcers); incapacitating crampy abdominal pain; rarely total obstruction with intractable vomiting
+- **Penetrating ulcers**: pain referred to the back, left upper quadrant or chest
 
 ## A patient with long-standing PUD has repeated/prolonged vomiting. What will be his electrolyte and acid-base status?
 
@@ -10185,31 +10178,51 @@ The complications are those of peptic ulcer disease: haemorrhage (haematemesis, 
 
 ## Write a short note on GIST.
 
-Gastrointestinal stromal tumour is the commonest mesenchymal tumour of the abdomen, with an annual incidence of about 11 to 20 per million. It arises from the interstitial cells of Cajal (the pacemaker cells of the gut) or their precursors, and it occurs most often in the stomach (more than half of cases), followed by the small intestine, and less commonly the colon, rectum, and oesophagus. The peak age is about 60 years, and it is uncommon before 40.
+**Definition:** Gastrointestinal stromal tumour (GIST) is the most common mesenchymal tumour of the abdomen; more than half occur in the stomach. It arises from the **interstitial cells of Cajal** (pacemaker cells). Peak age is 60 years.
 
-**Pathogenesis.** About 75% of GISTs have gain-of-function mutations in the receptor tyrosine kinase KIT, and another 8% have activating mutations in PDGFRA; the two are mutually exclusive and trigger the same downstream signalling. Tumours lacking these mutations often have loss of succinate dehydrogenase complex function (SDHA, SDHB, SDHC, SDHD), which may be germline (Carney–Stratakis syndrome of GIST and paraganglioma). GIST is also associated with neurofibromatosis type 1 and the Carney triad (GIST, paraganglioma, pulmonary chondroma), and familial KIT mutations cause diffuse Cajal cell hyperplasia and multiple tumours.
+**Pathogenesis**
+- About 75% have gain-of-function mutations in the receptor tyrosine kinase **KIT**
+- About 8% have mutations in **PDGFRA**; KIT and PDGFRA mutations are mutually exclusive
+- Tumours without these often have mutations in the succinate dehydrogenase complex genes (SDHA, SDHB, SDHC, SDHD)
+- Associated with **Carney triad** (GIST, paraganglioma, pulmonary chondroma) and **neurofibromatosis type 1**
 
-**Morphology.** The tumour forms a well-circumscribed solitary intramural or submucosal mass, with a whorled grey-white cut surface, that may be exophytic and may show haemorrhage, cystic change, or mucosal ulceration. Microscopically it is composed of spindle cells (most common), epithelioid cells, or a mixture, with uniform nuclei. The cells are characteristically immunoreactive for KIT (CD117) and DOG1, and often for CD34.
+**Morphology**
+- Solitary, well-circumscribed, fleshy mass, up to 30 cm; overlying mucosa frequently ulcerated; cut surface **whorled**
+- **Spindle cell type**: bundles of spindle cells; **epithelioid type**: plump epithelial-looking cells; mixtures are common; nuclear pleomorphism uncommon
+- **KIT (CD117)** positive in 95% of gastric GISTs; **DOG1** positive in 95%
 
-**Clinical behaviour.** Symptoms are abdominal pain, a mass, gastrointestinal bleeding, anaemia, or obstruction; many are found incidentally. The malignant potential depends on tumour size, mitotic rate, and site (small intestinal tumours behave worse than gastric tumours); metastases are to the liver and peritoneum, and lymph node spread is rare. Treatment is surgical resection, and unresectable or metastatic disease responds to tyrosine kinase inhibitors such as imatinib.
+**Clinical features and complications**
+- Mass effects; mucosal ulceration causes blood loss, and about half present with **anaemia**
+- Metastasis to serosal nodules in the peritoneal cavity and to the liver; spread outside the abdomen is uncommon
+- Prognosis correlates with size, mitotic index and location; gastric GISTs are less aggressive than small intestinal GISTs
+- Treatment: complete surgical resection; **imatinib** (tyrosine kinase inhibitor) in KIT or PDGFRA mutated tumours that are unresectable, recurrent or metastatic
 
 ## List four congenital anomalies of GIT.
 
-1. Meckel diverticulum
-2. Hirschsprung disease (congenital aganglionic megacolon)
-3. Congenital hypertrophic pyloric stenosis
-4. Oesophageal atresia with tracheo-oesophageal fistula (other examples: intestinal atresia, imperforate anus, malrotation, ectopic gastric or pancreatic tissue)
-
+1. **Atresia**, fistulae and duplications (oesophageal atresia with **tracheo-oesophageal fistula**)
+2. **Meckel diverticulum**
+3. **Congenital hypertrophic pyloric stenosis**
+4. **Hirschsprung disease** (congenital aganglionic megacolon)
 
 ## Write a short note on Hirschsprung disease.
 
-Hirschsprung disease (congenital aganglionic megacolon) is a functional obstruction of the colon caused by failure of ganglion cells to migrate to the distal bowel wall. It occurs in about 1 in 5000 live births, affects boys more than girls, and may be isolated or associated with Down syndrome (about 10%) and other anomalies.
+**Definition:** Hirschsprung disease (congenital aganglionic megacolon) causes **functional obstruction of the colon** due to failure of ganglion cells to migrate to the wall of the colon. Incidence about 1 in 5000 live births; 10% of cases occur in **Down syndrome**.
 
-**Pathogenesis.** The enteric neurons derive from neural crest cells that migrate caudally into the gut wall. Arrest of migration, or premature death of the ganglion cells, leaves the distal segment without the submucosal (Meissner) and myenteric (Auerbach) plexuses. Heterozygous loss-of-function mutations in the receptor tyrosine kinase RET underlie most familial and about 15% of sporadic cases; EDNRB and EDN3 mutations are also implicated.
+**Pathogenesis**
+- Arrested migration of neural crest cells from caecum to rectum, or premature death of ganglion cells
+- Distal segment lacks the **Meissner submucosal plexus and Auerbach myenteric plexus** (aganglionosis); peristalsis is absent, the aganglionic segment is hypercontracted and the proximal segment dilates
+- Heterozygous loss-of-function mutations of ***RET*** account for most familial and about 15% of sporadic cases; also **EDNRB** and **EDN3**
+- Incomplete penetrance
 
-**Morphology.** The rectum is always affected, and the lesion extends proximally for a variable distance: short-segment (rectosigmoid), the commoner pattern, and long-segment disease. The aganglionic segment appears normal or contracted, whereas the proximal innervated colon is dilated and hypertrophic (megacolon), may be perforated, and may show shallow ulcers. Histology shows absence of ganglion cells with hypertrophic nerve bundles; intraoperative frozen section confirms ganglion cells at the anastomotic site.
+**Morphology**
+- Diagnosis needs histological absence of ganglion cells in the affected segment (acetylcholinesterase staining helps)
+- Rectum always affected; **short-segment** (rectosigmoid, more common) or **long-segment**
+- Proximal normally innervated colon dilates progressively (**megacolon**); may rupture near the caecum
 
-**Clinical features.** Failure to pass meconium in the first postnatal days, followed by abdominal distention, constipation, and bilious vomiting. Complications are enterocolitis (in about 25% of cases), electrolyte disturbance, perforation, and peritonitis. Treatment is resection of the aganglionic segment and anastomosis of the normal colon to the rectum. Acquired megacolon (Chagas disease, obstruction, ulcerative colitis) differs because ganglion cells are present, except in Chagas disease.
+**Clinical features and complications**
+- Failure to pass meconium, constipation, abdominal distension, bilious vomiting
+- Life-threatening: **enterocolitis**, fluid and electrolyte disturbances, perforation, peritonitis
+- Treatment: surgical resection of the aganglionic segment
 
 ## List five causes of malabsorption syndrome.
 
@@ -10267,64 +10280,66 @@ The inflammatory bowel diseases are **Crohn disease** and **ulcerative colitis**
 
 ## Write a short note on villous adenoma.
 
-Villous adenoma is an epithelial neoplasm of the colon and rectum (most often the rectosigmoid) characterised by dysplastic epithelium arranged on slender villi. It is one of the architectural patterns of adenoma, the others being tubular and tubulovillous. Adenomas are precursors to most colorectal carcinomas, and they arise from the APC/Wnt pathway.
+**Definition:** Colorectal **adenomas** are epithelial neoplasms characterised by **epithelial dysplasia**; they are classified as tubular, tubulovillous or **villous** by architecture. Villous adenomas are covered by slender villi.
 
-**Gross.** Villous adenomas are typically large, sessile, broad-based, with a velvety or cauliflower-like (shaggy) surface; they are usually less pedunculated than tubular adenomas, and may reach several centimetres in diameter.
+**Aetiology and pathogenesis**
+- Adenomas are precursors to **colorectal adenocarcinoma**; most adenomas do not progress to cancer
+- Developed in about 30% of adults in the Western world by 60 years
 
-**Microscopic.** The lesion is covered by long, slender villi that extend straight down from the surface to the muscularis mucosae. The epithelium shows dysplasia: elongated, hyperchromatic, stratified nuclei, prominent nucleoli, reduced goblet cells, and, in high-grade dysplasia, glandular budding and a cribriform pattern.
+**Morphology**
+- 0.3 to 10 cm, pedunculated or sessile; surface velvety or raspberry-like
+- Dysplasia: nuclear **hyperchromasia, elongation and stratification**, prominent nucleoli, eosinophilic cytoplasm, fewer goblet cells
 
-**Clinical significance.** Villous adenomas harbor invasive carcinoma more often than tubular adenomas, although this correlates chiefly with their larger size; nearly 40% of adenomas larger than 4 cm contain invasive cancer. Invasion beyond the muscularis mucosae, including into the stalk, defines invasive adenocarcinoma. Clinically they present with rectal bleeding, mucus discharge, or occult blood loss with anaemia; large rectal villous adenomas may secrete copious mucus, producing watery diarrhoea with hypokalaemia and hypoproteinaemia. Treatment is complete endoscopic or surgical excision, and surveillance colonoscopy follows.
-
+**Clinical features and complications**
+- Most are silent; large polyps cause **occult bleeding** and anaemia
+- Villous adenomas harbour cancer more often than tubular adenomas, which also correlates with larger size
+- **Size** is the most important predictor of malignancy: rare below 1 cm, nearly 40% of lesions larger than 4 cm contain invasive cancer
+- High-grade dysplasia is a risk factor for cancer in that polyp
+- Invasion beyond the muscularis mucosae, including the stalk, is invasive adenocarcinoma with risk of spread
+- Surveillance colonoscopy from 45 years; polypectomy is diagnostic and therapeutic
 
 ## Define polyp.
 
-A polyp is a nodule or mass that projects above the level of the surrounding mucosa into the lumen of a hollow viscus. It is a descriptive term that implies nothing about the nature of the lesion. Polyps that arise directly from the mucosa without a stalk are described as sessile, and those with a stalk as pedunculated. They may be nonneoplastic (inflammatory, hyperplastic, or hamartomatous) or neoplastic (adenomas and serrated polyps).
-
+Most, if not all, polyps begin as small elevations of the mucosa. These are referred to as **sessile**; as they enlarge a stalk may form and they are termed **pedunculated**.
 
 ## Write down the types/names of GI polyps.
 
-Gastrointestinal polyps are classified as nonneoplastic or neoplastic.
-
-**Nonneoplastic polyps**
-
-1. Inflammatory polyps (including inflammatory pseudopolyps of ulcerative colitis and the polyp of solitary rectal ulcer syndrome)
-2. Hyperplastic polyps (stomach and colon)
-3. Fundic gland polyps
-4. Hamartomatous polyps: juvenile polyps (sporadic or juvenile polyposis syndrome), Peutz–Jeghers polyps, and polyps of Cowden syndrome (PTEN hamartoma tumour syndrome), Cronkhite–Canada syndrome, and tuberous sclerosis
-
-**Neoplastic polyps**
-
-1. Adenomas: tubular, tubulovillous, and villous adenomas of the colon, and gastric adenomas
-2. Sessile serrated polyps (sessile serrated adenomas)
-3. Adenomas of polyposis syndromes: familial adenomatous polyposis (with its variants Gardner and Turcot syndromes) and MUTYH-associated polyposis
-
-Other lesions, such as neuroendocrine tumours, gastrointestinal stromal tumours, lymphomas, and carcinomas, can present as polyps.
-
+| Group | Types |
+|---|---|
+| **Non-neoplastic** | **Inflammatory** polyps; **hyperplastic** polyps; **hamartomatous** polyps (juvenile polyp, Peutz-Jeghers polyp) |
+| **Neoplastic** | **Adenoma** (tubular, tubulovillous, villous); **sessile serrated polyp** |
+| **Stomach** | Inflammatory or hyperplastic polyps; fundic gland polyps; gastric adenoma |
 
 ## Mention the polyps having malignant potential.
 
-The polyps that carry malignant potential are:
-
-1. **Adenomas** (tubular, tubulovillous, and villous); the risk rises with size (nearly 40% of lesions larger than 4 cm contain invasive cancer), villous architecture, and high-grade dysplasia.
-2. **Sessile serrated polyps**, which lack conventional dysplasia but have malignant potential (microsatellite instability, BRAF mutation, MLH1 methylation).
-3. **Adenomas of polyposis syndromes**: familial adenomatous polyposis (APC) with virtually 100% risk of carcinoma if untreated, and MUTYH-associated polyposis.
-4. **Gastric adenomas** (up to 30% when large) and large pedunculated gastric inflammatory or hyperplastic polyps more than 1 cm (dysplasia in 1% to 20%).
-5. **Hamartomatous polyposis syndromes**: juvenile polyposis syndrome (30% to 50% develop colonic adenocarcinoma by age 45) and Peutz–Jeghers syndrome (lifetime cancer risk of about 40% in multiple organs).
-6. Fundic gland polyps in familial adenomatous polyposis (may show dysplasia).
-
-Colonic hyperplastic polyps, sporadic fundic gland polyps, and sporadic juvenile polyps carry negligible risk.
-
+- **Adenomas**: tubular, tubulovillous and villous (precursors to colorectal adenocarcinoma)
+- **Sessile serrated polyps** (right colon)
+- **Gastric adenomas**: risk correlates with size, particularly above 2 cm
+- **Juvenile polyposis syndrome**: 30% to 50% develop colonic adenocarcinoma by 45 years
+- **Peutz-Jeghers syndrome** polyps: lifetime risk of malignancy about 40%
+- **Familial adenomatous polyposis**: adenomas and dysplasia in fundic gland polyps
+- Hyperplastic polyps have **no** malignant potential
 
 ## Write a short note on carcinoid tumour.
 
-Carcinoid tumour, now termed well-differentiated neuroendocrine tumour, is a neoplasm of the diffuse neuroendocrine cells. Most are found in the gastrointestinal tract, with more than 40% in the small intestine, followed by the lungs and tracheobronchial tree; other gastrointestinal sites include the appendix, rectum, and stomach. The peak incidence is in the sixth decade.
+**Definition:** Carcinoid tumour is a **neuroendocrine tumour** of the gastrointestinal tract. Peak incidence is the sixth decade.
 
-**Pathology.** Grossly, they are firm, yellow to tan, intramural or submucosal polypoid masses, with a desmoplastic reaction that may kink and obstruct the small bowel. Microscopically, they are composed of islands, trabeculae, glands, or sheets of uniform cells with scant granular eosinophilic cytoplasm and round nuclei with a "salt and pepper" chromatin pattern; immunostains for chromogranin A and synaptophysin are positive, and ultrastructurally the cells contain dense-core neurosecretory granules. Grade is based on mitotic count and Ki-67 index; high-grade tumours are neuroendocrine carcinomas.
+**Morphology**
+- Intramural or submucosal masses forming polypoid lesions; yellow or tan, very firm because of intense desmoplasia, which may kink and obstruct the small bowel
+- Islands, trabeculae, strands, glands and sheets of uniform cells with scant pink granular cytoplasm and **salt and pepper** chromatin
+- Positive for **synaptophysin** and **chromogranin A**
 
-**Clinical features.** Many are silent or are found incidentally; others present with obstruction, pain, or bleeding. Hormone production may cause specific syndromes (gastrin: Zollinger–Ellison syndrome). The carcinoid syndrome (flushing, diarrhoea, bronchospasm, right-sided valvular fibrosis) occurs in fewer than 10% of patients, usually with hepatic metastases, because intestinal tumour products are otherwise inactivated by the liver.
+**Clinical features**
+- Symptoms reflect hormones released: gastrin causes **Zollinger-Ellison syndrome**
+- **Carcinoid syndrome** in fewer than 10%: cutaneous flushing, sweating, bronchospasm, colicky abdominal pain, diarrhoea, right-sided cardiac valvular fibrosis
+- Syndrome is strongly associated with metastasis to the liver, as the liver inactivates the substances on first pass
 
-**Behaviour.** Gastric and duodenal tumours rarely metastasise; jejunal and ileal tumours are often multiple and aggressive; appendiceal tumours (distal tip, under 2 cm) are almost always benign; rectal tumours are usually small and seldom metastasise.
-
+**Behaviour**
+- Prognosis depends on differentiation, mitotic rate and Ki-67 index
+- Stomach and duodenum: rarely metastasise
+- Jejunum and ileum: often multiple and aggressive
+- Appendix: at the tip, rarely more than 2 cm, almost always benign
+- Rectum: small, metastasis uncommon
 
 ## A young male has acute abdominal pain, vomiting, fever, RIF tenderness, neutrophilic leukocytosis. What is your diagnosis?
 
