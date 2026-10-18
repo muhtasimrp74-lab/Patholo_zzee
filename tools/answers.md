@@ -3302,35 +3302,51 @@ It is defined as a state of systemic tissue hypoperfusion resulting from reduced
 
 ## A 40y male lost consciousness with cold clammy skin after severe bleeding in RTA. What is your probable diagnosis?
 
-The probable diagnosis is **hypovolaemic (haemorrhagic) shock** due to acute massive blood loss after the road traffic accident. Loss of a large volume of blood reduces circulating volume, venous return and cardiac output; the compensatory sympathetic and neurohumoral response causes cutaneous vasoconstriction, giving cold, clammy, pale skin, with tachycardia, weak thready pulse and hypotension. Loss of consciousness indicates cerebral hypoperfusion, and suggests progression beyond the compensated stage. Immediate management is control of haemorrhage, airway and oxygen, and rapid intravenous fluid and blood replacement.
+The probable diagnosis is **hypovolaemic shock** due to massive haemorrhage.
+
+- Hypovolaemic shock results from low cardiac output due to low blood volume, as occurs with massive haemorrhage.
+- Patients exhibit hypotension, a weak rapid pulse, tachypnoea, and **cool, clammy, cyanotic skin**.
+- Cutaneous vasoconstriction, from the neurohumoral response to falling cardiac output and blood pressure, causes the characteristic "shocky" skin coolness and pallor.
 
 
 ## Same patient: what complications may occur?
 
-If shock is not rapidly reversed, tissue hypoxia leads to the following complications:
+If the underlying cause is not corrected, shock passes from the nonprogressive stage to the progressive stage and then to the irreversible stage, with the following complications.
 
-- **Acute kidney injury** from acute tubular necrosis (ischaemic renal injury), with oliguria, acidosis and electrolyte disturbances; this is the commonest late complication.
-- **Lactic (metabolic) acidosis** from anaerobic glycolysis.
-- **Disseminated intravascular coagulation**, from endothelial anoxic injury, with microthrombi (visible in glomeruli) and bleeding.
-- **Acute respiratory distress syndrome (shock lung)**, from diffuse alveolar damage following trauma.
-- **Myocardial ischaemia** and failure; hypoxic encephalopathy with neuronal loss; ischaemic bowel with mucosal necrosis and bacterial translocation, which can superimpose septic shock; centrilobular hepatic necrosis; adrenal cortical lipid depletion and necrosis.
-- **Multiorgan failure and death.** Prognosis depends on the cause and duration; more than 90% of young healthy patients with hypovolaemic shock survive if treated promptly.
-- Other complications related to trauma and resuscitation: infection, coagulopathy from massive transfusion, hypothermia, and iron deficiency anaemia if chronic.
+- **Lactic acidosis**: persistent oxygen deficit replaces aerobic respiration with anaerobic glycolysis and excessive lactic acid production.
+- **Peripheral pooling** of blood in the microcirculation, which worsens cardiac output.
+- **DIC**, because peripheral pooling puts endothelial cells at risk of anoxic injury.
+- Failure of vital organs from widespread tissue hypoxia.
+- **Lysosomal enzyme leakage**, which further aggravates the shock state.
+- Worsening myocardial contractile function, in part because of increased nitric oxide synthesis.
+- **Bacteraemic shock** superimposed, because the ischaemic bowel may allow intestinal flora to enter the circulation.
+- **Renal failure** from ischaemic injury of the kidney, with a phase of progressive oliguria, acidosis and electrolyte imbalances.
+- **Hypoxic injury** of the brain, heart, kidneys, adrenals and gastrointestinal tract; fibrin thrombi form in tissues and are most readily visualised in kidney glomeruli; adrenal cortical cells show lipid depletion.
+- Diffuse alveolar damage, the so-called **shock lung**, which trauma can precipitate even though the lungs are resistant to hypoxic injury in hypovolaemic shock after haemorrhage.
+- **Multiorgan failure and death.**
+
+Except for neuronal and cardiomyocyte loss, affected tissues can recover completely if the patient survives.
 
 
 ## A 25y male has high fever, sore throat, gum/mandibular swelling after tooth extraction, then collapses with feeble pulse and unrecordable BP. What is your clinical diagnosis?
 
-The clinical diagnosis is **septic shock** (bacteraemic shock) secondary to an odontogenic (post-extraction) infection, with cellulitis of the gum and mandibular region (deep neck space infection such as Ludwig angina or abscess). High fever, sore throat and swelling after tooth extraction indicate acute pyogenic infection and spread; the subsequent collapse with feeble pulse and unrecordable blood pressure indicates circulatory failure due to systemic spread of infection with release of bacterial products and cytokines (TNF, IL-1), producing widespread vasodilation, vascular leakage, hypotension, and tissue hypoperfusion. Disseminated intravascular coagulation and multiorgan failure may follow. Management consists of immediate resuscitation with intravenous fluids and vasopressors, blood cultures, broad-spectrum antibiotics and surgical drainage of the focus.
+The clinical diagnosis is **septic shock**.
+
+- Sepsis is life-threatening organ dysfunction caused by a dysregulated host response to infection.
+- Septic shock is a subset of sepsis in which particularly profound circulatory, cellular and metabolic abnormalities are associated with a greater risk of mortality than with sepsis alone.
+- Activated endothelium upregulates nitric oxide and other vasoactive mediators, which contribute to vascular smooth muscle relaxation and **systemic hypotension**.
+- Cytokines loosen endothelial tight junctions, causing widespread vascular leakage and tissue oedema, which impede tissue perfusion.
 
 
 ## Same patient: what may be the etiology?
 
-The aetiology is **bacterial infection** introduced at tooth extraction into the gum and the soft tissues of the mandibular region, followed by bacteraemia. Septic shock is most frequently triggered by gram-positive bacterial infections, followed by gram-negative bacteria and fungi. The likely organisms in an odontogenic infection are:
+The aetiology is a **microbial infection** that has become generalised.
 
-- Streptococci (viridans group and Streptococcus pyogenes) and Staphylococcus aureus, which may produce **superantigens** (toxic shock syndrome toxin, enterotoxins, streptococcal M protein) that cause polyclonal T-cell activation, massive cytokine release, rash, vasodilation, hypotension and shock.
-- Oral anaerobes (Peptostreptococcus, Prevotella, Fusobacterium, Bacteroides), often with mixed flora, and gram-negative bacilli whose **endotoxin (LPS)** triggers TLR-mediated cytokine release.
+- Septic shock is most frequently triggered by **gram-positive bacterial infections**, followed by gram-negative bacteria and fungi.
+- A variety of microbial constituents can trigger the process, such as **endotoxin**, **staphylococcal enterotoxin B** and **M protein of streptococci**.
+- Superantigens, secreted bacterial proteins that are polyclonal T-lymphocyte activators, cause a similar syndrome (for example toxic shock syndrome).
+- Sepsis occurs when the response to infection becomes generalised and injures normal tissues remote from the site of infection.
 
-Predisposing factors include poor oral hygiene, poorly controlled diabetes, immunosuppression and non-sterile technique. The microbial constituents (endotoxin, enterotoxin B, M protein) engage Toll-like receptors on macrophages, neutrophils, dendritic cells and endothelium, and trigger the inflammatory cascade of sepsis.
 
 ## Normal serum levels of Na⁺, K⁺, Cl⁻ and HCO₃⁻.
 
@@ -3587,201 +3603,143 @@ The basic mechanisms are water deficit and excess solute. Total body water loss 
 
 ## Define gene.
 
-A gene is a segment of DNA that carries the coded information for making a specific functional product, usually a polypeptide and sometimes a functional RNA. It is the basic physical and functional unit of heredity.
-
-The human genome contains about 3 billion base pairs distributed over 23 pairs of chromosomes and about 20,000 protein-coding genes. Exons make up only about 1.5% of the genome. A typical protein-coding gene has these parts:
-
-- Regulatory sequences (promoter and enhancers) that control when and in which cells the gene is transcribed.
-- Exons, which are the coding segments.
-- Introns, which are removed by splicing.
-- 5′ and 3′ untranslated regions.
-
-Transcription produces a pre-mRNA, splicing yields mature mRNA, and translation yields the protein. Many genes instead specify functional noncoding RNAs, such as microRNAs and long noncoding RNAs (for example, XIST, which silences the inactive X). The position of a gene on a chromosome is its locus, and the alternative forms present at a locus are alleles. An individual who has two identical alleles is homozygous, and one who has two different alleles is heterozygous. These terms underlie every description of Mendelian inheritance.
+A **gene** is the basic unit of heredity, consisting of a segment of DNA arranged in a linear manner along a chromosome; it codes for a specific protein, a segment of protein, or noncoding RNA.
 
 
 ## What is mutation?
 
-A mutation is a permanent change in the DNA sequence. If it occurs in germ cells it can be passed to offspring and cause inherited disease; if it occurs in somatic cells it is not transmitted and cannot cause hereditary disease.
-
-Germline mutations are present in every cell of the offspring and are the basis of hereditary disorders. Somatic mutations are restricted to a cell and its progeny. They drive cancer, produce clonal expansions such as clonal haematopoiesis of indeterminate potential, and, when they arise early in development, give rise to mosaic overgrowth syndromes. Mutations arise from errors in DNA replication or repair, or from mutagens such as ionising radiation, ultraviolet light and chemicals. A common DNA variant present in more than 1% of the population is called a polymorphism rather than a mutation. Polymorphisms rarely cause disease on their own but contribute additively to complex multigenic disorders.
-
-Gene mutations are grouped by their location and nature:
-
-- **Point mutations in coding sequences.** One base pair is substituted for another. The change may substitute a different amino acid (missense) or create a stop codon (nonsense).
-- **Mutations in noncoding sequences.** Changes in promoters or enhancers reduce or abolish transcription, and changes at intron-exon junctions disturb mRNA splicing.
-- **Deletions and insertions.** If the number of bases lost or gained is a multiple of three, the reading frame is preserved. Otherwise a frameshift results, usually ending in a premature stop codon.
-- **Structural alterations.** These include copy number changes (amplification or deletion) and rearrangements. The 22q11.2 microdeletion in the germline and the t(9;22) BCR-ABL translocation in chronic myeloid leukaemia are examples.
-- **Trinucleotide-repeat expansions.** These are dynamic mutations. In fragile X syndrome the CGG repeat in FMR1 expands from an average of about 29 copies to 250–4000, silencing the gene.
-
-Mutations interfere with gene function at every level. Deletions and promoter mutations compromise transcription, splice-site mutations abnormal RNA processing, nonsense and frameshift mutations translation, and missense mutations the function of the finished protein. Functionally, a mutation may cause loss of function (the common outcome) or, less often, gain of function.
+A **mutation** is defined as a permanent change in DNA sequence.
 
 
 ## Types of mutation.
 
-Mutations are classified into point mutations, which include missense, nonsense and silent changes, mutations of noncoding sequences, deletions and insertions (in-frame or frameshift), structural alterations of genes, and trinucleotide-repeat expansions.
+1. **Point mutations within coding sequences.** A point mutation is a change in which a single nucleotide base pair is substituted with a different base pair.
 
-| Type | Nature | Consequence | Example |
-|---|---|---|---|
-| Point mutation, missense | One base replaced; codon now specifies a different amino acid (conservative or nonconservative) | Altered protein | Sickle cell anaemia (Glu→Val) |
-| Point mutation, nonsense | Codon changed to a stop codon | Premature termination; truncated protein degraded | β-Thalassaemia (CAG→UAG at codon 39) |
-| Point mutation, silent | Codon changes but still codes for the same amino acid | No effect on the protein | — |
-| Noncoding mutation | Promoter/enhancer or intron (splice-site) mutation | Reduced or absent transcription; defective splicing | Certain thalassaemias |
-| In-frame deletion/insertion | Loss or gain of 3 or a multiple of 3 bases | Protein lacking or gaining amino acids | ΔF508 in cystic fibrosis |
-| Frameshift deletion/insertion | Loss or gain of bases not a multiple of 3 | Wrong amino acids then premature stop; often nonsense-mediated decay | Tay-Sachs (4-bp insertion in HEXA); ABO O allele |
-| Structural gene alteration | Amplification, deletion, rearrangement | Altered gene dosage or fusion genes | 22q11.2 deletion; BCR-ABL |
-| Trinucleotide-repeat expansion | Tandem repeats expand and are unstable ("dynamic") | Gene silencing or toxic protein | Fragile X (CGG), Huntington (CAG) |
+- **Missense mutation:** the change alters the code in a triplet of bases and leads to the replacement of one amino acid by another.
+- A **conservative** missense mutation replaces the amino acid with a biochemically similar one and may cause little change in protein function.
+- A **nonconservative** missense mutation replaces the normal amino acid with a biochemically different one, as in sickle cell anaemia.
+- **Nonsense mutation:** the change converts an amino acid codon into a chain-terminating stop codon, as in β-thalassaemia.
 
-Mutations can also be classed functionally as loss of function or gain of function, and by cell type as germline or somatic.
+2. **Mutations within noncoding sequences.**
+
+- Point mutations or deletions involving promoter and enhancer sequences may interfere with binding of transcription factors, leading to a marked reduction in or total lack of transcription, as in certain forms of thalassaemia.
+- Point mutations within introns may lead to defective mRNA splicing.
+
+3. **Deletions and insertions.**
+
+- If the number of base pairs involved is three or a multiple of three, the reading frame remains intact and an abnormal protein lacking or gaining one or more amino acids is synthesised.
+- If the number of affected coding bases is not a multiple of three, the reading frame is altered, a **frameshift** mutation, producing incorrect amino acids followed by truncation from a premature stop codon.
+
+4. **Structural alterations in protein-coding genes.** These are copy number changes (amplifications or deletions) or rearrangements that result in aberrant gain or loss of protein function; they may be germline and heritable or somatically acquired, for example the Philadelphia chromosome translocation in chronic myeloid leukaemia.
+
+5. **Trinucleotide-repeat mutations.** These are amplifications of simple tandem repeat sequences of three nucleotides, for example 250 to 4000 CGG repeats in the FMR1 gene in fragile X syndrome (the normal average is 29); they are dynamic.
 
 
 ## Two examples of point mutation.
 
-Sickle cell anaemia is a missense point mutation in the β-globin gene, and β-thalassaemia, in some patients, is a nonsense point mutation in the same gene.
-
-In sickle cell anaemia, a single base substitution changes the sixth codon of the β-globin chain from GAG (glutamic acid) to GUG (valine) in mRNA. This is a nonconservative missense mutation. The substitution promotes polymerisation of deoxygenated haemoglobin S, which distorts red cells and causes haemolysis and vascular occlusion.
-
-In the nonsense form of β-thalassaemia, a point mutation changes the codon for glutamine at position 39 from CAG to the stop codon UAG. Translation terminates prematurely, the short peptide is rapidly degraded, and β-globin deficiency results, producing a hereditary anaemia.
+| Example | Type | Change | Result |
+|---|---|---|---|
+| **Sickle cell anaemia** | Nonconservative missense mutation in the β-globin chain | The triplet CTC (GAG in mRNA, encoding glutamic acid) is changed to CAC (GUG in mRNA, encoding valine) | A single amino acid substitution promotes abnormal haemoglobin polymerisation |
+| **β-thalassaemia** | Nonsense mutation in the β-globin gene | The codon for glutamine (CAG) becomes a stop codon (UAG) when U is substituted for C | Premature termination of translation; the short peptide is rapidly degraded, and the deficiency of β-globin chains gives a hereditary anaemia |
 
 
 ## Genetic vs hereditary vs familial vs congenital disorder (differences).
 
-A genetic disorder is caused by an abnormality of the genome. A hereditary disorder is a genetic disorder transmitted through the germline from generation to generation. A familial disorder is one that clusters in families, and a congenital disorder is simply present at birth.
+| Term | Meaning |
+|---|---|
+| **Genetic** | Disease underlain by genetic alterations: inherited disorders, spontaneously occurring constitutional genetic diseases, and conditions driven by somatically acquired mutations |
+| **Hereditary** | Transmitted in the germline through generations |
+| **Familial** | Hereditary disorders are, by definition, transmitted through generations and therefore are familial |
+| **Congenital** | Simply means "born with" |
 
-| Term | Meaning | Key point |
-|---|---|---|
-| Genetic | Disease caused by an abnormality in the DNA or chromosomes | Includes inherited disorders, new (de novo) germline or chromosomal defects, and somatic mutations (cancer). Not necessarily transmitted. |
-| Hereditary | Transmitted in the germline through generations | Hereditary disorders are by definition familial. |
-| Familial | Occurs in more than one family member | Usually genetic, but clustering can also result from shared environment, diet or infection. |
-| Congenital | "Born with" | Not necessarily genetic (congenital syphilis, rubella embryopathy). |
-
-Not all genetic diseases are congenital. Huntington disease, for example, is hereditary but manifests only in adult life. Conversely, Down syndrome is congenital and genetic but usually not hereditary, because the parents have normal karyotypes.
+- Some congenital diseases are not genetic, for example congenital syphilis.
+- Not all genetic diseases are congenital; individuals with Huntington disease begin to manifest their condition in adulthood.
 
 
 ## Classify genetic disorders.
 
-Genetic disorders are classified into single-gene (Mendelian) disorders, chromosomal disorders, complex multigenic (multifactorial) disorders, single-gene disorders with nonclassic inheritance, and conditions caused by somatic mosaicism.
-
-1. **Single-gene (monogenic, Mendelian) disorders.** Mutations of large effect with high penetrance follow Mendelian patterns.
-
-- Autosomal dominant.
-- Autosomal recessive.
-- X-linked, recessive or dominant.
-- By the protein affected, they are also grouped as defects of structural proteins, receptors and transport systems, enzymes, and the epigenetic machinery.
-
-2. **Chromosomal disorders.** These are numerical changes (trisomies, monosomies) or structural changes (deletions, translocations, inversions, isochromosomes, rings), involving autosomes or sex chromosomes.
-3. **Complex multigenic (multifactorial) disorders.** These arise from the additive effect of several common polymorphisms together with environmental factors, as in atherosclerosis, diabetes mellitus, hypertension and autoimmune diseases.
-4. **Single-gene disorders with nonclassic inheritance.**
-
-- Trinucleotide-repeat disorders (fragile X syndrome, Huntington disease).
-- Mitochondrial DNA mutations (Leber hereditary optic neuropathy).
-- Genomic imprinting disorders (Prader-Willi and Angelman syndromes).
-- Gonadal mosaicism.
-
-5. **Somatic mosaicism and acquired mutations.** Examples are PIK3CA-related overgrowth spectrum disorders (mosaic activating PIK3CA mutations arising after fertilisation), cancer driver mutations, and clonal haematopoiesis of indeterminate potential.
+| Category | Features |
+|---|---|
+| **Monogenic (Mendelian) disorders** | Mutations in single genes with large effects; highly penetrant phenotypes; usually follow the classic Mendelian pattern of inheritance |
+| **Chromosomal disorders** | Structural or numerical alterations in the autosomes and sex chromosomes; altered copy number of a region that may encompass many genes |
+| **Complex multigenic (multifactorial) disorders** | Interactions between multiple genetic variants (polymorphisms) and environmental factors; risk conferred by any single haplotype is low; include atherosclerosis, diabetes mellitus, hypertension, autoimmune diseases and cancers |
+| **Single-gene disorders with nonclassical inheritance** | Triplet-repeat mutations, mutations in mitochondrial DNA, and disorders influenced by genomic imprinting or gonadal mosaicism |
+| **Disorders from somatically acquired mutations** | Some drive malignancies; others contribute to clonal selection (clonal haematopoiesis of indeterminate potential); others cause overgrowth syndromes (somatic mosaicism) |
 
 
 ## One example of each type of genetic disorder.
 
-Familial hypercholesterolaemia or Marfan syndrome for autosomal dominant, cystic fibrosis or Tay-Sachs disease for autosomal recessive, Duchenne muscular dystrophy or haemophilia A for X-linked recessive, Down syndrome for chromosomal, type 2 diabetes mellitus for multifactorial, fragile X syndrome for trinucleotide-repeat, and Prader-Willi syndrome for imprinting.
-
 | Type | Example |
 |---|---|
-| Autosomal dominant | Marfan syndrome, familial hypercholesterolaemia, Huntington disease, neurofibromatosis, achondroplasia |
-| Autosomal recessive | Cystic fibrosis, phenylketonuria, Tay-Sachs disease, Gaucher disease, sickle cell anaemia |
-| X-linked recessive | Duchenne muscular dystrophy, haemophilia A and B, G6PD deficiency, Lesch-Nyhan syndrome |
-| X-linked dominant | Vitamin D–resistant rickets, Alport syndrome (some forms) |
-| Chromosomal, numerical | Down syndrome (trisomy 21), Turner syndrome (45,X), Klinefelter syndrome (47,XXY) |
-| Chromosomal, structural | 22q11.2 deletion (DiGeorge syndrome) |
-| Complex multigenic | Atherosclerosis, type 2 diabetes mellitus, hypertension |
-| Trinucleotide-repeat | Fragile X syndrome, Huntington disease |
-| Mitochondrial | Leber hereditary optic neuropathy |
-| Genomic imprinting | Prader-Willi syndrome, Angelman syndrome |
-| Somatic mosaicism | PIK3CA-related overgrowth spectrum |
+| **Monogenic (Mendelian)** | Marfan syndrome; familial hypercholesterolaemia |
+| **Chromosomal** | Down syndrome (trisomy 21) |
+| **Complex multigenic** | Type 2 diabetes mellitus; atherosclerosis |
+| **Nonclassical single-gene: trinucleotide-repeat** | Fragile X syndrome |
+| **Nonclassical single-gene: mitochondrial gene mutation** | Leber hereditary optic neuropathy |
+| **Nonclassical single-gene: genomic imprinting** | Prader-Willi syndrome and Angelman syndrome |
+| **Somatically acquired mutation** | PIK3CA-related somatic overgrowth syndromes |
+
 
 ## Transmission patterns of single-gene disorders.
 
-Single-gene disorders follow one of three Mendelian patterns of inheritance: autosomal dominant, autosomal recessive, or X-linked.
+Single-gene disorders typically follow one of three patterns of inheritance.
 
-**Autosomal dominant** disorders manifest in the heterozygous state. One parent of an affected person is usually affected, males and females are equally affected, and either sex can transmit the disorder. Each child of an affected parent has a 50% risk. Exceptions are:
+1. **Autosomal dominant.**
 
-- New germline mutations, which are frequent when the disease reduces reproductive fitness, and which are more common in the germ cells of older fathers (achondroplasia, Apert syndrome).
-- Incomplete penetrance.
-- Variable expressivity.
-- Delayed onset, as in Huntington disease.
+- Manifested in the heterozygous state.
+- Males and females are affected equally, and both sexes can directly transmit the disorder.
 
-**Autosomal recessive** disorders require both alleles to be mutated. They make up the largest category of Mendelian disorders and include almost all inborn errors of metabolism. The parents are asymptomatic carriers, the trait "skips generations", and each sibling has a 25% risk. Consanguinity is common when the allele is rare.
+2. **Autosomal recessive.**
 
-**X-linked** disorders are caused by genes on the X chromosome.
+- Occurs when mutated alleles are inherited from both parents.
+- Heterozygotes are unaffected carriers.
+- Males and females are affected equally.
 
-- In recessive forms, hemizygous males are affected and heterozygous females are usually unaffected carriers.
-- There is no male-to-male transmission, and all daughters of an affected male are obligate carriers.
-- Sons of a carrier mother have a 50% risk of disease, and her daughters a 50% chance of being carriers.
-- In X-linked dominant disorders, affected males transmit the disease to all daughters and no sons, and affected heterozygous females transmit it to half of their children of either sex.
+3. **X-linked.**
 
-| Feature | Autosomal dominant | Autosomal recessive | X-linked recessive |
-|---|---|---|---|
-| Affected genotype | Heterozygote | Homozygote or compound heterozygote | Hemizygous male |
-| Parents | One usually affected | Usually unaffected carriers | Carrier mother |
-| Sex distribution | Equal | Equal | Predominantly male |
-| Risk to offspring | 50% | 25% per birth | 50% of sons affected |
-| Expression | Variable, often delayed | Uniform, early onset | Variable in carrier females (lyonisation) |
-| Typical proteins | Structural proteins, receptors | Enzymes | Enzymes, structural proteins |
-
-The mechanism of dominance varies:
-
-- **Haploinsufficiency**, as in LDL receptor deficiency.
-- **Dominant negative effect**, as in collagen and fibrillin mutations, where the abnormal chain disrupts assembly of the multimeric protein.
-- **Gain of function**, as in Huntington disease.
-
-Related concepts are pleiotropism (one mutation, many effects, as in sickle cell anaemia), genetic heterogeneity (several loci, one phenotype, as in congenital deafness), and codominance (HLA and ABO blood group antigens).
+- Caused by abnormalities in genes on the X chromosome, so males are affected whereas females are carriers.
+- **X-linked recessive** disorders are typically transmitted by asymptomatic, heterozygous female carriers to their hemizygous sons, who manifest the disease.
+- **X-linked dominant** disorders are transmitted by an affected heterozygous female to half her sons and half her daughters, or by an affected male parent to all his daughters but none of his sons.
 
 
 ## Criteria of autosomal dominant disorders.
 
-The disorder is expressed in the heterozygous state, so an affected person usually has an affected parent, males and females are equally affected, both sexes transmit it, and each child of an affected parent has a 50% chance of inheriting it.
+- Manifested in the **heterozygous state**, so one parent of an index case is usually affected.
+- Both **males and females** are affected, and both can transmit the condition.
+- When an affected and an unaffected person reproduce, each child has **one chance in two** of inheriting the mutated allele and developing the disease.
 
-The criteria are as follows:
+Exceptions to these basic rules:
 
-1. The disease manifests in heterozygotes, and the trait appears in every generation (vertical transmission).
-2. Males and females are affected equally. Male-to-male transmission occurs, which excludes X-linked inheritance.
-3. An affected parent transmits the mutant allele to half the children, irrespective of sex. Unaffected persons do not transmit the disease.
-4. Exceptions to the basic rules:
-
-- A new germline mutation can produce an affected child of unaffected parents. The proportion of de novo cases rises with the severity of the effect on reproductive fitness.
-- Incomplete penetrance means some carriers are phenotypically normal.
-- Variable expressivity means affected carriers show differing severity (neurofibromatosis type 1).
-- Age of onset may be delayed (Huntington disease).
-
-5. The mutated genes more often encode structural proteins, receptors or regulatory proteins rather than enzymes. Mechanisms are haploinsufficiency, dominant negative effect, or gain of function.
-6. Expression is generally less uniform than in recessive disorders.
+- Patients may not have an affected parent if the condition is caused by a new (**de novo**) germline mutation.
+- If a disease markedly reduces reproductive fitness, more cases result from new mutations.
+- New mutations are known to have a propensity to occur in germ cells of relatively older fathers (for example mutations in FGFR2 and FGFR3, which cause Apert syndrome and achondroplasia).
+- Patients may not have an affected parent if the disease is partially penetrant; this is **incomplete penetrance**, in which some individuals inherit the mutant gene but are phenotypically normal.
+- **Variable expressivity** is when a trait is manifest in all individuals carrying the mutant gene but at differing degrees of severity, for example neurofibromatosis type 1.
+- In some conditions the age at onset is delayed, as in Huntington disease.
 
 
 ## Two examples of autosomal dominant disorders.
 
-Marfan syndrome, caused by mutations in the fibrillin-1 gene, and familial hypercholesterolaemia, caused by mutations in the LDL receptor gene.
-
-**Marfan syndrome.** This is a connective tissue disorder with a prevalence of about 1 in 5000. About 75% of cases are familial and the rest arise from new mutations. Mutations in FBN1 (15q21.1) cause abnormal fibrillin-1, the main component of the extracellular matrix microfibrils that scaffold elastin. Most mutations are missense and act through a dominant negative effect; in 10–15% the mechanism is haploinsufficiency. Defective microfibrils also release excess TGF-β, which explains features such as bone overgrowth, myxoid mitral valves and aortic wall degeneration. The clinical picture comprises:
-
-- **Skeletal:** tall stature, long limbs and fingers, joint laxity, pectus deformity, scoliosis.
-- **Ocular:** bilateral ectopia lentis.
-- **Cardiovascular:** mitral valve prolapse and dilatation of the ascending aorta, which leads to aortic dissection, the commonest cause of death.
-
-**Familial hypercholesterolaemia.** This is one of the most frequent Mendelian disorders. Most cases (80–85%) result from LDLR mutations, and the rest from mutations of apolipoprotein B-100 or gain-of-function mutations of PCSK9. Heterozygotes (about 1 in 200) have half the normal number of LDL receptors, so LDL clearance is impaired and plasma cholesterol is two to three times normal from birth. They develop tendinous xanthomas and premature atherosclerosis. Homozygotes have five- to six-fold elevations and may have myocardial infarction before age 20.
+| Disorder | Inheritance |
+|---|---|
+| **Marfan syndrome** | A disorder of connective tissues caused by an inherited defect in fibrillin-1 (FBN1 gene); approximately 75% of cases are familial and transmitted by autosomal dominant inheritance; the remainder are sporadic and arise from de novo mutations |
+| **Familial hypercholesterolaemia** | An autosomal dominant disorder caused by mutations in the genes encoding the LDL receptor (85% of cases), the ApoB protein (5% to 10% of cases) or PCSK9 (1% to 2% of cases) |
 
 
 ## Criteria of autosomal recessive disorders.
 
-Both alleles of an autosomal gene must be mutated for the disease to appear, so the parents are usually unaffected carriers, the trait skips generations, and each sibling has a one in four chance of being affected.
-
-The criteria are as follows:
-
-1. Disease occurs only in homozygotes or compound heterozygotes. Compound heterozygotes inherit two different loss-of-function mutations.
-2. The parents are typically clinically normal heterozygotes. The disease appears in siblings but not in previous generations ("skips generations").
-3. The recurrence risk is 25% for every birth, and males and females are equally affected.
-4. Consanguinity is frequent when the allele is rare in the population.
-5. Expression is more uniform than in dominant disorders, penetrance is usually complete, and onset is frequently early in life.
-6. New mutations are not detected for several generations because the person carrying a new mutation is an asymptomatic heterozygote.
-7. Many of the mutated genes encode enzymes. Heterozygotes retain half the enzyme activity and function normally. Almost all inborn errors of metabolism are autosomal recessive.
+- Both alleles of an autosomal gene must be mutated to produce a phenotypic manifestation.
+- The trait does not usually affect the parents of the affected individual (they "skip generations"), but **siblings** may show the disease.
+- Siblings have **one chance in four** of having the trait; the recurrence risk is 25% for each birth.
+- Males and females are affected equally.
+- Affected individuals may inherit two distinct loss-of-function mutations (**compound heterozygotes**), or the same mutant allele both maternally and paternally.
+- If the mutation has a low allele frequency in the general population, the affected homozygous individual (proband) is very likely the product of a **consanguineous marriage**.
+- The expression of the defect tends to be more **uniform** than in autosomal dominant disorders.
+- **Complete penetrance** is common.
+- Onset is frequently **early in life**.
+- New (de novo) mutations occur, but the individual with a new mutation is an asymptomatic heterozygote, so several generations may pass before a descendant has an affected child with another heterozygote parent.
+- Many of the mutated genes encode **enzymes**; heterozygote carriers, with half the usual complement of enzyme function, function normally.
+- They include almost all inborn errors of metabolism.
 
 
 ## Two examples of autosomal recessive disorders.
