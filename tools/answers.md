@@ -7968,89 +7968,71 @@ Iron deficiency can result from:
 
 ## Causes of IDA in infants and children.
 
-Iron deficiency in infants and children is mostly due to the combination of high iron requirements for growth and inadequate dietary iron, and in endemic areas to chronic blood loss from intestinal parasites.
-
-Newborns have iron stores that last about 4 to 6 months, after which the infant depends on dietary iron. Human breast milk contains only about 0.3 mg/L of iron (although it is well absorbed), and cow's milk contains about twice as much but with poor bioavailability; it may also cause occult intestinal blood loss in infants. Prolonged milk feeding without iron-rich complementary foods leads to deficiency. Prematurity, twin birth, maternal iron deficiency and early cord clamping reduce the endowment of iron at birth, and the rapid growth in infancy, early childhood and adolescence increases requirements, particularly in adolescent girls after menarche. Hookworm and other parasitic infestations are a major cause of chronic gastrointestinal loss in low-resource countries, and malabsorption (coeliac disease, giardiasis), Meckel diverticulum, polyps and recurrent infections contribute. Iron deficiency in children impairs growth, cognition and development.
-
+- **Dietary lack:** infants are at high risk because milk contains very little iron. Human breast milk provides only about 0.3 mg/L; cow's milk contains about twice as much, but its bioavailability is poor.
+- **Increased requirement** in growing infants, children and adolescents.
+- **Impaired absorption:** sprue, other causes of fat malabsorption (steatorrhoea) and chronic diarrhoea.
+- **Chronic blood loss:** external haemorrhage, or bleeding into the gastrointestinal, urinary or genital tracts.
 
 ## Important laboratory findings in IDA.
 
-The laboratory findings of iron deficiency anaemia are a hypochromic microcytic anaemia with low serum iron and ferritin, raised total iron-binding capacity and low transferrin saturation, and absent stainable iron in the bone marrow.
-
-Blood count. Haemoglobin and haematocrit are reduced, usually moderately; MCV, MCH and MCHC are reduced, and the RDW is raised. The red cell count is less reduced than the haemoglobin. The reticulocyte count is low or normal, and thrombocytosis is common in those with bleeding. White cells are normal.
-
-Blood film. Red cells are small (microcytic) and pale (hypochromic), with an enlarged zone of central pallor and only a narrow peripheral rim of haemoglobin; there is anisocytosis and modest poikilocytosis, with small elongated "pencil" cells.
-
-Iron studies. Serum iron low; TIBC high (elevated transferrin); transferrin saturation below 15%; serum ferritin below 12 µg/L; serum hepcidin low; soluble transferrin receptor and zinc protoporphyrin raised.
-
-Bone marrow. A mild to moderate increase in erythroid progenitors, which are small with scanty, ragged cytoplasm; Prussian blue staining shows absent stainable iron in macrophages, a diagnostically significant finding.
-
-Response to therapy. Oral iron produces a reticulocyte response in 5 to 7 days, followed by a steady rise in blood counts and normalisation of red cell indices.
-
+- **Haemoglobin and haematocrit** depressed, usually to a moderate degree.
+- **Blood film:** hypochromia, microcytosis and modest poikilocytosis; small elongated "pencil" cells; enlarged central pallor, with haemoglobin only in a narrow peripheral rim.
+- **Serum iron and ferritin low.**
+- **Total plasma iron-binding capacity high**, reflecting elevated transferrin.
+- **Transferrin saturation** below 15%.
+- **Hepcidin** serum levels fall.
+- **Bone marrow:** mild to moderate increase in erythroid progenitors; absence of stainable iron in macrophages on Prussian blue stain of aspirate.
+- **Response to iron:** oral iron raises reticulocytes in about 5 to 7 days, followed by a steady rise in counts and normalisation of red cell indices.
 
 ## Biochemical tests done for IDA.
 
-The biochemical tests for iron deficiency are serum iron, total iron-binding capacity, transferrin saturation and serum ferritin, with serum ferritin being the single best test of body iron stores.
-
-| Test | Result in IDA | Remarks |
-|---|---|---|
-| Serum iron | Decreased | Normal average 120 µg/dL (male), 100 µg/dL (female); diurnal variation |
-| Total iron-binding capacity (TIBC) | Increased | Reflects raised transferrin |
-| Transferrin saturation | Below 15% | Serum iron ÷ TIBC |
-| Serum ferritin | Below 12 µg/L | Correlates with body stores; may be falsely normal in inflammation |
-| Soluble transferrin receptor | Increased | Not affected by inflammation |
-| Free erythrocyte or zinc protoporphyrin | Increased | |
-| Hepcidin | Decreased | Reduced iron stores inhibit its synthesis |
-
-Stool examination for occult blood and ova of hookworm, and endoscopy, are used to find the cause.
-
+- **Serum iron:** low.
+- **Serum ferritin:** low.
+- **Total iron-binding capacity:** high.
+- **Transferrin saturation:** below 15%.
+- **Serum hepcidin:** low, as reduced iron stores inhibit its synthesis.
+- **Stainable marrow iron** (Prussian blue stain of aspirated marrow): absent in macrophages.
+- Progressive depletion of stores first lowers serum iron and transferrin saturation without anaemia; anaemia appears only when stores are completely depleted, with low serum iron and ferritin.
 
 ## Who are more susceptible to IDA, and why?
 
-Iron deficiency is more common in infants and toddlers, adolescent girls, women of childbearing age, especially during pregnancy, the elderly and the poor, because in these groups iron demand is high, stores are limited or dietary iron is inadequate.
-
-- **Infants and toddlers:** breast and cow's milk contain little bioavailable iron, and rapid growth increases requirements.
-- **Adolescent girls and females of reproductive age:** monthly menstrual loss and, in adolescents, rapid growth. Total body iron in females is only about 2.5 g compared with 6 g in males.
-- **Pregnant and lactating women:** the foetus, placenta and expansion of the red cell mass require iron, and closely spaced pregnancies, particularly in low-resource settings, deplete stores.
-- **The poor and vegans:** diets lacking meat provide mainly nonhaem iron, of which less than 5% is absorbed, and absorption is further inhibited by tannates in tea, phytates, oxalates and phosphates.
-- **Older adults:** restricted diets, poor dentition, atrophic gastritis and occult gastrointestinal blood loss.
-- **Patients with gastrointestinal disease or gastrectomy,** and those with hookworm infestation.
-
+- **Infants:** very little iron in milk, and growing requirement.
+- **Children and adolescents:** increased requirement for growth.
+- **Premenopausal females:** increased requirement, particularly in pregnancy; females in low-resource countries with multiple, closely spaced pregnancies are at exceptional risk. Many females consume only marginal amounts of iron, while most males ingest more than adequate amounts.
+- **The impoverished:** suboptimal diets at any age.
+- **Older adults:** restricted diets with little meat, from limited income or poor dentition.
+- **Vegans:** no haem iron in the diet.
+- **Patients with malabsorption or gastrectomy:** gastrectomy lowers duodenal acidity and speeds transit through the duodenum.
+- **Adult males and postmenopausal females:** chronic gastrointestinal blood loss.
 
 ## Why is the prognosis of aplastic anaemia worse than IDA?
 
-Iron deficiency anaemia has an identifiable and correctable cause and responds quickly to iron replacement, whereas aplastic anaemia is a failure of the haemopoietic stem cell compartment that causes pancytopenia, with a risk of fatal infection and bleeding, and often needs transplantation or immunosuppression.
-
-In iron deficiency, the marrow is healthy and has the capacity to respond once iron is supplied and the cause (blood loss, dietary lack) is corrected. Oral iron produces a reticulocyte response in 5 to 7 days with normalisation of the blood count, and the anaemia carries no direct risk to life.
-
-Aplastic anaemia involves loss of all haemopoietic lineages. Anaemia is accompanied by neutropenia, which causes frequent, persistent infections or sudden fever and prostration, and by thrombocytopenia, which causes petechiae, ecchymoses and risk of intracranial haemorrhage. In about 65% of cases no cause is found, and the disease does not remit spontaneously. Treatment requires stem cell transplantation (5-year survival above 75% when a suitable donor is available) or immunosuppressive therapy with antithymocyte globulin and cyclosporine (response in 60% to 70%), and the disease may transform to myelodysplasia or acute myeloid leukaemia. Repeated transfusions lead to iron overload.
-
+| Feature | Aplastic anaemia | Iron deficiency anaemia |
+|---|---|---|
+| Nature | Markedly hypocellular marrow, largely devoid of haematopoietic cells; pancytopenia inevitably appears | Inadequate haemoglobin production from lack of iron |
+| Consequences | Anaemia, petechiae and ecchymoses, and frequent, persistent infections or sudden chills, fever and prostration | Hypochromic microcytic anaemia; symptoms often those of the underlying cause |
+| Treatment | Stem cell transplantation, with 5-year survival of more than 75% where a donor exists; immunosuppressive therapy for older patients or those without a donor | Oral iron produces a reticulocyte rise in 5 to 7 days and normalisation of red cell indices |
+| Prognosis | Variable | Correctable once the cause is treated |
 
 ## Differential diagnosis of microcytic hypochromic anaemia.
 
-The differential diagnosis of a microcytic hypochromic anaemia is iron deficiency anaemia, thalassaemia (trait or major), anaemia of chronic inflammation, and sideroblastic anaemia, with lead poisoning as a rarer cause.
-
-Iron deficiency is the most common, and is characterised by low ferritin, high TIBC and absent marrow iron. Thalassaemia trait is suspected when the microcytosis is out of proportion to the mild anaemia, the red cell count is raised, the RDW is normal, the film shows target cells and basophilic stippling, and iron studies are normal; the diagnosis is confirmed by haemoglobin electrophoresis, with a raised HbA₂ (4% to 8%) in β-thalassaemia trait. Anaemia of chronic inflammation, which is typically normocytic but may be slightly microcytic, is characterised by low serum iron with low TIBC, normal or raised ferritin, and increased storage iron in marrow macrophages, reflecting hepcidin-mediated iron sequestration. Sideroblastic anaemia (hereditary, or acquired from alcohol, isoniazid, lead and myelodysplasia) shows high serum iron and ferritin, with ringed sideroblasts in the marrow. Rare causes include iron-refractory iron deficiency anaemia (TMPRSS6 mutation) and copper deficiency.
-
+| Cause | Features |
+|---|---|
+| **Iron deficiency anaemia** | Low serum iron and ferritin, high iron-binding capacity, transferrin saturation below 15%; no stainable marrow iron |
+| **Thalassaemia** | Hypochromia, microcytosis, basophilic stippling and target cells; in trait, haemoglobin A2 increased to 4% to 8% |
+| **Anaemia of chronic inflammation** | Red cells normocytic and normochromic, or slightly hypochromic and microcytic; low serum iron, reduced iron-binding capacity, high ferritin |
+| **TMPRSS6 mutation** (rare) | High hepcidin, reduced iron absorption, failure to respond to iron therapy |
 
 ## How will you differentiate the causes of microcytic hypochromic anaemia?
 
-I would differentiate them with the iron profile and haemoglobin electrophoresis: iron deficiency shows low iron, high TIBC and low ferritin; anaemia of chronic inflammation shows low iron, low TIBC and normal or high ferritin; thalassaemia trait shows normal iron studies with raised HbA₂; and sideroblastic anaemia shows high iron and ringed sideroblasts.
-
-| Feature | Iron deficiency | Thalassaemia trait | Chronic inflammation | Sideroblastic anaemia |
-|---|---|---|---|---|
-| Serum iron | Low | Normal | Low | High |
-| TIBC | High | Normal | Low | Normal |
-| Transferrin saturation | Low | Normal | Low/normal | High |
-| Serum ferritin | Low | Normal | Normal/high | High |
-| Marrow iron | Absent | Normal/increased | Increased in macrophages | Increased, ringed sideroblasts |
-| RDW | High | Normal | Normal | Variable (often high, dimorphic) |
-| Red cell count | Low | High/normal | Low | Low |
-| HbA₂ | Normal or low | Raised (β-thal trait) | Normal | Normal |
-| Film | Pencil cells | Target cells, stippling | Often normocytic | Dimorphic population |
-
-The Mentzer index (MCV ÷ RBC) below 13 favours thalassaemia, above 13 iron deficiency. Note that iron deficiency may coexist with thalassaemia trait and lower the HbA₂, so the HbA₂ should be repeated after iron replacement.
-
+| Test | Iron deficiency | Anaemia of chronic inflammation | Thalassaemia trait |
+|---|---|---|---|
+| Serum iron | Low | Low | Not stated |
+| Total iron-binding capacity | High | Reduced | Not stated |
+| Serum ferritin | Low | High | Not stated |
+| Marrow iron in macrophages | Absent | Increased | Not stated |
+| Haemoglobin electrophoresis | Not stated | Not stated | Haemoglobin A2 increased to 4% to 8% |
+| Blood film | Pencil cells | Normocytic or slightly hypochromic | Target cells, basophilic stippling |
 
 ## Name the changes of absolute values in iron deficiency anemia.
 
@@ -8171,34 +8153,20 @@ The iron profile will be that of iron deficiency:
 
 ## Define macrocytic anemia.
 
-Macrocytic anaemia is an anaemia in which the red cells are larger than normal, with a mean cell volume above the upper limit of the reference range, that is, above about 96 to 100 fL.
-
-The enlarged red cells are produced by different mechanisms. In megaloblastic anaemia, impaired DNA synthesis from deficiency of vitamin B₁₂ or folate delays nuclear maturation, while cytoplasmic maturation and haemoglobinisation proceed normally, resulting in large precursors (megaloblasts) and large oval red cells (macro-ovalocytes). In non-megaloblastic macrocytosis the cells are large and round, because of increased red cell membrane lipid (as in liver disease and alcohol excess), or the presence of many reticulocytes, which are larger than mature cells. Because macrocytes are larger and contain ample haemoglobin, the MCH is raised, but the MCHC is normal.
-
+**Macrocytic anaemia** is an anaemia in which the red cells are larger than normal, the adult reference range for mean cell volume being 82 to 96 fL.
 
 ## Classify macrocytic anemia with example.
 
-Macrocytic anaemias are classified into megaloblastic anaemias, caused by impaired DNA synthesis, and non-megaloblastic (normoblastic) macrocytic anaemias, in which the marrow erythroid precursors are normoblastic.
-
-| Class | Causes and examples |
+| Type | Example |
 |---|---|
-| **Megaloblastic** | Vitamin B₁₂ deficiency: pernicious anaemia, gastrectomy, ileal disease or resection, fish tapeworm, bacterial overgrowth, strict veganism, nitrous oxide exposure. Folate deficiency: inadequate diet (alcohol use disorder, the poor, the elderly), malabsorption (sprue), increased requirement (pregnancy, infancy, haemolysis, cancer), drugs (phenytoin, oral contraceptives). Impaired DNA synthesis independent of B₁₂ or folate: drugs such as methotrexate, hydroxyurea, azathioprine, zidovudine; rare inborn errors |
-| **Non-megaloblastic (normoblastic)** | Chronic liver disease, alcohol excess, hypothyroidism, reticulocytosis (haemolysis, haemorrhage), aplastic anaemia, myelodysplastic neoplasms, marrow infiltration, normal in newborns and in pregnancy, smoking; spurious macrocytosis (cold agglutinins, marked hyperglycaemia) |
-
+| **Megaloblastic** | Deficiency of vitamin B12 or folate, leading to inadequate thymidine synthesis and defective DNA replication; enlarged abnormal precursors (megaloblasts), ineffective haematopoiesis, macro-ovalocytes and, in most cases, pancytopenia |
+| **Nonmegaloblastic** | Anaemia of hepatocellular disease, slightly macrocytic from lipid abnormalities that add phospholipid and cholesterol to red cell membranes |
 
 ## Causes of normoblastic macrocytic anaemia.
 
-The commonest causes of normoblastic macrocytosis are alcohol excess, chronic liver disease, hypothyroidism, reticulocytosis in haemolysis or haemorrhage, and myelodysplastic neoplasms, in which the red cells are large but the marrow shows normal nuclear maturation.
-
-1. Alcohol use disorder (a direct toxic effect on erythropoiesis, independent of folate deficiency).
-2. Hepatocellular disease of toxic, infectious or cirrhotic aetiology, in which lipid abnormalities allow red cell membranes to acquire phospholipid and cholesterol and thereby increase cell size, producing round macrocytes and target cells.
-3. Hypothyroidism.
-4. Reticulocytosis, since young red cells are larger than mature red cells (haemolytic anaemia, recovery from haemorrhage, response to treatment).
-5. Aplastic anaemia (usually slightly macrocytic) and myelodysplastic neoplasms (in which macrocytosis accompanies dysplasia).
-6. Drugs affecting DNA synthesis without megaloblastic changes (hydroxyurea), and chemotherapy.
-7. Pregnancy, neonatal period, smoking, and sometimes marrow infiltration.
-8. Artefactual: cold agglutinin disease and severe hyperglycaemia.
-
+- **Hepatocellular disease**, toxic, infectious or cirrhotic: the anaemia is often slightly macrocytic because lipid abnormalities of liver failure make red cell membranes acquire phospholipid and cholesterol, increasing cell size.
+- **Aplastic anaemia:** red cells usually slightly macrocytic and normochromic.
+- **Reticulocytosis**, as after bleeding, since reticulocytes are larger than normal red cells.
 
 ## Write a short note on megaloblastic anemia.
 
