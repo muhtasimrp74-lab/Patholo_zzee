@@ -7520,54 +7520,36 @@ Extramedullary haematopoiesis occurs in the **spleen, liver and lymph nodes**, w
 
 ## Write the developmental stages of RBC.
 
-Red cell development (erythropoiesis) begins with the pluripotent haemopoietic stem cell, which passes through the common myeloid progenitor and the committed erythroid progenitors, the burst-forming unit–erythroid (BFU-E) and the colony-forming unit–erythroid (CFU-E). The latter is the target of erythropoietin. These progenitors cannot be recognised morphologically. The first recognisable cell is the proerythroblast, and the sequence of morphologically identifiable stages is:
-
-1. **Proerythroblast (pronormoblast):** a large cell (14 to 20 µm) with a large round nucleus, fine chromatin, one to two nucleoli and deeply basophilic, agranular cytoplasm.
-2. **Basophilic (early) normoblast:** slightly smaller, with coarser chromatin, nucleoli no longer visible and intensely basophilic cytoplasm owing to abundant ribosomal RNA.
-3. **Polychromatic (intermediate) normoblast:** the nucleus becomes smaller and the chromatin clumped; haemoglobin synthesis gives the cytoplasm a mixed blue-pink (polychromatic) colour. This is the last stage capable of mitosis.
-4. **Orthochromatic (late) normoblast:** a small cell with a dense pyknotic nucleus and pink, fully haemoglobinised cytoplasm, which loses its nucleus by extrusion.
-5. **Reticulocyte:** an anucleate cell that retains ribosomal RNA; it is slightly larger than a mature red cell, polychromatic on Romanowsky stains and shows a reticulum with supravital stains. It spends about one to two days in the marrow and one day in the circulation maturing.
-6. **Mature erythrocyte:** a biconcave, anucleate disc about 7 to 8 µm in diameter with a central pallor of about one-third of its diameter, surviving about 120 days before removal by macrophages of the spleen, liver and marrow.
-
-As the cell matures, its size decreases, nuclear chromatin condenses, basophilia gives way to haemoglobinisation, and the nucleus is lost. The whole sequence from proerythroblast to reticulocyte takes about 5 to 7 days and is accelerated by erythropoietin. Each proerythroblast produces about 8 to 16 red cells.
+1. **Haemopoietic stem cell:** pluripotent cell at the apex of the marrow hierarchy.
+2. **Committed erythroid progenitor (CFU-E, colony-forming unit erythroid):** proliferates under erythropoietin.
+3. **Proerythroblast:** the first morphologically recognisable red cell precursor.
+4. **Basophilic erythroblast.**
+5. **Polychromatic erythroblast.**
+6. **Orthochromatic erythroblast (normoblast):** enucleates to form the reticulocyte.
+7. **Reticulocyte:** released into the peripheral blood; larger than a mature red cell, with blue-red polychromatophilic cytoplasm due to RNA.
+8. **Mature red cell (erythrocyte).**
 
 
 ## What are the essential nutrients for haemopoiesis?
 
-Effective erythropoiesis, and haemopoiesis generally, requires an adequate supply of the following.
-
-- **Iron:** essential for the synthesis of haem; dietary iron is carried by transferrin to erythroid precursors, which take it up through transferrin receptors. Deficiency causes hypochromic microcytic anaemia.
-- **Vitamin B₁₂ (cobalamin) and folic acid:** cofactors required for the synthesis of thymidylate and hence DNA. Deficiency impairs nuclear maturation and produces megaloblastic anaemia with ineffective haemopoiesis.
-- **Protein and amino acids:** required for globin synthesis. Protein-energy malnutrition causes anaemia.
-- **Vitamin B₆ (pyridoxine):** a cofactor for δ-aminolevulinic acid synthase, the first and rate-limiting enzyme of haem synthesis; deficiency, or isoniazid antagonism, causes sideroblastic anaemia.
-- **Vitamin C (ascorbic acid):** promotes the absorption of nonhaem iron and the mobilisation of iron stores, and is involved in folate metabolism.
-- **Copper:** required for ceruloplasmin and hephaestin, the oxidases that allow iron to be loaded onto transferrin; deficiency causes an iron-refractory anaemia.
-- **Others in smaller roles:** vitamin E (protects the red cell membrane from oxidant injury), riboflavin, pantothenic acid, cobalt (a component of B₁₂), vitamin A, and trace elements such as zinc.
-
-Non-nutrient requirements include erythropoietin, thyroid and androgenic hormones, a normal marrow microenvironment and an adequate stem cell pool.
+1. **Iron:** needed for haemoglobin synthesis; deficiency leads to inadequate haemoglobin production and hypochromic microcytic anaemia.
+2. **Vitamin B12:** needed for DNA synthesis; deficiency leads to megaloblastic anaemia.
+3. **Folic acid:** needed for DNA synthesis; deficiency leads to megaloblastic anaemia.
 
 
 ## What is reticulocyte?
 
-A reticulocyte is a young, newly released, anucleate red cell that has just extruded its nucleus but still contains residual ribosomal RNA. It is slightly larger than a mature red cell, and on a Romanowsky-stained smear it has a bluish-red (polychromatophilic) cytoplasm because of the RNA. With supravital stains such as new methylene blue or brilliant cresyl blue, the RNA precipitates to form a blue reticulum or granules, from which the cell takes its name. The reticulocyte matures into an erythrocyte over about one day in the circulation.
-
-The reticulocyte count is the most useful bedside index of effective marrow erythropoietic activity. The reference range is 0.5% to 1.5% of red cells (an absolute count of about 25 to 75 × 10⁹/L). The count is expressed as a percentage, which should be corrected for the degree of anaemia (corrected reticulocyte count = observed % × patient Hct/normal Hct), because in anaemia the percentage rises simply because there are fewer red cells.
-
-Reticulocytosis occurs in haemolytic anaemias, after acute haemorrhage (reaching 10% to 15% after about 7 days) and a few days after starting specific therapy for iron, B₁₂ or folate deficiency (the reticulocyte response, about 5 to 7 days). Reticulocytopenia, in the presence of anaemia, indicates underproduction, as in aplastic anaemia, pure red cell aplasia, marrow infiltration and deficiency states.
+Reticulocytes are the newly released red cell precursors in the peripheral blood. They are larger than normal red cells and have blue-red **polychromatophilic** cytoplasm due to the presence of **RNA**, a feature that allows them to be identified in the clinical laboratory.
 
 
 ## Mention the cells in the steps of granulopoiesis.
 
-Granulopoiesis proceeds from the myeloid stem cell through the colony-forming unit–granulocyte/monocyte (CFU-GM) to the following sequence of morphologically recognisable cells:
-
-1. **Myeloblast:** a large cell with a high nuclear-to-cytoplasmic ratio, fine chromatin, prominent nucleoli and a thin rim of agranular basophilic cytoplasm.
-2. **Promyelocyte:** larger, with a few nucleoli and the appearance of primary (azurophilic, nonspecific) granules in the cytoplasm.
-3. **Myelocyte:** the stage at which secondary (specific) granules appear and the cell can be identified as neutrophil, eosinophil or basophil; the nucleus is round to oval, nucleoli disappear, and this is the last stage capable of division.
-4. **Metamyelocyte:** the nucleus becomes indented (kidney-shaped); the cell no longer divides.
-5. **Band (stab) form:** the nucleus is elongated and horseshoe-shaped without distinct lobes.
-6. **Segmented (mature) granulocyte:** the nucleus has two to five lobes joined by thin filaments.
-
-Dividing cells (myeloblast to myelocyte) form the mitotic pool, and the nondividing cells (metamyelocyte to mature neutrophil) form the maturation and storage pool of the marrow. The process takes about 10 to 14 days from myeloblast to release, and the cells are driven by G-CSF and GM-CSF. In the circulation neutrophils are divided into a freely circulating pool and a marginal pool attached to the endothelium; adrenergic stimulation, as in massive haemorrhage, mobilises the marginal pool and causes leukocytosis.
+1. **Myeloblast**
+2. **Promyelocyte:** coarse primary (azurophilic) granules.
+3. **Myelocyte:** specific (secondary) granules appear; neutrophilic, eosinophilic or basophilic.
+4. **Metamyelocyte:** indented nucleus.
+5. **Band form:** band-shaped nucleus.
+6. **Segmented granulocyte:** mature cell with a lobed nucleus.
 
 
 ## Information you can get from a stained peripheral blood film.
@@ -7757,82 +7739,69 @@ Limitations: the MCV is an average and can be normal when microcytic and macrocy
 
 ## How can bone marrow be examined?
 
-Bone marrow can be examined by aspiration and by trephine biopsy, which are complementary.
+Bone marrow is examined by two procedures, usually done together:
 
-**Bone marrow aspiration** uses a needle introduced into the marrow cavity under local anaesthesia to withdraw a small volume (0.2 to 0.5 mL) of liquid marrow. The usual sites are the posterior superior iliac spine (preferred), the anterior iliac crest and the sternum (at the level of the second intercostal space) in adults, and the anteromedial surface of the upper tibia in infants below 2 years. Smears are made at the bedside, air-dried and stained with a Romanowsky stain, and the aspirate may also be used for iron staining (Perls), cytochemistry, immunophenotyping by flow cytometry, cytogenetics and molecular studies, and culture. It gives excellent cytological detail, allows a differential count of marrow cells and the myeloid to erythroid ratio (normally about 2:1 to 4:1), and indicates the erythroid maturation (normoblastic or megaloblastic).
-
-**Trephine biopsy** takes a core of bone with marrow, usually from the posterior iliac crest using a Jamshidi needle. It shows overall cellularity, the architecture and spatial relationships, the megakaryocytes, the extent of fibrosis, and focal lesions such as lymphomatous infiltrates, granulomas, metastatic tumour and amyloid deposits. It is essential when aspiration is a dry tap.
-
-Additional preparations are **touch imprints** of the core and **clot sections** from aspirate particles.
+1. **Bone marrow aspiration:** a sample of semi-liquid marrow is withdrawn through a needle.
+2. **Trephine biopsy:** a core of bone with solid marrow is removed with a different, wider needle (Jamshidi needle), usually from the posterior iliac crest.
 
 
 ## What are the indications of bone marrow examination/aspiration?
 
-Bone marrow examination is indicated in the following situations.
-
-**Haematological disorders**
-
-- Unexplained anaemia, leukopenia or thrombocytopenia, and especially pancytopenia, to differentiate aplastic anaemia from marrow infiltration, megaloblastic anaemia and hypersplenism.
-- Suspected leukaemia: diagnosis and classification of acute leukaemias, and chronic leukaemias in unclear cases; evaluation of blast crisis.
-- Myelodysplastic neoplasms and myeloproliferative neoplasms (including myelofibrosis, with trephine biopsy).
-- Multiple myeloma and other plasma cell disorders, to quantify plasma cells.
-- Megaloblastic anaemia of uncertain cause, sideroblastic anaemia and refractory anaemias, and the assessment of iron stores in doubtful cases.
-- Monitoring of treatment: confirmation of remission, detection of relapse and of minimal residual disease; assessment of marrow recovery after chemotherapy or transplantation.
-
-**Nonhaematological disorders**
-
-- Staging of lymphomas and detection of marrow metastases from solid tumours (neuroblastoma, breast, lung and prostate carcinoma).
-- Infections: kala-azar (Leishman-Donovan bodies), miliary tuberculosis, histoplasmosis, enteric fever and fever of unknown origin, for culture.
-- Lipid storage disorders (Gaucher disease, Niemann-Pick disease).
+- **Leukaemias:** acute leukaemias in adults; to exclude acute leukaemia, aleukaemic leukaemia and myelodysplastic neoplasm in pancytopenic patients.
+- **Multiple myeloma** and **Waldenström macroglobulinaemia**: definitive diagnosis of myeloma requires bone marrow examination.
+- **Bone marrow metastases** and some storage diseases.
+- **Aplastic anaemia:** diagnosis rests on bone marrow biopsy.
+- Agranulocytosis, immune thrombocytopenic purpura and hypersplenism.
+- **Staging of Hodgkin lymphoma** (bone marrow biopsy).
+- **Trephine biopsy** is added when no marrow is aspirated despite repeated attempts (dry tap or blood tap), in bone marrow necrosis, metabolic bone disease and when looking for metastases.
 
 
 ## Name the white cell disorders for which bone marrow aspiration is done.
 
-Bone marrow aspiration is performed in the following white cell disorders:
-
-1. Acute leukaemias (acute myeloid and acute lymphoblastic leukaemia), for diagnosis, subclassification and follow-up.
-2. Chronic myeloid leukaemia, for diagnosis, assessment of phase and blast crisis, and cytogenetics (Philadelphia chromosome).
-3. Chronic lymphocytic leukaemia and other chronic lymphoproliferative disorders, when the diagnosis is doubtful or to assess marrow involvement.
-4. Hairy cell leukaemia (trephine biopsy is needed because the tap is usually dry).
-5. Myelodysplastic neoplasms and myeloproliferative neoplasms.
-6. Multiple myeloma and other plasma cell neoplasms.
-7. Lymphomas, for staging.
-8. Unexplained leukopenia or agranulocytosis, to assess the cause (maturation arrest or drug-induced) and leukaemoid reactions versus leukaemia.
-9. Haemophagocytic lymphohistiocytosis and Langerhans cell histiocytosis.
+1. Acute leukaemias.
+2. Aleukaemic leukaemia.
+3. Myelodysplastic neoplasm.
+4. Multiple myeloma and Waldenström macroglobulinaemia.
+5. Agranulocytosis.
+6. Staging of Hodgkin lymphoma (bone marrow biopsy).
 
 
 ## Mention the site of marrow puncture in a child below 2 years.
 
-In a child below 2 years the preferred site of bone marrow puncture is the anteromedial surface of the upper end (proximal shaft) of the tibia, about 1 to 2 cm below and medial to the tibial tuberosity, where the bone is flat and subcutaneous and the cortex thin. The posterior iliac crest may also be used. The sternum is avoided in children because of the risk of injury to the heart and great vessels.
+The **anteromedial face of the tibia** (upper end of the shinbone). In children younger than 18 months it is the preferred site for marrow aspiration.
 
 
 ## What is trephine biopsy?
 
-Trephine biopsy is a procedure in which a core of bone together with its marrow is removed from the iliac crest, usually the posterior superior iliac spine, using a specialised wide-bore needle (Jamshidi or Islam needle). A core at least 1.5 to 2 cm long is obtained, fixed, decalcified, sectioned and stained with haematoxylin and eosin, reticulin and, if required, Prussian blue stain and immunohistochemical stains.
+Trephine biopsy is a procedure in which a **core of bone marrow** is taken with a trephine needle (Jamshidi needle), usually from the **posterior superior iliac crest**. The core is processed to evaluate marrow cellularity and to rule out marrow involvement by solid tumours, lymphomas or other processes.
 
-Its advantages over aspiration are that it preserves the marrow architecture and shows the overall cellularity, the distribution of haemopoietic cells, the megakaryocytes and the presence of fibrosis, granulomas or focal infiltrates by tumour or lymphoma. It is the investigation of choice for aplastic anaemia (hypocellular marrow with fat), myelofibrosis, hairy cell leukaemia, marrow metastases, lymphoma staging and whenever the aspirate is a dry tap. Its disadvantages are that it is more painful, requires decalcification (limiting cytogenetic studies) and gives less cytological detail than a smear.
+Indications:
+
+- Inadequate or failed marrow aspiration.
+- Suspected bone marrow fibrosis.
 
 
 ## What is dry tap?
 
-A dry tap is the failure to aspirate any marrow material, despite proper placement of the needle in the marrow cavity and correct technique. It indicates either an excessively cellular, packed marrow, or marrow in which fibrosis or fat prevents the cells from being aspirated. The common causes are myelofibrosis, aplastic anaemia, hairy cell leukaemia, acute leukaemia, lymphoma and marrow infiltration by metastatic tumour. Faulty technique, such as an incorrect needle position, must be excluded by repeating the procedure. A trephine biopsy should be done in every case of dry tap.
+**Dry tap** is the failure to obtain marrow particles on bone marrow aspiration.
+
+- It is a red flag for underlying marrow pathology and not only a failed procedure.
+- The trephine biopsy must always be studied in such cases.
 
 
 ## What is blood tap?
 
-A blood tap is an aspirate in which the sample is mainly peripheral blood and not marrow, so that the smears contain no marrow fragments (spicules) and few marrow precursors, and are therefore not suitable for reliable assessment. It results from aspiration of an excessive volume of material (more than about 0.5 mL), slow aspiration with dilution, or an unusually vascular marrow, or from the needle being in a vessel or the soft tissues. The procedure is repeated, using a small volume and rapid, firm aspiration, or at another site. A trephine biopsy should be considered if blood taps persist.
+A **blood tap** is an aspirate that yields blood without marrow particles. It is grouped with dry tap as a failed aspiration, and the trephine biopsy must be studied.
 
 
 ## Mention 4 conditions where dry tap is frequent.
 
-Dry taps are frequent in the following conditions:
+1. **Marrow fibrosis** (myelofibrosis).
+2. **Aplastic anaemia.**
+3. **Acute lymphoblastic leukaemia** (commonest in children).
+4. **Metastatic tumours** (commonest in the elderly).
+5. **Non-Hodgkin lymphoma.**
 
-1. **Myelofibrosis** (primary myelofibrosis and the spent phase of other myeloproliferative neoplasms), in which fibrosis traps the marrow cells.
-2. **Aplastic anaemia**, in which the marrow is largely replaced by fat and aspirates yield little or no material.
-3. **Hairy cell leukaemia**, because of reticulin fibrosis and infiltration by hairy cells.
-4. **Marrow infiltration or packed marrow**, as in acute leukaemias, lymphomas, multiple myeloma and metastatic carcinoma (myelophthisic anaemia).
-
-Others include chronic myeloid leukaemia and polycythaemia vera with marrow fibrosis and Gaucher disease.
 
 ## What is anemia?
 
@@ -8909,19 +8878,14 @@ Aplastic anaemia must be distinguished from "aleukaemic" leukaemia and myelodysp
 
 ## Write down the causes of marrow aplasia.
 
-Marrow aplasia (aplastic anaemia) is a syndrome of chronic primary haemopoietic failure with pancytopenia. The causes are as follows.
-
-1. **Idiopathic:** about 65% of cases, in which no initiating factor can be identified.
-2. **Drugs and chemicals:**
-
-- Dose-related, predictable and reversible: cytotoxic chemotherapeutic agents, benzene and other organic solvents.
-- Idiosyncratic, unpredictable: chloramphenicol, gold salts, sulphonamides, phenylbutazone, carbamazepine, antithyroid drugs and others.
-
-3. **Ionising radiation:** whole-body irradiation destroys haemopoietic stem cells in a dose-dependent fashion (therapeutic radiation, nuclear accidents).
-4. **Infections:** viral hepatitis (seronegative hepatitis in about 5% of cases), Epstein-Barr virus, cytomegalovirus, herpes zoster, parvovirus B19, HIV, and rarely miliary tuberculosis.
-5. **Inherited disorders:** Fanconi anaemia (autosomal recessive DNA repair defect with congenital anomalies), telomerase defects (found in 5% to 10% of adult-onset aplastic anaemia) and dyskeratosis congenita.
-6. **Immune-mediated:** autoimmune suppression of stem cells by activated T cells (interferon-γ), eosinophilic fasciitis, thymoma, SLE.
-7. **Other associations:** pregnancy, paroxysmal nocturnal haemoglobinuria, and transfusion-associated graft-versus-host disease.
+1. **Chemicals and drugs** (most cases of known aetiology)
+   - Dose-related and reversible marrow suppression: many cancer chemotherapy drugs and the organic solvent benzene.
+   - Idiosyncratic and unpredictable: chloramphenicol and gold salts.
+2. **Viral infections:** viral hepatitis (about 5% of cases), cytomegalovirus, Epstein-Barr virus and herpes zoster (varicella zoster).
+3. **Whole-body irradiation:** therapeutic irradiation or nuclear accidents, which destroy haemopoietic stem cells in a dose-dependent fashion.
+4. **Fanconi anaemia:** autosomal recessive defect of a multiprotein complex required for DNA repair, with congenital anomalies such as kidney and spleen hypoplasia and thumb or radial anomalies.
+5. **Telomerase defects:** found in 5% to 10% of adult-onset aplastic anaemia; abnormally short telomeres are found in the marrow cells of as many as half of those affected.
+6. **Idiopathic:** about 65% of cases.
 
 
 ## What are the clinical presentations of pancytopenia?
@@ -9727,115 +9691,130 @@ Older solutions are acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose (
 
 ## DIC picture after delivery or induced abortion — Probable diagnosis? Tests / laboratory investigations to establish it (with results)?
 
-The probable diagnosis is disseminated intravascular coagulation (DIC) as a complication of an obstetric event, because after delivery or an induced (especially septic) abortion, release of procoagulants and endothelial injury trigger systemic coagulation with a bleeding diathesis; it is established by thrombocytopenia, prolonged PT, PTT and thrombin time, low fibrinogen and raised D-dimers.
+**Probable diagnosis:** disseminated intravascular coagulation (DIC), an acquired coagulopathy and not a primary disease. Obstetric conditions are among the commonest triggers; procoagulants derived from the placenta, dead retained fetus or amniotic fluid enter the circulation.
 
-DIC is most associated with obstetric complications, malignancy, sepsis and major trauma. In obstetric conditions, procoagulants derived from the placenta, a dead retained foetus or amniotic fluid enter the circulation (abruptio placentae, amniotic fluid embolism, retained products, pre-eclampsia, septic abortion with endotoxaemia). The onset can be fulminant, and acute DIC of this type is dominated by a bleeding diathesis: oozing from the uterus, venepuncture and wound sites, haematuria and petechiae, with shock, oliguria or acute renal failure, dyspnoea, and neurological changes.
+**Investigations**
 
-**Investigations and expected results**
+Diagnosis is based on clinical observation and laboratory studies:
 
 | Test | Result |
 |---|---|
-| Platelet count | Decreased |
-| Blood film | Schistocytes (fragmented red cells), helmet cells and burr cells (microangiopathic haemolytic anaemia) |
-| Prothrombin time | Prolonged |
-| Partial thromboplastin time | Prolonged |
-| Thrombin time | Prolonged |
-| Fibrinogen | Decreased |
-| Fibrin degradation products and D-dimer | Markedly increased |
-| Factors V and VIII | Reduced |
-| Haemoglobin | Reduced; with raised LDH and bilirubin |
-| Urea and creatinine, urine output | Raised or oliguria if acute renal failure |
-
-Treatment consists of removing the cause (evacuation of the uterus, delivery of the placenta, antibiotics for sepsis), and supportive replacement with fresh frozen plasma, cryoprecipitate, platelets and red cells.
+| Platelet count | Reduced, from consumption of platelets |
+| Fibrinogen | Reduced, from consumption of fibrin and clotting factors |
+| Prothrombin time (PT) and partial thromboplastin time (PTT) | Prolonged, from depletion of clotting factors; plasmin also digests factors V and VIII |
+| Fibrin degradation products, particularly D-dimers | Raised, from activation of fibrinolysis |
+| Peripheral blood film | Fragmented red cells of microangiopathic haemolytic anaemia |
 
 
 ## Child with severe anaemia, mongoloid facies, splenomegaly/hepatosplenomegaly ± jaundice, short stature, microcytic hypochromic picture with target cells/normoblasts/fragmented cells — Probable / provisional diagnosis? How will you confirm it?
 
-The probable diagnosis is β-thalassaemia major, and it is confirmed by haemoglobin electrophoresis or HPLC, which shows markedly raised HbF with absent or markedly reduced HbA, supported by studies of the parents showing the β-thalassaemia trait.
+**Probable diagnosis:** β-thalassaemia major.
 
-The anaemia presents from 6 to 9 months of age as the HbF to HbA switch occurs, with severe transfusion-dependent anaemia (untransfused haemoglobin 3 to 6 g/dL). The mongoloid ("chipmunk") facies results from marrow expansion in the facial bones, which erodes cortical bone and induces new bone formation, creating the "crew-cut" skull appearance on radiographs. Hepatosplenomegaly is due to extramedullary haemopoiesis and splenic phagocyte hyperplasia, jaundice from haemolysis and short stature from chronic hypoxia, cachexia and endocrine damage from iron overload. The blood film shows microcytic hypochromic cells, anisopoikilocytosis, target cells, fragmented cells, basophilic stippling and numerous nucleated red cells.
+**Basis**
 
-**Confirmation.**
+- Anaemia manifests 6 to 9 months after birth as haemoglobin synthesis switches from HbF to HbA; untransfused haemoglobin is 3 to 6 g/dL.
+- Marrow expansion in facial bones and skull gives the facial change.
+- Hepatosplenomegaly from phagocyte hyperplasia and extramedullary haematopoiesis; the spleen may weigh up to 1500 g.
+- Growth retardation in untreated children.
 
-1. Complete blood count (very low Hb, MCV and MCH; high RDW) and blood film; reticulocytosis lower than expected.
-2. Haemoglobin electrophoresis or HPLC: HbF markedly raised (30% to 90%), HbA absent or markedly reduced, HbA₂ normal or raised.
-3. Iron studies: raised iron and ferritin (excluding iron deficiency).
-4. Parental testing: microcytosis with HbA₂ 4% to 8%.
-5. DNA analysis for β-globin mutations; skull radiograph; unconjugated hyperbilirubinaemia.
+**Confirmation**
 
-HbE-β-thalassaemia, which is common in Bangladesh, can present identically and is distinguished by electrophoresis.
+1. **Blood smear:** anisocytosis, poikilocytosis, microcytosis and hypochromia; target cells, basophilic stippling and fragmented red cells; nucleated red cell precursors (normoblasts).
+2. **Reticulocyte count:** raised, but lower than expected for the severity of the anaemia, because of ineffective erythropoiesis.
+3. **Haemoglobin analysis:** HbA absent (β0/β0) or present in small amounts (β+/β+ or β0/β+); HbF is the major haemoglobin and is markedly elevated.
+4. **Marrow:** striking expansion of haematopoietically active marrow; "crewcut" appearance of the skull on X-ray.
+5. **Iron studies:** to separate from iron deficiency; iron overload (haemosiderosis) occurs in transfused patients.
 
 
 ## 9-year-old / 7-year-old girl with sudden purpuric rash, thrombocytopenia, normocellular marrow with active megakaryopoiesis — Likely diagnosis? Further investigations for confirmation?
 
-The likely diagnosis is acute immune thrombocytopenic purpura (ITP), a self-limited, antibody-mediated destruction of platelets that follows a viral illness in childhood, confirmed by excluding other causes of thrombocytopenia.
+**Likely diagnosis:** acute immune thrombocytopenic purpura (ITP).
 
-Acute ITP is mainly a disease of childhood, occurring with equal frequency in both sexes; symptoms appear abruptly, often 1 to 2 weeks after a self-limited viral illness, which appears to trigger the development of antiplatelet autoantibodies. IgG antibody binding to platelet glycoproteins IIb/IIIa or Ib/IX opsonises the platelets for removal by splenic macrophages. A normocellular marrow with active megakaryopoiesis shows that platelet production is intact and the thrombocytopenia is due to peripheral destruction. The disease is self-limited, usually resolving within 6 months; in about 20% of children it persists as chronic ITP.
+**Basis**
 
-**Further investigations.**
+- Acute ITP is mainly a disease of childhood.
+- Symptoms appear abruptly, often 1 to 2 weeks after a self-limited viral illness.
+- It is caused by autoantibodies to platelets.
+- It is self-limited, usually resolving within 6 months.
 
-1. Complete blood count and peripheral film: isolated thrombocytopenia with large platelets; normal haemoglobin and white cells (to exclude leukaemia and aplastic anaemia); exclusion of platelet clumping.
-2. PT, PTT and fibrinogen (normal); bleeding time prolonged.
-3. Bone marrow examination (aspirate) if atypical features, or before steroid treatment: normal or increased megakaryocytes, to exclude leukaemia, aplastic anaemia and infiltration.
-4. Exclusion of secondary causes: ANA and anti-dsDNA (SLE), HIV and hepatitis serology, direct Coombs test (Evans syndrome), drug history, and viral serology.
-5. Platelet autoantibody tests have low sensitivity and specificity and are not clinically useful; the diagnosis is one of exclusion.
+**Further investigations**
+
+1. **Platelet count:** low, with large platelets (megathrombocytes) in the peripheral blood.
+2. **Coagulation tests:** PT and PTT normal.
+3. **Bone marrow:** normal or increased megakaryocytes, some immature; its importance is to rule out marrow failure or other primary marrow disorders.
+4. **Exclusion of secondary causes:** systemic lupus erythematosus, HIV infection and B-cell neoplasms.
+5. Tests for platelet autoantibodies have low sensitivity and specificity and are not clinically useful.
 
 
 ## 10-year-old boy with history of gum bleeding — Probable causes?
 
-Gum bleeding in a 10-year-old boy may result from local gingival disease or from a systemic bleeding disorder, the important systemic causes being thrombocytopenia (ITP, acute leukaemia, aplastic anaemia), coagulation disorders (haemophilia, von Willebrand disease) and vitamin deficiencies.
+Excessive bleeding can result from increased fragility of vessels, platelet deficiency or dysfunction, or derangement of coagulation.
 
-1. **Local causes:** gingivitis and periodontal disease from poor oral hygiene, dental caries, trauma.
-2. **Platelet disorders:** acute immune thrombocytopenic purpura (the commonest systemic cause in this age group, with abrupt onset of purpura after a viral illness); platelet function defects such as Glanzmann thrombasthenia and drug effects (aspirin).
-3. **Marrow failure and malignancy:** acute leukaemia (with gum hypertrophy and infiltration in monocytic types, thrombocytopenia, pallor and infections), aplastic anaemia (including Fanconi anaemia).
-4. **Coagulation disorders:** haemophilia A and B (bleeding after minor trauma and into joints), von Willebrand disease (mucosal bleeding, epistaxis), vitamin K deficiency, liver disease, DIC in sepsis.
-5. **Vascular disorders:** scurvy (vitamin C deficiency) with swollen spongy gums, and hereditary haemorrhagic telangiectasia.
-
-Investigation begins with a blood count and film, platelet count, PT and PTT, with bone marrow examination and factor assays as indicated.
+1. **Vessel wall abnormalities:** small haemorrhages, particularly of the gingivae; platelet count, PT and PTT normal. Examples are scurvy and Ehlers-Danlos syndrome (collagen defects).
+2. **Thrombocytopenia:** immune thrombocytopenic purpura (gingival bleeding and easy bruising); aplastic anaemia; marrow replacement by leukaemia.
+3. **Defective platelet function:** von Willebrand disease; inherited disorders of platelet function.
+4. **Clotting factor deficiency:** haemophilia A and B.
+5. **Acute leukaemia:** mucosal haemorrhages into the gingivae; monocytic leukaemias infiltrate the gingiva.
+6. **Disseminated intravascular coagulation.**
 
 
 ## Boy with haemarthrosis, family history through maternal uncle (or excessive bleeding after tooth extraction / spontaneous bleeding) — Provisional diagnosis? How to confirm / which test helps?
 
-The provisional diagnosis is haemophilia A (factor VIII deficiency), an X-linked recessive disorder transmitted through the mother's family, and it is confirmed by a prolonged PTT with a normal PT, platelet count and bleeding time, followed by a factor VIII assay.
+**Provisional diagnosis:** haemophilia A (factor VIII deficiency).
 
-Haemarthrosis after minimal trauma is the classic presentation of a coagulation factor deficiency, and a history of excessive bleeding after tooth extraction in a maternal uncle fits X-linked recessive transmission, in which the mother is an obligate carrier. Haemophilia B (Christmas disease), which is clinically identical, must be distinguished by factor assay. Petechiae are characteristically absent.
+**Basis**
 
-**Confirmation.**
+- X-linked recessive trait, affecting mainly males; transmitted through carrier females, hence the affected maternal uncle.
+- Easy bruising and massive haemorrhage after trauma or surgery.
+- "Spontaneous" haemorrhages in regions susceptible to trauma, particularly the joints (haemarthroses); recurrent bleeding leads to progressive disabling deformities.
+- Petechiae are characteristically absent.
 
-1. Screening: normal platelet count and bleeding time; normal PT; prolonged PTT, which corrects on mixing with normal plasma (excluding an inhibitor).
-2. Factor VIII assay: reduced (severe disease below 1%, moderately severe 2% to 5%, mild 6% to 50%); factor IX assay to exclude haemophilia B.
-3. Von Willebrand factor antigen and ristocetin cofactor activity: normal in haemophilia, excluding von Willebrand disease.
-4. Inhibitor assay (Bethesda), genetic analysis (intron 22 inversion), carrier detection of the mother and prenatal diagnosis.
+**Confirmation**
+
+1. **PTT:** prolonged.
+2. **PT:** normal, pointing to an abnormality of the intrinsic pathway.
+3. **Factor VIII assay:** required for diagnosis. Severity: less than 1% of normal is severe, 2% to 5% moderately severe, 6% to 50% mild.
+4. Factor IX assay, to exclude haemophilia B (Christmas disease), which is clinically indistinguishable and also shows prolonged PTT and normal PT.
 
 
 ## 25-year-old woman, 7 months pregnant, with anaemia — Probable causes? How will you confirm the case?
 
-Anaemia at 7 months of pregnancy is most commonly due to iron deficiency, followed by folate deficiency (megaloblastic anaemia) and physiological haemodilution, and I would confirm the cause with a blood count, film, iron studies and folate and B₁₂ levels.
+**Probable causes**
 
-**Probable causes.**
+1. **Iron deficiency anaemia:** increased requirement in pregnancy; the commonest cause.
+2. **Folate deficiency (megaloblastic anaemia):** increased requirement in pregnancy from increased DNA synthesis.
+3. **Vitamin B12 deficiency:** relative deficiency from increased demand in pregnancy.
 
-1. **Iron deficiency anaemia** (by far the commonest): increased requirement for the foetus, placenta and expansion of the maternal red cell mass; inadequate diet, closely spaced pregnancies, hookworm and menstrual loss before pregnancy.
-2. **Folate deficiency (megaloblastic anaemia of pregnancy):** increased requirement and poor diet; B₁₂ deficiency is less common.
-3. **Physiological (dilutional) anaemia:** plasma volume expands more than the red cell mass; haemoglobin below 11 g/dL is anaemia in pregnancy.
-4. **Haemoglobinopathies and thalassaemia trait or HbE trait,** common in this region; haemolytic anaemias including G6PD deficiency, autoimmune haemolysis, and malaria.
-5. **Chronic infection, bleeding** (antepartum haemorrhage) and, less often, aplastic anaemia or chronic disease.
+**Confirmation of iron deficiency**
 
-**Confirmation.**
+1. Haemoglobin and haematocrit depressed, with hypochromia, microcytosis and modest poikilocytosis; pencil cells.
+2. Serum iron and ferritin low.
+3. Total iron-binding capacity high.
+4. Transferrin saturation below 15%.
+5. Absent stainable iron in marrow macrophages, on Prussian blue stain of marrow aspirate.
+6. Reticulocyte rise in 5 to 7 days after oral iron.
 
-1. Complete blood count with indices and peripheral blood film (microcytic hypochromic in iron deficiency, macro-ovalocytes with hypersegmented neutrophils in megaloblastic anaemia, target cells in thalassaemia).
-2. Reticulocyte count.
-3. Iron studies: serum iron, TIBC, transferrin saturation and ferritin (low ferritin below 12 µg/L confirms iron deficiency).
-4. Serum folate and B₁₂; red cell folate.
-5. Haemoglobin electrophoresis if indices suggest a haemoglobinopathy; stool examination for occult blood and hookworm ova, malaria parasite, and urine culture.
+**Confirmation of folate deficiency**
+
+1. Macro-ovalocytes, hypersegmented neutrophils and low reticulocyte count on the blood film.
+2. Decreased serum or red cell folate.
+3. Raised serum homocysteine; methylmalonate normal.
+4. Vitamin B12 deficiency must be excluded before folate is given.
 
 
 ## Ataxic gait, glossitis/weakness, anaemia/palpitation with history of partial gastrectomy — Most probable haematological diagnosis?
 
-The most probable haematological diagnosis is megaloblastic anaemia due to vitamin B₁₂ deficiency following partial gastrectomy, with neurological involvement from subacute combined degeneration of the spinal cord.
+**Most probable diagnosis:** megaloblastic anaemia due to vitamin B12 deficiency.
 
-Gastrectomy removes the parietal cells that secrete intrinsic factor (and acid and pepsin needed to free dietary B₁₂), so B₁₂ cannot be absorbed in the ileum; once the hepatic stores, which last several years, are exhausted, megaloblastic anaemia develops. The anaemia accounts for the weakness and palpitation, glossitis is characteristic (smooth, sore, beefy-red tongue from epithelial megaloblastic change), and the ataxic gait results from demyelination of the dorsal and lateral columns of the spinal cord (sensory ataxia, loss of vibration and position sense, paraesthesiae, and sometimes spastic paraparesis).
+**Basis**
 
-The diagnosis is confirmed by macrocytic anaemia (MCV above 100 fL) with macro-ovalocytes and hypersegmented neutrophils, a megaloblastic marrow, a low serum vitamin B₁₂, raised homocysteine and methylmalonic acid, and a reticulocyte response to parenteral B₁₂. Concurrent iron deficiency may coexist after gastrectomy, giving a dimorphic picture. Treatment is lifelong parenteral B₁₂; folic acid alone must be avoided, because it corrects the anaemia but not the neurological damage, and may worsen it.
+- With gastrectomy, intrinsic factor is lost, so vitamin B12 cannot be absorbed.
+- Ataxic gait: demyelination of the dorsal and lateral spinal tracts, giving sensory ataxia and paraesthesiae.
+- Weakness and palpitation: symptoms of anaemia.
+
+**Other cause after gastrectomy:** iron deficiency, because gastrectomy diminishes iron absorption, giving a microcytic hypochromic picture.
+
+**Confirmation:** macro-ovalocytes and hypersegmented neutrophils; hypercellular marrow with megaloblasts; low serum vitamin B12; raised homocysteine and methylmalonic acid; reticulocyte rise about 5 days after parenteral vitamin B12.
 
 
 ## What do you mean by chronic obstructive and restrictive lung diseases?
