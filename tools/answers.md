@@ -1957,140 +1957,121 @@ The textbook describes these as the laboratory markers of the systemic response 
 
 ## Define chronic inflammation.
 
-Chronic inflammation is a prolonged host response to persistent stimuli, in which inflammation, tissue injury and attempts at repair coexist.
-
-It may follow acute inflammation or may begin insidiously, as a prolonged response without a preceding acute reaction. It is a response to agents that are difficult to eradicate, such as tubercle bacilli, certain viruses, fungi and parasites, and to self antigens and environmental antigens. It is characterised by infiltration with mononuclear cells (macrophages, lymphocytes and plasma cells), tissue destruction induced by the persistent agent or the inflammatory cells, and attempts at healing by connective tissue replacement through angiogenesis and fibrosis.
-
+***Chronic inflammation*** is a response of prolonged duration (weeks or months) in which inflammation, tissue injury and attempts at repair coexist.
 
 ## Causes of chronic inflammation.
 
-Chronic inflammation arises from persistent infections by organisms difficult to eradicate, immune-mediated diseases (autoimmune and allergic), prolonged exposure to toxic agents, and unresolved acute inflammation.
+1. ***Persistent infections*** by microorganisms that are difficult to eradicate, such as mycobacteria and certain viruses, fungi and parasites. These often evoke a T lymphocyte reaction called *delayed-type hypersensitivity*, and some produce a granulomatous reaction. An unresolved acute inflammation may also evolve into chronic inflammation, for example acute bacterial infection of the lung progressing to a chronic lung abscess.
+2. ***Hypersensitivity diseases***, caused by excessive and inappropriate activation of the immune system.
+3. ***Prolonged exposure to toxic agents***, either exogenous or endogenous.
 
-1. **Persistent infections** by microorganisms that are difficult to eradicate, such as mycobacteria and certain viruses, fungi and parasites. These often evoke a T-lymphocyte reaction, delayed-type hypersensitivity, and sometimes a granulomatous reaction. Unresolved acute inflammation, such as a lung abscess following bacterial pneumonia, may evolve into chronic inflammation.
-2. **Hypersensitivity (immune-mediated) diseases**, in which immune responses develop against the individual's own tissues (autoimmune diseases such as rheumatoid arthritis and multiple sclerosis), against microbes in an unregulated way (inflammatory bowel disease), or against common environmental substances (bronchial asthma). Repeated bouts of inflammation produce mixed acute and chronic patterns, with fibrosis in the late stage.
-3. **Prolonged exposure to toxic agents**, exogenous (non-degradable particulate silica causing silicosis) or endogenous (excess cholesterol and lipids causing atherosclerosis).
-
-Foreign bodies that persist impede healing by perpetuating chronic inflammation.
-
+- *Autoimmune diseases* (self antigens evoke a self-perpetuating T and B lymphocyte reaction): rheumatoid arthritis and multiple sclerosis.
+- *Unregulated immune responses against microbes*: inflammatory bowel disease.
+- *Allergic diseases* (immune responses against common environmental substances): bronchial asthma.
+- Exogenous toxic agent: particulate silica, a nondegradable inanimate material which, when inhaled in sufficient quantity, causes the inflammatory lung disease **silicosis**.
+- Endogenous toxic agent: excess cholesterol and other lipids, which cause **atherosclerosis**, a chronic inflammatory process of the arterial wall.
 
 ## Morphological features of chronic inflammation.
 
-Chronic inflammation shows infiltration by mononuclear cells (macrophages, lymphocytes, plasma cells), tissue destruction, and attempts at healing by angiogenesis and fibrosis.
+In contrast to acute inflammation, which shows vascular changes, oedema and predominantly neutrophilic infiltration, chronic inflammation is characterised by:
 
-In contrast to acute inflammation, which is manifested by vascular changes, oedema and neutrophilic infiltration, chronic inflammation is characterised by:
+1. ***Infiltration with mononuclear cells***, which include macrophages, lymphocytes and plasma cells.
+2. ***Tissue destruction***, induced by the persistent offending agent or by the inflammatory cells.
+3. ***Attempts at healing*** by connective tissue replacement of damaged tissue, accomplished by **angiogenesis** (proliferation of small blood vessels) and, in particular, **fibrosis**.
 
-1. **Infiltration by mononuclear cells**: macrophages, lymphocytes and plasma cells. Eosinophils, mast cells and sometimes neutrophils may also be present, and lymphoid follicles (tertiary lymphoid structures) may form.
-2. **Tissue destruction**, induced by the persistent offending agent or by the inflammatory cells (their enzymes, oxygen radicals and cytokines). In the lung, for example, normal alveoli are replaced by spaces lined by cuboidal epithelium.
-3. **Attempts at healing by connective tissue replacement**, through proliferation of small blood vessels (angiogenesis) and especially fibrosis.
-
-Granulomatous inflammation, with epithelioid cells, giant cells and often necrosis, is a distinctive pattern.
-
+- In the lung, chronic inflammation shows a collection of chronic inflammatory cells, destruction of the parenchyma (normal alveoli replaced by spaces lined by cuboidal epithelium), and replacement by connective tissue (fibrosis).
+- In acute inflammation of the lung (acute bronchopneumonia), neutrophils fill the alveolar spaces and the blood vessels are congested.
 
 ## Common examples of chronic inflammation.
 
-Common examples of chronic inflammation are tuberculosis, leprosy, chronic osteomyelitis, rheumatoid arthritis, chronic peptic ulcer, inflammatory bowel disease, silicosis and atherosclerosis.
-
-- **Chronic infections:** tuberculosis, leprosy, syphilis, chronic osteomyelitis, chronic lung abscess, chronic viral hepatitis, fungal infections.
-- **Immune-mediated:** rheumatoid arthritis, multiple sclerosis, Hashimoto thyroiditis, Crohn disease and ulcerative colitis, bronchial asthma (chronic form), psoriasis.
-- **Toxic and particulate agents:** silicosis, asbestosis, smoking-related lung injury, atherosclerosis.
-- **Unresolved acute inflammation:** chronic peptic ulcer, chronic cholecystitis, chronic pyelonephritis, chronic bronchitis.
-- **Foreign-body reactions** and gout (urate crystals).
-
+| Cause | Examples |
+|---|---|
+| ***Persistent infections*** | Tuberculosis (prototype of a granulomatous disease), leprosy, syphilis, cat-scratch disease, chronic bacterial infection of bone (osteomyelitis) |
+| ***Autoimmune diseases*** | Rheumatoid arthritis, multiple sclerosis, Hashimoto thyroiditis |
+| ***Unregulated immune response against microbes or self antigens*** | Inflammatory bowel disease (Crohn disease), sarcoidosis (cause unknown) |
+| ***Allergic diseases*** | Bronchial asthma |
+| ***Toxic substances*** | Silicosis (inhaled silica), atherosclerosis (cholesterol and other lipids) |
+| ***Unresolved acute inflammation*** | Acute bacterial infection of the lung progressing to a chronic lung abscess; peptic ulcer, in which acute and chronic inflammation coexist |
 
 ## Macrophage is the central cell of chronic inflammation / role of macrophage in chronic inflammation.
 
-The macrophage is the dominant cell of chronic inflammation because it phagocytoses microbes and dead tissue, secretes cytokines and growth factors, presents antigen to T cells and interacts with them in a self-perpetuating cycle, and initiates repair and fibrosis, but the same products cause tissue destruction.
+***Macrophages*** are the dominant cells in most chronic inflammatory reactions. They are professional phagocytes that eliminate microbes and damaged tissues and also play important roles in the repair of injured tissue.
 
-**Origin.** Macrophages are tissue cells derived from bone-marrow haematopoietic stem cells (via blood monocytes, which have a half-life of about 1 day) in postnatal life and, for tissue-resident populations such as Kupffer cells, microglia and alveolar macrophages, from yolk-sac and foetal liver progenitors in embryonic life. Tissue macrophages live months to years. In inflammation monocytes emigrate early, and within 48 hours may predominate. Macrophage accumulation persists through continuous recruitment and local proliferation.
+**Origin and distribution**
 
-**Functions in chronic inflammation.**
+- They are derived from haematopoietic stem cells of the bone marrow (circulating monocytes, half-life about 1 day) and, in early development, from progenitors in the yolk sac and foetal liver.
+- Tissue macrophages live for several months or years. They are present in specific locations: **Kupffer cells** in the liver, **sinus histiocytes** in the spleen and lymph nodes, **microglia** in the central nervous system and **alveolar macrophages** in the lungs. Together they form the mononuclear phagocyte system.
+- Monocytes begin to emigrate into the tissues early in inflammation, and within 48 hours they may be the predominant cell type.
 
-1. Like neutrophils, they ingest and destroy microbes and dead tissue.
-2. They initiate tissue repair and take part in scar formation and fibrosis, secreting growth factors (PDGF, FGF, TGF-β) and cytokines that stimulate fibroblast and endothelial proliferation.
-3. They secrete mediators of inflammation (TNF, IL-1, chemokines and eicosanoids), thereby initiating and propagating the response.
-4. They display antigens to T lymphocytes and respond to T-cell signals, forming a feedback loop. Macrophages produce IL-12, which promotes Th1 cells; Th1 cells release IFN-γ, which activates macrophages; T cells also secrete TNF, IL-17 and chemokines that recruit more monocytes. This bidirectional cycle sustains chronic inflammation and leads to granuloma formation.
+**Role in chronic inflammation**
 
-**Activation pathways.**
+1. They ingest and destroy microbes and dead tissues.
+2. They initiate tissue repair and are involved in scar formation and fibrosis.
+3. They secrete mediators of inflammation, such as TNF, IL-1, chemokines and eicosanoids, and so initiate and propagate the reaction.
+4. They display antigens to T lymphocytes and respond to signals from T cells, setting up a feedback loop that sustains chronic inflammation.
 
-| | Classical (M1) | Alternative (M2) |
-|---|---|---|
-| Inducers | Microbial products (LPS), IFN-γ, crystals | IL-4, IL-13 |
-| Products | NO, ROS, lysosomal enzymes, inflammatory cytokines | Growth factors, TGF-β; anti-inflammatory |
-| Role | Kill microbes and promote inflammation | Terminate inflammation, tissue repair and fibrosis |
+**Pathways of activation**
 
-In reality most reactions contain both types, and intermediate phenotypes exist.
-
-**Fate.** If the irritant is eliminated macrophages die off or pass into lymphatics; if not, they accumulate and may become epithelioid cells or fuse into giant cells. The same arsenal of mediators that destroys microbes causes much of the tissue injury of chronic inflammation, so tissue destruction is one of its hallmarks.
-
+- ***Classical (M1)*** activation is induced by microbial products (endotoxin) and by IFN-gamma. These macrophages produce NO, ROS and lysosomal enzymes, which kill microbes, and they secrete cytokines that promote inflammation.
+- ***Alternative (M2)*** activation is induced by IL-4 and IL-13. These macrophages are not microbicidal; they terminate inflammation and promote tissue repair.
+- The same products that make macrophages powerful defenders also cause the tissue destruction that is a hallmark of chronic inflammation.
 
 ## Define granuloma with an example.
 
-A granuloma is a focal collection of activated macrophages (epithelioid cells), usually with a surrounding collar of lymphocytes and often with multinucleate giant cells and sometimes central necrosis, formed as a cellular attempt to contain an agent that is difficult to eradicate; the classic example is the tubercle of tuberculosis.
+***Granulomatous inflammation*** is a form of chronic inflammation characterised by collections of activated macrophages, often with T lymphocytes, and sometimes associated with necrosis. A ***granuloma*** is such a focus of inflammation.
 
-Granulomatous inflammation is a form of chronic inflammation characterised by collections of activated macrophages, often with T lymphocytes, and sometimes associated with necrosis. The name derives from the granular macroscopic appearance of the foci. It represents an attempt to wall off an offending agent that is resistant to eradication, and involves strong activation of macrophages and T lymphocytes, which can injure normal tissue.
-
-**Morphology.** In H&E sections the activated macrophages have abundant pink granular cytoplasm and indistinct cell boundaries, resembling epithelial cells (epithelioid cells). Aggregates of epithelioid cells are surrounded by a collar of lymphocytes, and older granulomas have a rim of fibroblasts and connective tissue. Multinucleate giant cells 40 to 50 μm across, formed by fusion of activated macrophages, are frequently found (Langhans giant cells). In granulomas associated with certain organisms, most classically Mycobacterium tuberculosis, a central zone of caseous necrosis develops, from hypoxia and free radical injury; it appears as amorphous, structureless, eosinophilic granular debris without cellular outlines. Healing is accompanied by fibrosis.
-
-**Example: tuberculosis.** The tubercle is a caseating granuloma: central caseous necrosis surrounded by epithelioid cells, Langhans giant cells, a peripheral rim of lymphocytes and fibroblasts, and acid-fast bacilli demonstrated by the Ziehl-Neelsen stain. Other examples are leprosy, syphilis, sarcoidosis (noncaseating), Crohn disease and foreign-body reactions.
-
+**Example:** *tuberculosis*, the prototype of a granulomatous disease caused by infection. The granulomas are called **tubercles**, with central caseous necrosis surrounded by epithelioid cells, giant cells and lymphocytes.
 
 ## How is a granuloma formed?
 
-A granuloma forms when a persistent antigen or inert foreign body cannot be eliminated; in immune granulomas, antigen-presenting macrophages activate CD4⁺ T cells, which secrete IFN-γ that further activates macrophages, transforming them into epithelioid cells and giant cells.
+***Granuloma formation*** is a cellular attempt to contain an offending agent that is difficult to eradicate.
 
-1. A persistent microbe or other chronic stimulus is engulfed by macrophages and dendritic cells, which present its antigens to T cells.
-2. Macrophages secrete IL-12 (and other cytokines), which drives Th1 differentiation.
-3. Th1 cells secrete IFN-γ, which activates macrophages by the classical pathway; TNF, IL-17 and chemokines recruit more monocytes.
-4. Activated macrophages become epithelioid cells; some fuse to form multinucleate giant cells.
-5. Lymphocytes form a surrounding collar; with time, fibroblasts and connective tissue form a rim.
-6. In tuberculosis, hypoxia and free radical-mediated injury cause central caseous necrosis.
+1. A persistent microbe or other chronic stimulus activates **T lymphocytes**.
+2. **Macrophages** display the antigen to T cells and produce IL-12, which stimulates the T-cell response.
+3. **Th1 cells** produce cytokines such as ***IFN-gamma***, which activates the macrophages. Activated T cells also produce TNF, IL-17 and chemokines that recruit more macrophages.
+4. Activated macrophages produce cytokines (IL-12 and others) that stimulate the T cells again. This cycle of T cell and macrophage reactions sustains the chronic inflammation.
+5. The activated macrophages develop abundant cytoplasm and resemble epithelial cells (***epithelioid cells***). Some of them fuse to form ***multinucleate giant cells***.
+6. The aggregate of epithelioid cells is surrounded by a collar of lymphocytes. In some infections (classically *Mycobacterium tuberculosis*), hypoxia and free radical injury lead to a central zone of caseous necrosis.
+7. Older granulomas develop a rim of fibroblasts and connective tissue, and healing is accompanied by fibrosis.
 
-In foreign-body granulomas, macrophages cannot ingest a large inert particle (talc, suture), so epithelioid cells and giant cells are applied to its surface without a T-cell immune response. In schistosomiasis, granulomas are associated with Th2 responses and eosinophils.
-
+- In *foreign body granulomas* no T-cell immune response is involved; the inert foreign material itself induces the reaction.
 
 ## Types of granuloma.
 
-There are two types of granuloma: foreign-body granulomas, which form around inert material without T-cell involvement, and immune granulomas, which result from persistent T cell-mediated immune responses.
+There are two types of granuloma, which differ in their pathogenesis.
 
-| | Foreign-body granuloma | Immune granuloma |
+| Feature | Foreign body granuloma | Immune granuloma |
 |---|---|---|
-| Stimulus | Inert, non-immunogenic foreign body too large for phagocytosis (talc, suture, fibres) | Persistent microbe or chronic stimulus that activates T cells |
-| Mechanism | Inflammation without a specific T cell-mediated response | Th1 response, IFN-γ-activated macrophages (Th2 and eosinophils in schistosomiasis) |
-| Morphology | Epithelioid and giant cells against the foreign body, which may be seen within giant cells, refractile in polarised light | Epithelioid cells, giant cells, lymphocyte collar; caseation in tuberculosis |
+| Cause | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
+| Mechanism | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
+| Examples | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
+| Morphology | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
 
-Granulomas are also divided morphologically into caseating (tuberculosis) and noncaseating (sarcoidosis, Crohn disease, foreign-body reactions).
-
+- *Caseating* granulomas have a central zone of caseous necrosis (tuberculosis). *Noncaseating* granulomas lack necrotic centres (Crohn disease, sarcoidosis, foreign body reactions).
 
 ## Examples of granulomatous inflammation.
 
-Examples of granulomatous inflammation are tuberculosis, leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease, as well as foreign-body reactions and schistosomiasis.
-
 | Disease | Aetiology | Tissue reaction |
 |---|---|---|
-| Tuberculosis | Mycobacterium tuberculosis | Caseating granulomas (tubercles): epithelioid cells, Langhans giant cells, lymphocytes, central caseous necrosis, acid-fast bacilli |
-| Leprosy | Mycobacterium leprae | Acid-fast bacilli within macrophages; noncaseating granulomas |
-| Syphilis | Treponema pallidum | Gumma: central coagulative necrosis with preserved cell outlines, surrounded by histiocytes and plasma cells |
-| Cat-scratch disease | Bartonella henselae | Stellate granuloma with central granular debris and neutrophils; giant cells uncommon |
-| Sarcoidosis | Unknown | Noncaseating granulomas with abundant activated macrophages |
-| Crohn disease | Immune reaction against intestinal bacteria, possibly self-antigens | Occasional noncaseating granulomas in the intestinal wall |
-| Foreign-body reactions | Talc, suture, silica | Noncaseating foreign-body granulomas |
-| Schistosomiasis | Helminth eggs | Granulomas with eosinophils (Th2) |
+| ***Tuberculosis*** | *Mycobacterium tuberculosis* | Caseating granulomas (tubercles): activated macrophages (epithelioid cells) rimmed by fibroblasts, lymphocytes and histiocytes, occasional Langhans giant cells, central necrosis with amorphous granular debris, acid-fast bacilli |
+| ***Leprosy*** | *Mycobacterium leprae* | Acid-fast bacilli in macrophages; noncaseating granulomas |
+| ***Syphilis*** | *Treponema pallidum* | Gumma: microscopic to grossly visible lesion with an enclosing wall of histiocytes, plasma cell infiltrate, central cells necrotic without loss of cellular outline |
+| ***Cat-scratch disease*** | *Bartonella henselae* (a gram-negative bacillus) | Rounded or stellate granuloma with central granular debris and recognisable neutrophils; giant cells uncommon |
+| ***Sarcoidosis*** | Unknown | Noncaseating granulomas with abundant activated macrophages |
+| ***Crohn disease*** | Immune reaction against intestinal bacteria, possibly self antigens | Occasional noncaseating granulomas in the wall of the intestine, with a dense chronic inflammatory infiltrate |
 
-Tuberculosis should always be excluded when granulomas are seen.
-
+- Foreign body granulomas also occur around talc, suture material and other fibres.
+- Schistosomiasis produces granulomas with strong Th2 responses and eosinophils.
 
 ## Morphological features of chronic granulomatous inflammation.
 
-Chronic granulomatous inflammation shows aggregates of epithelioid macrophages with multinucleate giant cells, surrounded by a collar of lymphocytes and sometimes a rim of fibroblasts, with central caseous necrosis in tuberculosis.
-
-- **Grossly,** the foci are granular; caseous necrosis has a granular, cheesy appearance.
-- **Epithelioid cells:** activated macrophages with pink granular cytoplasm and indistinct cell boundaries.
-- **Giant cells:** multinucleate, 40 to 50 μm, Langhans type (nuclei arranged peripherally), formed by fusion of macrophages.
-- **Lymphocytes** (mainly T cells) form a collar around the aggregate; plasma cells may be present.
-- **Fibroblasts and connective tissue** rim in older lesions; healing by fibrosis, which may be extensive.
-- **Necrosis:** central caseous necrosis, with amorphous, structureless, eosinophilic granular debris and complete loss of cellular detail, as in tuberculosis. Crohn disease, sarcoidosis and foreign-body reactions are noncaseating.
-- Organisms may be seen with special stains (acid-fast for tubercle bacilli), and foreign material may be seen in polarised light.
-
+1. In the usual H&E preparations the activated macrophages have **pink granular cytoplasm with indistinct cell boundaries** and are called ***epithelioid cells***.
+2. The aggregates of epithelioid macrophages are surrounded by a **collar of lymphocytes**.
+3. Older granulomas may have a **rim of fibroblasts and connective tissue**.
+4. Frequently, but not invariably, **multinucleated giant cells** 40 to 50 micrometres in diameter are found. These are called ***Langhans giant cells***. They consist of a large mass of cytoplasm and many nuclei and derive from the fusion of multiple activated macrophages.
+5. In granulomas associated with certain infectious organisms (most classically *Mycobacterium tuberculosis*), hypoxia and free radical-mediated injury lead to a ***central zone of caseous necrosis***. Grossly it is granular and cheesy. Microscopically it is amorphous, structureless, eosinophilic, granular debris with complete loss of cellular detail.
+6. The granulomas of Crohn disease, sarcoidosis and foreign body reactions tend to lack necrotic centres and are called *noncaseating*.
+7. Healing of granulomas is accompanied by **fibrosis**, which may be extensive in involved organs.
 
 ## Write a short note on granulomatous inflammation.
 
@@ -2182,29 +2163,29 @@ The same immune response that controls the infection causes tissue destruction t
 
 ## Define a giant cell.
 
-A giant cell is a large multinucleate cell; inflammatory giant cells are formed by the fusion of activated macrophages in granulomatous inflammation.
-
-They are seen in granulomas and contain a large mass of cytoplasm and many nuclei. Langhans giant cells, 40 to 50 μm across, derive from the fusion of multiple activated macrophages. Other physiological multinucleate cells include osteoclasts and syncytiotrophoblast, and giant cells may be seen in some tumours, but the term "inflammatory giant cell" refers to those derived from macrophages.
-
+A ***giant cell*** (multinucleate giant cell) is a large mass of cytoplasm containing many nuclei, which derives from the fusion of multiple activated macrophages.
 
 ## Names / types of inflammatory giant cells with examples.
 
-The main inflammatory giant cells are the Langhans type, with nuclei arranged at the periphery in a horseshoe, seen in tuberculosis, and the foreign-body type, with randomly scattered nuclei, seen in foreign-body granulomas; Touton giant cells are seen in lipid-rich lesions.
-
-| Type | Nuclear arrangement | Examples |
+| Type | Where seen | Features |
 |---|---|---|
-| Langhans giant cell | Nuclei peripheral, horseshoe or ring | Tuberculosis, sarcoidosis, other immune granulomas |
-| Foreign-body giant cell | Nuclei scattered haphazardly | Foreign-body reactions (suture, talc, silica); also seen in tuberculosis, sarcoidosis, fat necrosis |
-| Touton giant cell | Ring of nuclei around a central homogeneous cytoplasm with foamy peripheral cytoplasm | Xanthoma, fat necrosis, xanthogranuloma |
-| Aschoff giant cell | Large cells with "owl-eye" or caterpillar nuclei | Rheumatic carditis (Aschoff nodule) |
-| Warthin-Finkeldey cell | Multinucleate cells in lymphoid tissue | Measles |
+| ***Langhans giant cell*** | Immune granulomas, classically *tuberculosis*; also sarcoidosis | 40 to 50 micrometres in diameter; large mass of cytoplasm with many nuclei arranged in a horseshoe or ring at the periphery |
+| ***Foreign body giant cell*** | Foreign body granulomas around talc, suture material and other fibres | Many nuclei scattered haphazardly through the cytoplasm; the giant cells are apposed to the surface of the foreign body, and the material may lie inside them |
+| ***Touton giant cell*** | Lesions rich in lipid, such as xanthoma and fat necrosis | Ring of nuclei around a central eosinophilic area, with foamy (lipid-filled) cytoplasm at the periphery |
+| ***Warthin-Finkeldey cell*** | Lymphoid organs, lung and sputum in measles | Multinucleate giant cell with eosinophilic nuclear and cytoplasmic inclusion bodies; pathognomonic of measles |
 
+- The textbook describes Langhans, foreign body and Warthin-Finkeldey cells. The nuclear arrangement of the three granuloma types and the Touton cell are standard descriptions from outside the textbook.
 
 ## How are inflammatory giant cells formed?
 
-Inflammatory giant cells form by fusion of multiple activated macrophages (epithelioid cells) under the influence of cytokines, in response to persistent stimuli that cannot be phagocytosed.
+***Inflammatory giant cells*** are formed by the **fusion of activated macrophages**.
 
-Monocytes recruited to a site of chronic inflammation differentiate into macrophages, which, when strongly and persistently activated by IFN-γ from Th1 cells (or by other cytokines such as IL-4 and IL-13 in foreign-body reactions), become epithelioid cells with abundant cytoplasm. Some of these cells fuse, through membrane fusion proteins, to form multinucleate giant cells. The stimulus is a large indigestible particle or a persistent microbe (frustrated phagocytosis), which the macrophage cannot engulf singly. The nuclei result from fusion of cells, not from nuclear division without cytokinesis. The giant cell has a large mass of cytoplasm and many nuclei, and in foreign-body granulomas the foreign material may be seen within the giant cell. In tuberculosis the peripheral arrangement of nuclei gives the Langhans pattern; in foreign-body reactions the nuclei are randomly distributed.
+1. A persistent stimulus that cannot be removed (a microbe such as *Mycobacterium tuberculosis*, or a foreign body) leads to continuous recruitment and activation of macrophages.
+2. In immune granulomas, a cycle between T cells and macrophages is set up. Th1 cells produce IFN-gamma, which activates the macrophages, and the macrophages stimulate T cells through antigen presentation and IL-12.
+3. The activated macrophages develop abundant cytoplasm and resemble epithelial cells (*epithelioid cells*).
+4. Some of these activated macrophages **fuse together**, forming a multinucleate giant cell with a large mass of cytoplasm and many nuclei.
+
+- In foreign body granulomas the material is too large to be phagocytosed by a single macrophage and does not stimulate a T cell response. The macrophages and giant cells line up along the surface of the foreign body.
 
 ## Define regeneration.
 
