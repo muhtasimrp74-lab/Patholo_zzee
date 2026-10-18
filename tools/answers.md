@@ -7892,23 +7892,13 @@ Classification rests on red cell size (normocytic, microcytic, macrocytic), degr
 
 ## How will you investigate a case of anaemia?
 
-I would take a detailed history and examine the patient, confirm anaemia and classify it morphologically with a complete blood count, red cell indices, reticulocyte count and peripheral blood film, and then perform specific tests directed by the type of anaemia to determine the underlying cause.
-
-History and examination. Duration and tempo, diet, drugs (NSAIDs, anticonvulsants, antimalarials), alcohol, bleeding (gastrointestinal, menstrual, urinary), pregnancy, previous surgery (gastrectomy, ileal resection), family history and ethnic origin, and symptoms of the underlying cause. Examination looks for pallor, jaundice, glossitis, koilonychia, neurological signs, lymphadenopathy, hepatosplenomegaly and bone tenderness.
-
-First-line investigations.
-
-1. Complete blood count: Hb, PCV, RBC count, red cell indices (MCV, MCH, MCHC, RDW), total and differential white cell count, platelet count.
-2. Peripheral blood film: size, colour, shape, inclusions, white cell and platelet abnormalities, parasites.
-3. Reticulocyte count, to distinguish underproduction from increased destruction or loss.
-
-Investigations directed by the findings.
-
-- **Microcytic hypochromic:** serum iron, TIBC, transferrin saturation, ferritin; if iron studies are normal, haemoglobin electrophoresis/HPLC (HbA₂), and in iron deficiency a search for the source of blood loss (stool for occult blood, endoscopy, parasites).
-- **Macrocytic:** serum vitamin B₁₂ and folate (red cell folate), antibodies to intrinsic factor, homocysteine and methylmalonic acid, liver and thyroid function; bone marrow if megaloblastic changes or dysplasia are suspected.
-- **Normocytic with high reticulocytes (haemolysis):** serum bilirubin (unconjugated), LDH, haptoglobin, urine haemoglobin and haemosiderin, direct Coombs test, osmotic fragility, G6PD assay, haemoglobin electrophoresis, and tests for PNH by flow cytometry.
-- **Normocytic with low reticulocytes:** renal function, ferritin and inflammatory markers (anaemia of chronic inflammation), thyroid function, and bone marrow aspiration with trephine biopsy in suspected aplasia, infiltration or neoplasm.
-
+1. **Haemoglobin and haematocrit:** anaemia is usually diagnosed from reductions in these below the normal range (male 13.6 to 17.2 g/dL, female 12.0 to 15.0 g/dL).
+2. **Red cell indices:** mean cell volume, mean cell haemoglobin, mean cell haemoglobin concentration and red cell distribution width, to classify the anaemia as microcytic, normocytic or macrocytic, and hypochromic or normochromic.
+3. **Peripheral blood smear:** red cell shape, and other findings that point to a cause.
+4. **Reticulocyte count:** raised after blood loss, reaching 10% to 15% after 7 days; reticulocytopenia in aplastic anaemia.
+5. **Iron studies** in suspected iron deficiency: serum iron and ferritin low, total iron-binding capacity high, transferrin saturation below 15%.
+6. **Bone marrow examination:** aspirate with Prussian blue stain for iron; biopsy for aplasia.
+7. **Search for the underlying cause**, for example gastrointestinal blood loss in adult males and postmenopausal women.
 
 ## Write the morphological/red-cell-indices classification of anemia with examples.
 
@@ -7945,46 +7935,36 @@ It is classified as **relative**, when there is haemoconcentration from reduced 
 
 ## Causes of iron deficiency anaemia.
 
-Iron deficiency anaemia results from a negative iron balance, which arises from dietary lack, impaired absorption, increased requirement, or chronic blood loss, with chronic blood loss being the commonest cause in developed countries.
+Iron deficiency can result from:
 
-Normal iron balance depends on absorbing about 1 mg of iron daily to replace the 1 to 2 mg lost in shed epithelial cells, since there is no regulated pathway of excretion. The causes are as follows.
-
-1. **Chronic blood loss:** gastrointestinal bleeding (peptic ulcer, gastrointestinal cancers, haemorrhoids, hookworm infestation, NSAIDs, angiodysplasia, varices), menorrhagia and other genital tract bleeding, haematuria, and repeated blood donation.
-2. **Dietary lack:** infants, the impoverished, older adults, vegans, and populations eating mainly inorganic (nonhaem) iron, which is poorly absorbed (often <5%) compared with haem iron (about 20%).
-3. **Impaired absorption:** sprue and other malabsorption syndromes with steatorrhoea, chronic diarrhoea, gastrectomy (reduced acidity and rapid transit), and diets rich in tannates, phytates or oxalates.
-4. **Increased requirement:** growing infants and children, adolescents, pregnancy and lactation, particularly with closely spaced pregnancies.
-
-Rarely, iron-refractory iron deficiency anaemia occurs from TMPRSS6 mutations that cause inappropriately high hepcidin.
-
+1. **Dietary lack**, in infants, the impoverished, older adults and vegans.
+2. **Impaired absorption:** sprue, other causes of fat malabsorption (steatorrhoea), chronic diarrhoea, and gastrectomy.
+3. **Increased requirement:** growing infants, children and adolescents, and premenopausal females, particularly during pregnancy.
+4. **Chronic blood loss:** external haemorrhage, or bleeding into the gastrointestinal, urinary or genital tracts; the most common cause in developed societies.
 
 ## Causes of IDA in relation to different age groups.
 
-The cause of iron deficiency varies with age: inadequate intake and rapid growth in infants and children, increased demands and menstrual loss in adolescent girls and women of reproductive age, and chronic gastrointestinal blood loss in adult men and postmenopausal women.
-
-| Age group | Principal causes |
+| Group | Causes |
 |---|---|
-| Infants (6 months to 2 years) | Low iron in breast milk (about 0.3 mg/L) and poorly bioavailable iron in cow's milk, prematurity and low birth stores, rapid growth, delayed weaning to iron-rich foods, cow's-milk-induced intestinal blood loss |
-| Children | Nutritional inadequacy, rapid growth, hookworm and other intestinal parasites, malabsorption, Meckel diverticulum |
-| Adolescents | Rapid growth, poor diet, onset of menstruation (especially girls) |
-| Women of reproductive age | Menorrhagia, repeated pregnancies and lactation, poor diet |
-| Adult men | Gastrointestinal blood loss until proven otherwise (peptic ulcer, malignancy, hookworm, haemorrhoids) |
-| Postmenopausal women | Gastrointestinal blood loss until proven otherwise (cancer, gastritis, NSAID use), malabsorption, poor diet |
-| Older adults | Poor diet with little meat, poor dentition, occult gastrointestinal bleeding, chronic NSAID or aspirin use |
-
+| **Infants** | Dietary lack, as milk contains very little iron; increased requirement for growth |
+| **Children and adolescents** | Increased requirement for growth |
+| **Premenopausal females** | Increased requirement, particularly during pregnancy; chronic blood loss from the genital tract; multiple, closely spaced pregnancies in low-resource countries carry exceptional risk |
+| **Adult males** | Chronic blood loss, attributed to gastrointestinal bleeding until proven otherwise |
+| **Postmenopausal females** | Chronic blood loss, attributed to gastrointestinal bleeding until proven otherwise |
+| **Older adults** | Restricted diets with little meat, from limited income or poor dentition |
+| **Any age** | Poor diet from poverty; vegan diet; malabsorption; gastrectomy |
 
 ## Causes of IDA in adult males.
 
-In an adult male, iron deficiency is almost always due to chronic gastrointestinal blood loss until proven otherwise, because dietary lack is rare and men have no physiological iron losses other than the minimal obligatory ones.
-
-The average Western diet provides more than enough iron for men, so dietary insufficiency is rarely responsible. The sources of occult bleeding to be investigated include peptic ulcer disease and erosive gastritis (aspirin or NSAID use), carcinoma of the stomach, caecum or colon, oesophagitis, hiatus hernia, oesophageal varices, angiodysplasia, haemorrhoids, inflammatory bowel disease, and, in endemic regions such as Bangladesh, hookworm infestation (Ancylostoma duodenale, Necator americanus). Less commonly, malabsorption (coeliac disease), previous gastrectomy, urinary tract bleeding (haematuria) and frequent blood donation are responsible. To ascribe iron deficiency prematurely to another cause risks missing a gastrointestinal cancer or other bleeding lesion, and an alert clinician who investigates unexplained iron deficiency anaemia may thereby save a life.
-
+- **Chronic gastrointestinal blood loss.** Iron deficiency in adult males in high-income countries must be attributed to gastrointestinal blood loss until proven otherwise.
+- Ascribing it prematurely to another cause risks missing a gastrointestinal cancer or other bleeding lesion.
+- Other causes: bleeding into the urinary tract, malabsorption, and a restricted or vegan diet.
 
 ## Causes of IDA in post-menopausal women.
 
-After the menopause, menstrual loss and pregnancy are no longer relevant, so iron deficiency anaemia in a postmenopausal woman must be attributed to gastrointestinal blood loss until proven otherwise.
-
-The same causes as in adult males therefore apply: bleeding peptic ulcer, erosive gastritis from NSAIDs or aspirin, gastric and colorectal carcinoma, angiodysplasia, haemorrhoids and hookworm infestation. Further contributory causes are impaired absorption (atrophic gastritis with achlorhydria, coeliac disease, previous gastrectomy), inadequate diet (older women who eat little meat because of limited income or poor dentition), and rarely postmenopausal vaginal bleeding from uterine or cervical neoplasm or haematuria. Postmenopausal bleeding itself must be investigated gynaecologically. Because the loss may be occult, endoscopy of the upper and lower gastrointestinal tract is usually required.
-
+- **Chronic gastrointestinal blood loss.** Iron deficiency in postmenopausal females in high-income countries must be attributed to gastrointestinal blood loss until proven otherwise.
+- Ascribing it prematurely to another cause risks missing a gastrointestinal cancer or other bleeding lesion.
+- Other causes: malabsorption, and a restricted diet with little meat in older adults.
 
 ## Causes of IDA in infants and children.
 
