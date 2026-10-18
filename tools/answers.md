@@ -2213,64 +2213,52 @@ It is critical in healing at sites of injury, in the development of collateral c
 
 ## Mention the factors influencing/delaying wound healing.
 
-Wound healing may be delayed or impaired by factors that are intrinsic or extrinsic to the injured tissue, and local or systemic.
+Repair may be altered by factors that are **extrinsic** or **intrinsic** to the injured tissue, and **systemic** or **local**.
 
-| Factor | Effect on healing |
-|---|---|
-| **Infection** | One of the most important causes of delayed healing; prolongs inflammation and increases tissue injury |
-| **Diabetes mellitus** | Vascular disease, neuropathy, impaired leukocyte function and infection, impaired angiogenesis and collagen synthesis |
-| **Glucocorticoids** | Anti-inflammatory; inhibit TGF-β production and fibrosis, weakening the scar |
-| **Nutritional deficiency** | Protein deficiency and vitamin C deficiency inhibit collagen synthesis; (zinc deficiency also delays healing) |
-| **Ageing** | Reduced capacity to heal injured tissue |
-| **Poor perfusion** | Peripheral vascular disease, atherosclerosis, varicose veins and obstructed venous drainage reduce oxygen and nutrients |
-| **Mechanical factors** | Excessive mobility, increased local pressure or torsion pull wound edges apart (fractures, skin grafts, abdominal wounds) |
-| **Foreign bodies** | Fragments of steel, glass or bone, or suture material perpetuate chronic inflammation |
-| **Type, size and extent of injury** | Larger defects require more granulation tissue; extensive necrosis and crush injury delay healing |
-| **Tissue type** | Labile and stable tissues regenerate; permanent cells heal by scarring |
-| **Location** | Wounds over joints and areas of tension, and inflammation in body cavities, heal differently |
-| **Other** | Obesity, smoking, uraemia, radiation, cytotoxic drugs, haematoma, oedema |
-
+1. ***Infection***: clinically one of the most important causes of delayed healing; it prolongs inflammation and may increase local tissue injury.
+2. ***Diabetes***: one of the most important systemic causes of abnormal wound healing.
+3. ***Nutritional status***: protein deficiency and vitamin C deficiency inhibit collagen synthesis and retard healing.
+4. ***Glucocorticoids (steroids)***: antiinflammatory; they may weaken the scar by inhibiting TGF-beta production and diminishing fibrosis.
+5. ***Ageing***: reduces the capacity to heal injured tissue.
+6. ***Mechanical factors***: excessive mobility prevents apposition of wound edges (fractures, skin grafts); increased local pressure or torsion may pull wounds apart.
+7. ***Poor perfusion***: peripheral vascular disease, arteriosclerosis, diabetes and obstructed venous drainage (varicose veins).
+8. ***Foreign bodies***: fragments of steel, glass or bone impede healing by perpetuating chronic inflammation.
+9. ***Type and extent of the injury and the tissue involved***: complete restoration occurs only in tissues of stable and labile cells; injury to tissues of permanent cells always results in scarring and some loss of function.
+10. ***Location of the injury***: inflammation in tissue spaces (pleural, peritoneal, synovial) produces extensive exudate. It may resolve by digestion and resorption, but with larger accumulations granulation tissue grows into the exudate and a scar forms (organisation).
 
 ## Mention the sequential steps of healing by first intention (primary union).
 
-Healing by first intention occurs when a clean, uninfected surgical incision has its edges well approximated, so that there is only a minimal gap to fill, scarring is minimal and restitution occurs mainly by epithelial regeneration. The sequence is as follows.
+***Healing by first intention*** (primary union) occurs when there is minimal scarring and restitution is by epithelial regeneration. It is typically seen in well-apposed surgical incisions. It follows the steps of repair by scarring.
 
-1. **Immediately after injury (first hours).** The incision space fills with blood containing fibrin and blood cells; dehydration of the surface forms a scab that covers the wound. Haemostasis is secured by platelet plug and clot.
-2. **Within 24 hours.** Neutrophils appear at the margins of the incision and migrate toward the fibrin clot (acute inflammation). Epithelial cells at the edges begin to proliferate and migrate.
-3. **24 to 48 hours.** Epithelial cells from both edges migrate and grow along the dermis beneath the scab, fusing in the midline to form a thin continuous epithelial layer.
-4. **Day 3.** Neutrophils are replaced largely by macrophages; granulation tissue progressively invades the incision space. Collagen fibres appear at the margins but do not yet bridge the incision. Epithelial proliferation continues, thickening the epidermal layer.
-5. **Day 5.** Neovascularisation reaches its peak and granulation tissue fills the incisional space. Collagen fibrils become abundant and begin to bridge the incision. The epidermis recovers its normal thickness and differentiation, with surface keratinisation.
-6. **Week 2.** There is continued accumulation of collagen and proliferation of fibroblasts. The leukocyte infiltrate, oedema and increased vascularity substantially disappear; the long process of "blanching" begins, accomplished by increasing collagen deposition within the incisional scar and regression of vascular channels.
-7. **End of the first month.** The scar is composed of a cellular connective tissue largely devoid of inflammatory infiltrate, covered by intact epidermis. The dermal appendages destroyed in the line of incision are permanently lost. Tensile strength of the wound increases with time (about 10% of normal at the end of the first week, and reaching about 70% to 80% by about 3 months) as type III collagen is replaced by type I and the matrix is remodelled by metalloproteinases.
+1. **Haemostasis (within minutes).** A haemostatic plug of platelets forms, stops the bleeding and provides a scaffold for a stable clot.
+2. **Inflammation (6 to 48 hours).** Neutrophils and then monocytes are recruited to eliminate the offending agents and clear the debris. The inflammation resolves as these are cleared.
+3. **Cell proliferation (up to 10 days).** Epithelial cells, endothelial and other vascular cells, and fibroblasts proliferate and migrate to close the clean wound.
 
+- Epithelial cells respond to locally produced growth factors and migrate over the wound to cover it.
+- Endothelial cells proliferate to form new vessels (*angiogenesis*).
+- Fibroblasts migrate into the site and lay down collagen fibres.
+
+4. **Formation of granulation tissue.** Fibroblasts, loose connective tissue, new capillaries and macrophages fill the site of injury. Because the gap is small, only a little granulation tissue forms.
+5. **Deposition of connective tissue and remodelling.** Granulation tissue is progressively replaced by collagen, leading to a stable fibrous scar. The scar then becomes largely avascular and is remodelled by matrix metalloproteinases.
 
 ## Write a short note on keloid.
 
-**Definition.** A keloid is an exuberant scar formed by excessive deposition of collagen, which grows beyond the boundaries of the original wound, does not regress, and tends to recur after excision.
+A ***keloid*** is a raised scar in which the scar tissue grows beyond the boundaries of the original wound and does not regress.
 
-**Aetiopathogenesis.** Keloid formation seems to be an individual predisposition, with a familial tendency and higher incidence in dark-skinned individuals (African, Asian), and in young adults. It follows trauma, surgical incision, burns, vaccination, acne or ear piercing. It arises from excessive activity of fibroblasts, with overproduction of TGF-β and other growth factors, increased collagen synthesis and deficient collagen degradation (imbalance of MMPs and their inhibitors). Typical sites are the earlobes, sternum, shoulders, upper back and face.
-
-**Morphology.** Grossly it is a firm, raised, shiny, sometimes pruritic or tender scar with claw-like extensions, which may be erythematous in light skin and hyperpigmented in dark skin. Microscopically there is a thick mass of hyalinised, glassy, eosinophilic, haphazardly arranged collagen bundles in the dermis, with few fibroblasts and a flattened epidermis, and absence of adnexa.
-
-**Comparison with hypertrophic scar.**
-
-| | Hypertrophic scar | Keloid |
-|---|---|---|
-| Extent | Remains within wound boundary | Extends beyond wound |
-| Onset | Soon after injury, grows rapidly | Months after injury |
-| Regression | Regresses over months | Does not regress |
-| Recurrence after excision | Uncommon | Frequent |
-| Predisposition | Deep dermal injury | Genetic; dark skin |
-| Cells and collagen | Many myofibroblasts, thin parallel collagen | Thick, hyalinised collagen bundles |
-
-**Treatment** includes intralesional corticosteroids, pressure and silicone sheeting, cryotherapy, surgical excision combined with radiotherapy or steroids, and laser.
-
+- Excessive formation of the components of the repair process can give rise to hypertrophic scars and keloids. Both are raised scars caused by accumulation of excessive amounts of collagen.
+- **Hypertrophic scars** often grow rapidly and contain abundant myofibroblasts, but they tend to regress over several months. They generally develop after thermal or traumatic injury that involves the deep layers of the dermis.
+- Keloid formation seems to be an *individual predisposition*. Keloids may appear erythematous in light skin tones or hyperpigmented in darker skin.
+- Microscopically there is thick connective tissue deposited in the dermis.
+- Rarely, incisional scars or traumatic injuries are followed by exuberant proliferation of fibroblasts that may recur after excision. Desmoids (aggressive fibromatoses) are benign neoplasms of connective tissue.
 
 ## A 30y African-American lady has a raised scar larger than the incision, recurring after excision. What is your probable diagnosis?
 
-The probable diagnosis is **keloid**.
+The probable diagnosis is a ***keloid***.
 
-The scar is raised and extends beyond the boundaries of the original incision, which distinguishes keloid from hypertrophic scar (confined to the wound margins and tending to regress over several months). Recurrence after excision and an individual predisposition, seen especially in dark-skinned people, are characteristic. Keloids result from excessive production of collagen (an imbalance in the repair process with excess ECM deposition, with TGF-β and fibroblast overactivity). Histology shows thick, hyalinised, eosinophilic collagen bundles in the dermis. The condition is benign but cosmetically disfiguring, and may be itchy or tender. Treatment is by intralesional steroids, silicone, pressure, cryotherapy, or excision combined with adjuvant radiotherapy or steroids.
+- The scar is raised and grows *beyond the boundaries of the original wound* (larger than the incision). A hypertrophic scar stays within the wound and tends to regress over several months.
+- It does not regress and it recurs after excision.
+- Keloid formation seems to be an individual predisposition, and keloids appear hyperpigmented in darker skin.
+- Microscopically, thick connective tissue is deposited in the dermis.
 
 ## Painful, red, warm swelling (leg in a 15-year-old girl) / pain and swelling in the right inguinal region of a 10-year-old boy for 7 days — Likely diagnosis? Chemical mediators responsible for the signs (pain and swelling)?
 
@@ -2412,57 +2400,45 @@ The provisional diagnosis is ***acute inflammation***, most probably *acute puru
 
 ## Define edema.
 
-Oedema is the accumulation of excess fluid in the interstitial tissue spaces, resulting from a net movement of water from the vasculature into the extravascular space; when the fluid collects in a body cavity it is called an effusion.
+***Oedema*** is an excess of fluid in the interstitial tissue or serous cavities. It results from the movement of fluid from the vasculature into the interstitial spaces.
 
-Under normal conditions, as blood passes through capillary beds, plasma proteins are retained within the vasculature, and there is little net movement of water and electrolytes into the tissues. The tendency of vascular hydrostatic pressure to push water and salts out of capillaries into the interstitium is nearly balanced by the plasma colloid osmotic pressure, which pulls them back. There is a small net movement of fluid into the interstitium, which drains into lymphatic vessels and returns to the bloodstream through the thoracic duct, keeping the tissues "dry". Elevated hydrostatic pressure or diminished colloid osmotic pressure disrupts this balance. If the net rate of fluid efflux exceeds the capacity of lymphatic drainage, fluid accumulates.
-
-The fluid may be an **exudate** (protein-rich, resulting from increased vascular permeability in inflammation) or a **transudate** (protein-poor, from hydrostatic or osmotic imbalance without altered permeability). The causes of oedema are increased hydrostatic pressure, reduced plasma osmotic pressure, increased vascular permeability, lymphatic obstruction, and sodium and water retention.
-
-Morphologically, oedema is recognised as clearing and separation of the extracellular matrix with subtle cell swelling. It is most common in subcutaneous tissue, lungs and brain, and is often dependent (legs when standing, sacrum when recumbent). Pressure over markedly oedematous subcutaneous tissue leaves a depression (**pitting oedema**). In renal disease it appears first in loose tissues such as the eyelids (periorbital oedema). Pulmonary oedema produces lungs two to three times the normal weight with frothy, blood-tinged fluid; brain oedema produces narrowed sulci and distended gyri.
-
-Clinically, subcutaneous oedema signals possible cardiac or renal disease and impairs wound healing and clearance of infection; pulmonary oedema impairs gas exchange and predisposes to infection; brain oedema may cause herniation and death.
-
+- The fluid may be protein poor (a *transudate*) or protein rich (an *exudate*).
+- If a serosal surface is involved, fluid may accumulate within the adjacent body cavity as an **effusion**.
 
 ## Important causes of edema formation.
 
-The important causes of oedema are increased hydrostatic pressure (for example heart failure), reduced plasma osmotic pressure from hypoalbuminaemia (nephrotic syndrome, cirrhosis, malnutrition), increased vascular permeability (inflammation), lymphatic obstruction, and sodium and water retention.
-
-| Category | Examples |
+| Cause | Examples |
 |---|---|
-| **Increased hydrostatic pressure** | Impaired venous return: congestive heart failure, constrictive pericarditis, ascites (cirrhosis), venous obstruction or compression (thrombosis, external pressure, tumour mass), lower-extremity inactivity with prolonged dependency. Arteriolar dilation: heat, neurohumoral dysregulation |
-| **Reduced plasma osmotic pressure (hypoproteinaemia)** | Protein-losing glomerulopathies (nephrotic syndrome), liver cirrhosis (reduced albumin synthesis), malnutrition, protein-losing gastroenteropathy |
-| **Lymphatic obstruction** | Inflammatory (filariasis), neoplastic, postsurgical, postirradiation |
-| **Sodium and water retention** | Excessive salt intake with renal insufficiency, increased tubular reabsorption of sodium, renal hypoperfusion, increased renin-angiotensin-aldosterone secretion |
-| **Inflammation** | Acute and chronic inflammation, angiogenesis (increased permeability) |
-
+| ***Increased hydrostatic pressure*** | Impaired venous return: congestive heart failure, constrictive pericarditis, ascites (liver cirrhosis), venous thrombosis, external pressure (for example a mass), lower extremity inactivity with prolonged dependency. Arteriolar dilation: heat, neurohumoral dysregulation |
+| ***Reduced plasma osmotic pressure*** (hypoproteinaemia) | Nephrotic syndrome (albumin lost in the urine), liver cirrhosis and protein malnutrition (reduced albumin synthesis), protein-losing gastroenteropathy |
+| ***Increased vascular permeability*** | Acute and chronic inflammation, angiogenesis |
+| ***Lymphatic obstruction*** | Trauma, fibrosis, invasive tumours, infectious agents (filariasis), surgery and irradiation (for example breast cancer treatment) |
+| ***Sodium and water retention*** | Excessive salt intake with renal insufficiency, increased tubular reabsorption of sodium, renal hypoperfusion, increased renin-angiotensin-aldosterone secretion |
 
 ## What is anasarca?
 
-Anasarca is severe, generalised oedema with widespread, profound swelling of the subcutaneous tissues, often accompanied by effusions in the body cavities.
+***Anasarca*** is generalised massive oedema.
 
-It is the generalised form of oedema in which fluid accumulates diffusely in the subcutaneous tissues and all serous cavities (ascites, pleural and pericardial effusions). It occurs when the mechanisms of oedema are severe and systemic, most typically in nephrotic syndrome (massive proteinuria and hypoalbuminaemia, with secondary salt and water retention), severe congestive heart failure, advanced cirrhosis with hypoalbuminaemia, and severe protein malnutrition (kwashiorkor). The face and eyelids (loose connective tissue) swell, and the dependent parts show pitting oedema. Pulmonary oedema may be present. The pathogenesis involves a fall in plasma oncotic pressure or a rise in venous pressure, together with renal retention of sodium and water through activation of the renin-angiotensin-aldosterone axis.
-
+- It occurs when oedema is widespread, as when reduced plasma oncotic pressure and increased hydrostatic pressure act together.
+- Causes mentioned in the textbook are right-sided heart failure, kwashiorkor (hypoalbuminaemia and generalised oedema, with ascites and puffiness of the face, hands and legs) and severe haemolytic anaemia with cardiac failure.
 
 ## What is effusion?
 
-An effusion is the accumulation of excess fluid in a body cavity, such as the pleural, pericardial or peritoneal cavity; it may be an exudate or a transudate.
+An ***effusion*** is an accumulation of fluid within a body cavity, when oedema involves a serosal surface.
 
-When oedema fluid involves a serosal surface, fluid accumulates within the adjacent body cavity as an effusion. Effusions involving the pleural cavity are called hydrothorax, the pericardial cavity hydropericardium, and the peritoneal cavity hydroperitoneum or ascites. Transudative effusions are typically protein-poor, translucent and straw-coloured; an exception is chylous effusion (peritoneal effusion due to lymphatic blockage), which is milky from lipids absorbed from the gut. Exudative effusions are protein-rich and often cloudy due to white cells; if pus is present, the term empyema is used (pleural), and blood in the cavity is haemothorax or haemopericardium. Effusions occur in inflammatory and in noninflammatory conditions (heart failure, liver failure, renal disease, malnutrition). Pleural effusions may compress the lung and compromise gas exchange, and ascites is prone to bacterial seeding (spontaneous bacterial peritonitis).
-
+- Effusions in the pleural cavity are called **hydrothorax**, in the pericardial cavity **hydropericardium**, and in the peritoneal cavity **hydroperitoneum** or **ascites**.
+- *Transudative* effusions are typically protein poor, translucent and straw coloured. An exception is a *chylous* effusion from lymphatic blockage, which may be milky because of lipids absorbed from the gut.
+- *Exudative* effusions are protein rich and often cloudy because of white cells.
+- Effusions may be inflammatory or noninflammatory.
 
 ## Diseases where edema occurs due to increased hydrostatic pressure.
 
-Oedema from increased hydrostatic pressure occurs in diseases that impair venous return, chiefly congestive heart failure, constrictive pericarditis, cirrhosis with portal hypertension, deep vein thrombosis and venous obstruction.
+Increases in hydrostatic pressure are mainly caused by disorders that impair venous return.
 
-Increases in hydrostatic pressure are mainly caused by disorders that impair venous return. If the impairment is localised, for example deep vein thrombosis in a lower extremity, the oedema is confined to the affected part; conditions leading to systemic venous hypertension are associated with widespread oedema. Examples:
-
-- Congestive heart failure (right-sided failure causes systemic oedema, ascites and effusions; left-sided failure causes pulmonary oedema), and mitral stenosis.
-- Constrictive pericarditis.
-- Cirrhosis of the liver, with portal hypertension and ascites.
-- Thrombosis of veins (DVT), external compression of veins by masses, varicose veins, and superior vena cava obstruction.
-- Lower-extremity inactivity with prolonged dependency, and pregnancy (venous compression).
-- Arteriolar dilation (heat, neurohumoral dysregulation) raises capillary hydrostatic pressure.
-
+- **Localised impairment:** deep venous thrombosis of a lower extremity, with oedema confined to the affected part. External pressure, such as a mass, also causes localised oedema.
+- **Systemic increase in venous pressure** (widespread oedema): congestive heart failure, constrictive pericarditis and ascites in liver cirrhosis.
+- Lower extremity inactivity with prolonged dependency.
+- Arteriolar dilation (heat, neurohumoral dysregulation).
 
 ## State the pathophysiologic categories / classify edema.
 
@@ -2527,115 +2503,84 @@ Oedema in congestive heart failure results from increased hydrostatic pressure d
 
 ## Important diseases where transudates occur.
 
-Transudates occur in noninflammatory conditions such as congestive heart failure, cirrhosis of the liver, nephrotic syndrome and protein malnutrition.
+A ***transudate*** is a fluid with low protein content and little or no cellular material. It is formed by an osmotic or hydrostatic imbalance across the vessel wall, without increased vascular permeability.
 
-Noninflammatory oedema and effusions, which are protein-poor transudates, occur in many disorders:
-
-- **Congestive heart failure** (ascites, pleural effusion, oedema) and constrictive pericarditis, through increased hydrostatic pressure.
-- **Liver failure and cirrhosis**, through reduced albumin synthesis and portal hypertension (ascites).
-- **Renal disease**, particularly nephrotic syndrome (loss of albumin) and renal failure (salt and water retention).
-- **Malnutrition** (kwashiorkor) and protein-losing enteropathy.
-- Venous obstruction (thrombosis, compression).
-- Others: hypothyroidism, Meigs syndrome, peritoneal dialysis.
-
+- **Increased hydrostatic pressure:** congestive heart failure, constrictive pericarditis, ascites in liver cirrhosis and venous obstruction.
+- **Decreased colloid osmotic pressure** from reduced plasma albumin, either by decreased synthesis (liver disease, protein malnutrition) or increased loss (nephrotic syndrome).
+- **Sodium and water retention**, for example in renal failure.
 
 ## How are exudates and transudates formed?
 
-An exudate forms in inflammation because increased vascular permeability allows protein-rich fluid to leak from vessels, whereas a transudate forms from increased hydrostatic pressure or decreased colloid osmotic pressure without any increase in vascular permeability.
+Fluid movement across the capillary wall depends on the balance between hydrostatic and osmotic pressures. At the arterial end of a capillary bed the hydrostatic pressure is about 32 mm Hg, and at the venous end about 12 mm Hg. The mean colloid osmotic pressure of tissues is about 25 mm Hg, so the net flow of fluid is almost nil.
 
-At the arterial end of a capillary, hydrostatic pressure is about 32 mm Hg and at the venous end about 12 mm Hg; the mean colloid osmotic pressure is about 25 mm Hg, equal to the mean capillary pressure, so the net flow is nearly nil.
-
-- **Exudate:** chemical mediators and endothelial injury widen the interendothelial spaces, and plasma proteins escape, causing loss of the osmotic gradient. The fluid has high protein content and may contain cells and debris.
-- **Transudate:** fluid leaks out because of increased hydrostatic pressure (venous outflow obstruction, as in heart failure) or decreased colloid osmotic pressure (decreased protein synthesis as in liver disease, increased protein loss as in kidney disease, malnutrition). The endothelium remains intact; the fluid is an ultrafiltrate of plasma with little protein (mostly albumin) and little cellular material.
-
+- An ***exudate*** is formed in inflammation because vascular permeability increases, with increased interendothelial spaces (contraction of endothelial cells, or endothelial injury). Protein-rich fluid escapes from the vessels.
+- A ***transudate*** is formed when fluid leaks out because of *increased hydrostatic pressure* or *decreased colloid osmotic pressure*, with no increase in vascular permeability.
 
 ## Define exudate and transudate.
 
-An exudate is an extravascular fluid with a high protein concentration, which may contain cellular debris or cells and implies increased vascular permeability due to inflammation; a transudate is a low-protein, essentially cell-free ultrafiltrate of plasma that forms without increased vascular permeability.
-
-An **exudate** is an inflammatory extravascular fluid with high protein concentration (above about 3 g/dL), specific gravity above 1.020, containing cellular debris and often leukocytes and sometimes red cells; its presence implies increased permeability of small blood vessels. A special exudate is pus, rich in neutrophils, dead cell debris and often microbes. A **transudate** is a fluid with low protein content (mostly albumin; below about 3 g/dL), specific gravity below 1.012, and little or no cellular material, produced by osmotic or hydrostatic imbalance across an intact vessel wall. Both are forms of oedema when they accumulate in tissue or serous cavities.
-
+- An ***exudate*** is an extravascular fluid that has a high protein concentration and may contain cellular debris or, occasionally, some blood cells. Its presence implies the existence of an inflammatory process that has increased the permeability of small blood vessels.
+- A ***transudate*** is a fluid with low protein content (most of which is albumin) and little or no cellular material. It is essentially an ultrafiltrate of blood plasma, produced as a result of osmotic or hydrostatic imbalance across the vessel wall without an increase in vascular permeability.
+- **Pus** is a purulent exudate, rich in leukocytes (mostly neutrophils), the debris of dead cells and, in many cases, microbes.
 
 ## Differences between exudate and transudate.
 
-An exudate is protein-rich, cellular, cloudy, and arises from increased vascular permeability in inflammation; a transudate is protein-poor, nearly cell-free, clear, and arises from hydrostatic or osmotic imbalance.
-
 | Feature | Exudate | Transudate |
 |---|---|---|
-| Mechanism | Increased vascular permeability | Increased hydrostatic or decreased osmotic pressure |
-| Cause | Inflammation (infection, infarct, malignancy) | Heart failure, cirrhosis, nephrotic syndrome, hypoproteinaemia |
-| Protein content | High (above about 3 g/dL; fluid/serum ratio above 0.5) | Low (below about 3 g/dL; mostly albumin) |
-| Specific gravity | Above 1.020 | Below 1.012 |
-| Cells | Many (neutrophils, lymphocytes, red cells), debris | Few or none |
-| Appearance | Cloudy, turbid, may be bloody or purulent | Clear, translucent, straw-coloured |
-| Clotting | Often clots spontaneously (fibrinogen present) | Does not clot |
-| LDH (pleural) | Fluid/serum ratio above 0.6 | Below 0.6 |
-| Rivalta test | Positive | Negative |
-| Significance | Implies inflammatory process | Noninflammatory |
-
+| Protein content | High | Low (mostly albumin) |
+| Cells | May contain cellular debris, occasionally blood cells. Effusions are often cloudy from white cells | Little or no cellular material |
+| Mechanism | Increased permeability of small blood vessels (inflammation) | Osmotic or hydrostatic imbalance, with no increase in vascular permeability |
+| Appearance (effusions) | Cloudy | Translucent and straw coloured |
+| Examples | Inflammation, for example acute inflammation and pus | Heart failure, nephrotic syndrome, liver disease, malnutrition |
 
 ## Name the body fluids commonly examined in the laboratory.
 
-The body fluids commonly examined in the laboratory include blood, urine, cerebrospinal fluid, pleural, peritoneal (ascitic) and pericardial fluids, synovial fluid, semen and sputum.
+The textbook does not list the body fluids examined in the laboratory. It discusses the following fluids.
 
-| Fluid | Common indication |
-|---|---|
-| Cerebrospinal fluid | Meningitis, encephalitis, subarachnoid haemorrhage, demyelination, malignancy |
-| Pleural fluid | Pleural effusion: heart failure, tuberculosis, pneumonia, malignancy |
-| Peritoneal (ascitic) fluid | Ascites: cirrhosis, peritonitis, tuberculosis, malignancy |
-| Pericardial fluid | Pericardial effusion, pericarditis, tamponade |
-| Synovial fluid | Arthritis: infection, gout (crystals), rheumatoid arthritis |
-| Urine | Renal and urinary tract disease, diabetes |
-| Semen | Infertility |
-| Others | Sputum, bronchoalveolar lavage, gastric juice, bile, amniotic fluid |
-
+- **Serous cavity fluids**: pleural, pericardial and peritoneal (ascitic) fluid, collected from effusions.
+- **Blister fluid** and other serous exudates from inflammation.
+- **Pus**, a purulent exudate.
 
 ## Tests performed for examination of body fluid.
 
-Body fluid examination comprises physical, chemical, cytological and microbiological tests, to distinguish transudate from exudate and to determine the cause.
+The textbook does not list the laboratory tests for body fluids. It gives the features by which an exudate and a transudate are recognised.
 
-1. **Physical examination:** volume, colour, turbidity or clarity (clear, cloudy, bloody, purulent, chylous), odour, clotting, viscosity (synovial fluid), specific gravity.
-2. **Chemical examination:** protein (total, and fluid-to-serum ratio), glucose (low in infection, tuberculosis, rheumatoid arthritis), lactate dehydrogenase (LDH), amylase (pancreatitis, oesophageal rupture), cholesterol and triglycerides (chylous effusion), pH, adenosine deaminase (tuberculosis), and in ascites the serum-ascites albumin gradient (above 1.1 g/dL indicates portal hypertension). Light's criteria separate pleural exudate (fluid/serum protein above 0.5, fluid/serum LDH above 0.6, or pleural LDH above two-thirds the upper normal serum value) from transudate.
-3. **Cytology and cell counts:** total and differential cell counts (neutrophils in bacterial infection, lymphocytes in tuberculosis), red cells; cytology for malignant cells; crystals in synovial fluid under polarised light (urate, calcium pyrophosphate); Rivalta test.
-4. **Microbiological examination:** Gram stain, acid-fast stain, culture and sensitivity, PCR, fungal stains, India ink for cryptococcus (CSF).
-5. **Immunological and other tests:** tumour markers (CEA), rheumatoid factor, antinuclear antibody, serology.
+- **Protein content:** high in an exudate, low (mostly albumin) in a transudate.
+- **Cells:** an exudate contains cellular debris and white cells, and a transudate has little or no cellular material.
+- **Appearance:** transudative effusions are translucent and straw coloured, and exudative effusions are cloudy. A chylous effusion is milky because of lipids.
 
 ## What is hyperemia?
 
-Hyperaemia is an active process in which arteriolar dilation increases blood flow to a tissue, making it red (erythema) because of increased delivery of oxygenated blood.
+***Hyperaemia*** is an *active* process in which *arteriolar dilation* leads to increased blood flow.
 
-It is seen at sites of inflammation and in skeletal muscle during exercise; other examples are blushing, the flushing of the skin in fever or in a warm environment, and menopausal hot flushes. It is physiological in exercising muscle, the gastrointestinal tract after a meal and the skin during heat, and pathological in inflammation. The tissue is warm and red, and the blood flowing through is oxygenated, not deoxygenated; venous outflow is not impaired.
-
+- It occurs, for example, at sites of inflammation and in skeletal muscle during exercise.
+- The affected tissues turn red (***erythema***) because of the increased delivery of oxygenated blood.
+- Both hyperaemia and congestion stem from increased blood volumes within tissues.
 
 ## What is congestion?
 
-Congestion is a passive process resulting from reduced venous outflow of blood from a tissue; the tissue becomes blue-red (cyanosis) from accumulation of deoxygenated haemoglobin.
+***Congestion*** is a *passive* process resulting from reduced venous outflow of blood from a tissue.
 
-Congestion may be systemic, as in cardiac failure, or localised, as in isolated venous obstruction. Congested tissues are dusky and blue-red, cool, and oedematous because of the increased hydrostatic pressure. In long-standing chronic passive congestion, chronic hypoxia may result in ischaemic tissue injury and scarring (fibrosis). Capillary rupture can produce small haemorrhagic foci, and breakdown of extravasated red cells leaves clusters of haemosiderin-laden macrophages. Acute pulmonary congestion shows engorged alveolar capillaries, septal oedema and focal intra-alveolar haemorrhage; chronic pulmonary congestion shows thickened fibrotic septa and haemosiderin-laden macrophages ("heart failure cells"). In the liver, acute congestion distends the central vein and sinusoids, and chronic passive congestion yields the "nutmeg liver" with red-brown, slightly depressed centrilobular areas against the tan, uncongested periportal zones, with centrilobular haemorrhage and necrosis.
-
+- It can be systemic, as in cardiac failure, or localised, as in isolated venous obstruction.
+- Congested tissues have an abnormal blue-red colour (***cyanosis***) from the accumulation of deoxygenated haemoglobin.
+- In long-standing chronic passive congestion, chronic hypoxia may cause ischaemic tissue injury and scarring. Capillary rupture can produce small haemorrhagic foci, with haemosiderin-laden macrophages.
+- Increased hydrostatic pressure from congestion commonly leads to oedema.
 
 ## Differences between hyperemia and congestion.
 
-Hyperaemia is an active process of increased arterial inflow producing a red, warm tissue, whereas congestion is a passive process of reduced venous outflow producing a blue-red, cyanotic tissue.
-
 | Feature | Hyperaemia | Congestion |
 |---|---|---|
-| Nature | Active | Passive |
-| Mechanism | Arteriolar dilation, increased inflow | Impaired venous outflow |
-| Blood | Oxygenated | Deoxygenated haemoglobin accumulates |
-| Colour | Red (erythema) | Blue-red (cyanosis) |
-| Temperature | Increased | Normal or decreased |
-| Oedema | Present in inflammation, otherwise not | Common, due to increased hydrostatic pressure |
-| Consequences | Usually none | Chronic hypoxia, fibrosis, haemorrhage, haemosiderin deposition |
-| Examples | Inflammation, exercise, blushing | Heart failure, venous obstruction |
-
+| Process | **Active** | **Passive** |
+| Mechanism | Arteriolar dilation, with increased blood flow | Reduced venous outflow of blood from the tissue |
+| Colour | Red (erythema), from oxygenated blood | Blue-red (cyanosis), from deoxygenated haemoglobin |
+| Examples | Inflammation, skeletal muscle during exercise | Cardiac failure (systemic), isolated venous obstruction (localised) |
+| Consequences | Increased blood flow | Oedema, and in chronic cases ischaemic injury, scarring and small haemorrhages |
 
 ## Common examples of each.
 
-Examples of hyperaemia are the redness of acute inflammation and exercising muscle; examples of congestion are chronic passive congestion of the lung and liver in heart failure.
-
-- **Hyperaemia (physiological):** skeletal muscle during exercise, blushing, skin in a hot environment, gastrointestinal mucosa after a meal. **(Pathological):** acute inflammation (erythema), fever.
-- **Congestion (systemic):** left heart failure producing chronic pulmonary congestion with brown induration (heart failure cells) and right heart failure producing nutmeg liver, splenomegaly and peripheral oedema. **(Localised):** deep vein thrombosis causing a swollen, cyanotic limb, hepatic venous obstruction (Budd-Chiari syndrome), portal vein obstruction, strangulated hernia or torsion of testis.
+| | Examples |
+|---|---|
+| ***Hyperaemia*** | Sites of inflammation. Skeletal muscle during exercise |
+| ***Congestion*** | Systemic: cardiac failure (for example chronic pulmonary congestion with *heart failure cells*, and chronic passive hepatic congestion with *nutmeg liver*). Localised: isolated venous obstruction |
 
 ## Describe briefly the role of platelets in normal haemostasis.
 
@@ -2669,10 +2614,10 @@ With injury or activation (by inflammatory cytokines, microbes, haemodynamic str
 
 ## Define thrombus.
 
-A thrombus is a solid mass formed in the living circulation, within an intact blood vessel or the chambers of the heart, from the components of blood (platelets, fibrin, red cells and leukocytes).
+A ***thrombus*** is a blood clot that forms within an intact blood vessel or within the chambers of the heart.
 
-Haemostasis is the process by which blood clots form at sites of vascular injury; in thrombotic disorders, blood clots (thrombi) form within intact vessels or within the heart chambers. A thrombus is thus an inappropriate, pathological haemostatic plug. It is attached to the vessel wall at its point of origin, and usually shows laminations (lines of Zahn). The process is called thrombosis. A thrombus differs from a clot formed in a test tube or after death in that it forms in flowing blood during life.
-
+- ***Haemostasis*** is the process by which blood clots form at sites of vascular injury. In thrombotic disorders, clots (thrombi) form within intact blood vessels or the heart chambers.
+- The primary abnormalities that lead to thrombosis are endothelial injury, stasis or turbulent blood flow, and hypercoagulability of the blood (the *Virchow triad*).
 
 ## Virchow's triad.
 
