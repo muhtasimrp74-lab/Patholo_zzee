@@ -1424,31 +1424,26 @@ The clinical use of anti-inflammatory drugs (NSAIDs, corticosteroids, anti-TNF a
 
 ## How does increased vascular permeability / vascular leakage occur in acute inflammation?
 
-Increased vascular permeability occurs mainly in postcapillary venules, chiefly by chemically induced contraction of endothelial cells that opens interendothelial gaps, and also by direct or leukocyte-dependent endothelial injury with necrosis and detachment of endothelial cells.
+Increased permeability of the postcapillary venules, a hallmark of acute inflammation, has two main mechanisms.
 
-Several mechanisms are responsible, and all probably contribute in varying degrees to most inflammatory stimuli.
+1. ***Contraction of endothelial cells***, which opens interendothelial gaps. It is the most common mechanism of vascular leakage and is elicited by histamine, bradykinin, leukotrienes and other chemical mediators.
 
-1. **Contraction of endothelial cells with opening of interendothelial gaps.** This is the most common mechanism of leakage. It is elicited by histamine, bradykinin, leukotrienes and other chemical mediators acting on postcapillary venules. Because it occurs rapidly after exposure to the mediator and lasts only 15 to 30 minutes, it is called the **immediate transient response**. In some forms of mild injury, such as burns, ultraviolet irradiation (sunburn) and certain bacterial toxins, leakage begins after a delay of 2 to 12 hours and lasts for several hours or even days; this **delayed prolonged leakage** may be caused by endothelial contraction or mild endothelial damage. The two responses often occur along a continuum.
-2. **Endothelial injury resulting in endothelial cell necrosis and detachment.** Direct damage to the endothelium is encountered in severe injuries such as thermal burns and is induced by microbes and microbial toxins. Neutrophils adhering to the endothelium may also injure it (leukocyte-dependent injury) and thereby amplify the reaction. Leakage starts immediately and is sustained for hours until the damaged vessels are thrombosed or repaired.
-3. Additional mechanisms described in other texts are increased transcytosis of proteins through endothelial vesicular channels (promoted by VEGF) and leakage from newly formed vessels in healing tissue.
+- *Immediate transient response:* it occurs rapidly after exposure to the mediators and is usually short lived, lasting 15 to 30 minutes.
+- *Delayed prolonged leakage:* in some forms of mild injury (burns, irradiation or ultraviolet radiation, certain bacterial toxins) leakage begins after a delay of 2 to 12 hours and lasts for several hours or even days. It may be caused by contraction of endothelial cells or mild endothelial damage. Sunburn is the classic example.
 
-At different stages of a thermal burn, leakage results from chemically mediated contraction, direct injury and leukocyte-dependent injury, and the resulting fluid loss can be life-threatening.
+2. ***Endothelial injury***, resulting in endothelial cell necrosis and detachment. It is seen in severe physical injuries such as thermal burns, or is induced by microbes and microbial toxins. Leakage starts immediately and is sustained for several hours until the damaged vessels are thrombosed or repaired.
 
+- Neutrophils that adhere to the endothelium may also injure endothelial cells and amplify the reaction.
+- All these mechanisms probably contribute in varying degrees to most responses. At different stages of a thermal burn, for example, leakage results from chemically mediated endothelial contraction and from direct and leukocyte-dependent endothelial injury.
 
 ## How does edema (exudative edema) occur in acute inflammation?
 
-Exudative oedema occurs because inflammatory mediators increase the permeability of postcapillary venules, so protein-rich fluid leaves the vessels; the loss of plasma protein removes the osmotic force that holds water in the vessels, and the fluid accumulates in the interstitium faster than lymphatics can drain it.
-
-In normal tissue, fluid movement across the capillary wall is governed by Starling forces. The hydrostatic pressure of about 32 mm Hg at the arterial end of a capillary bed and 12 mm Hg at the venous end tends to push fluid out, while the colloid osmotic pressure, which is approximately 25 mm Hg, holds fluid in; the net flow is almost nil, and the small quantity that escapes is returned through the lymphatics.
-
-In acute inflammation this balance is upset in the following ways:
-
-- Vasodilation of arterioles raises the hydrostatic pressure in the capillary bed.
-- Endothelial gaps, or frank endothelial damage, permit plasma proteins, including albumin and later fibrinogen, to escape into the interstitium. The osmotic gradient across the vessel wall is therefore lost, and the increase of osmotic pressure in the interstitial fluid draws more water out of the vessels.
-- The volume of leaking fluid exceeds the capacity of lymphatic drainage, so fluid accumulates.
-
-The fluid so formed is an **exudate**: protein-rich, often cellular, with high specific gravity. It signifies an inflammatory process that has increased vascular permeability. A **transudate**, by contrast, is a low-protein ultrafiltrate that forms from hydrostatic or osmotic imbalance without a change in permeability, as in heart failure or hypoalbuminaemia. Oedema may therefore be either an exudate or a transudate; inflammatory oedema is always an exudate.
-
+- ***Oedema*** denotes an excess of fluid in the interstitial tissue or serous cavities. It can be either an exudate or a transudate.
+- Vasodilation is quickly followed by increased permeability of the microvasculature, by contraction of endothelial cells (histamine, bradykinin, leukotrienes) and by endothelial injury.
+- Protein-rich fluid escapes from the vessels into the extravascular tissue. This escape of fluid, proteins and blood cells is called **exudation**.
+- An **exudate** is an extravascular fluid with a high protein concentration that may contain cellular debris or, occasionally, some blood cells. Its presence implies an inflammatory process that has increased the permeability of small blood vessels.
+- In contrast, a **transudate** has a low protein content, mostly albumin, and little or no cellular material. It is an ultrafiltrate of plasma produced by osmotic or hydrostatic imbalance across the vessel wall, without an increase in vascular permeability.
+- Lymph flow is increased and helps to drain the oedema fluid.
 
 ## What are the vascular events in acute inflammation?
 
@@ -1468,63 +1463,45 @@ The principal mediators responsible are histamine and serotonin, bradykinin, pro
 
 ## Steps of cellular events in acute inflammation.
 
-The cellular events of acute inflammation are leukocyte recruitment (margination, rolling, adhesion and transmigration), chemotaxis to the site of injury, leukocyte activation with phagocytosis and intracellular killing of the offending agent, and finally termination of the response.
-
-After the vascular changes, leukocytes, principally neutrophils, are recruited from the blood to the extravascular site, where they eliminate the offending agent.
-
-1. **Recruitment from the vessel lumen.** In the dilated postcapillary venules with slowed flow, leukocytes **marginate** along the endothelium; they **roll** on it through weak, rapidly reversible selectin interactions; they adhere **firmly** through integrins binding to their ligands on activated endothelium; and they **transmigrate** (diapedesis) through interendothelial junctions, using CD31 (PECAM-1), and pierce the basement membrane.
-2. **Chemotaxis.** In the tissue, leukocytes migrate along a chemical gradient of chemoattractants (bacterial peptides, IL-8 and other chemokines, C5a and LTB₄) toward the focus of injury.
-3. **Activation.** Recognition of microbes and dead cells by Toll-like receptors, G protein-coupled receptors, mannose and scavenger receptors, and opsonin receptors activates the leukocytes, which produce arachidonic acid metabolites, cytokines, reactive oxygen species and lysosomal enzymes.
-4. **Phagocytosis and killing.** The agent is recognised, engulfed into a phagosome, and destroyed in the phagolysosome by reactive oxygen and nitrogen species and lysosomal enzymes; neutrophils may also extrude nuclear contents to form extracellular traps.
-5. **Termination.** The response subsides as mediators decay, neutrophils undergo apoptosis, and anti-inflammatory signals (lipoxins, TGF-β, IL-10) become active.
-
-Neutrophils predominate in the first 6 to 24 hours and are replaced by monocytes and macrophages in 24 to 48 hours.
-
+1. **Margination, rolling and adhesion** of leukocytes to the endothelium in the vessel lumen.
+2. **Transmigration (diapedesis)** across the endothelium and the vessel wall.
+3. **Chemotaxis:** migration in the tissues toward a chemotactic stimulus.
+4. **Leukocyte activation:** recognition of the offending agents by Toll-like receptors and other receptors, which activates the leukocytes.
+5. **Phagocytosis and intracellular killing** of the offending agent.
 
 ## Steps of the journey of leucocytes from the vessel lumen to the tissue space.
 
-The journey of leukocytes from lumen to tissue is a multistep process: margination, rolling (selectins), firm adhesion (integrins), transmigration or diapedesis through the endothelium (PECAM-1/CD31), penetration of the basement membrane, and chemotaxis in the tissue.
+1. ***In the vessel lumen: margination, rolling and adhesion to endothelium***
+- Blood flow slows (stasis) in the dilated postcapillary venules, and more white cells assume a peripheral position along the endothelium. This is **margination**.
+- **Rolling** is mediated by **selectins**: L-selectin on leukocytes, E-selectin on endothelium, and P-selectin on platelets and endothelium. These are low-affinity interactions with a fast off-rate, so the leukocytes bind, detach and bind again.
+- TNF and IL-1 induce endothelial expression of E-selectin within 1 to 2 hours. Histamine and thrombin cause P-selectin to move to the cell surface from Weibel-Palade bodies (the granules of endothelial cells).
+- **Firm adhesion** is mediated by **integrins** on leukocytes (LFA-1, MAC-1, VLA-4) binding ICAM-1 and VCAM-1 on endothelium. Chemokines activate the rolling leukocytes and convert the integrins to a high-affinity state.
 
-The process is controlled by adhesion molecules and cytokines, and has three phases: events in the lumen, migration across the vessel wall, and migration in the tissue.
+2. ***Migration across the endothelium and vessel wall***
+- Transmigration, or diapedesis, occurs mainly in postcapillary venules, through interendothelial gaps, toward the chemokines produced at the site of injury.
+- CD31 (PECAM-1), present in the intercellular junctions, is involved.
+- Leukocytes pierce the basement membrane, probably by secreting collagenases, and enter the extravascular space.
 
-1. **Margination.** In normal venules, red cells are confined to a central axial column, which displaces leukocytes toward the wall. With dilation and stasis, more leukocytes assume a peripheral position.
-2. **Rolling.** Tissue macrophages, mast cells and endothelial cells that encounter microbes secrete TNF, IL-1 and chemokines. Within 1 to 2 hours endothelium begins to express E-selectin and the ligands for L-selectin, and histamine and thrombin cause P-selectin to move from Weibel-Palade bodies to the cell surface. Leukocytes carry L-selectin and ligands (sialyl-Lewis X) for E- and P-selectin. These low-affinity, fast-off-rate interactions are broken by the flowing blood, so the cells bind, detach and bind again, rolling along the endothelium.
-3. **Firm adhesion.** TNF and IL-1 induce endothelial expression of ICAM-1 and VCAM-1. Chemokines displayed on endothelial proteoglycans activate the rolling leukocytes and convert the integrins LFA-1 and MAC-1 (β2) and VLA-4 (β1) to a high-affinity state. Firm binding to ICAM-1 and VCAM-1 stops the cell, which then spreads on the surface.
-4. **Transmigration (diapedesis).** Chemokines stimulate the adherent cells to pass through interendothelial gaps, mainly in postcapillary venules, using CD31 (PECAM-1) at the junctions.
-5. **Penetration of the basement membrane.** Leukocytes cross the basement membrane probably by secreting collagenases, which is then repaired.
-6. **Chemotaxis.** The cells move to the focus of injury along the chemoattractant gradient.
-
+3. ***Migration in the tissues toward a chemotactic stimulus***
+- Leukocytes move along the chemotactic gradient created by chemokines and other chemoattractants and accumulate at the extravascular site.
 
 ## What is chemotaxis?
 
-Chemotaxis is the movement of leukocytes in the tissues toward the site of injury after they exit the circulation; it is defined as locomotion along a chemical gradient, mediated by chemoattractants that bind specific G protein-coupled receptors on the leukocyte surface.
-
-After leaving the circulation, leukocytes move in tissue toward the injury by chemotaxis. Both exogenous and endogenous substances act as chemoattractants:
-
-- **Exogenous:** bacterial products, including peptides with N-formylmethionine terminal amino acids, and some lipids.
-- **Endogenous:** (1) cytokines of the chemokine family, such as IL-8 (CXCL8); (2) complement components, particularly C5a; and (3) arachidonic acid metabolites, mainly leukotriene B₄.
-
-All of these bind to specific seven-transmembrane G protein-coupled receptors on leukocytes. Signals from the receptors activate second messengers that induce polymerisation of actin at the leading edge of the cell and localisation of myosin filaments at the back. The leading edge extends filopodia which pull the back of the cell forward, so the leukocyte crawls toward the highest concentration of the attractant. The chemoattractants also increase the avidity of integrins and activate the leukocyte.
-
-The nature of the infiltrate depends on the stimulus and on its age: neutrophils predominate during the first 6 to 24 hours, being more numerous, responding faster to chemokines and attaching more firmly to P- and E-selectin; monocytes follow in 24 to 48 hours; eosinophils respond to eotaxin in allergy and helminthic infection; and lymphocytes may be first in viral infection.
-
+***Chemotaxis*** is locomotion along a chemical gradient.
 
 ## Name the chemotactic substances.
 
-Chemotactic substances include exogenous bacterial products such as N-formylmethionine peptides, and endogenous chemoattractants: chemokines such as IL-8, complement fragment C5a, and leukotriene B₄.
+**Exogenous**
 
-| Group | Examples | Cells attracted |
-|---|---|---|
-| Bacterial products (exogenous) | N-formylmethionyl peptides, some lipids | Neutrophils, monocytes |
-| Chemokines | IL-8 (CXCL8) | Neutrophils |
-| | MCP-1 (CCL2), MIP-1α (CCL3) | Monocytes, lymphocytes, basophils, eosinophils |
-| | Eotaxin (CCL11) | Eosinophils (selective) |
-| | Lymphotactin (XCL1), fractalkine (CX3CL1) | Lymphocytes; monocytes and T cells |
-| Complement | C5a (also C3a) | Neutrophils, monocytes, eosinophils, basophils |
-| Arachidonic acid metabolites | LTB₄, 5-HETE | Neutrophils |
-| Cytokines | TNF, IL-1 (indirectly through chemokines), IL-17 | Neutrophils and monocytes |
-| Others | PAF | Leukocytes |
+- Bacterial products, including peptides with N-formylmethionine terminal amino acids and some lipids.
 
+**Endogenous**
+
+- **Cytokines**, particularly those of the chemokine family, for example IL-8.
+- **Complement components**, particularly C5a.
+- **Arachidonic acid metabolites**, mainly leukotriene B4.
+
+All these agents bind to specific seven-transmembrane G protein-coupled receptors on the surface of leukocytes.
 
 ## What are the cellular events of acute inflammation?
 
@@ -1563,60 +1540,30 @@ Genetic deficiencies in leukocyte adhesion molecules result in increased suscept
 
 ## What are phagocytes?
 
-Phagocytes are cells capable of ingesting and destroying microbes, dead cells and foreign particles; the two professional phagocytes are neutrophils and macrophages.
-
-Neutrophils (polymorphonuclear leukocytes, or "microphages") are the first phagocytes recruited to acute inflammation and are short-lived. Macrophages, derived from circulating monocytes or from embryonic yolk-sac and foetal liver precursors, are the long-lived "macrophages" of the mononuclear phagocyte system. The two cell types share phagocytosis, migration through vessels and chemotaxis, but differ in several respects:
-
-| Feature | Neutrophils | Macrophages |
-|---|---|---|
-| Origin | Bone marrow haematopoietic stem cells | Bone marrow (inflammatory); yolk sac or foetal liver (many tissue-resident cells) |
-| Life span in tissue | Several days | Days to weeks (recruited); years (resident) |
-| Responses | Rapid, short-lived, mainly degranulation and enzymatic activity | Prolonged, slower, usually dependent on new gene transcription |
-| Reactive oxygen species | Rapid respiratory burst | Less prominent |
-| Nitric oxide | Low or none | Produced by iNOS |
-| Degranulation, lysosomal enzymes | Major response | Less |
-| Cytokine production | Low | Major functional activity |
-| NET formation | Yes | No |
-
-Eosinophils and dendritic cells have limited phagocytic functions. Phagocytes recognise their targets using mannose receptors, scavenger receptors, integrins and receptors for opsonins.
-
+- The two major phagocytes are ***neutrophils*** and ***macrophages***.
+- They ingest and destroy bacteria and other microbes, as well as necrotic tissue and foreign substances.
+- Phagocytosis and intracellular killing are the functional responses most important for destruction of microbes and other offenders.
 
 ## Organs where cells of the MPS are found.
 
-Cells of the mononuclear phagocyte system are found in the liver as Kupffer cells, in the spleen and lymph nodes as sinus histiocytes, in the central nervous system as microglia, in the lungs as alveolar macrophages, and diffusely in connective tissues.
+- Connective tissues: macrophages scattered diffusely.
+- Liver: ***Kupffer cells***.
+- Spleen and lymph nodes: ***sinus histiocytes***.
+- Central nervous system: ***microglia***.
+- Lungs: ***alveolar macrophages***.
+- Skin and intestinal tract: bone marrow-derived macrophages arise from blood monocytes.
 
-The mononuclear phagocyte system, an older (and inaccurate) name for which is the reticuloendothelial system, consists of monocytes and tissue macrophages. Macrophages are diffusely scattered in most connective tissue and are present in specific locations in organs:
-
-| Organ or site | Name of the cell |
-|---|---|
-| Liver | Kupffer cells |
-| Spleen and lymph nodes | Sinus histiocytes (sinusoidal macrophages) |
-| Central nervous system | Microglia |
-| Lungs | Alveolar macrophages |
-| Connective tissue | Histiocytes |
-| Bone | Osteoclasts |
-| Kidney | Mesangial cells |
-| Serosal cavities and synovium | Peritoneal and pleural macrophages; type A synoviocytes |
-| Skin and intestine | Macrophages of dermis and lamina propria (derived from monocytes) |
-
-Microglia, Kupffer cells and alveolar macrophages arise from yolk-sac or foetal liver progenitors early in embryogenesis and persist throughout life as stable populations; macrophages at inflammatory sites generally derive from blood monocytes. The half-life of blood monocytes is about 1 day, while tissue macrophages may live for months or years.
-
+Together these cells comprise the **mononuclear phagocyte system**, also known by the older and inaccurate name reticuloendothelial system.
 
 ## Define phagocytosis.
 
-Phagocytosis is the process by which phagocytic cells, mainly neutrophils and macrophages, recognise, engulf and destroy microbes, dead cells and other particulate material by enclosing them in a membrane-bound vesicle (phagosome) that fuses with lysosomes.
-
-Phagocytosis was discovered by Elie Metchnikoff in the 1880s, who observed the ingestion of rose thorns by amoebocytes of starfish larvae and of bacteria by mammalian leukocytes. It is, together with intracellular killing, the most important functional response of activated leukocytes for destroying microbes and removing necrotic tissue. It involves three sequential steps: (1) recognition and attachment of the particle to the leukocyte, (2) engulfment with formation of a phagocytic vacuole, and (3) killing of the microbe and degradation of the ingested material in the phagolysosome. The efficiency of the process is greatly enhanced by opsonins (IgG, C3b and plasma lectins) for which phagocytes express high-affinity receptors. Killing depends on reactive oxygen species, reactive nitrogen species and lysosomal enzymes, all of which are sequestered within the phagolysosome to protect the phagocyte itself.
-
+***Phagocytosis*** is the process by which leukocytes eliminate microbes and dead cells. The particle is recognised and attached, engulfed into a phagocytic vacuole (phagosome), and then killed and degraded in the phagolysosome.
 
 ## Three sequential steps of phagocytosis.
 
-The three sequential steps of phagocytosis are recognition and attachment of the particle to the phagocyte, engulfment with formation of a phagocytic vacuole, and killing and degradation of the ingested material.
-
-1. **Recognition and attachment.** Phagocytes bind particles through receptors: the mannose receptor (a lectin binding terminal mannose and fucose of microbial glycoproteins and glycolipids, but not host molecules, which end in sialic acid), scavenger receptors, and macrophage integrins such as MAC-1. Binding is greatly enhanced by opsonins, which are IgG antibodies, the complement fragment C3b (and iC3b), and plasma lectins such as mannose-binding lectin and collectins, recognised by Fc receptors, complement receptors and lectin receptors.
-2. **Engulfment.** After binding, cytoplasmic extensions flow around the particle and the plasma membrane pinches off to form an intracellular vesicle, the phagosome. This involves actin polymerisation and membrane remodelling. The phagosome fuses with a lysosomal granule to form a phagolysosome, into which the lysosomal contents are discharged.
-3. **Killing and degradation.** Within the phagolysosome, microbes are destroyed by reactive oxygen species, reactive nitrogen species and lysosomal enzymes.
-
+1. **Recognition and attachment** of the particle to be ingested by the leukocyte. Mannose receptors, scavenger receptors and receptors for opsonins (IgG antibodies, the C3b breakdown product of complement, and certain plasma lectins) enable phagocytes to bind microbes.
+2. **Engulfment**, with subsequent formation of a phagocytic vacuole. Extensions of the cytoplasm flow around the particle and the plasma membrane pinches off to form a phagosome, which then fuses with a lysosomal granule to form a phagolysosome.
+3. **Killing of the microbe and degradation** of the ingested material.
 
 ## How is phagocytosed material degraded?
 
