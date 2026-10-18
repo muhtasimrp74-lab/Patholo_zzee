@@ -311,3 +311,17 @@ Sources: the site textbook (Chapter 13; Chapter 14 for the definition and classi
 - build.py run twice: index.html byte-identical (md5 387f8c77dd947b9522097424cb491ff6).
 - VERSION in sw.js bumped from v145 to v146; build.py, gen_manifests.py and build.py run again.
 - tools/tests/test_site.py: 34 tests, all passed.
+
+### Session 10, batch 1 (indices 0 to 17)
+Questions: hypersplenism criteria, paraproteinaemia, causes of paraproteinaemia, myeloma, pathophysiology, laboratory diagnosis and diagnosis of myeloma, Bence Jones protein, immunoproliferative disorders, Waldenström, lymphadenopathy (define, causes), lymphadenitis (causes, morphology), classification of lymphoma, Hodgkin vs non-Hodgkin, Reed-Sternberg cells, classification of Hodgkin lymphoma, diagnosis of lymphoma, myeloma vignettes.
+
+| Question | Source | URL |
+|---|---|---|
+| What do you mean by lymphadenopathy? / Common causes of lymphadenopathy. | StatPearls, Lymphadenopathy; StatPearls, Adenopathy (generalized, localised, causes); Merck Manual, Lymphadenopathy | https://www.ncbi.nlm.nih.gov/books/NBK513250 ; https://www.ncbi.nlm.nih.gov/books/NBK558918/ ; https://www.merckmanuals.com/en-ca/professional/cardiovascular-disorders/lymphatic-disorders/lymphadenopathy |
+
+- Textbook gives no definition of lymphadenopathy; the two patterns are taken from the StatPearls and Merck pages above.
+- Table 13.7 (Hodgkin vs non-Hodgkin) is truncated in the source file (four rows); extra rows come from the Hodgkin lymphoma and general lymphoid neoplasm text.
+- Diagnostic criteria of hypersplenism: correction after splenectomy and isotope sequestration studies left out, as the textbook does not give them.
+- Bence Jones: heat test and other urine methods left out (not in textbook); the eponym is not explained in the textbook.
+- Myeloma vignette (index 45): the textbook does not mention ESR; it states that high M protein makes red cells form rouleaux, which is what the answer uses.
+- Lymphadenopathy causes: the StatPearls list was only partly readable; items beyond it come from the textbook lymphadenitis text.

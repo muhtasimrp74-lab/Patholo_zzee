@@ -6444,59 +6444,44 @@ Leukaemoid reaction is a reactive increase in white cell count with immature for
 
 ## What do you mean by lymphadenopathy?
 
-Lymphadenopathy means enlargement of lymph nodes, whether localised to one region or generalised, produced by reactive hyperplasia, infection, infiltration by neoplastic cells, or accumulation of storage material.
+Lymphadenopathy is enlargement of lymph nodes. It occurs in 2 patterns:
 
-Lymph nodes are discrete encapsulated structures with separate B-cell zones (follicles) and T-cell zones (paracortex), richly invested with phagocytes and antigen-presenting cells. After antigenic stimulation the primary follicles enlarge and develop pale-staining germinal centres, and the paracortical T-cell zones may undergo hyperplasia; consequently, adult lymph nodes are almost never truly "resting," and one must distinguish changes due to past exposure from those of present disease. A node is generally regarded as abnormally enlarged when it exceeds about 1 cm in diameter.
-
-The causes of nodal enlargement fall into four mechanistic groups: (1) **reactive hyperplasia** of lymphoid elements in response to antigen (follicular, paracortical or sinus patterns); (2) **lymphadenitis**, with infiltration by neutrophils or granulomatous inflammation in infections; (3) **neoplastic infiltration**, by primary lymphoid neoplasms (lymphomas, leukaemias) or by metastatic carcinoma and other cancers; and (4) **storage diseases** and histiocytic proliferations. Lymphadenopathy is **localised** when it involves a single region draining an area of infection or tumour, and **generalised** when it involves two or more noncontiguous regions, which suggests a systemic disorder. Features that favour malignancy are a hard, painless, non-tender, matted or fixed node, progressive enlargement, supraclavicular location, and size above 2 cm; tender, soft, mobile nodes with overlying warmth usually indicate acute inflammation.
-
+- **Localised:** nodes in a contiguous grouping, in one body area.
+- **Generalised:** nodes in 2 or more non-contiguous regions.
 
 ## Common causes of lymphadenopathy.
 
-Common causes of lymphadenopathy are infections, which are the most frequent, followed by reactive and immunologic disorders, lymphoid and other neoplasms, and drug reactions.
-
-**Infections.** Acute and chronic nonspecific lymphadenitis arising from local bacterial infection (in the neck from the teeth, tonsils and throat; in the axilla and groin from the extremities; in the mesentery from appendicitis and other gut inflammation); viral infections (infectious mononucleosis, cytomegalovirus, HIV, rubella, measles, adenovirus), particularly in children; tuberculosis; syphilis; brucellosis; cat-scratch disease; toxoplasmosis; fungal infections.
-
-**Immunologic and inflammatory disorders.** Rheumatoid arthritis (follicular hyperplasia), systemic lupus erythematosus, sarcoidosis, serum sickness and drug reactions (phenytoin, allopurinol).
-
-**Neoplasms.** Hodgkin and non-Hodgkin lymphomas; acute and chronic lymphoid leukaemias; metastatic carcinoma and melanoma (nodes draining the primary cancer, e.g., axillary nodes in breast cancer, in which sinus histiocytosis may also be prominent); histiocytic neoplasms.
-
-**Others.** Lipid storage disorders, amyloidosis, hyperthyroidism, Castleman disease and dermatopathic lymphadenopathy.
-
-The pattern of involvement is a useful clue: regional nodes enlarged by the infection or tumour in their drainage field; generalised enlargement in systemic infection, lymphoma, leukaemia or autoimmune disease.
-
+- **Infections:** bacterial and viral infections of the drained area; tuberculosis and *Mycobacterium avium intracellulare*; fungal (coccidioidomycosis, histoplasmosis, *Candida*); parasitic (toxoplasmosis, Chagas disease); cat-scratch disease.
+- **Reactive hyperplasia:** acute and chronic nonspecific lymphadenitis; follicular hyperplasia in rheumatoid arthritis, toxoplasmosis and early HIV infection; paracortical hyperplasia in infectious mononucleosis.
+- **Autoimmune disease.**
+- **Malignancy:** lymphoma, leukaemia, metastatic cancer and head and neck cancers.
 
 ## Common causes of lymphadenitis.
 
-Lymphadenitis is inflammation of lymph nodes and is classified as acute nonspecific, chronic nonspecific, and specific (granulomatous or distinctive) lymphadenitis according to the cause and the histologic pattern.
+**Acute nonspecific lymphadenitis**
 
-**Acute nonspecific lymphadenitis** results from microbes or their products draining into the node. In the cervical region the source is most often infection of the teeth or tonsils; in the axillary and inguinal regions, infections of the extremities. Mesenteric lymphadenitis occurs in acute appendicitis, in self-limiting viral infections, and with Yersinia and other enteric pathogens. Systemic viral infections (especially in children) and bacteraemia may produce generalised acute lymphadenopathy. Pyogenic organisms such as staphylococci and streptococci are the usual agents.
+- Cervical nodes: infections of the teeth or tonsils.
+- Axillary or inguinal nodes: infections of the extremities.
+- Mesenteric nodes: acute appendicitis and other inflammatory conditions of the gut, including self-limiting viral infections.
+- Generalised: systemic viral infections, particularly in children, and bacteraemia.
 
-**Chronic nonspecific lymphadenitis** results from a wide variety of chronic immunologic stimuli. It manifests as follicular hyperplasia (humoral immune responses: rheumatoid arthritis, toxoplasmosis, early HIV infection), paracortical hyperplasia (T-cell responses: viral infections such as infectious mononucleosis, vaccinations, drug reactions such as phenytoin), and sinus histiocytosis (reactive response in nodes draining cancers, e.g., carcinoma of the breast). It is particularly common in inguinal and axillary nodes.
+**Chronic nonspecific lymphadenitis**
 
-**Specific lymphadenitis** has a distinctive morphology:
-
-- Granulomatous: tuberculosis (caseating granulomas), sarcoidosis (non-caseating), leprosy, fungal infections (histoplasmosis), brucellosis, tularaemia.
-- Necrotising and suppurative with stellate abscesses: cat-scratch disease (Bartonella henselae), lymphogranuloma venereum.
-- Others: toxoplasmic lymphadenitis (epithelioid histiocytes in clusters near germinal centres with monocytoid B-cell hyperplasia), infectious mononucleosis, syphilis (plasma cell-rich with endarteritis), Kikuchi–Fujimoto necrotising lymphadenitis, filarial lymphadenitis, and kala-azar.
-
+- Many chronic immunological stimuli; common in inguinal and axillary nodes, which are stimulated by immune reactions to trivial injuries and infections of the extremities.
+- Follicular hyperplasia: rheumatoid arthritis, toxoplasmosis and early HIV infection.
+- Paracortical hyperplasia: acute viral infections, for example infectious mononucleosis.
+- Sinus histiocytosis: nodes draining cancers, for example carcinoma of the breast.
 
 ## Morphological features of chronic non-specific lymphadenitis / reactive hyperplasia.
 
-Chronic nonspecific lymphadenitis shows one or more patterns within the same node—follicular hyperplasia, paracortical hyperplasia and sinus histiocytosis—and the nodes are enlarged but usually painless.
+Several patterns are often seen within the same node. The nodes are nontender because enlargement is slow and there is no acute inflammation.
 
-A wide variety of chronic immunologic stimuli produce chronic nonspecific lymphadenitis, and several different patterns of change are seen, often in the same node.
-
-**Follicular hyperplasia.** It is caused by stimuli that activate humoral immune responses (rheumatoid arthritis, toxoplasmosis, early HIV infection). The node architecture is preserved and the cortex shows large, oblong secondary follicles with germinal centres, which are surrounded by a collar of small resting naive B cells, the **mantle zone**. Germinal centres are polarised into a **dark zone** of proliferating blast-like B cells (centroblasts) and a **light zone** of cells with cleaved nuclear contours (centrocytes). Scattered among them is an inconspicuous network of follicular dendritic cells and **tingible-body macrophages** containing nuclear debris of apoptotic B cells that failed to produce high-affinity antibody. Mitotic figures are frequent.
-
-**Paracortical hyperplasia.** It is caused by stimuli that trigger T-cell–mediated responses, such as acute viral infections (infectious mononucleosis). The T-cell zones are expanded and contain **immunoblasts**—activated T cells three to four times the size of resting lymphocytes with round nuclei, open chromatin, prominent nucleoli and pale cytoplasm. In exuberant reactions the expanded zones encroach on, or efface, the follicles, and special studies may be needed to exclude lymphoma. Hypertrophy of the sinusoidal and vascular endothelium, with infiltrating macrophages and eosinophils, is common.
-
-**Sinus histiocytosis (reticular hyperplasia).** There is an increase in the number and size of the endothelial cells lining the lymphatic sinuses and an increase in intrasinusoidal macrophages, which distend and distort the sinuses; it is particularly prominent in nodes draining cancers such as carcinoma of the breast.
-
-**Features favouring a reactive over a neoplastic follicular proliferation:** preservation of nodal architecture, including the interfollicular T-cell zones and the sinusoids; marked variation in the size and shape of the follicles; and frequent mitoses, phagocytic macrophages and recognizable light and dark zones—all of which are usually absent from neoplastic follicles of follicular lymphoma.
-
-**Clinical behaviour.** Because enlargement occurs slowly and acute inflammatory tissue damage is absent, nodes in chronic reactions are typically non-tender. Chronic lymphadenitis is common in the inguinal and axillary nodes, which drain large areas that are frequently stimulated by trivial injuries and infections of the extremities.
-
+1. **Follicular hyperplasia:** large oblong germinal centres (secondary follicles) surrounded by a collar of small resting naive B cells, the **mantle zone**.
+   - Germinal centres have a **dark zone** of proliferating blast-like B cells (centroblasts) and a **light zone** of B cells with irregular or cleaved nuclei (centrocytes).
+   - Follicular dendritic cells and **tingible body macrophages** containing nuclear debris of apoptotic B cells lie among them.
+   - Features favouring reactive over neoplastic follicles: preserved node architecture, including interfollicular T-cell zones and sinusoids; marked variation in follicle shape and size; frequent mitotic figures, phagocytic macrophages, and recognisable light and dark zones.
+2. **Paracortical hyperplasia:** expanded T-cell zones with immunoblasts (three to four times the size of resting lymphocytes, with round nuclei, open chromatin and prominent nucleoli); hypertrophy of sinusoidal and vascular endothelial cells, sometimes with macrophages and eosinophils. Exuberant reactions may efface the B-cell follicles.
+3. **Sinus histiocytosis (reticular hyperplasia):** increased number and size of endothelial cells lining the sinuses, and increased intrasinusoidal macrophages that expand and distort the sinuses.
 
 ## Write down the causes of generalized lymphadenopathy.
 
@@ -6992,88 +6977,63 @@ Chronic lymphocytic leukaemia is diagnosed by a sustained absolute lymphocytosis
 
 ## Classify lymphoma.
 
-Lymphomas are classified into Hodgkin and non-Hodgkin lymphoma; the non-Hodgkin lymphomas are classified by the WHO according to the cell of origin and the stage of differentiation as B-cell, T-cell and NK-cell neoplasms.
-
-Within the large group of lymphomas, Hodgkin lymphoma is segregated from the other forms, which constitute the non-Hodgkin lymphomas (NHLs), because Hodgkin lymphoma has distinctive pathologic features and is treated in a unique fashion. The current WHO scheme uses morphologic, immunophenotypic, genotypic and clinical features to sort the lymphoid neoplasms into five categories according to the cell of origin: precursor B-cell neoplasms, peripheral B-cell neoplasms, precursor T-cell neoplasms, peripheral T-cell and NK-cell neoplasms, and Hodgkin lymphomas. The scheme is summarised below.
-
-| Category | Entities |
+| Group | Entities |
 |---|---|
-| **I. Precursor B-cell neoplasms** | B-cell acute lymphoblastic leukaemia/lymphoma |
-| **II. Peripheral B-cell neoplasms** | CLL/SLL; splenic and extranodal marginal zone lymphoma; mantle cell lymphoma; follicular lymphoma; diffuse large B-cell lymphoma; Burkitt lymphoma; lymphoplasmacytic lymphoma; plasma cell neoplasms |
-| **III. Precursor T-cell neoplasms** | T-cell acute lymphoblastic leukaemia/lymphoma |
-| **IV. Peripheral T-cell and NK-cell neoplasms** | T-cell prolymphocytic leukaemia, T-large granular lymphocytic leukaemia, mycosis fungoides, Sézary syndrome, peripheral T-cell lymphoma NOS, anaplastic large-cell lymphoma, nodal T-follicular helper cell lymphoma, enteropathy-associated T-cell lymphoma, subcutaneous panniculitis-like T-cell lymphoma, hepatosplenic T-cell lymphoma, adult T-cell leukaemia/lymphoma, extranodal NK/T-cell lymphoma, NK-cell leukaemia |
-| **V. Hodgkin lymphoma** | Classic: nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted; nodular lymphocyte predominant |
+| **Precursor B-cell neoplasms** | B-cell acute lymphoblastic leukaemia/lymphoma |
+| **Peripheral B-cell neoplasms** | Chronic lymphocytic leukaemia/small lymphocytic lymphoma; splenic B-cell lymphomas and leukaemias; marginal zone lymphoma; mantle cell lymphoma; follicular lymphoma; diffuse large B-cell lymphoma; Burkitt lymphoma; lymphoplasmacytic lymphoma; plasma cell neoplasms |
+| **Precursor T-cell neoplasms** | T-cell acute lymphoblastic leukaemia/lymphoma |
+| **Peripheral T-cell and NK-cell neoplasms** | T-cell prolymphocytic leukaemia; T-large granular lymphocytic leukaemia; mycosis fungoides; Sézary syndrome; peripheral T-cell lymphoma, not otherwise specified; anaplastic large-cell lymphoma; nodal T-follicular helper cell lymphoma; enteropathy-associated T-cell lymphoma; subcutaneous panniculitis-like T-cell lymphoma; hepatosplenic T-cell lymphoma; adult T-cell leukaemia/lymphoma; extranodal NK/T-cell lymphoma; NK-cell leukaemia |
+| **Hodgkin lymphoma** | Classic: nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted; nodular lymphocyte predominant |
 
-The terms leukaemia and lymphoma merely reflect the usual tissue distribution at presentation; many entities called lymphoma may present as leukaemia, and vice versa. Approximately two-thirds of NHLs and virtually all Hodgkin lymphomas present as enlarged, nontender lymph nodes. Clinically, NHLs are also grouped as indolent, moderately aggressive or highly aggressive, which determines treatment.
-
+Lymphomas other than Hodgkin lymphoma are the non-Hodgkin lymphomas.
 
 ## Differences between Hodgkin and non-Hodgkin lymphoma.
 
-Hodgkin lymphoma is characterised by Reed-Sternberg cells in a reactive background, localised axial nodal origin and contiguous orderly spread, while non-Hodgkin lymphoma shows a monotonous population of neoplastic lymphoid cells, multiple peripheral nodes, frequent extranodal involvement and noncontiguous spread.
-
 | Feature | Hodgkin lymphoma | Non-Hodgkin lymphoma |
 |---|---|---|
-| **Site of origin** | More often localised to a single axial group of nodes (cervical, mediastinal, para-aortic) | More frequent involvement of multiple peripheral nodes |
-| **Spread** | Orderly, by contiguity (nodes, then spleen, liver, marrow) | Noncontiguous and unpredictable, widely disseminated early |
-| **Mesenteric nodes and Waldeyer ring** | Rarely involved | Commonly involved |
-| **Extranodal presentation** | Rare | Common (about one-third) |
-| **Neoplastic cells** | Reed-Sternberg cells and variants, a minority (<10%) of cells | The bulk of the tumour is neoplastic B, T or NK cells (monomorphic) |
-| **Background** | Abundant reactive lymphocytes, eosinophils, plasma cells, macrophages | Little or no reactive background |
-| **Immunophenotype** | CD15⁺, CD30⁺, PAX5 (weak), CD45⁻ (classic); L&H cells CD20⁺ | Lineage-specific markers, CD45⁺; B-cell (85–90%) or T-cell |
-| **Age** | Bimodal: young adults and over 55 years | All ages, incidence rises with age (children: Burkitt, lymphoblastic) |
-| **Systemic (B) symptoms** | Common in advanced disease and mixed cellularity and lymphocyte depletion | Variable, more in aggressive types |
-| **Staging** | Of great value for therapy and prognosis | Less useful, since disseminated early |
-| **Prognosis** | Curable in most; stage I–IIA cure about 90% | Varies from indolent to highly aggressive |
-
-In Hodgkin lymphoma, spread follows a stereotyped sequence (nodal disease first, then spleen, liver and finally marrow); staging is therefore most useful for guiding Hodgkin lymphoma therapy, whereas non-Hodgkin lymphoma disseminates widely and unpredictably early in its course.
-
+| Nodal involvement | More often localised to a single axial group of nodes (cervical, mediastinal, para-aortic) | More frequent involvement of multiple peripheral nodes |
+| Spread | Orderly, by contiguity | Noncontiguous; disseminates widely and unpredictably early |
+| Mesenteric nodes and Waldeyer ring | Rarely involved | Commonly involved |
+| Extranodal presentation | Rare | Common |
+| Presentation | Virtually all present as enlarged nontender nodes | Two-thirds present as enlarged nontender nodes |
+| Staging | Most useful in guiding therapy | Less useful in guiding therapy |
+| Distinctive cell | **Reed-Sternberg cells**, with reactive cells making up more than 90% of the tumour | No Reed-Sternberg cells; neoplastic lymphoid cells, 85% to 90% of lymphoid neoplasms being of B-cell origin |
 
 ## What do you know about Reed-Sternberg cells?
 
-Reed-Sternberg cells are large neoplastic B-cell–derived cells with bilobed or multilobed nuclei and prominent inclusion-like nucleoli that are the diagnostic hallmark of Hodgkin lymphoma; they are CD15 and CD30 positive and are surrounded by a dense reactive infiltrate.
-
-Reed-Sternberg cells are the neoplastic element of Hodgkin lymphoma; their identification, in the proper cellular background, is essential for the diagnosis. The cell is large (45 µm), with abundant cytoplasm, and has a multilobed or two (mirror-image) nuclei, each with a large inclusion-like nucleolus about the size of a small lymphocyte (5–7 µm), giving the "owl-eye" appearance. Variants are the mononuclear (Hodgkin) cell, the lacunar cell of nodular sclerosis, the lymphohistiocytic ("popcorn") cell of nodular lymphocyte predominant type, and the mummified cell.
-
-They derive from germinal centre or post–germinal centre B cells (clonal IGH rearrangement and somatic hypermutation) but lose most B-cell gene expression. They are aneuploid with REL amplification (2p) and gains of the genes for PD-L1 and PD-L2 on 9p; NF-κB is constitutively activated through EBV latent membrane protein 1 (LMP-1) in EBV-positive cases (30–40% overall) or through mutations in IκB and TNFAIP3 in EBV-negative cases. They secrete cytokines (IL-5, IL-10, M-CSF) and chemokines such as eotaxin, which attract eosinophils, T cells and macrophages that form more than 90% of the cellularity. The reactive cells in turn provide survival signals through CD30 and CD40 ligands, while PD-L1 and PD-L2 inhibit antitumour T-cell responses, hence the striking response to PD-1 blockade. IL-10 produced by R-S cells suppresses Th1 responses, accounting for cutaneous anergy.
-
-Immunophenotype of classic R-S cells: CD15⁺, CD30⁺, PAX5 weak⁺, CD45⁻, CD20 variable. R-S–like cells occur in infectious mononucleosis, some NHLs and carcinomas, and so are not diagnostic alone.
-
+- **Reed-Sternberg cells** are the neoplastic giant cells that are the distinctive feature of Hodgkin lymphoma.
+- **Origin:** germinal centre or post-germinal centre B cells, shown by clonal IGH gene rearrangements and somatic hypermutation. In classic Hodgkin lymphoma they fail to express most B-cell-specific genes, including immunoglobulin genes.
+- **Diagnostic Reed-Sternberg cell:** a large cell (about 45 micrometres) with multiple nuclei or a nucleus with multiple lobes, each with a large inclusion-like nucleolus about the size of a small lymphocyte, and abundant cytoplasm.
+- **Variants:** mononuclear, lacunar and lymphohistiocytic (L&H, popcorn) cells.
+- **Immunophenotype (classic types):** positive for PAX5, CD15 and CD30; negative for other B-cell markers, T-cell markers and CD45.
+- **NF-κB activation** promotes their growth and survival, through EBV latent membrane protein 1 or loss-of-function mutations in IκB or TNF-induced protein 3.
+- They secrete cytokines and chemokines (interleukin-5, interleukin-10, M-CSF, eotaxin) that attract reactive cells; PD-L1 and PD-L2 on them blunt cytotoxic T-cell responses.
+- In classic forms they die by shrinking and becoming pyknotic, called **mummification**.
+- Similar cells may be seen in infectious mononucleosis, solid tissue cancers and certain non-Hodgkin lymphomas.
 
 ## Classification of Hodgkin's lymphoma.
 
-Hodgkin lymphoma is classified by WHO into classic Hodgkin lymphoma, with four subtypes—nodular sclerosis, mixed cellularity, lymphocyte-rich and lymphocyte-depleted—and nodular lymphocyte predominant Hodgkin lymphoma; the older Rye classification recognised lymphocyte predominance, nodular sclerosis, mixed cellularity and lymphocyte depletion.
+**Classic Hodgkin lymphoma**
 
-**WHO classification**
+1. Nodular sclerosis.
+2. Mixed cellularity.
+3. Lymphocyte-rich.
+4. Lymphocyte-depleted.
 
-| Type | Subtype | Key features |
-|---|---|---|
-| Classic Hodgkin lymphoma | Nodular sclerosis (65–70%) | Lacunar cells, collagen bands, nodules; young adults; mediastinal involvement |
-| | Mixed cellularity (20–25%) | Diffuse mixed infiltrate with many RS cells; EBV 70%; older males; advanced stage |
-| | Lymphocyte-rich | Reactive lymphocytes predominate; classic RS immunophenotype; EBV 40% |
-| | Lymphocyte-depleted (<5%) | Few lymphocytes, many RS cells; EBV >90%; elderly, HIV; poor outlook |
-| Nodular lymphocyte predominant | (about 5%) | L&H (popcorn) cells, CD20⁺, CD15⁻, CD30⁻; young males; cervical or axillary nodes |
+**Nonclassic**
 
-**Rye classification (historical).** Lymphocytic predominance, nodular sclerosis, mixed cellularity, and lymphocytic depletion. The prognosis was formerly considered best in lymphocyte predominance and worst in lymphocyte depletion, but with current treatment protocols tumour **stage**, rather than histologic type, is the most important prognostic variable.
+5. Nodular lymphocyte predominant.
 
-**Staging (Ann Arbor).** Stage I: a single node region or single extralymphatic site; II: two or more regions on the same side of the diaphragm; III: both sides of the diaphragm; IV: diffuse involvement of one or more extranodal organs. Suffix A or B indicates the absence or presence of systemic symptoms (unexplained fever, drenching night sweats, loss of more than 10% of body weight).
-
+In the first four the Reed-Sternberg cells have a similar distinctive immunophenotype. In nodular lymphocyte predominant, the Reed-Sternberg cells have a B-cell immunophenotype different from the classic types.
 
 ## How will you proceed to diagnose a case of lymphoma?
 
-Lymphoid neoplasia can be suspected from the clinical features, but histologic examination of an excised lymph node or other involved tissue, supplemented by immunophenotyping and genetic studies, is required for diagnosis; this is followed by staging.
-
-**1. Clinical evaluation.** Painless, persistent, progressive lymphadenopathy (often more than 2 cm), possibly with hepatosplenomegaly; B symptoms (fever, night sweats, weight loss); pruritus; symptoms from extranodal sites (gastric, skin, brain, mediastinal mass); examination of all node groups, Waldeyer ring, liver and spleen.
-
-**2. Basic laboratory tests.** Complete blood count and smear (anaemia, lymphocytosis, circulating lymphoma cells), ESR, LDH, uric acid, liver and renal function tests, serum immunoglobulins and protein electrophoresis, HIV and hepatitis B/C serology.
-
-**3. Tissue diagnosis (essential).** FNAC is a screening investigation. Excisional biopsy of an entire intact lymph node is the investigation of choice, because architecture is needed for subclassification; core needle biopsy is acceptable when excision is not feasible. Histopathology determines the architecture (diffuse, nodular), cell type and size, and mitotic rate.
-
-**4. Immunohistochemistry and flow cytometry.** Lineage and subtype: CD45, CD20, CD79a, PAX5, CD3, CD5, CD10, CD23, BCL2, BCL6, cyclin D1, CD15, CD30, ALK, Ki-67, and TdT for precursor tumours. Clonality of antigen receptor genes distinguishes reactive (polyclonal) from neoplastic (monoclonal) lymphoid proliferation. Cytogenetics, FISH or PCR for diagnostic translocations: t(14;18) in follicular lymphoma, t(11;14) in mantle cell, MYC t(8;14) in Burkitt, BCL6, ALK; EBV studies (EBER) where relevant.
-
-**5. Staging investigations.** Chest radiograph and CT of the neck, chest, abdomen and pelvis, or PET-CT; bone marrow aspiration and biopsy; CSF examination in high-risk sites and aggressive NHL; Ann Arbor staging with A/B symptom designation.
-
-**6. Pre-treatment assessment.** Cardiac function, pulmonary function tests (before bleomycin or anthracycline therapy), fertility counseling.
-
+1. **Suspicion** is clinical: most lymphoid neoplasms present as enlarged nontender lymph nodes, often more than 2 cm.
+2. **Histological examination of a lymph node** or other involved tissue is required for diagnosis.
+3. **Hodgkin lymphoma:** diagnosis rests on identifying Reed-Sternberg cells in a background of nonneoplastic inflammatory cells, confirmed by their immunohistochemical profile.
+4. **Markers:** antibodies to lineage-specific proteins characterise the tumour; analysis of genetic alterations complements the morphology.
+5. **Antigen receptor gene rearrangement studies** separate monoclonal (malignant) from polyclonal (reactive) proliferations.
+6. **Staging:** physical examination, radiological imaging of the abdomen, pelvis and chest, and bone marrow biopsy.
 
 ## A 20y male has multiple painless cervical/axillary lymph nodes. What is your provisional diagnosis?
 
@@ -7105,29 +7065,13 @@ The tests on the lymph nodes are directed toward obtaining a tissue diagnosis, i
 
 ## Give the WHO classification of Hodgkin lymphoma.
 
-The WHO classification of Hodgkin lymphoma recognises five subtypes, which are grouped into two categories on the basis of the immunophenotype of the neoplastic cells (Table 13.8).
-
-**I. Classic Hodgkin lymphoma** (Reed-Sternberg cells with a distinctive immunophenotype: CD15⁺, CD30⁺, PAX5 weakly positive, CD45⁻)
-
-1. Nodular sclerosis (65–70%)
-2. Mixed cellularity (20–25%)
-3. Lymphocyte-rich (uncommon)
-4. Lymphocyte-depleted (less than 5%)
-
-**II. Nodular lymphocyte predominant Hodgkin lymphoma** (about 5%; "non-classic"; lymphocytic and histiocytic [L&H, popcorn] cells with a B-cell phenotype: CD20⁺, BCL6⁺, CD15⁻, CD30⁻)
-
-The subtypes differ as follows.
-
-| Subtype | Salient morphology | EBV | Clinical features |
-|---|---|---|---|
-| Nodular sclerosis | Lacunar cells, birefringent collagen bands dividing node into nodules; polymorphous background | Uncommon | Young adults, both sexes; lower cervical, supraclavicular, mediastinal nodes; stage I–II; excellent prognosis |
-| Mixed cellularity | Diffuse effacement; abundant diagnostic RS cells and mononuclear variants; T cells, eosinophils, plasma cells, macrophages | About 70% | Males; older age; systemic symptoms; advanced stage; very good prognosis |
-| Lymphocyte-rich | Lymphocytes predominate; frequent mononuclear and diagnostic RS cells of classic phenotype | About 40% | Older males; very good to excellent prognosis |
-| Lymphocyte-depleted | Paucity of lymphocytes; many RS cells and pleomorphic variants; immunophenotyping essential | Over 90% | Elderly, HIV-positive, developing countries; advanced stage; less favourable |
-| Nodular lymphocyte predominant | Nodules of small lymphocytes and histiocytes, L&H ("popcorn") cells | Rare | Young males; cervical or axillary nodes; excellent prognosis, may recur; 3–5% transform to DLBCL |
-
-In the International Consensus Classification, the last entity is renamed nodular lymphocyte-predominant B-cell lymphoma, dropping the Hodgkin designation.
-
+| Subtype | Frequency | Key features |
+|---|---|---|
+| **Nodular sclerosis** | 65% to 70% | Lacunar cells; collagen bands dividing the node into nodules |
+| **Mixed cellularity** | 20% to 25% | Many diagnostic Reed-Sternberg cells; diffuse effacement by mixed infiltrate |
+| **Lymphocyte-rich** | Uncommon | Reactive lymphocytes predominate |
+| **Lymphocyte-depleted** | Less than 5% | Few lymphocytes; many Reed-Sternberg cells or pleomorphic variants |
+| **Nodular lymphocyte predominant** (nonclassic) | About 5% | L&H (popcorn) cells; B-cell markers |
 
 ## Describe in brief the morphological features of Hodgkin's disease.
 
@@ -7195,150 +7139,104 @@ Nodular sclerosis (NS) is the **most common form of Hodgkin lymphoma**, constitu
 
 ## How does Hodgkin lymphoma differ from non-Hodgkin lymphoma?
 
-Hodgkin lymphoma (HL) is segregated from the non-Hodgkin lymphomas (NHLs) because it has distinctive pathologic features, a characteristic pattern of spread, and is treated in a unique fashion. The differences are as follows (Table 13.7).
-
 | Feature | Hodgkin lymphoma | Non-Hodgkin lymphoma |
 |---|---|---|
-| **Site of presentation** | More often localised to a single axial group of nodes (cervical, mediastinal, para-aortic) | More frequent involvement of multiple peripheral nodes |
-| **Pattern of spread** | Orderly, by contiguity | Noncontiguous; disseminates widely and unpredictably early |
-| **Mesenteric nodes and Waldeyer ring** | Rarely involved | Commonly involved |
-| **Extranodal presentation** | Rare | Common |
-| **Marrow involvement** | Late and uncommon | Early and common |
-| **Neoplastic cell** | Reed-Sternberg cell and variants | Neoplastic B, T or NK lymphocytes |
-| **Proportion of tumour cells** | Few (usually under 10%) in a reactive infiltrate of lymphocytes, eosinophils, plasma cells, macrophages | Monotonous infiltrate; tumour cells are the majority |
-| **Architecture** | Partial or total effacement with fibrosis (nodular sclerosis) | Diffuse or follicular effacement, capsular invasion |
-| **Immunophenotype** | CD15⁺, CD30⁺, PAX5 (weak), CD45⁻ (classic) | B-cell (85–90%) or T-cell markers; CD45⁺ |
-| **Clonality** | Clonal IGH rearrangement in micro-dissected R-S cells | Clonal antigen receptor rearrangement in whole tissue |
-| **EBV** | 30–40% (classic) | Burkitt (subset), immunodeficiency-associated lymphomas |
-| **Age** | Bimodal: young adults and over 55 | All ages; increases with age (DLBCL median 60 years) |
-| **Systemic symptoms** | Fever, night sweats, weight loss in advanced disease; pruritus; cutaneous anergy | Variable |
-| **Staging** | Highly informative for prognosis and therapy | Less useful, since widely disseminated early |
-| **Prognosis** | Curable in most (stage I–IIA about 90%) | Varies with type from indolent to highly aggressive |
+| Nodal involvement | More often localised to a single axial group of nodes (cervical, mediastinal, para-aortic) | More frequent involvement of multiple peripheral nodes |
+| Spread | Orderly, by contiguity | Noncontiguous; disseminates widely and unpredictably early |
+| Mesenteric nodes and Waldeyer ring | Rarely involved | Commonly involved |
+| Extranodal presentation | Rare | Common |
+| Presentation | Virtually all present as enlarged nontender nodes | Two-thirds present as enlarged nontender nodes |
+| Staging | Most useful in guiding therapy | Less useful in guiding therapy |
+| Distinctive cell | **Reed-Sternberg cells**, with reactive cells making up more than 90% of the tumour | No Reed-Sternberg cells; neoplastic lymphoid cells, 85% to 90% of lymphoid neoplasms being of B-cell origin |
 
 ## What is paraproteinaemia?
 
-Paraproteinaemia, or monoclonal gammopathy, is the presence in the blood or urine of a homogeneous monoclonal immunoglobulin or immunoglobulin fragment—the M component or paraprotein—secreted by a single clone of plasma cells or B lymphocytes.
-
-Plasma cell neoplasms and related B-cell proliferations virtually always secrete monoclonal immunoglobulin or immunoglobulin fragments, which serve as tumour markers and often have pathologic consequences. A monoclonal immunoglobulin identified in the blood is referred to as an **M component**, in reference to myeloma. Complete M components have molecular weights of 160,000 or more and are therefore restricted to plasma and extracellular fluid, being excluded from the urine in the absence of glomerular damage. Neoplastic plasma cells, however, often synthesise excess light chains along with complete immunoglobulin, occasionally only light chains, and rarely only heavy chains. In most patients, the level of free light chains in the blood is elevated and markedly skewed toward one light chain (κ or λ); because free light chains are small, they are excreted in the urine as **Bence Jones proteins**.
-
-The paraprotein appears on serum protein electrophoresis as a sharp, narrow band ("M spike") in the γ or β region, in contrast to the broad polyclonal band of normal immunoglobulins, and its isotype is determined by immunofixation. Clinical associations include multiple myeloma, MGUS, Waldenström macroglobulinaemia, heavy-chain disease and AL amyloidosis. The paraprotein may cause disease by tissue infiltration by the plasma cell clone, by the physicochemical properties of the protein (hyperviscosity, cryoglobulinaemia, amyloid deposition, renal tubular toxicity), and by suppression of normal immunoglobulins.
-
+**Paraproteinaemia** (monoclonal gammopathy) is the term used for the abnormal immunoglobulins associated with plasma cell neoplasms; neoplastic plasma cells virtually always secrete monoclonal immunoglobulin or immunoglobulin fragments. A monoclonal immunoglobulin identified in the blood is called an **M component**.
 
 ## Give 4 common causes of paraproteinaemia.
 
-The four commonest causes of paraproteinaemia are monoclonal gammopathy of undetermined significance, multiple myeloma, Waldenström macroglobulinaemia, and AL amyloidosis.
-
-1. **Monoclonal gammopathy of undetermined significance (MGUS)** is the most common plasma cell disorder, occurring in about 3% of persons over 50 and 5% of those over 70. The M protein is below 3 g/dL, there are no symptoms, and about 1% a year progress to myeloma or another symptomatic plasma cell neoplasm.
-2. **Multiple myeloma**, the most important plasma cell neoplasm, usually has more than 3 g/dL of serum immunoglobulin and/or Bence Jones protein in the urine, with lytic bone lesions, hypercalcaemia, renal failure and anaemia.
-3. **Waldenström macroglobulinaemia (lymphoplasmacytic lymphoma)**, with a monoclonal IgM paraprotein causing hyperviscosity.
-4. **Primary (AL) amyloidosis**, caused by monoclonal plasma cells secreting light chains (usually λ) that deposit as amyloid.
-
-Other causes include smoldering myeloma, solitary plasmacytoma, heavy-chain disease, chronic lymphocytic leukaemia and other B-cell lymphomas, cryoglobulinaemia, and transient paraproteins in infections, autoimmune diseases and solid tumours.
-
+1. **Multiple myeloma** (plasma cell myeloma), with its variants solitary plasmacytoma and smouldering myeloma.
+2. **Waldenström macroglobulinaemia**, in which high levels of IgM cause hyperviscosity.
+3. **Heavy-chain disease**, with free heavy-chain fragments.
+4. **Immunoglobulin-related (AL) amyloidosis**, from monoclonal plasma cells secreting light chains.
+5. **Monoclonal gammopathy of undetermined significance (MGUS).**
 
 ## What is myeloma?
 
-Multiple myeloma, or plasma cell myeloma, is a malignant clonal proliferation of plasma cells in the bone marrow, characterised by lytic bone lesions, hypercalcaemia, renal failure, anaemia, and a monoclonal immunoglobulin in serum and/or urine with suppression of normal humoral immunity.
-
-Multiple myeloma is a plasma cell neoplasm commonly associated with lytic bone lesions, hypercalcaemia, renal failure and acquired immune abnormalities. The disease is chiefly one of older adults, with a peak age at onset of 65 to 70 years, and is more common in males and in persons of African descent. It causes about 1% of cancer deaths in Western countries and accounts for the largest share of deaths from plasma cell neoplasms. The neoplastic cells are post–germinal centre plasma cells with frequent translocations involving the IGH locus on 14q32 (to cyclin D1 and D3 genes and others) and deletions of 13q and 17p, with dependence on IL-6 and the marrow stroma. Bony disease dominates, but the disease can spread late to lymph nodes and extranodal sites. Variants include solitary plasmacytoma, smoldering myeloma and plasma cell leukaemia. The diagnosis requires clonal marrow plasma cells with myeloma-defining events (CRAB criteria: hypercalcaemia, renal dysfunction, anaemia and bone lesions).
-
+**Multiple myeloma** is a plasma cell neoplasm commonly associated with lytic bone lesions, hypercalcaemia, renal failure and acquired immune abnormalities.
 
 ## Pathophysiological and biochemical features of myeloma.
 
-The pathophysiology of myeloma stems from plasma cell growth in the marrow and bone, from the excess monoclonal immunoglobulin and light chains with abnormal physicochemical properties, and from suppression of normal immunoglobulin production; biochemically there is an M spike, Bence Jones proteinuria, hypercalcaemia and renal impairment.
+**Pathophysiology**
 
-**A. Pathophysiology**
+- Rearrangements of the **IGH locus on chromosome 14q32** with proto-oncogenes, including cyclin D1 and cyclin D3; deletion of **17p** (the *TP53* locus) gives a poor outcome; rearrangement of *MYC* in aggressive forms such as plasma cell leukaemia; mutations in the NF-κB pathway.
+- **Interleukin-6** is the main growth factor, made by the tumour cells and by marrow stromal cells.
+- **Bone destruction:** myeloma-derived MIP1a (CCL3) increases osteoclast formation, and Wnt pathway modulators inhibit osteoblasts. The net result is increased bone resorption, with hypercalcaemia and pathological fractures.
+- **Excess immunoglobulin of a single type** with abnormal physicochemical properties: hyperviscosity in about 7% (usually IgA or IgG3 subtype), and AL amyloidosis from certain light chains (lambda 6 and lambda 3 families).
+- **Suppression of normal humoral immunity** leads to recurrent bacterial infections; cellular immunity is relatively unaffected.
+- **Renal failure** in up to 50%; the most important factor is Bence Jones proteinuria, as light chains are toxic to renal tubular epithelial cells.
 
-1. **Bone destruction.** Myeloma cells secrete factors, notably MIP-1α (CCL3), that augment osteoclast formation (with RANKL up-regulation), while other factors, such as inhibitors of the Wnt pathway (DKK1), inhibit osteoblast function. The net effect is marked bone resorption, producing punched-out lytic lesions, osteopenia, bone pain, pathologic fractures and hypercalcaemia. Hypercalcaemia causes confusion, weakness, constipation, polyuria and contributes to renal dysfunction.
-2. **Marrow replacement.** Normocytic normochromic anaemia (and sometimes leukopenia and thrombocytopenia) from replacement of marrow and from IL-6 and inflammatory suppression of erythropoiesis; reduced erythropoietin in renal failure.
-3. **Immune suppression.** Decreased production of normal immunoglobulins (immunoparesis) leads to recurrent bacterial infections (pneumococcus, Haemophilus); cellular immunity is relatively unaffected.
-4. **Renal failure** (up to 50%; second only to infections as a cause of death): the single most important factor is Bence Jones proteinuria, since light chains are toxic to tubular epithelium and form obstructing casts with Tamm-Horsfall protein (myeloma kidney, cast nephropathy). Contributing factors include hypercalcaemia, hyperuricaemia, amyloid (AL), dehydration, hyperviscosity and nephrotoxic drugs.
-5. **Amyloidosis.** Certain light chains (λ6 and λ3 families) are prone to cause AL amyloid deposition.
-6. **Hyperviscosity** (about 7%): aggregation of IgA or IgG₃ M protein, with visual, neurologic and bleeding symptoms.
+**Biochemical features**
 
-**B. Biochemical features**
-
-- Serum protein electrophoresis: sharp M spike (more than 3 g/dL in most), most often IgG (55%), then IgA (25%); light chains only in about 20%; nonsecretory in about 1%; reduced polyclonal immunoglobulins (immunoparesis).
-- Urine: free light chains (Bence Jones proteins; more than 6 mg/dL in most), usually with proteinuria that is not detected by dipstick.
-- Serum free light chain assay with an abnormal κ/λ ratio.
-- Raised serum calcium (hypercalcaemia), with normal serum alkaline phosphatase (pure lytic lesions), raised urea and creatinine, hyperuricaemia.
-- Raised β₂-microglobulin (a prognostic index, with albumin), LDH, and CRP; low serum albumin in advanced disease; **low anion gap** because the paraprotein is cationic; pseudohyponatraemia.
-- Markedly raised ESR with rouleaux formation on the smear.
-
+- **M protein** in the serum, usually more than 3 g/dL; IgG in about 55% and IgA in about 25%.
+- **Bence Jones protein** in the urine, usually more than 6 mg/dL.
+- Free light chains alone in about 20%; about 1% are nonsecretory.
+- **Hypercalcaemia.**
+- Decreased levels of normal polyclonal immunoglobulins.
 
 ## Laboratory diagnosis of myeloma.
 
-Myeloma is diagnosed by demonstrating clonal plasma cells in the bone marrow, a monoclonal protein in the serum and/or urine on electrophoresis and immunofixation, and evidence of end-organ damage by the CRAB criteria—hypercalcaemia, renal dysfunction, anaemia and lytic bone lesions.
-
-1. **Blood count and smear.** Normocytic normochromic anaemia, **rouleaux formation** (red cells stacked in linear arrays), markedly raised ESR, sometimes leukopenia or thrombocytopenia; plasma cells in the blood in plasma cell leukaemia.
-2. **Serum and urine protein studies.** Serum protein electrophoresis shows an M spike; immunofixation identifies the heavy-chain class and the light-chain type; quantitative immunoglobulins show suppression of the uninvolved immunoglobulins; serum free light chain assay and ratio; urine protein electrophoresis and immunofixation for Bence Jones protein (24-hour urine). Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urinary Bence Jones protein; in 99% there is an M protein in serum or urine. About 20% have only free light chains and about 1% are nonsecretory, so absence of M protein does not exclude the diagnosis.
-3. **Bone marrow aspirate and biopsy (essential).** Increased plasma cells, usually more than 30% of cellularity, in sheets or clusters, with CD138⁺, CD56⁺ (often), and cytoplasmic κ or λ light-chain restriction on immunophenotyping.
-4. **Biochemistry.** Serum calcium, creatinine and urea, uric acid, albumin, β₂-microglobulin, LDH.
-5. **Radiology.** Skeletal survey—punched-out osteolytic lesions of the skull, vertebrae, ribs, pelvis and long bones, osteopenia, pathologic fractures; MRI, low-dose CT or PET-CT for more sensitive assessment.
-6. **Cytogenetics and FISH.** t(11;14), t(4;14), t(14;16), del(17p), del(13q), gain 1q for risk stratification.
-7. **Diagnostic criteria.** In Robbins' summary, the diagnosis relies on identification of clonal plasma cells in the marrow and the presence of CRAB criteria. In the IMWG criteria, 10% or more clonal marrow plasma cells (or a biopsy-proven plasmacytoma) plus one or more myeloma-defining events (CRAB; or 60% or more marrow plasma cells; or a serum free light chain ratio of 100 or more; or more than one focal lesion on MRI).
-
+1. **Serum and urine electrophoresis:** a sharp abnormal protein spike (M protein) in place of the broad polyclonal band; confirmed and typed by **immunofixation**.
+2. **Immunoglobulins:** increased in the blood in 99% of patients, and/or light chains (**Bence Jones proteins**) in the urine. Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urine Bence Jones protein. Free light chains alone are present in about 20%, and about 1% are nonsecretory.
+3. **Bone marrow examination:** clonal plasma cells, usually more than 30% of the cellularity; positive for CD138 and often CD56, with cytoplasmic kappa or lambda light chain.
+4. **CRAB criteria:** hypercalcaemia, renal dysfunction, anaemia and bone lesions, assessed by calcium levels, renal function and blood counts.
+5. **Radiography:** punched-out lytic defects, usually 1 to 4 cm in diameter; sometimes diffuse osteopenia.
+6. **Peripheral blood smear:** **rouleaux formation**; rarely plasma cell leukaemia.
 
 ## What is Bence-Jones protein?
 
-Bence Jones protein consists of monoclonal free immunoglobulin light chains (κ or λ) that are small enough to be filtered by the glomerulus and excreted in the urine; it is found in multiple myeloma and other plasma cell neoplasms.
-
-Neoplastic plasma cells often synthesise an excess of light chains relative to heavy chains. Because free light chains are small (molecular weight about 22,000 for monomers and 44,000 for dimers), they pass through the glomerular filter and are excreted in the urine, where they are called Bence Jones proteins; the intact immunoglobulin (160,000 or more) is retained in the circulation unless there is glomerular damage. The proteins were described by Henry Bence Jones in 1847.
-
-**Significance.** Bence Jones proteinuria occurs in a majority of patients with multiple myeloma, including the roughly 20% with light-chain–only disease, and in Waldenström macroglobulinaemia and AL amyloidosis. The excreted light chains are toxic to renal tubular epithelial cells and form casts with Tamm-Horsfall protein, causing **myeloma kidney**, the single most important factor in the renal failure of myeloma. Certain light chains (λ6 and λ3 families) cause AL-type amyloidosis. Its demonstration has diagnostic and monitoring value. Ordinary dipsticks, which detect mostly albumin, may be negative, so specific tests are needed.
-
+Free light chains, made in excess by neoplastic plasma cells, are small and are excreted in the urine, where they are called **Bence Jones proteins**.
 
 ## Classify immunoproliferative disorders.
 
-Immunoproliferative disorders, which are proliferations of immunoglobulin-producing B-cell and plasma cell clones, are classified as plasma cell dyscrasias—multiple myeloma and its variants, MGUS, Waldenström macroglobulinaemia, heavy-chain diseases and AL amyloidosis—and the secretory B-cell lymphomas.
-
-**I. Plasma cell neoplasms and related disorders (monoclonal gammopathies)**
-
-1. Multiple myeloma (plasma cell myeloma), with its variants: smoldering (asymptomatic) myeloma, solitary plasmacytoma of bone or extraosseous (soft tissue) plasmacytoma, plasma cell leukaemia, and nonsecretory myeloma.
-2. Monoclonal gammopathy of undetermined significance (MGUS), a premalignant state.
-3. Lymphoplasmacytic lymphoma/Waldenström macroglobulinaemia, with IgM paraprotein.
-4. Heavy-chain diseases (α—the immunoproliferative small intestinal disease or Mediterranean lymphoma; γ; μ), with free heavy-chain fragments.
-5. Immunoglobulin-related (AL) amyloidosis, and light-chain deposition disease.
-6. POEMS syndrome and cryoglobulinaemia associated with clonal proliferations.
-
-**II. Other B-cell lymphoproliferative disorders that may secrete monoclonal protein.** CLL, marginal zone lymphomas, and other non-Hodgkin lymphomas, with a small M spike in some.
-
-**III. Secondary (reactive) gammopathies.** Polyclonal increases in immunoglobulins in chronic infections, autoimmune disorders and liver disease, which must be distinguished from monoclonal disorders by the broad (not narrow) band on electrophoresis.
-
+| Disorder | Features |
+|---|---|
+| **Multiple myeloma** (plasma cell myeloma) | Tumour masses scattered through the skeletal system; variants are **solitary plasmacytoma** (single mass in bone or soft tissue) and **smouldering myeloma** (no symptoms, high plasma M component) |
+| **Waldenström macroglobulinaemia** | High IgM levels cause hyperviscosity; usually with lymphoplasmacytic lymphoma |
+| **Heavy-chain disease** | Synthesis and secretion of free heavy-chain fragments; seen with lymphoplasmacytic lymphoma and small bowel marginal zone lymphoma (Mediterranean lymphoma) |
+| **Immunoglobulin-related (AL) amyloidosis** | Monoclonal plasma cells secrete light chains, usually lambda, that are deposited as amyloid |
+| **Monoclonal gammopathy of undetermined significance (MGUS)** | No symptoms; small to moderately large M component; may transform to multiple myeloma or another symptomatic plasma cell neoplasm |
 
 ## Waldenström's macroglobulinaemia (in short).
 
-Waldenström macroglobulinaemia is a syndrome of hyperviscosity caused by high levels of monoclonal IgM secreted by a lymphoplasmacytic lymphoma in older adults, without lytic bone lesions.
+**Definition:** a syndrome in which high levels of IgM lead to symptoms from hyperviscosity of the blood. It occurs in older adults, most commonly with **lymphoplasmacytic lymphoma**, a B-cell neoplasm of the sixth or seventh decade in which many tumour cells differentiate into plasma cells that secrete monoclonal IgM.
 
-**Definition and pathogenesis.** Waldenström macroglobulinaemia is a syndrome in which high levels of IgM lead to symptoms related to hyperviscosity of the blood. It occurs in older adults (sixth to seventh decade), most commonly in association with **lymphoplasmacytic lymphoma**, a B-cell neoplasm that resembles CLL/SLL but in which a substantial fraction of tumour cells undergo terminal differentiation into plasma cells. Virtually all cases harbor acquired mutations in MYD88, an adaptor protein that activates NF-κB and promotes tumour growth and survival.
+**Pathogenesis:** virtually all cases have acquired mutations in *MYD88*, which activates NF-κB and may promote tumour cell growth and survival.
 
-**Morphology.** The marrow contains lymphocytes, plasma cells and plasmacytoid lymphocytes with mast cell hyperplasia; PAS-positive inclusions of immunoglobulin are seen in the cytoplasm (Russell bodies) or nucleus (Dutcher bodies). The lymph nodes, spleen and liver are involved at diagnosis. The lymphoid cells express CD20 and surface IgM.
+**Morphology**
 
-**Clinical features.** Weakness, fatigue, weight loss; lymphadenopathy, hepatomegaly and splenomegaly in about half; anaemia from marrow infiltration. Because of its large size, IgM increases blood viscosity, producing **hyperviscosity syndrome**: visual impairment from retinal venous engorgement (sausage-link veins, haemorrhages); neurologic symptoms such as headache, dizziness, deafness and stupor; bleeding from complexes of IgM with clotting factors and platelet dysfunction; and cryoglobulinaemia with Raynaud phenomenon and cold urticaria. About 10% have autoimmune haemolysis from cold agglutinins. Unlike multiple myeloma, **bone destruction does not occur**, and renal failure and amyloidosis from light chains are relatively rare.
+- Marrow infiltrate of lymphocytes, plasma cells and plasmacytoid lymphocytes, often with mast cell hyperplasia.
+- Periodic acid–Schiff positive inclusions of immunoglobulin in the cytoplasm (**Russell bodies**) or nucleus (**Dutcher bodies**) of some plasma cells.
+- At diagnosis the tumour has usually spread to lymph nodes, spleen and liver.
 
-**Treatment and prognosis.** Plasmapheresis relieves the hyperviscosity (most IgM is intravascular); tumour growth is controlled by low-dose chemotherapy, anti-CD20 antibody (rituximab) and BTK inhibitors. It is indolent, with a median survival of more than 10 years, and transformation to large-cell lymphoma is uncommon.
+**Clinical features**
 
+- Weakness, fatigue and weight loss; about half have lymphadenopathy, hepatomegaly and splenomegaly; anaemia from marrow infiltration.
+- About 10% have autoimmune haemolysis from cold agglutinins (IgM antibodies that bind red cells below 37°C).
+- **Hyperviscosity syndrome:** visual impairment with venous congestion, retinal haemorrhages and exudates; headache, dizziness, deafness and stupor; bleeding, from IgM complexes with clotting factors and interference with platelet function.
+- **Cryoglobulinaemia:** precipitation of IgM in the cold, with Raynaud phenomenon and cold urticaria.
+- Renal failure and amyloidosis from free light chains are rare, and bone destruction does not occur.
+
+**Course:** indolent; plasmapheresis relieves the symptoms of high IgM; median survival is greater than 10 years.
 
 ## How will you diagnose a case of multiple myeloma?
 
-Multiple myeloma can be strongly suspected when the characteristic clinical picture and radiographic changes are present, but definitive diagnosis requires bone marrow examination and tests assessing calcium levels, renal function, blood counts, and serum and urine immunoglobulins. The diagnosis rests on clonal plasma cells in the marrow and the CRAB criteria (hypercalcaemia, renal dysfunction, anaemia and bone lesions).
-
-**1. Clinical suspicion.** An older adult (peak 65–70 years), with bone pain (back, ribs), pathologic fractures, fatigue (anaemia), recurrent bacterial infections, symptoms of hypercalcaemia (confusion, constipation, polyuria), renal failure, and sometimes hyperviscosity, neuropathy or amyloid features.
-
-**2. Haematology.** Normocytic normochromic anaemia; **rouleaux formation** on the smear; markedly raised ESR; sometimes leukopenia and thrombocytopenia; circulating plasma cells in plasma cell leukaemia.
-
-**3. Serum and urine protein studies (key).** Serum protein electrophoresis (a sharp M spike), immunofixation (class of heavy chain and type of light chain), quantitative serum immunoglobulins (reduced uninvolved immunoglobulins), serum free light chain assay with an abnormal ratio, urine electrophoresis and immunofixation for **Bence Jones protein**. The M protein is IgG in about 55%, IgA in 25%, light chains only in about 20%, and nonsecretory in about 1%. Most patients have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urine Bence Jones protein.
-
-**4. Bone marrow aspiration and biopsy.** Plasma cells constituting more than 30% of cellularity (10% or more by modern criteria), with atypical and multinucleate forms, immunostaining for CD138, CD56 and monotypic light chains.
-
-**5. Biochemistry.** Raised calcium, creatinine and urea; uric acid; low albumin; β₂-microglobulin and LDH for prognosis; normal alkaline phosphatase.
-
-**6. Imaging.** Skeletal survey showing punched-out lytic lesions 1–4 cm in diameter (skull, vertebrae, ribs, pelvis, femur), osteopenia, or compression fractures; MRI or PET-CT where indicated.
-
-**7. Cytogenetics and FISH.** IGH translocations [t(11;14), t(4;14), t(14;16)], del(17p), del(13q), for risk stratification.
-
-**Diagnostic criteria.** Clonal marrow plasma cells (10% or more) or a biopsy-proven plasmacytoma, plus at least one myeloma-defining event: hypercalcaemia, renal insufficiency, anaemia, or bone lesions (CRAB), or biomarkers of malignancy (marrow plasma cells 60% or more, free light chain ratio of 100 or more, or more than one focal lesion on MRI). Smoldering myeloma (10–30% marrow plasma cells, M protein above 3 g/dL, no symptoms) and MGUS (M protein below 3 g/dL, no symptoms) must be distinguished.
-
+1. **Serum and urine electrophoresis:** a sharp abnormal protein spike (M protein) in place of the broad polyclonal band; confirmed and typed by **immunofixation**.
+2. **Immunoglobulins:** increased in the blood in 99% of patients, and/or light chains (**Bence Jones proteins**) in the urine. Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urine Bence Jones protein. Free light chains alone are present in about 20%, and about 1% are nonsecretory.
+3. **Bone marrow examination:** clonal plasma cells, usually more than 30% of the cellularity; positive for CD138 and often CD56, with cytoplasmic kappa or lambda light chain.
+4. **CRAB criteria:** hypercalcaemia, renal dysfunction, anaemia and bone lesions, assessed by calcium levels, renal function and blood counts.
+5. **Radiography:** punched-out lytic defects, usually 1 to 4 cm in diameter; sometimes diffuse osteopenia.
+6. **Peripheral blood smear:** **rouleaux formation**; rarely plasma cell leukaemia.
 
 ## Give the bone marrow findings of multiple myeloma.
 
@@ -7360,14 +7258,11 @@ Rouleaux formation is characteristic but not specific, since it may be seen in o
 
 ## An elderly patient has low back/bone pain, punched-out lesions, sky-high ESR. What is your probable diagnosis?
 
-The probable diagnosis is **multiple myeloma** (plasma cell myeloma).
+**Probable diagnosis: multiple myeloma.**
 
-**Reasoning.** Multiple myeloma is chiefly a disease of older adults, with a peak age of 65 to 70 years. The back and bone pain results from destructive plasma cell tumours, which involve the axial skeleton—the vertebral column, ribs, skull, pelvis and femur—and cause pathologic fractures, such as vertebral compression fractures. The radiographic hallmark is **punched-out lytic lesions** of 1 to 4 cm in diameter, best seen in the skull. These lesions result from myeloma-derived MIP-1α and Wnt pathway inhibitors, which increase osteoclast activity and inhibit osteoblasts. The very high ESR results from the M protein-induced rouleaux formation.
-
-**Confirmation.** (1) Serum and urine electrophoresis with immunofixation, to demonstrate an M spike and Bence Jones protein; (2) bone marrow aspirate and biopsy showing an increased number of plasma cells (usually above 30%); (3) serum calcium, creatinine, haemoglobin (CRAB features); (4) skeletal survey or MRI/PET-CT; (5) serum free light chains and β₂-microglobulin.
-
-**Differential diagnosis.** Metastatic carcinoma (breast, prostate, lung, kidney, thyroid), which also causes lytic lesions but without an M spike (prostate metastases are typically sclerotic); lymphoma involving bone; hyperparathyroidism (brown tumours, raised parathyroid hormone); MGUS and solitary plasmacytoma; osteoporotic fractures; tuberculosis of the spine.
-
+- Bone pain and pathological fractures, from plasma cell tumours that erode bone; the radiographic defects are punched-out and 1 to 4 cm across.
+- The high ESR fits the M protein in the blood, which makes red cells stick together in rouleaux.
+- Confirmed by bone marrow examination and by serum and urine M protein studies.
 
 ## Write a short note on Bence-Jones protein and its detection in urine.
 
@@ -7711,31 +7606,21 @@ Splenomegaly is the major manifestation of splenic disorders, which are only rar
 
 ## Diagnostic criteria of hypersplenism.
 
-The classical diagnostic criteria of hypersplenism are splenomegaly, one or more cytopenias in the blood with a normocellular or hypercellular marrow, and correction of the cytopenias after splenectomy; evidence of increased splenic sequestration supports the diagnosis.
-
-1. **Splenomegaly.** Clinically or by imaging.
-2. **Cytopenia of one or more cell lines**—anaemia, leukopenia (neutropenia), thrombocytopenia, or pancytopenia. Robbins describes hypersplenism as a syndrome characterised by anaemia, leukopenia and/or thrombocytopenia.
-3. **Normal or hyperplastic (cellular) bone marrow** with normal or increased precursors, reflecting a compensatory response to peripheral destruction, with no other cause of cytopenia (such as marrow failure, infiltration or drug effect).
-4. **Evidence of increased destruction or pooling.** Shortened survival of red cells or platelets, with increased splenic uptake demonstrated by radioisotope studies (⁵¹Cr-labelled red cells or ¹¹¹In-labelled platelets, with excess counting over the spleen), and increased plasma volume; reticulocytosis if haemolysis is present.
-5. **Response to splenectomy.** Correction of cytopenias after removal of the spleen. This is retrospective but diagnostic; splenectomy is reserved for severe cases as it increases the risk of overwhelming sepsis by encapsulated bacteria (pneumococci, meningococci, Haemophilus influenzae), so asplenic patients must be vaccinated.
+- **Splenomegaly.**
+- **Anaemia, leukopenia and/or thrombocytopenia**, singly or together.
+- **Increased sequestration** of formed elements in the spleen, with enhanced phagocytosis by splenic macrophages, is the probable cause of the cytopenias.
+- **Bone marrow:** with excessive peripheral destruction of cells the marrow is usually hypercellular, from a compensatory increase in precursors.
 
 ## Elderly man (55 or 65 years) with bone/back pain, punched-out skull lesions or osteolytic lesions, high ESR, vertebral fracture — Most probable diagnosis? How will you establish / confirm the diagnosis?
 
-The most probable diagnosis is multiple myeloma, and I would confirm it with serum and urine protein electrophoresis and immunofixation to show a monoclonal protein, a bone marrow aspirate and biopsy showing clonal plasma cells, and tests for the CRAB features—calcium, creatinine, haemoglobin—and skeletal imaging.
+**Most probable diagnosis: multiple myeloma.**
 
-**Diagnosis.** The age (peak 65 to 70 years), bone and back pain, punched-out lytic lesions of the skull (1 to 4 cm, sharply demarcated), pathologic vertebral fracture and markedly raised ESR (from rouleaux formation due to the M protein) are characteristic of **multiple myeloma**. The lesions are destructive plasma cell tumours resulting from increased osteoclast activity (MIP-1α) and inhibition of osteoblasts (Wnt inhibitors), and involve the axial skeleton in decreasing order of frequency: vertebral column, ribs, skull, pelvis and femur.
+**Confirmation**
 
-**How to establish the diagnosis.**
-
-1. **Blood:** haemoglobin (normocytic normochromic anaemia), blood film with **rouleaux**, ESR, serum calcium (hypercalcaemia), urea and creatinine (renal impairment), uric acid, albumin, β₂-microglobulin, LDH; alkaline phosphatase is typically normal.
-2. **Serum protein electrophoresis** (a sharp M spike, usually IgG or IgA), immunofixation to type the immunoglobulin, quantitative immunoglobulins (reduced normal immunoglobulins), and serum free light chain assay with κ/λ ratio.
-3. **Urine:** 24-hour urine protein electrophoresis and immunofixation for **Bence Jones protein** (the dipstick may be negative).
-4. **Bone marrow aspirate and biopsy:** increased plasma cells (typically above 30%; 10% or more clonal plasma cells with a myeloma-defining event for diagnosis), atypical and multinucleate forms, flame cells, Mott cells, with CD138⁺, CD56⁺ and light-chain restriction.
-5. **Imaging:** skeletal survey, or MRI/low-dose CT/PET-CT; MRI of the spine for cord compression if neurologic signs.
-6. **Cytogenetics/FISH** for prognosis: t(4;14), del(17p), t(11;14), del(13q).
-
-**Diagnostic criteria.** Clonal plasma cells in the marrow plus CRAB features (hypercalcaemia, renal dysfunction, anaemia, bone lesions) or other myeloma-defining events. Distinguish from MGUS (M protein below 3 g/dL, no end-organ damage), smoldering myeloma and solitary plasmacytoma, and from metastatic carcinoma (lytic bone lesions but no M protein).
-
+1. Serum and urine electrophoresis for an M protein spike, characterised by immunofixation; Bence Jones protein in the urine.
+2. Bone marrow examination showing clonal plasma cells, usually more than 30% of the cellularity.
+3. CRAB criteria: hypercalcaemia, renal dysfunction, anaemia and bone lesions.
+4. Radiography showing punched-out lytic lesions.
 
 ## 40-year-old man with massive splenomegaly and total WBC count 2,50,000/cu.mm — Diagnosis?
 
