@@ -9417,197 +9417,177 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 
 ## What do you mean by cross matching?
 
-Cross-matching is the laboratory test, performed before transfusion, in which the recipient's serum is mixed with the donor's red cells (and the reverse) to confirm that the donor blood is compatible with the recipient and will not be destroyed by the recipient's antibodies.
-
-It is the final safeguard in the compatibility testing, after the ABO and Rh grouping of donor and recipient and the screening of the recipient's serum for unexpected (irregular) antibodies. In the **major cross-match**, the recipient's serum is mixed with the donor's red cells; agglutination or haemolysis indicates that the recipient has antibodies against the donor cells and the unit is incompatible. In the **minor cross-match**, the donor's plasma is mixed with the recipient's red cells (largely replaced by antibody screening of donors). A compatible cross-match shows no agglutination or haemolysis in any phase.
+Cross matching is the final check that a specific donor unit is compatible with a specific recipient. It tests ABO compatibility and whether the recipient has an unexpected antibody that reacts with donor red cells.
 
 
 ## How is cross matching performed?
 
-Cross-matching is performed by mixing recipient serum with a suspension of donor red cells and testing for agglutination or haemolysis in successive phases, namely saline at room temperature, incubation at 37°C in albumin or low-ionic-strength solution, and finally the antiglobulin (Coombs) phase.
-
-1. **Preliminary steps:** ABO and Rh grouping of the recipient (forward grouping with anti-A and anti-B sera, and reverse grouping with known A and B cells) and of the donor unit; the recipient's serum is screened for irregular antibodies.
-2. **Preparation:** the recipient's serum is separated from a freshly drawn clotted sample; a 2% to 5% suspension of donor red cells in saline is made from a segment of the donor bag.
-3. **Major cross-match:** two drops of recipient serum and one drop of donor red cell suspension are mixed in a tube.
-4. **Phases:**
-
-- Immediate spin (saline phase, room temperature): centrifuge and examine for haemolysis or agglutination (detects ABO incompatibility and IgM antibodies).
-- Incubation phase at 37°C (with albumin or LISS to enhance antibody uptake) for 15 to 30 minutes, examined for agglutination or haemolysis (detects IgG antibodies such as Rh).
-- Antiglobulin (indirect Coombs) phase: the cells are washed, antihuman globulin is added, and the tube is spun and examined for agglutination (detects incomplete IgG antibodies such as Kell, Duffy and Kidd).
-
-5. **Interpretation:** no haemolysis or agglutination in any phase means compatible, and the unit may be issued. An electronic or computer cross-match may be used when the antibody screen is negative and two ABO determinations are on record.
+1. **Major crossmatch** (standard test): donor red cells are mixed with recipient serum or plasma.
+2. **Immediate spin phase:** donor red cells in saline are added to the patient serum, mixed and centrifuged for 15 to 30 seconds; agglutination or **haemolysis** is read (detects ABO incompatibility only; misses most IgG antibodies such as anti-D, anti-K, anti-Jka, anti-Fya).
+3. **37°C incubation phase:** donor red cells in a potentiating agent are added to the patient serum and incubated at 37°C.
+4. **Antiglobulin phase:** the cells are washed, **antihuman globulin** (Coombs reagent) is added, the mixture is centrifuged for 15 to 30 seconds and read for agglutination; agglutination means patient IgG is bound to the donor antigen.
+5. **Minor crossmatch:** donor plasma with recipient cells; largely obsolete for packed red cells because little donor plasma remains.
+6. **Electronic crossmatch** is allowed only if all four conditions are met:
+- Two ABO determinations, one on the current specimen
+- Current antibody screen negative
+- No history of a clinically significant unexpected antibody
+- A validated on-site computer system that blocks release of ABO-incompatible units
+7. Specimen is collected within 3 days of transfusion, or within the last 3 months if the patient is pregnant.
 
 
 ## Why is cross matching essential for blood transfusion?
 
-Cross-matching is essential to prevent a haemolytic transfusion reaction, because it detects incompatibility, including that caused by unexpected antibodies and clerical or labelling errors, which grouping alone may miss.
-
-ABO grouping and Rh typing of donor and recipient do not exclude all incompatibilities. The recipient may carry irregular alloantibodies, formed after previous transfusions or pregnancy, against minor red cell antigens (Kell, Duffy, Kidd, Rh variants), and such antibodies, usually IgG, can cause delayed or even severe haemolysis. Cross-matching also provides a final check against errors of patient identification or sample labelling, the commonest cause of ABO-incompatible transfusion. Acute haemolytic reactions occur when preformed, high-affinity "natural" IgM antibodies against A or B antigens bind to donor red cells and fix complement, producing complement-mediated intravascular haemolysis and haemoglobinuria, with fever, shaking chills and flank pain; in severe cases there is DIC, shock, acute renal failure and occasionally death. Cross-matching thus protects the patient from these life-threatening complications, and avoids wasting scarce blood by transfusing cells that will be rapidly destroyed.
+- Confirms serologically that the donor unit is **ABO compatible** with the recipient.
+- Detects **unexpected red cell antibodies** in the recipient that react with the donor cells.
+- Prevents **acute haemolytic reaction**, caused by preformed IgM antibodies against donor red cells that fix complement; it usually results from an ABO-incompatible unit given through an error in patient identification or tube labelling.
+- The immediate spin detects ABO incompatibility only; the antiglobulin phase is needed to detect IgG antibodies.
 
 
 ## Mention 4 important hematological changes of stored blood.
 
-The important changes in stored blood, collectively called the storage lesion, are a fall in pH, a rise in plasma potassium, depletion of 2,3-DPG and ATP in the red cells, and loss of the viability of platelets, white cells and labile coagulation factors.
-
-1. **Fall in pH (acidosis):** continued glycolysis produces lactic and pyruvic acids, and the pH of stored blood falls from about 7.1 to 6.5 over 3 weeks.
-2. **Rise in plasma potassium:** potassium leaks from red cells because the Na⁺/K⁺ pump fails in the cold, causing high plasma potassium (up to 20 to 30 mmol/L at 3 weeks), which may be hazardous in massive transfusion, neonates or renal failure.
-3. **Fall in 2,3-diphosphoglycerate (2,3-DPG) and ATP:** the red cells have increased oxygen affinity (a left shift of the oxygen dissociation curve) and reduced ability to release oxygen to the tissues for the first 24 hours after transfusion; reduced ATP reduces red cell deformability and survival.
-4. **Loss of viability of other cells and factors:** platelets lose function within 24 to 48 hours in blood stored at 4°C, granulocytes are nonfunctional within 24 hours, and factors V and VIII are labile (reduced to about 50% or less by 1 to 2 weeks).
-5. **Other changes:** increased plasma haemoglobin from haemolysis, increased ammonia, falling glucose and rising lactate, microaggregates of platelets and leukocytes, and a reduction in the proportion of viable red cells (about 70% of cells survive 24 hours after 35 days of storage).
+1. **Fall in pH:** lactate accumulates; pH falls from 7.2 on day 0 to 6.54 on day 35 (CPDA-1 blood).
+2. **Rise in plasma potassium:** about eight-fold rise; 4.33 mmol/L on day 0 to 33.05 mmol/L on day 35 (CPDA-1 blood).
+3. **Depletion of 2,3-DPG:** falls to zero in about 2 weeks; the oxygen dissociation curve shifts to the left; it is regenerated within 24 hours of transfusion.
+4. **Fall in ATP:** rises over days 1 to 7, then falls from day 7 onwards.
+5. **Increased haemolysis:** 0.09% on day 0 to 0.68% on day 35 (CPDA-1 blood); plasma haemoglobin increases and sodium decreases.
+6. **Loss of platelets and labile factors:** platelets lose viability and function very quickly; factor VIII deteriorates rapidly, especially after the first 24 hours; factor V is labile.
+7. At expiry, at least 75% of transfused red cells must remain in circulation 24 hours after transfusion.
 
 
 ## What are the indications of blood transfusion?
 
-Blood transfusion is indicated to restore oxygen-carrying capacity or blood volume in acute haemorrhage and severe symptomatic anaemia, and to replace platelets or coagulation factors when these are deficient and bleeding is present or likely.
-
-**Red cells (whole blood or packed red cells)**
-
-- Acute blood loss with haemorrhagic shock (trauma, obstetric haemorrhage, gastrointestinal bleeding, surgery) when loss exceeds about 30% of the blood volume.
-- Symptomatic severe anaemia not correctable by haematinics (for example, haemoglobin below 7 g/dL, or higher in cardiovascular disease): chronic anaemias such as β-thalassaemia major, sickle cell disease (including exchange transfusion for stroke, acute chest syndrome and sequestration crisis), aplastic anaemia, myelodysplasia and marrow failure after chemotherapy.
-- Preoperative correction of severe anaemia, and in haemolytic anaemias with aplastic crisis.
-- Exchange transfusion in haemolytic disease of the newborn.
-
-**Platelet concentrates**
-
-- Thrombocytopenia with bleeding, or prophylactically when the platelet count is below 10,000 to 20,000 per µL, or before invasive procedures; qualitative platelet dysfunction.
-
-**Fresh frozen plasma**
-
-- Multiple coagulation factor deficiencies: DIC, liver disease, vitamin K deficiency or warfarin reversal, massive transfusion, TTP (plasma exchange).
-
-**Cryoprecipitate**
-
-- Hypofibrinogenaemia, DIC, von Willebrand disease and haemophilia A (when factor concentrates are unavailable).
-
-Transfusion is not indicated for anaemia that can be corrected with haematinics (iron, B₁₂, folate) unless the patient is in cardiac failure or in imminent danger.
+| Component | Indications |
+|---|---|
+| **Red cells** | Haemoglobin below 7.0 g/dL (target 8.0 g/dL in cardiac disease); haemoglobin below 100 g/L with high risk of myocardial ischaemia; major active bleeding |
+| **Platelets** | Count below 10,000 per microlitre; below 20,000 with fever, neutropenia or risk of intracranial haemorrhage; below 50,000 with active bleeding or an invasive procedure; below 80,000 for neurosurgery or eye surgery; platelet function defects with bleeding |
+| **Fresh frozen plasma** | INR above 1.5 with an invasive procedure or with active bleeding; DIC with bleeding; liver disease with bleeding; massive haemorrhage; warfarin reversal in life-threatening bleeding; plasma exchange for TTP |
+| **Cryoprecipitate** | Active bleeding with fibrinogen below 1.5 g/L; DIC with significant bleeding and fibrinogen below 1.0 g/L; hereditary hypofibrinogenaemia, haemophilia and von Willebrand disease |
 
 
 ## Blood components used in transfusion.
 
-Whole blood is separated into components so that each patient receives only what is needed: red cell concentrates, platelet concentrates, fresh frozen plasma, cryoprecipitate and others.
-
-| Component | Contents and use |
-|---|---|
-| Whole blood | Red cells with plasma; massive haemorrhage |
-| Packed red cells (red cell concentrate) | Chronic anaemia and haemorrhage; with additive solution (SAGM), shelf life 35 to 42 days at 2–6°C |
-| Leukocyte-depleted (filtered) red cells | Prevent febrile nonhaemolytic reactions, HLA alloimmunisation and CMV transmission |
-| Washed red cells | Patients with IgA deficiency and recurrent allergic reactions |
-| Irradiated cells | Prevent transfusion-associated graft-versus-host disease in the immunocompromised |
-| Platelet concentrates (random-donor pooled, or apheresis) | Thrombocytopenia and platelet dysfunction; stored at 20–24°C with agitation for up to 5 days |
-| Fresh frozen plasma (FFP) | All coagulation factors; DIC, liver disease, warfarin reversal, TTP |
-| Cryoprecipitate | Fibrinogen, factor VIII, vWF, factor XIII; hypofibrinogenaemia, haemophilia A, von Willebrand disease |
-| Granulocyte concentrates | Severe neutropenia with sepsis |
-| Plasma derivatives | Albumin, immunoglobulins (including anti-D), factor VIII and IX concentrates, prothrombin complex concentrate |
+| Component | Use | Storage |
+|---|---|---|
+| **Whole blood** | Massive transfusion in trauma or shock; exchange transfusion | Must be ABO identical; platelets non-functional and labile factors lost |
+| **Packed red cells** | Symptomatic anaemia and surgical blood loss | 1 to 6°C; 35 days (CPDA-1), 42 days (additive solution) |
+| **Platelet concentrate** | Prevent or treat bleeding in thrombocytopenia | 20 to 24°C with constant agitation; 5 days for a single unit |
+| **Fresh frozen plasma** | Replaces labile and stable clotting factors | At or below minus 18°C for 12 months; after thawing 24 hours at 1 to 6°C |
+| **Cryoprecipitate** | Source of factor VIII, fibrinogen and von Willebrand factor; haemophilia, von Willebrand disease, DIC, low fibrinogen | At or below minus 18°C for 1 year |
+| **Granulocytes** | Neutropenic patients with culture-proven gram-negative infection unresponsive to antibiotics | 20 to 24°C for 24 hours; infused as soon as possible |
 
 
 ## Screening tests for safe blood transfusion / diseases for which blood must be screened.
 
-Every unit of donor blood must be screened for transfusion-transmissible infections, namely HIV, hepatitis B, hepatitis C, syphilis and malaria, in addition to ABO and Rh grouping and antibody screening.
-
-1. **Infection screening (mandatory):** HIV-1 and HIV-2 (antibody/antigen combination assay, and nucleic acid testing where available); hepatitis B surface antigen (HBsAg); hepatitis C antibody (anti-HCV); syphilis (VDRL/RPR with TPHA or treponemal assay); malaria parasite (film or rapid antigen test, in endemic areas).
-2. **Additional tests, according to regional policy:** anti-HBc, nucleic acid testing for HIV, HCV and HBV, CMV antibodies (for neonates and immunocompromised patients), HTLV-I/II, West Nile virus, Trypanosoma cruzi (Chagas disease), and babesia in endemic areas.
-3. **Immunohaematological tests:** ABO and Rh (D) grouping of the donor, and screening for unexpected red cell antibodies, and cross-matching with the recipient.
-
-Safety is also assured by donor selection (history and examination, haemoglobin testing, deferral of high-risk donors), voluntary non-remunerated donation, and the use of platelet bacterial testing. With current testing, the risk of transmission of HIV, hepatitis C and hepatitis B is estimated at about 1 in 1.5 million, 1 in 1.2 million and 1 in 1 million units, respectively, with residual risk from donors in the window period.
+1. **HIV-1 and HIV-2:** anti-HIV-1/2 immunoassay, or preferably a combined p24 antigen and antibody immunoassay.
+2. **Hepatitis B:** HBsAg immunoassay.
+3. **Hepatitis C:** anti-HCV immunoassay, or preferably a combined antigen and antibody assay.
+4. **Syphilis:** treponemal antibody test (TPHA or EIA).
+5. **Malaria:** thick film or antigen EIA in endemic areas (selective).
+6. **Chagas disease, HTLV-I/II and CMV:** antibody tests where indicated (selective).
+7. ABO and RhD grouping is done on all donations; only units non-reactive on all tests are released.
 
 
 ## Contraindications of blood transfusion.
 
-There are no absolute contraindications to transfusion in life-threatening haemorrhage, but transfusion is relatively contraindicated when the anaemia can be corrected with specific haematinic therapy, and special precautions are required in patients at risk of volume overload or of severe reactions.
-
-1. **Anaemia correctable by specific therapy:** iron, vitamin B₁₂ or folate deficiency, in a patient who is stable, since transfusion carries risks and these patients respond to specific therapy.
-2. **Cardiac failure, pulmonary oedema, severe chronic anaemia with hypervolaemia and renal failure:** risk of circulatory overload; if transfusion is essential, packed cells given slowly with a diuretic.
-3. **History of severe transfusion reactions:** (anaphylaxis, TRALI, repeated febrile or allergic reactions); washed or leucodepleted components are used.
-4. **IgA deficiency with anti-IgA antibodies:** requires IgA-deficient donors or washed cells.
-5. **Alloimmunisation with difficult cross-match,** and autoimmune haemolytic anaemia (transfuse only when life-threatening, with the least incompatible blood).
-6. **Cold agglutinin disease:** requires the use of a blood warmer.
-7. **Unavailability of compatible blood or lack of consent,** and use of blood as a volume expander or "tonic."
+- **Absolute:** patient refusal, such as religious objection.
+- Transfusion should be avoided in a stable patient with haemoglobin 7 to 8 g/dL, who is not expected to benefit.
+- Iron deficiency without haemodynamic instability calls for iron therapy first.
+- Plasma is not given for a mildly raised INR (below 1.8) or routine non-emergent warfarin reversal; vitamin K is preferred.
+- Severe IgA deficiency needs washed cells or platelets, or plasma from IgA-deficient donors.
+- Patients at risk of circulatory overload need slow infusion of red cells with prophylactic diuretics.
+- Post-transfusion purpura: avoid further platelet or red cell transfusion.
 
 
 ## Mention the diseases transmitted by blood transfusion.
 
-The principal diseases transmitted by blood transfusion are viral infections (HIV, hepatitis B and C), syphilis, malaria and bacterial contamination, and they are the reason all donor blood is screened.
-
-Virtually any infectious agent can be transmitted through blood products, but bacterial and viral infections are the dominant culprits.
-
-- **Viral:** HIV, hepatitis B, hepatitis C, hepatitis A and E (rare), cytomegalovirus, Epstein-Barr virus, human T-cell lymphotropic virus (HTLV-I/II), parvovirus B19, West Nile virus, dengue and Zika. Transmission occurs when the donor is acutely infected but the virus is not yet detectable on current testing (the window period).
-- **Bacterial:** Treponema pallidum (syphilis; the organism does not survive more than 72 hours in blood stored at 4°C), and bacterial contamination with skin flora, Yersinia enterocolitica and Gram-negative organisms, which is much more common in platelet concentrates (stored at room temperature), with rates up to 1 in 5000, than red cells.
-- **Protozoal and parasitic:** malaria, babesiosis, trypanosomiasis (Chagas disease), leishmaniasis (kala-azar), toxoplasmosis and filariasis.
-- **Others:** prions (variant Creutzfeldt-Jakob disease), and brucellosis.
+1. **Viruses:** HIV, hepatitis C and hepatitis B; estimated rates are 1 in 1.5 million, 1 in 1.2 million and 1 in 1 million units respectively; also West Nile virus, HTLV-I/II and CMV.
+2. **Bacteria:** mostly skin flora contaminating the unit at collection; symptomatic contamination is much more common with platelets (as high as 1 in 5000) than with red cells, because platelets are stored at room temperature.
+3. **Syphilis**
+4. **Protozoa:** malaria, Chagas disease (trypanosomes) and babesia.
+5. Emerging agents: variant CJD, dengue, chikungunya.
 
 
 ## Hazards / immediate and delayed complications of blood transfusion.
 
-The complications of blood transfusion are divided into immediate (acute) reactions, most of which are immunological, such as febrile, allergic and haemolytic reactions and TRALI, and delayed complications, such as delayed haemolysis, infections, iron overload and alloimmunisation.
-
-**Immediate (within 24 hours)**
-
-- Febrile nonhaemolytic reaction (the commonest): fever and chills, sometimes mild dyspnoea, within 6 hours, caused by inflammatory mediators from donor leukocytes.
-- Allergic reactions: urticarial (IgE-mediated, 1% to 3% of transfusions) and, rarely, anaphylaxis in IgA-deficient recipients with anti-IgA antibodies.
-- Acute haemolytic reaction: ABO-incompatible transfusion; complement-mediated intravascular haemolysis.
-- Transfusion-related acute lung injury (TRALI): sudden respiratory failure with bilateral infiltrates, due to donor antibodies (anti-HLA or anti-neutrophil) activating neutrophils in the lung.
-- Bacterial contamination and septic shock; transfusion-associated circulatory overload; air embolism.
-- Massive transfusion effects: citrate toxicity and hypocalcaemia, hyperkalaemia, hypothermia, dilutional coagulopathy and thrombocytopenia, acidosis.
-
-**Delayed (days to years)**
-
-- Delayed haemolytic reaction (anamnestic response to Rh, Kell or Kidd antigens, extravascular, 3 to 14 days).
-- Transmission of infection: HIV, hepatitis B and C, CMV, malaria, syphilis.
-- Iron overload (secondary haemochromatosis) in repeatedly transfused patients.
-- Alloimmunisation to red cell, HLA and platelet antigens; post-transfusion purpura; transfusion-associated graft-versus-host disease in immunodeficient patients.
+| Reaction | Features |
+|---|---|
+| **Febrile nonhaemolytic** | Commonest; fever and chills, sometimes mild dyspnoea, within 6 hours of red cell or platelet transfusion; due to inflammatory mediators from donor leucocytes; frequency rises with storage age; responds to antipyretics |
+| **Allergic** | Severe reactions in sensitised recipients, most likely in IgA deficiency (about 1 in 600), where IgG antibodies recognise IgA; occur in 1 in 20,000 to 1 in 50,000 transfusions; urticarial reactions are IgE mediated, occur in 1% to 3% and are mild |
+| **Acute haemolytic** | Preformed IgM antibodies against donor red cells fix complement; usually ABO-incompatible unit; fever, shaking chills and flank pain; may progress to DIC, shock, acute renal failure and death |
+| **TRALI** | Transfusion-related acute lung injury; sudden respiratory failure during or soon after transfusion; bilateral pulmonary infiltrates not responding to diuretics; fever, hypotension and hypoxaemia; incidence less than 1 in 10,000; mortality 5% in uncomplicated cases, up to 67% in the severely ill |
+| **Bacterial infection** | Fever, chills and hypotension; more common with platelets |
+| **Circulatory overload** | About 1% of transfusions; respiratory distress or hypertension within 12 hours |
+| **Delayed haemolytic** | IgG antibodies to antigens of previous sensitisation; extravascular haemolysis; positive direct Coombs test, low haptoglobin, raised LDH; antibodies to Rh, Kell and Kidd may cause severe reactions; occurs after 24 hours, usually about 2 weeks and up to 30 days |
+| **Viral infection** | HIV, hepatitis C and hepatitis B |
+| **Graft-versus-host disease** | 4 to 30 days after transfusion |
+| **Post-transfusion purpura** | 5 to 10 days after transfusion |
+| **Iron overload** | Generally after 15 to 20 red cell units |
 
 
 ## Write a short note on Rh-incompatibility.
 
-Rh incompatibility arises when an Rh-negative mother carrying an Rh-positive foetus becomes sensitised to the D antigen and produces IgG anti-D that crosses the placenta and destroys foetal red cells, causing haemolytic disease of the newborn.
+**Definition.** Immune hydrops is a haemolytic disease caused by blood group antigen incompatibility between mother and fetus; it occurs in second and subsequent pregnancies of an Rh-negative mother with an Rh-positive father.
 
-**Pathogenesis.** The mother lacks the D antigen (Rh-negative), whereas the foetus has inherited it from the father (Rh-positive). During pregnancy, and particularly at delivery, foetal red cells enter the maternal circulation (fetomaternal haemorrhage); sensitisation may also occur following miscarriage, abortion, ectopic pregnancy, amniocentesis or mismatched transfusion. The mother produces first IgM and then IgG anti-D, which crosses the placenta in later pregnancies, so the first Rh-positive child is usually unaffected, and the severity increases with each subsequent Rh-positive pregnancy. The IgG-coated foetal red cells are destroyed by macrophages of the spleen and liver (extravascular haemolysis).
+**Aetiology and pathogenesis**
+- The fetus inherits red cell antigens from the father that are foreign to the mother.
+- Fetal red cells reach the maternal circulation in the last trimester or during childbirth, and the mother becomes sensitised.
+- The first exposure evokes IgM antibodies, which do not cross the placenta; so Rh disease is uncommon in the first pregnancy.
+- Exposure in a later pregnancy gives a brisk IgG response; the antibodies cross the placenta and lyse fetal red cells.
+- Of the Rh antigens, only the **D antigen** is a major cause.
+- Haemolytic disease develops only after a significant transplacental bleed (more than 1 mL of Rh-positive fetal red cells).
+- Concurrent ABO incompatibility protects the mother, because fetal red cells are promptly coated and removed by anti-A or anti-B IgM antibodies.
 
-**Consequences.** Foetal anaemia with compensatory erythroid hyperplasia and extramedullary haemopoiesis (hepatosplenomegaly and nucleated red cells, "erythroblastosis fetalis"), jaundice appearing in the first 24 hours due to unconjugated hyperbilirubinaemia with risk of kernicterus, and in the most severe cases hydrops fetalis with generalised oedema, ascites and heart failure, causing foetal death. The direct Coombs test on the infant's cells is positive.
+**Morphology**
+- Fetus and placenta are pale; liver and spleen are enlarged.
+- Bone marrow shows compensatory hyperplasia of erythroid precursors, and extramedullary haematopoiesis is present in liver, spleen and lymph nodes.
+- Many immature red cells (reticulocytes and erythroblasts) circulate, called **erythroblastosis fetalis**.
+- **Kernicterus:** brain is enlarged, oedematous and bright yellow from bilirubin, especially in the basal ganglia, thalamus, cerebellum, cerebral grey matter and spinal cord; usually needs bilirubin above 20 mg/dL in term infants.
 
-**Prevention and treatment.** Anti-D immunoglobulin to Rh-negative mothers at 28 weeks and within 72 hours of delivery of an Rh-positive child, and after any sensitising event; antenatal monitoring of maternal anti-D titres, intrauterine transfusion, and after birth phototherapy and exchange transfusion. ABO incompatibility (maternal O, infant A or B) is more common and milder.
+**Clinical features and complications**
+- Anaemia, with hypoxic injury to the heart and liver; cardiac failure and fall in plasma proteins lead to generalised oedema and anasarca (**hydrops fetalis**).
+- Unconjugated bilirubin passes through the infant's poorly developed blood-brain barrier and causes jaundice and kernicterus.
+- Mild cases show pallor, with hepatosplenomegaly; severe cases show intense jaundice, generalised oedema and neurological injury.
+- Infants may be stillborn, die in the first days, or recover completely.
+- Treatment: phototherapy, exchange transfusion; fetal intravascular transfusion and early delivery in severe intrauterine haemolysis.
+- Prevention: Rhesus immune globulin (anti-D) to Rh-negative mothers at 28 weeks and within 72 hours of delivery, and after abortions.
 
 
 ## Complications of mismatched blood transfusion.
 
-Transfusion of mismatched (ABO-incompatible) blood causes an acute haemolytic transfusion reaction, in which preformed IgM antibodies fix complement and cause intravascular haemolysis, which can lead to shock, disseminated intravascular coagulation and acute renal failure.
-
-Preexisting high-affinity "natural" IgM antibodies, usually against the polysaccharide antigens A or B, bind to the transfused red cells and rapidly induce complement-mediated lysis, intravascular haemolysis and haemoglobinuria. Fever, shaking chills and flank pain appear rapidly (within minutes), accompanied by facial flushing, chest pain, nausea, hypotension and oozing from puncture sites. The signs and symptoms are due to complement activation and release of cytokines rather than to intravascular haemolysis itself. The direct Coombs test is typically positive unless all donor cells have lysed. In severe cases the process rapidly progresses to DIC, shock, acute renal failure (from hypotension, free haemoglobin and microthrombi) and occasionally death. Jaundice and a fall in haemoglobin follow. Delayed haemolytic reactions, in contrast, are caused by IgG antibodies to antigens such as Rh, Kell and Kidd to which the patient was previously sensitised, producing extravascular haemolysis, a positive direct Coombs test, a low haptoglobin and raised LDH, 3 to 14 days after transfusion.
-
-Management is to stop the transfusion immediately, keep the intravenous line open with saline, verify identification, send the unit and a fresh sample to the laboratory, maintain blood pressure and urine output (fluids, diuretics), and treat DIC.
+- Cause: preformed IgM antibodies against donor red cells fix complement; most commonly an ABO-incompatible unit given through an error in patient identification or tube labelling.
+- **Intravascular haemolysis** and haemoglobinuria.
+- Fever, shaking chills and flank pain appear rapidly; direct Coombs test is typically positive.
+- Signs and symptoms are due to complement activation rather than intravascular haemolysis itself.
+- Free haemoglobin causes **acute kidney injury** with reduced urine output.
+- **DIC**, with diffuse bleeding.
+- Shock and acute renal failure.
+- Death in severe cases.
 
 
 ## What is an anticoagulant?
 
-An anticoagulant is a substance that prevents or delays the clotting of blood, either in vitro, for collection and storage of blood samples, or in vivo, for the prevention and treatment of thrombosis.
-
-In vitro (laboratory) anticoagulants act mainly by binding or precipitating calcium ions (EDTA, citrate, oxalate) or by inhibiting thrombin and factor Xa through antithrombin (heparin), thereby interrupting the coagulation cascade, which is calcium-dependent. In vivo (therapeutic) anticoagulants include heparin and low-molecular-weight heparins (which potentiate antithrombin), warfarin (a vitamin K antagonist that blocks γ-carboxylation of factors II, VII, IX and X), and direct oral anticoagulants (thrombin and factor Xa inhibitors).
+An anticoagulant is a chemical substance that prevents blood from clotting. In the laboratory it is added to blood in a fixed proportion and used only in vitro.
 
 
 ## Enumerate anticoagulants used in the laboratory.
 
-The commonly used laboratory anticoagulants are EDTA, trisodium citrate, heparin and double oxalate, and for storing blood, acid-citrate-dextrose (ACD) and citrate-phosphate-dextrose-adenine (CPDA-1).
-
-1. **EDTA (ethylenediaminetetraacetic acid, K₂ or K₃ salts):** 1.5 mg/mL of blood; for complete blood counts and blood films.
-2. **Trisodium citrate:** 3.2% (or 3.8%) in the ratio 1 part to 9 parts of blood for coagulation tests (PT, PTT) and 1 to 4 for ESR (Westergren).
-3. **Heparin (sodium or lithium):** 10 to 20 units/mL, for blood gases, osmotic fragility, cytogenetics and some chemical tests.
-4. **Double oxalate (Wintrobe's mixture of ammonium and potassium oxalate):** 2 mg/mL, for PCV and some biochemical tests.
-5. **Sodium fluoride (with potassium oxalate):** for blood glucose estimation, since it inhibits glycolysis.
-6. **Blood bank anticoagulant–preservatives:** ACD, CPD, CPDA-1 (and additive solutions such as SAGM).
+1. **EDTA** (purple cap): chelates calcium.
+2. **Trisodium citrate** (light blue cap): binds calcium reversibly.
+3. **Heparin** (green cap): binds antithrombin, which inactivates thrombin and other clotting factors.
+4. **Oxalates:** double oxalate (potassium and ammonium oxalate in the ratio 2 to 3, at 2 mg/mL) or potassium oxalate; precipitate calcium as insoluble calcium oxalate.
+5. **Sodium fluoride:** used with oxalate for glucose estimation.
+6. **ACD, CPD and CPDA-1:** used for blood storage.
 
 
 ## Merits and demerits of anticoagulants.
 
-Each laboratory anticoagulant has its own merits and demerits, so the choice depends on the test: EDTA is best for cell counting and morphology, citrate for coagulation tests and ESR, heparin for functional and cytogenetic studies, and oxalate for PCV.
-
 | Anticoagulant | Merits | Demerits |
 |---|---|---|
-| EDTA (K₂/K₃) | Preserves cell morphology and size; prevents platelet clumping; ideal for CBC, films and haemoglobin electrophoresis | Inhibits coagulation tests (chelates Ca²⁺); distorts cells if left more than 2 to 4 hours; causes pseudothrombocytopenia from platelet satellitism in some persons; K₃ salt shrinks cells (lowers PCV slightly) |
-| Trisodium citrate | Reversible calcium binding; preserves labile factors V and VIII; standard for PT, PTT, ESR and coagulation assays; used in blood bank solutions | Liquid form dilutes the sample (needs exact ratio); not suitable for cell counts; excess causes citrate toxicity in transfusion |
-| Heparin | Does not alter red cell size; no effect on most electrolytes; used for osmotic fragility, blood gases and chromosome studies | Expensive; causes leukocyte clumping and a blue background on Romanowsky stains; interferes with coagulation tests; short duration of action (24 hours) |
-| Double oxalate | Inexpensive; non-shrinking and non-swelling combination; suitable for PCV | Poisons enzymes; distorts cells over time; unsuitable for coagulation, blood films and some biochemical tests |
-| Sodium fluoride | Inhibits glycolysis, preserving glucose for 24 hours or more | Weak anticoagulant on its own; inhibits enzymes; unsuitable for enzyme tests |
-| CPDA-1 / SAGM (blood bank) | Citrate prevents clotting; phosphate buffer; dextrose and adenine support red cell metabolism and ATP; extends storage to 35 to 42 days | Storage lesion still develops (potassium rises, 2,3-DPG falls) |
+| **EDTA** | Preserves cell morphology for about 3 hours; inhibits platelet clumping; suits PCR | Unsuitable for coagulation studies (binds calcium irreversibly, affects factors V and VIII); causes platelet satellitism; excess shrinks cells and lowers PCV; inhibits ALP and CK |
+| **Trisodium citrate** | Binding of calcium is reversible; preserves factors V and VIII | Liquid dilutes the blood, so unsuitable for PCV, haemoglobin, TLC and DLC; inhibits ALP and aminotransferase |
+| **Heparin** | Does not alter red cell size; reduces lysis | Effect is temporary; causes platelet and leucocyte clumping, so not for counts or films; bluish background on films; inhibits PCR |
+| **Oxalates** | Used for chemistry tests, PCV, ESR, TLC and specific gravity | Potassium oxalate shrinks red cells; ammonium oxalate swells them |
+| **Sodium fluoride** | Preserves glucose | Inhibits many enzymes; interferes with electrolyte measurement; poorly preserves white cell morphology |
 
 
 ## Name the blood groups with their antigens.
