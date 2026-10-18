@@ -14,13 +14,6 @@
   "post": "<style id=\"zz-perf\">@media (min-width:70"
  },
  {
-  "old": "<ol start=\"12\">",
-  "new": "<ol>",
-  "nth": 0,
-  "pre": "/li></ol><h4 class=\"sub\">Neoplastic</h4>",
-  "post": "<li><strong>Hepatocellular carcinoma</st"
- },
- {
   "old": "Beckwith–Wiedemann syndrome</strong>",
   "new": "Beckwith–Wioedemann syndrome</strong>",
   "nth": 0,
