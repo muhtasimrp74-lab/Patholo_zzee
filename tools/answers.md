@@ -3744,11 +3744,10 @@ Exceptions to these basic rules:
 
 ## Two examples of autosomal recessive disorders.
 
-Tay-Sachs disease, a lysosomal storage disease, and phenylketonuria, an inborn error of amino acid metabolism.
-
-**Tay-Sachs disease.** This is GM2 gangliosidosis caused by deficiency of the α-subunit of β-hexosaminidase A (HEXA gene). It is common in Ashkenazi Jews, who have a carrier rate of about 1 in 30. GM2 ganglioside accumulates in neurons, which become ballooned with distended lysosomes. Electron microscopy shows whorled, "onion-skin" lysosomal membranes. Infants are normal at birth but from about 6 months show relentless motor and mental deterioration, flaccidity and blindness. A cherry-red spot in the macula is characteristic though not pathognomonic. Death occurs at 2–3 years. Carrier detection and antenatal diagnosis are possible by enzyme assay and DNA analysis.
-
-**Phenylketonuria.** The enzyme phenylalanine hydroxylase is deficient. Phenylalanine and its metabolites accumulate, producing intellectual disability, seizures, hypopigmentation and a mousy odour. Newborn screening allows dietary restriction of phenylalanine to prevent the neurologic damage.
+| Disorder | Inheritance |
+|---|---|
+| **Gaucher disease** | An autosomal recessive disorder resulting from mutations in the gene encoding glucocerebrosidase; it is the most common lysosomal storage disorder |
+| **Mucopolysaccharidoses** | All are inherited as autosomal recessive traits except Hunter syndrome, which is an X-linked recessive trait |
 
 
 ## What are the features of autosomal dominant inheritance?
@@ -3805,137 +3804,136 @@ Examples. Cystic fibrosis, phenylketonuria, galactosaemia, homocystinuria, lysos
 
 ## Types of chromosomal disorders.
 
-Chromosomal disorders are of two types, numerical and structural, and each can involve autosomes or sex chromosomes.
+Chromosomal (cytogenetic) disorders take the form of an abnormal number of chromosomes or alterations in the structure of one or more chromosomes.
 
-Numerical abnormalities. The normal complement is 46 chromosomes, which is euploid (an exact multiple of the haploid number, 23). A complement that is not an exact multiple of 23 is aneuploidy. The usual causes are nondisjunction in meiosis or mitosis and anaphase lag. Nondisjunction in gametogenesis produces gametes with n+1 or n−1 chromosomes, which after fertilisation give trisomic (2n+1) or monosomic (2n−1) zygotes. Examples are trisomy 21, 18 and 13, Turner syndrome (45,X) and Klinefelter syndrome (47,XXY).
+| Type | Details |
+|---|---|
+| **Numerical abnormalities** | Any exact multiple of the haploid number (23) is **euploid**; a chromosome complement that is not an exact multiple of 23 is **aneuploidy**, usually due to nondisjunction or anaphase lag; the result is **trisomy** (2n plus 1) or **monosomy** (2n minus 1) |
+| **Structural abnormalities** | Usually result from chromosome breakage followed by loss or rearrangement of material: translocation, isochromosome, inversion, deletion and ring chromosome |
+| **Mosaicism** | Two or more populations of cells with different chromosomal complements in the same individual, from mitotic errors in early development |
 
-Structural abnormalities. These result from chromosome breakage followed by loss or rearrangement of material, and they include translocations (balanced reciprocal and Robertsonian), deletions, inversions, isochromosomes and ring chromosomes.
-
-Mosaicism. Mitotic errors in early development give two or more cell lines with different complements in one person, such as 45,X/46,XX Turner mosaics.
+They may involve the autosomes or the sex chromosomes.
 
 
 ## Examples of chromosomal / cytogenetic disorders.
 
-Down syndrome, Edwards syndrome, Patau syndrome, Turner syndrome, Klinefelter syndrome and 22q11.2 deletion syndrome.
-
-| Category | Disorder | Chromosomal abnormality |
+| Group | Disorder | Chromosomal abnormality |
 |---|---|---|
-| Autosomal trisomy | Down syndrome | Trisomy 21 (47,XX or XY,+21) |
-| | Edwards syndrome | Trisomy 18 |
-| | Patau syndrome | Trisomy 13 |
-| Autosomal deletion | DiGeorge/velocardiofacial syndrome | Deletion of 22q11.2 |
-| Sex chromosome | Turner syndrome | 45,X and variants |
-| | Klinefelter syndrome | 47,XXY and variants |
-
-Trisomies 18 and 13 usually result from meiotic nondisjunction and are associated with advanced maternal age. The malformations are much more severe than in Down syndrome, so most infants die within weeks to months and rarely survive beyond the first year.
+| Autosomal | **Down syndrome** | Trisomy 21 |
+| Autosomal | **Edwards syndrome** | Trisomy 18 |
+| Autosomal | **Patau syndrome** | Trisomy 13 |
+| Autosomal | **22q11.2 deletion syndrome** (DiGeorge syndrome and velocardiofacial syndrome) | Small deletion of band q11.2 on the long arm of chromosome 22 |
+| Sex chromosomes | **Klinefelter syndrome** | Two or more X chromosomes and one or more Y chromosomes; classically 47,XXY |
+| Sex chromosomes | **Turner syndrome** | Complete or partial monosomy of the X chromosome; classically 45,X |
 
 
 ## Classic karyotype of trisomy 21.
 
-The classic karyotype is 47,XX,+21 in a female and 47,XY,+21 in a male, with three copies of chromosome 21.
-
-The karyotype is written as the total number of chromosomes, then the sex chromosomes, then the abnormality. About 95% of Down syndrome patients have this free trisomy 21, caused by meiotic nondisjunction (maternal in origin in about 95% of cases). The parents have normal karyotypes. The other forms are:
-
-- **Robertsonian translocation** (about 4%): 46 chromosomes with the long arm of 21 attached to another acrocentric chromosome (14 or 22). The carrier parent has a balanced karyotype such as 45,XX,der(14;21)(q10;q10).
-- **Mosaicism** (about 1%): 46,XY/47,XY,+21.
+- The classic karyotype is **47,XX,+21** in a female and **47,XY,+21** in a male.
+- Approximately 95% of affected individuals have trisomy 21, so their chromosome count is 47.
+- FISH with chromosome 21-specific probes reveals the extra copy of chromosome 21.
+- The most common cause is meiotic nondisjunction, and the parents of such children have a normal karyotype.
 
 
 ## Disorders associated with alteration in the number of chromosomes.
 
-These are the aneuploidies, mainly trisomy 21 (Down syndrome), trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome), monosomy X (Turner syndrome) and 47,XXY (Klinefelter syndrome).
+| Disorder | Karyotype | Alteration |
+|---|---|---|
+| **Down syndrome** | 47,XX,+21 or 47,XY,+21 | Trisomy 21 |
+| **Edwards syndrome** | Trisomy 18 | Extra copy of chromosome 18 |
+| **Patau syndrome** | Trisomy 13 | Extra copy of chromosome 13 |
+| **Klinefelter syndrome** | 47,XXY in 90% of cases | Extra X chromosome |
+| **Turner syndrome** | 45,X in approximately 57% of cases | Monosomy of the X chromosome |
 
-An abnormal number of chromosomes, not a multiple of 23, is aneuploidy, and its usual causes are nondisjunction and anaphase lag. Monosomy of an autosome usually causes too much loss of genetic information to permit live birth. Several autosomal trisomies permit survival, although except for trisomy 21 they produce severe malformations and early death. Sex chromosome numerical abnormalities are far better tolerated, because only one X chromosome is active (lyonisation) and the Y chromosome carries little genetic material. Mosaic forms, for example 45,X/47,XXX, arise by nondisjunction in early mitotic divisions.
+- Other trisomies involving chromosomes 8, 9, 13, 18 and 22 have been described.
+- Monosomy involving an autosome generally causes loss of too much genetic information to permit live birth or even embryogenesis.
+- Except for trisomy 21, all autosomal trisomies produce severe malformations and almost invariably death at an early age.
 
 
 ## Complications of Down syndrome.
 
-The main complications are congenital heart disease, gastrointestinal atresias, increased risk of leukaemia, early Alzheimer disease, and immune abnormalities with serious infections and thyroid autoimmunity.
+1. **Congenital heart disease** occurs in approximately 40% of patients.
 
-- **Congenital heart disease** is present in about 40% of patients. Atrioventricular septal defects account for 43%, ventricular septal defects 32%, atrial septal defects 19% and tetralogy of Fallot 6%. Cardiac problems cause most deaths in infancy and early childhood.
-- **Gastrointestinal malformations** include atresia of the oesophagus and small bowel.
-- **Leukaemia.** The risk of precursor B-cell acute lymphoblastic leukaemia is increased about 20-fold, and that of acute myeloid leukaemia about 500-fold.
-- **Alzheimer disease.** Virtually all patients over age 40 develop the neuropathologic changes of Alzheimer disease, attributed in part to overexpression of the APP gene on chromosome 21.
-- **Immunologic abnormalities.** T-cell defects predispose to serious infections, particularly of the lungs, and to thyroid autoimmunity (hypothyroidism).
-- **Intellectual disability** is universal in full trisomy and is a leading cause of intellectual disability in the population.
+- Atrioventricular septal defects account for 43% of cases.
+- Ventricular septal defects account for 32%.
+- Atrial septal defects account for 19%.
+- Tetralogy of Fallot accounts for 6%.
+- Cardiac problems are responsible for most of the deaths in infancy and early childhood.
 
-Improved care has increased longevity, and the median age at death is now about 47 years.
+2. **Other congenital malformations**, including atresias of the oesophagus and small bowel, are common.
+3. **Leukaemia:** there is a 20-fold increased risk of precursor B cell acute lymphoblastic leukaemia and a 500-fold increased risk of acute myeloid leukaemias.
+4. **Alzheimer disease:** virtually all patients older than age 40 develop neuropathological changes characteristic of Alzheimer disease.
+5. **Infections and autoimmunity:** abnormal immune responses predispose to serious infections, particularly of the lungs, and to thyroid autoimmunity.
 
 
 ## Structural alterations of chromosomes in cytogenetic disorders.
 
-Structural alterations include translocations (balanced reciprocal and Robertsonian), deletions, inversions, isochromosomes and ring chromosomes. They result from chromosome breakage followed by loss or rearrangement of material.
+Structural changes usually result from chromosome breakage followed by loss or rearrangement of material.
 
-To be visible by routine banding, about 2–4 million base pairs must be involved. FISH detects changes as small as kilobases.
-
-- **Translocation.** A segment of one chromosome is transferred to another.
-- Balanced reciprocal translocation: single breaks in two chromosomes with exchange of material, as in 46,XX,t(2;5)(q31;p14). The carrier is usually normal but is at risk of producing unbalanced gametes, leading to miscarriage or a malformed child.
-- Robertsonian translocation (centric fusion): a translocation between two acrocentric chromosomes (13, 14, 15, 21, 22) with loss of the small fragment. Carriers are phenotypically normal and are at risk of having a child with Down syndrome (21 translocated to 14 or 22).
-- **Deletion.** Loss of part of a chromosome. Interstitial deletion involves two breaks in one arm with loss of the intervening segment, for example 46,XY,del(16)(p11.2p13.1). Terminal deletion results from a single break. The 22q11.2 microdeletion is a clinical example.
-- **Inversion.** Two breaks within one chromosome with reinsertion of the inverted segment. It is paracentric if confined to one arm and pericentric if it spans the centromere. Inversions are often compatible with normal development because there is no net copy number change.
-- **Isochromosome.** One arm is lost and the other duplicated, so the chromosome has two identical arms. The commonest in live births is i(X)(q10), which causes monosomy of Xp genes and trisomy of Xq genes (Turner syndrome).
-- **Ring chromosome.** A special form of deletion in which breaks at both ends are followed by fusion of the damaged ends. Rings behave abnormally in mitosis and meiosis, for example 46,XY,r(14).
+| Alteration | Description |
+|---|---|
+| **Balanced reciprocal translocation** | Single breaks in each of two chromosomes with exchange of material; no or very little loss of genetic material, so the carrier is likely phenotypically normal but at increased risk of producing abnormal gametes |
+| **Robertsonian translocation (centric fusion)** | Translocation between two acrocentric chromosomes (13, 14, 15, 21, 22), with breaks close to the centromeres; one very large chromosome and one extremely small chromosome result, and the small product is usually lost |
+| **Isochromosome** | One arm of a chromosome is lost and the remaining arm is duplicated; the most common in live births is the isochromosome of the long arm of the X chromosome, i(X)(q10) |
+| **Inversion** | Two breaks within a single chromosome followed by reinsertion of the inverted intervening segment; **paracentric** if confined to one arm, **pericentric** if the breaks are on opposite sides of the centromere |
+| **Deletion** | Loss of a portion of a chromosome; **interstitial** (two breaks within a chromosome arm) or **terminal** (a single break) |
+| **Ring chromosome** | A special form of deletion, produced when a break occurs at both ends of a chromosome with fusion of the damaged ends |
 
 
 ## What do you mean by karyotype?
 
-A karyotype is the complete chromosome complement of an individual's cells, displayed as an arrangement of the chromosomes in pairs by decreasing length, followed by the sex chromosomes. Karyotyping is the study of chromosomes.
-
-Dividing cells are arrested in metaphase with mitotic spindle inhibitors (colchicine derivatives) and stained. In the metaphase spread each chromosome shows two chromatids joined at the centromere. The chromosomes are arranged by length, and the sex chromosomes are placed last. The most useful method is Giemsa (G) banding, which produces alternating light and dark bands specific to each chromosome. Standard G banding resolves about 400–800 bands per haploid set, and prophase preparations up to about 1500. The short arm is designated p and the long arm q, and each arm is divided into regions, bands and sub-bands numbered from the centromere outward (Xp21.2).
-
-The normal karyotypes are 46,XX and 46,XY. Notation lists the total number, the sex chromosomes and then abnormalities, for example 47,XY,+21.
+The study of chromosomes is called **karyotyping**. A **karyotype** is obtained by arranging each pair of autosomes according to length, followed by the sex chromosomes.
 
 
 ## Normal genotype of a male and a female.
 
-The normal male has 46,XY and the normal female has 46,XX. Each has 22 pairs of autosomes plus two sex chromosomes.
+| Sex | Normal chromosome complement |
+|---|---|
+| **Male** | 46,XY |
+| **Female** | 46,XX |
 
-Strictly, these are the chromosomal complement (karyotype) rather than the genotype. Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and two sex chromosomes, XX in females and XY in males. Gametes are haploid, with 23 chromosomes. A single Y chromosome determines the male sex, through the SRY gene on its short arm, whatever the number of X chromosomes. In females one X is inactivated, giving the Barr body.
+Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and two sex chromosomes, XX in the female and XY in the male.
 
 
 ## What are the cytogenetic disorders?
 
-Cytogenetic (chromosomal) disorders are diseases caused by abnormalities in the number or structure of chromosomes. They involve altered copy number of a region that may include many genes, and they arise mostly spontaneously in the germline or early in development, although some are inherited from a carrier of a balanced rearrangement.
-
-Chromosomal abnormalities are present in about 7.5% of all conceptions, but most are incompatible with survival and are a major cause of early spontaneous pregnancy loss. Among live births the frequency is 0.5–1%.
-
-Classification.
-
-- **Numerical abnormalities:** aneuploidy (trisomy, monosomy), produced by nondisjunction or anaphase lag.
-- **Structural abnormalities:** translocations, deletions, inversions, isochromosomes and ring chromosomes.
-- **Autosomal or sex chromosomal**, and with or without mosaicism.
-
-Principal disorders.
-
-- **Autosomal:** Down syndrome (trisomy 21), Edwards (trisomy 18), Patau (trisomy 13), and 22q11.2 deletion syndrome.
-- **Sex chromosomal:** Klinefelter syndrome and Turner syndrome. These are far more common than autosomal disorders because sex chromosome imbalances are better tolerated, through X inactivation and the small amount of genetic material on the Y.
-
-Diagnosis. Karyotyping with G banding, FISH, array-based methods and, prenatally, cell-free foetal DNA screening confirmed by karyotyping of amniocytes or chorionic villus cells.
+Cytogenetic disorders may take the form of an abnormal number of chromosomes or alterations in the structure of one or more chromosomes.
 
 
 ## Write a short note on Down's syndrome.
 
-Down syndrome (trisomy 21) is the commonest chromosomal disorder and a major cause of intellectual disability. The incidence in newborns is about 1 in 700.
+**Definition**
 
-Genetics.
+- **Down syndrome** is the most common chromosomal disorder and a major cause of intellectual disability.
+- It is associated with an extra copy of genes on chromosome 21.
+- The incidence in newborns in the United States is about 1 in 700.
 
-- About 95% of cases have a free trisomy 21 (47 chromosomes), usually from meiotic nondisjunction. The extra chromosome is of maternal origin in about 95%, and the parents have normal karyotypes. The incidence rises with maternal age: about 1 in 1550 live births under age 20 and 1 in 25 over age 45.
-- About 4% result from a Robertsonian translocation of the long arm of 21 to another acrocentric chromosome (14 or 22). These are sometimes familial, with a balanced carrier parent, usually the mother.
-- About 1% are mosaics, from mitotic nondisjunction in early embryogenesis, with milder and variable features.
-- In translocation and mosaic cases maternal age is unimportant.
+**Aetiology and pathogenesis**
 
-Pathogenesis. The phenotype results from gene dosage effects at many loci. Most chromosome 21 protein-coding genes are overexpressed, including APP, which contributes to early Alzheimer disease. About 10% of the overexpressed genes regulate mitochondrial function, and mitochondria are morphologically and functionally abnormal, with oxidative stress. Chromosome 21 also has a high density of long noncoding RNAs.
+- Approximately 95% of affected individuals have **trisomy 21**, with a chromosome count of 47; the most common cause is **meiotic nondisjunction**, and the parents have a normal karyotype.
+- In about 4% of cases the extra chromosomal material derives from a **Robertsonian translocation** of the long arm of chromosome 21 to another acrocentric chromosome (for example 22 or 14).
+- Such translocation cases are sometimes, but not always, familial; the translocated chromosome is inherited from one of the parents, usually the mother, who is a carrier.
+- Approximately 1% of patients are **mosaics**, with a mixture of cells with 46 or 47 chromosomes, from mitotic nondisjunction of chromosome 21 during early embryogenesis; symptoms are variably milder.
+- Maternal age has a strong influence on the incidence of trisomy 21: once in 1550 live births in females under age 20 and 1 in 25 live births for mothers older than age 45.
+- In 95% of cases the extra chromosome 21 is of maternal origin.
+- In translocation or mosaic Down syndrome, maternal age is of no importance.
+- Down syndrome results from gene dosage effects at many loci; most protein-coding genes on chromosome 21 are overexpressed, including the gene for amyloid-beta precursor protein (APP).
+- Approximately 10% of the overexpressed genes are involved in regulation of mitochondrial functions.
 
-Clinical features. There is a flat facial profile, oblique palpebral fissures and epicanthic folds, usually evident at birth. Other findings are hypotonia, brachycephaly, a single palmar (simian) crease, short stature and intellectual disability.
+**Clinical features**
 
-Complications.
+- Flat facial profile, oblique palpebral fissures and epicanthic folds, usually evident even at birth.
+- Intellectual disability; some mosaics have normal or near-normal intelligence.
+- Congenital heart disease in approximately 40% of patients, atresias of the oesophagus and small bowel, increased risk of leukaemia, serious infections, thyroid autoimmunity, and Alzheimer disease in virtually all patients older than age 40.
 
-- Congenital heart disease in about 40% (atrioventricular septal defects, ventricular septal defects, atrial septal defects, tetralogy of Fallot).
-- Oesophageal and small bowel atresias.
-- A 20-fold increase in acute lymphoblastic leukaemia and a 500-fold increase in acute myeloid leukaemia.
-- Alzheimer disease changes after age 40.
-- Immune defects with pulmonary infections, and thyroid autoimmunity.
+**Diagnosis**
 
-Diagnosis. Prenatal screening uses cell-free foetal DNA in maternal blood analysed by next-generation sequencing, with confirmation by karyotyping of chorionic villus or amniotic fluid cells. Postnatal diagnosis uses karyotyping and FISH with chromosome 21–specific probes. The median age at death is now about 47 years.
+- FISH with chromosome 21-specific probes reveals the extra copy of chromosome 21.
+- Approximately 5% to 10% of the total cell-free DNA in maternal blood is derived from the foetus; next-generation sequencing of it is a noninvasive screening test, confirmed by conventional karyotyping.
+
+**Prognosis**
+
+- The median age at death is 47 years (up from 25 years in 1983).
 
 
 ## Write a short note on Barr body.
@@ -3958,20 +3956,31 @@ Clinical significance. The number of Barr bodies equals the number of X chromoso
 
 ## 10-year-old boy with very low IQ, flat facial profile, single palmar crease, stunted growth — Probable genetic diagnosis? Haematological malignancy that may occur in future?
 
-The probable diagnosis is Down syndrome, trisomy 21, and the haematological malignancy he is at risk of is acute leukaemia, particularly acute lymphoblastic leukaemia and also acute myeloid leukaemia.
+**Probable genetic diagnosis:** **Down syndrome (trisomy 21)**.
 
-Diagnosis. Intellectual disability, a flat facial profile and stunted growth with a single palmar (simian) crease are characteristic of Down syndrome. It is confirmed by karyotyping, which usually shows 47,XY,+21 (about 95%). A translocation or mosaic karyotype is possible, and the type matters for genetic counseling.
+- The diagnostic clinical features are flat facial profile, oblique palpebral fissures and epicanthic folds.
+- Down syndrome is a leading cause of intellectual disability.
+- Approximately 95% of cases have trisomy 21, with a chromosome count of 47.
 
-Malignancy. Children with Down syndrome have a 20-fold higher risk of precursor B-cell acute lymphoblastic leukaemia and a 500-fold higher risk of acute myeloid leukaemia.
+**Haematological malignancy:** **leukaemia**.
+
+- There is a 20-fold increased risk of precursor B cell acute lymphoblastic leukaemia.
+- There is a 500-fold increased risk of acute myeloid leukaemias.
 
 
 ## Adolescent girl with primary amenorrhoea, webbing of neck, broad chest, underdeveloped breasts — Likely diagnosis? Karyotype?
 
-The likely diagnosis is Turner syndrome, and the classic karyotype is 45,X.
+**Likely diagnosis:** **Turner syndrome**.
 
-Turner syndrome results from complete or partial monosomy of the X chromosome and is characterised by hypogonadism in phenotypic females. Turner syndrome is the single most important cause of primary amenorrhoea (about a third of cases). The ovaries are reduced to atrophic fibrous "streak" ovaries, so there is little breast development, infantile genitalia and sparse pubic hair. Associated features are short stature, neck webbing, a low posterior hairline, a shield-like broad chest with widely spaced nipples, cubitus valgus, and cardiovascular malformations (preductal coarctation of the aorta, bicuspid aortic valve).
+- It results from complete or partial monosomy of the X chromosome and is characterised by hypogonadism in phenotypic females.
+- Turner syndrome is the single most important cause of primary amenorrhoea, accounting for approximately one-third of the cases.
+- At puberty there is failure to develop normal secondary sex characteristics, with reduced breast development.
 
-Karyotype. About 57% have 45,X. About 14% have structural abnormalities of the X, such as the isochromosome 46,X,i(X)(q10), ring X, or deletions of Xp or Xq. About 29% are mosaics, for example 45,X/46,XX.
+**Karyotype:**
+
+- Approximately 57% are missing an entire X chromosome, giving the classic **45,X** karyotype.
+- Approximately 14% have structural abnormalities of the X chromosome, such as 46,X,i(X)(q10), 46,X,r(X) or deletions of part of the short or long arm.
+- Approximately 29% are mosaics, such as 45,X/46,XX.
 
 
 ## A girl has flat facial profile, stunted growth, mental retardation (± simian crease). What is your probable diagnosis?
@@ -4014,52 +4023,42 @@ The karyotype is determined by G-banded karyotyping of peripheral blood. Because
 
 ## Outline of laboratory diagnosis of genetic disorders.
 
-Laboratory diagnosis rests on cytogenetic analysis (karyotyping, FISH, microarrays), molecular genetic testing (PCR-based methods, DNA sequencing including next-generation sequencing, linkage analysis, methylation analysis), and, for metabolic disorders, enzyme and biochemical assays. The test is chosen according to the type of lesion suspected.
+1. **Karyotyping** for chromosomal disorders.
 
-The first step is clinical assessment and family history, followed by selection of the test according to the likely genetic alteration, from single-base substitutions to loss or gain of entire chromosomes. Markers may be constitutional (present in every cell, as with CFTR mutations) or somatic (restricted to a tissue or tumour), and this determines the sample.
+- Dividing cells are arrested in metaphase with mitotic spindle inhibitors and stained.
+- Chromosomes are identified by G banding (Giemsa stain), with approximately 400 to 800 bands per haploid set.
 
-1. **Cytogenetics.**
+2. **Fluorescence in situ hybridisation (FISH)** uses labelled DNA probes that bind to particular chromosome intervals.
 
-- Karyotyping with G banding detects numerical changes and structural changes larger than about 2–4 Mb.
-- FISH uses labelled probes on metaphase or interphase nuclei to detect aneuploidy, microdeletions not seen on karyotype (22q11.2) and specific translocations.
-- Array comparative genomic hybridisation and SNP arrays survey the whole genome for copy number variants without prior knowledge of the region. SNP arrays also detect loss of heterozygosity, as in uniparental disomy (Prader-Willi and Angelman syndromes).
+- It detects aneuploidy and microdeletions not detectable by karyotyping.
 
-2. **PCR-based molecular tests.**
+3. **Array technology** surveys the genome without prior knowledge of the altered region.
 
-- Sanger sequencing of amplified products.
-- Restriction fragment analysis for known mutations affecting enzyme sites.
-- Amplicon length analysis for repeat expansions and deletions. Very large expansions, such as those of FMR1, need Southern blotting.
-- Real-time quantitative PCR for burden of disease (for example BCR-ABL).
+- Array-based comparative genomic hybridisation detects copy number gains and losses.
+- Single nucleotide polymorphism arrays detect copy number abnormalities and also loss of heterozygosity.
 
-3. **Next-generation sequencing.** Gene panels (the commonest clinical use), whole-exome sequencing, and whole-genome sequencing when exome testing has failed. Bioinformatic alignment, variant calling and annotation follow. Short-read NGS can miss kilobase deletions, rearrangements and repeats, so a negative test with strong suspicion needs complementary methods.
-4. **Linkage analysis with polymorphic markers.** When the gene or mutation is unknown or hard to test, polymorphisms (SNPs, microsatellites, VNTRs) that segregate with the disease allele in a family can track it (adult polycystic kidney disease, PKD1).
-5. **Epigenetic (methylation) analysis.** Bisulfite conversion or methylation-sensitive methods are used in fragile X syndrome, Prader-Willi syndrome and Angelman syndrome.
-6. **Biochemical tests.** Enzyme assays for carrier detection and diagnosis of enzyme deficiencies (Tay-Sachs disease) and metabolite measurement.
+4. **Polymerase chain reaction (PCR)**, followed by:
 
-Prenatal testing is indicated by advanced maternal age, a parent with a balanced rearrangement, ultrasound anomalies, abnormal maternal blood screening, or known risk for a Mendelian disorder.
+- Sanger sequencing.
+- Restriction fragment length analysis.
+- Amplicon length analysis, for example for trinucleotide repeats in fragile X syndrome.
+- Real-time PCR.
+
+5. **Next-generation sequencing:** targeted sequencing, whole-exome sequencing and whole-genome sequencing.
+6. **Polymorphic markers** (linkage analysis), when the gene responsible is not known or testing for the primary defect is not feasible.
+7. **Epigenetic analysis** of methylation, for example in fragile X syndrome, Prader-Willi syndrome and Angelman syndrome.
+8. **Southern blot analysis** for very large trinucleotide expansions that cannot be amplified by conventional PCR.
 
 
 ## Samples used for (prenatal and postnatal) diagnosis of genetic disorders.
 
-Prenatal diagnosis uses amniotic fluid, chorionic villi, foetal cord blood and, for screening, maternal blood with cell-free foetal DNA. Postnatal diagnosis is usually done on peripheral blood, with other tissues used as needed.
+| Period | Sample |
+|---|---|
+| **Prenatal** | Cells obtained by **amniocentesis**; **chorionic villus** biopsy; **umbilical cord blood**; cell-free foetal DNA in maternal blood (as much as 10% of the free DNA in a pregnant mother's blood is of foetal origin), used as a noninvasive screening test |
+| **Postnatal** | **Peripheral blood** DNA, most commonly, targeted on clinical suspicion |
 
-Prenatal samples.
-
-- **Amniotic fluid (amniocentesis), about 15–18 weeks.** The fluid contains foetal cells (amniocytes), which can be cultured for karyotyping, FISH or molecular analysis. The fluid itself can be used for biochemical tests.
-- **Chorionic villus biopsy, about 10–13 weeks.** This allows earlier diagnosis. Villus tissue can be used directly or cultured.
-- **Umbilical cord blood (cordocentesis).** This provides foetal blood, and rapid karyotyping can be done.
-- **Maternal blood.** As much as 5–10% of the cell-free DNA in maternal plasma is of foetal origin. NGS gives noninvasive screening for trisomy 21 and other trisomies, with confirmation of positive results by karyotyping of invasively obtained cells.
-- **Preimplantation embryo biopsy** may be used in assisted reproduction (knowledge beyond the chapter).
-
-Postnatal samples.
-
-- **Peripheral blood** is the usual sample. Heparinised blood is used for lymphocyte culture and karyotyping, and EDTA blood for DNA extraction for molecular testing.
-- **Buccal swab or saliva** for DNA.
-- **Skin biopsy** for fibroblast culture, used for mosaicism or enzyme assays.
-- **Bone marrow** for cytogenetics in haematologic malignancies.
-- **Tumour tissue** for somatic (acquired) mutations, as in cancer diagnosis.
-- **Products of conception or foetal tissue** from miscarriages or stillbirths.
-- **Dried blood spots** for newborn metabolic screening.
+- A positive noninvasive screening test for Down syndrome is confirmed by conventional karyotyping of cells obtained by sampling of chorionic villi or by amniocentesis.
+- FISH can be performed on prenatal samples and peripheral blood cells.
 
 
 ## Write a short note on karyotype / karyotyping.
