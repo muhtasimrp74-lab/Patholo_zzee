@@ -2808,114 +2808,398 @@ function home(){
   else home()}
  addEventListener('hashchange',mq);setTimeout(mq,0)}
 
-/* ---- Textbook (Robbins) ---- */
-{const T=mkView('textbook','Textbook','Textbook','Robbins Pathologic Basis of Disease, chapter by chapter. Key concepts and morphology are set apart; chapters you open are saved for offline reading.');
- const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- const SKB='<div class="zsk" role="status" aria-label="Loading chapter"><i class="h"></i><i class="xs"></i><i></i><i></i><i class="s"></i><i class="b"></i><i></i><i class="s"></i><i></i><i class="xs"></i><i></i><i class="s"></i></div>',SKH='<div class="zsk" role="status" aria-label="Loading textbook"><i class="h"></i><i class="xs"></i><div class="zsk-grid">'+'<i></i>'.repeat(6)+'</div></div>';
- let IDX=null,tok=0,cur=null,tkr=0,hf='all',hq='',lf=0,rf=0;
- const J=(k)=>{try{return JSON.parse(zzStore.getItem(k)||'{}')}catch(e){return {}}},W=(k,o)=>{try{zzStore.setItem(k,JSON.stringify(o))}catch(e){}};
- const P=document.body.appendChild(Object.assign(document.createElement('div'),{id:'tbprog',innerHTML:'<i></i>'}));
- const GR=[['Part A','General pathology',n=>n<=10],['Part B','Haematology',n=>n===13||n===14],['Part C','Systemic pathology',()=>true]];
- const fmtMin=m=>m>=60?Math.floor(m/60)+'h'+(m%60?' '+(m%60)+'m':''):m+'m';
- const stat=(c,D,Po)=>D[c.id]?'done':(Po[c.id]>.02&&Po[c.id]<.97?'prog':'new');
- const tile=(c,D,Po)=>{const s=stat(c,D,Po),pc=Math.round((Po[c.id]||0)*100);
-  return `<a class="tbtile ${s}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span class="tbt-x"><b>${E(c.title)}</b><small>${c.pages?'pp. '+c.pages[0]+'–'+c.pages[1]+' · ':''}~${fmtMin(c.min)}${c.figs?' · '+c.figs+' figures':''}</small>${s==='prog'?`<span class="tbpb" role="img" aria-label="${pc}% read"><i style="width:${pc}%"></i></span>`:''}</span><span class="tbst">${s==='done'?'✓ Read':s==='prog'?pc+'%':''}</span></a>`};
-
- /* ---------- scroll bar inside a chapter (draggable, with section marks) ---------- */
- const SB=document.body.appendChild(Object.assign(document.createElement('div'),{id:'tbsc',hidden:true,innerHTML:'<button type="button" class="tbsc-up" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg></button><div class="tbsc-track" role="scrollbar" aria-orientation="vertical" aria-label="Scroll through this chapter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><span class="tbsc-ticks"></span><i class="tbsc-thumb"></i><b class="tbsc-pct">0%</b></div>'}));
- const TR=SB.querySelector('.tbsc-track'),TH=SB.querySelector('.tbsc-thumb'),TP=SB.querySelector('.tbsc-pct'),TK=SB.querySelector('.tbsc-ticks'),UP=SB.querySelector('.tbsc-up');
- let drag=null,pt=0;
- const span=()=>Math.max(0,document.documentElement.scrollHeight-innerHeight);
- function layout(ticks){
-  if(!cur){SB.hidden=true;return}
-  const H=document.documentElement.scrollHeight,vh=innerHeight,sp=span();
-  if(sp<80){SB.hidden=true;return}
-  SB.hidden=false;
-  const tl=TR.clientHeight;if(!tl)return;
-  const th=Math.max(40,Math.min(tl,tl*vh/H)),r=Math.min(1,Math.max(0,scrollY/sp)),y=r*(tl-th);
-  TH.style.height=th+'px';TH.style.transform='translateY('+y+'px)';
-  TP.textContent=Math.round(r*100)+'%';TP.style.transform='translateY('+(y+th/2)+'px) translateY(-50%)';
-  TR.setAttribute('aria-valuenow',Math.round(r*100));
-  if(ticks)TK.innerHTML=[...T.querySelectorAll('.tbs')].map(s=>{const t=s.querySelector('.tbs-t'),q=Math.min(1,(s.getBoundingClientRect().top+scrollY)/sp);
-   return `<u style="top:${(q*(tl-th)+th/2-1).toFixed(1)}px" title="${E(t?t.textContent.trim():'')}"></u>`}).join('')}
- const jump=(clientY,grab)=>{const rc=TR.getBoundingClientRect(),avail=rc.height-TH.offsetHeight;if(avail<=0)return;
-  scrollTo({top:Math.min(1,Math.max(0,(clientY-rc.top-grab)/avail))*span(),behavior:'instant'})};
- TR.addEventListener('pointerdown',e=>{e.preventDefault();const rc=TH.getBoundingClientRect(),onT=e.clientY>=rc.top&&e.clientY<=rc.bottom;
-  drag={grab:onT?e.clientY-rc.top:TH.offsetHeight/2};try{TR.setPointerCapture(e.pointerId)}catch(x){}
-  SB.classList.add('drag');if(!onT)jump(e.clientY,drag.grab);TR.focus({preventScroll:true})});
- TR.addEventListener('pointermove',e=>{if(drag)jump(e.clientY,drag.grab)});
- ['pointerup','pointercancel'].forEach(t=>TR.addEventListener(t,()=>{drag=null;SB.classList.remove('drag')}));
- TR.addEventListener('keydown',e=>{const k=e.key,s=innerHeight*.9;let y=null;
-  if(k==='ArrowDown')y=scrollY+80;else if(k==='ArrowUp')y=scrollY-80;else if(k==='PageDown')y=scrollY+s;else if(k==='PageUp')y=scrollY-s;else if(k==='Home')y=0;else if(k==='End')y=span();
-  if(y!==null){e.preventDefault();scrollTo({top:Math.max(0,Math.min(span(),y)),behavior:'instant'})}});
- UP.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
- if(window.ResizeObserver)new ResizeObserver(()=>{cancelAnimationFrame(rf);rf=requestAnimationFrame(()=>layout(true))}).observe(T);
- addEventListener('resize',()=>{cancelAnimationFrame(rf);rf=requestAnimationFrame(()=>layout(true))});
-
- function onScroll(){if(!cur){P.style.display='none';layout();return}const h=document.documentElement.scrollHeight-innerHeight,r=h>0?Math.min(1,Math.max(0,scrollY/h)):0;P.style.display='block';P.firstChild.style.width=(r*100)+'%';
-  if(!lf)lf=requestAnimationFrame(()=>{lf=0;layout()});
-  SB.classList.add('show');clearTimeout(pt);pt=setTimeout(()=>SB.classList.remove('show'),1000);
-  clearTimeout(tkr);tkr=setTimeout(()=>{if(cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o)}},400)}
- addEventListener('scroll',onScroll,{passive:true});
-
- /* ---------- home: progress, continue card, search + filters, chapters by part ---------- */
- function paint(){const g=document.getElementById('tbgrid');if(!g||!IDX)return;
-  const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos'),q=hq.trim().toLowerCase().replace(/^ch(apter)?\s*/,'');
-  const ok=c=>{const s=stat(c,D,Po);if(hf==='prog'&&s!=='prog')return false;if(hf==='unread'&&s==='done')return false;if(hf==='read'&&s!=='done')return false;
-   return !q||c.title.toLowerCase().includes(q)||String(c.n)===q};
-  let out='';
-  GR.forEach((gp,gi)=>{const all=C.filter(c=>GR.findIndex(x=>x[2](c.n))===gi),cs=all.filter(ok);if(!cs.length)return;const nd=all.filter(c=>D[c.id]).length;
-   out+=`<div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd/all.length*100)}%"></i></div></div><div class="tbl">${cs.map(c=>tile(c,D,Po)).join('')}</div>`});
-  g.innerHTML=out||'<div class="mempty"><b>No chapters match</b>Try a different word, or switch the filter back to All.</div>'}
- function home(){const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos');
-  const nd=C.filter(c=>D[c.id]).length,ip=C.filter(c=>stat(c,D,Po)==='prog').length,left=C.filter(c=>!D[c.id]).reduce((a,c)=>a+c.min,0),pct=Math.round(nd/C.length*100);
-  let last=null;try{last=zzStore.getItem('tbLast')}catch(e){}
-  let l=C.find(x=>x.id===last),lab='Continue reading';
-  if(l&&D[l.id]){const i=C.indexOf(l);l=C.slice(i+1).find(x=>!D[x.id])||C.find(x=>!D[x.id])||null;lab='Up next'}
-  else if(!l){l=C.find(x=>!D[x.id])||null;lab='Start reading'}
-  else if(!(Po[l.id]>.02))lab='Start reading';
-  const lp=l?Math.round((Po[l.id]||0)*100):0,sh=lab==='Continue reading'&&lp>0;
-  const fl=[['all','All',C.length],['prog','In progress',ip],['unread','Unread',C.length-nd],['read','Read',nd]];
-  T.innerHTML=`<div class="tbhero" data-n="R"><div class="tbeyebrow">Robbins · 11th edition</div><h2>${E(IDX.title)}</h2><p>${C.length} chapters, cleaned for reading and linked to your question bank.</p>
-   <div class="tbstats"><div><b>${nd}<small> / ${C.length}</small></b><span>chapters read</span></div><div><b>${ip}</b><span>in progress</span></div><div><b>${left?fmtMin(left):'Done'}</b><span>${left?'reading left':'everything read'}</span></div></div>
-   <div class="tbmeter" role="img" aria-label="${pct}% of chapters read"><i style="width:${pct}%"></i></div><small>${pct}% complete</small></div>`
-   +(l?`<a class="tbcont" href="#/textbook/${l.id}"><span class="tbcont-t"><small>${lab}</small>Ch ${l.n} · ${E(l.title)}${sh?`<span class="tbpb" role="img" aria-label="${lp}% read"><i style="width:${lp}%"></i></span>`:''}</span><span class="tbcont-go">${sh?lp+'% ':''}›</span></a>`:'')
-   +`<div class="tbtools"><label class="tbsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="tbq" type="search" placeholder="Search chapters, e.g. inflammation or 5" value="${E(hq)}" autocomplete="off" aria-label="Search chapters"></label>
-   <div class="tbfil" role="group" aria-label="Filter chapters">${fl.map(f=>`<button type="button" data-tbf="${f[0]}" aria-pressed="${hf===f[0]}">${f[1]}<em>${f[2]}</em></button>`).join('')}</div></div><div id="tbgrid"></div>`;
-  paint();document.title='Textbook | Patholo_zzee'}
-
- async function tb(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='textbook'){cur=null;onScroll();return}const my=++tok;cur=null;T.classList.remove('tbreading');onScroll();
-  if(!IDX)T.innerHTML=p[1]?SKB:SKH;
-  try{if(!IDX){const r=await fetch('textbook/index.json');if(!r.ok)throw 0;IDX=await r.json()}}
-  catch(e){if(my===tok)T.innerHTML='<div class="mempty"><b>Textbook unavailable</b>Open it once while online; chapters you read are then saved for offline use.</div>';return}
-  if(my!==tok)return;const C=IDX.chapters,i=C.findIndex(x=>x.id===p[1]),D=J('tbDone');
-  if(i<0){home();return}
-  const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');try{zzStore.setItem('tbLast',c.id)}catch(e){}
-  const bar=`<div class="tbbar"><a href="${pv?'#/textbook/'+pv.id:'#/textbook'}" ${pv?'':'aria-disabled="true"'}>‹ ${pv?'Ch '+pv.n:'Previous'}</a><a href="#/textbook">All chapters</a><a href="${nx?'#/textbook/'+nx.id:'#/textbook'}" ${nx?'':'aria-disabled="true"'}>${nx?'Ch '+nx.n:'Next'} ›</a></div>`;
-  T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
-  T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);
-  try{const r=await fetch('textbook/'+c.id+'.html');if(!r.ok)throw 0;const h=await r.text();if(my!==tok)return;{const bd=T.querySelector('#tbbody');bd.innerHTML=h;bd.dataset.ch=c.id;window.Annot&&Annot.tbAttach&&Annot.tbAttach()}
-   if(p[2]&&goBlock(p[2],p[3],my))return;const s=J('tbPos')[c.id];if(s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}
-  catch(e){if(my===tok)T.querySelector('#tbbody').innerHTML='<div class="mempty"><b>Chapter not available offline yet</b>Connect once to download it.</div>'}}
- /* deep link from an answer: #/textbook/<chapter>/<block id>/<question id> -> open the section, scroll to and flash the paragraph, offer a way back */
- function goBlock(b,q,my){const bd=T.querySelector('#tbbody');let el=null;try{el=bd.querySelector('[data-b="'+decodeURIComponent(b).replace(/"/g,'')+'"]')}catch(e){}
-  if(!el)return false;const sec=el.closest('.tbs');if(sec)tog(sec,true);
-  let back='';if(q&&/^q\d+$/.test(q)){let tp='';try{const d=(typeof DATA!=='undefined'?DATA:[]).find(x=>x[3]===q);if(d)tp=d[2]}catch(e){}
-   back='<button type="button" class="tbback" data-back="'+(tp?'#/'+tp+'/'+q:'#/questions')+'">\u2039 Back to the answer</button>'}
-  const old=T.querySelector('.tbback');if(old)old.remove();if(back)T.insertAdjacentHTML('afterbegin',back);
-  setTimeout(()=>{if(my!==tok)return;el.scrollIntoView({block:'center'});el.classList.add('tbtarget');setTimeout(()=>el.classList.remove('tbtarget'),6000);onScroll()},80);return true}
- const tog=(s,open)=>{const h=s.querySelector('.tbs-h');open=open===undefined?s.classList.contains('shut'):open;s.classList.toggle('shut',!open);h.setAttribute('aria-expanded',open)};
- T.addEventListener('click',e=>{let a;
-  if(a=e.target.closest('[data-back]')){const h=a.dataset.back;if(history.length>1&&document.referrer.indexOf(location.host)>-1)history.back();else location.hash=h}
-  else if(a=e.target.closest('[data-go]')){const e2=T.querySelector('[data-a="'+a.dataset.go+'"]');if(e2){const s=e2.closest('.tbs');if(s)tog(s,true);e2.scrollIntoView({behavior:'smooth',block:'start'})}}
-  else if(a=e.target.closest('[data-all]')){const o=a.dataset.all==='1';T.querySelectorAll('.tbs').forEach(s=>tog(s,!o));a.dataset.all=o?'0':'1';a.textContent=o?'Expand all':'Collapse all'}
-  else if(a=e.target.closest('[data-hl]')){const S=J('tbSet');S.off=!S.off;W('tbSet',S);T.classList.toggle('nohl',!!S.off);a.setAttribute('aria-pressed',!S.off)}
-  else if(a=e.target.closest('[data-done]')){const D=J('tbDone'),k=a.dataset.done;if(D[k])delete D[k];else D[k]=1;W('tbDone',D);a.setAttribute('aria-pressed',!!D[k]);a.textContent=D[k]?'✓ Read':'Mark as read'}
-  else if(a=e.target.closest('[data-tbf]')){hf=a.dataset.tbf;T.querySelectorAll('[data-tbf]').forEach(x=>x.setAttribute('aria-pressed',x===a));paint()}
-  else if(a=e.target.closest('.tbs-h'))tog(a.parentElement)});
- T.addEventListener('input',e=>{if(e.target.id==='tbq'){hq=e.target.value;paint()}});
- T.addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const g=e.target.closest&&e.target.closest('[data-go]');if(g){e.preventDefault();g.click();return}const h=e.target.closest&&e.target.closest('.tbs-h');if(h){e.preventDefault();tog(h.parentElement)}});
- addEventListener('hashchange',tb);setTimeout(tb,0)}
+/* GENERATED from src/legacy/textbook.ts by `npm run build:classic`. Edit the .ts, not this file. */
+(function() {
+	//#region src/legacy/textbook.ts
+	{
+		const T = mkView("textbook", "Textbook", "Textbook", "Robbins Pathologic Basis of Disease, chapter by chapter. Key concepts and morphology are set apart; chapters you open are saved for offline reading.");
+		const E = (t) => String(t).replace(/[&<>"]/g, (c) => ({
+			"&": "&amp;",
+			"<": "&lt;",
+			">": "&gt;",
+			"\"": "&quot;"
+		})[c]);
+		const SKB = "<div class=\"zsk\" role=\"status\" aria-label=\"Loading chapter\"><i class=\"h\"></i><i class=\"xs\"></i><i></i><i></i><i class=\"s\"></i><i class=\"b\"></i><i></i><i class=\"s\"></i><i></i><i class=\"xs\"></i><i></i><i class=\"s\"></i></div>", SKH = "<div class=\"zsk\" role=\"status\" aria-label=\"Loading textbook\"><i class=\"h\"></i><i class=\"xs\"></i><div class=\"zsk-grid\">" + "<i></i>".repeat(6) + "</div></div>";
+		let IDX = null, tok = 0, cur = null, tkr = 0, hf = "all", hq = "", lf = 0, rf = 0;
+		const J = (k) => {
+			try {
+				return JSON.parse(zzStore.getItem(k) || "{}");
+			} catch (e) {
+				return {};
+			}
+		}, W = (k, o) => {
+			try {
+				zzStore.setItem(k, JSON.stringify(o));
+			} catch (e) {}
+		};
+		const P = document.body.appendChild(Object.assign(document.createElement("div"), {
+			id: "tbprog",
+			innerHTML: "<i></i>"
+		}));
+		const GR = [
+			[
+				"Part A",
+				"General pathology",
+				(n) => n <= 10
+			],
+			[
+				"Part B",
+				"Haematology",
+				(n) => n === 13 || n === 14
+			],
+			[
+				"Part C",
+				"Systemic pathology",
+				() => true
+			]
+		];
+		const fmtMin = (m) => m >= 60 ? Math.floor(m / 60) + "h" + (m % 60 ? " " + m % 60 + "m" : "") : m + "m";
+		const stat = (c, D, Po) => D[c.id] ? "done" : Po[c.id] > .02 && Po[c.id] < .97 ? "prog" : "new";
+		const tile = (c, D, Po) => {
+			const s = stat(c, D, Po), pc = Math.round((Po[c.id] || 0) * 100);
+			return `<a class="tbtile ${s}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span class="tbt-x"><b>${E(c.title)}</b><small>${c.pages ? "pp. " + c.pages[0] + "–" + c.pages[1] + " · " : ""}~${fmtMin(c.min)}${c.figs ? " · " + c.figs + " figures" : ""}</small>${s === "prog" ? `<span class="tbpb" role="img" aria-label="${pc}% read"><i style="width:${pc}%"></i></span>` : ""}</span><span class="tbst">${s === "done" ? "✓ Read" : s === "prog" ? pc + "%" : ""}</span></a>`;
+		};
+		const SB = document.body.appendChild(Object.assign(document.createElement("div"), {
+			id: "tbsc",
+			hidden: true,
+			innerHTML: "<button type=\"button\" class=\"tbsc-up\" aria-label=\"Back to top\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 14l6-6 6 6\"/></svg></button><div class=\"tbsc-track\" role=\"scrollbar\" aria-orientation=\"vertical\" aria-label=\"Scroll through this chapter\" aria-valuemin=\"0\" aria-valuemax=\"100\" aria-valuenow=\"0\" tabindex=\"0\"><span class=\"tbsc-ticks\"></span><i class=\"tbsc-thumb\"></i><b class=\"tbsc-pct\">0%</b></div>"
+		}));
+		const TR = SB.querySelector(".tbsc-track"), TH = SB.querySelector(".tbsc-thumb"), TP = SB.querySelector(".tbsc-pct"), TK = SB.querySelector(".tbsc-ticks"), UP = SB.querySelector(".tbsc-up");
+		let drag = null, pt = 0;
+		const span = () => Math.max(0, document.documentElement.scrollHeight - innerHeight);
+		function layout(ticks) {
+			if (!cur) {
+				SB.hidden = true;
+				return;
+			}
+			const H = document.documentElement.scrollHeight, vh = innerHeight, sp = span();
+			if (sp < 80) {
+				SB.hidden = true;
+				return;
+			}
+			SB.hidden = false;
+			const tl = TR.clientHeight;
+			if (!tl) return;
+			const th = Math.max(40, Math.min(tl, tl * vh / H)), r = Math.min(1, Math.max(0, scrollY / sp)), y = r * (tl - th);
+			TH.style.height = th + "px";
+			TH.style.transform = "translateY(" + y + "px)";
+			TP.textContent = Math.round(r * 100) + "%";
+			TP.style.transform = "translateY(" + (y + th / 2) + "px) translateY(-50%)";
+			TR.setAttribute("aria-valuenow", String(Math.round(r * 100)));
+			if (ticks) TK.innerHTML = [...T.querySelectorAll(".tbs")].map((s) => {
+				const t = s.querySelector(".tbs-t");
+				return `<u style="top:${(Math.min(1, (s.getBoundingClientRect().top + scrollY) / sp) * (tl - th) + th / 2 - 1).toFixed(1)}px" title="${E(t ? t.textContent.trim() : "")}"></u>`;
+			}).join("");
+		}
+		const jump = (clientY, grab) => {
+			const rc = TR.getBoundingClientRect(), avail = rc.height - TH.offsetHeight;
+			if (avail <= 0) return;
+			scrollTo({
+				top: Math.min(1, Math.max(0, (clientY - rc.top - grab) / avail)) * span(),
+				behavior: "instant"
+			});
+		};
+		TR.addEventListener("pointerdown", (e) => {
+			e.preventDefault();
+			const rc = TH.getBoundingClientRect(), onT = e.clientY >= rc.top && e.clientY <= rc.bottom;
+			drag = { grab: onT ? e.clientY - rc.top : TH.offsetHeight / 2 };
+			try {
+				TR.setPointerCapture(e.pointerId);
+			} catch (x) {}
+			SB.classList.add("drag");
+			if (!onT) jump(e.clientY, drag.grab);
+			TR.focus({ preventScroll: true });
+		});
+		TR.addEventListener("pointermove", (e) => {
+			if (drag) jump(e.clientY, drag.grab);
+		});
+		["pointerup", "pointercancel"].forEach((t) => TR.addEventListener(t, () => {
+			drag = null;
+			SB.classList.remove("drag");
+		}));
+		TR.addEventListener("keydown", (e) => {
+			const k = e.key, s = innerHeight * .9;
+			let y = null;
+			if (k === "ArrowDown") y = scrollY + 80;
+			else if (k === "ArrowUp") y = scrollY - 80;
+			else if (k === "PageDown") y = scrollY + s;
+			else if (k === "PageUp") y = scrollY - s;
+			else if (k === "Home") y = 0;
+			else if (k === "End") y = span();
+			if (y !== null) {
+				e.preventDefault();
+				scrollTo({
+					top: Math.max(0, Math.min(span(), y)),
+					behavior: "instant"
+				});
+			}
+		});
+		UP.addEventListener("click", () => scrollTo({
+			top: 0,
+			behavior: "smooth"
+		}));
+		if (window.ResizeObserver) new ResizeObserver(() => {
+			cancelAnimationFrame(rf);
+			rf = requestAnimationFrame(() => layout(true));
+		}).observe(T);
+		addEventListener("resize", () => {
+			cancelAnimationFrame(rf);
+			rf = requestAnimationFrame(() => layout(true));
+		});
+		function onScroll() {
+			if (!cur) {
+				P.style.display = "none";
+				layout();
+				return;
+			}
+			const h = document.documentElement.scrollHeight - innerHeight, r = h > 0 ? Math.min(1, Math.max(0, scrollY / h)) : 0;
+			P.style.display = "block";
+			P.firstChild.style.width = r * 100 + "%";
+			if (!lf) lf = requestAnimationFrame(() => {
+				lf = 0;
+				layout();
+			});
+			SB.classList.add("show");
+			clearTimeout(pt);
+			pt = setTimeout(() => SB.classList.remove("show"), 1e3);
+			clearTimeout(tkr);
+			tkr = setTimeout(() => {
+				if (cur) {
+					const o = J("tbPos");
+					o[cur] = +r.toFixed(3);
+					W("tbPos", o);
+				}
+			}, 400);
+		}
+		addEventListener("scroll", onScroll, { passive: true });
+		function paint() {
+			const g = document.getElementById("tbgrid");
+			if (!g || !IDX) return;
+			const C = IDX.chapters, D = J("tbDone"), Po = J("tbPos"), q = hq.trim().toLowerCase().replace(/^ch(apter)?\s*/, "");
+			const ok = (c) => {
+				const s = stat(c, D, Po);
+				if (hf === "prog" && s !== "prog") return false;
+				if (hf === "unread" && s === "done") return false;
+				if (hf === "read" && s !== "done") return false;
+				return !q || c.title.toLowerCase().includes(q) || String(c.n) === q;
+			};
+			let out = "";
+			GR.forEach((gp, gi) => {
+				const all = C.filter((c) => GR.findIndex((x) => x[2](c.n)) === gi), cs = all.filter(ok);
+				if (!cs.length) return;
+				const nd = all.filter((c) => D[c.id]).length;
+				out += `<div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd / all.length * 100)}%"></i></div></div><div class="tbl">${cs.map((c) => tile(c, D, Po)).join("")}</div>`;
+			});
+			g.innerHTML = out || "<div class=\"mempty\"><b>No chapters match</b>Try a different word, or switch the filter back to All.</div>";
+		}
+		function home() {
+			const C = IDX.chapters, D = J("tbDone"), Po = J("tbPos");
+			const nd = C.filter((c) => D[c.id]).length, ip = C.filter((c) => stat(c, D, Po) === "prog").length, left = C.filter((c) => !D[c.id]).reduce((a, c) => a + c.min, 0), pct = Math.round(nd / C.length * 100);
+			let last = null;
+			try {
+				last = zzStore.getItem("tbLast");
+			} catch (e) {}
+			let l = C.find((x) => x.id === last), lab = "Continue reading";
+			if (l && D[l.id]) {
+				const i = C.indexOf(l);
+				l = C.slice(i + 1).find((x) => !D[x.id]) || C.find((x) => !D[x.id]) || null;
+				lab = "Up next";
+			} else if (!l) {
+				l = C.find((x) => !D[x.id]) || null;
+				lab = "Start reading";
+			} else if (!(Po[l.id] > .02)) lab = "Start reading";
+			const lp = l ? Math.round((Po[l.id] || 0) * 100) : 0, sh = lab === "Continue reading" && lp > 0;
+			const fl = [
+				[
+					"all",
+					"All",
+					C.length
+				],
+				[
+					"prog",
+					"In progress",
+					ip
+				],
+				[
+					"unread",
+					"Unread",
+					C.length - nd
+				],
+				[
+					"read",
+					"Read",
+					nd
+				]
+			];
+			T.innerHTML = `<div class="tbhero" data-n="R"><div class="tbeyebrow">Robbins · 11th edition</div><h2>${E(IDX.title)}</h2><p>${C.length} chapters, cleaned for reading and linked to your question bank.</p>
+   <div class="tbstats"><div><b>${nd}<small> / ${C.length}</small></b><span>chapters read</span></div><div><b>${ip}</b><span>in progress</span></div><div><b>${left ? fmtMin(left) : "Done"}</b><span>${left ? "reading left" : "everything read"}</span></div></div>
+   <div class="tbmeter" role="img" aria-label="${pct}% of chapters read"><i style="width:${pct}%"></i></div><small>${pct}% complete</small></div>` + (l ? `<a class="tbcont" href="#/textbook/${l.id}"><span class="tbcont-t"><small>${lab}</small>Ch ${l.n} · ${E(l.title)}${sh ? `<span class="tbpb" role="img" aria-label="${lp}% read"><i style="width:${lp}%"></i></span>` : ""}</span><span class="tbcont-go">${sh ? lp + "% " : ""}›</span></a>` : "") + `<div class="tbtools"><label class="tbsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="tbq" type="search" placeholder="Search chapters, e.g. inflammation or 5" value="${E(hq)}" autocomplete="off" aria-label="Search chapters"></label>
+   <div class="tbfil" role="group" aria-label="Filter chapters">${fl.map((f) => `<button type="button" data-tbf="${f[0]}" aria-pressed="${hf === f[0]}">${f[1]}<em>${f[2]}</em></button>`).join("")}</div></div><div id="tbgrid"></div>`;
+			paint();
+			document.title = "Textbook | Patholo_zzee";
+		}
+		async function tb() {
+			const p = location.hash.replace(/^#\/?/, "").split("/");
+			if (p[0] !== "textbook") {
+				cur = null;
+				onScroll();
+				return;
+			}
+			const my = ++tok;
+			cur = null;
+			T.classList.remove("tbreading");
+			onScroll();
+			if (!IDX) T.innerHTML = p[1] ? SKB : SKH;
+			try {
+				if (!IDX) {
+					const r = await fetch("textbook/index.json");
+					if (!r.ok) throw 0;
+					IDX = await r.json();
+				}
+			} catch (e) {
+				if (my === tok) T.innerHTML = "<div class=\"mempty\"><b>Textbook unavailable</b>Open it once while online; chapters you read are then saved for offline use.</div>";
+				return;
+			}
+			if (my !== tok) return;
+			const C = IDX.chapters, i = C.findIndex((x) => x.id === p[1]), D = J("tbDone");
+			if (i < 0) {
+				home();
+				return;
+			}
+			const c = C[i], pv = C[i - 1], nx = C[i + 1];
+			cur = c.id;
+			T.classList.add("tbreading");
+			try {
+				zzStore.setItem("tbLast", c.id);
+			} catch (e) {}
+			const bar = `<div class="tbbar"><a href="${pv ? "#/textbook/" + pv.id : "#/textbook"}" ${pv ? "" : "aria-disabled=\"true\""}>‹ ${pv ? "Ch " + pv.n : "Previous"}</a><a href="#/textbook">All chapters</a><a href="${nx ? "#/textbook/" + nx.id : "#/textbook"}" ${nx ? "" : "aria-disabled=\"true\""}>${nx ? "Ch " + nx.n : "Next"} ›</a></div>`;
+			T.innerHTML = bar + `<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages ? c.pages[0] + "–" + c.pages[1] : ""}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id] ? "✓ Read" : "Mark as read"}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J("tbSet").off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>` + bar;
+			T.classList.toggle("nohl", !!J("tbSet").off);
+			document.title = "Ch " + c.n + " | Textbook | Patholo_zzee";
+			window.scrollTo(0, 0);
+			try {
+				const r = await fetch("textbook/" + c.id + ".html");
+				if (!r.ok) throw 0;
+				const h = await r.text();
+				if (my !== tok) return;
+				{
+					const bd = T.querySelector("#tbbody");
+					bd.innerHTML = h;
+					bd.dataset.ch = c.id;
+					window.Annot && Annot.tbAttach && Annot.tbAttach();
+				}
+				if (p[2] && goBlock(p[2], p[3], my)) return;
+				const s = J("tbPos")[c.id];
+				if (s > .02 && s < .97) setTimeout(() => {
+					if (my === tok) scrollTo(0, s * (document.documentElement.scrollHeight - innerHeight));
+				}, 60);
+				onScroll();
+				layout(true);
+			} catch (e) {
+				if (my === tok) T.querySelector("#tbbody").innerHTML = "<div class=\"mempty\"><b>Chapter not available offline yet</b>Connect once to download it.</div>";
+			}
+		}
+		function goBlock(b, q, my) {
+			const bd = T.querySelector("#tbbody");
+			let el = null;
+			try {
+				el = bd.querySelector("[data-b=\"" + decodeURIComponent(b).replace(/"/g, "") + "\"]");
+			} catch (e) {}
+			if (!el) return false;
+			const sec = el.closest(".tbs");
+			if (sec) tog(sec, true);
+			let back = "";
+			if (q && /^q\d+$/.test(q)) {
+				let tp = "";
+				try {
+					const d = (typeof DATA !== "undefined" ? DATA : []).find((x) => x[3] === q);
+					if (d) tp = d[2];
+				} catch (e) {}
+				back = "<button type=\"button\" class=\"tbback\" data-back=\"" + (tp ? "#/" + tp + "/" + q : "#/questions") + "\">‹ Back to the answer</button>";
+			}
+			const old = T.querySelector(".tbback");
+			if (old) old.remove();
+			if (back) T.insertAdjacentHTML("afterbegin", back);
+			setTimeout(() => {
+				if (my !== tok) return;
+				el.scrollIntoView({ block: "center" });
+				el.classList.add("tbtarget");
+				setTimeout(() => el.classList.remove("tbtarget"), 6e3);
+				onScroll();
+			}, 80);
+			return true;
+		}
+		const tog = (s, open) => {
+			const h = s.querySelector(".tbs-h");
+			open = open === void 0 ? s.classList.contains("shut") : open;
+			s.classList.toggle("shut", !open);
+			h.setAttribute("aria-expanded", open);
+		};
+		T.addEventListener("click", (e) => {
+			let a;
+			if (a = e.target.closest("[data-back]")) {
+				const h = a.dataset.back;
+				if (history.length > 1 && document.referrer.indexOf(location.host) > -1) history.back();
+				else location.hash = h;
+			} else if (a = e.target.closest("[data-go]")) {
+				const e2 = T.querySelector("[data-a=\"" + a.dataset.go + "\"]");
+				if (e2) {
+					const s = e2.closest(".tbs");
+					if (s) tog(s, true);
+					e2.scrollIntoView({
+						behavior: "smooth",
+						block: "start"
+					});
+				}
+			} else if (a = e.target.closest("[data-all]")) {
+				const o = a.dataset.all === "1";
+				T.querySelectorAll(".tbs").forEach((s) => tog(s, !o));
+				a.dataset.all = o ? "0" : "1";
+				a.textContent = o ? "Expand all" : "Collapse all";
+			} else if (a = e.target.closest("[data-hl]")) {
+				const S = J("tbSet");
+				S.off = !S.off;
+				W("tbSet", S);
+				T.classList.toggle("nohl", !!S.off);
+				a.setAttribute("aria-pressed", !S.off);
+			} else if (a = e.target.closest("[data-done]")) {
+				const D = J("tbDone"), k = a.dataset.done;
+				if (D[k]) delete D[k];
+				else D[k] = 1;
+				W("tbDone", D);
+				a.setAttribute("aria-pressed", !!D[k]);
+				a.textContent = D[k] ? "✓ Read" : "Mark as read";
+			} else if (a = e.target.closest("[data-tbf]")) {
+				hf = a.dataset.tbf;
+				T.querySelectorAll("[data-tbf]").forEach((x) => x.setAttribute("aria-pressed", x === a));
+				paint();
+			} else if (a = e.target.closest(".tbs-h")) tog(a.parentElement);
+		});
+		T.addEventListener("input", (e) => {
+			if (e.target.id === "tbq") {
+				hq = e.target.value;
+				paint();
+			}
+		});
+		T.addEventListener("keydown", (e) => {
+			if (e.key !== "Enter" && e.key !== " ") return;
+			const g = e.target.closest && e.target.closest("[data-go]");
+			if (g) {
+				e.preventDefault();
+				g.click();
+				return;
+			}
+			const h = e.target.closest && e.target.closest(".tbs-h");
+			if (h) {
+				e.preventDefault();
+				tog(h.parentElement);
+			}
+		});
+		addEventListener("hashchange", tb);
+		setTimeout(tb, 0);
+	}
+	//#endregion
+})();
 const views=[...document.querySelectorAll('.view')],btns=[...document.querySelectorAll('.quizbtn')];
 document.querySelectorAll('.card').forEach(c=>c._t=(c.querySelector('header').textContent+' '+c.querySelector('.ans').textContent).toLowerCase());
 function setQuiz(on,save){document.body.classList.toggle('quiz',on);btns.forEach(b=>{b.setAttribute('aria-pressed',on);b.textContent=on?'Quiz mode on':'Quiz mode'});
@@ -2942,179 +3226,417 @@ route();
 
 function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parseFloat(r.style.getPropertyValue('--p'))||0;r.classList.toggle('hi',v>=82);r.classList.toggle('z',v<=0)})}
 (function(){const p0=prog;prog=function(){p0();updRings()}})();updRings();
-
-/* ===== home page: today's plan, study tracks (viva / written / MCQs / textbook), high-yield, weak spots, chapter progress ===== */
-(function(){
-const H=document.getElementById('v-home');if(!H)return;
-const NOW=()=>Date.now();
-const CH=QMETA.chapters,TR=QMETA.tree,TYW=QMETA.type||{},EX=QMETA.exam||{};
-const cidx={};CH.forEach((c,i)=>cidx[c[0]]=i);
-const ORDER=DATA.filter(d=>TR[d[3]]).slice().sort((a,b)=>cidx[TR[a[3]][0]]-cidx[TR[b[3]][0]]||(+a[3].slice(1))-(+b[3].slice(1)));
-const NUM={};ORDER.forEach((d,i)=>NUM[d[3]]=i+1);
-const byCh={};ORDER.forEach(d=>(byCh[TR[d[3]][0]]=byCh[TR[d[3]][0]]||[]).push(d));
-const isW=d=>TYW[d[3]]==='W',isB=d=>TYW[d[3]]==='B',kind=d=>isB(d)?'Written + Viva':isW(d)?'Written':'Viva';
-const stars=d=>(EX[d[3]]||[0])[0]||0;
-const years=d=>(EX[d[3]]||[0,'',[]])[2]||[];
-function pageOf(c){const a=byCh[c];if(!a)return null;const n={};a.forEach(d=>n[d[2]]=(n[d[2]]||0)+1);return Object.keys(n).sort((x,y)=>n[y]-n[x])[0]}
-let MISS=null;const missing=id=>{if(!MISS){MISS=new Set();document.querySelectorAll('.card').forEach(c=>{const e=c.querySelector('.ans');if(e&&/Answer to be added/.test(e.textContent))MISS.add(c.id)})}return MISS.has(id)};
-function esc2(t){return String(t).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
-const pct=(a,b)=>b?Math.round(100*a/b):0;
-const lnk=d=>'#/'+d[2]+'/'+d[3];
-function st(id,L,now){const r=S.sr[id];
- if(missing(id))return 'm';if(r&&r.b===0)return 'f';if(r&&r.d<=now)return 'd';return L.has(id)?'r':'u'}
-
-/* ---- textbook progress (stored by the Textbook tab; chapter list loaded once, cached by the service worker) ---- */
-let TBI=null;
-const tbJ=k=>{try{return JSON.parse(zzStore.getItem(k)||'{}')}catch(e){return {}}};
-const tbLast=()=>{try{return zzStore.getItem('tbLast')}catch(e){return null}};
-try{fetch('textbook/index.json').then(r=>r.ok?r.json():null).then(j=>{if(j&&j.chapters){TBI=j.chapters;render()}}).catch(()=>{})}catch(e){}
-
-/* ---- MCQ progress (same store as the MCQs tab) ---- */
-function mcqStats(){
- const Q=(typeof MCQDATA!=='undefined'&&MCQDATA.q)||[],M=S.mcq||{},P=M.p||{};
- let att=0,n=0,k=0;const tp={};
- Q.forEach(q=>{const x=P[q.h];if(!x||!x.n)return;att++;n+=x.n;k+=x.k;const key=q.c+'.'+q.t,o=tp[key]=tp[key]||{c:q.c,t:q.t,n:0,k:0};o.n+=x.n;o.k+=x.k});
- const weak=Object.values(tp).filter(o=>o.n>=3).map(o=>Object.assign(o,{a:Math.round(100*o.k/o.n)})).sort((x,y)=>x.a-y.a||y.n-x.n).slice(0,4);
- const today=new Date().toLocaleDateString('en-CA'),td=M.day&&M.day.d===today?M.day.n:0;
- const sv=M.sess&&M.sess.ids&&M.sess.ids.length&&!M.sess.review?M.sess:null;
- return {tot:Q.length,att,n,k,acc:pct(k,n),weak,td,sv,bm:(M.bm||[]).length,papers:12}
-}
-
-/* ---- study activity log (one count per day) + heatmap ---- */
-window.actLog=function(n){try{const t=dstr(Date.now());S.act=S.act&&typeof S.act==='object'?S.act:{};S.act[t]=(S.act[t]||0)+(n||1);save()}catch(e){}};
-try{const t0=touch;touch=function(){window.actLog(1);return t0.apply(this,arguments)}}catch(e){}
-function actMap(){
- const m=Object.assign({},S.act||{}),d={};
- try{const P=(S.mcq&&S.mcq.p)||{};Object.keys(P).forEach(h=>{const x=P[h];if(x&&x.ts){const k=dstr(x.ts);d[k]=(d[k]||0)+1}})}catch(e){}
- Object.keys(d).forEach(k=>{m[k]=Math.max(m[k]||0,d[k])});return m}
-const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-function heat(){
- const A=actMap(),tdy=dstr(Date.now()),base=new Date(tdy+'T12:00:00').getTime(),dw=new Date(base).getDay();
- /* the grid starts at the week of 1 Oct 2026 and runs forward (at least 12 weeks wide) */
- const s0=new Date('2026-10-01T12:00:00').getTime(),first=s0-new Date(s0).getDay()*DAY,W=Math.max(12,Math.ceil((base-first)/DAY/7)+1),lv=n=>!n?0:n<5?1:n<10?2:n<20?3:4;
- let cells='',mon='',tot=0,act=0,wk=0,lastM=-1;const ml=[];
- for(let w=0;w<W;w++){
-  const d0=new Date(first+w*7*DAY);
-  if(d0.getMonth()!==lastM&&(w===0||d0.getDate()<=7)){ml.push([w,MON[d0.getMonth()]]);lastM=d0.getMonth()}
-  for(let d=0;d<7;d++){const t=first+(w*7+d)*DAY,k=dstr(t);
-   if(t>base+DAY/2||t<s0-DAY/2){cells+='<i class="hm x"></i>';continue}
-   const n=A[k]||0;tot+=n;if(n)act++;if(w===W-1)wk+=n;
-   cells+='<i class="hm l'+lv(n)+(k===tdy?' td':'')+'" title="'+(()=>{const q=new Date(t);return q.getDate()+' '+MON[q.getMonth()]})()+': '+(n?n+' action'+(n===1?'':'s'):'no activity')+'"></i>'}}
- ml.forEach((x,i)=>{if(!ml[i+1]||ml[i+1][0]-x[0]>=3)mon+='<span style="grid-column:'+(x[0]+1)+'">'+x[1]+'</span>'});
- /* longest run of consecutive active days, all time */
- const ks=Object.keys(A).filter(k=>A[k]>0).sort();let best=0,run=0,prev=null;
- ks.forEach(k=>{const t=new Date(k+'T12:00:00').getTime();run=prev!==null&&Math.round((t-prev)/DAY)===1?run+1:1;prev=t;if(run>best)best=run});
- return '<section class="nh-hmc nh-prog" style="--w:'+W+'"><p class="nh-k">STUDY ACTIVITY</p><div class="nh-hmw"><div class="nh-hml"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class="nh-hmb"><div class="nh-hmm">'+mon+'</div><div class="nh-hmg" role="img" aria-label="Study activity over the last '+W+' weeks">'+cells+'</div></div></div>'
-  +'<div class="nh-hmf"><div class="nh-hms"><span><b>'+act+'</b>active days</span><span><b>'+wk+'</b>this week</span><span><b>'+best+'</b>longest run</span><span><b>'+tot+'</b>actions</span></div><p class="nh-hmk">Less <i class="hm l0"></i><i class="hm l1"></i><i class="hm l2"></i><i class="hm l3"></i><i class="hm l4"></i> More</p></div></section>'}
-
-const wrap=document.createElement('div');wrap.id='nh';H.append(wrap);
-H.classList.add('nh-on');
-
-function bar(p,cls){return '<div class="nh-bar2'+(cls?' '+cls:'')+'"><i style="width:'+p+'%"></i></div>'}
-
-function render(){
- const now=NOW(),L=new Set(S.learned),BM=new Set(S.bm),tot=ORDER.length;
- const read=ORDER.filter(d=>L.has(d[3])).length,pc=pct(read,tot);
- const due=Object.values(S.sr).filter(o=>o.d<=now).length,mist=Object.values(S.sr).filter(o=>o.b===0).length;
- const nxt=ORDER.find(d=>!L.has(d[3]));
- const VQ=ORDER.filter(d=>!isW(d)),WQ=ORDER.filter(d=>isW(d)||isB(d));
- const vr=VQ.filter(d=>L.has(d[3])).length,wr=WQ.filter(d=>L.has(d[3])).length;
- const nextV=VQ.find(d=>!L.has(d[3])),nextW=WQ.find(d=>!L.has(d[3]));
- const hy=ORDER.filter(d=>!L.has(d[3])&&stars(d)>=3).sort((a,b)=>stars(b)-stars(a)||NUM[a[3]]-NUM[b[3]]);
- const hyAll=ORDER.filter(d=>stars(d)>=3),hyRead=hyAll.filter(d=>L.has(d[3])).length;
- const mq=mcqStats();
- const tbDone=tbJ('tbDone'),tbN=TBI?TBI.length:0,tbR=TBI?TBI.filter(c=>tbDone[c.id]).length:Object.keys(tbDone).length;
- const tbCur=TBI&&TBI.find(c=>c.id===tbLast()),tbNext=TBI&&(tbCur&&!tbDone[tbCur.id]?tbCur:TBI.find(c=>!tbDone[c.id]));
- const sk=S.streak||{n:0,last:''},tdy=dstr(now),sn=sk.last===tdy||sk.last===dstr(now-DAY)?sk.n:0,doneToday=sk.last===tdy;
-
- /* exam countdown */
- let exam=S.pref&&S.pref.exam,days=null;
- if(exam){const t=new Date(exam+'T00:00:00').getTime();if(!isNaN(t)){const t0=new Date(tdy+'T00:00:00').getTime();days=Math.round((t-t0)/DAY)}}
- const pace=days>0?Math.ceil((tot-read)/days):0;
-
- /* ---------- hero ---------- */
- let h='<section class="nh-banner" aria-labelledby="nh-h1"><div class="nh-bn-pic"><picture><source media="(max-width:640px)" srcset="icons/hero-lab-m.webp" width="600" height="671"><img src="icons/hero-lab.webp" width="1672" height="940" alt="" fetchpriority="high" decoding="async"></picture></div><div class="nh-bn-in"><div class="nh-bn-t"><p class="nh-eb">NMC viva list · Robbins 11th</p><h1 id="nh-h1">Pathology learning for viva and written exams</h1><p class="nh-bn-s">Patholo_zzee brings '+tot+' questions with answers, MCQs and the Robbins textbook together. Read. Recall. Answer.</p><a class="nh-bn-cta" href="#/qa">Explore Pathology</a></div></div></section>';
- h+='<div class="nh-w"><header class="nh-hero nh-hero-s">';
- h+='<div class="nh-chips"><span class="nh-chip'+(doneToday?' on':'')+'"><b>'+sn+'</b> day streak'+(doneToday?' · done today':sn?' · study today to keep it':'')+'</span>';
- h+='<span class="nh-chip"><b>'+tot+'</b> questions</span>';
- h+='</div></header>';
-
- /* ---------- start here + overall progress ---------- */
- h+='<section class="nh-top"><div class="nh-start"><p class="nh-k">START HERE</p>';
- if(nxt){const t=TR[nxt[3]];h+='<p class="nh-crumb">Q.'+NUM[nxt[3]]+' · '+kind(nxt)+' · '+esc2(CH[cidx[t[0]]][1])+' → '+esc2(t[1])+'</p><h2>'+esc2(nxt[1])+'</h2><div class="nh-b"><a class="nh-go" href="'+lnk(nxt)+'">'+(read?'Continue studying':'Begin studying')+'</a><a href="#/questions">Browse all questions</a><a href="#" id="nhrnd">Random unread</a></div>'}
- else h+='<h2>Every question has been read.</h2><div class="nh-b"><a class="nh-go" href="#/practice">Rapid Recall</a><a href="#/questions">Browse all questions</a></div>';
- h+='</div><div class="nh-prog"><p class="nh-k">OVERALL PROGRESS</p><div class="nh-pc">'+pc+'<small>%</small></div>'+bar(pc)+'<p class="nh-mu">'+read+' / '+tot+' questions read</p>';
- h+='<div class="nh-split"><div><span>Viva</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'</div><div><span>Written</span><b>'+wr+'<small> / '+WQ.length+'</small></b>'+bar(pct(wr,WQ.length))+'</div></div></div></section>';
-
- /* ---------- today's plan + exam countdown ---------- */
- const plan=[];
- if(due>0)plan.push(['d','Review due cards',due+' due · '+Math.min(due,20)+' in the next round','#/practice',due]);
- if(mq.sv)plan.push(['m','Resume your MCQ session','Pick up exactly where you stopped','#/mcqs/run','']);
- if(mist>0)plan.push(['f','Revisit forgotten answers',mist+' in your mistake vault','#/practice',mist]);
- if(nxt)plan.push(['r',days>0&&pace?'Read '+pace+' question'+(pace===1?'':'s')+' today':'Read the next question','Q.'+NUM[nxt[3]]+' · '+esc2(nxt[1].length>70?nxt[1].slice(0,68)+'…':nxt[1]),lnk(nxt),pace||'']);
- plan.push(['m',mq.td?'Keep going with MCQs':'Quick 10 MCQs',mq.td?mq.td+' answered today · '+mq.acc+'% overall':(mq.att?mq.acc+'% accuracy so far':'Short SBA / T-F set to warm up'),'#/mcqs','']);
- if(tbNext)plan.push(['t',(tbCur&&tbCur.id===tbNext.id?'Continue Ch ':'Read Ch ')+tbNext.n,esc2(tbNext.title),'#/textbook/'+tbNext.id,'']);
- h+='<section class="nh-plan"><div class="nh-pl nh-prog"><p class="nh-k">TODAY\'S PLAN</p><ul>'+plan.slice(0,5).map(p=>'<li><a href="'+p[3]+'"><i class="pi '+p[0]+'"></i><span><b>'+esc2(p[1])+'</b><small>'+p[2]+'</small></span><em>'+(p[4]!==''?p[4]:'→')+'</em></a></li>').join('')+'</ul></div>';
- h+='<div class="nh-ex nh-prog"><p class="nh-k">EXAM COUNTDOWN</p>';
- if(days!==null&&days>=0){h+='<div class="nh-pc">'+days+'<small> day'+(days===1?'':'s')+'</small></div><p class="nh-mu">'+(days===0?'Exam day. You have read '+read+' of '+tot+'.':(tot-read)+' questions left'+(pace?' → about <b>'+pace+'/day</b>':''))+'</p>'}
- else if(days!==null){h+='<p class="nh-mu">That date has passed. Pick the next exam date.</p>'}
- else h+='<p class="nh-mu">Set your exam date and the home page works out how many questions to read each day.</p>';
- h+='<label class="nh-dt"><span>Exam date</span><input type="date" id="nhex" value="'+(exam||'')+'" min="'+tdy+'"></label>'+(exam?'<button type="button" class="nh-lk" id="nhexc">Clear date</button>':'')+'</div></section>';
-
- h+=heat();
- /* ---------- study tracks ---------- */
- h+='<section><h3 class="nh-h nh-h0">Study tracks</h3><div class="nh-tr">';
- h+='<a class="nh-t4 nh-prog" href="'+(nextV?lnk(nextV):'#/questions')+'"><span class="nh-tk">Viva questions</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'<span class="nh-ts">'+(VQ.length-vr)+' unread · A- and B-cards plus systemic</span><em>'+(vr?'Continue':'Start')+' →</em></a>';
- h+='<a class="nh-t4 nh-prog" href="'+(nextW?lnk(nextW):'#/questions')+'"><span class="nh-tk">Written questions</span><b>'+wr+'<small> / '+WQ.length+'</small></b>'+bar(pct(wr,WQ.length))+'<span class="nh-ts">'+(WQ.length-wr)+' unread · long-answer format</span><em>'+(wr?'Continue':'Start')+' →</em></a>';
- h+='<a class="nh-t4 nh-prog" href="#/mcqs"><span class="nh-tk">MCQs</span><b>'+mq.att+'<small> / '+mq.tot+'</small></b>'+bar(pct(mq.att,mq.tot))+'<span class="nh-ts">'+(mq.n?mq.acc+'% correct · '+mq.n+' answers':'12 past papers · mock exams · quick sets')+'</span><em>'+(mq.sv?'Resume':mq.att?'Practise':'Start')+' →</em></a>';
- h+='<a class="nh-t4 nh-prog" href="#/textbook'+(tbNext?'/'+tbNext.id:'')+'"><span class="nh-tk">Robbins textbook</span><b>'+tbR+'<small> / '+(tbN||29)+'</small></b>'+bar(pct(tbR,tbN||29))+'<span class="nh-ts">'+(tbNext?'Next: Ch '+tbNext.n+' · '+esc2(tbNext.title):'Chapters read, offline-ready')+'</span><em>'+(tbR?'Continue':'Open')+' →</em></a>';
- h+='</div></section>';
-
- /* ---------- revision row ---------- */
- h+='<section class="nh-row"><a href="#/practice"><b>'+due+'</b><span>Due for review</span></a><a href="#/practice"><b>'+mist+'</b><span>In mistake vault</span></a><a href="#/bookmarks"><b>'+S.bm.length+'</b><span>Revise later</span></a><a class="nh-rr" href="#/practice">Rapid Recall →</a></section>';
-
- /* ---------- high-yield + weak spots ---------- */
- const chW=CH.map((c,i)=>{const a=byCh[c[0]]||[],r=a.filter(d=>L.has(d[3])).length;return {c,i,n:a.length,r,p:pct(r,a.length)}}).filter(x=>x.n>=5).sort((x,y)=>x.p-y.p||y.n-x.n).slice(0,4);
- h+='<section class="nh-2"><div class="nh-card nh-prog"><h3 class="nh-h2">High-yield, not read yet</h3><p class="nh-mu">Asked often or marked most important. '+hyRead+' of '+hyAll.length+' read.</p>';
- h+=hy.length?'<ul class="nh-hy">'+hy.slice(0,6).map(d=>{const y=years(d);return '<li><a href="'+lnk(d)+'"><span>'+esc2(d[1])+'</span><small><b>★ '+stars(d)+'</b>'+(y.length?' · '+y.slice(-3).reverse().join(', '):'')+' · '+kind(d)+'</small></a></li>'}).join('')+'</ul>':'<p class="nh-mu">All high-yield questions are read. Use Rapid Recall to keep them fresh.</p>';
- h+='</div><div class="nh-card nh-prog"><h3 class="nh-h2">Where to focus next</h3>';
- if(mq.weak.length)h+='<p class="nh-k nh-k2">Weakest MCQ topics</p><ul class="nh-wk">'+mq.weak.map(o=>'<li><a href="#/mcqs"><span>'+esc2(MCQDATA.ch[o.c][1][o.t])+'</span><em class="'+(o.a<50?'bad':o.a<70?'warn':'')+'">'+o.a+'%</em></a></li>').join('')+'</ul>';
- h+='<p class="nh-k nh-k2">Least-covered viva chapters</p><ul class="nh-wk">'+chW.map(x=>{const pg=pageOf(x.c[0]);return '<li><a href="'+(pg?'#/'+pg:'#/qa')+'"><span>'+esc2(x.c[1])+'</span><em>'+x.r+'/'+x.n+'</em></a></li>'}).join('')+'</ul></div></section>';
-
- h+='<section><h3 class="nh-h">Topics and progress</h3><div class="nh-chs">';
- CH.forEach((c,i)=>{const a=byCh[c[0]]||[],pg=pageOf(c[0]),r=a.filter(d=>L.has(d[3])).length,p=pct(r,a.length);
-  h+='<article class="nh-ch" id="nhch'+c[0]+'"><div class="nh-n">'+String(i+1).padStart(2,'0')+'</div><div class="nh-cb"><h4>'+(pg?'<a href="#/'+pg+'">'+esc2(c[1])+'</a>':esc2(c[1]))+'</h4><p class="nh-mu">'+esc2(c[2])+' · '+r+' / '+a.length+' read · '+p+'%</p>'+bar(p)+'<ul>';
-  c[3].forEach(sn=>{const q=a.filter(d=>TR[d[3]][1]===sn);if(q.length){const rr=q.filter(d=>L.has(d[3])).length;h+='<li><a href="'+lnk(q[0])+'"><span>'+esc2(sn)+'</span><u></u><em>'+rr+'/'+q.length+'</em></a></li>'}else h+='<li class="no"><span>'+esc2(sn)+'</span><u></u><em>no questions</em></li>'});
-  h+='</ul></div></article>'});
- h+='</div></section><section><h3 class="nh-h">Recently studied</h3>';
- const rec=S.recent.map(i=>BY[i]).filter(Boolean);
- h+=rec.length?'<ul class="nh-rec">'+rec.map(d=>'<li><a href="'+lnk(d)+'">'+esc2(d[1])+'</a><span>'+esc2(CH[cidx[(TR[d[3]]||[])[0]]]?CH[cidx[TR[d[3]][0]]][1]:d[4])+'</span></li>').join('')+'</ul>':'<p class="nh-mu">Nothing yet. Questions you open will appear here.</p>';
- h+='</section><footer class="nh-f"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href="#/questions">Questions</a> · <a href="#/qa">Q&amp;A</a> · <a href="#/mcqs">MCQs</a> · <a href="#/textbook">Textbook</a> · <a href="#/notes">Notes</a> · <a href="#/howto">How to read</a></footer></div>';
- wrap.innerHTML=h;
-}
-wrap.addEventListener('click',e=>{
- if(e.target.closest('#nhrnd')){e.preventDefault();const L=new Set(S.learned),u=ORDER.filter(d=>!L.has(d[3]));if(u.length){const d=u[Math.floor(Math.random()*u.length)];location.hash=lnk(d)}return}
- if(e.target.closest('#nhexc')){S.pref=S.pref||{};delete S.pref.exam;save();render()}
-});
-wrap.addEventListener('change',e=>{
- if(e.target.id==='nhex'){S.pref=S.pref||{};if(e.target.value)S.pref.exam=e.target.value;else delete S.pref.exam;save();render()}
-});
-window.nhRender=(function(){let q=0;return function(){if(q)return;q=1;requestAnimationFrame(function(){q=0;render()})}})();render();
+/* GENERATED from src/legacy/home.ts by `npm run build:classic`. Edit the .ts, not this file. */
+(function() {
+	//#region src/legacy/home.ts
+	(function() {
+		const H = document.getElementById("v-home");
+		if (!H) return;
+		const NOW = () => Date.now();
+		const CH = QMETA.chapters, TR = QMETA.tree, TYW = QMETA.type || {}, EX = QMETA.exam || {};
+		const cidx = {};
+		CH.forEach((c, i) => cidx[c[0]] = i);
+		const ORDER = DATA.filter((d) => TR[d[3]]).slice().sort((a, b) => cidx[TR[a[3]][0]] - cidx[TR[b[3]][0]] || +a[3].slice(1) - +b[3].slice(1));
+		const NUM = {};
+		ORDER.forEach((d, i) => NUM[d[3]] = i + 1);
+		const byCh = {};
+		ORDER.forEach((d) => (byCh[TR[d[3]][0]] = byCh[TR[d[3]][0]] || []).push(d));
+		const isW = (d) => TYW[d[3]] === "W", isB = (d) => TYW[d[3]] === "B", kind = (d) => isB(d) ? "Written + Viva" : isW(d) ? "Written" : "Viva";
+		const stars = (d) => (EX[d[3]] || [0])[0] || 0;
+		const years = (d) => (EX[d[3]] || [
+			0,
+			"",
+			[]
+		])[2] || [];
+		function pageOf(c) {
+			const a = byCh[c];
+			if (!a) return null;
+			const n = {};
+			a.forEach((d) => n[d[2]] = (n[d[2]] || 0) + 1);
+			return Object.keys(n).sort((x, y) => n[y] - n[x])[0];
+		}
+		function esc2(t) {
+			return String(t).replace(/[&<>"]/g, (m) => ({
+				"&": "&amp;",
+				"<": "&lt;",
+				">": "&gt;",
+				"\"": "&quot;"
+			})[m]);
+		}
+		const pct = (a, b) => b ? Math.round(100 * a / b) : 0;
+		const lnk = (d) => "#/" + d[2] + "/" + d[3];
+		let TBI = null;
+		const tbJ = (k) => {
+			try {
+				return JSON.parse(zzStore.getItem(k) || "{}");
+			} catch (e) {
+				return {};
+			}
+		};
+		const tbLast = () => {
+			try {
+				return zzStore.getItem("tbLast");
+			} catch (e) {
+				return null;
+			}
+		};
+		try {
+			fetch("textbook/index.json").then((r) => r.ok ? r.json() : null).then((j) => {
+				if (j && j.chapters) {
+					TBI = j.chapters;
+					render();
+				}
+			}).catch(() => {});
+		} catch (e) {}
+		function mcqStats() {
+			const Q = typeof MCQDATA !== "undefined" && MCQDATA.q || [], M = S.mcq || {}, P = M.p || {};
+			let att = 0, n = 0, k = 0;
+			const tp = {};
+			Q.forEach((q) => {
+				const x = P[q.h];
+				if (!x || !x.n) return;
+				att++;
+				n += x.n;
+				k += x.k;
+				const key = q.c + "." + q.t, o = tp[key] = tp[key] || {
+					c: q.c,
+					t: q.t,
+					n: 0,
+					k: 0
+				};
+				o.n += x.n;
+				o.k += x.k;
+			});
+			const weak = Object.values(tp).filter((o) => o.n >= 3).map((o) => Object.assign(o, { a: Math.round(100 * o.k / o.n) })).sort((x, y) => x.a - y.a || y.n - x.n).slice(0, 4);
+			const today = (/* @__PURE__ */ new Date()).toLocaleDateString("en-CA"), td = M.day && M.day.d === today ? M.day.n : 0;
+			const sv = M.sess && M.sess.ids && M.sess.ids.length && !M.sess.review ? M.sess : null;
+			return {
+				tot: Q.length,
+				att,
+				n,
+				k,
+				acc: pct(k, n),
+				weak,
+				td,
+				sv,
+				bm: (M.bm || []).length,
+				papers: 12
+			};
+		}
+		window.actLog = function(n) {
+			try {
+				const t = dstr(Date.now());
+				S.act = S.act && typeof S.act === "object" ? S.act : {};
+				S.act[t] = (S.act[t] || 0) + (n || 1);
+				save();
+			} catch (e) {}
+		};
+		try {
+			const t0 = touch;
+			touch = function() {
+				window.actLog(1);
+				return t0.apply(this, arguments);
+			};
+		} catch (e) {}
+		function actMap() {
+			const m = Object.assign({}, S.act || {}), d = {};
+			try {
+				const P = S.mcq && S.mcq.p || {};
+				Object.keys(P).forEach((h) => {
+					const x = P[h];
+					if (x && x.ts) {
+						const k = dstr(x.ts);
+						d[k] = (d[k] || 0) + 1;
+					}
+				});
+			} catch (e) {}
+			Object.keys(d).forEach((k) => {
+				m[k] = Math.max(m[k] || 0, d[k]);
+			});
+			return m;
+		}
+		const MON = [
+			"Jan",
+			"Feb",
+			"Mar",
+			"Apr",
+			"May",
+			"Jun",
+			"Jul",
+			"Aug",
+			"Sep",
+			"Oct",
+			"Nov",
+			"Dec"
+		];
+		function heat() {
+			const A = actMap(), tdy = dstr(Date.now()), base = (/* @__PURE__ */ new Date(tdy + "T12:00:00")).getTime();
+			new Date(base).getDay();
+			const s0 = (/* @__PURE__ */ new Date("2026-10-01T12:00:00")).getTime(), first = s0 - new Date(s0).getDay() * DAY, W = Math.max(12, Math.ceil((base - first) / DAY / 7) + 1), lv = (n) => !n ? 0 : n < 5 ? 1 : n < 10 ? 2 : n < 20 ? 3 : 4;
+			let cells = "", mon = "", tot = 0, act = 0, wk = 0, lastM = -1;
+			const ml = [];
+			for (let w = 0; w < W; w++) {
+				const d0 = new Date(first + w * 7 * DAY);
+				if (d0.getMonth() !== lastM && (w === 0 || d0.getDate() <= 7)) {
+					ml.push([w, MON[d0.getMonth()]]);
+					lastM = d0.getMonth();
+				}
+				for (let d = 0; d < 7; d++) {
+					const t = first + (w * 7 + d) * DAY, k = dstr(t);
+					if (t > base + DAY / 2 || t < s0 - DAY / 2) {
+						cells += "<i class=\"hm x\"></i>";
+						continue;
+					}
+					const n = A[k] || 0;
+					tot += n;
+					if (n) act++;
+					if (w === W - 1) wk += n;
+					cells += "<i class=\"hm l" + lv(n) + (k === tdy ? " td" : "") + "\" title=\"" + (() => {
+						const q = new Date(t);
+						return q.getDate() + " " + MON[q.getMonth()];
+					})() + ": " + (n ? n + " action" + (n === 1 ? "" : "s") : "no activity") + "\"></i>";
+				}
+			}
+			ml.forEach((x, i) => {
+				if (!ml[i + 1] || ml[i + 1][0] - x[0] >= 3) mon += "<span style=\"grid-column:" + (x[0] + 1) + "\">" + x[1] + "</span>";
+			});
+			const ks = Object.keys(A).filter((k) => A[k] > 0).sort();
+			let best = 0, run = 0, prev = null;
+			ks.forEach((k) => {
+				const t = (/* @__PURE__ */ new Date(k + "T12:00:00")).getTime();
+				run = prev !== null && Math.round((t - prev) / DAY) === 1 ? run + 1 : 1;
+				prev = t;
+				if (run > best) best = run;
+			});
+			return "<section class=\"nh-hmc nh-prog\" style=\"--w:" + W + "\"><p class=\"nh-k\">STUDY ACTIVITY</p><div class=\"nh-hmw\"><div class=\"nh-hml\"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class=\"nh-hmb\"><div class=\"nh-hmm\">" + mon + "</div><div class=\"nh-hmg\" role=\"img\" aria-label=\"Study activity over the last " + W + " weeks\">" + cells + "</div></div></div><div class=\"nh-hmf\"><div class=\"nh-hms\"><span><b>" + act + "</b>active days</span><span><b>" + wk + "</b>this week</span><span><b>" + best + "</b>longest run</span><span><b>" + tot + "</b>actions</span></div><p class=\"nh-hmk\">Less <i class=\"hm l0\"></i><i class=\"hm l1\"></i><i class=\"hm l2\"></i><i class=\"hm l3\"></i><i class=\"hm l4\"></i> More</p></div></section>";
+		}
+		const wrap = document.createElement("div");
+		wrap.id = "nh";
+		H.append(wrap);
+		H.classList.add("nh-on");
+		function bar(p, cls) {
+			return "<div class=\"nh-bar2" + (cls ? " " + cls : "") + "\"><i style=\"width:" + p + "%\"></i></div>";
+		}
+		function render() {
+			const now = NOW(), L = new Set(S.learned);
+			new Set(S.bm);
+			const tot = ORDER.length;
+			const read = ORDER.filter((d) => L.has(d[3])).length, pc = pct(read, tot);
+			const due = Object.values(S.sr).filter((o) => o.d <= now).length, mist = Object.values(S.sr).filter((o) => o.b === 0).length;
+			const nxt = ORDER.find((d) => !L.has(d[3]));
+			const VQ = ORDER.filter((d) => !isW(d)), WQ = ORDER.filter((d) => isW(d) || isB(d));
+			const vr = VQ.filter((d) => L.has(d[3])).length, wr = WQ.filter((d) => L.has(d[3])).length;
+			const nextV = VQ.find((d) => !L.has(d[3])), nextW = WQ.find((d) => !L.has(d[3]));
+			const hy = ORDER.filter((d) => !L.has(d[3]) && stars(d) >= 3).sort((a, b) => stars(b) - stars(a) || NUM[a[3]] - NUM[b[3]]);
+			const hyAll = ORDER.filter((d) => stars(d) >= 3), hyRead = hyAll.filter((d) => L.has(d[3])).length;
+			const mq = mcqStats();
+			const tbDone = tbJ("tbDone"), tbN = TBI ? TBI.length : 0, tbR = TBI ? TBI.filter((c) => tbDone[c.id]).length : Object.keys(tbDone).length;
+			const tbCur = TBI && TBI.find((c) => c.id === tbLast()), tbNext = TBI && (tbCur && !tbDone[tbCur.id] ? tbCur : TBI.find((c) => !tbDone[c.id]));
+			const sk = S.streak || {
+				n: 0,
+				last: ""
+			}, tdy = dstr(now), sn = sk.last === tdy || sk.last === dstr(now - DAY) ? sk.n : 0, doneToday = sk.last === tdy;
+			let exam = S.pref && S.pref.exam, days = null;
+			if (exam) {
+				const t = (/* @__PURE__ */ new Date(exam + "T00:00:00")).getTime();
+				if (!isNaN(t)) {
+					const t0 = (/* @__PURE__ */ new Date(tdy + "T00:00:00")).getTime();
+					days = Math.round((t - t0) / DAY);
+				}
+			}
+			const pace = days > 0 ? Math.ceil((tot - read) / days) : 0;
+			let h = "<section class=\"nh-banner\" aria-labelledby=\"nh-h1\"><div class=\"nh-bn-pic\"><picture><source media=\"(max-width:640px)\" srcset=\"icons/hero-lab-m.webp\" width=\"600\" height=\"671\"><img src=\"icons/hero-lab.webp\" width=\"1672\" height=\"940\" alt=\"\" fetchpriority=\"high\" decoding=\"async\"></picture></div><div class=\"nh-bn-in\"><div class=\"nh-bn-t\"><p class=\"nh-eb\">NMC viva list · Robbins 11th</p><h1 id=\"nh-h1\">Pathology learning for viva and written exams</h1><p class=\"nh-bn-s\">Patholo_zzee brings " + tot + " questions with answers, MCQs and the Robbins textbook together. Read. Recall. Answer.</p><a class=\"nh-bn-cta\" href=\"#/qa\">Explore Pathology</a></div></div></section>";
+			h += "<div class=\"nh-w\"><header class=\"nh-hero nh-hero-s\">";
+			h += "<div class=\"nh-chips\"><span class=\"nh-chip" + (doneToday ? " on" : "") + "\"><b>" + sn + "</b> day streak" + (doneToday ? " · done today" : sn ? " · study today to keep it" : "") + "</span>";
+			h += "<span class=\"nh-chip\"><b>" + tot + "</b> questions</span>";
+			h += "</div></header>";
+			h += "<section class=\"nh-top\"><div class=\"nh-start\"><p class=\"nh-k\">START HERE</p>";
+			if (nxt) {
+				const t = TR[nxt[3]];
+				h += "<p class=\"nh-crumb\">Q." + NUM[nxt[3]] + " · " + kind(nxt) + " · " + esc2(CH[cidx[t[0]]][1]) + " → " + esc2(t[1]) + "</p><h2>" + esc2(nxt[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(nxt) + "\">" + (read ? "Continue studying" : "Begin studying") + "</a><a href=\"#/questions\">Browse all questions</a><a href=\"#\" id=\"nhrnd\">Random unread</a></div>";
+			} else h += "<h2>Every question has been read.</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"#/practice\">Rapid Recall</a><a href=\"#/questions\">Browse all questions</a></div>";
+			h += "</div><div class=\"nh-prog\"><p class=\"nh-k\">OVERALL PROGRESS</p><div class=\"nh-pc\">" + pc + "<small>%</small></div>" + bar(pc) + "<p class=\"nh-mu\">" + read + " / " + tot + " questions read</p>";
+			h += "<div class=\"nh-split\"><div><span>Viva</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "</div><div><span>Written</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "</div></div></div></section>";
+			const plan = [];
+			if (due > 0) plan.push([
+				"d",
+				"Review due cards",
+				due + " due · " + Math.min(due, 20) + " in the next round",
+				"#/practice",
+				due
+			]);
+			if (mq.sv) plan.push([
+				"m",
+				"Resume your MCQ session",
+				"Pick up exactly where you stopped",
+				"#/mcqs/run",
+				""
+			]);
+			if (mist > 0) plan.push([
+				"f",
+				"Revisit forgotten answers",
+				mist + " in your mistake vault",
+				"#/practice",
+				mist
+			]);
+			if (nxt) plan.push([
+				"r",
+				days > 0 && pace ? "Read " + pace + " question" + (pace === 1 ? "" : "s") + " today" : "Read the next question",
+				"Q." + NUM[nxt[3]] + " · " + esc2(nxt[1].length > 70 ? nxt[1].slice(0, 68) + "…" : nxt[1]),
+				lnk(nxt),
+				pace || ""
+			]);
+			plan.push([
+				"m",
+				mq.td ? "Keep going with MCQs" : "Quick 10 MCQs",
+				mq.td ? mq.td + " answered today · " + mq.acc + "% overall" : mq.att ? mq.acc + "% accuracy so far" : "Short SBA / T-F set to warm up",
+				"#/mcqs",
+				""
+			]);
+			if (tbNext) plan.push([
+				"t",
+				(tbCur && tbCur.id === tbNext.id ? "Continue Ch " : "Read Ch ") + tbNext.n,
+				esc2(tbNext.title),
+				"#/textbook/" + tbNext.id,
+				""
+			]);
+			h += "<section class=\"nh-plan\"><div class=\"nh-pl nh-prog\"><p class=\"nh-k\">TODAY'S PLAN</p><ul>" + plan.slice(0, 5).map((p) => "<li><a href=\"" + p[3] + "\"><i class=\"pi " + p[0] + "\"></i><span><b>" + esc2(p[1]) + "</b><small>" + p[2] + "</small></span><em>" + (p[4] !== "" ? p[4] : "→") + "</em></a></li>").join("") + "</ul></div>";
+			h += "<div class=\"nh-ex nh-prog\"><p class=\"nh-k\">EXAM COUNTDOWN</p>";
+			if (days !== null && days >= 0) h += "<div class=\"nh-pc\">" + days + "<small> day" + (days === 1 ? "" : "s") + "</small></div><p class=\"nh-mu\">" + (days === 0 ? "Exam day. You have read " + read + " of " + tot + "." : tot - read + " questions left" + (pace ? " → about <b>" + pace + "/day</b>" : "")) + "</p>";
+			else if (days !== null) h += "<p class=\"nh-mu\">That date has passed. Pick the next exam date.</p>";
+			else h += "<p class=\"nh-mu\">Set your exam date and the home page works out how many questions to read each day.</p>";
+			h += "<label class=\"nh-dt\"><span>Exam date</span><input type=\"date\" id=\"nhex\" value=\"" + (exam || "") + "\" min=\"" + tdy + "\"></label>" + (exam ? "<button type=\"button\" class=\"nh-lk\" id=\"nhexc\">Clear date</button>" : "") + "</div></section>";
+			h += heat();
+			h += "<section><h3 class=\"nh-h nh-h0\">Study tracks</h3><div class=\"nh-tr\">";
+			h += "<a class=\"nh-t4 nh-prog\" href=\"" + (nextV ? lnk(nextV) : "#/questions") + "\"><span class=\"nh-tk\">Viva questions</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "<span class=\"nh-ts\">" + (VQ.length - vr) + " unread · A- and B-cards plus systemic</span><em>" + (vr ? "Continue" : "Start") + " →</em></a>";
+			h += "<a class=\"nh-t4 nh-prog\" href=\"" + (nextW ? lnk(nextW) : "#/questions") + "\"><span class=\"nh-tk\">Written questions</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "<span class=\"nh-ts\">" + (WQ.length - wr) + " unread · long-answer format</span><em>" + (wr ? "Continue" : "Start") + " →</em></a>";
+			h += "<a class=\"nh-t4 nh-prog\" href=\"#/mcqs\"><span class=\"nh-tk\">MCQs</span><b>" + mq.att + "<small> / " + mq.tot + "</small></b>" + bar(pct(mq.att, mq.tot)) + "<span class=\"nh-ts\">" + (mq.n ? mq.acc + "% correct · " + mq.n + " answers" : "12 past papers · mock exams · quick sets") + "</span><em>" + (mq.sv ? "Resume" : mq.att ? "Practise" : "Start") + " →</em></a>";
+			h += "<a class=\"nh-t4 nh-prog\" href=\"#/textbook" + (tbNext ? "/" + tbNext.id : "") + "\"><span class=\"nh-tk\">Robbins textbook</span><b>" + tbR + "<small> / " + (tbN || 29) + "</small></b>" + bar(pct(tbR, tbN || 29)) + "<span class=\"nh-ts\">" + (tbNext ? "Next: Ch " + tbNext.n + " · " + esc2(tbNext.title) : "Chapters read, offline-ready") + "</span><em>" + (tbR ? "Continue" : "Open") + " →</em></a>";
+			h += "</div></section>";
+			h += "<section class=\"nh-row\"><a href=\"#/practice\"><b>" + due + "</b><span>Due for review</span></a><a href=\"#/practice\"><b>" + mist + "</b><span>In mistake vault</span></a><a href=\"#/bookmarks\"><b>" + S.bm.length + "</b><span>Revise later</span></a><a class=\"nh-rr\" href=\"#/practice\">Rapid Recall →</a></section>";
+			const chW = CH.map((c, i) => {
+				const a = byCh[c[0]] || [], r = a.filter((d) => L.has(d[3])).length;
+				return {
+					c,
+					i,
+					n: a.length,
+					r,
+					p: pct(r, a.length)
+				};
+			}).filter((x) => x.n >= 5).sort((x, y) => x.p - y.p || y.n - x.n).slice(0, 4);
+			h += "<section class=\"nh-2\"><div class=\"nh-card nh-prog\"><h3 class=\"nh-h2\">High-yield, not read yet</h3><p class=\"nh-mu\">Asked often or marked most important. " + hyRead + " of " + hyAll.length + " read.</p>";
+			h += hy.length ? "<ul class=\"nh-hy\">" + hy.slice(0, 6).map((d) => {
+				const y = years(d);
+				return "<li><a href=\"" + lnk(d) + "\"><span>" + esc2(d[1]) + "</span><small><b>★ " + stars(d) + "</b>" + (y.length ? " · " + y.slice(-3).reverse().join(", ") : "") + " · " + kind(d) + "</small></a></li>";
+			}).join("") + "</ul>" : "<p class=\"nh-mu\">All high-yield questions are read. Use Rapid Recall to keep them fresh.</p>";
+			h += "</div><div class=\"nh-card nh-prog\"><h3 class=\"nh-h2\">Where to focus next</h3>";
+			if (mq.weak.length) h += "<p class=\"nh-k nh-k2\">Weakest MCQ topics</p><ul class=\"nh-wk\">" + mq.weak.map((o) => "<li><a href=\"#/mcqs\"><span>" + esc2(MCQDATA.ch[o.c][1][o.t]) + "</span><em class=\"" + (o.a < 50 ? "bad" : o.a < 70 ? "warn" : "") + "\">" + o.a + "%</em></a></li>").join("") + "</ul>";
+			h += "<p class=\"nh-k nh-k2\">Least-covered viva chapters</p><ul class=\"nh-wk\">" + chW.map((x) => {
+				const pg = pageOf(x.c[0]);
+				return "<li><a href=\"" + (pg ? "#/" + pg : "#/qa") + "\"><span>" + esc2(x.c[1]) + "</span><em>" + x.r + "/" + x.n + "</em></a></li>";
+			}).join("") + "</ul></div></section>";
+			h += "<section><h3 class=\"nh-h\">Topics and progress</h3><div class=\"nh-chs\">";
+			CH.forEach((c, i) => {
+				const a = byCh[c[0]] || [], pg = pageOf(c[0]), r = a.filter((d) => L.has(d[3])).length, p = pct(r, a.length);
+				h += "<article class=\"nh-ch\" id=\"nhch" + c[0] + "\"><div class=\"nh-n\">" + String(i + 1).padStart(2, "0") + "</div><div class=\"nh-cb\"><h4>" + (pg ? "<a href=\"#/" + pg + "\">" + esc2(c[1]) + "</a>" : esc2(c[1])) + "</h4><p class=\"nh-mu\">" + esc2(c[2]) + " · " + r + " / " + a.length + " read · " + p + "%</p>" + bar(p) + "<ul>";
+				c[3].forEach((sn) => {
+					const q = a.filter((d) => TR[d[3]][1] === sn);
+					if (q.length) {
+						const rr = q.filter((d) => L.has(d[3])).length;
+						h += "<li><a href=\"" + lnk(q[0]) + "\"><span>" + esc2(sn) + "</span><u></u><em>" + rr + "/" + q.length + "</em></a></li>";
+					} else h += "<li class=\"no\"><span>" + esc2(sn) + "</span><u></u><em>no questions</em></li>";
+				});
+				h += "</ul></div></article>";
+			});
+			h += "</div></section><section><h3 class=\"nh-h\">Recently studied</h3>";
+			const rec = S.recent.map((i) => BY[i]).filter(Boolean);
+			h += rec.length ? "<ul class=\"nh-rec\">" + rec.map((d) => "<li><a href=\"" + lnk(d) + "\">" + esc2(d[1]) + "</a><span>" + esc2(CH[cidx[(TR[d[3]] || [])[0]]] ? CH[cidx[TR[d[3]][0]]][1] : d[4]) + "</span></li>").join("") + "</ul>" : "<p class=\"nh-mu\">Nothing yet. Questions you open will appear here.</p>";
+			h += "</section><footer class=\"nh-f\"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href=\"#/questions\">Questions</a> · <a href=\"#/qa\">Q&amp;A</a> · <a href=\"#/mcqs\">MCQs</a> · <a href=\"#/textbook\">Textbook</a> · <a href=\"#/notes\">Notes</a> · <a href=\"#/howto\">How to read</a></footer></div>";
+			wrap.innerHTML = h;
+		}
+		wrap.addEventListener("click", (e) => {
+			if (e.target.closest("#nhrnd")) {
+				e.preventDefault();
+				const L = new Set(S.learned), u = ORDER.filter((d) => !L.has(d[3]));
+				if (u.length) {
+					const d = u[Math.floor(Math.random() * u.length)];
+					location.hash = lnk(d);
+				}
+				return;
+			}
+			if (e.target.closest("#nhexc")) {
+				S.pref = S.pref || {};
+				delete S.pref.exam;
+				save();
+				render();
+			}
+		});
+		wrap.addEventListener("change", (e) => {
+			if (e.target.id === "nhex") {
+				S.pref = S.pref || {};
+				if (e.target.value) S.pref.exam = e.target.value;
+				else delete S.pref.exam;
+				save();
+				render();
+			}
+		});
+		window.nhRender = (function() {
+			let q = 0;
+			return function() {
+				if (q) return;
+				q = 1;
+				requestAnimationFrame(function() {
+					q = 0;
+					render();
+				});
+			};
+		})();
+		render();
+	})();
+	(function() {
+		const T = document.getElementById("tools");
+		if (!T) return;
+		let q = 0;
+		function place() {
+			q = 0;
+			const n = [...document.querySelectorAll(".nav")].find((x) => x.offsetParent !== null);
+			if (!n) return;
+			const lg = n.querySelector(".logo"), pl = n.querySelector(".pill");
+			if (!lg || !pl) return;
+			const l = lg.getBoundingClientRect(), p = pl.getBoundingClientRect();
+			T.style.right = Math.max(4, Math.round(innerWidth - p.left + 10)) + "px";
+			T.style.maxWidth = Math.max(80, Math.round(p.left - 10 - l.right - 10)) + "px";
+		}
+		const go = () => {
+			if (!q) q = requestAnimationFrame(place);
+		};
+		addEventListener("resize", go);
+		addEventListener("hashchange", () => {
+			go();
+			setTimeout(go, 120);
+		});
+		addEventListener("load", go);
+		new MutationObserver(go).observe(T, { childList: true });
+		if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
+		go();
+	})();
+	window.cacheDiag = async () => {
+		try {
+			const out = {};
+			for (const k of (await caches.keys()).filter((k) => k.startsWith("pathviva-"))) {
+				const c = await caches.open(k), d = await c.match("diag.json");
+				out[k] = {
+					entries: (await c.keys()).length,
+					textbook: d ? await d.json() : "not run yet"
+				};
+			}
+			return out;
+		} catch (e) {
+			return { error: String(e) };
+		}
+	};
+	//#endregion
 })();
-
-/* ---- put the reading tools (Ink / Theme / A- / A+ / Focus / Print) in the top bar: right next to "Start revising", inside the free space after the logo ---- */
-(function(){const T=document.getElementById('tools');if(!T)return;let q=0;
- function place(){q=0;const n=[...document.querySelectorAll('.nav')].find(x=>x.offsetParent!==null);if(!n)return;
-  const lg=n.querySelector('.logo'),pl=n.querySelector('.pill');if(!lg||!pl)return;
-  const l=lg.getBoundingClientRect(),p=pl.getBoundingClientRect();
-  T.style.right=Math.max(4,Math.round(innerWidth-p.left+10))+'px';T.style.maxWidth=Math.max(80,Math.round(p.left-10-l.right-10))+'px'}
- const go=()=>{if(!q)q=requestAnimationFrame(place)};
- addEventListener('resize',go);addEventListener('hashchange',()=>{go();setTimeout(go,120)});addEventListener('load',go);
- new MutationObserver(go).observe(T,{childList:true});
- if(document.fonts&&document.fonts.ready)document.fonts.ready.then(go);go()})();
-
-/* Offline diagnostics: run  cacheDiag()  in the browser console to see what is saved for offline use. */
-window.cacheDiag=async()=>{try{const out={};for(const k of (await caches.keys()).filter(k=>k.startsWith('pathviva-'))){const c=await caches.open(k),d=await c.match('diag.json');out[k]={entries:(await c.keys()).length,textbook:d?await d.json():'not run yet'}}return out}catch(e){return{error:String(e)}}};
 
 /* ===== cinematic banners for Questions / Chapters / MCQs / Textbook / Menu (idempotent; runs now, on load and on route change).
    Each banner also carries that page's main actions and a few live figures; actions reuse existing routes or trigger the page's own buttons. ===== */

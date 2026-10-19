@@ -51,7 +51,7 @@ class ZzStore(unittest.TestCase):
 
     def test_committed_bundles_are_current(self):
         if os.environ.get('SITE_DIR'): self.skipTest('checked on the repo root only')
-        for entry, name in (('store', 'zz-store.js'), ('welcome', 'welcome.js')):
+        for entry, name in (('store', 'zz-store.js'), ('welcome', 'welcome.js'), ('home', 'tools/home.js'), ('textbook', 'tools/textbook.js')):
             tmp = tempfile.mkdtemp()
             try:
                 r = subprocess.run(['npx', 'vite', 'build', '-c', 'vite.store.config.ts'], cwd=ROOT, capture_output=True, text=True, env=dict(os.environ, ZZ_ENTRY=entry, ZZ_OUT=tmp))

@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "check": "python3 tools/integrity/check.py --new dist",
     "test:unit": "node --test src/storage/storage.test.ts src/storage/sync-store.test.ts",
-    "build:classic": "ZZ_ENTRY=store vite build -c vite.store.config.ts && ZZ_ENTRY=welcome vite build -c vite.store.config.ts"
+    "build:classic": "ZZ_ENTRY=store vite build -c vite.store.config.ts && ZZ_ENTRY=welcome vite build -c vite.store.config.ts && ZZ_ENTRY=home vite build -c vite.store.config.ts && ZZ_ENTRY=textbook vite build -c vite.store.config.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
