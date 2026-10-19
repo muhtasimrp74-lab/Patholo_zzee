@@ -10,8 +10,8 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 ## Stage checklist
 | # | Stage | Status |
 |---|-------|--------|
-| 0 | Baseline and audit | in progress (full baseline suite running on a clean worktree of main) |
-| 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | in progress: integrity script done and negative-tested; storage fixtures + Playwright smoke todo |
+| 0 | Baseline and audit | done (session 2) |
+| 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | in progress: integrity script, localStorage fixtures and http smoke suite done; IndexedDB (annotation) fixtures todo |
 | 2 | Vite + TypeScript scaffold | todo |
 | 3 | Storage layer | todo |
 | 4 | Incremental TypeScript conversion | todo |
@@ -71,21 +71,34 @@ Search; practice (spaced repetition + timed viva); quiz mode; MCQs (home, custom
 2. Legacy build takes about 3 minutes (2m55 while the test suite was also running). The "integrity script under 1 minute" requirement therefore cannot rebuild the legacy site every run; see Decisions.
 3. Test suite uses `file://`, so service-worker behaviour is not covered by it at all; Stage 1/6 add http-served tests.
 
-### Known failures that pre-exist on main
-(filled in when the baseline run finishes; log at `/home/claude/baseline_tests.log` in the session sandbox)
+### Known failures that pre-exist on main (baseline `68e1cfc`, run in this 4 GB sandbox, 2026-10-19)
+Full suite: 101 tests, 3 failures + 13 errors in ~23 min under load (many 30 s Playwright timeouts caused by CPU/RAM pressure). The 16 failing tests were rerun alone on a clean main worktree: 11 passed, **5 still fail on clean main**:
+- `test_annot.AnnotBrowser.test_mcq_entry_button_in_live_sessions_hide_switch_and_reading_mode` (Page.click timeout)
+- `test_annot.AnnotBrowser.test_text_highlight_follows_text_erases_undoes_and_survives_backup` (Page.click timeout)
+- `test_annot.AnnotBrowser.test_text_marks_underline_strike_squiggle_in_six_colours` (Page.click timeout)
+- `test_annot_p6.Polish.test_canvases_use_the_full_pixel_ratio_up_to_3x` (2.67 != 3; likely headless/viewport dependent, UNCONFIRMED cause)
+- `test_annot_tb.TextbookAnnot.test_block_ids_cover_every_block_are_unique_and_the_build_is_deterministic` (rebuilding textbook is not byte-identical to committed chapters; same cause as Finding 1; NOT an annotation test, not in the owner's list of 7)
+The owner's list of 7 known failures was not provided in file form; this list has NOT been matched against it. The 11 that passed alone are load-induced timeouts in this sandbox (flaky under load), not regressions. Rule for later stages: compare against these 5 plus flakiness, rerun any new failure alone before judging. Run the full suite with nothing else running.
+
+### Legacy quirks observed (preserve; do not "fix" silently)
+- `#/search` keeps the home view; the `#gq` search box is hidden by the new-home layout. Working search inputs: `#qfilter` (`#/questions`) and `input.tq` (topic pages).
+- Cards are shown expanded by default; they only collapse/toggle in quiz mode.
+- The `#qfilter` Questions filter keeps hiding cards on topic pages (class `tf-hide`) until cleared.
 
 ## Decisions
 - D1: Python `jsonschema` (dev-only, already installed here, no runtime effect) is used to validate generated JSON against schemas in the integrity script. Benefit: schema validation is a stated requirement; hand-rolling a validator would be larger and less reliable. Not shipped to users.
 - D2: Differential integrity script compares a content manifest extracted from the legacy `index.html` (plus `textbook/`, `source_map.json`) against one extracted from the Vite build. To stay under 1 minute, the legacy build is not rerun by default: the script verifies the committed legacy output is fresh by content-hashing the sources, and offers `--rebuild-legacy` (about 3 min) for a full same-commit comparison. Final stage runs it with `--rebuild-legacy`.
 
 ## Stage 1 progress (session 2)
+- `tools/tests/test_storage_fixtures.py` + `tools/tests/fixtures/old_user_data.json`: seeds old-format localStorage, checks notes/bookmarks/tbDone/tbPos/tbLast survive load; corrupt state not silently wiped. 2 tests pass. IndexedDB `pathviva-annot` fixtures: todo.
+- `tools/tests/test_smoke_http.py`: http-served Playwright smoke (home, topic+answer, card deep link, textbook deep link, topic search + questions filter, `#/search`, quiz mode, offline reload via service worker, no page errors). 9 tests pass in ~24 s on idle machine against the legacy site. Run it against the Vite output with `SITE_DIR=dist`.
 - `tools/integrity/extract_content.py <site_dir>` builds a content manifest (card ids/codes/titles, answer text+html hashes, source links, DATA row count, QMETA/QALIAS hashes, views, textbook file hashes, source_map/mcqs hashes). Ran: 1310 cards, 30 views, 30 textbook files.
 - `python3 tools/integrity/check.py [--new <dir>] [--rebuild-legacy]` self-checks legacy (counts, qids.json ids still present or aliased, source_map vs srcbars) and diffs a new build. Ran in well under 1 minute: OK. Negative test (one char injected into q3 answer) correctly FAILED. Diffing the legacy against itself: OK.
 - JSON schema validation: UNTESTED/not yet written (no generated JSON exists until Stage 5).
 - Dev deps installed in sandbox: `pip install jsonschema playwright`.
 
 ## Next step
-(session 2 update: integrity script exists; baseline suite was still running when this was written.) Finish Stage 0: when the baseline suite completes, classify each failure, fill "Known failures", mark Stage 0 done, commit, push. Then continue Stage 1: storage-fixture tests (old-format localStorage/IndexedDB samples) and the Playwright smoke suite served over http (home, topic, card answer, textbook deep link, search, quiz, offline reload).
+Finish Stage 1: add IndexedDB annotation fixtures. Then Stage 2: Vite + TypeScript scaffold in the repo root (package.json, vite.config.ts, tsconfig) building to `dist/` next to the legacy build; first make the Vite build reproduce the legacy page, then run `python3 tools/integrity/check.py --new dist` and `SITE_DIR=dist` smoke tests.
 
 ## Half-finished
 Nothing yet.
