@@ -16,7 +16,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 3 | Storage layer | done (session 3). Restore/backup keeps the legacy `imp()`/`vbk` (now via `zzStore`); `Repository.importAll` is the tested future path |
 | 4 | Incremental TypeScript conversion | in progress (session 3): `welcome.js` done (TS source `src/legacy/welcome.ts`; `welcome.js` is now GENERATED, committed). Pending: `tools/home.js`, `tools/textbook.js`, `tools/mcq.js`, inline app script, `annot/annot.js` (140 KB) |
 | 5 | Content as JSON | in progress (session 4): Python half done (generator, schemas, differential check, tests). NOT done: app loader / lazy loading (needs Vite + SW work) |
-| 6 | PWA | todo |
+| 6 | PWA | done for dist (session 7): vite plugin regenerates dist/sw.js CORE+VERSION from the real dist files; tools/tests/test_dist_offline.py passes (cold offline reload, topic opens, textbook cached). Root sw.js unchanged; dist still not deployed |
 | 7 | Remove Python scripts that patch application code | todo |
 | 8 | Hardening and final report | todo |
 
@@ -194,3 +194,9 @@ Stage 4 continues: `tools/home.js` (18 KB) -> `src/legacy/home.ts`. NOTE `home.j
 
 ## Half-finished
 Nothing.
+
+## Session 7 (2026-10-19): Stage 6 PWA for dist
+- `vite.config.ts` gained `generateServiceWorker()`: after the build, `dist/sw.js` CORE is regenerated from the files really in dist (hashed `assets/`, `annot/`, `icons/`, `fonts/`, `welcome.js`, `zz-store.js`, `manifest.json`, `index.html`) and VERSION becomes `pathviva-zzee-dist-<sha256 prefix>`; `dist/sw_precache.json` records it. Root `sw.js` is untouched (legacy deploy unaffected).
+- New `tools/tests/test_dist_offline.py` (needs `npm run build`): precache list covers every local file the page and CSS reference; after install the cache holds all of them plus the 29 textbook chapters; with the network off, reload shows home with >1000 cards, `#/01` opens with cards, and no page response is >= 400. Result: 2/2 pass. Note: the worker's own background revalidation fetches fail offline by design, so the test watches page responses, not `requestfailed`.
+- Also green: `npm run check` (integrity), `npm run typecheck`, `npm run test:unit` 19/19.
+- NOT done: the full unittest suite module by module (run each module separately, the whole suite exhausts 4 GB RAM), Stage 7 (`ui_patch.py`, `nav_patch.py`), Stage 8, Option B lazy loading, deploying dist.
