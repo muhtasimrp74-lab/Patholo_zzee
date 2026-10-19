@@ -13,7 +13,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 0 | Baseline and audit | done (session 2) |
 | 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | done (session 2) |
 | 2 | Vite + TypeScript scaffold | done as scaffold (session 2); dist/ NOT deployable yet, see Stage 2 notes |
-| 3 | Storage layer | todo |
+| 3 | Storage layer | in progress: layer built and tested in isolation; legacy screens NOT yet routed through it |
 | 4 | Incremental TypeScript conversion | todo |
 | 5 | Content as JSON | todo |
 | 6 | PWA | todo |
@@ -105,8 +105,15 @@ The owner's list of 7 known failures was not provided in file form; this list ha
 - KNOWN GAP (do not deploy dist yet): Vite rewrote `annot/annot.css` into a hashed `assets/index-*.css` and hashes fonts/icons it finds in CSS/HTML into `assets/`, while the legacy `sw.js` precache list (`CORE`) still names the old paths. The offline smoke test passes, but the hashed assets are not precached by the legacy SW, so real offline behaviour of dist is UNTESTED and probably degraded until Stage 6 generates the service worker. Duplicated copies of `icons/` and `fonts/` also exist in dist.
 - Full unittest suite has NOT been rerun after Stage 1/2 additions (only new tests were run). Run it on an idle machine at the next session start (about 23 min under load; use `setsid nohup` and do not run browsers concurrently).
 
+## Stage 3 notes (session 2)
+- Built `src/storage/` (see `src/storage/README.md`): `KVBackend` (memory, localStorage, IndexedDB), typed `Schema` + codecs for all 10 known keys, `Repository` (get/set/update/remove/list/migrate/exportAll/importAll), version key `zzStoreVersion` (v0 -> v1 stamps only), `validateBackup` (port of legacy `vbk`). Extension points for encrypted/remote/account backends and sync are documented; no cloud code written.
+- Verified (ran): `npm run test:unit` (node:test, 13 tests pass, incl. old-fixture reads, byte-identical migrate, corrupt-state preservation, read-only on newer version, rollback on failed import); `npx tsc --noEmit` clean (strict, erasableSyntaxOnly so node can run the .ts directly); `tools.tests.test_storage_fixtures` (4 tests: localStorage fixtures, corrupt state, IndexedDB annotation record, IndexedDbBackend in Chromium) pass.
+- NOT done: routing screens through the repository. Design problem to solve first: legacy code reads state synchronously at boot (`S=...JSON.parse(localStorage...)`, `save()`), while `Repository` is async (needed for IndexedDB/remote). Plan: add a sync write-through facade (`LocalStateStore`: loads from a sync backend at boot, exposes sync get/set, queues persistence to the async repository), bundle it as a classic IIFE exposed on `window.zzStore`, loaded before the inline app script, then replace the raw `localStorage` calls in `tools/src/index.base.html`, `tools/home.js`, `tools/textbook.js`, `welcome.js`, and the strings injected by `tools/build.py` / `tools/nav_patch.py` (keys `vivaStatePrev`, `zz-fs`, `zz-flat`) one file at a time, rerunning the storage fixtures and smoke suite after each.
+- Backup/restore (`imp()`/`vbk` in the legacy script) is unchanged for now; the TS port is only unit-tested.
+- Annotation IndexedDB (`pathviva-annot`) untouched.
+
 ## Next step
-Stage 3: storage layer. Design `src/storage/` (typed `Repository` with get/set/remove/list/migrate/export/import, localStorage and IndexedDB adapters, schema version stored under a new key without touching `vivaState` shape), port the legacy `S`/`save()` code and annot IndexedDB access behind it, keep `vbk` backup/restore, and prove with `tools/tests/test_storage_fixtures.py` plus new unit tests that old data reads unchanged. Before that: `git fetch origin` and merge `origin/main` if it moved; start the full suite in the background.
+Finish Stage 3: implement the sync facade described in Stage 3 notes, wire one file at a time, rerun `tools.tests.test_storage_fixtures` and `tools.tests.test_smoke_http` after each. Check `/home/claude/branch_suite_stage2.log` result first if the sandbox persisted (full suite on the Stage 2 commit; it overlapped with my browser tests so failures there must be rerun alone before judging).
 
 ## Half-finished
 Nothing yet.
