@@ -291,7 +291,6 @@ s = re.sub(r'@font-face\{font-family:"(?:Plus Jakarta Sans|Source Sans 3)".*?\}\
 s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='utf8').read() + open(os.path.join(HERE, 'premium.css'), encoding='utf8').read() + '</style>', 1)
 H1 = '<h1>Viva Prep —<br>Read.<br>Recall. Answer.</h1>'
 assert H1 in s
-s = s.replace('<a href="#/topics">Topics</a>', '<a href="#/topics">Topics</a><a href="#/questions">Questions</a>')
 s = s.replace(H1, '<p class="eyebrow">NMC viva list · Robbins 11th</p><h1>Pathology<em>Read. Recall. Answer.</em></h1>', 1)
 s = s.replace('<b>Systemic Pathology Viva Questions with Answers.</b> ', '', 1)
 STATS = '<div class="stats"><div><b>%d</b><span>Questions</span></div><div><b>%d</b><span>Topics</span></div><div><b>NMC</b><span>Question order</span></div><div><b>11th</b><span>Robbins edition</span></div></div>' % (total, len(order))

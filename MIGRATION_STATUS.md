@@ -228,3 +228,7 @@ Nothing.
 **Not deployed:** `dist/` is not deployable as the live site until Stage 4/7 finish and the owner approves; the live site still uses the legacy build and root `sw.js`.
 **Deferred by owner choice:** Option B lazy loading (would win about 3 s of 6.4 s cold boot at 4x throttle, see Session 8b) because it changes how pages load.
 **Housekeeping:** the owner's GitHub token was pasted into chat many times and is visible in a saved page; it must be revoked.
+
+## Session 8d: Stage 7 slice 2 (dead nav edits removed, index.html byte-identical)
+- Removed two edits whose result `nav_patch.py` always overwrites (all 19 `<div class="links">` blocks are replaced wholesale): `build.py` adding a Questions link after the Topics link, and the matching `ui_patch.py` replace. Rebuild is byte-identical to the committed `index.html`.
+- Method for the rest: for each remaining edit, check whether a later step overwrites its result (dead), delete it, rebuild (about 3.5 min), `cmp` against the committed page. Candidates next: the `bnav` content built in `build.py` (line ~303) and extended by `ui_patch.py` (Chapters link) is also overwritten by `nav_patch.py`'s `BNAV`; the element itself must stay until the base contains `<nav id="bnav" aria-label="Main">`.

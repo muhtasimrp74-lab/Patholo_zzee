@@ -25,7 +25,6 @@ POLISHCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file
 
 def patch(s):
     # navigation: no Topics button; separate Questions and Q&A buttons
-    s = _rep(s, '<a href="#/topics">Topics</a><a href="#/questions">Questions</a>', '<a href="#/questions">Questions</a><a href="#/qa">Chapters</a>', 0)
     s = _rep(s, """l.querySelector('a[href="#/topics"]').insertAdjacentHTML('afterend'""", """l.querySelector('a[href="#/qa"]').insertAdjacentHTML('afterend'""")
     t = '<a href="#/topics"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg>Topics</a>'
     s = _rep(s, t, '')
