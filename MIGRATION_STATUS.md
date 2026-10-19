@@ -206,3 +206,10 @@ Nothing.
 - Result on `02c5416` after `npm ci && npm run build`: 127 tests run one by one (`test_lazy_probe` excluded, it needs the probe build): 122 OK, 5 FAILED. The 5 are exactly the 5 that already fail on clean `main` (listed under "Known failures that pre-exist on main"): three `test_annot` click timeouts, `test_annot_p6` pixel ratio (2.67 != 3), `test_annot_tb` block-id determinism. No new failures, so no regression from Stages 1-6.
 - `test_dist_offline` (2) and `test_smoke_http`, `test_welcome`, `test_zzstore`, `test_storage_fixtures`, `test_content_json` all pass in this run.
 - NOT done: Stage 7 (`ui_patch.py`, `nav_patch.py`), Stage 8, Option B lazy loading, deploying dist.
+
+## Session 8b (2026-10-20): Option B chosen; where the boot time goes
+- Decision: Option B (boot with only the current topic's cards) is the change that helps visitors most; Stage 7 only helps maintenance. Option B is NOT implemented yet (about 49 card-reader sites, see the inventory above).
+- Measured with `tools/perf_boot.py` (headless Chromium, 4x CPU throttle, no service worker, median of 3, time until `zz-boot` clears): inline build 6.4 s, Option A lazy build 6.1 s, page with NO cards 3.1 s (DOMContentLoaded 6.2 / 5.7 / 2.9 s). So the 1310 cards cost about 3.2 s (roughly half of cold boot); that is the most Option B can win (about 45%), and only the card-reading boot code and DOM construction are in play, not rendering (already handled by perf.css content-visibility).
+- Legacy build verified reproducible: `python3 tools/build.py` regenerates the committed `index.html` byte for byte.
+- Stage 7 finding: `ui_patch.py` and `nav_patch.py` are entangled (nav_patch overwrites nav HTML ui_patch just edited; ui_patch anchors live in `src/index.base.html`), so they must be folded into the source together, rebuilding after each step and keeping `index.html` byte-identical.
+- Next: implement Option B behind a flag, one reader at a time: card-less index first (search/counts/questions tree), then route/deep-link hydration, annot host lookup, quiz, alias migration; keep the all-cards path as fallback; measure with `tools/perf_boot.py`; run the per-test suite.
