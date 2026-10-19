@@ -41,3 +41,20 @@ class OldData(unittest.TestCase):
         self.assertTrue(raw == '{not json' or kept == '{not json', (keys, raw[:50], kept[:50]))
         p.close()
 if __name__ == '__main__': unittest.main()
+
+class OldAnnotDB(unittest.TestCase):
+    """IndexedDB 'pathviva-annot' v1 (stores docs/meta, keyPath k): a record written under the old schema must be unchanged after reload."""
+    def test_annotation_record_survives_reload(self):
+        pw = sync_playwright().start()
+        try:
+            b = pw.chromium.launch(); p = b.new_page(); p.goto(SITE); p.wait_for_timeout(2500)
+            rec = {'k': 'q:q3', 'objs': [{'t': 'p', 'c': '#C4573A', 's': 2, 'p': [1, 1, 5, 5]}]}
+            p.evaluate("""(rec)=>new Promise((res,rej)=>{const r=indexedDB.open('pathviva-annot');r.onsuccess=()=>{const db=r.result;
+                const tx=db.transaction('docs','readwrite');tx.objectStore('docs').put(rec);tx.oncomplete=()=>{db.close();res()};tx.onerror=()=>rej(tx.error)};r.onerror=()=>rej(r.error)})""", rec)
+            p.reload(); p.wait_for_timeout(2500)
+            got = p.evaluate("""()=>new Promise((res,rej)=>{const r=indexedDB.open('pathviva-annot');r.onsuccess=()=>{const db=r.result;
+                const g=db.transaction('docs').objectStore('docs').get('q:q3');g.onsuccess=()=>{res({v:db.version,stores:[...db.objectStoreNames],rec:g.result});db.close()}};r.onerror=()=>rej(r.error)})""")
+            self.assertEqual(got['v'], 1); self.assertEqual(sorted(got['stores']), ['docs', 'meta'])
+            self.assertEqual(got['rec']['objs'], rec['objs'])
+            b.close()
+        finally: pw.stop()
