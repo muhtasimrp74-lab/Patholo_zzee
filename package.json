@@ -8,7 +8,8 @@
     "build": "vite build",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",
-    "check": "python3 tools/integrity/check.py --new dist"
+    "check": "python3 tools/integrity/check.py --new dist",
+    "test:unit": "node --test src/storage/storage.test.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

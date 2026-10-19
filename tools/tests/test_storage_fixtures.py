@@ -58,3 +58,22 @@ class OldAnnotDB(unittest.TestCase):
             self.assertEqual(got['rec']['objs'], rec['objs'])
             b.close()
         finally: pw.stop()
+
+
+class IndexedDbAdapter(unittest.TestCase):
+    """src/storage/backends.ts IndexedDbBackend, exercised in a real browser (type-stripped by node, loaded as an ES module)."""
+    def test_roundtrip_keys_remove_and_persistence(self):
+        import subprocess, base64
+        js = subprocess.check_output(['node', '-e', "const m=require('node:module');process.stdout.write(m.stripTypeScriptTypes(require('fs').readFileSync('src/storage/backends.ts','utf8')))"], cwd=ROOT, text=True)
+        js = js.replace('export class ', 'class ') + '\nwindow.__IDB = IndexedDbBackend;'
+        pw = sync_playwright().start()
+        try:
+            b = pw.chromium.launch(); p = b.new_page(); p.goto(SITE); p.wait_for_timeout(1500); p.add_script_tag(content=js)
+            code = """async ()=>{const IndexedDbBackend=window.__IDB;const db='zz-kv-test-'+Date.now();const k=new IndexedDbBackend(indexedDB,db);
+              const miss=await k.get('a');await k.set('a','1');await k.set('b','{"x":2}');const g=await k.get('b');const keys=(await k.keys()).sort();
+              await k.remove('a');const gone=await k.get('a');const k2=new IndexedDbBackend(indexedDB,db);const again=await k2.get('b');
+              await new Promise(r=>{const q=indexedDB.deleteDatabase(db);q.onsuccess=q.onerror=q.onblocked=()=>r()});return {miss,g,keys,gone,again}}"""
+            r = p.evaluate(code)
+            self.assertEqual(r, {'miss': None, 'g': '{"x":2}', 'keys': ['a', 'b'], 'gone': None, 'again': '{"x":2}'})
+            b.close()
+        finally: pw.stop()
