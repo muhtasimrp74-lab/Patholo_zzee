@@ -4,7 +4,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 
 ## Sync points
 - Baseline commit (branch point): `68e1cfcbbf1143a51919e57ddaee2e97b208575f` ("Make source links deterministic, exempt source bar from meta-commentary test, bump service worker to v159")
-- origin/main last synced: `68e1cfcbbf1143a51919e57ddaee2e97b208575f` (re-checked session 3, 2026-10-19: 0 commits behind)
+- origin/main last synced: `68e1cfcbbf1143a51919e57ddaee2e97b208575f` (re-checked session 4, 2026-10-19: origin/main still 68e1cfc, 0 commits behind)
 - Note: the working clone is `--depth 1`. Before merging main later, `git fetch origin main` is enough (the branch point is the shallow tip).
 
 ## Stage checklist
@@ -134,7 +134,18 @@ Decision D3: backup/restore stays in the legacy `imp()` (same file format, same 
 - Not unit-testable DOM paths in welcome.ts (idle warm-up, pre-draw batching) are UNTESTED beyond "no page errors" in the new tests.
 - Unfinished TS files: all other legacy scripts listed above.
 
-## Next step
+## Session 4 (2026-10-19) - BLOCKED on npm, nothing changed in code
+- Repo re-attached through the app's repo connection; `feature/vite-ts` at `1f97d5b`; origin/main still `68e1cfc` (nothing to merge).
+- BLOCKER: in this sandbox `registry.npmjs.org` is refused by the egress proxy (connect_rejected; `npm install` fails, `node_modules` is an empty skeleton). Without it: no Vite, no `npm run build*`, no `npm run test:unit`, no `vite-plugin-pwa`, so Stage 4 (TS bundles), Stage 5 loader wiring and Stage 6 cannot be built or tested. Only global `tsc` 6.0.3 exists (repo pins ^7).
+- Fix on the owner's side: allow the npm registry for this session (claude.ai Settings > Capabilities > allowed domains), then resume.
+- Decision carried over from session 3 (owner said "Continue"): Stage 4 stops at `welcome.js` plus, optionally, `home.js`/`textbook.js`; `mcq.js`, the inline app script and `annot/annot.js` stay JS and are listed as unconverted. Effort goes to Stages 5 and 6.
+- Also not done: full suite on commit `1f97d5b`.
+- Security note: the owner's instruction file contained a GitHub PAT in plain text. It was NOT used. It should be revoked and replaced.
+
+## Next step (updated)
+Once npm works: `npm install`, then `npm run typecheck && npm run test:unit && npm run build`, run integrity + smoke, then Stage 5 (Python emits schema-validated chapter JSON, app loads lazily), measuring where the 3.4 MB of `index.html` goes first.
+
+## Next step (older, session 3)
 Stage 4 continues: `tools/home.js` (18 KB) -> `src/legacy/home.ts`. NOTE `home.js`/`textbook.js`/`mcq.js` are inlined into `index.html` by `tools/build.py` (not separate files), so a TS port must be built to a file that `build.py` inlines (build.py reads the generated .js from a tools path); keep the legacy build working. Run all fast checks after each.
 
 ## Half-finished
