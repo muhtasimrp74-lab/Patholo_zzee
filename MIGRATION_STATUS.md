@@ -232,3 +232,7 @@ Nothing.
 ## Session 8d: Stage 7 slice 2 (dead nav edits removed, index.html byte-identical)
 - Removed two edits whose result `nav_patch.py` always overwrites (all 19 `<div class="links">` blocks are replaced wholesale): `build.py` adding a Questions link after the Topics link, and the matching `ui_patch.py` replace. Rebuild is byte-identical to the committed `index.html`.
 - Method for the rest: for each remaining edit, check whether a later step overwrites its result (dead), delete it, rebuild (about 3.5 min), `cmp` against the committed page. Candidates next: the `bnav` content built in `build.py` (line ~303) and extended by `ui_patch.py` (Chapters link) is also overwritten by `nav_patch.py`'s `BNAV`; the element itself must stay until the base contains `<nav id="bnav" aria-label="Main">`.
+
+## Session 8e: Stage 7 slice 3 (bottom-nav contents now generated only by nav_patch.py)
+- `build.py` now emits an empty `<nav id="bnav" aria-label="Main"></nav>` (anchor for `nav_patch.BNAV`), and the four `ui_patch.py` lines that removed the Topics tab and added a Chapters tab inside that nav are gone (their result was always overwritten). Rebuild byte-identical to the committed `index.html`.
+- Remaining anchored replacements: 10 in `ui_patch.py`, 2 in `nav_patch.py` (plus the empty-nav anchor in `build.py`).

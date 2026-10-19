@@ -26,10 +26,6 @@ POLISHCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file
 def patch(s):
     # navigation: no Topics button; separate Questions and Q&A buttons
     s = _rep(s, """l.querySelector('a[href="#/topics"]').insertAdjacentHTML('afterend'""", """l.querySelector('a[href="#/qa"]').insertAdjacentHTML('afterend'""")
-    t = '<a href="#/topics"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg>Topics</a>'
-    s = _rep(s, t, '')
-    q = '<a href="#/questions"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1 1-1.1 1.8M12 17h.01"/></svg>Questions</a>'
-    s = _rep(s, q, q + '<a href="#/qa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v12H9l-4 4zM9 8h6M9 12h4"/></svg>Chapters</a>')
     s = _rep(s, 'grid-template-columns:repeat(5,1fr)', 'grid-template-columns:repeat(6,1fr)', 0)
     # Questions page modes
     s = _rep(s, "const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');" if "Tap a question to read its answer right here" in s else "const QV=mkView('questions','Questions','Questions','Only the questions. Tap one to reveal its answer, tap again to hide it.');",
