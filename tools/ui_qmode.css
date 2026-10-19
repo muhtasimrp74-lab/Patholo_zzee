@@ -1,0 +1,6 @@
+.qmode{display:inline-flex;gap:4px;padding:4px;margin:4px 0 12px;border-radius:12px;background:var(--soft);border:1px solid var(--line2)}
+.qmode button{height:38px;padding:0 20px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:600 .9rem var(--body);cursor:pointer}
+.qmode button[aria-selected=true]{background:var(--panel);color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.qgo{flex:none;align-self:center;margin-left:auto;padding:7px 13px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--lbl);font:600 .78rem var(--body);white-space:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.qgo:hover{background:var(--accbg);border-color:var(--lbl)}
+#qexp,#qcol{}

@@ -213,3 +213,9 @@ Nothing.
 - Legacy build verified reproducible: `python3 tools/build.py` regenerates the committed `index.html` byte for byte.
 - Stage 7 finding: `ui_patch.py` and `nav_patch.py` are entangled (nav_patch overwrites nav HTML ui_patch just edited; ui_patch anchors live in `src/index.base.html`), so they must be folded into the source together, rebuilding after each step and keeping `index.html` byte-identical.
 - Next: implement Option B behind a flag, one reader at a time: card-less index first (search/counts/questions tree), then route/deep-link hydration, annot host lookup, quiz, alias migration; keep the all-cards path as fallback; measure with `tools/perf_boot.py`; run the per-test suite.
+
+## Session 8c (2026-10-20): Stage 7 started, zero frontend change
+- Decision: owner wants no visible frontend change, so Option B (changes how pages load) is deferred; Stage 7 is done as a refactor that must keep `index.html` byte-identical.
+- Slice 1: the large CSS/JS literals embedded in `tools/nav_patch.py` and `tools/ui_patch.py` moved into plain files read at build time: `nav_patch.css/.js`, `ui_qmode.css`, `ui_xm.css`, `ui_rings.css`, `ui_upd.js`, `ui_qa.js` (read with `newline=''` so bytes are unchanged). Python shrank 62+... lines to 61 (ui) and 45 (nav).
+- Verified: `python3 tools/build.py` regenerates the committed `index.html` byte for byte; no other tracked file changed; integrity and check_all run after the change.
+- Remaining for Stage 7: the anchored `_rep(...)` replacements (13 in ui_patch, 3 in nav_patch) still live in Python; fold them into `src/index.base.html` together (they are entangled), rebuilding after each edit and keeping `index.html` byte-identical.
