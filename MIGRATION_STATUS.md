@@ -14,7 +14,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | done (session 2) |
 | 2 | Vite + TypeScript scaffold | done as scaffold (session 2); dist/ NOT deployable yet, see Stage 2 notes |
 | 3 | Storage layer | done (session 3). Restore/backup keeps the legacy `imp()`/`vbk` (now via `zzStore`); `Repository.importAll` is the tested future path |
-| 4 | Incremental TypeScript conversion | todo |
+| 4 | Incremental TypeScript conversion | in progress (session 3): `welcome.js` done (TS source `src/legacy/welcome.ts`; `welcome.js` is now GENERATED, committed). Pending: `tools/home.js`, `tools/textbook.js`, `tools/mcq.js`, inline app script, `annot/annot.js` (140 KB) |
 | 5 | Content as JSON | todo |
 | 6 | PWA | todo |
 | 7 | Remove Python scripts that patch application code | todo |
@@ -127,8 +127,15 @@ The owner's list of 7 known failures was not provided in file form; this list ha
 117 tests, 1401 s: 2 failures + 9 errors under load. Rerun alone: 6 of the 7 non-baseline ones pass; `test_wet_stroke_benchmark_has_no_long_frames` is a timing flake (passes 2/2 on clean main AND 2/2 on the branch). Remaining failures all match the baseline 5 (`text_highlight_follows_text...`, `text_marks_underline...`, `mcq_entry_button...` (passed this run), `canvases_use_the_full_pixel_ratio`, `block_ids_cover_every_block`). No regression attributable to Stage 3. NOTE: never run browsers while the suite runs; a command timeout kills the suite.
 Decision D3: backup/restore stays in the legacy `imp()` (same file format, same validation and rollback, covered by passing `test_site` restore tests); not rewritten, to avoid risk without benefit.
 
+## Stage 4 notes (session 3)
+- Pattern: TS source in `src/legacy/<name>.ts` -> classic IIFE at repo root via `npm run build:classic` (`vite.store.config.ts`, `ZZ_ENTRY`). Outputs are committed; `test_zzstore.test_committed_bundles_are_current` fails if stale. EDIT THE .ts, never the generated `welcome.js` / `zz-store.js`. To add a script: add it to `ENTRIES` in `vite.store.config.ts`, `build:classic`, and the freshness test list.
+- `welcome.js` port: logic unchanged; the 2 KB CSS string is extracted verbatim into `src/legacy/welcome-css.ts`. New `tools/tests/test_welcome.py` (3 tests: silent first visit, daily dialog saves name then banner + personal line, same-day banner with streak) passes against BOTH the original welcome.js on clean main and the TS port, and on `dist`.
+- SW VERSION v161 (so installed copies refresh welcome.js); `sw_version.json` updated.
+- Not unit-testable DOM paths in welcome.ts (idle warm-up, pre-draw batching) are UNTESTED beyond "no page errors" in the new tests.
+- Unfinished TS files: all other legacy scripts listed above.
+
 ## Next step
-Stage 4: convert small classic scripts to TS built to committed IIFE bundles (same pattern as zz-store.js), starting with `welcome.js`, then `tools/home.js`. After each: tsc, unit, fixtures, smoke, zzstore tests.
+Stage 4 continues: `tools/home.js` (18 KB) -> `src/legacy/home.ts`. NOTE `home.js`/`textbook.js`/`mcq.js` are inlined into `index.html` by `tools/build.py` (not separate files), so a TS port must be built to a file that `build.py` inlines (build.py reads the generated .js from a tools path); keep the legacy build working. Run all fast checks after each.
 
 ## Half-finished
 Nothing.

@@ -49,14 +49,15 @@ class ZzStore(unittest.TestCase):
             self.assertEqual(errs, [])
         finally: ctx.close()
 
-    def test_committed_bundle_is_current(self):
+    def test_committed_bundles_are_current(self):
         if os.environ.get('SITE_DIR'): self.skipTest('checked on the repo root only')
-        tmp = tempfile.mkdtemp()
-        try:
-            r = subprocess.run(['npx', 'vite', 'build', '-c', 'vite.store.config.ts', '--outDir', tmp], cwd=ROOT, capture_output=True, text=True)
-            self.assertEqual(r.returncode, 0, r.stderr[-500:])
-            h = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
-            self.assertEqual(h(os.path.join(tmp, 'zz-store.js')), h(os.path.join(ROOT, 'zz-store.js')), 'zz-store.js is stale: run npm run build:store and commit it')
-        finally: shutil.rmtree(tmp, ignore_errors=True)
+        for entry, name in (('store', 'zz-store.js'), ('welcome', 'welcome.js')):
+            tmp = tempfile.mkdtemp()
+            try:
+                r = subprocess.run(['npx', 'vite', 'build', '-c', 'vite.store.config.ts'], cwd=ROOT, capture_output=True, text=True, env=dict(os.environ, ZZ_ENTRY=entry, ZZ_OUT=tmp))
+                self.assertEqual(r.returncode, 0, r.stderr[-500:])
+                h = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
+                self.assertEqual(h(os.path.join(tmp, name)), h(os.path.join(ROOT, name)), name + ' is stale: run npm run build:classic and commit it')
+            finally: shutil.rmtree(tmp, ignore_errors=True)
 
 if __name__ == '__main__': unittest.main()
