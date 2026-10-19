@@ -17,8 +17,8 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 4 | Incremental TypeScript conversion | in progress (session 3): `welcome.js` done (TS source `src/legacy/welcome.ts`; `welcome.js` is now GENERATED, committed). Pending: `tools/home.js`, `tools/textbook.js`, `tools/mcq.js`, inline app script, `annot/annot.js` (140 KB) |
 | 5 | Content as JSON | in progress (session 4): Python half done (generator, schemas, differential check, tests). NOT done: app loader / lazy loading (needs Vite + SW work) |
 | 6 | PWA | done for dist (session 7): vite plugin regenerates dist/sw.js CORE+VERSION from the real dist files; tools/tests/test_dist_offline.py passes (cold offline reload, topic opens, textbook cached). Root sw.js unchanged; dist still not deployed |
-| 7 | Remove Python scripts that patch application code | todo |
-| 8 | Hardening and final report | todo (full suite verified in session 8: no regressions) |
+| 7 | Remove Python scripts that patch application code | partial (assets moved out; 16 anchored replacements remain, see Stage 8 report) |
+| 8 | Hardening and final report | done for current state (see Stage 8 report) |
 
 ## Commands (legacy, current)
 - Build site: `python3 tools/build.py` (about 3 min; rewrites `index.html`, and also rewrites `textbook/*.html` and `tools/answers_by_id.json`, see findings)
@@ -219,3 +219,12 @@ Nothing.
 - Slice 1: the large CSS/JS literals embedded in `tools/nav_patch.py` and `tools/ui_patch.py` moved into plain files read at build time: `nav_patch.css/.js`, `ui_qmode.css`, `ui_xm.css`, `ui_rings.css`, `ui_upd.js`, `ui_qa.js` (read with `newline=''` so bytes are unchanged). Python shrank 62+... lines to 61 (ui) and 45 (nav).
 - Verified: `python3 tools/build.py` regenerates the committed `index.html` byte for byte; no other tracked file changed; integrity and check_all run after the change.
 - Remaining for Stage 7: the anchored `_rep(...)` replacements (13 in ui_patch, 3 in nav_patch) still live in Python; fold them into `src/index.base.html` together (they are entangled), rebuilding after each edit and keeping `index.html` byte-identical.
+
+## Stage 8: final report (2026-10-20, session 8)
+**State of `feature/vite-ts` (82781f2 + this note), `main` untouched at 68e1cfc**
+- Verified: legacy build reproduces committed `index.html` byte for byte; `npm run check` (integrity) OK; `check_all` ALL OK; typecheck and 19 unit tests pass; full suite run test by test: 122 of 127 pass, the 5 failures are exactly the pre-existing ones on clean `main`; `dist/` works offline from a cold start (`test_dist_offline`).
+- Stages 0-3 and 6 done; Stage 4 partial (`welcome`, `home`, `textbook` in TS; `mcq.js`, inline app script, `annot/annot.js` pending); Stage 5 Python half done, app loader not done.
+- Stage 7: partial. Embedded CSS/JS moved out of `ui_patch.py` and `nav_patch.py` into files (byte-identical output). The 16 anchored replacements remain: tried folding them into `src/index.base.html`, but their anchors (e.g. `<a href="#/topics">Topics</a><a href="#/questions">`) do not exist in the base file, they are produced by earlier `build.py` steps. Folding means reworking those earlier steps in order, with a byte-identical rebuild after each edit.
+**Not deployed:** `dist/` is not deployable as the live site until Stage 4/7 finish and the owner approves; the live site still uses the legacy build and root `sw.js`.
+**Deferred by owner choice:** Option B lazy loading (would win about 3 s of 6.4 s cold boot at 4x throttle, see Session 8b) because it changes how pages load.
+**Housekeeping:** the owner's GitHub token was pasted into chat many times and is visible in a saved page; it must be revoked.
