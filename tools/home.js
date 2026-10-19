@@ -21,8 +21,8 @@ function st(id,L,now){const r=S.sr[id];
 
 /* ---- textbook progress (stored by the Textbook tab; chapter list loaded once, cached by the service worker) ---- */
 let TBI=null;
-const tbJ=k=>{try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(e){return {}}};
-const tbLast=()=>{try{return localStorage.getItem('tbLast')}catch(e){return null}};
+const tbJ=k=>{try{return JSON.parse(zzStore.getItem(k)||'{}')}catch(e){return {}}};
+const tbLast=()=>{try{return zzStore.getItem('tbLast')}catch(e){return null}};
 try{fetch('textbook/index.json').then(r=>r.ok?r.json():null).then(j=>{if(j&&j.chapters){TBI=j.chapters;render()}}).catch(()=>{})}catch(e){}
 
 /* ---- MCQ progress (same store as the MCQs tab) ---- */

@@ -222,17 +222,17 @@ return r}
 function imp(f){if(!f)return;f.text().then(async t=>{let o,r=null;try{o=JSON.parse(t);r=vbk(o)}catch(e){}if(!r){alert('That file is not a valid backup. Nothing was changed.');return}
 const ink=o.ink,ann=o.annot;if(ink!==undefined&&!(ink&&typeof ink==='object'&&!Array.isArray(ink))){alert('The handwriting data in that backup is not valid. Nothing was changed.');return}
 if(ann!==undefined&&!(typeof Annot!=='undefined'&&Annot.validate(ann))){alert('The handwriting data in that backup is not valid. Nothing was changed.');return}
-let prev=null;try{prev=localStorage.getItem('vivaState')}catch(e){}
-try{if(prev!==null)localStorage.setItem('vivaStatePrev',prev)}catch(e){}
-try{localStorage.setItem('vivaState',JSON.stringify(Object.assign({},S,r)))}catch(e){alert('Could not save the restored data (storage full?). Nothing was changed.');return}
-if((ann!==undefined||ink)&&typeof Ink!=='undefined'){try{if(ann!==undefined)await Annot.load(ann);else await Ink.load(ink)}catch(e){try{if(prev===null)localStorage.removeItem('vivaState');else localStorage.setItem('vivaState',prev)}catch(e2){}alert('The handwriting in that backup could not be restored, so the restore was cancelled. Your notes and progress were not changed.');return}}
+let prev=null;try{prev=zzStore.getItem('vivaState')}catch(e){}
+try{if(prev!==null)zzStore.setItem('vivaStatePrev',prev)}catch(e){}
+try{zzStore.setItem('vivaState',JSON.stringify(Object.assign({},S,r)))}catch(e){alert('Could not save the restored data (storage full?). Nothing was changed.');return}
+if((ann!==undefined||ink)&&typeof Ink!=='undefined'){try{if(ann!==undefined)await Annot.load(ann);else await Ink.load(ink)}catch(e){try{if(prev===null)zzStore.removeItem('vivaState');else zzStore.setItem('vivaState',prev)}catch(e2){}alert('The handwriting in that backup could not be restored, so the restore was cancelled. Your notes and progress were not changed.');return}}
 Object.assign(S,r);save();location.reload()})}"""
 s = s.replace("function imp(f){if(!f)return;f.text().then(t=>{try{const o=JSON.parse(t);if(!o||!Array.isArray(o.bm))throw 0;Object.assign(S,o);save();location.reload()}catch(e){alert('That file is not a valid backup.')}})}",
  NEWIMP, 1)
-_MIG = "const QALIAS=%s;(function(){let ch=0;const mv=(a,x,y)=>{const i=a.indexOf(x);if(i<0)return;a.splice(i,1);if(!a.includes(y))a.push(y);ch=1};for(const x in QALIAS){const y=QALIAS[x];['fav','bm','learned'].forEach(k=>{if(Array.isArray(S[k]))mv(S[k],x,y)});if(S.notes&&S.notes[x]!=null){S.notes[y]=S.notes[y]?S.notes[y]+'\\n'+S.notes[x]:S.notes[x];delete S.notes[x];ch=1}if(S.sr&&S.sr[x]){if(!S.sr[y])S.sr[y]=S.sr[x];delete S.sr[x];ch=1}}if(ch)try{localStorage.setItem('vivaState',JSON.stringify(S))}catch(e){}})();" % json.dumps(ALIAS)
-_k0 = "try{S=Object.assign(S,JSON.parse(localStorage.getItem('vivaState')||'{}'))}catch(e){}"
+_MIG = "const QALIAS=%s;(function(){let ch=0;const mv=(a,x,y)=>{const i=a.indexOf(x);if(i<0)return;a.splice(i,1);if(!a.includes(y))a.push(y);ch=1};for(const x in QALIAS){const y=QALIAS[x];['fav','bm','learned'].forEach(k=>{if(Array.isArray(S[k]))mv(S[k],x,y)});if(S.notes&&S.notes[x]!=null){S.notes[y]=S.notes[y]?S.notes[y]+'\\n'+S.notes[x]:S.notes[x];delete S.notes[x];ch=1}if(S.sr&&S.sr[x]){if(!S.sr[y])S.sr[y]=S.sr[x];delete S.sr[x];ch=1}}if(ch)try{zzStore.setItem('vivaState',JSON.stringify(S))}catch(e){}})();" % json.dumps(ALIAS)
+_k0 = "try{S=Object.assign(S,JSON.parse(zzStore.getItem('vivaState')||'{}'))}catch(e){}"
 assert _k0 in s
-_SAFE = r"""try{const raw=localStorage.getItem('vivaState')||'{}',o=JSON.parse(raw),ty=x=>Array.isArray(x)?'a':x===null?'n':typeof x;let bad=ty(o)!=='object';if(!bad)for(const k in o){if(k==='__proto__')continue;if(k in S&&ty(o[k])!==ty(S[k])){bad=1;continue}S[k]=o[k]}if(bad)try{localStorage.setItem('vivaStateCorrupt',raw)}catch(e){}}catch(e){}"""
+_SAFE = r"""try{const raw=zzStore.getItem('vivaState')||'{}',o=JSON.parse(raw),ty=x=>Array.isArray(x)?'a':x===null?'n':typeof x;let bad=ty(o)!=='object';if(!bad)for(const k in o){if(k==='__proto__')continue;if(k in S&&ty(o[k])!==ty(S[k])){bad=1;continue}S[k]=o[k]}if(bad)try{zzStore.setItem('vivaStateCorrupt',raw)}catch(e){}}catch(e){}"""
 s = s.replace(_k0, _SAFE + _MIG, 1)
 assert 'Annot.load' in s and 'Annot.dump' in s and 'localeCompare(b))' in s
 

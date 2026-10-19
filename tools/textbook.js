@@ -3,7 +3,7 @@
  const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const SKB='<div class="zsk" role="status" aria-label="Loading chapter"><i class="h"></i><i class="xs"></i><i></i><i></i><i class="s"></i><i class="b"></i><i></i><i class="s"></i><i></i><i class="xs"></i><i></i><i class="s"></i></div>',SKH='<div class="zsk" role="status" aria-label="Loading textbook"><i class="h"></i><i class="xs"></i><div class="zsk-grid">'+'<i></i>'.repeat(6)+'</div></div>';
  let IDX=null,tok=0,cur=null,tkr=0,hf='all',hq='',lf=0,rf=0;
- const J=(k)=>{try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(e){return {}}},W=(k,o)=>{try{localStorage.setItem(k,JSON.stringify(o))}catch(e){}};
+ const J=(k)=>{try{return JSON.parse(zzStore.getItem(k)||'{}')}catch(e){return {}}},W=(k,o)=>{try{zzStore.setItem(k,JSON.stringify(o))}catch(e){}};
  const P=document.body.appendChild(Object.assign(document.createElement('div'),{id:'tbprog',innerHTML:'<i></i>'}));
  const GR=[['Part A','General pathology',n=>n<=10],['Part B','Haematology',n=>n===13||n===14],['Part C','Systemic pathology',()=>true]];
  const fmtMin=m=>m>=60?Math.floor(m/60)+'h'+(m%60?' '+(m%60)+'m':''):m+'m';
@@ -59,7 +59,7 @@
   g.innerHTML=out||'<div class="mempty"><b>No chapters match</b>Try a different word, or switch the filter back to All.</div>'}
  function home(){const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos');
   const nd=C.filter(c=>D[c.id]).length,ip=C.filter(c=>stat(c,D,Po)==='prog').length,left=C.filter(c=>!D[c.id]).reduce((a,c)=>a+c.min,0),pct=Math.round(nd/C.length*100);
-  let last=null;try{last=localStorage.getItem('tbLast')}catch(e){}
+  let last=null;try{last=zzStore.getItem('tbLast')}catch(e){}
   let l=C.find(x=>x.id===last),lab='Continue reading';
   if(l&&D[l.id]){const i=C.indexOf(l);l=C.slice(i+1).find(x=>!D[x.id])||C.find(x=>!D[x.id])||null;lab='Up next'}
   else if(!l){l=C.find(x=>!D[x.id])||null;lab='Start reading'}
@@ -80,7 +80,7 @@
   catch(e){if(my===tok)T.innerHTML='<div class="mempty"><b>Textbook unavailable</b>Open it once while online; chapters you read are then saved for offline use.</div>';return}
   if(my!==tok)return;const C=IDX.chapters,i=C.findIndex(x=>x.id===p[1]),D=J('tbDone');
   if(i<0){home();return}
-  const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');try{localStorage.setItem('tbLast',c.id)}catch(e){}
+  const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');try{zzStore.setItem('tbLast',c.id)}catch(e){}
   const bar=`<div class="tbbar"><a href="${pv?'#/textbook/'+pv.id:'#/textbook'}" ${pv?'':'aria-disabled="true"'}>‹ ${pv?'Ch '+pv.n:'Previous'}</a><a href="#/textbook">All chapters</a><a href="${nx?'#/textbook/'+nx.id:'#/textbook'}" ${nx?'':'aria-disabled="true"'}>${nx?'Ch '+nx.n:'Next'} ›</a></div>`;
   T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
   T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);

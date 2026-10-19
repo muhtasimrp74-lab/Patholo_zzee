@@ -1,8 +1,8 @@
 /* Daily welcome + idle warm-up. The welcome shows at most once per 24 hours (and never on a first-ever visit, where the tour greets you). */
 (function(){
 var K='zzWelcomeAt',DAY=864e5,now=Date.now();
-function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
-function set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function get(k){try{return zzStore.getItem(k)}catch(e){return null}}
+function set(k,v){try{zzStore.setItem(k,v)}catch(e){}}
 function state(){try{return JSON.parse(get('vivaState')||'{}')||{}}catch(e){return {}}}
 function greet(){var h=new Date().getHours();return h<5?'Burning the midnight oil':h<12?'Good morning':h<17?'Good afternoon':'Good evening'}
 function nm(){return (get('zzName')||'').trim().slice(0,40)}
@@ -68,8 +68,8 @@ window.addEventListener('hashchange',function(){setTimeout(run,900)});
 
 /* personal touch: once a name is saved, each page's header gets a short line addressed to the owner */
 (function(){
-function nm(){try{return (localStorage.getItem('zzName')||'').trim().slice(0,40)}catch(e){return ''}}
-function st(){try{return JSON.parse(localStorage.getItem('vivaState')||'{}')||{}}catch(e){return {}}}
+function nm(){try{return (zzStore.getItem('zzName')||'').trim().slice(0,40)}catch(e){return ''}}
+function st(){try{return JSON.parse(zzStore.getItem('vivaState')||'{}')||{}}catch(e){return {}}}
 function acc(S){var P=(S.mcq&&S.mcq.p)||{},n=0,k=0;Object.keys(P).forEach(function(h){var x=P[h];if(x&&x.n){n+=x.n;k+=x.k||0}});return {n:n,a:n?Math.round(100*k/n):0}}
 function line(id,N,S){
   var l=(S.learned||[]).length,n=S.streak&&S.streak.n||0,m=acc(S);

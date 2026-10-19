@@ -4,7 +4,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 
 ## Sync points
 - Baseline commit (branch point): `68e1cfcbbf1143a51919e57ddaee2e97b208575f` ("Make source links deterministic, exempt source bar from meta-commentary test, bump service worker to v159")
-- origin/main last synced: `68e1cfcbbf1143a51919e57ddaee2e97b208575f` (session 1, 2026-10-19)
+- origin/main last synced: `68e1cfcbbf1143a51919e57ddaee2e97b208575f` (re-checked session 3, 2026-10-19: 0 commits behind)
 - Note: the working clone is `--depth 1`. Before merging main later, `git fetch origin main` is enough (the branch point is the shallow tip).
 
 ## Stage checklist
@@ -13,7 +13,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 0 | Baseline and audit | done (session 2) |
 | 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | done (session 2) |
 | 2 | Vite + TypeScript scaffold | done as scaffold (session 2); dist/ NOT deployable yet, see Stage 2 notes |
-| 3 | Storage layer | in progress: layer built and tested in isolation; legacy screens NOT yet routed through it |
+| 3 | Storage layer | in progress (session 3): sync facade built; all localStorage call sites routed through `window.zzStore`; remaining: backup/restore `imp()` + QALIAS migration via repository, full-suite confirmation |
 | 4 | Incremental TypeScript conversion | todo |
 | 5 | Content as JSON | todo |
 | 6 | PWA | todo |
@@ -112,8 +112,21 @@ The owner's list of 7 known failures was not provided in file form; this list ha
 - Backup/restore (`imp()`/`vbk` in the legacy script) is unchanged for now; the TS port is only unit-tested.
 - Annotation IndexedDB (`pathviva-annot`) untouched.
 
+## Stage 3 notes, session 3 (sync facade + wiring)
+- `src/storage/sync-store.ts`: `LocalStateStore(ls)` has the same getItem/setItem/removeItem contract and bytes as localStorage. Writes throw on quota like localStorage (callers keep their try/catch + alert). A store stamped by a newer app is read-only. `subscribe(fn)` is the sync/accounts extension point (mirror hears every write; a throwing mirror cannot break saving). `read(key)` is a typed sync read with legacy defaults. `repository` is the async typed view over the same storage.
+- `src/storage/browser.ts` -> classic IIFE `zz-store.js` (repo root, COMMITTED like `welcome.js`, because the legacy deploy publishes repo files without npm). Build: `npm run build:store` (`vite.store.config.ts`). `npm run build` = build:store then the site build. `test_zzstore.test_committed_bundle_is_current` fails if the committed bundle is stale. Bundle is deterministic.
+- Fallback: `tools/src/index.base.html` loads `zz-store.js` then an inline shim that defines a passthrough `window.zzStore` to localStorage if the bundle is missing or storage is blocked (so every caller keeps legacy behaviour).
+- Routed through `zzStore` (source files, not just generated output): `welcome.js`, `tools/home.js`, `tools/textbook.js`, `tools/nav_patch.py` (`zz-fs`, `zz-flat`), `tools/build.py` strings (state load, corrupt-state copy, `vivaStatePrev`, restore), `tools/src/index.base.html` (`vivaState`, `vivaQuiz`). After the change the generated `index.html` contains `localStorage` once (the shim). `annot/annot.js` uses only IndexedDB, untouched.
+- `sw.js` VERSION v159 -> v160, `zz-store.js` added to CORE; `tools/tests/sw_version.json` records v160 with the new index.html sha1. `vite.config.ts` STATIC includes `zz-store.js`. `tsconfig.json` includes `vite.store.config.ts`.
+- `.github/workflows/pages.yml`: `cp` list now includes `welcome.js zz-store.js`. FINDING (pre-existing on main): the workflow did not copy `welcome.js` even though `sw.js` CORE precaches it and the validation step checks CORE files exist in `_site`; so either CI was failing on main or welcome.js was missing from Pages deploys. Not confirmed which; I did not look at Actions history.
+- Merge note for main edits: `index.html` is generated. If main changes content and this branch changes `tools/build.py`, resolve conflicts in `index.html` by regenerating (`python3 tools/build.py`), never by hand-merging; then re-record `sw_version.json` and bump VERSION.
+- Verified (ran, this session): `npx tsc --noEmit` OK; `npm run test:unit` 19 pass; `python3 tools/build.py` OK (1310 answers, 537 linked; reverted the known textbook ch01/ch02 drift); `python3 tools/integrity/check.py` OK (1310 cards); `python3 tools/integrity/check.py --new dist` OK; `tools.tests.test_storage_fixtures` 4 pass; `tools.tests.test_smoke_http` 9 pass on legacy AND on `SITE_DIR=dist`; new `tools.tests.test_zzstore` 3 pass on legacy and (2 pass, 1 skipped) on dist; SW version tests pass.
+- NOT yet run: the full ~12-23 min suite on this commit (started in background after the push; result goes below when read). UNTESTED: real offline behaviour of `dist` (unchanged known gap, Stage 6); restore/backup path after rewiring beyond what `test_site` covers (full suite will exercise it).
+
 ## Next step
-Finish Stage 3: implement the sync facade described in Stage 3 notes, wire one file at a time, rerun `tools.tests.test_storage_fixtures` and `tools.tests.test_smoke_http` after each. Check `/home/claude/branch_suite_stage2.log` result first if the sandbox persisted (full suite on the Stage 2 commit; it overlapped with my browser tests so failures there must be rerun alone before judging).
+1. Read the full-suite result for the Stage 3 wiring commit (log at `/home/claude/suite_stage3.log` if the sandbox persisted; otherwise rerun alone: `setsid nohup python3 -m unittest discover -s tools/tests -v > suite.log 2>&1 &`, nothing else running). Compare with the 5 known failures above; rerun any new failure alone before judging.
+2. Finish Stage 3: move backup/restore (`imp()` in `tools/build.py` NEWIMP, `vbk`) and the QALIAS migration to use `zzStore.repository` semantics where it helps (validated import, `vivaStatePrev` snapshot, rollback) WITHOUT changing the backup file format; add a restore round-trip test (old backup file -> restore -> same data).
+3. Then Stage 4 (incremental TS conversion), smallest modules first: `welcome.js`, `tools/home.js`.
 
 ## Half-finished
-Nothing yet.
+Nothing. Branch builds and passes the fast checks listed above.

@@ -58,8 +58,8 @@ JS = r'''
  if(de.requestFullscreen||de.webkitRequestFullscreen){fs();
   const enter=()=>{try{if(!fsOn())(de.requestFullscreen||de.webkitRequestFullscreen).call(de)}catch(e){}},
    leave=()=>{try{if(fsOn())(document.exitFullscreen||document.webkitExitFullscreen).call(document)}catch(e){}},
-   want=()=>{try{return localStorage.getItem('zz-fs')!=='0'}catch(e){return true}},
-   setWant=v=>{try{localStorage.setItem('zz-fs',v?'1':'0')}catch(e){}};
+   want=()=>{try{return zzStore.getItem('zz-fs')!=='0'}catch(e){return true}},
+   setWant=v=>{try{zzStore.setItem('zz-fs',v?'1':'0')}catch(e){}};
   const app=matchMedia('(display-mode: fullscreen)').matches;/* installed app launched fullscreen by its manifest: already fullscreen from the first frame */
   if(app){fb.textContent='Fullscreen: on (app)';fb.disabled=true}
   fb.onclick=e=>{e.stopPropagation();if(fsOn()){setWant(false);leave()}else{setWant(true);enter()}};
@@ -69,8 +69,8 @@ JS = r'''
   qb.parentNode.appendChild(fb)}
  const rb=document.createElement('button');rb.type='button';rb.className='mtile';rb.id='mq-flat';
  const rf=()=>{rb.textContent=de.classList.contains('zz-flat')?'Reduce effects: on':'Reduce effects: off'};
- try{if(localStorage.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
- rf();rb.onclick=()=>{de.classList.toggle('zz-flat');try{localStorage.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}rf()};
+ try{if(zzStore.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
+ rf();rb.onclick=()=>{de.classList.toggle('zz-flat');try{zzStore.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}rf()};
  qb.parentNode.appendChild(rb)}
 '''
 

@@ -5,7 +5,7 @@ import { defineConfig, type Plugin } from 'vite';
 import { cpSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-const STATIC = ['welcome.js', 'sw.js', 'manifest.json', '_headers', 'annot', 'icons', 'fonts', 'textbook'];
+const STATIC = ['welcome.js', 'zz-store.js', 'sw.js', 'manifest.json', '_headers', 'annot', 'icons', 'fonts', 'textbook'];
 const TOOLS_DATA = ['tools/source_map.json', 'tools/mcqs.json']; // read by tools/integrity/check.py; harmless to ship
 
 function copyLegacyStatic(): Plugin {
