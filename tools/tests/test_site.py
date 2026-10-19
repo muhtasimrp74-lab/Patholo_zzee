@@ -24,6 +24,16 @@ class Build(unittest.TestCase):
     def test_build_is_deterministic(self):
         first = sha('index.html'); subprocess.run([sys.executable, 'build.py'], cwd=TOOLS, capture_output=True, check=True)
         self.assertEqual(first, sha('index.html'))
+    def test_no_italics_in_answer_bodies(self):
+        bad = [c for c in re.findall(r'<article class="card" id="q\d+">.*?<div class="ans">(.*?)</div></article>', self.h, re.S) if re.search(r'<(?:em|i)[\s>]', c)]
+        self.assertEqual(len(bad), 0, '%d answer bodies contain <em>/<i>: house rule is no italics in answers' % len(bad))
+    def test_no_meta_commentary_in_answer_bodies(self):
+        pat = re.compile(r'(?i)textbook|build log|outside source')
+        bad = [i for i, c in re.findall(r'<article class="card" id="q(\d+)">.*?<div class="ans">(.*?)</div></article>', self.h, re.S) if pat.search(re.sub(r'<[^>]+>', ' ', c))]
+        self.assertEqual(bad, [], 'answer bodies must not carry source/meta commentary (log it in answers_build_log.md): q%s' % bad[:5])
+    def test_answers_md_has_no_duplicate_headings(self):
+        heads = re.findall(r'(?m)^## (.+)$', rd('tools/answers.md')); dup = sorted({h for h in heads if heads.count(h) > 1})
+        self.assertEqual(dup, [], 'duplicate ## headings in answers.md (keep only the newest): %s' % dup[:5])
     def test_question_ids_unique_and_complete(self):
         ids = re.findall(CARD, self.h); self.assertEqual(len(ids), len(set(ids)), 'duplicate question ids'); self.assertGreaterEqual(len(ids), 1310)
     def test_data_rows_point_to_real_views_and_cards(self):

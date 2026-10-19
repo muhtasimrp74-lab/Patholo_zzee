@@ -10,7 +10,7 @@ from format_answers import TOK, CARD, SKIP_OPEN, SUBJ, PREP
 R = os.path.join(HERE, '..')
 MARK3, MARK2, MARK1 = '<!--fa3-->', '<!--fa2-->', '<!--fa1-->'
 B = lambda s: '<strong>%s</strong>' % s
-I = lambda s: '<em>%s</em>' % s
+I = lambda s: s   # house rule: no italics inside answer bodies (was <em>)
 
 SECTION = re.compile(r'(?:(?<=^)|(?<=[.;:] ))(Grossly|Macroscopically|Microscopically|Histologically|Clinically|Radiologically|Biochemically|'
     r'Complications|Pathogenesis|Morphology|Prognosis|Treatment|Diagnosis|Aetiology|Etiology|Mechanism|Sequelae|Outcome|Fate|Importantly|Note that|Remember)\b')
