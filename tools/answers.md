@@ -9,7 +9,7 @@
 | **Hypertrophy** | Increase in the size of cells, which increases the size of the organ; no new cells | Gravid uterus (smooth muscle, oestrogen); skeletal muscle of bodybuilders | Heart in pressure overload from hypertension or valvular disease |
 | **Hyperplasia** | Increase in the number of cells in an organ or tissue | Breast glandular epithelium at puberty and pregnancy; liver regeneration after partial hepatectomy; bone marrow red cell progenitors after bleeding or haemolysis | Endometrial hyperplasia; benign prostatic hyperplasia; papillomavirus warts |
 | **Atrophy** | Reduction in the size of an organ or tissue due to a decrease in cell size and number | Notochord and thyroglossal duct in the foetus | Disuse, denervation, diminished blood supply, inadequate nutrition, loss of endocrine stimulation, pressure |
-| **Metaplasia** | Reversible change in which one differentiated cell type is replaced by another | None given | Columnar to squamous in the bronchus of a smoker; squamous to columnar in Barrett oesophagus; bone formation in muscle (myositis ossificans) |
+| **Metaplasia** | Reversible change in which one differentiated cell type is replaced by another | None given | Columnar to squamous in the bronchus of a smoker; squamous to columnar in Barrett oesophagus [intestinal metaplasia of the lower oesophagus]; bone formation in muscle (myositis ossificans) |
 
 ## What do you mean by cellular adaptive change?
 
@@ -35,7 +35,7 @@
 | **Hypertrophy** | Uterus in pregnancy (smooth muscle, stimulated by oestrogen); skeletal muscle of bodybuilders | Enlargement of the heart from pressure overload, usually due to hypertension or valvular disease |
 | **Hyperplasia** | Glandular epithelium of the female breast at puberty and during pregnancy; liver regeneration after donation of one lobe; bone marrow after acute bleeding or haemolysis | Endometrial hyperplasia (excess oestrogen); benign prostatic hyperplasia (androgens); skin warts and mucosal lesions due to papillomaviruses |
 | **Atrophy** | Notochord and thyroglossal duct during foetal development | Disuse (limb in a plaster cast, bed rest); denervation; senile atrophy of the brain from reduced blood supply; cachexia in protein-calorie malnutrition; endometrium, vaginal epithelium and breast after menopause; prostate after castration; pressure from an enlarging benign tumour |
-| **Metaplasia** | None given | Columnar to squamous in the trachea and bronchi of a smoker and in vitamin A deficiency; squamous to columnar in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells); bone formation in muscle (myositis ossificans) |
+| **Metaplasia** | None given | Columnar to squamous in the trachea and bronchi of a smoker and in vitamin A deficiency; squamous to columnar in Barrett oesophagus [intestinal metaplasia of the lower oesophagus] (oesophageal squamous epithelium replaced by intestinal-like columnar cells); bone formation in muscle (myositis ossificans) |
 
 ## A 40-year-old man presented with high blood pressure for a prolonged period. What will be the effect on the myocardium? State its interpretation.
 
@@ -227,7 +227,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 **Examples**
 
 1. Columnar to squamous: replacement of the ciliated columnar epithelium of the trachea and bronchi by stratified squamous epithelium in a habitual cigarette smoker.
-2. Squamous to columnar: Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells under the influence of refluxed gastric acid).
+2. Squamous to columnar: Barrett oesophagus [intestinal metaplasia of the lower oesophagus] (oesophageal squamous epithelium replaced by intestinal-like columnar cells under the influence of refluxed gastric acid).
 
 ## Write about the mechanism of metaplasia and give examples.
 
@@ -242,7 +242,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 **Examples**
 
 - Columnar to squamous: bronchus of a smoker; respiratory epithelium and cornea in vitamin A deficiency; ducts of the salivary glands, pancreas or bile ducts with stones.
-- Squamous to columnar: Barrett oesophagus (squamous epithelium of the oesophagus replaced by intestinal-like columnar cells).
+- Squamous to columnar: Barrett oesophagus [intestinal metaplasia of the lower oesophagus] (squamous epithelium of the oesophagus replaced by intestinal-like columnar cells).
 - Connective tissue: bone formation in muscle after intramuscular haemorrhage (myositis ossificans).
 
 ## What are the merits and demerits of metaplasia?
@@ -258,7 +258,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 - Epithelial metaplasia is in most circumstances an undesirable change.
 - If the predisposing influences persist, they can initiate malignant transformation in the metaplastic epithelium.
 - Squamous cell carcinoma arising in squamous metaplasia of the lung is an example.
-- In Barrett oesophagus the cancers that arise are typically gland-forming adenocarcinomas.
+- In Barrett oesophagus [intestinal metaplasia of the lower oesophagus] the cancers that arise are typically gland-forming adenocarcinomas.
 
 ## Mention the clinical importance of metaplasia.
 
@@ -266,7 +266,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 - The epithelium becomes more durable, but protective mechanisms against infection, mucus secretion and ciliary action, are lost.
 - Persistent influences can initiate **malignant transformation** in the metaplastic epithelium.
 - Squamous cell carcinoma develops in areas of the lung where columnar epithelium has been replaced by squamous epithelium.
-- In Barrett oesophagus the cancers that arise are typically gland-forming **adenocarcinomas**.
+- In Barrett oesophagus [intestinal metaplasia of the lower oesophagus] the cancers that arise are typically gland-forming **adenocarcinomas**.
 - Vitamin A deficiency causes squamous metaplasia of the cornea, with highly deleterious effects on vision.
 - Connective tissue metaplasia, such as myositis ossificans, is not associated with increased cancer risk.
 
@@ -299,7 +299,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 - **Chronic irritation of the respiratory tract:** in the habitual cigarette smoker, the ciliated columnar epithelial cells of the trachea and bronchi are often replaced by stratified squamous epithelial cells.
 - **Vitamin A (retinoic acid) deficiency:** it induces squamous metaplasia in the respiratory epithelium and in the cornea. Vitamin A deficiency or excess may cause metaplasia, because retinoic acid regulates gene transcription directly through nuclear retinoid receptors.
 - **Stones in the excretory ducts** of the salivary glands, pancreas or bile ducts: irritation and pressure effects lead to squamous metaplasia.
-- **Refluxed gastric acid:** in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells).
+- **Refluxed gastric acid:** in Barrett oesophagus [intestinal metaplasia of the lower oesophagus] (oesophageal squamous epithelium replaced by intestinal-like columnar cells).
 - **Intramuscular haemorrhage:** bone formation in muscle (myositis ossificans) may follow. Connective tissue metaplasia may be a result of cell or tissue injury.
 
 ## Important sites of epithelial metaplasia.
@@ -307,14 +307,14 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 - **Trachea and bronchi** of a habitual cigarette smoker: ciliated columnar epithelium replaced by stratified squamous epithelium.
 - **Respiratory epithelium and cornea** in vitamin A deficiency: squamous metaplasia.
 - **Excretory ducts** of the salivary glands, pancreas or bile ducts, in the presence of stones: squamous metaplasia.
-- **Oesophagus**, in Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells): squamous to columnar metaplasia.
+- **Oesophagus**, in Barrett oesophagus [intestinal metaplasia of the lower oesophagus] (oesophageal squamous epithelium replaced by intestinal-like columnar cells): squamous to columnar metaplasia.
 
 ## Classify metaplasia with examples.
 
 | Class | Type | Example |
 |---|---|---|
 | **Epithelial** | Columnar to squamous (the most common) | Trachea and bronchi of a smoker; respiratory epithelium and cornea in vitamin A deficiency; ducts of the salivary glands, pancreas or bile ducts with stones |
-| **Epithelial** | Squamous to columnar | Barrett oesophagus (oesophageal squamous epithelium replaced by intestinal-like columnar cells) |
+| **Epithelial** | Squamous to columnar | Barrett oesophagus [intestinal metaplasia of the lower oesophagus] (oesophageal squamous epithelium replaced by intestinal-like columnar cells) |
 | **Connective tissue** | Formation of cartilage, bone or adipose cells in tissues that normally do not contain these elements | Bone formation in muscle after intramuscular haemorrhage (myositis ossificans) |
 
 ## Bad consequence / clinical importance of metaplasia.
@@ -323,7 +323,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 - The epithelium becomes more durable, but protective mechanisms against infection, mucus secretion and ciliary action, are lost.
 - Persistent influences can initiate **malignant transformation** in the metaplastic epithelium.
 - Squamous cell carcinoma develops in areas of the lung where columnar epithelium has been replaced by squamous epithelium.
-- In Barrett oesophagus the cancers that arise are typically gland-forming **adenocarcinomas**.
+- In Barrett oesophagus [intestinal metaplasia of the lower oesophagus] the cancers that arise are typically gland-forming **adenocarcinomas**.
 - Vitamin A deficiency causes squamous metaplasia of the cornea, with highly deleterious effects on vision.
 - Connective tissue metaplasia, such as myositis ossificans, is not associated with increased cancer risk.
 
@@ -338,7 +338,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 | **Architecture** | Orderly | Architectural disarray and loss of orderly differentiation |
 | **Reversibility** | Reversible | With removal of inciting causes, moderately severe dysplasia may be completely reversible; progression to cancer is not inevitable |
 | **Relation to cancer** | Persistent influences can initiate malignant transformation in the metaplastic epithelium | Precursor to malignant transformation; when severe and involving the full thickness of the epithelium without penetrating the basement membrane it is carcinoma in situ |
-| **Examples** | Barrett oesophagus (oesophageal squamous epithelium replaced by glandular epithelium); squamous metaplasia of bronchial epithelium in tobacco smokers | In the cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of cancer |
+| **Examples** | Barrett oesophagus [oesophageal squamous epithelium replaced by glandular epithelium]; squamous metaplasia of bronchial epithelium in tobacco smokers | In the cervix, severe epithelial dysplasia or carcinoma in situ frequently antedates the appearance of cancer |
 
 ## Define dysplasia.
 
@@ -355,7 +355,7 @@ Metaplasia is a reversible change in which one differentiated cell type (epithel
 3. **Chemical agents and drugs:** hypertonic glucose or salt, high concentrations of oxygen, poisons such as arsenic, cyanide and mercury, pollutants, pesticides, carbon monoxide, asbestos, alcohol, cocaine and therapeutic drugs.
 4. **Infectious agents:** viruses, rickettsiae, bacteria, fungi, parasites and tapeworms.
 5. **Immunologic reactions:** reactions to endogenous self-antigens cause autoimmune diseases; reactions to external agents such as viruses and environmental substances also cause injury.
-6. **Genetic abnormalities:** an extra chromosome, as in Down syndrome, or a single base pair substitution, as in sickle cell anaemia; they injure cells through deficient protein function, or through accumulation of damaged DNA or misfolded proteins.
+6. **Genetic abnormalities:** an extra chromosome, as in Down syndrome [trisomy 21], or a single base pair substitution, as in sickle cell anaemia; they injure cells through deficient protein function, or through accumulation of damaged DNA or misfolded proteins.
 7. **Nutritional imbalances:** protein-calorie deficiency, vitamin deficiencies, anorexia nervosa, and nutritional excess such as obesity and diets high in certain lipids.
 
 ## What are the types of cell injury?
@@ -628,7 +628,7 @@ After 1 or 2 days the nucleus of the necrotic cell disappears totally.
 2. **Absorption of radiant energy:** for example ultraviolet light and X-rays; ionising radiation can hydrolyse water into hydroxyl and hydrogen free radicals.
 3. **Bursts of ROS in activated leucocytes during inflammation:** produced by the plasma membrane complex NADPH oxidase; some intracellular oxidases such as xanthine oxidase also generate superoxide anion. Defective leucocyte superoxide production causes chronic granulomatous disease.
 4. **Enzymatic metabolism of exogenous chemicals or drugs:** for example carbon tetrachloride generates the CCl3 radical.
-5. **Transition metals such as iron and copper:** they donate or accept free electrons and catalyse free radical formation, as in the Fenton reaction (hydrogen peroxide plus ferrous iron gives ferric iron, hydroxyl radical and hydroxide).
+5. **Transition metals such as iron and copper:** they donate or accept free electrons and catalyse free radical formation, as in the Fenton reaction [iron-catalysed generation of hydroxyl radicals from hydrogen peroxide] (hydrogen peroxide plus ferrous iron gives ferric iron, hydroxyl radical and hydroxide).
 6. **Nitric oxide:** generated by endothelial cells, macrophages, neurons and other cells, it can act as a free radical and can be converted to the highly reactive peroxynitrite anion, nitrogen dioxide and nitrite.
 
 ## What are the effects of free radicals on cells?
@@ -674,7 +674,7 @@ After 1 or 2 days the nucleus of the necrotic cell disappears totally.
 **Clinical relevance**
 
 - Oxidative stress, meaning excess free radicals from increased production or decreased scavenging, is implicated in chemical and radiation injury, ischaemia-reperfusion injury, cellular ageing and microbial killing by phagocytes.
-- It is also implicated in cancer and degenerative diseases such as Alzheimer disease.
+- It is also implicated in cancer and degenerative diseases such as Alzheimer disease [progressive dementia with amyloid plaques and neurofibrillary tangles].
 
 ## Describe the biochemical mechanism leading to cell membrane damage.
 
@@ -1145,8 +1145,8 @@ One of the manifestations of metabolic derangements in cells is the **intracellu
 
 | Substance | Examples |
 |---|---|
-| **Lipids** | Triglycerides in fatty change (steatosis) of the liver, heart, muscle and kidney; cholesterol and cholesterol esters in foam cells of atherosclerosis, xanthomas, cholesterolosis of the gallbladder and Niemann-Pick disease type C (a lysosomal storage disease with cholesterol accumulation); phospholipids in the myelin figures of necrotic cells |
-| **Proteins** | Reabsorption droplets in proximal renal tubules in proteinuria; Russell bodies (large homogeneous eosinophilic inclusions from a distended ER) in plasma cells making immunoglobulins; alpha-1 antitrypsin in hepatocytes; alcoholic hyaline (keratin filaments) in liver cells; neurofibrillary tangle in Alzheimer disease (a degenerative disease) |
+| **Lipids** | Triglycerides in fatty change (steatosis) of the liver, heart, muscle and kidney; cholesterol and cholesterol esters in foam cells of atherosclerosis, xanthomas, cholesterolosis of the gallbladder and Niemann-Pick disease [sphingomyelinase deficiency, a lysosomal storage disease] type C (a lysosomal storage disease with cholesterol accumulation); phospholipids in the myelin figures of necrotic cells |
+| **Proteins** | Reabsorption droplets in proximal renal tubules in proteinuria; Russell bodies [large homogeneous eosinophilic inclusions from a distended ER] in plasma cells making immunoglobulins; alpha-1 antitrypsin in hepatocytes; alcoholic hyaline (keratin filaments) in liver cells; neurofibrillary tangle in Alzheimer disease [a degenerative disease] |
 | **Glycogen** | Diabetes mellitus, in renal tubular epithelial cells, liver cells, beta cells of the islets of Langerhans and heart muscle cells; glycogen storage diseases |
 | **Pigments** | Exogenous: carbon (anthracosis) and tattoo pigments. Endogenous: lipofuscin, melanin, haemosiderin and homogentisic acid (alkaptonuria, with ochronosis) |
 
@@ -1171,7 +1171,7 @@ The terms **steatosis** and **fatty change** describe abnormal accumulations of 
 
 1. Fatty change is completely reversible if there is abstention from further intake of alcohol.
 2. With continued injury, **alcohol-associated hepatitis** (steatohepatitis) may develop, with ballooned hepatocytes, Mallory hyaline (skeins of keratin intermediate filaments), neutrophils and spotty necrosis or apoptosis.
-3. Fibrosis follows, starting as pericellular fibrosis with a "chicken wire" appearance. It progresses to portal and periportal fibrosis, bridging fibrosis and **cirrhosis**, which is often micronodular (Laennec cirrhosis, the micronodular cirrhosis of alcohol-associated liver disease).
+3. Fibrosis follows, starting as pericellular fibrosis with a "chicken wire" appearance. It progresses to portal and periportal fibrosis, bridging fibrosis and **cirrhosis**, which is often micronodular (Laennec cirrhosis [micronodular cirrhosis, classically alcoholic], the micronodular cirrhosis of alcohol-associated liver disease).
 4. Early scarring can regress with cessation of alcohol use, but complete regression of alcohol-associated cirrhosis is rare.
 5. Only 10% to 15% of patients with alcohol use disorder develop cirrhosis.
 6. Hepatocellular carcinoma occurs mostly in chronic liver disease with cirrhosis, and alcoholic liver disease is one of the most common underlying diseases.
@@ -1185,7 +1185,7 @@ The term **hyaline** usually refers to an alteration within cells or in the extr
 **Intracellular hyaline accumulations of protein**
 
 - Reabsorption droplets in proximal renal tubules.
-- Russell bodies (large homogeneous eosinophilic inclusions in plasma cells).
+- Russell bodies [large homogeneous eosinophilic inclusions in plasma cells].
 - Alcoholic hyaline (eosinophilic inclusion in liver cells, composed predominantly of keratin intermediate filaments).
 
 **Extracellular hyaline**
@@ -1209,8 +1209,8 @@ The term **hyaline** usually refers to an alteration within cells or in the extr
 Four principal causes of hypercalcaemia
 
 1. Increased secretion of parathyroid hormone with bone resorption, as in hyperparathyroidism due to parathyroid tumours and ectopic secretion of parathyroid hormone-related protein by malignant tumours.
-2. Resorption of bone tissue, secondary to primary tumours of bone marrow (for example multiple myeloma), diffuse skeletal metastasis (for example breast cancer), accelerated bone turnover (for example Paget disease, a disorder of accelerated bone turnover) or immobilisation.
-3. Vitamin D-related disorders: vitamin D intoxication, sarcoidosis (in which macrophages activate a vitamin D precursor) and idiopathic hypercalcaemia of infancy (Williams syndrome, with abnormal sensitivity to vitamin D).
+2. Resorption of bone tissue, secondary to primary tumours of bone marrow (for example multiple myeloma), diffuse skeletal metastasis (for example breast cancer), accelerated bone turnover (for example Paget disease [disordered bone remodelling], a disorder of accelerated bone turnover) or immobilisation.
+3. Vitamin D-related disorders: vitamin D intoxication, sarcoidosis (in which macrophages activate a vitamin D precursor) and idiopathic hypercalcaemia of infancy (Williams syndrome [elastin gene deletion with supravalvular aortic stenosis], with abnormal sensitivity to vitamin D).
 4. Renal failure, which causes retention of phosphate and leads to secondary hyperparathyroidism.
 
 **Sites**
@@ -1412,7 +1412,7 @@ Four principal causes of hypercalcaemia
 - In many diseases the reaction is misdirected against self tissues (autoimmune diseases), occurs against normally harmless environmental substances (allergies) or is inadequately controlled. The protective reaction then becomes the cause of the disease.
 - Activated leucocytes release enzymes and reactive oxygen species into the extracellular space, and these damage normal tissue.
 - Examples of diseases caused by inflammatory injury are acute respiratory distress syndrome (neutrophils), glomerulonephritis and vasculitis (antibodies, complement, neutrophils and monocytes), septic shock (cytokines), rheumatoid arthritis (lymphocytes and macrophages) and asthma (eosinophils and IgE antibodies).
-- Inflammation may also contribute to type 2 diabetes, Alzheimer disease and cancer.
+- Inflammation may also contribute to type 2 diabetes, Alzheimer disease [progressive dementia with amyloid plaques and neurofibrillary tangles] and cancer.
 
 ## Vascular changes / reactions of blood vessels in acute inflammation.
 
@@ -1471,7 +1471,7 @@ Increased permeability of the postcapillary venules, a hallmark of acute inflamm
 
 - Blood flow slows (stasis) in the dilated postcapillary venules, and more white cells assume a peripheral position along the endothelium. This is **margination**.
 - **Rolling** is mediated by **selectins**: L-selectin on leucocytes, E-selectin on endothelium, and P-selectin on platelets and endothelium. These are low-affinity interactions with a fast off-rate, so the leucocytes bind, detach and bind again.
-- TNF and IL-1 induce endothelial expression of E-selectin within 1 to 2 hours. Histamine and thrombin cause P-selectin to move to the cell surface from Weibel-Palade bodies (the granules of endothelial cells).
+- TNF and IL-1 induce endothelial expression of E-selectin within 1 to 2 hours. Histamine and thrombin cause P-selectin to move to the cell surface from Weibel-Palade bodies [the granules of endothelial cells].
 - **Firm adhesion** is mediated by **integrins** on leucocytes (LFA-1, MAC-1, VLA-4) binding ICAM-1 and VCAM-1 on endothelium. Chemokines activate the rolling leucocytes and convert the integrins to a high-affinity state.
 
 2. **Migration across the endothelium and vessel wall**
@@ -1536,7 +1536,7 @@ The journey of leucocytes from the vessel lumen to the tissue is a multistep pro
 ## Organs where cells of the MPS are found.
 
 - Connective tissues: macrophages scattered diffusely.
-- Liver: **Kupffer cells**.
+- Liver: **Kupffer cells** [macrophages lining the hepatic sinusoids].
 - Spleen and lymph nodes: **sinus histiocytes**.
 - Central nervous system: **microglia**.
 - Lungs: **alveolar macrophages**.
@@ -1862,7 +1862,7 @@ Inflammation, even if localised, is associated with systemic reactions induced b
 
 ## Common investigations usually done in inflammatory conditions.
 
-The textbook describes these as the laboratory markers of the systemic response to inflammation.
+These are laboratory markers of the systemic response to inflammation.
 
 1. **Total and differential leucocyte count**: leucocytosis is common in inflammation, especially bacterial infection (neutrophilia, with a shift to the left). Viral infections show lymphocytosis, allergies and helminth infestations show eosinophilia, and some infections (typhoid fever, some viral, rickettsial and protozoal infections) show leucopenia.
 2. **Erythrocyte sedimentation rate (ESR)**: fibrinogen makes red cells form stacks (rouleaux) that sediment faster. It is a simple test for an inflammatory response caused by any stimulus.
@@ -1901,8 +1901,8 @@ In contrast to acute inflammation, which shows vascular changes, oedema and pred
 | Cause | Examples |
 |---|---|
 | **Persistent infections** | Tuberculosis (prototype of a granulomatous disease), leprosy, syphilis, cat-scratch disease, chronic bacterial infection of bone (osteomyelitis) |
-| **Autoimmune diseases** | Rheumatoid arthritis, multiple sclerosis, Hashimoto thyroiditis |
-| **Unregulated immune response against microbes or self antigens** | Inflammatory bowel disease (Crohn disease), sarcoidosis (cause unknown) |
+| **Autoimmune diseases** | Rheumatoid arthritis, multiple sclerosis, Hashimoto thyroiditis [autoimmune thyroiditis causing hypothyroidism] |
+| **Unregulated immune response against microbes or self antigens** | Inflammatory bowel disease (Crohn disease [transmural granulomatous inflammatory bowel disease]), sarcoidosis (cause unknown) |
 | **Allergic diseases** | Bronchial asthma |
 | **Toxic substances** | Silicosis (inhaled silica), atherosclerosis (cholesterol and other lipids) |
 | **Unresolved acute inflammation** | Acute bacterial infection of the lung progressing to a chronic lung abscess; peptic ulcer, in which acute and chronic inflammation coexist |
@@ -1914,7 +1914,7 @@ In contrast to acute inflammation, which shows vascular changes, oedema and pred
 **Origin and distribution**
 
 - They are derived from haematopoietic stem cells of the bone marrow (circulating monocytes, half-life about 1 day) and, in early development, from progenitors in the yolk sac and foetal liver.
-- Tissue macrophages live for several months or years. They are present in specific locations: **Kupffer cells** in the liver, **sinus histiocytes** in the spleen and lymph nodes, **microglia** in the central nervous system and **alveolar macrophages** in the lungs. Together they form the mononuclear phagocyte system.
+- Tissue macrophages live for several months or years. They are present in specific locations: **Kupffer cells** [macrophages lining the hepatic sinusoids] in the liver, **sinus histiocytes** in the spleen and lymph nodes, **microglia** in the central nervous system and **alveolar macrophages** in the lungs. Together they form the mononuclear phagocyte system.
 - Monocytes begin to emigrate into the tissues early in inflammation, and within 48 hours they may be the predominant cell type.
 
 **Role in chronic inflammation**
@@ -1958,7 +1958,7 @@ There are two types of **granuloma**, which differ in their pathogenesis.
 |---|---|---|
 | **Cause** | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
 | **Mechanism** | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
-| **Examples** | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
+| **Examples** | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease [transmural granulomatous inflammatory bowel disease] |
 | **Morphology** | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
 
 - Caseating granulomas have a central zone of caseous necrosis (tuberculosis). Noncaseating granulomas lack necrotic centres (Crohn disease, sarcoidosis, foreign body reactions).
@@ -1967,12 +1967,12 @@ There are two types of **granuloma**, which differ in their pathogenesis.
 
 | Disease | Aetiology | Tissue reaction |
 |---|---|---|
-| **Tuberculosis** | Mycobacterium tuberculosis | Caseating granulomas (tubercles): activated macrophages (epithelioid cells) rimmed by fibroblasts, lymphocytes and histiocytes, occasional Langhans giant cells, central necrosis with amorphous granular debris, acid-fast bacilli |
+| **Tuberculosis** | Mycobacterium tuberculosis | Caseating granulomas (tubercles): activated macrophages (epithelioid cells) rimmed by fibroblasts, lymphocytes and histiocytes, occasional Langhans giant cells [giant cells with peripheral horseshoe-shaped nuclei], central necrosis with amorphous granular debris, acid-fast bacilli |
 | **Leprosy** | Mycobacterium leprae | Acid-fast bacilli in macrophages; noncaseating granulomas |
 | **Syphilis** | Treponema pallidum | Gumma: microscopic to grossly visible lesion with an enclosing wall of histiocytes, plasma cell infiltrate, central cells necrotic without loss of cellular outline |
 | **Cat-scratch disease** | Bartonella henselae (a gram-negative bacillus) | Rounded or stellate granuloma with central granular debris and recognisable neutrophils; giant cells uncommon |
 | **Sarcoidosis** | Unknown | Noncaseating granulomas with abundant activated macrophages |
-| **Crohn disease** | Immune reaction against intestinal bacteria, possibly self antigens | Occasional noncaseating granulomas in the wall of the intestine, with a dense chronic inflammatory infiltrate |
+| **Crohn disease** [transmural granulomatous inflammatory bowel disease] | Immune reaction against intestinal bacteria, possibly self antigens | Occasional noncaseating granulomas in the wall of the intestine, with a dense chronic inflammatory infiltrate |
 
 - Foreign body granulomas also occur around talc, suture material and other fibres.
 - Schistosomiasis produces granulomas with strong Th2 responses and eosinophils.
@@ -1982,9 +1982,9 @@ There are two types of **granuloma**, which differ in their pathogenesis.
 1. In the usual H&E preparations the activated macrophages have **pink granular cytoplasm with indistinct cell boundaries** and are called **epithelioid cells**.
 2. The aggregates of epithelioid macrophages are surrounded by a **collar of lymphocytes**.
 3. Older granulomas may have a **rim of fibroblasts and connective tissue**.
-4. Frequently, but not invariably, **multinucleated giant cells** 40 to 50 micrometres in diameter are found. These are called **Langhans giant cells**. They consist of a large mass of cytoplasm and many nuclei and derive from the fusion of multiple activated macrophages.
+4. Frequently, but not invariably, **multinucleated giant cells** 40 to 50 micrometres in diameter are found. These are called **Langhans giant cells** [giant cells with peripheral horseshoe-shaped nuclei]. They consist of a large mass of cytoplasm and many nuclei and derive from the fusion of multiple activated macrophages.
 5. In granulomas associated with certain infectious organisms (most classically Mycobacterium tuberculosis), hypoxia and free radical-mediated injury lead to a **central zone of caseous necrosis**. Grossly it is granular and cheesy. Microscopically it is amorphous, structureless, eosinophilic, granular debris with complete loss of cellular detail.
-6. The granulomas of Crohn disease, sarcoidosis and foreign body reactions tend to lack necrotic centres and are called noncaseating.
+6. The granulomas of Crohn disease [transmural granulomatous inflammatory bowel disease], sarcoidosis and foreign body reactions tend to lack necrotic centres and are called noncaseating.
 7. Healing of granulomas is accompanied by **fibrosis**, which may be extensive in involved organs.
 
 ## Write a short note on granulomatous inflammation.
@@ -1999,8 +1999,8 @@ There are two types of **granuloma**, which differ in their pathogenesis.
 **Morphology**
 
 - Activated macrophages with pink granular cytoplasm and indistinct cell boundaries are called **epithelioid cells**. They are surrounded by a collar of lymphocytes. Older granulomas have a rim of fibroblasts and connective tissue.
-- Frequently there are **multinucleate giant cells** (Langhans giant cells), 40 to 50 micrometres in diameter, formed by the fusion of activated macrophages.
-- In tuberculosis a central zone of caseous necrosis develops. Granulomas of Crohn disease, sarcoidosis and foreign body reactions are noncaseating.
+- Frequently there are **multinucleate giant cells** (Langhans giant cells [giant cells with peripheral horseshoe-shaped nuclei]), 40 to 50 micrometres in diameter, formed by the fusion of activated macrophages.
+- In tuberculosis a central zone of caseous necrosis develops. Granulomas of Crohn disease [transmural granulomatous inflammatory bowel disease], sarcoidosis and foreign body reactions are noncaseating.
 - Healing is accompanied by fibrosis, which may be extensive.
 
 **Examples:** tuberculosis (the prototype, with granulomas called tubercles), leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease.
@@ -2013,7 +2013,7 @@ There are two types of **granuloma**, which differ in their pathogenesis.
 |---|---|---|
 | **Cause** | Inert foreign bodies, which induce inflammation in the absence of a T cell-mediated immune response | Agents that induce a persistent T cell-mediated immune response, such as a persistent microbe |
 | **Mechanism** | The material is large enough to preclude phagocytosis by macrophages and is not immunogenic | Th1 cells produce IFN-gamma, which activates macrophages. In some parasitic infections (schistosomiasis) there are strong Th2 responses and eosinophils |
-| **Examples** | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease |
+| **Examples** | Talc (in intravenous drug use), suture material, other fibres | Tuberculosis, leprosy, sarcoidosis, Crohn disease [transmural granulomatous inflammatory bowel disease] |
 | **Morphology** | Epithelioid cells and giant cells are apposed to the surface of the foreign body, which is often seen in the centre, sometimes inside giant cells, refractile in polarised light | Epithelioid cells with a collar of lymphocytes; may be caseating or noncaseating |
 
 - Caseating granulomas have a central zone of caseous necrosis (tuberculosis). Noncaseating granulomas lack necrotic centres (Crohn disease, sarcoidosis, foreign body reactions).
@@ -2024,7 +2024,7 @@ A typical tuberculous granuloma (**tubercle**) is a rounded focus with the follo
 
 1. **Central caseous necrosis.** Amorphous, structureless, eosinophilic granular debris, with complete loss of cellular detail. Acid-fast bacilli can be seen.
 2. **Epithelioid cells.** Activated macrophages with pink granular cytoplasm and indistinct cell boundaries, around the necrosis.
-3. **Langhans giant cells.** Multinucleate cells, 40 to 50 micrometres in diameter, formed by fusion of macrophages.
+3. **Langhans giant cells [giant cells with peripheral horseshoe-shaped nuclei].** Multinucleate cells, 40 to 50 micrometres in diameter, formed by fusion of macrophages.
 4. **Collar of lymphocytes** around the epithelioid cells.
 5. **Rim of fibroblasts and connective tissue**, in older granulomas.
 
@@ -2065,12 +2065,11 @@ A **giant cell** (multinucleate giant cell) is a large mass of cytoplasm contain
 
 | Type | Where seen | Features |
 |---|---|---|
-| **Langhans giant cell** | Immune granulomas, classically tuberculosis; also sarcoidosis | 40 to 50 micrometres in diameter; large mass of cytoplasm with many nuclei arranged in a horseshoe or ring at the periphery |
+| **Langhans giant cell** [giant cells with peripheral horseshoe-shaped nuclei] | Immune granulomas, classically tuberculosis; also sarcoidosis | 40 to 50 micrometres in diameter; large mass of cytoplasm with many nuclei arranged in a horseshoe or ring at the periphery |
 | **Foreign body giant cell** | Foreign body granulomas around talc, suture material and other fibres | Many nuclei scattered haphazardly through the cytoplasm; the giant cells are apposed to the surface of the foreign body, and the material may lie inside them |
-| **Touton giant cell** | Lesions rich in lipid, such as xanthoma and fat necrosis | Ring of nuclei around a central eosinophilic area, with foamy (lipid-filled) cytoplasm at the periphery |
-| **Warthin-Finkeldey cell** | Lymphoid organs, lung and sputum in measles | Multinucleate giant cell with eosinophilic nuclear and cytoplasmic inclusion bodies; pathognomonic of measles |
+| **Touton giant cell** [giant cells with a wreath of nuclei] | Lesions rich in lipid, such as xanthoma and fat necrosis | Ring of nuclei around a central eosinophilic area, with foamy (lipid-filled) cytoplasm at the periphery |
+| **Warthin-Finkeldey cell** [multinucleated giant cells of measles] | Lymphoid organs, lung and sputum in measles | Multinucleate giant cell with eosinophilic nuclear and cytoplasmic inclusion bodies; pathognomonic of measles |
 
-- The textbook describes Langhans, foreign body and Warthin-Finkeldey cells. The nuclear arrangement of the three granuloma types and the Touton cell are standard descriptions from outside the textbook.
 
 ## How are inflammatory giant cells formed?
 
@@ -2310,12 +2309,12 @@ The most probable diagnosis is **chronic osteomyelitis** of the tibia, a pyogeni
 
 ## Non-healing ulcer on the chest wall; scraping cytology shows epithelioid cells and Langhans-type giant cells — Most probable diagnosis?
 
-The most probable diagnosis is **tuberculosis**. Epithelioid cells and Langhans giant cells indicate granulomatous inflammation, and tuberculosis is the prototype of a granulomatous disease caused by infection.
+The most probable diagnosis is **tuberculosis**. Epithelioid cells and Langhans giant cells [giant cells with peripheral horseshoe-shaped nuclei] indicate granulomatous inflammation, and tuberculosis is the prototype of a granulomatous disease caused by infection.
 
 - Epithelioid cells are activated macrophages with pink granular cytoplasm, and Langhans giant cells are multinucleate cells formed by the fusion of activated macrophages.
 - Tuberculosis should always be excluded as the cause when granulomas are identified. In this disease the granulomas are called **tubercles** and have central caseous necrosis.
 - The diagnosis is confirmed by acid-fast stain for tubercle bacilli, culture and PCR.
-- Other diseases with granulomatous inflammation are leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease.
+- Other diseases with granulomatous inflammation are leprosy, syphilis, cat-scratch disease, sarcoidosis and Crohn disease [transmural granulomatous inflammatory bowel disease].
 
 ## 50-year-old woman with gum lesion (fibroblast proliferation and angiogenesis), long history of betel nut chewing — What type of inflammation occurs? What might be the complication?
 
@@ -2420,7 +2419,7 @@ The provisional diagnosis is **acute inflammation**, most probably acute purulen
 **Anasarca** is generalised massive oedema.
 
 - It occurs when oedema is widespread, as when reduced plasma oncotic pressure and increased hydrostatic pressure act together.
-- Causes mentioned in the textbook are right-sided heart failure, kwashiorkor (hypoalbuminaemia and generalised oedema, with ascites and puffiness of the face, hands and legs) and severe haemolytic anaemia with cardiac failure.
+- Causes include right-sided heart failure, kwashiorkor (hypoalbuminaemia and generalised oedema, with ascites and puffiness of the face, hands and legs) and severe haemolytic anaemia with cardiac failure.
 
 ## What is effusion?
 
@@ -2519,7 +2518,7 @@ Fluid movement across the capillary wall depends on the balance between hydrosta
 
 ## Name the body fluids commonly examined in the laboratory.
 
-The textbook does not list the body fluids examined in the laboratory. It discusses the following fluids.
+Commonly examined body fluids:
 
 - **Serous cavity fluids**: pleural, pericardial and peritoneal (ascitic) fluid, collected from effusions.
 - **Blister fluid** and other serous exudates from inflammation.
@@ -2527,7 +2526,7 @@ The textbook does not list the body fluids examined in the laboratory. It discus
 
 ## Tests performed for examination of body fluid.
 
-The textbook does not list the laboratory tests for body fluids. It gives the features by which an exudate and a transudate are recognised.
+An exudate and a transudate are recognised by these features:
 
 - **Protein content:** high in an exudate, low (mostly albumin) in a transudate.
 - **Cells:** an exudate contains cellular debris and white cells, and a transudate has little or no cellular material.
@@ -2571,7 +2570,7 @@ The textbook does not list the laboratory tests for body fluids. It gives the fe
 
 Platelets form the **primary plug** that initially seals vascular defects and provide a surface that binds and concentrates activated coagulation factors.
 
-1. **Adhesion.** Platelets adhere to subendothelial von Willebrand factor (vWF) through **GpIb**; under high shear stress vWF binds both platelets and collagen, acting like a glue between them. Platelets also adhere to exposed collagen through GpIa/IIa and GpVI.
+1. **Adhesion.** Platelets adhere to subendothelial von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII] (vWF) through **GpIb**; under high shear stress vWF binds both platelets and collagen, acting like a glue between them. Platelets also adhere to exposed collagen through GpIa/IIa and GpVI.
 2. **Shape change.** Platelets change from smooth disks to spiky "sea urchins" with greatly increased surface area. GpIIb/IIIa undergoes a conformational change that increases its affinity for fibrinogen, and negatively charged phospholipids (particularly phosphatidylserine) move to the platelet surface, where they bind calcium and serve as nucleation sites for the assembly of coagulation factor complexes.
 3. **Secretion (release reaction)** of granule contents, together with the shape change, is called platelet activation; it is triggered by thrombin and ADP.
 
@@ -2606,7 +2605,7 @@ Platelets form the **primary plug** that initially seals vascular defects and pr
 A **thrombus** is a blood clot that forms within an intact blood vessel or within the chambers of the heart.
 
 - **Haemostasis** is the process by which blood clots form at sites of vascular injury. In thrombotic disorders, clots (thrombi) form within intact blood vessels or the heart chambers.
-- The primary abnormalities that lead to thrombosis are endothelial injury, stasis or turbulent blood flow, and hypercoagulability of the blood (the Virchow triad).
+- The primary abnormalities that lead to thrombosis are endothelial injury, stasis or turbulent blood flow, and hypercoagulability of the blood (the Virchow triad [stasis, endothelial injury and hypercoagulability]).
 
 ## Virchow's triad.
 
@@ -2636,7 +2635,7 @@ Thrombi occurring in heart chambers or in the aortic lumen are designated **mura
 | Feature | Thrombus | Postmortem clot |
 |---|---|---|
 | **Time of formation** | Formed in flowing blood during life (antemortem) | Forms after death |
-| Lines of Zahn (alternating pale platelet and fibrin deposits and darker red cell-rich layers) | Present; they signify that the thrombus formed in flowing blood | Absent; bland and nonlaminated |
+| Lines of Zahn [alternating pale platelet-fibrin and dark red cell layers in a thrombus] (alternating pale platelet and fibrin deposits and darker red cell-rich layers) | Present; they signify that the thrombus formed in flowing blood | Absent; bland and nonlaminated |
 | **Consistency** | Firm | Gelatinous |
 | **Appearance** | Laminated | Dark-red dependent portion where red cells have settled by gravity and a yellow "chicken fat" upper portion |
 | **Attachment to vessel wall** | Focally attached to the underlying vascular surface | Usually not attached to the underlying vessel wall |
@@ -2647,7 +2646,7 @@ Thrombi occurring in heart chambers or in the aortic lumen are designated **mura
 
 ## Discuss the role of endothelial injury in thrombus formation.
 
-- Endothelial integrity is the most important factor in Virchow's triad. Injury to endothelial cells can alter local blood flow and affect coagulability, and abnormal blood flow can in turn cause endothelial injury.
+- Endothelial integrity is the most important factor in Virchow's triad [stasis, endothelial injury and hypercoagulability]. Injury to endothelial cells can alter local blood flow and affect coagulability, and abnormal blood flow can in turn cause endothelial injury.
 - Severe endothelial injury may trigger thrombosis by exposing **vWF and tissue factor**.
 - Inflammation and other noxious stimuli also promote thrombosis by shifting the pattern of gene expression in endothelium to one that is prothrombotic, called **endothelial activation or dysfunction**. It can be produced by physical injury, infectious agents, abnormal blood flow, inflammatory mediators, metabolic abnormalities such as hypercholesterolaemia or homocystinaemia, and toxins absorbed from cigarette smoke. It is believed to have an important role in triggering arterial thrombotic events.
 
@@ -2682,7 +2681,7 @@ Normal blood flow is laminar, so the platelets flow centrally in the vessel lume
 1. Venous thrombi characteristically occur at sites of **stasis**, which is a major contributor to their development. Bed rest and immobilisation reduce the milking action of the leg muscles, resulting in stasis, and congestive heart failure is also a cause of impaired venous return.
 2. Stasis prevents washout and dilution of activated clotting factors by fresh flowing blood and the inflow of clotting factor inhibitors, and it promotes endothelial activation.
 3. **Hypercoagulability** has a particularly important role in venous thrombosis. It may be primary (genetic), such as factor V Leiden and the prothrombin G20210A mutation, or secondary (acquired).
-4. The thrombus forms in the sluggish venous circulation, so it contains more enmeshed red cells and relatively few platelets (a **red thrombus** or **stasis thrombus**). It is firm, focally attached to the vessel wall, contains lines of Zahn, and is almost invariably occlusive, forming a long luminal cast.
+4. The thrombus forms in the sluggish venous circulation, so it contains more enmeshed red cells and relatively few platelets (a **red thrombus** or **stasis thrombus**). It is firm, focally attached to the vessel wall, contains lines of Zahn [alternating pale platelet-fibrin and dark red cell layers in a thrombus], and is almost invariably occlusive, forming a long luminal cast.
 5. Venous thrombi extend in the direction of blood flow, towards the heart. The propagating portion is often poorly attached and therefore prone to fragmentation and embolisation.
 
 **Predisposing factors in the lower extremity (90% of cases)**
@@ -2690,12 +2689,12 @@ Normal blood flow is laminar, so the platelets flow centrally in the vessel lume
 - Bed rest and immobilisation, and congestive heart failure.
 - Trauma, surgery and burns, which not only immobilise a person but are also associated with vascular insults, procoagulant release from injured tissues, increased hepatic synthesis of coagulation factors and decreased t-PA production.
 - Pregnancy, through decreased venous return from leg veins and systemic hypercoagulability associated with the hormonal changes of late pregnancy and the postpartum period.
-- Disseminated cancers, through tumour-associated inflammation and release of coagulation factors (for example tissue factor) and procoagulants (for example mucin); this is called migratory thrombophlebitis or Trousseau syndrome.
+- Disseminated cancers, through tumour-associated inflammation and release of coagulation factors (for example tissue factor) and procoagulants (for example mucin); this is called migratory thrombophlebitis or Trousseau syndrome [migratory thrombophlebitis associated with cancer].
 - Advanced age.
 
 ## What is Virchow's triad of thrombogenesis?
 
-The primary abnormalities that lead to thrombosis are (1) **endothelial injury**, (2) **stasis or turbulent blood flow** and (3) **hypercoagulability** of the blood, the so-called **Virchow triad**.
+The primary abnormalities that lead to thrombosis are (1) **endothelial injury**, (2) **stasis or turbulent blood flow** and (3) **hypercoagulability** of the blood, the so-called **Virchow triad** [stasis, endothelial injury and hypercoagulability].
 
 ## Mention the causes of hypercoagulability of blood.
 
@@ -3283,7 +3282,7 @@ It is defined as a state of systemic tissue hypoperfusion resulting from reduced
 - Proinflammatory cytokines suppress insulin release and promote insulin resistance in the liver and other tissues, likely by impairing surface expression of glucose transporter-4 (GLUT-4).
 - Blood levels of glucose, triglycerides and lactate rise.
 - Hyperglycaemia decreases neutrophil function, suppressing bactericidal activity, and increases adhesion molecule expression on endothelial cells.
-- An initial surge in glucocorticoid production may be followed by adrenal insufficiency and a functional glucocorticoid deficit, from depressed synthetic capacity of the adrenals or frank adrenal necrosis resulting from DIC (**Waterhouse-Friderichsen syndrome**).
+- An initial surge in glucocorticoid production may be followed by adrenal insufficiency and a functional glucocorticoid deficit, from depressed synthetic capacity of the adrenals or frank adrenal necrosis resulting from DIC (**Waterhouse-Friderichsen syndrome** [adrenal haemorrhage in meningococcal septicaemia]).
 - Cellular hypoxia and diminished oxidative phosphorylation increase lactate production and cause lactic acidosis.
 
 **5. Organ dysfunction**
@@ -3382,7 +3381,7 @@ The aetiology is a **microbial infection** that has become generalised.
 **Euvolaemic hyponatraemia** (total body water increases with stable total body sodium)
 
 - Syndrome of inappropriate antidiuretic hormone secretion (SIADH)
-- Addison disease
+- Addison disease [primary adrenocortical insufficiency]
 - Hypothyroidism
 - High fluid intake, as in primary polydipsia or potomania
 - Medical testing related to excessive fluids, such as colonoscopy or cardiac catheterisation
@@ -3448,9 +3447,9 @@ The basic mechanisms are water deficit and excess solute. Total body water loss 
 **Renal disorders**
 
 - Chloride-responsive metabolic alkalosis (chloride loss from vomiting or nasogastric suction)
-- Chloride-resistant metabolic alkalosis from mineralocorticoid excess: Conn syndrome (primary hyperaldosteronism), congenital adrenal hyperplasia (11-β or 17-α-hydroxylase deficiency), renin-secreting tumours, ectopic ACTH syndrome, Cushing disease or syndrome, hereditary glucocorticoid-responsive aldosteronism, hypertensive emergency and malignant hypertension, renovascular hypertension (renal artery stenosis) and vasculitis
-- Genetic conditions: Liddle syndrome, syndrome of apparent mineralocorticoid excess, Gitelman syndrome and Bartter syndrome
-- Other renal conditions: Fanconi syndrome, renal tubular acidosis (especially type 1), hypomagnesaemia, uncontrolled diabetes mellitus and ureterosigmoidostomy
+- Chloride-resistant metabolic alkalosis from mineralocorticoid excess: Conn syndrome [primary hyperaldosteronism], congenital adrenal hyperplasia (11-β or 17-α-hydroxylase deficiency), renin-secreting tumours, ectopic ACTH syndrome, Cushing disease [ACTH-secreting pituitary adenoma] or syndrome, hereditary glucocorticoid-responsive aldosteronism, hypertensive emergency and malignant hypertension, renovascular hypertension (renal artery stenosis) and vasculitis
+- Genetic conditions: Liddle syndrome [inherited renal sodium-channel overactivity causing hypertension with hypokalaemia], syndrome of apparent mineralocorticoid excess, Gitelman syndrome [inherited distal tubular salt wasting causing hypokalaemic alkalosis] and Bartter syndrome [inherited loop of Henle salt wasting causing hypokalaemic alkalosis]
+- Other renal conditions: Fanconi syndrome [generalised proximal tubular reabsorption defect], renal tubular acidosis (especially type 1), hypomagnesaemia, uncontrolled diabetes mellitus and ureterosigmoidostomy
 
 ## What is hyperkalaemia?
 
@@ -3494,10 +3493,10 @@ The basic mechanisms are water deficit and excess solute. Total body water loss 
 
 - Destruction of the parathyroid glands, postsurgical or autoimmune; postsurgical hypoparathyroidism accounts for about 75% of hypoparathyroidism cases
 - Abnormal regulation of PTH production and secretion
-- Abnormal parathyroid development, including DiGeorge syndrome, CHARGE syndrome, gracile bone dysplasia, MELAS and medium-chain acyl-CoA dehydrogenase deficiency
+- Abnormal parathyroid development, including DiGeorge syndrome [22q11.2 deletion with thymic and parathyroid hypoplasia], CHARGE syndrome, gracile bone dysplasia, MELAS and medium-chain acyl-CoA dehydrogenase deficiency
 - Hungry bone syndrome after parathyroid surgery in severe hyperparathyroidism
 - Autoimmune hypoparathyroidism, including APECED
-- Rare gland destruction from granulomatous disease, haemochromatosis, Wilson disease, amyloidosis, aluminium-containing phosphate binders, irradiation, HIV infiltration, nivolumab and L-asparaginase
+- Rare gland destruction from granulomatous disease, haemochromatosis, Wilson disease [hereditary copper accumulation from ATP7B mutation], amyloidosis, aluminium-containing phosphate binders, irradiation, HIV infiltration, nivolumab and L-asparaginase
 
 **High parathyroid hormone levels**
 
@@ -3541,7 +3540,7 @@ The basic mechanisms are water deficit and excess solute. Total body water loss 
 **Non-parathyroid hormone-mediated**
 
 - Medication-induced: thiazide diuretics, excessive calcium carbonate (milk-alkali syndrome) and prolonged retinoic acid use
-- Hypercalcaemia of malignancy: tumour-produced parathyroid hormone-related protein, bone metastases, haematological malignancies (Hodgkin and non-Hodgkin lymphoma) and granulomatous diseases (sarcoidosis, tuberculosis)
+- Hypercalcaemia of malignancy: tumour-produced parathyroid hormone-related protein, bone metastases, haematological malignancies (Hodgkin [lymphoma defined by Reed-Sternberg cells] and non-Hodgkin lymphoma) and granulomatous diseases (sarcoidosis, tuberculosis)
 - Vitamin D toxicity: excess vitamin D or calcitriol supplementation, or excess vitamin D-fortified dairy
 - Endocrinopathies: hyperthyroidism, phaeochromocytoma and adrenal insufficiency
 - Hypercalcaemia of immobilisation
@@ -3569,7 +3568,7 @@ The basic mechanisms are water deficit and excess solute. Total body water loss 
 **Non-gap metabolic acidosis**
 
 - Main causes: diarrhoea and renal tubular acidosis
-- Rarer causes: Addison disease, ureterosigmoid or pancreatic fistulas, acetazolamide use, and hyperalimentation through the start of total parenteral nutrition
+- Rarer causes: Addison disease [primary adrenocortical insufficiency], ureterosigmoid or pancreatic fistulas, acetazolamide use, and hyperalimentation through the start of total parenteral nutrition
 
 ## What is metabolic alkalosis?
 
@@ -3592,14 +3591,14 @@ The basic mechanisms are water deficit and excess solute. Total body water loss 
 - Retention of bicarbonate
 - Shift of hydrogen into intracellular spaces
 - Hyperaldosteronism
-- Bartter syndrome
-- Gitelman syndrome
+- Bartter syndrome [inherited loop of Henle salt wasting causing hypokalaemic alkalosis]
+- Gitelman syndrome [inherited distal tubular salt wasting causing hypokalaemic alkalosis]
 
 **Specific causes by mechanism**
 
 - Excess loss of hydrogen ions: gastric lavage; excessive vomiting of gastric contents, including vomiting secondary to pyloric stenosis; chronic diarrhoea; congenital chloridorrhoea
 - Increased bicarbonate in the extracellular compartment: excess enteral bicarbonate or alkali intake (milk-alkali syndrome); increased parenteral citrate, acetate or lactate; large-volume transfusion of sodium citrate-anticoagulated fresh frozen plasma
-- Increased renal reabsorption of bicarbonate: primary hyperaldosteronism, renin-secreting tumours, renal artery stenosis, exogenous mineralocorticoids, congenital adrenal hyperplasia, Liddle syndrome, Cushing syndrome and Cushing disease
+- Increased renal reabsorption of bicarbonate: primary hyperaldosteronism, renin-secreting tumours, renal artery stenosis, exogenous mineralocorticoids, congenital adrenal hyperplasia, Liddle syndrome [inherited renal sodium-channel overactivity causing hypertension with hypokalaemia], Cushing syndrome [glucocorticoid excess] and Cushing disease [ACTH-secreting pituitary adenoma]
 
 ## Define gene.
 
@@ -3630,7 +3629,7 @@ A **mutation** is defined as a permanent change in DNA sequence.
 - If the number of base pairs involved is three or a multiple of three, the reading frame remains intact and an abnormal protein lacking or gaining one or more amino acids is synthesised.
 - If the number of affected coding bases is not a multiple of three, the reading frame is altered, a **frameshift** mutation, producing incorrect amino acids followed by truncation from a premature stop codon.
 
-4. **Structural alterations in protein-coding genes.** These are copy number changes (amplifications or deletions) or rearrangements that result in aberrant gain or loss of protein function; they may be germline and heritable or somatically acquired, for example the Philadelphia chromosome translocation in chronic myeloid leukaemia.
+4. **Structural alterations in protein-coding genes.** These are copy number changes (amplifications or deletions) or rearrangements that result in aberrant gain or loss of protein function; they may be germline and heritable or somatically acquired, for example the Philadelphia chromosome [t(9;22) producing the BCR-ABL1 fusion] translocation in chronic myeloid leukaemia.
 
 5. **Trinucleotide-repeat mutations.** These are amplifications of simple tandem repeat sequences of three nucleotides, for example 250 to 4000 CGG repeats in the FMR1 gene in fragile X syndrome (the normal average is 29); they are dynamic.
 
@@ -3653,7 +3652,7 @@ A **mutation** is defined as a permanent change in DNA sequence.
 | **Congenital** | Simply means "born with" |
 
 - Some congenital diseases are not genetic, for example congenital syphilis.
-- Not all genetic diseases are congenital; individuals with Huntington disease begin to manifest their condition in adulthood.
+- Not all genetic diseases are congenital; individuals with Huntington disease [CAG-repeat autosomal dominant neurodegeneration] begin to manifest their condition in adulthood.
 
 
 ## Classify genetic disorders.
@@ -3671,12 +3670,12 @@ A **mutation** is defined as a permanent change in DNA sequence.
 
 | Type | Example |
 |---|---|
-| **Monogenic (Mendelian)** | Marfan syndrome; familial hypercholesterolaemia |
-| **Chromosomal** | Down syndrome (trisomy 21) |
+| **Monogenic (Mendelian)** | Marfan syndrome [inherited fibrillin-1 connective tissue disorder]; familial hypercholesterolaemia |
+| **Chromosomal** | Down syndrome [trisomy 21] |
 | **Complex multigenic** | Type 2 diabetes mellitus; atherosclerosis |
 | **Nonclassical single-gene: trinucleotide-repeat** | Fragile X syndrome |
-| Nonclassical single-gene: mitochondrial gene mutation | Leber hereditary optic neuropathy |
-| **Nonclassical single-gene: genomic imprinting** | Prader-Willi syndrome and Angelman syndrome |
+| Nonclassical single-gene: mitochondrial gene mutation | Leber hereditary optic neuropathy [mitochondrial DNA mutation causing optic nerve degeneration] |
+| **Nonclassical single-gene: genomic imprinting** | Prader-Willi syndrome [imprinting disorder from loss of paternal 15q11-13 with hypotonia and obesity] and Angelman syndrome [imprinting disorder from loss of maternal 15q11-13 with ataxia and seizures] |
 | **Somatically acquired mutation** | PIK3CA-related somatic overgrowth syndromes |
 
 
@@ -3712,17 +3711,17 @@ Exceptions to these basic rules:
 
 - Patients may not have an affected parent if the condition is caused by a new (**de novo**) germline mutation.
 - If a disease markedly reduces reproductive fitness, more cases result from new mutations.
-- New mutations are known to have a propensity to occur in germ cells of relatively older fathers (for example mutations in FGFR2 and FGFR3, which cause Apert syndrome and achondroplasia).
+- New mutations are known to have a propensity to occur in germ cells of relatively older fathers (for example mutations in FGFR2 and FGFR3, which cause Apert syndrome [FGFR2-related craniosynostosis with syndactyly] and achondroplasia).
 - Patients may not have an affected parent if the disease is partially penetrant; this is **incomplete penetrance**, in which some individuals inherit the mutant gene but are phenotypically normal.
 - **Variable expressivity** is when a trait is manifest in all individuals carrying the mutant gene but at differing degrees of severity, for example neurofibromatosis type 1.
-- In some conditions the age at onset is delayed, as in Huntington disease.
+- In some conditions the age at onset is delayed, as in Huntington disease [CAG-repeat autosomal dominant neurodegeneration].
 
 
 ## Two examples of autosomal dominant disorders.
 
 | Disorder | Inheritance |
 |---|---|
-| **Marfan syndrome** | A disorder of connective tissues caused by an inherited defect in fibrillin-1 (FBN1 gene); approximately 75% of cases are familial and transmitted by autosomal dominant inheritance; the remainder are sporadic and arise from de novo mutations |
+| **Marfan syndrome** [inherited fibrillin-1 connective tissue disorder] | A disorder of connective tissues caused by an inherited defect in fibrillin-1 (FBN1 gene); approximately 75% of cases are familial and transmitted by autosomal dominant inheritance; the remainder are sporadic and arise from de novo mutations |
 | **Familial hypercholesterolaemia** | An autosomal dominant disorder caused by mutations in the genes encoding the LDL receptor (85% of cases), the ApoB protein (5% to 10% of cases) or PCSK9 (1% to 2% of cases) |
 
 
@@ -3746,8 +3745,8 @@ Exceptions to these basic rules:
 
 | Disorder | Inheritance |
 |---|---|
-| **Gaucher disease** | An autosomal recessive disorder resulting from mutations in the gene encoding glucocerebrosidase; it is the most common lysosomal storage disorder |
-| **Mucopolysaccharidoses** | All are inherited as autosomal recessive traits except Hunter syndrome, which is an X-linked recessive trait |
+| **Gaucher disease** [glucocerebrosidase deficiency, a lysosomal storage disease] | An autosomal recessive disorder resulting from mutations in the gene encoding glucocerebrosidase; it is the most common lysosomal storage disorder |
+| **Mucopolysaccharidoses** | All are inherited as autosomal recessive traits except Hunter syndrome [X-linked iduronate sulfatase deficiency, mucopolysaccharidosis II], which is an X-linked recessive trait |
 
 
 ## What are the features of autosomal dominant inheritance?
@@ -3760,10 +3759,10 @@ Exceptions to these basic rules:
 
 - Patients may not have an affected parent if the condition is caused by a new (**de novo**) germline mutation.
 - If a disease markedly reduces reproductive fitness, more cases result from new mutations.
-- New mutations are known to have a propensity to occur in germ cells of relatively older fathers (for example mutations in FGFR2 and FGFR3, which cause Apert syndrome and achondroplasia).
+- New mutations are known to have a propensity to occur in germ cells of relatively older fathers (for example mutations in FGFR2 and FGFR3, which cause Apert syndrome [FGFR2-related craniosynostosis with syndactyly] and achondroplasia).
 - **Incomplete penetrance:** some individuals inherit the mutant gene but are phenotypically normal; 50% penetrance indicates that 50% of those who carry the gene express the trait.
 - **Variable expressivity:** the trait is manifest in all individuals carrying the mutant gene but at differing degrees of severity, for example neurofibromatosis type 1.
-- The age at onset may be delayed, as in Huntington disease.
+- The age at onset may be delayed, as in Huntington disease [CAG-repeat autosomal dominant neurodegeneration].
 
 
 ## What are the main features of X-linked recessive inheritance?
@@ -3807,8 +3806,8 @@ Exceptions to these basic rules:
 
 **Examples**
 
-- **Gaucher disease**, from mutations in the gene encoding glucocerebrosidase.
-- **Mucopolysaccharidoses**, all of which are autosomal recessive except Hunter syndrome.
+- **Gaucher disease** [glucocerebrosidase deficiency, a lysosomal storage disease], from mutations in the gene encoding glucocerebrosidase.
+- **Mucopolysaccharidoses**, all of which are autosomal recessive except Hunter syndrome [X-linked iduronate sulfatase deficiency, mucopolysaccharidosis II].
 
 
 ## Types of chromosomal disorders.
@@ -3828,12 +3827,12 @@ They may involve the autosomes or the sex chromosomes.
 
 | Group | Disorder | Chromosomal abnormality |
 |---|---|---|
-| Autosomal | **Down syndrome** | Trisomy 21 |
-| Autosomal | **Edwards syndrome** | Trisomy 18 |
-| Autosomal | **Patau syndrome** | Trisomy 13 |
-| Autosomal | **22q11.2 deletion syndrome** (DiGeorge syndrome and velocardiofacial syndrome) | Small deletion of band q11.2 on the long arm of chromosome 22 |
-| Sex chromosomes | **Klinefelter syndrome** | Two or more X chromosomes and one or more Y chromosomes; classically 47,XXY |
-| Sex chromosomes | **Turner syndrome** | Complete or partial monosomy of the X chromosome; classically 45,X |
+| Autosomal | **Down syndrome** [trisomy 21] | Trisomy 21 |
+| Autosomal | **Edwards syndrome** [trisomy 18] | Trisomy 18 |
+| Autosomal | **Patau syndrome** [trisomy 13] | Trisomy 13 |
+| Autosomal | **22q11.2 deletion syndrome** (DiGeorge syndrome [22q11.2 deletion with thymic and parathyroid hypoplasia] and velocardiofacial syndrome) | Small deletion of band q11.2 on the long arm of chromosome 22 |
+| Sex chromosomes | **Klinefelter syndrome** [47,XXY] | Two or more X chromosomes and one or more Y chromosomes; classically 47,XXY |
+| Sex chromosomes | **Turner syndrome** [45,X monosomy] | Complete or partial monosomy of the X chromosome; classically 45,X |
 
 
 ## Classic karyotype of trisomy 21.
@@ -3848,11 +3847,11 @@ They may involve the autosomes or the sex chromosomes.
 
 | Disorder | Karyotype | Alteration |
 |---|---|---|
-| **Down syndrome** | 47,XX,+21 or 47,XY,+21 | Trisomy 21 |
-| **Edwards syndrome** | Trisomy 18 | Extra copy of chromosome 18 |
-| **Patau syndrome** | Trisomy 13 | Extra copy of chromosome 13 |
-| **Klinefelter syndrome** | 47,XXY in 90% of cases | Extra X chromosome |
-| **Turner syndrome** | 45,X in approximately 57% of cases | Monosomy of the X chromosome |
+| **Down syndrome** [trisomy 21] | 47,XX,+21 or 47,XY,+21 | Trisomy 21 |
+| **Edwards syndrome** [trisomy 18] | Trisomy 18 | Extra copy of chromosome 18 |
+| **Patau syndrome** [trisomy 13] | Trisomy 13 | Extra copy of chromosome 13 |
+| **Klinefelter syndrome** [47,XXY] | 47,XXY in 90% of cases | Extra X chromosome |
+| **Turner syndrome** [45,X monosomy] | 45,X in approximately 57% of cases | Monosomy of the X chromosome |
 
 - Other trisomies involving chromosomes 8, 9, 13, 18 and 22 have been described.
 - Monosomy involving an autosome generally causes loss of too much genetic information to permit live birth or even embryogenesis.
@@ -3866,12 +3865,12 @@ They may involve the autosomes or the sex chromosomes.
 - Atrioventricular septal defects account for 43% of cases.
 - Ventricular septal defects account for 32%.
 - Atrial septal defects account for 19%.
-- Tetralogy of Fallot accounts for 6%.
+- Tetralogy of Fallot [ventricular septal defect, overriding aorta, pulmonary stenosis and right ventricular hypertrophy] accounts for 6%.
 - Cardiac problems are responsible for most of the deaths in infancy and early childhood.
 
 2. **Other congenital malformations**, including atresias of the oesophagus and small bowel, are common.
 3. **Leukaemia:** there is a 20-fold increased risk of precursor B cell acute lymphoblastic leukaemia and a 500-fold increased risk of acute myeloid leukaemias.
-4. **Alzheimer disease:** virtually all patients older than age 40 develop neuropathological changes characteristic of Alzheimer disease.
+4. **Alzheimer disease [progressive dementia with amyloid plaques and neurofibrillary tangles]:** virtually all patients older than age 40 develop neuropathological changes characteristic of Alzheimer disease.
 5. **Infections and autoimmunity:** abnormal immune responses predispose to serious infections, particularly of the lungs, and to thyroid autoimmunity.
 
 
@@ -3913,7 +3912,7 @@ Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and
 
 **Definition**
 
-- **Down syndrome** is the most common chromosomal disorder and a major cause of intellectual disability.
+- **Down syndrome** [trisomy 21] is the most common chromosomal disorder and a major cause of intellectual disability.
 - It is associated with an extra copy of genes on chromosome 21.
 - The incidence in newborns in the United States is about 1 in 700.
 
@@ -3933,7 +3932,7 @@ Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and
 
 - Flat facial profile, oblique palpebral fissures and epicanthic folds, usually evident even at birth.
 - Intellectual disability; some mosaics have normal or near-normal intelligence.
-- Congenital heart disease in approximately 40% of patients, atresias of the oesophagus and small bowel, increased risk of leukaemia, serious infections, thyroid autoimmunity, and Alzheimer disease in virtually all patients older than age 40.
+- Congenital heart disease in approximately 40% of patients, atresias of the oesophagus and small bowel, increased risk of leukaemia, serious infections, thyroid autoimmunity, and Alzheimer disease [progressive dementia with amyloid plaques and neurofibrillary tangles] in virtually all patients older than age 40.
 
 **Diagnosis**
 
@@ -3949,9 +3948,9 @@ Human somatic cells contain 46 chromosomes: 22 homologous pairs of autosomes and
 
 **Definition**
 
-The inactive X chromosome can be seen in the interphase nucleus as a darkly staining small mass in contact with the nuclear membrane, known as the **Barr body**, or **X chromatin**.
+The inactive X chromosome can be seen in the interphase nucleus as a darkly staining small mass in contact with the nuclear membrane, known as the **Barr body** [inactivated X chromosome seen as nuclear chromatin], or **X chromatin**.
 
-**Lyon hypothesis** (Mary Lyon, 1961)
+**Lyon hypothesis** [random inactivation of one X chromosome in females] (Mary Lyon, 1961)
 
 1. Only one of the X chromosomes is genetically active.
 2. The other X chromosome, of either maternal or paternal origin, undergoes **heteropyknosis** and is rendered inactive.
@@ -3974,7 +3973,7 @@ The inactive X chromosome can be seen in the interphase nucleus as a darkly stai
 
 ## 10-year-old boy with very low IQ, flat facial profile, single palmar crease, stunted growth — Probable genetic diagnosis? Haematological malignancy that may occur in future?
 
-**Probable genetic diagnosis:** **Down syndrome (trisomy 21)**.
+**Probable genetic diagnosis:** **Down syndrome [trisomy 21]**.
 
 - The diagnostic clinical features are flat facial profile, oblique palpebral fissures and epicanthic folds.
 - Down syndrome is a leading cause of intellectual disability.
@@ -3988,7 +3987,7 @@ The inactive X chromosome can be seen in the interphase nucleus as a darkly stai
 
 ## Adolescent girl with primary amenorrhoea, webbing of neck, broad chest, underdeveloped breasts — Likely diagnosis? Karyotype?
 
-**Likely diagnosis:** **Turner syndrome**.
+**Likely diagnosis:** **Turner syndrome** [45,X monosomy].
 
 - It results from complete or partial monosomy of the X chromosome and is characterised by hypogonadism in phenotypic females.
 - Turner syndrome is the single most important cause of primary amenorrhoea, accounting for approximately one-third of the cases.
@@ -4003,7 +4002,7 @@ The inactive X chromosome can be seen in the interphase nucleus as a darkly stai
 
 ## A girl has flat facial profile, stunted growth, mental retardation (± simian crease). What is your probable diagnosis?
 
-The probable diagnosis is **Down syndrome (trisomy 21)**.
+The probable diagnosis is **Down syndrome [trisomy 21]**.
 
 - The diagnostic clinical features are flat facial profile, oblique palpebral fissures and epicanthic folds, usually evident even at birth.
 - Down syndrome is a leading cause of intellectual disability.
@@ -4027,7 +4026,7 @@ The probable diagnosis is **Down syndrome (trisomy 21)**.
 
 ## An adolescent girl has primary amenorrhoea, webbed neck, broad chest, underdeveloped breasts. What is the likely diagnosis?
 
-The likely diagnosis is **Turner syndrome**.
+The likely diagnosis is **Turner syndrome** [45,X monosomy].
 
 - It results from complete or partial monosomy of the X chromosome and is characterised by hypogonadism in phenotypic females.
 - Turner syndrome is the single most important cause of primary amenorrhoea, accounting for approximately one-third of the cases.
@@ -4046,7 +4045,7 @@ The likely diagnosis is **Turner syndrome**.
 1. **Karyotyping** for chromosomal disorders.
 
 - Dividing cells are arrested in metaphase with mitotic spindle inhibitors and stained.
-- Chromosomes are identified by G banding (Giemsa stain), with approximately 400 to 800 bands per haploid set.
+- Chromosomes are identified by G banding (Giemsa stain [Romanowsky-type blood stain]), with approximately 400 to 800 bands per haploid set.
 
 2. **Fluorescence in situ hybridisation (FISH)** uses labelled DNA probes that bind to particular chromosome intervals.
 
@@ -4066,7 +4065,7 @@ The likely diagnosis is **Turner syndrome**.
 
 5. **Next-generation sequencing:** targeted sequencing, whole-exome sequencing and whole-genome sequencing.
 6. **Polymorphic markers** (linkage analysis), when the gene responsible is not known or testing for the primary defect is not feasible.
-7. **Epigenetic analysis** of methylation, for example in fragile X syndrome, Prader-Willi syndrome and Angelman syndrome.
+7. **Epigenetic analysis** of methylation, for example in fragile X syndrome, Prader-Willi syndrome [imprinting disorder from loss of paternal 15q11-13 with hypotonia and obesity] and Angelman syndrome [imprinting disorder from loss of maternal 15q11-13 with ataxia and seizures].
 8. **Southern blot analysis** for very large trinucleotide expansions that cannot be amplified by conventional PCR.
 
 
@@ -4077,7 +4076,7 @@ The likely diagnosis is **Turner syndrome**.
 | **Prenatal** | Cells obtained by **amniocentesis**; **chorionic villus** biopsy; **umbilical cord blood**; cell-free foetal DNA in maternal blood (as much as 10% of the free DNA in a pregnant mother's blood is of foetal origin), used as a noninvasive screening test |
 | **Postnatal** | **Peripheral blood** DNA, most commonly, targeted on clinical suspicion |
 
-- A positive noninvasive screening test for Down syndrome is confirmed by conventional karyotyping of cells obtained by sampling of chorionic villi or by amniocentesis.
+- A positive noninvasive screening test for Down syndrome [trisomy 21] is confirmed by conventional karyotyping of cells obtained by sampling of chorionic villi or by amniocentesis.
 - FISH can be performed on prenatal samples and peripheral blood cells.
 
 
@@ -4092,7 +4091,7 @@ The likely diagnosis is **Turner syndrome**.
 
 - Dividing cells are arrested in **metaphase** with mitotic spindle inhibitors (for example N-diacetyl-N-methylcolchicine) and the chromosomes are stained.
 - In a metaphase spread, each chromosome takes the form of two chromatids connected at the centromere.
-- The most useful staining method is the **Giemsa stain**, hence **G banding**; it shows distinctive patterns of alternating light and dark bands.
+- The most useful staining method is the **Giemsa stain** [Romanowsky-type blood stain], hence **G banding**; it shows distinctive patterns of alternating light and dark bands.
 - With standard G banding, approximately 400 to 800 bands per haploid set of chromosomes can be detected.
 - Obtaining the cells in prophase gives elongated chromosomes and as many as 1500 bands per karyotype.
 - This permits identification of each chromosome and roughly delineates breakpoints and other gross alterations.
@@ -4183,8 +4182,8 @@ Hypersensitivity reactions are classified on the basis of the underlying immunol
 | Type | Examples |
 |---|---|
 | **Type I** | Systemic anaphylaxis (for example after penicillin, peanuts, shellfish or bee venom); local reactions such as urticaria, allergic rhinitis (hay fever), asthma, atopic dermatitis and food allergies |
-| **Type II** | Autoimmune haemolytic anaemia, thrombocytopenia and agranulocytosis; transfusion reactions; haemolytic disease of the foetus and newborn; some forms of glomerulonephritis; myasthenia gravis; pernicious anaemia; Graves disease |
-| **Type III** | Serum sickness (the prototype of systemic immune complex disease); systemic lupus erythematosus; the Arthus reaction (local immune complex disease) |
+| **Type II** | Autoimmune haemolytic anaemia, thrombocytopenia and agranulocytosis; transfusion reactions; haemolytic disease of the foetus and newborn; some forms of glomerulonephritis; myasthenia gravis; pernicious anaemia; Graves disease [autoimmune hyperthyroidism] |
+| **Type III** | Serum sickness (the prototype of systemic immune complex disease); systemic lupus erythematosus; the Arthus reaction [local immune complex disease] |
 | **Type IV** | Tuberculin reaction (the classic delayed-type hypersensitivity); contact dermatitis; rheumatoid arthritis; multiple sclerosis; inflammatory bowel disease; type 1 diabetes and viral hepatitis (CD8 positive cytotoxic T lymphocyte injury) |
 
 
@@ -4210,7 +4209,7 @@ Antibodies, most often IgG, react with antigens present on cell surfaces or in t
 
 - In myasthenia gravis, antibodies against acetylcholine receptors block neuromuscular transmission.
 - In pernicious anaemia, antibodies block intrinsic factor.
-- In Graves disease, antibodies against the thyroid-stimulating hormone receptor stimulate the thyroid cells, resulting in hyperthyroidism.
+- In Graves disease [autoimmune hyperthyroidism], antibodies against the thyroid-stimulating hormone receptor stimulate the thyroid cells, resulting in hyperthyroidism.
 
 
 ## What is anaphylactic reaction?
@@ -4251,10 +4250,10 @@ Immunodeficiencies are manifested clinically by **increased infections**, which 
 
 ## Name some autoimmune diseases.
 
-- **Diseases mediated by antibodies:** autoimmune haemolytic anaemia, autoimmune thrombocytopenia, pernicious anaemia, myasthenia gravis, Graves disease and Goodpasture syndrome.
-- Diseases mediated by T cells: type 1 diabetes mellitus, rheumatoid arthritis, multiple sclerosis, systemic sclerosis (scleroderma) and Sjögren syndrome.
+- **Diseases mediated by antibodies:** autoimmune haemolytic anaemia, autoimmune thrombocytopenia, pernicious anaemia, myasthenia gravis, Graves disease [autoimmune hyperthyroidism] and Goodpasture syndrome [anti-glomerular basement membrane disease].
+- Diseases mediated by T cells: type 1 diabetes mellitus, rheumatoid arthritis, multiple sclerosis, systemic sclerosis (scleroderma) and Sjögren syndrome [autoimmune dry eyes and dry mouth].
 - Systemic disease with a diversity of antibodies: systemic lupus erythematosus.
-- Diseases postulated to be autoimmune: inflammatory bowel diseases (Crohn disease and ulcerative colitis), polyarteritis nodosa, inflammatory myopathies, primary biliary cholangitis and autoimmune (chronic active) hepatitis.
+- Diseases postulated to be autoimmune: inflammatory bowel diseases (Crohn disease [transmural granulomatous inflammatory bowel disease] and ulcerative colitis), polyarteritis nodosa, inflammatory myopathies, primary biliary cholangitis and autoimmune (chronic active) hepatitis.
 
 ## Write a short note on autoimmune disease.
 
@@ -4264,7 +4263,7 @@ Immunodeficiencies are manifested clinically by **increased infections**, which 
 
 - **Organ-specific disease.** In type 1 diabetes the autoreactive T cells and antibodies are specific for β cells of the pancreatic islets. In multiple sclerosis autoreactive T cells react against central nervous system myelin.
 - **Systemic disease.** The best example is **systemic lupus erythematosus**, in which a diversity of antibodies directed against DNA, platelets, red cells and protein-phospholipid complexes result in widespread lesions throughout the body. The systemic diseases tend to involve blood vessels and connective tissues and are often called collagen vascular diseases or connective tissue diseases.
-- **In between.** In Goodpasture syndrome, antibodies to basement membranes of lung and kidney induce lesions in these organs.
+- **In between.** In Goodpasture syndrome [anti-glomerular basement membrane disease], antibodies to basement membranes of lung and kidney induce lesions in these organs.
 
 **Self tolerance.**
 
@@ -4280,7 +4279,7 @@ Immunodeficiencies are manifested clinically by **increased infections**, which 
 **Susceptibility genes and environmental triggers.**
 
 - **HLA genes** make the greatest contribution among the susceptibility genes; the most striking association is between ankylosing spondylitis and HLA-B27. Many autoimmune diseases are associated with HLA class II alleles.
-- **Non-MHC genes** include PTPN22 (rheumatoid arthritis, type 1 diabetes), NOD2 (Crohn disease) and the IL-2 receptor gene CD25 (type 1 diabetes, multiple sclerosis). Single-gene defects in AIRE, CTLA4, PD1, FAS, FASL and IL2 and its receptor CD25 result in autoimmunity.
+- **Non-MHC genes** include PTPN22 (rheumatoid arthritis, type 1 diabetes), NOD2 (Crohn disease [transmural granulomatous inflammatory bowel disease]) and the IL-2 receptor gene CD25 (type 1 diabetes, multiple sclerosis). Single-gene defects in AIRE, CTLA4, PD1, FAS, FASL and IL2 and its receptor CD25 result in autoimmunity.
 - **Infections.** Infections upregulate costimulators on antigen-presenting cells, which may break anergy. Some microbes carry antigens that share amino acid sequences with self antigens (**molecular mimicry**), as in rheumatic heart disease. Viruses such as EBV and HIV cause polyclonal B-cell activation. Tissue injury releases and modifies self antigens, and infections induce cytokines that recruit potentially self-reactive lymphocytes.
 - **Other factors.** The gut and skin microbiome may influence the balance of effector and regulatory T cells.
 
@@ -4288,7 +4287,7 @@ Immunodeficiencies are manifested clinically by **increased infections**, which 
 
 ## A 30y lady has diffuse thyroid enlargement, exophthalmos, high T3/T4. What immunological mechanisms contribute to its development?
 
-The features are those of **Graves disease**, an autoimmune disorder: hyperthyroidism with diffuse enlargement of the gland, and infiltrative ophthalmopathy with exophthalmos. It has a peak incidence between 20 and 50 years of age, and females are affected 5 to 10 times more frequently than males.
+The features are those of **Graves disease** [autoimmune hyperthyroidism], an autoimmune disorder: hyperthyroidism with diffuse enlargement of the gland, and infiltrative ophthalmopathy with exophthalmos. It has a peak incidence between 20 and 50 years of age, and females are affected 5 to 10 times more frequently than males.
 
 1. **Autoantibodies against the TSH receptor.** Graves disease is characterised by the production of autoantibodies against multiple thyroid proteins, most importantly the **TSH receptor**. The most common antibody, **thyroid-stimulating immunoglobulin (TSI)**, is found in about 90% of patients and is almost never seen in other autoimmune diseases of the thyroid.
 2. **Antibody-mediated stimulation of cell function.** TSI binds to the TSH receptor and mimics its actions, stimulating adenyl cyclase and increasing the release of thyroid hormones, which explains the high T3 and T4. The thyroid epithelial cells are stimulated, leading to diffuse hypertrophy and hyperplasia and the enlarged gland. This is the converse of antibodies that block receptor function, as in myasthenia gravis.
@@ -4353,7 +4352,7 @@ In the modern era, a neoplasm is defined as a disorder of **cell growth** that i
 | **Glandular epithelium** | Adenoma, papilloma | Adenocarcinoma, cystadenocarcinoma |
 | **Melanocytes** | Naevus | Melanoma |
 | **Kidney and liver** | Renal tubular adenoma, hepatic adenoma | Renal cell carcinoma, hepatocellular carcinoma |
-| **Mixed tumours** | Pleomorphic adenoma | Malignant mixed tumour of salivary gland origin, Wilms tumour |
+| **Mixed tumours** | Pleomorphic adenoma | Malignant mixed tumour of salivary gland origin, Wilms tumour [nephroblastoma, a childhood renal tumour] |
 | **Totipotential cells** | Mature teratoma (dermoid cyst) | Immature teratoma, teratocarcinoma |
 
 ## What is cancer?
@@ -4486,7 +4485,7 @@ Anaplasia is the lack of differentiation. Anaplastic cells show the following:
 
 **Dysplasia** literally means disordered growth. It is encountered principally in epithelial cells and is a premalignant change.
 
-The textbook describes dysplasia by severity:
+Dysplasia is graded by severity:
 
 - **Mild dysplasia:** mutations associated with full-blown cancer may already be present.
 - **Moderately severe dysplasia:** may be completely reversible with removal of the inciting causes.
@@ -4518,7 +4517,7 @@ Carcinoma in situ may be seen in the:
 2. **Mutations** associated with full-blown cancer may be present even in "mild" dysplasia.
 3. **Progression to cancer is not inevitable.** With removal of the inciting causes, moderately severe dysplasia may be completely reversible.
 4. **Severe dysplasia** involving the full thickness of the epithelium without breaching the basement membrane is carcinoma in situ, which unless treated has a high probability of progression to invasive cancer. It may persist for years before it becomes invasive.
-5. **Detection.** The Pap smear enables detection of precursor lesions and early curable cancers of the cervix.
+5. **Detection.** The Pap smear [cervical cytology screening] enables detection of precursor lesions and early curable cancers of the cervix.
 
 ## Write down the features of dysplasia.
 
@@ -4638,7 +4637,7 @@ All cancers display eight fundamental changes in cell physiology, which are the 
 
 1. **Self-sufficiency in growth signals.** Tumours can proliferate without external stimuli, usually because of oncogene activation.
 2. **Insensitivity to growth-inhibitory signals.** Tumours may not respond to molecules that inhibit proliferation of normal cells, typically because of inactivation of tumour suppressor genes.
-3. **Altered cellular metabolism.** Tumour cells switch to aerobic glycolysis, called the Warburg effect, which enables synthesis of the macromolecules and organelles needed for rapid growth.
+3. **Altered cellular metabolism.** Tumour cells switch to aerobic glycolysis, called the Warburg effect [aerobic glycolysis in cancer cells], which enables synthesis of the macromolecules and organelles needed for rapid growth.
 4. **Evasion of apoptosis.** Tumours are resistant to programmed cell death.
 5. **Limitless replicative potential (immortality).** Tumours have unrestricted proliferative capacity, a stem cell–like property that avoids cellular senescence and mitotic catastrophe.
 6. **Sustained angiogenesis.** Tumours cannot grow without a vascular supply, so they must induce angiogenesis.
@@ -4665,7 +4664,7 @@ Two **enabling characteristics** accelerate the acquisition of these changes: ge
 | KRAS | Point mutation | Colon, lung and pancreatic tumours |
 | BRAF | Point mutation | Melanomas, leukaemias, colon carcinoma |
 | ABL | Translocation (BCR-ABL) | Chronic myeloid leukaemia, acute lymphoblastic leukaemia |
-| MYC | Translocation | Burkitt lymphoma |
+| MYC | Translocation | Burkitt lymphoma [high-grade B-cell lymphoma with MYC translocation] |
 | NMYC | Amplification | Neuroblastoma |
 | CDK4 | Amplification or point mutation | Glioblastoma, melanoma, sarcoma |
 | Cyclin D1 (CCND1) | Translocation or amplification | Mantle cell lymphoma, breast and oesophageal cancers |
@@ -4675,20 +4674,20 @@ Two **enabling characteristics** accelerate the acquisition of these changes: ge
 | Tumour suppressor gene | Familial syndrome |
 |---|---|
 | RB | Familial retinoblastoma |
-| TP53 | Li-Fraumeni syndrome |
+| TP53 | Li-Fraumeni syndrome [inherited TP53 mutation cancer syndrome] |
 | APC | Familial adenomatous polyposis |
 | NF1 | Neurofibromatosis type 1 |
-| PTEN | Cowden syndrome |
+| PTEN | Cowden syndrome [PTEN hamartoma tumour syndrome] |
 | CDKN2A | Familial melanoma |
-| VHL | von Hippel-Lindau syndrome |
-| STK11 | Peutz-Jeghers syndrome |
+| VHL | von Hippel-Lindau syndrome [inherited VHL tumour syndrome] |
+| STK11 | Peutz-Jeghers syndrome [hamartomatous gastrointestinal polyps with mucocutaneous pigmentation] |
 | CDH1 (E-cadherin) | Familial gastric cancer |
 | BRCA1 and BRCA2 | Familial breast and ovarian cancer |
-| WT1 | Familial Wilms tumour |
+| WT1 | Familial Wilms tumour [nephroblastoma, a childhood renal tumour] |
 
 ## What is Li-Fraumeni syndrome?
 
-**Li-Fraumeni syndrome** occurs in individuals who inherit one mutated copy of the tumour suppressor gene **TP53** (on chromosome 17p13.1).
+**Li-Fraumeni syndrome** [inherited TP53 mutation cancer syndrome] occurs in individuals who inherit one mutated copy of the tumour suppressor gene **TP53** (on chromosome 17p13.1).
 
 - Only one additional hit in the remaining normal allele is needed to abrogate TP53 function.
 - They have a **25-fold** greater chance of developing a malignant tumour by age 50 than the general population.
@@ -4769,8 +4768,8 @@ Further proliferation induces additional mutations and the emergence of a malign
 | **Lichen sclerosus** | Vulval squamous cell carcinoma |
 | **Pancreatitis** | Pancreatic carcinoma |
 | **Chronic cholecystitis** | Gallbladder carcinoma |
-| **Reflux oesophagitis, Barrett oesophagus** | Oesophageal carcinoma |
-| **Sjögren syndrome, Hashimoto thyroiditis** | Extranodal marginal zone (MALT) lymphoma |
+| **Reflux oesophagitis, Barrett oesophagus** [intestinal metaplasia of the lower oesophagus] | Oesophageal carcinoma |
+| **Sjögren syndrome [autoimmune dry eyes and dry mouth], Hashimoto thyroiditis** [autoimmune thyroiditis causing hypothyroidism] | Extranodal marginal zone (MALT) lymphoma |
 | **Opisthorchis (liver fluke) cholangitis** | Cholangiocarcinoma, colon carcinoma |
 | **Gastritis and ulcers (Helicobacter pylori)** | Gastric adenocarcinoma, MALT lymphoma |
 | Hepatitis (hepatitis B and C viruses) | Hepatocellular carcinoma |
@@ -4784,10 +4783,10 @@ Further proliferation induces additional mutations and the emergence of a malign
 |---|---|
 | **HTLV-1** (RNA retrovirus) | Adult T-cell leukaemia/lymphoma |
 | **Human papillomavirus** types 16 and 18 | Squamous cell carcinomas of the cervix, anogenital region and head and neck (oropharynx) |
-| **Epstein-Barr virus** | Burkitt lymphoma, B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma |
+| **Epstein-Barr virus** [herpesvirus that causes infectious mononucleosis] | Burkitt lymphoma [high-grade B-cell lymphoma with MYC translocation], B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] |
 | Hepatitis B and C viruses | Hepatocellular carcinoma (70 to 85% worldwide) |
-| **Human herpesvirus 8** | Kaposi sarcoma |
-| **Merkel cell polyomavirus** | Merkel cell carcinoma |
+| **Human herpesvirus 8** | Kaposi sarcoma [HHV-8-associated vascular tumour] |
+| **Merkel cell [neuroendocrine touch-receptor cell of the epidermis] polyomavirus** | Merkel cell carcinoma |
 | **Helicobacter pylori** | Gastric adenocarcinoma, gastric B-cell lymphoma (MALToma) |
 
 ## What do you mean by oncogene?
@@ -4806,7 +4805,7 @@ Further proliferation induces additional mutations and the emergence of a malign
 | KRAS | Point mutation | Colon, lung and pancreatic tumours |
 | BRAF | Point mutation | Melanomas, leukaemias, colon carcinoma |
 | ABL | Translocation (BCR-ABL) | Chronic myeloid leukaemia, acute lymphoblastic leukaemia |
-| MYC | Translocation | Burkitt lymphoma |
+| MYC | Translocation | Burkitt lymphoma [high-grade B-cell lymphoma with MYC translocation] |
 | NMYC | Amplification | Neuroblastoma |
 
 ## How does a cell become malignant?
@@ -4853,10 +4852,10 @@ Together these changes produce the hallmarks of cancer, including self-sufficien
 | APC | Familial colonic polyps and carcinomas | Carcinomas of stomach, colon, pancreas; melanoma |
 | NF1 | Neurofibromatosis type 1 | Neuroblastoma, juvenile myeloid leukaemia |
 | RB | Familial retinoblastoma | Retinoblastoma, osteosarcoma, carcinomas of breast and colon |
-| TP53 | Li-Fraumeni syndrome | Most human cancers |
+| TP53 | Li-Fraumeni syndrome [inherited TP53 mutation cancer syndrome] | Most human cancers |
 | BRCA1, BRCA2 | Familial breast and ovarian carcinoma | Rare |
-| VHL | Von Hippel-Lindau syndrome | Renal cell carcinoma |
-| WT1 | Familial Wilms tumour | Wilms tumour |
+| VHL | Von Hippel-Lindau syndrome [inherited VHL tumour syndrome] | Renal cell carcinoma |
+| WT1 | Familial Wilms tumour [nephroblastoma, a childhood renal tumour] | Wilms tumour |
 
 ## Briefly state the role of environmental factors in cancer development.
 
@@ -4880,7 +4879,7 @@ About 15% of all cancers worldwide are caused directly or indirectly by infectio
 - It contains no recognisable oncogene, but its genome has the genes **tax** and **HBZ**, whose products alter transcription of host genes and interact with host signalling proteins.
 - Proviral integration sites are clonal, so infection occurred before transformation.
 
-**Oncogenic DNA viruses.** Five human DNA viruses are implicated: HPV, EBV, HBV, Merkel cell polyomavirus and human herpesvirus 8 (Kaposi sarcoma herpesvirus). The hepatitis C virus, although not a DNA virus, is also associated with cancer.
+**Oncogenic DNA viruses.** Five human DNA viruses are implicated: HPV, EBV, HBV, Merkel cell [neuroendocrine touch-receptor cell of the epidermis] polyomavirus and human herpesvirus 8 (Kaposi sarcoma [HHV-8-associated vascular tumour] herpesvirus). The hepatitis C virus, although not a DNA virus, is also associated with cancer.
 
 - **HPV.** High-risk types 16 and 18 cause squamous cell carcinomas of the cervix, anogenital region and head and neck. Types 1, 2, 4 and 7 cause benign warts, and types 6 and 11 genital warts of low malignant potential.
 
@@ -4890,10 +4889,10 @@ About 15% of all cancers worldwide are caused directly or indirectly by infectio
 |---|---|
 | **HTLV-1** (RNA retrovirus) | Adult T-cell leukaemia/lymphoma |
 | **Human papillomavirus** types 16 and 18 | Squamous cell carcinomas of the cervix, anogenital region and head and neck (oropharynx) |
-| **Epstein-Barr virus** | Burkitt lymphoma, B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma |
+| **Epstein-Barr virus** [herpesvirus that causes infectious mononucleosis] | Burkitt lymphoma [high-grade B-cell lymphoma with MYC translocation], B-cell lymphomas in immunosuppressed patients, nasopharyngeal carcinoma, Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] |
 | Hepatitis B and C viruses | Hepatocellular carcinoma (70 to 85% worldwide) |
-| **Human herpesvirus 8** | Kaposi sarcoma |
-| **Merkel cell polyomavirus** | Merkel cell carcinoma |
+| **Human herpesvirus 8** | Kaposi sarcoma [HHV-8-associated vascular tumour] |
+| **Merkel cell [neuroendocrine touch-receptor cell of the epidermis] polyomavirus** | Merkel cell carcinoma |
 | **Helicobacter pylori** | Gastric adenocarcinoma, gastric B-cell lymphoma (MALToma) |
 
 ## Write a short note on tumour angiogenesis.
@@ -4924,7 +4923,7 @@ Cancers are **clonal** in origin: early on, all the cells are genetically identi
 1. **Dysplasia and carcinoma in situ.** Dysplasia is a premalignant change, and severe dysplasia that does not breach the basement membrane is carcinoma in situ. Progression to cancer is not inevitable.
 2. **Hyperplasia**, often from chronic exposure to trophic factors, for example endometrial hyperplasia caused by sustained oestrogenic stimulation.
 3. **Benign neoplasms.** A classic example is the colonic villous adenoma, which progresses to cancer in about 50% of cases if left untreated. Most benign tumours transform rarely (uterine leiomyomas, pleomorphic adenoma) and others not at all (lipomas).
-4. **Metaplasia**, for example Barrett oesophagus. Not all metaplastic epithelium becomes dysplastic.
+4. **Metaplasia**, for example Barrett oesophagus [intestinal metaplasia of the lower oesophagus]. Not all metaplastic epithelium becomes dysplastic.
 
 **Chronic inflammatory conditions** also predispose to cancer, for example inflammatory bowel disease (colorectal carcinoma), chronic hepatitis (hepatocellular carcinoma), reflux oesophagitis and Barrett oesophagus (oesophageal carcinoma), and chronic cervicitis from HPV (cervical carcinoma).
 
@@ -4940,8 +4939,17 @@ Any tumour, even a benign one, may cause morbidity and mortality.
 - Erosive growth or pressure on skin or mucosa may cause ulceration, secondary infection and bleeding, for example melaena and haematuria in neoplasms of the gut and urinary tract.
 
 2. **Hormonal effects.** Neoplasms of endocrine glands may produce hormones. This is more typical of benign tumours. For example, a benign β-cell adenoma of the pancreatic islets less than 1 cm in diameter may produce enough insulin to cause fatal hypoglycaemia.
-3. **Cancer cachexia.**
-4. **Paraneoplastic syndromes.**
+3. **Cancer cachexia.** A hypercatabolic state with loss of muscle mass (with or without loss of fat) that diet alone does not explain.
+
+- It occurs in about **50%** of cancer patients, most often in advanced gastrointestinal, pancreatic and lung cancers, and accounts for about **30%** of cancer deaths.
+- It is marked by extreme weight loss, fatigue, muscle atrophy, anaemia, anorexia and oedema.
+- Mediators include **TNF, IL-1 and IL-6**, which drive muscle proteolysis, and **GDF-15**, which suppresses appetite.
+
+4. **Paraneoplastic syndromes.** Symptom complexes in patients with cancer that tumour spread, or hormones normally made by the tissue of origin, do not explain.
+
+- They occur in about **10%** of patients with cancer.
+- They may be the earliest sign of an occult tumour, may be lethal, and may mimic metastatic disease.
+- Examples include Cushing syndrome [glucocorticoid excess] from ectopic ACTH in small cell carcinoma of the lung, hypercalcaemia from parathyroid hormone-related protein, hypoglycaemia, polycythaemia from erythropoietin, and venous thrombosis (Trousseau phenomenon [migratory thrombophlebitis associated with cancer]).
 
 ## What is cancer cachexia?
 
@@ -4977,7 +4985,7 @@ They are important to recognise because they:
 
 | Syndrome | Associated cancer | Mechanism |
 |---|---|---|
-| **Cushing syndrome** | Small cell carcinoma of lung | ACTH or ACTH-like substance |
+| **Cushing syndrome** [glucocorticoid excess] | Small cell carcinoma of lung | ACTH or ACTH-like substance |
 | Syndrome of inappropriate antidiuretic hormone secretion | Small cell carcinoma of lung, intracranial neoplasms | Antidiuretic hormone or atrial natriuretic hormones |
 | **Hypercalcaemia** | Squamous cell carcinoma of lung, breast carcinoma | Parathyroid hormone–related protein, TGF-α, TNF, IL-1 |
 | **Hypoglycaemia** | Ovarian carcinoma | Insulin or insulin-like substance |
@@ -4986,10 +4994,10 @@ They are important to recognise because they:
 | **Acanthosis nigricans** | Gastric carcinoma | Immunologic; secretion of epidermal growth factor |
 | **Dermatomyositis** | Bronchogenic carcinoma | Immunologic |
 | Hypertrophic osteoarthropathy and clubbing of the fingers | Bronchogenic carcinoma | Unknown |
-| **Venous thrombosis (Trousseau phenomenon)** | Pancreatic carcinoma, bronchogenic carcinoma | Tumour products that activate clotting |
+| **Venous thrombosis (Trousseau phenomenon [migratory thrombophlebitis associated with cancer])** | Pancreatic carcinoma, bronchogenic carcinoma | Tumour products that activate clotting |
 | **Disseminated intravascular coagulation** | Acute promyelocytic leukaemia, prostatic carcinoma | Tumour products that activate clotting |
 | **Red cell aplasia** | Thymic neoplasms | Immunologic |
-| **Nonbacterial thrombotic endocarditis** | Advanced mucin-secreting adenocarcinomas | Not specified in the textbook |
+| **Nonbacterial thrombotic endocarditis** | Advanced mucin-secreting adenocarcinomas | Mechanism not established |
 
 ## Grading of cancer.
 
@@ -5040,8 +5048,8 @@ The most common solid neoplasms of childhood are **soft tissue tumours of mesenc
 
 - The most frequent childhood cancers arise in the **haematopoietic system, nervous tissue** (central and sympathetic nervous system, adrenal medulla and retina), **soft tissue, bone and kidney**. In adults the common sites are skin, lung, breast, prostate and colon.
 - **Leukaemia** is the most common childhood cancer. Because it is highly curable, brain tumours and leukaemia each account for about 25% of deaths.
-- Many malignant non-haematopoietic childhood tumours look primitive (embryonal), with sheets of small round cells. They are often named with the suffix **-blastoma**, for example nephroblastoma (**Wilms tumour**), hepatoblastoma and **neuroblastoma**.
-- Because of this appearance they are collectively called **small round blue cell tumours**: neuroblastoma, Wilms tumour, lymphoma, rhabdomyosarcoma, Ewing sarcoma, medulloblastoma and retinoblastoma.
+- Many malignant non-haematopoietic childhood tumours look primitive (embryonal), with sheets of small round cells. They are often named with the suffix **-blastoma**, for example nephroblastoma (**Wilms tumour** [nephroblastoma, a childhood renal tumour]), hepatoblastoma and **neuroblastoma**.
+- Because of this appearance they are collectively called **small round blue cell tumours**: neuroblastoma, Wilms tumour, lymphoma, rhabdomyosarcoma, Ewing sarcoma [small round blue cell bone tumour with t(11;22)], medulloblastoma and retinoblastoma.
 
 | 0–4 years | 5–9 years | 10–14 years |
 |---|---|---|
@@ -5050,7 +5058,7 @@ The most common solid neoplasms of childhood are **soft tissue tumours of mesenc
 | Neuroblastoma | Hepatocellular neoplasm | Soft tissue sarcomas |
 | Wilms tumour | Soft tissue sarcomas | Ewing sarcoma |
 | Hepatoblastoma | Ewing sarcoma | Osteogenic sarcoma |
-| Soft tissue sarcomas (especially rhabdomyosarcoma) | Central nervous system tumours | Lymphoma, including Hodgkin lymphoma |
+| Soft tissue sarcomas (especially rhabdomyosarcoma) | Central nervous system tumours | Lymphoma, including Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] |
 | Teratoma | Lymphoma | Thyroid carcinoma |
 | Central nervous system tumours | | |
 
@@ -5082,8 +5090,6 @@ Methods to quantify the probable clinical aggressiveness of a neoplasm (**grade*
 
 ## Enumerate common cancers in males and females of the Bangladeshi population.
 
-The site textbook does not cover cancer in Bangladesh. This answer follows the IARC GLOBOCAN 2022 estimates as reported in Bangladesh (see the build log for sources).
-
 | Males | Females |
 |---|---|
 | **Lung** | Breast |
@@ -5101,7 +5107,7 @@ The laboratory diagnosis of cancer is not difficult in most instances, because m
 1. **Sampling approaches.** Excision or biopsy, needle aspiration, and cytologic smears. The specimen is promptly placed in a fixative (usually formalin).
 2. **Frozen section.** A quick-frozen section allows histologic evaluation within minutes. It is used to determine the nature of a mass lesion, to check that the margins of an excised cancer are clear, and to decide what further studies are needed.
 3. **Fine-needle aspiration.** A small-bore needle aspirates cells and fluid, which are spread on a slide, stained and examined. It is useful for palpable lesions of the breast, thyroid and lymph nodes, and with imaging guidance for deep structures such as pelvic lymph nodes and the pancreas.
-4. **Cytologic smears.** Used most widely to screen for carcinoma of the cervix (Pap smear). Other specimens are urine, cerebrospinal fluid, pleural effusions and bronchial washes.
+4. **Cytologic smears.** Used most widely to screen for carcinoma of the cervix (Pap smear [cervical cytology screening]). Other specimens are urine, cerebrospinal fluid, pleural effusions and bronchial washes.
 5. **Immunohistochemistry.** Antibody staining of tissue sections to categorise undifferentiated tumours, find the site of origin of metastases, and detect molecules of prognostic or therapeutic value (for example oestrogen and progesterone receptors and HER2).
 6. **Flow cytometry.** Measures several cell characteristics on cells in suspension. It is used mainly for leukaemias and lymphomas.
 7. **Molecular diagnostics and cytogenetics.** Used for diagnosis, prognosis, detection of minimal residual disease, diagnosis of hereditary predisposition, and guiding targeted therapy.
@@ -5120,7 +5126,7 @@ It is less invasive and more quickly done than needle biopsy, and it avoids surg
 
 ## What do you mean by biopsy?
 
-A **biopsy** is the removal of a sample of tissue from a living patient for microscopic examination, to establish a diagnosis. (Outside source: the site textbook lists biopsy as a sampling approach but does not define it.)
+A **biopsy** is the removal of a sample of tissue from a living patient for microscopic examination, to establish a diagnosis.
 
 - It is one of the sampling approaches for the diagnosis of tumours, along with needle aspiration and cytologic smears.
 - The specimen must be **adequate, representative and properly preserved**.
@@ -5129,8 +5135,6 @@ A **biopsy** is the removal of a sample of tissue from a living patient for micr
 - Part of the tissue may be set aside for other studies such as cytogenetics, flow cytometry and molecular diagnostics.
 
 ## Types of biopsy.
-
-The site textbook names the sampling approaches (excision or biopsy, needle aspiration and cytologic smears) but does not classify biopsies. The types below come from an outside source (see the build log).
 
 1. **Excisional biopsy.** The entire tumour is removed with some surrounding tissue.
 2. **Incisional biopsy.** Only a portion of the lesion is removed.
@@ -5156,7 +5160,7 @@ The laboratory diagnosis of cancer is not difficult in most instances, because m
 1. **Sampling approaches.** Excision or biopsy, needle aspiration, and cytologic smears. The specimen is promptly placed in a fixative (usually formalin).
 2. **Frozen section.** A quick-frozen section allows histologic evaluation within minutes. It is used to determine the nature of a mass lesion, to check that the margins of an excised cancer are clear, and to decide what further studies are needed.
 3. **Fine-needle aspiration.** A small-bore needle aspirates cells and fluid, which are spread on a slide, stained and examined. It is useful for palpable lesions of the breast, thyroid and lymph nodes, and with imaging guidance for deep structures such as pelvic lymph nodes and the pancreas.
-4. **Cytologic smears.** Used most widely to screen for carcinoma of the cervix (Pap smear). Other specimens are urine, cerebrospinal fluid, pleural effusions and bronchial washes.
+4. **Cytologic smears.** Used most widely to screen for carcinoma of the cervix (Pap smear [cervical cytology screening]). Other specimens are urine, cerebrospinal fluid, pleural effusions and bronchial washes.
 5. **Immunohistochemistry.** Antibody staining of tissue sections to categorise undifferentiated tumours, find the site of origin of metastases, and detect molecules of prognostic or therapeutic value (for example oestrogen and progesterone receptors and HER2).
 6. **Flow cytometry.** Measures several cell characteristics on cells in suspension. It is used mainly for leukaemias and lymphomas.
 7. **Molecular diagnostics and cytogenetics.** Used for diagnosis, prognosis, detection of minimal residual disease, diagnosis of hereditary predisposition, and guiding targeted therapy.
@@ -5196,7 +5200,7 @@ The laboratory diagnosis of cancer is not difficult in most instances, because m
 Cancer cells have lowered cohesiveness and show a range of morphologic changes called anaplasia, so single cells or small clumps can be examined for the features of malignancy. Two techniques are used.
 
 1. **Cytologic smears (exfoliative cytology).** Cells shed into fluids or from easily accessible surfaces are spread on a slide and examined.
-   - Used most widely to screen for carcinoma of the cervix and its precursor lesions (Pap smear).
+   - Used most widely to screen for carcinoma of the cervix and its precursor lesions (Pap smear [cervical cytology screening]).
    - Other specimens: urine, cerebrospinal fluid, pleural effusions and bronchial washes.
 2. **Fine-needle aspiration cytology.** A small-bore needle aspirates cells and fluid from a palpable or imaging-guided lesion. The cells are spread on a slide, stained and examined.
 
@@ -5206,7 +5210,7 @@ Cytology allows differentiation among **normal, dysplastic and malignant cells**
 
 **Exfoliative cytology** is the examination of cytologic smears made from cells shed into fluids or from easily accessible surfaces, to detect cancer.
 
-- It is used most widely to screen for carcinoma of the cervix and its precursor lesions (**Papanicolaou or Pap smear**). It is suitable for any suspected malignancy in which tumour cells are shed into fluids or are easily accessible.
+- It is used most widely to screen for carcinoma of the cervix and its precursor lesions (**Papanicolaou [cervical cytology screening] or Pap smear** [cervical cytology screening]). It is suitable for any suspected malignancy in which tumour cells are shed into fluids or are easily accessible.
 - **Specimens** commonly examined: urine, cerebrospinal fluid, pleural effusions and bronchial washes.
 - **Basis.** Cancer cells have lowered cohesiveness and show anaplasia (pleomorphic, hyperchromatic nuclei), so shed cells can be judged for their origin from a tumour.
 - **Limitation.** Judgement rests on individual cells or at most a clump of cells, without the supporting evidence of loss of orientation of one cell to another or, most importantly, evidence of invasion.
@@ -5233,7 +5237,7 @@ Clinical data are invaluable for accurate pathologic diagnosis, but clinicians o
 
 ## What is frozen section?
 
-A **frozen section** is a "quick-frozen section" diagnosis, in which tissue is frozen and sectioned so that it can be examined histologically **within minutes**, usually during an operation. (The textbook does not define frozen section; this description follows its account.)
+A **frozen section** is a "quick-frozen section" diagnosis, in which tissue is frozen and sectioned so that it can be examined histologically **within minutes**, usually during an operation.
 
 - With proper training it is highly accurate.
 - It does not give the superior morphologic detail of standard histology, so the best practice in many instances is to await the results of **permanent sections**, to avoid inadequate or unnecessary surgery.
@@ -5250,8 +5254,6 @@ A quick-frozen section is sometimes desirable for the following.
 **Limitation.** It permits evaluation within minutes, but the superior morphologic detail of standard histology is needed in many instances, for example when radical surgery such as amputation of an extremity may be indicated. Permanent sections are then awaited.
 
 ## What are the common fixatives used for histo- and cytopathological examination?
-
-The site textbook names only one fixative: **formalin solution**, into which at least part of the specimen is promptly immersed. The others below come from outside sources (see the build log).
 
 | Fixative | Notes |
 |---|---|
@@ -5333,7 +5335,7 @@ The site textbook names only one fixative: **formalin solution**, into which at 
 |---|---|---|
 | Personal behaviour | Tobacco, alcohol, drugs of abuse, diet | Lung and other cancers, COPD, atherosclerosis; cirrhosis, pancreatitis; malnutrition and obesity |
 | Air pollution | Ozone, sulphur dioxide, particulates, carbon monoxide; indoors, tobacco smoke, radon, formaldehyde, biomass smoke | Lung inflammation, asthma attacks, lung cancer, carbon monoxide poisoning |
-| Heavy metals | Lead, mercury, arsenic, cadmium | Anaemia and neuropathy (lead), Minamata disease (mercury), skin changes and cancers (arsenic), lung and kidney damage (cadmium) |
+| Heavy metals | Lead, mercury, arsenic, cadmium | Anaemia and neuropathy (lead), Minamata disease [mercury], skin changes and cancers (arsenic), lung and kidney damage (cadmium) |
 | Occupational exposures | Organic solvents, polycyclic hydrocarbons, vinyl chloride, asbestos, silica, coal dust | Leukaemia (benzene), angiosarcoma of the liver, pneumoconioses, lung cancer |
 | Drugs | Adverse drug reactions, drugs of abuse | Organ injury |
 | Physical agents | Thermal injury (burns, hyperthermia, hypothermia), electrical injury, ionising radiation | Burns, radiation injury and cancer |
@@ -5466,7 +5468,7 @@ Quitting reduces the risk, but the excess risk of lung cancer persists for decad
 
 1. **Liver.** The main site of chronic injury: fatty change, **alcoholic hepatitis** and **cirrhosis**, which leads to portal hypertension and raises the risk of hepatocellular carcinoma.
 2. **Gastrointestinal tract.** Massive, sometimes fatal bleeding from gastritis, gastric ulcer or oesophageal varices.
-3. **Nervous system.** Thiamine deficiency causes peripheral neuropathy and **Wernicke-Korsakoff syndrome**. Cerebral atrophy, cerebellar degeneration and optic neuropathy may occur.
+3. **Nervous system.** Thiamine deficiency causes peripheral neuropathy and **Wernicke-Korsakoff syndrome** [thiamine-deficiency encephalopathy with amnesia]. Cerebral atrophy, cerebellar degeneration and optic neuropathy may occur.
 4. **Cardiovascular system.** Alcoholic cardiomyopathy, hypertension, and a lower HDL level with more coronary heart disease.
 5. **Pancreatitis**, acute and chronic.
 6. **Foetus.** **Foetal alcohol syndrome**: microcephaly, growth retardation and facial abnormalities, with reduced mental function later.
@@ -5524,8 +5526,6 @@ In **primary malnutrition** one or more dietary components are missing. **Second
 
 ## Common nutritional disorders of Bangladesh.
 
-The site textbook does not cover Bangladesh specifically. The disorders below come from outside sources (see the build log), and each is described in the textbook.
-
 1. **Protein-energy malnutrition.** Stunting, wasting and underweight in children, with marasmus and kwashiorkor at the severe end.
 2. **Vitamin A deficiency.** Night blindness and xerophthalmia in children.
 3. **Iron deficiency anaemia.** Common in children and in women, including pregnant and lactating women.
@@ -5569,9 +5569,9 @@ PEM results from dietary intake of protein and calories that is inadequate to me
 
 ## Effects of vitamin A deficiency.
 
-Vitamin A deficiency occurs worldwide because of primary malnutrition and in conditions that cause malabsorption of fats, such as coeliac disease, Crohn disease and colitis.
+Vitamin A deficiency occurs worldwide because of primary malnutrition and in conditions that cause malabsorption of fats, such as coeliac disease, Crohn disease [transmural granulomatous inflammatory bowel disease] and colitis.
 
-1. **Eyes.** Night blindness is one of the earliest manifestations, because vitamin A is a component of rhodopsin. Persistent deficiency causes **xerophthalmia**: dryness of the conjunctiva (xerosis), **Bitot spots** (plaques of keratin debris), erosion of the cornea, **keratomalacia** (softening and destruction of the cornea) and blindness.
+1. **Eyes.** Night blindness is one of the earliest manifestations, because vitamin A is a component of rhodopsin. Persistent deficiency causes **xerophthalmia**: dryness of the conjunctiva (xerosis), **Bitot spots** [foamy keratinised conjunctival patches of vitamin A deficiency] (plaques of keratin debris), erosion of the cornea, **keratomalacia** (softening and destruction of the cornea) and blindness.
 2. **Epithelium.** **Squamous metaplasia** and keratinisation of epithelia, with hyperplasia and hyperkeratinisation of the epidermis and plugging of the ducts of the adnexal glands, causing a follicular or papular dermatosis.
 3. **Immune deficiency.** Higher mortality from measles, pneumonia and infectious diarrhoea. Vitamin A supplements reduce mortality from these infections by 20% to 30% where deficiency is prevalent.
 
@@ -5595,7 +5595,7 @@ Vitamin D maintains plasma calcium and phosphorus for bone mineralisation, metab
 
 ## Why is zinc important for the body?
 
-The site textbook gives zinc only in its table of trace elements (Table 9.10). It states that zinc is a **component of enzymes, principally oxidases**. Its deficiency affects growth in children, mental function, wound healing, the immune response, night vision and fertility, as listed in the table.
+Zinc is a **component of enzymes, principally oxidases**. Its deficiency affects growth in children, mental function, wound healing, the immune response, night vision and fertility.
 
 ## How does zinc deficiency develop?
 
@@ -5603,7 +5603,7 @@ Table 9.10 gives three ways.
 
 1. **Inadequate supplementation in artificial diets**, that is, zinc left out of a diet given artificially.
 2. **Interference with absorption** by other dietary constituents.
-3. **Inborn error of metabolism.** The textbook links acrodermatitis enteropathica (a rash around the eyes, mouth, nose and anus) with zinc deficiency.
+3. **Inborn error of metabolism.** Acrodermatitis enteropathica (a rash around the eyes, mouth, nose and anus) is linked with zinc deficiency.
 
 ## Clinical features of zinc deficiency.
 
@@ -5652,10 +5652,10 @@ Obesity, particularly central obesity, raises mortality from most diseases. Cent
 
 ## Write a short note on beriberi.
 
-**Beriberi** is the disease caused by deficiency of **vitamin B₁ (thiamine)**. The site textbook covers it only briefly.
+**Beriberi** is the disease caused by deficiency of **vitamin B₁ (thiamine)**.
 
 - **Function of thiamine.** As **thiamine pyrophosphate** it is the coenzyme in decarboxylation reactions.
-- **Deficiency syndromes.** **Dry and wet beriberi**, and the **Wernicke-Korsakoff syndrome**. The textbook does not describe the features of dry and wet beriberi.
+- **Deficiency syndromes.** **Dry and wet beriberi**, and the **Wernicke-Korsakoff syndrome** [thiamine-deficiency encephalopathy with amnesia].
 - **Causes.** A diet in which **polished rice** is the mainstay. **Chronic excessive alcohol use** is also important, because it causes poor diet, defective absorption, abnormal utilisation and storage, increased needs and increased loss of thiamine.
 - **Brain.** Failure to recognise thiamine deficiency in a person with alcohol use disorder may cause irreversible brain damage (Wernicke encephalopathy and Korsakoff psychosis).
 - **Heart.** Alcohol-related thiamine deficiency can lead to **beriberi heart disease**, a form of dilated cardiomyopathy.
@@ -5667,15 +5667,15 @@ Obesity, particularly central obesity, raises mortality from most diseases. Cent
 
 ## What are the clinical manifestations of vitamin A deficiency?
 
-Vitamin A deficiency occurs worldwide because of primary malnutrition and in conditions that cause malabsorption of fats, such as coeliac disease, Crohn disease and colitis.
+Vitamin A deficiency occurs worldwide because of primary malnutrition and in conditions that cause malabsorption of fats, such as coeliac disease, Crohn disease [transmural granulomatous inflammatory bowel disease] and colitis.
 
-1. **Eyes.** Night blindness is one of the earliest manifestations, because vitamin A is a component of rhodopsin. Persistent deficiency causes **xerophthalmia**: dryness of the conjunctiva (xerosis), **Bitot spots** (plaques of keratin debris), erosion of the cornea, **keratomalacia** (softening and destruction of the cornea) and blindness.
+1. **Eyes.** Night blindness is one of the earliest manifestations, because vitamin A is a component of rhodopsin. Persistent deficiency causes **xerophthalmia**: dryness of the conjunctiva (xerosis), **Bitot spots** [foamy keratinised conjunctival patches of vitamin A deficiency] (plaques of keratin debris), erosion of the cornea, **keratomalacia** (softening and destruction of the cornea) and blindness.
 2. **Epithelium.** **Squamous metaplasia** and keratinisation of the epithelia of the upper respiratory passage and urinary tract. Loss of the mucociliary epithelium predisposes to pulmonary infections, and keratin debris in the urinary tract predisposes to renal and bladder stones. Hyperplasia and hyperkeratinisation of the epidermis with plugging of adnexal gland ducts causes a follicular or papular dermatosis.
 3. **Immune deficiency.** Higher mortality from measles, pneumonia and infectious diarrhoea. Vitamin A supplements reduce mortality from these infections by 20% to 30% where deficiency is prevalent.
 
 ## Write a short note on deficiency of zinc.
 
-**Zinc** is a trace element and a **component of enzymes, principally oxidases** (Table 9.10 of the site textbook, which is its only source on zinc).
+**Zinc** is a trace element and a **component of enzymes, principally oxidases**.
 
 - **Causes.** Inadequate supplementation in artificial diets, interference with absorption by other dietary constituents, and an inborn error of metabolism.
 - **Clinical features.**
@@ -5817,12 +5817,10 @@ Vessels of the upper extremities are relatively spared, as are the mesenteric an
 
 ## How does dietary habit influence the development of atherosclerosis?
 
-The site textbook treats the role of diet as important but partly unresolved.
-
 1. **Cholesterol and saturated fats.** The central question is whether cutting foods high in cholesterol and saturated animal fats (eggs, butter, beef) lowers serum cholesterol and prevents or slows atherosclerosis in people without previous cardiovascular disease (primary prevention). Lowering saturated fatty acids to the level of polyunsaturated fatty acids reduces serum cholesterol by 10% to 15% within a few weeks.
 2. **Polyunsaturated fats.** Vegetable oils (corn, safflower) and fish oils are good sources of cholesterol-lowering polyunsaturated fatty acids. **Omega-3 fatty acids** (fish oils) are considered beneficial.
 3. **Trans-unsaturated fats**, produced by artificial hydrogenation of polyunsaturated oils (baked goods, margarine), can adversely affect the cholesterol profile.
-4. **Dietary fats in general.** The textbook's chapter on blood vessels states that the contribution of most dietary fats to atherosclerosis is now viewed as minimal.
+4. **Dietary fats in general.** The contribution of most dietary fats to atherosclerosis is now viewed as minimal.
 5. **Link through lipids.** Hypercholesterolaemia, especially raised LDL, is a major risk factor, and lowering serum cholesterol slows progression, causes regression of some plaques and reduces cardiovascular events.
 6. **Link through obesity.** Obesity brings hypertriglyceridaemia, low HDL, diabetes and hypertension, which all raise the risk of coronary artery disease.
 
@@ -5835,7 +5833,7 @@ The site textbook treats the role of diet as important but partly unresolved.
 IHD declares itself through one or more clinical presentations.
 
 1. **Myocardial infarction (MI)**, in which ischaemia causes cardiac necrosis.
-2. **Angina pectoris**, in which ischaemia is not severe enough to cause infarction, but the symptoms portend infarction risk. Its patterns are stable (typical), Prinzmetal variant (caused by coronary artery spasm) and unstable or crescendo angina.
+2. **Angina pectoris**, in which ischaemia is not severe enough to cause infarction, but the symptoms portend infarction risk. Its patterns are stable (typical), Prinzmetal [angina from coronary vasospasm] variant (caused by coronary artery spasm) and unstable or crescendo angina.
 3. **Chronic ischaemic heart disease with heart failure.**
 4. **Sudden cardiac death.**
 
@@ -5848,7 +5846,7 @@ More than 90% of cases are due to obstructive atherosclerosis of the epicardial 
 Three overlapping patterns are recognised.
 
 1. **Stable (typical) angina.** The most common form. It is caused by an imbalance between coronary perfusion, due to chronic stenosing coronary atherosclerosis, and myocardial demand. It does not occur at rest but is reliably induced by physical activity, emotional excitement or psychological stress. The pain is crushing or squeezing, behind the sternum, and can radiate down the left arm or to the left jaw. It is relieved by rest or by vasodilators such as nitroglycerin and calcium channel blockers.
-2. **Prinzmetal variant angina.** An uncommon form of episodic ischaemia caused by coronary artery spasm. The attacks are unrelated to physical activity, heart rate or blood pressure and can occur at rest. It responds promptly to vasodilators.
+2. **Prinzmetal [angina from coronary vasospasm] variant angina.** An uncommon form of episodic ischaemia caused by coronary artery spasm. The attacks are unrelated to physical activity, heart rate or blood pressure and can occur at rest. It responds promptly to vasodilators.
 3. **Unstable (crescendo) angina.** Increasingly frequent, prolonged (over 20 minutes) or severe attacks, precipitated by progressively lower levels of activity or occurring at rest. It is associated with plaque disruption and superimposed thrombosis, distal embolisation and vasospasm, and it is a harbinger of myocardial infarction.
 
 **Silent ischaemia** is common in the elderly and in diabetic neuropathy, and may present as dyspnoea, nausea and vomiting, palpitations, sweating or fatigue, or with no symptoms.
@@ -5924,7 +5922,7 @@ Nearly three-quarters of patients have one or more complications.
 3. **Right ventricular infarction**, with right-sided failure.
 4. **Myocardial rupture** (1% to 3%): free wall rupture with haemopericardium and cardiac tamponade; ventricular septal rupture with left-to-right shunt; papillary muscle rupture with severe mitral regurgitation. Most common 3 to 7 days after infarction, when necrotic muscle is softest.
 5. **Arrhythmias.** About 90% of patients; heart block, bradycardia, tachyarrhythmias, ventricular tachycardia and fibrillation. The risk of ventricular fibrillation is greatest in the first hour.
-6. **Pericarditis**, fibrinohaemorrhagic, 2 to 3 days after a transmural MI; rarely Dressler syndrome weeks later, due to antibodies against damaged pericardium and myocardium.
+6. **Pericarditis**, fibrinohaemorrhagic, 2 to 3 days after a transmural MI; rarely Dressler syndrome [pericarditis after myocardial infarction] weeks later, due to antibodies against damaged pericardium and myocardium.
 7. **Chamber dilation** from thinning of the infarcted region.
 8. **Mural thrombus**, with a risk of embolism.
 9. **Ventricular aneurysm**, a late complication after a large transmural anteroseptal infarct. It causes thrombi, arrhythmias and heart failure but does not rupture.
@@ -5942,7 +5940,7 @@ MI is diagnosed by three things: **clinical symptoms**, **laboratory tests for m
 
 ## What are the cardiac markers/enzymes of MI (with change over time)?
 
-The site textbook names only the **cardiac-specific troponins T and I** as the clinically useful markers. It does not give the older enzyme markers.
+The clinically useful markers are the **cardiac-specific troponins T and I**.
 
 | Marker | Rise | Peak | Duration of elevation |
 |---|---|---|---|
@@ -5998,7 +5996,7 @@ Hypertrophy is physiologic when it is driven by increased functional demand or b
 
 ## What are the criteria for diagnosis of rheumatic fever?
 
-Diagnosis follows the **revised Jones criteria**: **evidence of a preceding group A streptococcal infection**, plus **two major manifestations, or one major and two minor manifestations**.
+Diagnosis follows the **revised Jones criteria** [major and minor criteria for rheumatic fever]: **evidence of a preceding group A streptococcal infection**, plus **two major manifestations, or one major and two minor manifestations**.
 
 **Major manifestations**
 
@@ -6020,7 +6018,7 @@ Acute rheumatic fever is an **immune response to group A streptococcal antigens 
 
 1. It follows group A streptococcal pharyngitis (sometimes skin infection) after a delay of 2 to 3 weeks, the time needed to generate an immune response.
 2. Antibodies and CD4⁺ T cells against streptococcal **M proteins** recognise cardiac antigens in the pericardium, myocardium and valves.
-3. Antibody binding activates complement and recruits neutrophils and macrophages; cytokines from stimulated T cells activate macrophages, for example within **Aschoff bodies**.
+3. Antibody binding activates complement and recruits neutrophils and macrophages; cytokines from stimulated T cells activate macrophages, for example within **Aschoff bodies** [granulomas of rheumatic carditis].
 4. Damage is thus from antibody-mediated and T cell-mediated reactions.
 5. Streptococci are completely absent from the lesions, as expected for an immunological disease.
 6. Only 0.3% to 3% of infected people develop it, so intrinsic genetic susceptibility is likely.
@@ -6044,12 +6042,12 @@ In acute rheumatic fever the left-sided valves show fibrinoid necrosis with smal
 
 ## Write a short note on Aschoff nodule (myocardial changes, giant cell).
 
-**Aschoff bodies** are the distinctive lesions of **acute rheumatic fever** in the heart.
+**Aschoff bodies** [granulomas of rheumatic carditis] are the distinctive lesions of **acute rheumatic fever** in the heart.
 
-- Each is a focal inflammatory lesion of **T lymphocytes**, occasional **plasma cells** and plump activated macrophages called **Anitschkow cells**.
+- Each is a focal inflammatory lesion of **T lymphocytes**, occasional **plasma cells** and plump activated macrophages called **Anitschkow cells** [caterpillar-nucleus histiocytes of rheumatic carditis].
 - Anitschkow cells have abundant cytoplasm and a central round-to-ovoid nucleus (occasionally binucleate) in which the chromatin condenses into a central slender wavy ribbon, so they are called "caterpillar cells".
 - They may be found with diffuse inflammation in any of the three layers of the heart, causing pericarditis, myocarditis and endocarditis (**pancarditis**).
-- They reflect cytokine-driven macrophage activation in an immune-mediated reaction. The textbook does not describe giant cells in them.
+- They reflect cytokine-driven macrophage activation in an immune-mediated reaction.
 
 ## A child has fever, migratory large-joint pain after sore throat. What is your provisional diagnosis?
 
@@ -6057,7 +6055,7 @@ In acute rheumatic fever the left-sided valves show fibrinoid necrosis with smal
 
 ## Same: how will you diagnose the case?
 
-By the **revised Jones criteria**: evidence of a preceding group A streptococcal infection, plus two major or one major and two minor manifestations.
+By the **revised Jones criteria** [major and minor criteria for rheumatic fever]: evidence of a preceding group A streptococcal infection, plus two major or one major and two minor manifestations.
 
 1. **Evidence of streptococcal infection.** Raised antibodies to streptolysin O and DNase B (pharyngeal culture is usually negative by then).
 2. **Major criteria**: migratory polyarthritis, pancarditis, subcutaneous nodules, erythema marginatum, Sydenham chorea.
@@ -6106,7 +6104,7 @@ Complications generally begin within the first few weeks.
 2. **Embolisation.** Fragments with virulent organisms cause abscesses where they lodge, giving septic infarcts and **mycotic aneurysms**; systemic embolisation bodes ill.
 3. **Glomerulonephritis** from deposition of antigen-antibody complexes.
 4. **Sepsis** and **arrhythmias.**
-5. **Vascular and immunological signs**: splinter haemorrhages, Janeway lesions (small painless haemorrhagic macules on palms and soles), Osler nodes (tender nodules in the digit pulp), Roth spots (retinal haemorrhages with pale centres). These are now less common because of earlier treatment.
+5. **Vascular and immunological signs**: splinter haemorrhages, Janeway lesions [small painless haemorrhagic macules on palms and soles], Osler nodes [tender nodules in the digit pulp], Roth spots [retinal haemorrhages with pale centres]. These are now less common because of earlier treatment.
 6. **Outcome.** Untreated IE is generally fatal. With 6 weeks or more of antibiotics, or valve replacement, mortality falls. Cure is 98% with low-virulence organisms such as S. viridans, 60% to 90% with enterococci and S. aureus, and half of patients with gram-negative bacilli or fungi die.
 
 ## Define neutrophilia.
@@ -6120,7 +6118,7 @@ Complications generally begin within the first few weeks.
 - **Acute bacterial infections**, especially those caused by pyogenic organisms.
 - **Sterile inflammation** caused by tissue necrosis, for example myocardial infarction and burns.
 - **Chronic infection or inflammation.**
-- **Paraneoplastic**, for example Hodgkin lymphoma.
+- **Paraneoplastic**, for example Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells].
 - **Myeloproliferative neoplasms**, for example chronic myeloid leukaemia.
 
 **Mechanisms**
@@ -6138,7 +6136,7 @@ Complications generally begin within the first few weeks.
 - **Allergic disorders**, such as asthma and hay fever.
 - **Parasitic infestations.**
 - **Drug reactions.**
-- **Certain malignancies**, for example Hodgkin lymphoma and some non-Hodgkin lymphomas.
+- **Certain malignancies**, for example Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] and some non-Hodgkin lymphomas.
 - **Autoimmune disorders**, for example pemphigus and dermatitis herpetiformis.
 
 **Pathogenesis:** growth factors preferentially stimulate single leucocyte types; **interleukin-5** mainly stimulates eosinophil production.
@@ -6159,7 +6157,7 @@ Lymphadenopathy is enlargement of lymph nodes. It occurs in 2 patterns:
 
 ## Common causes of lymphadenopathy.
 
-- **Infections:** bacterial and viral infections of the drained area; tuberculosis and Mycobacterium avium intracellulare; fungal (coccidioidomycosis, histoplasmosis, Candida); parasitic (toxoplasmosis, Chagas disease); cat-scratch disease.
+- **Infections:** bacterial and viral infections of the drained area; tuberculosis and Mycobacterium avium intracellulare; fungal (coccidioidomycosis, histoplasmosis, Candida); parasitic (toxoplasmosis, Chagas disease [Trypanosoma cruzi infection]); cat-scratch disease.
 - **Reactive hyperplasia:** acute and chronic nonspecific lymphadenitis; follicular hyperplasia in rheumatoid arthritis, toxoplasmosis and early HIV infection; paracortical hyperplasia in infectious mononucleosis.
 - **Autoimmune disease.**
 - **Malignancy:** lymphoma, leukaemia, metastatic cancer and head and neck cancers.
@@ -6205,14 +6203,14 @@ Several patterns are often seen within the same node. The nodes are nontender be
 
 - **Acute nonspecific lymphadenitis** from infections of the teeth or tonsils.
 - Posterior cervical nodes: localised bacterial and viral infections, and lymphoma.
-- **Hodgkin lymphoma** and other lymphomas.
+- **Hodgkin lymphoma** [lymphoma defined by Reed-Sternberg cells] and other lymphomas.
 - **Metastatic cancer**, including head and neck cancers.
 
 ## What is the etiology of leukaemia?
 
 - **Genetic alterations in cancer genes:** nonrandom chromosomal abnormalities, most commonly translocations, are present in most white cell neoplasms, with driver mutations that block differentiation, drive growth or prevent apoptosis.
-- **Inherited factors:** diseases with genomic instability (Bloom syndrome, Fanconi anaemia, ataxia telangiectasia) raise the risk of acute leukaemia; **Down syndrome** (trisomy 21) and type I neurofibromatosis are associated with childhood leukaemia.
-- **Viruses:** HTLV-1 with adult T-cell leukaemia/lymphoma; EBV with a subset of Burkitt lymphoma and other lymphomas; HHV8 with an unusual B-cell lymphoma presenting as an effusion.
+- **Inherited factors:** diseases with genomic instability (Bloom syndrome [inherited DNA-helicase defect with sun-sensitive rash and cancer predisposition], Fanconi anaemia [inherited DNA-repair defect causing marrow failure], ataxia telangiectasia) raise the risk of acute leukaemia; **Down syndrome** [trisomy 21] (trisomy 21) and type I neurofibromatosis are associated with childhood leukaemia.
+- **Viruses:** HTLV-1 with adult T-cell leukaemia/lymphoma; EBV with a subset of Burkitt lymphoma [high-grade B-cell lymphoma with MYC translocation] and other lymphomas; HHV8 with an unusual B-cell lymphoma presenting as an effusion.
 - **Chronic inflammation:** for example Helicobacter pylori with gastric B-cell lymphomas, and gluten-sensitive enteropathy with intestinal T-cell lymphomas.
 - **Treatment:** chemotherapy with alkylating agents has been followed by a high incidence of acute myeloid leukaemia.
 
@@ -6250,7 +6248,7 @@ Several patterns are often seen within the same node. The nodes are nontender be
 
 1. **Peripheral blood:** blast count highly variable; may be more than 100,000 per microlitre but under 10,000 in about 50%; occasionally absent (aleukaemic leukaemia). Anaemia, neutropenia and thrombocytopenia are present.
 2. **Bone marrow examination** is essential to exclude acute leukaemia in pancytopenic patients. Generally 20% or more myeloid blasts; the WHO permits the diagnosis with fewer than 20% if a defining genetic aberration is present.
-3. **Blast morphology:** myeloblasts have delicate nuclear chromatin, two to four nucleoli and more cytoplasm than lymphoblasts, with fine peroxidase positive azurophilic granules. **Auer rods** (needle-like azurophilic granules) are present in many cases, particularly numerous in t(15;17). Monoblasts have folded or lobulated nuclei, lack Auer rods and are nonspecific esterase positive.
+3. **Blast morphology:** myeloblasts have delicate nuclear chromatin, two to four nucleoli and more cytoplasm than lymphoblasts, with fine peroxidase positive azurophilic granules. **Auer rods** [needle-shaped azurophilic inclusions in myeloblasts] (needle-like azurophilic granules) are present in many cases, particularly numerous in t(15;17). Monoblasts have folded or lobulated nuclei, lack Auer rods and are nonspecific esterase positive.
 4. **Immunophenotyping:** stains for myeloid-specific antigens confirm the diagnosis, since myeloblasts and lymphoblasts are hard to tell apart by morphology; blasts express CD34, CD33 and in part CD15, but not CD64. Megakaryocytic blasts are detected with antibodies such as GPIIb/IIIa.
 5. **Cytogenetics:** abnormalities are detected in 50% to 70% of cases with standard techniques and about 90% with high-resolution banding. Balanced translocations t(8;21), inv(16) and t(15;17) are typical of de novo AML in younger adults; deletions or monosomies of chromosomes 5 and 7 and p53 mutations follow DNA-damaging agents.
 6. **DNA sequencing** detects mutations such as NPM1.
@@ -6269,7 +6267,7 @@ Several patterns are often seen within the same node. The nodes are nontender be
 
 1. **Peripheral blood:** blast count is highly variable; in AML blasts may be more than 100,000 per microlitre but are under 10,000 in about 50% of patients, and occasionally blasts are absent from the blood (aleukaemic leukaemia).
 2. **Bone marrow examination** is essential. The marrow is hypercellular and packed with blasts, generally 20% or more of marrow cells.
-3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods.
+3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods [needle-shaped azurophilic inclusions in myeloblasts].
 4. **Cytochemistry:** myeloperoxidase positive in myeloblasts; lymphoblasts are myeloperoxidase negative and often contain periodic acid–Schiff positive cytoplasmic material; monoblasts are nonspecific esterase positive.
 5. **Immunophenotyping by flow cytometry**, which confirms the lineage. Terminal deoxynucleotidyl transferase (TdT) is positive in more than 95% of ALL. B-ALL: CD19, CD10, PAX5; T-ALL: CD1, CD2, CD5, CD7. Myeloid blasts: CD34, CD33, CD15 and CD64.
 6. **Cytogenetics and molecular tests:** chromosomal aberrations in 50% to 70% of AML by standard techniques; approximately 90% of ALL have numerical or structural chromosomal changes.
@@ -6278,7 +6276,7 @@ Several patterns are often seen within the same node. The nodes are nontender be
 
 1. **Peripheral blood:** blast count is highly variable; in AML blasts may be more than 100,000 per microlitre but are under 10,000 in about 50% of patients, and occasionally blasts are absent from the blood (aleukaemic leukaemia).
 2. **Bone marrow examination** is essential. The marrow is hypercellular and packed with blasts, generally 20% or more of marrow cells.
-3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods.
+3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods [needle-shaped azurophilic inclusions in myeloblasts].
 4. **Cytochemistry:** myeloperoxidase positive in myeloblasts; lymphoblasts are myeloperoxidase negative and often contain periodic acid–Schiff positive cytoplasmic material; monoblasts are nonspecific esterase positive.
 5. **Immunophenotyping by flow cytometry**, which confirms the lineage. Terminal deoxynucleotidyl transferase (TdT) is positive in more than 95% of ALL. B-ALL: CD19, CD10, PAX5; T-ALL: CD1, CD2, CD5, CD7. Myeloid blasts: CD34, CD33, CD15 and CD64.
 6. **Cytogenetics and molecular tests:** chromosomal aberrations in 50% to 70% of AML by standard techniques; approximately 90% of ALL have numerical or structural chromosomal changes.
@@ -6318,35 +6316,35 @@ Several patterns are often seen within the same node. The nodes are nontender be
    - Erythroid progenitors normal or mildly decreased.
    - Scattered **sea-blue histiocytes** (macrophages with abundant wrinkled green-blue cytoplasm).
    - Increased reticulin; overt fibrosis is rare.
-3. **Molecular and cytogenetic tests:** the BCR::ABL fusion gene, with the Philadelphia chromosome t(9;22), detected by chromosomal analysis, FISH or PCR-based tests; this differentiates CML from other myeloproliferative neoplasms.
+3. **Molecular and cytogenetic tests:** the BCR::ABL fusion gene, with the Philadelphia chromosome [t(9;22) producing the BCR-ABL1 fusion] t(9;22), detected by chromosomal analysis, FISH or PCR-based tests; this differentiates CML from other myeloproliferative neoplasms.
 
 ## Classify lymphoma.
 
 | Group | Entities |
 |---|---|
 | **Precursor B-cell neoplasms** | B-cell acute lymphoblastic leukaemia/lymphoma |
-| **Peripheral B-cell neoplasms** | Chronic lymphocytic leukaemia/small lymphocytic lymphoma; splenic B-cell lymphomas and leukaemias; marginal zone lymphoma; mantle cell lymphoma; follicular lymphoma; diffuse large B-cell lymphoma; Burkitt lymphoma; lymphoplasmacytic lymphoma; plasma cell neoplasms |
+| **Peripheral B-cell neoplasms** | Chronic lymphocytic leukaemia/small lymphocytic lymphoma; splenic B-cell lymphomas and leukaemias; marginal zone lymphoma; mantle cell lymphoma; follicular lymphoma; diffuse large B-cell lymphoma; Burkitt lymphoma [high-grade B-cell lymphoma with MYC translocation]; lymphoplasmacytic lymphoma; plasma cell neoplasms |
 | **Precursor T-cell neoplasms** | T-cell acute lymphoblastic leukaemia/lymphoma |
-| **Peripheral T-cell and NK-cell neoplasms** | T-cell prolymphocytic leukaemia; T-large granular lymphocytic leukaemia; mycosis fungoides; Sézary syndrome; peripheral T-cell lymphoma, not otherwise specified; anaplastic large-cell lymphoma; nodal T-follicular helper cell lymphoma; enteropathy-associated T-cell lymphoma; subcutaneous panniculitis-like T-cell lymphoma; hepatosplenic T-cell lymphoma; adult T-cell leukaemia/lymphoma; extranodal NK/T-cell lymphoma; NK-cell leukaemia |
-| **Hodgkin lymphoma** | Classic: nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted; nodular lymphocyte predominant |
+| **Peripheral T-cell and NK-cell neoplasms** | T-cell prolymphocytic leukaemia; T-large granular lymphocytic leukaemia; mycosis fungoides; Sézary syndrome [leukaemic cutaneous T-cell lymphoma]; peripheral T-cell lymphoma, not otherwise specified; anaplastic large-cell lymphoma; nodal T-follicular helper cell lymphoma; enteropathy-associated T-cell lymphoma; subcutaneous panniculitis-like T-cell lymphoma; hepatosplenic T-cell lymphoma; adult T-cell leukaemia/lymphoma; extranodal NK/T-cell lymphoma; NK-cell leukaemia |
+| **Hodgkin lymphoma** [lymphoma defined by Reed-Sternberg cells] | Classic: nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted; nodular lymphocyte predominant |
 
 Lymphomas other than Hodgkin lymphoma are the non-Hodgkin lymphomas.
 
 ## Differences between Hodgkin and non-Hodgkin lymphoma.
 
-| Feature | Hodgkin lymphoma | Non-Hodgkin lymphoma |
+| Feature | Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] | Non-Hodgkin lymphoma |
 |---|---|---|
 | Nodal involvement | More often localised to a single axial group of nodes (cervical, mediastinal, para-aortic) | More frequent involvement of multiple peripheral nodes |
 | Spread | Orderly, by contiguity | Noncontiguous; disseminates widely and unpredictably early |
-| Mesenteric nodes and Waldeyer ring | Rarely involved | Commonly involved |
+| Mesenteric nodes and Waldeyer ring [ring of pharyngeal lymphoid tissue] | Rarely involved | Commonly involved |
 | Extranodal presentation | Rare | Common |
 | Presentation | Virtually all present as enlarged nontender nodes | Two-thirds present as enlarged nontender nodes |
 | Staging | Most useful in guiding therapy | Less useful in guiding therapy |
-| Distinctive cell | **Reed-Sternberg cells**, with reactive cells making up more than 90% of the tumour | No Reed-Sternberg cells; neoplastic lymphoid cells, 85% to 90% of lymphoid neoplasms being of B-cell origin |
+| Distinctive cell | **Reed-Sternberg cells** [binucleate owl-eye giant cell], with reactive cells making up more than 90% of the tumour | No Reed-Sternberg cells; neoplastic lymphoid cells, 85% to 90% of lymphoid neoplasms being of B-cell origin |
 
 ## What do you know about Reed-Sternberg cells?
 
-- **Reed-Sternberg cells** are the neoplastic giant cells that are the distinctive feature of Hodgkin lymphoma.
+- **Reed-Sternberg cells** [binucleate owl-eye giant cell] are the neoplastic giant cells that are the distinctive feature of Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells].
 - **Origin:** germinal centre or post-germinal centre B cells, shown by clonal IGH gene rearrangements and somatic hypermutation. In classic Hodgkin lymphoma they fail to express most B-cell-specific genes, including immunoglobulin genes.
 - **Diagnostic Reed-Sternberg cell:** a large cell (about 45 micrometres) with multiple nuclei or a nucleus with multiple lobes, each with a large inclusion-like nucleolus about the size of a small lymphocyte, and abundant cytoplasm.
 - **Variants:** mononuclear, lacunar and lymphohistiocytic (L&H, popcorn) cells.
@@ -6358,7 +6356,7 @@ Lymphomas other than Hodgkin lymphoma are the non-Hodgkin lymphomas.
 
 ## Classification of Hodgkin's lymphoma.
 
-**Classic Hodgkin lymphoma**
+**Classic Hodgkin lymphoma** [lymphoma defined by Reed-Sternberg cells]
 
 1. Nodular sclerosis.
 2. Mixed cellularity.
@@ -6369,27 +6367,27 @@ Lymphomas other than Hodgkin lymphoma are the non-Hodgkin lymphomas.
 
 5. Nodular lymphocyte predominant.
 
-In the first four the Reed-Sternberg cells have a similar distinctive immunophenotype. In nodular lymphocyte predominant, the Reed-Sternberg cells have a B-cell immunophenotype different from the classic types.
+In the first four the Reed-Sternberg cells [binucleate owl-eye giant cell] have a similar distinctive immunophenotype. In nodular lymphocyte predominant, the Reed-Sternberg cells have a B-cell immunophenotype different from the classic types.
 
 ## How will you proceed to diagnose a case of lymphoma?
 
 1. **Suspicion** is clinical: most lymphoid neoplasms present as enlarged nontender lymph nodes, often more than 2 cm.
 2. **Histological examination of a lymph node** or other involved tissue is required for diagnosis.
-3. **Hodgkin lymphoma:** diagnosis rests on identifying Reed-Sternberg cells in a background of nonneoplastic inflammatory cells, confirmed by their immunohistochemical profile.
+3. **Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells]:** diagnosis rests on identifying Reed-Sternberg cells [binucleate owl-eye giant cell] in a background of nonneoplastic inflammatory cells, confirmed by their immunohistochemical profile.
 4. **Markers:** antibodies to lineage-specific proteins characterise the tumour; analysis of genetic alterations complements the morphology.
 5. **Antigen receptor gene rearrangement studies** separate monoclonal (malignant) from polyclonal (reactive) proliferations.
 6. **Staging:** physical examination, radiological imaging of the abdomen, pelvis and chest, and bone marrow biopsy.
 
 ## A 20y male has multiple painless cervical/axillary lymph nodes. What is your provisional diagnosis?
 
-**Provisional diagnosis: lymphoma, most probably Hodgkin lymphoma.**
+**Provisional diagnosis: lymphoma, most probably Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells].**
 
 - Lymphomas most commonly present as painless lymphadenopathy.
 - Hodgkin lymphoma has a peak in young adults and arises in a single node or chain of nodes; cervical and axillary nodes are commonly involved.
 
 ## Same: what tests can you do on the lymph nodes?
 
-1. **Excision biopsy with histological examination** of a node: the diagnosis of Hodgkin lymphoma depends on Reed-Sternberg cells in a background of nonneoplastic inflammatory cells.
+1. **Excision biopsy with histological examination** of a node: the diagnosis of Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] depends on Reed-Sternberg cells [binucleate owl-eye giant cell] in a background of nonneoplastic inflammatory cells.
 2. **Immunohistochemistry:** Reed-Sternberg cells of classic types are positive for PAX5, CD15 and CD30 and negative for CD45.
 3. **Antigen receptor gene rearrangement** studies, to separate monoclonal from polyclonal proliferations.
 4. **Staging:** imaging of the chest, abdomen and pelvis, and bone marrow biopsy.
@@ -6399,14 +6397,14 @@ In the first four the Reed-Sternberg cells have a similar distinctive immunophen
 | Subtype | Frequency | Key features |
 |---|---|---|
 | **Nodular sclerosis** | 65% to 70% | Lacunar cells; collagen bands dividing the node into nodules |
-| **Mixed cellularity** | 20% to 25% | Many diagnostic Reed-Sternberg cells; diffuse effacement by mixed infiltrate |
+| **Mixed cellularity** | 20% to 25% | Many diagnostic Reed-Sternberg cells [binucleate owl-eye giant cell]; diffuse effacement by mixed infiltrate |
 | **Lymphocyte-rich** | Uncommon | Reactive lymphocytes predominate |
 | **Lymphocyte-depleted** | Less than 5% | Few lymphocytes; many Reed-Sternberg cells or pleomorphic variants |
 | **Nodular lymphocyte predominant** (nonclassic) | About 5% | L&H (popcorn) cells; B-cell markers |
 
 ## Describe in brief the morphological features of Hodgkin's disease.
 
-- **Reed-Sternberg cells** and variants (mononuclear, lacunar, lymphohistiocytic) in a background of nonneoplastic cells: reactive lymphocytes, macrophages and granulocytes, which make up more than 90% of the tumour cellularity.
+- **Reed-Sternberg cells** [binucleate owl-eye giant cell] and variants (mononuclear, lacunar, lymphohistiocytic) in a background of nonneoplastic cells: reactive lymphocytes, macrophages and granulocytes, which make up more than 90% of the tumour cellularity.
 - Diagnostic Reed-Sternberg cells: large, with multiple nuclei or a multilobed nucleus, each lobe with a large inclusion-like nucleolus, and abundant cytoplasm.
 - **Nodular sclerosis:** lacunar cells; bands of collagen dividing the node into nodules.
 - **Mixed cellularity:** node diffusely effaced by T cells, eosinophils, plasma cells and macrophages, with plentiful Reed-Sternberg cells.
@@ -6419,7 +6417,7 @@ In the first four the Reed-Sternberg cells have a similar distinctive immunophen
 
 | Cell | Features | Seen in |
 |---|---|---|
-| **Diagnostic Reed-Sternberg cell** | Large cell, multiple nuclei or one nucleus with several lobes, each with a large inclusion-like nucleolus about the size of a small lymphocyte; abundant cytoplasm | Classic Hodgkin lymphoma |
+| **Diagnostic Reed-Sternberg cell** [binucleate owl-eye giant cell] | Large cell, multiple nuclei or one nucleus with several lobes, each with a large inclusion-like nucleolus about the size of a small lymphocyte; abundant cytoplasm | Classic Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] |
 | **Mononuclear variant** | Single nucleus with a large inclusion-like nucleolus | Classic Hodgkin lymphoma |
 | **Lacunar cell** | Delicate, folded or multilobed nucleus; abundant pale cytoplasm that is disrupted in sectioning, leaving the nucleus in an empty space (lacuna) | Nodular sclerosis |
 | **Lymphohistiocytic (L&H) variant, popcorn cell** | Multilobed polypoid nucleus, inconspicuous nucleoli, moderately abundant cytoplasm; B-cell markers CD20 and BCL6, negative for CD15 and CD30 | Nodular lymphocyte predominant |
@@ -6428,7 +6426,7 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 
 ## Write a short note on Hodgkin's lymphoma.
 
-**Definition:** a group of lymphoid neoplasms that differ from non-Hodgkin lymphoma. It arises in a single node or chain of nodes and spreads first to contiguous lymphoid tissues; the distinctive feature is the **Reed-Sternberg cell**, which induces reactive lymphocytes, macrophages and granulocytes that make up more than 90% of the tumour. Average age at diagnosis is 39, with a bimodal distribution, peaks in young adults and in adults older than 55.
+**Definition:** a group of lymphoid neoplasms that differ from non-Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells]. It arises in a single node or chain of nodes and spreads first to contiguous lymphoid tissues; the distinctive feature is the **Reed-Sternberg cell** [binucleate owl-eye giant cell], which induces reactive lymphocytes, macrophages and granulocytes that make up more than 90% of the tumour. Average age at diagnosis is 39, with a bimodal distribution, peaks in young adults and in adults older than 55.
 
 **Pathogenesis**
 
@@ -6452,8 +6450,8 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 
 ## Write a short note on nodular sclerosis variety of Hodgkin's disease.
 
-- Most common form of Hodgkin lymphoma, 65% to 70% of cases.
-- **Lacunar variant Reed-Sternberg cells**, with **collagen deposited in bands** that divide the node into circumscribed nodules; fibrosis may be scant or abundant.
+- Most common form of Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells], 65% to 70% of cases.
+- **Lacunar variant Reed-Sternberg cells** [binucleate owl-eye giant cell], with **collagen deposited in bands** that divide the node into circumscribed nodules; fibrosis may be scant or abundant.
 - Polymorphous background of T cells, eosinophils, plasma cells and macrophages; diagnostic Reed-Sternberg cells are usually uncommon.
 - Reed-Sternberg cells are positive for PAX5, CD15 and CD30, and negative for other B-cell markers, T-cell markers and CD45.
 - Uncommonly associated with EBV.
@@ -6462,15 +6460,15 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 
 ## How does Hodgkin lymphoma differ from non-Hodgkin lymphoma?
 
-| Feature | Hodgkin lymphoma | Non-Hodgkin lymphoma |
+| Feature | Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] | Non-Hodgkin lymphoma |
 |---|---|---|
 | Nodal involvement | More often localised to a single axial group of nodes (cervical, mediastinal, para-aortic) | More frequent involvement of multiple peripheral nodes |
 | Spread | Orderly, by contiguity | Noncontiguous; disseminates widely and unpredictably early |
-| Mesenteric nodes and Waldeyer ring | Rarely involved | Commonly involved |
+| Mesenteric nodes and Waldeyer ring [ring of pharyngeal lymphoid tissue] | Rarely involved | Commonly involved |
 | Extranodal presentation | Rare | Common |
 | Presentation | Virtually all present as enlarged nontender nodes | Two-thirds present as enlarged nontender nodes |
 | Staging | Most useful in guiding therapy | Less useful in guiding therapy |
-| Distinctive cell | **Reed-Sternberg cells**, with reactive cells making up more than 90% of the tumour | No Reed-Sternberg cells; neoplastic lymphoid cells, 85% to 90% of lymphoid neoplasms being of B-cell origin |
+| Distinctive cell | **Reed-Sternberg cells** [binucleate owl-eye giant cell], with reactive cells making up more than 90% of the tumour | No Reed-Sternberg cells; neoplastic lymphoid cells, 85% to 90% of lymphoid neoplasms being of B-cell origin |
 
 ## What is paraproteinaemia?
 
@@ -6479,7 +6477,7 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 ## Give 4 common causes of paraproteinaemia.
 
 1. **Multiple myeloma** (plasma cell myeloma), with its variants solitary plasmacytoma and smouldering myeloma.
-2. **Waldenström macroglobulinaemia**, in which high levels of IgM cause hyperviscosity.
+2. **Waldenström macroglobulinaemia** [lymphoplasmacytic lymphoma with IgM paraprotein], in which high levels of IgM cause hyperviscosity.
 3. **Heavy-chain disease**, with free heavy-chain fragments.
 4. **Immunoglobulin-related (AL) amyloidosis**, from monoclonal plasma cells secreting light chains.
 5. Monoclonal gammopathy of undetermined significance (MGUS).
@@ -6497,7 +6495,7 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 - **Bone destruction:** myeloma-derived MIP1a (CCL3) increases osteoclast formation, and Wnt pathway modulators inhibit osteoblasts. The net result is increased bone resorption, with hypercalcaemia and pathological fractures.
 - **Excess immunoglobulin of a single type** with abnormal physicochemical properties: hyperviscosity in about 7% (usually IgA or IgG3 subtype), and AL amyloidosis from certain light chains (lambda 6 and lambda 3 families).
 - **Suppression of normal humoral immunity** leads to recurrent bacterial infections; cellular immunity is relatively unaffected.
-- **Renal failure** in up to 50%; the most important factor is Bence Jones proteinuria, as light chains are toxic to renal tubular epithelial cells.
+- **Renal failure** in up to 50%; the most important factor is Bence Jones [free monoclonal light chains in the urine] proteinuria, as light chains are toxic to renal tubular epithelial cells.
 
 **Biochemical features**
 
@@ -6510,7 +6508,7 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 ## Laboratory diagnosis of myeloma.
 
 1. **Serum and urine electrophoresis:** a sharp abnormal protein spike (M protein) in place of the broad polyclonal band; confirmed and typed by **immunofixation**.
-2. **Immunoglobulins:** increased in the blood in 99% of patients, and/or light chains (**Bence Jones proteins**) in the urine. Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urine Bence Jones protein. Free light chains alone are present in about 20%, and about 1% are nonsecretory.
+2. **Immunoglobulins:** increased in the blood in 99% of patients, and/or light chains (**Bence Jones proteins** [free monoclonal light chains in the urine]) in the urine. Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urine Bence Jones protein. Free light chains alone are present in about 20%, and about 1% are nonsecretory.
 3. **Bone marrow examination:** clonal plasma cells, usually more than 30% of the cellularity; positive for CD138 and often CD56, with cytoplasmic kappa or lambda light chain.
 4. **CRAB criteria:** hypercalcaemia, renal dysfunction, anaemia and bone lesions, assessed by calcium levels, renal function and blood counts.
 5. **Radiography:** punched-out lytic defects, usually 1 to 4 cm in diameter; sometimes diffuse osteopenia.
@@ -6518,14 +6516,14 @@ In classic forms the cells die by shrinking and becoming pyknotic, called **mumm
 
 ## What is Bence-Jones protein?
 
-Free light chains, made in excess by neoplastic plasma cells, are small and are excreted in the urine, where they are called **Bence Jones proteins**.
+Free light chains, made in excess by neoplastic plasma cells, are small and are excreted in the urine, where they are called **Bence Jones proteins** [free monoclonal light chains in the urine].
 
 ## Classify immunoproliferative disorders.
 
 | Disorder | Features |
 |---|---|
 | **Multiple myeloma** (plasma cell myeloma) | Tumour masses scattered through the skeletal system; variants are **solitary plasmacytoma** (single mass in bone or soft tissue) and **smouldering myeloma** (no symptoms, high plasma M component) |
-| **Waldenström macroglobulinaemia** | High IgM levels cause hyperviscosity; usually with lymphoplasmacytic lymphoma |
+| **Waldenström macroglobulinaemia** [lymphoplasmacytic lymphoma with IgM paraprotein] | High IgM levels cause hyperviscosity; usually with lymphoplasmacytic lymphoma |
 | **Heavy-chain disease** | Synthesis and secretion of free heavy-chain fragments; seen with lymphoplasmacytic lymphoma and small bowel marginal zone lymphoma (Mediterranean lymphoma) |
 | **Immunoglobulin-related (AL) amyloidosis** | Monoclonal plasma cells secrete light chains, usually lambda, that are deposited as amyloid |
 | **Monoclonal gammopathy of undetermined significance (MGUS)** | No symptoms; small to moderately large M component; may transform to multiple myeloma or another symptomatic plasma cell neoplasm |
@@ -6539,7 +6537,7 @@ Free light chains, made in excess by neoplastic plasma cells, are small and are 
 **Morphology**
 
 - Marrow infiltrate of lymphocytes, plasma cells and plasmacytoid lymphocytes, often with mast cell hyperplasia.
-- Periodic acid–Schiff positive inclusions of immunoglobulin in the cytoplasm (**Russell bodies**) or nucleus (**Dutcher bodies**) of some plasma cells.
+- Periodic acid–Schiff positive inclusions of immunoglobulin in the cytoplasm (**Russell bodies** [eosinophilic immunoglobulin inclusions in plasma cells]) or nucleus (**Dutcher bodies** [intranuclear immunoglobulin inclusions in plasma cells]) of some plasma cells.
 - At diagnosis the tumour has usually spread to lymph nodes, spleen and liver.
 
 **Clinical features**
@@ -6547,7 +6545,7 @@ Free light chains, made in excess by neoplastic plasma cells, are small and are 
 - Weakness, fatigue and weight loss; about half have lymphadenopathy, hepatomegaly and splenomegaly; anaemia from marrow infiltration.
 - About 10% have autoimmune haemolysis from cold agglutinins (IgM antibodies that bind red cells below 37°C).
 - **Hyperviscosity syndrome:** visual impairment with venous congestion, retinal haemorrhages and exudates; headache, dizziness, deafness and stupor; bleeding, from IgM complexes with clotting factors and interference with platelet function.
-- **Cryoglobulinaemia:** precipitation of IgM in the cold, with Raynaud phenomenon and cold urticaria.
+- **Cryoglobulinaemia:** precipitation of IgM in the cold, with Raynaud phenomenon [episodic digital vasospasm] and cold urticaria.
 - Renal failure and amyloidosis from free light chains are rare, and bone destruction does not occur.
 
 **Course:** indolent; plasmapheresis relieves the symptoms of high IgM; median survival is greater than 10 years.
@@ -6555,7 +6553,7 @@ Free light chains, made in excess by neoplastic plasma cells, are small and are 
 ## How will you diagnose a case of multiple myeloma?
 
 1. **Serum and urine electrophoresis:** a sharp abnormal protein spike (M protein) in place of the broad polyclonal band; confirmed and typed by **immunofixation**.
-2. **Immunoglobulins:** increased in the blood in 99% of patients, and/or light chains (**Bence Jones proteins**) in the urine. Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urine Bence Jones protein. Free light chains alone are present in about 20%, and about 1% are nonsecretory.
+2. **Immunoglobulins:** increased in the blood in 99% of patients, and/or light chains (**Bence Jones proteins** [free monoclonal light chains in the urine]) in the urine. Most myelomas have more than 3 g/dL of serum immunoglobulin and/or more than 6 mg/dL of urine Bence Jones protein. Free light chains alone are present in about 20%, and about 1% are nonsecretory.
 3. **Bone marrow examination:** clonal plasma cells, usually more than 30% of the cellularity; positive for CD138 and often CD56, with cytoplasmic kappa or lambda light chain.
 4. **CRAB criteria:** hypercalcaemia, renal dysfunction, anaemia and bone lesions, assessed by calcium levels, renal function and blood counts.
 5. **Radiography:** punched-out lytic defects, usually 1 to 4 cm in diameter; sometimes diffuse osteopenia.
@@ -6566,8 +6564,8 @@ Free light chains, made in excess by neoplastic plasma cells, are small and are 
 - **Plasma cells increased**, usually more than 30% of the cellularity; they may infiltrate subtly or completely replace the normal marrow elements.
 - Malignant plasma cells have a perinuclear clearing from a prominent Golgi apparatus and an eccentrically placed nucleus.
 - Cytological forms range from relatively normal-looking plasma cells, plasmablasts with vesicular chromatin and a prominent single nucleolus, to bizarre multinucleated cells.
-- Cytoplasmic immunoglobulin accumulates in variants: **flame cells** with fiery red cytoplasm, **Mott cells** with grape-like cytoplasmic droplets, and cells with fibrils, crystalline rods and globules.
-- Globular inclusions are **Russell bodies** if cytoplasmic and **Dutcher bodies** if nuclear.
+- Cytoplasmic immunoglobulin accumulates in variants: **flame cells** with fiery red cytoplasm, **Mott cells** [plasma cells filled with Russell bodies] with grape-like cytoplasmic droplets, and cells with fibrils, crystalline rods and globules.
+- Globular inclusions are **Russell bodies** [eosinophilic immunoglobulin inclusions in plasma cells] if cytoplasmic and **Dutcher bodies** [intranuclear immunoglobulin inclusions in plasma cells] if nuclear.
 - Immunophenotype: positive for CD138 and often CD56, with cytoplasmic kappa or lambda light chain.
 
 ## Why is ESR sky-high in multiple myeloma?
@@ -6585,7 +6583,7 @@ Free light chains, made in excess by neoplastic plasma cells, are small and are 
 
 ## Write a short note on Bence-Jones protein and its detection in urine.
 
-**Definition:** free light chains made in excess by neoplastic plasma cells are small enough to be excreted in the urine, where they are called **Bence Jones proteins**.
+**Definition:** free light chains made in excess by neoplastic plasma cells are small enough to be excreted in the urine, where they are called **Bence Jones proteins** [free monoclonal light chains in the urine].
 
 **Detection**
 
@@ -6652,7 +6650,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 **Confirmation**
 
-1. Serum and urine electrophoresis for an M protein spike, characterised by immunofixation; Bence Jones protein in the urine.
+1. Serum and urine electrophoresis for an M protein spike, characterised by immunofixation; Bence Jones protein [free monoclonal light chains in the urine] in the urine.
 2. Bone marrow examination showing clonal plasma cells, usually more than 30% of the cellularity.
 3. CRAB criteria: hypercalcaemia, renal dysfunction, anaemia and bone lesions.
 4. Radiography showing punched-out lytic lesions.
@@ -6663,7 +6661,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 - Massive splenomegaly from extramedullary haematopoiesis, with a white cell count above 100,000 per microlitre, in an adult.
 - Blood: neutrophils, band forms, metamyelocytes, myelocytes, eosinophils and basophils; blasts usually less than 10%; platelets often increased.
-- Confirmed by detection of the **BCR::ABL fusion gene** (Philadelphia chromosome, t(9;22)) by chromosomal analysis or PCR-based tests; this separates CML from other myeloproliferative neoplasms.
+- Confirmed by detection of the **BCR::ABL fusion gene** (Philadelphia chromosome [t(9;22) producing the BCR-ABL1 fusion], t(9;22)) by chromosomal analysis or PCR-based tests; this separates CML from other myeloproliferative neoplasms.
 
 ## 10-year-old boy with weakness, fever, joint pain and gum bleeding — Clinical diagnosis? Expected PBF findings?
 
@@ -6747,7 +6745,7 @@ Reticulocytes are the newly released red cell precursors in the peripheral blood
 - Examples of shape: spherocytes in hereditary spherocytosis, sickled cells in sickle cell anaemia, macro-ovalocytes in megaloblastic anaemia, hypochromic microcytic cells in iron deficiency.
 - **Reticulocytes:** larger, with blue-red polychromatophilic cytoplasm from RNA.
 - **Rouleaux formation:** red cells stuck in linear arrays, from high M protein.
-- **White cells:** toxic granulation, Döhle bodies and vacuoles in sepsis; immature granulocytes (leukaemoid reaction, chronic myeloid leukaemia); blasts in acute leukaemia; increased basophils.
+- **White cells:** toxic granulation, Döhle bodies [pale blue cytoplasmic inclusions in neutrophils] and vacuoles in sepsis; immature granulocytes (leukaemoid reaction, chronic myeloid leukaemia); blasts in acute leukaemia; increased basophils.
 - **Platelets:** abnormally large platelets in polycythaemia vera.
 
 ## What are red cell indices?
@@ -6799,7 +6797,7 @@ Red cell indices describe the red cells measured by special instrumentation.
 
 **Definition:** the erythrocyte sedimentation rate (ESR) is the rate at which red cells settle in a vertical tube of anticoagulated blood over one hour, measured in millimetres in the first hour.
 
-**Methods:** Westergren (most commonly used), modified Westergren, Wintrobe and micro-ESR.
+**Methods:** Westergren [most commonly used], modified Westergren, Wintrobe [ESR method using a 100 mm tube] and micro-ESR.
 
 **Principle**
 
@@ -6894,11 +6892,11 @@ The **packed cell volume** (**haematocrit**) is the ratio of packed red cells to
 ## Indications of bone marrow biopsy / aspiration / examination.
 
 - **Leukaemias:** acute leukaemias in adults; essential to exclude acute leukaemia, aleukaemic leukaemia and myelodysplastic neoplasm in pancytopenic patients.
-- **Multiple myeloma** and **Waldenström macroglobulinaemia**: definitive diagnosis of myeloma requires bone marrow examination.
+- **Multiple myeloma** and **Waldenström macroglobulinaemia** [lymphoplasmacytic lymphoma with IgM paraprotein]: definitive diagnosis of myeloma requires bone marrow examination.
 - **Bone marrow metastases** and some storage diseases.
 - **Aplastic anaemia:** diagnosis rests on bone marrow biopsy.
 - Agranulocytosis, immune thrombocytopenic purpura and hypersplenism.
-- **Staging of Hodgkin lymphoma** (bone marrow biopsy).
+- **Staging of Hodgkin lymphoma** [lymphoma defined by Reed-Sternberg cells] (bone marrow biopsy).
 - **Trephine biopsy** is added when no marrow is aspirated despite repeated attempts (dry tap or blood tap), in bone marrow necrosis, metabolic bone disease and when looking for metastases.
 
 ## How is trephine biopsy done?
@@ -6913,7 +6911,7 @@ The **packed cell volume** (**haematocrit**) is the ratio of packed red cells to
 **Dry tap or blood tap:** failure to obtain marrow particles on bone marrow aspiration; reported in 2.7% to 10% of aspirates.
 
 - It is a red flag for underlying marrow pathology rather than only a failed procedure; in one series 93.7% had an underlying bone marrow pathology and 6.3% a faulty technique.
-- Causes include acute lymphoblastic leukaemia (commonest in children), non-Hodgkin lymphoma and metastatic tumours (commonest in the elderly), marrow fibrosis, and aplastic anaemia.
+- Causes include acute lymphoblastic leukaemia (commonest in children), non-Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] and metastatic tumours (commonest in the elderly), marrow fibrosis, and aplastic anaemia.
 - **The trephine biopsy must always be studied** in such cases.
 
 ## How can bone marrow be examined?
@@ -6927,11 +6925,11 @@ Bone marrow is examined by two procedures, usually done together:
 ## What are the indications of bone marrow examination/aspiration?
 
 - **Leukaemias:** acute leukaemias in adults; to exclude acute leukaemia, aleukaemic leukaemia and myelodysplastic neoplasm in pancytopenic patients.
-- **Multiple myeloma** and **Waldenström macroglobulinaemia**: definitive diagnosis of myeloma requires bone marrow examination.
+- **Multiple myeloma** and **Waldenström macroglobulinaemia** [lymphoplasmacytic lymphoma with IgM paraprotein]: definitive diagnosis of myeloma requires bone marrow examination.
 - **Bone marrow metastases** and some storage diseases.
 - **Aplastic anaemia:** diagnosis rests on bone marrow biopsy.
 - Agranulocytosis, immune thrombocytopenic purpura and hypersplenism.
-- **Staging of Hodgkin lymphoma** (bone marrow biopsy).
+- **Staging of Hodgkin lymphoma** [lymphoma defined by Reed-Sternberg cells] (bone marrow biopsy).
 - **Trephine biopsy** is added when no marrow is aspirated despite repeated attempts (dry tap or blood tap), in bone marrow necrosis, metabolic bone disease and when looking for metastases.
 
 
@@ -6940,9 +6938,9 @@ Bone marrow is examined by two procedures, usually done together:
 1. **Acute leukaemias**.
 2. **Aleukaemic leukaemia**.
 3. **Myelodysplastic neoplasm**.
-4. **Multiple myeloma and** Waldenström macroglobulinaemia.
+4. **Multiple myeloma and** Waldenström macroglobulinaemia [lymphoplasmacytic lymphoma with IgM paraprotein].
 5. **Agranulocytosis**.
-6. **Staging of Hodgkin lymphoma** (bone marrow biopsy).
+6. **Staging of Hodgkin lymphoma** [lymphoma defined by Reed-Sternberg cells] (bone marrow biopsy).
 
 
 ## Mention the site of marrow puncture in a child below 2 years.
@@ -7029,7 +7027,7 @@ Classification rests on red cell size (normocytic, microcytic, macrocytic), degr
 | **Toxic or chemical injury** | Clostridial sepsis, snake venom, lead poisoning |
 | **Membrane lipid abnormalities** | Abetalipoproteinaemia, severe hepatocellular liver disease |
 | **Sequestration** | Hypersplenism |
-| **Stem cell depletion** | Fanconi anaemia, telomerase defects |
+| **Stem cell depletion** | Fanconi anaemia [inherited DNA-repair defect causing marrow failure], telomerase defects |
 | **Nutritional deficiencies** | Vitamin B12 and folate deficiency; iron deficiency |
 | **Erythropoietin deficiency** | Renal failure, anaemia of chronic inflammation |
 | **Immune-mediated injury of progenitors** | Aplastic anaemia, pure red cell aplasia |
@@ -7232,7 +7230,7 @@ Microcytic hypochromic anaemias are caused by disorders of haemoglobin synthesis
 
 **Peripheral blood:** small (microcytic) and pale (hypochromic) red cells; enlarged zone of central pallor; pencil cells.
 
-**Tissue changes in severe, long-standing deficiency:** koilonychia, alopecia, atrophic changes in the tongue and gastric mucosa, and intestinal malabsorption; pica, a craving for non-foodstuffs such as clay, or for ice (pagophagia). Oesophageal web with microcytic hypochromic anaemia and atrophic glossitis forms the triad of Plummer-Vinson syndrome.
+**Tissue changes in severe, long-standing deficiency:** koilonychia, alopecia, atrophic changes in the tongue and gastric mucosa, and intestinal malabsorption; pica, a craving for non-foodstuffs such as clay, or for ice (pagophagia). Oesophageal web with microcytic hypochromic anaemia and atrophic glossitis forms the triad of Plummer-Vinson syndrome [oesophageal web with iron deficiency anaemia].
 
 
 ## Give the laboratory diagnosis/blood picture of iron deficiency anemia.
@@ -7474,7 +7472,7 @@ The diagnosis is confirmed by an outpouring of reticulocytes and a rise in haema
 
 ## Write a short note on Schilling test.
 
-The Schilling test finds the cause of vitamin B12 deficiency by measuring absorption of an oral dose of radiolabelled vitamin B12 as excretion in the urine.
+The Schilling test [vitamin B12 absorption test] finds the cause of vitamin B12 deficiency by measuring absorption of an oral dose of radiolabelled vitamin B12 as excretion in the urine.
 
 **Stage 1:** radiolabelled (cobalt) vitamin B12 is given by mouth, after an intramuscular dose of unlabelled vitamin B12 to saturate body stores; urine is collected for 24 hours. Less than 10% excreted indicates malabsorption.
 
@@ -7553,7 +7551,7 @@ Premature destruction of red cells is the removal of red cells before the normal
 
 ## Haemolytic anaemias due to extracorpuscular defect.
 
-The textbook does not use the term; the causes in its classification that act on the red cell from outside are:
+Causes that act on the red cell from outside:
 
 1. **Antibody-mediated destruction (immunohaemolytic anaemia):** warm antibody type (IgG), cold agglutinin type (IgM) and cold haemolysin type (IgG); also haemolytic disease of the newborn (Rh disease), transfusion reactions and drug-induced haemolysis.
 2. **Mechanical trauma:** microangiopathic haemolytic anaemia (disseminated intravascular coagulation, thrombotic thrombocytopenic purpura, haemolytic uraemic syndrome), cardiac valve prostheses, and repetitive physical trauma.
@@ -7595,11 +7593,11 @@ The textbook does not use the term; the causes in its classification that act on
 1. **Reticulocytosis**, with larger red cells that show blue-red polychromatophilic cytoplasm.
 2. Anisocytosis and poikilocytosis, with changes specific to the cause:
    - **Spherocytes:** small, dark-staining red cells lacking central pallor, in hereditary spherocytosis and autoimmune haemolytic anaemia.
-   - **Heinz bodies and bite cells**, in G6PD deficiency.
+   - **Heinz bodies [denatured haemoglobin inclusions in red cells] and bite cells**, in G6PD deficiency.
    - **Irreversibly sickled cells** and target cells, in sickle cell disease.
    - **Target cells**, basophilic stippling and fragmented red cells, in thalassaemia.
    - **Schistocytes (fragmented red cells)**, burr cells, helmet cells and triangle cells, in microangiopathic haemolytic anaemia and with defective cardiac valves.
-3. **Howell-Jolly bodies** (small nuclear remnants) when the spleen is absent or nonfunctional.
+3. **Howell-Jolly bodies** [nuclear remnants in red cells, seen after splenectomy] (small nuclear remnants) when the spleen is absent or nonfunctional.
 
 ## Conditions where nucleated RBCs are seen in PBF.
 
@@ -7645,10 +7643,10 @@ Drug-induced warm antibody type acts by two mechanisms:
 |---|---|---|
 | Antibody | **IgG** (less commonly IgA), active at 37°C | **IgM**, binds avidly at 0°C to 4°C but not at 37°C |
 | Frequency | About 80% of immunohaemolytic anaemia | 15% to 20% |
-| Cause | About 50% idiopathic (primary); others secondary to autoimmune disorders (particularly systemic lupus erythematosus), drugs or lymphoid neoplasms | Transient after infections (Mycoplasma pneumoniae, Epstein-Barr virus, cytomegalovirus, influenza, HIV); chronic form with B-cell neoplasms or idiopathic |
+| Cause | About 50% idiopathic (primary); others secondary to autoimmune disorders (particularly systemic lupus erythematosus), drugs or lymphoid neoplasms | Transient after infections (Mycoplasma pneumoniae, Epstein-Barr virus [herpesvirus that causes infectious mononucleosis], cytomegalovirus, influenza, HIV); chronic form with B-cell neoplasms or idiopathic |
 | Mechanism | IgG-coated red cells bind Fc receptors on phagocytes, which remove red cell membrane (partial phagocytosis); cells become **spherocytes** | IgM binds in cold parts of the body, agglutinates red cells and fixes complement; as blood warms IgM is released, leaving sublytic C3b, which acts as an opsonin |
 | Haemolysis | Mostly extravascular, in the spleen; moderate splenomegaly | Extravascular in spleen, liver and bone marrow; intravascular haemolysis usually not seen |
-| Clinical features | Anaemia, splenomegaly, jaundice | Pallor, cyanosis and Raynaud phenomenon in fingers, toes and ears exposed to cold |
+| Clinical features | Anaemia, splenomegaly, jaundice | Pallor, cyanosis and Raynaud phenomenon [episodic digital vasospasm] in fingers, toes and ears exposed to cold |
 | Treatment | Remove initiating factors such as drugs; immunosuppressive drugs and splenectomy | Avoid cold temperatures |
 
 Cold haemolysin type (paroxysmal cold haemoglobinuria): IgG antibodies against the P blood group antigen bind in cool peripheral regions, and complement-mediated lysis occurs in the warm core of the body; mostly in children after viral infections.
@@ -7672,7 +7670,7 @@ Cold haemolysin type (paroxysmal cold haemoglobinuria): IgG antibodies against t
 9. Pigment gallstones in chronic haemolysis.
 10. Extravascular haemolysis: splenomegaly, from hyperplasia of phagocytes.
 11. Intravascular haemolysis: haemoglobinaemia, haemoglobinuria and haemosiderinuria; no splenomegaly.
-12. Positive direct Coombs test in immunohaemolytic anaemia.
+12. Positive direct Coombs test [antiglobulin test for antibody-coated red cells] in immunohaemolytic anaemia.
 
 ## Write down the evidence of intravascular haemolysis.
 
@@ -7689,7 +7687,7 @@ Causes: mechanical injury, complement fixation, intracellular parasites (falcipa
 
 ## Write a short note on Coombs' test (direct).
 
-**Principle.** The direct Coombs antiglobulin test detects antibodies or complement on the surface of the patient's red cells. The patient's red cells are mixed with sera containing antibodies specific for human immunoglobulin or complement. If either is present on the red cells, the antibodies cause **agglutination**, seen as clumping.
+**Principle.** The direct Coombs [antiglobulin test for antibody-coated red cells] antiglobulin test detects antibodies or complement on the surface of the patient's red cells. The patient's red cells are mixed with sera containing antibodies specific for human immunoglobulin or complement. If either is present on the red cells, the antibodies cause **agglutination**, seen as clumping.
 
 **Uses**
 - Diagnosis of **immunohaemolytic anaemia**, which requires detection of antibodies or complement on the patient's red cells.
@@ -7757,7 +7755,7 @@ Haemoglobin is a tetrameric protein composed of two pairs of globin chains, each
 
 **Morphology**
 
-- Blood: irreversibly sickled cells, reticulocytosis, target cells; Howell-Jolly bodies from asplenia.
+- Blood: irreversibly sickled cells, reticulocytosis, target cells; Howell-Jolly bodies [nuclear remnants in red cells, seen after splenectomy] from asplenia.
 - Hyperplastic marrow, with bone resorption and a "crewcut" skull on X-ray; extramedullary haemopoiesis.
 - Hyperbilirubinaemia and pigment gallstones.
 - Spleen: autoinfarcted remnant.
@@ -7845,7 +7843,7 @@ They fall into three major classes:
 
 ## Confirmatory test for thalassaemia.
 
-The textbook names no single confirmatory test; the diagnostic tests it describes are:
+Diagnostic tests:
 
 - **Haemoglobin electrophoresis:** in beta-thalassaemia major the major haemoglobin is HbF, markedly elevated, with HbA absent or small; in beta-thalassaemia minor HbA2 is increased to 4% to 8%.
 - **Molecular analysis of DNA** for prenatal diagnosis.
@@ -7932,7 +7930,7 @@ The stagnation reflects the microvascular occlusion that underlies the disease:
 
 ## Laboratory diagnosis of sickle cell anaemia.
 
-1. **Peripheral blood:** variable numbers of **irreversibly sickled cells**, reticulocytosis and target cells (from red cell dehydration); Howell-Jolly bodies from asplenia; anisocytosis and poikilocytosis.
+1. **Peripheral blood:** variable numbers of **irreversibly sickled cells**, reticulocytosis and target cells (from red cell dehydration); Howell-Jolly bodies [nuclear remnants in red cells, seen after splenectomy] from asplenia; anisocytosis and poikilocytosis.
 2. **Bone marrow:** hyperplastic from compensatory erythroid hyperplasia.
 3. **Hyperbilirubinaemia** from the increased breakdown of haemoglobin.
 4. **Confirmation:** the diagnosis is suggested by the clinical findings and the presence of irreversibly sickled red cells, and is confirmed by various tests for sickle haemoglobin.
@@ -7949,7 +7947,7 @@ The stagnation reflects the microvascular occlusion that underlies the disease:
    - Chemicals and drugs: dose-related marrow suppression (many cancer chemotherapy drugs, benzene) or idiosyncratic reactions (chloramphenicol, gold salts).
    - Viral infections, most commonly viral hepatitis (about 5% of cases).
    - Whole-body irradiation.
-   - Inherited defects: Fanconi anaemia (autosomal recessive defect in DNA repair) and telomerase defects.
+   - Inherited defects: Fanconi anaemia [autosomal recessive defect in DNA repair] and telomerase defects.
    - Idiopathic in about 65% of cases.
 2. **Megaloblastic anaemia:** impaired DNA synthesis causes most precursors to undergo apoptosis in the marrow (ineffective haematopoiesis).
 3. **Bone marrow replacement:** leukaemia, disseminated cancer and granulomatous disease (myelophthisic marrow failure).
@@ -8012,9 +8010,9 @@ The stagnation reflects the microvascular occlusion that underlies the disease:
 1. **Chemicals and drugs** (most cases of known aetiology)
    - Dose-related and reversible marrow suppression: many cancer chemotherapy drugs and the organic solvent benzene.
    - Idiosyncratic and unpredictable: chloramphenicol and gold salts.
-2. **Viral infections:** viral hepatitis (about 5% of cases), cytomegalovirus, Epstein-Barr virus and herpes zoster (varicella zoster).
+2. **Viral infections:** viral hepatitis (about 5% of cases), cytomegalovirus, Epstein-Barr virus [herpesvirus that causes infectious mononucleosis] and herpes zoster (varicella zoster).
 3. **Whole-body irradiation:** therapeutic irradiation or nuclear accidents, which destroy haemopoietic stem cells in a dose-dependent fashion.
-4. **Fanconi anaemia:** autosomal recessive defect of a multiprotein complex required for DNA repair, with congenital anomalies such as kidney and spleen hypoplasia and thumb or radial anomalies.
+4. **Fanconi anaemia [inherited DNA-repair defect causing marrow failure]:** autosomal recessive defect of a multiprotein complex required for DNA repair, with congenital anomalies such as kidney and spleen hypoplasia and thumb or radial anomalies.
 5. **Telomerase defects:** found in 5% to 10% of adult-onset aplastic anaemia; abnormally short telomeres are found in the marrow cells of as many as half of those affected.
 6. **Idiopathic:** about 65% of cases.
 
@@ -8067,9 +8065,9 @@ Examples:
 
 | Group | Examples |
 |---|---|
-| **Vessel wall abnormalities** | Infections (meningococcaemia, septicaemia, infective endocarditis, rickettsioses); drug reactions; scurvy and Ehlers-Danlos syndrome; Cushing syndrome and ageing; Henoch-Schönlein purpura; hereditary haemorrhagic telangiectasia; perivascular amyloidosis |
+| **Vessel wall abnormalities** | Infections (meningococcaemia, septicaemia, infective endocarditis, rickettsioses); drug reactions; scurvy and Ehlers-Danlos syndrome [inherited collagen disorder with hyperextensible skin and joints]; Cushing syndrome [glucocorticoid excess] and ageing; Henoch-Schönlein purpura [IgA vasculitis]; hereditary haemorrhagic telangiectasia; perivascular amyloidosis |
 | **Platelet disorders** | Thrombocytopenia (decreased production, decreased survival, sequestration, dilution); immune thrombocytopenic purpura; thrombotic microangiopathies (TTP and HUS) |
-| **Coagulation disorders** | Inherited: haemophilia A, haemophilia B, von Willebrand disease. Acquired: vitamin K deficiency, liver disease, disseminated intravascular coagulation |
+| **Coagulation disorders** | Inherited: haemophilia A, haemophilia B, von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor]. Acquired: vitamin K deficiency, liver disease, disseminated intravascular coagulation |
 
 ## Approach to diagnosing a patient with a bleeding disorder.
 
@@ -8086,7 +8084,7 @@ Tests used:
 - **Prothrombin time (PT):** assesses the extrinsic and common pathways; prolonged by deficiency or dysfunction of factor V, factor VII, factor X, prothrombin or fibrinogen.
 - **Partial thromboplastin time (PTT):** assesses the intrinsic and common pathways; prolonged by deficiency or dysfunction of factors V, VIII, IX, X, XI or XII, prothrombin or fibrinogen, or by interfering antiphospholipid antibodies.
 - **Platelet count:** reference range 150,000 to 350,000 per µL; confirm abnormal counts on a peripheral blood film, as clumping can cause spurious thrombocytopenia.
-- **Tests of platelet function:** platelet aggregation, and quantitative and qualitative tests of von Willebrand factor.
+- **Tests of platelet function:** platelet aggregation, and quantitative and qualitative tests of von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII].
 - **Specific tests:** levels of specific clotting factors, fibrinogen, fibrin split products and circulating anticoagulants.
 
 ## What are the causes of haemorrhagic disorders?
@@ -8094,9 +8092,9 @@ Tests used:
 1. **Vessel wall abnormalities**
    - Infections (meningococcaemia, other septicaemias, infective endocarditis, rickettsioses): microbial damage to the microvasculature (vasculitis) and disseminated intravascular coagulation.
    - Drug reactions: drug-induced immune complexes in vessel walls (hypersensitivity vasculitis).
-   - Scurvy and Ehlers-Danlos syndrome: collagen defects that weaken vessel walls.
-   - Acquired vascular fragility in older adults; Cushing syndrome.
-   - Henoch-Schönlein purpura: immune complex deposition in vessels.
+   - Scurvy and Ehlers-Danlos syndrome [inherited collagen disorder with hyperextensible skin and joints]: collagen defects that weaken vessel walls.
+   - Acquired vascular fragility in older adults; Cushing syndrome [glucocorticoid excess].
+   - Henoch-Schönlein purpura [IgA vasculitis]: immune complex deposition in vessels.
    - Hereditary haemorrhagic telangiectasia: autosomal dominant; dilated, thin-walled vessels.
    - Perivascular amyloidosis, most common with AL amyloidosis.
 2. **Platelet deficiency or dysfunction**
@@ -8104,9 +8102,9 @@ Tests used:
    - Decreased survival: immune (immune thrombocytopenic purpura, alloimmune, drug-induced) or nonimmune (DIC, thrombotic microangiopathies, mechanical injury from prosthetic heart valves).
    - Sequestration in an enlarged spleen.
    - Dilution after massive transfusion.
-   - Platelet function defects from von Willebrand factor deficiency.
+   - Platelet function defects from von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII] deficiency.
 3. **Derangement of coagulation**
-   - Inherited: haemophilia A, haemophilia B, von Willebrand disease.
+   - Inherited: haemophilia A, haemophilia B, von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor].
    - Acquired: vitamin K deficiency, severe parenchymal liver disease, DIC, and inhibitory autoantibodies.
 
 ## What do you mean by coagulation disorders?
@@ -8119,7 +8117,7 @@ Bleeding commonly manifests as large post-traumatic ecchymoses or haematomas, or
 
 | Type | Features | Examples |
 |---|---|---|
-| **Inherited** | Typically affect a single clotting factor | Factor VIII deficiency (haemophilia A); factor IX deficiency (haemophilia B); von Willebrand factor deficiency (von Willebrand disease) |
+| **Inherited** | Typically affect a single clotting factor | Factor VIII deficiency (haemophilia A); factor IX deficiency (haemophilia B); von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII] deficiency (von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor]) |
 | **Acquired** | Usually involve multiple factors, from decreased protein synthesis or a shortened protein half-life | Vitamin K deficiency (factors II, VII, IX, X and protein C); severe parenchymal liver disease; DIC, in which multiple factors are consumed |
 | **Acquired, single factor** | Rare; caused by inhibitory autoantibodies | Autoantibody to a single clotting factor |
 
@@ -8127,8 +8125,8 @@ Bleeding commonly manifests as large post-traumatic ecchymoses or haematomas, or
 
 Bleeding time is a test of platelet function in which a standardised incision is made and the time taken for the bleeding to stop is measured.
 
-- **Ivy method:** the most common; a cuff on the arm is inflated to 40 mm of mercury, a standardised device makes a small cut on the inner forearm, and the blood is blotted every 2 minutes until bleeding stops.
-- **Duke method:** a lancet stab wound is made in a cleaned finger or earlobe, and timed in the same way.
+- **Ivy method [bleeding time using a blood-pressure cuff and a standard skin incision]:** the most common; a cuff on the arm is inflated to 40 mm of mercury, a standardised device makes a small cut on the inner forearm, and the blood is blotted every 2 minutes until bleeding stops.
+- **Duke method [bleeding time from a lancet puncture of the earlobe or fingertip]:** a lancet stab wound is made in a cleaned finger or earlobe, and timed in the same way.
 
 It is an older test, time-consuming and difficult to standardise, which has been discarded.
 
@@ -8140,8 +8138,8 @@ It is an older test, time-consuming and difficult to standardise, which has been
 
 | Test | Normal limit | Concerning (prolonged) |
 |---|---|---|
-| **Bleeding time, Duke method** | Under 3 minutes | Above 5 minutes |
-| **Bleeding time, Ivy method** | Under 8 minutes | Above 10 minutes |
+| **Bleeding time, Duke method** [bleeding time from a lancet puncture of the earlobe or fingertip] | Under 3 minutes | Above 5 minutes |
+| **Bleeding time, Ivy method** [bleeding time using a blood-pressure cuff and a standard skin incision] | Under 8 minutes | Above 10 minutes |
 | **Clotting time** (whole blood, glass tube) | 9 to 15 minutes | Any defect in the intrinsic pathway prolongs it |
 
 ## Tests / screening tests / investigations for bleeding (haemorrhagic) disorders.
@@ -8149,7 +8147,7 @@ It is an older test, time-consuming and difficult to standardise, which has been
 1. **Prothrombin time (PT):** assesses the extrinsic and common coagulation pathways. Clotting of plasma after addition of tissue thromboplastin and calcium is measured in seconds. Prolonged by deficiency or dysfunction of factor V, factor VII, factor X, prothrombin or fibrinogen.
 2. **Partial thromboplastin time (PTT):** assesses the intrinsic and common pathways. Clotting of plasma after addition of kaolin, cephalin and calcium is measured in seconds. Prolonged by deficiency or dysfunction of factors V, VIII, IX, X, XI or XII, prothrombin or fibrinogen, or by interfering antiphospholipid antibodies.
 3. **Platelet count:** reference range 150,000 to 350,000 per µL, by an electronic particle counter; confirm abnormal counts on a peripheral blood film, as clumping can cause spurious thrombocytopenia.
-4. **Tests of platelet function:** platelet aggregation tests, and quantitative and qualitative tests of von Willebrand factor, including the **ristocetin agglutination test**.
+4. **Tests of platelet function:** platelet aggregation tests, and quantitative and qualitative tests of von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII], including the **ristocetin agglutination test**.
 5. **Specific tests:** levels of specific clotting factors, fibrinogen, fibrin split products (particularly D-dimers) and circulating anticoagulants.
 6. **Bleeding time:** an older test, time-consuming and difficult to standardise, which has been discarded.
 
@@ -8185,21 +8183,21 @@ The prothrombin time is prolonged by deficiency or dysfunction of factor V, fact
 
 ## Why are both bleeding time and clotting time prolonged in von Willebrand disease?
 
-- **Bleeding time (platelet function):** vWF promotes the adhesion of platelets to the subendothelial matrix, so patients with von Willebrand disease have defects in platelet function despite normal platelet counts; the level of active vWF, measured as ristocetin cofactor activity, is reduced.
+- **Bleeding time (platelet function):** vWF promotes the adhesion of platelets to the subendothelial matrix, so patients with von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor] have defects in platelet function despite normal platelet counts; the level of active vWF, measured as ristocetin cofactor activity, is reduced.
 - **Clotting time (intrinsic pathway):** vWF stabilises factor VIII in the circulation, so a deficiency of vWF lowers factor VIII; type 1 and type 3 disease are associated with a prolonged PTT.
 
 ## What is haemophilia?
 
 **Haemophilia A** is the most common hereditary disease associated with life-threatening bleeding. It is caused by mutations in the gene encoding factor VIII, an essential cofactor for factor IX in the coagulation cascade, and is inherited as an X-linked recessive trait.
 
-**Haemophilia B** (Christmas disease) is an X-linked disorder caused by mutations in coagulation factor IX; it is clinically identical to haemophilia A.
+**Haemophilia B** (Christmas disease [haemophilia B, factor IX deficiency]) is an X-linked disorder caused by mutations in coagulation factor IX; it is clinically identical to haemophilia A.
 
 ## Classify haemophilia.
 
 | Type | Deficient factor | Inheritance |
 |---|---|---|
 | **Haemophilia A** | Factor VIII | X-linked recessive |
-| **Haemophilia B** (Christmas disease) | Factor IX | X-linked recessive |
+| **Haemophilia B** (Christmas disease [haemophilia B, factor IX deficiency]) | Factor IX | X-linked recessive |
 
 Haemophilia A is graded by the level of factor VIII activity:
 
@@ -8293,10 +8291,10 @@ A platelet count below 150,000 per µL is thrombocytopenia. The causes fall into
 
 | Group | Examples |
 |---|---|
-| **Increased fragility of vessels** | Infections (meningococcaemia, septicaemia, infective endocarditis, rickettsioses); drug reactions; scurvy and Ehlers-Danlos syndrome; Cushing syndrome and ageing; Henoch-Schönlein purpura; hereditary haemorrhagic telangiectasia; perivascular amyloidosis |
+| **Increased fragility of vessels** | Infections (meningococcaemia, septicaemia, infective endocarditis, rickettsioses); drug reactions; scurvy and Ehlers-Danlos syndrome [inherited collagen disorder with hyperextensible skin and joints]; Cushing syndrome [glucocorticoid excess] and ageing; Henoch-Schönlein purpura [IgA vasculitis]; hereditary haemorrhagic telangiectasia; perivascular amyloidosis |
 | **Platelet deficiency: thrombocytopenia** | Decreased production, decreased survival, sequestration, dilution; immune thrombocytopenic purpura; thrombotic microangiopathies (thrombotic thrombocytopenic purpura, haemolytic uraemic syndrome) |
-| **Platelet dysfunction** | Defects of adhesion (Bernard-Soulier syndrome), aggregation (Glanzmann thrombasthenia) and secretion (storage pool disorders); acquired: aspirin and other NSAIDs, uraemia |
-| **Derangement of coagulation: inherited** | Haemophilia A (factor VIII), haemophilia B (factor IX), von Willebrand disease |
+| **Platelet dysfunction** | Defects of adhesion (Bernard-Soulier syndrome [inherited platelet GPIb deficiency with giant platelets]), aggregation (Glanzmann thrombasthenia) and secretion (storage pool disorders); acquired: aspirin and other NSAIDs, uraemia |
+| **Derangement of coagulation: inherited** | Haemophilia A (factor VIII), haemophilia B (factor IX), von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor] |
 | **Derangement of coagulation: acquired** | Vitamin K deficiency, severe liver disease, disseminated intravascular coagulation, inhibitory autoantibodies |
 
 ## What screening tests are done for bleeding disorders (with interpretation)?
@@ -8306,7 +8304,7 @@ A platelet count below 150,000 per µL is thrombocytopenia. The causes fall into
 | **Prothrombin time (PT)** | Extrinsic and common pathways | Prolonged in deficiency or dysfunction of factor V, VII, X, prothrombin or fibrinogen |
 | **Partial thromboplastin time (PTT)** | Intrinsic and common pathways | Prolonged in deficiency or dysfunction of factors V, VIII, IX, X, XI, XII, prothrombin or fibrinogen, or by antiphospholipid antibodies |
 | **Platelet count** | Platelet number; reference range 150,000 to 350,000 per µL | Less than 150,000 per µL is thrombocytopenia; 20,000 to 50,000 aggravates bleeding after trauma; less than 20,000 may cause spontaneous bleeding; confirm on a blood film, since clumping gives spurious thrombocytopenia |
-| **Tests of platelet function** | Platelet aggregation; quantitative and qualitative tests of von Willebrand factor | Used when the count is normal but platelet function is suspected |
+| **Tests of platelet function** | Platelet aggregation; quantitative and qualitative tests of von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII] | Used when the count is normal but platelet function is suspected |
 | **Specific tests** | Individual clotting factors, fibrinogen, fibrin split products (D-dimers), circulating anticoagulants | Used to pin down the defect |
 
 Bleeding time is an older test, now discarded because it is time-consuming and difficult to standardise.
@@ -8328,7 +8326,7 @@ Bleeding time is an older test, now discarded because it is time-consuming and d
 
 ## What are the causes of gum bleeding?
 
-1. **Vessel wall abnormalities:** small haemorrhages in the skin or mucous membranes, particularly the gingivae. Causes include infections (meningococcaemia, septicaemia, infective endocarditis), drug reactions, scurvy, Ehlers-Danlos syndrome, Henoch-Schönlein purpura, hereditary haemorrhagic telangiectasia and perivascular amyloidosis.
+1. **Vessel wall abnormalities:** small haemorrhages in the skin or mucous membranes, particularly the gingivae. Causes include infections (meningococcaemia, septicaemia, infective endocarditis), drug reactions, scurvy, Ehlers-Danlos syndrome [inherited collagen disorder with hyperextensible skin and joints], Henoch-Schönlein purpura [IgA vasculitis], hereditary haemorrhagic telangiectasia and perivascular amyloidosis.
 2. **Chronic immune thrombocytopenic purpura:** easy bruising, nosebleeds and gingival bleeding from minor trauma.
 3. **Thrombocytopenia:** spontaneous bleeding from small vessels, in the skin and mucous membranes.
 4. **Coagulation factor deficiencies:** prolonged bleeding after a tooth extraction.
@@ -8379,7 +8377,7 @@ Chronic ITP may be secondary (systemic lupus erythematosus, HIV infection, B-cel
 
 ## Write a short note on von Willebrand disease.
 
-**Definition.** Autosomal dominant disorder caused by mutations in von Willebrand factor (vWF), a large protein that promotes the adhesion of platelets to subendothelial collagen and stabilises factor VIII.
+**Definition.** Autosomal dominant disorder caused by mutations in von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII] (vWF), a large protein that promotes the adhesion of platelets to subendothelial collagen and stabilises factor VIII.
 
 **Factor VIII and vWF**
 - Factor VIII is a cofactor of factor IX; vWF is made by endothelial cells and megakaryocytes.
@@ -8485,7 +8483,7 @@ Blood groups are classified by the red cell antigens that define them. The two s
 | **ABO** | A, B, AB and O | Presence of antigen A, antigen B, both, or neither on the red cells |
 | **Rh** | Rh positive and Rh negative | Presence or absence of the D antigen on the red cells |
 
-Other red cell antigens, such as Kell and Kidd, can cause delayed haemolytic transfusion reactions.
+Other red cell antigens, such as Kell [red cell blood group system] and Kidd [red cell blood group system], can cause delayed haemolytic transfusion reactions.
 
 ## Name the ABO and Rh blood groups with their agglutinins.
 
@@ -8510,7 +8508,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 1. **Major crossmatch** (standard test): donor red cells are mixed with recipient serum or plasma.
 2. **Immediate spin phase:** donor red cells in saline are added to the patient serum, mixed and centrifuged for 15 to 30 seconds; agglutination or **haemolysis** is read (detects ABO incompatibility only; misses most IgG antibodies such as anti-D, anti-K, anti-Jka, anti-Fya).
 3. **37°C incubation phase:** donor red cells in a potentiating agent are added to the patient serum and incubated at 37°C.
-4. **Antiglobulin phase:** the cells are washed, **antihuman globulin** (Coombs reagent) is added, the mixture is centrifuged for 15 to 30 seconds and read for agglutination; agglutination means patient IgG is bound to the donor antigen.
+4. **Antiglobulin phase:** the cells are washed, **antihuman globulin** (Coombs [antiglobulin test for antibody-coated red cells] reagent) is added, the mixture is centrifuged for 15 to 30 seconds and read for agglutination; agglutination means patient IgG is bound to the donor antigen.
 5. **Minor crossmatch:** donor plasma with recipient cells; largely obsolete for packed red cells because little donor plasma remains.
 6. **Electronic crossmatch** is allowed only if all four conditions are met:
 - Two ABO determinations, one on the current specimen
@@ -8546,7 +8544,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 | **Red cells** | Haemoglobin below 7.0 g/dL (target 8.0 g/dL in cardiac disease); haemoglobin below 100 g/L with high risk of myocardial ischaemia; major active bleeding |
 | **Platelets** | Count below 10,000 per microlitre; below 20,000 with fever, neutropenia or risk of intracranial haemorrhage; below 50,000 with active bleeding or an invasive procedure; below 80,000 for neurosurgery or eye surgery; platelet function defects with bleeding |
 | **Fresh frozen plasma** | INR above 1.5 with an invasive procedure or with active bleeding; DIC with bleeding; liver disease with bleeding; massive haemorrhage; warfarin reversal in life-threatening bleeding; plasma exchange for TTP |
-| **Cryoprecipitate** | Active bleeding with fibrinogen below 1.5 g/L; DIC with significant bleeding and fibrinogen below 1.0 g/L; hereditary hypofibrinogenaemia, haemophilia and von Willebrand disease |
+| **Cryoprecipitate** | Active bleeding with fibrinogen below 1.5 g/L; DIC with significant bleeding and fibrinogen below 1.0 g/L; hereditary hypofibrinogenaemia, haemophilia and von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor] |
 
 
 ## Blood components used in transfusion.
@@ -8557,7 +8555,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 | **Packed red cells** | Symptomatic anaemia and surgical blood loss | 1 to 6°C; 35 days (CPDA-1), 42 days (additive solution) |
 | **Platelet concentrate** | Prevent or treat bleeding in thrombocytopenia | 20 to 24°C with constant agitation; 5 days for a single unit |
 | **Fresh frozen plasma** | Replaces labile and stable clotting factors | At or below minus 18°C for 12 months; after thawing 24 hours at 1 to 6°C |
-| **Cryoprecipitate** | Source of factor VIII, fibrinogen and von Willebrand factor; haemophilia, von Willebrand disease, DIC, low fibrinogen | At or below minus 18°C for 1 year |
+| **Cryoprecipitate** | Source of factor VIII, fibrinogen and von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII]; haemophilia, von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor], DIC, low fibrinogen | At or below minus 18°C for 1 year |
 | **Granulocytes** | Neutropenic patients with culture-proven gram-negative infection unresponsive to antibiotics | 20 to 24°C for 24 hours; infused as soon as possible |
 
 
@@ -8568,7 +8566,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 3. **Hepatitis C:** anti-HCV immunoassay, or preferably a combined antigen and antibody assay.
 4. **Syphilis:** treponemal antibody test (TPHA or EIA).
 5. **Malaria:** thick film or antigen EIA in endemic areas (selective).
-6. **Chagas disease, HTLV-I/II and CMV:** antibody tests where indicated (selective).
+6. **Chagas disease [Trypanosoma cruzi infection], HTLV-I/II and CMV:** antibody tests where indicated (selective).
 7. ABO and RhD grouping is done on all donations; only units non-reactive on all tests are released.
 
 
@@ -8588,7 +8586,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 1. **Viruses:** HIV, hepatitis C and hepatitis B; estimated rates are 1 in 1.5 million, 1 in 1.2 million and 1 in 1 million units respectively; also West Nile virus, HTLV-I/II and CMV.
 2. **Bacteria:** mostly skin flora contaminating the unit at collection; symptomatic contamination is much more common with platelets (as high as 1 in 5000) than with red cells, because platelets are stored at room temperature.
 3. **Syphilis**
-4. **Protozoa:** malaria, Chagas disease (trypanosomes) and babesia.
+4. **Protozoa:** malaria, Chagas disease [Trypanosoma cruzi infection] (trypanosomes) and babesia.
 5. Emerging agents: variant CJD, dengue, chikungunya.
 
 
@@ -8602,7 +8600,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 | **TRALI** | Transfusion-related acute lung injury; sudden respiratory failure during or soon after transfusion; bilateral pulmonary infiltrates not responding to diuretics; fever, hypotension and hypoxaemia; incidence less than 1 in 10,000; mortality 5% in uncomplicated cases, up to 67% in the severely ill |
 | **Bacterial infection** | Fever, chills and hypotension; more common with platelets |
 | **Circulatory overload** | About 1% of transfusions; respiratory distress or hypertension within 12 hours |
-| **Delayed haemolytic** | IgG antibodies to antigens of previous sensitisation; extravascular haemolysis; positive direct Coombs test, low haptoglobin, raised LDH; antibodies to Rh, Kell and Kidd may cause severe reactions; occurs after 24 hours, usually about 2 weeks and up to 30 days |
+| **Delayed haemolytic** | IgG antibodies to antigens of previous sensitisation; extravascular haemolysis; positive direct Coombs test [antiglobulin test for antibody-coated red cells], low haptoglobin, raised LDH; antibodies to Rh, Kell [red cell blood group system] and Kidd [red cell blood group system] may cause severe reactions; occurs after 24 hours, usually about 2 weeks and up to 30 days |
 | **Viral infection** | HIV, hepatitis C and hepatitis B |
 | **Graft-versus-host disease** | 4 to 30 days after transfusion |
 | **Post-transfusion purpura** | 5 to 10 days after transfusion |
@@ -8641,7 +8639,7 @@ The anti-A and anti-B antibodies occur naturally, mainly IgM and IgG; anti-D is 
 
 - Cause: preformed IgM antibodies against donor red cells fix complement; most commonly an ABO-incompatible unit given through an error in patient identification or tube labelling.
 - **Intravascular haemolysis** and haemoglobinuria.
-- Fever, shaking chills and flank pain appear rapidly; direct Coombs test is typically positive.
+- Fever, shaking chills and flank pain appear rapidly; direct Coombs test [antiglobulin test for antibody-coated red cells] is typically positive.
 - Signs and symptoms are due to complement activation rather than intravascular haemolysis itself.
 - Free haemoglobin causes **acute kidney injury** with reduced urine output.
 - **DIC**, with diffuse bleeding.
@@ -8694,7 +8692,7 @@ An **anticoagulant** is a chemical substance that prevents blood from clotting. 
 | **Packed red cells** | Symptomatic anaemia and surgical blood loss |
 | **Platelet concentrate** | Prevent or treat bleeding in thrombocytopenia |
 | **Fresh frozen plasma** | Replaces labile and stable clotting factors |
-| **Cryoprecipitate** | Source of factor VIII, fibrinogen and von Willebrand factor; haemophilia, von Willebrand disease, DIC, low fibrinogen |
+| **Cryoprecipitate** | Source of factor VIII, fibrinogen and von Willebrand factor [platelet-adhesion glycoprotein that carries factor VIII]; haemophilia, von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor], DIC, low fibrinogen |
 | **Granulocytes** | Neutropenic patients with culture-proven gram-negative infection unresponsive to antibiotics |
 
 ## What are the hazards/complications of blood transfusion?
@@ -8707,7 +8705,7 @@ An **anticoagulant** is a chemical substance that prevents blood from clotting. 
 | **Transfusion-related acute lung injury (TRALI)** | Sudden respiratory failure during or soon after transfusion; bilateral pulmonary infiltrates not responding to diuretics; fever, hypotension and hypoxaemia; incidence less than 1 in 10,000; mortality 5% in uncomplicated cases, up to 67% in the severely ill |
 | **Bacterial infection** | Fever, chills and hypotension; more common with platelets |
 | **Circulatory overload** | About 1% of transfusions; respiratory distress or hypertension within 12 hours |
-| **Delayed haemolytic** | IgG antibodies to antigens of previous sensitisation; extravascular haemolysis; positive direct Coombs test, low haptoglobin, raised lactate dehydrogenase; antibodies to Rh, Kell and Kidd may cause severe reactions |
+| **Delayed haemolytic** | IgG antibodies to antigens of previous sensitisation; extravascular haemolysis; positive direct Coombs test [antiglobulin test for antibody-coated red cells], low haptoglobin, raised lactate dehydrogenase; antibodies to Rh, Kell [red cell blood group system] and Kidd [red cell blood group system] may cause severe reactions |
 | **Viral infection** | HIV, hepatitis C and hepatitis B; estimated 1 in 1.5 million, 1 in 1.2 million and 1 in 1 million units |
 | **Graft-versus-host disease** | 4 to 30 days after transfusion |
 | **Post-transfusion purpura** | 5 to 10 days after transfusion |
@@ -8725,13 +8723,13 @@ An **anticoagulant** is a chemical substance that prevents blood from clotting. 
 **Adverse effects**
 1. Fever, shaking chills and flank pain, appearing rapidly.
 2. Haemoglobinuria.
-3. The direct Coombs test is typically positive, unless all the donor red cells have lysed.
+3. The direct Coombs test [antiglobulin test for antibody-coated red cells] is typically positive, unless all the donor red cells have lysed.
 4. In severe cases the process rapidly progresses to **DIC**, **shock**, **acute renal failure** and occasionally death.
 
 **Delayed haemolytic reactions**
 - Caused by IgG antibodies to red cell antigens to which the recipient was sensitised earlier, for example by a prior transfusion.
 - Extravascular haemolysis, with a positive direct Coombs test, low haptoglobin and raised lactate dehydrogenase.
-- Antibodies to Rh, Kell and Kidd antigens may cause severe and potentially fatal reactions.
+- Antibodies to Rh, Kell [red cell blood group system] and Kidd [red cell blood group system] antigens may cause severe and potentially fatal reactions.
 
 ## Name the immediate blood transfusion reactions.
 
@@ -8745,7 +8743,7 @@ An **anticoagulant** is a chemical substance that prevents blood from clotting. 
 ## What is hemolytic transfusion reaction?
 
 - **Acute haemolytic reaction:** preformed IgM antibodies against donor red cells fix complement; usually after an ABO-incompatible unit is given through an error in patient identification or labelling; intravascular haemolysis, haemoglobinuria, fever, shaking chills and flank pain.
-- **Delayed haemolytic reaction:** IgG antibodies against red cell antigens to which the recipient was sensitised previously; extravascular haemolysis with a positive direct Coombs test, low haptoglobin and raised lactate dehydrogenase.
+- **Delayed haemolytic reaction:** IgG antibodies against red cell antigens to which the recipient was sensitised previously; extravascular haemolysis with a positive direct Coombs test [antiglobulin test for antibody-coated red cells], low haptoglobin and raised lactate dehydrogenase.
 
 ## Write a short note on preservation of blood.
 
@@ -8853,9 +8851,9 @@ Diagnosis is based on clinical observation and laboratory studies:
 
 Excessive bleeding can result from increased fragility of vessels, platelet deficiency or dysfunction, or derangement of coagulation.
 
-1. **Vessel wall abnormalities:** small haemorrhages, particularly of the gingivae; platelet count, PT and PTT normal. Examples are scurvy and Ehlers-Danlos syndrome (collagen defects).
+1. **Vessel wall abnormalities:** small haemorrhages, particularly of the gingivae; platelet count, PT and PTT normal. Examples are scurvy and Ehlers-Danlos syndrome [collagen defects].
 2. **Thrombocytopenia:** immune thrombocytopenic purpura (gingival bleeding and easy bruising); aplastic anaemia; marrow replacement by leukaemia.
-3. **Defective platelet function:** von Willebrand disease; inherited disorders of platelet function.
+3. **Defective platelet function:** von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor]; inherited disorders of platelet function.
 4. **Clotting factor deficiency:** haemophilia A and B.
 5. **Acute leukaemia:** mucosal haemorrhages into the gingivae; monocytic leukaemias infiltrate the gingiva.
 6. **Disseminated intravascular coagulation.**
@@ -8877,7 +8875,7 @@ Excessive bleeding can result from increased fragility of vessels, platelet defi
 1. **PTT:** prolonged.
 2. **PT:** normal, pointing to an abnormality of the intrinsic pathway.
 3. **Factor VIII assay:** required for diagnosis. Severity: less than 1% of normal is severe, 2% to 5% moderately severe, 6% to 50% mild.
-4. Factor IX assay, to exclude haemophilia B (Christmas disease), which is clinically indistinguishable and also shows prolonged PTT and normal PT.
+4. Factor IX assay, to exclude haemophilia B (Christmas disease [haemophilia B, factor IX deficiency]), which is clinically indistinguishable and also shows prolonged PTT and normal PT.
 
 
 ## 25-year-old woman, 7 months pregnant, with anaemia — Probable causes? How will you confirm the case?
@@ -8976,7 +8974,7 @@ Clinically significant emphysema is largely confined to smokers and to patients 
 
 **Morphology**
 - Emphysema: voluminous lungs, abnormally large alveoli separated by thin septa, loss of attachments to small airways, decreased capillary bed.
-- Chronic bronchitis: hyperaemia, swelling and oedema of the mucosa with mucinous or mucopurulent secretions; chronic inflammation, goblet cell hyperplasia, enlarged mucous glands; Reid index (normally 0.4) increased.
+- Chronic bronchitis: hyperaemia, swelling and oedema of the mucosa with mucinous or mucopurulent secretions; chronic inflammation, goblet cell hyperplasia, enlarged mucous glands; Reid index [ratio of bronchial gland thickness to wall thickness] (normally 0.4) increased.
 
 **Clinical features**
 - Usually a smoking history of 40 pack-years or more; insidious dyspnoea on exertion, chronic cough with sputum.
@@ -9104,7 +9102,7 @@ The patterns overlap: patchy involvement may become confluent, and the same orga
 
 ## What are Ghon's focus and Ghon's complex?
 
-- **Ghon focus:** a 1 to 1.5 cm area of grey-white inflammation with consolidation, in the lower part of the upper lobe or upper part of the lower lobe close to the pleura, in primary tuberculosis; its centre usually undergoes caseous necrosis.
+- **Ghon focus [primary subpleural tuberculous lesion]:** a 1 to 1.5 cm area of grey-white inflammation with consolidation, in the lower part of the upper lobe or upper part of the lower lobe close to the pleura, in primary tuberculosis; its centre usually undergoes caseous necrosis.
 - **Ghon complex:** the combination of the parenchymal lung lesion (Ghon focus) and caseating involvement of the regional lymph nodes.
 - In about 95% of cases cell-mediated immunity controls the infection, and the Ghon complex undergoes progressive fibrosis, often followed by radiologically detectable calcification.
 
@@ -9117,7 +9115,7 @@ The patterns overlap: patchy involvement may become confluent, and the same orga
 
 ## What are the fates of primary tuberculosis of lung?
 
-1. **Healing:** in about 95% of cases cell-mediated immunity controls the infection; the Ghon complex undergoes fibrosis and calcification, and no lesions develop despite seeding of other organs.
+1. **Healing:** in about 95% of cases cell-mediated immunity controls the infection; the Ghon complex [primary subpleural tuberculous lesion] undergoes fibrosis and calcification, and no lesions develop despite seeding of other organs.
 2. **Dormancy:** viable organisms may remain dormant in the lesion for decades and be reactivated if immune defences are lowered.
 3. **Progressive primary tuberculosis:** clinically significant disease develops in about 5% of newly infected people; it resembles acute bacterial pneumonia, with consolidation of the lobe, hilar lymphadenopathy and pleural effusion.
 4. **Dissemination:** lymphatic and haematogenous spread may cause tuberculous meningitis and miliary tuberculosis.
@@ -9157,11 +9155,11 @@ Miliary pulmonary tuberculosis occurs when organisms draining through lymphatics
 
 ## Write a short note on Mantoux test/tuberculin test.
 
-**Principle.** The tuberculin (purified protein derivative, or Mantoux) test is performed by intracutaneous injection of purified protein derivative of M. tuberculosis, which induces a visible and palpable induration that peaks in 48 to 72 hours.
+**Principle.** The tuberculin (purified protein derivative, or Mantoux [tuberculin skin test]) test is performed by intracutaneous injection of purified protein derivative of M. tuberculosis, which induces a visible and palpable induration that peaks in 48 to 72 hours.
 
 **Interpretation**
 - A positive test signifies T cell mediated immunity to mycobacterial antigens, but does not differentiate between infection (current or past) and active disease.
-- False negative: certain viral infections, sarcoidosis, malnutrition, Hodgkin lymphoma, immunosuppression and active tuberculous disease.
+- False negative: certain viral infections, sarcoidosis, malnutrition, Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells], immunosuppression and active tuberculous disease.
 - False positive: infection by atypical mycobacteria, or prior BCG vaccination.
 
 Interferon-gamma release assays are an in vitro alternative, with uncommon false positives.
@@ -9210,7 +9208,7 @@ Lung cancers are broadly classified into small cell and non-small cell types. Co
 - Smaller than three times the diameter of a small resting lymphocyte (about 25 µm).
 - Mitotic count is invariably high.
 - Necrosis is common and often extensive.
-- Basophilic staining of vascular walls from encrustation by DNA of necrotic tumour cells (**Azzopardi effect**).
+- Basophilic staining of vascular walls from encrustation by DNA of necrotic tumour cells (**Azzopardi effect** [DNA deposition on vessel walls in necrotic small cell carcinoma]).
 - Electron microscopy: dense-core neurosecretory granules, about 100 nm.
 
 ## How will you diagnose/investigate a case of bronchogenic carcinoma?
@@ -9233,11 +9231,11 @@ Lung cancers are broadly classified into small cell and non-small cell types. Co
 
 ## What is Barrett esophagus?
 
-Barrett oesophagus is a complication of chronic GERD that is characterised by **intestinal metaplasia of the oesophageal squamous mucosa** and is associated with an **increased risk of cancer**.
+Barrett oesophagus [intestinal metaplasia of the lower oesophagus] is a complication of chronic GERD that is characterised by **intestinal metaplasia of the oesophageal squamous mucosa** and is associated with an **increased risk of cancer**.
 
 ## Mention the clinical importance of Barrett esophagus.
 
-- Greatest concern: increased risk of **oesophageal adenocarcinoma**; most oesophageal adenocarcinomas occur with Barrett oesophagus, but most individuals with Barrett oesophagus do not develop tumours
+- Greatest concern: increased risk of **oesophageal adenocarcinoma**; most oesophageal adenocarcinomas occur with Barrett oesophagus [intestinal metaplasia of the lower oesophagus], but most individuals with Barrett oesophagus do not develop tumours
 - Risk of cancer is greatest in those with **goblet cells**
 - **Dysplasia** (low grade or high grade) is a preinvasive neoplastic change, associated with prolonged symptoms, longer segment length, increased age and European ethnicity
 - **Long-segment** (3 cm or more) disease carries higher risk of dysplasia or carcinoma than **short-segment** (less than 3 cm)
@@ -9252,7 +9250,7 @@ Barrett oesophagus is a complication of chronic GERD that is characterised by **
   - **Curling ulcers**: proximal duodenum and stomach in severe burns or trauma
   - **Cushing ulcers**: stomach, duodenum and oesophagus in intracranial disease; greater risk of perforation
 - **Viral oesophageal ulcers**: discrete punched-out ulcers, for example herpes simplex virus
-- Ulcers of **Crohn disease** and **ulcerative colitis**
+- Ulcers of **Crohn disease** [transmural granulomatous inflammatory bowel disease] and **ulcerative colitis**
 
 ## What is peptic ulcer disease (PUD)?
 
@@ -9275,7 +9273,7 @@ Peptic ulcer disease (PUD) refers to **chronic mucosal ulceration** affecting th
 - **Cardiovascular disease** (reduced mucosal blood flow, oxygenation and healing)
 - **Psychological stress** (can increase gastric acid secretion)
 - **Endocrine cell hyperplasia** (can stimulate parietal cell growth and gastric acid secretion)
-- **Zollinger-Ellison syndrome** (PUD of stomach, duodenum and jejunum)
+- **Zollinger-Ellison syndrome** [gastrin-secreting tumour causing severe peptic ulceration] (PUD of stomach, duodenum and jejunum)
 - **Viral infection** (cytomegalovirus, herpes simplex virus)
 
 ## Write in short about the pathogenesis of PUD.
@@ -9369,13 +9367,13 @@ Peptic ulcer disease (PUD) refers to **chronic mucosal ulceration** affecting th
 
 ## Write a short note on GIST.
 
-**Definition:** Gastrointestinal stromal tumour (GIST) is the most common mesenchymal tumour of the abdomen; more than half occur in the stomach. It arises from the **interstitial cells of Cajal** (pacemaker cells). Peak age is 60 years.
+**Definition:** Gastrointestinal stromal tumour (GIST) is the most common mesenchymal tumour of the abdomen; more than half occur in the stomach. It arises from the **interstitial cells of Cajal** [pacemaker cells of the gut] (pacemaker cells). Peak age is 60 years.
 
 **Pathogenesis**
 - About 75% have gain-of-function mutations in the receptor tyrosine kinase **KIT**
 - About 8% have mutations in **PDGFRA**; KIT and PDGFRA mutations are mutually exclusive
 - Tumours without these often have mutations in the succinate dehydrogenase complex genes (SDHA, SDHB, SDHC, SDHD)
-- Associated with **Carney triad** (GIST, paraganglioma, pulmonary chondroma) and **neurofibromatosis type 1**
+- Associated with **Carney triad** [gastric GIST, paraganglioma and pulmonary chondroma] (GIST, paraganglioma, pulmonary chondroma) and **neurofibromatosis type 1**
 
 **Morphology**
 - Solitary, well-circumscribed, fleshy mass, up to 30 cm; overlying mucosa frequently ulcerated; cut surface **whorled**
@@ -9393,15 +9391,15 @@ Peptic ulcer disease (PUD) refers to **chronic mucosal ulceration** affecting th
 1. **Atresia**, fistulae and duplications (oesophageal atresia with **tracheo-oesophageal fistula**)
 2. **Meckel diverticulum**
 3. **Congenital hypertrophic pyloric stenosis**
-4. **Hirschsprung disease** (congenital aganglionic megacolon)
+4. **Hirschsprung disease** [congenital aganglionic megacolon] (congenital aganglionic megacolon)
 
 ## Write a short note on Hirschsprung disease.
 
-**Definition:** Hirschsprung disease (congenital aganglionic megacolon) causes **functional obstruction of the colon** due to failure of ganglion cells to migrate to the wall of the colon. Incidence about 1 in 5000 live births; 10% of cases occur in **Down syndrome**.
+**Definition:** Hirschsprung disease [congenital aganglionic megacolon] causes **functional obstruction of the colon** due to failure of ganglion cells to migrate to the wall of the colon. Incidence about 1 in 5000 live births; 10% of cases occur in **Down syndrome** [trisomy 21].
 
 **Pathogenesis**
 - Arrested migration of neural crest cells from caecum to rectum, or premature death of ganglion cells
-- Distal segment lacks the **Meissner submucosal plexus and Auerbach myenteric plexus** (aganglionosis); peristalsis is absent, the aganglionic segment is hypercontracted and the proximal segment dilates
+- Distal segment lacks the **Meissner submucosal plexus [enteric nerve plexus of the submucosa] and Auerbach myenteric plexus** [enteric nerve plexus between the muscle layers] (aganglionosis); peristalsis is absent, the aganglionic segment is hypercontracted and the proximal segment dilates
 - Heterozygous loss-of-function mutations of **RET** account for most familial and about 15% of sporadic cases; also **EDNRB** and **EDN3**
 - Incomplete penetrance
 
@@ -9419,13 +9417,13 @@ Peptic ulcer disease (PUD) refers to **chronic mucosal ulceration** affecting th
 
 1. **Pancreatic insufficiency** (chronic pancreatitis, **cystic fibrosis**)
 2. **Coeliac disease** (gluten-sensitive enteropathy)
-3. **Crohn disease**
+3. **Crohn disease** [transmural granulomatous inflammatory bowel disease]
 4. Intestinal **graft-versus-host disease** after allogeneic haematopoietic stem cell transplantation
-5. **Whipple disease**
+5. **Whipple disease** [Tropheryma whipplei infection causing malabsorption]
 
 ## What is inflammatory bowel disease?
 
-Inflammatory bowel disease (IBD) is a **chronic condition comprised of two disorders, ulcerative colitis and Crohn disease**.
+Inflammatory bowel disease (IBD) is a **chronic condition comprised of two disorders, ulcerative colitis and Crohn disease** [transmural granulomatous inflammatory bowel disease].
 
 ## Mention three important features of Crohn disease.
 
@@ -9435,13 +9433,13 @@ Inflammatory bowel disease (IBD) is a **chronic condition comprised of two disor
 
 ## Name the inflammatory bowel diseases.
 
-- **Crohn disease**
+- **Crohn disease** [transmural granulomatous inflammatory bowel disease]
 - **Ulcerative colitis**
 - **Indeterminate colitis**: in up to 10% of IBD patients it is not possible to establish either diagnosis
 
 ## Give the differences between Crohn's disease and ulcerative colitis.
 
-| Feature | Crohn disease | Ulcerative colitis |
+| Feature | Crohn disease [transmural granulomatous inflammatory bowel disease] | Ulcerative colitis |
 |---|---|---|
 | Distribution | Any area of the GI tract; most commonly terminal ileum, ileocaecal valve and caecum | Colon and rectum only; **always involves the rectum** |
 | Pattern | **Skip lesions** | **Continuous**, no skip lesions |
@@ -9484,7 +9482,7 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 
 | Group | Types |
 |---|---|
-| **Non-neoplastic** | **Inflammatory** polyps; hyperplastic polyps; hamartomatous polyps (juvenile polyp, Peutz-Jeghers polyp) |
+| **Non-neoplastic** | **Inflammatory** polyps; hyperplastic polyps; hamartomatous polyps (juvenile polyp, Peutz-Jeghers polyp [hamartomatous gastrointestinal polyps with mucocutaneous pigmentation]) |
 | **Neoplastic** | **Adenoma** (tubular, tubulovillous, villous); sessile serrated polyp |
 | **Stomach** | Inflammatory or hyperplastic polyps; fundic gland polyps; gastric adenoma |
 
@@ -9494,7 +9492,7 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 - **Sessile serrated polyps** (right colon)
 - **Gastric adenomas**: risk correlates with size, particularly above 2 cm
 - **Juvenile polyposis syndrome**: 30% to 50% develop colonic adenocarcinoma by 45 years
-- **Peutz-Jeghers syndrome** polyps: lifetime risk of malignancy about 40%
+- **Peutz-Jeghers syndrome** [hamartomatous gastrointestinal polyps with mucocutaneous pigmentation] polyps: lifetime risk of malignancy about 40%
 - **Familial adenomatous polyposis**: adenomas and dysplasia in fundic gland polyps
 - Hyperplastic polyps have **no** malignant potential
 
@@ -9508,7 +9506,7 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 - Positive for **synaptophysin** and **chromogranin A**
 
 **Clinical features**
-- Symptoms reflect hormones released: gastrin causes **Zollinger-Ellison syndrome**
+- Symptoms reflect hormones released: gastrin causes **Zollinger-Ellison syndrome** [gastrin-secreting tumour causing severe peptic ulceration]
 - **Carcinoid syndrome** in fewer than 10%: cutaneous flushing, sweating, bronchospasm, colicky abdominal pain, diarrhoea, right-sided cardiac valvular fibrosis
 - Syndrome is strongly associated with metastasis to the liver, as the liver inactivates the substances on first pass
 
@@ -9577,7 +9575,7 @@ Most, if not all, polyps begin as small elevations of the mucosa. These are refe
 - **Sarcoidosis**
 - **Glycogen storage disease**
 - **Infectious mononucleosis**
-- **Niemann-Pick disease**; Reye syndrome; hereditary fructose intolerance
+- **Niemann-Pick disease** [sphingomyelinase deficiency, a lysosomal storage disease]; Reye syndrome [acute encephalopathy with fatty liver after aspirin in children]; hereditary fructose intolerance
 
 ## Name the hepatotropic viruses.
 
@@ -9640,9 +9638,9 @@ Cirrhosis is a condition marked by **diffuse remodelling of the liver into paren
 
 **Pathogenesis**
 1. Persistent injury and inflammation activate the **hepatic stellate cell**, the principal cell of scar deposition; when quiescent it stores lipid, including vitamin A
-2. Stimuli for activation: inflammatory cytokines such as **TNF-alpha** from Kupffer cells and macrophages; altered interaction with extracellular matrix; toxins and reactive oxygen species
+2. Stimuli for activation: inflammatory cytokines such as **TNF-alpha** from Kupffer cells [macrophages lining the hepatic sinusoids] and macrophages; altered interaction with extracellular matrix; toxins and reactive oxygen species
 3. Activated stellate cells become fibrogenic **myofibroblasts**, stimulated by platelet-derived growth factor and **TGF-beta**
-4. Extracellular matrix is deposited in the **space of Disse**, with loss of sinusoidal endothelial fenestration (**sinusoidal capillarisation**)
+4. Extracellular matrix is deposited in the **space of Disse** [perisinusoidal space of the liver], with loss of sinusoidal endothelial fenestration (**sinusoidal capillarisation**)
 5. Areas of hepatocyte loss are replaced by dense **fibrous septa** through collapse of the reticulin framework and collagen deposition by myofibroblasts
 6. Septa encircle surviving hepatocytes, which replicate and form **regenerative nodules**
 - If the injury stops (viral clearance, abstinence from alcohol), scarring stops and septa are broken down by metalloproteinases; vascular remodelling may persist, so portal hypertension may not resolve
@@ -9654,7 +9652,7 @@ Cirrhosis is a condition marked by **diffuse remodelling of the liver into paren
 3. **Coagulopathy** and **jaundice**
 4. **Hepatorenal syndrome**
 5. **Hepatopulmonary syndrome** and **portopulmonary hypertension**
-6. **Bacterial infections** (damage to the gut mucosal barrier and Kupffer cell dysfunction)
+6. **Bacterial infections** (damage to the gut mucosal barrier and Kupffer cell [macrophages lining the hepatic sinusoids] dysfunction)
 7. **Hepatocellular carcinoma**
 8. Pruritus from persistent cholestasis
 9. Hyperoestrogenaemia: palmar erythema, spider angiomas; in males hypogonadism and gynaecomastia
@@ -9676,7 +9674,7 @@ Cirrhosis is a condition marked by **diffuse remodelling of the liver into paren
 The common causes of death in cirrhosis are:
 1. **Hepatic encephalopathy**
 2. **Bleeding from oesophageal varices**: varices appear in about 40% of individuals with advanced cirrhosis and cause massive haematemesis and death in about half of those affected
-3. **Bacterial infections**, resulting from damage to the gut mucosal barrier and Kupffer cell dysfunction
+3. **Bacterial infections**, resulting from damage to the gut mucosal barrier and Kupffer cell [macrophages lining the hepatic sinusoids] dysfunction
 4. **Hepatocellular carcinoma**
 - Also: hepatorenal syndrome, coagulopathy
 
@@ -9796,12 +9794,12 @@ Inflammation caused by infection affecting the **tubules, interstitium and renal
 
 **Glomerular**
 
-- Alport syndrome
-- IgA nephropathy (Berger disease)
+- Alport syndrome [inherited type IV collagen defect with nephritis, deafness and eye changes]
+- IgA nephropathy (Berger disease [IgA nephropathy])
 - Poststreptococcal (postinfectious) glomerulonephritis
 - Crescentic and rapidly progressive glomerulonephritis
 - Lupus nephritis
-- Goodpasture syndrome
+- Goodpasture syndrome [anti-glomerular basement membrane disease]
 - Thin basement membrane disease
 - Polycystic kidney disease
 
@@ -9861,7 +9859,7 @@ Massive proteinuria is caused by derangement of the glomerular capillary wall, w
 
 - **Glomerular proteinuria:** defect in permselectivity of the glomerular filtration barrier, as in glomerulonephritis and nephrotic syndrome
 - **Tubular proteinuria:** incomplete tubular reabsorption of protein, as in interstitial nephritis
-- **Overflow proteinuria:** increased plasma concentration of protein, as in multiple myeloma (Bence Jones protein) and myoglobinuria
+- **Overflow proteinuria:** increased plasma concentration of protein, as in multiple myeloma (Bence Jones protein [free monoclonal light chains in the urine]) and myoglobinuria
 - Urinary tract inflammation or tumour
 - Conditions not related to renal disease: posture, fever, exercise, and urinary tract infection
 
@@ -9992,7 +9990,7 @@ Glycosuria is the presence of reducing sugars in the urine. **Renal glycosuria**
 - Glucose is filtered at the glomerulus and is normally reabsorbed completely in the proximal tubule
 - In renal glycosuria the tubule cannot reabsorb the filtered glucose, so glucose appears in the urine although the **blood glucose is normal**
 - The usual cause is a mutation of the **SLC5A2** gene, which codes for the **SGLT2** transporter
-- Tubular absorption of glucose is also impaired in **Fanconi syndrome**, where phosphate and amino acids are lost as well
+- Tubular absorption of glucose is also impaired in **Fanconi syndrome** [generalised proximal tubular reabsorption defect], where phosphate and amino acids are lost as well
 
 ## Name the routine tests/investigations done on urine.
 
@@ -10019,7 +10017,7 @@ The urine dipstick uses **dry chemistry**: reagents impregnated on the paper cha
 
 ## What are the reducing substances/agents found in urine?
 
-Reducing substances reduce cupric ions in an alkaline solution to cuprous ions (cuprous oxide), as in **Benedict's test**.
+Reducing substances reduce cupric ions in an alkaline solution to cuprous ions (cuprous oxide), as in **Benedict's test** [copper-reduction test for reducing sugars].
 
 - **Reducing sugars:** glucose, fructose, galactose and lactose
 - **Reducing non-sugars:** ascorbic acid, uric acid and urates, glucuronides, creatinine, salicylates, streptomycin, homogentisic acid, formaldehyde
@@ -10027,7 +10025,7 @@ Reducing substances reduce cupric ions in an alkaline solution to cuprous ions (
 
 ## How do you perform Benedict's test and interpret it?
 
-**Principle.** Reducing sugars reduce the blue cupric ions of Benedict's reagent, in alkaline medium and on heating, to red **cuprous oxide**.
+**Principle.** Reducing sugars reduce the blue cupric ions of Benedict's [copper-reduction test for reducing sugars] reagent, in alkaline medium and on heating, to red **cuprous oxide**.
 
 **Procedure**
 
@@ -10141,8 +10139,8 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 - Found in about 1% of 1-year-old boys; bilateral in 25%
 - Most common arrest site is the inguinal canal; arrest within the abdomen accounts for 5% to 10%
 - Associated with testicular dysfunction and an increased risk of testicular cancer (four- to 10-fold, not removed by orchiopexy)
-- Other associations: hypospadias, Prader-Willi syndrome, Noonan syndrome
-- **Morphology:** small, firm testis; thickened tubular basement membrane, loss of spermatogonia leaving only Sertoli cells, hyalinised scarred tubules, prominent Leydig cells; germ cell neoplasia in situ may be present
+- Other associations: hypospadias, Prader-Willi syndrome [imprinting disorder from loss of paternal 15q11-13 with hypotonia and obesity], Noonan syndrome [RAS-pathway disorder with webbed neck and pulmonary stenosis]
+- **Morphology:** small, firm testis; thickened tubular basement membrane, loss of spermatogonia leaving only Sertoli cells [supporting cell of the seminiferous tubule], hyalinised scarred tubules, prominent Leydig cells [testosterone-secreting interstitial cell of the testis]; germ cell neoplasia in situ may be present
 - **Clinical features:** empty scrotal sac; sterility; inguinal hernia (10% to 20%); crushing injury
 - Most inguinal testes descend spontaneously in the first year; otherwise orchiopexy at 6 to 12 months of age
 
@@ -10189,7 +10187,7 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 | Pattern | Meaning |
 |---|---|
 | Low testosterone, high FSH, high LH | Primary testicular failure |
-| Normal testosterone, normal LH, high FSH | Seminiferous tubule damage without Leydig cell dysfunction |
+| Normal testosterone, normal LH, high FSH | Seminiferous tubule damage without Leydig cell [testosterone-secreting interstitial cell of the testis] dysfunction |
 | Low testosterone, low or normal FSH and LH | Hypogonadotropic hypogonadism; high prolactin suggests a prolactin-secreting tumour |
 | High testosterone, high LH, normal FSH | Partial androgen insensitivity |
 
@@ -10201,7 +10199,7 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 4. **Seminal markers:** fructose, zinc and neutral glucosidase
 5. **Peroxidase staining** and leucocyte markers on round cells; more than 1 million leucocytes per mL (**pyospermia**) needs a search for genital tract infection
 6. **Hormones:** serum total testosterone, FSH, LH and prolactin
-7. **Genetic tests:** karyotyping for Klinefelter syndrome and Y chromosome microdeletion; **CFTR** gene testing in congenital bilateral absence of the vas deferens
+7. **Genetic tests:** karyotyping for Klinefelter syndrome [47,XXY] and Y chromosome microdeletion; **CFTR** gene testing in congenital bilateral absence of the vas deferens
 
 ## Mention the indications of semen analysis.
 
@@ -10246,7 +10244,7 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 ## Write down the causes of azoospermia.
 
 1. **Hypothalamic-pituitary failure** (hypogonadotropic hypogonadism): other pituitary hormone deficiencies, prolactin-secreting tumour
-2. **Primary testicular failure:** Klinefelter syndrome, Y chromosome microdeletion, radiation or chemotherapy, testicular trauma, torsion of the testes, mumps
+2. **Primary testicular failure:** Klinefelter syndrome [47,XXY], Y chromosome microdeletion, radiation or chemotherapy, testicular trauma, torsion of the testes, mumps
 3. **Obstruction of the genital tract:**
    - Congenital bilateral absence of the vas deferens, often with **CFTR** mutations (cystic fibrosis)
    - Ejaculatory duct obstruction from chlamydia, gonorrhoea, tuberculosis or vasectomy
@@ -10315,7 +10313,7 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 
 ## Mention the diagnostic tools of cervical cancer.
 
-1. **Pap test** (cervical cytology) from the transformation zone
+1. **Pap test** [cervical cytology screening] (cervical cytology) from the transformation zone
 2. **HPV DNA testing** of the cervical scrape: higher sensitivity but lower specificity than the Pap test
 3. **Colposcopy** after acetic acid, which shows abnormal epithelium as aceto-white areas
 4. **Biopsy** of abnormal areas for histology; Ki-67 and p16 immunohistochemistry confirm equivocal squamous intraepithelial lesions
@@ -10324,9 +10322,9 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 ## Write a short note on Pap smear.
 
 - Cytologic screening for cervical precursor lesions and low-stage cancer; credited with a 75% fall in cervical cancer death rate
-- **Technique:** the transformation zone of the cervix is circumferentially scraped with a spatula or brush, and the cells are smeared or spun down onto a slide; the smear is fixed and stained by the Papanicolaou method, then screened microscopically or by automated image analysis
+- **Technique:** the transformation zone of the cervix is circumferentially scraped with a spatula or brush, and the cells are smeared or spun down onto a slide; the smear is fixed and stained by the Papanicolaou method [cervical cytology screening], then screened microscopically or by automated image analysis
 - **Findings:** the spectrum from low-grade to high-grade squamous intraepithelial lesion
-- **Schedule:** first smear at 21 years or within 3 years of onset of sexual activity, then every 3 years; after 30 years with normal cytology and negative HPV, every 5 years by HPV testing alone or with a Pap test
+- **Schedule:** first smear at 21 years or within 3 years of onset of sexual activity, then every 3 years; after 30 years with normal cytology and negative HPV, every 5 years by HPV testing alone or with a Pap test [cervical cytology screening]
 - An abnormal result is followed by colposcopy and biopsy
 
 ## A female has PV bleeding/discharge, contact bleeding, an ulcerated/friable/fungating cervical growth. What is the likely diagnosis?
@@ -10353,7 +10351,7 @@ Complete or partial failure of the intra-abdominal testes (one or both) to desce
 ## Same: how will you confirm it / which investigations are needed?
 
 1. **Biopsy** of the lesion, with histology: the diagnosis is made on tissue
-2. **Pap test** and **HPV DNA testing** of the cervical scrape
+2. **Pap test** [cervical cytology screening] and **HPV DNA testing** of the cervical scrape
 3. **Colposcopy** with acetic acid, then biopsy of abnormal areas
 4. **Staging:** stage 0 carcinoma in situ; stage I confined to the cervix; stage II beyond the cervix but not the pelvic wall, and not the lower third of the vagina; stage III lower third of vagina, pelvic wall, hydronephrosis or nodes; stage IV beyond the true pelvis or bladder or rectal mucosa
 
@@ -10398,7 +10396,7 @@ The diagnosis must be established by **histologic examination of tissue obtained
 
 Ovarian tumours arise from three components.
 
-1. **Surface epithelial-stromal tumours** (müllerian epithelium): serous, mucinous, endometrioid, clear cell and Brenner tumours, each benign, borderline or malignant
+1. **Surface epithelial-stromal tumours** (müllerian epithelium): serous, mucinous, endometrioid, clear cell and Brenner tumours [ovarian tumour with urothelial-like nests], each benign, borderline or malignant
 2. **Germ cell tumours:** teratoma, dysgerminoma, yolk sac tumour, choriocarcinoma, embryonal carcinoma, polyembryoma, mixed germ cell tumours
 3. **Sex cord–stromal tumours:** for example granulosa cell tumour
 
@@ -10438,7 +10436,7 @@ A **mature (benign) cystic teratoma**, called a dermoid cyst because it is almos
 | **Mucinous** (endocervical-like and intestinal type) | Cystadenoma, cystadenofibroma | Mucinous borderline tumour | Mucinous adenocarcinoma |
 | **Endometrioid** | Cystadenoma, cystadenofibroma | Endometrioid borderline tumour | Endometrioid adenocarcinoma |
 | **Clear cell** | Exceedingly rare | Exceedingly rare | Clear cell adenocarcinoma |
-| **Brenner** | Benign Brenner tumour | Borderline Brenner tumour | Malignant Brenner tumour |
+| **Brenner** [ovarian tumour with urothelial-like nests] | Benign Brenner tumour | Borderline Brenner tumour | Malignant Brenner tumour |
 
 ## List the tumour markers associated with ovarian tumour.
 
@@ -10452,10 +10450,10 @@ A **mature (benign) cystic teratoma**, called a dermoid cyst because it is almos
 Inflammatory disease of the breast is rare (less than 1% of breast symptoms) and is caused by infection, autoimmune disease, or foreign body-type reactions to keratin or secretions.
 
 1. **Acute mastitis:** lactational, usually in the first month of breastfeeding, through cracks and fissures in the nipple; Staphylococcus aureus (abscesses) or streptococci (cellulitis)
-2. **Squamous metaplasia of lactiferous ducts** (recurrent subareolar abscess, periductal mastitis, Zuska disease): keratinising squamous metaplasia plugs ducts; more than 90% are smokers; fistula and nipple inversion
+2. **Squamous metaplasia of lactiferous ducts** (recurrent subareolar abscess, periductal mastitis, Zuska disease [recurrent periareolar abscess with squamous metaplasia of ducts]): keratinising squamous metaplasia plugs ducts; more than 90% are smokers; fistula and nipple inversion
 3. **Duct ectasia:** periareolar mass with thick white nipple secretion in multiparous females in the fifth or sixth decade; not related to smoking
 4. **Fat necrosis:** painless mass mimicking cancer; about half have a history of trauma or surgery
-5. **Lymphocytic mastopathy** (diabetic mastopathy): hard masses with dense collagenised stroma and lymphocytic infiltrate; type 1 diabetes and Hashimoto thyroiditis
+5. **Lymphocytic mastopathy** (diabetic mastopathy): hard masses with dense collagenised stroma and lymphocytic infiltrate; type 1 diabetes and Hashimoto thyroiditis [autoimmune thyroiditis causing hypothyroidism]
 6. **Granulomatous mastitis:** granulomatous lobular mastitis (parous females, often idiopathic), cystic neutrophilic granulomatous mastitis (lipophilic Corynebacteria), and systemic or infective causes such as sarcoidosis, granulomatosis with polyangiitis, tuberculosis
 - Inflammatory carcinoma mimics inflammation and must always be considered in an erythematous swollen breast
 
@@ -10497,7 +10495,7 @@ Most palpable breast masses (more than 95%) are benign.
 | **Stromal tumours** | Fibroadenoma, phyllodes tumour (intralobular stroma); angiosarcoma (interlobular stroma) |
 | **Other** | Lymphoma, metastases from other sites (less than 5% of malignant tumours) |
 
-- Paget disease of the nipple is DCIS extending into the skin of the nipple
+- Paget disease of the nipple [DCIS extending into the nipple epidermis] is DCIS extending into the skin of the nipple
 - Inflammatory carcinoma is not a histological type; it is a clinical presentation
 
 ## Write down the molecular classification of breast cancer.
@@ -10562,7 +10560,7 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 - Most females without a palpable mass have **DCIS** and are staged as such
 - About one-half have a palpable breast mass, which usually proves to be **invasive carcinoma**
 
-**Prognosis.** It depends on the features of the invasive carcinoma, if present, and is not affected by the presence or absence of Paget disease.
+**Prognosis.** It depends on the features of the invasive carcinoma, if present, and is not affected by the presence or absence of Paget disease [disordered bone remodelling].
 
 ## 20-year-old woman with a free, movable breast lump — Probable diagnosis? Investigations to diagnose the case?
 
@@ -10584,7 +10582,7 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 - It most commonly presents as a **hard, irregular, radiodense mass** with a desmoplastic stromal reaction
 - Malignant tumours invade across tissue planes, so they are irregular, unlike the round, rubbery, mobile benign masses
 - The cut surface produces a **grating sound** from chalky-white desmoplastic stroma
-- Skin dimpling, with peau d'orange, is seen in inflammatory carcinoma, where dermal lymphovascular channels are plugged by tumour cells and the skin is tethered by Cooper ligaments
+- Skin dimpling, with peau d'orange, is seen in inflammatory carcinoma, where dermal lymphovascular channels are plugged by tumour cells and the skin is tethered by Cooper ligaments [suspensory ligaments of the breast]
 
 ## Same: what investigations would you perform?
 
@@ -10596,7 +10594,7 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 
 ## Mention four important causes of hypothyroidism.
 
-1. **Hashimoto thyroiditis:** the commonest cause in iodine-sufficient areas
+1. **Hashimoto thyroiditis [autoimmune thyroiditis causing hypothyroidism]:** the commonest cause in iodine-sufficient areas
 2. **Postablative:** surgery, radioiodine therapy or external irradiation
 3. **Drugs:** lithium, amiodarone, iodides, p-aminosalicylic acid, thionamides
 4. **Congenital:** endemic **iodine deficiency** (the commonest worldwide) and dyshormonogenetic goitre
@@ -10613,8 +10611,8 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
    - Hereditary enzymatic defects (**dyshormonogenetic goitre**), autosomal recessive
    - No apparent cause in most cases
 3. **Multinodular goitre**
-4. **Hashimoto thyroiditis**
-5. **Graves disease**
+4. **Hashimoto thyroiditis** [autoimmune thyroiditis causing hypothyroidism]
+5. **Graves disease** [autoimmune hyperthyroidism]
 
 ## Give the etiopathogenesis of multinodular goitre.
 
@@ -10643,7 +10641,7 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 
 ## A 30y lady has diffuse thyroid enlargement with exophthalmos. What is your clinical diagnosis (Graves' disease)?
 
-**Graves disease.**
+**Graves disease [autoimmune hyperthyroidism].**
 
 - An autoimmune disorder with autoantibodies against the **TSH receptor**; thyroid-stimulating immunoglobulin is found in about 90%
 - Diffuse hyperplasia of the thyroid, which may have an audible bruit
@@ -10705,6 +10703,8 @@ Factors that decrease risk are **early pregnancy** (before 20 years of age) and 
 ## Define diabetes mellitus.
 
 **Diabetes mellitus** is a group of metabolic disorders sharing the common feature of **hyperglycaemia**, caused by defects in insulin secretion, insulin action, or, most commonly, both. The chronic hyperglycaemia and attendant metabolic deregulation may be associated with secondary damage in multiple organ systems, especially the kidneys, eyes, nerves and blood vessels.
+
+- The diagnostic cut-off for fasting plasma glucose is **126 mg/dL (7.0 mmol/L) or more**, confirmed on a repeat test on a separate day.
 
 ## How is diabetes mellitus classified?
 
@@ -10793,6 +10793,7 @@ Diabetes is diagnosed by any one of:
 - It is one of the criteria of **prediabetes**, a state of dysglycaemia that often precedes type 2 diabetes
 - The others are impaired fasting glucose (fasting plasma glucose 100 to 125 mg/dL) and an HbA1c of 5.7% to 6.4%
 - Individuals with prediabetes are also at significant risk of cardiovascular complications
+- A fasting plasma glucose of **126 mg/dL or more**, or a 2-hour value of 200 mg/dL or more, is diabetes rather than prediabetes
 
 ## Draw different types of diabetic curves.
 
@@ -10914,7 +10915,7 @@ Diabetes is diagnosed by any one of:
 
 - Occurs at **sun-exposed sites** in lightly pigmented older adults
 - Incidence is increased in **immunosuppression** and in disorders of DNA repair such as **xeroderma pigmentosum**
-- **Nevoid basal cell carcinoma syndrome** (Gorlin syndrome, basal cell naevus syndrome): autosomal dominant; multiple basal cell carcinomas often before age 20 years, with medulloblastomas, ovarian fibromas, odontogenic keratocysts and pits of the palms and soles
+- **Nevoid basal cell carcinoma syndrome** (Gorlin syndrome [basal cell naevus syndrome from PTCH1 mutation], basal cell naevus syndrome): autosomal dominant; multiple basal cell carcinomas often before age 20 years, with medulloblastomas, ovarian fibromas, odontogenic keratocysts and pits of the palms and soles
 - Gene is **PTCH** (9q22), a tumour-suppressor gene: germline loss-of-function mutation in one allele, with the second allele inactivated in tumours
 - PTCH is the receptor for sonic hedgehog (SHH); it normally blocks SMO. Loss of PTCH function causes constitutive activation of **SMO** and the transcription factor **GLI1**
 - Hedgehog-activating mutations are also common in sporadic tumours; about one-third of PTCH mutations are C to T transitions, the hallmark of UV damage
@@ -11011,7 +11012,7 @@ The prognosis is assessed from:
 Organisms of all types can cause it, including viruses, parasites, fungi and bacteria, but certain pyogenic bacteria and mycobacteria are the most common.
 
 1. **Pyogenic osteomyelitis**, almost always bacterial
-2. **Mycobacterial osteomyelitis**, including tuberculous osteomyelitis of the spine (**Pott disease**)
+2. **Mycobacterial osteomyelitis**, including tuberculous osteomyelitis of the spine (**Pott disease** [tuberculosis of the spine])
 3. **Skeletal syphilis**, congenital or acquired
 
 By stage, the changes are acute, subacute and chronic.
@@ -11120,7 +11121,7 @@ By stage, the changes are acute, subacute and chronic.
 - The commonest organism is **Staphylococcus aureus**, responsible for 80% to 90% of culture-positive cases
 - Infection lifts the periosteum, and reactive bone is deposited at the periphery of the infection
 
-**Differential diagnosis:** **Ewing sarcoma** also presents in children with a painful, tender, warm, swollen mass and systemic findings that mimic infection (fever, raised sedimentation rate, anaemia, leucocytosis), with a periosteal reaction.
+**Differential diagnosis:** **Ewing sarcoma** [small round blue cell bone tumour with t(11;22)] also presents in children with a painful, tender, warm, swollen mass and systemic findings that mimic infection (fever, raised sedimentation rate, anaemia, leucocytosis), with a periosteal reaction.
 
 ## Same: how would you confirm it?
 
@@ -11131,7 +11132,7 @@ By stage, the changes are acute, subacute and chronic.
 
 ## Write a short note on Pott's disease.
 
-**Definition.** **Pott disease** is mycobacterial (tuberculous) osteomyelitis of the spine. The spine is involved in 40% of mycobacterial osteomyelitis cases.
+**Definition.** **Pott disease** [tuberculosis of the spine] is mycobacterial (tuberculous) osteomyelitis of the spine. The spine is involved in 40% of mycobacterial osteomyelitis cases.
 
 **Aetiology and pathogenesis**
 
@@ -11159,7 +11160,7 @@ Bone tumours are classified according to the normal cell type they recapitulate 
 |---|---|---|
 | **Bone forming** | **Osteoid osteoma**, osteoblastoma | **Osteosarcoma** |
 | **Cartilage forming** | Osteochondroma, chondroma, chondroblastoma, chondromyxoid fibroma | Chondrosarcoma |
-| **Unknown origin** | **Giant cell tumour**, aneurysmal bone cyst | **Ewing sarcoma**, adamantinoma |
+| **Unknown origin** | **Giant cell tumour**, aneurysmal bone cyst | **Ewing sarcoma** [small round blue cell bone tumour with t(11;22)], adamantinoma |
 | **Notochordal** | None | Chordoma |
 
 ## Write in brief about the morphology of osteosarcoma.
@@ -11171,11 +11172,11 @@ Bone tumours are classified according to the normal cell type they recapitulate 
 - Extensive necrosis and intravascular invasion are common
 - Diagnosis requires malignant cells producing **unmineralised osteoid** or **mineralised bone**, typically fine and lacelike, but sometimes broad sheets or primitive trabeculae
 - If the cells also produce abundant cartilage, the tumour is a **chondroblastic osteosarcoma**
-- Radiologically: destructive mixed lytic and sclerotic mass; lifting of the periosteum produces **Codman triangle**
+- Radiologically: destructive mixed lytic and sclerotic mass; lifting of the periosteum produces **Codman triangle** [periosteal elevation in aggressive bone tumours]
 
 ## Write a short note on Ewing's sarcoma.
 
-**Definition.** **Ewing sarcoma** is a malignant bone tumour strongly associated with oncogenic fusion genes composed of portions of the **EWSR1** gene and genes encoding ETS family transcription factors. It accounts for about 10% of primary malignant bone tumours and is the second most common bone sarcoma in children after osteosarcoma.
+**Definition.** **Ewing sarcoma** [small round blue cell bone tumour with t(11;22)] is a malignant bone tumour strongly associated with oncogenic fusion genes composed of portions of the **EWSR1** gene and genes encoding ETS family transcription factors. It accounts for about 10% of primary malignant bone tumours and is the second most common bone sarcoma in children after osteosarcoma.
 
 **Aetiology and pathogenesis**
 
@@ -11285,7 +11286,7 @@ Bone tumours are classified according to the normal cell type they recapitulate 
 
 - Systemic signs of infection with symptoms of meningeal irritation: headache, photophobia, irritability, clouding of consciousness and **neck stiffness**
 - Neisseria meningitidis is the cause in adolescents and young adults; clusters of cases raise public health concerns
-- Complication: **Waterhouse-Friderichsen syndrome** (septicaemia with haemorrhagic infarction of the adrenal glands), most often with meningococcal and pneumococcal meningitis
+- Complication: **Waterhouse-Friderichsen syndrome** [adrenal haemorrhage in meningococcal septicaemia] (septicaemia with haemorrhagic infarction of the adrenal glands), most often with meningococcal and pneumococcal meningitis
 
 ## Same: what investigations/CSF findings will confirm it?
 
@@ -11311,7 +11312,7 @@ CSF analysis is indicated in:
 
 1. **Suspected CNS infection** (meningitis, encephalitis, myelitis, radiculitis and neuritis): the most common indication and a medical emergency; it identifies the organism and guides antimicrobial treatment
 2. **Subarachnoid haemorrhage**: when CT is delayed or equivocal, because bleeding may not be seen on imaging
-3. **Inflammatory and demyelinating disease**: multiple sclerosis and Guillain-Barré syndrome
+3. **Inflammatory and demyelinating disease**: multiple sclerosis and Guillain-Barré syndrome [acute demyelinating polyneuropathy]
 4. **Malignancy**: spread of malignant disease, such as lymphoma or leptomeningeal carcinomatosis, into the CSF space
 5. Other neurological conditions: spontaneous intracranial hypotension and idiopathic intracranial hypertension
 
@@ -11390,7 +11391,7 @@ The causes are classified by the **anion gap** (sodium minus the sum of chloride
 | Type | Causes |
 |---|---|
 | **High anion gap** | Lactic acidosis from anaerobic metabolism; diabetic ketoacidosis; **uraemia** (renal failure); salicylates; methanol and ethylene glycol; paraldehyde; iron and isoniazid; cyanide and carbon monoxide; arsenic; toluene; metformin |
-| **Normal anion gap** (hyperchloraemic) | **Diarrhoea** (gastrointestinal loss of bicarbonate); **renal tubular acidosis**; Addison disease; ureterosigmoid or pancreatic fistulae; acetazolamide; total parenteral nutrition; large volumes of normal saline |
+| **Normal anion gap** (hyperchloraemic) | **Diarrhoea** (gastrointestinal loss of bicarbonate); **renal tubular acidosis**; Addison disease [primary adrenocortical insufficiency]; ureterosigmoid or pancreatic fistulae; acetazolamide; total parenteral nutrition; large volumes of normal saline |
 
 - A positive urine anion gap points to renal loss of bicarbonate such as renal tubular acidosis; a negative value points to non-renal loss such as diarrhoea
 
@@ -11402,7 +11403,7 @@ The causes are classified by the **anion gap** (sodium minus the sum of chloride
 2. **Diuretics**: thiazide and loop diuretics
 3. **Volume depletion** (hypovolaemia) and chloride depletion
 4. **Hypokalaemia**, which shifts hydrogen ions into cells and increases renal bicarbonate reabsorption
-5. **Mineralocorticoid excess**: Conn syndrome, Cushing syndrome, Bartter and Gitelman syndromes, Liddle syndrome
+5. **Mineralocorticoid excess**: Conn syndrome [primary hyperaldosteronism], Cushing syndrome [glucocorticoid excess], Bartter [inherited loop of Henle salt wasting causing hypokalaemic alkalosis] and Gitelman [inherited distal tubular salt wasting causing hypokalaemic alkalosis] syndromes, Liddle syndrome [inherited renal sodium-channel overactivity causing hypertension with hypokalaemia]
 6. Alkali (bicarbonate) administration
 7. Recovery after prolonged hypercapnia
 
@@ -11469,7 +11470,7 @@ The causes are classified by the **anion gap** (sodium minus the sum of chloride
 
 - **Causes**: **hypoparathyroidism** (most often after thyroid, parathyroid or neck surgery; about 75% of cases), hungry bone syndrome after parathyroidectomy, **vitamin D deficiency**, chronic kidney disease, pseudohypoparathyroidism, hypomagnesaemia, acute pancreatitis, sepsis, massive blood transfusion (citrate binds calcium), drugs (bisphosphonates, denosumab, cinacalcet, cisplatin, foscarnet)
 - **Clinical features**: **tetany**, paraesthesia (perioral and distal), seizures, laryngospasm, QT prolongation with risk of arrhythmia, heart failure
-- **Signs**: **Chvostek sign** (facial twitch on tapping the facial nerve) and **Trousseau sign** (carpopedal spasm on inflating a cuff)
+- **Signs**: **Chvostek sign** [facial twitching on tapping the facial nerve in hypocalcaemia] (facial twitch on tapping the facial nerve) and **Trousseau sign** [migratory thrombophlebitis associated with cancer] (carpopedal spasm on inflating a cuff)
 - **Chronic**: dry skin, coarse hair, brittle nails, poor dentition, cataracts
 
 **Approach**
@@ -11503,7 +11504,7 @@ Results are interpreted together with the history and clinical findings.
 | Severe (more than 15 times) | Acute hepatitis A, B or E, severe drug-induced injury, toxins (**Amanita phalloides**), ischaemic hepatitis |
 | Massive (more than 10,000 IU/L) | Paracetamol toxicity, profound ischaemic injury; rarely herpes simplex hepatitis |
 
-- **ALT-predominant pattern**: viral hepatitis, steatohepatitis, acute Budd-Chiari syndrome, ischaemic hepatitis, autoimmune conditions, haemochromatosis, drugs and toxins, alpha-1 antitrypsin deficiency, Wilson disease, coeliac disease
+- **ALT-predominant pattern**: viral hepatitis, steatohepatitis, acute Budd-Chiari syndrome [hepatic vein thrombosis], ischaemic hepatitis, autoimmune conditions, haemochromatosis, drugs and toxins, alpha-1 antitrypsin deficiency, Wilson disease [hereditary copper accumulation from ATP7B mutation], coeliac disease
 - The **pattern and trend** matter more than a single value
 - Mild elevations are often transient: up to 30% of asymptomatic elevations resolve within 3 weeks, so repeat testing is advised before an extensive work-up
 - The size of the rise does not reliably track histological severity or prognosis; in acute liver failure the aminotransferases can improve while synthetic function worsens
@@ -11585,7 +11586,7 @@ Results are interpreted together with the history and clinical findings.
 - **Prostate cancer**: about 95% of patients, especially with bone metastasis, because cancerous prostate tissue overexpresses the enzyme
 - **Bone resorption**: osteoporosis; bone metastases from several cancers raise TRAP
 - **Hairy cell leukaemia**: the leukaemic cells contain TRAP, which is sensitive and specific for this disease
-- **Gaucher disease**: TRAP is a marker when chitotriosidase is normal
+- **Gaucher disease** [glucocerebrosidase deficiency, a lysosomal storage disease]: TRAP is a marker when chitotriosidase is normal
 
 **Clinical significance**
 
@@ -11625,7 +11626,7 @@ Results are interpreted together with the history and clinical findings.
 **Prenatal screening**: maternal serum AFP is part of the triple and quadruple tests.
 
 - **Raised**: neural tube defects (spina bifida, anencephaly), abdominal wall defects (omphalocele, gastroschisis), sacrococcygeal teratoma, cystic hygroma, renal abnormalities, osteogenesis imperfecta, threatened abortion
-- **Low**: Down syndrome, trisomy 18, foetal demise, hydatidiform mole
+- **Low**: Down syndrome [trisomy 21], trisomy 18, foetal demise, hydatidiform mole
 
 **Other causes of a raised AFP in adults**: metastatic liver cancer, cirrhosis, hepatitis, ataxia-telangiectasia.
 
@@ -11642,7 +11643,7 @@ Results are interpreted together with the history and clinical findings.
 **Causes of a raised CK**
 
 - **Muscle injury or breakdown** (rhabdomyolysis) after crush injury, drugs, viral infection or strenuous exercise
-- **Chronic muscle disease**: muscular dystrophy (in Duchenne dystrophy the level can rise before symptoms and in many female carriers), myositis, burns
+- **Chronic muscle disease**: muscular dystrophy (in Duchenne dystrophy [X-linked dystrophin deficiency] the level can rise before symptoms and in many female carriers), myositis, burns
 - Prolonged or intense exercise, with greater rises in untrained people
 - **Heart disease**: myocardial infarction, myocarditis, some cardiac procedures
 - **Hypothyroidism**
@@ -11765,7 +11766,7 @@ The **lipid profile** (lipid panel) is a fasting blood test (after a 9 to 12 hou
 4. **Peritoneal (ascitic) fluid**: appearance, serum-ascites albumin gradient, total protein, polymorphonuclear count, glucose, amylase, triglycerides, urea and creatinine, adenosine deaminase
 5. **Amniotic fluid**: appearance and bilirubin (an indirect measure of foetal anaemia); amniocentesis assesses chromosomal anomalies, foetal lung maturity and alloimmunisation
 6. **Synovial fluid**: volume, viscosity, clarity, colour, Gram stain, cell count and differential, crystals, culture
-7. **Saliva**: antibodies (for example to Helicobacter pylori, Lyme disease, mumps, measles, HIV-1), hormones (cortisol, testosterone), drugs
+7. **Saliva**: antibodies (for example to Helicobacter pylori, Lyme disease [tick-borne Borrelia infection], mumps, measles, HIV-1), hormones (cortisol, testosterone), drugs
 
 ## Define atrophy.
 
@@ -11830,8 +11831,8 @@ Cellular ageing results from a combination of accumulating cellular damage (for 
 
 - Exogenous (physical, chemical and biologic) agents and endogenous factors such as ROS threaten the integrity of nuclear and mitochondrial DNA. Most damage is repaired, but some persists and accumulates as cells age.
 - The average haematopoietic stem cell suffers 14 new mutations per year.
-- Werner syndrome (a premature ageing syndrome) is caused by a defective DNA helicase, which leads to rapid accumulation of chromosomal damage.
-- In Bloom syndrome and ataxia-telangiectasia the mutated genes encode proteins involved in repairing double-strand breaks in DNA, and patients show some manifestations of ageing at an increased rate.
+- Werner syndrome [a premature ageing syndrome] is caused by a defective DNA helicase, which leads to rapid accumulation of chromosomal damage.
+- In Bloom syndrome [inherited DNA-helicase defect with sun-sensitive rash and cancer predisposition] and ataxia-telangiectasia the mutated genes encode proteins involved in repairing double-strand breaks in DNA, and patients show some manifestations of ageing at an increased rate.
 
 2. **Replicative senescence:** all normal cells have a limited capacity for replication, and after a fixed number of divisions they become arrested in a terminally nondividing state.
 
@@ -11869,7 +11870,7 @@ Cellular ageing results from a combination of accumulating cellular damage (for 
 3. **Chemical agents and drugs:** hypertonic glucose or salt, high concentrations of oxygen, poisons such as arsenic, cyanide and mercury, pollutants, pesticides, carbon monoxide, asbestos, alcohol, cocaine and therapeutic drugs.
 4. **Infectious agents:** viruses, rickettsiae, bacteria, fungi, parasites and tapeworms.
 5. **Immunologic reactions:** reactions to endogenous self-antigens cause autoimmune diseases; reactions to external agents such as viruses and environmental substances also cause injury.
-6. **Genetic abnormalities:** an extra chromosome, as in Down syndrome, or a single base pair substitution, as in sickle cell anaemia; they injure cells through deficient protein function, or through accumulation of damaged DNA or misfolded proteins.
+6. **Genetic abnormalities:** an extra chromosome, as in Down syndrome [trisomy 21], or a single base pair substitution, as in sickle cell anaemia; they injure cells through deficient protein function, or through accumulation of damaged DNA or misfolded proteins.
 7. **Nutritional imbalances:** protein-calorie deficiency, vitamin deficiencies, anorexia nervosa, and nutritional excess such as obesity and diets high in certain lipids.
 
 ## Types of reversible cell injury.
@@ -11973,7 +11974,7 @@ As the cell matures, the nuclear to cytoplasmic ratio falls, granule production 
 - **Acute bacterial infections**, especially those caused by pyogenic organisms.
 - **Sterile inflammation** caused by tissue necrosis, for example myocardial infarction and burns.
 - **Chronic infection or inflammation.**
-- **Paraneoplastic**, for example Hodgkin lymphoma.
+- **Paraneoplastic**, for example Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells].
 - **Myeloproliferative neoplasms**, for example chronic myeloid leukaemia.
 
 **Mechanisms**
@@ -11987,7 +11988,7 @@ As the cell matures, the nuclear to cytoplasmic ratio falls, granule production 
 - **Allergic disorders**, such as asthma and hay fever.
 - **Parasitic infestations.**
 - **Drug reactions.**
-- **Certain malignancies**, for example Hodgkin lymphoma and some non-Hodgkin lymphomas.
+- **Certain malignancies**, for example Hodgkin lymphoma [lymphoma defined by Reed-Sternberg cells] and some non-Hodgkin lymphomas.
 - **Autoimmune disorders**, for example pemphigus and dermatitis herpetiformis, and some vasculitides.
 - **Atheroembolic disease** (transient).
 
@@ -12004,7 +12005,7 @@ As the cell matures, the nuclear to cytoplasmic ratio falls, granule production 
 **Reactive**
 
 - Disorders associated with chronic immunologic stimulation, where it accompanies monocytosis, for example tuberculosis and brucellosis.
-- Viral infections, for example hepatitis A, cytomegalovirus and Epstein-Barr virus.
+- Viral infections, for example hepatitis A, cytomegalovirus and Epstein-Barr virus [herpesvirus that causes infectious mononucleosis].
 - Bordetella pertussis infection.
 - Acute viral infections, particularly in children, which cause large numbers of activated lymphocytes that resemble neoplastic lymphoid cells.
 
@@ -12040,7 +12041,7 @@ As the cell matures, the nuclear to cytoplasmic ratio falls, granule production 
    - Suppression of haematopoietic stem cells, as in aplastic anaemia and infiltrative marrow disorders (tumours, granulomatous disease); granulocytopenia is then accompanied by anaemia and thrombocytopenia.
    - Suppression of committed granulocytic precursors by certain drugs.
    - Ineffective haematopoiesis, as in megaloblastic anaemia and myelodysplastic neoplasms, in which defective precursors die in the marrow.
-   - Rare congenital conditions, such as severe congenital neutropenia (Kostmann syndrome), in which inherited gene defects impair granulocytic differentiation.
+   - Rare congenital conditions, such as severe congenital neutropenia (Kostmann syndrome [severe congenital neutropenia]), in which inherited gene defects impair granulocytic differentiation.
 2. **Increased destruction or sequestration of neutrophils**
    - Immune mediated injury, which can be idiopathic, associated with a defined immunologic disorder such as systemic lupus erythematosus, or caused by drugs.
    - Splenomegaly, with sequestration and destruction of neutrophils by increased numbers of splenic macrophages.
@@ -12079,7 +12080,7 @@ As the cell matures, the nuclear to cytoplasmic ratio falls, granule production 
 - Suppression of haematopoietic stem cells: aplastic anaemia, infiltrative marrow disorders.
 - Suppression of committed granulocytic precursors by certain drugs.
 - Ineffective haematopoiesis: megaloblastic anaemia, myelodysplastic neoplasms.
-- Congenital: severe congenital neutropenia (Kostmann syndrome).
+- Congenital: severe congenital neutropenia (Kostmann syndrome [severe congenital neutropenia]).
 - Immune mediated injury: idiopathic, systemic lupus erythematosus, drugs; acquired idiopathic neutropenia from autoantibodies against neutrophil-specific antigens.
 - Splenomegaly.
 - Increased peripheral utilisation in overwhelming bacterial, fungal or rickettsial infections.
@@ -12110,10 +12111,10 @@ As the cell matures, the nuclear to cytoplasmic ratio falls, granule production 
 
 - Persistent reactive neutrophilic leucocytosis, with a white cell count of more than 50,000 per microlitre.
 - A mixture of early mature neutrophil precursors: myelocytes and metamyelocytes, with promyelocytes and rarely myeloblasts; there is no leukaemic hiatus (the gap between blasts and mature cells seen in acute leukaemia).
-- Toxic granulation, cytoplasmic vacuolation and Döhle bodies (sky-blue patches of dilated endoplasmic reticulum).
+- Toxic granulation, cytoplasmic vacuolation and Döhle bodies [sky-blue patches of dilated endoplasmic reticulum].
 - A high neutrophil alkaline phosphatase score.
 - Normal eosinophil and basophil counts; no monocytosis.
-- No Philadelphia chromosome or BCR::ABL1 translocation.
+- No Philadelphia chromosome [t(9;22) producing the BCR-ABL1 fusion] or BCR::ABL1 translocation.
 - Marrow is hypercellular but otherwise normal.
 
 ## What is subleukaemic leukaemia?
@@ -12129,7 +12130,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 | **Nature** | Reactive, non-malignant leucocytosis caused by an underlying condition | Neoplastic proliferation |
 | **Cells in blood** | Mature neutrophils with a mixture of early precursors | Abnormal granulocytes; a large proportion of myelocytes |
 | **Eosinophils and basophils** | Normal count and morphology | Often elevated; may show mixed granulation |
-| **Neutrophil morphology** | Toxic granulation and Döhle bodies often present | Pseudo-Pelger-Huët forms may be seen |
+| **Neutrophil morphology** | Toxic granulation and Döhle bodies [pale blue cytoplasmic inclusions in neutrophils] often present | Pseudo-Pelger-Huët forms may be seen |
 | **Platelets** | Normal count and morphology | Elevated early and decreased late; giant, hypogranular or bizarre forms |
 | **Haemoglobin** | Normal | Often anaemic |
 | **Leucocyte alkaline phosphatase score** | Elevated | Decreased |
@@ -12145,7 +12146,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 | **Total white cell count** | Markedly raised, more than 50,000 per microlitre | Normal |
 | **Cells in blood** | Myelocytes, metamyelocytes and promyelocytes, rarely myeloblasts, in a mixture with mature neutrophils | Abnormal white cells (blasts) |
 | **Leukaemic hiatus** | Absent | Characteristic of acute leukaemia |
-| **Neutrophil changes** | Toxic granulation, vacuolation and Döhle bodies | Not a feature |
+| **Neutrophil changes** | Toxic granulation, vacuolation and Döhle bodies [pale blue cytoplasmic inclusions in neutrophils] | Not a feature |
 | **Bone marrow** | Hypercellular but otherwise normal | Blasts of 20% or more of marrow cells; the WHO allows fewer with defining genetic aberrations |
 | **Genetics** | No BCR::ABL1 | Specific genetic aberrations, such as t(8;21), inv(16) and t(15;17) in acute myeloid leukaemia |
 | **Other** | Resolves on treatment of the underlying cause | Needs a bone marrow examination to exclude acute leukaemia |
@@ -12208,7 +12209,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 | Subtype | Prognosis | Morphology or comment |
 |---|---|---|
 | **I. AML with specific genetic aberrations** | | |
-| t(8;21)(q22;q22); RUNX1::RUNX1T1 | Favourable | Full range of myelocytic maturation; Auer rods easily found; abnormal cytoplasmic granules |
+| t(8;21)(q22;q22); RUNX1::RUNX1T1 | Favourable | Full range of myelocytic maturation; Auer rods [needle-shaped azurophilic inclusions in myeloblasts] easily found; abnormal cytoplasmic granules |
 | inv(16)(p13;q22); CBFB::MYH11 | Favourable | Myelocytic and monocytic differentiation; abnormal eosinophilic precursors with abnormal basophilic granules |
 | t(15;17)(q22;q11-12); PML::RARA (acute promyelocytic leukaemia) | Very favourable | Numerous Auer rods, often in bundles; prominent primary granules, inconspicuous in the microgranular variant; high incidence of disseminated intravascular coagulation |
 | t(11q23;v); KMT2A rearrangement | Poor | Usually some monocytic differentiation |
@@ -12221,7 +12222,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 | With myelomonocytic maturation | Intermediate | Myelocytic and monocytic differentiation |
 | With monocytic maturation | Intermediate | Nonspecific esterase positive monoblasts and promonocytes predominate in the marrow |
 | With erythroid maturation | Intermediate | Erythroid/myeloid subtype: more than 50% dysplastic maturing erythroid precursors and more than 20% myeloblasts; pure erythroid subtype: more than 80% erythroid precursors without myeloblasts |
-| With megakaryocytic maturation | Intermediate | Megakaryocytic blasts predominate, detected with antibodies such as GPIIb/IIIa; often marrow fibrosis; most common AML in Down syndrome |
+| With megakaryocytic maturation | Intermediate | Megakaryocytic blasts predominate, detected with antibodies such as GPIIb/IIIa; often marrow fibrosis; most common AML in Down syndrome [trisomy 21] |
 
 ## Clinical presentation of acute leukaemia.
 
@@ -12237,7 +12238,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 1. **Peripheral blood:** blast count is highly variable; in AML blasts may be more than 100,000 per microlitre but are under 10,000 in about 50% of patients, and occasionally blasts are absent from the blood (aleukaemic leukaemia).
 2. **Bone marrow examination** is essential. The marrow is hypercellular and packed with blasts, generally 20% or more of marrow cells.
-3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods.
+3. **Morphology of blasts:** lymphoblasts have condensed chromatin, small nucleoli and scant agranular cytoplasm; myeloblasts have delicate chromatin, two to four nucleoli and more cytoplasm with fine azurophilic granules and often Auer rods [needle-shaped azurophilic inclusions in myeloblasts].
 4. **Cytochemistry:** myeloperoxidase positive in myeloblasts; lymphoblasts are myeloperoxidase negative and often contain periodic acid–Schiff positive cytoplasmic material; monoblasts are nonspecific esterase positive.
 5. **Immunophenotyping by flow cytometry**, which confirms the lineage. Terminal deoxynucleotidyl transferase (TdT) is positive in more than 95% of ALL. B-ALL: CD19, CD10, PAX5; T-ALL: CD1, CD2, CD5, CD7. Myeloid blasts: CD34, CD33, CD15 and CD64.
 6. **Cytogenetics and molecular tests:** chromosomal aberrations in 50% to 70% of AML by standard techniques; approximately 90% of ALL have numerical or structural chromosomal changes.
@@ -12250,7 +12251,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 | **Blast chromatin** | Delicate | More condensed |
 | **Nucleoli** | Two to four; prominent | Small; less conspicuous |
 | **Cytoplasm** | More voluminous; fine azurophilic granules | Scant; usually no granules |
-| **Auer rods** | Present in many cases; numerous in t(15;17) | Not a feature |
+| **Auer rods** [needle-shaped azurophilic inclusions in myeloblasts] | Present in many cases; numerous in t(15;17) | Not a feature |
 | **Myeloperoxidase** | Positive | Negative |
 | **Periodic acid–Schiff** | Not described | Often positive cytoplasmic material |
 | **TdT** | Not expressed | Positive in more than 95% |
@@ -12264,7 +12265,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 1. **Peripheral blood:** blast count highly variable; may be more than 100,000 per microlitre but under 10,000 in about 50%; occasionally absent (aleukaemic leukaemia). Anaemia, neutropenia and thrombocytopenia are present.
 2. **Bone marrow examination** is essential to exclude acute leukaemia in pancytopenic patients. Generally 20% or more myeloid blasts; the WHO permits the diagnosis with fewer than 20% if a defining genetic aberration is present.
-3. **Blast morphology:** myeloblasts have delicate nuclear chromatin, two to four nucleoli and more cytoplasm than lymphoblasts, with fine peroxidase positive azurophilic granules. **Auer rods** (needle-like azurophilic granules) are present in many cases, particularly numerous in t(15;17). Monoblasts have folded or lobulated nuclei, lack Auer rods and are nonspecific esterase positive.
+3. **Blast morphology:** myeloblasts have delicate nuclear chromatin, two to four nucleoli and more cytoplasm than lymphoblasts, with fine peroxidase positive azurophilic granules. **Auer rods** [needle-shaped azurophilic inclusions in myeloblasts] (needle-like azurophilic granules) are present in many cases, particularly numerous in t(15;17). Monoblasts have folded or lobulated nuclei, lack Auer rods and are nonspecific esterase positive.
 4. **Immunophenotyping:** stains for myeloid-specific antigens confirm the diagnosis, since myeloblasts and lymphoblasts are hard to tell apart by morphology; blasts express CD34, CD33 and in part CD15, but not CD64. Megakaryocytic blasts are detected with antibodies such as GPIIb/IIIa.
 5. **Cytogenetics:** abnormalities are detected in 50% to 70% of cases with standard techniques and about 90% with high-resolution banding. Balanced translocations t(8;21), inv(16) and t(15;17) are typical of de novo AML in younger adults; deletions or monosomies of chromosomes 5 and 7 and p53 mutations follow DNA-damaging agents.
 6. **DNA sequencing** detects mutations such as NPM1.
@@ -12283,7 +12284,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 | **Nuclear chromatin** | Delicate | More condensed |
 | **Nucleoli** | Two to four; prominent | Less conspicuous; small and sharply demarcated by a rim of condensed chromatin |
 | **Cytoplasm** | More voluminous; often fine peroxidase positive azurophilic granules | Smaller amount; scant basophilic; usually lacks granules |
-| **Auer rods** | Present in many cases | Not described |
+| **Auer rods** [needle-shaped azurophilic inclusions in myeloblasts] | Present in many cases | Not described |
 | **Myeloperoxidase** | Positive | Negative |
 | **Periodic acid–Schiff** | Not described | Often positive cytoplasmic material |
 | **Terminal deoxynucleotidyl transferase (TdT)** | Not described | Positive in more than 95% of cases; expressed only in pre-B and pre-T lymphoblasts |
@@ -12293,7 +12294,7 @@ In **aleukaemic leukaemia** blasts are entirely absent from the blood, so a bone
 
 ## What is Philadelphia chromosome?
 
-The **Philadelphia chromosome** (Ph) is the reciprocal (9;22)(q34;q11) translocation that creates the chimeric BCR::ABL gene, from portions of the BCR gene on chromosome 22 and the ABL gene on chromosome 9. It is present in more than 90% of cases of chronic myeloid leukaemia.
+The **Philadelphia chromosome** [t(9;22) producing the BCR-ABL1 fusion] (Ph) is the reciprocal (9;22)(q34;q11) translocation that creates the chimeric BCR::ABL gene, from portions of the BCR gene on chromosome 22 and the ABL gene on chromosome 9. It is present in more than 90% of cases of chronic myeloid leukaemia.
 
 ## Importance of the Philadelphia chromosome.
 
@@ -12326,7 +12327,7 @@ The **Philadelphia chromosome** (Ph) is the reciprocal (9;22)(q34;q11) transloca
    - Erythroid progenitors normal or mildly decreased.
    - Scattered **sea-blue histiocytes** (macrophages with abundant wrinkled green-blue cytoplasm).
    - Increased reticulin; overt fibrosis is rare.
-3. **Molecular and cytogenetic tests:** the BCR::ABL fusion gene, with the Philadelphia chromosome t(9;22), detected by chromosomal analysis, FISH or PCR-based tests; this differentiates CML from other myeloproliferative neoplasms.
+3. **Molecular and cytogenetic tests:** the BCR::ABL fusion gene, with the Philadelphia chromosome [t(9;22) producing the BCR-ABL1 fusion] t(9;22), detected by chromosomal analysis, FISH or PCR-based tests; this differentiates CML from other myeloproliferative neoplasms.
 
 ## Why is the prognosis of blast crisis worse than classical CGL?
 
@@ -12365,7 +12366,7 @@ The **Philadelphia chromosome** (Ph) is the reciprocal (9;22)(q34;q11) transloca
 
 - Marrow usually hypercellular; dysplastic differentiation of the erythroid, granulocytic, monocytic and megakaryocytic lineages.
 - Erythroid: **ring sideroblasts**, megaloblastoid maturation, nuclear budding.
-- Neutrophils: decreased secondary granules, toxic granulations, Döhle bodies, and **pseudo-Pelger-Hüet cells** (neutrophils with only two nuclear lobes).
+- Neutrophils: decreased secondary granules, toxic granulations, Döhle bodies [pale blue cytoplasmic inclusions in neutrophils], and **pseudo-Pelger-Hüet cells** (neutrophils with only two nuclear lobes).
 - Megakaryocytes with single nuclear lobes or multiple separate nuclei (pawn ball megakaryocytes).
 - Marrow blasts increased but less than 20%; blood blasts usually less than 10%.
 - Blood: pseudo-Pelger-Hüet cells, giant platelets, macrocytes, poikilocytes and relative or absolute monocytosis.
@@ -12415,7 +12416,7 @@ Clinical features of polycythaemia vera:
 - Headache, dizziness, hypertension and gastrointestinal symptoms.
 - **Intense pruritus** and **peptic ulceration**, both possibly from histamine release by basophils.
 - **Hyperuricaemia** from high cell turnover; symptomatic secondary gout in 5% to 10%.
-- **Thrombosis:** about 25% first come to attention with deep venous thrombosis, myocardial infarction or stroke; hepatic vein thrombosis (Budd-Chiari syndrome, thrombosis of the hepatic veins) and portal or mesenteric vein thrombosis with bowel infarction.
+- **Thrombosis:** about 25% first come to attention with deep venous thrombosis, myocardial infarction or stroke; hepatic vein thrombosis (Budd-Chiari syndrome [hepatic vein thrombosis], thrombosis of the hepatic veins) and portal or mesenteric vein thrombosis with bowel infarction.
 - **Bleeding:** minor haemorrhages (epistaxis, bleeding gums) are common; life-threatening haemorrhages occur in 5% to 10%.
 - Mild organomegaly, caused early in the course largely by congestion.
 
@@ -12512,7 +12513,7 @@ The hallmark of **primary myelofibrosis** is the development of obliterative mar
 
 - Incidence 1 to 3 per 100,000 per year; usually past the age of 60 years.
 - **Thrombosis and haemorrhage** from platelet dysfunction: deep venous thrombosis, portal and hepatic vein thrombosis, myocardial infarction and abnormal bleeding.
-- Up to one-third have acquired von Willebrand disease.
+- Up to one-third have acquired von Willebrand disease [inherited bleeding disorder from deficient or defective von Willebrand factor].
 - **Erythromelalgia**, a throbbing and burning of hands and feet from occlusion of small arterioles by platelet aggregates.
 - Indolent; median survival 12 to 15 years; uncommonly a spent phase of marrow fibrosis or transformation to AML.
 
@@ -12524,13 +12525,13 @@ Causes are the disorders associated with splenomegaly:
 
 - **Congestive splenomegaly** from portal or splenic vein hypertension: cirrhosis (the main cause of massive congestive splenomegaly), the pipestem hepatic fibrosis of schistosomiasis, portal vein thrombosis, splenic vein thrombosis from tumours of the stomach or pancreas, and right-sided heart failure. In congestive splenomegaly, slowing of blood flow from the cords to the sinusoids prolongs exposure of blood cells to macrophages, resulting in excessive destruction.
 - **Infections:** blood-borne infections, particularly infective endocarditis, and infectious mononucleosis.
-- **Haematological:** non-Hodgkin lymphomas, lymphocytic leukaemias, multiple myeloma, myeloproliferative neoplasms and haemolytic anaemias.
+- **Haematological:** non-Hodgkin [lymphoma defined by Reed-Sternberg cells] lymphomas, lymphocytic leukaemias, multiple myeloma, myeloproliferative neoplasms and haemolytic anaemias.
 - **Infiltrative disorders:** sarcoidosis, amyloidosis, glycogen storage and lipid storage diseases, and metastases.
 
 ## Causes of splenomegaly.
 
 1. **Infections:** nonspecific splenitis of any blood-borne infection, particularly infective endocarditis; infectious mononucleosis; malaria; typhoid fever.
-2. **Haematological disorders:** non-Hodgkin lymphomas and lymphocytic leukaemias; multiple myeloma; myeloproliferative neoplasms, such as chronic myeloid leukaemia and primary myelofibrosis, through extramedullary haematopoiesis; haemolytic anaemias and thalassaemia, through compensatory extramedullary haematopoiesis in severe chronic anaemia.
+2. **Haematological disorders:** non-Hodgkin [lymphoma defined by Reed-Sternberg cells] lymphomas and lymphocytic leukaemias; multiple myeloma; myeloproliferative neoplasms, such as chronic myeloid leukaemia and primary myelofibrosis, through extramedullary haematopoiesis; haemolytic anaemias and thalassaemia, through compensatory extramedullary haematopoiesis in severe chronic anaemia.
 3. **Congestion from venous outflow obstruction**
    - Intrahepatic disorders retarding portal drainage: cirrhosis (the main cause of massive splenomegaly), schistosomiasis.
    - Extrahepatic obstruction of the portal or splenic vein: portal vein thrombosis, pyelophlebitis (inflammation of the portal vein), thrombosis from tumours of the stomach or pancreas.
@@ -12546,7 +12547,7 @@ Most hepatocellular carcinomas occur in chronic liver disease with **cirrhosis**
 - **Alcohol-associated liver disease**
 - **MASLD** (metabolic dysfunction-associated steatotic liver disease), which raises the risk even without cirrhosis
 - **Aflatoxin**, a mycotoxin of Aspergillus species that contaminates crops; it acts synergistically with alcohol and hepatitis B
-- Cirrhosis from **Wilson disease** and chronic biliary diseases, where the risk is lower but still above the population average
+- Cirrhosis from **Wilson disease** [hereditary copper accumulation from ATP7B mutation] and chronic biliary diseases, where the risk is lower but still above the population average
 - **Hepatocellular adenoma**, especially with beta-catenin activating mutations, in noncirrhotic liver
 - **Dysplastic nodules** in cirrhotic liver
 
@@ -12613,7 +12614,7 @@ There are three distinctive, overlapping forms of alcohol-induced liver injury. 
 |---|---|---|
 | **Steatosis (fatty change)** | Lipid droplets accumulate in hepatocytes, small at first and then coalescing; mainly macrovesicular. Liver enlarged (4 to 6 kg), soft, yellow and greasy. Completely reversible on abstention | Hepatomegaly with mild rise of serum bilirubin and alkaline phosphatase; severe dysfunction is unusual |
 | **Alcohol-associated (alcoholic) steatohepatitis** | **Ballooned hepatocytes** with **Mallory hyaline**; neutrophils around ballooned hepatocytes; lobular lymphocytic infiltrate; spotty necrosis or apoptosis; perivenular and pericellular "chicken wire" **fibrosis** | Acute onset after a bout of heavy drinking: malaise, anorexia, weight loss, upper abdominal discomfort, tender hepatomegaly; raised bilirubin, aminotransferases (**AST higher than ALT by 2:1 or more**) and alkaline phosphatase; neutrophil leucocytosis. Each episode carries a 10% to 20% risk of death |
-| **Fibrosis leading to cirrhosis** | Progression from perivenular fibrosis to periportal and bridging fibrosis; micronodular cirrhosis (**Laennec cirrhosis**, the micronodular cirrhosis of alcohol-associated liver disease) with nodules averaging 3 mm; fat no longer seen in the burned-out stage | Hyperbilirubinaemia, raised aminotransferases, variable alkaline phosphatase, hypoproteinaemia and anaemia; cirrhosis develops in about one-third of patients with repeated bouts of hepatitis within a few years |
+| **Fibrosis leading to cirrhosis** | Progression from perivenular fibrosis to periportal and bridging fibrosis; micronodular cirrhosis (**Laennec cirrhosis** [micronodular cirrhosis, classically alcoholic], the micronodular cirrhosis of alcohol-associated liver disease) with nodules averaging 3 mm; fat no longer seen in the burned-out stage | Hyperbilirubinaemia, raised aminotransferases, variable alkaline phosphatase, hypoproteinaemia and anaemia; cirrhosis develops in about one-third of patients with repeated bouts of hepatitis within a few years |
 
 - Short-term ingestion of about 80 g of alcohol produces mild, reversible steatosis
 - Risk of severe injury becomes significant at 80 g or more of ethanol per day; 160 g or more daily for 10 to 20 years is frequently associated with severe injury
@@ -12653,6 +12654,7 @@ Reference ranges vary between laboratories.
 | | **AST** (aspartate aminotransferase) | 5 to 30 IU/L | Less specific; also found in muscle, heart, kidney, brain and blood cells |
 | **Cholestasis** | **Alkaline phosphatase** | 30 to 120 IU/L | Not liver-specific; also from bone, placenta and intestine. Raised in cholestatic disease |
 | | **GGT** (gamma-glutamyl transpeptidase) | 6 to 50 IU/L | Raised together with alkaline phosphatase in cholestatic disease; shows that a raised alkaline phosphatase is from the liver or biliary tract |
+| | **Serum bile acids** | Up to about 10 micromol/L (fasting) | Raised in acute and chronic hepatitis, cirrhosis and cholestasis, including intrahepatic cholestasis of pregnancy; a sensitive marker of impaired hepatic clearance but not specific for the type of liver disease |
 | **Bilirubin** | **Total bilirubin** | 2 to 17 micromol/L (0.3 to 1.2 mg/dL) | Jaundice becomes evident above 2 to 2.5 mg/dL |
 | | **Direct bilirubin** | 0 to 6 micromol/L | Separates conjugated from unconjugated hyperbilirubinaemia |
 | **Synthetic function** | **Prothrombin time** | 10.9 to 12.5 seconds | Prolonged when clotting factor synthesis is impaired |
@@ -12684,9 +12686,9 @@ Reference ranges vary between laboratories.
 | Predominant bilirubin | Mechanism | Causes |
 |---|---|---|
 | **Unconjugated** | Excess production | **Haemolytic anaemia**; resorption of blood from internal haemorrhage (alimentary tract bleeding, haematoma); ineffective erythropoiesis (pernicious anaemia, thalassaemia) |
-| | Reduced hepatic uptake | Drug interference with membrane carrier systems; some cases of **Gilbert syndrome** (mild inherited deficiency of UGT1A1, the bilirubin-conjugating enzyme) |
-| | Impaired conjugation | **Physiologic jaundice of the newborn** (decreased UGT1A1 activity); breast milk jaundice (beta-glucuronidases in milk); genetic UGT1A1 deficiency: **Crigler-Najjar syndrome** types I and II (inherited UGT1A1 deficiency, severe in type I) and some cases of Gilbert syndrome |
-| **Conjugated** | Deficiency of canalicular membrane transporters | **Dubin-Johnson syndrome** (MRP2 gene mutation) and **Rotor syndrome** (inherited conjugated hyperbilirubinaemia); both autosomal recessive and clinically innocuous |
+| | Reduced hepatic uptake | Drug interference with membrane carrier systems; some cases of **Gilbert syndrome** [benign unconjugated hyperbilirubinaemia from reduced UGT1A1 activity] (mild inherited deficiency of UGT1A1, the bilirubin-conjugating enzyme) |
+| | Impaired conjugation | **Physiologic jaundice of the newborn** (decreased UGT1A1 activity); breast milk jaundice (beta-glucuronidases in milk); genetic UGT1A1 deficiency: **Crigler-Najjar syndrome** [inherited UGT1A1 deficiency with severe unconjugated hyperbilirubinaemia] types I and II (inherited UGT1A1 deficiency, severe in type I) and some cases of Gilbert syndrome |
+| **Conjugated** | Deficiency of canalicular membrane transporters | **Dubin-Johnson syndrome** [inherited conjugated hyperbilirubinaemia with a black pigmented liver] (MRP2 gene mutation) and **Rotor syndrome** [inherited conjugated hyperbilirubinaemia without liver pigmentation] (inherited conjugated hyperbilirubinaemia); both autosomal recessive and clinically innocuous |
 | | Hepatocellular disease | Viral or drug-induced hepatitis, cirrhosis |
 | | Impaired bile flow | Duct obstruction; autoimmune cholangiopathies |
 
@@ -12747,7 +12749,7 @@ Jaundice in which the urine contains **no bilirubin** because the raised bilirub
 2. Complete blood count and peripheral blood smear: anaemia, with prominent reticulocytosis
 3. **Bone marrow:** increased numbers of erythroid precursors (normoblasts)
 4. **Evidence of haemolysis:** decreased plasma **haptoglobin**; raised lactate dehydrogenase
-5. **Direct Coombs test**, positive in immune haemolysis
+5. **Direct Coombs test** [antiglobulin test for antibody-coated red cells], positive in immune haemolysis
 6. **Urine:** no bilirubin; in intravascular haemolysis, haemoglobinuria and haemosiderinuria, with haemoglobinaemia in the blood
 7. **Splenomegaly** on examination in extravascular haemolysis
 
@@ -12787,9 +12789,9 @@ Jaundice in which the urine contains **no bilirubin** because the raised bilirub
 **Aetiology**
 
 - Excess production: **haemolytic anaemia**, resorption of blood from internal haemorrhage, ineffective erythropoiesis (pernicious anaemia, thalassaemia)
-- Reduced hepatic uptake: drug interference, some cases of Gilbert syndrome (mild inherited UGT1A1 deficiency)
+- Reduced hepatic uptake: drug interference, some cases of Gilbert syndrome [mild inherited UGT1A1 deficiency]
 - Impaired conjugation: **physiologic jaundice of the newborn**, breast milk jaundice, genetic UGT1A1 deficiency
-- Crigler-Najjar syndrome type I (severe UGT1A1 deficiency) is fatal around birth; in Crigler-Najjar type II and Gilbert syndrome residual UGT1A1 activity gives a milder picture
+- Crigler-Najjar syndrome [inherited UGT1A1 deficiency with severe unconjugated hyperbilirubinaemia] type I (severe UGT1A1 deficiency) is fatal around birth; in Crigler-Najjar type II and Gilbert syndrome residual UGT1A1 activity gives a milder picture
 
 **Pathogenesis**
 
@@ -12849,7 +12851,7 @@ Glomerular diseases are classified as **primary** (the kidney is the only or pre
 | | **Membranoproliferative glomerulonephritis** (type I) | Nephritic or nephrotic syndrome |
 | | **Dense deposit disease** (type II membranoproliferative glomerulonephritis) | Haematuria, chronic renal failure |
 | | **IgA nephropathy** | Recurrent haematuria or proteinuria |
-| **Secondary** | Systemic immunologic diseases such as **SLE** (systemic lupus erythematosus); vascular disorders such as thrombotic angiopathies; metabolic diseases such as **diabetes mellitus**; hereditary conditions such as **Fabry disease** (a hereditary condition affecting the glomerulus) | Similar to the primary forms |
+| **Secondary** | Systemic immunologic diseases such as **SLE** (systemic lupus erythematosus); vascular disorders such as thrombotic angiopathies; metabolic diseases such as **diabetes mellitus**; hereditary conditions such as **Fabry disease** [alpha-galactosidase A deficiency] (a hereditary condition affecting the glomerulus) | Similar to the primary forms |
 
 - Histologic changes are described as **diffuse** (all glomeruli), **global** (whole glomerulus), **focal** (a fraction of glomeruli) or **segmental** (part of each glomerulus)
 
@@ -13005,7 +13007,7 @@ Acute kidney injury can result from glomerular, interstitial, vascular or acute 
 | | **Angiomyolipoma** | Vessels, smooth muscle and fat; in 25% to 50% of patients with tuberous sclerosis |
 | | **Renal oncocytoma** | About 5% of renal neoplasms; arises from intercalated cells of collecting ducts |
 | **Malignant** | **Renal cell carcinoma** | Most common malignant tumour (85% of renal cancers in adults): clear cell, papillary, chromophobe, Xp11 translocation, collecting duct carcinoma |
-| | **Wilms tumour** (nephroblastoma) | Childhood |
+| | **Wilms tumour** [nephroblastoma, a childhood renal tumour] (nephroblastoma) | Childhood |
 | | **Urothelial carcinoma** of the calyces and pelves | 5% to 10% of primary renal tumours |
 
 ## Write down the morphology of renal cell carcinoma (short note).
@@ -13028,15 +13030,15 @@ Acute kidney injury can result from glomerular, interstitial, vascular or acute 
 
 ## Write a short note on Wilms' tumour/nephroblastoma.
 
-**Definition.** **Wilms tumour** (nephroblastoma) is the most common primary renal tumour of childhood and the fourth most common paediatric malignancy. Peak incidence is 2 to 5 years of age, and 95% occur before 10 years. 5% to 10% involve both kidneys.
+**Definition.** **Wilms tumour** [nephroblastoma, a childhood renal tumour] (nephroblastoma) is the most common primary renal tumour of childhood and the fourth most common paediatric malignancy. Peak incidence is 2 to 5 years of age, and 95% occur before 10 years. 5% to 10% involve both kidneys.
 
 **Aetiology and pathogenesis**
 
 | Syndrome | Features | Genetic basis | Risk |
 |---|---|---|---|
 | **WAGR syndrome** (Wilms tumour, aniridia, genitourinary anomalies, intellectual disability) | Aniridia and genitourinary anomalies | Germline deletion of 11p13, with the WT1 gene | About 33% |
-| **Denys-Drash syndrome** (gonadal dysgenesis and early-onset nephropathy) | Diffuse mesangial sclerosis leading to renal failure | Dominant-negative missense mutation of WT1 | About 90% |
-| **Beckwith-Wiedemann syndrome** (organomegaly, macroglossia, hemihypertrophy, omphalocele, adrenal cytomegaly) | Genomic imprinting disorder | 11p15.5 (WT2 locus); loss of imprinting or paternal disomy with overexpression of IGF2 | Increased |
+| **Denys-Drash syndrome** [WT1 mutation with nephropathy and Wilms tumour] (gonadal dysgenesis and early-onset nephropathy) | Diffuse mesangial sclerosis leading to renal failure | Dominant-negative missense mutation of WT1 | About 90% |
+| **Beckwith-Wiedemann syndrome** [overgrowth syndrome with macroglossia and embryonal tumour risk] (organomegaly, macroglossia, hemihypertrophy, omphalocele, adrenal cytomegaly) | Genomic imprinting disorder | 11p15.5 (WT2 locus); loss of imprinting or paternal disomy with overexpression of IGF2 | Increased |
 
 - Sporadic tumours account for 90%: beta-catenin gain-of-function mutations in about 10%; mutations of microRNA processing genes (DROSHA, DGCR8, DICER1) in 15% to 20% of tumours with predominantly blastemal histology
 - **TP53** mutation is associated with anaplasia and poor prognosis
