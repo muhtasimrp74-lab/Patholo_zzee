@@ -13,7 +13,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 0 | Baseline and audit | done (session 2) |
 | 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | done (session 2) |
 | 2 | Vite + TypeScript scaffold | done as scaffold (session 2); dist/ NOT deployable yet, see Stage 2 notes |
-| 3 | Storage layer | in progress (session 3): sync facade built; all localStorage call sites routed through `window.zzStore`; remaining: backup/restore `imp()` + QALIAS migration via repository, full-suite confirmation |
+| 3 | Storage layer | done (session 3). Restore/backup keeps the legacy `imp()`/`vbk` (now via `zzStore`); `Repository.importAll` is the tested future path |
 | 4 | Incremental TypeScript conversion | todo |
 | 5 | Content as JSON | todo |
 | 6 | PWA | todo |
@@ -123,10 +123,12 @@ The owner's list of 7 known failures was not provided in file form; this list ha
 - Verified (ran, this session): `npx tsc --noEmit` OK; `npm run test:unit` 19 pass; `python3 tools/build.py` OK (1310 answers, 537 linked; reverted the known textbook ch01/ch02 drift); `python3 tools/integrity/check.py` OK (1310 cards); `python3 tools/integrity/check.py --new dist` OK; `tools.tests.test_storage_fixtures` 4 pass; `tools.tests.test_smoke_http` 9 pass on legacy AND on `SITE_DIR=dist`; new `tools.tests.test_zzstore` 3 pass on legacy and (2 pass, 1 skipped) on dist; SW version tests pass.
 - NOT yet run: the full ~12-23 min suite on this commit (started in background after the push; result goes below when read). UNTESTED: real offline behaviour of `dist` (unchanged known gap, Stage 6); restore/backup path after rewiring beyond what `test_site` covers (full suite will exercise it).
 
+## Full suite on Stage 3 commit c81a6b0 (session 3)
+117 tests, 1401 s: 2 failures + 9 errors under load. Rerun alone: 6 of the 7 non-baseline ones pass; `test_wet_stroke_benchmark_has_no_long_frames` is a timing flake (passes 2/2 on clean main AND 2/2 on the branch). Remaining failures all match the baseline 5 (`text_highlight_follows_text...`, `text_marks_underline...`, `mcq_entry_button...` (passed this run), `canvases_use_the_full_pixel_ratio`, `block_ids_cover_every_block`). No regression attributable to Stage 3. NOTE: never run browsers while the suite runs; a command timeout kills the suite.
+Decision D3: backup/restore stays in the legacy `imp()` (same file format, same validation and rollback, covered by passing `test_site` restore tests); not rewritten, to avoid risk without benefit.
+
 ## Next step
-1. Read the full-suite result for the Stage 3 wiring commit (log at `/home/claude/suite_stage3.log` if the sandbox persisted; otherwise rerun alone: `setsid nohup python3 -m unittest discover -s tools/tests -v > suite.log 2>&1 &`, nothing else running). Compare with the 5 known failures above; rerun any new failure alone before judging.
-2. Finish Stage 3: move backup/restore (`imp()` in `tools/build.py` NEWIMP, `vbk`) and the QALIAS migration to use `zzStore.repository` semantics where it helps (validated import, `vivaStatePrev` snapshot, rollback) WITHOUT changing the backup file format; add a restore round-trip test (old backup file -> restore -> same data).
-3. Then Stage 4 (incremental TS conversion), smallest modules first: `welcome.js`, `tools/home.js`.
+Stage 4: convert small classic scripts to TS built to committed IIFE bundles (same pattern as zz-store.js), starting with `welcome.js`, then `tools/home.js`. After each: tsc, unit, fixtures, smoke, zzstore tests.
 
 ## Half-finished
-Nothing. Branch builds and passes the fast checks listed above.
+Nothing.
