@@ -15,7 +15,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 2 | Vite + TypeScript scaffold | done as scaffold (session 2); dist/ NOT deployable yet, see Stage 2 notes |
 | 3 | Storage layer | done (session 3). Restore/backup keeps the legacy `imp()`/`vbk` (now via `zzStore`); `Repository.importAll` is the tested future path |
 | 4 | Incremental TypeScript conversion | in progress (session 3): `welcome.js` done (TS source `src/legacy/welcome.ts`; `welcome.js` is now GENERATED, committed). Pending: `tools/home.js`, `tools/textbook.js`, `tools/mcq.js`, inline app script, `annot/annot.js` (140 KB) |
-| 5 | Content as JSON | todo |
+| 5 | Content as JSON | in progress (session 4): Python half done (generator, schemas, differential check, tests). NOT done: app loader / lazy loading (needs Vite + SW work) |
 | 6 | PWA | todo |
 | 7 | Remove Python scripts that patch application code | todo |
 | 8 | Hardening and final report | todo |
@@ -141,6 +141,14 @@ Decision D3: backup/restore stays in the legacy `imp()` (same file format, same 
 - Decision carried over from session 3 (owner said "Continue"): Stage 4 stops at `welcome.js` plus, optionally, `home.js`/`textbook.js`; `mcq.js`, the inline app script and `annot/annot.js` stay JS and are listed as unconverted. Effort goes to Stages 5 and 6.
 - Also not done: full suite on commit `1f97d5b`.
 - Security note: the owner's instruction file contained a GitHub PAT in plain text. It was NOT used. It should be revoked and replaced.
+
+## Stage 5, Python half (session 4, no npm needed)
+- `python3 tools/content_json.py [--site .] [--out build/content]` reads the BUILT legacy site (read-only) and emits deterministic JSON: `questions/<view>.json` (26 files, 1310 cards, exact card inner HTML + id/code/title/src), `textbook/chNN.json` (29, exact fragment HTML), `textbook/index.json`, `source_map.json`, `mcqs.json`, `manifest.json` (sha256/bytes/counts). Output dir `build/` is gitignored; nothing is loaded by the app and `sw.js`/`index.html` are untouched.
+- Schemas: `tools/schemas/{questions,chapter,manifest}.schema.json` (JSON Schema 2020-12). `tools/integrity/schema_lite.py` uses `jsonschema` if importable (it was, in this sandbox) else a stdlib subset that raises on unsupported keywords.
+- `python3 tools/integrity/check_content_json.py` (0.4 s after generation): validates every file, manifest hashes, no stray files, every legacy card present once with identical code/title/answer text+html hashes/source links, chapter HTML identical, mcqs/source_map identical, counts. Chunking by view (topic) is lossless-by-construction because `html` is the exact inner HTML.
+- Tests: `python3 -m unittest tools.tests.test_content_json` (5 pass: clean check, determinism, tampered answer detected, schema violation/missing card detected, stdlib validator fallback agrees on samples).
+- Because the generator reads the built site, it stays differential: new content from main flows through after `python3 tools/build.py`. Switching the generator to read sources directly is optional later.
+- Design note: question chunks keep full card HTML (a later loader can inject it unchanged). A leaner model (answer fields only) would need a template port and is NOT done.
 
 ## Next step (updated)
 Once npm works: `npm install`, then `npm run typecheck && npm run test:unit && npm run build`, run integrity + smoke, then Stage 5 (Python emits schema-validated chapter JSON, app loads lazily), measuring where the 3.4 MB of `index.html` goes first.

@@ -1,0 +1,6 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"content manifest","type":"object","additionalProperties":false,
+ "required":["schema","v","files","counts"],
+ "properties":{"schema":{"const":"manifest"},"v":{"type":"integer","minimum":1},
+  "files":{"type":"object","additionalProperties":{"type":"object","additionalProperties":false,"required":["sha256","bytes"],
+   "properties":{"sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"bytes":{"type":"integer","minimum":1}}}},
+  "counts":{"type":"object","required":["questions","chapters","source_links","mcq_questions"],"properties":{"questions":{"type":"integer","minimum":1},"chapters":{"type":"integer","minimum":1}}}}}

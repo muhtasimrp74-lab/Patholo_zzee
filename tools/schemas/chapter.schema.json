@@ -1,0 +1,5 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"textbook chapter","type":"object","additionalProperties":false,
+ "required":["schema","v","id","n","title","pages","html"],
+ "properties":{"schema":{"const":"chapter"},"v":{"type":"integer","minimum":1},"id":{"type":"string","pattern":"^ch[0-9]{2}$"},
+  "n":{"type":"integer","minimum":1},"title":{"type":"string","minLength":1},
+  "pages":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"integer","minimum":1}},"html":{"type":"string","minLength":1}}}
