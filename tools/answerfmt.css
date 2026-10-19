@@ -9,3 +9,9 @@
 .ans ul,.ans ol{margin:.4em 0 .9em}
 /* left-aligned (ragged right) reads best on narrow screens; justified makes uneven word gaps with long medical terms */
 .ans p,.ans li,.ans td,.ans th{text-align:left;hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
+
+/* "from the textbook" bar (tools/source_links.py): only on answers collected from Robbins */
+.ans .srcbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 2px;padding-top:11px;border-top:1px dashed var(--line,#ddd);font:600 .78rem var(--body)}
+.ans .srcbar-l{color:var(--muted,#666);letter-spacing:.02em}
+.ans .srcbar a{display:inline-flex;align-items:center;padding:6px 13px;border-radius:999px;border:1.5px solid var(--blue,#7a1f36);color:var(--blue,#7a1f36);background:transparent;text-decoration:none;font-weight:700;min-height:32px}
+.ans .srcbar a:hover,.ans .srcbar a:focus-visible{background:var(--blue,#7a1f36);color:#fff;outline:none}

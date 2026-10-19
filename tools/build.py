@@ -407,3 +407,5 @@ subprocess.run([sys.executable, os.path.join(HERE, 'format_answers3.py')], check
 subprocess.run([sys.executable, os.path.join(HERE, 'split_semicolons.py')], check=True)   # semicolon lists -> separate lines (idempotent)
 # edits that were made by hand in index.html and exist nowhere else (see apply_hand_edits.py)
 subprocess.run([sys.executable, os.path.join(HERE, 'apply_hand_edits.py')], check=True)
+# 'From the textbook' link bar on answers that were collected from Robbins (idempotent; must run after every pass that edits answers)
+subprocess.run([sys.executable, os.path.join(HERE, 'source_links.py')], check=True)

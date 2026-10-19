@@ -85,11 +85,19 @@
   T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
   T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);
   try{const r=await fetch('textbook/'+c.id+'.html');if(!r.ok)throw 0;const h=await r.text();if(my!==tok)return;{const bd=T.querySelector('#tbbody');bd.innerHTML=h;bd.dataset.ch=c.id;window.Annot&&Annot.tbAttach&&Annot.tbAttach()}
-   const s=J('tbPos')[c.id];if(s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}
+   if(p[2]&&goBlock(p[2],p[3],my))return;const s=J('tbPos')[c.id];if(s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}
   catch(e){if(my===tok)T.querySelector('#tbbody').innerHTML='<div class="mempty"><b>Chapter not available offline yet</b>Connect once to download it.</div>'}}
+ /* deep link from an answer: #/textbook/<chapter>/<block id>/<question id> -> open the section, scroll to and flash the paragraph, offer a way back */
+ function goBlock(b,q,my){const bd=T.querySelector('#tbbody');let el=null;try{el=bd.querySelector('[data-b="'+decodeURIComponent(b).replace(/"/g,'')+'"]')}catch(e){}
+  if(!el)return false;const sec=el.closest('.tbs');if(sec)tog(sec,true);
+  let back='';if(q&&/^q\d+$/.test(q)){let tp='';try{const d=(typeof DATA!=='undefined'?DATA:[]).find(x=>x[3]===q);if(d)tp=d[2]}catch(e){}
+   back='<button type="button" class="tbback" data-back="'+(tp?'#/'+tp+'/'+q:'#/questions')+'">\u2039 Back to the answer</button>'}
+  const old=T.querySelector('.tbback');if(old)old.remove();if(back)T.insertAdjacentHTML('afterbegin',back);
+  setTimeout(()=>{if(my!==tok)return;el.scrollIntoView({block:'center'});el.classList.add('tbtarget');setTimeout(()=>el.classList.remove('tbtarget'),6000);onScroll()},80);return true}
  const tog=(s,open)=>{const h=s.querySelector('.tbs-h');open=open===undefined?s.classList.contains('shut'):open;s.classList.toggle('shut',!open);h.setAttribute('aria-expanded',open)};
  T.addEventListener('click',e=>{let a;
-  if(a=e.target.closest('[data-go]')){const e2=T.querySelector('[data-a="'+a.dataset.go+'"]');if(e2){const s=e2.closest('.tbs');if(s)tog(s,true);e2.scrollIntoView({behavior:'smooth',block:'start'})}}
+  if(a=e.target.closest('[data-back]')){const h=a.dataset.back;if(history.length>1&&document.referrer.indexOf(location.host)>-1)history.back();else location.hash=h}
+  else if(a=e.target.closest('[data-go]')){const e2=T.querySelector('[data-a="'+a.dataset.go+'"]');if(e2){const s=e2.closest('.tbs');if(s)tog(s,true);e2.scrollIntoView({behavior:'smooth',block:'start'})}}
   else if(a=e.target.closest('[data-all]')){const o=a.dataset.all==='1';T.querySelectorAll('.tbs').forEach(s=>tog(s,!o));a.dataset.all=o?'0':'1';a.textContent=o?'Expand all':'Collapse all'}
   else if(a=e.target.closest('[data-hl]')){const S=J('tbSet');S.off=!S.off;W('tbSet',S);T.classList.toggle('nohl',!!S.off);a.setAttribute('aria-pressed',!S.off)}
   else if(a=e.target.closest('[data-done]')){const D=J('tbDone'),k=a.dataset.done;if(D[k])delete D[k];else D[k]=1;W('tbDone',D);a.setAttribute('aria-pressed',!!D[k]);a.textContent=D[k]?'✓ Read':'Mark as read'}

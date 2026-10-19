@@ -157,3 +157,9 @@ mark.tbhl{display:inline;background:color-mix(in srgb,#dd6c90 30%,transparent);c
 #tbsc.show .tbsc-thumb{opacity:.9}
 @media(max-width:1000px){.tbreading{padding-right:16px}}
 @media print{#tbsc,#tbprog{display:none!important}}
+
+/* deep link from an answer */
+.tbback{position:sticky;top:calc(var(--toast-top-offset,56px) + 4px);z-index:30;display:inline-flex;align-items:center;gap:6px;margin:0 0 10px;padding:8px 14px;border:0;border-radius:999px;font:600 .85rem var(--body);color:#fff;background:var(--navy,#7a1f36);box-shadow:0 4px 14px rgba(0,0,0,.22);cursor:pointer}
+.tbtarget{animation:tbflash 6s ease-out 1;border-radius:8px;scroll-margin:30vh}
+@keyframes tbflash{0%,70%{background:color-mix(in srgb,#e9a23b 38%,transparent);box-shadow:0 0 0 6px color-mix(in srgb,#e9a23b 38%,transparent)}100%{background:transparent;box-shadow:0 0 0 6px transparent}}
+@media(prefers-reduced-motion:reduce){.tbtarget{animation:none;background:color-mix(in srgb,#e9a23b 38%,transparent)}}
