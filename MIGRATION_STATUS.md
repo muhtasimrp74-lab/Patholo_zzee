@@ -11,8 +11,8 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | # | Stage | Status |
 |---|-------|--------|
 | 0 | Baseline and audit | done (session 2) |
-| 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | in progress: integrity script, localStorage fixtures and http smoke suite done; IndexedDB (annotation) fixtures todo |
-| 2 | Vite + TypeScript scaffold | todo |
+| 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | done (session 2) |
+| 2 | Vite + TypeScript scaffold | done as scaffold (session 2); dist/ NOT deployable yet, see Stage 2 notes |
 | 3 | Storage layer | todo |
 | 4 | Incremental TypeScript conversion | todo |
 | 5 | Content as JSON | todo |
@@ -97,8 +97,16 @@ The owner's list of 7 known failures was not provided in file form; this list ha
 - JSON schema validation: UNTESTED/not yet written (no generated JSON exists until Stage 5).
 - Dev deps installed in sandbox: `pip install jsonschema playwright`.
 
+## Stage 2 notes (session 2)
+- Files: `package.json` (devDeps: vite, typescript, @types/node; no runtime deps), `vite.config.ts`, `tsconfig.json` (strict + noUncheckedIndexedAccess), `src/env.d.ts`, `.gitignore` gets `dist/`.
+- Commands: `npm install`, `npx vite build` (about 2 s, output `dist/`), `npx tsc --noEmit`, `python3 tools/integrity/check.py --new dist`, `SITE_DIR=dist python3 -m unittest tools.tests.test_smoke_http`.
+- The entry is the legacy-generated `index.html`; its inline classic scripts are untouched. A small plugin copies `welcome.js sw.js manifest.json _headers annot icons fonts textbook` and `tools/source_map.json`, `tools/mcqs.json` (the last two only so the integrity script can compare; remove from dist in Stage 5).
+- Verified (ran): integrity diff dist vs legacy = OK (1310 cards, 30 views, 30 textbook files); smoke suite against dist = 9 tests OK; `tsc --noEmit` OK.
+- KNOWN GAP (do not deploy dist yet): Vite rewrote `annot/annot.css` into a hashed `assets/index-*.css` and hashes fonts/icons it finds in CSS/HTML into `assets/`, while the legacy `sw.js` precache list (`CORE`) still names the old paths. The offline smoke test passes, but the hashed assets are not precached by the legacy SW, so real offline behaviour of dist is UNTESTED and probably degraded until Stage 6 generates the service worker. Duplicated copies of `icons/` and `fonts/` also exist in dist.
+- Full unittest suite has NOT been rerun after Stage 1/2 additions (only new tests were run). Run it on an idle machine at the next session start (about 23 min under load; use `setsid nohup` and do not run browsers concurrently).
+
 ## Next step
-Finish Stage 1: add IndexedDB annotation fixtures. Then Stage 2: Vite + TypeScript scaffold in the repo root (package.json, vite.config.ts, tsconfig) building to `dist/` next to the legacy build; first make the Vite build reproduce the legacy page, then run `python3 tools/integrity/check.py --new dist` and `SITE_DIR=dist` smoke tests.
+Stage 3: storage layer. Design `src/storage/` (typed `Repository` with get/set/remove/list/migrate/export/import, localStorage and IndexedDB adapters, schema version stored under a new key without touching `vivaState` shape), port the legacy `S`/`save()` code and annot IndexedDB access behind it, keep `vbk` backup/restore, and prove with `tools/tests/test_storage_fixtures.py` plus new unit tests that old data reads unchanged. Before that: `git fetch origin` and merge `origin/main` if it moved; start the full suite in the background.
 
 ## Half-finished
 Nothing yet.
