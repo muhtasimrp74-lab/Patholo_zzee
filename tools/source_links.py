@@ -98,13 +98,13 @@ class Index:
         for w in t:
             if self.idf.get(w, 0) > 2.0:
                 for si in self.inv[w]: cand[si] += self.idf[w]
-        W = sum(self.idf.get(w, 6.0) for w in t); bgA = set(zip(tl, tl[1:])); best = (0, None)
-        for si, _ in cand.most_common(60):
+        W = sum(sorted(self.idf.get(w, 6.0) for w in t)); bgA = set(zip(tl, tl[1:])); best = (0, None)
+        for si, _ in sorted(cand.items(), key=lambda kv: (-kv[1], kv[0]))[:60]:
             ui, st, sbg, k = self.sent[si]
-            uni = sum(self.idf.get(w, 6.0) for w in t & st) / W
+            uni = sum(sorted(self.idf.get(w, 6.0) for w in t & st)) / W
             big = len(bgA & sbg) / max(1, len(bgA))
             sc = (.65 * uni + .35 * big) * k
-            if sc > best[0]: best = (sc, ui)
+            if sc > best[0] + 1e-12: best = (sc, ui)
         return best
 
 # ------------------------------------------------------------------ answers
@@ -129,13 +129,13 @@ def analyse(ans_html, IX):
         tl = toks(u); w = len(tl); tot += w; r = IX.best(tl)
         if r and r[1] is not None and r[0] >= THR_UNIT:
             hit += w; U = IX.U[r[1]]; per[U['ch']] += w; blk[(U['ch'], U['b'])] += w * r[0]
-    chs = per.most_common(1)
+    chs = sorted(per.items(), key=lambda kv: (-kv[1], kv[0]))[:1]
     return dict(cov=hit / tot if tot else 0, conc=(chs[0][1] / hit) if hit else 0, ch=chs[0][0] if chs else None, blk=blk, hit=hit, tot=tot)
 
 def decide(a): return bool(a) and a['cov'] >= THR_COV and a['conc'] >= THR_CH and a['hit'] >= 25
 
 def pick(a, IX, maxn=3):
-    ch = a['ch']; cand = sorted(((w, b) for (c, b), w in a['blk'].items() if c == ch), reverse=True)
+    ch = a['ch']; cand = sorted(((round(w, 6), b) for (c, b), w in a['blk'].items() if c == ch), key=lambda x: (-x[0], x[1]))
     U = {(u['ch'], u['b']): u for u in IX.U}; chosen = []
     for w, b in cand:
         u = U[(ch, b)]
