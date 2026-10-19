@@ -16,7 +16,7 @@ class Smoke(unittest.TestCase):
         threading.Thread(target=c.srv.serve_forever, daemon=True).start()
         c.pw = sync_playwright().start(); c.b = c.pw.chromium.launch(); c.ctx = c.b.new_context(service_workers='allow'); c.errs = []
         c.p = c.ctx.new_page(); c.p.on('pageerror', lambda e: c.errs.append(str(e)))
-        c.p.goto(c.url, wait_until='domcontentloaded', timeout=90000); c.p.wait_for_timeout(2000)
+        c.p.goto(c.url, wait_until='domcontentloaded', timeout=90000); c.p.wait_for_function("()=>!document.documentElement.classList.contains('zz-boot')", timeout=60000); c.p.wait_for_timeout(2000)   # zz-boot is cleared at the end of boot, also when cards are loaded asynchronously
     @classmethod
     def tearDownClass(c): c.b.close(); c.pw.stop(); c.srv.shutdown()
     def go(self, h): self.p.goto(self.url + h, wait_until='domcontentloaded'); self.p.wait_for_timeout(600)

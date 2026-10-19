@@ -1,5 +1,5 @@
 """Stage 5 Option A probe: tools/lazy_probe.py moves every card out of index.html into per-view JSON chunks and a loader puts them
-back (placeholders swapped, boot scripts re-run in order) BEFORE the boot script. After boot the DOM must equal the inline build
+back (placeholders swapped by a parser-blocking script, nothing deferred) BEFORE the boot scripts. After boot the DOM must equal the inline build
 (whitespace between tags aside), with no page errors and no loader failure. Probe only: nothing shipped uses it."""
 import os, re, sys, threading, tempfile, functools, http.server, socketserver, unittest
 from playwright.sync_api import sync_playwright
@@ -43,6 +43,6 @@ class Lazy(unittest.TestCase):
     def test_html_shrinks_and_chunks_cover_every_card(self):
         n, v = lazy_probe.build(ROOT, self.tmp.name); self.assertEqual(n, 1310)
         self.assertLess(os.path.getsize(os.path.join(self.tmp.name, 'index.html')), os.path.getsize(os.path.join(ROOT, 'index.html')) * 0.4)
-        self.assertEqual(len(os.listdir(os.path.join(self.tmp.name, 'zzcards'))), v)
+        self.assertEqual(len([f for f in os.listdir(os.path.join(self.tmp.name, 'zzcards')) if f.endswith('.json')]), v); self.assertTrue(os.path.exists(os.path.join(self.tmp.name, 'zzcards', 'all.js')))
 
 if __name__ == '__main__': unittest.main()
