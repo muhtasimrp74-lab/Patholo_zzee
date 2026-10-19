@@ -18,7 +18,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 5 | Content as JSON | in progress (session 4): Python half done (generator, schemas, differential check, tests). NOT done: app loader / lazy loading (needs Vite + SW work) |
 | 6 | PWA | done for dist (session 7): vite plugin regenerates dist/sw.js CORE+VERSION from the real dist files; tools/tests/test_dist_offline.py passes (cold offline reload, topic opens, textbook cached). Root sw.js unchanged; dist still not deployed |
 | 7 | Remove Python scripts that patch application code | todo |
-| 8 | Hardening and final report | todo |
+| 8 | Hardening and final report | todo (full suite verified in session 8: no regressions) |
 
 ## Commands (legacy, current)
 - Build site: `python3 tools/build.py` (about 3 min; rewrites `index.html`, and also rewrites `textbook/*.html` and `tools/answers_by_id.json`, see findings)
@@ -200,3 +200,9 @@ Nothing.
 - New `tools/tests/test_dist_offline.py` (needs `npm run build`): precache list covers every local file the page and CSS reference; after install the cache holds all of them plus the 29 textbook chapters; with the network off, reload shows home with >1000 cards, `#/01` opens with cards, and no page response is >= 400. Result: 2/2 pass. Note: the worker's own background revalidation fetches fail offline by design, so the test watches page responses, not `requestfailed`.
 - Also green: `npm run check` (integrity), `npm run typecheck`, `npm run test:unit` 19/19.
 - NOT done: the full unittest suite module by module (run each module separately, the whole suite exhausts 4 GB RAM), Stage 7 (`ui_patch.py`, `nav_patch.py`), Stage 8, Option B lazy loading, deploying dist.
+
+## Session 8 (2026-10-20): full suite, run test by test
+- Running whole modules exhausts the 4 GB sandbox (`test_annot` leaks headless browsers and later tests then fail with load-induced errors). Fix for the runner: run every test as its own process (`python3 -m unittest tools.tests.<module>.<Class>.<test>`) and kill leftover `headless_shell` processes after each one.
+- Result on `02c5416` after `npm ci && npm run build`: 127 tests run one by one (`test_lazy_probe` excluded, it needs the probe build): 122 OK, 5 FAILED. The 5 are exactly the 5 that already fail on clean `main` (listed under "Known failures that pre-exist on main"): three `test_annot` click timeouts, `test_annot_p6` pixel ratio (2.67 != 3), `test_annot_tb` block-id determinism. No new failures, so no regression from Stages 1-6.
+- `test_dist_offline` (2) and `test_smoke_http`, `test_welcome`, `test_zzstore`, `test_storage_fixtures`, `test_content_json` all pass in this run.
+- NOT done: Stage 7 (`ui_patch.py`, `nav_patch.py`), Stage 8, Option B lazy loading, deploying dist.
