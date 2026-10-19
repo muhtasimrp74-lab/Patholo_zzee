@@ -11,7 +11,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | # | Stage | Status |
 |---|-------|--------|
 | 0 | Baseline and audit | in progress (full baseline suite running on a clean worktree of main) |
-| 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | todo |
+| 1 | Safety net (differential integrity script, storage fixtures, Playwright smoke) | in progress: integrity script done and negative-tested; storage fixtures + Playwright smoke todo |
 | 2 | Vite + TypeScript scaffold | todo |
 | 3 | Storage layer | todo |
 | 4 | Incremental TypeScript conversion | todo |
@@ -78,8 +78,14 @@ Search; practice (spaced repetition + timed viva); quiz mode; MCQs (home, custom
 - D1: Python `jsonschema` (dev-only, already installed here, no runtime effect) is used to validate generated JSON against schemas in the integrity script. Benefit: schema validation is a stated requirement; hand-rolling a validator would be larger and less reliable. Not shipped to users.
 - D2: Differential integrity script compares a content manifest extracted from the legacy `index.html` (plus `textbook/`, `source_map.json`) against one extracted from the Vite build. To stay under 1 minute, the legacy build is not rerun by default: the script verifies the committed legacy output is fresh by content-hashing the sources, and offers `--rebuild-legacy` (about 3 min) for a full same-commit comparison. Final stage runs it with `--rebuild-legacy`.
 
+## Stage 1 progress (session 2)
+- `tools/integrity/extract_content.py <site_dir>` builds a content manifest (card ids/codes/titles, answer text+html hashes, source links, DATA row count, QMETA/QALIAS hashes, views, textbook file hashes, source_map/mcqs hashes). Ran: 1310 cards, 30 views, 30 textbook files.
+- `python3 tools/integrity/check.py [--new <dir>] [--rebuild-legacy]` self-checks legacy (counts, qids.json ids still present or aliased, source_map vs srcbars) and diffs a new build. Ran in well under 1 minute: OK. Negative test (one char injected into q3 answer) correctly FAILED. Diffing the legacy against itself: OK.
+- JSON schema validation: UNTESTED/not yet written (no generated JSON exists until Stage 5).
+- Dev deps installed in sandbox: `pip install jsonschema playwright`.
+
 ## Next step
-Finish Stage 0: when the baseline suite completes, classify each failure, fill "Known failures", mark Stage 0 done, commit, push. Then start Stage 1 with the content extractor `tools/integrity/extract_content.py`.
+(session 2 update: integrity script exists; baseline suite was still running when this was written.) Finish Stage 0: when the baseline suite completes, classify each failure, fill "Known failures", mark Stage 0 done, commit, push. Then continue Stage 1: storage-fixture tests (old-format localStorage/IndexedDB samples) and the Playwright smoke suite served over http (home, topic, card answer, textbook deep link, search, quiz, offline reload).
 
 ## Half-finished
 Nothing yet.
