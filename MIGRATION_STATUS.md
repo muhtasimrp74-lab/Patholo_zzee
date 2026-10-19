@@ -150,6 +150,10 @@ Decision D3: backup/restore stays in the legacy `imp()` (same file format, same 
 - Because the generator reads the built site, it stays differential: new content from main flows through after `python3 tools/build.py`. Switching the generator to read sources directly is optional later.
 - Design note: question chunks keep full card HTML (a later loader can inject it unchanged). A leaner model (answer fields only) would need a template port and is NOT done.
 
+## Content checks without npm (session 4)
+- One command: `python3 tools/check_all.py [--size]` (about 1 s). Runs `tools/integrity/check.py`, regenerates `build/content` with `tools/content_json.py`, then `tools/integrity/check_content_json.py`; every step runs, exit code is non-zero if any failed, and the summary names the failed steps. It does not rebuild the legacy site (run `python3 tools/build.py` first after source changes) and does not run tsc/vite/unit/browser tests.
+- `python3 tools/integrity/size_report.py [site_dir] [--json]`: read-only breakdown of `index.html` (never writes). Measured on commit `9c9278b` content (3,457,425 bytes): question cards 2,438,625 (70.5%, 1,310 cards); inline scripts 698,544 (20.2%, 11 blocks; one 672,654-byte block holds `MCQDATA` 198,735 / `QMETA` 169,519 / `DATA` 156,695 inline literals, about 15% of the file); `<style>` 215,971 (6.2%, 6 blocks); other markup 104,285 (3.0%). Implication for the loader: moving the cards to lazy per-topic JSON addresses about 70% of the file; moving `MCQDATA`/`QMETA`/`DATA` out addresses about 15% more, but those three are read synchronously at boot by the inline app script, so that is a riskier change than the cards.
+
 ## Next step (updated)
 Once npm works: `npm install`, then `npm run typecheck && npm run test:unit && npm run build`, run integrity + smoke, then Stage 5 (Python emits schema-validated chapter JSON, app loads lazily), measuring where the 3.4 MB of `index.html` goes first.
 
