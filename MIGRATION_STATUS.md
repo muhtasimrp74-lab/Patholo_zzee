@@ -236,3 +236,7 @@ Nothing.
 ## Session 8e: Stage 7 slice 3 (bottom-nav contents now generated only by nav_patch.py)
 - `build.py` now emits an empty `<nav id="bnav" aria-label="Main"></nav>` (anchor for `nav_patch.BNAV`), and the four `ui_patch.py` lines that removed the Topics tab and added a Chapters tab inside that nav are gone (their result was always overwritten). Rebuild byte-identical to the committed `index.html`.
 - Remaining anchored replacements: 10 in `ui_patch.py`, 2 in `nav_patch.py` (plus the empty-nav anchor in `build.py`).
+
+## Session 8f: Stage 7 slice 4
+- Folded the first real anchored edit into the source: `src/index.base.html` now has `a[href="#/qa"]` where `ui_patch.py` used to swap it from `#/topics`; the replace is gone. Rebuild byte-identical.
+- Remaining ui_patch anchors, classified: 35 and 44 target text that lives in `tools/questions.js` (injected by build.py, not in the base), 29 is a global `count=0` CSS replace over the whole built page (also hits build-injected CSS), 31/34/37/46 are chained on earlier results, 48 injects the big UPD/HOME/PB/SF script block after `route();`. These need `questions.js` and the injection order edited together; each must still be rebuilt and `cmp`-checked.

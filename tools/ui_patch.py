@@ -25,7 +25,6 @@ POLISHCSS = open(__import__('os').path.join(__import__('os').path.dirname(__file
 
 def patch(s):
     # navigation: no Topics button; separate Questions and Q&A buttons
-    s = _rep(s, """l.querySelector('a[href="#/topics"]').insertAdjacentHTML('afterend'""", """l.querySelector('a[href="#/qa"]').insertAdjacentHTML('afterend'""")
     s = _rep(s, 'grid-template-columns:repeat(5,1fr)', 'grid-template-columns:repeat(6,1fr)', 0)
     # Questions page modes
     s = _rep(s, "const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');" if "Tap a question to read its answer right here" in s else "const QV=mkView('questions','Questions','Questions','Only the questions. Tap one to reveal its answer, tap again to hide it.');",

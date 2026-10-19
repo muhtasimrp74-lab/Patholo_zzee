@@ -556,7 +556,7 @@ ${rc?`<div class="dc"><h3>Continue where you left off</h3><a class="q" href="#/$
 <div class="chips" style="padding:0;margin:0 0 20px;max-width:none;flex-wrap:wrap"><span class="mu" style="align-self:center">By B-number:</span>${BS.map(b=>`<a href="#/b/${b}">${b}</a>`).join('')}</div>`;prog()}
 function exp(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S,null,1)],{type:'application/json'}));a.download='viva-backup-'+dstr(Date.now())+'.json';a.click()}
 function imp(f){if(!f)return;f.text().then(t=>{try{const o=JSON.parse(t);if(!o||!Array.isArray(o.bm))throw 0;Object.assign(S,o);save();location.reload()}catch(e){alert('That file is not a valid backup.')}})}
-document.querySelectorAll('.nav .links').forEach(l=>l.querySelector('a[href="#/topics"]').insertAdjacentHTML('afterend','<a href="#/practice">Practice</a>'));
+document.querySelectorAll('.nav .links').forEach(l=>l.querySelector('a[href="#/qa"]').insertAdjacentHTML('afterend','<a href="#/practice">Practice</a>'));
 document.querySelectorAll('.logo').forEach(l=>l.innerHTML='<img src="icons/favicon.svg" alt="" width="36" height="36">');
 function mkView(id,title,h,lede){const v=document.createElement('div');v.className='view';v.id='v-'+id;v.hidden=true;v.dataset.title=title+' | Systemic Pathology Viva';
 v.innerHTML=`<div class="hero small"><nav class="nav">${document.querySelector('#v-home .nav').innerHTML}</nav><div class="hero-in"><div><p class="crumb"><a href="#/">Home</a></p><h1>${h}</h1><p class="lede">${lede}</p></div></div></div><main></main>`;[...document.querySelectorAll('.view')].pop().after(v);return v.querySelector('main')}
