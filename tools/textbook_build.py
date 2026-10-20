@@ -213,14 +213,30 @@ def add_block_ids(h):
     return ''.join(toks)
 
 import textbook_semicolons; SEMI = textbook_semicolons.load()
+ALIAS = {}
+def alias_pairs(old_html, new_html):
+    # same blocks in the same order, only the data-b value differs
+    f = lambda t: re.findall(r'<(?:p|li|table|figure|aside|h3|h4|h5)\b[^>]*?\sdata-b="([^"]+)"', t)
+    a, b = f(old_html), f(new_html); assert len(a) == len(b), 'block count differs'
+    return {x: y for x, y in zip(a, b) if x != y}
 os.makedirs(OUT, exist_ok=True); idx = []
 for f in sorted(glob.glob(os.path.join(SRC, 'ch*.json'))):
     ch = json.load(open(f, encoding='utf8')); key = os.path.basename(f)[:-5]
     if os.path.exists(os.path.join(HERE, 'curate', key + '.py')): h, meta = build_curated(importlib.import_module(key)); print('curated:', key, meta)
     else: h, meta = build(ch)
-    h = add_block_ids(h)
+    # Block ids are computed from the FINAL text (after the semicolon treatment), so they equal the runtime formula in annot.js.
+    # Earlier builds hashed the text before the treatment; those ids are mapped to the new ones by tools/textbook_block_alias.json.
+    h_raw = h
     if not os.environ.get('ZZ_NO_SEMI') and key in SEMI: h = textbook_semicolons.apply(h, SEMI[key])   # see textbook_semicolons.py
+    h = add_block_ids(h)
+    if os.environ.get('ZZ_WRITE_ALIAS'):      # maintenance only: derive old id -> new id (see tools/textbook_block_alias.py)
+        old_h = add_block_ids(h_raw)
+        if key in SEMI and not os.environ.get('ZZ_NO_SEMI'): old_h = textbook_semicolons.apply(old_h, SEMI[key])
+        ALIAS[key] = alias_pairs(old_h, h)
     open(os.path.join(OUT, key + '.html'), 'w', encoding='utf8').write(h)
     idx.append(dict(id=key, n=ch['chapter_number'], title=ch['title'], pages=ch.get('book_pages'), **meta))
 json.dump({'title': 'Robbins Pathologic Basis of Disease', 'chapters': idx}, open(os.path.join(OUT, 'index.json'), 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
 print(len(idx), 'chapters ->', OUT, '| total min', sum(c['min'] for c in idx))
+if os.environ.get('ZZ_WRITE_ALIAS'):
+    json.dump(ALIAS, open(os.path.join(HERE, 'textbook_block_alias.json'), 'w', encoding='utf8'), sort_keys=True, separators=(',', ':'))
+    print('alias entries:', sum(len(v) for v in ALIAS.values()))

@@ -119,7 +119,11 @@ async function migrate(){if(!St.db)return;if((await metaGet('migrated'))===1)ret
  await metaPut('migrated',1)}
 
 /* ---------- init ---------- */
-async function init(){try{St.db=await openDb();const all=await rq(St.db.transaction('docs').objectStore('docs').getAll());all.forEach(d=>{if(d&&KEYRE.test(d.k)&&Array.isArray(d.objs))St.docs[d.k]=d});
+/* textbook block ids were recomputed from the final text (tools/textbook_block_alias.json -> window.TBALIAS, old id -> new id, per chapter).
+   Annotations saved against an old id are moved to the new one on load and on restore; ids that are already new are left alone. */
+function tbAlias(d){const A=window.TBALIAS,m=A&&d&&typeof d.k==='string'&&/^t:ch\d{2}$/.test(d.k)&&A[d.k.slice(2)];if(!m||!Array.isArray(d.objs))return 0;let n=0;
+ for(const o of d.objs){const b=o&&o.a&&o.a.b;if(typeof b==='string'&&Object.prototype.hasOwnProperty.call(m,b)){o.a.b=m[b];n++}}return n}
+async function init(){try{St.db=await openDb();const all=await rq(St.db.transaction('docs').objectStore('docs').getAll());all.forEach(d=>{if(d&&KEYRE.test(d.k)&&Array.isArray(d.objs)){St.docs[d.k]=d;if(tbAlias(d))St.dirty.add(d.k)}});if(St.dirty.size)flush();
   St.meta.set=(await metaGet('settings'))||{};await migrate()}catch(e){St.mem=true}
  try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
  applySettings(St.meta.set);St.meta.sinceBackup=+(await metaGet('sinceBackup'))||0;buildUi();mxInit();for(const k in St.docs){const h=hostByKey(k);h&&layerOf(h,k)}
@@ -834,7 +838,7 @@ async function tip(force){if(!St.db&&!force)return;try{if(!force&&(await metaGet
 function rove(cur){if(!bar)return;const bs=[...bar.querySelectorAll(':scope>button')];if(!bs.length)return;if(!cur||!bs.includes(cur))cur=bar.querySelector(':scope>[data-a][aria-pressed=true]:not([data-a=eye])')||bs[0];bs.forEach(b=>{b.tabIndex=b===cur?0:-1})}
 /* ---------- public API ---------- */
 function dump(mark){const docs={};for(const k in St.docs){const d=St.docs[k];if(d.objs.length||d.ws)docs[k]={rev:d.rev||0,upd:d.upd||0,...(d.ws?{ws:d.ws}:{}),objs:JSON.parse(JSON.stringify(d.objs.map(o=>{const c=Object.assign({},o);delete c.orphan;delete c.editing;delete c.anim;return c})))}}if(mark){St.meta.sinceBackup=0;metaPut('sinceBackup',0)}return{v:1,docs}}
-async function load(payload){const v=validate(payload);if(!v)throw new Error('invalid annotation data');const docs=Object.create(null);for(const k in v.docs)if(v.docs[k].objs.length||v.docs[k].ws)docs[k]=v.docs[k];
+async function load(payload){const v=validate(payload);if(!v)throw new Error('invalid annotation data');const docs=Object.create(null);for(const k in v.docs)if(v.docs[k].objs.length||v.docs[k].ws)docs[k]=v.docs[k];for(const k in docs)tbAlias(docs[k]);
  if(!St.db){Object.keys(St.docs).forEach(k=>delete St.docs[k]);Object.assign(St.docs,docs);repaintAll();return}
  const prev=dump(),tx=St.db.transaction(['docs','meta'],'readwrite');tx.objectStore('meta').put({k:'prev',v:{at:Date.now(),data:prev}});const os=tx.objectStore('docs');os.clear();Object.values(docs).forEach(d=>os.put(d));await txd(tx);
  Object.keys(St.docs).forEach(k=>delete St.docs[k]);Object.assign(St.docs,docs);St.dirty.clear();St.undo=Object.create(null);St.redo=Object.create(null);for(const k in docs){const h=hostByKey(k);h&&layerOf(h,k)}layers.forEach(L=>{if(L.tb)reanchor(L)});repaintAll();sync();schedBadges()}
