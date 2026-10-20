@@ -5,7 +5,7 @@ Sections become collapsible panels; KEY CONCEPTS / Morphology / Clinical / Patho
 import json, glob, os, re, html, sys, importlib
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'curate')); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from textbook_notes import notes
-HERE = os.path.dirname(os.path.abspath(__file__)); SRC = os.path.join(HERE, 'textbook_src'); OUT = os.path.join(HERE, '..', 'textbook')
+HERE = os.path.dirname(os.path.abspath(__file__)); SRC = os.path.join(HERE, 'textbook_src'); OUT = os.environ.get('ZZ_TEXTBOOK_OUT') or os.path.join(HERE, '..', 'textbook')  # optional override (comparison runs); default unchanged
 MINOR = {'and', 'of', 'the', 'in', 'to', 'for', 'with', 'a', 'an', 'on', 'or', 'by', 'at', 'as', 'from'}
 IC_FIG = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg>'
 IC_TAB = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18M9 10v10"/></svg>'
@@ -212,12 +212,14 @@ def add_block_ids(h):
         toks[i] = toks[i][:-1] + ' data-b="%s">' % (hh if seen[hh] == 1 else '%s.%d' % (hh, seen[hh] - 1))
     return ''.join(toks)
 
+import textbook_semicolons; SEMI = textbook_semicolons.load()
 os.makedirs(OUT, exist_ok=True); idx = []
 for f in sorted(glob.glob(os.path.join(SRC, 'ch*.json'))):
     ch = json.load(open(f, encoding='utf8')); key = os.path.basename(f)[:-5]
     if os.path.exists(os.path.join(HERE, 'curate', key + '.py')): h, meta = build_curated(importlib.import_module(key)); print('curated:', key, meta)
     else: h, meta = build(ch)
     h = add_block_ids(h)
+    if not os.environ.get('ZZ_NO_SEMI') and key in SEMI: h = textbook_semicolons.apply(h, SEMI[key])   # see textbook_semicolons.py
     open(os.path.join(OUT, key + '.html'), 'w', encoding='utf8').write(h)
     idx.append(dict(id=key, n=ch['chapter_number'], title=ch['title'], pages=ch.get('book_pages'), **meta))
 json.dump({'title': 'Robbins Pathologic Basis of Disease', 'chapters': idx}, open(os.path.join(OUT, 'index.json'), 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
