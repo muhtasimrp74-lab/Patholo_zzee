@@ -17,7 +17,7 @@ Branch: `feature/vite-ts` (never push/merge/deploy `main` without explicit appro
 | 4 | Incremental TypeScript conversion | in progress (session 3): `welcome.js` done (TS source `src/legacy/welcome.ts`; `welcome.js` is now GENERATED, committed). Pending: `tools/home.js`, `tools/textbook.js`, `tools/mcq.js`, inline app script, `annot/annot.js` (140 KB) |
 | 5 | Content as JSON | in progress (session 4): Python half done (generator, schemas, differential check, tests). NOT done: app loader / lazy loading (needs Vite + SW work) |
 | 6 | PWA | done for dist (session 7): vite plugin regenerates dist/sw.js CORE+VERSION from the real dist files; tools/tests/test_dist_offline.py passes (cold offline reload, topic opens, textbook cached). Root sw.js unchanged; dist still not deployed |
-| 7 | Remove Python scripts that patch application code | partial (assets moved out; 16 anchored replacements remain, see Stage 8 report) |
+| 7 | Remove Python scripts that patch application code | mostly done (session 8): `ui_patch.py` and `nav_patch.py` now only assemble assets; their text edits live in `tools/questions.js` and `tools/src/index.base.html`. Remaining anchored edits are in `tools/build.py` itself |
 | 8 | Hardening and final report | done for current state (see Stage 8 report) |
 
 ## Commands (legacy, current)
@@ -240,3 +240,10 @@ Nothing.
 ## Session 8f: Stage 7 slice 4
 - Folded the first real anchored edit into the source: `src/index.base.html` now has `a[href="#/qa"]` where `ui_patch.py` used to swap it from `#/topics`; the replace is gone. Rebuild byte-identical.
 - Remaining ui_patch anchors, classified: 35 and 44 target text that lives in `tools/questions.js` (injected by build.py, not in the base), 29 is a global `count=0` CSS replace over the whole built page (also hits build-injected CSS), 31/34/37/46 are chained on earlier results, 48 injects the big UPD/HOME/PB/SF script block after `route();`. These need `questions.js` and the injection order edited together; each must still be rebuilt and `cmp`-checked.
+
+## Session 8 (2026-10-20)
+- The previous sandbox was lost before its local commits were pushed; they were redone from `main` (6502b89) on branch `migration/finish-tests-stage7`, NOT pushed.
+- Textbook generator: `tools/textbook_build.py` now reproduces the committed sentence-split pages byte for byte (29 chapters + index.json). The per-semicolon treatment is recorded in `tools/textbook_semicolons.json` (maintenance: `python3 tools/textbook_semicolons.py --derive RAW COMMITTED`); `ZZ_TEXTBOOK_OUT` writes elsewhere for comparison runs. This resolves Finding 1 and the `block_ids_cover_every_block...` baseline failure.
+- The other 4 baseline failures were test problems, not site problems: canvas ratio is capped by a pixel budget (test now expects the cap), two text-selection tests selected off-screen text (now scrolled into view), one test was covered by the first-run welcome dialog (now a returning visitor). Same fix for the MCQ tests that open `#/mcqs`.
+- Stage 7: after each step `python3 tools/build.py` output is byte-identical to the committed `index.html`.
+- npm registry reachable again this session: `npm install`, `tsc --noEmit`, `npm run test:unit` (19) and `npm run build:classic` (bundles unchanged) all pass.
