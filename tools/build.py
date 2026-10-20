@@ -208,8 +208,6 @@ s = s.replace(old_grid, '<h2 id="topics">Topics<small>%d questions</small></h2>%
 
 s = s.replace('<small>Browse</small>15 topics', '<small>Browse</small>%d topics' % len(order))
 
-s = s.replace("sort((a,b)=>a.slice(1)-b.slice(1))", "sort((a,b)=>(a.slice(1)-b.slice(1))||a.localeCompare(b))", 1)
-s = s.replace("new Blob([JSON.stringify(S,null,1)]", "new Blob([JSON.stringify(Object.assign({},S,{annot:(typeof Annot!=='undefined'?Annot.dump(true):undefined)}),null,1)]", 1)
 NEWIMP = r"""function vbk(o){const ob=x=>x&&typeof x==='object'&&!Array.isArray(x),ar=x=>Array.isArray(x),ids=x=>ar(x)&&x.length<=20000&&x.every(i=>typeof i==='string'&&i.length<=40);
 if(!ob(o)||!ids(o.bm))return null;const r={bm:o.bm};
 for(const k of['fav','learned'])if(k in o){if(!ids(o[k]))return null;r[k]=o[k]}
@@ -292,7 +290,6 @@ s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='
 H1 = '<h1>Viva Prep —<br>Read.<br>Recall. Answer.</h1>'
 assert H1 in s
 s = s.replace(H1, '<p class="eyebrow">NMC viva list · Robbins 11th</p><h1>Pathology<em>Read. Recall. Answer.</em></h1>', 1)
-s = s.replace('<b>Systemic Pathology Viva Questions with Answers.</b> ', '', 1)
 STATS = '<div class="stats"><div><b>%d</b><span>Questions</span></div><div><b>%d</b><span>Topics</span></div><div><b>NMC</b><span>Question order</span></div><div><b>11th</b><span>Robbins edition</span></div></div>' % (total, len(order))
 T = '<ul id="res"></ul></div></div></div></div><main'
 assert T in s
