@@ -13,7 +13,7 @@ return {html:b.innerHTML,cards:document.querySelectorAll('article.card').length,
 class Lazy(unittest.TestCase):
     @classmethod
     def setUpClass(c):
-        c.tmp = tempfile.TemporaryDirectory(); lazy_probe.build(ROOT, c.tmp.name)
+        c.tmp = tempfile.TemporaryDirectory(); lazy_probe.build(ROOT, c.tmp.name, 'index.full.html')
         class H(http.server.SimpleHTTPRequestHandler):
             def translate_path(self, p):
                 p = p.split('?')[0].split('#')[0]
@@ -35,14 +35,14 @@ class Lazy(unittest.TestCase):
         pg.wait_for_timeout(1500); r = pg.evaluate(JS); r['errs'] = errs; ctx.close(); return r
 
     def test_lazy_variant_boots_to_the_same_dom_as_the_inline_build(self):
-        a, b = self.snap('/index.html'), self.snap('/lazy/index.html'); N = lambda h: re.sub(r'>\s+<', '><', h)
+        a, b = self.snap('/index.full.html'), self.snap('/lazy/index.html'); N = lambda h: re.sub(r'>\s+<', '><', h)
         self.assertEqual((a['errs'], b['errs']), ([], [])); self.assertIsNone(b['failed'])
         self.assertEqual(a['cards'], 1310); self.assertEqual(b['cards'], 1310); self.assertEqual(a['qm'], b['qm'])
         self.assertTrue(N(a['html']) == N(b['html']), 'booted DOM differs between inline and lazy variants')
 
     def test_html_shrinks_and_chunks_cover_every_card(self):
-        n, v = lazy_probe.build(ROOT, self.tmp.name); self.assertEqual(n, 1310)
-        self.assertLess(os.path.getsize(os.path.join(self.tmp.name, 'index.html')), os.path.getsize(os.path.join(ROOT, 'index.html')) * 0.4)
+        n, v = lazy_probe.build(ROOT, self.tmp.name, 'index.full.html'); self.assertEqual(n, 1310)
+        self.assertLess(os.path.getsize(os.path.join(self.tmp.name, 'index.html')), os.path.getsize(os.path.join(ROOT, 'index.full.html')) * 0.4)
         self.assertEqual(len([f for f in os.listdir(os.path.join(self.tmp.name, 'zzcards')) if f.endswith('.json')]), v); self.assertTrue(os.path.exists(os.path.join(self.tmp.name, 'zzcards', 'all.js')))
 
 if __name__ == '__main__': unittest.main()

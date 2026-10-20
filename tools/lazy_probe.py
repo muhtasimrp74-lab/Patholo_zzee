@@ -21,8 +21,8 @@ SWAP = '''<script src="zzcards/all.js"></script>
  var t=document.createElement('template');
  ph.forEach(function(c){t.innerHTML=m[c.data.slice(4).split('|')[0]];c.replaceWith(t.content)});window.__zzc=null})();
 </script>'''
-def build(site, out):
-    s = open(os.path.join(site, 'index.html'), encoding='utf8').read()
+def build(site, out, page='index.html'):
+    s = open(os.path.join(site, page), encoding='utf8').read()
     vs = [(m.start(), m.group(1) or m.group(2)) for m in VIEW.finditer(s)]; pos = [p for p, _ in vs]
     chunks = {}; res = []; last = 0; allc = {}
     for m in CARD.finditer(s):
