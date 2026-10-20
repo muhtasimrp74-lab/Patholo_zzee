@@ -1,0 +1,12 @@
+// STAGING ONLY. There is deliberately no production environment in this file.
+{
+  "name": "patholo-zzee-staging",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "d1_databases": [
+    { "binding": "DB", "database_name": "patholo-zzee-staging", "database_id": "00000000-0000-0000-0000-000000000000", "migrations_dir": "migrations" }
+  ],
+  "r2_buckets": [{ "binding": "CHUNKS", "bucket_name": "patholo-zzee-staging-chunks" }],
+  "vars": { "ALLOWED_ORIGIN": "https://muhtasimrp74-lab.github.io" }
+}

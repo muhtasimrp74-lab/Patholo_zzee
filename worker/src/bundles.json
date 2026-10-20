@@ -1,0 +1,11 @@
+{
+  "currency": "BDT",
+  "days": 365,
+  "bundles": {
+    "QNA": { "price": 0, "entitlements": ["qna"], "note": "placeholder price" },
+    "MCQ": { "price": 0, "entitlements": ["mcq"], "note": "placeholder price" },
+    "TEXTBOOK": { "price": 0, "entitlements": ["textbook"], "note": "placeholder price" },
+    "ALL": { "price": 0, "entitlements": ["qna", "mcq", "textbook"], "note": "placeholder price" }
+  },
+  "chunk_kinds": { "q": "qna", "mcq": "mcq", "tb": "textbook" }
+}

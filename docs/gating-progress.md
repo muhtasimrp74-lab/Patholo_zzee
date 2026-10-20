@@ -28,3 +28,5 @@
 - Client state (names only): zzStore/localStorage keys vivaState, vivaStatePrev, vivaStateCorrupt, vivaQuiz, tbLast, tbDone, tbPos, tbSet, zz-fs, zz-flat (MCQ progress lives inside vivaState.mcq); IndexedDB pathviva-annot, pathviva-ink, zz-kv; service worker sw.js (caches VERSION; now skips /chunks/ and /api/, precaches free ch01 only).
 - LEAK_KEY: random, in /tmp/.leak_key and .dev.vars, stored as GitHub Actions secret LEAK_KEY via the API (2026-10-21). If lost: new key, regenerate tools/leak_hashes.json, update the secret, one commit.
 - Done: 142 tests (incl. 7 new gating tests): 140 pass, 0 fail, 2 skipped (dist); node 19/19; typecheck OK; both leak checks: no verbatim matches found. Gate A: pages.yml triggers unchanged (push main, PR, dispatch), deploy main-only; new steps build/test/check only. SAFE.
+
+## Stage 2: IN PROGRESS
