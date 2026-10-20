@@ -35,6 +35,7 @@ class Phase5(unittest.TestCase):
         ctx = ctx or self.b.new_context(viewport={'width': w, 'height': h}, service_workers='block'); self.ctx = ctx
         pg = ctx.new_page(); self.errs = []; self.dialogs = []
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
+        pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.goto(self.base() + route); pg.wait_for_function("()=>window.Annot&&Annot.isReady()")
         if wait: pg.wait_for_selector(wait)
         pg.wait_for_timeout(350); return pg

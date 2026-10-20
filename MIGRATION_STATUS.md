@@ -247,3 +247,9 @@ Nothing.
 - The other 4 baseline failures were test problems, not site problems: canvas ratio is capped by a pixel budget (test now expects the cap), two text-selection tests selected off-screen text (now scrolled into view), one test was covered by the first-run welcome dialog (now a returning visitor). Same fix for the MCQ tests that open `#/mcqs`.
 - Stage 7: after each step `python3 tools/build.py` output is byte-identical to the committed `index.html`.
 - npm registry reachable again this session: `npm install`, `tsc --noEmit`, `npm run test:unit` (19) and `npm run build:classic` (bundles unchanged) all pass.
+
+### Known issue (pre-existing on main, left alone on purpose): `test_annot_tb.TextbookAnnot.test_build_ids_equal_the_runtime_formula_and_ignore_markup_and_spacing`
+- Fails with `87 != 0` on untouched `main` (6502b89) and on this branch: 87 textbook blocks carry a `data-b` id that differs from the id the runtime formula computes from the visible text.
+- Cause: the committed pages carry the sentence-split text (semicolons turned into full stops), but their `data-b` ids were computed from the older text with semicolons. The generator reproduces this exactly (ids first, semicolon treatment after), which is why the pages are byte-identical.
+- Why it is not fixed: making the ids match the current text would change the committed `data-b` ids. Annotations on textbook blocks are stored against those ids, so users' saved highlights and notes could stop attaching to their blocks. Do not "fix" this without an id-migration plan (e.g. an alias map old id -> new id applied on load) and the owner's approval.
+- Stage 4 scope (owner decision, session 8): stops at `welcome.js`. `home.js`, `textbook.js`, `mcq.js`, the inline app script and `annot/annot.js` stay JavaScript so `index.html` stays byte-identical. Branch `migration/finish-tests-stage7` is kept; not merged, not deployed.
