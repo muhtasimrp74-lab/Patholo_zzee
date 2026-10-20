@@ -114,7 +114,7 @@ mark{background:rgba(223,121,153,.35);color:inherit;border-radius:3px;padding:0 
 #tools button{background:none;border:0;color:var(--text);font:600 12px var(--body);padding:7px 11px;border-radius:999px;cursor:pointer}#tools button:hover{background:var(--chip)}#tools .fb{display:none}.focus #tools .fb{display:inline-block}.focus #tools [data-t=focus]{color:var(--lbl)}
 .focus .card:not(.hl),.focus h3.sub{display:none}
 #bnav{display:none}
-@media(max-width:720px){#bnav{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:6px 0 max(6px,env(safe-area-inset-bottom))}#bnav a{text-align:center;text-decoration:none;font:600 11px var(--body);color:var(--muted);padding:8px 0}#bnav a.on{color:var(--lbl)}body{padding-bottom:72px}#tools{bottom:78px}}
+@media(max-width:720px){#bnav{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:6px 0 max(6px,env(safe-area-inset-bottom))}#bnav a{text-align:center;text-decoration:none;font:600 11px var(--body);color:var(--muted);padding:8px 0}#bnav a.on{color:var(--lbl)}body{padding-bottom:72px}#tools{bottom:78px}}
 @media(prefers-reduced-motion:reduce){#v-home .hero::after,.view:not([hidden]){animation:none}}
 @media print{:root{--bg:#fff;--panel:#fff;--line:#ccc;--text:#000;--muted:#333;--lbl:#a00;--chip:#fff}.hero,.bar,.acts,#tools,#bnav,.pager,#dash,.rm,.rel,.chips{display:none!important}.card,.row{break-inside:avoid;border-radius:0}.quiz .card:not(.open) .ans{display:block!important}.focus .card{display:block!important}}
 
@@ -550,7 +550,7 @@ function touch(){const t=dstr(Date.now()),s=S.streak;if(s.last===t)return;s.n=s.
 function dash(){const el=document.getElementById('dash');if(!el)return;const t=dstr(Date.now()),s=S.streak,n=s.last===t||s.last===dstr(Date.now()-DAY)?s.n:0,qd=DATA[(Math.floor(Date.now()/DAY)*7919)%DATA.length],rc=BY[S.recent[0]],due=Object.values(S.sr).filter(o=>o.d<=Date.now()).length;
 el.innerHTML=`<div class="dash"><div class="dc"><h3>Overall progress</h3><div style="display:flex;align-items:center;gap:16px"><span class="ring big" data-ov></span><span id="ovl"></span></div></div>
 <div class="dc"><h3>Revision streak</h3><div class="big">${n}</div><span class="mu">${n===1?'day':'days'} in a row${s.last===t?' · done today':' · revise today to keep it'}</span></div>
-<div class="dc"><h3>Question of the day</h3><a class="q" href="#/${qd[2]}/${qd[3]}">${esc(qd[1])}</a><span class="mu">${qd[0]} · ${esc(qd[4])}</span></div>
+<div class="dc"><h3>Question of the day</h3><a class="q" href="#/${qd[2]}/${qd[3]}">${esc(qd[1])}</a><span class="mu">${qd[0]?qd[0]+' · ':''}${esc(qd[4])}</span></div>
 ${rc?`<div class="dc"><h3>Continue where you left off</h3><a class="q" href="#/${rc[2]}/${rc[3]}">${esc(rc[1])}</a><span class="mu">${esc(rc[4])}</span></div>`:''}</div>
 <div class="dact"><a class="gb" href="#/practice">Practice · ${due} due</a><button class="gb ghost" onclick="exp()">Export backup</button><label class="gb ghost">Import backup<input type="file" accept=".json" hidden onchange="imp(this.files[0])"></label></div>
 <div class="chips" style="padding:0;margin:0 0 20px;max-width:none;flex-wrap:wrap"><span class="mu" style="align-self:center">By B-number:</span>${BS.map(b=>`<a href="#/b/${b}">${b}</a>`).join('')}</div>`;prog()}
@@ -633,7 +633,8 @@ document.querySelectorAll('.jump').forEach(s=>s.onchange=()=>{location.hash='#/'
 const flip=h=>{if(document.body.classList.contains('quiz'))h.parentElement.classList.toggle('open')};
 document.addEventListener('click',e=>{const h=e.target.closest('.card header');if(h)flip(h)});
 document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.card header')){e.preventDefault();flip(e.target)}});
-function route(){const p=location.hash.replace(/^#\/?/,'').split('/');const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');
+function route(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]==='topics')p[0]='qa';const v=document.getElementById('v-'+p[0])||document.getElementById('v-home');
+if(v.id==='v-questions'&&window.setQMode){setQMode('q');if(!window.__qa&&window.qColAll)qColAll()}
 views.forEach(x=>x.hidden=x!==v);document.title=v.dataset.title;
 document.querySelectorAll('.card.hl').forEach(c=>c.classList.remove('hl'));
 if(COLL[p[0]])render(COLL[p[0]]);hook(p);
@@ -647,7 +648,7 @@ function show(){const q=g.value.trim().toLowerCase(),T=q.match(/[a-z0-9']+/g)||[
 let m=getIX().map(x=>{let s=0,hs=[];for(const t of T){let k=0;if(x.t.includes(t)){k=3;hs.push(t)}else{const f=t.length>3&&x.w.find(w=>lev(t,w)<=(t.length>6?2:1));if(f){k=2;hs.push(f)}else if(x.a.toLowerCase().includes(t)){k=1;hs.push(t)}}if(!k){s=-1;break}s+=k}return{x,s,hs}}).filter(o=>!T.length||o.s>0);
 if(T.length)m.sort((a,b)=>b.s-a.s||a.x.n-b.x.n);const tot=m.length;document.getElementById('rc').textContent=T.length?tot+' of '+DATA.length:DATA.length+' questions';
 r.innerHTML=m.length?m.map(({x,hs})=>{const d=x.d,i=hs.length?x.a.toLowerCase().indexOf(hs[0]):-1,sn=T.length?(i>=0?'…'+x.a.slice(Math.max(0,i-40),i+90)+'…':x.a.slice(0,110)+'…'):'';
-return `<li><a href="#/${d[2]}/${d[3]}"><span class="num">${x.n}</span><span class="rq">${hl(d[1],hs)}</span><small>${esc(d[4])} · ${d[0]}</small>${sn?`<em class="sn">${hl(sn,hs)}</em>`:''}</a></li>`}).join(''):'<li class="e">No question found.</li>'}
+return `<li><a href="#/${d[2]}/${d[3]}"><span class="num">${x.n}</span><span class="rq">${hl(d[1],hs)}</span><small>${esc(d[4])}${d[0]?' · '+d[0]:''}</small>${sn?`<em class="sn">${hl(sn,hs)}</em>`:''}</a></li>`}).join(''):'<li class="e">No question found.</li>'}
 const lev=(a,b)=>{let p=[...Array(b.length+1).keys()];for(let i=1;i<=a.length;i++){const c=[i];for(let j=1;j<=b.length;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]!==b[j-1]));p=c}return p[b.length]},
 hl=(s,hs)=>{s=esc(s);return hs.length?s.replace(new RegExp('('+hs.map(h=>h.replace(/[^a-z0-9]/g,'\\$&')).join('|')+')','gi'),'<mark>$1</mark>'):s},
 getIX=()=>getIX.c||(getIX.c=DATA.map((d,n)=>{const t=(d[1]+' '+d[4]).toLowerCase();return{d,n:n+1,t,w:[...new Set(t.match(/[a-z0-9']+/g))],a:(()=>{const e=document.getElementById(d[3]).querySelector('.ans').cloneNode(true);e.querySelectorAll('td,th,li,p,tr,h4,.kp').forEach(n=>n.append(' '));return e.textContent.replace(/\s+/g,' ').trim()})()}}));
