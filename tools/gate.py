@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Split the FULL built site into a gated index.html plus private per-topic chunks (deterministic).
-Usage: python3 tools/build.py && python3 tools/gate.py
+Run by tools/build.py: reads index.full.html (full build, gitignored).
 Writes: private-chunks/<id>.json (gitignored, every chunk incl. free), content/manifest.json, content/titles.json, gated index.html.
 Free sample (kept inline/static): question topic FREE_VIEW, MCQ chapter 1, textbook ch01."""
 import re, os, json, hashlib, bisect, sys
@@ -16,8 +16,7 @@ def dumps(o): return json.dumps(o, ensure_ascii=False, sort_keys=True, separator
 def txt(h): return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', h)).strip()
 
 def gate(root=ROOT):
-    p = os.path.join(root, 'index.html'); s = open(p, encoding='utf8').read()
-    if '<div class="ans" data-zz=' in s: sys.exit('index.html is already gated: run tools/build.py first')
+    s = open(os.path.join(root, 'index.full.html'), encoding='utf8').read(); p = os.path.join(root, 'index.html')
     vs = [(m.start(), m.group(1) or m.group(2)) for m in VIEW.finditer(s)]; pos = [x for x, _ in vs]
     chunks, titles, out, last = {}, [], [], 0
     for m in CARD.finditer(s):

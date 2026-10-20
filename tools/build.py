@@ -416,3 +416,6 @@ subprocess.run([sys.executable, os.path.join(HERE, 'split_semicolons.py')], chec
 subprocess.run([sys.executable, os.path.join(HERE, 'apply_hand_edits.py')], check=True)
 # 'From the textbook' link bar on answers that were collected from Robbins (idempotent; must run after every pass that edits answers)
 subprocess.run([sys.executable, os.path.join(HERE, 'source_links.py')], check=True)
+# the full page becomes index.full.html (gitignored, tests only); gate.py writes the gated index.html, content/ and private-chunks/
+os.replace(os.path.join(HERE, '..', 'index.html'), os.path.join(HERE, '..', 'index.full.html'))
+import gate; gate.gate()

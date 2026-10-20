@@ -6,7 +6,7 @@ try:
     HAVE_PW = True
 except Exception: HAVE_PW = False
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-URL = 'file://' + os.path.join(ROOT, 'index.html')
+URL = 'file://' + os.path.join(ROOT, 'index.full.html')
 
 DRAW = """([sel, pts, o])=>{const h=document.querySelector(sel),r=h.getBoundingClientRect(),id=o.id||1,t=o.type||'pen';
  const mk=(n,q,b)=>new PointerEvent(n,{pointerId:id,pointerType:t,isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+q[0],clientY:r.top+q[1],pressure:t==='pen'?(q[2]==null?.5:q[2]):(b?.5:0),tiltX:o.tiltX||0,tiltY:0,buttons:b,button:0});

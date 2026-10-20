@@ -30,7 +30,7 @@ class Phase5(unittest.TestCase):
         cls.p = sync_playwright().start(); cls.b = cls.p.chromium.launch()
     @classmethod
     def tearDownClass(cls): cls.b.close(); cls.p.stop(); cls.srv.shutdown()
-    def base(self): return 'http://127.0.0.1:%d/index.html' % self.port
+    def base(self): return 'http://127.0.0.1:%d/index.full.html' % self.port
     def page(self, route='#/textbook/' + CH, w=1024, h=1500, ctx=None, wait='#tbbody[data-ch] [data-b]'):
         ctx = ctx or self.b.new_context(viewport={'width': w, 'height': h}, service_workers='block'); self.ctx = ctx
         pg = ctx.new_page(); self.errs = []; self.dialogs = []

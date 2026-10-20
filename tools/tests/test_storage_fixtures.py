@@ -5,7 +5,7 @@ import json, os, unittest
 from playwright.sync_api import sync_playwright
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 FIX = json.load(open(os.path.join(os.path.dirname(__file__), 'fixtures', 'old_user_data.json')))
-SITE = os.environ.get('SITE_URL') or 'file://' + os.path.join(ROOT, 'index.html')
+SITE = os.environ.get('SITE_URL') or 'file://' + os.path.join(ROOT, 'index.full.html')
 
 class OldData(unittest.TestCase):
     @classmethod

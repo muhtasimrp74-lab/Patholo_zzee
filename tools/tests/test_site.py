@@ -15,7 +15,7 @@ class Build(unittest.TestCase):
     def setUpClass(cls):
         cls.before = sha('index.html')
         cls.r = subprocess.run([sys.executable, 'build.py'], cwd=TOOLS, capture_output=True, text=True)
-        cls.h = rd('index.html')
+        cls.h = rd('index.full.html')
     def test_build_succeeds_cleanly(self):
         self.assertEqual(self.r.returncode, 0, self.r.stderr)
         for bad in ('UNPLACED', 'no question matches heading', 'heading not in outline'): self.assertNotIn(bad, self.r.stdout)
@@ -108,7 +108,7 @@ class Pwa(unittest.TestCase):
 try:
     from playwright.sync_api import sync_playwright; HAVE_PW = True
 except Exception: HAVE_PW = False
-URL = 'file://' + os.path.join(ROOT, 'index.html')
+URL = 'file://' + os.path.join(ROOT, 'index.full.html')
 XSS = '"><img src=x onerror=window.__x=1>'
 
 @unittest.skipUnless(HAVE_PW, 'playwright missing')
