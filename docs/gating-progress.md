@@ -17,3 +17,4 @@
 - Branches gating/freemium, gating/wip created. Removed continue-on-error from the pages.yml test step; deploy job limited to main.
 - git rm index.html.orig. Temporary failing test made `python -m unittest discover -s tools/tests` exit 1; test removed.
 - Connectivity: github, npm, pypi OK; api.cloudflare.com, oauth2.googleapis.com, verify.twilio.com, sandbox.sslcommerz.com blocked (mocks, real checks pending).
+- Post-push check: no Workers Builds run on 0f47835 after 4.5 min (non-production builds appear disabled). Credentials guide: docs/credentials.md. Token lacks Secrets permission (403): needed for Stage 1.
