@@ -358,10 +358,23 @@ for _a, _b in (("BS=[...new Set(DATA.map(d=>d[0]))]", "BS=[...new Set(DATA.flatM
                ("DATA.filter(d=>(!b||d[0]===b)&&", "DATA.filter(d=>(!b||d[0].split(' ').includes(b))&&")):
     assert _a in s, _a
     s = s.replace(_a, _b, 1)
-import ui_patch
-s = ui_patch.patch(s)
-import nav_patch
-s = nav_patch.patch(s)
+# ---- assembly of the page scripts and styles that sit on top of the base page (this replaces ui_patch.py and nav_patch.py,
+# which only assembled files by then; the edits to existing application text live in src/index.base.html and questions.js).
+# Read modes matter for byte-identical output: files read with newline='' keep their line endings, the others use text mode.
+def _asset(name, raw=False): return open(os.path.join(HERE, name), encoding='utf8', newline='' if raw else None).read()
+_UI_JS = _asset('ui_upd.js', True) + _asset('home.js') + _asset('pagebanner.js') + _asset('sitefooter.js')
+_UI_TAIL = "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n"
+assert "\nroute();\n" in s, 'assembly anchor missing: route();'
+s = s.replace("\nroute();\n", "\nroute();\n" + _UI_JS + _UI_TAIL, 1)
+_k = s.index('.qtools{display:flex;')
+s = s[:_k] + _asset('ui_qmode.css', True) + s[_k:]
+_k = s.rindex('</style>')
+s = s[:_k] + _asset('ui_xm.css', True) + _asset('ui_rings.css', True) + _asset('home.css') + _asset('pagebanner.css') + _asset('sitefooter.css') + _asset('cardpolish.css') + _asset('polish.css') + s[_k:]
+_mcq = 'const MCQDATA=' + json.dumps(json.load(open(os.path.join(HERE, 'mcqs.json'), encoding='utf8')), ensure_ascii=False, separators=(',', ':')) + ';\n' + _asset('mcq.js') + '\n'
+_A = "const views=[...document.querySelectorAll('.view')]"
+assert _A in s, 'assembly anchor missing: views'
+s = s.replace(_A, _asset('nav_patch.js', True) + _mcq + _asset('textbook.js') + _A, 1)
+s = s.replace('</style>', _asset('nav_patch.css', True) + _asset('textbook.css') + _asset('mcq.css') + _asset('perf.css') + '</style>', 1)
 assert '</head><body>' in s
 s = s.replace('</head><body>', '</head><body>' + STAR_SPRITE, 1)
 # ---- no flash of the old markup: the page's static HTML is rewritten by the big script at the end, so keep the
