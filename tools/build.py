@@ -392,6 +392,7 @@ BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
 SOFT = '<style id="zz-soft">' + open(os.path.join(HERE, 'softui.css'), encoding='utf8').read() + '</style>'
 s = s.replace('</head><body>', BOOT_HEAD + SOFT + '</head><body>', 1)
+s = s.replace('</head><body>', '</head><body><script>window.ZZ_MANIFEST=null</script><script>' + _asset('chunks.js') + '</script>', 1)
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 import re as _re
 s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)

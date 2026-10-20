@@ -4,3 +4,4 @@ tools/_stage.html
 __pycache__/
 dist/
 build/
+private-chunks/

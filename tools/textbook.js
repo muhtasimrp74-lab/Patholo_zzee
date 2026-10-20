@@ -268,9 +268,7 @@
 			document.title = "Ch " + c.n + " | Textbook | Patholo_zzee";
 			window.scrollTo(0, 0);
 			try {
-				const r = await fetch("textbook/" + c.id + ".html");
-				if (!r.ok) throw 0;
-				const h = await r.text();
+				const h = await window.zzChapter(c.id);
 				if (my !== tok) return;
 				{
 					const bd = T.querySelector("#tbbody");
