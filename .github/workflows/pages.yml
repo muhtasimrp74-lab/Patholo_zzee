@@ -28,8 +28,7 @@ jobs:
         run: python tools/build.py
       - name: Fail if the committed index.html is stale
         run: git diff --exit-code -- index.html || (echo "::error::index.html in the repo differs from a fresh build. Run 'python3 tools/build.py' and commit it." && exit 1)
-      - name: Run tests (temporarily non-blocking so the site can deploy; fix annotation tests, then remove continue-on-error)
-        continue-on-error: true
+      - name: Run tests
         run: python -m unittest discover -s tools/tests -v
       - name: Assemble site folder
         run: |
@@ -56,7 +55,7 @@ jobs:
         with: { path: _site }
   deploy:
     needs: build
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       pages: write
