@@ -144,7 +144,7 @@ class AnnotBrowser(unittest.TestCase):
     def test_text_highlight_follows_text_erases_undoes_and_survives_backup(self):
         pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='hi'}")
         pick = """s=>{const h=document.querySelector(s),bs=[...h.querySelectorAll('p,li')].filter(b=>!b.querySelector('p,li')&&b.textContent.trim().length>40);const a=bs[0],b=bs[1],w=el=>{const t=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let n=t.nextNode();while(n&&n.nodeValue.trim().length<12)n=t.nextNode();return n};
-          const n1=w(a),n2=w(b);getSelection().setBaseAndExtent(n1,0,n2,Math.min(10,n2.nodeValue.length));document.dispatchEvent(new PointerEvent('pointerup',{bubbles:true}))}"""
+          const n1=w(a),n2=w(b);a.scrollIntoView({block:'center'});getSelection().setBaseAndExtent(n1,0,n2,Math.min(10,n2.nodeValue.length));document.dispatchEvent(new PointerEvent('pointerup',{bubbles:true}))}"""
         pg.evaluate(pick, sel); pg.wait_for_timeout(300); self.assertEqual(self.objs(pg, cid), 0, 'selecting only offers the style popover'); self.assertEqual(pg.locator('#an-selpop:visible').count(), 1); self.assertEqual(pg.locator('#an-selpop .an-spb').count(), 4); self.assertEqual(pg.locator('#an-selpop .an-sps').count(), 6)
         pg.click('#an-selpop [aria-label=Highlight]'); pg.wait_for_timeout(200)
         marks = pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,o.q.s,o.q.e])", 'q:' + cid); self.assertGreaterEqual(len(marks), 2); self.assertTrue(all(m[0] == 'mark' and m[3] > m[2] for m in marks))
@@ -268,7 +268,7 @@ class AnnotBrowser(unittest.TestCase):
         d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); self.assertEqual(self.errs, [])
     def test_text_marks_underline_strike_squiggle_in_six_colours(self):
         pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='hi'}"); k = 'q:' + cid
-        pick = """s=>{const h=document.querySelector(s),b=[...h.querySelectorAll('p,li')].find(b=>!b.querySelector('p,li')&&b.textContent.trim().length>40),t=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n=t.nextNode();while(n&&n.nodeValue.trim().length<12)n=t.nextNode();getSelection().setBaseAndExtent(n,0,n,Math.min(14,n.nodeValue.length));document.dispatchEvent(new PointerEvent('pointerup',{bubbles:true}))}"""
+        pick = """s=>{const h=document.querySelector(s),b=[...h.querySelectorAll('p,li')].find(b=>!b.querySelector('p,li')&&b.textContent.trim().length>40),t=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n=t.nextNode();while(n&&n.nodeValue.trim().length<12)n=t.nextNode();b.scrollIntoView({block:'center'});getSelection().setBaseAndExtent(n,0,n,Math.min(14,n.nodeValue.length));document.dispatchEvent(new PointerEvent('pointerup',{bubbles:true}))}"""
         for i, (lab, kind) in enumerate((('Underline', 'u'), ('Strikethrough', 's'), ('Squiggle', 'sq'), ('Highlight', 'hi'))):
             pg.evaluate(pick, sel); pg.wait_for_timeout(250); pg.click('#an-selpop .an-sps >> nth=%d' % (i + 1)); self.assertEqual(self.objs(pg, cid), 2 * i + 1, 'a colour tap applies the last used style')
             pg.evaluate(pick, sel); pg.wait_for_timeout(250); pg.click('#an-selpop [aria-label=%s]' % lab); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.at(-1).k", k), kind)
@@ -327,6 +327,7 @@ class AnnotBrowser(unittest.TestCase):
     def mcq_page(self, read=False):
         pg = self.b.new_page(viewport={'width': 1024, 'height': 900}); self.errs = []; self.dialogs = []
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
+        pg.add_init_script("try{localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.goto(URL + '#/mcqs'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('[data-a=quick]' if not read else '[data-a=read]')
         pg.click('[data-a=quick]' if not read else '[data-a=read]'); pg.wait_for_selector('article.mx-card[data-h]'); pg.wait_for_timeout(300); return pg
     def mx_draw(self, pg, pts, **o): pg.evaluate(DRAW, ['article.mx-card', pts, o]); pg.wait_for_timeout(120)
@@ -378,6 +379,7 @@ class AnnotBrowser(unittest.TestCase):
         self.mx_draw(pg, [[30, 30], [120, 40], [200, 30]], type='mouse'); h2 = pg.evaluate("()=>document.querySelector('article.mx-card.read').dataset.h"); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.length", 'm:' + h2), 1); self.assertEqual(self.errs, [])
     def test_mcq_ink_survives_exam_timer_and_next_previous(self):
         pg = self.b.new_page(viewport={'width': 1024, 'height': 900}); self.errs = []; pg.on('pageerror', lambda e: self.errs.append(str(e)))
+        pg.add_init_script("try{localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.goto(URL + '#/mcqs'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('[data-a=mock]'); pg.click('[data-a=mock]'); pg.wait_for_selector('article.mx-card[data-h]'); pg.wait_for_timeout(300)
         h = pg.evaluate("()=>document.querySelector('article.mx-card').dataset.h"); pg.evaluate("()=>{Annot._debug.setOn(true);Annot.state().tool='pen';window.__card=document.querySelector('article.mx-card')}")
         c = self.opt_center(pg, 0); self.mx_draw(pg, [[c[0] - 70, c[1]], [c[0], c[1] + 8], [c[0] + 70, c[1]]], type='mouse'); t0 = pg.inner_text('#mx-timer'); pg.wait_for_timeout(2300)

@@ -33,8 +33,9 @@ class Polish(unittest.TestCase):
     def test_canvases_use_the_full_pixel_ratio_up_to_3x(self):
         for dpr in (1, 2, 3):
             pg = self.page(dpr=dpr); cid, sel = self.open_card(pg); self.draw(pg, sel)
-            r = pg.evaluate("s=>{const c=document.querySelector(s+' canvas.ink');return c.width/c.clientWidth}", sel)
-            self.assertAlmostEqual(r, dpr, delta=.05, msg=dpr); self.assertEqual(self.errs, []); self.ctx.close()
+            # the app deliberately caps the ratio by a pixel budget (16 MP) and a 4096 px edge so tall cards do not exhaust memory
+            r, cap = pg.evaluate("s=>{const c=document.querySelector(s+' canvas.ink'),w=c.clientWidth,h=c.clientHeight;return [c.width/w,Math.min(Math.sqrt(16e6/(w*h)),4096/Math.max(w,h))]}", sel)
+            self.assertAlmostEqual(r, min(dpr, cap), delta=.05, msg=dpr); self.assertEqual(self.errs, []); self.ctx.close()
     def test_colour_picker_is_the_apps_own_and_sets_saves_and_remembers_colours(self):
         pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='pen'}")
         pg.click('#an-bar [data-a=pen]'); pg.wait_for_selector('.an-pop'); self.assertEqual(pg.locator('.an-pop input[type=color]').count(), 0)
