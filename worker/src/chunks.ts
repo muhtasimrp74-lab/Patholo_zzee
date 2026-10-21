@@ -26,9 +26,10 @@ export async function getChunk(req: Request, env: Env, id: string): Promise<Resp
     if (!(await entitled(env, claims.sub, KINDS[meta.kind]))) return json({ error: 'forbidden' }, 403);
     cache = NO_STORE;
   }
-  const obj = await env.CHUNKS.get('chunks/' + id + '.json');
-  if (!obj) return json({ error: 'not_found' }, 404);
-  return new Response(obj.body, {
+  const key = 'chunks/' + id + '.json';
+  const body = env.CHUNKS ? (await env.CHUNKS.get(key))?.body : await env.CHUNKS_KV?.get(key, 'stream');
+  if (!body) return json({ error: 'not_found' }, 404);
+  return new Response(body, {
     headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': cache, 'Vary': 'Authorization', 'X-Content-Type-Options': 'nosniff' },
   });
 }

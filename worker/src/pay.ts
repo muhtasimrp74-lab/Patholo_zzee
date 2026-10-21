@@ -103,6 +103,7 @@ export async function checkout(req: Request, env: Env): Promise<Response> {
   const now = payDeps.now(), id = 'o' + crypto.randomUUID().replace(/-/g, '').slice(0, 24), minor = BUNDLES[b.bundle].price * 100;
   await env.DB.prepare("INSERT INTO payment_orders (order_id, user_id, bundle, amount_minor, currency, status, created_at, updated_at) VALUES (?1, ?2, ?3, ?4, ?5, 'pending', ?6, ?6)")
     .bind(id, c.sub, b.bundle, minor, bundles.currency, now).run();
+  if (manual(env)) return json({ order_id: id, amount: fmt(minor), currency: bundles.currency, manual: { method: 'bkash', number: bundles.bkash_number } });
   const api = new URL(req.url).origin + '/api/pay/';
   try {
     const redirect = await payDeps.gateway(env).init({ order_id: id, amount: fmt(minor), currency: bundles.currency, bundle: b.bundle,
@@ -133,10 +134,14 @@ export async function payReturn(req: Request, env: Env): Promise<Response> {
 export async function order(req: Request, env: Env, id: string): Promise<Response> {
   const c = await auth(req, env);
   if (!c) return json({ error: 'unauthorized' }, 401);
-  const sel = 'SELECT order_id, bundle, amount_minor, currency, status, created_at, paid_at FROM payment_orders WHERE order_id = ?1 AND user_id = ?2';
+  const sel = 'SELECT order_id, bundle, amount_minor, currency, status, created_at, paid_at, submitted_at FROM payment_orders WHERE order_id = ?1 AND user_id = ?2';
   let o = await env.DB.prepare(sel).bind(id, c.sub).first<{ status: string; created_at: number }>();
   if (!o) return json({ error: 'not_found' }, 404);
-  if (o.status === 'pending') {
+  if (o.status === 'pending' && manual(env)) {
+    if (!(o as { submitted_at?: number }).submitted_at && payDeps.now() - o.created_at > 48 * 3600e3)
+      await env.DB.prepare("UPDATE payment_orders SET status = 'cancelled', updated_at = ?2 WHERE order_id = ?1 AND status = 'pending' AND trx_id IS NULL").bind(id, payDeps.now()).run();
+    o = await env.DB.prepare(sel).bind(id, c.sub).first();
+  } else if (o.status === 'pending') {
     const v = await payDeps.gateway(env).query(id).catch(() => null);
     if (v && v.tran_id === id) await settle(env, v);
     else if (!v && payDeps.now() - o.created_at > 2 * 3600e3)  // abandoned: nothing at the gateway after 2 h
@@ -151,4 +156,66 @@ export async function order(req: Request, env: Env, id: string): Promise<Respons
 export function bundleList() {
   const names = bundles.names as Record<string, string>;
   return { currency: bundles.currency, bundles: Object.entries(BUNDLES).map(([id, b]) => ({ id, name: names[id], price: b.price.toFixed(2), currency: bundles.currency })) };
+}
+
+// ---- manual bKash payments (until a gateway is connected) ----
+export const manual = (env: Env) => (env.PAY_MODE || bundles.pay_mode) === 'manual';
+const TRX = /^[A-Z0-9]{8,12}$/;
+
+/** POST /api/pay/manual {order_id, trx_id}: the buyer reports their bKash transaction id. One id can only ever belong to one order. */
+export async function submitTrx(req: Request, env: Env): Promise<Response> {
+  const c = await auth(req, env);
+  if (!c) return json({ error: 'unauthorized' }, 401);
+  const b = (await req.json().catch(() => ({}))) as { order_id?: string; trx_id?: string };
+  const trx = String(b.trx_id ?? '').trim().toUpperCase();
+  if (!validId(b.order_id) || !TRX.test(trx)) return json({ error: 'bad_trx' }, 400);
+  try {
+    const r = await env.DB.prepare("UPDATE payment_orders SET trx_id = ?3, submitted_at = ?4, updated_at = ?4 WHERE order_id = ?1 AND user_id = ?2 AND status = 'pending'")
+      .bind(b.order_id, c.sub, trx, payDeps.now()).run();
+    if (!r.meta.changes) return json({ error: 'not_found' }, 404);
+  } catch (e) {
+    if (/UNIQUE/i.test(String(e))) return json({ error: 'trx_used' }, 409);
+    throw e;
+  }
+  return json({ ok: true, order_id: b.order_id, status: 'pending' });
+}
+
+/** GET /api/pay/orders: the signed-in user's recent orders. */
+export async function myOrders(req: Request, env: Env): Promise<Response> {
+  const c = await auth(req, env);
+  if (!c) return json({ error: 'unauthorized' }, 401);
+  const r = await env.DB.prepare('SELECT order_id, bundle, amount_minor, currency, status, created_at, paid_at, submitted_at FROM payment_orders WHERE user_id = ?1 ORDER BY created_at DESC LIMIT 20').bind(c.sub).all();
+  return json({ orders: r.results, manual: manual(env) ? { method: 'bkash', number: bundles.bkash_number } : null });
+}
+
+// ---- admin (owner only, called from the GitHub Actions admin workflow with ADMIN_KEY; never linked in the app) ----
+async function isAdmin(req: Request, env: Env): Promise<boolean> {
+  const got = (req.headers.get('Authorization') ?? '').replace(/^Bearer /, ''), key = env.ADMIN_KEY ?? '';
+  if (key.length < 32 || got.length !== key.length) return false;
+  let d = 0; for (let i = 0; i < key.length; i++) d |= key.charCodeAt(i) ^ got.charCodeAt(i);
+  return d === 0;
+}
+const mask = (t: string | null) => (t ? t.slice(0, 2) + '…' + t.slice(-4) : null);
+
+/** GET /api/admin/orders?status=pending — no personal data; the bKash id is masked to its first 2 and last 4 characters. */
+export async function adminList(req: Request, env: Env): Promise<Response> {
+  if (!(await isAdmin(req, env))) return json({ error: 'not_found' }, 404);
+  const st = new URL(req.url).searchParams.get('status') || 'pending';
+  const r = await env.DB.prepare('SELECT order_id, bundle, amount_minor, status, trx_id, submitted_at, created_at FROM payment_orders WHERE status = ?1 ORDER BY created_at DESC LIMIT 50')
+    .bind(st).all<{ trx_id: string | null }>();
+  return json({ orders: r.results.map((o) => ({ ...o, trx_id: mask(o.trx_id) })) });
+}
+
+/** POST /api/admin/orders/:id/approve|reject. Approve runs the same idempotent settlement as a gateway payment. */
+export async function adminAct(req: Request, env: Env, id: string, act: string): Promise<Response> {
+  if (!(await isAdmin(req, env))) return json({ error: 'not_found' }, 404);
+  const o = await env.DB.prepare('SELECT order_id, amount_minor, currency, status, trx_id FROM payment_orders WHERE order_id = ?1').bind(id)
+    .first<{ order_id: string; amount_minor: number; currency: string; status: string; trx_id: string | null }>();
+  if (!o) return json({ error: 'not_found' }, 404);
+  if (act === 'reject') {
+    await env.DB.prepare("UPDATE payment_orders SET status = 'failed', updated_at = ?2 WHERE order_id = ?1 AND status = 'pending'").bind(id, payDeps.now()).run();
+    return json({ result: o.status === 'pending' ? 'rejected' : 'unchanged:' + o.status });
+  }
+  if (!o.trx_id) return json({ error: 'no_trx_submitted' }, 409);
+  return json({ result: await settle(env, { status: 'VALID', tran_id: o.order_id, amount: fmt(o.amount_minor), currency: o.currency, val_id: 'bkash:' + o.trx_id }) });
 }

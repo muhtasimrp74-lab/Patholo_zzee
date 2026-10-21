@@ -2,9 +2,12 @@ import { verify, type Claims } from './jwt.ts';
 
 export interface Env {
   DB: D1Database;
-  CHUNKS: R2Bucket;
+  CHUNKS?: R2Bucket;        // R2 when available
+  CHUNKS_KV?: KVNamespace;  // KV otherwise (no card needed)
+  ADMIN_KEY?: string;
+  PAY_MODE?: string;         // 'manual' (bKash, owner approves) or 'gateway'
   JWT_SECRET: string;
-  ALLOWED_ORIGIN: string; // the Pages origin, exact (scheme://host)
+  ALLOWED_ORIGIN: string; // allowed site origins, exact (scheme://host), comma separated
   GOOGLE_CLIENT_ID: string;
   TWILIO_ACCOUNT_SID?: string;
   TWILIO_AUTH_TOKEN?: string;
@@ -21,7 +24,7 @@ const NO_STORE = 'private, no-store';
 /** The request Origin if it is allowed (Pages origin or localhost), else null. Never '*'. */
 export function allowedOrigin(req: Request, env: Env): string | null {
   const o = req.headers.get('Origin');
-  return o && (o === env.ALLOWED_ORIGIN || LOCAL.test(o)) ? o : null;
+  return o && (env.ALLOWED_ORIGIN.split(',').map((x) => x.trim()).includes(o) || LOCAL.test(o)) ? o : null;
 }
 
 export function withCors(res: Response, req: Request, env: Env): Response {

@@ -1,5 +1,5 @@
 import { sign, verify } from './jwt.ts';
-import { auth, json, type Env } from './http.ts';
+import { auth, json, limited, type Env } from './http.ts';
 
 const MIN = 60e3, DAY = 86400e3;
 const ACCESS_S = 900, REFRESH_MS = 30 * DAY, OTP_TTL = 10 * MIN, OTP_TRIES = 5;
@@ -231,4 +231,68 @@ export async function removeDevice(req: Request, env: Env, deviceId: string): Pr
   if (!r.meta.changes) return json({ error: 'not_found' }, 404);
   await env.DB.prepare('UPDATE sessions SET revoked_at = ?3 WHERE user_id = ?1 AND device_id = ?2 AND revoked_at IS NULL').bind(c.sub, deviceId, now).run();
   return json({ ok: true });
+}
+
+// ---- password sign-in (until SMS codes are available) ----
+// PBKDF2-SHA256. 20k iterations keeps a login inside the Workers free plan's 10 ms CPU budget; the count is stored
+// with each hash so it can be raised later without breaking existing passwords.
+export const PBKDF2_ITER = 20000;
+async function pbkdf2(password: string, salt: Uint8Array, iter: number): Promise<Uint8Array> {
+  const k = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveBits']);
+  return new Uint8Array(await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt, iterations: iter }, k, 256));
+}
+export async function hashPassword(password: string, iter = PBKDF2_ITER): Promise<string> {
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  return 'pbkdf2$' + iter + '$' + b64u(salt) + '$' + b64u(await pbkdf2(password, salt, iter));
+}
+export async function checkPassword(password: string, stored: string | null): Promise<boolean> {
+  const [kind, it, salt, hash] = String(stored ?? '').split('$');
+  if (kind !== 'pbkdf2' || !salt || !hash) { await pbkdf2(password, new Uint8Array(16), PBKDF2_ITER); return false; }  // same work either way
+  const got = b64u(await pbkdf2(password, unb64u(salt), Number(it)));
+  let diff = got.length ^ hash.length;
+  for (let i = 0; i < Math.min(got.length, hash.length); i++) diff |= got.charCodeAt(i) ^ hash.charCodeAt(i);
+  return diff === 0;
+}
+/** Email (lower-cased) or Bangladesh/E.164 phone. */
+export function normalizeLogin(input: unknown): { field: 'email' | 'phone'; value: string } | null {
+  const s = String(input ?? '').trim();
+  if (s.includes('@')) return /^[^\s@]{1,64}@[^\s@]{1,190}\.[^\s@]{2,}$/.test(s) ? { field: 'email', value: s.toLowerCase() } : null;
+  const p = normalizePhone(s);
+  return p ? { field: 'phone', value: p } : null;
+}
+
+async function loginLimited(req: Request, env: Env, login: string): Promise<Response | null> {
+  const now = deps.now();
+  const who = await limited(env, 'pw:' + (await hmac(env.JWT_SECRET, 'login:' + login)).slice(0, 32), 10, 15 * MIN, now);
+  const ip = await limited(env, 'pwip:' + (await ipKey(req, env)).slice(7), 30, 3600e3, now);
+  const wait = Math.max(who, ip);
+  return wait ? json({ error: 'rate_limited' }, 429, { 'Retry-After': String(wait) }) : null;
+}
+
+/** POST /api/auth/register {login, password, device_id, device_name?} */
+export async function register(req: Request, env: Env): Promise<Response> {
+  const b = await body(req), dev = deviceOf(b), l = normalizeLogin(b.login), pw = String(b.password ?? '');
+  if (!dev || !l) return json({ error: 'bad_login' }, 400);
+  if (pw.length < 8 || pw.length > 128) return json({ error: 'weak_password' }, 400);
+  const lim = await loginLimited(req, env, l.value);
+  if (lim) return lim;
+  if (await env.DB.prepare(`SELECT 1 FROM users WHERE ${l.field} = ?1`).bind(l.value).first()) return json({ error: 'account_exists' }, 409);
+  const id = crypto.randomUUID(), name = l.field === 'email' ? l.value.split('@')[0].slice(0, 40) : 'User ' + l.value.slice(-4);
+  const r = await env.DB.prepare(`INSERT INTO users (id, display_name, ${l.field}, password_hash, created_at) VALUES (?1, ?2, ?3, ?4, ?5) ON CONFLICT (${l.field}) DO NOTHING`)
+    .bind(id, name, l.value, await hashPassword(pw), deps.now()).run();
+  if (!r.meta.changes) return json({ error: 'account_exists' }, 409);
+  return json({ ...(await issue(env, id, dev, undefined, nameOf(b))), user: await profile(env, id) });
+}
+
+/** POST /api/auth/login {login, password, device_id, device_name?} — the same answer for a wrong login or password. */
+export async function passwordLogin(req: Request, env: Env): Promise<Response> {
+  const b = await body(req), dev = deviceOf(b), l = normalizeLogin(b.login), pw = String(b.password ?? '');
+  if (!dev || !l || !pw) return json({ error: 'bad_request' }, 400);
+  const lim = await loginLimited(req, env, l.value);
+  if (lim) return lim;
+  const u = await env.DB.prepare(`SELECT id, password_hash FROM users WHERE ${l.field} = ?1`).bind(l.value).first<{ id: string; password_hash: string | null }>();
+  if (!(await checkPassword(pw, u?.password_hash ?? null)) || !u) return json({ error: 'wrong_login' }, 401);
+  const dl = await deviceLimit(env, u.id, dev);
+  if (dl) return dl;
+  return json({ ...(await issue(env, u.id, dev, undefined, nameOf(b))), user: await profile(env, u.id) });
 }
