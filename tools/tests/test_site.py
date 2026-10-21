@@ -41,7 +41,7 @@ class Build(unittest.TestCase):
         bad = [r[3] for r in G.rows(self.h) if r[2] not in views or r[3] not in cards]; self.assertFalse(bad, bad[:5])
     def test_internal_links_resolve(self):
         views = set(re.findall(r'<div class="view" id="v-([\w-]+)"', self.h))
-        extra = {'topics', 'practice', 'mcqs', 'textbook', 'menu', 'qa', 'questions', 'howto', 'search', 'b', ''}   # 'b' (By card) is created at runtime by mkView
+        extra = {'topics', 'practice', 'mcqs', 'textbook', 'menu', 'qa', 'questions', 'howto', 'search', 'b', 'account', ''}   # 'b' (By card) and 'account' (acctui.js) are created at runtime by mkView
         miss = {t for t in re.findall(r'href="#/([\w-]+)', self.h) if t not in views | extra}; self.assertFalse(miss, miss)
     def test_inline_scripts_parse(self):
         if not shutil.which('node'): self.skipTest('node missing')
