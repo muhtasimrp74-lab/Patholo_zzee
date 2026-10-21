@@ -27,7 +27,11 @@ export async function getChunk(req: Request, env: Env, id: string): Promise<Resp
     cache = NO_STORE;
   }
   const key = 'chunks/' + id + '.json';
-  const body = env.CHUNKS ? (await env.CHUNKS.get(key))?.body : await env.CHUNKS_KV?.get(key, 'stream');
+  let body: ReadableStream | string | null | undefined = env.CHUNKS ? (await env.CHUNKS.get(key))?.body : env.CHUNKS_KV ? await env.CHUNKS_KV.get(key, 'stream') : null;
+  if (!env.CHUNKS && !env.CHUNKS_KV) {  // D1 storage: parts joined in order
+    const r = await env.DB.prepare('SELECT body FROM chunk_parts WHERE id = ?1 ORDER BY part').bind(id).all<{ body: string }>();
+    body = r.results.length ? r.results.map((x) => x.body).join('') : null;
+  }
   if (!body) return json({ error: 'not_found' }, 404);
   return new Response(body, {
     headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': cache, 'Vary': 'Authorization', 'X-Content-Type-Options': 'nosniff' },
