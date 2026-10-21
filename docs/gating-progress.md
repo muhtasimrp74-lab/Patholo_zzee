@@ -29,4 +29,10 @@
 - LEAK_KEY: random, in /tmp/.leak_key and .dev.vars, stored as GitHub Actions secret LEAK_KEY via the API (2026-10-21). If lost: new key, regenerate tools/leak_hashes.json, update the secret, one commit.
 - Done: 142 tests (incl. 7 new gating tests): 140 pass, 0 fail, 2 skipped (dist); node 19/19; typecheck OK; both leak checks: no verbatim matches found. Gate A: pages.yml triggers unchanged (push main, PR, dispatch), deploy main-only; new steps build/test/check only. SAFE.
 
-## Stage 2: IN PROGRESS
+## Stage 2: OK
+- worker/ (TypeScript): GET /api/chunks/<id>.json. Manifest allowlist (404 unknown, no paths), free chunks public (max-age=300), gated: 401 no/forged/expired/refresh token, 403 no/wrong/expired entitlement, 200 with Cache-Control private, no-store + Vary Authorization. CORS: exact Pages origin + localhost only, never *.
+- worker/wrangler.jsonc: STAGING ONLY (patholo-zzee-staging, D1 patholo-zzee-staging, R2 patholo-zzee-staging-chunks; database_id placeholder set in 2B). Root wrangler.jsonc (production Workers Builds) untouched.
+- D1 migration 0001 (users, entitlements: unique user+entitlement, source payment|admin, note). worker/src/bundles.json: QNA, MCQ, TEXTBOOK, ALL, 365 days, BDT, placeholder prices. worker/scripts/upload-chunks.sh (sha256 check, refuses non-staging bucket), for 2B.
+- Pinned: wrangler 4.148.0, @cloudflare/workers-types 5.20261006.1 (lockfile committed). JWT HS256 via WebCrypto, access tokens typ=access.
+- Tests: full suite 142: 140 pass, 0 fail, 2 skipped; node 19/19; worker 5/5 with node:sqlite D1 (real migrations) + in-memory R2; also smoke-tested with wrangler dev --local (free 200, no session 401, unknown 404, no entitlement 403, valid 200 + no-store, expired 403). CI runs worker tests. Gate A: pages.yml step added, triggers/deploy unchanged, SAFE.
+- Note: checking out a pre-Stage-1 branch and fast-forwarding past Stage 1 deletes the ignored private sources from the working tree; after any branch switch or sandbox reset run tools/restore_private.sh.
