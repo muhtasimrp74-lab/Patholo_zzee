@@ -82,3 +82,4 @@
 ## Stage 2B: IN PROGRESS
 - Gate A: new .github/workflows/staging.yml: push to gating/freemium (worker/app paths) + workflow_dispatch; job runs only on refs/heads/gating/*; never main, tags or pull_request; targets only patholo-zzee-staging Worker, D1 patholo-zzee-staging, R2 patholo-zzee-staging-chunks; secrets only via env (masked), JWT_SECRET generated in the runner. pages.yml unchanged. SAFE.
 - CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID stored as Actions secrets via the API at the owner's request (token was pasted in chat: owner should roll it later). The sandbox cannot reach Cloudflare; everything runs in Actions.
+- Run 2: D1 list/create OK; R2 bucket create failed: "Please enable R2 through the Cloudflare Dashboard" (code 10042). Blocked on the account owner enabling R2 (or approving chunks in D1 instead).
