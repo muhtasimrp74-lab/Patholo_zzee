@@ -36,3 +36,5 @@
 - Pinned: wrangler 4.148.0, @cloudflare/workers-types 5.20261006.1 (lockfile committed). JWT HS256 via WebCrypto, access tokens typ=access.
 - Tests: full suite 142: 140 pass, 0 fail, 2 skipped; node 19/19; worker 5/5 with node:sqlite D1 (real migrations) + in-memory R2; also smoke-tested with wrangler dev --local (free 200, no session 401, unknown 404, no entitlement 403, valid 200 + no-store, expired 403). CI runs worker tests. Gate A: pages.yml step added, triggers/deploy unchanged, SAFE.
 - Note: checking out a pre-Stage-1 branch and fast-forwarding past Stage 1 deletes the ignored private sources from the working tree; after any branch switch or sandbox reset run tools/restore_private.sh.
+
+## Stage 3: IN PROGRESS

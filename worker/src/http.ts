@@ -5,6 +5,10 @@ export interface Env {
   CHUNKS: R2Bucket;
   JWT_SECRET: string;
   ALLOWED_ORIGIN: string; // the Pages origin, exact (scheme://host)
+  GOOGLE_CLIENT_ID: string;
+  TWILIO_ACCOUNT_SID?: string;
+  TWILIO_AUTH_TOKEN?: string;
+  TWILIO_VERIFY_SID?: string;
 }
 
 const LOCAL = /^http:\/\/(localhost|127\.0\.0\.1)(:\d{1,5})?$/;
