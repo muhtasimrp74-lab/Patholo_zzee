@@ -13,7 +13,6 @@ jobs:
       LEAK_KEY: ${{ secrets.LEAK_KEY }}
       WRANGLER_SEND_METRICS: 'false'
       DB: patholo-zzee-prod
-      KV: patholo-zzee-prod-chunks
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
@@ -27,21 +26,16 @@ jobs:
           mkdir _site && cp -r index.html annot welcome.js zz-store.js sw.js manifest.json icons fonts terms.html privacy.html refund.html _site/
           mkdir _site/textbook && cp textbook/index.json textbook/ch01.html _site/textbook/
           cd worker && npm ci --no-audit --no-fund
-      - name: D1 and KV (create if missing), migrations, chunks
+      - name: D1 (create if missing), migrations, chunks
         working-directory: worker
         run: |
           w() { npx wrangler "$@" > /tmp/w.out 2> /tmp/w.err || { tail -n 8 /tmp/w.err /tmp/w.out | grep -v "^==>" | sed "s/^/::error::/"; return 1; }; }
           w d1 list --json; ID=$(python3 -c "import json;print(next((d['uuid'] for d in json.load(open('/tmp/w.out')) if d['name']=='$DB'),''))")
           if [ -z "$ID" ]; then w d1 create "$DB"; w d1 list --json; ID=$(python3 -c "import json;print(next(d['uuid'] for d in json.load(open('/tmp/w.out')) if d['name']=='$DB'))"); fi
-          w kv namespace list; K=$(python3 -c "import json;print(next((n['id'] for n in json.load(open('/tmp/w.out')) if n['title']=='$KV'),''))")
-          if [ -z "$K" ]; then w kv namespace create "$KV"; w kv namespace list; K=$(python3 -c "import json;print(next(n['id'] for n in json.load(open('/tmp/w.out')) if n['title']=='$KV'))"); fi
-          sed -e "s/__D1_ID__/$ID/" -e "s/__KV_ID__/$K/" wrangler.prod.jsonc > wrangler.run.jsonc
+          sed -e "s/__D1_ID__/$ID/" wrangler.prod.jsonc > wrangler.run.jsonc
           w d1 migrations apply "$DB" --remote -c wrangler.run.jsonc
-          python3 -c "import json,hashlib;m=json.load(open('../content/manifest.json'))['chunks'];out=[]
-          for k,v in sorted(m.items()):
-            b=open('../private-chunks/%s.json'%k,'rb').read(); assert hashlib.sha256(b).hexdigest()==v['sha256'],k; out.append({'key':'chunks/%s.json'%k,'value':b.decode('utf8')})
-          json.dump(out,open('/tmp/kv.json','w'))"
-          w kv bulk put /tmp/kv.json --namespace-id "$K" --remote; rm -f /tmp/kv.json
+          python3 ../tools/chunks_sql.py ../content/manifest.json ../private-chunks /tmp/chunks.sql
+          w d1 execute "$DB" --remote --yes -c wrangler.run.jsonc --file /tmp/chunks.sql; rm -f /tmp/chunks.sql
       - name: Deploy (app + API on one origin)
         working-directory: worker
         run: |

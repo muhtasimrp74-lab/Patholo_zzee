@@ -1,11 +1,10 @@
 // PRODUCTION (owner-authorised launch). Deployed only by .github/workflows/production.yml, run by hand on main.
-// __D1_ID__ and __KV_ID__ are filled in by that workflow; nothing secret lives here.
+// __D1_ID__ is filled in by that workflow; nothing secret lives here.
 {
   "name": "patholo-zzee-app",
   "main": "src/index.ts",
   "compatibility_date": "2026-10-01",
   "workers_dev": true,
   "d1_databases": [{ "binding": "DB", "database_name": "patholo-zzee-prod", "database_id": "__D1_ID__", "migrations_dir": "migrations" }],
-  "kv_namespaces": [{ "binding": "CHUNKS_KV", "id": "__KV_ID__" }],
   "vars": { "ALLOWED_ORIGIN": "https://muhtasimrp74-lab.github.io,https://patholo-zzee.muhtasimrp74.workers.dev", "PAY_MODE": "manual" }
 }
