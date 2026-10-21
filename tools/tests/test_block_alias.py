@@ -48,7 +48,7 @@ class AliasBrowser(unittest.TestCase):
     def open(self, ctx, hash_='#/textbook/' + CH):
         pg = ctx.new_page(); self.errs = []; pg.on('pageerror', lambda e: self.errs.append(str(e)))
         pg.add_init_script("try{localStorage.zzWelcomeAt=String(Date.now())}catch(e){}")
-        pg.goto('http://127.0.0.1:%d/index.html%s' % (self.port, hash_)); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('#tbbody[data-ch] [data-b]'); pg.wait_for_timeout(500); return pg
+        pg.goto('http://127.0.0.1:%d/index.full.html%s' % (self.port, hash_)); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('#tbbody[data-ch] [data-b]'); pg.wait_for_timeout(500); return pg
     def pairs(self, n=4):
         cur = ids_of(CH); out = [(o, nw) for o, nw in ALIAS[CH].items() if nw in cur]
         self.assertGreaterEqual(len(out), n); return out[::max(1, len(out) // n)][:n]

@@ -392,6 +392,10 @@ BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
 SOFT = '<style id="zz-soft">' + open(os.path.join(HERE, 'softui.css'), encoding='utf8').read() + '</style>'
 s = s.replace('</head><body>', BOOT_HEAD + SOFT + '</head><body>', 1)
+assert s.count('<footer>Patholo_zzee</footer>') == 1
+_k = s.rindex('</body>'); s = s[:_k] + '<script>' + _asset('sync.js') + '</script><script>' + _asset('acctui.js') + '</script>' + s[_k:]  # listeners only: end of body
+s = s.replace('<footer>Patholo_zzee</footer>', '<footer>Patholo_zzee · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <button type="button" class="zz-acct" onclick="zzAccountPage()">Account</button></footer>')
+s = s.replace('</head><body>', '<style>' + _asset('zz.css') + '</style></head><body><script>(function(h){if(window.ZZ_API===undefined)window.ZZ_API=/(^|\\.)github\\.io$/.test(h)||h==="patholo-zzee.muhtasimrp74.workers.dev"?"https://patholo-zzee-app.muhtasimrp74.workers.dev/":""})(location.hostname)</script><script>window.ZZ_MANIFEST=null</script><script>' + _asset('account.js') + '</script><script>' + _asset('chunks.js') + '</script><script>' + _asset('pay.js') + '</script>', 1)
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 import re as _re
 s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)
@@ -415,3 +419,6 @@ subprocess.run([sys.executable, os.path.join(HERE, 'split_semicolons.py')], chec
 subprocess.run([sys.executable, os.path.join(HERE, 'apply_hand_edits.py')], check=True)
 # 'From the textbook' link bar on answers that were collected from Robbins (idempotent; must run after every pass that edits answers)
 subprocess.run([sys.executable, os.path.join(HERE, 'source_links.py')], check=True)
+# the full page becomes index.full.html (gitignored, tests only); gate.py writes the gated index.html, content/ and private-chunks/
+os.replace(os.path.join(HERE, '..', 'index.html'), os.path.join(HERE, '..', 'index.full.html'))
+import gate; gate.gate()

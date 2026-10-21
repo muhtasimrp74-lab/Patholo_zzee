@@ -1,0 +1,69 @@
+# PRODUCTION deploy of the app + API Worker (patholo-zzee-app). Manual only (workflow_dispatch) and only from main.
+name: Deploy production
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+concurrency: { group: production, cancel-in-progress: false }
+jobs:
+  production:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      LEAK_KEY: ${{ secrets.LEAK_KEY }}
+      WRANGLER_SEND_METRICS: 'false'
+      DB: patholo-zzee-prod
+      KV: patholo-zzee-prod-chunks
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Restore private sources, build, assemble the site (gated index + free sample only)
+        run: |
+          sh tools/restore_private.sh
+          mkdir _site && cp -r index.html annot welcome.js zz-store.js sw.js manifest.json icons fonts terms.html privacy.html refund.html _site/
+          mkdir _site/textbook && cp textbook/index.json textbook/ch01.html _site/textbook/
+          cd worker && npm ci --no-audit --no-fund
+      - name: D1 and KV (create if missing), migrations, chunks
+        working-directory: worker
+        run: |
+          w() { npx wrangler "$@" > /tmp/w.out 2> /tmp/w.err || { tail -n 8 /tmp/w.err /tmp/w.out | grep -v "^==>" | sed "s/^/::error::/"; return 1; }; }
+          w d1 list --json; ID=$(python3 -c "import json;print(next((d['uuid'] for d in json.load(open('/tmp/w.out')) if d['name']=='$DB'),''))")
+          if [ -z "$ID" ]; then w d1 create "$DB"; w d1 list --json; ID=$(python3 -c "import json;print(next(d['uuid'] for d in json.load(open('/tmp/w.out')) if d['name']=='$DB'))"); fi
+          w kv namespace list; K=$(python3 -c "import json;print(next((n['id'] for n in json.load(open('/tmp/w.out')) if n['title']=='$KV'),''))")
+          if [ -z "$K" ]; then w kv namespace create "$KV"; w kv namespace list; K=$(python3 -c "import json;print(next(n['id'] for n in json.load(open('/tmp/w.out')) if n['title']=='$KV'))"); fi
+          sed -e "s/__D1_ID__/$ID/" -e "s/__KV_ID__/$K/" wrangler.prod.jsonc > wrangler.run.jsonc
+          w d1 migrations apply "$DB" --remote -c wrangler.run.jsonc
+          python3 -c "import json,hashlib;m=json.load(open('../content/manifest.json'))['chunks'];out=[]
+          for k,v in sorted(m.items()):
+            b=open('../private-chunks/%s.json'%k,'rb').read(); assert hashlib.sha256(b).hexdigest()==v['sha256'],k; out.append({'key':'chunks/%s.json'%k,'value':b.decode('utf8')})
+          json.dump(out,open('/tmp/kv.json','w'))"
+          w kv bulk put /tmp/kv.json --namespace-id "$K" --remote; rm -f /tmp/kv.json
+      - name: Deploy (app + API on one origin)
+        working-directory: worker
+        run: |
+          w() { npx wrangler "$@" > /tmp/w.out 2> /tmp/w.err || { tail -n 8 /tmp/w.err /tmp/w.out | grep -v "^==>" | sed "s/^/::error::/"; return 1; }; }
+          w deploy -c wrangler.run.jsonc --assets ../_site
+          echo "URL=https://patholo-zzee-app.muhtasimrp74.workers.dev" >> "$GITHUB_ENV"
+      - name: Worker secrets (JWT_SECRET generated once; ADMIN_KEY derived from LEAK_KEY)
+        working-directory: worker
+        run: |
+          python3 - > /tmp/s.json <<'PY'
+          import json, os, secrets, subprocess, hmac, hashlib
+          have = subprocess.run(['npx', 'wrangler', 'secret', 'list', '-c', 'wrangler.run.jsonc', '--format', 'json'], capture_output=True, text=True).stdout
+          names = {s['name'] for s in json.loads(have or '[]')}
+          out = {'ADMIN_KEY': hmac.new(os.environ['LEAK_KEY'].encode(), b'patholo-admin-v1', hashlib.sha256).hexdigest()}
+          if 'JWT_SECRET' not in names: out['JWT_SECRET'] = secrets.token_urlsafe(48)
+          print(json.dumps(out))
+          PY
+          npx wrangler secret bulk /tmp/s.json -c wrangler.run.jsonc > /dev/null 2> /tmp/w.err || { tail -n 5 /tmp/w.err | sed "s/^/::error::/"; exit 1; }
+          rm -f /tmp/s.json
+      - name: Smoke tests
+        run: |
+          sleep 10; c() { curl -s -o /dev/null -w '%{http_code}' "$URL$1"; }
+          A=$(c /api/chunks/q-02.json); F=$(c /api/chunks/q-01.json); U=$(c /api/chunks/q-99.json); P=$(c /); G=$(c /api/bundles)
+          echo "::notice::PRODUCTION $URL: no session $A (401), free $F (200), unknown $U (404), app $P (200), prices $G (200)"
+          [ "$A" = 401 ] && [ "$F" = 200 ] && [ "$U" = 404 ] && [ "$P" = 200 ] && [ "$G" = 200 ]

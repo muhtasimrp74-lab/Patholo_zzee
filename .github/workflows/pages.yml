@@ -16,38 +16,52 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }  # full history: gated sources are restored from the pre-Stage-1 commit
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
       - name: Install test tooling
         run: |
-          python -m pip install --upgrade pip playwright
+          python -m pip install --upgrade pip playwright==1.56.0  # pinned: same browser build the suite is verified with
           python -m playwright install --with-deps chromium
-      - name: Build index.html from source
-        run: python tools/build.py
+          npm ci --no-audit --no-fund  # pinned vite for the bundle-is-current test
+      - name: Restore private sources and build (full page for tests, gated index.html for the site)
+        run: sh tools/restore_private.sh
       - name: Fail if the committed index.html is stale
-        run: git diff --exit-code -- index.html || (echo "::error::index.html in the repo differs from a fresh build. Run 'python3 tools/build.py' and commit it." && exit 1)
-      - name: Run tests (temporarily non-blocking so the site can deploy; fix annotation tests, then remove continue-on-error)
-        continue-on-error: true
-        run: python -m unittest discover -s tools/tests -v
+        run: git diff --exit-code -- index.html content/ || (echo "::error::index.html in the repo differs from a fresh build. Run 'python3 tools/build.py' and commit it." && exit 1)
+      - name: Run tests
+        run: |  # failing test names become annotations (readable through the API)
+          set +e
+          s=0  # one process per test module: browser tests leak pages and state across modules in a single process
+          for f in tools/tests/test_*.py; do python -m unittest discover -s tools/tests -p "$(basename "$f")" -v >> test.log 2>&1 || s=1; done
+          tail -n 3 test.log
+          python tools/ci_failures.py test.log
+          exit $s
+      - name: Worker tests (in-memory D1/R2)
+        run: cd worker && npm ci --no-audit --no-fund && npm test
       - name: Assemble site folder
         run: |
           mkdir _site
-          cp -r index.html annot welcome.js zz-store.js sw.js manifest.json icons fonts textbook _site/
+          cp -r index.html annot welcome.js zz-store.js sw.js manifest.json icons fonts terms.html privacy.html refund.html _site/
+          mkdir _site/textbook && cp textbook/index.json textbook/ch01.html _site/textbook/  # free sample only
       - name: Validate the site folder
         run: |
           python - <<'PY'
           import os, re, json, filecmp, sys
           s = open('sw.js', encoding='utf8').read()
           core = re.findall(r"'([^']+)'", re.search(r'const CORE = \[(.*?)\];', s, re.S).group(1))
-          missing = [f for f in core if not os.path.exists('_site/' + f)] + ['textbook/ch%02d.html' % i for i in range(1, 30) if not os.path.exists('_site/textbook/ch%02d.html' % i)]
+          missing = [f for f in core if not os.path.exists('_site/' + f)] + [f for f in ('textbook/index.json', 'textbook/ch01.html') if not os.path.exists('_site/' + f)]
+          assert sorted(os.listdir('_site/textbook')) == ['ch01.html', 'index.json'], 'gated chapters in _site'
           assert not missing, 'missing from _site: %s' % missing
           assert filecmp.cmp('index.html', '_site/index.html', shallow=False), 'index.html mismatch'
           assert os.path.getsize('_site/index.html') > 1_000_000, 'index.html suspiciously small'
           json.load(open('_site/manifest.json', encoding='utf8'))
           print('site folder OK:', sum(len(f) for _, _, f in os.walk('_site')), 'files')
           PY
+      - name: Leak checks (verbatim 8+ word copies only; not paraphrase, reordering, images or short items)
+        env: { LEAK_KEY: '${{ secrets.LEAK_KEY }}' }
+        run: python tools/leak_check_local.py && python tools/leak_check_ci.py
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'
         with: { enablement: true }
@@ -56,7 +70,7 @@ jobs:
         with: { path: _site }
   deploy:
     needs: build
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       pages: write

@@ -7,7 +7,7 @@ try:
     HAVE_PW = True
 except Exception: HAVE_PW = False
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-URL = 'file://' + os.path.join(ROOT, 'index.html')
+URL = 'file://' + os.path.join(ROOT, 'index.full.html')
 DRAW = """([sel, pts, o])=>{const h=document.querySelector(sel),r=h.getBoundingClientRect(),id=o.id||1,t=o.type||'pen';
  const mk=(n,q,b)=>new PointerEvent(n,{pointerId:id,pointerType:t,isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+q[0],clientY:r.top+q[1],pressure:t==='pen'?(q[2]==null?.5:q[2]):(b?.5:0),tiltX:o.tiltX||0,tiltY:0,buttons:b,button:0});
  h.dispatchEvent(mk('pointerdown',pts[0],1));pts.slice(1).forEach(q=>document.dispatchEvent(mk('pointermove',q,1)));document.dispatchEvent(mk('pointerup',pts[pts.length-1],0))}"""
@@ -22,6 +22,7 @@ class Polish(unittest.TestCase):
     def page(self, w=1024, h=800, dpr=1):
         ctx = self.b.new_context(viewport={'width': w, 'height': h}, device_scale_factor=dpr); self.ctx = ctx
         pg = ctx.new_page(); self.errs = []; self.dialogs = []
+        pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
         pg.goto(URL + '#/05'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(300); return pg
     def open_card(self, pg):
@@ -69,8 +70,12 @@ class Polish(unittest.TestCase):
         self.assertEqual(pg.locator(sel + ' > .an-ws').count(), 0); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.length", 'q:' + cid), 1)
         self.assertEqual(self.errs, [])
     def test_toolbar_snaps_to_a_dock_near_an_edge_and_remembers_it(self):
-        pg = self.page(); self.open_card(pg); g = pg.locator('#an-bar .an-grip').bounding_box()
-        pg.mouse.move(g['x'] + 8, g['y'] + 8); pg.mouse.down(); pg.mouse.move(1000, 30, steps=6); pg.mouse.up(); pg.wait_for_timeout(200)
+        pg = self.page(); self.open_card(pg)
+        # slow CI runners: wait until the toolbar has stopped moving before grabbing it, then until the drop is recorded
+        pg.wait_for_function("()=>{const r=document.querySelector('#an-bar .an-grip').getBoundingClientRect(),k=r.x+','+r.y,o=window.__gk;window.__gk=k;return o===k}", polling=150)
+        g = pg.locator('#an-bar .an-grip').bounding_box()
+        pg.mouse.move(g['x'] + 8, g['y'] + 8); pg.mouse.down(); pg.mouse.move(1000, 30, steps=6); pg.mouse.up()
+        pg.wait_for_function("()=>Annot.state().dock!==undefined&&Annot.state().dock!==null", timeout=5000)
         self.assertEqual(pg.evaluate("()=>[Annot.state().dock,Annot.state().pos]"), ['tr', None])
         bb = pg.locator('#an-bar').bounding_box(); self.assertLess(bb['y'], 40); self.assertGreater(bb['x'] + bb['width'], 1024 - 40)
         pg.evaluate("()=>Annot.flush()"); pg.wait_for_timeout(600); pg.reload(); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(300)

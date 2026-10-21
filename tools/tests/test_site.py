@@ -15,7 +15,7 @@ class Build(unittest.TestCase):
     def setUpClass(cls):
         cls.before = sha('index.html')
         cls.r = subprocess.run([sys.executable, 'build.py'], cwd=TOOLS, capture_output=True, text=True)
-        cls.h = rd('index.html')
+        cls.h = rd('index.full.html')
     def test_build_succeeds_cleanly(self):
         self.assertEqual(self.r.returncode, 0, self.r.stderr)
         for bad in ('UNPLACED', 'no question matches heading', 'heading not in outline'): self.assertNotIn(bad, self.r.stdout)
@@ -41,7 +41,7 @@ class Build(unittest.TestCase):
         bad = [r[3] for r in G.rows(self.h) if r[2] not in views or r[3] not in cards]; self.assertFalse(bad, bad[:5])
     def test_internal_links_resolve(self):
         views = set(re.findall(r'<div class="view" id="v-([\w-]+)"', self.h))
-        extra = {'topics', 'practice', 'mcqs', 'textbook', 'menu', 'qa', 'questions', 'howto', 'search', 'b', ''}   # 'b' (By card) is created at runtime by mkView
+        extra = {'topics', 'practice', 'mcqs', 'textbook', 'menu', 'qa', 'questions', 'howto', 'search', 'b', 'account', ''}   # 'b' (By card) and 'account' (acctui.js) are created at runtime by mkView
         miss = {t for t in re.findall(r'href="#/([\w-]+)', self.h) if t not in views | extra}; self.assertFalse(miss, miss)
     def test_inline_scripts_parse(self):
         if not shutil.which('node'): self.skipTest('node missing')
@@ -108,7 +108,7 @@ class Pwa(unittest.TestCase):
 try:
     from playwright.sync_api import sync_playwright; HAVE_PW = True
 except Exception: HAVE_PW = False
-URL = 'file://' + os.path.join(ROOT, 'index.html')
+URL = 'file://' + os.path.join(ROOT, 'index.full.html')
 XSS = '"><img src=x onerror=window.__x=1>'
 
 @unittest.skipUnless(HAVE_PW, 'playwright missing')
@@ -119,6 +119,7 @@ class Browser(unittest.TestCase):
     def tearDownClass(cls): cls.b.close(); cls.p.stop()
     def page(self, h='#/'):
         pg = self.b.new_page(); self.errs = []; self.dialogs = []
+        pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
         pg.goto(URL + h); pg.wait_for_timeout(500); return pg
     def imp(self, pg, obj):

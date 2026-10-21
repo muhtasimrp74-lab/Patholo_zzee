@@ -1,0 +1,49 @@
+{
+  "currency": "BDT",
+  "days": 365,
+  "bundles": {
+    "QNA": {
+      "price": 500,
+      "entitlements": [
+        "qna"
+      ],
+      "note": "owner price"
+    },
+    "MCQ": {
+      "price": 5000,
+      "entitlements": [
+        "mcq"
+      ],
+      "note": "owner price"
+    },
+    "TEXTBOOK": {
+      "price": 10000,
+      "entitlements": [
+        "textbook"
+      ],
+      "note": "owner price"
+    },
+    "ALL": {
+      "price": 14000,
+      "entitlements": [
+        "qna",
+        "mcq",
+        "textbook"
+      ],
+      "note": "owner price"
+    }
+  },
+  "chunk_kinds": {
+    "q": "qna",
+    "mcq": "mcq",
+    "tb": "textbook"
+  },
+  "names": {
+    "QNA": "Question bank (1 year)",
+    "MCQ": "MCQ bank (1 year)",
+    "TEXTBOOK": "Textbook (1 year)",
+    "ALL": "Everything (1 year)"
+  },
+  "pay_mode": "manual",
+  "bkash_number": "01792529076"
+}

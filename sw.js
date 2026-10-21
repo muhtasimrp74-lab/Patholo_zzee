@@ -7,7 +7,7 @@
    - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v163';
+const VERSION = 'pathviva-zzee-v175';
 
 const CORE = [
   'index.html',
@@ -75,7 +75,7 @@ async function precacheBook() {
   try {
     const cache = await caches.open(VERSION);
     const files = ['textbook/index.json'];
-    for (let i = 1; i <= 29; i++) files.push('textbook/ch' + String(i).padStart(2, '0') + '.html');
+    files.push('textbook/ch01.html');  // free sample only; gated chapters come from the chunk API
     files.push('icons/logo.svg');
     const todo = [];
     for (const f of files) if (!(await cache.match(f))) todo.push(f);
@@ -93,6 +93,7 @@ self.addEventListener('fetch', event => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  if (url.pathname.includes('/chunks/') || url.pathname.includes('/api/')) return;  // gated content: never cached here
   if (url.pathname.endsWith('/manifest.json') || url.pathname.endsWith('/sw.js')) return;
 
   const isPage = req.mode === 'navigate';

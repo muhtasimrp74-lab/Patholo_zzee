@@ -18,7 +18,8 @@ function build(){
  b.appendChild(el('p','sf-about','Pathology viva, written and MCQ revision with full answers, built around the NMC viva list and Robbins 11th edition. Chapters you open are saved for offline reading.'));
  m.appendChild(b);
  m.appendChild(col('Study',[['#/','Home'],['#/questions','Questions'],['#/qa','Chapters'],['#/practice','Practice'],['#/mcqs','MCQs'],['#/textbook','Textbook']]));
- m.appendChild(col('Your space',[['#/bookmarks','Bookmarks'],['#/favourites','Favourites'],['#/notes','Notes'],['#/menu','Menu and backup'],['#/howto','How to read']]));
+ m.appendChild(col('Your space',[['#/bookmarks','Bookmarks'],['#/favourites','Favourites'],['#/notes','Notes'],['#/menu','Menu and backup'],['#/howto','How to read'],['#/account','Account']]));
+ m.appendChild(col('Legal',[['terms.html','Terms of use'],['privacy.html','Privacy'],['refund.html','Refunds']]));
  f.appendChild(m);
  const bt=el('div','sf-bot');
  const p=el('p','sf-legal');p.textContent='\u00A9 '+new Date().getFullYear()+' Muhtasim Ahmed. For exam revision only; not medical or clinical advice, so check against your prescribed textbooks. Robbins and Cotran Pathologic Basis of Disease belongs to its authors and publisher, and this site is not affiliated with them or with the NMC.';

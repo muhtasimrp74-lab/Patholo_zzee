@@ -57,7 +57,7 @@ class TextbookAnnot(unittest.TestCase):
         cls.p = sync_playwright().start(); cls.b = cls.p.chromium.launch()
     @classmethod
     def tearDownClass(cls): cls.b.close(); cls.p.stop(); cls.srv.shutdown()
-    def url(self, ch=CH): return 'http://127.0.0.1:%d/index.html#/textbook/%s' % (self.port, ch)
+    def url(self, ch=CH): return 'http://127.0.0.1:%d/index.full.html#/textbook/%s' % (self.port, ch)
     def page(self, w=1024, h=800, ch=CH, ctx=None, route=None):
         ctx = ctx or self.b.new_context(viewport={'width': w, 'height': h}, service_workers='block'); self.ctx = ctx
         pg = ctx.new_page(); self.errs = []; self.dialogs = []
@@ -244,7 +244,7 @@ class TextbookAnnot(unittest.TestCase):
         r = pg.evaluate("()=>{const sp=document.documentElement.scrollHeight-innerHeight;return [scrollY/sp,parseFloat(document.querySelector('#tbprog i').style.width)/100]}")
         self.assertAlmostEqual(r[0], .4, delta=.02); self.assertAlmostEqual(r[1], r[0], delta=.02)
         pg.mouse.wheel(0, 300); pg.wait_for_timeout(250); self.assertTrue(pg.locator('#tbsc').is_visible()); pg.goto(self.url('ch04')); pg.wait_for_selector('#tbbody[data-ch=ch04] [data-b]')
-        self.assertTrue(pg.evaluate("()=>document.body.classList.contains('an-tb')")); pg.goto('http://127.0.0.1:%d/index.html#/menu' % self.port); pg.wait_for_timeout(400)
+        self.assertTrue(pg.evaluate("()=>document.body.classList.contains('an-tb')")); pg.goto('http://127.0.0.1:%d/index.full.html#/menu' % self.port); pg.wait_for_timeout(400)
         self.assertFalse(pg.evaluate("()=>document.body.classList.contains('an-tb')"), 'the textbook button goes away outside the textbook'); self.assertEqual(self.errs, [])
 
     # ---------------------------------------------------------------- scale and speed
