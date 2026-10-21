@@ -33,7 +33,8 @@ jobs:
       - name: Run tests
         run: |  # failing test names become annotations (readable through the API)
           set +e
-          python -m unittest discover -s tools/tests -v > test.log 2>&1; s=$?
+          s=0  # one process per test module: browser tests leak pages and state across modules in a single process
+          for f in tools/tests/test_*.py; do python -m unittest discover -s tools/tests -p "$(basename "$f")" -v >> test.log 2>&1 || s=1; done
           tail -n 3 test.log
           python tools/ci_failures.py test.log
           exit $s
