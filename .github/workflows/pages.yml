@@ -21,13 +21,6 @@ jobs:
         with: { python-version: '3.12' }
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
-      - name: TEMP workers.dev subdomain lookup (read-only)
-        if: github.event_name == 'workflow_dispatch'
-        env: { T: '${{ secrets.CLOUDFLARE_API_TOKEN }}', I: '${{ secrets.CLOUDFLARE_ACCOUNT_ID }}' }
-        run: |
-          curl -s -H "Authorization: Bearer $T" "https://api.cloudflare.com/client/v4/accounts/$I/workers/subdomain" > /tmp/sd.json
-          python3 -c "import json;d=json.load(open('/tmp/sd.json'));print('::notice::SUBDOMAIN=' + str((d.get('result') or {}).get('subdomain')) + ' ok=' + str(d.get('success')))"
-          exit 1
       - name: Install test tooling
         run: |
           python -m pip install --upgrade pip playwright==1.56.0  # pinned: same browser build the suite is verified with
