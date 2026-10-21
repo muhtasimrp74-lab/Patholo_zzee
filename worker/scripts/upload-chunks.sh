@@ -12,6 +12,6 @@ sys.exit('chunk hash mismatch: %s' % bad if bad else 0)
 PY
 for id in $(python3 -c "import json;print(' '.join(sorted(json.load(open('content/manifest.json'))['chunks'])))"); do
   npx --prefix worker wrangler r2 object put "$BUCKET/chunks/$id.json" --file "private-chunks/$id.json" \
-    --content-type application/json --remote >/dev/null
+    --content-type application/json --remote >/tmp/up.log 2>&1 || { tail -n 8 /tmp/up.log | sed 's/^/::error::/'; exit 1; }
 done
 echo "uploaded $(python3 -c "import json;print(len(json.load(open('content/manifest.json'))['chunks']))") chunks to $BUCKET"
