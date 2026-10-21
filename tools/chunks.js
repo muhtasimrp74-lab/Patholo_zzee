@@ -31,7 +31,7 @@
     if (!gated('tb-' + id)) return fetch('textbook/' + id + '.html').then(function (r) { if (!r.ok) throw 0; return r.text(); });
     return loadChunk('tb-' + id).then(function (c) { setTimeout(function () { var b = document.getElementById('tbbody'); if (b && b.dataset.ch === id) b.classList.add('zz-g'); }, 0); return c.html; }, function (e) {
       if (!e || (e.status !== 401 && e.status !== 403)) throw e;
-      return '<div class="zz-lock zz-locked" role="status"><p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
+      return '<div class="zz-lock zz-locked" role="status">' + LOCK + '<p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
     });
   };
   var BUNDLE = { q: 'the Question bank', mcq: 'the MCQ bank', tb: 'the Textbook bundle' };
@@ -48,9 +48,11 @@
     b.onclick = function (ev) { ev.stopPropagation(); f(); };
     return b;
   }
+  var LOCK = '<span class="zz-lk" aria-hidden="true"><svg class="zz-ico" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3"/></svg></span>';
   function lockBox(e, kind, retry) {
     var d = document.createElement('div'), p = document.createElement('p');
     d.className = 'zz-lock'; d.setAttribute('role', 'status'); p.textContent = why(e, kind);
+    if (e && (e.status === 401 || e.status === 403)) d.insertAdjacentHTML('afterbegin', LOCK);
     d.append(p, act(e, retry)); return d;
   }
   var mcq = 0;  // 0 idle, 1 loading, 2 loaded, 3 failed: the free chapter stays usable
@@ -67,7 +69,7 @@
       mcq = 3; delete V.dataset.zzSt;
       var p = lockBox(e, 'mcq', function () { p.remove(); mcq = 0; done(); });
       p.classList.add('zz-banner');
-      if (e && (e.status === 401 || e.status === 403)) p.firstChild.textContent = 'Chapter 1 is free. ' + why(e, 'mcq').replace('Sign in to read this. It comes', 'Sign in for the rest: they come').replace('This comes', 'The rest come');
+      if (e && (e.status === 401 || e.status === 403)) p.querySelector('p').textContent = 'Chapter 1 is free. ' + why(e, 'mcq').replace('Sign in to read this. It comes', 'Sign in for the rest: they come').replace('This comes', 'The rest come');
       (mount && mount.parentNode ? mount.parentNode : V).insertBefore(p, mount && mount.parentNode ? mount : V.firstChild); done();
     });
     return true;
@@ -89,7 +91,7 @@
           var first = document.querySelector('.ans[data-zz="' + id + '"]'), v = first && first.closest('.view'), c = v && v.querySelector('.card');
           if (c && !v.querySelector('.zz-vlock[data-c="' + id + '"]')) {
             var box = lockBox(e, 'q'); box.classList.add('zz-vlock'); box.dataset.c = id;
-            box.firstChild.textContent = e.status === 401 ? 'The questions are free to browse. Sign in to read the answers: they come with the Question bank.' : 'The questions are free to browse. The answers come with the Question bank.';
+            box.querySelector('p').textContent = e.status === 401 ? 'The questions are free to browse. Sign in to read the answers: they come with the Question bank.' : 'The questions are free to browse. The answers come with the Question bank.';
             c.parentNode.insertBefore(box, c);
           }
         }

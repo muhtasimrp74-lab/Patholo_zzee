@@ -2096,9 +2096,9 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
 .zz-plan:active{transform:scale(.99)}
 .zz-plan b{display:block;font-weight:600}
 .zz-plan small{display:block;font-size:var(--zz-t-xs);color:var(--zz-ink-2);font-weight:400;margin-top:2px}
-.zz-plan span{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--zz-ink)}
+.zz-plan .zz-pr{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--zz-ink)}
 .zz-plan.zz-best{border:1.5px solid var(--zz-accent);background:var(--zz-accent-soft);padding-top:var(--zz-s5)}
-.zz-plan.zz-best span{color:var(--zz-accent)}
+.zz-plan.zz-best .zz-pr{color:var(--zz-accent)}
 .zz-badge{position:absolute;top:-1px;left:var(--zz-s4);transform:translateY(-50%);padding:2px 10px;border-radius:var(--zz-r-pill);background:var(--zz-accent);color:var(--zz-accent-ink);font:600 .6875rem/1.6 var(--zz-font);letter-spacing:.02em}
 .zz-plans li:first-child{margin-top:var(--zz-s2)}
 .zz-receipt{border:1px solid var(--zz-hair);border-radius:var(--zz-r-md);padding:var(--zz-s3) var(--zz-s4);margin-top:var(--zz-s3);background:var(--zz-sunken);font-variant-numeric:tabular-nums}
@@ -2215,6 +2215,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     if (!dlg) {
       dlg = el('dialog', { id: 'zz-signin', class: 'zz-dlg', 'aria-labelledby': 'zz-si-h' });
       var x = el('button', { type: 'button', class: 'zz-x', 'aria-label': 'Close' }, '\u00d7');
+      x.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
       var g = el('div', { id: 'zz-g' }), or = el('p', { class: 'zz-or', hidden: '' }, 'or use your phone');
       var ph = el('input', { id: 'zz-phone', type: 'tel', inputmode: 'tel', autocomplete: 'tel', placeholder: '01XXXXXXXXX' });
       var code = el('input', { id: 'zz-code', inputmode: 'numeric', autocomplete: 'one-time-code', maxlength: '8', placeholder: '6-digit code' });
@@ -2293,7 +2294,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     if (!gated('tb-' + id)) return fetch('textbook/' + id + '.html').then(function (r) { if (!r.ok) throw 0; return r.text(); });
     return loadChunk('tb-' + id).then(function (c) { setTimeout(function () { var b = document.getElementById('tbbody'); if (b && b.dataset.ch === id) b.classList.add('zz-g'); }, 0); return c.html; }, function (e) {
       if (!e || (e.status !== 401 && e.status !== 403)) throw e;
-      return '<div class="zz-lock zz-locked" role="status"><p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
+      return '<div class="zz-lock zz-locked" role="status">' + LOCK + '<p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
     });
   };
   var BUNDLE = { q: 'the Question bank', mcq: 'the MCQ bank', tb: 'the Textbook bundle' };
@@ -2310,9 +2311,11 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     b.onclick = function (ev) { ev.stopPropagation(); f(); };
     return b;
   }
+  var LOCK = '<span class="zz-lk" aria-hidden="true"><svg class="zz-ico" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3"/></svg></span>';
   function lockBox(e, kind, retry) {
     var d = document.createElement('div'), p = document.createElement('p');
     d.className = 'zz-lock'; d.setAttribute('role', 'status'); p.textContent = why(e, kind);
+    if (e && (e.status === 401 || e.status === 403)) d.insertAdjacentHTML('afterbegin', LOCK);
     d.append(p, act(e, retry)); return d;
   }
   var mcq = 0;  // 0 idle, 1 loading, 2 loaded, 3 failed: the free chapter stays usable
@@ -2329,7 +2332,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
       mcq = 3; delete V.dataset.zzSt;
       var p = lockBox(e, 'mcq', function () { p.remove(); mcq = 0; done(); });
       p.classList.add('zz-banner');
-      if (e && (e.status === 401 || e.status === 403)) p.firstChild.textContent = 'Chapter 1 is free. ' + why(e, 'mcq').replace('Sign in to read this. It comes', 'Sign in for the rest: they come').replace('This comes', 'The rest come');
+      if (e && (e.status === 401 || e.status === 403)) p.querySelector('p').textContent = 'Chapter 1 is free. ' + why(e, 'mcq').replace('Sign in to read this. It comes', 'Sign in for the rest: they come').replace('This comes', 'The rest come');
       (mount && mount.parentNode ? mount.parentNode : V).insertBefore(p, mount && mount.parentNode ? mount : V.firstChild); done();
     });
     return true;
@@ -2351,7 +2354,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
           var first = document.querySelector('.ans[data-zz="' + id + '"]'), v = first && first.closest('.view'), c = v && v.querySelector('.card');
           if (c && !v.querySelector('.zz-vlock[data-c="' + id + '"]')) {
             var box = lockBox(e, 'q'); box.classList.add('zz-vlock'); box.dataset.c = id;
-            box.firstChild.textContent = e.status === 401 ? 'The questions are free to browse. Sign in to read the answers: they come with the Question bank.' : 'The questions are free to browse. The answers come with the Question bank.';
+            box.querySelector('p').textContent = e.status === 401 ? 'The questions are free to browse. Sign in to read the answers: they come with the Question bank.' : 'The questions are free to browse. The answers come with the Question bank.';
             c.parentNode.insertBefore(box, c);
           }
         }
@@ -2388,7 +2391,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
   function open(html) {
     if (!dlg) {
       dlg = document.createElement('dialog'); dlg.id = 'zz-pay'; dlg.className = 'zz-dlg'; dlg.setAttribute('aria-labelledby', 'zz-pay-h');
-      var x = document.createElement('button'); x.type = 'button'; x.className = 'zz-x'; x.setAttribute('aria-label', 'Close'); x.textContent = '\u00d7';
+      var x = document.createElement('button'); x.type = 'button'; x.className = 'zz-x'; x.setAttribute('aria-label', 'Close'); x.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
       x.onclick = function () { dlg.close(); }; body = document.createElement('div'); dlg.append(x, body); document.body.appendChild(dlg);
     }
     body.innerHTML = html;
@@ -2405,9 +2408,15 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     open('<h2 id="zz-pay-h">Choose a plan</h2><p class="zz-st" role="status">Loading prices\u2026</p>');
     api('bundles').then(function (j) {
       if (!j.bundles) { body.querySelector('.zz-st').textContent = 'Could not load prices. Check your connection and try again.'; return; }
-      body.innerHTML = '<h2 id="zz-pay-h">Choose a plan</h2><p>Each plan lasts one year. Buying again adds another year.</p><ul class="zz-plans">' + j.bundles.map(function (b) {
-        return '<li><button type="button" class="zz-plan' + (b.id === 'ALL' ? ' zz-best' : '') + '" data-b="' + esc(b.id) + '"><b>' + esc(b.name) +
-          (b.id === 'ALL' ? '<small>Questions, MCQs and the textbook</small>' : '') + '</b><span>' + money(Math.round(Number(b.price) * 100), b.currency) + '</span></button></li>';
+      var cents = function (b) { return Math.round(Number(b.price) * 100); }, sum = 0, all = null;
+      j.bundles.forEach(function (b) { if (b.id === 'ALL') all = b; else sum += cents(b); });
+      var save = all && sum > cents(all) ? sum - cents(all) : 0;
+      var WHAT = { QNA: 'Every viva and written answer', MCQ: 'All MCQ chapters with explanations', TEXTBOOK: 'Every Robbins chapter, offline too',
+        ALL: 'Questions, MCQs and the textbook' + (save ? ' \u00b7 save ' + money(save, all.currency) : '') };
+      var order = (all ? [all] : []).concat(j.bundles.filter(function (b) { return b.id !== 'ALL'; }));  // best value first
+      body.innerHTML = '<h2 id="zz-pay-h">Choose a plan</h2><p>One year of access. Buying again adds another year.</p><ul class="zz-plans">' + order.map(function (b) {
+        return '<li><button type="button" class="zz-plan' + (b.id === 'ALL' ? ' zz-best' : '') + '" data-b="' + esc(b.id) + '">' + (b.id === 'ALL' ? '<i class="zz-badge">Best value</i>' : '') +
+          '<span class="zz-pt"><b>' + esc(NAMES[b.id] || b.name) + '</b><small>' + esc(WHAT[b.id] || '') + '</small></span><span class="zz-pr">' + money(cents(b), b.currency) + '</span></button></li>';
       }).join('') + '</ul><p id="zz-pay-msg" class="zz-st" role="status"></p>' + LEGAL;
       body.querySelectorAll('button[data-b]').forEach(function (btn) {
         btn.onclick = function () {
@@ -2430,7 +2439,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
       if (polling !== id) return;
       var st = j.order && j.order.status, r = j.receipt;
       if (st === 'paid' && r) {
-        open('<h2 id="zz-pay-h">Payment received</h2><p>Your plan is active. The locked topics open now.</p><div id="zz-receipt" class="zz-receipt">' +
+        open('<span class="zz-done" aria-hidden="true"><svg class="zz-ico" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h2 id="zz-pay-h">Payment received</h2><p>Your plan is active. The locked topics open now.</p><div id="zz-receipt" class="zz-receipt">' +
           '<p><span>Receipt</span><b>' + esc(r.receipt_no) + '</b></p><p><span>Plan</span>' + esc(NAMES[r.bundle] || r.bundle) + '</p>' +
           '<p><span>Paid</span>' + money(r.amount_minor, r.currency) + '</p><p><span>Date</span>' + esc(new Date(r.issued_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })) + '</p></div>' +
           '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close()">Done</button>' + LEGAL);
@@ -4498,7 +4507,7 @@ if ('serviceWorker' in navigator) {
   function show(html) {
     if (!dlg) {
       dlg = document.createElement('dialog'); dlg.id = 'zz-acct'; dlg.className = 'zz-dlg'; dlg.setAttribute('aria-labelledby', 'zz-acct-h'); box = document.createElement('div');
-      var c = document.createElement('button'); c.type = 'button'; c.className = 'zz-x'; c.setAttribute('aria-label', 'Close'); c.textContent = '\u00d7'; c.onclick = function () { dlg.close(); };
+      var c = document.createElement('button'); c.type = 'button'; c.className = 'zz-x'; c.setAttribute('aria-label', 'Close'); c.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>'; c.onclick = function () { dlg.close(); };
       dlg.append(c, box); document.body.appendChild(dlg);
     }
     box.innerHTML = html; if (!dlg.open) dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', ''); var h = box.querySelector('h2'); if (h) { h.tabIndex = -1; h.focus(); }
