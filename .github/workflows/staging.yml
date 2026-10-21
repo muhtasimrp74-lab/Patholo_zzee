@@ -20,6 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
+      - name: Workers subdomain (public, needed for the app's API address)
+        run: |
+          curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain" \
+            | python3 -c "import json,sys;d=json.load(sys.stdin);print('::notice::SUBDOMAIN=' + str((d.get('result') or {}).get('subdomain')) + ' success=' + str(d.get('success')))"
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - uses: actions/setup-node@v4
