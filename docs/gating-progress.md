@@ -37,8 +37,9 @@
 - Tests: full suite 142: 140 pass, 0 fail, 2 skipped; node 19/19; worker 5/5 with node:sqlite D1 (real migrations) + in-memory R2; also smoke-tested with wrangler dev --local (free 200, no session 401, unknown 404, no entitlement 403, valid 200 + no-store, expired 403). CI runs worker tests. Gate A: pages.yml step added, triggers/deploy unchanged, SAFE.
 - Note: checking out a pre-Stage-1 branch and fast-forwarding past Stage 1 deletes the ignored private sources from the working tree; after any branch switch or sandbox reset run tools/restore_private.sh.
 
-## Stage 3: IN PROGRESS
+## Stage 3: OK
 - Worker: POST /api/auth/google (RS256 vs Google JWKS, aud, iss, exp, verified email), /api/auth/otp/start|verify (provider adapter: Twilio Verify, mock in tests), /api/auth/refresh (rotate every time; reuse of a rotated token revokes the family), /api/auth/logout (revokes family), GET /api/me, GET /api/config. POSTs require JSON (forces CORS preflight).
 - Migration 0002: devices, sessions (hashed refresh token, family, device, expires/rotated/revoked), otp_challenges (hashed phone + code, attempts, expiry, consumed), rate_limits. OTP: 10 min, single use, 5 attempts; 3 per number per 15 min (sliding), 10 per IP per hour (IP stored only as HMAC); 429 + Retry-After.
 - Tokens: access JWT 15 min (stateless, memory only); refresh 30 days in localStorage 'zz-rt' (trade-off: readable by scripts on the origin; no custom domain for an HttpOnly cookie). Cross-tab refresh serialized with navigator.locks so tabs never reuse a token.
+- Done: Python 142 pass, 0 fail, 2 skipped; worker 19/19 (incl. early Stage 5 server code); gating client tests 9/9. Real Google/SMS on staging: PENDING (2B + credentials). Gate A: no workflow change.
 - Client tools/account.js: device id, refresh on load (chunk loads wait for it), sign-in dialog (Google button via GIS when /api/config has a client id; phone OTP), logout. Phones normalized to E.164 (+880), Bangla/Arabic/Devanagari digits accepted.
