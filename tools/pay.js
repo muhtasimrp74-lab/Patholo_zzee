@@ -36,6 +36,7 @@
         return '<li><button type="button" class="zz-plan' + (b.id === 'ALL' ? ' zz-best' : '') + '" data-b="' + esc(b.id) + '">' + (b.id === 'ALL' ? '<i class="zz-badge">Best value</i>' : '') +
           '<span class="zz-pt"><b>' + esc(NAMES[b.id] || b.name) + '</b><small>' + esc(WHAT[b.id] || '') + '</small></span><span class="zz-pr">' + money(cents(b), b.currency) + '</span></button></li>';
       }).join('') + '</ul><p id="zz-pay-msg" class="zz-st" role="status"></p>' + LEGAL;
+      var h2 = body.querySelector('h2'); h2.tabIndex = -1; h2.focus();  // content was replaced: keep focus in the dialog
       body.querySelectorAll('button[data-b]').forEach(function (btn) {
         btn.onclick = function () {
           var msg = body.querySelector('#zz-pay-msg');

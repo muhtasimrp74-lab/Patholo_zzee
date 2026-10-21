@@ -334,3 +334,22 @@ class FrontEnd(unittest.TestCase):
         txt = pg2.text_content('#v-account main')
         self.assertIn('Question bank', txt); self.assertNotIn('qna', txt); self.assertIn('Until 1 Jan 2100', txt)
         self.assertEqual(pg2.locator('#zz-devs button[data-d]').count(), 1, 'this device cannot be removed from itself')
+
+    def test_plan_picker_best_value_first_lock_icon_and_reduced_motion(self):
+        ctx = self.b.new_context(service_workers='block', reduced_motion='reduce'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        pg.add_init_script("localStorage.setItem('zz-rt','rt')")
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(json={'access_token': _tok('u1'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'bundles': return route.fulfill(json={'bundles': [{'id': k, 'name': k, 'price': v, 'currency': 'BDT'} for k, v in [('QNA', '500.00'), ('MCQ', '500.00'), ('TEXTBOOK', '500.00'), ('ALL', '1200.00')]]})
+            if path.startswith('chunks/'): return route.fulfill(status=403, json={'error': 'forbidden'})
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html#/02' % self.port)
+        pg.wait_for_selector('#v-02 .zz-vlock .zz-lk svg')
+        self.assertEqual(pg.text_content('#v-02 .zz-vlock button'), 'Upgrade')
+        pg.evaluate('()=>zzUpgrade()'); pg.wait_for_selector('#zz-pay .zz-plan')
+        self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('#zz-pay .zz-plan')].map(b=>b.dataset.b)"), ['ALL', 'QNA', 'MCQ', 'TEXTBOOK'])
+        self.assertIn('Best value', pg.text_content('#zz-pay .zz-plan.zz-best'))
+        self.assertIn('save BDT 300.00', pg.text_content('#zz-pay .zz-plan.zz-best'))
+        self.assertEqual(pg.evaluate("()=>getComputedStyle(document.getElementById('zz-pay')).animationName"), 'none', 'reduced motion respected')
+        self.assertEqual(pg.evaluate("()=>document.activeElement.id"), 'zz-pay-h', 'focus starts on the title')
