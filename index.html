@@ -2102,7 +2102,8 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
     google: function (idToken) { return post('auth/google', { id_token: idToken, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
     otpStart: function (phone) { return post('auth/otp/start', { phone: phone }); },
     otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
-    logout: function () { var h = window.zzAuthHeaders(); set({}); return post('auth/logout', {}, h).catch(function () {}); },
+    // reload afterwards so no unlocked content stays in the page
+    logout: function () { var h = window.zzAuthHeaders(); set({}); return post('auth/logout', {}, h).catch(function () {}).then(function () { location.reload(); }); },
   };
   window.zzAuthReady = LS.get('zz-rt') ? refresh() : Promise.resolve(false);
 
@@ -2153,21 +2154,34 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
   window.loadChunk = loadChunk;
   window.zzChapter = function (id) {
     if (!gated('tb-' + id)) return fetch('textbook/' + id + '.html').then(function (r) { if (!r.ok) throw 0; return r.text(); });
-    return loadChunk('tb-' + id).then(function (c) { return c.html; });
+    return loadChunk('tb-' + id).then(function (c) { return c.html; }, function (e) {
+      if (!e || (e.status !== 401 && e.status !== 403)) throw e;
+      return '<div class="mempty zz-locked"><b>' + why(e) + '</b><button type="button" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
+    });
   };
-  var why = function (e) { return e && (e.status === 401 || e.status === 403) ? 'This topic is locked.' : 'Could not load this topic. Check your connection.'; };
-  var mcq = 0;
+  var why = function (e) { return e && e.status === 401 ? 'Sign in to open this topic.' : e && e.status === 403 ? 'This topic is part of a paid bundle.' : 'Could not load this topic. Check your connection.'; };
+  function act(e, retry) {  // the one button an error state offers: Sign in, Upgrade or Retry
+    var b = document.createElement('button'); b.type = 'button';
+    var f = e && e.status === 401 ? function () { window.zzSignIn && zzSignIn(); } : e && e.status === 403 ? function () { (window.zzUpgrade || window.zzSignIn || Object)(); } : retry;
+    b.textContent = e && e.status === 401 ? 'Sign in' : e && e.status === 403 ? 'Upgrade' : 'Retry';
+    b.onclick = function (ev) { ev.stopPropagation(); f(); };
+    return b;
+  }
+  var mcq = 0;  // 0 idle, 1 loading, 2 loaded, 3 failed: the free chapter stays usable
+  window.zzMcqReset = function () { if (mcq === 3) mcq = 0; };
   window.zzMcqLoad = function (Q, done, V) {
     var ids = M ? M.gated.filter(function (x) { return x.indexOf('mcq-') === 0; }).sort() : [];
-    if (!ids.length || mcq === 2) return false;
+    if (!ids.length || mcq >= 2) return false;
     if (mcq === 1) return true;
     mcq = 1; V.dataset.zzSt = 'loading';
+    var old = V.querySelector(':scope > .zz-banner'); if (old) old.remove();
     Promise.all(ids.map(loadChunk)).then(function (cs) {
       cs.forEach(function (c) { Array.prototype.push.apply(Q, c.q); }); mcq = 2; delete V.dataset.zzSt; done();
     }, function (e) {
-      mcq = 0; V.dataset.zzSt = 'error'; V.dataset.zzMsg = why(e);
-      var b = V.querySelector('.zz-retry') || V.appendChild(document.createElement('button'));
-      b.type = 'button'; b.className = 'zz-retry'; b.textContent = 'Retry'; b.onclick = function () { b.remove(); done(); };
+      mcq = 3; delete V.dataset.zzSt;
+      var p = document.createElement('p'); p.className = 'zz-msg zz-banner'; p.setAttribute('role', 'status');
+      p.textContent = (e && (e.status === 401 || e.status === 403) ? 'Only the free chapter is open. ' : 'Could not load all chapters. ') + ' ';
+      p.appendChild(act(e, function () { p.remove(); mcq = 0; done(); })); V.insertBefore(p, V.firstChild); done();
     });
     return true;
   };
@@ -2188,10 +2202,10 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
       }, function (e) {
         document.querySelectorAll('.ans[data-zz="' + id + '"]').forEach(function (a) {
           a.dataset.zzSt = 'error'; a.innerHTML = '';
-          var p = document.createElement('p'), b = document.createElement('button');
+          var p = document.createElement('p');
           p.className = 'zz-msg'; p.setAttribute('role', 'alert'); p.textContent = why(e) + ' ';
-          b.type = 'button'; b.textContent = 'Retry'; b.onclick = function (ev) { ev.stopPropagation(); need(a.closest('.card') || a); };
-          p.appendChild(b); a.appendChild(p);
+          if (e && (e.status === 401 || e.status === 403)) a.classList.add('zz-locked');
+          p.appendChild(act(e, function () { need(a.closest('.card') || a); })); a.appendChild(p);
         });
       });
     });
@@ -2199,7 +2213,11 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
   window.zzNeed = need;
   function onRoute() { document.querySelectorAll('.view:not([hidden])').forEach(need); }
   addEventListener('hashchange', function () { setTimeout(onRoute, 0); });
-  addEventListener('zz:auth', function () { cache = {}; onRoute(); });
+  addEventListener('zz:auth', function () {
+    cache = {}; window.zzMcqReset();
+    document.querySelectorAll('.ans.zz-locked').forEach(function (a) { a.classList.remove('zz-locked'); });
+    if (/^#\/(textbook|mcqs)/.test(location.hash)) dispatchEvent(new HashChangeEvent('hashchange')); else onRoute();
+  });
   document.addEventListener('click', function (e) {
     var c = e.target.closest && e.target.closest('.card');
     if (c && c.querySelector('.ans[data-zz]:not([data-zz-st=loading])')) need(c);

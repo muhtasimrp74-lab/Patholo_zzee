@@ -39,7 +39,8 @@
     google: function (idToken) { return post('auth/google', { id_token: idToken, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
     otpStart: function (phone) { return post('auth/otp/start', { phone: phone }); },
     otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
-    logout: function () { var h = window.zzAuthHeaders(); set({}); return post('auth/logout', {}, h).catch(function () {}); },
+    // reload afterwards so no unlocked content stays in the page
+    logout: function () { var h = window.zzAuthHeaders(); set({}); return post('auth/logout', {}, h).catch(function () {}).then(function () { location.reload(); }); },
   };
   window.zzAuthReady = LS.get('zz-rt') ? refresh() : Promise.resolve(false);
 

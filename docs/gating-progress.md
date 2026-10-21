@@ -43,3 +43,7 @@
 - Tokens: access JWT 15 min (stateless, memory only); refresh 30 days in localStorage 'zz-rt' (trade-off: readable by scripts on the origin; no custom domain for an HttpOnly cookie). Cross-tab refresh serialized with navigator.locks so tabs never reuse a token.
 - Done: Python 142 pass, 0 fail, 2 skipped; worker 19/19 (incl. early Stage 5 server code); gating client tests 9/9. Real Google/SMS on staging: PENDING (2B + credentials). Gate A: no workflow change.
 - Client tools/account.js: device id, refresh on load (chunk loads wait for it), sign-in dialog (Google button via GIS when /api/config has a client id; phone OTP), logout. Phones normalized to E.164 (+880), Bangla/Arabic/Devanagari digits accepted.
+
+## Stage 4: IN PROGRESS
+- Locked topics: 401 shows "Sign in", 403 shows "Upgrade" (calls zzUpgrade) in the answer slot, textbook chapter and MCQ banner; network errors show Retry. MCQs keep the free chapter usable when the rest is locked. After sign-in/payment (zz:auth) everything reloads; logout reloads the page so no unlocked content stays in it.
+- Tests: locked view DOM holds no answer text and every chunk response is a bare {"error":"forbidden"}; expiry keeps all local data (localStorage snapshot), renewal unlocks with the same data; MCQ/textbook locked prompts. Progress/notes/bookmarks stay local (keyed by stable question ids) until Stage 7 sync.

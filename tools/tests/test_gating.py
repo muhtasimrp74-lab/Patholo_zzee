@@ -111,10 +111,54 @@ class AccountClient(unittest.TestCase):
     def test_otp_sign_in_unlocks_then_logout(self):
         pg = self.page(); pg.goto('http://127.0.0.1:%d/index.html#/02' % self.port)
         pg.wait_for_selector('#q7 .ans[data-zz-st=error]', state='attached')
-        self.assertIn('locked', pg.text_content('#q7 .ans'))
+        self.assertIn('Sign in', pg.text_content('#q7 .ans'))
         pg.evaluate('()=>zzSignIn()'); pg.fill('#zz-phone', '01712345678'); pg.click('#zz-send')
         pg.wait_for_selector('#zz-code'); pg.fill('#zz-code', '123456'); pg.click('#zz-verify')
         pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')")
-        pg.evaluate('()=>zzAccount.logout()')
+        with pg.expect_navigation(): pg.evaluate('()=>zzAccount.logout()')
         self.assertIsNone(pg.evaluate("()=>localStorage.getItem('zz-rt')"))
         self.assertEqual(pg.evaluate('()=>zzAuthHeaders()'), {})
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class Entitlement(unittest.TestCase):
+    """Locked topics leak nothing; expiry keeps local data; renewal unlocks again with the same data."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def test_expiry_then_renewal_keeps_user_data_and_locked_shows_nothing(self):
+        state = {'ok': True}; bodies = []
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        pg.add_init_script("if(!localStorage.getItem('zz-rt'))localStorage.setItem('zz-rt','rt')")
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(json={'access_token': 'acc', 'refresh_token': 'rt', 'expires_in': 900})
+            if path.startswith('chunks/'):
+                if not state['ok']: bodies.append('{"error":"forbidden"}'); return route.fulfill(status=403, body=bodies[-1], content_type='application/json')
+                b = open(os.path.join(ROOT, 'private-chunks', path[7:]), 'rb').read(); bodies.append(b.decode()); return route.fulfill(body=b, content_type='application/json')
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api)
+        url = 'http://127.0.0.1:%d/index.html#/02' % self.port; pg.goto(url)
+        pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')")
+        pg.evaluate("()=>{zzStore.setItem('vivaQuiz','1');localStorage.setItem('zz-test-note','my note')}")
+        snap = "()=>JSON.stringify(Object.keys(localStorage).filter(k=>k!=='zz-rt').sort().map(k=>[k,localStorage.getItem(k)]))"
+        before = pg.evaluate(snap)
+        secret = json.load(open(os.path.join(ROOT, 'private-chunks', 'q-02.json'), encoding='utf8'))['cards']['q7']
+        sample = re.sub(r'<[^>]+>', ' ', secret).split()[:12]
+        state['ok'] = False; bodies.clear(); pg.reload()
+        pg.wait_for_selector('#q7 .ans.zz-locked button', state='attached')
+        self.assertEqual(pg.text_content('#q7 .ans button'), 'Upgrade')
+        dom = pg.evaluate("()=>document.getElementById('v-02').innerHTML")
+        self.assertNotIn(' '.join(sample[:8]), re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', dom)))
+        self.assertTrue(bodies and all(b == '{"error":"forbidden"}' for b in bodies), 'locked responses carry no content')
+        kept = lambda: [x for x in json.loads(before) if x not in json.loads(pg.evaluate(snap))]
+        self.assertEqual(kept(), [], 'expiry keeps local progress, notes and settings')
+        state['ok'] = True; pg.evaluate("()=>dispatchEvent(new CustomEvent('zz:auth'))")
+        pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')")
+        self.assertEqual(kept(), [], 'renewal keeps the same data')
+    def test_locked_mcqs_keep_free_chapter_and_locked_chapter_prompts(self):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        pg.route('**/api/chunks/**', lambda r: r.fulfill(status=401, json={'error': 'unauthorized'}))
+        pg.goto('http://127.0.0.1:%d/index.html#/mcqs' % self.port)
+        pg.wait_for_selector('.zz-banner button')
+        self.assertEqual(pg.text_content('.zz-banner button'), 'Sign in')
+        n = pg.evaluate('()=>MCQDATA.q.length'); self.assertTrue(0 < n < 884)
+        pg.evaluate("()=>{location.hash='#/textbook/ch05'}"); pg.wait_for_selector('#tbbody .zz-locked button')
+        self.assertEqual(pg.text_content('#tbbody .zz-locked button'), 'Sign in')
