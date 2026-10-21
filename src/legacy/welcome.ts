@@ -114,7 +114,8 @@ window.addEventListener('load', () => { setTimeout(maybe, 900); });
 /* warm-up: once the page is idle, fetch the textbook chapters and decode hero images so later taps feel instant */
 window.addEventListener('load', () => { idle(() => {
   try { const c = netInfo(); if (c && (c.saveData || /2g/.test(c.effectiveType || ''))) return; } catch { /* ignore */ }
-  for (let n = 1; n <= 29; n++) { const u = 'textbook/ch' + (n < 10 ? '0' : '') + n + '.html'; idle(() => { fetch(u, { cache: 'force-cache' }).catch(() => {}); }); }
+  const gated = ((window as unknown as { ZZ_MANIFEST?: { gated?: string[] } | null }).ZZ_MANIFEST || {}).gated || [];  // locked chapters are not static files
+  for (let n = 1; n <= 29; n++) { const id = 'ch' + (n < 10 ? '0' : '') + n; if (gated.indexOf('tb-' + id) >= 0) continue; const u = 'textbook/' + id + '.html'; idle(() => { fetch(u, { cache: 'force-cache' }).catch(() => {}); }); }
   document.querySelectorAll('img').forEach((im) => { if (im.decode) im.decode().catch(() => {}); });
 }); });
 

@@ -44,7 +44,7 @@
  const persist=()=>{if(!sess||sess.review)return;const m=ST();sess.el=elapsed();m.sess=sess;save()};
  const elapsed=()=>sess?(sess.paused?sess.el:(Date.now()-sess.t0)/1000):0;
  const nav=h=>{const t='#/mcqs'+(h?'/'+h:'');if(location.hash===t)mq();else location.hash=t};
- function start(ids,o){o=o||{};if(!ids.length)return;
+ function start(ids,o){o=o||{};if(!ids.length){if(window.zzMcqLocked&&zzMcqLocked())(window.zzUpgrade||window.zzSignIn||Object)();return}
   sess={ids,i:0,ans:{},chk:{},mode:o.mode||'practice',t0:Date.now(),el:0,limit:o.limit||0,scope:o.scope||'Practice',n:ids.length,fl:{}};persist();nav('run')}
  const pickSet=()=>{let a=matches();if(O.shuffle)a=shuf(a);if(O.n>0)a=a.slice(0,O.n);return a.map(q=>q.h)};
  const lim=(n)=>O.tpq?n*O.tpq:0;
@@ -85,8 +85,10 @@
  /* ---------- run / review ---------- */
  let _ri='';
  function cntHtml(s){const n=s.ids.length,nA=s.ids.filter(h=>answered(BY[h],s)).length,f=Object.keys(s.fl||{}).length;return `<b>${nA}</b> of ${n} answered${f?` &nbsp; <b>${f}</b> flagged`:''}`}
+ const usable=s=>{if(!s||!Array.isArray(s.ids))return null;const ids=s.ids.filter(h=>BY[h]);if(!ids.length)return null;
+  if(ids.length!==s.ids.length){const cur=s.ids[s.i];s.ids=ids;s.n=ids.length;s.i=Math.max(0,ids.indexOf(cur));if(s.i<0)s.i=0}return s};
  function runView(review){
-  const s=sess;if(!s){nav();return}const _y=window.scrollY,_k=s.i+(review||s.review?'r':'p');
+  const s=sess=usable(sess);if(!s){nav();return}const _y=window.scrollY,_k=s.i+(review||s.review?'r':'p');
   const q=BY[s.ids[s.i]],n=s.ids.length,rv=!!review||s.review,exam=s.mode==='exam'&&!rv;
   const fb=rv||(!exam&&!!s.chk[q.h]),lock=rv||(!exam&&!!s.chk[q.h]);
   const a=s.ans[q.h],good=fb&&ok(q,a);
@@ -163,7 +165,7 @@ function home(){
   const left=n-att,acc=att?Math.round(right/att*100):0,sba=ty[0][0]?Math.round(ty[0][1]/ty[0][0]*100):null,tf=ty[1][0]?Math.round(ty[1][1]/ty[1][0]*100):null;
   const goal=m.goal||20,td=m.day.d===today()?m.day.n:0,gp=Math.min(100,Math.round(td/goal*100));
   const nMs=m.ms.filter(h=>BY[h]).length,nRev=m.rv.filter(h=>BY[h]).length,nNt=Object.keys(m.nt).filter(h=>BY[h]).length,nRd=Object.keys(m.rd).filter(h=>BY[h]).length;
-  const sv=m.sess,svv=sv&&sv.ids&&sv.ids.length&&!sv.review?sv:null;
+  const sv=m.sess,svv=sv&&!sv.review?usable(sv):null;
   const byC=CH.map((c,ci)=>{const t=c[1].map((tn_,ti)=>{const qs=Q.filter(q=>q.c===ci&&q.t===ti);let a=0,r=0;qs.forEach(q=>{const x=p[q.h];if(x&&x.n){a++;if(x.r)r++}});return{ti,name:tn_,n:qs.length,a,r}});
    return{ci,name:c[0],t,n:t.reduce((x,y)=>x+y.n,0),a:t.reduce((x,y)=>x+y.a,0),r:t.reduce((x,y)=>x+y.r,0)}});
   const weak=byC.flatMap(c=>c.t.map(t=>({...t,ci:c.ci}))).filter(t=>t.a>=3&&t.r/t.a<.7).sort((a,b)=>a.r/a.a-b.r/b.a).slice(0,4);
@@ -280,7 +282,7 @@ function home(){
     else{nOpen.add(h);card.insertAdjacentHTML('beforeend',noteBox(BY[h]));b.setAttribute('aria-expanded','true');const t=card.querySelector('.mx-nt');if(t)t.focus()}
     break}
    case 'goal':{const m=ST();m.goal=+b.dataset.v;save();home();break}
-   case 'resume':sess=ST().sess;if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
+   case 'resume':sess=usable(ST().sess);if(sess){sess.t0=Date.now()-sess.el*1000;nav('run')}break;
    case 'topic':start(topicIds(+b.dataset.c,+b.dataset.t).slice(0,25),{scope:CH[b.dataset.c][1][b.dataset.t]});break;
    case 'chap':start(topicIds(+b.dataset.c).slice(0,25),{scope:CH[b.dataset.c][0]});break;
    case 'topicread':only(b.dataset.c,b.dataset.t);readN=30;readCh=-1;nav('read');break;
@@ -331,10 +333,10 @@ function home(){
  /* ---------- router ---------- */
  function leave(){clearInterval(tid);if(sess&&!sess.review){persist();sess=null}document.body.classList.remove('mx-live')}
  function mq(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='mcqs'){leave();return}
-  if(window.zzMcqLoad&&zzMcqLoad(Q,mq,V,M))return;
+  if(window.zzMcqLoad&&zzMcqLoad(Q,()=>{Q.forEach(q=>{BY[q.h]=q});mq()},V,M))return;
   const r=p[1]||'';clearInterval(tid);if(r!=='run'&&sess&&!sess.review){persist();sess=null}document.body.classList.toggle('mx-live',r==='run'||r==='review');
   V.dataset.mx=r||'home';
-  if(r==='run'){if(!sess||sess.review){const sv=ST().sess;if(sv&&sv.ids&&sv.ids.length){sess=sv;sess.t0=Date.now()-(sess.el||0)*1000}else{sess=null}}if(!sess){nav();return}runView()}
+  if(r==='run'){if(!sess||sess.review){const sv=usable(ST().sess);if(sv){sess=sv;sess.t0=Date.now()-(sess.el||0)*1000}else{sess=null}}if(!sess){nav();return}runView()}
   else if(r==='review'){if(!sess||!sess.review){nav('result');return}runView(true)}
   else if(r==='result')result();
   else if(r==='custom')builder();

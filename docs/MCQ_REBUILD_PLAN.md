@@ -80,4 +80,5 @@ Plan only: nothing in this document is built yet. Audited on branch `ui/premium-
 - **"Due for review" tile** on the MCQ home (up to 20 due questions per session), shown only when something is due and only for questions the visitor can open.
 - **#4 "Fix weak spots" tile:** 10 unanswered or wrong questions from topics under 70% (3+ attempts).
 - **#6 Swipe:** left/right swipe moves between questions in a live session; ignored while annotating, drawing or typing.
+- **Outage fixes (session):** gated questions are indexed when they load; stale or locked saved sessions are trimmed instead of crashing; locked chapters prompt Sign in / Upgrade; repeat visits reuse the user's own copy while their plan is active, so the 60-per-minute limit is no longer hit; 429s are retried.
 - Not yet built: the store-module rewrite (Phase 1), the new session screen (Phase 2), analytics page, search, explanations with images, cloud resume. Gating, chunk loading and storage keys are unchanged.

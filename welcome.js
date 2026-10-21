@@ -212,8 +212,11 @@
 				const c = netInfo();
 				if (c && (c.saveData || /2g/.test(c.effectiveType || ""))) return;
 			} catch {}
+			const gated = (window.ZZ_MANIFEST || {}).gated || [];
 			for (let n = 1; n <= 29; n++) {
-				const u = "textbook/ch" + (n < 10 ? "0" : "") + n + ".html";
+				const id = "ch" + (n < 10 ? "0" : "") + n;
+				if (gated.indexOf("tb-" + id) >= 0) continue;
+				const u = "textbook/" + id + ".html";
 				idle(() => {
 					fetch(u, { cache: "force-cache" }).catch(() => {});
 				});

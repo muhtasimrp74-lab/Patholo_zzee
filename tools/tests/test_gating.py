@@ -489,3 +489,47 @@ class McqLearning(unittest.TestCase):
         self.assertIn('1 mistake to revisit today', pg.text_content('#v-mcqs [data-a=due]'))
         pg.click('#v-mcqs [data-a=due]'); pg.clock.run_for(300)
         self.assertEqual(self.mcq(pg)['sess']['scope'], 'Due for review')
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class McqSession(unittest.TestCase):
+    """MCQ practice after gating: loaded chapters are playable, stale sessions do not crash, locked chapters prompt,
+    repeat visits reuse the user's own copy while the plan is active, and a busy server (429) is retried."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self, signed, seed=None, h='#/mcqs', ents=('mcq',), busy=0):
+        ctx = self.b.new_context(viewport={'width': 390, 'height': 844}, service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        self.errs = []; self.hits = []; self.busy = busy; pg.on('pageerror', lambda e: self.errs.append(str(e)))
+        init = "localStorage.setItem('zzWelcomeAt',String(Date.now()));"
+        if signed: init += "localStorage.setItem('zz-rt','rt');"
+        if seed: init += "if(!sessionStorage.getItem('s')){sessionStorage.setItem('s',1);localStorage.setItem('vivaState',%s)}" % json.dumps(json.dumps(seed))
+        pg.add_init_script(init)
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(json={'access_token': _tok('u1'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'me': return route.fulfill(json={'user': {'id': 'u1'}, 'entitlements': [{'entitlement': e, 'expires_at': 4102444800000} for e in self.ents], 'now': 0})
+            if path.startswith('chunks/'):
+                self.hits.append(path)
+                if not signed: return route.fulfill(status=401, json={'error': 'unauthorized'})
+                if self.busy: self.busy -= 1; return route.fulfill(status=429, headers={'Retry-After': '1'}, json={'error': 'rate_limited'})
+                if 'mcq' not in self.ents: return route.fulfill(status=403, json={'error': 'forbidden'})
+                return route.fulfill(body=open(os.path.join(ROOT, 'private-chunks', path[7:]), 'rb').read(), content_type='application/json')
+            route.fulfill(status=404, json={})
+        self.ents = ents; pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html%s' % (self.port, h)); return pg
+    live = "()=>document.body.classList.contains('mx-live')"
+    def test_paid_chapter_two_is_playable(self):
+        pg = self.page(True); pg.wait_for_function('()=>MCQDATA.q.length===884')
+        pg.evaluate("()=>[...document.querySelectorAll('#v-mcqs [data-a=chap]')][1].click()"); pg.wait_for_function(self.live)
+        pg.keyboard.press('a'); pg.keyboard.press('ArrowRight'); pg.wait_for_timeout(200); self.assertEqual(self.errs, [])
+    def test_stale_session_and_locked_chapter_for_free_visitor(self):
+        g = [q['h'] for q in json.load(open(os.path.join(ROOT, 'private-chunks', 'mcq-02.json')))['q'][:3]]
+        f = [q['h'] for q in json.load(open(os.path.join(ROOT, 'private-chunks', 'mcq-01.json')))['q'][:2]]
+        seed = {'mcq': {'sess': {'ids': g + f, 'i': 0, 'ans': {}, 'chk': {}, 'mode': 'practice', 't0': 0, 'el': 0, 'limit': 0, 'scope': 'Old', 'n': 5, 'fl': {}}}}
+        pg = self.page(False, seed, '#/mcqs/run'); pg.wait_for_function(self.live); pg.wait_for_timeout(300); self.assertEqual(self.errs, [])
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.wait_for_selector('#v-mcqs [data-a=chap]', state='attached')
+        pg.evaluate("()=>[...document.querySelectorAll('#v-mcqs [data-a=chap]')][3].click()"); pg.wait_for_function("()=>document.getElementById('zz-signin').open")
+    def test_repeat_visit_uses_own_copy_while_plan_active_and_busy_is_retried(self):
+        pg = self.page(True, busy=1); pg.wait_for_function('()=>MCQDATA.q.length===884', timeout=20000)
+        n = len(self.hits); self.assertEqual(n, 17, 'one 429 retried once, then 16 chapters')
+        pg.wait_for_function("()=>caches.open('zz-chunks-u1').then(c=>c.keys()).then(k=>k.length===16)")  # copies saved
+        pg.reload(); pg.wait_for_function('()=>MCQDATA.q.length===884'); self.assertEqual(len(self.hits), n, 'no chunk requests on the second visit')
+        self.ents = (); pg.reload(); pg.wait_for_selector('.zz-banner button'); self.assertGreater(len(self.hits), n, 'expired plan: asks the server again')
+        self.assertEqual(pg.evaluate("()=>caches.keys().then(k=>k.filter(x=>x.startsWith('zz-chunks-')))"), [], 'and the copy is wiped')

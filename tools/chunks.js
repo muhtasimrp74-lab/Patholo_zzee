@@ -3,6 +3,14 @@
 (function () {
   var M = window.ZZ_MANIFEST, cache = {};
   var gated = function (id) { return !!M && M.gated.indexOf(id) >= 0; };
+  var KIND = { q: 'qna', mcq: 'mcq', tb: 'textbook' }, entsP = null;
+  function ents() {  // active plan names for the signed-in user, once per page (null when unknown or offline)
+    if (!entsP) entsP = (window.zzAccount && window.zzAccount.signedIn() ? window.zzAccount.me() : Promise.resolve(null)).then(function (m) {
+      if (!m) return null; var t = m.now || Date.now(), o = {};
+      (m.entitlements || []).forEach(function (x) { if (x.expires_at > t) o[x.entitlement] = 1; }); return o;
+    }, function () { return null; });
+    return entsP;
+  }
   var CACHE = 'zz-chunks-';  // per-user Cache Storage of opened gated chunks (Stage 6); the service worker never caches /api/
   window.zzWipeChunks = function (keep) {
     if (!window.caches) return Promise.resolve();
@@ -10,17 +18,33 @@
   };
   function loadChunk(id) {
     if (cache[id]) return cache[id];
-    var url, name;
+    var url, name, kind = KIND[id.split('-')[0]];
+    function net(retried) {
+      return fetch(url, { headers: (window.zzAuthHeaders && window.zzAuthHeaders()) || {}, credentials: 'omit', cache: 'no-store' }).then(function (r) {
+        if (r.status === 429 && !retried) {  // busy: wait as asked (at most 15 s), then try once more
+          var w = Math.min(15, +r.headers.get('Retry-After') || 5);
+          return new Promise(function (ok) { setTimeout(ok, w * 1000); }).then(function () { return net(true); });
+        }
+        if (!r.ok) { var e = new Error('chunk ' + r.status); e.status = r.status; if (r.status === 403 && name) caches.delete(name); throw e; }
+        if (name) r.clone().text().then(function (t) {
+          return caches.open(name).then(function (k) { return k.put(url, new Response(t, { headers: { 'Content-Type': 'application/json', 'x-zz-at': String(Date.now()) } })); });
+        }).catch(function () {});
+        return r.json();
+      });
+    }
     var p = cache[id] = (window.zzAuthReady || Promise.resolve()).then(function () {
       url = (window.ZZ_CHUNK_BASE || (window.ZZ_API || '') + 'api/chunks/') + encodeURIComponent(id) + '.json';
       var u = window.zzAccount && window.zzAccount.uid(); name = gated(id) && u && window.caches ? CACHE + u : null;
-      return fetch(url, { headers: (window.zzAuthHeaders && window.zzAuthHeaders()) || {}, credentials: 'omit', cache: 'no-store' }).then(function (r) {
-        if (!r.ok) { var e = new Error('chunk ' + r.status); e.status = r.status; if (r.status === 403 && name) caches.delete(name); throw e; }
-        if (name) { var c = r.clone(); caches.open(name).then(function (k) { return k.put(url, c); }).catch(function () {}); }
-        return r.json();
-      }, function (err) {  // offline: only this user's own copy of a chunk they opened before
-        if (!name) throw err;
-        return caches.open(name).then(function (k) { return k.match(url); }).then(function (m) { if (!m) throw err; return m.json(); });
+      if (!name) return net();
+      // this user's own copy is used without a request while their plan for it is active (checked once per page via /api/me)
+      // and the copy is under a day old; this keeps a few visits from hitting the server's per-minute chunk limit
+      return Promise.all([caches.open(name).then(function (k) { return k.match(url); }).catch(function () { return null; }), ents()]).then(function (x) {
+        var hit = x[0], e = x[1], age = hit ? Date.now() - (+hit.headers.get('x-zz-at') || 0) : Infinity;
+        if (hit && e && e[kind] && age < 864e5) return hit.json();
+        return net().catch(function (err) {
+          if (hit && (!err.status || err.status === 429)) return hit.json();  // offline or still busy: the copy this user already opened
+          throw err;
+        });
       });
     });
     p.catch(function () { delete cache[id]; });
@@ -57,6 +81,7 @@
   }
   var mcq = 0;  // 0 idle, 1 loading, 2 loaded, 3 failed: the free chapter stays usable
   window.zzMcqReset = function () { if (mcq === 3) mcq = 0; };
+  window.zzMcqLocked = function () { return mcq === 3; };  // read-only: the gated chapters did not load for this visitor
   window.zzMcqLoad = function (Q, done, V, mount) {
     var ids = M ? M.gated.filter(function (x) { return x.indexOf('mcq-') === 0; }).sort() : [];
     if (!ids.length || mcq >= 2) return false;
@@ -107,7 +132,7 @@
   function onRoute() { document.querySelectorAll('.view:not([hidden])').forEach(need); }
   addEventListener('hashchange', function () { setTimeout(onRoute, 0); });
   addEventListener('zz:auth', function () {
-    cache = {}; window.zzMcqReset();
+    cache = {}; entsP = null; window.zzMcqReset();
     document.querySelectorAll('.ans.zz-locked').forEach(function (a) { a.classList.remove('zz-locked'); });
     if (/^#\/(textbook|mcqs)/.test(location.hash)) dispatchEvent(new HashChangeEvent('hashchange')); else onRoute();
   });
