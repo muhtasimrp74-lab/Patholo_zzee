@@ -1,6 +1,6 @@
 (function() {
 	//#region src/legacy/welcome-css.ts
-	var WELCOME_CSS = ".zz-welcome{position:fixed;z-index:70;left:50%;top:calc(12px + env(safe-area-inset-top,0px));transform:translate(-50%,-140%);width:min(440px,calc(100vw - 24px));display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:18px;background:var(--panel,#fff);color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 14px 40px rgba(42,22,39,.28);transition:transform .5s cubic-bezier(.2,.9,.3,1),opacity .4s;opacity:0;font:500 13.5px/1.35 var(--body,system-ui,sans-serif)}.zz-welcome.on{transform:translate(-50%,0);opacity:1}.zz-welcome .zw-i{font-size:24px}.zz-welcome .zw-t{flex:1;display:flex;flex-direction:column;gap:2px}.zz-welcome b{font-size:15px}.zz-welcome span{color:var(--muted,#666)}.zz-welcome button{border:0;background:none;color:inherit;font-size:22px;line-height:1;min-width:36px;min-height:36px;cursor:pointer}.zz-wd{position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(20,14,16,.55);opacity:0;transition:opacity .35s}.zz-wd.on{opacity:1}.zz-wd .zc{width:min(400px,100%);box-sizing:border-box;padding:26px 22px 20px;border-radius:24px;background:var(--panel,#fff);color:var(--text,#222);border:1px solid var(--line,#ddd);box-shadow:0 24px 70px rgba(0,0,0,.4);text-align:center;font:500 14px/1.45 var(--body,system-ui,sans-serif);transform:translateY(14px) scale(.96);transition:transform .45s cubic-bezier(.2,.9,.3,1)}.zz-wd.on .zc{transform:none}.zz-wd .zi{font-size:34px}.zz-wd h2{margin:6px 0 4px;font:400 24px/1.2 var(--serif,Georgia,serif)}.zz-wd p{margin:0 0 14px;color:var(--muted,#666)}.zz-wd label{display:block;text-align:left;font-size:12px;font-weight:600;color:var(--muted,#666);margin:0 0 4px}.zz-wd input{width:100%;box-sizing:border-box;padding:11px 12px;border-radius:12px;border:1px solid var(--line,#ccc);background:var(--bg,#fff);color:inherit;font:inherit;font-size:16px}.zz-wd button{margin-top:14px;width:100%;min-height:46px;border:0;border-radius:999px;background:var(--burgundy2,#93304A);color:#fff;font:600 15px var(--body,system-ui,sans-serif);cursor:pointer}@media(prefers-reduced-motion:reduce){.zz-welcome,.zz-wd,.zz-wd .zc{transition:opacity .2s}}";
+	var WELCOME_CSS = ".zz-welcome{position:fixed;z-index:70;left:50%;top:calc(10px + env(safe-area-inset-top,0px));transform:translate(-50%,-12px);opacity:0;width:min(440px,calc(100vw - 24px));box-sizing:border-box;display:flex;gap:14px;align-items:flex-start;padding:14px 8px 14px 14px;border-radius:18px;background:var(--panel,#FFFDFA);color:var(--text,#2A1627);border:1px solid var(--line,#E8D9E3);box-shadow:0 2px 6px rgba(42,22,39,.06),0 18px 44px rgba(42,22,39,.16);font:400 15px/1.45 var(--body,system-ui,sans-serif);transition:opacity .22s cubic-bezier(.2,.7,.2,1),transform .22s cubic-bezier(.2,.7,.2,1);pointer-events:none;contain:layout paint}.zz-welcome.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}.zz-welcome .zw-i,.zz-wd .zi{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:color-mix(in srgb,var(--burgundy,#7A1F36) 9%,transparent);color:var(--burgundy,#7A1F36)}.zw-night .zw-i,.zz-wd .zw-night .zi,.zw-evening .zw-i,.zz-wd .zw-evening .zi{background:color-mix(in srgb,var(--plum2,#6B2D5C) 12%,transparent);color:var(--plum2,#6B2D5C)}.zz-welcome svg,.zz-wd .zi svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.zz-welcome .zw-t{flex:1;min-width:0;padding-top:1px}.zz-welcome b{display:inline;font:400 1.125rem/1.25 var(--disp,Georgia,serif);letter-spacing:-.005em;color:var(--text,#2A1627)}.zz-welcome .zw-plan{display:inline-block;margin-left:8px;padding:1px 9px;border-radius:999px;font:600 .6875rem/1.7 var(--body,system-ui,sans-serif);font-style:normal;letter-spacing:.02em;vertical-align:2px;border:1px solid var(--line2,#DCC6D3);color:var(--muted,#735F70)}.zz-welcome .zw-plan[hidden]{display:none}.zz-welcome .zw-paid{border-color:transparent;background:var(--burgundy,#7A1F36);color:#fff}.zz-welcome span{display:block;margin-top:3px;color:var(--muted,#735F70);font-size:.875rem;line-height:1.45;overflow-wrap:anywhere}.zz-welcome span a{color:var(--text,#2A1627);font-weight:600;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:3px}.zz-welcome button{flex:none;display:grid;place-items:center;width:44px;height:44px;margin:-10px -2px -10px 0;border:0;border-radius:50%;background:transparent;color:var(--muted,#735F70);cursor:pointer}.zz-welcome button:hover{background:color-mix(in srgb,var(--text,#2A1627) 6%,transparent);color:var(--text,#2A1627)}.zz-welcome button:focus-visible,.zz-welcome a:focus-visible,.zz-wd button:focus-visible{outline:2px solid var(--burgundy,#7A1F36);outline-offset:2px}:root[data-theme=dark] .zz-welcome,:root[data-theme=dark] .zz-wd .zc{box-shadow:0 2px 6px rgba(0,0,0,.4),0 18px 44px rgba(0,0,0,.5)}:root[data-theme=dark] .zz-welcome .zw-i,:root[data-theme=dark] .zz-wd .zi{color:var(--rosy,#D98FA8);background:color-mix(in srgb,var(--rosy,#D98FA8) 14%,transparent)}.zz-wd{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px;background:rgba(28,18,25,.5);backdrop-filter:blur(2px);opacity:0;transition:opacity .22s cubic-bezier(.2,.7,.2,1)}.zz-wd.on{opacity:1}.zz-wd .zc{width:min(400px,100%);box-sizing:border-box;padding:24px;border-radius:20px;background:var(--panel,#FFFDFA);color:var(--text,#2A1627);border:1px solid var(--line,#E8D9E3);box-shadow:0 2px 6px rgba(42,22,39,.08),0 28px 64px rgba(42,22,39,.24);font:400 1rem/1.5 var(--body,system-ui,sans-serif);transform:translateY(8px) scale(.985);transition:transform .22s cubic-bezier(.2,.7,.2,1)}.zz-wd.on .zc{transform:none}.zz-wd .zi{margin-bottom:12px}.zz-wd h2{margin:0 0 6px;font:400 1.75rem/1.15 var(--disp,Georgia,serif);letter-spacing:-.005em}.zz-wd p{margin:0 0 4px;color:var(--muted,#735F70)}.zz-wd label{display:block;margin:16px 0 6px;font-weight:600;font-size:.9375rem}.zz-wd input{display:block;width:100%;box-sizing:border-box;min-height:48px;padding:0 14px;border-radius:10px;border:1px solid var(--line2,#DCC6D3);background:var(--bg,#F8F3EE);color:var(--text,#2A1627);font:inherit;font-size:1.0625rem}.zz-wd input:focus{outline:none;border-color:var(--burgundy,#7A1F36);box-shadow:0 0 0 3px color-mix(in srgb,var(--burgundy,#7A1F36) 12%,transparent)}.zz-wd button{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;margin-top:14px;border:0;border-radius:10px;background:var(--burgundy,#7A1F36);color:#fff;font:600 .9375rem/1 var(--body,system-ui,sans-serif);cursor:pointer}@media (prefers-reduced-motion:reduce){.zz-welcome,.zz-wd,.zz-wd .zc{transition:opacity .01s}.zz-welcome{transform:translate(-50%,0)}.zz-wd .zc{transform:none}}";
 	//#endregion
 	//#region src/legacy/welcome.ts
 	var netInfo = () => navigator.connection;
@@ -26,11 +26,31 @@
 			return {};
 		}
 	};
+	var part = (h = (/* @__PURE__ */ new Date()).getHours()) => h >= 5 && h < 12 ? "morning" : h >= 12 && h < 17 ? "afternoon" : h >= 17 && h < 22 ? "evening" : "night";
 	var greet = () => {
-		const h = (/* @__PURE__ */ new Date()).getHours();
-		return h < 5 ? "Burning the midnight oil" : h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : "Good evening";
+		const p = part();
+		return p === "night" ? "Studying late" : "Good " + p;
 	};
 	var nm = () => (get("zzName") || "").trim().slice(0, 40);
+	var acct = () => window.zzAccount;
+	/** First name only: the name the owner typed, else the account name (but not the generated "User 1234"). */
+	var first = () => {
+		const a = acct(), u = a && a.signedIn && a.signedIn() && a.user ? a.user() : null, d = u && u.display_name || "";
+		return (nm() || (/^User \d{4}$/.test(d) ? "" : d)).trim().split(/\s+/)[0].slice(0, 24);
+	};
+	var ICON = {
+		morning: "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4\"/>",
+		afternoon: "<circle cx=\"12\" cy=\"12\" r=\"4.5\"/><path d=\"M12 3v1.5M12 19.5V21M3 12h1.5M19.5 12H21\"/>",
+		evening: "<path d=\"M3 17h18M6.5 17a5.5 5.5 0 0 1 11 0M12 6.5V9M5.2 9.7l1.4 1.4M18.8 9.7l-1.4 1.4\"/>",
+		night: "<path d=\"M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z\"/>"
+	};
+	var TIPS = [
+		"Say the answer out loud before you open it; recall beats rereading.",
+		"Ten focused minutes a day beats one long cram on the weekend.",
+		"Mark a card as learned only when you could explain it to a friend.",
+		"Mix chapters in Practice: switching topics makes memory stick.",
+		"Revisit your bookmarks the day after you save them."
+	];
 	var idle = (f, timeout = 4e3) => {
 		(window.requestIdleCallback || ((c) => setTimeout(c, 1500)))(f, { timeout });
 	};
@@ -53,16 +73,63 @@
 			l: (s.learned || []).length
 		};
 	}
+	/** The last question studied on this device, read from the page itself (title and where it lives). */
+	function lastCard() {
+		const r = state().recent, id = Array.isArray(r) && typeof r[0] === "string" ? r[0] : "";
+		const c = id ? document.getElementById(id) : null, v = c && c.closest(".view"), h = c && c.querySelector("h4");
+		return c && v && h ? {
+			t: (h.textContent || "").trim(),
+			href: "#/" + v.id.slice(2) + "/" + id
+		} : null;
+	}
+	/** One useful line: continue where you left off, else streak or progress, else a first step, else a short tip. */
+	function usefulLine(sp) {
+		const st = stats(), last = lastCard(), streak = st.n > 1 ? st.n + "-day streak" : "";
+		sp.textContent = "";
+		if (last) {
+			const a = document.createElement("a");
+			a.href = last.href;
+			a.textContent = last.t.length > 48 ? last.t.slice(0, 46).trimEnd() + "…" : last.t;
+			sp.append("Continue: ", a);
+			if (streak) sp.append(" · " + streak);
+		} else if (streak) sp.textContent = "You’re on a " + streak + ". " + (st.l ? st.l + " questions learned so far." : "Keep it going today.");
+		else if (st.l) sp.textContent = st.l + " questions learned so far. One short session builds on that.";
+		else {
+			const a = document.createElement("a");
+			a.href = "#/01";
+			a.textContent = "Start with topic 01";
+			sp.append(a, " — it’s free, and ten minutes is enough.");
+		}
+		if (!sp.textContent) sp.textContent = TIPS[(/* @__PURE__ */ new Date()).getDate() % TIPS.length];
+	}
+	/** Plan badge (free or paid), filled in once the account is known; the banner is an overlay, so nothing shifts. */
+	function planBadge(el) {
+		const a = acct();
+		(window.zzAuthReady || Promise.resolve()).then(() => {
+			if (!a || !a.signedIn || !a.signedIn() || !a.me) return null;
+			return a.me();
+		}).then((m) => {
+			if (!m) return;
+			const t = m.now || Date.now(), on = (m.entitlements || []).filter((e) => e.expires_at > t).map((e) => e.entitlement);
+			el.textContent = on.length >= 3 ? "All access" : on.length ? "Pro: " + on.map((e) => ({
+				qna: "Questions",
+				mcq: "MCQs",
+				textbook: "Textbook"
+			})[e] || e).join(" + ") : "Free plan";
+			el.className = "zw-plan " + (on.length ? "zw-paid" : "zw-free");
+			el.hidden = false;
+		}).catch(() => {});
+	}
 	function banner() {
 		css();
-		const st = stats();
-		const sub = st.n > 1 ? "You’re on a " + st.n + "-day revision streak. Keep it glowing!" : st.l ? st.l + " questions learned so far. One more session builds on that." : "A few questions a day adds up faster than you think.";
+		const p = part(), f = first();
 		const d = document.createElement("div");
-		d.className = "zz-welcome";
+		d.className = "zz-welcome zw-" + p;
 		d.setAttribute("role", "status");
-		d.innerHTML = "<div class=\"zw-i\" aria-hidden=\"true\">✨</div><div class=\"zw-t\"><b></b><span></span></div><button type=\"button\" aria-label=\"Dismiss\">×</button>";
-		d.querySelector("b").textContent = greet() + (nm() ? ", " + nm() : "") + ", welcome back!";
-		d.querySelector("span").textContent = sub;
+		d.innerHTML = "<div class=\"zw-i\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\">" + ICON[p] + "</svg></div><div class=\"zw-t\"><b></b><i class=\"zw-plan\" hidden></i><span></span></div><button type=\"button\" aria-label=\"Dismiss\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6 6 18\"/></svg></button>";
+		d.querySelector("b").textContent = greet() + (f ? ", " + f : "");
+		usefulLine(d.querySelector("span"));
+		planBadge(d.querySelector(".zw-plan"));
 		document.body.appendChild(d);
 		let t;
 		const close = () => {
@@ -70,13 +137,26 @@
 			d.classList.remove("on");
 			setTimeout(() => {
 				d.remove();
-			}, 600);
+			}, 400);
+		};
+		const arm = () => {
+			clearTimeout(t);
+			t = setTimeout(close, 7e3);
 		};
 		d.querySelector("button").onclick = close;
+		d.addEventListener("pointerenter", () => {
+			clearTimeout(t);
+		});
+		d.addEventListener("pointerleave", arm);
+		d.addEventListener("focusin", () => {
+			clearTimeout(t);
+		});
+		d.addEventListener("focusout", arm);
+		d.querySelector("span a")?.addEventListener("click", close);
 		raf2(() => {
 			d.classList.add("on");
 		});
-		t = setTimeout(close, 6e3);
+		arm();
 	}
 	function daily(away) {
 		css();
@@ -85,8 +165,8 @@
 		o.setAttribute("role", "dialog");
 		o.setAttribute("aria-modal", "true");
 		o.setAttribute("aria-labelledby", "zz-wh");
-		o.innerHTML = "<div class=\"zc\"><div class=\"zi\" aria-hidden=\"true\">✨</div><h2 id=\"zz-wh\"></h2><p></p><label for=\"zz-wn\">Your name</label><input id=\"zz-wn\" type=\"text\" maxlength=\"40\" autocomplete=\"given-name\" placeholder=\"Type your name\"><button type=\"button\">Let’s study</button></div>";
-		o.querySelector("h2").textContent = greet() + "!";
+		o.innerHTML = "<div class=\"zc zw-" + part() + "\"><div class=\"zi\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\">" + ICON[part()] + "</svg></div><h2 id=\"zz-wh\"></h2><p></p><label for=\"zz-wn\">What should we call you?</label><input id=\"zz-wn\" type=\"text\" maxlength=\"40\" autocomplete=\"given-name\" placeholder=\"First name\"><button type=\"button\">Start studying</button></div>";
+		o.querySelector("h2").textContent = greet() + (first() ? ", " + first() : "");
 		o.querySelector("p").textContent = away ? "Welcome back — it’s been a little while. Even ten minutes today counts." : st.n > 1 ? "Welcome back! You’re on a " + st.n + "-day revision streak." : "Welcome to your daily revision. A little every day goes a long way.";
 		const inp = o.querySelector("input");
 		inp.value = nm();

@@ -416,3 +416,38 @@ class HomeTopics(unittest.TestCase):
         for r in rows:
             self.assertEqual((r['t'], r['n']), (pages[r['v']]['t'], pages[r['v']]['n']), r['v'])
             if r['s']: self.assertEqual(r['s'], r['n'], r['v'])
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class Greeting(unittest.TestCase):
+    """Premium greeting: part of day from local time, first name, a useful second line, plan badge; phone-sized screen."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def banner(self, hour, seed, signed=False, ents=()):
+        import datetime
+        ctx = self.b.new_context(viewport={'width': 390, 'height': 844}, service_workers='block', timezone_id='Asia/Dhaka'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        t = datetime.datetime(2026, 10, 22, hour, 5, tzinfo=datetime.timezone(datetime.timedelta(hours=6))); pg.clock.install(time=t)
+        seed = dict(seed, zzWelcomeAt=str(int(t.timestamp() * 1000) - 3600000))
+        if signed: seed['zz-rt'] = 'rt'
+        pg.add_init_script('(()=>{const d=%s;for(const k in d)localStorage.setItem(k,d[k])})()' % json.dumps(seed))
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path == 'auth/refresh' and signed: return route.fulfill(json={'access_token': _tok('u1'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'me': return route.fulfill(json={'user': {'id': 'u1', 'display_name': 'User 5678'}, 'entitlements': [{'entitlement': e, 'expires_at': 4102444800000} for e in ents], 'now': 0})
+            route.fulfill(status=401, json={})
+        pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html#/home' % self.port); pg.clock.run_for(2500); pg.wait_for_selector('.zz-welcome.on')
+        pg.wait_for_timeout(300); return pg
+    def test_returning_evening_continue_and_streak(self):
+        pg = self.banner(19, {'vivaState': json.dumps({'streak': {'n': 4}, 'learned': ['q7'], 'recent': ['q7']}), 'zzName': 'Muhtasim Ahmed'})
+        self.assertEqual(pg.text_content('.zz-welcome b'), 'Good evening, Muhtasim')
+        self.assertEqual(pg.get_attribute('.zz-welcome span a', 'href'), '#/02/q7'); self.assertIn('4-day streak', pg.text_content('.zz-welcome span'))
+        box = pg.locator('.zz-welcome').bounding_box(); self.assertLessEqual(box['x'] + box['width'], 390)
+        self.assertEqual(pg.evaluate("()=>getComputedStyle(document.querySelector('.zz-welcome')).position"), 'fixed', 'overlay: no layout shift')
+    def test_new_user_morning_first_step(self):
+        pg = self.banner(8, {'vivaState': '{}'})
+        self.assertEqual(pg.text_content('.zz-welcome b'), 'Good morning'); self.assertEqual(pg.get_attribute('.zz-welcome span a', 'href'), '#/01')
+    def test_late_night_plan_badges(self):
+        pg = self.banner(23, {'vivaState': '{}', 'zzName': 'Ann'}, signed=True, ents=('qna', 'mcq', 'textbook'))
+        self.assertEqual(pg.text_content('.zz-welcome b'), 'Studying late, Ann')
+        pg.wait_for_selector('.zz-welcome .zw-plan:not([hidden])'); self.assertEqual(pg.text_content('.zz-welcome .zw-plan'), 'All access')
+        pg2 = self.banner(14, {'vivaState': '{}'}, signed=True)
+        pg2.wait_for_selector('.zz-welcome .zw-plan:not([hidden])'); self.assertEqual(pg2.text_content('.zz-welcome .zw-plan'), 'Free plan')
+        self.assertEqual(pg2.text_content('.zz-welcome b'), 'Good afternoon', 'no generated "User 5678" name')
