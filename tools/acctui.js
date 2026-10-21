@@ -43,6 +43,8 @@
   }
   function account() {
     if (!M || location.hash !== '#/account') return;
+    // Account lives under Menu: the app's own route mapping does not know this page, so mark the Menu tab here
+    document.querySelectorAll('#bnav a,.nav .links a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#/menu'); });
     if (!window.zzAccount || !zzAccount.signedIn()) {
       M.innerHTML = '<section><h2>Not signed in</h2><p>Topic 01, MCQ chapter 1 and textbook chapter 1 are free. Sign in to open everything your plan includes.</p>' +
         '<div class="zz-row"><button type="button" class="zz-b zz-p" id="zz-a-in">Sign in</button></div></section>';

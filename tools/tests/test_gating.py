@@ -324,6 +324,9 @@ class FrontEnd(unittest.TestCase):
         self.assertEqual(pg.evaluate("()=>getComputedStyle(document.querySelector('#v-02 .zz-vlock button')).backgroundColor"), 'rgb(122, 31, 54)')
     def test_account_page_signed_out_and_in(self):
         pg = self.page(False, '#/account'); pg.wait_for_selector('#v-account:not([hidden]) #zz-a-in')
+        self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('#bnav a.on')].map(a=>a.getAttribute('href'))"), ['#/menu'])
+        pg.evaluate("()=>{location.hash='#/02'}"); pg.wait_for_timeout(200); pg.evaluate("()=>{location.hash='#/account'}"); pg.wait_for_timeout(300)
+        self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('#bnav a.on')].map(a=>a.getAttribute('href'))"), ['#/menu'], 'not the tab you came from')
         pg.click('#zz-a-in'); self.assertTrue(pg.evaluate("()=>document.getElementById('zz-signin').open"))
         self.assertEqual(pg.evaluate("()=>document.getElementById('zz-signin').getAttribute('aria-labelledby')"), 'zz-si-h')
         self.assertTrue(pg.evaluate("()=>getComputedStyle(document.querySelector('#zz-signin .zz-or')).display==='none'"), 'no "or" without Google')
