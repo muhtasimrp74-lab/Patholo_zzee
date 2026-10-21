@@ -87,3 +87,9 @@
 ## Front-end pass (owner request)
 - Found by screenshot review (phone 390x844): sign-in, plan and account dialogs were unstyled browser defaults; locked topics gave no sign until a card was opened; MCQ lock banner sat under the fixed top bar; internal ids ('qna') and US dates on the account screen; legal and account links missing from the visible footer and menu; an "or" divider with no Google button.
 - Fixed: tools/zz.css (app theme variables only, light and dark), labelled dialogs with a close button and focus on the title, notice above locked questions, clearer copy per bundle, plan list with BDT prices, Account as a real page (#/account) with plan names, dates and devices (this device cannot remove itself), footer Legal column + Account link, menu Account button. Tests: gating 20/20 (2 new).
+
+## Launch (owner: "deploy the Worker to production and merge PR 3 to main")
+- No card, SMS provider or gateway: sign-in by phone/email + password (PBKDF2-SHA256, 20k iterations for the free-plan CPU limit, stored per hash; 10 tries/15 min per login, 30/h per IP); SMS codes and Google stay behind /api/config flags.
+- Payments: manual bKash Send Money to 01792529076; buyer submits the TrxID (unique across orders); owner approves in GitHub Actions ("Admin: bKash orders"), which runs the same idempotent settlement as a gateway. Admin API key = HMAC(LEAK_KEY) (token could not write secrets); logs show no personal data, TrxIDs masked.
+- Prices (owner): Question bank 500, MCQ 5,000, Textbook 10,000, Everything 14,000 BDT. Chunks in KV (no card), data in D1, both on the free plan.
+- Production Worker patholo-zzee-app.muhtasimrp74.workers.dev serves app + API; GitHub Pages and patholo-zzee.muhtasimrp74.workers.dev call it cross-origin (CORS allow-list). Deployed only by production.yml (manual, main only). Not done: password reset (owner contact for now), staging.

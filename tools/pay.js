@@ -21,6 +21,26 @@
     init.headers = Object.assign({ 'Content-Type': 'application/json' }, window.zzAuthHeaders ? zzAuthHeaders() : {});
     return fetch(API + path, init).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; return j; }); });
   }
+  function bkash(id, minor, cur, number) {
+    open('<h2 id="zz-pay-h">Pay with bKash</h2><ol class="zz-steps"><li>Open bKash and choose <b>Send Money</b>.</li><li>Send <b>' + money(minor, cur) +
+      '</b> to <b class="zz-num">' + esc(number) + '</b> <button type="button" class="zz-b zz-q zz-copy">Copy number</button></li><li>Type the Transaction ID (TrxID) from the bKash confirmation below.</li></ol>' +
+      '<label for="zz-trx">bKash TrxID</label><input id="zz-trx" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="12" placeholder="e.g. 9K7AB12CDE">' +
+      '<button type="button" id="zz-trx-go" class="zz-b zz-p zz-full">Submit payment</button><p id="zz-trx-st" class="zz-st" role="status">We check every payment by hand and unlock your plan, usually within a few hours.</p>' + LEGAL);
+    var inp = body.querySelector('#zz-trx'), go = body.querySelector('#zz-trx-go'), st = body.querySelector('#zz-trx-st');
+    body.querySelector('.zz-copy').onclick = function () { try { navigator.clipboard.writeText(number); this.textContent = 'Copied'; } catch (e) {} };
+    inp.onkeydown = function (e) { if (e.key === 'Enter') go.click(); };
+    go.onclick = function () {
+      var t = inp.value.trim().toUpperCase();
+      if (!/^[A-Z0-9]{8,12}$/.test(t)) { st.classList.add('zz-bad'); st.textContent = 'A TrxID is 8 to 12 letters and numbers, as shown in bKash.'; return; }
+      go.disabled = true; st.classList.remove('zz-bad'); st.textContent = 'Sending\u2026';
+      api('pay/manual', { method: 'POST', body: JSON.stringify({ order_id: id, trx_id: t }) }).then(function (r) {
+        go.disabled = false;
+        if (r._status === 200) { polling = ''; location.hash = '#/account/order/' + id; return; }
+        st.classList.add('zz-bad');
+        st.textContent = r.error === 'trx_used' ? 'This TrxID has already been used for another order.' : r._status === 404 ? 'This order can no longer be paid. Choose a plan again.' : 'Could not send it. Check your connection and try again.';
+      });
+    };
+  }
   window.zzUpgrade = function () {
     if (!window.zzAccount || !zzAccount.signedIn()) return window.zzSignIn && zzSignIn();
     open('<h2 id="zz-pay-h">Choose a plan</h2><p class="zz-st" role="status">Loading prices\u2026</p>');
@@ -41,8 +61,9 @@
         btn.onclick = function () {
           var msg = body.querySelector('#zz-pay-msg');
           body.querySelectorAll('button[data-b]').forEach(function (x) { x.disabled = true; });
-          msg.classList.remove('zz-bad'); msg.textContent = 'Opening the secure payment page\u2026';
+          msg.classList.remove('zz-bad'); msg.textContent = 'One moment\u2026';
           api('pay/checkout', { method: 'POST', body: JSON.stringify({ bundle: btn.dataset.b }) }).then(function (r) {
+            if (r.manual) { bkash(r.order_id, Math.round(Number(r.amount) * 100), r.currency, r.manual.number); return; }
             if (r.redirect_url) { location.href = r.redirect_url; return; }
             body.querySelectorAll('button[data-b]').forEach(function (x) { x.disabled = false; });
             msg.classList.add('zz-bad'); msg.textContent = 'The payment page did not open. Try again in a moment.';
@@ -63,13 +84,18 @@
           '<p><span>Paid</span>' + money(r.amount_minor, r.currency) + '</p><p><span>Date</span>' + esc(new Date(r.issued_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })) + '</p></div>' +
           '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close()">Done</button>' + LEGAL);
         dispatchEvent(new CustomEvent('zz:auth'));
+      } else if (st === 'pending' && j.manual && !j.order.submitted_at) {
+        bkash(id, j.order.amount_minor, j.order.currency, j.manual.number);
+      } else if (st === 'pending' && j.manual) {
+        open('<h2 id="zz-pay-h">Payment sent for checking</h2><p id="zz-pending" class="zz-st" role="status">Thank you. We check bKash payments by hand and unlock your plan, usually within a few hours. You can close this; the plan opens on its own once approved.</p>' + LEGAL);
+        if (tries < 20) setTimeout(function () { showOrder(id, tries + 1); }, 30000);
       } else if (st === 'pending' && tries < 40) {
         if (!tries) open('<h2 id="zz-pay-h">Confirming your payment</h2><p id="zz-pending" class="zz-st" role="status">Checking with the payment provider. This usually takes under a minute; you can keep this open.</p>' + LEGAL);
         setTimeout(function () { showOrder(id, tries + 1); }, Math.min(3000 + tries * 500, 15000));
       } else if (st === 'pending') {
         open('<h2 id="zz-pay-h">Still confirming</h2><p>The provider has not confirmed yet. Your plan starts as soon as it does; open Account later to check.</p>' + LEGAL);
       } else {
-        open('<h2 id="zz-pay-h">Payment not completed</h2><p>' + (st ? 'The payment was ' + esc(st) + '. You were not charged.' : 'Sign in with the account you paid with to see this order.') + '</p>' +
+        open('<h2 id="zz-pay-h">Payment not completed</h2><p>' + (st === 'failed' && j.manual ? 'We could not match this bKash payment. Check the TrxID and amount, then contact us.' : st ? 'The payment was ' + esc(st) + '. You were not charged.' : 'Sign in with the account you paid with to see this order.') + '</p>' +
           '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close();zzUpgrade()">Choose a plan</button>' + LEGAL);
       }
     });

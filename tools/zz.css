@@ -91,3 +91,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
 @keyframes zz-fade{from{opacity:0}to{opacity:1}}
 @keyframes zz-shine{from{background-position:200% 0,0 0}to{background-position:-200% 0,0 0}}
 @media (prefers-reduced-motion:reduce){.zz-dlg[open],.zz-dlg::backdrop,.zz-lock,.ans[data-zz-st=loading]::before,.zz-skel,.view[data-zz-st=loading] .mx::before{animation:none}.zz-b,.zz-plan,.zz-x,.zz-dlg input{transition:none}}
+.zz-steps{margin:var(--zz-s3) 0 0;padding-left:1.3em;line-height:1.6}
+.zz-steps li{margin:var(--zz-s2) 0}
+.zz-num{font-variant-numeric:tabular-nums;letter-spacing:.02em;font-size:1.05em}
+.zz-copy{min-height:36px;padding:0 var(--zz-s3);margin:0 0 0 var(--zz-s1)!important;font-size:var(--zz-t-xs)}

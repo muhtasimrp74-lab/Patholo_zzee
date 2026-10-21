@@ -149,7 +149,7 @@ export async function order(req: Request, env: Env, id: string): Promise<Respons
     o = await env.DB.prepare(sel).bind(id, c.sub).first();
   }
   const receipt = await env.DB.prepare('SELECT receipt_no, bundle, amount_minor, currency, issued_at FROM receipts WHERE order_id = ?1').bind(id).first();
-  return json({ order: o, receipt });
+  return json({ order: o, receipt, manual: manual(env) ? { method: 'bkash', number: bundles.bkash_number } : null });
 }
 
 /** Public price list for the upgrade dialog (prices are only ever read from here, never from the client). */

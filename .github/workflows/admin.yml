@@ -1,0 +1,33 @@
+# Owner tools for manual bKash payments. Run from GitHub: Actions > "Admin: bKash orders" > Run workflow.
+# Prints no personal data (the repo is public): order id, plan, amount, masked TrxID and times only.
+name: "Admin: bKash orders"
+on:
+  workflow_dispatch:
+    inputs:
+      action: { description: 'What to do', type: choice, options: [list-pending, approve, reject, list-paid], default: list-pending }
+      order_id: { description: 'Order id (for approve or reject), e.g. o1a2b3c...', required: false, default: '' }
+permissions: { contents: read }
+jobs:
+  admin:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env: { LEAK_KEY: '${{ secrets.LEAK_KEY }}', API: 'https://patholo-zzee-app.muhtasimrp74.workers.dev/api/admin/orders', ACT: '${{ inputs.action }}', OID: '${{ inputs.order_id }}' }
+    steps:
+      - name: Run
+        run: |
+          K=$(python3 -c "import hmac,hashlib,os;print(hmac.new(os.environ['LEAK_KEY'].encode(),b'patholo-admin-v1',hashlib.sha256).hexdigest())"); echo "::add-mask::$K"
+          case "$ACT" in
+            list-pending|list-paid) curl -s -H "Authorization: Bearer $K" "$API?status=${ACT#list-}" > r.json ;;
+            approve|reject) echo "$OID" | grep -Eq '^[A-Za-z0-9_-]{1,64}$' || { echo "::error::Enter a valid order id"; exit 1; }
+                            curl -s -X POST -H "Authorization: Bearer $K" -H 'Content-Type: application/json' -d '{}' "$API/$OID/$ACT" > r.json ;;
+          esac
+          python3 - <<'PY'
+          import json, datetime
+          d = json.load(open('r.json')); t = lambda ms: datetime.datetime.utcfromtimestamp(ms / 1000 + 6 * 3600).strftime('%d %b %H:%M') if ms else '-'
+          if 'orders' in d:
+              print('::notice::%d order(s)' % len(d['orders']))
+              for o in d['orders']:
+                  print('::notice::%s | %s | BDT %s | TrxID %s | sent %s (BD time)' % (o['order_id'], o['bundle'], o['amount_minor'] // 100, o['trx_id'] or 'not sent yet', t(o['submitted_at'])))
+          else:
+              print(('::notice::' if 'result' in d else '::error::') + json.dumps(d))
+          PY

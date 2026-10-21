@@ -94,6 +94,7 @@ class AccountClient(unittest.TestCase):
             body = json.loads(r.post_data or '{}') if r.method == 'POST' else {}
             tok = {'access_token': 'acc2', 'refresh_token': 'rt2', 'expires_in': 900, 'user': {'id': 'u1', 'display_name': 'A'}}
             if path == 'auth/refresh': return route.fulfill(status=200 if body.get('refresh_token') == 'rt1' else 401, json=tok)
+            if path == 'config': return route.fulfill(json={'otp': True, 'password': True})
             if path == 'auth/otp/start': return route.fulfill(json={'ok': True})
             if path == 'auth/otp/verify': return route.fulfill(status=200 if body.get('code') == '123456' else 401, json=tok)
             if path == 'auth/logout': return route.fulfill(json={'ok': True})
@@ -281,6 +282,7 @@ class AbuseClient(unittest.TestCase):
             r = route.request; path = r.url.split('/api/')[1]
             if path == 'auth/refresh': return route.fulfill(json={'access_token': _tok('u1234567890'), 'refresh_token': 'rt', 'expires_in': 900})
             if path == 'me': return route.fulfill(json={'user': {'id': 'u1234567890', 'display_name': 'Ann'}, 'entitlements': [], 'now': 0})
+            if path == 'config': return route.fulfill(json={'otp': True, 'password': True})
             if path == 'auth/otp/start': return route.fulfill(json={'ok': True})
             if path == 'auth/otp/verify': return route.fulfill(status=409, json={'error': 'device_limit', 'max': 3, 'removal_token': 'RT', 'devices': [
                 {'device_id': 'device-%d000' % i, 'name': 'Phone %d' % i, 'last_seen_at': 0} for i in range(3)]})
@@ -353,3 +355,43 @@ class FrontEnd(unittest.TestCase):
         self.assertIn('save BDT 300.00', pg.text_content('#zz-pay .zz-plan.zz-best'))
         self.assertEqual(pg.evaluate("()=>getComputedStyle(document.getElementById('zz-pay')).animationName"), 'none', 'reduced motion respected')
         self.assertEqual(pg.evaluate("()=>document.activeElement.id"), 'zz-pay-h', 'focus starts on the title')
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class Launch(unittest.TestCase):
+    """Launch flows: password sign-up/sign-in (no SMS) and manual bKash payment."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close); self.sent = []; self.state = {'submitted': False}
+        def api(route):
+            r = route.request; path = r.url.split('/api/')[1]; body = json.loads(r.post_data or '{}') if r.method == 'POST' else {}
+            tok = {'access_token': _tok('u1'), 'refresh_token': 'rt', 'expires_in': 900, 'user': {'id': 'u1', 'display_name': 'ann'}}
+            if path == 'config': return route.fulfill(json={'otp': False, 'password': True, 'pay': 'bkash'})
+            if path in ('auth/register', 'auth/login'):
+                self.sent.append((path, body.get('login')))
+                if path == 'auth/register' and body.get('login') == 'taken@x.io': return route.fulfill(status=409, json={'error': 'account_exists'})
+                return route.fulfill(json=tok) if body.get('password') == 'correct horse' else route.fulfill(status=401, json={'error': 'wrong_login'})
+            if path == 'bundles': return route.fulfill(json={'bundles': [{'id': 'ALL', 'name': 'ALL', 'price': '14000.00', 'currency': 'BDT'}]})
+            if path == 'pay/checkout': return route.fulfill(json={'order_id': 'o9', 'amount': '14000.00', 'currency': 'BDT', 'manual': {'method': 'bkash', 'number': '01792529076'}})
+            if path == 'pay/manual':
+                self.sent.append((path, body.get('trx_id'))); self.state['submitted'] = True; return route.fulfill(json={'ok': True})
+            if path == 'pay/orders/o9': return route.fulfill(json={'order': {'status': 'pending', 'amount_minor': 1400000, 'currency': 'BDT', 'submitted_at': 1 if self.state['submitted'] else None}, 'receipt': None, 'manual': {'method': 'bkash', 'number': '01792529076'}})
+            if path.startswith('chunks/'): return route.fulfill(status=401, json={'error': 'unauthorized'})
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html#/02' % self.port); return pg
+    def test_password_sign_up_and_sign_in_without_sms(self):
+        pg = self.page(); pg.evaluate('()=>zzSignIn()')
+        self.assertTrue(pg.evaluate("()=>document.getElementById('zz-otp').hidden"), 'no SMS option without a provider')
+        pg.click('#zz-mode'); self.assertEqual(pg.text_content('#zz-pw'), 'Create account')
+        pg.fill('#zz-login', 'taken@x.io'); pg.fill('#zz-pass', 'correct horse'); pg.click('#zz-pw')
+        pg.wait_for_function("()=>document.getElementById('zz-msg').textContent.includes('already exists')")
+        pg.click('#zz-mode'); pg.fill('#zz-pass', 'bad pass 1'); pg.click('#zz-pw'); pg.wait_for_function("()=>document.getElementById('zz-msg').textContent.includes('Wrong')")
+        pg.fill('#zz-pass', 'correct horse'); pg.click('#zz-pw'); pg.wait_for_function('()=>zzAccount.signedIn()')
+        self.assertEqual([p for p, _ in self.sent], ['auth/register', 'auth/login', 'auth/login'])
+    def test_bkash_manual_payment_flow(self):
+        pg = self.page(); pg.evaluate('()=>zzSignIn()'); pg.fill('#zz-login', 'a@x.io'); pg.fill('#zz-pass', 'correct horse'); pg.click('#zz-pw')
+        pg.wait_for_function('()=>zzAccount.signedIn()'); pg.evaluate('()=>zzUpgrade()'); pg.click('#zz-pay button[data-b=ALL]')
+        pg.wait_for_selector('#zz-trx'); txt = pg.text_content('#zz-pay')
+        self.assertIn('01792529076', txt); self.assertIn('BDT 14,000.00', txt); self.assertIn('Send Money', txt)
+        pg.fill('#zz-trx', 'bad!'); pg.click('#zz-trx-go'); self.assertIn('8 to 12', pg.text_content('#zz-trx-st')); self.assertEqual([p for p, _ in self.sent if p == 'pay/manual'], [])
+        pg.fill('#zz-trx', '9k7ab12cde'); pg.click('#zz-trx-go'); pg.wait_for_selector('#zz-pending')
+        self.assertIn(('pay/manual', '9K7AB12CDE'), self.sent); self.assertIn('checking', pg.text_content('#zz-pay').lower())

@@ -45,6 +45,8 @@
     me: function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }); },
     google: function g(idToken) { return post('auth/google', { id_token: idToken, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { g(idToken); }); return j; }); },
+    password: function (login, pw, create) { return post(create ? 'auth/register' : 'auth/login', { login: login, password: pw, device_id: device(), device_name: dname() }).then(function (j) {
+      if (j._status === 200) set(j); else if (j._status === 409 && j.error === 'device_limit' && window.zzDeviceLimit) zzDeviceLimit(j, function () { window.zzSignIn && zzSignIn(); }); return j; }); },
     otpStart: function (phone) { return post('auth/otp/start', { phone: phone }); },
     otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { window.zzSignIn && zzSignIn(); }); return j; }); },
@@ -61,15 +63,39 @@
       dlg = el('dialog', { id: 'zz-signin', class: 'zz-dlg', 'aria-labelledby': 'zz-si-h' });
       var x = el('button', { type: 'button', class: 'zz-x', 'aria-label': 'Close' }, '\u00d7');
       x.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
-      var g = el('div', { id: 'zz-g' }), or = el('p', { class: 'zz-or', hidden: '' }, 'or use your phone');
+      var g = el('div', { id: 'zz-g' }), or = el('p', { class: 'zz-or', hidden: '' }, 'or');
       var ph = el('input', { id: 'zz-phone', type: 'tel', inputmode: 'tel', autocomplete: 'tel', placeholder: '01XXXXXXXXX' });
       var code = el('input', { id: 'zz-code', inputmode: 'numeric', autocomplete: 'one-time-code', maxlength: '8', placeholder: '6-digit code' });
       var send = el('button', { type: 'button', id: 'zz-send', class: 'zz-b zz-p zz-full' }, 'Send code');
       var ver = el('button', { type: 'button', id: 'zz-verify', class: 'zz-b zz-p zz-full' }, 'Sign in');
       var box = el('div', { hidden: '' }), msg = el('p', { id: 'zz-msg', class: 'zz-st', role: 'status' });
       box.append(el('label', { for: 'zz-code' }, 'Code from the SMS'), code, ver);
+      var lg = el('input', { id: 'zz-login', autocomplete: 'username', inputmode: 'email', placeholder: '01XXXXXXXXX or you@example.com' });
+      var pw = el('input', { id: 'zz-pass', type: 'password', autocomplete: 'current-password', placeholder: 'Password' });
+      var go = el('button', { type: 'button', id: 'zz-pw', class: 'zz-b zz-p zz-full' }, 'Sign in');
+      var mode = el('button', { type: 'button', id: 'zz-mode', class: 'zz-b zz-q zz-full' }, 'New here? Create an account');
+      var hint = el('p', { class: 'zz-st', hidden: '' }, 'Use at least 8 characters. Keep it safe: there is no reset by SMS yet.');
+      var otp = el('div', { id: 'zz-otp', hidden: '' }), or2 = el('p', { class: 'zz-or' }, 'or get a code by SMS');
+      otp.append(or2, el('label', { for: 'zz-phone' }, 'Phone number'), ph, send, box);
       dlg.append(x, el('h2', { id: 'zz-si-h' }, 'Sign in'), el('p', {}, 'Open the answers, MCQs and chapters your plan includes. Progress on this device is kept.'),
-        g, or, el('label', { for: 'zz-phone' }, 'Phone number'), ph, send, box, msg);
+        g, or, el('label', { for: 'zz-login' }, 'Phone number or email'), lg, el('label', { for: 'zz-pass' }, 'Password'), pw, hint, go, mode, otp, msg);
+      var creating = false;
+      mode.onclick = function () {
+        creating = !creating; go.textContent = creating ? 'Create account' : 'Sign in'; mode.textContent = creating ? 'Have an account? Sign in' : 'New here? Create an account';
+        pw.setAttribute('autocomplete', creating ? 'new-password' : 'current-password'); hint.hidden = !creating;
+        dlg.querySelector('#zz-si-h').textContent = creating ? 'Create your account' : 'Sign in'; say('');
+      };
+      go.onclick = function () {
+        go.disabled = true; say(creating ? 'Creating your account\u2026' : 'Signing in\u2026');
+        zzAccount.password(lg.value, pw.value, creating).then(function (j) {
+          go.disabled = false;
+          if (j._status === 200 || j._status === 409 && j.error === 'device_limit') { say(''); pw.value = ''; dlg.close(); return; }
+          say(j._status === 429 ? wait(j) : j.error === 'account_exists' ? 'An account with this phone or email already exists. Sign in instead.' :
+            j.error === 'weak_password' ? 'Use at least 8 characters for the password.' : j.error === 'bad_login' ? 'Enter a mobile number like 01712345678 or an email address.' :
+            creating ? 'Could not create the account. Try again.' : 'Wrong phone/email or password.', true);
+        }, function () { go.disabled = false; say('No connection. Try again when you are online.', true); });
+      };
+      pw.onkeydown = function (e) { if (e.key === 'Enter') go.click(); };
       document.body.appendChild(dlg);
       var say = function (t, bad) { msg.textContent = t; msg.classList.toggle('zz-bad', !!bad); };
       var wait = function (j) { return 'Too many tries. Try again in ' + Math.max(1, Math.ceil((j._retry || 60) / 60)) + ' min.'; };
@@ -93,6 +119,7 @@
       code.onkeydown = function (e) { if (e.key === 'Enter') ver.click(); };
       x.onclick = function () { dlg.close(); };
       fetch(API + 'config', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (c) {
+        if (c.otp) otp.hidden = false;
         if (!c.google_client_id) return;
         var s = el('script', { src: 'https://accounts.google.com/gsi/client', async: '' });
         s.onload = function () {
@@ -103,6 +130,6 @@
       }).catch(function () {});
     }
     dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
-    var f = dlg.querySelector('#zz-phone'); if (f) f.focus();
+    var f = dlg.querySelector('#zz-login'); if (f) f.focus();
   };
 })();

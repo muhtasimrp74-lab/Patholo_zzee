@@ -15,6 +15,7 @@
     return fetch(API + 'devices/' + encodeURIComponent(id), { method: 'DELETE', credentials: 'omit', headers: token ? { Authorization: 'Bearer ' + token } : window.zzAuthHeaders() });
   }
   var NAMES = { qna: 'Question bank', mcq: 'MCQ bank', textbook: 'Textbook' };
+  var PLAN = { QNA: 'Question bank', MCQ: 'MCQ bank', TEXTBOOK: 'Textbook', ALL: 'Everything' };
   var day = function (t) { return new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); };
   function devList(list, current) {
     return '<ul id="zz-devs" class="zz-devs">' + list.map(function (d) {
@@ -52,14 +53,20 @@
       return;
     }
     M.innerHTML = '<p class="zz-st" role="status">Loading your account\u2026</p>';
-    Promise.all([zzAccount.me(), fetch(API + 'devices', { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; })]).then(function (x) {
-      var me = x[0] || {}, d = x[1] || {}, u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
+    var get = function (p) { return fetch(API + p, { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; }, function () { return {}; }); };
+    Promise.all([zzAccount.me(), get('devices'), get('pay/orders')]).then(function (x) {
+      var me = x[0] || {}, d = x[1] || {}, ords = (x[2] || {}).orders || [], u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
       var plan = ents.length ? ents.map(function (e) {
         var on = e.expires_at > now;
         return '<li><span>' + esc(NAMES[e.entitlement] || e.entitlement) + '</span><span class="' + (on ? 'zz-ok' : 'zz-gone') + '">' + (on ? 'Until ' : 'Ended ') + esc(day(e.expires_at)) + '</span></li>';
       }).join('') : '<li><span>Free sample</span><span class="zz-gone">No plan yet</span></li>';
       M.innerHTML = '<section><h2>' + esc(u.display_name || 'Your account') + '</h2><p>' + esc(u.email || u.phone || '') + '</p></section>' +
         '<section><h2>Plan</h2><ul>' + plan + '</ul><div class="zz-row"><button type="button" class="zz-b zz-p" id="zz-a-up">' + (ents.length ? 'Renew or add a plan' : 'Choose a plan') + '</button></div></section>' +
+        (ords.length ? '<section><h2>Orders</h2><ul>' + ords.map(function (o) {
+          var st = o.status === 'paid' ? ['Paid', 'zz-ok'] : o.status === 'pending' ? (o.submitted_at ? ['Being checked', 'zz-gone'] : ['Waiting for payment', 'zz-gone']) : o.status === 'failed' ? ['Not approved', 'zz-gone'] : ['Cancelled', 'zz-gone'];
+          return '<li><span>' + esc(PLAN[o.bundle] || o.bundle) + '<small>BDT ' + esc((o.amount_minor / 100).toLocaleString('en-IN')) + ' \u00b7 ' + esc(day(o.created_at)) + '</small></span>' +
+            '<span class="' + st[1] + '">' + st[0] + (o.status === 'pending' && !o.submitted_at || o.status === 'paid' ? ' <a class="zz-b" href="#/account/order/' + esc(o.order_id) + '">' + (o.status === 'paid' ? 'Receipt' : 'Pay') + '</a>' : '') + '</span></li>';
+        }).join('') + '</ul></section>' : '') +
         '<section><h2>Devices</h2><p>Your account works on up to ' + esc(d.max || 3) + ' devices.</p>' + devList(d.devices || [], d.current) + '</section>' +
         '<section><div class="zz-row"><button type="button" class="zz-b" id="zz-a-out">Sign out</button></div>' +
         '<p class="zz-legal"><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></p></section>';

@@ -2137,6 +2137,10 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
 @keyframes zz-fade{from{opacity:0}to{opacity:1}}
 @keyframes zz-shine{from{background-position:200% 0,0 0}to{background-position:-200% 0,0 0}}
 @media (prefers-reduced-motion:reduce){.zz-dlg[open],.zz-dlg::backdrop,.zz-lock,.ans[data-zz-st=loading]::before,.zz-skel,.view[data-zz-st=loading] .mx::before{animation:none}.zz-b,.zz-plan,.zz-x,.zz-dlg input{transition:none}}
+.zz-steps{margin:var(--zz-s3) 0 0;padding-left:1.3em;line-height:1.6}
+.zz-steps li{margin:var(--zz-s2) 0}
+.zz-num{font-variant-numeric:tabular-nums;letter-spacing:.02em;font-size:1.05em}
+.zz-copy{min-height:36px;padding:0 var(--zz-s3);margin:0 0 0 var(--zz-s1)!important;font-size:var(--zz-t-xs)}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -2154,7 +2158,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
 .ans .srcbar-l{color:var(--muted,#666);letter-spacing:.02em}
 .ans .srcbar a{display:inline-flex;align-items:center;padding:6px 13px;border-radius:999px;border:1.5px solid var(--blue,#7a1f36);color:var(--blue,#7a1f36);background:transparent;text-decoration:none;font-weight:700;min-height:32px}
 .ans .srcbar a:hover,.ans .srcbar a:focus-visible{background:var(--blue,#7a1f36);color:#fff;outline:none}
-</style></head><body><script>window.ZZ_MANIFEST={"free":{"mcq":"mcq-01","q":"q-01","tb":"tb-ch01"},"gated":["mcq-02","mcq-03","mcq-04","mcq-05","mcq-06","mcq-07","mcq-08","mcq-09","mcq-10","mcq-11","mcq-12","mcq-13","mcq-14","mcq-15","mcq-16","mcq-17","q-02","q-03","q-04","q-05","q-06","q-07","q-08","q-09","q-10","q-11","q-12","q-13","q-14","q-15","q-c13","q-c14","q-c2","q-c23","q-c3","q-c30","q-c4","q-c5","q-c6","q-c7","q-c9","tb-ch02","tb-ch03","tb-ch04","tb-ch05","tb-ch06","tb-ch07","tb-ch08","tb-ch09","tb-ch10","tb-ch11","tb-ch12","tb-ch13","tb-ch14","tb-ch15","tb-ch16","tb-ch17","tb-ch18","tb-ch19","tb-ch20","tb-ch21","tb-ch22","tb-ch23","tb-ch24","tb-ch25","tb-ch26","tb-ch27","tb-ch28","tb-ch29"]}</script><script>/* Accounts (client). Access token in memory only; refresh token in localStorage 'zz-rt' (trade-off: readable by
+</style></head><body><script>(function(h){if(window.ZZ_API===undefined)window.ZZ_API=/(^|\.)github\.io$/.test(h)||h==="patholo-zzee.muhtasimrp74.workers.dev"?"https://patholo-zzee-app.muhtasimrp74.workers.dev/":""})(location.hostname)</script><script>window.ZZ_MANIFEST={"free":{"mcq":"mcq-01","q":"q-01","tb":"tb-ch01"},"gated":["mcq-02","mcq-03","mcq-04","mcq-05","mcq-06","mcq-07","mcq-08","mcq-09","mcq-10","mcq-11","mcq-12","mcq-13","mcq-14","mcq-15","mcq-16","mcq-17","q-02","q-03","q-04","q-05","q-06","q-07","q-08","q-09","q-10","q-11","q-12","q-13","q-14","q-15","q-c13","q-c14","q-c2","q-c23","q-c3","q-c30","q-c4","q-c5","q-c6","q-c7","q-c9","tb-ch02","tb-ch03","tb-ch04","tb-ch05","tb-ch06","tb-ch07","tb-ch08","tb-ch09","tb-ch10","tb-ch11","tb-ch12","tb-ch13","tb-ch14","tb-ch15","tb-ch16","tb-ch17","tb-ch18","tb-ch19","tb-ch20","tb-ch21","tb-ch22","tb-ch23","tb-ch24","tb-ch25","tb-ch26","tb-ch27","tb-ch28","tb-ch29"]}</script><script>/* Accounts (client). Access token in memory only; refresh token in localStorage 'zz-rt' (trade-off: readable by
    any script on this origin; no custom domain for an HttpOnly cookie). API base: window.ZZ_API ('' = same origin). */
 (function () {
   var API = (window.ZZ_API || '') + 'api/', access = null, user = null, timer = 0;
@@ -2201,6 +2205,8 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     me: function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }); },
     google: function g(idToken) { return post('auth/google', { id_token: idToken, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { g(idToken); }); return j; }); },
+    password: function (login, pw, create) { return post(create ? 'auth/register' : 'auth/login', { login: login, password: pw, device_id: device(), device_name: dname() }).then(function (j) {
+      if (j._status === 200) set(j); else if (j._status === 409 && j.error === 'device_limit' && window.zzDeviceLimit) zzDeviceLimit(j, function () { window.zzSignIn && zzSignIn(); }); return j; }); },
     otpStart: function (phone) { return post('auth/otp/start', { phone: phone }); },
     otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { window.zzSignIn && zzSignIn(); }); return j; }); },
@@ -2217,15 +2223,39 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
       dlg = el('dialog', { id: 'zz-signin', class: 'zz-dlg', 'aria-labelledby': 'zz-si-h' });
       var x = el('button', { type: 'button', class: 'zz-x', 'aria-label': 'Close' }, '\u00d7');
       x.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
-      var g = el('div', { id: 'zz-g' }), or = el('p', { class: 'zz-or', hidden: '' }, 'or use your phone');
+      var g = el('div', { id: 'zz-g' }), or = el('p', { class: 'zz-or', hidden: '' }, 'or');
       var ph = el('input', { id: 'zz-phone', type: 'tel', inputmode: 'tel', autocomplete: 'tel', placeholder: '01XXXXXXXXX' });
       var code = el('input', { id: 'zz-code', inputmode: 'numeric', autocomplete: 'one-time-code', maxlength: '8', placeholder: '6-digit code' });
       var send = el('button', { type: 'button', id: 'zz-send', class: 'zz-b zz-p zz-full' }, 'Send code');
       var ver = el('button', { type: 'button', id: 'zz-verify', class: 'zz-b zz-p zz-full' }, 'Sign in');
       var box = el('div', { hidden: '' }), msg = el('p', { id: 'zz-msg', class: 'zz-st', role: 'status' });
       box.append(el('label', { for: 'zz-code' }, 'Code from the SMS'), code, ver);
+      var lg = el('input', { id: 'zz-login', autocomplete: 'username', inputmode: 'email', placeholder: '01XXXXXXXXX or you@example.com' });
+      var pw = el('input', { id: 'zz-pass', type: 'password', autocomplete: 'current-password', placeholder: 'Password' });
+      var go = el('button', { type: 'button', id: 'zz-pw', class: 'zz-b zz-p zz-full' }, 'Sign in');
+      var mode = el('button', { type: 'button', id: 'zz-mode', class: 'zz-b zz-q zz-full' }, 'New here? Create an account');
+      var hint = el('p', { class: 'zz-st', hidden: '' }, 'Use at least 8 characters. Keep it safe: there is no reset by SMS yet.');
+      var otp = el('div', { id: 'zz-otp', hidden: '' }), or2 = el('p', { class: 'zz-or' }, 'or get a code by SMS');
+      otp.append(or2, el('label', { for: 'zz-phone' }, 'Phone number'), ph, send, box);
       dlg.append(x, el('h2', { id: 'zz-si-h' }, 'Sign in'), el('p', {}, 'Open the answers, MCQs and chapters your plan includes. Progress on this device is kept.'),
-        g, or, el('label', { for: 'zz-phone' }, 'Phone number'), ph, send, box, msg);
+        g, or, el('label', { for: 'zz-login' }, 'Phone number or email'), lg, el('label', { for: 'zz-pass' }, 'Password'), pw, hint, go, mode, otp, msg);
+      var creating = false;
+      mode.onclick = function () {
+        creating = !creating; go.textContent = creating ? 'Create account' : 'Sign in'; mode.textContent = creating ? 'Have an account? Sign in' : 'New here? Create an account';
+        pw.setAttribute('autocomplete', creating ? 'new-password' : 'current-password'); hint.hidden = !creating;
+        dlg.querySelector('#zz-si-h').textContent = creating ? 'Create your account' : 'Sign in'; say('');
+      };
+      go.onclick = function () {
+        go.disabled = true; say(creating ? 'Creating your account\u2026' : 'Signing in\u2026');
+        zzAccount.password(lg.value, pw.value, creating).then(function (j) {
+          go.disabled = false;
+          if (j._status === 200 || j._status === 409 && j.error === 'device_limit') { say(''); pw.value = ''; dlg.close(); return; }
+          say(j._status === 429 ? wait(j) : j.error === 'account_exists' ? 'An account with this phone or email already exists. Sign in instead.' :
+            j.error === 'weak_password' ? 'Use at least 8 characters for the password.' : j.error === 'bad_login' ? 'Enter a mobile number like 01712345678 or an email address.' :
+            creating ? 'Could not create the account. Try again.' : 'Wrong phone/email or password.', true);
+        }, function () { go.disabled = false; say('No connection. Try again when you are online.', true); });
+      };
+      pw.onkeydown = function (e) { if (e.key === 'Enter') go.click(); };
       document.body.appendChild(dlg);
       var say = function (t, bad) { msg.textContent = t; msg.classList.toggle('zz-bad', !!bad); };
       var wait = function (j) { return 'Too many tries. Try again in ' + Math.max(1, Math.ceil((j._retry || 60) / 60)) + ' min.'; };
@@ -2249,6 +2279,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
       code.onkeydown = function (e) { if (e.key === 'Enter') ver.click(); };
       x.onclick = function () { dlg.close(); };
       fetch(API + 'config', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (c) {
+        if (c.otp) otp.hidden = false;
         if (!c.google_client_id) return;
         var s = el('script', { src: 'https://accounts.google.com/gsi/client', async: '' });
         s.onload = function () {
@@ -2259,7 +2290,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
       }).catch(function () {});
     }
     dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
-    var f = dlg.querySelector('#zz-phone'); if (f) f.focus();
+    var f = dlg.querySelector('#zz-login'); if (f) f.focus();
   };
 })();
 </script><script>/* Gated content loader. window.ZZ_MANIFEST is null in the full build and {free, gated} in the gated build.
@@ -2404,6 +2435,26 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     init.headers = Object.assign({ 'Content-Type': 'application/json' }, window.zzAuthHeaders ? zzAuthHeaders() : {});
     return fetch(API + path, init).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; return j; }); });
   }
+  function bkash(id, minor, cur, number) {
+    open('<h2 id="zz-pay-h">Pay with bKash</h2><ol class="zz-steps"><li>Open bKash and choose <b>Send Money</b>.</li><li>Send <b>' + money(minor, cur) +
+      '</b> to <b class="zz-num">' + esc(number) + '</b> <button type="button" class="zz-b zz-q zz-copy">Copy number</button></li><li>Type the Transaction ID (TrxID) from the bKash confirmation below.</li></ol>' +
+      '<label for="zz-trx">bKash TrxID</label><input id="zz-trx" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="12" placeholder="e.g. 9K7AB12CDE">' +
+      '<button type="button" id="zz-trx-go" class="zz-b zz-p zz-full">Submit payment</button><p id="zz-trx-st" class="zz-st" role="status">We check every payment by hand and unlock your plan, usually within a few hours.</p>' + LEGAL);
+    var inp = body.querySelector('#zz-trx'), go = body.querySelector('#zz-trx-go'), st = body.querySelector('#zz-trx-st');
+    body.querySelector('.zz-copy').onclick = function () { try { navigator.clipboard.writeText(number); this.textContent = 'Copied'; } catch (e) {} };
+    inp.onkeydown = function (e) { if (e.key === 'Enter') go.click(); };
+    go.onclick = function () {
+      var t = inp.value.trim().toUpperCase();
+      if (!/^[A-Z0-9]{8,12}$/.test(t)) { st.classList.add('zz-bad'); st.textContent = 'A TrxID is 8 to 12 letters and numbers, as shown in bKash.'; return; }
+      go.disabled = true; st.classList.remove('zz-bad'); st.textContent = 'Sending\u2026';
+      api('pay/manual', { method: 'POST', body: JSON.stringify({ order_id: id, trx_id: t }) }).then(function (r) {
+        go.disabled = false;
+        if (r._status === 200) { polling = ''; location.hash = '#/account/order/' + id; return; }
+        st.classList.add('zz-bad');
+        st.textContent = r.error === 'trx_used' ? 'This TrxID has already been used for another order.' : r._status === 404 ? 'This order can no longer be paid. Choose a plan again.' : 'Could not send it. Check your connection and try again.';
+      });
+    };
+  }
   window.zzUpgrade = function () {
     if (!window.zzAccount || !zzAccount.signedIn()) return window.zzSignIn && zzSignIn();
     open('<h2 id="zz-pay-h">Choose a plan</h2><p class="zz-st" role="status">Loading prices\u2026</p>');
@@ -2424,8 +2475,9 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
         btn.onclick = function () {
           var msg = body.querySelector('#zz-pay-msg');
           body.querySelectorAll('button[data-b]').forEach(function (x) { x.disabled = true; });
-          msg.classList.remove('zz-bad'); msg.textContent = 'Opening the secure payment page\u2026';
+          msg.classList.remove('zz-bad'); msg.textContent = 'One moment\u2026';
           api('pay/checkout', { method: 'POST', body: JSON.stringify({ bundle: btn.dataset.b }) }).then(function (r) {
+            if (r.manual) { bkash(r.order_id, Math.round(Number(r.amount) * 100), r.currency, r.manual.number); return; }
             if (r.redirect_url) { location.href = r.redirect_url; return; }
             body.querySelectorAll('button[data-b]').forEach(function (x) { x.disabled = false; });
             msg.classList.add('zz-bad'); msg.textContent = 'The payment page did not open. Try again in a moment.';
@@ -2446,13 +2498,18 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
           '<p><span>Paid</span>' + money(r.amount_minor, r.currency) + '</p><p><span>Date</span>' + esc(new Date(r.issued_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })) + '</p></div>' +
           '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close()">Done</button>' + LEGAL);
         dispatchEvent(new CustomEvent('zz:auth'));
+      } else if (st === 'pending' && j.manual && !j.order.submitted_at) {
+        bkash(id, j.order.amount_minor, j.order.currency, j.manual.number);
+      } else if (st === 'pending' && j.manual) {
+        open('<h2 id="zz-pay-h">Payment sent for checking</h2><p id="zz-pending" class="zz-st" role="status">Thank you. We check bKash payments by hand and unlock your plan, usually within a few hours. You can close this; the plan opens on its own once approved.</p>' + LEGAL);
+        if (tries < 20) setTimeout(function () { showOrder(id, tries + 1); }, 30000);
       } else if (st === 'pending' && tries < 40) {
         if (!tries) open('<h2 id="zz-pay-h">Confirming your payment</h2><p id="zz-pending" class="zz-st" role="status">Checking with the payment provider. This usually takes under a minute; you can keep this open.</p>' + LEGAL);
         setTimeout(function () { showOrder(id, tries + 1); }, Math.min(3000 + tries * 500, 15000));
       } else if (st === 'pending') {
         open('<h2 id="zz-pay-h">Still confirming</h2><p>The provider has not confirmed yet. Your plan starts as soon as it does; open Account later to check.</p>' + LEGAL);
       } else {
-        open('<h2 id="zz-pay-h">Payment not completed</h2><p>' + (st ? 'The payment was ' + esc(st) + '. You were not charged.' : 'Sign in with the account you paid with to see this order.') + '</p>' +
+        open('<h2 id="zz-pay-h">Payment not completed</h2><p>' + (st === 'failed' && j.manual ? 'We could not match this bKash payment. Check the TrxID and amount, then contact us.' : st ? 'The payment was ' + esc(st) + '. You were not charged.' : 'Sign in with the account you paid with to see this order.') + '</p>' +
           '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close();zzUpgrade()">Choose a plan</button>' + LEGAL);
       }
     });
@@ -4518,6 +4575,7 @@ if ('serviceWorker' in navigator) {
     return fetch(API + 'devices/' + encodeURIComponent(id), { method: 'DELETE', credentials: 'omit', headers: token ? { Authorization: 'Bearer ' + token } : window.zzAuthHeaders() });
   }
   var NAMES = { qna: 'Question bank', mcq: 'MCQ bank', textbook: 'Textbook' };
+  var PLAN = { QNA: 'Question bank', MCQ: 'MCQ bank', TEXTBOOK: 'Textbook', ALL: 'Everything' };
   var day = function (t) { return new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); };
   function devList(list, current) {
     return '<ul id="zz-devs" class="zz-devs">' + list.map(function (d) {
@@ -4555,14 +4613,20 @@ if ('serviceWorker' in navigator) {
       return;
     }
     M.innerHTML = '<p class="zz-st" role="status">Loading your account\u2026</p>';
-    Promise.all([zzAccount.me(), fetch(API + 'devices', { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; })]).then(function (x) {
-      var me = x[0] || {}, d = x[1] || {}, u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
+    var get = function (p) { return fetch(API + p, { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; }, function () { return {}; }); };
+    Promise.all([zzAccount.me(), get('devices'), get('pay/orders')]).then(function (x) {
+      var me = x[0] || {}, d = x[1] || {}, ords = (x[2] || {}).orders || [], u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
       var plan = ents.length ? ents.map(function (e) {
         var on = e.expires_at > now;
         return '<li><span>' + esc(NAMES[e.entitlement] || e.entitlement) + '</span><span class="' + (on ? 'zz-ok' : 'zz-gone') + '">' + (on ? 'Until ' : 'Ended ') + esc(day(e.expires_at)) + '</span></li>';
       }).join('') : '<li><span>Free sample</span><span class="zz-gone">No plan yet</span></li>';
       M.innerHTML = '<section><h2>' + esc(u.display_name || 'Your account') + '</h2><p>' + esc(u.email || u.phone || '') + '</p></section>' +
         '<section><h2>Plan</h2><ul>' + plan + '</ul><div class="zz-row"><button type="button" class="zz-b zz-p" id="zz-a-up">' + (ents.length ? 'Renew or add a plan' : 'Choose a plan') + '</button></div></section>' +
+        (ords.length ? '<section><h2>Orders</h2><ul>' + ords.map(function (o) {
+          var st = o.status === 'paid' ? ['Paid', 'zz-ok'] : o.status === 'pending' ? (o.submitted_at ? ['Being checked', 'zz-gone'] : ['Waiting for payment', 'zz-gone']) : o.status === 'failed' ? ['Not approved', 'zz-gone'] : ['Cancelled', 'zz-gone'];
+          return '<li><span>' + esc(PLAN[o.bundle] || o.bundle) + '<small>BDT ' + esc((o.amount_minor / 100).toLocaleString('en-IN')) + ' \u00b7 ' + esc(day(o.created_at)) + '</small></span>' +
+            '<span class="' + st[1] + '">' + st[0] + (o.status === 'pending' && !o.submitted_at || o.status === 'paid' ? ' <a class="zz-b" href="#/account/order/' + esc(o.order_id) + '">' + (o.status === 'paid' ? 'Receipt' : 'Pay') + '</a>' : '') + '</span></li>';
+        }).join('') + '</ul></section>' : '') +
         '<section><h2>Devices</h2><p>Your account works on up to ' + esc(d.max || 3) + ' devices.</p>' + devList(d.devices || [], d.current) + '</section>' +
         '<section><div class="zz-row"><button type="button" class="zz-b" id="zz-a-out">Sign out</button></div>' +
         '<p class="zz-legal"><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></p></section>';
