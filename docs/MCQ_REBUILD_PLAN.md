@@ -74,3 +74,10 @@ Plan only: nothing in this document is built yet. Audited on branch `ui/premium-
 3. **Phase 3 — Learning features.** Spaced repetition, weak-area "Fix it" set, review filters. *Checklist:* repetition dates computed in local time; wrong answers resurface; review filters match counts.
 4. **Phase 4 — Analytics and search.** Per-chapter analytics page, search. *Checklist:* numbers match `vivaState.mcq.p`; search finds stems with Unicode text; works offline for opened chapters.
 5. **Phase 5 — Content and cloud.** Explanations with images (content work), cloud resume, bookmarks hub. *Checklist:* images lazy-load and fit 390 px; resume on a second device; leak checks still pass for new content.
+
+## Executed so far (branch `ui/premium-greeting`)
+- **#2 Spaced repetition for wrong answers:** a wrong answer is due again after 1 day; each later correct answer pushes it to 3, 7 and 21 days, then it counts as mastered. Stored additively as `vivaState.mcq.sr` (`{id: {s: step, d: due time}}`), so it syncs with the rest of the progress.
+- **"Due for review" tile** on the MCQ home (up to 20 due questions per session), shown only when something is due and only for questions the visitor can open.
+- **#4 "Fix weak spots" tile:** 10 unanswered or wrong questions from topics under 70% (3+ attempts).
+- **#6 Swipe:** left/right swipe moves between questions in a live session; ignored while annotating, drawing or typing.
+- Not yet built: the store-module rewrite (Phase 1), the new session screen (Phase 2), analytics page, search, explanations with images, cloud resume. Gating, chunk loading and storage keys are unchanged.

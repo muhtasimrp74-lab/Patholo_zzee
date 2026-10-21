@@ -451,3 +451,41 @@ class Greeting(unittest.TestCase):
         pg2 = self.banner(14, {'vivaState': '{}'}, signed=True)
         pg2.wait_for_selector('.zz-welcome .zw-plan:not([hidden])'); self.assertEqual(pg2.text_content('.zz-welcome .zw-plan'), 'Free plan')
         self.assertEqual(pg2.text_content('.zz-welcome b'), 'Good afternoon', 'no generated "User 5678" name')
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class McqLearning(unittest.TestCase):
+    """MCQ quick wins: wrong answers are scheduled for review (1, 3, 7, 21 days) and come back as 'Due for review'; swipe moves between questions."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def mcq(self, pg):
+        return pg.evaluate("()=>{try{return (JSON.parse(zzStore.getItem('vivaState')||'{}').mcq)||{}}catch(e){return {}}}")
+    def test_wrong_answer_returns_as_due_and_swipe_moves(self):
+        import datetime
+        ctx = self.b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        pg.clock.install(time=datetime.datetime(2026, 10, 22, 10, 0, tzinfo=datetime.timezone.utc))
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()))")
+        pg.route('**/api/**', lambda r: r.fulfill(status=401, json={}))
+        pg.goto('http://127.0.0.1:%d/index.html#/mcqs' % self.port); pg.clock.run_for(1500); pg.wait_for_selector('#v-mcqs [data-a=quick]')
+        self.assertEqual(pg.locator('#v-mcqs [data-a=due]').count(), 0)
+        pg.click('#v-mcqs [data-a=quick]'); pg.wait_for_function("()=>document.body.classList.contains('mx-live')")
+        for _ in range(10):  # answer with 'a' until one is wrong (true/false items ignore letter keys: move on)
+            pg.keyboard.press('a'); pg.clock.run_for(200)
+            if self.mcq(pg).get('sr'): break
+            pg.keyboard.press('ArrowRight'); pg.clock.run_for(200)
+        sr = self.mcq(pg)['sr']; self.assertEqual(len(sr), 1)
+        due = list(sr.values())[0]['d']; now = pg.evaluate('()=>Date.now()')
+        self.assertAlmostEqual((due - now) / 864e5, 1, delta=0.01)
+        i0 = self.mcq(pg)['sess']['i']
+        swipe = """()=>{const el=document.querySelector('#v-mcqs .mx');const t=(x)=>new Touch({identifier:1,target:el,clientX:x,clientY:400});
+            el.dispatchEvent(new TouchEvent('touchstart',{touches:[t(320)],changedTouches:[t(320)],bubbles:true}));
+            el.dispatchEvent(new TouchEvent('touchend',{touches:[],changedTouches:[t(120)],bubbles:true}))}"""
+        pg.evaluate("()=>document.body.classList.add('an-on')"); pg.evaluate(swipe); pg.clock.run_for(200)
+        self.assertEqual(self.mcq(pg)['sess']['i'], i0, 'no swipe while annotating'); pg.evaluate("()=>document.body.classList.remove('an-on')")
+        pg.evaluate("""()=>{const el=document.querySelector('#v-mcqs .mx');const t=(x)=>new Touch({identifier:1,target:el,clientX:x,clientY:400});
+            el.dispatchEvent(new TouchEvent('touchstart',{touches:[t(320)],changedTouches:[t(320)],bubbles:true}));
+            el.dispatchEvent(new TouchEvent('touchend',{touches:[],changedTouches:[t(120)],bubbles:true}))}""")
+        pg.clock.run_for(200); self.assertEqual(self.mcq(pg)['sess']['i'], min(i0 + 1, 9), 'swipe left = next question')
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.clock.run_for(25 * 3600 * 1000); pg.evaluate("()=>{location.hash='#/mcqs/'};"); pg.clock.run_for(300)
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.clock.run_for(500); pg.wait_for_selector('#v-mcqs [data-a=due]')
+        self.assertIn('1 mistake to revisit today', pg.text_content('#v-mcqs [data-a=due]'))
+        pg.click('#v-mcqs [data-a=due]'); pg.clock.run_for(300)
+        self.assertEqual(self.mcq(pg)['sess']['scope'], 'Due for review')

@@ -11,3 +11,7 @@
 | 2026-10-22 | Branch `ui/premium-greeting` starts from the unpublished home "Topics and progress" fix. | That fix was waiting for a token; one PR keeps both front-end changes together. |
 | 2026-10-22 | No push or pull request from this session. | The GitHub token was deleted after the last task and none was provided; work is committed on the local branch, ready to push and open as a PR. |
 | 2026-10-22 | MCQ rebuild delivered as a plan only (`docs/MCQ_REBUILD_PLAN.md`). | As requested; keeps storage keys, ids and gating unchanged by design. |
+| 2026-10-22 | "Execute the MCQ plan" done as the highest-value, lowest-risk items inside the existing module (spaced repetition, due tile, weak-spot set, swipe) instead of the full rewrite. | A full rewrite of a 40 KB module in one pass would risk progress data and annotation features; the roadmap phases stay the path for the rest. |
+| 2026-10-22 | Review intervals 1, 3, 7, 21 days; mastered after the fourth correct review. | Standard expanding intervals; short enough to matter before exams. |
+| 2026-10-22 | Swipe needs 70 px horizontal travel within 600 ms and is disabled while annotation mode is on or when touching a canvas, input or the palette. | Prevents accidental page changes while drawing or writing notes. |
+| 2026-10-22 | New progress field `vivaState.mcq.sr` only adds data; no existing key changes. | Keeps current progress and cloud sync safe. |

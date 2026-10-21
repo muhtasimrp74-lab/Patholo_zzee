@@ -19,7 +19,9 @@
   x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
   grid:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>',
   go:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>'};
+ const SR=[1,3,7,21],DAYMS=864e5;
  const record=(q,good)=>{const m=ST(),p=m.p[q.h]=m.p[q.h]||{n:0,k:0};p.n++;if(good)p.k++;p.r=good?1:0;p.ts=Date.now();if(!good&&!m.ms.includes(q.h))m.ms.push(q.h);
+  {const sr=m.sr=m.sr||{},x=sr[q.h];if(!good)sr[q.h]={s:0,d:Date.now()+SR[0]*DAYMS};else if(x){const k=x.s+1;if(k>=SR.length)delete sr[q.h];else sr[q.h]={s:k,d:Date.now()+SR[k]*DAYMS}}}
   if(m.day.d!==today())m.day={d:today(),n:0};m.day.n++;window.actLog&&window.actLog(1);save()};
  const stOf=q=>{const m=ST(),p=m.p[q.h],a=[];a.push(!p||!p.n?'new':p.r?'right':'wrong');if(m.bm.includes(q.h))a.push('bm');if(q.w||q.k)a.push('key');a.push(m.rd[q.h]?'read':'unread');if(m.rv.includes(q.h))a.push('rev');if(m.nt[q.h])a.push('nt');if(m.ms.includes(q.h))a.push('ms');return a};
 
@@ -150,6 +152,9 @@
  function review(i){const l=ST().last;if(!l){nav();return}sess={ids:l.ids,ans:l.ans,chk:{},mode:l.mode,i:+i||0,review:true,scope:l.scope,limit:0,t0:Date.now(),el:0};nav('review')}
 
  /* ---------- home ---------- */
+ const dueIds=()=>{const sr=ST().sr||{},t=Date.now();return Object.keys(sr).filter(h=>sr[h].d<=t&&BY[h]).sort((x,y)=>sr[x].d-sr[y].d)};
+ const weakIds=()=>{const p=P(),by={};Q.forEach(q=>{const x=p[q.h];if(!x||!x.n)return;const k=tk(q),o=by[k]=by[k]||{a:0,r:0};o.a++;if(x.r)o.r++});
+  const bad=new Set(Object.keys(by).filter(k=>by[k].a>=3&&by[k].r/by[k].a<.7));return shuf(Q.filter(q=>bad.has(tk(q))&&!(p[q.h]&&p[q.h].r)).map(q=>q.h)).slice(0,10)};
  function stats(){const p=P();let att=0,right=0,wrong=0;Q.forEach(q=>{const x=p[q.h];if(x&&x.n){att++;x.r?right++:wrong++}});return{att,right,wrong}}
 function home(){
   const m=ST(),p=P(),n=Q.length;
@@ -182,7 +187,7 @@ function home(){
    ${svv?`<button type="button" class="mx-resume" data-a="resume"><span><small>Pick up where you left off</small>${E(svv.scope)} · question ${svv.i+1} of ${svv.ids.length}</span>${ic.go}</button>`:''}
    <button type="button" class="mx-next" data-a="${nx[0]}" ${nx[1]!==''?`data-c="${nx[1]}" data-t="${nx[2]}"`:''}><span><small>Suggested next</small><b>${nx[3]}</b>${nx[4]}</span>${ic.go}</button>
    <p class="mx-h">Practise</p>
-   <div class="mx-tiles">${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Mistake bank','Every question you got wrong, kept until you remove it',nMs?'':'disabled','t5',nMs||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}${tile('revl','Revise later',nRev?'Questions you flagged to come back to':'Flag questions with Revise later',nRev?'':'disabled','t7',nRev||'')}${tile('mynotes','My notes',nNt?'Read every question you wrote a note on':'Add notes under any question',nNt?'':'disabled','t8',nNt||'')}</div>
+   <div class="mx-tiles">${dueIds().length?tile('due','Due for review',dueIds().length+' mistake'+(dueIds().length>1?'s':'')+' to revisit today','','t1 mx-due'):''}${weakIds().length?tile('fix','Fix weak spots',weakIds().length+' questions from your weakest topics','','t2 mx-fix'):''}${tile('quick','Quick 10','Mixed questions, answer shown after each','','t1')}${tile('custom','Custom practice','Pick topics, type, paper, status','','t2')}${tile('mock','Mock paper','20 questions, 30 minutes, marked at the end','','t3')}${tile('read','Reading mode','All questions with the answers shown','','t4')}${tile('mist','Mistake bank','Every question you got wrong, kept until you remove it',nMs?'':'disabled','t5',nMs||'')}${tile('saved','Bookmarks',m.bm.length+' saved',m.bm.length?'':'disabled','t6',m.bm.length||'')}${tile('revl','Revise later',nRev?'Questions you flagged to come back to':'Flag questions with Revise later',nRev?'':'disabled','t7',nRev||'')}${tile('mynotes','My notes',nNt?'Read every question you wrote a note on':'Add notes under any question',nNt?'':'disabled','t8',nNt||'')}</div>
    ${weak.length?`<p class="mx-h">Weak spots</p><div class="mx-weak">${weak.map(t=>`<button type="button" data-a="topic" data-c="${t.ci}" data-t="${t.ti}"><span>${E(t.name)}</span><small>${t.r}/${t.a}</small><em>${Math.round(t.r/t.a*100)}%</em></button>`).join('')}</div>`:''}
    <p class="mx-h">Browse by chapter</p><div class="mx-chs">${byC.map(c=>`<details class="mx-chd"><summary><span><b>${E(c.name)}</b><small>${c.n} questions · ${c.a?Math.round(c.r/c.a*100)+'% right of '+c.a+' tried':'not started'}</small></span>${seg2(c)}</summary>
     <div class="mx-tps">${c.t.map(t=>`<div class="mx-tp"><span>${E(t.name)}<small>${t.n} · ${t.a?Math.round(t.r/t.a*100)+'% right':'new'}</small></span><button type="button" data-a="topic" data-c="${c.ci}" data-t="${t.ti}">Practise</button><button type="button" data-a="topicread" data-c="${c.ci}" data-t="${t.ti}">Read</button></div>`).join('')}
@@ -256,6 +261,8 @@ function home(){
   if(!b){const sg=e.target.closest('.mx-seg button[data-v]');if(sg){const g=sg.parentNode.dataset.o,v=sg.dataset.v;O[g]=g==='mode'?v:g==='shuffle'?v==='1':+v;refresh()}return}
   const a=b.dataset.a,s=sess;
   switch(a){
+   case 'due':reset();start(dueIds().slice(0,20),{scope:'Due for review'});break;
+   case 'fix':reset();start(weakIds(),{scope:'Weak spots'});break;
    case 'quick':reset();start(shuf(Q.filter(q=>!(P()[q.h]&&P()[q.h].r)).map(q=>q.h)).slice(0,10),{scope:'Quick 10'});break;
    case 'custom':nav('custom');break;
    case 'mock':{const ids=shuf(Q.filter(q=>!q.y).map(q=>q.h)).slice(0,5).concat(shuf(Q.filter(q=>q.y).map(q=>q.h)).slice(0,15));start(shuf(ids),{mode:'exam',limit:1800,scope:'Mock paper'});break}
@@ -309,6 +316,10 @@ function home(){
  M.addEventListener('input',e=>{const t=e.target;if(t.id==='mx-q'){F.txt=t.value.trim().toLowerCase();refresh()}
   else if(t.classList&&t.classList.contains('mx-nt')){const h=t.dataset.h,v=t.value;clearTimeout(ntT);ntT=setTimeout(()=>saveNote(h,v),400)}});
  M.addEventListener('focusout',e=>{const t=e.target;if(t.classList&&t.classList.contains('mx-nt'))saveNote(t.dataset.h,t.value)});
+ {let sx=0,sy=0,st=0;M.addEventListener('touchstart',e=>{const t=e.touches[0];sx=t.clientX;sy=t.clientY;st=Date.now()},{passive:true});
+  M.addEventListener('touchend',e=>{const B=document.body.classList;if(!sess||!B.contains('mx-live')||B.contains('an-on')||e.target.closest('textarea,input,.mx-pal,canvas,svg'))return;  // never while annotating or drawing
+  const t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;
+   if(Date.now()-st<600&&Math.abs(dx)>70&&Math.abs(dy)<Math.abs(dx)*.5)step(dx<0?1:-1)},{passive:true})}
  addEventListener('keydown',e=>{if(!sess||document.body.classList.contains('mx-live')===false||/INPUT|TEXTAREA/.test(e.target.tagName)||(e.target.closest&&e.target.closest('.mx-qa')))return;
   const q=BY[sess.ids[sess.i]],rv=sess.review,exam=sess.mode==='exam'&&!rv,k=e.key;
   if(k==='ArrowRight'){step(1)}else if(k==='ArrowLeft'){step(-1)}
