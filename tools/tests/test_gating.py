@@ -162,3 +162,35 @@ class Entitlement(unittest.TestCase):
         n = pg.evaluate('()=>MCQDATA.q.length'); self.assertTrue(0 < n < 884)
         pg.evaluate("()=>{location.hash='#/textbook/ch05'}"); pg.wait_for_selector('#tbbody .zz-locked button')
         self.assertEqual(pg.text_content('#tbbody .zz-locked button'), 'Sign in')
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class PayClient(unittest.TestCase):
+    """pay.js against a mocked API: upgrade -> checkout redirect; return page shows pending, re-checks, then the receipt."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close); self.n = 0; self.sent = []
+        pg.add_init_script("localStorage.setItem('zz-rt','rt')")
+        def api(route):
+            r = route.request; path = r.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(json={'access_token': 'acc', 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'bundles': return route.fulfill(json={'bundles': [{'id': 'ALL', 'name': 'Everything (1 year)', 'price': '1200.00', 'currency': 'BDT'}]})
+            if path == 'pay/checkout':
+                self.sent.append(json.loads(r.post_data)); return route.fulfill(json={'order_id': 'o1', 'redirect_url': 'http://127.0.0.1:%d/terms.html' % self.port})
+            if path == 'pay/orders/o1':
+                self.n += 1
+                if self.n < 3: return route.fulfill(json={'order': {'status': 'pending'}, 'receipt': None})
+                return route.fulfill(json={'order': {'status': 'paid'}, 'receipt': {'receipt_no': 'R0000001', 'bundle': 'ALL', 'amount_minor': 120000, 'currency': 'BDT', 'issued_at': 0}})
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api); return pg
+    def test_upgrade_starts_checkout_with_bundle_only(self):
+        pg = self.page(); pg.goto('http://127.0.0.1:%d/index.html#/01' % self.port)
+        pg.wait_for_function('()=>zzAccount.signedIn()'); pg.evaluate('()=>zzUpgrade()')
+        with pg.expect_navigation(): pg.click('#zz-pay button[data-b=ALL]')
+        self.assertEqual(self.sent, [{'bundle': 'ALL'}])
+        self.assertTrue(pg.url.endswith('/terms.html')); self.assertIn('DRAFT', pg.content())
+    def test_pending_rechecks_then_shows_receipt(self):
+        pg = self.page(); pg.goto('http://127.0.0.1:%d/index.html#/account/order/o1' % self.port)
+        pg.wait_for_selector('#zz-pending'); pg.wait_for_selector('#zz-receipt', timeout=20000)
+        self.assertIn('R0000001', pg.text_content('#zz-receipt')); self.assertIn('1200.00 BDT', pg.text_content('#zz-receipt'))
+        self.assertGreaterEqual(self.n, 3)
+        self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('#zz-pay .zz-legal a')].map(a=>a.getAttribute('href'))"), ['terms.html', 'refund.html', 'privacy.html'])

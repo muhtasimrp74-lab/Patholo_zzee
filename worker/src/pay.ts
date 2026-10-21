@@ -146,3 +146,9 @@ export async function order(req: Request, env: Env, id: string): Promise<Respons
   const receipt = await env.DB.prepare('SELECT receipt_no, bundle, amount_minor, currency, issued_at FROM receipts WHERE order_id = ?1').bind(id).first();
   return json({ order: o, receipt });
 }
+
+/** Public price list for the upgrade dialog (prices are only ever read from here, never from the client). */
+export function bundleList() {
+  const names = bundles.names as Record<string, string>;
+  return { currency: bundles.currency, bundles: Object.entries(BUNDLES).map(([id, b]) => ({ id, name: names[id], price: b.price.toFixed(2), currency: bundles.currency })) };
+}

@@ -1,6 +1,6 @@
 import { getChunk } from './chunks.ts';
 import { google, otpStart, otpVerify, refresh, logout, me } from './auth.ts';
-import { checkout, ipn, payReturn, order } from './pay.ts';
+import { checkout, ipn, payReturn, order, bundleList } from './pay.ts';
 import { json, preflight, withCors, type Env } from './http.ts';
 
 export default {
@@ -20,6 +20,7 @@ export default {
     if (m && req.method === 'GET') res = await getChunk(req, env, m[1]);
     else if (o && req.method === 'GET') res = await order(req, env, o[1]);
     else if (url.pathname === '/api/me' && req.method === 'GET') res = await me(req, env);
+    else if (url.pathname === '/api/bundles' && req.method === 'GET') res = json(bundleList(), 200, { 'Cache-Control': 'public, max-age=300' });
     else if (url.pathname === '/api/config' && req.method === 'GET') res = json({ google_client_id: env.GOOGLE_CLIENT_ID || null }, 200, { 'Cache-Control': 'public, max-age=300' });
     else if (req.method === 'POST' && Object.hasOwn(post, url.pathname))
       res = /^application\/json\b/.test(req.headers.get('Content-Type') ?? '') ? await post[url.pathname](req, env) : json({ error: 'json_required' }, 415);

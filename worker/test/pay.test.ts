@@ -119,3 +119,9 @@ test('renewal extends from the current expiry', async () => {
   paid(j2.order_id, 'R2', '500.00'); await ipn('R2', j2.order_id);
   assert.equal(ents()[0].expires_at, first + 365 * DAY);
 });
+
+test('public bundle list comes from the server config', async () => {
+  const j = await (await call('/api/bundles')).json() as { bundles: { id: string; price: string; currency: string }[] };
+  assert.deepEqual(j.bundles.map((b) => b.id), ['QNA', 'MCQ', 'TEXTBOOK', 'ALL']);
+  assert.equal(j.bundles[3].price, '1200.00');
+});
