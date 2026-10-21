@@ -36,7 +36,7 @@ test('password login is rate limited (10 per login per 15 min) with Retry-After'
 test('bKash manual: instructions, TrxID once only, owner approval grants once, masked admin list', async () => {
   const tok = ((await (await reg('buyer@x.io')).json()) as { access_token: string }).access_token, A = { Authorization: 'Bearer ' + tok };
   const co = await (await call('/api/pay/checkout', { bundle: 'ALL' }, A)).json() as { order_id: string; amount: string; manual: { number: string }; redirect_url?: string };
-  assert.equal(co.amount, '14000.00'); assert.equal(co.manual.number, '01792529076'); assert.equal(co.redirect_url, undefined);
+  assert.equal(co.amount, '14000.00'); assert.equal(co.manual.number, '01843890254'); assert.equal(co.redirect_url, undefined);
   assert.equal((await call('/api/pay/manual', { order_id: co.order_id, trx_id: 'bad id!' }, A)).status, 400);
   assert.equal((await call('/api/pay/manual', { order_id: co.order_id, trx_id: 'ab12cd34ef' }, A)).status, 200);
   const co2 = await (await call('/api/pay/checkout', { bundle: 'QNA' }, A)).json() as { order_id: string };

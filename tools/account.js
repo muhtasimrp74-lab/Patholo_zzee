@@ -72,13 +72,20 @@
       box.append(el('label', { for: 'zz-code' }, 'Code from the SMS'), code, ver);
       var lg = el('input', { id: 'zz-login', autocomplete: 'username', inputmode: 'email', placeholder: '01XXXXXXXXX or you@example.com' });
       var pw = el('input', { id: 'zz-pass', type: 'password', autocomplete: 'current-password', placeholder: 'Password' });
+      var pwrap = el('div', { class: 'zz-pwwrap' }), eye = el('button', { type: 'button', id: 'zz-eye', class: 'zz-eye', 'aria-label': 'Show password', 'aria-pressed': 'false', 'aria-controls': 'zz-pass' });
+      eye.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></svg>'; pwrap.append(pw, eye);
+      eye.onclick = function () {  // show or hide the password while typing; focus stays in the field
+        var show = pw.type === 'password'; pw.type = show ? 'text' : 'password';
+        eye.setAttribute('aria-pressed', String(show)); eye.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
+        eye.innerHTML = show ? '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3l18 18M10.6 5.6A9.8 9.8 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3.2 4M6.2 6.9C3.9 8.6 2.5 12 2.5 12S6 18.5 12 18.5c1.7 0 3.2-.5 4.5-1.2M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>' : '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></svg>'; pw.focus();
+      };
       var go = el('button', { type: 'button', id: 'zz-pw', class: 'zz-b zz-p zz-full' }, 'Sign in');
       var mode = el('button', { type: 'button', id: 'zz-mode', class: 'zz-b zz-q zz-full' }, 'New here? Create an account');
       var hint = el('p', { class: 'zz-st', hidden: '' }, 'Use at least 8 characters. Keep it safe: there is no reset by SMS yet.');
       var otp = el('div', { id: 'zz-otp', hidden: '' }), or2 = el('p', { class: 'zz-or' }, 'or get a code by SMS');
       otp.append(or2, el('label', { for: 'zz-phone' }, 'Phone number'), ph, send, box);
       dlg.append(x, el('h2', { id: 'zz-si-h' }, 'Sign in'), el('p', {}, 'Open the answers, MCQs and chapters your plan includes. Progress on this device is kept.'),
-        g, or, el('label', { for: 'zz-login' }, 'Phone number or email'), lg, el('label', { for: 'zz-pass' }, 'Password'), pw, hint, go, mode, otp, msg);
+        g, or, el('label', { for: 'zz-login' }, 'Phone number or email'), lg, el('label', { for: 'zz-pass' }, 'Password'), pwrap, hint, go, mode, otp, msg);
       var creating = false;
       mode.onclick = function () {
         creating = !creating; go.textContent = creating ? 'Create account' : 'Sign in'; mode.textContent = creating ? 'Have an account? Sign in' : 'New here? Create an account';
@@ -89,7 +96,7 @@
         go.disabled = true; say(creating ? 'Creating your account\u2026' : 'Signing in\u2026');
         zzAccount.password(lg.value, pw.value, creating).then(function (j) {
           go.disabled = false;
-          if (j._status === 200 || j._status === 409 && j.error === 'device_limit') { say(''); pw.value = ''; dlg.close(); return; }
+          if (j._status === 200 || j._status === 409 && j.error === 'device_limit') { say(''); pw.value = ''; if (pw.type !== 'password') eye.click(); dlg.close(); return; }
           say(j._status === 429 ? wait(j) : j.error === 'account_exists' ? 'An account with this phone or email already exists. Sign in instead.' :
             j.error === 'weak_password' ? 'Use at least 8 characters for the password.' : j.error === 'bad_login' ? 'Enter a mobile number like 01712345678 or an email address.' :
             creating ? 'Could not create the account. Try again.' : 'Wrong phone/email or password.', true);
