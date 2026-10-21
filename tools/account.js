@@ -13,9 +13,13 @@
     return fetch(API + path, { method: 'POST', credentials: 'omit', headers: Object.assign({ 'Content-Type': 'application/json' }, h || {}), body: JSON.stringify(body || {}) })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; j._retry = r.headers.get('Retry-After'); return j; }); });
   }
+  function sub(t) { try { return JSON.parse(atob(t.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))).sub; } catch (e) { return null; } }
   function set(j) {
     access = j.access_token || null; if (j.user) user = j.user;
     LS.set('zz-rt', j.refresh_token || null); if (!access) user = null;
+    var u = access ? sub(access) : null;
+    LS.set('zz-uid', u);  // last signed-in user: names the offline chunk cache; other users' caches are wiped
+    if (window.zzWipeChunks) zzWipeChunks(u);
     clearTimeout(timer); if (access) timer = setTimeout(refresh, ((j.expires_in || 900) - 120) * 1000);
     dispatchEvent(new CustomEvent('zz:auth', { detail: { signedIn: !!access } }));
   }
@@ -35,12 +39,13 @@
   window.zzAuthHeaders = function () { return access ? { Authorization: 'Bearer ' + access } : {}; };
   window.zzAccount = {
     user: function () { return user; }, signedIn: function () { return !!access; }, refresh: refresh, device: device,
+    uid: function () { return (access && sub(access)) || LS.get('zz-uid'); },
     me: function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }); },
     google: function (idToken) { return post('auth/google', { id_token: idToken, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
     otpStart: function (phone) { return post('auth/otp/start', { phone: phone }); },
     otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
     // reload afterwards so no unlocked content stays in the page
-    logout: function () { var h = window.zzAuthHeaders(); set({}); return post('auth/logout', {}, h).catch(function () {}).then(function () { location.reload(); }); },
+    logout: function () { var h = window.zzAuthHeaders(); set({}); return post('auth/logout', {}, h).catch(function () {}).then(function () { return window.zzWipeChunks && zzWipeChunks(null); }).then(function () { location.reload(); }); },
   };
   window.zzAuthReady = LS.get('zz-rt') ? refresh() : Promise.resolve(false);
 

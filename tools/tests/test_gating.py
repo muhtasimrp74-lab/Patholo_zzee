@@ -194,3 +194,44 @@ class PayClient(unittest.TestCase):
         self.assertIn('R0000001', pg.text_content('#zz-receipt')); self.assertIn('1200.00 BDT', pg.text_content('#zz-receipt'))
         self.assertGreaterEqual(self.n, 3)
         self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('#zz-pay .zz-legal a')].map(a=>a.getAttribute('href'))"), ['terms.html', 'refund.html', 'privacy.html'])
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class OfflineCache(unittest.TestCase):
+    """Opened gated chunks are cached per user; readable offline; logout, expiry and a different user wipe them."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self):
+        import base64
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close); self.mode = {'net': 'ok', 'user': 'u1'}
+        tok = lambda u: 'h.' + base64.urlsafe_b64encode(json.dumps({'sub': u}).encode()).decode().rstrip('=') + '.s'
+        pg.add_init_script("if(!sessionStorage.getItem('once')){sessionStorage.setItem('once',1);localStorage.setItem('zz-rt','rt')}")
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path.startswith('auth/'):
+                if path == 'auth/logout': return route.fulfill(json={'ok': True})
+                return route.fulfill(json={'access_token': tok(self.mode['user']), 'refresh_token': 'rt', 'expires_in': 900})
+            if path.startswith('chunks/'):
+                if self.mode['net'] == 'down': return route.abort()
+                if self.mode['net'] == 'expired': return route.fulfill(status=403, json={'error': 'forbidden'})
+                return route.fulfill(body=open(os.path.join(ROOT, 'private-chunks', path[7:]), 'rb').read(), content_type='application/json')
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html#/02' % self.port)
+        pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')"); return pg
+    keys = "()=>caches.keys()"
+    read = "()=>{zzWipe=0;dispatchEvent(new CustomEvent('zz:auth'));return new Promise(r=>setTimeout(()=>r(!document.querySelector('#v-02 .ans[data-zz]')),1500))}"
+    def test_offline_read_then_logout_wipes(self):
+        pg = self.page(); pg.wait_for_function("()=>caches.keys().then(k=>k.includes('zz-chunks-u1'))")
+        self.mode['net'] = 'down'
+        self.assertTrue(pg.evaluate("()=>new Promise(r=>{document.querySelectorAll('#v-02 .ans').forEach(a=>{a.innerHTML='';a.setAttribute('data-zz','q-02')});dispatchEvent(new CustomEvent('zz:auth'));setTimeout(()=>r(!document.querySelector('#v-02 .ans[data-zz]')),1500)})"), 'readable offline')
+        self.mode['net'] = 'ok'
+        with pg.expect_navigation(): pg.evaluate('()=>zzAccount.logout()')
+        self.assertEqual([k for k in pg.evaluate(self.keys) if k.startswith('zz-chunks-')], [])
+    def test_expiry_wipes_and_second_user_cannot_read(self):
+        pg = self.page(); pg.wait_for_function("()=>caches.keys().then(k=>k.includes('zz-chunks-u1'))")
+        self.mode['user'] = 'u2'; pg.evaluate('()=>zzAccount.refresh()')
+        pg.wait_for_function("()=>caches.keys().then(k=>!k.includes('zz-chunks-u1'))")
+        self.mode['net'] = 'down'
+        self.assertFalse(pg.evaluate("()=>caches.open('zz-chunks-u2').then(c=>c.keys()).then(k=>k.length)"), 'u2 has no copy of u1 data')
+        self.mode['net'] = 'ok'; pg.evaluate("()=>{document.querySelectorAll('#v-02 .ans').forEach(a=>{a.innerHTML='';a.setAttribute('data-zz','q-02')});dispatchEvent(new CustomEvent('zz:auth'))}")
+        pg.wait_for_function("()=>caches.keys().then(k=>k.includes('zz-chunks-u2'))")
+        self.mode['net'] = 'expired'; pg.evaluate("()=>{document.querySelectorAll('#v-02 .ans').forEach(a=>{a.innerHTML='';a.setAttribute('data-zz','q-02')});dispatchEvent(new CustomEvent('zz:auth'))}")
+        pg.wait_for_function("()=>caches.keys().then(k=>!k.includes('zz-chunks-u2'))")

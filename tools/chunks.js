@@ -3,12 +3,26 @@
 (function () {
   var M = window.ZZ_MANIFEST, cache = {};
   var gated = function (id) { return !!M && M.gated.indexOf(id) >= 0; };
+  var CACHE = 'zz-chunks-';  // per-user Cache Storage of opened gated chunks (Stage 6); the service worker never caches /api/
+  window.zzWipeChunks = function (keep) {
+    if (!window.caches) return Promise.resolve();
+    return caches.keys().then(function (ks) { return Promise.all(ks.filter(function (k) { return k.indexOf(CACHE) === 0 && k !== CACHE + keep; }).map(function (k) { return caches.delete(k); })); });
+  };
   function loadChunk(id) {
     if (cache[id]) return cache[id];
+    var url, name;
     var p = cache[id] = (window.zzAuthReady || Promise.resolve()).then(function () {
-      return fetch((window.ZZ_CHUNK_BASE || (window.ZZ_API || '') + 'api/chunks/') + encodeURIComponent(id) + '.json', { headers: (window.zzAuthHeaders && window.zzAuthHeaders()) || {}, credentials: 'omit', cache: 'no-store' });
-    })
-      .then(function (r) { if (!r.ok) { var e = new Error('chunk ' + r.status); e.status = r.status; throw e; } return r.json(); });
+      url = (window.ZZ_CHUNK_BASE || (window.ZZ_API || '') + 'api/chunks/') + encodeURIComponent(id) + '.json';
+      var u = window.zzAccount && window.zzAccount.uid(); name = gated(id) && u && window.caches ? CACHE + u : null;
+      return fetch(url, { headers: (window.zzAuthHeaders && window.zzAuthHeaders()) || {}, credentials: 'omit', cache: 'no-store' }).then(function (r) {
+        if (!r.ok) { var e = new Error('chunk ' + r.status); e.status = r.status; if (r.status === 403 && name) caches.delete(name); throw e; }
+        if (name) { var c = r.clone(); caches.open(name).then(function (k) { return k.put(url, c); }).catch(function () {}); }
+        return r.json();
+      }, function (err) {  // offline: only this user's own copy of a chunk they opened before
+        if (!name) throw err;
+        return caches.open(name).then(function (k) { return k.match(url); }).then(function (m) { if (!m) throw err; return m.json(); });
+      });
+    });
     p.catch(function () { delete cache[id]; });
     return p;
   }
