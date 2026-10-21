@@ -5,8 +5,9 @@
   var gated = function (id) { return !!M && M.gated.indexOf(id) >= 0; };
   function loadChunk(id) {
     if (cache[id]) return cache[id];
-    var h = (window.zzAuthHeaders && window.zzAuthHeaders()) || {};
-    var p = cache[id] = fetch((window.ZZ_CHUNK_BASE || 'chunks/') + encodeURIComponent(id) + '.json', { headers: h, credentials: 'omit', cache: 'no-store' })
+    var p = cache[id] = (window.zzAuthReady || Promise.resolve()).then(function () {
+      return fetch((window.ZZ_CHUNK_BASE || (window.ZZ_API || '') + 'api/chunks/') + encodeURIComponent(id) + '.json', { headers: (window.zzAuthHeaders && window.zzAuthHeaders()) || {}, credentials: 'omit', cache: 'no-store' });
+    })
       .then(function (r) { if (!r.ok) { var e = new Error('chunk ' + r.status); e.status = r.status; throw e; } return r.json(); });
     p.catch(function () { delete cache[id]; });
     return p;
@@ -60,6 +61,7 @@
   window.zzNeed = need;
   function onRoute() { document.querySelectorAll('.view:not([hidden])').forEach(need); }
   addEventListener('hashchange', function () { setTimeout(onRoute, 0); });
+  addEventListener('zz:auth', function () { cache = {}; onRoute(); });
   document.addEventListener('click', function (e) {
     var c = e.target.closest && e.target.closest('.card');
     if (c && c.querySelector('.ans[data-zz]:not([data-zz-st=loading])')) need(c);

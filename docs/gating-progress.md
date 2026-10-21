@@ -38,3 +38,7 @@
 - Note: checking out a pre-Stage-1 branch and fast-forwarding past Stage 1 deletes the ignored private sources from the working tree; after any branch switch or sandbox reset run tools/restore_private.sh.
 
 ## Stage 3: IN PROGRESS
+- Worker: POST /api/auth/google (RS256 vs Google JWKS, aud, iss, exp, verified email), /api/auth/otp/start|verify (provider adapter: Twilio Verify, mock in tests), /api/auth/refresh (rotate every time; reuse of a rotated token revokes the family), /api/auth/logout (revokes family), GET /api/me, GET /api/config. POSTs require JSON (forces CORS preflight).
+- Migration 0002: devices, sessions (hashed refresh token, family, device, expires/rotated/revoked), otp_challenges (hashed phone + code, attempts, expiry, consumed), rate_limits. OTP: 10 min, single use, 5 attempts; 3 per number per 15 min (sliding), 10 per IP per hour (IP stored only as HMAC); 429 + Retry-After.
+- Tokens: access JWT 15 min (stateless, memory only); refresh 30 days in localStorage 'zz-rt' (trade-off: readable by scripts on the origin; no custom domain for an HttpOnly cookie). Cross-tab refresh serialized with navigator.locks so tabs never reuse a token.
+- Client tools/account.js: device id, refresh on load (chunk loads wait for it), sign-in dialog (Google button via GIS when /api/config has a client id; phone OTP), logout. Phones normalized to E.164 (+880), Bangla/Arabic/Devanagari digits accepted.

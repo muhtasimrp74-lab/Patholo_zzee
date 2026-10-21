@@ -81,3 +81,40 @@ class Loader(unittest.TestCase):
         pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')")
 
 if __name__ == '__main__': unittest.main()
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class AccountClient(unittest.TestCase):
+    """account.js against a mocked API: refresh on load, OTP sign-in, bearer on chunk loads, logout."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self, rt=None):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close); self.calls = []
+        if rt: pg.add_init_script("localStorage.setItem('zz-rt', %s)" % json.dumps(rt))
+        def api(route):
+            r = route.request; path = r.url.split('/api/')[1]; self.calls.append((path, r.headers.get('authorization')))
+            body = json.loads(r.post_data or '{}') if r.method == 'POST' else {}
+            tok = {'access_token': 'acc2', 'refresh_token': 'rt2', 'expires_in': 900, 'user': {'id': 'u1', 'display_name': 'A'}}
+            if path == 'auth/refresh': return route.fulfill(status=200 if body.get('refresh_token') == 'rt1' else 401, json=tok)
+            if path == 'auth/otp/start': return route.fulfill(json={'ok': True})
+            if path == 'auth/otp/verify': return route.fulfill(status=200 if body.get('code') == '123456' else 401, json=tok)
+            if path == 'auth/logout': return route.fulfill(json={'ok': True})
+            if path.startswith('chunks/'):
+                if r.headers.get('authorization') != 'Bearer acc2': return route.fulfill(status=401, json={'error': 'unauthorized'})
+                return route.fulfill(body=open(os.path.join(ROOT, 'private-chunks', path[7:]), 'rb').read(), content_type='application/json')
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api); return pg
+    def test_refresh_on_load_then_chunks_with_bearer(self):
+        pg = self.page('rt1'); pg.goto('http://127.0.0.1:%d/index.html#/02' % self.port)
+        pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')")
+        self.assertEqual(pg.evaluate("()=>localStorage.getItem('zz-rt')"), 'rt2')
+        self.assertIn(('chunks/q-02.json', 'Bearer acc2'), self.calls)
+        self.assertFalse(pg.evaluate("()=>Object.keys(localStorage).some(k=>localStorage.getItem(k)==='acc2')"), 'access token never stored')
+    def test_otp_sign_in_unlocks_then_logout(self):
+        pg = self.page(); pg.goto('http://127.0.0.1:%d/index.html#/02' % self.port)
+        pg.wait_for_selector('#q7 .ans[data-zz-st=error]', state='attached')
+        self.assertIn('locked', pg.text_content('#q7 .ans'))
+        pg.evaluate('()=>zzSignIn()'); pg.fill('#zz-phone', '01712345678'); pg.click('#zz-send')
+        pg.wait_for_selector('#zz-code'); pg.fill('#zz-code', '123456'); pg.click('#zz-verify')
+        pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')")
+        pg.evaluate('()=>zzAccount.logout()')
+        self.assertIsNone(pg.evaluate("()=>localStorage.getItem('zz-rt')"))
+        self.assertEqual(pg.evaluate('()=>zzAuthHeaders()'), {})
