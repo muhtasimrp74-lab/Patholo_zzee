@@ -107,3 +107,4 @@ tools/textbook_src/ch28.json
 tools/textbook_src/ch29.json
 _site/
 .wrangler/
+test.log

@@ -30,7 +30,12 @@ jobs:
       - name: Fail if the committed index.html is stale
         run: git diff --exit-code -- index.html content/ || (echo "::error::index.html in the repo differs from a fresh build. Run 'python3 tools/build.py' and commit it." && exit 1)
       - name: Run tests
-        run: python -m unittest discover -s tools/tests -v
+        run: |  # failing test names become annotations (readable through the API)
+          set +e
+          python -m unittest discover -s tools/tests -v > test.log 2>&1; s=$?
+          tail -n 3 test.log
+          grep -E '^(FAIL|ERROR):' test.log | sed 's/^/::error::/'
+          exit $s
       - name: Worker tests (in-memory D1/R2)
         run: cd worker && npm ci --no-audit --no-fund && npm test
       - name: Assemble site folder
