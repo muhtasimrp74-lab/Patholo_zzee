@@ -69,4 +69,5 @@
         function () { running = false; return false; });  // nothing local was touched; retried on the next sign-in or page load
   };
   addEventListener('zz:auth', function (e) { if (e.detail && e.detail.signedIn) window.zzMigrate(); });
+  (window.zzAuthReady || Promise.resolve()).then(function () { window.zzMigrate(); });  // sign-in may finish before this script loads
 })();

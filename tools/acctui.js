@@ -59,8 +59,11 @@
     var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160"><text x="10" y="90" transform="rotate(-20 160 80)" font-family="sans-serif" font-size="14" fill="rgba(128,128,128,0.13)">' + label + '</text></svg>';
     document.body.style.setProperty('--zz-wm', 'url("data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg) + '")');
   }
-  addEventListener('zz:auth', function (e) {
-    if (e.detail && e.detail.signedIn && window.zzAccount && !zzAccount.user()) zzAccount.me().then(function (m) { if (m && m.user) zzAccount.setUser(m.user); mark(); });
+  function onAuth() {
+    if (window.zzAccount && zzAccount.signedIn() && !zzAccount.user()) zzAccount.me().then(function (m) { if (m && m.user) zzAccount.setUser(m.user); mark(); });
     mark();
-  });
+  }
+  addEventListener('zz:auth', onAuth);
+  (window.zzAuthReady || Promise.resolve()).then(onAuth);  // sign-in may finish before this script loads
+  if (location.hash === '#/account') setTimeout(account, 0);
 })();

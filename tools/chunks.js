@@ -29,7 +29,7 @@
   window.loadChunk = loadChunk;
   window.zzChapter = function (id) {
     if (!gated('tb-' + id)) return fetch('textbook/' + id + '.html').then(function (r) { if (!r.ok) throw 0; return r.text(); });
-    return loadChunk('tb-' + id).then(function (c) { return c.html; }, function (e) {
+    return loadChunk('tb-' + id).then(function (c) { setTimeout(function () { var b = document.getElementById('tbbody'); if (b && b.dataset.ch === id) b.classList.add('zz-g'); }, 0); return c.html; }, function (e) {
       if (!e || (e.status !== 401 && e.status !== 403)) throw e;
       return '<div class="mempty zz-locked"><b>' + why(e) + '</b><button type="button" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
     });
@@ -71,7 +71,7 @@
       loadChunk(id).then(function (c) {
         document.querySelectorAll('.ans[data-zz="' + id + '"]').forEach(function (a) {
           var k = a.closest('.card'), h = k && c.cards[k.id];
-          if (h != null) { a.innerHTML = h; a.removeAttribute('data-zz'); delete a.dataset.zzSt; }
+          if (h != null) { a.innerHTML = h; a.removeAttribute('data-zz'); delete a.dataset.zzSt; a.classList.add('zz-g'); }
         });
         dispatchEvent(new CustomEvent('zz:chunk', { detail: id }));
       }, function (e) {

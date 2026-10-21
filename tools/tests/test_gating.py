@@ -235,3 +235,69 @@ class OfflineCache(unittest.TestCase):
         pg.wait_for_function("()=>caches.keys().then(k=>k.includes('zz-chunks-u2'))")
         self.mode['net'] = 'expired'; pg.evaluate("()=>{document.querySelectorAll('#v-02 .ans').forEach(a=>{a.innerHTML='';a.setAttribute('data-zz','q-02')});dispatchEvent(new CustomEvent('zz:auth'))}")
         pg.wait_for_function("()=>caches.keys().then(k=>!k.includes('zz-chunks-u2'))")
+
+def _tok(u):
+    import base64
+    return 'h.' + base64.urlsafe_b64encode(json.dumps({'sub': u}).encode()).decode().rstrip('=') + '.s'
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class Migration(unittest.TestCase):
+    """First login uploads local data with stable upload ids; a failed upload changes nothing locally; local copies are replaced only after confirmation."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def test_retryable_idempotent_and_local_replaced_only_after_confirmation(self):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        mode = {'fail': True}; ids = []
+        pg.add_init_script("if(!sessionStorage.getItem('once')){sessionStorage.setItem('once',1);localStorage.setItem('zz-rt','rt');localStorage.setItem('vivaState',JSON.stringify({bm:['q7']}));localStorage.setItem('tbDone','local')}")
+        def api(route):
+            r = route.request; path = r.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(json={'access_token': _tok('u1'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'sync/upload':
+                b = json.loads(r.post_data); ids.append(b['upload_id'])
+                return route.fulfill(status=500 if mode['fail'] else 200, json={'ok': not mode['fail']})
+            if path == 'sync': return route.fulfill(json={'items': [
+                {'kind': 'progress', 'key': 'vivaState/bm', 'value': '["q7","q9"]', 'updated_at': 9, 'deleted': 0, 'conflict': 0},
+                {'kind': 'progress', 'key': 'tbDone', 'value': 'cloud', 'updated_at': 9, 'deleted': 0, 'conflict': 0}]})
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api)
+        pg.goto('http://127.0.0.1:%d/index.html#/01' % self.port)
+        pg.wait_for_function('()=>window.zzAccount&&zzAccount.signedIn()'); pg.wait_for_timeout(500)  # the automatic first attempt fails
+        self.assertTrue(ids, 'first login started an upload')
+        self.assertFalse(pg.evaluate('()=>zzMigrate()'))
+        self.assertEqual(pg.evaluate("()=>[zzStore.getItem('vivaState'),zzStore.getItem('tbDone'),localStorage.getItem('zz-migrated:u1')]"), ['{"bm":["q7"]}', 'local', None])
+        first = list(ids); mode['fail'] = False; ids.clear()
+        self.assertTrue(pg.evaluate('()=>zzMigrate()'))
+        self.assertEqual(ids[0], first[0], 'the retry reuses the same upload id')
+        self.assertEqual(pg.evaluate("()=>[zzStore.getItem('vivaState'),zzStore.getItem('tbDone')]"), ['{"bm":["q7","q9"]}', 'cloud'])
+        self.assertTrue(pg.evaluate("()=>localStorage.getItem('zz-migrated:u1')"))
+        n = len(ids); self.assertFalse(pg.evaluate('()=>zzMigrate()')); self.assertEqual(len(ids), n, 'runs once per user')
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class AbuseClient(unittest.TestCase):
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self, rt=True):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close); self.dels = []
+        if rt: pg.add_init_script("if(!localStorage.getItem('zz-rt'))localStorage.setItem('zz-rt','rt')")
+        def api(route):
+            r = route.request; path = r.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(json={'access_token': _tok('u1234567890'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'me': return route.fulfill(json={'user': {'id': 'u1234567890', 'display_name': 'Ann'}, 'entitlements': [], 'now': 0})
+            if path == 'auth/otp/start': return route.fulfill(json={'ok': True})
+            if path == 'auth/otp/verify': return route.fulfill(status=409, json={'error': 'device_limit', 'max': 3, 'removal_token': 'RT', 'devices': [
+                {'device_id': 'device-%d000' % i, 'name': 'Phone %d' % i, 'last_seen_at': 0} for i in range(3)]})
+            if r.method == 'DELETE': self.dels.append((path, r.headers.get('authorization'))); return route.fulfill(json={'ok': True})
+            if path.startswith('chunks/'): return route.fulfill(body=open(os.path.join(ROOT, 'private-chunks', path[7:]), 'rb').read(), content_type='application/json')
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api); return pg
+    def test_watermark_on_gated_answers_and_textbook(self):
+        pg = self.page(); pg.goto('http://127.0.0.1:%d/index.html#/02' % self.port)
+        pg.wait_for_function("()=>document.querySelector('#q7 .ans.zz-g') && document.body.classList.contains('zz-wm')")
+        pg.wait_for_function("()=>decodeURIComponent(getComputedStyle(document.body).getPropertyValue('--zz-wm')).includes('Ann · u1234567')")
+        self.assertIn('svg', pg.evaluate("()=>getComputedStyle(document.querySelector('#q7 .ans')).backgroundImage"))
+        pg.evaluate("()=>{location.hash='#/textbook/ch02'}"); pg.wait_for_selector('#tbbody.zz-g')
+        self.assertIn('svg', pg.evaluate("()=>getComputedStyle(document.getElementById('tbbody')).backgroundImage"))
+    def test_device_limit_lists_devices_and_removes_one(self):
+        pg = self.page(rt=False); pg.goto('http://127.0.0.1:%d/index.html#/01' % self.port)
+        pg.evaluate('()=>zzSignIn()'); pg.fill('#zz-phone', '01712345678'); pg.click('#zz-send'); pg.fill('#zz-code', '123456'); pg.click('#zz-verify')
+        pg.wait_for_selector('#zz-devs button[data-d]'); self.assertEqual(pg.locator('#zz-devs li').count(), 3)
+        pg.click('#zz-devs button[data-d=device-0000]'); pg.wait_for_function('()=>document.getElementById("zz-signin").open')
+        self.assertEqual(self.dels, [('devices/device-0000', 'Bearer RT')])

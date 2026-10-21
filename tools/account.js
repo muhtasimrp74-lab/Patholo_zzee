@@ -9,6 +9,7 @@
     if (!d) { d = 'd-' + Array.from(crypto.getRandomValues(new Uint8Array(12)), function (b) { return b.toString(16).padStart(2, '0'); }).join(''); LS.set('zz-device', d); }
     return d;
   }
+  function dname() { var u = navigator.userAgent; return (/Android/.test(u) ? 'Android' : /iPhone|iPad/.test(u) ? 'iOS' : /Windows/.test(u) ? 'Windows' : /Mac/.test(u) ? 'Mac' : 'Browser') + ' ' + (/Firefox/.test(u) ? 'Firefox' : /Edg/.test(u) ? 'Edge' : /Chrome/.test(u) ? 'Chrome' : /Safari/.test(u) ? 'Safari' : ''); }
   function post(path, body, h) {
     return fetch(API + path, { method: 'POST', credentials: 'omit', headers: Object.assign({ 'Content-Type': 'application/json' }, h || {}), body: JSON.stringify(body || {}) })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; j._retry = r.headers.get('Retry-After'); return j; }); });
@@ -39,11 +40,14 @@
   window.zzAuthHeaders = function () { return access ? { Authorization: 'Bearer ' + access } : {}; };
   window.zzAccount = {
     user: function () { return user; }, signedIn: function () { return !!access; }, refresh: refresh, device: device,
+    setUser: function (u) { user = u; },
     uid: function () { return (access && sub(access)) || LS.get('zz-uid'); },
     me: function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }); },
-    google: function (idToken) { return post('auth/google', { id_token: idToken, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
+    google: function g(idToken) { return post('auth/google', { id_token: idToken, device_id: device(), device_name: dname() }).then(function (j) {
+      if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { g(idToken); }); return j; }); },
     otpStart: function (phone) { return post('auth/otp/start', { phone: phone }); },
-    otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device() }).then(function (j) { if (j._status === 200) set(j); return j; }); },
+    otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device(), device_name: dname() }).then(function (j) {
+      if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { window.zzSignIn && zzSignIn(); }); return j; }); },
     // reload afterwards so no unlocked content stays in the page
     logout: function () { var h = window.zzAuthHeaders(); set({}); return post('auth/logout', {}, h).catch(function () {}).then(function () { return window.zzWipeChunks && zzWipeChunks(null); }).then(function () { location.reload(); }); },
   };
@@ -64,7 +68,7 @@
       document.body.appendChild(dlg);
       var say = function (j, ok) { msg.textContent = j._status === 429 ? 'Too many tries. Wait ' + Math.ceil((j._retry || 60) / 60) + ' min.' : ok; };
       send.onclick = function () { zzAccount.otpStart(ph.value).then(function (j) { if (j._status === 200) { code.hidden = ver.hidden = false; code.focus(); say(j, 'Code sent.'); } else say(j, 'Check the number and try again.'); }); };
-      ver.onclick = function () { zzAccount.otpVerify(ph.value, code.value.trim()).then(function (j) { if (j._status === 200) dlg.close(); else say(j, 'Wrong or expired code.'); }); };
+      ver.onclick = function () { zzAccount.otpVerify(ph.value, code.value.trim()).then(function (j) { if (j._status === 200 || j._status === 409) dlg.close(); else say(j, 'Wrong or expired code.'); }); };
       close.onclick = function () { dlg.close(); };
       fetch(API + 'config', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (c) {
         if (!c.google_client_id) return;

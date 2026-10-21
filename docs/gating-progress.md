@@ -54,5 +54,15 @@
 - Client tools/pay.js: upgrade dialog (bundle choice only), pending state with automatic re-check, receipt view; legal links in checkout and the footer. terms.html, privacy.html, refund.html marked DRAFT; added to the Pages site. docs/admin.md: 4 commands, tested against the real migrations. Gate A: pages.yml only copies 3 more files; SAFE.
 - Done (stages 4+5, one run): Python 148: 146 pass, 0 fail, 2 skipped; worker 26/26 (incl. stage 7-8 server code); tags gating-stage-4-ok and -5-ok on the same commit. Real SSLCommerz sandbox payment: PENDING (2B + store credentials).
 
-## Stage 6: IN PROGRESS
+## Stage 6: IN PROGRESS (tests: OfflineCache 2/2)
 - Opened gated chunks are saved in Cache Storage 'zz-chunks-<user id>' (the last signed-in user id is kept as 'zz-uid' so offline reads work before a refresh); offline, loadChunk reads only that user's cache. Wiped: logout (awaited before the page reloads), a 403 (expired entitlement), a failed refresh (session gone), and every other user's cache whenever someone signs in. The service worker still never touches /api/.
+
+## Stage 7: IN PROGRESS
+- Server: migration 0004 (user_progress, user_notes, user_annotations with updated_at/deleted, notes conflict flag; migration_uploads). POST /api/sync/upload (max 20 items, idempotent per upload_id incl. concurrent retries), GET /api/sync.
+- Policy: progress = zzStore keys (vivaState split per top-level field, vivaQuiz, tbLast, tbDone, tbPos, tbSet, zz-fs, zz-flat) and annotations = pathviva-annot/meta: last write wins per key by timestamp. Notes = pathviva-annot/docs (highlights + text notes): keep both; the existing cloud copy is renamed '<key>#conflict-<ts>' and flagged.
+- Client tools/sync.js: on first sign-in per user, upload in batches with stable upload ids (kept in 'zz-mig-id' until done), then pull and replace the local copies with the merged server copy; nothing local changes unless every batch is confirmed; 'zz-migrated:<uid>' marks it done. Tests: worker sync 4/4, client Migration 1/1.
+
+## Stage 8: IN PROGRESS
+- Chunk endpoint 60/min per user, OTP limits (Stage 3), all 429 + Retry-After. 3 devices per user: a 4th sign-in gets 409 with the device list and a 10-minute removal token; DELETE /api/devices/<id> revokes the device and its sessions; Account page (#/account, footer link) lists devices with Remove.
+- Watermark: display name + first 8 chars of the user id, faint rotated SVG text over filled gated answers and gated textbook chapters. Tests: worker abuse 2/2, client AbuseClient 2/2.
+- Note: sync.js/acctui.js are injected at the end of <body>; at the start their text collided with an anchor used by a build post-processing step and changed 10 answers' textbook links (caught by the content diff; fixed).
