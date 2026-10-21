@@ -48,8 +48,8 @@
 - Locked topics: 401 shows "Sign in", 403 shows "Upgrade" (calls zzUpgrade) in the answer slot, textbook chapter and MCQ banner; network errors show Retry. MCQs keep the free chapter usable when the rest is locked. After sign-in/payment (zz:auth) everything reloads; logout reloads the page so no unlocked content stays in it.
 - Tests: locked view DOM holds no answer text and every chunk response is a bare {"error":"forbidden"}; expiry keeps all local data (localStorage snapshot), renewal unlocks with the same data; MCQ/textbook locked prompts. Progress/notes/bookmarks stay local (keyed by stable question ids) until Stage 7 sync.
 
-## Stage 5: IN PROGRESS
+## Stage 5: OK
 - Worker: POST /api/pay/checkout (auth; price from worker/src/bundles.json only), POST /api/pay/ipn (verify_sign + gateway validation API), GET|POST /api/pay/return (re-verifies, 303 to #/account/order/<id>), GET /api/pay/orders/<id> (owner only; pending orders re-checked with the gateway; nothing at the gateway after 2 h = cancelled), GET /api/bundles. Gateway adapter: SSLCommerz sandbox default, mock in tests.
 - Settlement in one D1 batch: payment_events insert (unique gateway id) + entitlement upserts + receipt + order paid, all conditional on the order being unpaid; amount (exact minor units), currency, order id and status must match the gateway's own record. Renewal extends from the current expiry. payment_orders doubles as the purchases table (no separate purchases table).
 - Client tools/pay.js: upgrade dialog (bundle choice only), pending state with automatic re-check, receipt view; legal links in checkout and the footer. terms.html, privacy.html, refund.html marked DRAFT; added to the Pages site. docs/admin.md: 4 commands, tested against the real migrations. Gate A: pages.yml only copies 3 more files; SAFE.
-- Real SSLCommerz sandbox payment: PENDING (2B + store credentials).
+- Done (stages 4+5, one run): Python 148: 146 pass, 0 fail, 2 skipped; worker 26/26 (incl. stage 7-8 server code); tags gating-stage-4-ok and -5-ok on the same commit. Real SSLCommerz sandbox payment: PENDING (2B + store credentials).
