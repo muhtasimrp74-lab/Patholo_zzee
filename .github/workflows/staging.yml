@@ -1,0 +1,78 @@
+# STAGING ONLY: deploys the Worker patholo-zzee-staging with its own D1 and R2. Never runs on main, tags or PRs.
+name: Deploy staging
+on:
+  workflow_dispatch:
+  push:
+    branches: [gating/freemium]
+    paths: ['worker/**', 'tools/**', 'index.html', 'sw.js', 'content/**', '.github/workflows/staging.yml']
+permissions: { contents: read }
+concurrency: { group: staging, cancel-in-progress: false }
+jobs:
+  staging:
+    if: startsWith(github.ref, 'refs/heads/gating/')
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      WRANGLER_SEND_METRICS: 'false'
+      DB: patholo-zzee-staging
+      BUCKET: patholo-zzee-staging-chunks
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Restore private sources, build, assemble the site (gated index + free sample only)
+        run: |
+          sh tools/restore_private.sh
+          mkdir _site && cp -r index.html annot welcome.js zz-store.js sw.js manifest.json icons fonts terms.html privacy.html refund.html _site/
+          mkdir _site/textbook && cp textbook/index.json textbook/ch01.html _site/textbook/
+          cd worker && npm ci --no-audit --no-fund
+      - name: Create staging D1 and R2 if missing
+        working-directory: worker
+        run: |
+          npx wrangler d1 list --json > /tmp/d1.json
+          ID=$(python3 -c "import json;print(next((d['uuid'] for d in json.load(open('/tmp/d1.json')) if d['name']=='$DB'),''))")
+          if [ -z "$ID" ]; then npx wrangler d1 create "$DB" > /dev/null; npx wrangler d1 list --json > /tmp/d1.json
+            ID=$(python3 -c "import json;print(next(d['uuid'] for d in json.load(open('/tmp/d1.json')) if d['name']=='$DB'))"); fi
+          sed -i "s/00000000-0000-0000-0000-000000000000/$ID/" wrangler.jsonc
+          npx wrangler r2 bucket list | grep -q "$BUCKET" || npx wrangler r2 bucket create "$BUCKET" > /dev/null
+          npx wrangler d1 migrations apply "$DB" --remote > /dev/null
+      - name: Upload chunks to staging R2
+        run: R2_BUCKET="$BUCKET" sh worker/scripts/upload-chunks.sh
+      - name: Deploy the staging Worker (API + app assets, same origin)
+        working-directory: worker
+        run: |
+          npx wrangler deploy --assets ../_site > /tmp/deploy.log 2>&1 || { tail -n 20 /tmp/deploy.log; exit 1; }
+          URL=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' /tmp/deploy.log | head -1)
+          echo "URL=$URL" >> "$GITHUB_ENV"
+      - name: Worker secrets (JWT_SECRET generated once; optional providers when present)
+        working-directory: worker
+        env:
+          GOOGLE_CLIENT_ID: ${{ vars.GOOGLE_CLIENT_ID }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_VERIFY_SID: ${{ secrets.TWILIO_VERIFY_SID }}
+          SSLCOMMERZ_STORE_ID: ${{ secrets.SSLCOMMERZ_STORE_ID }}
+          SSLCOMMERZ_STORE_PASSWORD: ${{ secrets.SSLCOMMERZ_STORE_PASSWORD }}
+        run: |
+          python3 - > /tmp/s.json <<'PY'
+          import json, os, secrets, subprocess
+          have = subprocess.run(['npx', 'wrangler', 'secret', 'list', '--format', 'json'], capture_output=True, text=True).stdout
+          names = {s['name'] for s in json.loads(have or '[]')}
+          out = {k: os.environ[k] for k in ('GOOGLE_CLIENT_ID', 'TWILIO_ACCOUNT_SID', 'TWILIO_AUTH_TOKEN', 'TWILIO_VERIFY_SID', 'SSLCOMMERZ_STORE_ID', 'SSLCOMMERZ_STORE_PASSWORD') if os.environ.get(k)}
+          if 'JWT_SECRET' not in names: out['JWT_SECRET'] = secrets.token_urlsafe(48)
+          print(json.dumps(out))
+          PY
+          if [ "$(cat /tmp/s.json)" != "{}" ]; then npx wrangler secret bulk /tmp/s.json > /dev/null; fi
+          rm -f /tmp/s.json
+      - name: Smoke tests
+        run: |
+          sleep 10
+          c() { curl -s -o /dev/null -w '%{http_code}' "$URL$1"; }
+          A=$(c /api/chunks/q-02.json); F=$(c /api/chunks/q-01.json); U=$(c /api/chunks/q-99.json); P=$(c /)
+          echo "no session $A (want 401), free $F (want 200), unknown $U (want 404), app $P (want 200)"
+          echo "STAGING URL: $URL"
+          [ "$A" = 401 ] && [ "$F" = 200 ] && [ "$U" = 404 ] && [ "$P" = 200 ]

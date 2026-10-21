@@ -78,3 +78,7 @@
 ## CI follow-up (after PR #3)
 - First PR run failed. Probe of the pre-Stage-1 code showed 7 of those failures already existed in CI (why Stage 0 found continue-on-error). Causes: CI fetched the newest vite (bundle check) and the newest Playwright/Chromium (viewport protocol errors and timing). Fix: CI runs npm ci and pins playwright==1.56.0 (the verified version); failing test names + error lines become annotations (tools/ci_failures.py). No test changed.
 - Result: full CI green on 5bdc9d2 (tests, worker tests, assemble, validate, both leak checks with the LEAK_KEY secret); deploy skipped (not main). Gate A: triggers and main-only deploy unchanged, SAFE. gating/wip was force-pushed once to a probe commit and restored.
+
+## Stage 2B: IN PROGRESS
+- Gate A: new .github/workflows/staging.yml: push to gating/freemium (worker/app paths) + workflow_dispatch; job runs only on refs/heads/gating/*; never main, tags or pull_request; targets only patholo-zzee-staging Worker, D1 patholo-zzee-staging, R2 patholo-zzee-staging-chunks; secrets only via env (masked), JWT_SECRET generated in the runner. pages.yml unchanged. SAFE.
+- CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID stored as Actions secrets via the API at the owner's request (token was pasted in chat: owner should roll it later). The sandbox cannot reach Cloudflare; everything runs in Actions.
