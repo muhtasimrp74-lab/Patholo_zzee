@@ -95,3 +95,8 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
 .zz-steps li{margin:var(--zz-s2) 0}
 .zz-num{font-variant-numeric:tabular-nums;letter-spacing:.02em;font-size:1.05em}
 .zz-copy{min-height:36px;padding:0 var(--zz-s3);margin:0 0 0 var(--zz-s1)!important;font-size:var(--zz-t-xs)}
+.zz-pwwrap{position:relative}
+.zz-pwwrap input{padding-right:56px}
+.zz-eye{position:absolute;right:4px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:var(--zz-r-sm);background:transparent;color:var(--zz-ink-2);cursor:pointer}
+.zz-eye:hover{color:var(--zz-ink)}
+.zz-eye:focus-visible{outline:2px solid var(--zz-accent);outline-offset:-2px}
