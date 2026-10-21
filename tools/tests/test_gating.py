@@ -400,3 +400,19 @@ class Launch(unittest.TestCase):
         pg.fill('#zz-trx', 'bad!'); pg.click('#zz-trx-go'); self.assertIn('8 to 12', pg.text_content('#zz-trx-st')); self.assertEqual([p for p, _ in self.sent if p == 'pay/manual'], [])
         pg.fill('#zz-trx', '9k7ab12cde'); pg.click('#zz-trx-go'); pg.wait_for_selector('#zz-pending')
         self.assertIn(('pay/manual', '9K7AB12CDE'), self.sent); self.assertIn('checking', pg.text_content('#zz-pay').lower())
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class HomeTopics(unittest.TestCase):
+    """The home 'Topics and progress' table is built from the topic pages: one row per page, same title, same counts."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def test_rows_match_topic_pages(self):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        pg.route('**/api/**', lambda r: r.fulfill(status=401, json={}))
+        pg.goto('http://127.0.0.1:%d/index.html#/' % self.port); pg.wait_for_selector('#v-home .nh-ch')
+        rows = pg.evaluate(r"""()=>[...document.querySelectorAll('#v-home .nh-ch')].map(a=>({v:a.querySelector('h4 a').getAttribute('href').slice(2),t:a.querySelector('h4').textContent.trim(),
+            n:+/\/ (\d+) read/.exec(a.querySelector('.nh-mu').textContent)[1],s:[...a.querySelectorAll('li em')].reduce((x,e)=>x+ +e.textContent.split('/')[1],0)}))""")
+        pages = pg.evaluate(r"""()=>Object.fromEntries([...document.querySelectorAll('.view')].filter(v=>v.querySelector('article.card')).map(v=>[v.id.slice(2),{t:v.querySelector('h1').textContent.trim(),n:v.querySelectorAll('article.card').length}]))""")
+        self.assertEqual(sorted(r['v'] for r in rows), sorted(pages))
+        for r in rows:
+            self.assertEqual((r['t'], r['n']), (pages[r['v']]['t'], pages[r['v']]['n']), r['v'])
+            if r['s']: self.assertEqual(r['s'], r['n'], r['v'])

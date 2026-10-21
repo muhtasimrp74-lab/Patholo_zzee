@@ -140,10 +140,17 @@ function render(){
  h+='<p class="nh-k nh-k2">Least-covered viva chapters</p><ul class="nh-wk">'+chW.map((x:any)=>{const pg=pageOf(x.c[0]);return '<li><a href="'+(pg?'#/'+pg:'#/qa')+'"><span>'+esc2(x.c[1])+'</span><em>'+x.r+'/'+x.n+'</em></a></li>'}).join('')+'</ul></div></section>';
 
  h+='<section><h3 class="nh-h">Topics and progress</h3><div class="nh-chs">';
- CH.forEach((c:any,i:any)=>{const a=byCh[c[0]]||[],pg=pageOf(c[0]),r=a.filter((d:any)=>L.has(d[3])).length,p=pct(r,a.length);
-  h+='<article class="nh-ch" id="nhch'+c[0]+'"><div class="nh-n">'+String(i+1).padStart(2,'0')+'</div><div class="nh-cb"><h4>'+(pg?'<a href="#/'+pg+'">'+esc2(c[1])+'</a>':esc2(c[1]))+'</h4><p class="nh-mu">'+esc2(c[2])+' · '+r+' / '+a.length+' read · '+p+'%</p>'+bar(p)+'<ul>';
-  c[3].forEach((sn:any)=>{const q=a.filter((d:any)=>TR[d[3]][1]===sn);if(q.length){const rr=q.filter((d:any)=>L.has(d[3])).length;h+='<li><a href="'+lnk(q[0])+'"><span>'+esc2(sn)+'</span><u></u><em>'+rr+'/'+q.length+'</em></a></li>'}else h+='<li class="no"><span>'+esc2(sn)+'</span><u></u><em>no questions</em></li>'});
-  h+='</ul></div></article>'});
+ // one row per topic page, built from the page itself: its title, its section headings and the cards under each,
+ // so the numbers here always match what opens (Robbins chapter order; pages without a chapter go last)
+ const tv=[...document.querySelectorAll('.view')].filter((v:any)=>v.querySelector('article.card')).map((v:any)=>{
+  const cr=(v.querySelector('.crumb')||{textContent:''}).textContent,m=/Ch\s*(\d+)/.exec(cr),secs:any[]=[];let cur:any=null;
+  v.querySelectorAll('h3.sub,article.card').forEach((e:any)=>{if(e.tagName==='H3'){cur={t:e.textContent.trim(),q:[]};secs.push(cur)}else{if(!cur){cur={t:'',q:[]};secs.push(cur)}cur.q.push(e.id)}});
+  return {id:v.id.slice(2),t:(v.querySelector('h1')||{textContent:v.id}).textContent.trim(),ch:m?'Ch '+m[1]:'Not in Robbins',n:m?Number(m[1]):999,secs,all:secs.flatMap((x:any)=>x.q)}
+ }).sort((a:any,b:any)=>a.n-b.n);
+ tv.forEach((x:any,i:any)=>{const r=x.all.filter((q:any)=>L.has(q)).length,p=pct(r,x.all.length),named=x.secs.filter((s:any)=>s.t);
+  h+='<article class="nh-ch" id="nhch'+x.id+'"><div class="nh-n">'+String(i+1).padStart(2,'0')+'</div><div class="nh-cb"><h4><a href="#/'+x.id+'">'+esc2(x.t)+'</a></h4><p class="nh-mu">'+esc2(x.ch)+' · '+r+' / '+x.all.length+' read · '+p+'%</p>'+bar(p);
+  if(named.length)h+='<details class="nh-sx"><summary>'+named.length+(named.length===1?' section':' sections')+'</summary><ul>'+named.map((s:any)=>{const rr=s.q.filter((q:any)=>L.has(q)).length;return '<li><a href="#/'+x.id+'/'+s.q[0]+'"><span>'+esc2(s.t)+'</span><u></u><em>'+rr+'/'+s.q.length+'</em></a></li>'}).join('')+'</ul></details>';
+  h+='</div></article>'});
  h+='</div></section><section><h3 class="nh-h">Recently studied</h3>';
  const rec=S.recent.map((i:any)=>BY[i]).filter(Boolean);
  h+=rec.length?'<ul class="nh-rec">'+rec.map((d:any)=>'<li><a href="'+lnk(d)+'">'+esc2(d[1])+'</a><span>'+esc2(CH[cidx[(TR[d[3]]||[])[0]]]?CH[cidx[TR[d[3]][0]]][1]:d[4])+'</span></li>').join('')+'</ul>':'<p class="nh-mu">Nothing yet. Questions you open will appear here.</p>';
