@@ -35,7 +35,7 @@ jobs:
           set +e
           python -m unittest discover -s tools/tests -v > test.log 2>&1; s=$?
           tail -n 3 test.log
-          grep -E '^(FAIL|ERROR):' test.log | sed 's/^/::error::/'
+          python tools/ci_failures.py test.log
           exit $s
       - name: Worker tests (in-memory D1/R2)
         run: cd worker && npm ci --no-audit --no-fund && npm test
