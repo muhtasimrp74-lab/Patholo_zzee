@@ -1,5 +1,6 @@
 import { getChunk } from './chunks.ts';
 import { google, otpStart, otpVerify, refresh, logout, me } from './auth.ts';
+import { checkout, ipn, payReturn, order } from './pay.ts';
 import { json, preflight, withCors, type Env } from './http.ts';
 
 export default {
@@ -11,9 +12,13 @@ export default {
     const m = /^\/api\/chunks\/([a-z0-9-]{1,40})\.json$/.exec(url.pathname);
     const post: Record<string, (r: Request, e: Env) => Promise<Response>> = {
       '/api/auth/google': google, '/api/auth/otp/start': otpStart, '/api/auth/otp/verify': otpVerify,
-      '/api/auth/refresh': refresh, '/api/auth/logout': logout,
+      '/api/auth/refresh': refresh, '/api/auth/logout': logout, '/api/pay/checkout': checkout,
     };
+    const o = /^\/api\/pay\/orders\/([\w-]{1,64})$/.exec(url.pathname);
+    if (url.pathname === '/api/pay/ipn' && req.method === 'POST') return ipn(req, env); // gateway server: no CORS, form body
+    if (url.pathname === '/api/pay/return' && (req.method === 'POST' || req.method === 'GET')) return payReturn(req, env);
     if (m && req.method === 'GET') res = await getChunk(req, env, m[1]);
+    else if (o && req.method === 'GET') res = await order(req, env, o[1]);
     else if (url.pathname === '/api/me' && req.method === 'GET') res = await me(req, env);
     else if (url.pathname === '/api/config' && req.method === 'GET') res = json({ google_client_id: env.GOOGLE_CLIENT_ID || null }, 200, { 'Cache-Control': 'public, max-age=300' });
     else if (req.method === 'POST' && Object.hasOwn(post, url.pathname))

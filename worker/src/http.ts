@@ -9,6 +9,10 @@ export interface Env {
   TWILIO_ACCOUNT_SID?: string;
   TWILIO_AUTH_TOKEN?: string;
   TWILIO_VERIFY_SID?: string;
+  SSLCOMMERZ_STORE_ID?: string;
+  SSLCOMMERZ_STORE_PASSWORD?: string;
+  SSLCOMMERZ_BASE?: string;
+  APP_URL?: string; // where the gateway return sends the browser
 }
 
 const LOCAL = /^http:\/\/(localhost|127\.0\.0\.1)(:\d{1,5})?$/;
