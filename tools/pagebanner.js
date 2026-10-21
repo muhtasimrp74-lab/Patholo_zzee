@@ -17,7 +17,7 @@ const SPEC={
   stats:()=>{const n=num('mcqs',/(\d+) questions/);return[n&&n+' MCQs','Single best answer + true/false']}},
  textbook:{acts:[[()=>{const e=$1('textbook','a.tbcont');return e?(e.textContent.indexOf('Continue')>-1?'Continue reading':'Start reading'):'Start reading'},()=>{const e=$1('textbook','a.tbcont');if(e)location.hash=e.getAttribute('href')},1],['Questions',go('#/questions')]],
   stats:()=>{const n=document.querySelectorAll('#v-textbook main a.tbtile').length;return[n&&n+' chapters','Robbins 11th edition','Saved for offline']}},
- menu:{acts:[['Practice',go('#/practice')],['Bookmarks',go('#/bookmarks')],['Notes',go('#/notes')],['Export backup',click('menu','button',/Export backup/)]],stats:()=>[]}
+ menu:{acts:[['Practice',go('#/practice')],['Bookmarks',go('#/bookmarks')],['Notes',go('#/notes')],['Account',go('#/account')],['Export backup',click('menu','button',/Export backup/)]],stats:()=>[]}
 };
 function build(id,box){
  const sp=SPEC[id];if(!sp)return;

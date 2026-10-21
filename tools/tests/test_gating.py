@@ -191,7 +191,7 @@ class PayClient(unittest.TestCase):
     def test_pending_rechecks_then_shows_receipt(self):
         pg = self.page(); pg.goto('http://127.0.0.1:%d/index.html#/account/order/o1' % self.port)
         pg.wait_for_selector('#zz-pending'); pg.wait_for_selector('#zz-receipt', timeout=20000)
-        self.assertIn('R0000001', pg.text_content('#zz-receipt')); self.assertIn('1200.00 BDT', pg.text_content('#zz-receipt'))
+        self.assertIn('R0000001', pg.text_content('#zz-receipt')); self.assertIn('BDT 1,200.00', pg.text_content('#zz-receipt'))
         self.assertGreaterEqual(self.n, 3)
         self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('#zz-pay .zz-legal a')].map(a=>a.getAttribute('href'))"), ['terms.html', 'refund.html', 'privacy.html'])
 
@@ -301,3 +301,33 @@ class AbuseClient(unittest.TestCase):
         pg.wait_for_selector('#zz-devs button[data-d]'); self.assertEqual(pg.locator('#zz-devs li').count(), 3)
         pg.click('#zz-devs button[data-d=device-0000]'); pg.wait_for_function('()=>document.getElementById("zz-signin").open')
         self.assertEqual(self.dels, [('devices/device-0000', 'Bearer RT')])
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class FrontEnd(unittest.TestCase):
+    """Locked topics say so above the questions; the account page works signed out and in; dialogs are labelled and styled."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self, signed, hash_):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        if signed: pg.add_init_script("localStorage.setItem('zz-rt','rt')")
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(status=200 if signed else 401, json={'access_token': _tok('u1234567890'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'me': return route.fulfill(json={'user': {'id': 'u1234567890', 'display_name': 'Ann', 'email': 'a@x.io'}, 'entitlements': [{'entitlement': 'qna', 'expires_at': 4102444800000}], 'now': 0})
+            if path == 'devices': return route.fulfill(json={'devices': [{'device_id': 'd-this', 'name': 'Android Chrome', 'last_seen_at': 0}, {'device_id': 'd-other', 'name': 'Windows Edge', 'last_seen_at': 0}], 'current': 'd-this', 'max': 3})
+            if path.startswith('chunks/'): return route.fulfill(status=401, json={'error': 'unauthorized'})
+            route.fulfill(status=404, json={})
+        pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html%s' % (self.port, hash_)); return pg
+    def test_locked_topic_notice_above_questions(self):
+        pg = self.page(False, '#/02'); pg.wait_for_selector('#v-02 .zz-vlock button')
+        self.assertTrue(pg.evaluate("()=>{const n=document.querySelector('#v-02 .zz-vlock'),c=document.querySelector('#v-02 .card');return !!(n.compareDocumentPosition(c)&Node.DOCUMENT_POSITION_FOLLOWING)}"))
+        self.assertEqual(pg.text_content('#v-02 .zz-vlock button'), 'Sign in')
+        self.assertEqual(pg.evaluate("()=>getComputedStyle(document.querySelector('#v-02 .zz-vlock button')).backgroundColor"), 'rgb(122, 31, 54)')
+    def test_account_page_signed_out_and_in(self):
+        pg = self.page(False, '#/account'); pg.wait_for_selector('#v-account:not([hidden]) #zz-a-in')
+        pg.click('#zz-a-in'); self.assertTrue(pg.evaluate("()=>document.getElementById('zz-signin').open"))
+        self.assertEqual(pg.evaluate("()=>document.getElementById('zz-signin').getAttribute('aria-labelledby')"), 'zz-si-h')
+        self.assertTrue(pg.evaluate("()=>getComputedStyle(document.querySelector('#zz-signin .zz-or')).display==='none'"), 'no "or" without Google')
+        pg2 = self.page(True, '#/account'); pg2.wait_for_selector('#v-account:not([hidden]) #zz-a-up')
+        txt = pg2.text_content('#v-account main')
+        self.assertIn('Question bank', txt); self.assertNotIn('qna', txt); self.assertIn('Until 1 Jan 2100', txt)
+        self.assertEqual(pg2.locator('#zz-devs button[data-d]').count(), 1, 'this device cannot be removed from itself')

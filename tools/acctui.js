@@ -5,51 +5,71 @@
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return '&#' + c.charCodeAt(0) + ';'; }); };
   function show(html) {
     if (!dlg) {
-      dlg = document.createElement('dialog'); dlg.id = 'zz-acct'; box = document.createElement('div');
-      var c = document.createElement('button'); c.type = 'button'; c.textContent = 'Close'; c.onclick = function () { dlg.close(); };
-      dlg.append(box, c); document.body.appendChild(dlg);
+      dlg = document.createElement('dialog'); dlg.id = 'zz-acct'; dlg.className = 'zz-dlg'; dlg.setAttribute('aria-labelledby', 'zz-acct-h'); box = document.createElement('div');
+      var c = document.createElement('button'); c.type = 'button'; c.className = 'zz-x'; c.setAttribute('aria-label', 'Close'); c.textContent = '\u00d7'; c.onclick = function () { dlg.close(); };
+      dlg.append(c, box); document.body.appendChild(dlg);
     }
-    box.innerHTML = html; if (!dlg.open) dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
+    box.innerHTML = html; if (!dlg.open) dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', ''); var h = box.querySelector('h2'); if (h) { h.tabIndex = -1; h.focus(); }
   }
   function del(id, token) {
     return fetch(API + 'devices/' + encodeURIComponent(id), { method: 'DELETE', credentials: 'omit', headers: token ? { Authorization: 'Bearer ' + token } : window.zzAuthHeaders() });
   }
-  function devList(list, token, after) {
-    return '<ul id="zz-devs">' + list.map(function (d) {
-      return '<li>' + esc(d.name || 'Device') + ' · last used ' + esc(new Date(d.last_seen_at).toLocaleDateString()) + ' <button type="button" data-d="' + esc(d.device_id) + '">Remove</button></li>';
+  var NAMES = { qna: 'Question bank', mcq: 'MCQ bank', textbook: 'Textbook' };
+  var day = function (t) { return new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); };
+  function devList(list, current) {
+    return '<ul id="zz-devs" class="zz-devs">' + list.map(function (d) {
+      var me = d.device_id === current;
+      return '<li><span>' + esc(d.name || 'Device') + (me ? ' (this device)' : '') + '<small>Last used ' + esc(day(d.last_seen_at)) + '</small></span>' +
+        (me ? '' : '<button type="button" class="zz-b" data-d="' + esc(d.device_id) + '">Remove</button>') + '</li>';
     }).join('') + '</ul>';
   }
-  function wire(token, after) {
-    box.querySelectorAll('#zz-devs button[data-d]').forEach(function (b) {
-      b.onclick = function () { b.disabled = true; del(b.dataset.d, token).then(function (r) { if (r.ok) after(); else b.disabled = false; }); };
+  function wire(root, token, after) {
+    root.querySelectorAll('#zz-devs button[data-d]').forEach(function (b) {
+      b.onclick = function () { b.disabled = true; b.textContent = 'Removing\u2026'; del(b.dataset.d, token).then(function (r) { if (r.ok) after(); else { b.disabled = false; b.textContent = 'Remove'; } }); };
     });
   }
   /** Called by the sign-in code with a 409 device_limit response. */
   window.zzDeviceLimit = function (j, retry) {
-    show('<h2>Too many devices</h2><p>Your account can be used on ' + j.max + ' devices. Remove one to sign in here.</p>' + devList(j.devices));
-    wire(j.removal_token, function () { show('<p>Removed. Signing in…</p>'); retry(); });
+    show('<h2 id="zz-acct-h">Too many devices</h2><p>Your account is already used on ' + esc(j.max) + ' devices. Remove one to sign in here.</p>' + devList(j.devices, null));
+    box.querySelector('ul').classList.add('zz-acct');
+    wire(box, j.removal_token, function () { box.innerHTML = '<p class="zz-st" role="status">Device removed. Signing you in\u2026</p>'; dlg.close(); retry(); });
   };
+  var M = window.mkView ? mkView('account', 'Account', 'Account', 'Your plan, your devices and sign-in.') : null;
+  if (M) {
+    M.classList.add('zz-acct');
+    var V = M.closest('.view');
+    try { if (views.indexOf(V) < 0) views.push(V); } catch (e) {}  // the page's view list is built before this script runs
+    if (location.hash === '#/account' && typeof route === 'function') route();  // the first route ran before this page existed
+  }
   function account() {
-    if (!window.zzAccount || !zzAccount.signedIn()) { if (window.zzSignIn) zzSignIn(); return; }
-    show('<h2>Account</h2><p>Loading…</p>');
-    Promise.all([zzAccount.me(), fetch(API + 'devices', { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.json(); })]).then(function (x) {
-      var me = x[0] || {}, d = x[1] || {}, u = me.user || {};
-      var ents = (me.entitlements || []).map(function (e) { return '<li>' + esc(e.entitlement) + ': ' + (e.expires_at > me.now ? 'until ' : 'expired ') + esc(new Date(e.expires_at).toLocaleDateString()) + '</li>'; }).join('') || '<li>Free sample only</li>';
-      show('<h2>Account</h2><p>' + esc(u.display_name) + ' · ' + esc(u.email || u.phone) + '</p><h3>Access</h3><ul>' + ents +
-        '</ul><p><button type="button" id="zz-up">Upgrade or renew</button></p><h3>Devices (' + (d.devices || []).length + ' of ' + esc(d.max) + ')</h3>' +
-        devList(d.devices || []) + '<p><button type="button" id="zz-out">Sign out</button></p>');
-      wire(null, account);
-      box.querySelector('#zz-up').onclick = function () { dlg.close(); window.zzUpgrade && zzUpgrade(); };
-      box.querySelector('#zz-out').onclick = function () { zzAccount.logout(); };
+    if (!M || location.hash !== '#/account') return;
+    if (!window.zzAccount || !zzAccount.signedIn()) {
+      M.innerHTML = '<section><h2>Not signed in</h2><p>Topic 01, MCQ chapter 1 and textbook chapter 1 are free. Sign in to open everything your plan includes.</p>' +
+        '<div class="zz-row"><button type="button" class="zz-b zz-p" id="zz-a-in">Sign in</button></div></section>';
+      M.querySelector('#zz-a-in').onclick = function () { zzSignIn(); };
+      return;
+    }
+    M.innerHTML = '<p class="zz-st" role="status">Loading your account\u2026</p>';
+    Promise.all([zzAccount.me(), fetch(API + 'devices', { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; })]).then(function (x) {
+      var me = x[0] || {}, d = x[1] || {}, u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
+      var plan = ents.length ? ents.map(function (e) {
+        var on = e.expires_at > now;
+        return '<li><span>' + esc(NAMES[e.entitlement] || e.entitlement) + '</span><span class="' + (on ? 'zz-ok' : 'zz-gone') + '">' + (on ? 'Until ' : 'Ended ') + esc(day(e.expires_at)) + '</span></li>';
+      }).join('') : '<li><span>Free sample</span><span class="zz-gone">No plan yet</span></li>';
+      M.innerHTML = '<section><h2>' + esc(u.display_name || 'Your account') + '</h2><p>' + esc(u.email || u.phone || '') + '</p></section>' +
+        '<section><h2>Plan</h2><ul>' + plan + '</ul><div class="zz-row"><button type="button" class="zz-b zz-p" id="zz-a-up">' + (ents.length ? 'Renew or add a plan' : 'Choose a plan') + '</button></div></section>' +
+        '<section><h2>Devices</h2><p>Your account works on up to ' + esc(d.max || 3) + ' devices.</p>' + devList(d.devices || [], d.current) + '</section>' +
+        '<section><div class="zz-row"><button type="button" class="zz-b" id="zz-a-out">Sign out</button></div>' +
+        '<p class="zz-legal"><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></p></section>';
+      wire(M, null, account);
+      M.querySelector('#zz-a-up').onclick = function () { window.zzUpgrade && zzUpgrade(); };
+      M.querySelector('#zz-a-out').onclick = function () { this.disabled = true; zzAccount.logout(); };
     });
   }
-  window.zzAccountPage = account;
-  addEventListener('hashchange', function () { if (location.hash === '#/account') account(); });
+  window.zzAccountPage = function () { if (location.hash === '#/account') account(); else location.hash = '#/account'; };
+  addEventListener('hashchange', function () { setTimeout(account, 0); });
 
   // watermark
-  var st = document.createElement('style');
-  st.textContent = 'body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);background-repeat:repeat}';
-  document.head.appendChild(st);
   function mark() {
     var u = window.zzAccount && zzAccount.signedIn() && zzAccount.uid();
     document.body.classList.toggle('zz-wm', !!u);
@@ -60,10 +80,11 @@
     document.body.style.setProperty('--zz-wm', 'url("data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg) + '")');
   }
   function onAuth() {
+    account();
     if (window.zzAccount && zzAccount.signedIn() && !zzAccount.user()) zzAccount.me().then(function (m) { if (m && m.user) zzAccount.setUser(m.user); mark(); });
     mark();
   }
   addEventListener('zz:auth', onAuth);
   (window.zzAuthReady || Promise.resolve()).then(onAuth);  // sign-in may finish before this script loads
-  if (location.hash === '#/account') setTimeout(account, 0);
+  setTimeout(account, 0);
 })();

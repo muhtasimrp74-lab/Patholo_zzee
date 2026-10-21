@@ -31,20 +31,31 @@
     if (!gated('tb-' + id)) return fetch('textbook/' + id + '.html').then(function (r) { if (!r.ok) throw 0; return r.text(); });
     return loadChunk('tb-' + id).then(function (c) { setTimeout(function () { var b = document.getElementById('tbbody'); if (b && b.dataset.ch === id) b.classList.add('zz-g'); }, 0); return c.html; }, function (e) {
       if (!e || (e.status !== 401 && e.status !== 403)) throw e;
-      return '<div class="mempty zz-locked"><b>' + why(e) + '</b><button type="button" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
+      return '<div class="zz-lock zz-locked" role="status"><p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
     });
   };
-  var why = function (e) { return e && e.status === 401 ? 'Sign in to open this topic.' : e && e.status === 403 ? 'This topic is part of a paid bundle.' : 'Could not load this topic. Check your connection.'; };
-  function act(e, retry) {  // the one button an error state offers: Sign in, Upgrade or Retry
+  var BUNDLE = { q: 'the Question bank', mcq: 'the MCQ bank', tb: 'the Textbook bundle' };
+  var why = function (e, kind) {
+    var b = BUNDLE[kind] || 'a paid bundle';
+    return e && e.status === 401 ? 'Sign in to read this. It comes with ' + b + '.' : e && e.status === 403 ? 'This comes with ' + b + '.' : 'Could not load this. Check your connection and try again.';
+  };
+  function act(e, retry) {  // the one button an error state offers: Sign in, Upgrade or Try again
     var b = document.createElement('button'); b.type = 'button';
+    var locked = e && (e.status === 401 || e.status === 403);
+    b.className = locked ? 'zz-b zz-p' : 'zz-b';
     var f = e && e.status === 401 ? function () { window.zzSignIn && zzSignIn(); } : e && e.status === 403 ? function () { (window.zzUpgrade || window.zzSignIn || Object)(); } : retry;
-    b.textContent = e && e.status === 401 ? 'Sign in' : e && e.status === 403 ? 'Upgrade' : 'Retry';
+    b.textContent = e && e.status === 401 ? 'Sign in' : e && e.status === 403 ? 'Upgrade' : 'Try again';
     b.onclick = function (ev) { ev.stopPropagation(); f(); };
     return b;
   }
+  function lockBox(e, kind, retry) {
+    var d = document.createElement('div'), p = document.createElement('p');
+    d.className = 'zz-lock'; d.setAttribute('role', 'status'); p.textContent = why(e, kind);
+    d.append(p, act(e, retry)); return d;
+  }
   var mcq = 0;  // 0 idle, 1 loading, 2 loaded, 3 failed: the free chapter stays usable
   window.zzMcqReset = function () { if (mcq === 3) mcq = 0; };
-  window.zzMcqLoad = function (Q, done, V) {
+  window.zzMcqLoad = function (Q, done, V, mount) {
     var ids = M ? M.gated.filter(function (x) { return x.indexOf('mcq-') === 0; }).sort() : [];
     if (!ids.length || mcq >= 2) return false;
     if (mcq === 1) return true;
@@ -54,16 +65,14 @@
       cs.forEach(function (c) { Array.prototype.push.apply(Q, c.q); }); mcq = 2; delete V.dataset.zzSt; done();
     }, function (e) {
       mcq = 3; delete V.dataset.zzSt;
-      var p = document.createElement('p'); p.className = 'zz-msg zz-banner'; p.setAttribute('role', 'status');
-      p.textContent = (e && (e.status === 401 || e.status === 403) ? 'Only the free chapter is open. ' : 'Could not load all chapters. ') + ' ';
-      p.appendChild(act(e, function () { p.remove(); mcq = 0; done(); })); V.insertBefore(p, V.firstChild); done();
+      var p = lockBox(e, 'mcq', function () { p.remove(); mcq = 0; done(); });
+      p.classList.add('zz-banner');
+      if (e && (e.status === 401 || e.status === 403)) p.firstChild.textContent = 'Chapter 1 is free. ' + why(e, 'mcq').replace('Sign in to read this. It comes', 'Sign in for the rest: they come').replace('This comes', 'The rest come');
+      (mount && mount.parentNode ? mount.parentNode : V).insertBefore(p, mount && mount.parentNode ? mount : V.firstChild); done();
     });
     return true;
   };
   if (!M) return;
-  var st = document.createElement('style');
-  st.textContent = '.ans[data-zz-st=loading]::before{content:"Loading\u2026";opacity:.7}.view[data-zz-st=loading]::before{content:"Loading questions\u2026";display:block;padding:1em}.view[data-zz-st=error]::before{content:attr(data-zz-msg);display:block;padding:1em}';
-  document.head.appendChild(st);
   function need(root) {
     var ids = {};
     root.querySelectorAll('.ans[data-zz]').forEach(function (a) { ids[a.dataset.zz] = 1; if (a.dataset.zzSt !== 'error') a.dataset.zzSt = 'loading'; });
@@ -74,13 +83,20 @@
           if (h != null) { a.innerHTML = h; a.removeAttribute('data-zz'); delete a.dataset.zzSt; a.classList.add('zz-g'); }
         });
         dispatchEvent(new CustomEvent('zz:chunk', { detail: id }));
+        document.querySelectorAll('.zz-vlock[data-c="' + id + '"]').forEach(function (x) { x.remove(); });
       }, function (e) {
+        if (e && (e.status === 401 || e.status === 403)) {  // one notice above the questions, so the lock is visible before a card is opened
+          var first = document.querySelector('.ans[data-zz="' + id + '"]'), v = first && first.closest('.view'), c = v && v.querySelector('.card');
+          if (c && !v.querySelector('.zz-vlock[data-c="' + id + '"]')) {
+            var box = lockBox(e, 'q'); box.classList.add('zz-vlock'); box.dataset.c = id;
+            box.firstChild.textContent = e.status === 401 ? 'The questions are free to browse. Sign in to read the answers: they come with the Question bank.' : 'The questions are free to browse. The answers come with the Question bank.';
+            c.parentNode.insertBefore(box, c);
+          }
+        }
         document.querySelectorAll('.ans[data-zz="' + id + '"]').forEach(function (a) {
           a.dataset.zzSt = 'error'; a.innerHTML = '';
-          var p = document.createElement('p');
-          p.className = 'zz-msg'; p.setAttribute('role', 'alert'); p.textContent = why(e) + ' ';
           if (e && (e.status === 401 || e.status === 403)) a.classList.add('zz-locked');
-          p.appendChild(act(e, function () { need(a.closest('.card') || a); })); a.appendChild(p);
+          a.appendChild(lockBox(e, 'q', function () { need(a.closest('.card') || a); }));
         });
       });
     });

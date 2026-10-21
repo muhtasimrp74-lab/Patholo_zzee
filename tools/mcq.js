@@ -320,7 +320,7 @@ function home(){
  /* ---------- router ---------- */
  function leave(){clearInterval(tid);if(sess&&!sess.review){persist();sess=null}document.body.classList.remove('mx-live')}
  function mq(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='mcqs'){leave();return}
-  if(window.zzMcqLoad&&zzMcqLoad(Q,mq,V))return;
+  if(window.zzMcqLoad&&zzMcqLoad(Q,mq,V,M))return;
   const r=p[1]||'';clearInterval(tid);if(r!=='run'&&sess&&!sess.review){persist();sess=null}document.body.classList.toggle('mx-live',r==='run'||r==='review');
   V.dataset.mx=r||'home';
   if(r==='run'){if(!sess||sess.review){const sv=ST().sess;if(sv&&sv.ids&&sv.ids.length){sess=sv;sess.t0=Date.now()-(sess.el||0)*1000}else{sess=null}}if(!sess){nav();return}runView()}

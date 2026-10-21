@@ -2044,6 +2044,57 @@ html body #bnav a.on{box-shadow:var(--nm-in)}
 html.zz-flat body :is(.topic,.card,.qi,.row,.mq,.stats,.howto,.qb,.act,.qlearn,.qf-clr,.mtile,.chip,.gb,.pill,.blk,.pager a){box-shadow:var(--sh1)!important;transition:none!important}
 html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh-toc){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background-color:var(--panel)!important}
 @media (prefers-reduced-transparency:reduce){html body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh-toc){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background-color:var(--panel)!important}}
+</style><style>/* Accounts, payments and locked content. Only the app's theme variables are used, so light and dark themes both work. */
+.zz-dlg{position:fixed;border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--text);padding:24px 20px 20px;width:min(26rem,calc(100% - 32px));max-height:calc(100% - 48px);overflow:auto;box-shadow:0 24px 60px rgba(28,18,25,.28);font:400 1rem/1.5 var(--body)}
+.zz-dlg [hidden]{display:none!important}
+.zz-dlg::backdrop{background:rgba(28,18,25,.55)}
+.zz-dlg h2:focus{outline:none}
+.zz-dlg h2{font:700 1.4rem/1.2 var(--disp);margin:0 2.5rem .35rem 0;color:var(--text)}
+.zz-dlg h3{font:600 1rem/1.3 var(--disp);margin:1.1rem 0 .4rem}
+.zz-dlg p{margin:.45rem 0}
+.zz-dlg label{display:block;font-weight:600;font-size:.92rem;margin:1rem 0 .35rem}
+.zz-dlg input{display:block;width:100%;box-sizing:border-box;font:inherit;font-size:1.05rem;padding:11px 14px;border-radius:12px;border:1px solid var(--line2,var(--line));background:var(--bg);color:var(--text)}
+.zz-x{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--muted);font-size:1.5rem;line-height:1;cursor:pointer}
+.zz-or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:.85rem;margin:14px 0 0}
+.zz-or::before,.zz-or::after{content:"";flex:1;border-top:1px solid var(--line)}
+.zz-b{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:12px;font:600 .95rem/1.1 var(--body);cursor:pointer;border:1px solid var(--line2,var(--line));background:transparent;color:var(--text);text-decoration:none}
+.zz-b.zz-p{background:var(--burgundy);border-color:var(--burgundy);color:#fff}
+.zz-b:disabled{opacity:.55;cursor:default}
+.zz-dlg .zz-b{margin-top:12px}
+.zz-full{width:100%}
+.zz-b:focus-visible,.zz-x:focus-visible,.zz-plan:focus-visible,.zz-dlg input:focus-visible{outline:3px solid var(--rosy,currentColor);outline-offset:2px}
+.zz-st{min-height:1.5em;margin:.6rem 0 0;color:var(--muted);font-size:.92rem}
+.zz-st.zz-bad{color:var(--burgundy2,var(--burgundy))}
+.zz-legal{font-size:.85rem;color:var(--muted);margin-top:16px}
+.zz-legal a{color:inherit}
+.zz-plans{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+.zz-plan{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:54px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);font:inherit;text-align:left;cursor:pointer}
+.zz-plan b{font-weight:600}
+.zz-plan span{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.zz-plan.zz-best{border:2px solid var(--burgundy)}
+.zz-plan small{display:block;font-size:.8rem;color:var(--muted);font-weight:400}
+.zz-receipt{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:10px;font-variant-numeric:tabular-nums}
+.zz-receipt p{display:flex;justify-content:space-between;gap:12px;margin:.25rem 0}
+.zz-receipt span{color:var(--muted)}
+/* locked and loading content */
+.zz-lock{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:12px 0;padding:14px 16px;border-radius:14px;background:var(--panel);border:1px dashed var(--mist3,var(--line));color:var(--text)}
+.zz-lock p{margin:0;flex:1 1 13rem;font-weight:500}
+.zz-lock .zz-b{flex:0 0 auto}
+.ans .zz-lock{margin:4px 0}
+.ans[data-zz-st=loading]::before{content:"Loading\2026";color:var(--muted)}
+.view[data-zz-st=loading] .mx::before{content:"Loading questions\2026";display:block;padding:1em 0;color:var(--muted)}
+/* account page */
+.zz-acct{max-width:40rem}
+.zz-acct section{margin:0 0 22px}
+.zz-acct h2{font:700 1.15rem/1.3 var(--disp);margin:0 0 8px}
+.zz-acct ul{list-style:none;padding:0;margin:0}
+.zz-acct li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.zz-acct li small{display:block;color:var(--muted)}
+.zz-acct .zz-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.zz-ok{color:var(--sage,inherit);font-weight:600}
+.zz-gone{color:var(--muted)}
+/* watermark: display name + short id over unlocked answers and chapters */
+body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);background-repeat:repeat}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -2121,29 +2172,51 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
   function el(tag, attrs, text) { var e = document.createElement(tag); for (var k in attrs || {}) e.setAttribute(k, attrs[k]); if (text) e.textContent = text; return e; }
   window.zzSignIn = function () {
     if (!dlg) {
-      dlg = el('dialog', { id: 'zz-signin', 'aria-label': 'Sign in' });
-      var g = el('div', { id: 'zz-g' }), msg = el('p', { id: 'zz-msg', role: 'status' });
+      dlg = el('dialog', { id: 'zz-signin', class: 'zz-dlg', 'aria-labelledby': 'zz-si-h' });
+      var x = el('button', { type: 'button', class: 'zz-x', 'aria-label': 'Close' }, '\u00d7');
+      var g = el('div', { id: 'zz-g' }), or = el('p', { class: 'zz-or', hidden: '' }, 'or use your phone');
       var ph = el('input', { id: 'zz-phone', type: 'tel', inputmode: 'tel', autocomplete: 'tel', placeholder: '01XXXXXXXXX' });
-      var code = el('input', { id: 'zz-code', inputmode: 'numeric', autocomplete: 'one-time-code', placeholder: 'Code', hidden: '' });
-      var send = el('button', { type: 'button', id: 'zz-send' }, 'Send code'), ver = el('button', { type: 'button', id: 'zz-verify', hidden: '' }, 'Verify');
-      var close = el('button', { type: 'button', id: 'zz-close' }, 'Close');
-      dlg.append(el('h2', {}, 'Sign in'), g, el('p', {}, 'or with your phone'), ph, send, code, ver, msg, close);
+      var code = el('input', { id: 'zz-code', inputmode: 'numeric', autocomplete: 'one-time-code', maxlength: '8', placeholder: '6-digit code' });
+      var send = el('button', { type: 'button', id: 'zz-send', class: 'zz-b zz-p zz-full' }, 'Send code');
+      var ver = el('button', { type: 'button', id: 'zz-verify', class: 'zz-b zz-p zz-full' }, 'Sign in');
+      var box = el('div', { hidden: '' }), msg = el('p', { id: 'zz-msg', class: 'zz-st', role: 'status' });
+      box.append(el('label', { for: 'zz-code' }, 'Code from the SMS'), code, ver);
+      dlg.append(x, el('h2', { id: 'zz-si-h' }, 'Sign in'), el('p', {}, 'Open the answers, MCQs and chapters your plan includes. Progress on this device is kept.'),
+        g, or, el('label', { for: 'zz-phone' }, 'Phone number'), ph, send, box, msg);
       document.body.appendChild(dlg);
-      var say = function (j, ok) { msg.textContent = j._status === 429 ? 'Too many tries. Wait ' + Math.ceil((j._retry || 60) / 60) + ' min.' : ok; };
-      send.onclick = function () { zzAccount.otpStart(ph.value).then(function (j) { if (j._status === 200) { code.hidden = ver.hidden = false; code.focus(); say(j, 'Code sent.'); } else say(j, 'Check the number and try again.'); }); };
-      ver.onclick = function () { zzAccount.otpVerify(ph.value, code.value.trim()).then(function (j) { if (j._status === 200 || j._status === 409) dlg.close(); else say(j, 'Wrong or expired code.'); }); };
-      close.onclick = function () { dlg.close(); };
+      var say = function (t, bad) { msg.textContent = t; msg.classList.toggle('zz-bad', !!bad); };
+      var wait = function (j) { return 'Too many tries. Try again in ' + Math.max(1, Math.ceil((j._retry || 60) / 60)) + ' min.'; };
+      send.onclick = function () {
+        send.disabled = true; say('Sending\u2026');
+        zzAccount.otpStart(ph.value).then(function (j) {
+          send.disabled = false;
+          if (j._status === 200) { box.hidden = false; send.textContent = 'Send a new code'; send.classList.remove('zz-p'); code.focus(); say('Code sent. It can take up to a minute.'); }
+          else say(j._status === 429 ? wait(j) : j._status === 400 ? 'Enter a mobile number like 01712345678 or +8801712345678.' : 'Could not send the code. Try again shortly.', true);
+        }, function () { send.disabled = false; say('No connection. Try again when you are online.', true); });
+      };
+      ver.onclick = function () {
+        ver.disabled = true; say('Checking\u2026');
+        zzAccount.otpVerify(ph.value, code.value.trim()).then(function (j) {
+          ver.disabled = false;
+          if (j._status === 200 || j._status === 409) { say(''); dlg.close(); }
+          else say(j._status === 429 ? wait(j) : 'That code is wrong or has expired. Send a new code to try again.', true);
+        }, function () { ver.disabled = false; say('No connection. Try again when you are online.', true); });
+      };
+      ph.onkeydown = function (e) { if (e.key === 'Enter') send.click(); };
+      code.onkeydown = function (e) { if (e.key === 'Enter') ver.click(); };
+      x.onclick = function () { dlg.close(); };
       fetch(API + 'config', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (c) {
         if (!c.google_client_id) return;
         var s = el('script', { src: 'https://accounts.google.com/gsi/client', async: '' });
         s.onload = function () {
-          google.accounts.id.initialize({ client_id: c.google_client_id, callback: function (r) { zzAccount.google(r.credential).then(function (j) { if (j._status === 200) dlg.close(); else msg.textContent = 'Google sign-in failed.'; }); } });
-          google.accounts.id.renderButton(g, { theme: 'outline', size: 'large' });
+          google.accounts.id.initialize({ client_id: c.google_client_id, callback: function (r) { zzAccount.google(r.credential).then(function (j) { if (j._status === 200 || j._status === 409) dlg.close(); else say('Google sign-in did not work. Try again or use your phone.', true); }); } });
+          google.accounts.id.renderButton(g, { theme: 'outline', size: 'large', width: 280, text: 'continue_with' }); or.hidden = false;
         };
         document.head.appendChild(s);
       }).catch(function () {});
     }
     dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
+    var f = dlg.querySelector('#zz-phone'); if (f) f.focus();
   };
 })();
 </script><script>/* Gated content loader. window.ZZ_MANIFEST is null in the full build and {free, gated} in the gated build.
@@ -2179,20 +2252,31 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
     if (!gated('tb-' + id)) return fetch('textbook/' + id + '.html').then(function (r) { if (!r.ok) throw 0; return r.text(); });
     return loadChunk('tb-' + id).then(function (c) { setTimeout(function () { var b = document.getElementById('tbbody'); if (b && b.dataset.ch === id) b.classList.add('zz-g'); }, 0); return c.html; }, function (e) {
       if (!e || (e.status !== 401 && e.status !== 403)) throw e;
-      return '<div class="mempty zz-locked"><b>' + why(e) + '</b><button type="button" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
+      return '<div class="zz-lock zz-locked" role="status"><p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
     });
   };
-  var why = function (e) { return e && e.status === 401 ? 'Sign in to open this topic.' : e && e.status === 403 ? 'This topic is part of a paid bundle.' : 'Could not load this topic. Check your connection.'; };
-  function act(e, retry) {  // the one button an error state offers: Sign in, Upgrade or Retry
+  var BUNDLE = { q: 'the Question bank', mcq: 'the MCQ bank', tb: 'the Textbook bundle' };
+  var why = function (e, kind) {
+    var b = BUNDLE[kind] || 'a paid bundle';
+    return e && e.status === 401 ? 'Sign in to read this. It comes with ' + b + '.' : e && e.status === 403 ? 'This comes with ' + b + '.' : 'Could not load this. Check your connection and try again.';
+  };
+  function act(e, retry) {  // the one button an error state offers: Sign in, Upgrade or Try again
     var b = document.createElement('button'); b.type = 'button';
+    var locked = e && (e.status === 401 || e.status === 403);
+    b.className = locked ? 'zz-b zz-p' : 'zz-b';
     var f = e && e.status === 401 ? function () { window.zzSignIn && zzSignIn(); } : e && e.status === 403 ? function () { (window.zzUpgrade || window.zzSignIn || Object)(); } : retry;
-    b.textContent = e && e.status === 401 ? 'Sign in' : e && e.status === 403 ? 'Upgrade' : 'Retry';
+    b.textContent = e && e.status === 401 ? 'Sign in' : e && e.status === 403 ? 'Upgrade' : 'Try again';
     b.onclick = function (ev) { ev.stopPropagation(); f(); };
     return b;
   }
+  function lockBox(e, kind, retry) {
+    var d = document.createElement('div'), p = document.createElement('p');
+    d.className = 'zz-lock'; d.setAttribute('role', 'status'); p.textContent = why(e, kind);
+    d.append(p, act(e, retry)); return d;
+  }
   var mcq = 0;  // 0 idle, 1 loading, 2 loaded, 3 failed: the free chapter stays usable
   window.zzMcqReset = function () { if (mcq === 3) mcq = 0; };
-  window.zzMcqLoad = function (Q, done, V) {
+  window.zzMcqLoad = function (Q, done, V, mount) {
     var ids = M ? M.gated.filter(function (x) { return x.indexOf('mcq-') === 0; }).sort() : [];
     if (!ids.length || mcq >= 2) return false;
     if (mcq === 1) return true;
@@ -2202,16 +2286,14 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
       cs.forEach(function (c) { Array.prototype.push.apply(Q, c.q); }); mcq = 2; delete V.dataset.zzSt; done();
     }, function (e) {
       mcq = 3; delete V.dataset.zzSt;
-      var p = document.createElement('p'); p.className = 'zz-msg zz-banner'; p.setAttribute('role', 'status');
-      p.textContent = (e && (e.status === 401 || e.status === 403) ? 'Only the free chapter is open. ' : 'Could not load all chapters. ') + ' ';
-      p.appendChild(act(e, function () { p.remove(); mcq = 0; done(); })); V.insertBefore(p, V.firstChild); done();
+      var p = lockBox(e, 'mcq', function () { p.remove(); mcq = 0; done(); });
+      p.classList.add('zz-banner');
+      if (e && (e.status === 401 || e.status === 403)) p.firstChild.textContent = 'Chapter 1 is free. ' + why(e, 'mcq').replace('Sign in to read this. It comes', 'Sign in for the rest: they come').replace('This comes', 'The rest come');
+      (mount && mount.parentNode ? mount.parentNode : V).insertBefore(p, mount && mount.parentNode ? mount : V.firstChild); done();
     });
     return true;
   };
   if (!M) return;
-  var st = document.createElement('style');
-  st.textContent = '.ans[data-zz-st=loading]::before{content:"Loading\u2026";opacity:.7}.view[data-zz-st=loading]::before{content:"Loading questions\u2026";display:block;padding:1em}.view[data-zz-st=error]::before{content:attr(data-zz-msg);display:block;padding:1em}';
-  document.head.appendChild(st);
   function need(root) {
     var ids = {};
     root.querySelectorAll('.ans[data-zz]').forEach(function (a) { ids[a.dataset.zz] = 1; if (a.dataset.zzSt !== 'error') a.dataset.zzSt = 'loading'; });
@@ -2222,13 +2304,20 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
           if (h != null) { a.innerHTML = h; a.removeAttribute('data-zz'); delete a.dataset.zzSt; a.classList.add('zz-g'); }
         });
         dispatchEvent(new CustomEvent('zz:chunk', { detail: id }));
+        document.querySelectorAll('.zz-vlock[data-c="' + id + '"]').forEach(function (x) { x.remove(); });
       }, function (e) {
+        if (e && (e.status === 401 || e.status === 403)) {  // one notice above the questions, so the lock is visible before a card is opened
+          var first = document.querySelector('.ans[data-zz="' + id + '"]'), v = first && first.closest('.view'), c = v && v.querySelector('.card');
+          if (c && !v.querySelector('.zz-vlock[data-c="' + id + '"]')) {
+            var box = lockBox(e, 'q'); box.classList.add('zz-vlock'); box.dataset.c = id;
+            box.firstChild.textContent = e.status === 401 ? 'The questions are free to browse. Sign in to read the answers: they come with the Question bank.' : 'The questions are free to browse. The answers come with the Question bank.';
+            c.parentNode.insertBefore(box, c);
+          }
+        }
         document.querySelectorAll('.ans[data-zz="' + id + '"]').forEach(function (a) {
           a.dataset.zzSt = 'error'; a.innerHTML = '';
-          var p = document.createElement('p');
-          p.className = 'zz-msg'; p.setAttribute('role', 'alert'); p.textContent = why(e) + ' ';
           if (e && (e.status === 401 || e.status === 403)) a.classList.add('zz-locked');
-          p.appendChild(act(e, function () { need(a.closest('.card') || a); })); a.appendChild(p);
+          a.appendChild(lockBox(e, 'q', function () { need(a.closest('.card') || a); }));
         });
       });
     });
@@ -2251,16 +2340,19 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
    redirects to #/account/order/<id>: this shows "pending", re-checks automatically, then the receipt. */
 (function () {
   var API = (window.ZZ_API || '') + 'api/', dlg, body;
-  var LEGAL = '<p class="zz-legal"><a href="terms.html">Terms</a> · <a href="refund.html">Refunds</a> · <a href="privacy.html">Privacy</a></p>';
-  var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return '&#' + c.charCodeAt(0) + ';'; }); };
+  var LEGAL = '<p class="zz-legal">By paying you agree to the <a href="terms.html">Terms</a> and <a href="refund.html">Refund policy</a>. <a href="privacy.html">Privacy</a></p>';
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return '&#' + c.charCodeAt(0) + ';'; }); };
+  var money = function (minor, cur) { return esc(cur) + ' ' + (minor / 100).toLocaleString('en-IN', { minimumFractionDigits: 2 }); };
+  var NAMES = { QNA: 'Question bank', MCQ: 'MCQ bank', TEXTBOOK: 'Textbook', ALL: 'Everything' };
   function open(html) {
     if (!dlg) {
-      dlg = document.createElement('dialog'); dlg.id = 'zz-pay'; body = document.createElement('div');
-      var c = document.createElement('button'); c.type = 'button'; c.textContent = 'Close'; c.onclick = function () { dlg.close(); };
-      dlg.append(body, c); document.body.appendChild(dlg);
+      dlg = document.createElement('dialog'); dlg.id = 'zz-pay'; dlg.className = 'zz-dlg'; dlg.setAttribute('aria-labelledby', 'zz-pay-h');
+      var x = document.createElement('button'); x.type = 'button'; x.className = 'zz-x'; x.setAttribute('aria-label', 'Close'); x.textContent = '\u00d7';
+      x.onclick = function () { dlg.close(); }; body = document.createElement('div'); dlg.append(x, body); document.body.appendChild(dlg);
     }
-    body.innerHTML = html + LEGAL;
+    body.innerHTML = html;
     if (!dlg.open) dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
+    var h = body.querySelector('h2'); if (h) { h.tabIndex = -1; h.focus(); }  // start at the title, not on the close button
   }
   function api(path, init) {
     init = init || {}; init.credentials = 'omit';
@@ -2269,17 +2361,22 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
   }
   window.zzUpgrade = function () {
     if (!window.zzAccount || !zzAccount.signedIn()) return window.zzSignIn && zzSignIn();
-    open('<h2>Upgrade</h2><p>Loading prices…</p>');
+    open('<h2 id="zz-pay-h">Choose a plan</h2><p class="zz-st" role="status">Loading prices\u2026</p>');
     api('bundles').then(function (j) {
-      body.innerHTML = '<h2>Upgrade</h2><p>One year of access. Buying again extends it.</p>' + (j.bundles || []).map(function (b) {
-        return '<p><button type="button" data-b="' + esc(b.id) + '">' + esc(b.name) + ' · ' + esc(b.price) + ' ' + esc(b.currency) + '</button></p>';
-      }).join('') + '<p id="zz-pay-msg" role="status"></p>' + LEGAL;
+      if (!j.bundles) { body.querySelector('.zz-st').textContent = 'Could not load prices. Check your connection and try again.'; return; }
+      body.innerHTML = '<h2 id="zz-pay-h">Choose a plan</h2><p>Each plan lasts one year. Buying again adds another year.</p><ul class="zz-plans">' + j.bundles.map(function (b) {
+        return '<li><button type="button" class="zz-plan' + (b.id === 'ALL' ? ' zz-best' : '') + '" data-b="' + esc(b.id) + '"><b>' + esc(b.name) +
+          (b.id === 'ALL' ? '<small>Questions, MCQs and the textbook</small>' : '') + '</b><span>' + money(Math.round(Number(b.price) * 100), b.currency) + '</span></button></li>';
+      }).join('') + '</ul><p id="zz-pay-msg" class="zz-st" role="status"></p>' + LEGAL;
       body.querySelectorAll('button[data-b]').forEach(function (btn) {
         btn.onclick = function () {
-          btn.disabled = true;
+          var msg = body.querySelector('#zz-pay-msg');
+          body.querySelectorAll('button[data-b]').forEach(function (x) { x.disabled = true; });
+          msg.classList.remove('zz-bad'); msg.textContent = 'Opening the secure payment page\u2026';
           api('pay/checkout', { method: 'POST', body: JSON.stringify({ bundle: btn.dataset.b }) }).then(function (r) {
-            if (r.redirect_url) location.href = r.redirect_url;
-            else { btn.disabled = false; body.querySelector('#zz-pay-msg').textContent = 'Could not start the payment. Try again.'; }
+            if (r.redirect_url) { location.href = r.redirect_url; return; }
+            body.querySelectorAll('button[data-b]').forEach(function (x) { x.disabled = false; });
+            msg.classList.add('zz-bad'); msg.textContent = 'The payment page did not open. Try again in a moment.';
           });
         };
       });
@@ -2290,19 +2387,21 @@ html.zz-flat body :is(.nav,.bar,#bnav,#tools,.toast,.mx-top,.dp,#nhr,.nh-bar,.nh
     polling = id;
     (window.zzAuthReady || Promise.resolve()).then(function () { return api('pay/orders/' + encodeURIComponent(id)); }).then(function (j) {
       if (polling !== id) return;
-      var st = j.order && j.order.status;
-      if (st === 'paid' && j.receipt) {
-        var r = j.receipt;
-        open('<h2>Payment received</h2><div id="zz-receipt"><p>Receipt <b>' + esc(r.receipt_no) + '</b></p><p>' + esc(r.bundle) + ' · ' +
-          esc((r.amount_minor / 100).toFixed(2)) + ' ' + esc(r.currency) + '</p><p>' + esc(new Date(r.issued_at).toLocaleString()) + '</p></div>');
+      var st = j.order && j.order.status, r = j.receipt;
+      if (st === 'paid' && r) {
+        open('<h2 id="zz-pay-h">Payment received</h2><p>Your plan is active. The locked topics open now.</p><div id="zz-receipt" class="zz-receipt">' +
+          '<p><span>Receipt</span><b>' + esc(r.receipt_no) + '</b></p><p><span>Plan</span>' + esc(NAMES[r.bundle] || r.bundle) + '</p>' +
+          '<p><span>Paid</span>' + money(r.amount_minor, r.currency) + '</p><p><span>Date</span>' + esc(new Date(r.issued_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })) + '</p></div>' +
+          '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close()">Done</button>' + LEGAL);
         dispatchEvent(new CustomEvent('zz:auth'));
       } else if (st === 'pending' && tries < 40) {
-        open('<h2>Payment pending</h2><p id="zz-pending">Checking with the payment provider…</p>');
+        if (!tries) open('<h2 id="zz-pay-h">Confirming your payment</h2><p id="zz-pending" class="zz-st" role="status">Checking with the payment provider. This usually takes under a minute; you can keep this open.</p>' + LEGAL);
         setTimeout(function () { showOrder(id, tries + 1); }, Math.min(3000 + tries * 500, 15000));
       } else if (st === 'pending') {
-        open('<h2>Payment pending</h2><p>Still waiting for the provider. Open this page again later; access starts as soon as it confirms.</p>');
+        open('<h2 id="zz-pay-h">Still confirming</h2><p>The provider has not confirmed yet. Your plan starts as soon as it does; open Account later to check.</p>' + LEGAL);
       } else {
-        open('<h2>Payment not completed</h2><p>' + (st ? 'Status: ' + esc(st) + '. You were not charged for a failed or cancelled payment.' : 'Sign in to see this order.') + '</p>');
+        open('<h2 id="zz-pay-h">Payment not completed</h2><p>' + (st ? 'The payment was ' + esc(st) + '. You were not charged.' : 'Sign in with the account you paid with to see this order.') + '</p>' +
+          '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close();zzUpgrade()">Choose a plan</button>' + LEGAL);
       }
     });
   }
@@ -3047,7 +3146,7 @@ function home(){
  /* ---------- router ---------- */
  function leave(){clearInterval(tid);if(sess&&!sess.review){persist();sess=null}document.body.classList.remove('mx-live')}
  function mq(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='mcqs'){leave();return}
-  if(window.zzMcqLoad&&zzMcqLoad(Q,mq,V))return;
+  if(window.zzMcqLoad&&zzMcqLoad(Q,mq,V,M))return;
   const r=p[1]||'';clearInterval(tid);if(r!=='run'&&sess&&!sess.review){persist();sess=null}document.body.classList.toggle('mx-live',r==='run'||r==='review');
   V.dataset.mx=r||'home';
   if(r==='run'){if(!sess||sess.review){const sv=ST().sess;if(sv&&sv.ids&&sv.ids.length){sess=sv;sess.t0=Date.now()-(sess.el||0)*1000}else{sess=null}}if(!sess){nav();return}runView()}
@@ -3904,7 +4003,7 @@ const SPEC={
   stats:()=>{const n=num('mcqs',/(\d+) questions/);return[n&&n+' MCQs','Single best answer + true/false']}},
  textbook:{acts:[[()=>{const e=$1('textbook','a.tbcont');return e?(e.textContent.indexOf('Continue')>-1?'Continue reading':'Start reading'):'Start reading'},()=>{const e=$1('textbook','a.tbcont');if(e)location.hash=e.getAttribute('href')},1],['Questions',go('#/questions')]],
   stats:()=>{const n=document.querySelectorAll('#v-textbook main a.tbtile').length;return[n&&n+' chapters','Robbins 11th edition','Saved for offline']}},
- menu:{acts:[['Practice',go('#/practice')],['Bookmarks',go('#/bookmarks')],['Notes',go('#/notes')],['Export backup',click('menu','button',/Export backup/)]],stats:()=>[]}
+ menu:{acts:[['Practice',go('#/practice')],['Bookmarks',go('#/bookmarks')],['Notes',go('#/notes')],['Account',go('#/account')],['Export backup',click('menu','button',/Export backup/)]],stats:()=>[]}
 };
 function build(id,box){
  const sp=SPEC[id];if(!sp)return;
@@ -3949,7 +4048,8 @@ function build(){
  b.appendChild(el('p','sf-about','Pathology viva, written and MCQ revision with full answers, built around the NMC viva list and Robbins 11th edition. Chapters you open are saved for offline reading.'));
  m.appendChild(b);
  m.appendChild(col('Study',[['#/','Home'],['#/questions','Questions'],['#/qa','Chapters'],['#/practice','Practice'],['#/mcqs','MCQs'],['#/textbook','Textbook']]));
- m.appendChild(col('Your space',[['#/bookmarks','Bookmarks'],['#/favourites','Favourites'],['#/notes','Notes'],['#/menu','Menu and backup'],['#/howto','How to read']]));
+ m.appendChild(col('Your space',[['#/bookmarks','Bookmarks'],['#/favourites','Favourites'],['#/notes','Notes'],['#/menu','Menu and backup'],['#/howto','How to read'],['#/account','Account']]));
+ m.appendChild(col('Legal',[['terms.html','Terms of use'],['privacy.html','Privacy'],['refund.html','Refunds']]));
  f.appendChild(m);
  const bt=el('div','sf-bot');
  const p=el('p','sf-legal');p.textContent='\u00A9 '+new Date().getFullYear()+' Muhtasim Ahmed. For exam revision only; not medical or clinical advice, so check against your prescribed textbooks. Robbins and Cotran Pathologic Basis of Disease belongs to its authors and publisher, and this site is not affiliated with them or with the NMC.';
@@ -4356,51 +4456,71 @@ if ('serviceWorker' in navigator) {
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return '&#' + c.charCodeAt(0) + ';'; }); };
   function show(html) {
     if (!dlg) {
-      dlg = document.createElement('dialog'); dlg.id = 'zz-acct'; box = document.createElement('div');
-      var c = document.createElement('button'); c.type = 'button'; c.textContent = 'Close'; c.onclick = function () { dlg.close(); };
-      dlg.append(box, c); document.body.appendChild(dlg);
+      dlg = document.createElement('dialog'); dlg.id = 'zz-acct'; dlg.className = 'zz-dlg'; dlg.setAttribute('aria-labelledby', 'zz-acct-h'); box = document.createElement('div');
+      var c = document.createElement('button'); c.type = 'button'; c.className = 'zz-x'; c.setAttribute('aria-label', 'Close'); c.textContent = '\u00d7'; c.onclick = function () { dlg.close(); };
+      dlg.append(c, box); document.body.appendChild(dlg);
     }
-    box.innerHTML = html; if (!dlg.open) dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
+    box.innerHTML = html; if (!dlg.open) dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', ''); var h = box.querySelector('h2'); if (h) { h.tabIndex = -1; h.focus(); }
   }
   function del(id, token) {
     return fetch(API + 'devices/' + encodeURIComponent(id), { method: 'DELETE', credentials: 'omit', headers: token ? { Authorization: 'Bearer ' + token } : window.zzAuthHeaders() });
   }
-  function devList(list, token, after) {
-    return '<ul id="zz-devs">' + list.map(function (d) {
-      return '<li>' + esc(d.name || 'Device') + ' · last used ' + esc(new Date(d.last_seen_at).toLocaleDateString()) + ' <button type="button" data-d="' + esc(d.device_id) + '">Remove</button></li>';
+  var NAMES = { qna: 'Question bank', mcq: 'MCQ bank', textbook: 'Textbook' };
+  var day = function (t) { return new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }); };
+  function devList(list, current) {
+    return '<ul id="zz-devs" class="zz-devs">' + list.map(function (d) {
+      var me = d.device_id === current;
+      return '<li><span>' + esc(d.name || 'Device') + (me ? ' (this device)' : '') + '<small>Last used ' + esc(day(d.last_seen_at)) + '</small></span>' +
+        (me ? '' : '<button type="button" class="zz-b" data-d="' + esc(d.device_id) + '">Remove</button>') + '</li>';
     }).join('') + '</ul>';
   }
-  function wire(token, after) {
-    box.querySelectorAll('#zz-devs button[data-d]').forEach(function (b) {
-      b.onclick = function () { b.disabled = true; del(b.dataset.d, token).then(function (r) { if (r.ok) after(); else b.disabled = false; }); };
+  function wire(root, token, after) {
+    root.querySelectorAll('#zz-devs button[data-d]').forEach(function (b) {
+      b.onclick = function () { b.disabled = true; b.textContent = 'Removing\u2026'; del(b.dataset.d, token).then(function (r) { if (r.ok) after(); else { b.disabled = false; b.textContent = 'Remove'; } }); };
     });
   }
   /** Called by the sign-in code with a 409 device_limit response. */
   window.zzDeviceLimit = function (j, retry) {
-    show('<h2>Too many devices</h2><p>Your account can be used on ' + j.max + ' devices. Remove one to sign in here.</p>' + devList(j.devices));
-    wire(j.removal_token, function () { show('<p>Removed. Signing in…</p>'); retry(); });
+    show('<h2 id="zz-acct-h">Too many devices</h2><p>Your account is already used on ' + esc(j.max) + ' devices. Remove one to sign in here.</p>' + devList(j.devices, null));
+    box.querySelector('ul').classList.add('zz-acct');
+    wire(box, j.removal_token, function () { box.innerHTML = '<p class="zz-st" role="status">Device removed. Signing you in\u2026</p>'; dlg.close(); retry(); });
   };
+  var M = window.mkView ? mkView('account', 'Account', 'Account', 'Your plan, your devices and sign-in.') : null;
+  if (M) {
+    M.classList.add('zz-acct');
+    var V = M.closest('.view');
+    try { if (views.indexOf(V) < 0) views.push(V); } catch (e) {}  // the page's view list is built before this script runs
+    if (location.hash === '#/account' && typeof route === 'function') route();  // the first route ran before this page existed
+  }
   function account() {
-    if (!window.zzAccount || !zzAccount.signedIn()) { if (window.zzSignIn) zzSignIn(); return; }
-    show('<h2>Account</h2><p>Loading…</p>');
-    Promise.all([zzAccount.me(), fetch(API + 'devices', { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.json(); })]).then(function (x) {
-      var me = x[0] || {}, d = x[1] || {}, u = me.user || {};
-      var ents = (me.entitlements || []).map(function (e) { return '<li>' + esc(e.entitlement) + ': ' + (e.expires_at > me.now ? 'until ' : 'expired ') + esc(new Date(e.expires_at).toLocaleDateString()) + '</li>'; }).join('') || '<li>Free sample only</li>';
-      show('<h2>Account</h2><p>' + esc(u.display_name) + ' · ' + esc(u.email || u.phone) + '</p><h3>Access</h3><ul>' + ents +
-        '</ul><p><button type="button" id="zz-up">Upgrade or renew</button></p><h3>Devices (' + (d.devices || []).length + ' of ' + esc(d.max) + ')</h3>' +
-        devList(d.devices || []) + '<p><button type="button" id="zz-out">Sign out</button></p>');
-      wire(null, account);
-      box.querySelector('#zz-up').onclick = function () { dlg.close(); window.zzUpgrade && zzUpgrade(); };
-      box.querySelector('#zz-out').onclick = function () { zzAccount.logout(); };
+    if (!M || location.hash !== '#/account') return;
+    if (!window.zzAccount || !zzAccount.signedIn()) {
+      M.innerHTML = '<section><h2>Not signed in</h2><p>Topic 01, MCQ chapter 1 and textbook chapter 1 are free. Sign in to open everything your plan includes.</p>' +
+        '<div class="zz-row"><button type="button" class="zz-b zz-p" id="zz-a-in">Sign in</button></div></section>';
+      M.querySelector('#zz-a-in').onclick = function () { zzSignIn(); };
+      return;
+    }
+    M.innerHTML = '<p class="zz-st" role="status">Loading your account\u2026</p>';
+    Promise.all([zzAccount.me(), fetch(API + 'devices', { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; })]).then(function (x) {
+      var me = x[0] || {}, d = x[1] || {}, u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
+      var plan = ents.length ? ents.map(function (e) {
+        var on = e.expires_at > now;
+        return '<li><span>' + esc(NAMES[e.entitlement] || e.entitlement) + '</span><span class="' + (on ? 'zz-ok' : 'zz-gone') + '">' + (on ? 'Until ' : 'Ended ') + esc(day(e.expires_at)) + '</span></li>';
+      }).join('') : '<li><span>Free sample</span><span class="zz-gone">No plan yet</span></li>';
+      M.innerHTML = '<section><h2>' + esc(u.display_name || 'Your account') + '</h2><p>' + esc(u.email || u.phone || '') + '</p></section>' +
+        '<section><h2>Plan</h2><ul>' + plan + '</ul><div class="zz-row"><button type="button" class="zz-b zz-p" id="zz-a-up">' + (ents.length ? 'Renew or add a plan' : 'Choose a plan') + '</button></div></section>' +
+        '<section><h2>Devices</h2><p>Your account works on up to ' + esc(d.max || 3) + ' devices.</p>' + devList(d.devices || [], d.current) + '</section>' +
+        '<section><div class="zz-row"><button type="button" class="zz-b" id="zz-a-out">Sign out</button></div>' +
+        '<p class="zz-legal"><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a></p></section>';
+      wire(M, null, account);
+      M.querySelector('#zz-a-up').onclick = function () { window.zzUpgrade && zzUpgrade(); };
+      M.querySelector('#zz-a-out').onclick = function () { this.disabled = true; zzAccount.logout(); };
     });
   }
-  window.zzAccountPage = account;
-  addEventListener('hashchange', function () { if (location.hash === '#/account') account(); });
+  window.zzAccountPage = function () { if (location.hash === '#/account') account(); else location.hash = '#/account'; };
+  addEventListener('hashchange', function () { setTimeout(account, 0); });
 
   // watermark
-  var st = document.createElement('style');
-  st.textContent = 'body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);background-repeat:repeat}';
-  document.head.appendChild(st);
   function mark() {
     var u = window.zzAccount && zzAccount.signedIn() && zzAccount.uid();
     document.body.classList.toggle('zz-wm', !!u);
@@ -4411,11 +4531,12 @@ if ('serviceWorker' in navigator) {
     document.body.style.setProperty('--zz-wm', 'url("data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg) + '")');
   }
   function onAuth() {
+    account();
     if (window.zzAccount && zzAccount.signedIn() && !zzAccount.user()) zzAccount.me().then(function (m) { if (m && m.user) zzAccount.setUser(m.user); mark(); });
     mark();
   }
   addEventListener('zz:auth', onAuth);
   (window.zzAuthReady || Promise.resolve()).then(onAuth);  // sign-in may finish before this script loads
-  if (location.hash === '#/account') setTimeout(account, 0);
+  setTimeout(account, 0);
 })();
 </script><script>document.documentElement.classList.remove("zz-boot")</script></body></html>
