@@ -1,6 +1,6 @@
 import manifest from '../../content/manifest.json' with { type: 'json' };
 import bundles from './bundles.json' with { type: 'json' };
-import { auth, json, NO_STORE, type Env } from './http.ts';
+import { auth, json, limited, NO_STORE, type Env } from './http.ts';
 
 type Meta = { kind: 'q' | 'mcq' | 'tb'; free: boolean };
 const CHUNKS = manifest.chunks as Record<string, Meta>;
@@ -21,6 +21,8 @@ export async function getChunk(req: Request, env: Env, id: string): Promise<Resp
   if (!meta.free) {
     const claims = await auth(req, env);
     if (!claims) return json({ error: 'unauthorized' }, 401);
+    const wait = await limited(env, 'chunk:' + claims.sub, 60, 60e3);
+    if (wait) return json({ error: 'rate_limited' }, 429, { 'Retry-After': String(wait) });
     if (!(await entitled(env, claims.sub, KINDS[meta.kind]))) return json({ error: 'forbidden' }, 403);
     cache = NO_STORE;
   }

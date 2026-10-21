@@ -56,4 +56,13 @@ export async function auth(req: Request, env: Env): Promise<Claims | null> {
   return m && env.JWT_SECRET ? verify(m[1], env.JWT_SECRET, 'access') : null;
 }
 
+/** Fixed-window counter. Returns 0 when allowed, else the seconds until the window resets (for Retry-After). */
+export async function limited(env: Env, key: string, max: number, windowMs: number, now = Date.now()): Promise<number> {
+  const ws = Math.floor(now / windowMs) * windowMs;
+  const r = await env.DB.prepare('INSERT INTO rate_limits (key, window_start, count) VALUES (?1, ?2, 1) ON CONFLICT (key, window_start) DO UPDATE SET count = count + 1 RETURNING count')
+    .bind(key, ws).first<{ count: number }>();
+  if (Math.random() < 0.01) await env.DB.prepare('DELETE FROM rate_limits WHERE window_start < ?1').bind(now - 86400e3).run();
+  return r && r.count > max ? Math.max(1, Math.ceil((ws + windowMs - now) / 1000)) : 0;
+}
+
 export { NO_STORE };

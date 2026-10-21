@@ -25,7 +25,7 @@ export function fakeD1() {
     // D1 batch is atomic: all statements commit or none do.
     async batch(stmts: Stmt[]) {
       db.exec('BEGIN');
-      try { const out = stmts.map((s) => ({ success: true, meta: { changes: Number(s.runSync().changes) } })); db.exec('COMMIT'); return out; }
+      try { const out = stmts.map((s) => /^\s*SELECT/i.test(s.sql) ? { success: true, results: s.db.prepare(s.sql).all(...(s.args as never[])) } : { success: true, meta: { changes: Number(s.runSync().changes) } }); db.exec('COMMIT'); return out; }
       catch (e) { db.exec('ROLLBACK'); throw e; }
     },
   };

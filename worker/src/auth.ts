@@ -1,4 +1,4 @@
-import { sign } from './jwt.ts';
+import { sign, verify } from './jwt.ts';
 import { auth, json, type Env } from './http.ts';
 
 const MIN = 60e3, DAY = 86400e3;
@@ -78,18 +78,31 @@ function twilio(env: Env): OtpProvider {
 }
 
 // ---- sessions ----
-async function upsertDevice(env: Env, userId: string, deviceId: string, now: number) {
-  await env.DB.prepare(`INSERT INTO devices (user_id, device_id, created_at, last_seen_at) VALUES (?1, ?2, ?3, ?3)
-    ON CONFLICT (user_id, device_id) DO UPDATE SET last_seen_at = ?3`).bind(userId, deviceId, now).run();
+export const MAX_DEVICES = 3;
+/** A fresh sign-in on a 4th device is refused with the device list and a 10-minute token that can remove one. */
+async function deviceLimit(env: Env, userId: string, deviceId: string): Promise<Response | null> {
+  const r = await env.DB.prepare('SELECT device_id, name, last_seen_at FROM devices WHERE user_id = ?1 AND revoked_at IS NULL AND device_id != ?2 ORDER BY last_seen_at DESC')
+    .bind(userId, deviceId).all<{ device_id: string; name: string; last_seen_at: number }>();
+  if (r.results.length < MAX_DEVICES) return null;
+  const s = Math.floor(deps.now() / 1000);
+  const removal_token = await sign({ sub: userId, typ: 'devrm', iat: s, exp: s + 600 }, env.JWT_SECRET);
+  return json({ error: 'device_limit', max: MAX_DEVICES, devices: r.results, removal_token }, 409);
 }
 
-async function issue(env: Env, userId: string, deviceId: string, family = rand(16)) {
+async function upsertDevice(env: Env, userId: string, deviceId: string, now: number, name: string | null) {
+  // a new sign-in re-enables a removed device; a refresh (name === null) never does
+  await env.DB.prepare(`INSERT INTO devices (user_id, device_id, name, created_at, last_seen_at) VALUES (?1, ?2, ?4, ?3, ?3)
+    ON CONFLICT (user_id, device_id) DO UPDATE SET last_seen_at = ?3, name = COALESCE(?5, name), revoked_at = CASE WHEN ?5 IS NULL THEN revoked_at ELSE NULL END`)
+    .bind(userId, deviceId, now, name ?? '', name).run();
+}
+
+async function issue(env: Env, userId: string, deviceId: string, family = rand(16), name: string | null = null) {
   const now = deps.now(), refresh = rand();
   await env.DB.prepare('INSERT INTO sessions (token_hash, family_id, user_id, device_id, created_at, expires_at) VALUES (?1, ?2, ?3, ?4, ?5, ?6)')
     .bind(await sha256(refresh), family, userId, deviceId, now, now + REFRESH_MS).run();
-  await upsertDevice(env, userId, deviceId, now);
+  await upsertDevice(env, userId, deviceId, now, name);
   const s = Math.floor(now / 1000);
-  const access = await sign({ sub: userId, sid: family, typ: 'access', iat: s, exp: s + ACCESS_S }, env.JWT_SECRET);
+  const access = await sign({ sub: userId, sid: family, did: deviceId, typ: 'access', iat: s, exp: s + ACCESS_S }, env.JWT_SECRET);
   return { access_token: access, refresh_token: refresh, expires_in: ACCESS_S };
 }
 
@@ -106,6 +119,7 @@ async function body(req: Request): Promise<Record<string, unknown>> {
   try { const v = JSON.parse(t); return v && typeof v === 'object' ? v : {}; } catch { return {}; }
 }
 const deviceOf = (b: Record<string, unknown>) => (typeof b.device_id === 'string' && /^[\w-]{8,64}$/.test(b.device_id) ? b.device_id : null);
+const nameOf = (b: Record<string, unknown>) => String(b.device_name ?? 'Device').replace(/[^\p{L}\p{N} ._-]/gu, '').slice(0, 60) || 'Device';
 
 async function userBy(env: Env, field: 'email' | 'phone', value: string, name: string): Promise<string> {
   const row = await env.DB.prepare(`SELECT id FROM users WHERE ${field} = ?1`).bind(value).first<{ id: string }>();
@@ -123,7 +137,9 @@ export async function google(req: Request, env: Env): Promise<Response> {
   const g = await verifyGoogle(b.id_token, env.GOOGLE_CLIENT_ID);
   if (!g) return json({ error: 'invalid_token' }, 401);
   const id = await userBy(env, 'email', g.email, g.name || g.email.split('@')[0]);
-  return json({ ...(await issue(env, id, dev)), user: await profile(env, id) });
+  const lim = await deviceLimit(env, id, dev);
+  if (lim) return lim;
+  return json({ ...(await issue(env, id, dev, undefined, nameOf(b))), user: await profile(env, id) });
 }
 
 const ipKey = async (req: Request, env: Env) => 'otp:ip:' + (await hmac(env.JWT_SECRET, 'ip:' + (req.headers.get('CF-Connecting-IP') ?? 'unknown'))).slice(0, 32);
@@ -162,7 +178,9 @@ export async function otpVerify(req: Request, env: Env): Promise<Response> {
   const used = await env.DB.prepare('UPDATE otp_challenges SET consumed_at = ?2 WHERE id = ?1 AND consumed_at IS NULL').bind(ch.id, now).run();
   if (!used.meta.changes) return json({ error: 'invalid_code' }, 401);
   const id = await userBy(env, 'phone', phone, 'User ' + phone.slice(-4));
-  return json({ ...(await issue(env, id, dev)), user: await profile(env, id) });
+  const lim = await deviceLimit(env, id, dev);
+  if (lim) return lim;
+  return json({ ...(await issue(env, id, dev, undefined, nameOf(b))), user: await profile(env, id) });
 }
 
 export async function refresh(req: Request, env: Env): Promise<Response> {
@@ -193,4 +211,24 @@ export async function me(req: Request, env: Env): Promise<Response> {
   if (!user) return json({ error: 'unauthorized' }, 401);
   const ents = await env.DB.prepare('SELECT entitlement, expires_at FROM entitlements WHERE user_id = ?1 ORDER BY entitlement').bind(c.sub).all();
   return json({ user, entitlements: ents.results, now: deps.now() });
+}
+
+/** GET /api/devices (access token). */
+export async function devices(req: Request, env: Env): Promise<Response> {
+  const c = await auth(req, env);
+  if (!c) return json({ error: 'unauthorized' }, 401);
+  const r = await env.DB.prepare('SELECT device_id, name, last_seen_at FROM devices WHERE user_id = ?1 AND revoked_at IS NULL ORDER BY last_seen_at DESC').bind(c.sub).all();
+  return json({ devices: r.results, current: c.did ?? null, max: MAX_DEVICES });
+}
+
+/** DELETE /api/devices/:id with an access token or a device-limit removal token: revokes the device and its sessions. */
+export async function removeDevice(req: Request, env: Env, deviceId: string): Promise<Response> {
+  const m = /^Bearer ([\w-]+\.[\w-]+\.[\w-]+)$/.exec(req.headers.get('Authorization') ?? '');
+  const c = (await auth(req, env)) ?? (m ? await verify(m[1], env.JWT_SECRET, 'devrm') : null);
+  if (!c) return json({ error: 'unauthorized' }, 401);
+  const now = deps.now();
+  const r = await env.DB.prepare('UPDATE devices SET revoked_at = ?3 WHERE user_id = ?1 AND device_id = ?2 AND revoked_at IS NULL').bind(c.sub, deviceId, now).run();
+  if (!r.meta.changes) return json({ error: 'not_found' }, 404);
+  await env.DB.prepare('UPDATE sessions SET revoked_at = ?3 WHERE user_id = ?1 AND device_id = ?2 AND revoked_at IS NULL').bind(c.sub, deviceId, now).run();
+  return json({ ok: true });
 }
