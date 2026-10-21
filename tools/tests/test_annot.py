@@ -22,6 +22,7 @@ class AnnotBrowser(unittest.TestCase):
     def tearDownClass(cls): cls.b.close(); cls.p.stop()
     def page(self, w=1024, h=800, ctx=None):
         pg = ctx.new_page() if ctx else self.b.new_page(viewport={'width': w, 'height': h}); self.errs = []; self.dialogs = []
+        pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
         pg.goto(URL + '#/05'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(300); return pg
     def open_card(self, pg, n=0):

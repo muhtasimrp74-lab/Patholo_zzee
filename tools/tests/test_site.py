@@ -119,6 +119,7 @@ class Browser(unittest.TestCase):
     def tearDownClass(cls): cls.b.close(); cls.p.stop()
     def page(self, h='#/'):
         pg = self.b.new_page(); self.errs = []; self.dialogs = []
+        pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
         pg.goto(URL + h); pg.wait_for_timeout(500); return pg
     def imp(self, pg, obj):

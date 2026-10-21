@@ -22,6 +22,7 @@ class Polish(unittest.TestCase):
     def page(self, w=1024, h=800, dpr=1):
         ctx = self.b.new_context(viewport={'width': w, 'height': h}, device_scale_factor=dpr); self.ctx = ctx
         pg = ctx.new_page(); self.errs = []; self.dialogs = []
+        pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
         pg.goto(URL + '#/05'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(300); return pg
     def open_card(self, pg):
