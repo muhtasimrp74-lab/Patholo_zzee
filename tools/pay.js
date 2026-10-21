@@ -9,7 +9,7 @@
   function open(html) {
     if (!dlg) {
       dlg = document.createElement('dialog'); dlg.id = 'zz-pay'; dlg.className = 'zz-dlg'; dlg.setAttribute('aria-labelledby', 'zz-pay-h');
-      var x = document.createElement('button'); x.type = 'button'; x.className = 'zz-x'; x.setAttribute('aria-label', 'Close'); x.textContent = '\u00d7';
+      var x = document.createElement('button'); x.type = 'button'; x.className = 'zz-x'; x.setAttribute('aria-label', 'Close'); x.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
       x.onclick = function () { dlg.close(); }; body = document.createElement('div'); dlg.append(x, body); document.body.appendChild(dlg);
     }
     body.innerHTML = html;
@@ -26,9 +26,15 @@
     open('<h2 id="zz-pay-h">Choose a plan</h2><p class="zz-st" role="status">Loading prices\u2026</p>');
     api('bundles').then(function (j) {
       if (!j.bundles) { body.querySelector('.zz-st').textContent = 'Could not load prices. Check your connection and try again.'; return; }
-      body.innerHTML = '<h2 id="zz-pay-h">Choose a plan</h2><p>Each plan lasts one year. Buying again adds another year.</p><ul class="zz-plans">' + j.bundles.map(function (b) {
-        return '<li><button type="button" class="zz-plan' + (b.id === 'ALL' ? ' zz-best' : '') + '" data-b="' + esc(b.id) + '"><b>' + esc(b.name) +
-          (b.id === 'ALL' ? '<small>Questions, MCQs and the textbook</small>' : '') + '</b><span>' + money(Math.round(Number(b.price) * 100), b.currency) + '</span></button></li>';
+      var cents = function (b) { return Math.round(Number(b.price) * 100); }, sum = 0, all = null;
+      j.bundles.forEach(function (b) { if (b.id === 'ALL') all = b; else sum += cents(b); });
+      var save = all && sum > cents(all) ? sum - cents(all) : 0;
+      var WHAT = { QNA: 'Every viva and written answer', MCQ: 'All MCQ chapters with explanations', TEXTBOOK: 'Every Robbins chapter, offline too',
+        ALL: 'Questions, MCQs and the textbook' + (save ? ' \u00b7 save ' + money(save, all.currency) : '') };
+      var order = (all ? [all] : []).concat(j.bundles.filter(function (b) { return b.id !== 'ALL'; }));  // best value first
+      body.innerHTML = '<h2 id="zz-pay-h">Choose a plan</h2><p>One year of access. Buying again adds another year.</p><ul class="zz-plans">' + order.map(function (b) {
+        return '<li><button type="button" class="zz-plan' + (b.id === 'ALL' ? ' zz-best' : '') + '" data-b="' + esc(b.id) + '">' + (b.id === 'ALL' ? '<i class="zz-badge">Best value</i>' : '') +
+          '<span class="zz-pt"><b>' + esc(NAMES[b.id] || b.name) + '</b><small>' + esc(WHAT[b.id] || '') + '</small></span><span class="zz-pr">' + money(cents(b), b.currency) + '</span></button></li>';
       }).join('') + '</ul><p id="zz-pay-msg" class="zz-st" role="status"></p>' + LEGAL;
       body.querySelectorAll('button[data-b]').forEach(function (btn) {
         btn.onclick = function () {
@@ -51,7 +57,7 @@
       if (polling !== id) return;
       var st = j.order && j.order.status, r = j.receipt;
       if (st === 'paid' && r) {
-        open('<h2 id="zz-pay-h">Payment received</h2><p>Your plan is active. The locked topics open now.</p><div id="zz-receipt" class="zz-receipt">' +
+        open('<span class="zz-done" aria-hidden="true"><svg class="zz-ico" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h2 id="zz-pay-h">Payment received</h2><p>Your plan is active. The locked topics open now.</p><div id="zz-receipt" class="zz-receipt">' +
           '<p><span>Receipt</span><b>' + esc(r.receipt_no) + '</b></p><p><span>Plan</span>' + esc(NAMES[r.bundle] || r.bundle) + '</p>' +
           '<p><span>Paid</span>' + money(r.amount_minor, r.currency) + '</p><p><span>Date</span>' + esc(new Date(r.issued_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })) + '</p></div>' +
           '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close()">Done</button>' + LEGAL);

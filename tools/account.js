@@ -60,6 +60,7 @@
     if (!dlg) {
       dlg = el('dialog', { id: 'zz-signin', class: 'zz-dlg', 'aria-labelledby': 'zz-si-h' });
       var x = el('button', { type: 'button', class: 'zz-x', 'aria-label': 'Close' }, '\u00d7');
+      x.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
       var g = el('div', { id: 'zz-g' }), or = el('p', { class: 'zz-or', hidden: '' }, 'or use your phone');
       var ph = el('input', { id: 'zz-phone', type: 'tel', inputmode: 'tel', autocomplete: 'tel', placeholder: '01XXXXXXXXX' });
       var code = el('input', { id: 'zz-code', inputmode: 'numeric', autocomplete: 'one-time-code', maxlength: '8', placeholder: '6-digit code' });

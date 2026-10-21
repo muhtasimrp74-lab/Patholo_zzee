@@ -6,7 +6,7 @@
   function show(html) {
     if (!dlg) {
       dlg = document.createElement('dialog'); dlg.id = 'zz-acct'; dlg.className = 'zz-dlg'; dlg.setAttribute('aria-labelledby', 'zz-acct-h'); box = document.createElement('div');
-      var c = document.createElement('button'); c.type = 'button'; c.className = 'zz-x'; c.setAttribute('aria-label', 'Close'); c.textContent = '\u00d7'; c.onclick = function () { dlg.close(); };
+      var c = document.createElement('button'); c.type = 'button'; c.className = 'zz-x'; c.setAttribute('aria-label', 'Close'); c.innerHTML = '<svg class="zz-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>'; c.onclick = function () { dlg.close(); };
       dlg.append(c, box); document.body.appendChild(dlg);
     }
     box.innerHTML = html; if (!dlg.open) dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', ''); var h = box.querySelector('h2'); if (h) { h.tabIndex = -1; h.focus(); }
