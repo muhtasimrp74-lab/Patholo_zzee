@@ -400,3 +400,144 @@ class Launch(unittest.TestCase):
         pg.fill('#zz-trx', 'bad!'); pg.click('#zz-trx-go'); self.assertIn('8 to 12', pg.text_content('#zz-trx-st')); self.assertEqual([p for p, _ in self.sent if p == 'pay/manual'], [])
         pg.fill('#zz-trx', '9k7ab12cde'); pg.click('#zz-trx-go'); pg.wait_for_selector('#zz-pending')
         self.assertIn(('pay/manual', '9K7AB12CDE'), self.sent); self.assertIn('checking', pg.text_content('#zz-pay').lower())
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class HomeTopics(unittest.TestCase):
+    """The home 'Topics and progress' table is built from the topic pages: one row per page, same title, same counts."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def test_rows_match_topic_pages(self):
+        ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        pg.route('**/api/**', lambda r: r.fulfill(status=401, json={}))
+        pg.goto('http://127.0.0.1:%d/index.html#/' % self.port); pg.wait_for_selector('#v-home .nh-ch')
+        rows = pg.evaluate(r"""()=>[...document.querySelectorAll('#v-home .nh-ch')].map(a=>({v:a.querySelector('h4 a').getAttribute('href').slice(2),t:a.querySelector('h4').textContent.trim(),
+            n:+/\/ (\d+) read/.exec(a.querySelector('.nh-mu').textContent)[1],s:[...a.querySelectorAll('li em')].reduce((x,e)=>x+ +e.textContent.split('/')[1],0)}))""")
+        pages = pg.evaluate(r"""()=>Object.fromEntries([...document.querySelectorAll('.view')].filter(v=>v.querySelector('article.card')).map(v=>[v.id.slice(2),{t:v.querySelector('h1').textContent.trim(),n:v.querySelectorAll('article.card').length}]))""")
+        self.assertEqual(sorted(r['v'] for r in rows), sorted(pages))
+        for r in rows:
+            self.assertEqual((r['t'], r['n']), (pages[r['v']]['t'], pages[r['v']]['n']), r['v'])
+            if r['s']: self.assertEqual(r['s'], r['n'], r['v'])
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class Greeting(unittest.TestCase):
+    """Premium greeting: part of day from local time, first name, a useful second line, plan badge; phone-sized screen."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def banner(self, hour, seed, signed=False, ents=()):
+        import datetime
+        ctx = self.b.new_context(viewport={'width': 390, 'height': 844}, service_workers='block', timezone_id='Asia/Dhaka'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        t = datetime.datetime(2026, 10, 22, hour, 5, tzinfo=datetime.timezone(datetime.timedelta(hours=6))); pg.clock.install(time=t)
+        seed = dict(seed, zzWelcomeAt=str(int(t.timestamp() * 1000) - 3600000))
+        if signed: seed['zz-rt'] = 'rt'
+        pg.add_init_script('(()=>{const d=%s;for(const k in d)localStorage.setItem(k,d[k])})()' % json.dumps(seed))
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path == 'auth/refresh' and signed: return route.fulfill(json={'access_token': _tok('u1'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'me': return route.fulfill(json={'user': {'id': 'u1', 'display_name': 'User 5678'}, 'entitlements': [{'entitlement': e, 'expires_at': 4102444800000} for e in ents], 'now': 0})
+            route.fulfill(status=401, json={})
+        pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html#/home' % self.port); pg.clock.run_for(2500); pg.wait_for_selector('.zz-welcome.on')
+        pg.wait_for_timeout(300); return pg
+    def test_returning_evening_continue_and_streak(self):
+        pg = self.banner(19, {'vivaState': json.dumps({'streak': {'n': 4}, 'learned': ['q7'], 'recent': ['q7']}), 'zzName': 'Muhtasim Ahmed'})
+        self.assertEqual(pg.text_content('.zz-welcome b'), 'Good evening, Muhtasim')
+        self.assertEqual(pg.get_attribute('.zz-welcome span a', 'href'), '#/02/q7'); self.assertIn('4-day streak', pg.text_content('.zz-welcome span'))
+        box = pg.locator('.zz-welcome').bounding_box(); self.assertLessEqual(box['x'] + box['width'], 390)
+        self.assertEqual(pg.evaluate("()=>getComputedStyle(document.querySelector('.zz-welcome')).position"), 'fixed', 'overlay: no layout shift')
+    def test_new_user_morning_first_step(self):
+        pg = self.banner(8, {'vivaState': '{}'})
+        self.assertEqual(pg.text_content('.zz-welcome b'), 'Good morning'); self.assertEqual(pg.get_attribute('.zz-welcome span a', 'href'), '#/01')
+    def test_late_night_plan_badges(self):
+        pg = self.banner(23, {'vivaState': '{}', 'zzName': 'Ann'}, signed=True, ents=('qna', 'mcq', 'textbook'))
+        self.assertEqual(pg.text_content('.zz-welcome b'), 'Studying late, Ann')
+        pg.wait_for_selector('.zz-welcome .zw-plan:not([hidden])'); self.assertEqual(pg.text_content('.zz-welcome .zw-plan'), 'All access')
+        pg2 = self.banner(14, {'vivaState': '{}'}, signed=True)
+        pg2.wait_for_selector('.zz-welcome .zw-plan:not([hidden])'); self.assertEqual(pg2.text_content('.zz-welcome .zw-plan'), 'Free plan')
+        self.assertEqual(pg2.text_content('.zz-welcome b'), 'Good afternoon', 'no generated "User 5678" name')
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class McqLearning(unittest.TestCase):
+    """MCQ quick wins: wrong answers are scheduled for review (1, 3, 7, 21 days) and come back as 'Due for review'; swipe moves between questions."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def mcq(self, pg):
+        return pg.evaluate("()=>{try{return (JSON.parse(zzStore.getItem('vivaState')||'{}').mcq)||{}}catch(e){return {}}}")
+    def test_wrong_answer_returns_as_due_and_swipe_moves(self):
+        import datetime
+        ctx = self.b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        pg.clock.install(time=datetime.datetime(2026, 10, 22, 10, 0, tzinfo=datetime.timezone.utc))
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()))")
+        pg.route('**/api/**', lambda r: r.fulfill(status=401, json={}))
+        pg.goto('http://127.0.0.1:%d/index.html#/mcqs' % self.port); pg.clock.run_for(1500); pg.wait_for_selector('#v-mcqs [data-a=quick]')
+        self.assertEqual(pg.locator('#v-mcqs [data-a=due]').count(), 0)
+        pg.click('#v-mcqs [data-a=quick]'); pg.wait_for_function("()=>document.body.classList.contains('mx-live')")
+        for _ in range(10):  # answer with 'a' until one is wrong (true/false items ignore letter keys: move on)
+            pg.keyboard.press('a'); pg.clock.run_for(200)
+            if self.mcq(pg).get('sr'): break
+            pg.keyboard.press('ArrowRight'); pg.clock.run_for(200)
+        sr = self.mcq(pg)['sr']; self.assertEqual(len(sr), 1)
+        due = list(sr.values())[0]['d']; now = pg.evaluate('()=>Date.now()')
+        self.assertAlmostEqual((due - now) / 864e5, 1, delta=0.01)
+        i0 = self.mcq(pg)['sess']['i']
+        swipe = """()=>{const el=document.querySelector('#v-mcqs .mx');const t=(x)=>new Touch({identifier:1,target:el,clientX:x,clientY:400});
+            el.dispatchEvent(new TouchEvent('touchstart',{touches:[t(320)],changedTouches:[t(320)],bubbles:true}));
+            el.dispatchEvent(new TouchEvent('touchend',{touches:[],changedTouches:[t(120)],bubbles:true}))}"""
+        pg.evaluate("()=>document.body.classList.add('an-on')"); pg.evaluate(swipe); pg.clock.run_for(200)
+        self.assertEqual(self.mcq(pg)['sess']['i'], i0, 'no swipe while annotating'); pg.evaluate("()=>document.body.classList.remove('an-on')")
+        pg.evaluate("""()=>{const el=document.querySelector('#v-mcqs .mx');const t=(x)=>new Touch({identifier:1,target:el,clientX:x,clientY:400});
+            el.dispatchEvent(new TouchEvent('touchstart',{touches:[t(320)],changedTouches:[t(320)],bubbles:true}));
+            el.dispatchEvent(new TouchEvent('touchend',{touches:[],changedTouches:[t(120)],bubbles:true}))}""")
+        pg.clock.run_for(200); self.assertEqual(self.mcq(pg)['sess']['i'], min(i0 + 1, 9), 'swipe left = next question')
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.clock.run_for(25 * 3600 * 1000); pg.evaluate("()=>{location.hash='#/mcqs/'};"); pg.clock.run_for(300)
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.clock.run_for(500); pg.wait_for_selector('#v-mcqs [data-a=due]')
+        self.assertIn('1 mistake to revisit today', pg.text_content('#v-mcqs [data-a=due]'))
+        pg.click('#v-mcqs [data-a=due]'); pg.clock.run_for(300)
+        self.assertEqual(self.mcq(pg)['sess']['scope'], 'Due for review')
+
+@unittest.skipUnless(HAVE_PW and HAVE_CHUNKS, 'playwright or private-chunks missing')
+class McqSession(unittest.TestCase):
+    """MCQ practice after gating: loaded chapters are playable, stale sessions do not crash, locked chapters prompt,
+    repeat visits reuse the user's own copy while the plan is active, and a busy server (429) is retried."""
+    setUpClass = classmethod(Loader.setUpClass.__func__); tearDownClass = classmethod(Loader.tearDownClass.__func__)
+    def page(self, signed, seed=None, h='#/mcqs', ents=('mcq',), busy=0):
+        ctx = self.b.new_context(viewport={'width': 390, 'height': 844}, service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
+        self.errs = []; self.hits = []; self.busy = busy; pg.on('pageerror', lambda e: self.errs.append(str(e)))
+        init = "localStorage.setItem('zzWelcomeAt',String(Date.now()));"
+        if signed: init += "localStorage.setItem('zz-rt','rt');"
+        if seed: init += "if(!sessionStorage.getItem('s')){sessionStorage.setItem('s',1);localStorage.setItem('vivaState',%s)}" % json.dumps(json.dumps(seed))
+        pg.add_init_script(init)
+        def api(route):
+            path = route.request.url.split('/api/')[1]
+            if path == 'auth/refresh': return route.fulfill(json={'access_token': _tok('u1'), 'refresh_token': 'rt', 'expires_in': 900})
+            if path == 'me': return route.fulfill(json={'user': {'id': 'u1'}, 'entitlements': [{'entitlement': e, 'expires_at': 4102444800000} for e in self.ents], 'now': 0})
+            if path.startswith('chunks/'):
+                self.hits.append(path)
+                if not signed: return route.fulfill(status=401, json={'error': 'unauthorized'})
+                if self.busy: self.busy -= 1; return route.fulfill(status=429, headers={'Retry-After': '1'}, json={'error': 'rate_limited'})
+                if 'mcq' not in self.ents: return route.fulfill(status=403, json={'error': 'forbidden'})
+                return route.fulfill(body=open(os.path.join(ROOT, 'private-chunks', path[7:]), 'rb').read(), content_type='application/json')
+            route.fulfill(status=404, json={})
+        self.ents = ents; pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html%s' % (self.port, h)); return pg
+    live = "()=>document.body.classList.contains('mx-live')"
+    def test_paid_chapter_two_is_playable(self):
+        pg = self.page(True); pg.wait_for_function('()=>MCQDATA.q.length===884')
+        pg.evaluate("()=>[...document.querySelectorAll('#v-mcqs [data-a=chap]')][1].click()"); pg.wait_for_function(self.live)
+        pg.keyboard.press('a'); pg.keyboard.press('ArrowRight'); pg.wait_for_timeout(200); self.assertEqual(self.errs, [])
+    def test_stale_session_and_locked_chapter_for_free_visitor(self):
+        g = [q['h'] for q in json.load(open(os.path.join(ROOT, 'private-chunks', 'mcq-02.json')))['q'][:3]]
+        f = [q['h'] for q in json.load(open(os.path.join(ROOT, 'private-chunks', 'mcq-01.json')))['q'][:2]]
+        seed = {'mcq': {'sess': {'ids': g + f, 'i': 0, 'ans': {}, 'chk': {}, 'mode': 'practice', 't0': 0, 'el': 0, 'limit': 0, 'scope': 'Old', 'n': 5, 'fl': {}}}}
+        pg = self.page(False, seed, '#/mcqs/run'); pg.wait_for_function(self.live); pg.wait_for_timeout(300); self.assertEqual(self.errs, [])
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.wait_for_selector('#v-mcqs [data-a=chap]', state='attached')
+        pg.evaluate("()=>[...document.querySelectorAll('#v-mcqs [data-a=chap]')][3].click()"); pg.wait_for_function("()=>document.getElementById('zz-signin').open")
+    def test_repeat_visit_uses_own_copy_while_plan_active_and_busy_is_retried(self):
+        pg = self.page(True, busy=1); pg.wait_for_function('()=>MCQDATA.q.length===884', timeout=20000)
+        n = len(self.hits); self.assertEqual(n, 17, 'one 429 retried once, then 16 chapters')
+        pg.wait_for_function("()=>caches.open('zz-chunks-u1').then(c=>c.keys()).then(k=>k.length===16)")  # copies saved
+        pg.reload(); pg.wait_for_function('()=>MCQDATA.q.length===884'); self.assertEqual(len(self.hits), n, 'no chunk requests on the second visit')
+        self.ents = (); pg.reload(); pg.wait_for_selector('.zz-banner button'); self.assertGreater(len(self.hits), n, 'expired plan: asks the server again')
+        self.assertEqual(pg.evaluate("()=>caches.keys().then(k=>k.filter(x=>x.startsWith('zz-chunks-')))"), [], 'and the copy is wiped')
+    def test_builder_start_and_mock_paper_play_with_all_chapters(self):
+        # the reported bug: with all chapters loaded, "Start practice" and "Mock paper" crashed and the page stayed put
+        for h, click in (('#/mcqs/custom', "()=>[...document.querySelectorAll('#v-mcqs button')].find(b=>b.textContent.trim()==='Start practice').click()"),
+                         ('#/mcqs', "()=>document.querySelector('#v-mcqs [data-a=mock]').click()")):
+            pg = self.page(True, h=h); pg.wait_for_function('()=>MCQDATA.q.length===884'); pg.wait_for_timeout(300)
+            pg.evaluate(click); pg.wait_for_function(self.live); pg.wait_for_timeout(300)
+            self.assertEqual(self.errs, [], h)
+            self.assertTrue(pg.evaluate("()=>/of\\s*\\d+/.test(document.querySelector('#v-mcqs').innerText)"), 'a question is on screen')
