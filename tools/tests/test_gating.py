@@ -408,7 +408,7 @@ class HomeTopics(unittest.TestCase):
     def test_rows_match_topic_pages(self):
         ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
         pg.route('**/api/**', lambda r: r.fulfill(status=401, json={}))
-        pg.goto('http://127.0.0.1:%d/index.html#/' % self.port); pg.wait_for_selector('#v-home .nh-ch')
+        pg.goto('http://127.0.0.1:%d/index.html#/' % self.port); pg.wait_for_selector('#v-home .nh-ch', state='attached')  # the rows sit in the folded 'More stats' section
         rows = pg.evaluate(r"""()=>[...document.querySelectorAll('#v-home .nh-ch')].map(a=>({v:a.querySelector('h4 a').getAttribute('href').slice(2),t:a.querySelector('h4').textContent.trim(),
             n:+/\/ (\d+) read/.exec(a.querySelector('.nh-mu').textContent)[1],s:[...a.querySelectorAll('li em')].reduce((x,e)=>x+ +e.textContent.split('/')[1],0)}))""")
         pages = pg.evaluate(r"""()=>Object.fromEntries([...document.querySelectorAll('.view')].filter(v=>v.querySelector('article.card')).map(v=>[v.id.slice(2),{t:v.querySelector('h1').textContent.trim(),n:v.querySelectorAll('article.card').length}]))""")

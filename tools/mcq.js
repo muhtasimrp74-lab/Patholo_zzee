@@ -110,13 +110,16 @@
    <article class="mx-card" data-h="${q.h}">${metaRow(q,(rv?'':`<button type="button" class="mx-bm mx-fg" data-a="flag" aria-pressed="${!!fl[q.h]}" aria-label="Flag for review" title="Flag to come back to (F)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4M6 5h11l-2 4 2 4H6"/></svg></button>`)+bmBtn(q))}<h3>${E(q.q)}</h3>${q.y?'<p class="mx-hint">Mark each statement True or False.</p>':''}
    <div class="mx-opts">${body(q,{ans:a,fb,lock,notes:true})}</div>${fb?verdict+bareAns(q):''}${qaRow(q)}</article>
    <div class="mx-act">${act}</div><div class="mx-pal" id="mx-pal" hidden></div></div>`;
-  if(!rv)startTimer();if(_ri===_k)window.scrollTo(0,_y);else window.scrollTo(0,0);_ri=_k;const cu=M.querySelector('.mx-strip .cur');if(cu&&cu.scrollIntoView)cu.scrollIntoView({inline:'center',block:'nearest'})}
+  if(!rv)startTimer();if(WIDE.matches)palette(true);if(_ri===_k)window.scrollTo(0,_y);else window.scrollTo(0,0);_ri=_k;const cu=M.querySelector('.mx-strip .cur');if(cu&&cu.scrollIntoView)cu.scrollIntoView({inline:'center',block:'nearest'})}
  function startTimer(){clearInterval(tid);if(!sess||sess.review)return;tid=setInterval(()=>{if(!sess){clearInterval(tid);return}
   const e=elapsed(),t=document.getElementById('mx-timer');if(sess.limit&&e>=sess.limit){finish();return}
   if(t){t.textContent=sess.limit?fmt(sess.limit-e):fmt(e);t.classList.toggle('low',!!sess.limit&&sess.limit-e<60)}
   if(((e|0)%10)===0)persist()},1000)}
- function palette(){const s=sess,el=document.getElementById('mx-pal');if(!el)return;
-  if(!el.hidden){el.hidden=true;return}
+ /* wide screens (desktop, Android tablets in landscape) keep the question list open as a side column (mcq.css), redrawn with each question */
+ const WIDE=matchMedia('(min-width:1100px)');
+ WIDE.addEventListener('change',()=>{const el=document.getElementById('mx-pal');if(!el||!sess)return;if(WIDE.matches)palette(true);else el.hidden=true});
+ function palette(keep){const s=sess,el=document.getElementById('mx-pal');if(!el)return;
+  if(!keep&&!el.hidden){el.hidden=true;return}
   const rv=s.review,exam=s.mode==='exam'&&!rv;
   el.innerHTML=`<div class="mx-pal-in" role="dialog" aria-label="Question list"><div class="mx-pal-h"><b>Questions</b><button type="button" class="mx-ib" data-a="pal" aria-label="Close">${ic.x}</button></div><div class="mx-pal-g">`+
    s.ids.map((h,i)=>{const q=BY[h],an=answered(q,s);let c='';
