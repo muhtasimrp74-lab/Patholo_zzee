@@ -2350,11 +2350,21 @@ html body #an-fab:not(:has(#an-fab-on[aria-pressed=true])) #an-fab-on{width:44px
 .zq-go{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:12px;background:var(--burgundy);color:#fff;font:600 .9rem/1 var(--body);text-decoration:none}
 .zq-go:focus-visible{outline:2px solid var(--burgundy);outline-offset:3px}
 
-/* footer: full credits on Home, one slim line elsewhere */
+/* footer: full credits on Home; a compact footer on every other page */
 html.zq-inner footer.sf :is(.sf-hero,.sf-main){display:none}
-footer.sf .zq-legal{display:none;margin:0 0 10px;font-size:.875rem;line-height:1.6;color:inherit;opacity:.85}
-html.zq-inner footer.sf .zq-legal{display:block}
-footer.sf .zq-legal a{margin-left:12px;color:inherit;text-underline-offset:3px}
+footer.sf .zq-legal{display:none}
+footer.sf .zq-foot{display:none}
+html.zq-inner footer.sf .zq-foot{display:grid;gap:22px;max-width:var(--w,1120px);margin:0 auto;padding:36px var(--gut,20px) 8px;box-sizing:border-box}
+.zq-fn{margin:0 0 6px;font:400 1.6rem/1.1 var(--disp);color:#FFF8EC}
+.zq-fd{margin:0;max-width:46ch;font-size:.92rem;line-height:1.55;opacity:.78}
+.zq-fl{display:grid;grid-template-columns:repeat(4,max-content);gap:10px 26px}
+.zq-fl a,.zq-fg a{color:inherit;text-decoration:none;font-weight:500;padding:6px 0}
+.zq-fl a:hover,.zq-fg a:hover{text-decoration:underline;text-underline-offset:3px}
+.zq-fm{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;padding-top:18px;border-top:1px solid rgba(248,235,213,.14);font-size:.88rem}
+.zq-fm p{margin:0;opacity:.85}.zq-fm b{font-weight:600}
+.zq-fg{display:flex;gap:20px}
+@media(max-width:560px){.zq-fl{grid-template-columns:repeat(4,1fr);gap:4px 12px}.zq-fl a{font-size:.9rem}}
+@media(min-width:900px){html.zq-inner footer.sf .zq-foot{grid-template-columns:minmax(0,1fr) auto;align-items:start;column-gap:48px}.zq-fm{grid-column:1/-1}}
 
 /* Undo toast, above the bottom bar */
 .zq-toast{position:fixed;z-index:85;left:50%;bottom:calc(var(--bn-h,0px) + 14px + env(safe-area-inset-bottom,0px));transform:translate(-50%,12px);opacity:0;pointer-events:none;
@@ -2372,13 +2382,18 @@ footer.sf .zq-legal a{margin-left:12px;color:inherit;text-underline-offset:3px}
  html body .view .bar .chips>*{flex:none}
 }
 
-/* Previous / Next question at the end of an open answer */
-.zq-qn{display:flex;justify-content:space-between;gap:10px;margin:20px 0 4px;padding-top:14px;border-top:1px solid var(--line)}
-.zq-qn button{min-height:44px;padding:0 16px;border:1px solid var(--line2);border-radius:12px;background:var(--panel);color:var(--text);font:600 .9rem/1 var(--body);cursor:pointer}
-.zq-qn button:hover:not(:disabled){border-color:color-mix(in srgb,var(--burgundy) 45%,var(--line2))}
-.zq-qn button:disabled{opacity:.4;cursor:default}
+/* Previous / Next question: only in Calm reading, as one bar at the end of the answer */
+.zq-qn{display:none}
+body.calm .zq-qn{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:22px 0 2px;padding:6px;border-radius:14px;background:var(--soft);border:1px solid var(--line)}
+.zq-qn button{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border:0;border-radius:10px;background:transparent;color:var(--text);font:600 .9rem/1 var(--body);cursor:pointer}
+.zq-qn button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.zq-qn button[data-d="1"]{background:var(--burgundy);color:#fff;padding:0 16px 0 18px}
+.zq-qn button:hover:not(:disabled){background:var(--panel)}
+.zq-qn button[data-d="1"]:hover:not(:disabled){background:color-mix(in srgb,var(--burgundy) 88%,#000)}
+.zq-qn button:disabled{opacity:.35;cursor:default}
 .zq-qn button:focus-visible{outline:2px solid var(--burgundy);outline-offset:2px}
-@media print{.zq-qn{display:none}}
+.zq-qp{font:500 .85rem/1 var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
+@media print{.zq-qn{display:none!important}}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -4867,13 +4882,16 @@ function empty(k){
 }
 if(typeof render==='function'){const r0=render;window.render=function(k){const o=r0.apply(this,arguments);try{empty(k)}catch(e){}return o}}
 
-/* --- footer: the full credits on Home; one slim line on every other page --- */
+/* --- footer: the full credits on Home; a compact footer (brand, main links, credit, legal) on every other page --- */
 function foot(){
  const home=!location.hash||/^#\/?(home)?$/.test(location.hash);document.documentElement.classList.toggle('zq-inner',!home);
- const bot=$('footer.sf .sf-bot');if(bot&&!$('.zq-legal',bot)){const l=document.createElement('p');l.className='zq-legal';
-  l.innerHTML='Made by Muhtasim Ahmed, Netrokona Medical College. <a href="terms.html">Terms</a> <a href="privacy.html">Privacy</a> <a href="refund.html">Refunds</a>';bot.prepend(l)}
+ const f=$('footer.sf'),bot=f&&$('.sf-bot',f);if(!bot||$('.zq-foot',f))return;
+ const z=document.createElement('div');z.className='zq-foot';
+ z.innerHTML='<div class="zq-fb"><p class="zq-fn">Patholo_zzee</p><p class="zq-fd">Pathology viva, written and MCQ revision, built around the NMC viva list and Robbins 11th edition.</p></div>'+
+  '<nav class="zq-fl" aria-label="Site">'+[['#/','Home'],['#/questions','Questions'],['#/qa','Chapters'],['#/mcqs','MCQs'],['#/textbook','Textbook'],['#/practice','Practice'],['#/bookmarks','Bookmarks'],['#/notes','Notes']].map(x=>'<a href="'+x[0]+'">'+x[1]+'</a>').join('')+'</nav>'+
+  '<div class="zq-fm"><p>Created by <b>Muhtasim Ahmed</b>, Netrokona Medical College, Session 2022-23</p><p class="zq-fg"><a href="terms.html">Terms of use</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a></p></div>';
+ f.insertBefore(z,bot);
 }
-
 /* --- Undo after removing a bookmark, favourite or learned mark --- */
 const NAME={bm:'Removed from Bookmarks',fav:'Removed from Favourites',learned:'Marked as not learned'};
 let tb=null,tt=0;
@@ -4909,10 +4927,10 @@ const cardsOf=c=>{const v=c.closest('.view,main')||document;return [...v.querySe
 function qnav(c){
  const a=c.querySelector('.ans');if(!a||a.querySelector(':scope > .zq-qn'))return;
  const n=document.createElement('nav');n.className='zq-qn';n.setAttribute('aria-label','Move between questions');
- n.innerHTML='<button type="button" data-d="-1">‹ Previous question</button><button type="button" data-d="1">Next question ›</button>';
+ n.innerHTML='<button type="button" data-d="-1" aria-label="Previous question"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg><span>Previous</span></button><span class="zq-qp"></span><button type="button" data-d="1" aria-label="Next question"><span>Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>';
  a.append(n);qsync(c);
 }
-function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf(c),i=l.indexOf(c);n.querySelector('[data-d="-1"]').disabled=i<=0;n.querySelector('[data-d="1"]').disabled=i<0||i>=l.length-1}
+function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf(c),i=l.indexOf(c);n.querySelector('.zq-qp').textContent=i>=0?(i+1)+' of '+l.length:'';n.querySelector('[data-d="-1"]').disabled=i<=0;n.querySelector('[data-d="1"]').disabled=i<0||i>=l.length-1}
 function qgo(c,d){
  const l=cardsOf(c),t=l[l.indexOf(c)+d];if(!t)return;
  const bar=t.closest('.view')&&t.closest('.view').querySelector('.bar'),off=(bar&&getComputedStyle(bar).position==='sticky'?bar.getBoundingClientRect().height:0)+72;
@@ -4926,13 +4944,13 @@ document.addEventListener('click',e=>{
  const b=e.target.closest&&e.target.closest('.zq-qn button');if(b){e.preventDefault();qgo(b.closest('article.card'),+b.dataset.d)}
 });
 let tx=0,ty=0,tc=null;
-document.addEventListener('touchstart',e=>{const a=e.target.closest&&e.target.closest('article.card .ans');tc=null;if(!a||document.body.classList.contains('an-on')||e.touches.length>1)return;
+document.addEventListener('touchstart',e=>{const a=e.target.closest&&e.target.closest('article.card .ans');tc=null;if(!a||!document.body.classList.contains('calm')||document.body.classList.contains('an-on')||e.touches.length>1)return;   /* swipe only in Calm reading */
  for(let x=e.target;x&&x!==a;x=x.parentElement)if(x.scrollWidth>x.clientWidth+4&&/auto|scroll/.test(getComputedStyle(x).overflowX))return;   /* a table that scrolls sideways */
  tc=a.closest('article.card');tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
 document.addEventListener('touchend',e=>{if(!tc)return;const t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty,c=tc;tc=null;if(Math.abs(dx)>80&&Math.abs(dy)<45)qgo(c,dx<0?1:-1)},{passive:true});
 
 const all=()=>{aa();foot();practice();watch();['bm','fav','notes'].forEach(k=>{try{empty(k)}catch(e){}})};
-all();addEventListener('hashchange',()=>setTimeout(all,0));addEventListener('load',()=>setTimeout(all,300));
+all();addEventListener('hashchange',()=>setTimeout(all,0));document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-z=calm],#tools [data-t=calm]'))setTimeout(()=>document.querySelectorAll('.zq-qn').forEach(n=>qsync(n.closest('article.card'))),0)});addEventListener('load',()=>setTimeout(all,300));
 }catch(e){}})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
