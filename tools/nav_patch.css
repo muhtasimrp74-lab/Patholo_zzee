@@ -29,6 +29,8 @@
 .zm-chip{display:inline-flex;align-items:center;min-height:24px;padding:0 11px;border-radius:999px;border:1px solid rgba(248,235,213,.42);font:600 .78rem/1 var(--body);letter-spacing:.01em;color:var(--zm-cream)}
 .zm-chip.zm-paid{border-color:transparent;background:var(--zm-gold);color:var(--zm-ox2)}
 .zm-when{font-variant-numeric:tabular-nums}
+.zm-retry{appearance:none;margin:0 0 0 4px;padding:6px 2px;border:0;background:none;color:var(--zm-cream);font:600 .875rem/1 var(--body);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.zm-retry:focus-visible{outline:2px solid var(--zm-gold);outline-offset:2px;border-radius:4px}
 .zm-acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px}
 .zm-acts>*{flex:1 1 auto;white-space:nowrap}  /* side by side when both fit, else one per line */
 .zm-cta,.zm-ghost{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:12px;font:600 .95rem/1.1 var(--body);text-align:center;text-decoration:none;cursor:pointer;

@@ -54,7 +54,7 @@
     }
     M.innerHTML = '<p class="zz-st" role="status">Loading your account\u2026</p>';
     var get = function (p) { return fetch(API + p, { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; }, function () { return {}; }); };
-    Promise.all([zzAccount.me(), get('devices'), get('pay/orders')]).then(function (x) {
+    (zzAccount.fresh ? zzAccount.fresh() : Promise.resolve()).then(function () { return Promise.all([zzAccount.me().catch(function () { return null; }), get('devices'), get('pay/orders')]); }).then(function (x) {
       var me = x[0] || {}, d = x[1] || {}, ords = (x[2] || {}).orders || [], u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
       var plan = ents.length ? ents.map(function (e) {
         var on = e.expires_at > now;

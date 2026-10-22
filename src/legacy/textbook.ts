@@ -47,7 +47,25 @@ type Rec=Record<string,any>;
  function onScroll(){if(!cur){P.style.display='none';layout();return}const h=document.documentElement.scrollHeight-innerHeight,r=h>0?Math.min(1,Math.max(0,scrollY/h)):0;P.style.display='block';(P.firstChild as HTMLElement).style.width=(r*100)+'%';
   if(!lf)lf=requestAnimationFrame(()=>{lf=0;layout()});
   SB.classList.add('show');clearTimeout(pt);pt=setTimeout(()=>SB.classList.remove('show'),1000);
-  clearTimeout(tkr);tkr=setTimeout(()=>{if(cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o)}},400)}
+  clearTimeout(tkr);tkr=setTimeout(()=>{if(cur&&location.hash.split('/')[2]===cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o);mark(cur,o[cur])}},400)}  /* only while this chapter is still open */
+ /* where you are on this device (tbAt, not synced): the paragraph at the top of the screen, how far down it sits, and the sections you closed */
+ function mark(ch:any,r:any){const bd:any=T.querySelector('#tbbody');if(!bd||bd.dataset.ch!==ch)return;
+  let a:any=null;const hit:any=document.elementFromPoint(innerWidth/2,120);if(hit&&bd.contains(hit))a=hit.closest('[data-b]');
+  if(!a)for(const e of bd.querySelectorAll('[data-b]') as any){const q=e.getBoundingClientRect();if(q.height&&q.bottom>96){a=e;break}}
+  const o=J('tbAt');o[ch]={b:a?a.dataset.b:'',o:a?Math.round(a.getBoundingClientRect().top):0,r,s:[...bd.querySelectorAll('.tbs.shut')].map((x:any)=>x.dataset.a).filter(Boolean),t:Date.now()};
+  const ks=Object.keys(o);if(ks.length>40)ks.sort((x,y)=>(o[x].t||0)-(o[y].t||0)).slice(0,ks.length-40).forEach(k=>delete o[k]);W('tbAt',o)}
+ /* reopen a chapter as you left it: close the same sections, then put the same paragraph back at the same height; repeat briefly while
+    figures load, unless you start scrolling. Falls back to the synced fraction when that is newer (read further on another device). */
+ function resume(ch:any,s:any,my:any){const m:any=J('tbAt')[ch];if(!m||typeof m!=='object'||!m.b)return false;
+  if(typeof s==='number'&&(s<=.02||s>=.97||(typeof m.r==='number'&&Math.abs(m.r-s)>.01)))return false;
+  const bd:any=T.querySelector('#tbbody'),q=(v:any)=>String(v).replace(/["\\]/g,'');
+  if(Array.isArray(m.s))m.s.forEach((a:any)=>{const x=bd.querySelector('.tbs[data-a="'+q(a)+'"]');if(x)tog(x,false)});
+  const el:any=bd.querySelector('[data-b="'+q(m.b)+'"]');if(!el)return false;
+  const sec=el.closest('.tbs');if(sec&&sec.classList.contains('shut'))tog(sec,true);
+  const off=Number.isFinite(+m.o)?+m.o:0;let mine=false;const stop=()=>{mine=true};
+  ['wheel','touchstart','keydown'].forEach(e=>addEventListener(e,stop,{once:true,passive:true,capture:true}));
+  const go=()=>{if(mine||my!==tok||!el.isConnected)return;const y=scrollY+el.getBoundingClientRect().top-off;if(Math.abs(y-scrollY)>1)scrollTo(0,Math.max(0,y))};
+  go();[60,250,600,1200].forEach(t=>setTimeout(go,t));return true}
  addEventListener('scroll',onScroll,{passive:true});
 
  /* ---------- home: progress, continue card, search + filters, chapters by part ---------- */
@@ -87,7 +105,7 @@ type Rec=Record<string,any>;
   T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
   T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);
   try{const h:string=await (window as any).zzChapter(c.id);if(my!==tok)return;{const bd=T.querySelector('#tbbody');bd.innerHTML=h;bd.dataset.ch=c.id;window.Annot&&Annot.tbAttach&&Annot.tbAttach()}
-   if(p[2]&&goBlock(p[2],p[3],my))return;const s=J('tbPos')[c.id];if(s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}
+   if(p[2]&&goBlock(p[2],p[3],my))return;const s=J('tbPos')[c.id];if(!resume(c.id,s,my)&&s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}
   catch(e){if(my===tok)T.querySelector('#tbbody').innerHTML='<div class="mempty"><b>Chapter not available offline yet</b>Connect once to download it.</div>'}}
  /* deep link from an answer: #/textbook/<chapter>/<block id>/<question id> -> open the section, scroll to and flash the paragraph, offer a way back */
  function goBlock(b:any,q:any,my:any){const bd=T.querySelector('#tbbody');let el:any=null;try{el=bd.querySelector('[data-b="'+decodeURIComponent(b).replace(/"/g,'')+'"]')}catch(e){}

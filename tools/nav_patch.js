@@ -81,10 +81,12 @@
    label:k.length>=3?'All access':k.length?'Pro: '+k.map(e=>({qna:'Questions',mcq:'MCQs',textbook:'Textbook'})[e]||e).join(' + '):'Free plan'}}
  let ME=null,meAt=0,meP=null;
  function me(){const a=window.zzAccount;if(!a||!a.signedIn()||!a.me)return Promise.resolve(null);if(ME&&Date.now()-meAt<6e4)return Promise.resolve(ME);
-  return meP||(meP=a.me().then(m=>{meP=null;if(m){ME=m;meAt=Date.now();if(m.user&&a.setUser)a.setUser(m.user)}return m},()=>{meP=null;return null}))}
+  /* resolves the account, or {_e:'offline'} only when the browser says it is offline, else {_e:'error'} (server or sign-in trouble) */
+  return meP||(meP=a.me().then(m=>{meP=null;if(m){ME=m;meAt=Date.now();if(m.user&&a.setUser)a.setUser(m.user);return m}return{_e:navigator.onLine===false?'offline':'error'}},
+   ()=>{meP=null;return{_e:navigator.onLine===false?'offline':'error'}}))}
  let IDS=null;function learned(){try{if(!IDS)IDS=new Set(DATA.map(d=>d[3]));return[S.learned.filter(i=>IDS.has(i)).length,IDS.size]}catch(e){return[0,0]}}
  const card=$x('#zm-card');
- function paint(w,p,offline){
+ function paint(w,p,err){
   const ini=initials(w.name,w.contact),gold=!!(p&&p.paid);
   const av='<div class="zm-av'+(gold?' zm-gold':'')+'" aria-hidden="true">'+(ini?esc(ini):'<svg viewBox="0 0 24 24">'+I.me+'</svg>')+'</div>';
   let title=w.name||'Your account',sub='',status='',acts='';
@@ -95,7 +97,7 @@
   }else{
    sub=w.contact?'<p class="zm-mail">'+esc(w.contact)+'</p>':'';
    if(p){status='<span class="zm-chip'+(p.paid?' zm-paid':'')+'">'+esc(p.label)+'</span>'+(p.paid?'<span class="zm-when">'+(p.days<=7?'Ends in '+p.days+(p.days===1?' day':' days'):'Active until '+esc(day(p.end)))+'</span>':'')}
-   else status='<span class="zm-when">'+(offline?'Your plan shows when you’re online.':'Loading your plan…')+'</span>';
+   else status='<span class="zm-when">'+(err==='offline'?'You’re offline. Your plan shows when you reconnect.':err?'Couldn’t load your plan. <button type="button" class="zm-retry" data-a="retry">Try again</button>':'Loading your plan…')+'</span>';
    const soon=p&&p.paid&&p.days<=7;
    acts=p&&!p.paid?'<button type="button" class="zm-cta" data-a="up">Choose a plan</button><a class="zm-ghost" href="#/account">Manage account</a>'
     :soon?'<button type="button" class="zm-cta" data-a="up">Renew plan</button><a class="zm-ghost" href="#/account">Manage account</a>'
@@ -108,6 +110,7 @@
   card.classList.toggle('zm-out',!w.si);
   card.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{const a=b.dataset.a;
    if(a==='up'){window.zzUpgrade&&zzUpgrade();return}
+   if(a==='retry'){ME=null;b.disabled=true;b.textContent='Loading…';render();return}
    if(!window.zzSignIn)return;zzSignIn();const m=document.getElementById('zz-mode');/* the dialog keeps its last mode: switch it to the one asked for */
    if(m&&(a==='new')!==/Have an account/.test(m.textContent))m.click()});
   $x('#zm-outl').hidden=!w.si;
@@ -125,11 +128,12 @@
  function render(){const n=++seq,w=who();
   if(!w.si){paint(w,null);return}
   paint(w,ME&&Date.now()-meAt<6e4?plan(ME):null);
-  me().then(m=>{if(n!==seq)return;paint(who(),m?plan(m):null,!m)});
+  me().then(m=>{if(n!==seq)return;const ok=m&&!m._e;paint(who(),ok?plan(m):null,ok?null:(m&&m._e)||'error')});
  }
  const here=()=>location.hash==='#/menu';
  addEventListener('hashchange',()=>{if(here()){sync();render()}});
  addEventListener('zz:auth',()=>{ME=null;render()});
+ addEventListener('online',()=>{if(here())render()});
  (window.zzAuthReady||Promise.resolve()).then(render,render);
  sync();render();addEventListener('load',()=>{sync();setTimeout(sync,600)});/* the toolbar gains Calm reading and Annotate after this runs */
 }

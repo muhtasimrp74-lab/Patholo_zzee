@@ -1,13 +1,14 @@
 /* Service worker for Patholo_zzee.
    - Everything below is saved on first visit, so the site opens instantly and works offline.
    - Pages and files are served from the saved copy first, then quietly refreshed in the
-     background, so an updated index.html appears the next time the app is opened.
+     background. When VERSION changes, the new copy is saved straight from the server and takes over;
+     the page (tools/swupdate.js) checks for that when the app returns to the screen and reloads into it.
    - Your bookmarks, notes and progress are stored by the page itself (localStorage);
      this file never touches them.
    - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v181';
+const VERSION = 'pathviva-zzee-v182';
 
 const CORE = [
   'index.html',
@@ -56,7 +57,8 @@ const CORE = [
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(VERSION).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())
+    // cache: 'reload' skips the browser's HTTP cache (GitHub Pages lets it keep files 10 minutes), so a new version never saves old files
+    caches.open(VERSION).then(cache => cache.addAll(CORE.map(f => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting())
       .catch(err => { console.error('[sw] install failed; the previous version stays active:', err); throw err; })
   );
 });
@@ -81,7 +83,7 @@ async function precacheBook() {
     for (const f of files) if (!(await cache.match(f))) todo.push(f);
     const missing = [];
     for (let i = 0; i < todo.length; i += 3) {
-      await Promise.all(todo.slice(i, i + 3).map(f => fetch(f).then(r => { if (r && r.status === 200) return cache.put(f, r); missing.push(f); }).catch(() => { missing.push(f); })));
+      await Promise.all(todo.slice(i, i + 3).map(f => fetch(f, { cache: 'reload' }).then(r => { if (r && r.status === 200) return cache.put(f, r); missing.push(f); }).catch(() => { missing.push(f); })));
     }
     if (missing.length) console.warn('[sw] not saved for offline yet (retried on next update):', missing);
     await cache.put('diag.json', new Response(JSON.stringify({ version: VERSION, at: Date.now(), expected: files.length, missing }), { headers: { 'Content-Type': 'application/json' } }));
@@ -121,7 +123,7 @@ self.addEventListener('fetch', event => {
     const cache = await caches.open(VERSION);
     const saved = await cache.match(key, { ignoreSearch: true });
 
-    const refresh = fetch(req).then(res => {
+    const refresh = fetch(req, { cache: 'no-cache' }).then(res => {  // revalidate with the server, not the HTTP cache
       if (res && res.status === 200 && res.type === 'basic') {
         cache.put(key, res.clone()).catch(() => {});
       }
