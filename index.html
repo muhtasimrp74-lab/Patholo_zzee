@@ -2394,6 +2394,83 @@ body.calm .zq-qn{display:flex;align-items:center;justify-content:space-between;g
 .zq-qn button:focus-visible{outline:2px solid var(--burgundy);outline-offset:2px}
 .zq-qp{font:500 .85rem/1 var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
 @media print{.zq-qn{display:none!important}}
+/* ===== fx.css: motion tokens and the effects in fx.js. Full = html.fx-full, Minimal = html.fx-min (cross-fades only), Off = html.fx-off ===== */
+:root{--fx-hema:var(--plum2,#6B2D5C);--fx-eosin:var(--rosy2,#D98FA8);--fx-gold:#D6AE68;--fx-out:cubic-bezier(.2,.7,.2,1);
+ --fx-spring:linear(0,.009,.035 2.1%,.141 4.4%,.723 12.9%,.938 16.7%,1.017 19.5%,1.061 22.7%,1.072 25.9%,1.056 30.3%,1.009 39.3%,.993 48.6%,1.002 69.6%,1);--fx-slow:.6s;--fx-epic:1.2s}
+
+/* rings sweep to their value instead of jumping (the value lives in --p) */
+@property --p{syntax:'<number>';inherits:true;initial-value:0}
+html.fx-full .ring{animation:fx-ring .9s var(--fx-out) both}
+@keyframes fx-ring{from{--p:0}}
+html.fx-full .mx-ring .fg{animation:fx-arc 1.1s var(--fx-out) .1s both}
+@keyframes fx-arc{from{stroke-dasharray:0 999}}
+
+/* route change: focus pull. The old page softens and dims, the new one resolves from slightly out of focus.
+   The bottom bar keeps its own layer so it stays sharp, and the view's own fade steps aside while this runs. */
+html.fx-vt .view{animation:none!important}
+html.fx-vt #bnav{view-transition-name:fx-bnav}
+::view-transition-group(fx-bnav){animation:none}
+html.fx-full.fx-vt::view-transition-old(root){animation:fx-out .22s cubic-bezier(.4,0,1,1) both}
+html.fx-full.fx-vt::view-transition-new(root){animation:fx-in .36s var(--fx-out) both}
+html.fx-full.fx-vt[data-fx-dir=fwd]::view-transition-new(root){animation-name:fx-in-r}
+html.fx-full.fx-vt[data-fx-dir=back]::view-transition-new(root){animation-name:fx-in-l}
+@keyframes fx-out{to{opacity:0;filter:blur(6px) brightness(.97);transform:scale(.985)}}
+@keyframes fx-in{from{opacity:0;filter:blur(6px);transform:scale(1.02)}}
+@keyframes fx-in-r{from{opacity:0;filter:blur(6px);transform:translateX(24px) scale(1.01)}}
+@keyframes fx-in-l{from{opacity:0;filter:blur(6px);transform:translateX(-24px) scale(1.01)}}
+html.fx-min.fx-vt::view-transition-old(root){animation:fx-fade-o .18s linear both}
+html.fx-min.fx-vt::view-transition-new(root){animation:fx-fade-i .22s linear both}
+@keyframes fx-fade-o{to{opacity:0}}@keyframes fx-fade-i{from{opacity:0}}
+
+/* theme as a lamp: the new theme opens as a circle from the button that was pressed */
+html.fx-lamp::view-transition-old(root){animation:none}
+html.fx-lamp::view-transition-new(root){animation:fx-lamp .6s var(--fx-out) both}
+@keyframes fx-lamp{from{clip-path:circle(0 at var(--fx-x,50%) var(--fx-y,0))}to{clip-path:circle(150vmax at var(--fx-x,50%) var(--fx-y,0))}}
+
+/* stain-to-reveal: a revealed answer develops like a slide in the stain. A plum (haematoxylin) then rose (eosin) wash
+   sweeps across the answer's own background, under the text; the text never moves, so annotations stay aligned. */
+html.fx-full :is(.qi.o .qi-a,body.quiz .card.open .ans){
+ background-image:linear-gradient(90deg,transparent 0 30%,color-mix(in srgb,var(--fx-hema) 16%,transparent) 42%,color-mix(in srgb,var(--fx-eosin) 24%,transparent) 56%,transparent 70% 100%);
+ background-size:320% 100%;background-repeat:no-repeat;animation:fx-stain 1s var(--fx-out) both}
+html.fx-full body.quiz .card.open .ans{animation:zzfade .28s ease both,fx-stain 1s var(--fx-out) both}
+@keyframes fx-stain{from{background-position:100% 0}to{background-position:0 0}}
+
+/* MCQ answers: the correct option stains in and its letter pops; a wrong one gives a small double shake and a burgundy wash */
+html.fx-full .mx-o.ok{background-image:linear-gradient(90deg,transparent 0 30%,color-mix(in srgb,var(--mx-ok,#2E7D5B) 26%,transparent) 50%,transparent 70% 100%);
+ background-size:320% 100%;background-repeat:no-repeat;animation:fx-stain .8s var(--fx-out) both}
+html.fx-full .mx-o.ok b{animation:fx-pop .42s var(--fx-spring) both}
+html.fx-full .mx-o.no{background-image:linear-gradient(90deg,transparent 0 30%,color-mix(in srgb,var(--burgundy) 22%,transparent) 50%,transparent 70% 100%);
+ background-size:320% 100%;background-repeat:no-repeat;animation:fx-stain .7s var(--fx-out) both,fx-shake .34s ease-in-out both}
+html.fx-full body.an-on .mx-o.no{animation:fx-stain .7s var(--fx-out) both}   /* annotating: colour only, nothing moves */
+@keyframes fx-pop{0%{transform:scale(.6)}100%{transform:scale(1)}}
+@keyframes fx-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-4px)}40%{transform:translateX(4px)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}
+
+/* bottom bar: one pill slides between tabs (the tab's own highlight steps aside) */
+#bnav.fx-pilled{isolation:isolate}
+#bnav .fx-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:14px;background:var(--fx-tab,rgba(122,31,54,.1));opacity:0;pointer-events:none}
+html:not(.fx-off) #bnav.fx-pilled a.on{background:transparent!important}
+html.fx-full #bnav .fx-pill{transition:transform .42s var(--fx-spring),width .3s var(--fx-out),opacity .2s}
+html.fx-off #bnav .fx-pill{display:none}
+
+/* dialogs: the page behind defocuses */
+html.fx-full .zz-dlg::backdrop{backdrop-filter:blur(6px) saturate(.9);-webkit-backdrop-filter:blur(6px) saturate(.9)}
+
+/* banner pictures develop the first time they are seen: unstained grey, then colour, then focus */
+html.fx-full .pb-pic img.fx-dev{animation:fx-dev 1.1s var(--fx-out) both}
+@keyframes fx-dev{from{filter:grayscale(1) blur(6px) brightness(1.08)}55%{filter:grayscale(.2) blur(2px)}to{filter:none}}
+
+/* reading pages: a hairline that fills as you scroll (scroll-driven, no JS) */
+.fx-read{display:none}
+@supports (animation-timeline:scroll()){
+ html.fx-full.fx-rd .fx-read{display:block;position:fixed;left:0;right:0;top:0;height:2px;z-index:62;pointer-events:none;transform-origin:0 50%;
+  background:linear-gradient(90deg,var(--fx-hema),var(--fx-eosin));animation:fx-read linear both;animation-timeline:scroll(root)}
+ @keyframes fx-read{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+}
+
+/* Off and reduced motion: none of the above moves */
+html.fx-off :is(.ring,.mx-ring .fg,.qi.o .qi-a,.mx-o.ok,.mx-o.ok b,.mx-o.no,.pb-pic img){animation:none!important}
+@media(prefers-reduced-motion:reduce){:is(.ring,.mx-ring .fg,.qi.o .qi-a,.mx-o.ok b,.mx-o.no,.pb-pic img){animation:none!important}#bnav .fx-pill{transition:none!important}}
+@media print{.fx-pill,.fx-read{display:none!important}}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -3227,7 +3304,8 @@ counts();dash();
   size:'<path d="M3 18.5 7.6 6h.8l4.6 12.5M4.8 14.2h6.4M14.5 18.5l3-8 3 8M15.5 16h4"/>',fs:'<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   flat:'<path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3M6 6l2.1 2.1M15.9 15.9 18 18M18 6l-2.1 2.1M8.1 15.9 6 18"/>',
   exp:'<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15"/>',imp:'<path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 19.5h15"/>',out:'<path d="M14 4.5h4.5v15H14M10 8l-4 4 4 4M6 12h10"/>',
-  me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>'};
+  me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>',
+  fx:'<path d="M12 3.5v2.5M12 18v2.5M3.5 12H6M18 12h2.5"/><circle cx="12" cy="12" r="4.2"/>',hap:'<rect x="8" y="3.5" width="8" height="17" rx="2"/><path d="M4.5 9v6M19.5 9v6"/>'};
  const ic=k=>'<svg class="zm-ic" viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>',CH='<svg class="zm-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
  const link=(h,k,t,c)=>'<a class="zm-row" href="'+h+'">'+ic(k)+'<span class="zm-l">'+t+'</span>'+(c?'<span class="zm-v cn" data-c="'+c+'">0</span>':'')+CH+'</a>';
  const sw=(id,k,t)=>'<button type="button" class="zm-row" role="switch" aria-checked="false" id="'+id+'">'+ic(k)+'<span class="zm-l">'+t+'</span><span class="zm-tg" aria-hidden="true"></span></button>';
@@ -3243,7 +3321,9 @@ counts();dash();
   grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
   grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button></span></div>'+
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
-   sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects'))+
+   sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
+   '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
+   sw('zm-hap','hap','Haptics'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
   '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
    '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
@@ -3290,11 +3370,18 @@ counts();dash();
  }else fb.hidden=true;
  const rb=$x('#mq-flat');try{if(zzStore.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
  rb.onclick=()=>{de.classList.toggle('zz-flat');try{zzStore.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}sync()};
+ /* Visual effects (fx.js): Full, Minimal (cross-fades only) or Off; reduced motion on the device already forces Minimal. Haptics: vibration where supported */
+ X.querySelectorAll('[data-fx]').forEach(b=>b.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.fx=b.dataset.fx;save();if(window.zzFx)zzFx.apply();sync()});
+ $x('.zm-seg-fx').addEventListener('keydown',e=>{if(!/^Arrow(Left|Right|Up|Down)$/.test(e.key))return;e.preventDefault();
+  const o=[...X.querySelectorAll('[data-fx]')],i=o.findIndex(b=>b.getAttribute('aria-checked')==='true'),n=o[(i+(/Left|Up/.test(e.key)?o.length-1:1))%o.length];n.click();n.focus()});
+ const hb=$x('#zm-hap');if(!('vibrate' in navigator))hb.hidden=true;
+ hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
  function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':de.dataset.tone==='sepia'?'sepia':'light'}
  function sync(){
   on(qb,bd.classList.contains('quiz'));on($x('#zm-focus'),bd.classList.contains('focus'));on(cb,bd.classList.contains('calm'));cb.hidden=!tool('calm');
   const t=tool('ink');on(ib,t&&t.getAttribute('aria-pressed')==='true');ib.hidden=!t;
   on(fb,app||fsOn());on(rb,de.classList.contains('zz-flat'));
+  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'full';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false)}
   const th=theme();X.querySelectorAll('[data-th]').forEach(b=>{const c=b.dataset.th===th;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});
   const f=+((S.pref&&S.pref.fs)||1);$x('#zm-fsv').textContent=Math.round(f*100)+'%';$x('[data-st=fm]').disabled=f<=.8;$x('[data-st=fp]').disabled=f>=1.6;
  }
@@ -4808,7 +4895,7 @@ document.addEventListener('click',e=>{
  clearTimeout(st);save();                            /* keep the last bit of scrolling before you tapped */
  if(keyOf(location.hash)===k)return;                 /* the tab you are in: open its list, as before */
  const t=valid(M.last[k])?M.last[k]:href;pending=t;
- if(t!==href){e.preventDefault();location.hash=t}
+ if(t!==href){e.preventDefault();if(window.zzGo)zzGo(t);else location.hash=t}   /* zzGo (fx.js): the same focus-pull transition */
 },true);
 track();
 }catch(e){}})();
@@ -4951,6 +5038,92 @@ document.addEventListener('touchend',e=>{if(!tc)return;const t=e.changedTouches[
 
 const all=()=>{aa();foot();practice();watch();['bm','fav','notes'].forEach(k=>{try{empty(k)}catch(e){}})};
 all();addEventListener('hashchange',()=>setTimeout(all,0));document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-z=calm],#tools [data-t=calm]'))setTimeout(()=>document.querySelectorAll('.zq-qn').forEach(n=>qsync(n.closest('article.card'))),0)});addEventListener('load',()=>setTimeout(all,300));
+}catch(e){}})();
+
+/* ===== fx.js: the "specimen bench" motion we can ship with the platform alone (no libraries, nothing downloaded) =====
+   Five verbs from the motion brief: stain, focus, slide, pulse, ink. Shipped here:
+   - effect levels (Menu > Display > Visual effects): Full (default), Minimal (cross-fades only), Off; reduced motion forces Minimal
+   - focus-pull route transitions (View Transitions API), direction from the bottom-bar order
+   - the theme switch as a lamp: a circle of the new theme opening from the button
+   - a pill that slides between bottom-bar tabs, with a haptic tick
+   - banner pictures develop (grey to stained, soft to sharp) the first time they are seen this session
+   - a reading-progress hairline on long reading pages (CSS scroll-driven animation)
+   - haptics (Menu switch, where navigator.vibrate exists): learned, correct, wrong, tab change
+   Styles in fx.css. Reading text never moves: every effect sits in transitions, backgrounds or chrome. */
+(function(){try{
+const de=document.documentElement,$=(s,r)=>(r||document).querySelector(s),st=()=>typeof S!=='undefined'?S:null;
+const RM=matchMedia('(prefers-reduced-motion: reduce)');
+function level(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'full';if(v==='off')return 'off';if(RM.matches||de.classList.contains('zz-still'))return 'min';return v==='min'?'min':'full'}
+function apply(){const l=level();['full','min','off'].forEach(x=>de.classList.toggle('fx-'+x,l===x));pill()}
+const haptic=p=>{const s=st();if((s&&s.pref&&s.pref.hap===false)||level()==='off')return;try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}};
+window.zzFx={level,apply,haptic};
+const busy=()=>document.body.classList.contains('an-on')||document.hidden;   /* never during annotation or in the background */
+
+/* --- route transitions: the old page softens out of focus, the new one resolves (focus verb) --- */
+const MENU=['practice','bookmarks','favourites','notes','howto','search','menu','account'];
+const tab=h=>{const k=(h||'').replace(/^#\/?/,'').split('/')[0];return k===''||k==='home'?0:k==='questions'?1:k==='mcqs'?3:k==='textbook'?4:MENU.includes(k)?5:2};
+window.zzGo=function(href){
+ if(!href||href===location.hash)return;
+ if(!document.startViewTransition||level()==='off'||busy()){location.hash=href;return}
+ const d=tab(href)-tab(location.hash);de.dataset.fxDir=d>0?'fwd':d<0?'back':'same';de.classList.add('fx-vt');
+ let t;try{t=document.startViewTransition(()=>new Promise(res=>{let ok=false;const done=()=>{if(ok)return;ok=true;removeEventListener('hashchange',done);setTimeout(res,0)};   /* not requestAnimationFrame: rendering is paused until this resolves */
+  addEventListener('hashchange',done);location.hash=href;setTimeout(done,600)}))}catch(e){de.classList.remove('fx-vt');location.hash=href;return}
+ t.finished.finally(()=>de.classList.remove('fx-vt'));
+};
+document.addEventListener('click',e=>{
+ if(e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+ const a=e.target.closest&&e.target.closest('a[href^="#/"]');if(!a||a.target||a.hasAttribute('download'))return;
+ const h=a.getAttribute('href');if(h===location.hash)return;e.preventDefault();zzGo(h);
+});
+
+/* --- theme switch as a lamp: the new theme opens as a circle from the button pressed --- */
+function lamp(el,run){
+ if(!document.startViewTransition||level()!=='full'||busy()){run();return}
+ const r=el.getBoundingClientRect();de.style.setProperty('--fx-x',Math.round(r.left+r.width/2)+'px');de.style.setProperty('--fx-y',Math.round(r.top+r.height/2)+'px');
+ de.classList.add('fx-lamp');let t;try{t=document.startViewTransition(run)}catch(e){de.classList.remove('fx-lamp');run();return}t.finished.finally(()=>de.classList.remove('fx-lamp'));
+}
+document.addEventListener('click',e=>{
+ const b=e.target.closest&&e.target.closest('#tools [data-t=theme], .zm-seg [data-th]');if(!b||!e.isTrusted||b.dataset.fxGo)return;
+ if(b.matches('[data-th]')&&b.getAttribute('aria-checked')==='true')return;
+ e.stopImmediatePropagation();e.preventDefault();
+ lamp(b,()=>{b.dataset.fxGo='1';b.click();delete b.dataset.fxGo});
+},true);
+
+/* --- bottom bar: one pill that slides to the tab you are on (slide verb), and a haptic tick on a tab change --- */
+function pill(){
+ const n=$('#bnav');if(!n)return;let p=$('.fx-pill',n);
+ if(!p){const a0=$('a.on',n);if(a0)n.style.setProperty('--fx-tab',getComputedStyle(a0).backgroundColor);p=document.createElement('span');p.className='fx-pill';p.setAttribute('aria-hidden','true');n.prepend(p);n.classList.add('fx-pilled')}
+ const a=$('a.on',n);if(!a||!a.offsetParent){p.style.opacity='0';return}
+ const nr=n.getBoundingClientRect(),r=a.getBoundingClientRect();
+ p.style.opacity='1';p.style.width=r.width+'px';p.style.height=r.height+'px';p.style.transform='translate('+Math.round(r.left-nr.left)+'px,'+Math.round(r.top-nr.top)+'px)';
+}
+document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('#bnav a'))haptic(6)},true);
+
+/* --- banner pictures develop the first time they are seen this session (stain + focus verbs) --- */
+const seen=new Set();
+function develop(){
+ if(level()!=='full')return;
+ const img=$('.view:not([hidden]) .pb-pic img');if(!img)return;const k=img.getAttribute('src');if(seen.has(k))return;seen.add(k);
+ const go=()=>{img.classList.remove('fx-dev');void img.offsetWidth;img.classList.add('fx-dev')};
+ if(img.complete)go();else img.addEventListener('load',go,{once:true});
+}
+
+/* --- reading pages get a progress hairline (CSS scroll-driven animation; nothing runs in JS) --- */
+if(!$('.fx-read')){const r=document.createElement('div');r.className='fx-read';r.setAttribute('aria-hidden','true');document.body.append(r)}
+const reading=()=>de.classList.toggle('fx-rd',/^#\/(\d\d|c\d+|questions|textbook\/[^/]+)/.test(location.hash||''));
+
+/* --- haptics on answers and on marking a question as learned --- */
+document.addEventListener('click',e=>{
+ const o=e.target.closest&&e.target.closest('.mx-o');
+ if(o)setTimeout(()=>{const s=$('.mx-o.sel');if(!s)return;if(s.classList.contains('ok'))haptic(12);else if(s.classList.contains('no'))haptic([25,40,25])},30);
+ const l=e.target.closest&&e.target.closest('.act[data-k=learned]');
+ if(l)setTimeout(()=>{if(l.getAttribute('aria-pressed')==='true')haptic(10)},30);
+},true);
+
+const route=()=>{reading();setTimeout(()=>{pill();develop()},0)};
+apply();route();
+addEventListener('hashchange',route);addEventListener('resize',()=>pill());addEventListener('load',()=>{pill();develop()});
+if(RM.addEventListener)RM.addEventListener('change',apply);
 }catch(e){}})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
