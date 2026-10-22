@@ -54,3 +54,11 @@ footer.sf .zq-legal a{margin-left:12px;color:inherit;text-underline-offset:3px}
  html body .view .bar .chips::-webkit-scrollbar{display:none}
  html body .view .bar .chips>*{flex:none}
 }
+
+/* Previous / Next question at the end of an open answer */
+.zq-qn{display:flex;justify-content:space-between;gap:10px;margin:20px 0 4px;padding-top:14px;border-top:1px solid var(--line)}
+.zq-qn button{min-height:44px;padding:0 16px;border:1px solid var(--line2);border-radius:12px;background:var(--panel);color:var(--text);font:600 .9rem/1 var(--body);cursor:pointer}
+.zq-qn button:hover:not(:disabled){border-color:color-mix(in srgb,var(--burgundy) 45%,var(--line2))}
+.zq-qn button:disabled{opacity:.4;cursor:default}
+.zq-qn button:focus-visible{outline:2px solid var(--burgundy);outline-offset:2px}
+@media print{.zq-qn{display:none}}

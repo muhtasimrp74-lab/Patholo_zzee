@@ -78,6 +78,33 @@ function practice(){
   el.addEventListener('change',()=>{saved[i]=el.value;try{localStorage.setItem(K,JSON.stringify(saved))}catch(e){}})});
 }
 
-const all=()=>{aa();foot();practice();['bm','fav','notes'].forEach(k=>{try{empty(k)}catch(e){}})};
+/* --- inside an open question: Previous / Next question at the end of the answer, and a sideways swipe on phones --- */
+const cardsOf=c=>{const v=c.closest('.view,main')||document;return [...v.querySelectorAll('article.card')].filter(x=>x.offsetParent)};
+function qnav(c){
+ const a=c.querySelector('.ans');if(!a||a.querySelector(':scope > .zq-qn'))return;
+ const n=document.createElement('nav');n.className='zq-qn';n.setAttribute('aria-label','Move between questions');
+ n.innerHTML='<button type="button" data-d="-1">‹ Previous question</button><button type="button" data-d="1">Next question ›</button>';
+ a.append(n);qsync(c);
+}
+function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf(c),i=l.indexOf(c);n.querySelector('[data-d="-1"]').disabled=i<=0;n.querySelector('[data-d="1"]').disabled=i<0||i>=l.length-1}
+function qgo(c,d){
+ const l=cardsOf(c),t=l[l.indexOf(c)+d];if(!t)return;
+ const bar=t.closest('.view')&&t.closest('.view').querySelector('.bar'),off=(bar&&getComputedStyle(bar).position==='sticky'?bar.getBoundingClientRect().height:0)+72;
+ scrollTo({top:scrollY+t.getBoundingClientRect().top-off,behavior:'instant'});qnav(t);
+ const f=t.querySelector('header');if(f){f.setAttribute('tabindex','-1');f.focus({preventScroll:true})}
+}
+/* answers are on the page already, so each card gets its buttons as it scrolls into view */
+const IO=window.IntersectionObserver?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){qnav(e.target);IO.unobserve(e.target)}}),{rootMargin:'200px 0px'}):null;
+function watch(){if(!IO)return;document.querySelectorAll('.view:not([hidden]) article.card').forEach(c=>{if(!c.dataset.zqn){c.dataset.zqn='1';IO.observe(c)}})}
+document.addEventListener('click',e=>{
+ const b=e.target.closest&&e.target.closest('.zq-qn button');if(b){e.preventDefault();qgo(b.closest('article.card'),+b.dataset.d)}
+});
+let tx=0,ty=0,tc=null;
+document.addEventListener('touchstart',e=>{const a=e.target.closest&&e.target.closest('article.card .ans');tc=null;if(!a||document.body.classList.contains('an-on')||e.touches.length>1)return;
+ for(let x=e.target;x&&x!==a;x=x.parentElement)if(x.scrollWidth>x.clientWidth+4&&/auto|scroll/.test(getComputedStyle(x).overflowX))return;   /* a table that scrolls sideways */
+ tc=a.closest('article.card');tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+document.addEventListener('touchend',e=>{if(!tc)return;const t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty,c=tc;tc=null;if(Math.abs(dx)>80&&Math.abs(dy)<45)qgo(c,dx<0?1:-1)},{passive:true});
+
+const all=()=>{aa();foot();practice();watch();['bm','fav','notes'].forEach(k=>{try{empty(k)}catch(e){}})};
 all();addEventListener('hashchange',()=>setTimeout(all,0));addEventListener('load',()=>setTimeout(all,300));
 }catch(e){}})();

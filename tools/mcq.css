@@ -267,3 +267,14 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 .mx-qb-ms[aria-pressed=false]{opacity:.85}
 .mx-card{transition:box-shadow .2s}
 @media(min-width:900px){.mx-run{max-width:760px;margin-inline:auto}}
+/* wide screens (desktop, Android tablets in landscape): the question list stays open beside the question instead of a pop-up;
+   the number strip and the list button step aside, and the bottom buttons centre over the question column */
+@media(min-width:1100px){
+ .mx-run{max-width:1096px;display:grid;grid-template-columns:minmax(0,760px) 296px;justify-content:center;column-gap:40px;align-items:start}
+ .mx-run>*{grid-column:1}
+ .mx-run>.mx-pal{grid-column:2;grid-row:1/span 8;position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);inset:auto;z-index:auto;display:block;background:none}
+ .mx-run>.mx-pal[hidden]{display:none}
+ .mx-run>.mx-pal .mx-pal-in{max-width:none;max-height:calc(100vh - 140px);border-radius:18px;padding:16px}
+ .mx-run>.mx-pal .mx-pal-h .mx-ib,.mx-run .mx-top [data-a=pal],.mx-run>.mx-strip{display:none}
+ .mx-act{padding-right:calc(16px + 336px)}
+}

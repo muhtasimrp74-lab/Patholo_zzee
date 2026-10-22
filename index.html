@@ -1160,6 +1160,19 @@ h1 em{font-size:.66em;font-weight:700}
  #nh a.nh-bn-cta{width:100%;justify-content:center}
 }
 
+/* More stats: the long sections fold away so Home leads with Continue and today's plan */
+.nh-plan{grid-template-columns:1fr!important}
+.nh-more{margin:32px 0 8px}
+.nh-more>summary{display:flex;flex-direction:column;gap:4px;list-style:none;cursor:pointer;padding:18px 52px 18px 20px;position:relative;
+ border:1px solid var(--line);border-radius:18px;background:var(--panel);font:400 1.3rem/1.2 var(--disp);color:var(--text)}
+.nh-more>summary::-webkit-details-marker{display:none}
+.nh-more>summary small{font:400 .9rem/1.4 var(--body);color:var(--muted)}
+.nh-more>summary::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;margin-top:-7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s}
+.nh-more[open]>summary::after{transform:rotate(225deg);margin-top:-2px}
+.nh-more>summary:focus-visible{outline:2px solid var(--burgundy);outline-offset:3px}
+.nh-more[open]>summary{margin-bottom:8px}
+@media(prefers-reduced-motion:reduce){.nh-more>summary::after{transition:none}}
+
 /* ---- cinematic banners on Questions / Chapters / MCQs / Textbook / Menu: same ratios as the homepage banner (images: icons/pb-*.webp) ---- */
 .pb{position:relative;height:clamp(420px,32vw,500px);background:#1D181B;color:#FFFDFA;overflow:hidden}
 .pb-pic{position:absolute;inset:0}
@@ -2006,7 +2019,19 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 .mx-qb-ms[aria-pressed=true]{background:var(--mx-nobg);border-color:var(--mx-no);color:var(--mx-no)}
 .mx-qb-ms[aria-pressed=false]{opacity:.85}
 .mx-card{transition:box-shadow .2s}
-@media(min-width:900px){.mx-run{max-width:760px;margin-inline:auto}}/* ================= PERFORMANCE (smooth 90/120 Hz scrolling on tablets) =================
+@media(min-width:900px){.mx-run{max-width:760px;margin-inline:auto}}
+/* wide screens (desktop, Android tablets in landscape): the question list stays open beside the question instead of a pop-up;
+   the number strip and the list button step aside, and the bottom buttons centre over the question column */
+@media(min-width:1100px){
+ .mx-run{max-width:1096px;display:grid;grid-template-columns:minmax(0,760px) 296px;justify-content:center;column-gap:40px;align-items:start}
+ .mx-run>*{grid-column:1}
+ .mx-run>.mx-pal{grid-column:2;grid-row:1/span 8;position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);inset:auto;z-index:auto;display:block;background:none}
+ .mx-run>.mx-pal[hidden]{display:none}
+ .mx-run>.mx-pal .mx-pal-in{max-width:none;max-height:calc(100vh - 140px);border-radius:18px;padding:16px}
+ .mx-run>.mx-pal .mx-pal-h .mx-ib,.mx-run .mx-top [data-a=pal],.mx-run>.mx-strip{display:none}
+ .mx-act{padding-right:calc(16px + 336px)}
+}
+/* ================= PERFORMANCE (smooth 90/120 Hz scrolling on tablets) =================
    1. The page backdrop was painted with background-attachment:fixed, which repaints the whole screen on every scroll frame.
       It now lives on one fixed, GPU-composited layer instead (same look).
    2. Hundreds of cards each had their own backdrop-filter blur; that is the single most expensive thing a browser can paint.
@@ -2346,6 +2371,14 @@ footer.sf .zq-legal a{margin-left:12px;color:inherit;text-underline-offset:3px}
  html body .view .bar .chips::-webkit-scrollbar{display:none}
  html body .view .bar .chips>*{flex:none}
 }
+
+/* Previous / Next question at the end of an open answer */
+.zq-qn{display:flex;justify-content:space-between;gap:10px;margin:20px 0 4px;padding-top:14px;border-top:1px solid var(--line)}
+.zq-qn button{min-height:44px;padding:0 16px;border:1px solid var(--line2);border-radius:12px;background:var(--panel);color:var(--text);font:600 .9rem/1 var(--body);cursor:pointer}
+.zq-qn button:hover:not(:disabled){border-color:color-mix(in srgb,var(--burgundy) 45%,var(--line2))}
+.zq-qn button:disabled{opacity:.4;cursor:default}
+.zq-qn button:focus-visible{outline:2px solid var(--burgundy);outline-offset:2px}
+@media print{.zq-qn{display:none}}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -3435,13 +3468,16 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
    <article class="mx-card" data-h="${q.h}">${metaRow(q,(rv?'':`<button type="button" class="mx-bm mx-fg" data-a="flag" aria-pressed="${!!fl[q.h]}" aria-label="Flag for review" title="Flag to come back to (F)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4M6 5h11l-2 4 2 4H6"/></svg></button>`)+bmBtn(q))}<h3>${E(q.q)}</h3>${q.y?'<p class="mx-hint">Mark each statement True or False.</p>':''}
    <div class="mx-opts">${body(q,{ans:a,fb,lock,notes:true})}</div>${fb?verdict+bareAns(q):''}${qaRow(q)}</article>
    <div class="mx-act">${act}</div><div class="mx-pal" id="mx-pal" hidden></div></div>`;
-  if(!rv)startTimer();if(_ri===_k)window.scrollTo(0,_y);else window.scrollTo(0,0);_ri=_k;const cu=M.querySelector('.mx-strip .cur');if(cu&&cu.scrollIntoView)cu.scrollIntoView({inline:'center',block:'nearest'})}
+  if(!rv)startTimer();if(WIDE.matches)palette(true);if(_ri===_k)window.scrollTo(0,_y);else window.scrollTo(0,0);_ri=_k;const cu=M.querySelector('.mx-strip .cur');if(cu&&cu.scrollIntoView)cu.scrollIntoView({inline:'center',block:'nearest'})}
  function startTimer(){clearInterval(tid);if(!sess||sess.review)return;tid=setInterval(()=>{if(!sess){clearInterval(tid);return}
   const e=elapsed(),t=document.getElementById('mx-timer');if(sess.limit&&e>=sess.limit){finish();return}
   if(t){t.textContent=sess.limit?fmt(sess.limit-e):fmt(e);t.classList.toggle('low',!!sess.limit&&sess.limit-e<60)}
   if(((e|0)%10)===0)persist()},1000)}
- function palette(){const s=sess,el=document.getElementById('mx-pal');if(!el)return;
-  if(!el.hidden){el.hidden=true;return}
+ /* wide screens (desktop, Android tablets in landscape) keep the question list open as a side column (mcq.css), redrawn with each question */
+ const WIDE=matchMedia('(min-width:1100px)');
+ WIDE.addEventListener('change',()=>{const el=document.getElementById('mx-pal');if(!el||!sess)return;if(WIDE.matches)palette(true);else el.hidden=true});
+ function palette(keep){const s=sess,el=document.getElementById('mx-pal');if(!el)return;
+  if(!keep&&!el.hidden){el.hidden=true;return}
   const rv=s.review,exam=s.mode==='exam'&&!rv;
   el.innerHTML=`<div class="mx-pal-in" role="dialog" aria-label="Question list"><div class="mx-pal-h"><b>Questions</b><button type="button" class="mx-ib" data-a="pal" aria-label="Close">${ic.x}</button></div><div class="mx-pal-g">`+
    s.ids.map((h,i)=>{const q=BY[h],an=answered(q,s);let c='';
@@ -4379,11 +4415,18 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 			h += "<div class=\"nh-chips\"><span class=\"nh-chip" + (doneToday ? " on" : "") + "\"><b>" + sn + "</b> day streak" + (doneToday ? " · done today" : sn ? " · study today to keep it" : "") + "</span>";
 			h += "<span class=\"nh-chip\"><b>" + tot + "</b> questions</span>";
 			h += "</div></header>";
-			h += "<section class=\"nh-top\"><div class=\"nh-start\"><p class=\"nh-k\">START HERE</p>";
-			if (nxt) {
-				const t = TR[nxt[3]];
-				h += "<p class=\"nh-crumb\">Q." + NUM[nxt[3]] + " · " + kind(nxt) + " · " + esc2(CH[cidx[t[0]]][1]) + " → " + esc2(t[1]) + "</p><h2>" + esc2(nxt[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(nxt) + "\">" + (read ? "Continue studying" : "Begin studying") + "</a><a href=\"#/questions\">Browse all questions</a><a href=\"#\" id=\"nhrnd\">Random unread</a></div>";
-			} else h += "<h2>Every question has been read.</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"#/practice\">Rapid Recall</a><a href=\"#/questions\">Browse all questions</a></div>";
+			h += "<section class=\"nh-top\"><div class=\"nh-start\">";
+			const last = (S.recent || []).map((i) => BY[i]).filter(Boolean)[0];
+			if (last) {
+				const lt = TR[last[3]] || [];
+				h += "<p class=\"nh-k\">CONTINUE WHERE YOU LEFT OFF</p><p class=\"nh-crumb\">Q." + NUM[last[3]] + " · " + kind(last) + (CH[cidx[lt[0]]] ? " · " + esc2(CH[cidx[lt[0]]][1]) : "") + "</p><h2>" + esc2(last[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(last) + "\">Continue</a>" + (nxt && nxt[3] !== last[3] ? "<a href=\"" + lnk(nxt) + "\">Next unread</a>" : "") + (mq.sv ? "<a href=\"#/mcqs/run\">Resume MCQ session</a>" : "") + (tbCur ? "<a href=\"#/textbook/" + tbCur.id + "\">Textbook, Ch " + tbCur.n + "</a>" : "") + "</div>";
+			} else {
+				h += "<p class=\"nh-k\">START HERE</p>";
+				if (nxt) {
+					const t = TR[nxt[3]];
+					h += "<p class=\"nh-crumb\">Q." + NUM[nxt[3]] + " · " + kind(nxt) + " · " + esc2(CH[cidx[t[0]]][1]) + " → " + esc2(t[1]) + "</p><h2>" + esc2(nxt[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(nxt) + "\">" + (read ? "Continue studying" : "Begin studying") + "</a><a href=\"#/questions\">Browse all questions</a><a href=\"#\" id=\"nhrnd\">Random unread</a></div>";
+				} else h += "<h2>Every question has been read.</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"#/practice\">Rapid Recall</a><a href=\"#/questions\">Browse all questions</a></div>";
+			}
 			h += "</div><div class=\"nh-prog\"><p class=\"nh-k\">OVERALL PROGRESS</p><div class=\"nh-pc\">" + pc + "<small>%</small></div>" + bar(pc) + "<p class=\"nh-mu\">" + read + " / " + tot + " questions read</p>";
 			h += "<div class=\"nh-split\"><div><span>Viva</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "</div><div><span>Written</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "</div></div></div></section>";
 			const plan = [];
@@ -4430,12 +4473,13 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 				""
 			]);
 			h += "<section class=\"nh-plan\"><div class=\"nh-pl nh-prog\"><p class=\"nh-k\">TODAY'S PLAN</p><ul>" + plan.slice(0, 5).map((p) => "<li><a href=\"" + p[3] + "\"><i class=\"pi " + p[0] + "\"></i><span><b>" + esc2(p[1]) + "</b><small>" + p[2] + "</small></span><em>" + (p[4] !== "" ? p[4] : "→") + "</em></a></li>").join("") + "</ul></div>";
-			h += "<div class=\"nh-ex nh-prog\"><p class=\"nh-k\">EXAM COUNTDOWN</p>";
-			if (days !== null && days >= 0) h += "<div class=\"nh-pc\">" + days + "<small> day" + (days === 1 ? "" : "s") + "</small></div><p class=\"nh-mu\">" + (days === 0 ? "Exam day. You have read " + read + " of " + tot + "." : tot - read + " questions left" + (pace ? " → about <b>" + pace + "/day</b>" : "")) + "</p>";
-			else if (days !== null) h += "<p class=\"nh-mu\">That date has passed. Pick the next exam date.</p>";
-			else h += "<p class=\"nh-mu\">Set your exam date and the home page works out how many questions to read each day.</p>";
-			h += "<label class=\"nh-dt\"><span>Exam date</span><input type=\"date\" id=\"nhex\" value=\"" + (exam || "") + "\" min=\"" + tdy + "\"></label>" + (exam ? "<button type=\"button\" class=\"nh-lk\" id=\"nhexc\">Clear date</button>" : "") + "</div></section>";
-			h += heat();
+			h += "</section>";
+			let cd = "<div class=\"nh-ex nh-prog\"><p class=\"nh-k\">EXAM COUNTDOWN</p>";
+			if (days !== null && days >= 0) cd += "<div class=\"nh-pc\">" + days + "<small> day" + (days === 1 ? "" : "s") + "</small></div><p class=\"nh-mu\">" + (days === 0 ? "Exam day. You have read " + read + " of " + tot + "." : tot - read + " questions left" + (pace ? " → about <b>" + pace + "/day</b>" : "")) + "</p>";
+			else if (days !== null) cd += "<p class=\"nh-mu\">That date has passed. Pick the next exam date.</p>";
+			else cd += "<p class=\"nh-mu\">Set your exam date and the home page works out how many questions to read each day.</p>";
+			cd += "<label class=\"nh-dt\"><span>Exam date</span><input type=\"date\" id=\"nhex\" value=\"" + (exam || "") + "\" min=\"" + tdy + "\"></label>" + (exam ? "<button type=\"button\" class=\"nh-lk\" id=\"nhexc\">Clear date</button>" : "") + "</div>";
+			const ht = heat();
 			h += "<section><h3 class=\"nh-h nh-h0\">Study tracks</h3><div class=\"nh-tr\">";
 			h += "<a class=\"nh-t4 nh-prog\" href=\"" + (nextV ? lnk(nextV) : "#/questions") + "\"><span class=\"nh-tk\">Viva questions</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "<span class=\"nh-ts\">" + (VQ.length - vr) + " unread · A- and B-cards plus systemic</span><em>" + (vr ? "Continue" : "Start") + " →</em></a>";
 			h += "<a class=\"nh-t4 nh-prog\" href=\"" + (nextW ? lnk(nextW) : "#/questions") + "\"><span class=\"nh-tk\">Written questions</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "<span class=\"nh-ts\">" + (WQ.length - wr) + " unread · long-answer format</span><em>" + (wr ? "Continue" : "Start") + " →</em></a>";
@@ -4443,6 +4487,7 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 			h += "<a class=\"nh-t4 nh-prog\" href=\"#/textbook" + (tbNext ? "/" + tbNext.id : "") + "\"><span class=\"nh-tk\">Robbins textbook</span><b>" + tbR + "<small> / " + (tbN || 29) + "</small></b>" + bar(pct(tbR, tbN || 29)) + "<span class=\"nh-ts\">" + (tbNext ? "Next: Ch " + tbNext.n + " · " + esc2(tbNext.title) : "Chapters read, offline-ready") + "</span><em>" + (tbR ? "Continue" : "Open") + " →</em></a>";
 			h += "</div></section>";
 			h += "<section class=\"nh-row\"><a href=\"#/practice\"><b>" + due + "</b><span>Due for review</span></a><a href=\"#/practice\"><b>" + mist + "</b><span>In mistake vault</span></a><a href=\"#/bookmarks\"><b>" + S.bm.length + "</b><span>Revise later</span></a><a class=\"nh-rr\" href=\"#/practice\">Rapid Recall →</a></section>";
+			const mk = h.length;
 			const chW = CH.map((c, i) => {
 				const a = byCh[c[0]] || [], r = a.filter((d) => L.has(d[3])).length;
 				return {
@@ -4503,10 +4548,17 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 				}).join("") + "</ul></details>";
 				h += "</div></article>";
 			});
-			h += "</div></section><section><h3 class=\"nh-h\">Recently studied</h3>";
+			h += "</div></section>";
+			const more = h.slice(mk);
+			h = h.slice(0, mk);
+			h += "<section><h3 class=\"nh-h\">Recently studied</h3>";
 			const rec = S.recent.map((i) => BY[i]).filter(Boolean);
 			h += rec.length ? "<ul class=\"nh-rec\">" + rec.map((d) => "<li><a href=\"" + lnk(d) + "\">" + esc2(d[1]) + "</a><span>" + esc2(CH[cidx[(TR[d[3]] || [])[0]]] ? CH[cidx[TR[d[3]][0]]][1] : d[4]) + "</span></li>").join("") + "</ul>" : "<p class=\"nh-mu\">Nothing yet. Questions you open will appear here.</p>";
-			h += "</section><footer class=\"nh-f\"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href=\"#/questions\">Questions</a> · <a href=\"#/qa\">Q&amp;A</a> · <a href=\"#/mcqs\">MCQs</a> · <a href=\"#/textbook\">Textbook</a> · <a href=\"#/notes\">Notes</a> · <a href=\"#/howto\">How to read</a></footer></div>";
+			let mo = false;
+			try {
+				mo = localStorage.getItem("zzHomeMore") === "1";
+			} catch (e) {}
+			h += "</section><details class=\"nh-more\" id=\"nhmore\"" + (mo ? " open" : "") + "><summary>More stats<small>Exam countdown, study activity, high-yield questions and every topic</small></summary><section class=\"nh-plan nh-solo\">" + cd + "</section>" + ht + more + "</details><footer class=\"nh-f\"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href=\"#/questions\">Questions</a> · <a href=\"#/qa\">Q&amp;A</a> · <a href=\"#/mcqs\">MCQs</a> · <a href=\"#/textbook\">Textbook</a> · <a href=\"#/notes\">Notes</a> · <a href=\"#/howto\">How to read</a></footer></div>";
 			wrap.innerHTML = h;
 		}
 		wrap.addEventListener("click", (e) => {
@@ -4526,6 +4578,12 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 				render();
 			}
 		});
+		wrap.addEventListener("toggle", (e) => {
+			const d = e.target;
+			if (d && d.id === "nhmore") try {
+				localStorage.setItem("zzHomeMore", d.open ? "1" : "0");
+			} catch (x) {}
+		}, true);
 		wrap.addEventListener("change", (e) => {
 			if (e.target.id === "nhex") {
 				S.pref = S.pref || {};
@@ -4846,7 +4904,34 @@ function practice(){
   el.addEventListener('change',()=>{saved[i]=el.value;try{localStorage.setItem(K,JSON.stringify(saved))}catch(e){}})});
 }
 
-const all=()=>{aa();foot();practice();['bm','fav','notes'].forEach(k=>{try{empty(k)}catch(e){}})};
+/* --- inside an open question: Previous / Next question at the end of the answer, and a sideways swipe on phones --- */
+const cardsOf=c=>{const v=c.closest('.view,main')||document;return [...v.querySelectorAll('article.card')].filter(x=>x.offsetParent)};
+function qnav(c){
+ const a=c.querySelector('.ans');if(!a||a.querySelector(':scope > .zq-qn'))return;
+ const n=document.createElement('nav');n.className='zq-qn';n.setAttribute('aria-label','Move between questions');
+ n.innerHTML='<button type="button" data-d="-1">‹ Previous question</button><button type="button" data-d="1">Next question ›</button>';
+ a.append(n);qsync(c);
+}
+function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf(c),i=l.indexOf(c);n.querySelector('[data-d="-1"]').disabled=i<=0;n.querySelector('[data-d="1"]').disabled=i<0||i>=l.length-1}
+function qgo(c,d){
+ const l=cardsOf(c),t=l[l.indexOf(c)+d];if(!t)return;
+ const bar=t.closest('.view')&&t.closest('.view').querySelector('.bar'),off=(bar&&getComputedStyle(bar).position==='sticky'?bar.getBoundingClientRect().height:0)+72;
+ scrollTo({top:scrollY+t.getBoundingClientRect().top-off,behavior:'instant'});qnav(t);
+ const f=t.querySelector('header');if(f){f.setAttribute('tabindex','-1');f.focus({preventScroll:true})}
+}
+/* answers are on the page already, so each card gets its buttons as it scrolls into view */
+const IO=window.IntersectionObserver?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){qnav(e.target);IO.unobserve(e.target)}}),{rootMargin:'200px 0px'}):null;
+function watch(){if(!IO)return;document.querySelectorAll('.view:not([hidden]) article.card').forEach(c=>{if(!c.dataset.zqn){c.dataset.zqn='1';IO.observe(c)}})}
+document.addEventListener('click',e=>{
+ const b=e.target.closest&&e.target.closest('.zq-qn button');if(b){e.preventDefault();qgo(b.closest('article.card'),+b.dataset.d)}
+});
+let tx=0,ty=0,tc=null;
+document.addEventListener('touchstart',e=>{const a=e.target.closest&&e.target.closest('article.card .ans');tc=null;if(!a||document.body.classList.contains('an-on')||e.touches.length>1)return;
+ for(let x=e.target;x&&x!==a;x=x.parentElement)if(x.scrollWidth>x.clientWidth+4&&/auto|scroll/.test(getComputedStyle(x).overflowX))return;   /* a table that scrolls sideways */
+ tc=a.closest('article.card');tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+document.addEventListener('touchend',e=>{if(!tc)return;const t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty,c=tc;tc=null;if(Math.abs(dx)>80&&Math.abs(dy)<45)qgo(c,dx<0?1:-1)},{passive:true});
+
+const all=()=>{aa();foot();practice();watch();['bm','fav','notes'].forEach(k=>{try{empty(k)}catch(e){}})};
 all();addEventListener('hashchange',()=>setTimeout(all,0));addEventListener('load',()=>setTimeout(all,300));
 }catch(e){}})();
 

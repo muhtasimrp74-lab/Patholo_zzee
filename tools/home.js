@@ -222,11 +222,18 @@
 			h += "<div class=\"nh-chips\"><span class=\"nh-chip" + (doneToday ? " on" : "") + "\"><b>" + sn + "</b> day streak" + (doneToday ? " · done today" : sn ? " · study today to keep it" : "") + "</span>";
 			h += "<span class=\"nh-chip\"><b>" + tot + "</b> questions</span>";
 			h += "</div></header>";
-			h += "<section class=\"nh-top\"><div class=\"nh-start\"><p class=\"nh-k\">START HERE</p>";
-			if (nxt) {
-				const t = TR[nxt[3]];
-				h += "<p class=\"nh-crumb\">Q." + NUM[nxt[3]] + " · " + kind(nxt) + " · " + esc2(CH[cidx[t[0]]][1]) + " → " + esc2(t[1]) + "</p><h2>" + esc2(nxt[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(nxt) + "\">" + (read ? "Continue studying" : "Begin studying") + "</a><a href=\"#/questions\">Browse all questions</a><a href=\"#\" id=\"nhrnd\">Random unread</a></div>";
-			} else h += "<h2>Every question has been read.</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"#/practice\">Rapid Recall</a><a href=\"#/questions\">Browse all questions</a></div>";
+			h += "<section class=\"nh-top\"><div class=\"nh-start\">";
+			const last = (S.recent || []).map((i) => BY[i]).filter(Boolean)[0];
+			if (last) {
+				const lt = TR[last[3]] || [];
+				h += "<p class=\"nh-k\">CONTINUE WHERE YOU LEFT OFF</p><p class=\"nh-crumb\">Q." + NUM[last[3]] + " · " + kind(last) + (CH[cidx[lt[0]]] ? " · " + esc2(CH[cidx[lt[0]]][1]) : "") + "</p><h2>" + esc2(last[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(last) + "\">Continue</a>" + (nxt && nxt[3] !== last[3] ? "<a href=\"" + lnk(nxt) + "\">Next unread</a>" : "") + (mq.sv ? "<a href=\"#/mcqs/run\">Resume MCQ session</a>" : "") + (tbCur ? "<a href=\"#/textbook/" + tbCur.id + "\">Textbook, Ch " + tbCur.n + "</a>" : "") + "</div>";
+			} else {
+				h += "<p class=\"nh-k\">START HERE</p>";
+				if (nxt) {
+					const t = TR[nxt[3]];
+					h += "<p class=\"nh-crumb\">Q." + NUM[nxt[3]] + " · " + kind(nxt) + " · " + esc2(CH[cidx[t[0]]][1]) + " → " + esc2(t[1]) + "</p><h2>" + esc2(nxt[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(nxt) + "\">" + (read ? "Continue studying" : "Begin studying") + "</a><a href=\"#/questions\">Browse all questions</a><a href=\"#\" id=\"nhrnd\">Random unread</a></div>";
+				} else h += "<h2>Every question has been read.</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"#/practice\">Rapid Recall</a><a href=\"#/questions\">Browse all questions</a></div>";
+			}
 			h += "</div><div class=\"nh-prog\"><p class=\"nh-k\">OVERALL PROGRESS</p><div class=\"nh-pc\">" + pc + "<small>%</small></div>" + bar(pc) + "<p class=\"nh-mu\">" + read + " / " + tot + " questions read</p>";
 			h += "<div class=\"nh-split\"><div><span>Viva</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "</div><div><span>Written</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "</div></div></div></section>";
 			const plan = [];
@@ -273,12 +280,13 @@
 				""
 			]);
 			h += "<section class=\"nh-plan\"><div class=\"nh-pl nh-prog\"><p class=\"nh-k\">TODAY'S PLAN</p><ul>" + plan.slice(0, 5).map((p) => "<li><a href=\"" + p[3] + "\"><i class=\"pi " + p[0] + "\"></i><span><b>" + esc2(p[1]) + "</b><small>" + p[2] + "</small></span><em>" + (p[4] !== "" ? p[4] : "→") + "</em></a></li>").join("") + "</ul></div>";
-			h += "<div class=\"nh-ex nh-prog\"><p class=\"nh-k\">EXAM COUNTDOWN</p>";
-			if (days !== null && days >= 0) h += "<div class=\"nh-pc\">" + days + "<small> day" + (days === 1 ? "" : "s") + "</small></div><p class=\"nh-mu\">" + (days === 0 ? "Exam day. You have read " + read + " of " + tot + "." : tot - read + " questions left" + (pace ? " → about <b>" + pace + "/day</b>" : "")) + "</p>";
-			else if (days !== null) h += "<p class=\"nh-mu\">That date has passed. Pick the next exam date.</p>";
-			else h += "<p class=\"nh-mu\">Set your exam date and the home page works out how many questions to read each day.</p>";
-			h += "<label class=\"nh-dt\"><span>Exam date</span><input type=\"date\" id=\"nhex\" value=\"" + (exam || "") + "\" min=\"" + tdy + "\"></label>" + (exam ? "<button type=\"button\" class=\"nh-lk\" id=\"nhexc\">Clear date</button>" : "") + "</div></section>";
-			h += heat();
+			h += "</section>";
+			let cd = "<div class=\"nh-ex nh-prog\"><p class=\"nh-k\">EXAM COUNTDOWN</p>";
+			if (days !== null && days >= 0) cd += "<div class=\"nh-pc\">" + days + "<small> day" + (days === 1 ? "" : "s") + "</small></div><p class=\"nh-mu\">" + (days === 0 ? "Exam day. You have read " + read + " of " + tot + "." : tot - read + " questions left" + (pace ? " → about <b>" + pace + "/day</b>" : "")) + "</p>";
+			else if (days !== null) cd += "<p class=\"nh-mu\">That date has passed. Pick the next exam date.</p>";
+			else cd += "<p class=\"nh-mu\">Set your exam date and the home page works out how many questions to read each day.</p>";
+			cd += "<label class=\"nh-dt\"><span>Exam date</span><input type=\"date\" id=\"nhex\" value=\"" + (exam || "") + "\" min=\"" + tdy + "\"></label>" + (exam ? "<button type=\"button\" class=\"nh-lk\" id=\"nhexc\">Clear date</button>" : "") + "</div>";
+			const ht = heat();
 			h += "<section><h3 class=\"nh-h nh-h0\">Study tracks</h3><div class=\"nh-tr\">";
 			h += "<a class=\"nh-t4 nh-prog\" href=\"" + (nextV ? lnk(nextV) : "#/questions") + "\"><span class=\"nh-tk\">Viva questions</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "<span class=\"nh-ts\">" + (VQ.length - vr) + " unread · A- and B-cards plus systemic</span><em>" + (vr ? "Continue" : "Start") + " →</em></a>";
 			h += "<a class=\"nh-t4 nh-prog\" href=\"" + (nextW ? lnk(nextW) : "#/questions") + "\"><span class=\"nh-tk\">Written questions</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "<span class=\"nh-ts\">" + (WQ.length - wr) + " unread · long-answer format</span><em>" + (wr ? "Continue" : "Start") + " →</em></a>";
@@ -286,6 +294,7 @@
 			h += "<a class=\"nh-t4 nh-prog\" href=\"#/textbook" + (tbNext ? "/" + tbNext.id : "") + "\"><span class=\"nh-tk\">Robbins textbook</span><b>" + tbR + "<small> / " + (tbN || 29) + "</small></b>" + bar(pct(tbR, tbN || 29)) + "<span class=\"nh-ts\">" + (tbNext ? "Next: Ch " + tbNext.n + " · " + esc2(tbNext.title) : "Chapters read, offline-ready") + "</span><em>" + (tbR ? "Continue" : "Open") + " →</em></a>";
 			h += "</div></section>";
 			h += "<section class=\"nh-row\"><a href=\"#/practice\"><b>" + due + "</b><span>Due for review</span></a><a href=\"#/practice\"><b>" + mist + "</b><span>In mistake vault</span></a><a href=\"#/bookmarks\"><b>" + S.bm.length + "</b><span>Revise later</span></a><a class=\"nh-rr\" href=\"#/practice\">Rapid Recall →</a></section>";
+			const mk = h.length;
 			const chW = CH.map((c, i) => {
 				const a = byCh[c[0]] || [], r = a.filter((d) => L.has(d[3])).length;
 				return {
@@ -346,10 +355,17 @@
 				}).join("") + "</ul></details>";
 				h += "</div></article>";
 			});
-			h += "</div></section><section><h3 class=\"nh-h\">Recently studied</h3>";
+			h += "</div></section>";
+			const more = h.slice(mk);
+			h = h.slice(0, mk);
+			h += "<section><h3 class=\"nh-h\">Recently studied</h3>";
 			const rec = S.recent.map((i) => BY[i]).filter(Boolean);
 			h += rec.length ? "<ul class=\"nh-rec\">" + rec.map((d) => "<li><a href=\"" + lnk(d) + "\">" + esc2(d[1]) + "</a><span>" + esc2(CH[cidx[(TR[d[3]] || [])[0]]] ? CH[cidx[TR[d[3]][0]]][1] : d[4]) + "</span></li>").join("") + "</ul>" : "<p class=\"nh-mu\">Nothing yet. Questions you open will appear here.</p>";
-			h += "</section><footer class=\"nh-f\"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href=\"#/questions\">Questions</a> · <a href=\"#/qa\">Q&amp;A</a> · <a href=\"#/mcqs\">MCQs</a> · <a href=\"#/textbook\">Textbook</a> · <a href=\"#/notes\">Notes</a> · <a href=\"#/howto\">How to read</a></footer></div>";
+			let mo = false;
+			try {
+				mo = localStorage.getItem("zzHomeMore") === "1";
+			} catch (e) {}
+			h += "</section><details class=\"nh-more\" id=\"nhmore\"" + (mo ? " open" : "") + "><summary>More stats<small>Exam countdown, study activity, high-yield questions and every topic</small></summary><section class=\"nh-plan nh-solo\">" + cd + "</section>" + ht + more + "</details><footer class=\"nh-f\"><b>Patholo_zzee</b> · Robbins &amp; Cotran Pathologic Basis of Disease, 11th ed. · <a href=\"#/questions\">Questions</a> · <a href=\"#/qa\">Q&amp;A</a> · <a href=\"#/mcqs\">MCQs</a> · <a href=\"#/textbook\">Textbook</a> · <a href=\"#/notes\">Notes</a> · <a href=\"#/howto\">How to read</a></footer></div>";
 			wrap.innerHTML = h;
 		}
 		wrap.addEventListener("click", (e) => {
@@ -369,6 +385,12 @@
 				render();
 			}
 		});
+		wrap.addEventListener("toggle", (e) => {
+			const d = e.target;
+			if (d && d.id === "nhmore") try {
+				localStorage.setItem("zzHomeMore", d.open ? "1" : "0");
+			} catch (x) {}
+		}, true);
 		wrap.addEventListener("change", (e) => {
 			if (e.target.id === "nhex") {
 				S.pref = S.pref || {};
