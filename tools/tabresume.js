@@ -58,7 +58,7 @@ document.addEventListener('click',e=>{
  clearTimeout(st);save();                            /* keep the last bit of scrolling before you tapped */
  if(keyOf(location.hash)===k)return;                 /* the tab you are in: open its list, as before */
  const t=valid(M.last[k])?M.last[k]:href;pending=t;
- if(t!==href){e.preventDefault();location.hash=t}
+ if(t!==href){e.preventDefault();if(window.zzGo)zzGo(t);else location.hash=t}   /* zzGo (fx.js): the same focus-pull transition */
 },true);
 track();
 }catch(e){}})();

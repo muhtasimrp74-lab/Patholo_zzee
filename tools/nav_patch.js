@@ -12,7 +12,8 @@
   size:'<path d="M3 18.5 7.6 6h.8l4.6 12.5M4.8 14.2h6.4M14.5 18.5l3-8 3 8M15.5 16h4"/>',fs:'<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   flat:'<path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3M6 6l2.1 2.1M15.9 15.9 18 18M18 6l-2.1 2.1M8.1 15.9 6 18"/>',
   exp:'<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15"/>',imp:'<path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 19.5h15"/>',out:'<path d="M14 4.5h4.5v15H14M10 8l-4 4 4 4M6 12h10"/>',
-  me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>'};
+  me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>',
+  fx:'<path d="M12 3.5v2.5M12 18v2.5M3.5 12H6M18 12h2.5"/><circle cx="12" cy="12" r="4.2"/>',hap:'<rect x="8" y="3.5" width="8" height="17" rx="2"/><path d="M4.5 9v6M19.5 9v6"/>'};
  const ic=k=>'<svg class="zm-ic" viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>',CH='<svg class="zm-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
  const link=(h,k,t,c)=>'<a class="zm-row" href="'+h+'">'+ic(k)+'<span class="zm-l">'+t+'</span>'+(c?'<span class="zm-v cn" data-c="'+c+'">0</span>':'')+CH+'</a>';
  const sw=(id,k,t)=>'<button type="button" class="zm-row" role="switch" aria-checked="false" id="'+id+'">'+ic(k)+'<span class="zm-l">'+t+'</span><span class="zm-tg" aria-hidden="true"></span></button>';
@@ -28,7 +29,9 @@
   grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
   grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button></span></div>'+
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
-   sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects'))+
+   sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
+   '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
+   sw('zm-hap','hap','Haptics'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
   '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
    '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
@@ -75,11 +78,18 @@
  }else fb.hidden=true;
  const rb=$x('#mq-flat');try{if(zzStore.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
  rb.onclick=()=>{de.classList.toggle('zz-flat');try{zzStore.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}sync()};
+ /* Visual effects (fx.js): Full, Minimal (cross-fades only) or Off; reduced motion on the device already forces Minimal. Haptics: vibration where supported */
+ X.querySelectorAll('[data-fx]').forEach(b=>b.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.fx=b.dataset.fx;save();if(window.zzFx)zzFx.apply();sync()});
+ $x('.zm-seg-fx').addEventListener('keydown',e=>{if(!/^Arrow(Left|Right|Up|Down)$/.test(e.key))return;e.preventDefault();
+  const o=[...X.querySelectorAll('[data-fx]')],i=o.findIndex(b=>b.getAttribute('aria-checked')==='true'),n=o[(i+(/Left|Up/.test(e.key)?o.length-1:1))%o.length];n.click();n.focus()});
+ const hb=$x('#zm-hap');if(!('vibrate' in navigator))hb.hidden=true;
+ hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
  function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':de.dataset.tone==='sepia'?'sepia':'light'}
  function sync(){
   on(qb,bd.classList.contains('quiz'));on($x('#zm-focus'),bd.classList.contains('focus'));on(cb,bd.classList.contains('calm'));cb.hidden=!tool('calm');
   const t=tool('ink');on(ib,t&&t.getAttribute('aria-pressed')==='true');ib.hidden=!t;
   on(fb,app||fsOn());on(rb,de.classList.contains('zz-flat'));
+  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'full';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false)}
   const th=theme();X.querySelectorAll('[data-th]').forEach(b=>{const c=b.dataset.th===th;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});
   const f=+((S.pref&&S.pref.fs)||1);$x('#zm-fsv').textContent=Math.round(f*100)+'%';$x('[data-st=fm]').disabled=f<=.8;$x('[data-st=fp]').disabled=f>=1.6;
  }

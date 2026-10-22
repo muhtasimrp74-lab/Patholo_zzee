@@ -1,0 +1,77 @@
+/* ===== fx.css: motion tokens and the effects in fx.js. Full = html.fx-full, Minimal = html.fx-min (cross-fades only), Off = html.fx-off ===== */
+:root{--fx-hema:var(--plum2,#6B2D5C);--fx-eosin:var(--rosy2,#D98FA8);--fx-gold:#D6AE68;--fx-out:cubic-bezier(.2,.7,.2,1);
+ --fx-spring:linear(0,.009,.035 2.1%,.141 4.4%,.723 12.9%,.938 16.7%,1.017 19.5%,1.061 22.7%,1.072 25.9%,1.056 30.3%,1.009 39.3%,.993 48.6%,1.002 69.6%,1);--fx-slow:.6s;--fx-epic:1.2s}
+
+/* rings sweep to their value instead of jumping (the value lives in --p) */
+@property --p{syntax:'<number>';inherits:true;initial-value:0}
+html.fx-full .ring{animation:fx-ring .9s var(--fx-out) both}
+@keyframes fx-ring{from{--p:0}}
+html.fx-full .mx-ring .fg{animation:fx-arc 1.1s var(--fx-out) .1s both}
+@keyframes fx-arc{from{stroke-dasharray:0 999}}
+
+/* route change: focus pull. The old page softens and dims, the new one resolves from slightly out of focus.
+   The bottom bar keeps its own layer so it stays sharp, and the view's own fade steps aside while this runs. */
+html.fx-vt .view{animation:none!important}
+html.fx-vt #bnav{view-transition-name:fx-bnav}
+::view-transition-group(fx-bnav){animation:none}
+html.fx-full.fx-vt::view-transition-old(root){animation:fx-out .22s cubic-bezier(.4,0,1,1) both}
+html.fx-full.fx-vt::view-transition-new(root){animation:fx-in .36s var(--fx-out) both}
+html.fx-full.fx-vt[data-fx-dir=fwd]::view-transition-new(root){animation-name:fx-in-r}
+html.fx-full.fx-vt[data-fx-dir=back]::view-transition-new(root){animation-name:fx-in-l}
+@keyframes fx-out{to{opacity:0;filter:blur(6px) brightness(.97);transform:scale(.985)}}
+@keyframes fx-in{from{opacity:0;filter:blur(6px);transform:scale(1.02)}}
+@keyframes fx-in-r{from{opacity:0;filter:blur(6px);transform:translateX(24px) scale(1.01)}}
+@keyframes fx-in-l{from{opacity:0;filter:blur(6px);transform:translateX(-24px) scale(1.01)}}
+html.fx-min.fx-vt::view-transition-old(root){animation:fx-fade-o .18s linear both}
+html.fx-min.fx-vt::view-transition-new(root){animation:fx-fade-i .22s linear both}
+@keyframes fx-fade-o{to{opacity:0}}@keyframes fx-fade-i{from{opacity:0}}
+
+/* theme as a lamp: the new theme opens as a circle from the button that was pressed */
+html.fx-lamp::view-transition-old(root){animation:none}
+html.fx-lamp::view-transition-new(root){animation:fx-lamp .6s var(--fx-out) both}
+@keyframes fx-lamp{from{clip-path:circle(0 at var(--fx-x,50%) var(--fx-y,0))}to{clip-path:circle(150vmax at var(--fx-x,50%) var(--fx-y,0))}}
+
+/* stain-to-reveal: a revealed answer develops like a slide in the stain. A plum (haematoxylin) then rose (eosin) wash
+   sweeps across the answer's own background, under the text; the text never moves, so annotations stay aligned. */
+html.fx-full :is(.qi.o .qi-a,body.quiz .card.open .ans){
+ background-image:linear-gradient(90deg,transparent 0 30%,color-mix(in srgb,var(--fx-hema) 16%,transparent) 42%,color-mix(in srgb,var(--fx-eosin) 24%,transparent) 56%,transparent 70% 100%);
+ background-size:320% 100%;background-repeat:no-repeat;animation:fx-stain 1s var(--fx-out) both}
+html.fx-full body.quiz .card.open .ans{animation:zzfade .28s ease both,fx-stain 1s var(--fx-out) both}
+@keyframes fx-stain{from{background-position:100% 0}to{background-position:0 0}}
+
+/* MCQ answers: the correct option stains in and its letter pops; a wrong one gives a small double shake and a burgundy wash */
+html.fx-full .mx-o.ok{background-image:linear-gradient(90deg,transparent 0 30%,color-mix(in srgb,var(--mx-ok,#2E7D5B) 26%,transparent) 50%,transparent 70% 100%);
+ background-size:320% 100%;background-repeat:no-repeat;animation:fx-stain .8s var(--fx-out) both}
+html.fx-full .mx-o.ok b{animation:fx-pop .42s var(--fx-spring) both}
+html.fx-full .mx-o.no{background-image:linear-gradient(90deg,transparent 0 30%,color-mix(in srgb,var(--burgundy) 22%,transparent) 50%,transparent 70% 100%);
+ background-size:320% 100%;background-repeat:no-repeat;animation:fx-stain .7s var(--fx-out) both,fx-shake .34s ease-in-out both}
+html.fx-full body.an-on .mx-o.no{animation:fx-stain .7s var(--fx-out) both}   /* annotating: colour only, nothing moves */
+@keyframes fx-pop{0%{transform:scale(.6)}100%{transform:scale(1)}}
+@keyframes fx-shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-4px)}40%{transform:translateX(4px)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}
+
+/* bottom bar: one pill slides between tabs (the tab's own highlight steps aside) */
+#bnav.fx-pilled{isolation:isolate}
+#bnav .fx-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:14px;background:var(--fx-tab,rgba(122,31,54,.1));opacity:0;pointer-events:none}
+html:not(.fx-off) #bnav.fx-pilled a.on{background:transparent!important}
+html.fx-full #bnav .fx-pill{transition:transform .42s var(--fx-spring),width .3s var(--fx-out),opacity .2s}
+html.fx-off #bnav .fx-pill{display:none}
+
+/* dialogs: the page behind defocuses */
+html.fx-full .zz-dlg::backdrop{backdrop-filter:blur(6px) saturate(.9);-webkit-backdrop-filter:blur(6px) saturate(.9)}
+
+/* banner pictures develop the first time they are seen: unstained grey, then colour, then focus */
+html.fx-full .pb-pic img.fx-dev{animation:fx-dev 1.1s var(--fx-out) both}
+@keyframes fx-dev{from{filter:grayscale(1) blur(6px) brightness(1.08)}55%{filter:grayscale(.2) blur(2px)}to{filter:none}}
+
+/* reading pages: a hairline that fills as you scroll (scroll-driven, no JS) */
+.fx-read{display:none}
+@supports (animation-timeline:scroll()){
+ html.fx-full.fx-rd .fx-read{display:block;position:fixed;left:0;right:0;top:0;height:2px;z-index:62;pointer-events:none;transform-origin:0 50%;
+  background:linear-gradient(90deg,var(--fx-hema),var(--fx-eosin));animation:fx-read linear both;animation-timeline:scroll(root)}
+ @keyframes fx-read{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+}
+
+/* Off and reduced motion: none of the above moves */
+html.fx-off :is(.ring,.mx-ring .fg,.qi.o .qi-a,.mx-o.ok,.mx-o.ok b,.mx-o.no,.pb-pic img){animation:none!important}
+@media(prefers-reduced-motion:reduce){:is(.ring,.mx-ring .fg,.qi.o .qi-a,.mx-o.ok b,.mx-o.no,.pb-pic img){animation:none!important}#bnav .fx-pill{transition:none!important}}
+@media print{.fx-pill,.fx-read{display:none!important}}
