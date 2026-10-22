@@ -84,7 +84,7 @@ function banner(): void {
   usefulLine(d.querySelector('span')!); planBadge(d.querySelector('.zw-plan')!);
   let t: ReturnType<typeof setTimeout>;
   const arm = (): void => { clearTimeout(t); t = setTimeout(close, 7000); };
-  examAsk(d.querySelector('.zw-t')!, arm);
+  examAsk(d, arm);
   document.body.append(bd, d);
   const away = (e?: Event): void => { if (e && e.target instanceof Node && d.contains(e.target)) return; if (d.isConnected && performance.now() - t0 > 600) close(); };
   const EV = ['wheel', 'touchmove', 'keydown'];
@@ -107,7 +107,7 @@ function examAsk(box: Element, arm: () => void): void {
   if (!st || !st.pref || st.pref.exam) return;
   const later = +(get('zzExamAsk') || 0); if (Date.now() < later) return;
   const fm = document.createElement('form'); fm.className = 'zw-ex';
-  fm.innerHTML = '<label>When is your exam?<input type="date" required></label><button type="submit">Save</button><button type="button" class="zw-no">Not now</button>';
+  fm.innerHTML = '<label for="zw-exd">When is your exam?</label><div class="zw-exr"><input id="zw-exd" type="date" required><button type="submit">Save</button><button type="button" class="zw-no">Not now</button></div>';
   fm.addEventListener('submit', (e) => {
     e.preventDefault(); const v = (fm.querySelector('input') as HTMLInputElement).value; if (!v) return;
     st.pref!.exam = v; if (typeof save === 'function') save();

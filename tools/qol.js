@@ -41,13 +41,16 @@ function empty(k){
 }
 if(typeof render==='function'){const r0=render;window.render=function(k){const o=r0.apply(this,arguments);try{empty(k)}catch(e){}return o}}
 
-/* --- footer: the full credits on Home; one slim line on every other page --- */
+/* --- footer: the full credits on Home; a compact footer (brand, main links, credit, legal) on every other page --- */
 function foot(){
  const home=!location.hash||/^#\/?(home)?$/.test(location.hash);document.documentElement.classList.toggle('zq-inner',!home);
- const bot=$('footer.sf .sf-bot');if(bot&&!$('.zq-legal',bot)){const l=document.createElement('p');l.className='zq-legal';
-  l.innerHTML='Made by Muhtasim Ahmed, Netrokona Medical College. <a href="terms.html">Terms</a> <a href="privacy.html">Privacy</a> <a href="refund.html">Refunds</a>';bot.prepend(l)}
+ const f=$('footer.sf'),bot=f&&$('.sf-bot',f);if(!bot||$('.zq-foot',f))return;
+ const z=document.createElement('div');z.className='zq-foot';
+ z.innerHTML='<div class="zq-fb"><p class="zq-fn">Patholo_zzee</p><p class="zq-fd">Pathology viva, written and MCQ revision, built around the NMC viva list and Robbins 11th edition.</p></div>'+
+  '<nav class="zq-fl" aria-label="Site">'+[['#/','Home'],['#/questions','Questions'],['#/qa','Chapters'],['#/mcqs','MCQs'],['#/textbook','Textbook'],['#/practice','Practice'],['#/bookmarks','Bookmarks'],['#/notes','Notes']].map(x=>'<a href="'+x[0]+'">'+x[1]+'</a>').join('')+'</nav>'+
+  '<div class="zq-fm"><p>Created by <b>Muhtasim Ahmed</b>, Netrokona Medical College, Session 2022-23</p><p class="zq-fg"><a href="terms.html">Terms of use</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a></p></div>';
+ f.insertBefore(z,bot);
 }
-
 /* --- Undo after removing a bookmark, favourite or learned mark --- */
 const NAME={bm:'Removed from Bookmarks',fav:'Removed from Favourites',learned:'Marked as not learned'};
 let tb=null,tt=0;
@@ -83,10 +86,10 @@ const cardsOf=c=>{const v=c.closest('.view,main')||document;return [...v.querySe
 function qnav(c){
  const a=c.querySelector('.ans');if(!a||a.querySelector(':scope > .zq-qn'))return;
  const n=document.createElement('nav');n.className='zq-qn';n.setAttribute('aria-label','Move between questions');
- n.innerHTML='<button type="button" data-d="-1">‹ Previous question</button><button type="button" data-d="1">Next question ›</button>';
+ n.innerHTML='<button type="button" data-d="-1" aria-label="Previous question"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg><span>Previous</span></button><span class="zq-qp"></span><button type="button" data-d="1" aria-label="Next question"><span>Next</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>';
  a.append(n);qsync(c);
 }
-function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf(c),i=l.indexOf(c);n.querySelector('[data-d="-1"]').disabled=i<=0;n.querySelector('[data-d="1"]').disabled=i<0||i>=l.length-1}
+function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf(c),i=l.indexOf(c);n.querySelector('.zq-qp').textContent=i>=0?(i+1)+' of '+l.length:'';n.querySelector('[data-d="-1"]').disabled=i<=0;n.querySelector('[data-d="1"]').disabled=i<0||i>=l.length-1}
 function qgo(c,d){
  const l=cardsOf(c),t=l[l.indexOf(c)+d];if(!t)return;
  const bar=t.closest('.view')&&t.closest('.view').querySelector('.bar'),off=(bar&&getComputedStyle(bar).position==='sticky'?bar.getBoundingClientRect().height:0)+72;
@@ -100,11 +103,11 @@ document.addEventListener('click',e=>{
  const b=e.target.closest&&e.target.closest('.zq-qn button');if(b){e.preventDefault();qgo(b.closest('article.card'),+b.dataset.d)}
 });
 let tx=0,ty=0,tc=null;
-document.addEventListener('touchstart',e=>{const a=e.target.closest&&e.target.closest('article.card .ans');tc=null;if(!a||document.body.classList.contains('an-on')||e.touches.length>1)return;
+document.addEventListener('touchstart',e=>{const a=e.target.closest&&e.target.closest('article.card .ans');tc=null;if(!a||!document.body.classList.contains('calm')||document.body.classList.contains('an-on')||e.touches.length>1)return;   /* swipe only in Calm reading */
  for(let x=e.target;x&&x!==a;x=x.parentElement)if(x.scrollWidth>x.clientWidth+4&&/auto|scroll/.test(getComputedStyle(x).overflowX))return;   /* a table that scrolls sideways */
  tc=a.closest('article.card');tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
 document.addEventListener('touchend',e=>{if(!tc)return;const t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty,c=tc;tc=null;if(Math.abs(dx)>80&&Math.abs(dy)<45)qgo(c,dx<0?1:-1)},{passive:true});
 
 const all=()=>{aa();foot();practice();watch();['bm','fav','notes'].forEach(k=>{try{empty(k)}catch(e){}})};
-all();addEventListener('hashchange',()=>setTimeout(all,0));addEventListener('load',()=>setTimeout(all,300));
+all();addEventListener('hashchange',()=>setTimeout(all,0));document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-z=calm],#tools [data-t=calm]'))setTimeout(()=>document.querySelectorAll('.zq-qn').forEach(n=>qsync(n.closest('article.card'))),0)});addEventListener('load',()=>setTimeout(all,300));
 }catch(e){}})();
