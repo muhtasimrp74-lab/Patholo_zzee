@@ -31,7 +31,9 @@ class Smoke(unittest.TestCase):
         self.go('#/01/q3'); self.assertTrue(self.p.locator('#q3').count() == 1)
     def test_4_textbook_deep_link(self):
         self.go('#/textbook/ch11/82a064d3/q910'); self.p.wait_for_timeout(1500)
-        self.assertTrue(self.p.locator('#v-textbook').is_visible()); self.assertGreater(len(self.p.locator('#v-textbook').inner_text()), 500)
+        self.assertTrue(self.p.locator('#v-textbook').is_visible())
+        # the chapter itself opened (not the landing page: its banner steps aside while reading, so count the chapter's own header)
+        t = self.p.locator('#v-textbook').inner_text(); self.assertIn('Blood Vessels', t); self.assertIn('CHAPTER 11', t.upper())
     def test_5_search(self):
         self.go('#/01'); self.p.locator('#v-01 input.tq').first.fill('hypertension'); self.p.wait_for_timeout(700)
         n = self.p.evaluate("[...document.querySelectorAll('#v-01 article.card')].filter(c=>c.offsetParent).length")

@@ -61,7 +61,7 @@
   var BUNDLE = { q: 'the Question bank', mcq: 'the MCQ bank', tb: 'the Textbook bundle' };
   var why = function (e, kind) {
     var b = BUNDLE[kind] || 'a paid bundle';
-    return e && e.status === 401 ? 'Sign in to read this. It comes with ' + b + '.' : e && e.status === 403 ? 'This comes with ' + b + '.' : 'Could not load this. Check your connection and try again.';
+    return e && e.status === 401 ? 'Sign in to read this. It comes with ' + b + '.' : e && e.status === 403 ? 'This comes with ' + b + '.' : 'Could not load this. ' + (window.zzNetMsg ? window.zzNetMsg() : 'Check your connection and try again.');
   };
   function act(e, retry) {  // the one button an error state offers: Sign in, Upgrade or Try again
     var b = document.createElement('button'); b.type = 'button';
