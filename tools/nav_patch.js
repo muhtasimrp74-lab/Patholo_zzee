@@ -43,7 +43,7 @@
  $x('#zm-exp').onclick=()=>exp();
  const fi=$x('#zm-file');$x('#zm-imp').onclick=()=>fi.click();fi.onchange=()=>{if(fi.files[0])imp(fi.files[0]);fi.value=''};
  $x('#zm-out').onclick=function(){this.disabled=true;window.zzAccount&&zzAccount.logout()};
- /* fullscreen: browsers only allow it after a tap, so the app goes fullscreen on the first tap of each visit (unless switched off here) */
+ /* fullscreen: browsers only allow it after a tap, so the app goes fullscreen on the first tap of each visit (unless switched off here). That tap is never on a button, link or field, or while a dialog is open: entering fullscreen lifts the page above an open dialog and hides it. */
  const fb=$x('#mq-fs'),fsOn=()=>!!(document.fullscreenElement||document.webkitFullscreenElement),app=matchMedia('(display-mode: fullscreen)').matches;
  if(de.requestFullscreen||de.webkitRequestFullscreen){
   const enter=()=>{try{if(!fsOn())(de.requestFullscreen||de.webkitRequestFullscreen).call(de)}catch(e){}},
@@ -53,7 +53,7 @@
   if(app){fb.disabled=true;fb.querySelector('.zm-l').textContent='Fullscreen (app)'}/* installed app launched fullscreen by its manifest */
   fb.onclick=e=>{e.stopPropagation();if(fsOn()){setWant(false);leave()}else{setWant(true);enter()}};
   ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,sync));
-  if(want()&&!app){const once=()=>{removeEventListener('pointerup',once,true);removeEventListener('keydown',once,true);if(want())enter()};addEventListener('pointerup',once,true);addEventListener('keydown',once,true)}
+  if(want()&&!app){const once=e=>{if(document.querySelector('dialog[open]')||(e&&e.target&&e.target.closest&&e.target.closest('button,a,input,select,textarea,label,summary,[role=button],[role=switch],[contenteditable]')))return;removeEventListener('pointerup',once,true);removeEventListener('keydown',once,true);if(want())enter()};addEventListener('pointerup',once,true);addEventListener('keydown',once,true)}
  }else fb.hidden=true;
  const rb=$x('#mq-flat');try{if(zzStore.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
  rb.onclick=()=>{de.classList.toggle('zz-flat');try{zzStore.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}sync()};
@@ -73,8 +73,8 @@
  const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
  const day=t=>new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
  const local=()=>{try{return(zzStore.getItem('zzName')||'').trim().slice(0,40)}catch(e){return''}};
- function who(){const a=window.zzAccount,si=!!(a&&a.signedIn&&a.signedIn()),u=(si&&a.user&&a.user())||{},d=(u.display_name||'').trim();
-  return{si,name:(/^User \d{4}$/.test(d)?'':d)||local(),contact:u.email||u.phone||''}}
+ function who(){const a=window.zzAccount,si=!!(a&&a.signedIn&&a.signedIn()),held=!si&&!!(function(){try{return localStorage.getItem('zz-rt')}catch(e){}})(),u=(si&&a.user&&a.user())||{},d=(u.display_name||'').trim();
+  return{si,held,name:(/^User \d{4}$/.test(d)?'':d)||local(),contact:u.email||u.phone||''}}
  function initials(n,c){const w=n.split(/\s+/).filter(Boolean);return w.length?(w[0][0]+(w.length>1?w[w.length-1][0]:'')).toUpperCase():c?c[0].toUpperCase():''}
  function plan(m){const t=m.now||Date.now(),a=(m.entitlements||[]).filter(e=>e.expires_at>t),k=a.map(e=>e.entitlement),end=a.length?Math.min(...a.map(e=>e.expires_at)):0;
   return{paid:k.length>0,all:k.length>=3,end,days:end?Math.ceil((end-t)/864e5):0,
@@ -90,7 +90,9 @@
   const ini=initials(w.name,w.contact),gold=!!(p&&p.paid);
   const av='<div class="zm-av'+(gold?' zm-gold':'')+'" aria-hidden="true">'+(ini?esc(ini):'<svg viewBox="0 0 24 24">'+I.me+'</svg>')+'</div>';
   let title=w.name||'Your account',sub='',status='',acts='';
-  if(!w.si){
+  if(!w.si&&w.held){  /* signed in on this device, but the server could not renew the session (down or unreachable) */
+   status='<span class="zm-when">'+(navigator.onLine===false?'You’re offline. You’re still signed in; your plan shows when you reconnect.':'Couldn’t reach the server. You’re still signed in. <button type="button" class="zm-retry" data-a="retry">Try again</button>')+'</span>';
+  }else if(!w.si){
    status='<span class="zm-chip">Not signed in</span>';
    sub='<p class="zm-note">Topic 01, MCQ chapter 1 and textbook chapter 1 are free. Sign in to open everything your plan includes.</p>';
    acts='<button type="button" class="zm-cta" data-a="in">Sign in</button><button type="button" class="zm-ghost" data-a="new">Create an account</button>';
@@ -110,7 +112,7 @@
   card.classList.toggle('zm-out',!w.si);
   card.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{const a=b.dataset.a;
    if(a==='up'){window.zzUpgrade&&zzUpgrade();return}
-   if(a==='retry'){ME=null;b.disabled=true;b.textContent='Loading…';render();return}
+   if(a==='retry'){ME=null;b.disabled=true;b.textContent='Loading…';const z=window.zzAccount;if(!who().si&&z&&z.refresh)Promise.resolve(z.refresh()).catch(()=>{}).then(render);else render();return}
    if(!window.zzSignIn)return;zzSignIn();const m=document.getElementById('zz-mode');/* the dialog keeps its last mode: switch it to the one asked for */
    if(m&&(a==='new')!==/Have an account/.test(m.textContent))m.click()});
   $x('#zm-outl').hidden=!w.si;

@@ -295,7 +295,7 @@ T = '<ul id="res"></ul></div></div></div></div><main'
 assert T in s
 s = s.replace(T, '<ul id="res"></ul></div></div></div>' + STATS + '</div><main', 1)
 s = s.replace('content="#000000" media', 'content="#1C1219" media').replace('content="#f7f4f2" media', 'content="#F8F3EE" media')
-CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"><meta name=\"referrer\" content=\"no-referrer\">"
+CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://patholo-zzee-app.muhtasimrp74.workers.dev; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"><meta name=\"referrer\" content=\"no-referrer\">"
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
 POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'tutorial.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'motion.js'), encoding='utf8').read()
 assert '</script>' not in POLISH_JS
