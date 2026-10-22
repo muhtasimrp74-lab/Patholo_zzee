@@ -533,3 +533,11 @@ class McqSession(unittest.TestCase):
         pg.reload(); pg.wait_for_function('()=>MCQDATA.q.length===884'); self.assertEqual(len(self.hits), n, 'no chunk requests on the second visit')
         self.ents = (); pg.reload(); pg.wait_for_selector('.zz-banner button'); self.assertGreater(len(self.hits), n, 'expired plan: asks the server again')
         self.assertEqual(pg.evaluate("()=>caches.keys().then(k=>k.filter(x=>x.startsWith('zz-chunks-')))"), [], 'and the copy is wiped')
+    def test_builder_start_and_mock_paper_play_with_all_chapters(self):
+        # the reported bug: with all chapters loaded, "Start practice" and "Mock paper" crashed and the page stayed put
+        for h, click in (('#/mcqs/custom', "()=>[...document.querySelectorAll('#v-mcqs button')].find(b=>b.textContent.trim()==='Start practice').click()"),
+                         ('#/mcqs', "()=>document.querySelector('#v-mcqs [data-a=mock]').click()")):
+            pg = self.page(True, h=h); pg.wait_for_function('()=>MCQDATA.q.length===884'); pg.wait_for_timeout(300)
+            pg.evaluate(click); pg.wait_for_function(self.live); pg.wait_for_timeout(300)
+            self.assertEqual(self.errs, [], h)
+            self.assertTrue(pg.evaluate("()=>/of\\s*\\d+/.test(document.querySelector('#v-mcqs').innerText)"), 'a question is on screen')
