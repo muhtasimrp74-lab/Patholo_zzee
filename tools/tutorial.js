@@ -72,6 +72,5 @@ let ret=null;function start(){if(box)return;ret=document.activeElement;moved=fal
  box.addEventListener('pointerdown',drag);
  addEventListener('keydown',key,true);addEventListener('resize',onR);addEventListener('orientationchange',onR);show(0,true);try{box.querySelector('[data-a=n]').focus({preventScroll:true})}catch(e){}requestAnimationFrame(loop);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 window.zzTutorial=start;
-const g=$('#v-menu .mgrid');
-if(g){const b=document.createElement('button');b.type='button';b.className='mtile';b.id='tut-open';b.textContent='Tutorial';b.onclick=start;g.prepend(b)}
+const tb=$('#tut-open');if(tb)tb.onclick=start;/* the Menu builds its own Tutorial row (nav_patch.js) */
 }catch(e){}})();

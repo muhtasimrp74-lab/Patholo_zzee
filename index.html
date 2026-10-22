@@ -1457,12 +1457,102 @@ html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.q
 /* ===== main panel: Home / Questions / Q&A / MCQs / Menu ===== */
 @media(max-width:1000px){#bnav{grid-template-columns:repeat(6,1fr)}}
 .nav .links a.on{color:var(--navy);border-bottom-color:var(--burgundy)}
-.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:6px 0 22px}
-.mtile{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:56px;padding:12px 16px;border-radius:16px;
- background:var(--panel);border:1px solid var(--line);color:var(--text);font:600 .95rem var(--body);text-decoration:none;cursor:pointer;text-align:left}
-.mtile:hover{border-color:var(--burgundy)}
-.mtile .cn{display:inline-flex!important;min-width:24px;height:24px;padding:0 8px;align-items:center;justify-content:center;border-radius:99px;background:var(--soft);color:var(--muted);font:600 .75rem var(--body)}
-.mh{margin:22px 4px 8px;font:700 .74rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--lbl)}
+/* ===== Menu: profile card (the logo's own oxblood, gold and cream) + quiet grouped lists ===== */
+.zm{--zm-ox:#47101E;--zm-ox2:#3B0B17;--zm-gold:#D6AE68;--zm-cream:#F8EBD5;--zm-cream2:rgba(248,235,213,.74);--zm-hair:rgba(248,235,213,.16);
+ --zm-ic:var(--burgundy);--zm-on:var(--burgundy);padding-top:0!important}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .zm{--zm-ic:var(--rosy);--zm-on:var(--rosy)}}
+:root[data-theme=dark] .zm{--zm-ic:var(--rosy);--zm-on:var(--rosy)}
+#v-menu .zz-hi{display:none}  /* the card already greets you by name */
+.pb[data-pb=menu] .pb-in{padding-bottom:72px}
+@media(max-width:640px){.pb[data-pb=menu] .pb-in{padding-bottom:58px}}
+
+/* card */
+.zm-card{position:relative;z-index:2;margin:-44px 0 34px;padding:24px;border-radius:22px;color:var(--zm-cream);
+ background:linear-gradient(135deg,#56111F 0%,var(--zm-ox) 55%,var(--zm-ox2) 100%);
+ box-shadow:inset 0 0 0 1px rgba(214,174,104,.32),0 2px 4px rgba(42,22,39,.12),0 22px 48px -18px rgba(42,22,39,.55)}
+.zm-id{display:grid;grid-template-columns:auto 1fr;gap:16px 18px;align-items:center}
+.zm-av{display:grid;place-items:center;width:60px;height:60px;border-radius:50%;background:var(--zm-cream);color:var(--zm-ox);
+ font:400 1.55rem/1 var(--disp);letter-spacing:.01em;box-shadow:0 0 0 3px var(--zm-ox),0 0 0 4px rgba(248,235,213,.35)}
+.zm-av.zm-gold{box-shadow:0 0 0 3px var(--zm-ox),0 0 0 5px var(--zm-gold)}
+.zm-av svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.zm-out .zm-av{background:transparent;color:var(--zm-cream);box-shadow:inset 0 0 0 1.5px rgba(248,235,213,.5)}
+.zm-who{min-width:0}
+.zm-name{margin:0;font:400 clamp(1.55rem,5.6vw,2.15rem)/1.08 var(--disp);letter-spacing:-.005em;color:#FFF8EC;overflow-wrap:anywhere}
+.zm-mail{margin:5px 0 0;font-size:.94rem;color:var(--zm-cream2);overflow-wrap:anywhere}
+.zm-note{margin:10px 0 0;max-width:54ch;font-size:.94rem;line-height:1.5;color:var(--zm-cream2)}
+.zm-st{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;min-height:26px;margin:10px 0 0;font-size:.875rem;color:var(--zm-cream2)}
+.zm-chip{display:inline-flex;align-items:center;min-height:24px;padding:0 11px;border-radius:999px;border:1px solid rgba(248,235,213,.42);font:600 .78rem/1 var(--body);letter-spacing:.01em;color:var(--zm-cream)}
+.zm-chip.zm-paid{border-color:transparent;background:var(--zm-gold);color:var(--zm-ox2)}
+.zm-when{font-variant-numeric:tabular-nums}
+.zm-acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px}
+.zm-acts>*{flex:1 1 auto;white-space:nowrap}  /* side by side when both fit, else one per line */
+.zm-cta,.zm-ghost{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:12px;font:600 .95rem/1.1 var(--body);text-align:center;text-decoration:none;cursor:pointer;
+ transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.zm-cta{border:1px solid var(--zm-cream);background:var(--zm-cream);color:var(--zm-ox)}
+.zm-cta:hover{background:#FFFDF8;border-color:#FFFDF8}
+.zm-ghost{border:1px solid rgba(248,235,213,.4);background:transparent;color:var(--zm-cream)}
+.zm-ghost:hover{background:rgba(248,235,213,.1);border-color:rgba(248,235,213,.72)}
+.zm-cta:focus-visible,.zm-ghost:focus-visible{outline:2px solid var(--zm-gold);outline-offset:3px}
+#v-menu .zm-cta:active,#v-menu .zm-ghost:active{transform:translateY(1px)}
+.zm-prog{margin:20px 0 0;padding:16px 0 0;border-top:1px solid var(--zm-hair)}
+.zm-prog p{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin:0 0 10px;font-size:.875rem;color:var(--zm-cream2);font-variant-numeric:tabular-nums}
+.zm-bar{height:4px;border-radius:999px;background:rgba(248,235,213,.14);overflow:hidden}
+.zm-bar i{display:block;height:100%;border-radius:inherit;background:var(--zm-gold)}
+@media(min-width:720px){
+ .zm-card{margin-top:-60px;padding:30px 32px}
+ .zm-id{grid-template-columns:auto 1fr auto;gap:24px}
+ .zm-av{width:76px;height:76px;font-size:2rem}.zm-av svg{width:36px;height:36px}
+ .zm-acts{grid-column:auto;flex-direction:column;flex-wrap:nowrap;align-self:center;min-width:200px}
+ .zm-acts>*{flex:none}
+}
+
+/* grouped lists */
+.zm-cols{display:flex;flex-direction:column}
+.zm-cols>div{display:contents}
+.zm-o1{order:1}.zm-o2{order:2}.zm-o3{order:3}.zm-o4{order:4}.zm-o5{order:5}.zm-o6{order:6}
+@media(min-width:900px){.zm-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;align-items:start}.zm-cols>div{display:block}}
+.zm-g{margin:0 0 28px}
+.zm-gh{margin:0 4px 10px;font:400 1.3rem/1.2 var(--disp);letter-spacing:-.003em;color:var(--text)}
+.zm-list{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.zm-list[hidden],.zm-row[hidden]{display:none}
+.zm-row{position:relative;display:flex;align-items:center;gap:14px;width:100%;min-height:56px;margin:0;padding:8px 16px;border:0;border-radius:0;background:transparent;
+ color:var(--text);font:500 1rem/1.3 var(--body);text-align:left;text-decoration:none;cursor:pointer;box-sizing:border-box}
+.zm-row+.zm-row::before,.zm-row+input+.zm-row::before{content:"";position:absolute;top:0;left:52px;right:0;border-top:1px solid var(--line)}
+#v-menu .zm-row:active{transform:none}
+@media(hover:hover){.zm-row:not(.zm-fix):hover{background:var(--soft)}}
+.zm-row:not(.zm-fix):active{background:var(--soft)}
+.zm-row:focus-visible{outline:2px solid var(--zm-on);outline-offset:-2px;border-radius:10px}
+.zm-row:disabled{cursor:default;opacity:.62}
+.zm-fix{cursor:default}
+.zm-ic{flex:none;width:22px;height:22px;fill:none;stroke:var(--zm-ic);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.zm-l{flex:1;min-width:0}
+.zm-v{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:24px;padding:0 8px;border-radius:999px;background:var(--soft);color:var(--muted);font:600 .8rem/1 var(--body);font-variant-numeric:tabular-nums}
+.zm-chev{flex:none;width:18px;height:18px;margin-right:-4px;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* switch */
+.zm-tg{flex:none;position:relative;width:44px;height:26px;border-radius:999px;background:var(--line2);transition:background-color .18s ease}
+.zm-tg::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(42,22,39,.28);transition:transform .2s cubic-bezier(.2,.7,.2,1)}
+[aria-checked=true]>.zm-tg{background:var(--zm-on)}
+[aria-checked=true]>.zm-tg::after{transform:translateX(18px)}
+/* theme: two-way segmented control */
+.zm-seg{display:inline-flex;padding:3px;border-radius:999px;background:var(--soft);border:1px solid var(--line)}
+.zm-seg button{min-height:38px;min-width:58px;padding:0 12px;border:0;border-radius:999px;background:transparent;color:var(--muted);font:600 .875rem/1 var(--body);cursor:pointer}
+.zm-seg button[aria-checked=true]{background:var(--panel);color:var(--text);box-shadow:0 1px 2px rgba(42,22,39,.14),0 0 0 1px var(--line)}
+.zm-seg button:focus-visible,.zm-step button:focus-visible{outline:2px solid var(--zm-on);outline-offset:2px}
+#v-menu .zm-seg button:active,#v-menu .zm-step button:active{transform:scale(.96)}
+/* text size stepper */
+.zm-step{display:inline-flex;align-items:center;gap:4px}
+.zm-step button{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--line2);background:var(--panel);color:var(--text);font:600 .875rem/1 var(--body);cursor:pointer}
+.zm-step button:disabled{opacity:.4;cursor:default}
+.zm-step output{min-width:46px;text-align:center;font:600 .875rem/1 var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
+.zm-outl .zm-l{color:var(--zm-on);font-weight:600}
+.zm-outl .zm-ic{stroke:var(--zm-on)}
+/* Menu tab: your initials in place of the menu icon */
+.zm-navav{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--burgundy);color:#FFF8EC;font:600 .6rem/1 var(--body);letter-spacing:.02em;flex:none}
+.zm-navav.zm-gold{box-shadow:0 0 0 1.5px var(--panel),0 0 0 3px #D6AE68}
+#bnav a.zm-hasav .zm-navav{margin:-1px 0 1px}
+.nav .links a.zm-hasav{display:inline-flex;align-items:center;gap:8px}
+@media(prefers-reduced-motion:reduce){.zm-tg,.zm-tg::after{transition:none}#v-menu .zm-seg button:active,#v-menu .zm-step button:active{transform:none}}
+@media print{.zm-card{box-shadow:none;border:1px solid #999}}
 .mq{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px var(--gx,18px);margin:0 0 14px}
 .mq h4{margin:0 0 12px;font:600 1.05rem/1.4 var(--body)}
 .mq .mo{display:block;width:100%;text-align:left;margin:0 0 8px;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--soft);color:var(--text);font:500 .95rem/1.4 var(--body);cursor:pointer}
@@ -2947,35 +3037,140 @@ document.addEventListener('click',e=>document.querySelectorAll('.dp:not([hidden]
 document.querySelectorAll('select').forEach(dd);
 counts();dash();
 
-/* ---- Menu page ---- */
-{const X=mkView('menu','Menu','Menu','Everything else lives here.');
- X.innerHTML=`<p class="mh">Study</p><div class="mgrid"><a class="mtile" href="#/practice">Practice</a><a class="mtile" href="#/howto">How to read</a></div>
-<p class="mh">Saved</p><div class="mgrid"><a class="mtile" href="#/bookmarks">Bookmarks<span class="cn" data-c="bm">0</span></a><a class="mtile" href="#/favourites">Favourites<span class="cn" data-c="fav">0</span></a><a class="mtile" href="#/notes">Notes<span class="cn" data-c="notes">0</span></a></div>
-<p class="mh">Display</p><div class="mgrid"><button type="button" class="mtile" id="mq-quiz">Quiz mode</button><button type="button" class="mtile" data-tt="ink">Ink (handwriting)</button><button type="button" class="mtile" data-tt="theme">Theme</button><button type="button" class="mtile" data-tt="fm">Smaller text</button><button type="button" class="mtile" data-tt="fp">Larger text</button><button type="button" class="mtile" data-tt="focus">Focus</button><button type="button" class="mtile" data-tt="print">Print</button></div>
-<p class="mh">Your data</p><div class="mgrid"><button type="button" class="mtile" onclick="exp()">Export backup</button><label class="mtile">Import backup<input type="file" accept=".json" hidden onchange="imp(this.files[0])"></label></div>`;
- X.querySelectorAll('[data-tt]').forEach(b=>b.onclick=()=>{const t=document.querySelector('#tools [data-t="'+b.dataset.tt+'"]');if(t)t.click()});
- const qb=X.querySelector('#mq-quiz'),qs=()=>{qb.textContent=document.body.classList.contains('quiz')?'Quiz mode: on':'Quiz mode: off'};qs();
- qb.onclick=()=>{setQuiz(!document.body.classList.contains('quiz'),true);qs()};
- const fb=document.createElement('button');fb.type='button';fb.className='mtile';fb.id='mq-fs';
- const de=document.documentElement,fsOn=()=>document.fullscreenElement||document.webkitFullscreenElement,
-  fs=()=>{fb.textContent=fsOn()?'Fullscreen: on':'Fullscreen: off'};
- if(de.requestFullscreen||de.webkitRequestFullscreen){fs();
+/* ---- Menu page: your profile card first, then study, saved, reading, display and data as grouped lists.
+   Every switch shows its real state (synced each time the page opens). The Menu tab shows your initials once signed in. ---- */
+{const X=mkView('menu','Menu','Menu','Your account, saved work and settings.');
+ const de=document.documentElement,bd=document.body,tool=t=>document.querySelector('#tools [data-t="'+t+'"]'),press=t=>{const b=tool(t);if(b)b.click()};
+ const I={tut:'<circle cx="12" cy="12" r="8.5"/><path d="M10.2 8.8v6.4l5.3-3.2z"/>',practice:'<rect x="3.5" y="7.5" width="13" height="13" rx="2"/><path d="M7.5 4.5h11a2 2 0 0 1 2 2v11"/>',
+  read:'<path d="M12 6.8C10.4 5.4 7.9 4.8 3.5 4.8v13.4c4.4 0 6.9.6 8.5 2 1.6-1.4 4.1-2 8.5-2V4.8c-4.4 0-6.9.6-8.5 2Zm0 0v13.4"/>',
+  bm:'<path d="M6.5 3.8h11v16.4L12 16.4l-5.5 3.8z"/>',fav:'<path d="M12 19.6s-7.6-4.5-7.6-10a4.3 4.3 0 0 1 7.6-2.7 4.3 4.3 0 0 1 7.6 2.7c0 5.5-7.6 10-7.6 10Z"/>',
+  notes:'<path d="M5.5 3.5h9l4 4v13h-13z"/><path d="M14.5 3.5v4h4M8.5 12h7M8.5 15.8h4.5"/>',quiz:'<rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M9.6 10a2.4 2.4 0 1 1 3.1 2.3c-.5.2-.7.6-.7 1.1v.3M12 16.4v.1"/>',
+  focus:'<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/>',calm:'<path d="M3.5 9.5c2.8-2 5.7-2 8.5 0s5.7 2 8.5 0M3.5 15c2.8-2 5.7-2 8.5 0s5.7 2 8.5 0"/>',
+  ink:'<path d="M4.5 19.5l1-4.2L15.8 5a2.1 2.1 0 0 1 3 3L8.7 18.5z"/><path d="M13.8 7l3.1 3.1"/>',theme:'<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/>',
+  size:'<path d="M3 18.5 7.6 6h.8l4.6 12.5M4.8 14.2h6.4M14.5 18.5l3-8 3 8M15.5 16h4"/>',fs:'<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+  flat:'<path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3M6 6l2.1 2.1M15.9 15.9 18 18M18 6l-2.1 2.1M8.1 15.9 6 18"/>',
+  exp:'<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15"/>',imp:'<path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 19.5h15"/>',out:'<path d="M14 4.5h4.5v15H14M10 8l-4 4 4 4M6 12h10"/>',
+  me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>'};
+ const ic=k=>'<svg class="zm-ic" viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>',CH='<svg class="zm-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
+ const link=(h,k,t,c)=>'<a class="zm-row" href="'+h+'">'+ic(k)+'<span class="zm-l">'+t+'</span>'+(c?'<span class="zm-v cn" data-c="'+c+'">0</span>':'')+CH+'</a>';
+ const sw=(id,k,t)=>'<button type="button" class="zm-row" role="switch" aria-checked="false" id="'+id+'">'+ic(k)+'<span class="zm-l">'+t+'</span><span class="zm-tg" aria-hidden="true"></span></button>';
+ const btn=(id,k,t)=>'<button type="button" class="zm-row" id="'+id+'">'+ic(k)+'<span class="zm-l">'+t+'</span></button>';
+ const OR={'zm-h-study':1,'zm-h-saved':2,'zm-h-read':3,'zm-h-disp':4,'zm-h-data':5},/* phone order; desktop splits into two columns */
+  grp=(id,h,rows)=>'<section class="zm-g zm-o'+OR[id]+'" aria-labelledby="'+id+'"><h2 class="zm-gh" id="'+id+'">'+h+'</h2><div class="zm-list">'+rows+'</div></section>';
+ X.classList.add('zm');
+ X.innerHTML='<section class="zm-card" id="zm-card" aria-labelledby="zm-name"></section><div class="zm-cols"><div>'+
+  grp('zm-h-study','Study',btn('tut-open','tut','Tutorial')+link('#/practice','practice','Practice')+link('#/howto','read','How to read'))+
+  grp('zm-h-saved','Saved',link('#/bookmarks','bm','Bookmarks','bm')+link('#/favourites','fav','Favourites','fav')+link('#/notes','notes','Notes','notes'))+
+  grp('zm-h-data','Your data',btn('zm-exp','exp','Export backup')+btn('zm-imp','imp','Import backup')+'<input type="file" accept=".json" id="zm-file" hidden>')+
+ '</div><div>'+
+  grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
+  grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button></span></div>'+
+   '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
+   sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects'))+
+  '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
+ '</div></div>';
+ const $x=s=>X.querySelector(s),on=(el,v)=>{if(el)el.setAttribute('aria-checked',String(!!v))};
+ /* switches and controls */
+ const qb=$x('#mq-quiz');qb.onclick=()=>{setQuiz(!bd.classList.contains('quiz'),true);sync()};
+ $x('#zm-focus').onclick=()=>{press('focus');sync()};
+ const cb=$x('#zm-calm');cb.onclick=()=>{press('calm');sync()};
+ const ib=$x('#zm-ink');ib.onclick=()=>{press('ink');setTimeout(sync,0)};
+ /* the toolbar button steps Light > Sepia > Dark (polish.js), so tap it until the chosen theme is on */
+ X.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{for(let i=0;i<3&&theme()!==b.dataset.th;i++)press('theme');sync()});
+ X.querySelectorAll('[data-st]').forEach(b=>b.onclick=()=>{press(b.dataset.st);sync()});
+ $x('#zm-exp').onclick=()=>exp();
+ const fi=$x('#zm-file');$x('#zm-imp').onclick=()=>fi.click();fi.onchange=()=>{if(fi.files[0])imp(fi.files[0]);fi.value=''};
+ $x('#zm-out').onclick=function(){this.disabled=true;window.zzAccount&&zzAccount.logout()};
+ /* fullscreen: browsers only allow it after a tap, so the app goes fullscreen on the first tap of each visit (unless switched off here) */
+ const fb=$x('#mq-fs'),fsOn=()=>!!(document.fullscreenElement||document.webkitFullscreenElement),app=matchMedia('(display-mode: fullscreen)').matches;
+ if(de.requestFullscreen||de.webkitRequestFullscreen){
   const enter=()=>{try{if(!fsOn())(de.requestFullscreen||de.webkitRequestFullscreen).call(de)}catch(e){}},
    leave=()=>{try{if(fsOn())(document.exitFullscreen||document.webkitExitFullscreen).call(document)}catch(e){}},
    want=()=>{try{return zzStore.getItem('zz-fs')!=='0'}catch(e){return true}},
    setWant=v=>{try{zzStore.setItem('zz-fs',v?'1':'0')}catch(e){}};
-  const app=matchMedia('(display-mode: fullscreen)').matches;/* installed app launched fullscreen by its manifest: already fullscreen from the first frame */
-  if(app){fb.textContent='Fullscreen: on (app)';fb.disabled=true}
+  if(app){fb.disabled=true;fb.querySelector('.zm-l').textContent='Fullscreen (app)'}/* installed app launched fullscreen by its manifest */
   fb.onclick=e=>{e.stopPropagation();if(fsOn()){setWant(false);leave()}else{setWant(true);enter()}};
-  ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,()=>{if(!app)fs()}));
-  /* browsers only allow fullscreen after a tap, so the app goes fullscreen on the first tap of each visit (unless switched off here) */
+  ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,sync));
   if(want()&&!app){const once=()=>{removeEventListener('pointerup',once,true);removeEventListener('keydown',once,true);if(want())enter()};addEventListener('pointerup',once,true);addEventListener('keydown',once,true)}
-  qb.parentNode.appendChild(fb)}
- const rb=document.createElement('button');rb.type='button';rb.className='mtile';rb.id='mq-flat';
- const rf=()=>{rb.textContent=de.classList.contains('zz-flat')?'Reduce effects: on':'Reduce effects: off'};
- try{if(zzStore.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
- rf();rb.onclick=()=>{de.classList.toggle('zz-flat');try{zzStore.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}rf()};
- qb.parentNode.appendChild(rb)}
+ }else fb.hidden=true;
+ const rb=$x('#mq-flat');try{if(zzStore.getItem('zz-flat')==='1')de.classList.add('zz-flat')}catch(e){}
+ rb.onclick=()=>{de.classList.toggle('zz-flat');try{zzStore.setItem('zz-flat',de.classList.contains('zz-flat')?'1':'0')}catch(e){}sync()};
+ function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':de.dataset.tone==='sepia'?'sepia':'light'}
+ function sync(){
+  on(qb,bd.classList.contains('quiz'));on($x('#zm-focus'),bd.classList.contains('focus'));on(cb,bd.classList.contains('calm'));cb.hidden=!tool('calm');
+  const t=tool('ink');on(ib,t&&t.getAttribute('aria-pressed')==='true');ib.hidden=!t;
+  on(fb,app||fsOn());on(rb,de.classList.contains('zz-flat'));
+  const th=theme();X.querySelectorAll('[data-th]').forEach(b=>{const c=b.dataset.th===th;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});
+  const f=+((S.pref&&S.pref.fs)||1);$x('#zm-fsv').textContent=Math.round(f*100)+'%';$x('[data-st=fm]').disabled=f<=.8;$x('[data-st=fp]').disabled=f>=1.6;
+ }
+ /* arrow keys move between the two theme options, as in any radio group */
+ $x('.zm-seg').addEventListener('keydown',e=>{if(!/^Arrow(Left|Right|Up|Down)$/.test(e.key))return;e.preventDefault();
+  const o=[...X.querySelectorAll('[data-th]')],i=o.findIndex(b=>b.getAttribute('aria-checked')==='true'),n=o[(i+(/Left|Up/.test(e.key)?o.length-1:1))%o.length];n.click();n.focus()});
+
+ /* ---- profile card ---- */
+ const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
+ const day=t=>new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+ const local=()=>{try{return(zzStore.getItem('zzName')||'').trim().slice(0,40)}catch(e){return''}};
+ function who(){const a=window.zzAccount,si=!!(a&&a.signedIn&&a.signedIn()),u=(si&&a.user&&a.user())||{},d=(u.display_name||'').trim();
+  return{si,name:(/^User \d{4}$/.test(d)?'':d)||local(),contact:u.email||u.phone||''}}
+ function initials(n,c){const w=n.split(/\s+/).filter(Boolean);return w.length?(w[0][0]+(w.length>1?w[w.length-1][0]:'')).toUpperCase():c?c[0].toUpperCase():''}
+ function plan(m){const t=m.now||Date.now(),a=(m.entitlements||[]).filter(e=>e.expires_at>t),k=a.map(e=>e.entitlement),end=a.length?Math.min(...a.map(e=>e.expires_at)):0;
+  return{paid:k.length>0,all:k.length>=3,end,days:end?Math.ceil((end-t)/864e5):0,
+   label:k.length>=3?'All access':k.length?'Pro: '+k.map(e=>({qna:'Questions',mcq:'MCQs',textbook:'Textbook'})[e]||e).join(' + '):'Free plan'}}
+ let ME=null,meAt=0,meP=null;
+ function me(){const a=window.zzAccount;if(!a||!a.signedIn()||!a.me)return Promise.resolve(null);if(ME&&Date.now()-meAt<6e4)return Promise.resolve(ME);
+  return meP||(meP=a.me().then(m=>{meP=null;if(m){ME=m;meAt=Date.now();if(m.user&&a.setUser)a.setUser(m.user)}return m},()=>{meP=null;return null}))}
+ let IDS=null;function learned(){try{if(!IDS)IDS=new Set(DATA.map(d=>d[3]));return[S.learned.filter(i=>IDS.has(i)).length,IDS.size]}catch(e){return[0,0]}}
+ const card=$x('#zm-card');
+ function paint(w,p,offline){
+  const ini=initials(w.name,w.contact),gold=!!(p&&p.paid);
+  const av='<div class="zm-av'+(gold?' zm-gold':'')+'" aria-hidden="true">'+(ini?esc(ini):'<svg viewBox="0 0 24 24">'+I.me+'</svg>')+'</div>';
+  let title=w.name||'Your account',sub='',status='',acts='';
+  if(!w.si){
+   status='<span class="zm-chip">Not signed in</span>';
+   sub='<p class="zm-note">Topic 01, MCQ chapter 1 and textbook chapter 1 are free. Sign in to open everything your plan includes.</p>';
+   acts='<button type="button" class="zm-cta" data-a="in">Sign in</button><button type="button" class="zm-ghost" data-a="new">Create an account</button>';
+  }else{
+   sub=w.contact?'<p class="zm-mail">'+esc(w.contact)+'</p>':'';
+   if(p){status='<span class="zm-chip'+(p.paid?' zm-paid':'')+'">'+esc(p.label)+'</span>'+(p.paid?'<span class="zm-when">'+(p.days<=7?'Ends in '+p.days+(p.days===1?' day':' days'):'Active until '+esc(day(p.end)))+'</span>':'')}
+   else status='<span class="zm-when">'+(offline?'Your plan shows when you’re online.':'Loading your plan…')+'</span>';
+   const soon=p&&p.paid&&p.days<=7;
+   acts=p&&!p.paid?'<button type="button" class="zm-cta" data-a="up">Choose a plan</button><a class="zm-ghost" href="#/account">Manage account</a>'
+    :soon?'<button type="button" class="zm-cta" data-a="up">Renew plan</button><a class="zm-ghost" href="#/account">Manage account</a>'
+    :'<a class="zm-cta" href="#/account">Manage account</a>'+(p&&p.paid&&!p.all?'<button type="button" class="zm-ghost" data-a="up">Add a plan</button>':'');
+  }
+  const L=learned(),st=(S.streak&&S.streak.n)||0,pc=L[1]?Math.round(1000*L[0]/L[1])/10:0;
+  const prog=L[1]?'<div class="zm-prog"><p><span>'+L[0].toLocaleString('en-IN')+' of '+L[1].toLocaleString('en-IN')+' questions learned</span>'+(st>1?'<span>'+st+'-day streak</span>':'')+'</p><div class="zm-bar" aria-hidden="true"><i style="width:'+Math.max(pc,L[0]?1.5:0)+'%"></i></div></div>':'';
+  const st2='<p class="zm-st">'+status+'</p>';/* signed out: say so first, then what signing in opens */
+  card.innerHTML='<div class="zm-id">'+av+'<div class="zm-who"><h2 class="zm-name" id="zm-name">'+esc(title)+'</h2>'+(w.si?sub+st2:st2+sub)+'</div><div class="zm-acts">'+acts+'</div></div>'+prog;
+  card.classList.toggle('zm-out',!w.si);
+  card.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{const a=b.dataset.a;
+   if(a==='up'){window.zzUpgrade&&zzUpgrade();return}
+   if(!window.zzSignIn)return;zzSignIn();const m=document.getElementById('zz-mode');/* the dialog keeps its last mode: switch it to the one asked for */
+   if(m&&(a==='new')!==/Have an account/.test(m.textContent))m.click()});
+  $x('#zm-outl').hidden=!w.si;
+  nav(w.si?ini:'',gold);
+ }
+ /* the Menu tab carries your initials once you're signed in (gold ring on a paid plan) */
+ function nav(ini,gold){
+  document.querySelectorAll('#bnav a[href="#/menu"],.nav .links a[href="#/menu"]').forEach(a=>{
+   let v=a.querySelector('.zm-navav');const s=a.querySelector(':scope>svg');
+   if(ini){if(!v){v=document.createElement('span');v.className='zm-navav';v.setAttribute('aria-hidden','true');a.prepend(v)}v.textContent=ini;v.classList.toggle('zm-gold',gold);a.classList.add('zm-hasav')}
+   else if(v){v.remove();a.classList.remove('zm-hasav')}
+   if(s)s.style.display=ini?'none':''});
+ }
+ let seq=0;
+ function render(){const n=++seq,w=who();
+  if(!w.si){paint(w,null);return}
+  paint(w,ME&&Date.now()-meAt<6e4?plan(ME):null);
+  me().then(m=>{if(n!==seq)return;paint(who(),m?plan(m):null,!m)});
+ }
+ const here=()=>location.hash==='#/menu';
+ addEventListener('hashchange',()=>{if(here()){sync();render()}});
+ addEventListener('zz:auth',()=>{ME=null;render()});
+ (window.zzAuthReady||Promise.resolve()).then(render,render);
+ sync();render();addEventListener('load',()=>{sync();setTimeout(sync,600)});/* the toolbar gains Calm reading and Annotate after this runs */
+}
 const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury and Necrosis","Apoptosis","Free Radicals","Adaptations","Intracellular Accumulations and Calcification"]],["Inflammation and Repair",["Acute and Chronic Inflammation","Chemical Mediators","Systemic Effects, Leukocytes and Phagocytosis","Granulomatous Inflammation","Wound Healing"]],["Hemodynamic Disorders, Thromboembolism and Shock",["Edema","Thrombosis","Embolism and Infarction","Shock"]],["Genetic Disorders",["Single-Gene Disorders","Chromosomal Disorders"]],["Neoplasia",["Benign and Malignant Neoplasms","Anaplasia and Dysplasia","Grading and Staging","Carcinogenesis","Metastasis","Premalignant Lesions and Tumour Markers","Childhood Tumours"]],["Infectious Diseases",["Tuberculosis","Transfusion Medicine"]],["Blood Vessels and Heart",["Atherosclerosis","Myocardial Infarction","Rheumatic Fever and Vascular Disorders"]],["Diseases of Red Cells, Bleeding Disorders and Bone Marrow",["Iron Deficiency Anaemia","Megaloblastic Anaemia","Aplastic Anaemia and Pancytopenia","Haemolytic Anaemias","Bleeding Disorders and Coagulation Tests","Bone Marrow Examination","Red Cell Morphology"]],["Diseases of White Cells, Lymph Nodes and Spleen",["Reactive Leukocyte Disorders","Leukaemias","Myeloproliferative and Plasma Cell Disorders","Lymphomas and Lymphadenopathy"]],["Lung",["Chronic Obstructive Pulmonary Disease and Asthma","Pneumonia","Lung Tumours"]],["Head and Neck and Gastrointestinal Tract",["Salivary Gland Tumours","Oesophagus and Stomach","Inflammatory Bowel Disease and Appendix"]],["Liver, Biliary Tract and Jaundice",["Cirrhosis and Hepatitis","Jaundice, Liver Function Tests and Gallstones"]],["Kidney, Lower Urinary Tract and Male Genital System",["Nephrotic and Nephritic Syndromes","Proteinuria, Haematuria and Urinary Casts","Urinary Tract Infection, Renal and Bladder Tumours","Male Genital System"]],["Female Genital Tract and Breast",["Ovarian Tumours","Uterus, Endometriosis and Cervix","Breast"]],["Endocrine System",["Diabetes Mellitus","Thyroid","Parathyroid and Calcium Disorders"]],["Bone, Soft Tissue, Peripheral Nerve and Central Nervous System",["Bone Tumours and Metabolic Bone Disease","Osteomyelitis","Peripheral Nerve Sheath Tumours and CNS Tumours","CSF and Meningitis"]],["Clinical Pathology and Laboratory Medicine",["Acid-Base Disorders","ESR and Haematological Tests","Histopathology Techniques","Anticoagulants and Laboratory Samples","Lipids, Glucose, Urine and Electrolytes"]]],"q":[{"y":0,"q":"The earliest manifestation of almost all forms of cell injury is","o":["Nuclear pyknosis","Cellular swelling","Plasma membrane rupture","Karyolysis","Dystrophic calcification"],"a":1,"s":"N","c":0,"t":0,"h":"30970b4b"},{"y":0,"q":"The hallmark of irreversible cell injury is","o":["Cellular swelling","Loss of microvilli","Severe plasma membrane and mitochondrial damage","Fatty change","Detachment of ribosomes"],"a":2,"s":"N","c":0,"t":0,"h":"5061aaf3"},{"y":0,"q":"Amorphous densities in mitochondria on electron microscopy indicate","o":["Reversible injury","Irreversible injury","Apoptosis","Adaptation","Autophagy"],"a":1,"s":"N","c":0,"t":0,"h":"8da338e1"},{"y":0,"q":"The most common cause of cell injury is","o":["Infection","Hypoxia","Chemical toxins","Trauma","Genetic defects"],"a":1,"s":"N","c":0,"t":0,"h":"12f86767"},{"y":0,"q":"Pattern of necrosis seen in hypoxic death of all tissues except the brain","o":["Liquefactive","Coagulative","Caseous","Fat necrosis","Fibrinoid"],"a":1,"s":"N","c":0,"t":0,"h":"49f61263"},{"y":0,"q":"Necrosis following cerebral infarction is","o":["Coagulative","Liquefactive","Caseous","Gangrenous","Fibrinoid"],"a":1,"s":"N","c":0,"t":0,"h":"ec3a8258"},{"y":0,"q":"Caseous necrosis is characteristic of","o":["Acute pancreatitis","Tuberculosis","Myocardial infarction","Polyarteritis nodosa","Cerebral infarct"],"a":1,"s":"N","c":0,"t":0,"h":"92330ae2"},{"y":0,"q":"Fat necrosis is seen in","o":["Acute pancreatitis","Cirrhosis","Hepatitis","Myocardial infarction","Pyelonephritis"],"a":0,"s":"N","c":0,"t":0,"h":"9716ecc9"},{"y":0,"q":"Fibrinoid necrosis is typically seen in","o":["Tuberculosis","Malignant hypertension","Brain infarct","Acute pancreatitis","Wet gangrene"],"a":1,"s":"N","c":0,"t":0,"h":"f92fb8e9"},{"y":1,"q":"Features of reversible cell injury","o":["Cellular swelling","Fatty change","Karyolysis","Membrane blebbing","Amorphous mitochondrial densities"],"a":[1,1,0,1,0],"s":"N","c":0,"t":0,"h":"06d3402c"},{"y":1,"q":"Hypoxic cell injury causes","o":["Decreased ATP","Failure of Na+/K+ ATPase","Cell swelling","Decreased anaerobic glycolysis","Rise in intracellular pH"],"a":[1,1,1,0,0],"s":"N","c":0,"t":0,"h":"0edcd6ea"},{"y":1,"q":"Fatty change occurs in","o":["Liver","Heart","Kidney","Brain","Bone"],"a":[1,1,1,0,0],"s":"N","c":0,"t":0,"h":"d56ca70d"},{"y":1,"q":"Causes of fatty liver","o":["Alcohol","Obesity","Diabetes mellitus","Protein malnutrition","Hyperthyroidism"],"a":[1,1,1,1,0],"s":"N","c":0,"t":0,"h":"cd4ee4df"},{"y":1,"q":"Features of necrosis","o":["Cell swelling","Enzymatic digestion","Inflammation","Always physiological","Plasma membrane rupture"],"a":[1,1,1,0,1],"s":"N","c":0,"t":0,"h":"7ce060b0"},{"y":1,"q":"Causes of cell injury","o":["Hypoxia","Chemical agents","Infectious agents","Immunologic reactions","Genetic derangements"],"a":[1,1,1,1,1],"s":"N","c":0,"t":0,"h":"47c4fbb7"},{"y":1,"q":"Cell injury includes","o":["Metaplasia","Fatty change","Necrosis","Dysplasia","Hypertrophy"],"a":[0,1,1,0,0],"e":["Adaptive change.","Reversible injury.","Irreversible injury.","Disordered growth, not injury.","Adaptation."],"s":"P","g":["May 2026","DU-24M"],"c":0,"t":0,"h":"af8be3b7"},{"y":1,"q":"Cell injury includes","o":["Metaplasia","Dysplasia","Necrosis","Hyperplasia","Fatty changes"],"a":[0,0,1,0,1],"e":["Adaptive change.","Disordered growth.","Irreversible injury.","Adaptive change.","Reversible injury."],"s":"P","g":["DU-23M"],"c":0,"t":0,"h":"33937394"},{"y":0,"q":"Initiator caspase of the intrinsic (mitochondrial) pathway","o":["Caspase-3","Caspase-9","Caspase-6","Caspase-7","Caspase-1"],"a":1,"s":"N","c":0,"t":1,"h":"06127527"},{"y":0,"q":"Initiator caspase of the extrinsic (death receptor) pathway","o":["Caspase-8","Caspase-9","Caspase-3","Caspase-6","Caspase-7"],"a":0,"s":"N","c":0,"t":1,"h":"7f1bff1b"},{"y":0,"q":"Anti-apoptotic protein","o":["BAX","BAK","BCL-2","BIM","PUMA"],"a":2,"s":"N","c":0,"t":1,"h":"c17015e5"},{"y":0,"q":"Apoptotic cell death in embryogenesis is exemplified by","o":["Interdigital web regression","Coagulative necrosis","Fatty change","Caseation","Calcification"],"a":0,"s":"N","c":0,"t":1,"h":"0df7ac37"},{"y":0,"q":"Apoptotic bodies are removed by","o":["Neutrophils","Macrophages","Eosinophils","Mast cells","Plasma cells"],"a":1,"s":"N","c":0,"t":1,"h":"e1554d83"},{"y":0,"q":"Cytochrome c release from mitochondria activates","o":["Caspase-9","Caspase-8","Caspase-1","BCL-2","NF-kB"],"a":0,"s":"N","c":0,"t":1,"h":"ac96af2f"},{"y":1,"q":"Apoptosis is characterized by","o":["Cell shrinkage","Intact plasma membrane","Inflammation","Apoptotic bodies","ATP dependence"],"a":[1,1,0,1,1],"s":"N","c":0,"t":1,"h":"02667270"},{"y":1,"q":"Apoptosis occurs in","o":["Embryogenesis","Involution of hormone-dependent tissues","Cytotoxic T-cell killing","Ischaemic coagulative necrosis","Deletion of self-reactive lymphocytes"],"a":[1,1,1,0,1],"s":"N","c":0,"t":1,"h":"38b2565c"},{"y":1,"q":"Anti-apoptotic proteins include","o":["BCL-2","BCL-XL","BAX","MCL-1","BAK"],"a":[1,1,0,1,0],"s":"N","c":0,"t":1,"h":"cd133c73"},{"y":1,"q":"Pathological apoptosis occurs in","o":["DNA damage","Misfolded protein accumulation","Viral hepatitis (Councilman bodies)","Graft versus host disease","Myocardial infarction (core)"],"a":[1,1,1,1,0],"s":"N","c":0,"t":1,"h":"eac1bbfd"},{"y":1,"q":"Morphological changes of apoptosis include","o":["Cellular swelling","Intact membrane","Membrane blebs formation","Nuclear pyknosis","Nuclear fragmentation"],"a":[0,1,1,0,1],"e":["Cell shrinkage; swelling is necrosis.","Per the printed key. Membrane is disrupted in necrosis. Plasma membrane stays intact in apoptosis.","Extensive surface blebbing.","Per the printed key. Listed as feature of necrosis.","Chromatin condenses peripherally; nucleus breaks into fragments — the most characteristic feature."],"w":["","","","pyknosis can also occur in apoptosis, but key marks False.",""],"s":"P","g":["May 2025","DU-21M"],"c":0,"t":1,"h":"3db411dc"},{"y":1,"q":"Characteristics of apoptosis include","o":["Cellular swelling","Chromatin condensation","Intact membrane","Pyknosis","Inflammation"],"a":[0,1,1,0,0],"e":["Shrinkage; swelling is necrosis.","Most characteristic feature.","Membrane is disrupted in necrosis.","Per the printed key. Listed as a feature of necrosis.","Adjacent inflammation is frequent in necrosis, not apoptosis."],"s":"P","g":["DU-22N"],"c":0,"t":1,"h":"b4d9c462"},{"y":1,"q":"Apoptosis is characterized by","o":["Cellular swelling","Chromatin fragmentation","Membrane intact","Nuclear karyolysis","Inflammation"],"a":[0,1,1,0,1],"e":["Shrinkage.","Hallmark.","Membrane preserved.","Karyolysis is a necrosis pattern.","Per the printed key."],"w":["","","","","apoptosis classically does NOT provoke inflammation; this key appears erroneous."],"s":"P","g":["DU-19Nov"],"c":0,"t":1,"h":"7786a03c"},{"y":0,"q":"Enzyme converting superoxide to hydrogen peroxide","o":["Catalase","Superoxide dismutase","Glutathione peroxidase","NADPH oxidase","Myeloperoxidase"],"a":1,"s":"N","c":0,"t":2,"h":"237659f4"},{"y":0,"q":"Enzyme converting hydrogen peroxide to water and oxygen","o":["Catalase","Superoxide dismutase","Xanthine oxidase","Myeloperoxidase","NADPH oxidase"],"a":0,"s":"N","c":0,"t":2,"h":"406db10a"},{"y":0,"q":"Transition metal reaction generating hydroxyl radical","o":["Fenton reaction","Haber-Weiss only","Krebs cycle","Glycolysis","Beta oxidation"],"a":0,"s":"N","c":0,"t":2,"h":"3092c436"},{"y":0,"q":"Carbon tetrachloride injury is mediated by","o":["Hydroxyl radical","CCl3 free radical","Superoxide","Nitric oxide","Peroxynitrite"],"a":1,"s":"N","c":0,"t":2,"h":"0ff7aa14"},{"y":1,"q":"Sources of reactive oxygen species","o":["Ionizing radiation","Phagocyte NADPH oxidase","Mitochondrial respiration","Fenton reaction","Vitamin E"],"a":[1,1,1,1,0],"s":"N","c":0,"t":2,"h":"3e1a12c1"},{"y":1,"q":"Antioxidants include","o":["Vitamin E","Vitamin C","Catalase","Superoxide dismutase","Free iron"],"a":[1,1,1,1,0],"s":"N","c":0,"t":2,"h":"ba860385"},{"y":1,"q":"Effects of free radicals","o":["Lipid peroxidation","DNA damage","Protein cross-linking","Increased membrane stability","Cell injury"],"a":[1,1,1,0,1],"s":"N","c":0,"t":2,"h":"16ab6c44"},{"y":1,"q":"Free radicals are removed by","o":["Glutathione","NADPH oxidase","Ceruloplasmin","Vit. D","Superoxide dismutase"],"a":[1,0,1,0,1],"e":["Glutathione peroxidase converts H₂O₂ to water.","Generates superoxide (ROS); does not remove it.","Binds copper, preventing ROS-generating reactions (as do transferrin, ferritin, lactoferrin).","Not an antioxidant (vitamins A, C, E are).","Converts superoxide to H₂O₂."],"s":"P","g":["DU-24N"],"c":0,"t":2,"h":"233bb315"},{"y":0,"q":"Increase in the size of cells is","o":["Hyperplasia","Hypertrophy","Metaplasia","Dysplasia","Anaplasia"],"a":1,"s":"N","c":0,"t":3,"h":"477924b3"},{"y":0,"q":"Pregnant uterus shows","o":["Hypertrophy only","Hyperplasia only","Both hypertrophy and hyperplasia","Metaplasia","Atrophy"],"a":2,"s":"N","c":0,"t":3,"h":"d9058bed"},{"y":0,"q":"Barrett oesophagus is an example of","o":["Hyperplasia","Dysplasia","Metaplasia","Atrophy","Hypertrophy"],"a":2,"s":"N","c":0,"t":3,"h":"7e1ae713"},{"y":0,"q":"Squamous metaplasia of bronchial epithelium is caused by","o":["Smoking","Hypertension","Aspirin","Alcohol","Anaemia"],"a":0,"s":"N","c":0,"t":3,"h":"fac367d5"},{"y":0,"q":"Wear-and-tear pigment is","o":["Lipofuscin","Haemosiderin","Melanin","Bilirubin","Hematoidin"],"a":0,"s":"N","c":0,"t":3,"h":"8f89a230"},{"y":0,"q":"Cardiac hypertrophy is caused by","o":["Hypertension","Hypotension","Starvation","Hypocalcaemia","Denervation"],"a":0,"s":"N","c":0,"t":3,"h":"b2827569"},{"y":0,"q":"Benign prostatic hyperplasia is mediated by","o":["Dihydrotestosterone","Oestrogen alone","Cortisol","Insulin","Prolactin"],"a":0,"s":"N","c":0,"t":3,"h":"e8522484"},{"y":1,"q":"Physiological atrophy occurs in","o":["Thymus after puberty","Uterus after menopause","Notochord","Denervated muscle","Ovary after menopause"],"a":[1,1,1,0,1],"s":"N","c":0,"t":3,"h":"42f4bf5d"},{"y":1,"q":"Causes of atrophy","o":["Decreased workload","Loss of innervation","Diminished blood supply","Inadequate nutrition","Increased hormonal stimulation"],"a":[1,1,1,1,0],"s":"N","c":0,"t":3,"h":"6611cf63"},{"y":1,"q":"Metaplasia","o":["Is reversible","Is replacement of one adult cell type by another","May predispose to cancer","Occurs in epithelium and mesenchyme","Is always neoplastic"],"a":[1,1,1,1,0],"s":"N","c":0,"t":3,"h":"6040964d"},{"y":1,"q":"Hyperplasia","o":["Increases cell number","Is physiological in breast at puberty","Is pathological with excess hormones","Is a neoplasm","Occurs in BPH"],"a":[1,1,1,0,1],"s":"N","c":0,"t":3,"h":"bc844a19"},{"y":1,"q":"Metaplasia is characterized by","o":["Irreversible change","Multipotent stem cell origin","Involvement of epithelial cells only","Fertile soil for malignancy","Vitamin-A deficiency"],"a":[0,0,0,1,0],"e":["Reversible.","Per the printed key. Transformation of one differentiated cell type to another (via stem-cell reprogramming), not directly from multipotent stem cells.","Epithelial (squamous, columnar) and mesenchymal (osseous, cartilaginous).","","Per the printed key. Vit A deficiency is a cause of squamous metaplasia, but key marks False as a characteristic."],"s":"P","g":["DU-23N"],"c":0,"t":3,"h":"cf34688e"},{"y":1,"q":"Hyperplasia is related to","o":["Enlargement of cells","Tripolar mitosis","Future neoplasia","Increased hormonal influence","Normal volume of cells"],"a":[0,0,1,1,0],"e":["Increase in cell number (enlargement = hypertrophy).","Abnormal mitosis occurs in dysplasia/neoplasia.","Hyperplasia and metaplasia are fertile soil for cancer.","e.g., proliferation of glandular elements of female breast.","Increase in cell number."],"s":"P","g":["DU-22M"],"c":0,"t":3,"h":"360e8a5d"},{"y":1,"q":"Examples of physiological hyperplasia include","o":["Breast in puberty","Endometrial hyperplasia after menopause","Nodular goitre","Benign prostatic hyperplasia","Uterus during pregnancy"],"a":[1,0,0,0,1],"e":["Hormonal physiological hyperplasia.","Pathological hyperplasia.","Pathological.","Pathological hyperplasia.","Hormonal physiological hyperplasia (with hypertrophy)."],"s":"P","g":["DU-20N/M"],"c":0,"t":3,"h":"5c45037f"},{"y":0,"q":"Dystrophic calcification occurs in","o":["Hypercalcaemia","Dead or damaged tissue with normal serum calcium","Hypervitaminosis D","Hyperparathyroidism","Milk-alkali syndrome"],"a":1,"s":"N","c":0,"t":4,"h":"0d6ee9e1"},{"y":0,"q":"Metastatic calcification occurs in","o":["Normal calcium state","Hypercalcaemia","Atheromatous plaque","Necrotic tissue","Damaged valves"],"a":1,"s":"N","c":0,"t":4,"h":"8b470058"},{"y":0,"q":"Prussian blue stain demonstrates","o":["Melanin","Haemosiderin","Lipid","Calcium","Amyloid"],"a":1,"s":"N","c":0,"t":4,"h":"076aa430"},{"y":0,"q":"Amyloid with Congo red under polarized light shows","o":["Apple-green birefringence","Blue fluorescence","Red fluorescence","Yellow colour","No change"],"a":0,"s":"N","c":0,"t":4,"h":"7296e5c6"},{"y":1,"q":"Dystrophic calcification is seen in","o":["Atheromatous plaques","Damaged heart valves","Caseous TB lesions","Hyperparathyroidism","Fat necrosis"],"a":[1,1,1,0,1],"s":"N","c":0,"t":4,"h":"d2dc644d"},{"y":1,"q":"Metastatic calcification affects","o":["Kidneys","Lungs","Gastric mucosa","Systemic arteries","Atheroma"],"a":[1,1,1,1,0],"s":"N","c":0,"t":4,"h":"e3565852"},{"y":1,"q":"Haemosiderin","o":["Is an iron-containing pigment","Stains with Prussian blue","Accumulates in haemochromatosis","Is a bile pigment","Is golden-brown"],"a":[1,1,1,0,1],"s":"N","c":0,"t":4,"h":"d045f7aa"}]};
 /* ---- MCQs: home, custom practice (faceted filter), practice, timed exam, reading mode, results ---- */
 {const CH=MCQDATA.ch,Q=MCQDATA.q;
@@ -4195,14 +4390,14 @@ const SPEC={
   stats:()=>{const n=num('mcqs',/(\d+) questions/);return[n&&n+' MCQs','Single best answer + true/false']}},
  textbook:{acts:[[()=>{const e=$1('textbook','a.tbcont');return e?(e.textContent.indexOf('Continue')>-1?'Continue reading':'Start reading'):'Start reading'},()=>{const e=$1('textbook','a.tbcont');if(e)location.hash=e.getAttribute('href')},1],['Questions',go('#/questions')]],
   stats:()=>{const n=document.querySelectorAll('#v-textbook main a.tbtile').length;return[n&&n+' chapters','Robbins 11th edition','Saved for offline']}},
- menu:{acts:[['Practice',go('#/practice')],['Bookmarks',go('#/bookmarks')],['Notes',go('#/notes')],['Account',go('#/account')],['Export backup',click('menu','button',/Export backup/)]],stats:()=>[]}
+ menu:{acts:[],stats:()=>[]}  /* the profile card below the banner carries the Menu's actions */
 };
 function build(id,box){
  const sp=SPEC[id];if(!sp)return;
  const a=document.createElement('div');a.className='pb-act';
  sp.acts.forEach(x=>{const b=document.createElement('button');b.type='button';b.className='pb-btn'+(x[2]?' pb-p':'');b.dataset.l=typeof x[0]==='function'?'1':'';b.textContent=typeof x[0]==='function'?x[0]():x[0];b.addEventListener('click',x[1]);a.appendChild(b)});
  const c=document.createElement('p');c.className='pb-chips';
- box.appendChild(a);box.appendChild(c);
+ if(sp.acts.length)box.appendChild(a);box.appendChild(c);
  const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean)}catch(e){}c.textContent='';s.forEach(t=>{const i=document.createElement('span');i.textContent=t;c.appendChild(i)});c.hidden=!s.length;
   sp.acts.forEach((x,i)=>{if(typeof x[0]==='function')a.children[i].textContent=x[0]()})};
  fill();[300,1200,3000].forEach(t=>setTimeout(fill,t));addEventListener('hashchange',()=>setTimeout(fill,250));
@@ -4467,8 +4662,7 @@ let ret=null;function start(){if(box)return;ret=document.activeElement;moved=fal
  box.addEventListener('pointerdown',drag);
  addEventListener('keydown',key,true);addEventListener('resize',onR);addEventListener('orientationchange',onR);show(0,true);try{box.querySelector('[data-a=n]').focus({preventScroll:true})}catch(e){}requestAnimationFrame(loop);requestAnimationFrame(()=>requestAnimationFrame(()=>box&&box.classList.remove('dg')))}
 window.zzTutorial=start;
-const g=$('#v-menu .mgrid');
-if(g){const b=document.createElement('button');b.type='button';b.className='mtile';b.id='tut-open';b.textContent='Tutorial';b.onclick=start;g.prepend(b)}
+const tb=$('#tut-open');if(tb)tb.onclick=start;/* the Menu builds its own Tutorial row (nav_patch.js) */
 }catch(e){}})();
 
 /* motion.js - tap pulse, bookmark/learned pop with sparks. Light on purpose: no per-frame work, skipped for reduced motion. */
