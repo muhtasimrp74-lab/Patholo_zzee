@@ -21,11 +21,14 @@ try{const o=JSON.parse(zzStore.getItem(KEY)||'{}');
 }catch(e){}
 const persist=()=>{try{zzStore.setItem(KEY,JSON.stringify(M))}catch(e){}};
 const view=()=>document.querySelector('.view:not([hidden])');
-let cur=null,pending=null,st=0;
+let cur=null,pending=null,st=0,acted=/^#\/[^/]+\/./.test(location.hash);
+/* a position is only worth keeping once you have moved on this page (or opened it at a specific question):
+   pages also shift by themselves while answers and fonts load, and that is not "where you were" */
+['wheel','touchstart','keydown','pointerdown'].forEach(e=>addEventListener(e,()=>{acted=true},{passive:true,capture:true}));
 /* the page you are on now, if it belongs to a remembered tab */
 function track(){const h=location.hash||'#/',k=keyOf(h);cur=TABS[k]&&valid(base(h))?base(h):null;if(cur&&M.last[k]!==cur){M.last[k]=cur;persist()}}
 function save(){
- if(!cur||tbCh(cur)||base(location.hash)!==cur)return;   /* never record a page you have already left */
+ if(!acted||!cur||tbCh(cur)||base(location.hash)!==cur)return;   /* never record a page you have already left */
  const v=view();if(!v)return;
  let a=null;for(const c of v.querySelectorAll('.card[id]')){const r=c.getBoundingClientRect();if(r.height&&r.bottom>90){a=c;break}}
  const n={y:Math.round(scrollY),a:a?a.id:'',o:a?Math.round(a.getBoundingClientRect().top):0},q=M.pos[cur];
@@ -44,6 +47,7 @@ function restore(b){
   if(Math.abs(y-scrollY)>1)scrollTo({top:Math.max(0,y),left:0,behavior:'instant'})};
  go();[60,200,500,1000].forEach(t=>setTimeout(go,t));
 }
+addEventListener('hashchange',()=>{acted=/^#\/[^/]+\/./.test(location.hash)},true);   /* each page starts unmoved, unless opened at a question */
 addEventListener('hashchange',()=>setTimeout(()=>{track();const p=pending;pending=null;if(p&&p===cur&&!tbCh(cur))restore(cur)},0));
 addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(save,250)},{passive:true});
 addEventListener('pagehide',save);document.addEventListener('visibilitychange',()=>{if(document.hidden)save()});
