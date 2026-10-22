@@ -299,12 +299,14 @@
 			const p = location.hash.replace(/^#\/?/, "").split("/");
 			if (p[0] !== "textbook") {
 				cur = null;
+				T.closest(".view")?.classList.remove("tb-on");
 				onScroll();
 				return;
 			}
 			const my = ++tok;
 			cur = null;
 			T.classList.remove("tbreading");
+			T.closest(".view")?.classList.remove("tb-on");
 			onScroll();
 			if (!IDX) T.innerHTML = p[1] ? SKB : SKH;
 			try {
@@ -326,6 +328,7 @@
 			const c = C[i], pv = C[i - 1], nx = C[i + 1];
 			cur = c.id;
 			T.classList.add("tbreading");
+			T.closest(".view")?.classList.add("tb-on");
 			try {
 				zzStore.setItem("tbLast", c.id);
 			} catch (e) {}

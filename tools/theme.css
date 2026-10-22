@@ -363,7 +363,7 @@ h2,h3.sub,.part-h,.dc,.pc{margin-left:0;margin-right:0}
 .qfbtn i{font:600 11px var(--body);font-style:normal;min-width:18px;height:18px;padding:0 5px;border-radius:99px;background:var(--btn);color:#fff;display:inline-grid;place-items:center}
 .qfbtn i[hidden]{display:none}
 .qtools{flex-wrap:wrap}
-.tg{flex:none;align-self:center;font:600 10.5px var(--body);letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:var(--accbg);color:var(--lbl)}
+.tg{flex:none;align-self:center;font:600 11px var(--body);letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:var(--accbg);color:var(--lbl)}
 
 #qf{background:var(--panel);color:var(--navy);display:flex;flex-direction:column;min-height:0}
 #qf h4{margin:20px 0 9px;font:700 .68rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--lbl)}

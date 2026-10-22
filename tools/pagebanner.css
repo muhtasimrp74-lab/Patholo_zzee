@@ -41,3 +41,6 @@
 /* roomier banner: content never touches the edges */
 @media(min-width:641px){.pb{height:auto;min-height:clamp(360px,46vw,420px)}.pb-in{height:auto;min-height:inherit;padding-block:48px;box-sizing:border-box}}
 @media(min-width:1001px){.pb{min-height:clamp(420px,32vw,500px)}}
+
+/* reading a textbook chapter: the landing banner (image, Start reading) steps aside so the chapter starts at the top */
+.view.tb-on .pb{display:none}

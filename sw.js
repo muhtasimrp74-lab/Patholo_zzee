@@ -8,7 +8,7 @@
    - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v183';
+const VERSION = 'pathviva-zzee-v185';
 
 const CORE = [
   'index.html',
@@ -55,10 +55,19 @@ const CORE = [
   'fonts/caveat-latin-700-normal.woff2'
 ];
 
+/* Cloudflare answers /index.html with a redirect to /, so the saved page can carry a 'redirected' flag. Chrome refuses such a
+   copy for a page load and shows its own "You're offline" screen, even when you are online. tidy() returns a plain copy. */
+async function tidy(r) {
+  if (!r || !r.redirected) return r;
+  return new Response(await r.blob(), { status: r.status, statusText: r.statusText, headers: r.headers });
+}
+
 self.addEventListener('install', event => {
   event.waitUntil(
     // cache: 'reload' skips the browser's HTTP cache (GitHub Pages lets it keep files 10 minutes), so a new version never saves old files
-    caches.open(VERSION).then(cache => cache.addAll(CORE.map(f => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting())
+    caches.open(VERSION).then(cache => cache.addAll(CORE.map(f => new Request(f, { cache: 'reload' })))
+      .then(() => cache.match('index.html')).then(r => r && r.redirected ? tidy(r).then(c => cache.put('index.html', c)) : null))
+      .then(() => self.skipWaiting())
       .catch(err => { console.error('[sw] install failed; the previous version stays active:', err); throw err; })
   );
 });
@@ -103,9 +112,9 @@ self.addEventListener('fetch', event => {
   if (isPage) {  // pages: newest copy when the network answers quickly; the saved copy instantly when offline or slow
     event.respondWith((async () => {
       const cache = await caches.open(VERSION);
-      const saved = await cache.match(key, { ignoreSearch: true });
+      const saved = await tidy(await cache.match(key, { ignoreSearch: true }));
       const net = fetch(req, { cache: 'no-cache' }).then(res => {
-        if (res && res.status === 200 && res.type === 'basic') cache.put(key, res.clone()).catch(() => {});
+        if (res && res.status === 200 && res.type === 'basic') tidy(res.clone()).then(c => cache.put(key, c)).catch(() => {});
         return res;
       });
       if (!saved) {
