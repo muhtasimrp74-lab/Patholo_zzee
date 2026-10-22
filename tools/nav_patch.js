@@ -30,6 +30,9 @@
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
    sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
+  '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
+   '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
+   btn('zm-upd','exp','Check for updates')+btn('zm-fix','imp','Repair app')+'</div><p class="zm-help" id="zm-appmsg" role="status"></p></section>'+
  '</div></div>';
  const $x=s=>X.querySelector(s),on=(el,v)=>{if(el)el.setAttribute('aria-checked',String(!!v))};
  /* switches and controls */
@@ -43,6 +46,21 @@
  $x('#zm-exp').onclick=()=>exp();
  const fi=$x('#zm-file');$x('#zm-imp').onclick=()=>fi.click();fi.onchange=()=>{if(fi.files[0])imp(fi.files[0]);fi.value=''};
  $x('#zm-out').onclick=function(){this.disabled=true;window.zzAccount&&zzAccount.logout()};
+ /* App: which version this device runs, a manual update check, and a repair that throws away the saved copy (never your data:
+    progress, notes and sign-in live in storage, not in the cache) and loads a fresh one */
+ const amsg=t=>{$x('#zm-appmsg').textContent=t},ver=()=>(window.caches?caches.keys():Promise.resolve([])).then(k=>{const v=k.map(x=>(/^pathviva-zzee-v(\d+)$/.exec(x)||[])[1]).filter(Boolean).sort((a,b)=>b-a)[0];$x('#zm-ver').textContent=v?'v'+v:'—';return v}).catch(()=>null);
+ ver();if(navigator.serviceWorker)navigator.serviceWorker.ready.then(()=>setTimeout(ver,500));addEventListener('hashchange',()=>{if(location.hash==='#/menu')ver()});
+ $x('#zm-upd').onclick=async function(){const b=this;b.disabled=true;amsg('Checking…');
+  try{const r=navigator.serviceWorker&&await navigator.serviceWorker.getRegistration();if(!r){amsg('Updates apply each time the page loads.');b.disabled=false;return}
+   const was=await ver();await r.update();const w=r.installing||r.waiting;
+   if(!w){amsg('You’re on the latest version'+(was?' (v'+was+').':'.'));b.disabled=false;return}
+   amsg('Downloading the new version…');navigator.serviceWorker.addEventListener('controllerchange',()=>location.reload(),{once:true});
+   setTimeout(()=>location.reload(),15000);
+  }catch(e){amsg(navigator.onLine===false?'You’re offline. Try again when you reconnect.':'Couldn’t check right now. Try again in a moment.');b.disabled=false}};
+ $x('#zm-fix').onclick=async function(){if(navigator.onLine===false){amsg('Connect to the internet first: repair downloads a fresh copy.');return}this.disabled=true;amsg('Repairing…');
+  try{const rs=navigator.serviceWorker?await navigator.serviceWorker.getRegistrations():[];await Promise.all(rs.map(r=>r.unregister()));
+   if(window.caches){const k=await caches.keys();await Promise.all(k.filter(x=>x.startsWith('pathviva-')).map(x=>caches.delete(x)))}}catch(e){}
+  location.reload()};
  /* fullscreen: browsers only allow it after a tap, so the app goes fullscreen on the first tap of each visit (unless switched off here) */
  const fb=$x('#mq-fs'),fsOn=()=>!!(document.fullscreenElement||document.webkitFullscreenElement),app=matchMedia('(display-mode: fullscreen)').matches;
  if(de.requestFullscreen||de.webkitRequestFullscreen){
