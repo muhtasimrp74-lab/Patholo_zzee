@@ -54,7 +54,7 @@ html body .nav{height:calc(60px + env(safe-area-inset-top,0px))}
  html body .act[data-k=learned][aria-pressed=true]{background-color:var(--sage2,#52663a)!important}
  html body .act[aria-pressed=true] svg{color:#fff}
 }
- @media(max-width:640px){html body .act span{font-size:.62rem!important;letter-spacing:0!important;overflow:visible!important;text-overflow:clip!important;white-space:nowrap;max-width:none!important}}
+ @media(max-width:640px){html body .act span{font-size:.7rem!important;letter-spacing:0!important;overflow:visible!important;text-overflow:clip!important;white-space:nowrap;max-width:none!important}}
 /* ---- smooth scrolling: a full-screen blend-mode layer and blurred panels make every scroll frame re-composite the whole screen ---- */
 html body::before{mix-blend-mode:normal!important}
 @media (hover:none),(pointer:coarse){

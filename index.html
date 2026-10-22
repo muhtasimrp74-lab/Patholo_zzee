@@ -495,7 +495,7 @@ h2,h3.sub,.part-h,.dc,.pc{margin-left:0;margin-right:0}
 .qfbtn i{font:600 11px var(--body);font-style:normal;min-width:18px;height:18px;padding:0 5px;border-radius:99px;background:var(--btn);color:#fff;display:inline-grid;place-items:center}
 .qfbtn i[hidden]{display:none}
 .qtools{flex-wrap:wrap}
-.tg{flex:none;align-self:center;font:600 10.5px var(--body);letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:var(--accbg);color:var(--lbl)}
+.tg{flex:none;align-self:center;font:600 11px var(--body);letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:var(--accbg);color:var(--lbl)}
 
 #qf{background:var(--panel);color:var(--navy);display:flex;flex-direction:column;min-height:0}
 #qf h4{margin:20px 0 9px;font:700 .68rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--lbl)}
@@ -1203,6 +1203,9 @@ h1 em{font-size:.66em;font-weight:700}
 @media(min-width:641px){.pb{height:auto;min-height:clamp(360px,46vw,420px)}.pb-in{height:auto;min-height:inherit;padding-block:48px;box-sizing:border-box}}
 @media(min-width:1001px){.pb{min-height:clamp(420px,32vw,500px)}}
 
+/* reading a textbook chapter: the landing banner (image, Start reading) steps aside so the chapter starts at the top */
+.view.tb-on .pb{display:none}
+
 /* ---- site footer ---- */
 .sf{margin-top:56px;padding:0;text-align:left;font-size:inherit;background:#12080b;color:#E8D9E3}
 .nh-f{display:none}
@@ -1566,6 +1569,9 @@ html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.q
 .mempty{padding:34px 20px;border:1px dashed var(--line);border-radius:18px;text-align:center;color:var(--muted)}
 .mempty b{display:block;margin-bottom:6px;color:var(--text);font-size:1.05rem}
 
+
+/* narrow phones: eight tool icons squeeze to 22px. Calm reading is also in Menu and printing from a phone is rare, so they step aside */
+@media(max-width:380px){#tools [data-t=calm],#tools [data-t=print]{display:none}#tools button{min-width:28px}}
 /* ===== Textbook reader (panels, sections, key-concept / morphology blocks) ===== */
 .tbhero,.tbch{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--g-mist,var(--panel));padding:22px 20px;margin:0 0 16px}
 .tbhero:before,.tbch:before{content:attr(data-n);position:absolute;right:10px;top:-18px;font:500 7rem/1 var(--disp);color:var(--navy);opacity:.06;pointer-events:none}
@@ -1593,7 +1599,7 @@ html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.q
 .tbdone[aria-pressed=true]{background:var(--ok,#2e8b57);border-color:var(--ok,#2e8b57);color:#fff}
 .tbtoc{margin:0 0 16px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
 .tbtoc-t{display:flex;align-items:center;gap:10px;margin-bottom:10px}.tbtoc-t b{font:700 .74rem var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--lbl)}
-.tbtoc-t span{color:var(--muted);font:500 .78rem var(--body)}.tbtoc-t button{margin-left:auto;border:0;background:none;color:var(--blue);font:600 .78rem var(--body);cursor:pointer}
+.tbtoc-t span{color:var(--muted);font:500 .78rem var(--body)}.tbtoc-t button{margin:-10px -8px -10px auto;min-height:40px;padding:0 8px;border:0;background:none;color:var(--blue);font:600 .78rem var(--body);cursor:pointer}
 .tbtoc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2px 14px}
 .tbtoc a{display:flex;gap:10px;align-items:baseline;padding:6px 8px;border-radius:9px;color:var(--text);text-decoration:none;font:500 .86rem/1.35 var(--body);cursor:pointer}
 .tbtoc a:hover{background:var(--soft)}.tbtoc a span{flex:none;min-width:22px;color:var(--lbl);font:700 .72rem var(--body)}
@@ -2055,7 +2061,7 @@ html body .nav{height:calc(60px + env(safe-area-inset-top,0px))}
  html body .act[data-k=learned][aria-pressed=true]{background-color:var(--sage2,#52663a)!important}
  html body .act[aria-pressed=true] svg{color:#fff}
 }
- @media(max-width:640px){html body .act span{font-size:.62rem!important;letter-spacing:0!important;overflow:visible!important;text-overflow:clip!important;white-space:nowrap;max-width:none!important}}
+ @media(max-width:640px){html body .act span{font-size:.7rem!important;letter-spacing:0!important;overflow:visible!important;text-overflow:clip!important;white-space:nowrap;max-width:none!important}}
 /* ---- smooth scrolling: a full-screen blend-mode layer and blurred panels make every scroll frame re-composite the whole screen ---- */
 html body::before{mix-blend-mode:normal!important}
 @media (hover:none),(pointer:coarse){
@@ -3845,12 +3851,14 @@ function home(){
 			const p = location.hash.replace(/^#\/?/, "").split("/");
 			if (p[0] !== "textbook") {
 				cur = null;
+				T.closest(".view")?.classList.remove("tb-on");
 				onScroll();
 				return;
 			}
 			const my = ++tok;
 			cur = null;
 			T.classList.remove("tbreading");
+			T.closest(".view")?.classList.remove("tb-on");
 			onScroll();
 			if (!IDX) T.innerHTML = p[1] ? SKB : SKH;
 			try {
@@ -3872,6 +3880,7 @@ function home(){
 			const c = C[i], pv = C[i - 1], nx = C[i + 1];
 			cur = c.id;
 			T.classList.add("tbreading");
+			T.closest(".view")?.classList.add("tb-on");
 			try {
 				zzStore.setItem("tbLast", c.id);
 			} catch (e) {}

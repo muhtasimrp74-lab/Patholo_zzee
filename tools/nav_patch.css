@@ -111,3 +111,6 @@
 .mempty{padding:34px 20px;border:1px dashed var(--line);border-radius:18px;text-align:center;color:var(--muted)}
 .mempty b{display:block;margin-bottom:6px;color:var(--text);font-size:1.05rem}
 
+
+/* narrow phones: eight tool icons squeeze to 22px. Calm reading is also in Menu and printing from a phone is rare, so they step aside */
+@media(max-width:380px){#tools [data-t=calm],#tools [data-t=print]{display:none}#tools button{min-width:28px}}
