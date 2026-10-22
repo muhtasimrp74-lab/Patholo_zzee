@@ -62,7 +62,7 @@ document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('#bn
 const seen=new Set();
 function develop(){
  if(level()!=='full')return;
- const img=$('.view:not([hidden]) .pb-pic img');if(!img)return;const k=img.getAttribute('src');if(seen.has(k))return;seen.add(k);
+ const img=$('.view:not([hidden]) .pb-pic img')||$('.view:not([hidden]) .nh-bn-pic img');if(!img)return;   /* the Home hero develops too: the focus pull of C17 */const k=img.getAttribute('src');if(seen.has(k))return;seen.add(k);
  const go=()=>{img.classList.remove('fx-dev');void img.offsetWidth;img.classList.add('fx-dev')};
  if(img.complete)go();else img.addEventListener('load',go,{once:true});
 }
