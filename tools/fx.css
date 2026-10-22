@@ -60,7 +60,7 @@ html.fx-off #bnav .fx-pill{display:none}
 html.fx-full .zz-dlg::backdrop{backdrop-filter:blur(6px) saturate(.9);-webkit-backdrop-filter:blur(6px) saturate(.9)}
 
 /* banner pictures develop the first time they are seen: unstained grey, then colour, then focus */
-html.fx-full .pb-pic img.fx-dev{animation:fx-dev 1.1s var(--fx-out) both}
+html.fx-full :is(.pb-pic,.nh-bn-pic) img.fx-dev{animation:fx-dev 1.1s var(--fx-out) both}
 @keyframes fx-dev{from{filter:grayscale(1) blur(6px) brightness(1.08)}55%{filter:grayscale(.2) blur(2px)}to{filter:none}}
 
 /* reading pages: a hairline that fills as you scroll (scroll-driven, no JS) */
@@ -75,3 +75,42 @@ html.fx-full .pb-pic img.fx-dev{animation:fx-dev 1.1s var(--fx-out) both}
 html.fx-off :is(.ring,.mx-ring .fg,.qi.o .qi-a,.mx-o.ok,.mx-o.ok b,.mx-o.no,.pb-pic img){animation:none!important}
 @media(prefers-reduced-motion:reduce){:is(.ring,.mx-ring .fg,.qi.o .qi-a,.mx-o.ok b,.mx-o.no,.pb-pic img){animation:none!important}#bnav .fx-pill{transition:none!important}}
 @media print{.fx-pill,.fx-read{display:none!important}}
+
+/* ===== stage 1 visuals (fxgl.js) ===== */
+/* C2 the living tissue field behind every page: it fades in over the static texture once it has drawn */
+.fx-bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;opacity:0;transition:opacity 1.2s ease}
+.fx-bg.on{opacity:.94}
+html:not(.fx-full) .fx-bg{display:none}
+
+/* C17 the Home hero: the tissue drifts over the picture (screen blend: it lights the dark lab, never covers the title) */
+.nh-bn-pic{position:relative}
+.fx-hero{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;opacity:0;transition:opacity .8s ease}
+html:not(.fx-full) .fx-hero{display:none}
+@media(hover:hover) and (pointer:fine){html.fx-full #v-home .nh-bn-pic{cursor:grab}html.fx-full #v-home .nh-bn-pic:active{cursor:grabbing}}
+
+/* C22 progress map */
+.nh-col{margin:28px 0 8px}
+.nh-col-hd{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.nh-col-n{font:600 .875rem var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
+.nh-col .nh-mu{margin:4px 0 14px}
+.nh-col-c{position:relative;padding:14px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
+.nh-col canvas{display:block;width:100%;cursor:pointer}
+.nh-col-tip{position:absolute;z-index:5;width:240px;box-sizing:border-box;padding:12px 14px;border-radius:14px;background:var(--panel);border:1px solid var(--line);
+ box-shadow:0 2px 6px rgba(42,22,39,.08),0 14px 34px -12px rgba(42,22,39,.3);font-size:.875rem;line-height:1.4}
+.nh-col-tip[hidden]{display:none}
+.nh-col-tip span{display:block;font:600 .75rem var(--body);color:var(--muted);margin-bottom:4px}
+.nh-col-tip p{margin:0 0 8px;color:var(--text)}
+.nh-col-tip a{font-weight:600;color:var(--burgundy)}
+
+/* C3 glass tiles: a coverslip edge always; on desktop a glare that follows the pointer and up to 6 degrees of tilt.
+   Navigation tiles only (chapters, textbook chapters, MCQ tiles): question cards with answers never tilt. */
+html.fx-full body :is(a.topic,.tbtile,.mx-tile){position:relative}
+html.fx-full body :is(a.topic,.tbtile,.mx-tile)::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+ background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0) 1.5px)}
+html.fx-full body :is(a.topic,.tbtile,.mx-tile).fx-tilt::after{background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0) 1.5px),
+ radial-gradient(280px circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.3),rgba(255,255,255,0) 60%)}
+html.fx-full body :is(a.topic,.tbtile,.mx-tile){transition:transform .45s var(--fx-spring),border-color .2s!important;transform-origin:50% 50%}
+html.fx-full body :is(a.topic,.tbtile,.mx-tile).fx-tilt{transform:perspective(900px) rotateX(var(--fx-rx,0deg)) rotateY(var(--fx-ry,0deg))!important;transition:transform .12s linear,border-color .2s!important}
+:root[data-theme=dark] html.fx-full body :is(a.topic,.tbtile,.mx-tile)::after,html[data-theme=dark].fx-full body :is(a.topic,.tbtile,.mx-tile)::after{opacity:.35}
+@media print{.fx-bg,.fx-hero{display:none!important}}
+@media(prefers-reduced-motion:reduce){.fx-bg,.fx-hero{display:none!important}html body :is(a.topic,.tbtile,.mx-tile){transform:none!important}}

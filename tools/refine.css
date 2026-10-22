@@ -15,7 +15,7 @@ html body :is(.card.open,.card:target,.card.hl,.qi.o){border-color:color-mix(in 
 html body .card header,html body .card header:hover{box-shadow:none!important}
 
 /* 2. no lift on hover; the border answers instead */
-html body :is(.topic,.dc,.pc,.tbtile,.mtile,.pager a,.nh-row a,#nh a.nh-t4,.mx-tile,#bnav a,.chips button,.qchip,#tools button):hover{transform:none!important}
+html body :is(.topic,.dc,.pc,.tbtile,.mtile,.pager a,.nh-row a,#nh a.nh-t4,.mx-tile,#bnav a,.chips button,.qchip,#tools button):hover:not(.fx-tilt){transform:none!important}   /* glass tiles (fx.css) tilt under the pointer */
 @media(hover:hover){html body :is(.topic,.dc,.pc,.tbtile,.pager a,.mx-tile):hover{border-color:color-mix(in srgb,var(--burgundy) 40%,var(--line))!important}}
 
 /* 3. labels in sentence case, at a readable size */
