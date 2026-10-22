@@ -94,13 +94,13 @@ type Rec=Record<string,any>;
    <div class="tbfil" role="group" aria-label="Filter chapters">${fl.map(f=>`<button type="button" data-tbf="${f[0]}" aria-pressed="${hf===f[0]}">${f[1]}<em>${f[2]}</em></button>`).join('')}</div></div><div id="tbgrid"></div>`;
   paint();document.title='Textbook | Patholo_zzee'}
 
- async function tb(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='textbook'){cur=null;onScroll();return}const my=++tok;cur=null;T.classList.remove('tbreading');onScroll();
+ async function tb(){const p=location.hash.replace(/^#\/?/,'').split('/');if(p[0]!=='textbook'){cur=null;T.closest('.view')?.classList.remove('tb-on');onScroll();return}const my=++tok;cur=null;T.classList.remove('tbreading');T.closest('.view')?.classList.remove('tb-on');onScroll();
   if(!IDX)T.innerHTML=p[1]?SKB:SKH;
   try{if(!IDX){const r=await fetch('textbook/index.json');if(!r.ok)throw 0;IDX=await r.json()}}
   catch(e){if(my===tok)T.innerHTML='<div class="mempty"><b>Textbook unavailable</b>Open it once while online; chapters you read are then saved for offline use.</div>';return}
   if(my!==tok)return;const C=IDX.chapters,i=C.findIndex((x:any)=>x.id===p[1]),D=J('tbDone');
   if(i<0){home();return}
-  const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');try{zzStore.setItem('tbLast',c.id)}catch(e){}
+  const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');T.closest('.view')?.classList.add('tb-on');/* reading: the landing banner steps aside (pagebanner.css) */try{zzStore.setItem('tbLast',c.id)}catch(e){}
   const bar=`<div class="tbbar"><a href="${pv?'#/textbook/'+pv.id:'#/textbook'}" ${pv?'':'aria-disabled="true"'}>‹ ${pv?'Ch '+pv.n:'Previous'}</a><a href="#/textbook">All chapters</a><a href="${nx?'#/textbook/'+nx.id:'#/textbook'}" ${nx?'':'aria-disabled="true"'}>${nx?'Ch '+nx.n:'Next'} ›</a></div>`;
   T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
   T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);

@@ -43,6 +43,12 @@
     inflight = p = Promise.resolve(p).then(function (v) { inflight = null; return v; }, function (e) { inflight = null; throw e; });
     return p;
   }
+  // What to say when a request to the server fails: only "offline" when the device really is. Otherwise the server could not be
+  // reached (some networks block *.workers.dev, or the server is down), and switching network is the useful advice.
+  window.zzNetMsg = function () {
+    return navigator.onLine === false ? 'You\u2019re offline. Try again when you reconnect.'
+      : 'The Patholo_zzee server didn\u2019t answer. Your internet works, so this network may be blocking it: try mobile data or another Wi-Fi, or try again in a few minutes.';
+  };
   window.zzAuthHeaders = function () { return access ? { Authorization: 'Bearer ' + access } : {}; };
   // Phones pause timers while an app is in the background, so the 15-minute access token can expire unseen. Renew it when the page
   // comes back (or before a request) if it has expired or is about to; requests that wait on zzAuthReady wait for the renewal.
@@ -120,7 +126,7 @@
           say(j._status === 429 ? wait(j) : j.error === 'account_exists' ? 'An account with this phone or email already exists. Sign in instead.' :
             j.error === 'weak_password' ? 'Use at least 8 characters for the password.' : j.error === 'bad_login' ? 'Enter a mobile number like 01712345678 or an email address.' :
             creating ? 'Could not create the account. Try again.' : 'Wrong phone/email or password.', true);
-        }, function () { go.disabled = false; say('No connection. Try again when you are online.', true); });
+        }, function () { go.disabled = false; say(window.zzNetMsg(), true); });
       };
       pw.onkeydown = function (e) { if (e.key === 'Enter') go.click(); };
       document.body.appendChild(dlg);
@@ -132,7 +138,7 @@
           send.disabled = false;
           if (j._status === 200) { box.hidden = false; send.textContent = 'Send a new code'; send.classList.remove('zz-p'); code.focus(); say('Code sent. It can take up to a minute.'); }
           else say(j._status === 429 ? wait(j) : j._status === 400 ? 'Enter a mobile number like 01712345678 or +8801712345678.' : 'Could not send the code. Try again shortly.', true);
-        }, function () { send.disabled = false; say('No connection. Try again when you are online.', true); });
+        }, function () { send.disabled = false; say(window.zzNetMsg(), true); });
       };
       ver.onclick = function () {
         ver.disabled = true; say('Checking\u2026');
@@ -140,7 +146,7 @@
           ver.disabled = false;
           if (j._status === 200 || j._status === 409) { say(''); dlg.close(); }
           else say(j._status === 429 ? wait(j) : 'That code is wrong or has expired. Send a new code to try again.', true);
-        }, function () { ver.disabled = false; say('No connection. Try again when you are online.', true); });
+        }, function () { ver.disabled = false; say(window.zzNetMsg(), true); });
       };
       ph.onkeydown = function (e) { if (e.key === 'Enter') send.click(); };
       code.onkeydown = function (e) { if (e.key === 'Enter') ver.click(); };

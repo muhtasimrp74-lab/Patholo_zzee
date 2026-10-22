@@ -25,7 +25,7 @@
 .tbdone[aria-pressed=true]{background:var(--ok,#2e8b57);border-color:var(--ok,#2e8b57);color:#fff}
 .tbtoc{margin:0 0 16px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
 .tbtoc-t{display:flex;align-items:center;gap:10px;margin-bottom:10px}.tbtoc-t b{font:700 .74rem var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--lbl)}
-.tbtoc-t span{color:var(--muted);font:500 .78rem var(--body)}.tbtoc-t button{margin-left:auto;border:0;background:none;color:var(--blue);font:600 .78rem var(--body);cursor:pointer}
+.tbtoc-t span{color:var(--muted);font:500 .78rem var(--body)}.tbtoc-t button{margin:-10px -8px -10px auto;min-height:40px;padding:0 8px;border:0;background:none;color:var(--blue);font:600 .78rem var(--body);cursor:pointer}
 .tbtoc ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2px 14px}
 .tbtoc a{display:flex;gap:10px;align-items:baseline;padding:6px 8px;border-radius:9px;color:var(--text);text-decoration:none;font:500 .86rem/1.35 var(--body);cursor:pointer}
 .tbtoc a:hover{background:var(--soft)}.tbtoc a span{flex:none;min-width:22px;color:var(--lbl);font:700 .72rem var(--body)}

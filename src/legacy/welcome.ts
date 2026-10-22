@@ -54,7 +54,7 @@ function usefulLine(sp: HTMLElement): void {
     sp.append('Continue: ', a); if (streak) sp.append(' \u00b7 ' + streak);
   } else if (streak) sp.textContent = 'You\u2019re on a ' + streak + '. ' + (st.l ? st.l + ' questions learned so far.' : 'Keep it going today.');
   else if (st.l) sp.textContent = st.l + ' questions learned so far. One short session builds on that.';
-  else { const a = document.createElement('a'); a.href = '#/01'; a.textContent = 'Start with topic 01'; sp.append(a, ' \u2014 it\u2019s free, and ten minutes is enough.'); }
+  else { const a = document.createElement('a'); a.href = '#/01'; a.textContent = 'Start with topic 01'; sp.append(a, ' \u2014 ten minutes is enough.'); }
   if (!sp.textContent) sp.textContent = TIPS[new Date().getDate() % TIPS.length]!;
 }
 /** Plan badge (free or paid), filled in once the account is known; the banner is an overlay, so nothing shifts. */
@@ -88,6 +88,11 @@ function banner(): void {
   d.addEventListener('focusin', () => { clearTimeout(t); }); d.addEventListener('focusout', arm);
   d.querySelector('span a')?.addEventListener('click', close);
   raf2(() => { d.classList.add('on'); }); arm();
+  /* it is a greeting, not a fixture: it goes once you move on (new page, scroll, typing) instead of covering the top bar */
+  const away = (): void => { if (d.isConnected && performance.now() - t0 > 600) close(); };
+  const t0 = performance.now();
+  window.addEventListener('hashchange', away, { once: true });
+  ['wheel', 'touchmove', 'keydown'].forEach((e) => window.addEventListener(e, away, { once: true, passive: true }));
 }
 
 /* once a day: a centred card, which also asks for the owner's name */
