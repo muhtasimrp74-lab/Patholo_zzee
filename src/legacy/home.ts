@@ -122,7 +122,7 @@ function render(){
  plan.push(['m',mq.td?'Keep going with MCQs':'Quick 10 MCQs',mq.td?mq.td+' answered today · '+mq.acc+'% overall':(mq.att?mq.acc+'% accuracy so far':'Short SBA / T-F set to warm up'),'#/mcqs','']);
  if(tbNext)plan.push(['t',(tbCur&&tbCur.id===tbNext.id?'Continue Ch ':'Read Ch ')+tbNext.n,esc2(tbNext.title),'#/textbook/'+tbNext.id,'']);
  h+='<section class="nh-plan"><div class="nh-pl nh-prog"><p class="nh-k">TODAY\'S PLAN</p><ul>'+plan.slice(0,5).map(p=>'<li><a href="'+p[3]+'"><i class="pi '+p[0]+'"></i><span><b>'+esc2(p[1])+'</b><small>'+p[2]+'</small></span><em>'+(p[4]!==''?p[4]:'→')+'</em></a></li>').join('')+'</ul></div>';
- h+='</section>';let cd='<div class="nh-ex nh-prog"><p class="nh-k">EXAM COUNTDOWN</p>';
+ h+='</section>';let cd='<div class="nh-ex nh-prog'+(days!==null&&days>=0&&days<=7?' nh-soon':'')+'"><p class="nh-k">EXAM COUNTDOWN</p>';   /* the last week gets a slow pulse (fx.css) */
  if(days!==null&&days>=0){cd+='<div class="nh-pc">'+days+'<small> day'+(days===1?'':'s')+'</small></div><p class="nh-mu">'+(days===0?'Exam day. You have read '+read+' of '+tot+'.':(tot-read)+' questions left'+(pace?' → about <b>'+pace+'/day</b>':''))+'</p>'}
  else if(days!==null){cd+='<p class="nh-mu">That date has passed. Pick the next exam date.</p>'}
  else cd+='<p class="nh-mu">Set your exam date and the home page works out how many questions to read each day.</p>';
