@@ -1,7 +1,7 @@
 /* Accounts (client). Access token in memory only; refresh token in localStorage 'zz-rt' (trade-off: readable by
    any script on this origin; no custom domain for an HttpOnly cookie). API base: window.ZZ_API ('' = same origin). */
 (function () {
-  var API = (window.ZZ_API || '') + 'api/', access = null, user = null, timer = 0;
+  var API = (window.ZZ_API || '') + 'api/', access = null, user = null, timer = 0, expAt = 0;
   var LS = { get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
              set: function (k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} } };
   function device() {
@@ -21,6 +21,7 @@
     var u = access ? sub(access) : null;
     LS.set('zz-uid', u);  // last signed-in user: names the offline chunk cache; other users' caches are wiped
     if (window.zzWipeChunks) zzWipeChunks(u);
+    expAt = access ? Date.now() + (j.expires_in || 900) * 1000 : 0;
     clearTimeout(timer); if (access) timer = setTimeout(refresh, ((j.expires_in || 900) - 120) * 1000);
     dispatchEvent(new CustomEvent('zz:auth', { detail: { signedIn: !!access } }));
   }
@@ -34,15 +35,34 @@
     }, function () { return false; });
   }
   // one refresh at a time across tabs, so two tabs never present the same refresh token (that would revoke the family)
+  // and one at a time within this page: overlapping callers share the same renewal
+  var inflight = null;
   function refresh() {
-    return navigator.locks ? navigator.locks.request('zz-refresh', doRefresh) : doRefresh();
+    if (inflight) return inflight;
+    var p = navigator.locks ? navigator.locks.request('zz-refresh', doRefresh) : doRefresh();
+    inflight = p = Promise.resolve(p).then(function (v) { inflight = null; return v; }, function (e) { inflight = null; throw e; });
+    return p;
   }
   window.zzAuthHeaders = function () { return access ? { Authorization: 'Bearer ' + access } : {}; };
+  // Phones pause timers while an app is in the background, so the 15-minute access token can expire unseen. Renew it when the page
+  // comes back (or before a request) if it has expired or is about to; requests that wait on zzAuthReady wait for the renewal.
+  function stale() { return !!LS.get('zz-rt') && (!access || Date.now() > expAt - 60000); }
+  function fresh() { if (!stale()) return Promise.resolve(!!access); var p = refresh(); window.zzAuthReady = p; return p; }
+  function wake() { if (!document.hidden && navigator.onLine !== false) fresh(); }
+  document.addEventListener('visibilitychange', wake); addEventListener('focus', wake); addEventListener('online', wake); addEventListener('pageshow', wake);
   window.zzAccount = {
     user: function () { return user; }, signedIn: function () { return !!access; }, refresh: refresh, device: device,
     setUser: function (u) { user = u; },
     uid: function () { return (access && sub(access)) || LS.get('zz-uid'); },
-    me: function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }); },
+    fresh: fresh,
+    // network failure rejects; any other failure resolves null. A 401 (token expired unseen) renews the token and asks once more.
+    me: function () {
+      var get = function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }); };
+      return fresh().then(get).then(function (r) {
+        if (r.status !== 401 || !LS.get('zz-rt')) return r;
+        return refresh().then(function (ok) { return ok ? get() : r; });
+      }).then(function (r) { return r.ok ? r.json() : null; });
+    },
     google: function g(idToken) { return post('auth/google', { id_token: idToken, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { g(idToken); }); return j; }); },
     password: function (login, pw, create) { return post(create ? 'auth/register' : 'auth/login', { login: login, password: pw, device_id: device(), device_name: dname() }).then(function (j) {

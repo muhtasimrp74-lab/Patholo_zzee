@@ -1484,6 +1484,8 @@ html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.q
 .zm-chip{display:inline-flex;align-items:center;min-height:24px;padding:0 11px;border-radius:999px;border:1px solid rgba(248,235,213,.42);font:600 .78rem/1 var(--body);letter-spacing:.01em;color:var(--zm-cream)}
 .zm-chip.zm-paid{border-color:transparent;background:var(--zm-gold);color:var(--zm-ox2)}
 .zm-when{font-variant-numeric:tabular-nums}
+.zm-retry{appearance:none;margin:0 0 0 4px;padding:6px 2px;border:0;background:none;color:var(--zm-cream);font:600 .875rem/1 var(--body);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.zm-retry:focus-visible{outline:2px solid var(--zm-gold);outline-offset:2px;border-radius:4px}
 .zm-acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px}
 .zm-acts>*{flex:1 1 auto;white-space:nowrap}  /* side by side when both fit, else one per line */
 .zm-cta,.zm-ghost{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:12px;font:600 .95rem/1.1 var(--body);text-align:center;text-decoration:none;cursor:pointer;
@@ -2263,7 +2265,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
 </style></head><body><script>(function(h){if(window.ZZ_API===undefined)window.ZZ_API=/(^|\.)github\.io$/.test(h)||h==="patholo-zzee.muhtasimrp74.workers.dev"?"https://patholo-zzee-app.muhtasimrp74.workers.dev/":""})(location.hostname)</script><script>window.ZZ_MANIFEST={"free":{"mcq":"mcq-01","q":"q-01","tb":"tb-ch01"},"gated":["mcq-02","mcq-03","mcq-04","mcq-05","mcq-06","mcq-07","mcq-08","mcq-09","mcq-10","mcq-11","mcq-12","mcq-13","mcq-14","mcq-15","mcq-16","mcq-17","q-02","q-03","q-04","q-05","q-06","q-07","q-08","q-09","q-10","q-11","q-12","q-13","q-14","q-15","q-c13","q-c14","q-c2","q-c23","q-c3","q-c30","q-c4","q-c5","q-c6","q-c7","q-c9","tb-ch02","tb-ch03","tb-ch04","tb-ch05","tb-ch06","tb-ch07","tb-ch08","tb-ch09","tb-ch10","tb-ch11","tb-ch12","tb-ch13","tb-ch14","tb-ch15","tb-ch16","tb-ch17","tb-ch18","tb-ch19","tb-ch20","tb-ch21","tb-ch22","tb-ch23","tb-ch24","tb-ch25","tb-ch26","tb-ch27","tb-ch28","tb-ch29"]}</script><script>/* Accounts (client). Access token in memory only; refresh token in localStorage 'zz-rt' (trade-off: readable by
    any script on this origin; no custom domain for an HttpOnly cookie). API base: window.ZZ_API ('' = same origin). */
 (function () {
-  var API = (window.ZZ_API || '') + 'api/', access = null, user = null, timer = 0;
+  var API = (window.ZZ_API || '') + 'api/', access = null, user = null, timer = 0, expAt = 0;
   var LS = { get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
              set: function (k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} } };
   function device() {
@@ -2283,6 +2285,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     var u = access ? sub(access) : null;
     LS.set('zz-uid', u);  // last signed-in user: names the offline chunk cache; other users' caches are wiped
     if (window.zzWipeChunks) zzWipeChunks(u);
+    expAt = access ? Date.now() + (j.expires_in || 900) * 1000 : 0;
     clearTimeout(timer); if (access) timer = setTimeout(refresh, ((j.expires_in || 900) - 120) * 1000);
     dispatchEvent(new CustomEvent('zz:auth', { detail: { signedIn: !!access } }));
   }
@@ -2296,15 +2299,34 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
     }, function () { return false; });
   }
   // one refresh at a time across tabs, so two tabs never present the same refresh token (that would revoke the family)
+  // and one at a time within this page: overlapping callers share the same renewal
+  var inflight = null;
   function refresh() {
-    return navigator.locks ? navigator.locks.request('zz-refresh', doRefresh) : doRefresh();
+    if (inflight) return inflight;
+    var p = navigator.locks ? navigator.locks.request('zz-refresh', doRefresh) : doRefresh();
+    inflight = p = Promise.resolve(p).then(function (v) { inflight = null; return v; }, function (e) { inflight = null; throw e; });
+    return p;
   }
   window.zzAuthHeaders = function () { return access ? { Authorization: 'Bearer ' + access } : {}; };
+  // Phones pause timers while an app is in the background, so the 15-minute access token can expire unseen. Renew it when the page
+  // comes back (or before a request) if it has expired or is about to; requests that wait on zzAuthReady wait for the renewal.
+  function stale() { return !!LS.get('zz-rt') && (!access || Date.now() > expAt - 60000); }
+  function fresh() { if (!stale()) return Promise.resolve(!!access); var p = refresh(); window.zzAuthReady = p; return p; }
+  function wake() { if (!document.hidden && navigator.onLine !== false) fresh(); }
+  document.addEventListener('visibilitychange', wake); addEventListener('focus', wake); addEventListener('online', wake); addEventListener('pageshow', wake);
   window.zzAccount = {
     user: function () { return user; }, signedIn: function () { return !!access; }, refresh: refresh, device: device,
     setUser: function (u) { user = u; },
     uid: function () { return (access && sub(access)) || LS.get('zz-uid'); },
-    me: function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }); },
+    fresh: fresh,
+    // network failure rejects; any other failure resolves null. A 401 (token expired unseen) renews the token and asks once more.
+    me: function () {
+      var get = function () { return fetch(API + 'me', { headers: window.zzAuthHeaders(), credentials: 'omit' }); };
+      return fresh().then(get).then(function (r) {
+        if (r.status !== 401 || !LS.get('zz-rt')) return r;
+        return refresh().then(function (ok) { return ok ? get() : r; });
+      }).then(function (r) { return r.ok ? r.json() : null; });
+    },
     google: function g(idToken) { return post('auth/google', { id_token: idToken, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { g(idToken); }); return j; }); },
     password: function (login, pw, create) { return post(create ? 'auth/register' : 'auth/login', { login: login, password: pw, device_id: device(), device_name: dname() }).then(function (j) {
@@ -3119,10 +3141,12 @@ counts();dash();
    label:k.length>=3?'All access':k.length?'Pro: '+k.map(e=>({qna:'Questions',mcq:'MCQs',textbook:'Textbook'})[e]||e).join(' + '):'Free plan'}}
  let ME=null,meAt=0,meP=null;
  function me(){const a=window.zzAccount;if(!a||!a.signedIn()||!a.me)return Promise.resolve(null);if(ME&&Date.now()-meAt<6e4)return Promise.resolve(ME);
-  return meP||(meP=a.me().then(m=>{meP=null;if(m){ME=m;meAt=Date.now();if(m.user&&a.setUser)a.setUser(m.user)}return m},()=>{meP=null;return null}))}
+  /* resolves the account, or {_e:'offline'} only when the browser says it is offline, else {_e:'error'} (server or sign-in trouble) */
+  return meP||(meP=a.me().then(m=>{meP=null;if(m){ME=m;meAt=Date.now();if(m.user&&a.setUser)a.setUser(m.user);return m}return{_e:navigator.onLine===false?'offline':'error'}},
+   ()=>{meP=null;return{_e:navigator.onLine===false?'offline':'error'}}))}
  let IDS=null;function learned(){try{if(!IDS)IDS=new Set(DATA.map(d=>d[3]));return[S.learned.filter(i=>IDS.has(i)).length,IDS.size]}catch(e){return[0,0]}}
  const card=$x('#zm-card');
- function paint(w,p,offline){
+ function paint(w,p,err){
   const ini=initials(w.name,w.contact),gold=!!(p&&p.paid);
   const av='<div class="zm-av'+(gold?' zm-gold':'')+'" aria-hidden="true">'+(ini?esc(ini):'<svg viewBox="0 0 24 24">'+I.me+'</svg>')+'</div>';
   let title=w.name||'Your account',sub='',status='',acts='';
@@ -3133,7 +3157,7 @@ counts();dash();
   }else{
    sub=w.contact?'<p class="zm-mail">'+esc(w.contact)+'</p>':'';
    if(p){status='<span class="zm-chip'+(p.paid?' zm-paid':'')+'">'+esc(p.label)+'</span>'+(p.paid?'<span class="zm-when">'+(p.days<=7?'Ends in '+p.days+(p.days===1?' day':' days'):'Active until '+esc(day(p.end)))+'</span>':'')}
-   else status='<span class="zm-when">'+(offline?'Your plan shows when you’re online.':'Loading your plan…')+'</span>';
+   else status='<span class="zm-when">'+(err==='offline'?'You’re offline. Your plan shows when you reconnect.':err?'Couldn’t load your plan. <button type="button" class="zm-retry" data-a="retry">Try again</button>':'Loading your plan…')+'</span>';
    const soon=p&&p.paid&&p.days<=7;
    acts=p&&!p.paid?'<button type="button" class="zm-cta" data-a="up">Choose a plan</button><a class="zm-ghost" href="#/account">Manage account</a>'
     :soon?'<button type="button" class="zm-cta" data-a="up">Renew plan</button><a class="zm-ghost" href="#/account">Manage account</a>'
@@ -3146,6 +3170,7 @@ counts();dash();
   card.classList.toggle('zm-out',!w.si);
   card.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{const a=b.dataset.a;
    if(a==='up'){window.zzUpgrade&&zzUpgrade();return}
+   if(a==='retry'){ME=null;b.disabled=true;b.textContent='Loading…';render();return}
    if(!window.zzSignIn)return;zzSignIn();const m=document.getElementById('zz-mode');/* the dialog keeps its last mode: switch it to the one asked for */
    if(m&&(a==='new')!==/Have an account/.test(m.textContent))m.click()});
   $x('#zm-outl').hidden=!w.si;
@@ -3163,11 +3188,12 @@ counts();dash();
  function render(){const n=++seq,w=who();
   if(!w.si){paint(w,null);return}
   paint(w,ME&&Date.now()-meAt<6e4?plan(ME):null);
-  me().then(m=>{if(n!==seq)return;paint(who(),m?plan(m):null,!m)});
+  me().then(m=>{if(n!==seq)return;const ok=m&&!m._e;paint(who(),ok?plan(m):null,ok?null:(m&&m._e)||'error')});
  }
  const here=()=>location.hash==='#/menu';
  addEventListener('hashchange',()=>{if(here()){sync();render()}});
  addEventListener('zz:auth',()=>{ME=null;render()});
+ addEventListener('online',()=>{if(here())render()});
  (window.zzAuthReady||Promise.resolve()).then(render,render);
  sync();render();addEventListener('load',()=>{sync();setTimeout(sync,600)});/* the toolbar gains Calm reading and Annotate after this runs */
 }
@@ -3674,12 +3700,79 @@ function home(){
 			pt = setTimeout(() => SB.classList.remove("show"), 1e3);
 			clearTimeout(tkr);
 			tkr = setTimeout(() => {
-				if (cur) {
+				if (cur && location.hash.split("/")[2] === cur) {
 					const o = J("tbPos");
 					o[cur] = +r.toFixed(3);
 					W("tbPos", o);
+					mark(cur, o[cur]);
 				}
 			}, 400);
+		}
+		function mark(ch, r) {
+			const bd = T.querySelector("#tbbody");
+			if (!bd || bd.dataset.ch !== ch) return;
+			let a = null;
+			const hit = document.elementFromPoint(innerWidth / 2, 120);
+			if (hit && bd.contains(hit)) a = hit.closest("[data-b]");
+			if (!a) for (const e of bd.querySelectorAll("[data-b]")) {
+				const q = e.getBoundingClientRect();
+				if (q.height && q.bottom > 96) {
+					a = e;
+					break;
+				}
+			}
+			const o = J("tbAt");
+			o[ch] = {
+				b: a ? a.dataset.b : "",
+				o: a ? Math.round(a.getBoundingClientRect().top) : 0,
+				r,
+				s: [...bd.querySelectorAll(".tbs.shut")].map((x) => x.dataset.a).filter(Boolean),
+				t: Date.now()
+			};
+			const ks = Object.keys(o);
+			if (ks.length > 40) ks.sort((x, y) => (o[x].t || 0) - (o[y].t || 0)).slice(0, ks.length - 40).forEach((k) => delete o[k]);
+			W("tbAt", o);
+		}
+		function resume(ch, s, my) {
+			const m = J("tbAt")[ch];
+			if (!m || typeof m !== "object" || !m.b) return false;
+			if (typeof s === "number" && (s <= .02 || s >= .97 || typeof m.r === "number" && Math.abs(m.r - s) > .01)) return false;
+			const bd = T.querySelector("#tbbody"), q = (v) => String(v).replace(/["\\]/g, "");
+			if (Array.isArray(m.s)) m.s.forEach((a) => {
+				const x = bd.querySelector(".tbs[data-a=\"" + q(a) + "\"]");
+				if (x) tog(x, false);
+			});
+			const el = bd.querySelector("[data-b=\"" + q(m.b) + "\"]");
+			if (!el) return false;
+			const sec = el.closest(".tbs");
+			if (sec && sec.classList.contains("shut")) tog(sec, true);
+			const off = Number.isFinite(+m.o) ? +m.o : 0;
+			let mine = false;
+			const stop = () => {
+				mine = true;
+			};
+			[
+				"wheel",
+				"touchstart",
+				"keydown"
+			].forEach((e) => addEventListener(e, stop, {
+				once: true,
+				passive: true,
+				capture: true
+			}));
+			const go = () => {
+				if (mine || my !== tok || !el.isConnected) return;
+				const y = scrollY + el.getBoundingClientRect().top - off;
+				if (Math.abs(y - scrollY) > 1) scrollTo(0, Math.max(0, y));
+			};
+			go();
+			[
+				60,
+				250,
+				600,
+				1200
+			].forEach((t) => setTimeout(go, t));
+			return true;
 		}
 		addEventListener("scroll", onScroll, { passive: true });
 		function paint() {
@@ -3798,7 +3891,7 @@ function home(){
 				}
 				if (p[2] && goBlock(p[2], p[3], my)) return;
 				const s = J("tbPos")[c.id];
-				if (s > .02 && s < .97) setTimeout(() => {
+				if (!resume(c.id, s, my) && s > .02 && s < .97) setTimeout(() => {
 					if (my === tok) scrollTo(0, s * (document.documentElement.scrollHeight - innerHeight));
 				}, 60);
 				onScroll();
@@ -4455,6 +4548,93 @@ if(window.ResizeObserver){const n=document.getElementById('bnav');if(n)new Resiz
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(bh);
 })();
 
+/* ===== tab memory: the Chapters and Textbook tabs reopen where you were =====
+   Tapping Chapters or Textbook from another tab goes back to the last page you had open in that tab (a chapter page, or a
+   textbook chapter) at the question you were on. Tapping the tab you are already in still opens its list, as before.
+   Positions are kept per page as "this card, this far from the top of the screen" (pixel fallback), so answers that open,
+   load later or change size do not throw it off. Textbook chapters restore their own reading position (textbook.js).
+   Stored on this device only (zzTabs): not synced and not part of backups. */
+(function(){try{
+const KEY='zzTabs',TABS={qa:1,textbook:1},MAXP=40,MENU=['practice','bookmarks','favourites','notes','howto','search','menu','account'];
+const parts=h=>(h||'').replace(/^#\/?/,'').split('/');
+/* same tab mapping as the app's own highlighter: anything that is not another tab belongs to Chapters */
+const keyOf=h=>{const k=parts(h)[0]||'';return k===''||k==='home'?'':MENU.includes(k)?'menu':k==='topics'?'qa':['questions','qa','mcqs','textbook'].includes(k)?k:'qa'};
+const base=h=>{const p=parts(h);return p[0]==='textbook'?'#/textbook'+(p[1]?'/'+p[1]:''):p[0]==='topics'?'#/qa':'#/'+p[0]};
+const valid=h=>{if(typeof h!=='string'||!/^#\/[A-Za-z0-9_-]+(\/[A-Za-z0-9_-]+)?$/.test(h))return false;const k=parts(h)[0];
+ return k==='textbook'||k==='qa'||(keyOf(h)==='qa'&&!!document.getElementById('v-'+k))};
+const tbCh=h=>/^#\/textbook\/./.test(h);   /* a textbook chapter: textbook.js keeps that position */
+let M={last:{},pos:{}};
+try{const o=JSON.parse(zzStore.getItem(KEY)||'{}');
+ if(o&&o.last&&typeof o.last==='object')for(const k in TABS)if(valid(o.last[k]))M.last[k]=o.last[k];
+ if(o&&o.pos&&typeof o.pos==='object')for(const h in o.pos){const p=o.pos[h];if(valid(h)&&p&&typeof p==='object'&&Number.isFinite(p.y))M.pos[h]={y:p.y,o:Number.isFinite(p.o)?p.o:0,a:typeof p.a==='string'&&/^[A-Za-z0-9_-]{1,40}$/.test(p.a)?p.a:'',t:+p.t||0}}
+}catch(e){}
+const persist=()=>{try{zzStore.setItem(KEY,JSON.stringify(M))}catch(e){}};
+const view=()=>document.querySelector('.view:not([hidden])');
+let cur=null,pending=null,st=0;
+/* the page you are on now, if it belongs to a remembered tab */
+function track(){const h=location.hash||'#/',k=keyOf(h);cur=TABS[k]&&valid(base(h))?base(h):null;if(cur&&M.last[k]!==cur){M.last[k]=cur;persist()}}
+function save(){
+ if(!cur||tbCh(cur)||base(location.hash)!==cur)return;   /* never record a page you have already left */
+ const v=view();if(!v)return;
+ let a=null;for(const c of v.querySelectorAll('.card[id]')){const r=c.getBoundingClientRect();if(r.height&&r.bottom>90){a=c;break}}
+ const n={y:Math.round(scrollY),a:a?a.id:'',o:a?Math.round(a.getBoundingClientRect().top):0},q=M.pos[cur];
+ if(q&&q.y===n.y&&q.a===n.a&&q.o===n.o)return;          /* nothing moved: no write */
+ if(n.y<=2){if(q){delete M.pos[cur];persist()}return}    /* the top of the page is where it opens anyway */
+ n.t=Date.now();M.pos[cur]=n;
+ const ks=Object.keys(M.pos);if(ks.length>MAXP)ks.sort((x,y)=>M.pos[x].t-M.pos[y].t).slice(0,ks.length-MAXP).forEach(k=>delete M.pos[k]);
+ persist();
+}
+/* put the page back; repeat briefly while answers and images settle, unless you start scrolling yourself */
+function restore(b){
+ const p=M.pos[b];if(!p)return;let mine=false;
+ const stop=()=>{mine=true};['wheel','touchstart','keydown'].forEach(e=>addEventListener(e,stop,{once:true,passive:true,capture:true}));
+ const go=()=>{if(mine||base(location.hash)!==b)return;const v=view(),el=p.a&&v&&v.querySelector('#'+CSS.escape(p.a));
+  const y=el&&el.getClientRects().length?scrollY+el.getBoundingClientRect().top-p.o:p.y;
+  if(Math.abs(y-scrollY)>1)scrollTo({top:Math.max(0,y),left:0,behavior:'instant'})};
+ go();[60,200,500,1000].forEach(t=>setTimeout(go,t));
+}
+addEventListener('hashchange',()=>setTimeout(()=>{track();const p=pending;pending=null;if(p&&p===cur&&!tbCh(cur))restore(cur)},0));
+addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(save,250)},{passive:true});
+addEventListener('pagehide',save);document.addEventListener('visibilitychange',()=>{if(document.hidden)save()});
+document.addEventListener('click',e=>{
+ const a=e.target.closest&&e.target.closest('#bnav a,.nav .links a');
+ if(!a||e.defaultPrevented||e.button>0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+ const href=a.getAttribute('href')||'',k=keyOf(href);if(!TABS[k])return;
+ clearTimeout(st);save();                            /* keep the last bit of scrolling before you tapped */
+ if(keyOf(location.hash)===k)return;                 /* the tab you are in: open its list, as before */
+ const t=valid(M.last[k])?M.last[k]:href;pending=t;
+ if(t!==href){e.preventDefault();location.hash=t}
+},true);
+track();
+}catch(e){}})();
+
+/* ===== keep installed copies current =====
+   sw.js takes over as soon as a new VERSION is saved, but a page that is already open keeps running the old copy, and an installed
+   app resumed from the background never reloads on its own, so it could show an old version for days. This asks the browser to
+   look for a new version whenever the app comes back to the screen (at most every 10 minutes) and every 30 minutes while it is
+   open, then switches to the new version once it has taken over: straight away if you are not looking, otherwise with a small
+   Reload notice, or by itself the next time you come back to the app. Nothing is lost: progress, notes and positions are saved. */
+(function(){try{
+if(!('serviceWorker' in navigator))return;
+const sw=navigator.serviceWorker;let had=!!sw.controller,last=Date.now(),waiting=false,gone=false,bar=null;
+const check=()=>{if(document.hidden||Date.now()-last<6e5)return;last=Date.now();sw.getRegistration().then(r=>r&&r.update()).catch(()=>{})};
+const reload=()=>{if(gone)return;gone=true;location.reload()};
+function notice(){
+ if(bar)return;bar=document.createElement('div');bar.className='zz-upd';bar.setAttribute('role','status');
+ bar.innerHTML='<span>A new version of Patholo_zzee is ready.</span><button type="button">Reload</button>';
+ bar.querySelector('button').onclick=reload;document.body.appendChild(bar);
+ const st=document.createElement('style');st.textContent='.zz-upd{position:fixed;z-index:85;left:50%;transform:translateX(-50%);bottom:calc(var(--bn-h,0px) + 12px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:14px;width:max-content;max-width:calc(100vw - 24px);box-sizing:border-box;padding:8px 8px 8px 16px;border-radius:14px;background:var(--text,#2A1627);color:var(--bg,#F8F3EE);font:500 .9rem/1.35 var(--body,system-ui,sans-serif);box-shadow:0 10px 30px rgba(0,0,0,.25)}.zz-upd button{flex:none;min-height:40px;padding:0 16px;border:0;border-radius:10px;background:var(--burgundy,#7A1F36);color:#fff;font:600 .875rem/1 var(--body,system-ui,sans-serif);cursor:pointer}.zz-upd button:focus-visible{outline:2px solid var(--bg,#fff);outline-offset:2px}';
+ document.head.appendChild(st);
+}
+sw.addEventListener('controllerchange',()=>{
+ if(!had){had=true;return}            /* first install: the page on screen is already the current one */
+ waiting=true;if(document.hidden)reload();else notice();
+});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)return;if(waiting)reload();else check()});
+addEventListener('online',()=>{last=0;check()});
+setInterval(check,18e5);
+}catch(e){}})();
+
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
 const r=document.getElementById('res'),g=document.getElementById('gq');
 function show(){const q=g.value.trim().toLowerCase(),T=q.match(/[a-z0-9']+/g)||[];
@@ -4891,7 +5071,7 @@ if ('serviceWorker' in navigator) {
     }
     M.innerHTML = '<p class="zz-st" role="status">Loading your account\u2026</p>';
     var get = function (p) { return fetch(API + p, { credentials: 'omit', headers: window.zzAuthHeaders() }).then(function (r) { return r.ok ? r.json() : {}; }, function () { return {}; }); };
-    Promise.all([zzAccount.me(), get('devices'), get('pay/orders')]).then(function (x) {
+    (zzAccount.fresh ? zzAccount.fresh() : Promise.resolve()).then(function () { return Promise.all([zzAccount.me().catch(function () { return null; }), get('devices'), get('pay/orders')]); }).then(function (x) {
       var me = x[0] || {}, d = x[1] || {}, ords = (x[2] || {}).orders || [], u = me.user || {}, now = me.now || Date.now(), ents = me.entitlements || [];
       var plan = ents.length ? ents.map(function (e) {
         var on = e.expires_at > now;

@@ -154,12 +154,79 @@
 			pt = setTimeout(() => SB.classList.remove("show"), 1e3);
 			clearTimeout(tkr);
 			tkr = setTimeout(() => {
-				if (cur) {
+				if (cur && location.hash.split("/")[2] === cur) {
 					const o = J("tbPos");
 					o[cur] = +r.toFixed(3);
 					W("tbPos", o);
+					mark(cur, o[cur]);
 				}
 			}, 400);
+		}
+		function mark(ch, r) {
+			const bd = T.querySelector("#tbbody");
+			if (!bd || bd.dataset.ch !== ch) return;
+			let a = null;
+			const hit = document.elementFromPoint(innerWidth / 2, 120);
+			if (hit && bd.contains(hit)) a = hit.closest("[data-b]");
+			if (!a) for (const e of bd.querySelectorAll("[data-b]")) {
+				const q = e.getBoundingClientRect();
+				if (q.height && q.bottom > 96) {
+					a = e;
+					break;
+				}
+			}
+			const o = J("tbAt");
+			o[ch] = {
+				b: a ? a.dataset.b : "",
+				o: a ? Math.round(a.getBoundingClientRect().top) : 0,
+				r,
+				s: [...bd.querySelectorAll(".tbs.shut")].map((x) => x.dataset.a).filter(Boolean),
+				t: Date.now()
+			};
+			const ks = Object.keys(o);
+			if (ks.length > 40) ks.sort((x, y) => (o[x].t || 0) - (o[y].t || 0)).slice(0, ks.length - 40).forEach((k) => delete o[k]);
+			W("tbAt", o);
+		}
+		function resume(ch, s, my) {
+			const m = J("tbAt")[ch];
+			if (!m || typeof m !== "object" || !m.b) return false;
+			if (typeof s === "number" && (s <= .02 || s >= .97 || typeof m.r === "number" && Math.abs(m.r - s) > .01)) return false;
+			const bd = T.querySelector("#tbbody"), q = (v) => String(v).replace(/["\\]/g, "");
+			if (Array.isArray(m.s)) m.s.forEach((a) => {
+				const x = bd.querySelector(".tbs[data-a=\"" + q(a) + "\"]");
+				if (x) tog(x, false);
+			});
+			const el = bd.querySelector("[data-b=\"" + q(m.b) + "\"]");
+			if (!el) return false;
+			const sec = el.closest(".tbs");
+			if (sec && sec.classList.contains("shut")) tog(sec, true);
+			const off = Number.isFinite(+m.o) ? +m.o : 0;
+			let mine = false;
+			const stop = () => {
+				mine = true;
+			};
+			[
+				"wheel",
+				"touchstart",
+				"keydown"
+			].forEach((e) => addEventListener(e, stop, {
+				once: true,
+				passive: true,
+				capture: true
+			}));
+			const go = () => {
+				if (mine || my !== tok || !el.isConnected) return;
+				const y = scrollY + el.getBoundingClientRect().top - off;
+				if (Math.abs(y - scrollY) > 1) scrollTo(0, Math.max(0, y));
+			};
+			go();
+			[
+				60,
+				250,
+				600,
+				1200
+			].forEach((t) => setTimeout(go, t));
+			return true;
 		}
 		addEventListener("scroll", onScroll, { passive: true });
 		function paint() {
@@ -278,7 +345,7 @@
 				}
 				if (p[2] && goBlock(p[2], p[3], my)) return;
 				const s = J("tbPos")[c.id];
-				if (s > .02 && s < .97) setTimeout(() => {
+				if (!resume(c.id, s, my) && s > .02 && s < .97) setTimeout(() => {
 					if (my === tok) scrollTo(0, s * (document.documentElement.scrollHeight - innerHeight));
 				}, 60);
 				onScroll();
