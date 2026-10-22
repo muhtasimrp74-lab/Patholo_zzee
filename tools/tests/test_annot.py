@@ -211,17 +211,26 @@ class AnnotBrowser(unittest.TestCase):
         d = pg.evaluate("()=>Annot.dump()"); self.assertTrue(pg.evaluate("d=>!!Annot.validate(d)", d)); pg.evaluate("async d=>{await Annot.load(d)}", d); self.assertEqual(self.objs(pg, cid), 6)
         evil = json.loads(json.dumps(d)); evil['docs'][k]['objs'][0]['k'] = 'evil'; self.assertIsNone(pg.evaluate("d=>Annot.validate(d)", evil))
         pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[30, 60], [400, 60]], type='mouse'); self.assertEqual(self.objs(pg, cid), 0, 'eraser removes stickers'); self.assertEqual(self.errs, [])
+    def settle(self, pg, sel, n, ms=3000):
+        """the count of `sel` once the page has caught up (up to `ms`): the same check, without racing a slow machine"""
+        try: pg.wait_for_function("([s,n])=>document.querySelectorAll(s).length===n", arg=[sel, n], timeout=ms)
+        except Exception: pass
+        return pg.locator(sel).count()
+    def settle_objs(self, pg, cid, n, ms=3000):
+        t = 0
+        while self.objs(pg, cid) != n and t < ms: pg.wait_for_timeout(100); t += 100
+        return self.objs(pg, cid)
     def test_sticky_notes_type_edit_delete_undo_and_work_with_annotate_off(self):
         pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='nt'}"); self.tap(pg, sel, 80, 70)
-        self.assertEqual(pg.locator('.an-sticky').count(), 1); pg.fill('.an-sticky textarea', 'Mnemonic: <img src=x onerror=window.__x=1>'); pg.click('.an-sticky button:has-text("Done")'); pg.wait_for_timeout(150)
-        self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,o.x])", 'q:' + cid), [['note', 'pin', 'Mnemonic: <img src=x onerror=window.__x=1>']]); self.assertEqual(pg.locator('.an-pin').count(), 1)
-        self.assertIn('Mnemonic', pg.get_attribute('.an-pin', 'aria-label')); self.assertIsNone(pg.evaluate("()=>window.__x ?? null")); self.assertEqual(pg.locator('.an-sticky').count(), 0)
-        pg.evaluate("()=>Annot._debug.setOn(false)"); pg.click('.an-pin'); self.assertEqual(pg.locator('.an-sticky').count(), 1, 'a pin opens even when annotate is off')
+        self.assertEqual(self.settle(pg, '.an-sticky', 1), 1); pg.fill('.an-sticky textarea', 'Mnemonic: <img src=x onerror=window.__x=1>'); pg.click('.an-sticky button:has-text("Done")'); pg.wait_for_timeout(150)
+        self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs.map(o=>[o.t,o.k,o.x])", 'q:' + cid), [['note', 'pin', 'Mnemonic: <img src=x onerror=window.__x=1>']]); self.assertEqual(self.settle(pg, '.an-pin', 1), 1)
+        self.assertIn('Mnemonic', pg.get_attribute('.an-pin', 'aria-label')); self.assertIsNone(pg.evaluate("()=>window.__x ?? null")); self.assertEqual(self.settle(pg, '.an-sticky', 0), 0)
+        pg.evaluate("()=>Annot._debug.setOn(false)"); pg.click('.an-pin'); self.assertEqual(self.settle(pg, '.an-sticky', 1), 1, 'a pin opens even when annotate is off')
         pg.fill('.an-sticky textarea', 'Edited'); pg.click('.an-sticky button:has-text("Done")'); pg.wait_for_timeout(100); self.assertEqual(pg.evaluate("k=>Annot._debug.docs()[k].objs[0].x", 'q:' + cid), 'Edited')
         pg.evaluate("()=>Annot._debug.setOn(true)"); pg.keyboard.press('Control+z'); self.assertTrue(pg.evaluate("k=>Annot._debug.docs()[k].objs[0].x.startsWith('Mnemonic')", 'q:' + cid), 'undo restores the text'); pg.keyboard.press('Control+Shift+z')
-        pg.click('.an-pin'); pg.click('.an-sticky button:has-text("Delete")'); pg.wait_for_timeout(100); self.assertEqual(self.objs(pg, cid), 0); self.assertEqual(pg.locator('.an-pin').count(), 0); pg.keyboard.press('Control+z'); self.assertEqual(self.objs(pg, cid), 1); self.assertEqual(pg.locator('.an-pin').count(), 1)
-        self.tap(pg, sel, 300, 40); self.assertEqual(pg.locator('.an-sticky').count(), 1); pg.keyboard.press('Escape'); self.assertEqual(self.objs(pg, cid), 1, 'Escape discards a new note')
-        pg.evaluate("()=>{Annot.state().tool='sel'}"); self.tap(pg, sel, 80, 70); pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[60, 70], [110, 70]], type='mouse'); self.assertEqual(self.objs(pg, cid), 0, 'eraser removes a sticky note'); self.assertEqual(self.errs, [])
+        pg.click('.an-pin'); pg.click('.an-sticky button:has-text("Delete")'); pg.wait_for_timeout(100); self.assertEqual(self.settle_objs(pg, cid, 0), 0); self.assertEqual(self.settle(pg, '.an-pin', 0), 0); pg.keyboard.press('Control+z'); self.assertEqual(self.settle_objs(pg, cid, 1), 1); self.assertEqual(self.settle(pg, '.an-pin', 1), 1)
+        self.tap(pg, sel, 300, 40); self.assertEqual(self.settle(pg, '.an-sticky', 1), 1); pg.keyboard.press('Escape'); self.assertEqual(self.settle_objs(pg, cid, 1), 1, 'Escape discards a new note')
+        pg.evaluate("()=>{Annot.state().tool='sel'}"); self.tap(pg, sel, 80, 70); pg.evaluate("()=>{Annot.state().tool='er'}"); self.draw(pg, sel, [[60, 70], [110, 70]], type='mouse'); self.assertEqual(self.settle_objs(pg, cid, 0), 0, 'eraser removes a sticky note'); self.assertEqual(self.errs, [])
     def test_laser_pointer_leaves_a_fading_trail_and_saves_nothing(self):
         pg = self.page(); cid, sel = self.open_card(pg); pg.evaluate("()=>{Annot.state().tool='ls'}")
         px = "k=>{const L=Annot._debug.layer(k);if(!L||!L.wet)return 0;const g=L.wet.getContext('2d'),d=g.getImageData(0,0,L.wet.width,L.wet.height).data;let n=0;for(let i=3;i<d.length;i+=4)if(d[i])n++;return n}"

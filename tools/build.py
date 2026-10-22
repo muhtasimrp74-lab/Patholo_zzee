@@ -361,7 +361,7 @@ for _a, _b in (("BS=[...new Set(DATA.map(d=>d[0]))]", "BS=[...new Set(DATA.flatM
 # which only assembled files by then; the edits to existing application text live in src/index.base.html and questions.js).
 # Read modes matter for byte-identical output: files read with newline='' keep their line endings, the others use text mode.
 def _asset(name, raw=False): return open(os.path.join(HERE, name), encoding='utf8', newline='' if raw else None).read()
-_UI_JS = _asset('ui_upd.js', True) + _asset('home.js') + _asset('pagebanner.js') + _asset('sitefooter.js') + _asset('tabresume.js') + _asset('swupdate.js') + _asset('qol.js') + _asset('fx.js') + _asset('fxgl.js')
+_UI_JS = _asset('ui_upd.js', True) + _asset('home.js') + _asset('pagebanner.js') + _asset('sitefooter.js') + _asset('tabresume.js') + _asset('swupdate.js') + _asset('qol.js') + _asset('fx.js') + _asset('fxgl.js') + _asset('fx2.js')
 _UI_TAIL = "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n"
 assert "\nroute();\n" in s, 'assembly anchor missing: route();'
 s = s.replace("\nroute();\n", "\nroute();\n" + _UI_JS + _UI_TAIL, 1)
