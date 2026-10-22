@@ -1,0 +1,38 @@
+/* ===== refine.css: a quieter, more exact finish over the earlier layers, same palette and type =====
+   Loaded last (build.py, after zz.css). Rules from the app-screen house rules (taste-skill) and our own audit:
+   1. Resting surfaces are flat: one 1px line, no shadow, no glass. Shadows stay on what floats (dialogs, menus,
+      the bottom bar, the annotate buttons, the account card).
+   2. Nothing lifts on hover: a card answers with its border colour instead.
+   3. Labels in sentence case: no tracked uppercase anywhere, nothing under 12px.
+   4. Figures line up: tabular numbers in the interface (reading text keeps its own figures).
+   5. One radius family: top-level cards 18px, the parts inside them smaller, chips round. */
+
+/* 1. flat resting surfaces */
+html body :is(.topic,.card,.qi,.row,.mq,.stats,.howto,.dc,.pc,.empty,.mx-acc,.mx-day,.mx-tile,.tbtile){
+  background-image:none!important;box-shadow:none!important;border:1px solid var(--line)!important}
+html body :is(.topic,.card,.qi,.row,.dc,.pc,.mx-acc,.mx-day,.tbtile){background-color:var(--panel)!important}
+html body :is(.card.open,.card:target,.card.hl,.qi.o){border-color:color-mix(in srgb,var(--burgundy) 42%,var(--line))!important}
+html body .card header,html body .card header:hover{box-shadow:none!important}
+
+/* 2. no lift on hover; the border answers instead */
+html body :is(.topic,.dc,.pc,.tbtile,.mtile,.pager a,.nh-row a,#nh a.nh-t4,.mx-tile,#bnav a,.chips button,.qchip,#tools button):hover{transform:none!important}
+@media(hover:hover){html body :is(.topic,.dc,.pc,.tbtile,.pager a,.mx-tile):hover{border-color:color-mix(in srgb,var(--burgundy) 40%,var(--line))!important}}
+
+/* 3. labels in sentence case, at a readable size */
+html body :is(.view,footer,#bnav,dialog) *{text-transform:none!important}
+html body :is(.nh-eb,.nh-k,.nh-tk,.nh-dt span,.sf-k,.sf-col h2,.qf-body h4,.qa-k,.tg,.ans h4.sub,.ans th,.mx-eb,.mx-h,.tbeyebrow,.tbcont-t small,.tbpart-k,.tbtoc-t b,.view small,.view th){
+  letter-spacing:0!important}
+html body :is(.nh-eb,.nh-k,.sf-k,.sf-col h2,.qf-body h4,.qa-k,.mx-eb,.mx-h,.tbeyebrow,.tbpart-k,.tbtoc-t b){font-size:max(.8125rem,13px)!important;font-weight:600!important}
+html body :is(.nh-tk,.nh-dt span,.tbcont-t small){font-size:max(.75rem,12px)!important}
+html body .tg{font-size:12px!important;font-weight:600!important;padding:2px 9px!important}
+html body .ans h4.sub{font-size:.95em!important;font-weight:700!important;color:var(--plum)!important}
+
+/* 4. figures that line up */
+html body :is(.view,#bnav,footer){font-variant-numeric:tabular-nums}
+html body :is(.ans,.tb,.tbs-b,.howto p,.lede,.pb-l){font-variant-numeric:normal}
+
+/* 5. one radius family */
+html body :is(.topic,.card,.mx-acc,.mx-day,.tbtile,.dc,.pc,.empty){border-radius:18px!important}
+
+/* card actions on phones: a long label ("Mark as learned") wraps to two short lines instead of being cut off */
+@media(max-width:640px){html body .act span{white-space:normal!important;text-align:center;line-height:1.15}}
