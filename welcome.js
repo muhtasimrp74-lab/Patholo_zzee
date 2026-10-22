@@ -1,6 +1,6 @@
 (function() {
 	//#region src/legacy/welcome-css.ts
-	var WELCOME_CSS = ".zz-welcome{position:fixed;z-index:70;left:50%;top:calc(10px + env(safe-area-inset-top,0px));transform:translate(-50%,-12px);opacity:0;width:min(440px,calc(100vw - 24px));box-sizing:border-box;display:flex;gap:14px;align-items:flex-start;padding:14px 8px 14px 14px;border-radius:18px;background:var(--panel,#FFFDFA);color:var(--text,#2A1627);border:1px solid var(--line,#E8D9E3);box-shadow:0 2px 6px rgba(42,22,39,.06),0 18px 44px rgba(42,22,39,.16);font:400 15px/1.45 var(--body,system-ui,sans-serif);transition:opacity .22s cubic-bezier(.2,.7,.2,1),transform .22s cubic-bezier(.2,.7,.2,1);pointer-events:none;contain:layout paint}.zz-welcome.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}.zz-welcome .zw-i,.zz-wd .zi{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:color-mix(in srgb,var(--burgundy,#7A1F36) 9%,transparent);color:var(--burgundy,#7A1F36)}.zw-night .zw-i,.zz-wd .zw-night .zi,.zw-evening .zw-i,.zz-wd .zw-evening .zi{background:color-mix(in srgb,var(--plum2,#6B2D5C) 12%,transparent);color:var(--plum2,#6B2D5C)}.zz-welcome svg,.zz-wd .zi svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.zz-welcome .zw-t{flex:1;min-width:0;padding-top:1px}.zz-welcome b{display:inline;font:400 1.125rem/1.25 var(--disp,Georgia,serif);letter-spacing:-.005em;color:var(--text,#2A1627)}.zz-welcome .zw-plan{display:inline-block;margin-left:8px;padding:1px 9px;border-radius:999px;font:600 .6875rem/1.7 var(--body,system-ui,sans-serif);font-style:normal;letter-spacing:.02em;vertical-align:2px;border:1px solid var(--line2,#DCC6D3);color:var(--muted,#735F70)}.zz-welcome .zw-plan[hidden]{display:none}.zz-welcome .zw-paid{border-color:transparent;background:var(--burgundy,#7A1F36);color:#fff}.zz-welcome span{display:block;margin-top:3px;color:var(--muted,#735F70);font-size:.875rem;line-height:1.45;overflow-wrap:anywhere}.zz-welcome span a{color:var(--text,#2A1627);font-weight:600;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:3px}.zz-welcome button{flex:none;display:grid;place-items:center;width:44px;height:44px;margin:-10px -2px -10px 0;border:0;border-radius:50%;background:transparent;color:var(--muted,#735F70);cursor:pointer}.zz-welcome button:hover{background:color-mix(in srgb,var(--text,#2A1627) 6%,transparent);color:var(--text,#2A1627)}.zz-welcome button:focus-visible,.zz-welcome a:focus-visible,.zz-wd button:focus-visible{outline:2px solid var(--burgundy,#7A1F36);outline-offset:2px}:root[data-theme=dark] .zz-welcome,:root[data-theme=dark] .zz-wd .zc{box-shadow:0 2px 6px rgba(0,0,0,.4),0 18px 44px rgba(0,0,0,.5)}:root[data-theme=dark] .zz-welcome .zw-i,:root[data-theme=dark] .zz-wd .zi{color:var(--rosy,#D98FA8);background:color-mix(in srgb,var(--rosy,#D98FA8) 14%,transparent)}.zz-wd{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px;background:rgba(28,18,25,.5);backdrop-filter:blur(2px);opacity:0;transition:opacity .22s cubic-bezier(.2,.7,.2,1)}.zz-wd.on{opacity:1}.zz-wd .zc{width:min(400px,100%);box-sizing:border-box;padding:24px;border-radius:20px;background:var(--panel,#FFFDFA);color:var(--text,#2A1627);border:1px solid var(--line,#E8D9E3);box-shadow:0 2px 6px rgba(42,22,39,.08),0 28px 64px rgba(42,22,39,.24);font:400 1rem/1.5 var(--body,system-ui,sans-serif);transform:translateY(8px) scale(.985);transition:transform .22s cubic-bezier(.2,.7,.2,1)}.zz-wd.on .zc{transform:none}.zz-wd .zi{margin-bottom:12px}.zz-wd h2{margin:0 0 6px;font:400 1.75rem/1.15 var(--disp,Georgia,serif);letter-spacing:-.005em}.zz-wd p{margin:0 0 4px;color:var(--muted,#735F70)}.zz-wd label{display:block;margin:16px 0 6px;font-weight:600;font-size:.9375rem}.zz-wd input{display:block;width:100%;box-sizing:border-box;min-height:48px;padding:0 14px;border-radius:10px;border:1px solid var(--line2,#DCC6D3);background:var(--bg,#F8F3EE);color:var(--text,#2A1627);font:inherit;font-size:1.0625rem}.zz-wd input:focus{outline:none;border-color:var(--burgundy,#7A1F36);box-shadow:0 0 0 3px color-mix(in srgb,var(--burgundy,#7A1F36) 12%,transparent)}.zz-wd button{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;margin-top:14px;border:0;border-radius:10px;background:var(--burgundy,#7A1F36);color:#fff;font:600 .9375rem/1 var(--body,system-ui,sans-serif);cursor:pointer}@media (prefers-reduced-motion:reduce){.zz-welcome,.zz-wd,.zz-wd .zc{transition:opacity .01s}.zz-welcome{transform:translate(-50%,0)}.zz-wd .zc{transform:none}}.zz-welcome .zw-t span a{display:inline-block;padding:10px 0;margin:-10px 0}";
+	var WELCOME_CSS = ".zz-welcome{position:fixed;z-index:70;left:50%;top:calc(10px + env(safe-area-inset-top,0px));transform:translate(-50%,-12px);opacity:0;width:min(440px,calc(100vw - 24px));box-sizing:border-box;display:flex;gap:14px;align-items:flex-start;padding:14px 8px 14px 14px;border-radius:18px;background:var(--panel,#FFFDFA);color:var(--text,#2A1627);border:1px solid var(--line,#E8D9E3);box-shadow:0 2px 6px rgba(42,22,39,.06),0 18px 44px rgba(42,22,39,.16);font:400 15px/1.45 var(--body,system-ui,sans-serif);transition:opacity .22s cubic-bezier(.2,.7,.2,1),transform .22s cubic-bezier(.2,.7,.2,1);pointer-events:none;contain:layout paint}.zz-welcome.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}.zz-welcome .zw-i,.zz-wd .zi{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:color-mix(in srgb,var(--burgundy,#7A1F36) 9%,transparent);color:var(--burgundy,#7A1F36)}.zw-night .zw-i,.zz-wd .zw-night .zi,.zw-evening .zw-i,.zz-wd .zw-evening .zi{background:color-mix(in srgb,var(--plum2,#6B2D5C) 12%,transparent);color:var(--plum2,#6B2D5C)}.zz-welcome svg,.zz-wd .zi svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.zz-welcome .zw-t{flex:1;min-width:0;padding-top:1px}.zz-welcome b{display:inline;font:400 1.125rem/1.25 var(--disp,Georgia,serif);letter-spacing:-.005em;color:var(--text,#2A1627)}.zz-welcome .zw-plan{display:inline-block;margin-left:8px;padding:1px 9px;border-radius:999px;font:600 .6875rem/1.7 var(--body,system-ui,sans-serif);font-style:normal;letter-spacing:.02em;vertical-align:2px;border:1px solid var(--line2,#DCC6D3);color:var(--muted,#735F70)}.zz-welcome .zw-plan[hidden]{display:none}.zz-welcome .zw-paid{border-color:transparent;background:var(--burgundy,#7A1F36);color:#fff}.zz-welcome span{display:block;margin-top:3px;color:var(--muted,#735F70);font-size:.875rem;line-height:1.45;overflow-wrap:anywhere}.zz-welcome span a{color:var(--text,#2A1627);font-weight:600;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:3px}.zz-welcome button{flex:none;display:grid;place-items:center;width:44px;height:44px;margin:-10px -2px -10px 0;border:0;border-radius:50%;background:transparent;color:var(--muted,#735F70);cursor:pointer}.zz-welcome button:hover{background:color-mix(in srgb,var(--text,#2A1627) 6%,transparent);color:var(--text,#2A1627)}.zz-welcome button:focus-visible,.zz-welcome a:focus-visible,.zz-wd button:focus-visible{outline:2px solid var(--burgundy,#7A1F36);outline-offset:2px}:root[data-theme=dark] .zz-welcome,:root[data-theme=dark] .zz-wd .zc{box-shadow:0 2px 6px rgba(0,0,0,.4),0 18px 44px rgba(0,0,0,.5)}:root[data-theme=dark] .zz-welcome .zw-i,:root[data-theme=dark] .zz-wd .zi{color:var(--rosy,#D98FA8);background:color-mix(in srgb,var(--rosy,#D98FA8) 14%,transparent)}.zz-wd{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px;background:rgba(28,18,25,.5);backdrop-filter:blur(2px);opacity:0;transition:opacity .22s cubic-bezier(.2,.7,.2,1)}.zz-wd.on{opacity:1}.zz-wd .zc{width:min(400px,100%);box-sizing:border-box;padding:24px;border-radius:20px;background:var(--panel,#FFFDFA);color:var(--text,#2A1627);border:1px solid var(--line,#E8D9E3);box-shadow:0 2px 6px rgba(42,22,39,.08),0 28px 64px rgba(42,22,39,.24);font:400 1rem/1.5 var(--body,system-ui,sans-serif);transform:translateY(8px) scale(.985);transition:transform .22s cubic-bezier(.2,.7,.2,1)}.zz-wd.on .zc{transform:none}.zz-wd .zi{margin-bottom:12px}.zz-wd h2{margin:0 0 6px;font:400 1.75rem/1.15 var(--disp,Georgia,serif);letter-spacing:-.005em}.zz-wd p{margin:0 0 4px;color:var(--muted,#735F70)}.zz-wd label{display:block;margin:16px 0 6px;font-weight:600;font-size:.9375rem}.zz-wd input{display:block;width:100%;box-sizing:border-box;min-height:48px;padding:0 14px;border-radius:10px;border:1px solid var(--line2,#DCC6D3);background:var(--bg,#F8F3EE);color:var(--text,#2A1627);font:inherit;font-size:1.0625rem}.zz-wd input:focus{outline:none;border-color:var(--burgundy,#7A1F36);box-shadow:0 0 0 3px color-mix(in srgb,var(--burgundy,#7A1F36) 12%,transparent)}.zz-wd button{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;margin-top:14px;border:0;border-radius:10px;background:var(--burgundy,#7A1F36);color:#fff;font:600 .9375rem/1 var(--body,system-ui,sans-serif);cursor:pointer}@media (prefers-reduced-motion:reduce){.zz-welcome,.zz-wd,.zz-wd .zc{transition:opacity .01s}.zz-welcome{transform:translate(-50%,0)}.zz-wd .zc{transform:none}}.zz-welcome .zw-t span a{display:inline-block;padding:10px 0;margin:-10px 0}.zw-bd{position:fixed;inset:0;z-index:69;background:rgba(28,16,24,.3);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);opacity:0;transition:opacity .25s ease}.zw-bd.on{opacity:1}.zz-welcome.zw-center{top:50%;transform:translate(-50%,-46%) scale(.97)}.zz-welcome.zw-center.on{transform:translate(-50%,-50%) scale(1)}.zz-welcome .zw-ex{display:flex;flex-wrap:wrap;align-items:flex-end;gap:8px;margin-top:14px}.zz-welcome .zw-ex label{display:flex;flex-direction:column;gap:6px;font:600 .8125rem/1.2 var(--body,system-ui,sans-serif);color:var(--text,#2A1627)}.zz-welcome .zw-ex input{height:40px;box-sizing:border-box;border:1px solid var(--line2,#DCC6D3);border-radius:10px;padding:0 10px;background:var(--panel,#FFFDFA);color:var(--text,#2A1627);font:400 .95rem var(--body,system-ui,sans-serif)}.zz-welcome .zw-ex button{height:40px;padding:0 16px;border:0;border-radius:10px;background:var(--burgundy,#7A1F36);color:#fff;font:600 .875rem var(--body,system-ui,sans-serif);cursor:pointer}.zz-welcome .zw-ex .zw-no{background:none;color:var(--muted,#735F70);padding:0 6px;text-decoration:underline;text-underline-offset:3px}.zz-welcome .zw-ex p{margin:0;font-size:.875rem;color:var(--muted,#735F70)}@media (prefers-reduced-motion:reduce){.zz-welcome.zw-center,.zz-welcome.zw-center.on{transform:translate(-50%,-50%)}.zw-bd{transition:none}}.zz-welcome .zw-ex label{flex:1 1 100%}.zz-welcome .zw-ex input{width:100%}.zz-welcome .zw-ex .zw-no{white-space:nowrap}.zz-welcome .zw-ex button{width:auto;min-width:0;flex:none}";
 	//#endregion
 	//#region src/legacy/welcome.ts
 	var netInfo = () => navigator.connection;
@@ -123,27 +123,45 @@
 	function banner() {
 		css();
 		const p = part(), f = first();
+		const bd = document.createElement("div");
+		bd.className = "zw-bd";
+		bd.setAttribute("aria-hidden", "true");
 		const d = document.createElement("div");
-		d.className = "zz-welcome zw-" + p;
+		d.className = "zz-welcome zw-center zw-" + p;
 		d.setAttribute("role", "status");
-		d.innerHTML = "<div class=\"zw-i\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\">" + ICON[p] + "</svg></div><div class=\"zw-t\"><b></b><i class=\"zw-plan\" hidden></i><span></span></div><button type=\"button\" aria-label=\"Dismiss\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6 6 18\"/></svg></button>";
+		d.innerHTML = "<div class=\"zw-i\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\">" + ICON[p] + "</svg></div><div class=\"zw-t\"><b></b><i class=\"zw-plan\" hidden></i><span></span></div><button type=\"button\" class=\"zw-x\" aria-label=\"Dismiss\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6 6 18\"/></svg></button>";
 		d.querySelector("b").textContent = greet() + (f ? ", " + f : "");
 		usefulLine(d.querySelector("span"));
 		planBadge(d.querySelector(".zw-plan"));
-		document.body.appendChild(d);
 		let t;
-		const close = () => {
-			clearTimeout(t);
-			d.classList.remove("on");
-			setTimeout(() => {
-				d.remove();
-			}, 400);
-		};
 		const arm = () => {
 			clearTimeout(t);
 			t = setTimeout(close, 7e3);
 		};
-		d.querySelector("button").onclick = close;
+		examAsk(d.querySelector(".zw-t"), arm);
+		document.body.append(bd, d);
+		const away = (e) => {
+			if (e && e.target instanceof Node && d.contains(e.target)) return;
+			if (d.isConnected && performance.now() - t0 > 600) close();
+		};
+		const EV = [
+			"wheel",
+			"touchmove",
+			"keydown"
+		];
+		function close() {
+			clearTimeout(t);
+			d.classList.remove("on");
+			bd.classList.remove("on");
+			window.removeEventListener("hashchange", away);
+			EV.forEach((e) => window.removeEventListener(e, away));
+			setTimeout(() => {
+				d.remove();
+				bd.remove();
+			}, 400);
+		}
+		d.querySelector(".zw-x").addEventListener("click", close);
+		bd.addEventListener("click", close);
 		d.addEventListener("pointerenter", () => {
 			clearTimeout(t);
 		});
@@ -155,21 +173,37 @@
 		d.querySelector("span a")?.addEventListener("click", close);
 		raf2(() => {
 			d.classList.add("on");
+			bd.classList.add("on");
 		});
 		arm();
-		const away = () => {
-			if (d.isConnected && performance.now() - t0 > 600) close();
-		};
 		const t0 = performance.now();
-		window.addEventListener("hashchange", away, { once: true });
-		[
-			"wheel",
-			"touchmove",
-			"keydown"
-		].forEach((e) => window.addEventListener(e, away, {
-			once: true,
-			passive: true
-		}));
+		window.addEventListener("hashchange", away);
+		EV.forEach((e) => window.addEventListener(e, away, { passive: true }));
+	}
+	/** "When is your exam?" inside the greeting while no exam date is set; "Not now" waits a week. */
+	function examAsk(box, arm) {
+		const st = typeof S !== "undefined" ? S : void 0;
+		if (!st || !st.pref || st.pref.exam) return;
+		const later = +(get("zzExamAsk") || 0);
+		if (Date.now() < later) return;
+		const fm = document.createElement("form");
+		fm.className = "zw-ex";
+		fm.innerHTML = "<label>When is your exam?<input type=\"date\" required></label><button type=\"submit\">Save</button><button type=\"button\" class=\"zw-no\">Not now</button>";
+		fm.addEventListener("submit", (e) => {
+			e.preventDefault();
+			const v = fm.querySelector("input").value;
+			if (!v) return;
+			st.pref.exam = v;
+			if (typeof save === "function") save();
+			fm.replaceChildren(Object.assign(document.createElement("p"), { textContent: "Saved. Your countdown and daily plan now use it." }));
+			arm();
+		});
+		fm.querySelector(".zw-no").addEventListener("click", () => {
+			set("zzExamAsk", String(Date.now() + 6048e5));
+			fm.remove();
+			arm();
+		});
+		box.appendChild(fm);
 	}
 	function daily(away) {
 		css();
@@ -214,7 +248,7 @@
 		if (last === null || now - +last >= DAY) {
 			daily(last !== null && now - +last > 2 * DAY);
 			set(K, String(now));
-		} else banner();
+		} else if (!location.hash || /^#\/?(home)?$/.test(location.hash)) banner();
 	}
 	window.addEventListener("load", () => {
 		setTimeout(maybe, 900);

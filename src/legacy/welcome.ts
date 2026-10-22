@@ -71,28 +71,50 @@ function planBadge(el: HTMLElement): void {
   }).catch(() => {});
 }
 
-/* every open: a quiet card at the top (an overlay, so the page never shifts) */
+/* every open: a card in the middle of the screen over a lightly blurred page (owner's choice); it goes on a tap outside,
+   the close button, a new page, a scroll, or after 7 s untouched. When no exam date is set it also asks for one. */
+declare const S: { pref?: { exam?: string } } | undefined; declare const save: (() => void) | undefined;
 function banner(): void {
   css(); const p = part(), f = first();
-  const d = document.createElement('div'); d.className = 'zz-welcome zw-' + p; d.setAttribute('role', 'status');
+  const bd = document.createElement('div'); bd.className = 'zw-bd'; bd.setAttribute('aria-hidden', 'true');
+  const d = document.createElement('div'); d.className = 'zz-welcome zw-center zw-' + p; d.setAttribute('role', 'status');
   d.innerHTML = '<div class="zw-i" aria-hidden="true"><svg viewBox="0 0 24 24">' + ICON[p] + '</svg></div><div class="zw-t"><b></b><i class="zw-plan" hidden></i><span></span></div>' +
-    '<button type="button" aria-label="Dismiss"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>';
+    '<button type="button" class="zw-x" aria-label="Dismiss"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>';
   d.querySelector('b')!.textContent = greet() + (f ? ', ' + f : '');
   usefulLine(d.querySelector('span')!); planBadge(d.querySelector('.zw-plan')!);
-  document.body.appendChild(d);
   let t: ReturnType<typeof setTimeout>;
-  const close = (): void => { clearTimeout(t); d.classList.remove('on'); setTimeout(() => { d.remove(); }, 400); };
   const arm = (): void => { clearTimeout(t); t = setTimeout(close, 7000); };
-  d.querySelector('button')!.onclick = close;
+  examAsk(d.querySelector('.zw-t')!, arm);
+  document.body.append(bd, d);
+  const away = (e?: Event): void => { if (e && e.target instanceof Node && d.contains(e.target)) return; if (d.isConnected && performance.now() - t0 > 600) close(); };
+  const EV = ['wheel', 'touchmove', 'keydown'];
+  function close(): void {
+    clearTimeout(t); d.classList.remove('on'); bd.classList.remove('on');
+    window.removeEventListener('hashchange', away); EV.forEach((e) => window.removeEventListener(e, away));
+    setTimeout(() => { d.remove(); bd.remove(); }, 400);
+  }
+  d.querySelector('.zw-x')!.addEventListener('click', close); bd.addEventListener('click', close);
   d.addEventListener('pointerenter', () => { clearTimeout(t); }); d.addEventListener('pointerleave', arm);
   d.addEventListener('focusin', () => { clearTimeout(t); }); d.addEventListener('focusout', arm);
   d.querySelector('span a')?.addEventListener('click', close);
-  raf2(() => { d.classList.add('on'); }); arm();
-  /* it is a greeting, not a fixture: it goes once you move on (new page, scroll, typing) instead of covering the top bar */
-  const away = (): void => { if (d.isConnected && performance.now() - t0 > 600) close(); };
+  raf2(() => { d.classList.add('on'); bd.classList.add('on'); }); arm();
   const t0 = performance.now();
-  window.addEventListener('hashchange', away, { once: true });
-  ['wheel', 'touchmove', 'keydown'].forEach((e) => window.addEventListener(e, away, { once: true, passive: true }));
+  window.addEventListener('hashchange', away); EV.forEach((e) => window.addEventListener(e, away, { passive: true }));
+}
+/** "When is your exam?" inside the greeting while no exam date is set; "Not now" waits a week. */
+function examAsk(box: Element, arm: () => void): void {
+  const st = typeof S !== 'undefined' ? S : undefined;
+  if (!st || !st.pref || st.pref.exam) return;
+  const later = +(get('zzExamAsk') || 0); if (Date.now() < later) return;
+  const fm = document.createElement('form'); fm.className = 'zw-ex';
+  fm.innerHTML = '<label>When is your exam?<input type="date" required></label><button type="submit">Save</button><button type="button" class="zw-no">Not now</button>';
+  fm.addEventListener('submit', (e) => {
+    e.preventDefault(); const v = (fm.querySelector('input') as HTMLInputElement).value; if (!v) return;
+    st.pref!.exam = v; if (typeof save === 'function') save();
+    fm.replaceChildren(Object.assign(document.createElement('p'), { textContent: 'Saved. Your countdown and daily plan now use it.' })); arm();
+  });
+  fm.querySelector('.zw-no')!.addEventListener('click', () => { set('zzExamAsk', String(Date.now() + 7 * 864e5)); fm.remove(); arm(); });
+  box.appendChild(fm);
 }
 
 /* once a day: a centred card, which also asks for the owner's name */
@@ -112,7 +134,7 @@ function maybe(): void {
   const last = get(K), first = last === null && get('vivaState') === null;
   if (first) { set(K, String(now)); return; }
   if (document.querySelector('.tour,.tut,[data-tour]')) return;
-  if (last === null || now - (+last) >= DAY) { const away = last !== null && now - (+last) > 2 * DAY; daily(away); set(K, String(now)); } else banner();
+  if (last === null || now - (+last) >= DAY) { const away = last !== null && now - (+last) > 2 * DAY; daily(away); set(K, String(now)); } else if (!location.hash || /^#\/?(home)?$/.test(location.hash)) banner();  /* only when the app opens on Home: a shared link to a question opens straight to it */
 }
 window.addEventListener('load', () => { setTimeout(maybe, 900); });
 
