@@ -1,11 +1,18 @@
-# PRODUCTION deploy of the app + API Worker (patholo-zzee-app). Manual only (workflow_dispatch) and only from main.
+# PRODUCTION deploy of the app + API Worker (patholo-zzee-app), only from main. Runs by itself after "Build, test and deploy to
+# GitHub Pages" succeeds for a push to main (so the -app link gets every change that passed the tests, the same commit), and can
+# still be run by hand (workflow_dispatch). A failed or cancelled test run deploys nothing.
 name: Deploy production
-on: { workflow_dispatch: {} }
+on:
+  workflow_dispatch: {}
+  workflow_run:
+    workflows: ['Build, test and deploy to GitHub Pages']
+    types: [completed]
+    branches: [main]
 permissions: { contents: read }
 concurrency: { group: production, cancel-in-progress: false }
 jobs:
   production:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push'))
     runs-on: ubuntu-latest
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -15,7 +22,7 @@ jobs:
       DB: patholo-zzee-prod
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
+        with: { fetch-depth: 0, ref: "${{ github.event.workflow_run.head_sha || github.sha }}" }  # the commit that passed the tests
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - uses: actions/setup-node@v4
