@@ -1586,6 +1586,10 @@ html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.q
 
 /* narrow phones: eight tool icons squeeze to 22px. Calm reading is also in Menu and printing from a phone is rare, so they step aside */
 @media(max-width:380px){#tools [data-t=calm],#tools [data-t=print]{display:none}#tools button{min-width:28px}}
+
+/* App section: the version reads as plain text like other row values, and the status line takes no space until it has something to say */
+#zm-ver{min-width:0;height:auto;padding:0;background:none;font:600 .9rem/1 var(--body);color:var(--muted)}
+.zm-help:empty{display:none}
 /* ===== Textbook reader (panels, sections, key-concept / morphology blocks) ===== */
 .tbhero,.tbch{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--g-mist,var(--panel));padding:22px 20px;margin:0 0 16px}
 .tbhero:before,.tbch:before{content:attr(data-n);position:absolute;right:10px;top:-18px;font:500 7rem/1 var(--disp);color:var(--navy);opacity:.06;pointer-events:none}
@@ -2476,7 +2480,7 @@ html.fx-off :is(.ring,.mx-ring .fg,.qi.o .qi-a,.mx-o.ok,.mx-o.ok b,.mx-o.no,.pb-
 /* C2 the living tissue field behind every page: it fades in over the static texture once it has drawn */
 .fx-bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;opacity:0;transition:opacity 1.2s ease}
 .fx-bg.on{opacity:.94}
-html:not(.fx-full) .fx-bg{display:none}
+html:not(.fx-full) .fx-bg,html.fx-notis .fx-bg{display:none}
 
 /* C17 the Home hero: the tissue drifts over the picture (screen blend: it lights the dark lab, never covers the title) */
 .fx-hero{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;opacity:0;transition:opacity .8s ease}
@@ -3489,7 +3493,7 @@ counts();dash();
   flat:'<path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3M6 6l2.1 2.1M15.9 15.9 18 18M18 6l-2.1 2.1M8.1 15.9 6 18"/>',
   exp:'<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15"/>',imp:'<path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 19.5h15"/>',out:'<path d="M14 4.5h4.5v15H14M10 8l-4 4 4 4M6 12h10"/>',
   me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>',
-  fx:'<path d="M12 3.5v2.5M12 18v2.5M3.5 12H6M18 12h2.5"/><circle cx="12" cy="12" r="4.2"/>',hap:'<rect x="8" y="3.5" width="8" height="17" rx="2"/><path d="M4.5 9v6M19.5 9v6"/>'};
+  tis:'<circle cx="8" cy="9" r="3.2"/><circle cx="16" cy="8" r="2.4"/><circle cx="14.5" cy="16" r="3.4"/>',fx:'<path d="M12 3.5v2.5M12 18v2.5M3.5 12H6M18 12h2.5"/><circle cx="12" cy="12" r="4.2"/>',hap:'<rect x="8" y="3.5" width="8" height="17" rx="2"/><path d="M4.5 9v6M19.5 9v6"/>'};
  const ic=k=>'<svg class="zm-ic" viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>',CH='<svg class="zm-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
  const link=(h,k,t,c)=>'<a class="zm-row" href="'+h+'">'+ic(k)+'<span class="zm-l">'+t+'</span>'+(c?'<span class="zm-v cn" data-c="'+c+'">0</span>':'')+CH+'</a>';
  const sw=(id,k,t)=>'<button type="button" class="zm-row" role="switch" aria-checked="false" id="'+id+'">'+ic(k)+'<span class="zm-l">'+t+'</span><span class="zm-tg" aria-hidden="true"></span></button>';
@@ -3507,7 +3511,7 @@ counts();dash();
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
    sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
    '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
-   sw('zm-hap','hap','Haptics'))+
+   sw('zm-tis','tis','Tissue background')+sw('zm-hap','hap','Haptics'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
   '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
    '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
@@ -3558,6 +3562,9 @@ counts();dash();
  X.querySelectorAll('[data-fx]').forEach(b=>b.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.fx=b.dataset.fx;save();if(window.zzFx)zzFx.apply();sync()});
  $x('.zm-seg-fx').addEventListener('keydown',e=>{if(!/^Arrow(Left|Right|Up|Down)$/.test(e.key))return;e.preventDefault();
   const o=[...X.querySelectorAll('[data-fx]')],i=o.findIndex(b=>b.getAttribute('aria-checked')==='true'),n=o[(i+(/Left|Up/.test(e.key)?o.length-1:1))%o.length];n.click();n.focus()});
+ /* Tissue background: the moving stained-tissue backdrop (fxgl.js); on unless switched off */
+ $x('#zm-tis').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.tissue=s.pref.tissue===false;save();
+  document.documentElement.classList.toggle('fx-notis',s.pref.tissue===false);if(window.zzFxGl)zzFxGl.wake(3000);sync()};
  const hb=$x('#zm-hap');if(!('vibrate' in navigator))hb.hidden=true;
  hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
  function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':de.dataset.tone==='sepia'?'sepia':'light'}
@@ -3565,7 +3572,7 @@ counts();dash();
   on(qb,bd.classList.contains('quiz'));on($x('#zm-focus'),bd.classList.contains('focus'));on(cb,bd.classList.contains('calm'));cb.hidden=!tool('calm');
   const t=tool('ink');on(ib,t&&t.getAttribute('aria-pressed')==='true');ib.hidden=!t;
   on(fb,app||fsOn());on(rb,de.classList.contains('zz-flat'));
-  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'full';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false)}
+  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'full';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false);on($x('#zm-tis'),p.tissue!==false)}
   const th=theme();X.querySelectorAll('[data-th]').forEach(b=>{const c=b.dataset.th===th;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});
   const f=+((S.pref&&S.pref.fs)||1);$x('#zm-fsv').textContent=Math.round(f*100)+'%';$x('[data-st=fm]').disabled=f<=.8;$x('[data-st=fp]').disabled=f>=1.6;
  }
@@ -5374,8 +5381,10 @@ function field(cv){
 /* ---------- C2: the page backdrop. Very low contrast (a few percent from the page colour), so text stays readable ---------- */
 let bg=null;
 function bgPal(){const B=col('var(--bg)','#F8F3EE'),pl=col('var(--plum)','#6B2D5C'),ro=col('var(--rosy)','#D98FA8');return[B,mix(B,ro,.13),mix(B,pl,.05),mix(B,pl,.11)]}
+const tissue=()=>{const s=st();return !(s&&s.pref&&s.pref.tissue===false)};   /* Menu > Display > Tissue background */
+de.classList.toggle('fx-notis',!tissue());
 function backdrop(){
- if(bg||!full())return;
+ if(bg||!full()||!tissue())return;
  const cv=document.createElement('canvas');cv.className='fx-bg';cv.setAttribute('aria-hidden','true');document.body.prepend(cv);
  const F=field(cv);if(!F){cv.remove();return}
  let pal=bgPal(),lastF=0,shown=false,vy=0,py=scrollY;
@@ -5383,7 +5392,7 @@ function backdrop(){
  addEventListener('resize',()=>{size();wake(2000)});
  new MutationObserver(()=>{pal=bgPal();lastF=0;wake(1500)}).observe(de,{attributes:true,attributeFilter:['data-theme','data-tone','class']});
  bg={cv,step(t){
-  if(!full()){cv.style.opacity='0';return false}
+  if(!full()||!tissue()){cv.style.opacity='0';return false}
   const live=!slow&&t<awake;if(!live&&lastF)return false;
   if(lastF&&t-lastF<66)return true;lastF=t;   /* ~15 fps is plenty for a slow drift */
   const d=scrollY-py;py=scrollY;vy=vy*.85+d*.15;
@@ -5479,7 +5488,7 @@ const idle=window.requestIdleCallback||(f=>setTimeout(f,300));
 addEventListener('load',()=>idle(boot,{timeout:2500}));
 addEventListener('hashchange',()=>{if(home())setTimeout(()=>{heroInit();colony()},120)});
 const hv=$('#v-home');if(hv)new MutationObserver(()=>{if(home())setTimeout(()=>{heroInit();colony()},60)}).observe(hv,{childList:true,subtree:false});
-window.zzFxGl={wake,sys,isSlow:()=>slow};
+window.zzFxGl={wake:ms=>{if(tissue())backdrop();wake(ms)},sys,isSlow:()=>slow};
 }catch(e){}})();
 
 /* ===== fx2.js: cinematic stage 2, the smaller touches (styles in fx.css) =====

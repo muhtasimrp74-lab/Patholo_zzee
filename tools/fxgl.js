@@ -62,8 +62,10 @@ function field(cv){
 /* ---------- C2: the page backdrop. Very low contrast (a few percent from the page colour), so text stays readable ---------- */
 let bg=null;
 function bgPal(){const B=col('var(--bg)','#F8F3EE'),pl=col('var(--plum)','#6B2D5C'),ro=col('var(--rosy)','#D98FA8');return[B,mix(B,ro,.13),mix(B,pl,.05),mix(B,pl,.11)]}
+const tissue=()=>{const s=st();return !(s&&s.pref&&s.pref.tissue===false)};   /* Menu > Display > Tissue background */
+de.classList.toggle('fx-notis',!tissue());
 function backdrop(){
- if(bg||!full())return;
+ if(bg||!full()||!tissue())return;
  const cv=document.createElement('canvas');cv.className='fx-bg';cv.setAttribute('aria-hidden','true');document.body.prepend(cv);
  const F=field(cv);if(!F){cv.remove();return}
  let pal=bgPal(),lastF=0,shown=false,vy=0,py=scrollY;
@@ -71,7 +73,7 @@ function backdrop(){
  addEventListener('resize',()=>{size();wake(2000)});
  new MutationObserver(()=>{pal=bgPal();lastF=0;wake(1500)}).observe(de,{attributes:true,attributeFilter:['data-theme','data-tone','class']});
  bg={cv,step(t){
-  if(!full()){cv.style.opacity='0';return false}
+  if(!full()||!tissue()){cv.style.opacity='0';return false}
   const live=!slow&&t<awake;if(!live&&lastF)return false;
   if(lastF&&t-lastF<66)return true;lastF=t;   /* ~15 fps is plenty for a slow drift */
   const d=scrollY-py;py=scrollY;vy=vy*.85+d*.15;
@@ -167,5 +169,5 @@ const idle=window.requestIdleCallback||(f=>setTimeout(f,300));
 addEventListener('load',()=>idle(boot,{timeout:2500}));
 addEventListener('hashchange',()=>{if(home())setTimeout(()=>{heroInit();colony()},120)});
 const hv=$('#v-home');if(hv)new MutationObserver(()=>{if(home())setTimeout(()=>{heroInit();colony()},60)}).observe(hv,{childList:true,subtree:false});
-window.zzFxGl={wake,sys,isSlow:()=>slow};
+window.zzFxGl={wake:ms=>{if(tissue())backdrop();wake(ms)},sys,isSlow:()=>slow};
 }catch(e){}})();

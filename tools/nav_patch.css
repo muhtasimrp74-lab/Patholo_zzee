@@ -115,3 +115,7 @@
 
 /* narrow phones: eight tool icons squeeze to 22px. Calm reading is also in Menu and printing from a phone is rare, so they step aside */
 @media(max-width:380px){#tools [data-t=calm],#tools [data-t=print]{display:none}#tools button{min-width:28px}}
+
+/* App section: the version reads as plain text like other row values, and the status line takes no space until it has something to say */
+#zm-ver{min-width:0;height:auto;padding:0;background:none;font:600 .9rem/1 var(--body);color:var(--muted)}
+.zm-help:empty{display:none}
