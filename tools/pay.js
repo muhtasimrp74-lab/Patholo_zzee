@@ -52,11 +52,28 @@
       var WHAT = { QNA: 'Every viva and written answer', MCQ: 'All MCQ chapters with explanations', TEXTBOOK: 'Every Robbins chapter, offline too',
         ALL: 'Questions, MCQs and the textbook' + (save ? ' \u00b7 save ' + money(save, all.currency) : '') };
       var order = (all ? [all] : []).concat(j.bundles.filter(function (b) { return b.id !== 'ALL'; }));  // best value first
-      body.innerHTML = '<h2 id="zz-pay-h">Choose a plan</h2><p>One year of access. Buying again adds another year.</p><ul class="zz-plans">' + order.map(function (b) {
+      body.innerHTML = '<h2 id="zz-pay-h">Choose a plan</h2>' +
+        '<div class="zz-trial"><p><b>Free trial: 1 month, everything</b></p><label for="zz-tcode">Trial code</label><input id="zz-tcode" autocomplete="off" autocapitalize="off" spellcheck="false">' +
+        '<button type="button" id="zz-tgo" class="zz-b zz-p zz-full">Start free trial</button><p id="zz-tmsg" class="zz-st" role="status"></p></div>' +
+        '<p>One year of access. Buying again adds another year.</p><ul class="zz-plans">' + order.map(function (b) {
         return '<li><button type="button" class="zz-plan' + (b.id === 'ALL' ? ' zz-best' : '') + '" data-b="' + esc(b.id) + '">' + (b.id === 'ALL' ? '<i class="zz-badge">Best value</i>' : '') +
           '<span class="zz-pt"><b>' + esc(NAMES[b.id] || b.name) + '</b><small>' + esc(WHAT[b.id] || '') + '</small></span><span class="zz-pr">' + money(cents(b), b.currency) + '</span></button></li>';
       }).join('') + '</ul><p id="zz-pay-msg" class="zz-st" role="status"></p>' + LEGAL;
       var h2 = body.querySelector('h2'); h2.tabIndex = -1; h2.focus();  // content was replaced: keep focus in the dialog
+      var tgo = body.querySelector('#zz-tgo'), tin = body.querySelector('#zz-tcode'), tmsg = body.querySelector('#zz-tmsg');
+      tgo.onclick = function () {   // free trial: 30 days of everything, once per account
+        tgo.disabled = true; tmsg.classList.remove('zz-bad'); tmsg.textContent = 'One moment\u2026';
+        api('trial', { method: 'POST', body: JSON.stringify({ code: tin.value.trim() }) }).then(function (r) {
+          tgo.disabled = false;
+          if (r._status === 200 && r.ok) {
+            tmsg.textContent = 'Free trial active until ' + new Date(r.expires_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) + '.';
+            dispatchEvent(new CustomEvent('zz:auth')); return;
+          }
+          tmsg.classList.add('zz-bad');
+          tmsg.textContent = r.error === 'trial_used' ? 'You have already used the free trial.' : r._status === 429 ? 'Too many tries. Try again later.' : r.error === 'bad_code' ? 'That code is not valid.' : 'Could not start the trial. Try again.';
+        }, function () { tgo.disabled = false; tmsg.classList.add('zz-bad'); tmsg.textContent = window.zzNetMsg ? zzNetMsg() : 'Could not start the trial. Try again.'; });
+      };
+      tin.onkeydown = function (e) { if (e.key === 'Enter') tgo.click(); };
       body.querySelectorAll('button[data-b]').forEach(function (btn) {
         btn.onclick = function () {
           var msg = body.querySelector('#zz-pay-msg');

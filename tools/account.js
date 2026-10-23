@@ -73,6 +73,8 @@
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { g(idToken); }); return j; }); },
     password: function (login, pw, create) { return post(create ? 'auth/register' : 'auth/login', { login: login, password: pw, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && j.error === 'device_limit' && window.zzDeviceLimit) zzDeviceLimit(j, function () { window.zzSignIn && zzSignIn(); }); return j; }); },
+    signup: function (f) { return post('auth/register', Object.assign({}, f, { device_id: device(), device_name: dname() })).then(function (j) {
+      if (j._status === 200) set(j); return j; }); },
     otpStart: function (phone) { return post('auth/otp/start', { phone: phone }); },
     otpVerify: function (phone, code) { return post('auth/otp/verify', { phone: phone, code: code, device_id: device(), device_name: dname() }).then(function (j) {
       if (j._status === 200) set(j); else if (j._status === 409 && window.zzDeviceLimit) zzDeviceLimit(j, function () { window.zzSignIn && zzSignIn(); }); return j; }); },
@@ -165,4 +167,60 @@
     dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', '');
     var f = dlg.querySelector('#zz-login'); if (f) f.focus();
   };
+
+  // ---- first open: an account is needed before the app opens. The form cannot be closed (no close button, Esc or backdrop);
+  // "Have an account? Sign in" opens the sign-in dialog, and signing in there clears it. Offline, the app opens and the form
+  // comes back on the next online open. Automated browsers (tests) are not gated, so the test suite keeps running. ----
+  var gate;
+  function showGate() {
+    if (gate) { if (!gate.open) gate.showModal ? gate.showModal() : gate.setAttribute('open', ''); return; }
+    gate = el('dialog', { id: 'zz-signup', class: 'zz-dlg', 'aria-labelledby': 'zz-su-h' });
+    var F = [['name', 'Name', 'text', 'name', 60, 'Your full name'], ['phone', 'Phone number', 'tel', 'tel', 20, '01XXXXXXXXX'], ['email', 'Email', 'email', 'email', 254, 'you@example.com'],
+      ['college', 'Medical college name', 'text', 'organization', 80, 'Your medical college'], ['session', 'Session', 'text', 'off', 20, 'For example 2022-23'], ['password', 'Password', 'password', 'new-password', 128, 'At least 8 characters']];
+    gate.append(el('h2', { id: 'zz-su-h' }, 'Create your account'), el('p', {}, 'One account keeps your progress and opens what your plan includes.'));
+    var inp = {};
+    F.forEach(function (x) { var i = el('input', { id: 'zz-su-' + x[0], type: x[2], autocomplete: x[3], maxlength: String(x[4]), placeholder: x[5], required: '' });
+      if (x[0] === 'phone') i.setAttribute('inputmode', 'tel'); inp[x[0]] = i; gate.append(el('label', { for: i.id }, x[1]), i); });
+    var go = el('button', { type: 'button', class: 'zz-b zz-p zz-full' }, 'Create account'), have = el('button', { type: 'button', class: 'zz-b zz-q zz-full' }, 'Have an account? Sign in');
+    var msg = el('p', { class: 'zz-st', role: 'status' }); gate.append(go, have, msg);
+    var say = function (t, bad) { msg.textContent = t; msg.classList.toggle('zz-bad', !!bad); };
+    gate.addEventListener('cancel', function (e) { e.preventDefault(); });   // Esc does nothing
+    gate.addEventListener('click', function (e) { if (e.target === gate) e.stopPropagation(); }, true);   // nor does a tap outside
+    var MSG = { account_exists: 'This email or phone already has an account. Sign in instead.', bad_name: 'Enter your name (2 to 60 characters).', bad_phone: 'Enter a mobile number like 01712345678.',
+      bad_email: 'Enter a valid email address.', bad_college: 'Enter your medical college (2 to 80 characters).', bad_session: 'Enter your session, for example 2022-23 (4 to 20 characters).',
+      weak_password: 'Use at least 8 characters for the password.' };
+    var v = function (k) { return inp[k].value.replace(/\s+/g, ' ').trim(); };
+    var check = function () {
+      if (v('name').length < 2) return ['name', 'bad_name'];
+      if (!/^[+\d][\d\s-]{8,18}$/.test(v('phone'))) return ['phone', 'bad_phone'];
+      if (!/^[^\s@]{1,64}@[^\s@]{1,190}\.[^\s@]{2,}$/.test(v('email'))) return ['email', 'bad_email'];
+      if (v('college').length < 2) return ['college', 'bad_college'];
+      if (v('session').length < 4) return ['session', 'bad_session'];
+      if (inp.password.value.length < 8) return ['password', 'weak_password'];
+      return null;
+    };
+    var FIELD = { bad_name: 'name', bad_phone: 'phone', bad_email: 'email', bad_college: 'college', bad_session: 'session', weak_password: 'password' };
+    go.onclick = function () {
+      var bad = check(); if (bad) { say(MSG[bad[1]], true); inp[bad[0]].focus(); return; }
+      go.disabled = true; say('Creating your account\u2026');
+      zzAccount.signup({ name: v('name'), phone: v('phone'), email: v('email'), college: v('college'), session: v('session'), password: inp.password.value }).then(function (j) {
+        go.disabled = false;
+        if (j._status === 200) { try { (window.zzStore || localStorage).setItem('zzName', v('name').split(' ')[0]); } catch (e) {} inp.password.value = ''; say(''); gate.close(); return; }
+        if (FIELD[j.error]) inp[FIELD[j.error]].focus();
+        say(j._status === 429 ? 'Too many tries. Try again in ' + Math.max(1, Math.ceil((j._retry || 60) / 60)) + ' min.' : MSG[j.error] || 'Could not create the account. Try again.', true);
+      }, function () { go.disabled = false; if (navigator.onLine === false) gate.close(); else say(window.zzNetMsg(), true); });
+    };
+    inp.password.onkeydown = function (e) { if (e.key === 'Enter') go.click(); };
+    have.onclick = function () {
+      gate.close(); window.zzSignIn();
+      var si = document.getElementById('zz-signin'), back = function () { si.removeEventListener('close', back); if (!zzAccount.signedIn() && navigator.onLine !== false) setTimeout(showGate, 0); };
+      if (si) si.addEventListener('close', back);
+    };
+    document.body.appendChild(gate);
+    gate.showModal ? gate.showModal() : gate.setAttribute('open', '');
+    inp.name.focus();
+  }
+  function gateCheck() { if (!navigator.webdriver && navigator.onLine !== false && !zzAccount.signedIn()) showGate(); }
+  var ready = function () { (window.zzAuthReady || Promise.resolve()).then(gateCheck, gateCheck); };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ready); else ready();
 })();
