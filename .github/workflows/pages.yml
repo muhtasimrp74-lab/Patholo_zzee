@@ -27,6 +27,7 @@ jobs:
           python -m playwright install --with-deps chromium
           npm ci --no-audit --no-fund  # pinned vite for the bundle-is-current test
       - name: Restore private sources and build (full page for tests, gated index.html for the site)
+        env: { CONTENT_KEY: '${{ secrets.CONTENT_KEY }}' }
         run: sh tools/restore_private.sh
       - name: Fail if the committed index.html is stale
         run: git diff --exit-code -- index.html content/ || (echo "::error::index.html in the repo differs from a fresh build. Run 'python3 tools/build.py' and commit it." && exit 1)

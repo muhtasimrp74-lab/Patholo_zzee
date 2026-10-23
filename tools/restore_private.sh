@@ -6,4 +6,5 @@ set -eu
 cd "$(dirname "$0")/.."
 SHA=$(grep -m1 -oE 'Pre-Stage-1 source SHA: [0-9a-f]+' docs/gating-progress.md | awk '{print $4}')
 git archive "$SHA" $(cat tools/private_paths.txt) | tar -x
+python3 tools/content_crypt.py unpack   # answers edited since Stage 1 (encrypted overlay; needs CONTENT_KEY)
 python3 tools/build.py

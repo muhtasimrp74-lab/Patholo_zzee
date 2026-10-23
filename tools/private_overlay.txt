@@ -1,0 +1,3 @@
+tools/answers.md
+tools/answers_by_id.json
+tools/answers_build_log.md
