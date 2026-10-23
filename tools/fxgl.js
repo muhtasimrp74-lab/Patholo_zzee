@@ -86,6 +86,7 @@ let hero=null;
 function heroPal(){const pl=col('var(--plum)','#6B2D5C'),ro=col('var(--rosy)','#D98FA8');return[[.08,.03,.07],mix([.08,.03,.07],ro,.55),mix([.08,.03,.07],pl,.5),mix(pl,[.15,.05,.2],.3)]}
 function heroInit(){
  const host=$('#v-home .nh-bn-pic');if(!host||!full()||host.querySelector('.fx-hero'))return;
+ if(getComputedStyle(host).position==='static')host.style.position='relative';   /* desktop already positions the picture behind the title: leave it */
  const cv=document.createElement('canvas');cv.className='fx-hero';cv.setAttribute('aria-hidden','true');host.append(cv);
  const F=field(cv);if(!F){cv.remove();return}
  if(hero&&hero.F)hero.F.lose();
