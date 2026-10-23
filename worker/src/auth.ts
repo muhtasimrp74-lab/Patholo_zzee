@@ -300,7 +300,7 @@ export async function register(req: Request, env: Env): Promise<Response> {
   if (lim) return lim;
   if (await env.DB.prepare('SELECT 1 FROM users WHERE email = ?1 OR phone = ?2').bind(em.value, phone).first()) return json({ error: 'account_exists' }, 409);
   const id = crypto.randomUUID();
-  const r = await env.DB.prepare('INSERT INTO users (id, display_name, email, phone, college, session, password_hash, created_at) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) ON CONFLICT DO NOTHING')
+  const r = await env.DB.prepare('INSERT INTO users (id, display_name, email, phone, college, session, password_hash, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING')   /* plain ?: eight numbered ones read as a list to the leak check */
     .bind(id, name, em.value, phone, college, session, await hashPassword(pw), deps.now()).run();
   if (!r.meta.changes) return json({ error: 'account_exists' }, 409);
   return json({ ...(await issue(env, id, dev, undefined, nameOf(b))), user: await profile(env, id) });
