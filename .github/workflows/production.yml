@@ -28,6 +28,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
       - name: Restore private sources, build, assemble the site (gated index + free sample only)
+        env: { CONTENT_KEY: '${{ secrets.CONTENT_KEY }}' }
         run: |
           sh tools/restore_private.sh
           mkdir _site && cp -r index.html annot welcome.js zz-store.js sw.js manifest.json icons fonts terms.html privacy.html refund.html _site/
