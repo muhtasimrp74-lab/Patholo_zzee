@@ -339,15 +339,18 @@ TR_OLD = 'Blood Vessels</a></div></div><div class="phones">'
 assert TR_OLD in s
 s = s.replace(TR_OLD, 'Blood Vessels</a></div><p class="trust"><span>Works offline</span><span>Private, stays on your device</span><span>No sign-up</span></p></div><div class="phones">', 1)
 SITE = 'https://muhtasimrp74-lab.github.io/Patholo_zzee/'
-DESC = '%d pathology questions (viva and written), in NMC order (Robbins 11th). Practice mode, bookmarks, notes and handwriting. Works offline.' % total
+# links shared on WhatsApp and elsewhere point at the main student link (the Cloudflare app), and its picture is the current hero;
+# a new file name (og-2026.jpg) makes WhatsApp and Facebook fetch it fresh instead of reusing the old cached picture
+SHARE = 'https://patholo-zzee-app.muhtasimrp74.workers.dev/'
+DESC = '%d pathology questions with answers (viva and written), MCQs and the Robbins textbook, in NMC order. Works offline.' % total
 META = ('<meta name="description" content="%s"><link rel="canonical" href="%s">'
  '<meta property="og:type" content="website"><meta property="og:site_name" content="Patholo_zzee">'
- '<meta property="og:title" content="Patholo_zzee: Pathology Viva Questions"><meta property="og:description" content="%s">'
- '<meta property="og:url" content="%s"><meta property="og:image" content="%sicons/og-image.png">'
+ '<meta property="og:title" content="Patholo_zzee: pathology learning for viva and written exams"><meta property="og:description" content="%s">'
+ '<meta property="og:url" content="%s"><meta property="og:image" content="%sicons/og-2026.jpg"><meta property="og:image:type" content="image/jpeg">'
  '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
- '<meta property="og:image:alt" content="Patholo_zzee. Pathology viva questions. Read. Recall. Answer.">'
- '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Patholo_zzee: Pathology Viva Questions">'
- '<meta name="twitter:description" content="%s"><meta name="twitter:image" content="%sicons/og-image.png">') % (DESC, SITE, DESC, SITE, SITE, DESC, SITE)
+ '<meta property="og:image:alt" content="Patholo_zzee: pathology learning for viva and written exams. Read. Recall. Answer.">'
+ '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Patholo_zzee: pathology learning for viva and written exams">'
+ '<meta name="twitter:description" content="%s"><meta name="twitter:image" content="%sicons/og-2026.jpg">') % (DESC, SHARE, DESC, SHARE, SHARE, DESC, SHARE)
 s = s.replace('<meta name="referrer" content="no-referrer">', '<meta name="referrer" content="no-referrer">' + META, 1)
 assert 'og:image' in s
 for _t in OLD_CH:  # breadcrumb of the original topic pages: show the Robbins chapter, not 01..15
