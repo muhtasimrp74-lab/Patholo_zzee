@@ -1,5 +1,5 @@
 import { getChunk } from './chunks.ts';
-import { google, otpStart, otpVerify, refresh, logout, me, devices, removeDevice, register, passwordLogin } from './auth.ts';
+import { google, otpStart, otpVerify, refresh, logout, me, devices, removeDevice, register, passwordLogin, trial } from './auth.ts';
 import { checkout, ipn, payReturn, order, bundleList, submitTrx, myOrders, adminList, adminAct, manual } from './pay.ts';
 import { upload, pull } from './sync.ts';
 import { json, preflight, withCors, type Env } from './http.ts';
@@ -13,7 +13,7 @@ export default {
     const m = /^\/api\/chunks\/([a-z0-9-]{1,40})\.json$/.exec(url.pathname);
     const post: Record<string, (r: Request, e: Env) => Promise<Response>> = {
       '/api/auth/google': google, '/api/auth/otp/start': otpStart, '/api/auth/otp/verify': otpVerify,
-      '/api/auth/refresh': refresh, '/api/auth/logout': logout, '/api/pay/checkout': checkout, '/api/sync/upload': upload, '/api/auth/register': register, '/api/auth/login': passwordLogin, '/api/pay/manual': submitTrx,
+      '/api/auth/refresh': refresh, '/api/auth/logout': logout, '/api/pay/checkout': checkout, '/api/sync/upload': upload, '/api/auth/register': register, '/api/auth/login': passwordLogin, '/api/pay/manual': submitTrx, '/api/trial': trial,
     };
     const o = /^\/api\/pay\/orders\/([\w-]{1,64})$/.exec(url.pathname);
     if (url.pathname === '/api/pay/ipn' && req.method === 'POST') return ipn(req, env); // gateway server: no CORS, form body

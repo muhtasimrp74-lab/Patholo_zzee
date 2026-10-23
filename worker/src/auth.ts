@@ -110,7 +110,7 @@ export const revokeFamily = (env: Env, family: string, now = deps.now()) =>
   env.DB.prepare('UPDATE sessions SET revoked_at = ?2 WHERE family_id = ?1 AND revoked_at IS NULL').bind(family, now).run();
 
 async function profile(env: Env, id: string) {
-  return env.DB.prepare('SELECT id, display_name, email, phone, created_at FROM users WHERE id = ?1').bind(id).first();
+  return env.DB.prepare('SELECT id, display_name, email, phone, college, session, trial_used_at, created_at FROM users WHERE id = ?1').bind(id).first();
 }
 
 async function body(req: Request): Promise<Record<string, unknown>> {
@@ -269,19 +269,64 @@ async function loginLimited(req: Request, env: Env, login: string): Promise<Resp
   return wait ? json({ error: 'rate_limited' }, 429, { 'Retry-After': String(wait) }) : null;
 }
 
-/** POST /api/auth/register {login, password, device_id, device_name?} */
+/** POST /api/auth/register {name, phone, email, college, session, password, device_id, device_name?}
+ *  (an older client may still send {login, password}: that keeps working). */
 export async function register(req: Request, env: Env): Promise<Response> {
-  const b = await body(req), dev = deviceOf(b), l = normalizeLogin(b.login), pw = String(b.password ?? '');
-  if (!dev || !l) return json({ error: 'bad_login' }, 400);
+  const b = await body(req), dev = deviceOf(b), pw = String(b.password ?? '');
+  if (!dev) return json({ error: 'bad_login' }, 400);
+  if (b.login !== undefined && b.email === undefined && b.phone === undefined) {   // the old one-field form
+    const l = normalizeLogin(b.login);
+    if (!l) return json({ error: 'bad_login' }, 400);
+    if (pw.length < 8 || pw.length > 128) return json({ error: 'weak_password' }, 400);
+    const lim = await loginLimited(req, env, l.value);
+    if (lim) return lim;
+    if (await env.DB.prepare(`SELECT 1 FROM users WHERE ${l.field} = ?1`).bind(l.value).first()) return json({ error: 'account_exists' }, 409);
+    const id = crypto.randomUUID(), name = l.field === 'email' ? l.value.split('@')[0].slice(0, 40) : 'User ' + l.value.slice(-4);
+    const r = await env.DB.prepare(`INSERT INTO users (id, display_name, ${l.field}, password_hash, created_at) VALUES (?1, ?2, ?3, ?4, ?5) ON CONFLICT (${l.field}) DO NOTHING`)
+      .bind(id, name, l.value, await hashPassword(pw), deps.now()).run();
+    if (!r.meta.changes) return json({ error: 'account_exists' }, 409);
+    return json({ ...(await issue(env, id, dev, undefined, nameOf(b))), user: await profile(env, id) });
+  }
+  const txt = (k: string, max: number) => String(b[k] ?? '').replace(/\s+/g, ' ').trim().slice(0, max);
+  const name = txt('name', 60), college = txt('college', 80), session = txt('session', 20);
+  const phone = normalizePhone(String(b.phone ?? '')), em = normalizeLogin(String(b.email ?? '').trim());
+  if (name.length < 2) return json({ error: 'bad_name' }, 400);
+  if (!phone) return json({ error: 'bad_phone' }, 400);
+  if (!em || em.field !== 'email') return json({ error: 'bad_email' }, 400);
+  if (college.length < 2) return json({ error: 'bad_college' }, 400);
+  if (session.length < 4) return json({ error: 'bad_session' }, 400);
   if (pw.length < 8 || pw.length > 128) return json({ error: 'weak_password' }, 400);
-  const lim = await loginLimited(req, env, l.value);
+  const lim = await loginLimited(req, env, em.value);
   if (lim) return lim;
-  if (await env.DB.prepare(`SELECT 1 FROM users WHERE ${l.field} = ?1`).bind(l.value).first()) return json({ error: 'account_exists' }, 409);
-  const id = crypto.randomUUID(), name = l.field === 'email' ? l.value.split('@')[0].slice(0, 40) : 'User ' + l.value.slice(-4);
-  const r = await env.DB.prepare(`INSERT INTO users (id, display_name, ${l.field}, password_hash, created_at) VALUES (?1, ?2, ?3, ?4, ?5) ON CONFLICT (${l.field}) DO NOTHING`)
-    .bind(id, name, l.value, await hashPassword(pw), deps.now()).run();
+  if (await env.DB.prepare('SELECT 1 FROM users WHERE email = ?1 OR phone = ?2').bind(em.value, phone).first()) return json({ error: 'account_exists' }, 409);
+  const id = crypto.randomUUID();
+  const r = await env.DB.prepare('INSERT INTO users (id, display_name, email, phone, college, session, password_hash, created_at) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) ON CONFLICT DO NOTHING')
+    .bind(id, name, em.value, phone, college, session, await hashPassword(pw), deps.now()).run();
   if (!r.meta.changes) return json({ error: 'account_exists' }, 409);
   return json({ ...(await issue(env, id, dev, undefined, nameOf(b))), user: await profile(env, id) });
+}
+
+/** POST /api/trial {code}: one free month of everything per account. 5 wrong codes an hour per user and per IP. */
+export async function trial(req: Request, env: Env): Promise<Response> {
+  const c = await auth(req, env);
+  if (!c) return json({ error: 'unauthorized' }, 401);
+  const b = await body(req), code = String(b.code ?? '').trim(), want = env.TRIAL_CODE ?? 'MFree_zze', now = deps.now();
+  const uk = 'trial:u:' + c.sub, ik = 'trial:ip:' + (await ipKey(req, env)).slice(7), HOUR = 3600e3, ws = Math.floor(now / HOUR) * HOUR;
+  const tries = async (k: string) => (await env.DB.prepare('SELECT count FROM rate_limits WHERE key = ?1 AND window_start = ?2').bind(k, ws).first<{ count: number }>())?.count ?? 0;
+  if ((await tries(uk)) >= 5 || (await tries(ik)) >= 5) return json({ error: 'rate_limited' }, 429, { 'Retry-After': String(Math.ceil((ws + HOUR - now) / 1000)) });
+  const [x, y] = [await sha256(code), await sha256(want)];   // equal-length digests, compared without an early exit
+  let d = 0; for (let i = 0; i < x.length; i++) d |= x.charCodeAt(i) ^ y.charCodeAt(i);
+  if (d !== 0) { await limited(env, uk, 5, HOUR, now); await limited(env, ik, 5, HOUR, now); return json({ error: 'bad_code' }, 400); }
+  const u = await env.DB.prepare('UPDATE users SET trial_used_at = ?1 WHERE id = ?2 AND trial_used_at IS NULL').bind(now, c.sub).run();
+  if (!u.meta.changes) return json({ error: 'trial_used' }, 409);
+  const exp = now + 30 * DAY;
+  await env.DB.batch(['qna', 'mcq', 'textbook'].map((e) => env.DB.prepare(
+    `INSERT INTO entitlements (user_id, entitlement, expires_at, source, note, created_at, updated_at) VALUES (?1, ?2, ?3, 'admin', 'trial', ?4, ?4)
+     ON CONFLICT (user_id, entitlement) DO UPDATE SET
+       source = CASE WHEN excluded.expires_at > entitlements.expires_at THEN 'admin' ELSE entitlements.source END,
+       note = CASE WHEN excluded.expires_at > entitlements.expires_at THEN 'trial' ELSE entitlements.note END,
+       expires_at = MAX(entitlements.expires_at, excluded.expires_at), updated_at = excluded.updated_at`).bind(c.sub, e, exp, now)));
+  return json({ ok: true, expires_at: exp });
 }
 
 /** POST /api/auth/login {login, password, device_id, device_name?} — the same answer for a wrong login or password. */
