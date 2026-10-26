@@ -170,8 +170,8 @@ class Browser(unittest.TestCase):
         plant('zzT2', "localStorage.vivaState='{not json'"); pg.reload(); self.ready(pg); self.assertEqual(self.errs, [])
     # ---- swipe pager (v199+): footer, reading tools, back-to-top and nav shadow must follow the pane that scrolls ----
     TABS = ('#/', '#/questions', '#/qa', '#/mcqs', '#/textbook', '#/menu')
-    def phone(self, h='#/', touch=True, w=390, ht=844):
-        pg = self.b.new_page(viewport={'width': w, 'height': ht}, has_touch=touch, is_mobile=touch); self.errs = []
+    def phone(self, h='#/', touch=True, w=390, ht=844, still=False):
+        pg = self.b.new_page(viewport={'width': w, 'height': ht}, has_touch=touch, is_mobile=touch, reduced_motion='reduce' if still else 'no-preference'); self.errs = []
         pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.goto(URL + h); pg.wait_for_timeout(900); return pg
     def test_pager_footer_sits_at_the_end_of_each_tab_pane(self):
@@ -204,14 +204,17 @@ class Browser(unittest.TestCase):
                   return {on:t.width>0&&t.left>=0&&t.right<=innerWidth,hit:ov(n&&n.querySelector('.logo'))||ov(n&&n.querySelector('.pill'))}}""")
                 self.assertTrue(r['on'], '%s at %d: the reading tools strip is off screen' % (h, w)); self.assertFalse(r['hit'], '%s at %d: the reading tools overlap the logo or the menu pill' % (h, w))
             pg.close()
+    def settle(self, pg):  # a smooth scroll to the top can take longer than a fixed wait on a loaded CI machine
+        try: pg.wait_for_function("()=>zzScroller().scrollTop===0", polling=100, timeout=6000)
+        except Exception: pass
     def test_back_to_top_ring_and_footer_button_scroll_the_pane(self):
-        pg = self.phone('#/questions')
+        pg = self.phone('#/questions', still=True)   # instant jumps: this checks where the buttons take you, not the animation
         pg.evaluate("zzScroller().scrollTop=1800"); pg.wait_for_timeout(500)
         self.assertTrue(pg.evaluate("document.querySelector('.fx-top').classList.contains('on')"), 'the back-to-top ring must appear when the pane is scrolled')
-        pg.click('.fx-top'); pg.wait_for_timeout(1500); self.assertEqual(pg.evaluate("zzScroller().scrollTop"), 0)
+        pg.click('.fx-top'); self.settle(pg); self.assertEqual(pg.evaluate("zzScroller().scrollTop"), 0)
         pg.evaluate("async()=>{const s=zzScroller();for(let i=0;i<10;i++){s.scrollTop=s.scrollHeight;await new Promise(r=>setTimeout(r,150))}}")
         self.assertGreater(pg.evaluate("zzScroller().scrollTop"), 0)
-        pg.click('footer.sf .sf-top'); pg.wait_for_timeout(1500); self.assertEqual(pg.evaluate("zzScroller().scrollTop"), 0, "the footer's Back to top must scroll the pane")
+        pg.click('footer.sf .sf-top'); self.settle(pg); self.assertEqual(pg.evaluate("zzScroller().scrollTop"), 0, "the footer's Back to top must scroll the pane")
     def test_nav_shadow_follows_pane_scroll(self):
         pg = self.phone('#/questions')
         pg.evaluate("zzScroller().scrollTop=300"); pg.wait_for_timeout(400)
@@ -219,9 +222,10 @@ class Browser(unittest.TestCase):
         pg.evaluate("zzScroller().scrollTop=0"); pg.wait_for_timeout(400)
         self.assertFalse(pg.evaluate("document.documentElement.classList.contains('zz-scrolled')"))
     def test_trackpad_swipe_changes_tab_and_moves_the_footer(self):
-        pg = self.phone('#/questions', touch=False); cdp = pg.context.new_cdp_session(pg)
-        cdp.send('Input.synthesizeScrollGesture', {'x': 300, 'y': 300, 'xDistance': -300, 'yDistance': 0, 'speed': 1500, 'gestureSourceType': 'mouse'})
-        pg.wait_for_function("()=>location.hash==='#/qa'", timeout=5000); pg.wait_for_timeout(400)
+        pg = self.phone('#/questions', touch=False)
+        pg.mouse.move(300, 300)
+        pg.mouse.wheel(390, 0)   # a decisive horizontal trackpad swipe (one pane wide) arrives as a horizontal wheel event
+        pg.wait_for_function("()=>location.hash==='#/qa'", polling=100, timeout=6000); pg.wait_for_timeout(400)
         self.assertTrue(pg.evaluate("document.getElementById('v-qa').contains(document.querySelector('footer.sf'))"))
     def test_alias_migration_keeps_progress_and_notes(self):
         al = json.loads(re.search(r'const QALIAS=(\{.*?\});', rd('index.html')).group(1)); a, b = next(iter(al.items()))
