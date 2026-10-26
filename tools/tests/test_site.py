@@ -116,12 +116,22 @@ class Browser(unittest.TestCase):
     @classmethod
     def setUpClass(cls): cls.p = sync_playwright().start(); cls.b = cls.p.chromium.launch()
     @classmethod
-    def tearDownClass(cls): cls.b.close(); cls.p.stop()
-    def page(self, h='#/'):
+    def tearDownClass(cls):
+        cls.b.close(); cls.p.stop()
+        if getattr(cls, 'srv', None): cls.srv.shutdown(); cls.srv.server_close()
+    @classmethod
+    def http_url(cls):  # the same page over http: Chromium can lose a file:// localStorage write made just before a reload (not over http)
+        if not getattr(cls, 'srv', None):
+            import http.server, threading, functools
+            class Q(http.server.SimpleHTTPRequestHandler):
+                def log_message(self, *a): pass
+            cls.srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(Q, directory=ROOT)); threading.Thread(target=cls.srv.serve_forever, daemon=True).start()
+        return 'http://127.0.0.1:%d/index.full.html' % cls.srv.server_address[1]
+    def page(self, h='#/', base=None):
         pg = self.b.new_page(); self.errs = []; self.dialogs = []
         pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")  # returning visitor: no first-run welcome dialog over the page
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
-        pg.goto(URL + h); pg.wait_for_timeout(500); return pg
+        pg.goto((base or URL) + h); pg.wait_for_timeout(500); return pg
     def imp(self, pg, obj):
         pg.evaluate("t=>imp(new File([t],'b.json'))", obj if isinstance(obj, str) else json.dumps(obj)); pg.wait_for_timeout(900); self.ready(pg)
     def ready(self, pg):
@@ -141,27 +151,92 @@ class Browser(unittest.TestCase):
         pg.evaluate("()=>{Ink.load=async()=>{throw new Error('boom')}}"); self.imp(pg, {"bm": ["q9"], "ink": {}})
         self.assertEqual(self.state(pg), before); self.assertTrue(any('could not be restored' in d for d in self.dialogs), self.dialogs)
     def test_import_keeps_previous_state_copy(self):
-        pg = self.page(); pg.evaluate("()=>{S.bm=['q1'];save()}"); before = self.state(pg); self.imp(pg, {"bm": ["q7"]})
+        pg = self.page(base=self.http_url()); pg.evaluate("()=>{S.bm=['q1'];save()}"); before = self.state(pg); self.imp(pg, {"bm": ["q7"]})
         self.assertEqual(pg.evaluate("()=>localStorage.vivaStatePrev"), before)
     def test_backup_round_trip(self):
-        pg = self.page(); pg.evaluate("()=>{S.bm=['q3'];S.fav=['q4'];S.learned=['q5'];S.notes={q3:'<b>x</b>'};S.streak={n:3,last:'2026-10-11'};save()}")
+        pg = self.page(base=self.http_url()); pg.evaluate("()=>{S.bm=['q3'];S.fav=['q4'];S.learned=['q5'];S.notes={q3:'<b>x</b>'};S.streak={n:3,last:'2026-10-11'};save()}")
         dump = pg.evaluate("()=>JSON.parse(JSON.stringify(Object.assign({},S,{annot:Annot.dump()})))")
         pg.evaluate("()=>{S.bm=[];S.fav=[];S.learned=[];S.notes={};save()}"); self.imp(pg, dump)
         s = json.loads(self.state(pg)); self.assertEqual((s['bm'], s['fav'], s['learned'], s['notes'], s['streak']), (['q3'], ['q4'], ['q5'], {'q3': '<b>x</b>'}, {'n': 3, 'last': '2026-10-11'}))
+    def plant(self, pg, tag, js):  # run js once, before the app's scripts, on the next load of pg
+        pg.add_init_script("if(!sessionStorage.getItem('%s')){sessionStorage.setItem('%s','1');%s}" % (tag, tag, js))
     def test_corrupt_saved_state_does_not_break_the_page(self):
-        pg = self.page(); pg.evaluate("()=>{localStorage.vivaState=JSON.stringify({bm:['q1'],learned:'oops',notes:5,fav:{a:1}})}"); pg.reload(); self.ready(pg)
+        # the saved state is planted before the app's scripts run on the reload: a localStorage write made by the old document just before
+        # reload() can fail to reach the next one in Chromium (seen in CI and locally, about 1 run in 3), which lost the bookmark and failed this test
+        plant = lambda tag, js: pg.add_init_script("if(!sessionStorage.getItem('%s')){sessionStorage.setItem('%s','1');%s}" % (tag, tag, js))
+        pg = self.page(); plant('zzT1', "localStorage.vivaState=JSON.stringify({bm:['q1'],learned:'oops',notes:5,fav:{a:1}})"); pg.reload(); self.ready(pg)
         self.assertEqual(self.errs, []); s = pg.evaluate("()=>S"); self.assertEqual(s['bm'], ['q1']); self.assertEqual(s['learned'], []); self.assertEqual(s['notes'], {})
         self.assertIn('oops', pg.evaluate("()=>localStorage.vivaStateCorrupt"))
-        pg.evaluate("()=>localStorage.vivaState='{not json'"); pg.reload(); self.ready(pg); self.assertEqual(self.errs, [])
+        plant('zzT2', "localStorage.vivaState='{not json'"); pg.reload(); self.ready(pg); self.assertEqual(self.errs, [])
+    # ---- swipe pager (v199+): footer, reading tools, back-to-top and nav shadow must follow the pane that scrolls ----
+    TABS = ('#/', '#/questions', '#/qa', '#/mcqs', '#/textbook', '#/menu')
+    def phone(self, h='#/', touch=True, w=390, ht=844, still=False):
+        pg = self.b.new_page(viewport={'width': w, 'height': ht}, has_touch=touch, is_mobile=touch, reduced_motion='reduce' if still else 'no-preference'); self.errs = []
+        pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")
+        pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.goto(URL + h); pg.wait_for_timeout(900); return pg
+    def test_pager_footer_sits_at_the_end_of_each_tab_pane(self):
+        pg = self.phone()
+        for h in self.TABS:
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)
+            r = pg.evaluate("""()=>{const f=document.querySelector('footer.sf'),v=document.querySelector('.view:not([hidden])'),fr=f.getBoundingClientRect();
+              const kids=[...v.children].filter(e=>e!==f&&e.getClientRects().length),last=kids[kids.length-1];
+              const h1=[...v.querySelectorAll('h1')].find(x=>x.getClientRects().length),hr=h1&&h1.getBoundingClientRect();
+              return {inPane:v.contains(f),below:!last||fr.top>=last.getBoundingClientRect().bottom-1,
+                h1:!!(hr&&fr.left<hr.right&&hr.left<fr.right&&fr.top<hr.bottom&&hr.top<fr.bottom)}}""")
+            self.assertTrue(r['inPane'], h + ': the footer must scroll with the tab pane, not sit in body flow behind the fixed pager')
+            self.assertTrue(r['below'], h + ': the footer must come after the last content block'); self.assertFalse(r['h1'], h + ': the footer overlaps the heading')
+            fb, bb = pg.evaluate("""async()=>{const s=zzScroller();for(let i=0;i<10;i++){s.scrollTop=s.scrollHeight;await new Promise(r=>setTimeout(r,200))}
+              const f=document.querySelector('footer.sf').getBoundingClientRect(),b=document.getElementById('bnav');return [f.bottom,b.getBoundingClientRect().top]}""")
+            self.assertLessEqual(fb, bb + 2, h + ': at the end of the pane the footer must sit above the bottom bar, not behind it')
+            pg.evaluate("zzScroller().scrollTop=0")
+        pg.evaluate("location.hash='#/01'"); pg.wait_for_timeout(700)
+        self.assertEqual(pg.evaluate("document.querySelector('footer.sf').parentElement===document.body"), True, 'a sub-page keeps the footer in body flow')
+        pg.evaluate("location.hash='#/menu'"); pg.wait_for_timeout(700)
+        self.assertEqual(pg.evaluate("document.querySelector('#v-menu').contains(document.querySelector('footer.sf'))"), True, 'back on a tab the footer returns to its pane')
+        self.assertEqual(self.errs, [])
+    def test_reading_tools_stay_on_screen_on_every_tab(self):
+        for w, ht, touch in ((390, 844, True), (1440, 900, False)):
+            pg = self.phone(touch=touch, w=w, ht=ht)
+            for h in self.TABS[1:] + self.TABS[:1]:
+                pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)
+                r = pg.evaluate("""()=>{const t=document.getElementById('tools').getBoundingClientRect(),n=document.querySelector('.view:not([hidden]) .nav');
+                  const ov=e=>{if(!e)return false;const b=e.getBoundingClientRect();return t.left<b.right&&b.left<t.right&&t.top<b.bottom&&b.top<t.bottom};
+                  return {on:t.width>0&&t.left>=0&&t.right<=innerWidth,hit:ov(n&&n.querySelector('.logo'))||ov(n&&n.querySelector('.pill'))}}""")
+                self.assertTrue(r['on'], '%s at %d: the reading tools strip is off screen' % (h, w)); self.assertFalse(r['hit'], '%s at %d: the reading tools overlap the logo or the menu pill' % (h, w))
+            pg.close()
+    def settle(self, pg):  # a smooth scroll to the top can take longer than a fixed wait on a loaded CI machine
+        try: pg.wait_for_function("()=>zzScroller().scrollTop===0", polling=100, timeout=6000)
+        except Exception: pass
+    def test_back_to_top_ring_and_footer_button_scroll_the_pane(self):
+        pg = self.phone('#/questions', still=True)   # instant jumps: this checks where the buttons take you, not the animation
+        pg.evaluate("zzScroller().scrollTop=1800"); pg.wait_for_timeout(500)
+        self.assertTrue(pg.evaluate("document.querySelector('.fx-top').classList.contains('on')"), 'the back-to-top ring must appear when the pane is scrolled')
+        pg.click('.fx-top'); self.settle(pg); self.assertEqual(pg.evaluate("zzScroller().scrollTop"), 0)
+        pg.evaluate("async()=>{const s=zzScroller();for(let i=0;i<10;i++){s.scrollTop=s.scrollHeight;await new Promise(r=>setTimeout(r,150))}}")
+        self.assertGreater(pg.evaluate("zzScroller().scrollTop"), 0)
+        pg.click('footer.sf .sf-top'); self.settle(pg); self.assertEqual(pg.evaluate("zzScroller().scrollTop"), 0, "the footer's Back to top must scroll the pane")
+    def test_nav_shadow_follows_pane_scroll(self):
+        pg = self.phone('#/questions')
+        pg.evaluate("zzScroller().scrollTop=300"); pg.wait_for_timeout(400)
+        self.assertTrue(pg.evaluate("document.documentElement.classList.contains('zz-scrolled')"))
+        pg.evaluate("zzScroller().scrollTop=0"); pg.wait_for_timeout(400)
+        self.assertFalse(pg.evaluate("document.documentElement.classList.contains('zz-scrolled')"))
+    def test_swipe_that_settles_on_the_next_pane_changes_tab_and_moves_the_footer(self):
+        pg = self.phone('#/questions', touch=False)
+        # leave the track where a finished swipe leaves it, one pane on (CI's headless Chromium does not animate wheel or gesture
+        # scrolling of the snap track); the pager must then update the hash and carry the footer into the new pane
+        pg.evaluate("()=>{const T=document.getElementById('zz-pager');T.scrollLeft=T.clientWidth*2}")
+        pg.wait_for_function("()=>location.hash==='#/qa'", polling=100, timeout=6000); pg.wait_for_timeout(400)
+        self.assertTrue(pg.evaluate("document.getElementById('v-qa').contains(document.querySelector('footer.sf'))"))
     def test_alias_migration_keeps_progress_and_notes(self):
         al = json.loads(re.search(r'const QALIAS=(\{.*?\});', rd('index.html')).group(1)); a, b = next(iter(al.items()))
-        pg = self.page(); pg.evaluate("([a])=>{localStorage.vivaState=JSON.stringify({fav:[a],bm:[a],notes:{[a]:'keep me'},learned:[a],sr:{[a]:{d:1}},streak:{n:0,last:''},recent:[],pref:{}})}", [a]); pg.reload(); self.ready(pg)
+        pg = self.page(); self.plant(pg, 'zzA1', "const a=%s;localStorage.vivaState=JSON.stringify({fav:[a],bm:[a],notes:{[a]:'keep me'},learned:[a],sr:{[a]:{d:1}},streak:{n:0,last:''},recent:[],pref:{}})" % (json.dumps(a))); pg.reload(); self.ready(pg)  # planted before load: see test_corrupt_saved_state
         s = pg.evaluate("()=>S")
         for k in ('bm', 'learned', 'fav'): self.assertIn(b, s[k]); self.assertNotIn(a, s[k])
         self.assertIn('keep me', s['notes'].get(b, '')); self.assertIn(b, s['sr'])
     def test_alias_migration_merges_notes_without_loss(self):
         al = json.loads(re.search(r'const QALIAS=(\{.*?\});', rd('index.html')).group(1)); a, b = next(iter(al.items()))
-        pg = self.page(); pg.evaluate("([a,b])=>{localStorage.vivaState=JSON.stringify({fav:[],bm:[],notes:{[a]:'old note',[b]:'new note'},learned:[],sr:{},streak:{n:0,last:''},recent:[],pref:{}})}", [a, b]); pg.reload(); self.ready(pg)
+        pg = self.page(); self.plant(pg, 'zzA2', "const a=%s,b=%s;localStorage.vivaState=JSON.stringify({fav:[],bm:[],notes:{[a]:'old note',[b]:'new note'},learned:[],sr:{},streak:{n:0,last:''},recent:[],pref:{}})" % (json.dumps(a), json.dumps(b))); pg.reload(); self.ready(pg)  # planted before load: see test_corrupt_saved_state
         n = pg.evaluate("()=>S.notes")[b]; self.assertIn('old note', n); self.assertIn('new note', n)
     def test_ink_follows_merged_question_on_load_and_import(self):
         al = json.loads(re.search(r'const QALIAS=(\{.*?\});', rd('index.html')).group(1)); a, b = next(iter(al.items())); stroke = {'t': 'p', 'c': '#C4573A', 's': 2, 'p': [1, 1, 5, 5]}

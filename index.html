@@ -4867,15 +4867,26 @@ function make(){
  ['pointerup','touchend','pointercancel'].forEach(e=>T.addEventListener(e,()=>{touching=false;setTimeout(rest,260)},{passive:true}));
 }
 function adopt(){for(let i=0;i<6;i++){const v=V(i);if(!v||v.parentNode===T)continue;let nx=null;for(let j=i+1;j<6;j++){const w=V(j);if(w&&w.parentNode===T){nx=w;break}}T.insertBefore(v,nx);v.classList.add('zz-pane')}}
-function teardown(){if(!T)return;[...T.children].forEach(v=>{v.classList.remove('zz-pane');v.removeAttribute('inert');v.removeAttribute('aria-hidden');T.parentNode.insertBefore(v,T)});T.remove();T=null;act=-1;de.classList.remove('zz-pg')}
+/* footer.sf follows the page: inside the active pane while the pager is on, after the last view in body flow otherwise */
+let FT=null;
+function place(){
+ const f=document.querySelector('footer.sf')||FT;if(!f)return;FT=f;
+ const v=T&&de.classList.contains('zz-pg')?T.querySelector(':scope>.view:not([hidden])'):null;
+ if(v){if(f.parentNode!==v)v.appendChild(f);return}
+ if(f.parentNode===document.body)return;
+ const vs=[...document.body.children].filter(e=>e===T||e.classList.contains('view')),l=vs[vs.length-1];
+ if(l)l.after(f);else document.body.appendChild(f)
+}
+function teardown(){if(!T)return;de.classList.remove('zz-pg');place();[...T.children].forEach(v=>{v.classList.remove('zz-pane');v.removeAttribute('inert');v.removeAttribute('aria-hidden');T.parentNode.insertBefore(v,T)});T.remove();T=null;act=-1;de.classList.remove('zz-pg')}
 const bar=()=>{const b=document.getElementById('bnav');if(!b)return;const cs=getComputedStyle(b);if(cs.display==='none'){if(!document.body.classList.contains('mx-live'))de.style.setProperty('--zz-pgb','0px');return}
  de.style.setProperty('--zz-pgb',Math.max(0,Math.round(innerHeight-b.getBoundingClientRect().top))+'px')};
 function sync(){
  if(!want()){teardown();return}
  const v=document.querySelector('.view:not([hidden])'),i=bare()?tabOf(v):-1;   /* only a tab's own page; its sub-pages (reader, sessions, deep links) scroll the window as before */
- if(i<0){if(T)de.classList.remove('zz-pg');return}
+ if(i<0){if(T)de.classList.remove('zz-pg');place();return}
  make();adopt();
  if(!de.classList.contains('zz-pg')){de.classList.add('zz-pg');if(scrollY)scrollTo({top:0,left:0,behavior:'instant'})}
+ place();
  const P=[...T.children],k=P.indexOf(v);
  P.forEach(p=>{if(p===v){p.removeAttribute('inert');p.removeAttribute('aria-hidden')}else{p.setAttribute('inert','');p.setAttribute('aria-hidden','true')}});
  last[TABS[i]]=location.hash||'#/';
@@ -4909,7 +4920,7 @@ function settle(){
  act=k;if(window.zzFx)zzFx.haptic(6);
  location.hash=last[TABS[i]]||HREF[i];
 }
-window.zzPager={sync,on:()=>!!T&&de.classList.contains('zz-pg'),
+window.zzPager={sync,foot:place,on:()=>!!T&&de.classList.contains('zz-pg'),
  keep:v=>!!T&&want()&&bare()&&tabOf(v)>=0,
  tabs:h=>{if(!T||!de.classList.contains('zz-pg'))return false;const q=(h||'').replace(/^#\/?/,'').split('/'),k=q[0];if(q[1])return false;return ['','home','questions','qa','topics','mcqs','textbook','menu'].includes(k)}};
 addEventListener('hashchange',sync);
@@ -5341,13 +5352,14 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 		let q = 0;
 		function place() {
 			q = 0;
-			const n = [...document.querySelectorAll(".nav")].find((x) => x.offsetParent !== null);
+			const av = document.querySelector(".view:not([hidden])"), n = av && av.querySelector(".nav") || [...document.querySelectorAll(".nav")].find((x) => x.offsetParent !== null);
 			if (!n) return;
 			const lg = n.querySelector(".logo"), pl = n.querySelector(".pill");
 			if (!lg || !pl) return;
-			const l = lg.getBoundingClientRect(), p = pl.getBoundingClientRect();
-			T.style.right = Math.max(4, Math.round(innerWidth - p.left + 10)) + "px";
-			T.style.maxWidth = Math.max(80, Math.round(p.left - 10 - l.right - 10)) + "px";
+			const ox = av && av.contains(n) ? av.getBoundingClientRect().left : 0;
+			const l = lg.getBoundingClientRect(), pL = pl.getBoundingClientRect().left - ox, lR = l.right - ox;
+			T.style.right = Math.max(4, Math.round(innerWidth - pL + 10)) + "px";
+			T.style.maxWidth = Math.max(80, Math.round(pL - 10 - lR - 10)) + "px";
 		}
 		const go = () => {
 			if (!q) q = requestAnimationFrame(place);
@@ -5450,10 +5462,11 @@ function build(){
  const p=el('p','sf-legal');p.textContent='\u00A9 '+new Date().getFullYear()+' Muhtasim Ahmed. For exam revision only; not medical or clinical advice, so check against your prescribed textbooks. Robbins and Cotran Pathologic Basis of Disease belongs to its authors and publisher, and this site is not affiliated with them or with the NMC.';
  bt.appendChild(p);
  const up=el('button','sf-top','Back to top \u2191');up.type='button';
- up.addEventListener('click',()=>{const rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;window.scrollTo({top:0,behavior:rm?'auto':'smooth'})});
+ up.addEventListener('click',()=>{const rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;(window.zzScroller?zzScroller():window).scrollTo({top:0,behavior:rm?'auto':'smooth'})});
  bt.appendChild(up);f.appendChild(bt);
  const old=document.querySelector('body > footer');
  if(old)old.replaceWith(f);else{const v=[...document.querySelectorAll('body > .view')].pop();if(v)v.after(f);else document.body.appendChild(f)}
+ if(window.zzPager&&zzPager.foot)zzPager.foot();   /* pager on: move it into the active pane */
 }
 build();addEventListener('load',build);
 /* keep the footer's bottom padding equal to the real height of the fixed bottom bar */
@@ -6021,11 +6034,14 @@ document.addEventListener('click',e=>{
 /* C16: back to top, with a ring that fills as you go down the page */
 const top=document.createElement('button');top.type='button';top.className='fx-top';top.setAttribute('aria-label','Back to top');
 top.innerHTML='<svg viewBox="0 0 44 44" aria-hidden="true"><circle class="t" cx="22" cy="22" r="19"/><circle class="f" cx="22" cy="22" r="19" pathLength="100"/><path d="M15 24l7-7 7 7M22 17v12"/></svg>';
-document.body.append(top);top.onclick=()=>scrollTo({top:0,behavior:full()?'smooth':'auto'});
+document.body.append(top);
+const scr=()=>window.zzScroller?zzScroller():(document.scrollingElement||de);   /* the swipe pager scrolls a pane, not the window */
+top.onclick=()=>scr().scrollTo({top:0,behavior:full()?'smooth':'auto'});
 let tq=0;
-function topSync(){tq=0;const h=de.scrollHeight-innerHeight,y=scrollY,show=y>600&&h>innerHeight*1.5;top.classList.toggle('on',show);
+function topSync(){tq=0;const s=scr(),pane=s!==document.scrollingElement&&s!==de,h=pane?s.scrollHeight-s.clientHeight:de.scrollHeight-innerHeight,y=pane?s.scrollTop:scrollY,show=y>600&&h>innerHeight*1.5;top.classList.toggle('on',show);
  if(show)top.style.setProperty('--sp',String(Math.max(0,Math.min(100,y/h*100))))}
-addEventListener('scroll',()=>{if(!tq)tq=requestAnimationFrame(topSync)},{passive:true});
+addEventListener('scroll',()=>{if(!tq)tq=requestAnimationFrame(topSync)},{passive:true,capture:true});
+addEventListener('hashchange',()=>setTimeout(()=>{if(!tq)tq=requestAnimationFrame(topSync)},200));
 
 /* C5: main buttons lean toward the pointer (desktop) */
 const MAG='.nh-go,.zz-b,.mx-go,.zq-go,.pb-act a';let mq=null,mx=0,my=0;
@@ -6499,7 +6515,10 @@ const SND={click(a){const o=a.createOscillator(),g=a.createGain();o.frequency.va
  thunk(a){const o=a.createOscillator(),g=a.createGain();o.frequency.setValueAtTime(190,a.currentTime);o.frequency.exponentialRampToValueAtTime(90,a.currentTime+.12);env(a,g,.12,.004,.14);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.2)},
  tick(a){const o=a.createOscillator(),g=a.createGain();o.type='triangle';o.frequency.value=900;env(a,g,.05,.001,.02);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.04)}};
 window.zzSound=p=>{if(!on())return;try{const a=ctx(),k=typeof p==='string'?p:Array.isArray(p)?(p[0]<15?'wash':'thunk'):'click';(SND[k]||SND.click)(a)}catch(e){}};
-let lt='';setInterval(()=>{const t=document.querySelector('#mx-timer.low');if(!t||!document.body.classList.contains('mx-live'))return;if(t.textContent!==lt){lt=t.textContent;zzSound('tick')}},250);
+/* the tick poll runs only during a live MCQ session with sound on (it used to poll every 250 ms on every page) */
+let lt='',iv=0;const tick=()=>{const t=document.querySelector('#mx-timer.low');if(t&&t.textContent!==lt){lt=t.textContent;zzSound('tick')}};
+const arm=()=>{const want=on()&&document.body.classList.contains('mx-live');if(want&&!iv)iv=setInterval(tick,250);else if(!want&&iv){clearInterval(iv);iv=0}};
+new MutationObserver(arm).observe(document.body,{attributes:true,attributeFilter:['class']});arm();
 }catch(e){}})();
 
 /* ===== type.js (19): type in motion, Full level only, never on answer text.
@@ -6815,14 +6834,15 @@ document.addEventListener('click',e=>{
 },true);
 /* 7. header shadow after scrolling */
 let sc=false;
-const onS=()=>{sc=false;de.classList.toggle('zz-scrolled',scrollY>8)};
-addEventListener('scroll',()=>{if(!sc){sc=true;requestAnimationFrame(onS)}},{passive:true});onS();
+const onS=()=>{sc=false;const s=window.zzScroller?zzScroller():null;de.classList.toggle('zz-scrolled',(s?s.scrollTop:scrollY)>8)};
+addEventListener('scroll',()=>{if(!sc){sc=true;requestAnimationFrame(onS)}},{passive:true,capture:true});onS();
+addEventListener('hashchange',()=>setTimeout(onS,200));
 /* 8. gentle banner parallax, desktop only */
 if(matchMedia('(min-width:641px) and (hover:hover)').matches){
  de.classList.add('zz-par');let pf=false;
  const par=()=>{pf=false;const img=document.querySelector('.view:not([hidden]) .pb-pic img,.view:not([hidden]) .nh-bn-pic img');if(!img)return;
   const t=img.parentElement.getBoundingClientRect().top;img.style.setProperty('--zzp',Math.max(0,Math.min(18,-t*.12)).toFixed(1)+'px')};
- addEventListener('scroll',()=>{if(!pf){pf=true;requestAnimationFrame(par)}},{passive:true});
+ addEventListener('scroll',()=>{if(!pf){pf=true;requestAnimationFrame(par)}},{passive:true,capture:true});
 }
 /* 6. numbers count up and bars fill the first time they come into view (once per visit) */
 const done=new Set(),seen=new WeakSet();

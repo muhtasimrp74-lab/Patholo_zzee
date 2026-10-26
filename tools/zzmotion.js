@@ -29,14 +29,15 @@ document.addEventListener('click',e=>{
 },true);
 /* 7. header shadow after scrolling */
 let sc=false;
-const onS=()=>{sc=false;de.classList.toggle('zz-scrolled',scrollY>8)};
-addEventListener('scroll',()=>{if(!sc){sc=true;requestAnimationFrame(onS)}},{passive:true});onS();
+const onS=()=>{sc=false;const s=window.zzScroller?zzScroller():null;de.classList.toggle('zz-scrolled',(s?s.scrollTop:scrollY)>8)};
+addEventListener('scroll',()=>{if(!sc){sc=true;requestAnimationFrame(onS)}},{passive:true,capture:true});onS();
+addEventListener('hashchange',()=>setTimeout(onS,200));
 /* 8. gentle banner parallax, desktop only */
 if(matchMedia('(min-width:641px) and (hover:hover)').matches){
  de.classList.add('zz-par');let pf=false;
  const par=()=>{pf=false;const img=document.querySelector('.view:not([hidden]) .pb-pic img,.view:not([hidden]) .nh-bn-pic img');if(!img)return;
   const t=img.parentElement.getBoundingClientRect().top;img.style.setProperty('--zzp',Math.max(0,Math.min(18,-t*.12)).toFixed(1)+'px')};
- addEventListener('scroll',()=>{if(!pf){pf=true;requestAnimationFrame(par)}},{passive:true});
+ addEventListener('scroll',()=>{if(!pf){pf=true;requestAnimationFrame(par)}},{passive:true,capture:true});
 }
 /* 6. numbers count up and bars fill the first time they come into view (once per visit) */
 const done=new Set(),seen=new WeakSet();
