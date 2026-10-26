@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # pinned: ubuntu-latest moved to Ubuntu 26 and the pinned Playwright browser install fails there
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }  # full history: gated sources are restored from the pre-Stage-1 commit
@@ -71,7 +71,7 @@ jobs:
   deploy:
     needs: build
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # pinned: ubuntu-latest moved to Ubuntu 26 and the pinned Playwright browser install fails there
     permissions:
       pages: write
       id-token: write
