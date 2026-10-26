@@ -20,15 +20,26 @@ function make(){
  ['pointerup','touchend','pointercancel'].forEach(e=>T.addEventListener(e,()=>{touching=false;setTimeout(rest,260)},{passive:true}));
 }
 function adopt(){for(let i=0;i<6;i++){const v=V(i);if(!v||v.parentNode===T)continue;let nx=null;for(let j=i+1;j<6;j++){const w=V(j);if(w&&w.parentNode===T){nx=w;break}}T.insertBefore(v,nx);v.classList.add('zz-pane')}}
-function teardown(){if(!T)return;[...T.children].forEach(v=>{v.classList.remove('zz-pane');v.removeAttribute('inert');v.removeAttribute('aria-hidden');T.parentNode.insertBefore(v,T)});T.remove();T=null;act=-1;de.classList.remove('zz-pg')}
+/* footer.sf follows the page: inside the active pane while the pager is on, after the last view in body flow otherwise */
+let FT=null;
+function place(){
+ const f=document.querySelector('footer.sf')||FT;if(!f)return;FT=f;
+ const v=T&&de.classList.contains('zz-pg')?T.querySelector(':scope>.view:not([hidden])'):null;
+ if(v){if(f.parentNode!==v)v.appendChild(f);return}
+ if(f.parentNode===document.body)return;
+ const vs=[...document.body.children].filter(e=>e===T||e.classList.contains('view')),l=vs[vs.length-1];
+ if(l)l.after(f);else document.body.appendChild(f)
+}
+function teardown(){if(!T)return;de.classList.remove('zz-pg');place();[...T.children].forEach(v=>{v.classList.remove('zz-pane');v.removeAttribute('inert');v.removeAttribute('aria-hidden');T.parentNode.insertBefore(v,T)});T.remove();T=null;act=-1;de.classList.remove('zz-pg')}
 const bar=()=>{const b=document.getElementById('bnav');if(!b)return;const cs=getComputedStyle(b);if(cs.display==='none'){if(!document.body.classList.contains('mx-live'))de.style.setProperty('--zz-pgb','0px');return}
  de.style.setProperty('--zz-pgb',Math.max(0,Math.round(innerHeight-b.getBoundingClientRect().top))+'px')};
 function sync(){
  if(!want()){teardown();return}
  const v=document.querySelector('.view:not([hidden])'),i=bare()?tabOf(v):-1;   /* only a tab's own page; its sub-pages (reader, sessions, deep links) scroll the window as before */
- if(i<0){if(T)de.classList.remove('zz-pg');return}
+ if(i<0){if(T)de.classList.remove('zz-pg');place();return}
  make();adopt();
  if(!de.classList.contains('zz-pg')){de.classList.add('zz-pg');if(scrollY)scrollTo({top:0,left:0,behavior:'instant'})}
+ place();
  const P=[...T.children],k=P.indexOf(v);
  P.forEach(p=>{if(p===v){p.removeAttribute('inert');p.removeAttribute('aria-hidden')}else{p.setAttribute('inert','');p.setAttribute('aria-hidden','true')}});
  last[TABS[i]]=location.hash||'#/';
@@ -62,7 +73,7 @@ function settle(){
  act=k;if(window.zzFx)zzFx.haptic(6);
  location.hash=last[TABS[i]]||HREF[i];
 }
-window.zzPager={sync,on:()=>!!T&&de.classList.contains('zz-pg'),
+window.zzPager={sync,foot:place,on:()=>!!T&&de.classList.contains('zz-pg'),
  keep:v=>!!T&&want()&&bare()&&tabOf(v)>=0,
  tabs:h=>{if(!T||!de.classList.contains('zz-pg'))return false;const q=(h||'').replace(/^#\/?/,'').split('/'),k=q[0];if(q[1])return false;return ['','home','questions','qa','topics','mcqs','textbook','menu'].includes(k)}};
 addEventListener('hashchange',sync);

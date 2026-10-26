@@ -181,10 +181,13 @@ window.nhRender=(function(){let q=0;return function(){if(q)return;q=1;requestAni
 
 /* ---- put the reading tools (Ink / Theme / A- / A+ / Focus / Print) in the top bar: right next to "Start revising", inside the free space after the logo ---- */
 (function(){const T=document.getElementById('tools');if(!T)return;let q=0;
- function place(){q=0;const n=[...document.querySelectorAll<HTMLElement>('.nav')].find(x=>x.offsetParent!==null);if(!n)return;
+ /* under the swipe pager the hidden tab panes are display:block (visibility:hidden), so offsetParent no longer identifies the visible
+    .nav: take the active view's own nav, and measure it relative to its pane (a pane sits at its own x inside the sliding track) */
+ function place(){q=0;const av=document.querySelector<HTMLElement>('.view:not([hidden])'),n=(av&&av.querySelector<HTMLElement>('.nav'))||[...document.querySelectorAll<HTMLElement>('.nav')].find(x=>x.offsetParent!==null);if(!n)return;
   const lg=n.querySelector('.logo'),pl=n.querySelector('.pill');if(!lg||!pl)return;
-  const l=lg.getBoundingClientRect(),p=pl.getBoundingClientRect();
-  T!.style.right=Math.max(4,Math.round(innerWidth-p.left+10))+'px';T!.style.maxWidth=Math.max(80,Math.round(p.left-10-l.right-10))+'px'}
+  const ox=av&&av.contains(n)?av.getBoundingClientRect().left:0;
+  const l=lg.getBoundingClientRect(),p=pl.getBoundingClientRect(),pL=p.left-ox,lR=l.right-ox;
+  T!.style.right=Math.max(4,Math.round(innerWidth-pL+10))+'px';T!.style.maxWidth=Math.max(80,Math.round(pL-10-lR-10))+'px'}
  const go=()=>{if(!q)q=requestAnimationFrame(place)};
  addEventListener('resize',go);addEventListener('hashchange',()=>{go();setTimeout(go,120)});addEventListener('load',go);
  new MutationObserver(go).observe(T,{childList:true});

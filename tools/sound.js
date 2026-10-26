@@ -13,5 +13,8 @@ const SND={click(a){const o=a.createOscillator(),g=a.createGain();o.frequency.va
  thunk(a){const o=a.createOscillator(),g=a.createGain();o.frequency.setValueAtTime(190,a.currentTime);o.frequency.exponentialRampToValueAtTime(90,a.currentTime+.12);env(a,g,.12,.004,.14);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.2)},
  tick(a){const o=a.createOscillator(),g=a.createGain();o.type='triangle';o.frequency.value=900;env(a,g,.05,.001,.02);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.04)}};
 window.zzSound=p=>{if(!on())return;try{const a=ctx(),k=typeof p==='string'?p:Array.isArray(p)?(p[0]<15?'wash':'thunk'):'click';(SND[k]||SND.click)(a)}catch(e){}};
-let lt='';setInterval(()=>{const t=document.querySelector('#mx-timer.low');if(!t||!document.body.classList.contains('mx-live'))return;if(t.textContent!==lt){lt=t.textContent;zzSound('tick')}},250);
+/* the tick poll runs only during a live MCQ session with sound on (it used to poll every 250 ms on every page) */
+let lt='',iv=0;const tick=()=>{const t=document.querySelector('#mx-timer.low');if(t&&t.textContent!==lt){lt=t.textContent;zzSound('tick')}};
+const arm=()=>{const want=on()&&document.body.classList.contains('mx-live');if(want&&!iv)iv=setInterval(tick,250);else if(!want&&iv){clearInterval(iv);iv=0}};
+new MutationObserver(arm).observe(document.body,{attributes:true,attributeFilter:['class']});arm();
 }catch(e){}})();
