@@ -174,10 +174,13 @@ class Browser(unittest.TestCase):
         pg = self.b.new_page(viewport={'width': w, 'height': ht}, has_touch=touch, is_mobile=touch, reduced_motion='reduce' if still else 'no-preference'); self.errs = []
         pg.add_init_script("try{if(localStorage.getItem('zzWelcomeAt')===null)localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){}")
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.goto(URL + h); pg.wait_for_timeout(900); return pg
+    def landed(self, pg):  # the track has come to rest on the active pane (measuring mid-slide reads moving positions)
+        pg.wait_for_function("()=>{const T=document.getElementById('zz-pager'),v=document.querySelector('.view:not([hidden])');return !T||!document.documentElement.classList.contains('zz-pg')||Math.abs(T.scrollLeft-[...T.children].indexOf(v)*T.clientWidth)<2}", polling=100, timeout=8000)
+        pg.wait_for_timeout(250)
     def test_pager_footer_sits_at_the_end_of_each_tab_pane(self):
-        pg = self.phone()
+        pg = self.phone(still=True)   # instant tab changes: this checks where things end up, not the slide
         for h in self.TABS:
-            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(300); self.landed(pg)
             r = pg.evaluate("""()=>{const f=document.querySelector('footer.sf'),v=document.querySelector('.view:not([hidden])'),fr=f.getBoundingClientRect();
               const kids=[...v.children].filter(e=>e!==f&&e.getClientRects().length),last=kids[kids.length-1];
               const h1=[...v.querySelectorAll('h1')].find(x=>x.getClientRects().length),hr=h1&&h1.getBoundingClientRect();
@@ -196,9 +199,9 @@ class Browser(unittest.TestCase):
         self.assertEqual(self.errs, [])
     def test_reading_tools_stay_on_screen_on_every_tab(self):
         for w, ht, touch in ((390, 844, True), (1440, 900, False)):
-            pg = self.phone(touch=touch, w=w, ht=ht)
+            pg = self.phone(touch=touch, w=w, ht=ht, still=True)   # instant tab changes; measured once the track has landed
             for h in self.TABS[1:] + self.TABS[:1]:
-                pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)
+                pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(300); self.landed(pg)
                 r = pg.evaluate("""()=>{const t=document.getElementById('tools').getBoundingClientRect(),n=document.querySelector('.view:not([hidden]) .nav');
                   const ov=e=>{if(!e)return false;const b=e.getBoundingClientRect();return t.left<b.right&&b.left<t.right&&t.top<b.bottom&&b.top<t.bottom};
                   return {on:t.width>0&&t.left>=0&&t.right<=innerWidth,hit:ov(n&&n.querySelector('.logo'))||ov(n&&n.querySelector('.pill'))}}""")
