@@ -24,6 +24,7 @@ The **MCQs** tab holds 884 pathology questions (234 from 12 past papers plus a 6
 - Custom practice: faceted filter (chapter/topic, SBA or T/F, source, past paper, your progress, text search) with live counts, plus count, order, feedback (after each question or exam) and timer.
 - Reading mode: every matching question with the answers and notes shown, or hidden to self-test.
 - Answers, bookmarks, history and any unfinished session are stored in the same backup as everything else.
+- Look: the glass ("coverslip") layer for every MCQ screen is `tools/mcq_glass.css`, loaded last; tokens (`--gx-*`) are at its top. Blur is limited to the floating bars on touch screens; Menu > Display > Reduce effects removes it.
 Sources are in `tools/mcq_src/`; run `python3 tools/mcq_parse.py` to regenerate `tools/mcqs.json`, then `python3 tools/build.py` and bump `VERSION` in `sw.js`.
 
 ## Textbook
