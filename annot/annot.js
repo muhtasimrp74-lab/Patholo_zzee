@@ -467,7 +467,7 @@ function reattach(k,id,blockId){const d=docOf(k),h=hostByKey(k),o=d&&d.objs.find
 /* ---------- textbook adapter: one layer per open chapter (#tbbody[data-ch]), re-attached when textbook.js renders a chapter ---------- */
 function tbAttach(){if(!isReady){ready.then(tbAttach);return}
  layers.forEach((L,h)=>{if(!h.isConnected){layers.delete(h);try{ro.unobserve(h)}catch(e){}}});
- const h=document.querySelector(TBH),on=!!(h&&h.getClientRects().length);document.body.classList.toggle('an-tb',on);
+ const h=document.querySelector(TBH),on=!!(h&&h.getClientRects().length&&!h.closest('.view[hidden]'));document.body.classList.toggle('an-tb',on);
  if(!h)return;const k=keyOf(h);if(!k)return;if(!layers.has(h))BL.delete(h);const L=layerOf(h,k);if(!L)return;if(!L.rean){L.rean=1;reanchor(L)}sched(L);sync();schedBadges()}
 let tbRaf=0;const tbScroll=()=>{if(tbRaf)return;tbRaf=requestAnimationFrame(()=>{tbRaf=0;layers.forEach(L=>{if(L.tb&&L.host.isConnected&&L.host.clientWidth&&tbWin(L))sched(L)})})};
 addEventListener('scroll',tbScroll,{passive:true,capture:true});addEventListener('resize',()=>{tbScroll();layers.forEach(L=>L.tb&&sched(L))});addEventListener('hashchange',()=>setTimeout(tbAttach,80));
