@@ -20,7 +20,7 @@ try{const o=JSON.parse(zzStore.getItem(KEY)||'{}');
  if(o&&o.pos&&typeof o.pos==='object')for(const h in o.pos){const p=o.pos[h];if(valid(h)&&p&&typeof p==='object'&&Number.isFinite(p.y))M.pos[h]={y:p.y,o:Number.isFinite(p.o)?p.o:0,a:typeof p.a==='string'&&/^[A-Za-z0-9_-]{1,40}$/.test(p.a)?p.a:'',t:+p.t||0}}
 }catch(e){}
 const persist=()=>{try{zzStore.setItem(KEY,JSON.stringify(M))}catch(e){}};
-const view=()=>document.querySelector('.view:not([hidden])');
+const view=()=>document.querySelector('.view:not([hidden])'),SC=()=>(window.zzScroller?zzScroller():document.scrollingElement||document.documentElement);
 let cur=null,pending=null,st=0,acted=/^#\/[^/]+\/./.test(location.hash);
 /* a position is only worth keeping once you have moved on this page (or opened it at a specific question):
    pages also shift by themselves while answers and fonts load, and that is not "where you were" */
@@ -31,7 +31,7 @@ function save(){
  if(!acted||!cur||tbCh(cur)||base(location.hash)!==cur)return;   /* never record a page you have already left */
  const v=view();if(!v)return;
  let a=null;for(const c of v.querySelectorAll('.card[id]')){const r=c.getBoundingClientRect();if(r.height&&r.bottom>90){a=c;break}}
- const n={y:Math.round(scrollY),a:a?a.id:'',o:a?Math.round(a.getBoundingClientRect().top):0},q=M.pos[cur];
+ const n={y:Math.round(SC().scrollTop),a:a?a.id:'',o:a?Math.round(a.getBoundingClientRect().top):0},q=M.pos[cur];
  if(q&&q.y===n.y&&q.a===n.a&&q.o===n.o)return;          /* nothing moved: no write */
  if(n.y<=2){if(q){delete M.pos[cur];persist()}return}    /* the top of the page is where it opens anyway */
  n.t=Date.now();M.pos[cur]=n;
@@ -43,13 +43,13 @@ function restore(b){
  const p=M.pos[b];if(!p)return;let mine=false;
  const stop=()=>{mine=true};['wheel','touchstart','keydown'].forEach(e=>addEventListener(e,stop,{once:true,passive:true,capture:true}));
  const go=()=>{if(mine||base(location.hash)!==b)return;const v=view(),el=p.a&&v&&v.querySelector('#'+CSS.escape(p.a));
-  const y=el&&el.getClientRects().length?scrollY+el.getBoundingClientRect().top-p.o:p.y;
-  if(Math.abs(y-scrollY)>1)scrollTo({top:Math.max(0,y),left:0,behavior:'instant'})};
+  const sc=SC(),y=el&&el.getClientRects().length?sc.scrollTop+el.getBoundingClientRect().top-p.o:p.y;
+  if(Math.abs(y-sc.scrollTop)>1)sc.scrollTo({top:Math.max(0,y),left:0,behavior:'instant'})};
  go();[60,200,500,1000].forEach(t=>setTimeout(go,t));
 }
 addEventListener('hashchange',()=>{acted=/^#\/[^/]+\/./.test(location.hash)},true);   /* each page starts unmoved, unless opened at a question */
 addEventListener('hashchange',()=>setTimeout(()=>{track();const p=pending;pending=null;if(p&&p===cur&&!tbCh(cur))restore(cur)},0));
-addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(save,250)},{passive:true});
+addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(save,250)},{passive:true,capture:true});
 addEventListener('pagehide',save);document.addEventListener('visibilitychange',()=>{if(document.hidden)save()});
 document.addEventListener('click',e=>{
  const a=e.target.closest&&e.target.closest('#bnav a,.nav .links a');

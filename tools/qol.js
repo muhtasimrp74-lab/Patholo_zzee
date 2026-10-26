@@ -93,7 +93,7 @@ function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf
 function qgo(c,d){
  const l=cardsOf(c),t=l[l.indexOf(c)+d];if(!t)return;
  const bar=t.closest('.view')&&t.closest('.view').querySelector('.bar'),off=(bar&&getComputedStyle(bar).position==='sticky'?bar.getBoundingClientRect().height:0)+72;
- scrollTo({top:scrollY+t.getBoundingClientRect().top-off,behavior:'instant'});qnav(t);
+ {const sc=(window.zzScroller?zzScroller():document.scrollingElement||document.documentElement);sc.scrollTo({top:sc.scrollTop+t.getBoundingClientRect().top-off,behavior:'instant'})}qnav(t);
  const f=t.querySelector('header');if(f){f.setAttribute('tabindex','-1');f.focus({preventScroll:true})}
 }
 /* answers are on the page already, so each card gets its buttons as it scrolls into view */

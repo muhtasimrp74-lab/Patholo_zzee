@@ -470,7 +470,7 @@ function tbAttach(){if(!isReady){ready.then(tbAttach);return}
  const h=document.querySelector(TBH),on=!!(h&&h.getClientRects().length);document.body.classList.toggle('an-tb',on);
  if(!h)return;const k=keyOf(h);if(!k)return;if(!layers.has(h))BL.delete(h);const L=layerOf(h,k);if(!L)return;if(!L.rean){L.rean=1;reanchor(L)}sched(L);sync();schedBadges()}
 let tbRaf=0;const tbScroll=()=>{if(tbRaf)return;tbRaf=requestAnimationFrame(()=>{tbRaf=0;layers.forEach(L=>{if(L.tb&&L.host.isConnected&&L.host.clientWidth&&tbWin(L))sched(L)})})};
-addEventListener('scroll',tbScroll,{passive:true});addEventListener('resize',()=>{tbScroll();layers.forEach(L=>L.tb&&sched(L))});addEventListener('hashchange',()=>setTimeout(tbAttach,80));
+addEventListener('scroll',tbScroll,{passive:true,capture:true});addEventListener('resize',()=>{tbScroll();layers.forEach(L=>L.tb&&sched(L))});addEventListener('hashchange',()=>setTimeout(tbAttach,80));
 document.addEventListener('click',e=>{if(!P.on||P.tool==='hand')return;const t=e.target;if(t.closest&&t.closest(TBH+' .tbs-h')){e.preventDefault();e.stopPropagation()}},true);
 /* ---------- input ---------- */
 let live=null,lastPen=0,drawing=false;
@@ -741,7 +741,7 @@ document.addEventListener('pointerup',gEnd,true);document.addEventListener('poin
 {let pan=null;const cur=new Map();const mid=()=>{const v=[...cur.values()];return{x:(v[0][0]+v[1][0])/2,y:(v[0][1]+v[1][1])/2,d:Math.hypot(v[0][0]-v[1][0],v[0][1]-v[1][1])}};
 document.addEventListener('pointermove',e=>{if(e.pointerType!=='touch'||!gt.n.has(e.pointerId)||!P.on||P.mode!=='pf')return;cur.set(e.pointerId,[e.clientX,e.clientY]);
  if(gt.n.size!==2||cur.size<2){pan=null;return}const m=mid();if(!pan){pan=m;return}
- if(Math.abs(m.d-pan.d)<10&&(!window.visualViewport||visualViewport.scale<=1.02)){const dy=pan.y-m.y,dx=pan.x-m.x;if(dx||dy)scrollBy(dx,dy)}pan=m},true);
+ if(Math.abs(m.d-pan.d)<10&&(!window.visualViewport||visualViewport.scale<=1.02)){const dy=pan.y-m.y,dx=pan.x-m.x;if(dx||dy)(window.zzScroller?zzScroller():window).scrollBy(dx,dy)}pan=m},true);
 const rs=e=>{if(e.pointerType==='touch'){cur.delete(e.pointerId);pan=null}};document.addEventListener('pointerup',rs,true);document.addEventListener('pointercancel',rs,true)}
 /* ---------- gentle nudges: install on iOS, back up after lots of new work ---------- */
 let nud=0;async function nudges(){if(nud||!St.db)return;nud=1;try{const ios=/iP(ad|hone|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1),sa=navigator.standalone||matchMedia('(display-mode:standalone)').matches;

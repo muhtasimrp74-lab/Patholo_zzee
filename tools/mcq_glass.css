@@ -66,9 +66,9 @@ html body .mx{
  --gx-blobs:radial-gradient(40vmax 34vmax at 6% 18%,rgba(176,58,96,.36),transparent 70%),radial-gradient(36vmax 32vmax at 96% 30%,rgba(98,70,170,.3),transparent 70%),
   radial-gradient(46vmax 38vmax at 74% 98%,rgba(150,52,110,.32),transparent 70%),radial-gradient(30vmax 26vmax at 4% 92%,rgba(122,31,54,.32),transparent 70%);
  --gx-nuclei:radial-gradient(circle at 30% 35%,rgba(170,140,230,.09) 0 3px,transparent 4.5px),radial-gradient(circle at 70% 65%,rgba(233,165,187,.07) 0 2.5px,transparent 4px)}
-html body:has(> #v-mcqs:not([hidden]))::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:1;transform:translateZ(0);background:var(--gx-blobs)}
+html body:has(#v-mcqs:not([hidden]))::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:1;transform:translateZ(0);background:var(--gx-blobs)}
 /* with a mouse the big panes blur, so the slide gets a faint scatter of nuclei for the frost to catch */
-@media(hover:hover) and (pointer:fine){html body:has(> #v-mcqs:not([hidden]))::after{background:var(--gx-nuclei),var(--gx-blobs);
+@media(hover:hover) and (pointer:fine){html body:has(#v-mcqs:not([hidden]))::after{background:var(--gx-nuclei),var(--gx-blobs);
  background-size:47px 53px,61px 67px,auto,auto,auto,auto;background-repeat:repeat,repeat,no-repeat,no-repeat,no-repeat,no-repeat}}
 
 /* ---------- materials ---------- */
@@ -314,9 +314,9 @@ html.zz-flat body .mx :is(.mx-top,.mx-act,.mx-rbar,.mx-pal-in){background:var(--
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){html body .mx :is(.mx-top,.mx-act,.mx-rbar,.mx-pal-in){background:var(--panel)!important}}
 /* the OS asks for less transparency: solid surfaces, no slide behind */
 @media(prefers-reduced-transparency:reduce){
- html body:has(> #v-mcqs:not([hidden]))::after{display:none}
+ html body:has(#v-mcqs:not([hidden]))::after{display:none}
  html body .mx :is(.mx-card,.mx-acc,.mx-day,.mx-res,.mx-sum,.mx-top,.mx-act,.mx-rbar,.mx-pal-in,.mx-next){background:var(--panel)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
  html body .mx :is(.mx-o,.mx-s,.mx-tile,.mx-chd,.mx-chd2,.mx-paper,.mx-hist,.mx-weak button,.mx-strip button,.mx-pal-g button,.mx-qb,.mx-f,.mx-ib,.mx-bm,.mx-tp button,.mx-goal button,.mx-sel,.mx-btn.ghost){background-color:var(--soft)}
  html body .mx .mx-pal{-webkit-backdrop-filter:none;backdrop-filter:none}}
-@media print{html body:has(> #v-mcqs:not([hidden]))::after{display:none}
+@media print{html body:has(#v-mcqs:not([hidden]))::after{display:none}
  html body .mx :is(.mx-card,.mx-res,.mx-o,.mx-s){background:#fff!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-color:#bbb!important}}

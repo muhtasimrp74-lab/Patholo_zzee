@@ -36,3 +36,15 @@ html body :is(.topic,.card,.mx-acc,.mx-day,.tbtile,.dc,.pc,.empty){border-radius
 
 /* card actions on phones: a long label ("Mark as learned") wraps to two short lines instead of being cut off */
 @media(max-width:640px){html body .act span{white-space:normal!important;text-align:center;line-height:1.15}}
+
+/* ===== Fluorescence theme (dark + data-tone=fluo): near-black field, DAPI blue, FITC green, TRITC red; text pairs pass AA ===== */
+:root[data-theme=dark][data-tone=fluo]{--bg:#07090D;--panel:#0F141B;--paper:#0F141B;--line:#1E2A36;--line2:#2A3A4A;--text:#E6EEF5;--muted:#9DB0C2;--navy:#F2F6FA;
+ --burgundy:#7FB2FF;--burgundy2:#9CC4FF;--blue:#7FB2FF;--cobalt:#7FB2FF;--orange:#FF8A96;--red:#FF8A96;--lbl:#7FB2FF;--rosy:#FF8A96;--rosy2:#FF8A96;--plum:#E6EEF5;--plum2:#5BE39A;
+ --chip:#141B24;--soft:#141B24;--accbg:#12233A;--infobg:#102030;--mark:#5BE39A;--ok:#5BE39A;--ok-btn:#1E7A4C;--sage:#5BE39A;--sage2:#5BE39A;--amber:#FFC66B;--amberbg:#2A2210;
+ --btn:#2A5FD0;--btnh:#3A6FE0;--bad-btn:#B8323F;--tv:#7FB2FF;--tw:#FF8A96;
+ --g-mist:linear-gradient(160deg,#0F141B,#101A26);--g-pulse:linear-gradient(100deg,#2A5FD0,#1E7A4C 60%,#B8323F);--g-btn:linear-gradient(100deg,#2A5FD0,#2C4FB8 60%,#1E6A8C);
+ --mesh:radial-gradient(60rem 40rem at 12% -8%,rgba(80,140,255,.10),transparent 60%),radial-gradient(48rem 36rem at 96% 6%,rgba(60,220,140,.06),transparent 60%),radial-gradient(52rem 40rem at 70% 104%,rgba(255,90,110,.06),transparent 60%);
+ --gx-blobs:radial-gradient(40vmax 34vmax at 6% 18%,rgba(70,130,255,.28),transparent 70%),radial-gradient(36vmax 32vmax at 96% 30%,rgba(60,220,140,.16),transparent 70%),radial-gradient(46vmax 38vmax at 74% 98%,rgba(255,80,105,.18),transparent 70%),radial-gradient(30vmax 26vmax at 4% 92%,rgba(70,130,255,.16),transparent 70%)}
+:root[data-theme=dark][data-tone=fluo] body .mx{--mx-ok:#3CCB7F;--mx-no:#E04A5F;--gx-ok-ink:#5BE39A;--gx-no-ink:#FF8A96;--gx-sel:linear-gradient(135deg,rgba(80,140,255,.28),rgba(80,140,255,.1));--gx-sel-bd:rgba(127,178,255,.55)}
+/* polarised light on amyloid pages: crossed polars darken the field, the stain glows apple-green */
+:root[data-tone=fluo].zz-pol{--bg:#030405;--panel:#0A0D0F;--lbl:#B8F07A;--burgundy:#B8F07A;--blue:#B8F07A;--mark:#B8F07A;--accbg:#16220E;--btn:#3F6E1C;--g-btn:linear-gradient(100deg,#3F6E1C,#2E5A2A)}

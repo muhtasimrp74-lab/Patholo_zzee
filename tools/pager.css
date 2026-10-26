@@ -1,0 +1,15 @@
+
+/* ===== pager (pager.js): six tab panes side by side, native scroll-snap ===== */
+#zz-pager{position:fixed;top:0;left:0;right:0;bottom:var(--zz-pgb,0px);z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;
+ scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+#zz-pager::-webkit-scrollbar{display:none}
+#zz-pager>.view{flex:0 0 100%;width:100%;min-width:100%;height:100%;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;
+ overscroll-behavior-y:contain;scroll-snap-align:start;scroll-snap-stop:always;animation:none!important}
+#zz-pager>.view[hidden]{display:block!important}
+#zz-pager>.view[hidden] :is(.mx-act,.mx-pal){display:none!important}
+html:not(.zz-pg) #zz-pager{visibility:hidden;pointer-events:none;content-visibility:hidden}
+html.zz-pg body{overflow:hidden}
+body.mx-live #zz-pager{bottom:0}
+body:is(.an-on,.mx-live) #zz-pager{overflow-x:hidden}
+:where(#zz-pager) :where(.card .ans,canvas,input,textarea,select,[data-no-swipe]){touch-action:pan-y}
+@media print{#zz-pager{position:static;display:block;overflow:visible}#zz-pager>.view{height:auto;overflow:visible}#zz-pager>.view[hidden]{display:none!important}}

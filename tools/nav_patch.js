@@ -14,6 +14,7 @@
   exp:'<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15"/>',imp:'<path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 19.5h15"/>',out:'<path d="M14 4.5h4.5v15H14M10 8l-4 4 4 4M6 12h10"/>',
   me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>',
   tis:'<circle cx="8" cy="9" r="3.2"/><circle cx="16" cy="8" r="2.4"/><circle cx="14.5" cy="16" r="3.4"/>',fx:'<path d="M12 3.5v2.5M12 18v2.5M3.5 12H6M18 12h2.5"/><circle cx="12" cy="12" r="4.2"/>',hap:'<rect x="8" y="3.5" width="8" height="17" rx="2"/><path d="M4.5 9v6M19.5 9v6"/>'};
+ I.pgr='<path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/>';
  const ic=k=>'<svg class="zm-ic" viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>',CH='<svg class="zm-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
  const link=(h,k,t,c)=>'<a class="zm-row" href="'+h+'">'+ic(k)+'<span class="zm-l">'+t+'</span>'+(c?'<span class="zm-v cn" data-c="'+c+'">0</span>':'')+CH+'</a>';
  const sw=(id,k,t)=>'<button type="button" class="zm-row" role="switch" aria-checked="false" id="'+id+'">'+ic(k)+'<span class="zm-l">'+t+'</span><span class="zm-tg" aria-hidden="true"></span></button>';
@@ -27,11 +28,11 @@
   grp('zm-h-data','Your data',btn('zm-exp','exp','Export backup')+btn('zm-imp','imp','Import backup')+'<input type="file" accept=".json" id="zm-file" hidden>')+
  '</div><div>'+
   grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
-  grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button></span></div>'+
+  grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button><button type="button" role="radio" data-th="fluo">Fluorescence</button></span></div>'+
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
    sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
-   '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
-   sw('zm-tis','tis','Tissue background')+sw('zm-hap','hap','Haptics'))+
+   '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="auto">Auto</button><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
+   sw('zm-tis','tis','Tissue background')+sw('zm-pgr','pgr','Swipe between tabs')+sw('zm-hap','hap','Haptics'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
   '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
    '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
@@ -44,7 +45,7 @@
  const cb=$x('#zm-calm');cb.onclick=()=>{press('calm');sync()};
  const ib=$x('#zm-ink');ib.onclick=()=>{press('ink');setTimeout(sync,0)};
  /* the toolbar button steps Light > Sepia > Dark (polish.js), so tap it until the chosen theme is on */
- X.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{for(let i=0;i<3&&theme()!==b.dataset.th;i++)press('theme');sync()});
+ X.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{for(let i=0;i<4&&theme()!==b.dataset.th;i++)press('theme');sync()});
  X.querySelectorAll('[data-st]').forEach(b=>b.onclick=()=>{press(b.dataset.st);sync()});
  $x('#zm-exp').onclick=()=>exp();
  const fi=$x('#zm-file');$x('#zm-imp').onclick=()=>fi.click();fi.onchange=()=>{if(fi.files[0])imp(fi.files[0]);fi.value=''};
@@ -85,14 +86,15 @@
  /* Tissue background: the moving stained-tissue backdrop (fxgl.js); on unless switched off */
  $x('#zm-tis').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.tissue=s.pref.tissue===false;save();
   document.documentElement.classList.toggle('fx-notis',s.pref.tissue===false);if(window.zzFxGl)zzFxGl.wake(3000);sync()};
+ $x('#zm-pgr').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.pager=s.pref.pager===false;save();if(window.zzPager)zzPager.sync();sync()};
  const hb=$x('#zm-hap');if(!('vibrate' in navigator))hb.hidden=true;
  hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
- function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':de.dataset.tone==='sepia'?'sepia':'light'}
+ function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(de.dataset.tone==='fluo'?'fluo':'dark'):de.dataset.tone==='sepia'?'sepia':'light'}
  function sync(){
   on(qb,bd.classList.contains('quiz'));on($x('#zm-focus'),bd.classList.contains('focus'));on(cb,bd.classList.contains('calm'));cb.hidden=!tool('calm');
   const t=tool('ink');on(ib,t&&t.getAttribute('aria-pressed')==='true');ib.hidden=!t;
   on(fb,app||fsOn());on(rb,de.classList.contains('zz-flat'));
-  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'full';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false);on($x('#zm-tis'),p.tissue!==false)}
+  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'auto';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false);on($x('#zm-tis'),p.tissue!==false);on($x('#zm-pgr'),p.pager!==false)}
   const th=theme();X.querySelectorAll('[data-th]').forEach(b=>{const c=b.dataset.th===th;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});
   const f=+((S.pref&&S.pref.fs)||1);$x('#zm-fsv').textContent=Math.round(f*100)+'%';$x('[data-st=fm]').disabled=f<=.8;$x('[data-st=fp]').disabled=f>=1.6;
  }

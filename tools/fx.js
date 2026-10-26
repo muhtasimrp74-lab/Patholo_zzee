@@ -12,7 +12,13 @@
 (function(){try{
 const de=document.documentElement,$=(s,r)=>(r||document).querySelector(s),st=()=>typeof S!=='undefined'?S:null;
 const RM=matchMedia('(prefers-reduced-motion: reduce)');
-function level(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'full';if(v==='off')return 'off';if(RM.matches||de.classList.contains('zz-still'))return 'min';return v==='min'?'min':'full'}
+/* tier ladder: 0 static (Off), 1 CSS (Minimal), 2 canvas, 3 WebGL (Full). "Auto" (default) picks from the device; a manual choice wins */
+function autoTier(){const n=navigator,c=n.connection;if(c&&c.saveData)return 1;const m=n.deviceMemory,k=n.hardwareConcurrency||4;
+ if((m&&m<=2)||k<=2)return 1;if((m&&m<=4)||k<=4)return 2;return 3}
+function tier(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'auto';if(v==='off')return 0;if(RM.matches||de.classList.contains('zz-still'))return 1;
+ return v==='min'?1:v==='full'?3:autoTier()}
+window.zzTier=tier;
+function level(){const t=tier();return t===0?'off':t===1?'min':'full'}
 function apply(){const l=level();['full','min','off'].forEach(x=>de.classList.toggle('fx-'+x,l===x));pill()}
 const haptic=p=>{const s=st();if((s&&s.pref&&s.pref.hap===false)||level()==='off')return;try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}};
 window.zzFx={level,apply,haptic};
@@ -23,7 +29,7 @@ const MENU=['practice','bookmarks','favourites','notes','howto','search','menu',
 const tab=h=>{const k=(h||'').replace(/^#\/?/,'').split('/')[0];return k===''||k==='home'?0:k==='questions'?1:k==='mcqs'?3:k==='textbook'?4:MENU.includes(k)?5:2};
 window.zzGo=function(href){
  if(!href||href===location.hash)return;
- if(!document.startViewTransition||level()==='off'||busy()){location.hash=href;return}
+ if(!document.startViewTransition||level()==='off'||busy()||(window.zzPager&&zzPager.tabs(href)&&zzPager.tabs(location.hash))){location.hash=href;return}   /* tab to tab in the pager: the track slides instead */
  const d=tab(href)-tab(location.hash);de.dataset.fxDir=d>0?'fwd':d<0?'back':'same';de.classList.add('fx-vt');
  let t;try{t=document.startViewTransition(()=>new Promise(res=>{let ok=false;const done=()=>{if(ok)return;ok=true;removeEventListener('hashchange',done);setTimeout(res,0)};   /* not requestAnimationFrame: rendering is paused until this resolves */
   addEventListener('hashchange',done);location.hash=href;setTimeout(done,600)}))}catch(e){de.classList.remove('fx-vt');location.hash=href;return}

@@ -364,10 +364,14 @@ for _a, _b in (("BS=[...new Set(DATA.map(d=>d[0]))]", "BS=[...new Set(DATA.flatM
 # which only assembled files by then; the edits to existing application text live in src/index.base.html and questions.js).
 # Read modes matter for byte-identical output: files read with newline='' keep their line endings, the others use text mode.
 def _asset(name, raw=False): return open(os.path.join(HERE, name), encoding='utf8', newline='' if raw else None).read()
-_UI_JS = _asset('ui_upd.js', True) + _asset('home.js') + _asset('pagebanner.js') + _asset('sitefooter.js') + _asset('tabresume.js') + _asset('swupdate.js') + _asset('qol.js') + _asset('fx.js') + _asset('fxgl.js') + _asset('fx2.js')
+_ZZ_NEW = ['pathway.js', 'fluo.js', 'loupe.js', 'share.js', 'scrub.js', 'specimen.js', 'ceremony.js']  # feature modules, inlined after fx2.js
+_UI_JS = _asset('pager.js') + _asset('ui_upd.js', True) + _asset('home.js') + _asset('pagebanner.js') + _asset('sitefooter.js') + _asset('tabresume.js') + _asset('swupdate.js') + _asset('qol.js') + _asset('fx.js') + _asset('fxgl.js') + _asset('fx2.js') + ''.join(_asset(f) for f in _ZZ_NEW)
 _UI_TAIL = "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n"
 assert "\nroute();\n" in s, 'assembly anchor missing: route();'
 s = s.replace("\nroute();\n", "\nroute();\n" + _UI_JS + _UI_TAIL, 1)
+_RS = "else window.scrollTo({top:0,left:0,behavior:'instant'})}\naddEventListener('hashchange',route);"
+assert s.count(_RS) == 1, 'route scroll anchor missing'
+s = s.replace(_RS, "else if(!(window.zzPager&&zzPager.keep(v)))window.scrollTo({top:0,left:0,behavior:'instant'})}\naddEventListener('hashchange',route);", 1)  # pager panes keep their own scroll
 _k = s.index('.qtools{display:flex;')
 s = s[:_k] + _asset('ui_qmode.css', True) + s[_k:]
 _k = s.rindex('</style>')
@@ -400,7 +404,7 @@ s = s.replace('</head><body>', BOOT_HEAD + SOFT + '</head><body>', 1)
 assert s.count('<footer>Patholo_zzee</footer>') == 1
 _k = s.rindex('</body>'); s = s[:_k] + '<script>' + _asset('sync.js') + '</script><script>' + _asset('acctui.js') + '</script>' + s[_k:]  # listeners only: end of body
 s = s.replace('<footer>Patholo_zzee</footer>', '<footer>Patholo_zzee · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <button type="button" class="zz-acct" onclick="zzAccountPage()">Account</button></footer>')
-s = s.replace('</head><body>', '<style>' + _asset('zz.css') + _asset('refine.css') + _asset('qol.css') + _asset('fx.css') + _asset('mcq_glass.css') + '</style></head><body><script>(function(h){if(window.ZZ_API===undefined)window.ZZ_API=/(^|\\.)github\\.io$/.test(h)||h==="patholo-zzee.muhtasimrp74.workers.dev"?"https://patholo-zzee-app.muhtasimrp74.workers.dev/":""})(location.hostname)</script><script>window.ZZ_MANIFEST=null</script><script>' + _asset('account.js') + '</script><script>' + _asset('chunks.js') + '</script><script>' + _asset('pay.js') + '</script>', 1)
+s = s.replace('</head><body>', '<style>' + _asset('zz.css') + _asset('refine.css') + _asset('qol.css') + _asset('fx.css') + _asset('mcq_glass.css') + _asset('pager.css') + '</style></head><body><script>(function(h){if(window.ZZ_API===undefined)window.ZZ_API=/(^|\\.)github\\.io$/.test(h)||h==="patholo-zzee.muhtasimrp74.workers.dev"?"https://patholo-zzee-app.muhtasimrp74.workers.dev/":""})(location.hostname)</script><script>window.ZZ_MANIFEST=null</script><script>' + _asset('account.js') + '</script><script>' + _asset('chunks.js') + '</script><script>' + _asset('pay.js') + '</script>', 1)
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 import re as _re
 s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)
