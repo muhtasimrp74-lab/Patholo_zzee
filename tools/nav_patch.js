@@ -24,7 +24,7 @@
  X.classList.add('zm');
  X.innerHTML='<section class="zm-card" id="zm-card" aria-labelledby="zm-name"></section><div class="zm-cols"><div>'+
   grp('zm-h-study','Study',btn('tut-open','tut','Tutorial')+link('#/practice','practice','Practice')+link('#/howto','read','How to read'))+
-  grp('zm-h-saved','Saved',link('#/bookmarks','bm','Bookmarks','bm')+link('#/favourites','fav','Favourites','fav')+link('#/notes','notes','Notes','notes'))+
+  grp('zm-h-saved','Saved',link('#/bookmarks','bm','Bookmarks','bm')+link('#/favourites','fav','Favourites','fav')+link('#/notes','notes','Notes','notes')+link('#/report','read','Lab report')+link('#/examiner','practice','Examiner mode'))+
   grp('zm-h-data','Your data',btn('zm-exp','exp','Export backup')+btn('zm-imp','imp','Import backup')+'<input type="file" accept=".json" id="zm-file" hidden>')+
  '</div><div>'+
   grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
@@ -32,7 +32,7 @@
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
    sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
    '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="auto">Auto</button><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
-   sw('zm-tis','tis','Tissue background')+sw('zm-pgr','pgr','Swipe between tabs')+sw('zm-hap','hap','Haptics'))+
+   sw('zm-tis','tis','Tissue background')+sw('zm-pgr','pgr','Swipe between tabs')+sw('zm-hap','hap','Haptics and sound'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
   '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
    '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
@@ -87,7 +87,7 @@
  $x('#zm-tis').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.tissue=s.pref.tissue===false;save();
   document.documentElement.classList.toggle('fx-notis',s.pref.tissue===false);if(window.zzFxGl)zzFxGl.wake(3000);sync()};
  $x('#zm-pgr').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.pager=s.pref.pager===false;save();if(window.zzPager)zzPager.sync();sync()};
- const hb=$x('#zm-hap');if(!('vibrate' in navigator))hb.hidden=true;
+ const hb=$x('#zm-hap');if(!('vibrate' in navigator)&&!(window.AudioContext||window.webkitAudioContext))hb.hidden=true;
  hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
  function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(de.dataset.tone==='fluo'?'fluo':'dark'):de.dataset.tone==='sepia'?'sepia':'light'}
  function sync(){

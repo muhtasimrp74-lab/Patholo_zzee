@@ -20,7 +20,7 @@ function tier(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'auto';if(v==='off')retur
 window.zzTier=tier;
 function level(){const t=tier();return t===0?'off':t===1?'min':'full'}
 function apply(){const l=level();['full','min','off'].forEach(x=>de.classList.toggle('fx-'+x,l===x));pill()}
-const haptic=p=>{const s=st();if((s&&s.pref&&s.pref.hap===false)||level()==='off')return;try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}};
+const haptic=p=>{const s=st();if((s&&s.pref&&s.pref.hap===false)||level()==='off')return;try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}try{if(window.zzSound)zzSound(p)}catch(e){}};   /* sound.js: synthesised, only once the switch is turned on */
 window.zzFx={level,apply,haptic};
 const busy=()=>document.body.classList.contains('an-on')||document.hidden;   /* never during annotation or in the background */
 
