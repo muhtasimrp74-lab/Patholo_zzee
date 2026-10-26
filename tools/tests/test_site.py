@@ -221,10 +221,11 @@ class Browser(unittest.TestCase):
         self.assertTrue(pg.evaluate("document.documentElement.classList.contains('zz-scrolled')"))
         pg.evaluate("zzScroller().scrollTop=0"); pg.wait_for_timeout(400)
         self.assertFalse(pg.evaluate("document.documentElement.classList.contains('zz-scrolled')"))
-    def test_trackpad_swipe_changes_tab_and_moves_the_footer(self):
+    def test_swipe_that_settles_on_the_next_pane_changes_tab_and_moves_the_footer(self):
         pg = self.phone('#/questions', touch=False)
-        pg.mouse.move(300, 300)
-        pg.mouse.wheel(390, 0)   # a decisive horizontal trackpad swipe (one pane wide) arrives as a horizontal wheel event
+        # leave the track where a finished swipe leaves it, one pane on (CI's headless Chromium does not animate wheel or gesture
+        # scrolling of the snap track); the pager must then update the hash and carry the footer into the new pane
+        pg.evaluate("()=>{const T=document.getElementById('zz-pager');T.scrollLeft=T.clientWidth*2}")
         pg.wait_for_function("()=>location.hash==='#/qa'", polling=100, timeout=6000); pg.wait_for_timeout(400)
         self.assertTrue(pg.evaluate("document.getElementById('v-qa').contains(document.querySelector('footer.sf'))"))
     def test_alias_migration_keeps_progress_and_notes(self):
