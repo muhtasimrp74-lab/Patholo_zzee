@@ -232,3 +232,15 @@
 .nh-more>summary:focus-visible{outline:2px solid var(--burgundy);outline-offset:3px}
 .nh-more[open]>summary{margin-bottom:8px}
 @media(prefers-reduced-motion:reduce){.nh-more>summary::after{transition:none}}
+
+/* fading lens under the progress map (fxgl.js) */
+.nh-fade{margin-top:14px;display:flex;flex-direction:column;gap:2px}
+.nh-fade-h{margin:0 0 6px;font:600 .9rem var(--body);color:var(--lbl)}
+.nh-fade a{display:flex;justify-content:space-between;gap:12px;padding:9px 4px;border-top:1px solid var(--line);color:var(--text);text-decoration:none;font:500 .88rem/1.35 var(--body)}
+.nh-fade a small{flex:none;color:var(--muted);font-size:.76rem}
+
+/* whole-slide map: objective turret (fxgl.js) */
+.nh-tur{display:inline-flex;gap:3px;margin:0 0 8px;padding:3px;border-radius:12px;background:var(--soft)}
+.nh-tur button{min-width:46px;min-height:32px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:600 .8rem var(--body);font-variant-numeric:tabular-nums;cursor:pointer}
+.nh-tur button[aria-pressed=true]{background:var(--btn);color:#fff}
+.nh-col canvas{cursor:grab}.nh-col canvas:active{cursor:grabbing}

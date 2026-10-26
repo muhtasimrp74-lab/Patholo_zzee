@@ -345,4 +345,5 @@ function home(){
   else if(r==='custom')builder();
   else if(r==='read')reading(),window.scrollTo(0,0);
   else home()}
+ (window.zzPre=window.zzPre||{}).mcqs=()=>{if(!M.firstElementChild&&!/^#\/mcqs/.test(location.hash))home()};   /* pager: draw the MCQ home while it is only a neighbour */
  addEventListener('hashchange',mq);setTimeout(mq,0)}

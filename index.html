@@ -1173,6 +1173,18 @@ h1 em{font-size:.66em;font-weight:700}
 .nh-more[open]>summary{margin-bottom:8px}
 @media(prefers-reduced-motion:reduce){.nh-more>summary::after{transition:none}}
 
+/* fading lens under the progress map (fxgl.js) */
+.nh-fade{margin-top:14px;display:flex;flex-direction:column;gap:2px}
+.nh-fade-h{margin:0 0 6px;font:600 .9rem var(--body);color:var(--lbl)}
+.nh-fade a{display:flex;justify-content:space-between;gap:12px;padding:9px 4px;border-top:1px solid var(--line);color:var(--text);text-decoration:none;font:500 .88rem/1.35 var(--body)}
+.nh-fade a small{flex:none;color:var(--muted);font-size:.76rem}
+
+/* whole-slide map: objective turret (fxgl.js) */
+.nh-tur{display:inline-flex;gap:3px;margin:0 0 8px;padding:3px;border-radius:12px;background:var(--soft)}
+.nh-tur button{min-width:46px;min-height:32px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:600 .8rem var(--body);font-variant-numeric:tabular-nums;cursor:pointer}
+.nh-tur button[aria-pressed=true]{background:var(--btn);color:#fff}
+.nh-col canvas{cursor:grab}.nh-col canvas:active{cursor:grabbing}
+
 /* ---- cinematic banners on Questions / Chapters / MCQs / Textbook / Menu: same ratios as the homepage banner (images: icons/pb-*.webp) ---- */
 .pb{position:relative;height:clamp(420px,32vw,500px);background:#1D181B;color:#FFFDFA;overflow:hidden}
 .pb-pic{position:absolute;inset:0}
@@ -2319,6 +2331,18 @@ html body :is(.topic,.card,.mx-acc,.mx-day,.tbtile,.dc,.pc,.empty){border-radius
 
 /* card actions on phones: a long label ("Mark as learned") wraps to two short lines instead of being cut off */
 @media(max-width:640px){html body .act span{white-space:normal!important;text-align:center;line-height:1.15}}
+
+/* ===== Fluorescence theme (dark + data-tone=fluo): near-black field, DAPI blue, FITC green, TRITC red; text pairs pass AA ===== */
+:root[data-theme=dark][data-tone=fluo]{--bg:#07090D;--panel:#0F141B;--paper:#0F141B;--line:#1E2A36;--line2:#2A3A4A;--text:#E6EEF5;--muted:#9DB0C2;--navy:#F2F6FA;
+ --burgundy:#7FB2FF;--burgundy2:#9CC4FF;--blue:#7FB2FF;--cobalt:#7FB2FF;--orange:#FF8A96;--red:#FF8A96;--lbl:#7FB2FF;--rosy:#FF8A96;--rosy2:#FF8A96;--plum:#E6EEF5;--plum2:#5BE39A;
+ --chip:#141B24;--soft:#141B24;--accbg:#12233A;--infobg:#102030;--mark:#5BE39A;--ok:#5BE39A;--ok-btn:#1E7A4C;--sage:#5BE39A;--sage2:#5BE39A;--amber:#FFC66B;--amberbg:#2A2210;
+ --btn:#2A5FD0;--btnh:#3A6FE0;--bad-btn:#B8323F;--tv:#7FB2FF;--tw:#FF8A96;
+ --g-mist:linear-gradient(160deg,#0F141B,#101A26);--g-pulse:linear-gradient(100deg,#2A5FD0,#1E7A4C 60%,#B8323F);--g-btn:linear-gradient(100deg,#2A5FD0,#2C4FB8 60%,#1E6A8C);
+ --mesh:radial-gradient(60rem 40rem at 12% -8%,rgba(80,140,255,.10),transparent 60%),radial-gradient(48rem 36rem at 96% 6%,rgba(60,220,140,.06),transparent 60%),radial-gradient(52rem 40rem at 70% 104%,rgba(255,90,110,.06),transparent 60%);
+ --gx-blobs:radial-gradient(40vmax 34vmax at 6% 18%,rgba(70,130,255,.28),transparent 70%),radial-gradient(36vmax 32vmax at 96% 30%,rgba(60,220,140,.16),transparent 70%),radial-gradient(46vmax 38vmax at 74% 98%,rgba(255,80,105,.18),transparent 70%),radial-gradient(30vmax 26vmax at 4% 92%,rgba(70,130,255,.16),transparent 70%)}
+:root[data-theme=dark][data-tone=fluo] body .mx{--mx-ok:#3CCB7F;--mx-no:#E04A5F;--gx-ok-ink:#5BE39A;--gx-no-ink:#FF8A96;--gx-sel:linear-gradient(135deg,rgba(80,140,255,.28),rgba(80,140,255,.1));--gx-sel-bd:rgba(127,178,255,.55)}
+/* polarised light on amyloid pages: crossed polars darken the field, the stain glows apple-green */
+:root[data-tone=fluo].zz-pol{--bg:#030405;--panel:#0A0D0F;--lbl:#B8F07A;--burgundy:#B8F07A;--blue:#B8F07A;--mark:#B8F07A;--accbg:#16220E;--btn:#3F6E1C;--g-btn:linear-gradient(100deg,#3F6E1C,#2E5A2A)}
 /* ===== batch 1 styles (qol.js), loaded after refine.css ===== */
 
 /* top bar: Annotate, Theme, Aa, Focus, Listen. Text size, Calm reading and Print live in the Aa panel. */
@@ -2652,9 +2676,9 @@ html body .mx{
  --gx-blobs:radial-gradient(40vmax 34vmax at 6% 18%,rgba(176,58,96,.36),transparent 70%),radial-gradient(36vmax 32vmax at 96% 30%,rgba(98,70,170,.3),transparent 70%),
   radial-gradient(46vmax 38vmax at 74% 98%,rgba(150,52,110,.32),transparent 70%),radial-gradient(30vmax 26vmax at 4% 92%,rgba(122,31,54,.32),transparent 70%);
  --gx-nuclei:radial-gradient(circle at 30% 35%,rgba(170,140,230,.09) 0 3px,transparent 4.5px),radial-gradient(circle at 70% 65%,rgba(233,165,187,.07) 0 2.5px,transparent 4px)}
-html body:has(> #v-mcqs:not([hidden]))::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:1;transform:translateZ(0);background:var(--gx-blobs)}
+html body:has(#v-mcqs:not([hidden]))::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:1;transform:translateZ(0);background:var(--gx-blobs)}
 /* with a mouse the big panes blur, so the slide gets a faint scatter of nuclei for the frost to catch */
-@media(hover:hover) and (pointer:fine){html body:has(> #v-mcqs:not([hidden]))::after{background:var(--gx-nuclei),var(--gx-blobs);
+@media(hover:hover) and (pointer:fine){html body:has(#v-mcqs:not([hidden]))::after{background:var(--gx-nuclei),var(--gx-blobs);
  background-size:47px 53px,61px 67px,auto,auto,auto,auto;background-repeat:repeat,repeat,no-repeat,no-repeat,no-repeat,no-repeat}}
 
 /* ---------- materials ---------- */
@@ -2900,12 +2924,27 @@ html.zz-flat body .mx :is(.mx-top,.mx-act,.mx-rbar,.mx-pal-in){background:var(--
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){html body .mx :is(.mx-top,.mx-act,.mx-rbar,.mx-pal-in){background:var(--panel)!important}}
 /* the OS asks for less transparency: solid surfaces, no slide behind */
 @media(prefers-reduced-transparency:reduce){
- html body:has(> #v-mcqs:not([hidden]))::after{display:none}
+ html body:has(#v-mcqs:not([hidden]))::after{display:none}
  html body .mx :is(.mx-card,.mx-acc,.mx-day,.mx-res,.mx-sum,.mx-top,.mx-act,.mx-rbar,.mx-pal-in,.mx-next){background:var(--panel)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
  html body .mx :is(.mx-o,.mx-s,.mx-tile,.mx-chd,.mx-chd2,.mx-paper,.mx-hist,.mx-weak button,.mx-strip button,.mx-pal-g button,.mx-qb,.mx-f,.mx-ib,.mx-bm,.mx-tp button,.mx-goal button,.mx-sel,.mx-btn.ghost){background-color:var(--soft)}
  html body .mx .mx-pal{-webkit-backdrop-filter:none;backdrop-filter:none}}
-@media print{html body:has(> #v-mcqs:not([hidden]))::after{display:none}
+@media print{html body:has(#v-mcqs:not([hidden]))::after{display:none}
  html body .mx :is(.mx-card,.mx-res,.mx-o,.mx-s){background:#fff!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-color:#bbb!important}}
+
+/* ===== pager (pager.js): six tab panes side by side, native scroll-snap ===== */
+#zz-pager{position:fixed;top:0;left:0;right:0;bottom:var(--zz-pgb,0px);z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;
+ scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+#zz-pager::-webkit-scrollbar{display:none}
+#zz-pager>.view{flex:0 0 100%;width:100%;min-width:100%;height:100%;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;
+ overscroll-behavior-y:contain;scroll-snap-align:start;scroll-snap-stop:always;animation:none!important}
+#zz-pager>.view[hidden]{display:block!important}
+#zz-pager>.view[hidden] :is(.mx-act,.mx-pal){display:none!important}
+html:not(.zz-pg) #zz-pager{visibility:hidden;pointer-events:none;content-visibility:hidden}
+html.zz-pg body{overflow:hidden}
+body.mx-live #zz-pager{bottom:0}
+body:is(.an-on,.mx-live) #zz-pager{overflow-x:hidden}
+:where(#zz-pager) :where(.card .ans,canvas,input,textarea,select,[data-no-swipe]){touch-action:pan-y}
+@media print{#zz-pager{position:static;display:block;overflow:visible}#zz-pager>.view{height:auto;overflow:visible}#zz-pager>.view[hidden]{display:none!important}}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -3816,6 +3855,7 @@ counts();dash();
   exp:'<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M4.5 19.5h15"/>',imp:'<path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4.5 19.5h15"/>',out:'<path d="M14 4.5h4.5v15H14M10 8l-4 4 4 4M6 12h10"/>',
   me:'<circle cx="12" cy="9" r="3.6"/><path d="M5.2 19.6a6.8 6.8 0 0 1 13.6 0"/>',
   tis:'<circle cx="8" cy="9" r="3.2"/><circle cx="16" cy="8" r="2.4"/><circle cx="14.5" cy="16" r="3.4"/>',fx:'<path d="M12 3.5v2.5M12 18v2.5M3.5 12H6M18 12h2.5"/><circle cx="12" cy="12" r="4.2"/>',hap:'<rect x="8" y="3.5" width="8" height="17" rx="2"/><path d="M4.5 9v6M19.5 9v6"/>'};
+ I.pgr='<path d="M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4"/>';
  const ic=k=>'<svg class="zm-ic" viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>',CH='<svg class="zm-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
  const link=(h,k,t,c)=>'<a class="zm-row" href="'+h+'">'+ic(k)+'<span class="zm-l">'+t+'</span>'+(c?'<span class="zm-v cn" data-c="'+c+'">0</span>':'')+CH+'</a>';
  const sw=(id,k,t)=>'<button type="button" class="zm-row" role="switch" aria-checked="false" id="'+id+'">'+ic(k)+'<span class="zm-l">'+t+'</span><span class="zm-tg" aria-hidden="true"></span></button>';
@@ -3829,11 +3869,11 @@ counts();dash();
   grp('zm-h-data','Your data',btn('zm-exp','exp','Export backup')+btn('zm-imp','imp','Import backup')+'<input type="file" accept=".json" id="zm-file" hidden>')+
  '</div><div>'+
   grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
-  grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button></span></div>'+
+  grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button><button type="button" role="radio" data-th="fluo">Fluorescence</button></span></div>'+
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
    sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
-   '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
-   sw('zm-tis','tis','Tissue background')+sw('zm-hap','hap','Haptics'))+
+   '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="auto">Auto</button><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
+   sw('zm-tis','tis','Tissue background')+sw('zm-pgr','pgr','Swipe between tabs')+sw('zm-hap','hap','Haptics'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
   '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
    '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
@@ -3846,7 +3886,7 @@ counts();dash();
  const cb=$x('#zm-calm');cb.onclick=()=>{press('calm');sync()};
  const ib=$x('#zm-ink');ib.onclick=()=>{press('ink');setTimeout(sync,0)};
  /* the toolbar button steps Light > Sepia > Dark (polish.js), so tap it until the chosen theme is on */
- X.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{for(let i=0;i<3&&theme()!==b.dataset.th;i++)press('theme');sync()});
+ X.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{for(let i=0;i<4&&theme()!==b.dataset.th;i++)press('theme');sync()});
  X.querySelectorAll('[data-st]').forEach(b=>b.onclick=()=>{press(b.dataset.st);sync()});
  $x('#zm-exp').onclick=()=>exp();
  const fi=$x('#zm-file');$x('#zm-imp').onclick=()=>fi.click();fi.onchange=()=>{if(fi.files[0])imp(fi.files[0]);fi.value=''};
@@ -3887,14 +3927,15 @@ counts();dash();
  /* Tissue background: the moving stained-tissue backdrop (fxgl.js); on unless switched off */
  $x('#zm-tis').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.tissue=s.pref.tissue===false;save();
   document.documentElement.classList.toggle('fx-notis',s.pref.tissue===false);if(window.zzFxGl)zzFxGl.wake(3000);sync()};
+ $x('#zm-pgr').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.pager=s.pref.pager===false;save();if(window.zzPager)zzPager.sync();sync()};
  const hb=$x('#zm-hap');if(!('vibrate' in navigator))hb.hidden=true;
  hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
- function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':de.dataset.tone==='sepia'?'sepia':'light'}
+ function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(de.dataset.tone==='fluo'?'fluo':'dark'):de.dataset.tone==='sepia'?'sepia':'light'}
  function sync(){
   on(qb,bd.classList.contains('quiz'));on($x('#zm-focus'),bd.classList.contains('focus'));on(cb,bd.classList.contains('calm'));cb.hidden=!tool('calm');
   const t=tool('ink');on(ib,t&&t.getAttribute('aria-pressed')==='true');ib.hidden=!t;
   on(fb,app||fsOn());on(rb,de.classList.contains('zz-flat'));
-  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'full';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false);on($x('#zm-tis'),p.tissue!==false)}
+  {const p=(typeof S!=='undefined'&&S.pref)||{},fv=p.fx||'auto';X.querySelectorAll('[data-fx]').forEach(b=>{const c=b.dataset.fx===fv;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});on($x('#zm-hap'),p.hap!==false);on($x('#zm-tis'),p.tissue!==false);on($x('#zm-pgr'),p.pager!==false)}
   const th=theme();X.querySelectorAll('[data-th]').forEach(b=>{const c=b.dataset.th===th;b.setAttribute('aria-checked',String(c));b.tabIndex=c?0:-1});
   const f=+((S.pref&&S.pref.fs)||1);$x('#zm-fsv').textContent=Math.round(f*100)+'%';$x('[data-st=fm]').disabled=f<=.8;$x('[data-st=fp]').disabled=f>=1.6;
  }
@@ -4318,6 +4359,7 @@ function home(){
   else if(r==='custom')builder();
   else if(r==='read')reading(),window.scrollTo(0,0);
   else home()}
+ (window.zzPre=window.zzPre||{}).mcqs=()=>{if(!M.firstElementChild&&!/^#\/mcqs/.test(location.hash))home()};   /* pager: draw the MCQ home while it is only a neighbour */
  addEventListener('hashchange',mq);setTimeout(mq,0)}
 
 /* GENERATED from src/legacy/textbook.ts by `npm run build:classic`. Edit the .ts, not this file. */
@@ -4799,10 +4841,77 @@ views.forEach(x=>x.hidden=x!==v);document.title=v.dataset.title;
 document.querySelectorAll('.card.hl').forEach(c=>c.classList.remove('hl'));
 if(COLL[p[0]])render(COLL[p[0]]);hook(p);
 const t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');
-if(t){if(t.classList.contains('card')){t.classList.add('hl');if(document.body.classList.contains('quiz'))t.classList.add('open')}t.scrollIntoView({behavior:'instant',block:'start'})}else window.scrollTo({top:0,left:0,behavior:'instant'})}
+if(t){if(t.classList.contains('card')){t.classList.add('hl');if(document.body.classList.contains('quiz'))t.classList.add('open')}t.scrollIntoView({behavior:'instant',block:'start'})}else if(!(window.zzPager&&zzPager.keep(v)))window.scrollTo({top:0,left:0,behavior:'instant'})}
 addEventListener('hashchange',route);
 try{if(zzStore.getItem('vivaQuiz'))setQuiz(true)}catch(e){}
 route();
+
+/* ===== pager.js: the six bottom-bar tabs as one side-by-side track (native scroll-snap, no JS transforms) =====
+   route() and the hash stay the source of truth: after every route the six tab views sit in #zz-pager in bottom-bar order,
+   the active one scrolls into place, the others stay [hidden] (shown by CSS), inert and aria-hidden. A swipe that settles on
+   another pane sets location.hash. Non-tab routes hide the track and keep the old window scrolling. S.pref.pager=false: off.
+   window.zzScroller() returns the element that scrolls the page you are on (active pane, or the document). */
+(function(){try{
+const de=document.documentElement,TABS=['home','questions','qa','mcqs','textbook','menu'],HREF=['#/','#/questions','#/qa','#/mcqs','#/textbook','#/menu'];
+const st=()=>typeof S!=='undefined'?S:null,want=()=>{const s=st();return !(s&&s.pref&&s.pref.pager===false)};
+const RM=matchMedia('(prefers-reduced-motion: reduce)'),quick=()=>RM.matches||!!(window.zzFx&&zzFx.level()==='off');
+const V=i=>document.getElementById('v-'+TABS[i]),tabOf=v=>v?TABS.indexOf(v.id.slice(2)):-1;
+let T=null,act=-1,prog=false,end=0,pt=0,last={},pre=new Set(),first=true;
+window.zzPre=window.zzPre||{};
+window.zzScroller=()=>{if(T&&de.classList.contains('zz-pg')){const v=T.querySelector(':scope>.view:not([hidden])');if(v)return v}return document.scrollingElement||de};
+function make(){
+ if(T)return;T=document.createElement('div');T.id='zz-pager';
+ const f=V(0)||document.querySelector('.view');f.parentNode.insertBefore(T,f);
+ T.addEventListener('scroll',live,{passive:true});if('onscrollend' in T)T.addEventListener('scrollend',settle);
+ ['pointerdown','touchstart','wheel'].forEach(e=>T.addEventListener(e,()=>{prog=false},{passive:true}));
+}
+function adopt(){for(let i=0;i<6;i++){const v=V(i);if(!v||v.parentNode===T)continue;let nx=null;for(let j=i+1;j<6;j++){const w=V(j);if(w&&w.parentNode===T){nx=w;break}}T.insertBefore(v,nx);v.classList.add('zz-pane')}}
+function teardown(){if(!T)return;[...T.children].forEach(v=>{v.classList.remove('zz-pane');v.removeAttribute('inert');v.removeAttribute('aria-hidden');T.parentNode.insertBefore(v,T)});T.remove();T=null;act=-1;de.classList.remove('zz-pg')}
+const bar=()=>{const b=document.getElementById('bnav');if(!b)return;const cs=getComputedStyle(b);if(cs.display==='none'){if(!document.body.classList.contains('mx-live'))de.style.setProperty('--zz-pgb','0px');return}
+ de.style.setProperty('--zz-pgb',Math.max(0,Math.round(innerHeight-b.getBoundingClientRect().top))+'px')};
+function sync(){
+ if(!want()){teardown();return}
+ const v=document.querySelector('.view:not([hidden])'),i=tabOf(v);
+ if(i<0){if(T)de.classList.remove('zz-pg');return}
+ make();adopt();
+ if(!de.classList.contains('zz-pg')){de.classList.add('zz-pg');if(scrollY)scrollTo({top:0,left:0,behavior:'instant'})}
+ const P=[...T.children],k=P.indexOf(v);
+ P.forEach(p=>{if(p===v){p.removeAttribute('inert');p.removeAttribute('aria-hidden')}else{p.setAttribute('inert','');p.setAttribute('aria-hidden','true')}});
+ last[TABS[i]]=location.hash||'#/';
+ const x=k*T.clientWidth;
+ if(Math.abs(T.scrollLeft-x)>2){prog=true;T.scrollTo({left:x,behavior:quick()||act<0?'instant':'smooth'})}
+ act=k;
+ if(first){first=false;const p=location.hash.replace(/^#\/?/,'').split('/'),t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');if(t&&v.contains(t))t.scrollIntoView({behavior:'instant',block:'start'})}
+ requestAnimationFrame(bar);
+ (window.requestIdleCallback||setTimeout)(()=>[P[k-1],P[k+1]].forEach(n=>{const id=n&&n.id.slice(2);if(!id||pre.has(id)||!zzPre[id])return;pre.add(id);try{zzPre[id]()}catch(e){}}),{timeout:2500});
+}
+const anchor=v=>{const i=tabOf(v);return i<0?null:document.querySelector('#bnav a[href="'+HREF[i]+'"]')};
+/* the bottom-bar pill (fx.js) and highlight follow the finger */
+function live(){
+ if(!de.classList.contains('zz-pg'))return;
+ const n=document.getElementById('bnav'),P=[...T.children],w=T.clientWidth||1,f=Math.max(0,Math.min(P.length-1,T.scrollLeft/w));
+ if(n&&n.offsetParent){const near=anchor(P[Math.round(f)]);n.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a===near));
+  const p=n.querySelector('.fx-pill'),i0=Math.floor(f),a0=anchor(P[i0]),a1=anchor(P[Math.min(P.length-1,i0+1)]);
+  if(p&&a0&&a1){const u=f-i0,nr=n.getBoundingClientRect(),r0=a0.getBoundingClientRect(),r1=a1.getBoundingClientRect();
+   p.style.transition='none';p.style.width=(r0.width+(r1.width-r0.width)*u)+'px';p.style.transform='translate('+Math.round(r0.left+(r1.left-r0.left)*u-nr.left)+'px,'+Math.round(r0.top-nr.top)+'px)';
+   clearTimeout(pt);pt=setTimeout(()=>{p.style.transition=''},180)}}
+ clearTimeout(end);end=setTimeout(settle,160);
+}
+function settle(){
+ clearTimeout(end);if(!T||!de.classList.contains('zz-pg'))return;
+ const P=[...T.children],k=Math.max(0,Math.min(P.length-1,Math.round(T.scrollLeft/(T.clientWidth||1))));
+ if(k===act){prog=false;return}if(prog)return;
+ const i=tabOf(P[k]);if(i<0)return;
+ act=k;if(window.zzFx)zzFx.haptic(6);
+ location.hash=last[TABS[i]]||HREF[i];
+}
+window.zzPager={sync,on:()=>!!T&&de.classList.contains('zz-pg'),
+ keep:v=>!!T&&want()&&tabOf(v)>=0,
+ tabs:h=>{if(!T||!de.classList.contains('zz-pg'))return false;const k=(h||'').replace(/^#\/?/,'').split('/')[0];return ['','home','questions','qa','topics','mcqs','textbook','menu'].includes(k)}};
+addEventListener('hashchange',sync);
+addEventListener('resize',()=>{if(T&&de.classList.contains('zz-pg')&&act>=0){T.scrollTo({left:act*T.clientWidth,behavior:'instant'});bar()}});
+sync();
+}catch(e){}})();
 
 function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parseFloat(r.style.getPropertyValue('--p'))||0;r.classList.toggle('hi',v>=82);r.classList.toggle('z',v<=0)})}
 (function(){const p0=prog;prog=function(){p0();updRings()}})();updRings();
@@ -5371,7 +5480,7 @@ try{const o=JSON.parse(zzStore.getItem(KEY)||'{}');
  if(o&&o.pos&&typeof o.pos==='object')for(const h in o.pos){const p=o.pos[h];if(valid(h)&&p&&typeof p==='object'&&Number.isFinite(p.y))M.pos[h]={y:p.y,o:Number.isFinite(p.o)?p.o:0,a:typeof p.a==='string'&&/^[A-Za-z0-9_-]{1,40}$/.test(p.a)?p.a:'',t:+p.t||0}}
 }catch(e){}
 const persist=()=>{try{zzStore.setItem(KEY,JSON.stringify(M))}catch(e){}};
-const view=()=>document.querySelector('.view:not([hidden])');
+const view=()=>document.querySelector('.view:not([hidden])'),SC=()=>(window.zzScroller?zzScroller():document.scrollingElement||document.documentElement);
 let cur=null,pending=null,st=0,acted=/^#\/[^/]+\/./.test(location.hash);
 /* a position is only worth keeping once you have moved on this page (or opened it at a specific question):
    pages also shift by themselves while answers and fonts load, and that is not "where you were" */
@@ -5382,7 +5491,7 @@ function save(){
  if(!acted||!cur||tbCh(cur)||base(location.hash)!==cur)return;   /* never record a page you have already left */
  const v=view();if(!v)return;
  let a=null;for(const c of v.querySelectorAll('.card[id]')){const r=c.getBoundingClientRect();if(r.height&&r.bottom>90){a=c;break}}
- const n={y:Math.round(scrollY),a:a?a.id:'',o:a?Math.round(a.getBoundingClientRect().top):0},q=M.pos[cur];
+ const n={y:Math.round(SC().scrollTop),a:a?a.id:'',o:a?Math.round(a.getBoundingClientRect().top):0},q=M.pos[cur];
  if(q&&q.y===n.y&&q.a===n.a&&q.o===n.o)return;          /* nothing moved: no write */
  if(n.y<=2){if(q){delete M.pos[cur];persist()}return}    /* the top of the page is where it opens anyway */
  n.t=Date.now();M.pos[cur]=n;
@@ -5394,13 +5503,13 @@ function restore(b){
  const p=M.pos[b];if(!p)return;let mine=false;
  const stop=()=>{mine=true};['wheel','touchstart','keydown'].forEach(e=>addEventListener(e,stop,{once:true,passive:true,capture:true}));
  const go=()=>{if(mine||base(location.hash)!==b)return;const v=view(),el=p.a&&v&&v.querySelector('#'+CSS.escape(p.a));
-  const y=el&&el.getClientRects().length?scrollY+el.getBoundingClientRect().top-p.o:p.y;
-  if(Math.abs(y-scrollY)>1)scrollTo({top:Math.max(0,y),left:0,behavior:'instant'})};
+  const sc=SC(),y=el&&el.getClientRects().length?sc.scrollTop+el.getBoundingClientRect().top-p.o:p.y;
+  if(Math.abs(y-sc.scrollTop)>1)sc.scrollTo({top:Math.max(0,y),left:0,behavior:'instant'})};
  go();[60,200,500,1000].forEach(t=>setTimeout(go,t));
 }
 addEventListener('hashchange',()=>{acted=/^#\/[^/]+\/./.test(location.hash)},true);   /* each page starts unmoved, unless opened at a question */
 addEventListener('hashchange',()=>setTimeout(()=>{track();const p=pending;pending=null;if(p&&p===cur&&!tbCh(cur))restore(cur)},0));
-addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(save,250)},{passive:true});
+addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(save,250)},{passive:true,capture:true});
 addEventListener('pagehide',save);document.addEventListener('visibilitychange',()=>{if(document.hidden)save()});
 document.addEventListener('click',e=>{
  const a=e.target.closest&&e.target.closest('#bnav a,.nav .links a');
@@ -5535,7 +5644,7 @@ function qsync(c){const n=c.querySelector('.zq-qn');if(!n)return;const l=cardsOf
 function qgo(c,d){
  const l=cardsOf(c),t=l[l.indexOf(c)+d];if(!t)return;
  const bar=t.closest('.view')&&t.closest('.view').querySelector('.bar'),off=(bar&&getComputedStyle(bar).position==='sticky'?bar.getBoundingClientRect().height:0)+72;
- scrollTo({top:scrollY+t.getBoundingClientRect().top-off,behavior:'instant'});qnav(t);
+ {const sc=(window.zzScroller?zzScroller():document.scrollingElement||document.documentElement);sc.scrollTo({top:sc.scrollTop+t.getBoundingClientRect().top-off,behavior:'instant'})}qnav(t);
  const f=t.querySelector('header');if(f){f.setAttribute('tabindex','-1');f.focus({preventScroll:true})}
 }
 /* answers are on the page already, so each card gets its buttons as it scrolls into view */
@@ -5567,7 +5676,13 @@ all();addEventListener('hashchange',()=>setTimeout(all,0));document.addEventList
 (function(){try{
 const de=document.documentElement,$=(s,r)=>(r||document).querySelector(s),st=()=>typeof S!=='undefined'?S:null;
 const RM=matchMedia('(prefers-reduced-motion: reduce)');
-function level(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'full';if(v==='off')return 'off';if(RM.matches||de.classList.contains('zz-still'))return 'min';return v==='min'?'min':'full'}
+/* tier ladder: 0 static (Off), 1 CSS (Minimal), 2 canvas, 3 WebGL (Full). "Auto" (default) picks from the device; a manual choice wins */
+function autoTier(){const n=navigator,c=n.connection;if(c&&c.saveData)return 1;const m=n.deviceMemory,k=n.hardwareConcurrency||4;
+ if((m&&m<=2)||k<=2)return 1;if((m&&m<=4)||k<=4)return 2;return 3}
+function tier(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'auto';if(v==='off')return 0;if(RM.matches||de.classList.contains('zz-still'))return 1;
+ return v==='min'?1:v==='full'?3:autoTier()}
+window.zzTier=tier;
+function level(){const t=tier();return t===0?'off':t===1?'min':'full'}
 function apply(){const l=level();['full','min','off'].forEach(x=>de.classList.toggle('fx-'+x,l===x));pill()}
 const haptic=p=>{const s=st();if((s&&s.pref&&s.pref.hap===false)||level()==='off')return;try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}};
 window.zzFx={level,apply,haptic};
@@ -5578,7 +5693,7 @@ const MENU=['practice','bookmarks','favourites','notes','howto','search','menu',
 const tab=h=>{const k=(h||'').replace(/^#\/?/,'').split('/')[0];return k===''||k==='home'?0:k==='questions'?1:k==='mcqs'?3:k==='textbook'?4:MENU.includes(k)?5:2};
 window.zzGo=function(href){
  if(!href||href===location.hash)return;
- if(!document.startViewTransition||level()==='off'||busy()){location.hash=href;return}
+ if(!document.startViewTransition||level()==='off'||busy()||(window.zzPager&&zzPager.tabs(href)&&zzPager.tabs(location.hash))){location.hash=href;return}   /* tab to tab in the pager: the track slides instead */
  const d=tab(href)-tab(location.hash);de.dataset.fxDir=d>0?'fwd':d<0?'back':'same';de.classList.add('fx-vt');
  let t;try{t=document.startViewTransition(()=>new Promise(res=>{let ok=false;const done=()=>{if(ok)return;ok=true;removeEventListener('hashchange',done);setTimeout(res,0)};   /* not requestAnimationFrame: rendering is paused until this resolves */
   addEventListener('hashchange',done);location.hash=href;setTimeout(done,600)}))}catch(e){de.classList.remove('fx-vt');location.hash=href;return}
@@ -5668,7 +5783,7 @@ function loop(t){
  if(more)raf=requestAnimationFrame(loop);else lastT=0;
 }
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)wake(3000)});
-['scroll','pointermove','pointerdown','keydown','touchstart'].forEach(e=>addEventListener(e,()=>wake(),{passive:true}));
+['scroll','pointermove','pointerdown','keydown','touchstart'].forEach(e=>addEventListener(e,()=>wake(),{passive:true,capture:true}));
 
 /* ---------- colours from the active theme (so light, sepia and dark all tint correctly) ---------- */
 const probe=document.createElement('i');probe.style.display='none';document.body.append(probe);
@@ -5706,7 +5821,7 @@ function bgPal(){const B=col('var(--bg)','#F8F3EE'),pl=col('var(--plum)','#6B2D5
 const tissue=()=>{const s=st();return !(s&&s.pref&&s.pref.tissue===false)};   /* Menu > Display > Tissue background */
 de.classList.toggle('fx-notis',!tissue());
 function backdrop(){
- if(bg||!full()||!tissue())return;
+ if(bg||!full()||!tissue()||(window.zzTier&&zzTier()<3))return;   /* WebGL is tier 3 only */
  const cv=document.createElement('canvas');cv.className='fx-bg';cv.setAttribute('aria-hidden','true');document.body.prepend(cv);
  const F=field(cv);if(!F){cv.remove();return}
  let pal=bgPal(),lastF=0,shown=false,vy=0,py=scrollY;
@@ -5717,8 +5832,8 @@ function backdrop(){
   if(!full()||!tissue()){cv.style.opacity='0';return false}
   const live=!slow&&t<awake;if(!live&&lastF)return false;
   if(lastF&&t-lastF<66)return true;lastF=t;   /* ~15 fps is plenty for a slow drift */
-  const d=scrollY-py;py=scrollY;vy=vy*.85+d*.15;
-  F.draw(t,1.25,t*.00002,scrollY*.00035+vy*.002,pal);
+  const Y=(window.zzScroller?zzScroller():document.scrollingElement||document.documentElement).scrollTop,d=Y-py;py=Y;vy=vy*.85+d*.15;
+  F.draw(t,1.25,t*.00002,Y*.00035+vy*.002,pal);
   if(!shown){shown=true;requestAnimationFrame(()=>cv.classList.add('on'))}
   return live}};
  sys.add(bg);wake(4000);
@@ -5728,7 +5843,7 @@ function backdrop(){
 let hero=null;
 function heroPal(){const pl=col('var(--plum)','#6B2D5C'),ro=col('var(--rosy)','#D98FA8');return[[.08,.03,.07],mix([.08,.03,.07],ro,.55),mix([.08,.03,.07],pl,.5),mix(pl,[.15,.05,.2],.3)]}
 function heroInit(){
- const host=$('#v-home .nh-bn-pic');if(!host||!full()||host.querySelector('.fx-hero'))return;
+ const host=$('#v-home .nh-bn-pic');if(!host||!full()||(window.zzTier&&zzTier()<3)||host.querySelector('.fx-hero'))return;
  if(getComputedStyle(host).position==='static')host.style.position='relative';   /* desktop already positions the picture behind the title: leave it */
  const cv=document.createElement('canvas');cv.className='fx-hero';cv.setAttribute('aria-hidden','true');host.append(cv);
  const F=field(cv);if(!F){cv.remove();return}
@@ -5750,8 +5865,11 @@ function heroInit(){
 }
 
 /* ---------- C22: progress map, one cell per question ---------- */
+const FONT='"Hanken Grotesk",system-ui,sans-serif';
+const sr=()=>{const s=st();return (s&&s.sr&&typeof s.sr==='object')?s.sr:{}};
+const inten=(id,now)=>{const o=sr()[id];if(!o)return 0;const b=Math.max(0,Math.min(5,o.b|0)),base=.35+.13*b;if(!(now>o.d))return base;return base*Math.max(.12,1-(now-o.d)/864e5/14)};
 function colony(){
- const box=$('#v-home .nh-col');if(!box||box.dataset.fx)return;box.dataset.fx='1';
+ const box=$('#v-home .nh-col');if(!box)return;if(box.dataset.fx){if(box._zzRe)box._zzRe();return}box.dataset.fx='1';
  const D=typeof DATA!=='undefined'?DATA:null,s=st();if(!D||!s){box.hidden=true;return}
  const cv=box.querySelector('canvas'),tip=box.querySelector('.nh-col-tip'),L=new Set(s.learned||[]),B=new Set(s.bm||[]);
  const N=D.length,nL=D.filter(d=>L.has(d[3])).length,nB=D.filter(d=>B.has(d[3])).length;
@@ -5759,20 +5877,70 @@ function colony(){
  const sum=box.querySelector('.nh-col-n');if(sum)sum.textContent=nL+' of '+N+' learned';
  const C={ink:col('var(--plum)','#6B2D5C'),eo:col('var(--rosy)','#D98FA8'),dot:col('var(--line2)','#DCC6D3'),gold:[.84,.68,.41]};
  const rgba=(c,a)=>'rgba('+Math.round(c[0]*255)+','+Math.round(c[1]*255)+','+Math.round(c[2]*255)+','+a+')';
- let cell=0,cols=0,W=0,H=0,dpr=Math.min(2,devicePixelRatio||1),t0=0,grown=false;
+ let cell=0,cols=0,W=0,H=0,dpr=Math.min(2,devicePixelRatio||1),t0=0,grown=false,VH=0,k=0,kmin=1,tx=0,ty=0,mini=null,moved=0;
+ box.dataset.noSwipe='';
  try{grown=sessionStorage.getItem('zzColony')==='1'}catch(e){}
- const lay=()=>{W=box.clientWidth;cell=W<520?9:11;cols=Math.max(10,Math.floor(W/cell));const rows=Math.ceil(N/cols);H=rows*cell;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);cv.style.height=H+'px'};
- function draw(p){const g=cv.getContext('2d');g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,W,H);
-  for(let i=0;i<N;i++){const id=D[i][3],x=(i%cols+.5)*cell,y=(Math.floor(i/cols)+.5)*cell,l=L.has(id),b=B.has(id);
+ /* whole-slide map: the cells are the world; the canvas is a viewport you pan (drag) and zoom (pinch, ctrl+wheel, objective turret) */
+ const clampV=()=>{const ww=W*k,hh=H*k;tx=ww<=W?(W-ww)/2:Math.min(0,Math.max(W-ww,tx));ty=hh<=VH?(VH-hh)/2:Math.min(0,Math.max(VH-hh,ty));cv.style.touchAction=k>kmin*1.01?'none':'pan-y'};
+ const lay=()=>{W=box.clientWidth;cell=W<520?9:11;cols=Math.max(10,Math.floor(W/cell));const rows=Math.ceil(N/cols);H=rows*cell;
+  VH=Math.min(H,Math.max(220,Math.round(innerHeight*.45)));kmin=Math.min(1,VH/H);if(!k||k<kmin)k=kmin;clampV();cv.width=Math.round(W*dpr);cv.height=Math.round(VH*dpr);cv.style.height=VH+'px';mini=null};
+ const CHS=[],TPS=[];D.forEach((d,i)=>{if(!i||d[2]!==D[i-1][2]){const v=document.getElementById('v-'+d[2]);CHS.push([i,((v&&v.dataset.title)||d[2]).split(' | ')[0]])}if(!i||d[4]!==D[i-1][4])TPS.push([i,String(d[4]||'')])});
+ function buildMini(){const mw=72,mh=Math.max(20,Math.round(H*mw/W)),m=document.createElement('canvas');m.width=mw*dpr;m.height=mh*dpr;const q=m.getContext('2d'),f=mw/W,now=Date.now();q.scale(dpr,dpr);
+  q.fillStyle=rgba(C.dot,.5);q.fillRect(0,0,mw,mh);for(let i=0;i<N;i++){const I=inten(D[i][3],now);if(!I)continue;q.fillStyle=rgba(C.ink,(.9*I).toFixed(2));q.fillRect((i%cols)*cell*f,Math.floor(i/cols)*cell*f,Math.max(1,cell*f),Math.max(1,cell*f))}mini=m}
+ function over(g){g.setTransform(dpr,0,0,dpr,0,0);const sc=cell*k,P=(i)=>[tx+((i%cols)+.5)*cell*k,ty+(Math.floor(i/cols)+.5)*cell*k];
+  const lab=(t,x,y,f)=>{g.font=f;const w=g.measureText(t).width+12;if(x+w>W)x=W-w-2;if(y<10||y>VH-4)return;g.fillStyle='rgba(255,255,255,.82)';g.beginPath();g.roundRect?g.roundRect(x,y-13,w,18,9):g.rect(x,y-13,w,18);g.fill();g.fillStyle=rgba(C.ink,1);g.fillText(t,x+6,y)};
+  let ly=-99;
+  if(sc<14)CHS.forEach(([i,t])=>{const[x,y]=P(i);if(y-ly>20){lab(t.slice(0,40),Math.max(2,x-6),y,'600 11px '+FONT);ly=y}});
+  else if(sc<30)TPS.forEach(([i,t])=>{const[x,y]=P(i);if(t&&y-ly>18&&x>-40&&x<W){lab(t.slice(0,34),Math.max(2,x-6),y,'600 11px '+FONT);ly=y}});
+  else if(sc>=70){g.textAlign='center';g.fillStyle=rgba(C.ink,1);g.font='600 '+Math.round(sc*.13)+'px '+FONT;
+   for(let i=0;i<N;i++){const[x,y]=P(i);if(x<-sc||x>W+sc||y<-sc||y>VH+sc)continue;const w=String(D[i][1]||'').split(/\s+/).slice(0,3).join(' ');g.fillText(w.length>22?w.slice(0,21)+'…':w,x,y+sc*.42)}g.textAlign='left'}
+  if(k>kmin*1.05){if(!mini)buildMini();const mw=72,mh=mini.height/dpr,mx=W-mw-8,my=8;g.globalAlpha=.92;g.drawImage(mini,mx,my,mw,mh);g.globalAlpha=1;
+   g.strokeStyle=rgba(C.ink,.9);g.lineWidth=1.2;const f=mw/W;g.strokeRect(mx+(-tx/k)*f,my+(-ty/k)*f,Math.min(mw,(W/k)*f),Math.min(mh,(VH/k)*f))}
+  const n=[1,5,10,50,100,500].find(v=>v*sc>=40)||500,len=Math.min(W*.5,n*sc);g.fillStyle=rgba(C.ink,.85);g.fillRect(10,VH-12,len,3);g.font='600 10px '+FONT;g.fillText(n+' question'+(n>1?'s':'')+' wide',10,VH-17)}
+ function zoomAt(nk,sx,sy){nk=Math.max(kmin,Math.min(12,nk));const wx=(sx-tx)/k,wy=(sy-ty)/k;k=nk;tx=sx-wx*k;ty=sy-wy*k;clampV();draw(1);tur()}
+ {const pts=new Map();let pinch=null;
+  cv.addEventListener('pointerdown',e=>{try{cv.setPointerCapture(e.pointerId)}catch(x){}pts.set(e.pointerId,[e.clientX,e.clientY]);moved=0;if(pts.size===2){const[a,b]=[...pts.values()];pinch={d:Math.hypot(a[0]-b[0],a[1]-b[1])||1,k}}});
+  cv.addEventListener('pointermove',e=>{const o=pts.get(e.pointerId);if(!o)return;const dx=e.clientX-o[0],dy=e.clientY-o[1];pts.set(e.pointerId,[e.clientX,e.clientY]);
+   if(pts.size===1){if(k<=kmin*1.01&&e.pointerType==='touch')return;moved+=Math.abs(dx)+Math.abs(dy);tx+=dx;ty+=dy;clampV();draw(1)}
+   else if(pts.size===2&&pinch){const[a,b]=[...pts.values()],r=cv.getBoundingClientRect();moved=99;zoomAt(pinch.k*Math.hypot(a[0]-b[0],a[1]-b[1])/pinch.d,(a[0]+b[0])/2-r.left,(a[1]+b[1])/2-r.top)}});
+  const up=e=>{pts.delete(e.pointerId);if(pts.size<2)pinch=null};cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
+  cv.addEventListener('wheel',e=>{if(!e.ctrlKey)return;e.preventDefault();const r=cv.getBoundingClientRect();zoomAt(k*Math.exp(-e.deltaY*.01),e.clientX-r.left,e.clientY-r.top)},{passive:false})}
+ /* objective turret: 4x chapters as regions, 10x topics, 40x question cells, 100x key terms */
+ const OBJ=[['4x',()=>kmin],['10x',()=>Math.max(kmin,16/cell)],['40x',()=>Math.max(kmin,36/cell)],['100x',()=>Math.max(kmin,90/cell)]];
+ const turEl=document.createElement('div');turEl.className='nh-tur';turEl.setAttribute('role','group');turEl.setAttribute('aria-label','Objective');
+ turEl.innerHTML=OBJ.map((o,i)=>'<button type="button" data-o="'+i+'" aria-pressed="false">'+o[0]+'</button>').join('');cv.before(turEl);
+ function tur(){let b=0,bd=1e9;OBJ.forEach((o,i)=>{const d=Math.abs(Math.log(o[1]()/k));if(d<bd){bd=d;b=i}});turEl.querySelectorAll('button').forEach((x,i)=>x.setAttribute('aria-pressed',String(i===b)))}
+ turEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const to=OBJ[+b.dataset.o][1](),from=k,sx=W/2,sy=VH/2;if(window.zzFx)zzFx.haptic(6);
+  if(!full()||(window.zzTier&&zzTier()<2)){zoomAt(to,sx,sy);return}const t1=performance.now(),sy2={step(t){const u=Math.min(1,(t-t1)/320),e2=1-Math.pow(1-u,3);zoomAt(from*Math.pow(to/from,e2),sx,sy);if(u>=1){sys.delete(sy2);return false}return true}};sys.add(sy2);wake(600)});
+ function draw(p){const g=cv.getContext('2d');g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,W,VH);g.setTransform(dpr*k,0,0,dpr*k,dpr*tx,dpr*ty);
+  const r0=Math.max(0,Math.floor(-ty/k/cell)-1),r1=Math.ceil((VH-ty)/k/cell)+1;
+  const now=Date.now(),tn=performance.now();
+  for(let i=Math.min(N,r0*cols);i<Math.min(N,r1*cols);i++){const id=D[i][3],x=(i%cols+.5)*cell,y=(Math.floor(i/cols)+.5)*cell,l=L.has(id),b=B.has(id),I=inten(id,now);
    const k=p>=1?1:Math.max(0,Math.min(1,p*1.8-((i%cols)/cols+Math.floor(i/cols)*cols/N)*.4));   /* a diagonal sweep that ends exactly at p=1 */const e=1-Math.pow(1-k,3);
-   if(l){g.fillStyle=rgba(C.eo,.42);g.beginPath();g.arc(x,y,cell*.46*e,0,7);g.fill();g.fillStyle=rgba(C.ink,.95);g.beginPath();g.arc(x,y,cell*.24*e,0,7);g.fill()}
-   else{g.fillStyle=rgba(C.dot,.9);g.beginPath();g.arc(x,y,cell*.16,0,7);g.fill()}
-   if(b){g.strokeStyle=rgba(C.gold,.95);g.lineWidth=1.4;g.beginPath();g.arc(x,y,cell*.42*e,0,7);g.stroke()}}}
- lay();
+   /* fading stains: intensity from S.sr only (no entry = unstained, higher box = stronger, fades once overdue) */
+   if(I>0){g.fillStyle=rgba(C.eo,(.42*I).toFixed(3));g.beginPath();g.arc(x,y,cell*.46*e,0,7);g.fill();g.fillStyle=rgba(C.ink,(.95*I).toFixed(3));g.beginPath();g.arc(x,y,cell*.24*e,0,7);g.fill()}
+   else{g.fillStyle=rgba(C.dot,.9);g.beginPath();g.arc(x,y,cell*.16,0,7);g.fill();if(l){g.strokeStyle=rgba(C.ink,.5);g.lineWidth=1;g.beginPath();g.arc(x,y,cell*.3,0,7);g.stroke()}}
+   const rp=rip.get(id);if(rp!==undefined){const u=Math.min(1,(tn-rp)/900);g.strokeStyle=rgba(C.eo,(.9*(1-u)).toFixed(3));g.lineWidth=1.6;g.beginPath();g.arc(x,y,cell*(.3+1.6*u),0,7);g.stroke()}
+   if(b){g.strokeStyle=rgba(C.gold,.95);g.lineWidth=1.4;g.beginPath();g.arc(x,y,cell*.42*e,0,7);g.stroke()}}
+  over(g)}
+ const rip=new Map(),SRK='zzSrSeen';
+ const snap=()=>{const o={},S0=sr();for(const k in S0)o[k]=S0[k]&&S0[k].d;try{sessionStorage.setItem(SRK,JSON.stringify(o))}catch(e){}};
+ /* Home: the most overdue questions, as a lens under the map */
+ function lens(){let f=box.querySelector('.nh-fade');const now=Date.now(),S0=sr(),od=Object.keys(S0).filter(k=>S0[k]&&now>S0[k].d&&document.getElementById(k)).sort((a,b)=>S0[a].d-S0[b].d).slice(0,6);
+  if(!od.length){if(f)f.remove();return}if(!f){f=document.createElement('div');f.className='nh-fade';box.append(f)}
+  const row=k=>{const c=document.getElementById(k),v=c.closest('.view'),h=c.querySelector('header'),dd=Math.max(1,Math.round((now-S0[k].d)/864e5));
+   return '<a href="#/'+(v?v.id.slice(2):'qa')+'/'+k+'"><span>'+((h&&h.textContent)||k).replace(/[&<>]/g,'').slice(0,90)+'</span><small>'+dd+' day'+(dd>1?'s':'')+' overdue</small></a>'};
+  f.innerHTML='<p class="nh-fade-h">Fading</p>'+od.map(row).join('')}
+ /* back on Home after practice: re-stain the reviewed cells with a ripple */
+ box._zzRe=()=>{let seen={};try{seen=JSON.parse(sessionStorage.getItem(SRK)||'{}')}catch(e){}const S0=sr(),t=performance.now();
+  for(const k in S0)if(S0[k]&&seen[k]!==S0[k].d&&k in seen||(!(k in seen)&&Object.keys(seen).length&&S0[k]))rip.set(k,t);
+  snap();lens();mini=null;
+  if(rip.size&&full()&&(!window.zzTier||zzTier()>=2)){const sy={step(n){draw(1);if(n-t>950){rip.clear();draw(1);sys.delete(sy);return false}return true}};sys.add(sy);wake(1500)}else{rip.clear();draw(1)}};
+ lay();tur();snap();lens();
  if(grown||!full()){draw(1)}else{const io=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;io.disconnect();t0=0;
   const sy={step(t){if(!t0)t0=t;const p=Math.min(1,(t-t0)/1300);draw(p);if(p>=1){try{sessionStorage.setItem('zzColony','1')}catch(e){}sys.delete(sy);return false}return true}};sys.add(sy);wake(2000)});io.observe(box);draw(0)}
  addEventListener('resize',()=>{if(box.isConnected){lay();draw(1)}});
- cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect(),i=Math.floor((e.clientY-r.top)/cell)*cols+Math.floor((e.clientX-r.left)/cell),d=D[i];if(!d||!tip)return;
+ cv.addEventListener('click',e=>{if(moved>6)return;const r=cv.getBoundingClientRect(),wx=(e.clientX-r.left-tx)/k,wy=(e.clientY-r.top-ty)/k,i=Math.floor(wy/cell)*cols+Math.floor(wx/cell),d=wx>=0&&wx<cols*cell?D[i]:null;if(!d||!tip)return;
   tip.hidden=false;tip.innerHTML='';const p=document.createElement('p');p.textContent=d[1];const a=document.createElement('a');a.href='#/'+d[2]+'/'+d[3];a.textContent='Open question';
   const k=document.createElement('span');k.textContent=L.has(d[3])?'Learned':'Not learned yet';tip.append(k,p,a);
   tip.style.left=Math.min(Math.max(8,e.clientX-r.left-120),W-248)+'px';tip.style.top=(e.clientY-r.top+14)+'px'});
@@ -5795,13 +5963,14 @@ let wt=null,wa=0;
 addEventListener('wheel',e=>{
  if(!FINE.matches||!full()||e.ctrlKey||e.metaKey||e.shiftKey||document.body.classList.contains('an-on'))return;
  if(!/^(#\/?|#\/home|#\/qa|#\/questions)?$/.test(location.hash||''))return;
- for(let x=e.target;x&&x!==document.body&&x!==de;x=x.parentElement){const o=getComputedStyle(x).overflowY;if((o==='auto'||o==='scroll')&&x.scrollHeight>x.clientHeight+2)return}
+ const sc=(window.zzScroller?zzScroller():document.scrollingElement||document.documentElement);
+ for(let x=e.target;x&&x!==sc&&x!==document.body&&x!==de;x=x.parentElement){const o=getComputedStyle(x).overflowY;if((o==='auto'||o==='scroll')&&x.scrollHeight>x.clientHeight+2)return}
  e.preventDefault();const d=e.deltaMode===1?e.deltaY*32:e.deltaMode===2?e.deltaY*innerHeight:e.deltaY;
- wt=Math.max(0,Math.min(de.scrollHeight-innerHeight,(wt==null?scrollY:wt)+d));
- if(!wa)wa=requestAnimationFrame(function go(){const y=scrollY,dy=wt-y;if(Math.abs(dy)<.6){scrollTo({top:wt,behavior:'instant'});wa=0;wt=null;return}
-  scrollTo({top:y+dy*.16,behavior:'instant'});wa=requestAnimationFrame(go)});
+ wt=Math.max(0,Math.min(sc.scrollHeight-sc.clientHeight,(wt==null?sc.scrollTop:wt)+d));
+ if(!wa)wa=requestAnimationFrame(function go(){const y=sc.scrollTop,dy=wt-y;if(Math.abs(dy)<.6){sc.scrollTo({top:wt,behavior:'instant'});wa=0;wt=null;return}
+  sc.scrollTo({top:y+dy*.16,behavior:'instant'});wa=requestAnimationFrame(go)});
 },{passive:false});
-addEventListener('scroll',()=>{if(!wa)wt=null},{passive:true});
+addEventListener('scroll',()=>{if(!wa)wt=null},{passive:true,capture:true});
 
 /* ---------- boot after the page is up and idle, and again when Home is drawn ---------- */
 const home=()=>!location.hash||/^#\/?(home)?$/.test(location.hash);
@@ -5880,6 +6049,235 @@ const hv=$('#v-home');if(hv)new MutationObserver(()=>setTimeout(streak,30)).obse
 const tb=$('#tbbody');if(tb)new MutationObserver(()=>setTimeout(figs,200)).observe(tb,{childList:true});
 }catch(e){}})();
 
+/* ===== pathway.js: one animator for small pathway diagrams (JSON: nodes, arrows, labels) =====
+   Particles run along arrows (tier 2+; tier 1 a CSS dash flow; tier 0 still), tapping a node opens its note,
+   test mode hides the labels and you drag them back. Opened from a "Watch the pathway" button under matching cards.
+   Built on demand: nothing is drawn or styled until a pathway is opened. */
+(function(){try{
+const PW={apoptosis:{t:'Apoptosis: two roads to the same caspases',m:/apoptosis|caspase|programmed cell death/i,w:360,h:520,
+ n:[
+  {i:'st',x:90,y:42,l:'Cell stress',d:'DNA damage, misfolded proteins or loss of survival signals tip the balance inside the cell.'},
+  {i:'bh',x:90,y:122,l:'BH3-only sensors',d:'Sensor proteins (such as BIM, PUMA, NOXA) switch on and neutralise the anti-apoptotic guards.'},
+  {i:'bc',x:20,y:200,l:'BCL-2 / BCL-XL',d:'Survival guards on the mitochondrial membrane. Too much of them (as in follicular lymphoma) blocks the intrinsic road.',s:1},
+  {i:'bx',x:90,y:200,l:'BAX / BAK',d:'Once freed, these effectors form pores in the outer mitochondrial membrane.'},
+  {i:'cy',x:90,y:280,l:'Cytochrome c leaks',d:'Pores let cytochrome c escape from the mitochondria into the cytosol.'},
+  {i:'ap',x:90,y:360,l:'Apoptosome → caspase-9',d:'Cytochrome c joins APAF-1 to build the apoptosome, which activates the initiator caspase-9.'},
+  {i:'dl',x:270,y:42,l:'Death ligand',d:'A ligand such as FasL or TNF reaches its receptor on the cell surface.'},
+  {i:'dr',x:270,y:122,l:'Death receptor + FADD',d:'The receptor clusters and recruits the adaptor FADD through its death domain.'},
+  {i:'c8',x:270,y:200,l:'Caspase-8',d:'The initiator caspase of the extrinsic road. FLIP can block it. It can also cut BID to recruit the mitochondria.'},
+  {i:'ex',x:180,y:440,l:'Caspases 3 and 7',d:'Executioner caspases cut the cytoskeleton and nuclear proteins and switch on DNA-cutting enzymes.'},
+  {i:'ou',x:180,y:500,l:'Shrinks, blebs, eaten',d:'The cell shrinks, chromatin condenses, the cell breaks into bodies that phagocytes clear without inflammation.'}],
+ a:[['st','bh'],['bh','bx'],['bc','bx',1],['bx','cy'],['cy','ap'],['ap','ex'],['dl','dr'],['dr','c8'],['c8','ex'],['c8','bh'],['ex','ou']]}};
+const NW=124,NH=38,RM=matchMedia('(prefers-reduced-motion: reduce)'),T=()=>window.zzTier?zzTier():2;
+let css=false,ov=null,raf=0;
+const CSS=`.pw-go{display:inline-flex;align-items:center;gap:6px;margin:10px 0 0;padding:7px 13px;border-radius:99px;border:1px solid var(--line2,#ccc);background:var(--panel);color:var(--lbl);font:600 .82rem var(--body);cursor:pointer}
+.pw-ov{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;background:var(--bg);color:var(--text);touch-action:none}
+.pw-h{display:flex;align-items:center;gap:10px;padding:calc(env(safe-area-inset-top,0px) + 10px) 14px 8px}.pw-h b{flex:1;font:400 1.15rem/1.2 var(--disp)}
+.pw-h button{min-height:38px;padding:0 12px;border-radius:11px;border:1px solid var(--line2,#ccc);background:var(--panel);color:var(--text);font:600 .82rem var(--body);cursor:pointer}
+.pw-h button[aria-pressed=true]{background:var(--btn);border-color:var(--btn);color:#fff}
+.pw-svg{flex:1;min-height:0;width:100%}.pw-svg text{font:600 11px var(--body);fill:var(--text);pointer-events:none}
+.pw-n rect{fill:var(--panel);stroke:var(--line2,#bbb);stroke-width:1.2}.pw-n{cursor:pointer}.pw-n.on rect{stroke:var(--burgundy);stroke-width:2}.pw-n.s rect{stroke-dasharray:4 3}
+.pw-n.ok rect{stroke:var(--ok,#5A7A54);stroke-width:2}.pw-n.bad rect{stroke:#b6425f;stroke-width:2}
+.pw-e{fill:none;stroke:var(--muted);stroke-width:1.6}.pw-e.i{stroke:#b6425f;stroke-dasharray:5 4}
+.fx-min .pw-e:not(.i){stroke-dasharray:6 6;animation:pw-flow 1.2s linear infinite}@keyframes pw-flow{to{stroke-dashoffset:-12}}
+.pw-p{fill:var(--burgundy)}.pw-d{min-height:64px;margin:0 14px;padding:10px 14px;border-radius:14px;background:var(--panel);border:1px solid var(--line);font:.92rem/1.45 var(--body)}
+.pw-tr{display:flex;flex-wrap:wrap;gap:6px;padding:8px 14px calc(env(safe-area-inset-bottom,0px) + 12px)}.pw-tr:empty{display:none}
+.pw-c{padding:7px 11px;border-radius:99px;background:var(--accbg);color:var(--lbl);font:600 .8rem var(--body);touch-action:none;cursor:grab;user-select:none}
+.pw-c.drag{position:fixed;z-index:61;pointer-events:none;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+@media(prefers-reduced-motion:reduce){.pw-e{animation:none!important}}`;
+const E=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function path(P,a){const f=P.n.find(n=>n.i===a[0]),t=P.n.find(n=>n.i===a[1]);let x1=f.x,y1=f.y,x2=t.x,y2=t.y;
+ if(Math.abs(y2-y1)>=Math.abs(x2-x1)){y1+=(y2>y1?1:-1)*NH/2;y2-=(y2>y1?1:-1)*(NH/2+4)}else{x1+=(x2>x1?1:-1)*NW/2;x2-=(x2>x1?1:-1)*(NW/2+4)}
+ const my=(y1+y2)/2;return `M${x1} ${y1} C${x1} ${my} ${x2} ${my} ${x2} ${y2}`}
+function open(id){
+ const P=PW[id];if(!P)return;if(!css){css=true;const s=document.createElement('style');s.textContent=CSS;document.head.append(s)}close();
+ const nd=P.n.map(n=>`<g class="pw-n${n.s?' s':''}" data-i="${n.i}" tabindex="0" role="button" aria-label="${E(n.l)}"><rect x="${n.x-NW/2}" y="${n.y-NH/2}" width="${NW}" height="${NH}" rx="10"/><text x="${n.x}" y="${n.y+4}" text-anchor="middle">${E(n.l)}</text></g>`).join('');
+ const ed=P.a.map((a,k)=>`<path class="pw-e${a[2]?' i':''}" id="pw-e${k}" d="${path(P,a)}" marker-end="url(#pw-${a[2]?'i':'a'})"/>`).join('');
+ ov=document.createElement('div');ov.className='pw-ov';ov.setAttribute('role','dialog');ov.setAttribute('aria-label',P.t);ov.dataset.noSwipe='';
+ ov.innerHTML=`<div class="pw-h"><b>${E(P.t)}</b><button type="button" data-a="test" aria-pressed="false">Test me</button><button type="button" data-a="x">Close</button></div>
+ <svg class="pw-svg" viewBox="-50 0 ${P.w+20} ${P.h+20}" preserveAspectRatio="xMidYMid meet"><defs><marker id="pw-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker><marker id="pw-i" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M5 0V10" stroke="#b6425f" stroke-width="3"/></marker></defs>${ed}${nd}<g class="pw-ps"></g></svg>
+ <p class="pw-d" aria-live="polite">Tap a step to read about it.</p><div class="pw-tr"></div>`;
+ document.body.append(ov);const sv=ov.querySelector('svg'),dt=ov.querySelector('.pw-d'),tr=ov.querySelector('.pw-tr');
+ const pick=g=>{ov.querySelectorAll('.pw-n.on').forEach(x=>x.classList.remove('on'));g.classList.add('on');const n=P.n.find(x=>x.i===g.dataset.i);dt.textContent=n.l+': '+n.d};
+ ov.addEventListener('click',e=>{const b=e.target.closest('button');if(b&&b.dataset.a==='x')close();else if(b&&b.dataset.a==='test')test(P,b,sv,tr,dt);else{const g=e.target.closest('.pw-n');if(g&&!ov.classList.contains('t'))pick(g)}});
+ ov.addEventListener('keydown',e=>{if(e.key==='Escape')close();else if(e.key==='Enter'&&e.target.closest&&e.target.closest('.pw-n'))pick(e.target.closest('.pw-n'))});
+ ov.querySelector('[data-a=x]').focus();
+ if(T()>=2&&!RM.matches)flow(sv,P);
+}
+function flow(sv,P){const es=[...sv.querySelectorAll('.pw-e:not(.i)')],g=sv.querySelector('.pw-ps'),L=es.map(e=>e.getTotalLength()),dots=[];
+ es.forEach((e,k)=>{for(let j=0;j<2;j++){const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('r','3');c.setAttribute('class','pw-p');g.append(c);dots.push({c,k,o:j/2})}});
+ const go=t=>{if(!ov||!sv.isConnected)return;if(!document.hidden)dots.forEach(d=>{const u=(t/2200+d.o)%1,p=es[d.k].getPointAtLength(u*L[d.k]);d.c.setAttribute('cx',p.x.toFixed(1));d.c.setAttribute('cy',p.y.toFixed(1));d.c.setAttribute('opacity',String(Math.sin(u*Math.PI).toFixed(2)))});raf=requestAnimationFrame(go)};
+ raf=requestAnimationFrame(go)}
+function test(P,b,sv,tr,dt){
+ const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',String(on));ov.classList.toggle('t',on);
+ sv.querySelectorAll('.pw-n').forEach(g=>{g.classList.remove('ok','bad','on');g.querySelector('text').style.visibility=on?'hidden':''});
+ tr.innerHTML='';if(!on){dt.textContent='Tap a step to read about it.';return}
+ dt.textContent='Drag each label onto its step.';
+ [...P.n].sort(()=>Math.random()-.5).forEach(n=>{const c=document.createElement('span');c.className='pw-c';c.textContent=n.l;c.dataset.i=n.i;tr.append(c)});
+ tr.onpointerdown=e=>{const c=e.target.closest('.pw-c');if(!c)return;e.preventDefault();const g=c.cloneNode(true);g.classList.add('drag');document.body.append(g);
+  const mv=ev=>{g.style.left=(ev.clientX-g.offsetWidth/2)+'px';g.style.top=(ev.clientY-g.offsetHeight/2)+'px'};mv(e);
+  const up=ev=>{removeEventListener('pointermove',mv);removeEventListener('pointerup',up);g.remove();
+   const hit=document.elementsFromPoint(ev.clientX,ev.clientY).map(x=>x.closest&&x.closest('.pw-n')).find(Boolean);if(!hit)return;
+   if(hit.dataset.i===c.dataset.i){hit.classList.add('ok');hit.querySelector('text').style.visibility='';c.remove();if(window.zzFx)zzFx.haptic(10);
+    if(!tr.children.length)dt.textContent='All steps placed. Well done.'}
+   else{hit.classList.add('bad');setTimeout(()=>hit.classList.remove('bad'),600);if(window.zzFx)zzFx.haptic([20,30,20])}};
+  addEventListener('pointermove',mv);addEventListener('pointerup',up)};
+}
+function close(){cancelAnimationFrame(raf);raf=0;if(ov){ov.remove();ov=null}}
+/* a "Watch the pathway" button after the answer of matching cards (never inside the answer) */
+function mark(){for(const id in PW){const P=PW[id];document.querySelectorAll('article.card').forEach(c=>{if(c.dataset.pw)return;const h=c.querySelector('header'),a=c.querySelector('.ans');if(!h||!a)return;c.dataset.pw='1';
+ if(!P.m.test(h.textContent))return;const b=document.createElement('button');b.type='button';b.className='pw-go';b.dataset.pw=id;b.textContent='Watch the pathway';a.after(b)})}
+ if(!css&&document.querySelector('.pw-go')){css=true;const s=document.createElement('style');s.textContent=CSS;document.head.append(s)}}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('.pw-go');if(b){e.preventDefault();open(b.dataset.pw)}});
+addEventListener('hashchange',()=>{close();setTimeout(mark,400)});(window.requestIdleCallback||setTimeout)(mark,{timeout:5000});
+window.zzPathway={open,data:PW};
+}catch(e){}})();
+
+/* ===== fluorescence theme: polarised-light variant on amyloid pages (class zz-pol; tokens in refine.css) ===== */
+(function(){try{const de=document.documentElement;
+const pol=()=>{const v=document.querySelector('.view:not([hidden])'),t=v?(v.dataset.title||'')+' '+((v.querySelector('h1,h2')||{}).textContent||''):'';
+ de.classList.toggle('zz-pol',de.dataset.tone==='fluo'&&/amyloid/i.test(location.hash+' '+t))};
+addEventListener('hashchange',()=>setTimeout(pol,0));new MutationObserver(pol).observe(de,{attributes:true,attributeFilter:['data-tone']});pol();
+}catch(e){}})();
+
+/* ===== loupe.js: a round lens over figures and tags (tier 2+). Mouse: follows the pointer over a figure or [data-loupe] tag.
+   Touch: long-press a figure or tag, move to look around, lift to close. Figures are magnified 2.5x with their label;
+   [data-loupe] tags reveal their hidden text (mnemonics, high-yield notes). Never over answer text; never while annotating. */
+(function(){try{
+const Z=2.5,R=78,FIG='.view img:not([width="16"]):not([width="20"]):not([width="24"]), .view svg.fig',TAG='[data-loupe]';
+const ok=()=>(!window.zzTier||zzTier()>=2)&&!document.body.classList.contains('an-on');
+let L=null,im=null,cap=null,on=null,lp=0,touch=false;
+function make(){if(L)return;L=document.createElement('div');L.className='zz-loupe';L.setAttribute('aria-hidden','true');
+ L.innerHTML='<img alt=""><span></span>';im=L.firstChild;cap=L.lastChild;
+ const s=document.createElement('style');s.textContent=`.zz-loupe{position:fixed;z-index:70;width:${2*R}px;height:${2*R}px;margin:${-R}px 0 0 ${-R}px;border-radius:50%;overflow:hidden;pointer-events:none;display:none;
+ background:var(--panel);border:2px solid rgba(255,255,255,.85);box-shadow:0 0 0 1px rgba(0,0,0,.25),0 14px 34px rgba(0,0,0,.35),inset 0 0 18px rgba(0,0,0,.25)}
+ .zz-loupe.on{display:block}.zz-loupe img{position:absolute;max-width:none;transform-origin:0 0}
+ .zz-loupe span{position:absolute;left:10%;right:10%;bottom:12%;text-align:center;font:600 11px/1.3 var(--body);color:var(--text);background:color-mix(in srgb,var(--panel) 85%,transparent);border-radius:8px;padding:2px 4px}
+ .zz-loupe.t span{top:50%;bottom:auto;transform:translateY(-50%);font-size:13px}.zz-loupe span:empty{display:none}`;document.head.append(s);document.body.append(L)}
+function target(el){if(!el||!el.closest)return null;if(el.closest('.ans')&&!el.closest('img,svg.fig'))return null;
+ const t=el.closest(TAG);if(t)return t;const f=el.closest(FIG);if(f&&(f.naturalWidth||f.clientWidth)>=120)return f;return null}
+function show(t,x,y){make();on=t;L.style.left=x+'px';L.style.top=y+'px';L.classList.add('on');
+ if(t.matches(TAG)){L.classList.add('t');im.style.display='none';cap.textContent=t.dataset.loupe||t.textContent;return}
+ L.classList.remove('t');const r=t.getBoundingClientRect();
+ if(t.tagName==='IMG'){if(im.getAttribute('src')!==t.currentSrc&&t.currentSrc)im.src=t.currentSrc||t.src;im.style.display='';im.style.width=r.width+'px';im.style.height=r.height+'px';
+  im.style.transform='translate('+(R-(x-r.left)*Z)+'px,'+(R-(y-r.top)*Z)+'px) scale('+Z+')'}else im.style.display='none';
+ const fg=t.closest('figure'),fc=fg&&fg.querySelector('figcaption');cap.textContent=(t.getAttribute('alt')||(fc&&fc.textContent)||'').trim().slice(0,80)}
+function hide(){on=null;if(L)L.classList.remove('on','t')}
+document.addEventListener('pointermove',e=>{if(e.pointerType==='touch'){if(touch&&on)show(on,e.clientX,e.clientY);return}
+ if(!ok()){if(on)hide();return}const t=target(e.target);if(t)show(t,e.clientX,e.clientY);else if(on)hide()},{passive:true});
+document.addEventListener('pointerdown',e=>{if(e.pointerType!=='touch'||!ok())return;const t=target(e.target);if(!t)return;clearTimeout(lp);
+ const x=e.clientX,y=e.clientY;lp=setTimeout(()=>{touch=true;show(t,x,y);if(window.zzFx)zzFx.haptic(8)},480)},{passive:true});
+const up=()=>{clearTimeout(lp);if(touch){touch=false;hide()}};
+['pointerup','pointercancel'].forEach(e=>document.addEventListener(e,up,{passive:true}));
+document.addEventListener('touchmove',e=>{if(touch&&e.cancelable)e.preventDefault()},{passive:false});
+document.addEventListener('contextmenu',e=>{if(touch)e.preventDefault()});
+addEventListener('scroll',()=>{if(!touch)hide()},{passive:true,capture:true});addEventListener('hashchange',up);
+}catch(e){}})();
+
+/* ===== share.js: one tap draws a progress card (a stained slide, the streak, "stained X of N") and shares it
+   (Web Share with a file, or a download). Button sits in the Home progress map header. Reads S only. */
+(function(){try{
+const st=()=>typeof S!=='undefined'?S:null,cs=getComputedStyle(document.documentElement),v=(k,d)=>(cs.getPropertyValue(k)||'').trim()||d;
+async function card(){
+ const s=st()||{},D=typeof DATA!=='undefined'?DATA:[],N=D.length||1310,sr=s.sr||{},now=Date.now();
+ const X=D.filter(d=>sr[d[3]]).length,streak=(s.streak&&+s.streak.n)||0;
+ try{await Promise.all(['400 80px "DM Serif Display"','600 40px "Hanken Grotesk"','italic 500 40px Newsreader'].map(f=>document.fonts.load(f)))}catch(e){}
+ const W=1080,H=1350,c=document.createElement('canvas');c.width=W;c.height=H;const g=c.getContext('2d');
+ const bg=v('--bg','#F8F3EE'),ink=v('--text','#2A1627'),mu=v('--muted','#735F70'),eo=v('--rosy','#D98FA8'),pl=v('--plum2','#6B2D5C'),bu=v('--burgundy','#7A1F36');
+ g.fillStyle=bg;g.fillRect(0,0,W,H);
+ /* the slide: frosted glass, label at one end, a stained section of cells (stain strength from S.sr) */
+ const sx=90,sy=170,sw=900,sh=640;g.save();g.shadowColor='rgba(0,0,0,.18)';g.shadowBlur=40;g.shadowOffsetY=18;g.fillStyle='rgba(255,255,255,.55)';rr(g,sx,sy,sw,sh,28);g.fill();g.restore();
+ g.fillStyle=bu;rr(g,sx,sy,190,sh,28);g.fill();g.fillStyle='#fff';g.font='600 30px "Hanken Grotesk", sans-serif';g.save();g.translate(sx+108,sy+sh/2);g.rotate(-Math.PI/2);g.textAlign='center';g.fillText('Patholo_zzee',0,0);g.restore();
+ const cx=sx+190+40,cy=sy+40,cw=sw-190-80,ch=sh-80,cell=Math.max(9,Math.floor(Math.sqrt(cw*ch/N))),cols=Math.floor(cw/cell);
+ g.save();rr(g,cx,cy,cw,ch,cw/2);g.clip();
+ for(let i=0;i<N;i++){const d=D[i],o=d&&sr[d[3]],x=cx+(i%cols+.5)*cell,y=cy+(Math.floor(i/cols)+.5)*cell;if(y>cy+ch)break;
+  if(o){const b=Math.max(0,Math.min(5,o.b|0)),a=(.35+.13*b)*(now>o.d?Math.max(.12,1-(now-o.d)/864e5/14):1);
+   g.globalAlpha=.45*a;g.fillStyle=eo;g.beginPath();g.arc(x,y,cell*.48,0,7);g.fill();g.globalAlpha=.95*a;g.fillStyle=pl;g.beginPath();g.arc(x,y,cell*.24,0,7);g.fill()}
+  else{g.globalAlpha=.35;g.fillStyle=mu;g.beginPath();g.arc(x,y,cell*.12,0,7);g.fill()}}
+ g.restore();g.globalAlpha=1;
+ g.fillStyle=ink;g.textAlign='left';g.font='400 84px "DM Serif Display", Georgia, serif';g.fillText('Stained '+X.toLocaleString('en-GB')+' of '+N.toLocaleString('en-GB'),90,960);
+ g.font='600 40px "Hanken Grotesk", sans-serif';g.fillStyle=mu;g.fillText(streak?streak+'-day streak':'Starting a streak',90,1030);
+ g.font='italic 500 38px Newsreader, Georgia, serif';g.fillStyle=bu;g.fillText('Pathology, one slide at a time.',90,1240);
+ return new Promise(r=>c.toBlob(r,'image/png'));
+}
+function rr(g,x,y,w,h,r){r=Math.min(r,w/2,h/2);g.beginPath();g.moveTo(x+r,y);g.arcTo(x+w,y,x+w,y+h,r);g.arcTo(x+w,y+h,x,y+h,r);g.arcTo(x,y+h,x,y,r);g.arcTo(x,y,x+w,y,r);g.closePath()}
+async function share(b){
+ b.disabled=true;try{const blob=await card();if(!blob)return;const f=new File([blob],'patholo-zzee-progress.png',{type:'image/png'});
+  if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],title:'My pathology progress'})}catch(e){}return}
+  const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=f.name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)}
+ finally{b.disabled=false}}
+function place(){const h=document.querySelector('#v-home .nh-col-hd');if(!h||h.querySelector('.zz-share'))return;
+ const b=document.createElement('button');b.type='button';b.className='zz-share';b.textContent='Share';b.setAttribute('aria-label','Share a progress card');
+ b.style.cssText='margin-left:auto;min-height:34px;padding:0 14px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--lbl);font:600 .82rem var(--body);cursor:pointer';
+ b.onclick=()=>share(b);h.append(b)}
+addEventListener('hashchange',()=>setTimeout(place,300));(window.requestIdleCallback||setTimeout)(place,{timeout:4000});
+}catch(e){}})();
+
+/* ===== scrub.js: one scrubber component. A slider drives a procedural 2D morph; each topic is a config.
+   Shipped: cell injury (reversible to irreversible), necrosis patterns, hypertrophy vs hyperplasia.
+   Opened from a "Scrub through it" button after matching answers. Draws only when the slider moves. */
+(function(){try{
+const TAU=Math.PI*2,lerp=(a,b,t)=>a+(b-a)*t,cl=t=>Math.max(0,Math.min(1,t)),ss=(a,b,t)=>{t=cl((t-a)/(b-a));return t*t*(3-2*t)};
+const col=(k,d)=>(getComputedStyle(document.documentElement).getPropertyValue(k)||'').trim()||d;
+function rnd(s){return()=>{s=(s*16807)%2147483647;return s/2147483647}}
+const CFG={
+ injury:{t:'Cell injury: reversible to irreversible',m:/cell injury|reversible|irreversible|hydropic|cloudy swelling/i,
+  st:[[0,'Normal cell'],[.18,'Swelling: pumps fail, water enters'],[.38,'Blebs, dilated ER, fatty change (still reversible)'],[.55,'Point of no return: membranes and mitochondria fail'],[.75,'Pyknosis, then karyorrhexis'],[.92,'Karyolysis and rupture']],
+  draw(g,W,H,t){const R=rnd(7),cx=W/2,cy=H/2,r0=Math.min(W,H)*.28,sw=1+.22*ss(.05,.45,t),r=r0*sw,brk=ss(.55,.95,t);
+   g.fillStyle=col('--rosy','#D98FA8');g.globalAlpha=.25+.1*(1-brk);g.beginPath();
+   for(let a=0;a<=TAU+.01;a+=TAU/90){const bl=ss(.25,.45,t)*Math.max(0,Math.sin(a*7+1))*r*.12,x=cx+Math.cos(a)*(r+bl),y=cy+Math.sin(a)*(r*.82+bl);a?g.lineTo(x,y):g.moveTo(x,y)}g.closePath();g.fill();
+   g.globalAlpha=1;g.strokeStyle=col('--plum2','#6B2D5C');g.lineWidth=2;
+   for(let a=0;a<TAU;a+=TAU/45){if(brk>0&&R()<brk*.55)continue;const bl=ss(.25,.45,t)*Math.max(0,Math.sin(a*7+1))*r*.12;g.beginPath();g.arc(cx,cy,r+bl,a,a+TAU/45);g.stroke()}
+   for(let i=0;i<9;i++){const a=R()*TAU,d=r*(.45+.35*R()),x=cx+Math.cos(a)*d,y=cy+Math.sin(a)*d*.8;g.fillStyle=col('--burgundy','#7A1F36');g.globalAlpha=.6;
+    g.beginPath();g.ellipse(x,y,r*.09*(1+.5*ss(.1,.4,t)),r*.045*(1+.6*ss(.1,.4,t)),a,0,TAU);g.fill();if(t>.6){g.globalAlpha=.9;g.beginPath();g.arc(x,y,r*.018,0,TAU);g.fill()}}
+   g.globalAlpha=ss(.3,.5,t)*.8*(1-brk*.6);g.fillStyle='#fff';for(let i=0;i<6;i++){const a=R()*TAU,d=r*.5*R();g.beginPath();g.arc(cx+Math.cos(a)*d,cy+Math.sin(a)*d*.8,r*(.04+.05*R()),0,TAU);g.fill()}
+   const pk=ss(.6,.78,t),rx=ss(.76,.9,t),ly=ss(.9,1,t),nr=r*.24*(1-.45*pk);g.fillStyle=col('--plum','#2A1627');
+   if(rx<.05){g.globalAlpha=.75+.25*pk;g.beginPath();g.arc(cx,cy,nr,0,TAU);g.fill()}
+   else for(let i=0;i<7;i++){const a=i/7*TAU+.4,d=nr*1.6*rx;g.globalAlpha=(1-ly)*.9;g.beginPath();g.arc(cx+Math.cos(a)*d,cy+Math.sin(a)*d,nr*.32,0,TAU);g.fill()}g.globalAlpha=1}},
+ necrosis:{t:'Patterns of necrosis',m:/necrosis|gangrene|caseous|liquefactive|coagulative|fibrinoid|fat necrosis/i,
+  st:[[0,'Coagulative: ghost outlines stay (infarcts of heart, kidney)'],[.2,'Liquefactive: tissue digested to fluid (brain, abscess)'],[.4,'Caseous: cheesy debris in a granuloma (TB)'],[.6,'Fat necrosis: chalky soaps (pancreatitis)'],[.8,'Fibrinoid: pink fibrin in vessel walls (vasculitis)']],
+  draw(g,W,H,t){const R=rnd(11),P=[...Array(5)].map((_,i)=>cl(1-Math.abs(t*4-i))),cs=Math.min(W,H)/7,ink=col('--plum','#2A1627'),eo=col('--rosy','#D98FA8');
+   for(let j=0;j<6;j++)for(let i=0;i<8;i++){const x=W/2+(i-3.5)*cs,y=H/2+(j-2.5)*cs*.9,dc=Math.hypot(i-3.5,j-2.5)/4.3,r1=R(),r2=R();
+    g.globalAlpha=1;g.fillStyle=eo;
+    const a=P[0]*.55+P[1]*.12*(dc>.6)+P[2]*(dc<.55?.5:.35)+P[3]*.35+P[4]*.3;g.globalAlpha=a;g.beginPath();g.ellipse(x,y,cs*.44,cs*.36,0,0,TAU);g.fill();
+    g.globalAlpha=P[0]*.7+P[2]*(dc>.55)*.6+P[3]*.4+P[4]*.5;g.strokeStyle=ink;g.lineWidth=1;g.beginPath();g.ellipse(x,y,cs*.44,cs*.36,0,0,TAU);g.stroke();
+    g.globalAlpha=(P[2]*(dc>.6)+P[4]*.8)*.85+P[1]*(dc>.7)*.8;g.fillStyle=ink;g.beginPath();g.arc(x,y,cs*.12,0,TAU);g.fill();
+    if(P[1]>.05&&dc<.7&&r1<.5){g.globalAlpha=P[1];g.fillStyle=ink;for(let k=0;k<3;k++){g.beginPath();g.arc(x+(r2-.5)*cs*.6+k*4,y+(r1-.5)*cs*.4,cs*.06,0,TAU);g.fill()}}
+    if(P[3]>.05&&r1<.45){g.globalAlpha=P[3]*.9;g.fillStyle='#fff';g.beginPath();g.arc(x,y,cs*.3,0,TAU);g.fill();g.globalAlpha=P[3]*.6;g.fillStyle='#8fb8d8';g.beginPath();g.arc(x+cs*.1,y-cs*.08,cs*.12,0,TAU);g.fill()}}
+   if(P[2]>.05){g.globalAlpha=P[2]*.85;g.fillStyle='#f3e6ee';g.beginPath();g.ellipse(W/2,H/2,cs*2.1,cs*1.6,0,0,TAU);g.fill()}
+   if(P[4]>.05){g.globalAlpha=P[4];g.strokeStyle='#e0507a';g.lineWidth=cs*.35;g.beginPath();g.arc(W/2,H/2,cs*1.4,0,TAU);g.stroke()}g.globalAlpha=1}},
+ growth:{t:'Hypertrophy (bigger cells) vs hyperplasia (more cells)',m:/hypertrophy|hyperplasia|adaptation/i,
+  st:[[0,'Normal tissue'],[.35,'More workload or hormone signal'],[.7,'Left: same cells, larger. Right: more cells, same size']],
+  draw(g,W,H,t){const half=W/2,ink=col('--plum','#2A1627'),eo=col('--rosy','#D98FA8');g.strokeStyle=col('--line2','#ccc');g.beginPath();g.moveTo(half,10);g.lineTo(half,H-10);g.stroke();
+   g.fillStyle=ink;g.font='600 12px '+col('--body','sans-serif');g.textAlign='center';g.fillText('Hypertrophy',half/2,20);g.fillText('Hyperplasia',half*1.5,20);
+   const cell=(x,y,s)=>{g.globalAlpha=.45;g.fillStyle=eo;g.beginPath();g.ellipse(x,y,s,s*.8,0,0,TAU);g.fill();g.globalAlpha=1;g.strokeStyle=ink;g.stroke();g.fillStyle=ink;g.beginPath();g.arc(x,y,s*.28,0,TAU);g.fill()};
+   const s0=Math.min(half,H)/10,sh=s0*(1+.7*t);for(let j=0;j<3;j++)for(let i=0;i<3;i++)cell(half/2+(i-1)*sh*2.1,H/2+10+(j-1)*sh*1.75,sh);
+   const n=3+Math.round(2*t),R=rnd(3);for(let j=0;j<n;j++)for(let i=0;i<n;i++){const sp=Math.min(half,H-40)/(n+.5);cell(half*1.5+(i-(n-1)/2)*sp,H/2+10+(j-(n-1)/2)*sp*.88,s0*(.96+.08*R()))}
+   g.textAlign='left'}}};
+let css=false,ov=null;
+function open(id){const C=CFG[id];if(!C)return;close();
+ if(!css){css=true;const s=document.createElement('style');s.textContent=`.sc-go{display:inline-flex;margin:10px 0 0 8px;padding:7px 13px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--lbl);font:600 .82rem var(--body);cursor:pointer}
+ .sc-ov{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;gap:10px;padding:calc(env(safe-area-inset-top,0px) + 12px) 14px calc(env(safe-area-inset-bottom,0px) + 14px);background:var(--bg);color:var(--text)}
+ .sc-h{display:flex;align-items:center;gap:10px}.sc-h b{flex:1;font:400 1.15rem/1.2 var(--disp)}.sc-h button{min-height:38px;padding:0 12px;border-radius:11px;border:1px solid var(--line2);background:var(--panel);color:var(--text);font:600 .82rem var(--body)}
+ .sc-ov canvas{flex:1;min-height:0;width:100%;border-radius:18px;background:var(--panel)}.sc-ov input{width:100%;touch-action:none}.sc-s{min-height:2.6em;margin:0;font:600 .95rem/1.35 var(--body);color:var(--lbl)}`;document.head.append(s)}
+ ov=document.createElement('div');ov.className='sc-ov';ov.dataset.noSwipe='';ov.setAttribute('role','dialog');ov.setAttribute('aria-label',C.t);
+ ov.innerHTML='<div class="sc-h"><b></b><button type="button">Close</button></div><canvas></canvas><p class="sc-s" aria-live="polite"></p><input type="range" min="0" max="1000" value="0" aria-label="Stage">';
+ ov.querySelector('b').textContent=C.t;document.body.append(ov);
+ const cv=ov.querySelector('canvas'),sl=ov.querySelector('input'),sp=ov.querySelector('.sc-s'),dpr=Math.min(2,devicePixelRatio||1);let raf=0;
+ const draw=()=>{raf=0;const W=cv.clientWidth,H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;const g=cv.getContext('2d');g.scale(dpr,dpr);const t=sl.value/1000;C.draw(g,W,H,t);
+  let lab=C.st[0][1];C.st.forEach(s=>{if(t>=s[0])lab=s[1]});if(sp.textContent!==lab)sp.textContent=lab};
+ sl.addEventListener('input',()=>{if(!raf)raf=requestAnimationFrame(draw)});addEventListener('resize',()=>{if(ov&&!raf)raf=requestAnimationFrame(draw)});
+ ov.querySelector('button').onclick=close;ov.addEventListener('keydown',e=>{if(e.key==='Escape')close()});draw();sl.focus()}
+function close(){if(ov){ov.remove();ov=null}}
+function mark(){document.querySelectorAll('article.card').forEach(c=>{if(c.dataset.sc)return;const h=c.querySelector('header'),a=c.querySelector('.ans');if(!h||!a)return;c.dataset.sc='1';
+ for(const id in CFG)if(CFG[id].m.test(h.textContent)){const b=document.createElement('button');b.type='button';b.className='sc-go';b.dataset.sc=id;b.textContent='Scrub through it';
+  b.style.cssText='display:inline-flex;margin:10px 0 0 8px;padding:7px 13px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--lbl);font:600 .82rem var(--body);cursor:pointer';
+  const pw=c.querySelector('.pw-go');(pw||a).after(b);break}})}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('.sc-go');if(b){e.preventDefault();open(b.dataset.sc)}});
+addEventListener('hashchange',()=>{close();setTimeout(mark,500)});(window.requestIdleCallback||setTimeout)(mark,{timeout:5500});
+window.zzScrub={open,cfg:CFG};
+}catch(e){}})();
+
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
 const r=document.getElementById('res'),g=document.getElementById('gq');
 function show(){const q=g.value.trim().toLowerCase(),T=q.match(/[a-z0-9']+/g)||[];
@@ -5932,16 +6330,16 @@ const root=document.documentElement,pref=()=>{try{S.pref=S.pref||{};return S.pre
 const tools=document.getElementById('tools');
 
 /* ---------- 1. Theme: Light > Sepia > Dark ---------- */
-function themeNow(){const t=root.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?'dark':root.dataset.tone==='sepia'?'sepia':'light'}
-function applyTheme(n){if(n==='dark'){root.dataset.theme='dark';delete root.dataset.tone}else{root.dataset.theme='light';if(n==='sepia')root.dataset.tone='sepia';else delete root.dataset.tone}
- const m=n==='sepia'?'#EFDDD6':null;if(m)$$('meta[name=theme-color]').forEach(x=>{if(!x.dataset.o)x.dataset.o=x.content;x.content=m;x.removeAttribute('media')});
+function themeNow(){const t=root.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(root.dataset.tone==='fluo'?'fluo':'dark'):root.dataset.tone==='sepia'?'sepia':'light'}
+function applyTheme(n){if(n==='dark'||n==='fluo'){root.dataset.theme='dark';if(n==='fluo')root.dataset.tone='fluo';else delete root.dataset.tone}else{root.dataset.theme='light';if(n==='sepia')root.dataset.tone='sepia';else delete root.dataset.tone}
+ const m=n==='sepia'?'#EFDDD6':n==='fluo'?'#07090D':null;if(m)$$('meta[name=theme-color]').forEach(x=>{if(!x.dataset.o)x.dataset.o=x.content;x.content=m;x.removeAttribute('media')});
  else $$('meta[name=theme-color][data-o]').forEach(x=>{x.content=x.dataset.o});label()}
-function label(){const b=tools&&$('[data-t=theme]',tools);if(b){const n=themeNow();b.textContent=n==='sepia'?'Sepia':n==='dark'?'Dark':'Light';b.dataset.th=n;b.setAttribute('aria-label','Theme: '+b.textContent+' (tap to change)');b.title='Theme: Light, Sepia or Dark (tap to change)'}}
+function label(){const b=tools&&$('[data-t=theme]',tools);if(b){const n=themeNow();b.textContent=n==='sepia'?'Sepia':n==='dark'?'Dark':n==='fluo'?'Fluorescence':'Light';b.dataset.th=n;b.setAttribute('aria-label','Theme: '+b.textContent+' (tap to change)');b.title='Theme: Light, Sepia, Dark or Fluorescence (tap to change)'}}
 try{
  if(tools){
   tools.addEventListener('click',e=>{const b=e.target.closest('button[data-t=theme]');if(!b)return;e.stopPropagation();
-   const n={light:'sepia',sepia:'dark',dark:'light'}[themeNow()];applyTheme(n);const p=pref();p.theme=n==='dark'?'dark':'light';if(n==='sepia')p.tone='sepia';else delete p.tone;persist()},true);
-  const p=pref();if(p.theme==='light'&&p.tone==='sepia')applyTheme('sepia');else{if(p.tone&&!(p.theme==='light'))delete p.tone;label()}
+   const n={light:'sepia',sepia:'dark',dark:'fluo',fluo:'light'}[themeNow()];applyTheme(n);const p=pref();p.theme=n==='dark'||n==='fluo'?'dark':'light';if(n==='sepia'||n==='fluo')p.tone=n;else delete p.tone;persist()},true);
+  const p=pref();if(p.theme==='light'&&p.tone==='sepia')applyTheme('sepia');else if(p.theme==='dark'&&p.tone==='fluo')applyTheme('fluo');else{if(p.tone&&!(p.theme==='light'))delete p.tone;label()}
  }
 }catch(e){}
 
