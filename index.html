@@ -2584,6 +2584,328 @@ html.fx-full .tbf img.fx-dev{animation:fx-dev 1.1s var(--fx-out) both}
 }
 @media(prefers-reduced-motion:reduce){:is(.mx-timer.low,.nh-ex.nh-soon .nh-pc,.fx-stamp,.act.fx-just svg,.act.fx-just::after){animation:none!important}.fx-top{transition:none}}
 @media print{.fx-top,.fx-stamp,.fx-ecg{display:none!important}}
+/* ===== MCQ glass ("coverslip") — loaded LAST, after fx.css =====
+   Every MCQ surface is a pane of cover glass over a defocused H&E slide: eosin and hematoxylin blobs behind,
+   a bright 1.5px coverslip edge on top, answers that stain the glass (eosin = your pick, sage = right, rose = wrong).
+   Blur budget: the floating bars (top bar, action dock, palette, reading bar) blur everywhere, because content scrolls
+   under them and they are small. Big panes blur only with a mouse or trackpad. Repeated items (tiles, options, chips,
+   reading-mode cards) never blur: they are translucent fills over the static backdrop.
+   "Reduce effects" (html.zz-flat) drops all blur; prefers-reduced-transparency makes every surface solid. */
+
+/* ---------- tokens ---------- */
+html body .mx{
+ --gx-pane:rgba(255,253,251,.66);--gx-pane-2:rgba(255,249,251,.44);
+ --gx-bar:rgba(255,253,251,.74);--gx-bar-2:rgba(255,248,250,.6);
+ --gx-well:rgba(255,255,255,.5);--gx-well-h:rgba(255,255,255,.74);--gx-well-lo:rgba(255,255,255,.24);
+ --gx-edge:rgba(255,255,255,.82);--gx-hair:rgba(74,28,58,.11);--gx-rule:rgba(74,28,58,.14);
+ --gx-hi:inset 0 1px 0 rgba(255,255,255,.95);--gx-lo:inset 0 -1px 0 rgba(122,31,54,.05);
+ --gx-drop:0 1px 2px rgba(42,22,39,.05),0 22px 44px -24px rgba(74,28,58,.5);
+ --gx-float:0 18px 40px -16px rgba(74,28,58,.5);
+ --gx-blur:blur(26px) saturate(170%);--gx-blur-bar:blur(20px) saturate(180%);
+ --gx-slip:linear-gradient(180deg,rgba(255,255,255,.75),rgba(255,255,255,0) 1.5px);
+ --gx-sheen:linear-gradient(118deg,rgba(255,255,255,.42) 0%,rgba(255,255,255,0) 36%);
+ --gx-track:rgba(74,28,58,.07);
+ --gx-sel:linear-gradient(135deg,rgba(122,31,54,.13),rgba(217,143,168,.3));--gx-sel-bd:rgba(122,31,54,.42);
+ --gx-ok-ink:#3D7350;--gx-ok-bd:rgba(61,115,80,.55);--gx-ok:linear-gradient(135deg,rgba(77,138,95,.24),rgba(77,138,95,.09));
+ --gx-no-ink:#A3384F;--gx-no-bd:rgba(163,56,79,.5);--gx-no:linear-gradient(135deg,rgba(182,66,95,.2),rgba(182,66,95,.07));
+ --gx-tint:linear-gradient(135deg,rgba(217,143,168,.34),rgba(255,253,251,.5) 70%);
+ --gx-jelly:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0) 55%),var(--g-btn,var(--btn));
+ --gx-jelly-sh:inset 0 1px 0 rgba(255,255,255,.38),0 10px 22px -12px rgba(122,31,54,.8);
+ --gx-scrim:rgba(42,22,39,.26)}
+:root[data-tone=sepia] body .mx{--gx-pane:rgba(255,250,240,.7);--gx-pane-2:rgba(255,246,234,.5);--gx-bar:rgba(255,250,240,.78);--gx-bar-2:rgba(255,246,234,.64);--gx-well:rgba(255,251,243,.55)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) body .mx{
+ --gx-pane:rgba(52,35,48,.62);--gx-pane-2:rgba(34,22,31,.46);--gx-bar:rgba(44,29,40,.76);--gx-bar-2:rgba(30,20,28,.66);
+ --gx-well:rgba(255,255,255,.055);--gx-well-h:rgba(255,255,255,.1);--gx-well-lo:rgba(255,255,255,.025);
+ --gx-edge:rgba(255,255,255,.13);--gx-hair:rgba(0,0,0,.32);--gx-rule:rgba(255,255,255,.1);
+ --gx-hi:inset 0 1px 0 rgba(255,255,255,.12);--gx-lo:inset 0 -1px 0 rgba(0,0,0,.3);
+ --gx-drop:0 1px 2px rgba(0,0,0,.3),0 24px 50px -22px rgba(0,0,0,.75);--gx-float:0 18px 44px -14px rgba(0,0,0,.75);
+ --gx-slip:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0) 1.5px);
+ --gx-sheen:linear-gradient(118deg,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 40%);--gx-track:rgba(255,255,255,.08);
+ --gx-sel:linear-gradient(135deg,rgba(194,71,106,.3),rgba(233,165,187,.14));--gx-sel-bd:rgba(233,165,187,.5);
+ --gx-ok-ink:#9CC496;--gx-ok-bd:rgba(141,176,135,.7);--gx-ok:linear-gradient(135deg,rgba(141,176,135,.34),rgba(141,176,135,.12));
+ --gx-no-ink:#EE97AE;--gx-no-bd:rgba(230,120,150,.55);--gx-no:linear-gradient(135deg,rgba(212,96,127,.26),rgba(212,96,127,.08));
+ --gx-tint:linear-gradient(135deg,rgba(194,71,106,.3),rgba(52,35,48,.5) 70%);
+ --gx-jelly-sh:inset 0 1px 0 rgba(255,255,255,.22),0 10px 24px -12px rgba(0,0,0,.8);--gx-scrim:rgba(0,0,0,.45)}}
+:root[data-theme=dark] body .mx{
+ --gx-pane:rgba(52,35,48,.62);--gx-pane-2:rgba(34,22,31,.46);--gx-bar:rgba(44,29,40,.76);--gx-bar-2:rgba(30,20,28,.66);
+ --gx-well:rgba(255,255,255,.055);--gx-well-h:rgba(255,255,255,.1);--gx-well-lo:rgba(255,255,255,.025);
+ --gx-edge:rgba(255,255,255,.13);--gx-hair:rgba(0,0,0,.32);--gx-rule:rgba(255,255,255,.1);
+ --gx-hi:inset 0 1px 0 rgba(255,255,255,.12);--gx-lo:inset 0 -1px 0 rgba(0,0,0,.3);
+ --gx-drop:0 1px 2px rgba(0,0,0,.3),0 24px 50px -22px rgba(0,0,0,.75);--gx-float:0 18px 44px -14px rgba(0,0,0,.75);
+ --gx-slip:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0) 1.5px);
+ --gx-sheen:linear-gradient(118deg,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 40%);--gx-track:rgba(255,255,255,.08);
+ --gx-sel:linear-gradient(135deg,rgba(194,71,106,.3),rgba(233,165,187,.14));--gx-sel-bd:rgba(233,165,187,.5);
+ --gx-ok-ink:#9CC496;--gx-ok-bd:rgba(141,176,135,.7);--gx-ok:linear-gradient(135deg,rgba(141,176,135,.34),rgba(141,176,135,.12));
+ --gx-no-ink:#EE97AE;--gx-no-bd:rgba(230,120,150,.55);--gx-no:linear-gradient(135deg,rgba(212,96,127,.26),rgba(212,96,127,.08));
+ --gx-tint:linear-gradient(135deg,rgba(194,71,106,.3),rgba(52,35,48,.5) 70%);
+ --gx-jelly-sh:inset 0 1px 0 rgba(255,255,255,.22),0 10px 24px -12px rgba(0,0,0,.8);--gx-scrim:rgba(0,0,0,.45)}
+
+/* ---------- the slide under the glass (only while the MCQ view is open; sits just above the living-tissue canvas) ---------- */
+:root{--gx-blobs:radial-gradient(40vmax 34vmax at 6% 18%,rgba(226,132,168,.46),transparent 70%),radial-gradient(36vmax 32vmax at 96% 30%,rgba(112,80,170,.3),transparent 70%),
+  radial-gradient(46vmax 38vmax at 74% 98%,rgba(217,143,168,.44),transparent 70%),radial-gradient(30vmax 26vmax at 4% 92%,rgba(107,45,92,.24),transparent 70%);
+ --gx-nuclei:radial-gradient(circle at 30% 35%,rgba(92,62,150,.13) 0 3px,transparent 4.5px),radial-gradient(circle at 70% 65%,rgba(122,31,54,.1) 0 2.5px,transparent 4px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){
+ --gx-blobs:radial-gradient(40vmax 34vmax at 6% 18%,rgba(176,58,96,.36),transparent 70%),radial-gradient(36vmax 32vmax at 96% 30%,rgba(98,70,170,.3),transparent 70%),
+  radial-gradient(46vmax 38vmax at 74% 98%,rgba(150,52,110,.32),transparent 70%),radial-gradient(30vmax 26vmax at 4% 92%,rgba(122,31,54,.32),transparent 70%);
+ --gx-nuclei:radial-gradient(circle at 30% 35%,rgba(170,140,230,.09) 0 3px,transparent 4.5px),radial-gradient(circle at 70% 65%,rgba(233,165,187,.07) 0 2.5px,transparent 4px)}}
+:root[data-theme=dark]{
+ --gx-blobs:radial-gradient(40vmax 34vmax at 6% 18%,rgba(176,58,96,.36),transparent 70%),radial-gradient(36vmax 32vmax at 96% 30%,rgba(98,70,170,.3),transparent 70%),
+  radial-gradient(46vmax 38vmax at 74% 98%,rgba(150,52,110,.32),transparent 70%),radial-gradient(30vmax 26vmax at 4% 92%,rgba(122,31,54,.32),transparent 70%);
+ --gx-nuclei:radial-gradient(circle at 30% 35%,rgba(170,140,230,.09) 0 3px,transparent 4.5px),radial-gradient(circle at 70% 65%,rgba(233,165,187,.07) 0 2.5px,transparent 4px)}
+html body:has(> #v-mcqs:not([hidden]))::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:1;transform:translateZ(0);background:var(--gx-blobs)}
+/* with a mouse the big panes blur, so the slide gets a faint scatter of nuclei for the frost to catch */
+@media(hover:hover) and (pointer:fine){html body:has(> #v-mcqs:not([hidden]))::after{background:var(--gx-nuclei),var(--gx-blobs);
+ background-size:47px 53px,61px 67px,auto,auto,auto,auto;background-repeat:repeat,repeat,no-repeat,no-repeat,no-repeat,no-repeat}}
+
+/* ---------- materials ---------- */
+/* panes: the big surfaces */
+html body .mx :is(.mx-card,.mx-acc,.mx-day,.mx-res,.mx-sum){
+ background:var(--gx-slip),var(--gx-sheen),linear-gradient(160deg,var(--gx-pane),var(--gx-pane-2))!important;
+ border:1px solid var(--gx-edge)!important;border-radius:28px!important;
+ box-shadow:var(--gx-hi),var(--gx-lo),0 0 0 .5px var(--gx-hair),var(--gx-drop)!important}
+@media(hover:hover) and (pointer:fine){html body .mx :is(.mx-card:not(.read),.mx-acc,.mx-day,.mx-res,.mx-sum){-webkit-backdrop-filter:var(--gx-blur);backdrop-filter:var(--gx-blur)}}
+/* floating bars: blur on every device */
+html body .mx :is(.mx-top,.mx-act,.mx-rbar){
+ background:var(--gx-slip),linear-gradient(160deg,var(--gx-bar),var(--gx-bar-2))!important;
+ border:1px solid var(--gx-edge)!important;box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair),var(--gx-float)!important;
+ -webkit-backdrop-filter:var(--gx-blur-bar)!important;backdrop-filter:var(--gx-blur-bar)!important}
+/* wells: repeated items, translucent only */
+html body .mx :is(.mx-o,.mx-s,.mx-tile,.mx-chd,.mx-chd2,.mx-paper,.mx-hist,.mx-weak button,.mx-strip button,.mx-pal-g button,.mx-qb,.mx-f,.mx-ib,.mx-bm,.mx-tp button,.mx-goal button,.mx-sel,.mx-btn.ghost){
+ background:var(--gx-slip),var(--gx-well);border:1px solid var(--gx-edge);box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair);color:var(--text)}
+
+/* ---------- type and labels: sentence case, serif section heads ---------- */
+html body .mx .mx-h{margin:36px 4px 12px!important;font:400 1.5rem/1.15 var(--disp)!important;letter-spacing:-.005em!important;text-transform:none!important;color:var(--navy)}
+html body .mx :is(.mx-eb,.mx-fh,.mx-next small,.mx-nbox label,.mx-rt small){text-transform:none!important;letter-spacing:0!important;font-weight:600!important}
+html body .mx .mx-eb{font-size:.9rem!important;color:var(--lbl)}
+html body .mx .mx-fh{font-size:.86rem!important;color:var(--muted)}
+html body .mx :is(.mx-pc,.mx-kv b,.mx-cnt b,.mx-ring b,.mx-timer,.mx-hist b){font-variant-numeric:lining-nums tabular-nums}
+
+/* ---------- buttons ---------- */
+html body .mx .mx-btn{border-radius:16px;border:1px solid rgba(122,31,54,.55);background:var(--gx-jelly);color:#fff;box-shadow:var(--gx-jelly-sh);font:600 .98rem var(--body);transition:filter .15s,transform .12s,box-shadow .15s}
+html body .mx .mx-btn:hover:not(:disabled){filter:brightness(1.07) saturate(1.05)}
+html body .mx .mx-btn.ghost{border:1px solid var(--gx-edge);color:var(--text)}
+html body .mx .mx-btn.ghost:hover:not(:disabled){filter:none;background:var(--gx-slip),var(--gx-well-h)}
+html body .mx .mx-btn:disabled{opacity:.42}
+html body .mx :is(.mx-resume){border:1px solid rgba(122,31,54,.55);border-radius:22px;background:var(--gx-jelly);box-shadow:var(--gx-jelly-sh)}
+html body .mx :is(.mx-ib,.mx-bm){border-radius:14px}
+html body .mx .mx-ib:hover,html body .mx .mx-bm:hover{background:var(--gx-slip),var(--gx-well-h)}
+html body .mx .mx-bm[aria-pressed=true]{color:var(--burgundy);background:var(--gx-slip),var(--gx-sel);border-color:var(--gx-sel-bd)}
+html body .mx .mx-bm.mx-fg[aria-pressed=true]{color:#c22f5f}
+:root[data-theme=dark] body .mx .mx-bm[aria-pressed=true]{color:var(--rosy2)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) body .mx .mx-bm[aria-pressed=true]{color:var(--rosy2)}}
+
+/* ---------- live session: top bar, number strip, dock ---------- */
+html body .mx .mx-run{padding-bottom:118px}
+html body .mx .mx-top{top:calc(env(safe-area-inset-top,0px) + 8px);margin:6px 0 8px;padding:8px;gap:10px;border-radius:22px}
+html body .mx .mx-top .mx-ib{width:38px;height:38px;border-radius:13px}
+@media(max-width:480px){html body .mx .mx-top{padding:6px;gap:7px;border-radius:20px}html body .mx .mx-top .mx-mode{margin-right:5px;padding:1px 7px}html body .mx .mx-timer{padding:5px 8px;font-size:.86rem}}
+html body .mx .mx-pg{font-weight:500}
+html body .mx .mx-pg>span{display:flex;align-items:center;min-width:0;color:var(--muted)}
+html body .mx .mx-pg .mx-mode{flex:none}
+html body .mx .mx-sc{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html body .mx .mx-of{flex:none;white-space:pre;color:var(--text);font-variant-numeric:tabular-nums}
+/* the session counter shares a class with the builder's big match count: keep it small inside a session */
+html body .mx .mx-run .mx-cnt{font:500 .84rem var(--body);color:var(--muted)}
+html body .mx .mx-run .mx-cnt b{font:700 .84rem var(--body);color:var(--text);margin:0}
+html body .mx .mx-pg i{height:6px;background:var(--gx-track);box-shadow:inset 0 1px 1px rgba(42,22,39,.06)}
+html body .mx .mx-pg i::before,html body .mx .mx-bars i::before{background:var(--g-btn,var(--btn));box-shadow:0 0 10px rgba(194,71,106,.45)}
+html body .mx .mx-mode{text-transform:none;letter-spacing:0;font:600 .72rem var(--body);padding:2px 9px;background:var(--gx-sel);border-color:var(--gx-sel-bd);color:var(--lbl)}
+html body .mx .mx-mode:is(.m-mock,.m-test){background:var(--gx-jelly);border-color:transparent;color:#fff}
+html body .mx .mx-mode.m-review{background:var(--gx-well);border-color:var(--gx-edge);color:var(--muted)}
+html body .mx .mx-timer{padding:6px 11px;border-radius:99px;background:var(--gx-well);border:1px solid var(--gx-edge);box-shadow:0 0 0 .5px var(--gx-hair);font:600 .92rem var(--body);min-width:0}
+html body .mx .mx-timer.low{color:var(--gx-no-ink);background:var(--gx-no);border-color:var(--gx-no-bd)}
+html body .mx .mx-strip{gap:7px;padding:6px 4px 12px}
+html body .mx .mx-strip button{min-width:38px;height:38px;border-radius:12px;color:var(--muted);font:600 .82rem var(--body)}
+html body .mx .mx-strip button.an,html body .mx .mx-pal-g button.an{background:var(--gx-slip),var(--gx-sel);border-color:var(--gx-sel-bd);color:var(--lbl)}
+html body .mx .mx-strip button.ok,html body .mx .mx-pal-g button.ok{background:var(--gx-slip),var(--gx-ok);border-color:var(--gx-ok-bd);color:var(--gx-ok-ink)}
+html body .mx .mx-strip button.no,html body .mx .mx-pal-g button.no{background:var(--gx-slip),var(--gx-no);border-color:var(--gx-no-bd);color:var(--gx-no-ink)}
+html body .mx .mx-strip button.cur{background:var(--gx-jelly);border-color:transparent;color:#fff;box-shadow:var(--gx-jelly-sh);transform:none}
+html body .mx :is(.mx-strip,.mx-pal-g) button.fg::after{border-color:var(--gx-edge)}
+html body .mx .mx-cnt{margin:0 4px 10px}
+/* the dock: one floating sheet of glass in the thumb zone */
+html body .mx .mx-act{left:50%;right:auto;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(560px,calc(100% - 24px));
+ padding:8px;gap:8px;border-radius:24px}
+html body .mx .mx-act .mx-btn{flex:1;max-width:none;min-height:50px;border-radius:17px}
+@media(min-width:1100px){html body .mx .mx-act{left:calc(50% - 168px);padding-right:8px}}
+
+/* ---------- the question card ---------- */
+html body .mx .mx-card{margin:6px 0 16px;padding:22px 20px 20px}
+@media(min-width:700px){html body .mx .mx-card{padding:30px 32px 26px}}
+html body .mx .mx-card h3{margin:2px 0 20px;max-width:62ch;font:600 clamp(1.2rem,1.04rem + .8vw,1.5rem)/1.42 var(--read,var(--body));letter-spacing:-.01em;text-wrap:pretty;color:var(--text)}
+html body .mx .mx-meta{gap:6px;margin-bottom:14px}
+html body .mx .mx-chip{min-height:26px;padding:0 11px;border-radius:99px;background:var(--gx-well);border:1px solid var(--gx-edge);color:var(--muted);font:600 .74rem var(--body)}
+html body .mx .mx-chip.c{background:var(--gx-sel);border-color:var(--gx-sel-bd);color:var(--lbl);height:auto;padding:4px 11px;line-height:1.3}
+html body .mx .mx-chip.p{background:transparent;border-color:var(--gx-rule)}
+html body .mx .mx-bm{top:16px;right:16px;width:40px;height:40px}
+html body .mx .mx-bm.mx-fg{right:62px}
+@media(min-width:700px){html body .mx .mx-bm{top:24px;right:26px}html body .mx .mx-bm.mx-fg{right:72px}}
+html body .mx .mx-hint{margin:-10px 0 14px}
+/* options: glass wells that take a stain */
+html body .mx .mx-o{min-height:58px;margin:0 0 10px;padding:12px 16px 12px 12px;gap:14px;border-radius:18px;font:500 1rem/1.45 var(--body);
+ transition:background-color .18s,border-color .18s,box-shadow .18s,transform .12s}
+html body .mx .mx-o>span{padding-top:4px}
+html body .mx .mx-o b{width:32px;height:32px;background:rgba(255,255,255,.72);border:1px solid var(--gx-rule);color:var(--muted);font:700 .8rem var(--body);box-shadow:0 1px 2px rgba(42,22,39,.06)}
+:root[data-theme=dark] body .mx .mx-o:not(.sel):not(.ok):not(.no) b{background:rgba(255,255,255,.08)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) body .mx .mx-o:not(.sel):not(.ok):not(.no) b{background:rgba(255,255,255,.08)}}
+@media(hover:hover){html body .mx .mx-o:hover:not(:disabled){background:var(--gx-slip),var(--gx-well-h);border-color:var(--gx-sel-bd);box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair),0 8px 18px -12px rgba(122,31,54,.5);transform:translateY(-1px)}}
+html body .mx .mx-o:active:not(:disabled){transform:scale(.985)}
+html body .mx .mx-o.sel{background:var(--gx-slip),var(--gx-sel);border-color:var(--gx-sel-bd)}
+html body .mx .mx-o.sel b{background:var(--gx-jelly);border-color:transparent;color:#fff}
+html body .mx .mx-o.ok{background:var(--gx-slip),var(--gx-ok);border-color:var(--gx-ok-bd);box-shadow:var(--gx-hi),0 0 0 3px rgba(77,138,95,.13)}
+html body .mx .mx-o.ok b{background:var(--mx-ok);border-color:transparent;color:#fff}
+html body .mx .mx-o.no{background:var(--gx-slip),var(--gx-no);border-color:var(--gx-no-bd);box-shadow:var(--gx-hi),0 0 0 3px rgba(182,66,95,.11)}
+html body .mx .mx-o.no b{background:var(--mx-no);border-color:transparent;color:#fff}
+/* once answered, the options that are not the story step back (text keeps full contrast) */
+html body .mx .mx-o:disabled:not(.ok):not(.no):not(.sel){background:var(--gx-well-lo);border-color:color-mix(in srgb,var(--gx-edge) 55%,transparent);box-shadow:none}
+html body .mx .mx-o:disabled:not(.ok):not(.no):not(.sel) b{opacity:.6}
+html body .mx :is(.mx-o,.mx-s) small{color:var(--muted)}
+/* true / false statements */
+html body .mx .mx-s{margin:0 0 10px;padding:14px 14px 12px;border-radius:18px}
+html body .mx .mx-s p{gap:12px;margin:0 0 12px;font:500 1rem/1.45 var(--body)}
+html body .mx .mx-s p b{width:28px;height:28px;background:rgba(255,255,255,.72);border:1px solid var(--gx-rule);color:var(--muted)}
+:root[data-theme=dark] body .mx .mx-s p b{background:rgba(255,255,255,.08)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) body .mx .mx-s p b{background:rgba(255,255,255,.08)}}
+html body .mx .mx-s.ok{background:var(--gx-slip),var(--gx-ok);border-color:var(--gx-ok-bd)}
+html body .mx .mx-s.no{background:var(--gx-slip),var(--gx-no);border-color:var(--gx-no-bd)}
+html body .mx .mx-s.un{border-style:dashed;border-color:var(--gx-rule)}
+html body .mx .mx-tf{display:grid;grid-template-columns:1fr 1fr;gap:4px;max-width:300px;margin:0 0 0 40px;padding:4px;border-radius:14px;background:var(--gx-track);box-shadow:inset 0 1px 2px rgba(42,22,39,.08)}
+html body .mx .mx-tf button{max-width:none;min-height:40px;border:0;border-radius:11px;background:transparent;color:var(--muted);font:600 .88rem var(--body);transition:background-color .15s,color .15s,box-shadow .15s}
+@media(hover:hover){html body .mx .mx-tf button:hover:not(:disabled):not([aria-pressed=true]){background:var(--gx-well-h);color:var(--text)}}
+html body .mx .mx-tf button[aria-pressed=true]{background:var(--gx-jelly);color:#fff;box-shadow:var(--gx-jelly-sh)}
+html body .mx .mx-tf button.key{box-shadow:inset 0 0 0 2px var(--gx-ok-bd);color:var(--gx-ok-ink)}
+html body .mx .mx-s.ok .mx-tf button[aria-pressed=true]{background:var(--mx-ok);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+html body .mx .mx-s.no .mx-tf button[aria-pressed=true]:not(.key){background:var(--mx-no);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+html body .mx .mx-s.no .mx-tf button.key[aria-pressed=true]{background:var(--mx-ok);color:#fff}
+@media(max-width:420px){html body .mx .mx-tf{margin-left:0;max-width:none}}
+/* verdict, answer line, key note */
+html body .mx .mx-v{display:inline-flex;align-items:center;gap:8px;margin:16px 0 0;padding:6px 14px 6px 8px;border-radius:99px;border:1px solid;font:700 .92rem var(--body)}
+html body .mx .mx-v::before{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;color:#fff;font:700 .78rem/1 var(--body)}
+html body .mx .mx-v.ok{background:var(--gx-ok);border-color:var(--gx-ok-bd);color:var(--gx-ok-ink)}
+html body .mx .mx-v.ok::before{content:"✓";content:"✓"/"";background:var(--mx-ok)}
+html body .mx .mx-v.no{background:var(--gx-no);border-color:var(--gx-no-bd);color:var(--gx-no-ink)}
+html body .mx .mx-v.no::before{content:"✕";content:"✕"/"";background:var(--mx-no)}
+html body .mx .mx-ans{margin:10px 2px 0}
+html body .mx .mx-ans b{color:var(--gx-ok-ink)}
+html body .mx .mx-k{margin:10px 0 0;padding:12px 14px;border-radius:14px;background:var(--gx-track);border:1px solid var(--gx-rule);color:var(--muted)}
+/* per-question tools */
+html body .mx .mx-qa{margin-top:20px;padding-top:16px;border-top:0;background:linear-gradient(90deg,transparent,var(--gx-rule) 12%,var(--gx-rule) 88%,transparent) top/100% 1px no-repeat}
+html body .mx .mx-qb{min-height:38px;color:var(--muted)}
+html body .mx .mx-qb:hover{background:var(--gx-slip),var(--gx-well-h);border-color:var(--gx-sel-bd);color:var(--text)}
+html body .mx .mx-qb-rd[aria-pressed=true]{background:var(--gx-slip),var(--gx-ok);border-color:var(--gx-ok-bd);color:var(--gx-ok-ink)}
+html body .mx .mx-qb-rv[aria-pressed=true],html body .mx .mx-qb-nt[aria-expanded=true],html body .mx .mx-qb-nt.has{background:var(--gx-slip),var(--gx-sel);border-color:var(--gx-sel-bd);color:var(--lbl)}
+html body .mx .mx-qb-ms[aria-pressed=true]{background:var(--gx-slip),var(--gx-no);border-color:var(--gx-no-bd);color:var(--gx-no-ink)}
+html body .mx .mx-nbox{border-radius:18px;background:var(--gx-track);border:1px solid var(--gx-rule)}
+html body .mx .mx-nbox label{color:var(--lbl);font-size:.84rem}
+html body .mx .mx-nbox textarea{border-radius:12px;border:1px solid var(--gx-edge);background:var(--gx-well-h);box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair)}
+/* question list: a sheet of glass over a dimmed page */
+html body .mx .mx-pal{background:var(--gx-scrim);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+html body .mx .mx-pal-in{border:1px solid var(--gx-edge);background:var(--gx-slip),var(--gx-sheen),linear-gradient(160deg,var(--gx-bar),var(--gx-bar-2));
+ box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair),var(--gx-drop);-webkit-backdrop-filter:var(--gx-blur);backdrop-filter:var(--gx-blur)}
+html body .mx .mx-pal-h{font:400 1.3rem var(--disp)}
+html body .mx .mx-pal-g{gap:8px}
+html body .mx .mx-pal-g button{min-height:44px;border-radius:12px;color:var(--muted)}
+html body .mx .mx-pal-g button.cur{outline:2px solid var(--lbl);outline-offset:2px}
+html body .mx .mx-leg2 i{border-radius:5px;border:1px solid var(--gx-edge);background:var(--gx-well);box-shadow:0 0 0 .5px var(--gx-hair)}
+html body .mx .mx-leg2 i.an{background:var(--gx-sel);border-color:var(--gx-sel-bd)}
+html body .mx .mx-leg2 i.un{border-style:dashed;border-color:var(--gx-rule)}
+html body .mx .mx-leg2 i.fg{border-radius:50%;background:#d03466;border-color:#d03466}
+@media(min-width:1100px){
+ html body .mx .mx-run>.mx-pal{background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+ html body .mx .mx-run>.mx-pal .mx-pal-in{border-radius:24px;box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair),var(--gx-drop)}
+ html body .mx .mx-pal-h{font-size:1.15rem}}
+
+/* ---------- results ---------- */
+html body .mx .mx-res{padding:26px 24px;gap:26px}
+html body .mx .mx-ring .bg{stroke:var(--gx-track)}
+html body .mx .mx-ring .fg{stroke:var(--burgundy);filter:drop-shadow(0 2px 6px rgba(194,71,106,.45))}
+:root[data-theme=dark] body .mx .mx-ring .fg{stroke:var(--rosy2)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) body .mx .mx-ring .fg{stroke:var(--rosy2)}}
+html body .mx .mx-rs h2{font-size:1.75rem}
+html body .mx .mx-bars>div{padding:9px 4px;border-bottom:1px solid var(--gx-rule)}
+html body .mx .mx-bars>div:last-child{border-bottom:0}
+html body .mx .mx-bars i{height:6px;background:var(--gx-track)}
+
+/* ---------- MCQ home ---------- */
+html body .mx .mx-dash{gap:16px}
+html body .mx :is(.mx-acc,.mx-day){padding:22px 22px 20px}
+html body .mx .mx-st{background:var(--gx-track);box-shadow:inset 0 1px 1px rgba(42,22,39,.06)}
+html body .mx .mx-st.sm{background:var(--gx-track)}
+html body .mx .mx-st u.r{background:var(--mx-ok)}
+html body .mx .mx-st u.w{background:var(--mx-no)}
+html body .mx .mx-st.g u.r{background:var(--g-btn,var(--btn))}
+html body .mx .mx-leg i{border-color:var(--gx-rule);background:var(--gx-well)}
+html body .mx .mx-leg i.r{background:var(--mx-ok);border-color:var(--mx-ok)}
+html body .mx .mx-leg i.w{background:var(--mx-no);border-color:var(--mx-no)}
+html body .mx .mx-goal{flex-wrap:wrap}
+html body .mx .mx-goal button{border-radius:12px;min-width:46px;height:38px}
+html body .mx .mx-goal button[aria-pressed=true]{background:var(--gx-jelly);border-color:transparent;color:#fff;box-shadow:var(--gx-jelly-sh)}
+html body .mx .mx-next{padding:18px 20px;border-radius:24px;border:1px solid var(--gx-edge);background:var(--gx-slip),var(--gx-sheen),var(--gx-tint);box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair),var(--gx-drop)}
+html body .mx .mx-next:hover{background:var(--gx-slip),var(--gx-sheen),var(--gx-tint);border-color:var(--gx-sel-bd)}
+html body .mx .mx-next small{font-size:.82rem;margin-bottom:4px}
+html body .mx .mx-next b{font:400 1.3rem/1.2 var(--disp);margin-bottom:4px}
+html body .mx .mx-tiles{gap:12px}
+html body .mx .mx-tile{min-height:100px;padding:16px 16px 14px;gap:6px;border-radius:20px;border-left-width:1px!important;border-left-color:var(--gx-edge)!important}
+@media(hover:hover){html body .mx .mx-tile:hover:not(:disabled){background:var(--gx-slip),var(--gx-well-h);border-color:var(--gx-sel-bd)!important}}
+html body .mx .mx-tile:is(.mx-due,.mx-fix){background:var(--gx-slip),var(--gx-tint);border-color:var(--gx-sel-bd)!important}
+html body .mx .mx-tile:disabled{background:var(--gx-well-lo);box-shadow:none;opacity:.62}
+html body .mx .mx-tile b{font:600 1.02rem/1.25 var(--body)}
+html body .mx .mx-tile b em{background:var(--gx-sel);color:var(--lbl);border:1px solid var(--gx-sel-bd)}
+html body .mx .mx-weak button{border-radius:99px}
+html body .mx .mx-weak em{color:var(--gx-no-ink)}
+html body .mx .mx-chs{gap:10px}
+html body .mx .mx-chd{border-radius:20px;overflow:hidden}
+html body .mx .mx-chd[open]{background:var(--gx-slip),var(--gx-well-h)}
+html body .mx .mx-chd summary{padding:15px 18px 20px}
+html body .mx .mx-chd summary .mx-st.sm{left:18px;right:18px;bottom:9px}
+html body .mx .mx-tps{border-top:1px solid var(--gx-rule)}
+html body .mx .mx-tp{border-bottom:1px solid var(--gx-rule)}
+html body .mx .mx-tp button{border-radius:11px;padding:7px 13px}
+html body .mx .mx-tp button:first-of-type{background:var(--gx-jelly);border-color:transparent;color:#fff;box-shadow:var(--gx-jelly-sh)}
+html body .mx .mx-papers{gap:10px}
+html body .mx .mx-paper{border-radius:16px;padding:14px 15px}
+@media(hover:hover){html body .mx .mx-paper:hover{background:var(--gx-slip),var(--gx-well-h);border-color:var(--gx-sel-bd)}}
+html body .mx .mx-paper.done{border-color:var(--gx-ok-bd)}
+html body .mx .mx-paper.done b::after{color:var(--gx-ok-ink)}
+html body .mx .mx-hist{padding:4px 18px;border-radius:20px}
+html body .mx .mx-hist>div{border-bottom:1px solid var(--gx-rule)}
+html body .mx .mx-hist>div:last-child{border-bottom:0}
+
+/* ---------- custom practice ---------- */
+html body .mx .mx-search input{min-height:50px;border-radius:16px;border:1px solid var(--gx-edge);background:var(--gx-slip),var(--gx-well-h);box-shadow:var(--gx-hi),0 0 0 .5px var(--gx-hair);color:var(--text)}
+html body .mx .mx-search input:focus-visible{outline:2px solid var(--lbl);outline-offset:2px}
+html body .mx .mx-f{border-radius:99px}
+html body .mx .mx-f:has(input:checked){background:var(--gx-slip),var(--gx-sel);border-color:var(--gx-sel-bd)}
+html body .mx .mx-f:has(input:indeterminate){border-style:dashed;border-color:var(--gx-sel-bd)}
+html body .mx .mx-f.ch{border:0;box-shadow:none;background:none}
+html body .mx .mx-f.ch:has(input:checked){background:var(--gx-sel)}
+html body .mx .mx-chd2{border-radius:18px}
+html body .mx .mx-sum{padding:20px}
+html body .mx .mx-seg{gap:4px;padding:4px;border-radius:14px;background:var(--gx-track);box-shadow:inset 0 1px 2px rgba(42,22,39,.08)}
+html body .mx .mx-seg button{border:0;border-radius:11px;background:transparent;color:var(--muted)}
+@media(hover:hover){html body .mx .mx-seg button:hover:not([aria-pressed=true]){background:var(--gx-well-h);color:var(--text)}}
+html body .mx .mx-seg button[aria-pressed=true]{background:var(--gx-jelly);color:#fff;box-shadow:var(--gx-jelly-sh)}
+
+/* ---------- reading mode ---------- */
+html body .mx .mx-rbar{top:calc(env(safe-area-inset-top,0px) + 8px);margin:6px 0 10px;padding:8px 10px 8px 16px;border-radius:20px;border-bottom:1px solid var(--gx-edge)}
+html body .mx .mx-sel{border-radius:12px}
+html body .mx .mx-rt{margin:34px 4px 10px}
+
+/* ---------- focus, motion, fallbacks ---------- */
+html body .mx :is(.mx-o,.mx-tf button,.mx-strip button,.mx-pal-g button,.mx-tile,.mx-paper,.mx-btn,.mx-qb,.mx-ib,.mx-bm,.mx-seg button,.mx-goal button,.mx-next,.mx-resume):focus-visible{outline:2px solid var(--lbl);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html body .mx :is(.mx-o,.mx-btn,.mx-tf button){transition:none!important;transform:none!important}}
+/* Reduce effects: keep the look, drop every blur */
+html.zz-flat body .mx :is(.mx-card,.mx-acc,.mx-day,.mx-res,.mx-sum,.mx-top,.mx-act,.mx-rbar,.mx-pal,.mx-pal-in){-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+html.zz-flat body .mx :is(.mx-top,.mx-act,.mx-rbar,.mx-pal-in){background:var(--panel)!important}
+/* no blur support: solid bars so text never sits on moving content */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){html body .mx :is(.mx-top,.mx-act,.mx-rbar,.mx-pal-in){background:var(--panel)!important}}
+/* the OS asks for less transparency: solid surfaces, no slide behind */
+@media(prefers-reduced-transparency:reduce){
+ html body:has(> #v-mcqs:not([hidden]))::after{display:none}
+ html body .mx :is(.mx-card,.mx-acc,.mx-day,.mx-res,.mx-sum,.mx-top,.mx-act,.mx-rbar,.mx-pal-in,.mx-next){background:var(--panel)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+ html body .mx :is(.mx-o,.mx-s,.mx-tile,.mx-chd,.mx-chd2,.mx-paper,.mx-hist,.mx-weak button,.mx-strip button,.mx-pal-g button,.mx-qb,.mx-f,.mx-ib,.mx-bm,.mx-tp button,.mx-goal button,.mx-sel,.mx-btn.ghost){background-color:var(--soft)}
+ html body .mx .mx-pal{-webkit-backdrop-filter:none;backdrop-filter:none}}
+@media print{html body:has(> #v-mcqs:not([hidden]))::after{display:none}
+ html body .mx :is(.mx-card,.mx-res,.mx-o,.mx-s){background:#fff!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-color:#bbb!important}}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -3755,7 +4077,7 @@ const MCQDATA={"ch":[["Cell Injury, Cell Death and Adaptations",["Cell Injury an
   const strip=s.ids.map((h,i)=>{const qq=BY[h],an=answered(qq,s);let c='';if(rv||(!exam&&s.chk[h]))c=ok(qq,s.ans[h])?'ok':an?'no':'un';else if(an)c='an';if(fl[h])c+=' fg';if(i===s.i)c+=' cur';return `<button type="button" class="${c.trim()}" data-a="jump" data-i="${i}" aria-label="Question ${i+1}">${i+1}</button>`}).join('');
   const tm=!rv&&s.limit?`<span class="mx-timer" id="mx-timer" aria-live="off">${fmt(s.limit-elapsed())}</span>`:(!rv?`<span class="mx-timer" id="mx-timer">${fmt(elapsed())}</span>`:'');
   M.innerHTML=`<div class="mx-run"><div class="mx-top"><button type="button" class="mx-ib" data-a="exit" aria-label="${rv?'Close review':'Exit session'}">${ic.x}</button>
-   <div class="mx-pg"><span><em class="mx-mode m-${mode.split(' ')[0].toLowerCase()}">${mode}</em>${E(s.scope)} · ${s.i+1} of ${n}</span><i style="--w:${((s.i+1)/n*100).toFixed(1)}%"></i></div>${tm}
+   <div class="mx-pg"><span><em class="mx-mode m-${mode.split(' ')[0].toLowerCase()}">${mode}</em><span class="mx-sc">${E(s.scope)}</span><span class="mx-of"> · ${s.i+1} of ${n}</span></span><i style="--w:${((s.i+1)/n*100).toFixed(1)}%"></i></div>${tm}
    <button type="button" class="mx-ib" data-a="pal" aria-label="Question list">${ic.grid}</button></div>
    <div class="mx-strip" role="group" aria-label="Questions">${strip}</div>${exam||s.limit?`<p class="mx-cnt">${cntHtml(s)}</p>`:''}
    <article class="mx-card" data-h="${q.h}">${metaRow(q,(rv?'':`<button type="button" class="mx-bm mx-fg" data-a="flag" aria-pressed="${!!fl[q.h]}" aria-label="Flag for review" title="Flag to come back to (F)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4M6 5h11l-2 4 2 4H6"/></svg></button>`)+bmBtn(q))}<h3>${E(q.q)}</h3>${q.y?'<p class="mx-hint">Mark each statement True or False.</p>':''}
