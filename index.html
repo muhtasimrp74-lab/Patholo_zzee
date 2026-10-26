@@ -3864,7 +3864,7 @@ counts();dash();
  X.classList.add('zm');
  X.innerHTML='<section class="zm-card" id="zm-card" aria-labelledby="zm-name"></section><div class="zm-cols"><div>'+
   grp('zm-h-study','Study',btn('tut-open','tut','Tutorial')+link('#/practice','practice','Practice')+link('#/howto','read','How to read'))+
-  grp('zm-h-saved','Saved',link('#/bookmarks','bm','Bookmarks','bm')+link('#/favourites','fav','Favourites','fav')+link('#/notes','notes','Notes','notes'))+
+  grp('zm-h-saved','Saved',link('#/bookmarks','bm','Bookmarks','bm')+link('#/favourites','fav','Favourites','fav')+link('#/notes','notes','Notes','notes')+link('#/report','read','Lab report')+link('#/examiner','practice','Examiner mode'))+
   grp('zm-h-data','Your data',btn('zm-exp','exp','Export backup')+btn('zm-imp','imp','Import backup')+'<input type="file" accept=".json" id="zm-file" hidden>')+
  '</div><div>'+
   grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
@@ -3872,7 +3872,7 @@ counts();dash();
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
    sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
    '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="auto">Auto</button><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
-   sw('zm-tis','tis','Tissue background')+sw('zm-pgr','pgr','Swipe between tabs')+sw('zm-hap','hap','Haptics'))+
+   sw('zm-tis','tis','Tissue background')+sw('zm-pgr','pgr','Swipe between tabs')+sw('zm-hap','hap','Haptics and sound'))+
   '<div class="zm-list zm-outl zm-o6" id="zm-outl" hidden>'+btn('zm-out','out','Sign out')+'</div>'+
   '<section class="zm-g zm-o7" aria-labelledby="zm-h-app"><h2 class="zm-gh" id="zm-h-app">App</h2><div class="zm-list">'+
    '<div class="zm-row zm-fix">'+ic('read')+'<span class="zm-l">Version</span><span class="zm-v" id="zm-ver">…</span></div>'+
@@ -3927,7 +3927,7 @@ counts();dash();
  $x('#zm-tis').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.tissue=s.pref.tissue===false;save();
   document.documentElement.classList.toggle('fx-notis',s.pref.tissue===false);if(window.zzFxGl)zzFxGl.wake(3000);sync()};
  $x('#zm-pgr').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.pager=s.pref.pager===false;save();if(window.zzPager)zzPager.sync();sync()};
- const hb=$x('#zm-hap');if(!('vibrate' in navigator))hb.hidden=true;
+ const hb=$x('#zm-hap');if(!('vibrate' in navigator)&&!(window.AudioContext||window.webkitAudioContext))hb.hidden=true;
  hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
  function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(de.dataset.tone==='fluo'?'fluo':'dark'):de.dataset.tone==='sepia'?'sepia':'light'}
  function sync(){
@@ -5683,7 +5683,7 @@ function tier(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'auto';if(v==='off')retur
 window.zzTier=tier;
 function level(){const t=tier();return t===0?'off':t===1?'min':'full'}
 function apply(){const l=level();['full','min','off'].forEach(x=>de.classList.toggle('fx-'+x,l===x));pill()}
-const haptic=p=>{const s=st();if((s&&s.pref&&s.pref.hap===false)||level()==='off')return;try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}};
+const haptic=p=>{const s=st();if((s&&s.pref&&s.pref.hap===false)||level()==='off')return;try{if(navigator.vibrate)navigator.vibrate(p)}catch(e){}try{if(window.zzSound)zzSound(p)}catch(e){}};   /* sound.js: synthesised, only once the switch is turned on */
 window.zzFx={level,apply,haptic};
 const busy=()=>document.body.classList.contains('an-on')||document.hidden;   /* never during annotation or in the background */
 
@@ -6356,6 +6356,203 @@ function arm(){armed=Date.now()+5000;if(mo)return;mo=new MutationObserver(ms=>{i
 function stain(el){if(T()<2||!el.animate)return;const tray=el.parentElement?[...el.parentElement.children]:[el];
  tray.forEach((x,i)=>x.animate([{filter:'grayscale(1) blur(1.5px)',opacity:.7},{filter:'none',opacity:1}],{duration:700,delay:i*45,easing:'ease-out',fill:'backwards'}))}
 ['zz:chunk','zz:auth'].forEach(ev=>{addEventListener(ev,arm);document.addEventListener(ev,arm)});
+}catch(e){}})();
+
+/* ===== deck.js (practice, #v-practice) =====
+   13 deck physics: the card rests on a stack (shadow layers, no transforms). Once the answer is shown, swipe right = Easy,
+      left = Hard, up = Medium: the card follows the finger (transform only while dragging), springs back or flies off,
+      then the existing rating button is pressed. Transforms are removed at rest.
+   14 Leitner boxes: six boxes (b = 0..5, intervals 0, 2, 4, 8, 16, 30 days) under the deck; after a rating the card drops
+      into the box rate() put it in (hard = box 0). Reads S.sr only; rate() is unchanged. */
+(function(){try{
+const T=()=>window.zzTier?zzTier():2,IV=[0,2,4,8,16,30],st=()=>typeof S!=='undefined'?S:null;
+const css=document.createElement('style');css.textContent=`#v-practice .pc.zz-deck{box-shadow:0 7px 0 -3px var(--panel),0 7px 0 -2px var(--line2),0 14px 0 -7px var(--panel),0 14px 0 -6px var(--line),var(--sh1,none)}
+#v-practice .pc.zz-deck .ans:not([hidden])~.prow{touch-action:pan-y}
+.zz-lb{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:22px 0 8px}
+.zz-lb div{position:relative;padding:8px 4px 6px;border:1px solid var(--line2);border-top:0;border-radius:0 0 10px 10px;text-align:center;font:600 .72rem/1.25 var(--body);color:var(--muted);background:var(--soft)}
+.zz-lb b{display:block;font:400 1.1rem var(--disp);color:var(--text);font-variant-numeric:tabular-nums}
+.zz-lb div.hit{border-color:var(--burgundy);color:var(--lbl)}
+.zz-fly{position:fixed;z-index:65;border-radius:8px;background:var(--panel);border:1px solid var(--line2);box-shadow:0 8px 20px rgba(0,0,0,.2);pointer-events:none}`;document.head.append(css);
+/* 14: the boxes */
+function boxes(){const v=document.getElementById('v-practice');if(!v)return null;const pc=v.querySelector('.pc');if(!pc)return null;let lb=v.querySelector('.zz-lb');
+ const s=st(),n=[0,0,0,0,0,0];if(s&&s.sr)for(const k in s.sr){const b=s.sr[k]&&s.sr[k].b;if(b>=0&&b<=5)n[b|0]++}
+ if(!lb){lb=document.createElement('div');lb.className='zz-lb';lb.setAttribute('aria-label','Leitner boxes');pc.parentNode.append(lb)}
+ lb.innerHTML=n.map((c,i)=>'<div data-b="'+i+'"><b>'+c+'</b>'+(IV[i]?IV[i]+' d':'today')+'</div>').join('');return lb}
+function drop(from,b){const lb=boxes(),bx=lb&&lb.querySelector('[data-b="'+b+'"]');if(!bx)return;bx.classList.add('hit');setTimeout(()=>bx.classList.remove('hit'),900);
+ if(T()<2||!from||!document.body.animate)return;const r=from,t=bx.getBoundingClientRect(),f=document.createElement('div');f.className='zz-fly';
+ f.style.cssText+=';left:'+r.left+'px;top:'+r.top+'px;width:'+r.width+'px;height:'+Math.min(r.height,160)+'px';document.body.append(f);
+ const dx=t.left+t.width/2-(r.left+r.width/2),dy=t.top-(r.top+Math.min(r.height,160)/2),sc=t.width/r.width;
+ f.animate([{transform:'none',opacity:1},{transform:'translate('+dx*.6+'px,'+(dy*.6-40)+'px) scale('+(.5+sc/2)+')',opacity:1,offset:.6},{transform:'translate('+dx+'px,'+dy+'px) scale('+sc+')',opacity:0}],{duration:620,easing:'cubic-bezier(.3,.1,.3,1)'}).finished.then(()=>f.remove(),()=>f.remove())}
+let pend=null;
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('#v-practice .prow [data-r]');if(!b||!/^[emh]$/.test(b.dataset.r))return;
+ const id=typeof PR!=='undefined'&&PR&&PR.q&&PR.q[0],pc=b.closest('.pc');pend={id,r:pc?pc.getBoundingClientRect():null};
+ setTimeout(()=>{const s=st(),o=pend&&s&&s.sr&&s.sr[pend.id];if(o)drop(pend.r,Math.max(0,Math.min(5,o.b|0)));pend=null},0)},true);
+/* 13: drag with a spring */
+let d=null;
+const spring=(el,x,y,r)=>{if(T()<2||!el.animate){el.style.transform='';return}const k=[];for(let i=0;i<=12;i++){const u=i/12,a=Math.exp(-5*u)*Math.cos(9*u);k.push({transform:'translate('+x*a+'px,'+y*a+'px) rotate('+r*a+'deg)'})}
+ el.style.transform='';el.animate(k,{duration:520,easing:'linear'})};
+document.addEventListener('pointerdown',e=>{const pc=e.target.closest&&e.target.closest('#v-practice .pc.zz-deck');if(!pc||T()<1||document.body.classList.contains('an-on'))return;
+ if(!pc.querySelector('.prow [data-r=e]')||e.target.closest('button,input,select,textarea,canvas,a'))return;d={pc,x:e.clientX,y:e.clientY,on:false,id:e.pointerId}},{passive:true});
+document.addEventListener('pointermove',e=>{if(!d||e.pointerId!==d.id)return;const dx=e.clientX-d.x,dy=e.clientY-d.y;
+ if(!d.on){if(Math.hypot(dx,dy)<12)return;if(Math.abs(dy)>Math.abs(dx)&&dy>0){d=null;return}d.on=true;d.pc.style.willChange='transform';try{d.pc.setPointerCapture(e.pointerId)}catch(x){}}
+ d.dx=dx;d.dy=Math.min(0,dy);d.pc.style.transform='translate('+dx+'px,'+d.dy+'px) rotate('+dx/18+'deg)'},{passive:true});
+const end=e=>{if(!d||(e&&e.pointerId!==d.id))return;const g=d;d=null;if(!g.on)return;const pc=g.pc,dx=g.dx||0,dy=g.dy||0,W=pc.clientWidth;
+ const r=dx>W*.28?'e':dx<-W*.28?'h':dy<-110?'m':null;pc.style.willChange='';
+ if(!r){spring(pc,dx,dy,dx/18);return}
+ const go=()=>{pc.style.transform='';const b=pc.querySelector('.prow [data-r='+r+']');if(b)b.click()};if(window.zzFx)zzFx.haptic(r==='h'?[18,30,18]:10);
+ if(T()<2||!pc.animate){go();return}const ox=r==='e'?innerWidth:r==='h'?-innerWidth:dx,oy=r==='m'?-innerHeight:dy;
+ pc.animate([{transform:pc.style.transform},{transform:'translate('+ox+'px,'+oy+'px) rotate('+(ox/18)+'deg)',opacity:.2}],{duration:220,easing:'ease-in'}).finished.then(go,go)};
+document.addEventListener('pointerup',end,true);document.addEventListener('pointercancel',end,true);
+/* tag new cards for the stack and refresh the boxes */
+const mark=()=>{const v=document.getElementById('v-practice');if(!v)return;v.dataset.noSwipe='';const pc=v.querySelector('.pc');if(pc&&pc.querySelector('.pmeta'))pc.classList.add('zz-deck');if(pc&&pc.querySelector('.pmeta'))boxes()};
+const host=typeof P!=='undefined'&&P&&P.nodeType===1?P:document.getElementById('v-practice');if(host)new MutationObserver(mark).observe(host,{childList:true});mark();   /* childList only: the boxes' own updates do not re-trigger */
+}catch(e){}})();
+
+/* ===== morph.js: shared-element morphs on top of fx.js View Transitions (Full tier only).
+   Topic tile -> page banner, list row -> reader heading, bookmark button -> the shelf (Menu tab). One name at a time
+   ('zz-morph'), set on the tapped element and on its destination, cleared as soon as the transition is over. */
+(function(){try{
+const N='zz-morph',ok=()=>!!document.startViewTransition&&window.zzFx&&zzFx.level()==='full'&&(!window.zzTier||zzTier()>=2)&&!document.body.classList.contains('an-on');
+let src=null,kind='',tm=0;
+const clear=()=>{document.querySelectorAll('[data-zz-morph]').forEach(e=>{e.style.viewTransitionName='';delete e.dataset.zzMorph})};
+const tag=e=>{if(!e)return;e.style.viewTransitionName=N;e.dataset.zzMorph='1'};
+document.addEventListener('click',e=>{if(!ok())return;const t=e.target.closest&&e.target.closest('a.topic,.tbtile,a.nh-t4,#res li a,.row a,.tbtoc a');if(!t||!/^#\//.test(t.getAttribute('href')||''))return;
+ if(window.zzPager&&zzPager.tabs(t.getAttribute('href'))&&zzPager.tabs(location.hash))return;   /* tab to tab: the pager slides instead */
+ clear();src=t;kind=t.closest('#res,.row,.tbtoc')?'row':'tile';tag(t);clearTimeout(tm);tm=setTimeout(clear,1500)},true);
+addEventListener('hashchange',()=>{if(!src)return;const old=src;src=null;old.style.viewTransitionName='';delete old.dataset.zzMorph;
+ const v=document.querySelector('.view:not([hidden])');if(!v)return;
+ const dst=kind==='row'?(v.querySelector('#tbbody h1,#tbbody h2')||v.querySelector('.card.hl header')||v.querySelector('h1,h2')):(v.querySelector('.pb')||v.querySelector('h1,h2'));
+ tag(dst);clearTimeout(tm);tm=setTimeout(clear,900)});
+/* bookmark -> shelf: the button morphs into the Menu tab, where Bookmarks live */
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('.act[data-k=bm],.mx-bm:not(.mx-fg)');if(!b||!ok()||b.getAttribute('aria-pressed')==='true')return;
+ const shelf=document.querySelector('#bnav a[href="#/menu"]')||document.querySelector('.nav .links a[href="#/menu"]');if(!shelf||!shelf.offsetParent)return;
+ clear();tag(b);requestAnimationFrame(()=>{try{const t=document.startViewTransition(()=>{b.style.viewTransitionName='';delete b.dataset.zzMorph;tag(shelf)});t.finished.finally(clear)}catch(x){clear()}})});
+}catch(e){}})();
+
+/* ===== report.js: the week as a pathology report (#/report, linked from Menu). Built from S, read-only; prints cleanly. */
+(function(){try{
+if(typeof mkView!=='function')return;
+const M=mkView('report','Lab report','Lab report','Your last seven days, reported like a specimen.'),V=M.closest('.view'),de=document.documentElement;
+const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const css=document.createElement('style');css.textContent=`.zz-rp{position:relative;max-width:760px;margin:0 auto 40px;padding:28px 26px;background:var(--panel);border:1px solid var(--line2);border-radius:6px;font:400 .95rem/1.6 var(--body);color:var(--text)}
+.zz-rp h2{margin:0 0 2px;font:400 1.6rem var(--disp)}.zz-rp .hd{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:4px 18px;margin:14px 0 18px;padding:12px 0;border-block:1px solid var(--line2);font-size:.85rem}
+.zz-rp .hd b{display:block;font-weight:600;color:var(--muted);font-size:.74rem}.zz-rp h3{margin:20px 0 6px;font:600 .9rem var(--body);color:var(--lbl)}
+.zz-rp table{width:100%;border-collapse:collapse;font-size:.88rem}.zz-rp td,.zz-rp th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}.zz-rp td.n{text-align:right;font-variant-numeric:tabular-nums}
+.zz-rp ol{margin:0;padding-left:1.3em}.zz-rp .dx{margin-top:18px;padding:12px 14px;border:1px solid var(--line2);font-weight:600}
+.zz-rp .st{position:absolute;top:22px;right:22px;width:112px;height:112px;border:3px double #a3384f;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;
+ color:#a3384f;font:700 .78rem/1.2 var(--body);transform:rotate(-14deg);opacity:.85}
+.zz-rp .pr{margin-top:18px;min-height:40px;padding:0 16px;border-radius:10px;border:1px solid var(--line2);background:var(--soft);color:var(--text);font:600 .85rem var(--body);cursor:pointer}
+@media(max-width:560px){.zz-rp .st{position:static;margin:0 0 10px auto;width:92px;height:92px}}
+@media print{html.zz-rp-on body>*:not(#v-report):not(#zz-pager){display:none!important}html.zz-rp-on #v-report{display:block!important}html.zz-rp-on #v-report .zz-rp{border:0;padding:0}html.zz-rp-on .zz-rp .pr{display:none}
+ html.zz-rp-on .zz-rp{color:#000;background:#fff}html.zz-rp-on .zz-rp .st{color:#a3384f;border-color:#a3384f}}`;document.head.append(css);
+function render(){
+ const s=(typeof S!=='undefined'&&S)||{},now=Date.now(),wk=now-7*864e5,D=typeof DATA!=='undefined'?DATA:[],N=D.length;
+ const mc=s.mcq||{},hist=(mc.hist||[]).filter(h=>h.ts>=wk),qn=hist.reduce((a,h)=>a+(h.n||0),0),qk=hist.reduce((a,h)=>a+(h.ok||0),0);
+ const sr=s.sr||{},od=Object.keys(sr).filter(k=>sr[k]&&now>sr[k].d).length,rev=Object.keys(sr).length,L=(s.learned||[]).length,streak=(s.streak&&+s.streak.n)||0;
+ const rows=[];if(typeof MCQDATA!=='undefined'&&mc.p){const by={};MCQDATA.q.forEach(q=>{const x=mc.p[q.h];if(!x||!x.n)return;const c=by[q.c]=by[q.c]||[0,0];c[1]++;if(x.r)c[0]++});
+  for(const c in by)if(by[c][1]>=5)rows.push([MCQDATA.ch[c][0],by[c][0],by[c][1]])}
+ rows.sort((a,b)=>a[1]/a[2]-b[1]/b[2]);
+ const F=[];rows.forEach(([n,k,t])=>{const p=k/t;if(p<.5)F.push('Marked deficiency in '+n.toLowerCase()+' ('+Math.round(p*100)+'%); recommend revision.');else if(p<.7)F.push('Mild deficiency in '+n.toLowerCase()+' ('+Math.round(p*100)+'%); monitor.')});
+ const ok=rows.filter(r=>r[1]/r[2]>=.85).map(r=>r[0].toLowerCase());if(ok.length)F.push('Within normal limits: '+ok.slice(0,4).join(', ')+'.');
+ F.push(od?od+' specimen'+(od>1?'s':'')+' overdue for review and fading; prompt re-staining advised.':'No overdue specimens.');
+ F.push(streak?'Activity sustained over '+streak+' consecutive day'+(streak>1?'s':'')+'.':'No recent activity recorded; resumption advised.');
+ F.push('Coverage: '+L+' of '+N+' questions marked learned ('+(N?Math.round(L/N*100):0)+'%).');
+ const bad=F.filter(f=>/^Marked/.test(f)).length,dx=bad?'Focal knowledge deficits; otherwise progressing. Recommend targeted revision.':qn?'Progressing within expected limits.':'Insufficient specimen for assessment this week.';
+ M.innerHTML=`<article class="zz-rp"><div class="st">PATHOLO<br>ZZEE<br>REVIEWED</div><h2>Surgical pathology report</h2><p class="mu">Weekly summary, ${new Date(wk).toLocaleDateString('en-GB',{day:'numeric',month:'short'})} to ${new Date(now).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</p>
+ <div class="hd"><span><b>Specimen</b>Pathology revision, 7 days</span><span><b>MCQ sessions</b>${hist.length} (${qn} questions)</span><span><b>MCQ accuracy</b>${qn?Math.round(qk/qn*100)+'%':'not assessed'}</span><span><b>Cards on review</b>${rev}</span></div>
+ <h3>Microscopic description</h3>${rows.length?`<table><tr><th>Chapter</th><th class="n">Right</th><th class="n">Tried</th></tr>${rows.map(r=>`<tr><td>${E(r[0])}</td><td class="n">${r[1]}</td><td class="n">${r[2]}</td></tr>`).join('')}</table>`:'<p>No chapter has five or more MCQ answers yet.</p>'}
+ <h3>Findings</h3><ol>${F.map(f=>'<li>'+E(f)+'</li>').join('')}</ol><p class="dx">Diagnosis: ${E(dx)}</p><button type="button" class="pr">Print report</button></article>`;
+ M.querySelector('.pr').onclick=()=>print();
+}
+const go=()=>{const on=location.hash==='#/report';de.classList.toggle('zz-rp-on',on);if(!on)return;render();document.querySelectorAll('#bnav a,.nav .links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#/menu'))};
+addEventListener('hashchange',()=>setTimeout(go,0));if(location.hash==='#/report')dispatchEvent(new HashChangeEvent('hashchange'));
+}catch(e){}})();
+
+/* ===== mood.js (17): as the exam (S.pref.exam) nears, the page warms slightly and the countdown fills like a vessel.
+   CSS variables only (tier 1+): --zz-warm 0..1 on <html>, --zz-fill on .nh-ex. Read-only. */
+(function(){try{const de=document.documentElement;
+function set(){const s=typeof S!=='undefined'?S:null,e=s&&s.pref&&Date.parse(s.pref.exam);
+ if(!e||(window.zzTier&&zzTier()<1)){de.style.removeProperty('--zz-warm');de.classList.remove('zz-warm');return}
+ const days=(e-Date.now())/864e5,w=days<0?0:Math.max(0,Math.min(1,1-days/60)),f=days<0?1:Math.max(0,Math.min(1,1-days/90));
+ de.style.setProperty('--zz-warm',w.toFixed(3));de.style.setProperty('--zz-fill',(f*100).toFixed(1)+'%');de.classList.toggle('zz-warm',w>0)}
+const s=document.createElement('style');s.textContent=`html.zz-warm body{background-color:color-mix(in srgb,var(--bg) calc(100% - var(--zz-warm)*7%),#E8955A)!important}
+html.zz-warm .nh-ex,html[style*="--zz-fill"] .nh-ex{background-image:linear-gradient(to top,color-mix(in srgb,var(--rosy) 32%,transparent) var(--zz-fill,0%),transparent var(--zz-fill,0%))!important;background-repeat:no-repeat}`;
+document.head.append(s);set();addEventListener('hashchange',()=>setTimeout(set,50));document.addEventListener('visibilitychange',set);
+}catch(e){}})();
+
+/* ===== sound.js (18): Web Audio synthesis only, no files. Glass-slide click, stain wash, centrifuge tick.
+   On the existing Haptics switch: plays only once S.pref.hap is switched on (true), so it is off by default.
+   fx.js haptic() calls zzSound(pattern); the MCQ timer ticks in its last ten seconds. */
+(function(){try{let ac=null;
+const on=()=>{const s=typeof S!=='undefined'?S:null;return !!(s&&s.pref&&s.pref.hap===true)&&!!(window.AudioContext||window.webkitAudioContext)&&(!window.zzTier||zzTier()>0)};
+const ctx=()=>{if(!ac)ac=new(window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume();return ac};
+function noise(a,len){const b=a.createBuffer(1,Math.round(a.sampleRate*len),a.sampleRate),d=b.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;const n=a.createBufferSource();n.buffer=b;return n}
+function env(a,g,peak,att,dec){const t=a.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(peak,t+att);g.gain.exponentialRampToValueAtTime(.0001,t+att+dec)}
+const SND={click(a){const o=a.createOscillator(),g=a.createGain();o.frequency.value=2600;o.type='sine';env(a,g,.08,.002,.06);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.08);
+  const n=noise(a,.03),f=a.createBiquadFilter(),h=a.createGain();f.type='highpass';f.frequency.value=3000;env(a,h,.05,.001,.025);n.connect(f).connect(h).connect(a.destination);n.start()},
+ wash(a){const n=noise(a,.7),f=a.createBiquadFilter(),g=a.createGain(),t=a.currentTime;f.type='lowpass';f.frequency.setValueAtTime(300,t);f.frequency.exponentialRampToValueAtTime(2400,t+.6);env(a,g,.06,.15,.5);n.connect(f).connect(g).connect(a.destination);n.start()},
+ thunk(a){const o=a.createOscillator(),g=a.createGain();o.frequency.setValueAtTime(190,a.currentTime);o.frequency.exponentialRampToValueAtTime(90,a.currentTime+.12);env(a,g,.12,.004,.14);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.2)},
+ tick(a){const o=a.createOscillator(),g=a.createGain();o.type='triangle';o.frequency.value=900;env(a,g,.05,.001,.02);o.connect(g).connect(a.destination);o.start();o.stop(a.currentTime+.04)}};
+window.zzSound=p=>{if(!on())return;try{const a=ctx(),k=typeof p==='string'?p:Array.isArray(p)?(p[0]<15?'wash':'thunk'):'click';(SND[k]||SND.click)(a)}catch(e){}};
+let lt='';setInterval(()=>{const t=document.querySelector('#mx-timer.low');if(!t||!document.body.classList.contains('mx-live'))return;if(t.textContent!==lt){lt=t.textContent;zzSound('tick')}},250);
+}catch(e){}})();
+
+/* ===== type.js (19): type in motion, Full level only, never on answer text.
+   Ink-bleed: a page's main heading resolves from a soft bleed the first time it is shown this session (heading only, while animating).
+   Hand notes: margin notes (.an-mn) and [data-hand] text write themselves in Caveat with an animated stroke, then settle. */
+(function(){try{
+const full=()=>window.zzFx&&zzFx.level()==='full'&&!document.body.classList.contains('an-on'),seen=new WeakSet();
+function bleed(){if(!full())return;const v=document.querySelector('.view:not([hidden])'),h=v&&[...v.querySelectorAll('h1,h2')].find(x=>!x.closest('.ans')&&x.offsetParent);
+ if(!h||seen.has(h)||!h.animate)return;seen.add(h);
+ h.animate([{filter:'blur(5px)',opacity:.15,letterSpacing:'.05em',textShadow:'0 0 14px var(--rosy)'},{filter:'blur(1px)',opacity:.85,offset:.6},{filter:'blur(0)',opacity:1,letterSpacing:'normal',textShadow:'0 0 0 transparent'}],{duration:800,easing:'cubic-bezier(.2,.7,.2,1)'})}
+const NS='http://www.w3.org/2000/svg';
+function write(el){if(seen.has(el)||el.closest('.ans')&&!el.matches('.an-mn'))return;seen.add(el);const txt=(el.textContent||'').trim();if(!txt||txt.length>140)return;
+ const r=el.getBoundingClientRect();if(!r.width)return;const sv=document.createElementNS(NS,'svg'),t=document.createElementNS(NS,'text');
+ const fs=parseFloat(getComputedStyle(el).fontSize)||16;sv.setAttribute('width',r.width);sv.setAttribute('height',r.height);sv.style.cssText='position:absolute;left:0;top:0;overflow:visible;pointer-events:none';
+ t.setAttribute('x','0');t.setAttribute('y',String(fs));t.textContent=txt.slice(0,60);t.style.cssText=`font:700 ${fs*1.15}px Caveat,cursive;fill:transparent;stroke:var(--lbl);stroke-width:.8;stroke-dasharray:600;stroke-dashoffset:600`;
+ sv.append(t);if(getComputedStyle(el).position==='static')el.style.position='relative';el.style.color='transparent';el.append(sv);
+ t.animate([{strokeDashoffset:600,fill:'transparent'},{strokeDashoffset:0,fill:'transparent',offset:.8},{strokeDashoffset:0,fill:'var(--lbl)'}],{duration:1400,easing:'ease-out'}).finished.then(()=>{sv.remove();el.style.color=''},()=>{sv.remove();el.style.color=''})}
+const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);if(full())write(e.target)}})):null;
+const scan=()=>{bleed();if(!io)return;document.querySelectorAll('.an-mn,[data-hand]').forEach(el=>{if(!seen.has(el))io.observe(el)})};
+addEventListener('hashchange',()=>setTimeout(scan,120));setTimeout(scan,900);
+}catch(e){}})();
+
+/* ===== examiner.js (20): a dim viva room at #/examiner (Menu). A timer ring, an abstract examiner, questions spoken aloud
+   (speechSynthesis). "Same ..." questions that follow a question chain on as follow-ups. Key points from the answer are
+   stained in as you cover them: speech recognition where the browser has it, typing otherwise. Reads S and the page only. */
+(function(){try{
+const D=typeof DATA!=='undefined'?DATA:[],SEC=90,RM=matchMedia('(prefers-reduced-motion: reduce)');let ov=null,tm=0,rec=null,idx=-1,t0=0;
+const css=`.zx{position:fixed;inset:0;z-index:80;display:flex;flex-direction:column;align-items:center;gap:14px;padding:calc(env(safe-area-inset-top,0px) + 16px) 18px calc(env(safe-area-inset-bottom,0px) + 18px);background:#0d0a0d;color:#efe8ee;overflow-y:auto}
+.zx-top{display:flex;width:100%;max-width:720px;justify-content:space-between;align-items:center}.zx-top b{font:400 1.2rem var(--disp)}
+.zx button{min-height:42px;padding:0 16px;border-radius:12px;border:1px solid #4a3a46;background:#1d161c;color:#efe8ee;font:600 .9rem var(--body);cursor:pointer}.zx button.p{background:#9B2C48;border-color:#9B2C48}
+.zx-room{position:relative;width:180px;height:180px}.zx-room svg{position:absolute;inset:0}.zx-q{max-width:720px;margin:0;text-align:center;font:600 1.15rem/1.45 var(--read,var(--body))}
+.zx-kp{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:720px}.zx-kp span{padding:6px 11px;border-radius:99px;border:1px dashed #6a5866;color:#bfaebb;font:600 .82rem var(--body);transition:background .5s,color .5s,border-color .5s}
+.zx-kp span.on{background:#D98FA8;border:1px solid #D98FA8;color:#2A1627}.zx textarea{width:100%;max-width:720px;min-height:90px;border-radius:12px;border:1px solid #4a3a46;background:#16111a;color:#efe8ee;padding:10px 12px;font:400 .95rem/1.5 var(--body)}
+.zx-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}.zx-s{color:#bfaebb;font:500 .85rem var(--body);min-height:1.3em;text-align:center;max-width:720px}`;
+const ring=f=>`<svg viewBox="0 0 180 180" aria-hidden="true"><circle cx="90" cy="90" r="84" fill="none" stroke="#2c222a" stroke-width="5"/><circle cx="90" cy="90" r="84" fill="none" stroke="#D98FA8" stroke-width="5" stroke-linecap="round" stroke-dasharray="${(528*f).toFixed(1)} 528" transform="rotate(-90 90 90)"/>
+ <circle cx="90" cy="70" r="24" fill="#2a2029"/><path d="M42 140c6-30 26-42 48-42s42 12 48 42z" fill="#2a2029"/><rect x="58" y="118" width="64" height="5" rx="2" fill="#3a2c37"/></svg>`;
+function kps(d){const c=document.getElementById(d[3]),a=c&&c.querySelector('.ans');if(!a)return[];const s=new Set();a.querySelectorAll('b,strong,.kp,h4').forEach(x=>{const t=x.textContent.replace(/[:.,;]+$/,'').trim();if(t.length>2&&t.length<40)s.add(t)});return[...s].slice(0,8)}
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';u.rate=.95;speechSynthesis.speak(u)}catch(e){}}
+function cover(txt){const low=' '+txt.toLowerCase()+' ';ov.querySelectorAll('.zx-kp span:not(.on)').forEach(s=>{const w=s.textContent.toLowerCase().split(/[^a-z0-9]+/).filter(x=>x.length>=4);if(w.length&&w.some(x=>low.includes(x))){s.classList.add('on');if(window.zzFx)zzFx.haptic(8)}})}
+function pick(){const n=D[idx+1];if(idx>=0&&n&&/^same\b/i.test(n[1]||''))return idx+1;for(let i=0;i<40;i++){const k=Math.floor(Math.random()*D.length);if(D[k]&&!/^same\b/i.test(D[k][1])&&document.getElementById(D[k][3]))return k}return 0}
+function ask(){idx=pick();const d=D[idx];if(!d)return;const fol=/^same\b/i.test(d[1]);
+ ov.querySelector('.zx-q').textContent=(fol?'Follow-up: ':'')+d[1];ov.querySelector('.zx-kp').innerHTML=kps(d).map(k=>'<span>'+k.replace(/[&<>]/g,'')+'</span>').join('')||'<span>No key points listed for this one</span>';
+ const ta=ov.querySelector('textarea');if(ta)ta.value='';ov.querySelector('.zx-s').textContent='';say(d[1]);t0=Date.now();
+ clearInterval(tm);tm=setInterval(()=>{const l=Math.max(0,1-(Date.now()-t0)/1000/SEC);ov.querySelector('.zx-room').innerHTML=ring(l);if(!l){clearInterval(tm);ov.querySelector('.zx-s').textContent="Time. The examiner moves on when you are ready."}},RM.matches?1000:250)}
+function open(){if(ov)return;const st=document.createElement('style');st.textContent=css;document.head.append(st);
+ const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+ ov=document.createElement('div');ov.className='zx';ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Examiner mode');ov.dataset.noSwipe='';
+ ov.innerHTML=`<div class="zx-top"><b>Viva room</b><button type="button" data-a="x">Leave</button></div><div class="zx-room">${ring(1)}</div><p class="zx-q" aria-live="polite"></p><div class="zx-kp" aria-label="Key points"></div>
+ <p class="zx-s" aria-live="polite"></p>${SR?'':'<textarea aria-label="Your answer" placeholder="Type your answer; key points stain in as you cover them"></textarea>'}<div class="zx-row">${SR?'<button type="button" data-a="mic" aria-pressed="false">Answer aloud</button>':''}<button type="button" data-a="rep">Repeat</button><button type="button" class="p" data-a="next">Next question</button></div>`;
+ document.body.append(ov);document.body.classList.add('zx-on');
+ ov.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const a=b.dataset.a;if(a==='x')location.hash='#/menu';else if(a==='next'){stopRec();ask()}else if(a==='rep')say(D[idx][1]);else if(a==='mic'){if(rec)stopRec();else startRec(SR,b)}});
+ const ta=ov.querySelector('textarea');if(ta)ta.addEventListener('input',()=>cover(ta.value));ask()}
+function startRec(SR,b){try{speechSynthesis.cancel()}catch(e){}rec=new SR();rec.lang='en-GB';rec.continuous=true;rec.interimResults=true;
+ rec.onresult=e=>{let t='';for(const r of e.results)t+=r[0].transcript+' ';ov.querySelector('.zx-s').textContent=t.slice(-160);cover(t)};rec.onend=()=>{rec=null;b.setAttribute('aria-pressed','false');b.textContent='Answer aloud'};
+ rec.onerror=()=>{ov.querySelector('.zx-s').textContent='The microphone is not available here. Tap Next question to move on.'};try{rec.start();b.setAttribute('aria-pressed','true');b.textContent='Stop'}catch(e){rec=null}}
+function stopRec(){if(rec){try{rec.stop()}catch(e){}rec=null}}
+function close(){if(!ov)return;stopRec();clearInterval(tm);try{speechSynthesis.cancel()}catch(e){}ov.remove();ov=null;document.body.classList.remove('zx-on')}
+const go=()=>{if(location.hash==='#/examiner')open();else close()};addEventListener('hashchange',go);go();
 }catch(e){}})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
