@@ -25,10 +25,11 @@ function build(){
  const p=el('p','sf-legal');p.textContent='\u00A9 '+new Date().getFullYear()+' Muhtasim Ahmed. For exam revision only; not medical or clinical advice, so check against your prescribed textbooks. Robbins and Cotran Pathologic Basis of Disease belongs to its authors and publisher, and this site is not affiliated with them or with the NMC.';
  bt.appendChild(p);
  const up=el('button','sf-top','Back to top \u2191');up.type='button';
- up.addEventListener('click',()=>{const rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;window.scrollTo({top:0,behavior:rm?'auto':'smooth'})});
+ up.addEventListener('click',()=>{const rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;(window.zzScroller?zzScroller():window).scrollTo({top:0,behavior:rm?'auto':'smooth'})});   /* the active pane scrolls under the pager, the window otherwise */
  bt.appendChild(up);f.appendChild(bt);
  const old=document.querySelector('body > footer');
  if(old)old.replaceWith(f);else{const v=[...document.querySelectorAll('body > .view')].pop();if(v)v.after(f);else document.body.appendChild(f)}
+ if(window.zzPager&&zzPager.foot)zzPager.foot();   /* under the pager the footer belongs at the end of the active pane */
 }
 build();addEventListener('load',build);
 /* keep the footer's bottom padding equal to the real height of the fixed bottom bar */

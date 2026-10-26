@@ -34,11 +34,14 @@ document.addEventListener('click',e=>{
 /* C16: back to top, with a ring that fills as you go down the page */
 const top=document.createElement('button');top.type='button';top.className='fx-top';top.setAttribute('aria-label','Back to top');
 top.innerHTML='<svg viewBox="0 0 44 44" aria-hidden="true"><circle class="t" cx="22" cy="22" r="19"/><circle class="f" cx="22" cy="22" r="19" pathLength="100"/><path d="M15 24l7-7 7 7M22 17v12"/></svg>';
-document.body.append(top);top.onclick=()=>scrollTo({top:0,behavior:full()?'smooth':'auto'});
+/* under the swipe pager the active pane scrolls and the window does not; scroll events do not bubble, so listen in the capture phase */
+const scr=()=>window.zzScroller?zzScroller():(document.scrollingElement||de);
+document.body.append(top);top.onclick=()=>scr().scrollTo({top:0,behavior:full()?'smooth':'auto'});
 let tq=0;
-function topSync(){tq=0;const h=de.scrollHeight-innerHeight,y=scrollY,show=y>600&&h>innerHeight*1.5;top.classList.toggle('on',show);
+function topSync(){tq=0;const s=scr(),pane=s!==document.scrollingElement&&s!==de,h=pane?s.scrollHeight-s.clientHeight:de.scrollHeight-innerHeight,y=pane?s.scrollTop:scrollY,show=y>600&&h>innerHeight*1.5;top.classList.toggle('on',show);
  if(show)top.style.setProperty('--sp',String(Math.max(0,Math.min(100,y/h*100))))}
-addEventListener('scroll',()=>{if(!tq)tq=requestAnimationFrame(topSync)},{passive:true});
+addEventListener('scroll',()=>{if(!tq)tq=requestAnimationFrame(topSync)},{passive:true,capture:true});
+addEventListener('hashchange',()=>setTimeout(()=>{if(!tq)tq=requestAnimationFrame(topSync)},200));   /* another tab has its own scroll position */
 
 /* C5: main buttons lean toward the pointer (desktop) */
 const MAG='.nh-go,.zz-b,.mx-go,.zq-go,.pb-act a';let mq=null,mx=0,my=0;

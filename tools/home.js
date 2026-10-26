@@ -420,13 +420,17 @@
 		let q = 0;
 		function place() {
 			q = 0;
-			const n = [...document.querySelectorAll(".nav")].find((x) => x.offsetParent !== null);
+			/* the active view's own nav: under the pager every tab pane is displayed (the others only hidden), so offsetParent no longer tells which nav is on screen */
+			const av = document.querySelector(".view:not([hidden])"),
+				n = (av && av.querySelector(".nav")) || [...document.querySelectorAll(".nav")].find((x) => x.offsetParent !== null);
 			if (!n) return;
 			const lg = n.querySelector(".logo"), pl = n.querySelector(".pill");
 			if (!lg || !pl) return;
-			const l = lg.getBoundingClientRect(), p = pl.getBoundingClientRect();
-			T.style.right = Math.max(4, Math.round(innerWidth - p.left + 10)) + "px";
-			T.style.maxWidth = Math.max(80, Math.round(p.left - 10 - l.right - 10)) + "px";
+			/* measured from the pane's own left edge, so a swipe or slide in progress does not shift the result */
+			const ox = av && av.contains(n) ? av.getBoundingClientRect().left : 0;
+			const l = lg.getBoundingClientRect(), p = pl.getBoundingClientRect(), pL = p.left - ox, lR = l.right - ox;
+			T.style.right = Math.max(4, Math.round(innerWidth - pL + 10)) + "px";
+			T.style.maxWidth = Math.max(80, Math.round(pL - 10 - lR - 10)) + "px";
 		}
 		const go = () => {
 			if (!q) q = requestAnimationFrame(place);
