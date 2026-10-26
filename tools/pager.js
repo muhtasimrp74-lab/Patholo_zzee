@@ -8,7 +8,7 @@
 const de=document.documentElement,TABS=['home','questions','qa','mcqs','textbook','menu'],HREF=['#/','#/questions','#/qa','#/mcqs','#/textbook','#/menu'];
 const st=()=>typeof S!=='undefined'?S:null,want=()=>{const s=st();return !(s&&s.pref&&s.pref.pager===false)};
 const RM=matchMedia('(prefers-reduced-motion: reduce)'),quick=()=>RM.matches||!!(window.zzFx&&zzFx.level()==='off');
-const V=i=>document.getElementById('v-'+TABS[i]),tabOf=v=>v?TABS.indexOf(v.id.slice(2)):-1;
+const bare=()=>!location.hash.replace(/^#\/?/,'').split('/')[1],V=i=>document.getElementById('v-'+TABS[i]),tabOf=v=>v?TABS.indexOf(v.id.slice(2)):-1;
 let T=null,act=-1,prog=false,end=0,pt=0,last={},pre=new Set(),first=true;
 window.zzPre=window.zzPre||{};
 window.zzScroller=()=>{if(T&&de.classList.contains('zz-pg')){const v=T.querySelector(':scope>.view:not([hidden])');if(v)return v}return document.scrollingElement||de};
@@ -24,7 +24,7 @@ const bar=()=>{const b=document.getElementById('bnav');if(!b)return;const cs=get
  de.style.setProperty('--zz-pgb',Math.max(0,Math.round(innerHeight-b.getBoundingClientRect().top))+'px')};
 function sync(){
  if(!want()){teardown();return}
- const v=document.querySelector('.view:not([hidden])'),i=tabOf(v);
+ const v=document.querySelector('.view:not([hidden])'),i=bare()?tabOf(v):-1;   /* only a tab's own page; its sub-pages (reader, sessions, deep links) scroll the window as before */
  if(i<0){if(T)de.classList.remove('zz-pg');return}
  make();adopt();
  if(!de.classList.contains('zz-pg')){de.classList.add('zz-pg');if(scrollY)scrollTo({top:0,left:0,behavior:'instant'})}
@@ -59,8 +59,8 @@ function settle(){
  location.hash=last[TABS[i]]||HREF[i];
 }
 window.zzPager={sync,on:()=>!!T&&de.classList.contains('zz-pg'),
- keep:v=>!!T&&want()&&tabOf(v)>=0,
- tabs:h=>{if(!T||!de.classList.contains('zz-pg'))return false;const k=(h||'').replace(/^#\/?/,'').split('/')[0];return ['','home','questions','qa','topics','mcqs','textbook','menu'].includes(k)}};
+ keep:v=>!!T&&want()&&bare()&&tabOf(v)>=0,
+ tabs:h=>{if(!T||!de.classList.contains('zz-pg'))return false;const q=(h||'').replace(/^#\/?/,'').split('/'),k=q[0];if(q[1])return false;return ['','home','questions','qa','topics','mcqs','textbook','menu'].includes(k)}};
 addEventListener('hashchange',sync);
 addEventListener('resize',()=>{if(T&&de.classList.contains('zz-pg')&&act>=0){T.scrollTo({left:act*T.clientWidth,behavior:'instant'});bar()}});
 sync();
