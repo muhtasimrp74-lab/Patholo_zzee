@@ -2980,6 +2980,15 @@ html.fx-min:not(.zz-flat) body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-back
 /* cards keep their 1px border width (layout and annotation ink stay exactly where they are); only the hairline colour goes */
 html body :is(article.card,a.topic,.tbtile){border-color:transparent!important}
 html body :is(.eyebrow,.stats span,.pager a small,#qf h4,.nh-eb,.nh-k,.nh-split span,.nh-dt,.nh-tk,.qa-k,#zz-tut .tt-n){font-weight:700!important}
+/* auto-hide bars (autohide.js). The individual translate property keeps each bar's own transform and positioning intact. */
+nav.nav{transition-property:box-shadow,translate}
+html.zz-hide nav.nav,html.zz-hide #tools,body.qf-open #tools{translate:0 calc(-100% - 16px)}
+html.zz-hide #bnav,body.qf-open #bnav{translate:0 calc(100% + 24px + env(safe-area-inset-bottom,0px))}
+html.zz-hide .bar{top:0}
+@media (prefers-reduced-motion:reduce){nav.nav,#tools,#bnav{transition:none}}
+/* active tab: the glass pill is the indicator, so no second (square-cornered) box under it; the plain indicator matches the capsule bar */
+#bnav a.on,#bnav a[aria-current]{border-radius:999px}
+html.zz-lgon body #bnav a.on,html.zz-lgon body #bnav a[aria-current]{box-shadow:none;background:none}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -6666,6 +6675,18 @@ RT.addEventListener&&RT.addEventListener('change',()=>soon(0));
 setTimeout(()=>{watch();run()},700);
 window.zzLiquid={run,on};
 }catch(e){}})();
+/* auto-hide bars (like Facebook): scrolling down slides the top bar, its tools and the bottom tabs away; any scroll up brings them back.
+   One capture-phase listener covers the document and the swipe pager's panes. Bars always show near the top of a page, on a tab
+   change and when keyboard focus enters them; the filter drawer hides them (nothing may cover its button). Vertical scroll only. */
+(()=>{const de=document.documentElement,last=new WeakMap();let acc=0,dir=0;
+ const set=h=>{if(de.classList.contains('zz-hide')!==h)de.classList.toggle('zz-hide',h)};
+ document.addEventListener('scroll',e=>{const el=e.target===document?document.scrollingElement||de:e.target;if(!(el instanceof Element))return;
+  const v=el.scrollTop,p=last.get(el);last.set(el,v);if(p==null||v===p||el.scrollHeight<=el.clientHeight+4)return;
+  if(el.closest&&el.closest('#qf,.an-pop,dialog,[role=dialog]'))return;
+  if(v<56){acc=0;set(false);return}const d=v-p,s=Math.sign(d);if(s!==dir){dir=s;acc=0}acc+=d;
+  if(acc>24)set(true);else if(acc<-12)set(false)},{capture:true,passive:true});
+ addEventListener('hashchange',()=>{set(false);if(document.body.classList.contains('qf-open')){const s=document.getElementById('qscrim');s&&s.click()}});
+ document.addEventListener('focusin',e=>{if(e.target.closest&&e.target.closest('nav.nav,#tools,#bnav'))set(false)})})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
 const r=document.getElementById('res'),g=document.getElementById('gq');

@@ -31,3 +31,12 @@ html.fx-min:not(.zz-flat) body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-back
 /* cards keep their 1px border width (layout and annotation ink stay exactly where they are); only the hairline colour goes */
 html body :is(article.card,a.topic,.tbtile){border-color:transparent!important}
 html body :is(.eyebrow,.stats span,.pager a small,#qf h4,.nh-eb,.nh-k,.nh-split span,.nh-dt,.nh-tk,.qa-k,#zz-tut .tt-n){font-weight:700!important}
+/* auto-hide bars (autohide.js). The individual translate property keeps each bar's own transform and positioning intact. */
+nav.nav{transition-property:box-shadow,translate}
+html.zz-hide nav.nav,html.zz-hide #tools,body.qf-open #tools{translate:0 calc(-100% - 16px)}
+html.zz-hide #bnav,body.qf-open #bnav{translate:0 calc(100% + 24px + env(safe-area-inset-bottom,0px))}
+html.zz-hide .bar{top:0}
+@media (prefers-reduced-motion:reduce){nav.nav,#tools,#bnav{transition:none}}
+/* active tab: the glass pill is the indicator, so no second (square-cornered) box under it; the plain indicator matches the capsule bar */
+#bnav a.on,#bnav a[aria-current]{border-radius:999px}
+html.zz-lgon body #bnav a.on,html.zz-lgon body #bnav a[aria-current]{box-shadow:none;background:none}
