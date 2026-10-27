@@ -23,7 +23,7 @@ jobs:
           esac
           python3 - <<'PY'
           import json, datetime
-          d = json.load(open('r.json')); t = lambda ms: datetime.datetime.utcfromtimestamp(ms / 1000 + 6 * 3600).strftime('%d %b %H:%M') if ms else '-'
+          d = json.load(open('r.json')); t = lambda ms: datetime.datetime.fromtimestamp(ms / 1000 + 6 * 3600, datetime.timezone.utc).strftime('%d %b %H:%M') if ms else '-'
           if 'orders' in d:
               print('::notice::%d order(s)' % len(d['orders']))
               for o in d['orders']:

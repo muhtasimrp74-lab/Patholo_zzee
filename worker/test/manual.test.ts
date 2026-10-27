@@ -60,6 +60,15 @@ test('bKash manual: instructions, TrxID once only, owner approval grants once, m
   assert.equal(cors.headers.get('Access-Control-Allow-Origin'), 'https://b.io', 'several site origins allowed');
 });
 
+test('checkout caps open orders per user (MAX_PENDING pending in the last day)', async () => {
+  const tok = ((await (await reg('many@x.io')).json()) as { access_token: string }).access_token, A = { Authorization: 'Bearer ' + tok };
+  for (let i = 0; i < 5; i++) assert.equal((await call('/api/pay/checkout', { bundle: 'QNA' }, A)).status, 200);
+  const r = await call('/api/pay/checkout', { bundle: 'QNA' }, A);
+  assert.equal(r.status, 429); assert.equal(((await r.json()) as { error: string }).error, 'too_many_pending');
+  const other = ((await (await reg('other@x.io')).json()) as { access_token: string }).access_token;
+  assert.equal((await call('/api/pay/checkout', { bundle: 'QNA' }, { Authorization: 'Bearer ' + other })).status, 200, 'the cap is per user');
+});
+
 test('chunks stored in D1 parts (no KV/R2) are served whole', async () => {
   const { execFileSync } = await import('node:child_process');
   const { readFileSync, existsSync } = await import('node:fs');

@@ -4,7 +4,7 @@ Offline-capable study site: **1,310 pathology questions** (189 systemic viva, 68
 
 Features: search, practice (spaced-repetition flashcards and timed viva), quiz mode, bookmarks, favourites, notes, learned-progress per topic and per part, focus mode, light/sepia/dark theme, calm reading mode, read aloud, colour-coded question types (viva, written, both), text size, annotations on answers, MCQs and every textbook chapter (pens, highlighter, text highlight/underline, shapes, text boxes, sticky notes, stickers, eraser, lasso; marks follow the text when you change the text size or width; an annotations list to search, jump to, delete and re-attach marks; pen-only and left-handed modes), backup/restore of all your data (including annotations), installable and works offline.
 
-Your data stays on your device (localStorage + IndexedDB). Nothing is sent anywhere.
+Your study data stays on your device (localStorage + IndexedDB) until you sign in. With an account, progress, notes and annotations sync to it, and purchases are recorded against it.
 
 ## Publish (GitHub Pages — free `https://<username>.github.io/<repo>/` link)
 1. Create an empty repo on github.com (e.g. `pathology-viva`), no README.
@@ -53,7 +53,7 @@ If the same question is on the DU written list and the box-viva cards (same kind
 1. `python3 tools/find.py <words>` lists matching questions (`[ no answer ]` = still empty). `--add 3` appends a blank block for result 3 to `tools/answers.md`.
 2. Write the answer under its `## <exact question>` heading in `tools/answers.md` (markdown: bold, bullets, numbered lists, tables).
 3. Push. The deploy workflow rebuilds the site and refreshes the cache itself; locally run `python3 tools/build.py`. A heading that matches no question is reported in the build log.
-You can also edit `tools/answers.md` directly on github.com from your phone. Quick personal notes and annotations stay available in the app (Notes, Annotate).
+`tools/answers.md` is a private source and is not in the repo (run `sh tools/restore_private.sh` for a local copy), so it cannot be edited on github.com. Quick personal notes and annotations stay available in the app (Notes, Annotate).
 
 ## Tests and deployment
 `python3 -m unittest discover -s tools/tests -v` rebuilds the site and checks: build is clean/deterministic and the committed `index.html` is not stale; unique question ids; ids never move to a different question (positional ids!); duplicate merges are reviewed; MCQ/textbook/manifest schemas; service-worker files; backup import/export (malformed files rejected, failed restore rolls back, round-trip, merged-question migration of progress, notes and handwriting); corrupt saved data; hostile backup values. Browser tests need `pip install playwright && playwright install chromium`.

@@ -40,6 +40,8 @@ jobs:
           exit $s
       - name: Worker tests (in-memory D1/R2)
         run: cd worker && npm ci --no-audit --no-fund && npm test
+      - name: Typecheck and unit tests (site TS, storage layer, Worker)
+        run: npm run typecheck && npm run test:unit && cd worker && npm run typecheck
       - name: Assemble site folder
         run: |
           mkdir _site

@@ -1,8 +1,9 @@
-import { auth, json, type Env } from './http.ts';
+import { auth, json, limited, type Env } from './http.ts';
 
 const TABLE = { progress: 'user_progress', note: 'user_notes', annotation: 'user_annotations' } as const;
 type Kind = keyof typeof TABLE;
 type Item = { kind: Kind; key: string; value: string; updated_at: number; deleted?: boolean };
+export const MAX_UPLOADS_PER_HOUR = 120; // per user: room for busy study sessions, a ceiling on storage abuse (each request <= 2.5 MB)
 export const MAX_ITEMS = 20; // keeps every request well under D1's per-invocation query limit
 export const syncDeps = { now: () => Date.now() };
 
@@ -16,6 +17,8 @@ function valid(x: unknown): x is Item {
 export async function upload(req: Request, env: Env): Promise<Response> {
   const c = await auth(req, env);
   if (!c) return json({ error: 'unauthorized' }, 401);
+  const wait = await limited(env, 'sync:' + c.sub, MAX_UPLOADS_PER_HOUR, 3600e3);
+  if (wait) return json({ error: 'rate_limited' }, 429, { 'Retry-After': String(wait) });
   const t = await req.text();
   if (t.length > 2_500_000) return json({ error: 'too_large' }, 413);
   let b: { upload_id?: unknown; items?: unknown };

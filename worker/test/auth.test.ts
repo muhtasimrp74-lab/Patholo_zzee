@@ -48,6 +48,12 @@ test('Google sign-in: valid token signs in; forged, wrong audience, expired or u
   assert.equal(again.user.id, (j.user as unknown as { id: string }).id, 'same account on second sign-in');
 });
 
+test('Google sign-in never takes over a password account that claims the same email', async () => {
+  assert.equal((await post('/api/auth/register', { login: 'a@example.com', password: 'squatter pass', device_id: DEV })).status, 200);
+  const r = await post('/api/auth/google', { id_token: await gtoken(), device_id: DEV });
+  assert.equal(r.status, 409); assert.equal(((await r.json()) as { error: string }).error, 'use_password');
+});
+
 test('access tokens: forged or expired are rejected', async () => {
   const j = await (await post('/api/auth/google', { id_token: await gtoken(), device_id: DEV })).json() as { access_token: string };
   const [h, b] = j.access_token.split('.');

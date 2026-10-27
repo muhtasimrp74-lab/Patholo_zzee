@@ -7,3 +7,17 @@ README.md
 .gitignore
 .nojekyll
 node_modules
+# never publish sources, working notes or private content from the repo root (this config serves "."): the site itself
+# is index.html, sw.js, manifest.json, welcome.js, zz-store.js, annot/, icons/, fonts/, textbook/ and the legal pages
+docs
+worker
+src
+content
+private-chunks
+index.full.html
+MIGRATION_STATUS.md
+package.json
+package-lock.json
+tsconfig.json
+vite.config.ts
+vite.store.config.ts

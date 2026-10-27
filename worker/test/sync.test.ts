@@ -50,3 +50,11 @@ test('limits and auth', async () => {
   assert.equal((await up('upload-x001', [{ kind: 'secret', key: 'k', value: 'v', updated_at: 1 }])).status, 400);
   assert.equal((await worker.fetch(new Request('https://w/api/sync'), env as never)).status, 401);
 });
+
+test('upload is rate limited per user (MAX_UPLOADS_PER_HOUR) with Retry-After', async () => {
+  const items = [{ kind: 'progress', key: 'rl', value: 'v', updated_at: 1 }];
+  let ok = 0, limited: Response | null = null;
+  for (let i = 0; i < 130 && !limited; i++) { const r = await up('upload-rl' + String(i).padStart(4, '0'), items); if (r.status === 429) limited = r; else ok++; }
+  assert.ok(limited, 'the limit must kick in'); assert.ok(ok >= 100, 'normal use is not limited (' + ok + ' uploads went through)');
+  assert.ok(Number(limited!.headers.get('Retry-After')) > 0);
+});

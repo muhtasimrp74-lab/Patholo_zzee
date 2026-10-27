@@ -231,6 +231,15 @@ class Browser(unittest.TestCase):
         pg.evaluate("()=>{const T=document.getElementById('zz-pager');T.scrollLeft=T.clientWidth*2}")
         pg.wait_for_function("()=>location.hash==='#/qa'", polling=100, timeout=6000); pg.wait_for_timeout(400)
         self.assertTrue(pg.evaluate("document.getElementById('v-qa').contains(document.querySelector('footer.sf'))"))
+    def test_service_worker_keeps_the_app_shell_after_visiting_a_legal_page(self):
+        base = self.http_url().rsplit('/', 1)[0]; pg = self.b.new_page()
+        pg.goto(base + '/index.html#/'); pg.evaluate("()=>navigator.serviceWorker.ready.then(()=>1)"); pg.reload()
+        pg.wait_for_function("()=>!!navigator.serviceWorker.controller", polling=200, timeout=20000)
+        pg.goto(base + '/terms.html'); pg.wait_for_timeout(1500)
+        r = pg.evaluate("""async()=>{const c=await caches.open((await caches.keys()).find(k=>k.startsWith('pathviva-zzee-')));
+          const h=await c.match('index.html'),t=await c.match('/terms.html');return [h?(await h.text()).includes('id="bnav"'):null,!!t]}""")
+        self.assertEqual(r[0], True, 'visiting terms.html must not overwrite the cached app shell')
+        self.assertTrue(r[1], 'terms.html is saved under its own path'); pg.close()
     def test_alias_migration_keeps_progress_and_notes(self):
         al = json.loads(re.search(r'const QALIAS=(\{.*?\});', rd('index.html')).group(1)); a, b = next(iter(al.items()))
         pg = self.page(); self.plant(pg, 'zzA1', "const a=%s;localStorage.vivaState=JSON.stringify({fav:[a],bm:[a],notes:{[a]:'keep me'},learned:[a],sr:{[a]:{d:1}},streak:{n:0,last:''},recent:[],pref:{}})" % (json.dumps(a))); pg.reload(); self.ready(pg)  # planted before load: see test_corrupt_saved_state

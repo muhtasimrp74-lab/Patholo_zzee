@@ -22,7 +22,9 @@ export function toMinor(s: string): number | null {
 const fmt = (minor: number) => (minor / 100).toFixed(2);
 
 function sslcommerz(env: Env): Gateway {
-  const base = env.SSLCOMMERZ_BASE || 'https://sandbox.sslcommerz.com';
+  /* live by default: a sandbox base must be chosen explicitly (SSLCOMMERZ_BASE), or live store credentials without it would
+     send checkouts to the sandbox, where test cards "pay" and the sandbox validator confirms them */
+  const base = env.SSLCOMMERZ_BASE || 'https://securepay.sslcommerz.com';
   const cred = { store_id: env.SSLCOMMERZ_STORE_ID ?? '', store_passwd: env.SSLCOMMERZ_STORE_PASSWORD ?? '' };
   const pick = (e: Record<string, string>): Validation => ({ status: e.status, tran_id: e.tran_id, val_id: e.val_id,
     amount: e.currency_amount || e.amount, currency: e.currency_type || e.currency });
@@ -91,6 +93,7 @@ export async function settle(env: Env, v: Validation): Promise<'paid' | 'duplica
 }
 
 const form = async (req: Request) => Object.fromEntries(new URLSearchParams(req.method === 'POST' ? (await req.text()).slice(0, 8192) : new URL(req.url).search)) as Record<string, string>;
+export const MAX_PENDING = 5;
 const validId = (s: unknown) => typeof s === 'string' && /^[\w-]{1,64}$/.test(s);
 
 export async function checkout(req: Request, env: Env): Promise<Response> {
@@ -101,6 +104,10 @@ export async function checkout(req: Request, env: Env): Promise<Response> {
   const u = await env.DB.prepare('SELECT display_name, email, phone FROM users WHERE id = ?1').bind(c.sub).first<{ display_name: string; email: string | null; phone: string | null }>();
   if (!u) return json({ error: 'unauthorized' }, 401);
   const now = payDeps.now(), id = 'o' + crypto.randomUUID().replace(/-/g, '').slice(0, 24), minor = BUNDLES[b.bundle].price * 100;
+  /* cap open orders per user (each one is a row an admin has to look at): at most MAX_PENDING still pending in the last day */
+  const open = await env.DB.prepare("SELECT COUNT(*) AS n FROM payment_orders WHERE user_id = ?1 AND status = 'pending' AND created_at > ?2")
+    .bind(c.sub, now - 86_400_000).first<{ n: number }>();
+  if ((open?.n ?? 0) >= MAX_PENDING) return json({ error: 'too_many_pending' }, 429);
   await env.DB.prepare("INSERT INTO payment_orders (order_id, user_id, bundle, amount_minor, currency, status, created_at, updated_at) VALUES (?1, ?2, ?3, ?4, ?5, 'pending', ?6, ?6)")
     .bind(id, c.sub, b.bundle, minor, bundles.currency, now).run();
   if (manual(env)) return json({ order_id: id, amount: fmt(minor), currency: bundles.currency, manual: { method: 'bkash', number: bundles.bkash_number } });
