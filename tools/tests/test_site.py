@@ -295,6 +295,10 @@ class Browser(unittest.TestCase):
             pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()-3*864e5));%s" % ("localStorage.setItem('zzName','%s')" % name if name else ''))
             pg.goto(URL + '#/'); pg.wait_for_selector('.zz-wd.on'); pg.wait_for_timeout(300)
             self.assertEqual(pg.locator('.zz-wd input').is_visible(), asks, 'name %r' % name); pg.close()
+    def test_filters_row_sits_close_to_the_list_it_filters(self):
+        pg = self.phone('#/01'); pg.wait_for_timeout(600)
+        gap = pg.evaluate("()=>{const f=[...document.querySelectorAll('.tf-row')].find(e=>e.getBoundingClientRect().height>0),h=f.nextElementSibling.querySelector('h2,h3');return h.getBoundingClientRect().top-f.getBoundingClientRect().bottom}")
+        self.assertTrue(8 <= gap <= 32, 'gap under the Filters row: %.0f px (was about 65)' % gap); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

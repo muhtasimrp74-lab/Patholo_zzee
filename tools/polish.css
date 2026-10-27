@@ -135,3 +135,5 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 /* keyboard focus ring everywhere + high-contrast support */
 html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.qs-h):focus-visible{outline:2px solid var(--lbl,#7A1F36);outline-offset:2px}
 @media(prefers-contrast:more){:root{--line:currentColor;--line2:currentColor}html .card,html .qi,html .topic,html .row,html #qf,html #zz-tut{border-color:currentColor}#qscrim{background:rgba(0,0,0,.6)}}
+/* the Filters row sits right above the list: main's top padding plus the first heading's margin left ~65 px of dead space under it */
+.tf-row+main{padding-top:10px}.tf-row+main>:first-child{margin-top:14px}
