@@ -10,7 +10,7 @@ permissions: { contents: read }
 jobs:
   admin:
     if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # same image as pages.yml
     env: { LEAK_KEY: '${{ secrets.LEAK_KEY }}', API: 'https://patholo-zzee-app.muhtasimrp74.workers.dev/api/admin/orders', ACT: '${{ inputs.action }}', OID: '${{ inputs.order_id }}' }
     steps:
       - name: Run
