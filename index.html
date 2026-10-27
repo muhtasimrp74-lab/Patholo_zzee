@@ -2699,7 +2699,7 @@ html body .mx :is(.mx-o,.mx-s,.mx-tile,.mx-chd,.mx-chd2,.mx-paper,.mx-hist,.mx-w
 
 /* ---------- type and labels: sentence case, serif section heads ---------- */
 html body .mx .mx-h{margin:36px 4px 12px!important;font:400 1.5rem/1.15 var(--disp)!important;letter-spacing:-.005em!important;text-transform:none!important;color:var(--navy)}
-html body .mx :is(.mx-eb,.mx-fh,.mx-next small,.mx-nbox label,.mx-rt small){text-transform:none!important;letter-spacing:0!important;font-weight:600!important}
+html body .mx :is(.mx-eb,.mx-fh,.mx-next small,.mx-nbox label,.mx-rt small){text-transform:uppercase!important;letter-spacing:.08em!important;font-weight:700!important}   /* owner's rule: labels in CAPITALS, bold */
 html body .mx .mx-eb{font-size:.9rem!important;color:var(--lbl)}
 html body .mx .mx-fh{font-size:.86rem!important;color:var(--muted)}
 html body .mx :is(.mx-pc,.mx-kv b,.mx-cnt b,.mx-ring b,.mx-timer,.mx-hist b){font-variant-numeric:lining-nums tabular-nums}
@@ -2733,7 +2733,7 @@ html body .mx .mx-run .mx-cnt{font:500 .84rem var(--body);color:var(--muted)}
 html body .mx .mx-run .mx-cnt b{font:700 .84rem var(--body);color:var(--text);margin:0}
 html body .mx .mx-pg i{height:6px;background:var(--gx-track);box-shadow:inset 0 1px 1px rgba(42,22,39,.06)}
 html body .mx .mx-pg i::before,html body .mx .mx-bars i::before{background:var(--g-btn,var(--btn));box-shadow:0 0 10px rgba(194,71,106,.45)}
-html body .mx .mx-mode{text-transform:none;letter-spacing:0;font:600 .72rem var(--body);padding:2px 9px;background:var(--gx-sel);border-color:var(--gx-sel-bd);color:var(--lbl)}
+html body .mx .mx-mode{text-transform:uppercase;letter-spacing:.06em;font:700 .68rem var(--body);padding:2px 9px;background:var(--gx-sel);border-color:var(--gx-sel-bd);color:var(--lbl)}
 html body .mx .mx-mode:is(.m-mock,.m-test){background:var(--gx-jelly);border-color:transparent;color:#fff}
 html body .mx .mx-mode.m-review{background:var(--gx-well);border-color:var(--gx-edge);color:var(--muted)}
 html body .mx .mx-timer{padding:6px 11px;border-radius:99px;background:var(--gx-well);border:1px solid var(--gx-edge);box-shadow:0 0 0 .5px var(--gx-hair);font:600 .92rem var(--body);min-width:0}
@@ -2932,12 +2932,14 @@ html.zz-flat body .mx :is(.mx-top,.mx-act,.mx-rbar,.mx-pal-in){background:var(--
  html body .mx :is(.mx-card,.mx-res,.mx-o,.mx-s){background:#fff!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-color:#bbb!important}}
 
 /* ===== pager (pager.js): six tab panes side by side, native scroll-snap ===== */
-html.zz-pg #zz-pager{position:fixed;top:0;left:0;right:0;bottom:var(--zz-pgb,0px);z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;
+html.zz-pg #zz-pager{position:fixed;top:0;left:0;right:0;bottom:0;z-index:0;display:flex;overflow-x:auto;overflow-y:hidden;
  scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 html.zz-pg #zz-pager::-webkit-scrollbar{display:none}
 html.zz-pg #zz-pager>.view{flex:0 0 100%;width:100%;min-width:100%;height:100%;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;
  overscroll-behavior-y:contain;scroll-snap-align:start;scroll-snap-stop:always;animation:none!important}
 html.zz-pg #zz-pager>.view[hidden]{display:block!important}
+/* panes run under the floating glass bottom bar; a spacer the bar's height keeps the end of each page above it */
+html.zz-pg #zz-pager>.view::after{content:"";display:block;height:var(--zz-pgb,0px)}
 html.zz-pg #zz-pager>.view[hidden]:not(.zz-see){visibility:hidden}   /* neighbours show only while a swipe or slide is under way */
 html.zz-pg #zz-pager>.view[hidden] :is(.mx-act,.mx-pal){display:none!important}
 html:not(.zz-pg) #zz-pager{display:contents}
@@ -2945,6 +2947,39 @@ html.zz-pg body{overflow:hidden}
 html.zz-pg body.an-on #zz-pager{overflow-x:hidden}
 :where(#zz-pager) :where(.card .ans,canvas,input,textarea,select,[data-no-swipe]){touch-action:pan-y}
 @media print{#zz-pager{position:static;display:block;overflow:visible}#zz-pager>.view{height:auto;overflow:visible}#zz-pager>.view[hidden]{display:none!important}}
+
+/* ===== Liquid Glass, navigation layer only (liquid.js adds refraction on Chromium at tier 3) =====
+   Content (cards, answers, tiles) stays opaque: glass is for what floats above the content. */
+:root{--lg-tint:rgba(255,253,250,.66);--lg-tint-top:rgba(255,253,250,.7);--lg-lens:rgba(255,255,255,.16);
+ --lg-sheen:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,0) 48%);
+ --lg-rim:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(255,255,255,.25),inset 1px 0 0 rgba(255,255,255,.35),inset -1px 0 0 rgba(255,255,255,.35),0 0 0 .5px rgba(42,22,39,.14),0 14px 34px -14px rgba(42,22,39,.45);
+ --lg-rim-sm:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(255,255,255,.3),0 0 0 .5px rgba(42,22,39,.12),0 4px 12px -6px rgba(42,22,39,.35)}
+:root[data-theme=dark]{--lg-tint:rgba(30,20,28,.66);--lg-tint-top:rgba(30,20,28,.7);--lg-lens:rgba(255,255,255,.06);--lg-sheen:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,0) 48%);
+ --lg-rim:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(255,255,255,.06),inset 1px 0 0 rgba(255,255,255,.08),inset -1px 0 0 rgba(255,255,255,.08),0 0 0 .5px rgba(0,0,0,.5),0 16px 36px -14px rgba(0,0,0,.75);
+ --lg-rim-sm:inset 0 1px 0 rgba(255,255,255,.22),0 0 0 .5px rgba(0,0,0,.45),0 4px 12px -6px rgba(0,0,0,.6)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--lg-tint:rgba(30,20,28,.66);--lg-tint-top:rgba(30,20,28,.7);--lg-lens:rgba(255,255,255,.06);--lg-sheen:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,0) 48%);
+ --lg-rim:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(255,255,255,.06),inset 1px 0 0 rgba(255,255,255,.08),inset -1px 0 0 rgba(255,255,255,.08),0 0 0 .5px rgba(0,0,0,.5),0 16px 36px -14px rgba(0,0,0,.75);
+ --lg-rim-sm:inset 0 1px 0 rgba(255,255,255,.22),0 0 0 .5px rgba(0,0,0,.45),0 4px 12px -6px rgba(0,0,0,.6)}}
+/* frosted glass: every tier above Minimal */
+html:not(.zz-flat) body #bnav{background:var(--lg-sheen),var(--lg-tint)!important;border:0!important;box-shadow:var(--lg-rim)!important;-webkit-backdrop-filter:blur(16px) saturate(1.8)!important;backdrop-filter:blur(16px) saturate(1.8)!important}
+@media(max-width:1000px){html:not(.zz-flat) body #bnav{left:10px!important;right:10px!important;width:auto!important;bottom:calc(8px + env(safe-area-inset-bottom,0px))!important;border-radius:26px!important;padding-bottom:0!important}}
+html:not(.zz-flat) body .view .nav{background:var(--lg-sheen),var(--lg-tint-top)!important;-webkit-backdrop-filter:blur(14px) saturate(1.7)!important;backdrop-filter:blur(14px) saturate(1.7)!important;box-shadow:inset 0 -1px 0 rgba(255,255,255,.35),0 1px 0 rgba(42,22,39,.05)!important}
+html:not(.zz-flat) body :is(#tools,.fx-top){background:var(--lg-sheen),var(--lg-tint)!important;box-shadow:var(--lg-rim-sm)!important;border-color:transparent!important;-webkit-backdrop-filter:blur(14px) saturate(1.8)!important;backdrop-filter:blur(14px) saturate(1.8)!important}
+html:not(.zz-flat) body #tools{border-radius:99px!important}
+/* the pill moves like liquid: overshoots and settles; pager.js stretches it while a swipe is between tabs */
+html body #bnav .fx-pill{border-radius:99px!important;transform-origin:50% 50%;transition:transform .46s cubic-bezier(.3,1.35,.45,1),width .46s cubic-bezier(.3,1.35,.45,1)!important}
+/* refraction (liquid.js, Chromium, tier 3): each surface bends what is behind it through its own lens filter */
+html.zz-lgon body :is(#bnav,.view .nav,#tools,.fx-top).zz-lg{-webkit-backdrop-filter:var(--zz-lg) saturate(1.7) brightness(1.04)!important;backdrop-filter:var(--zz-lg) saturate(1.7) brightness(1.04)!important}
+html:not(.zz-flat) body #bnav .fx-pill{background:var(--lg-sheen),color-mix(in srgb,var(--burgundy) 13%,transparent)!important;box-shadow:var(--lg-rim-sm)!important}
+/* Minimal tier: no blur, a near-solid bar so text never sits on moving content */
+html.fx-min:not(.zz-flat) body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:var(--panel)!important}
+@media(prefers-reduced-transparency:reduce){html body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:var(--panel)!important}}
+@media(prefers-reduced-motion:reduce){html body #bnav .fx-pill{transition:none!important}}
+
+/* ===== content: structure from tone and space; labels keep their CAPITALS and are bold (owner's rule over taste-skill) ===== */
+/* cards keep their 1px border width (layout and annotation ink stay exactly where they are); only the hairline colour goes */
+html body :is(article.card,a.topic,.tbtile){border-color:transparent!important}
+html body :is(.eyebrow,.stats span,.pager a small,#qf h4,.nh-eb,.nh-k,.nh-split span,.nh-dt,.nh-tk,.qa-k,#zz-tut .tt-n){font-weight:700!important}
 </style><style id="ansfmt">/* viva-style answer emphasis (generated markup from format_answers.py) */
 .ans p{margin:0 0 .85em;line-height:1.7}
 .ans strong{font-weight:700;color:var(--navy)}
@@ -4898,16 +4933,19 @@ function sync(){
  (window.requestIdleCallback||setTimeout)(()=>[P[k-1],P[k+1]].forEach(n=>{const id=n&&n.id.slice(2);if(!id||pre.has(id)||!zzPre[id])return;pre.add(id);try{zzPre[id]()}catch(e){}}),{timeout:2500});
 }
 const see=l=>{if(T)[...T.children].forEach((p,i)=>p.classList.toggle('zz-see',l.includes(i)))};   /* only panes under the viewport show while moving */
-const rest=()=>{if(T&&Math.abs(T.scrollLeft-act*T.clientWidth)<2)see([])};
+const pillTo=k=>{const n=document.getElementById('bnav'),P=T?[...T.children]:[],a=anchor(P[k]),p=n&&n.querySelector('.fx-pill');if(!a||!p||getComputedStyle(n).display==='none')return;
+ const nr=n.getBoundingClientRect(),r=a.getBoundingClientRect();p.style.transition='';p.style.width=r.width+'px';p.style.transform='translate('+Math.round(r.left-nr.left)+'px,'+Math.round(r.top-nr.top)+'px)'};   /* settle on the tab, unstretched */
+const rest=()=>{if(T&&Math.abs(T.scrollLeft-act*T.clientWidth)<2){see([]);pillTo(act)}};
 const anchor=v=>{const i=tabOf(v);return i<0?null:document.querySelector('#bnav a[href="'+HREF[i]+'"]')};
 /* the bottom-bar pill (fx.js) and highlight follow the finger */
 function live(){
  if(!de.classList.contains('zz-pg'))return;
  const n=document.getElementById('bnav'),P=[...T.children],w=T.clientWidth||1,f=Math.max(0,Math.min(P.length-1,T.scrollLeft/w));see([Math.floor(f),Math.ceil(f)]);
- if(n&&n.offsetParent){const near=anchor(P[Math.round(f)]);n.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a===near));
+ if(n&&getComputedStyle(n).display!=='none'){   /* the bar is position:fixed, so offsetParent is always null: test display */const near=anchor(P[Math.round(f)]);n.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a===near));
   const p=n.querySelector('.fx-pill'),i0=Math.floor(f),a0=anchor(P[i0]),a1=anchor(P[Math.min(P.length-1,i0+1)]);
   if(p&&a0&&a1){const u=f-i0,nr=n.getBoundingClientRect(),r0=a0.getBoundingClientRect(),r1=a1.getBoundingClientRect();
-   p.style.transition='none';p.style.width=(r0.width+(r1.width-r0.width)*u)+'px';p.style.transform='translate('+Math.round(r0.left+(r1.left-r0.left)*u-nr.left)+'px,'+Math.round(r0.top-nr.top)+'px)';
+   p.style.transition='none';p.style.width=(r0.width+(r1.width-r0.width)*u)+'px';const sq=Math.sin(Math.PI*u);   /* liquid: the pill stretches between tabs and settles on one */
+   p.style.transform='translate('+Math.round(r0.left+(r1.left-r0.left)*u-nr.left)+'px,'+Math.round(r0.top-nr.top)+'px) scale('+(1+.22*sq).toFixed(3)+','+(1-.1*sq).toFixed(3)+')';
    clearTimeout(pt);pt=setTimeout(()=>{p.style.transition=''},180)}}
  clearTimeout(end);end=setTimeout(settle,160);
  if(!touching&&Math.abs(T.scrollLeft-act*w)<2){prog=false;rest()}   /* landed on its pane: neighbours hide again at once */
@@ -6577,6 +6615,54 @@ function startRec(SR,b){try{speechSynthesis.cancel()}catch(e){}rec=new SR();rec.
 function stopRec(){if(rec){try{rec.stop()}catch(e){}rec=null}}
 function close(){if(!ov)return;stopRec();clearInterval(tm);try{speechSynthesis.cancel()}catch(e){}ov.remove();ov=null;document.body.classList.remove('zx-on')}
 const go=()=>{if(location.hash==='#/examiner')open();else close()};addEventListener('hashchange',go);go();
+}catch(e){}})();
+
+/* ===== liquid.js: Liquid Glass on the navigation layer (bottom bar, its sliding pill, the sticky top bar, the reading-tools
+   strip, back to top). Glass is never used on content (cards, answers): that follows Apple's own rule and taste-skill's.
+   Refraction: each surface gets an SVG filter whose displacement map is a lens drawn for that surface's exact size and
+   corner radius (edges bend the content behind them inward, like the rim of a thick glass). The map is generated on a
+   canvas (data: URL, allowed by img-src) and applied with backdrop-filter: url(). Chromium only, tier 3 (Full), not with
+   Reduce effects or prefers-reduced-transparency; everywhere else liquid.css gives frosted glass or a solid bar. */
+(function(){try{
+const de=document.documentElement,NS='http://www.w3.org/2000/svg',UA=navigator.userAgent;
+const chromium=/Chrome\/\d/.test(UA)&&!/CriOS|FxiOS|Firefox/.test(UA),RT=matchMedia('(prefers-reduced-transparency: reduce)');
+const on=()=>chromium&&(!window.zzTier||zzTier()>=3)&&!RT.matches&&!de.classList.contains('zz-flat');
+const T=[['#bnav',10,14,1.8],   /* the selection pill stays a glass bead behind the icons: a lens over the active label made it hard to read */
+ ['.view .nav',10,14,1.8],['#tools',8,10,1.2],['.fx-top',8,10,1.2]];   // selector, lens band px, strength, frost
+let svg=null,n=0;void 0;const made=new WeakMap();
+function lens(w,h,r,band){
+ const s=.5,W=Math.max(2,Math.round(w*s)),H=Math.max(2,Math.round(h*s)),c=document.createElement('canvas');c.width=W;c.height=H;
+ const g=c.getContext('2d'),im=g.createImageData(W,H),d=im.data,R=Math.min(r,w/2,h/2);
+ for(let j=0;j<H;j++)for(let i=0;i<W;i++){
+  const x=(i+.5)/s,y=(j+.5)/s,qx=Math.abs(x-w/2)-(w/2-R),qy=Math.abs(y-h/2)-(h/2-R),ox=Math.max(qx,0),oy=Math.max(qy,0);
+  const sd=Math.hypot(ox,oy)+Math.min(Math.max(qx,qy),0)-R,t=Math.max(0,Math.min(1,1+sd/band)),m=t*t*(3-2*t);
+  let nx=0,ny=0;if(qx>0&&qy>0){const l=Math.hypot(ox,oy)||1;nx=ox/l*Math.sign(x-w/2);ny=oy/l*Math.sign(y-h/2)}else if(qx>qy)nx=Math.sign(x-w/2);else ny=Math.sign(y-h/2);
+  const k=(j*W+i)*4;d[k]=128-nx*127*m;d[k+1]=128-ny*127*m;d[k+2]=128;d[k+3]=255}
+ g.putImageData(im,0,0);return c.toDataURL()}
+function filter(el,band,str,fr){
+ const r=el.getBoundingClientRect(),w=Math.round(r.width),h=Math.round(r.height);if(w<8||h<8)return;
+ const key=w+'x'+h+'x'+getComputedStyle(el).borderTopLeftRadius;let f=made.get(el);if(f&&f.key===key)return;
+ if(!svg){svg=document.createElementNS(NS,'svg');svg.setAttribute('aria-hidden','true');svg.style.cssText='position:absolute;width:0;height:0;overflow:hidden';document.body.append(svg)}
+ const id=f?f.id:'zz-lg'+(++n),rad=parseFloat(getComputedStyle(el).borderTopLeftRadius)||0;
+ let fe=f&&f.node;if(!fe){fe=document.createElementNS(NS,'filter');fe.id=id;svg.append(fe)}
+ fe.setAttribute('x','0');fe.setAttribute('y','0');fe.setAttribute('width',w);fe.setAttribute('height',h);fe.setAttribute('filterUnits','userSpaceOnUse');
+ fe.setAttribute('primitiveUnits','userSpaceOnUse');fe.setAttribute('color-interpolation-filters','sRGB');
+ fe.innerHTML=`<feGaussianBlur in="SourceGraphic" stdDeviation="${fr}" result="b"/><feImage href="${lens(w,h,rad,band)}" x="0" y="0" width="${w}" height="${h}" preserveAspectRatio="none" result="m"/>`+
+  `<feDisplacementMap in="b" in2="m" scale="${str}" xChannelSelector="R" yChannelSelector="G"/>`;
+ made.set(el,{id,key,node:fe});el.style.setProperty('--zz-lg','url(#'+id+')');el.classList.add('zz-lg')}
+let q=0;
+function run(){q=0;
+ if(!on()){de.classList.remove('zz-lgon');return}
+ de.classList.add('zz-lgon');
+ for(const [s,band,str,fr] of T)document.querySelectorAll(s).forEach(el=>{if(el.offsetParent!==null||getComputedStyle(el).position==='fixed')filter(el,band,str,fr)})}
+const soon=(ms)=>{clearTimeout(q);q=setTimeout(run,ms||120)};
+const ro='ResizeObserver' in window?new ResizeObserver(()=>soon(160)):null;
+function watch(){if(!ro)return;for(const [s] of T)document.querySelectorAll(s).forEach(el=>{if(!el.dataset.zzLgw){el.dataset.zzLgw='1';ro.observe(el)}})}
+addEventListener('hashchange',()=>{soon(260);setTimeout(watch,300)});addEventListener('resize',()=>soon(200));
+new MutationObserver(()=>soon(60)).observe(de,{attributes:true,attributeFilter:['class','data-theme','data-tone']});
+RT.addEventListener&&RT.addEventListener('change',()=>soon(0));
+setTimeout(()=>{watch();run()},700);
+window.zzLiquid={run,on};
 }catch(e){}})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
