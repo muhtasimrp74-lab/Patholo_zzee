@@ -136,6 +136,10 @@ export async function google(req: Request, env: Env): Promise<Response> {
   if (typeof b.id_token !== 'string' || !dev) return json({ error: 'bad_request' }, 400);
   const g = await verifyGoogle(b.id_token, env.GOOGLE_CLIENT_ID);
   if (!g) return json({ error: 'invalid_token' }, 401);
+  /* never sign a Google user into a password account that merely claims the same email: registration does not verify email,
+     so anyone could have pre-registered it. That person keeps their password sign-in; the Google user is told to use it. */
+  const pw = await env.DB.prepare('SELECT password_hash FROM users WHERE lower(email) = lower(?1)').bind(g.email).first<{ password_hash: string | null }>();
+  if (pw && pw.password_hash) return json({ error: 'use_password' }, 409);
   const id = await userBy(env, 'email', g.email, g.name || g.email.split('@')[0]);
   const lim = await deviceLimit(env, id, dev);
   if (lim) return lim;

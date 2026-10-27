@@ -8,7 +8,7 @@
    - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v204';
+const VERSION = 'pathviva-zzee-v205';
 
 const CORE = [
   'index.html',
@@ -72,7 +72,8 @@ self.addEventListener('activate', event => {
   );
 });
 
-/* Save the textbook (index + 29 chapters) so it opens offline even if never visited. Failures are ignored and retried next update. */
+/* Save the textbook index and the free chapter (ch01) so they open offline even if never visited; gated chapters come from the
+   chunk API and are never cached here. Failures are ignored and retried next update. */
 async function precacheBook() {
   try {
     const cache = await caches.open(VERSION);
@@ -99,7 +100,10 @@ self.addEventListener('fetch', event => {
   if (url.pathname.endsWith('/manifest.json') || url.pathname.endsWith('/sw.js')) return;
 
   const isPage = req.mode === 'navigate';
-  const key = isPage ? 'index.html' : req;
+  /* only the app shell is kept under 'index.html'; other pages (terms, privacy, refund) are saved under their own path,
+     so visiting them can no longer overwrite the cached app */
+  const shell = isPage && /\/(index\.html)?$/.test(url.pathname);
+  const key = shell ? 'index.html' : isPage ? url.pathname : req;
   if (isPage) {  // pages: newest copy when the network answers quickly; the saved copy instantly when offline or slow
     event.respondWith((async () => {
       const cache = await caches.open(VERSION);
@@ -136,7 +140,7 @@ self.addEventListener('fetch', event => {
     }
     const fresh = await refresh;
     if (fresh) return fresh;
-    if (isPage) {
+    if (shell) {
       const home = await cache.match('index.html');
       if (home) return home;
     }
