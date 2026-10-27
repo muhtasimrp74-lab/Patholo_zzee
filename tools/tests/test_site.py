@@ -263,6 +263,10 @@ class Browser(unittest.TestCase):
                       "mcq": {"p": {P: {"n": 1}}, "bm": [P], "hist": [P], "o": {P: P}, "day": {"d": P, "n": 0}, "rd": {P: 1}, "rv": [P], "nt": {P: P}}})
         for h in ('#/', '#/qa', '#/questions', '#/menu', '#/mcqs', '#/practice', '#/05', '#/textbook'): pg.goto(URL + h); pg.wait_for_timeout(350)
         self.assertIsNone(pg.evaluate("()=>window.__x ?? null"), 'script from backup data executed')
+    def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
+        pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
+        n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
+        self.assertEqual(n, 0, 'an idle page leaves <html> attributes alone'); pg.close()
     def test_home_banner_only_on_home_and_cta_works(self):
         pg = self.page(); pg.wait_for_timeout(300)
         self.assertEqual(pg.locator('.nh-banner').count(), 1); self.assertEqual(pg.locator('#v-home h1:visible').count(), 1)
