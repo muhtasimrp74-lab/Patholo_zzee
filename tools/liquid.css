@@ -1,0 +1,33 @@
+
+/* ===== Liquid Glass, navigation layer only (liquid.js adds refraction on Chromium at tier 3) =====
+   Content (cards, answers, tiles) stays opaque: glass is for what floats above the content. */
+:root{--lg-tint:rgba(255,253,250,.66);--lg-tint-top:rgba(255,253,250,.7);--lg-lens:rgba(255,255,255,.16);
+ --lg-sheen:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,0) 48%);
+ --lg-rim:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(255,255,255,.25),inset 1px 0 0 rgba(255,255,255,.35),inset -1px 0 0 rgba(255,255,255,.35),0 0 0 .5px rgba(42,22,39,.14),0 14px 34px -14px rgba(42,22,39,.45);
+ --lg-rim-sm:inset 0 1px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(255,255,255,.3),0 0 0 .5px rgba(42,22,39,.12),0 4px 12px -6px rgba(42,22,39,.35)}
+:root[data-theme=dark]{--lg-tint:rgba(30,20,28,.66);--lg-tint-top:rgba(30,20,28,.7);--lg-lens:rgba(255,255,255,.06);--lg-sheen:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,0) 48%);
+ --lg-rim:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(255,255,255,.06),inset 1px 0 0 rgba(255,255,255,.08),inset -1px 0 0 rgba(255,255,255,.08),0 0 0 .5px rgba(0,0,0,.5),0 16px 36px -14px rgba(0,0,0,.75);
+ --lg-rim-sm:inset 0 1px 0 rgba(255,255,255,.22),0 0 0 .5px rgba(0,0,0,.45),0 4px 12px -6px rgba(0,0,0,.6)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--lg-tint:rgba(30,20,28,.66);--lg-tint-top:rgba(30,20,28,.7);--lg-lens:rgba(255,255,255,.06);--lg-sheen:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,0) 48%);
+ --lg-rim:inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(255,255,255,.06),inset 1px 0 0 rgba(255,255,255,.08),inset -1px 0 0 rgba(255,255,255,.08),0 0 0 .5px rgba(0,0,0,.5),0 16px 36px -14px rgba(0,0,0,.75);
+ --lg-rim-sm:inset 0 1px 0 rgba(255,255,255,.22),0 0 0 .5px rgba(0,0,0,.45),0 4px 12px -6px rgba(0,0,0,.6)}}
+/* frosted glass: every tier above Minimal */
+html:not(.zz-flat) body #bnav{background:var(--lg-sheen),var(--lg-tint)!important;border:0!important;box-shadow:var(--lg-rim)!important;-webkit-backdrop-filter:blur(16px) saturate(1.8)!important;backdrop-filter:blur(16px) saturate(1.8)!important}
+@media(max-width:1000px){html:not(.zz-flat) body #bnav{left:10px!important;right:10px!important;width:auto!important;bottom:calc(8px + env(safe-area-inset-bottom,0px))!important;border-radius:26px!important;padding-bottom:0!important}}
+html:not(.zz-flat) body .view .nav{background:var(--lg-sheen),var(--lg-tint-top)!important;-webkit-backdrop-filter:blur(14px) saturate(1.7)!important;backdrop-filter:blur(14px) saturate(1.7)!important;box-shadow:inset 0 -1px 0 rgba(255,255,255,.35),0 1px 0 rgba(42,22,39,.05)!important}
+html:not(.zz-flat) body :is(#tools,.fx-top){background:var(--lg-sheen),var(--lg-tint)!important;box-shadow:var(--lg-rim-sm)!important;border-color:transparent!important;-webkit-backdrop-filter:blur(14px) saturate(1.8)!important;backdrop-filter:blur(14px) saturate(1.8)!important}
+html:not(.zz-flat) body #tools{border-radius:99px!important}
+/* the pill moves like liquid: overshoots and settles; pager.js stretches it while a swipe is between tabs */
+html body #bnav .fx-pill{border-radius:99px!important;transform-origin:50% 50%;transition:transform .46s cubic-bezier(.3,1.35,.45,1),width .46s cubic-bezier(.3,1.35,.45,1)!important}
+/* refraction (liquid.js, Chromium, tier 3): each surface bends what is behind it through its own lens filter */
+html.zz-lgon body :is(#bnav,.view .nav,#tools,.fx-top).zz-lg{-webkit-backdrop-filter:var(--zz-lg) saturate(1.7) brightness(1.04)!important;backdrop-filter:var(--zz-lg) saturate(1.7) brightness(1.04)!important}
+html:not(.zz-flat) body #bnav .fx-pill{background:var(--lg-sheen),color-mix(in srgb,var(--burgundy) 13%,transparent)!important;box-shadow:var(--lg-rim-sm)!important}
+/* Minimal tier: no blur, a near-solid bar so text never sits on moving content */
+html.fx-min:not(.zz-flat) body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:var(--panel)!important}
+@media(prefers-reduced-transparency:reduce){html body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:var(--panel)!important}}
+@media(prefers-reduced-motion:reduce){html body #bnav .fx-pill{transition:none!important}}
+
+/* ===== content: structure from tone and space; labels keep their CAPITALS and are bold (owner's rule over taste-skill) ===== */
+/* cards keep their 1px border width (layout and annotation ink stay exactly where they are); only the hairline colour goes */
+html body :is(article.card,a.topic,.tbtile){border-color:transparent!important}
+html body :is(.eyebrow,.stats span,.pager a small,#qf h4,.nh-eb,.nh-k,.nh-split span,.nh-dt,.nh-tk,.qa-k,#zz-tut .tt-n){font-weight:700!important}

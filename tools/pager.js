@@ -51,16 +51,19 @@ function sync(){
  (window.requestIdleCallback||setTimeout)(()=>[P[k-1],P[k+1]].forEach(n=>{const id=n&&n.id.slice(2);if(!id||pre.has(id)||!zzPre[id])return;pre.add(id);try{zzPre[id]()}catch(e){}}),{timeout:2500});
 }
 const see=l=>{if(T)[...T.children].forEach((p,i)=>p.classList.toggle('zz-see',l.includes(i)))};   /* only panes under the viewport show while moving */
-const rest=()=>{if(T&&Math.abs(T.scrollLeft-act*T.clientWidth)<2)see([])};
+const pillTo=k=>{const n=document.getElementById('bnav'),P=T?[...T.children]:[],a=anchor(P[k]),p=n&&n.querySelector('.fx-pill');if(!a||!p||getComputedStyle(n).display==='none')return;
+ const nr=n.getBoundingClientRect(),r=a.getBoundingClientRect();p.style.transition='';p.style.width=r.width+'px';p.style.transform='translate('+Math.round(r.left-nr.left)+'px,'+Math.round(r.top-nr.top)+'px)'};   /* settle on the tab, unstretched */
+const rest=()=>{if(T&&Math.abs(T.scrollLeft-act*T.clientWidth)<2){see([]);pillTo(act)}};
 const anchor=v=>{const i=tabOf(v);return i<0?null:document.querySelector('#bnav a[href="'+HREF[i]+'"]')};
 /* the bottom-bar pill (fx.js) and highlight follow the finger */
 function live(){
  if(!de.classList.contains('zz-pg'))return;
  const n=document.getElementById('bnav'),P=[...T.children],w=T.clientWidth||1,f=Math.max(0,Math.min(P.length-1,T.scrollLeft/w));see([Math.floor(f),Math.ceil(f)]);
- if(n&&n.offsetParent){const near=anchor(P[Math.round(f)]);n.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a===near));
+ if(n&&getComputedStyle(n).display!=='none'){   /* the bar is position:fixed, so offsetParent is always null: test display */const near=anchor(P[Math.round(f)]);n.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a===near));
   const p=n.querySelector('.fx-pill'),i0=Math.floor(f),a0=anchor(P[i0]),a1=anchor(P[Math.min(P.length-1,i0+1)]);
   if(p&&a0&&a1){const u=f-i0,nr=n.getBoundingClientRect(),r0=a0.getBoundingClientRect(),r1=a1.getBoundingClientRect();
-   p.style.transition='none';p.style.width=(r0.width+(r1.width-r0.width)*u)+'px';p.style.transform='translate('+Math.round(r0.left+(r1.left-r0.left)*u-nr.left)+'px,'+Math.round(r0.top-nr.top)+'px)';
+   p.style.transition='none';p.style.width=(r0.width+(r1.width-r0.width)*u)+'px';const sq=Math.sin(Math.PI*u);   /* liquid: the pill stretches between tabs and settles on one */
+   p.style.transform='translate('+Math.round(r0.left+(r1.left-r0.left)*u-nr.left)+'px,'+Math.round(r0.top-nr.top)+'px) scale('+(1+.22*sq).toFixed(3)+','+(1-.1*sq).toFixed(3)+')';
    clearTimeout(pt);pt=setTimeout(()=>{p.style.transition=''},180)}}
  clearTimeout(end);end=setTimeout(settle,160);
  if(!touching&&Math.abs(T.scrollLeft-act*w)<2){prog=false;rest()}   /* landed on its pane: neighbours hide again at once */
