@@ -176,7 +176,10 @@ function qpath(g,a,first){if(a.length<2){return}if(first)g.moveTo(a[0][0],a[0][1
 const grain={};function pattern(g,color){let p=grain[color];const k=g.getTransform?g.getTransform().a:1;if(!p){const c=document.createElement('canvas');c.width=c.height=48;const x=c.getContext('2d');x.fillStyle=color;let s=7;for(let i=0;i<900;i++){s=(s*16807)%2147483647;const px=s%48;s=(s*16807)%2147483647;const py=s%48;x.globalAlpha=.35+(s%60)/100;x.fillRect(px,py,1.4,1.4)}x.globalAlpha=.55;x.fillRect(0,0,48,48);p=grain[color]=g.createPattern(c,'repeat')}try{p.setTransform(new DOMMatrix([1/k,0,0,1/k,0,0]))}catch(e){}return p}
 function drawStroke(g,pts,kind,color,w,al,fs){const f=fs||fsNow(),base=w*f;if(!pts.length)return;g.save();g.globalAlpha=al==null?1:al;
  if(kind==='hl'){g.strokeStyle=color;g.lineWidth=base;g.lineCap='butt';g.lineJoin='round';g.beginPath();if(pts.length<2){g.moveTo(pts[0][0]-base/2,pts[0][1]);g.lineTo(pts[0][0]+base/2,pts[0][1])}else qpath(g,pts,true);g.stroke();g.restore();return}
- const wf=i=>Math.max(.4,widthAt(kind,base,pts[i][2],0)),first=wf(0),last=wf(pts.length-1);g.fillStyle=kind==='pen'?pattern(g,color):color;g.strokeStyle=color;
+ /* taper: pen and fountain strokes thin into their start and end (over ~2.5 widths), like the best ink apps; drawing only, saved points unchanged */
+ const n=pts.length,cum=new Float32Array(n);for(let i=1;i<n;i++)cum[i]=cum[i-1]+Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);
+ const TL=Math.max(2,base*2.5),tp=i=>{const t=Math.min(1,Math.min(cum[i],cum[n-1]-cum[i])/TL);return .3+.7*t*t*(3-2*t)};
+ const wf=i=>Math.max(.4,widthAt(kind,base,pts[i][2],0)*(n>2&&cum[n-1]>TL?tp(i):1)),first=wf(0),last=wf(n-1);g.fillStyle=kind==='pen'?pattern(g,color):color;g.strokeStyle=color;
  if(kind==='pen')g.globalAlpha*=.8;
  if(pts.length<2){g.beginPath();g.arc(pts[0][0],pts[0][1],first/2,0,6.3);g.fill();g.restore();return}
  const o=outline(pts,wf);g.beginPath();qpath(g,o.L,true);qpath(g,o.R.slice().reverse(),false);g.closePath();g.fill();
