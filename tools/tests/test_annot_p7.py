@@ -33,7 +33,9 @@ class ProTools(unittest.TestCase):
     def docobjs(self, pg, cid): return pg.evaluate("k=>{const d=Annot._debug.docs()[k];return d?JSON.parse(JSON.stringify(d.objs.map(o=>{const c=Object.assign({},o);delete c.orphan;return c}))):[]}", 'q:' + cid)
     def kinds(self, pg, cid): return [o['t'] + ':' + o['k'] for o in self.docobjs(pg, cid)]
     def draw(self, pg, sel, pts, **o): pg.evaluate(DRAW, [sel, pts, o]); pg.wait_for_timeout(120)
-    def thick(self, pg, sel, x, y0, y1, cls='ink'): pg.wait_for_timeout(80); return pg.evaluate(THICK, [sel, x, y0, y1, cls])
+    def thick(self, pg, sel, x, y0, y1, cls='ink'):   # wait until the layer exists and is painted (a fixed wait raced on CI)
+        pg.wait_for_function("([s,c])=>{const v=document.querySelector(s+' canvas.'+c);if(!v||!v.width)return false;const d=v.getContext('2d').getImageData(0,0,v.width,v.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false}", arg=[sel, cls], timeout=5000)
+        return pg.evaluate(THICK, [sel, x, y0, y1, cls])
 
     # ---------- A1: eraser ----------
     def test_precise_eraser_leaves_clean_cut_ends_not_tapered_points(self):
