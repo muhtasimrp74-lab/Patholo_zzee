@@ -124,7 +124,10 @@ function daily(away: boolean): void {
   o.innerHTML = '<div class="zc zw-' + part() + '"><div class="zi" aria-hidden="true"><svg viewBox="0 0 24 24">' + ICON[part()] + '</svg></div><h2 id="zz-wh"></h2><p></p><label for="zz-wn">What should we call you?</label><input id="zz-wn" type="text" maxlength="40" autocomplete="given-name" placeholder="First name"><button type="button">Start studying</button></div>';
   o.querySelector('h2')!.textContent = greet() + (first() ? ', ' + first() : '');
   o.querySelector('p')!.textContent = away ? 'Welcome back — it’s been a little while. Even ten minutes today counts.' : st.n > 1 ? 'Welcome back! You’re on a ' + st.n + '-day revision streak.' : 'Welcome to your daily revision. A little every day goes a long way.';
-  const inp = o.querySelector('input')!; inp.value = nm(); document.body.appendChild(o);
+  const inp = o.querySelector('input')!; inp.value = nm();
+  /* a name is already saved: greet with it and do not ask again every day (it can be changed in the menu) */
+  if (nm()) { o.querySelector('label')!.remove(); inp.type = 'hidden'; }
+  document.body.appendChild(o);
   const done = (): void => { const v = inp.value.trim().slice(0, 40); if (v) set('zzName', v); o.classList.remove('on'); setTimeout(() => { o.remove(); if (v) banner(); }, 350); };
   o.querySelector('button')!.onclick = done; inp.onkeydown = (e) => { if (e.key === 'Enter') done(); };
   o.addEventListener('click', (e) => { if (e.target === o) done(); });

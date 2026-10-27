@@ -217,6 +217,10 @@
 		o.querySelector("p").textContent = away ? "Welcome back — it’s been a little while. Even ten minutes today counts." : st.n > 1 ? "Welcome back! You’re on a " + st.n + "-day revision streak." : "Welcome to your daily revision. A little every day goes a long way.";
 		const inp = o.querySelector("input");
 		inp.value = nm();
+		if (nm()) {
+			o.querySelector("label").remove();
+			inp.type = "hidden";
+		}
 		document.body.appendChild(o);
 		const done = () => {
 			const v = inp.value.trim().slice(0, 40);

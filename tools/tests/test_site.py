@@ -263,6 +263,38 @@ class Browser(unittest.TestCase):
                       "mcq": {"p": {P: {"n": 1}}, "bm": [P], "hist": [P], "o": {P: P}, "day": {"d": P, "n": 0}, "rd": {P: 1}, "rv": [P], "nt": {P: P}}})
         for h in ('#/', '#/qa', '#/questions', '#/menu', '#/mcqs', '#/practice', '#/05', '#/textbook'): pg.goto(URL + h); pg.wait_for_timeout(350)
         self.assertIsNone(pg.evaluate("()=>window.__x ?? null"), 'script from backup data executed')
+    BARS = "()=>{const r=s=>document.querySelector(s).getBoundingClientRect();return {hid:document.documentElement.classList.contains('zz-hide'),nav:r('#bnav').top>=innerHeight,tools:r('#tools').bottom<=0}}"
+    def test_bars_hide_while_scrolling_down_and_return_on_scroll_up(self):
+        for h in ('#/02', '#/'):   # a document-scrolling page and the swipe pager's panes
+            pg = self.b.new_page(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True); self.errs = []; pg.on('pageerror', lambda e: self.errs.append(str(e)))
+            # a returning user with a saved name and the exam-date question deferred: no welcome card or prompt locks scrolling
+            pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','Test');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+            pg.goto(URL + h); pg.mouse.move(195, 480)   # scroll the content under the finger, not the bar at (0, 0)
+            pg.wait_for_function("()=>[document.scrollingElement,...document.querySelectorAll('[class*=pane]')].some(e=>e.scrollHeight>e.clientHeight+400)", timeout=8000); pg.wait_for_timeout(1500)
+            for _ in range(3):   # the router scrolls a freshly opened page to the top once: scroll again if that undid the gesture
+                for _ in range(6): pg.mouse.wheel(0, 120); pg.wait_for_timeout(60)
+                pg.wait_for_timeout(500)
+                if pg.evaluate(self.BARS)['hid']: break
+            pg.wait_for_timeout(500); self.assertEqual(pg.evaluate(self.BARS), {'hid': True, 'nav': True, 'tools': True}, h + ': scrolling down hides both bars')
+            pg.mouse.wheel(0, -60); pg.wait_for_timeout(500); self.assertEqual(pg.evaluate(self.BARS), {'hid': False, 'nav': False, 'tools': False}, h + ': any scroll up brings them back')
+            for _ in range(8): pg.mouse.wheel(0, -400); pg.wait_for_timeout(40)
+            pg.wait_for_timeout(300); self.assertFalse(pg.evaluate(self.BARS)['hid'], h + ': always shown at the top'); self.assertEqual(self.errs, []); pg.close()
+    def test_filter_drawer_is_never_covered_by_the_tab_bar(self):
+        for w, ht in ((412, 860), (756, 1210)):   # bottom sheet on phones, side drawer on tablets
+            pg = self.phone('#/02', w=w, ht=ht); pg.locator('button:has-text("Filters") >> visible=true').first.click(); pg.wait_for_timeout(700)
+            top = pg.evaluate("()=>{const b=[...document.querySelectorAll('#qf button')].find(x=>/^Show/.test(x.textContent.trim())),r=b.getBoundingClientRect(),t=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);return [b===t||b.contains(t),document.querySelector('#bnav').getBoundingClientRect().top>=innerHeight]}")
+            self.assertEqual(top, [True, True], '%d px: the Show button is on top and the tab bar steps aside' % w); pg.close()
+    def test_active_tab_has_one_indicator_under_liquid_glass(self):
+        pg = self.phone('#/'); pg.evaluate("()=>{S.pref.fx='full';dispatchEvent(new Event('resize'))}"); pg.wait_for_timeout(900)
+        if not pg.evaluate("()=>document.documentElement.classList.contains('zz-lgon')"): self.skipTest('Liquid Glass needs Chromium at the Full tier')
+        s = pg.evaluate("()=>{const c=getComputedStyle(document.querySelector('#bnav a.on'));return [c.boxShadow,c.backgroundColor]}")
+        self.assertEqual(s, ['none', 'rgba(0, 0, 0, 0)'], 'the glass pill is the only indicator (no square-cornered box under it)'); pg.close()
+    def test_daily_welcome_does_not_ask_a_known_name_again(self):
+        for name, asks in (('Muhtasim', False), (None, True)):
+            pg = self.b.new_page(viewport={'width': 412, 'height': 860})
+            pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()-3*864e5));%s" % ("localStorage.setItem('zzName','%s')" % name if name else ''))
+            pg.goto(URL + '#/'); pg.wait_for_selector('.zz-wd.on'); pg.wait_for_timeout(300)
+            self.assertEqual(pg.locator('.zz-wd input').is_visible(), asks, 'name %r' % name); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
