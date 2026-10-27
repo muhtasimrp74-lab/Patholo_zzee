@@ -1,4 +1,5 @@
-// PRODUCTION (owner-authorised launch). Deployed only by .github/workflows/production.yml, run by hand on main.
+// PRODUCTION (owner-authorised launch). Deployed only by .github/workflows/production.yml, which runs after a green
+// "Build, test and deploy to GitHub Pages" run on main (or by hand on main).
 // __D1_ID__ is filled in by that workflow; nothing secret lives here.
 {
   "name": "patholo-zzee-app",
