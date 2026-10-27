@@ -6652,8 +6652,10 @@ function filter(el,band,str,fr){
  made.set(el,{id,key,node:fe});el.style.setProperty('--zz-lg','url(#'+id+')');el.classList.add('zz-lg')}
 let q=0;
 function run(){q=0;
- if(!on()){de.classList.remove('zz-lgon');return}
- de.classList.add('zz-lgon');
+ /* write the class only when it changes: classList.add/remove rewrite the attribute even when nothing changes, which re-triggered this
+    file's own MutationObserver (~30 runs a second, forever; it also hung fake-clock tests) */
+ if(!on()){if(de.classList.contains('zz-lgon'))de.classList.remove('zz-lgon');return}
+ if(!de.classList.contains('zz-lgon'))de.classList.add('zz-lgon');
  for(const [s,band,str,fr] of T)document.querySelectorAll(s).forEach(el=>{if(el.offsetParent!==null||getComputedStyle(el).position==='fixed')filter(el,band,str,fr)})}
 const soon=(ms)=>{clearTimeout(q);q=setTimeout(run,ms||120)};
 const ro='ResizeObserver' in window?new ResizeObserver(()=>soon(160)):null;
