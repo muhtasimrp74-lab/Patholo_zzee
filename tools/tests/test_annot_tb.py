@@ -64,6 +64,16 @@ class TextbookAnnot(unittest.TestCase):
         pg.on('pageerror', lambda e: self.errs.append(str(e))); pg.on('dialog', lambda d: (self.dialogs.append(d.message), d.accept()))
         if route: pg.route('**/textbook/%s.html' % ch, route)
         pg.goto(self.url(ch)); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('#tbbody[data-ch] [data-b]'); pg.wait_for_timeout(350); return pg
+    def test_ink_buttons_step_aside_while_reading_and_return_on_scroll_up(self):   # phones: they covered the ends of text lines
+        pg = self.page(w=412, h=860); pg.wait_for_timeout(900); pg.mouse.move(200, 480)
+        FAB = "()=>{const f=document.getElementById('an-fab');if(!f||getComputedStyle(f).display==='none')return null;const r=f.getBoundingClientRect();return r.left<innerWidth&&r.right>0}"
+        self.assertTrue(pg.evaluate(FAB), 'the ink buttons show in the reader')
+        for _ in range(3):   # the reader may restore its own scroll position once after opening: scroll again if that undid the gesture
+            for _ in range(6): pg.mouse.wheel(0, 120); pg.wait_for_timeout(60)
+            pg.wait_for_timeout(500)
+            if pg.evaluate("()=>document.documentElement.classList.contains('zz-hide')"): break
+        self.assertFalse(pg.evaluate(FAB), 'scrolling down slides them off the text')
+        pg.mouse.wheel(0, -60); pg.wait_for_timeout(500); self.assertTrue(pg.evaluate(FAB), 'any scroll up brings them back'); self.assertEqual(self.errs, []); self.ctx.close()
     def at(self, pg, y, minH=22):
         for k in range(12):
             pg.evaluate("y=>window.scrollTo({top:y,behavior:'instant'})", y + k * 260); pg.wait_for_timeout(380)

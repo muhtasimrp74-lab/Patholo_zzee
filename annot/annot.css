@@ -206,3 +206,9 @@ body.an-hidden .an-wsadd,body.an-hidden .an-wsb{display:none}
  html body.mx-live.an-on:not(.an-left) .mx-act{padding-right:168px}
  html body.mx-live.an-on.an-left .mx-act{padding-left:168px}
 }
+/* reading on phones: the floating ink buttons covered the ends of text lines. Like the bars (autohide.js) they slide away while
+   scrolling down and return on any scroll up; not in MCQ sessions (they live in the footer there) or while the pen is on. */
+#an-fab{transition:translate .28s cubic-bezier(.2,.8,.2,1)}
+html.zz-hide body:not(.mx-live):not(.an-on) #an-fab{translate:calc(100% + 80px) 0}
+html.zz-hide body.an-left:not(.mx-live):not(.an-on) #an-fab{translate:calc(-100% - 80px) 0}
+@media (prefers-reduced-motion:reduce){#an-fab{transition:none}}
