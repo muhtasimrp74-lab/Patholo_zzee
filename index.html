@@ -3004,8 +3004,9 @@ html.zz-snap :is(nav.nav,#tools,#bnav,#an-fab){transition:translate .3s cubic-be
 html body #bnav.zz-drag .fx-pill{transition:none!important}
 /* the footer runs to the bottom of the screen: no light strip under it (the tab bar slides away when scrolling down) */
 html body:has(.sf){padding-bottom:0!important}
-html .zz-pane:has(> .sf:last-child)::after{height:0!important;display:none!important}   /* swipe tabs: the bottom-bar spacer sat under the footer */
-.sf::after{content:"";display:block;height:calc(50px + env(safe-area-inset-bottom,0px))}
+/* swipe tabs keep the bottom-bar spacer (the footer must end above the bar) but paint it in the footer colour: no light strip */
+html .zz-pane:has(> .sf:last-child)::after{background:#12080b}
+:not(.zz-pane) > .sf::after{content:"";display:block;height:calc(50px + env(safe-area-inset-bottom,0px))}
 /* active tab: the glass pill is the indicator, so no second (square-cornered) box under it; the plain indicator matches the capsule bar */
 #bnav a.on,#bnav a[aria-current]{border-radius:999px}
 html.zz-lgon body #bnav a.on,html.zz-lgon body #bnav a[aria-current]{box-shadow:none;background:none}

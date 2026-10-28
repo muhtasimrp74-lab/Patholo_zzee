@@ -387,8 +387,10 @@ class Browser(unittest.TestCase):
         pg = self.returning('#/', w=412, ht=860); pg.wait_for_timeout(500); pg.mouse.move(200, 480)   # Home: the footer is the last thing on the page
         for _ in range(40): pg.mouse.wheel(0, 600); pg.wait_for_timeout(25)
         pg.wait_for_timeout(800)
-        r = pg.evaluate("()=>{const t=document.elementFromPoint(200,innerHeight-6);return [!!(t&&t.closest('.sf')),(t&&(t.className||t.tagName)).toString().slice(0,20)]}")
-        self.assertTrue(r[0], 'the bottom of the page is the footer, not an empty strip (%s)' % r[1]); pg.close()
+        r = pg.evaluate("()=>{const t=document.elementFromPoint(200,innerHeight-6),sf=document.querySelector('#v-home .sf'),bg=sf&&getComputedStyle(sf).backgroundColor;"
+                        "const inFooter=!!(t&&t.closest('.sf')),spacer=t&&t.classList&&t.classList.contains('zz-pane')?getComputedStyle(t,'::after').backgroundColor:null;"
+                        "return [inFooter||spacer===bg,(t&&(t.className||t.tagName)).toString().slice(0,20),spacer,bg]}")
+        self.assertTrue(r[0], 'the bottom of the page is footer-coloured, not a light strip %r' % r[1:]); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
