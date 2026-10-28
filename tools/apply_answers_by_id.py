@@ -15,7 +15,8 @@ try:
     _AL = {_n(k): k for k in content.ANSWERS}
 except Exception:
     content = None
-for n, ans in json.load(open(os.path.join(H, 'answers_by_id.json'), encoding='utf8')).items():
+import answers_upgrade   # build-time upgrade of every by-id answer (docs/answers_upgrades_log.md); no answer text is committed
+for n, ans in ((k, answers_upgrade.upgraded(v)) for k, v in json.load(open(os.path.join(H, 'answers_by_id.json'), encoding='utf8')).items()):
     m = re.search(r'(<article class="card" id="q%s">)(.*?<div class="ans">)(.*?)(</div></article>)' % n, h, re.S)
     if m:
         if content:
