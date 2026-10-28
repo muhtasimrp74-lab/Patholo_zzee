@@ -333,6 +333,17 @@ class Browser(unittest.TestCase):
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
         pg.goto(URL + '#/'); pg.wait_for_function("()=>document.documentElement.classList.contains('zz-pg')"); pg.wait_for_timeout(800)
         n = pg.evaluate(self.SWIPE); self.assertLessEqual(n, 12, 'layout reads during a 24-frame swipe: %d' % n); pg.close()
+    def test_filter_drawer_opened_on_the_questions_tab_is_not_under_its_scrim(self):   # the owner's screenshot: drawer dimmed by its own scrim
+        for w, ht in ((756, 1210), (412, 860)):
+            pg = self.b.new_page(viewport={'width': w, 'height': ht}, has_touch=True, is_mobile=True)
+            pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+            pg.goto(URL + '#/'); pg.wait_for_timeout(1200); pg.locator('#bnav >> text=Questions').click(); pg.wait_for_timeout(1300)   # through the swipe pager
+            pg.locator('button:has-text("Filters") >> visible=true').first.click(); pg.wait_for_timeout(800)
+            r = pg.evaluate("()=>{const f=document.getElementById('qf'),b=f.getBoundingClientRect(),pts=[[b.left+b.width/2,b.top+60],[b.left+b.width/2,b.top+b.height/2],[b.left+30,b.bottom-40]];return {onTop:pts.map(([x,y])=>f.contains(document.elementFromPoint(x,y))),caps:[...f.querySelectorAll('h4')].filter(h=>h.offsetParent).map(h=>getComputedStyle(h).textTransform+'/'+getComputedStyle(h).fontWeight)}}")
+            self.assertEqual(r['onTop'], [True, True, True], '%d px: the drawer is above the scrim, not dimmed by it' % w)
+            self.assertTrue(r['caps'] and all(c == 'uppercase/700' for c in r['caps']), '%d px: section labels in capitals and bold %r' % (w, r['caps'][:3]))
+            pg.click('#qscrim', position={'x': w - 20, 'y': 40}); pg.wait_for_timeout(500)
+            self.assertFalse(pg.evaluate("()=>document.body.classList.contains('qf-open')"), 'tapping the scrim still closes it'); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

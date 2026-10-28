@@ -139,3 +139,5 @@ html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.q
 .tf-row+main{padding-top:10px}.tf-row+main>:first-child{margin-top:14px}
 /* the personal line under the MCQs / Textbook headings sat in burgundy on the dark hero band (2.3:1); a light rose keeps the hue at ~8:1 */
 section.pb .zz-hi{color:#f0a6ba}
+/* drawer section labels in CAPITALS and BOLD (owner rule), also inside the pager where the global sentence-case rule reached them */
+html body #qf h4:not(._){text-transform:uppercase!important;font-weight:700}

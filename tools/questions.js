@@ -224,7 +224,9 @@ window.qfApply=()=>{if(nAct())apply()};
 if(typeof render==='function'){const r0=render;render=function(k){r0(k);if(nAct())apply()}}
 
 /* drawer (tablet) / bottom sheet (phone) / docked sidebar (wide) */
-function openF(o){document.body.classList.toggle('qf-open',o);document.querySelectorAll('.qfb-x,#qfopen,#qfopen2').forEach(b=>b.setAttribute('aria-expanded',o));if(o)setTimeout(()=>{const f=qf.querySelector('.qf-x');f&&f.offsetParent&&f.focus()},60);else if(document.activeElement&&qf.contains(document.activeElement))$q('qfopen').focus()}
+function openF(o){/* the drawer can sit inside the swipe pager (its own stacking layer): keep the scrim beside it so it stays under the drawer */
+ if(o){const sc=$q('qscrim');if(sc&&qf.parentNode&&sc.parentNode!==qf.parentNode)qf.parentNode.insertBefore(sc,qf)}
+ document.body.classList.toggle('qf-open',o);document.querySelectorAll('.qfb-x,#qfopen,#qfopen2').forEach(b=>b.setAttribute('aria-expanded',o));if(o)setTimeout(()=>{const f=qf.querySelector('.qf-x');f&&f.offsetParent&&f.focus()},60);else if(document.activeElement&&qf.contains(document.activeElement))$q('qfopen').focus()}
 $q('qfopen').onclick=()=>openF(!document.body.classList.contains('qf-open'));
 $q('qscrim').onclick=()=>openF(false);
 addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('qf-open'))openF(false)});
