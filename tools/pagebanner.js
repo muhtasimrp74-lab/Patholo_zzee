@@ -25,7 +25,8 @@ function build(id,box){
  sp.acts.forEach(x=>{const b=document.createElement('button');b.type='button';b.className='pb-btn'+(x[2]?' pb-p':'');b.dataset.l=typeof x[0]==='function'?'1':'';b.textContent=typeof x[0]==='function'?x[0]():x[0];b.addEventListener('click',x[1]);a.appendChild(b)});
  const c=document.createElement('p');c.className='pb-chips';
  if(sp.acts.length)box.appendChild(a);box.appendChild(c);
- const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean)}catch(e){}c.textContent='';s.forEach(t=>{const i=document.createElement('span');i.textContent=t;c.appendChild(i)});c.hidden=!s.length;
+ const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean)}catch(e){}const key=s.join('\u0001');   /* rebuild only when the stats changed (a swipe re-ran this and shifted the banner) */
+   if(c.dataset.k!==key){c.dataset.k=key;c.textContent='';s.forEach(t=>{const i=document.createElement('span');i.textContent=t;c.appendChild(i)});c.hidden=!s.length}
   sp.acts.forEach((x,i)=>{if(typeof x[0]==='function')a.children[i].textContent=x[0]()})};
  fill();[300,1200,3000].forEach(t=>setTimeout(fill,t));addEventListener('hashchange',()=>setTimeout(fill,250));
 }
