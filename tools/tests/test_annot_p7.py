@@ -202,4 +202,19 @@ class ProTools(unittest.TestCase):
             tint = sum(1 for row in after_rows for px in row if px[0] - px[2] > 25)
             self.assertGreater(tint, 50, '%s: the highlight colour shows behind the text' % theme); self.assertEqual(self.errs, [])
 
+    # ---------- MCQ sessions on phones: ink buttons live in the footer, not over the answers ----------
+    COVER = """()=>{const f=document.getElementById('an-fab').getBoundingClientRect();return [...document.querySelectorAll('#v-mcqs button,#v-mcqs a')].filter(e=>{if(!e.offsetParent)return false;const a=e.getBoundingClientRect();return a.right>f.left&&a.left<f.right&&a.bottom>f.top&&a.top<f.bottom}).map(e=>e.textContent.trim().slice(0,16))}"""
+    def test_mcq_ink_buttons_never_cover_answers_on_phones(self):
+        pg = self.b.new_page(viewport={'width': 412, 'height': 860}, has_touch=True, is_mobile=True); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/mcqs'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(500)
+        pg.locator('#v-mcqs [data-a=quick] >> visible=true').first.click(); pg.wait_for_function("()=>document.body.classList.contains('mx-live')"); pg.wait_for_timeout(600)
+        for on in (False, True):
+            self.assertEqual(pg.evaluate(self.COVER), [], 'pen %s: no answer or session control is covered' % ('on' if on else 'off'))
+            g = pg.evaluate("()=>{const R=s=>document.querySelector(s).getBoundingClientRect(),p=R('#an-fab-on'),f=R('.mx-act');return {inFooter:p.top>=f.top&&p.bottom<=f.bottom&&p.right<=f.right,eye:getComputedStyle(document.getElementById('an-fab-eye')).display!=='none',w:Math.min(p.width,p.height)}}")
+            self.assertEqual((g['inFooter'], g['eye']), (True, on), 'the pen sits in the session footer; eye and list appear only while it is on')
+            self.assertGreaterEqual(g['w'], 44)
+            if not on: pg.click('#an-fab-on'); pg.wait_for_timeout(300)
+        self.assertTrue(pg.get_attribute('#an-fab-on', 'aria-label')); self.assertEqual(errs, []); pg.close()
+
 if __name__ == '__main__': unittest.main()

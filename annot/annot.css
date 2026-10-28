@@ -192,3 +192,17 @@ body.an-hidden .an-wsadd,body.an-hidden .an-wsb{display:none}
 #an-bar .an-sep{height:34px}
 @media(max-width:420px){#an-bar>button{min-width:46px}#an-bar .an-sw{width:46px}}
 @media(prefers-contrast:more){#an-bar .an-lb{opacity:1}}
+/* MCQ sessions on phones: the floating ink buttons sat over answers D and E. Collapsed to the pen, they now live in a slot at the end
+   of the session footer; the eye and list buttons (they act on ink) join it in the footer only while the pen is on. Answers keep
+   their full width, so saved ink stays where it was drawn. */
+@media (max-width:600px){
+ body.mx-live #an-fab{flex-direction:row-reverse;align-items:center;bottom:calc(24px + env(safe-area-inset-bottom,0px));right:20px}
+ body.mx-live.an-left #an-fab{flex-direction:row}
+ body.mx-live #an-fab-on span{display:none}
+ body.mx-live.an-left #an-fab{right:auto;left:20px}
+ body.mx-live:not(.an-on) #an-fab-eye,body.mx-live:not(.an-on) #an-fab-list{display:none}
+ html body.mx-live:not(.an-left) .mx-act{padding-right:64px}
+ html body.mx-live.an-left .mx-act{padding-left:64px}
+ html body.mx-live.an-on:not(.an-left) .mx-act{padding-right:168px}
+ html body.mx-live.an-on.an-left .mx-act{padding-left:168px}
+}
