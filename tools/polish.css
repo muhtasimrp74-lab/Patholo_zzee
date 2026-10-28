@@ -137,3 +137,5 @@ html :is(a,button,summary,input,select,textarea,[tabindex],.card header,.qi-h,.q
 @media(prefers-contrast:more){:root{--line:currentColor;--line2:currentColor}html .card,html .qi,html .topic,html .row,html #qf,html #zz-tut{border-color:currentColor}#qscrim{background:rgba(0,0,0,.6)}}
 /* the Filters row sits right above the list: main's top padding plus the first heading's margin left ~65 px of dead space under it */
 .tf-row+main{padding-top:10px}.tf-row+main>:first-child{margin-top:14px}
+/* the personal line under the MCQs / Textbook headings sat in burgundy on the dark hero band (2.3:1); a light rose keeps the hue at ~8:1 */
+section.pb .zz-hi{color:#f0a6ba}

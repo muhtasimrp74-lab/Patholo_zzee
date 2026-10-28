@@ -314,6 +314,14 @@ class Browser(unittest.TestCase):
                 self.assertEqual(s[0], 'Hanken', f + ': the app font, not the browser default'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
                 self.assertEqual(sum(s[2]) < 200, scheme == 'dark', '%s (%s): background follows the colour scheme %r' % (f, scheme, s[2]))
             pg.close()
+    CR = r"""()=>{const h=[...document.querySelectorAll('section.pb p.zz-hi')].find(e=>e.offsetParent);if(!h)return null;const P=c=>c.match(/[\d.]+/g).map(Number),L=a=>{const f=v=>{v/=255;return v<=.03928?v/12.92:((v+.055)/1.055)**2.4};return .2126*f(a[0])+.7152*f(a[1])+.0722*f(a[2])};
+      const fg=L(P(getComputedStyle(h).color)),bg=L(P(getComputedStyle(h.closest('section.pb')).backgroundColor));return (Math.max(fg,bg)+.05)/(Math.min(fg,bg)+.05)}"""
+    def test_hero_greeting_line_is_readable_on_the_dark_band(self):
+        for scheme in ('light', 'dark'):
+            for h in ('#/mcqs', '#/textbook'):
+                pg = self.b.new_page(viewport={'width': 412, 'height': 860}, color_scheme=scheme); pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','Test')")
+                pg.goto(URL + h); pg.wait_for_selector('section.pb p.zz-hi'); cr = pg.evaluate(self.CR)
+                self.assertGreaterEqual(cr, 4.5, '%s %s: greeting line contrast %.2f:1 (WCAG AA needs 4.5)' % (scheme, h, cr)); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
