@@ -79,6 +79,18 @@ def upgrade(a, light=False):
     a = in_text(''.join(out), brit)                                                                              # 6
     return a + tail
 
+# textbook corrections found in review, as short find -> replace pairs per card (docs/answers_upgrades_log.md); each find must
+# match. Every replacement stays under 8 words, so this file never holds a verbatim 8-word run of gated text (leak checks).
+FIXES = {
+ '8': [('decompressed through the VSD', 'decompressed by shunting into the left ventricle'), ('the left ventricle.', 'the left ventricle and aorta.')],   # p490
+ '16': [(', and the valve damage is cumulative', '')],   # not in the textbook (p511)
+}
+def fix(n, a):
+    for f, r in FIXES.get(str(n), []):
+        if a.count(f) != 1: raise SystemExit('answers_upgrade: correction for q%s must match exactly once: %r' % (n, f))
+        a = a.replace(f, r)
+    return a
+
 def upgraded(a):
     """Full restructure, else the light upgrade (glosses, breaks, spelling), else the answer unchanged: never broken markup."""
     for lt in (False, True):
