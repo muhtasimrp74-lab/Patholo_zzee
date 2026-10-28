@@ -15,7 +15,11 @@ try:
     _AL = {_n(k): k for k in content.ANSWERS}
 except Exception:
     content = None
-for n, ans in json.load(open(os.path.join(H, 'answers_by_id.json'), encoding='utf8')).items():
+BY = json.load(open(os.path.join(H, 'answers_by_id.json'), encoding='utf8'))
+# tracked upgrades (tools/answers_upgrades.json, owner-approved to be public) replace the restored private answer for that card
+_UP = os.path.join(H, 'answers_upgrades.json')
+if os.path.exists(_UP): BY.update(json.load(open(_UP, encoding='utf8')))
+for n, ans in BY.items():
     m = re.search(r'(<article class="card" id="q%s">)(.*?<div class="ans">)(.*?)(</div></article>)' % n, h, re.S)
     if m:
         if content:

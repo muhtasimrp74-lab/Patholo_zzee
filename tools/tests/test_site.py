@@ -344,6 +344,21 @@ class Browser(unittest.TestCase):
             self.assertTrue(r['caps'] and all(c == 'uppercase/700' for c in r['caps']), '%d px: section labels in capitals and bold %r' % (w, r['caps'][:3]))
             pg.click('#qscrim', position={'x': w - 20, 'y': 40}); pg.wait_for_timeout(500)
             self.assertFalse(pg.evaluate("()=>document.body.classList.contains('qf-open')"), 'tapping the scrim still closes it'); pg.close()
+    def test_upgraded_answers_reach_their_cards_and_are_well_formed(self):   # tools/answers_upgrades.json (docs/answers_upgrades_log.md)
+        import html.parser
+        up = json.load(open(os.path.join(ROOT, 'tools', 'answers_upgrades.json'), encoding='utf8'))
+        full = open(os.path.join(ROOT, 'index.full.html'), encoding='utf8').read(); pub = open(os.path.join(ROOT, 'index.html'), encoding='utf8').read()
+        class Bal(html.parser.HTMLParser):
+            VOID = {'br', 'img', 'hr', 'wbr'}
+            def __init__(s): super().__init__(); s.st = []; s.bad = []
+            def handle_starttag(s, t, a): (t not in s.VOID) and s.st.append(t)
+            def handle_endtag(s, t): s.bad.append(t) if not s.st or s.st.pop() != t else None
+        for n, a in up.items():
+            m = re.search(r'<article class="card" id="q%s">.*?<div class="ans">(.*?)</div></article>' % n, full, re.S)
+            self.assertTrue(m, 'card q%s exists' % n); self.assertIn(a[:80], m.group(1), 'q%s shows the upgraded answer' % n)
+            p = Bal(); p.feed(a); self.assertEqual((p.st, p.bad), ([], []), 'q%s: balanced tags' % n)
+            t = re.sub(r'<[^>]+>', '', a); self.assertNotRegex(t, r'\[[^\]]{3,}\]', 'q%s: no inline [glosses]' % n); self.assertNotIn('<br', a)
+            self.assertNotIn(a[:80], pub, 'q%s: still gated (not in the public page)' % n)
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
