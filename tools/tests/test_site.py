@@ -391,6 +391,10 @@ class Browser(unittest.TestCase):
                         "const inFooter=!!(t&&t.closest('.sf')),spacer=t&&t.classList&&t.classList.contains('zz-pane')?getComputedStyle(t,'::after').backgroundColor:null;"
                         "return [inFooter||spacer===bg,(t&&(t.className||t.tagName)).toString().slice(0,20),spacer,bg]}")
         self.assertTrue(r[0], 'the bottom of the page is footer-coloured, not a light strip %r' % r[1:]); pg.close()
+    def test_home_has_no_progress_map(self):   # owner: the canvas map was confusing; per-chapter progress lives on the Chapters tab
+        pg = self.phone('#/'); pg.wait_for_timeout(800)
+        self.assertFalse(pg.evaluate("()=>!!document.querySelector('#v-home .nh-col, #v-home .nh-col-c canvas')"))
+        self.assertNotIn('Progress map', pg.inner_text('#v-home')); self.assertEqual(self.errs, []); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
