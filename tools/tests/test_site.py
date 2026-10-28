@@ -305,6 +305,15 @@ class Browser(unittest.TestCase):
         g = pg.evaluate("()=>{const r=document.querySelector('#v-mcqs .mx-goal'),b=[...r.querySelectorAll('button')],s=getComputedStyle(r.firstElementChild);return {rows:new Set(b.map(x=>Math.round(x.getBoundingClientRect().top))).size,minw:Math.min(...b.map(x=>x.getBoundingClientRect().width)),label:[s.textTransform,+s.fontWeight>=700]}}")
         self.assertEqual(g['rows'], 1, '10 / 20 / 30 / 50 share one line ("50" wrapped alone before)'); self.assertGreaterEqual(g['minw'], 44)
         self.assertEqual(g['label'], ['uppercase', True], 'the GOAL label is in capitals and bold'); pg.close()
+    def test_legal_pages_use_the_app_look_in_light_and_dark(self):
+        for scheme in ('light', 'dark'):
+            pg = self.b.new_page(viewport={'width': 412, 'height': 860}, color_scheme=scheme)
+            for f in ('privacy', 'terms', 'refund'):
+                pg.goto('file://' + os.path.join(ROOT, f + '.html'))
+                s = pg.evaluate("()=>{const b=getComputedStyle(document.body),a=getComputedStyle(document.querySelector('a'));return [b.fontFamily.split(',')[0].trim(),a.color,b.backgroundColor.match(/\\d+/g).slice(0,3).map(Number)]}")
+                self.assertEqual(s[0], 'Hanken', f + ': the app font, not the browser default'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
+                self.assertEqual(sum(s[2]) < 200, scheme == 'dark', '%s (%s): background follows the colour scheme %r' % (f, scheme, s[2]))
+            pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
