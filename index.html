@@ -4912,8 +4912,8 @@ window.zzScroller=()=>{if(T&&de.classList.contains('zz-pg')){const v=T.querySele
 function make(){
  if(T)return;T=document.createElement('div');T.id='zz-pager';
  const f=V(0)||document.querySelector('.view');f.parentNode.insertBefore(T,f);
- T.addEventListener('scroll',live,{passive:true});if('onscrollend' in T)T.addEventListener('scrollend',settle);
- ['pointerdown','touchstart','wheel'].forEach(e=>T.addEventListener(e,()=>{prog=false;touching=e!=='wheel';see([act-1,act+1])},{passive:true}));
+ T.addEventListener('scroll',liveSoon,{passive:true});if('onscrollend' in T)T.addEventListener('scrollend',settle);
+ ['pointerdown','touchstart','wheel'].forEach(e=>T.addEventListener(e,()=>{prog=false;touching=e!=='wheel';geo=null;see([act-1,act+1])},{passive:true}));
  ['pointerup','touchend','pointercancel'].forEach(e=>T.addEventListener(e,()=>{touching=false;setTimeout(rest,260)},{passive:true}));
 }
 function adopt(){for(let i=0;i<6;i++){const v=V(i);if(!v||v.parentNode===T)continue;let nx=null;for(let j=i+1;j<6;j++){const w=V(j);if(w&&w.parentNode===T){nx=w;break}}T.insertBefore(v,nx);v.classList.add('zz-pane')}}
@@ -4941,7 +4941,7 @@ function sync(){
  P.forEach(p=>{if(p===v){p.removeAttribute('inert');p.removeAttribute('aria-hidden')}else{p.setAttribute('inert','');p.setAttribute('aria-hidden','true')}});
  last[TABS[i]]=location.hash||'#/';
  const x=k*T.clientWidth;
- if(Math.abs(T.scrollLeft-x)>2){prog=true;see([act,k]);T.scrollTo({left:x,behavior:quick()||act<0||Math.abs(k-act)>1?'instant':'smooth'})   /* only neighbours slide; farther tabs jump */}
+ if(Math.abs(T.scrollLeft-x)>2){prog=true;geo=null;see([act,k]);T.scrollTo({left:x,behavior:quick()||act<0||Math.abs(k-act)>1?'instant':'smooth'})   /* only neighbours slide; farther tabs jump */}
  act=k;rest();
  if(first){first=false;const p=location.hash.replace(/^#\/?/,'').split('/'),t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');if(t&&v.contains(t))t.scrollIntoView({behavior:'instant',block:'start'})}
  requestAnimationFrame(bar);
@@ -4952,15 +4952,23 @@ const pillTo=k=>{const n=document.getElementById('bnav'),P=T?[...T.children]:[],
  const nr=n.getBoundingClientRect(),r=a.getBoundingClientRect();p.style.transition='';p.style.width=r.width+'px';p.style.transform='translate('+Math.round(r.left-nr.left)+'px,'+Math.round(r.top-nr.top)+'px)'};   /* settle on the tab, unstretched */
 const rest=()=>{if(T&&Math.abs(T.scrollLeft-act*T.clientWidth)<2){see([]);pillTo(act)}};
 const anchor=v=>{const i=tabOf(v);return i<0?null:document.querySelector('#bnav a[href="'+HREF[i]+'"]')};
+/* smooth swipes: tab geometry relative to the bar is measured once per gesture (and after a resize), so the per-frame update below
+   reads no layout; scroll events are folded into one update per animation frame */
+let geo=null,liveQ=0;
+const measure=()=>{const n=document.getElementById('bnav');if(!n||!T||getComputedStyle(n).display==='none'){geo={on:false};return geo}
+ const nr=n.getBoundingClientRect(),P=[...T.children];geo={on:true,n,p:n.querySelector('.fx-pill'),links:[...n.querySelectorAll('a')],a:P.map(v=>{const a=anchor(v);if(!a)return null;const r=a.getBoundingClientRect();return {el:a,x:r.left-nr.left,y:r.top-nr.top,w:r.width}})};return geo};
+addEventListener('resize',()=>{geo=null},{passive:true});
+const liveSoon=()=>{if(!liveQ)liveQ=requestAnimationFrame(()=>{liveQ=0;live()})};
 /* the bottom-bar pill (fx.js) and highlight follow the finger */
 function live(){
  if(!de.classList.contains('zz-pg'))return;
- const n=document.getElementById('bnav'),P=[...T.children],w=T.clientWidth||1,f=Math.max(0,Math.min(P.length-1,T.scrollLeft/w));see([Math.floor(f),Math.ceil(f)]);
- if(n&&getComputedStyle(n).display!=='none'){   /* the bar is position:fixed, so offsetParent is always null: test display */const near=anchor(P[Math.round(f)]);n.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a===near));
-  const p=n.querySelector('.fx-pill'),i0=Math.floor(f),a0=anchor(P[i0]),a1=anchor(P[Math.min(P.length-1,i0+1)]);
-  if(p&&a0&&a1){const u=f-i0,nr=n.getBoundingClientRect(),r0=a0.getBoundingClientRect(),r1=a1.getBoundingClientRect();
-   p.style.transition='none';p.style.width=(r0.width+(r1.width-r0.width)*u)+'px';const sq=Math.sin(Math.PI*u);   /* liquid: the pill stretches between tabs and settles on one */
-   p.style.transform='translate('+Math.round(r0.left+(r1.left-r0.left)*u-nr.left)+'px,'+Math.round(r0.top-nr.top)+'px) scale('+(1+.22*sq).toFixed(3)+','+(1-.1*sq).toFixed(3)+')';
+ const P=[...T.children],w=T.clientWidth||1,sl=T.scrollLeft,f=Math.max(0,Math.min(P.length-1,sl/w)),g=geo||measure();   /* reads first */
+ see([Math.floor(f),Math.ceil(f)]);
+ if(g.on){const i0=Math.floor(f),near=g.a[Math.round(f)];g.links.forEach(a=>a.classList.toggle('on',!!near&&a===near.el));
+  const p=g.p,r0=g.a[i0],r1=g.a[Math.min(P.length-1,i0+1)];
+  if(p&&r0&&r1){const u=f-i0;
+   p.style.transition='none';p.style.width=(r0.w+(r1.w-r0.w)*u)+'px';const sq=Math.sin(Math.PI*u);   /* liquid: the pill stretches between tabs and settles on one */
+   p.style.transform='translate('+Math.round(r0.x+(r1.x-r0.x)*u)+'px,'+Math.round(r0.y)+'px) scale('+(1+.22*sq).toFixed(3)+','+(1-.1*sq).toFixed(3)+')';
    clearTimeout(pt);pt=setTimeout(()=>{p.style.transition=''},180)}}
  clearTimeout(end);end=setTimeout(settle,160);
  if(!touching&&Math.abs(T.scrollLeft-act*w)<2){prog=false;rest()}   /* landed on its pane: neighbours hide again at once */

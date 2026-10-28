@@ -322,6 +322,17 @@ class Browser(unittest.TestCase):
                 pg = self.b.new_page(viewport={'width': 412, 'height': 860}, color_scheme=scheme); pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','Test')")
                 pg.goto(URL + h); pg.wait_for_selector('section.pb p.zz-hi'); cr = pg.evaluate(self.CR)
                 self.assertGreaterEqual(cr, 4.5, '%s %s: greeting line contrast %.2f:1 (WCAG AA needs 4.5)' % (scheme, h, cr)); pg.close()
+    SWIPE = """async()=>{const T=document.getElementById('zz-pager');let c=0;const o=Element.prototype.getBoundingClientRect;Element.prototype.getBoundingClientRect=function(){c++;return o.call(this)};
+        T.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true}));const w=T.clientWidth;
+        for(let i=1;i<=24;i++){for(let k=0;k<3;k++){T.scrollLeft=w*(i*3+k)/150;T.dispatchEvent(new Event('scroll'))}await new Promise(r=>requestAnimationFrame(()=>r()))}
+        Element.prototype.getBoundingClientRect=o;return c}"""
+    def test_swiping_between_tabs_does_not_force_layout_every_frame(self):
+        # 24 frames with 3 scroll events each: the tab pill used to measure the bar on every event (216 layout reads, a forced
+        # synchronous layout each time); now one measurement per gesture and one update per frame
+        pg = self.b.new_page(viewport={'width': 412, 'height': 860}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_function("()=>document.documentElement.classList.contains('zz-pg')"); pg.wait_for_timeout(800)
+        n = pg.evaluate(self.SWIPE); self.assertLessEqual(n, 12, 'layout reads during a 24-frame swipe: %d' % n); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
