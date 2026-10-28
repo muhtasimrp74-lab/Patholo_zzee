@@ -15,5 +15,5 @@ three sentences in the card's chapters, words and numbers) and lists only the fl
 sentence. First run: 219 full upgrades, 5 light; 2,045 sentences verified, 399 partial, 96 unverified. Flags are a review queue,
 not errors: many are standard exam facts from other sources.
 
-**Hand corrections found while piloting (to re-apply after review):** Tetralogy of Fallot, how the right ventricle is decompressed
+**Hand corrections (applied by FIXES in tools/answers_upgrade.py):** Tetralogy of Fallot, how the right ventricle is decompressed
 (textbook p490 wording); complications of rheumatic fever, the claim about cumulative valve damage is not in the textbook (p511).

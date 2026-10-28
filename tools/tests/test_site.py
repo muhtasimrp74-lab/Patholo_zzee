@@ -359,6 +359,9 @@ class Browser(unittest.TestCase):
             if not (pm and len(re.sub(r'<[^>]+>|\s', '', pm.group(1))) > 40):   # paid card: the upgrade stays gated
                 self.assertNotIn(new[:80], pub, 'q%s: paid answer stays gated' % n)
         self.assertGreaterEqual(shown, 200, 'upgraded answers reach their cards (%d of %d)' % (shown, len(by)))
+        for n, fixes in U.FIXES.items():   # textbook corrections reach their cards
+            ans = card(full, n).group(1)
+            for f, r in fixes: self.assertIn(r, ans, 'q%s corrected' % n); self.assertNotIn(f, ans)
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

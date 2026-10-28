@@ -163,11 +163,11 @@
    "topic": "01"
   },
   "q-02": {
-   "bytes": 61192,
+   "bytes": 61186,
    "free": false,
    "items": 42,
    "kind": "q",
-   "sha256": "398bf6f823544c9aa3aba4bf705632ebdd3d51d58582ca26275a464b9681b1fb",
+   "sha256": "9200eb5ef42ef4c9ee89c177b2a74131e94ef68a9602576c29205e36650b221e",
    "title": "02",
    "topic": "02"
   },
