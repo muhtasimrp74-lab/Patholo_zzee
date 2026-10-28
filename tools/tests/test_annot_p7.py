@@ -203,7 +203,9 @@ class ProTools(unittest.TestCase):
             self.assertGreater(tint, 50, '%s: the highlight colour shows behind the text' % theme); self.assertEqual(self.errs, [])
 
     # ---------- MCQ sessions on phones: ink buttons live in the footer, not over the answers ----------
-    COVER = """()=>{const f=document.getElementById('an-fab').getBoundingClientRect();return [...document.querySelectorAll('#v-mcqs button,#v-mcqs a')].filter(e=>{if(!e.offsetParent)return false;const a=e.getBoundingClientRect();return a.right>f.left&&a.left<f.right&&a.bottom>f.top&&a.top<f.bottom}).map(e=>e.textContent.trim().slice(0,16))}"""
+    # controls the ink buttons cover ABOVE the session footer (content may pass under the fixed footer bar itself on any page,
+    # and scrolls into view; a random Quick 10 can put True / False buttons there)
+    COVER = """()=>{const f=document.getElementById('an-fab').getBoundingClientRect(),ft=document.querySelector('.mx-act').getBoundingClientRect().top;return [...document.querySelectorAll('#v-mcqs button,#v-mcqs a')].filter(e=>{if(!e.offsetParent||e.closest('.mx-act'))return false;const a=e.getBoundingClientRect(),t=Math.max(a.top,f.top),b=Math.min(a.bottom,f.bottom,ft);return a.right>f.left&&a.left<f.right&&b>t}).map(e=>e.textContent.trim().slice(0,16))}"""
     def test_mcq_ink_buttons_never_cover_answers_on_phones(self):
         pg = self.b.new_page(viewport={'width': 412, 'height': 860}, has_touch=True, is_mobile=True); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
