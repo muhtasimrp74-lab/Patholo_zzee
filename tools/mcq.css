@@ -278,3 +278,5 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
  .mx-run>.mx-pal .mx-pal-h .mx-ib,.mx-run .mx-top [data-a=pal],.mx-run>.mx-strip{display:none}
  .mx-act{padding-right:calc(16px + 336px)}
 }
+/* daily-goal chips: 4 px too wide for the Today card on tablets, so "50" wrapped onto its own line; 44 px keeps the touch target */
+html body #v-mcqs .mx-goal{gap:4px}html body #v-mcqs .mx-goal button{min-width:44px;width:44px;padding:0;box-sizing:border-box}html body #v-mcqs .mx-goal>span{text-transform:uppercase!important;font-weight:700;letter-spacing:.04em}

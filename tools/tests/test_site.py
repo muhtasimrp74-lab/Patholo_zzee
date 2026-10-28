@@ -299,6 +299,12 @@ class Browser(unittest.TestCase):
         pg = self.phone('#/01'); pg.wait_for_timeout(600)
         gap = pg.evaluate("()=>{const f=[...document.querySelectorAll('.tf-row')].find(e=>e.getBoundingClientRect().height>0),h=f.nextElementSibling.querySelector('h2,h3');return h.getBoundingClientRect().top-f.getBoundingClientRect().bottom}")
         self.assertTrue(8 <= gap <= 32, 'gap under the Filters row: %.0f px (was about 65)' % gap); pg.close()
+    def test_daily_goal_chips_fit_on_one_line_on_tablets(self):
+        pg = self.b.new_page(viewport={'width': 768, 'height': 1024}); pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()))")
+        pg.goto(URL + '#/mcqs'); pg.wait_for_selector('#v-mcqs .mx-goal button'); pg.wait_for_timeout(400)
+        g = pg.evaluate("()=>{const r=document.querySelector('#v-mcqs .mx-goal'),b=[...r.querySelectorAll('button')],s=getComputedStyle(r.firstElementChild);return {rows:new Set(b.map(x=>Math.round(x.getBoundingClientRect().top))).size,minw:Math.min(...b.map(x=>x.getBoundingClientRect().width)),label:[s.textTransform,+s.fontWeight>=700]}}")
+        self.assertEqual(g['rows'], 1, '10 / 20 / 30 / 50 share one line ("50" wrapped alone before)'); self.assertGreaterEqual(g['minw'], 44)
+        self.assertEqual(g['label'], ['uppercase', True], 'the GOAL label is in capitals and bold'); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
