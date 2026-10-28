@@ -110,8 +110,7 @@ function render(){
  else h+='<h2>Every question has been read.</h2><div class="nh-b"><a class="nh-go" href="#/practice">Rapid Recall</a><a href="#/questions">Browse all questions</a></div>';}
  h+='</div><div class="nh-prog"><p class="nh-k">OVERALL PROGRESS</p><div class="nh-pc">'+pc+'<small>%</small></div>'+bar(pc)+'<p class="nh-mu">'+read+' / '+tot+' questions read</p>';
  h+='<div class="nh-split"><div><span>Viva</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'</div><div><span>Written</span><b>'+wr+'<small> / '+WQ.length+'</small></b>'+bar(pct(wr,WQ.length))+'</div></div></div></section>';
- /* progress map: one cell per question, drawn by fxgl.js (learned stained, bookmarked ringed in gold) */
- h+='<section class="nh-col" aria-labelledby="nh-col-h"><div class="nh-col-hd"><h3 class="nh-h" id="nh-col-h">Progress map</h3><span class="nh-col-n"></span></div><p class="nh-mu">Every question is a cell. Learned questions are stained; bookmarked ones are ringed in gold. Tap a cell to open it.</p><div class="nh-col-c"><canvas></canvas><div class="nh-col-tip" role="status" hidden></div></div></section>';
+ /* (the progress map that stood here was removed: per-chapter progress lives on the Chapters tab) */
 
  /* ---------- today's plan + exam countdown ---------- */
  const plan:any[]=[];
