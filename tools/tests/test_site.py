@@ -362,6 +362,16 @@ class Browser(unittest.TestCase):
         for n, fixes in U.FIXES.items():   # textbook corrections reach their cards
             ans = card(full, n).group(1)
             for f, r in fixes: self.assertIn(r, ans, 'q%s corrected' % n); self.assertNotIn(f, ans)
+    def test_cards_share_the_mcq_look_across_tabs(self):   # owner: designs consistent across the app, like the MCQ tab
+        for theme in ('light', 'dark'):
+            pg = self.phone('#/'); pg.evaluate("t=>{document.documentElement.dataset.theme=t}", theme)
+            for h in ('#/mcqs', '#/qa', '#/menu', '#/'): pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)   # tabs render on first visit
+            r = pg.evaluate("""()=>{const g=s=>{const e=document.querySelector(s);if(!e)return null;const c=getComputedStyle(e);return [c.borderTopLeftRadius,c.boxShadow]};
+                return {mcq:g('#v-mcqs .mx-acc'),qa:g('#v-qa .topic'),hero:g('#v-qa .qa-hero'),home:g('#v-home .nh-prog'),menu:g('#v-menu .zm-list')}}""")
+            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '28px', '%s: MCQ card %r' % (theme, ref))
+            for k, v in r.items():
+                self.assertEqual(v, ref, '%s: the %s card matches the MCQ card (corners and shadow)' % (theme, k))
+            pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
