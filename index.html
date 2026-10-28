@@ -3008,12 +3008,25 @@ html.fx-min:not(.zz-flat) body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-back
 /* cards keep their 1px border width (layout and annotation ink stay exactly where they are); only the hairline colour goes */
 html body :is(article.card,a.topic,.tbtile){border-color:transparent!important}
 html body :is(.eyebrow,.stats span,.pager a small,#qf h4,.nh-eb,.nh-k,.nh-split span,.nh-dt,.nh-tk,.qa-k,#zz-tut .tt-n){font-weight:700!important}
-/* auto-hide bars (autohide.js). The individual translate property keeps each bar's own transform and positioning intact. */
+/* bars that follow the scroll (autohide.js): --zz-f runs from 0 (shown) to 1 (hidden). The individual translate property keeps each
+   bar's own transform and positioning. While the finger moves there is no transition (the bars track it exactly); .zz-snap eases
+   the final settle. */
 nav.nav{transition-property:box-shadow,translate}
-html.zz-hide nav.nav,html.zz-hide #tools,body.qf-open #tools{translate:0 calc(-100% - 16px)}
-html.zz-hide #bnav,body.qf-open #bnav{translate:0 calc(100% + 24px + env(safe-area-inset-bottom,0px))}
-html.zz-hide .bar{top:0}
-@media (prefers-reduced-motion:reduce){nav.nav,#tools,#bnav{transition:none}}
+html nav.nav,html #tools{translate:0 calc(var(--zz-f,0) * (-100% - 16px))}
+html #bnav{translate:0 calc(var(--zz-f,0) * (100% + 24px + env(safe-area-inset-bottom,0px)))}
+body.qf-open #tools{translate:0 calc(-100% - 16px)!important}
+body.qf-open #bnav{translate:0 calc(100% + 24px + env(safe-area-inset-bottom,0px))!important}
+html .bar{top:calc(60px * (1 - var(--zz-f,0)))}
+html.zz-follow :is(nav.nav,#tools,#bnav,#an-fab,.bar){transition:none!important}
+html.zz-snap :is(nav.nav,#tools,#bnav,#an-fab){transition:translate .3s cubic-bezier(.2,.8,.2,1)!important}
+@media (prefers-reduced-motion:reduce){html.zz-snap :is(nav.nav,#tools,#bnav,#an-fab){transition:none!important}}
+/* while the tab pill follows a swipe it must not ease (it lagged behind the finger): beats the !important transition below */
+html body #bnav.zz-drag .fx-pill{transition:none!important}
+/* the footer runs to the bottom of the screen: no light strip under it (the tab bar slides away when scrolling down) */
+html body:has(.sf){padding-bottom:0!important}
+/* swipe tabs keep the bottom-bar spacer (the footer must end above the bar) but paint it in the footer colour: no light strip */
+html .zz-pane:has(> .sf:last-child)::after{background:#12080b}
+:not(.zz-pane) > .sf::after{content:"";display:block;height:calc(50px + env(safe-area-inset-bottom,0px))}
 /* active tab: the glass pill is the indicator, so no second (square-cornered) box under it; the plain indicator matches the capsule bar */
 #bnav a.on,#bnav a[aria-current]{border-radius:999px}
 html.zz-lgon body #bnav a.on,html.zz-lgon body #bnav a[aria-current]{box-shadow:none;background:none}
@@ -4937,7 +4950,7 @@ function make(){
  if(T)return;T=document.createElement('div');T.id='zz-pager';
  const f=V(0)||document.querySelector('.view');f.parentNode.insertBefore(T,f);
  T.addEventListener('scroll',liveSoon,{passive:true});if('onscrollend' in T)T.addEventListener('scrollend',settle);
- ['pointerdown','touchstart','wheel'].forEach(e=>T.addEventListener(e,()=>{prog=false;touching=e!=='wheel';geo=null;see([act-1,act+1])},{passive:true}));
+ ['pointerdown','touchstart','wheel'].forEach(e=>T.addEventListener(e,()=>{prog=false;touching=e!=='wheel';geo=null;window.zzSlideT=performance.now();see([act-1,act+1])},{passive:true}));
  ['pointerup','touchend','pointercancel'].forEach(e=>T.addEventListener(e,()=>{touching=false;setTimeout(rest,260)},{passive:true}));
 }
 function adopt(){for(let i=0;i<6;i++){const v=V(i);if(!v||v.parentNode===T)continue;let nx=null;for(let j=i+1;j<6;j++){const w=V(j);if(w&&w.parentNode===T){nx=w;break}}T.insertBefore(v,nx);v.classList.add('zz-pane')}}
@@ -4965,7 +4978,7 @@ function sync(){
  P.forEach(p=>{if(p===v){p.removeAttribute('inert');p.removeAttribute('aria-hidden')}else{p.setAttribute('inert','');p.setAttribute('aria-hidden','true')}});
  last[TABS[i]]=location.hash||'#/';
  const x=k*T.clientWidth;
- if(Math.abs(T.scrollLeft-x)>2){prog=true;geo=null;see([act,k]);T.scrollTo({left:x,behavior:quick()||act<0||Math.abs(k-act)>1?'instant':'smooth'})   /* only neighbours slide; farther tabs jump */}
+ if(Math.abs(T.scrollLeft-x)>2){prog=true;geo=null;window.zzSlideT=performance.now();see([act,k]);T.scrollTo({left:x,behavior:quick()||act<0||Math.abs(k-act)>1?'instant':'smooth'})   /* only neighbours slide; farther tabs jump */}
  act=k;rest();
  if(first){first=false;const p=location.hash.replace(/^#\/?/,'').split('/'),t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');if(t&&v.contains(t))t.scrollIntoView({behavior:'instant',block:'start'})}
  requestAnimationFrame(bar);
@@ -4993,7 +5006,7 @@ function live(){
   if(p&&r0&&r1){const u=f-i0;
    p.style.transition='none';p.style.width=(r0.w+(r1.w-r0.w)*u)+'px';const sq=Math.sin(Math.PI*u);   /* liquid: the pill stretches between tabs and settles on one */
    p.style.transform='translate('+Math.round(r0.x+(r1.x-r0.x)*u)+'px,'+Math.round(r0.y)+'px) scale('+(1+.22*sq).toFixed(3)+','+(1-.1*sq).toFixed(3)+')';
-   clearTimeout(pt);pt=setTimeout(()=>{p.style.transition=''},180)}}
+   g.n.classList.add('zz-drag');clearTimeout(pt);pt=setTimeout(()=>{p.style.transition='';g.n.classList.remove('zz-drag')},180)}}
  clearTimeout(end);end=setTimeout(settle,160);
  if(!touching&&Math.abs(T.scrollLeft-act*w)<2){prog=false;rest()}   /* landed on its pane: neighbours hide again at once */
 }
@@ -5253,7 +5266,6 @@ function updRings(){document.querySelectorAll('.ring').forEach(r=>{const v=parse
 			}
 			h += "</div><div class=\"nh-prog\"><p class=\"nh-k\">OVERALL PROGRESS</p><div class=\"nh-pc\">" + pc + "<small>%</small></div>" + bar(pc) + "<p class=\"nh-mu\">" + read + " / " + tot + " questions read</p>";
 			h += "<div class=\"nh-split\"><div><span>Viva</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "</div><div><span>Written</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "</div></div></div></section>";
-			h += "<section class=\"nh-col\" aria-labelledby=\"nh-col-h\"><div class=\"nh-col-hd\"><h3 class=\"nh-h\" id=\"nh-col-h\">Progress map</h3><span class=\"nh-col-n\"></span></div><p class=\"nh-mu\">Every question is a cell. Learned questions are stained; bookmarked ones are ringed in gold. Tap a cell to open it.</p><div class=\"nh-col-c\"><canvas></canvas><div class=\"nh-col-tip\" role=\"status\" hidden></div></div></section>";
 			const plan = [];
 			if (due > 0) plan.push([
 				"d",
@@ -5503,7 +5515,8 @@ function build(id,box){
  sp.acts.forEach(x=>{const b=document.createElement('button');b.type='button';b.className='pb-btn'+(x[2]?' pb-p':'');b.dataset.l=typeof x[0]==='function'?'1':'';b.textContent=typeof x[0]==='function'?x[0]():x[0];b.addEventListener('click',x[1]);a.appendChild(b)});
  const c=document.createElement('p');c.className='pb-chips';
  if(sp.acts.length)box.appendChild(a);box.appendChild(c);
- const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean)}catch(e){}c.textContent='';s.forEach(t=>{const i=document.createElement('span');i.textContent=t;c.appendChild(i)});c.hidden=!s.length;
+ const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean)}catch(e){}const key=s.join('\u0001');   /* rebuild only when the stats changed (a swipe re-ran this and shifted the banner) */
+   if(c.dataset.k!==key){c.dataset.k=key;c.textContent='';s.forEach(t=>{const i=document.createElement('span');i.textContent=t;c.appendChild(i)});c.hidden=!s.length}
   sp.acts.forEach((x,i)=>{if(typeof x[0]==='function')a.children[i].textContent=x[0]()})};
  fill();[300,1200,3000].forEach(t=>setTimeout(fill,t));addEventListener('hashchange',()=>setTimeout(fill,250));
 }
@@ -5833,7 +5846,7 @@ document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('#bn
 /* --- banner pictures develop the first time they are seen this session (stain + focus verbs) --- */
 const seen=new Set();
 function develop(){
- if(level()!=='full')return;
+ if(level()!=='full'||window.zzSlideT&&performance.now()-zzSlideT<4000)return;   /* already on screen during the swipe: no re-develop */
  const img=$('.view:not([hidden]) .pb-pic img')||$('.view:not([hidden]) .nh-bn-pic img');if(!img)return;   /* the Home hero develops too: the focus pull of C17 */const k=img.getAttribute('src');if(seen.has(k))return;seen.add(k);
  const go=()=>{img.classList.remove('fx-dev');void img.offsetWidth;img.classList.add('fx-dev')};
  if(img.complete)go();else img.addEventListener('load',go,{once:true});
@@ -6611,7 +6624,7 @@ new MutationObserver(arm).observe(document.body,{attributes:true,attributeFilter
    Hand notes: margin notes (.an-mn) and [data-hand] text write themselves in Caveat with an animated stroke, then settle. */
 (function(){try{
 const full=()=>window.zzFx&&zzFx.level()==='full'&&!document.body.classList.contains('an-on'),seen=new WeakSet();
-function bleed(){if(!full())return;const v=document.querySelector('.view:not([hidden])'),h=v&&[...v.querySelectorAll('h1,h2')].find(x=>!x.closest('.ans')&&x.offsetParent);
+function bleed(){if(!full()||window.zzSlideT&&performance.now()-zzSlideT<4000)return;   /* a tab that arrives by swipe was already on screen: no entrance effect (it read as a refresh) */const v=document.querySelector('.view:not([hidden])'),h=v&&[...v.querySelectorAll('h1,h2')].find(x=>!x.closest('.ans')&&x.offsetParent);
  if(!h||seen.has(h)||!h.animate)return;seen.add(h);
  h.animate([{filter:'blur(5px)',opacity:.15,letterSpacing:'.05em',textShadow:'0 0 14px var(--rosy)'},{filter:'blur(1px)',opacity:.85,offset:.6},{filter:'blur(0)',opacity:1,letterSpacing:'normal',textShadow:'0 0 0 transparent'}],{duration:800,easing:'cubic-bezier(.2,.7,.2,1)'})}
 const NS='http://www.w3.org/2000/svg';
@@ -6713,18 +6726,22 @@ RT.addEventListener&&RT.addEventListener('change',()=>soon(0));
 setTimeout(()=>{watch();run()},700);
 window.zzLiquid={run,on};
 }catch(e){}})();
-/* auto-hide bars (like Facebook): scrolling down slides the top bar, its tools and the bottom tabs away; any scroll up brings them back.
-   One capture-phase listener covers the document and the swipe pager's panes. Bars always show near the top of a page, on a tab
-   change and when keyboard focus enters them; the filter drawer hides them (nothing may cover its button). Vertical scroll only. */
-(()=>{const de=document.documentElement,last=new WeakMap();let acc=0,dir=0;
- const set=h=>{if(de.classList.contains('zz-hide')!==h)de.classList.toggle('zz-hide',h)};
+/* bars that follow the scroll (like Facebook): scrolling down slides the top bar, its tools, the bottom tabs and the ink buttons
+   away in step with the finger; scrolling up brings them back the same way; when scrolling stops they settle fully open or closed.
+   One capture-phase listener covers the document and the swipe pager's panes; vertical scroll only. Bars always show near the top
+   of a page, on a tab change and when keyboard focus enters them; the filter drawer hides them. State: --zz-f (0 shown .. 1 hidden)
+   on <html>, plus .zz-hide when fully hidden. */
+(()=>{const de=document.documentElement,last=new WeakMap(),H=72;let f=0,snapT=0;
+ const put=v=>{f=Math.max(0,Math.min(1,v));de.style.setProperty('--zz-f',f.toFixed(3));const h=f>=1;if(de.classList.contains('zz-hide')!==h)de.classList.toggle('zz-hide',h)};
+ const settle=v=>{clearTimeout(snapT);de.classList.remove('zz-follow');de.classList.add('zz-snap');put(v);setTimeout(()=>de.classList.remove('zz-snap'),320)};
  document.addEventListener('scroll',e=>{const el=e.target===document?document.scrollingElement||de:e.target;if(!(el instanceof Element))return;
   const v=el.scrollTop,p=last.get(el);last.set(el,v);if(p==null||v===p||el.scrollHeight<=el.clientHeight+4)return;
   if(el.closest&&el.closest('#qf,.an-pop,dialog,[role=dialog]'))return;
-  if(v<56){acc=0;set(false);return}const d=v-p,s=Math.sign(d);if(s!==dir){dir=s;acc=0}acc+=d;
-  if(acc>24)set(true);else if(acc<-12)set(false)},{capture:true,passive:true});
- addEventListener('hashchange',()=>{set(false);if(document.body.classList.contains('qf-open')){const s=document.getElementById('qscrim');s&&s.click()}});
- document.addEventListener('focusin',e=>{if(e.target.closest&&e.target.closest('nav.nav,#tools,#bnav'))set(false)})})();
+  if(v<56){if(f)settle(0);return}
+  de.classList.remove('zz-snap');de.classList.add('zz-follow');put(f+(v-p)/H);
+  clearTimeout(snapT);snapT=setTimeout(()=>settle(f>.5?1:0),140)},{capture:true,passive:true});
+ addEventListener('hashchange',()=>{settle(0);if(document.body.classList.contains('qf-open')){const s=document.getElementById('qscrim');s&&s.click()}});
+ document.addEventListener('focusin',e=>{if(e.target.closest&&e.target.closest('nav.nav,#tools,#bnav'))settle(0)})})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
 const r=document.getElementById('res'),g=document.getElementById('gq');

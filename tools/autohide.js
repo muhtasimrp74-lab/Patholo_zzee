@@ -1,12 +1,16 @@
-/* auto-hide bars (like Facebook): scrolling down slides the top bar, its tools and the bottom tabs away; any scroll up brings them back.
-   One capture-phase listener covers the document and the swipe pager's panes. Bars always show near the top of a page, on a tab
-   change and when keyboard focus enters them; the filter drawer hides them (nothing may cover its button). Vertical scroll only. */
-(()=>{const de=document.documentElement,last=new WeakMap();let acc=0,dir=0;
- const set=h=>{if(de.classList.contains('zz-hide')!==h)de.classList.toggle('zz-hide',h)};
+/* bars that follow the scroll (like Facebook): scrolling down slides the top bar, its tools, the bottom tabs and the ink buttons
+   away in step with the finger; scrolling up brings them back the same way; when scrolling stops they settle fully open or closed.
+   One capture-phase listener covers the document and the swipe pager's panes; vertical scroll only. Bars always show near the top
+   of a page, on a tab change and when keyboard focus enters them; the filter drawer hides them. State: --zz-f (0 shown .. 1 hidden)
+   on <html>, plus .zz-hide when fully hidden. */
+(()=>{const de=document.documentElement,last=new WeakMap(),H=72;let f=0,snapT=0;
+ const put=v=>{f=Math.max(0,Math.min(1,v));de.style.setProperty('--zz-f',f.toFixed(3));const h=f>=1;if(de.classList.contains('zz-hide')!==h)de.classList.toggle('zz-hide',h)};
+ const settle=v=>{clearTimeout(snapT);de.classList.remove('zz-follow');de.classList.add('zz-snap');put(v);setTimeout(()=>de.classList.remove('zz-snap'),320)};
  document.addEventListener('scroll',e=>{const el=e.target===document?document.scrollingElement||de:e.target;if(!(el instanceof Element))return;
   const v=el.scrollTop,p=last.get(el);last.set(el,v);if(p==null||v===p||el.scrollHeight<=el.clientHeight+4)return;
   if(el.closest&&el.closest('#qf,.an-pop,dialog,[role=dialog]'))return;
-  if(v<56){acc=0;set(false);return}const d=v-p,s=Math.sign(d);if(s!==dir){dir=s;acc=0}acc+=d;
-  if(acc>24)set(true);else if(acc<-12)set(false)},{capture:true,passive:true});
- addEventListener('hashchange',()=>{set(false);if(document.body.classList.contains('qf-open')){const s=document.getElementById('qscrim');s&&s.click()}});
- document.addEventListener('focusin',e=>{if(e.target.closest&&e.target.closest('nav.nav,#tools,#bnav'))set(false)})})();
+  if(v<56){if(f)settle(0);return}
+  de.classList.remove('zz-snap');de.classList.add('zz-follow');put(f+(v-p)/H);
+  clearTimeout(snapT);snapT=setTimeout(()=>settle(f>.5?1:0),140)},{capture:true,passive:true});
+ addEventListener('hashchange',()=>{settle(0);if(document.body.classList.contains('qf-open')){const s=document.getElementById('qscrim');s&&s.click()}});
+ document.addEventListener('focusin',e=>{if(e.target.closest&&e.target.closest('nav.nav,#tools,#bnav'))settle(0)})})();

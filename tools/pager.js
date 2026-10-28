@@ -16,7 +16,7 @@ function make(){
  if(T)return;T=document.createElement('div');T.id='zz-pager';
  const f=V(0)||document.querySelector('.view');f.parentNode.insertBefore(T,f);
  T.addEventListener('scroll',liveSoon,{passive:true});if('onscrollend' in T)T.addEventListener('scrollend',settle);
- ['pointerdown','touchstart','wheel'].forEach(e=>T.addEventListener(e,()=>{prog=false;touching=e!=='wheel';geo=null;see([act-1,act+1])},{passive:true}));
+ ['pointerdown','touchstart','wheel'].forEach(e=>T.addEventListener(e,()=>{prog=false;touching=e!=='wheel';geo=null;window.zzSlideT=performance.now();see([act-1,act+1])},{passive:true}));
  ['pointerup','touchend','pointercancel'].forEach(e=>T.addEventListener(e,()=>{touching=false;setTimeout(rest,260)},{passive:true}));
 }
 function adopt(){for(let i=0;i<6;i++){const v=V(i);if(!v||v.parentNode===T)continue;let nx=null;for(let j=i+1;j<6;j++){const w=V(j);if(w&&w.parentNode===T){nx=w;break}}T.insertBefore(v,nx);v.classList.add('zz-pane')}}
@@ -44,7 +44,7 @@ function sync(){
  P.forEach(p=>{if(p===v){p.removeAttribute('inert');p.removeAttribute('aria-hidden')}else{p.setAttribute('inert','');p.setAttribute('aria-hidden','true')}});
  last[TABS[i]]=location.hash||'#/';
  const x=k*T.clientWidth;
- if(Math.abs(T.scrollLeft-x)>2){prog=true;geo=null;see([act,k]);T.scrollTo({left:x,behavior:quick()||act<0||Math.abs(k-act)>1?'instant':'smooth'})   /* only neighbours slide; farther tabs jump */}
+ if(Math.abs(T.scrollLeft-x)>2){prog=true;geo=null;window.zzSlideT=performance.now();see([act,k]);T.scrollTo({left:x,behavior:quick()||act<0||Math.abs(k-act)>1?'instant':'smooth'})   /* only neighbours slide; farther tabs jump */}
  act=k;rest();
  if(first){first=false;const p=location.hash.replace(/^#\/?/,'').split('/'),t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');if(t&&v.contains(t))t.scrollIntoView({behavior:'instant',block:'start'})}
  requestAnimationFrame(bar);
@@ -72,7 +72,7 @@ function live(){
   if(p&&r0&&r1){const u=f-i0;
    p.style.transition='none';p.style.width=(r0.w+(r1.w-r0.w)*u)+'px';const sq=Math.sin(Math.PI*u);   /* liquid: the pill stretches between tabs and settles on one */
    p.style.transform='translate('+Math.round(r0.x+(r1.x-r0.x)*u)+'px,'+Math.round(r0.y)+'px) scale('+(1+.22*sq).toFixed(3)+','+(1-.1*sq).toFixed(3)+')';
-   clearTimeout(pt);pt=setTimeout(()=>{p.style.transition=''},180)}}
+   g.n.classList.add('zz-drag');clearTimeout(pt);pt=setTimeout(()=>{p.style.transition='';g.n.classList.remove('zz-drag')},180)}}
  clearTimeout(end);end=setTimeout(settle,160);
  if(!touching&&Math.abs(T.scrollLeft-act*w)<2){prog=false;rest()}   /* landed on its pane: neighbours hide again at once */
 }

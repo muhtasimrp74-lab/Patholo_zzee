@@ -31,12 +31,25 @@ html.fx-min:not(.zz-flat) body :is(#bnav,.view .nav,#tools,.fx-top){-webkit-back
 /* cards keep their 1px border width (layout and annotation ink stay exactly where they are); only the hairline colour goes */
 html body :is(article.card,a.topic,.tbtile){border-color:transparent!important}
 html body :is(.eyebrow,.stats span,.pager a small,#qf h4,.nh-eb,.nh-k,.nh-split span,.nh-dt,.nh-tk,.qa-k,#zz-tut .tt-n){font-weight:700!important}
-/* auto-hide bars (autohide.js). The individual translate property keeps each bar's own transform and positioning intact. */
+/* bars that follow the scroll (autohide.js): --zz-f runs from 0 (shown) to 1 (hidden). The individual translate property keeps each
+   bar's own transform and positioning. While the finger moves there is no transition (the bars track it exactly); .zz-snap eases
+   the final settle. */
 nav.nav{transition-property:box-shadow,translate}
-html.zz-hide nav.nav,html.zz-hide #tools,body.qf-open #tools{translate:0 calc(-100% - 16px)}
-html.zz-hide #bnav,body.qf-open #bnav{translate:0 calc(100% + 24px + env(safe-area-inset-bottom,0px))}
-html.zz-hide .bar{top:0}
-@media (prefers-reduced-motion:reduce){nav.nav,#tools,#bnav{transition:none}}
+html nav.nav,html #tools{translate:0 calc(var(--zz-f,0) * (-100% - 16px))}
+html #bnav{translate:0 calc(var(--zz-f,0) * (100% + 24px + env(safe-area-inset-bottom,0px)))}
+body.qf-open #tools{translate:0 calc(-100% - 16px)!important}
+body.qf-open #bnav{translate:0 calc(100% + 24px + env(safe-area-inset-bottom,0px))!important}
+html .bar{top:calc(60px * (1 - var(--zz-f,0)))}
+html.zz-follow :is(nav.nav,#tools,#bnav,#an-fab,.bar){transition:none!important}
+html.zz-snap :is(nav.nav,#tools,#bnav,#an-fab){transition:translate .3s cubic-bezier(.2,.8,.2,1)!important}
+@media (prefers-reduced-motion:reduce){html.zz-snap :is(nav.nav,#tools,#bnav,#an-fab){transition:none!important}}
+/* while the tab pill follows a swipe it must not ease (it lagged behind the finger): beats the !important transition below */
+html body #bnav.zz-drag .fx-pill{transition:none!important}
+/* the footer runs to the bottom of the screen: no light strip under it (the tab bar slides away when scrolling down) */
+html body:has(.sf){padding-bottom:0!important}
+/* swipe tabs keep the bottom-bar spacer (the footer must end above the bar) but paint it in the footer colour: no light strip */
+html .zz-pane:has(> .sf:last-child)::after{background:#12080b}
+:not(.zz-pane) > .sf::after{content:"";display:block;height:calc(50px + env(safe-area-inset-bottom,0px))}
 /* active tab: the glass pill is the indicator, so no second (square-cornered) box under it; the plain indicator matches the capsule bar */
 #bnav a.on,#bnav a[aria-current]{border-radius:999px}
 html.zz-lgon body #bnav a.on,html.zz-lgon body #bnav a[aria-current]{box-shadow:none;background:none}
