@@ -67,7 +67,7 @@ document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('#bn
 /* --- banner pictures develop the first time they are seen this session (stain + focus verbs) --- */
 const seen=new Set();
 function develop(){
- if(level()!=='full')return;
+ if(level()!=='full'||window.zzSlideT&&performance.now()-zzSlideT<4000)return;   /* already on screen during the swipe: no re-develop */
  const img=$('.view:not([hidden]) .pb-pic img')||$('.view:not([hidden]) .nh-bn-pic img');if(!img)return;   /* the Home hero develops too: the focus pull of C17 */const k=img.getAttribute('src');if(seen.has(k))return;seen.add(k);
  const go=()=>{img.classList.remove('fx-dev');void img.offsetWidth;img.classList.add('fx-dev')};
  if(img.complete)go();else img.addEventListener('load',go,{once:true});

@@ -362,6 +362,35 @@ class Browser(unittest.TestCase):
         for n, fixes in U.FIXES.items():   # textbook corrections reach their cards
             ans = card(full, n).group(1)
             for f, r in fixes: self.assertIn(r, ans, 'q%s corrected' % n); self.assertNotIn(f, ans)
+    def returning(self, h, w=412, ht=860, full=False):
+        pg = self.b.new_page(viewport={'width': w, 'height': ht}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + h); pg.wait_for_timeout(1000)
+        if full: pg.evaluate("()=>{S.pref.fx='full';dispatchEvent(new Event('resize'))}"); pg.wait_for_timeout(1500)
+        return pg
+    def test_a_swiped_in_tab_does_not_replay_its_entrance_like_a_refresh(self):
+        pg = self.returning('#/', full=True)
+        r = pg.evaluate("""async()=>{const T=document.getElementById('zz-pager'),before=new Set(document.getAnimations()),seen=new Set();T.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true}));T.scrollTo({left:T.clientWidth,behavior:'smooth'});
+            const t0=performance.now();while(performance.now()-t0<1800){for(const a of document.getAnimations())if(!before.has(a))seen.add(a);await new Promise(r=>requestAnimationFrame(r))}
+            const on=a=>a.effect&&a.effect.target;return {entrance:[...seen].filter(a=>on(a)&&on(a).matches&&on(a).matches('h1,h2,.pb-pic img,.nh-bn-pic img')).length,pill:[...seen].filter(a=>on(a)&&on(a).classList&&on(a).classList.contains('fx-pill')).length,hash:location.hash}}""")
+        self.assertEqual(r['hash'], '#/questions'); self.assertEqual(r['entrance'], 0, 'the arriving title and picture do not re-animate')
+        self.assertLessEqual(r['pill'], 2, 'the tab pill tracks the swipe without easing on every frame (%d transitions)' % r['pill']); pg.close()
+    def test_bars_track_the_finger_then_settle(self):
+        pg = self.returning('#/02'); pg.mouse.move(200, 480)
+        pg.evaluate("()=>window.scrollTo({top:400,behavior:'instant'})"); pg.wait_for_timeout(500)
+        pg.evaluate("()=>{window.scrollBy({top:30,behavior:'instant'})}"); pg.wait_for_timeout(30)   # mid-gesture: part of the way
+        mid = pg.evaluate("()=>{const r=document.getElementById('bnav').getBoundingClientRect();return [+getComputedStyle(document.documentElement).getPropertyValue('--zz-f')||0,r.top<innerHeight&&r.bottom>innerHeight]}")
+        self.assertTrue(0 < mid[0] < 1 and mid[1], 'mid-scroll the tab bar is partly away, following the finger: %r' % mid)
+        pg.wait_for_timeout(500); end = pg.evaluate("()=>+getComputedStyle(document.documentElement).getPropertyValue('--zz-f')")
+        self.assertIn(end, (0, 1), 'when the scroll stops the bars settle fully open or closed'); pg.close()
+    def test_no_light_strip_under_the_footer(self):
+        pg = self.returning('#/', w=412, ht=860); pg.wait_for_timeout(500); pg.mouse.move(200, 480)   # Home: the footer is the last thing on the page
+        for _ in range(40): pg.mouse.wheel(0, 600); pg.wait_for_timeout(25)
+        pg.wait_for_timeout(800)
+        r = pg.evaluate("()=>{const t=document.elementFromPoint(200,innerHeight-6),sf=document.querySelector('#v-home .sf'),bg=sf&&getComputedStyle(sf).backgroundColor;"
+                        "const inFooter=!!(t&&t.closest('.sf')),spacer=t&&t.classList&&t.classList.contains('zz-pane')?getComputedStyle(t,'::after').backgroundColor:null;"
+                        "return [inFooter||spacer===bg,(t&&(t.className||t.tagName)).toString().slice(0,20),spacer,bg]}")
+        self.assertTrue(r[0], 'the bottom of the page is footer-coloured, not a light strip %r' % r[1:]); pg.close()
     def test_home_has_no_progress_map(self):   # owner: the canvas map was confusing; per-chapter progress lives on the Chapters tab
         pg = self.phone('#/'); pg.wait_for_timeout(800)
         self.assertFalse(pg.evaluate("()=>!!document.querySelector('#v-home .nh-col, #v-home .nh-col-c canvas')"))

@@ -4,7 +4,7 @@
    Hand notes: margin notes (.an-mn) and [data-hand] text write themselves in Caveat with an animated stroke, then settle. */
 (function(){try{
 const full=()=>window.zzFx&&zzFx.level()==='full'&&!document.body.classList.contains('an-on'),seen=new WeakSet();
-function bleed(){if(!full())return;const v=document.querySelector('.view:not([hidden])'),h=v&&[...v.querySelectorAll('h1,h2')].find(x=>!x.closest('.ans')&&x.offsetParent);
+function bleed(){if(!full()||window.zzSlideT&&performance.now()-zzSlideT<4000)return;   /* a tab that arrives by swipe was already on screen: no entrance effect (it read as a refresh) */const v=document.querySelector('.view:not([hidden])'),h=v&&[...v.querySelectorAll('h1,h2')].find(x=>!x.closest('.ans')&&x.offsetParent);
  if(!h||seen.has(h)||!h.animate)return;seen.add(h);
  h.animate([{filter:'blur(5px)',opacity:.15,letterSpacing:'.05em',textShadow:'0 0 14px var(--rosy)'},{filter:'blur(1px)',opacity:.85,offset:.6},{filter:'blur(0)',opacity:1,letterSpacing:'normal',textShadow:'0 0 0 transparent'}],{duration:800,easing:'cubic-bezier(.2,.7,.2,1)'})}
 const NS='http://www.w3.org/2000/svg';
