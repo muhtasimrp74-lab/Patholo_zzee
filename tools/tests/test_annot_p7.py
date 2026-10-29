@@ -288,4 +288,16 @@ class ProTools(unittest.TestCase):
             const ink=document.querySelector(s+' canvas.ink'),hl=document.querySelector(s+' canvas.hl'),st=getComputedStyle(hl);return [cards.length===ans.length&&cards.length>10,getComputedStyle(ink).display,st.opacity,st.mixBlendMode]}""", sel)
         self.assertEqual(r, [True, 'block', '1', 'multiply'], 'print: every answer open, ink shown, highlights at full strength'); self.assertEqual(self.errs, [])
 
+    def test_marker_stroke_stays_behind_the_text_while_drawing(self):   # the text was hidden under the highlight until the pen lifted
+        for theme in ('light', 'dark'):
+            pg = self.page(412, 860); cid, sel = self.open_card(pg); pg.evaluate("t=>{document.documentElement.dataset.theme=t;Object.assign(Annot.state(),{tool:'hl'})}", theme)
+            st = pg.evaluate("""s=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),ev=(n,x,b)=>new PointerEvent(n,{pointerId:7,pointerType:'pen',isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+40,pressure:.5,buttons:b});
+                h.dispatchEvent(ev('pointerdown',30,1));for(let x=40;x<200;x+=10)document.dispatchEvent(ev('pointermove',x,1));
+                const w=getComputedStyle(h.querySelector('canvas.wet')),l=getComputedStyle(h.querySelector('canvas.hl')),mid=[w.mixBlendMode,w.opacity,w.zIndex,l.mixBlendMode,l.opacity,l.zIndex];
+                document.dispatchEvent(ev('pointerup',200,0));return mid}""", sel)
+            self.assertEqual(st[:3], st[3:], '%s: mid-stroke the marker layer blends like the finished highlight %r' % (theme, st))
+            pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'pen'})}"); self.draw(pg, sel, [[30, 120], [120, 125], [200, 120]])
+            self.assertEqual(pg.evaluate("s=>getComputedStyle(document.querySelector(s+' canvas.wet')).mixBlendMode", sel), 'normal', 'a pen stroke draws normally again')
+            self.assertEqual(self.errs, []); pg.close()
+
 if __name__ == '__main__': unittest.main()

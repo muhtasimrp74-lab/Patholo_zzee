@@ -338,7 +338,10 @@ function laserLoop(){if(!las||las.raf)return;const f=()=>{const s=las;if(!s)retu
     paths.forEach((p,b)=>{if(!p)return;const a=(b+.5)/NB;g.strokeStyle='rgba('+rgb+','+(al*a).toFixed(3)+')';g.lineWidth=wd*(.35+.65*a);g.stroke(p)})}
    if(s.down){const q=Q[n-1];g.fillStyle='rgba(255,60,60,.95)';if(!calm){g.shadowColor='rgba(255,40,40,.9)';g.shadowBlur=14}g.beginPath();g.arc(q.x,q.y,6,0,6.3);g.fill();g.shadowBlur=0;g.fillStyle='rgba(255,244,244,.95)';g.beginPath();g.arc(q.x,q.y,2.4,0,6.3);g.fill()}g.restore()}
   if(s.down||Q.length)s.raf=requestAnimationFrame(f);else{g.clearRect(0,0,w,h);las=null}};las.raf=requestAnimationFrame(f)}
-function laserStart(e,host){const L=layerOf(host);if(!L)return;e.preventDefault();try{host.setPointerCapture(e.pointerId)}catch(x){}
+/* a marker stroke in progress sat on the wet layer above the text and hid it until the stroke ended; while the marker draws, the
+   wet layer takes the highlight layer's blending, opacity and stacking, so the stroke looks the same during and after drawing */
+function wetMode(L,hl){const w=cv(L,'wet');if(hl){const cs=getComputedStyle(cv(L,'hl'));w.style.mixBlendMode=cs.mixBlendMode;w.style.opacity=cs.opacity;w.style.zIndex=cs.zIndex}else{w.style.mixBlendMode='';w.style.opacity='';w.style.zIndex=''}}
+function laserStart(e,host){const L=layerOf(host);if(!L)return;wetMode(L,false);e.preventDefault();try{host.setPointerCapture(e.pointerId)}catch(x){}
  las={L,pid:e.pointerId,pts:[],raf:0,down:true};document.body.classList.add('an-drawing');laserPt(e);
  const mv=ev=>{if(las&&ev.pointerId===las.pid)laserPt(ev)},up=ev=>{if(!las||ev.pointerId!==las.pid)return;document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);document.removeEventListener('pointercancel',up);las.down=false;document.body.classList.remove('an-drawing');laserLoop()};
  document.addEventListener('pointermove',mv,{passive:true});document.addEventListener('pointerup',up);document.addEventListener('pointercancel',up);laserLoop()}
@@ -571,7 +574,7 @@ function onDown(e){if(!P.on||!e.isPrimary||P.tool==='hand'||P.tool==='hi'||(e.po
  if(P.tool==='ls'){laserStart(e,host);return}
  const L=layerOf(host);if(!L)return;e.preventDefault();try{host.setPointerCapture(e.pointerId)}catch(x){}
  active=L.key;drawing=true;document.body.classList.add('an-drawing');
- const T=stylusTool(e);live={L,pid:e.pointerId,tool:T,touch:e.pointerType==='touch',pts:[],gone:[],added:[],px:null};addPoint(e,host,L);if(!live.pts.length)return;
+ const T=stylusTool(e);live={L,pid:e.pointerId,tool:T,touch:e.pointerType==='touch',pts:[],gone:[],added:[],px:null};wetMode(L,T==='hl');addPoint(e,host,L);if(!live.pts.length)return;
  if(live.tool==='sel')selStart(e);
  if(live.tool==='er'){const hr=host.getBoundingClientRect();live.hr0=hr;live.px=(docOf(L.key)||{objs:[]}).objs.map(o=>({o,pts:o.t==='stroke'?pxOf(L,o,hr):null,lines:o.t==='shape'?shapeOf(L,o,hr):null,rects:o.t==='mark'?markRects(L,o,hr):o.t==='text'?(t=>t?[[t.x,t.y,t.w,t.h]]:null)(textLayout(L,o,hr)):(o.t==='sticker'||o.t==='note')?stkRects(L,o,hr):null})).map(erBB);erase(e)}
  wetFrame();document.addEventListener('pointermove',onMove,{passive:true});document.addEventListener('pointerup',onUp);document.addEventListener('pointercancel',onUp)}
