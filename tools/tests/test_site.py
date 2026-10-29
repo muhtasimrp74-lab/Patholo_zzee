@@ -444,6 +444,13 @@ class Browser(unittest.TestCase):
         pg = self.phone('#/02'); pg.wait_for_timeout(500)
         r = pg.evaluate("()=>[document.querySelectorAll('svg.zs').length,document.querySelectorAll('i.zs').length,getComputedStyle(document.querySelector('i.zs.on')).webkitMaskImage.slice(0,20)]")
         self.assertEqual(r[0], 0); self.assertGreater(r[1], 2000); self.assertTrue(r[2].startswith('url('), r); pg.close()
+    def test_keyboard_users_can_skip_to_the_content(self):   # the first Tab shows a skip link; Enter lands in the current tab
+        pg = self.phone('#/qa'); pg.wait_for_timeout(600); pg.keyboard.press('Tab')
+        r = pg.evaluate("()=>{const a=document.activeElement,b=a.getBoundingClientRect();return [a.className,a.textContent,b.top>=0&&b.bottom<=innerHeight]}")
+        self.assertEqual(r, ['zz-skip', 'Skip to content', True], 'first Tab: a visible skip link')
+        pg.keyboard.press('Enter'); pg.wait_for_timeout(300)
+        self.assertTrue(pg.evaluate("()=>!!document.activeElement.closest('#v-qa')"), 'Enter moves focus into the current tab')
+        self.assertNotEqual(pg.evaluate("()=>getComputedStyle(document.activeElement).outlineStyle"), 'none', 'focus is visible'); self.assertEqual(self.errs, []); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

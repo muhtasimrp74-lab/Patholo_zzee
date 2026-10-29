@@ -1533,6 +1533,11 @@ html body :is(nav a.logo,#v-menu .zm-step button){min-width:44px!important;min-h
 .zs.on{background:var(--zs-hi) center/100% 100% no-repeat,linear-gradient(135deg,#E9A5BB,#B4506F 55%,#7A1F36)}
 .zs.off{-webkit-mask-image:var(--zs-off);mask-image:var(--zs-off);background:color-mix(in srgb,var(--muted) 42%,transparent)}
 .qfc.on .imp .zs.on{background:#fff}
+/* keyboard access: a skip link that appears on the first Tab, and a visible focus ring wherever a control has none of its own
+   (zero specificity, so every existing focus style still wins) */
+.zz-skip{position:fixed;left:12px;top:-60px;z-index:200;padding:12px 16px;border-radius:12px;background:var(--btn,#7a1f36);color:#fff;font:700 14px var(--body,system-ui,sans-serif);text-decoration:none;transition:top .15s}
+.zz-skip:focus,.zz-skip:focus-visible{top:calc(12px + env(safe-area-inset-top,0px));outline:2px solid #fff;outline-offset:2px}
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:2px}
 
 /* ===== main panel: Home / Questions / Q&A / MCQs / Menu ===== */
 @media(max-width:1000px){#bnav{grid-template-columns:repeat(6,1fr)}}
@@ -6030,89 +6035,7 @@ function heroInit(){
  sys.add(hero);wake(5000);
 }
 
-/* ---------- C22: progress map, one cell per question ---------- */
-const FONT='"Hanken Grotesk",system-ui,sans-serif';
-const sr=()=>{const s=st();return (s&&s.sr&&typeof s.sr==='object')?s.sr:{}};
-const inten=(id,now)=>{const o=sr()[id];if(!o)return 0;const b=Math.max(0,Math.min(5,o.b|0)),base=.35+.13*b;if(!(now>o.d))return base;return base*Math.max(.12,1-(now-o.d)/864e5/14)};
-function colony(){
- const box=$('#v-home .nh-col');if(!box)return;if(box.dataset.fx){if(box._zzRe)box._zzRe();return}box.dataset.fx='1';
- const D=typeof DATA!=='undefined'?DATA:null,s=st();if(!D||!s){box.hidden=true;return}
- const cv=box.querySelector('canvas'),tip=box.querySelector('.nh-col-tip'),L=new Set(s.learned||[]),B=new Set(s.bm||[]);
- const N=D.length,nL=D.filter(d=>L.has(d[3])).length,nB=D.filter(d=>B.has(d[3])).length;
- cv.setAttribute('role','img');cv.setAttribute('aria-label','Progress map: '+nL+' of '+N+' questions learned, '+nB+' bookmarked');
- const sum=box.querySelector('.nh-col-n');if(sum)sum.textContent=nL+' of '+N+' learned';
- const C={ink:col('var(--plum)','#6B2D5C'),eo:col('var(--rosy)','#D98FA8'),dot:col('var(--line2)','#DCC6D3'),gold:[.84,.68,.41]};
- const rgba=(c,a)=>'rgba('+Math.round(c[0]*255)+','+Math.round(c[1]*255)+','+Math.round(c[2]*255)+','+a+')';
- let cell=0,cols=0,W=0,H=0,dpr=Math.min(2,devicePixelRatio||1),t0=0,grown=false,VH=0,k=0,kmin=1,tx=0,ty=0,mini=null,moved=0;
- box.dataset.noSwipe='';
- try{grown=sessionStorage.getItem('zzColony')==='1'}catch(e){}
- /* whole-slide map: the cells are the world; the canvas is a viewport you pan (drag) and zoom (pinch, ctrl+wheel, objective turret) */
- const clampV=()=>{const ww=W*k,hh=H*k;tx=ww<=W?(W-ww)/2:Math.min(0,Math.max(W-ww,tx));ty=hh<=VH?(VH-hh)/2:Math.min(0,Math.max(VH-hh,ty));cv.style.touchAction=k>kmin*1.01?'none':'pan-y'};
- const lay=()=>{W=box.clientWidth;cell=W<520?9:11;cols=Math.max(10,Math.floor(W/cell));const rows=Math.ceil(N/cols);H=rows*cell;
-  VH=Math.min(H,Math.max(220,Math.round(innerHeight*.45)));kmin=Math.min(1,VH/H);if(!k||k<kmin)k=kmin;clampV();cv.width=Math.round(W*dpr);cv.height=Math.round(VH*dpr);cv.style.height=VH+'px';mini=null};
- const CHS=[],TPS=[];D.forEach((d,i)=>{if(!i||d[2]!==D[i-1][2]){const v=document.getElementById('v-'+d[2]);CHS.push([i,((v&&v.dataset.title)||d[2]).split(' | ')[0]])}if(!i||d[4]!==D[i-1][4])TPS.push([i,String(d[4]||'')])});
- function buildMini(){const mw=72,mh=Math.max(20,Math.round(H*mw/W)),m=document.createElement('canvas');m.width=mw*dpr;m.height=mh*dpr;const q=m.getContext('2d'),f=mw/W,now=Date.now();q.scale(dpr,dpr);
-  q.fillStyle=rgba(C.dot,.5);q.fillRect(0,0,mw,mh);for(let i=0;i<N;i++){const I=inten(D[i][3],now);if(!I)continue;q.fillStyle=rgba(C.ink,(.9*I).toFixed(2));q.fillRect((i%cols)*cell*f,Math.floor(i/cols)*cell*f,Math.max(1,cell*f),Math.max(1,cell*f))}mini=m}
- function over(g){g.setTransform(dpr,0,0,dpr,0,0);const sc=cell*k,P=(i)=>[tx+((i%cols)+.5)*cell*k,ty+(Math.floor(i/cols)+.5)*cell*k];
-  const lab=(t,x,y,f)=>{g.font=f;const w=g.measureText(t).width+12;if(x+w>W)x=W-w-2;if(y<10||y>VH-4)return;g.fillStyle='rgba(255,255,255,.82)';g.beginPath();g.roundRect?g.roundRect(x,y-13,w,18,9):g.rect(x,y-13,w,18);g.fill();g.fillStyle=rgba(C.ink,1);g.fillText(t,x+6,y)};
-  let ly=-99;
-  if(sc<14)CHS.forEach(([i,t])=>{const[x,y]=P(i);if(y-ly>20){lab(t.slice(0,40),Math.max(2,x-6),y,'600 11px '+FONT);ly=y}});
-  else if(sc<30)TPS.forEach(([i,t])=>{const[x,y]=P(i);if(t&&y-ly>18&&x>-40&&x<W){lab(t.slice(0,34),Math.max(2,x-6),y,'600 11px '+FONT);ly=y}});
-  else if(sc>=70){g.textAlign='center';g.fillStyle=rgba(C.ink,1);g.font='600 '+Math.round(sc*.13)+'px '+FONT;
-   for(let i=0;i<N;i++){const[x,y]=P(i);if(x<-sc||x>W+sc||y<-sc||y>VH+sc)continue;const w=String(D[i][1]||'').split(/\s+/).slice(0,3).join(' ');g.fillText(w.length>22?w.slice(0,21)+'…':w,x,y+sc*.42)}g.textAlign='left'}
-  if(k>kmin*1.05){if(!mini)buildMini();const mw=72,mh=mini.height/dpr,mx=W-mw-8,my=8;g.globalAlpha=.92;g.drawImage(mini,mx,my,mw,mh);g.globalAlpha=1;
-   g.strokeStyle=rgba(C.ink,.9);g.lineWidth=1.2;const f=mw/W;g.strokeRect(mx+(-tx/k)*f,my+(-ty/k)*f,Math.min(mw,(W/k)*f),Math.min(mh,(VH/k)*f))}
-  const n=[1,5,10,50,100,500].find(v=>v*sc>=40)||500,len=Math.min(W*.5,n*sc);g.fillStyle=rgba(C.ink,.85);g.fillRect(10,VH-12,len,3);g.font='600 10px '+FONT;g.fillText(n+' question'+(n>1?'s':'')+' wide',10,VH-17)}
- function zoomAt(nk,sx,sy){nk=Math.max(kmin,Math.min(12,nk));const wx=(sx-tx)/k,wy=(sy-ty)/k;k=nk;tx=sx-wx*k;ty=sy-wy*k;clampV();draw(1);tur()}
- {const pts=new Map();let pinch=null;
-  cv.addEventListener('pointerdown',e=>{try{cv.setPointerCapture(e.pointerId)}catch(x){}pts.set(e.pointerId,[e.clientX,e.clientY]);moved=0;if(pts.size===2){const[a,b]=[...pts.values()];pinch={d:Math.hypot(a[0]-b[0],a[1]-b[1])||1,k}}});
-  cv.addEventListener('pointermove',e=>{const o=pts.get(e.pointerId);if(!o)return;const dx=e.clientX-o[0],dy=e.clientY-o[1];pts.set(e.pointerId,[e.clientX,e.clientY]);
-   if(pts.size===1){if(k<=kmin*1.01&&e.pointerType==='touch')return;moved+=Math.abs(dx)+Math.abs(dy);tx+=dx;ty+=dy;clampV();draw(1)}
-   else if(pts.size===2&&pinch){const[a,b]=[...pts.values()],r=cv.getBoundingClientRect();moved=99;zoomAt(pinch.k*Math.hypot(a[0]-b[0],a[1]-b[1])/pinch.d,(a[0]+b[0])/2-r.left,(a[1]+b[1])/2-r.top)}});
-  const up=e=>{pts.delete(e.pointerId);if(pts.size<2)pinch=null};cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
-  cv.addEventListener('wheel',e=>{if(!e.ctrlKey)return;e.preventDefault();const r=cv.getBoundingClientRect();zoomAt(k*Math.exp(-e.deltaY*.01),e.clientX-r.left,e.clientY-r.top)},{passive:false})}
- /* objective turret: 4x chapters as regions, 10x topics, 40x question cells, 100x key terms */
- const OBJ=[['4x',()=>kmin],['10x',()=>Math.max(kmin,16/cell)],['40x',()=>Math.max(kmin,36/cell)],['100x',()=>Math.max(kmin,90/cell)]];
- const turEl=document.createElement('div');turEl.className='nh-tur';turEl.setAttribute('role','group');turEl.setAttribute('aria-label','Objective');
- turEl.innerHTML=OBJ.map((o,i)=>'<button type="button" data-o="'+i+'" aria-pressed="false">'+o[0]+'</button>').join('');cv.before(turEl);
- function tur(){let b=0,bd=1e9;OBJ.forEach((o,i)=>{const d=Math.abs(Math.log(o[1]()/k));if(d<bd){bd=d;b=i}});turEl.querySelectorAll('button').forEach((x,i)=>x.setAttribute('aria-pressed',String(i===b)))}
- turEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const to=OBJ[+b.dataset.o][1](),from=k,sx=W/2,sy=VH/2;if(window.zzFx)zzFx.haptic(6);
-  if(!full()||(window.zzTier&&zzTier()<2)){zoomAt(to,sx,sy);return}const t1=performance.now(),sy2={step(t){const u=Math.min(1,(t-t1)/320),e2=1-Math.pow(1-u,3);zoomAt(from*Math.pow(to/from,e2),sx,sy);if(u>=1){sys.delete(sy2);return false}return true}};sys.add(sy2);wake(600)});
- function draw(p){const g=cv.getContext('2d');g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,W,VH);g.setTransform(dpr*k,0,0,dpr*k,dpr*tx,dpr*ty);
-  const r0=Math.max(0,Math.floor(-ty/k/cell)-1),r1=Math.ceil((VH-ty)/k/cell)+1;
-  const now=Date.now(),tn=performance.now();
-  for(let i=Math.min(N,r0*cols);i<Math.min(N,r1*cols);i++){const id=D[i][3],x=(i%cols+.5)*cell,y=(Math.floor(i/cols)+.5)*cell,l=L.has(id),b=B.has(id),I=inten(id,now);
-   const k=p>=1?1:Math.max(0,Math.min(1,p*1.8-((i%cols)/cols+Math.floor(i/cols)*cols/N)*.4));   /* a diagonal sweep that ends exactly at p=1 */const e=1-Math.pow(1-k,3);
-   /* fading stains: intensity from S.sr only (no entry = unstained, higher box = stronger, fades once overdue) */
-   if(I>0){g.fillStyle=rgba(C.eo,(.42*I).toFixed(3));g.beginPath();g.arc(x,y,cell*.46*e,0,7);g.fill();g.fillStyle=rgba(C.ink,(.95*I).toFixed(3));g.beginPath();g.arc(x,y,cell*.24*e,0,7);g.fill()}
-   else{g.fillStyle=rgba(C.dot,.9);g.beginPath();g.arc(x,y,cell*.16,0,7);g.fill();if(l){g.strokeStyle=rgba(C.ink,.5);g.lineWidth=1;g.beginPath();g.arc(x,y,cell*.3,0,7);g.stroke()}}
-   const rp=rip.get(id);if(rp!==undefined){const u=Math.min(1,(tn-rp)/900);g.strokeStyle=rgba(C.eo,(.9*(1-u)).toFixed(3));g.lineWidth=1.6;g.beginPath();g.arc(x,y,cell*(.3+1.6*u),0,7);g.stroke()}
-   if(b){g.strokeStyle=rgba(C.gold,.95);g.lineWidth=1.4;g.beginPath();g.arc(x,y,cell*.42*e,0,7);g.stroke()}}
-  over(g)}
- const rip=new Map(),SRK='zzSrSeen';
- const snap=()=>{const o={},S0=sr();for(const k in S0)o[k]=S0[k]&&S0[k].d;try{sessionStorage.setItem(SRK,JSON.stringify(o))}catch(e){}};
- /* Home: the most overdue questions, as a lens under the map */
- function lens(){let f=box.querySelector('.nh-fade');const now=Date.now(),S0=sr(),od=Object.keys(S0).filter(k=>S0[k]&&now>S0[k].d&&document.getElementById(k)).sort((a,b)=>S0[a].d-S0[b].d).slice(0,6);
-  if(!od.length){if(f)f.remove();return}if(!f){f=document.createElement('div');f.className='nh-fade';box.append(f)}
-  const row=k=>{const c=document.getElementById(k),v=c.closest('.view'),h=c.querySelector('header'),dd=Math.max(1,Math.round((now-S0[k].d)/864e5));
-   return '<a href="#/'+(v?v.id.slice(2):'qa')+'/'+k+'"><span>'+((h&&h.textContent)||k).replace(/[&<>]/g,'').slice(0,90)+'</span><small>'+dd+' day'+(dd>1?'s':'')+' overdue</small></a>'};
-  f.innerHTML='<p class="nh-fade-h">Fading</p>'+od.map(row).join('')}
- /* back on Home after practice: re-stain the reviewed cells with a ripple */
- box._zzRe=()=>{let seen={};try{seen=JSON.parse(sessionStorage.getItem(SRK)||'{}')}catch(e){}const S0=sr(),t=performance.now();
-  for(const k in S0)if(S0[k]&&seen[k]!==S0[k].d&&k in seen||(!(k in seen)&&Object.keys(seen).length&&S0[k]))rip.set(k,t);
-  snap();lens();mini=null;
-  if(rip.size&&full()&&(!window.zzTier||zzTier()>=2)){const sy={step(n){draw(1);if(n-t>950){rip.clear();draw(1);sys.delete(sy);return false}return true}};sys.add(sy);wake(1500)}else{rip.clear();draw(1)}};
- lay();tur();snap();lens();
- if(grown||!full()){draw(1)}else{const io=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;io.disconnect();t0=0;
-  const sy={step(t){if(!t0)t0=t;const p=Math.min(1,(t-t0)/1300);draw(p);if(p>=1){try{sessionStorage.setItem('zzColony','1')}catch(e){}sys.delete(sy);return false}return true}};sys.add(sy);wake(2000)});io.observe(box);draw(0)}
- addEventListener('resize',()=>{if(box.isConnected){lay();draw(1)}});
- cv.addEventListener('click',e=>{if(moved>6)return;const r=cv.getBoundingClientRect(),wx=(e.clientX-r.left-tx)/k,wy=(e.clientY-r.top-ty)/k,i=Math.floor(wy/cell)*cols+Math.floor(wx/cell),d=wx>=0&&wx<cols*cell?D[i]:null;if(!d||!tip)return;
-  tip.hidden=false;tip.innerHTML='';const p=document.createElement('p');p.textContent=d[1];const a=document.createElement('a');a.href='#/'+d[2]+'/'+d[3];a.textContent='Open question';
-  const k=document.createElement('span');k.textContent=L.has(d[3])?'Learned':'Not learned yet';tip.append(k,p,a);
-  tip.style.left=Math.min(Math.max(8,e.clientX-r.left-120),W-248)+'px';tip.style.top=(e.clientY-r.top+14)+'px'});
- document.addEventListener('click',e=>{if(tip&&!tip.hidden&&!box.contains(e.target))tip.hidden=true});
-}
-
+/* (C22, the progress map, was removed with its section on Home) */
 /* ---------- C3: glass tiles (navigation tiles only: reading text never tilts) ---------- */
 const TILE='a.topic,.tbtile,.mx-tile';let tq=null,tx=0,ty=0;
 document.addEventListener('pointermove',e=>{
@@ -6140,11 +6063,11 @@ addEventListener('scroll',()=>{if(!wa)wt=null},{passive:true,capture:true});
 
 /* ---------- boot after the page is up and idle, and again when Home is drawn ---------- */
 const home=()=>!location.hash||/^#\/?(home)?$/.test(location.hash);
-function boot(){backdrop();if(home())setTimeout(()=>{heroInit();colony()},60)}
+function boot(){backdrop();if(home())setTimeout(()=>{heroInit()},60)}
 const idle=window.requestIdleCallback||(f=>setTimeout(f,300));
 addEventListener('load',()=>idle(boot,{timeout:2500}));
-addEventListener('hashchange',()=>{if(home())setTimeout(()=>{heroInit();colony()},120)});
-const hv=$('#v-home');if(hv)new MutationObserver(()=>{if(home())setTimeout(()=>{heroInit();colony()},60)}).observe(hv,{childList:true,subtree:false});
+addEventListener('hashchange',()=>{if(home())setTimeout(()=>{heroInit()},120)});
+const hv=$('#v-home');if(hv)new MutationObserver(()=>{if(home())setTimeout(()=>{heroInit()},60)}).observe(hv,{childList:true,subtree:false});
 window.zzFxGl={wake:ms=>{if(tissue())backdrop();wake(ms)},sys,isSlow:()=>slow};
 }catch(e){}})();
 
@@ -6341,45 +6264,6 @@ const up=()=>{clearTimeout(lp);if(touch){touch=false;hide()}};
 document.addEventListener('touchmove',e=>{if(touch&&e.cancelable)e.preventDefault()},{passive:false});
 document.addEventListener('contextmenu',e=>{if(touch)e.preventDefault()});
 addEventListener('scroll',()=>{if(!touch)hide()},{passive:true,capture:true});addEventListener('hashchange',up);
-}catch(e){}})();
-
-/* ===== share.js: one tap draws a progress card (a stained slide, the streak, "stained X of N") and shares it
-   (Web Share with a file, or a download). Button sits in the Home progress map header. Reads S only. */
-(function(){try{
-const st=()=>typeof S!=='undefined'?S:null,cs=getComputedStyle(document.documentElement),v=(k,d)=>(cs.getPropertyValue(k)||'').trim()||d;
-async function card(){
- const s=st()||{},D=typeof DATA!=='undefined'?DATA:[],N=D.length||1310,sr=s.sr||{},now=Date.now();
- const X=D.filter(d=>sr[d[3]]).length,streak=(s.streak&&+s.streak.n)||0;
- try{await Promise.all(['400 80px "DM Serif Display"','600 40px "Hanken Grotesk"','italic 500 40px Newsreader'].map(f=>document.fonts.load(f)))}catch(e){}
- const W=1080,H=1350,c=document.createElement('canvas');c.width=W;c.height=H;const g=c.getContext('2d');
- const bg=v('--bg','#F8F3EE'),ink=v('--text','#2A1627'),mu=v('--muted','#735F70'),eo=v('--rosy','#D98FA8'),pl=v('--plum2','#6B2D5C'),bu=v('--burgundy','#7A1F36');
- g.fillStyle=bg;g.fillRect(0,0,W,H);
- /* the slide: frosted glass, label at one end, a stained section of cells (stain strength from S.sr) */
- const sx=90,sy=170,sw=900,sh=640;g.save();g.shadowColor='rgba(0,0,0,.18)';g.shadowBlur=40;g.shadowOffsetY=18;g.fillStyle='rgba(255,255,255,.55)';rr(g,sx,sy,sw,sh,28);g.fill();g.restore();
- g.fillStyle=bu;rr(g,sx,sy,190,sh,28);g.fill();g.fillStyle='#fff';g.font='600 30px "Hanken Grotesk", sans-serif';g.save();g.translate(sx+108,sy+sh/2);g.rotate(-Math.PI/2);g.textAlign='center';g.fillText('Patholo_zzee',0,0);g.restore();
- const cx=sx+190+40,cy=sy+40,cw=sw-190-80,ch=sh-80,cell=Math.max(9,Math.floor(Math.sqrt(cw*ch/N))),cols=Math.floor(cw/cell);
- g.save();rr(g,cx,cy,cw,ch,cw/2);g.clip();
- for(let i=0;i<N;i++){const d=D[i],o=d&&sr[d[3]],x=cx+(i%cols+.5)*cell,y=cy+(Math.floor(i/cols)+.5)*cell;if(y>cy+ch)break;
-  if(o){const b=Math.max(0,Math.min(5,o.b|0)),a=(.35+.13*b)*(now>o.d?Math.max(.12,1-(now-o.d)/864e5/14):1);
-   g.globalAlpha=.45*a;g.fillStyle=eo;g.beginPath();g.arc(x,y,cell*.48,0,7);g.fill();g.globalAlpha=.95*a;g.fillStyle=pl;g.beginPath();g.arc(x,y,cell*.24,0,7);g.fill()}
-  else{g.globalAlpha=.35;g.fillStyle=mu;g.beginPath();g.arc(x,y,cell*.12,0,7);g.fill()}}
- g.restore();g.globalAlpha=1;
- g.fillStyle=ink;g.textAlign='left';g.font='400 84px "DM Serif Display", Georgia, serif';g.fillText('Stained '+X.toLocaleString('en-GB')+' of '+N.toLocaleString('en-GB'),90,960);
- g.font='600 40px "Hanken Grotesk", sans-serif';g.fillStyle=mu;g.fillText(streak?streak+'-day streak':'Starting a streak',90,1030);
- g.font='italic 500 38px Newsreader, Georgia, serif';g.fillStyle=bu;g.fillText('Pathology, one slide at a time.',90,1240);
- return new Promise(r=>c.toBlob(r,'image/png'));
-}
-function rr(g,x,y,w,h,r){r=Math.min(r,w/2,h/2);g.beginPath();g.moveTo(x+r,y);g.arcTo(x+w,y,x+w,y+h,r);g.arcTo(x+w,y+h,x,y+h,r);g.arcTo(x,y+h,x,y,r);g.arcTo(x,y,x+w,y,r);g.closePath()}
-async function share(b){
- b.disabled=true;try{const blob=await card();if(!blob)return;const f=new File([blob],'patholo-zzee-progress.png',{type:'image/png'});
-  if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],title:'My pathology progress'})}catch(e){}return}
-  const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=f.name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)}
- finally{b.disabled=false}}
-function place(){const h=document.querySelector('#v-home .nh-col-hd');if(!h||h.querySelector('.zz-share'))return;
- const b=document.createElement('button');b.type='button';b.className='zz-share';b.textContent='Share';b.setAttribute('aria-label','Share a progress card');
- b.style.cssText='margin-left:auto;min-height:34px;padding:0 14px;border-radius:99px;border:1px solid var(--line2);background:var(--panel);color:var(--lbl);font:600 .82rem var(--body);cursor:pointer';
- b.onclick=()=>share(b);h.append(b)}
-addEventListener('hashchange',()=>setTimeout(place,300));(window.requestIdleCallback||setTimeout)(place,{timeout:4000});
 }catch(e){}})();
 
 /* ===== scrub.js: one scrubber component. A slider drives a procedural 2D morph; each topic is a config.
@@ -6793,6 +6677,12 @@ window.zzLiquid={run,on};
   clearTimeout(snapT);snapT=setTimeout(()=>settle(f>.5?1:0),140)},{capture:true,passive:true});
  addEventListener('hashchange',()=>{settle(0);if(document.body.classList.contains('qf-open')){const s=document.getElementById('qscrim');s&&s.click()}});
  document.addEventListener('focusin',e=>{if(e.target.closest&&e.target.closest('nav.nav,#tools,#bnav'))settle(0)})})();
+
+/* skip link (keyboard): the first Tab shows "Skip to content", which moves focus to the current tab's heading */
+(()=>{const a=document.createElement('a');a.className='zz-skip';a.href='#';a.textContent='Skip to content';
+ a.addEventListener('click',e=>{e.preventDefault();const v=(window.zzScroller&&zzScroller()!==document.scrollingElement)?zzScroller():document.querySelector('.view:not([hidden])')||document.body;
+  const h=v.querySelector('h1,h2,main,[role=main]')||v;if(!h.hasAttribute('tabindex'))h.setAttribute('tabindex','-1');h.focus({preventScroll:false})});
+ const go=()=>document.body.prepend(a);document.body?go():addEventListener('DOMContentLoaded',go)})();
 
 (function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();
 const r=document.getElementById('res'),g=document.getElementById('gq');
