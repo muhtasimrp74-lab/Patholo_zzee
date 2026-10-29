@@ -411,7 +411,7 @@ class Browser(unittest.TestCase):
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}, has_touch=True, is_mobile=True)
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
         pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
-        for h, v in (('#/mcqs', 'v-mcqs'), ('#/', 'v-home'), ('#/qa', 'v-qa')):
+        for h, v in (('#/mcqs', 'v-mcqs'), ('#/', 'v-home'), ('#/qa', 'v-qa'), ('#/questions', 'v-questions'), ('#/textbook', 'v-textbook'), ('#/menu', 'v-menu')):   # all six tabs
             pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1200)
             self.assertEqual(pg.evaluate(self.SMALLTXT, v), [], '%s: interface text below 12 px' % h)
         lab = pg.evaluate("()=>[...document.querySelectorAll('#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-eb')].map(e=>{const s=getComputedStyle(e);return s.textTransform+'/'+s.fontWeight})")
