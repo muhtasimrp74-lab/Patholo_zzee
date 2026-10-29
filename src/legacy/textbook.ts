@@ -99,7 +99,7 @@ type Rec=Record<string,any>;
   try{if(!IDX){const r=await fetch('textbook/index.json');if(!r.ok)throw 0;IDX=await r.json()}}
   catch(e){if(my===tok)T.innerHTML='<div class="mempty"><b>Textbook unavailable</b>Open it once while online; chapters you read are then saved for offline use.</div>';return}
   if(my!==tok)return;const C=IDX.chapters,i=C.findIndex((x:any)=>x.id===p[1]),D=J('tbDone');
-  if(i<0){home();return}
+  if(i<0){homeK();return}
   const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');T.closest('.view')?.classList.add('tb-on');/* reading: the landing banner steps aside (pagebanner.css) */try{zzStore.setItem('tbLast',c.id)}catch(e){}
   const bar=`<div class="tbbar"><a href="${pv?'#/textbook/'+pv.id:'#/textbook'}" ${pv?'':'aria-disabled="true"'}>‹ ${pv?'Ch '+pv.n:'Previous'}</a><a href="#/textbook">All chapters</a><a href="${nx?'#/textbook/'+nx.id:'#/textbook'}" ${nx?'':'aria-disabled="true"'}>${nx?'Ch '+nx.n:'Next'} ›</a></div>`;
   T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
@@ -125,4 +125,7 @@ type Rec=Record<string,any>;
   else if(a=(e.target as Element).closest('.tbs-h'))tog(a.parentElement)});
  T.addEventListener('input',(e:any)=>{if(e.target.id==='tbq'){hq=e.target.value;paint()}});
  T.addEventListener('keydown',(e:any)=>{if(e.key!=='Enter'&&e.key!==' ')return;const g=(e.target as Element).closest&&(e.target as Element).closest<HTMLElement>('[data-go]');if(g){e.preventDefault();g.click();return}const h=(e.target as Element).closest&&(e.target as Element).closest('.tbs-h');if(h){e.preventDefault();tog(h.parentElement)}});
+ /* ready before the first swipe (like a game's loading phase): the landing is built in the background and only rebuilt when it would change */
+ const homeK=()=>{const k=JSON.stringify([J('tbDone'),J('tbPos')]);if((T as any).__k===k&&T.querySelector('.tbhero'))return;(T as any).__k=k;home()};
+ ((window as any).zzPre=(window as any).zzPre||{}).textbook=async()=>{if(/^#\/textbook/.test(location.hash))return;try{if(!IDX){const r=await fetch('textbook/index.json');if(!r.ok)return;IDX=await r.json()}if(!/^#\/textbook/.test(location.hash))homeK()}catch(e){}};
  addEventListener('hashchange',tb);setTimeout(tb,0)}

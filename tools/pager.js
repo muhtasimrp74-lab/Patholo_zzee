@@ -48,9 +48,12 @@ function sync(){
  act=k;rest();
  if(first){first=false;const p=location.hash.replace(/^#\/?/,'').split('/'),t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');if(t&&v.contains(t))t.scrollIntoView({behavior:'instant',block:'start'})}
  requestAnimationFrame(bar);
- (window.requestIdleCallback||setTimeout)(()=>[P[k-1],P[k+1]].forEach(n=>{const id=n&&n.id.slice(2);if(!id||pre.has(id)||!zzPre[id])return;pre.add(id);try{zzPre[id]()}catch(e){}}),{timeout:2500});
+ (window.requestIdleCallback||setTimeout)(()=>{P.forEach(n=>{const id=n&&n.id.slice(2);if(!id||pre.has(id)||!zzPre[id])return;pre.add(id);try{zzPre[id]()}catch(e){}});ready()},{timeout:2500});
 }
-const see=l=>{if(T)[...T.children].forEach((p,i)=>p.classList.toggle('zz-see',l.includes(i)))};   /* only panes under the viewport show while moving */
+const see=l=>{if(T)[...T.children].forEach((p,i)=>p.classList.toggle('zz-see',de.classList.contains('zz-ready')||l.includes(i)))};
+/* instant tabs (like a game that preloads): after the first route every tab is built (zzPre), its pictures are loaded and decoded,
+   and every tab stays painted, so a swipe never reveals a tab mid-gesture; .zz-ready also lifts deferred rendering (perf.css) */
+const ready=()=>{if(de.classList.contains('zz-ready')||!T)return;T.querySelectorAll('img').forEach(i=>{try{i.loading='eager';i.decode&&i.decode().catch(()=>{})}catch(e){}});de.classList.add('zz-ready');see([])};   /* only panes under the viewport show while moving */
 const pillTo=k=>{const n=document.getElementById('bnav'),P=T?[...T.children]:[],a=anchor(P[k]),p=n&&n.querySelector('.fx-pill');if(!a||!p||getComputedStyle(n).display==='none')return;
  const nr=n.getBoundingClientRect(),r=a.getBoundingClientRect();p.style.transition='';p.style.width=r.width+'px';p.style.transform='translate('+Math.round(r.left-nr.left)+'px,'+Math.round(r.top-nr.top)+'px)'};   /* settle on the tab, unstretched */
 const rest=()=>{if(T&&Math.abs(T.scrollLeft-act*T.clientWidth)<2){see([]);pillTo(act)}};

@@ -344,6 +344,8 @@ function home(){
   else if(r==='result')result();
   else if(r==='custom')builder();
   else if(r==='read')reading(),window.scrollTo(0,0);
-  else home()}
- (window.zzPre=window.zzPre||{}).mcqs=()=>{if(!M.firstElementChild&&!/^#\/mcqs/.test(location.hash))home()};   /* pager: draw the MCQ home while it is only a neighbour */
+  else homeK()}
+ (window.zzPre=window.zzPre||{}).mcqs=()=>{if(!/^#\/mcqs/.test(location.hash))homeK()};
+ /* build the MCQ home only when what it shows has changed: a tab that was ready before the swipe is not rebuilt on arrival */
+ function homeK(){let k='';try{k=JSON.stringify([P(),ST(),new Date().toDateString()])}catch(e){}if(k&&M.__k===k&&M.firstElementChild)return;M.__k=k;home()}   /* pager: draw the MCQ home while it is only a neighbour */
  addEventListener('hashchange',mq);setTimeout(mq,0)}

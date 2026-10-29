@@ -2155,6 +2155,9 @@ html body::before{mix-blend-mode:normal!important}
 html #v-home .nh-ch{content-visibility:auto;contain-intrinsic-size:auto 320px}
 html #v-home .nh-mr{content-visibility:auto;contain-intrinsic-size:auto 60px}
 @media print{html body #tools{display:none!important}}
+
+/* once every tab is ready (pager.js), lists and tiles stop deferring their rendering: scrolling never shows rows filling in */
+html.zz-ready :is(.card,.qi,.row,.topic,#v-home .nh-ch,#v-home .nh-mr){content-visibility:visible}
 </style><script src="zz-store.js"></script><script>window.zzStore||(window.zzStore={getItem:function(k){return localStorage.getItem(k)},setItem:function(k,v){localStorage.setItem(k,v)},removeItem:function(k){localStorage.removeItem(k)}})</script><link rel="icon" type="image/svg+xml" href="icons/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"><script>try{const p=JSON.parse(zzStore.vivaState||'{}').pref||{};if(p.theme)document.documentElement.dataset.theme=p.theme;if(p.theme==='light'&&p.tone==='sepia')document.documentElement.dataset.tone='sepia'}catch(e){}</script><link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1C1219" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F8F3EE" media="(prefers-color-scheme: light)">
@@ -4456,8 +4459,10 @@ function home(){
   else if(r==='result')result();
   else if(r==='custom')builder();
   else if(r==='read')reading(),window.scrollTo(0,0);
-  else home()}
- (window.zzPre=window.zzPre||{}).mcqs=()=>{if(!M.firstElementChild&&!/^#\/mcqs/.test(location.hash))home()};   /* pager: draw the MCQ home while it is only a neighbour */
+  else homeK()}
+ (window.zzPre=window.zzPre||{}).mcqs=()=>{if(!/^#\/mcqs/.test(location.hash))homeK()};
+ /* build the MCQ home only when what it shows has changed: a tab that was ready before the swipe is not rebuilt on arrival */
+ function homeK(){let k='';try{k=JSON.stringify([P(),ST(),new Date().toDateString()])}catch(e){}if(k&&M.__k===k&&M.firstElementChild)return;M.__k=k;home()}   /* pager: draw the MCQ home while it is only a neighbour */
  addEventListener('hashchange',mq);setTimeout(mq,0)}
 
 /* GENERATED from src/legacy/textbook.ts by `npm run build:classic`. Edit the .ts, not this file. */
@@ -4784,7 +4789,7 @@ function home(){
 			if (my !== tok) return;
 			const C = IDX.chapters, i = C.findIndex((x) => x.id === p[1]), D = J("tbDone");
 			if (i < 0) {
-				home();
+				homeK();
 				return;
 			}
 			const c = C[i], pv = C[i - 1], nx = C[i + 1];
@@ -4915,6 +4920,23 @@ function home(){
 				tog(h.parentElement);
 			}
 		});
+		const homeK = () => {
+			const k = JSON.stringify([J("tbDone"), J("tbPos")]);
+			if (T.__k === k && T.querySelector(".tbhero")) return;
+			T.__k = k;
+			home();
+		};
+		(window.zzPre = window.zzPre || {}).textbook = async () => {
+			if (/^#\/textbook/.test(location.hash)) return;
+			try {
+				if (!IDX) {
+					const r = await fetch("textbook/index.json");
+					if (!r.ok) return;
+					IDX = await r.json();
+				}
+				if (!/^#\/textbook/.test(location.hash)) homeK();
+			} catch (e) {}
+		};
 		addEventListener("hashchange", tb);
 		setTimeout(tb, 0);
 	}
@@ -4993,9 +5015,12 @@ function sync(){
  act=k;rest();
  if(first){first=false;const p=location.hash.replace(/^#\/?/,'').split('/'),t=document.getElementById(v.id==='v-home'&&p[0]!=='home'?p[0]:p[1]||'');if(t&&v.contains(t))t.scrollIntoView({behavior:'instant',block:'start'})}
  requestAnimationFrame(bar);
- (window.requestIdleCallback||setTimeout)(()=>[P[k-1],P[k+1]].forEach(n=>{const id=n&&n.id.slice(2);if(!id||pre.has(id)||!zzPre[id])return;pre.add(id);try{zzPre[id]()}catch(e){}}),{timeout:2500});
+ (window.requestIdleCallback||setTimeout)(()=>{P.forEach(n=>{const id=n&&n.id.slice(2);if(!id||pre.has(id)||!zzPre[id])return;pre.add(id);try{zzPre[id]()}catch(e){}});ready()},{timeout:2500});
 }
-const see=l=>{if(T)[...T.children].forEach((p,i)=>p.classList.toggle('zz-see',l.includes(i)))};   /* only panes under the viewport show while moving */
+const see=l=>{if(T)[...T.children].forEach((p,i)=>p.classList.toggle('zz-see',de.classList.contains('zz-ready')||l.includes(i)))};
+/* instant tabs (like a game that preloads): after the first route every tab is built (zzPre), its pictures are loaded and decoded,
+   and every tab stays painted, so a swipe never reveals a tab mid-gesture; .zz-ready also lifts deferred rendering (perf.css) */
+const ready=()=>{if(de.classList.contains('zz-ready')||!T)return;T.querySelectorAll('img').forEach(i=>{try{i.loading='eager';i.decode&&i.decode().catch(()=>{})}catch(e){}});de.classList.add('zz-ready');see([])};   /* only panes under the viewport show while moving */
 const pillTo=k=>{const n=document.getElementById('bnav'),P=T?[...T.children]:[],a=anchor(P[k]),p=n&&n.querySelector('.fx-pill');if(!a||!p||getComputedStyle(n).display==='none')return;
  const nr=n.getBoundingClientRect(),r=a.getBoundingClientRect();p.style.transition='';p.style.width=r.width+'px';p.style.transform='translate('+Math.round(r.left-nr.left)+'px,'+Math.round(r.top-nr.top)+'px)'};   /* settle on the tab, unstretched */
 const rest=()=>{if(T&&Math.abs(T.scrollLeft-act*T.clientWidth)<2){see([]);pillTo(act)}};
