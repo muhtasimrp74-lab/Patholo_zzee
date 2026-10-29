@@ -1518,6 +1518,13 @@ html body #v-questions .qs-h{background:var(--cs-slip),var(--cs-sheen),var(--pan
  box-shadow:var(--cs-hi),var(--cs-lo),0 0 0 .5px var(--cs-hair)!important}
 /* secondary buttons share the hero buttons' 12 px corners */
 html body :is(#v-questions .qb,#v-home .nh-go){border-radius:12px!important}
+/* ===== touch targets: every control at least 44 x 44 px (measured on all six tabs: MCQ topic chips were 32 px tall,
+   quick links 36, the logo 36 x 36, footer links 37, Menu segments 38, steppers 40, inputs 42) ===== */
+html body :is(#v-mcqs .mx-tp button,.zq-fl a,#v-mcqs .mx-goal button,#v-mcqs .mx-foot .mx-link,.sf-col a,#v-qa .qa-go,#v-menu .zm-seg button,
+ #v-home .nh-dt input,#v-questions .qtools input){min-height:44px!important;box-sizing:border-box}
+html body :is(.sf-col a,.zq-fl a,#v-mcqs .mx-foot .mx-link,#v-qa .qa-go){display:inline-flex!important;align-items:center}
+html body #v-home :is(.nh-ch,.nh-mr) a:not(.pill){min-height:44px;display:inline-flex;align-items:center;box-sizing:border-box}
+html body :is(nav a.logo,#v-menu .zm-step button){min-width:44px!important;min-height:44px!important;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}
 
 /* ===== main panel: Home / Questions / Q&A / MCQs / Menu ===== */
 @media(max-width:1000px){#bnav{grid-template-columns:repeat(6,1fr)}}
