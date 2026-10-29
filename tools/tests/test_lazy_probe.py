@@ -32,7 +32,11 @@ class Lazy(unittest.TestCase):
     def snap(self, path):
         ctx = self.b.new_context(service_workers='block'); pg = ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         pg.goto(self.base + path, wait_until='load'); pg.wait_for_function("()=>!document.documentElement.classList.contains('zz-boot')", timeout=20000)
-        pg.wait_for_timeout(1500); r = pg.evaluate(JS); r['errs'] = errs; ctx.close(); return r
+        # snapshot once the page is quiet (DOM size unchanged for 1 s, at most 15 s): a fixed 1.5 s raced the idle-time work
+        # (prebuilt tabs, greeting), so the two variants were sometimes compared mid-update
+        pg.evaluate("""async()=>{let last='',same=0;const t0=performance.now();while(performance.now()-t0<15000){await new Promise(r=>setTimeout(r,250));
+            const h=document.body.innerHTML.length+':'+document.querySelectorAll('*').length;if(h===last){if(++same>=4)return}else{same=0;last=h}}}""")
+        r = pg.evaluate(JS); r['errs'] = errs; ctx.close(); return r
 
     def test_lazy_variant_boots_to_the_same_dom_as_the_inline_build(self):
         a, b = self.snap('/index.full.html'), self.snap('/lazy/index.html'); N = lambda h: re.sub(r'>\s+<', '><', h)
