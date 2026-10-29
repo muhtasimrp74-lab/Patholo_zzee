@@ -362,6 +362,16 @@ class Browser(unittest.TestCase):
         for n, fixes in U.FIXES.items():   # textbook corrections reach their cards
             ans = card(full, n).group(1)
             for f, r in fixes: self.assertIn(r, ans, 'q%s corrected' % n); self.assertNotIn(f, ans)
+    def test_cards_share_the_mcq_look_across_tabs(self):   # owner: designs consistent across the app, like the MCQ tab
+        for theme in ('light', 'dark'):
+            pg = self.phone('#/'); pg.evaluate("t=>{document.documentElement.dataset.theme=t}", theme)
+            for h in ('#/mcqs', '#/qa', '#/menu', '#/'): pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)   # tabs render on first visit
+            r = pg.evaluate("""()=>{const g=s=>{const e=document.querySelector(s);if(!e)return null;const c=getComputedStyle(e);return [c.borderTopLeftRadius,c.boxShadow]};
+                return {mcq:g('#v-mcqs .mx-acc'),qa:g('#v-qa .topic'),hero:g('#v-qa .qa-hero'),home:g('#v-home .nh-prog'),menu:g('#v-menu .zm-list')}}""")
+            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '28px', '%s: MCQ card %r' % (theme, ref))
+            for k, v in r.items():
+                self.assertEqual(v, ref, '%s: the %s card matches the MCQ card (corners and shadow)' % (theme, k))
+            pg.close()
     def returning(self, h, w=412, ht=860, full=False):
         pg = self.b.new_page(viewport={'width': w, 'height': ht}, has_touch=True, is_mobile=True)
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
