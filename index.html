@@ -1492,12 +1492,32 @@ html body #qf h4:not(._){text-transform:uppercase!important;font-weight:700}
 html body #v-home :is(.nh-hml,.nh-hmm,.nh-hms) span,html body #v-home .nh-hmk,html body #v-home .nh-split>div>span,html body #v-qa .qa-stats>div>span,
 html body #v-mcqs :is(.mx-kv span,.mx-tp small,.mx-paper small,.mx-goal>span),html body #v-qa .ring{font-size:12px!important}
 /* section labels: CAPITALS and BOLD (owner rule), one size and tracking everywhere */
-html body :is(#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-goal>span){font-size:12px!important;font-weight:700!important;letter-spacing:.08em!important;text-transform:uppercase!important}
+html body :is(#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-eb,#v-mcqs .mx-goal>span){font-size:12px!important;font-weight:700!important;letter-spacing:.08em!important;text-transform:uppercase!important}
 /* headings break into even lines; interface paragraphs avoid one-word last lines */
 html body :is(.view,dialog,.sf) :is(h1,h2,h3,.nh-h,.pb-t):not(.ans *):not(#tbbody *){text-wrap:balance}
 html body :is(.view,.sf) :is(p,.nh-mu):not(.ans *):not(#tbbody *){text-wrap:pretty}
 /* figures line up in stats, counters and progress (tabular, lining numerals) */
 html body :is(.nh-n,.no,.cnt,.ring,.mx-kv,.mx-acc b,.mx-day b,.zm-n,.qsum,.nh-col-n,.pb-chips span,.qf-n){font-variant-numeric:tabular-nums lining-nums}
+/* ===== one card language across the app, taken from the MCQ tab ("coverslip"): 28 px corners, a bright top edge, a soft sheen,
+   a hairline and a long soft drop shadow. Content stays opaque (owner rule): the pane colour is solid and there is no backdrop
+   blur, so no new stacking contexts. Question and answer cards are left as they are (ink alignment). ===== */
+:root{--cs-edge:rgba(255,255,255,.82);--cs-hair:rgba(74,28,58,.11);--cs-hi:inset 0 1px 0 rgba(255,255,255,.95);--cs-lo:inset 0 -1px 0 rgba(122,31,54,.05);
+ --cs-drop:0 1px 2px rgba(42,22,39,.05),0 22px 44px -24px rgba(74,28,58,.5);--cs-slip:linear-gradient(180deg,rgba(255,255,255,.75),rgba(255,255,255,0) 1.5px);
+ --cs-sheen:linear-gradient(118deg,rgba(255,255,255,.42) 0%,rgba(255,255,255,0) 36%)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--cs-edge:rgba(255,255,255,.13);--cs-hair:rgba(0,0,0,.32);--cs-hi:inset 0 1px 0 rgba(255,255,255,.12);
+ --cs-lo:inset 0 -1px 0 rgba(0,0,0,.3);--cs-drop:0 1px 2px rgba(0,0,0,.3),0 24px 50px -22px rgba(0,0,0,.75);--cs-slip:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0) 1.5px);
+ --cs-sheen:linear-gradient(118deg,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 40%)}}
+:root[data-theme=dark]{--cs-edge:rgba(255,255,255,.13);--cs-hair:rgba(0,0,0,.32);--cs-hi:inset 0 1px 0 rgba(255,255,255,.12);--cs-lo:inset 0 -1px 0 rgba(0,0,0,.3);
+ --cs-drop:0 1px 2px rgba(0,0,0,.3),0 24px 50px -22px rgba(0,0,0,.75);--cs-slip:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0) 1.5px);
+ --cs-sheen:linear-gradient(118deg,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 40%)}
+html body :is(#v-home .nh-prog,#v-home .nh-start,#v-qa .topic,#v-qa .qa-hero,#v-textbook .tbtile,#v-menu .zm-list){
+ background:var(--cs-slip),var(--cs-sheen),var(--panel)!important;border:1px solid var(--cs-edge)!important;border-radius:28px!important;
+ box-shadow:var(--cs-hi),var(--cs-lo),0 0 0 .5px var(--cs-hair),var(--cs-drop)!important}
+/* section rows on the Questions tab: the MCQ tile shape (20 px) and the same material */
+html body #v-questions .qs-h{background:var(--cs-slip),var(--cs-sheen),var(--panel)!important;border:1px solid var(--cs-edge)!important;border-radius:20px!important;
+ box-shadow:var(--cs-hi),var(--cs-lo),0 0 0 .5px var(--cs-hair)!important}
+/* secondary buttons share the hero buttons' 12 px corners */
+html body :is(#v-questions .qb,#v-home .nh-go){border-radius:12px!important}
 
 /* ===== main panel: Home / Questions / Q&A / MCQs / Menu ===== */
 @media(max-width:1000px){#bnav{grid-template-columns:repeat(6,1fr)}}

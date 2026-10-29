@@ -254,7 +254,9 @@ class TextbookAnnot(unittest.TestCase):
         r = pg.evaluate("()=>{const sp=document.documentElement.scrollHeight-innerHeight;return [scrollY/sp,parseFloat(document.querySelector('#tbprog i').style.width)/100]}")
         self.assertAlmostEqual(r[0], .4, delta=.02); self.assertAlmostEqual(r[1], r[0], delta=.02)
         pg.mouse.wheel(0, 300); pg.wait_for_timeout(250); self.assertTrue(pg.locator('#tbsc').is_visible()); pg.goto(self.url('ch04')); pg.wait_for_selector('#tbbody[data-ch=ch04] [data-b]')
-        self.assertTrue(pg.evaluate("()=>document.body.classList.contains('an-tb')")); pg.goto('http://127.0.0.1:%d/index.full.html#/menu' % self.port); pg.wait_for_timeout(400)
+        self.assertTrue(pg.evaluate("()=>document.body.classList.contains('an-tb')")); pg.goto('http://127.0.0.1:%d/index.full.html#/menu' % self.port)
+        try: pg.wait_for_function("()=>!document.body.classList.contains('an-tb')", timeout=4000)   # was a fixed 400 ms: the class clears after the menu renders, which raced on CI
+        except Exception: pass
         self.assertFalse(pg.evaluate("()=>document.body.classList.contains('an-tb')"), 'the textbook button goes away outside the textbook'); self.assertEqual(self.errs, [])
 
     # ---------------------------------------------------------------- scale and speed
