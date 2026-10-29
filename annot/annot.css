@@ -216,3 +216,16 @@ html body.an-left:not(.mx-live):not(.an-on) #an-fab{translate:calc(var(--zz-f,0)
 body.an-has-tape #an-tape{display:inline-flex;align-items:center}
 #an-tape:focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:2px}
 @media print{#an-tape{display:none!important}}
+
+/* ruler: a straight-edge overlay (tick marks, angle readout); transform only on this overlay */
+#an-ruler{position:fixed;left:0;top:0;z-index:57;transform-origin:50% 50%;border-radius:10px;touch-action:none;cursor:grab;
+ background:repeating-linear-gradient(90deg,rgba(42,22,39,.55) 0 1px,transparent 1px 10px) top left/100% 12px no-repeat,repeating-linear-gradient(90deg,rgba(42,22,39,.7) 0 1.5px,transparent 1.5px 50px) top left/100% 20px no-repeat,
+  repeating-linear-gradient(90deg,rgba(42,22,39,.55) 0 1px,transparent 1px 10px) bottom left/100% 12px no-repeat,rgba(250,246,240,.86);
+ border:1px solid rgba(122,31,54,.35);box-shadow:0 8px 24px rgba(42,22,39,.25);display:flex;align-items:center;justify-content:center}
+#an-ruler[hidden]{display:none}
+#an-ruler b{font:700 12px var(--body,system-ui,sans-serif);letter-spacing:.06em;color:var(--lbl,#7a1f36);pointer-events:none}
+#an-ruler:focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:3px}
+:root[data-theme=dark] #an-ruler{background:repeating-linear-gradient(90deg,rgba(255,255,255,.6) 0 1px,transparent 1px 10px) top left/100% 12px no-repeat,repeating-linear-gradient(90deg,rgba(255,255,255,.75) 0 1.5px,transparent 1.5px 50px) top left/100% 20px no-repeat,repeating-linear-gradient(90deg,rgba(255,255,255,.6) 0 1px,transparent 1px 10px) bottom left/100% 12px no-repeat,rgba(40,30,38,.88)}
+.an-pop .an-rul-t{min-height:44px;padding:0 14px;border-radius:999px;border:1px solid var(--line,#ddd);background:none;color:inherit;font:700 12px var(--body,system-ui,sans-serif);letter-spacing:.06em;text-transform:uppercase}
+.an-pop .an-rul-t[aria-pressed=true]{background:var(--btn,#7a1f36);color:#fff;border-color:transparent}
+@media print{#an-ruler{display:none!important}}
