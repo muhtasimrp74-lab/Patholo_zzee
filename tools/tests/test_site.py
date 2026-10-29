@@ -389,9 +389,9 @@ class Browser(unittest.TestCase):
         pg = self.returning('#/02'); pg.mouse.move(200, 480)
         pg.evaluate("()=>window.scrollTo({top:400,behavior:'instant'})"); pg.wait_for_timeout(500)
         pg.evaluate("()=>{window.scrollBy({top:30,behavior:'instant'})}"); pg.wait_for_timeout(30)   # mid-gesture: part of the way
-        mid = pg.evaluate("()=>{const r=document.getElementById('bnav').getBoundingClientRect();return [+getComputedStyle(document.documentElement).getPropertyValue('--zz-f')||0,r.top<innerHeight&&r.bottom>innerHeight]}")
+        mid = pg.evaluate("()=>{const r=document.getElementById('bnav').getBoundingClientRect();return [+getComputedStyle(document.getElementById('bnav')).getPropertyValue('--zz-f')||0,r.top<innerHeight&&r.bottom>innerHeight]}")
         self.assertTrue(0 < mid[0] < 1 and mid[1], 'mid-scroll the tab bar is partly away, following the finger: %r' % mid)
-        pg.wait_for_timeout(500); end = pg.evaluate("()=>+getComputedStyle(document.documentElement).getPropertyValue('--zz-f')")
+        pg.wait_for_timeout(500); end = pg.evaluate("()=>+getComputedStyle(document.getElementById('bnav')).getPropertyValue('--zz-f')")
         self.assertIn(end, (0, 1), 'when the scroll stops the bars settle fully open or closed'); pg.close()
     def test_no_light_strip_under_the_footer(self):
         pg = self.returning('#/', w=412, ht=860); pg.wait_for_timeout(500); pg.mouse.move(200, 480)   # Home: the footer is the last thing on the page
@@ -451,6 +451,16 @@ class Browser(unittest.TestCase):
         pg.keyboard.press('Enter'); pg.wait_for_timeout(300)
         self.assertTrue(pg.evaluate("()=>!!document.activeElement.closest('#v-qa')"), 'Enter moves focus into the current tab')
         self.assertNotEqual(pg.evaluate("()=>getComputedStyle(document.activeElement).outlineStyle"), 'none', 'focus is visible'); self.assertEqual(self.errs, []); pg.close()
+    def test_scroll_following_bars_do_not_restyle_the_whole_page(self):   # --zz-f on <html> restyled every element each frame (190-480 ms/s)
+        pg = self.returning('#/02'); pg.mouse.move(200, 480); pg.wait_for_timeout(800)
+        for _ in range(10): pg.mouse.wheel(0, 60); pg.wait_for_timeout(30)
+        pg.wait_for_timeout(100)
+        r = pg.evaluate("()=>[document.documentElement.style.getPropertyValue('--zz-f'),document.getElementById('bnav').style.getPropertyValue('--zz-f')]")
+        self.assertEqual(r[0], '', 'nothing written on <html>'); self.assertNotEqual(r[1], '', 'the value lives on the bars'); pg.close()
+    def test_mcq_home_has_no_loading_shimmer_once_it_is_drawn(self):   # the 120 px shimmer showed above a drawn home while paid MCQs loaded
+        pg = self.returning('#/mcqs'); pg.wait_for_selector('#v-mcqs .mx .mx-acc')
+        h = pg.evaluate("()=>{const v=document.getElementById('v-mcqs');v.dataset.zzSt='loading';const s=getComputedStyle(v.querySelector('.mx'),'::before');return [s.content,s.display]}")
+        self.assertIn(h[1], ('none',), 'no placeholder above a drawn MCQ home %r' % h); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
