@@ -153,10 +153,8 @@ function layerOf(host,key,make){let L=layers.get(host);if(L)return L;key=key||ke
  L={host,key,hl:null,ink:null,wet:null,raf:0,fresh:true,tb:!!(host.matches&&host.matches(TBH)),win:null};layers.set(host,L);host.classList.add('an-host');ro.observe(host);sched(L);return L}
 function cv(L,cls){let c=L[cls];if(!c){c=document.createElement('canvas');c.className='an-c '+cls;c.setAttribute('aria-hidden','true');c._L=L;L.host.append(c);L[cls]=c;
  /* the live-stroke canvas asks the browser to skip compositor sync where supported: ink follows the pen with less lag */
- if(cls==='wet'){try{c.getContext('2d',{desynchronized:true})}catch(e){}}}return c}
-function size(c,w,h){const wn=c._L&&c._L.win,wet=c._L&&c===c._L.wet;let oy=0;{let tp='',ht='';if(wn||wet){if(wn){oy=wn.y;h=wn.h}
  if(cls==='wet'&&!/Android/i.test(navigator.userAgent)){try{c.getContext('2d',{desynchronized:true})}catch(e){}}   /* low-latency canvases lose transparency on some Android GPUs: the stroke area turned black */}return c}
-function size(c,w,h){const wn=c._L&&c._L.win;let oy=0;{let tp='',ht='';if(wn){oy=wn.y;h=wn.h;
+function size(c,w,h){const wn=c._L&&c._L.win,wet=c._L&&c===c._L.wet;let oy=0;{let tp='',ht='';if(wn||wet){if(wn){oy=wn.y;h=wn.h}
   /* the live-stroke canvas only needs the visible screen: redrawing a screen-sized layer each frame is far cheaper than the whole window */
   if(c===c._L.wet){const hh=c._L.host,y=Math.max(0,Math.floor(-hh.getBoundingClientRect().top));oy=y;h=Math.max(1,Math.min(Math.ceil(innerHeight),hh.clientHeight-y))}
   tp=oy+'px';ht=h+'px'}if(c.style.top!==tp)c.style.top=tp;if(c.style.height!==ht)c.style.height=ht}
