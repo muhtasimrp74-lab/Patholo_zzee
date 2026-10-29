@@ -300,4 +300,27 @@ class ProTools(unittest.TestCase):
             self.assertEqual(pg.evaluate("s=>getComputedStyle(document.querySelector(s+' canvas.wet')).mixBlendMode", sel), 'normal', 'a pen stroke draws normally again')
             self.assertEqual(self.errs, []); pg.close()
 
+    # ---------- ruler ----------
+    def test_ruler_lays_strokes_straight_rotates_and_snaps(self):
+        pg = self.page(412, 860); cid, sel = self.open_card(pg); k = 'q:' + cid
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'pen',pen:'ball'})}"); g = pg.evaluate("()=>Annot._debug.ruler(true)")
+        self.assertTrue(pg.locator('#an-ruler').is_visible()); r = pg.locator('#an-ruler').bounding_box(); self.assertGreaterEqual(r['height'], 44)
+        top = g['cy'] - g['h'] / 2 - 6; h = pg.locator(sel).bounding_box()   # a wobbly stroke started just above the top edge
+        pts = [[g['cx'] - 120 + i * 12 - h['x'], top + (5 if i % 2 else -4) - h['y']] for i in range(21)]
+        self.draw(pg, sel, pts); p = pg.evaluate("k=>Annot._debug.px(k,0)", k); ys = [q[1] for q in p]
+        self.assertLess(max(ys) - min(ys), 1.5, 'the stroke lies straight along the ruler (spread %.1f px)' % (max(ys) - min(ys)))
+        self.draw(pg, sel, [[20, 20 + (6 if i % 2 else 0)] for i in range(12)] and [[20 + i * 10, 20 + (6 if i % 2 else 0)] for i in range(12)])
+        free = pg.evaluate("k=>{const p=Annot._debug.px(k,1);return Math.max(...p.map(q=>q[1]))-Math.min(...p.map(q=>q[1]))}", k); self.assertGreater(free, 2, 'away from the ruler, strokes stay freehand')
+        pg.evaluate("""()=>{const r=document.getElementById('an-ruler'),b=r.getBoundingClientRect(),cx=b.left+b.width/2,cy=b.top+b.height/2,ev=(n,id,x,y)=>new PointerEvent(n,{pointerId:id,pointerType:'touch',bubbles:true,cancelable:true,clientX:x,clientY:y,buttons:n==='pointerup'?0:1});
+            r.dispatchEvent(ev('pointerdown',41,cx-60,cy));r.dispatchEvent(ev('pointerdown',42,cx+60,cy));for(let i=1;i<=10;i++){const a=i*4.4*Math.PI/180;r.dispatchEvent(ev('pointermove',41,cx-60*Math.cos(a),cy-60*Math.sin(a)));r.dispatchEvent(ev('pointermove',42,cx+60*Math.cos(a),cy+60*Math.sin(a)))}
+            r.dispatchEvent(ev('pointerup',41,0,0));r.dispatchEvent(ev('pointerup',42,0,0))}""")
+        self.assertEqual(pg.get_attribute('#an-ruler', 'aria-valuenow'), '45', 'two fingers rotate it and it snaps to 45 degrees')
+        pg.focus('#an-ruler'); pg.keyboard.press(']'); self.assertEqual(pg.get_attribute('#an-ruler', 'aria-valuenow'), '60', '] rotates by 15 degrees')
+        for _ in range(2):   # tapping the active pen opens its options, which hold the RULER toggle
+            if pg.locator('.an-pop[data-for=pen] .an-rul-t').count(): break
+            pg.click('#an-bar [data-a=pen]'); pg.wait_for_timeout(250)
+        t = pg.locator('.an-pop[data-for=pen] .an-rul-t'); self.assertEqual(t.count(), 1, 'RULER toggle in the pen options')
+        self.assertEqual(t.get_attribute('aria-pressed'), 'true'); t.click(); pg.wait_for_timeout(150); self.assertFalse(pg.locator('#an-ruler').is_visible(), 'the toggle hides it')
+        self.assertEqual(self.errs, [])
+
 if __name__ == '__main__': unittest.main()
