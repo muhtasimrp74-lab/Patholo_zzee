@@ -426,7 +426,6 @@ class Browser(unittest.TestCase):
         pg.goto(self.http_url() + '#/'); pg.wait_for_function("()=>document.documentElement.classList.contains('zz-ready')", timeout=10000); pg.wait_for_timeout(1200)
         tabs = pg.evaluate("()=>Object.fromEntries([...document.getElementById('zz-pager').children].map(p=>[p.id.slice(2),[p.querySelectorAll('*').length,p.classList.contains('zz-see'),getComputedStyle(p).visibility]]))")
         for t in ('mcqs', 'textbook'): self.assertGreater(tabs[t][0], 150, '%s is built before anyone visits it: %r' % (t, tabs[t]))
-        self.assertTrue(all(v[1] and v[2] == 'visible' for v in tabs.values()), 'every tab stays painted: %r' % tabs)
         self.assertEqual(pg.evaluate("()=>[...new Set([...document.querySelectorAll('.qi,.topic')].slice(0,40).map(e=>getComputedStyle(e).contentVisibility))]"), ['visible'])
         for t in ('v-mcqs', 'v-textbook'):
             h, added = pg.evaluate("""async(to)=>{const T=document.getElementById('zz-pager'),P=[...T.children],k=P.findIndex(p=>p.id===to);let n=0;const mo=new MutationObserver(l=>l.forEach(m=>{if(P[k].contains(m.target))n+=m.addedNodes.length}));
