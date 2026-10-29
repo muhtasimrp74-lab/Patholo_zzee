@@ -14,3 +14,9 @@
   clearTimeout(snapT);snapT=setTimeout(()=>settle(f>.5?1:0),140)},{capture:true,passive:true});
  addEventListener('hashchange',()=>{settle(0);if(document.body.classList.contains('qf-open')){const s=document.getElementById('qscrim');s&&s.click()}});
  document.addEventListener('focusin',e=>{if(e.target.closest&&e.target.closest('nav.nav,#tools,#bnav'))settle(0)})})();
+
+/* skip link (keyboard): the first Tab shows "Skip to content", which moves focus to the current tab's heading */
+(()=>{const a=document.createElement('a');a.className='zz-skip';a.href='#';a.textContent='Skip to content';
+ a.addEventListener('click',e=>{e.preventDefault();const v=(window.zzScroller&&zzScroller()!==document.scrollingElement)?zzScroller():document.querySelector('.view:not([hidden])')||document.body;
+  const h=v.querySelector('h1,h2,main,[role=main]')||v;if(!h.hasAttribute('tabindex'))h.setAttribute('tabindex','-1');h.focus({preventScroll:false})});
+ const go=()=>document.body.prepend(a);document.body?go():addEventListener('DOMContentLoaded',go)})();
