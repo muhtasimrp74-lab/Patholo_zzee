@@ -180,8 +180,15 @@ html body :is(.sf-col a,.zq-fl a,#v-mcqs .mx-foot .mx-link,#v-qa .qa-go){display
 html body #v-home :is(.nh-ch,.nh-mr) a:not(.pill){min-height:44px;display:inline-flex;align-items:center;box-sizing:border-box}
 html body :is(nav a.logo,#v-menu .zm-step button){min-width:44px!important;min-height:44px!important;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}
 
+/* importance stars drawn by CSS: one empty element each instead of an <svg><use> pair (about 3,900 on the page: ~300 KB of
+   markup and ~3,900 elements fewer). Same star path, stroke, gradient and highlight; no per-star drop-shadow filter. */
+:root{--zs-on:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12.00 4.40 L14.29 9.64 L19.99 10.20 L15.71 14.01 L16.94 19.60 L12.00 16.70 L7.06 19.60 L8.29 14.01 L4.01 10.20 L9.71 9.64Z' fill='black' stroke='black' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E");--zs-off:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12.00 4.40 L14.29 9.64 L19.99 10.20 L15.71 14.01 L16.94 19.60 L12.00 16.70 L7.06 19.60 L8.29 14.01 L4.01 10.20 L9.71 9.64Z' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E");--zs-hi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9.4 8.7 L11.1 5.9' fill='none' stroke='white' stroke-width='1.1' stroke-linecap='round' opacity='.6'/%3E%3C/svg%3E")}
+.zs{display:block;flex:none;width:17px;height:17px;-webkit-mask:var(--zs-on) center/100% 100% no-repeat;mask:var(--zs-on) center/100% 100% no-repeat;filter:none!important}
+.zs.on{background:var(--zs-hi) center/100% 100% no-repeat,linear-gradient(135deg,#E9A5BB,#B4506F 55%,#7A1F36)}
+.zs.off{-webkit-mask-image:var(--zs-off);mask-image:var(--zs-off);background:color-mix(in srgb,var(--muted) 42%,transparent)}
+.qfc.on .imp .zs.on{background:#fff}
 /* keyboard access: a skip link that appears on the first Tab, and a visible focus ring wherever a control has none of its own
    (zero specificity, so every existing focus style still wins) */
-.zz-skip{position:fixed;left:12px;top:-60px;z-index:200;padding:12px 16px;border-radius:12px;background:var(--btn,#7a1f36);color:#fff;font:700 14px var(--body,system-ui,sans-serif);text-decoration:none;transition:top .15s}
+.zz-skip{position:fixed;left:12px;top:-60px;z-index:200;padding:12px 16px;border-radius:12px;background:var(--btn,#7a1f36);color:#fff;font:700 14px var(--body,system-ui,sans-serif);text-decoration:none}   /* appears at once on Tab (it slid in, and the slide raced the first Tab on slow machines) */
 .zz-skip:focus,.zz-skip:focus-visible{top:calc(12px + env(safe-area-inset-top,0px));outline:2px solid #fff;outline-offset:2px}
 :where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:2px}

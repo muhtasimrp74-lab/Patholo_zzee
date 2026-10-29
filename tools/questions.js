@@ -39,7 +39,7 @@ const IC={x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 
  reset:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v5h5"/></svg>'};
 const PARTS=QMETA.parts,PO=QMETA.partOf,TY=QMETA.type;
 const EX=QMETA.exam||{},st=d=>(EX[d[3]]||[0])[0],yrs=d=>(EX[d[3]]||[0,'',[]])[2],YEARS=[...new Set(Object.values(EX).flatMap(x=>x[2]))].sort((a,b)=>b-a),HASEX=Object.keys(EX).length>0;
-const star=on=>`<svg class="zs ${on?'on':'off'}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#zz-star"/></svg>`;
+const star=on=>`<i class="zs ${on?'on':'off'}" aria-hidden="true"></i>`;   /* drawn by CSS (polish.css) */
 const impH=(n,box)=>`<span class="imp${n>3?' num':''}" role="img" aria-label="${box||n>3?'Asked '+n+(n>1?' times':' time'):'Importance: '+n+' of 3'}">${n>3?star(1)+'<b>'+n+'</b>':Array.from({length:3},(_,i)=>star(i<n)).join('')}</span>`;
 const MAXST=Math.max(3,...Object.values(EX).map(x=>x[0]||0));
 const xm=d=>{const e=EX[d[3]],t=(TREE[d[3]]||[])[2],o=[];if(t)o.push(`<span class="xs">${esc(t)}</span>`);if(e&&e[0])o.push(impH(e[0],!!e[3]));

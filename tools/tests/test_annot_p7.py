@@ -262,4 +262,12 @@ class ProTools(unittest.TestCase):
         reqs = pg.evaluate("()=>window.__ctx")
         self.assertTrue(reqs, 'the stroke canvas was created'); self.assertNotIn(True, reqs, 'no low-latency (desynchronized) canvas on Android'); ctx.close()
 
+    def test_print_shows_every_answer_with_ink_and_full_highlights_even_from_dark_mode(self):   # export a chapter: browser Print / Save as PDF
+        pg = self.page(800, 1000); cid, sel = self.open_card(pg); pg.evaluate("()=>{document.documentElement.dataset.theme='dark';Object.assign(Annot.state(),{tool:'hl'})}")
+        self.draw(pg, sel, [[40, 40], [160, 42], [280, 40]]); pg.evaluate("()=>{Annot.state().tool='pen'}"); self.draw(pg, sel, [[40, 80], [160, 90], [280, 80]])
+        pg.emulate_media(media='print'); pg.wait_for_timeout(300)
+        r = pg.evaluate("""s=>{const cards=[...document.querySelectorAll('.view:not([hidden]) .card')].filter(e=>getComputedStyle(e).display!=='none'),ans=cards.filter(e=>{const a=e.querySelector('.ans');return a&&getComputedStyle(a).display!=='none'});
+            const ink=document.querySelector(s+' canvas.ink'),hl=document.querySelector(s+' canvas.hl'),st=getComputedStyle(hl);return [cards.length===ans.length&&cards.length>10,getComputedStyle(ink).display,st.opacity,st.mixBlendMode]}""", sel)
+        self.assertEqual(r, [True, 'block', '1', 'multiply'], 'print: every answer open, ink shown, highlights at full strength'); self.assertEqual(self.errs, [])
+
 if __name__ == '__main__': unittest.main()
