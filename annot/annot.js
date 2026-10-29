@@ -153,7 +153,7 @@ function layerOf(host,key,make){let L=layers.get(host);if(L)return L;key=key||ke
  L={host,key,hl:null,ink:null,wet:null,raf:0,fresh:true,tb:!!(host.matches&&host.matches(TBH)),win:null};layers.set(host,L);host.classList.add('an-host');ro.observe(host);sched(L);return L}
 function cv(L,cls){let c=L[cls];if(!c){c=document.createElement('canvas');c.className='an-c '+cls;c.setAttribute('aria-hidden','true');c._L=L;L.host.append(c);L[cls]=c;
  /* the live-stroke canvas asks the browser to skip compositor sync where supported: ink follows the pen with less lag */
- if(cls==='wet'){try{c.getContext('2d',{desynchronized:true})}catch(e){}}}return c}
+ if(cls==='wet'&&!/Android/i.test(navigator.userAgent)){try{c.getContext('2d',{desynchronized:true})}catch(e){}}   /* low-latency canvases lose transparency on some Android GPUs: the stroke area turned black */}return c}
 function size(c,w,h){const wn=c._L&&c._L.win;let oy=0;{let tp='',ht='';if(wn){oy=wn.y;h=wn.h;
   /* the live-stroke canvas only needs the visible screen: redrawing a screen-sized layer each frame is far cheaper than the whole window */
   if(c===c._L.wet){const hh=c._L.host,y=Math.max(0,Math.floor(-hh.getBoundingClientRect().top));oy=y;h=Math.max(1,Math.min(Math.ceil(innerHeight),hh.clientHeight-y))}
@@ -768,11 +768,14 @@ const gEnd=e=>{if(e.pointerType!=='touch'||!gt.n.has(e.pointerId))return;gt.n.de
  if(P.on&&P.gest&&e.type==='pointerup'&&!gt.moved&&performance.now()-gt.t0<380&&!(document.activeElement&&document.activeElement.matches&&document.activeElement.matches('textarea,input'))){if(gt.max===2)step(true);else if(gt.max===3)step(false)}gt.max=0};
 document.addEventListener('pointerup',gEnd,true);document.addEventListener('pointercancel',gEnd,true);
 /* two fingers moving together scroll the page (touch-action keeps pinch-zoom native but blocks two-finger pan while a drawing tool is on) */
-{let pan=null;const cur=new Map();const mid=()=>{const v=[...cur.values()];return{x:(v[0][0]+v[1][0])/2,y:(v[0][1]+v[1][1])/2,d:Math.hypot(v[0][0]-v[1][0],v[0][1]-v[1][1])}};
+{let pan=null,g0=null,kind='';const cur=new Map();const mid=()=>{const v=[...cur.values()];return{x:(v[0][0]+v[1][0])/2,y:(v[0][1]+v[1][1])/2,d:Math.hypot(v[0][0]-v[1][0],v[0][1]-v[1][1])}};
 document.addEventListener('pointermove',e=>{if(e.pointerType!=='touch'||!gt.n.has(e.pointerId)||!P.on||P.mode!=='pf')return;cur.set(e.pointerId,[e.clientX,e.clientY]);
- if(gt.n.size!==2||cur.size<2){pan=null;return}const m=mid();if(!pan){pan=m;return}
- if(Math.abs(m.d-pan.d)<10&&(!window.visualViewport||visualViewport.scale<=1.02)){const dy=pan.y-m.y,dx=pan.x-m.x;if(dx||dy)(window.zzScroller?zzScroller():window).scrollBy(dx,dy)}pan=m},true);
-const rs=e=>{if(e.pointerType==='touch'){cur.delete(e.pointerId);pan=null}};document.addEventListener('pointerup',rs,true);document.addEventListener('pointercancel',rs,true)}
+ if(gt.n.size!==2||cur.size<2){pan=null;g0=null;kind='';return}const m=mid();if(!pan){pan=g0=m;kind='';return}
+ /* decide once per gesture (after ~10 px): a pinch is left entirely to the browser's own zoom; only a pan scrolls the page.
+    Deciding every frame let slow pinches scroll the page while the browser zoomed it, which felt jerky. */
+ if(!kind){const dd=Math.abs(m.d-g0.d),mv=Math.hypot(m.x-g0.x,m.y-g0.y);if(Math.max(dd,mv)<10){pan=m;return}kind=dd>mv?'pinch':'pan'}
+ if(kind==='pan'&&(!window.visualViewport||visualViewport.scale<=1.02)){const dy=pan.y-m.y,dx=pan.x-m.x;if(dx||dy)(window.zzScroller?zzScroller():window).scrollBy({left:dx,top:dy,behavior:'instant'})}pan=m},true);   /* instant: smooth scrollBy every frame cancelled itself and lagged behind the fingers */
+const rs=e=>{if(e.pointerType==='touch'){cur.delete(e.pointerId);pan=null;g0=null;kind=''}};document.addEventListener('pointerup',rs,true);document.addEventListener('pointercancel',rs,true)}
 /* ---------- gentle nudges: install on iOS, back up after lots of new work ---------- */
 let nud=0;async function nudges(){if(nud||!St.db)return;nud=1;try{const ios=/iP(ad|hone|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1),sa=navigator.standalone||matchMedia('(display-mode:standalone)').matches;
  St.meta.sinceBackup=(St.meta.sinceBackup||0)+1;let msg=null;

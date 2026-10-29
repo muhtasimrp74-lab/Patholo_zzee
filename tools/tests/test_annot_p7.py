@@ -219,4 +219,27 @@ class ProTools(unittest.TestCase):
             if not on: pg.click('#an-fab-on'); pg.wait_for_timeout(300)
         self.assertTrue(pg.get_attribute('#an-fab-on', 'aria-label')); self.assertEqual(errs, []); pg.close()
 
+    # ---------- finger annotating: pinch-zoom and black strokes on Android ----------
+    TWO = """async([s, frames])=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),sc=window.zzScroller?zzScroller():document.scrollingElement,top0=sc.scrollTop;
+        const ev=(n,id,x,y,b)=>new PointerEvent(n,{pointerId:id,pointerType:'touch',isPrimary:id===11,bubbles:true,cancelable:true,clientX:x,clientY:y,buttons:b});
+        let a=[r.left+120,r.top+120],c=[r.left+220,r.top+120];h.dispatchEvent(ev('pointerdown',11,a[0],a[1],1));h.dispatchEvent(ev('pointerdown',12,c[0],c[1],1));
+        for(const [dax,day,dcx,dcy] of frames){a=[a[0]+dax,a[1]+day];c=[c[0]+dcx,c[1]+dcy];document.dispatchEvent(ev('pointermove',11,a[0],a[1],1));document.dispatchEvent(ev('pointermove',12,c[0],c[1],1));await new Promise(z=>requestAnimationFrame(z))}
+        document.dispatchEvent(ev('pointerup',11,a[0],a[1],0));document.dispatchEvent(ev('pointerup',12,c[0],c[1],0));await new Promise(z=>setTimeout(z,700));return Math.round(sc.scrollTop-top0)}"""
+    def test_two_finger_pinch_is_left_to_the_browser_and_a_drag_still_scrolls(self):
+        pg = self.page(412, 860); cid, sel = self.open_card(pg)
+        pg.evaluate("()=>{const P=Annot.state();P.tool='pen';P.mode='pf'}"); pg.evaluate("()=>{(window.zzScroller?zzScroller():document.scrollingElement).scrollTo({top:300,behavior:'instant'})}"); pg.wait_for_timeout(600)
+        pinch = pg.evaluate(self.TWO, [sel, [[-3, 1.5, 3, 1.5]] * 15])   # fingers spread apart with a slight drift
+        self.assertEqual(pinch, 0, 'a pinch does not also scroll the page (it scrolled %d px)' % pinch)
+        drag = pg.evaluate(self.TWO, [sel, [[0, -4, 0, -4]] * 12])        # both fingers move up together
+        self.assertGreater(drag, 20, 'a two-finger drag still scrolls (%d px)' % drag); self.assertEqual(self.errs, [])
+    def test_stroke_canvas_is_not_low_latency_on_android(self):   # low-latency canvases lose transparency on some Android GPUs (black strokes)
+        ctx = self.b.new_context(viewport={'width': 412, 'height': 860}, user_agent='Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Mobile Safari/537.36')
+        pg = ctx.new_page(); pg.add_init_script("try{localStorage.setItem('zzWelcomeAt',String(Date.now()))}catch(e){};window.__ctx=[];const g=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(t,o){if(this.classList.contains('wet'))__ctx.push(!!(o&&o.desynchronized));return g.apply(this,arguments)}")
+        pg.goto(URL + '#/05'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(300)
+        cid, sel = self.open_card(pg); pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'pen',pen:'ball'})}")
+        pg.evaluate("""async(s)=>{const h=document.querySelector(s),r=h.getBoundingClientRect(),f=()=>new Promise(z=>requestAnimationFrame(z)),ev=(n,x,b)=>new PointerEvent(n,{pointerId:3,pointerType:'pen',isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+60,pressure:.5,buttons:b});
+            h.dispatchEvent(ev('pointerdown',40,1));for(let x=50;x<=200;x+=15){await f();document.dispatchEvent(ev('pointermove',x,1))}await f();document.dispatchEvent(ev('pointerup',200,0))}""", sel)
+        reqs = pg.evaluate("()=>window.__ctx")
+        self.assertTrue(reqs, 'the stroke canvas was created'); self.assertNotIn(True, reqs, 'no low-latency (desynchronized) canvas on Android'); ctx.close()
+
 if __name__ == '__main__': unittest.main()

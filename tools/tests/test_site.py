@@ -431,6 +431,14 @@ class Browser(unittest.TestCase):
             h, added = pg.evaluate("""async(to)=>{const T=document.getElementById('zz-pager'),P=[...T.children],k=P.findIndex(p=>p.id===to);let n=0;const mo=new MutationObserver(l=>l.forEach(m=>{if(P[k].contains(m.target))n+=m.addedNodes.length}));
                 mo.observe(T,{subtree:true,childList:true});T.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true}));T.scrollTo({left:T.clientWidth*k,behavior:'smooth'});await new Promise(r=>setTimeout(r,1800));mo.disconnect();return [location.hash,n]}""", t)
             self.assertLessEqual(added, 20, '%s: arriving rebuilt the tab (%d nodes added)' % (h, added))
+    TAPS = r"""(id)=>{const v=document.getElementById(id),out=[];v.querySelectorAll('button,a[href],[role=button],input,select').forEach(e=>{const r=e.getBoundingClientRect();if(!r.width||e.closest('.ans,#tbbody,p,li'))return;
+        if(getComputedStyle(e).visibility==='visible'&&(r.height<43.5||r.width<43.5))out.push(Math.round(r.width)+'x'+Math.round(r.height)+' '+(e.className||e.tagName)+' '+e.textContent.trim().slice(0,12))});return out.slice(0,5)}"""
+    def test_every_control_is_at_least_44px(self):   # touch targets on all six tabs (inline links inside sentences excepted)
+        pg = self.b.new_page(viewport={'width': 412, 'height': 900}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
+        for h, v in (('#/mcqs', 'v-mcqs'), ('#/', 'v-home'), ('#/questions', 'v-questions'), ('#/qa', 'v-qa'), ('#/textbook', 'v-textbook'), ('#/menu', 'v-menu')):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1100); self.assertEqual(pg.evaluate(self.TAPS, v), [], '%s: controls under 44 px' % h)
         pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
