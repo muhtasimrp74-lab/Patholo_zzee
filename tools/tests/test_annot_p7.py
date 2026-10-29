@@ -262,6 +262,24 @@ class ProTools(unittest.TestCase):
         reqs = pg.evaluate("()=>window.__ctx")
         self.assertTrue(reqs, 'the stroke canvas was created'); self.assertNotIn(True, reqs, 'no low-latency (desynchronized) canvas on Android'); ctx.close()
 
+    # ---------- study tape ----------
+    INKA = """([s,x,y])=>{const c=document.querySelector(s+' canvas.ink'),k=c.width/c.clientWidth;return c.getContext('2d').getImageData(Math.round(x*k),Math.round(y*k),1,1).data[3]}"""
+    def test_study_tape_covers_peels_and_reveals(self):
+        pg = self.page(412, 860); cid, sel = self.open_card(pg)
+        pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'shape',shape:'tape'})}"); self.draw(pg, sel, [[30, 30], [150, 50], [260, 70]], type='mouse')
+        o = self.docobjs(pg, cid); self.assertEqual([(x['t'], x['k'], x.get('tp')) for x in o], [('shape', 'rect', 1)], 'a box flagged as tape')
+        self.assertEqual(pg.evaluate(self.INKA, [sel, 145, 50]), 255, 'the strip is opaque: it hides the text under it')
+        v = pg.evaluate("()=>Annot.validate(Annot.dump())"); self.assertEqual(v['docs']['q:' + cid]['objs'][0].get('tp'), 1, 'kept through a backup')
+        pg.evaluate("()=>Annot._debug.setOn(false)"); pg.wait_for_timeout(200)
+        box = pg.locator(sel).bounding_box(); pg.mouse.click(box['x'] + 145, box['y'] + 50); pg.wait_for_timeout(250)
+        self.assertEqual(self.docobjs(pg, cid)[0].get('pe'), 1, 'a tap peels it (saved)'); self.assertLess(pg.evaluate(self.INKA, [sel, 145, 50]), 50, 'peeled: the text shows')
+        pg.mouse.click(box['x'] + 145, box['y'] + 50); pg.wait_for_timeout(250); self.assertIsNone(self.docobjs(pg, cid)[0].get('pe'), 'a second tap restores it')
+        pg.evaluate("()=>Annot._debug.setOn(true)"); pg.keyboard.press('Control+z'); pg.wait_for_timeout(150); self.assertEqual(self.docobjs(pg, cid)[0].get('pe'), 1, 'one undo step per tap (undo lives in annotation mode)')
+        b = pg.locator('#an-tape'); self.assertTrue(b.is_visible(), 'SHOW ALL appears on a page with tape'); r = b.bounding_box(); self.assertGreaterEqual(min(r['width'], r['height']), 44)
+        pg.keyboard.press('Control+z'); pg.wait_for_timeout(150); pg.evaluate("()=>Annot._debug.setOn(false)")   # covered again
+        b.click(); pg.wait_for_timeout(200); self.assertLess(pg.evaluate(self.INKA, [sel, 145, 50]), 50, 'SHOW ALL reveals every strip'); self.assertIsNone(self.docobjs(pg, cid)[0].get('pe'), 'without changing what is saved')
+        b.click(); pg.wait_for_timeout(200); self.assertEqual(pg.evaluate(self.INKA, [sel, 145, 50]), 255, 'HIDE ALL covers them again')
+        self.assertEqual(b.evaluate("e=>getComputedStyle(e).textTransform"), 'uppercase'); self.assertEqual(self.errs, [])
     def test_print_shows_every_answer_with_ink_and_full_highlights_even_from_dark_mode(self):   # export a chapter: browser Print / Save as PDF
         pg = self.page(800, 1000); cid, sel = self.open_card(pg); pg.evaluate("()=>{document.documentElement.dataset.theme='dark';Object.assign(Annot.state(),{tool:'hl'})}")
         self.draw(pg, sel, [[40, 40], [160, 42], [280, 40]]); pg.evaluate("()=>{Annot.state().tool='pen'}"); self.draw(pg, sel, [[40, 80], [160, 90], [280, 80]])

@@ -210,3 +210,9 @@ body.an-hidden .an-wsadd,body.an-hidden .an-wsb{display:none}
    --zz-f); not in MCQ sessions (they live in the footer there) or while the pen is on. */
 html body:not(.mx-live):not(.an-on) #an-fab{translate:calc(var(--zz-f,0) * (100% + 80px)) 0}
 html body.an-left:not(.mx-live):not(.an-on) #an-fab{translate:calc(var(--zz-f,0) * (-100% - 80px)) 0}
+/* study tape: SHOW ALL / HIDE ALL, shown only when the page has tape (capitals and bold, owner rule) */
+#an-tape{display:none;position:fixed;z-index:58;left:12px;bottom:calc(150px + env(safe-area-inset-bottom,0px));min-height:44px;min-width:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line,#ddd);
+ background:var(--panel,#fff);color:var(--lbl,#7a1f36);font:700 12px var(--body,system-ui,sans-serif);letter-spacing:.06em;text-transform:uppercase;box-shadow:0 8px 24px rgba(42,22,39,.22)}
+body.an-has-tape #an-tape{display:inline-flex;align-items:center}
+#an-tape:focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:2px}
+@media print{#an-tape{display:none!important}}
