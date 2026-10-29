@@ -86,6 +86,7 @@ function cleanObj(o){if(!o||typeof o!=='object'||Array.isArray(o))return null;
  if(o.g!==undefined){if(typeof o.g!=='string'||o.g.length>MAX.g||!/^[A-Za-z0-9+/]*={0,2}$/.test(o.g))return null;r.g=o.g}
  if(o.al!==undefined){if(!num(o.al,.05,1))return null;r.al=+o.al}
  if(o.t==='stroke'&&(o.e===1||o.e===2||o.e===3))r.e=o.e;
+ if(o.t==='shape'&&o.tp===1){r.tp=1;if(o.pe===1)r.pe=1}   /* study tape: a box shape flagged as tape (older versions still show it as a box) */
  if(o.x!==undefined){if(typeof o.x!=='string'||o.x.length>MAX.txt)return null;r.x=o.x}
  if(o.q!==undefined){if(!o.q||typeof o.q!=='object'||Array.isArray(o.q))return null;const q={};let n=0;for(const k in o.q){if(++n>12||!/^\w{1,8}$/.test(k))return null;const v=o.q[k];if(k==='f'&&!['sans','serif','hand'].includes(v))return null;if(typeof v==='string'&&v.length<=MAX.txt)q[k]=v;else if(num(v,-1e7,1e7))q[k]=v;else return null}r.q=q}
  return r}
@@ -135,7 +136,7 @@ const DEFPRE=[{t:'pen',p:'ball',c:'k',z:2.2},{t:'pen',p:'fnt',c:'b',z:3.2},{t:'p
 const P={tool:'pen',erm:'stroke',erf:'all',font:'sans',snap:true,shape:'line',stk:'star',mk:'hi',pen:'ball',col:'k',hlc:'y',mode:'pf',gest:true,lh:false,barrel:'er',smooth:.5,press:1,sizes:{ball:2.2,fnt:3.2,pencil:3,hl:14,er:14,shape:2.2,tx:16,st:30},pre:DEFPRE.map(x=>Object.assign({},x)),pos:null,dock:null,recent:[],mini:false,seenPen:false,hide:false};
 const KIND={ball:'ball',fnt:'fnt',pencil:'pen'};
 function applySettings(s){if(!s||typeof s!=='object')return;const pick=(k,ok)=>{if(k in s&&ok(s[k]))P[k]=s[k]};
- pick('tool',v=>['pen','hl','hi','shape','tx','st','nt','ls','om','sel','er','hand'].includes(v));pick('stk',v=>['star','exam','ask','tick','cross','bulb'].includes(v));pick('mk',v=>['hi','u','s','sq'].includes(v));pick('gest',v=>typeof v==='boolean');pick('lh',v=>typeof v==='boolean');pick('barrel',v=>['er','hl','off'].includes(v));pick('shape',v=>['line','arrow','rect','ellipse','tri','brace'].includes(v));pick('snap',v=>typeof v==='boolean');pick('font',v=>['sans','serif','hand'].includes(v));pick('erm',v=>v==='stroke'||v==='precise');pick('erf',v=>v==='all'||v==='hl');pick('pen',v=>v in KIND);pick('col',v=>v in PAL||/^#[0-9a-f]{6}$/i.test(v));pick('hlc',v=>v in HLP||/^#[0-9a-f]{6}$/i.test(v));pick('mode',v=>v==='pf'||v==='po');
+ pick('tool',v=>['pen','hl','hi','shape','tx','st','nt','ls','om','sel','er','hand'].includes(v));pick('stk',v=>['star','exam','ask','tick','cross','bulb'].includes(v));pick('mk',v=>['hi','u','s','sq'].includes(v));pick('gest',v=>typeof v==='boolean');pick('lh',v=>typeof v==='boolean');pick('barrel',v=>['er','hl','off'].includes(v));pick('shape',v=>['line','arrow','rect','ellipse','tri','brace','tape'].includes(v));pick('snap',v=>typeof v==='boolean');pick('font',v=>['sans','serif','hand'].includes(v));pick('erm',v=>v==='stroke'||v==='precise');pick('erf',v=>v==='all'||v==='hl');pick('pen',v=>v in KIND);pick('col',v=>v in PAL||/^#[0-9a-f]{6}$/i.test(v));pick('hlc',v=>v in HLP||/^#[0-9a-f]{6}$/i.test(v));pick('mode',v=>v==='pf'||v==='po');
  pick('smooth',v=>num(v,0,1));pick('press',v=>num(v,0,1));pick('mini',v=>typeof v==='boolean');pick('hide',v=>typeof v==='boolean');pick('seenPen',v=>typeof v==='boolean');
  pick('dock',v=>v===null||/^[tb][lcr]$/.test(v));pick('recent',v=>Array.isArray(v)&&v.length<=6&&v.every(c=>/^#[0-9a-f]{6}$/i.test(c)));pick('pos',v=>Array.isArray(v)&&v.length===2&&v.every(n=>num(n,-5000,20000)));
  if(s.sizes&&typeof s.sizes==='object')for(const k in P.sizes)if(num(s.sizes[k],1,60))P.sizes[k]=s.sizes[k];
@@ -187,7 +188,7 @@ function drawStroke(g,pts,kind,color,w,al,fs,bl){const f=fs||fsNow(),base=w*f;if
  const o=outline(pts,wf);g.beginPath();qpath(g,o.L,true);qpath(g,o.R.slice().reverse(),false);g.closePath();g.fill();
  g.beginPath();g.arc(pts[0][0],pts[0][1],first/2,0,6.3);g.arc(pts[pts.length-1][0],pts[pts.length-1][1],last/2,0,6.3);g.fill();g.restore()}
 /* shapes: two corner points in anchor-relative ints, drawn as constant-width polylines */
-function snapShape(k,A,B){let dx=B[0]-A[0],dy=B[1]-A[1];const len=Math.hypot(dx,dy);if(!len)return B;
+function snapShape(k,A,B){if(k==='tape')return B;let dx=B[0]-A[0],dy=B[1]-A[1];const len=Math.hypot(dx,dy);if(!len)return B;
  if(k==='line'||k==='arrow'){const ang=Math.atan2(dy,dx),st=Math.PI/12,n=Math.round(ang/st)*st;if(Math.abs(ang-n)<.07){B=[A[0]+Math.cos(n)*len,A[1]+Math.sin(n)*len]}}
  else if(Math.abs(Math.abs(dx)-Math.abs(dy))<.05*Math.max(Math.abs(dx),Math.abs(dy))){const m=Math.max(Math.abs(dx),Math.abs(dy));B=[A[0]+Math.sign(dx)*m,A[1]+Math.sign(dy)*m]}
  return B}
@@ -458,7 +459,7 @@ function paint0(L){if(L.tb)tbGut(L);else wsEnsure(L);const host=L.host,d=docOf(L
   if(o.t==='mark'&&OPTK.includes(o.k)){paintOpt(L,o,gi,hr);continue}
   if(o.t==='mark'){const rs=markRects(L,o,hr);o.orphan=!rs;if(rs)drawMark(gh,gi,o,rs,L.tb);continue}
   if(o.t==='sticker'){const sp=stkPos(L,o,hr);o.orphan=!sp;if(sp)drawSticker(gi,o.k,sp.x,sp.y,sp.s,col(o.c),sp.r);continue}
-  if(o.t==='shape'){const ps=shapeOf(L,o,hr);o.orphan=!ps;ps&&ps.forEach(pl=>drawStroke(gi,pl,'ball',col(o.c),o.w,o.al,null,3));continue}
+  if(o.t==='shape'){const ps=shapeOf(L,o,hr);o.orphan=!ps;if(o.tp){if(ps&&ps[0]){tapeDraw(gi,ps[0],!!(o.pe||tapeAll));tapeSeen()}continue}ps&&ps.forEach(pl=>drawStroke(gi,pl,'ball',col(o.c),o.w,o.al,null,3));continue}
   if(o.t!=='stroke')continue;const pts=pxOf(L,o,hr);if(!pts||!pts.length){o.orphan=!pts;continue}o.orphan=false;
   if(o.k==='hl')drawStroke(gh,pts,'hl',col(o.c,true),o.w,o.al,null);else drawStroke(gi,pts,o.k,col(o.c),o.w,o.al,null,o.e)}}
 const repaintAll=()=>layers.forEach(sched);
@@ -505,6 +506,7 @@ function wetFrame(){const L=live&&live.L;if(!L||live.raf)return;live.raf=request
  let pts=live.pts.map(q=>[q.x,q.y,q.p]);if(live.pred)pts=pts.concat(live.pred);const t=live.tool;
  if(t==='sel'){drawOverlay(g,L,live.mode==='lasso'?live.pts:null);return}
  if(t==='er'){const q=live.pts[live.pts.length-1];g.save();g.strokeStyle=col('k');g.globalAlpha=.6;g.lineWidth=1;g.beginPath();g.arc(q.x,q.y,P.sizes.er/2,0,6.3);g.stroke();g.restore();return}
+ if(t==='shape'&&P.shape==='tape'){const a=live.pts[0],b=live.pts[live.pts.length-1];tapeDraw(g,[[a.rx,a.ry],[b.rx,b.ry]],false);return}
  if(t==='shape'){const a=live.pts[0],b=live.pts[live.pts.length-1],A=[a.rx,a.ry];shapePolys(P.shape,A,snapShape(P.shape,A,[b.rx,b.ry])).forEach(pl=>drawStroke(g,pl,'ball',col(P.col),P.sizes.shape,null,null,3));return}
  if(live.snap){shapePolys(live.snap.k,live.snap.A,live.snap.B).forEach(pl=>drawStroke(g,pl,'ball',col(P.col),sizeOf('pen'),null,null,3));return}
  if(live.straight&&pts.length>1){const z=live.pts[live.pts.length-1];pts=[pts[0],[z.rx,z.ry,z.p]]}else if(t==='hl')pts=smoothHl(pts);
@@ -520,8 +522,29 @@ function segd(px,py,a,b){const dx=b[0]-a[0],dy=b[1]-a[1],l=dx*dx+dy*dy;let t=l?(
 function hit(pts,x,y,r){if(pts.length<2)return pts.length&&Math.hypot(pts[0][0]-x,pts[0][1]-y)<=r;for(let i=0;i<pts.length-1;i++)if(segd(x,y,pts[i],pts[i+1])<=r)return true;return false}
 /* stylus buttons: eraser end / eraser button (buttons&32) erases while held; the barrel button (buttons&2) switches to a configurable tool while held. Needs hardware that reports these bits. */
 function stylusTool(e){const t=P.tool;if(e.pointerType!=='pen')return t;if(!['pen','hl','shape'].includes(t))return t;if(e.buttons&32||e.button===5)return 'er';if(e.buttons&2&&P.barrel!=='off')return P.barrel;return t}
-function commitShape(L,host,k,A,B,sz){const W=host.clientWidth,f=fsNow(),bl=nearest(host,A[0],A[1]),org=bl?origin(host,{b:bl.id}):{x:0,y:0},e=p=>[Math.round((p[0]-org.x)/W*REF),Math.round((p[1]-org.y)/f*YU)],ea=e(A),eb=e(B);
- commit(L,{i:ID(),t:'shape',k,c:P.col,w:+sz/f,a:{b:bl?bl.id:null},q:{x1:ea[0],y1:ea[1],x2:eb[0],y2:eb[1]}})}
+/* ---------- study tape: opaque strips over text or ink for viva revision. Tap (annotation off, or the Scroll tool) to peel or
+   restore, one undo step each; SHOW ALL / HIDE ALL reveals or covers every strip on the page. Stored as a box shape flagged tp:1
+   (pe:1 when peeled), so older app versions keep it as a plain box. ---------- */
+let tapeAll=false;
+function tapeBox(pts){let a=1e9,b=1e9,c=-1e9,d=-1e9;pts.forEach(p=>{a=Math.min(a,p[0]);b=Math.min(b,p[1]);c=Math.max(c,p[0]);d=Math.max(d,p[1])});return[a,b,c,d]}
+function tapeDraw(g,pts,open){const[x0,y0,x1,y1]=tapeBox(pts),w=x1-x0,h=y1-y0;if(w<2||h<2)return;const th=document.documentElement.dataset.theme,dark=th==='dark'||(!th&&matchMedia('(prefers-color-scheme: dark)').matches);
+ g.save();const rr=(x,y,ww,hh,r)=>{g.beginPath();g.moveTo(x+r,y);g.arcTo(x+ww,y,x+ww,y+hh,r);g.arcTo(x+ww,y+hh,x,y+hh,r);g.arcTo(x,y+hh,x,y,r);g.arcTo(x,y,x+ww,y,r);g.closePath()};
+ if(open){g.setLineDash([5,4]);g.lineWidth=1.5;g.strokeStyle=dark?'rgba(233,200,140,.55)':'rgba(150,110,40,.55)';rr(x0,y0,w,h,4);g.stroke()}
+ else{rr(x0,y0,w,h,4);g.fillStyle=dark?'#4a3f2c':'#efdfae';g.fill();g.clip();g.globalAlpha=.10;g.strokeStyle=dark?'#fff':'#7a5a1c';g.lineWidth=1;for(let x=x0-h;x<x1;x+=7){g.beginPath();g.moveTo(x,y1);g.lineTo(x+h,y0);g.stroke()}
+  g.globalAlpha=1;g.strokeStyle=dark?'rgba(0,0,0,.35)':'rgba(122,90,28,.35)';rr(x0+.5,y0+.5,w-1,h-1,4);g.stroke()}
+ g.restore()}
+function tapeSeen(){document.body.classList.add('an-has-tape')}
+function tapeHit(L,x,y){const d=docOf(L.key);if(!d)return null;const hr=L.host.getBoundingClientRect();for(let i=d.objs.length-1;i>=0;i--){const o=d.objs[i];if(o.t!=='shape'||!o.tp)continue;const ps=shapeOf(L,o,hr);if(!ps||!ps[0])continue;const[a,b,c,e]=tapeBox(ps[0]);if(x>=a&&x<=c&&y>=b&&y<=e)return o}return null}
+function tapeSet(L,o,pe){const d=docOf(L.key),i=d.objs.indexOf(o);if(i<0)return;const n=Object.assign({},o);if(pe)n.pe=1;else delete n.pe;d.objs[i]=n;pushOp(L.key,{t:'repn',pairs:[{old:o,n}]});touch(L.key);sched(L);sync()}
+document.addEventListener('click',e=>{if(P.on&&P.tool!=='hand')return;   /* by position, not target: decorative layers can sit over the answer */
+ for(const host of document.querySelectorAll('.an-host')){const r=host.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)continue;const L=layers.get(host);if(!L)continue;
+  const o=tapeHit(L,e.clientX-r.left,e.clientY-r.top);if(!o)continue;e.preventDefault();e.stopPropagation();tapeSet(L,o,!o.pe);return}},true);
+function tapeAllSet(show){tapeAll=show;const b=document.getElementById('an-tape');if(b){b.textContent=show?'Hide all':'Show all';b.setAttribute('aria-pressed',String(show))}
+ document.querySelectorAll('.an-host').forEach(h=>{const L=layers.get(h);if(!L)return;if(!show){const d=docOf(L.key);if(d){const pairs=[];d.objs.forEach((o,i)=>{if(o.t==='shape'&&o.tp&&o.pe){const n=Object.assign({},o);delete n.pe;d.objs[i]=n;pairs.push({old:o,n})}});if(pairs.length){pushOp(L.key,{t:'repn',pairs});touch(L.key);sync()}}}sched(L)})}
+(()=>{const b=document.createElement('button');b.id='an-tape';b.type='button';b.textContent='Show all';b.setAttribute('aria-pressed','false');b.setAttribute('aria-label','Study tape: show or hide every strip on this page');b.setAttribute('data-no-swipe','');
+ b.addEventListener('click',()=>tapeAllSet(!tapeAll));const go=()=>document.body.append(b);document.body?go():addEventListener('DOMContentLoaded',go)})();
+function commitShape(L,host,k,A,B,sz){const tape=k==='tape';if(tape)k='rect';const W=host.clientWidth,f=fsNow(),bl=nearest(host,A[0],A[1]),org=bl?origin(host,{b:bl.id}):{x:0,y:0},e=p=>[Math.round((p[0]-org.x)/W*REF),Math.round((p[1]-org.y)/f*YU)],ea=e(A),eb=e(B);
+ commit(L,Object.assign(tape?{tp:1}:{},{i:ID(),t:'shape',k,c:P.col,w:+sz/f,a:{b:bl?bl.id:null},q:{x1:ea[0],y1:ea[1],x2:eb[0],y2:eb[1]}}))}
 /* draw and hold (~500 ms): a rough closed or straight stroke becomes a clean shape. Returns {k,A,B} in host px, or null. */
 function recognise(pts){const n=pts.length;if(n<6)return null;let a=1e9,b=1e9,c=-1e9,d=-1e9,len=0;pts.forEach((q,i)=>{a=Math.min(a,q[0]);c=Math.max(c,q[0]);b=Math.min(b,q[1]);d=Math.max(d,q[1]);if(i)len+=Math.hypot(q[0]-pts[i-1][0],q[1]-pts[i-1][1])});
  const w=c-a,h=d-b,diag=Math.hypot(w,h);if(diag<24)return null;const F=pts[0],Z=pts[n-1],chord=Math.hypot(Z[0]-F[0],Z[1]-F[1]);
@@ -686,7 +709,7 @@ function togglePop(id){if(pop&&pop.dataset.for===id){closePop();return}closePop(
   mk('erm',[['stroke','Stroke'],['precise','Precise']],'Erase by','Stroke removes a whole mark; Precise only rubs out the part you touch');mk('erf',[['all','Everything'],['hl','Highlights']],'Affects','Highlights only leaves ink, shapes and text alone')}
  if(id==='tx'){const g=document.createElement('div');g.className='an-seg';[['sans','Sans'],['serif','Serif'],['hand','Hand']].forEach(([k,n])=>{const b=document.createElement('button');b.type='button';b.textContent=n;b.style.fontFamily=FONTS[k]||'inherit';b.setAttribute('aria-pressed',P.font===k);b.onclick=()=>{P.font=k;setting('font',k);g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));if(typeof drawPv==='function')drawPv()};g.append(b)});pop.append(g)}
  if(id==='st'){const g=document.createElement('div');g.className='an-seg an-stks';Object.keys(STK).forEach(k=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label',STKL[k]);b.title=STKL[k];b.setAttribute('aria-pressed',P.stk===k);b.append(svg('s_'+k));b.onclick=()=>{P.stk=k;setting('stk',k);g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));drawPv()};g.append(b)});pop.append(g)}
- if(id==='shape'){const g=document.createElement('div');g.className='an-seg';[['line','Line'],['arrow','Arrow'],['rect','Box'],['ellipse','Oval'],['tri','Triangle'],['brace','Brace']].forEach(([k,n])=>{const b=document.createElement('button');b.type='button';b.textContent=n;b.setAttribute('aria-pressed',P.shape===k);b.onclick=()=>{P.shape=k;setting('shape',k);closePop();sync()};g.append(b)});pop.append(g)}
+ if(id==='shape'){const g=document.createElement('div');g.className='an-seg';[['line','Line'],['arrow','Arrow'],['rect','Box'],['ellipse','Oval'],['tri','Triangle'],['brace','Brace'],['tape','Tape']].forEach(([k,n])=>{const b=document.createElement('button');b.type='button';b.textContent=n;b.setAttribute('aria-pressed',P.shape===k);b.onclick=()=>{P.shape=k;setting('shape',k);closePop();sync()};g.append(b)});pop.append(g)}
  if(id!=='er'){const g=document.createElement('div');g.className='an-cols';const pal=id==='hl'?HLP:PAL,cur=id==='hl'?P.hlc:P.col;Object.keys(pal).forEach(k=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label',pal[k][3]);b.setAttribute('aria-pressed',cur===k);b.style.setProperty('--c',col(k,id==='hl'));b.onclick=()=>{id==='hl'?P.hlc=k:P.col=k;setting(id==='hl'?'hlc':'col',k);closePop();sync()};g.append(b)});
   const key2=id==='hl'?'hlc':'col',setC=hx=>{P[key2]=hx;sync()},saveC=hx=>{setting(key2,hx);addRecent(hx)};
   const cu=document.createElement('button');cu.type='button';cu.className='an-cu';cu.setAttribute('aria-label','Custom colour');cu.setAttribute('aria-expanded','false');let cp=null;
