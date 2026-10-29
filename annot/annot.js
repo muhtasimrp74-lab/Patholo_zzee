@@ -154,7 +154,7 @@ function layerOf(host,key,make){let L=layers.get(host);if(L)return L;key=key||ke
 function cv(L,cls){let c=L[cls];if(!c){c=document.createElement('canvas');c.className='an-c '+cls;c.setAttribute('aria-hidden','true');c._L=L;L.host.append(c);L[cls]=c;
  /* the live-stroke canvas asks the browser to skip compositor sync where supported: ink follows the pen with less lag */
  if(cls==='wet'){try{c.getContext('2d',{desynchronized:true})}catch(e){}}}return c}
-function size(c,w,h){const wn=c._L&&c._L.win;let oy=0;{let tp='',ht='';if(wn){oy=wn.y;h=wn.h;
+function size(c,w,h){const wn=c._L&&c._L.win,wet=c._L&&c===c._L.wet;let oy=0;{let tp='',ht='';if(wn||wet){if(wn){oy=wn.y;h=wn.h}
   /* the live-stroke canvas only needs the visible screen: redrawing a screen-sized layer each frame is far cheaper than the whole window */
   if(c===c._L.wet){const hh=c._L.host,y=Math.max(0,Math.floor(-hh.getBoundingClientRect().top));oy=y;h=Math.max(1,Math.min(Math.ceil(innerHeight),hh.clientHeight-y))}
   tp=oy+'px';ht=h+'px'}if(c.style.top!==tp)c.style.top=tp;if(c.style.height!==ht)c.style.height=ht}
@@ -324,14 +324,17 @@ function openNote(L,id,at){if(nted&&nted.L===L&&nted.id===id&&id){closeNote(true
  el.append(ta,row);el.style.left=clamp(x-20,4,Math.max(4,host.clientWidth-232))+'px';el.style.top=(y+PIN/2+4)+'px';host.append(el);nted={L,el,ta,id:old?old.i:null,pos};ta.focus()}
 document.addEventListener('pointerdown',e=>{if(nted&&!nted.el.contains(e.target)&&!(e.target.closest&&e.target.closest('.an-pin')))closeNote(true)},true);
 let las=null;
-function laserPt(e){const hr=las.L.host.getBoundingClientRect(),evs=e.getCoalescedEvents?e.getCoalescedEvents():[];(evs.length?evs:[e]).forEach(x=>las.pts.push({x:x.clientX-hr.left,y:x.clientY-hr.top,t:performance.now()}))}
+function laserPt(e){const hr=las.L.host.getBoundingClientRect(),evs=e.getCoalescedEvents?e.getCoalescedEvents():[];(evs.length?evs:[e]).forEach(x=>{const p={x:x.clientX-hr.left,y:x.clientY-hr.top,t:performance.now()},l=las.pts[las.pts.length-1];
+  if(l&&Math.hypot(p.x-l.x,p.y-l.y)<2){l.t=p.t;return}las.pts.push(p)});if(las.pts.length>96)las.pts.splice(0,las.pts.length-96)}   /* near-duplicate points merged, trail capped: the laser drew hundreds of segments a frame */
 /* laser: a curved ribbon that thins and fades from the head to the tail. Full effects: a soft red halo, a red body and a white-hot core
    (no shadow blur on the trail: it is costly on phones). Effects Off / Minimal / reduced motion (zzTier()<2): one calm line that fades sooner. Never saved. */
 const LZP=[[[22,'255,40,40',.16],[9,'255,60,60',.6],[3,'255,236,236',.95]],[[3.5,'235,40,40',.85]]];
 function laserLoop(){if(!las||las.raf)return;const f=()=>{const s=las;if(!s)return;s.raf=0;const L=s.L,w=L.host.clientWidth,h=L.host.clientHeight,g=size(cv(L,'wet'),w,h),now=performance.now(),calm=(window.zzTier?zzTier():2)<2,life=calm?450:900;g.clearRect(0,0,w,h);s.pts=s.pts.filter(p=>now-p.t<life);const Q=s.pts;
   if(Q.length){g.save();g.lineCap='butt';g.lineJoin='round';const n=Q.length,mid=(a,b)=>[(a.x+b.x)/2,(a.y+b.y)/2];
-   for(const[wd,rgb,al]of LZP[calm?1:0])for(let i=1;i<n;i++){const a=Math.max(0,1-(now-Q[i].t)/life),A=i>1?mid(Q[i-2],Q[i-1]):[Q[0].x,Q[0].y],B=i<n-1?mid(Q[i-1],Q[i]):[Q[i].x,Q[i].y];
-    g.strokeStyle='rgba('+rgb+','+(al*a).toFixed(3)+')';g.lineWidth=wd*(.35+.65*a);g.beginPath();g.moveTo(A[0],A[1]);g.quadraticCurveTo(Q[i-1].x,Q[i-1].y,B[0],B[1]);g.stroke()}
+   /* drawn as ~8 batched paths per pass (segments grouped by age) instead of one stroke call per segment: the laser lagged on phones */
+   for(const[wd,rgb,al]of LZP[calm?1:0]){const NB=8,paths=[];for(let i=1;i<n;i++){const a=Math.max(0,1-(now-Q[i].t)/life),b=Math.min(NB-1,Math.floor(a*NB)),A=i>1?mid(Q[i-2],Q[i-1]):[Q[0].x,Q[0].y],B=i<n-1?mid(Q[i-1],Q[i]):[Q[i].x,Q[i].y];
+    const p=paths[b]||(paths[b]=new Path2D());p.moveTo(A[0],A[1]);p.quadraticCurveTo(Q[i-1].x,Q[i-1].y,B[0],B[1])}
+    paths.forEach((p,b)=>{if(!p)return;const a=(b+.5)/NB;g.strokeStyle='rgba('+rgb+','+(al*a).toFixed(3)+')';g.lineWidth=wd*(.35+.65*a);g.stroke(p)})}
    if(s.down){const q=Q[n-1];g.fillStyle='rgba(255,60,60,.95)';if(!calm){g.shadowColor='rgba(255,40,40,.9)';g.shadowBlur=14}g.beginPath();g.arc(q.x,q.y,6,0,6.3);g.fill();g.shadowBlur=0;g.fillStyle='rgba(255,244,244,.95)';g.beginPath();g.arc(q.x,q.y,2.4,0,6.3);g.fill()}g.restore()}
   if(s.down||Q.length)s.raf=requestAnimationFrame(f);else{g.clearRect(0,0,w,h);las=null}};las.raf=requestAnimationFrame(f)}
 function laserStart(e,host){const L=layerOf(host);if(!L)return;e.preventDefault();try{host.setPointerCapture(e.pointerId)}catch(x){}
@@ -489,6 +492,7 @@ document.addEventListener('click',e=>{if(!P.on||P.tool==='hand')return;const t=e
 /* ---------- input ---------- */
 let live=null,lastPen=0,drawing=false;
 const penRecent=()=>performance.now()-lastPen<1200;
+document.addEventListener('pointermove',e=>{if(e.pointerType==='pen'&&!e.buttons)lastPen=performance.now()},{capture:true,passive:true});   /* a hovering pen counts as in use: palms resting meanwhile do not draw */
 function simPress(L,x,y,t){const l=live.pts[live.pts.length-1];if(!l)return .5;const dt=Math.max(1,t-l.t),v=Math.hypot(x-l.x,y-l.y)/dt;return clamp(.95-v*.45,.25,.95)}
 /* pencil: leaning the pen over widens and softens the line, like the side of a real pencil (folded into the stored pressure so it survives reload and backup) */
 function tiltP(p,ev){if(live&&live.tool==='pen'&&P.pen==='pencil'&&ev.pointerType==='pen'){const t=Math.min(1,Math.hypot(ev.tiltX||0,ev.tiltY||0)/70);return clamp(p+t*.45,0,1)}return p}
@@ -533,8 +537,12 @@ function recognise(pts){const n=pts.length;if(n<6)return null;let a=1e9,b=1e9,c=
   const ok=V.every((q,i)=>{const g=an(V[(i+3)%4],q,V[(i+1)%4]);return g>62&&g<118});if(ok){const e0=Math.atan2(V[1][1]-V[0][1],V[1][0]-V[0][0])*180/Math.PI,m=((e0%90)+90)%90;if(m<14||m>76)return box('rect')}}
  return err<.14?box('ellipse'):null}
 function onDown(e){if(!P.on||!e.isPrimary||P.tool==='hand'||P.tool==='hi'||(e.pointerType==='mouse'&&e.button!==0))return;const host=hostOf(e.target);if(!host)return;if(P.tool==='om'){if(host.matches(MXS)&&!e.target.closest('.mx-meta,.mx-qa,.mx-nbox'))omDown(e,host);return}if(e.target.closest&&e.target.closest('.an-tx,.an-pin,.an-mn,.an-sticky,.an-wsb,.an-wsadd,'+TBH+' .tbtoc,'+MXS+' .mx-meta,'+MXS+' .mx-qa,'+MXS+' .mx-nbox'))return;
- if(e.pointerType==='pen'){lastPen=performance.now();offerPenOnly()}
+ if(e.pointerType==='pen'){lastPen=performance.now();offerPenOnly();
+  /* palm rejection: a palm usually lands just before the pen; a touch stroke begun in the last 0.7 s is discarded unsaved */
+  if(live&&live.touch&&/^(pen|hl|shape)$/.test(live.tool)&&live.pts.length&&performance.now()-live.pts[0].t<700){const l=live;live=null;drawing=false;document.body.classList.remove('an-drawing');
+   try{const c=l.L.wet;if(c){const g=c.getContext('2d');g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,c.width,c.height)}}catch(x){}}}
  if(e.pointerType==='touch'&&(P.mode==='po'||penRecent()))return;
+ if(e.pointerType==='touch'&&(e.width>32||e.height>32))return;   /* palm rejection: a palm or the side of a hand is a large contact, never a stroke */
  if(P.tool==='tx'){txPend={host,x:e.clientX,y:e.clientY};return}
  if(P.tool==='st'||P.tool==='nt'){tapPend={host,x:e.clientX,y:e.clientY,tool:P.tool};return}
  if(P.tool==='ls'){laserStart(e,host);return}

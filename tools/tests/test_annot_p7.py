@@ -219,4 +219,25 @@ class ProTools(unittest.TestCase):
             if not on: pg.click('#an-fab-on'); pg.wait_for_timeout(300)
         self.assertTrue(pg.get_attribute('#an-fab-on', 'aria-label')); self.assertEqual(errs, []); pg.close()
 
+    # ---------- laser cost and palm rejection ----------
+    PTR = """([s,list])=>{const h=document.querySelector(s),r=h.getBoundingClientRect();for(const [n,id,type,x,y,b,w] of list){const e=new PointerEvent(n,{pointerId:id,pointerType:type,isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+y,pressure:b?.5:0,buttons:b,width:w||1,height:w||1});(n==='pointerdown'?h:document).dispatchEvent(e)}}"""
+    def test_laser_draws_a_few_batched_paths_on_a_screen_sized_canvas(self):
+        pg = self.page(412, 860); cid, sel = self.open_card(pg); k = 'q:' + cid; pg.evaluate("()=>{Annot.state().tool='ls'}")
+        r = pg.evaluate("""async([s,k])=>{let n=0;const o=CanvasRenderingContext2D.prototype.stroke;CanvasRenderingContext2D.prototype.stroke=function(){n++;return o.apply(this,arguments)};
+            const h=document.querySelector(s),r=h.getBoundingClientRect(),ev=(t,x,b)=>new PointerEvent(t,{pointerId:21,pointerType:'pen',isPrimary:true,bubbles:true,cancelable:true,clientX:r.left+x,clientY:r.top+40+(x%40),pressure:.5,buttons:b});
+            h.dispatchEvent(ev('pointerdown',20,1));let frames=0;for(let i=0;i<30;i++){for(let j=0;j<6;j++)document.dispatchEvent(ev('pointermove',20+(i*6+j)*1.5,1));await new Promise(z=>requestAnimationFrame(z));frames++}
+            const L=Annot._debug.layer(k),c=L.wet,css=c.height/(c.width/c.clientWidth);document.dispatchEvent(ev('pointerup',300,0));CanvasRenderingContext2D.prototype.stroke=o;return [n/frames,css,innerHeight]}""", [sel, k])
+        self.assertLessEqual(r[0], 40, 'stroke calls per frame: %.0f (one per segment before)' % r[0]); self.assertLessEqual(r[1], r[2] + 1, 'the live canvas covers the screen, not the whole answer'); self.assertEqual(self.errs, [])
+    def test_palm_rejection(self):
+        pg = self.page(412, 860); cid, sel = self.open_card(pg); pg.evaluate("()=>{Object.assign(Annot.state(),{tool:'pen',pen:'ball',mode:'pf'})}")
+        n = lambda: len(self.docobjs(pg, cid))
+        pg.evaluate(self.PTR, [sel, [['pointerdown', 31, 'touch', 40, 60, 1, 46]] + [['pointermove', 31, 'touch', 40 + i * 8, 64, 1, 46] for i in range(10)] + [['pointerup', 31, 'touch', 120, 64, 0, 46]]]); pg.wait_for_timeout(150)
+        self.assertEqual(n(), 0, 'a large contact (palm) does not draw')
+        pg.evaluate(self.PTR, [sel, [['pointerdown', 32, 'touch', 40, 120, 1, 10]] + [['pointermove', 32, 'touch', 40 + i * 8, 124, 1, 10] for i in range(6)]])
+        pg.evaluate(self.PTR, [sel, [['pointerdown', 33, 'pen', 60, 200, 1]] + [['pointermove', 33, 'pen', 60 + i * 10, 205, 1] for i in range(8)] + [['pointerup', 33, 'pen', 140, 205, 0], ['pointerup', 32, 'touch', 88, 124, 0, 10]]]); pg.wait_for_timeout(150)
+        k = [o['k'] for o in self.docobjs(pg, cid)]; self.assertEqual(len(k), 1, 'the palm stroke that began just before the pen is discarded; the pen stroke stays (%r)' % k)
+        pg.wait_for_timeout(1500)   # past the "pen used recently" window
+        pg.evaluate(self.PTR, [sel, [['pointermove', 34, 'pen', 200, 300, 0], ['pointerdown', 35, 'touch', 40, 300, 1, 10]] + [['pointermove', 35, 'touch', 40 + i * 8, 304, 1, 10] for i in range(6)] + [['pointerup', 35, 'touch', 88, 304, 0, 10]]]); pg.wait_for_timeout(150)
+        self.assertEqual(n(), 1, 'a touch while the pen hovers does not draw'); self.assertEqual(self.errs, [])
+
 if __name__ == '__main__': unittest.main()
