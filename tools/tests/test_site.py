@@ -420,6 +420,15 @@ class Browser(unittest.TestCase):
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}); pg.goto(URL + '#/02'); pg.wait_for_timeout(1000)
         r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontSize,c.lineHeight,c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li'),g('.card .ans h4.sub')]}")
         self.assertEqual(r, [['16px', '27.2px', '0.048px', '0px', '400'], ['16px', '25.6px', '0.048px', '0px', '400'], ['15.2px', 'normal', 'normal', '0px', '700']]); pg.close()
+    TAPS = r"""(id)=>{const v=document.getElementById(id),out=[];v.querySelectorAll('button,a[href],[role=button],input,select').forEach(e=>{const r=e.getBoundingClientRect();if(!r.width||e.closest('.ans,#tbbody,p,li'))return;
+        if(getComputedStyle(e).visibility==='visible'&&(r.height<43.5||r.width<43.5))out.push(Math.round(r.width)+'x'+Math.round(r.height)+' '+(e.className||e.tagName)+' '+e.textContent.trim().slice(0,12))});return out.slice(0,5)}"""
+    def test_every_control_is_at_least_44px(self):   # touch targets on all six tabs (inline links inside sentences excepted)
+        pg = self.b.new_page(viewport={'width': 412, 'height': 900}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
+        for h, v in (('#/mcqs', 'v-mcqs'), ('#/', 'v-home'), ('#/questions', 'v-questions'), ('#/qa', 'v-qa'), ('#/textbook', 'v-textbook'), ('#/menu', 'v-menu')):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1100); self.assertEqual(pg.evaluate(self.TAPS, v), [], '%s: controls under 44 px' % h)
+        pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
