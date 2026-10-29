@@ -395,6 +395,21 @@ class Browser(unittest.TestCase):
         pg = self.phone('#/'); pg.wait_for_timeout(800)
         self.assertFalse(pg.evaluate("()=>!!document.querySelector('#v-home .nh-col, #v-home .nh-col-c canvas')"))
         self.assertNotIn('Progress map', pg.inner_text('#v-home')); self.assertEqual(self.errs, []); pg.close()
+    SMALLTXT = r"""(id)=>{const v=document.getElementById(id),out=[];v.querySelectorAll('*').forEach(e=>{const r=e.getBoundingClientRect();if(!r.width||e.closest('.ans,#tbbody,svg'))return;
+        if(![...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim().length>1))return;const s=getComputedStyle(e);if(s.visibility==='visible'&&parseFloat(s.fontSize)<12)out.push(s.fontSize+' '+(e.className||e.tagName)+' '+e.textContent.trim().slice(0,12))});return out.slice(0,6)}"""
+    def test_interface_text_is_at_least_12px_and_labels_are_capitals(self):
+        pg = self.b.new_page(viewport={'width': 412, 'height': 900}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
+        for h, v in (('#/mcqs', 'v-mcqs'), ('#/', 'v-home'), ('#/qa', 'v-qa')):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1200)
+            self.assertEqual(pg.evaluate(self.SMALLTXT, v), [], '%s: interface text below 12 px' % h)
+        lab = pg.evaluate("()=>[...document.querySelectorAll('#v-home .nh-k,#v-qa .qa-k')].map(e=>{const s=getComputedStyle(e);return s.textTransform+'/'+s.fontWeight})")
+        self.assertTrue(lab and set(lab) == {'uppercase/700'}, 'section labels in capitals and bold: %r' % sorted(set(lab))); pg.close()
+    def test_answer_typography_is_unchanged_so_ink_stays_on_its_words(self):   # baseline measured before the typography pass
+        pg = self.b.new_page(viewport={'width': 412, 'height': 900}); pg.goto(URL + '#/02'); pg.wait_for_timeout(1000)
+        r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontSize,c.lineHeight,c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li'),g('.card .ans h4.sub')]}")
+        self.assertEqual(r, [['16px', '27.2px', '0.048px', '0px', '400'], ['16px', '25.6px', '0.048px', '0px', '400'], ['15.2px', 'normal', 'normal', '0px', '700']]); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
