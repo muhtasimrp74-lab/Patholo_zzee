@@ -24,7 +24,7 @@ e = lambda t: html.escape(t, quote=False)
 # ---- exam meta (importance stars + exam-year chips) ----
 import math
 def _star(on):
-    return '<svg class="zs %s" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#zz-star"/></svg>' % ('on' if on else 'off')
+    return '<i class="zs %s" aria-hidden="true"></i>' % ('on' if on else 'off')   # drawn by CSS (polish.css): one element per star instead of <svg><use>
 def xm_html(stars, refs, tag='span', boxes=None, hl=False):
     """Importance as custom stars (filled = importance, or times asked on the A-cards; at least 3 slots), each exam year as its own chip,
     and for box-viva questions each A-card with the question numbers as printed."""
