@@ -67,3 +67,6 @@ html body::before{mix-blend-mode:normal!important}
 html #v-home .nh-ch{content-visibility:auto;contain-intrinsic-size:auto 320px}
 html #v-home .nh-mr{content-visibility:auto;contain-intrinsic-size:auto 60px}
 @media print{html body #tools{display:none!important}}
+
+/* once every tab is ready (pager.js), lists and tiles stop deferring their rendering: scrolling never shows rows filling in */
+html.zz-ready :is(.card,.qi,.row,.topic,#v-home .nh-ch,#v-home .nh-mr){content-visibility:visible}

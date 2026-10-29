@@ -420,6 +420,18 @@ class Browser(unittest.TestCase):
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}); pg.goto(URL + '#/02'); pg.wait_for_timeout(1000)
         r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontSize,c.lineHeight,c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li'),g('.card .ans h4.sub')]}")
         self.assertEqual(r, [['16px', '27.2px', '0.048px', '0px', '400'], ['16px', '25.6px', '0.048px', '0px', '400'], ['15.2px', 'normal', 'normal', '0px', '700']]); pg.close()
+    def test_every_tab_is_ready_before_the_first_swipe_and_not_rebuilt_on_arrival(self):   # owner: instant, preloaded like a game
+        pg = self.b.new_page(viewport={'width': 412, 'height': 860}, has_touch=True, is_mobile=True, service_workers='block')
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(self.http_url() + '#/'); pg.wait_for_function("()=>document.documentElement.classList.contains('zz-ready')", timeout=10000); pg.wait_for_timeout(1200)
+        tabs = pg.evaluate("()=>Object.fromEntries([...document.getElementById('zz-pager').children].map(p=>[p.id.slice(2),[p.querySelectorAll('*').length,p.classList.contains('zz-see'),getComputedStyle(p).visibility]]))")
+        for t in ('mcqs', 'textbook'): self.assertGreater(tabs[t][0], 150, '%s is built before anyone visits it: %r' % (t, tabs[t]))
+        self.assertEqual(pg.evaluate("()=>[...new Set([...document.querySelectorAll('.qi,.topic')].slice(0,40).map(e=>getComputedStyle(e).contentVisibility))]"), ['visible'])
+        for t in ('v-mcqs', 'v-textbook'):
+            h, added = pg.evaluate("""async(to)=>{const T=document.getElementById('zz-pager'),P=[...T.children],k=P.findIndex(p=>p.id===to);let n=0;const mo=new MutationObserver(l=>l.forEach(m=>{if(P[k].contains(m.target))n+=m.addedNodes.length}));
+                mo.observe(T,{subtree:true,childList:true});T.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true}));T.scrollTo({left:T.clientWidth*k,behavior:'smooth'});await new Promise(r=>setTimeout(r,1800));mo.disconnect();return [location.hash,n]}""", t)
+            self.assertLessEqual(added, 20, '%s: arriving rebuilt the tab (%d nodes added)' % (h, added))
+        pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

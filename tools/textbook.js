@@ -322,7 +322,7 @@
 			if (my !== tok) return;
 			const C = IDX.chapters, i = C.findIndex((x) => x.id === p[1]), D = J("tbDone");
 			if (i < 0) {
-				home();
+				homeK();
 				return;
 			}
 			const c = C[i], pv = C[i - 1], nx = C[i + 1];
@@ -453,6 +453,23 @@
 				tog(h.parentElement);
 			}
 		});
+		const homeK = () => {
+			const k = JSON.stringify([J("tbDone"), J("tbPos")]);
+			if (T.__k === k && T.querySelector(".tbhero")) return;
+			T.__k = k;
+			home();
+		};
+		(window.zzPre = window.zzPre || {}).textbook = async () => {
+			if (/^#\/textbook/.test(location.hash)) return;
+			try {
+				if (!IDX) {
+					const r = await fetch("textbook/index.json");
+					if (!r.ok) return;
+					IDX = await r.json();
+				}
+				if (!/^#\/textbook/.test(location.hash)) homeK();
+			} catch (e) {}
+		};
 		addEventListener("hashchange", tb);
 		setTimeout(tb, 0);
 	}
