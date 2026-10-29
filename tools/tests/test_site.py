@@ -451,6 +451,18 @@ class Browser(unittest.TestCase):
         pg.keyboard.press('Enter'); pg.wait_for_timeout(300)
         self.assertTrue(pg.evaluate("()=>!!document.activeElement.closest('#v-qa')"), 'Enter moves focus into the current tab')
         self.assertNotEqual(pg.evaluate("()=>getComputedStyle(document.activeElement).outlineStyle"), 'none', 'focus is visible'); self.assertEqual(self.errs, []); pg.close()
+    OVER = r"""(id)=>{const v=document.getElementById(id),out=[];v.querySelectorAll('*').forEach(e=>{const r=e.getBoundingClientRect();if(!r.width||getComputedStyle(e).visibility!=='visible'||r.right<=innerWidth+.5||getComputedStyle(e).position==='fixed')return;
+        let p=e.parentElement,clip=false;while(p&&p!==v){if(/(auto|scroll|hidden|clip)/.test(getComputedStyle(p).overflowX)){clip=true;break}p=p.parentElement}if(!clip)out.push((e.className||e.tagName)+' '+Math.round(r.right))});return out.slice(0,4)}"""
+    def test_audit_small_phones_headings_and_labels(self):   # design audit: 320 px overflow, heading levels, label style
+        pg = self.b.new_page(viewport={'width': 320, 'height': 800}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
+        for h, v in (('#/', 'v-home'), ('#/questions', 'v-questions'), ('#/qa', 'v-qa'), ('#/mcqs', 'v-mcqs'), ('#/textbook', 'v-textbook'), ('#/menu', 'v-menu'), ('#/02', 'v-02')):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1000); self.assertEqual(pg.evaluate(self.OVER, v), [], '%s: nothing runs off a 320 px screen' % h)
+        self.assertEqual(pg.evaluate("()=>[...new Set([...document.querySelectorAll('#v-02 h3.sub')].map(h=>h.getAttribute('aria-level')))]"), ['2'], 'chapter section headings are level 2 under the page h1')
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.wait_for_timeout(900)
+        t = pg.evaluate("()=>{const s=[...document.querySelectorAll('#v-mcqs small')].find(e=>/Suggested next/i.test(e.textContent));return s?getComputedStyle(s).textTransform:null}")
+        self.assertIn(t, ('uppercase', None), 'the Suggested next label follows the capitals rule'); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

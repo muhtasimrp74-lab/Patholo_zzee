@@ -117,7 +117,7 @@ def render(arts, _own):
     _out, _ls, _lt = [], None, None
     for pl_, ii_, h_ in arts:
         if pl_:
-            if (pl_[0], pl_[1]) != _ls: _out.append('<h3 class="sub">%s</h3>' % e(pl_[1])); _ls = (pl_[0], pl_[1]); _lt = None
+            if (pl_[0], pl_[1]) != _ls: _out.append('<h3 class="sub" aria-level="2">%s</h3>' % e(pl_[1])); _ls = (pl_[0], pl_[1]); _lt = None   # aria-level 2: section headings sit directly under the page h1
             if len(_multi[_ls]) > 1 and pl_[2] != _lt: _out.append('<h4 class="tsub">%s</h4>' % e(pl_[2])); _lt = pl_[2]
         _out.append(h_)
     return ''.join(_out)

@@ -192,3 +192,9 @@ html body :is(nav a.logo,#v-menu .zm-step button){min-width:44px!important;min-h
 .zz-skip{position:fixed;left:12px;top:-60px;z-index:200;padding:12px 16px;border-radius:12px;background:var(--btn,#7a1f36);color:#fff;font:700 14px var(--body,system-ui,sans-serif);text-decoration:none}   /* appears at once on Tab (it slid in, and the slide raced the first Tab on slow machines) */
 .zz-skip:focus,.zz-skip:focus-visible{top:calc(12px + env(safe-area-inset-top,0px));outline:2px solid #fff;outline-offset:2px}
 :where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:2px}
+
+/* ===== audit fixes (design) ===== */
+/* 320 px phones: chapter tiles had fixed 310 px columns and ran 10 px off screen */
+.grid{grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr))}
+/* 320 px phones: a long chapter link pushed its count 1 px off screen */
+#v-home li>a{min-width:0;overflow-wrap:anywhere}#v-home li>a>em{flex:none}
