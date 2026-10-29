@@ -440,6 +440,10 @@ class Browser(unittest.TestCase):
         for h, v in (('#/mcqs', 'v-mcqs'), ('#/', 'v-home'), ('#/questions', 'v-questions'), ('#/qa', 'v-qa'), ('#/textbook', 'v-textbook'), ('#/menu', 'v-menu')):
             pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1100); self.assertEqual(pg.evaluate(self.TAPS, v), [], '%s: controls under 44 px' % h)
         pg.close()
+    def test_importance_stars_are_one_css_element_each(self):   # ~2,950 <svg><use> pairs were ~180 KB of markup and an extra element each
+        pg = self.phone('#/02'); pg.wait_for_timeout(500)
+        r = pg.evaluate("()=>[document.querySelectorAll('svg.zs').length,document.querySelectorAll('i.zs').length,getComputedStyle(document.querySelector('i.zs.on')).webkitMaskImage.slice(0,20)]")
+        self.assertEqual(r[0], 0); self.assertGreater(r[1], 2000); self.assertTrue(r[2].startswith('url('), r); pg.close()
     def test_keyboard_users_can_skip_to_the_content(self):   # the first Tab shows a skip link; Enter lands in the current tab
         pg = self.phone('#/qa'); pg.wait_for_timeout(600); pg.keyboard.press('Tab')
         r = pg.evaluate("()=>{const a=document.activeElement,b=a.getBoundingClientRect();return [a.className,a.textContent,b.top>=0&&b.bottom<=innerHeight]}")
