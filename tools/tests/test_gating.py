@@ -188,7 +188,7 @@ class PayClient(unittest.TestCase):
         pg.wait_for_function('()=>zzAccount.signedIn()'); pg.evaluate('()=>zzUpgrade()')
         with pg.expect_navigation(): pg.click('#zz-pay button[data-b=ALL]')
         self.assertEqual(self.sent, [{'bundle': 'ALL'}])
-        self.assertTrue(pg.url.endswith('/terms.html')); self.assertIn('DRAFT', pg.content())
+        self.assertTrue(pg.url.endswith('/terms.html')); self.assertIn('<h1>Terms of use</h1>', pg.content())   # the Terms page opened (it no longer carries a DRAFT notice: owner, audit D5)
     def test_pending_rechecks_then_shows_receipt(self):
         pg = self.page(); pg.goto('http://127.0.0.1:%d/index.html#/account/order/o1' % self.port)
         pg.wait_for_selector('#zz-pending'); pg.wait_for_selector('#zz-receipt', timeout=20000)

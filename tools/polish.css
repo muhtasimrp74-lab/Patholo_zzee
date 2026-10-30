@@ -164,7 +164,7 @@ html body :is(.nh-n,.no,.cnt,.ring,.mx-kv,.mx-acc b,.mx-day b,.zm-n,.qsum,.nh-co
 :root[data-theme=dark]{--cs-edge:rgba(255,255,255,.13);--cs-hair:rgba(0,0,0,.32);--cs-hi:inset 0 1px 0 rgba(255,255,255,.12);--cs-lo:inset 0 -1px 0 rgba(0,0,0,.3);
  --cs-drop:0 1px 2px rgba(0,0,0,.3),0 24px 50px -22px rgba(0,0,0,.75);--cs-slip:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0) 1.5px);
  --cs-sheen:linear-gradient(118deg,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 40%)}
-html body :is(#v-home .nh-prog,#v-home .nh-start,#v-qa .topic,#v-qa .qa-hero,#v-textbook .tbtile,#v-menu .zm-list){
+html body :is(#v-home .nh-prog,#v-qa .topic,#v-qa .qa-hero,#v-textbook .tbtile,#v-menu .zm-list){
  background:var(--cs-slip),var(--cs-sheen),var(--panel)!important;border:1px solid var(--cs-edge)!important;border-radius:28px!important;
  box-shadow:var(--cs-hi),var(--cs-lo),0 0 0 .5px var(--cs-hair),var(--cs-drop)!important}
 /* section rows on the Questions tab: the MCQ tile shape (20 px) and the same material */
@@ -193,6 +193,21 @@ html body :is(nav a.logo,#v-menu .zm-step button){min-width:44px!important;min-h
 .zz-skip:focus,.zz-skip:focus-visible{top:calc(12px + env(safe-area-inset-top,0px));outline:2px solid #fff;outline-offset:2px}
 :where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:2px}
 
+/* ===== audit fixes (design) ===== */
+/* 320 px phones: chapter tiles had fixed 310 px columns and ran 10 px off screen */
+.grid{grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr))}
+/* 320 px phones: a long chapter link pushed its count 1 px off screen */
+#v-home li>a{min-width:0;overflow-wrap:anywhere}#v-home li>a>em{flex:none}
+/* labels whose own styles ask for capitals were flattened by the global sentence-case rule (refine.css): footer column headings,
+   the MCQ section label, the Viva / Written tags and the chapter pager's Previous / Next. Capitals and bold (owner rule). */
+html body :is(.sf-col h2,#v-mcqs .mx-h,.card .tg,.pager a small):not(#_){text-transform:uppercase!important;font-weight:700}
+/* the daily greeting as a toast under the top bar: no backdrop, the page stays readable and tappable */
+.zz-welcome.zw-toast{position:fixed;left:12px;right:12px;top:calc(70px + env(safe-area-inset-top,0px));margin:0 auto;max-width:520px;z-index:70;opacity:0;transform:translateY(-8px);transition:opacity .25s ease,transform .25s ease}
+.zz-welcome.zw-toast.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.zz-welcome.zw-toast{transition:none;transform:none}}
 /* MCQs: the 120 px loading shimmer showed above an MCQ home that was already drawn while the paid chapters loaded in the
    background, then vanished with nothing new to show; it now appears only when the tab is still empty */
 .view[data-zz-st=loading] .mx:not(:empty)::before{content:none!important;display:none!important}
+
+/* Home's "Continue where you left off" card is a dark card with light text by design; the shared light card material (above) had
+   turned its title white-on-white and washed out its label and crumb. It keeps its own dark look. */

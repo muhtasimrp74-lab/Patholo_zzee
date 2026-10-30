@@ -24,3 +24,8 @@
  a.addEventListener('click',e=>{e.preventDefault();const v=(window.zzScroller&&zzScroller()!==document.scrollingElement)?zzScroller():document.querySelector('.view:not([hidden])')||document.body;
   const h=v.querySelector('h1,h2,main,[role=main]')||v;if(!h.hasAttribute('tabindex'))h.setAttribute('tabindex','-1');h.focus({preventScroll:false})});
  const go=()=>document.body.prepend(a);document.body?go():addEventListener('DOMContentLoaded',go)})();
+
+/* buttons built as HTML strings act through data-zz-act (no inline onclick: the content-security policy allows only hashed scripts) */
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-zz-act]');if(!b)return;const a=b.dataset.zzAct,W=window;
+ if(a==='signin')W.zzSignIn&&W.zzSignIn();else if(a==='upgrade')(W.zzUpgrade||W.zzSignIn)();else if(a==='account')W.zzAccountPage&&W.zzAccountPage();
+ else if(a==='close'||a==='close-upgrade'){const d=b.closest('dialog');d&&d.close();if(a==='close-upgrade'&&W.zzUpgrade)W.zzUpgrade()}});

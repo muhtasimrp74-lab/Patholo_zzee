@@ -139,7 +139,11 @@
 			t = setTimeout(close, 7e3);
 		};
 		examAsk(d, arm);
-		document.body.append(bd, d);
+		if (!!d.querySelector("form,input")) document.body.append(bd, d);
+		else {
+			d.classList.replace("zw-center", "zw-toast");
+			document.body.append(d);
+		}
 		const away = (e) => {
 			if (e && e.target instanceof Node && d.contains(e.target)) return;
 			if (d.isConnected && performance.now() - t0 > 600) close();
@@ -278,7 +282,6 @@
 		});
 	});
 	{
-		const SEL = ".card,.qi,.row,.topic,.nh-ch,.nh-mr";
 		let gen = 0;
 		const run = () => {
 			const g = ++gen;
@@ -286,23 +289,10 @@
 			try {
 				if (netInfo()?.saveData) return;
 			} catch {}
-			const v = document.querySelector(".view:not([hidden])");
-			if (!v) return;
-			const list = Array.prototype.slice.call(v.querySelectorAll(SEL)).filter((e) => !e.dataset["zzp"]);
-			let i = 0;
-			const step = (dl) => {
-				if (g !== gen) return;
-				while (i < list.length && (dl && dl.timeRemaining ? dl.timeRemaining() > 6 : true)) {
-					for (let k = 0; k < 12 && i < list.length; k++, i++) {
-						const el = list[i];
-						el.style.contentVisibility = "visible";
-						el.dataset["zzp"] = "1";
-					}
-					if (!dl || !dl.timeRemaining) break;
-				}
-				if (i < list.length) idle(step, 800);
-			};
-			(window.requestIdleCallback || ((c) => setTimeout(c, 300)))(step, { timeout: 1500 });
+			if (!document.querySelector(".view:not([hidden])")) return;
+			(window.requestIdleCallback || ((c) => setTimeout(c, 300)))(() => {
+				if (g === gen) document.documentElement.classList.add("zz-warm");
+			}, { timeout: 1500 });
 		};
 		window.addEventListener("load", () => {
 			setTimeout(run, 1800);

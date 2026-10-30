@@ -117,7 +117,7 @@ def render(arts, _own):
     _out, _ls, _lt = [], None, None
     for pl_, ii_, h_ in arts:
         if pl_:
-            if (pl_[0], pl_[1]) != _ls: _out.append('<h3 class="sub">%s</h3>' % e(pl_[1])); _ls = (pl_[0], pl_[1]); _lt = None
+            if (pl_[0], pl_[1]) != _ls: _out.append('<h3 class="sub" aria-level="2">%s</h3>' % e(pl_[1])); _ls = (pl_[0], pl_[1]); _lt = None   # aria-level 2: section headings sit directly under the page h1
             if len(_multi[_ls]) > 1 and pl_[2] != _lt: _out.append('<h4 class="tsub">%s</h4>' % e(pl_[2])); _lt = pl_[2]
         _out.append(h_)
     return ''.join(_out)
@@ -364,7 +364,7 @@ for _a, _b in (("BS=[...new Set(DATA.map(d=>d[0]))]", "BS=[...new Set(DATA.flatM
 # which only assembled files by then; the edits to existing application text live in src/index.base.html and questions.js).
 # Read modes matter for byte-identical output: files read with newline='' keep their line endings, the others use text mode.
 def _asset(name, raw=False): return open(os.path.join(HERE, name), encoding='utf8', newline='' if raw else None).read()
-_ZZ_NEW = ['pathway.js', 'fluo.js', 'loupe.js', 'scrub.js', 'specimen.js', 'ceremony.js', 'deck.js', 'morph.js', 'report.js', 'mood.js', 'sound.js', 'type.js', 'examiner.js', 'liquid.js', 'autohide.js']  # feature modules, inlined after fx2.js
+_ZZ_NEW = ['pathway.js', 'fluo.js', 'loupe.js', 'scrub.js', 'specimen.js', 'ceremony.js', 'deck.js', 'morph.js', 'report.js', 'mood.js', 'sound.js', 'type.js', 'examiner.js', 'liquid.js', 'autohide.js', 'resume.js']  # feature modules, inlined after fx2.js
 _UI_JS = _asset('pager.js') + _asset('ui_upd.js', True) + _asset('home.js') + _asset('pagebanner.js') + _asset('sitefooter.js') + _asset('tabresume.js') + _asset('swupdate.js') + _asset('qol.js') + _asset('fx.js') + _asset('fxgl.js') + _asset('fx2.js') + ''.join(_asset(f) for f in _ZZ_NEW)
 _UI_TAIL = "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n"
 assert "\nroute();\n" in s, 'assembly anchor missing: route();'
@@ -403,7 +403,7 @@ SOFT = '<style id="zz-soft">' + open(os.path.join(HERE, 'softui.css'), encoding=
 s = s.replace('</head><body>', BOOT_HEAD + SOFT + '</head><body>', 1)
 assert s.count('<footer>Patholo_zzee</footer>') == 1
 _k = s.rindex('</body>'); s = s[:_k] + '<script>' + _asset('sync.js') + '</script><script>' + _asset('acctui.js') + '</script>' + s[_k:]  # listeners only: end of body
-s = s.replace('<footer>Patholo_zzee</footer>', '<footer>Patholo_zzee · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <button type="button" class="zz-acct" onclick="zzAccountPage()">Account</button></footer>')
+s = s.replace('<footer>Patholo_zzee</footer>', '<footer>Patholo_zzee · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <button type="button" class="zz-acct" data-zz-act="account">Account</button></footer>')
 s = s.replace('</head><body>', '<style>' + _asset('zz.css') + _asset('refine.css') + _asset('qol.css') + _asset('fx.css') + _asset('mcq_glass.css') + _asset('pager.css') + _asset('liquid.css') + '</style></head><body><script>(function(h){if(window.ZZ_API===undefined)window.ZZ_API=/(^|\\.)github\\.io$/.test(h)||h==="patholo-zzee.muhtasimrp74.workers.dev"?"https://patholo-zzee-app.muhtasimrp74.workers.dev/":""})(location.hostname)</script><script>window.ZZ_MANIFEST=null</script><script>' + _asset('account.js') + '</script><script>' + _asset('chunks.js') + '</script><script>' + _asset('pay.js') + '</script>', 1)
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 import re as _re
@@ -431,3 +431,4 @@ subprocess.run([sys.executable, os.path.join(HERE, 'source_links.py')], check=Tr
 # the full page becomes index.full.html (gitignored, tests only); gate.py writes the gated index.html, content/ and private-chunks/
 os.replace(os.path.join(HERE, '..', 'index.html'), os.path.join(HERE, '..', 'index.full.html'))
 import gate; gate.gate()
+import csp; csp.apply(os.path.join(HERE, '..'))   # last: hash every inline script into the CSP (no 'unsafe-inline' scripts)

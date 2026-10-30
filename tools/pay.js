@@ -99,7 +99,7 @@
         open('<span class="zz-done" aria-hidden="true"><svg class="zz-ico" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h2 id="zz-pay-h">Payment received</h2><p>Your plan is active. The locked topics open now.</p><div id="zz-receipt" class="zz-receipt">' +
           '<p><span>Receipt</span><b>' + esc(r.receipt_no) + '</b></p><p><span>Plan</span>' + esc(NAMES[r.bundle] || r.bundle) + '</p>' +
           '<p><span>Paid</span>' + money(r.amount_minor, r.currency) + '</p><p><span>Date</span>' + esc(new Date(r.issued_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })) + '</p></div>' +
-          '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close()">Done</button>' + LEGAL);
+          '<button type="button" class="zz-b zz-p zz-full" data-zz-act="close">Done</button>' + LEGAL);
         dispatchEvent(new CustomEvent('zz:auth'));
       } else if (st === 'pending' && j.manual && !j.order.submitted_at) {
         bkash(id, j.order.amount_minor, j.order.currency, j.manual.number);
@@ -113,7 +113,7 @@
         open('<h2 id="zz-pay-h">Still confirming</h2><p>The provider has not confirmed yet. Your plan starts as soon as it does; open Account later to check.</p>' + LEGAL);
       } else {
         open('<h2 id="zz-pay-h">Payment not completed</h2><p>' + (st === 'failed' && j.manual ? 'We could not match this bKash payment. Check the TrxID and amount, then contact us.' : st ? 'The payment was ' + esc(st) + '. You were not charged.' : 'Sign in with the account you paid with to see this order.') + '</p>' +
-          '<button type="button" class="zz-b zz-p zz-full" onclick="this.closest(\'dialog\').close();zzUpgrade()">Choose a plan</button>' + LEGAL);
+          '<button type="button" class="zz-b zz-p zz-full" data-zz-act="close-upgrade">Choose a plan</button>' + LEGAL);
       }
     });
   }

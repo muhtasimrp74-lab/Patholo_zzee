@@ -243,4 +243,3 @@
 .nh-tur{display:inline-flex;gap:3px;margin:0 0 8px;padding:3px;border-radius:12px;background:var(--soft)}
 .nh-tur button{min-width:46px;min-height:32px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:600 .8rem var(--body);font-variant-numeric:tabular-nums;cursor:pointer}
 .nh-tur button[aria-pressed=true]{background:var(--btn);color:#fff}
-.nh-col canvas{cursor:grab}.nh-col canvas:active{cursor:grabbing}

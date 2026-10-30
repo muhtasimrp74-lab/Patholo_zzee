@@ -451,6 +451,29 @@ class Browser(unittest.TestCase):
         pg.keyboard.press('Enter'); pg.wait_for_timeout(300)
         self.assertTrue(pg.evaluate("()=>!!document.activeElement.closest('#v-qa')"), 'Enter moves focus into the current tab')
         self.assertNotEqual(pg.evaluate("()=>getComputedStyle(document.activeElement).outlineStyle"), 'none', 'focus is visible'); self.assertEqual(self.errs, []); pg.close()
+    OVER = r"""(id)=>{const v=document.getElementById(id),out=[];v.querySelectorAll('*').forEach(e=>{const r=e.getBoundingClientRect();if(!r.width||getComputedStyle(e).visibility!=='visible'||r.right<=innerWidth+.5||getComputedStyle(e).position==='fixed')return;
+        let p=e.parentElement,clip=false;while(p&&p!==v){if(/(auto|scroll|hidden|clip)/.test(getComputedStyle(p).overflowX)){clip=true;break}p=p.parentElement}if(!clip)out.push((e.className||e.tagName)+' '+Math.round(r.right))});return out.slice(0,4)}"""
+    def test_audit_small_phones_headings_and_labels(self):   # design audit: 320 px overflow, heading levels, label style
+        pg = self.b.new_page(viewport={'width': 320, 'height': 800}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
+        for h, v in (('#/', 'v-home'), ('#/questions', 'v-questions'), ('#/qa', 'v-qa'), ('#/mcqs', 'v-mcqs'), ('#/textbook', 'v-textbook'), ('#/menu', 'v-menu'), ('#/02', 'v-02')):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1000); self.assertEqual(pg.evaluate(self.OVER, v), [], '%s: nothing runs off a 320 px screen' % h)
+        self.assertEqual(pg.evaluate("()=>[...new Set([...document.querySelectorAll('#v-02 h3.sub')].map(h=>h.getAttribute('aria-level')))]"), ['2'], 'chapter section headings are level 2 under the page h1')
+        pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.wait_for_timeout(900)
+        t = pg.evaluate("()=>{const s=[...document.querySelectorAll('#v-mcqs small')].find(e=>/Suggested next/i.test(e.textContent));return s?getComputedStyle(s).textTransform:null}")
+        self.assertIn(t, ('uppercase', None), 'the Suggested next label follows the capitals rule'); pg.close()
+    def test_csp_allows_only_hashed_inline_scripts(self):   # no 'unsafe-inline' for scripts: every inline script is listed by hash
+        sys.path.insert(0, os.path.join(ROOT, 'tools')); import csp
+        for f in ('index.html', 'index.full.html'):
+            s = open(os.path.join(ROOT, f), encoding='utf8').read(); m = re.search(r"script-src ([^;\"]*)", s); self.assertTrue(m, f)
+            self.assertNotIn("'unsafe-inline'", m.group(1), f); self.assertEqual(sorted(re.findall(r"'sha256-[^']+'", m.group(1))), csp.hashes(s), f + ': every inline script hashed')
+        h = open(os.path.join(ROOT, '_headers'), encoding='utf8').read(); src = re.search(r"script-src ([^;]*)", h).group(1)
+        self.assertNotIn("'unsafe-inline'", src); self.assertEqual(sorted(re.findall(r"'sha256-[^']+'", src)), csp.hashes(open(os.path.join(ROOT, 'index.html'), encoding='utf8').read()))
+        pg = self.phone('#/'); msgs = []; pg.on('console', lambda m: msgs.append(m.text) if 'Content Security Policy' in m.text else None)
+        pg.evaluate("()=>{window.__acc=0;window.zzAccountPage=()=>{window.__acc++};const d=document.createElement('dialog');d.innerHTML='<button data-zz-act=close>x</button>';document.body.append(d);d.showModal();d.querySelector('button').click();window.__open=d.open;const a=document.createElement('button');a.dataset.zzAct='account';document.body.append(a);a.click()}")
+        self.assertEqual(pg.evaluate("()=>[window.__open,window.__acc]"), [False, 1], 'delegated buttons close dialogs and open the account page')
+        self.assertEqual(msgs, []); self.assertEqual(self.errs, []); pg.close()
     def test_scroll_following_bars_do_not_restyle_the_whole_page(self):   # --zz-f on <html> restyled every element each frame (190-480 ms/s)
         pg = self.returning('#/02'); pg.mouse.move(200, 480); pg.wait_for_timeout(800)
         for _ in range(10): pg.mouse.wheel(0, 60); pg.wait_for_timeout(30)
@@ -461,6 +484,23 @@ class Browser(unittest.TestCase):
         pg = self.returning('#/mcqs'); pg.wait_for_selector('#v-mcqs .mx .mx-acc')
         h = pg.evaluate("()=>{const v=document.getElementById('v-mcqs');v.dataset.zzSt='loading';const s=getComputedStyle(v.querySelector('.mx'),'::before');return [s.content,s.display]}")
         self.assertIn(h[1], ('none',), 'no placeholder above a drawn MCQ home %r' % h); pg.close()
+    def test_continue_where_you_left_off_follows_your_reading_and_is_readable(self):
+        # reading a chapter never counted (S.recent only changed through #/02/q... links), and the shared light card material had
+        # turned this dark card's title white-on-white
+        pg = self.returning('#/02'); pg.mouse.move(200, 480); pg.wait_for_timeout(800)
+        for _ in range(12): pg.mouse.wheel(0, 250); pg.wait_for_timeout(60)
+        pg.wait_for_timeout(1500)
+        r = pg.evaluate("()=>{const id=S.recent[0],c=id&&document.getElementById(id),b=c&&c.getBoundingClientRect();return [id,!!b&&b.top<innerHeight&&b.bottom>0,c&&c.querySelector('header h4').textContent.trim()]}")
+        self.assertTrue(r[0] and r[1], 'the question being read is recorded: %r' % r)
+        h4 = pg.evaluate("()=>{const c=[...document.querySelectorAll('#v-02 article.card')][1];c.querySelector('header').click();return [c.id,c.querySelector('header h4').textContent.trim()]}")
+        self.assertEqual(pg.evaluate("()=>S.recent[0]"), h4[0], 'tapping a card records it too')
+        pg.evaluate("()=>{location.hash='#/'}"); pg.wait_for_timeout(1500)
+        t = pg.evaluate("()=>document.querySelector('#v-home .nh-start').innerText")
+        self.assertIn('CONTINUE WHERE YOU LEFT OFF', t.upper()); self.assertIn(h4[1][:30], t)
+        cr = pg.evaluate(r"""()=>{const s=document.querySelector('#v-home .nh-start'),P=c=>c.match(/[\d.]+/g).map(Number),L=a=>{const f=v=>{v/=255;return v<=.03928?v/12.92:((v+.055)/1.055)**2.4};return .2126*f(a[0])+.7152*f(a[1])+.0722*f(a[2])};
+            let bg=null,e=s;while(e&&!bg){const v=P(getComputedStyle(e).backgroundColor);if(v.length<4||v[3]>.9)bg=v;e=e.parentElement}const lb=L(bg);
+            return [...s.querySelectorAll('.nh-k,.nh-crumb,h2')].map(x=>{const l=L(P(getComputedStyle(x).color));return +((Math.max(l,lb)+.05)/(Math.min(l,lb)+.05)).toFixed(1)})}""")
+        self.assertTrue(cr and min(cr) >= 4.5, 'label, crumb and title readable on the card: %r' % cr); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
