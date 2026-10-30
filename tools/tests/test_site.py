@@ -515,6 +515,14 @@ class Browser(unittest.TestCase):
         pg.keyboard.press('Escape'); self.assertEqual(pg.get_attribute('#v-textbook .ll-cover', 'aria-expanded'), 'false', 'Escape closes the book')
         pg.click('#v-textbook .ll-cover'); pg.wait_for_timeout(200); pg.click('#v-textbook .ll-list a >> nth=0'); pg.wait_for_timeout(600)
         self.assertEqual(pg.evaluate('location.hash'), '#/textbook/ch01', 'a chapter opens the reader'); self.assertEqual((errs, msgs), ([], [])); ctx.close()
+    def test_first_tap_fullscreen_skips_controls_and_menu_keeps_you_signed_in_offline(self):   # ported from #11
+        pg = self.returning('#/menu'); pg.wait_for_timeout(600)
+        pg.evaluate("()=>{window.__fs=0;document.documentElement.requestFullscreen=()=>{window.__fs++;return Promise.resolve()}}")
+        pg.locator('#v-menu button >> visible=true').first.dispatch_event('pointerup'); pg.wait_for_timeout(100)
+        self.assertEqual(pg.evaluate("()=>window.__fs"), 0, 'a tap on a button (it may open a dialog) does not go fullscreen')
+        pg.evaluate("()=>{localStorage.setItem('zz-rt','x');location.hash='#/home';setTimeout(()=>location.hash='#/menu',50)}"); pg.wait_for_timeout(900)
+        t = pg.evaluate("()=>document.getElementById('v-menu').innerText")
+        self.assertIn('still signed in', t.lower(), 'a saved session with no server reads as still signed in, not signed out'); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
