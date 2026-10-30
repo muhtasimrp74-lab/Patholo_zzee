@@ -205,3 +205,6 @@ html body :is(.sf-col h2,#v-mcqs .mx-h,.card .tg,.pager a small):not(#_){text-tr
 .zz-welcome.zw-toast{position:fixed;left:12px;right:12px;top:calc(70px + env(safe-area-inset-top,0px));margin:0 auto;max-width:520px;z-index:70;opacity:0;transform:translateY(-8px);transition:opacity .25s ease,transform .25s ease}
 .zz-welcome.zw-toast.on{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.zz-welcome.zw-toast{transition:none;transform:none}}
+/* MCQs: the 120 px loading shimmer showed above an MCQ home that was already drawn while the paid chapters loaded in the
+   background, then vanished with nothing new to show; it now appears only when the tab is still empty */
+.view[data-zz-st=loading] .mx:not(:empty)::before{content:none!important;display:none!important}
