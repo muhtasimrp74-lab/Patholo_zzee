@@ -1,4 +1,5 @@
-/* Lamplit (Textbook tab): an original, dependency-free take on the "book on a lamp-lit desk" idea, in the site's own palette.
+/* SWITCHED OFF (owner): not in the build list in tools/build.py until it is redesigned; add 'lamplit.js' back to _ZZ_NEW to restore it.
+   Lamplit (Textbook tab): an original, dependency-free take on the "book on a lamp-lit desk" idea, in the site's own palette.
    A burgundy hardcover lies on a dark lacquered desk under warm lamplight, beside a cappuccino and a pencil (all CSS). Tap the
    cover (or Enter / Space): the view eases in and the cover swings open onto the contents; the page arrows or the arrow keys
    turn the contents; a chapter opens the reader; Escape or "Close the book" closes it. Reduced motion or Minimal / Off effects:
