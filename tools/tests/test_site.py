@@ -501,6 +501,7 @@ class Browser(unittest.TestCase):
             let bg=null,e=s;while(e&&!bg){const v=P(getComputedStyle(e).backgroundColor);if(v.length<4||v[3]>.9)bg=v;e=e.parentElement}const lb=L(bg);
             return [...s.querySelectorAll('.nh-k,.nh-crumb,h2')].map(x=>{const l=L(P(getComputedStyle(x).color));return +((Math.max(l,lb)+.05)/(Math.min(l,lb)+.05)).toFixed(1)})}""")
         self.assertTrue(cr and min(cr) >= 4.5, 'label, crumb and title readable on the card: %r' % cr); pg.close()
+    @unittest.skip('Lamplit is switched off by the owner until it is redesigned (tools/lamplit.js is kept)')
     def test_lamplit_book_opens_turns_and_leads_to_the_reader(self):   # Textbook tab: the book on the lamp-lit desk
         ctx = self.b.new_context(viewport={'width': 412, 'height': 900}, reduced_motion='reduce', service_workers='block'); pg = ctx.new_page(); errs = []; msgs = []
         pg.on('pageerror', lambda e: errs.append(str(e))); pg.on('console', lambda m: msgs.append(m.text) if 'Content Security Policy' in m.text else None)
