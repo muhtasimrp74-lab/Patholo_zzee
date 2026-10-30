@@ -164,7 +164,7 @@ html body :is(.nh-n,.no,.cnt,.ring,.mx-kv,.mx-acc b,.mx-day b,.zm-n,.qsum,.nh-co
 :root[data-theme=dark]{--cs-edge:rgba(255,255,255,.13);--cs-hair:rgba(0,0,0,.32);--cs-hi:inset 0 1px 0 rgba(255,255,255,.12);--cs-lo:inset 0 -1px 0 rgba(0,0,0,.3);
  --cs-drop:0 1px 2px rgba(0,0,0,.3),0 24px 50px -22px rgba(0,0,0,.75);--cs-slip:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,0) 1.5px);
  --cs-sheen:linear-gradient(118deg,rgba(255,255,255,.07) 0%,rgba(255,255,255,0) 40%)}
-html body :is(#v-home .nh-prog,#v-home .nh-start,#v-qa .topic,#v-qa .qa-hero,#v-textbook .tbtile,#v-menu .zm-list){
+html body :is(#v-home .nh-prog,#v-qa .topic,#v-qa .qa-hero,#v-textbook .tbtile,#v-menu .zm-list){
  background:var(--cs-slip),var(--cs-sheen),var(--panel)!important;border:1px solid var(--cs-edge)!important;border-radius:28px!important;
  box-shadow:var(--cs-hi),var(--cs-lo),0 0 0 .5px var(--cs-hair),var(--cs-drop)!important}
 /* section rows on the Questions tab: the MCQ tile shape (20 px) and the same material */
@@ -208,3 +208,6 @@ html body :is(.sf-col h2,#v-mcqs .mx-h,.card .tg,.pager a small):not(#_){text-tr
 /* MCQs: the 120 px loading shimmer showed above an MCQ home that was already drawn while the paid chapters loaded in the
    background, then vanished with nothing new to show; it now appears only when the tab is still empty */
 .view[data-zz-st=loading] .mx:not(:empty)::before{content:none!important;display:none!important}
+
+/* Home's "Continue where you left off" card is a dark card with light text by design; the shared light card material (above) had
+   turned its title white-on-white and washed out its label and crumb. It keeps its own dark look. */
