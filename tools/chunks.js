@@ -55,7 +55,7 @@
     if (!gated('tb-' + id)) return fetch('textbook/' + id + '.html').then(function (r) { if (!r.ok) throw 0; return r.text(); });
     return loadChunk('tb-' + id).then(function (c) { setTimeout(function () { var b = document.getElementById('tbbody'); if (b && b.dataset.ch === id) b.classList.add('zz-g'); }, 0); return c.html; }, function (e) {
       if (!e || (e.status !== 401 && e.status !== 403)) throw e;
-      return '<div class="zz-lock zz-locked" role="status">' + LOCK + '<p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" onclick="' + (e.status === 401 ? 'zzSignIn()' : '(window.zzUpgrade||zzSignIn)()') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
+      return '<div class="zz-lock zz-locked" role="status">' + LOCK + '<p>' + why(e, 'tb') + '</p><button type="button" class="zz-b zz-p" data-zz-act="' + (e.status === 401 ? 'signin' : 'upgrade') + '">' + (e.status === 401 ? 'Sign in' : 'Upgrade') + '</button></div>';
     });
   };
   var BUNDLE = { q: 'the Question bank', mcq: 'the MCQ bank', tb: 'the Textbook bundle' };

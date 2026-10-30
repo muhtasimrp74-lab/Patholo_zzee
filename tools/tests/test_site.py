@@ -463,6 +463,17 @@ class Browser(unittest.TestCase):
         pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.wait_for_timeout(900)
         t = pg.evaluate("()=>{const s=[...document.querySelectorAll('#v-mcqs small')].find(e=>/Suggested next/i.test(e.textContent));return s?getComputedStyle(s).textTransform:null}")
         self.assertIn(t, ('uppercase', None), 'the Suggested next label follows the capitals rule'); pg.close()
+    def test_csp_allows_only_hashed_inline_scripts(self):   # no 'unsafe-inline' for scripts: every inline script is listed by hash
+        sys.path.insert(0, os.path.join(ROOT, 'tools')); import csp
+        for f in ('index.html', 'index.full.html'):
+            s = open(os.path.join(ROOT, f), encoding='utf8').read(); m = re.search(r"script-src ([^;\"]*)", s); self.assertTrue(m, f)
+            self.assertNotIn("'unsafe-inline'", m.group(1), f); self.assertEqual(sorted(re.findall(r"'sha256-[^']+'", m.group(1))), csp.hashes(s), f + ': every inline script hashed')
+        h = open(os.path.join(ROOT, '_headers'), encoding='utf8').read(); src = re.search(r"script-src ([^;]*)", h).group(1)
+        self.assertNotIn("'unsafe-inline'", src); self.assertEqual(sorted(re.findall(r"'sha256-[^']+'", src)), csp.hashes(open(os.path.join(ROOT, 'index.html'), encoding='utf8').read()))
+        pg = self.phone('#/'); msgs = []; pg.on('console', lambda m: msgs.append(m.text) if 'Content Security Policy' in m.text else None)
+        pg.evaluate("()=>{window.__acc=0;window.zzAccountPage=()=>{window.__acc++};const d=document.createElement('dialog');d.innerHTML='<button data-zz-act=close>x</button>';document.body.append(d);d.showModal();d.querySelector('button').click();window.__open=d.open;const a=document.createElement('button');a.dataset.zzAct='account';document.body.append(a);a.click()}")
+        self.assertEqual(pg.evaluate("()=>[window.__open,window.__acc]"), [False, 1], 'delegated buttons close dialogs and open the account page')
+        self.assertEqual(msgs, []); self.assertEqual(self.errs, []); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

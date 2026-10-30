@@ -85,7 +85,10 @@ function banner(): void {
   let t: ReturnType<typeof setTimeout>;
   const arm = (): void => { clearTimeout(t); t = setTimeout(close, 7000); };
   examAsk(d, arm);
-  document.body.append(bd, d);
+  /* a plain greeting is a toast that leaves the page usable (it dimmed and blurred everything on each open); only the exam-date
+     question, which needs an answer, keeps the backdrop */
+  const ask = !!d.querySelector('form,input');
+  if (ask) document.body.append(bd, d); else { d.classList.replace('zw-center', 'zw-toast'); document.body.append(d); }
   const away = (e?: Event): void => { if (e && e.target instanceof Node && d.contains(e.target)) return; if (d.isConnected && performance.now() - t0 > 600) close(); };
   const EV = ['wheel', 'touchmove', 'keydown'];
   function close(): void {
@@ -157,17 +160,10 @@ window.addEventListener('load', () => { idle(() => {
     if (innerWidth < 700) return;
     try { if (netInfo()?.saveData) return; } catch { /* ignore */ }
     const v = document.querySelector('.view:not([hidden])'); if (!v) return;
-    const list = Array.prototype.slice.call(v.querySelectorAll<HTMLElement>(SEL)).filter((e: HTMLElement) => !e.dataset['zzp']) as HTMLElement[];
-    let i = 0;
-    const step = (dl?: IdleDeadline): void => {
-      if (g !== gen) return;
-      while (i < list.length && (dl && dl.timeRemaining ? dl.timeRemaining() > 6 : true)) {
-        for (let k = 0; k < 12 && i < list.length; k++, i++) { const el = list[i]!; el.style.contentVisibility = 'visible'; el.dataset['zzp'] = '1'; }
-        if (!dl || !dl.timeRemaining) break;
-      }
-      if (i < list.length) idle(step, 800);
-    };
-    (window.requestIdleCallback || ((c: IdleFn) => setTimeout(c, 300)))(step, { timeout: 1500 });
+    void v; void SEL;
+    /* one class lifts deferred rendering for the open view's lists (perf.css), instead of stamping 12 elements every 800 ms:
+       the trickle took many seconds and made two boots of the same page differ (test_lazy_probe) */
+    (window.requestIdleCallback || ((c: IdleFn) => setTimeout(c, 300)))(() => { if (g === gen) document.documentElement.classList.add('zz-warm'); }, { timeout: 1500 });
   };
   window.addEventListener('load', () => { setTimeout(run, 1800); });
   window.addEventListener('hashchange', () => { setTimeout(run, 900); });

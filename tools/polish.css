@@ -198,3 +198,10 @@ html body :is(nav a.logo,#v-menu .zm-step button){min-width:44px!important;min-h
 .grid{grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr))}
 /* 320 px phones: a long chapter link pushed its count 1 px off screen */
 #v-home li>a{min-width:0;overflow-wrap:anywhere}#v-home li>a>em{flex:none}
+/* labels whose own styles ask for capitals were flattened by the global sentence-case rule (refine.css): footer column headings,
+   the MCQ section label, the Viva / Written tags and the chapter pager's Previous / Next. Capitals and bold (owner rule). */
+html body :is(.sf-col h2,#v-mcqs .mx-h,.card .tg,.pager a small):not(#_){text-transform:uppercase!important;font-weight:700}
+/* the daily greeting as a toast under the top bar: no backdrop, the page stays readable and tappable */
+.zz-welcome.zw-toast{position:fixed;left:12px;right:12px;top:calc(70px + env(safe-area-inset-top,0px));margin:0 auto;max-width:520px;z-index:70;opacity:0;transform:translateY(-8px);transition:opacity .25s ease,transform .25s ease}
+.zz-welcome.zw-toast.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.zz-welcome.zw-toast{transition:none;transform:none}}

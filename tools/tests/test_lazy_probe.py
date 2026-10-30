@@ -42,7 +42,8 @@ class Lazy(unittest.TestCase):
         a, b = self.snap('/index.full.html'), self.snap('/lazy/index.html'); N = lambda h: re.sub(r'>\s+<', '><', h)
         self.assertEqual((a['errs'], b['errs']), ([], [])); self.assertIsNone(b['failed'])
         self.assertEqual(a['cards'], 1310); self.assertEqual(b['cards'], 1310); self.assertEqual(a['qm'], b['qm'])
-        self.assertTrue(N(a['html']) == N(b['html']), 'booted DOM differs between inline and lazy variants')
+        x, y = N(a['html']), N(b['html']); i = next((k for k in range(min(len(x), len(y))) if x[k] != y[k]), min(len(x), len(y)))
+        self.assertTrue(x == y, 'booted DOM differs between inline and lazy variants at %d:\n inline ...%s\n lazy   ...%s' % (i, x[max(0, i - 120):i + 120], y[max(0, i - 120):i + 120]))
 
     def test_html_shrinks_and_chunks_cover_every_card(self):
         n, v = lazy_probe.build(ROOT, self.tmp.name, 'index.full.html'); self.assertEqual(n, 1310)

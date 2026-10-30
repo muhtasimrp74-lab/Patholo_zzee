@@ -33,6 +33,7 @@ def build(site, out, page='index.html'):
     k = t.rfind('<!--zzc:'); k = t.find('-->', k) + 3
     os.makedirs(os.path.join(out, 'zzcards'), exist_ok=True)
     open(os.path.join(out, 'index.html'), 'w', encoding='utf8').write(t[:k] + SWAP + t[k:])
+    import csp; csp.rehash(os.path.join(out, 'index.html'))   # its swap script needs its own hash in the strict policy
     dump = lambda o: json.dumps(o, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
     open(os.path.join(out, 'zzcards', 'all.js'), 'w', encoding='utf8').write('window.__zzc=' + dump(allc).replace('</', '<\\/') + ';\n')
     for v, d in chunks.items(): open(os.path.join(out, 'zzcards', v + '.json'), 'w', encoding='utf8').write(dump(d))

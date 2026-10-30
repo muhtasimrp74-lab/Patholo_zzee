@@ -69,4 +69,4 @@ html #v-home .nh-mr{content-visibility:auto;contain-intrinsic-size:auto 60px}
 @media print{html body #tools{display:none!important}}
 
 /* once every tab is ready (pager.js), lists and tiles stop deferring their rendering: scrolling never shows rows filling in */
-html.zz-ready :is(.card,.qi,.row,.topic,#v-home .nh-ch,#v-home .nh-mr){content-visibility:visible}
+html:is(.zz-ready,.zz-warm) :is(.card,.qi,.row,.topic,#v-home .nh-ch,#v-home .nh-mr){content-visibility:visible}
