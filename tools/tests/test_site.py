@@ -501,6 +501,20 @@ class Browser(unittest.TestCase):
             let bg=null,e=s;while(e&&!bg){const v=P(getComputedStyle(e).backgroundColor);if(v.length<4||v[3]>.9)bg=v;e=e.parentElement}const lb=L(bg);
             return [...s.querySelectorAll('.nh-k,.nh-crumb,h2')].map(x=>{const l=L(P(getComputedStyle(x).color));return +((Math.max(l,lb)+.05)/(Math.min(l,lb)+.05)).toFixed(1)})}""")
         self.assertTrue(cr and min(cr) >= 4.5, 'label, crumb and title readable on the card: %r' % cr); pg.close()
+    def test_lamplit_book_opens_turns_and_leads_to_the_reader(self):   # Textbook tab: the book on the lamp-lit desk
+        ctx = self.b.new_context(viewport={'width': 412, 'height': 900}, reduced_motion='reduce', service_workers='block'); pg = ctx.new_page(); errs = []; msgs = []
+        pg.on('pageerror', lambda e: errs.append(str(e))); pg.on('console', lambda m: msgs.append(m.text) if 'Content Security Policy' in m.text else None)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(self.http_url() + '#/textbook'); pg.wait_for_selector('#v-textbook .ll-cover', timeout=10000)
+        nums = lambda: pg.evaluate("()=>[...document.querySelectorAll('#v-textbook .ll-list a span')].map(s=>+s.textContent)")
+        self.assertEqual(pg.get_attribute('#v-textbook .ll-cover', 'aria-expanded'), 'false'); pg.click('#v-textbook .ll-cover'); pg.wait_for_timeout(300)
+        self.assertEqual(pg.get_attribute('#v-textbook .ll-cover', 'aria-expanded'), 'true'); self.assertEqual(nums(), [1, 2, 3, 4, 5, 6], 'opens on the contents, in order')
+        self.assertTrue(pg.evaluate("()=>document.querySelector('#v-textbook .ll').classList.contains('calm')"), 'reduced motion: no 3D motion')
+        pg.click('#v-textbook .ll-next'); self.assertEqual(nums(), [7, 8, 9, 10, 11, 12]); pg.keyboard.press('ArrowLeft'); self.assertEqual(nums()[0], 1, 'arrow keys turn the contents')
+        self.assertEqual(pg.evaluate("()=>getComputedStyle(document.querySelector('#v-textbook .ll-k')).textTransform"), 'uppercase')
+        pg.keyboard.press('Escape'); self.assertEqual(pg.get_attribute('#v-textbook .ll-cover', 'aria-expanded'), 'false', 'Escape closes the book')
+        pg.click('#v-textbook .ll-cover'); pg.wait_for_timeout(200); pg.click('#v-textbook .ll-list a >> nth=0'); pg.wait_for_timeout(600)
+        self.assertEqual(pg.evaluate('location.hash'), '#/textbook/ch01', 'a chapter opens the reader'); self.assertEqual((errs, msgs), ([], [])); ctx.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
