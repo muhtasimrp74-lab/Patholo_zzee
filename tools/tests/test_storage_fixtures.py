@@ -47,7 +47,7 @@ class OldAnnotDB(unittest.TestCase):
     def test_annotation_record_survives_reload(self):
         pw = sync_playwright().start()
         try:
-            b = pw.chromium.launch(); p = b.new_page(); p.goto(SITE); p.wait_for_timeout(2500)
+            b = pw.chromium.launch(); p = b.new_page(bypass_csp=True); p.goto(SITE);p.wait_for_timeout(2500)   # bypass_csp: helper scripts are injected by the test; the site CSP would block them
             rec = {'k': 'q:q3', 'objs': [{'t': 'p', 'c': '#C4573A', 's': 2, 'p': [1, 1, 5, 5]}]}
             p.evaluate("""(rec)=>new Promise((res,rej)=>{const r=indexedDB.open('pathviva-annot');r.onsuccess=()=>{const db=r.result;
                 const tx=db.transaction('docs','readwrite');tx.objectStore('docs').put(rec);tx.oncomplete=()=>{db.close();res()};tx.onerror=()=>rej(tx.error)};r.onerror=()=>rej(r.error)})""", rec)
@@ -68,7 +68,7 @@ class IndexedDbAdapter(unittest.TestCase):
         js = js.replace('export class ', 'class ') + '\nwindow.__IDB = IndexedDbBackend;'
         pw = sync_playwright().start()
         try:
-            b = pw.chromium.launch(); p = b.new_page(); p.goto(SITE); p.wait_for_timeout(1500); p.add_script_tag(content=js)
+            b = pw.chromium.launch(); p = b.new_page(bypass_csp=True); p.goto(SITE);p.wait_for_timeout(1500); p.add_script_tag(content=js)   # bypass_csp: helper scripts are injected by the test; the site CSP would block them
             code = """async ()=>{const IndexedDbBackend=window.__IDB;const db='zz-kv-test-'+Date.now();const k=new IndexedDbBackend(indexedDB,db);
               const miss=await k.get('a');await k.set('a','1');await k.set('b','{"x":2}');const g=await k.get('b');const keys=(await k.keys()).sort();
               await k.remove('a');const gone=await k.get('a');const k2=new IndexedDbBackend(indexedDB,db);const again=await k2.get('b');

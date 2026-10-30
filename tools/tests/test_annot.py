@@ -112,7 +112,8 @@ class AnnotBrowser(unittest.TestCase):
             self.assertIsNone(pg.evaluate("s=>Annot.validate(JSON.parse(s))", json.dumps(bad).replace('"__proto__"', '"__proto__"')), bad)
         self.assertEqual(self.errs, [])
     def test_failed_annotation_restore_rolls_back_and_changes_nothing(self):
-        pg = self.page(); pg.evaluate("()=>{S.bm=['q1'];save()}"); before = pg.evaluate("()=>localStorage.vivaState"); cid, sel = self.open_card(pg); self.draw(pg, sel)
+        pg = self.page(); pg.evaluate("()=>{S.bm=['q1'];save()}"); cid, sel = self.open_card(pg); self.draw(pg, sel); pg.wait_for_timeout(1200)
+        before = pg.evaluate("()=>localStorage.vivaState")   # after setup: opening a card is now recorded as where you left off
         pg.evaluate("()=>{Annot.load=async()=>{throw new Error('boom')}}")
         pg.evaluate("t=>imp(new File([t],'b.json'))", json.dumps({'bm': ['q9'], 'annot': {'v': 1, 'docs': {}}})); pg.wait_for_timeout(900)
         self.assertEqual(pg.evaluate("()=>localStorage.vivaState"), before); self.assertTrue(any('could not be restored' in d for d in self.dialogs)); self.assertEqual(self.objs(pg, cid), 1)
