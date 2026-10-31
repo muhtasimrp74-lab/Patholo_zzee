@@ -463,6 +463,9 @@ class McqLearning(unittest.TestCase):
         ctx = self.b.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, service_workers='block'); pg = ctx.new_page(); self.addCleanup(ctx.close)
         pg.clock.install(time=datetime.datetime(2026, 10, 22, 10, 0, tzinfo=datetime.timezone.utc))
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()))")
+        # seeded Math.random: the quick session's random draw sometimes held only questions keyed 'a' or true/false items, so
+        # no answer was wrong and the test failed by chance (CI, 0 != 1); a fixed draw makes it deterministic
+        pg.add_init_script("(()=>{let s=20261022;Math.random=()=>{s=(s*1664525+1013904223)%4294967296;return s/4294967296}})()")
         pg.route('**/api/**', lambda r: r.fulfill(status=401, json={}))
         pg.goto('http://127.0.0.1:%d/index.html#/mcqs' % self.port); pg.clock.run_for(1500); pg.wait_for_selector('#v-mcqs [data-a=quick]')
         self.assertEqual(pg.locator('#v-mcqs [data-a=due]').count(), 0)
