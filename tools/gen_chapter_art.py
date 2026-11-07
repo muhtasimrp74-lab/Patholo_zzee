@@ -1,106 +1,97 @@
-"""Original, procedurally drawn 'micrograph' art for the Chapters cards (icons/ch/<id>.webp). No downloads, no licences:
-each chapter gets a seeded drawing in a style that fits its subject. Run: python3 tools/gen_chapter_art.py"""
-import math, os, random
-import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+"""Chapter artwork for the Chapters cards (icons/ch/<id>.svg): one clean, accurate line motif per chapter in the site palette
+(burgundy band, cream line work, rose accents), drawn as vectors with one stroke system. No downloads, no licences, no noise.
+Run: python3 tools/gen_chapter_art.py"""
+import math, os
 W, H = 152, 456
 OUT = os.path.join(os.path.dirname(__file__), '..', 'icons', 'ch')
-STYLE = {'c2': 'he', 'c3': 'inflam', 'c4': 'blood', 'c5': 'genes', 'c6': 'immune', 'c7': 'neo', 'c9': 'env', 'c30': 'lab', 'c13': 'immune',
-         'c14': 'blood', '01': 'vessel', '02': 'muscle', '03': 'immune', '04': 'lung', '05': 'glands', '06': 'liver', '07': 'glom', '08': 'glands',
-         '09': 'glands', 'c23': 'ducts', '10': 'colloid', '11': 'skin', '12': 'bone', '13': 'neuro', '14': 'eye', '15': 'he'}
-PINK, LILAC, PURPLE, DEEP = (238, 176, 198), (214, 170, 214), (92, 52, 140), (58, 30, 96)
-def grain(im, r):
-    a = np.asarray(im).astype(np.int16); a += np.random.default_rng(r.randrange(1 << 30)).integers(-9, 10, a.shape[:2])[..., None]
-    return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
-def blob(d, x, y, rx, ry, fill, outline=None, w=1, rot=0.0, jag=0.18, r=None):
-    n = 14; pts = []
-    for i in range(n):
-        t = 2 * math.pi * i / n; k = 1 + (r.uniform(-jag, jag) if r else 0)
-        px, py = rx * k * math.cos(t), ry * k * math.sin(t)
-        pts.append((x + px * math.cos(rot) - py * math.sin(rot), y + px * math.sin(rot) + py * math.cos(rot)))
-    d.polygon(pts, fill=fill, outline=outline, width=w)
-def draw(style, r):
-    bg = {'blood': (248, 222, 220), 'neo': (214, 128, 160), 'env': (214, 206, 120), 'lab': (200, 150, 60), 'neuro': (18, 26, 58), 'lung': (250, 236, 240),
-          'liver': (206, 140, 130), 'bone': (248, 238, 236), 'immune': (226, 196, 230), 'genes': (246, 234, 244)}.get(style, PINK)
-    im = Image.new('RGB', (W, H), bg); d = ImageDraw.Draw(im)
-    rnd = lambda a, b: r.uniform(a, b)
-    if style in ('he', 'inflam', 'neo'):
-        for _ in range(170): blob(d, rnd(0, W), rnd(0, H), rnd(10, 18), rnd(8, 14), (244, 196, 214), (220, 140, 172), 1, rnd(0, 3), r=r)
-        for _ in range(150 if style == 'neo' else 110):
-            s = rnd(5, 11) if style == 'neo' else rnd(3, 5.5); blob(d, rnd(0, W), rnd(0, H), s, s * rnd(.7, 1), DEEP if style == 'neo' else PURPLE, rot=rnd(0, 3), jag=.35 if style == 'neo' else .12, r=r)
-        if style == 'inflam':
-            for _ in range(40):
-                x, y = rnd(0, W), rnd(0, H); [d.ellipse([x + dx - 3, y + dy - 3, x + dx + 3, y + dy + 3], fill=DEEP) for dx, dy in ((0, 0), (5, 2), (2, 6))]
-    elif style == 'blood':
-        for _ in range(120):
-            x, y, s = rnd(0, W), rnd(0, H), rnd(9, 14); d.ellipse([x - s, y - s, x + s, y + s], fill=(196, 40, 52)); d.ellipse([x - s * .45, y - s * .45, x + s * .45, y + s * .45], fill=(226, 92, 98))
-    elif style == 'immune':
-        for _ in range(140):
-            x, y, s = rnd(0, W), rnd(0, H), rnd(7, 11); d.ellipse([x - s - 3, y - s - 3, x + s + 3, y + s + 3], fill=(236, 214, 240)); d.ellipse([x - s, y - s, x + s, y + s], fill=(110, 60, 160))
-    elif style == 'genes':
-        for _ in range(46):
-            x, y, l, a = rnd(10, W - 10), rnd(10, H - 10), rnd(10, 20), rnd(0, 3)
-            for s in (-1, 1):
-                d.line([(x - l * math.cos(a), y - l * math.sin(a) * s), (x + l * math.cos(a), y + l * math.sin(a) * s)], fill=(120, 60, 170), width=6)
-    elif style == 'env':
-        for _ in range(70):
-            x, y, s = rnd(0, W), rnd(0, H), rnd(8, 16); d.ellipse([x - s, y - s, x + s, y + s], fill=(70, 120, 70), outline=(40, 80, 50), width=2)
-            for _ in range(6): a = rnd(0, 6.3); d.ellipse([x + s * math.cos(a) - 2, y + s * math.sin(a) - 2, x + s * math.cos(a) + 2, y + s * math.sin(a) + 2], fill=(200, 210, 110))
-    elif style == 'lab':
-        g = Image.linear_gradient('L').resize((W, H)); im = Image.composite(Image.new('RGB', (W, H), (232, 190, 110)), Image.new('RGB', (W, H), (170, 110, 40)), g); d = ImageDraw.Draw(im)
-        cx, cy = W / 2, H * .62; d.polygon([(cx - 14, cy - 90), (cx + 14, cy - 90), (cx + 14, cy - 40), (cx + 52, cy + 40), (cx - 52, cy + 40), (cx - 14, cy - 40)], outline=(255, 248, 236), width=5)
-        d.line([(cx - 22, cy - 92), (cx + 22, cy - 92)], fill=(255, 248, 236), width=5); d.polygon([(cx - 30, cy + 2), (cx + 30, cy + 2), (cx + 46, cy + 34), (cx - 46, cy + 34)], fill=(255, 236, 200))
-    elif style == 'vessel':
-        cx, cy = W / 2, H / 2
-        for k, c in ((70, (226, 150, 176)), (58, (244, 196, 214)), (46, (214, 128, 160)), (36, (252, 240, 244))): d.ellipse([cx - k, cy - k * 1.2, cx + k, cy + k * 1.2], fill=c)
-        for _ in range(16): x, y = cx + rnd(-24, 24), cy + rnd(-30, 30); d.ellipse([x - 5, y - 5, x + 5, y + 5], fill=(196, 40, 52))
-        for _ in range(60): a = rnd(0, 6.3); rr = rnd(40, 66); d.ellipse([cx + rr * math.cos(a) - 2.5, cy + rr * 1.2 * math.sin(a) - 2.5, cx + rr * math.cos(a) + 2.5, cy + rr * 1.2 * math.sin(a) + 2.5], fill=PURPLE)
-    elif style == 'muscle':
-        for y0 in range(-20, H + 20, 18):
-            pts = [(x, y0 + 6 * math.sin(x / 22 + y0)) for x in range(-10, W + 10, 6)]; d.line(pts, fill=(222, 120, 150), width=12); d.line(pts, fill=(240, 170, 192), width=3)
-        for _ in range(50): x, y = rnd(0, W), rnd(0, H); d.ellipse([x - 7, y - 2.5, x + 7, y + 2.5], fill=PURPLE)
-    elif style in ('lung', 'glands', 'ducts', 'colloid', 'glom'):
-        if style != 'lung':
-            for _ in range(160): blob(d, rnd(0, W), rnd(0, H), rnd(10, 16), rnd(8, 12), (244, 196, 214), (226, 160, 186), 1, rnd(0, 3), r=r)
-        for _ in range({'lung': 40, 'glands': 16, 'ducts': 12, 'colloid': 18, 'glom': 7}[style]):
-            x, y = rnd(0, W), rnd(0, H); s = rnd(14, 24) if style != 'glom' else rnd(20, 28)
-            fill = {'lung': (255, 250, 252), 'glands': (255, 246, 248), 'ducts': (255, 246, 248), 'colloid': (240, 150, 182), 'glom': (252, 238, 242)}[style]
-            d.ellipse([x - s, y - s, x + s, y + s], fill=fill, outline=(214, 128, 160), width=3)
-            if style == 'glom': d.ellipse([x - s * .7, y - s * .7, x + s * .7, y + s * .7], fill=(150, 80, 170))
-            for k in range(14 if style != 'lung' else 3):
-                a = 2 * math.pi * k / 14 + rnd(0, .2); d.ellipse([x + (s + 3) * math.cos(a) - 2.5, y + (s + 3) * math.sin(a) - 2.5, x + (s + 3) * math.cos(a) + 2.5, y + (s + 3) * math.sin(a) + 2.5], fill=PURPLE)
-        if style == 'ducts':
-            for _ in range(14): x, y, s = rnd(0, W), rnd(0, H), rnd(10, 18); d.ellipse([x - s, y - s, x + s, y + s], fill=(255, 255, 255), outline=(230, 200, 210))
-    elif style == 'liver':
-        for k in range(26):
-            a = 2 * math.pi * k / 26; d.line([(W / 2, H / 2), (W / 2 + 300 * math.cos(a), H / 2 + 300 * math.sin(a))], fill=(232, 176, 166), width=8)
-        for _ in range(120): x, y = rnd(0, W), rnd(0, H); d.ellipse([x - 3, y - 3, x + 3, y + 3], fill=(90, 50, 120))
-        d.ellipse([W / 2 - 10, H / 2 - 10, W / 2 + 10, H / 2 + 10], fill=(255, 244, 240))
-    elif style == 'skin':
-        for y in range(0, H, 2):
-            t = y / H; c = (int(244 - 30 * t), int(200 - 90 * t), int(214 - 40 * t)) if t < .55 else (int(214 - 60 * (t - .55)), int(110 - 30 * (t - .55)), int(170 - 20 * (t - .55)))
-            d.line([(0, y + 4 * math.sin(y / 9)), (W, y + 4 * math.sin(y / 9 + 1))], fill=c, width=3)
-        for _ in range(110): x, y = rnd(0, W), rnd(H * .3, H); d.ellipse([x - 3, y - 2.5, x + 3, y + 2.5], fill=DEEP)
-    elif style == 'bone':
-        for _ in range(16):
-            x, y = rnd(0, W), rnd(0, H); pts = [(x, y)]
-            for _ in range(5): x, y = x + rnd(-30, 30), y + rnd(-30, 30); pts.append((x, y))
-            d.line(pts, fill=(232, 140, 168), width=int(rnd(10, 16)), joint='curve')
-        for _ in range(140): x, y = rnd(0, W), rnd(0, H); d.ellipse([x - 2.5, y - 2.5, x + 2.5, y + 2.5], fill=PURPLE)
-    elif style == 'neuro':
-        for _ in range(16):
-            x, y = rnd(0, W), rnd(0, H)
-            for _ in range(6):
-                px, py = x, y
-                for _ in range(5): nx, ny = px + rnd(-26, 26), py + rnd(-26, 26); d.line([(px, py), (nx, ny)], fill=(90, 150, 230), width=2); px, py = nx, ny
-            d.ellipse([x - 7, y - 7, x + 7, y + 7], fill=(150, 200, 255)); d.ellipse([x - 3, y - 3, x + 3, y + 3], fill=(255, 140, 190))
-    elif style == 'eye':
-        bands = [(236, 170, 196), (120, 70, 160), (246, 206, 222), (110, 60, 150), (240, 190, 210), (80, 40, 110)]
-        for i, c in enumerate(bands): d.rectangle([0, i * H / 6, W, (i + 1) * H / 6], fill=c)
-        for _ in range(240): x, y = rnd(0, W), rnd(0, H); d.ellipse([x - 2, y - 2, x + 2, y + 2], fill=(70, 30, 110) if (int(y / (H / 6)) % 2 == 0) else (220, 170, 230))
-    im = im.filter(ImageFilter.GaussianBlur(.7)); return grain(im, r)
+CR, RO, RD, DK = '#f6efe3', '#e8a9bb', '#c86b86', '#3a0f1c'
+def s(**k): return ' '.join('%s="%s"' % (a.replace('_', '-'), v) for a, v in k.items())
+def ln(d, w=2.2, c=CR, f='none', o=1): return '<path d="%s" %s/>' % (d, s(fill=f, stroke=c, stroke_width=w, stroke_linecap='round', stroke_linejoin='round', opacity=o))
+def ci(x, y, r, f='none', c=CR, w=2.2, o=1): return '<circle %s/>' % s(cx=round(x, 1), cy=round(y, 1), r=r, fill=f, stroke=c, stroke_width=w, opacity=o)
+def el(x, y, rx, ry, f='none', c=CR, w=2.2, o=1, rot=0): return '<ellipse %s transform="rotate(%s %s %s)"/>' % (s(cx=x, cy=y, rx=rx, ry=ry, fill=f, stroke=c, stroke_width=w, opacity=o), rot, x, y)
+def dot(x, y, r=2, f=CR, o=.7): return ci(x, y, r, f, 'none', 0, o)
+def ring(cx, cy, r, n, rr, f=RO, o=.8, a0=0): return ''.join(dot(cx + r * math.cos(a0 + 2 * math.pi * i / n), cy + r * math.sin(a0 + 2 * math.pi * i / n), rr, f, o) for i in range(n))
+CX, CY = 76, 268
+A = {}
+A['c2'] = (''.join(ci(CX + 46 * math.cos(a), CY + 46 * math.sin(a), 10, RO + '33', CR, 2) for a in (0.5, 2.6, 4.3))
+           + ci(CX, CY, 44, '#6a1c33', CR, 2.2) + ci(CX, CY, 44, RO + '22', 'none', 0)
+           + ''.join(ci(CX + dx, CY + dy, r, RO, 'none', 0) for dx, dy, r in ((-8, -6, 7), (6, -10, 5), (9, 6, 6), (-5, 10, 4.5)))
+           + el(CX - 22, CY + 22, 9, 5, 'none', CR, 1.6, .8, 30) + el(CX + 24, CY - 20, 9, 5, 'none', CR, 1.6, .8, -20))
+A['c3'] = (ci(CX, CY, 44, RO + '22') + ''.join(ci(x, y, 12, RO, 'none', 0) for x, y in ((60, 262), (78, 250), (93, 270)))
+           + ln('M66 258 L74 253 M84 256 L89 264', 4, RO) + ''.join(dot(CX + 30 * math.cos(a * 1.7), CY + 30 * math.sin(a * 1.3), 1.6, CR, .55) for a in range(14))
+           + ''.join(el(x, 360, 13, 5, RD + '88', CR, 1.4) for x in (46, 76, 106)))
+A['c4'] = ('<clipPath id="t"><path d="M36 220 C60 228 72 250 70 280 C68 312 52 330 36 336 Z"/></clipPath>'
+           + ln('M36 176 L36 396 M116 176 L116 396', 2.6) + '<g clip-path="url(#t)">' + ''.join('<rect x="30" y="%d" width="50" height="7" fill="%s" opacity=".85" transform="rotate(-24 50 %d)"/>' % (y, RO if i % 2 else CR, y) for i, y in enumerate(range(200, 350, 9))) + '</g>'
+           + ln('M36 220 C60 228 72 250 70 280 C68 312 52 330 36 336', 2) + ''.join(el(x, y, 6, 2.6, RD, 'none', 0) for x, y in ((96, 200), (100, 246), (92, 300), (102, 352), (90, 380))))
+A['c5'] = (''.join('<g transform="rotate(%s 76 250)"><rect x="66" y="190" width="20" height="120" rx="10" %s/>%s</g>' % (a, s(fill=RO + '30', stroke=CR, stroke_width=2.2),
+                    ''.join('<rect x="67" y="%d" width="18" height="5" fill="%s" opacity=".9"/>' % (y, RO) for y in (204, 222, 268, 286))) for a in (-22, 22))
+           + ci(76, 250, 4, CR, 'none', 0)
+           + ln(' '.join(('M' if i == 0 else 'L') + '%.1f %.1f' % (76 + 20 * math.sin(i / 3), 336 + i * 2.6) for i in range(26)))
+           + ln(' '.join(('M' if i == 0 else 'L') + '%.1f %.1f' % (76 - 20 * math.sin(i / 3), 336 + i * 2.6) for i in range(26)), 2.2, RO)
+           + ''.join(ln('M%.1f %.1f L%.1f %.1f' % (76 + 20 * math.sin(i / 3), 336 + i * 2.6, 76 - 20 * math.sin(i / 3), 336 + i * 2.6), 1.2, CR, 'none', .6) for i in range(2, 26, 3)))
+A['c6'] = (ln('M76 336 L76 284 M76 284 L50 238 M76 284 L102 238', 9, RO, 'none', .9) + ln('M76 336 L76 284 M76 284 L50 238 M76 284 L102 238', 2.2)
+           + ln('M70 300 L82 300 M70 310 L82 310', 1.6) + ''.join(ln('M%s %s l4 -10 l4 10 l-8 0 Z' % (x - 4, y), 2, CR, CR + '55') for x, y in ((46, 224), (106, 224)))
+           + ''.join(dot(x, y, 3, CR, .5) for x, y in ((30, 190), (122, 196), (40, 360), (112, 372), (76, 196))))
+A['c7'] = (''.join(ci(x, y, 17, RO + '22') + ci(x, y, 6, RO, 'none', 0) for x, y in ((44, 196), (110, 206), (40, 340), (112, 352)))
+           + ci(CX, CY + 4, 40, RO + '22') + ln('M58 262 L66 244 L84 240 L98 252 L96 276 L82 290 L62 286 Z', 2.2, CR, RD + 'aa') + ci(80, 262, 5.5, CR, 'none', 0))
+A['c9'] = (''.join(ln('M%.1f %.1f L%.1f %.1f' % (CX + 32 * math.cos(math.pi / 6 + i * math.pi / 3), CY + 20 + 32 * math.sin(math.pi / 6 + i * math.pi / 3), CX + 32 * math.cos(math.pi / 6 + (i + 1) * math.pi / 3), CY + 20 + 32 * math.sin(math.pi / 6 + (i + 1) * math.pi / 3))) for i in range(6))
+           + ci(CX, CY + 20, 18, 'none', RO, 2) + ''.join(ln('M%s 236 C%s 216 %s 206 %s 186 C%s 168 %s 160 %s 146' % (x, x - 10, x + 10, x, x - 10, x + 8, x), 2, CR, 'none', o) for x, o in ((60, .55), (76, .8), (92, .55))))
+A['c30'] = (ln('M64 186 L64 236 L34 352 C32 362 38 368 46 368 L106 368 C114 368 120 362 118 352 L88 236 L88 186') + ln('M60 186 L92 186', 2.6)
+            + '<path d="M47 312 C62 306 90 318 105 312 L116 352 C118 362 112 366 106 366 L46 366 C40 366 34 362 36 352 Z" fill="%s" opacity=".55"/>' % RO
+            + ''.join(ci(x, y, r, 'none', CR, 1.4, .8) for x, y, r in ((68, 336, 4), (84, 346, 3), (76, 324, 2.5), (92, 330, 2))) + ln('M70 258 L80 258 M68 276 L80 276 M66 294 L80 294', 1.4, CR, 'none', .6))
+A['c13'] = (ln('M76 186 C116 186 124 236 116 262 C110 278 104 278 104 292 C104 306 118 318 112 334 C104 356 86 362 72 360 C44 356 30 320 30 274 C30 220 46 186 76 186 Z', 2.2, CR, RO + '1f')
+            + ''.join(ci(x, y, 9, RO + '55', CR, 1.6) for x, y in ((50, 222), (70, 206), (92, 214), (42, 262), (44, 304), (64, 336), (88, 340)))
+            + ln('M10 230 L28 236 M8 290 L28 288 M14 346 L34 334', 1.8, CR, 'none', .7) + ln('M104 292 L140 292', 2.4, RO))
+A['c14'] = (''.join(ci(x, y, 22, RD + '99', CR, 2) + ci(x, y, 9, RO + '66', 'none', 0) for x, y in ((52, 214), (100, 252)))
+            + ln('M42 312 C52 302 62 314 76 314 C90 314 100 302 110 312 C118 320 110 332 100 330 C90 328 84 320 76 320 C68 320 62 328 52 330 C42 332 34 320 42 312 Z', 2, CR, RD + '99')
+            + ln('M76 344 C84 358 92 366 92 376 C92 386 84 392 76 392 C68 392 60 386 60 376 C60 366 68 358 76 344 Z', 2, CR, RO + 'bb'))
+A['01'] = (ci(CX, CY, 50, 'none', CR, 1.6, .7) + ci(CX, CY, 42, RO + '33', CR, 2.2)
+           + ln(' '.join(('M' if i == 0 else 'L') + '%.1f %.1f' % (CX + (31 + 1.6 * math.sin(i * 1.2)) * math.cos(i * math.pi / 20), CY + (31 + 1.6 * math.sin(i * 1.2)) * math.sin(i * math.pi / 20)) for i in range(41)), 1.6)
+           + ci(CX, CY, 27, DK + 'aa', 'none', 0) + ln('M54 254 C60 236 82 232 96 244 C88 252 76 262 72 280 C64 276 56 268 54 254 Z', 1.8, CR, CR + '55')
+           + ln('M66 248 L74 244 M70 256 L80 250', 1.4, RD))
+A['02'] = (ln('M76 214 C66 192 34 194 34 226 C34 262 60 290 76 312 C92 290 118 262 118 226 C118 194 86 192 76 214 Z', 2.2, CR, RO + '2a')
+           + ln('M76 214 C80 238 88 254 102 262 M88 230 C70 250 64 270 66 290', 1.8, RO)
+           + ln('M10 356 L44 356 L52 344 L58 356 L64 356 L70 312 L78 384 L84 356 L94 356 L102 346 L110 356 L142 356', 2.2))
+A['03'] = (''.join(ci(x, y, 11, RO + '22', CR, 1.6) + ci(x, y, 7.5, '#5a1a2e', 'none', 0) for x, y in ((34, 196), (118, 204), (30, 336), (120, 340), (76, 370), (76, 176)))
+           + ci(CX, CY, 42, RO + '22') + el(60, CY, 14, 20, RD + '88', CR, 2) + el(92, CY, 14, 20, RD + '88', CR, 2) + ci(60, CY - 2, 5, CR, 'none', 0) + ci(92, CY - 2, 5, CR, 'none', 0))
+A['04'] = (ln('M76 170 L76 222 M76 222 L50 262 M76 222 L102 262 M50 262 L36 300 M50 262 L62 306 M102 262 L90 306 M102 262 L118 300', 3)
+           + ''.join(ci(x + dx, y + dy, 8, RO + '55', CR, 1.6) for x, y in ((36, 312), (64, 318), (90, 318), (118, 312)) for dx, dy in ((-7, 0), (7, 0), (0, 11), (0, -4))))
+A['05'] = (ln('M14 352 L138 352', 2.4) + ''.join(ln('M%s 352 L%s %s C%s %s %s %s %s %s L%s 352' % (x, x, top, x, top - 16, x + 22, top - 16, x + 22, top, x + 22), 2.2, CR, RO + '33') + ln('M%s 344 L%s %s' % (x + 11, x + 11, top + 4), 1.6, RO)
+                                                for x, top in ((18, 236), (48, 210), (78, 228), (108, 202)) if x + 22 <= 136)
+           + ''.join(ln('M%s 352 L%s 378 C%s 388 %s 388 %s 378 L%s 352' % (x, x, x, x + 10, x + 10, x + 10), 1.8, CR, 'none', .75) for x in (30, 62, 94, 122) if x + 10 <= 136))
+A['06'] = (ln(' '.join(('M' if i == 0 else 'L') + '%.1f %.1f' % (CX + 50 * math.cos(math.pi / 6 + i * math.pi / 3), CY + 50 * math.sin(math.pi / 6 + i * math.pi / 3)) for i in range(7)), 2.2, CR, RO + '1f')
+           + ''.join(ln('M%.1f %.1f L%.1f %.1f' % (CX + 10 * math.cos(a), CY + 10 * math.sin(a), CX + 40 * math.cos(a), CY + 40 * math.sin(a)), 1.4, RO, 'none', .8) for a in [i * math.pi / 6 for i in range(12)])
+           + ci(CX, CY, 7, DK, CR, 2) + ''.join(ci(CX + 50 * math.cos(math.pi / 6 + i * math.pi / 3) + dx, CY + 50 * math.sin(math.pi / 6 + i * math.pi / 3) + dy, r, f, 'none', 0) for i in range(6) for dx, dy, r, f in ((-3, 0, 3, RD), (3, -2, 2.2, CR), (2, 3, 1.8, RO))))
+A['07'] = (ci(CX, CY + 6, 44, RO + '1a') + ''.join(ci(CX + 14 * math.cos(a), CY + 8 + 14 * math.sin(a), 11, RD + '66', CR, 1.6) for a in [i * math.pi / 3 for i in range(6)])
+           + ln('M60 176 C64 200 66 214 70 226 M92 176 C88 200 86 214 82 226', 2.4) + ln('M76 318 C76 340 96 348 96 372 C96 392 76 396 76 412', 3, RO))
+A['08'] = (ci(CX, CY, 48, RO + '1f') + ring(CX, CY, 42, 26, 3, RO, .85) + ring(CX, CY, 33, 20, 2.4, CR, .7, .1) + ring(CX, CY, 25, 14, 2, RO, .6, .3)
+           + ''.join(ln('M%.1f %.1f q4 6 0 12 q-4 6 0 12' % (CX + dx, CY + dy), 1.4) + dot(CX + dx, CY + dy - 2, 2.2, CR, .9) for dx, dy in ((-8, -14), (6, -10), (-2, 2), (10, 4))))
+A['09'] = (ln('M56 236 C56 224 96 224 96 236 C96 268 88 292 82 306 L82 330 L70 330 L70 306 C64 292 56 268 56 236 Z', 2.2, CR, RO + '2a')
+           + ln('M58 236 C44 230 34 222 26 232 M94 236 C108 230 118 222 126 232', 2) + el(24, 250, 9, 13, RD + '88', CR, 1.8) + el(128, 250, 9, 13, RD + '88', CR, 1.8)
+           + ln('M18 226 l-6 -6 M20 222 l-2 -8 M134 226 l6 -6 M132 222 l2 -8', 1.4, CR, 'none', .8))
+A['c23'] = (ln('M76 400 L76 318 M76 318 L48 270 M76 318 L76 252 M76 318 L104 270', 2.6)
+            + ''.join(ci(x + dx, y + dy, 7, RO + '66', CR, 1.5) for x, y in ((48, 262), (76, 242), (104, 262)) for dx, dy in ((-9, -4), (0, -12), (9, -4), (0, 3), (-6, -14), (6, -14)) ))
+A['10'] = (el(52, CY, 22, 46, RO + '22', CR, 2.2, rot=-8) + el(100, CY, 22, 46, RO + '22', CR, 2.2, rot=8) + ln('M66 286 C72 292 80 292 86 286', 6, RO, 'none', .8)
+           + ''.join(ci(x, y, 5, RO + '88', CR, 1.2) for x, y in ((48, 240), (56, 258), (46, 276), (54, 296), (98, 244), (104, 262), (96, 280), (102, 300))))
+A['11'] = (ln('M10 206 L142 206', 1.4, CR, 'none', .6) + ln('M10 214 L142 214', 1.4, CR, 'none', .6)
+           + ln('M10 222 L142 222 L142 244 C130 260 118 238 106 254 C94 270 82 240 70 256 C58 272 46 242 34 258 C24 270 16 252 10 246 Z', 2, CR, RO + '33')
+           + ln('M66 196 L70 214 L84 300 C86 314 98 316 98 304', 2.4) + ci(96, 322, 9, RD + '88', CR, 1.8) + ''.join(ci(x, y, 5, RO + '99', CR, 1.2) for x, y in ((62, 286), (56, 296), (64, 298))))
+A['12'] = (ln('M60 186 C40 176 34 206 52 214 L56 330 C38 340 44 372 64 360 C70 372 86 372 90 360 C110 372 116 340 98 330 L102 214 C120 206 114 176 94 186 C88 174 66 174 60 186 Z', 2.2, CR, RO + '22')
+           + ''.join(ln('M%s %s L%s %s' % a, 1.3, RO, 'none', .9) for a in ((60, 196, 76, 210), (76, 190, 70, 210), (92, 196, 80, 212), (62, 352, 76, 340), (90, 352, 78, 340), (76, 358, 76, 342)))
+           + ln('M70 220 L70 324 M84 220 L84 324', 1.4, CR, 'none', .5))
+A['13'] = (ln('M76 236 L60 202 M60 202 L48 186 M60 202 L62 180 M76 236 L96 204 M96 204 L110 192 M96 204 L94 182 M68 246 L40 236 M40 236 L28 224 M86 246 L116 240', 2)
+           + ln('M66 236 L76 226 L88 236 L90 252 L76 262 L62 252 Z', 2.2, CR, RO + '55') + ci(76, 245, 5, CR, 'none', 0)
+           + ''.join('<rect x="70" y="%d" width="12" height="20" rx="6" %s/>' % (y, s(fill=RO + '66', stroke=CR, stroke_width=1.6)) for y in (272, 298, 324)) + ln('M76 262 L76 352 M76 352 L62 372 M76 352 L76 378 M76 352 L90 372', 2))
+A['14'] = (ci(80, CY, 44, RO + '1a') + ln('M46 238 C30 252 30 284 46 298', 2.6) + el(52, CY, 8, 20, RO + '88', CR, 1.8) + ln('M48 236 L58 244 M48 300 L58 292', 2, RD)
+           + ln('M124 260 L146 256 M124 276 L146 280', 2.4) + ln('M74 232 C96 238 112 252 118 268', 1.2, CR, 'none', .5))
+A['15'] = (ln('M40 372 L112 372 L112 382 L40 382 Z', 2.2, CR, RO + '33') + ln('M88 372 L88 344 C110 330 112 270 92 238', 3) + ln('M50 318 L104 318', 2.6)
+           + ln('M70 300 L70 318 M66 300 L74 300', 2.2) + ln('M84 208 L64 266 L76 270 L96 212 Z', 2.2, CR, RO + '33') + ln('M80 196 L92 200 L88 212 L76 208 Z', 2.2, CR, CR + '55'))
+def svg(motif):
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">'
+            '<stop offset="0" stop-color="#5a1428"/><stop offset=".55" stop-color="#7a1f36"/><stop offset="1" stop-color="#4b1222"/></linearGradient>'
+            '<radialGradient id="l" cx=".5" cy=".59" r=".5"><stop offset="0" stop-color="#f6efe3" stop-opacity=".16"/><stop offset="1" stop-color="#f6efe3" stop-opacity="0"/></radialGradient></defs>'
+            '<rect width="%d" height="%d" fill="url(#g)"/><rect width="%d" height="%d" fill="url(#l)"/>%s</svg>\n' % (W, H, W, H, W, H, W, H, motif))
 if __name__ == '__main__':
-    os.makedirs(OUT, exist_ok=True); tot = 0
-    for cid, st in STYLE.items():
-        r = random.Random('zz-' + cid); p = os.path.join(OUT, cid + '.webp'); draw(st, r).save(p, 'WEBP', quality=58, method=6); tot += os.path.getsize(p)
-    print('chapter art:', len(STYLE), 'images,', tot // 1024, 'KB')
+    os.makedirs(OUT, exist_ok=True)
+    for k, m in A.items(): open(os.path.join(OUT, k + '.svg'), 'w').write(svg(m))
+    print(len(A), 'chapters')

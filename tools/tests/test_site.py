@@ -557,7 +557,7 @@ class Browser(unittest.TestCase):
         pg.goto(self.http_url() + '#/qa'); pg.wait_for_selector('#v-qa .zz-bm'); pg.wait_for_timeout(600)
         ids = pg.evaluate("()=>[...document.querySelectorAll('#v-qa a.topic.zz-art')].map(a=>a.getAttribute('href').slice(2))")
         self.assertEqual(len(ids), pg.evaluate("()=>document.querySelectorAll('#v-qa a.topic').length"), 'every card has its art')
-        for i in set(ids): self.assertTrue(os.path.exists(os.path.join(ROOT, 'icons', 'ch', i + '.webp')), i)
+        for i in set(ids): self.assertTrue(os.path.exists(os.path.join(ROOT, 'icons', 'ch', i + '.svg')), i)
         pg.click('#v-qa .zz-tw:has(a[href="#/c3"]) .zz-bm'); self.assertEqual(pg.get_attribute('#v-qa .zz-tw:has(a[href="#/c3"]) .zz-bm', 'aria-pressed'), 'true')
         self.assertEqual(pg.evaluate('location.hash'), '#/qa', 'the bookmark does not open the chapter')
         pg.reload(); pg.wait_for_selector('#v-qa .zz-bm'); self.assertEqual(pg.get_attribute('#v-qa .zz-tw:has(a[href="#/c3"]) .zz-bm', 'aria-pressed'), 'true', 'kept after a reload')

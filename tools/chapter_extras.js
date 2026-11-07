@@ -1,4 +1,4 @@
-/* Chapters: each card gets its chapter artwork (icons/ch/<id>.webp, original art from tools/gen_chapter_art.py) and a bookmark
+/* Chapters: each card gets its chapter artwork (icons/ch/<id>.svg, original art from tools/gen_chapter_art.py) and a bookmark
    (saved on this device); a SAVED chip shows only bookmarked chapters. A button cannot sit inside the card's link, so each card is
    wrapped (div.zz-tw) with the link and its bookmark side by side; the wrapper mirrors the link's hidden state for the filters. */
 (()=>{const K='zzChapterBm',get=()=>{try{const a=JSON.parse(localStorage.getItem(K)||'[]');return Array.isArray(a)?a:[]}catch(e){return[]}},put=a=>{try{localStorage.setItem(K,JSON.stringify(a))}catch(e){}};
@@ -6,7 +6,7 @@
  const mirror=new MutationObserver(ms=>ms.forEach(m=>{const w=m.target.parentElement;if(w&&w.classList.contains('zz-tw'))w.hidden=m.target.hidden}));
  const idOf=a=>(a.getAttribute('href')||'').replace(/^#\//,'');
  function wrap(v){const bm=get();v.querySelectorAll('a.topic').forEach(a=>{if(a.parentElement.classList.contains('zz-tw'))return;const id=idOf(a);if(!/^[a-z0-9]+$/i.test(id))return;
-   a.style.setProperty('--zz-art','url("icons/ch/'+id+'.webp")');a.classList.add('zz-art');
+   a.style.setProperty('--zz-art','url("icons/ch/'+id+'.svg")');a.classList.add('zz-art');
    const w=document.createElement('div');w.className='zz-tw';w.hidden=a.hidden;a.before(w);w.append(a);
    const b=document.createElement('button'),t=a.querySelector('h3');b.type='button';b.className='zz-bm';b.innerHTML=ICON;b.dataset.id=id;
    const on=bm.includes(id);b.setAttribute('aria-pressed',String(on));w.classList.toggle('on',on);b.setAttribute('aria-label','Bookmark: '+(t?t.textContent.trim():id));w.append(b);
