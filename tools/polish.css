@@ -309,3 +309,23 @@ html{scroll-padding-bottom:calc(env(safe-area-inset-bottom,0px) + 96px)}
 /* back to top follows the bars: away while you read down, back when you scroll up (any floating button covers something) */
 html body .fx-top{translate:0 calc(var(--zz-f,0) * (100% + 120px))}
 @media (max-width:899px){#tools{overflow:visible!important}}
+/* Chapters: chapter art band and bookmark (chapter_extras.js) */
+html body #v-qa .zz-tw{position:relative;display:grid;min-width:0}
+html body #v-qa .zz-tw[hidden]{display:none!important}
+html body #v-qa .zz-tw>a.topic{height:100%}
+html body #v-qa a.topic.zz-art{grid-template-columns:minmax(0,1fr) 34px!important;grid-template-areas:"h ." "cnt cnt" "p p" "bar bar" "meta meta"!important;padding-left:100px!important;overflow:hidden}
+html body #v-qa a.topic.zz-art::after{left:0!important;top:0!important;bottom:0!important;width:84px!important;border-radius:0!important;
+ background:linear-gradient(180deg,rgba(64,14,30,.94) 0,rgba(122,31,54,.62) 26%,rgba(122,31,54,0) 52%),var(--zz-art) center/cover no-repeat,#7a1f36!important}
+html body #v-qa a.topic.zz-art>.no:not(#_){position:absolute!important;left:0;top:16px;width:84px!important;z-index:1;padding:0 6px!important;box-sizing:border-box;background:none!important;color:#fff!important;
+ text-align:center;white-space:normal;font:700 13px/1.15 var(--body,system-ui,sans-serif)!important;letter-spacing:.06em;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+html body #v-qa a.topic.zz-art>.cnt{justify-self:start}
+.zz-bm{position:absolute;top:8px;right:8px;z-index:2;width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:none;color:var(--lbl,#7a1f36);cursor:pointer}
+.zz-bm svg{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linejoin:round}
+.zz-bm[aria-pressed=true] svg{fill:currentColor}
+.zz-bm:focus-visible{outline:2px solid var(--lbl,#7a1f36);outline-offset:-2px}
+:root[data-theme=dark] .zz-bm{color:#e8a9bb}
+/* SAVED chip: only bookmarked chapters */
+html body #v-qa.zz-saved-only .zz-tw:not(.on){display:none!important}
+html body #v-qa.zz-saved-only section.part:not(:has(.zz-tw.on)){display:none!important}
+.zz-saved-empty{display:none;margin:8px 2px;color:var(--muted);font-size:14px}
+html body #v-qa.zz-saved-only.zz-saved-none .zz-saved-empty{display:block}
