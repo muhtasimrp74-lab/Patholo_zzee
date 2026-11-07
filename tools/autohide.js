@@ -5,7 +5,7 @@
    Cost: --zz-f (0 shown .. 1 hidden) is written once a frame and only on the bar elements themselves. Written on <html>, the
    inherited variable restyled every element on the page each frame (about 190-480 ms per second of scrolling). */
 (()=>{const de=document.documentElement,last=new WeakMap(),H=72,RM=matchMedia('(prefers-reduced-motion: reduce)');let f=0,want=0,raf=0,snapT=0,els=null,elsAt=0,follow=false;
- const bars=()=>{const now=performance.now();if(!els||now-elsAt>1000){els=[...document.querySelectorAll('nav.nav,#tools,#bnav,#an-fab,.bar')];elsAt=now}return els};
+ const bars=()=>{const now=performance.now();if(!els||now-elsAt>1000){els=[...document.querySelectorAll('nav.nav,#tools,#bnav,#an-fab,.bar,.fx-top')];elsAt=now}return els};
  const write=()=>{raf=0;f=want;const v=f.toFixed(3);for(const e of bars())e.style.setProperty('--zz-f',v);const h=f>=1;if(de.classList.contains('zz-hide')!==h)de.classList.toggle('zz-hide',h)};
  const put=v=>{want=Math.max(0,Math.min(1,v));if(!raf)raf=requestAnimationFrame(write)};
  const ease=on=>{for(const e of bars())e.style.transition=on?(RM.matches?'none':'translate .3s cubic-bezier(.2,.8,.2,1),top .3s cubic-bezier(.2,.8,.2,1)'):'none'};

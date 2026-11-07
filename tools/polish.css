@@ -270,3 +270,42 @@ html body .ll :is(.ll-foil small,.ll-foil em,.ll-k,.ll-close):not(#_){text-trans
 @media (max-width:699px){.ll.on .ll-desk{height:auto;min-height:clamp(320px,70vw,440px);padding:18px 14px 22px}
  .ll.on .ll-book{position:relative;left:auto;top:auto;width:auto;height:auto;transform:none}
  .ll.on .ll-pages{position:relative;inset:auto}.ll.on .ll-cover{position:absolute}}
+/* ===== Chapters tab redesign (owner brief): one learned bar per card, small consistent chapter badges, two-line previews,
+   cards aligned in rows, scrollable filters with a secondary sort, back-to-top off the headings. Site palette kept. ===== */
+html body #v-qa a.topic{display:grid!important;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"no cnt" "h h" "p p" "bar bar" "meta meta";
+ grid-template-rows:auto auto 1fr auto auto;column-gap:10px;row-gap:10px;align-content:stretch;position:relative;height:100%;box-sizing:border-box;padding:18px 18px 16px 24px!important}
+html body #v-qa a.topic::after{content:"";position:absolute;left:0;top:16px;bottom:16px;width:4px;border-radius:0 4px 4px 0;background:linear-gradient(180deg,#a3354f,#7a1f36);pointer-events:none}
+html body #v-qa a.topic>.no:not(#_){grid-area:no;justify-self:start;align-self:center;position:static!important;width:auto!important;height:auto!important;margin:0!important;padding:6px 11px!important;border-radius:999px;
+ font:700 12px/1 var(--body,system-ui,sans-serif)!important;letter-spacing:.1em;text-transform:uppercase!important;color:var(--lbl,#7a1f36)!important;background:color-mix(in srgb,var(--lbl,#7a1f36) 10%,transparent)!important;white-space:nowrap}
+html body #v-qa a.topic>.cnt{grid-area:cnt;align-self:center;justify-self:end;margin:0!important;font-size:12.5px;color:var(--muted)}
+html body #v-qa a.topic>h3{grid-area:h;margin:0!important;align-self:start}
+html body #v-qa a.topic>p{grid-area:p;margin:0!important;align-self:start;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+html body #v-qa :is(a.topic,.part-h)>.ring{position:static!important;display:flex!important;align-items:center;gap:10px;width:auto!important;height:auto!important;min-height:20px;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;
+ box-shadow:none!important;background:none!important;font:700 12.5px/1 var(--body,system-ui,sans-serif)!important;color:var(--ink,#2a1627)!important;font-variant-numeric:tabular-nums lining-nums}
+html body #v-qa :is(a.topic,.part-h)>.ring::before{content:""!important;display:block!important;position:static!important;flex:1;height:8px;width:auto!important;border-radius:999px!important;border:0!important;box-shadow:none!important;
+ background:linear-gradient(90deg,#a3354f,#7a1f36) left/calc(var(--p,0) * 1%) 100% no-repeat,color-mix(in srgb,var(--lbl,#7a1f36) 14%,transparent)!important;mask:none!important;-webkit-mask:none!important;transform:none!important}
+html body #v-qa :is(a.topic,.part-h)>.ring::after{display:none!important}
+html body #v-qa a.topic>.ring{grid-area:bar}
+html body #v-qa a.topic>.qa-mini{grid-area:meta;margin:0!important}
+html body #v-qa a.topic>.qa-mini>i{display:none!important}
+html body #v-qa .part-h{flex-wrap:wrap}html body #v-qa .part-h>.ring{flex:1 1 100%;order:3;margin-top:6px!important}
+/* filters: one scrollable row; sort stays visible at the end, quieter than the filters */
+html body #v-qa #pchips{flex-wrap:nowrap!important;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none;padding-bottom:4px}
+html body #v-qa #pchips::-webkit-scrollbar{display:none}
+html body #v-qa #pchips>*{flex:none;scroll-snap-align:start}
+html body #v-qa #pchips>.sp{flex:1 0 8px}
+html body #v-qa #pchips>button[data-sort],html body #v-qa #pchips>:last-child:is(button){position:sticky;right:0;z-index:1;background:var(--bg,#faf6f3)!important;border-color:transparent!important;box-shadow:-12px 0 12px var(--bg,#faf6f3)!important;color:var(--muted)!important;font-size:13px!important}
+/* back to top: bottom right, above the tab bar, off the left-aligned headings */
+html body .fx-top{left:auto!important;right:14px!important;bottom:calc(env(safe-area-inset-bottom,0px) + 92px)!important}
+/* the tab bar never hides what you scroll or jump to */
+html{scroll-padding-bottom:calc(env(safe-area-inset-bottom,0px) + 96px)}
+/* header settings group (header_more.js): inline on wide screens; behind one button on narrow ones */
+#tools .zz-more{display:contents}#tools .zz-more-t{display:none}
+@media (max-width:899px){#tools .zz-more-t{display:inline-flex;align-items:center;justify-content:center}
+ #tools .zz-more{display:none;position:absolute;top:calc(100% + 10px);right:0;gap:4px;padding:6px;border-radius:999px;background:color-mix(in srgb,var(--panel,#fffdfa) 92%,transparent);
+  -webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);border:1px solid var(--line,rgba(42,22,39,.12));box-shadow:0 12px 30px rgba(42,22,39,.18)}
+ #tools.zz-more-on .zz-more{display:flex}}
+
+/* back to top follows the bars: away while you read down, back when you scroll up (any floating button covers something) */
+html body .fx-top{translate:0 calc(var(--zz-f,0) * (100% + 120px))}
+@media (max-width:899px){#tools{overflow:visible!important}}
