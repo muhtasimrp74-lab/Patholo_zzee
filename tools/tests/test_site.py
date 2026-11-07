@@ -524,6 +524,33 @@ class Browser(unittest.TestCase):
         pg.evaluate("()=>{localStorage.setItem('zz-rt','x');location.hash='#/home';setTimeout(()=>location.hash='#/menu',50)}"); pg.wait_for_timeout(900)
         t = pg.evaluate("()=>document.getElementById('v-menu').innerText")
         self.assertIn('still signed in', t.lower(), 'a saved session with no server reads as still signed in, not signed out'); pg.close()
+    def test_chapters_cards_filters_header_and_back_to_top(self):   # Chapters redesign (owner brief, 8 points)
+        for w in (412, 820):
+            pg = self.b.new_page(viewport={'width': w, 'height': 1000}, has_touch=True, is_mobile=w < 600)
+            pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+            pg.goto(URL + '#/qa'); pg.wait_for_timeout(1500)
+            c = pg.evaluate("""()=>[...document.querySelectorAll('#v-qa a.topic')].slice(0,6).map(a=>{const no=a.querySelector('.no'),p=a.querySelector('p'),lh=parseFloat(getComputedStyle(p).lineHeight)||20;
+                return {bars:[a.querySelector('.qa-mini>i'),a.querySelector('.ring')].filter(e=>e&&getComputedStyle(e).display!=='none').length,badge:[Math.round(no.getBoundingClientRect().width),parseFloat(getComputedStyle(no).fontSize)],
+                lines:Math.round((p.clientHeight-parseFloat(getComputedStyle(p).paddingTop)-parseFloat(getComputedStyle(p).paddingBottom))/lh),barY:Math.round(a.querySelector('.ring').getBoundingClientRect().bottom-a.getBoundingClientRect().bottom),top:Math.round(a.getBoundingClientRect().top)}})""")
+            for x in c:
+                self.assertEqual(x['bars'], 1, 'one learned bar per card %r' % x); self.assertLessEqual(x['badge'][0], 110, x); self.assertGreaterEqual(x['badge'][1], 12); self.assertLessEqual(x['lines'], 2, 'two-line previews %r' % x)
+            rows = {}
+            for x in c: rows.setdefault(x['top'], set()).add(x['barY'])
+            self.assertTrue(all(len(v) == 1 for v in rows.values()), 'bars line up across a row %r' % rows)
+            ch = pg.evaluate("()=>{const r=document.getElementById('pchips'),s=r.querySelector(':scope>:last-child').getBoundingClientRect();return [getComputedStyle(r).flexWrap,s.right<=innerWidth+1&&s.left>=0]}")
+            self.assertEqual(ch, ['nowrap', True], 'filters on one scrollable row; sort stays on screen')
+            if w == 412:
+                hid = lambda: pg.evaluate("()=>getComputedStyle(document.querySelector('#tools .zz-more')).display==='none'")
+                self.assertTrue(hid(), 'secondary controls grouped on phones'); self.assertTrue(pg.locator('#tools [data-t=ink]').is_visible(), 'Annotate stays visible')
+                pg.click('#tools .zz-more-t'); self.assertFalse(hid()); pg.click('#tools [data-t=theme]'); pg.wait_for_timeout(150)
+                self.assertNotEqual(pg.evaluate("()=>document.documentElement.dataset.theme||''"), '', 'grouped buttons still work')
+                pg.keyboard.press('Escape'); self.assertTrue(hid(), 'Escape closes the settings')
+                pg.mouse.move(200, 600)
+                for _ in range(8): pg.mouse.wheel(0, 300); pg.wait_for_timeout(40)
+                pg.wait_for_timeout(900); self.assertGreaterEqual(pg.evaluate("()=>document.querySelector('.fx-top').getBoundingClientRect().top"), 1000, 'back to top steps away while reading down')
+            pg.close()
+        pg = self.b.new_page(viewport={'width': 1280, 'height': 900}); pg.goto(URL + '#/qa'); pg.wait_for_timeout(1000)
+        self.assertEqual(pg.evaluate("()=>[getComputedStyle(document.querySelector('#tools .zz-more-t')).display,getComputedStyle(document.querySelector('#tools .zz-more')).display]"), ['none', 'contents'], 'wide screens: controls inline'); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
