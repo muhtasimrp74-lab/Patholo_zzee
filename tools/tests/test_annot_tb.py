@@ -306,4 +306,12 @@ class TextbookAnnot(unittest.TestCase):
         pg.reload(); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_selector('#tbbody[data-ch] [data-b]'); pg.wait_for_timeout(500)
         self.assertEqual(self.objs(pg), 2, 'saved across reload'); self.assertEqual(pg.evaluate("k=>Annot.orphans(k).length", KEY), 0); self.assertEqual(self.errs, [])
 
+    def test_textbook_tables_take_ink_like_the_rest_of_the_page(self):   # .tbt-s scroll boxes used their own touch-action (auto)
+        pg = self.page(412, 900, 'ch04'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()&&document.querySelector('#tbbody .tbt-s')", timeout=15000); pg.wait_for_timeout(600)
+        for mode in ('pf', 'po'):
+            pg.evaluate("m=>{Annot._debug.setOn(true);Object.assign(Annot.state(),{mode:m,tool:'pen'})}", mode); pg.wait_for_timeout(200)
+            r = pg.evaluate("()=>[...document.querySelectorAll('#tbbody .tbt-s')].map(w=>{const h=w.closest('.an-host');return [getComputedStyle(w).touchAction,getComputedStyle(h).touchAction,w.scrollWidth<=w.clientWidth+1]})")
+            self.assertTrue(r and all(a == b and f for a, b, f in r), '%s: textbook tables follow the page touch-action and fit %r' % (mode, r))
+        pg.close()
+
 if __name__ == '__main__': unittest.main()

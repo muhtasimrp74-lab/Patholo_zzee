@@ -238,3 +238,11 @@ body.an-on.an-pen-near:not(.an-t-hand):not(.an-t-hi) .an-host :is(.tw,pre){touch
 .ans .tw{overflow-x:visible!important}
 .ans .tw table{width:100%;max-width:100%;table-layout:fixed}
 .ans .tw :is(td,th){overflow-wrap:anywhere;word-break:normal;hyphens:auto}
+/* the textbook reader's tables sit in their own scroll boxes too (.tbt-s): same touch-action as the reading block, and they fit
+   the column so ink stays on their cells (pinch-zoom still enlarges a dense table) */
+body.an-on.an-pf:not(.an-t-hand):not(.an-t-hi) .an-host .tbt-s{touch-action:pinch-zoom}
+body.an-on.an-po:not(.an-t-hand):not(.an-t-hi) .an-host .tbt-s{touch-action:pan-x pan-y pinch-zoom}
+body.an-on.an-pen-near:not(.an-t-hand):not(.an-t-hi) .an-host .tbt-s{touch-action:none}
+.an-host .tbt-s{overflow-x:visible!important}
+.an-host .tbt-s table{width:100%;max-width:100%;table-layout:fixed}
+.an-host .tbt-s :is(td,th){overflow-wrap:anywhere;word-break:normal;hyphens:auto}
