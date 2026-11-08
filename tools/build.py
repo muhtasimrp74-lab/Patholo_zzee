@@ -430,5 +430,6 @@ subprocess.run([sys.executable, os.path.join(HERE, 'apply_hand_edits.py')], chec
 subprocess.run([sys.executable, os.path.join(HERE, 'source_links.py')], check=True)
 # the full page becomes index.full.html (gitignored, tests only); gate.py writes the gated index.html, content/ and private-chunks/
 os.replace(os.path.join(HERE, '..', 'index.html'), os.path.join(HERE, '..', 'index.full.html'))
+import mcq_enrich; print('mcq enrich:', mcq_enrich.apply(os.path.join(HERE, '..', 'index.full.html')))   # WHY explanations quoted from the notes (private, gated with the MCQs)
 import gate; gate.gate()
 import csp; csp.apply(os.path.join(HERE, '..'))   # last: hash every inline script into the CSP (no 'unsafe-inline' scripts)

@@ -79,7 +79,7 @@
     const bt=(val,lb)=>`<button type="button" data-a="tf" data-j="${j}" data-v="${val}" ${o.lock?'disabled':''} aria-pressed="${v===val}" class="${fb&&tr===val?'key':''}">${lb}</button>`;
     return `<div class="${c}"><p><b>${j+1}</b><span>${E(t)}${note}${fb?warn(j):''}</span></p><div class="mx-tf" role="group" aria-label="Statement ${j+1}">${bt(1,'True')}${bt(0,'False')}</div></div>`}).join('');
   }
-  return h+(fb&&q.k?`<p class="mx-k">${E(q.k)}</p>`:'')}
+  return h+(fb&&q.x?`<p class="mx-x"><b>Why</b> ${E(q.x)}</p>`:'')+(fb&&q.k?`<p class="mx-k">${E(q.k)}</p>`:'')}
  const bareAns=q=>q.e||q.y?'':`<p class="mx-ans">Answer: <b>${L[q.a]}</b>. ${E(q.o[q.a])}</p>`;
 
  /* ---------- run / review ---------- */

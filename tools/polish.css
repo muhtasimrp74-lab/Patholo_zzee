@@ -329,3 +329,7 @@ html body #v-qa.zz-saved-only .zz-tw:not(.on){display:none!important}
 html body #v-qa.zz-saved-only section.part:not(:has(.zz-tw.on)){display:none!important}
 .zz-saved-empty{display:none;margin:8px 2px;color:var(--muted);font-size:14px}
 html body #v-qa.zz-saved-only.zz-saved-none .zz-saved-empty{display:block}
+
+/* MCQs: the WHY explanation after answering (quoted from the written answers or the Robbins chapter) */
+#v-mcqs .mx-x{margin:14px 0 0;padding:12px 14px;border-radius:14px;background:color-mix(in srgb,var(--lbl,#7a1f36) 7%,var(--panel,#fffdfa));border-left:3px solid var(--lbl,#7a1f36);font-size:14.5px;line-height:1.5;color:var(--ink,#2a1627)}
+html body #v-mcqs .mx-x>b:not(#_){display:block;margin-bottom:4px;font-size:12px;letter-spacing:.1em;text-transform:uppercase!important;font-weight:700;color:var(--lbl,#7a1f36)}

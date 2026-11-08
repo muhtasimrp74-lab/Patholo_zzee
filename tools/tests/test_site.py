@@ -568,6 +568,13 @@ class Browser(unittest.TestCase):
         pg.click('#v-qa #pchips .zz-saved'); pg.click('#v-qa #pchips [data-f=hm]'); pg.wait_for_timeout(300)
         self.assertEqual(pg.evaluate("()=>[...document.querySelectorAll('#v-qa .zz-tw')].filter(w=>w.getBoundingClientRect().height>0&&w.querySelector('a.topic').hidden).length"), 0, 'filtered-out cards leave no empty slots')
         self.assertEqual(errs, []); ctx.close()
+    def test_mcq_why_explanations_are_quoted_sources_and_never_public(self):   # tools/mcq_enrich.py at build time
+        get = lambda f: json.loads(re.search(r'const MCQDATA=(\{.*?\});\n', open(os.path.join(ROOT, f), encoding='utf8').read()).group(1))['q']
+        full = get('index.full.html'); xs = [q['x'] for q in full if q.get('x')]
+        self.assertGreaterEqual(len(xs), 150, 'WHY explanations added'); self.assertTrue(all(x.startswith(('From your notes: ', 'Robbins: ')) for x in xs), 'every explanation is a labelled quote')
+        self.assertFalse(any('x' in q for q in get('index.html')), 'the public page carries no WHY quotes (they stay in the private chunks)')
+        pg = self.phone('#/mcqs'); pg.wait_for_timeout(500)
+        self.assertEqual(pg.evaluate("()=>{const p=document.createElement('p');p.className='mx-x';p.innerHTML='<b>Why</b> t';document.getElementById('v-mcqs').append(p);const s=getComputedStyle(p.firstChild),r=[s.textTransform,s.fontWeight];p.remove();return r}"), ['uppercase', '700']); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
