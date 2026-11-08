@@ -229,3 +229,12 @@ body.an-has-tape #an-tape{display:inline-flex;align-items:center}
 .an-pop .an-rul-t{min-height:44px;padding:0 14px;border-radius:999px;border:1px solid var(--line,#ddd);background:none;color:inherit;font:700 12px var(--body,system-ui,sans-serif);letter-spacing:.06em;text-transform:uppercase}
 .an-pop .an-rul-t[aria-pressed=true]{background:var(--btn,#7a1f36);color:#fff;border-color:transparent}
 @media print{#an-ruler{display:none!important}}
+/* tables (and code blocks) in an answer are their own scroll containers, so the browser used their touch-action instead of the
+   answer's: a pen or finger drag on a table scrolled it and cancelled the stroke. They follow the answer's touch-action. */
+body.an-on.an-pf:not(.an-t-hand):not(.an-t-hi) .an-host :is(.tw,pre){touch-action:pinch-zoom}
+body.an-on.an-po:not(.an-t-hand):not(.an-t-hi) .an-host :is(.tw,pre){touch-action:pan-x pan-y pinch-zoom}
+body.an-on.an-pen-near:not(.an-t-hand):not(.an-t-hi) .an-host :is(.tw,pre){touch-action:none}
+/* ink is placed relative to the answer, so a table scrolled sideways left strokes out of line with its cells: answer tables fit */
+.ans .tw{overflow-x:visible!important}
+.ans .tw table{width:100%;max-width:100%;table-layout:fixed}
+.ans .tw :is(td,th){overflow-wrap:anywhere;word-break:normal;hyphens:auto}

@@ -323,4 +323,19 @@ class ProTools(unittest.TestCase):
         self.assertEqual(t.get_attribute('aria-pressed'), 'true'); t.click(); pg.wait_for_timeout(150); self.assertFalse(pg.locator('#an-ruler').is_visible(), 'the toggle hides it')
         self.assertEqual(self.errs, [])
 
+    def test_tables_in_answers_take_ink_like_the_rest_of_the_answer(self):
+        # a table sits in its own scroll box (.tw), so the browser used ITS touch-action (auto): a drag on a table scrolled it and
+        # cancelled the stroke, and a table scrolled sideways left ink out of line with its cells
+        pg = self.page(412, 900); pg.goto(URL + '#/02'); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); pg.wait_for_timeout(600)
+        pg.evaluate("()=>{document.querySelector('#q7 header').click();document.querySelector('#q7 .ans table').scrollIntoView({block:'center'})}"); pg.wait_for_timeout(300)
+        for mode in ('pf', 'po'):
+            pg.evaluate("m=>{Annot._debug.setOn(true);Object.assign(Annot.state(),{mode:m,tool:'pen',pen:'ball'})}", mode); pg.wait_for_timeout(200)
+            r = pg.evaluate("()=>{const w=document.querySelector('#q7 .ans .tw');return [getComputedStyle(w).touchAction,getComputedStyle(document.querySelector('#q7 .ans')).touchAction,w.scrollWidth<=w.clientWidth+1]}")
+            self.assertEqual(r[0], r[1], '%s: the table follows the answer touch-action %r' % (mode, r)); self.assertTrue(r[2], 'the table fits the card (ink stays on its cells)')
+        b = pg.evaluate("()=>{const a=document.querySelector('#q7 .ans').getBoundingClientRect(),t=document.querySelector('#q7 .ans table').getBoundingClientRect();return [t.left-a.left,t.top-a.top,t.width,t.height]}")
+        y = b[1] + b[3] / 2; self.draw(pg, '#q7 .ans', [[b[0] + 20 + i * 14, y + (i % 3)] for i in range(12)])
+        self.assertEqual(len(self.docobjs(pg, 'q7')), 1, 'a stroke across the table is saved')
+        self.assertGreater(pg.evaluate("y=>{const c=document.querySelector('#q7 .ans canvas.ink'),k=c.width/c.clientWidth,d=c.getContext('2d').getImageData(0,Math.round((y-3)*k),c.width,Math.round(6*k)).data;let n=0;for(let i=3;i<d.length;i+=4)if(d[i])n++;return n}", y), 50, 'and painted over the table')
+        self.assertEqual(self.errs, [])
+
 if __name__ == '__main__': unittest.main()
