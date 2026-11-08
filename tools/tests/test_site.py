@@ -51,6 +51,15 @@ class Build(unittest.TestCase):
     def test_every_answer_heading_matches_a_question(self):
         import content
         qs = {it[1] for t in content.TOPICS for it in t[3]}; self.assertFalse([k for k in content.ANSWERS if k not in qs])
+    def test_every_page_header_count_equals_the_cards_on_that_page(self):
+        # the "N questions" line under each topic / chapter title was once a stale copy of topic 01's number on every chapter page
+        h = rd('index.html'); bad = []; seen = 0
+        for v in re.split(r'(?=<div class="view" id="v-)', h)[1:]:
+            vid = re.match(r'<div class="view" id="(v-[^"]+)"', v).group(1); m = re.search(r'<p class="lede">(\d[\d,]*) (?:practical )?questions', v)
+            if not m: continue
+            seen += 1; cards = len(re.findall(r'<article class="card"', v))
+            if int(m.group(1).replace(',', '')) != cards: bad.append((vid, m.group(1), cards))
+        self.assertGreater(seen, 20); self.assertEqual(bad, [])
 
 class Identity(unittest.TestCase):
     """Stable ids and reviewed duplicate merges."""
@@ -137,6 +146,14 @@ class Browser(unittest.TestCase):
     def ready(self, pg):
         pg.wait_for_function("()=>document.readyState==='complete'&&typeof Annot==='object'&&Annot.isReady()"); pg.wait_for_timeout(500)
     def state(self, pg): return pg.evaluate("()=>localStorage.vivaState")
+    def test_header_count_follows_the_cards_on_the_page(self):
+        pg = self.page('#/c3'); n = pg.evaluate("()=>document.querySelectorAll('#v-c3 article.card').length"); self.assertGreater(n, 20)
+        lede = lambda: pg.evaluate("()=>document.querySelector('#v-c3 .hero-in .lede').textContent")
+        self.assertTrue(lede().startswith('%d questions' % n), lede())
+        pg.evaluate("()=>[...document.querySelectorAll('#v-c3 article.card')].slice(0,5).forEach(c=>c.classList.add('hide'))"); pg.wait_for_timeout(300)
+        self.assertTrue(lede().startswith('%d of %d questions' % (n - 5, n)), lede())
+        pg.evaluate("()=>document.querySelectorAll('#v-c3 article.card.hide').forEach(c=>c.classList.remove('hide'))"); pg.wait_for_timeout(300)
+        self.assertTrue(lede().startswith('%d questions' % n), lede()); self.assertEqual(self.errs, []); pg.close()
     def test_pages_load_without_errors(self):
         pg = self.page()
         for h in ('#/', '#/qa', '#/questions', '#/05', '#/mcqs', '#/menu', '#/textbook'): pg.goto(URL + h); pg.wait_for_timeout(300)

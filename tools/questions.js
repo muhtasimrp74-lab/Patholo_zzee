@@ -223,6 +223,15 @@ addEventListener('hashchange',()=>{place();run()});
 window.qfApply=()=>{if(nAct())apply()};
 if(typeof render==='function'){const r0=render;render=function(k){r0(k);if(nAct())apply()}}
 
+/* ---------- live header count: the "N questions" line on a topic/chapter page always follows the cards on the page (search and filters included), never a stored number ---------- */
+function liveLede(v){const p=v.querySelector('.hero-in .lede');if(!p)return;const all=v.querySelectorAll('article.card');if(!all.length)return;
+ if(!p.dataset.lede)p.dataset.lede=p.textContent;const m=/^\d[\d,]*( (?:practical )?)questions?(.*)$/.exec(p.dataset.lede);if(!m)return;
+ let k=0;all.forEach(c=>{if(!c.classList.contains('hide')&&!c.classList.contains('tf-hide'))k++});const t=all.length;
+ const txt=(k===t?t:k+' of '+t)+m[1]+(t===1?'question':'questions')+m[2];if(p.textContent!==txt)p.textContent=txt}
+let llT=0;function liveLedes(){cancelAnimationFrame(llT);llT=requestAnimationFrame(()=>document.querySelectorAll('.view').forEach(v=>{if(v.offsetParent)liveLede(v)}))}
+const llO=new MutationObserver(liveLedes);document.querySelectorAll('.view').forEach(v=>llO.observe(v,{subtree:true,attributes:true,attributeFilter:['class','hidden']}));
+addEventListener('hashchange',liveLedes);document.addEventListener('input',liveLedes);liveLedes();
+
 /* drawer (tablet) / bottom sheet (phone) / docked sidebar (wide) */
 function openF(o){/* the drawer can sit inside the swipe pager (its own stacking layer): keep the scrim beside it so it stays under the drawer */
  if(o){const sc=$q('qscrim');if(sc&&qf.parentNode&&sc.parentNode!==qf.parentNode)qf.parentNode.insertBefore(sc,qf)}
