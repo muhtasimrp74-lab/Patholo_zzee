@@ -90,11 +90,15 @@ def apply(path, report=None):
             cid = next((v for v in set(r[2] for r in D) if set(map(stem, words(t))) and len(set(map(stem, words(t))) & set(map(stem, words(next(r[4] for r in D if r[2] == v))))) / len(set(map(stem, words(t)))) >= .6), None)
             if cid and os.path.exists(f): tb[cid] = sentences(open(f, encoding='utf8').read())
     n0 = len(M['q']); done, skipped = explain(M, D, cards, cm, tb)
+    # authored explanations (tools/mcq_explanations.json, keyed by MCQ id only, written in our own words) take precedence over quotes
+    ov = os.path.join(ROOT, 'tools', 'mcq_explanations.json'); authored = json.load(open(ov, encoding='utf8')) if os.path.exists(ov) else {}
+    for q in M['q']:
+        if q['h'] in authored: q['x'] = authored[q['h']]
     new = []   # generate(M, D, cards, cm) is switched off: list parsing picked sub-headings (Gross, Micro...) as options; not good enough to ship
     seen = {q['h'] for q in M['q']}; new = [q for q in new if q['h'] not in seen]; M['q'] += new
     page = page[:m.start()] + 'const MCQDATA=' + json.dumps(M, ensure_ascii=False, separators=(',', ':')) + ';\n' + page[m.end():]   # gate.py slices up to ';\n'
     open(path, 'w', encoding='utf8').write(page)
-    st = {'mcqs': n0, 'explained': done, 'keyed_false': skipped, 'with_notes_e': sum(1 for q in M['q'][:n0] if q.get('e')), 'new': len(new), 'mapped_chapters': len(cm), 'textbook_chapters': len(tb)}
+    st = {'mcqs': n0, 'authored': sum(1 for q in M['q'] if q['h'] in authored), 'explained': done, 'keyed_false': skipped, 'with_notes_e': sum(1 for q in M['q'][:n0] if q.get('e')), 'new': len(new), 'mapped_chapters': len(cm), 'textbook_chapters': len(tb)}
     if report: open(report, 'w', encoding='utf8').write(review(M, n0, st))
     return st
 def review(M, n0, st):
