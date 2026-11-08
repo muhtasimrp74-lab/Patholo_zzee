@@ -74,7 +74,9 @@ function render(){
  const now=NOW(),L=new Set(S.learned),BM=new Set(S.bm),tot=ORDER.length;
  const read=ORDER.filter(d=>L.has(d[3])).length,pc=pct(read,tot);
  const due=Object.values<any>(S.sr).filter(o=>o.d<=now).length,mist=Object.values<any>(S.sr).filter(o=>o.b===0).length;
- const nxt=ORDER.find(d=>!L.has(d[3]));
+ /* the next unlearned question after where you are reading (S.recent follows your reading); it stayed on Q.1 until 'learned' was tapped */
+ const cur=(S.recent||[]).map((i:any)=>BY[i]).filter(Boolean)[0],ci=cur?ORDER.findIndex((d:any)=>d[3]===cur[3]):-1;
+ const nxt=ORDER.slice(ci+1).find(d=>!L.has(d[3]))||ORDER.find(d=>!L.has(d[3]));
  const VQ=ORDER.filter(d=>!isW(d)),WQ=ORDER.filter(d=>isW(d)||isB(d));
  const vr=VQ.filter(d=>L.has(d[3])).length,wr=WQ.filter(d=>L.has(d[3])).length;
  const nextV=VQ.find(d=>!L.has(d[3])),nextW=WQ.find(d=>!L.has(d[3]));
@@ -132,7 +134,7 @@ function render(){
  h+='<section><h3 class="nh-h nh-h0">Study tracks</h3><div class="nh-tr">';
  h+='<a class="nh-t4 nh-prog" href="'+(nextV?lnk(nextV):'#/questions')+'"><span class="nh-tk">Viva questions</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'<span class="nh-ts">'+(VQ.length-vr)+' unread · A- and B-cards plus systemic</span><em>'+(vr?'Continue':'Start')+' →</em></a>';
  h+='<a class="nh-t4 nh-prog" href="'+(nextW?lnk(nextW):'#/questions')+'"><span class="nh-tk">Written questions</span><b>'+wr+'<small> / '+WQ.length+'</small></b>'+bar(pct(wr,WQ.length))+'<span class="nh-ts">'+(WQ.length-wr)+' unread · long-answer format</span><em>'+(wr?'Continue':'Start')+' →</em></a>';
- h+='<a class="nh-t4 nh-prog" href="#/mcqs"><span class="nh-tk">MCQs</span><b>'+mq.att+'<small> / '+mq.tot+'</small></b>'+bar(pct(mq.att,mq.tot))+'<span class="nh-ts">'+(mq.n?mq.acc+'% correct · '+mq.n+' answers':'12 past papers · mock exams · quick sets')+'</span><em>'+(mq.sv?'Resume':mq.att?'Practise':'Start')+' →</em></a>';
+ h+='<a class="nh-t4 nh-prog" href="#/mcqs"><span class="nh-tk">MCQs</span><b>'+mq.att+'<small> / '+mq.tot+'</small></b>'+bar(pct(mq.att,mq.tot))+'<span class="nh-ts">'+(mq.n?mq.acc+'% correct · '+mq.n+' answers':'{{ZZ_PAPERS}} past papers · mock exams · quick sets')+'</span><em>'+(mq.sv?'Resume':mq.att?'Practise':'Start')+' →</em></a>';
  h+='<a class="nh-t4 nh-prog" href="#/textbook'+(tbNext?'/'+tbNext.id:'')+'"><span class="nh-tk">Robbins textbook</span><b>'+tbR+'<small> / '+(tbN||29)+'</small></b>'+bar(pct(tbR,tbN||29))+'<span class="nh-ts">'+(tbNext?'Next: Ch '+tbNext.n+' · '+esc2(tbNext.title):'Chapters read, offline-ready')+'</span><em>'+(tbR?'Continue':'Open')+' →</em></a>';
  h+='</div></section>';
 
