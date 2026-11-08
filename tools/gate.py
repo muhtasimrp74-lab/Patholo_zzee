@@ -32,7 +32,7 @@ def gate(root=ROOT):
     out.append(s[last:]); s = ''.join(out)
     i = s.index(MCQ_A) + len(MCQ_A); j = s.index(MCQ_B, i); mcq = json.loads(s[i:j])
     for q in mcq['q']: chunks.setdefault('mcq-%02d' % (q['c'] + 1), {'kind': 'mcq', 'topic': str(q['c'] + 1), 'q': []})['q'].append(q)
-    free = dict(mcq, q=[q for q in mcq['q'] if q['c'] == FREE_MCQ])
+    free = dict(mcq, q=[{k: v for k, v in q.items() if k != 'x'} for q in mcq['q'] if q['c'] == FREE_MCQ])   # WHY quotes (notes / Robbins) stay in the private chunks
     s = s[:i] + json.dumps(free, ensure_ascii=False, separators=(',', ':')) + s[j:]
     tbi = json.load(open(os.path.join(root, 'textbook', 'index.json'), encoding='utf8'))
     for ch in tbi['chapters']:
