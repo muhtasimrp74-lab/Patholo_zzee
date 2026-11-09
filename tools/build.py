@@ -162,6 +162,9 @@ for _c in list(CHAP):
     _o = RO.sub_order(_c)
     if _o: CHAP[_c] = (CHAP[_c][0], list(_o))
 for _q, (_c, _s, _t) in TREE.items():
+    if _s == '2026 college papers':   # deliberate section for the new college questions (no Robbins heading yet)
+        if _s not in CHAP[_c][1]: CHAP[_c][1].append(_s)
+        continue
     if _s not in CHAP[_c][1]: CHAP[_c][1].append(_s); print('heading not in outline:', _c, _s)
     elif _t not in RO.topic_order(_c, _s) and RO.OUT.get(_c): print('topic not in outline:', _c, _s, '|', _t)
 if UNPLACED: print('UNPLACED questions (add a rule in robbins_outline.py):', UNPLACED)
