@@ -89,6 +89,10 @@ def apply(path, report=None):
             f = os.path.join(ROOT, 'textbook', c.get('id', '') + '.html'); t = (c.get('title') or '')
             cid = next((v for v in set(r[2] for r in D) if set(map(stem, words(t))) and len(set(map(stem, words(t))) & set(map(stem, words(next(r[4] for r in D if r[2] == v))))) / len(set(map(stem, words(t)))) >= .6), None)
             if cid and os.path.exists(f): tb[cid] = sentences(open(f, encoding='utf8').read())
+    kf = os.path.join(ROOT, 'tools', 'mcq_key_fixes.json')   # corrected answer keys (by id), applied before anything reads the key
+    fixes = {k: v for k, v in json.load(open(kf, encoding='utf8')).items() if not k.startswith('_')} if os.path.exists(kf) else {}
+    for q in M['q']:
+        if q['h'] in fixes: q['a'] = fixes[q['h']]['a']
     n0 = len(M['q']); done, skipped = explain(M, D, cards, cm, tb)
     # authored explanations (tools/mcq_explanations.json, keyed by MCQ id only, written in our own words) take precedence over quotes
     ov = os.path.join(ROOT, 'tools', 'mcq_explanations.json'); authored = json.load(open(ov, encoding='utf8')) if os.path.exists(ov) else {}

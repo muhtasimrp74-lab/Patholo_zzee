@@ -1,0 +1,13 @@
+{
+ "_note": "Corrected answer keys, by MCQ id only (no question text). Applied by tools/mcq_enrich.py at build time. Each entry says why.",
+ "c6059dc9": {
+  "a": [
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "why": "Autoimmune gastritis: 'Antibodies to parietal cells' was keyed false; these antibodies define the disease, so it is true."
+ }
+}
