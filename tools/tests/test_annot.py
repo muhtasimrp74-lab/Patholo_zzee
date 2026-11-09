@@ -75,6 +75,13 @@ class AnnotBrowser(unittest.TestCase):
         pg.reload(); pg.wait_for_function("()=>window.Annot&&Annot.isReady()"); self.assertEqual(self.objs(pg, cid), 1)
         pg.evaluate("id=>{document.getElementById(id).querySelector('header').click()}", cid); pg.wait_for_timeout(500)
         self.assertTrue(pg.evaluate("id=>!!document.querySelector('#'+id+' canvas.an-c.ink')", cid)); ctx.close()
+    def test_ink_survives_the_lazy_chunk_loader_replacing_the_answer_content(self):
+        # tools/chunks.js sets .ans innerHTML after load, wiping the ink canvases; ink must come back (list showed notes, ink was invisible)
+        pg = self.page(); cid, sel = self.open_card(pg); self.draw(pg, sel); self.assertEqual(self.objs(pg, cid), 1)
+        PIX = "s=>{const c=document.querySelector(s+' > canvas.an-c.ink');if(!c)return -1;const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;let n=0;for(let i=3;i<d.length;i+=4)if(d[i])n++;return n}"
+        self.assertGreater(pg.evaluate(PIX, sel), 0)
+        pg.evaluate("s=>{const a=document.querySelector(s),c=a.cloneNode(true);c.querySelectorAll('.an-c,.an-pin,.an-mn').forEach(e=>e.remove());a.innerHTML=c.innerHTML;dispatchEvent(new CustomEvent('zz:chunk',{detail:'t'}))}", sel)
+        pg.wait_for_timeout(400); self.assertGreater(pg.evaluate(PIX, sel), 0); self.assertEqual(self.objs(pg, cid), 1); self.assertEqual(self.errs, [])
     def test_ink_stays_on_the_same_text_after_text_size_and_width_changes(self):
         for w in (390, 768, 1024):
             pg = self.page(w); cid, sel = self.open_card(pg)
