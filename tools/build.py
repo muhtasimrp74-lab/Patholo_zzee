@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Builds ../index.html from src/index.base.html (original 15 systemic topics) + content.py (GP and HM topics)."""
+import hashlib
 import re, json, html, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import content, robbins_map, robbins_outline as RO
@@ -70,8 +71,10 @@ QID, _k = {}, n
 # after every existing card and no saved id moves; matching cards only gain college exam tags (applied once ids exist, below)
 _C26 = json.load(open(os.path.join(HERE, 'college_2026.json'), encoding='utf8'))
 _TIX = {t[0]: t for t in content.TOPICS}
+# answers written for the new questions (tools/college_2026_answers.json, keyed by a hash of the question text); the rest say 'Answer to be added.'
+_C26A = json.load(open(os.path.join(HERE, 'college_2026_answers.json'), encoding='utf8')) if os.path.exists(os.path.join(HERE, 'college_2026_answers.json')) else {}
 for _nq in _C26['new']:
-    _TIX[MERGE.get(_nq['tid'], _nq['tid'])][3].append(('C26', _nq['q'], '<p>%s</p>' % content.BOX_NOTE, 'W', 0, _nq['refs'], (), {}, 3))
+    _TIX[MERGE.get(_nq['tid'], _nq['tid'])][3].append(('C26', _nq['q'], _C26A.get(hashlib.sha1(_nq['q'].encode()).hexdigest()[:10], '<p>%s</p>' % content.BOX_NOTE), 'W', 0, _nq['refs'], (), {}, 3))
 def _rank(it): return it[8] if len(it) > 8 else (1 if len(it) > 7 else 0)   # 0 written, 1 box viva, 2 DU written (merged items keep their survivor's rank)
 for _pass in (0, 1, 2, 3):
     for _ti, _t in enumerate(content.TOPICS):

@@ -582,7 +582,7 @@
  "new": [
   {
    "tid": "c3",
-   "q": "A 45-year-old male presented with cough and haemoptysis for 3 months. He also complained of evening rise of temperature and weight loss. Chest X-ray shows an upper lobe cavitary lesion and sputum is positive for acid-fast bacilli. morphological features.",
+   "q": "A 45-year-old male presented with cough and haemoptysis for 3 months. He also complained of evening rise of temperature and weight loss. Chest X-ray shows an upper lobe cavitary lesion and sputum is positive for acid-fast bacilli. What type of inflammatory lesion do you expect in a core biopsy of the lung, and describe its morphological features.",
    "refs": "DMC-1st Term 26",
    "marks": "(1+3)",
    "ch": "Inflammation"
@@ -666,7 +666,7 @@
   },
   {
    "tid": "02",
-   "q": "A 12-year-old boy presents with fever, migratory pain in large joints and shortness of breath following untreated pharyngitis. Laboratory investigation shows an elevated ASO titre. (i) What is the most likely diagnosis? (1) (ii) Name the cardiac lesion characteristically seen in this disease.",
+   "q": "A 12-year-old boy presents with fever, migratory pain in large joints and shortness of breath following untreated pharyngitis. Laboratory investigation shows an elevated ASO titre. (i) What is the most likely diagnosis? (ii) Name the cardiac lesion characteristically seen in this disease.",
    "refs": "SSMC-1st Term 26",
    "marks": "(1)",
    "ch": "Diseases Of The Cardiovascular System"
@@ -715,7 +715,7 @@
   },
   {
    "tid": "04",
-   "q": "A 60-year-old man presents with persistent cough, haemoptysis and weight loss for 3 months. He also complains of chest pain and hoarseness of voice. He has a history of heavy smoking. (i) State the most likely diagnosis. (1) (ii) Outline the diagnostic approach.",
+   "q": "A 60-year-old man presents with persistent cough, haemoptysis and weight loss for 3 months. He also complains of chest pain and hoarseness of voice. He has a history of heavy smoking. (i) State the most likely diagnosis. (ii) Outline the diagnostic approach.",
    "refs": "SSMC-1st Term 26",
    "marks": "(1)",
    "ch": "Diseases Of The Respiratory System"
@@ -778,7 +778,7 @@
   },
   {
    "tid": "05",
-   "q": "A 62-year-old woman presents with altered bowel habit, abdominal pain and iron deficiency anaemia. (a) What is the most likely diagnosis? (2) (b) Which investigation is most important for the patient?",
+   "q": "A 62-year-old woman presents with altered bowel habit, abdominal pain and iron deficiency anaemia. (a) What is the most likely diagnosis? (b) Which investigation is most important for the patient?",
    "refs": "DMC-1st Term 26",
    "marks": "(2)",
    "ch": "Diseases Of The Gastrointestinal System"
@@ -799,7 +799,7 @@
   },
   {
    "tid": "07",
-   "q": "A 12-year-old boy develops facial puffiness and periorbital oedema two weeks after an episode of sore throat. His urine shows proteinuria, microscopic haematuria and RBC casts. Serum complement C3 is reduced. (a) What is the most likely diagnosis? Give two findings supporting your diagnosis. (2.5) (b) Explain the basic mechanism of renal injury in this condition.",
+   "q": "A 12-year-old boy develops facial puffiness and periorbital oedema two weeks after an episode of sore throat. His urine shows proteinuria, microscopic haematuria and RBC casts. Serum complement C3 is reduced. (a) What is the most likely diagnosis? Give two findings supporting your diagnosis. (b) Explain the basic mechanism of renal injury in this condition.",
    "refs": "DMC-2nd Ass 26",
    "marks": "(2.5)",
    "ch": "Diseases Of The Renal System"
@@ -834,7 +834,7 @@
   },
   {
    "tid": "07",
-   "q": "Name the histopathological types of renal cell carcinoma. common?",
+   "q": "Name the histopathological types of renal cell carcinoma. Which is the most common?",
    "refs": "MMC-2nd Term 26",
    "marks": "(2+1)",
    "ch": "Diseases Of The Renal System"
@@ -869,14 +869,14 @@
   },
   {
    "tid": "08",
-   "q": "A 72-year-old male patient comes with complaints of increased urinary frequency, dysuria and pain in the back. Per-rectal examination reveals a palpable prostatic gland. (i) What is your probable diagnosis? (1) (ii) Mention the serum marker you will advise to assist the diagnosis.",
+   "q": "A 72-year-old male patient comes with complaints of increased urinary frequency, dysuria and pain in the back. Per-rectal examination reveals a palpable prostatic gland. (i) What is your probable diagnosis? (ii) Mention the serum marker you will advise to assist the diagnosis.",
    "refs": "SSMC-2nd Ass 26",
    "marks": "(1)",
    "ch": "Diseases Of The Male Genital System"
   },
   {
    "tid": "09",
-   "q": "What is the premalignant lesion of cervical carcinoma? cervical carcinoma. What measures can be taken to reduce the mortality from cervical carcinoma?",
+   "q": "What is the premalignant lesion of cervical carcinoma? Give the pathogenesis of cervical carcinoma. What measures can be taken to reduce the mortality from cervical carcinoma?",
    "refs": "SSMC-2nd Ass 26",
    "marks": "(1+2+2)",
    "ch": "Diseases Of The Female Genital System"
@@ -890,7 +890,7 @@
   },
   {
    "tid": "09",
-   "q": "A female of 60 years presents with foul-smelling vaginal discharge for 5 months. colposcopic examination there was a large fungating growth. What is the likely diagnosis? Which oncogenic virus is responsible for the tumour, and name the currently existing measure against this virus.",
+   "q": "A female of 60 years presents with foul-smelling vaginal discharge for 5 months. On colposcopic examination there was a large fungating growth. What is the likely diagnosis? Which oncogenic virus is responsible for the tumour, and name the currently existing measure against this virus.",
    "refs": "ShSMC-2nd Term 26",
    "marks": "(1+1.5)",
    "ch": "Diseases Of The Female Genital System"
@@ -946,7 +946,7 @@
   },
   {
    "tid": "c23",
-   "q": "A 40-year-old woman is diagnosed with breast carcinoma. Her mother had breast cancer at 45 years and her sister was recently diagnosed with ovarian carcinoma. (i) Mention the most likely hereditary gene mutation in this patient. (1) (ii) What is the normal function of this gene?",
+   "q": "A 40-year-old woman is diagnosed with breast carcinoma. Her mother had breast cancer at 45 years and her sister was recently diagnosed with ovarian carcinoma. (i) Mention the most likely hereditary gene mutation in this patient. (ii) What is the normal function of this gene?",
    "refs": "SSMC-2nd Ass 26",
    "marks": "(1)",
    "ch": "Breast Diseases"
@@ -981,14 +981,14 @@
   },
   {
    "tid": "11",
-   "q": "A 75-year-old man presents with a pigmented ulcerative lesion on his right great toe for 5 months. The lesion has been rapidly spreading for the last 2 months. (i) Give the differential diagnosis. (1) (ii) How will you confirm it?",
+   "q": "A 75-year-old man presents with a pigmented ulcerative lesion on his right great toe for 5 months. The lesion has been rapidly spreading for the last 2 months. (i) Give the differential diagnosis. (ii) How will you confirm it?",
    "refs": "SSMC-2nd Ass 26",
    "marks": "(1)",
    "ch": "Skin Diseases"
   },
   {
    "tid": "12",
-   "q": "A 15-year-old boy presented with pain and progressive swelling around the knee joint. X-ray shows a mixed lytic and blastic mass with an infiltrative margin in the lower end of the femur. (a) What is your clinical diagnosis? (2.5) (b) Write down the morphology of it.",
+   "q": "A 15-year-old boy presented with pain and progressive swelling around the knee joint. X-ray shows a mixed lytic and blastic mass with an infiltrative margin in the lower end of the femur. (a) What is your clinical diagnosis? (b) Write down the morphology of it.",
    "refs": "DMC-2nd Ass 26",
    "marks": "(2.5)",
    "ch": "Bones, Joints And Soft Tissue Diseases"
@@ -1065,7 +1065,7 @@
   },
   {
    "tid": "c14",
-   "q": "A farmer complains of weakness and abdominal discomfort; he often walks barefoot. Laboratory investigations reveal Hb level 6 gm/dl and stool R/M/E: Ankylostoma duodenale. (i) What is your provisional diagnosis? (1) (ii) State the underlying mechanism of this condition.",
+   "q": "A farmer complains of weakness and abdominal discomfort; he often walks barefoot. Laboratory investigations reveal Hb level 6 gm/dl and stool R/M/E: Ankylostoma duodenale. (i) What is your provisional diagnosis? (ii) State the underlying mechanism of this condition.",
    "refs": "SSMC-1st Term 26",
    "marks": "(1)",
    "ch": "Microcytic Hypochromic Anaemia"
@@ -1079,7 +1079,7 @@
   },
   {
    "tid": "c14",
-   "q": "A 28-year-old female from Bangladesh presents with severe generalised weakness, sore tongue (glossitis) and tingling sensations in her hands and feet. Hb: 5.0 g/dl, MCV: 115 fl, total WBC count: 2.5 x 109/L, platelet count: 80 x 109/L. shows macro-ovalocytes and hypersegmented neutrophils. What is the most likely diagnosis, and what is the underlying pathological mechanism for the neurological symptoms?",
+   "q": "A 28-year-old female from Bangladesh presents with severe generalised weakness, sore tongue (glossitis) and tingling sensations in her hands and feet. Hb: 5.0 g/dl, MCV: 115 fl, total WBC count: 2.5 x 109/L, platelet count: 80 x 109/L. Peripheral blood film shows macro-ovalocytes and hypersegmented neutrophils. What is the most likely diagnosis, and what is the underlying pathological mechanism for the neurological symptoms?",
    "refs": "DMC-1st Term 26",
    "marks": "(2+2)",
    "ch": "Macrocytic Anaemia"
@@ -1107,14 +1107,14 @@
   },
   {
    "tid": "c13",
-   "q": "An elderly woman presented with bone pain, weight loss and weakness. Multiple punched-out osteolytic lesions were seen in X-ray of the lumbosacral region. Her routine blood examination showed a very high ESR. (i) What is the most likely diagnosis? (1) (ii) What are the CRAB features?",
+   "q": "An elderly woman presented with bone pain, weight loss and weakness. Multiple punched-out osteolytic lesions were seen in X-ray of the lumbosacral region. Her routine blood examination showed a very high ESR. (i) What is the most likely diagnosis? (ii) What are the CRAB features?",
    "refs": "SSMC-1st Term 26",
    "marks": "(1)",
    "ch": "Paraproteinaemia And Multiple Myeloma"
   },
   {
    "tid": "c14",
-   "q": "(a) Define bleeding disorder. Classify it with examples. (1) (b) Mention the causes of coagulation disorder.",
+   "q": "(a) Define bleeding disorder. Classify it with examples. (b) Mention the causes of coagulation disorder.",
    "refs": "DMC-1st Term 26",
    "marks": "(2)",
    "ch": "Bleeding Disorders"
@@ -1219,7 +1219,7 @@
   },
   {
    "tid": "c30",
-   "q": "A 19-year-old male presents with polyuria, polydipsia, vomiting, abdominal pain and deep, rapid breathing. He is drowsy and dehydrated. Laboratory investigations show blood glucose 25 mmol/L and positive serum ketones. (i) What is the most likely diagnosis? (1) (ii) Mention two important complications of this condition.",
+   "q": "A 19-year-old male presents with polyuria, polydipsia, vomiting, abdominal pain and deep, rapid breathing. He is drowsy and dehydrated. Laboratory investigations show blood glucose 25 mmol/L and positive serum ketones. (i) What is the most likely diagnosis? (ii) Mention two important complications of this condition.",
    "refs": "SSMC-2nd Ass 26",
    "marks": "(1)",
    "ch": "Blood Glucose"

@@ -45,7 +45,9 @@ class Build(unittest.TestCase):
             for t in toks: self.assertIn(t, chips, '%s: tag %s on the card' % (qid, t))
         new = re.findall(r'<article class="card" id="q(\d+)"><header tabindex="0"><span class="code">C26</span>.*?<div class="ans">(.*?)</div></article>', self.h, re.S)
         self.assertEqual(len(new), len(ov['new'])); self.assertTrue(all(int(i) > 1393 for i, _ in new), 'new questions are numbered after every existing card')
-        self.assertTrue(all('Answer to be added.' in re.sub(r'<[^>]+>', '', a) for _, a in new), 'new questions say their answer is to be added')
+        answered = len(json.load(open(os.path.join(ROOT, 'tools', 'college_2026_answers.json'), encoding='utf8'))) if os.path.exists(os.path.join(ROOT, 'tools', 'college_2026_answers.json')) else 0
+        todo = [a for _, a in new if 'Answer to be added.' in re.sub(r'<[^>]+>', '', a)]
+        self.assertEqual(len(new) - len(todo), answered, 'every written answer reaches its card; the rest say their answer is to be added')
     def test_every_page_header_count_equals_the_cards_on_that_page(self):
         # the "N questions" line under each topic / chapter title was once a stale copy of topic 01's number on every chapter page
         h = rd('index.html'); bad = []; seen = 0
