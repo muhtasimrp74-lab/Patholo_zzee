@@ -46,6 +46,15 @@ class Build(unittest.TestCase):
         new = re.findall(r'<article class="card" id="q(\d+)"><header tabindex="0"><span class="code">C26</span>.*?<div class="ans">(.*?)</div></article>', self.h, re.S)
         self.assertEqual(len(new), len(ov['new'])); self.assertTrue(all(int(i) > 1393 for i, _ in new), 'new questions are numbered after every existing card')
         self.assertTrue(all('Answer to be added.' in re.sub(r'<[^>]+>', '', a) for _, a in new), 'new questions say their answer is to be added')
+    def test_every_page_header_count_equals_the_cards_on_that_page(self):
+        # the "N questions" line under each topic / chapter title was once a stale copy of topic 01's number on every chapter page
+        h = rd('index.html'); bad = []; seen = 0
+        for v in re.split(r'(?=<div class="view" id="v-)', h)[1:]:
+            vid = re.match(r'<div class="view" id="(v-[^"]+)"', v).group(1); m = re.search(r'<p class="lede">(\d[\d,]*) (?:practical )?questions', v)
+            if not m: continue
+            seen += 1; cards = len(re.findall(r'<article class="card"', v))
+            if int(m.group(1).replace(',', '')) != cards: bad.append((vid, m.group(1), cards))
+        self.assertGreater(seen, 20); self.assertEqual(bad, [])
     def test_data_rows_point_to_real_views_and_cards(self):
         views = set(re.findall(r'<div class="view" id="v-([\w-]+)"', self.h)); cards = set(re.findall(CARD, self.h))
         bad = [r[3] for r in G.rows(self.h) if r[2] not in views or r[3] not in cards]; self.assertFalse(bad, bad[:5])
@@ -592,7 +601,9 @@ class Browser(unittest.TestCase):
         self.assertNotIn('\u2014', open(os.path.join(ROOT, 'src', 'legacy', 'welcome.ts'), encoding='utf8').read().split('*/')[-1].replace('\\u2014', '\u2014'), 'no em dashes in the welcome copy')
         pg = self.phone('#/qa'); pg.wait_for_timeout(500)
         r = pg.evaluate("""()=>{const q=document.querySelector('#v-qa .part-h'),t=document.querySelector('#v-qa a.topic');return [getComputedStyle(q).borderLeftWidth,getComputedStyle(t,'::after').content]}""")
-        self.assertEqual(r, ['0px', 'none'], 'no colour stripes on part headers or chapter cards')
+        self.assertEqual(r[0], '0px', 'no colour stripes on part headers')
+        art = pg.evaluate("()=>{const t=document.querySelector('#v-qa a.topic.zz-art');return t?getComputedStyle(t,'::after').backgroundImage:'none'}")
+        self.assertIn('icons/ch/', art, 'chapter cards keep their artwork band (it lives on ::after)')
         pg.evaluate("()=>{location.hash='#/02'}"); pg.wait_for_timeout(700)
         c = pg.evaluate("()=>{const s=getComputedStyle(document.querySelector('.view:not([hidden]) article.card'));return [s.borderLeftWidth===s.borderTopWidth,s.borderLeftColor===s.borderTopColor]}")
         self.assertEqual(c, [True, True], 'answer cards: the left edge matches the others (no stripe, same width so ink stays aligned)')
@@ -603,14 +614,25 @@ class Browser(unittest.TestCase):
         self.assertIn('brings %d questions' % pg.evaluate('()=>DATA.length'), pg.evaluate("()=>document.getElementById('v-home').innerText"), 'Home counts every question'); pg.close()
     def test_home_next_question_follows_reading_and_totals_come_from_the_data(self):
         # 'Read the next question' stayed on Q.1 until a card was marked learned; typed-in totals (1,310 / 884 / 12) went stale
-        for f in ('index.html', 'index.full.html'): self.assertNotIn('{{ZZ_', open(os.path.join(ROOT, f), encoding='utf8').read(), f)
+        for f in ('index.html', 'index.full.html', 'welcome.js', 'zz-store.js', 'annot/annot.js'): self.assertNotIn('{{ZZ_', open(os.path.join(ROOT, f), encoding='utf8').read(), f)   # every shipped file, not just the page
         pg = self.returning('#/02'); pg.mouse.move(200, 500)
         for _ in range(12): pg.mouse.wheel(0, 260); pg.wait_for_timeout(60)
         pg.wait_for_timeout(1500); pg.evaluate("()=>{location.hash='#/'}"); pg.wait_for_timeout(1500)
         t = pg.evaluate("()=>document.getElementById('v-home').innerText"); i = t.find('Read the next question')
         self.assertGreaterEqual(i, 0); self.assertNotIn('Q.1 ', t[i:i + 40].replace('\n', ' '), 'the next question moves on with your reading')
         real = pg.evaluate("()=>new Set(MCQDATA.q.flatMap(q=>q.g||[]).filter(g=>g!=='NOTES')).size")
-        self.assertIn('%d past papers' % real, t, 'the past-paper count comes from the data'); pg.close()
+        self.assertIn('%d past papers' % real, t, 'the past-paper count comes from the data')
+        pg.evaluate("()=>{location.hash='#/questions'}"); pg.wait_for_timeout(1800)
+        w = pg.evaluate("()=>document.getElementById('v-questions').innerText"); n = pg.evaluate("()=>document.querySelectorAll('article.card').length")
+        if 'are ready when you are' in w: self.assertIn('{:,} questions are ready'.format(n), w, 'the welcome line counts every question'); pg.close()
+    def test_header_count_follows_the_cards_on_the_page(self):
+        pg = self.page('#/c3'); n = pg.evaluate("()=>document.querySelectorAll('#v-c3 article.card').length"); self.assertGreater(n, 20)
+        lede = lambda: pg.evaluate("()=>document.querySelector('#v-c3 .hero-in .lede').textContent")
+        self.assertTrue(lede().startswith('%d questions' % n), lede())
+        pg.evaluate("()=>[...document.querySelectorAll('#v-c3 article.card')].slice(0,5).forEach(c=>c.classList.add('hide'))"); pg.wait_for_timeout(300)
+        self.assertTrue(lede().startswith('%d of %d questions' % (n - 5, n)), lede())
+        pg.evaluate("()=>document.querySelectorAll('#v-c3 article.card.hide').forEach(c=>c.classList.remove('hide'))"); pg.wait_for_timeout(300)
+        self.assertTrue(lede().startswith('%d questions' % n), lede()); self.assertEqual(self.errs, []); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
