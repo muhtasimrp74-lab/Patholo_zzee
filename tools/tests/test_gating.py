@@ -45,7 +45,8 @@ class Loader(unittest.TestCase):
         pg.evaluate("()=>{location.hash='#/03'}"); pg.wait_for_function("()=>!document.querySelector('#v-03 .ans[data-zz]')")
         pg.evaluate("()=>{location.hash='#/02'}"); pg.wait_for_timeout(200)
         self.assertEqual(len(self.chunk_reqs('q-02')), 1)
-        self.assertEqual(pg.evaluate("()=>loadChunk('q-02').then(c=>Object.keys(c.cards).length)"), 42)
+        # every card on the page comes from the chunk (was a fixed 42; the 2026 college questions added 6)
+        self.assertEqual(pg.evaluate("()=>loadChunk('q-02').then(c=>Object.keys(c.cards).length)"), pg.evaluate("()=>document.querySelectorAll('#v-02 article.card').length"))
         self.assertEqual(len(self.chunk_reqs('q-02')), 1, 'served from the in-memory cache')
 
     def test_free_topic_needs_no_chunk(self):
