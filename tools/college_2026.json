@@ -1,0 +1,1242 @@
+{
+ "note": "2026 term and assessment questions (DMC, SSMC, ShSMC, MMC, MuMC): tags for matching cards (by stable id) and new questions (answers to be added). Applied by build.py.",
+ "tags": {
+  "q212": [
+   "DMC-1st Term 26"
+  ],
+  "q221": [
+   "ShSMC-1st Term 26"
+  ],
+  "q214": [
+   "ShSMC-1st Term 26"
+  ],
+  "q258": [
+   "DMC-1st Term 26"
+  ],
+  "q190": [
+   "DMC-1st Term 26"
+  ],
+  "q253": [
+   "ShSMC-1st Term 26"
+  ],
+  "q257": [
+   "ShSMC-1st Term 26"
+  ],
+  "q770": [
+   "DMC-1st Term 26"
+  ],
+  "q330": [
+   "DMC-1st Term 26",
+   "ShSMC-1st Term 26"
+  ],
+  "q338": [
+   "DMC-1st Term 26"
+  ],
+  "q789": [
+   "DMC-1st Term 26"
+  ],
+  "q365": [
+   "ShSMC-1st Term 26"
+  ],
+  "q377": [
+   "DMC-1st Term 26"
+  ],
+  "q379": [
+   "DMC-1st Term 26"
+  ],
+  "q390": [
+   "DMC-1st Term 26"
+  ],
+  "q809": [
+   "DMC-1st Term 26",
+   "ShSMC-1st Term 26"
+  ],
+  "q406": [
+   "DMC-1st Term 26"
+  ],
+  "q823": [
+   "DMC-1st Term 26"
+  ],
+  "q452": [
+   "ShSMC-1st Term 26"
+  ],
+  "q456": [
+   "ShSMC-1st Term 26"
+  ],
+  "q477": [
+   "SSMC-1st Term 26"
+  ],
+  "q480": [
+   "SSMC-1st Term 26"
+  ],
+  "q485": [
+   "DMC-1st Term 26",
+   "MMC-1st Term 26"
+  ],
+  "q487": [
+   "DMC-1st Term 26"
+  ],
+  "q502": [
+   "ShSMC-1st Term 26",
+   "MMC-1st Term 26"
+  ],
+  "q891": [
+   "DMC-1st Term 26",
+   "MMC-1st Term 26",
+   "SSMC-26",
+   "MMC-2nd Term 26"
+  ],
+  "q497": [
+   "ShSMC-1st Term 26"
+  ],
+  "q506": [
+   "DMC-1st Term 26"
+  ],
+  "q535": [
+   "SSMC-2nd Ass 26"
+  ],
+  "q532": [
+   "SSMC-1st Term 26"
+  ],
+  "q555": [
+   "SSMC-1st Term 26"
+  ],
+  "q911": [
+   "DMC-1st Term 26",
+   "MMC-1st Term 26",
+   "MuMC-1st Re-Ass 26",
+   "SSMC-1st Term 26"
+  ],
+  "q915": [
+   "MMC-1st Term 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q919": [
+   "DMC-1st Term 26"
+  ],
+  "q920": [
+   "DMC-1st Term 26"
+  ],
+  "q922": [
+   "DMC-1st Term 26"
+  ],
+  "q932": [
+   "DMC-1st Term 26",
+   "MMC-1st Term 26"
+  ],
+  "q935": [
+   "DMC-1st Term 26"
+  ],
+  "q940": [
+   "SSMC-1st Term 26",
+   "ShSMC-2nd Term 26"
+  ],
+  "q942": [
+   "SSMC-1st Term 26"
+  ],
+  "q941": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1": [
+   "MMC-1st Term 26"
+  ],
+  "q575": [
+   "DMC-1st Term 26"
+  ],
+  "q25": [
+   "DMC-1st Term 26",
+   "ShSMC-2nd Term 26"
+  ],
+  "q632": [
+   "MMC-1st Term 26"
+  ],
+  "q628": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q985": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q24": [
+   "SSMC-1st Term 26"
+  ],
+  "q992": [
+   "SSMC-1st Term 26"
+  ],
+  "q1100": [
+   "DMC-1st Term 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q1102": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q1099": [
+   "SSMC-1st Term 26"
+  ],
+  "q1101": [
+   "SSMC-1st Term 26"
+  ],
+  "q1112": [
+   "MuMC-26"
+  ],
+  "q526": [
+   "MuMC-26"
+  ],
+  "q1103": [
+   "DMC-1st Term 26",
+   "ShSMC-2nd Term 26",
+   "MMC-2nd Term 26"
+  ],
+  "q1109": [
+   "DMC-1st Term 26"
+  ],
+  "q1104": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1107": [
+   "MMC-2nd Term 26"
+  ],
+  "q797": [
+   "DMC-1st Term 26"
+  ],
+  "q1117": [
+   "DMC-1st Term 26"
+  ],
+  "q1138": [
+   "MMC-2nd Term 26"
+  ],
+  "q1128": [
+   "MuMC-2nd Ass 26"
+  ],
+  "q1142": [
+   "DMC-1st Term 26"
+  ],
+  "q1130": [
+   "MMC-2nd Term 26"
+  ],
+  "q53": [
+   "MMC-2nd Term 26"
+  ],
+  "q352": [
+   "MuMC-2nd Ass 26"
+  ],
+  "q1148": [
+   "DMC-1st Term 26"
+  ],
+  "q1151": [
+   "DMC-1st Term 26"
+  ],
+  "q1135": [
+   "SSMC-2nd Ass 26",
+   "MuMC-2nd Ass 26"
+  ],
+  "q1150": [
+   "MuMC-2nd Ass 26"
+  ],
+  "q1165": [
+   "DMC-2nd Ass 26",
+   "MuMC-2nd Ass 26"
+  ],
+  "q1164": [
+   "MuMC-2nd Ass 26",
+   "SSMC-2nd Ass 26",
+   "MMC-2nd Term 26"
+  ],
+  "q1162": [
+   "SSMC-2nd Ass 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q69": [
+   "MMC-2nd Term 26"
+  ],
+  "q1173": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1177": [
+   "DMC-2nd Ass 26"
+  ],
+  "q75": [
+   "MuMC-2nd Ass 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q847": [
+   "MuMC-1st Re-Ass 26",
+   "DMC-1st Term 26",
+   "MMC-1st Term 26"
+  ],
+  "q1203": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1204": [
+   "MMC-2nd Term 26"
+  ],
+  "q1205": [
+   "MMC-2nd Term 26"
+  ],
+  "q1253": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1257": [
+   "DMC-2nd Ass 26"
+  ],
+  "q1265": [
+   "SSMC-2nd Ass 26",
+   "MuMC-2nd Ass 26"
+  ],
+  "q1261": [
+   "MuMC-2nd Ass 26",
+   "ShSMC-2nd Term 26"
+  ],
+  "q495": [
+   "DMC-2nd Ass 26"
+  ],
+  "q1277": [
+   "DMC-2nd Ass 26"
+  ],
+  "q501": [
+   "MMC-2nd Term 26"
+  ],
+  "q1286": [
+   "SSMC-26",
+   "MuMC-2nd Ass 26"
+  ],
+  "q148": [
+   "MuMC-2nd Ass 26"
+  ],
+  "q404": [
+   "DMC-2nd Ass 26"
+  ],
+  "q1299": [
+   "SSMC-2nd Ass 26",
+   "MuMC-2nd Ass 26"
+  ],
+  "q1298": [
+   "SSMC-2nd Ass 26"
+  ],
+  "q1297": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1296": [
+   "MMC-1st Term 26"
+  ],
+  "q1307": [
+   "DMC-2nd Ass 26"
+  ],
+  "q1313": [
+   "SSMC-2nd Ass 26",
+   "DMC-2nd Ass 26"
+  ],
+  "q1309": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1308": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1306": [
+   "MuMC-2nd Ass 26"
+  ],
+  "q489": [
+   "MMC-2nd Term 26"
+  ],
+  "q124": [
+   "MMC-2nd Term 26"
+  ],
+  "q1342": [
+   "DMC-2nd Ass 26",
+   "ShSMC-2nd Term 26",
+   "MMC-1st Term 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q1351": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1350": [
+   "ShSMC-26",
+   "MMC-1st Term 26"
+  ],
+  "q133": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q649": [
+   "SSMC-1st Term 26"
+  ],
+  "q997": [
+   "MMC-1st Term 26"
+  ],
+  "q1001": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q644": [
+   "SSMC-1st Term 26"
+  ],
+  "q650": [
+   "DMC-1st Term 26",
+   "MuMC-1st Ass 26"
+  ],
+  "q666": [
+   "DMC-1st Term 26",
+   "SSMC-1st Term 26"
+  ],
+  "q651": [
+   "MuMC-1st Ass 26",
+   "ShSMC-1st Term 26"
+  ],
+  "q604": [
+   "SSMC-1st Term 26"
+  ],
+  "q1020": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q1021": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q1022": [
+   "ShSMC-1st Term 26"
+  ],
+  "q656": [
+   "MuMC-1st Ass 26"
+  ],
+  "q700": [
+   "DMC-1st Term 26",
+   "MuMC-1st Re-Ass 26",
+   "MMC-1st Term 26"
+  ],
+  "q694": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q696": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q682": [
+   "MMC-1st Term 26"
+  ],
+  "q672": [
+   "MMC-1st Term 26",
+   "SSMC-1st Term 26"
+  ],
+  "q667": [
+   "MuMC-1st Ass 26"
+  ],
+  "q678": [
+   "MuMC-1st Ass 26"
+  ],
+  "q669": [
+   "MuMC-1st Ass 26"
+  ],
+  "q1058": [
+   "DMC-1st Term 26",
+   "ShSMC-1st Term 26"
+  ],
+  "q654": [
+   "DMC-1st Term 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q707": [
+   "DMC-1st Term 26",
+   "MMC-1st Term 26",
+   "MuMC-1st Ass 26"
+  ],
+  "q708": [
+   "DMC-1st Term 26"
+  ],
+  "q655": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q576": [
+   "DMC-1st Term 26"
+  ],
+  "q652": [
+   "MMC-1st Term 26"
+  ],
+  "q587": [
+   "ShSMC-1st Term 26",
+   "MuMC-1st Ass 26"
+  ],
+  "q592": [
+   "ShSMC-1st Term 26"
+  ],
+  "q596": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q585": [
+   "SSMC-1st Term 26"
+  ],
+  "q971": [
+   "DMC-1st Term 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q583": [
+   "DMC-1st Term 26",
+   "MMC-1st 26",
+   "ShSMC-1st Term 26"
+  ],
+  "q622": [
+   "DMC-1st Term 26"
+  ],
+  "q605": [
+   "ShSMC-1st Term 26"
+  ],
+  "q980": [
+   "ShSMC-1st Term 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q620": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q621": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q982": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q405": [
+   "MuMC-1st Ass 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q737": [
+   "MuMC-1st Ass 26"
+  ],
+  "q729": [
+   "MuMC-1st Ass 26",
+   "SSMC-1st Term 26"
+  ],
+  "q731": [
+   "MuMC-1st Ass 26",
+   "ShSMC-1st Term 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q1084": [
+   "DMC-1st Term 26"
+  ],
+  "q1073": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q714": [
+   "MuMC-1st Ass 26"
+  ],
+  "q733": [
+   "MuMC-1st Ass 26"
+  ],
+  "q717": [
+   "SSMC-1st Term 26"
+  ],
+  "q1068": [
+   "SSMC-1st Term 26"
+  ],
+  "q1080": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q718": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q738": [
+   "MMC-1st Term 26"
+  ],
+  "q1090": [
+   "MMC-1st Term 26"
+  ],
+  "q744": [
+   "SSMC-1st Term 26"
+  ],
+  "q724": [
+   "SSMC-2nd Ass 26"
+  ],
+  "q1185": [
+   "SSMC-2nd Ass 26"
+  ],
+  "q1189": [
+   "MuMC-2nd Ass 26",
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q1188": [
+   "MuMC-1st Re-Ass 26"
+  ],
+  "q763": [
+   "MMC-2nd Term 26"
+  ],
+  "q1318": [
+   "MMC-2nd Term 26"
+  ],
+  "q1273": [
+   "SSMC-2nd Ass 26",
+   "ShSMC-2nd Term 26"
+  ],
+  "q1272": [
+   "SSMC-2nd Ass 26"
+  ],
+  "q1270": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q136": [
+   "MMC-2nd Term 26"
+  ],
+  "q1358": [
+   "SSMC-2nd Ass 26"
+  ],
+  "q1364": [
+   "ShSMC-2nd Term 26"
+  ],
+  "q1361": [
+   "ShSMC-2nd Term 26"
+  ]
+ },
+ "new": [
+  {
+   "tid": "c3",
+   "q": "A 45-year-old male presented with cough and haemoptysis for 3 months. He also complained of evening rise of temperature and weight loss. Chest X-ray shows an upper lobe cavitary lesion and sputum is positive for acid-fast bacilli. morphological features.",
+   "refs": "DMC-1st Term 26",
+   "marks": "(1+3)",
+   "ch": "Inflammation"
+  },
+  {
+   "tid": "c4",
+   "q": "Enumerate the factors contributing to the development of an infarct.",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(3)",
+   "ch": "Haemodynamic Disorders"
+  },
+  {
+   "tid": "c4",
+   "q": "A 35-year-old female is suffering from high-grade fever, disorientation, hypotension, feeble pulse and features of multi-organ failure. What is your provisional diagnosis? What investigations will you suggest for this case?",
+   "refs": "DMC-1st Term 26",
+   "marks": "(1+3)",
+   "ch": "Haemodynamic Disorders"
+  },
+  {
+   "tid": "c4",
+   "q": "A 25-year-old male presented with high fever and loss of consciousness. On examination, his blood pressure is low and pulse rate is increased. What is the most likely diagnosis? Write the pathogenesis of your diagnosis.",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(1+4)",
+   "ch": "Haemodynamic Disorders"
+  },
+  {
+   "tid": "c5",
+   "q": "Write down the salient features of autosomal dominant disorders with examples. Discuss Turner syndrome.",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(6)",
+   "ch": "Genetic Disorders"
+  },
+  {
+   "tid": "c7",
+   "q": "Define dysplasia, carcinoma in situ, grading and staging with examples.",
+   "refs": "DMC-1st Term 26",
+   "marks": "(5)",
+   "ch": "Neoplasia"
+  },
+  {
+   "tid": "c9",
+   "q": "Name the fat-soluble vitamins. State four functions of vitamin D.",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(1+2)",
+   "ch": "Nutritional Pathology"
+  },
+  {
+   "tid": "02",
+   "q": "Mention the risk factors of IHD. What are the cardiac markers raised in MI?",
+   "refs": "MuMC-26",
+   "marks": "(1.5+1.5)",
+   "ch": "Diseases Of The Cardiovascular System"
+  },
+  {
+   "tid": "02",
+   "q": "A 50-year-old smoker, rickshaw-puller, comes to OPD with complaints of recurrent chest discomfort during work time which is relieved after rest. He gave a history of sudden death of his elder brother following chest pain. (a) What is your probable diagnosis? (b) List the outcomes of this condition if it remains untreated.",
+   "refs": "MuMC-1st Re-Ass 26",
+   "marks": "(2.5+2.5)",
+   "ch": "Diseases Of The Cardiovascular System"
+  },
+  {
+   "tid": "02",
+   "q": "A 58-year-old hypertensive diabetic patient develops severe retrosternal chest pain radiating to the left arm. Troponin-I level is elevated. (a) What is the most likely diagnosis? (b) Explain the pathogenesis. (c) Mention the cardiac biomarkers used in diagnosis.",
+   "refs": "MMC-1st Term 26",
+   "marks": "(1+2+2)",
+   "ch": "Diseases Of The Cardiovascular System"
+  },
+  {
+   "tid": "02",
+   "q": "Write down about the revised Jones' criteria.",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(3)",
+   "ch": "Diseases Of The Cardiovascular System"
+  },
+  {
+   "tid": "02",
+   "q": "What is infective endocarditis? Mention the predisposing factors and complications of it.",
+   "refs": "MuMC-1st Re-Ass 26",
+   "marks": "(1+2)",
+   "ch": "Diseases Of The Cardiovascular System"
+  },
+  {
+   "tid": "02",
+   "q": "A 12-year-old boy presents with fever, migratory pain in large joints and shortness of breath following untreated pharyngitis. Laboratory investigation shows an elevated ASO titre. (i) What is the most likely diagnosis? (1) (ii) Name the cardiac lesion characteristically seen in this disease.",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(1)",
+   "ch": "Diseases Of The Cardiovascular System"
+  },
+  {
+   "tid": "04",
+   "q": "A 28-year-old male from a low socioeconomic background presents with a 6-month history of progressive, dull-aching mid-back pain. He also complains of low-grade evening fever, night sweats and significant weight loss over the last few months. (a) What is your comment? (b) Mention the special stain used to confirm the organism in the tissue.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Diseases Of The Respiratory System"
+  },
+  {
+   "tid": "04",
+   "q": "A male of 60 years with cough, evening rise of temperature and weight loss. What is your probable diagnosis? What laboratory investigations will you suggest to diagnose the case?",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(1.5+1)",
+   "ch": "Diseases Of The Respiratory System"
+  },
+  {
+   "tid": "04",
+   "q": "Mention the pathogenesis of tuberculosis.",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(5)",
+   "ch": "Diseases Of The Respiratory System"
+  },
+  {
+   "tid": "04",
+   "q": "Discuss the paraneoplastic syndromes related to bronchogenic carcinoma.",
+   "refs": "DMC-1st Term 26",
+   "marks": "(3)",
+   "ch": "Diseases Of The Respiratory System"
+  },
+  {
+   "tid": "04",
+   "q": "Outline the etiopathogenesis of lung cancer. Name four common carcinomas of lung.",
+   "refs": "MuMC-1st Re-Ass 26",
+   "marks": "(2+1)",
+   "ch": "Diseases Of The Respiratory System"
+  },
+  {
+   "tid": "04",
+   "q": "A 55-year-old male with a 30-pack-year smoking history presents with haemoptysis, weight loss and a right hilar mass on chest X-ray. (a) What is the most likely type of primary malignant tumour of the lung? (b) How do you proceed to diagnose this case?",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(5)",
+   "ch": "Diseases Of The Respiratory System"
+  },
+  {
+   "tid": "04",
+   "q": "A 60-year-old man presents with persistent cough, haemoptysis and weight loss for 3 months. He also complains of chest pain and hoarseness of voice. He has a history of heavy smoking. (i) State the most likely diagnosis. (1) (ii) Outline the diagnostic approach.",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(1)",
+   "ch": "Diseases Of The Respiratory System"
+  },
+  {
+   "tid": "05",
+   "q": "Define sialadenitis. Classify salivary gland tumours.",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(1+2)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "Define and classify gastritis. Give the aetiopathogenesis and morphological features of chronic gastritis.",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(1+1+3)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "Define peptic ulcer disease. Write the pathogenesis of peptic ulcer disease. Name the diseases associated with Helicobacter pylori infection.",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(1+3+2)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "What are the diseases associated with Helicobacter pylori? What is the role of H. pylori in the pathogenesis of peptic ulcer?",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(2+4)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "Mention three important features of Crohn's disease that differ it from ulcerative colitis.",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(3)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "Mention two major pathogenetic pathways of colorectal adenocarcinoma. Write two risk factors.",
+   "refs": "DMC-1st Term 26",
+   "marks": "(2+1)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "Name the polyps of the gastrointestinal tract.",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(3)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "Classify intestinal polyps. Give a short account on hereditary non-polyposis colorectal cancer.",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(2+3)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "05",
+   "q": "A 62-year-old woman presents with altered bowel habit, abdominal pain and iron deficiency anaemia. (a) What is the most likely diagnosis? (2) (b) Which investigation is most important for the patient?",
+   "refs": "DMC-1st Term 26",
+   "marks": "(2)",
+   "ch": "Diseases Of The Gastrointestinal System"
+  },
+  {
+   "tid": "06",
+   "q": "Enumerate the causes of hepatitis. Give the potential outcomes of hepatitis B infection.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1+2)",
+   "ch": "Diseases Of The Hepato-Biliary System"
+  },
+  {
+   "tid": "06",
+   "q": "What is gall stone? Mention the complications of gall stone.",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(1+2)",
+   "ch": "Diseases Of The Hepato-Biliary System"
+  },
+  {
+   "tid": "07",
+   "q": "A 12-year-old boy develops facial puffiness and periorbital oedema two weeks after an episode of sore throat. His urine shows proteinuria, microscopic haematuria and RBC casts. Serum complement C3 is reduced. (a) What is the most likely diagnosis? Give two findings supporting your diagnosis. (2.5) (b) Explain the basic mechanism of renal injury in this condition.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(2.5)",
+   "ch": "Diseases Of The Renal System"
+  },
+  {
+   "tid": "07",
+   "q": "What is chronic glomerulonephritis? Describe the pathogenesis and morphological features of rapidly progressive glomerulonephritis (RPGN).",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(2+4)",
+   "ch": "Diseases Of The Renal System"
+  },
+  {
+   "tid": "07",
+   "q": "Mention the pathogenesis of acute glomerulonephritis. Classify renal tumours.",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(3+2)",
+   "ch": "Diseases Of The Renal System"
+  },
+  {
+   "tid": "07",
+   "q": "What is pyuria? (b) Outline the laboratory approach to evaluate a suspected case of UTI.",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(2+4)",
+   "ch": "Diseases Of The Renal System"
+  },
+  {
+   "tid": "07",
+   "q": "Mention two important risk factors for urothelial carcinoma of the urinary bladder. What is the most common presenting symptom of bladder carcinoma?",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(2+1)",
+   "ch": "Diseases Of The Renal System"
+  },
+  {
+   "tid": "07",
+   "q": "Name the histopathological types of renal cell carcinoma. common?",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(2+1)",
+   "ch": "Diseases Of The Renal System"
+  },
+  {
+   "tid": "08",
+   "q": "Name the common causes of painful and painless testicular swelling.",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(3)",
+   "ch": "Diseases Of The Male Genital System"
+  },
+  {
+   "tid": "08",
+   "q": "Enumerate the causes of raised serum PSA. Why is PSA said to be \"organ specific but not cancer specific\"?",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Diseases Of The Male Genital System"
+  },
+  {
+   "tid": "08",
+   "q": "List the diseases of the prostate. Name the aetiological agents of specific and non-specific epididymitis and orchitis.",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Diseases Of The Male Genital System"
+  },
+  {
+   "tid": "08",
+   "q": "What is benign prostatic hyperplasia (BPH)? Mention its common clinical manifestations.",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(1+2)",
+   "ch": "Diseases Of The Male Genital System"
+  },
+  {
+   "tid": "08",
+   "q": "A 72-year-old male patient comes with complaints of increased urinary frequency, dysuria and pain in the back. Per-rectal examination reveals a palpable prostatic gland. (i) What is your probable diagnosis? (1) (ii) Mention the serum marker you will advise to assist the diagnosis.",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(1)",
+   "ch": "Diseases Of The Male Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "What is the premalignant lesion of cervical carcinoma? cervical carcinoma. What measures can be taken to reduce the mortality from cervical carcinoma?",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(1+2+2)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "Name the histological types of cervical carcinoma. Write the aetiology and pathogenesis. Is cervical carcinoma preventable? Describe the screening tests.",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(1+3+1+2)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "A female of 60 years presents with foul-smelling vaginal discharge for 5 months. colposcopic examination there was a large fungating growth. What is the likely diagnosis? Which oncogenic virus is responsible for the tumour, and name the currently existing measure against this virus.",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(1+1.5)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "A Pap smear report describes a cell with a large, dark nucleus and scant cytoplasm. The pathologist notes \"koilocytic change.\" (a) What does this cytological feature suggest? (b) What is the most common viral aetiology for this change?",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(5)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "Define dysfunctional uterine bleeding. What are the causes of abnormal uterine bleeding by age group?",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1+2)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "Write down the causes of abnormal uterine bleeding. Name the common benign tumour of the uterus. Mention the complications of it.",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(2+1+2)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "Classify uterine tumours. Write the aetiology of endometrial carcinoma.",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(2+1)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "What is leiomyoma? Give its morphology.",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(1+2)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "09",
+   "q": "A female of 20 years came to the emergency department with severe abdominal pain and vaginal bleeding following two months of amenorrhoea. On examination, her BP was 80/50 mm Hg, pulse 120 beats/min and extremities cold and clammy. Her bedside pregnancy test is positive and USG shows an empty endometrial cavity. (a) What is your clinical diagnosis? (b) Classify gestational trophoblastic disease.",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(2.5+2.5)",
+   "ch": "Diseases Of The Female Genital System"
+  },
+  {
+   "tid": "c23",
+   "q": "Enumerate the risk factors for developing breast cancer and the prognostic factors for breast carcinoma, and the clinical importance of identifying the carriers of those genes.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(2+2+2)",
+   "ch": "Breast Diseases"
+  },
+  {
+   "tid": "c23",
+   "q": "A 40-year-old woman is diagnosed with breast carcinoma. Her mother had breast cancer at 45 years and her sister was recently diagnosed with ovarian carcinoma. (i) Mention the most likely hereditary gene mutation in this patient. (1) (ii) What is the normal function of this gene?",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(1)",
+   "ch": "Breast Diseases"
+  },
+  {
+   "tid": "10",
+   "q": "Mention the types of thyroiditis. What are the clinical features of Hashimoto thyroiditis?",
+   "refs": "MMC-2nd Term 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Thyroid Diseases"
+  },
+  {
+   "tid": "10",
+   "q": "Differentiate between Graves' disease and diffuse non-toxic goitre based on aetiology.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(2)",
+   "ch": "Thyroid Diseases"
+  },
+  {
+   "tid": "11",
+   "q": "Name some premalignant lesions of skin. Write in short about malignant melanoma.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1+2)",
+   "ch": "Skin Diseases"
+  },
+  {
+   "tid": "11",
+   "q": "Name the bullous diseases of skin. What are the premalignant lesions of skin?",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Skin Diseases"
+  },
+  {
+   "tid": "11",
+   "q": "A 75-year-old man presents with a pigmented ulcerative lesion on his right great toe for 5 months. The lesion has been rapidly spreading for the last 2 months. (i) Give the differential diagnosis. (1) (ii) How will you confirm it?",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(1)",
+   "ch": "Skin Diseases"
+  },
+  {
+   "tid": "12",
+   "q": "A 15-year-old boy presented with pain and progressive swelling around the knee joint. X-ray shows a mixed lytic and blastic mass with an infiltrative margin in the lower end of the femur. (a) What is your clinical diagnosis? (2.5) (b) Write down the morphology of it.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(2.5)",
+   "ch": "Bones, Joints And Soft Tissue Diseases"
+  },
+  {
+   "tid": "12",
+   "q": "State the bone-forming tumours. Mention the age distribution, common sites and X-ray findings of osteosarcoma.",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(2+3)",
+   "ch": "Bones, Joints And Soft Tissue Diseases"
+  },
+  {
+   "tid": "12",
+   "q": "What are the causes of arthritis? Give the differences between rheumatoid arthritis and osteoarthritis.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1+2)",
+   "ch": "Bones, Joints And Soft Tissue Diseases"
+  },
+  {
+   "tid": "12",
+   "q": "What are the causes of arthritis? Give the pathogenesis of rheumatoid arthritis. Mention one important laboratory finding of RA.",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(2+2+1)",
+   "ch": "Bones, Joints And Soft Tissue Diseases"
+  },
+  {
+   "tid": "12",
+   "q": "What is pannus? Write the pathogenesis of rheumatoid arthritis. Write down two investigations to diagnose it.",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(1+3+2)",
+   "ch": "Bones, Joints And Soft Tissue Diseases"
+  },
+  {
+   "tid": "13",
+   "q": "Classify CNS tumours. What are the peculiarities of brain tumours?",
+   "refs": "DMC-2nd 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Diseases Of The Central Nervous System"
+  },
+  {
+   "tid": "c14",
+   "q": "What are the sites of bone marrow puncture? Mention the indications of bone marrow study.",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Bone Marrow Examination"
+  },
+  {
+   "tid": "c14",
+   "q": "List four important causes of high ESR. Write the features to be noted in PBF.",
+   "refs": "MuMC-1st Ass 26",
+   "marks": "(1+2)",
+   "ch": "Esr And Iron Profile"
+  },
+  {
+   "tid": "c14",
+   "q": "What are the abnormalities in size of RBC seen in PBF? Name four conditions where macrocytes are found.",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(1+2)",
+   "ch": "Introduction To Anaemia, Polycythaemia"
+  },
+  {
+   "tid": "c14",
+   "q": "What laboratory investigations will you advise for a suspected case of iron deficiency anaemia?",
+   "refs": "DMC-1st Term 26",
+   "marks": "(3)",
+   "ch": "Microcytic Hypochromic Anaemia"
+  },
+  {
+   "tid": "c14",
+   "q": "List the laboratory findings in peripheral blood smear and bone marrow in iron deficiency anaemia.",
+   "refs": "MMC-1st Term 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Microcytic Hypochromic Anaemia"
+  },
+  {
+   "tid": "c14",
+   "q": "A farmer complains of weakness and abdominal discomfort; he often walks barefoot. Laboratory investigations reveal Hb level 6 gm/dl and stool R/M/E: Ankylostoma duodenale. (i) What is your provisional diagnosis? (1) (ii) State the underlying mechanism of this condition.",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(1)",
+   "ch": "Microcytic Hypochromic Anaemia"
+  },
+  {
+   "tid": "c14",
+   "q": "A boy of 8 years presented with severe anaemia and mongoloid face. What is your probable diagnosis? Write down your expected PBF findings in the case. How will you confirm the diagnosis?",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(1+3+1)",
+   "ch": "Microcytic Hypochromic Anaemia"
+  },
+  {
+   "tid": "c14",
+   "q": "A 28-year-old female from Bangladesh presents with severe generalised weakness, sore tongue (glossitis) and tingling sensations in her hands and feet. Hb: 5.0 g/dl, MCV: 115 fl, total WBC count: 2.5 x 109/L, platelet count: 80 x 109/L. shows macro-ovalocytes and hypersegmented neutrophils. What is the most likely diagnosis, and what is the underlying pathological mechanism for the neurological symptoms?",
+   "refs": "DMC-1st Term 26",
+   "marks": "(2+2)",
+   "ch": "Macrocytic Anaemia"
+  },
+  {
+   "tid": "c14",
+   "q": "A man of 70 years presented with pallor, weakness and paraesthesia. He has a history of partial gastrectomy 3 years back. (i) What is your clinical diagnosis? (ii) How can you confirm it?",
+   "refs": "MuMC-1st Re-Ass 26",
+   "marks": "(2.5+2.5)",
+   "ch": "Macrocytic Anaemia"
+  },
+  {
+   "tid": "c14",
+   "q": "Differentiate between intravascular and extravascular haemolysis.",
+   "refs": "MMC-1st Term 26",
+   "marks": "(3)",
+   "ch": "Haemolytic Anaemia"
+  },
+  {
+   "tid": "c13",
+   "q": "A 10-year-old child presented with fever, gum bleeding, pallor, bone pain and weakness. On examination, splenomegaly and generalised lymphadenopathy were present. (a) What is your clinical diagnosis? (b) Point out the laboratory investigations to diagnose the case.",
+   "refs": "MuMC-1st Ass 26",
+   "marks": "(2.5+2.5)",
+   "ch": "Leukaemia"
+  },
+  {
+   "tid": "c13",
+   "q": "An elderly woman presented with bone pain, weight loss and weakness. Multiple punched-out osteolytic lesions were seen in X-ray of the lumbosacral region. Her routine blood examination showed a very high ESR. (i) What is the most likely diagnosis? (1) (ii) What are the CRAB features?",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(1)",
+   "ch": "Paraproteinaemia And Multiple Myeloma"
+  },
+  {
+   "tid": "c14",
+   "q": "(a) Define bleeding disorder. Classify it with examples. (1) (b) Mention the causes of coagulation disorder.",
+   "refs": "DMC-1st Term 26",
+   "marks": "(2)",
+   "ch": "Bleeding Disorders"
+  },
+  {
+   "tid": "c14",
+   "q": "Write down the laboratory diagnosis of ITP.",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(3)",
+   "ch": "Bleeding Disorders"
+  },
+  {
+   "tid": "c14",
+   "q": "A boy of 4 years suffering from repeated haemarthrosis after minor trauma. How will you evaluate the patient for confirming the diagnosis?",
+   "refs": "DMC-1st Term 26",
+   "marks": "(6)",
+   "ch": "Bleeding Disorders"
+  },
+  {
+   "tid": "c14",
+   "q": "Write in brief about Rh incompatibility.",
+   "refs": "ShSMC-1st Term 26",
+   "marks": "(3)",
+   "ch": "Blood Grouping"
+  },
+  {
+   "tid": "c14",
+   "q": "Name the screening tests before blood transfusion and list the anticoagulants used in blood bank. Write the types and indications of Coombs' test.",
+   "refs": "MuMC-1st Ass 26",
+   "marks": "(1.5+1.5)",
+   "ch": "Blood Transfusion And Anticoagulants"
+  },
+  {
+   "tid": "c14",
+   "q": "Name four blood products used for transfusion. Why is cross-matching essential before blood transfusion? Mention four important adverse effects of blood transfusion.",
+   "refs": "MuMC-1st Re-Ass 26",
+   "marks": "(1+1+1)",
+   "ch": "Blood Transfusion And Anticoagulants"
+  },
+  {
+   "tid": "c30",
+   "q": "What is creatinine clearance? Give the normal range of serum creatinine and urea. Serum creatinine is preferred over urea for assessing renal function; justify it.",
+   "refs": "SSMC-1st Term 26",
+   "marks": "(1+1+3)",
+   "ch": "Renal Function Tests"
+  },
+  {
+   "tid": "c30",
+   "q": "Define glycosuria. Write three causes of glycosuria with explanation.",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(1+2)",
+   "ch": "Glycosuria And Haematuria"
+  },
+  {
+   "tid": "c30",
+   "q": "Briefly explain the pathogenesis of Type 1 diabetes mellitus.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1.5)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "Write down the differences between type 1 and type 2 diabetes mellitus.",
+   "refs": "ShSMC-2nd Term 26",
+   "marks": "(3)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "Define DM. Write six important differences between type I and type II DM.",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(1+2)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "What are ketone bodies? Write the pathogenesis of diabetic ketoacidosis.",
+   "refs": "MuMC-26",
+   "marks": "(1+2)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "What is hyperglycaemia sine glycosuria? Give the importance of HbA1c in diagnosis of diabetes mellitus. Write down the complications of DM. (OR option in the same paper.)",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(1+2+3)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "What is diabetic ketoacidosis? Write down its pathogenesis. What are the cardinal biochemical features and complications of DKA?",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(1+3+2)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "Write the WHO criteria for DM. What is 'hyperglycaemia sine glycosuria'?",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(2+1)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "A 19-year-old male presents with polyuria, polydipsia, vomiting, abdominal pain and deep, rapid breathing. He is drowsy and dehydrated. Laboratory investigations show blood glucose 25 mmol/L and positive serum ketones. (i) What is the most likely diagnosis? (1) (ii) Mention two important complications of this condition.",
+   "refs": "SSMC-2nd Ass 26",
+   "marks": "(1)",
+   "ch": "Blood Glucose"
+  },
+  {
+   "tid": "c30",
+   "q": "A male of 35 years visited the infertility specialist with his wife. His semen analysis report showed sperm count 5 million/ml, motility 24% and morphology 40% normal. (i) Interpret the report. (ii) Write the normal levels of sperm count, motility and morphology (according to WHO).",
+   "refs": "MuMC-2nd Ass 26",
+   "marks": "(2.5+2.5)",
+   "ch": "Semen Analysis"
+  },
+  {
+   "tid": "c30",
+   "q": "Discuss briefly about cerebrospinal fluid (CSF) study.",
+   "refs": "DMC-2nd Ass 26",
+   "marks": "(6)",
+   "ch": "Body Fluids"
+  }
+ ]
+}

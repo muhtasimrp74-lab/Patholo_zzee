@@ -36,6 +36,15 @@ class Build(unittest.TestCase):
         self.assertEqual(dup, [], 'duplicate ## headings in answers.md (keep only the newest): %s' % dup[:5])
     def test_question_ids_unique_and_complete(self):
         ids = re.findall(CARD, self.h); self.assertEqual(len(ids), len(set(ids)), 'duplicate question ids'); self.assertGreaterEqual(len(ids), 1310)
+    def test_college_2026_tags_and_new_questions(self):   # tools/college_2026.json, applied by build.py
+        ov = json.load(open(os.path.join(ROOT, 'tools', 'college_2026.json'), encoding='utf8'))
+        for qid, toks in ov['tags'].items():
+            m = re.search(r'<article class="card" id="%s">(.*?)</header>' % qid, self.h, re.S); self.assertTrue(m, qid)
+            chips = re.sub(r'<b class="ex-p">([^<]+)</b>', r'\1-', m.group(1)); chips = re.sub(r'<[^>]+>', ' ', chips)
+            for t in toks: self.assertIn(t, chips, '%s: tag %s on the card' % (qid, t))
+        new = re.findall(r'<article class="card" id="q(\d+)"><header tabindex="0"><span class="code">C26</span>.*?<div class="ans">(.*?)</div></article>', self.h, re.S)
+        self.assertEqual(len(new), len(ov['new'])); self.assertTrue(all(int(i) > 1393 for i, _ in new), 'new questions are numbered after every existing card')
+        self.assertTrue(all('Answer to be added.' in re.sub(r'<[^>]+>', '', a) for _, a in new), 'new questions say their answer is to be added')
     def test_data_rows_point_to_real_views_and_cards(self):
         views = set(re.findall(r'<div class="view" id="v-([\w-]+)"', self.h)); cards = set(re.findall(CARD, self.h))
         bad = [r[3] for r in G.rows(self.h) if r[2] not in views or r[3] not in cards]; self.assertFalse(bad, bad[:5])

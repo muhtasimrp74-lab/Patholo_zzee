@@ -66,12 +66,23 @@ RAW = {}
 # question ids: the original written questions keep their numbers; box-viva questions (item[7]) are numbered after them,
 # so bookmarks, notes and progress saved on the live site never move.
 QID, _k = {}, n
+# 2026 term and assessment questions (tools/college_2026.json): new questions join their topic as rank 3, so they are numbered
+# after every existing card and no saved id moves; matching cards only gain college exam tags (applied once ids exist, below)
+_C26 = json.load(open(os.path.join(HERE, 'college_2026.json'), encoding='utf8'))
+_TIX = {t[0]: t for t in content.TOPICS}
+for _nq in _C26['new']:
+    _TIX[MERGE.get(_nq['tid'], _nq['tid'])][3].append(('C26', _nq['q'], '<p>%s</p>' % content.BOX_NOTE, 'W', 0, _nq['refs'], (), {}, 3))
 def _rank(it): return it[8] if len(it) > 8 else (1 if len(it) > 7 else 0)   # 0 written, 1 box viva, 2 DU written (merged items keep their survivor's rank)
-for _pass in (0, 1, 2):
+for _pass in (0, 1, 2, 3):
     for _ti, _t in enumerate(content.TOPICS):
         for _ii, _it in enumerate(_t[3]):
             if _rank(_it) == _pass:
                 _k += 1; QID[(_ti, _ii)] = _k
+_POS = {'q%d' % v: k for k, v in QID.items()}
+for _qid, _toks in _C26['tags'].items():   # college exam tags on matching cards
+    if _qid not in _POS: continue
+    _ti0, _ii0 = _POS[_qid]; _it = list(content.TOPICS[_ti0][3][_ii0]); _it += [0, ''][len(_it) - 4:] if len(_it) < 6 else []
+    _it[5] = ', '.join([r for r in [_it[5]] if r] + [t for t in _toks if t not in (_it[5] or '')]); content.TOPICS[_ti0][3][_ii0] = tuple(_it)
 for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
     names[tid] = e(tname); short[tid] = e(tname)
     arts = []
@@ -84,7 +95,7 @@ for _ti, (tid, tname, part, qs) in enumerate(content.TOPICS):
         n = QID[(_ti, _ii)]
         if len(item) > 3 and item[3] in ('W', 'B'): written['q%d' % n] = item[3]
         pl = None
-        if len(item) > 6:
+        if len(item) > 6 and item[6]:
             pl = tuple(item[6])
             if _rank(item) == 2:                      # DU written question: place it under the Robbins heading/topic it belongs to
                 pp = RO.place_du(int(tid[1:]), q, pl[1], _prev)
@@ -235,6 +246,14 @@ s = s.replace(_k0, _SAFE + _MIG, 1)
 assert 'Annot.load' in s and 'Annot.dump' in s and 'localeCompare(b))' in s
 
 
+# college tags on the original systemic viva cards (from the base page, not content.TOPICS): chips in the header and exam meta
+for _qid, _toks in _C26['tags'].items():
+    if _qid in _POS: continue
+    _refs = ', '.join(_toks); _o = exam.get(_qid)
+    exam[_qid] = [_o[0] if _o else 0, ((_o[1] + ', ') if _o and _o[1] else '') + _refs, sorted(set(_o[2] if _o else []) | {2026})] + (list(_o[3:]) if _o else [])
+    _chips = xm_html(0, _refs); _inner = _chips[len('<span class="xm">'):-len('</span>')]
+    s = re.sub(r'(<article class="card" id="%s"><header tabindex="0">)(.*?)(</header>)' % _qid,
+               lambda m: m.group(1) + (re.sub(r'(<span class="xm">.*)(</span>)$', lambda x: x.group(1) + _inner + x.group(2), m.group(2), flags=re.S) if 'class="xm"' in m.group(2) else m.group(2) + _chips) + m.group(3), s, count=1, flags=re.S)
 QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1], {s_: RO.topic_order(c, s_) for s_ in CHAP[c][1]}] for c in CH_ORDER]}
 QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
 

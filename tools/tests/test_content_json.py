@@ -11,7 +11,7 @@ class ContentJson(unittest.TestCase):
     @classmethod
     def tearDownClass(cls): shutil.rmtree(cls.tmp, ignore_errors=True)
     def test_counts_and_clean_check(self):
-        self.assertEqual(self.man['counts']['questions'], 1310)
+        self.assertEqual(self.man['counts']['questions'], 1404)   # 1,310 + 94 new 2026 college questions
         errs, _ = check_content_json.check(self.tmp, ROOT); self.assertEqual(errs, [])
     def test_generation_is_deterministic(self):
         t2 = tempfile.mkdtemp()
