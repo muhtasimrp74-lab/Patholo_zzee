@@ -339,7 +339,7 @@ html body :is(.kp,.howto):not(#_){border-left-color:var(--line)!important}
 html body .card:not(#_){border-left-color:transparent!important}   /* same width as before (1 px): ink stays aligned */
 html body .qi:not(#_){border-left:1px solid var(--line)!important}
 html body section.part .part-h:not(#_){border-left:0!important}
-html body #v-qa a.topic::after{content:none!important}
+html body #v-qa a.topic:not(.zz-art)::after{content:none!important}   /* the stripe goes; on art cards ::after is the artwork band */
 html body #v-mcqs .mx-x{border-left:0}
 html body .tbs-k:not(#_){border-left-color:var(--line)!important}
 /* no glowing orbs or blob backdrops */

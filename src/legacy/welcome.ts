@@ -183,7 +183,7 @@ window.addEventListener('load', () => { idle(() => {
     if (id === 'v-mcqs') return m.n ? N + ', your accuracy is ' + m.a + '% over ' + m.n + ' answers. ' + (m.a >= 70 ? 'Strong work!' : 'Every attempt makes it stronger.') : N + ', answer a few MCQs and I’ll track your accuracy.';
     if (id === 'v-practice') return N + ', ready to test yourself?';
     if (id === 'v-textbook') return N + ', pick up your reading wherever you like.';
-    if (id === 'v-questions') return N + ', {{ZZ_Q}} questions are ready when you are.';
+    if (id === 'v-questions') return N + ', ' + (document.querySelectorAll('article.card').length || 'all the').toLocaleString('en') + ' questions are ready when you are.';   // counted live from the cards on the page: welcome.js ships as its own file, so a build-time placeholder was never filled (and DATA is a const, not on window)
     if (id === 'v-bookmarks') return N + ', these are the questions you wanted to come back to.';
     if (id === 'v-favourites') return N + ', your favourites, all in one place.';
     if (id === 'v-notes') return N + ', your own words, saved on this device.';

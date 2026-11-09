@@ -198,7 +198,10 @@ for tid in [t for t in order if t not in old_cards]:
     pl = [p for p in PARTS if tid in p[3]][0]
     h = re.sub(r'<select class="jump".*?</select>', lambda m: jump(tid), head, flags=re.S).replace('id="v-01"', 'id="v-%s"' % tid).replace('Blood Vessels | Systemic Pathology Viva', '%s | Patholo_zzee' % names[tid])
     h = h.replace('All topics</a> / 01', 'All topics</a> / %s' % NO(tid)).replace('<h1>Blood Vessels</h1>', '<h1>%s</h1>' % names[tid])
-    h = h.replace('6 questions, in the same order as the NMC viva list.', '%d questions · Part %s, %s.' % (len(qs), pl[0], pl[1]))
+    # the count comes from the cards actually rendered on this page (never from the template's old text, which held topic 01's number)
+    _n = len(re.findall(r'<article class="card"', arts))
+    h, _hit = re.subn(r'(<p class="lede">)\d[\d,]* questions[^<]*(</p>)', lambda m: m.group(1) + '%d questions · viva and written, in Robbins order.' % _n + m.group(2), h, count=1)
+    assert _hit == 1, 'chapter header count line not found in the page template for %s' % tid
     views += h + '<main>' + arts + '<p class="none">No question matches your search.</p>' + pager(tid) + '</main></div>'
 for _t in old_cards:  # prev/next links of the original topics follow the full book order
     s = re.sub(r'(id="v-%s".*?)<div class="pager">.*?</div>' % _t, lambda m, _t=_t: m.group(1) + pager(_t), s, count=1, flags=re.S)
