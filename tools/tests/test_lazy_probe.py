@@ -41,12 +41,12 @@ class Lazy(unittest.TestCase):
     def test_lazy_variant_boots_to_the_same_dom_as_the_inline_build(self):
         a, b = self.snap('/index.full.html'), self.snap('/lazy/index.html'); N = lambda h: re.sub(r'>\s+<', '><', h)
         self.assertEqual((a['errs'], b['errs']), ([], [])); self.assertIsNone(b['failed'])
-        self.assertEqual(a['cards'], 1404); self.assertEqual(b['cards'], 1404); self.assertEqual(a['qm'], b['qm'])
+        NC = len(re.findall(r'<article class="card" id="q\d+"', open(os.path.join(ROOT, 'index.full.html'), encoding='utf8').read())); self.assertEqual(a['cards'], NC); self.assertEqual(b['cards'], NC); self.assertEqual(a['qm'], b['qm'])
         x, y = N(a['html']), N(b['html']); i = next((k for k in range(min(len(x), len(y))) if x[k] != y[k]), min(len(x), len(y)))
         self.assertTrue(x == y, 'booted DOM differs between inline and lazy variants at %d:\n inline ...%s\n lazy   ...%s' % (i, x[max(0, i - 120):i + 120], y[max(0, i - 120):i + 120]))
 
     def test_html_shrinks_and_chunks_cover_every_card(self):
-        n, v = lazy_probe.build(ROOT, self.tmp.name, 'index.full.html'); self.assertEqual(n, 1404)
+        n, v = lazy_probe.build(ROOT, self.tmp.name, 'index.full.html'); self.assertEqual(n, len(re.findall(r'<article class="card" id="q\d+"', open(os.path.join(ROOT, 'index.full.html'), encoding='utf8').read())))
         # the probe moves the 1,404 answer cards out; the MCQ data stays inline in both pages and grows with explanations, so it is
         # left out of both sizes (it is not what lazy loading is about): the rest must still shrink below 40%
         def size(p):

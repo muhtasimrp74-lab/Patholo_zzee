@@ -52,7 +52,7 @@
  $x('#zm-out').onclick=function(){this.disabled=true;window.zzAccount&&zzAccount.logout()};
  /* App: which version this device runs, a manual update check, and a repair that throws away the saved copy (never your data:
     progress, notes and sign-in live in storage, not in the cache) and loads a fresh one */
- const amsg=t=>{$x('#zm-appmsg').textContent=t},ver=()=>(window.caches?caches.keys():Promise.resolve([])).then(k=>{const v=k.map(x=>(/^pathviva-zzee-v(\d+)$/.exec(x)||[])[1]).filter(Boolean).sort((a,b)=>b-a)[0];$x('#zm-ver').textContent=v?'v'+v:'—';return v}).catch(()=>null);
+ const amsg=t=>{$x('#zm-appmsg').textContent=t},ver=()=>(window.caches?caches.keys():Promise.resolve([])).then(k=>{const v=k.map(x=>{const m=/^pathviva-zzee-(?:v(\d+)|([0-9a-f]{10}))$/.exec(x);return m&&(m[1]||m[2])}).filter(Boolean).pop();$x('#zm-ver').textContent=v?(/^\d+$/.test(v)?'v'+v:'build '+v.slice(0,7)):'—';return v}).catch(()=>null);
  ver();if(navigator.serviceWorker)navigator.serviceWorker.ready.then(()=>setTimeout(ver,500));addEventListener('hashchange',()=>{if(location.hash==='#/menu')ver()});
  $x('#zm-upd').onclick=async function(){const b=this;b.disabled=true;amsg('Checking…');
   try{const r=navigator.serviceWorker&&await navigator.serviceWorker.getRegistration();if(!r){amsg('Updates apply each time the page loads.');b.disabled=false;return}

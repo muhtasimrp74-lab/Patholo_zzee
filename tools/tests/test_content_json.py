@@ -1,5 +1,5 @@
 """Fast tests for the content JSON generator + differential check (no browser). Generates into a temp dir."""
-import os, sys, json, shutil, tempfile, unittest
+import re, os, sys, json, shutil, tempfile, unittest
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, os.path.join(ROOT, 'tools')); sys.path.insert(0, os.path.join(ROOT, 'tools', 'integrity'))
 import content_json, check_content_json, schema_lite
@@ -11,7 +11,7 @@ class ContentJson(unittest.TestCase):
     @classmethod
     def tearDownClass(cls): shutil.rmtree(cls.tmp, ignore_errors=True)
     def test_counts_and_clean_check(self):
-        self.assertEqual(self.man['counts']['questions'], 1404)   # 1,310 + 94 new 2026 college questions
+        self.assertEqual(self.man['counts']['questions'], len(json.loads(re.search(r'const DATA=(\[\[.*?\]\]);', open(os.path.join(ROOT, 'index.full.html'), encoding='utf8').read()).group(1))))   # every question in the built page
         errs, _ = check_content_json.check(self.tmp, ROOT); self.assertEqual(errs, [])
     def test_generation_is_deterministic(self):
         t2 = tempfile.mkdtemp()

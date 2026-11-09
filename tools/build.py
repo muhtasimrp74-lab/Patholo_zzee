@@ -467,4 +467,5 @@ def _counts(path):   # live totals for the copy ({{ZZ_Q}}, {{ZZ_MCQ}}, {{ZZ_PAPE
 _counts(os.path.join(HERE, '..', 'index.full.html'))
 import mcq_enrich; print('mcq enrich:', mcq_enrich.apply(os.path.join(HERE, '..', 'index.full.html')))   # WHY explanations quoted from the notes (private, gated with the MCQs)
 import gate; gate.gate()
-import csp; csp.apply(os.path.join(HERE, '..'))   # last: hash every inline script into the CSP (no 'unsafe-inline' scripts)
+import csp; csp.apply(os.path.join(HERE, '..'))
+import sw_stamp; print('sw VERSION:', sw_stamp.stamp())   # last: the service worker VERSION is a hash of what it caches (never bumped by hand)   # last: hash every inline script into the CSP (no 'unsafe-inline' scripts)
