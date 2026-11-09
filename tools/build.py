@@ -246,6 +246,14 @@ s = s.replace(_k0, _SAFE + _MIG, 1)
 assert 'Annot.load' in s and 'Annot.dump' in s and 'localeCompare(b))' in s
 
 
+# college tags on the original systemic viva cards (from the base page, not content.TOPICS): chips in the header and exam meta
+for _qid, _toks in _C26['tags'].items():
+    if _qid in _POS: continue
+    _refs = ', '.join(_toks); _o = exam.get(_qid)
+    exam[_qid] = [_o[0] if _o else 0, ((_o[1] + ', ') if _o and _o[1] else '') + _refs, sorted(set(_o[2] if _o else []) | {2026})] + (list(_o[3:]) if _o else [])
+    _chips = xm_html(0, _refs); _inner = _chips[len('<span class="xm">'):-len('</span>')]
+    s = re.sub(r'(<article class="card" id="%s"><header tabindex="0">)(.*?)(</header>)' % _qid,
+               lambda m: m.group(1) + (re.sub(r'(<span class="xm">.*)(</span>)$', lambda x: x.group(1) + _inner + x.group(2), m.group(2), flags=re.S) if 'class="xm"' in m.group(2) else m.group(2) + _chips) + m.group(3), s, count=1, flags=re.S)
 QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1], {s_: RO.topic_order(c, s_) for s_ in CHAP[c][1]}] for c in CH_ORDER]}
 QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
 

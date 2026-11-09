@@ -44,7 +44,7 @@ class Build(unittest.TestCase):
             for t in toks: self.assertIn(t, chips, '%s: tag %s on the card' % (qid, t))
         new = re.findall(r'<article class="card" id="q(\d+)"><header tabindex="0"><span class="code">C26</span>.*?<div class="ans">(.*?)</div></article>', self.h, re.S)
         self.assertEqual(len(new), len(ov['new'])); self.assertTrue(all(int(i) > 1393 for i, _ in new), 'new questions are numbered after every existing card')
-        self.assertTrue(all('Answer to be added.' in a for _, a in new))
+        self.assertTrue(all('Answer to be added.' in re.sub(r'<[^>]+>', '', a) for _, a in new), 'new questions say their answer is to be added')
     def test_data_rows_point_to_real_views_and_cards(self):
         views = set(re.findall(r'<div class="view" id="v-([\w-]+)"', self.h)); cards = set(re.findall(CARD, self.h))
         bad = [r[3] for r in G.rows(self.h) if r[2] not in views or r[3] not in cards]; self.assertFalse(bad, bad[:5])
