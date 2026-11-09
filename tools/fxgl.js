@@ -136,7 +136,7 @@ addEventListener('scroll',()=>{if(!wa)wt=null},{passive:true,capture:true});
 
 /* ---------- boot after the page is up and idle, and again when Home is drawn ---------- */
 const home=()=>!location.hash||/^#\/?(home)?$/.test(location.hash);
-function boot(){backdrop();if(home())setTimeout(()=>{heroInit()},60)}
+function boot(){/* the living-tissue backdrop (C2) is switched off: a decorative dot field behind every page */if(home())setTimeout(()=>{heroInit()},60)}
 const idle=window.requestIdleCallback||(f=>setTimeout(f,300));
 addEventListener('load',()=>idle(boot,{timeout:2500}));
 addEventListener('hashchange',()=>{if(home())setTimeout(()=>{heroInit()},120)});

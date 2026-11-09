@@ -12,7 +12,7 @@ const SPEC={
  questions:{acts:[['Random question',click('questions','button',/Random question/),1],['Practice',go('#/practice')],['Chapters',go('#/qa')]],
   stats:()=>{const t=($1('questions','.qfc.on')||{}).textContent,n=t&&t.replace(/\D/g,''),l=num('questions',/(\d+ of \d[\d,]* learned)/);return[n&&n+' questions','Viva + written',l]}},
  qa:{acts:[[()=>{const e=$1('qa','a,button',/^Start/);return e?e.textContent.trim():'Start studying'},click('qa','a,button',/^Start/),1],['All questions',go('#/questions')],['Textbook',go('#/textbook')]],
-  stats:()=>{const c=num('qa',/(\d+)\s*chapters/);const t=($1('qa','.qfc.on')||{}).textContent,n=t&&t.replace(/\D/g,'');return[c&&c+' chapters',n&&n+' questions','With full answers']}},
+  stats:()=>{const c=num('qa',/(\d+)\s*chapters/);const t=($1('qa','.qfc.on')||{}).textContent,n=t&&t.replace(/\D/g,'');return[c&&c+' chapters',n&&n+' questions']}},
  mcqs:{acts:[['Quick 10',click('mcqs','.mx-next'),1],['Mock paper',click('mcqs','.mx-tile.t3')],['Custom practice',click('mcqs','.mx-tile.t2')]],
   stats:()=>{const n=num('mcqs',/(\d+) questions/);return[n&&n+' MCQs','Single best answer + true/false']}},
  textbook:{acts:[[()=>{const e=$1('textbook','a.tbcont');return e?(e.textContent.indexOf('Continue')>-1?'Continue reading':'Start reading'):'Start reading'},()=>{const e=$1('textbook','a.tbcont');if(e)location.hash=e.getAttribute('href')},1],['Questions',go('#/questions')]],

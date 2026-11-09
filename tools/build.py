@@ -151,6 +151,12 @@ for c, (t, subs) in content.GP_CHAPTERS.items():
 CH_ORDER = sorted((c for c in CHAP if c != 'P')) + ['P']
 TREE = {k: list(RO.norm(*v)) for k, v in robbins_map.SYS.items()}
 TREE.update(tree_gp)
+# the 2026 college questions have no Robbins placement yet: they sit under their topic's chapter in a '2026 college papers'
+# section, so Home counts, numbers and suggests them (ORDER only includes questions with a place in the tree)
+for _d in new_data:
+    if _d[0] == 'C26' and _d[3] not in TREE:
+        _sib = next((TREE[_x[3]] for _x in new_data if _x[2] == _d[2] and _x[0] != 'C26' and _x[3] in TREE), None)
+        if _sib: TREE[_d[3]] = [_sib[0], '2026 college papers', '2026 college papers']
 # headings in Robbins order (robbins_outline.py); any heading that is not listed there goes after the listed ones
 for _c in list(CHAP):
     _o = RO.sub_order(_c)

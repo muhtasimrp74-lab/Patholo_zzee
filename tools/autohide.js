@@ -29,3 +29,7 @@
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-zz-act]');if(!b)return;const a=b.dataset.zzAct,W=window;
  if(a==='signin')W.zzSignIn&&W.zzSignIn();else if(a==='upgrade')(W.zzUpgrade||W.zzSignIn)();else if(a==='account')W.zzAccountPage&&W.zzAccountPage();
  else if(a==='close'||a==='close-upgrade'){const d=b.closest('dialog');d&&d.close();if(a==='close-upgrade'&&W.zzUpgrade)W.zzUpgrade()}});
+
+/* a short pulse confirms a toggle that just switched on (bookmark, favourite, learned...) */
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('button[aria-pressed]');if(!b)return;
+ setTimeout(()=>{if(b.getAttribute('aria-pressed')==='true'){b.classList.remove('zz-pulse');void b.offsetWidth;b.classList.add('zz-pulse');setTimeout(()=>b.classList.remove('zz-pulse'),320)}},0)});

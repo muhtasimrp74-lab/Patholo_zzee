@@ -54,7 +54,7 @@ function usefulLine(sp: HTMLElement): void {
     sp.append('Continue: ', a); if (streak) sp.append(' \u00b7 ' + streak);
   } else if (streak) sp.textContent = 'You\u2019re on a ' + streak + '. ' + (st.l ? st.l + ' questions learned so far.' : 'Keep it going today.');
   else if (st.l) sp.textContent = st.l + ' questions learned so far. One short session builds on that.';
-  else { const a = document.createElement('a'); a.href = '#/01'; a.textContent = 'Start with topic 01'; sp.append(a, ' \u2014 ten minutes is enough.'); }
+  else { const a = document.createElement('a'); a.href = '#/01'; a.textContent = 'Start with topic 01'; sp.append(a, '. Ten minutes is enough.'); }
   if (!sp.textContent) sp.textContent = TIPS[new Date().getDate() % TIPS.length]!;
 }
 /** Plan badge (free or paid), filled in once the account is known; the banner is an overlay, so nothing shifts. */
@@ -126,7 +126,7 @@ function daily(away: boolean): void {
   o.className = 'zz-wd'; o.setAttribute('role', 'dialog'); o.setAttribute('aria-modal', 'true'); o.setAttribute('aria-labelledby', 'zz-wh');
   o.innerHTML = '<div class="zc zw-' + part() + '"><div class="zi" aria-hidden="true"><svg viewBox="0 0 24 24">' + ICON[part()] + '</svg></div><h2 id="zz-wh"></h2><p></p><label for="zz-wn">What should we call you?</label><input id="zz-wn" type="text" maxlength="40" autocomplete="given-name" placeholder="First name"><button type="button">Start studying</button></div>';
   o.querySelector('h2')!.textContent = greet() + (first() ? ', ' + first() : '');
-  o.querySelector('p')!.textContent = away ? 'Welcome back — it’s been a little while. Even ten minutes today counts.' : st.n > 1 ? 'Welcome back! You’re on a ' + st.n + '-day revision streak.' : 'Welcome to your daily revision. A little every day goes a long way.';
+  o.querySelector('p')!.textContent = away ? 'Welcome back. It’s been a little while; even ten minutes today counts.' : st.n > 1 ? 'Welcome back! You’re on a ' + st.n + '-day revision streak.' : 'Welcome to your daily revision. A little every day goes a long way.';
   const inp = o.querySelector('input')!; inp.value = nm();
   /* a name is already saved: greet with it and do not ask again every day (it can be changed in the menu) */
   if (nm()) { o.querySelector('label')!.remove(); inp.type = 'hidden'; }
@@ -187,7 +187,7 @@ window.addEventListener('load', () => { idle(() => {
     if (id === 'v-bookmarks') return N + ', these are the questions you wanted to come back to.';
     if (id === 'v-favourites') return N + ', your favourites, all in one place.';
     if (id === 'v-notes') return N + ', your own words, saved on this device.';
-    if (/^v-(c?\d+)$/.test(id)) return N + ', one question at a time — you’ve got this.';
+    if (/^v-(c?\d+)$/.test(id)) return N + ', one question at a time. You’ve got this.';
     return '';
   };
   const hiCss = (): void => { if (document.getElementById('zz-hi-css')) return; const t = document.createElement('style'); t.id = 'zz-hi-css'; t.textContent = '.zz-hi{margin:8px 0 0;font:600 .95rem/1.4 var(--body,system-ui,sans-serif);color:var(--burgundy2,#93304A)}'; document.head.appendChild(t); };

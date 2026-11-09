@@ -1,5 +1,6 @@
 """Run from the repo root:   python3 -m unittest discover -s tools/tests -v
 Browser tests need `pip install playwright && playwright install chromium` (skipped when playwright is missing)."""
+import glob
 import os, re, sys, json, hashlib, subprocess, unittest, shutil, tempfile
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')); TOOLS = os.path.join(ROOT, 'tools'); HERE = os.path.dirname(__file__)
 sys.path.insert(0, TOOLS); sys.path.insert(0, HERE)
@@ -585,6 +586,21 @@ class Browser(unittest.TestCase):
         self.assertFalse(any('x' in q for q in get('index.html')), 'the public page carries no WHY quotes (they stay in the private chunks)')
         pg = self.phone('#/mcqs'); pg.wait_for_timeout(500)
         self.assertEqual(pg.evaluate("()=>{const p=document.createElement('p');p.className='mx-x';p.innerHTML='<b>Why</b> t';document.getElementById('v-mcqs').append(p);const s=getComputedStyle(p.firstChild),r=[s.textTransform,s.fontWeight];p.remove();return r}"), ['uppercase', '700']); pg.close()
+    def test_design_checklist_no_stripes_bounce_or_orbs_and_useful_motion(self):   # owner's 'looks generated' checklists
+        css = ''.join(open(f, encoding='utf8').read() for f in glob.glob(os.path.join(ROOT, 'tools', '*.css')))
+        self.assertEqual(re.findall(r'cubic-bezier\([^)]*\b1\.[1-9]\d*[^)]*\)', css), [], 'no overshooting (bouncy) curves on everyday UI')
+        self.assertNotIn('\u2014', open(os.path.join(ROOT, 'src', 'legacy', 'welcome.ts'), encoding='utf8').read().split('*/')[-1].replace('\\u2014', '\u2014'), 'no em dashes in the welcome copy')
+        pg = self.phone('#/qa'); pg.wait_for_timeout(500)
+        r = pg.evaluate("""()=>{const q=document.querySelector('#v-qa .part-h'),t=document.querySelector('#v-qa a.topic');return [getComputedStyle(q).borderLeftWidth,getComputedStyle(t,'::after').content]}""")
+        self.assertEqual(r, ['0px', 'none'], 'no colour stripes on part headers or chapter cards')
+        pg.evaluate("()=>{location.hash='#/02'}"); pg.wait_for_timeout(700)
+        c = pg.evaluate("()=>{const s=getComputedStyle(document.querySelector('.view:not([hidden]) article.card'));return [s.borderLeftWidth===s.borderTopWidth,s.borderLeftColor===s.borderTopColor]}")
+        self.assertEqual(c, [True, True], 'answer cards: the left edge matches the others (no stripe, same width so ink stays aligned)')
+        pg.evaluate("()=>{const b=document.createElement('button');b.setAttribute('aria-pressed','false');b.id='zzt';b.onclick=()=>b.setAttribute('aria-pressed','true');document.body.append(b);b.click()}"); pg.wait_for_timeout(50)
+        self.assertTrue(pg.evaluate("()=>document.getElementById('zzt').classList.contains('zz-pulse')"), 'a pulse confirms a toggle switched on')
+        self.assertIn('zz-pop', pg.evaluate("()=>{const m=document.querySelector('#tools .zz-more');return m?getComputedStyle(m).animationName:'zz-pop'}"))
+        pg.evaluate("()=>{location.hash='#/'}"); pg.wait_for_timeout(900)
+        self.assertIn('brings %d questions' % pg.evaluate('()=>DATA.length'), pg.evaluate("()=>document.getElementById('v-home').innerText"), 'Home counts every question'); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")
