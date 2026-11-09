@@ -128,7 +128,7 @@ html.fx-full .cf:nth-child(5n){background:var(--fx-gold)!important;width:6px!imp
 
 /* C55 the "Read" stamp */
 .fx-stamp{position:absolute;right:18px;top:14px;z-index:4;padding:4px 14px;border:3px solid var(--burgundy);border-radius:10px;color:var(--burgundy);pointer-events:none;
- font:400 1.4rem/1 var(--disp);letter-spacing:.02em;transform:rotate(-8deg);opacity:.9;mix-blend-mode:multiply;animation:fx-stamp .5s cubic-bezier(.2,1.4,.4,1) both,fx-fade .5s ease 2s forwards}
+ font:400 1.4rem/1 var(--disp);letter-spacing:.02em;transform:rotate(-8deg);opacity:.9;mix-blend-mode:multiply;animation:fx-stamp .5s cubic-bezier(.2,.8,.2,1) both,fx-fade .5s ease 2s forwards}
 @keyframes fx-stamp{0%{opacity:0;transform:rotate(-8deg) scale(1.9)}60%{opacity:.95;transform:rotate(-8deg) scale(.94)}100%{opacity:.9;transform:rotate(-8deg) scale(1)}}
 @keyframes fx-fade{to{opacity:0}}
 html[data-theme=dark] .fx-stamp{mix-blend-mode:normal;color:var(--rosy);border-color:var(--rosy)}

@@ -73,7 +73,7 @@
 .ans.zz-locked .zz-lock .zz-lk{width:32px;height:32px}
 .ans.zz-locked .zz-lock .zz-b{min-height:44px;padding:0 var(--zz-s4)}
 /* skeletons instead of blank flashes */
-.ans[data-zz-st=loading]::before,.zz-skel{content:"";display:block;height:72px;margin:var(--zz-s2) 0;border-radius:var(--zz-r-sm);background:linear-gradient(90deg,transparent 0,color-mix(in srgb,var(--zz-surface) 70%,transparent) 50%,transparent 100%) 0 0/200% 100%,repeating-linear-gradient(to bottom,color-mix(in srgb,var(--zz-ink) 8%,transparent) 0 12px,transparent 12px 22px);animation:zz-shine 1.2s linear infinite}
+.ans[data-zz-st=loading]::before{content:"";display:block;height:72px;margin:var(--zz-s2) 0;border-radius:var(--zz-r-sm);background:linear-gradient(90deg,transparent 0,color-mix(in srgb,var(--zz-surface) 70%,transparent) 50%,transparent 100%) 0 0/200% 100%,repeating-linear-gradient(to bottom,color-mix(in srgb,var(--zz-ink) 8%,transparent) 0 12px,transparent 12px 22px);animation:zz-shine 1.2s linear infinite}
 .view[data-zz-st=loading] .mx::before{content:"";display:block;height:120px;margin:var(--zz-s4) 0;border-radius:var(--zz-r-md);background:linear-gradient(90deg,transparent 0,color-mix(in srgb,var(--zz-surface) 70%,transparent) 50%,transparent 100%) 0 0/200% 100%,repeating-linear-gradient(to bottom,color-mix(in srgb,var(--zz-ink) 8%,transparent) 0 14px,transparent 14px 26px);animation:zz-shine 1.2s linear infinite}
 /* account page */
 .zz-acct{max-width:44rem}
@@ -90,7 +90,7 @@ body.zz-wm .ans.zz-g,body.zz-wm #tbbody.zz-g{background-image:var(--zz-wm);backg
 @keyframes zz-in{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
 @keyframes zz-fade{from{opacity:0}to{opacity:1}}
 @keyframes zz-shine{from{background-position:200% 0,0 0}to{background-position:-200% 0,0 0}}
-@media (prefers-reduced-motion:reduce){.zz-dlg[open],.zz-dlg::backdrop,.zz-lock,.ans[data-zz-st=loading]::before,.zz-skel,.view[data-zz-st=loading] .mx::before{animation:none}.zz-b,.zz-plan,.zz-x,.zz-dlg input{transition:none}}
+@media (prefers-reduced-motion:reduce){.zz-dlg[open],.zz-dlg::backdrop,.zz-lock,.ans[data-zz-st=loading]::before,.view[data-zz-st=loading] .mx::before{animation:none}.zz-b,.zz-plan,.zz-x,.zz-dlg input{transition:none}}
 .zz-steps{margin:var(--zz-s3) 0 0;padding-left:1.3em;line-height:1.6}
 .zz-steps li{margin:var(--zz-s2) 0}
 .zz-num{font-variant-numeric:tabular-nums;letter-spacing:.02em;font-size:1.05em}

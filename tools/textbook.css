@@ -35,9 +35,9 @@
 .tbs-n{flex:none;min-width:34px;height:28px;display:inline-flex;align-items:center;justify-content:center;border-radius:9px;background:var(--accbg);color:var(--lbl);font:700 .74rem var(--body)}
 .tbs-c{flex:none;width:9px;height:9px;margin-right:4px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s}
 .tbs.shut .tbs-c{transform:rotate(-45deg)}.tbs-b{padding:4px 18px 18px;border-top:1px solid var(--line)}.tbs.shut .tbs-b{display:none}
-.tbs-k{--k:var(--muted);border-left:4px solid var(--k)}.tbs-morph{--k:var(--burgundy,#7A1F36)}.tbs-clin{--k:var(--ok,#2e8b57)}.tbs-path{--k:var(--blue)}
+.tbs-k{--k:var(--muted);border-left:4px solid var(--k)}
 .tbs-tag{padding:4px 12px;border-radius:99px;background:color-mix(in srgb,var(--k) 15%,transparent);color:var(--k);font:700 .72rem var(--body);letter-spacing:.1em;text-transform:uppercase}
-.tbs-k .tbs-h{justify-content:space-between}.tbs-morph .tbs-b{background:color-mix(in srgb,var(--burgundy,#7A1F36) 5%,var(--panel))}
+.tbs-k .tbs-h{justify-content:space-between}
 .tbi{margin:0 0 14px;padding:0 4px}
 .tb,.tbi{font:400 1.05rem/1.75 Charter,'Iowan Old Style','Palatino Linotype',Georgia,serif;color:var(--text)}
 .tb p,.tbi p{margin:.95rem 0 0;overflow-wrap:break-word}
