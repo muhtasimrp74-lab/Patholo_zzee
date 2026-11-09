@@ -1,7 +1,7 @@
 """Regenerates the two golden files the tests compare against. Run ONLY after deliberately reviewing a change:
     python3 tools/build.py && python3 tools/tests/gen_manifests.py
 qids.json     every question id ever shipped -> short hash of its text (a shifted/renumbered id would orphan users' saved data)
-sw_version.json  index.html hash for the current sw.js VERSION (test fails if the site changes but VERSION is not bumped)
+(sw_version.json retired: tools/sw_stamp.py derives VERSION from the content)
 aliases.json  reviewed duplicate merges (merged-away id -> surviving id); a NEW fuzzy merge fails the test until added here."""
 import re, json, os, hashlib
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')); HERE = os.path.dirname(__file__)
@@ -21,7 +21,5 @@ if __name__ == '__main__':
     al = json.loads(re.search(r'const QALIAS=(\{.*?\});', h).group(1))
     with open(os.path.join(HERE, 'aliases.json'), 'w', encoding='utf8') as f: json.dump(dict(sorted(al.items(), key=lambda kv: int(kv[0][1:]))), f, indent=0)
     import hashlib
-    with open(os.path.join(ROOT, 'sw.js'), encoding='utf8') as f: v = re.search(r"const VERSION = '([^']+)'", f.read()).group(1)
-    with open(os.path.join(ROOT, 'index.html'), 'rb') as f: ih = hashlib.sha1(f.read()).hexdigest()
-    with open(os.path.join(HERE, 'sw_version.json'), 'w', encoding='utf8') as f: json.dump({v: ih}, f, indent=0)   # records index.html for this sw.js VERSION
+    pass   # sw.js VERSION is now a content hash written by tools/sw_stamp.py (build.py); sw_version.json is gone
     print('qids', len(ids), 'aliases', len(al), 'sw', v)

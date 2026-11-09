@@ -9,6 +9,8 @@ except Exception: HAVE_PW = False
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 HAVE_CHUNKS = os.path.exists(os.path.join(ROOT, 'private-chunks', 'q-02.json'))
 
+NMCQ = len(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'mcqs.json'), encoding='utf8'))['q'])   # the MCQ bank size, from the data
+
 class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a): pass
 
@@ -70,7 +72,7 @@ class Loader(unittest.TestCase):
         self.assertFalse([u for u in self.reqs if u.endswith('textbook/ch02.html')])
 
     def test_mcqs_load_all_chapters_on_open(self):
-        pg = self.open('#/mcqs'); pg.wait_for_function("()=>MCQDATA.q.length===884", timeout=15000)
+        pg = self.open('#/mcqs'); pg.wait_for_function('()=>MCQDATA.q.length===' + str(NMCQ), timeout=15000)
         self.assertFalse(pg.evaluate("()=>document.querySelector('.view[data-zz-st]')"))
         self.assertEqual(len(set(re.findall(r'mcq-\d+', ' '.join(self.reqs)))), 16)
 
@@ -161,7 +163,7 @@ class Entitlement(unittest.TestCase):
         pg.goto('http://127.0.0.1:%d/index.html#/mcqs' % self.port)
         pg.wait_for_selector('.zz-banner button')
         self.assertEqual(pg.text_content('.zz-banner button'), 'Sign in')
-        n = pg.evaluate('()=>MCQDATA.q.length'); self.assertTrue(0 < n < 884)
+        n = pg.evaluate('()=>MCQDATA.q.length'); self.assertTrue(0 < n < NMCQ)
         pg.evaluate("()=>{location.hash='#/textbook/ch05'}"); pg.wait_for_selector('#tbbody .zz-locked button')
         self.assertEqual(pg.text_content('#tbbody .zz-locked button'), 'Sign in')
 
@@ -517,7 +519,7 @@ class McqSession(unittest.TestCase):
         self.ents = ents; pg.route('**/api/**', api); pg.goto('http://127.0.0.1:%d/index.html%s' % (self.port, h)); return pg
     live = "()=>document.body.classList.contains('mx-live')"
     def test_paid_chapter_two_is_playable(self):
-        pg = self.page(True); pg.wait_for_function('()=>MCQDATA.q.length===884')
+        pg = self.page(True); pg.wait_for_function('()=>MCQDATA.q.length===' + str(NMCQ))
         pg.evaluate("()=>[...document.querySelectorAll('#v-mcqs [data-a=chap]')][1].click()"); pg.wait_for_function(self.live)
         pg.keyboard.press('a'); pg.keyboard.press('ArrowRight'); pg.wait_for_timeout(200); self.assertEqual(self.errs, [])
     def test_stale_session_and_locked_chapter_for_free_visitor(self):
@@ -528,17 +530,17 @@ class McqSession(unittest.TestCase):
         pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.wait_for_selector('#v-mcqs [data-a=chap]', state='attached')
         pg.evaluate("()=>[...document.querySelectorAll('#v-mcqs [data-a=chap]')][3].click()"); pg.wait_for_function("()=>document.getElementById('zz-signin').open")
     def test_repeat_visit_uses_own_copy_while_plan_active_and_busy_is_retried(self):
-        pg = self.page(True, busy=1); pg.wait_for_function('()=>MCQDATA.q.length===884', timeout=20000)
+        pg = self.page(True, busy=1); pg.wait_for_function('()=>MCQDATA.q.length===' + str(NMCQ), timeout=20000)
         n = len(self.hits); self.assertEqual(n, 17, 'one 429 retried once, then 16 chapters')
         pg.wait_for_function("()=>caches.open('zz-chunks-u1').then(c=>c.keys()).then(k=>k.length===16)")  # copies saved
-        pg.reload(); pg.wait_for_function('()=>MCQDATA.q.length===884'); self.assertEqual(len(self.hits), n, 'no chunk requests on the second visit')
+        pg.reload(); pg.wait_for_function('()=>MCQDATA.q.length===' + str(NMCQ)); self.assertEqual(len(self.hits), n, 'no chunk requests on the second visit')
         self.ents = (); pg.reload(); pg.wait_for_selector('.zz-banner button'); self.assertGreater(len(self.hits), n, 'expired plan: asks the server again')
         self.assertEqual(pg.evaluate("()=>caches.keys().then(k=>k.filter(x=>x.startsWith('zz-chunks-')))"), [], 'and the copy is wiped')
     def test_builder_start_and_mock_paper_play_with_all_chapters(self):
         # the reported bug: with all chapters loaded, "Start practice" and "Mock paper" crashed and the page stayed put
         for h, click in (('#/mcqs/custom', "()=>[...document.querySelectorAll('#v-mcqs button')].find(b=>b.textContent.trim()==='Start practice').click()"),
                          ('#/mcqs', "()=>document.querySelector('#v-mcqs [data-a=mock]').click()")):
-            pg = self.page(True, h=h); pg.wait_for_function('()=>MCQDATA.q.length===884'); pg.wait_for_timeout(300)
+            pg = self.page(True, h=h); pg.wait_for_function('()=>MCQDATA.q.length===' + str(NMCQ)); pg.wait_for_timeout(300)
             pg.evaluate(click); pg.wait_for_function(self.live); pg.wait_for_timeout(300)
             self.assertEqual(self.errs, [], h)
             self.assertTrue(pg.evaluate("()=>/of\\s*\\d+/.test(document.querySelector('#v-mcqs').innerText)"), 'a question is on screen')

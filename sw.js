@@ -7,8 +7,9 @@
      this file never touches them.
    - The 29 Robbins textbook chapters (about 7 MB) are saved in the background after install,
      so the whole site (questions, MCQs, textbook) works with no connection at all.
-   When you upload a new version of the site, change VERSION to force a clean refresh. */
-const VERSION = 'pathviva-zzee-v253';
+   VERSION is written by tools/sw_stamp.py at build time: a hash of index.html and every precached file, so it changes exactly
+   when the site does (never edit it by hand). */
+const VERSION = 'pathviva-zzee-f472f98423';
 
 const CORE = [
   'index.html',

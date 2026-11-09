@@ -108,12 +108,12 @@ class Pwa(unittest.TestCase):
     def test_sw_reports_install_failure_and_cache_gaps(self):
         s = rd('sw.js'); self.assertIn('install failed', s); self.assertIn('diag.json', s)
         if shutil.which('node'): self.assertEqual(subprocess.run(['node', '--check', os.path.join(ROOT, 'sw.js')]).returncode, 0)
-    def test_sw_version_bumped_when_site_changes(self):
-        # Installed copies only refresh when VERSION changes; a changed index.html with an old VERSION is the stale-offline-copy bug.
-        v = re.search(r"const VERSION = '([^']+)'", rd('sw.js')).group(1); p = os.path.join(HERE, 'sw_version.json')
-        known = json.loads(rd('tools/tests/sw_version.json')) if os.path.exists(p) else {}
-        self.assertIn(v, known, 'VERSION %s is not recorded; if you changed site files this is expected: run gen_manifests/record the new hash' % v)
-        self.assertEqual(known[v], sha('index.html'), 'index.html changed but sw.js VERSION (%s) was not bumped' % v)
+    def test_sw_version_matches_site_content(self):
+        # Installed copies only refresh when VERSION changes. VERSION is a hash of everything the worker caches (tools/sw_stamp.py,
+        # run by build.py), so a changed site with an old VERSION - the stale-offline-copy bug - cannot be committed.
+        sys.path.insert(0, os.path.join(ROOT, 'tools')); import sw_stamp
+        v = re.search(r"const VERSION = '([^']+)'", rd('sw.js')).group(1)
+        self.assertEqual(v, sw_stamp.digest(ROOT), 'sw.js VERSION does not match the site: run python3 tools/build.py')
 
 try:
     from playwright.sync_api import sync_playwright; HAVE_PW = True
