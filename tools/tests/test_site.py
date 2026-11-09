@@ -595,6 +595,10 @@ class Browser(unittest.TestCase):
         self.assertGreaterEqual(len(xs), 150, 'WHY explanations added'); au = set(json.load(open(os.path.join(ROOT, 'tools', 'mcq_explanations.json'), encoding='utf8')).values())
         self.assertTrue(all(x.startswith(('From your notes: ', 'Robbins: ')) or x in au for x in xs), 'every explanation is a labelled quote or an authored one')
         self.assertFalse(any('x' in q for q in get('index.html')), 'the public page carries no WHY quotes (they stay in the private chunks)')
+        self.assertEqual([q['h'] for q in full if not q.get('x') and not q.get('e')], [], 'every MCQ has an explanation (WHY or per-option notes)')
+        kf = {k: v for k, v in json.load(open(os.path.join(ROOT, 'tools', 'mcq_key_fixes.json'), encoding='utf8')).items() if not k.startswith('_')}
+        for q in full:
+            if q['h'] in kf: self.assertEqual(q['a'], kf[q['h']]['a'], 'corrected key reaches the page: %s' % q['h'])
         pg = self.phone('#/mcqs'); pg.wait_for_timeout(500)
         self.assertEqual(pg.evaluate("()=>{const p=document.createElement('p');p.className='mx-x';p.innerHTML='<b>Why</b> t';document.getElementById('v-mcqs').append(p);const s=getComputedStyle(p.firstChild),r=[s.textTransform,s.fontWeight];p.remove();return r}"), ['uppercase', '700']); pg.close()
     def test_design_checklist_no_stripes_bounce_or_orbs_and_useful_motion(self):   # owner's 'looks generated' checklists

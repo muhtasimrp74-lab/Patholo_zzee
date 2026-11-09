@@ -9,5 +9,15 @@
    1
   ],
   "why": "Autoimmune gastritis: 'Antibodies to parietal cells' was keyed false; these antibodies define the disease, so it is true."
+ },
+ "2f597202": {
+  "a": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "why": "Hyperglycaemia sine glycosuria is high blood glucose WITHOUT sugar in the urine, from a RAISED renal threshold. The key had marked 'presence of sugar in urine' and 'low renal threshold' true, which describes the opposite condition (renal glycosuria)."
  }
 }
