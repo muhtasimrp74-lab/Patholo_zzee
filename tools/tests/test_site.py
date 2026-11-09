@@ -585,6 +585,16 @@ class Browser(unittest.TestCase):
         self.assertFalse(any('x' in q for q in get('index.html')), 'the public page carries no WHY quotes (they stay in the private chunks)')
         pg = self.phone('#/mcqs'); pg.wait_for_timeout(500)
         self.assertEqual(pg.evaluate("()=>{const p=document.createElement('p');p.className='mx-x';p.innerHTML='<b>Why</b> t';document.getElementById('v-mcqs').append(p);const s=getComputedStyle(p.firstChild),r=[s.textTransform,s.fontWeight];p.remove();return r}"), ['uppercase', '700']); pg.close()
+    def test_home_next_question_follows_reading_and_totals_come_from_the_data(self):
+        # 'Read the next question' stayed on Q.1 until a card was marked learned; typed-in totals (1,310 / 884 / 12) went stale
+        for f in ('index.html', 'index.full.html'): self.assertNotIn('{{ZZ_', open(os.path.join(ROOT, f), encoding='utf8').read(), f)
+        pg = self.returning('#/02'); pg.mouse.move(200, 500)
+        for _ in range(12): pg.mouse.wheel(0, 260); pg.wait_for_timeout(60)
+        pg.wait_for_timeout(1500); pg.evaluate("()=>{location.hash='#/'}"); pg.wait_for_timeout(1500)
+        t = pg.evaluate("()=>document.getElementById('v-home').innerText"); i = t.find('Read the next question')
+        self.assertGreaterEqual(i, 0); self.assertNotIn('Q.1 ', t[i:i + 40].replace('\n', ' '), 'the next question moves on with your reading')
+        real = pg.evaluate("()=>new Set(MCQDATA.q.flatMap(q=>q.g||[]).filter(g=>g!=='NOTES')).size")
+        self.assertIn('%d past papers' % real, t, 'the past-paper count comes from the data'); pg.close()
     def test_idle_page_does_not_keep_rewriting_the_root_class(self):   # liquid.js re-added zz-lgon on every run, retriggering its own observer forever
         pg = self.page('#/mcqs'); pg.wait_for_timeout(1500)
         n = pg.evaluate("()=>new Promise(r=>{let n=0;const mo=new MutationObserver(l=>{n+=l.length});mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme','data-tone']});setTimeout(()=>{mo.disconnect();r(n)},1500)})")

@@ -935,4 +935,12 @@ window.Annot=API;
 window.Ink={ready,dump:()=>dump(),async load(obj){if(obj&&obj.v===1&&obj.docs)return load(obj);
   const map={};if(obj&&typeof obj==='object')for(const id in obj){const o=obj[id];const t=alias()[id]||id;if(/^q\d+$/.test(id)&&(typeof BY==='undefined'||BY[t])&&o&&typeof o==='object')map[id]=o}
   const docs=fromLegacy(map),p={v:1,docs:{}};for(const k in docs)p.docs[k]=docs[k];return load(p)}};
+/* Answers are lazy-loaded (tools/chunks.js sets host.innerHTML after load), which deletes the ink canvases and pins we appended to the
+   host. The layer kept pointing at the detached canvases, so every repaint drew into nothing: the list still showed the notes (it reads the
+   store) but the ink was gone after a refresh. When content (or auth) changes, drop detached canvases, forget the block cache and repaint. */
+function rebuildAfterContent(){if(!isReady){ready.then(rebuildAfterContent);return}
+ for(const k in St.docs){const h=hostByKey(k);if(!h)continue;BL.delete(h);const L=layerOf(h,k);if(!L)continue;
+  for(const c of['hl','ink','wet'])if(L[c]&&!L[c].isConnected)L[c]=null;sched(L)}
+ layers.forEach(L=>{if(L.host.isConnected&&!L.hl&&!L.ink)sched(L)});schedBadges()}
+addEventListener('zz:chunk',()=>setTimeout(rebuildAfterContent,0));addEventListener('zz:auth',()=>setTimeout(rebuildAfterContent,300));
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();

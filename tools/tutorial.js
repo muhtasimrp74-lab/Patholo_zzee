@@ -2,7 +2,7 @@
 (function(){try{
 const $=(s,r=document)=>r.querySelector(s);
 const ST=[
-['Welcome to Patholo_zzee','1,310 pathology viva and written questions in NMC order (Robbins 11th), with full answers. This 2-minute tour walks through every part. Use Next, or the arrow keys.','#/',''],
+['Welcome to Patholo_zzee','{{ZZ_Q}} pathology viva and written questions in NMC order (Robbins 11th), with full answers. This 2-minute tour walks through every part. Use Next, or the arrow keys.','#/',''],
 ['Bottom bar','Home, Questions, Chapters, MCQs, Textbook and Menu are always one tap away. Everything else (Practice, Bookmarks, Notes, Backup) lives in Menu.','#/','#bnav'],
 ['Questions','Every question in book order. Search at the top, filter by type, year, importance or card. Tap a question to read its answer in place, or tap "Answer ›" to open it on its own page. Badges show Viva, Written or both.','#/questions','.qtools'],
 ['Chapters','Questions grouped by Robbins chapter, then heading and topic. The ring shows how much of a chapter you have learned.','#/qa',''],
@@ -10,7 +10,7 @@ const ST=[
 ['Reading tools','The floating bar changes theme (Light, Sepia, Dark), text size, Focus, Calm reading, Listen (reads the answer aloud), Print, and steps to the previous or next question (arrow keys also work).','#/01','#tools'],
 ['Annotate','Tap Annotate on an answer, an MCQ or a textbook chapter to write, highlight text, add notes and erase with a pen or finger. Marks follow the text when you change the text size. The list button finds, jumps to and deletes them; the cog holds pen-only and left-handed modes. Everything is saved on your device and is included in backups.','#/menu',''],
 ['Practice','Flashcards with spaced repetition, a timed viva mode and quiz mode. Press Space to show the answer, then 1, 2 or 3 to rate it Easy, Medium or Hard.','#/practice',''],
-['MCQs','884 questions: 12 past papers, mock exams, quick 10-question sets and custom practice. Your mistakes are collected so you can retry them.','#/mcqs',''],
+['MCQs','{{ZZ_MCQ}} questions: {{ZZ_PAPERS}} past papers, mock exams, quick 10-question sets and custom practice. Your mistakes are collected so you can retry them.','#/mcqs',''],
 ['Textbook','The Robbins chapters, cleaned for reading. Key concepts are highlighted, sections fold, your place is remembered, and chapters you open work offline.','#/textbook',''],
 ['Your space','Bookmarks, Favourites and Notes collect what you save. The Home page shows progress, your daily plan, streak and the topics to focus on next.','#/menu',''],
 ['Backup and offline','Everything stays on your device. Menu > Export backup saves progress, notes and handwriting to a file; Import restores it. The site works offline once opened, and can be installed to your home screen.','#/menu','']];

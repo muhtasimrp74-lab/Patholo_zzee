@@ -449,6 +449,13 @@ subprocess.run([sys.executable, os.path.join(HERE, 'apply_hand_edits.py')], chec
 subprocess.run([sys.executable, os.path.join(HERE, 'source_links.py')], check=True)
 # the full page becomes index.full.html (gitignored, tests only); gate.py writes the gated index.html, content/ and private-chunks/
 os.replace(os.path.join(HERE, '..', 'index.html'), os.path.join(HERE, '..', 'index.full.html'))
+def _counts(path):   # live totals for the copy ({{ZZ_Q}}, {{ZZ_MCQ}}, {{ZZ_PAPERS}}): typed-in numbers went stale as content changed
+    t = open(path, encoding='utf8').read()
+    D = json.loads(re.search(r'const DATA=(\[\[.*?\]\]);', t).group(1)); M = json.loads(re.search(r'const MCQDATA=(\{.*?\});\n', t).group(1))['q']
+    papers = {g for q in M for g in (q.get('g') or []) if g != 'NOTES'}
+    for k, v in (('{{ZZ_Q}}', '{:,}'.format(len(D))), ('{{ZZ_MCQ}}', '{:,}'.format(len(M))), ('{{ZZ_PAPERS}}', str(len(papers)))): t = t.replace(k, v)
+    assert '{{ZZ_' not in t, 'unfilled copy placeholder'; open(path, 'w', encoding='utf8').write(t)
+_counts(os.path.join(HERE, '..', 'index.full.html'))
 import mcq_enrich; print('mcq enrich:', mcq_enrich.apply(os.path.join(HERE, '..', 'index.full.html')))   # WHY explanations quoted from the notes (private, gated with the MCQs)
 import gate; gate.gate()
 import csp; csp.apply(os.path.join(HERE, '..'))   # last: hash every inline script into the CSP (no 'unsafe-inline' scripts)
