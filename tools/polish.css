@@ -86,16 +86,15 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
  .topic:hover:active,.dc:hover:active,.pc:hover:active,.tbtile:hover:active,.mtile:hover:active,.pager a:hover:active{transform:translateY(-1px) scale(.985)}
  #bnav a:hover,.chips button:hover,.qchip:hover{transform:translateY(-2px)}
  #tools button:hover{transform:translateY(-2px)}}
-.act.pop svg{animation:zzpop .3s ease-out}.act svg{transform-origin:50% 50%}.zz-tap,.zz-spark{will-change:transform,opacity}
+.act.pop svg{animation:zzpop .3s ease-out}.act svg{transform-origin:50% 50%}.zz-tap{will-change:transform,opacity}
 @keyframes zzpop{0%{transform:scale(1)}45%{transform:scale(1.14)}100%{transform:scale(1)}}
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
-.zz-spark{position:fixed;z-index:90;width:7px;height:7px;margin:-3.5px;border-radius:50%;pointer-events:none;background:var(--c,var(--lbl));animation:zzspark .7s cubic-bezier(.2,.7,.3,1) forwards}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
 .qi-a:not([hidden]),.qs-b:not([hidden]){animation:rise .2s ease-out}
 #bnav a[aria-current],#bnav a.on{transition:transform .3s cubic-bezier(.2,1.5,.4,1)}
 #bnav a[aria-current] svg,#bnav a.on svg{animation:zzbob .5s cubic-bezier(.2,1.5,.4,1)}
 @keyframes zzbob{0%{transform:translateY(4px) scale(.85)}60%{transform:translateY(-3px) scale(1.12)}100%{transform:none}}
-@media(prefers-reduced-motion:reduce){.zz-tap,.zz-spark{display:none}.act.pop svg,#bnav a svg{animation:none}
+@media(prefers-reduced-motion:reduce){.zz-tap{display:none}.act.pop svg,#bnav a svg{animation:none}
  .topic:hover,.dc:hover,.pc:hover,.tbtile:hover,.mtile:hover,.pager a:hover,#bnav a:hover,#tools button:hover{transform:none}
  button:active,.pill:active,.act:active,.topic:active{transform:none}}
 
@@ -151,7 +150,7 @@ html body :is(#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-eb,#v-mcqs .mx-goal>span){fo
 html body :is(.view,dialog,.sf) :is(h1,h2,h3,.nh-h,.pb-t):not(.ans *):not(#tbbody *){text-wrap:balance}
 html body :is(.view,.sf) :is(p,.nh-mu):not(.ans *):not(#tbbody *){text-wrap:pretty}
 /* figures line up in stats, counters and progress (tabular, lining numerals) */
-html body :is(.nh-n,.no,.cnt,.ring,.mx-kv,.mx-acc b,.mx-day b,.zm-n,.qsum,.nh-col-n,.pb-chips span,.qf-n){font-variant-numeric:tabular-nums lining-nums}
+html body :is(.nh-n,.no,.cnt,.ring,.mx-kv,.mx-acc b,.mx-day b,.zm-n,.qsum,.pb-chips span){font-variant-numeric:tabular-nums lining-nums}
 /* ===== one card language across the app, taken from the MCQ tab ("coverslip"): 28 px corners, a bright top edge, a soft sheen,
    a hairline and a long soft drop shadow. Content stays opaque (owner rule): the pane colour is solid and there is no backdrop
    blur, so no new stacking contexts. Question and answer cards are left as they are (ink alignment). ===== */

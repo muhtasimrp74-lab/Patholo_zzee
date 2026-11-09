@@ -35,7 +35,6 @@ html body #an-fab:not(:has(#an-fab-on[aria-pressed=true])) #an-fab-on{width:44px
 
 /* footer: full credits on Home; a compact footer on every other page */
 html.zq-inner footer.sf :is(.sf-hero,.sf-main){display:none}
-footer.sf .zq-legal{display:none}
 footer.sf .zq-foot{display:none}
 html.zq-inner footer.sf .zq-foot{display:grid;gap:22px;max-width:var(--w,1120px);margin:0 auto;padding:36px var(--gut,20px) 8px;box-sizing:border-box}
 .zq-fn{margin:0 0 6px;font:400 1.6rem/1.1 var(--disp);color:#FFF8EC}

@@ -151,8 +151,7 @@ h3.sub{font-size:1.65rem;letter-spacing:-.005em}.part-h h3{font-size:1.55rem}
 /* Handwriting: personal touches only */
 .note textarea,.nt{font-family:var(--hand);font-size:1.28rem;line-height:1.35;font-weight:500}
 .kp::before{font-family:var(--hand);font-size:1.25rem;font-weight:700;letter-spacing:0;text-transform:none}
-.empty b,.toast b{font-family:var(--hand);font-weight:700;font-size:1.5rem}
-#nh .nh-q,.trust{font-family:var(--body)}
+.empty b,.toast b{font-family:var(--hand);font-weight:700;font-size:1.5rem}.trust{font-family:var(--body)}
 .eyebrow{font-family:var(--hand);font-weight:700;font-size:1.25rem;letter-spacing:.01em;text-transform:none;color:var(--burgundy)}
 :root[data-theme=dark] .eyebrow{color:var(--rosy2)}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]) .eyebrow{color:var(--rosy2)}}
@@ -166,7 +165,7 @@ h3.sub{font-size:1.65rem;letter-spacing:-.005em}.part-h h3{font-size:1.55rem}
 :root[data-theme=dark] .topic,:root[data-theme=dark] .card,:root[data-theme=dark] .qi,:root[data-theme=dark] .row{border-color:rgba(255,255,255,.12)}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]) .topic,:root:not([data-theme=light]) .card,:root:not([data-theme=light]) .qi,:root:not([data-theme=light]) .row{border-color:rgba(255,255,255,.12)}}
 .topic:hover,.qi.o,.card:target,.card.hl{box-shadow:var(--glass-in),0 0 0 1px color-mix(in srgb,var(--burgundy) 45%,transparent),var(--sh2)}
-.act,.qb,.qlearn,.qfc,.chips a,.rel a,.blk+.blk,.gb.ghost,.qf-clr,.nh-btn{background-image:var(--spec);background-color:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:var(--glass-in),var(--ring)}
+.act,.qb,.qlearn,.qfc,.chips a,.rel a,.blk+.blk,.gb.ghost,.qf-clr{background-image:var(--spec);background-color:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:var(--glass-in),var(--ring)}
 .act:hover,.qb:hover,.qfc:hover,.chips a:hover{box-shadow:var(--glass-in),0 0 0 1px color-mix(in srgb,var(--burgundy) 50%,transparent)}
 .pill,.nav .pill,.blk:not(.blk+.blk),.gb:not(.ghost),.act[aria-pressed=true]{box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.14),0 6px 18px rgba(122,31,54,.34)}
 /* Stronger ambient colour so the blur reads as glass, not flat tint */
@@ -192,7 +191,7 @@ h1 em{font-size:.66em;font-weight:700}
 .pager a{font-size:1.08rem}
 .ans strong.lbl{font-weight:600}
 /* Start-here and other card titles that used the display face */
-#nh h3,#nh .nh-q,#nh .nh-qt{font-family:var(--read);font-weight:600}
+#nh h3{font-family:var(--read);font-weight:600}
 /* Handwriting slightly bolder and larger for legibility */
 .note textarea,.nt{font-weight:700;font-size:1.3rem}
 .kp::before{font-weight:700;font-size:1.3rem}
