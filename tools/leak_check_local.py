@@ -43,11 +43,20 @@ def qmeta():
     assert all(len(x) <= 120 for x in strs), 'QMETA holds a long string: not heading-sized metadata'
     return ' | '.join(strs)
 
+def authored_ids():
+    """Cards whose bodies are written in tools/college_2026_answers.json (the 2026 college questions, code C26): that tracked file
+    is their source, committed by the owner's choice, so their own text is not counted as protected. The file is still checked
+    against every other gated text (Robbins, notes, existing answers and MCQs): copying any of those into it still fails."""
+    try: D = json.loads(re.search(r'const DATA=(\[\[.*?\]\]);', open(os.path.join(ROOT, 'index.full.html'), encoding='utf8').read()).group(1))
+    except Exception: return set()
+    return {d[3] for d in D if d[0] == 'C26'}
+
 def protected():
-    man = json.load(open(os.path.join(ROOT, 'content', 'manifest.json'), encoding='utf8'))
+    man = json.load(open(os.path.join(ROOT, 'content', 'manifest.json'), encoding='utf8')); own = authored_ids()
     gated, public, short, total = set(), set(), 0, 0
     for cid, meta in man['chunks'].items():
         c = json.load(open(os.path.join(PRIV, cid + '.json'), encoding='utf8'))
+        if c['kind'] == 'q' and own: c = dict(c, cards={k: v for k, v in c['cards'].items() if k not in own})
         if c['kind'] == 'tb': public |= windows(norm(' '.join(re.findall(r'<h[1-6]\b.*?</h[1-6]>', c['html'], re.S | re.I))))
         if meta['free']: public |= windows(norm(' '.join(items(c))))
         for t in items(c):
