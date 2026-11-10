@@ -1,7 +1,7 @@
 export {};
 type Rec=Record<string,any>;
 /* ---- Textbook (Robbins) ---- */
-{const T=mkView('textbook','Textbook','Textbook','Robbins Pathologic Basis of Disease, chapter by chapter. Key concepts and morphology are set apart; chapters you open are saved for offline reading.');
+{const T=mkView('textbook','Textbook','Textbook','Robbins Pathologic Basis of Disease, 11th edition');
  const E=(t:any)=>String(t).replace(/[&<>"]/g,(c:string)=>(({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'} as Rec)[c]));
  const SKB='<div class="zsk" role="status" aria-label="Loading chapter"><i class="h"></i><i class="xs"></i><i></i><i></i><i class="s"></i><i class="b"></i><i></i><i class="s"></i><i></i><i class="xs"></i><i></i><i class="s"></i></div>',SKH='<div class="zsk" role="status" aria-label="Loading textbook"><i class="h"></i><i class="xs"></i><div class="zsk-grid">'+'<i></i>'.repeat(6)+'</div></div>';
  let IDX:any=null,tok=0,cur:any=null,tkr:any=0,hf='all',hq='',lf=0,rf=0;
@@ -86,8 +86,8 @@ type Rec=Record<string,any>;
   else if(!(Po[l.id]>.02))lab='Start reading';
   const lp=l?Math.round((Po[l.id]||0)*100):0,sh=lab==='Continue reading'&&lp>0;
   const fl=[['all','All',C.length],['prog','In progress',ip],['unread','Unread',C.length-nd],['read','Read',nd]];
-  T.innerHTML=`<div class="tbhero" data-n="R"><div class="tbeyebrow">Robbins · 11th edition</div><h2>${E(IDX.title)}</h2><p>${C.length} chapters, cleaned for reading and linked to your question bank.</p>
-   <div class="tbstats"><div><b>${nd}<small> / ${C.length}</small></b><span>chapters read</span></div><div><b>${ip}</b><span>in progress</span></div><div><b>${left?fmtMin(left):'Done'}</b><span>${left?'reading left':'everything read'}</span></div></div>
+  T.innerHTML=`<div class="tbhero">
+   <p class="tbline">${nd} of ${C.length} chapters read · ${ip} in progress · ${left?fmtMin(left)+' reading left':'everything read'}</p>
    <div class="tbmeter" role="img" aria-label="${pct}% of chapters read"><i style="width:${pct}%"></i></div><small>${pct}% complete</small></div>`
    +(l?`<a class="tbcont" href="#/textbook/${l.id}"><span class="tbcont-t"><small>${lab}</small>Ch ${l.n} · ${E(l.title)}${sh?`<span class="tbpb" role="img" aria-label="${lp}% read"><i style="width:${lp}%"></i></span>`:''}</span><span class="tbcont-go">${sh?lp+'% ':''}›</span></a>`:'')
    +`<div class="tbtools"><label class="tbsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="tbq" type="search" placeholder="Search chapters, e.g. inflammation or 5" value="${E(hq)}" autocomplete="off" aria-label="Search chapters"></label>
@@ -102,7 +102,7 @@ type Rec=Record<string,any>;
   if(i<0){homeK();return}
   const c=C[i],pv=C[i-1],nx=C[i+1];cur=c.id;T.classList.add('tbreading');T.closest('.view')?.classList.add('tb-on');/* reading: the landing banner steps aside (pagebanner.css) */try{zzStore.setItem('tbLast',c.id)}catch(e){}
   const bar=`<div class="tbbar"><a href="${pv?'#/textbook/'+pv.id:'#/textbook'}" ${pv?'':'aria-disabled="true"'}>‹ ${pv?'Ch '+pv.n:'Previous'}</a><a href="#/textbook">All chapters</a><a href="${nx?'#/textbook/'+nx.id:'#/textbook'}" ${nx?'':'aria-disabled="true"'}>${nx?'Ch '+nx.n:'Next'} ›</a></div>`;
-  T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><div class="tbeyebrow">Chapter ${c.n}</div><h2>${E(c.title)}</h2><div class="tbch-m"><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
+  T.innerHTML=bar+`<header class="tbch" data-n="${c.n}"><h2>${E(c.title)}</h2><div class="tbch-m"><span>Chapter ${c.n}</span><span>pp. ${c.pages?c.pages[0]+'–'+c.pages[1]:''}</span><span>~${c.min} min read</span><span>${c.sections} sections</span><span>${c.figs} figures</span><span>${c.tables} tables</span></div><div class="tbacts"><button type="button" class="tbdone" data-done="${c.id}" aria-pressed="${!!D[c.id]}">${D[c.id]?'✓ Read':'Mark as read'}</button><button type="button" class="tbdone" data-hl="1" aria-pressed="${!J('tbSet').off}">✎ Notes highlights</button></div></header><div id="tbbody">${SKB}</div>`+bar;
   T.classList.toggle('nohl',!!J('tbSet').off);document.title='Ch '+c.n+' | Textbook | Patholo_zzee';window.scrollTo(0,0);
   try{const h:string=await (window as any).zzChapter(c.id);if(my!==tok)return;{const bd=T.querySelector('#tbbody');bd.innerHTML=h;bd.dataset.ch=c.id;window.Annot&&Annot.tbAttach&&Annot.tbAttach()}
    if(p[2]&&goBlock(p[2],p[3],my))return;const s=J('tbPos')[c.id];if(!resume(c.id,s,my)&&s>.02&&s<.97)setTimeout(()=>{if(my===tok)scrollTo(0,s*(document.documentElement.scrollHeight-innerHeight))},60);onScroll();layout(true)}

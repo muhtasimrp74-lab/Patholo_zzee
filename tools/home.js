@@ -180,7 +180,7 @@
 				prev = t;
 				if (run > best) best = run;
 			});
-			return "<section class=\"nh-hmc nh-prog\" style=\"--w:" + W + "\"><p class=\"nh-k\">STUDY ACTIVITY</p><div class=\"nh-hmw\"><div class=\"nh-hml\"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class=\"nh-hmb\"><div class=\"nh-hmm\">" + mon + "</div><div class=\"nh-hmg\" role=\"img\" aria-label=\"Study activity over the last " + W + " weeks\">" + cells + "</div></div></div><div class=\"nh-hmf\"><div class=\"nh-hms\"><span><b>" + act + "</b>active days</span><span><b>" + wk + "</b>this week</span><span><b>" + best + "</b>longest run</span><span><b>" + tot + "</b>actions</span></div><p class=\"nh-hmk\">Less <i class=\"hm l0\"></i><i class=\"hm l1\"></i><i class=\"hm l2\"></i><i class=\"hm l3\"></i><i class=\"hm l4\"></i> More</p></div></section>";
+			return "<section class=\"nh-hmc nh-prog\" style=\"--w:" + W + "\"><p class=\"nh-k\">Study activity</p><div class=\"nh-hmw\"><div class=\"nh-hml\"><span>Mon</span><span>Wed</span><span>Fri</span></div><div class=\"nh-hmb\"><div class=\"nh-hmm\">" + mon + "</div><div class=\"nh-hmg\" role=\"img\" aria-label=\"Study activity over the last " + W + " weeks\">" + cells + "</div></div></div><div class=\"nh-hmf\"><div class=\"nh-hms\"><span><b>" + act + "</b>active days</span><span><b>" + wk + "</b>this week</span><span><b>" + best + "</b>longest run</span><span><b>" + tot + "</b>actions</span></div><p class=\"nh-hmk\">Less <i class=\"hm l0\"></i><i class=\"hm l1\"></i><i class=\"hm l2\"></i><i class=\"hm l3\"></i><i class=\"hm l4\"></i> More</p></div></section>";
 		}
 		const wrap = document.createElement("div");
 		wrap.id = "nh";
@@ -218,24 +218,23 @@
 				}
 			}
 			const pace = days > 0 ? Math.ceil((tot - read) / days) : 0;
-			let h = "<section class=\"nh-banner\" aria-labelledby=\"nh-h1\"><div class=\"nh-bn-pic\"><picture><source media=\"(max-width:640px)\" srcset=\"icons/hero-lab-m.webp\" width=\"600\" height=\"671\"><img src=\"icons/hero-lab.webp\" width=\"1672\" height=\"940\" alt=\"\" fetchpriority=\"high\" decoding=\"async\"></picture></div><div class=\"nh-bn-in\"><div class=\"nh-bn-t\"><p class=\"nh-eb\">NMC viva list · Robbins 11th</p><h1 id=\"nh-h1\">Pathology learning for viva and written exams</h1><p class=\"nh-bn-s\">Patholo_zzee brings " + tot + " questions with answers, MCQs and the Robbins textbook together. Read. Recall. Answer.</p><a class=\"nh-bn-cta\" href=\"#/qa\">Explore Pathology</a></div></div></section>";
+			let h = "<section class=\"nh-banner\" aria-labelledby=\"nh-h1\"><div class=\"nh-bn-in\"><div class=\"nh-bn-t\"><p class=\"crumb\">Patholo_zzee · NMC viva list · Robbins 11th edition</p><h1 id=\"nh-h1\">Pathology learning for viva and written exams</h1><p class=\"nh-bn-s\">" + tot.toLocaleString("en-US") + " viva and written questions with answers, MCQs and the Robbins textbook, arranged in NMC viva list order.</p><p class=\"nh-bn-b\"><a class=\"nh-bn-cta\" href=\"#/qa\">Explore Pathology</a><a class=\"nh-bn-lk\" href=\"#/questions\">Browse all questions</a></p></div></div></section>";
 			h += "<div class=\"nh-w\"><header class=\"nh-hero nh-hero-s\">";
-			h += "<div class=\"nh-chips\"><span class=\"nh-chip" + (doneToday ? " on" : "") + "\"><b>" + sn + "</b> day streak" + (doneToday ? " · done today" : sn ? " · study today to keep it" : "") + "</span>";
-			h += "<span class=\"nh-chip\"><b>" + tot + "</b> questions</span>";
-			h += "</div></header>";
+			h += "<p class=\"nh-line\">" + sn + " day streak" + (doneToday ? " · done today" : sn ? " · study today to keep it" : "") + " · " + tot.toLocaleString("en-US") + " questions · " + [...document.querySelectorAll(".view")].filter((v) => v.querySelector("article.card")).length + " chapters</p>";
+			h += "</header>";
 			h += "<section class=\"nh-top\"><div class=\"nh-start\">";
 			const last = (S.recent || []).map((i) => BY[i]).filter(Boolean)[0];
 			if (last) {
 				const lt = TR[last[3]] || [];
-				h += "<p class=\"nh-k\">CONTINUE WHERE YOU LEFT OFF</p><p class=\"nh-crumb\">Q." + NUM[last[3]] + " · " + kind(last) + (CH[cidx[lt[0]]] ? " · " + esc2(CH[cidx[lt[0]]][1]) : "") + "</p><h2>" + esc2(last[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(last) + "\">Continue</a>" + (nxt && nxt[3] !== last[3] ? "<a href=\"" + lnk(nxt) + "\">Next unread</a>" : "") + (mq.sv ? "<a href=\"#/mcqs/run\">Resume MCQ session</a>" : "") + (tbCur ? "<a href=\"#/textbook/" + tbCur.id + "\">Textbook, Ch " + tbCur.n + "</a>" : "") + "</div>";
+				h += "<p class=\"nh-k\">Continue where you left off</p><p class=\"nh-crumb\">Q." + NUM[last[3]] + " · " + kind(last) + (CH[cidx[lt[0]]] ? " · " + esc2(CH[cidx[lt[0]]][1]) : "") + "</p><h2>" + esc2(last[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(last) + "\">Continue</a>" + (nxt && nxt[3] !== last[3] ? "<a href=\"" + lnk(nxt) + "\">Next unread</a>" : "") + (mq.sv ? "<a href=\"#/mcqs/run\">Resume MCQ session</a>" : "") + (tbCur ? "<a href=\"#/textbook/" + tbCur.id + "\">Textbook, Ch " + tbCur.n + "</a>" : "") + "</div>";
 			} else {
-				h += "<p class=\"nh-k\">START HERE</p>";
+				h += "<p class=\"nh-k\">Start here</p>";
 				if (nxt) {
 					const t = TR[nxt[3]];
 					h += "<p class=\"nh-crumb\">Q." + NUM[nxt[3]] + " · " + kind(nxt) + " · " + esc2(CH[cidx[t[0]]][1]) + " → " + esc2(t[1]) + "</p><h2>" + esc2(nxt[1]) + "</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"" + lnk(nxt) + "\">" + (read ? "Continue studying" : "Begin studying") + "</a><a href=\"#/questions\">Browse all questions</a><a href=\"#\" id=\"nhrnd\">Random unread</a></div>";
 				} else h += "<h2>Every question has been read.</h2><div class=\"nh-b\"><a class=\"nh-go\" href=\"#/practice\">Rapid Recall</a><a href=\"#/questions\">Browse all questions</a></div>";
 			}
-			h += "</div><div class=\"nh-prog\"><p class=\"nh-k\">OVERALL PROGRESS</p><div class=\"nh-pc\">" + pc + "<small>%</small></div>" + bar(pc) + "<p class=\"nh-mu\">" + read + " / " + tot + " questions read</p>";
+			h += "</div><div class=\"nh-prog\"><p class=\"nh-k\">Overall progress</p><div class=\"nh-pc\">" + pc + "<small>%</small></div>" + bar(pc) + "<p class=\"nh-mu\">" + read + " / " + tot + " questions read</p>";
 			h += "<div class=\"nh-split\"><div><span>Viva</span><b>" + vr + "<small> / " + VQ.length + "</small></b>" + bar(pct(vr, VQ.length)) + "</div><div><span>Written</span><b>" + wr + "<small> / " + WQ.length + "</small></b>" + bar(pct(wr, WQ.length)) + "</div></div></div></section>";
 			const plan = [];
 			if (due > 0) plan.push([
@@ -280,9 +279,9 @@
 				"#/textbook/" + tbNext.id,
 				""
 			]);
-			h += "<section class=\"nh-plan\"><div class=\"nh-pl nh-prog\"><p class=\"nh-k\">TODAY'S PLAN</p><ul>" + plan.slice(0, 5).map((p) => "<li><a href=\"" + p[3] + "\"><i class=\"pi " + p[0] + "\"></i><span><b>" + esc2(p[1]) + "</b><small>" + p[2] + "</small></span><em>" + (p[4] !== "" ? p[4] : "→") + "</em></a></li>").join("") + "</ul></div>";
+			h += "<section class=\"nh-plan\"><div class=\"nh-pl nh-prog\"><p class=\"nh-k\">Today's plan</p><ul>" + plan.slice(0, 5).map((p) => "<li><a href=\"" + p[3] + "\"><i class=\"pi " + p[0] + "\"></i><span><b>" + esc2(p[1]) + "</b><small>" + p[2] + "</small></span><em>" + (p[4] !== "" ? p[4] : "→") + "</em></a></li>").join("") + "</ul></div>";
 			h += "</section>";
-			let cd = "<div class=\"nh-ex nh-prog" + (days !== null && days >= 0 && days <= 7 ? " nh-soon" : "") + "\"><p class=\"nh-k\">EXAM COUNTDOWN</p>";
+			let cd = "<div class=\"nh-ex nh-prog" + (days !== null && days >= 0 && days <= 7 ? " nh-soon" : "") + "\"><p class=\"nh-k\">Exam countdown</p>";
 			if (days !== null && days >= 0) cd += "<div class=\"nh-pc\">" + days + "<small> day" + (days === 1 ? "" : "s") + "</small></div><p class=\"nh-mu\">" + (days === 0 ? "Exam day. You have read " + read + " of " + tot + "." : tot - read + " questions left" + (pace ? " → about <b>" + pace + "/day</b>" : "")) + "</p>";
 			else if (days !== null) cd += "<p class=\"nh-mu\">That date has passed. Pick the next exam date.</p>";
 			else cd += "<p class=\"nh-mu\">Set your exam date and the home page works out how many questions to read each day.</p>";

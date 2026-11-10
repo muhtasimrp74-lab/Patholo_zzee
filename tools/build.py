@@ -285,12 +285,6 @@ function emptyHTML(k){const EMPTY_UI={bm:['No bookmarks yet','<path d="M6 3h12v1
 const u=EMPTY_UI[k]||EMPTY_UI.bm;return '<div class="empty"><svg viewBox="0 0 24 24" aria-hidden="true">'+u[1]+'</svg><b>'+u[0]+'</b><p>'+EMPTY[k].replace(/^No [a-z]+ yet\. /,'')+'</p><a class="pill" href="#/topics">Browse topics</a></div>'}
 (function(){
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
-/* reveal on scroll (skips anything already on screen) */
-if('IntersectionObserver' in window&&!RM){document.documentElement.classList.add('js-ready');
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);e.target.classList.add('in');setTimeout(()=>e.target.classList.remove('rv','in'),1000)}),{rootMargin:'0px 0px -6% 0px'});
-const seen=new Map();document.querySelectorAll('.topic,.dc,.part-h,.stats').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight&&el.offsetParent)return;const p=el.parentNode,n=seen.get(p)||0;seen.set(p,n+1);el.style.setProperty('--i',Math.min(n%6,5));el.classList.add('rv');io.observe(el)})}
-/* count-up for numeric hero stats */
-document.querySelectorAll('.stats b').forEach(el=>{const v=+el.textContent;if(!v||RM)return;const t0=performance.now(),D=900;el.textContent='0';(function f(t){const k=Math.min(1,(t-t0)/D);el.textContent=Math.round(v*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f);else el.textContent=v})(t0)});
 /* topic-complete celebration */
 const toast=document.createElement('div');toast.className='toast';toast.setAttribute('role','status');toast.setAttribute('aria-live','polite');document.body.appendChild(toast);let tt;
 function say(h){toast.innerHTML='<span class="tk"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></span><span>'+h+'</span>';toast.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove('on'),3600)}
@@ -321,19 +315,16 @@ section.part{margin:0 0 30px}.part-h{display:flex;align-items:center;gap:14px;fl
 """
 s = re.sub(r'@font-face\{font-family:"(?:Plus Jakarta Sans|Source Sans 3)".*?\}\n?', '', s)
 s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='utf8').read() + open(os.path.join(HERE, 'premium.css'), encoding='utf8').read() + '</style>', 1)
+s = re.sub(r'@font-face\{font-family:"(?:Inter|Newsreader|Hanken Grotesk|DM Serif Display)".*?\}\n?', '', s)
 H1 = '<h1>Viva Prep —<br>Read.<br>Recall. Answer.</h1>'
 assert H1 in s
-s = s.replace(H1, '<p class="eyebrow">NMC viva list · Robbins 11th</p><h1>Pathology<em>Read. Recall. Answer.</em></h1>', 1)
-STATS = '<div class="stats"><div><b>%d</b><span>Questions</span></div><div><b>%d</b><span>Topics</span></div><div><b>NMC</b><span>Question order</span></div><div><b>11th</b><span>Robbins edition</span></div></div>' % (total, len(order))
-T = '<ul id="res"></ul></div></div></div></div><main'
-assert T in s
-s = s.replace(T, '<ul id="res"></ul></div></div></div>' + STATS + '</div><main', 1)
+s = s.replace(H1, '<h1>Pathology</h1>', 1)
 s = s.replace('content="#000000" media', 'content="#1C1219" media').replace('content="#f7f4f2" media', 'content="#F8F3EE" media')
 # the API lives on its own origin when the site is served from GitHub Pages (window.ZZ_API), so connect-src must name it:
 # with 'self' alone the browser blocks every sign-in, plan and paid-content request there and the app reads it as offline
 CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://patholo-zzee-app.muhtasimrp74.workers.dev; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"><meta name=\"referrer\" content=\"no-referrer\">"
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
-POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'tutorial.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'motion.js'), encoding='utf8').read()
+POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'tutorial.js'), encoding='utf8').read()
 assert '</script>' not in POLISH_JS
 s = s.replace("<script>\nif ('serviceWorker'", '<script>window.TBALIAS=' + open(os.path.join(HERE, 'textbook_block_alias.json'), encoding='utf8').read().strip() + ';</script>\n<script>\n' + POLISH_JS + '\n</script>\n<script src="annot/annot.js"></script>\n<script src="welcome.js" defer></script>\n<script>\nif (\'serviceWorker\'', 1)
 assert s.count('</head>') == 1
@@ -369,22 +360,24 @@ s = s.replace(_OLDE, "<small>${esc(d[4])}</small></a></div>`).join('')||'<p clas
 # ---- premium polish: wordmark, trust line, social meta
 s, nlogo = re.subn(r'(<a class="logo"[^>]*><img[^>]*>)</a>', lambda m: m.group(1) + '<span class="wm">Patholo<i>_zzee</i></span></a>', s, flags=re.S)
 assert nlogo >= 1
-TR_OLD = 'Blood Vessels</a></div></div><div class="phones">'
-assert TR_OLD in s
-s = s.replace(TR_OLD, 'Blood Vessels</a></div><p class="trust"><span>Works offline</span><span>Private, stays on your device</span><span>No sign-up</span></p></div><div class="phones">', 1)
+_PH = '<div class="phones"><div class="ph"><div class="phh"><b>Search all questions</b><span id="rc"></span></div>'
+assert s.count(_PH) == 1 and s.count('<ul id="res"></ul></div></div></div></div><main') == 1
+s = s.replace(_PH, '<div class="zz-legacy-search" hidden><span id="rc"></span>', 1).replace('<ul id="res"></ul></div></div></div></div><main', '<ul id="res"></ul></div></div></div><main', 1)
+s, _nb = re.subn(r'<div class="btns"><a class="blk"[^>]*><small>Browse</small>[^<]*</a><a class="blk"[^>]*><small>Begin with</small>[^<]*</a></div>', '', s, count=1)
+assert _nb == 1, 'hidden hero button strip not found'
 SITE = 'https://muhtasimrp74-lab.github.io/Patholo_zzee/'
-# links shared on WhatsApp and elsewhere point at the main student link (the Cloudflare app), and its picture is the current hero;
-# a new file name (og-2026.jpg) makes WhatsApp and Facebook fetch it fresh instead of reusing the old cached picture
+# links shared on WhatsApp and elsewhere point at the main student link (the Cloudflare app); the picture is a plain typographic
+# card (logo, name, one line) written by tools/make_og.py. A new file name makes WhatsApp and Facebook fetch it fresh.
 SHARE = 'https://patholo-zzee-app.muhtasimrp74.workers.dev/'
 DESC = '%d pathology questions with answers (viva and written), MCQs and the Robbins textbook, in NMC order. Works offline.' % total
 META = ('<meta name="description" content="%s"><link rel="canonical" href="%s">'
  '<meta property="og:type" content="website"><meta property="og:site_name" content="Patholo_zzee">'
  '<meta property="og:title" content="Patholo_zzee: pathology learning for viva and written exams"><meta property="og:description" content="%s">'
- '<meta property="og:url" content="%s"><meta property="og:image" content="%sicons/og-2026.jpg"><meta property="og:image:type" content="image/jpeg">'
+ '<meta property="og:url" content="%s"><meta property="og:image" content="%sicons/og-card.png"><meta property="og:image:type" content="image/png">'
  '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
- '<meta property="og:image:alt" content="Patholo_zzee: pathology learning for viva and written exams. Read. Recall. Answer.">'
+ '<meta property="og:image:alt" content="Patholo_zzee: pathology learning for viva and written exams.">'
  '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Patholo_zzee: pathology learning for viva and written exams">'
- '<meta name="twitter:description" content="%s"><meta name="twitter:image" content="%sicons/og-2026.jpg">') % (DESC, SHARE, DESC, SHARE, SHARE, DESC, SHARE)
+ '<meta name="twitter:description" content="%s"><meta name="twitter:image" content="%sicons/og-card.png">') % (DESC, SHARE, DESC, SHARE, SHARE, DESC, SHARE)
 s = s.replace('<meta name="referrer" content="no-referrer">', '<meta name="referrer" content="no-referrer">' + META, 1)
 assert 'og:image' in s
 for _t in OLD_CH:  # breadcrumb of the original topic pages: show the Robbins chapter, not 01..15
@@ -439,6 +432,14 @@ assert s.count('<footer>Patholo_zzee</footer>') == 1
 _k = s.rindex('</body>'); s = s[:_k] + '<script>' + _asset('sync.js') + '</script><script>' + _asset('acctui.js') + '</script>' + s[_k:]  # listeners only: end of body
 s = s.replace('<footer>Patholo_zzee</footer>', '<footer>Patholo_zzee · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · <a href="refund.html">Refunds</a> · <button type="button" class="zz-acct" data-zz-act="account">Account</button></footer>')
 s = s.replace('</head><body>', '<style>' + _asset('zz.css') + _asset('refine.css') + _asset('qol.css') + _asset('fx.css') + _asset('mcq_glass.css') + _asset('pager.css') + _asset('liquid.css') + '</style></head><body><script>(function(h){if(window.ZZ_API===undefined)window.ZZ_API=/(^|\\.)github\\.io$/.test(h)||h==="patholo-zzee.muhtasimrp74.workers.dev"?"https://patholo-zzee-app.muhtasimrp74.workers.dev/":""})(location.hostname)</script><script>window.ZZ_MANIFEST=null</script><script>' + _asset('account.js') + '</script><script>' + _asset('chunks.js') + '</script><script>' + _asset('pay.js') + '</script>', 1)
+assert s.count('</head><body>') == 1
+s = s.replace('</head><body>', '<style id="zz-plain">' + _asset('plain.css') + '</style></head><body>', 1)   # loaded last on purpose: see the header of plain.css
+for _f, _fb in (('Hanken Grotesk', 'system-ui'), ('Inter', 'system-ui'), ('Newsreader', 'Georgia'), ('DM Serif Display', 'Georgia')):   # dropped web fonts: stacks fall through to the system fonts
+    s = re.sub(r'''(["'])%s\1\s*,\s*''' % _f, '', s); s = re.sub(r'''(["'])%s\1(?=\s*[;}!])''' % _f, _fb, s)
+# plain look: pill buttons become 8px, large card radii become 12px (px values only; 50% circles and small radii are kept)
+def _radius(m):
+    return m.group(1) + re.sub(r'(?<![\w.])(\d+(?:\.\d+)?)px', lambda n: ('8px' if float(n.group(1)) >= 99 else '12px' if float(n.group(1)) > 12 else n.group(0)), m.group(2))
+s = re.sub(r'(border(?:-(?:top|bottom|start|end)-(?:left|right|start|end))?-radius:)([^;}"\'`<]+)', _radius, s)
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 import re as _re
 s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)
@@ -473,5 +474,6 @@ def _counts(path):   # live totals for the copy ({{ZZ_Q}}, {{ZZ_MCQ}}, {{ZZ_PAPE
 _counts(os.path.join(HERE, '..', 'index.full.html'))
 import mcq_enrich; print('mcq enrich:', mcq_enrich.apply(os.path.join(HERE, '..', 'index.full.html')))   # WHY explanations quoted from the notes (private, gated with the MCQs)
 import gate; gate.gate()
+import strip_comments; print('comments stripped:', strip_comments.apply(os.path.join(HERE, '..')))   # generated output only; sources keep theirs
 import csp; csp.apply(os.path.join(HERE, '..'))
 import sw_stamp; print('sw VERSION:', sw_stamp.stamp())   # last: the service worker VERSION is a hash of what it caches (never bumped by hand)   # last: hash every inline script into the CSP (no 'unsafe-inline' scripts)

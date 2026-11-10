@@ -9,7 +9,7 @@
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    VERSION is written by tools/sw_stamp.py at build time: a hash of index.html and every precached file, so it changes exactly
    when the site does (never edit it by hand). */
-const VERSION = 'pathviva-zzee-db7734c225';
+const VERSION = 'pathviva-zzee-1525f00c7d';
 
 const CORE = [
   'index.html',
@@ -26,32 +26,6 @@ const CORE = [
   'icons/icon-512.png',
   'icons/icon-maskable-192.png',
   'icons/icon-maskable-512.png',
-  'icons/hero-lab.webp',
-  'icons/hero-lab-900.webp',
-  'icons/hero-lab-m.webp',
-  'icons/footer-banner.webp',
-  'icons/footer-banner-900.webp',
-  'icons/pb-questions.webp',
-  'icons/pb-questions-900.webp',
-  'icons/pb-chapters.webp',
-  'icons/pb-chapters-900.webp',
-  'icons/pb-mcqs.webp',
-  'icons/pb-mcqs-900.webp',
-  'icons/pb-textbook.webp',
-  'icons/pb-textbook-900.webp',
-  'icons/pb-menu.webp',
-  'icons/pb-menu-900.webp',
-  'fonts/inter-latin-400-normal.woff2',
-  'fonts/inter-greek-400-normal.woff2',
-  'fonts/inter-greek-500-normal.woff2',
-  'fonts/inter-greek-600-normal.woff2',
-  'fonts/dm-serif-display-latin-400-normal.woff2',
-  'fonts/newsreader-latin-500-italic.woff2',
-  'fonts/newsreader-latin-600-normal.woff2',
-  'fonts/hanken-grotesk-latin-400-normal.woff2',
-  'fonts/hanken-grotesk-latin-500-normal.woff2',
-  'fonts/hanken-grotesk-latin-600-normal.woff2',
-  'fonts/hanken-grotesk-latin-700-normal.woff2',
   'fonts/caveat-latin-500-normal.woff2',
   'fonts/caveat-latin-700-normal.woff2'
 ];

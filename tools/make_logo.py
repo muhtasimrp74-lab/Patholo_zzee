@@ -53,12 +53,6 @@ with sync_playwright() as p:
     png(pg, 'icons/_apple.svg', 'icons/apple-touch-icon.png', 180, False)
     png(pg, 'icons/favicon.svg', 'icons/favicon-32.png', 32); png(pg, 'icons/favicon.svg', 'icons/favicon-16.png', 16)
     png(pg, 'icons/logo.svg', 'icons/logo-1024.png', 1024)
-    # share image 1200x630
-    logo = open(os.path.join(ROOT, 'icons/logo.svg'), encoding='utf8').read().replace('<svg ', '<svg width="470" height="470" ', 1)
-    fonts = ''.join('@font-face{font-family:"%s";font-weight:%s;src:url("file://%s/fonts/%s.woff2")}' % (n, w, ROOT, f) for n, w, f in (('DM Serif Display', 400, 'dm-serif-display-latin-400-normal'), ('Hanken Grotesk', 400, 'hanken-grotesk-latin-400-normal'), ('Hanken Grotesk', 600, 'hanken-grotesk-latin-600-normal'), ('Caveat', 700, 'caveat-latin-700-normal')))
-    html = '<html><head><style>%s body{margin:0;width:1200px;height:630px;background:radial-gradient(900px 600px at 18%% 30%%,#5e1424,#2c0711 70%%);font-family:"Hanken Grotesk";color:#F3E6CF;display:flex;align-items:center;gap:64px;padding:0 90px;box-sizing:border-box}h1{font:400 92px/1 "DM Serif Display";margin:0 0 18px}p{margin:0;font:400 34px/1.35 "Hanken Grotesk";color:#E4D3B8}.h{font:700 54px "Caveat";color:#D6AE68;margin-top:26px}.s{filter:drop-shadow(0 18px 40px rgba(0,0,0,.5))}</style></head><body><div class="s">%s</div><div><h1>Patholozzee</h1><p>257 pathology viva and written<br>questions with answers, in NMC order.</p><div class="h">Read. Recall. Answer.</div></div></body></html>' % (fonts, logo)
-    tmp = os.path.join(ROOT, '_og.html'); open(tmp, 'w', encoding='utf8').write(html)
-    pg.set_viewport_size({'width': 1200, 'height': 630}); pg.goto('file://' + tmp); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(600); os.remove(tmp)
-    pg.screenshot(path=os.path.join(ROOT, 'icons/og-image.png')); b.close()
+    b.close()   # the share image is written by tools/make_og.py (plain typographic card)
 for f in ('icons/_maskable.svg', 'icons/_apple.svg'): os.remove(os.path.join(ROOT, f))
 print('logo assets built')

@@ -10,13 +10,13 @@ const TYW=QMETA.type||{},esc3=t=>String(t).replace(/[&<>"]/g,m=>({'&':'&amp;','<
 const by={};DATA.forEach(d=>(by[d[2]]=by[d[2]]||[]).push(d));
 const kind=d=>TYW[d[3]]==='B'?'b':TYW[d[3]]==='W'?'w':'v';
 const hero=document.createElement('section');hero.className='qa-hero';
-hero.innerHTML='<div class="qa-top"><div><p class="qa-k">Chapters</p><h2>Every chapter, every question</h2><p class="qa-s">Viva and written questions sit together on each chapter page, in Robbins order, with full answers.</p></div><a class="qa-go" id="qa-next" href="#/">Continue</a></div><div class="qa-stats" id="qa-stats"></div><label class="qa-sr"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="search" id="qa-q" placeholder="Search chapters or questions" aria-label="Search chapters or questions" autocomplete="off"></label><div class="qa-res" id="qa-res" hidden></div>';
+hero.innerHTML='<div class="qa-top"><div><h2 class="qa-h2">All chapters</h2><p class="qa-s">Viva and written questions sit together on each chapter page, in Robbins order, with full answers.</p></div><a class="qa-go" id="qa-next" href="#/">Continue</a></div><div class="qa-stats" id="qa-stats"></div><label class="qa-sr"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="search" id="qa-q" placeholder="Search chapters or questions" aria-label="Search chapters or questions" autocomplete="off"></label><div class="qa-res" id="qa-res" hidden></div>';
 QAV.insertBefore(hero,QAV.querySelector('#pchips')||QAV.firstChild);
 const cards=[...QAV.querySelectorAll('a.topic')];
 function upd(){
  const L=new Set(S.learned||[]);let n=0,l=0,v=0,w=0,b=0;
  DATA.forEach(d=>{n++;if(L.has(d[3]))l++;const k=kind(d);k==='b'?b++:k==='w'?w++:v++});
- hero.querySelector('#qa-stats').innerHTML=[[n,'questions'],[cards.length,'chapters'],[Math.round(100*l/Math.max(n,1))+'%','learned'],[v+b,'viva'],[w+b,'written']].map(x=>'<div><b>'+x[0]+'</b><span>'+x[1]+'</span></div>').join('');
+ hero.querySelector('#qa-stats').textContent=[[n.toLocaleString('en-US'),'questions'],[cards.length,'chapters'],[Math.round(100*l/Math.max(n,1))+'%','learned'],[v+b,'viva'],[w+b,'written']].map(x=>x[0]+' '+x[1]).join(' \u00B7 ');
  const nx=DATA.find(d=>!L.has(d[3])),go=hero.querySelector('#qa-next');
  if(nx){go.href='#/'+nx[2]+'/'+nx[3];go.textContent=l?'Continue · '+esc3(nx[4]):'Start · '+esc3(nx[4])}else{go.href='#/';go.textContent='All learned'}
  cards.forEach(c=>{const t=c.getAttribute('href').slice(2),a=by[t]||[],r=a.filter(d=>L.has(d[3])).length;let m=c.querySelector('.qa-mini');

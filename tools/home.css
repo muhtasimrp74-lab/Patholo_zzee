@@ -190,32 +190,21 @@
 #nh .nh-b a.nh-go{min-height:48px;display:inline-flex;align-items:center}
 .act span,.act.sh span,#bnav a,.qf-body h4,table th,h4.tsub,.tw th{font-size:12px!important}
 
-/* ---- homepage hero banner (home only; photo is local: icons/hero-lab*.webp) ---- */
-.nh-banner{position:relative;height:clamp(420px,32vw,500px);background:#1D181B;color:#FFFDFA;overflow:hidden}
-.nh-bn-pic{position:absolute;inset:0}
-.nh-bn-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,24,27,.8) 0,rgba(29,24,27,.5) 30%,rgba(29,24,27,0) 56%)}
-.nh-bn-pic picture,.nh-bn-pic img{display:block;width:100%;height:100%}
-.nh-bn-pic img{object-fit:cover;object-position:50% 17%}
-.nh-bn-in{position:relative;z-index:1;height:100%;max-width:var(--w);margin:0 auto;padding:0 max(var(--gut),env(safe-area-inset-left,0px));display:flex;align-items:center}
-.nh-bn-t{max-width:min(470px,46%)}
-.nh-banner .nh-eb{color:#D98FA8;margin-bottom:12px}
-.nh-banner h1{margin:0 0 14px;font:500 clamp(1.9rem,3.2vw,2.75rem)/1.1 var(--disp);letter-spacing:-.02em;color:#FFFDFA}
-.nh-bn-s{margin:0 0 26px;max-width:40ch;font-size:1.02rem;line-height:1.55;color:#E8D9E3}
-#nh a.nh-bn-cta{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border-radius:12px;background:#7A1F36;color:#FFFFFF;font:600 .98rem var(--body);transition:background .15s}
-#nh a.nh-bn-cta:hover{background:#93304A}
-#nh a.nh-bn-cta:focus-visible{outline:2px solid #FFFDFA;outline-offset:3px}
-.nh-hero-s{padding:22px 0 8px}
-@media(max-width:1000px){.nh-banner{height:clamp(360px,46vw,420px)}.nh-bn-pic img{object-position:50% 15%}.nh-bn-t{max-width:50%}}
-@media(max-width:640px){
- .nh-banner{height:auto}
- .nh-bn-pic{position:relative;height:min(78vw,340px)}
- .nh-bn-pic::after{background:linear-gradient(180deg,rgba(29,24,27,0) 55%,#1D181B 100%)}
- .nh-bn-pic img{object-position:50% 12%}
- .nh-bn-in{height:auto;padding-top:4px;padding-bottom:30px}
- .nh-bn-t{max-width:none}
- .nh-banner h1{font-size:clamp(1.7rem,7.4vw,2.1rem)}
- #nh a.nh-bn-cta{width:100%;justify-content:center}
-}
+/* ---- homepage header (home only): typographic, no picture: breadcrumb line, serif h1, one-line description, one button + one link ---- */
+.nh-banner{background:transparent;border-bottom:1px solid var(--line)}
+.nh-bn-in{max-width:var(--w,1100px);margin:0 auto;padding:44px var(--gut,20px) 36px;box-sizing:border-box}
+.nh-bn-t{max-width:62ch}
+.nh-banner .crumb{margin:0 0 10px;color:var(--muted);font-size:.9rem}
+.nh-banner h1{margin:0 0 12px;font-family:var(--disp);font-weight:400;font-size:clamp(1.9rem,3.4vw,2.9rem);line-height:1.12;color:var(--navy)}
+.nh-bn-s{margin:0;color:var(--muted);font-size:1.05rem;line-height:1.55}
+.nh-bn-b{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;margin:22px 0 0}
+#nh a.nh-bn-cta{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:8px;background:var(--btn);color:#fff;font-weight:600;text-decoration:none}
+#nh a.nh-bn-cta:hover{background:var(--btnh)}
+#nh a.nh-bn-cta:focus-visible,#nh a.nh-bn-lk:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+#nh a.nh-bn-lk{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.nh-hero-s{padding:18px 0 6px}
+.nh-line{margin:0;color:var(--muted);font-size:.95rem;font-variant-numeric:tabular-nums}
+@media(max-width:640px){.nh-bn-in{padding:28px var(--gut,16px) 26px}.nh-banner h1{font-size:clamp(1.7rem,7.4vw,2.1rem)}#nh a.nh-bn-cta{width:100%;justify-content:center}}
 
 /* More stats: the long sections fold away so Home leads with Continue and today's plan */
 .nh-plan{grid-template-columns:1fr!important}

@@ -288,3 +288,12 @@ To resume C, E, F: allow `registry.npmjs.org` for the session (claude.ai Setting
 - User data: highlights and notes saved on textbook blocks are migrated old id -> new id on load and on restore (tested with old-format fixtures). vivaState, tbDone, tbPos and the other keys are untouched by this work.
 - Not done: C, E, F (see above). Cloudflare needs no change for A, B, D (it publishes the repo root; `index.html`, `textbook/`, `annot/` are served as before).
 - Security: the GitHub token pasted in the chat was never used (repo connection worked) and must be revoked.
+
+## Plain-look pass (2026-11-11, branch `design/de-ai-look`)
+- Look only; questions, answers, MCQs, textbook text, storage keys, routes, offline mode, login and the service worker logic are unchanged (1,404 cards, MCQDATA and DATA compared equal to the previous build; the only text change inside cards is the removed book emoji in the source bar).
+- New: `tools/plain.css` (inlined LAST as `<style id="zz-plain">`; palette, system fonts, flat surfaces, sentence-case labels, no ambient animation), `tools/strip_comments.py` (strips CSS/JS comments from the generated pages after `gate.py`, before the CSP hashes and the SW stamp; sources keep theirs), `tools/make_og.py` (share card `icons/og-card.png`).
+- `tools/build.py`: drops the hidden home hero leftovers (eyebrow, `<em>` tagline, stat strip, reassurance chips, phone mockup; the legacy search nodes `#gq/#res/#rc` stay, hidden, because the router still uses them), the scroll-reveal and count-up script, `motion.js`, the `@font-face` rules of Inter / Newsreader / Hanken Grotesk / DM Serif Display; rewrites literal `border-radius` px values (>= 99px -> 8px, > 12px -> 12px).
+- `tools/src/index.base.html` is untracked (private path), so nothing was edited there; the edits that belong to it are anchored replacements in `build.py`.
+- Effects: `fx.js` `autoTier()` now returns 1 (Minimal). WebGL, canvas, loupe, glare/tilt, heartbeat and the progress ring run only when Full is chosen in Menu > Display. Pathway diagrams are static.
+- `tools/hand_edits.json`: the banner padding hunk was removed (its target CSS is gone); the motion-script hunk is re-anchored on the end of `tutorial.js`.
+- Not done: the mid-sentence bold in answers (three passes, `format_answers.py`, `format_answers2.py`, `format_answers3.py`, and `format_answers2.py` also rewrites the private `answers_by_id.json`).

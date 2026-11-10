@@ -1,0 +1,139 @@
+
+/* ===== plain.css: the plain-look layer. Loaded LAST (after every other stylesheet in the page) so that one block can undo the
+   decorative styling spread over the older layers without editing each of them: neutral palette with burgundy as the only accent,
+   system fonts, 8px buttons / 12px cards, no gradients, no glow shadows, one 1px border on cards, sentence-case labels, no ambient
+   animation. Content, behaviour and layout logic are not touched here.
+   Specificity: the older layers use ids and !important freely. ":is(*,#zzp#zzp)" matches every element (because of the *) but
+   counts as two ids, so a rule written with it wins without having to copy each older selector. #zzp does not exist. ===== */
+
+/* ---- palette (18): neutral near-white / neutral paper / neutral dark; burgundy stays the single accent ---- */
+html:root{--bg:#FAFAF9;--panel:#FFFFFF;--text:#1B1B1D;--navy:#1B1B1D;--muted:#5C5C63;--line:#E3E3E0;--line2:#CFCFCB;--soft:#F1F1EF;--chip:#F1F1EF;
+ --accbg:#F4E9EC;--infobg:#F3F3F1;--paper:#FFFFFF;--ivory:#FAFAF9;--blue:#7A1F36;--lbl:#7A1F36;--btn:#7A1F36;--btnh:#93304A;
+ --zz-surface:#FFFFFF;--zz-sunken:#FAFAF9;--zz-ink:#1B1B1D;--zz-ink-2:#5C5C63;--zz-hair:#E3E3E0;--zz-hair-2:#CFCFCB}
+html:root[data-theme=light][data-tone=sepia]{--bg:#F3EFE6;--panel:#FAF7F0;--text:#2B2620;--navy:#2B2620;--muted:#5E574C;--line:#DCD5C6;--line2:#C9C1B0;--soft:#EAE5D9;--chip:#EAE5D9;
+ --accbg:#EADCDA;--infobg:#EAE5D9;--zz-surface:#FAF7F0;--zz-sunken:#F3EFE6;--zz-ink:#2B2620;--zz-ink-2:#5E574C;--zz-hair:#DCD5C6;--zz-hair-2:#C9C1B0}
+html:root[data-theme=dark]:not([data-tone=fluo]){--bg:#161618;--panel:#1F1F22;--text:#EDEDEE;--navy:#EDEDEE;--muted:#ABABB2;--line:#333338;--line2:#48484E;--soft:#29292D;--chip:#29292D;
+ --accbg:#35252B;--infobg:#29292D;--zz-surface:#1F1F22;--zz-sunken:#161618;--zz-ink:#EDEDEE;--zz-ink-2:#ABABB2;--zz-hair:#333338;--zz-hair-2:#48484E}
+@media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]){--bg:#161618;--panel:#1F1F22;--text:#EDEDEE;--navy:#EDEDEE;--muted:#ABABB2;--line:#333338;--line2:#48484E;--soft:#29292D;--chip:#29292D;
+ --accbg:#35252B;--infobg:#29292D;--zz-surface:#1F1F22;--zz-sunken:#161618;--zz-ink:#EDEDEE;--zz-ink-2:#ABABB2;--zz-hair:#333338;--zz-hair-2:#48484E}}
+
+/* ---- gradients, glass, glow (9, 10): every shared token becomes flat ---- */
+html:root:not([data-tone=fluo]){--g-btn:linear-gradient(var(--btn),var(--btn));--g-pulse:linear-gradient(var(--btn),var(--btn));--g-mist:linear-gradient(var(--panel),var(--panel));
+ --plum:var(--navy);--plum2:var(--blue);--qtint:linear-gradient(var(--panel),var(--panel));--qtint-open:linear-gradient(var(--panel),var(--panel));--mesh:none;--spec:none;
+ --glass:var(--panel);--glass-strong:var(--panel);--glass2:var(--panel);--frost:var(--panel);--glass-in:var(--panel);--glass-bd:var(--line);
+ --sh1:none;--sh2:none;--gsh:none;--hi:none;--ring:0 0 0 0 transparent;--zz-shadow-1:none;--zz-shadow-3:none;--nm-out:none;--nm-in:none;--nm-sm:none;
+ --cs-hi:none;--cs-lo:none;--cs-drop:none;--cs-sheen:none;--cs-slip:none;--cs-edge:var(--line);--cs-hair:transparent;
+ --lg-sheen:none;--lg-rim:none;--lg-rim-sm:none;--lg-tint:var(--panel);--lg-tint-top:var(--panel);--lg-lens:transparent}
+html:root:not([data-tone=fluo]) body .mx:is(*,#zzp#zzp){--gx-pane:var(--panel);--gx-pane-2:var(--panel);--gx-bar:var(--panel);--gx-bar-2:var(--panel);--gx-well:var(--panel);--gx-well-h:var(--soft);--gx-well-lo:var(--soft);
+ --gx-edge:var(--line);--gx-hair:var(--line);--gx-rule:var(--line);--gx-hi:none;--gx-lo:none;--gx-drop:none;--gx-float:none;--gx-jelly-sh:none;--gx-slip:none;--gx-sheen:none;--gx-track:var(--soft);
+ --gx-jelly:linear-gradient(var(--btn),var(--btn));--gx-sel:linear-gradient(var(--accbg),var(--accbg));--gx-sel-bd:var(--blue);--gx-tint:linear-gradient(var(--panel),var(--panel));
+ --gx-ok:linear-gradient(color-mix(in srgb,var(--gx-ok-ink) 14%,var(--panel)),color-mix(in srgb,var(--gx-ok-ink) 14%,var(--panel)));
+ --gx-no:linear-gradient(color-mix(in srgb,var(--gx-no-ink) 14%,var(--panel)),color-mix(in srgb,var(--gx-no-ink) 14%,var(--panel)))}
+html:root:not([data-tone=fluo]) body .zm:is(*,#zzp#zzp){--zm-cream:var(--text);--zm-cream2:var(--muted);--zm-hair:var(--line);--zm-gold:var(--blue);--zm-ox:var(--panel);--zm-ox2:var(--panel)}
+html:root:not([data-tone=fluo]) body #nh .nh-start:is(*,#zzp#zzp){--startbg:var(--panel);--startfg:var(--text);--startmu:var(--muted);--startline:var(--line);--startacc:var(--blue);background:var(--panel)!important;color:var(--text)!important}
+html:root:not([data-tone=fluo]) body #nh .nh-start:is(*,#zzp#zzp) :is(h2,.nh-crumb,.nh-k){color:inherit!important}
+html:root:not([data-tone=fluo]) body #nh .nh-start:is(*,#zzp#zzp) .nh-b a:not(.nh-go){color:var(--blue)!important;border:0!important;background:none!important;padding:0!important;min-height:44px!important;display:inline-flex!important;align-items:center!important;text-decoration:underline!important;text-underline-offset:3px}
+
+/* ---- fonts (19): system stacks; Caveat (handwritten margin notes) is the only web font left ---- */
+html:root{--body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--zz-font:var(--body);
+ --disp:Georgia,"Times New Roman",Times,serif;--zz-display:var(--disp)}
+html:root body :is(h1,h2,.nh-h,.zm-name):is(*,#zzp):not(.ans *):not(#tbbody *){font-family:var(--disp)!important}
+
+/* ---- radii (8): shared tokens (literal px values are rewritten by build.py) ---- */
+html:root{--zz-r-pill:8px;--zz-r-lg:12px;--zz-r-md:8px;--mx-r:12px}
+
+/* ---- page background (4, 18): flat colour, no mesh, no dots, no tissue canvas ---- */
+html:root:not([data-tone=fluo]) body{background:var(--bg)!important;background-image:none!important}
+html:root:not([data-tone=fluo]) body::before,html:root:not([data-tone=fluo]) body::after,html:root:not([data-tone=fluo]) body:has(#v-mcqs:not([hidden]))::after{background:none!important;background-image:none!important;opacity:0!important}
+
+/* ---- shadows (10): none, except keyboard focus; text glow off ---- */
+html body *:is(*,#zzp#zzp#zzp):not(:focus-visible),html body *:is(*,#zzp#zzp#zzp):not(:focus-visible)::before,html body *:is(*,#zzp#zzp#zzp):not(:focus-visible)::after{box-shadow:none!important;text-shadow:none!important}
+html:root body :focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+/* ---- labels (11): sentence case, normal tracking. Answer and textbook text is left out: its metrics must not change (annotations sit on it) ---- */
+html body *:is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *),html body *:is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *)::before,html body *:is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *)::after{text-transform:none!important;letter-spacing:normal!important}
+html body :is(.nh-k,.mx-eb,.qa-k,.sf-k,.tbpart-k,.qf-body h4,.tg,.mx-h)::first-letter{text-transform:uppercase!important}
+
+/* ---- motion (14): the decorative keyframes are redefined as stills (a later @keyframes of the same name replaces the earlier one):
+   list / page fade-ups, shimmer skeletons, pulses. Functional motion (spinner, dialog pop, deep-link flash, cross-fades) is kept.
+   Heartbeat, glare, loupe, WebGL and the progress ring are Full-only effects and Full is no longer the default (fx.js). ---- */
+@keyframes zzrise{from,to{opacity:1;transform:none}}
+@keyframes zzview{from,to{opacity:1;transform:none}}
+@keyframes zz-shine{from,to{background-position:0 0,0 0}}
+@keyframes zzsk{from,to{background-position:0 0}}
+@keyframes zz-pulse{from,to{transform:none}}
+@keyframes zzbob{from,to{transform:none}}
+html:not(.fx-full) body .rv:is(*,#zzp){opacity:1!important;transform:none!important}
+html:not(.fx-full) body .fx-top:is(*,#zzp) :is(svg circle,.fx-ring){display:none!important}
+
+/* ---- gradient fills and gradient-clipped text (9): solid burgundy / flat surfaces ---- */
+html:root body :is(h1 em,.nh-pc,.stats b,.dc .big):is(*,#zzp){background:none!important;-webkit-background-clip:border-box!important;background-clip:border-box!important;-webkit-text-fill-color:currentColor!important;color:var(--navy)!important}
+html:root:not([data-tone=fluo]) body :is(a.pill,button.pill,.nh-go,.qa-go,.gb,.zz-b,.mx-go,.zq-go,.zm-cta,.pb-btn.pb-p,.nh-bn-cta):is(*,#zzp#zzp){background:var(--btn)!important;background-image:none!important;color:#fff!important;border-color:var(--btn)!important}
+html:root:not([data-tone=fluo]) body :is(a.pill,button.pill,.nh-go,.qa-go,.gb,.zz-b,.mx-go,.zq-go,.zm-cta,.pb-btn.pb-p,.nh-bn-cta):is(*,#zzp#zzp):hover{background:var(--btnh)!important}
+html:root:not([data-tone=fluo]) body :is(.bar,.part-h,.card>header,.qi-h,.imp,.ex-y,.tbcont,#bnav .fx-pill,.topic,.dc,.pc,.nh-prog,.nh-card,.nh-t4,.tbhero,.tbch,.tbtile,.qa-hero,.empty,.sf,.sf-hero):is(*,#zzp){background-image:none!important}
+html:root:not([data-tone=fluo]) body .card>header:is(*,#zzp)::before{background:var(--btn)!important;background-image:none!important}
+html:root:not([data-tone=fluo]) body .ring:is(*,#zzp)::before{background-image:linear-gradient(var(--btn),var(--btn))!important}
+
+/* ---- cards (10): one 1px border, no shadow ---- */
+html:root:not([data-tone=fluo]) body :is(.card,.qi,.topic,.dc,.pc,.nh-prog,.nh-start,.nh-card,.nh-t4,.tbtile,.tbcont,.qa-hero,.zm-card,.zm-list,.mx-acc,.mx-day,.mx-tile,.mx-next,.mx-chd,.mx-paper,.empty):is(*,#zzp){border:1px solid var(--line)!important}
+html:root:not([data-tone=fluo]) body .zm-card:is(*,#zzp#zzp){background:var(--panel)!important;background-image:none!important;color:var(--text)!important;margin-top:24px!important}
+
+/* ---- page headers (1, 16): typographic header on the page background ---- */
+html:root body .hero:is(*,#zzp){background:transparent!important;background-image:none!important;color:var(--text)!important;min-height:0!important}
+html:root body :is(.hero,.hero-in):is(*,#zzp)::before,html:root body .hero:is(*,#zzp)::after{display:none!important}
+html:root body .pb:is(*,#zzp){height:auto!important;min-height:0!important;background:transparent!important}
+html:root body .pb-in:is(*,#zzp){height:auto!important;min-height:0!important;display:block!important;padding:36px var(--gut,20px) 30px!important}
+html:root body .pb-in .hero-in:is(*,#zzp){height:auto!important;min-height:0!important;padding:0!important;max-width:64ch!important}
+html:root body .hero-in h1:is(*,#zzp){color:var(--navy)!important;font-weight:400!important}
+html:root body .hero-in :is(.lede,.crumb,.crumb a):is(*,#zzp),html:root body .pb-chips:is(*,#zzp){color:var(--muted)!important}
+html:root body .pb-btn.pb-lk:is(*,#zzp#zzp){color:var(--blue)!important;background:none!important;border:0!important;padding:0!important}
+html:root body :is(.eyebrow,.tbeyebrow,.qa-k):is(*,#zzp){display:none!important}
+@media(max-width:640px){html:root body .pb-in:is(*,#zzp){padding:24px var(--gut,16px) 22px!important}}
+
+/* ---- chips and badges (6, 17): only real filters keep a chip; codes and types are plain text ---- */
+html:root body :is(.tg,.code,.ex-y,.ex-p,.imp,.zm-chip,.tbch-m span,.xs):is(*,#zzp#zzp){background:none!important;background-image:none!important;border:0!important;padding:0!important;border-radius:0!important;min-width:0!important}
+html:root body :is(.tg,.ex-y,.zm-chip,.tbch-m span):is(*,#zzp#zzp){color:var(--muted)!important;font-weight:500!important}
+html:root body .code:is(*,#zzp#zzp){color:var(--blue)!important;font-weight:700!important;width:auto!important;height:auto!important}
+html:root body .tbch-m:is(*,#zzp) span+span::before{content:"\00B7\00A0"}
+
+/* ---- stat tiles (7): number-over-label boxes become one plain line of text ---- */
+html:root body .qa-stats:is(*,#zzp){display:block!important;margin:10px 0 14px!important;padding:0!important;color:var(--muted)!important;font-size:.95rem!important;font-variant-numeric:tabular-nums}
+html:root body .tbline{margin:0;color:var(--muted);font-size:.95rem;font-variant-numeric:tabular-nums}
+html:root body .tbhero:is(*,#zzp){border:0!important;background:none!important;padding:0!important;margin:0 0 14px!important}
+html:root body .tbhero:is(*,#zzp)::before,html:root body .tbch:is(*,#zzp)::before{display:none!important}
+html:root body #nh .nh-row:is(*,#zzp){display:flex!important;flex-wrap:wrap!important;gap:0 18px!important;align-items:center!important;padding:0!important;border:0!important;background:none!important}
+html:root body #nh .nh-row:is(*,#zzp) a{display:inline-flex!important;align-items:center!important;padding:0!important;border:0!important;background:none!important;min-height:44px!important;color:var(--muted)!important;font-size:.95rem!important;text-align:left!important}
+html:root body #nh .nh-row:is(*,#zzp) a :is(b,span){display:inline!important;font:inherit!important;color:inherit!important;margin:0!important}
+html:root body #nh .nh-row:is(*,#zzp) a b{font-weight:600!important;color:var(--text)!important;margin-right:.3em!important}
+html:root body #nh .nh-row:is(*,#zzp) a.nh-rr{color:var(--blue)!important;font-weight:600!important;margin-left:auto!important}
+html:root body #nh .nh-hms:is(*,#zzp){display:flex!important;flex-wrap:wrap!important;gap:2px 16px!important}
+html:root body #nh .nh-hms:is(*,#zzp) span{display:inline!important;padding:0!important;border:0!important;background:none!important;color:var(--muted)!important;font-size:.9rem!important}
+html:root body #nh .nh-hms:is(*,#zzp) b{display:inline!important;font:inherit!important;font-weight:600!important;color:var(--text)!important;margin-right:.3em!important}
+
+/* ---- phone bottom nav (20): flat full-width bar, square corners, 1px top border ---- */
+html:root body #bnav:is(*,#zzp#zzp){left:0!important;right:0!important;bottom:0!important;width:100%!important;max-width:none!important;margin:0!important;border-radius:0!important;
+ border:0!important;border-top:1px solid var(--line)!important;background:var(--panel)!important;padding-bottom:env(safe-area-inset-bottom,0px)!important;box-sizing:border-box!important}
+html:root body #bnav .fx-pill:is(*,#zzp){background-color:var(--accbg)!important}
+
+/* ---- footer: credits as text on the page background ---- */
+html:root body .sf:is(*,#zzp){background:var(--bg)!important;color:var(--muted)!important;border-top:1px solid var(--line)!important}
+html:root body .sf-hero:is(*,#zzp){background:none!important}
+html:root body .sf-hero:is(*,#zzp)::before{display:none!important}
+html:root body .sf-credit:is(*,#zzp){position:static!important;transform:none!important;width:auto!important;max-width:var(--w,1100px)!important;margin:0 auto!important;padding:28px var(--gut,20px) 0!important;text-align:left!important;box-sizing:border-box!important}
+html:root body .sf-credit:is(*,#zzp) p{display:inline!important;font:inherit!important;font-size:.95rem!important;color:var(--muted)!important;margin:0 .35em 0 0!important}
+html:root body .sf-credit:is(*,#zzp) .sf-name{color:var(--text)!important;font-weight:600!important}
+html:root body .sf:is(*,#zzp) :is(h2,.sf-logo){color:var(--text)!important}
+html:root body .sf:is(*,#zzp) a{color:var(--muted)!important}
+html:root body .sf:is(*,#zzp) :is(p,button,span){color:var(--muted)!important}
+html:root body .sf-top:is(*,#zzp){background:none!important;border:1px solid var(--line2)!important}
+html:root body .zq-fn:is(*,#zzp),html:root body .zq-fn:is(*,#zzp) a{color:var(--muted)!important}
+
+/* ---- surfaces that were dark or tinted blocks with light text: now plain panels with normal text ---- */
+html:root:not([data-tone=fluo]) body .tbcont:is(*,#zzp#zzp){background:var(--panel)!important;color:var(--text)!important}
+html:root:not([data-tone=fluo]) body .tbcont:is(*,#zzp#zzp) :is(.tbcont-t,.tbcont-go){color:var(--text)!important}
+html:root:not([data-tone=fluo]) body .tbcont:is(*,#zzp#zzp) small{color:var(--muted)!important}
+html:root:not([data-tone=fluo]) body .zm-card:is(*,#zzp#zzp) :is(.zm-name,h2){color:var(--text)!important}
+html:root:not([data-tone=fluo]) body .zm-card:is(*,#zzp#zzp) :is(.zm-note,.zm-prog,.zm-prog span,p){color:var(--muted)!important}
+html:root:not([data-tone=fluo]) body .zm-card:is(*,#zzp#zzp) .zm-ghost{color:var(--blue)!important;border-color:var(--line2)!important;background:none!important}
+html:root:not([data-tone=fluo]) body .ring:not(.hi):is(*,#zzp){color:var(--text)!important}
+html:root body .zz-pane:has(> .sf:last-child)::after{background:var(--bg)!important}
