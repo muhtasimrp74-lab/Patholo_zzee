@@ -617,7 +617,7 @@ class Browser(unittest.TestCase):
         self.assertTrue(pg.evaluate("()=>document.getElementById('zzt').classList.contains('zz-pulse')"), 'a pulse confirms a toggle switched on')
         self.assertIn('zz-pop', pg.evaluate("()=>{const m=document.querySelector('#tools .zz-more');return m?getComputedStyle(m).animationName:'zz-pop'}"))
         pg.evaluate("()=>{location.hash='#/'}"); pg.wait_for_timeout(900)
-        self.assertIn('brings %d questions' % pg.evaluate('()=>DATA.length'), pg.evaluate("()=>document.getElementById('v-home').innerText"), 'Home counts every question'); pg.close()
+        self.assertIn('{:,} viva and written questions'.format(pg.evaluate('()=>DATA.length')), pg.evaluate("()=>document.getElementById('v-home').innerText"), 'Home counts every question'); pg.close()
     def test_home_next_question_follows_reading_and_totals_come_from_the_data(self):
         # 'Read the next question' stayed on Q.1 until a card was marked learned; typed-in totals (1,310 / 884 / 12) went stale
         for f in ('index.html', 'index.full.html', 'welcome.js', 'zz-store.js', 'annot/annot.js'): self.assertNotIn('{{ZZ_', open(os.path.join(ROOT, f), encoding='utf8').read(), f)   # every shipped file, not just the page

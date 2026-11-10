@@ -50,8 +50,8 @@ html:root:not([data-tone=fluo]) body::before,html:root:not([data-tone=fluo]) bod
 html body *:is(*,#zzp#zzp#zzp):not(:focus-visible),html body *:is(*,#zzp#zzp#zzp):not(:focus-visible)::before,html body *:is(*,#zzp#zzp#zzp):not(:focus-visible)::after{box-shadow:none!important;text-shadow:none!important}
 html:root body :focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 
-/* ---- labels (11): sentence case, normal tracking. Answer and textbook text is left out: its metrics must not change (annotations sit on it) ---- */
-html body *:is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *),html body *:is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *)::before,html body *:is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *)::after{text-transform:none!important;letter-spacing:normal!important}
+/* ---- labels (11): sentence case, no extra tracking (inherit = the body's own .003em, which answer text has always inherited). Answer and textbook text is left out: its metrics must not change (annotations sit on it) ---- */
+html body *:is(*,#zzp#zzp#zzp):not(.ans,.ans *,#tbbody,#tbbody *),html body *:is(*,#zzp#zzp#zzp):not(.ans,.ans *,#tbbody,#tbbody *)::before,html body *:is(*,#zzp#zzp#zzp):not(.ans,.ans *,#tbbody,#tbbody *)::after{text-transform:none!important;letter-spacing:inherit!important}
 html body :is(.nh-k,.mx-eb,.qa-k,.sf-k,.tbpart-k,.qf-body h4,.tg,.mx-h)::first-letter{text-transform:uppercase!important}
 
 /* ---- motion (14): the decorative keyframes are redefined as stills (a later @keyframes of the same name replaces the earlier one):
