@@ -646,7 +646,7 @@ class Browser(unittest.TestCase):
     def test_home_banner_only_on_home_and_cta_works(self):
         pg = self.page(); pg.wait_for_timeout(300)
         self.assertEqual(pg.locator('.nh-banner').count(), 1); self.assertEqual(pg.locator('#v-home h1:visible').count(), 1)
-        self.assertEqual(pg.locator('.nh-banner img').count(), 0, 'the Home header is typographic: no picture')
+        self.assertGreater(pg.evaluate("()=>document.querySelector('.nh-banner img').naturalWidth"), 0, 'hero image failed to load')
         self.assertEqual(pg.get_attribute('.nh-bn-cta', 'href'), '#/qa'); pg.click('.nh-bn-cta'); pg.wait_for_timeout(500)
         self.assertEqual(pg.evaluate('location.hash'), '#/qa'); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0)
         for h in ('#/questions', '#/05', '#/mcqs', '#/textbook', '#/menu'): pg.goto(URL + h); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0, h)
@@ -657,7 +657,7 @@ class Browser(unittest.TestCase):
             self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'horizontal overflow at %d' % w)
             r = pg.evaluate("()=>{const b=document.querySelector('.nh-banner').getBoundingClientRect(),c=document.querySelector('.nh-bn-cta').getBoundingClientRect();return [b.height,c.bottom,c.right<=innerWidth]}")
             self.assertTrue(r[2], w); self.assertLess(r[1], h, 'CTA below the fold at %d' % w)
-            if w >= 1000: self.assertTrue(200 <= r[0] <= 420, r[0])
+            if w >= 1000: self.assertTrue(420 <= r[0] <= 500, r[0])
             pg.close()
     def test_tab_banners_present_load_and_do_not_overflow(self):
         tabs = {'questions': 'Questions', 'qa': 'Chapters', 'mcqs': 'MCQs', 'textbook': 'Textbook', 'menu': 'Menu'}

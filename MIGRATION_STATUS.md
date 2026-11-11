@@ -297,3 +297,4 @@ To resume C, E, F: allow `registry.npmjs.org` for the session (claude.ai Setting
 - Effects: `fx.js` `autoTier()` now returns 1 (Minimal). WebGL, canvas, loupe, glare/tilt, heartbeat and the progress ring run only when Full is chosen in Menu > Display. Pathway diagrams are static.
 - `tools/hand_edits.json`: the banner padding hunk was removed (its target CSS is gone); the motion-script hunk is re-anchored on the end of `tutorial.js`.
 - Not done: the mid-sentence bold in answers (three passes, `format_answers.py`, `format_answers2.py`, `format_answers3.py`, and `format_answers2.py` also rewrites the private `answers_by_id.json`).
+- Follow-up: the Home banner picture (`icons/hero-lab.webp`, `hero-lab-m.webp`) is kept at the owner's request; it is the only banner picture left. `hero-lab-900.webp` was unused and stays deleted.
