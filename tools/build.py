@@ -219,7 +219,7 @@ def card(tid):
     if tid in old_cards: c = old_cards[tid]
     else:
         qs = new_views[tid][0]
-        c = '<a class="topic" href="#/%s"><span class="no">%s</span><h3>%s</h3><p>%s</p><span class="cnt">%d questions</span></a>' % (tid, NO(tid), names[tid], e('; '.join(q[1][:50] + ('…' if len(q[1]) > 50 else '') for q in qs[:2])), len(qs))
+        c = '<a class="topic" href="#/%s"><span class="no">%s</span><h3>%s</h3><p>%s</p><span class="cnt">%d questions</span></a>' % (tid, NO(tid), names[tid], e(' · '.join((q[1][:50].rsplit(' ', 1)[0] + '…' if len(q[1]) > 50 else q[1].rstrip(' .;:')) for q in qs[:2])), len(qs))
     c = re.sub(r'<span class="no">[^<]*</span>', '<span class="no">%s</span>' % NO(tid), c, count=1)
     return c.replace('<a class="topic"', '<a class="topic" data-n="%d"' % qn(c), 1)
 secs = ''
@@ -229,7 +229,7 @@ for letter, pname, key, tids in sorted(PARTS, key=lambda p: not p[3]):  # parts 
         continue
     cs = [card(t) for t in tids]
     secs += '<section class="part" data-part="%s"><div class="part-h"><h3>%s</h3><span class="mu">%d topics · %d questions</span><span class="ring pp" data-pp="%s"></span></div><div class="grid">%s</div></section>' % (key, pname, len(tids), sum(qn(c) for c in cs), key, ''.join(cs))
-chips = '<div class="chips" id="pchips" role="group" aria-label="Filter by part"><button aria-pressed="true" data-f="all">All parts</button>' + ''.join('<button aria-pressed="false" data-f="%s">%s</button>' % (p[2], p[1]) for p in PARTS) + '<span class="sp"></span><button aria-pressed="false" data-sort="n">Sort: most questions</button></div>'
+chips = '<div class="chips" id="pchips" role="group" aria-label="Filter by part"><button aria-pressed="true" data-f="all">All parts</button>' + ''.join('<button aria-pressed="false" data-f="%s">%s</button>' % (p[2], p[1]) for p in PARTS) + '<span class="sp"></span><button aria-pressed="false" data-sort="n">Sort: chapter order</button></div>'
 s = s.replace(old_grid, '<h2 id="topics">Topics<small>%d questions</small></h2>%s%s' % (total, chips, secs), 1)
 
 s = s.replace('<small>Browse</small>15 topics', '<small>Browse</small>%d topics' % len(order))
@@ -272,9 +272,10 @@ for _qid, _toks in _C26['tags'].items():
 QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1], {s_: RO.topic_order(c, s_) for s_ in CHAP[c][1]}] for c in CH_ORDER]}
 QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
 
+# sort: chapter_extras.js wraps each chapter card in .zz-tw with its bookmark button, so apply() moves the wrapper, not just the card
 PART_JS = "const PART_OF=%s;\n" % json.dumps(PART_OF) + r"""(function(){const p=prog;prog=function(){p();const L=new Set(S.learned),T={},N={};DATA.forEach(d=>{const k=PART_OF[d[2]];N[k]=(N[k]||0)+1;if(L.has(d[3]))T[k]=(T[k]||0)+1});document.querySelectorAll('[data-pp]').forEach(r=>{const k=r.dataset.pp,c=N[k]?Math.round(100*(T[k]||0)/N[k]):0;r.style.setProperty('--p',c);r.textContent=c+'%'})};prog();
 const ch=document.getElementById('pchips');if(!ch)return;const secs=[...document.querySelectorAll('section.part')],orig=secs.map(x=>[...x.querySelectorAll('.topic')]);let f='all',srt=false;
-function apply(){secs.forEach((x,i)=>{x.hidden=f!=='all'&&x.dataset.part!==f;const g=x.querySelector('.grid'),a=orig[i].slice();if(srt)a.sort((u,v)=>v.dataset.n-u.dataset.n||u.getAttribute('href').localeCompare(v.getAttribute('href')));g&&a.forEach(t=>g.append(t))});ch.querySelectorAll('[data-f]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.f===f));ch.querySelector('[data-sort]').setAttribute('aria-pressed',srt)}
+function apply(){secs.forEach((x,i)=>{x.hidden=f!=='all'&&x.dataset.part!==f;const g=x.querySelector('.grid'),a=orig[i].slice();if(srt)a.sort((u,v)=>v.dataset.n-u.dataset.n||u.getAttribute('href').localeCompare(v.getAttribute('href')));g&&a.forEach(t=>g.append(t.parentElement!==g&&t.parentElement.classList.contains('zz-tw')?t.parentElement:t))});ch.querySelectorAll('[data-f]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.f===f));const sb=ch.querySelector('[data-sort]');sb.setAttribute('aria-pressed',srt);sb.textContent=srt?'Sort: most questions':'Sort: chapter order'}
 ch.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.f)f=b.dataset.f;else srt=!srt;apply()}})();
 """
 
