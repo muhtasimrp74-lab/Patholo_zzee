@@ -119,7 +119,7 @@ class AccountClient(unittest.TestCase):
         pg.evaluate('()=>zzSignIn()'); pg.fill('#zz-phone', '01712345678'); pg.click('#zz-send')
         pg.wait_for_selector('#zz-code'); pg.fill('#zz-code', '123456'); pg.click('#zz-verify')
         pg.wait_for_function("()=>!document.querySelector('#v-02 .ans[data-zz]')")
-        with pg.expect_navigation(): pg.evaluate('()=>zzAccount.logout()')
+        with pg.expect_navigation(): pg.evaluate('()=>{zzAccount.logout()}')   # fire, do not await: the promise ends in location.reload(), which destroys the context the evaluate is waiting in
         self.assertIsNone(pg.evaluate("()=>localStorage.getItem('zz-rt')"))
         self.assertEqual(pg.evaluate('()=>zzAuthHeaders()'), {})
 
@@ -227,7 +227,7 @@ class OfflineCache(unittest.TestCase):
         self.mode['net'] = 'down'
         self.assertTrue(pg.evaluate("()=>new Promise(r=>{document.querySelectorAll('#v-02 .ans').forEach(a=>{a.innerHTML='';a.setAttribute('data-zz','q-02')});dispatchEvent(new CustomEvent('zz:auth'));setTimeout(()=>r(!document.querySelector('#v-02 .ans[data-zz]')),1500)})"), 'readable offline')
         self.mode['net'] = 'ok'
-        with pg.expect_navigation(): pg.evaluate('()=>zzAccount.logout()')
+        with pg.expect_navigation(): pg.evaluate('()=>{zzAccount.logout()}')   # fire, do not await: the promise ends in location.reload(), which destroys the context the evaluate is waiting in
         self.assertEqual([k for k in pg.evaluate(self.keys) if k.startswith('zz-chunks-')], [])
     def test_expiry_wipes_and_second_user_cannot_read(self):
         pg = self.page(); pg.wait_for_function("()=>caches.keys().then(k=>k.includes('zz-chunks-u1'))")

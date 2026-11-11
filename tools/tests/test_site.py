@@ -666,7 +666,8 @@ class Browser(unittest.TestCase):
             for r, t in tabs.items():
                 pg.goto(URL + '#/' + r); pg.wait_for_timeout(500)
                 self.assertEqual(pg.locator('#v-%s .pb' % r).count(), 1, r)
-                self.assertEqual(pg.locator('#v-%s .pb img' % r).count(), 0, 'page headers are typographic, no picture: ' + r)
+                if r == 'menu': self.assertEqual(pg.locator('#v-menu .pb img').count(), 0, 'the Menu header is typographic')
+                else: self.assertGreater(pg.evaluate("()=>document.querySelector('#v-%s .pb img').naturalWidth" % r), 0, 'banner image failed: ' + r)
                 self.assertEqual(pg.locator('#v-%s h1:visible' % r).count(), 1, r); self.assertEqual(pg.inner_text('#v-%s h1' % r).strip(), t)
                 self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'overflow %s at %d' % (r, w))
             pg.goto(URL + '#/05'); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.pb:visible').count(), 0, 'banner leaked onto a topic page')

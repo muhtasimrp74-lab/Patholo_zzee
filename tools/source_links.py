@@ -157,7 +157,8 @@ def outside_questions():
 
 def bar(places):
     links = ''.join('<a href="#/textbook/%s/%s/%s">%s</a>' % (p['ch'], p['b'], p['qid'], ('p. %s' % p['page']) if p.get('page') else 'Open') for p in places)
-    return '<div class="srcbar"><span class="srcbar-l">From the textbook (Robbins Ch %d)</span>%s</div>' % (places[0]['n'], links)
+    # the leading space keeps the last answer word and "From" apart in the card text (the Related row scores words; the book emoji used to separate them)
+    return '<div class="srcbar"><span class="srcbar-l"> From the textbook (Robbins Ch %d)</span>%s</div>' % (places[0]['n'], links)
 
 def run(write=True):
     units = load_textbook(); IX = Index(units); out = {}; res = []

@@ -473,6 +473,19 @@ def _counts(path):   # live totals for the copy ({{ZZ_Q}}, {{ZZ_MCQ}}, {{ZZ_PAPE
     assert '{{ZZ_' not in t, 'unfilled copy placeholder'; open(path, 'w', encoding='utf8').write(t)
 _counts(os.path.join(HERE, '..', 'index.full.html'))
 import mcq_enrich; print('mcq enrich:', mcq_enrich.apply(os.path.join(HERE, '..', 'index.full.html')))   # WHY explanations quoted from the notes (private, gated with the MCQs)
+# "Related" rows are scored from each card's text at idle time; the pathway marker (pathway.js) adds a "Watch the pathway" button to
+# some cards, also at idle time. Normally Related runs first, but on a starved CPU the order can flip, which changed the scores and
+# made the inline and lazy builds differ (test_lazy_probe, CI run 402). Reading the card text without those buttons gives the
+# normal result in either order.
+_REL = "const t={};(document.getElementById(d[3]).textContent.toLowerCase()"
+_REL_NEW = "const t={};((e=>e.querySelector('.pw-go')?(e=e.cloneNode(true),e.querySelectorAll('.pw-go').forEach(b=>b.remove()),e.textContent):e.textContent)(document.getElementById(d[3])).toLowerCase()"
+for _p in ('index.full.html',):   # gate.py derives index.html from it
+    _f = os.path.join(HERE, '..', _p)
+    if os.path.exists(_f):
+        _s = open(_f, encoding='utf8').read()
+        if _REL_NEW not in _s:
+            assert _s.count(_REL) == 1, 'Related scoring line not found in ' + _p
+            open(_f, 'w', encoding='utf8').write(_s.replace(_REL, _REL_NEW))
 import gate; gate.gate()
 import strip_comments; print('comments stripped:', strip_comments.apply(os.path.join(HERE, '..')))   # generated output only; sources keep theirs
 import csp; csp.apply(os.path.join(HERE, '..'))
