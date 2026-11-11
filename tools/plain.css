@@ -146,3 +146,14 @@ html:root:not([data-tone=fluo]) body .mx .mx-s.no .mx-tf button[aria-pressed=tru
 html:root:not([data-tone=fluo]) body .mx .mx-tf button.key:not([aria-pressed=true]):is(*,#zzp#zzp#zzp){border-color:#2E6B3E!important;color:#2E6B3E!important;background:color-mix(in srgb,#2E6B3E 10%,var(--panel))!important}
 html:root[data-theme=dark]:not([data-tone=fluo]) body .mx .mx-tf button.key:not([aria-pressed=true]):is(*,#zzp#zzp#zzp){border-color:#7FC08F!important;color:#9AD3A8!important}
 @media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]) body .mx .mx-tf button.key:not([aria-pressed=true]):is(*,#zzp#zzp#zzp){border-color:#7FC08F!important;color:#9AD3A8!important}}
+
+/* ---- Chapters: the pinned Sort button sits over the scrolling part chips; it lost its fade when shadows were removed, so it gets a
+   solid edge instead and no longer looks like it overlaps a chip ---- */
+html:root body #v-qa #pchips>button[data-sort]:is(*,#zzp#zzp){background:var(--bg)!important;border:0!important;border-left:1px solid var(--line2)!important;border-radius:0!important;padding:0 4px 0 14px!important;margin-left:4px!important;color:var(--blue)!important;font-weight:600!important}
+
+/* ---- Viva / Written switch in the filters: two separate bordered buttons (same readability fix as MCQ True / False) ---- */
+html:root:not([data-tone=fluo]) body .qseg:is(*,#zzp#zzp){background:none!important;border:0!important;padding:0!important;gap:8px!important}
+html:root:not([data-tone=fluo]) body .qseg button:is(*,#zzp#zzp){border:1px solid var(--line2)!important;border-radius:8px!important;background:var(--panel)!important;background-image:none!important;color:var(--text)!important}
+html:root:not([data-tone=fluo]) body .qseg button[aria-pressed=true]:is(*,#zzp#zzp){background:var(--btn)!important;border-color:var(--btn)!important;color:#fff!important}
+html:root:not([data-tone=fluo]) body .qseg button[aria-pressed=true]:is(*,#zzp#zzp) *{color:#fff!important}
+html:root body .mx .mx-lock:is(*,#zzp) span{color:var(--muted)!important}
