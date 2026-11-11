@@ -1,9 +1,12 @@
 
 /* ===== page headers for Questions / Chapters / MCQs / Textbook / Menu (idempotent; runs now, on load and on route change).
-   Typographic only (no pictures): breadcrumb, h1, one-line description, one primary button plus one text link, and one plain line of
+   Photo banner on Questions / Chapters / MCQs, a drawn banner on Textbook, typographic on Menu: breadcrumb, h1, one-line description, one primary button plus one text link, and one plain line of
    live figures. Actions reuse existing routes or trigger the page's own buttons. ===== */
 (function(){
 const IMG={questions:'questions',qa:'chapters',mcqs:'mcqs',textbook:'textbook',menu:'menu'};
+/* pictures: Questions / Chapters / MCQs use the photo banners; Textbook uses a drawing made by tools/make_tb_banner.py; Menu has none.
+   loading="eager" is written out (it is the default) so the pager's idle-time eager stamp does not change the DOM later. */
+const PIC={questions:1,chapters:1,mcqs:1,textbook:2};
 const $1=(v,sel,re)=>{const m=document.querySelectorAll('#v-'+v+' main '+sel);for(const e of m)if(!re||re.test(e.textContent.trim()))return e;return null};
 const num=(v,re)=>{const m=re.exec(((document.getElementById('v-'+v)||{}).textContent||'').replace(/\s+/g,' '));return m?m[1]:null};
 const click=(v,sel,re)=>()=>{const e=$1(v,sel,re);if(e)e.click()};
@@ -28,15 +31,21 @@ function build(id,box){
  if(sp.acts.length)box.appendChild(a);box.appendChild(c);
  const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean)}catch(e){}const key=s.join('\u0001');   /* rebuild only when the stats changed (a swipe re-ran this and shifted the banner) */
    if(c.dataset.k!==key){c.dataset.k=key;c.textContent=s.join(' \u00B7 ');c.hidden=!s.length}
-  sp.acts.forEach((x,i)=>{if(typeof x[0]==='function')a.children[i].textContent=x[0]()})};
+  sp.acts.forEach((x,i)=>{if(typeof x[0]==='function'){const t=x[0]();if(a.children[i].textContent!==t)a.children[i].textContent=t}})};   /* write only on change, so the repeated checks below leave the DOM alone */
  fill();[300,1200,3000].forEach(t=>setTimeout(fill,t));addEventListener('hashchange',()=>setTimeout(fill,250));
+ /* the figures come from content the page draws later (e.g. the Textbook chapter tiles); on a slow device that can be after the
+    timers above, so keep checking twice a second for the first 20 s (fill writes only when a figure changed; no DOM observer,
+    which slowed the logout wipe) */
+ let n=0;const iv=setInterval(()=>{fill();if(++n>=40)clearInterval(iv)},500);
 }
 function apply(){
  for(const id in IMG){
   const v=document.getElementById('v-'+id);if(!v||v.querySelector('.pb'))continue;
   const hi=v.querySelector('.hero-in');if(!hi)continue;
   const k=IMG[id];
-  const s=document.createElement('section');s.className='pb';s.dataset.pb=k;
+  const s=document.createElement('section');s.className='pb '+(PIC[k]?'pb-img':'pb-plain');s.dataset.pb=k;
+  if(PIC[k]===1)s.innerHTML='<div class="pb-pic"><img src="icons/pb-'+k+'.webp" srcset="icons/pb-'+k+'-900.webp 900w,icons/pb-'+k+'.webp 1672w" sizes="(max-width:640px) 140vw,100vw" width="1672" height="940" alt="" loading="eager" decoding="async"></div>';
+  if(PIC[k]===2)s.innerHTML='<div class="pb-pic"><img src="icons/pb-'+k+'.svg" width="1672" height="940" alt="" loading="eager" decoding="async"></div>';
   const w=document.createElement('div');w.className='pb-in';hi.before(s);s.appendChild(w);w.appendChild(hi);
   build(id,hi.firstElementChild||hi);
  }

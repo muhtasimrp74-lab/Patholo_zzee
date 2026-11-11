@@ -34,7 +34,7 @@ The **Textbook** tab (bottom bar) reads the cleaned Robbins chapters from `textb
 Inside every chapter the questions are grouped as **heading > topic > questions**, in the order Robbins teaches them (Questions tab and each chapter page). The outline and the keyword rules that place each DU written question live in `tools/robbins_outline.py`: edit it to rename or reorder a heading/topic or to move a question, then run `python3 tools/build.py` and bump `VERSION` in `sw.js`. A "Same ..." follow-up always sits under the question before it. Question numbers never change, so saved bookmarks, notes and progress are not affected.
 
 ## Fonts
-System font stacks, no network fonts: a system sans stack for body text and a Georgia-based serif stack for headings (`tools/plain.css`). The only self-hosted font left in `fonts/` is Caveat (handwritten margin notes).
+All self-hosted in `fonts/` (works offline, no network fonts; SIL Open Font License): Merriweather (headings), Oswald (small labels and tags), Caveat (handwritten margin notes). Body and answer text use the system sans stack (`tools/plain.css`).
 
 ## Logo
 Vector logo traced from the brand artwork: `tools/logo/` holds the paths, and `python3 tools/make_logo.py` regenerates `icons/logo.svg`, `favicon.svg`, all PNG icons (favicon, apple-touch, 192/512, maskable) (it needs `fonttools`, `brotli` and `playwright`). The share image `icons/og-card.png` is a plain typographic card written by `python3 tools/make_og.py`.
