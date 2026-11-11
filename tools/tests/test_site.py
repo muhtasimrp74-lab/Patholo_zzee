@@ -325,14 +325,14 @@ class Browser(unittest.TestCase):
         pg.goto(URL + '#/mcqs'); pg.wait_for_selector('#v-mcqs .mx-goal button'); pg.wait_for_timeout(400)
         g = pg.evaluate("()=>{const r=document.querySelector('#v-mcqs .mx-goal'),b=[...r.querySelectorAll('button')],s=getComputedStyle(r.firstElementChild);return {rows:new Set(b.map(x=>Math.round(x.getBoundingClientRect().top))).size,minw:Math.min(...b.map(x=>x.getBoundingClientRect().width)),label:[s.textTransform,+s.fontWeight>=700]}}")
         self.assertEqual(g['rows'], 1, '10 / 20 / 30 / 50 share one line ("50" wrapped alone before)'); self.assertGreaterEqual(g['minw'], 44)
-        self.assertEqual(g['label'], ['uppercase', True], 'the GOAL label is in capitals and bold'); pg.close()
+        self.assertEqual(g['label'], ['none', True], 'the Goal label is sentence case and bold'); pg.close()
     def test_legal_pages_use_the_app_look_in_light_and_dark(self):
         for scheme in ('light', 'dark'):
             pg = self.b.new_page(viewport={'width': 412, 'height': 860}, color_scheme=scheme)
             for f in ('privacy', 'terms', 'refund'):
                 pg.goto('file://' + os.path.join(ROOT, f + '.html'))
                 s = pg.evaluate("()=>{const b=getComputedStyle(document.body),a=getComputedStyle(document.querySelector('a'));return [b.fontFamily.split(',')[0].trim(),a.color,b.backgroundColor.match(/\\d+/g).slice(0,3).map(Number)]}")
-                self.assertEqual(s[0], 'Hanken', f + ': the app font, not the browser default'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
+                self.assertEqual(s[0], 'system-ui', f + ': the app font stack (system sans), not the browser default serif'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
                 self.assertEqual(sum(s[2]) < 200, scheme == 'dark', '%s (%s): background follows the colour scheme %r' % (f, scheme, s[2]))
             pg.close()
     CR = r"""()=>{const h=[...document.querySelectorAll('section.pb p.zz-hi')].find(e=>e.offsetParent);if(!h)return null;const P=c=>c.match(/[\d.]+/g).map(Number),L=a=>{const f=v=>{v/=255;return v<=.03928?v/12.92:((v+.055)/1.055)**2.4};return .2126*f(a[0])+.7152*f(a[1])+.0722*f(a[2])};
@@ -362,7 +362,7 @@ class Browser(unittest.TestCase):
             pg.locator('button:has-text("Filters") >> visible=true').first.click(); pg.wait_for_timeout(800)
             r = pg.evaluate("()=>{const f=document.getElementById('qf'),b=f.getBoundingClientRect(),pts=[[b.left+b.width/2,b.top+60],[b.left+b.width/2,b.top+b.height/2],[b.left+30,b.bottom-40]];return {onTop:pts.map(([x,y])=>f.contains(document.elementFromPoint(x,y))),caps:[...f.querySelectorAll('h4')].filter(h=>h.offsetParent).map(h=>getComputedStyle(h).textTransform+'/'+getComputedStyle(h).fontWeight)}}")
             self.assertEqual(r['onTop'], [True, True, True], '%d px: the drawer is above the scrim, not dimmed by it' % w)
-            self.assertTrue(r['caps'] and all(c == 'uppercase/700' for c in r['caps']), '%d px: section labels in capitals and bold %r' % (w, r['caps'][:3]))
+            self.assertTrue(r['caps'] and all(c == 'none/700' for c in r['caps']), '%d px: section labels in sentence case and bold %r' % (w, r['caps'][:3]))
             pg.click('#qscrim', position={'x': w - 20, 'y': 40}); pg.wait_for_timeout(500)
             self.assertFalse(pg.evaluate("()=>document.body.classList.contains('qf-open')"), 'tapping the scrim still closes it'); pg.close()
     def test_systemic_answers_are_upgraded_at_build_time(self):   # tools/answers_upgrade.py via apply_answers_by_id.py
@@ -389,7 +389,7 @@ class Browser(unittest.TestCase):
             for h in ('#/mcqs', '#/qa', '#/menu', '#/'): pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)   # tabs render on first visit
             r = pg.evaluate("""()=>{const g=s=>{const e=document.querySelector(s);if(!e)return null;const c=getComputedStyle(e);return [c.borderTopLeftRadius,c.boxShadow]};
                 return {mcq:g('#v-mcqs .mx-acc'),qa:g('#v-qa .topic'),hero:g('#v-qa .qa-hero'),home:g('#v-home .nh-prog'),menu:g('#v-menu .zm-list')}}""")
-            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '28px', '%s: MCQ card %r' % (theme, ref))
+            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '12px', '%s: MCQ card %r' % (theme, ref))
             for k, v in r.items():
                 self.assertEqual(v, ref, '%s: the %s card matches the MCQ card (corners and shadow)' % (theme, k))
             pg.close()
@@ -436,7 +436,7 @@ class Browser(unittest.TestCase):
             pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1200)
             self.assertEqual(pg.evaluate(self.SMALLTXT, v), [], '%s: interface text below 12 px' % h)
         lab = pg.evaluate("()=>[...document.querySelectorAll('#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-eb')].map(e=>{const s=getComputedStyle(e);return s.textTransform+'/'+s.fontWeight})")
-        self.assertTrue(lab and set(lab) == {'uppercase/700'}, 'section labels in capitals and bold: %r' % sorted(set(lab))); pg.close()
+        self.assertTrue(lab and set(lab) == {'none/700'}, 'section labels in sentence case and bold: %r' % sorted(set(lab))); pg.close()
     def test_answer_typography_is_unchanged_so_ink_stays_on_its_words(self):   # baseline measured before the typography pass
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}); pg.goto(URL + '#/02'); pg.wait_for_timeout(1000)
         r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontSize,c.lineHeight,c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li'),g('.card .ans h4.sub')]}")
@@ -483,7 +483,7 @@ class Browser(unittest.TestCase):
         self.assertEqual(pg.evaluate("()=>[...new Set([...document.querySelectorAll('#v-02 h3.sub')].map(h=>h.getAttribute('aria-level')))]"), ['2'], 'chapter section headings are level 2 under the page h1')
         pg.evaluate("()=>{location.hash='#/mcqs'}"); pg.wait_for_timeout(900)
         t = pg.evaluate("()=>{const s=[...document.querySelectorAll('#v-mcqs small')].find(e=>/Suggested next/i.test(e.textContent));return s?getComputedStyle(s).textTransform:null}")
-        self.assertIn(t, ('uppercase', None), 'the Suggested next label follows the capitals rule'); pg.close()
+        self.assertIn(t, ('none', None), 'the Suggested next label follows the sentence-case rule'); pg.close()
     def test_csp_allows_only_hashed_inline_scripts(self):   # no 'unsafe-inline' for scripts: every inline script is listed by hash
         sys.path.insert(0, os.path.join(ROOT, 'tools')); import csp
         for f in ('index.html', 'index.full.html'):
@@ -600,7 +600,7 @@ class Browser(unittest.TestCase):
         for q in full:
             if q['h'] in kf: self.assertEqual(q['a'], kf[q['h']]['a'], 'corrected key reaches the page: %s' % q['h'])
         pg = self.phone('#/mcqs'); pg.wait_for_timeout(500)
-        self.assertEqual(pg.evaluate("()=>{const p=document.createElement('p');p.className='mx-x';p.innerHTML='<b>Why</b> t';document.getElementById('v-mcqs').append(p);const s=getComputedStyle(p.firstChild),r=[s.textTransform,s.fontWeight];p.remove();return r}"), ['uppercase', '700']); pg.close()
+        self.assertEqual(pg.evaluate("()=>{const p=document.createElement('p');p.className='mx-x';p.innerHTML='<b>Why</b> t';document.getElementById('v-mcqs').append(p);const s=getComputedStyle(p.firstChild),r=[s.textTransform,s.fontWeight];p.remove();return r}"), ['none', '700']); pg.close()
     def test_design_checklist_no_stripes_bounce_or_orbs_and_useful_motion(self):   # owner's 'looks generated' checklists
         css = ''.join(open(f, encoding='utf8').read() for f in glob.glob(os.path.join(ROOT, 'tools', '*.css')))
         self.assertEqual(re.findall(r'cubic-bezier\([^)]*\b1\.[1-9]\d*[^)]*\)', css), [], 'no overshooting (bouncy) curves on everyday UI')
@@ -617,7 +617,7 @@ class Browser(unittest.TestCase):
         self.assertTrue(pg.evaluate("()=>document.getElementById('zzt').classList.contains('zz-pulse')"), 'a pulse confirms a toggle switched on')
         self.assertIn('zz-pop', pg.evaluate("()=>{const m=document.querySelector('#tools .zz-more');return m?getComputedStyle(m).animationName:'zz-pop'}"))
         pg.evaluate("()=>{location.hash='#/'}"); pg.wait_for_timeout(900)
-        self.assertIn('brings %d questions' % pg.evaluate('()=>DATA.length'), pg.evaluate("()=>document.getElementById('v-home').innerText"), 'Home counts every question'); pg.close()
+        self.assertIn('{:,} viva and written questions'.format(pg.evaluate('()=>DATA.length')), pg.evaluate("()=>document.getElementById('v-home').innerText"), 'Home counts every question'); pg.close()
     def test_home_next_question_follows_reading_and_totals_come_from_the_data(self):
         # 'Read the next question' stayed on Q.1 until a card was marked learned; typed-in totals (1,310 / 884 / 12) went stale
         for f in ('index.html', 'index.full.html', 'welcome.js', 'zz-store.js', 'annot/annot.js'): self.assertNotIn('{{ZZ_', open(os.path.join(ROOT, f), encoding='utf8').read(), f)   # every shipped file, not just the page
@@ -666,7 +666,7 @@ class Browser(unittest.TestCase):
             for r, t in tabs.items():
                 pg.goto(URL + '#/' + r); pg.wait_for_timeout(500)
                 self.assertEqual(pg.locator('#v-%s .pb' % r).count(), 1, r)
-                self.assertGreater(pg.evaluate("()=>document.querySelector('#v-%s .pb img').naturalWidth" % r), 0, 'banner image failed: ' + r)
+                self.assertEqual(pg.locator('#v-%s .pb img' % r).count(), 0, 'page headers are typographic, no picture: ' + r)
                 self.assertEqual(pg.locator('#v-%s h1:visible' % r).count(), 1, r); self.assertEqual(pg.inner_text('#v-%s h1' % r).strip(), t)
                 self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'overflow %s at %d' % (r, w))
             pg.goto(URL + '#/05'); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.pb:visible').count(), 0, 'banner leaked onto a topic page')

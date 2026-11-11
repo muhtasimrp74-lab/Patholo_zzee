@@ -13,8 +13,7 @@
 const de=document.documentElement,$=(s,r)=>(r||document).querySelector(s),st=()=>typeof S!=='undefined'?S:null;
 const RM=matchMedia('(prefers-reduced-motion: reduce)');
 /* tier ladder: 0 static (Off), 1 CSS (Minimal), 2 canvas, 3 WebGL (Full). "Auto" (default) picks from the device; a manual choice wins */
-function autoTier(){const n=navigator,c=n.connection;if(c&&c.saveData)return 1;const m=n.deviceMemory,k=n.hardwareConcurrency||4;
- if((m&&m<=2)||k<=2)return 1;if((m&&m<=4)||k<=4)return 2;return 3}
+function autoTier(){return 1}   /* plain by default: WebGL, canvas and Full-only effects (loupe, glare/tilt, heartbeat, progress ring) run only if Full is chosen in Menu > Display */
 function tier(){const s=st(),v=(s&&s.pref&&s.pref.fx)||'auto';if(v==='off')return 0;if(RM.matches||de.classList.contains('zz-still'))return 1;
  return v==='min'?1:v==='full'?3:autoTier()}
 window.zzTier=tier;

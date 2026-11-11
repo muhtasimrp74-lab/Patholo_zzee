@@ -111,7 +111,7 @@ class ProTools(unittest.TestCase):
         for btn in (big, small):
             self.assertTrue(btn.is_visible()); self.assertTrue(btn.get_attribute('aria-label'))
             r = btn.bounding_box(); self.assertGreaterEqual(min(r['width'], r['height']), 44)
-        self.assertEqual(big.evaluate("b=>getComputedStyle(b).textTransform"), 'uppercase'); self.assertGreaterEqual(int(big.evaluate("b=>getComputedStyle(b).fontWeight")), 700)
+        self.assertEqual(big.evaluate("b=>getComputedStyle(b).textTransform"), 'none'); self.assertGreaterEqual(int(big.evaluate("b=>getComputedStyle(b).fontWeight")), 700)
         w0 = self.bb(pg); big.focus(); pg.keyboard.press('Enter'); w1 = self.bb(pg)
         self.assertAlmostEqual((w1[2] - w1[0]) / (w0[2] - w0[0]), 1.25, delta=.06); self.assertAlmostEqual(self.docobjs(pg, cid)[0]['w'] / o0['w'], 1.25, delta=.03)
         pg.keyboard.press('Control+z'); self.assertEqual(self.docobjs(pg, cid)[0], o0)
@@ -279,7 +279,7 @@ class ProTools(unittest.TestCase):
         pg.keyboard.press('Control+z'); pg.wait_for_timeout(150); pg.evaluate("()=>Annot._debug.setOn(false)")   # covered again
         b.click(); pg.wait_for_timeout(200); self.assertLess(pg.evaluate(self.INKA, [sel, 145, 50]), 50, 'SHOW ALL reveals every strip'); self.assertIsNone(self.docobjs(pg, cid)[0].get('pe'), 'without changing what is saved')
         b.click(); pg.wait_for_timeout(200); self.assertEqual(pg.evaluate(self.INKA, [sel, 145, 50]), 255, 'HIDE ALL covers them again')
-        self.assertEqual(b.evaluate("e=>getComputedStyle(e).textTransform"), 'uppercase'); self.assertEqual(self.errs, [])
+        self.assertEqual(b.evaluate("e=>getComputedStyle(e).textTransform"), 'none'); self.assertEqual(self.errs, [])
     def test_print_shows_every_answer_with_ink_and_full_highlights_even_from_dark_mode(self):   # export a chapter: browser Print / Save as PDF
         pg = self.page(800, 1000); cid, sel = self.open_card(pg); pg.evaluate("()=>{document.documentElement.dataset.theme='dark';Object.assign(Annot.state(),{tool:'hl'})}")
         self.draw(pg, sel, [[40, 40], [160, 42], [280, 40]]); pg.evaluate("()=>{Annot.state().tool='pen'}"); self.draw(pg, sel, [[40, 80], [160, 90], [280, 80]])

@@ -240,7 +240,7 @@ function drawMark(gh,gi,o,rs,tb){if(o.k==='hi'||!MKL[o.k]){gh.fillStyle=col(o.c,
  gi.save();gi.strokeStyle=lineCol(o.c);gi.lineWidth=Math.max(1.6,2*fsNow());gi.lineCap='round';gi.lineJoin='round';
  rs.forEach(r=>{gi.beginPath();if(o.k==='u'){const y=r[1]+r[3]-1;gi.moveTo(r[0],y);gi.lineTo(r[0]+r[2],y)}else if(o.k==='s'){const y=r[1]+r[3]*.55;gi.moveTo(r[0],y);gi.lineTo(r[0]+r[2],y)}
   else{const y=r[1]+r[3]-2,a=Math.max(1.4,r[3]*.07),st=Math.max(3,r[3]*.17);gi.moveTo(r[0],y);let up=true;for(let x=r[0]+st;x<r[0]+r[2]+st;x+=st){gi.lineTo(Math.min(x,r[0]+r[2]),y+(up?-a:a));up=!up}}gi.stroke()});gi.restore()}
-const MEAS=document.createElement('canvas').getContext('2d'),FONTS={sans:null,serif:'Newsreader,Georgia,"Times New Roman",serif',hand:'Caveat,"Segoe Script","Bradley Hand",cursive'};let capF=0;
+const MEAS=document.createElement('canvas').getContext('2d'),FONTS={sans:null,serif:'Georgia,"Times New Roman",serif',hand:'Caveat,"Segoe Script","Bradley Hand",cursive'};let capF=0;
 function fontOf(L,o){const f=o&&o.q&&o.q.f;if(f==='hand'&&!capF){capF=1;try{document.fonts&&document.fonts.load('500 16px Caveat').then(()=>repaintAll())}catch(e){}}return FONTS[f]||getComputedStyle(L.host).fontFamily}
 function textLayout(L,o,hr){const org=origin(L.host,o.a,hr);if(!org||!o.q)return null;const W=L.host.clientWidth,f=fsNow(),x=org.x+o.q.x/REF*W,y=org.y+o.q.y/YU*f,fz=o.w*f,lh=fz*1.35,maxW=Math.max(60,W-x-8),ff=fontOf(L,o);
  MEAS.font=fz+'px '+ff;const lines=[];(o.x||'').split('\n').forEach(par=>{let cur='';par.split(' ').forEach(w=>{const t=cur?cur+' '+w:w;if(cur&&MEAS.measureText(t).width>maxW){lines.push(cur);cur=w}else cur=t});lines.push(cur)});

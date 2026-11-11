@@ -190,7 +190,7 @@
 #nh .nh-b a.nh-go{min-height:48px;display:inline-flex;align-items:center}
 .act span,.act.sh span,#bnav a,.qf-body h4,table th,h4.tsub,.tw th{font-size:12px!important}
 
-/* ---- homepage hero banner (home only; photo is local: icons/hero-lab*.webp) ---- */
+/* ---- homepage hero banner (home only; the one picture kept on the site, local: icons/hero-lab*.webp): breadcrumb line, serif h1, one-line description, one button + one text link ---- */
 .nh-banner{position:relative;height:clamp(420px,32vw,500px);background:#1D181B;color:#FFFDFA;overflow:hidden}
 .nh-bn-pic{position:absolute;inset:0}
 .nh-bn-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,24,27,.8) 0,rgba(29,24,27,.5) 30%,rgba(29,24,27,0) 56%)}
@@ -216,6 +216,12 @@
  .nh-banner h1{font-size:clamp(1.7rem,7.4vw,2.1rem)}
  #nh a.nh-bn-cta{width:100%;justify-content:center}
 }
+#nh .nh-banner .crumb:is(*,#zzp#zzp){margin:0 0 12px;color:#E8D9E3!important;font-size:.9rem;opacity:1!important}
+.nh-bn-s{margin-bottom:0}
+#nh .nh-bn-b:is(*,#zzp){display:flex!important;flex-wrap:wrap;align-items:center;gap:8px 22px!important;margin:24px 0 0!important}
+#nh a.nh-bn-lk:is(*,#zzp#zzp){display:inline-flex;align-items:center;min-height:44px;color:#FFFDFA!important;font-weight:600;text-decoration:underline!important;text-underline-offset:3px}
+#nh a.nh-bn-lk:focus-visible{outline:2px solid #FFFDFA;outline-offset:3px}
+.nh-line{margin:0;color:var(--muted);font-size:.95rem;font-variant-numeric:tabular-nums}
 
 /* More stats: the long sections fold away so Home leads with Continue and today's plan */
 .nh-plan{grid-template-columns:1fr!important}

@@ -1,6 +1,6 @@
 
 /* ===== pathway.js: one animator for small pathway diagrams (JSON: nodes, arrows, labels) =====
-   Particles run along arrows (tier 2+; tier 1 a CSS dash flow; tier 0 still), tapping a node opens its note,
+   The diagram is static (the particle and dash-flow animations were removed); tapping a node opens its note,
    test mode hides the labels and you drag them back. Opened from a "Watch the pathway" button under matching cards.
    Built on demand: nothing is drawn or styled until a pathway is opened. */
 (function(){try{
@@ -29,7 +29,6 @@ const CSS=`.pw-go{display:inline-flex;align-items:center;gap:6px;margin:10px 0 0
 .pw-n rect{fill:var(--panel);stroke:var(--line2,#bbb);stroke-width:1.2}.pw-n{cursor:pointer}.pw-n.on rect{stroke:var(--burgundy);stroke-width:2}.pw-n.s rect{stroke-dasharray:4 3}
 .pw-n.ok rect{stroke:var(--ok,#5A7A54);stroke-width:2}.pw-n.bad rect{stroke:#b6425f;stroke-width:2}
 .pw-e{fill:none;stroke:var(--muted);stroke-width:1.6}.pw-e.i{stroke:#b6425f;stroke-dasharray:5 4}
-.fx-min .pw-e:not(.i){stroke-dasharray:6 6;animation:pw-flow 1.2s linear infinite}@keyframes pw-flow{to{stroke-dashoffset:-12}}
 .pw-p{fill:var(--burgundy)}.pw-d{min-height:64px;margin:0 14px;padding:10px 14px;border-radius:14px;background:var(--panel);border:1px solid var(--line);font:.92rem/1.45 var(--body)}
 .pw-tr{display:flex;flex-wrap:wrap;gap:6px;padding:8px 14px calc(env(safe-area-inset-bottom,0px) + 12px)}.pw-tr:empty{display:none}
 .pw-c{padding:7px 11px;border-radius:99px;background:var(--accbg);color:var(--lbl);font:600 .8rem var(--body);touch-action:none;cursor:grab;user-select:none}
@@ -52,12 +51,7 @@ function open(id){
  ov.addEventListener('click',e=>{const b=e.target.closest('button');if(b&&b.dataset.a==='x')close();else if(b&&b.dataset.a==='test')test(P,b,sv,tr,dt);else{const g=e.target.closest('.pw-n');if(g&&!ov.classList.contains('t'))pick(g)}});
  ov.addEventListener('keydown',e=>{if(e.key==='Escape')close();else if(e.key==='Enter'&&e.target.closest&&e.target.closest('.pw-n'))pick(e.target.closest('.pw-n'))});
  ov.querySelector('[data-a=x]').focus();
- if(T()>=2&&!RM.matches)flow(sv,P);
 }
-function flow(sv,P){const es=[...sv.querySelectorAll('.pw-e:not(.i)')],g=sv.querySelector('.pw-ps'),L=es.map(e=>e.getTotalLength()),dots=[];
- es.forEach((e,k)=>{for(let j=0;j<2;j++){const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('r','3');c.setAttribute('class','pw-p');g.append(c);dots.push({c,k,o:j/2})}});
- const go=t=>{if(!ov||!sv.isConnected)return;if(!document.hidden)dots.forEach(d=>{const u=(t/2200+d.o)%1,p=es[d.k].getPointAtLength(u*L[d.k]);d.c.setAttribute('cx',p.x.toFixed(1));d.c.setAttribute('cy',p.y.toFixed(1));d.c.setAttribute('opacity',String(Math.sin(u*Math.PI).toFixed(2)))});raf=requestAnimationFrame(go)};
- raf=requestAnimationFrame(go)}
 function test(P,b,sv,tr,dt){
  const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',String(on));ov.classList.toggle('t',on);
  sv.querySelectorAll('.pw-n').forEach(g=>{g.classList.remove('ok','bad','on');g.querySelector('text').style.visibility=on?'hidden':''});
