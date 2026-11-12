@@ -1,0 +1,16 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+
+[*.{py,sh}]
+indent_size = 4
+
+[*.{ts,js,css,json,jsonc,yml,md,html}]
+indent_size = 2
+
+[index.html]
+insert_final_newline = unset

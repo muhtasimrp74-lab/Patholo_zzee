@@ -41,7 +41,7 @@ Method: screenshots plus measured checks in Chromium (contrast, target size, ove
 The app's own screens (home, topics, cards, MCQ, menu, footer) are already consistent and mostly pass. Their CSS lives in the private base HTML, so the work below targets the gating layer (sign-in, plans, payment states, account, locked content) plus app-wide focus, target size and reduced-motion fixes that can be layered on safely.
 
 ## After (this pass)
-- Tokens: tools/zz.css opens with one token set (accent, surfaces, ink, hairlines, type scale, spacing 4-32, radii 10/14/20/pill, two shadows, 150/220 ms motion) built on the app palette; every gating screen uses only these.
+- Tokens: tools/css/zz.css opens with one token set (accent, surfaces, ink, hairlines, type scale, spacing 4-32, radii 10/14/20/pill, two shadows, 150/220 ms motion) built on the app palette; every gating screen uses only these.
 - Dialogs: brand serif titles at their real weight (no fake bold), 48 px inputs and buttons, 44 px stroked close icon, title receives focus without a ring, scrim with light blur, 220 ms rise-in.
 - Plans: Everything first with a "Best value" badge and the computed saving, one line on what each plan includes, tabular prices.
 - Locked content: lock icon in a soft accent circle; locked answers show blurred placeholder lines (CSS only, no real text) under a one-line notice; topic notice above the questions.

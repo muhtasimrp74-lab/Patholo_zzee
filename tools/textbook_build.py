@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Textbook (Robbins, cleaned): tools/textbook_src/chNN.json (robbins-clean-v1) -> ../textbook/chNN.html + index.json.
 Sections become collapsible panels; KEY CONCEPTS / Morphology / Clinical / Pathogenesis get their own panel styles
-(see tools/textbook.css, tools/textbook.js). Run: python3 tools/textbook_build.py  (then bump VERSION in sw.js)"""
+(see tools/css/textbook.css, tools/js/textbook.js). Run: python3 tools/textbook_build.py  (then bump VERSION in sw.js)"""
 import json, glob, os, re, html, sys, importlib
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'curate')); sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from textbook_notes import notes

@@ -42,7 +42,7 @@
 - Migration 0002: devices, sessions (hashed refresh token, family, device, expires/rotated/revoked), otp_challenges (hashed phone + code, attempts, expiry, consumed), rate_limits. OTP: 10 min, single use, 5 attempts; 3 per number per 15 min (sliding), 10 per IP per hour (IP stored only as HMAC); 429 + Retry-After.
 - Tokens: access JWT 15 min (stateless, memory only); refresh 30 days in localStorage 'zz-rt' (trade-off: readable by scripts on the origin; no custom domain for an HttpOnly cookie). Cross-tab refresh serialized with navigator.locks so tabs never reuse a token.
 - Done: Python 142 pass, 0 fail, 2 skipped; worker 19/19 (incl. early Stage 5 server code); gating client tests 9/9. Real Google/SMS on staging: PENDING (2B + credentials). Gate A: no workflow change.
-- Client tools/account.js: device id, refresh on load (chunk loads wait for it), sign-in dialog (Google button via GIS when /api/config has a client id; phone OTP), logout. Phones normalized to E.164 (+880), Bangla/Arabic/Devanagari digits accepted.
+- Client tools/js/account.js: device id, refresh on load (chunk loads wait for it), sign-in dialog (Google button via GIS when /api/config has a client id; phone OTP), logout. Phones normalized to E.164 (+880), Bangla/Arabic/Devanagari digits accepted.
 
 ## Stage 4: OK (full suite ran on the Stage 5 commit, see below)
 - Locked topics: 401 shows "Sign in", 403 shows "Upgrade" (calls zzUpgrade) in the answer slot, textbook chapter and MCQ banner; network errors show Retry. MCQs keep the free chapter usable when the rest is locked. After sign-in/payment (zz:auth) everything reloads; logout reloads the page so no unlocked content stays in it.
@@ -51,7 +51,7 @@
 ## Stage 5: OK
 - Worker: POST /api/pay/checkout (auth; price from worker/src/bundles.json only), POST /api/pay/ipn (verify_sign + gateway validation API), GET|POST /api/pay/return (re-verifies, 303 to #/account/order/<id>), GET /api/pay/orders/<id> (owner only; pending orders re-checked with the gateway; nothing at the gateway after 2 h = cancelled), GET /api/bundles. Gateway adapter: SSLCommerz sandbox default, mock in tests.
 - Settlement in one D1 batch: payment_events insert (unique gateway id) + entitlement upserts + receipt + order paid, all conditional on the order being unpaid; amount (exact minor units), currency, order id and status must match the gateway's own record. Renewal extends from the current expiry. payment_orders doubles as the purchases table (no separate purchases table).
-- Client tools/pay.js: upgrade dialog (bundle choice only), pending state with automatic re-check, receipt view; legal links in checkout and the footer. terms.html, privacy.html, refund.html marked DRAFT; added to the Pages site. docs/admin.md: 4 commands, tested against the real migrations. Gate A: pages.yml only copies 3 more files; SAFE.
+- Client tools/js/pay.js: upgrade dialog (bundle choice only), pending state with automatic re-check, receipt view; legal links in checkout and the footer. terms.html, privacy.html, refund.html marked DRAFT; added to the Pages site. docs/admin.md: 4 commands, tested against the real migrations. Gate A: pages.yml only copies 3 more files; SAFE.
 - Done (stages 4+5, one run): Python 148: 146 pass, 0 fail, 2 skipped; worker 26/26 (incl. stage 7-8 server code); tags gating-stage-4-ok and -5-ok on the same commit. Real SSLCommerz sandbox payment: PENDING (2B + store credentials).
 
 ## Stage 6: OK (tests: OfflineCache 2/2)
@@ -60,7 +60,7 @@
 ## Stage 7: OK
 - Server: migration 0004 (user_progress, user_notes, user_annotations with updated_at/deleted, notes conflict flag; migration_uploads). POST /api/sync/upload (max 20 items, idempotent per upload_id incl. concurrent retries), GET /api/sync.
 - Policy: progress = zzStore keys (vivaState split per top-level field, vivaQuiz, tbLast, tbDone, tbPos, tbSet, zz-fs, zz-flat) and annotations = pathviva-annot/meta: last write wins per key by timestamp. Notes = pathviva-annot/docs (highlights + text notes): keep both; the existing cloud copy is renamed '<key>#conflict-<ts>' and flagged.
-- Client tools/sync.js: on first sign-in per user, upload in batches with stable upload ids (kept in 'zz-mig-id' until done), then pull and replace the local copies with the merged server copy; nothing local changes unless every batch is confirmed; 'zz-migrated:<uid>' marks it done. Tests: worker sync 4/4, client Migration 1/1.
+- Client tools/js/sync.js: on first sign-in per user, upload in batches with stable upload ids (kept in 'zz-mig-id' until done), then pull and replace the local copies with the merged server copy; nothing local changes unless every batch is confirmed; 'zz-migrated:<uid>' marks it done. Tests: worker sync 4/4, client Migration 1/1.
 
 ## Stage 8: OK
 - Chunk endpoint 60/min per user, OTP limits (Stage 3), all 429 + Retry-After. 3 devices per user: a 4th sign-in gets 409 with the device list and a 10-minute removal token; DELETE /api/devices/<id> revokes the device and its sessions; Account page (#/account, footer link) lists devices with Remove.
@@ -86,7 +86,7 @@
 
 ## Front-end pass (owner request)
 - Found by screenshot review (phone 390x844): sign-in, plan and account dialogs were unstyled browser defaults; locked topics gave no sign until a card was opened; MCQ lock banner sat under the fixed top bar; internal ids ('qna') and US dates on the account screen; legal and account links missing from the visible footer and menu; an "or" divider with no Google button.
-- Fixed: tools/zz.css (app theme variables only, light and dark), labelled dialogs with a close button and focus on the title, notice above locked questions, clearer copy per bundle, plan list with BDT prices, Account as a real page (#/account) with plan names, dates and devices (this device cannot remove itself), footer Legal column + Account link, menu Account button. Tests: gating 20/20 (2 new).
+- Fixed: tools/css/zz.css (app theme variables only, light and dark), labelled dialogs with a close button and focus on the title, notice above locked questions, clearer copy per bundle, plan list with BDT prices, Account as a real page (#/account) with plan names, dates and devices (this device cannot remove itself), footer Legal column + Account link, menu Account button. Tests: gating 20/20 (2 new).
 
 ## Launch (owner: "deploy the Worker to production and merge PR 3 to main")
 - No card, SMS provider or gateway: sign-in by phone/email + password (PBKDF2-SHA256, 20k iterations for the free-plan CPU limit, stored per hash; 10 tries/15 min per login, 30/h per IP); SMS codes and Google stay behind /api/config flags.

@@ -6,6 +6,20 @@ Features: search, practice (spaced-repetition flashcards and timed viva), quiz m
 
 Your study data stays on your device (localStorage + IndexedDB) until you sign in. With an account, progress, notes and annotations sync to it, and purchases are recorded against it.
 
+## Repository layout
+| Path | What it holds |
+|---|---|
+| `index.html`, `sw.js`, `manifest.json`, `_headers` | The deployed site. `index.html` is generated: never edit it by hand. |
+| `tools/build.py` | The build. `tools/README.md` lists every script by purpose. |
+| `tools/css/`, `tools/js/` | The page's CSS and JS layers, inlined by the build. |
+| `src/` | TypeScript sources (Home, Textbook, Welcome, storage layer). |
+| `annot/` | Annotation engine, served directly. |
+| `worker/` | Cloudflare Worker (accounts, payments, gated content). |
+| `tools/tests/` | Test suites. |
+| `docs/`, `MIGRATION_STATUS.md` | Decisions and history. |
+
+`CLAUDE.md` is the short orientation file: repo map, commands, where to change what, and the rules that keep the build safe.
+
 ## Publish (GitHub Pages — free `https://<username>.github.io/<repo>/` link)
 1. Create an empty repo on github.com (e.g. `pathology-viva`), no README.
 2. In this folder: `git remote add origin https://github.com/<username>/pathology-viva.git && git push -u origin main`
@@ -15,7 +29,7 @@ Your study data stays on your device (localStorage + IndexedDB) until you sign i
 Netlify also works: import the repo, no build command, publish directory `.` (`_headers` adds security headers).
 
 ## Editing content
-The 15 systemic topics live in `tools/src/index.base.html`; General Pathology (and any new topics) live in `tools/content.py`. Styling is layered: base CSS in `index.base.html`, then `tools/theme.css`, then `tools/premium.css` (palette, fonts, glass; edit the tokens at the top of `premium.css` to retheme). After editing, run `python3 tools/build.py` to regenerate `index.html`. When you change any site file, bump `VERSION` in `sw.js` so installed copies refresh.
+The 15 systemic topics live in `tools/src/index.base.html`; General Pathology (and any new topics) live in `tools/content.py`. Styling is layered: base CSS in `index.base.html`, then `tools/css/theme.css`, then `tools/css/premium.css` (palette, fonts, glass; edit the tokens at the top of `premium.css` to retheme). After editing, run `python3 tools/build.py` to regenerate `index.html`. When you change any site file, bump `VERSION` in `sw.js` so installed copies refresh.
 
 
 ## MCQs
@@ -24,7 +38,7 @@ The **MCQs** tab holds 884 pathology questions (234 from 12 past papers plus a 6
 - Custom practice: faceted filter (chapter/topic, SBA or T/F, source, past paper, your progress, text search) with live counts, plus count, order, feedback (after each question or exam) and timer.
 - Reading mode: every matching question with the answers and notes shown, or hidden to self-test.
 - Answers, bookmarks, history and any unfinished session are stored in the same backup as everything else.
-- Look: the glass ("coverslip") layer for every MCQ screen is `tools/mcq_glass.css`, loaded last; tokens (`--gx-*`) are at its top. Blur is limited to the floating bars on touch screens; Menu > Display > Reduce effects removes it.
+- Look: the glass ("coverslip") layer for every MCQ screen is `tools/css/mcq_glass.css`, loaded last; tokens (`--gx-*`) are at its top. Blur is limited to the floating bars on touch screens; Menu > Display > Reduce effects removes it.
 Sources are in `tools/mcq_src/`; run `python3 tools/mcq_parse.py` to regenerate `tools/mcqs.json`, then `python3 tools/build.py` and bump `VERSION` in `sw.js`.
 
 ## Textbook
@@ -34,7 +48,7 @@ The **Textbook** tab (bottom bar) reads the cleaned Robbins chapters from `textb
 Inside every chapter the questions are grouped as **heading > topic > questions**, in the order Robbins teaches them (Questions tab and each chapter page). The outline and the keyword rules that place each DU written question live in `tools/robbins_outline.py`: edit it to rename or reorder a heading/topic or to move a question, then run `python3 tools/build.py` and bump `VERSION` in `sw.js`. A "Same ..." follow-up always sits under the question before it. Question numbers never change, so saved bookmarks, notes and progress are not affected.
 
 ## Fonts
-All self-hosted in `fonts/` (works offline, no network fonts; SIL Open Font License): Abril Fatface (page titles), Merriweather (section headings), Gloock (brand name), Fredoka (buttons and chips), PT Serif (question text and chapter names), Anton (numerals), Oswald (labels, tags, navigation), Caveat (handwritten margin notes). Body and answer text use the system sans stack. Roles and the 1.25 type scale are at the top of the type-system block in `tools/plain.css`.
+All self-hosted in `fonts/` (works offline, no network fonts; SIL Open Font License): Abril Fatface (page titles), Merriweather (section headings), Gloock (brand name), Fredoka (buttons and chips), PT Serif (question text and chapter names), Anton (numerals), Oswald (labels, tags, navigation), Caveat (handwritten margin notes). Body and answer text use the system sans stack. Roles and the 1.25 type scale are at the top of the type-system block in `tools/css/plain.css`.
 
 ## Logo
 Vector logo traced from the brand artwork: `tools/logo/` holds the paths, and `python3 tools/make_logo.py` regenerates `icons/logo.svg`, `favicon.svg`, all PNG icons (favicon, apple-touch, 192/512, maskable) (it needs `fonttools`, `brotli` and `playwright`). The share image `icons/og-card.png` is a plain typographic card written by `python3 tools/make_og.py`.

@@ -3,6 +3,8 @@
 import hashlib
 import re, json, html, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
+def _src(name):   # the page's layers live in tools/css and tools/js; everything else sits beside this script
+    return os.path.join(HERE, 'css' if name.endswith('.css') else 'js' if name.endswith('.js') else '', name)
 import content, robbins_map, robbins_outline as RO
 UNPLACED = []
 _all_q = {it[1] for t in content.TOPICS for it in t[3]}
@@ -270,7 +272,7 @@ for _qid, _toks in _C26['tags'].items():
     s = re.sub(r'(<article class="card" id="%s"><header tabindex="0">)(.*?)(</header>)' % _qid,
                lambda m: m.group(1) + (re.sub(r'(<span class="xm">.*)(</span>)$', lambda x: x.group(1) + _inner + x.group(2), m.group(2), flags=re.S) if 'class="xm"' in m.group(2) else m.group(2) + _chips) + m.group(3), s, count=1, flags=re.S)
 QMETA = {'parts': [[p[2], p[1], p[0]] for p in PARTS], 'partOf': PART_OF, 'type': written, 'exam': exam, 'tree': TREE, 'alias': ALIAS, 'chapters': [[c, CHAP[c][0], NO('c%d' % c if c != 'P' else '15') if c != 'P' else 'Practical', CHAP[c][1], {s_: RO.topic_order(c, s_) for s_ in CHAP[c][1]}] for c in CH_ORDER]}
-QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(os.path.join(HERE, 'questions.js'), encoding='utf8').read() + '\n'
+QUESTIONS_JS = '\nconst QMETA=%s;\n' % json.dumps(QMETA, ensure_ascii=False) + open(_src('questions.js'), encoding='utf8').read() + '\n'
 
 # sort: chapter_extras.js wraps each chapter card in .zz-tw with its bookmark button, so apply() moves the wrapper, not just the card
 PART_JS = "const PART_OF=%s;\n" % json.dumps(PART_OF) + r"""(function(){const p=prog;prog=function(){p();const L=new Set(S.learned),T={},N={};DATA.forEach(d=>{const k=PART_OF[d[2]];N[k]=(N[k]||0)+1;if(L.has(d[3]))T[k]=(T[k]||0)+1});document.querySelectorAll('[data-pp]').forEach(r=>{const k=r.dataset.pp,c=N[k]?Math.round(100*(T[k]||0)/N[k]):0;r.style.setProperty('--p',c);r.textContent=c+'%'})};prog();
@@ -315,7 +317,7 @@ section.part{margin:0 0 30px}.part-h{display:flex;align-items:center;gap:14px;fl
 .ring.pp{width:46px;height:46px;font-size:11px}
 """
 s = re.sub(r'@font-face\{font-family:"(?:Plus Jakarta Sans|Source Sans 3)".*?\}\n?', '', s)
-s = s.replace('</style>', CSS + open(os.path.join(HERE, 'theme.css'), encoding='utf8').read() + open(os.path.join(HERE, 'premium.css'), encoding='utf8').read() + '</style>', 1)
+s = s.replace('</style>', CSS + open(_src('theme.css'), encoding='utf8').read() + open(_src('premium.css'), encoding='utf8').read() + '</style>', 1)
 s = re.sub(r'@font-face\{font-family:"(?:Inter|Newsreader|Hanken Grotesk|DM Serif Display)".*?\}\n?', '', s)
 H1 = '<h1>Viva Prep —<br>Read.<br>Recall. Answer.</h1>'
 assert H1 in s
@@ -325,7 +327,7 @@ s = s.replace('content="#000000" media', 'content="#1C1219" media').replace('con
 # with 'self' alone the browser blocks every sign-in, plan and paid-content request there and the app reads it as offline
 CSP = "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://patholo-zzee-app.muhtasimrp74.workers.dev; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'\"><meta name=\"referrer\" content=\"no-referrer\">"
 s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">' + CSP, 1)
-POLISH_JS = open(os.path.join(HERE, 'polish.js'), encoding='utf8').read() + '\n' + open(os.path.join(HERE, 'tutorial.js'), encoding='utf8').read()
+POLISH_JS = open(_src('polish.js'), encoding='utf8').read() + '\n' + open(_src('tutorial.js'), encoding='utf8').read()
 assert '</script>' not in POLISH_JS
 s = s.replace("<script>\nif ('serviceWorker'", '<script>window.TBALIAS=' + open(os.path.join(HERE, 'textbook_block_alias.json'), encoding='utf8').read().strip() + ';</script>\n<script>\n' + POLISH_JS + '\n</script>\n<script src="annot/annot.js"></script>\n<script src="welcome.js" defer></script>\n<script>\nif (\'serviceWorker\'', 1)
 assert s.count('</head>') == 1
@@ -391,7 +393,7 @@ for _a, _b in (("BS=[...new Set(DATA.map(d=>d[0]))]", "BS=[...new Set(DATA.flatM
 # ---- assembly of the page scripts and styles that sit on top of the base page (this replaces ui_patch.py and nav_patch.py,
 # which only assembled files by then; the edits to existing application text live in src/index.base.html and questions.js).
 # Read modes matter for byte-identical output: files read with newline='' keep their line endings, the others use text mode.
-def _asset(name, raw=False): return open(os.path.join(HERE, name), encoding='utf8', newline='' if raw else None).read()
+def _asset(name, raw=False): return open(_src(name), encoding='utf8', newline='' if raw else None).read()
 _ZZ_NEW = ['pathway.js', 'fluo.js', 'loupe.js', 'scrub.js', 'specimen.js', 'ceremony.js', 'deck.js', 'morph.js', 'report.js', 'mood.js', 'sound.js', 'type.js', 'examiner.js', 'liquid.js', 'autohide.js', 'resume.js', 'header_more.js', 'chapter_extras.js']   # lamplit.js (Textbook book scene) is kept in tools/ but switched off by the owner until it is redesigned  # feature modules, inlined after fx2.js
 _UI_JS = _asset('pager.js') + _asset('ui_upd.js', True) + _asset('home.js') + _asset('pagebanner.js') + _asset('sitefooter.js') + _asset('tabresume.js') + _asset('swupdate.js') + _asset('qol.js') + _asset('fx.js') + _asset('fxgl.js') + _asset('fx2.js') + ''.join(_asset(f) for f in _ZZ_NEW)
 _UI_TAIL = "\n(function(){const d0=dash;dash=function(){d0();if(window.nhRender)nhRender()};const p0=prog;prog=function(){p0();if(window.nhRender)nhRender()};nhRender()})();\n"
@@ -427,7 +429,7 @@ body::before{mix-blend-mode:normal!important;opacity:.025!important}
              '<script>document.documentElement.classList.add("zz-boot");setTimeout(function(){document.documentElement.classList.remove("zz-boot")},8000)</script>')
 BOOT_END = '<script>document.documentElement.classList.remove("zz-boot")</script>'
 assert s.count('</head><body>') == 1 and s.rstrip().endswith('</body></html>')
-SOFT = '<style id="zz-soft">' + open(os.path.join(HERE, 'softui.css'), encoding='utf8').read() + '</style>'
+SOFT = '<style id="zz-soft">' + open(_src('softui.css'), encoding='utf8').read() + '</style>'
 s = s.replace('</head><body>', BOOT_HEAD + SOFT + '</head><body>', 1)
 assert s.count('<footer>Patholo_zzee</footer>') == 1
 _k = s.rindex('</body>'); s = s[:_k] + '<script>' + _asset('sync.js') + '</script><script>' + _asset('acctui.js') + '</script>' + s[_k:]  # listeners only: end of body

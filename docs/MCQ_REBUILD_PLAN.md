@@ -1,16 +1,16 @@
 # MCQ section rebuild plan
 
-Plan only: nothing in this document is built yet. Audited on branch `ui/premium-greeting` (tools/mcq.js, 332 lines, 40.8 KB).
+Plan only: nothing in this document is built yet. Audited on branch `ui/premium-greeting` (tools/js/mcq.js, 332 lines, 40.8 KB).
 
 ## 1. Inventory (nothing here may be lost)
 
 **Files and data flow**
-- `tools/mcq.js`: the whole MCQ module (view `#/mcqs`, created with `mkView('mcqs', ...)`), inlined into `index.html` by `tools/build.py`.
+- `tools/js/mcq.js`: the whole MCQ module (view `#/mcqs`, created with `mkView('mcqs', ...)`), inlined into `index.html` by `tools/build.py`.
 - `tools/mcqs.json` + `tools/mcq_src/*` (private sources, restored by `tools/restore_private.sh`) → `const MCQDATA = {ch, q}` in the full page. Each question: `h` stable hash id, `c` chapter, `t` topic, `q` stem, `o` options, `a` answer, `e` explanation (214 of 884), `y` true/false statements flag, `s` source, `g`/`w` relevance and paper tags.
 - `tools/gate.py`: free chapter 1 stays inline; chapters 2-17 become private chunks `mcq-02 … mcq-17`.
-- `tools/chunks.js` → `zzMcqLoad(Q, done, V, mount)`: loads all gated chapters when `#/mcqs` opens, appends to `Q`, shows the lock banner (Sign in / Upgrade) and keeps chapter 1 usable when locked; `zzMcqReset` after sign-in or payment.
+- `tools/js/chunks.js` → `zzMcqLoad(Q, done, V, mount)`: loads all gated chapters when `#/mcqs` opens, appends to `Q`, shows the lock banner (Sign in / Upgrade) and keeps chapter 1 usable when locked; `zzMcqReset` after sign-in or payment.
 - Worker: `worker/src/chunks.ts` serves `mcq-*` chunks to holders of the `mcq` entitlement (bundles `MCQ` and `ALL`).
-- `tools/home.js`: MCQ track card on Home (attempted / total, accuracy, weakest topics via `MCQDATA.ch`).
+- `tools/js/home.js`: MCQ track card on Home (attempted / total, accuracy, weakest topics via `MCQDATA.ch`).
 - `src/legacy/welcome.ts`: personal line on `v-mcqs` (accuracy over N answers).
 
 **Routes (hash)**: `#/mcqs` home, `/run` live session, `/review`, `/result`, `/custom` builder, `/read` reading mode.
@@ -23,7 +23,7 @@ Plan only: nothing in this document is built yet. Audited on branch `ui/premium-
 
 **After**: results (score, per-type breakdown, time), Review answers (explanations, source), retry wrong, back to MCQs; reading mode with answers shown, notes visible.
 
-**Stored progress** (inside `vivaState.mcq`, via `zzStore`): `p` per-question attempts `{n, k}`, `sess` saved session, `last`, `f` filters, `o` options, `bm` bookmarks, `nt` notes, `ms` milestones/goal, `rv` review state, `hist` recent sessions. Synced to the cloud by `tools/sync.js` as part of `vivaState` (progress, last write wins).
+**Stored progress** (inside `vivaState.mcq`, via `zzStore`): `p` per-question attempts `{n, k}`, `sess` saved session, `last`, `f` filters, `o` options, `bm` bookmarks, `nt` notes, `ms` milestones/goal, `rv` review state, `hist` recent sessions. Synced to the cloud by `tools/js/sync.js` as part of `vivaState` (progress, last write wins).
 
 ## 2. Problems today
 - **Structure:** one 40 KB file of template strings and a single `mq()` router; HTML built with string concatenation and manual escaping; state is a mutable global (`sess`, `ST()`); no tests of its own apart from site-level ones.
@@ -52,7 +52,7 @@ Plan only: nothing in this document is built yet. Audited on branch `ui/premium-
 ## 4. Premium design direction
 - **Layout:** phone-first single column; question card with generous padding; options as 56 px full-width rows; sticky bottom action bar (Previous / Check or Next) inside the thumb zone; palette as a bottom sheet. Desktop: two columns (question, then side panel with palette and notes).
 - **Typography:** stems in the body sans at 1.0625 rem / 1.6; chapter and result headings in the display serif (DM Serif Display) at real weight; tabular numbers for scores and timers.
-- **Colour:** existing tokens (`--zz-*` in `tools/zz.css`): one accent (burgundy) for primary actions and the selected option; correct = sage, wrong = muted rose, never pure red/green; accent text switches to rose in dark mode.
+- **Colour:** existing tokens (`--zz-*` in `tools/css/zz.css`): one accent (burgundy) for primary actions and the selected option; correct = sage, wrong = muted rose, never pure red/green; accent text switches to rose in dark mode.
 - **Animation:** 150-220 ms: option press, card change (cross-fade + 8 px slide), result count-up once; all off under prefers-reduced-motion.
 - **States:** skeleton question card while a chapter loads; empty states that offer the next action ("No flagged questions yet: flag one during practice"); errors with a retry button and the free chapter still usable.
 - **Dark mode:** same components through the app variables; checked against WCAG AA for option text and score colours.
@@ -66,7 +66,7 @@ Plan only: nothing in this document is built yet. Audited on branch `ui/premium-
 - **Data:** keep `MCQDATA` and the `mcq-NN` chunks unchanged on the wire. Add a small index (chapter, topic, type, tags, id) to the free page so filters and counts work before chunks load; load only the chapters a session needs (`loadChunk` per chapter).
 - **State:** one small store module (plain JS, no framework) with explicit actions (`start`, `answer`, `check`, `move`, `finish`) and a render function per screen; keyed DOM updates instead of full `innerHTML` replaces.
 - **Hosting:** stays a static page on GitHub Pages and the app Worker; no build-tool change beyond the existing Vite step for TypeScript modules (`src/legacy/*.ts` → `tools/*.js`).
-- **Keeping progress safe:** same storage keys inside `vivaState.mcq` (`p`, `sess`, `bm`, `nt`, `hist`, …) and the same question ids (`h`); a one-time, versioned migration only adds fields; sync stays on `tools/sync.js`. Access stays on the worker (`/api/chunks/mcq-*`) and the entitlement table; the client never decides access.
+- **Keeping progress safe:** same storage keys inside `vivaState.mcq` (`p`, `sess`, `bm`, `nt`, `hist`, …) and the same question ids (`h`); a one-time, versioned migration only adds fields; sync stays on `tools/js/sync.js`. Access stays on the worker (`/api/chunks/mcq-*`) and the entitlement table; the client never decides access.
 
 ## 7. Roadmap (each phase ships)
 1. **Phase 1 — Foundations without visible change.** Store module, per-chapter loading, tests for every inventory item above. *Checklist:* all existing MCQ tests pass; a saved session from the current version resumes; locked user still gets chapter 1; no new network requests on Home.

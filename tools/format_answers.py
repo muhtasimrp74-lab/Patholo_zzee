@@ -254,7 +254,7 @@ def main():
         if new != m.group(2): n[0] += 1
         return m.group(1) + new + m.group(3)
     h = CARD.sub(sub, h)
-    css = open(os.path.join(R, 'tools', 'answerfmt.css'), encoding='utf8').read()
+    css = open(os.path.join(R, 'tools', 'css', 'answerfmt.css'), encoding='utf8').read()
     h = re.sub(r'<style id="ansfmt">.*?</style>', '', h, flags=re.S)
     h = h.replace('</head>', '<style id="ansfmt">' + css + '</style></head>', 1)
     open(p, 'w', encoding='utf8').write(h)
