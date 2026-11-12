@@ -515,7 +515,16 @@ document.addEventListener('click',e=>{if(!P.on||P.tool==='hand')return;const t=e
 /* ---------- input ---------- */
 let live=null,lastPen=0,drawing=false;
 const penRecent=()=>performance.now()-lastPen<1200;
-document.addEventListener('pointermove',e=>{if(e.pointerType==='pen'&&!e.buttons)lastPen=performance.now()},{capture:true,passive:true});   /* a hovering pen counts as in use: palms resting meanwhile do not draw */
+document.addEventListener('pointermove',e=>{if(e.pointerType==='pen'&&!e.buttons){lastPen=performance.now();penNear(e)}},{capture:true,passive:true});   /* a hovering pen counts as in use: palms resting meanwhile do not draw */
+/* "pen near" (body.an-pen-near, annot.css) turns touch-action off on the hosts so a stylus draws instead of scrolling. It also blocks
+   finger scrolling and pinch-zoom, so it must only be on while the pen is really in use: it is set by pen hover / contact over a host
+   and expires 1.2 s after the last pen event (a pen held still near the glass, or one that left without a pointerout, no longer
+   blocks fingers). A pen that touches down after it expired is kept from scrolling by the touchstart handler below. */
+let penNearT=0,penDownAt=-1e9;
+function penNear(e){if(!P.on||!(live||hostOf(e.target)))return;document.body.classList.add('an-pen-near');clearTimeout(penNearT);penNearT=setTimeout(penFar,1200)}
+function penFar(){clearTimeout(penNearT);if(live&&!live.touch){penNearT=setTimeout(penFar,1200);return}document.body.classList.remove('an-pen-near')}
+document.addEventListener('pointerdown',e=>{if(e.pointerType==='pen'){penDownAt=performance.now();penNear(e)}},{capture:true,passive:true});
+addEventListener('blur',penFar);document.addEventListener('visibilitychange',()=>{if(document.hidden)penFar()});
 function simPress(L,x,y,t){const l=live.pts[live.pts.length-1];if(!l)return .5;const dt=Math.max(1,t-l.t),v=Math.hypot(x-l.x,y-l.y)/dt;return clamp(.95-v*.45,.25,.95)}
 /* pencil: leaning the pen over widens and softens the line, like the side of a real pencil (folded into the stored pressure so it survives reload and backup) */
 function tiltP(p,ev){if(live&&live.tool==='pen'&&P.pen==='pencil'&&ev.pointerType==='pen'){const t=Math.min(1,Math.hypot(ev.tiltX||0,ev.tiltY||0)/70);return clamp(p+t*.45,0,1)}return p}
@@ -797,10 +806,14 @@ function sync(){if(!bar)return;layers.forEach(L=>{if(!L.tb)wsEnsure(L)});{const 
  rove(bar.contains(document.activeElement)?document.activeElement:null);requestAnimationFrame(()=>place())}
 function setOn(v){closeText(true);P.on=v;if(!v){closePop();if(live)onUp({pointerId:live.pid,type:'pointercancel'})}else{const vv=[...document.querySelectorAll('.view')].filter(v=>getComputedStyle(v).display!=='none');(vv.length?vv:[document]).forEach(r=>r.querySelectorAll('.card .ans,'+MXS+','+TBH).forEach(h=>layerOf(h)));tip()}sync()}
 /* ---------- finger scroll vs stylus (touch-action strategy lives in annot.css; this closes the gap for styluses that scroll) ---------- */
-document.addEventListener('touchstart',e=>{if(!P.on||P.tool==='hand'||P.tool==='hi'||!hostOf(e.target))return;for(const t of e.changedTouches)if(t.touchType==='stylus'&&e.cancelable){e.preventDefault();return}},{passive:false});
+document.addEventListener('touchstart',e=>{if(!P.on||P.tool==='hand'||P.tool==='hi'||!hostOf(e.target))return;if(!e.cancelable)return;
+ /* a stylus contact must not scroll: Safari says so in touchType; elsewhere the pen's pointerdown arrives just before its touchstart */
+ if(e.touches.length===1&&performance.now()-penDownAt<120){e.preventDefault();return}
+ for(const t of e.changedTouches)if(t.touchType==='stylus'){e.preventDefault();return}},{passive:false});
 document.addEventListener('pointerdown',onDown,{passive:false,capture:true});
-document.addEventListener('pointerover',e=>{/* a hovering pen means this contact is a stylus: stop it scrolling on browsers that only expose pointerType, not touchType */if(P.on&&e.pointerType==='pen'&&hostOf(e.target))document.body.classList.add('an-pen-near')},true);
-document.addEventListener('pointerout',e=>{if(e.pointerType==='pen')document.body.classList.remove('an-pen-near')},true);
+document.addEventListener('pointerover',e=>{/* a hovering pen means this contact is a stylus: stop it scrolling on browsers that only expose pointerType, not touchType */if(e.pointerType==='pen')penNear(e)},true);
+document.addEventListener('pointerout',e=>{if(e.pointerType==='pen'&&!live)document.body.classList.remove('an-pen-near')},true);
+document.addEventListener('pointercancel',e=>{if(e.pointerType==='pen')penFar()},true);
 document.addEventListener('keydown',e=>{if(!P.on||e.target.closest&&e.target.closest('input,textarea,select,[contenteditable]'))return;
  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();step(!e.shiftKey);return}
  if(P.tool==='sel'&&sel){if(e.key==='Delete'||e.key==='Backspace'){e.preventDefault();delSel();return}if(e.key==='Escape'){clearSel();return}if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='d'){e.preventDefault();dupSel();return}
