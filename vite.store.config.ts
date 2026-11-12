@@ -6,8 +6,8 @@ export const ENTRIES: Record<string, { entry: string; file: string; generatedBan
   store: { entry: 'src/storage/browser.ts', file: 'zz-store.js' },
   welcome: { entry: 'src/legacy/welcome.ts', file: 'welcome.js' },
   // inlined into index.html by tools/ui_patch.py / tools/nav_patch.py; (output has no "use strict", matching the sloppy-mode inline scripts they replace)
-  home: { entry: 'src/legacy/home.ts', file: 'tools/home.js', generatedBanner: true },
-  textbook: { entry: 'src/legacy/textbook.ts', file: 'tools/textbook.js', generatedBanner: true },
+  home: { entry: 'src/legacy/home.ts', file: 'tools/js/home.js', generatedBanner: true },
+  textbook: { entry: 'src/legacy/textbook.ts', file: 'tools/js/textbook.js', generatedBanner: true },
 };
 const e = ENTRIES[process.env['ZZ_ENTRY'] ?? 'store']!;
 export default defineConfig({
