@@ -18,7 +18,7 @@ html:not(.zz-flat) body .view .nav{background:var(--lg-sheen),var(--lg-tint-top)
 html:not(.zz-flat) body :is(#tools,.fx-top){background:var(--lg-sheen),var(--lg-tint)!important;box-shadow:var(--lg-rim-sm)!important;border-color:transparent!important;-webkit-backdrop-filter:blur(14px) saturate(1.8)!important;backdrop-filter:blur(14px) saturate(1.8)!important}
 html:not(.zz-flat) body #tools{border-radius:99px!important}
 /* the pill moves like liquid: overshoots and settles; pager.js stretches it while a swipe is between tabs */
-html body #bnav .fx-pill{border-radius:99px!important;transform-origin:50% 50%;transition:transform .46s cubic-bezier(.2,.8,.2,1),width .46s cubic-bezier(.2,.8,.2,1)!important}
+html body #bnav .fx-pill{border-radius:99px!important;transform-origin:50% 50%;transition:transform .46s var(--zz-ease),width .46s var(--zz-ease)!important}
 /* refraction (liquid.js, Chromium, tier 3): each surface bends what is behind it through its own lens filter */
 html.zz-lgon body :is(#bnav,.view .nav,#tools,.fx-top).zz-lg{-webkit-backdrop-filter:var(--zz-lg) saturate(1.7) brightness(1.04)!important;backdrop-filter:var(--zz-lg) saturate(1.7) brightness(1.04)!important}
 html:not(.zz-flat) body #bnav .fx-pill{background:var(--lg-sheen),color-mix(in srgb,var(--burgundy) 13%,transparent)!important;box-shadow:var(--lg-rim-sm)!important}

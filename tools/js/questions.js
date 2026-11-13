@@ -95,7 +95,7 @@ const SHOW=[['all','All'],['fav','Favourites'],['bm','Bookmarked'],['note','With
 const tname=t=>CHI[t]?CHI[t][2]+' \u00b7 '+CHI[t][1]:t;
 
 /* ---------- panel ---------- */
-const chip=(k,v,lb,on,c)=>`<button type="button" class="qfc${on?' on':''}${c===0?' z':''}" data-k="${k}" data-v="${v}" aria-pressed="${!!on}">${lb}${c!=null?`<i>${c}</i>`:''}</button>`;
+const chip=(k,v,lb,on,c)=>`<button type="button" class="qfc${on?' on':''}${c===0?' z':''}" data-k="${k}" data-v="${v}" aria-pressed="${!!on}">${lb}${c!=null?`<i>${(+c).toLocaleString('en-US')}</i>`:''}</button>`;
 function panel(){
  const a=document.activeElement,keep=a&&qf.contains(a)&&a.dataset.k?[a.dataset.k,a.dataset.v]:null;
  const n=nAct()+!!F.q,tot=DATA.filter(d=>pass(d)).length;
@@ -136,7 +136,7 @@ function apply(){
   if(!act&&window.__qa!==false&&window.qColAll)window.qColAll();window.__qa=!!act;
   list.querySelectorAll('.qs').forEach(s=>{const v=s.querySelectorAll('.qi:not([hidden])').length;s.hidden=!v;if(act&&v){s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false}})}
  $q('qnone').hidden=!!hit.length;
- $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
+ $q('qsum').textContent=hit.length===DATA.length?DATA.length.toLocaleString('en-US')+' questions':hit.length.toLocaleString('en-US')+' of '+DATA.length.toLocaleString('en-US')+' questions';
  $q('qact').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
  const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;quick(hit);applyQA(hit,n);applyViews(hit,n)}
 function run(){apply();panel()}
@@ -148,7 +148,7 @@ function quick(hit){
  const el=$q('qquick');if(!el)return;
  el.innerHTML=QK.filter(x=>x[1]!=='H'||HASEX).map(x=>`<button type="button" class="qk${qon(x[0],x[1])?' on':''}" data-qk="${x[0]}" data-qv="${x[1]}" aria-pressed="${qon(x[0],x[1])}">${x[2]}</button>`).join('');
  const L=new Set(S.learned||[]),r=hit.filter(d=>L.has(d[3])).length;
- $q('qpu').style.width=Math.round(100*r/Math.max(hit.length,1))+'%';$q('qpt').textContent=r+' of '+hit.length+' learned';
+ $q('qpu').style.width=Math.round(100*r/Math.max(hit.length,1))+'%';$q('qpt').textContent=r.toLocaleString('en-US')+' of '+hit.length.toLocaleString('en-US')+' learned';
 }
 $q('qquick').addEventListener('click',e=>{const b=e.target.closest('[data-qk]');if(!b)return;const k=b.dataset.qk,v=b.dataset.qv;
  if(v==='H'){const on=qon(k,v);F.stars=on?F.stars.filter(x=>!HY().includes(x)):[...new Set([...F.stars,...HY()])];run()}else set(k,v)});
@@ -181,10 +181,10 @@ function applyQA(hit,n){if(!A)return;
  const per={};hit.forEach(d=>per[d[2]]=(per[d[2]]||0)+1);const act=n>0;let shown=0;
  A.querySelectorAll('a.topic').forEach(a=>{const t=(a.getAttribute('href')||'').replace('#/',''),c=a.querySelector('.cnt');
   if(c&&!c.dataset.o)c.dataset.o=c.textContent;const tot=DATA.filter(d=>d[2]===t).length,k=per[t]||0;
-  a.hidden=act&&!k;if(!a.hidden)shown++;if(c)c.textContent=act?k+' of '+tot+' questions':c.dataset.o});
+  a.hidden=act&&!k;if(!a.hidden)shown++;if(c)c.textContent=act?(+k).toLocaleString('en-US')+' of '+(+tot).toLocaleString('en-US')+' questions':c.dataset.o});
  A.querySelectorAll('section.part').forEach(sec=>{const cards=sec.querySelectorAll('a.topic');sec.hidden=act&&(!cards.length||![...cards].some(a=>!a.hidden))});
  $q('qanone').hidden=!(act&&!shown);
- $q('qsum2').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
+ $q('qsum2').textContent=hit.length===DATA.length?DATA.length.toLocaleString('en-US')+' questions':hit.length.toLocaleString('en-US')+' of '+DATA.length.toLocaleString('en-US')+' questions';
  $q('qact2').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
  const b=$q('qfn2');b.hidden=!n;b.textContent=n}
 function place(){const h=location.hash,inQ=/^#\/questions/.test(h),inA=!!A&&/^#\/qa/.test(h);

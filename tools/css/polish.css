@@ -76,14 +76,14 @@ html.zz-still .view:not([hidden]){animation:none}
  #zz-listen,.zsk{display:none!important}}
 
 /* ---- Life: small, quick motion that responds to touch and pointer ---- */
-.zz-tap{position:fixed;z-index:90;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,color-mix(in srgb,var(--lbl) 34%,transparent) 0%,color-mix(in srgb,var(--lbl) 14%,transparent) 55%,transparent 72%);animation:zztap .55s cubic-bezier(.2,.7,.3,1) forwards}
+.zz-tap{position:fixed;z-index:90;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,color-mix(in srgb,var(--lbl) 34%,transparent) 0%,color-mix(in srgb,var(--lbl) 14%,transparent) 55%,transparent 72%);animation:zztap .55s var(--zz-ease) forwards}
 @keyframes zztap{from{opacity:.95;transform:scale(.25)}to{opacity:0;transform:scale(1.9)}}
-button,.pill,.act,#bnav a,.mtile,.chips button,.qfbtn,.qchip,.pager a,.topic,.dc,.pc,.tbtile,.qi-h,.card>header,.nh-row a{transition:transform .18s cubic-bezier(.3,.8,.3,1),box-shadow .22s ease,background-color .2s ease,border-color .2s ease,color .2s ease}
-button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips button:active,.qfbtn:active,.qchip:active,.pager a:active,.tbtile:active{transform:scale(.95)}
-.topic:active,.dc:active,.pc:active,.qi-h:active,.card>header:active,.nh-row a:active{transform:scale(.985)}
+button,.pill,.act,#bnav a,.mtile,.chips button,.qfbtn,.qchip,.pager a,.topic,.dc,.pc,.tbtile,.qi-h,.card>header,.nh-row a{transition:transform .18s var(--zz-ease),box-shadow .22s ease,background-color .2s ease,border-color .2s ease,color .2s ease}
+button:active,.pill:active,.act:active,#bnav a:active,.chips button:active,.qfbtn:active,.qchip:active,.pager a:active{transform:scale(var(--press))}.mtile:active,.tbtile:active{transform:scale(var(--press-card))}
+.topic:active,.dc:active,.pc:active,.qi-h:active,.card>header:active,.nh-row a:active{transform:scale(var(--press-card))}
 @media(hover:hover){
  .topic:hover,.dc:hover,.pc:hover,.tbtile:hover,.mtile:hover,.pager a:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
- .topic:hover:active,.dc:hover:active,.pc:hover:active,.tbtile:hover:active,.mtile:hover:active,.pager a:hover:active{transform:translateY(-1px) scale(.985)}
+ .topic:hover:active,.dc:hover:active,.pc:hover:active,.tbtile:hover:active,.mtile:hover:active,.pager a:hover:active{transform:translateY(-1px) scale(var(--press-card))}
  #bnav a:hover,.chips button:hover,.qchip:hover{transform:translateY(-2px)}
  #tools button:hover{transform:translateY(-2px)}}
 .act.pop svg{animation:zzpop .3s ease-out}.act svg{transform-origin:50% 50%}.zz-tap{will-change:transform,opacity}
@@ -91,7 +91,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 .act[aria-pressed=true]{transition:background-color .3s ease,color .3s ease,border-color .3s ease}
 @keyframes zzspark{to{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
 .qi-a:not([hidden]),.qs-b:not([hidden]){animation:rise .2s ease-out}
-#bnav a[aria-current],#bnav a.on{transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+#bnav a[aria-current],#bnav a.on{transition:transform .3s var(--zz-ease)}
 #bnav a[aria-current] svg,#bnav a.on svg{animation:none}
 @keyframes zzbob{0%{transform:translateY(4px) scale(.85)}60%{transform:translateY(-3px) scale(1.12)}100%{transform:none}}
 @media(prefers-reduced-motion:reduce){.zz-tap{display:none}.act.pop svg,#bnav a svg{animation:none}
@@ -102,8 +102,8 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 #zz-tut-fx{position:fixed;inset:0;z-index:68;pointer-events:none}
 #zz-tut-fx .fl{position:fixed;inset:0;background:rgba(18,10,12,.3);opacity:0;transition:opacity .3s ease;pointer-events:none}
 #zz-tut-fx .sp{position:fixed;border-radius:16px;border:2px solid rgba(255,255,255,.95);box-shadow:0 0 0 100vmax rgba(18,10,12,.38);will-change:left,top,width,height}
-#zz-tut-fx.gl .sp{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),width .65s cubic-bezier(.45,0,.15,1),height .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}
-#zz-tut-fx.gl .hd{transition:left .65s cubic-bezier(.45,0,.15,1),top .65s cubic-bezier(.45,0,.15,1),opacity .4s ease}
+#zz-tut-fx.gl .sp{transition:left .65s var(--zz-move),top .65s var(--zz-move),width .65s var(--zz-move),height .65s var(--zz-move),opacity .4s ease}
+#zz-tut-fx.gl .hd{transition:left .65s var(--zz-move),top .65s var(--zz-move),opacity .4s ease}
 #zz-tut-fx .sp:after{content:"";position:absolute;inset:-5px;border-radius:20px;box-shadow:0 0 22px 4px color-mix(in srgb,var(--lbl) 55%,transparent);animation:zzrg 2s ease-in-out infinite}
 @keyframes zzrg{0%,100%{opacity:.55}50%{opacity:1}}
 #zz-tut-fx .hd{position:fixed;width:44px;height:44px;margin:-4px 0 0 -14px;will-change:left,top;filter:drop-shadow(0 4px 6px rgba(0,0,0,.45))}
@@ -113,7 +113,7 @@ button:active,.pill:active,.act:active,#bnav a:active,.mtile:active,.chips butto
 @keyframes zzhd{0%,100%{transform:translateY(8px)}45%{transform:translateY(-4px)}60%{transform:translateY(-4px) scale(.92)}}
 @keyframes zzhu{0%,100%{transform:rotate(180deg) translateY(8px)}45%{transform:rotate(180deg) translateY(-4px)}}
 @keyframes zzhr{0%,40%{opacity:0;transform:scale(.4)}55%{opacity:.9}100%{opacity:0;transform:scale(2)}}
-#zz-tut{position:fixed;left:0;top:0;z-index:70;width:min(420px,calc(100vw - 16px));max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px);overflow:auto;padding:0 0 14px;border-radius:22px;background:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:0 22px 60px rgba(0,0,0,.38),var(--glass-in);color:var(--text);-webkit-backdrop-filter:blur(24px) saturate(1.7);backdrop-filter:blur(18px) saturate(1.5);touch-action:pan-y;transition:transform .65s cubic-bezier(.45,0,.15,1);will-change:transform;animation:zzin .4s ease both}
+#zz-tut{position:fixed;left:0;top:0;z-index:70;width:min(420px,calc(100vw - 16px));max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px);overflow:auto;padding:0 0 14px;border-radius:22px;background:var(--glass-strong);border:1px solid var(--glass-bd);box-shadow:0 22px 60px rgba(0,0,0,.38),var(--glass-in);color:var(--text);-webkit-backdrop-filter:blur(24px) saturate(1.7);backdrop-filter:blur(18px) saturate(1.5);touch-action:pan-y;transition:transform .65s var(--zz-move);will-change:transform;animation:zzin .4s ease both}
 #zz-tut.dg{transition:none}#zz-tut .bd{transition:opacity .28s ease .08s,transform .28s ease .08s}#zz-tut.sw .bd{opacity:0;transform:translateY(5px);transition-duration:.15s;transition-delay:0s}
 #zz-tut .gr{display:flex;align-items:center;gap:10px;padding:10px 16px 6px;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
 #zz-tut .gr:active{cursor:grabbing}
@@ -224,10 +224,10 @@ html body :is(.sf-col h2,#v-mcqs .mx-h,.card .tg,.pager a small):not(#_){text-tr
 .ll-pencil{position:absolute;left:5%;bottom:12%;width:clamp(90px,26vw,140px);height:7px;border-radius:2px;transform:rotate(-22deg);
  background:linear-gradient(90deg,#2a2a2a 0 5%,#e8cd98 5% 13%,#c79d43 13% 91%,#c9858f 91%);box-shadow:4px 6px 9px rgba(0,0,0,.55)}
 .ll-book{position:absolute;left:50%;top:52%;width:min(52%,250px);aspect-ratio:3/4;transform-style:preserve-3d;
- transform:translate(-50%,-50%) rotateX(calc(34deg + var(--lx,0deg))) rotateY(var(--ly,0deg)) rotateZ(-7deg);transition:transform .75s cubic-bezier(.2,.8,.2,1)}
+ transform:translate(-50%,-50%) rotateX(calc(34deg + var(--lx,0deg))) rotateY(var(--ly,0deg)) rotateZ(-7deg);transition:transform .75s var(--zz-ease)}
 .ll-cover{position:absolute;inset:0;border:0;padding:0;margin:0;cursor:pointer;color:#e6c98f;text-align:left;border-radius:5px 14px 14px 5px;transform-origin:left center;
  background:linear-gradient(90deg,rgba(0,0,0,.38) 0 4%,rgba(255,255,255,.05) 5%,transparent 8%),radial-gradient(120% 90% at 32% 18%,#a3354f,#7a1f36 46%,#45101f);
- box-shadow:0 34px 40px -16px rgba(0,0,0,.85),inset 0 0 0 1px rgba(255,255,255,.07);transition:transform .85s cubic-bezier(.3,.7,.2,1),visibility 0s .85s}
+ box-shadow:0 34px 40px -16px rgba(0,0,0,.85),inset 0 0 0 1px rgba(255,255,255,.07);transition:transform .85s var(--zz-ease),visibility 0s .85s}
 .ll-cover:focus-visible{outline:2px solid #e6c98f;outline-offset:4px}
 .ll-foil{position:absolute;inset:9% 11%;border:1.5px solid rgba(230,201,143,.55);border-radius:4px;padding:14% 10% 10%;display:flex;flex-direction:column;gap:10px}
 html body .ll :is(.ll-foil small,.ll-foil em,.ll-k,.ll-close):not(#_){text-transform:uppercase!important;font-weight:700!important}
@@ -254,7 +254,7 @@ html body .ll :is(.ll-foil small,.ll-foil em,.ll-k,.ll-close):not(#_){text-trans
 .ll-list a{display:flex;gap:12px;align-items:baseline;min-height:44px;padding:9px 8px;border-radius:10px;color:#2a1627;text-decoration:none;font:600 14.5px/1.3 var(--body,system-ui,sans-serif)}
 .ll-list a span{min-width:2ch;font:400 17px 'DM Serif Display',var(--read);color:#7a1f36;font-variant-numeric:tabular-nums}
 .ll-list a:hover,.ll-list a:focus-visible{background:rgba(122,31,54,.08);outline:none}
-.ll-list.ll-turn{animation:ll-turn .45s cubic-bezier(.2,.8,.2,1)}.ll-list.ll-back{animation:ll-back .45s cubic-bezier(.2,.8,.2,1)}
+.ll-list.ll-turn{animation:ll-turn .45s var(--zz-ease)}.ll-list.ll-back{animation:ll-back .45s var(--zz-ease)}
 @keyframes ll-turn{from{opacity:0;transform:translateX(18px) rotateY(-8deg)}}@keyframes ll-back{from{opacity:0;transform:translateX(-18px) rotateY(8deg)}}
 .ll.calm *,.ll.calm{transition:none!important;animation:none!important}
 .ll.calm .ll-book{transform:translate(-50%,-50%)}
@@ -351,11 +351,11 @@ html body #v-qa .qa-hero .qa-k:not(#_){display:none!important}
 html body #v-qa a.topic>p{border-radius:10px!important}
 /* motion: press feedback, popovers grow from their trigger, a pulse confirms a toggle switched on */
 @media (prefers-reduced-motion:no-preference){
- :is(button,[role=button],.chips>button,a.nh-go,.zz-b,.zm-seg button):not(:disabled){transition:transform .12s cubic-bezier(.2,.8,.2,1)}
- :is(button,[role=button],.chips>button,a.nh-go,.zz-b,.zm-seg button):not(:disabled):active{transform:scale(.97)}
+ :is(button,[role=button],.chips>button,a.nh-go,.zz-b,.zm-seg button):not(:disabled){transition:transform .12s var(--zz-ease)}
+ :is(button,[role=button],.chips>button,a.nh-go,.zz-b,.zm-seg button):not(:disabled):active{transform:scale(var(--press))}
  @keyframes zz-pop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
- #tools .zz-more,#zq-aap{animation:zz-pop .18s cubic-bezier(.2,.8,.2,1);transform-origin:top right}
- .an-pop{animation:zz-pop .16s cubic-bezier(.2,.8,.2,1);transform-origin:50% 100%}
+ #tools .zz-more,#zq-aap{animation:zz-pop .18s var(--zz-ease);transform-origin:top right}
+ .an-pop{animation:zz-pop .16s var(--zz-ease);transform-origin:50% 100%}
  @keyframes zz-pulse{50%{transform:scale(1.08)}}
- .zz-pulse{animation:zz-pulse .28s cubic-bezier(.2,.8,.2,1)}
+ .zz-pulse{animation:zz-pulse .28s var(--zz-ease)}
 }

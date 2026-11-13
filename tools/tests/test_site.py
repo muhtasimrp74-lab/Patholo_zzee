@@ -661,10 +661,30 @@ class Browser(unittest.TestCase):
         self.assertEqual(pg.evaluate('location.hash'), '#/qa'); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0)
         for h in ('#/questions', '#/05', '#/mcqs', '#/textbook', '#/menu'): pg.goto(URL + h); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0, h)
         self.assertEqual(self.errs, [])
+    # each screen scrolls inside its own .view pane on phones, so the document never grows sideways: measure the pane on screen too
+    SIDE = "()=>{const v=[...document.querySelectorAll('.view')].find(x=>!x.hidden&&x.getBoundingClientRect().width>0&&Math.abs(x.getBoundingClientRect().left)<2);return Math.max(v?v.scrollWidth-v.clientWidth:0,document.documentElement.scrollWidth-innerWidth)}"
+    def test_no_pane_scrolls_sideways_on_phones(self):   # bug: Questions cards ran 56-126px off the screen and clipped the Answer button
+        for w in (360, 390):
+            pg = self.b.new_page(viewport={'width': w, 'height': 800}, has_touch=True, is_mobile=True)
+            pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+            for h, js in (('#/questions', "()=>{const s=document.querySelector('#v-questions .qs-h');s&&s.click()}"), ('#/qa', None), ('#/', None), ('#/02', "()=>{const c=document.querySelector('#v-02 article.card header');c&&c.click()}"), ('#/mcqs', "()=>{const n=document.querySelector('#v-mcqs .mx-next');n&&n.click()}")):
+                pg.goto(URL + h); pg.wait_for_timeout(900)
+                if js: pg.evaluate(js); pg.wait_for_timeout(700)
+                self.assertLessEqual(pg.evaluate(self.SIDE), 0, '%s scrolls sideways at %d' % (h, w))
+                if h == '#/questions':
+                    self.assertGreater(pg.locator('#v-questions .qi-h:visible').count(), 0, 'a section is open')
+                    r = pg.evaluate("()=>{const g=[...document.querySelectorAll('#v-questions .qi-h .qgo')].find(e=>e.getBoundingClientRect().width);return g?g.getBoundingClientRect().right<=innerWidth:null}")
+                    self.assertTrue(r, 'the Answer button is fully on screen at %d' % w)
+                    self.assertRegex(pg.inner_text('#qpt'), r'of 1,\d{3} learned', 'figures carry a thousands separator')
+                if h == '#/qa': self.assertRegex(pg.inner_text('#qsum2'), r'^1,\d{3} questions')
+            pg.goto(URL + '#/'); pg.wait_for_timeout(800)   # the quiz above hides the header
+            hit = pg.evaluate("()=>[...document.querySelectorAll('#tools>button')].filter(b=>b.getBoundingClientRect().width).map(b=>{const r=b.getBoundingClientRect(),a=getComputedStyle(b,'::after');return [r.width+Math.abs(parseFloat(a.left)||0)+Math.abs(parseFloat(a.right)||0),r.height+Math.abs(parseFloat(a.top)||0)+Math.abs(parseFloat(a.bottom)||0)]})")
+            self.assertTrue(hit and all(x[0] >= 37.5 and x[1] >= 43.5 for x in hit), 'header icons answer a 44px-tall finger (38px wide at least: they touch each other) at %d: %r' % (w, hit))
+            pg.close()
     def test_home_banner_responsive_no_overflow(self):
         for w, h in ((1440, 900), (820, 1100), (390, 844), (360, 740)):
             pg = self.b.new_page(viewport={'width': w, 'height': h}); pg.goto(URL + '#/'); pg.wait_for_timeout(700)
-            self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'horizontal overflow at %d' % w)
+            self.assertLessEqual(pg.evaluate(self.SIDE), 0, 'horizontal overflow at %d' % w)
             r = pg.evaluate("()=>{const b=document.querySelector('.nh-banner').getBoundingClientRect(),c=document.querySelector('.nh-bn-cta').getBoundingClientRect();return [b.height,c.bottom,c.right<=innerWidth]}")
             self.assertTrue(r[2], w); self.assertLess(r[1], h, 'CTA below the fold at %d' % w)
             if w >= 1000: self.assertTrue(240 <= r[0] <= 380, r[0])   # owner: banners were taking too much space; a compact band
@@ -680,7 +700,7 @@ class Browser(unittest.TestCase):
                 if r == 'menu': self.assertEqual(pg.locator('#v-menu .pb img').count(), 0, 'the Menu header is typographic')
                 else: self.assertGreater(pg.evaluate("()=>document.querySelector('#v-%s .pb img').naturalWidth" % r), 0, 'banner image failed: ' + r)
                 self.assertEqual(pg.locator('#v-%s h1:visible' % r).count(), 1, r); self.assertEqual(pg.inner_text('#v-%s h1' % r).strip(), t)
-                self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'overflow %s at %d' % (r, w))
+                self.assertLessEqual(pg.evaluate(self.SIDE), 0, 'overflow %s at %d' % (r, w))
             pg.goto(URL + '#/05'); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.pb:visible').count(), 0, 'banner leaked onto a topic page')
             self.assertEqual(errs, []); pg.close()
     def test_questions_default_collapsed_and_filters(self):

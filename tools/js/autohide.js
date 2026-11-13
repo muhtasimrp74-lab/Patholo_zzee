@@ -8,7 +8,7 @@
  const bars=()=>{const now=performance.now();if(!els||now-elsAt>1000){els=[...document.querySelectorAll('nav.nav,#tools,#bnav,#an-fab,.bar,.fx-top')];elsAt=now}return els};
  const write=()=>{raf=0;f=want;const v=f.toFixed(3);for(const e of bars())e.style.setProperty('--zz-f',v);const h=f>=1;if(de.classList.contains('zz-hide')!==h)de.classList.toggle('zz-hide',h)};
  const put=v=>{want=Math.max(0,Math.min(1,v));if(!raf)raf=requestAnimationFrame(write)};
- const ease=on=>{for(const e of bars())e.style.transition=on?(RM.matches?'none':'translate .3s cubic-bezier(.2,.8,.2,1),top .3s cubic-bezier(.2,.8,.2,1)'):'none'};
+ const ease=on=>{for(const e of bars())e.style.transition=on?(RM.matches?'none':'translate .3s var(--zz-ease),top .3s var(--zz-ease)'):'none'};
  const settle=v=>{clearTimeout(snapT);follow=false;ease(true);put(v);setTimeout(()=>{if(!follow)for(const e of bars())e.style.transition=''},340)};
  document.addEventListener('scroll',e=>{const el=e.target===document?document.scrollingElement||de:e.target;if(!(el instanceof Element))return;
   const v=el.scrollTop,p=last.get(el);last.set(el,v);if(p==null||v===p||el.scrollHeight<=el.clientHeight+4)return;
