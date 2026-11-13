@@ -444,3 +444,50 @@ html:root body .qs-h .cnt:is(*,#zzp#zzp){display:inline-block;min-width:3.5ch;te
  html:root body .zz-welcome a::after{content:"";position:absolute;left:0;right:0;top:-2px;bottom:-2px}
  html:root body details.nh-sx>summary::before{content:"";position:absolute;left:0;right:0;top:-4px;bottom:-4px}
 }
+
+/* ---- Questions list (owner's layout). Phones: plain rows under collapsible topic bands, the whole row is the tap target.
+   From 700px: a table, Question | Type | Rating | Where it appeared, in a 1040px column. Colours are the owner's; dark mode
+   maps them onto the palette tokens. ---- */
+#v-questions{--ql-div:#e7e2ea;--ql-chip:#efe7eb;--ql-chip-ink:#4d3b46;--ql-src:#6e2a49;--ql-mar:#7a1f3d;--ql-band:#f9ecf1}
+html:root[data-theme=dark]:not([data-tone=fluo]) #v-questions{--ql-div:var(--line);--ql-chip:var(--soft);--ql-chip-ink:var(--text);--ql-src:var(--blue);--ql-mar:var(--blue);--ql-band:var(--soft)}
+@media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]) #v-questions{--ql-div:var(--line);--ql-chip:var(--soft);--ql-chip-ink:var(--text);--ql-src:var(--blue);--ql-mar:var(--blue);--ql-band:var(--soft)}}
+html:root body #v-questions .qs-b:is(*,#zzp#zzp#zzp){gap:0!important;padding:0!important}
+html:root body #v-questions .qi:is(*,#zzp#zzp#zzp){border:0!important;border-radius:0!important;box-shadow:none!important;background:none!important;margin:0!important;padding:0!important}
+html:root body #v-questions .qi.tc{display:none!important}
+html:root body #v-questions .qall .qi.tc:not([hidden]){display:block!important}
+html:root body #v-questions .qi-h:is(*,#zzp#zzp#zzp){display:flex!important;flex-wrap:wrap!important;align-items:baseline!important;gap:0!important;width:100%!important;min-height:0!important;box-sizing:border-box!important;padding:14px 16px!important;border:0!important;border-bottom:1px solid var(--ql-div)!important;border-radius:0!important;background:none!important;box-shadow:none!important;text-align:left!important;transform:none!important}
+html:root body #v-questions .qi-h::before,html:root body #v-questions .qi-h .code{display:none!important}
+html:root body #v-questions .qi-h .qt:is(*,#zzp#zzp#zzp){flex:0 0 100%!important;min-width:0!important;margin:0 0 8px!important;padding:0!important}
+html:root body #v-questions .qi-h .tg:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-size:9.5px!important;font-weight:600!important;text-transform:uppercase!important;letter-spacing:.09em!important;line-height:1.4!important;color:var(--ql-mar)!important;border:0!important;background:none!important;padding:0!important;margin:0!important}
+html:root body #v-questions .qi-h .qr:is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-size:10.5px!important;font-weight:500!important;line-height:1.4!important;color:var(--muted)!important;white-space:nowrap}
+html:root body #v-questions .qi-h .qr::before{content:"\00a0\00b7\00a0"}
+html:root body #v-questions .qi-h .qr.z{display:none}
+html:root body #v-questions .qi-h .xm:is(*,#zzp#zzp#zzp){flex:0 0 100%!important;display:flex!important;flex-wrap:wrap!important;gap:4px!important;margin:8px 0 0!important;padding:0!important}
+html:root body #v-questions .qi-h .ex-y:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){background:var(--ql-chip)!important;color:var(--ql-chip-ink)!important;font-size:10.5px!important;font-weight:600!important;line-height:1.2!important;letter-spacing:0!important;padding:5px 7px!important;border:0!important;border-radius:.1875rem!important;margin:0!important}
+html:root body #v-questions .qi-h .ex-y .ex-p:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:var(--ql-src)!important;font-size:inherit!important;font-weight:inherit!important;margin-right:.3em!important}
+html:root body #v-questions .qsub:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;margin:0!important;padding:14px 16px 10px!important;font-family:var(--body)!important;font-size:12.5px!important;font-weight:600!important;letter-spacing:0!important;color:var(--ql-mar)!important;border:0!important}
+html:root body #v-questions .qca:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){position:relative!important;appearance:none;background:none!important;border:0!important;padding:0!important;min-height:0!important;font-size:10.5px!important;font-weight:400!important;color:var(--ql-mar)!important;text-decoration:underline!important;text-underline-offset:3px!important;white-space:nowrap!important;cursor:pointer;transform:none!important}
+html:root body #v-questions .qca::after{content:"";position:absolute;inset:-15px -8px}
+html:root body #v-questions .qtop:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){display:flex!important;align-items:center!important;gap:10px!important;min-height:44px!important;box-sizing:border-box!important;margin:0!important;padding:12px 16px!important;font-family:var(--body)!important;font-size:12.5px!important;font-weight:600!important;letter-spacing:0!important;color:var(--text)!important;background:var(--panel)!important;border:0!important;border-bottom:1px solid var(--ql-div)!important;cursor:pointer}
+html:root body #v-questions .qtop::before{content:none!important}
+html:root body #v-questions .qtop[aria-expanded=true]:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){background:var(--ql-band)!important;color:var(--ql-mar)!important}
+html:root body #v-questions .qtop .chv{flex:none;width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transform:rotate(-90deg)}
+html:root body #v-questions .qtop[aria-expanded=true] .chv{transform:none}
+html:root body #v-questions .qtop b{flex:1 1 auto;min-width:0;font:inherit}
+html:root body #v-questions .qtop .qtn:is(*,#zzp#zzp#zzp){font-size:10.5px!important;font-weight:400!important;color:var(--muted)!important;white-space:nowrap}
+html:root body #v-questions :is(.qtop,.qsub)[hidden]:is(*,#zzp#zzp#zzp#zzp#zzp#zzp#zzp){display:none!important}
+html:root body #v-questions .qth{display:none}
+@media(min-width:700px){
+ html:root body #v-questions :is(#qlist,#qflat){max-width:1040px;margin-inline:auto}
+ html:root body #v-questions .qth{display:grid;grid-template-columns:minmax(0,1.5fr) 118px 62px minmax(0,1fr);column-gap:16px;padding:10px 24px;border-bottom:2px solid var(--rule);color:var(--muted)}
+ html:root body #v-questions .qth span:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-family:var(--body)!important;font-size:9.5px!important;font-weight:600!important;text-transform:uppercase!important;letter-spacing:.09em!important}
+ html:root body #v-questions .qi-h:is(*,#zzp#zzp#zzp#zzp){display:grid!important;grid-template-columns:minmax(0,1.5fr) 118px 62px minmax(0,1fr)!important;column-gap:16px!important;align-items:start!important;padding:16px 24px!important}
+ html:root body #v-questions .qi-h .qt:is(*,#zzp#zzp#zzp#zzp){margin:0!important;font-size:1.125rem!important;line-height:1.3!important}
+ html:root body #v-questions .qi-h :is(.tg,.qr,.xm){align-self:start!important;justify-self:start!important}
+ html:root body #v-questions .qi-h .tg:is(*,#zzp#zzp#zzp#zzp#zzp#zzp#zzp){padding-top:5px!important}
+ html:root body #v-questions .qi-h .qr:is(*,#zzp#zzp#zzp#zzp){padding-top:4px}
+ html:root body #v-questions .qi-h .qr::before{content:none}
+ html:root body #v-questions .qi-h .qr.z{display:inline}
+ html:root body #v-questions .qi-h .xm:is(*,#zzp#zzp#zzp#zzp){margin:0!important}
+ html:root body #v-questions :is(.qsub,.qtop):is(*,#zzp#zzp#zzp#zzp#zzp#zzp#zzp){padding-left:24px!important;padding-right:24px!important}
+}

@@ -673,8 +673,8 @@ class Browser(unittest.TestCase):
                 self.assertLessEqual(pg.evaluate(self.SIDE), 0, '%s scrolls sideways at %d' % (h, w))
                 if h == '#/questions':
                     self.assertGreater(pg.locator('#v-questions .qi-h:visible').count(), 0, 'a section is open')
-                    r = pg.evaluate("()=>{const g=[...document.querySelectorAll('#v-questions .qi-h .qgo')].find(e=>e.getBoundingClientRect().width);return g?g.getBoundingClientRect().right<=innerWidth:null}")
-                    self.assertTrue(r, 'the Answer button is fully on screen at %d' % w)
+                    r = pg.evaluate("()=>{const g=[...document.querySelectorAll('#v-questions .qi-h')].find(e=>e.getBoundingClientRect().width);return [g.getBoundingClientRect().right<=innerWidth,document.querySelectorAll('#v-questions .qi-h .qgo').length]}")
+                    self.assertEqual(r, [True, 0], 'rows fit the screen and are the tap target themselves (no Answer button) at %d' % w)
                     self.assertRegex(pg.inner_text('#qpt'), r'of 1,\d{3} learned', 'figures carry a thousands separator')
                 if h == '#/qa': self.assertRegex(pg.inner_text('#qsum2'), r'^1,\d{3} questions')
             pg.goto(URL + '#/'); pg.wait_for_timeout(800)   # the quiz above hides the header
