@@ -8,17 +8,19 @@ const IMG={questions:'questions',qa:'chapters',mcqs:'mcqs',textbook:'textbook',m
    loading="eager" is written out (it is the default) so the pager's idle-time eager stamp does not change the DOM later. */
 const PIC={questions:1,chapters:1,mcqs:1,textbook:2};
 const $1=(v,sel,re)=>{const m=document.querySelectorAll('#v-'+v+' main '+sel);for(const e of m)if(!re||re.test(e.textContent.trim()))return e;return null};
+/* every figure reads the same way: 1,404, never 1404 */
+const fmt=s=>String(s).replace(/\d[\d,]*/g,x=>{const n=+x.replace(/,/g,'');return isFinite(n)?n.toLocaleString('en-US'):x});
 const num=(v,re)=>{const m=re.exec(((document.getElementById('v-'+v)||{}).textContent||'').replace(/\s+/g,' '));return m?m[1]:null};
 const click=(v,sel,re)=>()=>{const e=$1(v,sel,re);if(e)e.click()};
 const go=h=>()=>{location.hash=h};
 /* each spec: acts = [label|fn, handler, primary?]; stats = fn returning an array of strings */
 const SPEC={
  questions:{acts:[['Random question',click('questions','button',/Random question/),1],['Practice',go('#/practice')]],
-  stats:()=>{const t=($1('questions','.qfc.on')||{}).textContent,n=t&&t.replace(/\D/g,''),l=num('questions',/(\d+ of \d[\d,]* learned)/);return[n&&(+n).toLocaleString('en-US')+' questions','viva and written',l]}},
+  stats:()=>{const t=($1('questions','.qfc.on')||{}).textContent,n=t&&t.replace(/\D/g,''),l=num('questions',/([\d,]+ of [\d,]+ learned)/);return[n&&(+n).toLocaleString('en-US')+' questions','viva and written',l]}},
  qa:{acts:[[()=>{const e=$1('qa','a,button',/^Start/);return e?e.textContent.trim():'Start studying'},click('qa','a,button',/^Start/),1],['All questions',go('#/questions')]],
-  stats:()=>{const c=num('qa',/(\d+)\s*chapters/);const t=($1('qa','.qfc.on')||{}).textContent,n=t&&t.replace(/\D/g,'');return[n&&(+n).toLocaleString('en-US')+' questions',c&&c+' chapters']}},
+  stats:()=>{const c=num('qa',/([\d,]+)\s*chapters/);const t=($1('qa','.qfc.on')||{}).textContent,n=t&&t.replace(/\D/g,'');return[n&&(+n).toLocaleString('en-US')+' questions',c&&c+' chapters']}},
  mcqs:{acts:[['Quick 10',click('mcqs','.mx-next'),1],['Mock paper',click('mcqs','.mx-tile.t3')]],
-  stats:()=>{const n=num('mcqs',/(\d+) questions/);return[n&&n+' MCQs','single best answer and true/false']}},
+  stats:()=>{const n=num('mcqs',/([\d,]+) questions/);return[n&&n+' MCQs','single best answer and true/false']}},
  textbook:{acts:[[()=>{const e=$1('textbook','a.tbcont');return e?(e.textContent.indexOf('Continue')>-1?'Continue reading':'Start reading'):'Start reading'},()=>{const e=$1('textbook','a.tbcont');if(e)location.hash=e.getAttribute('href')},1],['Questions',go('#/questions')]],
   stats:()=>{const n=document.querySelectorAll('#v-textbook main a.tbtile').length;return[n&&n+' chapters','saved for offline reading']}},
  menu:{acts:[],stats:()=>[]}  /* the profile card below the banner carries the Menu's actions */
@@ -29,8 +31,8 @@ function build(id,box){
  sp.acts.forEach(x=>{const b=document.createElement('button');b.type='button';b.className='pb-btn'+(x[2]?' pb-p':' pb-lk');b.dataset.l=typeof x[0]==='function'?'1':'';b.textContent=typeof x[0]==='function'?x[0]():x[0];b.addEventListener('click',x[1]);a.appendChild(b)});
  const c=document.createElement('p');c.className='pb-chips';
  if(sp.acts.length)box.appendChild(a);box.appendChild(c);
- const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean)}catch(e){}const key=s.join('\u0001');   /* rebuild only when the stats changed (a swipe re-ran this and shifted the banner) */
-   if(c.dataset.k!==key){c.dataset.k=key;c.textContent=s.join(' \u00B7 ');c.hidden=!s.length}
+ const fill=()=>{let s=[];try{s=sp.stats().filter(Boolean).map(fmt)}catch(e){}const key=s.join('\u0001');   /* rebuild only when the stats changed (a swipe re-ran this and shifted the banner) */
+   if(c.dataset.k!==key){c.dataset.k=key;c.textContent='';s.forEach((x,i)=>{if(i)c.appendChild(document.createTextNode(' \u00B7 '));const e=document.createElement('span');e.textContent=x;c.appendChild(e)});c.hidden=!s.length}   /* one span per stat: a line may break between stats, never inside one */
   sp.acts.forEach((x,i)=>{if(typeof x[0]==='function'){const t=x[0]();if(a.children[i].textContent!==t)a.children[i].textContent=t}})};   /* write only on change, so the repeated checks below leave the DOM alone */
  fill();[300,1200,3000].forEach(t=>setTimeout(fill,t));addEventListener('hashchange',()=>setTimeout(fill,250));
  /* the figures come from content the page draws later (e.g. the Textbook chapter tiles); on a slow device that can be after the

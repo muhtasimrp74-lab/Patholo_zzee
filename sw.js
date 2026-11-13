@@ -9,7 +9,7 @@
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    VERSION is written by tools/sw_stamp.py at build time: a hash of index.html and every precached file, so it changes exactly
    when the site does (never edit it by hand). */
-const VERSION = 'pathviva-zzee-2a9128546f';
+const VERSION = 'pathviva-zzee-fa272d887a';
 
 const CORE = [
   'index.html',
@@ -37,19 +37,13 @@ const CORE = [
   'icons/pb-mcqs.webp',
   'icons/pb-mcqs-900.webp',
   'icons/pb-textbook.svg',
-  'fonts/caveat-latin-500-normal.woff2',
-  'fonts/merriweather-latin-400-normal.woff2',
-  'fonts/merriweather-latin-700-normal.woff2',
-  'fonts/oswald-latin-500-normal.woff2',
-  'fonts/oswald-latin-600-normal.woff2',
   'fonts/anton-latin-400-normal.woff2',
-  'fonts/abril-fatface-latin-400-normal.woff2',
-  'fonts/gloock-latin-400-normal.woff2',
-  'fonts/fredoka-latin-500-normal.woff2',
-  'fonts/fredoka-latin-600-normal.woff2',
-  'fonts/pt-serif-latin-400-normal.woff2',
-  'fonts/pt-serif-latin-700-normal.woff2',
-  'fonts/caveat-latin-700-normal.woff2'
+  'fonts/oswald-latin-wght-normal.woff2',
+  'fonts/tan-buster-bold.woff2',
+  'fonts/tinos-subset-400-normal.woff2',
+  'fonts/tinos-subset-700-normal.woff2',
+  'fonts/tinos-subset-400-italic.woff2',
+  'fonts/tinos-subset-700-italic.woff2'
 ];
 
 self.addEventListener('install', event => {

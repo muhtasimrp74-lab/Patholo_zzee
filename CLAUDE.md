@@ -10,7 +10,7 @@ annotations). The page is **generated**: `tools/build.py` assembles `index.html`
 - **Never read or hand-edit `index.html`** (1.9 MB, generated, very long lines). Find things with `grep -o '.{0,80}needle.{0,80}' index.html | head`.
 - Never bump the service-worker `VERSION` by hand: the build stamps it from the content it caches.
 - Never commit gated content. Paths in `tools/private_paths.txt` are untracked on purpose (answers, MCQs, textbook sources, the page template).
-- Do not change answer or textbook text metrics (font, size, spacing inside `.ans` / `#tbbody`): saved annotations sit on that text.
+- Do not change answer or textbook line pitch or block spacing inside `.ans` / `#tbbody` (27.2px paragraphs and 25.6px list lines in answers; 29.4px and 26.4px in the textbook): saved annotations sit on those lines. The family changed once, on the owner's instruction (2026-11-13), to Times New Roman at a size that keeps the old pitch.
 - Many source files have very long lines. Read with `cut -c1-200` or `grep -o`, not `cat`.
 
 ## Layout
@@ -59,3 +59,8 @@ The build is deterministic. After a refactor, `git status` must show no change t
 - `tools/tests/test_lazy_probe.py` compares two builds of the page; anything that changes the DOM on a timer can make it flaky.
 - CSS in the older layers uses ids and `!important` freely. `plain.css` wins with `:is(*,#zzp#zzp)` (matches everything, counts as two ids).
 - In some sandboxes, tests that call `set_viewport_size` fail with a Playwright protocol error; that is environmental.
+
+
+## Design system (2026-11-13)
+
+`tools/css/plain.css` (loaded last) is the design layer; its header comment explains the idea. Four typefaces only, one job each: TAN Buster (wordmark, top-level page titles), Anton (headings, numerals), Oswald (interface), Times New Roman (everything read; Tinos is the metric-compatible fallback where it is not installed). `test_only_the_four_typefaces_are_used` enforces this. Palette is H&E: haematoxylin ink `#23153A`, eosin `#F4B9CA` (titles on the dark bands, selection), burgundy `#7A1F36` for actions. Page title bands are compact and dark (plate + gradient); keep them under about 340px on phones. Corners are square (build.py rewrites radii: panels 0, controls 2px). Banner artwork is reprinted as two-colour plates by `tools/make_duotone.py`; the share card by `tools/make_og.py`.

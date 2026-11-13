@@ -39,7 +39,7 @@
 .tbs-tag{padding:4px 12px;border-radius:99px;background:color-mix(in srgb,var(--k) 15%,transparent);color:var(--k);font:700 .72rem var(--body);letter-spacing:.1em;text-transform:uppercase}
 .tbs-k .tbs-h{justify-content:space-between}
 .tbi{margin:0 0 14px;padding:0 4px}
-.tb,.tbi{font:400 1.05rem/1.75 Charter,'Iowan Old Style','Palatino Linotype',Georgia,serif;color:var(--text)}
+.tb,.tbi{font:400 1.05rem/1.75 var(--read);color:var(--text)}
 .tb p,.tbi p{margin:.95rem 0 0;overflow-wrap:break-word}
 .tb b,.tbi b{font-weight:700;color:var(--navy);background:none;text-decoration:none}
 .tb i,.tbi i{color:var(--muted)}
@@ -75,7 +75,7 @@
 .tbm-t{display:inline-block;margin:10px 0 0;padding:4px 12px;border-radius:99px;background:color-mix(in srgb,var(--burgundy,#7A1F36) 15%,transparent);color:var(--burgundy,#7A1F36);font:700 .72rem var(--body);letter-spacing:.12em;text-transform:uppercase}
 .tbm h5{margin-top:1.3rem}.tbm .tbf{background:var(--panel)}
 .tbsum{margin:1.4rem 0 12px;padding:18px 20px;border-radius:18px;background:var(--g-mist,var(--soft));border:1px solid var(--line)}
-.tbsum-t{margin-bottom:6px;color:var(--lbl);font:700 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase}.tbsum p{margin:0;font:400 1.02rem/1.7 Charter,Georgia,serif;color:var(--text)}
+.tbsum-t{margin-bottom:6px;color:var(--lbl);font:700 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase}.tbsum p{margin:0;font:400 1.02rem/1.7 var(--read);color:var(--text)}
 .tb ol.tbrefs{margin:.8rem 0 0}.tb ol.tbrefs li{font:400 .88rem/1.55 var(--body);color:var(--muted);padding-left:1.8rem}
 
 /* contents: read down, then the next column */

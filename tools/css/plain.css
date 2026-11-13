@@ -1,21 +1,27 @@
 
-/* ===== plain.css: the plain-look layer. Loaded LAST (after every other stylesheet in the page) so that one block can undo the
-   decorative styling spread over the older layers without editing each of them: neutral palette with burgundy as the only accent,
-   system fonts, 8px buttons / 12px cards, no gradients, no glow shadows, one 1px border on cards, sentence-case labels, no ambient
-   animation. Content, behaviour and layout logic are not touched here.
+/* ===== plain.css: the design layer. Loaded LAST (after every other stylesheet in the page), so this one file decides how the site
+   looks without editing the older layers underneath it.
+   The idea: a pathology revision booklet printed in the colours of an H&E slide. Haematoxylin violet is the ink, eosin pink is the
+   field colour behind every page title, burgundy (the logo colour) is kept for the things you press. Flat paper, square corners,
+   no gradients, no shadows, no ambient animation.
+   Four typefaces, one job each (see "type system" below): TAN Buster, Anton, Oswald, Times New Roman.
    Specificity: the older layers use ids and !important freely. ":is(*,#zzp#zzp)" matches every element (because of the *) but
    counts as two ids, so a rule written with it wins without having to copy each older selector. #zzp does not exist. ===== */
 
-/* ---- palette (18): neutral near-white / neutral paper / neutral dark; burgundy stays the single accent ---- */
-html:root{--bg:#FAFAF9;--panel:#FFFFFF;--text:#1B1B1D;--navy:#1B1B1D;--muted:#5C5C63;--line:#E3E3E0;--line2:#CFCFCB;--soft:#F1F1EF;--chip:#F1F1EF;
- --accbg:#F4E9EC;--infobg:#F3F3F1;--paper:#FFFFFF;--ivory:#FAFAF9;--blue:#7A1F36;--lbl:#7A1F36;--btn:#7A1F36;--btnh:#93304A;
- --zz-surface:#FFFFFF;--zz-sunken:#FAFAF9;--zz-ink:#1B1B1D;--zz-ink-2:#5C5C63;--zz-hair:#E3E3E0;--zz-hair-2:#CFCFCB}
-html:root[data-theme=light][data-tone=sepia]{--bg:#F3EFE6;--panel:#FAF7F0;--text:#2B2620;--navy:#2B2620;--muted:#5E574C;--line:#DCD5C6;--line2:#C9C1B0;--soft:#EAE5D9;--chip:#EAE5D9;
- --accbg:#EADCDA;--infobg:#EAE5D9;--zz-surface:#FAF7F0;--zz-sunken:#F3EFE6;--zz-ink:#2B2620;--zz-ink-2:#5E574C;--zz-hair:#DCD5C6;--zz-hair-2:#C9C1B0}
-html:root[data-theme=dark]:not([data-tone=fluo]){--bg:#161618;--panel:#1F1F22;--text:#EDEDEE;--navy:#EDEDEE;--muted:#ABABB2;--line:#333338;--line2:#48484E;--soft:#29292D;--chip:#29292D;
- --accbg:#35252B;--infobg:#29292D;--zz-surface:#1F1F22;--zz-sunken:#161618;--zz-ink:#EDEDEE;--zz-ink-2:#ABABB2;--zz-hair:#333338;--zz-hair-2:#48484E}
-@media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]){--bg:#161618;--panel:#1F1F22;--text:#EDEDEE;--navy:#EDEDEE;--muted:#ABABB2;--line:#333338;--line2:#48484E;--soft:#29292D;--chip:#29292D;
- --accbg:#35252B;--infobg:#29292D;--zz-surface:#1F1F22;--zz-sunken:#161618;--zz-ink:#EDEDEE;--zz-ink-2:#ABABB2;--zz-hair:#333338;--zz-hair-2:#48484E}}
+/* ---- palette ---- */
+html:root{--bg:#FFFFFF;--panel:#FFFFFF;--text:#23153A;--navy:#23153A;--muted:#5E5270;--line:#E2DAE8;--line2:#BFB3CC;--soft:#FAEEF2;--chip:#FAEEF2;
+ --accbg:#F7D5DF;--infobg:#FAEEF2;--paper:#FFFFFF;--ivory:#FFFFFF;--blue:#7A1F36;--lbl:#7A1F36;--btn:#7A1F36;--btnh:#5C1528;
+ --zz-surface:#FFFFFF;--zz-sunken:#FAEEF2;--zz-ink:#23153A;--zz-ink-2:#5E5270;--zz-hair:#E2DAE8;--zz-hair-2:#BFB3CC;
+ --field:#F4B9CA;--field-ink:#23153A;--field-ink2:#4B2B50;--rule:#23153A;--plate:#1C102F}
+html:root[data-theme=light][data-tone=sepia]{--bg:#F6F0E8;--panel:#FCF8F1;--text:#2B2030;--navy:#2B2030;--muted:#5F5560;--line:#DED4CC;--line2:#C6B9B6;--soft:#EFE3DF;--chip:#EFE3DF;
+ --accbg:#EBD0D3;--infobg:#EFE3DF;--zz-surface:#FCF8F1;--zz-sunken:#F6F0E8;--zz-ink:#2B2030;--zz-ink-2:#5F5560;--zz-hair:#DED4CC;--zz-hair-2:#C6B9B6;
+ --field:#EBBFC8;--field-ink:#2B2030;--field-ink2:#4E3348;--rule:#2B2030}
+html:root[data-theme=dark]:not([data-tone=fluo]){--bg:#150E21;--panel:#1D142D;--text:#F2EAF4;--navy:#F2EAF4;--muted:#B7ABC6;--line:#33264A;--line2:#4D3D69;--soft:#261A3A;--chip:#261A3A;
+ --accbg:#4A1D31;--infobg:#261A3A;--blue:#F0A3B9;--lbl:#F0A3B9;--btn:#A6324F;--btnh:#BD4263;--zz-surface:#1D142D;--zz-sunken:#150E21;--zz-ink:#F2EAF4;--zz-ink-2:#B7ABC6;--zz-hair:#33264A;--zz-hair-2:#4D3D69;
+ --field:#2E1D4A;--field-ink:#F6E9F1;--field-ink2:#D9C3DB;--rule:#F2EAF4}
+@media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]){--bg:#150E21;--panel:#1D142D;--text:#F2EAF4;--navy:#F2EAF4;--muted:#B7ABC6;--line:#33264A;--line2:#4D3D69;--soft:#261A3A;--chip:#261A3A;
+ --accbg:#4A1D31;--infobg:#261A3A;--blue:#F0A3B9;--lbl:#F0A3B9;--btn:#A6324F;--btnh:#BD4263;--zz-surface:#1D142D;--zz-sunken:#150E21;--zz-ink:#F2EAF4;--zz-ink-2:#B7ABC6;--zz-hair:#33264A;--zz-hair-2:#4D3D69;
+ --field:#2E1D4A;--field-ink:#F6E9F1;--field-ink2:#D9C3DB;--rule:#F2EAF4}}
 
 /* ---- gradients, glass, glow (9, 10): every shared token becomes flat ---- */
 html:root:not([data-tone=fluo]){--g-btn:linear-gradient(var(--btn),var(--btn));--g-pulse:linear-gradient(var(--btn),var(--btn));--g-mist:linear-gradient(var(--panel),var(--panel));
@@ -34,65 +40,81 @@ html:root:not([data-tone=fluo]) body #nh .nh-start:is(*,#zzp#zzp){--startbg:var(
 html:root:not([data-tone=fluo]) body #nh .nh-start:is(*,#zzp#zzp) :is(h2,.nh-crumb,.nh-k){color:inherit!important}
 html:root:not([data-tone=fluo]) body #nh .nh-start:is(*,#zzp#zzp) .nh-b a:not(.nh-go){color:var(--blue)!important;border:0!important;background:none!important;padding:0!important;min-height:44px!important;display:inline-flex!important;align-items:center!important;text-decoration:underline!important;text-underline-offset:3px}
 
-/* ---- type system. Fonts are all self-hosted in fonts/ (SIL Open Font License), no network fonts. One job per face:
-     Abril Fatface page titles (the big headline on every page; free stand-in for TAN Buster)
-     Merriweather  structure: section headings and panel titles
-     Gloock        the brand name in the header and footer (free stand-in for Sergio Trendy)
-     Fredoka       buttons and chips: everything you press (free stand-in for Genty Sans)
-     PT Serif      content titles: question text and chapter names, wherever they appear
-     Anton         numerals: percentages, counts, chapter numbers
-     Oswald        small labels, tags and navigation labels
-     system sans   body, answers, buttons and controls (answer and textbook text is never restyled here: annotations sit on it)
-     Caveat        handwritten margin notes
-   One modular scale, each step 1.25 x the one before: 13 / 16 / 20 / 25 / 31 / 39 / 49 px. ---- */
-@font-face{font-family:"Merriweather";src:url(fonts/merriweather-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Merriweather";src:url(fonts/merriweather-latin-700-normal.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"PT Serif";src:url(fonts/pt-serif-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"PT Serif";src:url(fonts/pt-serif-latin-700-normal.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Abril Fatface";src:url(fonts/abril-fatface-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Gloock";src:url(fonts/gloock-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Fredoka";src:url(fonts/fredoka-latin-500-normal.woff2) format("woff2");font-weight:400 500;font-style:normal;font-display:swap}
-@font-face{font-family:"Fredoka";src:url(fonts/fredoka-latin-600-normal.woff2) format("woff2");font-weight:600 700;font-style:normal;font-display:swap}
-@font-face{font-family:"Anton";src:url(fonts/anton-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Oswald";src:url(fonts/oswald-latin-500-normal.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:"Oswald";src:url(fonts/oswald-latin-600-normal.woff2) format("woff2");font-weight:600 700;font-style:normal;font-display:swap}
-html:root{--body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--zz-font:var(--body);
- --disp:"Merriweather",Georgia,"Times New Roman",Times,serif;--zz-display:var(--disp);--read:"PT Serif",Georgia,"Times New Roman",serif;
- --num:"Anton","Oswald","Arial Narrow",sans-serif;--head:"Abril Fatface","Merriweather",Georgia,serif;--brand:"Gloock","Merriweather",Georgia,serif;--btnf:"Fredoka",var(--body);--lab:"Oswald","Arial Narrow",var(--body);
- --t-xs:.8125rem;--t-md:1rem;--t-lg:1.25rem;--t-xl:1.5625rem;--t-2xl:1.953rem;--t-3xl:2.441rem;--t-4xl:3.052rem}
 
-/* page titles (Abril Fatface, one weight) */
-html:root body :is(.hero-in h1,.nh-banner h1):is(*,#zzp#zzp#zzp#zzp){font-family:var(--head)!important;font-weight:400!important;font-synthesis:none;font-size:clamp(2rem,1.15rem + 2.65vw,var(--t-4xl))!important;line-height:1.1!important}
-/* brand name (Gloock) */
-html:root body :is(.wm,.sf-logo,.zq-fn):is(*,#zzp#zzp){font-family:var(--brand)!important;font-weight:400!important;font-synthesis:none}
-/* things you press (Fredoka): buttons, pills and chips; the annotation toolbar and navigation keep their own label faces */
-html:root body :is(button,.pill,a.nh-bn-cta,a.nh-go,a.nh-bn-lk,.pb-btn,.zm-cta,.zm-ghost):is(*,#zzp#zzp):not(#an-bar *):not(.an-pop *):not(.ans *):not(#tbbody *){font-family:var(--btnf)!important}
-/* structure (Merriweather): section headings, then panel titles */
-html:root body :is(.nh-h,h3.sub,.mx-h,.part-h h3,.tbpart-t b,.zm-gh,.qa-h2,.pc h3,.nh-more>summary):is(*,#zzp#zzp):not(.ans *):not(#tbbody *){font-family:var(--disp)!important;font-weight:700!important;font-size:var(--t-xl)!important;line-height:1.2!important}
-html:root body :is(.qf-head b,.mx-pal h3,.mx-side h3):is(*,#zzp#zzp){font-family:var(--disp)!important;font-weight:700!important;font-size:var(--t-lg)!important;line-height:1.25!important}
-html:root body .zm-name:is(*,#zzp#zzp){font-family:var(--disp)!important;font-weight:400!important;font-size:var(--t-2xl)!important;line-height:1.15!important}
+/* ---- type system. Four typefaces and nothing else, all self-hosted in fonts/ (no network fonts). One job per face:
+     TAN Buster       the brand voice: the wordmark and the title of each top-level page (short words, set large)
+     Anton            headings and numerals: chapter titles, section headings, percentages, counts
+     Oswald           the interface: navigation, buttons, chips, labels, small print
+     Times New Roman  everything you read: questions, answers, MCQs, the textbook, descriptions
+   Times New Roman is a system font. Where it is installed (Windows, macOS, iOS) the real one is used; where it is not (Android,
+   Linux) the page loads Tinos, which was drawn to the same metrics, so line breaks match everywhere.
+   Anton and TAN Buster have one weight; "font-weight:100 900" tells the browser not to fake a bold on top of them.
+   One modular scale, each step 1.25 x the one before: 14 / 16 / 20 / 25 / 31 / 39 / 49 px (14 rather than 13: Oswald is narrow).
+   Hierarchy, largest first: page title (TAN Buster) > section heading (Anton) > content title (Times bold) > label (Oswald bold)
+   > body (Times) > small print (Oswald). ---- */
+@font-face{font-family:"TAN Buster";src:url(fonts/tan-buster-bold.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Anton";src:url(fonts/anton-latin-400-normal.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Oswald";src:url(fonts/oswald-latin-wght-normal.woff2) format("woff2");font-weight:200 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Times New Roman";src:local("Times New Roman"),local("TimesNewRomanPSMT"),url(fonts/tinos-subset-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Times New Roman";src:local("Times New Roman Bold"),local("TimesNewRomanPS-BoldMT"),url(fonts/tinos-subset-700-normal.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Times New Roman";src:local("Times New Roman Italic"),local("TimesNewRomanPS-ItalicMT"),url(fonts/tinos-subset-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Times New Roman";src:local("Times New Roman Bold Italic"),local("TimesNewRomanPS-BoldItalicMT"),url(fonts/tinos-subset-700-italic.woff2) format("woff2");font-weight:700;font-style:italic;font-display:swap}
+/* while a web font is still downloading (first visit, slow network) text shows in the phone's own font scaled to the same width,
+   so lines do not re-break and the page does not jump when the real face arrives: Roboto on Android, Helvetica Neue on iOS */
+@font-face{font-family:"Times Fallback";src:local("Noto Serif"),local("NotoSerif"),local("NotoSerif-Regular");size-adjust:89%;ascent-override:99%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:"Oswald Fallback";src:local("Roboto"),local("Helvetica Neue"),local("HelveticaNeue"),local("Arial");size-adjust:84%}
+html:root{--read:"Times New Roman","Times Fallback",Times,serif;--body:"Oswald","Oswald Fallback",sans-serif;--sans:var(--body);--zz-font:var(--body);--lab:var(--body);--btnf:var(--body);
+ --num:"Anton","Oswald",sans-serif;--head:"TAN Buster","Anton",sans-serif;--brand:var(--head);--disp:var(--read);--zz-display:var(--read);--hand:var(--read);
+ --t-xs:.875rem;--t-md:1rem;--t-lg:1.25rem;--t-xl:1.5625rem;--t-2xl:1.953rem;--t-3xl:2.441rem;--t-4xl:3.052rem}
 
-/* content titles (PT Serif): a question reads the same on a card, in a list, on Home and in an MCQ; so does a chapter name */
-html:root body :is(.card>header h4,.qt,.nh-h2,.mx-next b):is(*,#zzp#zzp):not(.ans *):not(#tbbody *){font-family:var(--read)!important;font-weight:700!important;font-size:var(--t-lg)!important;line-height:1.35!important}
-html:root body :is(.nh-start h2,.mx-card h3):is(*,#zzp#zzp){font-family:var(--read)!important;font-weight:700!important;font-size:var(--t-xl)!important;line-height:1.3!important}
-html:root body :is(a.topic h3,.nh-ch h4,.nh-ch h4 a,.qs-h b,.tbtile b,.mx-chd summary b,.tbcont-t):is(*,#zzp#zzp){font-family:var(--read)!important;font-weight:700!important;font-size:1.0625rem!important;line-height:1.3!important}
+/* the interface speaks Oswald; anything written as a sentence is Times New Roman */
+html:root body{font-family:var(--body)!important}
+html:root body :is(p,dd,blockquote,figcaption,input,textarea):is(*,#zzp#zzp){font-family:var(--read)!important}
+html:root body :is(input,textarea):is(*,#zzp#zzp):not(#an-bar *):not(.an-pop *){font-size:1.0625rem}
+html:root body :is(input,textarea)::placeholder{font-style:italic;color:var(--muted);opacity:1}
 
-/* numerals (Anton, one weight): big figures, mid figures, chapter numbers; the "/ 696" part beside a figure is quiet sans */
-html:root body :is(.nh-pc,.mx-pc,.nh-n,.nh-t4 b,.nh-split b,.mx-kv b,.mx-acc b,.qs-h .no,a.topic .no,.tbtile .n):is(*,#zzp#zzp#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;letter-spacing:.02em!important;line-height:1.05!important}
+/* 1. page titles (TAN Buster): the five top-level pages and Home */
+html:root body :is(.pb .hero-in h1,.nh-banner h1):is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--head)!important;font-weight:400!important;font-synthesis:none;font-size:clamp(2.25rem,4.4vw,3.5rem)!important;line-height:1.1!important;letter-spacing:-.005em!important}
+html:root body #nh .nh-banner h1:is(*,#zzp#zzp#zzp#zzp#zzp){font-size:clamp(1.9rem,3vw,2.6rem)!important;line-height:1.3!important}
+/* a chapter's own page: its name is long and set by the book, so it takes Anton */
+html:root body .hero:not(:has(.pb)) .hero-in h1:is(*,#zzp#zzp#zzp#zzp#zzp),html:root body .hero-in:not(.pb *) h1:is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;font-size:clamp(2.25rem,1.3rem + 3.6vw,3.5rem)!important;line-height:1.06!important;letter-spacing:.005em!important}
+/* brand name (TAN Buster) */
+html:root body :is(.wm,.sf-logo,.zq-fn):is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--head)!important;font-weight:400!important;font-synthesis:none;letter-spacing:0!important}
+html:root body .wm:is(*,#zzp#zzp){font-size:1.375rem!important;line-height:1!important;color:var(--text)!important}
+html:root body .wm i:is(*,#zzp#zzp){font:inherit!important;font-style:normal!important;color:var(--blue)!important;margin:0!important}
+
+/* 2. section headings (Anton) */
+html:root body :is(h1,h2):is(*,#zzp):not(.ans *):not(#tbbody *){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none}
+html:root body :is(.nh-h,h3.sub,.mx-h,.part-h h3,.tbpart-t b,.zm-gh,.qa-h2,.pc h3,.nh-more>summary,main>h2):is(*,#zzp#zzp#zzp#zzp#zzp):not(.ans *):not(#tbbody *){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;font-size:var(--t-2xl)!important;line-height:1.1!important;letter-spacing:.01em!important;color:var(--text)!important}
+html:root body :is(.qf-head b,.mx-pal h3,.mx-side h3):is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;font-size:var(--t-xl)!important;line-height:1.15!important;letter-spacing:.01em!important}
+html:root body .zm-name:is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;font-size:var(--t-2xl)!important;line-height:1.1!important;letter-spacing:.01em!important}
+
+/* 3. content titles (Times New Roman bold): a question reads the same on a card, in a list, on Home and in an MCQ; so does a chapter name */
+html:root body :is(.card>header h4,.qt,.nh-h2,.mx-next b):is(*,#zzp#zzp):not(.ans *):not(#tbbody *){font-family:var(--read)!important;font-weight:700!important;font-size:1.3125rem!important;line-height:1.28!important}
+html:root body :is(.nh-start h2,.mx-card h3):is(*,#zzp#zzp){font-family:var(--read)!important;font-weight:700!important;font-size:var(--t-xl)!important;line-height:1.22!important}
+html:root body .mx-card h3:is(*,#zzp#zzp){font-size:1.3125rem!important;line-height:1.35!important}
+html:root body :is(a.topic h3,.nh-ch h4,.nh-ch h4 a,.qs-h b,.tbtile b,.mx-chd summary b,.tbcont-t):is(*,#zzp#zzp){font-family:var(--read)!important;font-weight:700!important;font-size:1.1875rem!important;line-height:1.25!important}
+
+/* numerals (Anton): big figures, mid figures, chapter numbers; the "/ 696" part beside a figure is quiet Oswald */
+html:root body :is(.nh-pc,.mx-pc,.nh-n,.nh-t4 b,.nh-split b,.mx-kv b,.mx-acc b,.qs-h .no,a.topic .no,.tbtile .n,.card>header .code):is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;letter-spacing:.02em!important;line-height:1.05!important}
 html:root body :is(.nh-pc,.mx-pc):is(*,#zzp#zzp){font-size:var(--t-4xl)!important}
 html:root body .nh-n:is(*,#zzp#zzp){font-size:var(--t-3xl)!important}
 html:root body :is(.nh-t4 b,.nh-split b,.mx-kv b,.mx-acc b):is(*,#zzp#zzp){font-size:var(--t-xl)!important}
 html:root body :is(.qs-h .no,.tbtile .n):is(*,#zzp#zzp){font-size:var(--t-lg)!important}
 html:root body a.topic .no:is(*,#zzp#zzp){font-size:var(--t-md)!important}
-html:root body :is(.nh-pc,.mx-pc,.nh-t4 b,.nh-split b,.mx-kv b,.mx-acc b) small:is(*,#zzp#zzp#zzp#zzp){font-family:var(--body)!important;font-weight:500!important;font-size:.9375rem!important;letter-spacing:0!important;color:var(--muted)!important}
+html:root body .card>header .code:is(*,#zzp#zzp#zzp){font-size:1.125rem!important;line-height:1.5!important}
+html:root body :is(.nh-pc,.mx-pc,.nh-t4 b,.nh-split b,.mx-kv b,.mx-acc b) small:is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--body)!important;font-weight:400!important;font-size:1rem!important;letter-spacing:0!important;color:var(--muted)!important}
 
-/* labels (Oswald): section labels, tags, navigation labels */
-html:root body :is(.nh-k,.mx-eb,.tbpart-k,.qf-body h4,.tg,.ex-y,.mx-chip,.mx-mode,.sf-k,.zq-foot h2,.sf h2):is(*,#zzp#zzp#zzp#zzp):not(.ans *):not(#tbbody *){font-family:var(--lab)!important;font-weight:700!important;font-size:var(--t-xs)!important;letter-spacing:.04em!important}
-html:root body :is(nav.nav .links a,#bnav a):is(*,#zzp#zzp#zzp#zzp){font-family:var(--lab)!important;font-weight:500!important;letter-spacing:.03em!important}
-html:root body :is(h1,h2,.nh-h,.zm-name):is(*,#zzp):not(.ans *):not(#tbbody *){font-family:var(--disp)!important}
+/* 4. labels (Oswald bold): section labels, tags; then navigation and buttons */
+html:root body :is(.nh-k,.mx-eb,.tbpart-k,.qf-body h4,.tg,.ex-y,.mx-chip,.mx-mode,.sf-k,.zq-foot h2,.sf h2):is(*,#zzp#zzp#zzp#zzp#zzp):not(.ans *):not(#tbbody *){font-family:var(--lab)!important;font-weight:700!important;font-size:var(--t-xs)!important;letter-spacing:.03em!important}
+html:root body :is(.crumb,.crumb a,.pb-chips,.tbline,.qa-stats,.sf-sub,.cnt,.mu,.nh-crumb,.zm-prog,.lede.zz-count):is(*,#zzp#zzp#zzp){font-family:var(--body)!important}
+html:root body :is(nav.nav .links a,#bnav a):is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--lab)!important;font-weight:500!important;letter-spacing:.03em!important}
+html:root body nav.nav .links a:is(*,#zzp#zzp){font-size:1rem!important}
+html:root body :is(button,.pill,a.nh-bn-cta,a.nh-go,a.nh-bn-lk,.pb-btn,.zm-cta,.zm-ghost,select,summary,label):is(*,#zzp#zzp):not(#an-bar *):not(.an-pop *):not(.ans *):not(#tbbody *){font-family:var(--btnf)!important}
+html:root body :is(a.pill,button.pill,a.nh-bn-cta,a.nh-go,.pb-btn,.zm-cta,.zm-ghost,.qa-go,.gb,.zz-b,.mx-go,.zq-go):is(*,#zzp#zzp#zzp#zzp#zzp){letter-spacing:.03em!important;font-weight:600!important}
 
-/* ---- radii (8): shared tokens (literal px values are rewritten by build.py) ---- */
-html:root{--zz-r-pill:8px;--zz-r-lg:12px;--zz-r-md:8px;--mx-r:12px}
+/* ---- radii: square paper, 2px on the things you press (literal px values are rewritten by build.py) ---- */
+html:root{--zz-r-pill:2px;--zz-r-lg:0px;--zz-r-md:2px;--mx-r:0px}
 
 /* ---- page background (4, 18): flat colour, no mesh, no dots, no tissue canvas ---- */
 html:root:not([data-tone=fluo]) body{background:var(--bg)!important;background-image:none!important}
@@ -137,11 +159,8 @@ html:root body .pb.pb-plain:is(*,#zzp){height:auto!important;min-height:0!import
 html:root body .pb.pb-plain .pb-in:is(*,#zzp){height:auto!important;min-height:0!important;display:block!important;padding:36px var(--gut,20px) 30px!important}
 html:root body .pb.pb-plain .pb-in .hero-in:is(*,#zzp){height:auto!important;min-height:0!important;padding:0!important;max-width:64ch!important}
 html:root body .hero-in h1:is(*,#zzp){color:var(--navy)!important;font-weight:400!important}
-html:root body .pb.pb-img .hero-in h1:is(*,#zzp#zzp){color:#FFFDFA!important}
 html:root body .hero-in :is(.lede,.crumb,.crumb a):is(*,#zzp),html:root body .pb-chips:is(*,#zzp){color:var(--muted)!important}
-html:root body .pb.pb-img :is(.lede,.crumb,.crumb a,.pb-chips):is(*,#zzp#zzp){color:#E8D9E3!important}
 html:root body .pb-btn.pb-lk:is(*,#zzp#zzp){color:var(--blue)!important;background:none!important;border:0!important;padding:0!important}
-html:root body .pb.pb-img .pb-btn.pb-lk:is(*,#zzp#zzp#zzp){color:#FFFDFA!important}
 html:root body :is(.eyebrow,.tbeyebrow,.qa-k):is(*,#zzp){display:none!important}
 @media(max-width:640px){html:root body .pb.pb-plain .pb-in:is(*,#zzp){padding:24px var(--gut,16px) 22px!important}}
 
@@ -183,7 +202,7 @@ html:root:not([data-tone=fluo]) body .ring:not(.hi):is(*,#zzp){color:var(--text)
 /* ---- MCQ True / False (readability): two separate bordered buttons instead of grey text on a grey strip; the chosen one is filled,
    and after checking, right is green, wrong is red, and the correct answer you missed gets a green outline ---- */
 html:root:not([data-tone=fluo]) body .mx .mx-tf:is(*,#zzp#zzp){background:none!important;border:0!important;padding:0!important;gap:10px!important}
-html:root:not([data-tone=fluo]) body .mx .mx-tf button:is(*,#zzp#zzp){min-width:104px!important;min-height:44px!important;border:1.5px solid var(--line2)!important;border-radius:8px!important;
+html:root:not([data-tone=fluo]) body .mx .mx-tf button:is(*,#zzp#zzp){min-width:104px!important;min-height:44px!important;border:1.5px solid var(--line2)!important;border-radius:2px!important;
  background:var(--panel)!important;background-image:none!important;color:var(--text)!important;font-weight:600!important;opacity:1!important}
 html:root:not([data-tone=fluo]) body .mx .mx-tf button:is(*,#zzp#zzp):hover:not(:disabled):not([aria-pressed=true]){border-color:var(--blue)!important;background:var(--accbg)!important}
 html:root:not([data-tone=fluo]) body .mx .mx-tf button[aria-pressed=true]:is(*,#zzp#zzp){background:var(--btn)!important;border-color:var(--btn)!important;color:#fff!important}
@@ -199,7 +218,276 @@ html:root body #v-qa #pchips>button[data-sort]:is(*,#zzp#zzp){background:var(--b
 
 /* ---- Viva / Written switch in the filters: two separate bordered buttons (same readability fix as MCQ True / False) ---- */
 html:root:not([data-tone=fluo]) body .qseg:is(*,#zzp#zzp){background:none!important;border:0!important;padding:0!important;gap:8px!important}
-html:root:not([data-tone=fluo]) body .qseg button:is(*,#zzp#zzp){border:1px solid var(--line2)!important;border-radius:8px!important;background:var(--panel)!important;background-image:none!important;color:var(--text)!important}
+html:root:not([data-tone=fluo]) body .qseg button:is(*,#zzp#zzp){border:1px solid var(--line2)!important;border-radius:2px!important;background:var(--panel)!important;background-image:none!important;color:var(--text)!important}
 html:root:not([data-tone=fluo]) body .qseg button[aria-pressed=true]:is(*,#zzp#zzp){background:var(--btn)!important;border-color:var(--btn)!important;color:#fff!important}
 html:root:not([data-tone=fluo]) body .qseg button[aria-pressed=true]:is(*,#zzp#zzp) *{color:#fff!important}
 html:root body .mx .mx-lock:is(*,#zzp) span{color:var(--muted)!important}
+
+/* ================= the look, component by component ================= */
+
+/* ---- header: white bar, one ink rule under it ---- */
+html:root:not([data-tone=fluo]) body nav.nav:is(*,#zzp#zzp){background:var(--panel)!important;background-image:none!important;border-bottom:2px solid var(--rule)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+
+/* ---- page title band (Questions, Chapters, MCQs, Textbook, Menu, Home). A compact dark band: the two-colour plate
+   (tools/make_duotone.py) sits at the right, a haematoxylin gradient runs over it from the text side so the words are always on
+   near-solid colour, and the title is set in eosin pink. On phones the plate fills the band under a denser gradient and the whole
+   band is about 280px tall, so the page's own content starts on the first screen. ---- */
+html:root body :is(.pb,.nh-banner):is(*,#zzp#zzp){position:relative!important;display:block!important;background:var(--plate)!important;background-image:none!important;color:#F6E9F1!important;border-bottom:2px solid var(--rule)!important;height:auto!important;min-height:0!important;overflow:hidden!important}
+html:root body .view.tb-on .pb:is(*,#zzp#zzp#zzp){display:none!important}
+html:root body :is(.pb-pic,.nh-bn-pic):is(*,#zzp#zzp){position:absolute!important;inset:0!important;height:auto!important;min-height:0!important;border:0!important;background:var(--plate)!important}
+html:root body :is(.pb-pic,.nh-bn-pic) :is(picture,img):is(*,#zzp#zzp){position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;object-fit:cover!important}
+html:root body :is(.pb-pic,.nh-bn-pic) img:is(*,#zzp#zzp#zzp){left:auto!important;right:0!important;width:64%!important;object-position:50% 20%!important}
+html:root body :is(.pb-pic,.nh-bn-pic):is(*,#zzp#zzp)::after{content:""!important;display:block!important;position:absolute!important;inset:0!important;background:linear-gradient(90deg,#1C102F 0,#1C102F 37%,rgba(28,16,47,.88) 50%,rgba(28,16,47,.4) 76%,rgba(28,16,47,.12) 100%)!important}
+html:root body :is(.pb-in,.nh-bn-in):is(*,#zzp#zzp#zzp){position:relative!important;z-index:1!important;display:block!important;height:auto!important;min-height:0!important;max-width:var(--w,1180px)!important;margin:0 auto!important;box-sizing:border-box!important;padding:30px var(--gut,20px) 34px!important}
+html:root body :is(.pb-in .hero-in,.nh-bn-t):is(*,#zzp#zzp#zzp){display:block!important;width:100%!important;max-width:33rem!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important}
+html:root body .nh-bn-t:is(*,#zzp#zzp#zzp#zzp){max-width:37rem!important}
+html:root body :is(.pb .hero-in h1,.nh-banner h1):is(*,#zzp#zzp#zzp){color:#F4B9CA!important;margin:0 0 10px!important}
+html:root body :is(.pb,.nh-banner) .crumb:is(*,#zzp#zzp#zzp#zzp){margin:-8px 0 2px!important}
+html:root body :is(.pb .lede,.nh-bn-s):is(*,#zzp#zzp#zzp){font-family:var(--read)!important;font-size:1.125rem!important;line-height:1.4!important;color:#F2E6EE!important;max-width:30em!important;margin:0!important}
+html:root body :is(.pb,.nh-banner) :is(.crumb,.crumb a,.pb-chips):is(*,#zzp#zzp#zzp#zzp){color:#CDB9D3!important;font-weight:500!important;font-size:.875rem!important;opacity:1!important}
+html:root body .pb .hero-in p.zz-hi:is(*,#zzp#zzp#zzp#zzp){font-family:var(--read)!important;font-style:italic!important;font-weight:400!important;font-size:1rem!important;color:#F4B9CA!important;margin-top:6px!important}
+html:root body :is(.pb-act,#nh .nh-bn-b):is(*,#zzp#zzp#zzp){display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;align-items:center!important;gap:8px 22px!important;margin:16px 0 0!important}
+html:root body :is(.pb-btn.pb-p,#nh a.nh-bn-cta):is(*,#zzp#zzp#zzp#zzp){width:auto!important;min-height:44px!important;padding:0 22px!important;font-size:1rem!important;background:#F4B9CA!important;border:0!important;color:#23153A!important}
+html:root body :is(.pb-btn.pb-p,#nh a.nh-bn-cta):is(*,#zzp#zzp#zzp#zzp):hover{background:#F9D3DD!important}
+html:root body :is(.pb-btn.pb-lk,#nh a.nh-bn-lk):is(*,#zzp#zzp#zzp#zzp){width:auto!important;min-height:44px!important;color:#FFFFFF!important;background:none!important;border:0!important;padding:0!important;font-size:1rem!important;font-weight:600!important;text-decoration:underline!important;text-decoration-thickness:2px!important;text-underline-offset:4px!important}
+html:root body .pb-chips:is(*,#zzp#zzp#zzp){margin:12px 0 0!important}
+html:root body :is(.pb,.nh-banner) :focus-visible{outline:2px solid #F4B9CA!important;outline-offset:3px!important}
+@media(max-width:640px){
+ html:root body :is(.pb-pic,.nh-bn-pic) img:is(*,#zzp#zzp#zzp){width:100%!important;object-position:70% 18%!important}
+ html:root body :is(.pb-pic,.nh-bn-pic):is(*,#zzp#zzp)::after{background:linear-gradient(100deg,rgba(28,16,47,.97) 0,rgba(28,16,47,.9) 48%,rgba(28,16,47,.74) 100%)!important}
+ html:root body :is(.pb-in,.nh-bn-in):is(*,#zzp#zzp#zzp){padding:14px var(--gut,16px) 18px!important}
+ html:root body :is(.pb .hero-in h1,.nh-banner h1):is(*,#zzp#zzp#zzp){margin:0 0 6px!important}
+ html:root body .pb .hero-in h1:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-size:clamp(1.9rem,9.6vw,2.4rem)!important}
+ html:root body #nh .nh-banner h1:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-size:clamp(1.5rem,7.2vw,1.875rem)!important}
+ html:root body :is(.pb .lede,.nh-bn-s):is(*,#zzp#zzp#zzp){font-size:1rem!important;line-height:1.38!important}
+ html:root body :is(.pb-act,#nh .nh-bn-b):is(*,#zzp#zzp#zzp){margin-top:12px!important}
+ html:root body .pb-chips:is(*,#zzp#zzp#zzp){margin-top:8px!important}
+}
+
+/* ---- a chapter's own page header: typographic, on paper, closed by one ink rule ---- */
+html:root body .hero-in:not(.pb *) :is(.lede):is(*,#zzp#zzp){font-family:var(--read)!important;font-size:1.125rem!important;line-height:1.45!important;color:var(--muted)!important}
+
+/* ---- buttons: burgundy means "do this"; an ink outline is the quieter second choice; links are underlined ---- */
+html:root:not([data-tone=fluo]) body :is(a.pill,button.pill,.nh-go,.qa-go,.gb,.zz-b,.mx-go,.zq-go,.zm-cta,.pb-btn.pb-p,.nh-bn-cta):is(*,#zzp#zzp){border-radius:2px!important}
+html:root:not([data-tone=fluo]) body :is(.zm-ghost):is(*,#zzp#zzp#zzp){border:1.5px solid var(--text)!important;color:var(--text)!important;background:none!important}
+
+/* ---- surfaces: square paper with one border; the thing to start with on a page gets the heavier ink frame ---- */
+html:root:not([data-tone=fluo]) body :is(.card,.qi,.topic,.dc,.pc,.nh-prog,.nh-card,.nh-t4,.tbtile,.tbcont,.qa-hero,.zm-card,.zm-list,.mx-acc,.mx-day,.mx-tile,.mx-next,.mx-chd,.mx-paper,.empty):is(*,#zzp#zzp){border:1px solid var(--line2)!important;border-radius:0!important;background-color:var(--panel)!important}
+html:root:not([data-tone=fluo]) body :is(#nh .nh-start,.mx-next,a.tbcont):is(*,#zzp#zzp#zzp){border:2px solid var(--rule)!important;border-radius:0!important}
+html:root:not([data-tone=fluo]) body :is(a.topic,a.tbtile,.mx-tile,.mx-chd,.nh-t4):is(*,#zzp#zzp):hover{border-color:var(--rule)!important}
+/* section headings open a new part of the page: an ink rule above, room around */
+html:root body :is(.nh-h,.mx-h,.zm-gh,main>h2):is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *){border-top:2px solid var(--rule)!important;border-bottom:0!important;padding-top:14px!important;margin-top:40px!important;margin-bottom:16px!important;background:none!important}
+html:root body :is(.nh-h,.mx-h,.zm-gh,main>h2,h3.sub):is(*,#zzp#zzp#zzp)::after{display:none!important}
+
+/* ---- question cards ---- */
+html:root body .card>header:is(*,#zzp#zzp){background:none!important}
+html:root body :is(.tg,.ex-y):is(*,#zzp#zzp#zzp){border:1px solid currentColor!important;border-radius:2px!important;background:none!important;background-image:none!important;padding:2px 7px!important;line-height:1.35!important}
+html:root body .ex-y:is(*,#zzp#zzp#zzp){color:var(--muted)!important;border-color:var(--line2)!important;background:var(--soft)!important}
+html:root body .tg:is(*,#zzp#zzp#zzp){color:var(--blue)!important}
+html:root body .card .act:is(*,#zzp#zzp){font-weight:500!important}
+
+/* ---- answers. Times New Roman at 18px reads at about the size of the old 16px sans, and the
+   line pitch is kept to the pixel (27.2px paragraphs, 25.6px list lines, 27.52px for the lead box), so pen and highlighter marks
+   that students saved stay on their lines. Marks are anchored to their paragraph; only word positions within a line can move. ---- */
+html:root body .ans:is(*,#zzp#zzp){font-family:var(--read)!important;font-size:calc(1.125rem*var(--fs,1))!important;line-height:1.5289!important}
+html:root body .ans p:is(*,#zzp#zzp){line-height:1.5111!important;margin-bottom:.7556em!important}
+html:root body .ans li:is(*,#zzp#zzp){line-height:1.4222!important;margin:.2667em 0!important}
+html:root body .ans h4.sub:is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-weight:600!important;font-size:.8444em!important;line-height:1.2!important;letter-spacing:.02em!important;color:var(--blue)!important;border-bottom:1px solid var(--line2)!important}
+html:root body .ans :is(th,.srcbar,.srcbar a):is(*,#zzp#zzp){font-family:var(--body)!important}
+html:root body .ans table:is(*,#zzp#zzp){font-size:.8889em!important;line-height:1.5125!important}
+html:root body .ans strong.lbl:is(*,#zzp#zzp){font-family:var(--read)!important;font-style:italic!important;font-weight:700!important}
+html:root body .ans .kp:is(*,#zzp#zzp){background:var(--soft)!important;background-image:none!important;border-radius:0!important;border-left:3px solid var(--blue)!important}
+html:root body .kp:is(*,#zzp#zzp)::before{font-family:var(--body)!important;font-weight:700!important;font-size:.875rem!important;line-height:24px!important;height:24px!important;letter-spacing:.03em!important;color:var(--blue)!important;font-style:normal!important;transform:none!important}
+html:root body :is(.note textarea,.nt):is(*,#zzp#zzp){font-family:var(--read)!important;font-style:italic!important;font-size:1.125rem!important;font-weight:400!important}
+html:root body :is(.empty b,.toast b):is(*,#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-size:1.25rem!important;letter-spacing:.01em}
+
+/* ---- textbook reader: Times New Roman for the text, Anton for section heads, Oswald for sub-heads and furniture.
+   Line pitch is kept (29.4px paragraphs, 26.4px list lines) for the same reason as in answers. ---- */
+html:root body #tbbody :is(p,li,td,figcaption,dd):not(.tbtoc *):is(*,#zzp#zzp){font-family:var(--read)!important}
+html:root body #tbbody p:not(.tbtoc *):is(*,#zzp#zzp){font-size:1.125rem!important;line-height:1.6333!important}
+html:root body #tbbody li:not(.tbtoc *):is(*,#zzp#zzp){font-size:1.125rem!important;line-height:1.4667!important}
+html:root body #tbbody :is(td):is(*,#zzp#zzp){font-size:.9688rem!important;line-height:1.3317!important}
+html:root body #tbbody figcaption:is(*,#zzp#zzp){font-size:.9688rem!important;line-height:1.42!important}
+html:root body #tbbody :is(h2,h2 *):is(*,#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;letter-spacing:.01em!important}
+html:root body #tbbody h2:is(*,#zzp#zzp){font-size:1.5625rem!important;line-height:1.15!important}
+html:root body #tbbody :is(h3,h4,th,.tbt-h,.tbt-h *,.tbf-h,.tbtoc,.tbtoc *):is(*,#zzp#zzp){font-family:var(--body)!important}
+html:root body #tbbody h3:is(*,#zzp#zzp){font-weight:600!important;font-size:1.125rem!important;line-height:1.25!important;letter-spacing:.01em!important;color:var(--blue)!important}
+
+/* ---- MCQs: the stem and the options are reading matter ---- */
+html:root body :is(.mx-o,.mx-o>span):is(*,#zzp#zzp#zzp){font-family:var(--read)!important;font-size:1.125rem!important;line-height:1.35!important;font-weight:400!important;letter-spacing:0!important}
+html:root body .mx-o>b:is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-weight:600!important}
+html:root body .mx :is(.mx-x,.mx-x *,.mx-s>span,.mx-s>p):is(*,#zzp#zzp){font-family:var(--read)!important}
+
+/* ---- chapter tiles, lists, chips ---- */
+html:root body a.topic p:is(*,#zzp#zzp){font-size:1rem!important;line-height:1.35!important}
+html:root body :is(.chips button,.qfc,.mx-chip,.tbf button):is(*,#zzp#zzp){border-radius:2px!important;font-weight:500!important}
+
+/* ---- phone bottom nav: ink rule on top, the current tab is an eosin block ---- */
+html:root body #bnav:is(*,#zzp#zzp#zzp){border-top:2px solid var(--rule)!important}
+html:root body #bnav a:is(*,#zzp#zzp){font-size:.8125rem!important}
+
+/* ---- footer ---- */
+html:root body :is(.sf-about,.zq-fd):is(*,#zzp#zzp){font-family:var(--read)!important;font-size:1.0625rem!important;line-height:1.45!important}
+html:root body .sf-name:is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;letter-spacing:.01em!important}
+html:root body .sf :is(a,.sf-sub):is(*,#zzp#zzp){font-family:var(--body)!important}
+
+/* ---- print: the same faces on paper ---- */
+@media print{html:root body .ans,html:root body #tbbody p{font-family:"Times New Roman",Times,serif!important}}
+
+/* ---- a chapter page, top to bottom: chapter name (Anton, large) > section (Anton, ruled) > sub-topic (Oswald) > question (Times bold) ---- */
+html:root body main h3.sub:is(*,#zzp#zzp#zzp){border:0!important;border-bottom:2px solid var(--rule)!important;padding:0 0 8px!important;margin:40px 0 14px!important;background:none!important}
+html:root body main h4.tsub:is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--body)!important;font-weight:600!important;font-size:1.0625rem!important;line-height:1.3!important;letter-spacing:.01em!important;color:var(--text)!important;margin:22px 0 10px!important}
+html:root body .hero-in p.zz-hi:is(*,#zzp#zzp#zzp){font-family:var(--read)!important;font-style:italic!important;font-weight:400!important;font-size:1.0625rem!important;color:var(--blue)!important}
+
+/* ---- size floor. Oswald small print never goes under 13px, Times New Roman never under 16px; one-line figures are Oswald, sentences are Times ---- */
+html:root body :is(.card .act span,.nh-hml span,.nh-hmm span,.qa-mini small,p.nh-hmk,.sf-legal):is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-size:.8125rem!important}
+html:root body :is(.ex-p,.cnt,.srcbar a,.srcbar-l,.rel b,.mx-tp button,.mx-tp small,.mx-chd summary small,.mx-paper small,.mx-kv span,.mx-goal>span,.mx-tile small,.mx-leg,.mx-leg span,.tbt-x small,.tbpart-c,.tbfil em,.tbhero small,.tbf-h b,.tbtoc span,.tbch-m span,.tbtoc-t *,.tbt-no,.tbt-ti,.zm-chip,.zm-prog p,.zm-prog p span,#nh li a small,.nh-tk,.nh-split span,.nh-dt span,#qpt,.nh-crumb,.tbcont-t small,#tbbody th,.ans th):is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-size:.875rem!important}
+html:root body .tbcont-t small:is(*,#zzp#zzp#zzp#zzp){font-weight:700!important;color:var(--blue)!important}
+html:root body :is(p.nh-line,p.mx-about,#qa-stats):is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-size:.9375rem!important;color:var(--muted)!important}
+html:root body nav.nav :is(a.pill,button.pill):is(*,#zzp#zzp#zzp){font-size:.9375rem!important}
+html:root body :is(p.nh-mu,p.qa-s,p.mx-sub2,.zm-note,.mx-next>span,.nh-more>summary small,#nh li>a>span):is(*,#zzp#zzp#zzp){font-family:var(--read)!important;font-size:1.0625rem!important;line-height:1.4!important;font-weight:400!important}
+html:root body #nh li>a>span>b:is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-weight:600!important;font-size:1rem!important}
+html:root body .zq-fm p:is(*,#zzp#zzp#zzp){font-size:1rem!important}
+html:root body a.topic .no:is(*,#zzp#zzp#zzp){font-size:1.25rem!important}
+html:root body #tbbody .tbs-n:is(*,#zzp#zzp#zzp){font-size:1rem!important}
+
+/* ---- footer: the same deep violet as the plates ---- */
+html:root body :is(.sf,.sf-hero):is(*,#zzp#zzp){background-color:var(--plate)!important}
+
+/* the first section under the Filters row sits close to it */
+html:root body .tf-row+main>h3.sub:first-child:is(*,#zzp#zzp#zzp#zzp){margin-top:14px!important}
+
+/* ---- progress bars: one kind everywhere. A 6px square track in the hairline colour, filled flat burgundy ---- */
+html:root:not([data-tone=fluo]) body :is(.nh-bar2,.tbmeter,.zm-bar,.mx-st,.qa-mini>i,.qprog>i):is(*,#zzp#zzp#zzp){background-color:var(--line)!important;background-image:none!important;border-radius:0!important;box-shadow:none!important}
+html:root:not([data-tone=fluo]) body :is(.nh-bar2,.tbmeter):is(*,#zzp#zzp#zzp){height:6px!important}
+html:root:not([data-tone=fluo]) body :is(.nh-bar2>i,.tbmeter>i,.zm-bar>i,.qa-mini>i>u,.qprog>i>u):is(*,#zzp#zzp#zzp){background-color:var(--blue)!important;background-image:none!important;border-radius:0!important;box-shadow:none!important}
+
+/* ---- keyboard focus: one ring, in ink, on everything you can reach with Tab ---- */
+html:root body :is(a,button,summary,select,[tabindex],[role=button]):focus-visible{outline:2px solid var(--text)!important;outline-offset:2px!important;box-shadow:none!important}
+html:root body :is(input,textarea):focus-visible{outline:2px solid var(--text)!important;outline-offset:0!important;box-shadow:none!important}
+/* ---- selected text takes the eosin field ---- */
+html:root body ::selection{background:var(--field);color:var(--field-ink)}
+
+/* ---- things that float above the page: dialogs, sheets, toasts. Square, framed in ink, no blur ---- */
+html:root:not([data-tone=fluo]) body :is(dialog,.zz-wd,.modal,.sheet,.zz-sheet,[role=dialog]):is(*,#zzp#zzp):not(#an-bar,#an-bar *,.an-pop,.an-pop *){border:2px solid var(--rule)!important;border-radius:0!important;box-shadow:none!important;background-color:var(--panel)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html:root:not([data-tone=fluo]) body :is(dialog,.zz-wd,[role=dialog]) :is(h1,h2,h3):is(*,#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;letter-spacing:.01em!important;line-height:1.1!important}
+html:root:not([data-tone=fluo]) body .toast:is(*,#zzp#zzp){background:var(--text)!important;color:var(--bg)!important;border:0!important;border-radius:2px!important;font-family:var(--body)!important}
+html:root:not([data-tone=fluo]) body .zz-welcome:is(*,#zzp#zzp){border:2px solid var(--rule)!important;border-radius:0!important;box-shadow:none!important}
+
+/* ---- tables in answers and the textbook: Oswald header on an eosin wash, ruled rows, no zebra, no rounded shell ---- */
+html:root body :is(.ans,#tbbody) table:is(*,#zzp#zzp){border-collapse:collapse!important;border-radius:0!important;border:0!important;border-top:2px solid var(--rule)!important;border-bottom:2px solid var(--rule)!important}
+html:root body :is(.ans,#tbbody) th:is(*,#zzp#zzp){background:var(--soft)!important;color:var(--text)!important;font-weight:600!important;letter-spacing:.02em;text-align:left;border:0!important;border-bottom:1px solid var(--line2)!important}
+html:root body :is(.ans,#tbbody) td:is(*,#zzp#zzp){background:none!important;border:0!important;border-bottom:1px solid var(--line)!important}
+html:root body :is(.ans,#tbbody) tr:last-child td:is(*,#zzp#zzp){border-bottom:0!important}
+
+/* ---- links inside reading matter ---- */
+html:root body :is(.ans,#tbbody) :is(p,li,td) a:is(*,#zzp#zzp){color:var(--blue)!important;text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:3px!important}
+/* six tabs on a 320px phone: the labels step down one size so they keep clear of each other */
+@media(max-width:359px){html:root body #bnav a:is(*,#zzp#zzp#zzp){font-size:.75rem!important;letter-spacing:0!important}}
+
+/* ---- phones (Android and iOS). One step down the scale for everything set in the display faces, 16px for sentences, and the
+   browser is told not to inflate text on its own (iOS in landscape, Android "font boosting"). Inputs stay at 16px, the size below
+   which iOS zooms the page when a field is focused. ---- */
+html:root{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(max-width:640px){
+ html:root{--t-lg:1.125rem;--t-xl:1.3125rem;--t-2xl:1.5rem;--t-3xl:1.875rem;--t-4xl:2.375rem}
+ html:root body .hero:not(:has(.pb)) .hero-in h1:is(*,#zzp#zzp#zzp#zzp#zzp#zzp),html:root body .hero-in:not(.pb *) h1:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-size:1.875rem!important;line-height:1.08!important}
+ html:root body .hero-in:not(.pb *) :is(.lede):is(*,#zzp#zzp#zzp){font-size:1rem!important}
+ html:root body :is(.card>header h4,.qt,.nh-h2,.mx-next b,.mx-card h3):is(*,#zzp#zzp#zzp):not(.ans *):not(#tbbody *){font-size:1.125rem!important;line-height:1.3!important}
+ html:root body :is(a.topic h3,.nh-ch h4,.nh-ch h4 a,.qs-h b,.tbtile b,.mx-chd summary b,.tbcont-t):is(*,#zzp#zzp#zzp){font-size:1.0625rem!important}
+ html:root body .card>header .code:is(*,#zzp#zzp#zzp#zzp){font-size:1rem!important}
+ html:root body main h4.tsub:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-size:1rem!important}
+ html:root body :is(p.nh-mu,p.qa-s,p.mx-sub2,.zm-note,.mx-next>span,.nh-more>summary small,#nh li>a>span):is(*,#zzp#zzp#zzp#zzp){font-size:1rem!important}
+ html:root body :is(.mx-o,.mx-o>span):is(*,#zzp#zzp#zzp#zzp){font-size:1.0625rem!important}
+ html:root body :is(input,textarea):is(*,#zzp#zzp#zzp):not(#an-bar *):not(.an-pop *){font-size:1rem!important}
+ html:root body :is(.sf-about,.zq-fd):is(*,#zzp#zzp#zzp){font-size:1rem!important}
+ html:root body nav.nav :is(a.pill,button.pill):is(*,#zzp#zzp#zzp#zzp){font-size:.875rem!important}
+ html:root body .wm:is(*,#zzp#zzp#zzp){font-size:1.25rem!important}
+ html:root body :is(.nh-h,.mx-h,.zm-gh,main>h2):is(*,#zzp#zzp#zzp#zzp):not(.ans *):not(#tbbody *){margin-top:30px!important;margin-bottom:12px!important;padding-top:10px!important}
+ html:root body main h3.sub:is(*,#zzp#zzp#zzp#zzp){margin:30px 0 12px!important}
+ html:root body .tf-row+main>h3.sub:first-child:is(*,#zzp#zzp#zzp#zzp#zzp){margin-top:14px!important}
+}
+
+/* ---- the greeting toast sits at the bottom (above the tab bar on phones, bottom right on desktop) so it never covers a page title ---- */
+html:root body .zz-welcome:is(*,#zzp#zzp#zzp){top:auto!important;bottom:calc(76px + env(safe-area-inset-bottom,0px))!important}
+@media(min-width:900px){html:root body .zz-welcome:is(*,#zzp#zzp#zzp){bottom:22px!important;left:auto!important;right:22px!important;margin:0!important;width:min(440px,calc(100vw - 44px))!important}}
+
+/* ---- motion tokens: one press depth for the things you tap (buttons, chips, pills, nav) and a shallower one for the things that
+   are surfaces (cards, tiles, rows); one easing for arriving, one for moving between places ---- */
+html:root{--press:.97;--press-card:.985;--zz-move:cubic-bezier(.45,0,.15,1)}
+
+/* ---- Questions list on phones: the title takes the first line, the tag and the Answer button sit under it, nothing runs off ---- */
+@media (max-width:520px){
+ #v-questions .qi-h:is(*,#zzp#zzp){flex-wrap:wrap!important;row-gap:10px}
+ #v-questions .qi-h .qt:is(*,#zzp#zzp){flex:1 1 calc(100% - 40px)!important;min-width:0}
+ #v-questions .qi-h .qgo:is(*,#zzp#zzp){margin-left:auto}
+}
+
+/* ---- figures: a stat never breaks in the middle ("0 of 1,404 learned" stays together); section counts line up on the right ---- */
+html:root body .pb-chips span{white-space:nowrap}
+html:root body :is(#qpt,#qsum,#qsum2,.qa-mini small,.zm-prog span){white-space:nowrap}
+html:root body .qs-h .cnt:is(*,#zzp#zzp){display:inline-block;min-width:3.5ch;text-align:right;font-variant-numeric:tabular-nums}
+
+/* ---- touch targets: every control answers a 44px finger even where it is drawn smaller. The extra area is an invisible
+   pseudo-element, so nothing moves and nothing looks different; it stops short of a neighbouring control. The two header icons touch
+   each other, so each grows outwards only: the pen reaches 44x44; the settings icon reaches 38x44, the 12px up to the Start
+   button being all there is. Rows that already sit closer than 44px apart (the lists inside Home's More stats) are left alone. ---- */
+@media (pointer:coarse),(max-width:900px){
+ html:root body :is(#tools>.zz-more-t,.qf-x,.tbfil button,p.zq-fg a,.zz-welcome a,details.nh-sx>summary,.crumb a){position:relative}
+ html:root body #tools>button:not(.zz-more-t)::after{content:"";position:absolute;top:-6px;bottom:-6px;left:-19px;right:0}
+ html:root body #tools>.zz-more-t::after{content:"";position:absolute;top:-6px;bottom:-6px;left:0;right:-12px}
+ html:root body .qf-x::after{content:"";position:absolute;top:0;bottom:0;left:-5px;right:-5px}
+ html:root body .crumb a::after{content:"";position:absolute;top:0;bottom:0;left:-1px;right:-1px}
+ html:root body .fx-top::after{content:"";position:absolute;inset:-2px}
+ html:root body .tbfil button::after{content:"";position:absolute;left:0;right:0;top:-3px;bottom:-3px}
+ html:root body p.zq-fg a::after{content:"";position:absolute;left:0;right:0;top:-3px;bottom:-3px}
+ html:root body .zz-welcome a::after{content:"";position:absolute;left:0;right:0;top:-2px;bottom:-2px}
+ html:root body details.nh-sx>summary::before{content:"";position:absolute;left:0;right:0;top:-4px;bottom:-4px}
+}
+
+/* ---- Questions list (owner's layout). Phones: plain rows under collapsible topic bands, the whole row is the tap target.
+   From 700px: a table, Question | Type | Rating | Where it appeared, in a 1040px column. Colours are the owner's; dark mode
+   maps them onto the palette tokens. ---- */
+#v-questions{--ql-div:#e7e2ea;--ql-chip:#efe7eb;--ql-chip-ink:#4d3b46;--ql-src:#6e2a49;--ql-mar:#7a1f3d;--ql-band:#f9ecf1}
+html:root[data-theme=dark]:not([data-tone=fluo]) #v-questions{--ql-div:var(--line);--ql-chip:var(--soft);--ql-chip-ink:var(--text);--ql-src:var(--blue);--ql-mar:var(--blue);--ql-band:var(--soft)}
+@media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]) #v-questions{--ql-div:var(--line);--ql-chip:var(--soft);--ql-chip-ink:var(--text);--ql-src:var(--blue);--ql-mar:var(--blue);--ql-band:var(--soft)}}
+html:root body #v-questions .qs-b:is(*,#zzp#zzp#zzp){gap:0!important;padding:0!important}
+html:root body #v-questions .qi:is(*,#zzp#zzp#zzp){border:0!important;border-radius:0!important;box-shadow:none!important;background:none!important;margin:0!important;padding:0!important}
+html:root body #v-questions .qi.tc{display:none!important}
+html:root body #v-questions .qall .qi.tc:not([hidden]){display:block!important}
+html:root body #v-questions .qi-h:is(*,#zzp#zzp#zzp){display:flex!important;flex-wrap:wrap!important;align-items:baseline!important;gap:0!important;width:100%!important;min-height:0!important;box-sizing:border-box!important;padding:14px 16px!important;border:0!important;border-bottom:1px solid var(--ql-div)!important;border-radius:0!important;background:none!important;box-shadow:none!important;text-align:left!important;transform:none!important}
+html:root body #v-questions .qi-h::before,html:root body #v-questions .qi-h .code{display:none!important}
+html:root body #v-questions .qi-h .qt:is(*,#zzp#zzp#zzp){flex:0 0 100%!important;min-width:0!important;margin:0 0 8px!important;padding:0!important}
+html:root body #v-questions .qi-h .tg:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-size:9.5px!important;font-weight:600!important;text-transform:uppercase!important;letter-spacing:.09em!important;line-height:1.4!important;color:var(--ql-mar)!important;border:0!important;background:none!important;padding:0!important;margin:0!important}
+html:root body #v-questions .qi-h .qr:is(*,#zzp#zzp#zzp){font-family:var(--body)!important;font-size:10.5px!important;font-weight:500!important;line-height:1.4!important;color:var(--muted)!important;white-space:nowrap}
+html:root body #v-questions .qi-h .qr::before{content:"\00a0\00b7\00a0"}
+html:root body #v-questions .qi-h .qr.z{display:none}
+html:root body #v-questions .qi-h .xm:is(*,#zzp#zzp#zzp){flex:0 0 100%!important;display:flex!important;flex-wrap:wrap!important;gap:4px!important;margin:8px 0 0!important;padding:0!important}
+html:root body #v-questions .qi-h .ex-y:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){background:var(--ql-chip)!important;color:var(--ql-chip-ink)!important;font-size:10.5px!important;font-weight:600!important;line-height:1.2!important;letter-spacing:0!important;padding:5px 7px!important;border:0!important;border-radius:.1875rem!important;margin:0!important}
+html:root body #v-questions .qi-h .ex-y .ex-p:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:var(--ql-src)!important;font-size:inherit!important;font-weight:inherit!important;margin-right:.3em!important}
+html:root body #v-questions .qsub:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;margin:0!important;padding:14px 16px 10px!important;font-family:var(--body)!important;font-size:12.5px!important;font-weight:600!important;letter-spacing:0!important;color:var(--ql-mar)!important;border:0!important}
+html:root body #v-questions .qca:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){position:relative!important;appearance:none;background:none!important;border:0!important;padding:0!important;min-height:0!important;font-size:10.5px!important;font-weight:400!important;color:var(--ql-mar)!important;text-decoration:underline!important;text-underline-offset:3px!important;white-space:nowrap!important;cursor:pointer;transform:none!important}
+html:root body #v-questions .qca::after{content:"";position:absolute;inset:-15px -8px}
+html:root body #v-questions .qtop:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){display:flex!important;align-items:center!important;gap:10px!important;min-height:44px!important;box-sizing:border-box!important;margin:0!important;padding:12px 16px!important;font-family:var(--body)!important;font-size:12.5px!important;font-weight:600!important;letter-spacing:0!important;color:var(--text)!important;background:var(--panel)!important;border:0!important;border-bottom:1px solid var(--ql-div)!important;cursor:pointer}
+html:root body #v-questions .qtop::before{content:none!important}
+html:root body #v-questions .qtop[aria-expanded=true]:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){background:var(--ql-band)!important;color:var(--ql-mar)!important}
+html:root body #v-questions .qtop .chv{flex:none;width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transform:rotate(-90deg)}
+html:root body #v-questions .qtop[aria-expanded=true] .chv{transform:none}
+html:root body #v-questions .qtop b{flex:1 1 auto;min-width:0;font:inherit}
+html:root body #v-questions .qtop .qtn:is(*,#zzp#zzp#zzp){font-size:10.5px!important;font-weight:400!important;color:var(--muted)!important;white-space:nowrap}
+html:root body #v-questions :is(.qtop,.qsub)[hidden]:is(*,#zzp#zzp#zzp#zzp#zzp#zzp#zzp){display:none!important}
+html:root body #v-questions .qth{display:none}
+@media(min-width:700px){
+ html:root body #v-questions :is(#qlist,#qflat){max-width:1040px;margin-inline:auto}
+ html:root body #v-questions .qth{display:grid;grid-template-columns:minmax(0,1.5fr) 118px 62px minmax(0,1fr);column-gap:16px;padding:10px 24px;border-bottom:2px solid var(--rule);color:var(--muted)}
+ html:root body #v-questions .qth span:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-family:var(--body)!important;font-size:9.5px!important;font-weight:600!important;text-transform:uppercase!important;letter-spacing:.09em!important}
+ html:root body #v-questions .qi-h:is(*,#zzp#zzp#zzp#zzp){display:grid!important;grid-template-columns:minmax(0,1.5fr) 118px 62px minmax(0,1fr)!important;column-gap:16px!important;align-items:start!important;padding:16px 24px!important}
+ html:root body #v-questions .qi-h .qt:is(*,#zzp#zzp#zzp#zzp){margin:0!important;font-size:1.125rem!important;line-height:1.3!important}
+ html:root body #v-questions .qi-h :is(.tg,.qr,.xm){align-self:start!important;justify-self:start!important}
+ html:root body #v-questions .qi-h .tg:is(*,#zzp#zzp#zzp#zzp#zzp#zzp#zzp){padding-top:5px!important}
+ html:root body #v-questions .qi-h .qr:is(*,#zzp#zzp#zzp#zzp){padding-top:4px}
+ html:root body #v-questions .qi-h .qr::before{content:none}
+ html:root body #v-questions .qi-h .qr.z{display:inline}
+ html:root body #v-questions .qi-h .xm:is(*,#zzp#zzp#zzp#zzp){margin:0!important}
+ html:root body #v-questions :is(.qsub,.qtop):is(*,#zzp#zzp#zzp#zzp#zzp#zzp#zzp){padding-left:24px!important;padding-right:24px!important}
+}

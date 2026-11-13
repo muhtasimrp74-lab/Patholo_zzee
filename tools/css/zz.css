@@ -48,7 +48,7 @@
 .zz-plans{list-style:none;padding:0;margin:var(--zz-s4) 0 0;display:grid;gap:var(--zz-s2)}
 .zz-plan{position:relative;display:flex;justify-content:space-between;align-items:center;gap:var(--zz-s3);width:100%;min-height:60px;padding:var(--zz-s3) var(--zz-s4);border:1px solid var(--zz-hair);border-radius:var(--zz-r-md);background:var(--zz-surface);color:var(--zz-ink);font:inherit;text-align:left;cursor:pointer;transition:border-color var(--zz-fast),box-shadow var(--zz-fast),transform var(--zz-fast)}
 .zz-plan:hover{border-color:var(--zz-hair-2);box-shadow:var(--zz-shadow-1)}
-.zz-plan:active{transform:scale(.99)}
+.zz-plan:active{transform:scale(var(--press-card))}
 .zz-plan b{display:block;font-weight:600}
 .zz-plan small{display:block;font-size:var(--zz-t-xs);color:var(--zz-ink-2);font-weight:400;margin-top:2px}
 .zz-plan .zz-pr{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--zz-ink)}

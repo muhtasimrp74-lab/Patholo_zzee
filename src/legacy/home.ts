@@ -93,7 +93,7 @@ function render(){
  const pace=days!>0?Math.ceil((tot-read)/days!):0;
 
  /* ---------- hero ---------- */
- let h='<section class="nh-banner" aria-labelledby="nh-h1"><div class="nh-bn-pic"><picture><source media="(max-width:640px)" srcset="icons/hero-lab-m.webp" width="600" height="671"><img src="icons/hero-lab.webp" width="1672" height="940" alt="" loading="eager" fetchpriority="high" decoding="async"></picture></div><div class="nh-bn-in"><div class="nh-bn-t"><p class="crumb">Patholo_zzee · NMC viva list · Robbins 11th edition</p><h1 id="nh-h1">Pathology learning for viva and written exams</h1><p class="nh-bn-s">'+tot.toLocaleString('en-US')+' viva and written questions with answers, MCQs and the Robbins textbook, arranged in NMC viva list order.</p><p class="nh-bn-b"><a class="nh-bn-cta" href="#/qa">Explore Pathology</a><a class="nh-bn-lk" href="#/questions">Browse all questions</a></p></div></div></section>';
+ let h='<section class="nh-banner" aria-labelledby="nh-h1"><div class="nh-bn-pic"><picture><source media="(max-width:640px)" srcset="icons/hero-lab-m.webp" width="600" height="671"><img src="icons/hero-lab.webp" width="1672" height="940" alt="" loading="eager" fetchpriority="high" decoding="async"></picture></div><div class="nh-bn-in"><div class="nh-bn-t"><p class="crumb">NMC viva list, Robbins 11th edition</p><h1 id="nh-h1">Pathology for viva and written exams</h1><p class="nh-bn-s">'+tot.toLocaleString('en-US')+' viva and written questions with answers, MCQs and the Robbins textbook, arranged in NMC viva list order.</p><p class="nh-bn-b"><a class="nh-bn-cta" href="#/qa">Explore Pathology</a><a class="nh-bn-lk" href="#/questions">Browse all questions</a></p></div></div></section>';
  h+='<div class="nh-w"><header class="nh-hero nh-hero-s">';
  h+='<p class="nh-line">'+sn+' day streak'+(doneToday?' · done today':sn?' · study today to keep it':'')+' · '+tot.toLocaleString('en-US')+' questions · '+[...document.querySelectorAll('.view')].filter(v=>v.querySelector('article.card')).length+' chapters</p>';
  h+='</header>';
@@ -131,14 +131,14 @@ function render(){
  const ht=heat();
  /* ---------- study tracks ---------- */
  h+='<section><h3 class="nh-h nh-h0">Study tracks</h3><div class="nh-tr">';
- h+='<a class="nh-t4 nh-prog" href="'+(nextV?lnk(nextV):'#/questions')+'"><span class="nh-tk">Viva questions</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'<span class="nh-ts">'+(VQ.length-vr)+' unread · A- and B-cards plus systemic</span><em>'+(vr?'Continue':'Start')+' →</em></a>';
- h+='<a class="nh-t4 nh-prog" href="'+(nextW?lnk(nextW):'#/questions')+'"><span class="nh-tk">Written questions</span><b>'+wr+'<small> / '+WQ.length+'</small></b>'+bar(pct(wr,WQ.length))+'<span class="nh-ts">'+(WQ.length-wr)+' unread · long-answer format</span><em>'+(wr?'Continue':'Start')+' →</em></a>';
- h+='<a class="nh-t4 nh-prog" href="#/mcqs"><span class="nh-tk">MCQs</span><b>'+mq.att+'<small> / '+mq.tot+'</small></b>'+bar(pct(mq.att,mq.tot))+'<span class="nh-ts">'+(mq.n?mq.acc+'% correct · '+mq.n+' answers':'{{ZZ_PAPERS}} past papers · mock exams · quick sets')+'</span><em>'+(mq.sv?'Resume':mq.att?'Practise':'Start')+' →</em></a>';
- h+='<a class="nh-t4 nh-prog" href="#/textbook'+(tbNext?'/'+tbNext.id:'')+'"><span class="nh-tk">Robbins textbook</span><b>'+tbR+'<small> / '+(tbN||29)+'</small></b>'+bar(pct(tbR,tbN||29))+'<span class="nh-ts">'+(tbNext?'Next: Ch '+tbNext.n+' · '+esc2(tbNext.title):'Chapters read, offline-ready')+'</span><em>'+(tbR?'Continue':'Open')+' →</em></a>';
+ h+='<a class="nh-t4 nh-prog" href="'+(nextV?lnk(nextV):'#/questions')+'"><span class="nh-tk">Viva questions</span><b>'+vr+'<small> / '+VQ.length+'</small></b>'+bar(pct(vr,VQ.length))+'<span class="nh-ts">'+(VQ.length-vr)+' unread · A- and B-cards plus systemic</span><em>'+(vr?'Continue':'Start')+'</em></a>';
+ h+='<a class="nh-t4 nh-prog" href="'+(nextW?lnk(nextW):'#/questions')+'"><span class="nh-tk">Written questions</span><b>'+wr+'<small> / '+WQ.length+'</small></b>'+bar(pct(wr,WQ.length))+'<span class="nh-ts">'+(WQ.length-wr)+' unread · long-answer format</span><em>'+(wr?'Continue':'Start')+'</em></a>';
+ h+='<a class="nh-t4 nh-prog" href="#/mcqs"><span class="nh-tk">MCQs</span><b>'+mq.att+'<small> / '+mq.tot+'</small></b>'+bar(pct(mq.att,mq.tot))+'<span class="nh-ts">'+(mq.n?mq.acc+'% correct · '+mq.n+' answers':'{{ZZ_PAPERS}} past papers · mock exams · quick sets')+'</span><em>'+(mq.sv?'Resume':mq.att?'Practise':'Start')+'</em></a>';
+ h+='<a class="nh-t4 nh-prog" href="#/textbook'+(tbNext?'/'+tbNext.id:'')+'"><span class="nh-tk">Robbins textbook</span><b>'+tbR+'<small> / '+(tbN||29)+'</small></b>'+bar(pct(tbR,tbN||29))+'<span class="nh-ts">'+(tbNext?'Next: Ch '+tbNext.n+' · '+esc2(tbNext.title):'Chapters read, offline-ready')+'</span><em>'+(tbR?'Continue':'Open')+'</em></a>';
  h+='</div></section>';
 
  /* ---------- revision row ---------- */
- h+='<section class="nh-row"><a href="#/practice"><b>'+due+'</b><span>Due for review</span></a><a href="#/practice"><b>'+mist+'</b><span>In mistake vault</span></a><a href="#/bookmarks"><b>'+S.bm.length+'</b><span>Revise later</span></a><a class="nh-rr" href="#/practice">Rapid Recall →</a></section>';
+ h+='<section class="nh-row"><a href="#/practice"><b>'+due+'</b><span>Due for review</span></a><a href="#/practice"><b>'+mist+'</b><span>In mistake vault</span></a><a href="#/bookmarks"><b>'+S.bm.length+'</b><span>Revise later</span></a><a class="nh-rr" href="#/practice">Rapid Recall</a></section>';
 
  const mk=h.length;
  /* ---------- high-yield + weak spots ---------- */

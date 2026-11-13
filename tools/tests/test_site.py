@@ -332,7 +332,7 @@ class Browser(unittest.TestCase):
             for f in ('privacy', 'terms', 'refund'):
                 pg.goto('file://' + os.path.join(ROOT, f + '.html'))
                 s = pg.evaluate("()=>{const b=getComputedStyle(document.body),a=getComputedStyle(document.querySelector('a'));return [b.fontFamily.split(',')[0].trim(),a.color,b.backgroundColor.match(/\\d+/g).slice(0,3).map(Number)]}")
-                self.assertEqual(s[0], 'system-ui', f + ': the app font stack (system sans), not the browser default serif'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
+                self.assertEqual(s[0], '"Times New Roman"', f + ': legal pages are set in the reading face (Times New Roman, Tinos where it is not installed)'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
                 self.assertEqual(sum(s[2]) < 200, scheme == 'dark', '%s (%s): background follows the colour scheme %r' % (f, scheme, s[2]))
             pg.close()
     CR = r"""()=>{const h=[...document.querySelectorAll('section.pb p.zz-hi')].find(e=>e.offsetParent);if(!h)return null;const P=c=>c.match(/[\d.]+/g).map(Number),L=a=>{const f=v=>{v/=255;return v<=.03928?v/12.92:((v+.055)/1.055)**2.4};return .2126*f(a[0])+.7152*f(a[1])+.0722*f(a[2])};
@@ -389,7 +389,7 @@ class Browser(unittest.TestCase):
             for h in ('#/mcqs', '#/qa', '#/menu', '#/'): pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)   # tabs render on first visit
             r = pg.evaluate("""()=>{const g=s=>{const e=document.querySelector(s);if(!e)return null;const c=getComputedStyle(e);return [c.borderTopLeftRadius,c.boxShadow]};
                 return {mcq:g('#v-mcqs .mx-acc'),qa:g('#v-qa .topic'),hero:g('#v-qa .qa-hero'),home:g('#v-home .nh-prog'),menu:g('#v-menu .zm-list')}}""")
-            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '12px', '%s: MCQ card %r' % (theme, ref))
+            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '0px', '%s: MCQ card %r (square paper)' % (theme, ref))
             for k, v in r.items():
                 self.assertEqual(v, ref, '%s: the %s card matches the MCQ card (corners and shadow)' % (theme, k))
             pg.close()
@@ -437,10 +437,20 @@ class Browser(unittest.TestCase):
             self.assertEqual(pg.evaluate(self.SMALLTXT, v), [], '%s: interface text below 12 px' % h)
         lab = pg.evaluate("()=>[...document.querySelectorAll('#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-eb')].map(e=>{const s=getComputedStyle(e);return s.textTransform+'/'+s.fontWeight})")
         self.assertTrue(lab and set(lab) == {'none/700'}, 'section labels in sentence case and bold: %r' % sorted(set(lab))); pg.close()
-    def test_answer_typography_is_unchanged_so_ink_stays_on_its_words(self):   # baseline measured before the typography pass
+    def test_answer_line_pitch_is_unchanged_so_ink_stays_on_its_lines(self):   # answers are Times New Roman at 18px; the line pitch is the one saved ink was drawn on (27.2px paragraphs, 25.6px list lines)
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}); pg.goto(URL + '#/02'); pg.wait_for_timeout(1000)
-        r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontSize,c.lineHeight,c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li'),g('.card .ans h4.sub')]}")
-        self.assertEqual(r, [['16px', '27.2px', '0.048px', '0px', '400'], ['16px', '25.6px', '0.048px', '0px', '400'], ['15.2px', 'normal', 'normal', '0px', '700']]); pg.close()
+        r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontFamily.split(',')[0],c.fontSize,(Math.round(parseFloat(c.lineHeight)*10)/10)+'px',c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li')]}")
+        self.assertEqual([[x[0], x[1], x[2], x[4], x[5]] for x in r], [['"Times New Roman"', '18px', '27.2px', '0px', '400'], ['"Times New Roman"', '18px', '25.6px', '0px', '400']]); pg.close()
+    def test_only_the_four_typefaces_are_used(self):   # owner: TAN Buster, Anton, Oswald and Times New Roman, nothing else, on every tab
+        pg = self.b.new_page(viewport={'width': 412, 'height': 900}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
+        for h in ('#/', '#/qa', '#/questions', '#/02', '#/mcqs', '#/textbook', '#/menu'):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1200)
+            bad = pg.evaluate("""()=>{const ok=['Times New Roman','Oswald','Anton','TAN Buster'],out=new Set();document.querySelectorAll('.view:not([hidden]) *').forEach(e=>{if(e.closest('svg,script,style'))return;const r=e.getBoundingClientRect();
+                if(!r.width||![...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim().length>1))return;const f=getComputedStyle(e).fontFamily.split(',')[0].replace(/"/g,'').trim();if(!ok.includes(f))out.add(f+' on '+(e.className||e.tagName))});return [...out].slice(0,6)}""")
+            self.assertEqual(bad, [], '%s: text set in a face outside the four' % h)
+        pg.close()
     def test_every_tab_is_ready_before_the_first_swipe_and_not_rebuilt_on_arrival(self):   # owner: instant, preloaded like a game
         pg = self.b.new_page(viewport={'width': 412, 'height': 860}, has_touch=True, is_mobile=True, service_workers='block')
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
@@ -651,13 +661,34 @@ class Browser(unittest.TestCase):
         self.assertEqual(pg.evaluate('location.hash'), '#/qa'); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0)
         for h in ('#/questions', '#/05', '#/mcqs', '#/textbook', '#/menu'): pg.goto(URL + h); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.nh-banner:visible').count(), 0, h)
         self.assertEqual(self.errs, [])
+    # each screen scrolls inside its own .view pane on phones, so the document never grows sideways: measure the pane on screen too
+    SIDE = "()=>{const v=[...document.querySelectorAll('.view')].find(x=>!x.hidden&&x.getBoundingClientRect().width>0&&Math.abs(x.getBoundingClientRect().left)<2);return Math.max(v?v.scrollWidth-v.clientWidth:0,document.documentElement.scrollWidth-innerWidth)}"
+    def test_no_pane_scrolls_sideways_on_phones(self):   # bug: Questions cards ran 56-126px off the screen and clipped the Answer button
+        for w in (360, 390):
+            pg = self.b.new_page(viewport={'width': w, 'height': 800}, has_touch=True, is_mobile=True)
+            pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+            for h, js in (('#/questions', "()=>{const s=document.querySelector('#v-questions .qs-h');s&&s.click()}"), ('#/qa', None), ('#/', None), ('#/02', "()=>{const c=document.querySelector('#v-02 article.card header');c&&c.click()}"), ('#/mcqs', "()=>{const n=document.querySelector('#v-mcqs .mx-next');n&&n.click()}")):
+                pg.goto(URL + h); pg.wait_for_timeout(900)
+                if js: pg.evaluate(js); pg.wait_for_timeout(700)
+                self.assertLessEqual(pg.evaluate(self.SIDE), 0, '%s scrolls sideways at %d' % (h, w))
+                if h == '#/questions':
+                    self.assertGreater(pg.locator('#v-questions .qi-h:visible').count(), 0, 'a section is open')
+                    r = pg.evaluate("()=>{const g=[...document.querySelectorAll('#v-questions .qi-h')].find(e=>e.getBoundingClientRect().width);return [g.getBoundingClientRect().right<=innerWidth,document.querySelectorAll('#v-questions .qi-h .qgo').length]}")
+                    self.assertEqual(r, [True, 0], 'rows fit the screen and are the tap target themselves (no Answer button) at %d' % w)
+                    self.assertRegex(pg.inner_text('#qpt'), r'of 1,\d{3} learned', 'figures carry a thousands separator')
+                if h == '#/qa': self.assertRegex(pg.inner_text('#qsum2'), r'^1,\d{3} questions')
+            pg.goto(URL + '#/'); pg.wait_for_timeout(800)   # the quiz above hides the header
+            hit = pg.evaluate("()=>[...document.querySelectorAll('#tools>button')].filter(b=>b.getBoundingClientRect().width).map(b=>{const r=b.getBoundingClientRect(),a=getComputedStyle(b,'::after');return [r.width+Math.abs(parseFloat(a.left)||0)+Math.abs(parseFloat(a.right)||0),r.height+Math.abs(parseFloat(a.top)||0)+Math.abs(parseFloat(a.bottom)||0)]})")
+            self.assertTrue(hit and all(x[0] >= 37.5 and x[1] >= 43.5 for x in hit), 'header icons answer a 44px-tall finger (38px wide at least: they touch each other) at %d: %r' % (w, hit))
+            pg.close()
     def test_home_banner_responsive_no_overflow(self):
         for w, h in ((1440, 900), (820, 1100), (390, 844), (360, 740)):
             pg = self.b.new_page(viewport={'width': w, 'height': h}); pg.goto(URL + '#/'); pg.wait_for_timeout(700)
-            self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'horizontal overflow at %d' % w)
+            self.assertLessEqual(pg.evaluate(self.SIDE), 0, 'horizontal overflow at %d' % w)
             r = pg.evaluate("()=>{const b=document.querySelector('.nh-banner').getBoundingClientRect(),c=document.querySelector('.nh-bn-cta').getBoundingClientRect();return [b.height,c.bottom,c.right<=innerWidth]}")
             self.assertTrue(r[2], w); self.assertLess(r[1], h, 'CTA below the fold at %d' % w)
-            if w >= 1000: self.assertTrue(420 <= r[0] <= 500, r[0])
+            if w >= 1000: self.assertTrue(240 <= r[0] <= 380, r[0])   # owner: banners were taking too much space; a compact band
+            else: self.assertLessEqual(r[0], 340, 'the Home band stays compact on phones and tablets: %r' % r[0])
             pg.close()
     def test_tab_banners_present_load_and_do_not_overflow(self):
         tabs = {'questions': 'Questions', 'qa': 'Chapters', 'mcqs': 'MCQs', 'textbook': 'Textbook', 'menu': 'Menu'}
@@ -669,7 +700,7 @@ class Browser(unittest.TestCase):
                 if r == 'menu': self.assertEqual(pg.locator('#v-menu .pb img').count(), 0, 'the Menu header is typographic')
                 else: self.assertGreater(pg.evaluate("()=>document.querySelector('#v-%s .pb img').naturalWidth" % r), 0, 'banner image failed: ' + r)
                 self.assertEqual(pg.locator('#v-%s h1:visible' % r).count(), 1, r); self.assertEqual(pg.inner_text('#v-%s h1' % r).strip(), t)
-                self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'overflow %s at %d' % (r, w))
+                self.assertLessEqual(pg.evaluate(self.SIDE), 0, 'overflow %s at %d' % (r, w))
             pg.goto(URL + '#/05'); pg.wait_for_timeout(300); self.assertEqual(pg.locator('.pb:visible').count(), 0, 'banner leaked onto a topic page')
             self.assertEqual(errs, []); pg.close()
     def test_questions_default_collapsed_and_filters(self):

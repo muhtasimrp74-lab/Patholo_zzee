@@ -53,7 +53,7 @@ html.fx-full body.an-on .mx-o.no{animation:fx-stain .7s var(--fx-out) both}   /*
 #bnav.fx-pilled{isolation:isolate}
 #bnav .fx-pill{position:absolute;left:0;top:0;z-index:-1;border-radius:14px;background:var(--fx-tab,rgba(122,31,54,.1));opacity:0;pointer-events:none}
 html:not(.fx-off) #bnav.fx-pilled a.on{background:transparent!important}
-html.fx-full #bnav .fx-pill{transition:transform .42s var(--fx-spring),width .3s var(--fx-out),opacity .2s}
+html.fx-full #bnav .fx-pill{transition:transform .42s var(--fx-out),width .3s var(--fx-out),opacity .2s}
 html.fx-off #bnav .fx-pill{display:none}
 
 /* dialogs: the page behind defocuses */
@@ -94,7 +94,7 @@ html.fx-full body :is(a.topic,.tbtile,.mx-tile)::after{content:"";position:absol
  background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0) 1.5px)}
 html.fx-full body :is(a.topic,.tbtile,.mx-tile).fx-tilt::after{background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0) 1.5px),
  radial-gradient(280px circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.3),rgba(255,255,255,0) 60%)}
-html.fx-full body :is(a.topic,.tbtile,.mx-tile){transition:transform .45s var(--fx-spring),border-color .2s!important;transform-origin:50% 50%}
+html.fx-full body :is(a.topic,.tbtile,.mx-tile){transition:transform .45s var(--fx-out),border-color .2s!important;transform-origin:50% 50%}
 html.fx-full body :is(a.topic,.tbtile,.mx-tile).fx-tilt{transform:perspective(900px) rotateX(var(--fx-rx,0deg)) rotateY(var(--fx-ry,0deg))!important;transition:transform .12s linear,border-color .2s!important}
 :root[data-theme=dark] html.fx-full body :is(a.topic,.tbtile,.mx-tile)::after,html[data-theme=dark].fx-full body :is(a.topic,.tbtile,.mx-tile)::after{opacity:.35}
 @media print{.fx-bg,.fx-hero{display:none!important}}
@@ -128,7 +128,7 @@ html.fx-full .cf:nth-child(5n){background:var(--fx-gold)!important;width:6px!imp
 
 /* C55 the "Read" stamp */
 .fx-stamp{position:absolute;right:18px;top:14px;z-index:4;padding:4px 14px;border:3px solid var(--burgundy);border-radius:10px;color:var(--burgundy);pointer-events:none;
- font:400 1.4rem/1 var(--disp);letter-spacing:.02em;transform:rotate(-8deg);opacity:.9;mix-blend-mode:multiply;animation:fx-stamp .5s cubic-bezier(.2,.8,.2,1) both,fx-fade .5s ease 2s forwards}
+ font:400 1.4rem/1 var(--disp);letter-spacing:.02em;transform:rotate(-8deg);opacity:.9;mix-blend-mode:multiply;animation:fx-stamp .5s var(--zz-ease) both,fx-fade .5s ease 2s forwards}
 @keyframes fx-stamp{0%{opacity:0;transform:rotate(-8deg) scale(1.9)}60%{opacity:.95;transform:rotate(-8deg) scale(.94)}100%{opacity:.9;transform:rotate(-8deg) scale(1)}}
 @keyframes fx-fade{to{opacity:0}}
 html[data-theme=dark] .fx-stamp{mix-blend-mode:normal;color:var(--rosy);border-color:var(--rosy)}
@@ -146,7 +146,7 @@ html.fx-off .fx-top{transition:none}
 
 /* C5 magnetic main buttons (desktop) */
 html.fx-full :is(.nh-go,.zz-b,.mx-go,.zq-go,.pb-act a).fx-mag{transform:translate(var(--fx-mx,0),var(--fx-my,0))!important;transition:transform .15s linear!important}
-html.fx-full :is(.nh-go,.zz-b,.mx-go,.zq-go,.pb-act a){transition:transform .4s var(--fx-spring)}
+html.fx-full :is(.nh-go,.zz-b,.mx-go,.zq-go,.pb-act a){transition:transform .4s var(--fx-out)}
 
 /* C9 the active tab icon draws itself in */
 html.fx-full #bnav svg.fx-draw :is(path,rect,circle,line,polyline,polygon,ellipse){stroke-dasharray:1;stroke-dashoffset:1;animation:fx-draw .6s var(--fx-out) forwards}

@@ -158,7 +158,7 @@ body.an-left .an-sheet{right:auto;left:12px}
 .an-cp .an-hue{-webkit-appearance:none;appearance:none;width:100%;height:16px;margin:0;border-radius:8px;background:linear-gradient(90deg,#d9534f,#e8b43a,#7fae4e,#3fa7a3,#4f7fd0,#9a62c8,#d9534f);touch-action:none}
 .an-cp .an-hue::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--panel,#fff);border:3px solid var(--text,#222);box-shadow:0 1px 4px rgba(0,0,0,.3)}
 .an-cp .an-hue::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--panel,#fff);border:3px solid var(--text,#222)}
-.an-cp .an-hex{box-sizing:border-box;width:100%;min-height:44px;padding:0 12px;border-radius:12px;border:1px solid color-mix(in srgb,var(--text,#222) 18%,transparent);background:var(--bg,#fff);color:var(--text,#222);font:500 15px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.04em;text-transform:lowercase}
+.an-cp .an-hex{box-sizing:border-box;width:100%;min-height:44px;padding:0 12px;border-radius:12px;border:1px solid color-mix(in srgb,var(--text,#222) 18%,transparent);background:var(--bg,#fff);color:var(--text,#222);font:500 15px/1 var(--body,sans-serif);letter-spacing:.04em;text-transform:lowercase}
 
 /* ---- writing space ---- */
 .an-ws{position:relative;z-index:0;margin:16px 0 8px;border-radius:14px;border:1px dashed color-mix(in srgb,var(--burgundy,#c13d5e) 38%,transparent);background:color-mix(in srgb,var(--panel,#fff) 72%,transparent);overflow:hidden}

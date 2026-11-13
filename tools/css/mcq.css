@@ -10,7 +10,7 @@ body.mx-live #v-mcqs .hero{display:none}
 .mx-note,.mx-sub{margin:0 4px 10px;color:var(--muted);font:.86rem/1.45 var(--body)}
 .mx-link{background:none;border:0;padding:6px 2px;color:var(--lbl);font:600 .84rem var(--body);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 .mx-btn{min-height:46px;padding:0 22px;border:0;border-radius:14px;background:var(--btn);color:#fff;font:600 .95rem var(--body);cursor:pointer;transition:filter .15s,transform .15s}
-.mx-btn:hover:not(:disabled){filter:brightness(1.08)}.mx-btn:active:not(:disabled){transform:scale(.98)}
+.mx-btn:hover:not(:disabled){filter:brightness(1.08)}.mx-btn:active:not(:disabled){transform:scale(var(--press))}
 .mx-btn.ghost{background:var(--panel);color:var(--text);border:1px solid var(--line)}
 .mx-btn.sm{min-height:36px;padding:0 14px;font-size:.84rem;border-radius:11px}
 .mx-ib{flex:none;width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--text);cursor:pointer}

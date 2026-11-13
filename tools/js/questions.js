@@ -61,10 +61,21 @@ const LETTERS=[...new Set(['A','B'].concat(DATA.flatMap(letter).filter(Boolean))
 const CODES=[...new Set(DATA.flatMap(cds))].sort(cardCmp);
 
 const KT={v:'Viva',w:'Written',b:'Written + Viva'},kt=d=>ty(d)==='B'?'b':ty(d)==='W'?'w':'v';
-const qi=d=>`<div class="qi" data-k="${kt(d)}" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}${xm(d)}</span><span class="tg k-${kt(d)}">${KT[kt(d)]}</span><span class="qgo" role="link" tabindex="0" data-go="#/${d[2]}/${d[3]}" aria-label="Open answer on its own page">Answer ›</span>${chev}</button><div class="qi-a" hidden></div></div>`;
-const secC=c=>{const it=g[c],ci=CHI[c];let last=null,lt=null,h='';const nt={};it.forEach(d=>(nt[subOf(d)]=nt[subOf(d)]||new Set()).add(topOf(d)));it.forEach(d=>{const sb=subOf(d),tp=topOf(d);if(sb!==last){h+=`<h5 class="qsub" data-sub="${esc(sb)}">${esc(sb)}</h5>`;last=sb;lt=null}if(nt[sb].size>1&&tp!==lt){h+=`<h6 class="qtop" data-top="${esc(tp)}">${esc(tp)}</h6>`;lt=tp}h+=qi(d)});
- return `<section class="qs" data-t="${c}"><button class="qs-h" type="button" aria-expanded="true"><span class="no">${esc(ci[2])}</span><b>${esc(ci[1])}</b><span class="cnt">${it.length}</span>${chev}</button><div class="qs-b">${h}</div></section>`};
-const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${items.map(qi).join('')}</div></section>`;
+/* list rows carry three things after the question: its type (.tg), a rating (.qr) and chips for where it appeared (.xm) */
+const xq=d=>{const e=EX[d[3]],n=e&&e[0],m=xm(d).replace(/<span class="xs">[^<]*<\/span>/,'').replace(/<span class="imp[\s\S]*?<\/span>(?=<span class="ex-y|<\/small>)/,'');
+ return `<span class="qr${n?'':' z'}"${n?` role="img" aria-label="${e[3]||n>3?'Asked '+n+(n>1?' times':' time'):'Importance: '+n+' of 3'}"`:''}>${n?'\u2605 '+n:'\u2013'}</span>`+(/ex-y/.test(m)?m:'')};
+const QTH='<div class="qth" aria-hidden="true"><span>Question</span><span>Type</span><span>Rating</span><span>Where it appeared</span></div>';
+/* topics fold: a topic's rows are the .qi siblings up to the next heading; the choice is remembered per topic (first topic of a chapter opens by default) */
+const TPK='zzQTopics';let TP={};try{TP=JSON.parse(localStorage.getItem(TPK)||'{}')||{}}catch(e){}
+function subTops(s){const a=[];for(let n=s.nextElementSibling;n&&!n.classList.contains('qsub');n=n.nextElementSibling)if(n.classList.contains('qtop'))a.push(n);return a}
+function caLbl(s){const b=s&&s.querySelector('.qca');if(b)b.textContent=subTops(s).some(t=>t.getAttribute('aria-expanded')==='true')?'Collapse all':'Expand all'}
+function setTop(h,o,keep){h.setAttribute('aria-expanded',o);for(let n=h.nextElementSibling;n&&!n.classList.contains('qtop')&&!n.classList.contains('qsub');n=n.nextElementSibling)n.classList.toggle('tc',!o);
+ if(keep){TP[h.dataset.k]=o?1:0;try{localStorage.setItem(TPK,JSON.stringify(TP))}catch(e){}}let q=h.previousElementSibling;while(q&&!q.classList.contains('qsub'))q=q.previousElementSibling;caLbl(q)}
+function tps(list){list.querySelectorAll('.qtop:not([data-i])').forEach(h=>{h.dataset.i=1;const k=h.dataset.k;setTop(h,k in TP?!!TP[k]:h===h.parentNode.querySelector('.qtop'))})}
+const qi=d=>`<div class="qi" data-k="${kt(d)}" data-id="${d[3]}" data-s="${esc((d[1]+' '+d[4]+' '+d[0]).toLowerCase())}"><button class="qi-h" type="button" aria-expanded="false">${cds(d).map(c=>`<span class="code">${c}</span>`).join('')}<span class="qt">${esc(d[1])}</span><span class="tg k-${kt(d)}">${KT[kt(d)]}</span>${xq(d)}</button><div class="qi-a" hidden></div></div>`;
+const secC=c=>{const it=g[c],ci=CHI[c];let last=null,lt=null,h='';const nt={};const cn={};it.forEach(d=>{const k=subOf(d)+'\u0001'+topOf(d);cn[k]=(cn[k]||0)+1});it.forEach(d=>{const sb=subOf(d),tp=topOf(d);if(sb!==last){h+=`<h5 class="qsub" data-sub="${esc(sb)}"><span>${esc(sb)}</span><button type="button" class="qca">Collapse all</button></h5>`;last=sb;lt=null}if(tp!==lt){const n=cn[sb+'\u0001'+tp];h+=`<h6 class="qtop" data-top="${esc(tp)}" data-k="${esc(c+'|'+sb+'|'+tp)}" role="button" tabindex="0" aria-expanded="true">${chev}<b>${esc(tp||sb)}</b><span class="qtn">${n} question${n>1?'s':''}</span></h6>`;lt=tp}h+=qi(d)});
+ return `<section class="qs" data-t="${c}"><button class="qs-h" type="button" aria-expanded="true"><span class="no">${esc(ci[2])}</span><b>${esc(ci[1])}</b><span class="cnt">${it.length}</span>${chev}</button><div class="qs-b">${QTH}${h}</div></section>`};
+const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${QTH}${items.map(qi).join('')}</div></section>`;
 
 QV.innerHTML='<div class="qwrap"><aside id="qf" aria-label="Filters"></aside><div class="qmain">'
 +'<div class="qtools"><input id="qfilter" type="search" placeholder="Filter questions…" aria-label="Filter questions">'
@@ -95,7 +106,7 @@ const SHOW=[['all','All'],['fav','Favourites'],['bm','Bookmarked'],['note','With
 const tname=t=>CHI[t]?CHI[t][2]+' \u00b7 '+CHI[t][1]:t;
 
 /* ---------- panel ---------- */
-const chip=(k,v,lb,on,c)=>`<button type="button" class="qfc${on?' on':''}${c===0?' z':''}" data-k="${k}" data-v="${v}" aria-pressed="${!!on}">${lb}${c!=null?`<i>${c}</i>`:''}</button>`;
+const chip=(k,v,lb,on,c)=>`<button type="button" class="qfc${on?' on':''}${c===0?' z':''}" data-k="${k}" data-v="${v}" aria-pressed="${!!on}">${lb}${c!=null?`<i>${(+c).toLocaleString('en-US')}</i>`:''}</button>`;
 function panel(){
  const a=document.activeElement,keep=a&&qf.contains(a)&&a.dataset.k?[a.dataset.k,a.dataset.v]:null;
  const n=nAct()+!!F.q,tot=DATA.filter(d=>pass(d)).length;
@@ -131,12 +142,12 @@ function apply(){
  list.hidden=flat;fl.hidden=!flat;
  if(flat){const grp={};hit.slice().sort((x,y)=>cardCmp(cds(x)[0]||'',cds(y)[0]||'')||BOOK[x[3]]-BOOK[y[3]]).forEach(d=>(cds(d).length?cds(d):['']).forEach(c=>(grp[c]=grp[c]||[]).push(d)));
   fl.innerHTML=Object.keys(grp).sort((a,b)=>(!a)-(!b)||cardCmp(a,b)).map(c=>sec(c||'W',c?'Card '+c:'Written questions (no card)',grp[c],'data-c="'+c+'"')).join('');fl.querySelectorAll('.qi').forEach(lbl)}
- else{list.querySelectorAll('.qi').forEach(i=>i.hidden=!ok.has(i.dataset.id));
+ else{tps(list);list.classList.toggle('qall',!!act);list.querySelectorAll('.qi').forEach(i=>i.hidden=!ok.has(i.dataset.id));
   list.querySelectorAll('.qsub,.qtop').forEach(h=>{const t=h.classList.contains('qtop');let n=h.nextElementSibling,v=false;while(n&&!n.classList.contains('qsub')&&!(t&&n.classList.contains('qtop'))){if(n.classList.contains('qi')&&!n.hidden)v=true;n=n.nextElementSibling}h.hidden=!v});
   if(!act&&window.__qa!==false&&window.qColAll)window.qColAll();window.__qa=!!act;
   list.querySelectorAll('.qs').forEach(s=>{const v=s.querySelectorAll('.qi:not([hidden])').length;s.hidden=!v;if(act&&v){s.querySelector('.qs-h').setAttribute('aria-expanded',true);s.querySelector('.qs-b').hidden=false}})}
  $q('qnone').hidden=!!hit.length;
- $q('qsum').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
+ $q('qsum').textContent=hit.length===DATA.length?DATA.length.toLocaleString('en-US')+' questions':hit.length.toLocaleString('en-US')+' of '+DATA.length.toLocaleString('en-US')+' questions';
  $q('qact').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
  const n=nAct()+!!F.q,b=$q('qfn');b.hidden=!n;b.textContent=n;quick(hit);applyQA(hit,n);applyViews(hit,n)}
 function run(){apply();panel()}
@@ -148,13 +159,13 @@ function quick(hit){
  const el=$q('qquick');if(!el)return;
  el.innerHTML=QK.filter(x=>x[1]!=='H'||HASEX).map(x=>`<button type="button" class="qk${qon(x[0],x[1])?' on':''}" data-qk="${x[0]}" data-qv="${x[1]}" aria-pressed="${qon(x[0],x[1])}">${x[2]}</button>`).join('');
  const L=new Set(S.learned||[]),r=hit.filter(d=>L.has(d[3])).length;
- $q('qpu').style.width=Math.round(100*r/Math.max(hit.length,1))+'%';$q('qpt').textContent=r+' of '+hit.length+' learned';
+ $q('qpu').style.width=Math.round(100*r/Math.max(hit.length,1))+'%';$q('qpt').textContent=r.toLocaleString('en-US')+' of '+hit.length.toLocaleString('en-US')+' learned';
 }
 $q('qquick').addEventListener('click',e=>{const b=e.target.closest('[data-qk]');if(!b)return;const k=b.dataset.qk,v=b.dataset.qv;
  if(v==='H'){const on=qon(k,v);F.stars=on?F.stars.filter(x=>!HY().includes(x)):[...new Set([...F.stars,...HY()])];run()}else set(k,v)});
 $q('qrnd').onclick=()=>{const L=new Set(S.learned||[]),vis=[...QV.querySelectorAll('#qlist .qi:not([hidden]),#qflat .qi:not([hidden])')],pool=vis.filter(i=>!L.has(i.dataset.id)),a=pool.length?pool:vis;if(!a.length)return;
  const i=a[Math.floor(Math.random()*a.length)],s=i.closest('.qs');if(s){const h=s.querySelector('.qs-h');h&&h.setAttribute('aria-expanded',true);const bd=s.querySelector('.qs-b');bd&&(bd.hidden=false)}
- const h=i.querySelector('.qi-h');if(h&&h.getAttribute('aria-expanded')!=='true')h.click();i.scrollIntoView({behavior:'smooth',block:'center'})};
+ i.classList.remove('tc');const h=i.querySelector('.qi-h');if(h&&h.getAttribute('aria-expanded')!=='true')h.click();i.scrollIntoView({behavior:'smooth',block:'center'})};
 
 function set(k,v){
  const tg=(a,x)=>{const i=a.indexOf(String(x));i<0?a.push(String(x)):a.splice(i,1)};
@@ -181,10 +192,10 @@ function applyQA(hit,n){if(!A)return;
  const per={};hit.forEach(d=>per[d[2]]=(per[d[2]]||0)+1);const act=n>0;let shown=0;
  A.querySelectorAll('a.topic').forEach(a=>{const t=(a.getAttribute('href')||'').replace('#/',''),c=a.querySelector('.cnt');
   if(c&&!c.dataset.o)c.dataset.o=c.textContent;const tot=DATA.filter(d=>d[2]===t).length,k=per[t]||0;
-  a.hidden=act&&!k;if(!a.hidden)shown++;if(c)c.textContent=act?k+' of '+tot+' questions':c.dataset.o});
+  a.hidden=act&&!k;if(!a.hidden)shown++;if(c)c.textContent=act?(+k).toLocaleString('en-US')+' of '+(+tot).toLocaleString('en-US')+' questions':c.dataset.o});
  A.querySelectorAll('section.part').forEach(sec=>{const cards=sec.querySelectorAll('a.topic');sec.hidden=act&&(!cards.length||![...cards].some(a=>!a.hidden))});
  $q('qanone').hidden=!(act&&!shown);
- $q('qsum2').textContent=hit.length===DATA.length?DATA.length+' questions':hit.length+' of '+DATA.length+' questions';
+ $q('qsum2').textContent=hit.length===DATA.length?DATA.length.toLocaleString('en-US')+' questions':hit.length.toLocaleString('en-US')+' of '+DATA.length.toLocaleString('en-US')+' questions';
  $q('qact2').innerHTML=actChips().map(([l,k,v])=>`<button type="button" class="qchip" data-k="${k}" data-v="${v}" data-x="1" aria-label="Remove filter ${esc(l)}">${esc(l)}${IC.x}</button>`).join('');
  const b=$q('qfn2');b.hidden=!n;b.textContent=n}
 function place(){const h=location.hash,inQ=/^#\/questions/.test(h),inA=!!A&&/^#\/qa/.test(h);
@@ -240,8 +251,9 @@ function lbl(i){const on=S.learned.includes(i.dataset.id),b=i.querySelector('.ql
 function open1(i,open){if(open)fill(i);i.querySelector('.qi-h').setAttribute('aria-expanded',open);i.querySelector('.qi-a').hidden=!open;i.classList.toggle('o',open)}
 function sync(){QV.querySelectorAll('.qi').forEach(lbl);run()}
 QV.querySelectorAll('.qi').forEach(lbl);
-QV.addEventListener('keydown',e=>{const g=e.target.closest&&e.target.closest('.qgo');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();location.hash=g.dataset.go}});
+QV.addEventListener('keydown',e=>{if(e.target.classList&&e.target.classList.contains('qtop')&&(e.key==='Enter'||e.key===' ')){e.preventDefault();setTop(e.target,e.target.getAttribute('aria-expanded')!=='true',1);return}const g=e.target.closest&&e.target.closest('.qgo');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();location.hash=g.dataset.go}});
 QV.addEventListener('click',e=>{
+ const ca=e.target.closest('.qca');if(ca){const o=ca.textContent!=='Collapse all';subTops(ca.parentNode).forEach(t=>setTop(t,o,1));return}const th=e.target.closest('.qtop');if(th){setTop(th,th.getAttribute('aria-expanded')!=='true',1);return}
  const g=e.target.closest('.qgo');if(g){e.preventDefault();location.hash=g.dataset.go;return}const h=e.target.closest('.qi-h');if(h){const i=h.parentNode;open1(i,h.getAttribute('aria-expanded')!=='true');return}
  const s=e.target.closest('.qs-h');if(s){const o=s.getAttribute('aria-expanded')!=='true';s.setAttribute('aria-expanded',o);s.nextElementSibling.hidden=!o;return}
  const b=e.target.closest('.qlearn');if(b){const i=b.closest('.qi'),id=i.dataset.id,k=S.learned.indexOf(id);k<0?(S.learned.push(id),touch()):S.learned.splice(k,1);save();
