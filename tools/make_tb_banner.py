@@ -7,9 +7,9 @@ import os, random
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1672, 940
 R = random.Random(11)
-TONES = ['#7A1F36', '#93304A', '#5B1528', '#A8506A', '#C98FA2', '#E8D9E3', '#3A2A30', '#4A1A28', '#B7A08A', '#8C6A5A']
+TONES = ['#7A1F36', '#93304A', '#5B1528', '#A8506A', '#C98FA2', '#E8D9E3', '#2E1F47', '#4A1A28', '#B7A08A', '#8C6A5A']
 out = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d" role="img" aria-label="">' % (W, H, W, H),
-       '<rect width="%d" height="%d" fill="#1D181B"/>' % (W, H)]
+       '<rect width="%d" height="%d" fill="#1C102F"/>' % (W, H)]
 
 def shelf(y, x0, x1, hmin, hmax):
     """one row of spines standing on a shelf whose top edge is at y"""
@@ -21,15 +21,15 @@ def shelf(y, x0, x1, hmin, hmax):
             out.append('<g transform="rotate(-9 %d %d)"><rect x="%d" y="%d" width="%d" height="%d" rx="4" fill="%s"/></g>' % (x + w, y, x + 14, y - h, w - 10, h, c))
             x += w + 26; continue
         out.append('<rect x="%d" y="%d" width="%d" height="%d" rx="4" fill="%s"/>' % (x, y - h, w, h, c))
-        ink = '#1D181B' if c in ('#E8D9E3', '#C98FA2', '#B7A08A') else '#E8D9E3'
+        ink = '#1C102F' if c in ('#E8D9E3', '#C98FA2', '#B7A08A') else '#E8D9E3'
         b = R.randint(26, 60)   # title bands and a small label, drawn as plain bars
         out.append('<rect x="%d" y="%d" width="%d" height="5" fill="%s" opacity=".55"/>' % (x + 7, y - h + b, w - 14, ink))
         out.append('<rect x="%d" y="%d" width="%d" height="5" fill="%s" opacity=".55"/>' % (x + 7, y - h + b + 14, w - 14, ink))
         if w >= 46: out.append('<rect x="%d" y="%d" width="%d" height="%d" rx="2" fill="%s" opacity=".35"/>' % (x + w // 2 - 6, y - h + b + 44, 12, min(120, h - b - 90), ink))
         out.append('<rect x="%d" y="%d" width="%d" height="5" fill="%s" opacity=".4"/>' % (x + 7, y - 34, w - 14, ink))
         x += w + R.choice([3, 4, 6])
-    out.append('<rect x="%d" y="%d" width="%d" height="14" fill="#2B2226"/>' % (x0 - 40, y, x1 - x0 + 80))
-    out.append('<rect x="%d" y="%d" width="%d" height="3" fill="#3A2F34"/>' % (x0 - 40, y, x1 - x0 + 80))
+    out.append('<rect x="%d" y="%d" width="%d" height="14" fill="#26183C"/>' % (x0 - 40, y, x1 - x0 + 80))
+    out.append('<rect x="%d" y="%d" width="%d" height="3" fill="#33234D"/>' % (x0 - 40, y, x1 - x0 + 80))
 
 shelf(300, 860, 1640, 150, 250)
 shelf(610, 820, 1640, 170, 270)

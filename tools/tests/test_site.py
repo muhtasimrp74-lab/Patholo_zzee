@@ -332,7 +332,7 @@ class Browser(unittest.TestCase):
             for f in ('privacy', 'terms', 'refund'):
                 pg.goto('file://' + os.path.join(ROOT, f + '.html'))
                 s = pg.evaluate("()=>{const b=getComputedStyle(document.body),a=getComputedStyle(document.querySelector('a'));return [b.fontFamily.split(',')[0].trim(),a.color,b.backgroundColor.match(/\\d+/g).slice(0,3).map(Number)]}")
-                self.assertEqual(s[0], 'system-ui', f + ': the app font stack (system sans), not the browser default serif'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
+                self.assertEqual(s[0], '"Times New Roman"', f + ': legal pages are set in the reading face (Times New Roman, Tinos where it is not installed)'); self.assertNotEqual(s[1], 'rgb(0, 0, 238)', f + ': links in the app colour')
                 self.assertEqual(sum(s[2]) < 200, scheme == 'dark', '%s (%s): background follows the colour scheme %r' % (f, scheme, s[2]))
             pg.close()
     CR = r"""()=>{const h=[...document.querySelectorAll('section.pb p.zz-hi')].find(e=>e.offsetParent);if(!h)return null;const P=c=>c.match(/[\d.]+/g).map(Number),L=a=>{const f=v=>{v/=255;return v<=.03928?v/12.92:((v+.055)/1.055)**2.4};return .2126*f(a[0])+.7152*f(a[1])+.0722*f(a[2])};
@@ -389,7 +389,7 @@ class Browser(unittest.TestCase):
             for h in ('#/mcqs', '#/qa', '#/menu', '#/'): pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(700)   # tabs render on first visit
             r = pg.evaluate("""()=>{const g=s=>{const e=document.querySelector(s);if(!e)return null;const c=getComputedStyle(e);return [c.borderTopLeftRadius,c.boxShadow]};
                 return {mcq:g('#v-mcqs .mx-acc'),qa:g('#v-qa .topic'),hero:g('#v-qa .qa-hero'),home:g('#v-home .nh-prog'),menu:g('#v-menu .zm-list')}}""")
-            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '12px', '%s: MCQ card %r' % (theme, ref))
+            ref = r.pop('mcq'); self.assertTrue(ref and ref[0] == '0px', '%s: MCQ card %r (square paper)' % (theme, ref))
             for k, v in r.items():
                 self.assertEqual(v, ref, '%s: the %s card matches the MCQ card (corners and shadow)' % (theme, k))
             pg.close()
@@ -437,10 +437,20 @@ class Browser(unittest.TestCase):
             self.assertEqual(pg.evaluate(self.SMALLTXT, v), [], '%s: interface text below 12 px' % h)
         lab = pg.evaluate("()=>[...document.querySelectorAll('#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-eb')].map(e=>{const s=getComputedStyle(e);return s.textTransform+'/'+s.fontWeight})")
         self.assertTrue(lab and set(lab) == {'none/700'}, 'section labels in sentence case and bold: %r' % sorted(set(lab))); pg.close()
-    def test_answer_typography_is_unchanged_so_ink_stays_on_its_words(self):   # baseline measured before the typography pass
+    def test_answer_line_pitch_is_unchanged_so_ink_stays_on_its_lines(self):   # answers are Times New Roman at 19px; the line pitch is the one saved ink was drawn on (27.2px paragraphs, 25.6px list lines)
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}); pg.goto(URL + '#/02'); pg.wait_for_timeout(1000)
-        r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontSize,c.lineHeight,c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li'),g('.card .ans h4.sub')]}")
-        self.assertEqual(r, [['16px', '27.2px', '0.048px', '0px', '400'], ['16px', '25.6px', '0.048px', '0px', '400'], ['15.2px', 'normal', 'normal', '0px', '700']]); pg.close()
+        r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontFamily.split(',')[0],c.fontSize,(Math.round(parseFloat(c.lineHeight)*10)/10)+'px',c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li')]}")
+        self.assertEqual(r, [['"Times New Roman"', '19px', '27.2px', '0.048px', '0px', '400'], ['"Times New Roman"', '19px', '25.6px', '0.048px', '0px', '400']]); pg.close()
+    def test_only_the_four_typefaces_are_used(self):   # owner: TAN Buster, Anton, Oswald and Times New Roman, nothing else, on every tab
+        pg = self.b.new_page(viewport={'width': 412, 'height': 900}, has_touch=True, is_mobile=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(1200)
+        for h in ('#/', '#/qa', '#/questions', '#/02', '#/mcqs', '#/textbook', '#/menu'):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(1200)
+            bad = pg.evaluate("""()=>{const ok=['Times New Roman','Oswald','Anton','TAN Buster'],out=new Set();document.querySelectorAll('.view:not([hidden]) *').forEach(e=>{if(e.closest('svg,script,style'))return;const r=e.getBoundingClientRect();
+                if(!r.width||![...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim().length>1))return;const f=getComputedStyle(e).fontFamily.split(',')[0].replace(/"/g,'').trim();if(!ok.includes(f))out.add(f+' on '+(e.className||e.tagName))});return [...out].slice(0,6)}""")
+            self.assertEqual(bad, [], '%s: text set in a face outside the four' % h)
+        pg.close()
     def test_every_tab_is_ready_before_the_first_swipe_and_not_rebuilt_on_arrival(self):   # owner: instant, preloaded like a game
         pg = self.b.new_page(viewport={'width': 412, 'height': 860}, has_touch=True, is_mobile=True, service_workers='block')
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")

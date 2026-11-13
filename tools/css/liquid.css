@@ -42,7 +42,7 @@ html body #bnav.zz-drag .fx-pill{transition:none!important}
 /* the footer runs to the bottom of the screen: no light strip under it (the tab bar slides away when scrolling down) */
 html body:has(.sf){padding-bottom:0!important}
 /* swipe tabs keep the bottom-bar spacer (the footer must end above the bar) but paint it in the footer colour: no light strip */
-html .zz-pane:has(> .sf:last-child)::after{background:#12080b}
+html .zz-pane:has(> .sf:last-child)::after{background:#1C102F}
 :not(.zz-pane) > .sf::after{content:"";display:block;height:calc(50px + env(safe-area-inset-bottom,0px))}
 /* active tab: the glass pill is the indicator, so no second (square-cornered) box under it; the plain indicator matches the capsule bar */
 #bnav a.on,#bnav a[aria-current]{border-radius:999px}

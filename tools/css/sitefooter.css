@@ -1,10 +1,10 @@
 
 /* ---- site footer ---- */
-.sf{margin-top:56px;padding:0;text-align:left;font-size:inherit;background:#12080b;color:#E8D9E3}
+.sf{margin-top:56px;padding:0;text-align:left;font-size:inherit;background:#1C102F;color:#E8D9E3}
 .nh-f{display:none}
-.sf-hero{position:relative;overflow:hidden;background:#12080b}
+.sf-hero{position:relative;overflow:hidden;background:#1C102F}
 .sf-hero picture,.sf-hero img{display:block;width:100%;height:auto}
-.sf-hero::before{content:"";position:absolute;left:0;right:0;top:0;height:46px;z-index:1;background:linear-gradient(180deg,#12080b,rgba(18,8,11,0));pointer-events:none}
+.sf-hero::before{content:"";position:absolute;left:0;right:0;top:0;height:46px;z-index:1;background:linear-gradient(180deg,#1C102F,rgba(18,8,11,0));pointer-events:none}
 .sf-credit{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-52%);text-align:center;width:min(40%,560px)}
 .sf-credit p{margin:0}
 .sf-k{font:600 .72rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:#D98FA8}

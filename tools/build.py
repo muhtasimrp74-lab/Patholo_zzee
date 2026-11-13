@@ -439,10 +439,19 @@ assert s.count('</head><body>') == 1
 s = s.replace('</head><body>', '<style id="zz-plain">' + _asset('plain.css') + '</style></head><body>', 1)   # loaded last on purpose: see the header of plain.css
 for _f, _fb in (('Hanken Grotesk', 'system-ui'), ('Inter', 'system-ui'), ('Newsreader', 'Georgia'), ('DM Serif Display', 'Georgia')):   # dropped web fonts: stacks fall through to the system fonts
     s = re.sub(r'''(["'])%s\1\s*,\s*''' % _f, '', s); s = re.sub(r'''(["'])%s\1(?=\s*[;}!])''' % _f, _fb, s)
-# plain look: pill buttons become 8px, large card radii become 12px (px values only; 50% circles and small radii are kept)
+# square paper: panels and cards lose their rounding, the things you press keep 2px (px values only; 50% circles are kept)
 def _radius(m):
-    return m.group(1) + re.sub(r'(?<![\w.])(\d+(?:\.\d+)?)px', lambda n: ('8px' if float(n.group(1)) >= 99 else '12px' if float(n.group(1)) > 12 else n.group(0)), m.group(2))
+    return m.group(1) + re.sub(r'(?<![\w.])(\d+(?:\.\d+)?)px', lambda n: ('2px' if float(n.group(1)) >= 99 else '0px' if float(n.group(1)) > 12 else '2px' if float(n.group(1)) > 2 else n.group(0)), m.group(2))
 s = re.sub(r'(border(?:-(?:top|bottom|start|end)-(?:left|right|start|end))?-radius:)([^;}"\'`<]+)', _radius, s)
+# browser chrome (address bar, task switcher) follows the palette: paper white in light, haematoxylin in dark
+for _a, _b in (('<meta name="theme-color" content="#F8F3EE"', '<meta name="theme-color" content="#FFFFFF"'), ('<meta name="theme-color" content="#1C1219"', '<meta name="theme-color" content="#150E21"')):
+    assert s.count(_a) == 1, 'theme-color anchor missing: ' + _a
+    s = s.replace(_a, _b)
+# the interface face and the title face are needed by the first screen of every page: fetch them with the HTML so text does not
+# flash in a fallback and jump (Anton and the Tinos fallback load on demand; the service worker caches all of them)
+_pre = ''.join('<link rel="preload" as="font" type="font/woff2" href="fonts/%s" crossorigin>' % _f for _f in ('oswald-latin-wght-normal.woff2', 'tan-buster-bold.woff2'))
+assert s.count('<link rel="icon" type="image/svg+xml"') == 1
+s = s.replace('<link rel="icon" type="image/svg+xml"', _pre + '<link rel="icon" type="image/svg+xml"')
 s = s.rstrip()[:-len('</body></html>')] + BOOT_END + '</body></html>\n'
 import re as _re
 s = _re.sub(r'<button(?![^>]*\btype=)', '<button type="button"', s)

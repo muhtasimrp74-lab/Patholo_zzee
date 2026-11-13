@@ -35,7 +35,7 @@ const CFG={
  growth:{t:'Hypertrophy (bigger cells) vs hyperplasia (more cells)',m:/hypertrophy|hyperplasia|adaptation/i,
   st:[[0,'Normal tissue'],[.35,'More workload or hormone signal'],[.7,'Left: same cells, larger. Right: more cells, same size']],
   draw(g,W,H,t){const half=W/2,ink=col('--plum','#2A1627'),eo=col('--rosy','#D98FA8');g.strokeStyle=col('--line2','#ccc');g.beginPath();g.moveTo(half,10);g.lineTo(half,H-10);g.stroke();
-   g.fillStyle=ink;g.font='600 12px '+col('--body','sans-serif');g.textAlign='center';g.fillText('Hypertrophy',half/2,20);g.fillText('Hyperplasia',half*1.5,20);
+   g.fillStyle=ink;g.font='600 12px '+'Oswald,sans-serif';g.textAlign='center';g.fillText('Hypertrophy',half/2,20);g.fillText('Hyperplasia',half*1.5,20);
    const cell=(x,y,s)=>{g.globalAlpha=.45;g.fillStyle=eo;g.beginPath();g.ellipse(x,y,s,s*.8,0,0,TAU);g.fill();g.globalAlpha=1;g.strokeStyle=ink;g.stroke();g.fillStyle=ink;g.beginPath();g.arc(x,y,s*.28,0,TAU);g.fill()};
    const s0=Math.min(half,H)/10,sh=s0*(1+.7*t);for(let j=0;j<3;j++)for(let i=0;i<3;i++)cell(half/2+(i-1)*sh*2.1,H/2+10+(j-1)*sh*1.75,sh);
    const n=3+Math.round(2*t),R=rnd(3);for(let j=0;j<n;j++)for(let i=0;i<n;i++){const sp=Math.min(half,H-40)/(n+.5);cell(half*1.5+(i-(n-1)/2)*sp,H/2+10+(j-(n-1)/2)*sp*.88,s0*(.96+.08*R()))}

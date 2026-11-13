@@ -232,7 +232,7 @@ html body :is(.sf-col h2,#v-mcqs .mx-h,.card .tg,.pager a small):not(#_){text-tr
 .ll-foil{position:absolute;inset:9% 11%;border:1.5px solid rgba(230,201,143,.55);border-radius:4px;padding:14% 10% 10%;display:flex;flex-direction:column;gap:10px}
 html body .ll :is(.ll-foil small,.ll-foil em,.ll-k,.ll-close):not(#_){text-transform:uppercase!important;font-weight:700!important}
 .ll-foil small{font:700 10.5px var(--body,system-ui,sans-serif);letter-spacing:.14em}
-.ll-foil b{font:400 clamp(19px,5.2vw,27px)/1.12 'DM Serif Display',Georgia,serif;color:#f1dba8;text-shadow:0 1px 0 rgba(0,0,0,.35)}
+.ll-foil b{font:400 clamp(19px,5.2vw,27px)/1.12 'DM Serif Display',var(--read);color:#f1dba8;text-shadow:0 1px 0 rgba(0,0,0,.35)}
 .ll-foil em{margin-top:auto;font:700 12px var(--body,system-ui,sans-serif);font-style:normal;letter-spacing:.1em;opacity:.9}
 .ll.on .ll-book{transform:translate(-50%,-50%) scale(1.02)}
 .ll.on .ll-cover{transform:rotateY(-168deg);visibility:hidden;pointer-events:none}
@@ -252,7 +252,7 @@ html body .ll :is(.ll-foil small,.ll-foil em,.ll-k,.ll-close):not(#_){text-trans
 .ll-close{margin-top:10px;padding:0 16px;font-size:12px;letter-spacing:.08em}
 .ll-list{list-style:none;margin:0;padding:0;display:grid;gap:2px;align-content:start}
 .ll-list a{display:flex;gap:12px;align-items:baseline;min-height:44px;padding:9px 8px;border-radius:10px;color:#2a1627;text-decoration:none;font:600 14.5px/1.3 var(--body,system-ui,sans-serif)}
-.ll-list a span{min-width:2ch;font:400 17px 'DM Serif Display',Georgia,serif;color:#7a1f36;font-variant-numeric:tabular-nums}
+.ll-list a span{min-width:2ch;font:400 17px 'DM Serif Display',var(--read);color:#7a1f36;font-variant-numeric:tabular-nums}
 .ll-list a:hover,.ll-list a:focus-visible{background:rgba(122,31,54,.08);outline:none}
 .ll-list.ll-turn{animation:ll-turn .45s cubic-bezier(.2,.8,.2,1)}.ll-list.ll-back{animation:ll-back .45s cubic-bezier(.2,.8,.2,1)}
 @keyframes ll-turn{from{opacity:0;transform:translateX(18px) rotateY(-8deg)}}@keyframes ll-back{from{opacity:0;transform:translateX(-18px) rotateY(8deg)}}
