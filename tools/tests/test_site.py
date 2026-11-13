@@ -437,10 +437,10 @@ class Browser(unittest.TestCase):
             self.assertEqual(pg.evaluate(self.SMALLTXT, v), [], '%s: interface text below 12 px' % h)
         lab = pg.evaluate("()=>[...document.querySelectorAll('#v-home .nh-k,#v-qa .qa-k,#v-mcqs .mx-eb')].map(e=>{const s=getComputedStyle(e);return s.textTransform+'/'+s.fontWeight})")
         self.assertTrue(lab and set(lab) == {'none/700'}, 'section labels in sentence case and bold: %r' % sorted(set(lab))); pg.close()
-    def test_answer_line_pitch_is_unchanged_so_ink_stays_on_its_lines(self):   # answers are Times New Roman at 19px; the line pitch is the one saved ink was drawn on (27.2px paragraphs, 25.6px list lines)
+    def test_answer_line_pitch_is_unchanged_so_ink_stays_on_its_lines(self):   # answers are Times New Roman at 18px; the line pitch is the one saved ink was drawn on (27.2px paragraphs, 25.6px list lines)
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}); pg.goto(URL + '#/02'); pg.wait_for_timeout(1000)
         r = pg.evaluate("()=>{const g=s=>{const c=getComputedStyle(document.querySelector(s));return [c.fontFamily.split(',')[0],c.fontSize,(Math.round(parseFloat(c.lineHeight)*10)/10)+'px',c.letterSpacing,c.wordSpacing,c.fontWeight]};return [g('.card .ans p'),g('.card .ans li')]}")
-        self.assertEqual(r, [['"Times New Roman"', '19px', '27.2px', '0.048px', '0px', '400'], ['"Times New Roman"', '19px', '25.6px', '0.048px', '0px', '400']]); pg.close()
+        self.assertEqual([[x[0], x[1], x[2], x[4], x[5]] for x in r], [['"Times New Roman"', '18px', '27.2px', '0px', '400'], ['"Times New Roman"', '18px', '25.6px', '0px', '400']]); pg.close()
     def test_only_the_four_typefaces_are_used(self):   # owner: TAN Buster, Anton, Oswald and Times New Roman, nothing else, on every tab
         pg = self.b.new_page(viewport={'width': 412, 'height': 900}, has_touch=True, is_mobile=True)
         pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.setItem('zzName','T');localStorage.setItem('zzExamAsk',String(Date.now()+7*864e5))")
@@ -667,7 +667,8 @@ class Browser(unittest.TestCase):
             self.assertFalse(pg.evaluate("()=>document.documentElement.scrollWidth>innerWidth"), 'horizontal overflow at %d' % w)
             r = pg.evaluate("()=>{const b=document.querySelector('.nh-banner').getBoundingClientRect(),c=document.querySelector('.nh-bn-cta').getBoundingClientRect();return [b.height,c.bottom,c.right<=innerWidth]}")
             self.assertTrue(r[2], w); self.assertLess(r[1], h, 'CTA below the fold at %d' % w)
-            if w >= 1000: self.assertTrue(420 <= r[0] <= 500, r[0])
+            if w >= 1000: self.assertTrue(240 <= r[0] <= 380, r[0])   # owner: banners were taking too much space; a compact band
+            else: self.assertLessEqual(r[0], 340, 'the Home band stays compact on phones and tablets: %r' % r[0])
             pg.close()
     def test_tab_banners_present_load_and_do_not_overflow(self):
         tabs = {'questions': 'Questions', 'qa': 'Chapters', 'mcqs': 'MCQs', 'textbook': 'Textbook', 'menu': 'Menu'}
