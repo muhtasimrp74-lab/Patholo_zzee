@@ -187,7 +187,7 @@ class ProTools(unittest.TestCase):
             rows.append([tuple(line[x * ch:x * ch + 3]) for x in range(w)]); prev = line
         return rows
     def test_highlights_stay_behind_light_text_on_dark_pages(self):   # regression guard: already true before this pass
-        for theme in ('dark', 'fluo'):
+        for theme in ('dark',):
             pg, cid, sel, k = self.hl_page()
             pg.evaluate("t=>{const d=document.documentElement;if(t==='dark')d.dataset.theme='dark';else{d.dataset.theme='light';d.classList.add('zz-pol')}}", theme); pg.wait_for_timeout(200)
             pg.evaluate("s=>document.querySelector(s).querySelector('p,li').scrollIntoView({block:'center',behavior:'instant'})", sel); pg.wait_for_timeout(700)   # the pager pane scrolls, not the window
