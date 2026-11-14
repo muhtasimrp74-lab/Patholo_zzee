@@ -47,7 +47,7 @@
 		const stat = (c, D, Po) => D[c.id] ? "done" : Po[c.id] > .02 && Po[c.id] < .97 ? "prog" : "new";
 		const tile = (c, D, Po) => {
 			const s = stat(c, D, Po), pc = Math.round((Po[c.id] || 0) * 100);
-			return `<a class="tbtile ${s}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span class="tbt-x"><b>${E(c.title)}</b><small>${c.pages ? "pp. " + c.pages[0] + "–" + c.pages[1] + " · " : ""}~${fmtMin(c.min)}${c.figs ? " · " + c.figs + " figures" : ""}</small>${s === "prog" ? `<span class="tbpb" role="img" aria-label="${pc}% read"><i style="width:${pc}%"></i></span>` : ""}</span><span class="tbst">${s === "done" ? "✓ Read" : s === "prog" ? pc + "%" : ""}</span></a>`;
+			return `<a class="tbtile ${s}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span class="tbt-x"><b>${E(c.title)}</b><small>${c.pages ? "pp. " + c.pages[0] + "–" + c.pages[1] + " · " : ""}~${fmtMin(c.min)}</small>${s === "prog" ? `<span class="tbpb" role="img" aria-label="${pc}% read"><i style="width:${pc}%"></i></span>` : ""}</span><span class="tbst">${s === "done" ? "✓ Read" : s === "prog" ? pc + "%" : ""}</span></a>`;
 		};
 		const SB = document.body.appendChild(Object.assign(document.createElement("div"), {
 			id: "tbsc",
@@ -153,15 +153,29 @@
 			clearTimeout(pt);
 			pt = setTimeout(() => SB.classList.remove("show"), 1e3);
 			clearTimeout(tkr);
-			tkr = setTimeout(() => {
-				if (cur && location.hash.split("/")[2] === cur) {
-					const o = J("tbPos");
-					o[cur] = +r.toFixed(3);
-					W("tbPos", o);
-					mark(cur, o[cur]);
-				}
-			}, 400);
+			tbR = r;
+			tbRc = cur;
+			tkr = setTimeout(tbFlush, 400);
 		}
+		let tbR = -1, tbRc = null;
+		function tbFlush() {
+			if (tbR >= 0 && cur && tbRc === cur && location.hash.split("/")[2] === cur) {
+				const o = J("tbPos");
+				o[cur] = +tbR.toFixed(3);
+				W("tbPos", o);
+				mark(cur, o[cur]);
+			}
+		}
+		document.addEventListener("visibilitychange", () => {
+			if (document.visibilityState === "hidden") {
+				clearTimeout(tkr);
+				tbFlush();
+			}
+		});
+		addEventListener("pagehide", () => {
+			clearTimeout(tkr);
+			tbFlush();
+		});
 		function mark(ch, r) {
 			const bd = T.querySelector("#tbbody");
 			if (!bd || bd.dataset.ch !== ch) return;
@@ -229,6 +243,8 @@
 			return true;
 		}
 		addEventListener("scroll", onScroll, { passive: true });
+		const TBO = {};
+		let tbAct = false;
 		function paint() {
 			const g = document.getElementById("tbgrid");
 			if (!g || !IDX) return;
@@ -240,12 +256,36 @@
 				if (hf === "read" && s !== "done") return false;
 				return !q || c.title.toLowerCase().includes(q) || String(c.n) === q;
 			};
+			const act = !!q || !!hf && hf !== "all";
+			tbAct = act;
+			let cl = null;
+			try {
+				cl = C.find((x) => x.id === zzStore.getItem("tbLast"));
+			} catch (e) {}
+			if (cl && D[cl.id]) {
+				const i = C.indexOf(cl);
+				cl = C.slice(i + 1).find((x) => !D[x.id]) || C.find((x) => !D[x.id]) || null;
+			} else if (!cl) cl = C.find((x) => !D[x.id]) || null;
+			const cg = cl ? GR.findIndex((x) => x[2](cl.n)) : -1;
+			let first = -1;
+			if (!g.dataset.fold) {
+				g.dataset.fold = "1";
+				g.addEventListener("click", (e) => {
+					const s = e.target.closest("summary");
+					if (s && !tbAct) {
+						const d = s.parentElement;
+						TBO[d.dataset.g] = !d.open;
+					}
+				});
+			}
 			let out = "";
 			GR.forEach((gp, gi) => {
 				const all = C.filter((c) => GR.findIndex((x) => x[2](c.n)) === gi), cs = all.filter(ok);
 				if (!cs.length) return;
 				const nd = all.filter((c) => D[c.id]).length;
-				out += `<div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd / all.length * 100)}%"></i></div></div><div class="tbl">${cs.map((c) => tile(c, D, Po)).join("")}</div>`;
+				if (first < 0) first = gi;
+				const op = act || (String(gi) in TBO ? TBO[String(gi)] : gi === (cg >= 0 ? cg : first));
+				out += `<details class="tbpart-d" data-g="${gi}"${op ? " open" : ""}><summary><div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd / all.length * 100)}%"></i></div></div></summary><div class="tbl">${cs.map((c) => tile(c, D, Po)).join("")}</div></details>`;
 			});
 			g.innerHTML = out || "<div class=\"mempty\"><b>No chapters match</b>Try a different word, or switch the filter back to All.</div>";
 		}

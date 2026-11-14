@@ -400,6 +400,7 @@
 				render();
 			}
 		});
+		let nhDirty = false, nhBusy = false;
 		window.nhRender = (function() {
 			let q = 0;
 			return function() {
@@ -407,11 +408,40 @@
 				q = 1;
 				requestAnimationFrame(function() {
 					q = 0;
-					render();
+					nhBusy = true;
+					try {
+						render();
+					} finally {
+						nhBusy = false;
+					}
 				});
 			};
 		})();
 		render();
+		const nhOn = () => {
+			const h = location.hash;
+			return (h === "" || h === "#" || h === "#/" || h === "#/home") && document.visibilityState !== "hidden";
+		};
+		const nhLive = () => {
+			if (nhOn()) {
+				nhDirty = false;
+				window.nhRender();
+			} else nhDirty = true;
+		};
+		try {
+			zzStore.subscribe((k) => {
+				if (!nhBusy && (k === "tbLast" || k === "tbPos" || k === "tbDone" || k === "vivaState")) nhLive();
+			});
+		} catch (e) {}
+		addEventListener("hashchange", () => {
+			if (nhDirty && nhOn()) nhLive();
+		});
+		addEventListener("pageshow", (e) => {
+			if (nhDirty || e.persisted) nhLive();
+		});
+		document.addEventListener("visibilitychange", () => {
+			if (nhDirty && document.visibilityState === "visible") nhLive();
+		});
 	})();
 	(function() {
 		const T = document.getElementById("tools");
