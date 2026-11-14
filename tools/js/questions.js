@@ -1,8 +1,8 @@
 /* Questions page: collapsible list + advanced filter panel.
    Filters: status, type (viva / written), section (part), card (A-box / B-box, or one specific card), sort, jump to topic.
    QMETA (injected by build.py) = {parts:[[key,name,letter]], partOf:{topicId:partKey}, type:{questionId:'W'}} */
-const QV=mkView('questions','Questions','Questions','Tap a question to read its answer right here, or tap Answer to open it on its own page.');
-const QAV=mkView('qa','Chapters','Chapters','Pick a chapter to study viva and written questions together, with full answers. For one flat list to drill, use Questions.');
+const QV=mkView('questions','Questions','Questions','Every question in one list. Tap one to read its answer.');
+const QAV=mkView('qa','Chapters','Chapters','Viva and written questions together, chapter by chapter.');
 (function(){const H=document.getElementById('v-home'),ch=document.getElementById('pchips');QAV.append(ch);H.querySelectorAll('section.part').forEach(x=>QAV.append(x))})();
 
 (function(){
@@ -109,6 +109,7 @@ const tname=t=>CHI[t]?CHI[t][2]+' \u00b7 '+CHI[t][1]:t;
 const chip=(k,v,lb,on,c)=>`<button type="button" class="qfc${on?' on':''}${c===0?' z':''}" data-k="${k}" data-v="${v}" aria-pressed="${!!on}">${lb}${c!=null?`<i>${(+c).toLocaleString('en-US')}</i>`:''}</button>`;
 function panel(){
  const a=document.activeElement,keep=a&&qf.contains(a)&&a.dataset.k?[a.dataset.k,a.dataset.v]:null;
+ const ob=qf.querySelector('.qf-body'),qfTop=ob?ob.scrollTop:0;   /* the panel is rebuilt on every tap: keep the list where the reader had it */
  const n=nAct()+!!F.q,tot=DATA.filter(d=>pass(d)).length;
  const codes=CODES.filter(c=>!F.letter.length||F.letter.includes(cardOf(c)[0])),cardCnt=c=>cnt(d=>cds(d).includes(c),'card');
  qf.innerHTML=`<div class="qf-head"><b>Filters</b><span class="sp"></span><button type="button" class="qf-clr" data-k="reset"${n?'':' disabled'}>${IC.reset}<span>Clear all</span>${n?`<i>${n}</i>`:''}</button><button type="button" class="qf-x" data-k="close" aria-label="Close filters">${IC.x}</button></div><div class="qf-body">`+(SC()?`<p class="qf-scope">Only in this topic: <b>${esc((DATA.find(d=>d[2]===SC())||[])[4]||'')}</b></p>`:'')
@@ -121,8 +122,9 @@ function panel(){
  +`<h4>Specific card</h4><div class="qdd"><button type="button" class="qddb${DD?' o':''}${F.card.length?' has':''}" data-k="dd" aria-expanded="${DD}">${F.card.length?esc(F.card.join(', ')):'Any card'}${chev}</button>${DD?`<div class="qddl"><button type="button" class="${F.card.length?'':'on'}" data-k="card" data-v="">Any card</button>${codes.map(c=>`<button type="button" class="${has('card',c)?'on':''}" data-k="card" data-v="${c}">${c}<span>${cardCnt(c)}</span></button>`).join('')}</div>`:''}</div>`
  +`<h4>Sort</h4><div class="qseg">${[['book','Book order'],['card','Card number']].map(([v,l])=>`<button type="button" class="${F.sort===v?'on':''}" data-k="sort" data-v="${v}" aria-pressed="${F.sort===v}">${l}</button>`).join('')}</div>`
  +(SC()?'':`<div class="qfd"><button type="button" class="qfd-h" data-k="fo" aria-expanded="${FO||!!F.topic.length}">Chapter${chev}</button>${FO||F.topic.length?`<div class="qfd-b">${tids.filter(t=>cnt(d=>String(chOf(d))===String(t),'topic')>0).map(t=>`<button type="button" class="qti${has('topic',t)?' on':''}" data-k="topic" data-v="${t}"><b>${esc(CHI[t][2]+' \u00b7 '+CHI[t][1])}</b><span>${cnt(d=>String(chOf(d))===String(t),'topic')}</span></button>`).join('')}</div>`:''}</div>`)
- +`</div><div class="qf-foot"><button type="button" class="gb" data-k="close">Show ${tot} question${tot===1?'':'s'}</button></div>`;
- if(keep){const b=qf.querySelector(`[data-k="${keep[0]}"][data-v="${keep[1]}"]`);b&&b.focus()}
+ +`</div><div class="qf-foot"><button type="button" class="gb" data-k="close">Show ${tot.toLocaleString('en-US')} question${tot===1?'':'s'}</button></div>`;
+ const nb=qf.querySelector('.qf-body');if(nb)nb.scrollTop=qfTop;
+ if(keep){const b=qf.querySelector(`[data-k="${keep[0]}"][data-v="${keep[1]}"]`);b&&b.focus({preventScroll:true})}
 }
 
 /* ---------- list ---------- */

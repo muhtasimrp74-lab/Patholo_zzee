@@ -444,7 +444,7 @@ def _radius(m):
     return m.group(1) + re.sub(r'(?<![\w.])(\d+(?:\.\d+)?)px', lambda n: ('2px' if float(n.group(1)) >= 99 else '0px' if float(n.group(1)) > 12 else '2px' if float(n.group(1)) > 2 else n.group(0)), m.group(2))
 s = re.sub(r'(border(?:-(?:top|bottom|start|end)-(?:left|right|start|end))?-radius:)([^;}"\'`<]+)', _radius, s)
 # browser chrome (address bar, task switcher) follows the palette: paper white in light, haematoxylin in dark
-for _a, _b in (('<meta name="theme-color" content="#F8F3EE"', '<meta name="theme-color" content="#FFFFFF"'), ('<meta name="theme-color" content="#1C1219"', '<meta name="theme-color" content="#150E21"')):
+for _a, _b in (('<meta name="theme-color" content="#F8F3EE"', '<meta name="theme-color" content="#FFFFFF"'), ('<meta name="theme-color" content="#1C1219"', '<meta name="theme-color" content="#17141B"')):
     assert s.count(_a) == 1, 'theme-color anchor missing: ' + _a
     s = s.replace(_a, _b)
 # the interface face and the title face are needed by the first screen of every page: fetch them with the HTML so text does not
