@@ -154,7 +154,7 @@ function layerOf(host,key,make){let L=layers.get(host);if(L)return L;key=key||ke
  L={host,key,hl:null,ink:null,wet:null,raf:0,fresh:true,tb:!!(host.matches&&host.matches(TBH)),win:null};layers.set(host,L);host.classList.add('an-host');ro.observe(host);sched(L);return L}
 function cv(L,cls){let c=L[cls];if(!c){c=document.createElement('canvas');c.className='an-c '+cls;c.setAttribute('aria-hidden','true');c._L=L;L.host.append(c);L[cls]=c;
  /* the live-stroke canvas asks the browser to skip compositor sync where supported: ink follows the pen with less lag */
- if(cls==='wet'&&!/Android/i.test(navigator.userAgent)){try{c.getContext('2d',{desynchronized:true})}catch(e){}}   /* low-latency canvases lose transparency on some Android GPUs: the stroke area turned black */}return c}
+ if(cls==='wet'&&!/Android/i.test(navigator.userAgent)&&!(navigator.maxTouchPoints>0&&/Linux/i.test(navigator.platform||navigator.userAgent)&&!/CrOS/i.test(navigator.userAgent))){try{c.getContext('2d',{desynchronized:true})}catch(e){}}   /* low-latency canvases lose transparency on some Android GPUs: the stroke area turned black and flickered when a stroke was lifted. Chrome's "Desktop site" on a phone hides Android from the user agent (it reports Linux), so a touch screen on Linux counts as Android too */}return c}
 function size(c,w,h){const wn=c._L&&c._L.win,wet=c._L&&c===c._L.wet;let oy=0;{let tp='',ht='';if(wn||wet){if(wn){oy=wn.y;h=wn.h}
   /* the live-stroke canvas only needs the visible screen: redrawing a screen-sized layer each frame is far cheaper than the whole window */
   if(c===c._L.wet){const hh=c._L.host,y=Math.max(0,Math.floor(-hh.getBoundingClientRect().top));oy=y;h=Math.max(1,Math.min(Math.ceil(innerHeight),hh.clientHeight-y))}
@@ -659,7 +659,7 @@ function onUp(e){if(!live||(e&&e.pointerId!==live.pid))return;document.removeEve
  const o={i:ID(),t:'stroke',k:l.tool==='hl'?'hl':KIND[P.pen],c:l.tool==='hl'?P.hlc:P.col,w:+sizeOf(l.tool)/f,a:{b:bl?bl.id:null},
   g:enc(pts.map(p=>[Math.round((p[0]-org.x)/W*REF),Math.round((p[1]-org.y)/f*YU),Math.round(clamp(p[2],0,1)*100)]))};
  let d=docOf(L.key);if(!d)d=St.docs[L.key]={k:L.key,v:2,rev:0,upd:0,objs:[]};if(d.objs.length>=MAX.objs){alert('This answer has the maximum number of marks. Delete some to add more.');return}
- d.objs.push(o);pushOp(L.key,{t:'add',o});touch(L.key);sched(L);sync()}
+ d.objs.push(o);pushOp(L.key,{t:'add',o});touch(L.key);if(L.raf){cancelAnimationFrame(L.raf);L.raf=0}paint(L);sync()}   /* painted in the same task that cleared the live stroke: there is never a frame without it */
 
 /* ---------- writing space: a blank / ruled / grid / dot area under an answer or an MCQ, for handwriting that does not fit between the lines ---------- */
 const WST=[['blank','Blank'],['ruled','Ruled'],['grid','Grid'],['dot','Dots']];

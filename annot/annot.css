@@ -246,3 +246,5 @@ body.an-on.an-pen-near:not(.an-t-hand):not(.an-t-hi) .an-host .tbt-s{touch-actio
 .an-host .tbt-s{overflow-x:visible!important}
 .an-host .tbt-s table{width:100%;max-width:100%;table-layout:fixed}
 .an-host .tbt-s :is(td,th){overflow-wrap:anywhere;word-break:normal;hyphens:auto}
+/* the toolbar's width must not depend on where it sits: left + shrink-to-fit made it measure narrow, get placed, then grow and run off the right edge. It is as wide as one row of 13 controls at most, and never wider than the screen */
+#an-bar{width:max-content;max-width:min(calc(100vw - 16px),736px)}
