@@ -1,6 +1,6 @@
 /* ---- MCQs: home, custom practice (faceted filter), practice, timed exam, reading mode, results ---- */
 {const CH=MCQDATA.ch,Q=MCQDATA.q;
- const M=mkView('mcqs','MCQs','MCQs','Practise by topic, build your own set, sit a timed mock paper, or read every question with the answers shown.');
+ const M=mkView('mcqs','MCQs','MCQs','Practise by topic, or sit a timed mock paper.');
  const V=M.closest('.view');M.classList.add('mx');
  const E=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  const BY={};Q.forEach(q=>BY[q.h]=q);

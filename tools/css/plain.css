@@ -16,12 +16,12 @@ html:root{--bg:#FFFFFF;--panel:#FFFFFF;--text:#23153A;--navy:#23153A;--muted:#5E
 html:root[data-theme=light][data-tone=sepia]{--bg:#F6F0E8;--panel:#FCF8F1;--text:#2B2030;--navy:#2B2030;--muted:#5F5560;--line:#DED4CC;--line2:#C6B9B6;--soft:#EFE3DF;--chip:#EFE3DF;
  --accbg:#EBD0D3;--infobg:#EFE3DF;--zz-surface:#FCF8F1;--zz-sunken:#F6F0E8;--zz-ink:#2B2030;--zz-ink-2:#5F5560;--zz-hair:#DED4CC;--zz-hair-2:#C6B9B6;
  --field:#EBBFC8;--field-ink:#2B2030;--field-ink2:#4E3348;--rule:#C6B9B6}
-html:root[data-theme=dark]:not([data-tone=fluo]){--bg:#150E21;--panel:#1D142D;--text:#F2EAF4;--navy:#F2EAF4;--muted:#B7ABC6;--line:#33264A;--line2:#4D3D69;--soft:#261A3A;--chip:#261A3A;
- --accbg:#4A1D31;--infobg:#261A3A;--blue:#F0A3B9;--lbl:#F0A3B9;--btn:#A6324F;--btnh:#BD4263;--zz-surface:#1D142D;--zz-sunken:#150E21;--zz-ink:#F2EAF4;--zz-ink-2:#B7ABC6;--zz-hair:#33264A;--zz-hair-2:#4D3D69;
- --field:#2E1D4A;--field-ink:#F6E9F1;--field-ink2:#D9C3DB;--rule:#4D3D69}
-@media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]){--bg:#150E21;--panel:#1D142D;--text:#F2EAF4;--navy:#F2EAF4;--muted:#B7ABC6;--line:#33264A;--line2:#4D3D69;--soft:#261A3A;--chip:#261A3A;
- --accbg:#4A1D31;--infobg:#261A3A;--blue:#F0A3B9;--lbl:#F0A3B9;--btn:#A6324F;--btnh:#BD4263;--zz-surface:#1D142D;--zz-sunken:#150E21;--zz-ink:#F2EAF4;--zz-ink-2:#B7ABC6;--zz-hair:#33264A;--zz-hair-2:#4D3D69;
- --field:#2E1D4A;--field-ink:#F6E9F1;--field-ink2:#D9C3DB;--rule:#4D3D69}}
+html:root[data-theme=dark]:not([data-tone=fluo]){--bg:#17141B;--panel:#1F1B25;--text:#E4DFE7;--navy:#E4DFE7;--muted:#A69FAF;--line:#2D2835;--line2:#423B4D;--soft:#27222F;--chip:#27222F;
+ --accbg:#3A2230;--infobg:#27222F;--blue:#DDA3B4;--lbl:#DDA3B4;--btn:#8F3049;--btnh:#A53A56;--zz-surface:#1F1B25;--zz-sunken:#17141B;--zz-ink:#E4DFE7;--zz-ink-2:#A69FAF;--zz-hair:#2D2835;--zz-hair-2:#423B4D;
+ --field:#2A2433;--field-ink:#EDE6EC;--field-ink2:#C9BCCB;--rule:#423B4D}
+@media(prefers-color-scheme:dark){html:root:not([data-theme=light]):not([data-tone=fluo]){--bg:#17141B;--panel:#1F1B25;--text:#E4DFE7;--navy:#E4DFE7;--muted:#A69FAF;--line:#2D2835;--line2:#423B4D;--soft:#27222F;--chip:#27222F;
+ --accbg:#3A2230;--infobg:#27222F;--blue:#DDA3B4;--lbl:#DDA3B4;--btn:#8F3049;--btnh:#A53A56;--zz-surface:#1F1B25;--zz-sunken:#17141B;--zz-ink:#E4DFE7;--zz-ink-2:#A69FAF;--zz-hair:#2D2835;--zz-hair-2:#423B4D;
+ --field:#2A2433;--field-ink:#EDE6EC;--field-ink2:#C9BCCB;--rule:#423B4D}}
 
 /* ---- gradients, glass, glow (9, 10): every shared token becomes flat ---- */
 html:root:not([data-tone=fluo]){--g-btn:linear-gradient(var(--btn),var(--btn));--g-pulse:linear-gradient(var(--btn),var(--btn));--g-mist:linear-gradient(var(--panel),var(--panel));
@@ -232,7 +232,7 @@ html:root:not([data-tone=fluo]) body nav.nav:is(*,#zzp#zzp){background:var(--pan
    band is about 280px tall, so the page's own content starts on the first screen. ---- */
 html:root{--band-h:280px}
 @media(min-width:1000px){html:root{--band-h:300px}}
-html:root body :is(.pb,.nh-banner):is(*,#zzp#zzp){position:relative!important;display:flex!important;align-items:center!important;background:var(--plate)!important;background-image:none!important;color:#F6E9F1!important;border-bottom:0!important;height:var(--band-h)!important;min-height:var(--band-h)!important;overflow:hidden!important}
+html:root body :is(.pb,.nh-banner):is(*,#zzp#zzp){position:relative!important;display:flex!important;align-items:center!important;background:var(--plate)!important;background-image:none!important;color:#EDE6EC!important;border-bottom:0!important;height:var(--band-h)!important;min-height:var(--band-h)!important;overflow:hidden!important}
 html:root body .view.tb-on .pb:is(*,#zzp#zzp#zzp){display:none!important}
 html:root body :is(.pb-pic,.nh-bn-pic):is(*,#zzp#zzp){position:absolute!important;inset:0!important;height:auto!important;min-height:0!important;border:0!important;background:var(--plate)!important}
 html:root body :is(.pb-pic,.nh-bn-pic) :is(picture,img):is(*,#zzp#zzp){position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;object-fit:cover!important}
@@ -561,3 +561,14 @@ html:root[data-theme=dark][data-tone=noir]{--rosy:#FF2E8A;--rosy2:#FF2E8A;--teal
 html:root[data-theme=dark][data-tone=noir] .mx{--mx-ok:#FF2E8A;--mx-no:#979593}
 /* anything filled lime or pink carries black text */
 html:root[data-theme=dark][data-tone=noir] body :is(a.pill,button.pill,.nh-go,.qa-go,.gb,.zz-b,.mx-go,.zq-go,.zm-cta,.tbfil button[aria-pressed=true],.tbfil button[aria-pressed=true] em,.mx-o.ok>b,.mx-tf button[aria-pressed=true]):is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:#020106!important}
+
+/* ---- more air where blocks sat 6-8px apart (Questions tools, Chapters, Textbook tiles, list rows) ---- */
+html:root body #v-questions :is(.qquick,.qprog):is(*,#zzp#zzp){margin-top:16px!important}
+html:root body #v-questions .qsum:is(*,#zzp#zzp){margin-top:16px!important;margin-bottom:12px!important}
+html:root body #v-qa .qa-hero+.chips:is(*,#zzp#zzp){margin-top:16px!important}
+html:root body .tbl:is(*,#zzp#zzp#zzp){gap:12px!important;margin-top:12px!important}
+html:root body details.tbpart-d{margin-bottom:36px}
+html:root body #v-questions .qi-h:is(*,#zzp#zzp#zzp#zzp#zzp){padding-top:18px!important;padding-bottom:18px!important}
+html:root body #v-questions .qi-h .xm:is(*,#zzp#zzp#zzp#zzp#zzp){gap:6px!important}
+/* filter tags keep their width when the counts change, so rows do not re-wrap under the finger */
+html:root body .qf-body .qfc i{display:inline-block;min-width:2.4ch;text-align:right;font-variant-numeric:tabular-nums}

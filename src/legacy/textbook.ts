@@ -77,14 +77,12 @@ type Rec=Record<string,any>;
   const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos'),q=hq.trim().toLowerCase().replace(/^ch(apter)?\s*/,'');
   const ok=(c:any)=>{const s=stat(c,D,Po);if(hf==='prog'&&s!=='prog')return false;if(hf==='unread'&&s==='done')return false;if(hf==='read'&&s!=='done')return false;
    return !q||c.title.toLowerCase().includes(q)||String(c.n)===q};
-  /* Parts fold: by default only the Part with the chapter on the Continue card is open; a search or status filter opens every Part that has a match; what you open or close yourself is kept for this visit (memory only) */
-  const act=!!q||(!!hf&&hf!=='all');tbAct=act;let cl:any=null;try{cl=C.find((x:any)=>x.id===zzStore.getItem('tbLast'))}catch(e){}
-  if(cl&&D[cl.id]){const i=C.indexOf(cl);cl=C.slice(i+1).find((x:any)=>!D[x.id])||C.find((x:any)=>!D[x.id])||null}else if(!cl)cl=C.find((x:any)=>!D[x.id])||null;
-  const cg=cl?GR.findIndex(x=>x[2](cl.n)):-1;let first=-1;
+  /* Parts fold: every Part is open by default; a search or status filter opens every Part that has a match; what you open or close yourself is kept for this visit (memory only) */
+  const act=!!q||(!!hf&&hf!=='all');tbAct=act;
   if(!g.dataset.fold){g.dataset.fold='1';g.addEventListener('click',e=>{const s=(e.target as Element).closest('summary');if(s&&!tbAct){const d=s.parentElement as HTMLDetailsElement;TBO[d.dataset.g as string]=!d.open}})}
   let out='';
   GR.forEach((gp,gi)=>{const all=C.filter((c:any)=>GR.findIndex(x=>x[2](c.n))===gi),cs=all.filter(ok);if(!cs.length)return;const nd=all.filter((c:any)=>D[c.id]).length;
-   if(first<0)first=gi;const op=act||(String(gi) in TBO?TBO[String(gi)]:gi===(cg>=0?cg:first));
+   const op=act||(String(gi) in TBO?TBO[String(gi)]:true);
    out+=`<details class="tbpart-d" data-g="${gi}"${op?' open':''}><summary><div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd/all.length*100)}%"></i></div></div></summary><div class="tbl">${cs.map((c:any)=>tile(c,D,Po)).join('')}</div></details>`});
   g.innerHTML=out||'<div class="mempty"><b>No chapters match</b>Try a different word, or switch the filter back to All.</div>'}
  function home(){const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos');
