@@ -9,7 +9,7 @@
      so the whole site (questions, MCQs, textbook) works with no connection at all.
    VERSION is written by tools/sw_stamp.py at build time: a hash of index.html and every precached file, so it changes exactly
    when the site does (never edit it by hand). */
-const VERSION = 'pathviva-zzee-20d95c9d5f';
+const VERSION = 'pathviva-zzee-7da934c40d';
 
 const CORE = [
   'index.html',

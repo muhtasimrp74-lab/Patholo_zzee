@@ -28,7 +28,7 @@
   grp('zm-h-data','Your data',btn('zm-exp','exp','Export backup')+btn('zm-imp','imp','Import backup')+'<input type="file" accept=".json" id="zm-file" hidden>')+
  '</div><div>'+
   grp('zm-h-read','Reading',sw('mq-quiz','quiz','Quiz mode')+sw('zm-focus','focus','Focus')+sw('zm-calm','calm','Calm reading')+sw('zm-ink','ink','Annotate'))+
-  grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button></span></div>'+
+  grp('zm-h-disp','Display','<div class="zm-row zm-fix">'+ic('theme')+'<span class="zm-l" id="zm-th-l">Theme</span><span class="zm-seg" role="radiogroup" aria-labelledby="zm-th-l"><button type="button" role="radio" data-th="light">Light</button><button type="button" role="radio" data-th="sepia">Sepia</button><button type="button" role="radio" data-th="dark">Dark</button><button type="button" role="radio" data-th="noir">Noir</button></span></div>'+
    '<div class="zm-row zm-fix">'+ic('size')+'<span class="zm-l" id="zm-fs-l">Text size</span><span class="zm-step"><button type="button" data-st="fm" aria-label="Smaller text">A−</button><output id="zm-fsv" aria-live="polite">100%</output><button type="button" data-st="fp" aria-label="Larger text">A+</button></span></div>'+
    sw('mq-fs','fs','Fullscreen')+sw('mq-flat','flat','Reduce effects')+
    '<div class="zm-row zm-fix">'+ic('fx')+'<span class="zm-l" id="zm-fx-l">Visual effects</span><span class="zm-seg zm-seg-fx" role="radiogroup" aria-labelledby="zm-fx-l"><button type="button" role="radio" data-fx="auto">Auto</button><button type="button" role="radio" data-fx="full">Full</button><button type="button" role="radio" data-fx="min">Minimal</button><button type="button" role="radio" data-fx="off">Off</button></span></div>'+
@@ -89,7 +89,7 @@
  $x('#zm-pgr').onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.pager=s.pref.pager===false;save();if(window.zzPager)zzPager.sync();sync()};
  const hb=$x('#zm-hap');if(!('vibrate' in navigator)&&!(window.AudioContext||window.webkitAudioContext))hb.hidden=true;
  hb.onclick=()=>{const s=typeof S!=='undefined'?S:null;if(!s)return;s.pref=s.pref||{};s.pref.hap=s.pref.hap===false;save();if(s.pref.hap&&window.zzFx)zzFx.haptic(12);sync()};
- function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(de.dataset.tone==='fluo'?'fluo':'dark'):de.dataset.tone==='sepia'?'sepia':'light'}
+ function theme(){const t=de.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(de.dataset.tone==='noir'?'noir':'dark'):de.dataset.tone==='sepia'?'sepia':'light'}
  function sync(){
   on(qb,bd.classList.contains('quiz'));on($x('#zm-focus'),bd.classList.contains('focus'));on(cb,bd.classList.contains('calm'));cb.hidden=!tool('calm');
   const t=tool('ink');on(ib,t&&t.getAttribute('aria-pressed')==='true');ib.hidden=!t;
