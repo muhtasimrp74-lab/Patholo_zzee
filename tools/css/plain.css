@@ -74,7 +74,7 @@ html:root body :is(input,textarea):is(*,#zzp#zzp):not(#an-bar *):not(.an-pop *){
 html:root body :is(input,textarea)::placeholder{font-style:italic;color:var(--muted);opacity:1}
 
 /* 1. page titles (TAN Buster): the five top-level pages and Home */
-html:root body :is(.pb .hero-in h1,.nh-banner h1):is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--head)!important;font-weight:400!important;font-synthesis:none;font-size:clamp(2rem,3.4vw,2.625rem)!important;line-height:1.1!important;letter-spacing:-.005em!important}
+html:root body :is(.pb .hero-in h1,.nh-banner h1):is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--head)!important;font-weight:400!important;font-synthesis:none;font-size:clamp(2rem,3.4vw,2.625rem)!important;line-height:1.15!important;letter-spacing:-.005em!important}
 /* a chapter's own page: its name is long and set by the book, so it takes Anton */
 html:root body .hero:not(:has(.pb)) .hero-in h1:is(*,#zzp#zzp#zzp#zzp#zzp),html:root body .hero-in:not(.pb *) h1:is(*,#zzp#zzp#zzp#zzp#zzp){font-family:var(--num)!important;font-weight:400!important;font-synthesis:none;font-size:clamp(2.25rem,1.3rem + 3.6vw,3.5rem)!important;line-height:1.06!important;letter-spacing:.005em!important}
 /* brand name (TAN Buster) */
