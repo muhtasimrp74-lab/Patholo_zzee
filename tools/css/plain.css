@@ -524,3 +524,40 @@ html:root body a.tbtile b:is(*,#zzp#zzp#zzp){display:-webkit-box!important;-webk
  html:root body .nh-bn-s:is(*,#zzp#zzp#zzp#zzp){display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
  html:root body #nh .nh-bn-b:is(*,#zzp#zzp#zzp#zzp){margin-top:10px!important}
 }
+
+
+/* ================= Noir: a fourth theme, separate from Light / Sepia / Dark (dark theme + data-tone="noir") =================
+   Three colours and nothing else: black #020106, white #F2EFEA, hot pink #FF2E8A. Every other value below is a mix of those
+   (white into black for surfaces and lines, pink into black for the selected state). Rule of thumb for the pink: it goes on
+   what the page is for, i.e. the page's title word, the one thing to press next, and what marks your own progress.
+   Text on a pink fill is black (6:1), never white (3.4:1). ---- */
+html:root[data-theme=dark][data-tone=noir]{--bg:#020106;--panel:#0C0B0F;--text:#F2EFEA;--navy:#F2EFEA;--muted:#979593;--line:#242226;--line2:#3C3A3D;--soft:#151418;--chip:#151418;
+ --accbg:#30091E;--infobg:#151418;--paper:#0C0B0F;--ivory:#0C0B0F;--blue:#FF2E8A;--lbl:#FF2E8A;--btn:#FF2E8A;--btnh:#FF4B98;
+ --zz-surface:#0C0B0F;--zz-sunken:#020106;--zz-ink:#F2EFEA;--zz-ink-2:#979593;--zz-hair:#242226;--zz-hair-2:#3C3A3D;
+ --field:#FF2E8A;--field-ink:#020106;--field-ink2:#020106;--rule:#3C3A3D;--plate:#020106}
+/* title band: the plate is reprinted in pink on black (grey image multiplied onto a pink ground), under a black gradient */
+html:root[data-theme=dark][data-tone=noir] body :is(.pb-pic,.nh-bn-pic):is(*,#zzp#zzp#zzp){background:#FF2E8A!important}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb-pic,.nh-bn-pic) img:is(*,#zzp#zzp#zzp#zzp){mix-blend-mode:multiply!important;filter:grayscale(1) contrast(1.25) brightness(1.2)!important}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb-pic,.nh-bn-pic):is(*,#zzp#zzp#zzp)::after{background:linear-gradient(90deg,#020106 0,#020106 37%,rgba(2,1,6,.86) 50%,rgba(2,1,6,.3) 76%,rgba(2,1,6,.05) 100%)!important}
+html:root[data-theme=dark][data-tone=noir] body .pb .hero-in h1:is(*,#zzp#zzp#zzp#zzp){color:#FF2E8A!important}
+html:root[data-theme=dark][data-tone=noir] body .nh-banner h1:is(*,#zzp#zzp#zzp#zzp){color:#F2EFEA!important}
+html:root[data-theme=dark][data-tone=noir] body .nh-banner h1 .nh-acc{color:#FF2E8A}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb .lede,.nh-bn-s):is(*,#zzp#zzp#zzp#zzp){color:#F2EFEA!important}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb,.nh-banner) :is(.crumb,.crumb a,.pb-chips):is(*,#zzp#zzp#zzp#zzp#zzp){color:#979593!important}
+html:root[data-theme=dark][data-tone=noir] body .pb .hero-in p.zz-hi:is(*,#zzp#zzp#zzp#zzp#zzp){color:#FF2E8A!important}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb-btn.pb-p,#nh a.nh-bn-cta):is(*,#zzp#zzp#zzp#zzp#zzp){background:#FF2E8A!important;color:#020106!important}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb-btn.pb-p,#nh a.nh-bn-cta):is(*,#zzp#zzp#zzp#zzp#zzp):hover{background:#FF4B98!important}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb-btn.pb-lk,#nh a.nh-bn-lk):is(*,#zzp#zzp#zzp#zzp#zzp){color:#F2EFEA!important}
+html:root[data-theme=dark][data-tone=noir] body :is(.pb,.nh-banner) :focus-visible{outline-color:#FF2E8A!important}
+/* section rules carry a short pink tab at their start */
+html:root[data-theme=dark][data-tone=noir] body :is(.nh-h,.mx-h,.zm-gh,main>h2):is(*,#zzp#zzp#zzp#zzp):not(.ans *):not(#tbbody *){border-image:linear-gradient(90deg,#FF2E8A 0,#FF2E8A 44px,#3C3A3D 44px) 1!important}
+html:root[data-theme=dark][data-tone=noir] body main h3.sub:is(*,#zzp#zzp#zzp#zzp){border-image:linear-gradient(90deg,#FF2E8A 0,#FF2E8A 44px,#3C3A3D 44px) 1!important}
+html:root[data-theme=dark][data-tone=noir] body ::selection{background:#FF2E8A;color:#020106}
+@media(max-width:640px){
+ html:root[data-theme=dark][data-tone=noir] body :is(.pb-pic,.nh-bn-pic):is(*,#zzp#zzp#zzp)::after{background:linear-gradient(100deg,rgba(2,1,6,.97) 0,rgba(2,1,6,.88) 48%,rgba(2,1,6,.62) 100%)!important}
+}
+/* older layers name a few brand tints of their own; in Noir they are all the one pink. Right answers are pink, wrong ones grey (there is no third colour) */
+html:root[data-theme=dark][data-tone=noir]{--rosy:#FF2E8A;--rosy2:#FF2E8A;--teal:#FF2E8A;--cobalt:#FF2E8A;--startacc:#FF2E8A;--b500:#FF2E8A;--b600:#FF2E8A;--b700:#FF2E8A;--b800:#FF2E8A;--zm-on:#FF2E8A}
+html:root[data-theme=dark][data-tone=noir] .mx{--mx-ok:#FF2E8A;--mx-no:#979593}
+/* anything filled pink carries black text */
+html:root[data-theme=dark][data-tone=noir] body :is(a.pill,button.pill,.nh-go,.qa-go,.gb,.zz-b,.mx-go,.zq-go,.zm-cta,.tbfil button[aria-pressed=true],.tbfil button[aria-pressed=true] em,.mx-o.ok>b,.mx-s.ok .mx-tf button[aria-pressed=true]):is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:#020106!important}
