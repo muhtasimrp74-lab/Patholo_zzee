@@ -176,7 +176,16 @@ wrap.addEventListener('toggle',e=>{const d=e.target as HTMLDetailsElement;if(d&&
 wrap.addEventListener('change',e=>{
  if((e.target as HTMLInputElement).id==='nhex'){S.pref=S.pref||{};if((e.target as HTMLInputElement).value)S.pref.exam=(e.target as HTMLInputElement).value;else delete S.pref.exam;save();render()}
 });
-window.nhRender=(function(){let q=0;return function(){if(q)return;q=1;requestAnimationFrame(function(){q=0;render()})}})();render();
+let nhDirty=false,nhBusy=false;
+window.nhRender=(function(){let q=0;return function(){if(q)return;q=1;requestAnimationFrame(function(){q=0;nhBusy=true;try{render()}finally{nhBusy=false}})}})();render();
+/* live Home: Continue, Today's plan and the Textbook figures follow the reading state. Event-driven only (a store write, coming
+   back to Home, the tab shown again); never a timer. While Home is not on screen it is only marked dirty and redrawn on return. */
+const nhOn=()=>{const h=location.hash;return (h===''||h==='#'||h==='#/'||h==='#/home')&&document.visibilityState!=='hidden'};
+const nhLive=()=>{if(nhOn()){nhDirty=false;window.nhRender()}else nhDirty=true};
+try{zzStore.subscribe((k:string)=>{if(!nhBusy&&(k==='tbLast'||k==='tbPos'||k==='tbDone'||k==='vivaState'))nhLive()})}catch(e){}
+addEventListener('hashchange',()=>{if(nhDirty&&nhOn())nhLive()});
+addEventListener('pageshow',e=>{if(nhDirty||(e as PageTransitionEvent).persisted)nhLive()});
+document.addEventListener('visibilitychange',()=>{if(nhDirty&&document.visibilityState==='visible')nhLive()});
 })();
 
 /* ---- put the reading tools (Ink / Theme / A- / A+ / Focus / Print) in the top bar: right next to "Start revising", inside the free space after the logo ---- */

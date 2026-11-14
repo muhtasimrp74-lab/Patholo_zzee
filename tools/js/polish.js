@@ -7,14 +7,15 @@ const tools=document.getElementById('tools');
 
 /* ---------- 1. Theme: Light > Sepia > Dark ---------- */
 function themeNow(){const t=root.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');return t==='dark'?(root.dataset.tone==='fluo'?'fluo':'dark'):root.dataset.tone==='sepia'?'sepia':'light'}
-function applyTheme(n){if(n==='dark'||n==='fluo'){root.dataset.theme='dark';if(n==='fluo')root.dataset.tone='fluo';else delete root.dataset.tone}else{root.dataset.theme='light';if(n==='sepia')root.dataset.tone='sepia';else delete root.dataset.tone}
+function applyTheme(n){if(n==='fluo')n='dark';   /* the fluorescence mode is gone; an old saved choice opens as Dark */
+ if(n==='dark'||n==='fluo'){root.dataset.theme='dark';if(n==='fluo')root.dataset.tone='fluo';else delete root.dataset.tone}else{root.dataset.theme='light';if(n==='sepia')root.dataset.tone='sepia';else delete root.dataset.tone}
  const m=n==='sepia'?'#F6F0E8':n==='fluo'?'#07090D':null;if(m)$$('meta[name=theme-color]').forEach(x=>{if(!x.dataset.o)x.dataset.o=x.content;x.content=m;x.removeAttribute('media')});
  else $$('meta[name=theme-color][data-o]').forEach(x=>{x.content=x.dataset.o});label()}
 function label(){const b=tools&&$('[data-t=theme]',tools);if(b){const n=themeNow();b.textContent=n==='sepia'?'Sepia':n==='dark'?'Dark':n==='fluo'?'Fluorescence':'Light';b.dataset.th=n;b.setAttribute('aria-label','Theme: '+b.textContent+' (tap to change)');b.title='Theme: Light, Sepia, Dark or Fluorescence (tap to change)'}}
 try{
  if(tools){
   tools.addEventListener('click',e=>{const b=e.target.closest('button[data-t=theme]');if(!b)return;e.stopPropagation();
-   const n={light:'sepia',sepia:'dark',dark:'fluo',fluo:'light'}[themeNow()];applyTheme(n);const p=pref();p.theme=n==='dark'||n==='fluo'?'dark':'light';if(n==='sepia'||n==='fluo')p.tone=n;else delete p.tone;persist()},true);
+   const n={light:'sepia',sepia:'dark',dark:'light',fluo:'light'}[themeNow()];applyTheme(n);const p=pref();p.theme=n==='dark'||n==='fluo'?'dark':'light';if(n==='sepia'||n==='fluo')p.tone=n;else delete p.tone;persist()},true);
   const p=pref();if(p.theme==='light'&&p.tone==='sepia')applyTheme('sepia');else if(p.theme==='dark'&&p.tone==='fluo')applyTheme('fluo');else{if(p.tone&&!(p.theme==='light'))delete p.tone;label()}
  }
 }catch(e){}

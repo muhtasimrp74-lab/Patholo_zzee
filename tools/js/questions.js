@@ -78,7 +78,7 @@ const secC=c=>{const it=g[c],ci=CHI[c];let last=null,lt=null,h='';const nt={};co
 const sec=(no,title,items,attr)=>`<section class="qs" ${attr}><button class="qs-h" type="button" aria-expanded="true"><span class="no">${no}</span><b>${esc(title)}</b><span class="cnt">${items.length}</span>${chev}</button><div class="qs-b">${QTH}${items.map(qi).join('')}</div></section>`;
 
 QV.innerHTML='<div class="qwrap"><aside id="qf" aria-label="Filters"></aside><div class="qmain">'
-+'<div class="qtools"><input id="qfilter" type="search" placeholder="Filter questions…" aria-label="Filter questions">'
++'<div class="qtools"><label class="tbsearch qsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="qfilter" type="search" placeholder="Search questions…" aria-label="Search questions"></label>'
 +'<button class="qb qfbtn" id="qfopen" type="button" aria-expanded="false" aria-controls="qf">'+IC.filter+'<span>Filters</span><i id="qfn" hidden></i></button>'
 +'<button class="qb" id="qexp" type="button">Expand all</button><button class="qb" id="qcol" type="button">Collapse all</button></div>'
 +'<div class="qquick" id="qquick"></div><div class="qprog"><i><u id="qpu"></u></i><span id="qpt"></span><button class="qb" id="qrnd" type="button">Random question</button></div>'

@@ -11,7 +11,7 @@ type Rec=Record<string,any>;
  const fmtMin=(m:any)=>m>=60?Math.floor(m/60)+'h'+(m%60?' '+(m%60)+'m':''):m+'m';
  const stat=(c:any,D:any,Po:any)=>D[c.id]?'done':(Po[c.id]>.02&&Po[c.id]<.97?'prog':'new');
  const tile=(c:any,D:any,Po:any)=>{const s=stat(c,D,Po),pc=Math.round((Po[c.id]||0)*100);
-  return `<a class="tbtile ${s}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span class="tbt-x"><b>${E(c.title)}</b><small>${c.pages?'pp. '+c.pages[0]+'–'+c.pages[1]+' · ':''}~${fmtMin(c.min)}${c.figs?' · '+c.figs+' figures':''}</small>${s==='prog'?`<span class="tbpb" role="img" aria-label="${pc}% read"><i style="width:${pc}%"></i></span>`:''}</span><span class="tbst">${s==='done'?'✓ Read':s==='prog'?pc+'%':''}</span></a>`};
+  return `<a class="tbtile ${s}" href="#/textbook/${c.id}"><span class="n">${c.n}</span><span class="tbt-x"><b>${E(c.title)}</b><small>${c.pages?'pp. '+c.pages[0]+'–'+c.pages[1]+' · ':''}~${fmtMin(c.min)}</small>${s==='prog'?`<span class="tbpb" role="img" aria-label="${pc}% read"><i style="width:${pc}%"></i></span>`:''}</span><span class="tbst">${s==='done'?'✓ Read':s==='prog'?pc+'%':''}</span></a>`};
 
  /* ---------- scroll bar inside a chapter (draggable, with section marks) ---------- */
  const SB=document.body.appendChild(Object.assign(document.createElement('div'),{id:'tbsc',hidden:true,innerHTML:'<button type="button" class="tbsc-up" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg></button><div class="tbsc-track" role="scrollbar" aria-orientation="vertical" aria-label="Scroll through this chapter" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><span class="tbsc-ticks"></span><i class="tbsc-thumb"></i><b class="tbsc-pct">0%</b></div>'}));
@@ -47,7 +47,10 @@ type Rec=Record<string,any>;
  function onScroll(){if(!cur){P.style.display='none';layout();return}const h=document.documentElement.scrollHeight-innerHeight,r=h>0?Math.min(1,Math.max(0,scrollY/h)):0;P.style.display='block';(P.firstChild as HTMLElement).style.width=(r*100)+'%';
   if(!lf)lf=requestAnimationFrame(()=>{lf=0;layout()});
   SB.classList.add('show');clearTimeout(pt);pt=setTimeout(()=>SB.classList.remove('show'),1000);
-  clearTimeout(tkr);tkr=setTimeout(()=>{if(cur&&location.hash.split('/')[2]===cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o);mark(cur,o[cur])}},400)}  /* only while this chapter is still open */
+  clearTimeout(tkr);tbR=r;tbRc=cur;tkr=setTimeout(tbFlush,400)}
+ /* the reading position is saved 400ms after scrolling stops, and at once when the page is hidden or left (only while this chapter is still open) */
+ let tbR=-1,tbRc:any=null;function tbFlush(){const r=tbR;tbR=-1;if(r>=0&&cur&&tbRc===cur&&location.hash.split('/')[2]===cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o);mark(cur,o[cur])}}
+ document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'){clearTimeout(tkr);tbFlush()}});addEventListener('pagehide',()=>{clearTimeout(tkr);tbFlush()});
  /* where you are on this device (tbAt, not synced): the paragraph at the top of the screen, how far down it sits, and the sections you closed */
  function mark(ch:any,r:any){const bd:any=T.querySelector('#tbbody');if(!bd||bd.dataset.ch!==ch)return;
   let a:any=null;const hit:any=document.elementFromPoint(innerWidth/2,120);if(hit&&bd.contains(hit))a=hit.closest('[data-b]');
@@ -69,13 +72,20 @@ type Rec=Record<string,any>;
  addEventListener('scroll',onScroll,{passive:true});
 
  /* ---------- home: progress, continue card, search + filters, chapters by part ---------- */
+ const TBO:Record<string,boolean>={};let tbAct=false;
  function paint(){const g=document.getElementById('tbgrid');if(!g||!IDX)return;
   const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos'),q=hq.trim().toLowerCase().replace(/^ch(apter)?\s*/,'');
   const ok=(c:any)=>{const s=stat(c,D,Po);if(hf==='prog'&&s!=='prog')return false;if(hf==='unread'&&s==='done')return false;if(hf==='read'&&s!=='done')return false;
    return !q||c.title.toLowerCase().includes(q)||String(c.n)===q};
+  /* Parts fold: by default only the Part with the chapter on the Continue card is open; a search or status filter opens every Part that has a match; what you open or close yourself is kept for this visit (memory only) */
+  const act=!!q||(!!hf&&hf!=='all');tbAct=act;let cl:any=null;try{cl=C.find((x:any)=>x.id===zzStore.getItem('tbLast'))}catch(e){}
+  if(cl&&D[cl.id]){const i=C.indexOf(cl);cl=C.slice(i+1).find((x:any)=>!D[x.id])||C.find((x:any)=>!D[x.id])||null}else if(!cl)cl=C.find((x:any)=>!D[x.id])||null;
+  const cg=cl?GR.findIndex(x=>x[2](cl.n)):-1;let first=-1;
+  if(!g.dataset.fold){g.dataset.fold='1';g.addEventListener('click',e=>{const s=(e.target as Element).closest('summary');if(s&&!tbAct){const d=s.parentElement as HTMLDetailsElement;TBO[d.dataset.g as string]=!d.open}})}
   let out='';
   GR.forEach((gp,gi)=>{const all=C.filter((c:any)=>GR.findIndex(x=>x[2](c.n))===gi),cs=all.filter(ok);if(!cs.length)return;const nd=all.filter((c:any)=>D[c.id]).length;
-   out+=`<div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd/all.length*100)}%"></i></div></div><div class="tbl">${cs.map((c:any)=>tile(c,D,Po)).join('')}</div>`});
+   if(first<0)first=gi;const op=act||(String(gi) in TBO?TBO[String(gi)]:gi===(cg>=0?cg:first));
+   out+=`<details class="tbpart-d" data-g="${gi}"${op?' open':''}><summary><div class="tbpart"><div class="tbpart-t"><span class="tbpart-k">${gp[0]}</span><b>${gp[1]}</b></div><span class="tbpart-c">${nd} of ${all.length} read</span><div class="tbmeter sm"><i style="width:${Math.round(nd/all.length*100)}%"></i></div></div></summary><div class="tbl">${cs.map((c:any)=>tile(c,D,Po)).join('')}</div></details>`});
   g.innerHTML=out||'<div class="mempty"><b>No chapters match</b>Try a different word, or switch the filter back to All.</div>'}
  function home(){const C=IDX.chapters,D=J('tbDone'),Po=J('tbPos');
   const nd=C.filter((c:any)=>D[c.id]).length,ip=C.filter((c:any)=>stat(c,D,Po)==='prog').length,left=C.filter((c:any)=>!D[c.id]).reduce((a:any,c:any)=>a+c.min,0),pct=Math.round(nd/C.length*100);
