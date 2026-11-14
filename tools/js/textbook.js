@@ -159,9 +159,11 @@
 		}
 		let tbR = -1, tbRc = null;
 		function tbFlush() {
-			if (tbR >= 0 && cur && tbRc === cur && location.hash.split("/")[2] === cur) {
+			const r = tbR;
+			tbR = -1;
+			if (r >= 0 && cur && tbRc === cur && location.hash.split("/")[2] === cur) {
 				const o = J("tbPos");
-				o[cur] = +tbR.toFixed(3);
+				o[cur] = +r.toFixed(3);
 				W("tbPos", o);
 				mark(cur, o[cur]);
 			}

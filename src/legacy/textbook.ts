@@ -49,7 +49,7 @@ type Rec=Record<string,any>;
   SB.classList.add('show');clearTimeout(pt);pt=setTimeout(()=>SB.classList.remove('show'),1000);
   clearTimeout(tkr);tbR=r;tbRc=cur;tkr=setTimeout(tbFlush,400)}
  /* the reading position is saved 400ms after scrolling stops, and at once when the page is hidden or left (only while this chapter is still open) */
- let tbR=-1,tbRc:any=null;function tbFlush(){if(tbR>=0&&cur&&tbRc===cur&&location.hash.split('/')[2]===cur){const o=J('tbPos');o[cur]=+tbR.toFixed(3);W('tbPos',o);mark(cur,o[cur])}}
+ let tbR=-1,tbRc:any=null;function tbFlush(){const r=tbR;tbR=-1;if(r>=0&&cur&&tbRc===cur&&location.hash.split('/')[2]===cur){const o=J('tbPos');o[cur]=+r.toFixed(3);W('tbPos',o);mark(cur,o[cur])}}
  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'){clearTimeout(tkr);tbFlush()}});addEventListener('pagehide',()=>{clearTimeout(tkr);tbFlush()});
  /* where you are on this device (tbAt, not synced): the paragraph at the top of the screen, how far down it sits, and the sections you closed */
  function mark(ch:any,r:any){const bd:any=T.querySelector('#tbbody');if(!bd||bd.dataset.ch!==ch)return;
