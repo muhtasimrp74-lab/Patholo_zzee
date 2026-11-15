@@ -594,3 +594,9 @@ html:root[data-theme=dark][data-tone=noir] body .hero.small>.hero-in.ch-band :is
  html:root body .hero.small>.hero-in.ch-band::after{width:52%;background:linear-gradient(90deg,#1C102F 0,rgba(28,16,47,.82) 40%,rgba(28,16,47,.45) 100%),var(--ch-art,none) center 58%/cover no-repeat}
  html:root[data-theme=dark][data-tone=noir] body .hero.small>.hero-in.ch-band::after{background:linear-gradient(90deg,#020106 0,rgba(2,1,6,.82) 40%,rgba(2,1,6,.4) 100%),var(--ch-art,none) center 58%/cover no-repeat,#FF2E8A}
 }
+
+/* the header's Quiz mode button says "Quiz mode on" when pressed, which ran into the header icons on phones; there it reads "Quiz on" (same accessible state via aria-pressed) */
+@media(max-width:420px){
+ html:root body nav.nav .quizbtn[aria-pressed=true]:is(*,#zzp#zzp#zzp#zzp){font-size:0!important;letter-spacing:0!important}
+ html:root body nav.nav .quizbtn[aria-pressed=true]::after{content:"Quiz on";font-size:.875rem;letter-spacing:.03em}
+}
