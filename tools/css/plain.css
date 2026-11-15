@@ -572,3 +572,25 @@ html:root body #v-questions .qi-h:is(*,#zzp#zzp#zzp#zzp#zzp){padding-top:18px!im
 html:root body #v-questions .qi-h .xm:is(*,#zzp#zzp#zzp#zzp#zzp){gap:6px!important}
 /* filter tags keep their width when the counts change, so rows do not re-wrap under the finger */
 html:root body .qf-body .qfc i{display:inline-block;min-width:2.4ch;text-align:right;font-variant-numeric:tabular-nums}
+
+/* ---- chapter pages: a title band like the tabs. Dark plate, the chapter's own artwork from its Chapters card on the right
+   under the same gradient, title in eosin pink (Anton: chapter names are long). Never shorter than the tabs' bands, and it
+   grows rather than clips when a long name wraps ---- */
+html:root body .hero.small>.hero-in.ch-band:is(*,#zzp#zzp#zzp#zzp){position:relative!important;display:flex!important;align-items:center!important;width:auto!important;max-width:none!important;min-height:var(--band-h)!important;margin:0!important;box-sizing:border-box!important;overflow:hidden!important;
+ padding:28px var(--gut,20px) 30px max(var(--gut,20px),calc((100vw - var(--w,1180px))/2 + var(--gut,20px)))!important;background:var(--plate)!important;color:#F6E9F1!important;border:0!important}
+html:root body .hero.small>.hero-in.ch-band>div:is(*,#zzp#zzp#zzp#zzp){position:relative!important;z-index:1!important;max-width:36rem!important}
+html:root body .hero.small>.hero-in.ch-band::after{content:"";position:absolute;top:0;right:0;bottom:0;width:min(46%,440px);pointer-events:none;
+ background:linear-gradient(90deg,#1C102F 0,rgba(28,16,47,.6) 45%,rgba(28,16,47,.15) 100%),var(--ch-art,none) center 58%/cover no-repeat}
+html:root body .hero.small>.hero-in.ch-band h1:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:#F4B9CA!important;margin:2px 0 10px!important}
+html:root body .hero.small>.hero-in.ch-band :is(.crumb,.crumb a):is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:#CDB9D3!important}
+html:root body .hero.small>.hero-in.ch-band .lede:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:#F2E6EE!important}
+html:root body .hero.small>.hero-in.ch-band p.zz-hi:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:#F4B9CA!important}
+html:root body .hero.small>.hero-in.ch-band :focus-visible{outline-color:#F4B9CA!important}
+html:root[data-theme=dark][data-tone=noir] body .hero.small>.hero-in.ch-band::after{background:linear-gradient(90deg,#020106 0,rgba(2,1,6,.6) 45%,rgba(2,1,6,.12) 100%),var(--ch-art,none) center 58%/cover no-repeat,#FF2E8A;background-blend-mode:normal,luminosity,normal}
+html:root[data-theme=dark][data-tone=noir] body .hero.small>.hero-in.ch-band:is(*,#zzp#zzp#zzp#zzp){background:#020106!important}
+html:root[data-theme=dark][data-tone=noir] body .hero.small>.hero-in.ch-band :is(h1,p.zz-hi):is(*,#zzp#zzp#zzp#zzp#zzp#zzp){color:#FF2E8A!important}
+@media(max-width:640px){
+ html:root body .hero.small>.hero-in.ch-band:is(*,#zzp#zzp#zzp#zzp){padding:20px var(--gut,16px) 22px!important}
+ html:root body .hero.small>.hero-in.ch-band::after{width:52%;background:linear-gradient(90deg,#1C102F 0,rgba(28,16,47,.82) 40%,rgba(28,16,47,.45) 100%),var(--ch-art,none) center 58%/cover no-repeat}
+ html:root[data-theme=dark][data-tone=noir] body .hero.small>.hero-in.ch-band::after{background:linear-gradient(90deg,#020106 0,rgba(2,1,6,.82) 40%,rgba(2,1,6,.4) 100%),var(--ch-art,none) center 58%/cover no-repeat,#FF2E8A}
+}
