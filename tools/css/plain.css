@@ -69,8 +69,8 @@ html:root{--read:"Times New Roman","Times Fallback",Times,serif;--body:"Oswald",
 
 /* the interface speaks Oswald; anything written as a sentence is Times New Roman */
 html:root body{font-family:var(--body)!important}
-html:root body :is(p,dd,blockquote,figcaption,input,textarea):is(*,#zzp#zzp){font-family:var(--read)!important}
-html:root body :is(input,textarea):is(*,#zzp#zzp):not(#an-bar *):not(.an-pop *){font-size:1.0625rem}
+html:root body :is(p,dd,blockquote,figcaption,input,textarea):is(*,#zzp#zzp):not(.an-tx){font-family:var(--read)!important}
+html:root body :is(input,textarea):is(*,#zzp#zzp):not(#an-bar *):not(.an-pop *):not(.an-tx){font-size:1.0625rem}
 html:root body :is(input,textarea)::placeholder{font-style:italic;color:var(--muted);opacity:1}
 
 /* 1. page titles (TAN Buster): the five top-level pages and Home */
@@ -362,7 +362,7 @@ html:root:not([data-tone=fluo]) body :is(.nh-bar2>i,.tbmeter>i,.zm-bar>i,.qa-min
 
 /* ---- keyboard focus: one ring, in ink, on everything you can reach with Tab ---- */
 html:root body :is(a,button,summary,select,[tabindex],[role=button]):focus-visible{outline:2px solid var(--text)!important;outline-offset:2px!important;box-shadow:none!important}
-html:root body :is(input,textarea):focus-visible{outline:2px solid var(--blue)!important;outline-offset:-2px!important;box-shadow:none!important}
+html:root body :is(input,textarea):not(.an-tx):focus-visible{outline:2px solid var(--blue)!important;outline-offset:-2px!important;box-shadow:none!important}
 /* ---- selected text takes the eosin field ---- */
 html:root body ::selection{background:var(--field);color:var(--field-ink)}
 
@@ -398,7 +398,7 @@ html:root{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  html:root body main h4.tsub:is(*,#zzp#zzp#zzp#zzp#zzp#zzp){font-size:1rem!important}
  html:root body :is(p.nh-mu,p.qa-s,p.mx-sub2,.zm-note,.mx-next>span,.nh-more>summary small,#nh li>a>span):is(*,#zzp#zzp#zzp#zzp){font-size:1rem!important}
  html:root body :is(.mx-o,.mx-o>span):is(*,#zzp#zzp#zzp#zzp){font-size:1.0625rem!important}
- html:root body :is(input,textarea):is(*,#zzp#zzp#zzp):not(#an-bar *):not(.an-pop *){font-size:1rem!important}
+ html:root body :is(input,textarea):is(*,#zzp#zzp#zzp):not(#an-bar *):not(.an-pop *):not(.an-tx){font-size:1rem!important}
  html:root body :is(.sf-about,.zq-fd):is(*,#zzp#zzp#zzp){font-size:1rem!important}
  html:root body nav.nav :is(a.pill,button.pill):is(*,#zzp#zzp#zzp#zzp){font-size:.875rem!important}
  html:root body .wm:is(*,#zzp#zzp#zzp){font-size:1.25rem!important}
