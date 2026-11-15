@@ -21,3 +21,6 @@
   document.querySelectorAll('.zz-bm[data-id="'+id+'"]').forEach(x=>{x.setAttribute('aria-pressed',String(on));x.parentElement.classList.toggle('on',on)});const v=document.getElementById('v-qa');v&&empty(v)},true);
  const go=()=>{const v=document.getElementById('v-qa');if(!v)return;wrap(v);let q=0;new MutationObserver(()=>{if(!q)q=requestAnimationFrame(()=>{q=0;wrap(v)})}).observe(v,{childList:true,subtree:true})};
  document.readyState==='loading'?addEventListener('DOMContentLoaded',go):go()})();
+
+/* chapter pages: the title band shows the same artwork as the chapter's card on the Chapters tab */
+try{document.querySelectorAll('.view[id^="v-"]>.hero.small>.hero-in').forEach(h=>{const id=h.closest('.view').id.slice(2);if(/^\d\d$/.test(id)){h.style.setProperty('--ch-art','url("icons/ch/'+id+'.svg")');h.classList.add('ch-band')}})}catch(e){}
