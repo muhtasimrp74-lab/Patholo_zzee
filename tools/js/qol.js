@@ -40,6 +40,8 @@ function empty(k){
  if(e)e.hidden=!none;
 }
 if(typeof render==='function'){const r0=render;window.render=function(k){const o=r0.apply(this,arguments);try{empty(k)}catch(e){}return o}}
+/* the lists' Remove / Add back button repaints the question's card with paint(); the card painter is paintCard */
+if(typeof window.paint!=='function'&&typeof paintCard==='function')window.paint=paintCard;
 
 /* --- footer: the full credits on Home; a compact footer (brand, main links, credit, legal) on every other page --- */
 function foot(){

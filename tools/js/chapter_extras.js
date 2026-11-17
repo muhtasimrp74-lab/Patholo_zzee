@@ -24,3 +24,10 @@
 
 /* chapter pages: the title band shows the same artwork as the chapter's card on the Chapters tab */
 try{document.querySelectorAll('.view[id^="v-"]>.hero.small>.hero-in').forEach(h=>{const id=h.closest('.view').id.slice(2);if(/^\d\d$/.test(id)){h.style.setProperty('--ch-art','url("icons/ch/'+id+'.svg")');h.classList.add('ch-band')}})}catch(e){}
+
+/* topic chips: the build reorders each chapter into Robbins sections and writes new section headings without ids, so the
+   chips (made from the old list order) pointed at ids that no longer exist and did nothing. Give every section heading an id and
+   rebuild the chips from the headings actually on the page. */
+try{document.querySelectorAll('.view[id^="v-"]').forEach(v=>{const tid=v.id.slice(2),hs=[...v.querySelectorAll('main h3.sub')];if(!hs.length)return;const used={};
+ hs.forEach(h=>{if(!h.id){let id='s-'+(h.textContent||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,40)||'s';while(used[id]||document.getElementById(id))id+='-x';h.id=id}used[h.id]=1});
+ const ch=v.querySelector('.bar .chips, .chips');if(!ch)return;ch.innerHTML='';hs.forEach(h=>{const a=document.createElement('a');a.href='#/'+tid+'/'+h.id;a.textContent=h.textContent.trim();ch.appendChild(a)})})}catch(e){}
