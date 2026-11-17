@@ -681,6 +681,17 @@ class Browser(unittest.TestCase):
             hit = pg.evaluate("()=>[...document.querySelectorAll('#tools>button')].filter(b=>b.getBoundingClientRect().width).map(b=>{const r=b.getBoundingClientRect(),a=getComputedStyle(b,'::after');return [r.width+Math.abs(parseFloat(a.left)||0)+Math.abs(parseFloat(a.right)||0),r.height+Math.abs(parseFloat(a.top)||0)+Math.abs(parseFloat(a.bottom)||0)]})")
             self.assertTrue(hit and all(x[0] >= 37.5 and x[1] >= 43.5 for x in hit), 'header icons answer a 44px-tall finger (38px wide at least: they touch each other) at %d: %r' % (w, hit))
             pg.close()
+    def test_saved_lists_show_their_rows_and_topic_chips_jump(self):   # bugs: a bare-block render() in the Menu script replaced the list renderer (Bookmarks / Favourites / Notes were always empty); topic chips pointed at section ids the Robbins reorder had dropped
+        pg = self.b.new_page(viewport={'width': 390, 'height': 844}, is_mobile=True, has_touch=True)
+        pg.add_init_script("localStorage.setItem('zzWelcomeAt',String(Date.now()));localStorage.getItem('vivaState')||localStorage.setItem('vivaState',JSON.stringify({fav:['q10'],bm:['q8'],notes:{q9:'my note'},learned:[],sr:{},streak:{n:0,last:''},recent:[],pref:{}}))")
+        pg.goto(URL + '#/'); pg.wait_for_timeout(900)
+        for h, k in (('#/bookmarks', 'bm'), ('#/favourites', 'fav'), ('#/notes', 'notes')):
+            pg.evaluate("h=>{location.hash=h}", h); pg.wait_for_timeout(500)
+            self.assertEqual(pg.evaluate("k=>document.querySelectorAll('[data-list=\"'+k+'\"] .row').length", k), 1, h + ' lists the saved question')
+        pg.evaluate("()=>{location.hash='#/05'}"); pg.wait_for_timeout(700)
+        bad = pg.evaluate("()=>[...document.querySelectorAll('#v-05 .chips a')].map(a=>a.getAttribute('href').split('/').pop()).filter(id=>!document.getElementById(id))")
+        self.assertEqual(bad, [], 'every topic chip points at a section on the page')
+        self.assertGreater(pg.locator('#v-05 .chips a').count(), 2); pg.close()
     def test_home_banner_responsive_no_overflow(self):
         for w, h in ((1440, 900), (820, 1100), (390, 844), (360, 740)):
             pg = self.b.new_page(viewport={'width': w, 'height': h}); pg.goto(URL + '#/'); pg.wait_for_timeout(700)

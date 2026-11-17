@@ -1,7 +1,7 @@
 /* ===== Textbook reader (panels, sections, key-concept / morphology blocks) ===== */
 .tbhero,.tbch{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--g-mist,var(--panel));padding:22px 20px;margin:0 0 16px}
 .tbhero:before,.tbch:before{content:attr(data-n);position:absolute;right:10px;top:-18px;font:500 7rem/1 var(--disp);color:var(--navy);opacity:.06;pointer-events:none}
-.tbhero h2,.tbch h2{margin:4px 0 6px;font:500 clamp(1.5rem,4.6vw,2.2rem)/1.15 var(--disp);color:var(--navy);max-width:90%}
+.tbhero h2,.tbch h2,.tbch h1{margin:4px 0 6px;font:500 clamp(1.5rem,4.6vw,2.2rem)/1.15 var(--disp);color:var(--navy);max-width:90%}
 .tbeyebrow{font:700 .7rem var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--lbl)}
 .tbhero p{margin:0 0 14px;color:var(--muted);font:.92rem/1.5 var(--body)}
 .tbmeter{height:8px;border-radius:99px;background:var(--soft);overflow:hidden}.tbmeter i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--blue),var(--burgundy,#7A1F36));transition:width .4s}

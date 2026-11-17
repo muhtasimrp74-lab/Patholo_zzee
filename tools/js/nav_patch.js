@@ -1,7 +1,8 @@
 
 /* ---- Menu page: your profile card first, then study, saved, reading, display and data as grouped lists.
    Every switch shows its real state (synced each time the page opens). The Menu tab shows your initials once signed in. ---- */
-{const X=mkView('menu','Menu','Menu','Your account, saved work and settings.');
+(function(){   /* an IIFE, not a bare block: function declarations in a top-level block leak into the global scope in sloppy mode, and this one's render() replaced the Bookmarks / Favourites / Notes list renderer */
+const X=mkView('menu','Menu','Menu','Your account, saved work and settings.');
  const de=document.documentElement,bd=document.body,tool=t=>document.querySelector('#tools [data-t="'+t+'"]'),press=t=>{const b=tool(t);if(b)b.click()};
  const I={tut:'<circle cx="12" cy="12" r="8.5"/><path d="M10.2 8.8v6.4l5.3-3.2z"/>',practice:'<rect x="3.5" y="7.5" width="13" height="13" rx="2"/><path d="M7.5 4.5h11a2 2 0 0 1 2 2v11"/>',
   read:'<path d="M12 6.8C10.4 5.4 7.9 4.8 3.5 4.8v13.4c4.4 0 6.9.6 8.5 2 1.6-1.4 4.1-2 8.5-2V4.8c-4.4 0-6.9.6-8.5 2Zm0 0v13.4"/>',
@@ -171,4 +172,4 @@
  addEventListener('online',()=>{if(here())render()});
  (window.zzAuthReady||Promise.resolve()).then(render,render);
  sync();render();addEventListener('load',()=>{sync();setTimeout(sync,600)});/* the toolbar gains Calm reading and Annotate after this runs */
-}
+})();
